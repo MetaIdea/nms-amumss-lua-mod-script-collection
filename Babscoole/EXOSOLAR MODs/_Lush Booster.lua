@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Lush Booster.pak",
+["MOD_FILENAME"]  = "_Lush Booster",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.29",
+["NMS_VERSION"]   = "5.73",
 ["MODIFICATIONS"] =
     {
         {
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMELISTPERSTARTYPE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",

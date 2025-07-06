@@ -1,8 +1,8 @@
 Author = "alchemist"
-ModName = "InterceptorAdjustments_Refiner"
+ModName = "InterceptorAdjustments"
 BaseDescription = [[Balance adjustments for refinement recipes added by the Interceptor update.]]
-GameVersion = "5-10"
-ModVersion = "3"
+GameVersion = "5-52"
+ModVersion = "4"
 
 local Config = {
   ModRefinerRecipes = {
@@ -107,9 +107,9 @@ local function tableMap(t, fn)
 end
 
 local function GcRefinerRecipeElement(element)
-  return [[<Property value="GcRefinerRecipeElement.xml">
+  return [[<Property name="Ingredients" value="GcRefinerRecipeElement">
   <Property name="Id" value="]]..element.Id..[[" />
-  <Property name="Type" value="GcInventoryType.xml">
+  <Property name="Type" value="GcInventoryType">
     <Property name="InventoryType" value="]]..element.Type..[[" />
   </Property>
   <Property name="Amount" value="]]..element.Amount..[[" />
@@ -121,15 +121,15 @@ local function GcRefinerRecipe(recipe)
     return GcRefinerRecipeElement(element)
   end)
 
-  return [[<Property value="GcRefinerRecipe.xml">
+  return [[<Property name="Table" value="GcRefinerRecipe">
   <Property name="Id" value="]]..recipe.Id..[[" />
   <Property name="RecipeType" value="]]..recipe.RecipeType..[[" />
   <Property name="RecipeName" value="]]..recipe.RecipeType..[[" />
   <Property name="TimeToMake" value="]]..recipe.TimeToMake..[[" />
-  <Property name="Cooking" value="False" />
-  <Property name="Result" value="GcRefinerRecipeElement.xml">
+  <Property name="Cooking" value="false" />
+  <Property name="Result" value="GcRefinerRecipeElement">
     <Property name="Id" value="]]..recipe.Result.Id..[[" />
-    <Property name="Type" value="GcInventoryType.xml">
+    <Property name="Type" value="GcInventoryType">
       <Property name="InventoryType" value="]]..recipe.Result.Type..[[" />
     </Property>
     <Property name="Amount" value="]]..recipe.Result.Amount..[[" />

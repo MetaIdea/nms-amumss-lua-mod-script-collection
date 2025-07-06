@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Increase Auto-Land Range.pak",
+["MOD_FILENAME"]    = "Increase Auto-Land Range",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "Restore default auto-land range assist range from the NMS 5.x 100, back to the original 300",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -44,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- "MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION_ABANDONED.ENTITY.MBIN",
                         -- "MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB\ENTITIES\STATIONTYPEB.ENTITY.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =

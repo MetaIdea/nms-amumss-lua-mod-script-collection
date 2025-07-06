@@ -25,10 +25,10 @@ if GUIF(inputPrompts.ChangeScriptSettings,10) then
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"] = "AltF4_SquareSCSlots_OnlyS.pak",
+    ["MOD_FILENAME"] = "AltF4_SquareSCSlots_OnlyS",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "5.05",
+    ["NMS_VERSION"] = "5.51",
     ["MOD_DESCRIPTION"] = "Make the generated ships, multitools, freighters and frigates only have S class with square super charged slots. Make frigates have max stats.",
     ["MODIFICATIONS"] = {
         {
@@ -74,12 +74,12 @@ if Stats then
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {
-                                {"Combat","GcFrigateStatRange.xml"},
-                                {"Exploration","GcFrigateStatRange.xml"},
-                                {"Mining","GcFrigateStatRange.xml"},
-                                {"Diplomatic","GcFrigateStatRange.xml"},
-                                {"FuelCapacity","GcFrigateStatRange.xml"},
-                                {"Speed","GcFrigateStatRange.xml"},
+                                {"Combat","GcFrigateStatRange"},
+                                {"Exploration","GcFrigateStatRange"},
+                                {"Mining","GcFrigateStatRange"},
+                                {"Diplomatic","GcFrigateStatRange"},
+                                {"FuelCapacity","GcFrigateStatRange"},
+                                {"Speed","GcFrigateStatRange"},
                             },
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] = {
@@ -88,7 +88,7 @@ if Stats then
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FuelBurnRate","GcFrigateStatRange.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"FuelBurnRate","GcFrigateStatRange"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"Minimum", "0"},

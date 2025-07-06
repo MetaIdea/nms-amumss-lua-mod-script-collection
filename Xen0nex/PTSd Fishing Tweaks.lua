@@ -1,5 +1,5 @@
 ModName = "PTSd Fishing Tweaks"
-GameVersion = "5_11"
+GameVersion = "5_57"
 Description = "Changes certain aspects of fishing & baits."
 
 Path1 = "GCFISHINGGLOBALS.GLOBAL.MBIN"
@@ -104,11 +104,11 @@ FishSizeDepthChanges =
 }
 
 --AddFishTrapFuel =
---[[<Property value="GcMaintenanceElement.xml">
-              <Property name="ItemGroupOverride" value="GcMaintenanceElementGroups.xml">
+--[[<Property value="GcMaintenanceElement">
+              <Property name="ItemGroupOverride" value="GcMaintenanceElementGroups">
                 <Property name="MaintenanceGroup" value="Custom" />
               </Property>
-              <Property name="Type" value="GcInventoryType.xml">
+              <Property name="Type" value="GcInventoryType">
                 <Property name="InventoryType" value="Technology" />
               </Property>
               <Property name="Id" value="MAINT_FUEL1" />
@@ -116,8 +116,8 @@ FishSizeDepthChanges =
               <Property name="MaxRandAmount" value="0" />
               <Property name="MaxCapacity" value="10" />
               <Property name="AmountEmptyTimePeriod" value="300" />
-              <Property name="HideWhenComplete" value="False" />
-              <Property name="BlockDiscardWhenAllowedForParent" value="False" />
+              <Property name="HideWhenComplete" value="false" />
+              <Property name="BlockDiscardWhenAllowedForParent" value="false" />
               <Property name="LocatorOverride" value="" />
               <Property name="UpdateType" value="UpdatesAlways" />
               <Property name="DamagedAfterTimePeriodMin" value="0" />
@@ -132,6 +132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_DESCRIPTION"]		= Description,
 	["MOD_AUTHOR"]			= "Xen0nex",
 	["NMS_VERSION"]			= GameVersion,
+	["EXML_CREATE"] = "FALSE",
 	["MODIFICATIONS"]		= 
 	{
 		{
@@ -139,7 +140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"] 	= {Path1},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -211,7 +212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {Path2},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"ProductID", "FISHBAIT_DAY"},
@@ -239,10 +240,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 				--[[
 				{
 					["MBIN_FILE_SOURCE"] 	= {Path3},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
+							["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement"},
                             ["ADD_OPTION"]  = "ADDbeforeSECTION",
 							["ADD"] = AddFishTrapFuel
                         },
@@ -252,12 +253,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 				--[[
 				{
 					["MBIN_FILE_SOURCE"] 	= {Path4},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"x", x},
+								{"X", X},
 							}
 						},
 					}
@@ -266,12 +267,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 				--[[
 				{
 					["MBIN_FILE_SOURCE"] 	= {Path5},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"x", x},
+								{"X", X},
 							}
 						},
 					}
@@ -282,7 +283,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	}
 }
 
-local ChangesToFishGlobals = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToFishGlobals = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #FishSizeDepthChanges do
 	local Size = FishSizeDepthChanges[i][1]
@@ -293,7 +294,7 @@ for i = 1, #FishSizeDepthChanges do
 
 			ChangesToFishGlobals[#ChangesToFishGlobals+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {Size, "GcFishSizeProbability.xml"},
+				["SPECIAL_KEY_WORDS"] = {Size, "GcFishSizeProbability"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"BaseWeight", BaseWeight},
@@ -304,7 +305,7 @@ for i = 1, #FishSizeDepthChanges do
 			}
 end
 
-local ChangesToBaitData = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local ChangesToBaitData = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
 
 for i = 1, #SpecBaitChanges do
 	local BaitID = SpecBaitChanges[i][1]

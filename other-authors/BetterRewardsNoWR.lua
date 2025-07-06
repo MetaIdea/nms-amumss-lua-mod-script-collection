@@ -27,9 +27,10 @@ BOUNTY_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanite
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 	= "BetterRewardsNoWR.pak",
+["MOD_FILENAME"] 	= "BetterRewardsNoWR",
+["MOD_BATCHNAME"]	= "BetterRewardsNoWR",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "5.21",
+["NMS_VERSION"]		= "5.50",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to unit, nanite and quicksilver reward values without extra word learning and no resource or product multipliers",
 ["MODIFICATIONS"] 	=
 	{

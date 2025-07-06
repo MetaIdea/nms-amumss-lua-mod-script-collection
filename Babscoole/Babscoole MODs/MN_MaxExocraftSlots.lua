@@ -4,10 +4,10 @@ TECHSLOT = 60
 --Max Tech Slots: 60 (10x6)
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "MN_MaxExocraftSlots.pak",
+["MOD_FILENAME"]    = "MN_MaxExocraftSlots",
 ["MOD_DESCRIPTION"] = "Enables and Maxs out both cargo and technology slots for exocraft.",
 ["MOD_AUTHOR"]      = "Masternetra",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = "VehicleSmall",

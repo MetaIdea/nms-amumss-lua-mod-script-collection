@@ -33,25 +33,27 @@ BOUNTY_UNITS_MULTI		= 5		-- Default value is 1 | Multiplys the amount of units y
 BOUNTY_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Bounty Board Missions (Pirate or outlaw run Space Stations)
 
 -- When learning words, you can choose to have a PERCENTAGE(%) chance at learning an Atlas word along with them (default value is 20%)
--- If you wish to learn Atlas words change the value to a number ranging from 1-100 in the following line (line 45): <Property name="PercentageChance" value="20" />
--- Edit the value in the double bracket -> [[ ]] <- section below!! ----> <Property name="PercentageChance" value="20" /> <---- edit this "20", the " " must stay!!
+-- If you wish to learn Atlas words change the value to a number ranging from 1-100 in the following line (line 41): <Property name="PercentageChance" value="20.000000" />
+-- Edit the value in the double bracket -> [[ ]] <- section below!! ----> <Property name="PercentageChance" value="20.000000" /> <---- edit this "20.000000", the " " must stay!!
 
 ATLAS_WORD = [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="20" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="Atlas" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="wordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
+					<Property name="List" value="GcRewardTableItem">
+						<Property name="PercentageChance" value="20.000000" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardTeachWord">
+							<Property name="GcRewardTeachWord">
+								<Property name="Race" value="GcAlienRace">
+									<Property name="AlienRace" value="Atlas" />
+								</Property>
+								<Property name="UseCategory" value="false" />
+								<Property name="Category" value="GcWordCategoryTableEnum">
+									<Property name="wordcategorytableEnum" value="MISC" />
+								</Property>
+								<Property name="AmountMin" value="1" />
+								<Property name="AmountMax" value="1" />
+							</Property>
+						</Property>
+					</Property>
 ]]
 
 ------------------------------------------------------------------------------
@@ -60,40 +62,44 @@ ATLAS_WORD = [[
 
 MISC_WORD =
 [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="None" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="wordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
+					<Property name="List" value="GcRewardTableItem">
+						<Property name="PercentageChance" value="100.000000" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardTeachWord">
+							<Property name="GcRewardTeachWord">
+								<Property name="Race" value="GcAlienRace">
+									<Property name="AlienRace" value="None" />
+								</Property>
+								<Property name="UseCategory" value="false" />
+								<Property name="Category" value="GcWordCategoryTableEnum">
+									<Property name="wordcategorytableEnum" value="MISC" />
+								</Property>
+								<Property name="AmountMin" value="1" />
+								<Property name="AmountMax" value="1" />
+							</Property>
+						</Property>
+					</Property>
 ]]
 
 ATLAS_WORD_FULL =
 [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="Atlas" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="wordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
+					<Property name="List" value="GcRewardTableItem">
+						<Property name="PercentageChance" value="100.000000" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardTeachWord">
+							<Property name="GcRewardTeachWord">
+								<Property name="Race" value="GcAlienRace">
+									<Property name="AlienRace" value="Atlas" />
+								</Property>
+								<Property name="UseCategory" value="false" />
+								<Property name="Category" value="GcWordCategoryTableEnum">
+									<Property name="wordcategorytableEnum" value="MISC" />
+								</Property>
+								<Property name="AmountMin" value="1" />
+								<Property name="AmountMax" value="1" />
+							</Property>
+						</Property>
+					</Property>
 ]]
 
 MISC_WORD_LEARN = string.rep(MISC_WORD, WORDS_TO_LEARN)
@@ -102,9 +108,10 @@ ATLAS_WORD_LEARN = string.rep(ATLAS_WORD_FULL, ATLAS_WORDS_TO_LEARN - 1)
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 	= "BetterRewards.pak",
+["MOD_FILENAME"] 	= "BetterRewards",
+["MOD_BATCHNAME"]	= "BetterRewardsCombined",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "5.21",
+["NMS_VERSION"]		= "5.50",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to most reward values",
 ["MODIFICATIONS"] 	=
 	{

@@ -3,20 +3,56 @@ local mod_desc = [[
   Adds procedural colors for the sentinel multitools
 ]]---------------------------------------------------
 
+local function OneLayerProcTexFile(t)
+	return ([[<Data template="cTkProceduralTextureList">
+		<Property name="Layers">
+			<Property name="Layers" value="TkProceduralTextureLayer">
+				<Property name="Name" value="%s"/>
+				<Property name="Probability" value="1"/>
+				<Property name="Textures">
+					<Property name="Textures" value="TkProceduralTexture">
+						<Property name="Name" value="%s" />
+						<Property name="Palette" value="TkPaletteTexture">
+							<Property name="Palette" value="%s"/>
+							<Property name="ColourAlt" value="%s"/>
+							<Property name="Index" value="-1"/>
+						</Property>
+						<Property name="Probability" value="1"/>
+						<Property name="TextureName" value="%s"/>
+					</Property>
+				</Property>
+			</Property>
+			<Property value="TkProceduralTextureLayer"/>
+			<Property value="TkProceduralTextureLayer"/>
+			<Property value="TkProceduralTextureLayer"/>
+			<Property value="TkProceduralTextureLayer"/>
+			<Property value="TkProceduralTextureLayer"/>
+			<Property value="TkProceduralTextureLayer"/>
+			<Property value="TkProceduralTextureLayer"/>
+		</Property>
+	</Data>]]):format(
+		t.layer		or 'BASE',
+		t.name		or '',
+		t.palette	or 'Rock',
+		t.color		or 'None',
+		t.texture
+	)
+end
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Sentinel Tool Procedural Color.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.29',
+	NMS_VERSION			= '5.73',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOL/ORANGEMETALMAT.MATERIAL.MBIN',
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'gDiffuseMap'},
 				VALUE_CHANGE_TABLE 	= {
-					{'Map', 'TEXTURES/COMMON/ROBOTS/SHARED/PAINTEDMETALPROC.DDS'}
+					{'Map', 'TEXTURES/COMMON/ROBOTS/SHARED/PAINTEDMETALPROC.BASE.DDS'}
 				}
 			},
 			{
@@ -36,32 +72,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}},
 	ADD_FILES	= {
 		{
-			FILE_DESTINATION = 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAIN.TEXTURE.EXML',
-			FILE_CONTENT	 = [[<Data template="TkProceduralTextureList">
-					<Property name="Layers">
-						<Property value="TkProceduralTextureLayer.xml">
-							<Property name="Name" value="BASE"/>
-							<Property name="Probability" value="1"/>
-							<Property name="Textures">
-								<Property value="TkProceduralTexture.xml">
-									<Property name="Palette" value="TkPaletteTexture.xml">
-										<Property name="Palette" value="Custom_Head"/>
-										<Property name="ColourAlt" value="Primary"/>
-									</Property>
-									<Property name="Probability" value="1"/>
-									<Property name="Diffuse" value="TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAIN.BASE.DDS"/>
-								</Property>
-							</Property>
-						</Property>
-						<Property value="TkProceduralTextureLayer.xml"/>
-						<Property value="TkProceduralTextureLayer.xml"/>
-						<Property value="TkProceduralTextureLayer.xml"/>
-						<Property value="TkProceduralTextureLayer.xml"/>
-						<Property value="TkProceduralTextureLayer.xml"/>
-						<Property value="TkProceduralTextureLayer.xml"/>
-						<Property value="TkProceduralTextureLayer.xml"/>
-					</Property>
-				</Data>]]
+			FILE_DESTINATION = 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAIN.TEXTURE.MXML',
+			FILE_CONTENT	 = OneLayerProcTexFile({
+				palette	= 'Custom_Head',
+				color	= 'Primary',
+				texture	= 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAIN.BASE.DDS'
+			})
 		}
 	}
 }

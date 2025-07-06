@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "NoPlanetaryRings.pak",
+["MOD_FILENAME"]    = "NoPlanetaryRings",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MOD_DESCRIPTION"] = "Removes planetary rings",
 ["MODIFICATIONS"]   =
     {
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -22,8 +22,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"PlanetRingsMin", "GcPlanetRingData.xml"},
-                                {"PlanetRingsMax", "GcPlanetRingData.xml"},
+                                {"PlanetRingsMin", "GcPlanetRingData"},
+                                {"PlanetRingsMax", "GcPlanetRingData"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {

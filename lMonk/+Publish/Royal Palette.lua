@@ -105,7 +105,7 @@ local function RebuildPaletteColors()
 		return c
 	end
 	local rgba = [[
-		<Property value="Colour.xml">
+		<Property name="Colours">
 			<Property name="R" value="%s"/>
 			<Property name="G" value="%s"/>
 			<Property name="B" value="%s"/>
@@ -122,7 +122,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.royal palette.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.29',
+	NMS_VERSION			= '5.55',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -136,13 +136,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				PRECEDING_KEY_WORDS = {'SpaceBottom', 'Colours'},
+				SPECIAL_KEY_WORDS	= {'SpaceBottom', 'GcPaletteData'},
+				PRECEDING_KEY_WORDS = 'Colours',
 				REMOVE				= 'Section'
 			},
 			{
-				PRECEDING_KEY_WORDS = 'SpaceBottom',
+				SPECIAL_KEY_WORDS	= {'SpaceBottom', 'GcPaletteData'},
 				ADD 				= RebuildPaletteColors()
-			},
+			}
 		}
 	},
 	{
@@ -167,9 +168,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 			--	add to complete fixed length array
-				SPECIAL_KEY_WORDS	= {'Name', 'BASE'},
-				ADD_OPTION			= 'AddAfterSection',
-				ADD 				= '<Property value="TkProceduralTextureLayer.xml"/>'
+				PRECEDING_KEY_WORDS = 'Layers',
+				ADD_OPTION			= 'AddEndSection',
+				ADD 				= '<Property name="Layers" value="TkProceduralTextureLayer"/>'
 			},
 		}
 	}

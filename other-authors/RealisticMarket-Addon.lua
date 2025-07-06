@@ -1,61 +1,27 @@
 Techfrag = [[
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="TECHFRAG" />
-        </Property>
 ]]
 Products = [[
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="HYPERFUEL2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="BP_SALVAGE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="FRIG_TOKEN" />
-        </Property>
 ]]
 Fleets= [[
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="U_FR_MINE4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="U_FR_EXP4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="U_FR_TRA4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="U_FR_COM4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="U_FR_FUEL4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="U_FR_SPE4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="U_FR_HYP4" />
-        </Property>
 ]]
 Alien= [[
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="AP_SHIPLAS4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="AP_SHIPGUN4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="AP_PULSE4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="AP_HYPER4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="AP_LAUNCH4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="AP_SHIPSHIELD4" />
-        </Property>
 ]]
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -72,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         {
 		
           ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
-          ["EXML_CHANGE_TABLE"] =
+          ["MXML_CHANGE_TABLE"] =
           {
             --S Class Modules, remove blacklist
             {

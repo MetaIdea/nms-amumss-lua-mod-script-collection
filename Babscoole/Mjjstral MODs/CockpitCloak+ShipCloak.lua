@@ -36,18 +36,20 @@ Name =
 function buildBlocks(nodeActiveState, PATH)
     return
 [[
-                  <Property value="GcNodeActivationAction.xml">
-                    <Property name="NodeActiveState" value="]] .. nodeActiveState .. [[" />
-                    <Property name="Name" value="]] .. PATH .. [[" />
-                    <Property name="SceneToAdd" value="" />
-                    <Property name="IncludePhysics" value="True" />
-                    <Property name="IncludeChildPhysics" value="True" />
-                    <Property name="NotifyNPC" value="False" />
-                    <Property name="UseMasterModel" value="True" />
-                    <Property name="UseLocalNode" value="False" />
-                    <Property name="RestartEmitters" value="False" />
-                    <Property name="AffectModels" value="True" />
-                  </Property>
+									<Property name="Action" value="GcNodeActivationAction">
+										<Property name="GcNodeActivationAction">
+                      <Property name="NodeActiveState" value="]] .. nodeActiveState .. [[" />
+                      <Property name="Name" value="]] .. PATH .. [[" />
+											<Property name="SceneToAdd" value="" />
+											<Property name="IncludePhysics" value="true" />
+											<Property name="IncludeChildPhysics" value="true" />
+											<Property name="NotifyNPC" value="false" />
+											<Property name="UseMasterModel" value="true" />
+											<Property name="UseLocalNode" value="false" />
+											<Property name="RestartEmitters" value="false" />
+											<Property name="AffectModels" value="true" />
+										</Property>
+									</Property>
 ]]
 end
 
@@ -67,9 +69,9 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "CockpitCloak+ShipCloak.pak",
+["MOD_FILENAME"]    = "CockpitCloak+ShipCloak",
 ["MOD_AUTHOR"]      = "Original mod and toggle idea by Mjjstral, original concept Gmr_Leon, Current author Babscoole",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MOD_DESCRIPTION"] = "Makes the cockpit interior and ship invisible when flying",
 ["MODIFICATIONS"]   =
     {
@@ -89,139 +91,162 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\INTERIOR\CANOPYA_INTERIOR\ENTITIES\COCKPIT.ENTITY.MBIN",
                         "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\SENTINELCOCKPIT\ENTITIES\COCKPITINTERIOR.ENTITY.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-    <Property value="LinkableNMSTemplate.xml">
-      <Property name="Template" value="GcTriggerActionComponentData.xml">
-        <Property name="HideModel" value="False" />
-        <Property name="StartInactive" value="False" />
-        <Property name="States">
-          <Property value="GcActionTriggerState.xml">
-            <Property name="StateID" value="BOOT" />
-            <Property name="Triggers">
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcAnimFrameEvent.xml">
-                  <Property name="Anim" value="ENTER" />
-                  <Property name="FrameStart" value="0" />
-                  <Property name="StartFromEnd" value="False" />
-                </Property>
-                <Property name="Action">
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="HIDE" />
-                    <Property name="Broadcast" value="False" />
-                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                      <Property name="BroadcastLevel" value="Local" />
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcAnimFrameEvent.xml">
-                  <Property name="Anim" value="EXIT" />
-                  <Property name="FrameStart" value="0" />
-                  <Property name="StartFromEnd" value="False" />
-                </Property>
-                <Property name="Action">
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="UNHIDE" />
-                    <Property name="Broadcast" value="False" />
-                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                      <Property name="BroadcastLevel" value="Local" />
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcAnimFrameEvent.xml">
-                  <Property name="Anim" value="EJECT" />
-                  <Property name="FrameStart" value="0" />
-                  <Property name="StartFromEnd" value="False" />
-                </Property>
-                <Property name="Action">
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="UNHIDE" />
-                    <Property name="Broadcast" value="False" />
-                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                      <Property name="BroadcastLevel" value="Local" />
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcStateTimeEvent.xml">
-                  <Property name="Seconds" value="3" />
-                  <Property name="RandomSeconds" value="0" />
-                  <Property name="UseMissionClock" value="False" />
-                </Property>
-                <Property name="Action">
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="HIDE" />
-                    <Property name="Broadcast" value="False" />
-                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                      <Property name="BroadcastLevel" value="Local" />
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-          <Property value="GcActionTriggerState.xml">
-            <Property name="StateID" value="HIDE" />
-            <Property name="Triggers">
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcStateTimeEvent.xml">
-                  <Property name="Seconds" value="9.25" />
-                  <Property name="RandomSeconds" value="0" />
-                  <Property name="UseMissionClock" value="False" />
-                </Property>
-                <Property name="Action">
+		<Property name="Components" value="GcTriggerActionComponentData">
+			<Property name="GcTriggerActionComponentData">
+				<Property name="HideModel" value="false" />
+				<Property name="StartInactive" value="false" />
+				<Property name="States">
+					<Property name="States" value="GcActionTriggerState">
+						<Property name="StateID" value="BOOT" />
+						<Property name="Triggers">
+							<Property name="Triggers" value="GcActionTrigger">
+								<Property name="Event" value="GcAnimFrameEvent">
+									<Property name="GcAnimFrameEvent">
+										<Property name="Anim" value="ENTER" />
+										<Property name="FrameStart" value="0" />
+										<Property name="StartFromEnd" value="false" />
+									</Property>
+								</Property>
+								<Property name="Action">
+									<Property name="Action" value="GcGoToStateAction">
+										<Property name="GcGoToStateAction">
+											<Property name="State" value="HIDE" />
+											<Property name="Broadcast" value="false" />
+											<Property name="BroadcastLevel" value="GcBroadcastLevel">
+												<Property name="BroadcastLevel" value="Local" />
+											</Property>
+										</Property>
+									</Property>
+								</Property>
+							</Property>
+							<Property name="Triggers" value="GcActionTrigger">
+								<Property name="Event" value="GcAnimFrameEvent">
+									<Property name="GcAnimFrameEvent">
+										<Property name="Anim" value="EXIT" />
+										<Property name="FrameStart" value="0" />
+										<Property name="StartFromEnd" value="false" />
+									</Property>
+								</Property>
+								<Property name="Action">
+									<Property name="Action" value="GcGoToStateAction">
+										<Property name="GcGoToStateAction">
+											<Property name="State" value="UNHIDE" />
+											<Property name="Broadcast" value="false" />
+											<Property name="BroadcastLevel" value="GcBroadcastLevel">
+												<Property name="BroadcastLevel" value="Local" />
+											</Property>
+										</Property>
+									</Property>
+								</Property>
+							</Property>
+							<Property name="Triggers" value="GcActionTrigger">
+								<Property name="Event" value="GcAnimFrameEvent">
+									<Property name="GcAnimFrameEvent">
+										<Property name="Anim" value="EJECT" />
+										<Property name="FrameStart" value="0" />
+										<Property name="StartFromEnd" value="false" />
+									</Property>
+								</Property>
+								<Property name="Action">
+									<Property name="Action" value="GcGoToStateAction">
+										<Property name="GcGoToStateAction">
+											<Property name="State" value="UNHIDE" />
+											<Property name="Broadcast" value="false" />
+											<Property name="BroadcastLevel" value="GcBroadcastLevel">
+												<Property name="BroadcastLevel" value="Local" />
+											</Property>
+										</Property>
+									</Property>
+								</Property>
+							</Property>
+							<Property name="Triggers" value="GcActionTrigger">
+								<Property name="Event" value="GcStateTimeEvent">
+									<Property name="GcStateTimeEvent">
+										<Property name="Seconds" value="3.000000" />
+										<Property name="RandomSeconds" value="0.000000" />
+										<Property name="UseMissionClock" value="false" />
+									</Property>
+								</Property>
+								<Property name="Action">
+									<Property name="Action" value="GcGoToStateAction">
+										<Property name="GcGoToStateAction">
+											<Property name="State" value="HIDE" />
+											<Property name="Broadcast" value="false" />
+											<Property name="BroadcastLevel" value="GcBroadcastLevel">
+												<Property name="BroadcastLevel" value="Local" />
+											</Property>
+										</Property>
+									</Property>
+								</Property>
+							</Property>
+						</Property>
+					</Property>
+					<Property name="States" value="GcActionTriggerState">
+						<Property name="StateID" value="HIDE" />
+						<Property name="Triggers">
+							<Property name="Triggers" value="GcActionTrigger">
+								<Property name="Event" value="GcStateTimeEvent">
+									<Property name="GcStateTimeEvent">
+										<Property name="Seconds" value="9.250000" />
+										<Property name="RandomSeconds" value="0.000000" />
+										<Property name="UseMissionClock" value="false" />
+									</Property>
+								</Property>
+								<Property name="Action">
 ]] .. table.concat(cockpitsDeactivate) .. [[
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="BOOT" />
-                    <Property name="Broadcast" value="False" />
-                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                      <Property name="BroadcastLevel" value="Local" />
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-          <Property value="GcActionTriggerState.xml">
-            <Property name="StateID" value="UNHIDE" />
-            <Property name="Triggers">
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcStateTimeEvent.xml">
-                  <Property name="Seconds" value="3" />
-                  <Property name="RandomSeconds" value="0" />
-                  <Property name="UseMissionClock" value="False" />
-                </Property>
-                <Property name="Action">
+									<Property name="Action" value="GcGoToStateAction">
+										<Property name="GcGoToStateAction">
+											<Property name="State" value="BOOT" />
+											<Property name="Broadcast" value="false" />
+											<Property name="BroadcastLevel" value="GcBroadcastLevel">
+												<Property name="BroadcastLevel" value="Local" />
+											</Property>
+										</Property>
+									</Property>
+								</Property>
+							</Property>
+						</Property>
+					</Property>
+					<Property name="States" value="GcActionTriggerState">
+						<Property name="StateID" value="UNHIDE" />
+						<Property name="Triggers">
+							<Property name="Triggers" value="GcActionTrigger">
+								<Property name="Event" value="GcStateTimeEvent">
+									<Property name="GcStateTimeEvent">
+										<Property name="Seconds" value="3.000000" />
+										<Property name="RandomSeconds" value="0.000000" />
+										<Property name="UseMissionClock" value="false" />
+									</Property>
+								</Property>
+								<Property name="Action">
 ]] .. table.concat(cockpitsActivate) .. [[
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="BOOT" />
-                    <Property name="Broadcast" value="False" />
-                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                      <Property name="BroadcastLevel" value="Local" />
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property name="Persistent" value="False" />
-        <Property name="PersistentState" value="" />
-        <Property name="ResetShotTimeOnStateChange" value="False" />
-        <Property name="LinkStateToBaseGrid" value="False" />
-      </Property>
-      <Property name="Linked" value="" />
-    </Property>
+									<Property name="Action" value="GcGoToStateAction">
+										<Property name="GcGoToStateAction">
+											<Property name="State" value="BOOT" />
+											<Property name="Broadcast" value="false" />
+											<Property name="BroadcastLevel" value="GcBroadcastLevel">
+												<Property name="BroadcastLevel" value="Local" />
+											</Property>
+										</Property>
+									</Property>
+								</Property>
+							</Property>
+						</Property>
+					</Property>
+				</Property>
+				<Property name="Persistent" value="false" />
+				<Property name="PersistentState" value="" />
+				<Property name="ResetShotTimeOnStateChange" value="false" />
+				<Property name="LinkStateToBaseGrid" value="false" />
+			</Property>
+		</Property>
 ]]                        }
                     }
                 },
@@ -245,107 +270,122 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIPPARTS\COCKPIT\SAILSHIPCOCKPITA_INTERIOR\ENTITIES\COCKPIT.ENTITY.MBIN",
                         "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\SENTINELCOCKPIT\ENTITIES\COCKPITINTERIOR.ENTITY.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-    <Property value="LinkableNMSTemplate.xml">
-      <Property name="Template" value="GcTriggerActionComponentData.xml">
-        <Property name="HideModel" value="False" />
-        <Property name="StartInactive" value="False" />
-        <Property name="States">
-          <Property value="GcActionTriggerState.xml">
-            <Property name="StateID" value="BOOT" />
-            <Property name="Triggers">
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcAnimFrameEvent.xml">
-                  <Property name="Anim" value="TAKEOFF" />
-                  <Property name="FrameStart" value="5" />
-                  <Property name="StartFromEnd" value="False" />
-                </Property>
-                <Property name="Action">
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="HIDE" />
-                    <Property name="Broadcast" value="False" />
-                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                      <Property name="BroadcastLevel" value="Local" />
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcAnimFrameEvent.xml">
-                  <Property name="Anim" value="LANDING" />
-                  <Property name="FrameStart" value="0" />
-                  <Property name="StartFromEnd" value="False" />
-                </Property>
-                <Property name="Action">
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="UNHIDE" />
-                    <Property name="Broadcast" value="False" />
-                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                      <Property name="BroadcastLevel" value="Local" />
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
+		<Property name="Components" value="GcTriggerActionComponentData">
+			<Property name="GcTriggerActionComponentData">
+				<Property name="HideModel" value="false" />
+				<Property name="StartInactive" value="false" />
+				<Property name="States">
+					<Property name="States" value="GcActionTriggerState">
+						<Property name="StateID" value="BOOT" />
+						<Property name="Triggers">
+							<Property name="Triggers" value="GcActionTrigger">
+								<Property name="Event" value="GcAnimFrameEvent">
+									<Property name="GcAnimFrameEvent">
+										<Property name="Anim" value="TAKEOFF" />
+										<Property name="FrameStart" value="5" />
+										<Property name="StartFromEnd" value="false" />
+									</Property>
+								</Property>
+								<Property name="Action">
+									<Property name="Action" value="GcGoToStateAction">
+										<Property name="GcGoToStateAction">
+											<Property name="State" value="HIDE" />
+											<Property name="Broadcast" value="false" />
+											<Property name="BroadcastLevel" value="GcBroadcastLevel">
+												<Property name="BroadcastLevel" value="Local" />
+											</Property>
+										</Property>
+									</Property>
+								</Property>
+							</Property>
+							<Property name="Triggers" value="GcActionTrigger">
+								<Property name="Event" value="GcAnimFrameEvent">
+									<Property name="GcAnimFrameEvent">
+										<Property name="Anim" value="LANDING" />
+										<Property name="FrameStart" value="0" />
+										<Property name="StartFromEnd" value="false" />
+									</Property>
+								</Property>
+								<Property name="Action">
+									<Property name="Action" value="GcGoToStateAction">
+										<Property name="GcGoToStateAction">
+											<Property name="State" value="UNHIDE" />
+											<Property name="Broadcast" value="false" />
+											<Property name="BroadcastLevel" value="GcBroadcastLevel">
+												<Property name="BroadcastLevel" value="Local" />
+											</Property>
+										</Property>
+									</Property>
+								</Property>
+							</Property>
+						</Property>
           </Property>
-          <Property value="GcActionTriggerState.xml">
-            <Property name="StateID" value="HIDE" />
-            <Property name="Triggers">
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcStateTimeEvent.xml">
-                  <Property name="Seconds" value="9.5 " />
-                  <Property name="RandomSeconds" value="0" />
-                  <Property name="UseMissionClock" value="False" />
-                </Property>
-                <Property name="Action">
+					<Property name="States" value="GcActionTriggerState">
+						<Property name="StateID" value="HIDE" />
+						<Property name="Triggers">
+							<Property name="Triggers" value="GcActionTrigger">
+								<Property name="Event" value="GcStateTimeEvent">
+									<Property name="GcStateTimeEvent">
+										<Property name="Seconds" value="9.500000" />
+										<Property name="RandomSeconds" value="0.000000" />
+										<Property name="UseMissionClock" value="false" />
+									</Property>
+								</Property>
+								<Property name="Action">
 ]] .. table.concat(procgenDeactivate) .. [[
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="BOOT" />
-                    <Property name="Broadcast" value="False" />
-                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                      <Property name="BroadcastLevel" value="Local" />
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-          <Property value="GcActionTriggerState.xml">
-            <Property name="StateID" value="UNHIDE" />
-            <Property name="Triggers">
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcStateTimeEvent.xml">
-                  <Property name="Seconds" value="9.5" />
-                  <Property name="RandomSeconds" value="0" />
-                  <Property name="UseMissionClock" value="False" />
-                </Property>
-                <Property name="Action">
+									<Property name="Action" value="GcGoToStateAction">
+										<Property name="GcGoToStateAction">
+											<Property name="State" value="BOOT" />
+											<Property name="Broadcast" value="false" />
+											<Property name="BroadcastLevel" value="GcBroadcastLevel">
+												<Property name="BroadcastLevel" value="Local" />
+											</Property>
+										</Property>
+									</Property>
+								</Property>
+							</Property>
+						</Property>
+					</Property>
+					<Property name="States" value="GcActionTriggerState">
+						<Property name="StateID" value="UNHIDE" />
+						<Property name="Triggers">
+							<Property name="Triggers" value="GcActionTrigger">
+								<Property name="Event" value="GcStateTimeEvent">
+									<Property name="GcStateTimeEvent">
+										<Property name="Seconds" value="9.500000" />
+										<Property name="RandomSeconds" value="0.000000" />
+										<Property name="UseMissionClock" value="false" />
+									</Property>
+								</Property>
+								<Property name="Action">
 ]] .. table.concat(procgenActivate) .. [[
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="BOOT" />
-                    <Property name="Broadcast" value="False" />
-                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                      <Property name="BroadcastLevel" value="Local" />
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property name="Persistent" value="False" />
-        <Property name="PersistentState" value="" />
-        <Property name="ResetShotTimeOnStateChange" value="False" />
-        <Property name="LinkStateToBaseGrid" value="False" />
-      </Property>
-      <Property name="Linked" value="" />
-    </Property>
+									<Property name="Action" value="GcGoToStateAction">
+										<Property name="GcGoToStateAction">
+											<Property name="State" value="BOOT" />
+											<Property name="Broadcast" value="false" />
+											<Property name="BroadcastLevel" value="GcBroadcastLevel">
+												<Property name="BroadcastLevel" value="Local" />
+											</Property>
+										</Property>
+									</Property>
+								</Property>
+							</Property>
+						</Property>
+					</Property>
+				</Property>
+				<Property name="Persistent" value="false" />
+				<Property name="PersistentState" value="" />
+				<Property name="ResetShotTimeOnStateChange" value="false" />
+				<Property name="LinkStateToBaseGrid" value="false" />
+			</Property>
+		</Property>
 ]]                        }
                     }
                 },
@@ -361,7 +401,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\COMMON\SPACECRAFT\SHUTTLE\INTERIORS\CANOPYA_INTERIOR\CANOPYA_INTERIOR.SCENE.MBIN",
                         "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\SENTINELCOCKPIT.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Spacemap"},

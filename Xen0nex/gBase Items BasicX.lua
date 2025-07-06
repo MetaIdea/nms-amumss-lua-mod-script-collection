@@ -2,10 +2,13 @@ Author = "Gumsk"			--Edited by Xen0nex
 ModName = "gBase"
 ModNameSub = "Items BasicX"
 BaseDescription = "Removes restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
-GameVersion = "5_11"
+GameVersion = "5_64"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 FileSource2 = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN"		--Added by Xen0nex
+
+FixHotspotIDs = true		--false		Set true to make the different types of hotspots back to their pre-5.61 names, which seems to possibly be some kind of bug
+FreebuildShelters = true	--false		Set true to make the "Ragged Tent" and "Mud Hut" base building objects buildable anywhere on planets to use as shelter, even outside of a base
 
 MessageModRegion = 2		--Original 3/planet					~X (Vanilla is 2/Region?)
 SolarRate = 50				--Original 50
@@ -30,7 +33,7 @@ ParagonDistance = 100000	--1000
 
 --Additions by Xen0nex below
 --(PlayerBase Limits)
-EMClassBStrength = 200		--250		Base Strength for Class B Electromagnetic Power hotspots (Vanilla is C=150, B=220, A=250, S=300)
+EMClassBStrength = 200.000000	--220.000000		Base Strength for Class B Electromagnetic Power hotspots (Vanilla is C=150, B=220, A=250, S=300)
 EMBaseLimit = 0				--0
 MineralBaseLimit = 8		--0
 GasBaseLimit = 8			--0
@@ -46,16 +49,19 @@ LargePlanterPowerDraw = -16	--	-20 kPs		(Remember to make the value negative)
 BiodomeBaseLimit = 0		--0
 BiodomePowerDraw = -160		--	-50 kPs		(Remember to make the value negative)
 
-TeleportersBuildable = "True"	--"True"		Set this to "False" to disable the player from constructing any Teleporters in bases or freighters at all. (You can still use Station Teleporters to teleport to your base or freighter)
+TeleportersBuildable = "true"	--"true"		Set this to "false" to disable the player from constructing any Teleporters in bases or freighters at all. (You can still use Station Teleporters to teleport to your base or freighter)
+
+--Sets whether most base building objects can be built freely on planets without having to build a base computer first
+BuildMostItemsWithoutBase = false	--false		Set to "true" to allow building without a base computer
 
 --Reverts certain things to not be buildable on freighters, since they have dedicated freighter rooms for them instead
-StandPlanterFreighter = "False"	--"True"		Override for setting if Standing Planters can be built on freighters or not
-CropsFreighter = "False"		--"False"		Override for setting if Hydroponic Trays, Large Hydroponic Trays, and Biodomes can be built on freighters or not
-RefinersFreighter = "False"		--"False"		Override for setting if Nutrient Processors, Medium/Large Refiners can be built on freighters or not
-OtherFreighter = "False"		--"False"		Override for setting if regular Galactic Trade Terminals, Appearance Modifiers, Storage Containers can be built on freighters or not
+StandPlanterFreighter = "false"	--"true"		Override for setting if Standing Planters can be built on freighters or not
+CropsFreighter = "false"		--"false"		Override for setting if Hydroponic Trays, Large Hydroponic Trays, and Biodomes can be built on freighters or not
+RefinersFreighter = "false"		--"false"		Override for setting if Nutrient Processors, Medium/Large Refiners can be built on freighters or not
+OtherFreighter = "false"		--"false"		Override for setting if regular Galactic Trade Terminals, Appearance Modifiers, Storage Containers can be built on freighters or not
 
 --Controls whether any "decorative" freighter rooms / doors / walkways / storage rooms / etc. are buildable on planets or not
-FreighterRoomsPlanetside = "True"	--"False"	Override for setting if various Freighter rooms/doors/walkways/storage rooms/etc. without special functions can be built on planets or not.
+FreighterRoomsPlanetside = "true"	--"false"	Override for setting if various Freighter rooms/doors/walkways/storage rooms/etc. without special functions can be built on planets or not.
 PossibleFreighterRooms = {"FRE_ROOM_IND", "FRE_ROOM_IND1", "FRE_ROOM_LADDER", "FRE_ROOM_STORE0", "FRE_ROOM_STORE1", "FRE_ROOM_STORE2", "FRE_ROOM_STORE3", "FRE_ROOM_STORE4", "FRE_ROOM_STORE5", "FRE_ROOM_STORE6", "FRE_ROOM_STORE7", "FRE_ROOM_STORE8", "FRE_ROOM_STORE9", "FRE_CORR_A", "FRE_CORR_A_GLAS", "FRE_CORR_A_L", "FRE_CORR_A_STR", "FRE_CORR_A_T", "FRE_CORR_GLA_L", "FRE_CORR_GLA_ST", "FRE_CORR_GLA_T", "FRE_CORR_G_STA", "FRE_EXT_PLATFOR", "FRE_EXT_WALKWAY", "FRE_EXT_W_STA", "FRE_FACE_DOOR_A", "FRE_FACE_WALL", "FRE_FACE_WINDOW", "FRE_ROOM_LADDER", "FRE_CORR_STA", }
 
 --Changes to base values for extractor rates & storage in RegionHotspotsTable, to allow higher effective storage / extraction rates without disabling base uploading
@@ -68,10 +74,10 @@ SubstanceYeildAll = 250/2		--250		Increasing this increases the final effective 
 	--ALSO NOTE: The ratio of SubstanceYeild to AmountCost appears to control the smallest "step" or "increment" of extraction rate for Mineral / Gas Extractors. E.G. In vanilla Extractors round their extraction rate to the nearest multiple of "1 units/hr". Multiplying SubstanceYeild by 10 OR dividing AmountCost by 10 will make Extractors round their extraction rate to the nearest multiple of "25 units/hr".
 
 --Sets the ClassStrengths multipliers for the relative substance yield amounts of different Gas/Mineral hotspot classes
-CSpotYield =	0.145			--1
-BSpotYield =	0.2				--1.5
-ASpotYield =	0.57			--2
-SSpotYield =	2.5				--2.5
+CSpotYield =	0.145000		--1.000000
+BSpotYield =	0.200000		--1.500000
+ASpotYield =	0.570000		--2.000000
+SSpotYield =	2.500000		--2.500000
 
 --Increasing these values crashes the game
 --BaseExtractMinAll = 190		--190		Minimum range of the base extraction rate, before applying extractor or hotspot class modifiers
@@ -80,41 +86,53 @@ SSpotYield =	2.5				--2.5
 SubstanceHotSpots =
 {"Mineral1", "Mineral2", "Mineral3", "Gas1", "Gas2", }
 
+function FixedHotspot (NewHotspotID)
+    return
+[[<Property name="]]..NewHotspotID..[[" value="GcRegionHotspotData">]]
+end
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
+["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {{
 ["MBIN_FILE_SOURCE"] = FileSource1,
-["EXML_CHANGE_TABLE"] = {{
-	["PRECEDING_KEY_WORDS"] = {""},
+["MXML_CHANGE_TABLE"] = {{
+	["SPECIAL_KEY_WORDS"] = {"ID","BASE_FLAG"},
+	["MATH_OPERATION"] 		= "*",
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildEffectAccelerator",1},
+		}},
+	
+	{["PRECEDING_KEY_WORDS"] = {""},
 	["REPLACE_TYPE"] = "ALL",
 	["VALUE_CHANGE_TABLE"] = {
-		{"IsDecoration","False"},
-		{"IsPlaceable","True"},
-		{"BuildableOnPlanetBase","True"},
-		{"BuildableOnPlanet","True"},
-		--{"BuildableOnPlanetWithProduct","True"},
-		{"BuildableOnFreighter","True"},
-		{"BuildableOnSpaceBase","True"},
-		{"BuildableUnderwater","True"},
-		{"BuildableAboveWater","True"},
+		{"IsDecoration","false"},
+		{"IsPlaceable","true"},
+		{"BuildableOnPlanetBase","true"},
+		--{"BuildableOnPlanet","true"},
+		--{"BuildableOnPlanetWithProduct","true"},
+		{"BuildableOnFreighter","true"},
+		{"BuildableOnSpaceBase","true"},
+		{"BuildableUnderwater","true"},
+		{"BuildableAboveWater","true"},
 		{"PlanetBaseLimit",0},
 		{"RegionLimit",0},
 		{"PlanetLimit",0},
 		{"FreighterBaseLimit",0},
-		{"CheckPlaceholderCollision","False"},
-		{"CheckPlayerCollision","False"},
-		{"CanRotate3D","True"},
-		{"CanScale","True"},
-		{"CanChangeColour","True"},
-		{"CanChangeMaterial","True"},
+		{"CheckPlaceholderCollision","false"},
+		{"CheckPlayerCollision","false"},
+		{"CanRotate3D","true"},
+		{"CanScale","true"},
+		{"CanChangeColour","true"},
+		{"CanChangeMaterial","true"},
 		{"DependsOnEnvironment","None"},
-		{"RemovesAttachedDecoration","False"},
-		{"RemovesWhenUnsnapped","False"},
+		{"RemovesAttachedDecoration","false"},
+		{"RemovesWhenUnsnapped","false"},
 		}},
 
 	{["SPECIAL_KEY_WORDS"] = {"ID","MESSAGEMODULE"},
@@ -124,30 +142,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 	{["SPECIAL_KEY_WORDS"] = {"ID","MESSAGE"},			--Buggy item; disabling it and letting message module take care of it.
 	["VALUE_CHANGE_TABLE"] = {
 		{"RegionLimit",1},
-		-- {"BuildableOnPlanetBase","False"},
-		-- {"BuildableOnSpaceBase","False"},
-		-- {"BuildableOnFreighter","False"},
-		-- {"BuildableOnPlanet","False"},
-		-- {"BuildableOnPlanetWithProduct","False"},
-		-- {"BuildableUnderwater","False"},
-		-- {"BuildableAboveWater","False"},
+		-- {"BuildableOnPlanetBase","false"},
+		-- {"BuildableOnSpaceBase","false"},
+		-- {"BuildableOnFreighter","false"},
+		-- {"BuildableOnPlanet","false"},
+		-- {"BuildableOnPlanetWithProduct","false"},
+		-- {"BuildableUnderwater","false"},
+		-- {"BuildableAboveWater","false"},
 		}},
 		
 	{["SPECIAL_KEY_WORDS"] = {"ID","T_WALL"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnPlanet", "False"},
+		{"BuildableOnPlanet", "false"},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","T_FLOOR"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnPlanet", "False"},
+		{"BuildableOnPlanet", "false"},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","T_ROOF6"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnPlanet", "False"},
+		{"BuildableOnPlanet", "false"},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","T_DOOR1"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnPlanet", "False"},
+		{"BuildableOnPlanet", "false"},
 		}},
 		
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_SOLAR_S"},
@@ -155,22 +173,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"Rate",SolarRate},
 		{"Storage",SolarStorage},
 		{"DependsOnEnvironment","DayNight"},
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetWithProduct", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetWithProduct", "false"},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_BIOGENERATOR"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"DependentRate",BioRate},
 		{"Storage",BioStorage},
-		{"BuildableOnSpacebase", "False"},
-		{"BuildableOnFreighter", "False"},
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetWithProduct", "False"},
+		{"BuildableOnSpacebase", "false"},
+		{"BuildableOnFreighter", "false"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetWithProduct", "false"},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_BATTERY_S"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetWithProduct", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetWithProduct", "false"},
 		{"Rate",BatteryRate},
 		{"Storage",BatteryStorage},
 		}},
@@ -178,8 +196,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["VALUE_CHANGE_TABLE"] = {
 		{"DependsOnHotspots",EMAnywhere},
 		{"Rate",EMRate},
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetWithProduct", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetWithProduct", "false"},
 		{"RegionLimit", EMLimit},
 		{"PlanetBaseLimit", EMBaseLimit},
 		}},
@@ -187,8 +205,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["VALUE_CHANGE_TABLE"] = {
 		{"Storage",math.floor(1*MineralStorage)},
 		{"Rate",math.floor(1*MineralRate)},
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetWithProduct", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetWithProduct", "false"},
 		{"RegionLimit", MineralLimit},
 		{"PlanetBaseLimit", MineralBaseLimit},
 		}},
@@ -196,16 +214,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["VALUE_CHANGE_TABLE"] = {
 		{"Storage",math.floor(1*GasStorage)},
 		{"Rate",math.floor(1*GasRate)},
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetWithProduct", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetWithProduct", "false"},
 		{"RegionLimit", GasLimit},
 		{"PlanetBaseLimit", GasBaseLimit},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_SILO_S"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"Storage",math.floor(1*SiloStorage)},
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetWithProduct", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetWithProduct", "false"},
 		{"RegionLimit", SiloLimit},
 		{"PlanetBaseLimit", SiloBaseLimit},
 		}},
@@ -324,28 +342,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_EXTR"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetBase", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetBase", "false"},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_NPCVEH"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetBase", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetBase", "false"},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_NPCWEA"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetBase", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetBase", "false"},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_REFINE"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetBase", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetBase", "false"},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_VEHICL"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetBase", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetBase", "false"},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_PARAGON"},
 	["VALUE_CHANGE_TABLE"] = {
@@ -357,19 +375,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","TELEPORTER"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetWithProduct", "False"},
-		{"BuildableOnFreighter", "False"},
-		{"BuildableOnSpaceBase", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetWithProduct", "false"},
+		{"BuildableOnFreighter", "false"},
+		{"BuildableOnSpaceBase", "false"},
 		{"ShowInBuildMenu", TeleportersBuildable},					--True
 		}},	
 	{["SPECIAL_KEY_WORDS"] = {"ID","TELEPORTER_F"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetWithProduct", "False"},
-		{"BuildableOnFreighter", "False"},
-		{"BuildableOnPlanetBase", "False"},
-		{"BuildableOnSpaceBase", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetWithProduct", "false"},
+		{"BuildableOnFreighter", "false"},
+		{"BuildableOnPlanetBase", "false"},
+		{"BuildableOnSpaceBase", "false"},
 		{"ShowInBuildMenu", TeleportersBuildable},					--True
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_TELEPO"},
@@ -378,24 +396,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_FACE_DOOR_A"},		--Making this placable with "free place" prevents you from deleting it afterwards
 	["VALUE_CHANGE_TABLE"] = {
-		{"IsPlaceable", "False"},									--False
+		{"IsPlaceable", "false"},									--False
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_FACE_WALL"},		--Making this placable with "free place" seems to just place an invisible object
 	["VALUE_CHANGE_TABLE"] = {
-		{"IsPlaceable", "False"},									--False
+		{"IsPlaceable", "false"},									--False
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","CORSTAIRS_SPACE"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnPlanet", "False"},
-		{"BuildableOnPlanetWithProduct", "False"},
-		{"BuildableOnFreighter", "False"},
-		{"BuildableOnPlanetBase", "False"},
-		{"BuildableOnSpaceBase", "False"},
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetWithProduct", "false"},
+		{"BuildableOnFreighter", "false"},
+		{"BuildableOnPlanetBase", "false"},
+		{"BuildableOnSpaceBase", "false"},
 		}},
 },},
 	{--This section added by Xen0nex
 		["MBIN_FILE_SOURCE"] 	= FileSource2,
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			--[[
 			{
@@ -423,43 +441,112 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{"SubstanceYeild", math.floor(1*SubstanceYeildAll)},
 				}
 			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Power", "GcRegionHotspotData.xml"},
-				["PRECEDING_KEY_WORDS"] = "ClassStrengths",
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"B", EMClassBStrength},
-				}
-			},
 		}
 	}
 },}}}
 
 
-local ChangesToBaseTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToBaseTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
+
+if BuildMostItemsWithoutBase then
+			ChangesToBaseTable[1] =
+			{
+				["REPLACE_TYPE"] = "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"BuildableOnPlanet", "true"},
+				}
+			}
+end
+
+if FreebuildShelters then
+			ChangesToBaseTable[#ChangesToBaseTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = 
+				{
+					{"ID", "BASE_SWAMP3"},
+					{"ID", "BLD_BUI_TENT"},
+				},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"BuildableOnPlanet", "true"},
+				}
+			}
+end
 
 for i = 1, #PossibleFreighterRooms do
 	local FreID = PossibleFreighterRooms[i]
+	local BuildPlan = "false"
+	if BuildMostItemsWithoutBase and FreighterRoomsPlanetside == "true" then
+		BuildPlan = "true"
+	end
 		
 			ChangesToBaseTable[#ChangesToBaseTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID",FreID},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"BuildableOnPlanet", FreighterRoomsPlanetside},
+					{"BuildableOnPlanet", BuildPlan},
 					{"BuildableOnPlanetBase", FreighterRoomsPlanetside},
 				}
 			}
 end
 
-local ChangesToHotSpots = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local ChangesToHotSpots = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
 
+if FixHotspotIDs then
+			ChangesToHotSpots[#ChangesToHotSpots+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Gas1", "GcRegionHotspotData"},
+				["ADD_OPTION"]  = "REPLACEatLINE",
+				["ADD"] = FixedHotspot ("Gas2"), 
+			}
+			ChangesToHotSpots[#ChangesToHotSpots+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Mineral3", "GcRegionHotspotData"},
+				["ADD_OPTION"]  = "REPLACEatLINE",
+				["ADD"] = FixedHotspot ("Gas1"), 
+			}
+			ChangesToHotSpots[#ChangesToHotSpots+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Mineral2", "GcRegionHotspotData"},
+				["ADD_OPTION"]  = "REPLACEatLINE",
+				["ADD"] = FixedHotspot ("Mineral3"), 
+			}
+			ChangesToHotSpots[#ChangesToHotSpots+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Mineral1", "GcRegionHotspotData"},
+				["ADD_OPTION"]  = "REPLACEatLINE",
+				["ADD"] = FixedHotspot ("Mineral2"), 
+			}
+			ChangesToHotSpots[#ChangesToHotSpots+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Power", "GcRegionHotspotData"},
+				["ADD_OPTION"]  = "REPLACEatLINE",
+				["ADD"] = FixedHotspot ("Mineral1"), 
+			}
+			ChangesToHotSpots[#ChangesToHotSpots+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"None", "GcRegionHotspotData"},
+				["ADD_OPTION"]  = "REPLACEatLINE",
+				["ADD"] = FixedHotspot ("Power"), 
+			}
+end
+			ChangesToHotSpots[#ChangesToHotSpots+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Power", "GcRegionHotspotData"},
+				["PRECEDING_KEY_WORDS"] = "ClassStrengths",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"B", EMClassBStrength},
+				}
+			}
 for i = 1, #SubstanceHotSpots do
 	local HotSpotName = SubstanceHotSpots[i]
 		
 			ChangesToHotSpots[#ChangesToHotSpots+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {HotSpotName, "GcRegionHotspotData.xml"},
+				["SPECIAL_KEY_WORDS"] = {HotSpotName, "GcRegionHotspotData"},
 				["PRECEDING_KEY_WORDS"] = "ClassStrengths",
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=

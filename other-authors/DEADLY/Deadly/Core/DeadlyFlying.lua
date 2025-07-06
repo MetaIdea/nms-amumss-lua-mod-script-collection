@@ -16,110 +16,104 @@ PLANETARY_CONTROL_HOVER_BOOST = 250
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyFlying.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.46",
+    ["NMS_VERSION"]   = "5.63",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                --
-                -- GCGAMEPLAYGLOBALS.GLOBAL.MBIN
-                --
-                {
+                { -- GCGAMEPLAYGLOBALS.GLOBAL.MBIN
                     ["MBIN_FILE_SOURCE"]  = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
                                 -- This affects overall speed on your space ship display, as well as AI ship speed.
                                 -- Basically, these are global ship's speed multipliers.
-                                --{ "SpeedReadoutMultiplier",  "1" }, -- 1
-                                { "SpaceSpeedReadoutMultiplier",  "1" }, -- 2
-                                { "CombatSpeedReadoutMultiplier", "1" }, -- 1.5
+                                --{ "SpeedReadoutMultiplier",  1.0 }, -- 1
+                                { "SpaceSpeedReadoutMultiplier",  1.0 }, -- 2
+                                { "CombatSpeedReadoutMultiplier", 1.0 }, -- 1.5
                             }
                         },
                     }
                 },
-                --
-                -- GCSPACESHIPGLOBALS.GLOBAL.MBIN
-                --
-                {
+                { -- GCSPACESHIPGLOBALS.GLOBAL.MBIN
                     ["MBIN_FILE_SOURCE"]  = "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
                                 --{ "SpaceCombatFollowModeUseBoost",       "True" }, -- False
                                 --{ "SpaceCombatFollowModeMaxTorque",      0.1 },    -- 0.8
-                                { "SpaceCombatFollowModeTargetDistance", 1000 }, -- 240
-                                --{ "SpaceCombatFollowModeEvadeTime",      0 },      -- 0.2
-                                --{ "SpaceCombatFollowModeEvadeThrust",    0 },      -- 0.6
-                                { "LockTargetRange",                     5000 }, -- 2000
+                                { "SpaceCombatFollowModeTargetDistance", 1000.0 }, -- 240.0
+                                --{ "SpaceCombatFollowModeEvadeTime",      0.0 },      -- 0.2
+                                --{ "SpaceCombatFollowModeEvadeThrust",    0.0 },      -- 0.6
+                                { "LockTargetRange",                     5000.0 }, -- 2000.0
                                 --{ "LockTargetMinDistance",               1 },    -- 100
                             }
                         },
                     }
                 },
-                --
-                -- GCSPACESHIPGLOBALS.GLOBAL.MBIN
-                --
-                {
+                { -- GCSPACESHIPGLOBALS.GLOBAL.MBIN
                     ["MBIN_FILE_SOURCE"]  = "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
                                 -- looks like affects only planetary flying
-                                { "MaxOverspeedBrake",                        0 },   -- 1000
+                                { "MaxOverspeedBrake",                        0.0 },   -- 1000.0
                                 -- make same as ThrustDecaySpring
-                                { "ThrustDecaySpringCombat",                  20 },  -- 20
+                                { "ThrustDecaySpringCombat",                  20.0 },  -- 30.0
                                 -- freighter! stop slowing my speed!
-                                { "FreighterApproachSpeedDamper",             1 },   -- 0.5
+                                { "FreighterApproachSpeedDamper",             1.0 },   -- 0.5
                                 -- tune a bit orientation limits on terrain
-                                { "PitchCorrectMaxDownAngle",                 60 },  -- 50
-                                { "PitchCorrectSoftDownAngle",                30 },  -- 25
+                                { "PitchCorrectMaxDownAngle",                 60.0 },  -- 50.0
+                                { "PitchCorrectSoftDownAngle",                30.0 },  -- 25.0
                                 --
-                                { "BoostNoAsteroidRadius",                    0 },   -- 1000
-                                { "MiniWarpNoAsteroidRadius",                 500 }, -- 1500
+                                { "BoostNoAsteroidRadius ",                   0.0 },   -- 1000.0
+                                { "MiniWarpNoAsteroidRadius ",                500.0 }, -- 1500.0
                                 -- Looks like that default (out of combat) BoostMultiplier is eq to 2.
-                                { "CombatBoostMultiplier",                    2 },   -- 5
-                                { "CombatBoostTurnDamp",                      1 },   -- 0.9
-                                { "FreighterCombatSpeedMul",                  1 },   -- 1.45
-                                { "FreighterCombatBoostMul",                  1 },   -- 0.5
+                                { "CombatBoostMultiplier",                    2.0 },   -- 5.0
+                                { "CombatBoostTurnDamp",                      1.0 },   -- 0.9
+                                { "FreighterCombatSpeedMul",                  1.0 },   -- 1.45
+                                { "FreighterCombatBoostMul",                  1.0 },   -- 0.5
                                 --
-                                { "NoBoostCombatEventMinBattleTime",          60 },  -- 35
-                                { "NoBoostCombatEventMinFreighterBattleTime", 60 },  -- 55
-                                { "NoBoostCombatEventTime",                   60 },  -- 25
+                                { "NoBoostCombatEventMinBattleTime",          60.0 },  -- 35.0
+                                { "NoBoostCombatEventMinFreighterBattleTime", 60.0 },  -- 55.0
+                                { "NoBoostCombatEventTime",                   60.0 },  -- 25.0
                                 --
-                                { "AvoidancePower",                           0 },
-                                { "AvoidanceDistancePower",                   0 },
-                                { "_3rdPersonAvoidanceAdjustPitchFactor",     0 },
-                                { "_3rdPersonAvoidanceAdjustRollFactor",      0 },
-                                { "_3rdPersonAvoidanceAdjustPitchFactor",     0 },
+                                { "AvoidancePower",                           0.0 },   -- 3.0
+                                { "AvoidanceDistancePower",                   0.0 },   -- 1.5
+                                { "3rdPersonAvoidanceAdjustPitchFactor",      0.0 },   -- 0.08
+                                { "3rdPersonAvoidanceAdjustRollFactor",       0.0 },   -- -0.018
+                                { "3rdPersonAvoidanceAdjustYawFactor",        0.0 },   -- -0.1
                                 -- this affects exit station speed too
-                                { "MiniWarpExitSpeed",                        500 }, -- 1000
+                                { "MiniWarpExitSpeed ",                       500.0 }, -- 1000.0
                                 -- this does not work
-                                { "MiniWarpExitSpeedStation",                 500 }, -- 500
+                                --{ "MiniWarpExitSpeedStation ",                500.0 }, -- 500.0
                                 -- ???
-                                -- { "FreighterApproachCombatMinSpeedFactor", "0" },  -- 0.2
+                                -- { "FreighterApproachCombatMinSpeedFactor", 0.0 },  -- 0.2
                             }
                         },
                         --Disables Auto Avoid + most importantly, additional combat speed bonus
                         {
-                            ["PRECEDING_KEY_WORDS"] = { "Avoidance" },
-                            ["VALUE_CHANGE_TABLE"]  = {
-                                { "NumRays",               0 },
-                                { "RayMinRange",           0 },
-                                { "RaySpeedTime",          0 },
-                                { "Force",                 0 },
-                                { "StartRadiusMultiplier", 0 },
-                                { "EndRadiusMultiplier",   0 },
-                                { "SpeedInterp",           0 },
-                                { "SpeedInterpMinSpeed",   0 },
-                                { "SpeedInterpRange",      0 },
+                            ["FOREACH_SKW_GROUP"]  = {
+                                { "Avoidance",            "GcSpaceshipAvoidanceData" },
+                                { "AvoidanceLowAltitude", "GcSpaceshipAvoidanceData" },
+                            },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "NumRays",               0 },   -- 12
+                                { "RayMinRange",           0.0 }, -- 40.0
+                                { "RaySpeedTime",          0.0 }, -- 6.0
+                                { "Force",                 0.0 }, -- 400.0
+                                { "StartRadiusMultiplier", 0.0 }, -- 2.0/1.25
+                                { "EndRadiusMultiplier",   0.0 }, -- 3.0/2.0
+                                { "SpeedInterp",           0.0 }, -- 0.6
+                                { "SpeedInterpMinSpeed",   0.0 }, -- 40.0/30.0
+                                { "SpeedInterpRange",      0.0 }, -- 30.0
                             }
                         },
                         {
                             ["FOREACH_SKW_GROUP"]  = {
-                                { "ControlBonusC", "IGNORE" },
-                                { "ControlBonusB", "IGNORE" },
-                                { "ControlBonusA", "IGNORE" },
-                                { "ControlBonusS", "IGNORE" },
+                                { "ControlBonusC", "GcPlayerSpaceshipClassBonuses" },
+                                { "ControlBonusB", "GcPlayerSpaceshipClassBonuses" },
+                                { "ControlBonusA", "GcPlayerSpaceshipClassBonuses" },
+                                { "ControlBonusS", "GcPlayerSpaceshipClassBonuses" },
                             },
                             ["MATH_OPERATION"]     = "*",
                             ["VALUE_CHANGE_TABLE"] = {
@@ -132,21 +126,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         -- space flying
                         {
                             ["FOREACH_SKW_GROUP"]  = {
-                                { "Control",      "GcPlayerSpaceshipControlData.xml", "SpaceEngine",  "GcPlayerSpaceshipEngineData.xml" },
-                                { "ControlLight", "GcPlayerSpaceshipControlData.xml", "SpaceEngine",  "GcPlayerSpaceshipEngineData.xml" },
-                                { "ControlHeavy", "GcPlayerSpaceshipControlData.xml", "SpaceEngine",  "GcPlayerSpaceshipEngineData.xml" },
-                                { "ControlHover", "GcPlayerSpaceshipControlData.xml", "SpaceEngine",  "GcPlayerSpaceshipEngineData.xml" },
-                                { "Control",      "GcPlayerSpaceshipControlData.xml", "CombatEngine", "GcPlayerSpaceshipEngineData.xml" },
-                                { "ControlLight", "GcPlayerSpaceshipControlData.xml", "CombatEngine", "GcPlayerSpaceshipEngineData.xml" },
-                                { "ControlHeavy", "GcPlayerSpaceshipControlData.xml", "CombatEngine", "GcPlayerSpaceshipEngineData.xml" },
-                                { "ControlHover", "GcPlayerSpaceshipControlData.xml", "CombatEngine", "GcPlayerSpaceshipEngineData.xml" },
+                                { "Control",      "GcPlayerSpaceshipControlData", "SpaceEngine",  "GcPlayerSpaceshipEngineData" },
+                                { "ControlLight", "GcPlayerSpaceshipControlData", "SpaceEngine",  "GcPlayerSpaceshipEngineData" },
+                                { "ControlHeavy", "GcPlayerSpaceshipControlData", "SpaceEngine",  "GcPlayerSpaceshipEngineData" },
+                                { "ControlHover", "GcPlayerSpaceshipControlData", "SpaceEngine",  "GcPlayerSpaceshipEngineData" },
+                                { "Control",      "GcPlayerSpaceshipControlData", "CombatEngine", "GcPlayerSpaceshipEngineData" },
+                                { "ControlLight", "GcPlayerSpaceshipControlData", "CombatEngine", "GcPlayerSpaceshipEngineData" },
+                                { "ControlHeavy", "GcPlayerSpaceshipControlData", "CombatEngine", "GcPlayerSpaceshipEngineData" },
+                                { "ControlHover", "GcPlayerSpaceshipControlData", "CombatEngine", "GcPlayerSpaceshipEngineData" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "MaxSpeed",       1000 }, -- 180
-                                { "OverspeedBrake", 0 },    -- 3
-                                { "ReverseBrake",   1 },    -- 0.5
-                                { "MinSpeed",       0 },    -- 1
-                                { "MinSpeedForce",  0 },    -- 5
+                                { "MaxSpeed",       1000.0 }, -- 180.0
+                                { "OverspeedBrake", 0.0 },    -- 3.0
+                                { "ReverseBrake",   1.0 },    -- 0.5
+                                { "MinSpeed",       0.0 },    -- 1.0
+                                { "MinSpeedForce",  0.0 },    -- 5.0
                             },
                         },
                         -- {
@@ -181,17 +175,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         -- planetary flying
                         {
                             ["FOREACH_SKW_GROUP"]  = {
-                                { "Control",      "GcPlayerSpaceshipControlData.xml", "PlanetEngine",      "GcPlayerSpaceshipEngineData.xml" },
-                                { "ControlLight", "GcPlayerSpaceshipControlData.xml", "PlanetEngine",      "GcPlayerSpaceshipEngineData.xml" },
-                                { "ControlHeavy", "GcPlayerSpaceshipControlData.xml", "PlanetEngine",      "GcPlayerSpaceshipEngineData.xml" },
-                                { "ControlHover", "GcPlayerSpaceshipControlData.xml", "PlanetEngine",      "GcPlayerSpaceshipEngineData.xml" },
-                                { "Control",      "GcPlayerSpaceshipControlData.xml", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml" },
-                                { "ControlLight", "GcPlayerSpaceshipControlData.xml", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml" },
-                                { "ControlHeavy", "GcPlayerSpaceshipControlData.xml", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml" },
-                                { "ControlHover", "GcPlayerSpaceshipControlData.xml", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml" },
+                                { "Control",      "GcPlayerSpaceshipControlData", "PlanetEngine",      "GcPlayerSpaceshipEngineData" },
+                                { "ControlLight", "GcPlayerSpaceshipControlData", "PlanetEngine",      "GcPlayerSpaceshipEngineData" },
+                                { "ControlHeavy", "GcPlayerSpaceshipControlData", "PlanetEngine",      "GcPlayerSpaceshipEngineData" },
+                                { "ControlHover", "GcPlayerSpaceshipControlData", "PlanetEngine",      "GcPlayerSpaceshipEngineData" },
+                                { "Control",      "GcPlayerSpaceshipControlData", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData" },
+                                { "ControlLight", "GcPlayerSpaceshipControlData", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData" },
+                                { "ControlHeavy", "GcPlayerSpaceshipControlData", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData" },
+                                { "ControlHover", "GcPlayerSpaceshipControlData", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "OverspeedBrake", 0 }, -- 3
+                                { "OverspeedBrake", 0.0 }, -- 3.0
                             },
                         },
                         -- Control

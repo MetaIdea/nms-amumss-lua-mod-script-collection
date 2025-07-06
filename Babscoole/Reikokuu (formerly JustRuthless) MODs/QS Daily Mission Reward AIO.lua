@@ -39,10 +39,10 @@ DailyReward =
 ---------------------------------
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "QS Daily Mission Reward "..Multiplier.."x.pak",
+["MOD_FILENAME"]    = "QS Daily Mission Reward "..Multiplier.."x",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Multiples the quicksilver reward from daily and weekly nexus missions",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -50,7 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         -- RewardTable
                     },
@@ -60,7 +60,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #DailyReward do
   local ListID = DailyReward[i][1]

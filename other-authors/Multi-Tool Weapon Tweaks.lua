@@ -63,6 +63,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","SHOTGUN","StatsType","Weapon_Projectile_Range"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",		"150"},		-- Original "55"
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"ID","SHOTGUN","StatsType","Weapon_Projectile_Damage"},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -71,11 +79,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","SHOTGUN","StatsType","Weapon_Projectile_Dispersion"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",		"8"},		-- Original "10"
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"ID","SMG","StatsType","Weapon_Projectile_Damage"},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",		"114"},		-- Original "96"
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","SMG","StatsType","Weapon_Projectile_Recoil"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",		"40"},		-- Original "80"
 							}
 						},
 						{

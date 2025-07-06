@@ -27,39 +27,39 @@ while COLORCHOICE do
   end
 end
 
-PAKNAME = ""
+VERNAME = ""
 COLORNAME = ""
   if COLORCHOICE == 1 then
-      PAKNAME = "DAYGLOW"
+      VERNAME = "DAYGLOW"
       COLORNAME = "Crystal"
   elseif COLORCHOICE == 2 then
-      PAKNAME = "POLYMER"
+      VERNAME = "POLYMER"
       COLORNAME = "Plastic"
   elseif COLORCHOICE == 3 then 
-      PAKNAME = "EXPANSE"
+      VERNAME = "EXPANSE"
       COLORNAME = "Space"
   elseif COLORCHOICE == 4 then 
-      PAKNAME = "PASTELS"
+      VERNAME = "PASTELS"
       COLORNAME = "Sky"
   elseif COLORCHOICE == 5 then 
-      PAKNAME = "NATURE"
+      VERNAME = "NATURE"
       COLORNAME = "GrassAlt"
   elseif COLORCHOICE == 6 then 
-      PAKNAME = "ARMOR"
+      VERNAME = "ARMOR"
       COLORNAME = "Custom_Head"
   elseif COLORCHOICE == 7 then 
-      PAKNAME = "INDUSTRIAL"
+      VERNAME = "INDUSTRIAL"
       COLORNAME = "FreighterPaint"
   elseif COLORCHOICE == 8 then 
-      PAKNAME = "DARKSTEEL"
+      VERNAME = "DARKSTEEL"
       COLORNAME = "Metal"
   end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "~BetterColorfulRings-"..PAKNAME..".pak",
+["MOD_FILENAME"]    = "~BetterColorfulRings-"..VERNAME,
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MOD_DESCRIPTION"] = "Change palette colors for planetary rings",
 ["MODIFICATIONS"]   =
     {
@@ -68,14 +68,14 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"PlanetRing", "GcPaletteData.xml"},
+                            ["SPECIAL_KEY_WORDS"]  = {"PlanetRing", "GcPaletteData"},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {COLORNAME, "GcPaletteData.xml"},
+                            ["SPECIAL_KEY_WORDS"]  = {COLORNAME, "GcPaletteData"},
                             ["SEC_SAVE_TO"] = "ADD_PALETTE",
                         },
                         {
@@ -84,7 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {
-                                    [[<Property name="]]..COLORNAME..[[" value="GcPaletteData.xml">]], [[<Property name="PlanetRing" value="GcPaletteData.xml">]]
+                                    [[<Property name="]]..COLORNAME..[[" value="GcPaletteData">]], [[<Property name="PlanetRing" value="GcPaletteData">]]
                                 },
                             }
                         },
@@ -96,7 +96,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RockDark", "GcPaletteData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"RockDark", "GcPaletteData"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "ADD_PALETTE",
                         },

@@ -1,28 +1,32 @@
-NEED_MORE_UNITS = [[
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="100" />
+ADD_MORE_UNITS = [[
+<Property name="List" value="GcRewardTableItem" _index="2">
+    <Property name="PercentageChance" value="100.000000" />
     <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardMoney.xml">
-        <Property name="AmountMin" value="500000000" />
-        <Property name="AmountMax" value="900000000" />
-        <Property name="RoundNumber" value="False" />
-        <Property name="Currency" value="GcCurrency.xml">
-            <Property name="Currency" value="Units" />
+    <Property name="Reward" value="GcRewardMoney">
+        <Property name="GcRewardMoney">
+            <Property name="AmountMin" value="500000000" />
+            <Property name="AmountMax" value="900000000" />
+            <Property name="RoundNumber" value="False" />
+            <Property name="Currency" value="GcCurrency">
+                <Property name="Currency" value="Units" />
+            </Property>
         </Property>
     </Property>
 </Property>
 ]]
 
-NEED_MORE_SPECIALS = [[
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="100" />
+ADD_MORE_SPECIALS = [[
+<Property name="List" value="GcRewardTableItem" _index="3">
+    <Property name="PercentageChance" value="100.000000" />
     <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardMoney.xml">
-        <Property name="AmountMin" value="1000" />
-        <Property name="AmountMax" value="1000" />
-        <Property name="RoundNumber" value="False" />
-        <Property name="Currency" value="GcCurrency.xml">
-            <Property name="Currency" value="Specials" />
+    <Property name="Reward" value="GcRewardMoney">
+        <Property name="GcRewardMoney">
+            <Property name="AmountMin" value="50000" />
+            <Property name="AmountMax" value="50000" />
+            <Property name="RoundNumber" value="False" />
+            <Property name="Currency" value="GcCurrency">
+                <Property name="Currency" value="Specials" />
+            </Property>
         </Property>
     </Property>
 </Property>
@@ -31,7 +35,7 @@ NEED_MORE_SPECIALS = [[
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "CheatAll.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "5.0",
+    ["NMS_VERSION"]   = "5.63",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
@@ -54,16 +58,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = { "Id", "NAVDATA", "List", "GcRewardTableItemList.xml" },
+                            ["SPECIAL_KEY_WORDS"]   = { "Id", "NAVDATA", "List", "GcRewardTableItemList" },
                             ["PRECEDING_KEY_WORDS"] = { "List" },
                             ["ADD_OPTION"]          = "ADDafterLINE",
-                            ["ADD"]                 = NEED_MORE_UNITS
+                            ["ADD"]                 = ADD_MORE_UNITS
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = { "Id", "NAVDATA", "List", "GcRewardTableItemList.xml" },
+                            ["SPECIAL_KEY_WORDS"]   = { "Id", "NAVDATA", "List", "GcRewardTableItemList" },
                             ["PRECEDING_KEY_WORDS"] = { "List" },
                             ["ADD_OPTION"]          = "ADDafterLINE",
-                            ["ADD"]                 = NEED_MORE_SPECIALS
+                            ["ADD"]                 = ADD_MORE_SPECIALS
                         },
                     }
                 }

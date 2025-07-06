@@ -3,7 +3,7 @@ Author = "Striker0420"
 Version = "3.97"
 
 
-VehicleGlobals =  "GCVEHICLEGLOBALS.GLOBAL.MBIN"
+VehicleGlobals =  "GCVEHICLEGLOBALS.GLOBAL.MXML"
 MechForwardSpeed = 4 -- Original value is 2
 
 
@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= VehicleGlobals,
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "",

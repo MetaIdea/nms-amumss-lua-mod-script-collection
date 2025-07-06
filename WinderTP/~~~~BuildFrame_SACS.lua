@@ -70,7 +70,8 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"487473",
 		["Name"] =				"ArC 1",
 		["Id"] =				"BF_ARCONE",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" },
+		["Display"] = "-1",
 	},
 	{
 		["PrimaryColour"] = 	"f090be",	--331
@@ -144,7 +145,7 @@ NEW_COLOURS_HEX =
 		["Id"] =				"BF_LAP_SHAM",
 		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
-{
+	{
 		["PrimaryColour"] = 	"C737FA",	--284
 		["SecondaryColour"] = 	"F54198",
 		["TernaryColour"] = 	"DE31DB",
@@ -683,34 +684,35 @@ DEBUG_TEXT = false
 -- EXML DATA BLOCKS
 COLOUR_START =  [[
 		<!--BuildFrame-->
-        <Property value="GcNGuiSpacingData.xml">
-          <Property name="ElementData" value="GcNGuiElementData.xml">
+			<Property name="Children" value="GcNGuiSpacingData">
+        <Property value="GcNGuiSpacingData">
+          <Property name="ElementData" value="GcNGuiElementData">
             <Property name="ID" value="" />
-            <Property name="IsHidden" value="False" />
+            <Property name="Is Hidden" value="False" />
             <Property name="IgnoreInput" value="False" />
-            <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
+            <Property name="Editor Visible" value="GcNGuiEditorVisibility">
               <Property name="EditorVisibility" value="UseData" />
             </Property>
-            <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
+            <Property name="ForcedStyle" value="TkNGuiForcedStyle">
               <Property name="NGuiForcedStyle" value="None" />
             </Property>
-            <Property name="Layout" value="GcNGuiLayoutData.xml">
+            <Property name="Layout" value="GcNGuiLayoutData">
               <Property name="VROverrides" />
               <Property name="AccessibleOverrides" />
-              <Property name="PositionX" value="0" />
-              <Property name="PositionY" value="0" />
+              <Property name="Position X" value="0" />
+              <Property name="Position Y" value="0" />
               <Property name="Width" value="50" />
               <Property name="Height" value="6" />
-              <Property name="ConstrainAspect" value="1" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="Align" value="TkNGuiAlignment.xml">
+              <Property name="Constrain Aspect" value="1" />
+              <Property name="Max Width" value="0" />
+              <Property name="Align" value="TkNGuiAlignment">
                 <Property name="Vertical" value="Top" />
                 <Property name="Horizontal" value="Left" />
               </Property>
-              <Property name="WidthPercentage" value="False" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
-              <Property name="ForceAspect" value="False" />
+              <Property name="Width Percentage" value="False" />
+              <Property name="Height Percentage" value="False" />
+              <Property name="Constrain Proportions" value="False" />
+              <Property name="Force Aspect" value="False" />
               <Property name="Anchor" value="False" />
               <Property name="AnchorPercent" value="False" />
               <Property name="SameLine" value="False" />
@@ -718,34 +720,36 @@ COLOUR_START =  [[
             </Property>
           </Property>
         </Property>
-        <Property value="GcNGuiSpacingData.xml">
-          <Property name="ElementData" value="GcNGuiElementData.xml">
+      </Property>
+			<Property name="Children" value="GcNGuiSpacingData">
+        <Property value="GcNGuiSpacingData">
+          <Property name="ElementData" value="GcNGuiElementData">
             <Property name="ID" value="" />
-            <Property name="IsHidden" value="False" />
+            <Property name="Is Hidden" value="False" />
             <Property name="IgnoreInput" value="False" />
-            <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
+            <Property name="Editor Visible" value="GcNGuiEditorVisibility">
               <Property name="EditorVisibility" value="UseData" />
             </Property>
-            <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
+            <Property name="ForcedStyle" value="TkNGuiForcedStyle">
               <Property name="NGuiForcedStyle" value="None" />
             </Property>
-            <Property name="Layout" value="GcNGuiLayoutData.xml">
+            <Property name="Layout" value="GcNGuiLayoutData">
               <Property name="VROverrides" />
               <Property name="AccessibleOverrides" />
-              <Property name="PositionX" value="0" />
-              <Property name="PositionY" value="0" />
+              <Property name="Position X" value="0" />
+              <Property name="Position Y" value="0" />
               <Property name="Width" value="0" />
               <Property name="Height" value="5" />
-              <Property name="ConstrainAspect" value="1" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="Align" value="TkNGuiAlignment.xml">
+              <Property name="Constrain Aspect" value="1" />
+              <Property name="Max Width" value="0" />
+              <Property name="Align" value="TkNGuiAlignment">
                 <Property name="Vertical" value="Top" />
                 <Property name="Horizontal" value="Left" />
               </Property>
-              <Property name="WidthPercentage" value="False" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
-              <Property name="ForceAspect" value="False" />
+              <Property name="Width Percentage" value="False" />
+              <Property name="Height Percentage" value="False" />
+              <Property name="Constrain Proportions" value="False" />
+              <Property name="Force Aspect" value="False" />
               <Property name="Anchor" value="False" />
               <Property name="AnchorPercent" value="False" />
               <Property name="SameLine" value="False" />
@@ -753,36 +757,38 @@ COLOUR_START =  [[
             </Property>
           </Property>
         </Property>
+      </Property>
 ]]
 SPACING = [[
-        <Property value="GcNGuiSpacingData.xml">
-          <Property name="ElementData" value="GcNGuiElementData.xml">
+			<Property name="Children" value="GcNGuiSpacingData">
+        <Property value="GcNGuiSpacingData">
+          <Property name="ElementData" value="GcNGuiElementData">
             <Property name="ID" value="" />
-            <Property name="IsHidden" value="False" />
+            <Property name="Is Hidden" value="False" />
             <Property name="IgnoreInput" value="False" />
-            <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
+            <Property name="Editor Visible" value="GcNGuiEditorVisibility">
               <Property name="EditorVisibility" value="UseData" />
             </Property>
-            <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
+            <Property name="ForcedStyle" value="TkNGuiForcedStyle">
               <Property name="NGuiForcedStyle" value="None" />
             </Property>
-            <Property name="Layout" value="GcNGuiLayoutData.xml">
+            <Property name="Layout" value="GcNGuiLayoutData">
               <Property name="VROverrides" />
               <Property name="AccessibleOverrides" />
-              <Property name="PositionX" value="0" />
-              <Property name="PositionY" value="0" />
+              <Property name="Position X" value="0" />
+              <Property name="Position Y" value="0" />
               <Property name="Width" value="5" />
               <Property name="Height" value="50" />
-              <Property name="ConstrainAspect" value="1" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="Align" value="TkNGuiAlignment.xml">
+              <Property name="Constrain Aspect" value="1" />
+              <Property name="Max Width" value="0" />
+              <Property name="Align" value="TkNGuiAlignment">
                 <Property name="Vertical" value="Top" />
                 <Property name="Horizontal" value="Left" />
               </Property>
-              <Property name="WidthPercentage" value="False" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
-              <Property name="ForceAspect" value="False" />
+              <Property name="Width Percentage" value="False" />
+              <Property name="Height Percentage" value="False" />
+              <Property name="Constrain Proportions" value="False" />
+              <Property name="Force Aspect" value="False" />
               <Property name="Anchor" value="False" />
               <Property name="AnchorPercent" value="False" />
               <Property name="SameLine" value="True" />
@@ -790,36 +796,38 @@ SPACING = [[
             </Property>
           </Property>
         </Property>
+      </Property>
 ]]
 LINE_BREAK = [[
-        <Property value="GcNGuiSpacingData.xml">
-          <Property name="ElementData" value="GcNGuiElementData.xml">
+			<Property name="Children" value="GcNGuiSpacingData">
+        <Property value="GcNGuiSpacingData">
+          <Property name="ElementData" value="GcNGuiElementData">
             <Property name="ID" value="THIS ONE" />
-            <Property name="IsHidden" value="False" />
+            <Property name="Is Hidden" value="False" />
             <Property name="IgnoreInput" value="False" />
-            <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
+            <Property name="Editor Visible" value="GcNGuiEditorVisibility">
               <Property name="EditorVisibility" value="UseData" />
             </Property>
-            <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
+            <Property name="ForcedStyle" value="TkNGuiForcedStyle">
               <Property name="NGuiForcedStyle" value="None" />
             </Property>
-            <Property name="Layout" value="GcNGuiLayoutData.xml">
+            <Property name="Layout" value="GcNGuiLayoutData">
               <Property name="VROverrides" />
               <Property name="AccessibleOverrides" />
-              <Property name="PositionX" value="0" />
-              <Property name="PositionY" value="0" />
+              <Property name="Position X" value="0" />
+              <Property name="Position Y" value="0" />
               <Property name="Width" value="7" />
               <Property name="Height" value="4" />
-              <Property name="ConstrainAspect" value="1" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="Align" value="TkNGuiAlignment.xml">
+              <Property name="Constrain Aspect" value="1" />
+              <Property name="Max Width" value="0" />
+              <Property name="Align" value="TkNGuiAlignment">
                 <Property name="Vertical" value="Top" />
                 <Property name="Horizontal" value="Left" />
               </Property>
-              <Property name="WidthPercentage" value="False" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
-              <Property name="ForceAspect" value="False" />
+              <Property name="Width Percentage" value="False" />
+              <Property name="Height Percentage" value="False" />
+              <Property name="Constrain Proportions" value="False" />
+              <Property name="Force Aspect" value="False" />
               <Property name="Anchor" value="False" />
               <Property name="AnchorPercent" value="False" />
               <Property name="SameLine" value="False" />
@@ -827,34 +835,36 @@ LINE_BREAK = [[
             </Property>
           </Property>
         </Property>
-        <Property value="GcNGuiSpacingData.xml">
-          <Property name="ElementData" value="GcNGuiElementData.xml">
+      </Property>
+			<Property name="Children" value="GcNGuiSpacingData">
+        <Property value="GcNGuiSpacingData">
+          <Property name="ElementData" value="GcNGuiElementData">
             <Property name="ID" value="" />
-            <Property name="IsHidden" value="False" />
+            <Property name="Is Hidden" value="False" />
             <Property name="IgnoreInput" value="False" />
-            <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
+            <Property name="Editor Visible" value="GcNGuiEditorVisibility">
               <Property name="EditorVisibility" value="UseData" />
             </Property>
-            <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
+            <Property name="ForcedStyle" value="TkNGuiForcedStyle">
               <Property name="NGuiForcedStyle" value="None" />
             </Property>
-            <Property name="Layout" value="GcNGuiLayoutData.xml">
+            <Property name="Layout" value="GcNGuiLayoutData">
               <Property name="VROverrides" />
               <Property name="AccessibleOverrides" />
-              <Property name="PositionX" value="0" />
-              <Property name="PositionY" value="0" />
+              <Property name="Position X" value="0" />
+              <Property name="Position Y" value="0" />
               <Property name="Width" value="0" />
               <Property name="Height" value="12" />
-              <Property name="ConstrainAspect" value="1" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="Align" value="TkNGuiAlignment.xml">
+              <Property name="Constrain Aspect" value="1" />
+              <Property name="Max Width" value="0" />
+              <Property name="Align" value="TkNGuiAlignment">
                 <Property name="Vertical" value="Top" />
                 <Property name="Horizontal" value="Left" />
               </Property>
-              <Property name="WidthPercentage" value="False" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
-              <Property name="ForceAspect" value="False" />
+              <Property name="Width Percentage" value="False" />
+              <Property name="Height Percentage" value="False" />
+              <Property name="Constrain Proportions" value="False" />
+              <Property name="Force Aspect" value="False" />
               <Property name="Anchor" value="False" />
               <Property name="AnchorPercent" value="False" />
               <Property name="SameLine" value="False" />
@@ -862,12 +872,13 @@ LINE_BREAK = [[
             </Property>
           </Property>
         </Property>
+      </Property>
 ]]
 
 -- FORCES ALL BASE OBJECT TO USE THE NOW-UNIFIED LEGACY PALETTE GROUP
 PALETTE_GROUP_REPLACEMENT =
 	{
-		-- ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml"},
+		-- ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry"},
 		-- ["VALUE_MATCH_OPTIONS"] = "~=",
 		-- ["VALUE_MATCH"] = ".+",
 		["REPLACE_TYPE"] = "ALL",
@@ -879,7 +890,7 @@ PALETTE_GROUP_REPLACEMENT =
 
 DEFAULT_PALETTE_REPLACEMENT =
 	{
-		-- ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml"},
+		-- ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry"},
 		-- ["VALUE_MATCH_OPTIONS"] = "~=",
 		-- ["VALUE_MATCH"] = ".+",
 		["REPLACE_TYPE"] = "ALL",
@@ -894,28 +905,32 @@ function trunc(x)
 	return math.modf(x*1000)/1000
 end
 
-function GetBaseBuildingPalette(PRIMARY, SECONDARY, TERNARY, QUATERNARY, NAME, ID)
-return [[
-    <Property value="GcBaseBuildingPalette.xml">
-      <Property name="PrimaryColour" value="Colour.xml">
+function GetBaseBuildingPalette(PRIMARY, SECONDARY, TERNARY, QUATERNARY, NAME, ID, DISPLAY)
+if DISPLAY then EXPORT = [[
+    <Property value="GcBaseBuildingPalette" _display="WTP">]]
+else EXPORT = [[
+    <Property value="GcBaseBuildingPalette">]]
+end
+return EXPORT .. [[
+      <Property name="PrimaryColour" value="Colour">
         <Property name="R" value="]] .. PRIMARY["R"] .. [[" />
         <Property name="G" value="]] .. PRIMARY["G"] .. [[" />
         <Property name="B" value="]] .. PRIMARY["B"] .. [[" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="SecondaryColour" value="Colour.xml">
+      <Property name="SecondaryColour" value="Colour">
         <Property name="R" value="]] .. SECONDARY["R"] .. [[" />
         <Property name="G" value="]] .. SECONDARY["G"] .. [[" />
         <Property name="B" value="]] .. SECONDARY["B"] .. [[" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="TernaryColour" value="Colour.xml">
+      <Property name="TernaryColour" value="Colour">
         <Property name="R" value="]] .. TERNARY["R"] .. [[" />
         <Property name="G" value="]] .. TERNARY["G"] .. [[" />
         <Property name="B" value="]] .. TERNARY["B"] .. [[" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="QuaternaryColour" value="Colour.xml">
+      <Property name="QuaternaryColour" value="Colour">
         <Property name="R" value="]] .. QUATERNARY["R"] .. [[" />
         <Property name="G" value="]] .. QUATERNARY["G"] .. [[" />
         <Property name="B" value="]] .. QUATERNARY["B"] .. [[" />
@@ -932,7 +947,7 @@ end
 --[[function GetObjectPaletteGroupReplacement(FROM)
 return
 	{
-		["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml"},
+		["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry"},
 		["VALUE_MATCH"] = FROM,
 		["REPLACE_TYPE"] = "ALL",
 		["VALUE_CHANGE_TABLE"] = 
@@ -955,19 +970,15 @@ end
 
 -- EFFICIENCY IMPROVEMENTS COURTESY OF Wberto
 function GetPaletteGroupEntry_ALT(ID)
-return [[
-    <!--BUILDFRAME -->
-		<Property value="NMSString0x20.xml">
-		  <Property name="Value" value="]] .. ID .. [["/>
-		</Property>
-]]
+return [[				<Property name="IdList" value="]] .. ID .. [["/>]]
 end
 
 -- ADDING NEW PALETTES SO THAT THE LAST CUSTOM PALETTE IS THE PALETTE_SLOTS_LIMITth ONE
 function GetYeetPaletteTable(WHERE, ADD)
 return
 	{
-		["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingPalette.xml"},
+		-- ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingPalette"},
+		["SKW"] = {"Palettes", "GcBaseBuildingPalette"},
 		["SECTION_ACTIVE"] = WHERE,
 		["REPLACE_TYPE"] = "ADDafterSECTION",
 		["ADD"] = ADD
@@ -976,257 +987,268 @@ end
 
 function GetPaletteUIData(NUM)
 return [[
-		<Property value="GcNGuiLayerData.xml">
-          <Property name="ElementData" value="GcNGuiElementData.xml">
-            <Property name="ID" value="OPTION]] .. NUM .. [[" />
-            <Property name="IsHidden" value="False" />
-            <Property name="IgnoreInput" value="False" />
-            <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
-              <Property name="EditorVisibility" value="UseData" />
-            </Property>
-            <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
-              <Property name="NGuiForcedStyle" value="None" />
-            </Property>
-            <Property name="Layout" value="GcNGuiLayoutData.xml">
-              <Property name="VROverrides" />
-              <Property name="AccessibleOverrides" />
-              <Property name="PositionX" value="0" />
-              <Property name="PositionY" value="0" />
-              <Property name="Width" value="70" />
-              <Property name="Height" value="50" />
-              <Property name="ConstrainAspect" value="1" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="Align" value="TkNGuiAlignment.xml">
-                <Property name="Vertical" value="Top" />
-                <Property name="Horizontal" value="Left" />
-              </Property>
-              <Property name="WidthPercentage" value="False" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
-              <Property name="ForceAspect" value="False" />
-              <Property name="Anchor" value="False" />
-              <Property name="AnchorPercent" value="False" />
-              <Property name="SameLine" value="True" />
-              <Property name="SlowCursorOnHover" value="False" />
-            </Property>
-          </Property>
-          <Property name="Style" value="TkNGuiGraphicStyle.xml">
-            <Property name="Default" value="TkNGuiGraphicStyleData.xml">
-              <Property name="Colour" value="Colour.xml">
-                <Property name="R" value="0.118" />
-                <Property name="G" value="0.212" />
-                <Property name="B" value="0.235" />
-                <Property name="A" value="0" />
-              </Property>
-              <Property name="IconColour" value="Colour.xml">
-                <Property name="R" value="1" />
-                <Property name="G" value="1" />
-                <Property name="B" value="1" />
-                <Property name="A" value="1" />
-              </Property>
-              <Property name="StrokeColour" value="Colour.xml">
-                <Property name="R" value="1" />
-                <Property name="G" value="1" />
-                <Property name="B" value="1" />
-                <Property name="A" value="1" />
-              </Property>
-              <Property name="GradientColour" value="Colour.xml">
-                <Property name="R" value="0" />
-                <Property name="G" value="0" />
-                <Property name="B" value="0" />
-                <Property name="A" value="1" />
-              </Property>
-              <Property name="StrokeGradientColour" value="Colour.xml">
-                <Property name="R" value="1" />
-                <Property name="G" value="1" />
-                <Property name="B" value="1" />
-                <Property name="A" value="1" />
-              </Property>
-              <Property name="PaddingX" value="0" />
-              <Property name="PaddingY" value="0" />
-              <Property name="MarginX" value="0" />
-              <Property name="MarginY" value="0" />
-              <Property name="GradientStartOffset" value="0" />
-              <Property name="GradientEndOffset" value="0" />
-              <Property name="CornerRadius" value="0" />
-              <Property name="StrokeSize" value="1" />
-              <Property name="Image" value="0" />
-              <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
-                <Property name="NGuiEditorIcon" value="none" />
-              </Property>
-              <Property name="Desaturation" value="0" />
-              <Property name="StrokeGradientOffset" value="0" />
-              <Property name="StrokeGradientFeather" value="0" />
-              <Property name="Shape" value="Rectangle" />
-              <Property name="Gradient" value="None" />
-              <Property name="SolidColour" value="False" />
-              <Property name="HasDropShadow" value="False" />
-              <Property name="HasOuterGradient" value="False" />
-              <Property name="HasInnerGradient" value="False" />
-              <Property name="GradientOffsetPercent" value="False" />
-              <Property name="StrokeGradient" value="True" />
-              <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
-                <Property name="Active" value="False" />
-                <Property name="BlendFrames" value="False" />
-                <Property name="FramesPerSecond" value="10" />
-                <Property name="TotalFrames" value="0" />
-                <Property name="FramesHorizontal" value="1" />
-                <Property name="FramesVertical" value="1" />
-              </Property>
-            </Property>
-            <Property name="Highlight" value="TkNGuiGraphicStyleData.xml">
-              <Property name="Colour" value="Colour.xml">
-                <Property name="R" value="0.118" />
-                <Property name="G" value="0.212" />
-                <Property name="B" value="0.235" />
-                <Property name="A" value="0.6" />
-              </Property>
-              <Property name="IconColour" value="Colour.xml">
-                <Property name="R" value="1" />
-                <Property name="G" value="1" />
-                <Property name="B" value="1" />
-                <Property name="A" value="1" />
-              </Property>
-              <Property name="StrokeColour" value="Colour.xml">
-                <Property name="R" value="1" />
-                <Property name="G" value="1" />
-                <Property name="B" value="1" />
-                <Property name="A" value="1" />
-              </Property>
-              <Property name="GradientColour" value="Colour.xml">
-                <Property name="R" value="0" />
-                <Property name="G" value="0" />
-                <Property name="B" value="0" />
-                <Property name="A" value="1" />
-              </Property>
-              <Property name="StrokeGradientColour" value="Colour.xml">
-                <Property name="R" value="1" />
-                <Property name="G" value="1" />
-                <Property name="B" value="1" />
-                <Property name="A" value="1" />
-              </Property>
-              <Property name="PaddingX" value="0" />
-              <Property name="PaddingY" value="0" />
-              <Property name="MarginX" value="0" />
-              <Property name="MarginY" value="0" />
-              <Property name="GradientStartOffset" value="0" />
-              <Property name="GradientEndOffset" value="0" />
-              <Property name="CornerRadius" value="0" />
-              <Property name="StrokeSize" value="1" />
-              <Property name="Image" value="0" />
-              <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
-                <Property name="NGuiEditorIcon" value="none" />
-              </Property>
-              <Property name="Desaturation" value="0" />
-              <Property name="StrokeGradientOffset" value="0" />
-              <Property name="StrokeGradientFeather" value="0" />
-              <Property name="Shape" value="Rectangle" />
-              <Property name="Gradient" value="None" />
-              <Property name="SolidColour" value="False" />
-              <Property name="HasDropShadow" value="False" />
-              <Property name="HasOuterGradient" value="False" />
-              <Property name="HasInnerGradient" value="False" />
-              <Property name="GradientOffsetPercent" value="False" />
-              <Property name="StrokeGradient" value="True" />
-              <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
-                <Property name="Active" value="False" />
-                <Property name="BlendFrames" value="False" />
-                <Property name="FramesPerSecond" value="10" />
-                <Property name="TotalFrames" value="0" />
-                <Property name="FramesHorizontal" value="1" />
-                <Property name="FramesVertical" value="1" />
-              </Property>
-            </Property>
-            <Property name="Active" value="TkNGuiGraphicStyleData.xml">
-              <Property name="Colour" value="Colour.xml">
-                <Property name="R" value="0.118" />
-                <Property name="G" value="0.212" />
-                <Property name="B" value="0.235" />
-                <Property name="A" value="0" />
-              </Property>
-              <Property name="IconColour" value="Colour.xml">
-                <Property name="R" value="1" />
-                <Property name="G" value="1" />
-                <Property name="B" value="1" />
-                <Property name="A" value="1" />
-              </Property>
-              <Property name="StrokeColour" value="Colour.xml">
-                <Property name="R" value="1" />
-                <Property name="G" value="1" />
-                <Property name="B" value="1" />
-                <Property name="A" value="1" />
-              </Property>
-              <Property name="GradientColour" value="Colour.xml">
-                <Property name="R" value="0" />
-                <Property name="G" value="0" />
-                <Property name="B" value="0" />
-                <Property name="A" value="1" />
-              </Property>
-              <Property name="StrokeGradientColour" value="Colour.xml">
-                <Property name="R" value="1" />
-                <Property name="G" value="1" />
-                <Property name="B" value="1" />
-                <Property name="A" value="1" />
-              </Property>
-              <Property name="PaddingX" value="0" />
-              <Property name="PaddingY" value="0" />
-              <Property name="MarginX" value="0" />
-              <Property name="MarginY" value="0" />
-              <Property name="GradientStartOffset" value="0" />
-              <Property name="GradientEndOffset" value="0" />
-              <Property name="CornerRadius" value="0" />
-              <Property name="StrokeSize" value="1" />
-              <Property name="Image" value="0" />
-              <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
-                <Property name="NGuiEditorIcon" value="none" />
-              </Property>
-              <Property name="Desaturation" value="0" />
-              <Property name="StrokeGradientOffset" value="0" />
-              <Property name="StrokeGradientFeather" value="0" />
-              <Property name="Shape" value="Rectangle" />
-              <Property name="Gradient" value="None" />
-              <Property name="SolidColour" value="False" />
-              <Property name="HasDropShadow" value="False" />
-              <Property name="HasOuterGradient" value="False" />
-              <Property name="HasInnerGradient" value="False" />
-              <Property name="GradientOffsetPercent" value="False" />
-              <Property name="StrokeGradient" value="True" />
-              <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
-                <Property name="Active" value="False" />
-                <Property name="BlendFrames" value="False" />
-                <Property name="FramesPerSecond" value="10" />
-                <Property name="TotalFrames" value="0" />
-                <Property name="FramesHorizontal" value="1" />
-                <Property name="FramesVertical" value="1" />
-              </Property>
-            </Property>
-            <Property name="InheritStyleFromParentLayer" value="False" />
-            <Property name="HighlightTime" value="0.1" />
-            <Property name="HighlightScale" value="1" />
-            <Property name="GlobalFade" value="1" />
-            <Property name="Animate" value="None" />
-            <Property name="AnimTime" value="0.5" />
-            <Property name="AnimSplit" value="0.4" />
-            <Property name="AnimCurve1" value="TkCurveType.xml">
-              <Property name="Curve" value="Linear" />
-            </Property>
-            <Property name="AnimCurve2" value="TkCurveType.xml">
-              <Property name="Curve" value="Linear" />
-            </Property>
-            <Property name="CustomMinStart" value="Vector2f.xml">
-              <Property name="x" value="1" />
-              <Property name="y" value="1" />
-            </Property>
-            <Property name="CustomMaxStart" value="Vector2f.xml">
-              <Property name="x" value="1" />
-              <Property name="y" value="1" />
-            </Property>
-          </Property>
-          <Property name="Image" value="" />
-          <Property name="Children" />
-          <Property name="DataFilename" value="UI/COMPONENTS/CHARCUSTOMISE/BUILDCOLOUROPTION.MBIN" />
-          <Property name="AltMode" value="None" />
-        </Property>
+			<Property name="Children" value="GcNGuiLayerData">
+						<Property name="GcNGuiLayerData">
+							<Property name="Element Data" value="GcNGuiElementData">
+								<Property name="ID" value="OPTION]] .. NUM .. [[" />
+								<Property name="Is Hidden" value="false" />
+								<Property name="IgnoreInput" value="false" />
+								<Property name="Editor Visible" value="GcNGuiEditorVisibility">
+									<Property name="EditorVisibility" value="UseData" />
+								</Property>
+								<Property name="ForcedStyle" value="TkNGuiForcedStyle">
+									<Property name="NGuiForcedStyle" value="None" />
+								</Property>
+								<Property name="Layout" value="GcNGuiLayoutData">
+									<Property name="VROverrides" />
+									<Property name="AccessibleOverrides" />
+									<Property name="Position X" value="0.000000" />
+									<Property name="Position Y" value="0.000000" />
+									<Property name="Width" value="70.000000" />
+									<Property name="Height" value="50.000000" />
+									<Property name="Constrain Aspect" value="1.000000" />
+									<Property name="Max Width" value="0.000000" />
+									<Property name="Align" value="TkNGuiAlignment">
+										<Property name="Vertical" value="Top" />
+										<Property name="Horizontal" value="Left" />
+									</Property>
+									<Property name="Width Percentage" value="false" />
+									<Property name="Height Percentage" value="false" />
+									<Property name="Constrain Proportions" value="false" />
+									<Property name="Force Aspect" value="false" />
+									<Property name="Anchor" value="false" />
+									<Property name="AnchorPercent" value="false" />
+									<Property name="SameLine" value="true" />
+									<Property name="SlowCursorOnHover" value="false" />
+								</Property>
+							</Property>
+							<Property name="Style" value="TkNGuiGraphicStyle">
+								<Property name="Default" value="TkNGuiGraphicStyleData">
+									<Property name="Colour">
+										<Property name="R" value="0.118" />
+										<Property name="G" value="0.212" />
+										<Property name="B" value="0.235" />
+										<Property name="A" value="0.000000" />
+									</Property>
+									<Property name="Icon Colour">
+										<Property name="R" value="1.000000" />
+										<Property name="G" value="1.000000" />
+										<Property name="B" value="1.000000" />
+										<Property name="A" value="1.000000" />
+									</Property>
+									<Property name="Stroke Colour">
+										<Property name="R" value="1.000000" />
+										<Property name="G" value="1.000000" />
+										<Property name="B" value="1.000000" />
+										<Property name="A" value="1.000000" />
+									</Property>
+									<Property name="Gradient Colour">
+										<Property name="R" value="0.000000" />
+										<Property name="G" value="0.000000" />
+										<Property name="B" value="0.000000" />
+										<Property name="A" value="1.000000" />
+									</Property>
+									<Property name="Stroke Gradient Colour">
+										<Property name="R" value="1.000000" />
+										<Property name="G" value="1.000000" />
+										<Property name="B" value="1.000000" />
+										<Property name="A" value="1.000000" />
+									</Property>
+									<Property name="PaddingX" value="0.000000" />
+									<Property name="PaddingY" value="0.000000" />
+									<Property name="MarginX" value="0.000000" />
+									<Property name="MarginY" value="0.000000" />
+									<Property name="Gradient Start Offset" value="0.000000" />
+									<Property name="Gradient End Offset" value="0.000000" />
+									<Property name="Corner Radius" value="0.000000" />
+									<Property name="Stroke Size" value="1.000000" />
+									<Property name="Image" value="0" />
+									<Property name="EditorIcon" value="TkNGuiEditorIcons">
+										<Property name="NGuiEditorIcon" value="none" />
+									</Property>
+									<Property name="Desaturation" value="0.000000" />
+									<Property name="Stroke Gradient Offset" value="0.000000" />
+									<Property name="Stroke Gradient Feather" value="0.000000" />
+									<Property name="Shape" value="Rectangle" />
+									<Property name="Gradient" value="None" />
+									<Property name="Solid Colour" value="false" />
+									<Property name="Has Drop Shadow" value="false" />
+									<Property name="Has Outer Gradient" value="false" />
+									<Property name="Has Inner Gradient" value="false" />
+									<Property name="Gradient Offset Percent" value="false" />
+									<Property name="Stroke Gradient" value="true" />
+									<Property name="Animated" value="TkNGuiGraphicAnimatedImageData">
+										<Property name="NGuiImageAnimType" value="None" />
+										<Property name="Blend Frames" value="false" />
+										<Property name="Frames Per Second" value="10.000000" />
+										<Property name="Total Frames" value="0" />
+										<Property name="Frames Horizontal" value="1" />
+										<Property name="Frames Vertical" value="1" />
+										<Property name="Scroll Angle" value="0.000000" />
+										<Property name="Scroll Speed" value="1.000000" />
+									</Property>
+								</Property>
+								<Property name="Highlight" value="TkNGuiGraphicStyleData">
+									<Property name="Colour">
+										<Property name="R" value="0.117647059" />
+										<Property name="G" value="0.211764708" />
+										<Property name="B" value="0.235294119" />
+										<Property name="A" value="0.600000" />
+									</Property>
+									<Property name="Icon Colour">
+										<Property name="R" value="1.000000" />
+										<Property name="G" value="1.000000" />
+										<Property name="B" value="1.000000" />
+										<Property name="A" value="1.000000" />
+									</Property>
+									<Property name="Stroke Colour">
+										<Property name="R" value="1.000000" />
+										<Property name="G" value="1.000000" />
+										<Property name="B" value="1.000000" />
+										<Property name="A" value="1.000000" />
+									</Property>
+									<Property name="Gradient Colour">
+										<Property name="R" value="0.000000" />
+										<Property name="G" value="0.000000" />
+										<Property name="B" value="0.000000" />
+										<Property name="A" value="1.000000" />
+									</Property>
+									<Property name="Stroke Gradient Colour">
+										<Property name="R" value="1.000000" />
+										<Property name="G" value="1.000000" />
+										<Property name="B" value="1.000000" />
+										<Property name="A" value="1.000000" />
+									</Property>
+									<Property name="PaddingX" value="0.000000" />
+									<Property name="PaddingY" value="0.000000" />
+									<Property name="MarginX" value="0.000000" />
+									<Property name="MarginY" value="0.000000" />
+									<Property name="Gradient Start Offset" value="0.000000" />
+									<Property name="Gradient End Offset" value="0.000000" />
+									<Property name="Corner Radius" value="0.000000" />
+									<Property name="Stroke Size" value="1.000000" />
+									<Property name="Image" value="0" />
+									<Property name="EditorIcon" value="TkNGuiEditorIcons">
+										<Property name="NGuiEditorIcon" value="none" />
+									</Property>
+									<Property name="Desaturation" value="0.000000" />
+									<Property name="Stroke Gradient Offset" value="0.000000" />
+									<Property name="Stroke Gradient Feather" value="0.000000" />
+									<Property name="Shape" value="Rectangle" />
+									<Property name="Gradient" value="None" />
+									<Property name="Solid Colour" value="false" />
+									<Property name="Has Drop Shadow" value="false" />
+									<Property name="Has Outer Gradient" value="false" />
+									<Property name="Has Inner Gradient" value="false" />
+									<Property name="Gradient Offset Percent" value="false" />
+									<Property name="Stroke Gradient" value="true" />
+									<Property name="Animated" value="TkNGuiGraphicAnimatedImageData">
+										<Property name="NGuiImageAnimType" value="None" />
+										<Property name="Blend Frames" value="false" />
+										<Property name="Frames Per Second" value="10.000000" />
+										<Property name="Total Frames" value="0" />
+										<Property name="Frames Horizontal" value="1" />
+										<Property name="Frames Vertical" value="1" />
+										<Property name="Scroll Angle" value="0.000000" />
+										<Property name="Scroll Speed" value="1.000000" />
+									</Property>
+								</Property>
+								<Property name="Active" value="TkNGuiGraphicStyleData">
+									<Property name="Colour">
+										<Property name="R" value="0.117647059" />
+										<Property name="G" value="0.211764708" />
+										<Property name="B" value="0.235294119" />
+										<Property name="A" value="0.000000" />
+									</Property>
+									<Property name="Icon Colour">
+										<Property name="R" value="1.000000" />
+										<Property name="G" value="1.000000" />
+										<Property name="B" value="1.000000" />
+										<Property name="A" value="1.000000" />
+									</Property>
+									<Property name="Stroke Colour">
+										<Property name="R" value="1.000000" />
+										<Property name="G" value="1.000000" />
+										<Property name="B" value="1.000000" />
+										<Property name="A" value="1.000000" />
+									</Property>
+									<Property name="Gradient Colour">
+										<Property name="R" value="0.000000" />
+										<Property name="G" value="0.000000" />
+										<Property name="B" value="0.000000" />
+										<Property name="A" value="1.000000" />
+									</Property>
+									<Property name="Stroke Gradient Colour">
+										<Property name="R" value="1.000000" />
+										<Property name="G" value="1.000000" />
+										<Property name="B" value="1.000000" />
+										<Property name="A" value="1.000000" />
+									</Property>
+									<Property name="PaddingX" value="0.000000" />
+									<Property name="PaddingY" value="0.000000" />
+									<Property name="MarginX" value="0.000000" />
+									<Property name="MarginY" value="0.000000" />
+									<Property name="Gradient Start Offset" value="0.000000" />
+									<Property name="Gradient End Offset" value="0.000000" />
+									<Property name="Corner Radius" value="0.000000" />
+									<Property name="Stroke Size" value="1.000000" />
+									<Property name="Image" value="0" />
+									<Property name="EditorIcon" value="TkNGuiEditorIcons">
+										<Property name="NGuiEditorIcon" value="none" />
+									</Property>
+									<Property name="Desaturation" value="0.000000" />
+									<Property name="Stroke Gradient Offset" value="0.000000" />
+									<Property name="Stroke Gradient Feather" value="0.000000" />
+									<Property name="Shape" value="Rectangle" />
+									<Property name="Gradient" value="None" />
+									<Property name="Solid Colour" value="false" />
+									<Property name="Has Drop Shadow" value="false" />
+									<Property name="Has Outer Gradient" value="false" />
+									<Property name="Has Inner Gradient" value="false" />
+									<Property name="Gradient Offset Percent" value="false" />
+									<Property name="Stroke Gradient" value="true" />
+									<Property name="Animated" value="TkNGuiGraphicAnimatedImageData">
+										<Property name="NGuiImageAnimType" value="None" />
+										<Property name="Blend Frames" value="false" />
+										<Property name="Frames Per Second" value="10.000000" />
+										<Property name="Total Frames" value="0" />
+										<Property name="Frames Horizontal" value="1" />
+										<Property name="Frames Vertical" value="1" />
+										<Property name="Scroll Angle" value="0.000000" />
+										<Property name="Scroll Speed" value="1.000000" />
+									</Property>
+								</Property>
+								<Property name="InheritStyleFromParentLayer" value="false" />
+								<Property name="AutoAdjustToChildrenHeight" value="false" />
+								<Property name="DistributeChildrenWidth" value="false" />
+								<Property name="DistributeChildrenHeight" value="false" />
+								<Property name="HighlightTime" value="0.100000" />
+								<Property name="HighlightScale" value="1.000000" />
+								<Property name="GlobalFade" value="1.000000" />
+								<Property name="Animate" value="None" />
+								<Property name="AnimTime" value="0.500000" />
+								<Property name="AnimSplit" value="0.400000" />
+								<Property name="AnimCurve1" value="TkCurveType">
+									<Property name="Curve" value="Linear" />
+								</Property>
+								<Property name="AnimCurve2" value="TkCurveType">
+									<Property name="Curve" value="Linear" />
+								</Property>
+								<Property name="CustomMinStart">
+									<Property name="X" value="1.000000" />
+									<Property name="Y" value="1.000000" />
+								</Property>
+								<Property name="CustomMaxStart">
+									<Property name="X" value="1.000000" />
+									<Property name="Y" value="1.000000" />
+								</Property>
+							</Property>
+							<Property name="Image" value="" />
+							<Property name="Children" />
+							<Property name="DataFilename" value="UI/COMPONENTS/CHARCUSTOMISE/BUILDCOLOUROPTION.MBIN" />
+							<Property name="AltMode" value="None" />
+						</Property>
+					</Property>
 ]]
 end
 
@@ -1266,7 +1288,8 @@ CURRENT_VANILLA_COLOUR = CURRENT_VANILLA_COLOUR + 1
 		-- SETTING PRI/SEC/TER/QUA COLOURS ACCORDING TO PALETTE_QUAD
 		NEW_COLOURS[j] = NEW_COLOUR_TEMP
 	end
-	table.insert(MARVELLER,GetBaseBuildingPalette(NEW_COLOURS["PrimaryColour"], NEW_COLOURS["SecondaryColour"], NEW_COLOURS["TernaryColour"], NEW_COLOURS["QuaternaryColour"], n["Name"], n["Id"]))
+	local ExportDisplay = false; if n["Display"] ~= nil then ExportDisplay = true end
+	table.insert(MARVELLER,GetBaseBuildingPalette(NEW_COLOURS["PrimaryColour"], NEW_COLOURS["SecondaryColour"], NEW_COLOURS["TernaryColour"], NEW_COLOURS["QuaternaryColour"], n["Name"], n["Id"], ExportDisplay))
 	for o,p in pairs(n["PaletteGroup"]) do
 		table.insert(PALETTE_GROUP_ADD_TEXT[p], GetPaletteGroupEntry_ALT(n["Id"]))
 	end
@@ -1322,9 +1345,9 @@ if DEBUG_TEXT then
 end
 
 if USE_LEGACY_PALETTE_LIST then
-	table.insert(CHANGE_LEOPARDON, GetYeetPaletteTable(tostring(#VANILLA_PALETTE_IDS["LEGACY"]["Palettes"]), table.concat(MARVELLER)))
+	table.insert(CHANGE_LEOPARDON, GetYeetPaletteTable(tostring(#VANILLA_PALETTE_IDS["LEGACY"]["Palettes"] - 1), table.concat(MARVELLER))) -- SA starts with index 0 now
 else
-  table.insert(CHANGE_LEOPARDON, GetYeetPaletteTable(tostring(OG_VANILLA_COLOUR + 1), table.concat(MARVELLER)))
+  table.insert(CHANGE_LEOPARDON, GetYeetPaletteTable("LAST", table.concat(MARVELLER)))
 end
 
 for i,j in pairs(PALETTE_GROUP_CHANGE_TABLE) do
@@ -1333,8 +1356,8 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "~~~SACS.pak",
-["MOD_BATCHNAME"]			= "~~~~BuildFrame_Comp.pak",
+["MOD_FILENAME"] 			= "++BuildFrame_SACS",
+["MOD_BATCHNAME"]		= "++++DO_NOT_COMBINE_IN_AMUMSS",
 ["MOD_AUTHOR"]				= "WinderTP, Babscoole, Wberto",
 ["MOD_DESCRIPTION"]			= "Selection Augmentation for Colour System", -- AKA Palette Augmentation and Tailoring System (PAnTS)
 ["NMS_VERSION"]				= "",
@@ -1346,73 +1369,74 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= CHANGE_LEOPARDON
+					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.EXML",
+					["MXML_CHANGE_TABLE"] 	= CHANGE_LEOPARDON
 				}, 
 				{
 					["MBIN_FILE_SOURCE"] 	= "UI\COMPONENTS\BUILDCOLOUR.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							-- COMPLETELY REMOVE THE ORIGINAL COLOUR UI BLOCK (COLOUR SLOT)
-							-- ["PRECEDING_KEY_WORDS"] = {"Children", "Children", "GcNGuiLayerData.xml"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Children", "Children", "GcNGuiLayerData"},
 							["SPECIAL_KEY_WORDS"] = {"DataFilename", "UI/COMPONENTS/CHARCUSTOMISE/BUILDCOLOUROPTION.MBIN"},
+							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] 	= "ALL",
 							["REMOVE"] = "SECTION",
 						},
 						{
 							-- COMPLETELY REMOVE THE ORIGINAL COLOUR UI BLOCK (SPACING)
 							-- ["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData.xml"},
-							-- ["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData.xml", "Layout", "GcNGuiLayoutData.xml", "SameLine", "True"},
-							-- ["SECTION_UP"] = 2,
+							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData"},
+							-- ["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData", "Layout", "GcNGuiLayoutData", "SameLine", "True"},
+							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] 	= "ALL",
 							["REMOVE"] = "SECTION",
 						},
 						--[[{
 							["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData.xml"},
-							["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData.xml", "Layout", "GcNGuiLayoutData.xml", "SameLine", "True"},
+							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData"},
+							["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData", "Layout", "GcNGuiLayoutData", "SameLine", "True"},
 							["SECTION_UP"] = 2,
 							["REPLACE_TYPE"] 	= "ALL",
 							["REMOVE"] = "SECTION",
 						},]]
 						--[[{
 							["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData.xml"},
-							["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData.xml", "ID", "THIS ONE"},
+							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData"},
+							["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData", "ID", "THIS ONE"},
 							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] 	= "ALL",
 							["REMOVE"] = "SECTION",
 						},
 						{
 							["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData.xml"},
-							["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData.xml", "Layout", "GcNGuiLayoutData.xml", "Height", "12"},
+							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData"},
+							["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData", "Layout", "GcNGuiLayoutData", "Height", "12"},
 							["SECTION_UP"] = 2,
 							["REPLACE_TYPE"] 	= "ALL",
 							["REMOVE"] = "SECTION",
 						},
 						{
 							["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData.xml"},
-							["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData.xml", "Layout", "GcNGuiLayoutData.xml", "Height", "50"},
+							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData"},
+							["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData", "Layout", "GcNGuiLayoutData", "Height", "50"},
 							["SECTION_UP"] = 2,
 							["REPLACE_TYPE"] 	= "ALL",
 							["REMOVE"] = "SECTION",
 						},]]
 						{
 							-- ADDS THE REBUILT COLOUR UI BLOCK
-							-- ["PRECEDING_KEY_WORDS"] = {"GcNGuiLayerData.xml"},
+							-- ["PRECEDING_KEY_WORDS"] = {"GcNGuiLayerData"},
 							-- ["PRECEDING_FIRST"] = "TRUE",
 							["SPECIAL_KEY_WORDS"] = {"ID", "LABEL"},
-							["SECTION_UP_SPECIAL"] = 1,
+							["SECTION_UP_SPECIAL"] = 2,
 							["ADD_OPTION"] = "ADDafterSECTION",
 							["ADD"] = table.concat(COLOUR_UI_ADD_TABLE)
 						},
 						{
 							-- UI CANVAS FOR COLOUR SLOTS
-							["SPECIAL_KEY_WORDS"] = {"ID", "COLOUR1", "Layout", "GcNGuiLayoutData.xml"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "COLOUR1", "Layout", "GcNGuiLayoutData"},
 							["REPLACE_TYPE"] = "",
 							["MATH_OPERATION"] = "*",
 							["VALUE_CHANGE_TABLE"] = 
@@ -1424,7 +1448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							-- THIS SECTION IS A SUB CANVAS WITH EXTRA UNITS MORE HEIGHT
 							-- THE EXTRA UNITS ARE FIRST TAKEN AWAY
-							["PRECEDING_KEY_WORDS"] = { "Children", "GcNGuiLayerData.xml" }, 
+							["PRECEDING_KEY_WORDS"] = { "Children", "GcNGuiLayerData" }, 
 							-- ["SECTION_ACTIVE"] = 1,
 							["REPLACE_TYPE"] = "",
 							["MATH_OPERATION"] = "+",
@@ -1435,7 +1459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							-- THE MATCHED HEIGHT IS MULTIPLIED EQUALLY TO THE PARENT UI CANVAS
-							["PRECEDING_KEY_WORDS"] = { "Children", "GcNGuiLayerData.xml" }, 
+							["PRECEDING_KEY_WORDS"] = { "Children", "GcNGuiLayerData" }, 
 							-- ["SECTION_ACTIVE"] = 1,
 							["REPLACE_TYPE"] = "",
 							["MATH_OPERATION"] = "*",
@@ -1446,7 +1470,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							-- THE EXTRA UNITS ARE ADDED BACK AFTER MULTIPLICATION
-							["PRECEDING_KEY_WORDS"] = { "Children", "GcNGuiLayerData.xml" }, 
+							["PRECEDING_KEY_WORDS"] = { "Children", "GcNGuiLayerData" }, 
 							-- ["SECTION_ACTIVE"] = 1,
 							["REPLACE_TYPE"] = "",
 							["MATH_OPERATION"] = "-",
@@ -1459,11 +1483,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "UI\BUILDCUSTOMISE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							-- UI CANVAS FOR COLOUR SLOTS
-							["SPECIAL_KEY_WORDS"] = {"ID", "COLOUR1", "Layout", "GcNGuiLayoutData.xml"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "COLOUR1", "Layout", "GcNGuiLayoutData"},
 							["REPLACE_TYPE"] = "",
 							["MATH_OPERATION"] = "*",
 							["VALUE_CHANGE_TABLE"] = 
@@ -1473,11 +1497,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							-- EXPANDS MAIN COLOUR/MATERIAL CUSTOMISATION CANVAS TO VERTICAL 90% OF SCREEN
-							["SPECIAL_KEY_WORDS"] = {"ID", "CUSTOMISE", "Layout", "GcNGuiLayoutData.xml"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "CUSTOMISE", "Layout", "GcNGuiLayoutData"},
 							["REPLACE_TYPE"] = "",
 							["VALUE_CHANGE_TABLE"] = 
 							{ 
-								{"PositionY", "5" },
+								{"Position Y", "5" },
 								{"Height", "100" },
 							},
 						},

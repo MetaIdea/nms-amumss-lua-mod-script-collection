@@ -1,68 +1,14 @@
-GameVersion = "3_81"
 ModName = "UniqueExoCrafts"
 Description = "A small mod that make exocraft faster but also stand out from eachother"
 
-GCTechnologyTablePath = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
+GCTechnologyTablePath = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 VehicleGlobalsPath = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
+InventoryTablePath = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"
 
-RoamerSpeed = "40"
-NomadSpeed = "50"
-PilgrimSpeed = "60"
-ColossusSpeed = "25"
-NautilonSpeed = "50"
 NautilonUnderwaterEnginePower = "10" -- Acceleration speed
 NautilonUnderwaterEngineFalloff = "1" -- 1 = 100% so no fall of , 0.9 =90% means speed wil be 10% slower  => 45u
 
--- BIKE/NOMAD
-NomadVehicleBoostForce = "800"-- 400
-NomadVehicleBoostMaxSpeed = "60"-- 32
-NomadVehicleBoostExtraMaxSpeedAir = "80" -- 40
-NomadVehicleBoostSpeedFalloff = "2.5" -- 7.5
-NomadVehicleBoostTime = "2.5" -- 0.5
-NomadVehicleBoostRechargeTime = "3" -- 2
-
---MED_BUGGY/ROAMER
-RoamerVehicleBoostForce = "700" --300
-RoamerVehicleBoostMaxSpeed = "50" --30
-RoamerVehicleBoostExtraMaxSpeedAir = "70"--40
-RoamerVehicleBoostSpeedFalloff = "5" --10
-RoamerVehicleBoostTime = "3.5" --1.5
-RoamerVehicleBoostRechargeTime = "4" --3
-
---WHEELEDBIKE/PILGRIM
-PilgrimVehicleBoostForce = "900" --600
-PilgrimVehicleBoostMaxSpeed = "70" --35
-PilgrimVehicleBoostExtraMaxSpeedAir = "90" --40
-PilgrimVehicleBoostSpeedFalloff = "5" --10
-PilgrimVehicleBoostTime = "2" --0.6
-PilgrimVehicleBoostRechargeTime = "2.5" --1.5
-
---TRUCK/COLOSSUUS
-ColossusVehicleBoostForce = "550" --220
-ColossusVehicleBoostMaxSpeed = "35" --30
-ColossusVehicleBoostExtraMaxSpeedAir = "55" --40
-ColossusVehicleBoostSpeedFalloff = "2.5" --5
-ColossusVehicleBoostTime = "2.5" --1.25
-ColossusVehicleBoostRechargeTime = "3" --5.5
-
---SUBMARINE/NATILON
-NautilonVehicleBoostForce = "2250" --900
-NautilonVehicleBoostMaxSpeed = "50"--25
-NautilonVehicleBoostExtraMaxSpeedAir = "50"--10
-NautilonVehicleBoostSpeedFalloff = "2.5" --7.5
-NautilonVehicleBoostTime = "5" --2.5
-NautilonVehicleBoostRechargeTime = "5" --2.5
-
---MECH
-MechVehicleBoostForce = "2250" --900
-MechVehicleBoostMaxSpeed = "50"--25
-MechVehicleBoostExtraMaxSpeedAir = "50"--10
-MechVehicleBoostSpeedFalloff = "2.5" --7.5
-MechVehicleBoostTime = "5" --2.5
-MechVehicleBoostRechargeTime = "5" --2.5
-
-MechSuitWalkingSpeed = "4"
-MechSuitJPForce ="100"
+MechSuitJPForce = "100"
 MechSuitJPMaxSpeed = "50"
 MechSuitJPMaxUpSpeed = "80"
 MechSuitJPDrainRate = "0.40"
@@ -71,151 +17,246 @@ MechSuitLaserDamange = "350"
 MechSuitCanonDamange = "2500"
 
 VehicleFuelRate = "0.3"
-VehicleFuelRateSurvival = "0.5"
+-- VehicleFuelRateSurvival = "0.5"
 VehicleBoostFuelRate = "1"
 VehicleBoostFuelRateSurvival = "2"
 
+ImproveVehicleInventory = true
 
--- HOVBERCraft is an unreleased vehcile this is NOT the Nomad
+MaxInventoryCap = 120
+MaxTechCap = 60
+
+InventoryWidth = 10
+InventoryHeight = 12
+
+TechWidth = 10
+TechHeight = 6
+
+VehicleSizes = {
+    "VehicleSmall",
+    "VehicleMedium",
+    "VehicleLarge"
+}
+
+ExoCraftsNewValues = {
+    {
+        ID = "BIKE", --Nomad
+        Speed = "50",
+        BoostForce = "800",
+        BoostMaxSpeed = "60",
+        BoostExtraMaxSpeedAir = "80",
+        VehicleBoostSpeedFalloff = "2.5",
+        VehicleBoostTime = "2.5",
+        VehicleBoostRechargeTime = "3"
+    },
+    {
+        ID = "MED_BUGGY", --ROAMER
+        Speed = "40",
+        BoostForce = "700",
+        BoostMaxSpeed = "50",
+        BoostExtraMaxSpeedAir = "70",
+        VehicleBoostSpeedFalloff = "5",
+        VehicleBoostTime = "3.5",
+        VehicleBoostRechargeTime = "4"
+    },
+    {
+        ID = "WHEELEDBIKE", --PILGRIM
+        Speed = "60",
+        BoostForce = "900",
+        BoostMaxSpeed = "70",
+        BoostExtraMaxSpeedAir = "90",
+        VehicleBoostSpeedFalloff = "5",
+        VehicleBoostTime = "2",
+        VehicleBoostRechargeTime = "2.5"
+    },
+    {
+        ID = "TRUCK", --COLOSSUUS
+        Speed = "25",
+        BoostForce = "550",
+        BoostMaxSpeed = "35",
+        BoostExtraMaxSpeedAir = "55",
+        VehicleBoostSpeedFalloff = "2.5",
+        VehicleBoostTime = "2.5",
+        VehicleBoostRechargeTime = "3"
+    },
+    {
+        ID = "SUBMARINE", --NATILON
+        Speed = "50",
+        BoostForce = "2250",
+        BoostMaxSpeed = "50",
+        BoostExtraMaxSpeedAir = "50",
+        VehicleBoostSpeedFalloff = "2.5",
+        VehicleBoostTime = "5",
+        VehicleBoostRechargeTime = "5"
+    },
+    {
+        ID = "MECH",
+        Speed = "4",
+        BoostForce = "2250",
+        BoostMaxSpeed = "50",
+        BoostExtraMaxSpeedAir = "50",
+        VehicleBoostSpeedFalloff = "2.5",
+        VehicleBoostTime = "5",
+        VehicleBoostRechargeTime = "5"
+    }
+}
+
+InputUserImproveVehicleInventory = {ImproveVehicleInventory,
+[[
+    Would you like improve exocraft slots?
+    Default = Y | Current = >> ]] .. (ImproveVehicleInventory and "Y" or "N") .. [[ <<
+]]}
+
+ImproveVehicleInventory = GUIF(InputUserImproveVehicleInventory, 10)
+
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
-["MOD_DESCRIPTION"]			= Description,
-["MOD_AUTHOR"]				= "Jackty89",
-["NMS_VERSION"]				= GameVersion,
-["MODIFICATIONS"] 			=
-	{
-		{
-			["MBIN_CHANGE_TABLE"] 	=
-			{
-				-- {
-				-- 	["MBIN_FILE_SOURCE"] 	= GCTechnologyTablePath,
-				-- 	["EXML_CHANGE_TABLE"] 	=
-				-- 	{
-				-- 		{
-				-- 			["SPECIAL_KEY_WORDS"] = {"ID","MECH_LASER"},
-				-- 			["PRECEDING_KEY_WORDS"] = {"StatBonuses","StatsTypes"},
-				-- 			["VALUE_CHANGE_TABLE"] 	=
-				-- 			{
-				-- 				--LINE 18848
-				-- 				{"Bonus", MechSuitLaserDamange}
-				-- 			}
-				-- 		},
-				-- 		{
-				-- 			["SPECIAL_KEY_WORDS"] = {"ID","MECH_GUN"},
-				-- 			["VALUE_CHANGE_TABLE"] 	=
-				-- 			{
-				-- 				--Line 19093
-				-- 				{"Bonus", MechSuitCanonDamange}
-				-- 			}
-				-- 		}
-				-- 	}
-				-- },
-				{
-					["MBIN_FILE_SOURCE"] 	= VehicleGlobalsPath,
-					["EXML_CHANGE_TABLE"] 	=
-					{
+    MOD_FILENAME = ModName,
+    MOD_DESCRIPTION = Description,
+    MOD_AUTHOR = "Jackty89",
+    MODIFICATIONS =
+    {
+        {
+            MBIN_CHANGE_TABLE =
+            {
+                {
+                    MBIN_FILE_SOURCE = VehicleGlobalsPath,
+                    MXML_CHANGE_TABLE =
+                    {
                         {
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"MechJetpackForce", MechSuitJPForce}, --Original 70
+                            VALUE_CHANGE_TABLE =
+                            {
+                                {"MechJetpackForce", MechSuitJPForce},
                                 {"MechJetpackMaxSpeed", MechSuitJPMaxSpeed},
                                 {"MechJetpackMaxUpSpeed", MechSuitJPMaxUpSpeed},
                                 {"MechJetpackDrainRate", MechSuitJPDrainRate},
                                 {"MechJetpackFillRate", MechSuitJPFillRate},
-								{"VehicleFuelRate", VehicleFuelRate},
-								{"VehicleFuelRateSurvival", VehicleFuelRateSurvival},
-								{"VehicleBoostFuelRate", VehicleBoostFuelRate},
-								{"VehicleBoostFuelRateSurvival", VehicleBoostFuelRateSurvival}
-							}
-						},
-                        {
-							["SPECIAL_KEY_WORDS"] = {"Name","MECH"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"TopSpeedForward", MechSuitWalkingSpeed}, 	-- Original "2"
-								{"VehicleBoostForce", MechVehicleBoostForce},
-								{"VehicleBoostMaxSpeed", MechVehicleBoostMaxSpeed},
-								{"VehicleBoostExtraMaxSpeedAir", MechVehicleBoostExtraMaxSpeedAir},
-								{"VehicleBoostSpeedFalloff", MechVehicleBoostSpeedFalloff},
-								{"VehicleBoostTime", MechVehicleBoostTime},
-								{"VehicleBoostRechargeTime", MechVehicleBoostRechargeTime}
-							}
-						},
-                        {
-							["SPECIAL_KEY_WORDS"] = {"Name","BIKE"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"TopSpeedForward", NomadSpeed}, 	-- Original "18"
-                                {"TopSpeedReverse", NomadSpeed},
-								{"VehicleBoostForce", NomadVehicleBoostForce},
-								{"VehicleBoostMaxSpeed", NomadVehicleBoostMaxSpeed},
-								{"VehicleBoostExtraMaxSpeedAir", NomadVehicleBoostExtraMaxSpeedAir},
-								{"VehicleBoostSpeedFalloff", NomadVehicleBoostSpeedFalloff},
-								{"VehicleBoostTime", NomadVehicleBoostTime},
-								{"VehicleBoostRechargeTime", NomadVehicleBoostRechargeTime}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","WHEELEDBIKE"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"TopSpeedForward", PilgrimSpeed}, 	-- Original "18"
-                                {"TopSpeedReverse", PilgrimSpeed},
-								{"VehicleBoostForce", PilgrimVehicleBoostForce},
-								{"VehicleBoostMaxSpeed", PilgrimVehicleBoostMaxSpeed},
-								{"VehicleBoostExtraMaxSpeedAir", PilgrimVehicleBoostExtraMaxSpeedAir},
-								{"VehicleBoostSpeedFalloff", PilgrimVehicleBoostSpeedFalloff},
-								{"VehicleBoostTime", PilgrimVehicleBoostTime},
-								{"VehicleBoostRechargeTime", PilgrimVehicleBoostRechargeTime}
-							}
-						},
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MED_BUGGY"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"TopSpeedForward", RoamerSpeed}, 	-- Original "16"
-                                {"TopSpeedReverse", RoamerSpeed},
-								{"VehicleBoostForce", RoamerVehicleBoostForce},
-								{"VehicleBoostMaxSpeed", RoamerVehicleBoostMaxSpeed},
-								{"VehicleBoostExtraMaxSpeedAir", RoamerVehicleBoostExtraMaxSpeedAir},
-								{"VehicleBoostSpeedFalloff", RoamerVehicleBoostSpeedFalloff},
-								{"VehicleBoostTime", RoamerVehicleBoostTime},
-								{"VehicleBoostRechargeTime", RoamerVehicleBoostRechargeTime}
-							}
-						},
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","TRUCK"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"TopSpeedForward", ColossusSpeed}, 	-- Original "12"
-                                {"TopSpeedReverse", ColossusSpeed},
-								{"VehicleBoostForce", ColossusVehicleBoostForce},
-								{"VehicleBoostMaxSpeed", ColossusVehicleBoostMaxSpeed},
-								{"VehicleBoostExtraMaxSpeedAir", ColossusVehicleBoostExtraMaxSpeedAir},
-								{"VehicleBoostSpeedFalloff", ColossusVehicleBoostSpeedFalloff},
-								{"VehicleBoostTime", ColossusVehicleBoostTime},
-								{"VehicleBoostRechargeTime", ColossusVehicleBoostRechargeTime}
-							}
-						},
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SUBMARINE" },
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"UnderwaterEngineMaxSpeed", NautilonSpeed}, 	-- Original "15"
-								{"UnderwaterEnginePower", NautilonUnderwaterEnginePower},
-								{"UnderwaterEngineFalloff",  NautilonUnderwaterEngineFalloff},
-								{"VehicleBoostForce", NautilonVehicleBoostForce},
-								{"VehicleBoostMaxSpeed", NautilonVehicleBoostMaxSpeed},
-								{"VehicleBoostExtraMaxSpeedAir", NautilonVehicleBoostExtraMaxSpeedAir},
-								{"VehicleBoostSpeedFalloff", NautilonVehicleBoostSpeedFalloff},
-								{"VehicleBoostTime", NautilonVehicleBoostTime},
-								{"VehicleBoostRechargeTime", NautilonVehicleBoostRechargeTime}
-							}
+                                {"VehicleFuelRate", VehicleFuelRate},
+                                {"VehicleBoostFuelRate", VehicleBoostFuelRate},
+                                {"VehicleBoostFuelRateSurvival", VehicleBoostFuelRateSurvival}
+                            }
                         }
                     }
-				}
+                },
+                {
+                    MBIN_FILE_SOURCE = GCTechnologyTablePath,
+                    MXML_CHANGE_TABLE =
+                    {
+                        {
+                            SPECIAL_KEY_WORDS = {"ID","MECH_LASER"},
+                            VALUE_CHANGE_TABLE =
+                            {
+                                {"Bonus", MechSuitLaserDamange}
+                            }
+                        },
+                        {
+                            SPECIAL_KEY_WORDS = {"ID","MECH_GUN"},
+                            VALUE_CHANGE_TABLE =
+                            {
+                                {"Bonus", MechSuitCanonDamange}
+                            }
+                        }
+                    }
+                },
+                {
+                    MBIN_FILE_SOURCE = InventoryTablePath,
+                    MXML_CHANGE_TABLE =
+                    {
+                    }
+                }
             }
         }
     }
 }
+
+local vehicleChanges = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[1].MXML_CHANGE_TABLE
+for i = 1, #ExoCraftsNewValues do
+    if ExoCraftsNewValues[i].ID == "SUBMARINE" then
+        vehicleChanges[#vehicleChanges + 1] = {
+            SPECIAL_KEY_WORDS = {"Name", ExoCraftsNewValues[i].ID},
+            VALUE_CHANGE_TABLE = {
+                {"UnderwaterEngineMaxSpeed", ExoCraftsNewValues[i].Speed},
+                {"UnderwaterEnginePower", NautilonUnderwaterEnginePower}, -- this now is 10 vanilla, leaving it here just incase of future edits
+                {"UnderwaterEngineFalloff", NautilonUnderwaterEngineFalloff},
+                {"VehicleBoostForce", ExoCraftsNewValues[i].BoostForce},
+                {"VehicleBoostMaxSpeed", ExoCraftsNewValues[i].BoostMaxSpeed},
+                {"VehicleBoostExtraMaxSpeedAir", ExoCraftsNewValues[i].BoostExtraMaxSpeedAir},
+                {"VehicleBoostSpeedFalloff", ExoCraftsNewValues[i].VehicleBoostSpeedFalloff},
+                {"VehicleBoostTime", ExoCraftsNewValues[i].VehicleBoostTime},
+                {"VehicleBoostRechargeTime", ExoCraftsNewValues[i].VehicleBoostRechargeTime}
+            }
+        }
+    else
+        vehicleChanges[#vehicleChanges + 1] = {
+            SPECIAL_KEY_WORDS = {"Name", ExoCraftsNewValues[i].ID},
+            VALUE_CHANGE_TABLE = {
+                {"TopSpeedForward", ExoCraftsNewValues[i].Speed},
+                {"TopSpeedReverse", ExoCraftsNewValues[i].Speed},
+                {"VehicleBoostForce", ExoCraftsNewValues[i].BoostForce},
+                {"VehicleBoostMaxSpeed", ExoCraftsNewValues[i].BoostMaxSpeed},
+                {"VehicleBoostExtraMaxSpeedAir", ExoCraftsNewValues[i].BoostExtraMaxSpeedAir},
+                {"VehicleBoostSpeedFalloff", ExoCraftsNewValues[i].VehicleBoostSpeedFalloff},
+                {"VehicleBoostTime", ExoCraftsNewValues[i].VehicleBoostTime},
+                {"VehicleBoostRechargeTime", ExoCraftsNewValues[i].VehicleBoostRechargeTime}
+            }
+        }
+    end
+end
+
+local ChangesToInventoryTable = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[3].MXML_CHANGE_TABLE
+function EditInventory(type, maxSlot)
+    if maxSlot then
+        ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+        {
+            SPECIAL_KEY_WORDS = {type, "GcInventoryLayoutGenerationDataEntry"},
+            VALUE_CHANGE_TABLE =
+            {
+                {"MinSlots", MaxInventoryCap},
+                {"MaxSlots", MaxInventoryCap},
+                {"MinTechSlots", MaxTechCap},
+                {"MaxTechSlots", MaxTechCap}
+            }
+        }
+    end
+
+    if type ~= "Suite" then
+        ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+        {
+            SPECIAL_KEY_WORDS = {type, "GcInventoryLayoutGenerationDataEntry", "Bounds", "GcInventoryLayoutGenerationBounds"},
+            VALUE_CHANGE_TABLE =
+            {
+                {"MaxWidthSmall",     InventoryWidth},
+                {"MaxHeightSmall",    InventoryHeight},
+                {"MaxWidthStandard",  InventoryWidth},
+                {"MaxHeightStandard", InventoryHeight},
+                {"MaxWidthLarge",     InventoryWidth},
+                {"MaxHeightLarge",    InventoryHeight}
+            }
+        }
+
+        ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+        {
+            SPECIAL_KEY_WORDS = {type, "GcInventoryLayoutGenerationDataEntry", "TechBounds", "GcInventoryLayoutGenerationBounds"},
+            VALUE_CHANGE_TABLE =
+            {
+                {"MaxWidthSmall",     TechWidth},
+                {"MaxHeightSmall",    TechHeight},
+                {"MaxWidthStandard",  TechWidth},
+                {"MaxHeightStandard", TechHeight},
+                {"MaxWidthLarge",     TechWidth},
+                {"MaxHeightLarge",    TechHeight}
+            }
+        }
+    end
+end
+
+
+function ImproveVehicleInventoryFunc()
+    for _key, vehicleSize in ipairs(VehicleSizes) do
+        EditInventory(vehicleSize, true)
+    end
+end
+
+if ImproveVehicleInventory then
+    ImproveVehicleInventoryFunc()
+end

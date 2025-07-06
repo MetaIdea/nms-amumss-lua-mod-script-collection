@@ -3,11 +3,10 @@ MAXMULTI = 4
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Extra Savage Sentinels by Exosolar.pak",
+["MOD_FILENAME"]            = "_Extra Savage Sentinels by Exosolar",
 ["MOD_AUTHOR"]              = "Exosolar",
 ["LUA_AUTHOR"]              = "Babscoole & Xen0nex",
-["NMS_VERSION"]             = "5.29",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "5.73",
 ["MODIFICATIONS"]           =
     {
         {
@@ -15,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "GCROBOTGLOBALS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -428,7 +427,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Attack", "GcDroneControlData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Attack", "GcDroneControlData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpeed",       8},
@@ -437,7 +436,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Search", "GcDroneControlData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Search", "GcDroneControlData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpeed",       12},
@@ -446,10 +445,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcDroneWeaponData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"DroneWeapons", "GcDroneWeaponData"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["VALUE_MATCH"] = "120",
+                            ["VALUE_MATCH"] = "120.000000",
                             ["VALUE_MATCH_OPTIONS"] = "~=",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -460,7 +459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SentinelSpawns"},

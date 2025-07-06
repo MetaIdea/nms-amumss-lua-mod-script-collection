@@ -16,22 +16,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","SHIPGUN1","StatsType","Ship_Weapons_Guns_BulletsPerShot"},
-							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Bonus",		"2"},		-- Original "1"
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","SHIPGUN1","StatsType","Ship_Weapons_Guns_Damage"},
-							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Bonus",		"380"},		-- Original "320"
-							}
-						},
-						{
 							["SPECIAL_KEY_WORDS"] = {"ID","SHIPROCKETS","StatsType","Ship_Weapons_Guns_BulletsPerShot"},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -45,6 +29,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",		"20000"},		-- Original "6500"
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","SHIPGUN1","StatsType","Ship_Weapons_Guns_BulletsPerShot"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",		"2"},		-- Original "1"
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","SHIPGUN1","StatsType","Ship_Weapons_Guns_Damage"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",		"380"},		-- Original "320"
 							}
 						},
 						{
@@ -93,6 +93,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",		"2500"},		-- Original "1250"
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","SHIPGUN_ALIEN","StatsType","Ship_Weapons_Guns_BulletsPerShot"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",		"2"},		-- Original "1"
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","SHIPLAS_ALIEN","StatsType","Ship_Weapons_Lasers"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",		"2"},		-- Original "1"
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","SHIPLAS_ALIEN","StatsType","Ship_Weapons_Lasers_Damage"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",		"300"},		-- Original "280"
 							}
 						},
 						{

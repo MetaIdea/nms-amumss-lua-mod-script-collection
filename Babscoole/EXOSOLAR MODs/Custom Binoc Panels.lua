@@ -42,19 +42,19 @@ local B = colorTable[COLORCHOICE].B
 local A = colorTable[COLORCHOICE].A
 
 COLORNAME = ""
-  if COLORCHOICE == 1 then 
+  if COLORCHOICE == 1 then
       COLORNAME = "BLACK"
-  elseif COLORCHOICE == 2 then 
+  elseif COLORCHOICE == 2 then
       COLORNAME = "BLUE"
-  elseif COLORCHOICE == 3 then 
+  elseif COLORCHOICE == 3 then
       COLORNAME = "GREEN"
-  elseif COLORCHOICE == 4 then 
+  elseif COLORCHOICE == 4 then
       COLORNAME = "RED"
-  elseif COLORCHOICE == 5 then 
+  elseif COLORCHOICE == 5 then
       COLORNAME = "PINK"
-  elseif COLORCHOICE == 6 then 
+  elseif COLORCHOICE == 6 then
       COLORNAME = "YELLOW"
-  elseif COLORCHOICE == 7 then 
+  elseif COLORCHOICE == 7 then
       COLORNAME = "ORANGE"
   end
 
@@ -65,9 +65,9 @@ print("E_NOTICE = "..tostring(E_NOTICE))
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Custom Binoc Panels-"..COLORNAME..".pak",
+["MOD_FILENAME"]            = "Custom Binoc Panels-"..COLORNAME,
 ["MOD_AUTHOR"]              = "Babscoole & Exosolar",
-["NMS_VERSION"]             = "5.29",
+["NMS_VERSION"]             = "5.73",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -76,23 +76,23 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "UI\HUD\BINOCULARS\HUDBINOCSLEFTPANEL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcNGuiGraphicData.xml"},
-                            ["SECTION_ACTIVE"] = 15,
+                            ["SPECIAL_KEY_WORDS"] = {"Children", "GcNGuiGraphicData"},
+                            ["SECTION_ACTIVE"] = 14,
                             ["SEC_SAVE_TO"] = "ADD_PANEL",
                         },
                         {
                             ["SEC_EDIT"] = "ADD_PANEL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PositionX",       "22"},
-                                {"PositionY",       "21.3"},
-                                {"Width",           "433"},
-                                {"Height",          "520"},
-                                {"WidthPercentage", "False"},
-                                {"AnchorPercent",   "True"},
+                                {"Position X",       "22"},
+                                {"Position Y",       "21.3"},
+                                {"Width",            "433"},
+                                {"Height",           "520"},
+                                {"Width Percentage", "false"},
+                                {"AnchorPercent",    "true"},
                             }
                         },
                         {
@@ -100,13 +100,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CornerRadius", "8"},
-                                {"StrokeSize",   "1"},
+                                {"Corner Radius", "8"},
+                                {"Stroke Size",   "1"},
                             }
                         },
                         {
                             ["SEC_EDIT"] = "ADD_PANEL",
-                            ["SPECIAL_KEY_WORDS"] = {"StrokeColour", "Colour.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Stroke Colour"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -115,7 +115,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "ADD_PANEL",
-                            ["SPECIAL_KEY_WORDS"] = {"Colour", "Colour.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -126,29 +126,29 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","BINOCS_LEFT"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BINOCS_LEFT"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "ADD_PANEL",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","HAZARD_VIEW"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "HAZARD_VIEW"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PositionX", "154"},
+                                {"Position X", "154"},
                             }
                         },
                         {
                             ["SEC_EDIT"] = "ADD_PANEL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PositionY",       "29.4"},
-                                {"Height",          "220"},
+                                {"Position Y", "29.4"},
+                                {"Height",     "220"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","SURVEY_LEFT"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SURVEY_LEFT"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["ADD_OPTION"] = "ADDafterLINE",
@@ -158,12 +158,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SEC_EDIT"] = "ADD_PANEL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PositionY",       "28"},
-                                {"Height",          "320"},
+                                {"Position Y", "28"},
+                                {"Height",     "320"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","MISSURVEY_LEFT"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "MISSURVEY_LEFT"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["ADD_OPTION"] = "ADDafterLINE",
@@ -173,29 +173,29 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "UI\HUD\BINOCULARS\HUDBINOCSRIGHTPANEL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcNGuiGraphicData.xml"},
-                            ["SECTION_ACTIVE"] = 7,
+                            ["SPECIAL_KEY_WORDS"] = {"Children", "GcNGuiGraphicData"},
+                            ["SECTION_ACTIVE"] = 6,
                             ["SEC_SAVE_TO"] = "ADD_PANEL",
                         },
                         {
                             ["SEC_EDIT"] = "ADD_PANEL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsHidden",         "False"},
-                                {"PositionX",        "0"},
-                                {"PositionY",        "0"},
-                                {"Width",            "396"},
-                                {"Height",           "226"},
-                                {"WidthPercentage",  "False"},
-                                {"HeightPercentage", "False"},
+                                {"Is Hidden",         "false"},
+                                {"Position X",        "0"},
+                                {"Position Y",        "0"},
+                                {"Width",             "396"},
+                                {"Height",            "226"},
+                                {"Width Percentage",  "false"},
+                                {"Height Percentage", "false"},
                             }
                         },
                         {
                             ["SEC_EDIT"] = "ADD_PANEL",
-                            ["SPECIAL_KEY_WORDS"] = {"StrokeColour", "Colour.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Stroke Colour"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -204,7 +204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "ADD_PANEL",
-                            ["SPECIAL_KEY_WORDS"] = {"Colour", "Colour.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -215,7 +215,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","MINERAL_VIEW"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "MINERAL_VIEW"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["ADD_OPTION"] = "ADDafterLINE",
@@ -228,7 +228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-local LEFTTABLE = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local LEFTTABLE = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 if E_NOTICE then
 
     LEFTTABLE[#LEFTTABLE +1] =

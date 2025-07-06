@@ -1,10 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "___PortalOnSpacestationV2.pak",
+["MOD_FILENAME"]            = "___PortalOnSpacestationV2",
 ["MOD_AUTHOR"]              = "Mjjstral and Babscoole",
-["NMS_VERSION"]             = "5.29",
+["NMS_VERSION"]             = "5.73",
 ["MOD_DESCRIPTION"]         = "Adds portal to new, old, abandoned, and pirate space stations",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
         {
@@ -19,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIOR_ABAND.SCENE.MBIN",
                     ["MBIN_FS_DISCARD"] = "TRUE",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Dock3C"},
@@ -41,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SEC_EDIT"] = "ADD_NODE",
@@ -63,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\BACK_SECTION.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SEC_EDIT"] = "ADD_NODE",
@@ -85,7 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION_ABANDONED.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SEC_EDIT"] = "ADD_NODE",
@@ -106,7 +105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION_PIRATE.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SEC_EDIT"] = "ADD_NODE",
@@ -127,7 +126,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "PortalStructure"},
@@ -158,11 +157,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\BUTTON.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcMaintenanceComponentData.xml"},
-                            ["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"Components", "GcMaintenanceComponentData"},
                             ["REMOVE"] = "SECTION",
                         }
                     }

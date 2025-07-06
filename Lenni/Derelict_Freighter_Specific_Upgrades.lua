@@ -2,12 +2,16 @@ POSSIBLE_UPGRADES =
 {
 	"FreighterTechHyp",
 	"FreighterTechFuel",
+}
+
+--[[
 	-- "FreighterTechSpeed",
 	-- "FreighterTechTrade",
 	-- "FreighterTechCombat",
 	-- "FreighterTechMine",
 	-- "FreighterTechExp",
-}
+]]
+
 
 OVERWRITE_LOOT =
 {
@@ -25,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"]		= "Derelict_Freighter_Specific_Upgrades.pak",
     ["MOD_DESCRIPTION"]		= "Limits derelict freighter loot to hyperdrive and fuel modules",
     ["MOD_AUTHOR"]			= "Lenni",
-    ["NMS_VERSION"]			= "4.60",
+    ["NMS_VERSION"]			= "5.50",
     ["MODIFICATIONS"]		=
     {
         {
@@ -36,14 +40,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
 						{
-							["SKW"] = {"Id", "R_FREI_TECH", "Reward", "GcRewardSpecificProduct.xml"},
+							["SKW"] = {"Id", "R_FREI_TECH", "Reward", "GcRewardSpecificProduct"},
 							["SECTION_UP"]		= 1,
 							["REPLACE_TYPE"]	= "ALL",
 							["REMOVE"]			= "SECTION",
 						},
 						{
-							["SKW"] = {"Id", "R_FREI_TECH"},
-							["PKW"] = "GcRewardTableItem.xml",
+							["SKW"] = {"Id", "R_FREI_TECH", "List", "GcRewardTableItem"},
 							["SEC_SAVE_TO"] = "REWARD_ITEM"
 						},
                     }
@@ -62,8 +65,7 @@ for i=1,#OVERWRITE_LOOT,1 do
     --for each change we want to do we are creating adding a new item to the ChangesToRewardTable
     ChangesToRewardTable[#ChangesToRewardTable + 1] =
     {
-        ["SPECIAL_KEY_WORDS"]   = {"Id", Loot},
-        ["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
+        ["SPECIAL_KEY_WORDS"]   = {"Id", Loot, "List","GcRewardTableItem"},
 		["REPLACE_TYPE"] = "ALL",
         ["REMOVE"] = "SECTION"
     }
@@ -91,7 +93,7 @@ for i=1,#OVERWRITE_LOOT,1 do
 		ChangesToRewardTable[#ChangesToRewardTable + 1] =
 		{
 			["SPECIAL_KEY_WORDS"] = {"Id", Loot},
-			["PKW"] = {"List", "List"},
+			["PKW"] = {"List","List"},
 			["SEC_ADD_NAMED"]	= "REWARD_ITEM",
 		}
 	end

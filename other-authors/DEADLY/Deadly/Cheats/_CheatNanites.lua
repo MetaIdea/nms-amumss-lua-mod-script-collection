@@ -1,11 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "CheatNanites.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "5.0",
+    ["NMS_VERSION"]   = "5.63",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                {
+                { -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {

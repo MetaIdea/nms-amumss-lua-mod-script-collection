@@ -1,5 +1,5 @@
 ModName = "PTSd Suit Inventory and Stack Sizes"
-GameVersion = "5_10"
+GameVersion = "5_55"
 Description = "Rebalance of inventory Slot stack sizes, as well as initial & max exosuit inventory size"
 
 --NOTE: certain specific items may have their stack size further adjusted in the "PTSd Resource + Product + Construction Rebalance" section
@@ -96,7 +96,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
   ["MOD_DESCRIPTION"]		= Description,         
   ["MOD_AUTHOR"]			= "Xen0nex",         -- (pre-4.0 version based on Inventory Rebalance by Jackty89, modified by Xen0nex)
-  ["NMS_VERSION"]			= GameVersion,     
+  ["NMS_VERSION"]			= GameVersion,    
+  ["EXML_CREATE"] = "FALSE",  
   ["MODIFICATIONS"] 		= 
     {
 	    {
@@ -104,7 +105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= {"GCGAMEPLAYGLOBALS.GLOBAL.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["VALUE_CHANGE_TABLE"] 	= 			--Unclear what these do if they have any effect
@@ -127,10 +128,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Suit","GcInventoryLayoutGenerationDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Suit","GcInventoryLayoutGenerationDataEntry"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MinSlots",			MinCargoSlots},
@@ -140,7 +141,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Suit","GcInventoryLayoutGenerationDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Suit","GcInventoryLayoutGenerationDataEntry"},
 							["PRECEDING_KEY_WORDS"] = "Bounds",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -153,7 +154,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Suit","GcInventoryLayoutGenerationDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Suit","GcInventoryLayoutGenerationDataEntry"},
 							["PRECEDING_KEY_WORDS"] = "TechBounds",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -166,7 +167,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ChestSmall","GcInventoryLayoutGenerationDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"ChestSmall","GcInventoryLayoutGenerationDataEntry"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MinSlots",			StorageSlots},
@@ -174,7 +175,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ChestSmall","GcInventoryLayoutGenerationDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"ChestSmall","GcInventoryLayoutGenerationDataEntry"},
 							["PRECEDING_KEY_WORDS"] = "Bounds",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -187,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ChestMedium","GcInventoryLayoutGenerationDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"ChestMedium","GcInventoryLayoutGenerationDataEntry"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MinSlots",			StorageSlots},
@@ -195,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ChestMedium","GcInventoryLayoutGenerationDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"ChestMedium","GcInventoryLayoutGenerationDataEntry"},
 							["PRECEDING_KEY_WORDS"] = "Bounds",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -208,7 +209,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ChestLarge","GcInventoryLayoutGenerationDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"ChestLarge","GcInventoryLayoutGenerationDataEntry"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MinSlots",			StorageSlots},
@@ -216,7 +217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ChestLarge","GcInventoryLayoutGenerationDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"ChestLarge","GcInventoryLayoutGenerationDataEntry"},
 							["PRECEDING_KEY_WORDS"] = "Bounds",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -229,7 +230,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"RocketLocker","GcInventoryLayoutGenerationDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"RocketLocker","GcInventoryLayoutGenerationDataEntry"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MinSlots",			RocketSlots},
@@ -237,7 +238,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"RocketLocker","GcInventoryLayoutGenerationDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"RocketLocker","GcInventoryLayoutGenerationDataEntry"},
 							["PRECEDING_KEY_WORDS"] = "Bounds",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -253,7 +254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						--Intentionally left blank to be filled in by function below
 					}
@@ -264,7 +265,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 }	
 
 
-local ChangesToDifficulty = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+local ChangesToDifficulty = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["MXML_CHANGE_TABLE"]
 
 for i = 1, #Difficulties do
 	local Difficulty = Difficulties[i]
@@ -287,7 +288,7 @@ for i = 1, #Difficulties do
 
 			ChangesToDifficulty[#ChangesToDifficulty+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {Difficulty,"GcDifficultyInventoryStackSizeOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {Difficulty,"GcDifficultyInventoryStackSizeOptionData"},
 				["PRECEDING_KEY_WORDS"] = ItemType,
 				["VALUE_CHANGE_TABLE"] 	= 
 				{

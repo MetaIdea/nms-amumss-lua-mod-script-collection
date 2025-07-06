@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "DontHideAutophageCamps.pak",
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "5.01.1",
+["NMS_VERSION"]				= "5.50",
 ["MOD_DESCRIPTION"]			= "Do not hide Autophage camps",
 ["MODIFICATIONS"] 			=
 	{
@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["SKW"]	= {"Template", "GcScanToRevealComponentData.xml"},
+							["PKW"]	= "GcScanToRevealComponentData",
 							["REPLACE_TYPE"]	= "ALL",
 							["VALUE_CHANGE_TABLE"]	=
 							{

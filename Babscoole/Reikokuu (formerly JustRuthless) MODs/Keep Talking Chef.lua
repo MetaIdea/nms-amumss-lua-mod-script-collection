@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Keep Talking Chef.pak",
+["MOD_FILENAME"]    = "Keep Talking Chef",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Makes NPC Cronus dialogue stay open when trading food for nanites",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -11,21 +11,27 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Id", "EXOTIC_CHEF", "Cost", "C_NEXUSCHEF1"},
-                                {"Id", "EXOTIC_CHEF", "Cost", "C_NEXUSCHEF2"},
-                                {"Id", "EXOTIC_CHEF", "Cost", "C_NEXUSCHEF3"},
+                                {"Id", "%?CHEF_JUDGE1", "Cost", "C_NEXUSCHEF1"},
+                                {"Id", "%?CHEF_JUDGE1", "Cost", "C_NEXUSCHEF2"},
+                                {"Id", "%?CHEF_JUDGE1", "Cost", "C_NEXUSCHEF3"},
+                                {"Id", "%?CHEF_JUDGE2", "Cost", "C_NEXUSCHEF1"},
+                                {"Id", "%?CHEF_JUDGE2", "Cost", "C_NEXUSCHEF2"},
+                                {"Id", "%?CHEF_JUDGE2", "Cost", "C_NEXUSCHEF3"},
+                                {"Id", "%?CHEF_JUDGE3", "Cost", "C_NEXUSCHEF1"},
+                                {"Id", "%?CHEF_JUDGE3", "Cost", "C_NEXUSCHEF2"},
+                                {"Id", "%?CHEF_JUDGE3", "Cost", "C_NEXUSCHEF3"},
                             },
                             ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_MATCH"] = "False",
+                            ["VALUE_MATCH"] = "false",
                             ["VALUE_MATCH_TYPE"] = "STRING",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"KeepOpen", "True"},
+                                {"KeepOpen", "true"},
                             },
                         },
                     }

@@ -20,9 +20,6 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_DESCRIPTION"] = ModDescription,
     ["MOD_AUTHOR"] = Author,
 	["AMUMSS_SUPPRESS_MSG"] = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE, MIXED_TABLE",
-    ["ADD_FILES"] =
-    {
-    },
     ["MODIFICATIONS"] =
     {
         {

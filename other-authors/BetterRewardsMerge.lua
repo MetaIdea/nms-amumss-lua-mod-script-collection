@@ -32,9 +32,10 @@ BOUNTY_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanite
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 	= "BetterRewardsMerge.pak",
+["MOD_FILENAME"] 	= "BetterRewardsMerge",
+["MOD_BATCHNAME"]	= "BetterRewardsMerge",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "5.21",
+["NMS_VERSION"]		= "5.50",
 ["MODIFICATIONS"] 	=
 	{
 		{

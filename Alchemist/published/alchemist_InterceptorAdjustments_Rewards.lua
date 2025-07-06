@@ -1,8 +1,8 @@
 Author = "alchemist"
 ModName = "InterceptorAdjustments_Rewards"
 BaseDescription = [[Balance adjustments for rewards added by the Interceptor update.]]
-GameVersion = "5-10"
-ModVersion = "3"
+GameVersion = "5-52"
+ModVersion = "4"
 
 local Config = {
   RobotSubstanceReduction = {
@@ -69,7 +69,7 @@ local Config = {
       SourceId = "SPIDER_LOOT",
       Change = {
         SPECIAL_KEY_WORDS = {"ID", "SPIDER_PROD"},
-        SECTION_UP = 1,
+        SECTION_UP = 2,
         VALUE_CHANGE_TABLE = {
           {"PercentageChance", 65},
         }
@@ -128,21 +128,23 @@ local function tableMap(t, fn)
 end
 
 local function GcRewardSpecificProduct(product)
-  return [[<Property value="GcRewardTableItem.xml">
+  return [[<Property name="List" value="GcRewardTableItem">
   <Property name="PercentageChance" value="]]..product.PercentageChance..[[" />
-  <Property name="Reward" value="GcRewardSpecificProduct.xml">
-    <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-      <Property name="DefaultProductType" value="None" />
+  <Property name="Reward" value="GcRewardSpecificProduct">
+    <Property name="GcRewardSpecificProduct">
+      <Property name="Default" value="GcDefaultMissionProductEnum">
+        <Property name="DefaultProductType" value="None" />
+      </Property>
+      <Property name="ID" value="]]..product.ID..[[" />
+      <Property name="AmountMin" value="]]..product.AmountMin..[[" />
+      <Property name="AmountMax" value="]]..product.AmountMax..[[" />
+      <Property name="HideAmountInMessage" value="false" />
+      <Property name="ForceSpecialMessage" value="false" />
+      <Property name="HideInSeasonRewards" value="false" />
+      <Property name="Silent" value="false" />
+      <Property name="SeasonRewardListFormat" value="" />
+      <Property name="RequiresTech" value="" />
     </Property>
-    <Property name="ID" value="]]..product.ID..[[" />
-    <Property name="AmountMin" value="]]..product.AmountMin..[[" />
-    <Property name="AmountMax" value="]]..product.AmountMax..[[" />
-    <Property name="HideAmountInMessage" value="False" />
-    <Property name="ForceSpecialMessage" value="False" />
-    <Property name="HideInSeasonRewards" value="False" />
-    <Property name="Silent" value="False" />
-    <Property name="SeasonRewardListFormat" value="" />
-    <Property name="RequiresTech" value="" />
   </Property>
   <Property name="LabelID" value="" />
 </Property>]]
@@ -259,14 +261,14 @@ if Config.SmallSpiderDiscreteLoot.Enabled then
     MBIN_FILE_SOURCE = Config.SmallSpiderDiscreteLoot.Source.EntityToFile,
     EXML_CHANGE_TABLE = {
       {
-        SPECIAL_KEY_WORDS = {"Template","GcSimpleInteractionComponentData.xml"},
+        SPECIAL_KEY_WORDS = {"Components","GcSimpleInteractionComponentData"},
         SECTION_UP = 1,
         VALUE_CHANGE_TABLE = {
           {"Id", "SM_SPIDER_LOOT"},
         }
       },
       {
-        SPECIAL_KEY_WORDS = {"Template","GcDestructableComponentData.xml"},
+        SPECIAL_KEY_WORDS = {"Components","GcDestructableComponentData"},
         SECTION_UP = 1,
         VALUE_CHANGE_TABLE = {
           {"GivesReward", "SM_SPIDER_LOOT"},
@@ -279,7 +281,7 @@ if Config.SmallSpiderDiscreteLoot.Enabled then
     MBIN_FILE_SOURCE = "MODELS/COMMON/ROBOTS/SPIDER_SMALLQUAD/ENTITIES/SPIDERSMALLQUAD.ENTITY.MBIN",
     EXML_CHANGE_TABLE = {
       {
-        SPECIAL_KEY_WORDS = {"Template","GcDestructableComponentData.xml"},
+        SPECIAL_KEY_WORDS = {"Components","GcDestructableComponentData"},
         PRECEDING_KEY_WORDS = {
           "DestroyedModel"
         },
@@ -297,16 +299,16 @@ if Config.SmallSpiderDiscreteLoot.Enabled then
     SEC_SAVE_TO = lootSection,
   }
 
+  local lootChange = Config.SmallSpiderDiscreteLoot.Reward.Change
+  lootChange.SEC_EDIT = lootSection
+  rewardChangeTable[#rewardChangeTable+1] = lootChange
+
   rewardChangeTable[#rewardChangeTable+1] = {
     SEC_EDIT = lootSection,
     VALUE_CHANGE_TABLE = {
       {"Id", "SM_SPIDER_LOOT"}
     }
   }
-
-  local lootChange = Config.SmallSpiderDiscreteLoot.Reward.Change
-  lootChange.SEC_EDIT = lootSection
-  rewardChangeTable[#rewardChangeTable+1] = lootChange
 
   rewardChangeTable[#rewardChangeTable+1] = {
     PRECEDING_KEY_WORDS = {"GenericTable"},

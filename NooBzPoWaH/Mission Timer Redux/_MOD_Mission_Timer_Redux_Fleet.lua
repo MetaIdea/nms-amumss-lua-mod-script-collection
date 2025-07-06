@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_MOD_Mission_Timer_Redux_Fleet.pak",
+["MOD_FILENAME"] 			= "_MOD_Mission_Timer_Redux_Fleet",
 ["MOD_DESCRIPTION"] 		= "Reduce Fleet Mission Timer",
 ["MOD_AUTHOR"]				= "NooBzPoWaH",
 ["LUA_AUTHOR"] 				= "Babscoole",
-["NMS_VERSION"]				= "5.+",
+["NMS_VERSION"]				= "5.71+",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCFLEETGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["VALUE_CHANGE_TABLE"] 	= 

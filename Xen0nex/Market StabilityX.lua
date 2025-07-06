@@ -2,7 +2,7 @@ Author = "Exosolar"			--Edited by Xen0nex
 --ModName = "gExos Challenge"
 ModNameSub = "Market StabilityX"
 BaseDescription = "Removes market crashing by narrowing the range in which prices can fluctuate, reduces the effect of player selling."
-GameVersion = "462"
+GameVersion = "5_57"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -10,10 +10,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
+["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {{
 ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\TRADINGCLASSDATATABLE.MBIN",
-["EXML_CHANGE_TABLE"] = {
+["MXML_CHANGE_TABLE"] = {
 
 	{["INTEGER_TO_FLOAT"] = "FORCE",							--Added by Xen0nex
 	["REPLACE_TYPE"]         = "ALL",
@@ -78,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"ProductMultiplierChangePer100", 0.01},				--0.03		<---Different!		(0.01)
 		{"SubstanceMultiplierChangePer100", 0.001}}},			--0.001		<---Different!		(0.001)
 	
-	{["SPECIAL_KEY_WORDS"] = {"SpecialShop","GcTradingCategoryData.xml"},		--Added by Xen0nex
+	{["SPECIAL_KEY_WORDS"] = {"SpecialShop","GcTradingCategoryData"},		--Added by Xen0nex
 	["VALUE_CHANGE_TABLE"] = {
 		{"ProductMultiplierChangePer100", 0.01},				--0.3		(0.01)
 		{"SubstanceMultiplierChangePer100", 0.001}}}			--0.03		(0.001)

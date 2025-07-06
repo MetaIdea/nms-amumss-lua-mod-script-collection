@@ -51,24 +51,24 @@ print("AERIAL_SCAN = "..tostring(AERIAL_SCAN))
 --For entries in MissionDataTable and Rewards in DialogDataTable, just follow the naming convention used by the existing entries.
 ScanDataTable = --Additions to SCANEVENTTABLEPLANET
 {--  NAME,         INTERACTIONTYPE, BUILDINGLOCATION, BUILDINGTYPE,        BUILDINGCLASS,            FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, OSDMESSAGE,                    TOOLTIP,                         MARKERLABEL
-    {"SE_GL_SHLT", "None",          "Nearest",        "AnyShelter",        "None",                   "False",         "False",                  "SIGNAL_SHELTER",              "TIP_SHELTER",                   ""                         },
-    {"SE_GL_PORT", "Portal",        "Nearest",        "BuildingClass",     "Portal",                 "False",         "True" ,                  "SIGNAL_PORTAL",               "TIP_PORTAL",                    ""                         },
-    {"SE_GL_DIST", "None",          "Nearest",        "BuildingClass",     "DistressSignal",         "False",         "False",                  "SIGNAL_DISTRESSSIGNAL",       "TIP_DISTRESSSIGNAL",            "BUILDING_DISTRESSSIGNAL_L"},
-    {"SE_GL_SHOP", "None",          "Nearest",        "BuildingClass",     "Shop",                   "False",         "True" ,                  "SIGNAL_SHOP",                 "TIP_SHOP",                      ""                         },
-    {"SE_GL_FACT", "None",          "Nearest",        "BuildingClass",     "Factory",                "False",         "False",                  "SIGNAL_FACTORY",              "TIP_FACTORY",                   ""                         },
-    {"SE_GL_DPOD", "None",          "Nearest",        "BuildingClass",     "DamagedMachine",         "False",         "False",                  "SIGNAL_DAMAGEDMACHINE",       "TIP_DAMAGEDMACHINE",            ""                         },
-    {"SE_GL_LBRY", "None",          "Nearest",        "BuildingClass",     "LargeBuilding",          "False",         "True" ,                  "SIGNAL_LIBRARY",              "TIP_LIBRARY",                   ""                         },
-    {"SE_GL_CRFR", "None",          "Nearest",        "BuildingClass",     "CrashedFreighter",       "False",         "False",                  "UI_CORE_ACT2_STEP8_OSD1",     "UI_CORE_ACT2_STEP8_OBJ2",       "UI_CORE_ACT2_STEP8_MARKER"},
-    {"SE_GL_OBSV", "None",          "Nearest",        "BuildingClass",     "Observatory",            "False",         "False",                  "SIGNAL_OBSERVATORY",          "TIP_OBSERVATORY",               ""                         },
-    {"SE_GL_OUTP", "None",          "Nearest",        "BuildingClass",     "Outpost",                "False",         "True" ,                  "SIGNAL_OUTPOST",              "TIP_OUTPOST",                   ""                         },
-    {"SE_GL_DRHV", "None",          "Nearest",        "BuildingClass",     "DroneHive",              "False",         "False",                  "UI_DRONEHIVE_LOCATED_OSD",    "UI_DRONEHIVE_LOCATED",          ""                         },
-    {"SE_GL_GRV" , "None",          "Nearest",        "BuildingClass",     "GraveInCave",            "False",         "False",                  "UI_MP_PLANTKILL_GRAVE_OSD",   "UI_TITLE_OWNED_LORE1",          "SCAN_GRAVE"               },
-    {"SE_GL_BASE", "None",          "Nearest",        "BuildingClass",     "Base",                   "False",         "False",                  "SIGNAL_BASE",                 "TIP_BASE",                      ""                         },
-    {"SE_GL_GLCH", "None",          "Nearest",        "BuildingClass",     "StoryGlitch",            "False",         "False",                  "NPC_COMM_WEEK_04_GLITCH_OSD", "NPC_COMM_WEEK_04_GLITCH_RES_A", "BUILDING_GLITCHYSTORYBOX" },
-    {"SE_GL_ABAN", "None",          "Nearest",        "BuildingClass",     "Abandoned",              "False",         "False",                  "SIGNAL_ABANDONED",            "TIP_ABANDONED",                 ""                         },
-    {"SE_GL_RBCP", "None",          "Nearest",        "BuildingClass",     "AbandonedRobotCamp",     "False",         "False",                  "UI_CAMP_REVEAL_OSD",          "UI_CAMP_REVEAL_MSG",            "UI_CAMP_REVEAL_MARKER"    },
-    {"SE_GL_DRCS", "None",          "Nearest",        "BuildingClass",     "SentinelDistressSignal", "False",         "False",                  "UI_CRASH_REVEAL_OSD",         "UI_CRASH_REVEAL_MSG",           "UI_CRASH_REVEAL_MARKER"   },
-    {"SE_GL_SETL", "None",          "Random" ,        "UnownedSettlement", "None",                   "True" ,         "True" ,                  "UI_SETTLEMENT_LOCATED_OSD",   "UI_SETTLEMENT_LOCATED",         ""                         },
+    {"SE_GL_SHLT", "None",          "Nearest",        "AnyShelter",        "None",                   "false",         "false",                  "SIGNAL_SHELTER",              "TIP_SHELTER",                   ""                         },
+    {"SE_GL_PORT", "Portal",        "Nearest",        "BuildingClass",     "Portal",                 "false",         "true" ,                  "SIGNAL_PORTAL",               "TIP_PORTAL",                    ""                         },
+    {"SE_GL_DIST", "None",          "Nearest",        "BuildingClass",     "DistressSignal",         "false",         "false",                  "SIGNAL_DISTRESSSIGNAL",       "TIP_DISTRESSSIGNAL",            "BUILDING_DISTRESSSIGNAL_L"},
+    {"SE_GL_SHOP", "None",          "Nearest",        "BuildingClass",     "Shop",                   "false",         "true" ,                  "SIGNAL_SHOP",                 "TIP_SHOP",                      ""                         },
+    {"SE_GL_FACT", "None",          "Nearest",        "BuildingClass",     "Factory",                "false",         "false",                  "SIGNAL_FACTORY",              "TIP_FACTORY",                   ""                         },
+    {"SE_GL_DPOD", "None",          "Nearest",        "BuildingClass",     "DamagedMachine",         "false",         "false",                  "SIGNAL_DAMAGEDMACHINE",       "TIP_DAMAGEDMACHINE",            ""                         },
+    {"SE_GL_LBRY", "None",          "Nearest",        "BuildingClass",     "LargeBuilding",          "false",         "true" ,                  "SIGNAL_LIBRARY",              "TIP_LIBRARY",                   ""                         },
+    {"SE_GL_CRFR", "None",          "Nearest",        "BuildingClass",     "CrashedFreighter",       "false",         "false",                  "UI_CORE_ACT2_STEP8_OSD1",     "UI_CORE_ACT2_STEP8_OBJ2",       "UI_CORE_ACT2_STEP8_MARKER"},
+    {"SE_GL_OBSV", "None",          "Nearest",        "BuildingClass",     "Observatory",            "false",         "false",                  "SIGNAL_OBSERVATORY",          "TIP_OBSERVATORY",               ""                         },
+    {"SE_GL_OUTP", "None",          "Nearest",        "BuildingClass",     "Outpost",                "false",         "true" ,                  "SIGNAL_OUTPOST",              "TIP_OUTPOST",                   ""                         },
+    {"SE_GL_DRHV", "None",          "Nearest",        "BuildingClass",     "DroneHive",              "false",         "false",                  "UI_DRONEHIVE_LOCATED_OSD",    "UI_DRONEHIVE_LOCATED",          ""                         },
+    {"SE_GL_GRV" , "None",          "Nearest",        "BuildingClass",     "GraveInCave",            "false",         "false",                  "UI_MP_PLANTKILL_GRAVE_OSD",   "UI_TITLE_OWNED_LORE1",          "SCAN_GRAVE"               },
+    {"SE_GL_BASE", "None",          "Nearest",        "BuildingClass",     "Base",                   "false",         "false",                  "SIGNAL_BASE",                 "TIP_BASE",                      ""                         },
+    {"SE_GL_GLCH", "None",          "Nearest",        "BuildingClass",     "StoryGlitch",            "false",         "false",                  "NPC_COMM_WEEK_04_GLITCH_OSD", "NPC_COMM_WEEK_04_GLITCH_RES_A", "BUILDING_GLITCHYSTORYBOX" },
+    {"SE_GL_ABAN", "None",          "Nearest",        "BuildingClass",     "Abandoned",              "false",         "false",                  "SIGNAL_ABANDONED",            "TIP_ABANDONED",                 ""                         },
+    {"SE_GL_RBCP", "None",          "Nearest",        "BuildingClass",     "AbandonedRobotCamp",     "false",         "false",                  "UI_CAMP_REVEAL_OSD",          "UI_CAMP_REVEAL_MSG",            "UI_CAMP_REVEAL_MARKER"    },
+    {"SE_GL_DRCS", "None",          "Nearest",        "BuildingClass",     "SentinelDistressSignal", "false",         "false",                  "UI_CRASH_REVEAL_OSD",         "UI_CRASH_REVEAL_MSG",           "UI_CRASH_REVEAL_MARKER"   },
+    {"SE_GL_SETL", "None",          "Random" ,        "UnownedSettlement", "None",                   "true" ,         "true" ,                  "UI_SETTLEMENT_LOCATED_OSD",   "UI_SETTLEMENT_LOCATED",         ""                         },
 }
 
 MissionDataTable = --Additions to ENABLINGCONDITIONSTABLE and REWARDTABLE
@@ -147,10 +147,10 @@ DialogDataTable = --Dialog (menu) additions to ENABLINGCONDITIONSTABLE.
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster"..FILENAME..".pak",
+  ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster"..FILENAME,
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie & Babscoole",
-  ["NMS_VERSION"]     = "5.29",
+  ["NMS_VERSION"]     = "5.73",
   ["MODIFICATIONS"]   =
     {
         {
@@ -158,11 +158,11 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIGNALSCANNER", "Value", "R_MSG_NEAR_SCAN"},
-                            ["SECTION_UP"] = 2,
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIGNALSCANNER", "Rewards", "R_MSG_NEAR_SCAN"},
+                            ["SECTION_UP"] = 1,
                             ["SEC_SAVE_TO"] = "GetNearScan",
                         },
                         {
@@ -174,7 +174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NextInteraction",   ""},
-                                {"SelectedOnBackOut", "False"},
+                                {"SelectedOnBackOut", "false"},
                             }
                         },
                         {
@@ -187,7 +187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Name",     "More Options"},
                                 {"Cost",     "C_ALLOWSCAN"},
-                                {"KeepOpen", "True"},
+                                {"KeepOpen", "true"},
                             }
                         },
                         {
@@ -196,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "GetPuzzleEntry",
-                            ["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Options", "GcAlienPuzzleOption"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION",
                         },
@@ -205,7 +205,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TextAlien",               ""},
-                                {"UseTitleOverrideInLabel", "False"},
+                                {"UseTitleOverrideInLabel", "false"},
                             }
                         },
                         {
@@ -216,15 +216,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "R_MONOLITH"},
                             ["SEC_SAVE_TO"] = "GetReward",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHT_DECLINE"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHT_DECLINE", "List" ,"GcRewardTableItem"},
                             ["SEC_SAVE_TO"] = "GetMissionMessageReward",
                         },
                         {
@@ -236,20 +235,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "GetReward",
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"List" ,"GcRewardTableItem"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "GetMissionMessageReward",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATES_DELAY"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATES_DELAY", "List" ,"GcRewardTableItem"},
                             ["SEC_SAVE_TO"] = "GetRewardMissionSeeded",
                         },
                     },
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCANNING\SCANEVENTTABLEPLANET.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SENT_CRASH_CORRUPT"},
@@ -259,7 +257,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\STATS\STATDEFINITIONSTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "PIR_FREI_SEEN"},
@@ -282,43 +280,31 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\STATS\STATGROUPSTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value", "CIV_FREI_KILLS"},
-                            ["SEC_SAVE_TO"] = "GetStatGp",
-                        },
-                        {
-                            ["SEC_EDIT"] = "GetStatGp",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "GL_SCAN_FIX"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"GroupName", "GLOBAL_STATS"},
                             ["PRECEDING_KEY_WORDS"] = {"TrackedStats"},
                             ["ADD_OPTION"] = "ADDendSECTION",
-                            ["SEC_ADD_NAMED"] = "GetStatGp",
+                            ["ADD"] =
+[[				<Property name="TrackedStats" value="GL_SCAN_FIX"/>]]
                         },
                     },
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\ATLASPATHTABLE.MBIN",
                     ["MBIN_FS_DISCARD"] = "TRUE",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Stage", "GcMissionSequenceGroup.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Stage", "GcMissionSequenceGroup"},
                             ["SECTION_UP"] = 1,
                             ["SEC_SAVE_TO"] = "GetMissionSequenceGroup",
                         },
                         {
                             ["SEC_EDIT"] = "GetMissionSequenceGroup",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Silent",            "True"},
+                                {"Silent",            "true"},
                                 {"DebugText",         ""},
                                 {"ObjectiveID",       ""},
                                 {"ObjectiveTipID",    ""},
@@ -332,8 +318,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "GetMissionSequenceGroup",
-                            ["SPECIAL_KEY_WORDS"] = {"ConditionTest", "GcMissionConditionTest.xml"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
+                            ["SPECIAL_KEY_WORDS"] = {"ConditionTest", "GcMissionConditionTest"},
+                            ["LINE_OFFSET"] = "1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ConditionTest", "AnyTrue"},
@@ -341,21 +327,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "GetMissionSequenceGroup",
-                            ["PRECEDING_KEY_WORDS"] = {"Versions"},
+                            ["PRECEDING_KEY_WORDS"] = {"Stages", "Stages"},
                             ["CREATE_HOES"] = "TRUE",
                         },
                         {
                             ["SEC_EDIT"] = "GetMissionSequenceGroup",
-                            ["PRECEDING_KEY_WORDS"] = {"Stages"},
-                            ["CREATE_HOES"] = "TRUE",
-                        },
-                        {
-                            ["SEC_EDIT"] = "GetMissionSequenceGroup",
-                            ["PRECEDING_KEY_WORDS"] = {"Stages"},
+                            ["PRECEDING_KEY_WORDS"] = {"Stages", "Stages"},
                             ["CREATE_HOS"] = "TRUE",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Message", "GALAXY_WARP"},
+                            ["SPECIAL_KEY_WORDS"] = {"Conditions", "GcMissionConditionMissionMessage"},
                             ["SEC_SAVE_TO"] = "GetMissionCondition",
                         },
                         {
@@ -368,11 +349,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SEC_EDIT"] = "GetMissionSequenceGroup",
                             ["PRECEDING_KEY_WORDS"] = {"Conditions"},
+                            ["CREATE_HOES"] = "TRUE",
+                        },
+                        {
+                            ["SEC_EDIT"] = "GetMissionSequenceGroup",
+                            ["PRECEDING_KEY_WORDS"] = {"Conditions"},
                             ["CREATE_HOS"] = "TRUE",
                             ["SEC_ADD_NAMED"] = "GetMissionCondition",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Stage", "GcMissionSequenceWait.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Stage", "GcMissionSequenceWait"},
                             ["SECTION_UP"] = 1,
                             ["SEC_SAVE_TO"] = "GetMissionSequenceWait",
                         },
@@ -383,7 +369,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "GetMissionSequenceWait",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time",      "0.25"},
@@ -391,18 +376,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MissionID", "TRACK_BLACKHOLE"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcGenericMissionStage.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"MissionID", "TRACK_BLACKHOLE", "Stages", "GcGenericMissionStage"},
                             ["SEC_SAVE_TO"] = "GetGenericMissionStage",
                         },
                         {
                             ["SEC_EDIT"] = "GetGenericMissionStage",
-                            ["PRECEDING_KEY_WORDS"] = {"Stages"},
+                            ["PRECEDING_KEY_WORDS"] = {"Stages", "Stages"},
                             ["CREATE_HOES"] = "TRUE",
                         },
                         {
                             ["SEC_EDIT"] = "GetGenericMissionStage",
-                            ["PRECEDING_KEY_WORDS"] = {"Stages"},
+                            ["PRECEDING_KEY_WORDS"] = {"Stages", "Stages"},
                             ["CREATE_HOS"] = "TRUE",
                         },
                         {
@@ -412,10 +396,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "GetGenericMissionStage",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Silent",            "True"},
+                                {"Silent",            "true"},
                                 {"DebugText",         ""},
                                 {"ObjectiveID",       ""},
                                 {"ObjectiveTipID",    ""},
@@ -428,7 +411,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Stage", "GcMissionSequenceReward.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Stage", "GcMissionSequenceReward"},
                             ["SECTION_UP"] = 1,
                             ["SEC_SAVE_TO"] = "GetMissionSequenceReward",
                         },
@@ -442,12 +425,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Message",  "UI_REWARD_FAILED_MSG"},
-                                {"Silent",   "True"},
+                                {"Silent",   "true"},
                                 {"DebugText", ""},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Stage", "GcMissionSequenceBroadcastMessage.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Stage", "GcMissionSequenceBroadcastMessage"},
                             ["SECTION_UP"] = 1,
                             ["SEC_SAVE_TO"] = "GetMissionSequenceBroadcastMessage",
                         },
@@ -464,11 +447,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MessageID", "M_GLP_END"},
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Conditions", "GcMissionConditionStatLevel"},
+                            ["SEC_SAVE_TO"] = "MissionConditionStatLevel",
+                        },
+                        {
+                            ["SEC_EDIT"] = "MissionConditionStatLevel",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Stat",         "GL_SCAN_FIX"},
+                                {"Level",        "0"},
+                                {"EqualityEnum", "Equal"},
+                            }
+                        },
                     },
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\ENABLINGCONDITIONSTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"MissionID", "%?MIND_ARC"},
@@ -476,7 +472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "GetMission",
-                            ["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleEntry.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Table", "GcAlienPuzzleEntry"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION"
                         },
@@ -492,6 +488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "GetMission",
+                            ["SPECIAL_KEY_WORDS"] = {"Stages", "GcGenericMissionStage"},
                             ["PRECEDING_KEY_WORDS"] = {"Versions"},
                             ["CREATE_HOES"] = "TRUE",
                         },
@@ -501,7 +498,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"MissionID",       "GPSL_SCAN"},
                                 {"MissionPriority", "0"},
-                                {"PrefixTitle",     "False"},
+                                {"PrefixTitle",     "false"},
                                 {"Weighting",       "0"},
                                 {"DebugText",       ""},
                             }
@@ -517,7 +514,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "GetRewardModifyStat",
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"List" ,"GcRewardTableItem"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "GetRewardMissionSeeded",
                         },
@@ -535,7 +532,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "GetProxyMission",
-                            ["SPECIAL_KEY_WORDS"] = {"Dialog", "GcAlienPuzzleTable.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Dialog", "GcAlienPuzzleTable"},
                             ["PRECEDING_KEY_WORDS"] = {"Table"},
                             ["CREATE_HOES"] = "TRUE",
                         },
@@ -546,7 +543,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "GetProxyMission",
-                            ["PRECEDING_KEY_WORDS"] = {"GcGenericMissionStage.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Stages", "GcGenericMissionStage"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION",
                         },
@@ -568,7 +565,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"MissionID",       "GPSL_PROXY"},
                                 {"MissionPriority", "0"},
-                                {"PrefixTitle",     "False"},
+                                {"PrefixTitle",     "false"},
                                 {"Weighting",       "0"},
                                 {"AutoStart",       "None"},
                             }
@@ -577,19 +574,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Missions"},
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["SEC_ADD_NAMED"] = "GetProxyMission",
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"GcMissionConditionStatLevel.xml"},
-                            ["SEC_SAVE_TO"] = "MissionConditionStatLevel",
-                        },
-                        {
-                            ["SEC_EDIT"] = "MissionConditionStatLevel",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Stat",         "GL_SCAN_FIX"},
-                                {"CompareStat",  ""},
-                                {"EqualityEnum", "Equal"},
-                            }
                         },
                         {
                             ["SEC_EDIT"] = "GetGenericMissionStage",
@@ -606,19 +590,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "GetGenericMissionStage",
-                            ["PRECEDING_KEY_WORDS"] = {"Stages"},
+                            ["PRECEDING_KEY_WORDS"] = {"Stages", "Stages"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "GetMissionSequenceWait",
                         },
                         {
                             ["SEC_EDIT"] = "GetGenericMissionStage",
-                            ["PRECEDING_KEY_WORDS"] = {"Stages"},
+                            ["PRECEDING_KEY_WORDS"] = {"Stages", "Stages"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "GetMissionSequenceBroadcastMessage",
                         },
                         {
                             ["SEC_EDIT"] = "GetGenericMissionStage",
-                            ["PRECEDING_KEY_WORDS"] = {"Stages"},
+                            ["PRECEDING_KEY_WORDS"] = {"Stages", "Stages"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "GetMissionSequenceReward",
                         },
@@ -626,7 +610,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\COSTTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "C_NAVDATA5"},
@@ -652,9 +636,9 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-local RewardTable             = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
-local ScanEventTablePlanet    = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
-local EnablingConditionsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["EXML_CHANGE_TABLE"]
+local RewardTable             = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
+local ScanEventTablePlanet    = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["MXML_CHANGE_TABLE"]
+local EnablingConditionsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["MXML_CHANGE_TABLE"]
 
 --Add ScanEventTablePlanet entries
 for i=1, #ScanDataTable, 1 do
@@ -691,8 +675,8 @@ for i=1, #ScanDataTable, 1 do
   ScanEventTablePlanet[#ScanEventTablePlanet+1] =
     {
         ["SEC_EDIT"] = "GetCustomScanEvent",
-        ["SPECIAL_KEY_WORDS"] = {"BuildingClass", "GcBuildingClassification.xml"},
-        ["REPLACE_TYPE"] = "ONCEINSIDE",
+        ["SPECIAL_KEY_WORDS"] = {"BuildingClass", "GcBuildingClassification"},
+        ["LINE_OFFSET"] = "1",
         ["VALUE_CHANGE_TABLE"] =
         {
             {"BuildingClass", BUILDINGCLASS},
@@ -730,7 +714,7 @@ for i=1, #MissionDataTable, 1 do
         ["SEC_EDIT"] = "GetReward",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"DoAerialScan", "True"},
+            {"DoAerialScan", "true"},
         }
     }
     end
@@ -813,8 +797,17 @@ for i = 1, #DialogDataTable do
         ["VALUE_CHANGE_TABLE"] =
         {
             {"Name",  Name},
-            {"Value", Reward},
             {"Cost",  Cost},
+        }
+    }
+     EnablingConditionsTable[#EnablingConditionsTable+1] =
+    {
+        ["SEC_EDIT"] = "GetOption",
+        ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+        ["LINE_OFFSET"] = "1",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Rewards", Reward},
         }
     }
     EnablingConditionsTable[#EnablingConditionsTable+1] =
@@ -856,7 +849,7 @@ end
         {
             {"Name",     "ALL_REQUEST_LEAVE"},
             {"Cost",     ""},
-            {"KeepOpen", "False"},
+            {"KeepOpen", "false"},
         }
     }
 
@@ -876,8 +869,8 @@ for i = #MissionDataTable, 1, -1 do
     }
     EnablingConditionsTable[#EnablingConditionsTable+1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_PROXY"},
-        ["PRECEDING_KEY_WORDS"] = {"Stages", "Stages"},
+        ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_PROXY", "Stage", "GcMissionSequenceGroup"},
+        ["PRECEDING_KEY_WORDS"] = {"Stages"},
         ["ADD_OPTION"] = "ADDafterLINE",
         ["SEC_ADD_NAMED"] = "GetGenericMissionStage",
     }

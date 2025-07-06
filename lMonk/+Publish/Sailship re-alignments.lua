@@ -45,12 +45,12 @@ local scene_tweaks = {
 	SpinningpartBack1= {					tz=-3.882										},	-- body_A engine
 	SpinningpartSpike= {					tz=-6.376										},	-- body_F spike
 }
-local ECT = { {SKW={}, REMOVE='Section'} }
+local mx_ct = { {SKW={}, REMOVE='Section'} }
 for node, scene in pairs(scene_tweaks) do
 	if scene.del then
-		ECT[1].SKW[#ECT[1].SKW+1] = {'Name', node}
+		mx_ct[1].SKW[#mx_ct[1].SKW+1] = {'Name', node}
 	else
-		ECT[#ECT+1] = {
+		mx_ct[#mx_ct+1] = {
 			SPECIAL_KEY_WORDS	= {'Name', node},
 			VALUE_CHANGE_TABLE	= {
 				{'TransX',	scene.tx or 'IGNORE'},
@@ -67,7 +67,7 @@ for node, scene in pairs(scene_tweaks) do
 	end
 end
 
-ECT[#ECT+1] = {
+mx_ct[#mx_ct+1] = {
 	SPECIAL_KEY_WORDS	= {'Name', 'SpinningpartSpike', 'Name', 'MATERIAL'},
 	VALUE_CHANGE_TABLE 	= {
 		{'Value', 'MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC/METALMATERIAL_TRIMS.MATERIAL.MBIN'}
@@ -77,13 +77,13 @@ ECT[#ECT+1] = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.sailship re-alignments.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.29',
+	NMS_VERSION			= '5.71',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{--	|sailship re-alignments|
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= ECT
+		MXML_CHANGE_TABLE	= mx_ct
 	},
 	{
 		MBIN_FILE_SOURCE	= {
@@ -96,17 +96,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			'MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPBODY_D/KITBASH_SHIP_LIGHTS1.MATERIAL.MBIN',
 			'MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPBODY_E/KITBASH_SHIP_LIGHTS1.MATERIAL.MBIN'
 		},
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				VALUE_CHANGE_TABLE 	= {
 					{'CastShadow', false},
 					{'Shader', 'SHADERS/UBERSHADER.SHADER.BIN'},
-					{'ShaderMillDataHash', 0},
+					{'ShaderMillDataHash', 0}
 				}
-			},
-			{
-				PRECEDING_KEY_WORDS = 'Flags',				
-				ADD					= '<Property value="TkMaterialFlags.xml"><Property name="MaterialFlag" value="_F10_NORECEIVESHADOW"/></Property>'
 			}
 		}
 	},
@@ -115,7 +111,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			'MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC/HQLIGHT_MAT11.MATERIAL.MBIN',
 			'MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC/HQLIGHT_MAT11_DEFAULT.MATERIAL.MBIN'
 		},
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				VALUE_CHANGE_TABLE 	= {
 					{'Map', 'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SAILS/RECTLIGHTPROC.BASE.DDS'}

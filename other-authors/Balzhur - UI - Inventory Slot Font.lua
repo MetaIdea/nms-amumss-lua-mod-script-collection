@@ -4,13 +4,13 @@ Maintainer	= ""
 ModName		= "Inventory Slot Font"
 ModCategory	= "UI"
 ModDescription	= "Changes the font style of Substances/Products amount and Tech charge to be consistent with Product XX/YY style"
-GameVersion	= "4.04"
-ModVersion	= "1.1"
+GameVersion	= "5.50"
+ModVersion	= "1.2"
 -- Thanks to lyravega for ideas!
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModAuthor.." - "..ModCategory.." - "..ModName.."-"..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= ModDescription,
+	["MOD_FILENAME"]	= ModAuthor.." - "..ModCategory.." - "..ModName..".pak",
+	["MOD_DESCRIPTION"]	= ModDescription.." v"..ModVersion,
 	["MOD_MAINTENANCE"]	= Maintainer,
 	["MOD_AUTHOR"]		= ModAuthor,
 	["LUA_AUTHOR"]		= LuaAuthor,
@@ -22,11 +22,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"]	= {"ID", "TEXTLOW"},	-- font style for inventory Substances/Products amount and Tech charge
 				["SECTION_UP"] = 1,
 				["REPLACE_TYPE"]	= "ALL",
+				["INTEGER_TO_FLOAT"]	= "FORCE",
 				["VALUE_CHANGE_TABLE"]	= {
-					{"PositionY",		"84"}, 	-- Original "82"
+					{"Position Y",		"84"}, 	-- Original "82"
 					{"Height",		"25"}, 	-- Original "32"
-					{"DropShadowOffset",	"1"}, 	-- Original "3"
-					{"OutlineSize",		"2"}, 	-- Original "4"
+					{"Drop Shadow Offset",	"1"}, 	-- Original "3"
+					{"Outline Size",	"2"}, 	-- Original "4"
 				}
 			}}
 		},{
@@ -35,6 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"]	= {"ID", "TEXTLOW"},	-- font style for inventory Substances/Products amount and Tech charge when picked
 				["SECTION_UP"] = 1,
 				["REPLACE_TYPE"]	= "ALL",
+				["INTEGER_TO_FLOAT"]	= "FORCE",
 				["VALUE_CHANGE_TABLE"]	= {
 					{"Height",		"25"}, 	-- Original "30"
 					{"PaddingX",		"0"}, 	-- Original "3"

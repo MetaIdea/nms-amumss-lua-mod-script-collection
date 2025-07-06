@@ -5,10 +5,10 @@ REFINER_LARGE  = "0" -- 2
 ---------------------
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "More Refiners.pak",
+["MOD_FILENAME"]    = "More Refiners",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Removes the refiners building limits",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID", "BUILD_REFINER1"},

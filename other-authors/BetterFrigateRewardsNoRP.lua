@@ -7,9 +7,9 @@ FRIGATE_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanit
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 	= "BetterFrigateRewardsNoRP.pak",
+["MOD_FILENAME"] 	= "BetterFrigateRewardsNoRP",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "5.21",
+["NMS_VERSION"]		= "5.50",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to units and nanites within frigate missions",
 ["MODIFICATIONS"] 	=
 	{

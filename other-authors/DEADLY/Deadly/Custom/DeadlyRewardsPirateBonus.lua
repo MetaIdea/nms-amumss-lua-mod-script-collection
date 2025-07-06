@@ -28,17 +28,20 @@ DEFEND_RAID_UNITS_MAX = 1200000 -- 300000
     ILLEGAL_PROD6: Counterfeit Circuits
     ILLEGAL_PROD7: Banned Weapons
 --]]
-R_SCRAP_GOODS_BONUS = [[
-    <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="5" />
-        <Property name="LabelID" value="" />
-        <Property name="Reward" value="GcRewardSpecificProduct.xml">
-            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+
+local function Create_GcRewardTableItem(ID, MIN, MAX, CHANCE, INDEX)
+    return [[
+<Property name="List" value="GcRewardTableItem" _index="]] .. INDEX .. [[">
+    <Property name="PercentageChance" value="]] .. CHANCE .. [[" />
+    <Property name="LabelID" value="" />
+    <Property name="Reward" value="GcRewardSpecificProduct">
+        <Property name="GcRewardSpecificProduct">
+            <Property name="Default" value="GcDefaultMissionProductEnum">
                 <Property name="DefaultProductType" value="None" />
             </Property>
-            <Property name="ID" value="ILLEGAL_PROD1" />
-            <Property name="AmountMin" value="50" />
-            <Property name="AmountMax" value="50" />
+            <Property name="ID" value="]] .. ID .. [[" />
+            <Property name="AmountMin" value="]] .. MIN .. [[" />
+            <Property name="AmountMax" value="]] .. MAX .. [[" />
             <Property name="HideAmountInMessage" value="False" />
             <Property name="ForceSpecialMessage" value="False" />
             <Property name="HideInSeasonRewards" value="False" />
@@ -47,128 +50,31 @@ R_SCRAP_GOODS_BONUS = [[
             <Property name="RequiresTech" value="" />
         </Property>
     </Property>
-    <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="5" />
-        <Property name="LabelID" value="" />
-        <Property name="Reward" value="GcRewardSpecificProduct.xml">
-            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-            </Property>
-            <Property name="ID" value="ILLEGAL_PROD2" />
-            <Property name="AmountMin" value="50" />
-            <Property name="AmountMax" value="50" />
-            <Property name="HideAmountInMessage" value="False" />
-            <Property name="ForceSpecialMessage" value="False" />
-            <Property name="HideInSeasonRewards" value="False" />
-            <Property name="Silent" value="False" />
-            <Property name="SeasonRewardListFormat" value="" />
-            <Property name="RequiresTech" value="" />
-        </Property>
-    </Property>
-    <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="5" />
-        <Property name="LabelID" value="" />
-        <Property name="Reward" value="GcRewardSpecificProduct.xml">
-            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-            </Property>
-            <Property name="ID" value="ILLEGAL_PROD3" />
-            <Property name="AmountMin" value="50" />
-            <Property name="AmountMax" value="50" />
-            <Property name="HideAmountInMessage" value="False" />
-            <Property name="ForceSpecialMessage" value="False" />
-            <Property name="HideInSeasonRewards" value="False" />
-            <Property name="Silent" value="False" />
-            <Property name="SeasonRewardListFormat" value="" />
-            <Property name="RequiresTech" value="" />
-        </Property>
-    </Property>
-    <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="5" />
-        <Property name="LabelID" value="" />
-        <Property name="Reward" value="GcRewardSpecificProduct.xml">
-            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-            </Property>
-            <Property name="ID" value="ILLEGAL_PROD4" />
-            <Property name="AmountMin" value="50" />
-            <Property name="AmountMax" value="50" />
-            <Property name="HideAmountInMessage" value="False" />
-            <Property name="ForceSpecialMessage" value="False" />
-            <Property name="HideInSeasonRewards" value="False" />
-            <Property name="Silent" value="False" />
-            <Property name="SeasonRewardListFormat" value="" />
-            <Property name="RequiresTech" value="" />
-        </Property>
-    </Property>
-    <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="5" />
-        <Property name="LabelID" value="" />
-        <Property name="Reward" value="GcRewardSpecificProduct.xml">
-            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-            </Property>
-            <Property name="ID" value="ILLEGAL_PROD5" />
-            <Property name="AmountMin" value="50" />
-            <Property name="AmountMax" value="50" />
-            <Property name="HideAmountInMessage" value="False" />
-            <Property name="ForceSpecialMessage" value="False" />
-            <Property name="HideInSeasonRewards" value="False" />
-            <Property name="Silent" value="False" />
-            <Property name="SeasonRewardListFormat" value="" />
-            <Property name="RequiresTech" value="" />
-        </Property>
-    </Property>
-    <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="5" />
-        <Property name="LabelID" value="" />
-        <Property name="Reward" value="GcRewardSpecificProduct.xml">
-            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-            </Property>
-            <Property name="ID" value="ILLEGAL_PROD6" />
-            <Property name="AmountMin" value="50" />
-            <Property name="AmountMax" value="50" />
-            <Property name="HideAmountInMessage" value="False" />
-            <Property name="ForceSpecialMessage" value="False" />
-            <Property name="HideInSeasonRewards" value="False" />
-            <Property name="Silent" value="False" />
-            <Property name="SeasonRewardListFormat" value="" />
-            <Property name="RequiresTech" value="" />
-        </Property>
-    </Property>
-    <Property value="GcRewardTableItem.xml">
-        <Property name="PercentageChance" value="5" />
-        <Property name="LabelID" value="" />
-        <Property name="Reward" value="GcRewardSpecificProduct.xml">
-            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-            </Property>
-            <Property name="ID" value="ILLEGAL_PROD7" />
-            <Property name="AmountMin" value="50" />
-            <Property name="AmountMax" value="50" />
-            <Property name="HideAmountInMessage" value="False" />
-            <Property name="ForceSpecialMessage" value="False" />
-            <Property name="HideInSeasonRewards" value="False" />
-            <Property name="Silent" value="False" />
-            <Property name="SeasonRewardListFormat" value="" />
-            <Property name="RequiresTech" value="" />
-        </Property>
-    </Property>
+</Property>
 ]]
+end
+
+local R_SCRAP_GOODS_BONUS_TABLE = {
+    Create_GcRewardTableItem("ILLEGAL_PROD1", 50, 50, 5.0, 32),
+    Create_GcRewardTableItem("ILLEGAL_PROD2", 50, 50, 5.0, 33),
+    Create_GcRewardTableItem("ILLEGAL_PROD3", 50, 50, 5.0, 34),
+    Create_GcRewardTableItem("ILLEGAL_PROD4", 50, 50, 5.0, 35),
+    Create_GcRewardTableItem("ILLEGAL_PROD5", 50, 50, 5.0, 36),
+    Create_GcRewardTableItem("ILLEGAL_PROD6", 50, 50, 5.0, 37),
+    Create_GcRewardTableItem("ILLEGAL_PROD7", 50, 50, 5.0, 38),
+}
+
+local R_SCRAP_GOODS_BONUS = table.concat(R_SCRAP_GOODS_BONUS_TABLE, "\n")
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyRewardsPirateBonus.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.46",
+    ["NMS_VERSION"]   = "5.63",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                --
-                -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
-                --
-                {
+                { -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
@@ -238,8 +144,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                         -- pirate goods bonus
                         {
-                            ["SPECIAL_KEY_WORDS"]   = { "Id", "R_SCRAP_GOODS", "List", "GcRewardTableItemList.xml" },
-                            ["PRECEDING_KEY_WORDS"] = { "List" },
+                            ["SPECIAL_KEY_WORDS"]   = { "Id", "R_SCRAP_GOODS" },
+                            ["PRECEDING_KEY_WORDS"] = { "List", "List" },
                             ["ADD_OPTION"]          = "ADDafterLINE",
                             ["ADD"]                 = R_SCRAP_GOODS_BONUS
                         },

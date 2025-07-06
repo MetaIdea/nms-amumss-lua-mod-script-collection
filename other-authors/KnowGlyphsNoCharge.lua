@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "KnowGlyphsNoCharge.pak",
 ["MOD_AUTHOR"]    = "Unclejuju",
 ["MOD_DESCRIPTION"]	= "Know all glyphs and portals do not need charging.",
-["NMS_VERSION"]   = "5.29",
+["NMS_VERSION"]   = "5.61",
 ["MODIFICATIONS"] =
     {
         {

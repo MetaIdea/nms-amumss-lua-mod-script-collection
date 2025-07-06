@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "TechPlantCollisionFix.pak",
+["MOD_FILENAME"]    = "TechPlantCollisionFix",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MOD_DESCRIPTION"] = "Fixes collision in Deuterium Rich Plants",
 ["MODIFICATIONS"]   =
     {
@@ -16,12 +16,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FUELPLANT1\ENTITIES\FUELPLANT_1.ENTITY.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\TECHPLANT\ENTITIES\TECHPLANT.ENTITY.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"NoPlayerCollide", "True"},
+                                {"NoPlayerCollide", "true"},
                             }
                         },
                     }

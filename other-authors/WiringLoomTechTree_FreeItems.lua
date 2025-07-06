@@ -1,10 +1,142 @@
+function newRewardTableEntry(entryID, rewardChoice, rewardItems) -- 新奖励表
+    local entry = ""
+    entry = entry .. [[
+        <Property name="GenericTable" value="GcGenericRewardTableEntry">
+          <Property name="Id" value="]] .. entryID .. [[" />
+          <Property name="List" value="GcRewardTableItemList">
+            <Property name="RewardChoice" value="]] .. rewardChoice .. [[" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
+            <Property name="List">
+              ]] .. rewardItems .. [[
+            </Property>
+          </Property>
+        </Property>
+    ]]
+    return entry
+end
+
+function newRewardItem(percentageChance, rewardType, arguments) -- 新奖励表元素
+    local item = ""
+    item = item .. [[
+        <Property name="List" value="GcRewardTableItem">
+          <Property name="PercentageChance" value="]] .. tostring(percentageChance) .. [[" />
+          <Property name="LabelID" value="" />
+          ]] .. newReward(rewardType, arguments) .. [[
+        </Property>
+    ]]
+    return item
+end
+
+local REWARD_BUILD = { -- 奖励表
+    ["GcRewardInventorySlots"] = function(arguments) -- 打开套装栏位扩展界面
+      local amount = arguments[1] or 1
+      return [[
+          <Property name="Reward" value="GcRewardInventorySlots">
+            <Property name="Amount" value="]] .. tostring(amount) .. [[" />
+          </Property>
+      ]]
+    end,
+    ["GcRewardShipSlot"] = function(arguments) -- 打开飞船栏位扩展界面
+        local cost = arguments[1] or "C_INV_SAL_PRODR"
+        local withAward = arguments[2] or "False"
+        local tokens = arguments[3] or 1
+        local isAlien = arguments[4] or "False"
+        return [[
+            <Property name="Reward" value="GcRewardShipSlot">
+              <Property name="GcRewardShipSlot">
+                <Property name="Cost" value="]] .. cost .. [[" />
+                <Property name="AwardCostAndOpenWindow" value="]] .. withAward .. [[" />
+                <Property name="NumTokens" value="]] .. tostring(tokens) .. [[" />
+                <Property name="IsAlien" value="]] .. isAlien .. [[" />
+                <Property name="FallbackOpenWindowIfBlocked" value="False" />
+              </Property>
+            </Property>
+        ]]
+    end,
+    ["GcRewardWeaponSlot"] = function(arguments) -- 工具栏位扩展界面
+        local cost = arguments[1] or "C_INV_WEAP_PR"
+        local withAward = arguments[2] or "False"
+        local tokens = arguments[3] or 1
+        return [[
+            <Property name="Reward" value="GcRewardWeaponSlot">
+              <Property name="GcRewardWeaponSlot">
+                <Property name="Cost" value="]] .. cost .. [[" />
+                <Property name="AwardCostAndOpenWindow" value="]] .. withAward .. [[" />
+                <Property name="NumTokens" value="]] .. tostring(tokens) .. [[" />
+              </Property>
+            </Property>
+        ]]
+    end,
+    ["GcRewardFreighterSlot"] = function(arguments) -- 打开货船栏位扩展界面
+        local cost = arguments[1] or "C_INV_FREIGHTR"
+        return [[
+            <Property name="Reward" value="GcRewardFreighterSlot">
+              <Property name="GcRewardFreighterSlot">
+                <Property name="Cost" value="]] .. cost .. [[" />
+              </Property>
+            </Property>
+        ]]
+    end,
+    ["GcRewardOpenUnlockTree"] = function(arguments) -- 打开科技树界面
+        local tree = arguments[1] or "CraftProducts"
+        return [[
+            <Property name="Reward" value="GcRewardOpenUnlockTree">
+              <Property name="GcRewardOpenUnlockTree">
+                <Property name="TreeToOpen" value="GcUnlockableItemTreeGroups">
+                  <Property name="UnlockableItemTree" value="]] .. tree .. [[" />
+                </Property>
+              </Property>
+              <Property name="PageIndexOverride" value="0" />
+            </Property>
+        ]]
+    end
+}
+function newReward(rewardType, arguments) -- 新奖励
+    if REWARD_BUILD[rewardType] then
+        return REWARD_BUILD[rewardType](arguments)
+    end
+    return ""
+end
+newReward("Prevent", "Notice Generation")
+
+function preventNoticeFunction(arguments)
+    return tostring(arguments)
+end
+preventNoticeFunction("Prevent Notice Generation")
+
+function newConsumableItem(product, reward, buttonLoc, buttonSubLoc, isCloseInventory, consumedable) -- 新消耗品
+    return [[
+        <Property name="Table" value="GcConsumableItem">
+          <Property name="ID" value="]] .. product .. [[" />
+          <Property name="RewardID" value="]] .. reward .. [[" />
+          <Property name="TutorialRewardID" value="" />
+          <Property name="ButtonLocID" value="]] .. buttonLoc .. [[" />
+          <Property name="ButtonSubLocID" value="]] .. buttonSubLoc .. [[" />
+          <Property name="CloseInventoryWhenUsed" value="]] .. isCloseInventory .. [[" />
+          <Property name="AudioEventOnOpen" value="GcAudioWwiseEvents">
+            <Property name="AkEvent" value="UI_PICKUP_NITROGENPLANT" />
+          </Property>
+          <Property name="RewardFailedLocID" value="INTRCT_NOROOM_L" />
+          <Property name="DestroyItemWhenConsumed" value="]] .. consumedable .. [[" />
+          <Property name="AddCommunityTierClassIcon" value="False" />
+          <Property name="SuppressResourceMessage" value="False" />
+          <Property name="CustomOSD" value="" />
+          <Property name="RequiresMissionActive" value="" />
+          <Property name="OverrideMissionMustBeSelected" value="False" />
+          <Property name="RewardOverrideTable" />
+        </Property>
+    ]]
+end
+
 function newRequirements(ingredient1, ingredient1Type, ingredient1Amount, ingredient2, ingredient2Type, ingredient2Amount, ingredient3, ingredient3Type, ingredient3Amount)
     local requirements = ""
     requirements = requirements .. [[
       <Property name="Requirements">
-        <Property value="GcTechnologyRequirement.xml">
+        <Property value="GcTechnologyRequirement">
           <Property name="ID" value="]] .. ingredient1 .. [[" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="]] .. ingredient1Type .. [[" />
           </Property>
           <Property name="Amount" value="]] .. tostring(ingredient1Amount) .. [[" />
@@ -12,9 +144,9 @@ function newRequirements(ingredient1, ingredient1Type, ingredient1Amount, ingred
 ]]
     if ingredient2 ~= nil then
         requirements = requirements .. [[
-        <Property value="GcTechnologyRequirement.xml">
+        <Property value="GcTechnologyRequirement">
           <Property name="ID" value="]] .. ingredient2 .. [[" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="]] .. ingredient2Type .. [[" />
           </Property>
           <Property name="Amount" value="]] .. tostring(ingredient2Amount) .. [[" />
@@ -23,9 +155,9 @@ function newRequirements(ingredient1, ingredient1Type, ingredient1Amount, ingred
     end
     if ingredient3 ~= nil then
         requirements = requirements .. [[
-        <Property value="GcTechnologyRequirement.xml">
+        <Property value="GcTechnologyRequirement">
           <Property name="ID" value="]] .. ingredient3 .. [[" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="]] .. ingredient3Type .. [[" />
           </Property>
           <Property name="Amount" value="]] .. tostring(ingredient3Amount) .. [[" />
@@ -41,10 +173,10 @@ end
 function newUnlockableItemTree(title, costType, rootNodeUnlockableItem, treeNodes)
     local tree = ""
     tree = tree .. [[
-        <Property value="GcUnlockableItemTree.xml">
+        <Property name="Trees" value="GcUnlockableItemTree">
           <Property name="Title" value="]] .. title .. [[" />
           <Property name="CostTypeID" value="]] .. costType .. [[" />
-          <Property name="Root" value="GcUnlockableItemTreeNode.xml">
+          <Property name="Root" value="GcUnlockableItemTreeNode">
             <Property name="Unlockable" value="]] .. rootNodeUnlockableItem .. [[" />
             <Property name="Children">
               ]] .. treeNodes .. [[
@@ -58,7 +190,7 @@ end
 function newUnlockableItemTreeNode(unlockableItem, childrenNodes)
     local tree = ""
     tree = tree .. [[
-<Property value="GcUnlockableItemTreeNode.xml">
+<Property value="GcUnlockableItemTreeNode">
   <Property name="Unlockable" value="]] .. unlockableItem .. [[" />]]
     if childrenNodes ~= nil then
         tree = tree .. [[
@@ -76,61 +208,192 @@ function newUnlockableItemTreeNode(unlockableItem, childrenNodes)
     return tree
 end
 
-function newLocalization(locID, language, locString)
-    local localization = ""
-    localization = localization .. [[
-    <Property value="TkLocalisationEntry.xml">
-      <Property name="Id" value="]] .. locID ..[[" />]]
-    if language == "English" then
-        localization = localization .. [[
-      <Property name="English" value="]] .. locString .. [[" />
-]]
-    else
-        localization = localization .. [[
-      <Property name="English" value="" />
-]]
-    end
-    localization = localization .. [[
-      <Property name="French" value="" />
-      <Property name="Italian" value="" />
-      <Property name="German" value="" />
-      <Property name="Spanish" value="" />
-      <Property name="Russian" value="" />
-      <Property name="Polish" value="" />
-      <Property name="Dutch" value="" />
-      <Property name="Portuguese" value="" />
-      <Property name="LatinAmericanSpanish" value="" />
-      <Property name="BrazilianPortuguese" value="" />
-]]
-    if language == "SimplifiedChinese" then
-        localization = localization .. [[
-      <Property name="SimplifiedChinese" value="]] .. locString .. [[" />
-]]
-    else
-        localization = localization .. [[
-      <Property name="SimplifiedChinese" value="" />
-]]
-    end
-    localization = localization .. [[
-      <Property name="TraditionalChinese" value="" />
-      <Property name="TencentChinese" value="" />
-      <Property name="Korean" value="" />
-      <Property name="Japanese" value="" />
-      <Property name="USEnglish" value="" />
-    </Property>
-]]
-    return localization
-end
-
-
+local REWARDS = ""
+local CONSUMABLES = ""
 local UNLOCKABLE_ITEM_TREES = ""
 local REQUIREMENTS = {}
 local RECIPECOST = {}
-local LOCALIZATIONS = {}
-LOCALIZATIONS["English"] = ""
-LOCALIZATIONS["SimplifiedChinese"] = ""
 
--- 新科技树
+REWARDS = REWARDS .. newRewardTableEntry("R_ZNE_SUITINV", "GiveAll", newRewardItem(100, "GcRewardInventorySlots", {})) -- 快捷栏位扩展
+REWARDS = REWARDS .. newRewardTableEntry("R_ZNE_SHIPINV", "GiveAll", newRewardItem(100, "GcRewardShipSlot", {}))
+REWARDS = REWARDS .. newRewardTableEntry("R_ZNE_WEAPINV", "GiveAll", newRewardItem(100, "GcRewardWeaponSlot", {}))
+REWARDS = REWARDS .. newRewardTableEntry("R_ZNE_FREIINV", "GiveAll", newRewardItem(100, "GcRewardFreighterSlot", {}))
+REWARDS = REWARDS .. newRewardTableEntry("R_ZNEM_TREE", "GiveAll", newRewardItem(100, "GcRewardOpenUnlockTree", {"Test"})) -- 打开卷线科技树
+
+CONSUMABLES = CONSUMABLES .. newConsumableItem("SUIT_INV_TOKEN", "R_ZNE_SUITINV", "UI_SLOT_LABEL", "UI_SLOT_SUBLABEL", "True", "True")
+CONSUMABLES = CONSUMABLES .. newConsumableItem("SHIP_INV_TOKEN", "R_ZNE_SHIPINV", "UI_SLOT_LABEL", "UI_SLOT_SUBLABEL", "True", "False")
+CONSUMABLES = CONSUMABLES .. newConsumableItem("WEAP_INV_TOKEN", "R_ZNE_WEAPINV", "UI_SLOT_LABEL", "UI_SLOT_SUBLABEL", "True", "False")
+CONSUMABLES = CONSUMABLES .. newConsumableItem("FREI_INV_TOKEN", "R_ZNE_FREIINV", "UI_SLOT_LABEL", "UI_SLOT_SUBLABEL", "True", "False")
+CONSUMABLES = CONSUMABLES .. newConsumableItem("TECH_COMP", "R_ZNEM_TREE", "UI_WL_LABEL", "UI_WL_SUBLABEL", "True", "False")
+
+-- 新•卷线科技树 v2.0
+--[[ WIP
+- 卷线核心 WiringLoom Core
+    - 卷线器
+        - 维修套件
+            - 防御便函
+                - 伪造护照
+                - 回收玻璃
+                    - 光耀碎片
+                        - 反转镜面
+                    - 结晶心脏
+                        - 谐波脑部
+            - 可疑的包裹（货物）
+                - 可疑的包裹（技术）
+                - 可疑的包裹（武器）
+        - 导航数据
+            - 星图（兴趣点）
+                - 星图（求救信号）
+                    - 紧急信号扫描仪
+                        - 异象探测器
+                - 星图（前哨基站）
+                    - 护卫边界地图
+                        - 回音定位器
+                - 星图（外星遗迹）
+            - 已回收的数据
+                - 工厂超控单元
+                    - 空间站超控
+                - 已回收的护卫舰模块
+            - 吉克小吸
+                - 维吉恩匕首
+                    - 古代钥匙
+                - 集会方形箱
+                    - 三叉戟钥匙
+            - 吉克遗物
+                - 维吉恩雕像
+                - 科尔瓦克斯外壳
+        - 套装扩展装置
+            - 储备扩充
+                - 货物舱壁
+                - 腐化的囊
+            - 多用途工具扩展栏位
+- 精密构件 Precision Mechanism
+    - 漩涡立方
+        - 四足机甲伺服系统
+            - 强化外壳驱动器
+                - 透明质脑部
+                    - 航空母舰人工智能碎片
+        - 曾经有用的弹簧
+            - 几个轮齿
+                - 强化管道
+                    - 隔热板
+                        - 合金废料
+        - 纳米电缆卷
+            - 回收电路
+                - 亚原子调节器
+                    - 压缩铟碎片
+                        - 飞船AI阀门
+        - 纳米管箱
+            - 自我修复海瑞蒂姆
+                - 光学溶剂
+                    - 五维环面
+                        - 超导纤维
+        - 破译的用户资料
+            - 星绸
+                - 星露
+                    - 离子球体
+                        - 传送协调器
+        - 巨大的金属齿轮
+            - 不粘活塞
+                - 网孔去耦器
+                    - 全息曲柄
+                        - 向量压缩机
+        - 电火花罐
+            - 工业级电池
+                - 电阻凝胶
+                    - 试验性能源液体
+                        - 融合核心
+        - 去味瓶
+            - 中子显微镜
+                - 不稳定注射器
+                    - 活体导管
+                        - 神经导管
+        - 尘土
+            - 未提炼黄铁脂
+                - 溴化盐
+                    - 五彩锆
+                        - 再结晶弧形水晶
+        - 报废电路板
+            - 焊接皂
+                - 离子电容器
+                    - 自动定位单元
+                        - 量子加速器
+        - 血盐
+            - 失窃的DNA样本
+                - 月之以太
+                    - 格拉格拉
+            - 伪造电路
+                - 违禁武器
+                    - 初代遗物
+- 技术制造 Technology Production
+    - 记忆碎片
+        - S级维生系统
+            - S级运动系统
+            - X级危险防护
+                - S级防御系统
+        - S级发射推进器
+            - S级脉冲推进器
+                - S级超光速推进
+            - S级偏导护盾
+                - S级相位光束
+                    - S级回旋加速弩炮
+            - S级光子大炮
+                - S级红外切割加速器
+                - S级正电子冲击波
+        - S级分析面甲
+            - S级开采激光
+                - S级火焰标枪
+            - S级闪电离子发射器
+                - S级脉冲喷射器
+                    - S级散射爆破器
+            - S级中子大炮
+                - S级等离子发射器
+                    - S级地质大炮
+        - S级聚变发动机
+            - S级强化艇推进器
+                - S级强化艇开采激光
+                - S级悬挂大炮
+            - S级代达罗斯引擎
+                - S级弥诺陶洛斯激光
+                - S级弥诺陶洛斯大炮
+                    - S级弥诺陶洛斯火焰喷射器
+            - S级洪堡驱动器
+                - S级大鹦鹉螺大炮
+        - 护卫套装碎片
+            - 护卫武器碎片
+            - 回收套装模块
+        - 心灵之卵
+            - 叶绿体膜植入
+                - 盐水外壳
+            - 虫洞脑植入
+                - 神经护盾植入
+            - S级神经线路板
+                - S级搏动心脏
+                    - S级奇点主茎
+                - S级尖叫抑制器
+                    - S级喷口
+                    - S级移植眼
+- 失落之物 The Lost Things
+    - 史学剂量仪
+        - 神秘信标
+            - 烟花包
+        - 档案馆分流植入物
+            - 脏腑合成器
+                - 星种
+                - 反抗者的标记
+        - 被劫持的激光发射器
+            - 符文棱镜
+                - 焚化者
+            - 护卫加农炮
+                - 光电核心
+                - 移码投射器
+        - 大气控制单元
+            - 奇点引擎
+                - 奇异包裹（飞船）
+                - 奇异包裹（多用途工具）
+]]
+
+-- 卷线科技树 v1.0
 --[[
 - 卷线器
     - 维修套件
@@ -152,42 +415,45 @@ LOCALIZATIONS["SimplifiedChinese"] = ""
     - 套装扩展装置
         - 储备扩充
             - 货物舱壁
+            - 光电核心
         - 多用途工具扩展栏位
             - 焚化者
 ]]
 
-REQUIREMENTS["TECH_COMP"] = newRequirements("LAND1", "Substance", 1)                                -- 卷线器
+REQUIREMENTS["TECH_COMP"] = newRequirements("LAND1", "Substance", 1)                    -- 卷线器
 RECIPECOST["TECH_COMP"] = 1
-REQUIREMENTS["REPAIRKIT"] = newRequirements("LAND1", "Substance", 1)                                -- 维修套件
+REQUIREMENTS["REPAIRKIT"] = newRequirements("LAND1", "Substance", 1)                    -- 维修套件
 RECIPECOST["REPAIRKIT"] = 1
-REQUIREMENTS["ILLEGAL_PROD6"] = newRequirements("LAND1", "Substance", 1)                            -- 伪造电路
+REQUIREMENTS["ILLEGAL_PROD6"] = newRequirements("LAND1", "Substance", 1)                -- 伪造电路
 RECIPECOST["ILLEGAL_PROD6"] = 1
-REQUIREMENTS["SALVAGE_TECH10"] = newRequirements("LAND1", "Substance", 1)                           -- 飞船AI阀门
+REQUIREMENTS["SALVAGE_TECH10"] = newRequirements("LAND1", "Substance", 1)               -- 飞船AI阀门
 RECIPECOST["SALVAGE_TECH10"] = 1
-REQUIREMENTS["SENTINEL_LOOT"] = newRequirements("LAND1", "Substance", 1)                            -- 回收玻璃
+REQUIREMENTS["SENTINEL_LOOT"] = newRequirements("LAND1", "Substance", 1)                -- 回收玻璃
 RECIPECOST["SENTINEL_LOOT"] = 1
-REQUIREMENTS["SHIPBRAIN_CLEAN"] = newRequirements("LAND1", "Substance", 1)                          -- 谐波脑部
+REQUIREMENTS["SHIPBRAIN_CLEAN"] = newRequirements("LAND1", "Substance", 1)              -- 谐波脑部
 RECIPECOST["SHIPBRAIN_CLEAN"] = 1
-REQUIREMENTS["NAV_DATA"] = newRequirements("LAND1", "Substance", 1)                                 -- 导航数据
+REQUIREMENTS["NAV_DATA"] = newRequirements("LAND1", "Substance", 1)                     -- 导航数据
 RECIPECOST["NAV_DATA"] = 1
-REQUIREMENTS["BP_SALVAGE"] = newRequirements("LAND1", "Substance", 1)                               -- 已回收的数据
+REQUIREMENTS["BP_SALVAGE"] = newRequirements("LAND1", "Substance", 1)                   -- 已回收的数据
 RECIPECOST["BP_SALVAGE"] = 1
-REQUIREMENTS["FRIG_TOKEN"] = newRequirements("LAND1", "Substance", 1)                               -- 已回收的护卫舰模块
+REQUIREMENTS["FRIG_TOKEN"] = newRequirements("LAND1", "Substance", 1)                   -- 已回收的护卫舰模块
 RECIPECOST["FRIG_TOKEN"] = 1
-REQUIREMENTS["FACT_TOKEN"] = newRequirements("LAND1", "Substance", 1)                               -- 工厂超控单元
+REQUIREMENTS["FACT_TOKEN"] = newRequirements("LAND1", "Substance", 1)                   -- 工厂超控单元
 RECIPECOST["FACT_TOKEN"] = 1
-REQUIREMENTS["STATION_KEY"] = newRequirements("LAND1", "Substance", 1)                              -- 空间站超控
+REQUIREMENTS["STATION_KEY"] = newRequirements("LAND1", "Substance", 1)                  -- 空间站超控
 RECIPECOST["STATION_KEY"] = 1
-REQUIREMENTS["SUIT_INV_TOKEN"] = newRequirements("LAND1", "Substance", 1)                           -- 套装扩展装置
+REQUIREMENTS["SUIT_INV_TOKEN"] = newRequirements("LAND1", "Substance", 1)               -- 套装扩展装置
 RECIPECOST["SUIT_INV_TOKEN"] = 1
-REQUIREMENTS["SHIP_INV_TOKEN"] = newRequirements("LAND1", "Substance", 1)                           -- 储备扩充
+REQUIREMENTS["SHIP_INV_TOKEN"] = newRequirements("LAND1", "Substance", 1)               -- 储备扩充
 RECIPECOST["SHIP_INV_TOKEN"] = 1
-REQUIREMENTS["FREI_INV_TOKEN"] = newRequirements("LAND1", "Substance", 1)                           -- 货物舱壁
+REQUIREMENTS["FREI_INV_TOKEN"] = newRequirements("LAND1", "Substance", 1)               -- 货物舱壁
 RECIPECOST["FREI_INV_TOKEN"] = 1
-REQUIREMENTS["WEAP_INV_TOKEN"] = newRequirements("LAND1", "Substance", 1)                           -- 多用途工具扩展栏位
+REQUIREMENTS["WEAP_INV_TOKEN"] = newRequirements("LAND1", "Substance", 1)               -- 多用途工具扩展栏位
 RECIPECOST["WEAP_INV_TOKEN"] = 1
---                                                                                                  -- 焚化者（已有配方）
+REQUIREMENTS["FLAME"] = newRequirements("LAND1", "Substance", 1)                        -- 焚化者（已有配方）
 RECIPECOST["FLAME"] = 1
+REQUIREMENTS["PHOTONIX_CORE"] = newRequirements("LAND1", "Substance", 1)                -- 光电核心（已有配方）
+RECIPECOST["PHOTONIX_CORE"] = 1
 UNLOCKABLE_ITEM_TREES = newUnlockableItemTree("UI_WLTree_Title", "SPECIALS", "TECH_COMP",
     newUnlockableItemTreeNode("REPAIRKIT",
         newUnlockableItemTreeNode("ILLEGAL_PROD6",
@@ -207,27 +473,18 @@ UNLOCKABLE_ITEM_TREES = newUnlockableItemTree("UI_WLTree_Title", "SPECIALS", "TE
                 newUnlockableItemTreeNode("STATION_KEY")))
 ) ..newUnlockableItemTreeNode("SUIT_INV_TOKEN",
         newUnlockableItemTreeNode("SHIP_INV_TOKEN",
-            newUnlockableItemTreeNode("FREI_INV_TOKEN")
+            newUnlockableItemTreeNode("FREI_INV_TOKEN"
+        ) ..newUnlockableItemTreeNode("PHOTONIX_CORE")
     ) ..newUnlockableItemTreeNode("WEAP_INV_TOKEN",
             newUnlockableItemTreeNode("FLAME"))
 )
 )
 
-LOCALIZATIONS["English"] = LOCALIZATIONS["English"] .. newLocalization("UI_WL_LABEL", "English", "Explore thoughts")
-LOCALIZATIONS["English"] = LOCALIZATIONS["English"] .. newLocalization("UI_WL_SUBLABEL", "English", "Research the Wiring Loom Tech")
-LOCALIZATIONS["English"] = LOCALIZATIONS["English"] .. newLocalization("UI_ModTree_Title", "English", "Mod Tech Trees")
-LOCALIZATIONS["English"] = LOCALIZATIONS["English"] .. newLocalization("UI_WLTree_Title", "English", "Wiring Loom Tech")
-
-LOCALIZATIONS["SimplifiedChinese"] = LOCALIZATIONS["SimplifiedChinese"] .. newLocalization("UI_WL_LABEL", "SimplifiedChinese", "探入思绪")
-LOCALIZATIONS["SimplifiedChinese"] = LOCALIZATIONS["SimplifiedChinese"] .. newLocalization("UI_WL_SUBLABEL", "SimplifiedChinese", "研究卷线科技")
-LOCALIZATIONS["SimplifiedChinese"] = LOCALIZATIONS["SimplifiedChinese"] .. newLocalization("UI_ModTree_Title", "SimplifiedChinese", "模组科技树")
-LOCALIZATIONS["SimplifiedChinese"] = LOCALIZATIONS["SimplifiedChinese"] .. newLocalization("UI_WLTree_Title", "SimplifiedChinese", "卷线科技")
-
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"] = "ZNE_WiringLoomTechTree_FreeItems.pak",
+    ["MOD_FILENAME"] = "WiringLoomTechTree",
     ["MOD_AUTHOR"] = "ZNECrode",
     ["LUA_AUTHOR"] = "ZNECrode",
-    ["NMS_VERSION"] = "5.21",
+    ["NMS_VERSION"] = "5.51",
     ["MOD_DESCRIPTION"] = "Added a whole new unlockable item tree",
     ["MODIFICATIONS"] = {
         {
@@ -236,8 +493,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\UNLOCKABLEITEMTREES.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Title","TEST"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcUnlockableItemTree.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Title","TEST", "Trees", "GcUnlockableItemTree"},
                             ["SECTION_ACTIVE"] = 1,
 							["REMOVE"] = "SECTION",
                         },
@@ -254,7 +510,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcUnlockableTreeCostType.xml"},
+                            ["SKW"] = {"CostTypes", "GcUnlockableTreeCostType"},
                             ["SECTION_ACTIVE"] = 3,
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"TypeOfCost","Substance"},
@@ -268,29 +524,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
-                            ["ADD"] = [[
-    <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="R_ZNEMOD_TREE" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="IncrementStat" value="" />
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardOpenUnlockTree.xml">
-              <Property name="TreeToOpen" value="GcUnlockableItemTreeGroups.xml">
-                <Property name="UnlockableItemTree" value="Test" />
-              </Property>
-              <Property name="PageIndexOverride" value="0" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-]]
+                            ["ADD"] = REWARDS
                         }
                     }
                 },
@@ -299,27 +533,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Table"},
-                            ["ADD"] = [[
-    <Property value="GcConsumableItem.xml">
-      <Property name="ID" value="TECH_COMP" />
-      <Property name="RewardID" value="R_ZNEMOD_TREE" />
-      <Property name="TutorialRewardID" value="" />
-      <Property name="ButtonLocID" value="UI_WL_LABEL" />
-      <Property name="ButtonSubLocID" value="UI_WL_SUBLABEL" />
-      <Property name="CloseInventoryWhenUsed" value="True" />
-      <Property name="AudioEventOnOpen" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="UI_PICKUP_NITROGENPLANT" />
-      </Property>
-      <Property name="RewardFailedLocID" value="INTRCT_NOROOM_L" />
-      <Property name="DestroyItemWhenConsumed" value="False" />
-      <Property name="AddCommunityTierClassIcon" value="False" />
-      <Property name="SuppressResourceMessage" value="False" />
-      <Property name="CustomOSD" value="" />
-      <Property name="RequiresMissionActive" value="" />
-      <Property name="OverrideMissionMustBeSelected" value="False" />
-      <Property name="RewardOverrideTable" />
-    </Property>
-]]
+                            ["ADD"] = CONSUMABLES
                         }
                     }
                 },
@@ -332,7 +546,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							{
 								{"FragmentCost", tostring(RECIPECOST["FLAME"])}
 							}
-						}
+						},
+                        { -- 光电核心
+                            ["SPECIAL_KEY_WORDS"] = {"ID","PHOTONIX_CORE","StatsType","Ship_PulseDrive_MiniJumpFuelSpending"},
+                            ["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"Bonus","0.25"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","PHOTONIX_CORE"},
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"FragmentCost", tostring(RECIPECOST["PHOTONIX_CORE"])}
+                            }
+                        }
                     }
                 },
                 {
@@ -625,26 +852,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"IsCraftable",	"True"},
 							}
 						}
-                    }
-                },
-                { -- Localizations
-                    ["MBIN_FILE_SOURCE"] = "LANGUAGE\NMS_LOC7_ENGLISH.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Table"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] = LOCALIZATIONS["English"]
-                        }
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "LANGUAGE\NMS_LOC7_SIMPLIFIEDCHINESE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Table"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] = LOCALIZATIONS["SimplifiedChinese"]
-                        }
                     }
                 }
             }

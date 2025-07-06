@@ -4052,10 +4052,9 @@ BiomeDataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Jasondude and Exosolar's Hybrid Stratos.pak",
+["MOD_FILENAME"]            = "_Jasondude and Exosolar's Hybrid Stratos",
 ["MOD_AUTHOR"]              = "Exosolar and Jasondude and Babscoole",
-["NMS_VERSION"]             = "5.29",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "5.73",
 ["MODIFICATIONS"]           =
     {
         {
@@ -4063,15 +4062,15 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "GCGRAPHICSGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LightShaftProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LightShaftScattering", "0.30"},
-                                {"LightShaftBottom",     "0.05"},
-                                {"LightShaftTop",        "0.40"},
+                                {"LightShaft Scattering", "0.30"},
+                                {"LightShaft Bottom",     "0.05"},
+                                {"LightShaft Top",        "0.40"},
                             }
                         },
                         {
@@ -4115,7 +4114,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "GCSKYGLOBALS.GLOBALS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -4138,79 +4137,81 @@ NMS_MOD_DEFINITION_CONTAINER =
 function GetColours(SW,R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,R6,G6,B6,A6,R7,G7,B7,A7,x8,y8,z8,R9,G9,B9,A9,R10,G10,B10,A10,R11,G11,B11,A11)
     return
 [[
-      <Property value="GcPlanetWeatherColourData.xml">
+      <Property name="Settings" value="GcPlanetWeatherColourData">
         <Property name="SelectionWeighting" value="]].. SW ..[[" />
-        <Property name="SkyColour" value="Colour.xml">
+        <Property name="SkyColour">
           <Property name="R" value="]].. R1 ..[[" />
           <Property name="G" value="]].. G1 ..[[" />
           <Property name="B" value="]].. B1 ..[[" />
           <Property name="A" value="]].. A1 ..[[" />
         </Property>
-        <Property name="SkyUpperColour" value="Colour.xml">
+        <Property name="SkyUpperColour">
           <Property name="R" value="]].. R2 ..[[" />
           <Property name="G" value="]].. G2 ..[[" />
           <Property name="B" value="]].. B2 ..[[" />
           <Property name="A" value="]].. A2 ..[[" />
         </Property>
-        <Property name="SkySolarColour" value="Colour.xml">
+        <Property name="SkySolarColour">
           <Property name="R" value="]].. R3 ..[[" />
           <Property name="G" value="]].. G3 ..[[" />
           <Property name="B" value="]].. B3 ..[[" />
           <Property name="A" value="]].. A3 ..[[" />
         </Property>
-        <Property name="HorizonColour" value="Colour.xml">
+        <Property name="HorizonColour">
           <Property name="R" value="]].. R4 ..[[" />
           <Property name="G" value="]].. G4 ..[[" />
           <Property name="B" value="]].. B4 ..[[" />
           <Property name="A" value="]].. A4 ..[[" />
         </Property>
-        <Property name="SunColour" value="Colour.xml">
+        <Property name="SunColour">
           <Property name="R" value="]].. R5 ..[[" />
           <Property name="G" value="]].. G5 ..[[" />
           <Property name="B" value="]].. B5 ..[[" />
           <Property name="A" value="]].. A5 ..[[" />
         </Property>
-        <Property name="FogColour" value="Colour.xml">
+        <Property name="FogColour">
           <Property name="R" value="]].. R6 ..[[" />
           <Property name="G" value="]].. G6 ..[[" />
           <Property name="B" value="]].. B6 ..[[" />
           <Property name="A" value="]].. A6 ..[[" />
         </Property>
-        <Property name="HeightFogColour" value="Colour.xml">
+        <Property name="HeightFogColour">
           <Property name="R" value="]].. R7 ..[[" />
           <Property name="G" value="]].. G7 ..[[" />
           <Property name="B" value="]].. B7 ..[[" />
           <Property name="A" value="]].. A7 ..[[" />
         </Property>
-        <Property name="SkyGradientSpeed" value="Vector3f.xml">
-          <Property name="x" value="]].. x8 ..[[" />
-          <Property name="y" value="]].. y8 ..[[" />
-          <Property name="z" value="]].. z8 ..[[" />
+        <Property name="SkyGradientSpeed">
+          <Property name="X" value="]].. x8 ..[[" />
+          <Property name="Y" value="]].. y8 ..[[" />
+          <Property name="Z" value="]].. z8 ..[[" />
         </Property>
-        <Property name="LightColour" value="Colour.xml">
+        <Property name="LightColour">
           <Property name="R" value="]].. R9 ..[[" />
           <Property name="G" value="]].. G9 ..[[" />
           <Property name="B" value="]].. B9 ..[[" />
           <Property name="A" value="]].. A9 ..[[" />
         </Property>
-        <Property name="CloudColour1" value="Colour.xml">
+        <Property name="CloudColour1">
           <Property name="R" value="]].. R10 ..[[" />
           <Property name="G" value="]].. G10 ..[[" />
           <Property name="B" value="]].. B10 ..[[" />
           <Property name="A" value="]].. A10 ..[[" />
         </Property>
-        <Property name="CloudColour2" value="Colour.xml">
+        <Property name="CloudColour2">
           <Property name="R" value="]].. R11 ..[[" />
           <Property name="G" value="]].. G11 ..[[" />
           <Property name="B" value="]].. B11 ..[[" />
           <Property name="A" value="]].. A11 ..[[" />
         </Property>
+				<Property name="CirrusCloudDensity" value="0.300000" />
+				<Property name="GasGiantAtmosphereID" value="" />
       </Property>
 ]]
 end
 
 function CreateColoursProperty(PaletteColours)
-    local PropertiesString = ""
+    local PropertiesString = {}
 
     for j = 1, #PaletteColours do
         local SW  = PaletteColours[j][1]
@@ -4257,9 +4258,9 @@ function CreateColoursProperty(PaletteColours)
         local G11 = PaletteColours[j][42]
         local B11 = PaletteColours[j][43]
         local A11 = PaletteColours[j][44]
-        PropertiesString = PropertiesString..GetColours(SW, R1, G1, B1, A1, R2, G2, B2, A2, R3, G3, B3, A3, R4, G4, B4, A4, R5, G5, B5, A5, R6, G6, B6, A6, R7, G7, B7, A7, x8, y8, z8, R9, G9, B9, A9, R10, G10, B10, A10, R11, G11, B11, A11)
+        table.insert(PropertiesString,GetColours(SW, R1, G1, B1, A1, R2, G2, B2, A2, R3, G3, B3, A3, R4, G4, B4, A4, R5, G5, B5, A5, R6, G6, B6, A6, R7, G7, B7, A7, x8, y8, z8, R9, G9, B9, A9, R10, G10, B10, A10, R11, G11, B11, A11))
     end
-return PropertiesString
+return table.concat(PropertiesString)
 end
 
 local BaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
@@ -4271,10 +4272,10 @@ for i = 1, #DataTable do
     BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
         ["MBIN_FILE_SOURCE"] = FileSource,
-        ["EXML_CHANGE_TABLE"] =
+        ["MXML_CHANGE_TABLE"] =
         {
             {
-                ["SPECIAL_KEY_WORDS"] = {"GenericSettings", "GcWeatherColourSettingList.xml"},
+                ["SPECIAL_KEY_WORDS"] = {"GenericSettings", "GcWeatherColourSettingList"},
                 ["PRECEDING_KEY_WORDS"] = {"Settings"},
                 ["ADD_OPTION"] = "ADDendSECTION",
                 ["ADD"] = CreateColoursProperty(PaletteColours)
@@ -4291,10 +4292,10 @@ for i = 1, #BiomeDataTable do
     BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
         ["MBIN_FILE_SOURCE"] = FileSource,
-        ["EXML_CHANGE_TABLE"] =
+        ["MXML_CHANGE_TABLE"] =
         {
             {
-                ["SPECIAL_KEY_WORDS"] = {Palette, "GcWeatherColourSettingList.xml"},
+                ["SPECIAL_KEY_WORDS"] = {Palette, "GcWeatherColourSettingList"},
                 ["PRECEDING_KEY_WORDS"] = {"Settings"},
                 ["CREATE_HOS"] = "TRUE",
                 ["ADD_OPTION"] = "ADDendSECTION",

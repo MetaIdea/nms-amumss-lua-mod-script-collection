@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "UndamagedInterceptor.pak",
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "4.21",
+["NMS_VERSION"]				= "5.50",
 ["MOD_DESCRIPTION"]			= "Sentinel Interceptors don't need to be repaired",
 ["MODIFICATIONS"] 			=
 	{
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["SKW"]		= {"Template", "GcMaintenanceComponentData.xml"},
+							["SKW"]		= {"Components", "GcMaintenanceComponentData"},
 							["REMOVE"]	= "SECTION",
 						},
 					}

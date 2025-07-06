@@ -1,7 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 		= "_Winder_Inertia_Drifto.pak",
-["MOD_DESCRIPTION"]		= "Makes rocket boots better",
+["MOD_FILENAME"] 		= "+Winder_Inertia_Drifto",
 ["MOD_AUTHOR"]			= "WinderTP",
 ["NMS_VERSION"]			= "3.38.0.1",
 ["MODIFICATIONS"] 		= 
@@ -10,11 +9,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCVEHICLEGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"]	= 
+					["MBIN_FILE_SOURCE"] 	= "GCVEHICLEGLOBALS.GLOBAL.EXML",
+					["MXML_CHANGE_TABLE"]	= 
 					{
 						{
-							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["INTEGER_TO_FLOAT"]	= "PRESERVE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MiningLaserDrainSpeed",				"0.25"	},	
@@ -31,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "BIKE"},
-							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["INTEGER_TO_FLOAT"]	= "PRESERVE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"UnderwaterEnginePower",				"4"		},	
@@ -45,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "MED_BUGGY"},
-							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["INTEGER_TO_FLOAT"]	= "PRESERVE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"UnderwaterEnginePower",				"4"		},	
@@ -67,7 +66,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "TRUCK"},
-							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["INTEGER_TO_FLOAT"]	= "PRESERVE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"UnderwaterEnginePower",				"3.5"	},	
@@ -85,7 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "WHEELEDBIKE"},
-							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["INTEGER_TO_FLOAT"]	= "PRESERVE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"UnderwaterEnginePower",				"3.5"	},	
@@ -104,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "SUBMARINE"},
-							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["INTEGER_TO_FLOAT"]	= "PRESERVE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"UnderwaterEnginePower",				"8.5"	},	
@@ -120,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "MECH"},
-							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["INTEGER_TO_FLOAT"]	= "PRESERVE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"VehicleJumpForce",					"1650"	},

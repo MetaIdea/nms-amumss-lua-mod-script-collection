@@ -8,11 +8,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
+["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 	{
 		["MBIN_FILE_SOURCE"] 	= {"GCPLAYERGLOBALS.GLOBAL.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["INTEGER_TO_FLOAT"] = "FORCE",
@@ -43,4 +44,3 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	}
 }}}}
-

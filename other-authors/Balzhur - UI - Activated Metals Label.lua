@@ -4,13 +4,13 @@ Maintainer	= ""
 ModName		= "Activated Metals Label"
 ModCategory	= "UI"
 ModDescription	= "Adds plus symbol to the activated metal label to be visually distinguishable from regular metal"
-GameVersion	= "4.04"
-ModVersion	= "1.0"
+GameVersion	= "5.52"
+ModVersion	= "1.2"
 -- Thanks to cmkushnir for ideas!
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModAuthor.." - "..ModCategory.." - "..ModName.."-"..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= ModDescription,
+	["MOD_FILENAME"]	= ModAuthor.." - "..ModCategory.." - "..ModName..".pak",
+	["MOD_DESCRIPTION"]	= ModDescription.." v"..ModVersion,
 	["MOD_MAINTENANCE"]	= Maintainer,
 	["MOD_AUTHOR"]		= ModAuthor,
 	["LUA_AUTHOR"]		= LuaAuthor,
@@ -37,6 +37,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"]	= {"ID", "EX_BLUE"},	-- Activated Indium
 				["VALUE_CHANGE_TABLE"]	= {
 					{"Symbol",	"In+"}, 		-- Original "UI_BLUE2_SYM"
+				}
+			},{
+				["SPECIAL_KEY_WORDS"]	= {"ID", "EX_PURPLE"},	-- Activated Quartzite
+				["VALUE_CHANGE_TABLE"]	= {
+					{"Symbol",	"Qu+"}, 		-- Original "UI_PURPLE2_SYM"
 				}
 			}}
 		}}

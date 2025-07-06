@@ -308,9 +308,7 @@ local ShipPartID = {
 
 local function CreateShopID(NewID)
     return [[
-        <Property value="NMSString0x10.xml">
-            <Property name="Value" value="]] .. NewID .. [[" />
-        </Property>
+                <Property name="AlwaysPresentProducts" value="]] .. NewID .. [[" />
     ]]
 end
 
@@ -322,10 +320,10 @@ end
 local ADDShipPartID = table.concat(ADDShipPartID,"\n")
 
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"] = "AltF4_AddShipPartsToShop_Extra.pak",
+    ["MOD_FILENAME"] = "AltF4_AddShipPartsToShop_Extra",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "5.05",
+    ["NMS_VERSION"] = "5.51",
     ["MOD_DESCRIPTION"] = "Add ship custom parts to space station shop.",
     ["MODIFICATIONS"] = {
         {

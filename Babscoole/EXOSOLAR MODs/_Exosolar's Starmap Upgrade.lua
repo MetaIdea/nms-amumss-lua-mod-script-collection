@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Exosolar's Starmap Upgrade.pak",
+["MOD_FILENAME"]            = "_Exosolar's Starmap Upgrade",
 ["MOD_AUTHOR"]              = "Exosolar & Babscoole",
 ["LUA_AUTHOR"]              = "Makto & Updated by Babscoole",
-["NMS_VERSION"]             = "5.29",
+["NMS_VERSION"]             = "5.73",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -12,38 +12,39 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "GCGALAXYGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PathToTargetIndicatorTimeFactor",           "0.4"},
-                                {"PathUISelectionMultiplierMouse",            "0.8"},
-                                {"ShowPopupAtCameraMinDistance",              "5"},
-                                {"GalacticPathPreferGuideStarsTillJump",      "30"},
-                                {"IntroFadeInRate",                           "0.065"},
-                                {"IntroTitleFadeTrigger",                     "4.5"},
-                                {"IntroTitleHoldTime",                        "1"},
-                                {"IntroFadeOutRate",                          "0.8"},
-                                {"IntroCameraLookSmoothRate",                 "4"},
-                                {"TransitionTime",                            "1"},
-                                {"IntroCameraLookSmoothRate",                 "4"},
-                                {"PathRenderingSelectedStartAlpha",           "0.7"},
-                                {"PathRenderingSelectedEndAlpha",             "0.01"},
-                                {"StarBlurMaxDistanceFromCamera",             "0.01"},
-                                {"StarBlurMaxBlurLength",                     "0.01"},
-                                {"StarBlurSizeMultiplier",                    "0.01"},
-                                {"StarBlurLineWidth",                         "0.01"},
-                                {"StarBlurIntroMultiplier",                   "0.01"},
-                                {"AnostreakAlpha",                            "1"},
-                                {"FadeGameOutTime",                           "0.25"},
-                                {"FadeMapInTime",                             "0.4"},
-                                {"FadeMapOutTime",                            "0.22"},
-                                {"FadeGameInTime",                            "0.35"},
+                                {"PathToTargetIndicatorTimeFactor",       "0.4"},
+                                {"PathUISelectionMultiplierMouse",        "0.8"},
+                                {"ShowPopupAtCameraMinDistance",          "5"},
+                                {"GalacticPathPreferGuideStarsTillJump",  "30"},
+                                {"IntroFadeInRate",                       "0.065"},
+                                {"IntroTitleFadeTrigger",                 "4.5"},
+                                {"IntroTitleHoldTime",                    "1"},
+                                {"IntroFadeOutRate",                      "0.8"},
+                                {"IntroCameraLookSmoothRate",             "4"},
+                                {"Transition Time",                       "1"},
+                                {"IntroCameraLookSmoothRate",             "4"},
+                                {"Path Rendering Selected Start Alpha",   "0.7"},
+                                {"Path Rendering Selected End Alpha",     "0.01"},
+                                {"Star Blur Max Distance From Camera",    "0.01"},
+                                {"Star Blur Max Blur Length",             "0.01"},
+                                {"Star Blur Size Multiplier",             "0.01"},
+                                {"Star Blur Line Width",                  "0.01"},
+                                {"Star Blur Intro Multiplier",            "0.01"},
+                                {"Anostreak Alpha",                       "1"},
+                                {"Fade Game Out Time",                    "0.25"},
+                                {"Fade Map In Time",                      "0.4"},
+                                {"Fade Map Out Time",                     "0.22"},
+                                {"Fade Game In Time",                     "0.35"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Visited", "GcGalaxyMarkerSettings.xml", "IconSize", "Vector2f.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Visited", "GcGalaxyMarkerSettings"},
+                            ["PRECEDING_KEY_WORDS"] = {"IconSize"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "45"},
@@ -74,10 +75,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"BaseStarDefaultColours", "Blue"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R", "0.42"},
-                                {"G", "0.1"},
+                                {"R", "0.096"},
+                                {"G", "0.321"},
                                 {"B", "1"},
-                                {"A", "0.4"}
+                                {"A", "0.65"}
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"BaseStarDefaultColours", "Purple"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "0.563"},
+                                {"G", "0.246"},
+                                {"B", "1"},
+                                {"A", "0.65"}
                             }
                         },
                         {
@@ -94,23 +105,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Camera"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MovementBlendRateLocked",     "2"},
-                                {"MovementBlendRateLookLocked", "10"},
-                                {"FreePanSpeed",                "1"},
-                                {"FreePanSpeedTurbo",           "3.5"},
-                                {"FreeRotateSpeed",             "1.8"},
-                                {"FreeElevationBlendRate",      "0.66"},
-                                {"ZoomOutElevation",            "0.1"},
-                                {"ZoomOutRate",                 "0.66"},
-                                {"ZoomInRate",                  "6"},
-                                {"MinZoomDIstance",             "3"},
-                                {"MaxZoomDistance",             "150"},
-                                {"MinPushingZoomDistance",      "80"},
+                                {"Movement Blend Rate Locked",      "2"},
+                                {"Movement Blend Rate Look Locked", "10"},
+                                {"Free Pan Speed",                  "1"},
+                                {"Free Pan Speed Turbo",            "3.5"},
+                                {"Free Rotate Speed",               "1.8"},
+                                {"Free Elevation Blend Rate",       "0.66"},
+                                {"Zoom Out Elevation",              "0.1"},
+                                {"Zoom Out Rate",                   "0.66"},
+                                {"Zoom In Rate",                    "6"},
+                                {"MinZoomDIstance",                 "3"},
+                                {"MaxZoomDistance",                 "150"},
+                                {"MinPushingZoomDistance",          "80"},
                             }
                         },
-                        {--1
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 0,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.992157"},
@@ -119,9 +131,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--2
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.027451"},
@@ -130,9 +143,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--3
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 2,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.615686"},
@@ -141,9 +155,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--4
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 3,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.92549"},
@@ -152,9 +167,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--5
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 4,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.717647"},
@@ -163,9 +179,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--6
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 5,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.772549"},
@@ -174,9 +191,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--7
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.835294"},
@@ -185,9 +203,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--8
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 7,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.576471"},
@@ -196,9 +215,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--9
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 8,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.133333"},
@@ -207,9 +227,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--10
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 9,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.321569"},
@@ -218,9 +239,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--1
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 0,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -229,9 +251,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--2
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.823529"},
@@ -240,9 +263,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--3
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 2,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.701961"},
@@ -251,9 +275,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--4
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 3,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -262,9 +287,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--5
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 4,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.329412"},
@@ -273,9 +299,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--6
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 5,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.933333"},
@@ -284,9 +311,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--7
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.47451"},
@@ -295,9 +323,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--8
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 7,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.411765"},
@@ -306,9 +335,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--9
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 8,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.45098"},
@@ -317,9 +347,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--10
-                            ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected", "0.25"},
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DefaultRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 9,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.039216"},
@@ -328,8 +359,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--1
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 0,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.992157"},
@@ -338,8 +371,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--2
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.027451"},
@@ -348,8 +383,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--3
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 2,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.615686"},
@@ -358,8 +395,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--4
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 3,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.92549"},
@@ -368,8 +407,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--5
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 4,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.717647"},
@@ -378,8 +419,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--6
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 5,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.772549"},
@@ -388,8 +431,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--7
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.835294"},
@@ -398,8 +443,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--8
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 7,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.576471"},
@@ -408,8 +455,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--9
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 8,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.133333"},
@@ -418,8 +467,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--10
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Primary Default Colours"},
+                            ["SECTION_ACTIVE"] = 9,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.321569"},
@@ -428,8 +479,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--1
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 0,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -438,8 +491,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--2
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.823529"},
@@ -448,8 +503,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--3
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 2,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.701961"},
@@ -458,8 +515,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--4
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 3,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -468,8 +527,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--5
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 4,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.329412"},
@@ -478,8 +539,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--6
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 5,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.933333"},
@@ -488,8 +551,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--7
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.47451"},
@@ -498,8 +563,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--8
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 7,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.411765"},
@@ -508,8 +575,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--9
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 8,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.45098"},
@@ -518,8 +587,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1"}
                             }
                         },
-                        {--10
-                            ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FinalAnimationRenderSetup", "GcGalaxyRenderSetupData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Map Large Area Secondary Default Colours"},
+                            ["SECTION_ACTIVE"] = 9,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.039216"},

@@ -1105,9 +1105,9 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Jasondude and Exosolar's Hybrid Abyss.pak",
+["MOD_FILENAME"]            = "_Jasondude and Exosolar's Hybrid Abyss",
 ["MOD_AUTHOR"]              = "Exosolar and Jasondude and Babscoole",
-["NMS_VERSION"]             = "5.29",
+["NMS_VERSION"]             = "5.73",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -1116,13 +1116,13 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\WATERCOLOURS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                     }
                 },
                 -- {
                     -- ["MBIN_FILE_SOURCE"] = "GCWATERGLOBALS.GLOBAL.MBIN",
-                    -- ["EXML_CHANGE_TABLE"] =
+                    -- ["MXML_CHANGE_TABLE"] =
                     -- {
                         -- {
                             -- ["VALUE_CHANGE_TABLE"] =
@@ -1261,7 +1261,7 @@ function CreateColoursProperty(PaletteColours)
 return table.concat(PropertiesString)
 end
 
-local BaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local BaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 for i = 1, #DataTable do
     local PaletteColours = DataTable[i]["COLOURS"]
 

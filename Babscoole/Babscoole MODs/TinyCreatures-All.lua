@@ -2,9 +2,9 @@ DIVISOR = "2"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "TinyCreatures-All.pak",
+["MOD_FILENAME"]            = "TinyCreatures-All",
 ["MOD_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.29",
+["NMS_VERSION"]             = "5.73",
 ["MOD_DESCRIPTION"]         = "Reduces size for all creature types by ~50%",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["MATH_OPERATION"] = "/",
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["MATH_OPERATION"] = "/",

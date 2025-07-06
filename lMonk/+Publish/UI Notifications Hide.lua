@@ -6,13 +6,13 @@ local mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Hide notifications.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.29',
+	NMS_VERSION			= '5.62',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE 	= {
 	{
 		MBIN_FILE_SOURCE	= 'UI/HUD/HUDNOTIFICATIONPANEL.MBIN',
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				FOREACH_SKW_GROUP 	= {
 					{'ID', 'TITLE'},
@@ -24,14 +24,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'ID', 'EXCLAMATION'}
 				},
 				VALUE_CHANGE_TABLE 	= {
-					{'IsHidden',	true}
+					{'Is Hidden',	true}
 				}
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'ICON', 'Vertical', 'Bottom'},
 				SECTION_UP			= 2,
 				VALUE_CHANGE_TABLE 	= {
-					{'IsHidden',	true}
+					{'Is Hidden',	true}
 				}
 			}
 		}

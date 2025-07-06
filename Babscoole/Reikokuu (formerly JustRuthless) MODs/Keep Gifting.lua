@@ -1,8 +1,8 @@
 -- Custom Gift Option Settings --------------------------------------------------------
 Option_Cost   = "5"    -- amount of gifts needed
 Option_Reward = "5"    -- amount of rep rewarded
-Remove_Option = "True" -- True / False - removes option if cant afford
-Keep_Open     = "True" -- True / False - keeps the dialogue open after selecting the option
+Remove_Option = "true" -- true / false - removes option if cant afford
+Keep_Open     = "true" -- true / false - keeps the dialogue open after selecting the option
 ---------------------------------------------------------------------------------------
 
 CostChanges =
@@ -89,10 +89,10 @@ OptionChanges =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Keep Gifting.pak",
+["MOD_FILENAME"]    = "Keep Gifting",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Makes the npcs gifting dialogue stay open when gifting items to increase faction rep and also adds a gifting option for 5x",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -100,7 +100,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\COSTTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "C_REP_TOKEN"},
@@ -110,7 +110,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_BATTLE"},
@@ -120,7 +120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "ALL_REQUEST_STD_LOW"},
@@ -133,9 +133,9 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-local CostTable        = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
-local RewardTable      = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
-local AlienPuzzleTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+local CostTable        = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
+local RewardTable      = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
+local AlienPuzzleTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["MXML_CHANGE_TABLE"]
 
 -- CostTable --
 for i = 1, #CostChanges do
@@ -151,7 +151,7 @@ for i = 1, #CostChanges do
     CostTable[#CostTable+1] =
     {
       ["SEC_EDIT"] = "ADD_COST",
-      ["SPECIAL_KEY_WORDS"] = {"Cost" ,"GcCostProduct.xml"},
+      ["SPECIAL_KEY_WORDS"] = {"Cost" ,"GcCostProduct"},
       ["VALUE_CHANGE_TABLE"] =
       {
          {"Id",     CostID},
@@ -236,8 +236,18 @@ for i = 1, #OptionChanges do
       ["VALUE_CHANGE_TABLE"] =
       {
          {"Cost",     NewCost},
-         {"Value",    Reward},
          {"KeepOpen", KeepOpen},
+      }
+    }
+    
+    AlienPuzzleTable[#AlienPuzzleTable+1] =
+    {
+      ["SEC_EDIT"] = "ADD_PUZZLE",
+      ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+      ["REPLACE_TYPE"] = "ONCEINSIDE", 
+      ["VALUE_CHANGE_TABLE"] =
+      {
+         {"Rewards", Reward},
       }
     }
 

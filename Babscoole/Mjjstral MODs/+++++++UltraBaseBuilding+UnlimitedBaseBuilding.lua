@@ -14,12 +14,12 @@ VEGICON = "TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL.RADPLANT02.DDS"
 
 BUILDABLE_OBJECT_TABLE =
 {
-    { ["ID_NAME"]="ANTELOPE",       ["P_NAME"]="ANTELOPE",                 ["PATH"]="MODELS/PLANETS/CREATURES/ANTELOPERIG/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
+    { ["ID_NAME"]="ANTELOPE",       ["P_NAME"]="ANTELOPE",                 ["PATH"]="MODELS/PLANETS/CREATURES/ANTELOPERIG/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON,		["CompositePartObjectIDs"]={"ANTELOPEGLOW","ANTELOPEROBOT","ANTELOPETWOLEGS","ANTELOPEALT01"} },
     { ["ID_NAME"]="ANTELOPEGLOW",   ["P_NAME"]="ANTELOPEGLOW",             ["PATH"]="MODELS/PLANETS/CREATURES/ANTELOPERIG/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="ANTELOPEROBOT",  ["P_NAME"]="ANTELOPEROBOT",            ["PATH"]="MODELS/PLANETS/CREATURES/ANTELOPERIG/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="ANTELOPETWOLEGS",["P_NAME"]="ANTELOPETWOLEGS",          ["PATH"]="MODELS/PLANETS/CREATURES/ANTELOPERIG/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="ANTELOPEALT01",  ["P_NAME"]="ANTELOPEALT01",            ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/MEDIUMCREATURE/ANTELOPE/",                  ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
-    { ["ID_NAME"]="ARTHROPOD",      ["P_NAME"]="ARTHROPOD",                ["PATH"]="MODELS/PLANETS/CREATURES/ARTHROPOD/",                                        ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
+    { ["ID_NAME"]="ARTHROPOD",      ["P_NAME"]="ARTHROPOD",                ["PATH"]="MODELS/PLANETS/CREATURES/ARTHROPOD/",                                        ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON,		["CompositePartObjectIDs"]={"ARTHROPODGRUB","ARTHROPODQUEEN"} },
     { ["ID_NAME"]="ARTHROPODGRUB",  ["P_NAME"]="ARTHROPODGRUB",            ["PATH"]="MODELS/PLANETS/CREATURES/ARTHROPOD/",                                        ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="ARTHROPODQUEEN", ["P_NAME"]="ARTHROPODQUEEN",           ["PATH"]="MODELS/PLANETS/CREATURES/ARTHROPOD/",                                        ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="BUGFIEND",       ["P_NAME"]="BUGFIEND",                 ["PATH"]="MODELS/PLANETS/CREATURES/ARTHROPOD/",                                        ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
@@ -28,26 +28,26 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="BLOBTERRARIUM",  ["P_NAME"]="BLOBTERRARIUM",            ["PATH"]="MODELS/PLANETS/CREATURES/BLOBRIG/",                                          ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="BUTTERFLY",      ["P_NAME"]="BUTTERFLY",                ["PATH"]="MODELS/PLANETS/CREATURES/BUTTERFLYRIG/",                                     ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="LARGEBUTTERFLY", ["P_NAME"]="LARGEBUTTERFLY",           ["PATH"]="MODELS/PLANETS/CREATURES/BUTTERFLYRIG/",                                     ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
+    { ["ID_NAME"]="CAT",            ["P_NAME"]="CAT",                      ["PATH"]="MODELS/PLANETS/CREATURES/CATRIG/",                                           ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON,		["CompositePartObjectIDs"]={"BONECAT","PLANTCAT","SIXLEGCAT"} },
     { ["ID_NAME"]="BONECAT",        ["P_NAME"]="BONECAT",                  ["PATH"]="MODELS/PLANETS/CREATURES/CATRIG/",                                           ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
-    { ["ID_NAME"]="CAT",            ["P_NAME"]="CAT",                      ["PATH"]="MODELS/PLANETS/CREATURES/CATRIG/",                                           ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="PLANTCAT",       ["P_NAME"]="PLANTCAT",                 ["PATH"]="MODELS/PLANETS/CREATURES/CATRIG/",                                           ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="SIXLEGCAT",      ["P_NAME"]="SIXLEGCAT",                ["PATH"]="MODELS/PLANETS/CREATURES/CATRIG/",                                           ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
-    { ["ID_NAME"]="COW",            ["P_NAME"]="COW",                      ["PATH"]="MODELS/PLANETS/CREATURES/COWRIG/",                                           ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
+    { ["ID_NAME"]="COW",            ["P_NAME"]="COW",                      ["PATH"]="MODELS/PLANETS/CREATURES/COWRIG/",                                           ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON,		["CompositePartObjectIDs"]={"COWHINDLEGS","COWSWIM","SIXLEGGEDCOW"} },
     { ["ID_NAME"]="COWHINDLEGS",    ["P_NAME"]="COWHINDLEGS",              ["PATH"]="MODELS/PLANETS/CREATURES/COWRIG/",                                           ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="COWSWIM",        ["P_NAME"]="COWSWIM",                  ["PATH"]="MODELS/PLANETS/CREATURES/COWRIG/",                                           ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="SIXLEGGEDCOW",   ["P_NAME"]="SIXLEGGEDCOW",             ["PATH"]="MODELS/PLANETS/CREATURES/COWRIG/",                                           ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="CLAM",           ["P_NAME"]="CLAM",                     ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="FISHFIEND",      ["P_NAME"]="FISHFIEND",                ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="FISHFIENDSMALL", ["P_NAME"]="FISHFIENDSMALL",           ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
-    { ["ID_NAME"]="FRTRJLYFISH",    ["P_NAME"]="FREIGHTERJELLYFISH",       ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
-    { ["ID_NAME"]="GRABBYPLANT",    ["P_NAME"]="GRABBYPLANT",              ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
-    { ["ID_NAME"]="JELLYFISH",      ["P_NAME"]="JELLYFISH",                ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
-    { ["ID_NAME"]="PROC_JELLYFISH", ["P_NAME"]="PROC_JELLYFISH",           ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="SMALLFISH",      ["P_NAME"]="SMALLFISH",                ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
+    { ["ID_NAME"]="JELLYFISH",      ["P_NAME"]="JELLYFISH",                ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON,		["CompositePartObjectIDs"]={"FRTRJLYFISH","FRTRJLYFISH","PROC_JELLYFISH","ASTRJELLYFISH","LANDJELLYFISH","SPACEJELLYFISH","SPACEJLYFISHPOS"} },
+    { ["ID_NAME"]="FRTRJLYFISH",    ["P_NAME"]="FREIGHTERJELLYFISH",       ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
+    { ["ID_NAME"]="PROC_JELLYFISH", ["P_NAME"]="PROC_JELLYFISH",           ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="ASTRJELLYFISH",  ["P_NAME"]="ASTEROIDJELLYFISH",        ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="LANDJELLYFISH",  ["P_NAME"]="LANDJELLYFISH",            ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="SPACEJELLYFISH", ["P_NAME"]="SPACEJELLYFISH",           ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="SPACEJLYFISHPOS",["P_NAME"]="SPACEJELLYFISHPOS",        ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
+    { ["ID_NAME"]="GRABBYPLANT",    ["P_NAME"]="GRABBYPLANT",              ["PATH"]="MODELS/PLANETS/CREATURES/FISH/",                                             ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="FLYINGLIZARD",   ["P_NAME"]="FLYINGLIZARD",             ["PATH"]="MODELS/PLANETS/CREATURES/FLYINGLIZARDRIG/",                                  ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="FLYINGLIZGLOW",  ["P_NAME"]="FLYINGLIZARDGLOW",         ["PATH"]="MODELS/PLANETS/CREATURES/FLYINGLIZARDRIG/",                                  ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="FLYINGSNAKE",    ["P_NAME"]="FLYINGSNAKE",              ["PATH"]="MODELS/PLANETS/CREATURES/FLYINGSNAKE/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
@@ -83,22 +83,22 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="DIPLODOCUSALIEN",["P_NAME"]="DIPLODOCUSALIEN",          ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGECREATURE/DIPLODOCUS/",                 ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="SANDWORM",       ["P_NAME"]="SANDWORM",                 ["PATH"]="MODELS/PLANETS/CREATURES/SANDWORM/",                                         ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
     { ["ID_NAME"]="SANDWORMMINI",   ["P_NAME"]="SANDWORMMINI",             ["PATH"]="MODELS/PLANETS/CREATURES/SANDWORMMINI/",                                     ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="CREATURES",   ["ICON"]=CREAICON },
+    { ["ID_NAME"]="NPCNADA",        ["P_NAME"]="NPCNADA",                  ["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
+    { ["ID_NAME"]="NPCPOLO",        ["P_NAME"]="NPCPOLO",                  ["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="NPCFIFTH",       ["P_NAME"]="NPCFIFTH",                 ["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="NPCFOURTH",      ["P_NAME"]="NPCFOURTH",                ["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="NPCGEK",         ["P_NAME"]="NPCGEK",                   ["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="NPCKORVAX",      ["P_NAME"]="NPCKORVAX",                ["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
-    { ["ID_NAME"]="NPCNADA",        ["P_NAME"]="NPCNADA",                  ["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
-    { ["ID_NAME"]="NPCPOLO",        ["P_NAME"]="NPCPOLO",                  ["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="NPCSPECIALSHOP", ["P_NAME"]="NPCSPECIALSHOP",           ["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="NPCVYKEEN",      ["P_NAME"]="NPCVYKEEN",                ["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="PLAYERCHARACTER",["P_NAME"]="PLAYERCHARACTER",          ["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",                                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="EXPLORER",       ["P_NAME"]="EXPLORER",                 ["PATH"]="MODELS/PLANETS/NPCS/EXPLORER/",                                              ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="EXPLORERSTAND",  ["P_NAME"]="EXPLORERSTAND",            ["PATH"]="MODELS/PLANETS/NPCS/EXPLORER/",                                              ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
-    { ["ID_NAME"]="FOURTHRACE",     ["P_NAME"]="FOURTHRACE",               ["PATH"]="MODELS/PLANETS/NPCS/FOURTHRACE/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
+    { ["ID_NAME"]="FOURTHRACE",     ["P_NAME"]="FOURTHRACE",               ["PATH"]="MODELS/PLANETS/NPCS/FOURTHRACE/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON,		["CompositePartObjectIDs"]={"HOLOEXPLORER","HOLONOONE","HOLOSCEPTIC"} },
     { ["ID_NAME"]="HOLOEXPLORER",   ["P_NAME"]="HOLOEXPLORER",             ["PATH"]="MODELS/PLANETS/NPCS/FOURTHRACE/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="HOLONOONE",      ["P_NAME"]="HOLONOONE",                ["PATH"]="MODELS/PLANETS/NPCS/FOURTHRACE/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="HOLOSCEPTIC",    ["P_NAME"]="HOLOSCEPTIC",              ["PATH"]="MODELS/PLANETS/NPCS/FOURTHRACE/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
-    { ["ID_NAME"]="LOWERORDER",     ["P_NAME"]="LOWERORDER",               ["PATH"]="MODELS/PLANETS/NPCS/LOWERORDER/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
+    { ["ID_NAME"]="LOWERORDER",     ["P_NAME"]="LOWERORDER",               ["PATH"]="MODELS/PLANETS/NPCS/LOWERORDER/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON,		["CompositePartObjectIDs"]={"LOWERORDERBODY","LOWERORDERIPAD","LOWERORDERSIT","LOWERORDERSTAND"} },
     { ["ID_NAME"]="LOWERORDERBODY", ["P_NAME"]="LOWERORDERBODY",           ["PATH"]="MODELS/PLANETS/NPCS/LOWERORDER/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="LOWERORDERIPAD", ["P_NAME"]="LOWERORDERIPAD",           ["PATH"]="MODELS/PLANETS/NPCS/LOWERORDER/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="LOWERORDERSIT",  ["P_NAME"]="LOWERORDERSIT",            ["PATH"]="MODELS/PLANETS/NPCS/LOWERORDER/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
@@ -106,106 +106,106 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="WARRIOR",        ["P_NAME"]="WARRIOR",                  ["PATH"]="MODELS/PLANETS/NPCS/WARRIOR/",                                               ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="WARRIORSTAND",   ["P_NAME"]="WARRIORSTAND",             ["PATH"]="MODELS/PLANETS/NPCS/WARRIOR/",                                               ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
     { ["ID_NAME"]="ANOMALY_HOLOEXP",["P_NAME"]="ANOMALY_HOLOEXPLORER",     ["PATH"]="MODELS/SPACE/NEXUS/PARTS/COMPUTER/",                                         ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="NPC",         ["ICON"]=NPCICON },
-    { ["ID_NAME"]="CRYSTALCUBE_LRG",["P_NAME"]="CRYSTALCUBE_LARGE",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/LARGE/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="CRYSTAL_LARGE",  ["P_NAME"]="CRYSTAL_LARGE",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/LARGE/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="CRYSTALCUBE_MED",["P_NAME"]="CRYSTALCUBE_MEDIUM",       ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/MEDIUM/",                              ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="CRYSTAL_MEDIUM", ["P_NAME"]="CRYSTAL_MEDIUM",           ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/MEDIUM/",                              ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="CRYSTALCUBEFRAG",["P_NAME"]="CRYSTALCUBE_FRAGMENT",     ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/SMALL/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="CRYSTALCUBE_SML",["P_NAME"]="CRYSTALCUBE_SMALL",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/SMALL/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="CRYSTAL_FRAG",   ["P_NAME"]="CRYSTAL_FRAGMENT",         ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/SMALL/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="CRYSTAL_SMALL",  ["P_NAME"]="CRYSTAL_SMALL",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/SMALL/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="GEMCRYSTALS",    ["P_NAME"]="GEMCRYSTALS",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/CRYSTALS/",                        ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="STORMCRYSTALS",  ["P_NAME"]="STORMCRYSTALS",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/CRYSTALS/",                        ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="CRYSTALALTAR",   ["P_NAME"]="CRYSTALALTAR",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/",                          ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="GIANTCUBE",      ["P_NAME"]="GIANTCUBE",                ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/LARGEPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="GIANTSPIKE",     ["P_NAME"]="GIANTSPIKE",               ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/LARGEPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="PILLAR1",        ["P_NAME"]="PILLAR1",                  ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/LARGEPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SQUATPILLAR1",   ["P_NAME"]="SQUATPILLAR1",             ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/LARGEPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="ANIMATED_CUBES", ["P_NAME"]="ANIMATED_CUBES",           ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/SMALLPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="BASE1",          ["P_NAME"]="BASE1",                    ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/SMALLPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="TINYCUBES",      ["P_NAME"]="TINYCUBES",                ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/SMALLPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MINERALROCK_MED",["P_NAME"]="MINERALROCK_MEDIUM",       ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/MINERALROCK/",                        ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="VOLCANODEBRIS01",["P_NAME"]="VOLCANODEBRIS01",          ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/MEDIUMPROPS/",                                    ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LAVACLUMP",      ["P_NAME"]="LAVACLUMP",                ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/SMALLPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LARGEVOLCANO",   ["P_NAME"]="LARGEVOLCANO",             ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LARGEMINERAL",   ["P_NAME"]="LARGEMINERAL",             ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPROP/",                                    ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LARGEPYRAMID",   ["P_NAME"]="LARGEPYRAMID",             ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPROP/",                                    ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="COMET01",        ["P_NAME"]="COMET01",                  ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/MEDIUMPROPS/",                                    ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMALLCOMET01",   ["P_NAME"]="SMALLCOMET01",             ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/SMALLPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LAVACRYSTALS",   ["P_NAME"]="LAVACRYSTALS",             ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/MEDIUMPROPS/",                                    ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LARGESHARD01",   ["P_NAME"]="LARGESHARD01",             ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LRGSHARDINACT01",["P_NAME"]="LARGESHARDINACTIVE01",     ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MINERALROCK_SML",["P_NAME"]="MINERALROCK_SMALL",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/MINERALROCK/",                        ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="GRNDREVROCK01",  ["P_NAME"]="GROUNDREVEALROCK01",       ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LRGARRANGEROK01",["P_NAME"]="LARGEARRANGEDROCK01",      ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LRGMNTROKCLOSED",["P_NAME"]="LARGEMOUNTAINROCKCLOSED",  ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LRGPLNSBLDER02", ["P_NAME"]="LARGEPLAINSBOULDER02",     ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MEDIUMBOULDER01",["P_NAME"]="MEDIUMBOULDER01",          ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MEDIUMBOULDER02",["P_NAME"]="MEDIUMBOULDER02",          ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SWAMPBOULDER1",  ["P_NAME"]="SWAMPBOULDER1",            ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/LARGEPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SWAMPBOULDER2",  ["P_NAME"]="SWAMPBOULDER2",            ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/LARGEPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMALLBOULDER05", ["P_NAME"]="SMALLBOULDER05",           ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMALLROCK",      ["P_NAME"]="SMALLROCK",                ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LARGEBOULDER",   ["P_NAME"]="LARGEBOULDER",             ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LARGEFUNGHI",    ["P_NAME"]="LARGEFUNGHI",              ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LRGROKFORMATION",["P_NAME"]="LARGEROCKFORMATION",       ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="STALACTITES",    ["P_NAME"]="STALACTITES",              ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="STALAGMITES",    ["P_NAME"]="STALAGMITES",              ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MEDIUMROCKPOOL", ["P_NAME"]="MEDIUMROCKPOOL",           ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MEDSTALAGTITES", ["P_NAME"]="MEDIUMSTALAGTITES",        ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMALLROCKS",     ["P_NAME"]="SMALLROCKS",               ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="TINYROCKS",      ["P_NAME"]="TINYROCKS",                ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LARGESHARP01",   ["P_NAME"]="LARGESHARP01",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/LARGE/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LARGESLATE01",   ["P_NAME"]="LARGESLATE01",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/LARGE/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="RESOURCEROCKLRG",["P_NAME"]="RESOURCEROCKLARGE",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/LARGE/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="RESROKSHARD",    ["P_NAME"]="RESOURCEROCKSHARD",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/LARGE/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MEDIUMSHARP01",  ["P_NAME"]="MEDIUMSHARP01",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/MEDIUM/",                                 ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MEDIUMSHARP02",  ["P_NAME"]="MEDIUMSHARP02",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/MEDIUM/",                                 ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MEDIUMSLATE01",  ["P_NAME"]="MEDIUMSLATE01",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/MEDIUM/",                                 ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="RESOURCEROCK",   ["P_NAME"]="RESOURCEROCK",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/MEDIUM/",                                 ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="FRAGMENTS",      ["P_NAME"]="FRAGMENTS",                ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="RESOURCEFRAGS",  ["P_NAME"]="RESOURCEFRAGMENTS",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="RESOURCESMALL",  ["P_NAME"]="RESOURCESMALL",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SLATEFRAGMENTS", ["P_NAME"]="SLATEFRAGMENTS",           ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMALLSHARP01",   ["P_NAME"]="SMALLSHARP01",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMALLSHARP02",   ["P_NAME"]="SMALLSHARP02",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMALLSHARP03",   ["P_NAME"]="SMALLSHARP03",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMALLSLATE01",   ["P_NAME"]="SMALLSLATE01",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="TINYSLATE01",    ["P_NAME"]="TINYSLATE01",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="TINYSLATE02",    ["P_NAME"]="TINYSLATE02",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="TINYSLATE03",    ["P_NAME"]="TINYSLATE03",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MEDIUMROCK",     ["P_NAME"]="MEDIUMROCK",               ["PATH"]="MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMLROCKSSHARDS", ["P_NAME"]="SMALLROCKSSHARDS",         ["PATH"]="MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LARGEICEROCK_1", ["P_NAME"]="LARGEICEROCK_1",           ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/LARGEPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LRGROCKSTACK_1", ["P_NAME"]="LARGEROCKSTACK_1",         ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/LARGEPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LARGEROCK_1",    ["P_NAME"]="LARGEROCK_1",              ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/LARGEPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MEDIUMROCKS",    ["P_NAME"]="MEDIUMROCKS",              ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/MEDIUMPROPS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="ROCK",           ["P_NAME"]="ROCK",                     ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="ROCKSCREE",      ["P_NAME"]="ROCKSCREE",                ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMALLROCKCLUMPS",["P_NAME"]="SMALLROCKCLUMPS",          ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MOUNTAINROCK_1", ["P_NAME"]="MOUNTAINROCK_1",           ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/LARGEPROPS/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMALLBOULDER",   ["P_NAME"]="SMALLBOULDER",             ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/SMALLPROPS/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MEDIUMROCK1",    ["P_NAME"]="MEDIUMROCK1",              ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/MEDIUMPROP/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMALLROCK1",     ["P_NAME"]="SMALLROCK1",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/SMALLPROP/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="TINYROCK01",     ["P_NAME"]="TINYROCK01",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/SMALLPROP/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="TINYROCK02",     ["P_NAME"]="TINYROCK02",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/SMALLPROP/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="TINYROCK03",     ["P_NAME"]="TINYROCK03",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/SMALLPROP/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LARGEROCK",      ["P_NAME"]="LARGEROCK",                ["PATH"]="MODELS/PLANETS/BIOMES/SCORCHED/LARGE/",                                      ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMALLSPIRE",     ["P_NAME"]="SMALLSPIRE",               ["PATH"]="MODELS/PLANETS/BIOMES/SCORCHED/SMALL/",                                      ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SWAMPROCK01",    ["P_NAME"]="SWAMPROCK01",              ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/SMALLPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="BLOBFRAGMENTS",  ["P_NAME"]="BLOBFRAGMENTS",            ["PATH"]="MODELS/PLANETS/BIOMES/TOXIC/SMALL/",                                         ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="FLATROCK01",     ["P_NAME"]="FLATROCK01",               ["PATH"]="MODELS/PLANETS/DESERT/ROCKS/",                                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LARGEROCK01",    ["P_NAME"]="LARGEROCK01",              ["PATH"]="MODELS/PLANETS/DESERT/ROCKS/",                                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="LARGEROCK02",    ["P_NAME"]="LARGEROCK02",              ["PATH"]="MODELS/PLANETS/DESERT/ROCKS/",                                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MEDIUMROCK01",   ["P_NAME"]="MEDIUMROCK01",             ["PATH"]="MODELS/PLANETS/DESERT/ROCKS/",                                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="MEDIUMROCK02",   ["P_NAME"]="MEDIUMROCK02",             ["PATH"]="MODELS/PLANETS/DESERT/ROCKS/",                                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="SMALLROCK01",    ["P_NAME"]="SMALLROCK01",              ["PATH"]="MODELS/PLANETS/DESERT/ROCKS/",                                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="HUGEROCKRING",   ["P_NAME"]="HUGEROCKRING",             ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGERING/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="HUGEPLATFORMROK",["P_NAME"]="HUGEPLATFORMROCK",         ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="HUGESPIKEROCK",  ["P_NAME"]="HUGESPIKEROCK",            ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="HUGESPIRE",      ["P_NAME"]="HUGESPIRE",                ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGESCORCHED/",                              ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="HUGESPIRE01",    ["P_NAME"]="HUGESPIRE01",              ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGESCORCHED/PARTS/",                        ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
-    { ["ID_NAME"]="HUGESPIRE03",    ["P_NAME"]="HUGESPIRE03",              ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGESCORCHED/PARTS/",                        ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="CRYSTALCUBE_LRG",["P_NAME"]="CRYSTALCUBE_LARGE",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/LARGE/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON,		["CompositePartObjectIDs"]={"CRYSTAL_LARGE","CRYSTAL_LARGE","CRYSTALCUBE_MED","CRYSTAL_MEDIUM","CRYSTALCUBEFRAG","CRYSTALCUBE_SML","CRYSTAL_FRAG","CRYSTAL_SMALL"} },
+    { ["ID_NAME"]="CRYSTAL_LARGE",  ["P_NAME"]="CRYSTAL_LARGE",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/LARGE/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="CRYSTALCUBE_MED",["P_NAME"]="CRYSTALCUBE_MEDIUM",       ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/MEDIUM/",                              ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="CRYSTAL_MEDIUM", ["P_NAME"]="CRYSTAL_MEDIUM",           ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/MEDIUM/",                              ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="CRYSTALCUBEFRAG",["P_NAME"]="CRYSTALCUBE_FRAGMENT",     ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/SMALL/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="CRYSTALCUBE_SML",["P_NAME"]="CRYSTALCUBE_SMALL",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/SMALL/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="CRYSTAL_FRAG",   ["P_NAME"]="CRYSTAL_FRAGMENT",         ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/SMALL/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="CRYSTAL_SMALL",  ["P_NAME"]="CRYSTAL_SMALL",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/SMALL/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="GEMCRYSTALS",    ["P_NAME"]="GEMCRYSTALS",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/CRYSTALS/",                        ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="STORMCRYSTALS",  ["P_NAME"]="STORMCRYSTALS",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/CRYSTALS/",                        ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="CRYSTALALTAR",   ["P_NAME"]="CRYSTALALTAR",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/",                          ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="GIANTCUBE",      ["P_NAME"]="GIANTCUBE",                ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/LARGEPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="GIANTSPIKE",     ["P_NAME"]="GIANTSPIKE",               ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/LARGEPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="PILLAR1",        ["P_NAME"]="PILLAR1",                  ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/LARGEPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SQUATPILLAR1",   ["P_NAME"]="SQUATPILLAR1",             ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/LARGEPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="ANIMATED_CUBES", ["P_NAME"]="ANIMATED_CUBES",           ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/SMALLPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="BASE1",          ["P_NAME"]="BASE1",                    ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/SMALLPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="TINYCUBES",      ["P_NAME"]="TINYCUBES",                ["PATH"]="MODELS/PLANETS/BIOMES/CRYSTAL/SMALLPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MINERALROCK_MED",["P_NAME"]="MINERALROCK_MEDIUM",       ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/MINERALROCK/",                        ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="VOLCANODEBRIS01",["P_NAME"]="VOLCANODEBRIS01",          ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/MEDIUMPROPS/",                                    ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LAVACLUMP",      ["P_NAME"]="LAVACLUMP",                ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/SMALLPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LARGEVOLCANO",   ["P_NAME"]="LARGEVOLCANO",             ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LARGEMINERAL",   ["P_NAME"]="LARGEMINERAL",             ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPROP/",                                    ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LARGEPYRAMID",   ["P_NAME"]="LARGEPYRAMID",             ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPROP/",                                    ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="COMET01",        ["P_NAME"]="COMET01",                  ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/MEDIUMPROPS/",                                    ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SMALLCOMET01",   ["P_NAME"]="SMALLCOMET01",             ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/SMALLPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LAVACRYSTALS",   ["P_NAME"]="LAVACRYSTALS",             ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/MEDIUMPROPS/",                                    ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LARGESHARD01",   ["P_NAME"]="LARGESHARD01",             ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LRGSHARDINACT01",["P_NAME"]="LARGESHARDINACTIVE01",     ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MINERALROCK_SML",["P_NAME"]="MINERALROCK_SMALL",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/MINERALROCK/",                        ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="GRNDREVROCK01",  ["P_NAME"]="GROUNDREVEALROCK01",       ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LRGARRANGEROK01",["P_NAME"]="LARGEARRANGEDROCK01",      ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LRGMNTROKCLOSED",["P_NAME"]="LARGEMOUNTAINROCKCLOSED",  ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LRGPLNSBLDER02", ["P_NAME"]="LARGEPLAINSBOULDER02",     ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MEDIUMBOULDER01",["P_NAME"]="MEDIUMBOULDER01",          ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MEDIUMBOULDER02",["P_NAME"]="MEDIUMBOULDER02",          ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SWAMPBOULDER1",  ["P_NAME"]="SWAMPBOULDER1",            ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/LARGEPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SWAMPBOULDER2",  ["P_NAME"]="SWAMPBOULDER2",            ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/LARGEPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SMALLBOULDER05", ["P_NAME"]="SMALLBOULDER05",           ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SMALLROCK",      ["P_NAME"]="SMALLROCK",                ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LARGEBOULDER",   ["P_NAME"]="LARGEBOULDER",             ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LARGEFUNGHI",    ["P_NAME"]="LARGEFUNGHI",              ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LRGROKFORMATION",["P_NAME"]="LARGEROCKFORMATION",       ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="STALACTITES",    ["P_NAME"]="STALACTITES",              ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="STALAGMITES",    ["P_NAME"]="STALAGMITES",              ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MEDIUMROCKPOOL", ["P_NAME"]="MEDIUMROCKPOOL",           ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MEDSTALAGTITES", ["P_NAME"]="MEDIUMSTALAGTITES",        ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SMALLROCKS",     ["P_NAME"]="SMALLROCKS",               ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="TINYROCKS",      ["P_NAME"]="TINYROCKS",                ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-I",  ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="RESOURCEROCKLRG",["P_NAME"]="RESOURCEROCKLARGE",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/LARGE/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON,		["CompositePartObjectIDs"]={"LARGESHARP01","LARGESLATE01","RESROKSHARD","MEDIUMSHARP01","MEDIUMSHARP02","MEDIUMSLATE01","RESOURCEROCK","FRAGMENTS","RESOURCEFRAGS","RESOURCESMALL","SLATEFRAGMENTS","SMALLSHARP01","SMALLSHARP02","SMALLSHARP03","SMALLSLATE01","TINYSLATE01","TINYSLATE02","TINYSLATE03"} },
+    { ["ID_NAME"]="LARGESHARP01",   ["P_NAME"]="LARGESHARP01",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/LARGE/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LARGESLATE01",   ["P_NAME"]="LARGESLATE01",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/LARGE/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="RESROKSHARD",    ["P_NAME"]="RESOURCEROCKSHARD",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/LARGE/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MEDIUMSHARP01",  ["P_NAME"]="MEDIUMSHARP01",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/MEDIUM/",                                 ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MEDIUMSHARP02",  ["P_NAME"]="MEDIUMSHARP02",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/MEDIUM/",                                 ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MEDIUMSLATE01",  ["P_NAME"]="MEDIUMSLATE01",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/MEDIUM/",                                 ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="RESOURCEROCK",   ["P_NAME"]="RESOURCEROCK",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/MEDIUM/",                                 ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="FRAGMENTS",      ["P_NAME"]="FRAGMENTS",                ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="RESOURCEFRAGS",  ["P_NAME"]="RESOURCEFRAGMENTS",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="RESOURCESMALL",  ["P_NAME"]="RESOURCESMALL",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SLATEFRAGMENTS", ["P_NAME"]="SLATEFRAGMENTS",           ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SMALLSHARP01",   ["P_NAME"]="SMALLSHARP01",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SMALLSHARP02",   ["P_NAME"]="SMALLSHARP02",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SMALLSHARP03",   ["P_NAME"]="SMALLSHARP03",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SMALLSLATE01",   ["P_NAME"]="SMALLSLATE01",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="TINYSLATE01",    ["P_NAME"]="TINYSLATE01",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="TINYSLATE02",    ["P_NAME"]="TINYSLATE02",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="TINYSLATE03",    ["P_NAME"]="TINYSLATE03",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MEDIUMROCK",     ["P_NAME"]="MEDIUMROCK",               ["PATH"]="MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON,		["CompositePartObjectIDs"]={"SMLROCKSSHARDS","LARGEICEROCK_1","LRGROCKSTACK_1","LARGEROCK_1","MEDIUMROCKS","ROCK","ROCKSCREE","SMALLROCKCLUMPS"} },
+    { ["ID_NAME"]="SMLROCKSSHARDS", ["P_NAME"]="SMALLROCKSSHARDS",         ["PATH"]="MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LARGEICEROCK_1", ["P_NAME"]="LARGEICEROCK_1",           ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/LARGEPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LRGROCKSTACK_1", ["P_NAME"]="LARGEROCKSTACK_1",         ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/LARGEPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LARGEROCK_1",    ["P_NAME"]="LARGEROCK_1",              ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/LARGEPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MEDIUMROCKS",    ["P_NAME"]="MEDIUMROCKS",              ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/MEDIUMPROPS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="ROCK",           ["P_NAME"]="ROCK",                     ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="ROCKSCREE",      ["P_NAME"]="ROCKSCREE",                ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SMALLROCKCLUMPS",["P_NAME"]="SMALLROCKCLUMPS",          ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MOUNTAINROCK_1", ["P_NAME"]="MOUNTAINROCK_1",           ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/LARGEPROPS/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SMALLBOULDER",   ["P_NAME"]="SMALLBOULDER",             ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/SMALLPROPS/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MEDIUMROCK1",    ["P_NAME"]="MEDIUMROCK1",              ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/MEDIUMPROP/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON,		["CompositePartObjectIDs"]={"SMALLROCK1","SMALLROCK1","TINYROCK01","TINYROCK02","TINYROCK03"} },
+    { ["ID_NAME"]="SMALLROCK1",     ["P_NAME"]="SMALLROCK1",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/SMALLPROP/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="TINYROCK01",     ["P_NAME"]="TINYROCK01",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/SMALLPROP/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="TINYROCK02",     ["P_NAME"]="TINYROCK02",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/SMALLPROP/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="TINYROCK03",     ["P_NAME"]="TINYROCK03",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/SMALLPROP/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LARGEROCK",      ["P_NAME"]="LARGEROCK",                ["PATH"]="MODELS/PLANETS/BIOMES/SCORCHED/LARGE/",                                      ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SMALLSPIRE",     ["P_NAME"]="SMALLSPIRE",               ["PATH"]="MODELS/PLANETS/BIOMES/SCORCHED/SMALL/",                                      ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SWAMPROCK01",    ["P_NAME"]="SWAMPROCK01",              ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/SMALLPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="BLOBFRAGMENTS",  ["P_NAME"]="BLOBFRAGMENTS",            ["PATH"]="MODELS/PLANETS/BIOMES/TOXIC/SMALL/",                                         ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="FLATROCK01",     ["P_NAME"]="FLATROCK01",               ["PATH"]="MODELS/PLANETS/DESERT/ROCKS/",                                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON,		["CompositePartObjectIDs"]={"LARGEROCK01","LARGEROCK02","MEDIUMROCK01","MEDIUMROCK02","SMALLROCK01"} },
+    { ["ID_NAME"]="LARGEROCK01",    ["P_NAME"]="LARGEROCK01",              ["PATH"]="MODELS/PLANETS/DESERT/ROCKS/",                                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="LARGEROCK02",    ["P_NAME"]="LARGEROCK02",              ["PATH"]="MODELS/PLANETS/DESERT/ROCKS/",                                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MEDIUMROCK01",   ["P_NAME"]="MEDIUMROCK01",             ["PATH"]="MODELS/PLANETS/DESERT/ROCKS/",                                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="MEDIUMROCK02",   ["P_NAME"]="MEDIUMROCK02",             ["PATH"]="MODELS/PLANETS/DESERT/ROCKS/",                                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="SMALLROCK01",    ["P_NAME"]="SMALLROCK01",              ["PATH"]="MODELS/PLANETS/DESERT/ROCKS/",                                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="HUGEROCKRING",   ["P_NAME"]="HUGEROCKRING",             ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGERING/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="HUGEPLATFORMROK",["P_NAME"]="HUGEPLATFORMROCK",         ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="HUGESPIKEROCK",  ["P_NAME"]="HUGESPIKEROCK",            ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="HUGESPIRE",      ["P_NAME"]="HUGESPIRE",                ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGESCORCHED/",                              ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON,		["CompositePartObjectIDs"]={"HUGESPIRE01","HUGESPIRE03"} },
+    { ["ID_NAME"]="HUGESPIRE01",    ["P_NAME"]="HUGESPIRE01",              ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGESCORCHED/PARTS/",                        ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
+    { ["ID_NAME"]="HUGESPIRE03",    ["P_NAME"]="HUGESPIRE03",              ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGESCORCHED/PARTS/",                        ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="MINERALS-II", ["ICON"]=ROCKICON },
     { ["ID_NAME"]="CLAMSHELL",      ["P_NAME"]="CLAMSHELL",                ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/",                          ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
     { ["ID_NAME"]="METALSPHERE",    ["P_NAME"]="METALSPHERE",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/UNDERWATER/",                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
     { ["ID_NAME"]="SEAURCHIN",      ["P_NAME"]="SEAURCHIN",                ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/UNDERWATER/",                      ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
@@ -242,10 +242,10 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="UWCONTOURPOD",   ["P_NAME"]="UNDERWATERCONTOURPOD",     ["PATH"]="MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/",                              ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
     { ["ID_NAME"]="UWSHELLWHITE",   ["P_NAME"]="UNDERWATERSHELLWHITE",     ["PATH"]="MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/",                              ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
     { ["ID_NAME"]="UNDERWATERSPORE",["P_NAME"]="UNDERWATERSPORE",          ["PATH"]="MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/",                              ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
-    { ["ID_NAME"]="SEABUSH1",       ["P_NAME"]="SEABUSH1",                 ["PATH"]="MODELS/PLANETS/OCEAN/BUSHES/",                                               ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
+    { ["ID_NAME"]="SEABUSH1",       ["P_NAME"]="SEABUSH1",                 ["PATH"]="MODELS/PLANETS/OCEAN/BUSHES/",                                               ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON,		["CompositePartObjectIDs"]={"SEABUSH2","SEABUSH2","SEATREE01"} },
     { ["ID_NAME"]="SEABUSH2",       ["P_NAME"]="SEABUSH2",                 ["PATH"]="MODELS/PLANETS/OCEAN/BUSHES/",                                               ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
     { ["ID_NAME"]="SEATREE01",      ["P_NAME"]="SEATREE01",                ["PATH"]="MODELS/PLANETS/OCEAN/BUSHES/",                                               ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
-    { ["ID_NAME"]="CORALTREE01",    ["P_NAME"]="CORALTREE01",              ["PATH"]="MODELS/PLANETS/OCEAN/CORAL/",                                                ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
+    { ["ID_NAME"]="CORALTREE01",    ["P_NAME"]="CORALTREE01",              ["PATH"]="MODELS/PLANETS/OCEAN/CORAL/",                                                ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON,		["CompositePartObjectIDs"]={"CORALBIG01","CORALBIG01","CORALBIG02","CORALBRAIN01","CORALDISC01","CORALFINGERS01","CORALLUMP01","CORALLUMP02","CORALLUMP03","CORALLUMP04","CORALVASE01"} },
     { ["ID_NAME"]="CORALBIG01",     ["P_NAME"]="CORALBIG01",               ["PATH"]="MODELS/PLANETS/OCEAN/CORAL/PARTS/",                                          ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
     { ["ID_NAME"]="CORALBIG02",     ["P_NAME"]="CORALBIG02",               ["PATH"]="MODELS/PLANETS/OCEAN/CORAL/PARTS/",                                          ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
     { ["ID_NAME"]="CORALBRAIN01",   ["P_NAME"]="CORALBRAIN01",             ["PATH"]="MODELS/PLANETS/OCEAN/CORAL/PARTS/",                                          ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
@@ -258,8 +258,8 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="CORALVASE01",    ["P_NAME"]="CORALVASE01",              ["PATH"]="MODELS/PLANETS/OCEAN/CORAL/PARTS/",                                          ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
     { ["ID_NAME"]="OCEANROCK01",    ["P_NAME"]="OCEANROCK01",              ["PATH"]="MODELS/PLANETS/OCEAN/ROCKS/",                                                ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
     { ["ID_NAME"]="OCEANROCK02",    ["P_NAME"]="OCEANROCK02",              ["PATH"]="MODELS/PLANETS/OCEAN/ROCKS/",                                                ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
+    { ["ID_NAME"]="SEAFLOWER01",    ["P_NAME"]="SEAFLOWER01",              ["PATH"]="MODELS/PLANETS/OCEAN/SHRUBS/",                                               ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON,		["CompositePartObjectIDs"]={"LONGSTRANDS01","SEAFUNGI01","SEAFUNGI02","SEAURCHIN01","SEAURCHIN02","SEAWEED01","SEAWEEDBUSH01","TALLPLANT01","TALLSEAWEED01"} },
     { ["ID_NAME"]="LONGSTRANDS01",  ["P_NAME"]="LONGSTRANDS01",            ["PATH"]="MODELS/PLANETS/OCEAN/SHRUBS/",                                               ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
-    { ["ID_NAME"]="SEAFLOWER01",    ["P_NAME"]="SEAFLOWER01",              ["PATH"]="MODELS/PLANETS/OCEAN/SHRUBS/",                                               ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
     { ["ID_NAME"]="SEAFUNGI01",     ["P_NAME"]="SEAFUNGI01",               ["PATH"]="MODELS/PLANETS/OCEAN/SHRUBS/",                                               ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
     { ["ID_NAME"]="SEAFUNGI02",     ["P_NAME"]="SEAFUNGI02",               ["PATH"]="MODELS/PLANETS/OCEAN/SHRUBS/",                                               ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
     { ["ID_NAME"]="SEAURCHIN01",    ["P_NAME"]="SEAURCHIN01",              ["PATH"]="MODELS/PLANETS/OCEAN/SHRUBS/",                                               ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="SEASTUFF",    ["ICON"]=H2OICON },
@@ -271,12 +271,12 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="CACTUSMED",      ["P_NAME"]="CACTUSMED",                ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/TREES/",                                     ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
     { ["ID_NAME"]="SMALLCACTUS",    ["P_NAME"]="SMALLCACTUS",              ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
     { ["ID_NAME"]="SMALLCACTUS01",  ["P_NAME"]="SMALLCACTUS01",            ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/SMALLPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
-    { ["ID_NAME"]="CACTUSMEDIUM",   ["P_NAME"]="CACTUSMEDIUM",             ["PATH"]="MODELS/PLANETS/DESERT/CACTUS/",                                              ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
+    { ["ID_NAME"]="CACTUSMEDIUM",   ["P_NAME"]="CACTUSMEDIUM",             ["PATH"]="MODELS/PLANETS/DESERT/CACTUS/",                                              ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON,		["CompositePartObjectIDs"]={"CACTUSSMALL","CACTUSTALL"} },
     { ["ID_NAME"]="CACTUSSMALL",    ["P_NAME"]="CACTUSSMALL",              ["PATH"]="MODELS/PLANETS/DESERT/CACTUS/",                                              ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
     { ["ID_NAME"]="CACTUSTALL",     ["P_NAME"]="CACTUSTALL",               ["PATH"]="MODELS/PLANETS/DESERT/CACTUS/",                                              ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
     { ["ID_NAME"]="FUNGALTREE",     ["P_NAME"]="FUNGALTREE",               ["PATH"]="MODELS/PLANETS/BIOMES/TOXIC/LARGE/",                                         ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
     { ["ID_NAME"]="HUGEFUNGUS",     ["P_NAME"]="HUGEFUNGUS",               ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGETOXIC/",                                 ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
-    { ["ID_NAME"]="COLOURFANSHROOM",["P_NAME"]="COLOURFANSHROOM",          ["PATH"]="MODELS/PLANETS/BIOMES/LUSHROOM/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
+    { ["ID_NAME"]="COLOURFANSHROOM",["P_NAME"]="COLOURFANSHROOM",          ["PATH"]="MODELS/PLANETS/BIOMES/LUSHROOM/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON,		["CompositePartObjectIDs"]={"LARGEBLUESHROOM","LGBLSHROOMSING","LARGEFANSHROOM","LGFANSHROOMSING","MEDBLUESHROOM","MEDIUMSHROOM","SMLBLUESHROOMS","SMLSHROOMCLUST"} },
     { ["ID_NAME"]="LARGEBLUESHROOM",["P_NAME"]="LARGEBLUESHROOM",          ["PATH"]="MODELS/PLANETS/BIOMES/LUSHROOM/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
     { ["ID_NAME"]="LGBLSHROOMSING", ["P_NAME"]="LARGEBLUESHROOMSINGLE",    ["PATH"]="MODELS/PLANETS/BIOMES/LUSHROOM/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
     { ["ID_NAME"]="LARGEFANSHROOM", ["P_NAME"]="LARGEFANSHROOM",           ["PATH"]="MODELS/PLANETS/BIOMES/LUSHROOM/",                                            ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
@@ -295,10 +295,10 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="MEDSWAMPGRASS",  ["P_NAME"]="MEDIUMSWAMPGRASS",         ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/MEDIUMPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
     { ["ID_NAME"]="GRASSLUSH",      ["P_NAME"]="GRASSLUSH",                ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/GRASS/",                                    ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
     { ["ID_NAME"]="GRASSSPIKE",     ["P_NAME"]="GRASSSPIKE",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/GRASS/",                                    ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
-    { ["ID_NAME"]="CROSSGRASS",     ["P_NAME"]="CROSSGRASS",               ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
+    { ["ID_NAME"]="CROSSGRASS",     ["P_NAME"]="CROSSGRASS",               ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON,		["CompositePartObjectIDs"]={"GRASSBILLBOARD","SCRUBGRASS"} },
     { ["ID_NAME"]="GRASSBILLBOARD", ["P_NAME"]="GRASSBILLBOARD",           ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
     { ["ID_NAME"]="SCRUBGRASS",     ["P_NAME"]="SCRUBGRASS",               ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
-    { ["ID_NAME"]="BLOBBYGRASS01",  ["P_NAME"]="BLOBBYGRASS01",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/GRASS/",                                        ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
+    { ["ID_NAME"]="BLOBBYGRASS01",  ["P_NAME"]="BLOBBYGRASS01",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/GRASS/",                                        ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON,		["CompositePartObjectIDs"]={"GRASSVAR01","NEWCROSSGRASS","NEWLUSHGRASS","NEWPROCGRASS","NEWSCRUBGRASS","PROCGRASSCLUMP","TALGRASSBILLBRD","THINGRASS01","WILDGRASS01","WILDGRASS02","GRASSSCRUB","CLOVER01","CHEESEPLANT"} },
     { ["ID_NAME"]="GRASSVAR01",     ["P_NAME"]="GRASSVARIATION01",         ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/GRASS/",                                        ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
     { ["ID_NAME"]="NEWCROSSGRASS",  ["P_NAME"]="NEWCROSSGRASS",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/GRASS/",                                        ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
     { ["ID_NAME"]="NEWLUSHGRASS",   ["P_NAME"]="NEWLUSHGRASS",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/GRASS/",                                        ["GROUP_NAME"]="UBB-NATURE-I",   ["SUBGROUP_NAME"]="VEGETATION",  ["ICON"]=FUNGICON },
@@ -335,34 +335,34 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="SCRCHPLANT",     ["P_NAME"]="SCORCHEDPLANT",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/BIOMESPECPLANTS/",             ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="SNOWPLANT01",    ["P_NAME"]="SNOWPLANT",                ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/BIOMESPECPLANTS/",             ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="TOXICPLANT01",   ["P_NAME"]="TOXICPLANT",               ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/BIOMESPECPLANTS/",             ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
-    { ["ID_NAME"]="MEDIUMPLANT01",  ["P_NAME"]="MEDIUMPLANT01",            ["PATH"]="MODELS/PLANETS/BIOMES/ALIEN/MEDIUMPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
+    { ["ID_NAME"]="MEDIUMPLANT01",  ["P_NAME"]="MEDIUMPLANT01",            ["PATH"]="MODELS/PLANETS/BIOMES/ALIEN/MEDIUMPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"MEDIUMPLANT02","MEDIUMPROP01","SMALLPLANT01","SMALLPLANT02"} },
     { ["ID_NAME"]="MEDIUMPLANT02",  ["P_NAME"]="MEDIUMPLANT02",            ["PATH"]="MODELS/PLANETS/BIOMES/ALIEN/MEDIUMPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="MEDIUMPROP01",   ["P_NAME"]="MEDIUMPROP01",             ["PATH"]="MODELS/PLANETS/BIOMES/ALIEN/MEDIUMPROP/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLPLANT01",   ["P_NAME"]="SMALLPLANT01",             ["PATH"]="MODELS/PLANETS/BIOMES/ALIEN/SMALLPLANT/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLPLANT02",   ["P_NAME"]="SMALLPLANT02",             ["PATH"]="MODELS/PLANETS/BIOMES/ALIEN/SMALLPLANT/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
-    { ["ID_NAME"]="MEDIUMBUSH01",   ["P_NAME"]="MEDIUMBUSH01",             ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/MEDIUMPLANT/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
+    { ["ID_NAME"]="MEDIUMBUSH01",   ["P_NAME"]="MEDIUMBUSH01",             ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/MEDIUMPLANT/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"MEDIUMBUSH02","MEDIUMFIRN01","MEDIUMWEED01","SMALLBUSH01","SMALLFIRN01","SMALLSCRUB01"} },
     { ["ID_NAME"]="MEDIUMBUSH02",   ["P_NAME"]="MEDIUMBUSH02",             ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/MEDIUMPLANT/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="MEDIUMFIRN01",   ["P_NAME"]="MEDIUMFIRN01",             ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/MEDIUMPLANT/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="MEDIUMWEED01",   ["P_NAME"]="MEDIUMWEED01",             ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/MEDIUMPLANT/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLBUSH01",    ["P_NAME"]="SMALLBUSH01",              ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/SMALLPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLFIRN01",    ["P_NAME"]="SMALLFIRN01",              ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/SMALLPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLSCRUB01",   ["P_NAME"]="SMALLSCRUB01",             ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/SMALLPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
+    { ["ID_NAME"]="YUKKA",          ["P_NAME"]="YUKKA",                    ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"YUKKA02","GROUNDFLOWER","POOFBUSH","LARGEFLAG","LGFLAGMIDDLE_A","LARGEFLAGTOP_A","SMALLFLAG","FLUFFBUSH","SCRUBBUSH","TRUNK","VOLUMEBUSH"} },
+    { ["ID_NAME"]="YUKKA02",        ["P_NAME"]="YUKKA02",                  ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="GROUNDFLOWER",   ["P_NAME"]="GROUNDFLOWER",             ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="POOFBUSH",       ["P_NAME"]="POOFBUSH",                 ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
-    { ["ID_NAME"]="YUKKA",          ["P_NAME"]="YUKKA",                    ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
-    { ["ID_NAME"]="YUKKA02",        ["P_NAME"]="YUKKA02",                  ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="LARGEFLAG",      ["P_NAME"]="LARGEFLAG",                ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/LARGEPROPS/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="LGFLAGMIDDLE_A", ["P_NAME"]="LARGEFLAGMIDDLE_A",        ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/LARGEPROPS/LARGEFLAGPARTS/",                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="LARGEFLAGTOP_A", ["P_NAME"]="LARGEFLAGTOP_A",           ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/LARGEPROPS/LARGEFLAGPARTS/",                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLFLAG",      ["P_NAME"]="SMALLFLAG",                ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/LARGEPROPS/LARGEFLAGPARTS/",                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
-    { ["ID_NAME"]="MARTIANFLAG01",  ["P_NAME"]="MARTIANFLAG01",            ["PATH"]="MODELS/PLANETS/COMMON/FLAGS/",                                               ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
+    { ["ID_NAME"]="MARTIANFLAG01",  ["P_NAME"]="MARTIANFLAG01",            ["PATH"]="MODELS/PLANETS/COMMON/FLAGS/",                                               ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"MARTIANFLAG02","MARTIANFLAG03"} },
     { ["ID_NAME"]="MARTIANFLAG02",  ["P_NAME"]="MARTIANFLAG02",            ["PATH"]="MODELS/PLANETS/COMMON/FLAGS/",                                               ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="MARTIANFLAG03",  ["P_NAME"]="MARTIANFLAG03",            ["PATH"]="MODELS/PLANETS/COMMON/FLAGS/",                                               ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
     { ["ID_NAME"]="FLUFFBUSH",      ["P_NAME"]="FLUFFBUSH",                ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",    ["ICON"]=VEGICON },
-    { ["ID_NAME"]="SCRUBBUSH",      ["P_NAME"]="SCRUBBUSH",                ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
-    { ["ID_NAME"]="TRUNK",          ["P_NAME"]="TRUNK",                    ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
-    { ["ID_NAME"]="VOLUMEBUSH",     ["P_NAME"]="VOLUMEBUSH",               ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
-    { ["ID_NAME"]="HANGINGPLANTS",  ["P_NAME"]="HANGINGPLANTS",            ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
+    { ["ID_NAME"]="SCRUBBUSH",      ["P_NAME"]="SCRUBBUSH",                ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",   	["ICON"]=VEGICON },
+    { ["ID_NAME"]="TRUNK",          ["P_NAME"]="TRUNK",                    ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",  	["ICON"]=VEGICON },
+    { ["ID_NAME"]="VOLUMEBUSH",     ["P_NAME"]="VOLUMEBUSH",               ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-I",   	["ICON"]=VEGICON },
+    { ["ID_NAME"]="HANGINGPLANTS",  ["P_NAME"]="HANGINGPLANTS",            ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"MEDIUMPLANT","CAVEGRNDLEAVES","DUDLEYA","DUDLEYAVARIANT","SMALLCAVEBUSH","GROUNDFOG","SMLCIELINGPLANT","SMALLGLOWPLANT","SMALLPLANT","SMALLSHRUB"} },
     { ["ID_NAME"]="MEDIUMPLANT",    ["P_NAME"]="MEDIUMPLANT",              ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="CAVEGRNDLEAVES", ["P_NAME"]="CAVEGROUNDLEAVES",         ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/SMALLPLANT/",                                     ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="DUDLEYA",        ["P_NAME"]="DUDLEYA",                  ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/SMALLPLANT/",                                     ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
@@ -374,23 +374,23 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="SMALLPLANT",     ["P_NAME"]="SMALLPLANT",               ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLSHRUB",     ["P_NAME"]="SMALLSHRUB",               ["PATH"]="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/",                                      ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="LARGEPLANT",     ["P_NAME"]="LARGEPLANT",               ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/PLANTS/",                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
-    { ["ID_NAME"]="BUTTERCUP",      ["P_NAME"]="BUTTERCUP",                ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/FLOWERS/",                                      ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
+    { ["ID_NAME"]="BUTTERCUP",      ["P_NAME"]="BUTTERCUP",                ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/FLOWERS/",                                      ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"SCABIOUS","YARROW"} },
     { ["ID_NAME"]="SCABIOUS",       ["P_NAME"]="SCABIOUS",                 ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/FLOWERS/",                                      ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="YARROW",         ["P_NAME"]="YARROW",                   ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/FLOWERS/",                                      ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="SPOREVENT",      ["P_NAME"]="SPOREVENT",                ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/INTERACTIVE/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
-    { ["ID_NAME"]="FERN",           ["P_NAME"]="FERN",                     ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
+    { ["ID_NAME"]="FERN",           ["P_NAME"]="FERN",                     ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"FLOATER","MEDIUMBUSH","MONSTERPLANT","MYRTLEBUSH","SMALLFLOWERS","SPRIGBUSH"} },
     { ["ID_NAME"]="FLOATER",        ["P_NAME"]="FLOATER",                  ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="MEDIUMBUSH",     ["P_NAME"]="MEDIUMBUSH",               ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="MONSTERPLANT",   ["P_NAME"]="MONSTERPLANT",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="MYRTLEBUSH",     ["P_NAME"]="MYRTLEBUSH",               ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLFLOWERS",   ["P_NAME"]="SMALLFLOWERS",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="SPRIGBUSH",      ["P_NAME"]="SPRIGBUSH",                ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/PLANTS/",                                       ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
-    { ["ID_NAME"]="FLOATINGGASBAGS",["P_NAME"]="FLOATINGGASBAGS",          ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/INAIR/",                           ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
+    { ["ID_NAME"]="FLOATINGGASBAGS",["P_NAME"]="FLOATINGGASBAGS",          ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/INAIR/",                           ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"FLOATGASBAGDEST","FLOATRESOURCE"} },
     { ["ID_NAME"]="FLOATGASBAGDEST",["P_NAME"]="FLOATINGGASBAGS_DESTROYED",["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/INAIR/",                           ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="FLOATRESOURCE",  ["P_NAME"]="FLOATINGRESOURCE",         ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/INAIR/GASBAGPARTS/",               ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
+    { ["ID_NAME"]="SHELLSPIKES",    ["P_NAME"]="SHELLSPIKES",              ["PATH"]="MODELS/PLANETS/BIOMES/CORAL/LARGEPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"LARGELUMP1","SCALLOPSHELL","SPIKEYSHELL","CORALDISC","SMALLBLOB","SMALLDISC","SMALLSPIKES"} },
     { ["ID_NAME"]="LARGELUMP1",     ["P_NAME"]="LARGELUMP1",               ["PATH"]="MODELS/PLANETS/BIOMES/CORAL/LARGEPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="SCALLOPSHELL",   ["P_NAME"]="SCALLOPSHELL",             ["PATH"]="MODELS/PLANETS/BIOMES/CORAL/LARGEPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
-    { ["ID_NAME"]="SHELLSPIKES",    ["P_NAME"]="SHELLSPIKES",              ["PATH"]="MODELS/PLANETS/BIOMES/CORAL/LARGEPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="SPIKEYSHELL",    ["P_NAME"]="SPIKEYSHELL",              ["PATH"]="MODELS/PLANETS/BIOMES/CORAL/LARGEPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="CORALDISC",      ["P_NAME"]="CORALDISC",                ["PATH"]="MODELS/PLANETS/BIOMES/CORAL/MEDIUMPROP/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLBLOB",      ["P_NAME"]="SMALLBLOB",                ["PATH"]="MODELS/PLANETS/BIOMES/CORAL/SMALLPROP/",                                     ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
@@ -401,12 +401,12 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="SMLBLOBFRAGMENT",["P_NAME"]="SMALLBLOBFRAGMENT",        ["PATH"]="MODELS/PLANETS/BIOMES/GLOWING/SMALLPROP/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="STALKBRANCH",    ["P_NAME"]="STALKBRANCH",              ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="ICEDECAL",       ["P_NAME"]="ICEDECAL",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/LARGEPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
-    { ["ID_NAME"]="HUGETENDRIL",    ["P_NAME"]="HUGETENDRIL",              ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGETOXIC/",                                 ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
+    { ["ID_NAME"]="HUGETENDRIL",    ["P_NAME"]="HUGETENDRIL",              ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGETOXIC/",                                 ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"FUNGALTREE01","HUGETENDRIL02"} },
     { ["ID_NAME"]="FUNGALTREE01",   ["P_NAME"]="FUNGALTREE01",             ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGETOXIC/PARTS/",                           ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="HUGETENDRIL02",  ["P_NAME"]="HUGETENDRIL02",            ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGETOXIC/PARTS/",                           ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="HUGESTRANDS",    ["P_NAME"]="HUGESTRANDS",              ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEUW/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="HUGESWIRLPLANT", ["P_NAME"]="HUGESWIRLPLANT",           ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEUW/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
-    { ["ID_NAME"]="LARGEBUSH1",     ["P_NAME"]="LARGEBUSH1",               ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
+    { ["ID_NAME"]="LARGEBUSH1",     ["P_NAME"]="LARGEBUSH1",               ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"LARGEPLANT01","LARGEPLANT02","LARGEPLANT03","MEDIUMPLANT03","SMALLSHRUB01","SMALLSHRUB02",} },
     { ["ID_NAME"]="LARGEPLANT01",   ["P_NAME"]="LARGEPLANT01",             ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="LARGEPLANT02",   ["P_NAME"]="LARGEPLANT02",             ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="LARGEPLANT03",   ["P_NAME"]="LARGEPLANT03",             ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
@@ -414,11 +414,11 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="SMALLSHRUB01",   ["P_NAME"]="SMALLSHRUB01",             ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/SMALLPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLSHRUB02",   ["P_NAME"]="SMALLSHRUB02",             ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/SMALLPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
     { ["ID_NAME"]="LILYPAD01",      ["P_NAME"]="LILYPAD01",                ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/SMALLPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-II",   ["ICON"]=VEGICON },
-    { ["ID_NAME"]="CURVEDMEDIUM",   ["P_NAME"]="CURVEDMEDIUM",             ["PATH"]="MODELS/PLANETS/BIOMES/RADIOACTIVE/MEDIUM/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
+    { ["ID_NAME"]="CURVEDMEDIUM",   ["P_NAME"]="CURVEDMEDIUM",             ["PATH"]="MODELS/PLANETS/BIOMES/RADIOACTIVE/MEDIUM/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"MEDIUMSTEAMER","CURVEDSMALL","CURVEFRAGMENT"} },
     { ["ID_NAME"]="MEDIUMSTEAMER",  ["P_NAME"]="MEDIUMSTEAMER",            ["PATH"]="MODELS/PLANETS/BIOMES/RADIOACTIVE/MEDIUM/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="CURVEDSMALL",    ["P_NAME"]="CURVEDSMALL",              ["PATH"]="MODELS/PLANETS/BIOMES/RADIOACTIVE/SMALL/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="CURVEFRAGMENT",  ["P_NAME"]="CURVEFRAGMENT",            ["PATH"]="MODELS/PLANETS/BIOMES/RADIOACTIVE/SMALL/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
-    { ["ID_NAME"]="LARGEMANGROVE",  ["P_NAME"]="LARGEMANGROVE",            ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
+    { ["ID_NAME"]="LARGEMANGROVE",  ["P_NAME"]="LARGEMANGROVE",            ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"LARGEPLANT1","MEDIUMBUSH1","MEDIUMBUSH2","MEDIUMPLANT1","MEDIUMPLANT2","MEDIUMPLANT3","MEDIUMPLANT4","MEDIUMPLANT5","MEDIUMPLANT6","MEDIUMPLANT7","SMLCOLOURFLOW01","SMALLFLOWER01","SMALLPLANT1","SMALLPLANT2","SMALLPLANT3","SMALLWEED01","SMALLWEED02","WATERREED"} },
     { ["ID_NAME"]="LARGEPLANT1",    ["P_NAME"]="LARGEPLANT1",              ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="MEDIUMBUSH1",    ["P_NAME"]="MEDIUMBUSH1",              ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/MEDIUMPLANT/",                              ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="MEDIUMBUSH2",    ["P_NAME"]="MEDIUMBUSH2",              ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/MEDIUMPLANT/",                              ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
@@ -437,10 +437,10 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="SMALLWEED01",    ["P_NAME"]="SMALLWEED01",              ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/SMALLPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLWEED02",    ["P_NAME"]="SMALLWEED02",              ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/SMALLPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="WATERREED",      ["P_NAME"]="WATERREED",                ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/SMALLPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
-    { ["ID_NAME"]="VOLCANICPLANT",  ["P_NAME"]="VOLCANICPLANT",            ["PATH"]="MODELS/PLANETS/BIOMES/SCORCHED/MEDIUM/",                                     ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
+    { ["ID_NAME"]="VOLCANICPLANT",  ["P_NAME"]="VOLCANICPLANT",            ["PATH"]="MODELS/PLANETS/BIOMES/SCORCHED/MEDIUM/",                                     ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"LEAFDROPLET","SMALLFLOWER"} },
     { ["ID_NAME"]="LEAFDROPLET",    ["P_NAME"]="LEAFDROPLET",              ["PATH"]="MODELS/PLANETS/BIOMES/SCORCHED/SMALL/",                                      ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLFLOWER",    ["P_NAME"]="SMALLFLOWER",              ["PATH"]="MODELS/PLANETS/BIOMES/SCORCHED/SMALL/",                                      ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
-    { ["ID_NAME"]="MANGROVELARGE",  ["P_NAME"]="MANGROVELARGE",            ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/LARGEPLANT/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
+    { ["ID_NAME"]="MANGROVELARGE",  ["P_NAME"]="MANGROVELARGE",            ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/LARGEPLANT/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"ROOTBASE","STRAIGHTTREELG","STRAIGHTTREEMED","STRAIGHTTREESML","TANGLEDVINES","VINETREELARGE","MEDIUMTRUNK01","SMALLTWIGS01"} },
     { ["ID_NAME"]="ROOTBASE",       ["P_NAME"]="ROOTBASE",                 ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/LARGEPLANT/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="STRAIGHTTREELG", ["P_NAME"]="STRAIGHTTREELARGE",        ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/LARGEPLANT/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="STRAIGHTTREEMED",["P_NAME"]="STRAIGHTTREEMEDIUM",       ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/LARGEPLANT/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
@@ -449,18 +449,18 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="VINETREELARGE",  ["P_NAME"]="VINETREELARGE",            ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/LARGEPLANT/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="MEDIUMTRUNK01",  ["P_NAME"]="MEDIUMTRUNK01",            ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/MEDIUMPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLTWIGS01",   ["P_NAME"]="SMALLTWIGS01",             ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/SMALLPLANT/",                                    ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
-    { ["ID_NAME"]="LARGEBLOB",      ["P_NAME"]="LARGEBLOB",                ["PATH"]="MODELS/PLANETS/BIOMES/TOXIC/LARGE/",                                         ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
+    { ["ID_NAME"]="LARGEBLOB",      ["P_NAME"]="LARGEBLOB",                ["PATH"]="MODELS/PLANETS/BIOMES/TOXIC/LARGE/",                                         ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"SPONGE","TENDRIL"} },
     { ["ID_NAME"]="SPONGE",         ["P_NAME"]="SPONGE",                   ["PATH"]="MODELS/PLANETS/BIOMES/TOXIC/LARGE/",                                         ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="TENDRIL",        ["P_NAME"]="TENDRIL",                  ["PATH"]="MODELS/PLANETS/BIOMES/TOXIC/LARGE/",                                         ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="PLANT1",         ["P_NAME"]="PLANT1",                   ["PATH"]="MODELS/PLANETS/BIOMES/WOODLAND/MEDIUMPLANT/",                                ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
-    { ["ID_NAME"]="CLIFFSHRUB",     ["P_NAME"]="CLIFFSHRUB",               ["PATH"]="MODELS/PLANETS/COMMON/SHRUBS/",                                              ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
+    { ["ID_NAME"]="CLIFFSHRUB",     ["P_NAME"]="CLIFFSHRUB",               ["PATH"]="MODELS/PLANETS/COMMON/SHRUBS/",                                              ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"FERN01","FERN02","SHRUB01","WEED03","WEED04"} },
     { ["ID_NAME"]="FERN01",         ["P_NAME"]="FERN01",                   ["PATH"]="MODELS/PLANETS/COMMON/SHRUBS/",                                              ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="FERN02",         ["P_NAME"]="FERN02",                   ["PATH"]="MODELS/PLANETS/COMMON/SHRUBS/",                                              ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="SHRUB01",        ["P_NAME"]="SHRUB01",                  ["PATH"]="MODELS/PLANETS/COMMON/SHRUBS/",                                              ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="WEED03",         ["P_NAME"]="WEED03",                   ["PATH"]="MODELS/PLANETS/COMMON/SHRUBS/",                                              ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="WEED04",         ["P_NAME"]="WEED04",                   ["PATH"]="MODELS/PLANETS/COMMON/SHRUBS/",                                              ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="RAINBOWPLANE",   ["P_NAME"]="RAINBOWPLANE",             ["PATH"]="MODELS/PLANETS/SKY/",                                                        ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
-    { ["ID_NAME"]="MEDIUMICEDRIFTS",["P_NAME"]="MEDIUMICEDRIFTS",          ["PATH"]="MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
+    { ["ID_NAME"]="MEDIUMICEDRIFTS",["P_NAME"]="MEDIUMICEDRIFTS",          ["PATH"]="MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/",                                  ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON,		["CompositePartObjectIDs"]={"SMLICEFORMATION","SNOWFRAGMENTS","SMALLSNOWCLUMPS","SNOWCLUMP","SNOWCLUMP01","SNOWCLUMP02","SNOWCLUMP03","SNOWCLUMP04","CONSTRUCT01"} },
     { ["ID_NAME"]="SMLICEFORMATION",["P_NAME"]="SMALLICEFORMATION",        ["PATH"]="MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="SNOWFRAGMENTS",  ["P_NAME"]="SNOWFRAGMENTS",            ["PATH"]="MODELS/PLANETS/BIOMES/FROZEN/SMALLPROPS/",                                   ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="SMALLSNOWCLUMPS",["P_NAME"]="SMALLSNOWCLUMPS",          ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/SMALLPROPS/",                                 ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
@@ -470,130 +470,130 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="SNOWCLUMP03",    ["P_NAME"]="SNOWCLUMP03",              ["PATH"]="MODELS/PLANETS/SNOW/CLUMPS/",                                                ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="SNOWCLUMP04",    ["P_NAME"]="SNOWCLUMP04",              ["PATH"]="MODELS/PLANETS/SNOW/CLUMPS/",                                                ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
     { ["ID_NAME"]="CONSTRUCT01",    ["P_NAME"]="CONSTRUCT01",              ["PATH"]="MODELS/PLANETS/SNOW/CONSTRUCTS/",                                            ["GROUP_NAME"]="UBB-NATURE-II",  ["SUBGROUP_NAME"]="PLANTS-III",  ["ICON"]=VEGICON },
-    { ["ID_NAME"]="BENDYTREE01",    ["P_NAME"]="BENDYTREE01",              ["PATH"]="MODELS/PLANETS/BIOMES/ALIEN/LARGEPLANT/",                                    ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="LARGETREE02",    ["P_NAME"]="LARGETREE02",              ["PATH"]="MODELS/PLANETS/BIOMES/ALIEN/LARGEPLANT/",                                    ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="LARGEFIR01",     ["P_NAME"]="LARGEFIR01",               ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="LARGESPRUCE01",  ["P_NAME"]="LARGESPRUCE01",            ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="MEDDEADTREE01",  ["P_NAME"]="MEDIUMDEADTREE01",         ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="MEDIUMSPRUCE01", ["P_NAME"]="MEDIUMSPRUCE01",           ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="MEDUMBRELLA01",  ["P_NAME"]="MEDIUMUMBRELLA01",         ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMALLCEDAR01",   ["P_NAME"]="SMALLCEDAR01",             ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMALLSPRUCE01",  ["P_NAME"]="SMALLSPRUCE01",            ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HEROPINE",       ["P_NAME"]="HEROPINE",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/TREES/",                                      ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SKINNYPINE",     ["P_NAME"]="SKINNYPINE",               ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/TREES/",                                      ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="TALLPINE",       ["P_NAME"]="TALLPINE",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/TREES/",                                      ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="DRACAENA",       ["P_NAME"]="DRACAENA",                 ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/TREES/",                                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE01",       ["P_NAME"]="HQTREE01",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE02",       ["P_NAME"]="HQTREE02",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE03",       ["P_NAME"]="HQTREE03",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE04",       ["P_NAME"]="HQTREE04",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE05",       ["P_NAME"]="HQTREE05",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE06",       ["P_NAME"]="HQTREE06",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE07",       ["P_NAME"]="HQTREE07",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE08",       ["P_NAME"]="HQTREE08",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE09",       ["P_NAME"]="HQTREE09",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE10",       ["P_NAME"]="HQTREE10",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE11",       ["P_NAME"]="HQTREE11",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE12",       ["P_NAME"]="HQTREE12",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE13",       ["P_NAME"]="HQTREE13",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE14",       ["P_NAME"]="HQTREE14",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE15",       ["P_NAME"]="HQTREE15",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE16",       ["P_NAME"]="HQTREE16",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE17",       ["P_NAME"]="HQTREE17",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE18",       ["P_NAME"]="HQTREE18",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE19",       ["P_NAME"]="HQTREE19",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE20",       ["P_NAME"]="HQTREE20",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE21",       ["P_NAME"]="HQTREE21",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE22",       ["P_NAME"]="HQTREE22",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE23",       ["P_NAME"]="HQTREE23",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE24",       ["P_NAME"]="HQTREE24",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE25",       ["P_NAME"]="HQTREE25",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE26",       ["P_NAME"]="HQTREE26",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE27",       ["P_NAME"]="HQTREE27",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE28",       ["P_NAME"]="HQTREE28",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE29",       ["P_NAME"]="HQTREE29",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE30",       ["P_NAME"]="HQTREE30",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE31",       ["P_NAME"]="HQTREE31",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE32",       ["P_NAME"]="HQTREE32",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE33",       ["P_NAME"]="HQTREE33",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE34",       ["P_NAME"]="HQTREE34",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE35",       ["P_NAME"]="HQTREE35",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE36",       ["P_NAME"]="HQTREE36",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE37",       ["P_NAME"]="HQTREE37",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE38",       ["P_NAME"]="HQTREE38",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE39",       ["P_NAME"]="HQTREE39",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE40",       ["P_NAME"]="HQTREE40",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE41",       ["P_NAME"]="HQTREE41",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE42",       ["P_NAME"]="HQTREE42",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE43",       ["P_NAME"]="HQTREE43",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE44",       ["P_NAME"]="HQTREE44",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE45",       ["P_NAME"]="HQTREE45",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE46",       ["P_NAME"]="HQTREE46",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE47",       ["P_NAME"]="HQTREE47",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE48",       ["P_NAME"]="HQTREE48",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE49",       ["P_NAME"]="HQTREE49",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HUGERINGTREE",   ["P_NAME"]="HUGERINGTREE",             ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGERING/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE50",       ["P_NAME"]="HQTREE50",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE51",       ["P_NAME"]="HQTREE51",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE52",       ["P_NAME"]="HQTREE52",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE53",       ["P_NAME"]="HQTREE53",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE54",       ["P_NAME"]="HQTREE54",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE55",       ["P_NAME"]="HQTREE55",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE56",       ["P_NAME"]="HQTREE56",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE57",       ["P_NAME"]="HQTREE57",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE58",       ["P_NAME"]="HQTREE58",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE59",       ["P_NAME"]="HQTREE59",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE60",       ["P_NAME"]="HQTREE60",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE61",       ["P_NAME"]="HQTREE61",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE62",       ["P_NAME"]="HQTREE62",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE63",       ["P_NAME"]="HQTREE63",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE64",       ["P_NAME"]="HQTREE64",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE65",       ["P_NAME"]="HQTREE65",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE66",       ["P_NAME"]="HQTREE66",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE67",       ["P_NAME"]="HQTREE67",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE68",       ["P_NAME"]="HQTREE68",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE69",       ["P_NAME"]="HQTREE69",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE70",       ["P_NAME"]="HQTREE70",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE71",       ["P_NAME"]="HQTREE71",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE72",       ["P_NAME"]="HQTREE72",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE73",       ["P_NAME"]="HQTREE73",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE74",       ["P_NAME"]="HQTREE74",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="HQTREE75",       ["P_NAME"]="HQTREE75",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="DEADTREE",       ["P_NAME"]="DEADTREE",                 ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="DEADTREEFLAMING",["P_NAME"]="DEADTREEFLAMING",          ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="DEADTREE01",     ["P_NAME"]="DEADTREE01",               ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="DEADTREE02",     ["P_NAME"]="DEADTREE02",               ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="DEADTREE03",     ["P_NAME"]="DEADTREE03",               ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="LARGETREEBARE",  ["P_NAME"]="LARGETREEBARE",            ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/",                                    ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="LARGETREE1",     ["P_NAME"]="LARGETREE1",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="MEDIUMTREE1",    ["P_NAME"]="MEDIUMTREE1",              ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="MEDTREE1SHAKE",  ["P_NAME"]="MEDIUMTREE1SHAKE",         ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="MEDIUMTREE2",    ["P_NAME"]="MEDIUMTREE2",              ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="MEDIUMTREE3",    ["P_NAME"]="MEDIUMTREE3",              ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMALLTREE1",     ["P_NAME"]="SMALLTREE1",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMALLTREE1BASE", ["P_NAME"]="SMALLTREE1BASE",           ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMALLTREE1BENT", ["P_NAME"]="SMALLTREE1BENT",           ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMLTREE1SHAKE",  ["P_NAME"]="SMALLTREE1SHAKE",          ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMALLTREE2",     ["P_NAME"]="SMALLTREE2",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMALLTREE3",     ["P_NAME"]="SMALLTREE3",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMALLTREE4",     ["P_NAME"]="SMALLTREE4",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="TREEVARIANTS",   ["P_NAME"]="TREEVARIANTS",             ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="LARGETREE1IMP",  ["P_NAME"]="LARGETREE1IMP",            ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/IMPOSTERS/",                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="MEDIUMTREE1IMP", ["P_NAME"]="MEDIUMTREE1IMP",           ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/IMPOSTERS/",                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="MEDIUMTREE2IMP", ["P_NAME"]="MEDIUMTREE2IMP",           ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/IMPOSTERS/",                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMALLTREE1IMP",  ["P_NAME"]="SMALLTREE1IMP",            ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/IMPOSTERS/",                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMALLTREE2IMP",  ["P_NAME"]="SMALLTREE2IMP",            ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/IMPOSTERS/",                     ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="MEDFALLENTREE1", ["P_NAME"]="MEDIUMFALLENTREE1",        ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/MEDIUMPLANT/",                              ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="LARGEOAK1",      ["P_NAME"]="LARGEOAK1",                ["PATH"]="MODELS/PLANETS/BIOMES/WOODLAND/LARGEPLANT/",                                 ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="MEDIUMOAK1",     ["P_NAME"]="MEDIUMOAK1",               ["PATH"]="MODELS/PLANETS/BIOMES/WOODLAND/LARGEPLANT/",                                 ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMALLOAK1",      ["P_NAME"]="SMALLOAK1",                ["PATH"]="MODELS/PLANETS/BIOMES/WOODLAND/LARGEPLANT/",                                 ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMALLTREE",      ["P_NAME"]="SMALLTREE",                ["PATH"]="MODELS/PLANETS/DESERT/TREES/",                                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="TWISTEDTREE",    ["P_NAME"]="TWISTEDTREE",              ["PATH"]="MODELS/PLANETS/DESERT/TREES/",                                               ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="FALLENTREE01",   ["P_NAME"]="FALLENTREE01",             ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/MEDIUMPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="RADIOACTIVETREE",["P_NAME"]="RADIOACTIVETREE",          ["PATH"]="MODELS/PLANETS/BIOMES/RADIOACTIVE/LARGE/",                                   ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="MEDGLOWINGTREE1",["P_NAME"]="MEDGLOWINGTREE1",          ["PATH"]="MODELS/PLANETS/BIOMES/GLOWING/LARGEPLANT/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="SMLGLOWINGTREE1",["P_NAME"]="SMALLGLOWINGTREE1",        ["PATH"]="MODELS/PLANETS/BIOMES/GLOWING/LARGEPLANT/",                                  ["GROUP_NAME"]="UBB-NATURE-III", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
-    { ["ID_NAME"]="FIGHTER_PROC",   ["P_NAME"]="FIGHTER_PROC",             ["PATH"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
+    { ["ID_NAME"]="BENDYTREE01",    ["P_NAME"]="BENDYTREE01",              ["PATH"]="MODELS/PLANETS/BIOMES/ALIEN/LARGEPLANT/",                                    ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="LARGETREE02",    ["P_NAME"]="LARGETREE02",              ["PATH"]="MODELS/PLANETS/BIOMES/ALIEN/LARGEPLANT/",                                    ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="LARGEFIR01",     ["P_NAME"]="LARGEFIR01",               ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON,		["CompositePartObjectIDs"]={"LARGESPRUCE01","MEDDEADTREE01","MEDIUMSPRUCE01","MEDUMBRELLA01","SMALLCEDAR01","SMALLSPRUCE01"} },
+    { ["ID_NAME"]="LARGESPRUCE01",  ["P_NAME"]="LARGESPRUCE01",            ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="MEDDEADTREE01",  ["P_NAME"]="MEDIUMDEADTREE01",         ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="MEDIUMSPRUCE01", ["P_NAME"]="MEDIUMSPRUCE01",           ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="MEDUMBRELLA01",  ["P_NAME"]="MEDIUMUMBRELLA01",         ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMALLCEDAR01",   ["P_NAME"]="SMALLCEDAR01",             ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMALLSPRUCE01",  ["P_NAME"]="SMALLSPRUCE01",            ["PATH"]="MODELS/PLANETS/BIOMES/ALPINE/LARGEPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HEROPINE",       ["P_NAME"]="HEROPINE",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/TREES/",                                      ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON,		["CompositePartObjectIDs"]={"SKINNYPINE","TALLPINE"} },
+    { ["ID_NAME"]="SKINNYPINE",     ["P_NAME"]="SKINNYPINE",               ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/TREES/",                                      ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="TALLPINE",       ["P_NAME"]="TALLPINE",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/TREES/",                                      ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="DRACAENA",       ["P_NAME"]="DRACAENA",                 ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/TREES/",                                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE01",       ["P_NAME"]="HQTREE01",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON,		["CompositePartObjectIDs"]={"HQTREE02","HQTREE03","HQTREE04","HQTREE05","HQTREE06","HQTREE07","HQTREE08","HQTREE09","HQTREE10","HQTREE11","HQTREE12","HQTREE13","HQTREE14","HQTREE15","HQTREE16","HQTREE17","HQTREE18","HQTREE19","HQTREE20","HQTREE21","HQTREE22","HQTREE23","HQTREE24","HQTREE25","HQTREE26","HQTREE27","HQTREE28","HQTREE29","HQTREE30","HQTREE31","HQTREE32","HQTREE33","HQTREE34","HQTREE35","HQTREE36","HQTREE37","HQTREE38","HQTREE39","HQTREE40","HQTREE41","HQTREE42","HQTREE43","HQTREE44","HQTREE45","HQTREE46","HQTREE47","HQTREE48","HQTREE49","HUGERINGTREE","HQTREE50","HQTREE51","HQTREE52","HQTREE53","HQTREE54","HQTREE55","HQTREE56","HQTREE57","HQTREE58","HQTREE59","HQTREE60","HQTREE61","HQTREE62","HQTREE63","HQTREE64","HQTREE65","HQTREE66","HQTREE67","HQTREE68","HQTREE69","HQTREE70","HQTREE71","HQTREE72","HQTREE73","HQTREE74","HQTREE75"} },
+    { ["ID_NAME"]="HQTREE02",       ["P_NAME"]="HQTREE02",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE03",       ["P_NAME"]="HQTREE03",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE04",       ["P_NAME"]="HQTREE04",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE05",       ["P_NAME"]="HQTREE05",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE06",       ["P_NAME"]="HQTREE06",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE07",       ["P_NAME"]="HQTREE07",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE08",       ["P_NAME"]="HQTREE08",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE09",       ["P_NAME"]="HQTREE09",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE10",       ["P_NAME"]="HQTREE10",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE11",       ["P_NAME"]="HQTREE11",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE12",       ["P_NAME"]="HQTREE12",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE13",       ["P_NAME"]="HQTREE13",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE14",       ["P_NAME"]="HQTREE14",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE15",       ["P_NAME"]="HQTREE15",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE16",       ["P_NAME"]="HQTREE16",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE17",       ["P_NAME"]="HQTREE17",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE18",       ["P_NAME"]="HQTREE18",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE19",       ["P_NAME"]="HQTREE19",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE20",       ["P_NAME"]="HQTREE20",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE21",       ["P_NAME"]="HQTREE21",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE22",       ["P_NAME"]="HQTREE22",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE23",       ["P_NAME"]="HQTREE23",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE24",       ["P_NAME"]="HQTREE24",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE25",       ["P_NAME"]="HQTREE25",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE26",       ["P_NAME"]="HQTREE26",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE27",       ["P_NAME"]="HQTREE27",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE28",       ["P_NAME"]="HQTREE28",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE29",       ["P_NAME"]="HQTREE29",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE30",       ["P_NAME"]="HQTREE30",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE31",       ["P_NAME"]="HQTREE31",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE32",       ["P_NAME"]="HQTREE32",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE33",       ["P_NAME"]="HQTREE33",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE34",       ["P_NAME"]="HQTREE34",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE35",       ["P_NAME"]="HQTREE35",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE36",       ["P_NAME"]="HQTREE36",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE37",       ["P_NAME"]="HQTREE37",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE38",       ["P_NAME"]="HQTREE38",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE39",       ["P_NAME"]="HQTREE39",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE40",       ["P_NAME"]="HQTREE40",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE41",       ["P_NAME"]="HQTREE41",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE42",       ["P_NAME"]="HQTREE42",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE43",       ["P_NAME"]="HQTREE43",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE44",       ["P_NAME"]="HQTREE44",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE45",       ["P_NAME"]="HQTREE45",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE46",       ["P_NAME"]="HQTREE46",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE47",       ["P_NAME"]="HQTREE47",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE48",       ["P_NAME"]="HQTREE48",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE49",       ["P_NAME"]="HQTREE49",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HUGERINGTREE",   ["P_NAME"]="HUGERINGTREE",             ["PATH"]="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGERING/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-I",     ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE50",       ["P_NAME"]="HQTREE50",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE51",       ["P_NAME"]="HQTREE51",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE52",       ["P_NAME"]="HQTREE52",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE53",       ["P_NAME"]="HQTREE53",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE54",       ["P_NAME"]="HQTREE54",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE55",       ["P_NAME"]="HQTREE55",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE56",       ["P_NAME"]="HQTREE56",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE57",       ["P_NAME"]="HQTREE57",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE58",       ["P_NAME"]="HQTREE58",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE59",       ["P_NAME"]="HQTREE59",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE60",       ["P_NAME"]="HQTREE60",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE61",       ["P_NAME"]="HQTREE61",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE62",       ["P_NAME"]="HQTREE62",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE63",       ["P_NAME"]="HQTREE63",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE64",       ["P_NAME"]="HQTREE64",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE65",       ["P_NAME"]="HQTREE65",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE66",       ["P_NAME"]="HQTREE66",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE67",       ["P_NAME"]="HQTREE67",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE68",       ["P_NAME"]="HQTREE68",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE69",       ["P_NAME"]="HQTREE69",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE70",       ["P_NAME"]="HQTREE70",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE71",       ["P_NAME"]="HQTREE71",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE72",       ["P_NAME"]="HQTREE72",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE73",       ["P_NAME"]="HQTREE73",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE74",       ["P_NAME"]="HQTREE74",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="HQTREE75",       ["P_NAME"]="HQTREE75",                 ["PATH"]="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/",                                ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="DEADTREE",       ["P_NAME"]="DEADTREE",                 ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON,		["CompositePartObjectIDs"]={"DEADTREEFLAMING","DEADTREE01","DEADTREE02","DEADTREE03"} },
+    { ["ID_NAME"]="DEADTREEFLAMING",["P_NAME"]="DEADTREEFLAMING",          ["PATH"]="MODELS/PLANETS/BIOMES/LAVA/LARGEPROPS/",                                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="DEADTREE01",     ["P_NAME"]="DEADTREE01",               ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="DEADTREE02",     ["P_NAME"]="DEADTREE02",               ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="DEADTREE03",     ["P_NAME"]="DEADTREE03",               ["PATH"]="MODELS/PLANETS/BIOMES/NEVADA/LARGEPLANTS/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="LARGETREEBARE",  ["P_NAME"]="LARGETREEBARE",            ["PATH"]="MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/",                                    ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="LARGETREE1",     ["P_NAME"]="LARGETREE1",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON,		["CompositePartObjectIDs"]={"MEDIUMTREE1","MEDTREE1SHAKE","MEDIUMTREE2","MEDIUMTREE3","SMALLTREE1","SMALLTREE1BASE","SMALLTREE1BENT","SMLTREE1SHAKE","SMALLTREE2","SMALLTREE3","SMALLTREE4","TREEVARIANTS","LARGETREE1IMP","MEDIUMTREE1IMP","MEDIUMTREE2IMP","SMALLTREE1IMP","SMALLTREE2IMP","MEDFALLENTREE1"} },
+    { ["ID_NAME"]="MEDIUMTREE1",    ["P_NAME"]="MEDIUMTREE1",              ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="MEDTREE1SHAKE",  ["P_NAME"]="MEDIUMTREE1SHAKE",         ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="MEDIUMTREE2",    ["P_NAME"]="MEDIUMTREE2",              ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="MEDIUMTREE3",    ["P_NAME"]="MEDIUMTREE3",              ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMALLTREE1",     ["P_NAME"]="SMALLTREE1",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMALLTREE1BASE", ["P_NAME"]="SMALLTREE1BASE",           ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMALLTREE1BENT", ["P_NAME"]="SMALLTREE1BENT",           ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMLTREE1SHAKE",  ["P_NAME"]="SMALLTREE1SHAKE",          ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMALLTREE2",     ["P_NAME"]="SMALLTREE2",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMALLTREE3",     ["P_NAME"]="SMALLTREE3",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMALLTREE4",     ["P_NAME"]="SMALLTREE4",               ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="TREEVARIANTS",   ["P_NAME"]="TREEVARIANTS",             ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/",                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="LARGETREE1IMP",  ["P_NAME"]="LARGETREE1IMP",            ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/IMPOSTERS/",                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="MEDIUMTREE1IMP", ["P_NAME"]="MEDIUMTREE1IMP",           ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/IMPOSTERS/",                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="MEDIUMTREE2IMP", ["P_NAME"]="MEDIUMTREE2IMP",           ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/IMPOSTERS/",                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMALLTREE1IMP",  ["P_NAME"]="SMALLTREE1IMP",            ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/IMPOSTERS/",                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMALLTREE2IMP",  ["P_NAME"]="SMALLTREE2IMP",            ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGEPLANT/IMPOSTERS/",                     ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="MEDFALLENTREE1", ["P_NAME"]="MEDIUMFALLENTREE1",        ["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/MEDIUMPLANT/",                              ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="LARGEOAK1",      ["P_NAME"]="LARGEOAK1",                ["PATH"]="MODELS/PLANETS/BIOMES/WOODLAND/LARGEPLANT/",                                 ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON,		["CompositePartObjectIDs"]={"MEDIUMOAK1","SMALLOAK1"} },
+    { ["ID_NAME"]="MEDIUMOAK1",     ["P_NAME"]="MEDIUMOAK1",               ["PATH"]="MODELS/PLANETS/BIOMES/WOODLAND/LARGEPLANT/",                                 ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMALLOAK1",      ["P_NAME"]="SMALLOAK1",                ["PATH"]="MODELS/PLANETS/BIOMES/WOODLAND/LARGEPLANT/",                                 ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMALLTREE",      ["P_NAME"]="SMALLTREE",                ["PATH"]="MODELS/PLANETS/DESERT/TREES/",                                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="TWISTEDTREE",    ["P_NAME"]="TWISTEDTREE",              ["PATH"]="MODELS/PLANETS/DESERT/TREES/",                                               ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="FALLENTREE01",   ["P_NAME"]="FALLENTREE01",             ["PATH"]="MODELS/PLANETS/BIOMES/SWAMP/MEDIUMPLANT/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="RADIOACTIVETREE",["P_NAME"]="RADIOACTIVETREE",          ["PATH"]="MODELS/PLANETS/BIOMES/RADIOACTIVE/LARGE/",                                   ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="MEDGLOWINGTREE1",["P_NAME"]="MEDGLOWINGTREE1",          ["PATH"]="MODELS/PLANETS/BIOMES/GLOWING/LARGEPLANT/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="SMLGLOWINGTREE1",["P_NAME"]="SMALLGLOWINGTREE1",        ["PATH"]="MODELS/PLANETS/BIOMES/GLOWING/LARGEPLANT/",                                  ["GROUP_NAME"]="UBB-NATURE-II", ["SUBGROUP_NAME"]="TREES-II",    ["ICON"]=TREEICON },
+    { ["ID_NAME"]="FIGHTER_PROC",   ["P_NAME"]="FIGHTER_PROC",             ["PATH"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON,		["CompositePartObjectIDs"]={"SCIENTIFIC_PROC","DROPSHIP_PROC","SHUTTLE_PROC","S-CLASS_PROC","BIOSHIP_PROC","SAILSHIP_PROC","VRSPEEDER","WRACER","POLICESHIP","DRONESHIP","DRONESHIPHIS"} },
     { ["ID_NAME"]="SCIENTIFIC_PROC",["P_NAME"]="SCIENTIFIC_PROC",          ["PATH"]="MODELS/COMMON/SPACECRAFT/SCIENTIFIC/",                                       ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="DROPSHIP_PROC",  ["P_NAME"]="DROPSHIP_PROC",            ["PATH"]="MODELS/COMMON/SPACECRAFT/DROPSHIPS/",                                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="SHUTTLE_PROC",   ["P_NAME"]="SHUTTLE_PROC",             ["PATH"]="MODELS/COMMON/SPACECRAFT/SHUTTLE/",                                          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
@@ -602,7 +602,7 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="SAILSHIP_PROC",  ["P_NAME"]="SAILSHIP_PROC",            ["PATH"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="VRSPEEDER",      ["P_NAME"]="VRSPEEDER",                ["PATH"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="WRACER",         ["P_NAME"]="WRACER",                   ["PATH"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
-    { ["ID_NAME"]="MECH_SUIT",      ["P_NAME"]="MECH_SUIT",                ["PATH"]="MODELS/COMMON/VEHICLES/MECH_SUIT/",                                          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
+    { ["ID_NAME"]="MECH_SUIT",      ["P_NAME"]="MECH_SUIT",                ["PATH"]="MODELS/COMMON/VEHICLES/MECH_SUIT/",                                          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON,		["CompositePartObjectIDs"]={"BIKE","BUGGY","HOVERCRAFT","ROVER","SUBMARINE","WHEELEDBIKE"} },
     { ["ID_NAME"]="BIKE",           ["P_NAME"]="BIKE",                     ["PATH"]="MODELS/COMMON/VEHICLES/BIKE/",                                               ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="BUGGY",          ["P_NAME"]="BUGGY",                    ["PATH"]="MODELS/COMMON/VEHICLES/BUGGY/",                                              ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="HOVERCRAFT",     ["P_NAME"]="HOVERCRAFT",               ["PATH"]="MODELS/COMMON/VEHICLES/HOVER/",                                              ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
@@ -612,8 +612,8 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="POLICESHIP",     ["P_NAME"]="POLICESHIP",               ["PATH"]="MODELS/COMMON/SPACECRAFT/POLICE/",                                           ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="DRONESHIP",      ["P_NAME"]="DRONESHIP",                ["PATH"]="MODELS/COMMON/SPACECRAFT/DRONE/",                                            ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="DRONESHIPHIS",   ["P_NAME"]="DRONESHIP",                ["PATH"]="MODELS/COMMON/SPACECRAFT/DRONE/HISTORY/",                                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
+    { ["ID_NAME"]="DRONE",          ["P_NAME"]="DRONE",                    ["PATH"]="MODELS/COMMON/ROBOTS/",                                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON,		["CompositePartObjectIDs"]={"CORRUPTEDDRONE","DRONEARMOURED","DRONESUMMONER","QUADRUPED","WALKER"} },
     { ["ID_NAME"]="CORRUPTEDDRONE", ["P_NAME"]="CORRUPTEDDRONE",           ["PATH"]="MODELS/COMMON/ROBOTS/",                                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
-    { ["ID_NAME"]="DRONE",          ["P_NAME"]="DRONE",                    ["PATH"]="MODELS/COMMON/ROBOTS/",                                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="DRONEARMOURED",  ["P_NAME"]="DRONEARMOURED",            ["PATH"]="MODELS/COMMON/ROBOTS/",                                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="DRONESUMMONER",  ["P_NAME"]="DRONESUMMONER",            ["PATH"]="MODELS/COMMON/ROBOTS/",                                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="QUADRUPED",      ["P_NAME"]="QUADRUPED",                ["PATH"]="MODELS/COMMON/ROBOTS/",                                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
@@ -622,27 +622,27 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="HMDDRONE",       ["P_NAME"]="HMDDRONE",                 ["PATH"]="MODELS/COMMON/HMD/",                                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="PORTAL",         ["P_NAME"]="PORTAL",                   ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PORTAL/",                             ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="PORTALTERMINAL", ["P_NAME"]="PORTALTERMINAL",           ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PORTAL/",                             ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
-    { ["ID_NAME"]="GUNSHOP",        ["P_NAME"]="GUNSHOP",                  ["PATH"]="MODELS/SPACE/NEXUS/PARTS/SHOPS/",                                            ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="GUNSHOP",        ["P_NAME"]="GUNSHOP",                  ["PATH"]="MODELS/SPACE/NEXUS/PARTS/SHOPS/",                                            ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON,		["CompositePartObjectIDs"]={"SHIPSHOP","SUITSHOP","VEHICLESHOP","NEXUSBLUPRNTANA","NEXUSSEASONTERM","NEXUSTOWER"} },
     { ["ID_NAME"]="SHIPSHOP",       ["P_NAME"]="SHIPSHOP",                 ["PATH"]="MODELS/SPACE/NEXUS/PARTS/SHOPS/",                                            ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="SUITSHOP",       ["P_NAME"]="SUITSHOP",                 ["PATH"]="MODELS/SPACE/NEXUS/PARTS/SHOPS/",                                            ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="VEHICLESHOP",    ["P_NAME"]="VEHICLESHOP",              ["PATH"]="MODELS/SPACE/NEXUS/PARTS/SHOPS/",                                            ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="NEXUSBLUPRNTANA",["P_NAME"]="NEXUSBLUEPRINTANALYSER",   ["PATH"]="MODELS/SPACE/NEXUS/PARTS/TERMINALS/",                                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="NEXUSSEASONTERM",["P_NAME"]="NEXUSSEASONTERMINAL",      ["PATH"]="MODELS/SPACE/NEXUS/PARTS/TERMINALS/",                                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="NEXUSTOWER",     ["P_NAME"]="NEXUSTOWER",               ["PATH"]="MODELS/SPACE/NEXUS/PARTS/TOWER/",                                            ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
-    { ["ID_NAME"]="TERMINAL",       ["P_NAME"]="TERMINAL",                 ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TERMINAL/",                           ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="TERMINAL",       ["P_NAME"]="TERMINAL",                 ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TERMINAL/",                           ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON,		["CompositePartObjectIDs"]={"TERM_TADINGPOST","SHIPSALVAGETERM","MULTITOOLSALVAG"} },
     { ["ID_NAME"]="TERM_TADINGPOST",["P_NAME"]="TERMINAL_TADINGPOST",      ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TERMINAL/",                           ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="SHIPSALVAGETERM",["P_NAME"]="SHIPSALVAGETERMINAL",      ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/",          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="MULTITOOLSALVAG",["P_NAME"]="MULTITOOLSALVAGETERMINAL", ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/",          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
-    { ["ID_NAME"]="GUILDSHOP",      ["P_NAME"]="GUILDSHOP",                ["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/",                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="GUILDSHOP",      ["P_NAME"]="GUILDSHOP",                ["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/",                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON,		["CompositePartObjectIDs"]={"MAPSHOP","MISSIONSHOP","WEAPONSHOP"} },
     { ["ID_NAME"]="MAPSHOP",        ["P_NAME"]="MAPSHOP",                  ["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/",                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="MISSIONSHOP",    ["P_NAME"]="MISSIONSHOP",              ["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/",                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="WEAPONSHOP",     ["P_NAME"]="WEAPONSHOP",               ["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/",                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
-    { ["ID_NAME"]="EGGMACHINE",     ["P_NAME"]="EGGMACHINE",               ["PATH"]="MODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/",                                     ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="EGGMACHINE",     ["P_NAME"]="EGGMACHINE",               ["PATH"]="MODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/",                                     ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON,		["CompositePartObjectIDs"]={"LARGETERMINAL","SPECIALSHOP","MECHANICALCORE"} },
     { ["ID_NAME"]="LARGETERMINAL",  ["P_NAME"]="LARGETERMINAL",            ["PATH"]="MODELS/SPACE/NEXUS/PARTS/BRIDGE/",                                           ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="SPECIALSHOP",    ["P_NAME"]="SPECIALSHOP",              ["PATH"]="MODELS/SPACE/NEXUS/PARTS/CENTRALPOINT/",                                     ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="MECHANICALCORE", ["P_NAME"]="MECHANICALCORE",           ["PATH"]="MODELS/SPACE/NEXUS/PARTS/CORE/",                                             ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="ATLASCORE",      ["P_NAME"]="ATLASCORE",                ["PATH"]="MODELS/SPACE/ATLASSTATION/MODULARPARTS/ATLASCORE/",                          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON,		["CompositePartObjectIDs"]={"PATHDISK","BLUEORB","GREENORB","REDORB","WHITEORB","END_1_INTERACT","INTERACTIONCORE","END_2_INTERACT","INTERACTSTONE_1","PATHORB","ATLASSTONE"} },
     { ["ID_NAME"]="PATHDISK",       ["P_NAME"]="PATHDISK",                 ["PATH"]="MODELS/SPACE/ATLASSTATION/MODULARPARTS/INTERIOR/",                           ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
-    { ["ID_NAME"]="ATLASCORE",      ["P_NAME"]="ATLASCORE",                ["PATH"]="MODELS/SPACE/ATLASSTATION/MODULARPARTS/ATLASCORE/",                          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="BLUEORB",        ["P_NAME"]="BLUEORB",                  ["PATH"]="MODELS/SPACE/ATLASSTATION/MODULARPARTS/INTERIOR/ENDING_2_INTERACTION/ORBS/", ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="GREENORB",       ["P_NAME"]="GREENORB",                 ["PATH"]="MODELS/SPACE/ATLASSTATION/MODULARPARTS/INTERIOR/ENDING_2_INTERACTION/ORBS/", ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="REDORB",         ["P_NAME"]="REDORB",                   ["PATH"]="MODELS/SPACE/ATLASSTATION/MODULARPARTS/INTERIOR/ENDING_2_INTERACTION/ORBS/", ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
@@ -655,12 +655,12 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="ATLASSTONE",     ["P_NAME"]="ATLASSTONE",               ["PATH"]="MODELS/SPACE/ATLASSTATION/MODULARPARTS/INTERIOR/ENDING_1_INTERACTION/",      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="THEREMIN",       ["P_NAME"]="THEREMIN",                 ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/",          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="TELEPORT_NEXUS", ["P_NAME"]="TELEPORTER_NEXUS",         ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/COMMONPARTS/",                  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
-    { ["ID_NAME"]="MAINBATTERY",    ["P_NAME"]="MAINBATTERY",              ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/COMMONPARTS/SCENES/",                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="MAINBATTERY",    ["P_NAME"]="MAINBATTERY",              ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/COMMONPARTS/SCENES/",                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON,		["CompositePartObjectIDs"]={"TURRETA","TURRETB","OLDTURRET"} },
     { ["ID_NAME"]="TURRETA",        ["P_NAME"]="TURRETA",                  ["PATH"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/TURRET/",                                ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="TURRETB",        ["P_NAME"]="TURRETB",                  ["PATH"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/TURRET/",                                ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="OLDTURRET",      ["P_NAME"]="OLDTURRET",                ["PATH"]="MODELS/PLANETS/SNOW/WRECKS/",                                                ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="SENTINELHIVE",   ["P_NAME"]="SENTINELHIVE",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SENTINELHIVE/",                       ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
-    { ["ID_NAME"]="MOD_COOLTOWER",  ["P_NAME"]="MODULE_COOLINGTOWER",      ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UTILITYPARTS/",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="MOD_COOLTOWER",  ["P_NAME"]="MODULE_COOLINGTOWER",      ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UTILITYPARTS/",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON,		["CompositePartObjectIDs"]={"MOD_DISTRIBUTOR","MOD_WINDTURBINE"} },
     { ["ID_NAME"]="MOD_DISTRIBUTOR",["P_NAME"]="MODULE_DISTRIBUTOR",       ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UTILITYPARTS/",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="MOD_WINDTURBINE",["P_NAME"]="MODULE_WINDTURBINE",       ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UTILITYPARTS/",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="LANDPADCUSTOM",  ["P_NAME"]="LANDINGPADCUSTOMISER",     ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/",          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
@@ -679,8 +679,8 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="OBSERVTRADE",    ["P_NAME"]="OBSERVATORYTRADER",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/OBSERVATORY/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="CRYOCHAMBER",    ["P_NAME"]="CRYOCHAMBER",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/COMMONPARTS/",                  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="HOLOGRAM",       ["P_NAME"]="HOLOGRAM",                 ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/COMMONPARTS/OBSERVATORY/",      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="RUINS",          ["P_NAME"]="RUINS",                    ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/",                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON,		["CompositePartObjectIDs"]={"PLAQUE","STANDINGSTONE","STANDINGSTONE_A","STANDINGSTONE_B","STANDINGSTONE_C","STANDINGSTONE_D","WORDSTONE","RELIC","PROCRUINS"} },
     { ["ID_NAME"]="PLAQUE",         ["P_NAME"]="PLAQUE",                   ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/",                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
-    { ["ID_NAME"]="RUINS",          ["P_NAME"]="RUINS",                    ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/",                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="STANDINGSTONE",  ["P_NAME"]="STANDINGSTONE",            ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/",                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="STANDINGSTONE_A",["P_NAME"]="STANDINGSTONE_A",          ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/",                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="STANDINGSTONE_B",["P_NAME"]="STANDINGSTONE_B",          ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/",                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
@@ -691,10 +691,10 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="RADIOTOWERTRADE",["P_NAME"]="RADIOTOWERTRADER",         ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RADIOTOWER/",                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="RELIC",          ["P_NAME"]="RELIC",                    ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RELIC/",                              ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="PROCRUINS",      ["P_NAME"]="PROCRUINS",                ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/",                              ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
-    { ["ID_NAME"]="SHACK",          ["P_NAME"]="SHACK",                    ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SHACK/SHACKWARRIOR_PARTS/",           ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="SHACK",          ["P_NAME"]="SHACK",                    ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SHACK/SHACKWARRIOR_PARTS/",           ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON,		["CompositePartObjectIDs"]={"SHELTER","WATERTOWER"} },
     { ["ID_NAME"]="SHELTER",        ["P_NAME"]="SHELTER",                  ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SHACK/SHACKTRADER_PARTS/",            ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="WATERTOWER",     ["P_NAME"]="WATERTOWER",               ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SHACK/SHACKTRADER_PARTS/",            ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
-    { ["ID_NAME"]="TRADINGPOST",    ["P_NAME"]="TRADINGPOST",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TRADINGPOST/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="TRADINGPOST",    ["P_NAME"]="TRADINGPOST",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TRADINGPOST/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON,		["CompositePartObjectIDs"]={"TRADPOSTTRADE","TRADINGPOSTWAR","TRADINGPOSTSCI"} },
     { ["ID_NAME"]="TRADPOSTTRADE",  ["P_NAME"]="TRADINGPOSTTRADER",        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TRADINGPOST/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="TRADINGPOSTWAR", ["P_NAME"]="TRADINGPOSTWARRIOR",       ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TRADINGPOST/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="TRADINGPOSTSCI", ["P_NAME"]="TRADINGPOSTSCIENTIFIC",    ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TRADINGPOST/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
@@ -704,20 +704,20 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="SMALLMONOLITH",  ["P_NAME"]="SMALLMONOLITH",            ["PATH"]="MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/",                              ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="WAYPOINT",       ["P_NAME"]="WAYPOINT",                 ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/",               ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="BLDSHIPSUMZONE", ["P_NAME"]="BUILDSHIPSUMMONZONE",      ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/",               ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="SPACESTATION",   ["P_NAME"]="SPACESTATION",             ["PATH"]="MODELS/SPACE/SPACESTATION/",                                                 ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON,		["CompositePartObjectIDs"]={"SPACESTATN_ABAN","ANOMALY","ATLASSTATION","NEXUS","BLACKHOLE"} },
+    { ["ID_NAME"]="SPACESTATN_ABAN",["P_NAME"]="SPACESTATION_ABANDONED",   ["PATH"]="MODELS/SPACE/SPACESTATION/",                                                 ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="ANOMALY",        ["P_NAME"]="ANOMALY",                  ["PATH"]="MODELS/SPACE/ANOMALY/",                                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="ATLASSTATION",   ["P_NAME"]="ATLASSTATION",             ["PATH"]="MODELS/SPACE/ATLASSTATION/",                                                 ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="NEXUS",          ["P_NAME"]="NEXUS",                    ["PATH"]="MODELS/SPACE/NEXUS/",                                                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
-    { ["ID_NAME"]="SPACESTATION",   ["P_NAME"]="SPACESTATION",             ["PATH"]="MODELS/SPACE/SPACESTATION/",                                                 ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
-    { ["ID_NAME"]="SPACESTATN_ABAN",["P_NAME"]="SPACESTATION_ABANDONED",   ["PATH"]="MODELS/SPACE/SPACESTATION/",                                                 ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="BLACKHOLE",      ["P_NAME"]="BLACKHOLE",                ["PATH"]="MODELS/SPACE/BLACKHOLE/",                                                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
-    { ["ID_NAME"]="CAPFRTR_PROC",   ["P_NAME"]="CAPITALFREIGHTER_PROC",    ["PATH"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/",                                       ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
+    { ["ID_NAME"]="CAPFRTR_PROC",   ["P_NAME"]="CAPITALFREIGHTER_PROC",    ["PATH"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/",                                       ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON,		["CompositePartObjectIDs"]={"FRTRSML_PROC","FRTRTINY_PROC","FREIGHTER_A","FREIGHTER_PROC","FREIGHTSHIP01","SMALLTRANSPORT2"} },
     { ["ID_NAME"]="FRTRSML_PROC",   ["P_NAME"]="FREIGHTERSMALL_PROC",      ["PATH"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/",                                       ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="FRTRTINY_PROC",  ["P_NAME"]="FREIGHTERTINY_PROC",       ["PATH"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/",                                       ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="FREIGHTER_A",    ["P_NAME"]="FREIGHTER_A",              ["PATH"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/",                                       ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="FREIGHTER_PROC", ["P_NAME"]="FREIGHTER_PROC",           ["PATH"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/",                                       ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="FREIGHTSHIP01",  ["P_NAME"]="FREIGHTSHIP01",            ["PATH"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/",                                       ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="SMALLTRANSPORT2",["P_NAME"]="SMALLTRANSPORT2",          ["PATH"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/",                                       ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
-    { ["ID_NAME"]="HOLOCOMBAT",     ["P_NAME"]="HOLOCOMBAT",               ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/HOLOGRAMFRIGATES/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
+    { ["ID_NAME"]="HOLOCOMBAT",     ["P_NAME"]="HOLOCOMBAT",               ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/HOLOGRAMFRIGATES/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON,		["CompositePartObjectIDs"]={"HOLODIPLOMATIC","HOLOINDUSTRIAL","HOLOLIVING","HOLOPIRATE","HOLONORMANDY","HOLOSCIENCE","HOLOSUPPORT"} },
     { ["ID_NAME"]="HOLODIPLOMATIC", ["P_NAME"]="HOLODIPLOMATIC",           ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/HOLOGRAMFRIGATES/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="HOLOINDUSTRIAL", ["P_NAME"]="HOLOINDUSTRIAL",           ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/HOLOGRAMFRIGATES/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="HOLOLIVING",     ["P_NAME"]="HOLOLIVING",               ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/HOLOGRAMFRIGATES/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
@@ -725,7 +725,7 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="HOLONORMANDY",   ["P_NAME"]="HOLONORMANDY",             ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/HOLOGRAMFRIGATES/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="HOLOSCIENCE",    ["P_NAME"]="HOLOSCIENCE",              ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/HOLOGRAMFRIGATES/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="HOLOSUPPORT",    ["P_NAME"]="HOLOSUPPORT",              ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/HOLOGRAMFRIGATES/",                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
-    { ["ID_NAME"]="SUPPORTFRIGLOD0",["P_NAME"]="SUPPORTFRIGATELOD0",       ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
+    { ["ID_NAME"]="SUPPORTFRIGLOD0",["P_NAME"]="SUPPORTFRIGATELOD0",       ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON,		["CompositePartObjectIDs"]={"GHOSTFRIGLOD0","NORMANFRIGLOD0","DIPLOMAFRIGLOD0","INDUSTFRIGLOD0","SCIFRIGLOD0","COMBATFRIGLOD0","LIVINGFRIGLOD0"} },
     { ["ID_NAME"]="GHOSTFRIGLOD0",  ["P_NAME"]="GHOSTSHIPFRIGATELOD0",     ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="NORMANFRIGLOD0", ["P_NAME"]="NORMANDYFRIGATELOD0",      ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="DIPLOMAFRIGLOD0",["P_NAME"]="DIPLOMATICFRIGATELOD0",    ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
@@ -734,7 +734,7 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="COMBATFRIGLOD0", ["P_NAME"]="COMBATFRIGATELOD0",        ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="LIVINGFRIGLOD0", ["P_NAME"]="LIVINGFRIGATELOD0",        ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="POLICEFREIGHTER",["P_NAME"]="POLICEFREIGHTER",          ["PATH"]="MODELS/COMMON/SPACECRAFT/POLICE/",                                           ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
-    { ["ID_NAME"]="ASTEROIDXL",     ["P_NAME"]="ASTEROIDXL",               ["PATH"]="MODELS/SPACE/ASTEROIDS/",                                                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
+    { ["ID_NAME"]="ASTEROIDXL",     ["P_NAME"]="ASTEROIDXL",               ["PATH"]="MODELS/SPACE/ASTEROIDS/",                                                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON,		["CompositePartObjectIDs"]={"GIANTASTEROID","SMALLASTEROID","ASTERDEBRIS01","ASTEROID01","ASTERSUBSTANCE","BIGASTEROID01","BIGASTERDEBRIS"} },
     { ["ID_NAME"]="GIANTASTEROID",  ["P_NAME"]="GIANTASTEROID",            ["PATH"]="MODELS/SPACE/ASTEROIDS/",                                                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="SMALLASTEROID",  ["P_NAME"]="SMALLASTEROID",            ["PATH"]="MODELS/SPACE/ASTEROIDS/",                                                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="ASTERDEBRIS01",  ["P_NAME"]="ASTEROIDDEBRIS01",         ["PATH"]="MODELS/SPACE/ASTEROIDS/DEBRIS/",                                             ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
@@ -742,7 +742,7 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="ASTERSUBSTANCE", ["P_NAME"]="ASTEROIDSUBSTANCE",        ["PATH"]="MODELS/SPACE/ASTEROIDS/DESTRUCTIBLE/",                                       ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="BIGASTEROID01",  ["P_NAME"]="BIGASTEROID01",            ["PATH"]="MODELS/SPACE/ASTEROIDS/NONDESTRUCTIBLE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="BIGASTERDEBRIS", ["P_NAME"]="BIGASTEROIDDEBRIS",        ["PATH"]="MODELS/SPACE/ASTEROIDS/NONDESTRUCTIBLE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
-    { ["ID_NAME"]="ALOEFLESH",      ["P_NAME"]="ALOEFLESH",                ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/",                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="COOKING",     ["ICON"]=COOKICON },
+    { ["ID_NAME"]="ALOEFLESH",      ["P_NAME"]="ALOEFLESH",                ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/",                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="COOKING",     ["ICON"]=COOKICON,		["CompositePartObjectIDs"]={"BLOODYORGAN","CREATUREPELLETS","ENZYMEFLUID","FERMENTEDFRUIT","FIREBERRY","FIREFLIES","FOODGROUNDMEAT","FROZENTUBERS","GRAHFRUIT","HEPTAWHEAT","HEXABERRY","IMPULSEBEANS","JADEPEAS","PHEROMONESACK","PULPYROOTS","SCENTEDHERBS","SWEETCOMPOST","SWEETROOT","SYNTHETICWORMS"} },
     { ["ID_NAME"]="BLOODYORGAN",    ["P_NAME"]="BLOODYORGAN",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/",                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="COOKING",     ["ICON"]=COOKICON },
     { ["ID_NAME"]="CREATUREPELLETS",["P_NAME"]="CREATUREPELLETS",          ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/",                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="COOKING",     ["ICON"]=COOKICON },
     { ["ID_NAME"]="ENZYMEFLUID",    ["P_NAME"]="ENZYMEFLUID",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/",                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="COOKING",     ["ICON"]=COOKICON },
@@ -786,7 +786,7 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="SPOREBAG_DEST",  ["P_NAME"]="SPOREBAG_DESTROYED",       ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/",                          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="EXTRAS",      ["ICON"]=EXTRAICON },
     { ["ID_NAME"]="UNDERGROUNDPROP",["P_NAME"]="UNDERGROUNDPROP",          ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/",                          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="EXTRAS",      ["ICON"]=EXTRAICON },
     { ["ID_NAME"]="FIENDEGGREWARD", ["P_NAME"]="FIENDEGGREWARD",           ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/FIENDEGGPARTS/",            ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="EXTRAS",      ["ICON"]=EXTRAICON },
-    { ["ID_NAME"]="SCRAPCOREA",     ["P_NAME"]="SCRAPCOREA",               ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/SCRAPHEAPMODULES/",         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="EXTRAS",      ["ICON"]=EXTRAICON },
+    { ["ID_NAME"]="SCRAPCOREA",     ["P_NAME"]="SCRAPCOREA",               ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/SCRAPHEAPMODULES/",         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="EXTRAS",      ["ICON"]=EXTRAICON,		["CompositePartObjectIDs"]={"SCRAPCOREB","SCRAPCOREC","SCRAPMODULEA","SCRAPMODULEB","SCRAPMODULEC","SCRAPMODULED","SCRAPMODULEE","SCRAPMODULEF","SCRAPMODULEG","SCRAPMODULEH","SCRAPMODULEGI"} },
     { ["ID_NAME"]="SCRAPCOREB",     ["P_NAME"]="SCRAPCOREB",               ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/SCRAPHEAPMODULES/",         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="EXTRAS",      ["ICON"]=EXTRAICON },
     { ["ID_NAME"]="SCRAPCOREC",     ["P_NAME"]="SCRAPCOREC",               ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/SCRAPHEAPMODULES/",         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="EXTRAS",      ["ICON"]=EXTRAICON },
     { ["ID_NAME"]="SCRAPMODULEA",   ["P_NAME"]="SCRAPMODULEA",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/SCRAPHEAPMODULES/",         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="EXTRAS",      ["ICON"]=EXTRAICON },
@@ -799,164 +799,179 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="SCRAPMODULEH",   ["P_NAME"]="SCRAPMODULEH",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/SCRAPHEAPMODULES/",         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="EXTRAS",      ["ICON"]=EXTRAICON },
     { ["ID_NAME"]="SCRAPMODULEI",   ["P_NAME"]="SCRAPMODULEI",             ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/SCRAPHEAPMODULES/",         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="EXTRAS",      ["ICON"]=EXTRAICON },
     { ["ID_NAME"]="DEBRISLG_COMMON",["P_NAME"]="DEBRISLARGE_COMMON",       ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/",                             ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="EXTRAS",      ["ICON"]=EXTRAICON },
-    { ["ID_NAME"]="BEAMSTONE",      ["P_NAME"]="BEAMSTONE",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HOVERING",       ["P_NAME"]="HOVERING",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HUGEBEAM",       ["P_NAME"]="HUGEBEAM",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SMALLSTONE",     ["P_NAME"]="SMALLSTONE",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BURST",          ["P_NAME"]="BURST",                    ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BURSTB",         ["P_NAME"]="BURSTB",                   ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BURSTC",         ["P_NAME"]="BURSTC",                   ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HOVERINGINST",   ["P_NAME"]="HOVERINGINST",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BONEBLOBS",      ["P_NAME"]="BONEBLOBS",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BONEFRUIT01",    ["P_NAME"]="BONEFRUIT",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BONEGRASS",      ["P_NAME"]="BONEGRASS",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BONESPINE",      ["P_NAME"]="BONESPINE",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BONEFIN1",       ["P_NAME"]="BONEFIN",                  ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BONEFIN2",       ["P_NAME"]="BONEFIN2",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BONESEED1",      ["P_NAME"]="BONESEED",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BONESPORE",      ["P_NAME"]="BONESPORE",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BONESPORE2",     ["P_NAME"]="BONESPORE2",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BONETREE1",      ["P_NAME"]="BONETREE",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BONETREEBIGGLOW",["P_NAME"]="BONETREEBIGGLOW",          ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BONETREEDAMAGED",["P_NAME"]="BONETREEDAMAGED",          ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="CONTOURDETAIL",  ["P_NAME"]="CONTOURDETAIL",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/",                                       ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="CONTOUROBJECT",  ["P_NAME"]="CONTOUROBJECT",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/",                                       ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="CONTOURPOD",     ["P_NAME"]="CONTOURPOD",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/",                                       ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="CONTOURTOWER",   ["P_NAME"]="CONTOURTOWER",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/",                                       ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="CORRUPTDRONEPIL",["P_NAME"]="CORRUPTEDDRONEPILE",       ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/INTERACTIVE/",                                  ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="DEADBUBBLE",     ["P_NAME"]="DEADBUBBLE",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/ELBUBBLE/",                                      ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="DETAILBUBBLE",   ["P_NAME"]="DETAILBUBBLE",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/ELBUBBLE/",                                      ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="ELBUBBLE",       ["P_NAME"]="ELBUBBLE",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/ELBUBBLE/",                                      ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SMALLBUBBLE",    ["P_NAME"]="SMALLBUBBLE",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/ELBUBBLE/",                                      ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="CYLINDER",       ["P_NAME"]="CYLINDER",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="FLAP",           ["P_NAME"]="FLAP",                     ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SHAPE1FLOAT",    ["P_NAME"]="SHAPE1FLOAT",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="DETAILSHAPE",    ["P_NAME"]="DETAILSHAPE",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/",                                       ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="DETAILSHAPEB",   ["P_NAME"]="DETAILSHAPEB",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/",                                       ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HOVERINGDETAIL", ["P_NAME"]="HOVERINGDETAIL",           ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/",                                       ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="ROTATINGDETAIL", ["P_NAME"]="ROTATINGDETAIL",           ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/",                                       ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="CRYSTAL",        ["P_NAME"]="CRYSTAL",                  ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="CRYSTALTINY",    ["P_NAME"]="CRYSTALTINY",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="LARGECRYSTAL",   ["P_NAME"]="LARGECRYSTAL",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="LRGCRYSTALBROKE",["P_NAME"]="LARGECRYSTALBROKEN",       ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="LRGCRYSTALSINGL",["P_NAME"]="LARGECRYSTALSINGLE",       ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SMALLCRYSTAL",   ["P_NAME"]="SMALLCRYSTAL",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SPIKYPOTATO",    ["P_NAME"]="SPIKYPOTATO",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="VORONOITREE",    ["P_NAME"]="VORONOITREE",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HYDROGARDENMSTR",["P_NAME"]="HYDROGARDENMASTER",        ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HYDROPOD",       ["P_NAME"]="HYDROPOD",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HYDROPODDEAD",   ["P_NAME"]="HYDROPODDEAD",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HYDROPODFLOAT",  ["P_NAME"]="HYDROPODFLOAT",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HYDROPODFLOTDED",["P_NAME"]="HYDROPODFLOATDEAD",        ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HYDROPODGROWING",["P_NAME"]="HYDROPODGROWING",          ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HYDROPODGROWDED",["P_NAME"]="HYDROPODGROWINGDEAD",      ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HYDROPODOFF",    ["P_NAME"]="HYDROPODOFF",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="WEIRDLUSHGRASS", ["P_NAME"]="WEIRDLUSHGRASS",           ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="WEIRDMEDIUMBUSH",["P_NAME"]="WEIRDMEDIUMBUSH",          ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="LARGEMUSHROOM",  ["P_NAME"]="LARGEMUSHROOM",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="LRGMUSHROOMDEAD",["P_NAME"]="LARGEMUSHROOMDEAD",        ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SHELLCRYSTSLICE",["P_NAME"]="SHELLCRYSTALSLICES",       ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SHELLFLY",       ["P_NAME"]="SHELLFLY",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SHELLFLYPLANT",  ["P_NAME"]="SHELLFLYPLANT",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SHELLGRASS01",   ["P_NAME"]="SHELLGRASS",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SHELLHUSK01",    ["P_NAME"]="SHELLHUSK",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SHELLSHELF",     ["P_NAME"]="SHELLSHELF",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SHELLWHITE",     ["P_NAME"]="SHELLWHITE",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SHELLSAIL1",     ["P_NAME"]="SHELLSAIL",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SHELLSHARD1",    ["P_NAME"]="SHELLSHARD",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SINGLEJOINT",    ["P_NAME"]="SINGLEJOINT",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/MSTRUCTURES/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SMALLJOINT",     ["P_NAME"]="SMALLJOINT",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/MSTRUCTURES/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="MSTRUCTURE",     ["P_NAME"]="MSTRUCTURE",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/MSTRUCTURES/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="FLOATJOINT",     ["P_NAME"]="FLOATJOINT",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/MSTRUCTURES/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="FLOORPIECES",    ["P_NAME"]="FLOORPIECES",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/SHARDS/",                                        ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="FLOORSHARD",     ["P_NAME"]="FLOORSHARD",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/SHARDS/",                                        ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SHARD",          ["P_NAME"]="SHARD",                    ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/SHARDS/",                                        ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SHARDALT",       ["P_NAME"]="SHARDALT",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/SHARDS/",                                        ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SINGLESHARD",    ["P_NAME"]="SINGLESHARD",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/SHARDS/",                                        ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="TALLSHARD",      ["P_NAME"]="TALLSHARD",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/SHARDS/",                                        ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="WIRCELLFLOTCUBE",["P_NAME"]="WIRECELLFLOATCUBE",        ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="WIRCELLFRAG",    ["P_NAME"]="WIRECELLFRAGMENTS",        ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="WIRECELLGRASS",  ["P_NAME"]="WIRECELLGRASS",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="WIRECELLSMLBUSH",["P_NAME"]="WIRECELLSMALLBUSH",        ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="WIRECELLBLOCK",  ["P_NAME"]="WIRECELLBLOCK",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="WIRCELLMEGATREE",["P_NAME"]="WIRECELLMEGATREE",         ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="WIRECELLBLOCK",  ["P_NAME"]="WIRECELLBLOCK",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="WIRCELLMEGATREE",["P_NAME"]="WIRECELLMEGATREE",         ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="MEDTENTACLEBLOB",["P_NAME"]="MEDIUMTENTACLEBLOB",       ["PATH"]="MODELS/PLANETS/BIOMES/TOXIC/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="LARGETENTACLE",  ["P_NAME"]="LARGETENTACLE",            ["PATH"]="MODELS/PLANETS/BIOMES/TOXIC/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SANDCOVWRDPROP", ["P_NAME"]="SANDCOVEREDWEIRDPROP",     ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/LARGEPROPS/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="LARGEHIVE",      ["P_NAME"]="LARGEHIVE",                ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="ARRAYSHELLSAND", ["P_NAME"]="ARRAYSHELLSAND",           ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="ARRAYTWIST",     ["P_NAME"]="ARRAYTWIST",               ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="BIOTANK",        ["P_NAME"]="BIOTANK",                  ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="FLAMESPLINTER",  ["P_NAME"]="FLAMESPLINTER",            ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="FROZENUMBRELLA", ["P_NAME"]="FROZENUMBRELLA",           ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="LARGEEGG",       ["P_NAME"]="LARGEEGG",                 ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="LARGEEGGHOLDER", ["P_NAME"]="LARGEEGGHOLDER",           ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="LARGESUMMEREGG", ["P_NAME"]="LARGESUMMEREGG",           ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="LOWUMBRELLA",    ["P_NAME"]="LOWUMBRELLA",              ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SINGLESUMMER",   ["P_NAME"]="SINGLESUMMER",             ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SINGLEUMBRELLA", ["P_NAME"]="SINGLEUMBRELLA",           ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SUMMERUMBRELLA", ["P_NAME"]="SUMMERUMBRELLA",           ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="ARRAYSHELL",     ["P_NAME"]="ARRAYSHELL",               ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="CURLYTENDRILS",  ["P_NAME"]="CURLYTENDRILS",            ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="FROZENSPIKE",    ["P_NAME"]="FROZENSPIKE",              ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HOTROCK",        ["P_NAME"]="HOTROCK",                  ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HOTROCKLIFTED",  ["P_NAME"]="HOTROCKLIFTED",            ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="HOTTENDRILS",    ["P_NAME"]="HOTTENDRILS",              ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="MEDIUMPLANT04",  ["P_NAME"]="MEDIUMPLANT",              ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SPINDLEEGG",     ["P_NAME"]="SPINDLEEGG",               ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SPINDLESUMMER",  ["P_NAME"]="SPINDLESUMMER",            ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SUMMERSPIKE",    ["P_NAME"]="SUMMERSPIKE",              ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="GLOWGRASS",      ["P_NAME"]="GLOWGRASS",                ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SMALDETAILPLANT",["P_NAME"]="SMALLDETAILPLANT",         ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SMALLERODEPLANT",["P_NAME"]="SMALLERODEPLANT",          ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SMALLPLANT03",   ["P_NAME"]="SMALLPLANT",               ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
-    { ["ID_NAME"]="SMALLTENDRIL",   ["P_NAME"]="SMALLTENDRIL",             ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/",                                    ["GROUP_NAME"]="UBB-OTHER-II",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BEAMSTONE",      ["P_NAME"]="BEAMSTONE",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON,		["CompositePartObjectIDs"]={"HOVERING","HUGEBEAM","SMALLSTONE","BURST","BURSTB","BURSTC","HOVERINGINST"} },
+    { ["ID_NAME"]="HOVERING",       ["P_NAME"]="HOVERING",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="HUGEBEAM",       ["P_NAME"]="HUGEBEAM",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SMALLSTONE",     ["P_NAME"]="SMALLSTONE",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BURST",          ["P_NAME"]="BURST",                    ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BURSTB",         ["P_NAME"]="BURSTB",                   ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BURSTC",         ["P_NAME"]="BURSTC",                   ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="HOVERINGINST",   ["P_NAME"]="HOVERINGINST",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BEAMSTONE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BONEBLOBS",      ["P_NAME"]="BONEBLOBS",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON,		["CompositePartObjectIDs"]={"BONEFRUIT01","BONEGRASS","BONESPINE","BONEFIN1","BONEFIN2","BONESEED1","BONESPORE","BONESPORE2","BONETREE1","BONETREEBIGGLOW","BONETREEDAMAGED"} },
+    { ["ID_NAME"]="BONEFRUIT01",    ["P_NAME"]="BONEFRUIT",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BONEGRASS",      ["P_NAME"]="BONEGRASS",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BONESPINE",      ["P_NAME"]="BONESPINE",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BONEFIN1",       ["P_NAME"]="BONEFIN",                  ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BONEFIN2",       ["P_NAME"]="BONEFIN2",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BONESEED1",      ["P_NAME"]="BONESEED",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BONESPORE",      ["P_NAME"]="BONESPORE",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BONESPORE2",     ["P_NAME"]="BONESPORE2",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BONETREE1",      ["P_NAME"]="BONETREE",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BONETREEBIGGLOW",["P_NAME"]="BONETREEBIGGLOW",          ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BONETREEDAMAGED",["P_NAME"]="BONETREEDAMAGED",          ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/BONESPIRE/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="CONTOURDETAIL",  ["P_NAME"]="CONTOURDETAIL",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/",                                       ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON,		["CompositePartObjectIDs"]={"CONTOUROBJECT","CONTOURPOD","CONTOURTOWER"} },
+    { ["ID_NAME"]="CONTOUROBJECT",  ["P_NAME"]="CONTOUROBJECT",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/",                                       ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="CONTOURPOD",     ["P_NAME"]="CONTOURPOD",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/",                                       ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="CONTOURTOWER",   ["P_NAME"]="CONTOURTOWER",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/",                                       ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="CORRUPTDRONEPIL",["P_NAME"]="CORRUPTEDDRONEPILE",       ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/INTERACTIVE/",                                  ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="DEADBUBBLE",     ["P_NAME"]="DEADBUBBLE",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/ELBUBBLE/",                                      ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON,		["CompositePartObjectIDs"]={"DETAILBUBBLE","ELBUBBLE","SMALLBUBBLE"} },
+    { ["ID_NAME"]="DETAILBUBBLE",   ["P_NAME"]="DETAILBUBBLE",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/ELBUBBLE/",                                      ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="ELBUBBLE",       ["P_NAME"]="ELBUBBLE",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/ELBUBBLE/",                                      ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SMALLBUBBLE",    ["P_NAME"]="SMALLBUBBLE",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/ELBUBBLE/",                                      ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SHAPE1FLOAT",    ["P_NAME"]="SHAPE1FLOAT",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON,		["CompositePartObjectIDs"]={"CYLINDER","FLAP"} },
+    { ["ID_NAME"]="CYLINDER",       ["P_NAME"]="CYLINDER",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="FLAP",           ["P_NAME"]="FLAP",                     ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="HOVERINGDETAIL", ["P_NAME"]="HOVERINGDETAIL",           ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/",                                       ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON,		["CompositePartObjectIDs"]={"ROTATINGDETAIL","DETAILSHAPE","DETAILSHAPEB"} },
+    { ["ID_NAME"]="ROTATINGDETAIL", ["P_NAME"]="ROTATINGDETAIL",           ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/",                                       ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="DETAILSHAPE",    ["P_NAME"]="DETAILSHAPE",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/",                                       ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="DETAILSHAPEB",   ["P_NAME"]="DETAILSHAPEB",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/",                                       ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="VORONOITREE",    ["P_NAME"]="VORONOITREE",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON,		["CompositePartObjectIDs"]={"CRYSTAL","CRYSTALTINY","LARGECRYSTAL","LRGCRYSTALBROKE","LRGCRYSTALSINGL","SMALLCRYSTAL","SPIKYPOTATO"} },
+    { ["ID_NAME"]="CRYSTAL",        ["P_NAME"]="CRYSTAL",                  ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="CRYSTALTINY",    ["P_NAME"]="CRYSTALTINY",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="LARGECRYSTAL",   ["P_NAME"]="LARGECRYSTAL",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="LRGCRYSTALBROKE",["P_NAME"]="LARGECRYSTALBROKEN",       ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="LRGCRYSTALSINGL",["P_NAME"]="LARGECRYSTALSINGLE",       ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SMALLCRYSTAL",   ["P_NAME"]="SMALLCRYSTAL",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SPIKYPOTATO",    ["P_NAME"]="SPIKYPOTATO",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="HYDROGARDENMSTR",["P_NAME"]="HYDROGARDENMASTER",        ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON,		["CompositePartObjectIDs"]={"HYDROPOD","HYDROPODDEAD","HYDROPODFLOAT","HYDROPODFLOTDED","HYDROPODGROWING","HYDROPODGROWDED","HYDROPODOFF","WEIRDLUSHGRASS","WEIRDMEDIUMBUSH","LARGEMUSHROOM","LRGMUSHROOMDEAD"} },
+    { ["ID_NAME"]="HYDROPOD",       ["P_NAME"]="HYDROPOD",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="HYDROPODDEAD",   ["P_NAME"]="HYDROPODDEAD",             ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="HYDROPODFLOAT",  ["P_NAME"]="HYDROPODFLOAT",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="HYDROPODFLOTDED",["P_NAME"]="HYDROPODFLOATDEAD",        ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="HYDROPODGROWING",["P_NAME"]="HYDROPODGROWING",          ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="HYDROPODGROWDED",["P_NAME"]="HYDROPODGROWINGDEAD",      ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="HYDROPODOFF",    ["P_NAME"]="HYDROPODOFF",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="WEIRDLUSHGRASS", ["P_NAME"]="WEIRDLUSHGRASS",           ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="WEIRDMEDIUMBUSH",["P_NAME"]="WEIRDMEDIUMBUSH",          ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="LARGEMUSHROOM",  ["P_NAME"]="LARGEMUSHROOM",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="LRGMUSHROOMDEAD",["P_NAME"]="LARGEMUSHROOMDEAD",        ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/HYDROGARDEN/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-I",     ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SHELLCRYSTSLICE",["P_NAME"]="SHELLCRYSTALSLICES",       ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON,		["CompositePartObjectIDs"]={"SHELLFLY","SHELLFLYPLANT","SHELLGRASS01","SHELLHUSK01","SHELLSHELF","SHELLWHITE","SHELLSAIL1","SHELLSHARD1"} },
+    { ["ID_NAME"]="SHELLFLY",       ["P_NAME"]="SHELLFLY",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SHELLFLYPLANT",  ["P_NAME"]="SHELLFLYPLANT",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SHELLGRASS01",   ["P_NAME"]="SHELLGRASS",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SHELLHUSK01",    ["P_NAME"]="SHELLHUSK",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SHELLSHELF",     ["P_NAME"]="SHELLSHELF",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SHELLWHITE",     ["P_NAME"]="SHELLWHITE",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SHELLSAIL1",     ["P_NAME"]="SHELLSAIL",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SHELLSHARD1",    ["P_NAME"]="SHELLSHARD",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/IRRISHELLS/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="MSTRUCTURE",     ["P_NAME"]="MSTRUCTURE",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/MSTRUCTURES/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON,		["CompositePartObjectIDs"]={"SINGLEJOINT","SMALLJOINT","FLOATJOINT"} },
+    { ["ID_NAME"]="SINGLEJOINT",    ["P_NAME"]="SINGLEJOINT",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/MSTRUCTURES/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SMALLJOINT",     ["P_NAME"]="SMALLJOINT",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/MSTRUCTURES/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="FLOATJOINT",     ["P_NAME"]="FLOATJOINT",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/MSTRUCTURES/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SHARD",          ["P_NAME"]="SHARD",                    ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/SHARDS/",                                        ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON,		["CompositePartObjectIDs"]={"SHARDALT","FLOORPIECES","FLOORSHARD","SINGLESHARD","TALLSHARD"} },
+    { ["ID_NAME"]="SHARDALT",       ["P_NAME"]="SHARDALT",                 ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/SHARDS/",                                        ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="FLOORPIECES",    ["P_NAME"]="FLOORPIECES",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/SHARDS/",                                        ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="FLOORSHARD",     ["P_NAME"]="FLOORSHARD",               ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/SHARDS/",                                        ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SINGLESHARD",    ["P_NAME"]="SINGLESHARD",              ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/SHARDS/",                                        ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="TALLSHARD",      ["P_NAME"]="TALLSHARD",                ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/SHARDS/",                                        ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="WIRCELLFLOTCUBE",["P_NAME"]="WIRECELLFLOATCUBE",        ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON,		["CompositePartObjectIDs"]={"WIRCELLFRAG","WIRECELLGRASS","WIRECELLSMLBUSH","WIRECELLBLOCK","WIRCELLMEGATREE"} },
+    { ["ID_NAME"]="WIRCELLFRAG",    ["P_NAME"]="WIRECELLFRAGMENTS",        ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="WIRECELLGRASS",  ["P_NAME"]="WIRECELLGRASS",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="WIRECELLSMLBUSH",["P_NAME"]="WIRECELLSMALLBUSH",        ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="WIRECELLBLOCK",  ["P_NAME"]="WIRECELLBLOCK",            ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="WIRCELLMEGATREE",["P_NAME"]="WIRECELLMEGATREE",         ["PATH"]="MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/",                                     ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="MEDTENTACLEBLOB",["P_NAME"]="MEDIUMTENTACLEBLOB",       ["PATH"]="MODELS/PLANETS/BIOMES/TOXIC/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="LARGETENTACLE",  ["P_NAME"]="LARGETENTACLE",            ["PATH"]="MODELS/PLANETS/BIOMES/TOXIC/HOUDINIPROPS/",                                  ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SANDCOVWRDPROP", ["P_NAME"]="SANDCOVEREDWEIRDPROP",     ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/LARGEPROPS/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="LARGEHIVE",      ["P_NAME"]="LARGEHIVE",                ["PATH"]="MODELS/PLANETS/BIOMES/BARREN/HQ/",                                           ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="BIOTANK",        ["P_NAME"]="BIOTANK",                  ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON,		["CompositePartObjectIDs"]={"ARRAYSHELLSAND","ARRAYTWIST","FLAMESPLINTER","FROZENUMBRELLA","LARGEEGG","LARGEEGGHOLDER","LARGESUMMEREGG","LOWUMBRELLA","SINGLESUMMER","SINGLEUMBRELLA","SUMMERUMBRELLA","ARRAYSHELL","CURLYTENDRILS","FROZENSPIKE","HOTROCK","HOTROCKLIFTED","HOTTENDRILS","MEDIUMPLANT04","SPINDLEEGG","SPINDLESUMMER","SUMMERSPIKE","GLOWGRASS","SMALDETAILPLANT","SMALLERODEPLANT","SMALLPLANT03","SMALLTENDRIL"} },
+    { ["ID_NAME"]="ARRAYSHELLSAND", ["P_NAME"]="ARRAYSHELLSAND",           ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="ARRAYTWIST",     ["P_NAME"]="ARRAYTWIST",               ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="FLAMESPLINTER",  ["P_NAME"]="FLAMESPLINTER",            ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="FROZENUMBRELLA", ["P_NAME"]="FROZENUMBRELLA",           ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="LARGEEGG",       ["P_NAME"]="LARGEEGG",                 ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="LARGEEGGHOLDER", ["P_NAME"]="LARGEEGGHOLDER",           ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="LARGESUMMEREGG", ["P_NAME"]="LARGESUMMEREGG",           ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="LOWUMBRELLA",    ["P_NAME"]="LOWUMBRELLA",              ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SINGLESUMMER",   ["P_NAME"]="SINGLESUMMER",             ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SINGLEUMBRELLA", ["P_NAME"]="SINGLEUMBRELLA",           ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SUMMERUMBRELLA", ["P_NAME"]="SUMMERUMBRELLA",           ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="ARRAYSHELL",     ["P_NAME"]="ARRAYSHELL",               ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="CURLYTENDRILS",  ["P_NAME"]="CURLYTENDRILS",            ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="FROZENSPIKE",    ["P_NAME"]="FROZENSPIKE",              ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="HOTROCK",        ["P_NAME"]="HOTROCK",                  ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="HOTROCKLIFTED",  ["P_NAME"]="HOTROCKLIFTED",            ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="HOTTENDRILS",    ["P_NAME"]="HOTTENDRILS",              ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="MEDIUMPLANT04",  ["P_NAME"]="MEDIUMPLANT",              ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SPINDLEEGG",     ["P_NAME"]="SPINDLEEGG",               ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SPINDLESUMMER",  ["P_NAME"]="SPINDLESUMMER",            ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SUMMERSPIKE",    ["P_NAME"]="SUMMERSPIKE",              ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/",                                   ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="GLOWGRASS",      ["P_NAME"]="GLOWGRASS",                ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SMALDETAILPLANT",["P_NAME"]="SMALLDETAILPLANT",         ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SMALLERODEPLANT",["P_NAME"]="SMALLERODEPLANT",          ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SMALLPLANT03",   ["P_NAME"]="SMALLPLANT",               ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
+    { ["ID_NAME"]="SMALLTENDRIL",   ["P_NAME"]="SMALLTENDRIL",             ["PATH"]="MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/",                                    ["GROUP_NAME"]="UBB-OTHER-I",   ["SUBGROUP_NAME"]="WEIRD-II",    ["ICON"]=WEIRDICON },
 }
 
-function GetBaseBuildingObject(ID_NAME, P_NAME, PATH, GROUP_NAME, SUBGROUP_NAME)
+function GetBaseBuildingObject(ID_NAME, P_NAME, PATH, GROUP_NAME, SUBGROUP_NAME, COMPO, SHOW)
+SHOW_INJECT = "true"
+if not SHOW then SHOW_INJECT = "false" end
+COMP_ENTRY = ""
+if COMPO[1] == "Null" then
+	COMP_ENTRY = [[<Property name="CompositePartObjectIDs" />]]
+else
+	COMP_ENTRY = [[
+<Property name="CompositePartObjectIDs">
+]]
+	for _m,n in ipairs(COMPO) do
+	COMP_ENTRY = COMP_ENTRY ..[[
+<Property name="CompositePartObjectIDs" value="]] .. n .. [[" />]]
+	end
+	COMP_ENTRY = COMP_ENTRY .. [[
+</Property>
+]]
+end
 BASEBUILDINGOBJECTSTABLE_ADDING =
 [[
-    <Property value="GcBaseBuildingEntry.xml">
+    <Property name="Objects" value="GcBaseBuildingEntry">
       <Property name="ID" value="]].. ID_NAME ..[[" />
-      <Property name="IsTemporary" value="False" />
-      <Property name="IsFromModFolder" value="True" />
-      <Property name="Style" value="GcBaseBuildingPartStyle.xml">
+      <Property name="IsTemporary" value="false" />
+      <Property name="IsFromModFolder" value="true" />
+      <Property name="Style" value="GcBaseBuildingPartStyle">
         <Property name="Style" value="None" />
       </Property>
-      <Property name="PlacementScene" value="TkModelResource.xml">
+      <Property name="PlacementScene" value="TkModelResource">
         <Property name="Filename" value="]].. PATH .. P_NAME ..[[_PLACEMENT.SCENE.MBIN" />
-        <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResHandle" value="GcResource">
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
       <Property name="SinglePartID" value="" />
-      <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes.xml">
+      <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes">
         <Property name="BaseBuildingDecorationType" value="Normal" />
       </Property>
-      <Property name="IsPlaceable" value="True" />
-      <Property name="IsDecoration" value="False" />
-      <Property name="Biome" value="GcBiomeType.xml">
+      <Property name="IsPlaceable" value="true" />
+      <Property name="IsDecoration" value="false" />
+      <Property name="Biome" value="GcBiomeType">
         <Property name="Biome" value="All" />
       </Property>
-      <Property name="BuildableOnPlanetBase" value="True" />
-      <Property name="BuildableOnSpaceBase" value="True" />
-      <Property name="BuildableOnFreighter" value="True" />
-      <Property name="BuildableOnPlanet" value="True" />
-      <Property name="BuildableOnPlanetWithProduct" value="True" />
-      <Property name="BuildableUnderwater" value="True" />
-      <Property name="BuildableAboveWater" value="True" />
+      <Property name="BuildableOnPlanetBase" value="true" />
+      <Property name="BuildableOnSpaceBase" value="true" />
+      <Property name="BuildableOnFreighter" value="true" />
+      <Property name="BuildableOnPlanet" value="true" />
+      <Property name="BuildableOnPlanetWithProduct" value="true" />
+      <Property name="BuildableUnderwater" value="true" />
+      <Property name="BuildableAboveWater" value="true" />
       <Property name="PlanetLimit" value="0" />
       <Property name="RegionLimit" value="0" />
       <Property name="PlanetBaseLimit" value="0" />
       <Property name="FreighterBaseLimit" value="0" />
-      <Property name="CheckPlaceholderCollision" value="False" />
-      <Property name="CheckPlayerCollision" value="True" />
-      <Property name="CanRotate3D" value="True" />
-      <Property name="CanScale" value="True" />
+      <Property name="CheckPlaceholderCollision" value="false" />
+      <Property name="CheckPlayerCollision" value="true" />
+      <Property name="CanRotate3D" value="true" />
+      <Property name="CanScale" value="true" />
       <Property name="Groups">
-        <Property value="GcBaseBuildingEntryGroup.xml">
+        <Property name="Groups" value="GcBaseBuildingEntryGroup">
           <Property name="Group" value="]].. GROUP_NAME ..[[" />
           <Property name="SubGroupName" value="]].. SUBGROUP_NAME ..[[" />
           <Property name="SubGroup" value="0" />
@@ -967,29 +982,29 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="DefaultColourPaletteId" value="" />
       <Property name="MaterialGroupId" value="" />
       <Property name="DefaultMaterialId" value="" />
-      <Property name="CanChangeColour" value="True" />
-      <Property name="CanChangeMaterial" value="True" />
-      <Property name="CanPickUp" value="False" />
-      <Property name="ShowInBuildMenu" value="True" />
-      <Property name="CompositePartObjectIDs" />
+      <Property name="CanChangeColour" value="true" />
+      <Property name="CanChangeMaterial" value="true" />
+      <Property name="CanPickUp" value="false" />
+      <Property name="ShowInBuildMenu" value="]] .. SHOW_INJECT .. [[" />
+]] .. COMP_ENTRY .. [[
       <Property name="FamilyIDs" />
-      <Property name="BuildEffectAccelerator" value="1" />
-      <Property name="RemovesAttachedDecoration" value="True" />
-      <Property name="RemovesWhenUnsnapped" value="False" />
-      <Property name="EditsTerrain" value="False" />
+      <Property name="BuildEffectAccelerator" value="1.000000" />
+      <Property name="RemovesAttachedDecoration" value="true" />
+      <Property name="RemovesWhenUnsnapped" value="false" />
+      <Property name="EditsTerrain" value="false" />
       <Property name="BaseTerrainEditShape" value="Cube" />
-      <Property name="MinimumDeleteDistance" value="1" />
-      <Property name="IsSealed" value="False" />
-      <Property name="CloseMenuAfterBuild" value="False" />
-      <Property name="LinkGridData" value="GcBaseLinkGridData.xml">
-        <Property name="Connection" value="GcBaseLinkGridConnectionData.xml">
-          <Property name="Network" value="GcLinkNetworkTypes.xml">
+      <Property name="MinimumDeleteDistance" value="1.000000" />
+      <Property name="IsSealed" value="false" />
+      <Property name="CloseMenuAfterBuild" value="false" />
+      <Property name="LinkGridData" value="GcBaseLinkGridData">
+        <Property name="Connection" value="GcBaseLinkGridConnectionData">
+          <Property name="Network" value="GcLinkNetworkTypes">
             <Property name="LinkNetworkType" value="Power" />
           </Property>
           <Property name="NetworkSubGroup" value="0" />
           <Property name="NetworkMask" value="0" />
-          <Property name="ConnectionDistance" value="0.1" />
-          <Property name="UseMinDistance" value="False" />
+          <Property name="ConnectionDistance" value="0.100000" />
+          <Property name="UseMinDistance" value="false" />
           <Property name="LinkSocketPositions" />
           <Property name="LinkSocketSubGroups" />
         </Property>
@@ -1000,14 +1015,15 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
         <Property name="DependentConnections" />
       </Property>
       <Property name="GhostsCountOverride" value="0" />
-      <Property name="ShowGhosts" value="True" />
-      <Property name="SnappingDistanceOverride" value="0" />
+      <Property name="ShowGhosts" value="true" />
+      <Property name="SnappingDistanceOverride" value="0.000000" />
       <Property name="RegionSpawnLOD" value="1" />
-      <Property name="NPCInteractionScene" value="TkModelResource.xml">
+      <Property name="NPCInteractionScene" value="TkModelResource">
         <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResHandle" value="GcResource">
           <Property name="ResourceID" value="0" />
         </Property>
+        <Property name="Seed" value="0" />
       </Property>
     </Property>
 ]]
@@ -1017,24 +1033,26 @@ end
 function GetBaseBuildingPart(ID_NAME, P_NAME, PATH)
 BASEBUILDINGPARTSTABLE_ADDING =
 [[
-    <Property value="GcBaseBuildingPart.xml">
+    <Property name="Parts" value="GcBaseBuildingPart">
       <Property name="ID" value="_]].. ID_NAME ..[[" />
       <Property name="StyleModels">
-        <Property value="GcBaseBuildingPartStyleModel.xml">
-          <Property name="Style" value="GcBaseBuildingPartStyle.xml">
+        <Property name="StyleModels" value="GcBaseBuildingPartStyleModel">
+          <Property name="Style" value="GcBaseBuildingPartStyle">
             <Property name="Style" value="None" />
           </Property>
-          <Property name="Model" value="TkModelResource.xml">
+          <Property name="Model" value="TkModelResource">
             <Property name="Filename" value="]].. PATH .. P_NAME ..[[.SCENE.MBIN" />
-            <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResHandle" value="GcResource">
               <Property name="ResourceID" value="0" />
             </Property>
+            <Property name="Seed" value="0" />
           </Property>
-          <Property name="Inactive" value="TkModelResource.xml">
+          <Property name="Inactive" value="TkModelResource">
             <Property name="Filename" value="" />
-            <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResHandle" value="GcResource">
               <Property name="ResourceID" value="0" />
             </Property>
+            <Property name="Seed" value="0" />
           </Property>
         </Property>
       </Property>
@@ -1046,104 +1064,106 @@ end
 function GetProduct(ID_NAME, P_NAME, ICON)
 PRODUCT_ADDING =
 [[
-    <Property value="GcProductData.xml">
+    <Property name="Table" value="GcProductData">
       <Property name="ID" value="]].. ID_NAME ..[[" />
       <Property name="Name" value="]].. P_NAME ..[[" />
       <Property name="NameLower" value="]].. P_NAME ..[[" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="" />
-      </Property>
+      <Property name="Subtitle" value="" />
+      <Property name="Description" value="" />
       <Property name="Hint" value="" />
       <Property name="GroupID" value="" />
-      <Property name="DebrisFile" value="TkModelResource.xml">
+      <Property name="DebrisFile" value="TkModelResource">
         <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
-        <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResHandle" value="GcResource">
           <Property name="ResourceID" value="0" />
         </Property>
+        <Property name="Seed" value="0" />
       </Property>
       <Property name="BaseValue" value="1" />
       <Property name="Level" value="0" />
-      <Property name="Icon" value="TkTextureResource.xml">
+      <Property name="Icon" value="TkTextureResource">
         <Property name="Filename" value="]].. ICON ..[[" />
-        <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResHandle" value="GcResource">
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
-      <Property name="HeroIcon" value="TkTextureResource.xml">
+      <Property name="HeroIcon" value="TkTextureResource">
         <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResHandle" value="GcResource">
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
-      <Property name="Colour" value="Colour.xml">
+      <Property name="Colour">
         <Property name="R" value="0.172549" />
         <Property name="G" value="0.4862745" />
         <Property name="B" value="0.6235294" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="Category" value="GcRealitySubstanceCategory.xml">
+      <Property name="Category" value="GcRealitySubstanceCategory">
         <Property name="SubstanceCategory" value="BuildingPart" />
       </Property>
-      <Property name="Type" value="GcProductCategory.xml">
+      <Property name="Type" value="GcProductCategory">
         <Property name="ProductCategory" value="BuildingPart" />
       </Property>
-      <Property name="Rarity" value="GcRarity.xml">
+      <Property name="Rarity" value="GcRarity">
         <Property name="Rarity" value="Common" />
       </Property>
-      <Property name="Legality" value="GcLegality.xml">
+      <Property name="Legality" value="GcLegality">
         <Property name="Legality" value="Legal" />
       </Property>
-      <Property name="Consumable" value="False" />
+      <Property name="Consumable" value="false" />
       <Property name="ChargeValue" value="0" />
       <Property name="StackMultiplier" value="0" />
       <Property name="DefaultCraftAmount" value="1" />
       <Property name="CraftAmountStepSize" value="1" />
       <Property name="CraftAmountMultiplier" value="1" />
       <Property name="Requirements">
-        <Property value="GcTechnologyRequirement.xml">
+        <Property name="Requirements" value="GcTechnologyRequirement">
           <Property name="ID" value="LAND2" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="Substance" />
           </Property>
           <Property name="Amount" value="50" />
         </Property>
       </Property>
       <Property name="AltRequirements" />
-      <Property name="Cost" value="GcItemPriceModifiers.xml">
-        <Property name="SpaceStationMarkup" value="0" />
-        <Property name="LowPriceMod" value="0" />
-        <Property name="HighPriceMod" value="0" />
-        <Property name="BuyBaseMarkup" value="0" />
-        <Property name="BuyMarkupMod" value="0" />
+      <Property name="Cost" value="GcItemPriceModifiers">
+        <Property name="SpaceStationMarkup" value="0.000000" />
+        <Property name="LowPriceMod" value="0.000000" />
+        <Property name="HighPriceMod" value="0.000000" />
+        <Property name="BuyBaseMarkup" value="0.000000" />
+        <Property name="BuyMarkupMod" value="0.000000" />
       </Property>
       <Property name="RecipeCost" value="2" />
-      <Property name="SpecificChargeOnly" value="False" />
-      <Property name="NormalisedValueOnWorld" value="0" />
-      <Property name="NormalisedValueOffWorld" value="0" />
-      <Property name="TradeCategory" value="GcTradeCategory.xml">
+      <Property name="SpecificChargeOnly" value="false" />
+      <Property name="NormalisedValueOnWorld" value="0.000000" />
+      <Property name="NormalisedValueOffWorld" value="0.000000" />
+      <Property name="TradeCategory" value="GcTradeCategory">
         <Property name="TradeCategory" value="None" />
       </Property>
       <Property name="WikiCategory" value="Construction" />
-      <Property name="IsCraftable" value="True" />
+      <Property name="IsCraftable" value="true" />
       <Property name="DeploysInto" value="" />
-      <Property name="EconomyInfluenceMultiplier" value="0" />
+      <Property name="EconomyInfluenceMultiplier" value="0.000000" />
       <Property name="PinObjective" value="" />
       <Property name="PinObjectiveTip" value="" />
       <Property name="PinObjectiveMessage" value="" />
-      <Property name="PinObjectiveScannableType" value="GcScannerIconTypes.xml">
+      <Property name="PinObjectiveScannableType" value="GcScannerIconTypes">
         <Property name="ScanIconType" value="None" />
       </Property>
-      <Property name="PinObjectiveEasyToRefine" value="False" />
-      <Property name="CookingIngredient" value="False" />
-      <Property name="CookingValue" value="0" />
-      <Property name="GoodForSelling" value="False" />
+      <Property name="PinObjectiveEasyToRefine" value="false" />
+      <Property name="NeverPinnable" value="false" />
+      <Property name="CookingIngredient" value="false" />
+      <Property name="CookingValue" value="0.000000" />
+      <Property name="FoodBonusStat" value="GcStatsTypes">
+        <Property name="StatsType" value="Unspecified" />
+      </Property>
+      <Property name="FoodBonusStatAmount" value="0.000000" />
+      <Property name="GoodForSelling" value="false" />
       <Property name="GiveRewardOnSpecialPurchase" value="" />
-      <Property name="EggModifierIngredient" value="True" />
-      <Property name="IsTechbox" value="False" />
-      <Property name="CanSendToOtherPlayers" value="False" />
+      <Property name="EggModifierIngredient" value="true" />
+      <Property name="IsTechbox" value="false" />
+      <Property name="CanSendToOtherPlayers" value="false" />
     </Property>
 ]]
 return PRODUCT_ADDING
@@ -1152,58 +1172,58 @@ end
 function GetAutoPartData(ID_NAME)
 AUTOPARTDATA_ADDING =
 [[
-    <Property value="GcBaseBuildingPartData.xml">
+    <Property name="PartsData" value="GcBaseBuildingPartData">
       <Property name="PartID" value="_]] .. ID_NAME .. [[" />
-      <Property name="Style" value="GcBaseBuildingPartStyle.xml">
+      <Property name="Style" value="GcBaseBuildingPartStyle">
         <Property name="Style" value="None" />
       </Property>
-      <Property name="MagicData" value="TkMagicModelData.xml">
+      <Property name="MagicData" value="TkMagicModelData">
         <Property name="Vertices">
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="-2.025391" />
+          <Property value="Vertices">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="2.025391" />
+          <Property name="Vertices">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="-2.025391" />
+          <Property name="Vertices">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="2.025391" />
+          <Property name="Vertices">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="-2.025391" />
+          <Property name="Vertices">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="2.025391" />
+          <Property name="Vertices">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="-2.025391" />
+          <Property name="Vertices">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="2.025391" />
+          <Property name="Vertices">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="2.025391" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="2" />
-          <Property name="z" value="0" />
+        <Property name="Centre">
+          <Property name="X" value="0" />
+          <Property name="Y" value="2" />
+          <Property name="Z" value="0" />
         </Property>
         <Property name="Radius" value="2.997921" />
       </Property>
@@ -1224,7 +1244,7 @@ end
 function GetBaseBuildingCost(ID_NAME)
 BASEBUILDINGCOST_ADDING =
 [[
-    <Property value="GcBaseBuildingEntryCosts.xml">
+    <Property name="ObjectCosts" value="GcBaseBuildingEntryCosts">
       <Property name="ID" value="]].. ID_NAME ..[[" />
       <Property name="Active0AverageFrameTimeCost" value="0.0082" />
       <Property name="Active1AverageFrameTimeCost" value="0.008175" />
@@ -1242,9 +1262,7 @@ end
 function GetKnownProduct(ID_NAME)
 DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING =
 [[
-      <Property value="NMSString0x10.xml">
-        <Property name="Value" value="]].. ID_NAME ..[[" />
-      </Property>
+        <Property name="KnownProducts" value="]].. ID_NAME ..[[" />
 ]]
 return DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING
 end
@@ -1253,85 +1271,84 @@ function GetPlaceDataEntity(ID_NAME)
 PLACEMENTDATA_ENTITY =
 [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkAttachmentData">
+<Data template="cTkAttachmentData">
   <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="LinkableNMSTemplate.xml">
-      <Property name="Template" value="TkPhysicsComponentData.xml">
-        <Property name="Data" value="TkPhysicsData.xml">
-          <Property name="Mass" value="0" />
-          <Property name="Friction" value="0.5" />
-          <Property name="RollingFriction" value="0.2" />
-          <Property name="AngularDamping" value="0.2" />
-          <Property name="LinearDamping" value="0.1" />
-          <Property name="Gravity" value="20" />
+    <Property name="Components" value="TkPhysicsComponentData">
+      <Property name="TkPhysicsComponentData">
+        <Property name="Data" value="TkPhysicsData">
+          <Property name="Mass" value="0.000000" />
+          <Property name="Friction" value="0.500000" />
+          <Property name="RollingFriction" value="0.200000" />
+          <Property name="AngularDamping" value="0.200000" />
+          <Property name="LinearDamping" value="0.100000" />
+          <Property name="Gravity" value="20.000000" />
         </Property>
-        <Property name="NavMeshInclusion" value="TkNavMeshInclusionParams.xml">
-          <Property name="InclusionType" value="TkNavMeshInclusionType.xml">
+        <Property name="NavMeshInclusion" value="TkNavMeshInclusionParams">
+          <Property name="InclusionType" value="TkNavMeshInclusionType">
             <Property name="NavMeshInclusionType" value="Auto" />
           </Property>
-          <Property name="InclusionMinSize" value="0" />
-          <Property name="AreaType" value="TkNavMeshAreaType.xml">
+          <Property name="InclusionMinSize" value="0.000000" />
+          <Property name="AreaType" value="TkNavMeshAreaType">
             <Property name="NavMeshAreaType" value="Auto" />
           </Property>
         </Property>
-        <Property name="TriggerVolume" value="False" />
-        <Property name="TriggerVolumeType" value="TkVolumeTriggerType.xml">
+        <Property name="TriggerVolume" value="false" />
+        <Property name="TriggerVolumeType" value="TkVolumeTriggerType">
           <Property name="VolumeTriggerType" value="Open" />
         </Property>
         <Property name="SurfaceProperties" value="None" />
         <Property name="ModelOwnership" value="Model" />
-        <Property name="Climbable" value="False" />
-        <Property name="Walkable" value="True" />
-        <Property name="Floor" value="False" />
-        <Property name="IgnoreModelOwner" value="False" />
-        <Property name="NoVehicleCollide" value="False" />
-        <Property name="NoPlayerCollide" value="False" />
-        <Property name="NoFireCollide" value="False" />
-        <Property name="NoFallDamage" value="False" />
-        <Property name="IgnoreAllCollisions" value="False" />
-        <Property name="BlocksInteract" value="True" />
-        <Property name="CameraInvisible" value="False" />
-        <Property name="InvisibleForInteraction" value="False" />
-        <Property name="AllowTeleporter" value="False" />
-        <Property name="BlockTeleporter" value="False" />
-        <Property name="DisableGravity" value="False" />
-        <Property name="SpinOnCreate" value="0" />
-        <Property name="ScaleAffectsMass" value="False" />
-        <Property name="AllowedDefaultCollision" value="True" />
-        <Property name="Animated" value="False" />
-        <Property name="UseBasePartOptimisation" value="False" />
-        <Property name="IsTransporter" value="False" />
-        <Property name="UseSimpleCharacterCollision" value="False" />
-        <Property name="RotateSimpleCharacterCollisionCapsule" value="False" />
-        <Property name="SimpleCharacterCollisionRadius" value="0.5" />
-        <Property name="SimpleCharacterCollisionHeight" value="2" />
-        <Property name="SimpleCharacterCollisionHeightOffset" value="0" />
-        <Property name="SimpleCharacterCollisionFwdOffset" value="0" />
+        <Property name="Climbable" value="false" />
+        <Property name="Walkable" value="true" />
+        <Property name="Floor" value="false" />
+        <Property name="IgnoreModelOwner" value="false" />
+        <Property name="NoVehicleCollide" value="false" />
+        <Property name="NoPlayerCollide" value="false" />
+        <Property name="NoTerrainCollide" value="false" />
+        <Property name="NoFireCollide" value="false" />
+        <Property name="NoFallDamage" value="false" />
+        <Property name="IgnoreAllCollisions" value="false" />
+        <Property name="BlocksInteract" value="true" />
+        <Property name="CameraInvisible" value="false" />
+        <Property name="InvisibleForInteraction" value="false" />
+        <Property name="AllowTeleporter" value="false" />
+        <Property name="BlockTeleporter" value="false" />
+        <Property name="DisableGravity" value="false" />
+        <Property name="SpinOnCreate" value="0.000000" />
+        <Property name="ScaleAffectsMass" value="false" />
+        <Property name="AllowedDefaultCollision" value="true" />
+        <Property name="Animated" value="false" />
+        <Property name="UseBasePartOptimisation" value="false" />
+        <Property name="IsTransporter" value="false" />
+        <Property name="UseSimpleCharacterCollision" value="false" />
+        <Property name="RotateSimpleCharacterCollisionCapsule" value="false" />
+        <Property name="SimpleCharacterCollisionRadius" value="0.500000" />
+        <Property name="SimpleCharacterCollisionHeight" value="2.000000" />
+        <Property name="SimpleCharacterCollisionHeightOffset" value="0.000000" />
+        <Property name="SimpleCharacterCollisionFwdOffset" value="0.000000" />
       </Property>
-      <Property name="Linked" value="" />
     </Property>
-    <Property value="LinkableNMSTemplate.xml">
-      <Property name="Template" value="GcBasePlacementComponentData.xml">
+    <Property name="Components" value="GcBasePlacementComponentData">
+      <Property name="GcBasePlacementComponentData">
         <Property name="Rules">
-          <Property value="GcBasePlacementRule.xml">
+          <Property name="Rules" value="GcBasePlacementRule">
             <Property name="Conditions" />
             <Property name="PositionLocator" value="" />
             <Property name="PartID" value="_]].. ID_NAME ..[[" />
-            <Property name="ORConditions" value="False" />
+            <Property name="ORConditions" value="false" />
             <Property name="TwinCriteria" value="None" />
           </Property>
         </Property>
       </Property>
-      <Property name="Linked" value="" />
     </Property>
   </Property>
   <Property name="LodDistances">
-    <Property value="0" />
-    <Property value="50" />
-    <Property value="80" />
-    <Property value="150" />
-    <Property value="500" />
+    <Property name="LodDistances" value="0.000000" _index="0" />
+    <Property name="LodDistances" value="50.000000" _index="1" />
+    <Property name="LodDistances" value="80.000000" _index="2" />
+    <Property name="LodDistances" value="150.000000" _index="3" />
+    <Property name="LodDistances" value="500.000000" _index="4" />
   </Property>
 </Data>
 ]]
@@ -1342,86 +1359,86 @@ function GetPlaceScene(PATH, P_NAME)
 PLACEMENT_SCENE =
 [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkSceneNodeData">
+<Data template="cTkSceneNodeData">
   <Property name="Name" value="]].. PATH .. P_NAME ..[[_PLACEMENT" />
   <Property name="NameHash" value="]]..GNH(PATH .. P_NAME ..[[_PLACEMENT]])..[[" />
   <Property name="Type" value="MODEL" />
-  <Property name="Transform" value="TkTransformData.xml">
-    <Property name="TransX" value="0" />
-    <Property name="TransY" value="0" />
-    <Property name="TransZ" value="0" />
-    <Property name="RotX" value="0" />
-    <Property name="RotY" value="0" />
-    <Property name="RotZ" value="0" />
-    <Property name="ScaleX" value="1" />
-    <Property name="ScaleY" value="1" />
-    <Property name="ScaleZ" value="1" />
+  <Property name="Transform" value="TkTransformData">
+    <Property name="TransX" value="0.000000" />
+    <Property name="TransY" value="0.000000" />
+    <Property name="TransZ" value="0.000000" />
+    <Property name="RotX" value="0.000000" />
+    <Property name="RotY" value="0.000000" />
+    <Property name="RotZ" value="0.000000" />
+    <Property name="ScaleX" value="1.000000" />
+    <Property name="ScaleY" value="1.000000" />
+    <Property name="ScaleZ" value="1.000000" />
   </Property>
   <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
-    <Property value="TkSceneNodeAttributeData.xml">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="GEOMETRY" />
       <Property name="Value" value="]].. PATH .. P_NAME ..[[.GEOMETRY.MBIN" />
     </Property>
-    <Property value="TkSceneNodeAttributeData.xml">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
   <Property name="Children">
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PlacementData" />
       <Property name="NameHash" value="1551106921" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="0" />
-        <Property name="TransY" value="0" />
-        <Property name="TransZ" value="0" />
-        <Property name="RotX" value="0" />
-        <Property name="RotY" value="0" />
-        <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="1" />
-        <Property name="ScaleY" value="1" />
-        <Property name="ScaleZ" value="1" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="0.000000" />
+        <Property name="TransY" value="0.000000" />
+        <Property name="TransZ" value="0.000000" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="0.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="1.000000" />
+        <Property name="ScaleY" value="1.000000" />
+        <Property name="ScaleZ" value="1.000000" />
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="Value" value="]].. PATH .. P_NAME ..[[_PLACEMENTDATA.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="]].. PATH .. P_NAME ..[[_PLACEMENT" />
           <Property name="NameHash" value="]]..GNH(PATH .. P_NAME ..[[_PLACEMENT]])..[[" />
           <Property name="Type" value="COLLISION" />
-          <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0" />
-            <Property name="TransY" value="0" />
-            <Property name="TransZ" value="0" />
-            <Property name="RotX" value="0" />
-            <Property name="RotY" value="0" />
-            <Property name="RotZ" value="0" />
-            <Property name="ScaleX" value="1" />
-            <Property name="ScaleY" value="1" />
-            <Property name="ScaleZ" value="1" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="0.000000" />
+            <Property name="ScaleX" value="1.000000" />
+            <Property name="ScaleY" value="1.000000" />
+            <Property name="ScaleZ" value="1.000000" />
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Box" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="WIDTH" />
               <Property name="Value" value="0.429757" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="HEIGHT" />
               <Property name="Value" value="1.719027" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="DEPTH" />
               <Property name="Value" value="0.484206" />
             </Property>
@@ -1439,7 +1456,7 @@ end
 function GetEntityAddFile(PATH, P_NAME, ID_NAME)
 ADD_PLACEMENTDATA_FILE =
 {
-    ["FILE_DESTINATION"] = PATH .. P_NAME ..  [[_PLACEMENTDATA.ENTITY.EXML]],
+    ["FILE_DESTINATION"] = PATH .. P_NAME ..  [[_PLACEMENTDATA.ENTITY.MXML]],
     ["FILE_CONTENT"] = GetPlaceDataEntity(ID_NAME)
 }
 
@@ -1449,7 +1466,7 @@ end
 function GetSceneAddFile(PATH, P_NAME)
 ADD_PLACEMENTSCENE_FILE =
 {
-    ["FILE_DESTINATION"] = PATH .. P_NAME .. [[_PLACEMENT.SCENE.EXML]],
+    ["FILE_DESTINATION"] = PATH .. P_NAME .. [[_PLACEMENT.SCENE.MXML]],
     ["FILE_CONTENT"] = GetPlaceScene(PATH, P_NAME)
 }
 return ADD_PLACEMENTSCENE_FILE
@@ -1472,9 +1489,13 @@ GroupTable =
             {"PLANTS-I"},
             {"PLANTS-II"},
             {"PLANTS-III"},
+            {"MINERALS-I"},
+            {"MINERALS-II"},
+            {"TREES-I"},
+            {"TREES-II"},
         }
     },
-    {
+    --[[{
         {"UBB-NATURE-III", "TEXTURES/UI/FRONTEND/ICONS/UPDATE1/PRODUCT.TOXICPLANT.DDS"},
         {
             {"MINERALS-I"},
@@ -1482,7 +1503,7 @@ GroupTable =
             {"TREES-I"},
             {"TREES-II"},
         }
-    },
+    },]]
     {
         {"UBB-OTHER-I", "TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL.BANNER.CHEF.DDS"},
         {
@@ -1491,11 +1512,6 @@ GroupTable =
             {"EXTRAS"},
             {"SPACE"},
             {"VEHICLES"},
-        }
-    },
-    {
-        {"UBB-OTHER-II", "TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL.HOUDINIPLANT01.DDS"},
-        {
             {"WEIRD-I"},
             {"WEIRD-II"},
         }
@@ -1511,8 +1527,28 @@ DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING_ALL = {}
 PLACEMENTDATA_ENTITY_ALL = {}
 ADD_FILES_TABLE = {}
 
+COMP_HIDE_LIST = {} -- List of object IDs designated as CompositePartObject
+
 for i=1,#BUILDABLE_OBJECT_TABLE,1 do
-    table.insert(BASEBUILDINGOBJECTSTABLE_ADDING_ALL,GetBaseBuildingObject(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"],BUILDABLE_OBJECT_TABLE[i]["GROUP_NAME"], BUILDABLE_OBJECT_TABLE[i]["SUBGROUP_NAME"]))
+	local CompositeParts = {}
+	local OBJECT_SHOW = true
+	-- Add all CompositePartObjectIDs entries into COMP_HIDE_LIST
+	if BUILDABLE_OBJECT_TABLE[i]["CompositePartObjectIDs"] ~= nil then
+		CompositeParts = BUILDABLE_OBJECT_TABLE[i]["CompositePartObjectIDs"]
+		for _,l in ipairs(CompositeParts) do
+			table.insert(COMP_HIDE_LIST, l)
+		end
+	else
+		CompositeParts = {"Null"}
+	-- Check object ID against COMP_HIDE_LIST and have object hidden from build menu
+		for _,n in ipairs(COMP_HIDE_LIST) do
+			if BUILDABLE_OBJECT_TABLE[i]["ID_NAME"] == n then
+				OBJECT_SHOW = false
+				break
+			end
+		end
+	end
+    table.insert(BASEBUILDINGOBJECTSTABLE_ADDING_ALL,GetBaseBuildingObject(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"],BUILDABLE_OBJECT_TABLE[i]["GROUP_NAME"], BUILDABLE_OBJECT_TABLE[i]["SUBGROUP_NAME"], CompositeParts, OBJECT_SHOW))
     table.insert(BASEBUILDINGPARTSTABLE_ADDING_ALL,GetBaseBuildingPart(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"]))
     table.insert(PRODUCT_ADDING_ALL,GetProduct(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["ICON"]))
     table.insert(AUTOPARTDATA_ADDING_ALL,GetAutoPartData(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
@@ -1525,10 +1561,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]     = "0-UltraBaseBuilding+UnlimitedBaseBuilding.pak",
+["MOD_FILENAME"]     = "0-Ultra Base Building+Unlimited Base Building",
 ["MOD_AUTHOR"]       = "Mjjstral and Babscoole",
 ["MOD_CONTRIBUTORS"] = "Ignacio and GhostRick",
-["NMS_VERSION"]      = "5.29",
+["NMS_VERSION"]      = "5.73",
 ["ADD_FILES"]        = ADD_FILES_TABLE,
 ["MODIFICATIONS"]    =
     {
@@ -1537,28 +1573,28 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BuildableOnPlanetBase",        "True"},
-                                {"BuildableOnSpaceBase",         "True"},
-                                {"BuildableOnFreighter",         "True"},
-                                {"BuildableOnPlanet",            "True"},
-                                {"BuildableOnPlanetWithProduct", "True"},
-                                {"BuildableUnderwater",          "True"},
-                                {"BuildableAboveWater",          "True"},
+                                {"BuildableOnPlanetBase",        "true"},
+                                {"BuildableOnSpaceBase",         "true"},
+                                {"BuildableOnFreighter",         "true"},
+                                {"BuildableOnPlanet",            "true"},
+                                {"BuildableOnPlanetWithProduct", "true"},
+                                {"BuildableUnderwater",          "true"},
+                                {"BuildableAboveWater",          "true"},
                                 {"PlanetLimit",                  "0"},
                                 {"RegionLimit",                  "0"},
                                 {"PlanetBaseLimit",              "0"},
                                 {"FreighterBaseLimit",           "0"},
-                                {"CheckPlaceholderCollision",    "False"},
-                                {"CanRotate3D",                  "True"},
-                                {"CanScale",                     "True"},
+                                {"CheckPlaceholderCollision",    "false"},
+                                {"CanRotate3D",                  "true"},
+                                {"CanScale",                     "true"},
                                 --{"BaseBuildingDecorationType",   "Normal"},
-                                --{"IsDecoration",                 "False"},
+                                --{"IsDecoration",                 "false"},
                             }
                         },
                         {
@@ -1583,7 +1619,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGPARTSTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID", "_O2_HARVESTER"},
@@ -1594,7 +1630,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Table"},
@@ -1604,7 +1640,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGAUTOGENERATEDPARTSDATA.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PartsData"},
@@ -1614,7 +1650,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGCOSTSTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ObjectCosts"},
@@ -1624,7 +1660,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
@@ -1634,14 +1670,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "GCDEBUGOPTIONS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                --{"DisableLimits",                "True"},
-                                {"DisableBaseBuildingLimits",    "True"},
-                                {"DisableBasePowerRequirements", "True"},
+                                --{"DisableLimits",                "true"},
+                                {"DisableBaseBuildingLimits",    "true"},
+                                {"DisableBasePowerRequirements", "true"},
                                 {"BaseDownloadTimeout",          "120"}, --ORIGINAL 40
                             }
                         }
@@ -1655,7 +1691,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_DISTRIBUTOR.SCENE.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_WINDTURBINE.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "TERRAINEDITBOX"},
@@ -1665,7 +1701,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\THEREMIN.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "THERA_VOL_BB"},
@@ -1827,7 +1863,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             "MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLMEGATREE.SCENE.MBIN",
                             "MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\MEDIUMOAK1.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Type", "MESH"},
@@ -1841,7 +1877,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     },
 }
 
-local BaseBuildingObjectsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local BaseBuildingObjectsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #GroupTable do
   local GroupID   = GroupTable[i][1][1]

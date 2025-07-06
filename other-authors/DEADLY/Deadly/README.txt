@@ -60,6 +60,7 @@ NoStarChartNotifications        Removes notifications for scanning events
 OnePlayerShipInFreighterHangar  One or two player ships are allowed in hungar
 PirateMissionRedux              Spawn all pirate at once, without reinforcements
 ReduceFrigateChatDistance       Reduces distance to chat with Frigates
+TerrainEditorSilicatePowder1st  Set Silicate Powder as first recharge element
 
 
                               DEATHLY

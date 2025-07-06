@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "5_12"
+GameVersion = "5_64"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -7,6 +7,7 @@ Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, 
 --ShieldLeechMul = 0.07								--0.07	Unknown Function, doesn't seem to affect how much shield you leech with lasers
 --SailTakeOffMod = 0.66								--1		Multiplier for launch fuel consumption for takeoff for Solar ships		(Oddly this was never included in GCSPACESHIPGLOBALS.GLOBAL.MBIN like the other ship types?)
 
+InitialToolSlots = 5								--7		(The game adds 1 to this value) Number of slots in your starting Multi-Tool
 TradeRocketSlots =	8								--21	Slots for Trade Rocket. May only have an effect for new saves?
 
 ExoSkiffSlots =		30								--60	Slots for fish/bait storage in Exo-Skiff. May only have an effect for new saves?
@@ -18,22 +19,22 @@ FixAgilityStat = true			--false			If true, this will try to ensure there is an e
 RemoveAgilitySpeed = true		--false			If true, this will make the SHIP_AGILE stat no longer affect Boosting Speed, but only Maneuverability (& Boosting Maneuverability). Either way, this setting can't really affect the final maxed-out Boosting Speed, which is soft-capped based on the intial speed of the ship
 
 --Replacers for Ship class Spawn rate % based on System Wealth
-PoorC		=	60				-- Default "60" 
-PoorB		=	30				-- Default "30" 
+PoorC		=	64				-- Default "60" 
+PoorB		=	25				-- Default "30" 
 PoorA		=	10				-- Default "10" 
-PoorS		=	0				-- Default "0" 
-AverageC	=	48				-- Default "49" 
+PoorS		=	1				-- Default "0" 
+AverageC	=	48.5			-- Default "49" 
 AverageB	=	35				-- Default "35" 
 AverageA	=	15				-- Default "15" 
-AverageS	=	2				-- Default "1" 
-WealthyC	=	30				-- Default "30" 
-WealthyB	=	39				-- Default "40" 
-WealthyA	=	28				-- Default "28" 
-WealthyS	=	3				-- Default "2" 
-PirateC		=	5				-- Default "5" 		(Seems to work out to 85% in practice, may just lump in whatever is left after B, A, & S)
-PirateB		=	5				-- Default "5" 
-PirateA		=	5				-- Default "5" 
-PirateS		=	5				-- Default "5" 
+AverageS	=	1.5				-- Default "1" 
+WealthyC	=	27.75			-- Default "30" 
+WealthyB	=	45				-- Default "40" 
+WealthyA	=	25				-- Default "28" 
+WealthyS	=	2.25			-- Default "2" 
+PirateC		=	5				-- Default "5" 		(Seems to work out to 85% in practice, may just lump in whatever % is left after B, A, & S)
+PirateB		=	5.8				-- Default "5" 
+PirateA		=	5.8				-- Default "5" 
+PirateS		=	3.4				-- Default "5" 
 
 --Replacers for Shuttle Class C base bonuses for all stats, since its vanilla bonuses are 0 at that Class
 	--Note these base bonus values will then be affected by the multipliers in the sections below
@@ -193,7 +194,7 @@ ShipStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				1.7,	2.3,	2.3,	1.4},		--			+		0[0.8-4],	3-8,		8-15,		25-30	%
-			{"SHIP_SHIELD",				4.6,	4.4,	4.4,	3},			--			+		0[0.8-4],	3-8,		8-15,		25-30	%
+			{"SHIP_SHIELD",				5.75,	5.5,	5.5,	3.75},			--			+		0[0.8-4],	3-8,		8-15,		25-30	%
 			{"SHIP_HYPERDRIVE",			4.3,	5.8,	5.8,	3.7},		--			+		0[0.8-4],	3-8,		8-15,		25-30	%		"Default" Hyperdrive range is 100ly
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		0[0.8-4],	3-5,		8-15,		15-35,	%
 		}
@@ -203,7 +204,7 @@ ShipStatChanges	=
 			"Fighter"					--	Maneuverability: High (350-445)				Speed: High
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"SHIP_DAMAGE",				1.25,	1.25,	1.25,	1.25},		--			+		8-15,		24-45,		50-75[50-70], 70-90	%
+			{"SHIP_DAMAGE",				1.33,	1.33,	1.33,	1.33},		--			+		8-15,		24-45,		50-75[50-70], 70-90	%
 			{"SHIP_SHIELD",				1.33,	1.33,	1.33,	1.33},		--			+		0,			8-15,		24-30[15-24], 24-38	%
 			{"SHIP_HYPERDRIVE",			1,		1,		1,		1},			--			+		0,			0,			0,			0		%
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		5-15,		15-20,		20-30,		35-45,	%
@@ -248,7 +249,7 @@ ShipStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				0.94,	0.94,	0.94,	0.94},		--			+		8-15,		23-45,		45-60,		60-75	%
-			{"SHIP_SHIELD",				1.5,	1.5,	1.5,	1.5},		--			+		8-15,		8-30[15-23], 23-38,		23-50[38-50]%
+			{"SHIP_SHIELD",				1.88,	1.88,	1.88,	1.88},		--			+		8-15,		8-30[15-23], 23-38,		23-50[38-50]%
 			{"SHIP_HYPERDRIVE",			0.75,	0.75,	0.75,	0.9},		--			+		8-15,		15-30[15-24], 30-45[24-38], 38-50	%
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		5-10,		10-20,		20-30,		35-40,	%
 		}
@@ -258,7 +259,7 @@ ShipStatChanges	=
 			"Robot"	--Sentinel Interceptor	Maneuverability: Low (But 1.5 boost manuv mult on engine)	Speed: Low			(Changed in "PTSd Starship Speed Rebalance.lua" to be a buffed Shuttle with boost manuv mult)
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"SHIP_DAMAGE",				1.0,	1.0,	1.0,	1.0},		--			+		8-15,		24-45,		50-75[45-60], 60-80	%
+			{"SHIP_DAMAGE",				1.15,	1.15,	1.15,	1.15},		--			+		8-15,		24-45,		50-75[45-60], 60-80	%
 			{"SHIP_SHIELD",				1.9,	1.9,	1.9,	1.9},		--			+		3-8,		8-15[8-12],	12-20,		20-35	%
 			{"SHIP_HYPERDRIVE",			1.6,	1.6,	1.6,	1.6},		--			+		0,			3-8[2-4],	3-10[4-7],	5-10[7-10]	%
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		8-15,		20-30,		20-30,		40-50,	%
@@ -283,7 +284,7 @@ LivingShipStatChanges =
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				0.8,	0.8,	0.8,	0.8},		--			+		N/A,		N/A,		N/A,		50-75	%
-			{"SHIP_SHIELD",				1.75,	1.75,	1.75,	1.75},		--			+		N/A,		N/A,		N/A,		15-38	%
+			{"SHIP_SHIELD",				2.3,	2.3,	2.3,	2.3},		--			+		N/A,		N/A,		N/A,		15-38	%
 			{"SHIP_HYPERDRIVE",			2.7,	2.7,	2.7,	2.7},		--			+		N/A,		N/A,		N/A,		75-95	%
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		N/A,		N/A,		N/A,		10-15,	%
 		}
@@ -366,16 +367,16 @@ ShipBounds =
 		--However, the bounds where supercharged slots can be set for multi-tools. SX & SY set these bounds (top left slot is X=0, Y=0)  (Does not appear to wrk for starships?)
 ShipInitialSizeChanges	=
 {	--Ship type & size			MinCarg	MaxCarg		MinTech	MaxTech		SX	SY		Vanilla	MinCarg	MaxCarg		MinTech	MaxTech		SX	SY
-	{"ShuSmall",				10,		16,			9,		15,			9,	2},			--	24,		32,			12,		19,			9,	2
+	{"ShuSmall",				10,		15,			9,		14,			9,	2},			--	24,		32,			12,		19,			9,	2
 	{"ShtMedium",				15,		21,			14,		20,			9,	2},			--	28,		36,			18,		26,			9,	2
 	{"ShtLarge",				19,		25,			19,		25,			9,	2},			--	32,		42,			18,		28,			9,	2	Unused in-game by default
-	{"FgtSmall",				6,		11,			10,		18,			9,	2},			--	24,		28,			14,		19,			9,	2
+	{"FgtSmall",				6,		9,			10,		15,			9,	2},			--	24,		28,			14,		19,			9,	2
 	{"FgtMedium",				10,		14,			16,		24,			9,	2},			--	24,		32,			14,		24,			9,	2
 	{"FgtLarge",				14,		18,			23,		31,			9,	2},			--	30,		38,			19,		30,			9,	2
-	{"DrpSmall",				15,		26,			7,		12,			9,	2},			--	30,		36,			12,		18,			9,	2
+	{"DrpSmall",				15,		23,			7,		10,			9,	2},			--	30,		36,			12,		18,			9,	2
 	{"DrpMedium",				24,		35,			11,		16,			9,	2},			--	36,		40,			18,		24,			9,	2
 	{"DrpLarge",				34,		45,			16,		21,			9,	2},			--	40,		48,			20,		30,			9,	2
-	{"SciSmall",				6,		10,			13,		22,			9,	2},			--	24,		29,			14,		19,			9,	2
+	{"SciSmall",				6,		9,			13,		20,			9,	2},			--	24,		29,			14,		19,			9,	2
 	{"SciMedium",				10,		14,			21,		31,			9,	2},			--	24,		32,			19,		24,			9,	2
 	{"SciLarge",				13,		17,			29,		38,			9,	2},			--	30,		38,			24,		30,			9,	2
 	{"RoySmall",				4,		7,			9,		16,			9,	2},			--	24,		30,			14,		19,			9,	2	Unused in-game by default
@@ -384,7 +385,7 @@ ShipInitialSizeChanges	=
 	{"AlienSmall",				10,		10,			26,		26,			9,	2},			--	36,		36,			30,		30,			9,	2	Unused in-game by default
 	{"AlienMedium",				20,		20,			34,		34,			9,	2},			--	36,		36,			30,		30,			9,	2
 	{"AlienLarge",				20,		20,			38,		38,			9,	2},			--	36,		36,			30,		30,			9,	2	Unused in-game by default
-	{"SailSmall",				8,		20,			9,		25,			9,	2},			--	24,		30,			13,		18,			9,	2
+	{"SailSmall",				8,		11,			9,		14,			9,	2},			--	24,		30,			13,		18,			9,	2	Previous PTSd values:	8,		20,			9,		25,			9,	2
 	{"SailMedium",				12,		18,			16,		22,			9,	2},			--	24,		32,			14,		22,			9,	2	Unused in-game by default
 	{"SailLarge",				17,		23,			20,		27,			9,	2},			--	30,		36,			20,		30,			9,	2	Unused in-game by default
 	{"RobotSmall",				9,		13,			15,		22,			9,	2},			--	32,		40,			22,		28,			-1,	-1	Seems unused in-game by default?
@@ -501,19 +502,19 @@ VehicleInitialSizeChanges	=
 
 --[[NomadAddedInventory = [[
 	  <Property name="ValidSlotIndices">
-		  <Property name="Index" value="GcInventoryIndex.xml">
+		  <Property name="Index" value="GcInventoryIndex">
             <Property name="X" value="2" />
             <Property name="Y" value="0" />
           </Property>
-		  <Property name="Index" value="GcInventoryIndex.xml">
+		  <Property name="Index" value="GcInventoryIndex">
             <Property name="X" value="5" />
             <Property name="Y" value="0" />
           </Property>
-		  <Property name="Index" value="GcInventoryIndex.xml">
+		  <Property name="Index" value="GcInventoryIndex">
             <Property name="X" value="0" />
             <Property name="Y" value="1" />
           </Property>
-		  <Property name="Index" value="GcInventoryIndex.xml">
+		  <Property name="Index" value="GcInventoryIndex">
             <Property name="X" value="3" />
             <Property name="Y" value="1" />
           </Property>
@@ -528,29 +529,29 @@ VehiclesAdd4ChargedSlots = {"WheeledBike", "Bike"}
 
 Add3ChargedSlots = [[
           <Property name="SpecialSlots">
-            <Property value="GcInventorySpecialSlot.xml">
-              <Property name="Type" value="GcInventorySpecialSlotType.xml">
+            <Property name="SpecialSlots" value="GcInventorySpecialSlot">
+              <Property name="Type" value="GcInventorySpecialSlotType">
                 <Property name="InventorySpecialSlotType" value="TechBonus" />
               </Property>
-              <Property name="Index" value="GcInventoryIndex.xml">
+              <Property name="Index" value="GcInventoryIndex">
                 <Property name="X" value="1" />
                 <Property name="Y" value="0" />
               </Property>
             </Property>
-            <Property value="GcInventorySpecialSlot.xml">
-              <Property name="Type" value="GcInventorySpecialSlotType.xml">
+            <Property name="SpecialSlots" value="GcInventorySpecialSlot">
+              <Property name="Type" value="GcInventorySpecialSlotType">
                 <Property name="InventorySpecialSlotType" value="TechBonus" />
               </Property>
-              <Property name="Index" value="GcInventoryIndex.xml">
+              <Property name="Index" value="GcInventoryIndex">
                 <Property name="X" value="4" />
                 <Property name="Y" value="1" />
               </Property>
             </Property>
-            <Property value="GcInventorySpecialSlot.xml">
-              <Property name="Type" value="GcInventorySpecialSlotType.xml">
+            <Property name="SpecialSlots" value="GcInventorySpecialSlot">
+              <Property name="Type" value="GcInventorySpecialSlotType">
                 <Property name="InventorySpecialSlotType" value="TechBonus" />
               </Property>
-              <Property name="Index" value="GcInventoryIndex.xml">
+              <Property name="Index" value="GcInventoryIndex">
                 <Property name="X" value="4" />
                 <Property name="Y" value="2" />
               </Property>
@@ -559,38 +560,38 @@ Add3ChargedSlots = [[
 		  
 Add4ChargedSlots = [[
           <Property name="SpecialSlots">
-            <Property value="GcInventorySpecialSlot.xml">
-              <Property name="Type" value="GcInventorySpecialSlotType.xml">
+            <Property name="SpecialSlots" value="GcInventorySpecialSlot">
+              <Property name="Type" value="GcInventorySpecialSlotType">
                 <Property name="InventorySpecialSlotType" value="TechBonus" />
               </Property>
-              <Property name="Index" value="GcInventoryIndex.xml">
+              <Property name="Index" value="GcInventoryIndex">
                 <Property name="X" value="1" />
                 <Property name="Y" value="0" />
               </Property>
             </Property>
-            <Property value="GcInventorySpecialSlot.xml">
-              <Property name="Type" value="GcInventorySpecialSlotType.xml">
+            <Property name="SpecialSlots" value="GcInventorySpecialSlot">
+              <Property name="Type" value="GcInventorySpecialSlotType">
                 <Property name="InventorySpecialSlotType" value="TechBonus" />
               </Property>
-              <Property name="Index" value="GcInventoryIndex.xml">
+              <Property name="Index" value="GcInventoryIndex">
                 <Property name="X" value="3" />
                 <Property name="Y" value="1" />
               </Property>
             </Property>
-            <Property value="GcInventorySpecialSlot.xml">
-              <Property name="Type" value="GcInventorySpecialSlotType.xml">
+            <Property name="SpecialSlots" value="GcInventorySpecialSlot">
+              <Property name="Type" value="GcInventorySpecialSlotType">
                 <Property name="InventorySpecialSlotType" value="TechBonus" />
               </Property>
-              <Property name="Index" value="GcInventoryIndex.xml">
+              <Property name="Index" value="GcInventoryIndex">
                 <Property name="X" value="3" />
                 <Property name="Y" value="2" />
               </Property>
             </Property>
-			<Property value="GcInventorySpecialSlot.xml">
-              <Property name="Type" value="GcInventorySpecialSlotType.xml">
+			<Property name="SpecialSlots" value="GcInventorySpecialSlot">
+              <Property name="Type" value="GcInventorySpecialSlotType">
                 <Property name="InventorySpecialSlotType" value="TechBonus" />
               </Property>
-              <Property name="Index" value="GcInventoryIndex.xml">
+              <Property name="Index" value="GcInventoryIndex">
                 <Property name="X" value="1" />
                 <Property name="Y" value="2" />
               </Property>
@@ -606,18 +607,18 @@ CostChanges	=
 		{
 			"ShipCostData"
 		},
-		{													--MinSlots & MaxSlots here don't actually control slots, just lets the game know how many slots to expect on spawned ships in order to extrapolate the price at different shipsizes (in vanilla many of these slot values are inaccurate)
+		{--							Values worked out in "Calculations spreadsheet" optional file, "Ship pricing" page		MinSlots & MaxSlots here don't actually control slots, just lets the game know how many slots to expect on spawned ships in order to extrapolate the price at different shipsizes (in vanilla many of these slot values are inaccurate)
 		--Base value in millions 	MinValue	MaxValue	MinSlots	MaxSlots																	Price at Class C with lowest inventory and at Class S with highest inventory as seen in game v3.99 by players and catalogued to the wiki	(And max S rank cost after undoing the S rank cost bonus)
-			{"Shuttle",				0.75,		60*0.5,		10,			27},		--Vanilla values are 0.85 mil,		40 mil,			20,	44		Catalogued at 0.51 mil	~	6.6 mil		(4.4 mil)			18	~	28	general &	3	~	8	tech slots initially
-			{"Fighter",				1.25,		90*0.72,	6,			19},		--Vanilla values are 1.5 mil,		10.5 mil,		19,	30		Catalogued at 0.55 mil	~	57.5 mil	(28.75 mil)			15	~	38	general &	2	~	12	tech slots initially
-			{"Dropship",			4.5*0.38,	110*0.65,	15,			45},		--Vanilla values are 4.5 mil,		70 mil,			25,	48		Catalogued at 4.5 mil	~	126 mil		(70 mil)			25	~	48	general &	2	~	8	tech slots initially
-			{"Scientific",			1*1.5,		65*1.1,		6,			18},		--Vanilla values are 1.25 mil,		9.2 mil,		19,	30		Catalogued at 0.445 mil	~	39 mil		(26 mil)			15	~	38	general &	3	~	12	tech slots initially
-			{"Royal",				2.5,		8*1.21,		5,			11},		--Vanilla values are 5 mil,			12 mil,			15,	20		Catalogued at 5 mil		~	12 mil		(12 mil)			15	~	20	general &	4	~	6	tech slots initially
+			{"Shuttle",				5.037,		308.052,	15,			45},		--Vanilla values are 0.85 mil,		40 mil,			20,	44		Catalogued at 0.51 mil	~	6.6 mil		(4.4 mil)			18	~	28	general &	3	~	8	tech slots initially
+			{"Fighter",				29.555,		1056.892,	15,			45},		--Vanilla values are 1.5 mil,		10.5 mil,		19,	30		Catalogued at 0.55 mil	~	57.5 mil	(28.75 mil)			15	~	38	general &	2	~	12	tech slots initially
+			{"Dropship",			2.269,		81.128,		15,			45},		--Vanilla values are 4.5 mil,		70 mil,			25,	48		Catalogued at 4.5 mil	~	126 mil		(70 mil)			25	~	48	general &	2	~	8	tech slots initially
+			{"Scientific",			45.916,		1605.902,	15,			45},		--Vanilla values are 1.25 mil,		9.2 mil,		19,	30		Catalogued at 0.445 mil	~	39 mil		(26 mil)			15	~	38	general &	3	~	12	tech slots initially
+			{"Royal",				41.758,		1493.28,	15,			45},		--Vanilla values are 5 mil,			12 mil,			15,	20		Catalogued at 5 mil		~	12 mil		(12 mil)			15	~	20	general &	4	~	6	tech slots initially
 			{"Alien",				5,			70,			16,			30},		--Vanilla values are 5 mil,			70 mil,			25,	48		Catalogued at 2.98 mil	~	2.98mil		(2.98 mil)			22	~	22	general &	21	~	21	tech slots initially
-			{"Sail",				1*0.95,		100*0.4,	8,			20},		--Vanilla values are 2.2 mil,		11.1 mil,		19,	36		Catalogued at 1.00 mil	~	2.42mil		(2.2 mil)			15	~	19	general &	4	~	6	tech slots initially
+			{"Sail",				11.468,		424.182,	15,			45},		--Vanilla values are 2.2 mil,		11.1 mil,		19,	36		Catalogued at 1.00 mil	~	2.42mil		(2.2 mil)			15	~	19	general &	4	~	6	tech slots initially
 			{"Robot",				6,			48,			5,			15},		--Vanilla values are 4.2 mil,		34.5 mil,		19,	36		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially	Has CoolMultiplier of 20
-			{"Freighter",			25,			200,		17,			45},		--Vanilla values are 5 mil,			300 mil,		15,	48		Catalogued at 5 mil		~	23 mil  	(11.5 mil)			15	~	19	general &	3	~	6	tech slots initially for Regular,		26.15 mil	~	178 mil 	(89 mil) 24	~	34	general &	5	~	9	tech slots initially for Capital (Reg and Capital just Small and Medium size freighters)
-			{"PlayerFreighter",		25,			200,		17,			45}			--Vanilla values are 5 mil,			300 mil,		15,	48		Catalogued at 5 mil		~	23 mil  	(11.5 mil)			15	~	19	general &	3	~	6	tech slots initially for Regular,		26.15 mil	~	178 mil 	(89 mil) 24	~	34	general &	5	~	9	tech slots initially for Capital (Reg and Capital just Small and Medium size freighters)
+			{"Freighter",			18.097,		316.478,	15,			45},		--Vanilla values are 5 mil,			300 mil,		15,	48		Catalogued at 5 mil		~	23 mil  	(11.5 mil)			15	~	19	general &	3	~	6	tech slots initially for Regular,		26.15 mil	~	178 mil 	(89 mil) 24	~	34	general &	5	~	9	tech slots initially for Capital (Reg and Capital just Small and Medium size freighters)
+			{"PlayerFreighter",		18.097,		316.478,	15,			45}			--Vanilla values are 5 mil,			300 mil,		15,	48		Catalogued at 5 mil		~	23 mil  	(11.5 mil)			15	~	19	general &	3	~	6	tech slots initially for Regular,		26.15 mil	~	178 mil 	(89 mil) 24	~	34	general &	5	~	9	tech slots initially for Capital (Reg and Capital just Small and Medium size freighters)
 		}
 	},
 	{
@@ -626,7 +627,7 @@ CostChanges	=
 		},
 		{													--MinSlots & MaxSlots here don't actually control slots, just lets the game know how many slots to expect on spawned tools in order to extrapolate the price at different toolsizes (in vanilla many of these slot values are inaccurate)
 		--Base value in millions 	MinValue	MaxValue	MinSlots	MaxSlots																	Price at Class C with lowest inventory and at Class S with highest inventory as seen in game v3.99 by players and catalogued to the wiki	(And max S rank cost after undoing the S rank cost bonus)
-			{"Pistol",				0.08*1.8,	1,			6,			20},		--Vanilla values are 0.08 mil,		0.28 mil,		10,	30		Catalogued at 0.0455 mil	~	1.165 mil	(0.388 mil)		5	~	10	tech slots initially
+			{"Pistol",				0.25,		2,			6,			20},		--Vanilla values are 0.08 mil,		0.28 mil,		10,	30		Catalogued at 0.0455 mil	~	1.165 mil	(0.388 mil)		5	~	10	tech slots initially
 			{"Rifle",				0.635*2,	3.75,		13,			20},		--Vanilla values are 1.5 mil,		4 mil,			17,	30		Catalogued at 0.635 mil		~	3.7 mil		(2.96 mil)		11	~	24	tech slots initially
 			{"Pristine",			0.5,		6.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			11,	30		Catalogued at 0.5 mil		~	7.5 mil		(5 mil)			5	~	24	tech slots initially
 			{"Royal",				0.5,		3,			9,			20},		--Vanilla values are 1 mil,			7 mil,			13,	30		Catalogued at 5.15 mil		~	??? mil		(??? mil)		11	~	???	tech slots initially	(Only offered as C Class from Pillars?)
@@ -658,16 +659,16 @@ CostClassModifierChanges =	--Replaces vanilla cost bonus at different Classes
 		},
 		{
 		--Extra % added to cost at		C		B		A		S		class
-			{"Shuttle",					0,		30,		100,	300},				--Vanilla values are +		0,		10,		25,		50	%
-			{"Fighter",					0,		50,		150,	400},				--Vanilla values are +		0,		20,		70,		100	%
-			{"Dropship",				0,		40,		125,	350},				--Vanilla values are +		0,		30,		60,		80	%
-			{"Scientific",				0,		30,		100,	300},				--Vanilla values are +		0,		10,		25,		50	%
-			{"Royal",					0,		0,		0,		400},				--Vanilla values are +		0,		0,		0,		0	%
+			{"Shuttle",					0,		67,		175,	433},				--Vanilla values are +		0,		10,		25,		50	%
+			{"Fighter",					0,		50,		125,	300},				--Vanilla values are +		0,		20,		70,		100	%
+			{"Dropship",				0,		50,		125,	300},				--Vanilla values are +		0,		30,		60,		80	%
+			{"Scientific",				0,		50,		125,	300},				--Vanilla values are +		0,		10,		25,		50	%
+			{"Royal",					0,		50,		125,	300},				--Vanilla values are +		0,		0,		0,		0	%
 			{"Alien",					0,		0,		0,		300},				--Vanilla values are +		0,		0,		0,		0	%
-			{"Sail",					0,		50,		150,	400},				--Vanilla values are +		0,		10,		25,		50	%
-			{"Robot",					0,		25,		75,		150},				--Vanilla values are +		0,		10,		25,		50	%
-			{"Freighter",				0,		50,		150,	400},				--Vanilla values are +		0,		40,		60,		100	%
-			{"PlayerFreighter",			0,		50,		150,	400},				--Vanilla values are +		0,		40,		60,		100	%
+			{"Sail",					0,		50,		125,	300},				--Vanilla values are +		0,		10,		25,		50	%
+			{"Robot",					0,		25,		63,		150},				--Vanilla values are +		0,		10,		25,		50	%
+			{"Freighter",				0,		50,		125,	300},				--Vanilla values are +		0,		40,		60,		100	%
+			{"PlayerFreighter",			0,		50,		125,	300},				--Vanilla values are +		0,		40,		60,		100	%
 		}
 	},
 	{
@@ -856,12 +857,12 @@ ToolUpgradeSizeChanges	=
 	}
 }
 
-RoyalAgileAdd = [[<Property value="GcInventoryGenerationBaseStatDataEntry.xml">
+RoyalAgileAdd = [[<Property name="BaseStats" value="GcInventoryGenerationBaseStatDataEntry">
               <Property name="BaseStatID" value="SHIP_AGILE" />
-              <Property name="Min" value="40" />
-              <Property name="Max" value="50" />
-              <Property name="MinFixedAdd" value="0" />
-              <Property name="MaxFixedAdd" value="0" />
+              <Property name="Min" value="40.000000" />
+              <Property name="Max" value="50.000000" />
+              <Property name="MinFixedAdd" value="0.000000" />
+              <Property name="MaxFixedAdd" value="0.000000" />
             </Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -869,7 +870,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
   ["MOD_DESCRIPTION"]		= Description,         
   ["MOD_AUTHOR"]			= "Xen0nex",         --Based on UniqueSpaceShips by Jackty89
-  ["NMS_VERSION"]			= GameVersion,     
+  ["NMS_VERSION"]			= GameVersion,    
+  ["EXML_CREATE"] = "FALSE",  
   ["MODIFICATIONS"] 		= 
     {
 	    {
@@ -877,7 +879,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{ --Poor Spawn
 							["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData","Poor"},
@@ -986,7 +988,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"InventoryCostData"},
-							["SPECIAL_KEY_WORDS"] = {"Freighter","GcInventoryCostDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Freighter","GcInventoryCostDataEntry"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"TradeInMultiplier",FreighterTradeInMultiplier}
@@ -995,7 +997,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"InventoryCostData"},
-							["SPECIAL_KEY_WORDS"] = {"PlayerFreighter","GcInventoryCostDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"PlayerFreighter","GcInventoryCostDataEntry"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"TradeInMultiplier",FreighterTradeInMultiplier}
@@ -1084,7 +1086,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"FishingPlatform","GcInventoryLayoutGenerationDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {"FishingPlatform","GcInventoryLayoutGenerationDataEntry"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"MinSlots",	ExoSkiffSlots},
@@ -1101,17 +1103,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"RocketLockerLayout","GcInventoryLayout.xml"},
+							["SPECIAL_KEY_WORDS"] = {"WeaponLayout","GcInventoryLayout"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Slots", InitialToolSlots}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"RocketLockerLayout","GcInventoryLayout"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Slots", TradeRocketSlots}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"FishPlatformLayout","GcInventoryLayout.xml"},
+							["SPECIAL_KEY_WORDS"] = {"FishPlatformLayout","GcInventoryLayout"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Slots", ExoSkiffSlots}
@@ -1119,42 +1128,42 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						--[[
 						{
-							["SPECIAL_KEY_WORDS"] = {"Buggy","GcPlayerOwnershipData.xml",	"Inventory","GcInventoryContainer.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Buggy","GcPlayerOwnershipData",	"Inventory","GcInventoryContainer"},
 							["LINE_OFFSET"] = "+2",
 							REMOVE = "LINE",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Buggy","GcPlayerOwnershipData.xml",	"Inventory","GcInventoryContainer.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Buggy","GcPlayerOwnershipData",	"Inventory","GcInventoryContainer"},
 							["LINE_OFFSET"] = "+1",
 							ADD = RoamerAddedInventory,
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Bike","GcPlayerOwnershipData.xml",	"Inventory","GcInventoryContainer.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Bike","GcPlayerOwnershipData",	"Inventory","GcInventoryContainer"},
 							["LINE_OFFSET"] = "+2",
 							REMOVE = "LINE",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Bike","GcPlayerOwnershipData.xml",	"Inventory","GcInventoryContainer.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Bike","GcPlayerOwnershipData",	"Inventory","GcInventoryContainer"},
 							["LINE_OFFSET"] = "+1",
 							ADD = NomadAddedInventory,
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Bike","GcPlayerOwnershipData.xml",	"Inventory_TechOnly","GcInventoryContainer.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Bike","GcPlayerOwnershipData",	"Inventory_TechOnly","GcInventoryContainer"},
 							["LINE_OFFSET"] = "+2",
 							REMOVE = "LINE",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Bike","GcPlayerOwnershipData.xml",	"Inventory_TechOnly","GcInventoryContainer.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Bike","GcPlayerOwnershipData",	"Inventory_TechOnly","GcInventoryContainer"},
 							["LINE_OFFSET"] = "+1",
 							ADD = NomadAddedTechInventory,
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Submarine","GcPlayerOwnershipData.xml",	"Inventory","GcInventoryContainer.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Submarine","GcPlayerOwnershipData",	"Inventory","GcInventoryContainer"},
 							["LINE_OFFSET"] = "+2",
 							REMOVE = "LINE",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Submarine","GcPlayerOwnershipData.xml",	"Inventory","GcInventoryContainer.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Submarine","GcPlayerOwnershipData",	"Inventory","GcInventoryContainer"},
 							["LINE_OFFSET"] = "+1",
 							ADD = NautilonAddedInventory,
 						},
@@ -1163,17 +1172,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\BACKUPSAVEDATA.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"RocketLockerLayout","GcInventoryLayout.xml"},
+							["SPECIAL_KEY_WORDS"] = {"WeaponLayout","GcInventoryLayout"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Slots", InitialToolSlots}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"RocketLockerLayout","GcInventoryLayout"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Slots", TradeRocketSlots}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"FishPlatformLayout","GcInventoryLayout.xml"},
+							["SPECIAL_KEY_WORDS"] = {"FishPlatformLayout","GcInventoryLayout"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Slots", ExoSkiffSlots}
@@ -1187,7 +1203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 }	
 
 
-local ChangesToInventoryTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToInventoryTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 if FixAgilityStat then
 ChangesToInventoryTable[#ChangesToInventoryTable+1] =
@@ -1361,7 +1377,6 @@ for i = 1, #ShipAgileChanges do
 			ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
 				["PRECEDING_FIRST"] = "TRUE",
-				["MATH_OPERATION"] 		= "",
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData", ShipType,"BaseStatsPerClass",AgClass},
 				["SPECIAL_KEY_WORDS"] = {"BaseStatID", "SHIP_AGILE"},
@@ -1391,7 +1406,7 @@ for i = 1, #ShipBounds do
 			{
 				["MATH_OPERATION"] 		= "",
 				--["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {ShipTypeSize, "GcInventoryLayoutGenerationDataEntry.xml",	BoundType, "GcInventoryLayoutGenerationBounds.xml"},
+				["SPECIAL_KEY_WORDS"] = {ShipTypeSize, "GcInventoryLayoutGenerationDataEntry",	BoundType, "GcInventoryLayoutGenerationBounds"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"MaxWidthSmall", MaxWidthSmall},
@@ -1443,7 +1458,7 @@ for i = 1, #ToolBounds do
 			{
 				["MATH_OPERATION"] 		= "",
 				--["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {ToolSize, "GcInventoryLayoutGenerationDataEntry.xml",	"Bounds", "GcInventoryLayoutGenerationBounds.xml"},
+				["SPECIAL_KEY_WORDS"] = {ToolSize, "GcInventoryLayoutGenerationDataEntry",	"Bounds", "GcInventoryLayoutGenerationBounds"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"MaxWidthSmall", MaxWidthSmall},
@@ -1459,7 +1474,7 @@ for i = 1, #ToolBounds do
 			{
 				["MATH_OPERATION"] 		= "",
 				--["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {ToolSize, "GcInventoryLayoutGenerationDataEntry.xml",	"TechBounds", "GcInventoryLayoutGenerationBounds.xml"},
+				["SPECIAL_KEY_WORDS"] = {ToolSize, "GcInventoryLayoutGenerationDataEntry",	"TechBounds", "GcInventoryLayoutGenerationBounds"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"MaxWidthSmall", MaxWidthSmall},
@@ -1483,7 +1498,7 @@ for i = 1, #ToolSizeChanges do
 							["MATH_OPERATION"] = "",
 							--["PRECEDING_KEY_WORDS"] = {""},
 							["REPLACE_TYPE"] 		= "",
-							["SPECIAL_KEY_WORDS"] = {ToolSize,"GcInventoryLayoutGenerationDataEntry.xml"},
+							["SPECIAL_KEY_WORDS"] = {ToolSize,"GcInventoryLayoutGenerationDataEntry"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"MinSlots",	MinSlots},
@@ -1533,7 +1548,7 @@ for i = 1, #ShipInitialSizeChanges do
 			{
 				["MATH_OPERATION"] 		= "",
 				--["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {ShipTypeSize, "GcInventoryLayoutGenerationDataEntry.xml"},
+				["SPECIAL_KEY_WORDS"] = {ShipTypeSize, "GcInventoryLayoutGenerationDataEntry"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"MinSlots", MinSlots},
@@ -1602,7 +1617,7 @@ for i = 1, #VehicleBounds do
 
 			ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {VehicleSize, "GcInventoryLayoutGenerationDataEntry.xml",	BoundType, "GcInventoryLayoutGenerationBounds.xml"},
+				["SPECIAL_KEY_WORDS"] = {VehicleSize, "GcInventoryLayoutGenerationDataEntry",	BoundType, "GcInventoryLayoutGenerationBounds"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"MaxWidthSmall", MaxWidthSmall},
@@ -1621,7 +1636,7 @@ for i = 1, #VehicleInitialSizeChanges do
 
 			ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {VehicleTypeSize, "GcInventoryLayoutGenerationDataEntry.xml"},
+				["SPECIAL_KEY_WORDS"] = {VehicleTypeSize, "GcInventoryLayoutGenerationDataEntry"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"MinSlots", MinSlots},
@@ -1647,13 +1662,23 @@ for i = 1, #CostChanges do
 				["PRECEDING_FIRST"] = "TRUE",
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["PRECEDING_KEY_WORDS"] = {ShipOrTool},
-				["SPECIAL_KEY_WORDS"] = {ObjectID, "GcInventoryCostDataEntry.xml"},
+				["SPECIAL_KEY_WORDS"] = {ObjectID, "GcInventoryCostDataEntry"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"MinValueInMillions", MinValue},
+					{"MaxValueInMillions", MaxValue}
+				}
+			}
+			ChangesToInventoryTable[#ChangesToInventoryTable+1] =
+			{
+				["PRECEDING_FIRST"] = "TRUE",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["PRECEDING_KEY_WORDS"] = {ShipOrTool},
+				["SPECIAL_KEY_WORDS"] = {ObjectID, "GcInventoryCostDataEntry"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"MinSlots", MinSlots},
-					{"MinValueInMillions", MinValue},
-					{"MaxSlots", MaxSlots},
-					{"MaxValueInMillions", MaxValue}
+					{"MaxSlots", MaxSlots}
 				}
 			}
 	end
@@ -1673,7 +1698,7 @@ for i = 1, #CostClassModifierChanges do
 			{
 				["PRECEDING_FIRST"] = "TRUE",
 				["PRECEDING_KEY_WORDS"] = {ShipOrTool},
-				["SPECIAL_KEY_WORDS"] = {ObjectID, "GcInventoryCostDataEntry.xml"},
+				["SPECIAL_KEY_WORDS"] = {ObjectID, "GcInventoryCostDataEntry"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"C", C},
@@ -1688,7 +1713,7 @@ end
 --[[
 ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"DrpSmall", "GcInventoryLayoutGenerationDataEntry.xml",	"Bounds", "GcInventoryLayoutGenerationBounds.xml"},
+				["SPECIAL_KEY_WORDS"] = {"DrpSmall", "GcInventoryLayoutGenerationDataEntry",	"Bounds", "GcInventoryLayoutGenerationBounds"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"MaxWidthSmall", 3},			--8
@@ -1701,7 +1726,7 @@ ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			}
 ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"DrpMedium", "GcInventoryLayoutGenerationDataEntry.xml",	"Bounds", "GcInventoryLayoutGenerationBounds.xml"},
+				["SPECIAL_KEY_WORDS"] = {"DrpMedium", "GcInventoryLayoutGenerationDataEntry",	"Bounds", "GcInventoryLayoutGenerationBounds"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"MaxWidthSmall", 4},			--8
@@ -1714,7 +1739,7 @@ ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			}
 ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"DrpLarge", "GcInventoryLayoutGenerationDataEntry.xml",	"Bounds", "GcInventoryLayoutGenerationBounds.xml"},
+				["SPECIAL_KEY_WORDS"] = {"DrpLarge", "GcInventoryLayoutGenerationDataEntry",	"Bounds", "GcInventoryLayoutGenerationBounds"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"MaxWidthSmall", 10},			--8
@@ -1727,14 +1752,14 @@ ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			}
 ]]
 
-local ChangesToDefaultSaveDataTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local ChangesToDefaultSaveDataTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
 
 for i = 1, #VehicleRemoveChargedSlots do
 	local Vehicle = VehicleRemoveChargedSlots[i]
 
 			ChangesToDefaultSaveDataTable[#ChangesToDefaultSaveDataTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {Vehicle,"GcPlayerOwnershipData.xml",	"Inventory_TechOnly","GcInventoryContainer.xml"},
+				["SPECIAL_KEY_WORDS"] = {Vehicle,"GcPlayerOwnershipData",	"Inventory_TechOnly","GcInventoryContainer"},
 				["PRECEDING_KEY_WORDS"] = "SpecialSlots",
 				REMOVE = "SECTION",
 			}
@@ -1744,7 +1769,7 @@ for i = 1, #VehiclesAdd3ChargedSlots do
 
 			ChangesToDefaultSaveDataTable[#ChangesToDefaultSaveDataTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {Vehicle,"GcPlayerOwnershipData.xml",	"Inventory_TechOnly","GcInventoryContainer.xml",	"InventoryStackSizeGroup","Default"},
+				["SPECIAL_KEY_WORDS"] = {Vehicle,"GcPlayerOwnershipData",	"Inventory_TechOnly","GcInventoryContainer",	"InventoryStackSizeGroup","Default"},
 				["LINE_OFFSET"] = "+2",
 				ADD = Add3ChargedSlots
 			}
@@ -1754,7 +1779,7 @@ for i = 1, #VehiclesAdd4ChargedSlots do
 
 			ChangesToDefaultSaveDataTable[#ChangesToDefaultSaveDataTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {Vehicle,"GcPlayerOwnershipData.xml",	"Inventory_TechOnly","GcInventoryContainer.xml",	"InventoryStackSizeGroup","Default"},
+				["SPECIAL_KEY_WORDS"] = {Vehicle,"GcPlayerOwnershipData",	"Inventory_TechOnly","GcInventoryContainer",	"InventoryStackSizeGroup","Default"},
 				["LINE_OFFSET"] = "+2",
 				ADD = Add4ChargedSlots
 			}

@@ -9,9 +9,9 @@ FRIGATE_PRODUCT_MULTI	= 2			-- Default value is 1 | Multiplys the amount of prod
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 	= "BetterFrigateRewards.pak",
+["MOD_FILENAME"] 	= "BetterFrigateRewards",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "5.21",
+["NMS_VERSION"]		= "5.50",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to frigate reward values",
 ["MODIFICATIONS"] 	=
 	{

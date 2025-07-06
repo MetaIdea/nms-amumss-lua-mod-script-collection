@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]    = "Unclejuju",
 ["LUA_AUTHOR"]    = "Capital System Freighter lua by potatiustotalis, updated by dudemiustotalis, permission to include and enhance given by dudemiustotalis",
 ["MOD_DESCRIPTION"]	= "S Class Capital Freighter with max slots will spawn in the system and all Ships and Regular Freighters are also S Class with max slots",
-["NMS_VERSION"]   = "5.29",
+["NMS_VERSION"]   = "5.61",
 ["MODIFICATIONS"] =
 --Capital System Freighter lua begins in its original mod begins here
     {

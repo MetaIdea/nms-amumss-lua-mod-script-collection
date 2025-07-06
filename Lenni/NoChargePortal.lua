@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-						  ["SKW"] = {"Template", "GcMaintenanceComponentData.xml"},
+						  ["SKW"] = {"Components", "GcMaintenanceComponentData"},
 						  ["REMOVE"] = "SECTION",
 						}
 					}

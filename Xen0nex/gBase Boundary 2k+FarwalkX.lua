@@ -25,10 +25,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
+["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]	= {
 {["MBIN_CHANGE_TABLE"] = {{
 ["MBIN_FILE_SOURCE"] = FileSource1,
-["EXML_CHANGE_TABLE"] = {
+["MXML_CHANGE_TABLE"] = {
 	{["PRECEDING_KEY_WORDS"] = "",
 		["VALUE_CHANGE_TABLE"] = {
 		{"MinRadiusForBases", MinRadiusForBases},
@@ -43,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}},
 	{["PRECEDING_KEY_WORDS"] = "BuildingPlacementScaleMinMax",
 		["VALUE_CHANGE_TABLE"] = {
-		{"x", BuildingPlacementScaleMin},
-		{"y", BuildingPlacementScaleMax},
+		{"X", BuildingPlacementScaleMin},
+		{"Y", BuildingPlacementScaleMax},
 	}},
 }}}}}}

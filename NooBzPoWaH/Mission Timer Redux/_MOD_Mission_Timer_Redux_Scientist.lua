@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_Mission_Timer_Redux_Scientist.pak",
+["MOD_FILENAME"]  = "_MOD_Mission_Timer_Redux_Scientist",
 ["MOD_AUTHOR"]    = "NooBzPoWaH",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.+",
+["NMS_VERSION"]   = "5.71+",
 ["MODIFICATIONS"] =
     {
         {
@@ -14,10 +14,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         "METADATA\SIMULATION\MISSIONS\TABLES\MISSIONTABLE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Stage", "GcMissionSequenceWaitRealTime.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Stage", "GcMissionSequenceWaitRealTime"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_MATCH"] = "60",
                             ["VALUE_MATCH_OPTIONS"] = ">=",

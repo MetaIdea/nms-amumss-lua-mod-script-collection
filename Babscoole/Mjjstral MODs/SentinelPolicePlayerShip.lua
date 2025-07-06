@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "SentinelPolicePlayerShip.pak",
+["MOD_FILENAME"]            = "SentinelPolicePlayerShip",
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
-["NMS_VERSION"]             = "5.29",
+["NMS_VERSION"]             = "5.73",
 ["MOD_DESCRIPTION"]         = "Cockpitable sentinel police ship you can get via quick action emote menu action",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -18,17 +18,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"TransY", "1.4"},
-                                {"TransZ", "-1.5"},
-                                {"ScaleX", "1.4"},
-                                {"ScaleY", "1.4"},
-                                {"ScaleZ", "1.4"},
+                                {"TransY", "1.400000"},
+                                {"TransZ", "-1.500000"},
+                                {"ScaleX", "1.400000"},
+                                {"ScaleY", "1.400000"},
+                                {"ScaleZ", "1.400000"},
                             }
                         },
                         {
@@ -46,7 +46,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
@@ -61,74 +61,81 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
-                            ["SECTION_ACTIVE"] = {2},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Anims"},
                             ["SEC_ADD_NAMED"] = "ADD_ANIM",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcPlayerEffectsComponentData.xml"},
-                            ["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"Components", "GcPlayerEffectsComponentData"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property value="LinkableNMSTemplate.xml">
-      <Property name="Template" value="GcTriggerActionComponentData.xml">
-        <Property name="HideModel" value="False" />
-        <Property name="StartInactive" value="False" />
-        <Property name="States">
-          <Property value="GcActionTriggerState.xml">
-            <Property name="StateID" value="BOOT" />
-            <Property name="Triggers">
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcAnimFrameEvent.xml">
-                  <Property name="Anim" value="POLICE" />
-                  <Property name="FrameStart" value="0" />
-                  <Property name="StartFromEnd" value="False" />
-                </Property>
-                <Property name="Action">
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="REWARD" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-          <Property value="GcActionTriggerState.xml">
-            <Property name="StateID" value="REWARD" />
-            <Property name="Triggers">
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcStateTimeEvent.xml">
-                  <Property name="Seconds" value="0" />
-                  <Property name="RandomSeconds" value="0" />
-                  <Property name="UseMissionClock" value="False" />
-                </Property>
-                <Property name="Action">
-                  <Property value="GcRewardAction.xml">
-                    <Property name="Reward" value="POLICE" />
-                  </Property>
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="BOOT" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property name="Persistent" value="False" />
-        <Property name="PersistentState" value="" />
-        <Property name="ResetShotTimeOnStateChange" value="False" />
-        <Property name="LinkStateToBaseGrid" value="False" />
-      </Property>
-      <Property name="Linked" value="" />
-    </Property>
+		<Property name="Components" value="GcTriggerActionComponentData">
+			<Property name="GcTriggerActionComponentData">
+				<Property name="HideModel" value="false" />
+				<Property name="StartInactive" value="false" />
+				<Property name="States">
+					<Property name="States" value="GcActionTriggerState">
+						<Property name="StateID" value="BOOT" />
+						<Property name="Triggers">
+							<Property name="Triggers" value="GcActionTrigger">
+								<Property name="Event" value="GcAnimFrameEvent">
+									<Property name="GcAnimFrameEvent">
+										<Property name="Anim" value="POLICE" />
+										<Property name="FrameStart" value="0" />
+										<Property name="StartFromEnd" value="false" />
+									</Property>
+								</Property>
+								<Property name="Action">
+									<Property name="Action" value="GcGoToStateAction">
+										<Property name="GcGoToStateAction">
+											<Property name="State" value="REWARD" />
+										</Property>
+									</Property>
+								</Property>
+							</Property>
+						</Property>
+					</Property>
+					<Property name="States" value="GcActionTriggerState">
+						<Property name="StateID" value="REWARD" />
+						<Property name="Triggers">
+							<Property name="Triggers" value="GcActionTrigger">
+								<Property name="Event" value="GcStateTimeEvent">
+									<Property name="GcStateTimeEvent">
+										<Property name="Seconds" value="0.000000" />
+										<Property name="RandomSeconds" value="0.000000" />
+										<Property name="UseMissionClock" value="false" />
+									</Property>
+								</Property>
+								<Property name="Action">
+									<Property name="Action" value="GcRewardAction">
+										<Property name="GcRewardAction">
+											<Property name="Reward" value="POLICE" />
+										</Property>
+									</Property>
+									<Property name="Action" value="GcGoToStateAction">
+										<Property name="GcGoToStateAction">
+											<Property name="State" value="BOOT" />
+										</Property>
+									</Property>
+								</Property>
+							</Property>
+						</Property>
+					</Property>
+				</Property>
+				<Property name="Persistent" value="false" />
+				<Property name="PersistentState" value="" />
+				<Property name="ResetShotTimeOnStateChange" value="false" />
+				<Property name="LinkStateToBaseGrid" value="false" />
+			</Property>
+		</Property>
 ]]
                         }
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
@@ -140,25 +147,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Title",               "Police"},
                                 {"ChatText",            ""},
-                                {"ChatUsesPrefix",      "False"},
+                                {"ChatUsesPrefix",      "false"},
                                 {"EmoteID",             "POLICE"},
                                 {"AnimationName",       "POLICE"},
                                 {"Filename",            "TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS"},
-                                {"MoveToCancel",        "True"},
+                                {"MoveToCancel",        "true"},
                                 {"RidingAnimationName", "POLICE"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_EMOTE",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_EMOTE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"EmoteID",             "POLICEW"},
-                                {"AvailableUnderwater", "True"},
                             }
                         },
                         {
@@ -170,176 +164,161 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
                             ["ADD"] =
 [[
-    <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="POLICE" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="IncrementStat" value="" />
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificShip.xml">
-              <Property name="ShipResource" value="GcResourceElement.xml">
-                <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERPOLICE.SCENE.MBIN" />
-                <Property name="ResHandle" value="GcResource.xml">
-                  <Property name="ResourceID" value="0" />
-                </Property>
-                <Property name="Seed" value="GcSeed.xml">
-                  <Property name="Seed" value="1" />
-                  <Property name="UseSeedValue" value="True" />
-                </Property>
-                <Property name="AltId" value="" />
-                <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-                  <Property name="Samplers" />
-                </Property>
-              </Property>
-              <Property name="Customisation" value="GcCharacterCustomisationData.xml">
-                <Property name="DescriptorGroups" />
-                <Property name="PaletteID" value="" />
-                <Property name="Colours" />
-                <Property name="TextureOptions" />
-                <Property name="BoneScales" />
-                <Property name="Scale" value="1" />
-              </Property>
-              <Property name="ShipLayout" value="GcInventoryLayout.xml">
-                <Property name="Slots" value="60" />
-                <Property name="Seed" value="GcSeed.xml">
-                  <Property name="Seed" value="1" />
-                  <Property name="UseSeedValue" value="True" />
-                </Property>
-                <Property name="Level" value="1" />
-              </Property>
-              <Property name="ShipInventory" value="GcInventoryContainer.xml">
-                <Property name="Slots">
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="LAUNCHER" />
-                    <Property name="Amount" value="300" />
-                    <Property name="MaxAmount" value="300" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPJUMP1" />
-                    <Property name="Amount" value="100" />
-                    <Property name="MaxAmount" value="100" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPSHIELD" />
-                    <Property name="Amount" value="200" />
-                    <Property name="MaxAmount" value="200" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPGUN1" />
-                    <Property name="Amount" value="1000" />
-                    <Property name="MaxAmount" value="1000" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="HYPERDRIVE" />
-                    <Property name="Amount" value="120" />
-                    <Property name="MaxAmount" value="120" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPLAS1" />
-                    <Property name="Amount" value="1000" />
-                    <Property name="MaxAmount" value="1000" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="ValidSlotIndices" />
-                <Property name="Class" value="GcInventoryClass.xml">
-                  <Property name="InventoryClass" value="S" />
-                </Property>
-                <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
-                  <Property name="InventoryStackSizeGroup" value="Default" />
-                </Property>
-                <Property name="BaseStatValues" />
-                <Property name="SpecialSlots" />
-                <Property name="Width" value="0" />
-                <Property name="Height" value="0" />
-                <Property name="IsCool" value="False" />
-                <Property name="Name" value="" />
-                <Property name="Version" value="0" />
-              </Property>
-              <Property name="CostAmount" value="0" />
-              <Property name="CostCurrency" value="GcCurrency.xml">
-                <Property name="Currency" value="Units" />
-              </Property>
-              <Property name="ShipType" value="GcSpaceshipClasses.xml">
-                <Property name="ShipClass" value="Fighter" />
-              </Property>
-              <Property name="UseOverrideSizeType" value="False" />
-              <Property name="NameOverride" value="Police" />
-              <Property name="IsGift" value="True" />
-              <Property name="IsRewardShip" value="True" />
-              <Property name="FormatAsSeasonal" value="False" />
-              <Property name="ModelViewOverride" value="GcModelViews.xml">
-                <Property name="ModelViews" value="None" />
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
+		<Property name="GenericTable" value="GcGenericRewardTableEntry">
+			<Property name="Id" value="POLICE" />
+			<Property name="List" value="GcRewardTableItemList">
+				<Property name="RewardChoice" value="GiveAll" />
+				<Property name="OverrideZeroSeed" value="false" />
+				<Property name="UseInventoryChoiceOverride" value="false" />
+				<Property name="IncrementStat" value="" />
+				<Property name="List">
+					<Property name="List" value="GcRewardTableItem">
+						<Property name="PercentageChance" value="100.000000" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardSpecificShip">
+							<Property name="GcRewardSpecificShip">
+								<Property name="ShipResource" value="GcResourceElement">
+									<Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERPOLICE.SCENE.MBIN" />
+									<Property name="ResHandle" value="GcResource">
+										<Property name="ResourceID" value="0" />
+									</Property>
+									<Property name="Seed" value="1" />
+									<Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
+										<Property name="Samplers" />
+									</Property>
+									<Property name="AltId" value="" />
+								</Property>
+								<Property name="Customisation" value="GcCharacterCustomisationData">
+									<Property name="DescriptorGroups" />
+									<Property name="PaletteID" value="" />
+									<Property name="Colours" />
+									<Property name="TextureOptions" />
+									<Property name="BoneScales" />
+									<Property name="Scale" value="1.000000" />
+								</Property>
+								<Property name="ShipLayout" value="GcInventoryLayout">
+									<Property name="Slots" value="60" />
+									<Property name="Seed" value="1" />
+									<Property name="Level" value="1" />
+								</Property>
+								<Property name="ShipInventory" value="GcInventoryContainer">
+									<Property name="Slots">
+										<Property name="Slots" value="GcInventoryElement">
+											<Property name="Type" value="GcInventoryType">
+												<Property name="InventoryType" value="Technology" />
+											</Property>
+											<Property name="Id" value="LAUNCHER" />
+											<Property name="Amount" value="300" />
+											<Property name="MaxAmount" value="300" />
+											<Property name="DamageFactor" value="0.000000" />
+											<Property name="FullyInstalled" value="true" />
+											<Property name="Index" value="GcInventoryIndex">
+												<Property name="X" value="-1" />
+												<Property name="Y" value="-1" />
+											</Property>
+										</Property>
+										<Property name="Slots" value="GcInventoryElement">
+											<Property name="Type" value="GcInventoryType">
+												<Property name="InventoryType" value="Technology" />
+											</Property>
+											<Property name="Id" value="SHIPJUMP1" />
+											<Property name="Amount" value="100" />
+											<Property name="MaxAmount" value="100" />
+											<Property name="DamageFactor" value="0.000000" />
+											<Property name="FullyInstalled" value="true" />
+											<Property name="Index" value="GcInventoryIndex">
+												<Property name="X" value="-1" />
+												<Property name="Y" value="-1" />
+											</Property>
+										</Property>
+										<Property name="Slots" value="GcInventoryElement">
+											<Property name="Type" value="GcInventoryType">
+												<Property name="InventoryType" value="Technology" />
+											</Property>
+											<Property name="Id" value="SHIPSHIELD" />
+											<Property name="Amount" value="200" />
+											<Property name="MaxAmount" value="200" />
+											<Property name="DamageFactor" value="0.000000" />
+											<Property name="FullyInstalled" value="true" />
+											<Property name="Index" value="GcInventoryIndex">
+												<Property name="X" value="-1" />
+												<Property name="Y" value="-1" />
+											</Property>
+										</Property>
+										<Property name="Slots" value="GcInventoryElement">
+											<Property name="Type" value="GcInventoryType">
+												<Property name="InventoryType" value="Technology" />
+											</Property>
+											<Property name="Id" value="HYPERDRIVE" />
+											<Property name="Amount" value="120" />
+											<Property name="MaxAmount" value="120" />
+											<Property name="DamageFactor" value="0.000000" />
+											<Property name="FullyInstalled" value="true" />
+											<Property name="Index" value="GcInventoryIndex">
+												<Property name="X" value="-1" />
+												<Property name="Y" value="-1" />
+											</Property>
+										</Property>
+										<Property name="Slots" value="GcInventoryElement" _id="SHIPLAS1">
+											<Property name="Type" value="GcInventoryType">
+												<Property name="InventoryType" value="Technology" />
+											</Property>
+											<Property name="Id" value="SHIPGUN1" />
+											<Property name="Amount" value="1000" />
+											<Property name="MaxAmount" value="1000" />
+											<Property name="DamageFactor" value="0.000000" />
+											<Property name="FullyInstalled" value="true" />
+											<Property name="Index" value="GcInventoryIndex">
+												<Property name="X" value="-1" />
+												<Property name="Y" value="-1" />
+											</Property>
+										</Property>
+									</Property>
+									<Property name="ValidSlotIndices" />
+									<Property name="Class" value="GcInventoryClass">
+										<Property name="InventoryClass" value="S" />
+									</Property>
+									<Property name="StackSizeGroup" value="GcInventoryStackSizeGroup">
+										<Property name="InventoryStackSizeGroup" value="Default" />
+									</Property>
+									<Property name="BaseStatValues" />
+									<Property name="SpecialSlots" />
+									<Property name="Width" value="0" />
+									<Property name="Height" value="0" />
+									<Property name="IsCool" value="false" />
+									<Property name="Name" value="" />
+									<Property name="Version" value="0" />
+								</Property>
+								<Property name="CostAmount" value="0" />
+								<Property name="CostCurrency" value="GcCurrency">
+									<Property name="Currency" value="Units" />
+								</Property>
+								<Property name="ShipType" value="GcSpaceshipClasses">
+									<Property name="ShipClass" value="Fighter" />
+								</Property>
+								<Property name="UseOverrideSizeType" value="false" />
+								<Property name="OverrideSizeType" value="GcInventoryLayoutSizeType">
+									<Property name="SizeType" value="SciMedium" />
+								</Property>
+								<Property name="NameOverride" value="Police" />
+								<Property name="IsGift" value="true" />
+								<Property name="IsRewardShip" value="true" />
+								<Property name="FormatAsSeasonal" value="false" />
+								<Property name="ModelViewOverride" value="GcModelViews">
+									<Property name="ModelViews" value="None" />
+								</Property>
+							</Property>
+						</Property>
+					</Property>
+				</Property>
+			</Property>
+		</Property>
 ]]
                         }
                     }
@@ -350,26 +329,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["ADD_FILES"] =
     {
         {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.EXML",
+            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkModelDescriptorList">
+<Data template="cTkModelDescriptorList">
   <Property name="List">
-    <Property value="TkResourceDescriptorList.xml">
+		<Property name="List" value="TkResourceDescriptorList">
       <Property name="TypeId" value="_SHIP_" />
       <Property name="Descriptors">
-        <Property value="TkResourceDescriptorData.xml">
+				<Property name="Descriptors" value="TkResourceDescriptorData">
           <Property name="Id" value="_SHIP_POLICE" />
           <Property name="Name" value="_Ship_Police" />
-          <Property name="ReferencePaths">
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
-            </Property>
-          </Property>
-          <Property name="Chance" value="0" />
-          <Property name="Children" />
+					<Property name="ReferencePaths">
+						<Property name="ReferencePaths" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
+					</Property>
+					<Property name="Chance" value="0.000000" />
+					<Property name="Children" />
         </Property>
       </Property>
     </Property>
@@ -378,49 +355,49 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.SCENE.EXML",
+            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.SCENE.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkSceneNodeData">
+<Data template="cTkSceneNodeData">
   <Property name="Name" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERCLASSICGOLD" />
   <Property name="NameHash" value="4182676705" />
   <Property name="Type" value="MODEL" />
-  <Property name="Transform" value="TkTransformData.xml">
-    <Property name="TransX" value="0" />
-    <Property name="TransY" value="0" />
-    <Property name="TransZ" value="0" />
-    <Property name="RotX" value="0" />
-    <Property name="RotY" value="0" />
-    <Property name="RotZ" value="0" />
-    <Property name="ScaleX" value="1" />
-    <Property name="ScaleY" value="1" />
-    <Property name="ScaleZ" value="1" />
+  <Property name="Transform" value="TkTransformData">
+		<Property name="TransX" value="0.000000" />
+		<Property name="TransY" value="0.000000" />
+		<Property name="TransZ" value="0.000000" />
+		<Property name="RotX" value="0.000000" />
+		<Property name="RotY" value="0.000000" />
+		<Property name="RotZ" value="0.000000" />
+		<Property name="ScaleX" value="1.000000" />
+		<Property name="ScaleY" value="1.000000" />
+		<Property name="ScaleZ" value="1.000000" />
   </Property>
   <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
-    <Property value="TkSceneNodeAttributeData.xml">
+		<Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="GEOMETRY" />
       <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.GEOMETRY.MBIN" />
     </Property>
-    <Property value="TkSceneNodeAttributeData.xml">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
   <Property name="Children">
-    <Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="EngineFlare_Distant" />
       <Property name="NameHash" value="3869425187" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="0" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="0.000000" />
         <Property name="TransY" value="1.628213" />
         <Property name="TransZ" value="-3.462083" />
-        <Property name="RotX" value="0" />
-        <Property name="RotY" value="180" />
-        <Property name="RotZ" value="0" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="180.000000" />
+        <Property name="RotZ" value="0.000000" />
         <Property name="ScaleX" value="20.8902454" />
         <Property name="ScaleY" value="20.8902454" />
         <Property name="ScaleZ" value="20.8902454" />
@@ -429,260 +406,260 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="ProcRoot_StarShip" />
       <Property name="NameHash" value="3871606254" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="0" />
-        <Property name="TransY" value="0" />
-        <Property name="TransZ" value="0" />
-        <Property name="RotX" value="0" />
-        <Property name="RotY" value="0" />
-        <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="1" />
-        <Property name="ScaleY" value="1" />
-        <Property name="ScaleZ" value="1" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="0.000000" />
+        <Property name="TransY" value="0.000000" />
+        <Property name="TransZ" value="0.000000" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="0.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="1.000000" />
+        <Property name="ScaleY" value="1.000000" />
+        <Property name="ScaleZ" value="1.000000" />
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="_Ship_Police" />
           <Property name="NameHash" value="3628092373" />
           <Property name="Type" value="REFERENCE" />
-          <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0" />
-            <Property name="TransY" value="0" />
-            <Property name="TransZ" value="0" />
-            <Property name="RotX" value="0" />
-            <Property name="RotY" value="0" />
-            <Property name="RotZ" value="0" />
-            <Property name="ScaleX" value="1" />
-            <Property name="ScaleY" value="1" />
-            <Property name="ScaleZ" value="1" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="0.000000" />
+            <Property name="ScaleX" value="1.000000" />
+            <Property name="ScaleY" value="1.000000" />
+            <Property name="ScaleZ" value="1.000000" />
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="EMBEDGEOMETRY" />
               <Property name="Value" value="TRUE" />
             </Property>
           </Property>
           <Property name="Children">
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="Data" />
               <Property name="NameHash" value="2810148397" />
               <Property name="Type" value="LOCATOR" />
-              <Property name="Transform" value="TkTransformData.xml">
-                <Property name="TransX" value="0" />
-                <Property name="TransY" value="0" />
-                <Property name="TransZ" value="0" />
-                <Property name="RotX" value="0" />
-                <Property name="RotY" value="0" />
-                <Property name="RotZ" value="0" />
-                <Property name="ScaleX" value="1" />
-                <Property name="ScaleY" value="1" />
-                <Property name="ScaleZ" value="1" />
+              <Property name="Transform" value="TkTransformData">
+                <Property name="TransX" value="0.000000" />
+                <Property name="TransY" value="0.000000" />
+                <Property name="TransZ" value="0.000000" />
+                <Property name="RotX" value="0.000000" />
+                <Property name="RotY" value="0.000000" />
+                <Property name="RotZ" value="0.000000" />
+                <Property name="ScaleX" value="1.000000" />
+                <Property name="ScaleY" value="1.000000" />
+                <Property name="ScaleZ" value="1.000000" />
               </Property>
               <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="ATTACHMENT" />
                   <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_A/COCKPITA/ENTITIES/COCKPIT_A.ENTITY.MBIN" />
                 </Property>
               </Property>
               <Property name="Children">
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="INTERACTOrigin" />
                   <Property name="NameHash" value="3066580072" />
                   <Property name="Type" value="LOCATOR" />
-                  <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="1.8" />
-                    <Property name="TransZ" value="0.7" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                  <Property name="Transform" value="TkTransformData">
+                    <Property name="TransX" value="0.000000" />
+                    <Property name="TransY" value="1.800000" />
+                    <Property name="TransZ" value="0.700000" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
                   <Property name="Children" />
                 </Property>
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="INTERACT" />
                   <Property name="NameHash" value="3698755080" />
                   <Property name="Type" value="LOCATOR" />
-                  <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="1.8" />
-                    <Property name="TransZ" value="0.7" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                  <Property name="Transform" value="TkTransformData">
+                    <Property name="TransX" value="0.000000" />
+                    <Property name="TransY" value="1.800000" />
+                    <Property name="TransZ" value="0.700000" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
                   <Property name="Children" />
                 </Property>
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="CrashEffect" />
                   <Property name="NameHash" value="1244254611" />
                   <Property name="Type" value="LOCATOR" />
-                  <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
+                  <Property name="Transform" value="TkTransformData">
+                    <Property name="TransX" value="0.000000" />
                     <Property name="TransY" value="2.309226" />
-                    <Property name="TransZ" value="0" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                    <Property name="TransZ" value="0.000000" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
                   <Property name="Children" />
                 </Property>
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="MaintenanceSlot1" />
                   <Property name="NameHash" value="304746222" />
                   <Property name="Type" value="LOCATOR" />
-                  <Property name="Transform" value="TkTransformData.xml">
+                  <Property name="Transform" value="TkTransformData">
                     <Property name="TransX" value="0.338705" />
                     <Property name="TransY" value="2.185556" />
                     <Property name="TransZ" value="-0.734243" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
                   <Property name="Children" />
                 </Property>
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="MaintenanceSlot0" />
                   <Property name="NameHash" value="1004495448" />
                   <Property name="Type" value="LOCATOR" />
-                  <Property name="Transform" value="TkTransformData.xml">
+                  <Property name="Transform" value="TkTransformData">
                     <Property name="TransX" value="0.338705" />
                     <Property name="TransY" value="1.328125" />
                     <Property name="TransZ" value="2.983213" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
                   <Property name="Children" />
                 </Property>
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="CUSTOM" />
                   <Property name="NameHash" value="2675539979" />
                   <Property name="Type" value="COLLISION" />
-                  <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="1.5" />
-                    <Property name="TransZ" value="0" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                  <Property name="Transform" value="TkTransformData">
+                    <Property name="TransX" value="0.000000" />
+                    <Property name="TransY" value="1.500000" />
+                    <Property name="TransZ" value="0.000000" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
-                    <Property value="TkSceneNodeAttributeData.xml">
+                    <Property name="Attributes" value="TkSceneNodeAttributeData">
                       <Property name="Name" value="TYPE" />
                       <Property name="Value" value="Box" />
                     </Property>
-                    <Property value="TkSceneNodeAttributeData.xml">
+                    <Property name="Attributes" value="TkSceneNodeAttributeData">
                       <Property name="Name" value="WIDTH" />
-                      <Property name="Value" value="1" />
+                      <Property name="Value" value="1.000000" />
                     </Property>
-                    <Property value="TkSceneNodeAttributeData.xml">
+                    <Property name="Attributes" value="TkSceneNodeAttributeData">
                       <Property name="Name" value="HEIGHT" />
-                      <Property name="Value" value="1" />
+                      <Property name="Value" value="1.000000" />
                     </Property>
-                    <Property value="TkSceneNodeAttributeData.xml">
+                    <Property name="Attributes" value="TkSceneNodeAttributeData">
                       <Property name="Name" value="DEPTH" />
-                      <Property name="Value" value="1" />
+                      <Property name="Value" value="1.000000" />
                     </Property>
                   </Property>
                   <Property name="Children" />
                 </Property>
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="Cockpit" />
                   <Property name="NameHash" value="876108911" />
                   <Property name="Type" value="LOCATOR" />
-                  <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="1" />
-                    <Property name="TransZ" value="0" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                  <Property name="Transform" value="TkTransformData">
+                    <Property name="TransX" value="0.000000" />
+                    <Property name="TransY" value="1.000000" />
+                    <Property name="TransZ" value="0.000000" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
                   <Property name="Children">
-                    <Property value="TkSceneNodeData.xml">
+                    <Property name="Children" value="TkSceneNodeData">
                       <Property name="Name" value="CockpitPos" />
                       <Property name="NameHash" value="465567180" />
                       <Property name="Type" value="LOCATOR" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="0" />
-                        <Property name="TransY" value="1" />
-                        <Property name="TransZ" value="0" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="0" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
+                      <Property name="Transform" value="TkTransformData">
+                        <Property name="TransX" value="0.000000" />
+                        <Property name="TransY" value="1.000000" />
+                        <Property name="TransZ" value="0.000000" />
+                        <Property name="RotX" value="0.000000" />
+                        <Property name="RotY" value="0.000000" />
+                        <Property name="RotZ" value="0.000000" />
+                        <Property name="ScaleX" value="1.000000" />
+                        <Property name="ScaleY" value="1.000000" />
+                        <Property name="ScaleZ" value="1.000000" />
                       </Property>
                       <Property name="PlatformExclusion" value="0" />
                       <Property name="Attributes" />
                       <Property name="Children" />
                     </Property>
-                    <Property value="TkSceneNodeData.xml">
+                    <Property name="Children" value="TkSceneNodeData">
                       <Property name="Name" value="Inventory" />
                       <Property name="NameHash" value="1402981485" />
                       <Property name="Type" value="LOCATOR" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="0" />
-                        <Property name="TransY" value="0" />
-                        <Property name="TransZ" value="0" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="0" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
+                      <Property name="Transform" value="TkTransformData">
+                        <Property name="TransX" value="0.000000" />
+                        <Property name="TransY" value="0.000000" />
+                        <Property name="TransZ" value="0.000000" />
+                        <Property name="RotX" value="0.000000" />
+                        <Property name="RotY" value="0.000000" />
+                        <Property name="RotZ" value="0.000000" />
+                        <Property name="ScaleX" value="1.000000" />
+                        <Property name="ScaleY" value="1.000000" />
+                        <Property name="ScaleZ" value="1.000000" />
                       </Property>
                       <Property name="PlatformExclusion" value="0" />
                       <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
+                        <Property name="Attributes" value="TkSceneNodeAttributeData">
                           <Property name="Name" value="ATTACHMENT" />
                           <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/ENTITIES/FIGHTERBASE.ENTITY.MBIN" />
                         </Property>
@@ -702,14 +679,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.EXML",
+            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkAnimMetadata">
+<Data template="cTkAnimMetadata">
   <Property name="NodeData">
-    <Property value="TkAnimNodeData.xml">
+    <Property name="NodeData" value="TkAnimNodeData">
       <Property name="Node" value="AnimatedTrans" />
       <Property name="RotIndex" value="0" />
       <Property name="TransIndex" value="0" />
@@ -717,52 +694,50 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
   </Property>
-  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
+  <Property name="StillFrameData" value="TkAnimNodeFrameData">
     <Property name="Rotations">
-      <Property value="Quaternion.xml">
-        <Property name="x" value="0" />
-        <Property name="y" value="0" />
-        <Property name="z" value="0" />
-        <Property name="w" value="1" />
+      <Property name="Rotations" value="Quaternion">
+        <Property name="X" value="0" />
+        <Property name="Y" value="0" />
+        <Property name="Z" value="0" />
+        <Property name="W" value="1" />
         <Property name="dropComponent" value="3" />
       </Property>
     </Property>
     <Property name="Translations">
-      <Property value="Vector4f.xml">
-        <Property name="x" value="-0.73121876" />
-        <Property name="y" value="0.08333181" />
-        <Property name="z" value="-0.02858855" />
-        <Property name="t" value="1" />
+      <Property name="Translations">
+        <Property name="X" value="-0.73121876" />
+        <Property name="Y" value="0.08333181" />
+        <Property name="Z" value="-0.02858855" />
       </Property>
     </Property>
     <Property name="Scales">
-      <Property value="Vector4f.xml">
-        <Property name="x" value="1" />
-        <Property name="y" value="1" />
-        <Property name="z" value="1" />
-        <Property name="t" value="1" />
+      <Property name="Scales">
+        <Property name="X" value="1.000000" />
+        <Property name="Y" value="1.000000" />
+        <Property name="Z" value="1.000000" />
       </Property>
     </Property>
   </Property>
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="Has30HzFrames" value="False" />
+  <Property name="Has30HzFrames" value="false" />
 </Data>
 ]]
         },

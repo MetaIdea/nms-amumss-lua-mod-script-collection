@@ -48,18 +48,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
+["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			--This entry intentionally left blank, to be filled in by the FrigateCostChanges at the bottom of this script
 		}
 	}
 }}}}
 
-local ChangesToFleetUpgrades = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToFleetUpgrades = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #FleetUpgradeChanges do
 	local ValueMin = FleetUpgradeChanges[i][1][1]

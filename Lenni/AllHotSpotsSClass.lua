@@ -1,17 +1,17 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= "AllHotSpotsSClass.pak", 
+["MOD_FILENAME"] 			= "AllHotSpotsSClass.pak",
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "4.21",
+["NMS_VERSION"]				= "5.64",
 ["MOD_DESCRIPTION"]			= "All hotspots are S-Class",
-["MODIFICATIONS"] 			= 
+["MODIFICATIONS"] 			=
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
+			["MBIN_CHANGE_TABLE"] 	=
+			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	=
 					{
 						{
 							["PKW"]					= "ClassWeightings",
@@ -27,5 +27,5 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 			}
 		}
-	}	
+	}
 }

@@ -9,11 +9,15 @@ SUBGROUP_MOVE_TABLE =
 	{ ["SubGroup"] = "POWERPOWER", ["Name"] = "UI_BUILD_GRID_POWER", ["From"] = "POWER", ["To"] = "PLANET_TECH" },
 	{ ["SubGroup"] = "POWERINDUSTRY", ["Name"] = "UI_BUILD_GRID_INDUSTRY", ["From"] = "POWER", ["To"] = "PLANET_TECH" },
 	{ ["SubGroup"] = "POWERSWITCHES", ["Name"] = "UI_BUILD_GRID_SWITCHES", ["From"] = "POWER", ["To"] = "PLANET_TECH" },
-	{ ["SubGroup"] = "DECOLIGHTS", ["Name"] = "UI_BUILD_GRID_LIGHTS", ["From"] = "DECORATION", ["To"] = "EXOTICS" },
-	{ ["SubGroup"] = "DECOEXTERIOR", ["Name"] = "UI_BUILD_GRID_EXTERIOR", ["From"] = "DECORATION", ["To"] = "FURNITURE" },
-	{ ["SubGroup"] = "DECOCONSTRUCT", ["Name"] = "UI_BUILD_GRID_CONSTRUCTION", ["From"] = "DECORATION", ["To"] = "FURNITURE" },
-	-- { ["SubGroup"] = "WALLDECALS", ["Name"] = "UI_BUILD_GRID_DECALS", ["From"] = "WALL_ART", ["To"] = "EXOTICS" },
-	-- { ["SubGroup"] = "WALLPOSTERS", ["Name"] = "UI_BUILD_GRID_POSTERS", ["From"] = "WALL_ART", ["To"] = "EXOTICS" },
+	-- { ["SubGroup"] = "DECOLIGHTS", ["Name"] = "UI_BUILD_GRID_LIGHTS", ["From"] = "DECORATION", ["To"] = "EXOTICS" },
+	-- { ["SubGroup"] = "DECOEXTERIOR", ["Name"] = "UI_BUILD_GRID_EXTERIOR", ["From"] = "DECORATION", ["To"] = "FURNITURE" },
+	-- { ["SubGroup"] = "DECOCONSTRUCT", ["Name"] = "UI_BUILD_GRID_CONSTRUCTION", ["From"] = "DECORATION", ["To"] = "FURNITURE" },
+	{ ["SubGroup"] = "WALLDECALS", ["Name"] = "UI_BUILD_GRID_DECALS", ["From"] = "WALL_ART", ["To"] = "DECORATION" },
+	{ ["SubGroup"] = "WALLPOSTERS", ["Name"] = "UI_BUILD_GRID_POSTERS", ["From"] = "WALL_ART", ["To"] = "DECORATION" },
+	{ ["SubGroup"] = "DECOSTATUES", ["Name"] = "UI_BUILD_GRID_STATUES", ["From"] = "EXOTICS", ["To"] = "FURNITURE" },
+	{ ["SubGroup"] = "DECOGLITCHES", ["Name"] = "UI_BUILD_GRID_GLITCHES", ["From"] = "EXOTICS", ["To"] = "FURNITURE" },
+	{ ["SubGroup"] = "DECOFOLIAGE", ["Name"] = "UI_BUILD_GRID_FOLIAGE", ["From"] = "EXOTICS", ["To"] = "FURNITURE" },
+	-- { ["SubGroup"] = "DECOFOSSILS", ["Name"] = "UI_BUILD_GRID_FOSSILS", ["From"] = "DECORATION", ["To"] = "EXOTICS" },
 	-- { ["SubGroup"] = "FREIGHTERROOMS", ["Name"] = "UI_BUILD_GRID_FREIGHTER_ROOMS", ["From"] = "FREIGHTER", ["To"] = "ROOMS" },
 	-- { ["SubGroup"] = "FREIGHTERTECH", ["Name"] = "UI_BUILD_GRID_FREIGHTER_TECH", ["From"] = "FREIGHTER", ["To"] = "PLANET_TECH" },
 	{ ["SubGroup"] = "FRE_TECH_OTHER", ["Name"] = "UI_BUILD_GRID_FREIGHTPORTABLE", ["From"] = "FREIGHTER_TECH", ["To"] = "FREIGHTER" },
@@ -22,22 +26,92 @@ SUBGROUP_MOVE_TABLE =
 	{ ["SubGroup"] = "FRE_IND_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_INDROOM", ["From"] = "FREIGHTER_IND", ["To"] = "FREIGHTER" },
 	{ ["SubGroup"] = "FRE_BIO_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_BIOROOM", ["From"] = "FREIGHTER_BIO", ["To"] = "FREIGHTER" },
 	{ ["SubGroup"] = "FRE_TECH_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_TECHROO", ["From"] = "FREIGHTER_TECH", ["To"] = "FREIGHTER" },
-	{ ["SubGroup"] = "T_FLOORS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_T", ["To"] = "ROOMS" },
-	{ ["SubGroup"] = "S_FLOORS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_S", ["To"] = "ROOMS" },
-	{ ["SubGroup"] = "F_FLOORS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_F", ["To"] = "ROOMS" },
-	{ ["SubGroup"] = "T_WALLS", ["Name"] = "UI_BUILD_GRID_WALLS", ["From"] = "BASIC_T", ["To"] = "ROOMS" },
-	{ ["SubGroup"] = "S_WALLS", ["Name"] = "UI_BUILD_GRID_WALLS", ["From"] = "BASIC_S", ["To"] = "ROOMS" },
-	{ ["SubGroup"] = "F_WALLS", ["Name"] = "UI_BUILD_GRID_WALLS", ["From"] = "BASIC_F", ["To"] = "ROOMS" },
-	{ ["SubGroup"] = "T_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_T", ["To"] = "ROOMS" },
-	{ ["SubGroup"] = "S_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_S", ["To"] = "ROOMS" },
-	{ ["SubGroup"] = "F_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_F", ["To"] = "ROOMS" },
-	-- { ["SubGroup"] = "BASICWOOD", ["Name"] = "UI_BUILD_GRID_WOOD", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
-    -- { ["SubGroup"] = "BASICCONCRETE", ["Name"] = "UI_BUILD_GRID_CONCRETE", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
-    -- { ["SubGroup"] = "BASICMETAL", ["Name"] = "UI_BUILD_GRID_METAL", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
-
+	{ ["SubGroup"] = "T_FLOORS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_T", ["To"] = "BASIC_B" },
+	{ ["SubGroup"] = "S_FLOORS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_S", ["To"] = "BASIC_B" },
+	{ ["SubGroup"] = "F_FLOORS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_F", ["To"] = "BASIC_B" },
+	-- { ["SubGroup"] = "B_FLOORS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_B", ["To"] = "ROOMS" },
+	{ ["SubGroup"] = "T_WALLS", ["Name"] = "UI_BUILD_GRID_WALLS", ["From"] = "BASIC_T", ["To"] = "BASIC_B", ["Display"] = "-1" },
+	{ ["SubGroup"] = "S_WALLS", ["Name"] = "UI_BUILD_GRID_WALLS", ["From"] = "BASIC_S", ["To"] = "BASIC_B" },
+	{ ["SubGroup"] = "F_WALLS", ["Name"] = "UI_BUILD_GRID_WALLS", ["From"] = "BASIC_F", ["To"] = "BASIC_B" },
+	-- { ["SubGroup"] = "B_WALLS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_B", ["To"] = "ROOMS" },
+	{ ["SubGroup"] = "T_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_T", ["To"] = "BASIC_B" }, 
+	{ ["SubGroup"] = "S_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_S", ["To"] = "BASIC_B" },
+	{ ["SubGroup"] = "F_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_F", ["To"] = "BASIC_B" },
+	-- { ["SubGroup"] = "B_ROOFS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_B", ["To"] = "ROOMS" },
+	{ ["SubGroup"] = "BASICWOOD", ["Name"] = "UI_BUILD_GRID_WOOD", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
+	{ ["SubGroup"] = "BASICCONCRETE", ["Name"] = "UI_BUILD_GRID_CONCRETE", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
+	{ ["SubGroup"] = "BASICMETAL", ["Name"] = "UI_BUILD_GRID_METAL", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },	
 }
 
-DEBUG_TEXT = false
+COMPO_PART_TABLE =
+{
+	{["ID"] = "SPHERESHAPE", ["CompositePart"] = {"CUBESHAPE", "CYLINDERSHAPE", "PIPESHAPE", "PIPE", "CURVEPIPESHAPE", "PYRAMIDSHAPE", "WEDGESMALLSHAPE", "WEDGESHAPE", "BUILDPAVINGTALL", "BUILDPAVING_BIG", "BUILDPAVING"}},
+	{["ID"] = "CORRIDOR", ["CompositePart"] = {"GLASSCORRIDOR", "CORRIDORC", "CORRIDORX", "CORRIDORT", "CORRIDORL"}},
+	{["ID"] = "WALLSCREEN", ["CompositePart"] = {"WALLSCREENB2", "WALLSCREENB"}},
+	{["ID"] = "WALLFLAG1", ["CompositePart"] = {"WALLFLAG2", "WALLFLAG3"}},
+	{["ID"] = "S_FLAG5", ["CompositePart"] = {"S_FLAG6", "S_WALLHANGING1", "B_WALLHANGING1", "S_WALLHANGING2", "B_WALLHANGING2", "S_WALLHANGING3", "B_WALLHANGING3"}},
+	{["ID"] = "FLAG1", ["CompositePart"] = {"FLAG2", "FLAG3", "FLAG4", "EXPD_FLAG_06A", "EXPD_FLAG_06B", "EXPD_FLAG_06C", "EXPD_FLAG_06D", "EXPD_FLAG_06E"}},
+	{["ID"] = "S_CRATE0", ["CompositePart"] = {"S_CRATE1", "S_CRATE2", "S_CRATE3", "S_CRATE3OPEN", "S_CRATE4", "S_CRATE4OPEN"}},
+	{["ID"] = "S_BARTAPS0", ["CompositePart"] = {"S_TABLEPOT0", "S_TABLELAMP0", "S_CUP0", "S_TRAY0", "S_PAN0", "S_BURNER0"}},
+	{["ID"] = "S_CHAIR0", ["CompositePart"] = {"BUILDCHAIR", "BUILDCHAIR2", "BUILDCHAIR3", "BUILDCHAIR4", "BUILDSOFA2L", "BUILDSOFA2", "BUILDSOFA"}},
+	{["ID"] = "S_BARTABLE0", ["CompositePart"] = {"S_BAR", "S_BAR_H", "S_BAR_C"}},
+	{["ID"] = "BUILDTABLE", ["CompositePart"] = {"BUILDTABLE2", "BUILDTABLE3", "BUILDSIMPLEDESK", "BUILDLIGHTTABLE", "LARGEDESK", "MONITORDESK", "BUILDWORKTOP", "CURVEDDESK"}},
+	{["ID"] = "WALLSCREEN", ["CompositePart"] = {"WALLSCREENB2", "WALLSCREENB"}},
+	{["ID"] = "ABAND_CRATE_M", ["CompositePart"] = {"ABAND_CRATE_L", "ABAND_CRATE_XL", "FOOTLOCKER", "LOCKER2"}},
+	{["ID"] = "HOLO_TRA", ["CompositePart"] = {"HOLO_EXP", "HOLO_WAR", "HOLO_MED1", "HOLO_MED2", "HOLO_SMALL1", "HOLO_SMALL2"}},
+	{["ID"] = "LIGHTFRAME", ["CompositePart"] = {"LIGHT_TALL", "LIGHT_PLINTH", "LIGHT_VERT"}},
+	{["ID"] = "SERVERBOX1", ["CompositePart"] = {"SERVERBOX2", "HOLOFILES", "POWERBOX"}},
+	{["ID"] = "BUILDLIGHT3", ["CompositePart"] = {"BUILDLIGHT2", "BUILDLIGHT"}},
+	{["ID"] = "WALLLIGHTBLUE", ["CompositePart"] = {"WALLLIGHTPINK", "WALLLIGHTYELLOW", "WALLLIGHTGREEN", "WALLLIGHTRED", "WALLLIGHTWHITE"}},
+	{["ID"] = "S_HANGLAMP0", ["CompositePart"] = {"S_HANGLAMP1", "S_HANGLAMP2", "S_HANGLAMP3"}},
+	{["ID"] = "S_SIGN_BAR1", ["CompositePart"] = {"S_SIGN_BAR2", "S_SIGN_BAR3"}},
+	{["ID"] = "BLD_BUI_TENT", ["CompositePart"] = {"BLD_COVSILOS", "BLD_COVCRATE", "BLD_CRANE"}},
+	{["ID"] = "S_CANOPY_WALL0", ["CompositePart"] = {"S_CANOPY_WALL1", "S_CANOPY_WALL2", "B_CANOPY_WALL0", "B_CANOPY_WALL1", "B_CANOPY_WALL2"}},
+	{["ID"] = "S_POSTER0", ["CompositePart"] = {"S_POSTER1", "S_POSTER2", "S_POSTER3", "S_POSTER4", "S_POSTER5", "S_POSTER6", "S_POSTER7", "S_POSTER8", "S_POSTER9", "S_POSTER10", "S_POSTER11", "S_POSTER12", "S_POSTER13", "S_POSTER14", "S_POSTER15", "S_POSTER16", "S_POSTER17", "S_POSTER18", "S_POSTER19", "S_POSTER20", "S_POSTER21", "S_POSTER22", "S_POSTER23", "S_POSTER24", "S_POSTER25", "S_POSTER26", "S_POSTER27", "S_POSTER28", "S_POSTER29", "S_POSTER30", "S_POSTER31"}},
+	{["ID"] = "EXPD_POSTER05A", ["CompositePart"] = {"EXPD_POSTER05B", "EXPD_POSTER05C", "EXPD_POSTER06A", "EXPD_POSTER06B", "EXPD_POSTER06C", "EXPD_POSTER07A", "EXPD_POSTER07B", "EXPD_POSTER07C", "EXPD_POSTER08A", "EXPD_POSTER08B", "EXPD_POSTER08C", "EXPD_POSTER09A", "EXPD_POSTER09B", "EXPD_POSTER09C", "EXPD_POSTER10A", "EXPD_POSTER10B", "EXPD_POSTER10C", "EXPD_POSTER11A", "EXPD_POSTER11B", "EXPD_POSTER11C", "EXPD_POSTER12A", "EXPD_POSTER12B", "EXPD_POSTER12C", "EXPD_POSTER13A", "EXPD_POSTER13B", "EXPD_POSTER13C", "EXPD_POSTER14A", "EXPD_POSTER14B", "EXPD_POSTER14C", "EXPD_POSTER15A", "EXPD_POSTER15B", "EXPD_POSTER15C", "EXPD_POSTER16A", "EXPD_POSTER16B", "EXPD_POSTER16C", "EXPD_POSTER17A", "EXPD_POSTER17B", "EXPD_POSTER17C", "EXPD_POSTER18A", "EXPD_POSTER18B", "EXPD_POSTER18C"}},
+	{["ID"] = "S_FENCE0", ["CompositePart"] = {"S_FENCE1", "S_FENCE2", "S_FENCE3"}},
+	{["ID"] = "S_SAIL0", ["CompositePart"] = {"B_SAIL0", "S_SAIL1", "B_SAIL1", "S_SAIL2", "B_SAIL2", "S_SAIL3", "B_SAIL3"}},
+	{["ID"] = "S_ANTENNA0", ["CompositePart"] = {"S_ANTENNA1", "S_ANTENNA2", "S_ANTENNA3"}},
+	{["ID"] = "B_ANTENNA0", ["CompositePart"] = {"B_ANTENNA1", "B_ANTENNA2", "B_ANTENNA3"}},
+	{["ID"] = "BLD_SHIPBREAK1", ["CompositePart"] = {"BLD_SHIPBREAK2", "BLD_SHIPBREAK3", "BLD_SHIPBREAK4", "BLD_SHIPBREAK5"}},
+	{["ID"] = "BLD_BUGHEAD1", ["CompositePart"] = {"BLD_BUGHEAD2", "BLD_BUGHEAD3", "BLD_BUGHEAD4", "BLD_BUGHEAD5"}},
+	{["ID"] = "BASE_HOTPLANT01", ["CompositePart"] = {"BASE_HOTPLANT02", "BASE_HOTPLANT03"}},
+	{["ID"] = "BASE_RADPLANT01", ["CompositePart"] = {"BASE_RADPLANT02", "BASE_RADPLANT03"}},
+	{["ID"] = "BASE_TOXPLANT01", ["CompositePart"] = {"BASE_TOXPLANT02", "BASE_TOXPLANT03"}},
+	{["ID"] = "BASE_DUSTPLANT1", ["CompositePart"] = {"BASE_DUSTPLANT2", "BASE_DUSTPLANT3"}},
+	{["ID"] = "BASE_COLDPLANT1", ["CompositePart"] = {"BASE_COLDPLANT2", "BASE_COLDPLANT3"}},
+	{["ID"] = "BASE_HOUDINI1", ["CompositePart"] = {"BASE_HOUDINI2", "BASE_HOUDINI3"}},
+	{["ID"] = "BASE_SWAMP1", ["CompositePart"] = {"BASE_SWAMP2", "BASE_SWAMP3"}},
+	{["ID"] = "BASE_INFEST1", ["CompositePart"] = {"BASE_INFEST2", "BASE_INFEST3"}},
+	{["ID"] = "BASE_ROCK01", ["CompositePart"] = {"BASE_ROCK02", "BASE_ROCK03"}},
+	{["ID"] = "BASE_LAVA1", ["CompositePart"] = {"BASE_LAVA2", "BASE_LAVA3"}},
+	{["ID"] = "BASE_CAVE1", ["CompositePart"] = {"BASE_CAVE2", "BASE_CAVE3", "BASE_CAVE4", "BASE_CAVE5"}},
+	{["ID"] = "BASE_NEXUS1", ["CompositePart"] = {"BASE_NEXUS2", "BASE_NEXUS3"}},
+	{["ID"] = "BASE_FLOWER1", ["CompositePart"] = {"BASE_FLOWER2", "BASE_FLOWER3"}},
+	{["ID"] = "BASE_GRASS1", ["CompositePart"] = {"BASE_GRASS2", "BASE_GRASS3", "BASE_GRASS4", "BASE_GRASS5", "BASE_GRASS6", "BASE_GRASS7"}},
+	{["ID"] = "BASE_TREE01", ["CompositePart"] = {"BASE_TREE02", "BASE_TREE03"}},
+	{["ID"] = "BASE_JUNGLE01", ["CompositePart"] = {"BASE_JUNGLE02", "BASE_JUNGLE03"}},
+	{["ID"] = "BASE_WPLANT1", ["CompositePart"] = {"BASE_WPLANT2", "BASE_WPLANT3", "BASE_WPLANT4", "BASE_WPLANT5", "BASE_WPLANT6"}},
+	{["ID"] = "BASE_MEDPLANT01", ["CompositePart"] = {"BASE_MEDPLANT02", "BASE_MEDPLANT03"}},
+	{["ID"] = "BASE_FLORAL01", ["CompositePart"] = {"BASE_FLORAL04", "BASE_FLORAL02", "BASE_FLORAL03"}},
+	{["ID"] = "BASE_PEACOCK01", ["CompositePart"] = {"BASE_PEACOCK02", "BASE_PEACOCK03"}},
+	{["ID"] = "BASE_SUBZPLANT1", ["CompositePart"] = {"BASE_SUBZPLANT2", "BASE_SUBZPLANT3", "BASE_SUBZPLANT4", "BASE_SUBZPLANT6", "BASE_SUBZPLANT5", "BASE_SUBZPLANT7", "BASE_SUBZPLANT8"}},
+	{["ID"] = "SPEC_DECAL01", ["CompositePart"] = {"SPEC_DECAL02", "SPEC_DECAL03", "SPEC_DECAL04", "SPEC_DECAL05", "SPEC_DECAL06", "SPEC_DECAL07", "SPEC_DECAL08"}},
+	{["ID"] = "DECAL_WORM_P1", ["CompositePart"] = {"DECAL_WORM_P2", "DECAL_WORM_P3", "DECAL_WORM_P4", "DECAL_WORM_P5"}},
+	{["ID"] = "EXPD_DECAL01", ["CompositePart"] = {"EXPD_DECAL02", "EXPD_DECAL03", "EXPD_DECAL04", "EXPD_DECAL05", "EXPD_DECAL06", "EXPD_DECAL07", "EXPD_DECAL08", "EXPD_DECAL09", "EXPD_DECAL10", "EXPD_DECAL11", "EXPD_DECAL12", "EXPD_DECAL13", "EXPD_DECAL14", "EXPD_DECAL15", "EXPD_DECAL16", "EXPD_DECAL17", "EXPD_DECAL18"}},
+	{["ID"] = "DECAL_CAFE", ["CompositePart"] = {"DECAL_UFT", "DECAL_AGT", "DECAL_AMINO", "DECAL_QIT", "DECAL_NMSCORD", "DECAL_UN42", "DECAL_NMS_FR", "DECAL_AF"}},
+	{["ID"] = "DECAL_BIOME3", ["CompositePart"] = {"DECAL_CPLANET1", "DECAL_STARTSHIP", "DECAL_GALCORE", "DECAL_UWTREAS", "DECAL_NEXUSM", "DECAL_SPOOKATL", "DECAL_SHIP1", "DECAL_PIRATESYS", "DECAL_BLUESYS", "DECAL_CREBEETLE", "DECAL_CREFLY", "DECAL_CREPAWS", "DECAL_FPLANET2", "DECAL_TOSTARS", "DECAL_PEEP", "DECAL_HAZARD", "DECAL_SKULL", "DECAL_HORROR", "DECAL_JELLY", "DECAL_BONESOUP", "DECAL_EXTINCT", "DECAL_SCAN", "DECAL_BONEJUDGE", "DECAL_RUINMECH"}},
+	{["ID"] = "BUILDDECALNUM0", ["CompositePart"] = {"BUILDDECALNUM1", "BUILDDECALNUM2", "BUILDDECALNUM3", "BUILDDECALNUM4", "BUILDDECALNUM5", "BUILDDECALNUM6", "BUILDDECALNUM7", "BUILDDECALNUM8", "BUILDDECALNUM9"}},
+	{["ID"] = "BUILDDECALVIS1", ["CompositePart"] = {"BUILDDECALVIS2", "BUILDDECALVIS3", "BUILDDECALVIS4", "BUILDDECALVIS5"}},
+	{["ID"] = "BUILDDECALSIMP1", ["CompositePart"] = {"BUILDDECALSIMP2", "BUILDDECALSIMP3", "BUILDDECALSIMP4"}},
+	{["ID"] = "STATUE_BLOB_B", ["CompositePart"] = {"STATUE_BLOB_S", "STATUE_BLOB_G", "STATUE_BLOB_I"}},
+	{["ID"] = "STATUE_DIP_B", ["CompositePart"] = {"STATUE_DIP_S", "STATUE_DIP_G", "STATUE_DIP_I"}},
+	{["ID"] = "STATUE_GEK_B", ["CompositePart"] = {"STATUE_GEK_S", "STATUE_GEK_G", "STATUE_GEK_I"}},
+	{["ID"] = "STATUE_SHIP_B", ["CompositePart"] = {"STATUE_SHIP_S", "STATUE_SHIP_G", "STATUE_SHIP_I"}},
+	{["ID"] = "STATUE_WALK_B", ["CompositePart"] = {"STATUE_WALK_S", "STATUE_WALK_G", "STATUE_WALK_I"}},
+	{["ID"] = "STATUE_ATLAS_B", ["CompositePart"] = {"STATUE_ATLAS_S", "STATUE_ATLAS_G", "STATUE_ATLAS_I"}},
+	{["ID"] = "STATUE_ASTRO_B", ["CompositePart"] = {"STATUE_ASTRO_S", "STATUE_ASTRO_G", "STATUE_ASTRO_I"}},
+}
 
 -- BUILD MENU PARTS MENU UI HEIGHT MODIFIER
 -- ALTER WITH CARE
@@ -55,17 +129,26 @@ VANILLA_PARTS_COUNT = 240
 -- DO NOT ALTER
 PARTS_SLOTS_LIMIT = 270
 
+-- YEET_UNUSED_PARAMS = nil
+-- function YEET_UNUSED_PARAMS(TheDATA)
+-- local USE_TABLE = table.concat(TheDATA["ModdedEXMLs"][NormalizePath("METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN", true)])
+-- USE_TABLE = string.gsub(USE_TABLE, [[<Property name="IsTemporary".-<Property name="CanScale" value=".-" />]], "")
+-- USE_TABLE = string.gsub(USE_TABLE, [[<Property name="StorageContainerIndex".-<Property name="Seed" value="%d-" />.-</Property>]], "")
+-- EXPORT_TABLE = {["METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"] = USE_TABLE}
+-- return EXPORT_TABLE
+-- end
+
 --[[function GetBaseObjectMigrate(SUBGROUP, FROM, TO)
 return
 	{
-		["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
+		["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry", "GcBaseBuildingEntryGroup"},
 		["REPLACE_TYPE"] 	= "ALL",
 		["WHERE_IN_SUBSECTION"] =
 		{
 			{ "Group",			FROM },
 			{ "SubGroupName",	SUBGROUP },
 		},
-		["VALUE_CHANGE_TABLE"] 	=
+		["VALUE_CHANGE_TABLE"] 	= 
 		{
 			{"Group",			TO},
 		}
@@ -78,33 +161,48 @@ return
 	{
 		["SPECIAL_KEY_WORDS"] = {"SubGroupName", SUBGROUP},
 		["REPLACE_TYPE"] 	= "ALL",
-		["VALUE_CHANGE_TABLE"] 	=
+		["EXML_FLAGS"]  = "OVERWRITE", 
+		["VALUE_CHANGE_TABLE"] 	= 
 		{
 			{"Group",			TO},
 		}
 	}
 end
 
+--[[function GetBaseObjectSetOverwrite(SUBGROUP)
+-- CHANGING A "SubGroup"'S TOP GROUP "To" THE NEW GROUP, NO EXCEPTIONS
+return
+	{
+		["SPECIAL_KEY_WORDS"] = {"SubGroupName", SUBGROUP},
+		["REPLACE_TYPE"] 	= "ALL",
+		["EXML_FLAGS"]  = "OVERWRITE", 
+	}
+end]]
+
 --[[function GetBaseObjectMigrateAltTwo(FROM, TO)
 return
 	{
-		["PRECEDING_KEY_WORDS"] = 	{"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
+		["PRECEDING_KEY_WORDS"] = 	{"GcBaseBuildingEntry", "GcBaseBuildingEntryGroup"},
 		["REPLACE_TYPE"] 	= 		"ALL",
-		["VALUE_MATCH"] = 			FROM,
-		["VALUE_CHANGE_TABLE"] 	=
+		["VALUE_MATCH"] = 			FROM, 
+		["VALUE_CHANGE_TABLE"] 	= 
 		{
 			{"Group",			TO },
 		}
 	}
 end]]
 
-
-function GetSubGroupMigrate(SUBGROUP, NAME, TO)
+function GetSubGroupMigrate(SUBGROUP, NAME, TO, DISPLAY)
 -- ADDING "SubGroup" WITH "Name", "To" DESTINATION TOP GROUP, EXISTING TOP GROUPS ONLY
-	function GetSubGroupData(ID, SUBNAME)
+	function GetSubGroupData(ID, SUBNAME, INSERT)
 	-- CONSTRUCTING EXML CODE
-		return [[
-        <Property value="GcBaseBuildingSubGroup.xml">
+		if INSERT then
+		 EXPORT = [[
+				<Property name="SubGroups" value="GcBaseBuildingSubGroup" _id="]] .. ID .. [[" _display="WTP">]]
+		else  EXPORT = [[
+				<Property name="SubGroups" value="GcBaseBuildingSubGroup" _id="]] .. ID .. [[">]]
+		end
+		return EXPORT .. [[
           <Property name="Id" value="]] .. ID .. [[" />
           <Property name="Name" value="]] .. SUBNAME .. [[" />
         </Property>
@@ -114,570 +212,139 @@ return
 	{
 		["SPECIAL_KEY_WORDS"] = {"ID", TO},
 		["PRECEDING_KEY_WORDS"] = {"SubGroups"},
+		["ADD_OPTION"] = "ADDendSECTION",
 		-- ["LINE_OFFSET"] 		= "+0",
-		["ADD"] 				= GetSubGroupData(SUBGROUP, NAME)
+		["ADD"] 				= GetSubGroupData(SUBGROUP, NAME, DISPLAY)
 	}
 end
 
-function GetSubGroupObliterate(SUBGROUP)
+-- function GetSubGroupObliterate(SUBGROUP)
+-- return
+	-- {
+		-- ["SPECIAL_KEY_WORDS"] = {"SubGroups", "GcBaseBuildingSubGroup", "Id", SUBGROUP},
+		-- ["PRECEDING_KEY_WORDS"] = {""},
+		-- -- ["PRECEDING_FIRST"] = "TRUE", 
+		-- -- ["LINE_OFFSET"] 		= "+0",
+		-- ["REMOVE"] = "SECTION"
+	-- }
+-- end
+
+function GetCompositePartChangeTable(ID, COMPO)
+	local CompositeList = {}
+	for _,j in ipairs (COMPO) do
+		table.insert(CompositeList, [[<Property name="CompositePartObjectIDs" value="]] .. j .. [[" />
+]])
+	end
 return
 	{
-		["SPECIAL_KEY_WORDS"] = {"Id", SUBGROUP},
-		["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingSubGroup.xml"},
-		["PRECEDING_FIRST"] = "TRUE",
-		-- ["LINE_OFFSET"] 		= "+0",
-		["REMOVE"] = "SECTION"
+		["SKW"] = {"ID", ID},
+		["PKW"] = {"CompositePartObjectIDs"}, 
+		["CREATE_HOS"] = "TRUE",
+		["ADD_OPTION"] = "ADDendSECTION",
+		["ADD"] = table.concat(CompositeList)
 	}
-end
-
-function GetPartsMenuDivider(COUNTER)
-return [[
-					<Property value="GcNGuiLayerData.xml">
-                      <Property name="ElementData" value="GcNGuiElementData.xml">
-                        <Property name="ID" value="DIVIDER]] .. COUNTER .. [[" />
-                        <Property name="IsHidden" value="False" />
-                        <Property name="IgnoreInput" value="False" />
-                        <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
-                          <Property name="EditorVisibility" value="UseData" />
-                        </Property>
-                        <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
-                          <Property name="NGuiForcedStyle" value="None" />
-                        </Property>
-                        <Property name="Layout" value="GcNGuiLayoutData.xml">
-                          <Property name="VROverrides" />
-                          <Property name="AccessibleOverrides" />
-                          <Property name="PositionX" value="0" />
-                          <Property name="PositionY" value="0" />
-                          <Property name="Width" value="100" />
-                          <Property name="Height" value="35" />
-                          <Property name="ConstrainAspect" value="1" />
-                          <Property name="MaxWidth" value="0" />
-                          <Property name="Align" value="TkNGuiAlignment.xml">
-                            <Property name="Vertical" value="Top" />
-                            <Property name="Horizontal" value="Left" />
-                          </Property>
-                          <Property name="WidthPercentage" value="True" />
-                          <Property name="HeightPercentage" value="False" />
-                          <Property name="ConstrainProportions" value="False" />
-                          <Property name="ForceAspect" value="False" />
-                          <Property name="Anchor" value="False" />
-                          <Property name="AnchorPercent" value="False" />
-                          <Property name="SameLine" value="False" />
-                          <Property name="SlowCursorOnHover" value="False" />
-                        </Property>
-                      </Property>
-                      <Property name="Style" value="TkNGuiGraphicStyle.xml">
-                        <Property name="Default" value="TkNGuiGraphicStyleData.xml">
-                          <Property name="Colour" value="Colour.xml">
-                            <Property name="R" value="0" />
-                            <Property name="G" value="0" />
-                            <Property name="B" value="0" />
-                            <Property name="A" value="0" />
-                          </Property>
-                          <Property name="IconColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="StrokeColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="GradientColour" value="Colour.xml">
-                            <Property name="R" value="0" />
-                            <Property name="G" value="0" />
-                            <Property name="B" value="0" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="StrokeGradientColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="PaddingX" value="0" />
-                          <Property name="PaddingY" value="0" />
-                          <Property name="MarginX" value="0" />
-                          <Property name="MarginY" value="0" />
-                          <Property name="GradientStartOffset" value="0" />
-                          <Property name="GradientEndOffset" value="0" />
-                          <Property name="CornerRadius" value="0" />
-                          <Property name="StrokeSize" value="0" />
-                          <Property name="Image" value="0" />
-                          <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
-                            <Property name="NGuiEditorIcon" value="none" />
-                          </Property>
-                          <Property name="Desaturation" value="0" />
-                          <Property name="StrokeGradientOffset" value="0" />
-                          <Property name="StrokeGradientFeather" value="0" />
-                          <Property name="Shape" value="Rectangle" />
-                          <Property name="Gradient" value="None" />
-                          <Property name="SolidColour" value="True" />
-                          <Property name="HasDropShadow" value="False" />
-                          <Property name="HasOuterGradient" value="False" />
-                          <Property name="HasInnerGradient" value="False" />
-                          <Property name="GradientOffsetPercent" value="False" />
-                          <Property name="StrokeGradient" value="False" />
-                          <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
-                            <Property name="Active" value="False" />
-                            <Property name="BlendFrames" value="False" />
-                            <Property name="FramesPerSecond" value="10" />
-                            <Property name="TotalFrames" value="0" />
-                            <Property name="FramesHorizontal" value="1" />
-                            <Property name="FramesVertical" value="1" />
-                          </Property>
-                        </Property>
-                        <Property name="Highlight" value="TkNGuiGraphicStyleData.xml">
-                          <Property name="Colour" value="Colour.xml">
-                            <Property name="R" value="0" />
-                            <Property name="G" value="0" />
-                            <Property name="B" value="0" />
-                            <Property name="A" value="0" />
-                          </Property>
-                          <Property name="IconColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="StrokeColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="GradientColour" value="Colour.xml">
-                            <Property name="R" value="0" />
-                            <Property name="G" value="0" />
-                            <Property name="B" value="0" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="StrokeGradientColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="PaddingX" value="0" />
-                          <Property name="PaddingY" value="0" />
-                          <Property name="MarginX" value="0" />
-                          <Property name="MarginY" value="0" />
-                          <Property name="GradientStartOffset" value="0" />
-                          <Property name="GradientEndOffset" value="0" />
-                          <Property name="CornerRadius" value="0" />
-                          <Property name="StrokeSize" value="0" />
-                          <Property name="Image" value="0" />
-                          <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
-                            <Property name="NGuiEditorIcon" value="none" />
-                          </Property>
-                          <Property name="Desaturation" value="0" />
-                          <Property name="StrokeGradientOffset" value="0" />
-                          <Property name="StrokeGradientFeather" value="0" />
-                          <Property name="Shape" value="Rectangle" />
-                          <Property name="Gradient" value="None" />
-                          <Property name="SolidColour" value="True" />
-                          <Property name="HasDropShadow" value="False" />
-                          <Property name="HasOuterGradient" value="False" />
-                          <Property name="HasInnerGradient" value="False" />
-                          <Property name="GradientOffsetPercent" value="False" />
-                          <Property name="StrokeGradient" value="False" />
-                          <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
-                            <Property name="Active" value="False" />
-                            <Property name="BlendFrames" value="False" />
-                            <Property name="FramesPerSecond" value="10" />
-                            <Property name="TotalFrames" value="0" />
-                            <Property name="FramesHorizontal" value="1" />
-                            <Property name="FramesVertical" value="1" />
-                          </Property>
-                        </Property>
-                        <Property name="Active" value="TkNGuiGraphicStyleData.xml">
-                          <Property name="Colour" value="Colour.xml">
-                            <Property name="R" value="0" />
-                            <Property name="G" value="0" />
-                            <Property name="B" value="0" />
-                            <Property name="A" value="0" />
-                          </Property>
-                          <Property name="IconColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="StrokeColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="GradientColour" value="Colour.xml">
-                            <Property name="R" value="0" />
-                            <Property name="G" value="0" />
-                            <Property name="B" value="0" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="StrokeGradientColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="PaddingX" value="0" />
-                          <Property name="PaddingY" value="0" />
-                          <Property name="MarginX" value="0" />
-                          <Property name="MarginY" value="0" />
-                          <Property name="GradientStartOffset" value="0" />
-                          <Property name="GradientEndOffset" value="0" />
-                          <Property name="CornerRadius" value="0" />
-                          <Property name="StrokeSize" value="0" />
-                          <Property name="Image" value="0" />
-                          <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
-                            <Property name="NGuiEditorIcon" value="none" />
-                          </Property>
-                          <Property name="Desaturation" value="0" />
-                          <Property name="StrokeGradientOffset" value="0" />
-                          <Property name="StrokeGradientFeather" value="0" />
-                          <Property name="Shape" value="Rectangle" />
-                          <Property name="Gradient" value="None" />
-                          <Property name="SolidColour" value="True" />
-                          <Property name="HasDropShadow" value="False" />
-                          <Property name="HasOuterGradient" value="False" />
-                          <Property name="HasInnerGradient" value="False" />
-                          <Property name="GradientOffsetPercent" value="False" />
-                          <Property name="StrokeGradient" value="False" />
-                          <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
-                            <Property name="Active" value="False" />
-                            <Property name="BlendFrames" value="False" />
-                            <Property name="FramesPerSecond" value="10" />
-                            <Property name="TotalFrames" value="0" />
-                            <Property name="FramesHorizontal" value="1" />
-                            <Property name="FramesVertical" value="1" />
-                          </Property>
-                        </Property>
-                        <Property name="InheritStyleFromParentLayer" value="False" />
-                        <Property name="HighlightTime" value="0.1" />
-                        <Property name="HighlightScale" value="1" />
-                        <Property name="GlobalFade" value="1" />
-                        <Property name="Animate" value="None" />
-                        <Property name="AnimTime" value="0.5" />
-                        <Property name="AnimSplit" value="0.4" />
-                        <Property name="AnimCurve1" value="TkCurveType.xml">
-                          <Property name="Curve" value="Linear" />
-                        </Property>
-                        <Property name="AnimCurve2" value="TkCurveType.xml">
-                          <Property name="Curve" value="Linear" />
-                        </Property>
-                        <Property name="CustomMinStart" value="Vector2f.xml">
-                          <Property name="x" value="1" />
-                          <Property name="y" value="1" />
-                        </Property>
-                        <Property name="CustomMaxStart" value="Vector2f.xml">
-                          <Property name="x" value="1" />
-                          <Property name="y" value="1" />
-                        </Property>
-                      </Property>
-                      <Property name="Image" value="" />
-                      <Property name="Children" />
-                      <Property name="DataFilename" value="UI/BASEPARTSMENUSUBGROUP.MBIN" />
-                      <Property name="AltMode" value="None" />
-                    </Property>
-]]
-end
-
-function GetPartsItemEntry(COUNTER)
-return [[
-					<Property value="GcNGuiLayerData.xml">
-                      <Property name="ElementData" value="GcNGuiElementData.xml">
-                        <Property name="ID" value="ITEM]] .. COUNTER .. [[" />
-                        <Property name="IsHidden" value="False" />
-                        <Property name="IgnoreInput" value="False" />
-                        <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
-                          <Property name="EditorVisibility" value="UseData" />
-                        </Property>
-                        <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
-                          <Property name="NGuiForcedStyle" value="None" />
-                        </Property>
-                        <Property name="Layout" value="GcNGuiLayoutData.xml">
-                          <Property name="VROverrides" />
-                          <Property name="AccessibleOverrides" />
-                          <Property name="PositionX" value="0" />
-                          <Property name="PositionY" value="0" />
-                          <Property name="Width" value="164" />
-                          <Property name="Height" value="187.01755" />
-                          <Property name="ConstrainAspect" value="0.876923" />
-                          <Property name="MaxWidth" value="0" />
-                          <Property name="Align" value="TkNGuiAlignment.xml">
-                            <Property name="Vertical" value="Top" />
-                            <Property name="Horizontal" value="Left" />
-                          </Property>
-                          <Property name="WidthPercentage" value="False" />
-                          <Property name="HeightPercentage" value="False" />
-                          <Property name="ConstrainProportions" value="True" />
-                          <Property name="ForceAspect" value="False" />
-                          <Property name="Anchor" value="False" />
-                          <Property name="AnchorPercent" value="False" />
-                          <Property name="SameLine" value="True" />
-                          <Property name="SlowCursorOnHover" value="False" />
-                        </Property>
-                      </Property>
-                      <Property name="Style" value="TkNGuiGraphicStyle.xml">
-                        <Property name="Default" value="TkNGuiGraphicStyleData.xml">
-                          <Property name="Colour" value="Colour.xml">
-                            <Property name="R" value="0" />
-                            <Property name="G" value="0" />
-                            <Property name="B" value="0" />
-                            <Property name="A" value="0" />
-                          </Property>
-                          <Property name="IconColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="StrokeColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="GradientColour" value="Colour.xml">
-                            <Property name="R" value="0" />
-                            <Property name="G" value="0" />
-                            <Property name="B" value="0" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="StrokeGradientColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="PaddingX" value="0" />
-                          <Property name="PaddingY" value="0" />
-                          <Property name="MarginX" value="0" />
-                          <Property name="MarginY" value="6" />
-                          <Property name="GradientStartOffset" value="0" />
-                          <Property name="GradientEndOffset" value="0" />
-                          <Property name="CornerRadius" value="0" />
-                          <Property name="StrokeSize" value="0" />
-                          <Property name="Image" value="0" />
-                          <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
-                            <Property name="NGuiEditorIcon" value="none" />
-                          </Property>
-                          <Property name="Desaturation" value="0" />
-                          <Property name="StrokeGradientOffset" value="0" />
-                          <Property name="StrokeGradientFeather" value="0" />
-                          <Property name="Shape" value="Rectangle" />
-                          <Property name="Gradient" value="None" />
-                          <Property name="SolidColour" value="False" />
-                          <Property name="HasDropShadow" value="False" />
-                          <Property name="HasOuterGradient" value="False" />
-                          <Property name="HasInnerGradient" value="False" />
-                          <Property name="GradientOffsetPercent" value="False" />
-                          <Property name="StrokeGradient" value="False" />
-                          <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
-                            <Property name="Active" value="False" />
-                            <Property name="BlendFrames" value="False" />
-                            <Property name="FramesPerSecond" value="10" />
-                            <Property name="TotalFrames" value="0" />
-                            <Property name="FramesHorizontal" value="1" />
-                            <Property name="FramesVertical" value="1" />
-                          </Property>
-                        </Property>
-                        <Property name="Highlight" value="TkNGuiGraphicStyleData.xml">
-                          <Property name="Colour" value="Colour.xml">
-                            <Property name="R" value="0" />
-                            <Property name="G" value="0" />
-                            <Property name="B" value="0" />
-                            <Property name="A" value="0" />
-                          </Property>
-                          <Property name="IconColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="StrokeColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="GradientColour" value="Colour.xml">
-                            <Property name="R" value="0" />
-                            <Property name="G" value="0" />
-                            <Property name="B" value="0" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="StrokeGradientColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="PaddingX" value="0" />
-                          <Property name="PaddingY" value="0" />
-                          <Property name="MarginX" value="0" />
-                          <Property name="MarginY" value="6" />
-                          <Property name="GradientStartOffset" value="0" />
-                          <Property name="GradientEndOffset" value="0" />
-                          <Property name="CornerRadius" value="0" />
-                          <Property name="StrokeSize" value="0" />
-                          <Property name="Image" value="0" />
-                          <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
-                            <Property name="NGuiEditorIcon" value="none" />
-                          </Property>
-                          <Property name="Desaturation" value="0" />
-                          <Property name="StrokeGradientOffset" value="0" />
-                          <Property name="StrokeGradientFeather" value="0" />
-                          <Property name="Shape" value="Rectangle" />
-                          <Property name="Gradient" value="None" />
-                          <Property name="SolidColour" value="False" />
-                          <Property name="HasDropShadow" value="False" />
-                          <Property name="HasOuterGradient" value="False" />
-                          <Property name="HasInnerGradient" value="False" />
-                          <Property name="GradientOffsetPercent" value="False" />
-                          <Property name="StrokeGradient" value="False" />
-                          <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
-                            <Property name="Active" value="False" />
-                            <Property name="BlendFrames" value="False" />
-                            <Property name="FramesPerSecond" value="10" />
-                            <Property name="TotalFrames" value="0" />
-                            <Property name="FramesHorizontal" value="1" />
-                            <Property name="FramesVertical" value="1" />
-                          </Property>
-                        </Property>
-                        <Property name="Active" value="TkNGuiGraphicStyleData.xml">
-                          <Property name="Colour" value="Colour.xml">
-                            <Property name="R" value="0" />
-                            <Property name="G" value="0" />
-                            <Property name="B" value="0" />
-                            <Property name="A" value="0" />
-                          </Property>
-                          <Property name="IconColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="StrokeColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="GradientColour" value="Colour.xml">
-                            <Property name="R" value="0" />
-                            <Property name="G" value="0" />
-                            <Property name="B" value="0" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="StrokeGradientColour" value="Colour.xml">
-                            <Property name="R" value="1" />
-                            <Property name="G" value="1" />
-                            <Property name="B" value="1" />
-                            <Property name="A" value="1" />
-                          </Property>
-                          <Property name="PaddingX" value="0" />
-                          <Property name="PaddingY" value="0" />
-                          <Property name="MarginX" value="0" />
-                          <Property name="MarginY" value="6" />
-                          <Property name="GradientStartOffset" value="0" />
-                          <Property name="GradientEndOffset" value="0" />
-                          <Property name="CornerRadius" value="0" />
-                          <Property name="StrokeSize" value="0" />
-                          <Property name="Image" value="0" />
-                          <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
-                            <Property name="NGuiEditorIcon" value="none" />
-                          </Property>
-                          <Property name="Desaturation" value="0" />
-                          <Property name="StrokeGradientOffset" value="0" />
-                          <Property name="StrokeGradientFeather" value="0" />
-                          <Property name="Shape" value="Rectangle" />
-                          <Property name="Gradient" value="None" />
-                          <Property name="SolidColour" value="False" />
-                          <Property name="HasDropShadow" value="False" />
-                          <Property name="HasOuterGradient" value="False" />
-                          <Property name="HasInnerGradient" value="False" />
-                          <Property name="GradientOffsetPercent" value="False" />
-                          <Property name="StrokeGradient" value="False" />
-                          <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
-                            <Property name="Active" value="False" />
-                            <Property name="BlendFrames" value="False" />
-                            <Property name="FramesPerSecond" value="10" />
-                            <Property name="TotalFrames" value="0" />
-                            <Property name="FramesHorizontal" value="1" />
-                            <Property name="FramesVertical" value="1" />
-                          </Property>
-                        </Property>
-                        <Property name="InheritStyleFromParentLayer" value="False" />
-                        <Property name="HighlightTime" value="0.1" />
-                        <Property name="HighlightScale" value="1" />
-                        <Property name="GlobalFade" value="1" />
-                        <Property name="Animate" value="SimpleWipe" />
-                        <Property name="AnimTime" value="0.5" />
-                        <Property name="AnimSplit" value="0.4" />
-                        <Property name="AnimCurve1" value="TkCurveType.xml">
-                          <Property name="Curve" value="Linear" />
-                        </Property>
-                        <Property name="AnimCurve2" value="TkCurveType.xml">
-                          <Property name="Curve" value="Linear" />
-                        </Property>
-                        <Property name="CustomMinStart" value="Vector2f.xml">
-                          <Property name="x" value="1" />
-                          <Property name="y" value="1" />
-                        </Property>
-                        <Property name="CustomMaxStart" value="Vector2f.xml">
-                          <Property name="x" value="1" />
-                          <Property name="y" value="1" />
-                        </Property>
-                      </Property>
-                      <Property name="Image" value="" />
-                      <Property name="Children" />
-                      <Property name="DataFilename" value="UI/COMPONENTS/BASEPARTITEM.MBIN" />
-                      <Property name="AltMode" value="None" />
-                    </Property>
-]]
 end
 
 CHANGE_LEOPARDON = {}
+BUILDMENU_UI_SLOTS = {}
 
--- for i,j in pairs(SUBGROUP_MOVE_TABLE) do
-	-- table.insert(CHANGE_LEOPARDON, GetBaseObjectMigrateAlt(j["SubGroup"], j["To"]))
-	-- table.insert(CHANGE_LEOPARDON, GetSubGroupMigrate(j["SubGroup"], j["Name"], j["From"], j["To"]))
--- end
+COMPO_PART_SKW = {}
+HIDE_COMPO_PART_CHANGE = {
+	["SKW"] = COMPO_PART_SKW,
+	["VCT"] = {{"ShowInBuildMenu", "false"}}
+}
 
 for i=#SUBGROUP_MOVE_TABLE,1,-1 do
 -- INSERTING DATA FROM BOTTOM-UP SO THAT SUBGROUP_MOVE_TABLE IS TREATED AS A STACK
-	table.insert(CHANGE_LEOPARDON, GetSubGroupObliterate(SUBGROUP_MOVE_TABLE[i]["SubGroup"]))
+	-- table.insert(CHANGE_LEOPARDON, GetSubGroupObliterate(SUBGROUP_MOVE_TABLE[i]["SubGroup"]))
+	local ExportDisplay = false; if SUBGROUP_MOVE_TABLE[i]["Display"] ~= nil then ExportDisplay = true end
+	-- table.insert(CHANGE_LEOPARDON, GetBaseObjectSetOverwrite(SUBGROUP_MOVE_TABLE[i]["SubGroup"]))
 	table.insert(CHANGE_LEOPARDON, GetBaseObjectMigrateAlt(SUBGROUP_MOVE_TABLE[i]["SubGroup"], SUBGROUP_MOVE_TABLE[i]["To"]))
-	table.insert(CHANGE_LEOPARDON, GetSubGroupMigrate(SUBGROUP_MOVE_TABLE[i]["SubGroup"], SUBGROUP_MOVE_TABLE[i]["Name"], SUBGROUP_MOVE_TABLE[i]["To"]))
+	table.insert(CHANGE_LEOPARDON, GetSubGroupMigrate(SUBGROUP_MOVE_TABLE[i]["SubGroup"], SUBGROUP_MOVE_TABLE[i]["Name"], SUBGROUP_MOVE_TABLE[i]["To"], ExportDisplay))
 end
 
+for _,j in ipairs(COMPO_PART_TABLE) do
+	table.insert(CHANGE_LEOPARDON, GetCompositePartChangeTable(j["ID"], j["CompositePart"]))
+	for _,k in ipairs(j["CompositePart"]) do
+		table.insert(COMPO_PART_SKW, {"ID", k})
+	end
+end
+
+table.insert(CHANGE_LEOPARDON, HIDE_COMPO_PART_CHANGE)
+
+table.insert(CHANGE_LEOPARDON,
+{
+	["SKW"] = {
+							{"Groups", "GcBaseBuildingGroup"}
+						},
+	["SECTION_UP_SPECIAL"] = 1,
+	["EXML_FLAGS"]  = "OVERWRITE", 
+	-- ["REPLACE_TYPE"] = "RAW", 
+	-- ["VCT"] = {{[[<Property name="Groups">]], [[<Property name="Groups" _overwrite="true">]]}},
+})
+
 -- UI EXPANSION
-PARTS_UI_ADD_TABLE = {}
-table.insert(PARTS_UI_ADD_TABLE, [[<!--BuildFrame-->]])
+-- PARTS_UI_ADD_TABLE = {}
+-- table.insert(PARTS_UI_ADD_TABLE, [[<!--BuildFrame-->]])
+table.insert(BUILDMENU_UI_SLOTS,
+{
+	["SPECIAL_KEY_WORDS"] = {"ID", "DIVIDER1"},
+	["SECTION_UP_SPECIAL"] = 2,
+	["SEC_COPY"] = "ADD_UI_DIVIDER",
+})
+table.insert(BUILDMENU_UI_SLOTS,
+{
+	["SPECIAL_KEY_WORDS"] = {"ID", "ITEM01"},
+	["SECTION_UP_SPECIAL"] = 2,
+	["SEC_COPY"] = "ADD_UI_ITEM",
+})
 -- MINUS 1 SINCE VANILLA ID STARTS WITH 0
 for i = VANILLA_PARTS_COUNT, PARTS_SLOTS_LIMIT - 1 do
 	-- ADD DIVIDER EVERY "UI_SINGLE_LINE"TH UI ENTRY
 	if (i) % DIVIDER_SLOT <= 0 then
-		table.insert(PARTS_UI_ADD_TABLE, GetPartsMenuDivider(i//DIVIDER_SLOT))
+		table.insert(BUILDMENU_UI_SLOTS,
+		{
+			["SEC_EDIT"] = "ADD_UI_DIVIDER",
+			["SPECIAL_KEY_WORDS"] = {"ID", "IGNORE"},
+			["VALUE_CHANGE_TABLE"] ={{"ID", "DIVIDER" .. (i//DIVIDER_SLOT)}},
+		})
+		table.insert(BUILDMENU_UI_SLOTS,
+		{
+			-- NEW SLOTS
+			["SPECIAL_KEY_WORDS"] = {"ID", "DIVIDER0" }, -- MINUS 1 SINCE VANILLA ID STARTS WITH 0
+			["SECTION_UP"] = 3,
+			["ADD_OPTION"] = "ADDendSECTION",
+			["SEC_PASTE"] = "ADD_UI_DIVIDER",
+		})
+		-- table.insert(PARTS_UI_ADD_TABLE, GetPartsMenuDivider(i//DIVIDER_SLOT))
 	end
 	-- VANILLA ID STARTS WITH 0
-	table.insert(PARTS_UI_ADD_TABLE, GetPartsItemEntry(i))
+		table.insert(BUILDMENU_UI_SLOTS,
+		{
+			["SEC_EDIT"] = "ADD_UI_ITEM",
+			["SPECIAL_KEY_WORDS"] = {"ID", "IGNORE"},
+			["VALUE_CHANGE_TABLE"] ={{"ID", "ITEM" .. i}},
+		})
+		table.insert(BUILDMENU_UI_SLOTS,
+		{
+			-- NEW SLOTS
+			["SPECIAL_KEY_WORDS"] = {"ID", "DIVIDER0" }, -- MINUS 1 SINCE VANILLA ID STARTS WITH 0
+			["SECTION_UP"] = 3,
+			["ADD_OPTION"] = "ADDendSECTION",
+			["SEC_PASTE"] = "ADD_UI_ITEM",
+		})
+	-- table.insert(PARTS_UI_ADD_TABLE, GetPartsItemEntry(i))
 end
-table.insert(PARTS_UI_ADD_TABLE, [[<!--BuildFrame End-->]])
-if DEBUG_TEXT then
-	print(table.concat(PARTS_UI_ADD_TABLE))
-end
+-- table.insert(PARTS_UI_ADD_TABLE, [[<!--BuildFrame End-->]])
+-- if DEBUG_TEXT then
+	-- print(table.concat(PARTS_UI_ADD_TABLE))
+-- end
 
 MAKE_EXPAND_DONG_OBVIOUS =
 {
 	{
 		["SPECIAL_KEY_WORDS"] = {"ID", "TEXT"},
-		["SECTION_UP_SPECIAL"] = 1,
+		["SECTION_UP_SPECIAL"] = 2,
 		["SEC_COPY"] = "ADD_EXPAND_TEXT",
 	},
 	{
@@ -689,33 +356,35 @@ MAKE_EXPAND_DONG_OBVIOUS =
 	},
 	{
 		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
-		["PKW"] = {"GcAccessibleOverride_Layout.xml"},
+		["PKW"] = {"AccessibleOverrides"},
 		["REPLACE_TYPE"] = "ALL",
-		["REMOVE"] = "SECTION",
+		["CREATE_HOES"] = "TRUE", 
+		-- ["REMOVE"] = "SECTION",
 	},
 	{
 		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
-		["SPECIAL_KEY_WORDS"] = {"ElementData", "GcNGuiElementData.xml"},
+		["SPECIAL_KEY_WORDS"] = {"Element Data", "GcNGuiElementData"},
 		["VALUE_CHANGE_TABLE"] ={
 									{"ID", "MAKE_OBV"},
-									{"PositionX", "10"},
-									{"PositionY", "0"},
+									{"Position X", "10"},
+									{"Position Y", "0"},
 									{"Width", "80"},
 									-- {"Height", "16"},
 									{"Height", "10"},
-									{"WidthPercentage", "True"},
+									{"Width Percentage", "True"},
 								},
 	},
 	{
 		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
-		["SPECIAL_KEY_WORDS"] = {"ElementData", "GcNGuiElementData.xml", "EditorVisible", "GcNGuiEditorVisibility.xml"},
+		["SPECIAL_KEY_WORDS"] = {"Element Data", "GcNGuiElementData", "Editor Visible", "GcNGuiEditorVisibility"},
 		["VALUE_CHANGE_TABLE"] ={
 									{"EditorVisibility", "UseData"},
 								},
 	},
 	{
 		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
-		["SPECIAL_KEY_WORDS"] = {"Style", "TkNGuiTextStyle.xml", "Default", "TkNGuiTextStyleData.xml", "Colour", "Colour.xml"},
+		["SPECIAL_KEY_WORDS"] = {"Style", "TkNGuiTextStyle", "Default", "TkNGuiTextStyleData"},
+		["PKW"] = {"Colour"},
 		["VALUE_CHANGE_TABLE"] ={
 									{"R", "0.933"},
 									{"G", "0.788"},
@@ -724,7 +393,8 @@ MAKE_EXPAND_DONG_OBVIOUS =
 	},
 	{
 		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
-		["SPECIAL_KEY_WORDS"] = {"Style", "TkNGuiTextStyle.xml", "Default", "TkNGuiTextStyleData.xml", "OutlineColour", "Colour.xml"},
+		["SPECIAL_KEY_WORDS"] = {"Style", "TkNGuiTextStyle", "Default", "TkNGuiTextStyleData"},
+		["PKW"] = {"Outline Colour"},
 		["VALUE_CHANGE_TABLE"] ={
 									{"R", "0"},
 									{"G", "0"},
@@ -733,22 +403,22 @@ MAKE_EXPAND_DONG_OBVIOUS =
 	},
 	{
 		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
-		["SPECIAL_KEY_WORDS"] = {"Style", "TkNGuiTextStyle.xml", "Default", "TkNGuiTextStyleData.xml"},
+		["SPECIAL_KEY_WORDS"] = {"Style", "TkNGuiTextStyle", "Default", "TkNGuiTextStyleData"},
 		["VALUE_CHANGE_TABLE"] ={
-									{"FontHeight", "15"},
-									{"OutlineSize", "10"},
+									{"Font Height", "15"},
+									{"Outline Size", "10"},
 									{"Vertical", "Top"},
 									{"Horizontal", "Left"},
-									{"HasOutline", "True"},
+									{"Has Outline", "True"},
 								},
 	},
 	{
-		["SPECIAL_KEY_WORDS"] = {"ID", "EXPAND", "Layout", "GcNGuiLayoutData.xml"},
+		["SPECIAL_KEY_WORDS"] = {"ID", "EXPAND", "Layout", "GcNGuiLayoutData"},
 		-- ["SECTION_UP_SPECIAL"] = 1,
 		-- ["PKW"] = {"Children"},
 		["VALUE_CHANGE_TABLE"] ={
 									{"Width", "100"},
-									{"WidthPercentage", "True"},
+									{"Width Percentage", "True"},
 								},
 	},
 	{
@@ -760,54 +430,34 @@ MAKE_EXPAND_DONG_OBVIOUS =
 	},
 }
 
-NMS_MOD_DEFINITION_CONTAINER =
+NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "~~~RecTUM.pak",
-["MOD_BATCHNAME"]			= "~~~~BuildFrame_Comp.pak",
+["MOD_FILENAME"] 			= "~~~BuildFrame_RecTUM",
+["MOD_BATCHNAME"]		= "++++DO_NOT_COMBINE_IN_AMUMSS",
 ["MOD_AUTHOR"]				= "WinderTP, Babscoole",
 ["MOD_DESCRIPTION"]			= "Recategorisation Trimming Utility for Build Menu",
 ["NMS_VERSION"]				= "",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
-["AMUMSS_SUPPRESS_MSG"] 	= "SUPPRESS_FLOOR_DIV",
-["MODIFICATIONS"] 			=
+["AMUMSS_SUPPRESS_MSG"] 	= "SUPPRESS_FLOOR_DIV, UNUSED_VARIABLE",
+["MODIFICATIONS"] 			= 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	=
-			{
+			["MBIN_CHANGE_TABLE"] 	= 
+			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= CHANGE_LEOPARDON
-				},
+					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.EXML",
+					-- ["MBIN_FILE_SOURCE"] 	= {{"METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN", "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.EXML"}},
+					["MXML_CHANGE_TABLE"] 	= CHANGE_LEOPARDON,
+					-- ["EXT_FUNC"] = {"YEET_UNUSED_PARAMS"},
+				}, 
 				{
 					["MBIN_FILE_SOURCE"] 	= "UI\BASEPARTSMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
-					{
-						{
-							-- UI CANVAS FOR THE PARTS MENU
-							["SPECIAL_KEY_WORDS"] = {"ID", "SCROLL", "Layout", "GcNGuiLayoutData.xml"},
-							["REPLACE_TYPE"] = "",
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Height", PARTS_UI_MULTIPLIER},
-							},
-						},
-						{
-							-- NEW SLOTS
-							-- ["PRECEDING_KEY_WORDS"] = {"GcNGuiLayerData.xml"},
-							-- ["PRECEDING_FIRST"] = "TRUE",
-							["SPECIAL_KEY_WORDS"] = {"ID", "ITEM" .. VANILLA_PARTS_COUNT - 1 }, -- MINUS 1 SINCE VANILLA ID STARTS WITH 0
-							["SECTION_UP_SPECIAL"] = 1,
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = table.concat(PARTS_UI_ADD_TABLE)
-						},
-					}
+					["MXML_CHANGE_TABLE"] 	= BUILDMENU_UI_SLOTS
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "UI\COMPONENTS\BASEPARTITEM.MBIN",
-					["EXML_CHANGE_TABLE"] 	= MAKE_EXPAND_DONG_OBVIOUS
+					["MXML_CHANGE_TABLE"] 	= MAKE_EXPAND_DONG_OBVIOUS
 				},
 			}
-		},
-	}
+		}, 
+	}	
 }

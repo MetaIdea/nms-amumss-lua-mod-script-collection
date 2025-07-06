@@ -51,10 +51,10 @@ DailyReward =
 ------------------------------------------------------------------
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "QS Missions and Daily Reward Multiplier "..Multiplier.."x.pak",
+["MOD_FILENAME"]    = "QS Missions and Daily Reward Multiplier "..Multiplier.."x",
 ["MOD_DESCRIPTION"] = "Adds quicksilver rewards to normal missions at the nexus, space station mission boards, and outlaw bounty masters & multiples the quicksilver reward from daily and weekly nexus missions",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -62,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "RS_QUICKSILV_S", "Reward", "GcRewardMoney.xml"},
@@ -76,7 +76,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #Quicksilver do
   local ListID = Quicksilver[i][1]

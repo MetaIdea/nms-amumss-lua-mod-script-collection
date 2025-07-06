@@ -1,5 +1,5 @@
 ModName = "NoAtmoNoPlants"
-GameVersion = "5_00"
+GameVersion = "5_63"
 
 MinHeight =				250					-- -1			Height (above sea level) it is allowed to spawn?
 MaxHeight =				252					-- 128
@@ -28,12 +28,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_DESCRIPTION"]		= "Removes surface decorative plants from Dead (Low Atmosphere) planets. Currently still leaves shrubs & grass patches on 'Mountain' sub-biomes on Dead planets.",
 	["MOD_AUTHOR"]			= "Xen0nex",
 	["NMS_VERSION"]			= GameVersion,
+	--["EXML_CREATE"] = "FALSE",
 	["MODIFICATIONS"]		= 
 	{
 		{
 			["MBIN_CHANGE_TABLE"]	= 
 			{
-				--This entry intentionally left blank, to be filled in by the GrowthChanges at the bottom of this script
+				{
+					["MBIN_FILE_SOURCE"] 	= {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BIOMEFILENAMES.MBIN"},
+					["MXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "HAZARD_PLANTS"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"NotOnDeadPlanets",	"true"},	--"false"
+							}
+						},
+					}
+				},
 			}
 		}
 	}
@@ -44,18 +57,20 @@ local ChangesToObjects = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_
 ChangesToObjects[#ChangesToObjects+1] =
 		{
 			["MBIN_FILE_SOURCE"] 	= {DeadGrassFilepath},
-			["EXML_CHANGE_TABLE"] 	= 
+			["MXML_CHANGE_TABLE"] 	= 
 			{
 				{
+					--["PRECEDING_FIRST"] = "TRUE",
+					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/GRASSVARIATION01.SCENE.MBIN"},
 					["SECTION_UP"] = 1,
 					["REPLACE_TYPE"] = "ALL",
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					--["REMOVE"] = "SECTION",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
 						{"MaxHeight", MaxHeight},
-						{"MinScale", MinScale},
+						{"MinScale ", MinScale},
 						{"MaxScale", MaxScale}
 					}
 				}
@@ -67,70 +82,80 @@ for i = 1, #FrozenFilepaths do
 			ChangesToObjects[#ChangesToObjects+1] =
 		{
 			["MBIN_FILE_SOURCE"] 	= {FilePath},
-			["EXML_CHANGE_TABLE"] 	= 
+			["MXML_CHANGE_TABLE"] 	= 
 			{
 				{
+					--["PRECEDING_FIRST"] = "TRUE",
+					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/MEDIUMPLANT.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					--["REMOVE"] = "SECTION",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
 						{"MaxHeight", MaxHeight},
-						{"MinScale", MinScale},
+						{"MinScale ", MinScale},
 						{"MaxScale", MaxScale}
 					}
 				},
 				{
+					--["PRECEDING_FIRST"] = "TRUE",
+					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					--["REMOVE"] = "SECTION",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
 						{"MaxHeight", MaxHeight},
-						{"MinScale", MinScale},
+						{"MinScale ", MinScale},
 						{"MaxScale", MaxScale}
 					}
 				},
 				{
+					--["PRECEDING_FIRST"] = "TRUE",
+					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					--["REMOVE"] = "SECTION",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
 						{"MaxHeight", MaxHeight},
-						{"MinScale", MinScale},
+						{"MinScale ", MinScale},
 						{"MaxScale", MaxScale}
 					}
 				},
 				{
+					--["PRECEDING_FIRST"] = "TRUE",
+					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					--["REMOVE"] = "SECTION",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
 						{"MaxHeight", MaxHeight},
-						{"MinScale", MinScale},
+						{"MinScale ", MinScale},
 						{"MaxScale", MaxScale}
 					}
 				},
 				{
+					--["PRECEDING_FIRST"] = "TRUE",
+					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					--["REMOVE"] = "SECTION",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
 						{"MaxHeight", MaxHeight},
-						{"MinScale", MinScale},
+						{"MinScale ", MinScale},
 						{"MaxScale", MaxScale}
 					}
 				}
@@ -143,31 +168,35 @@ for i = 1, #FrozenWeirdFilepaths do
 			ChangesToObjects[#ChangesToObjects+1] =
 		{
 			["MBIN_FILE_SOURCE"] 	= {FilePath},
-			["EXML_CHANGE_TABLE"] 	= 
+			["MXML_CHANGE_TABLE"] 	= 
 			{
 				{
+					--["PRECEDING_FIRST"] = "TRUE",
+					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					--["REMOVE"] = "SECTION",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
 						{"MaxHeight", MaxHeight},
-						{"MinScale", MinScale},
+						{"MinScale ", MinScale},
 						{"MaxScale", MaxScale}
 					}
 				},
 				{
+					--["PRECEDING_FIRST"] = "TRUE",
+					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					--["REMOVE"] = "SECTION",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
 						{"MaxHeight", MaxHeight},
-						{"MinScale", MinScale},
+						{"MinScale ", MinScale},
 						{"MaxScale", MaxScale}
 					}
 				}

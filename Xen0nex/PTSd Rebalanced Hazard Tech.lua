@@ -1,8 +1,8 @@
 ModName = "PTSd Rebalanced Hazard Tech"
-GameVersion = "5_10"
+GameVersion = "5_64"
 Description = "Nerfs the procedural Hazard techs & Buffs the Hazard techs / upgrades which grant a % resistance to hazards to hopefully make them worth considering. Note that the different sources of +% hazard protection (multiple X Class upgrades all count as the same source) appear to stack multiplicatively with each other, and that X Class Hazard Upgrades receive significant adjacency bonuses. E.G. two fully surrounded X Class upgrades with +25% each will typically double your protection time against all hazards."
 
-HazardRechargeMult =			1.5					--	Multiplier to apply to the cost of Sodium / Sodium Nitrate on recharging Hazard Protection			54 / 22 to fully charge
+HazardRechargeMult =			1.125				--	Multiplier to apply to the cost of Sodium / Sodium Nitrate on recharging Hazard Protection			40 / 16 to fully charge
 ProcHazardRechargeMult =		2					--	Multiplier to apply to the cost of Dioxite / Phosphorus / Ammonia / Uranium on recharging the procedural Hazard Protection		16 / 16 / 16 / 16 to fully charge
 
 LifeSupportRechargeMult =		1.5					--	Multiplier to apply to the cost of Oxygen / Dioxite on recharging Life Support						50 / 20 to fully charge
@@ -26,9 +26,12 @@ HazardTechChanges =
 		"UT_RAD",			1.38					--1.2 		(+20% hazard protection for Radiation)
 	},
 	{--Aeration Membrane
-		"UT_WATER",			1.9						--1.33 		(+33% hazard protection for Underwater / breath time)
-	}							--This large boost for Aeration Membrane is a workaround to compensate for how the "Stronger Hazards" mod also reduces Underwater protection
-}									--However could look into HAZARDTABLE.MBIN to deal with that...
+		"UT_WATER",			1.8						--1.33 		(+33% hazard protection for Underwater / breath time)
+	},
+	{--Pressure Membrane
+		"PRESSURE_SUIT",	1.8						--1.8 		(Unclear how or whether this bonus works, may affect the breath time in deep water but does not appear to affect the Life Support drain & Cold hazard drain that happens in very deep water)
+	}
+}
 
 --Suspicious Hazard Protection module	(Gains huge bonuses when adjacent to any hazard tech / upgrades, often doubling in power)
 SusHazModMin =				1.1						--1.01		(+1% hazard protection for all 4 specific hazards)
@@ -71,19 +74,19 @@ HazardProcTechChanges =
 	},
 	--These are the "procedural" Underwater Hazard protection upgrades, which do the same thing as above but for underwater breathing time
 	{
-		{1},					--60-90 duration for B Class Underwater Upgrade Modules (60-85 in 3.99)
+		{0.77},					--90-120 duration for B Class Underwater Upgrade Modules (60-90 pre-NMS 5.5)
 		{
 			"UP_UNW1",
 		}
 	},
 	{
-		{1},					--95-120 duration for B Class Underwater Upgrade Modules (75-105 in 3.99)
+		{0.82},					--120-180 duration for B Class Underwater Upgrade Modules (95-120 pre-NMS 5.5)
 		{
 			"UP_UNW2",
 		}
 	},
 	{
-		{0.85},					--130-180 duration for B Class Underwater Upgrade Modules (95-105 in 3.99)
+		{0.71},					--180-240 duration for B Class Underwater Upgrade Modules (130-180 pre-NMS 5.5)
 		{
 			"UP_UNW3",
 		}
@@ -103,25 +106,26 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
+["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			--This entry intentionally left blank, to be filled in by the HazardTechChanges at the bottom of this script
 		}
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			--This entry intentionally left blank, to be filled in by the HazardProcTechChanges at the bottom of this script
 		}
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["REPLACE_TYPE"] 		= "ALL",
@@ -147,7 +151,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID", "PROTECT"},
@@ -200,7 +204,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"]	= "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{'ChargeMultiplier', Invert (ProcHazardRechargeMult)}
+					{'ChargeMultiplier', Invert (ProcHazardRechargeMult*(3/5))}		--Has additional multiplier to account for how "PTSd Resource + Product + Construction Rebalance.lua" reduces the ChargeValue of Dioxite
 				}
 			},
 			{
@@ -209,7 +213,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"]	= "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{'ChargeMultiplier', Invert (ProcHazardRechargeMult)}
+					{'ChargeMultiplier', Invert (ProcHazardRechargeMult*(3/5))}		--Has additional multiplier to account for how "PTSd Resource + Product + Construction Rebalance.lua" reduces the ChargeValue of Phosphorus
 				}
 			},
 		}
@@ -217,7 +221,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--These changes apply to Ion Batteries / Life Support Gel so they keep the same effectiveness after the above changes
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "POWERCELL"},
@@ -239,7 +243,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 }}}}
 
-local ChangesToHazardTechs = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToHazardTechs = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #HazardTechChanges do
 	local HazID = HazardTechChanges[i][1]
@@ -257,7 +261,7 @@ for i = 1, #HazardTechChanges do
 			}
 end
 
-local ChangesToHazardProcTechs = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local ChangesToHazardProcTechs = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
 
 for i = 1, #HazardProcTechChanges do
 	local Mult = HazardProcTechChanges[i][1][1]

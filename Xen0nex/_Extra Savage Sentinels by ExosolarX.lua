@@ -1,5 +1,5 @@
 ModName = "_Extra Savage Sentinels by ExosolarX"
-GameVersion = "4_41"
+GameVersion = "5_61"
 Description = "Increases the difficulty of Sentinels by changing aggression, firerate, range, sight distance, etc."
 
 --Multiplier to apply to the base health of all planetary Sentinels
@@ -8,31 +8,27 @@ SentHealth =				3*1.1							--was 4 in PTSd 3.99
 	--Seems like the game may only apply one "level" worth of bonus health? In a quick test, an end game character with lots of S Class gear faced sentinels that only had one instance of the "health on level" applied
 SentLevelHealth =			2*1.1							--was 1 in PTSd 3.99
 
-function AddWaveSequence (Set)
+function AddWaveSequence (Set, Index)
     return
-[[<Property value="GcSentinelSpawnSequenceStep.xml">
+[[<Property name="Waves" value="GcSentinelSpawnSequenceStep" _index="]]..Set..[[">
           <Property name="WavePool">
-            <Property value="NMSString0x10.xml">
-              <Property name="Value" value="]]..Set..[[" />
-            </Property>
+			<Property name="WavePool" value="]]..Set..[[" />
           </Property>
         </Property>]]
 end
 
 function AddSpawnToWave (Spawn)
     return
-[[<Property value="NMSString0x10.xml">
-              <Property name="Value" value="]]..Spawn..[[" />
-            </Property>]]
+[[          <Property name="WavePool" value="]]..Spawn..[[" />]]
 end
 
 --Adds a new set of just a Sentinel Quad with nothing else
 AddQuadSoloSet =
-[[<Property value="GcSentinelSpawnWave.xml">
+[[<Property name="SentinelSpawns" value="GcSentinelSpawnWave" _id="QUAD_SOLO">
       <Property name="Id" value="QUAD_SOLO" />
       <Property name="Spawns">
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="0">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="Quad" />
           </Property>
           <Property name="MinAmount" value="1" />
@@ -42,10 +38,10 @@ AddQuadSoloSet =
       <Property name="ReinforceAt" value="0" />
     </Property>]]
 
-function AddSentinels (SentinelType, MinAmount, MaxAmount)
+function AddSentinels (SentinelType, MinAmount, MaxAmount, Index)
     return
-[[<Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+[[<Property name="Spawns" value="GcSentinelSpawnData" _index="]]..Index..[[">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="]]..SentinelType..[[" />
           </Property>
           <Property name="MinAmount" value="]]..MinAmount..[[" />
@@ -55,18 +51,18 @@ end
 --Possible SentinelTypes are: PatrolDrone	CombatDrone		MedicDrone	SummonerDrone	Quad	Mech	Walker	CorruptedDrone	SpiderQuad	SpiderQuadMini
 
 OneDroneThreeFourMinis = 
-[[<Property value="GcSentinelSpawnWave.xml">
+[[<Property name="SentinelSpawns" value="GcSentinelSpawnWave" _id="1D_34MS">
       <Property name="Id" value="1D_34MS" />
       <Property name="Spawns">
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="0">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="CorruptedDrone" />
           </Property>
           <Property name="MinAmount" value="1" />
           <Property name="MaxAmount" value="1" />
         </Property>
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="1">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="SpiderQuadMini" />
           </Property>
           <Property name="MinAmount" value="3" />
@@ -77,18 +73,18 @@ OneDroneThreeFourMinis =
     </Property>]]
 
 TwoThreeDronesThreeFourMinis = 
-[[<Property value="GcSentinelSpawnWave.xml">
+[[<Property name="SentinelSpawns" value="GcSentinelSpawnWave" _id="23D_34MS">
       <Property name="Id" value="23D_34MS" />
       <Property name="Spawns">
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="0">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="CorruptedDrone" />
           </Property>
           <Property name="MinAmount" value="2" />
           <Property name="MaxAmount" value="3" />
         </Property>
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="1">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="SpiderQuadMini" />
           </Property>
           <Property name="MinAmount" value="3" />
@@ -99,25 +95,25 @@ TwoThreeDronesThreeFourMinis =
     </Property>]]
 
 OneDroneOneSpiderThreeFourMinis = 
-[[<Property value="GcSentinelSpawnWave.xml">
+[[<Property name="SentinelSpawns" value="GcSentinelSpawnWave" _id="1D_1S_34MS">
       <Property name="Id" value="1D_1S_34MS" />
       <Property name="Spawns">
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="0">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="CorruptedDrone" />
           </Property>
           <Property name="MinAmount" value="1" />
           <Property name="MaxAmount" value="1" />
         </Property>
-		<Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+		<Property name="Spawns" value="GcSentinelSpawnData" _index="1">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="SpiderQuad" />
           </Property>
           <Property name="MinAmount" value="1" />
           <Property name="MaxAmount" value="1" />
         </Property>
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="2">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="SpiderQuadMini" />
           </Property>
           <Property name="MinAmount" value="3" />
@@ -128,25 +124,25 @@ OneDroneOneSpiderThreeFourMinis =
     </Property>]]
 	
 TwoDronesOneSpiderFourFiveMinis = 
-[[<Property value="GcSentinelSpawnWave.xml">
+[[<Property name="SentinelSpawns" value="GcSentinelSpawnWave" _id="2D_1S_45MS">
       <Property name="Id" value="2D_1S_45MS" />
       <Property name="Spawns">
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="0">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="CorruptedDrone" />
           </Property>
           <Property name="MinAmount" value="2" />
           <Property name="MaxAmount" value="2" />
         </Property>
-		<Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+		<Property name="Spawns" value="GcSentinelSpawnData" _index="1">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="SpiderQuad" />
           </Property>
           <Property name="MinAmount" value="1" />
           <Property name="MaxAmount" value="1" />
         </Property>
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="2">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="SpiderQuadMini" />
           </Property>
           <Property name="MinAmount" value="4" />
@@ -157,25 +153,25 @@ TwoDronesOneSpiderFourFiveMinis =
     </Property>]]
 
 TwoThreeDronesTwoSpidersFourFiveMinis = 
-[[<Property value="GcSentinelSpawnWave.xml">
+[[<Property name="SentinelSpawns" value="GcSentinelSpawnWave" _id="23D_2S_45MS">
       <Property name="Id" value="23D_2S_45MS" />
       <Property name="Spawns">
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="0">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="CorruptedDrone" />
           </Property>
           <Property name="MinAmount" value="2" />
           <Property name="MaxAmount" value="3" />
         </Property>
-		<Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+		<Property name="Spawns" value="GcSentinelSpawnData" _index="1">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="SpiderQuad" />
           </Property>
           <Property name="MinAmount" value="2" />
           <Property name="MaxAmount" value="2" />
         </Property>
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="2">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="SpiderQuadMini" />
           </Property>
           <Property name="MinAmount" value="4" />
@@ -186,25 +182,25 @@ TwoThreeDronesTwoSpidersFourFiveMinis =
     </Property>]]
 
 ThreeFourDronesTwoSpidersFourFiveMinis = 
-[[<Property value="GcSentinelSpawnWave.xml">
+[[<Property name="SentinelSpawns" value="GcSentinelSpawnWave" _id="34D_2S_45MS">
       <Property name="Id" value="34D_2S_45MS" />
       <Property name="Spawns">
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="0">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="CorruptedDrone" />
           </Property>
           <Property name="MinAmount" value="3" />
           <Property name="MaxAmount" value="4" />
         </Property>
-		<Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+		<Property name="Spawns" value="GcSentinelSpawnData" _index="1">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="SpiderQuad" />
           </Property>
           <Property name="MinAmount" value="2" />
           <Property name="MaxAmount" value="2" />
         </Property>
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="2">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="SpiderQuadMini" />
           </Property>
           <Property name="MinAmount" value="4" />
@@ -215,18 +211,18 @@ ThreeFourDronesTwoSpidersFourFiveMinis =
     </Property>]]
 
 FourFiveDronesFiveSixMinis = 
-[[<Property value="GcSentinelSpawnWave.xml">
+[[<Property name="SentinelSpawns" value="GcSentinelSpawnWave" _id="45D_56MS">
       <Property name="Id" value="45D_56MS" />
       <Property name="Spawns">
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="0">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="CorruptedDrone" />
           </Property>
           <Property name="MinAmount" value="4" />
           <Property name="MaxAmount" value="5" />
         </Property>
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="1">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="SpiderQuadMini" />
           </Property>
           <Property name="MinAmount" value="5" />
@@ -237,25 +233,25 @@ FourFiveDronesFiveSixMinis =
     </Property>]]
 
 FourFiveDronesThreeSpidersFiveSixMinis = 
-[[<Property value="GcSentinelSpawnWave.xml">
+[[<Property name="SentinelSpawns" value="GcSentinelSpawnWave" _id="45D_3S_56MS">
       <Property name="Id" value="45D_3S_56MS" />
       <Property name="Spawns">
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+        <Property name="Spawns" value="GcSentinelSpawnData" _index="0">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="CorruptedDrone" />
           </Property>
           <Property name="MinAmount" value="4" />
           <Property name="MaxAmount" value="5" />
         </Property>
-		<Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+		<Property name="Spawns" value="GcSentinelSpawnData" _index="1">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="SpiderQuad" />
           </Property>
           <Property name="MinAmount" value="3" />
           <Property name="MaxAmount" value="3" />
         </Property>
-        <Property value="GcSentinelSpawnData.xml">
-          <Property name="Type" value="GcSentinelTypes.xml">
+       <Property name="Spawns" value="GcSentinelSpawnData" _index="2">
+          <Property name="Type" value="GcSentinelTypes">
             <Property name="SentinelType" value="SpiderQuadMini" />
           </Property>
           <Property name="MinAmount" value="5" />
@@ -271,7 +267,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]				= "Exosolar",
 ["LUA_AUTHOR"]				= "Babscoole",		--Edited by Xen0nex
 ["MOD_DESCRIPTION"]			= Description,
-["NMS_VERSION"]				= "3.93",
+["NMS_VERSION"]				= "5.57",
+["EXML_CREATE"] = "FALSE",
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE",
 ["MODIFICATIONS"] 			= 
 	{
@@ -280,7 +277,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{	--This section added by Xen0nex
 					["MBIN_FILE_SOURCE"] 	= "GCPLAYERGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -292,245 +289,263 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"WantedTimeout"},		--Controls how long Sentinels will Search for the player if they run away after a Crime
-							["REPLACE_TYPE"]         = "",
-							["MATH_OPERATION"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	= 
-							{	--Old		New
-								--{"10", 		20},								--10	seconds at Wanted level 1
-								{"15", 		20},								--15	seconds at Wanted level 2, plus whatever the lower Wanted level times are	(e.g. 15 + 10 = 25 seconds total in vanilla)
-								--{"10", 		15},								--10	seconds at Wanted level 3, plus whatever the lower Wanted level times are
-								{"15", 		15},								--15	seconds at Wanted level 4, plus whatever the lower Wanted level times are
-								--{"10", 		10}									--10	seconds at Wanted level 5, plus whatever the lower Wanted level times are
-							}
-						},
-						--Had to split this section into two, to make sure the entries get changed in the right order
-						{
-							["PRECEDING_KEY_WORDS"] = {"WantedTimeout"},		--Controls how long Sentinels will Search for the player if they run away after a Crime
-							["REPLACE_TYPE"]         = "",
-							["MATH_OPERATION"] 		= "",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{	--Old		New
-								{"10", 		20},								--10	seconds at Wanted level 1
-								--{"15", 		20},								--15	seconds at Wanted level 2, plus whatever the lower Wanted level times are	(e.g. 15 + 10 = 25 seconds total in vanilla)
-								{"10", 		15},								--10	seconds at Wanted level 3, plus whatever the lower Wanted level times are
-								--{"15", 		15},								--15	seconds at Wanted level 4, plus whatever the lower Wanted level times are
-								{"10", 		10}									--10	seconds at Wanted level 5, plus whatever the lower Wanted level times are
+							{
+								{"WantedTimeout", 		20},						--10	seconds at Wanted level 1
+								{"WantedTimeout", 		20},						--15	seconds at Wanted level 2, plus whatever the lower Wanted level times are	(e.g. 15 + 10 = 25 seconds total in vanilla)
+								{"WantedTimeout", 		15},						--10	seconds at Wanted level 3, plus whatever the lower Wanted level times are
+								{"WantedTimeout", 		15},						--15	seconds at Wanted level 4, plus whatever the lower Wanted level times are
+								{"WantedTimeout", 		10}							--10	seconds at Wanted level 5, plus whatever the lower Wanted level times are
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"WantedEscalateTime"},	--Possibly how long Sentinels will search for the player if they run away after destroying a wave of sentinels, which increases the Wanted level???
-							["REPLACE_TYPE"]         = "",
-							["MATH_OPERATION"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	--Old		New
-								{"-1", 		-1},								---1
-								{"30", 		30},								--30
-								{"60", 		60},								--60
-								{"90", 		90},								--90
-								--{"-1", 		-1}									---1
+								{"WantedEscalateTime", 		-1},					---1
+								{"WantedEscalateTime", 		30},					--30
+								{"WantedEscalateTime", 		60},					--60
+								{"WantedEscalateTime", 		90},					--90
+								{"WantedEscalateTime", 		-1}						---1
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"WantedExtremeEscalateTime"},	--Seems to be how long Sentinels will search for the player if they run away after a Crime on an Extreme Sentinel Planet???
-							["REPLACE_TYPE"]         = "",
-							["MATH_OPERATION"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	--Old		New
-								{"-1", 		-1},								---1
-								{"20", 		30},								--20
-								{"40", 		45},								--40	seconds at Wanted level 3 total (doesn't seem to add lower level Wanted times)
-								{"120", 	120},								--120
-								--{"-1", 		-1}									---1
+								{"WantedExtremeEscalateTime", 		-1},			---1
+								{"WantedExtremeEscalateTime", 		30},			--20
+								{"WantedExtremeEscalateTime", 		45},			--40	seconds at Wanted level 3 total (doesn't seem to add lower level Wanted times)
+								{"WantedExtremeEscalateTime", 		120},			--120
+								{"WantedExtremeEscalateTime", 		-1}				---1
 							}
 						}
 					}
 				},
 				{	--This section also added by Xen0nex, controls which kind and how many Sentinels spawn in various circumstances
 					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						--adds the various new spawn sets
 						{
-							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"] = {"SentinelSpawns","GcSentinelSpawnWave"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = AddQuadSoloSet
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"] = {"SentinelSpawns","GcSentinelSpawnWave"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = OneDroneThreeFourMinis
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"] = {"SentinelSpawns","GcSentinelSpawnWave"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = TwoThreeDronesThreeFourMinis
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"] = {"SentinelSpawns","GcSentinelSpawnWave"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = OneDroneOneSpiderThreeFourMinis
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"] = {"SentinelSpawns","GcSentinelSpawnWave"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = TwoDronesOneSpiderFourFiveMinis
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"] = {"SentinelSpawns","GcSentinelSpawnWave"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = TwoThreeDronesTwoSpidersFourFiveMinis
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"] = {"SentinelSpawns","GcSentinelSpawnWave"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = ThreeFourDronesTwoSpidersFourFiveMinis
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"] = {"SentinelSpawns","GcSentinelSpawnWave"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = FourFiveDronesFiveSixMinis
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns",	"GcSentinelSpawnWave.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["SPECIAL_KEY_WORDS"] = {"SentinelSpawns","GcSentinelSpawnWave"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = FourFiveDronesThreeSpidersFiveSixMinis
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4"},		--Wanted Level 4 spawns
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = AddWaveSequence ("QUAD_SOLO")			--Should add a single Sentinel Quad spawn between the initial drones and the Mech
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4",	"Waves", "GcSentinelSpawnSequenceStep"},		--Wanted Level 4 spawns
+							["SECTION_ACTIVE"] = {1,},
+							["ADD_OPTION"]  = "ADDafterSECTION",
+							["ADD"] = AddWaveSequence ("QUAD_SOLO", 2)			--Should add a single Sentinel Quad spawn between the initial drones and the Mech
 						},
 						--WANTED_4_EX already has Quads
-						--[[{
-							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4_EX"},	--Wanted Level 4, "Extreme" version spawns?
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = AddWaveSequence ("QUAD_SOLO")			--Should add a single Sentinel Quad spawn between the initial drones and the Mech
-						},]]
+						--{
+							--["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4_EX",	"Waves", "GcSentinelSpawnSequenceStep"},	--Wanted Level 4, "Extreme" version spawns?
+							--["ADD_OPTION"]  = "ADDafterSECTION",
+							--["ADD"] = AddWaveSequence ("QUAD_SOLO")			--Should add a single Sentinel Quad spawn between the initial drones and the Mech
+						--},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_2_CR"},		--Wanted Level 2 Corrupt Planet spawns
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value", "1D_34MS"},						--"CORRUPT_MED"
-							}		
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_3_CR"},		--Wanted Level 3 Corrupt Planet spawns
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value", "23D_34MS"},						--"SPIDER_WAVE"
-							}		
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_3_CR",	"Value", "MINI_SPIDERS"},		--Wanted Level 3 Corrupt Planet spawns Wave 2
-							["REMOVE"]  = "SECTION",		
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_3_CR"},		--Wanted Level 3 Corrupt Planet spawns
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
-							["SECTION_ACTIVE"] = {-2,},							--Wave 2
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_2_CR",	"WavePool", "CORRUPT_MED"},		--Wanted Level 2 Corrupt Planet spawns
 							["VALUE_MATCH"] = "CORRUPT_MED",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "1D_1S_34MS"},					--"CORRUPT_MED"
+								{"WavePool", "1D_34MS"},						--"CORRUPT_MED"
 							}		
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4_CR"},		--Wanted Level 4 Corrupt Planet spawns
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_3_CR",	"WavePool", "SPIDER_WAVE"},		--Wanted Level 3 Corrupt Planet spawns
+							["VALUE_MATCH"] = "SPIDER_WAVE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "2D_1S_45MS"},						--"SPIDER_GANG"
+								{"WavePool", "23D_34MS"},						--"SPIDER_WAVE"
 							}		
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4_CR",	"Value", "SPIDER_WAVE"},		--Wanted Level 4 Corrupt Planet spawns Wave 2
-							["REMOVE"]  = "SECTION",		
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_3_CR",	"WavePool", "MINI_SPIDERS"},		--Wanted Level 3 Corrupt Planet spawns Wave 2
+							["VALUE_MATCH"] = "MINI_SPIDERS",
+							["REMOVE"]  = "LINE",		
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4_CR"},		--Wanted Level 4 Corrupt Planet spawns
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
-							["SECTION_ACTIVE"] = {-2,},							--Wave 2
-							["VALUE_MATCH"] = "SPIDERS",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value", "23D_2S_45MS"},						--"SPIDERS"
-							}		
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_5_CR",	"Value", "SPIDER_WAVE"},		--Wanted Level 5 Corrupt Planet spawns
-							["REMOVE"]  = "SECTION",		
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_5_CR"},		--Wanted Level 5 Corrupt Planet spawns
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
-							["VALUE_MATCH"] = "SPIDERS",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value", "34D_2S_45MS"},						--"SPIDERS"
-							}		
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_5_CR"},		--Wanted Level 5 Corrupt Planet spawns
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
-							["SECTION_ACTIVE"] = {-2,},							--Wave 2
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_3_CR",	"WavePool", "CORRUPT_MED"},		--Wanted Level 3 Corrupt Planet spawns
+							--["SECTION_ACTIVE"] = {-2,},							--Wave 2
 							["VALUE_MATCH"] = "CORRUPT_MED",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "45D_56MS"},						--"CORRUPT_MED"
+								{"WavePool", "1D_1S_34MS"},					--"CORRUPT_MED"
 							}		
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_5_CR"},		--Wanted Level 5 Corrupt Planet spawns
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequenceStep.xml"},
-							["SECTION_ACTIVE"] = {-3,},							--Wave 3
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4_CR",	"WavePool", "SPIDER_GANG"},		--Wanted Level 4 Corrupt Planet spawns
 							["VALUE_MATCH"] = "SPIDER_GANG",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "45D_3S_56MS"},						--"SPIDER_GANG"
+								{"WavePool", "2D_1S_45MS"},						--"SPIDER_GANG"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4_CR",	"WavePool", "SPIDERS"},		--Wanted Level 4 Corrupt Planet spawns Wave 2
+							["VALUE_MATCH"] = "SPIDERS",
+							["REMOVE"]  = "LINE",		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4_CR",	"WavePool", "SPIDER_WAVE"},		--Wanted Level 4 Corrupt Planet spawns
+							--["SECTION_ACTIVE"] = {-2,},							--Wave 2
+							["VALUE_MATCH"] = "SPIDER_WAVE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"WavePool", "23D_2S_45MS"},						--"SPIDER_WAVE"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_5_CR",	"WavePool", "SPIDER_WAVE"},		--Wanted Level 5 Corrupt Planet spawns
+							["VALUE_MATCH"] = "SPIDER_WAVE",
+							["REMOVE"]  = "LINE",		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_5_CR",	"WavePool", "SPIDERS"},		--Wanted Level 5 Corrupt Planet spawns
+							["VALUE_MATCH"] = "SPIDERS",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"WavePool", "34D_2S_45MS"},						--"SPIDERS"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_5_CR",	"WavePool", "CORRUPT_MED"},		--Wanted Level 5 Corrupt Planet spawns
+							--["SECTION_ACTIVE"] = {-2,},							--Wave 2
+							["VALUE_MATCH"] = "CORRUPT_MED",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"WavePool", "45D_56MS"},						--"CORRUPT_MED"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_5_CR",	"WavePool", "SPIDER_GANG"},		--Wanted Level 5 Corrupt Planet spawns
+							--["SECTION_ACTIVE"] = {-3,},							--Wave 3
+							["VALUE_MATCH"] = "SPIDER_GANG",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"WavePool", "45D_3S_56MS"},						--"SPIDER_GANG"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","STONE_SET",	"SentinelType", "StoneFloater"},		--Floating Golem spawns for STONE_SET
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinAmount", 2},									--1
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","FOSSIL_V_SMALL",	"WavePool", "STONE_FLOATER"},	--Very Small variant of Golem encounter
+							["VALUE_MATCH"] = "STONE_FLOATER",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"WavePool", "STONE_FLOATERS"},						--"STONE_FLOATER"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","FOSSIL_SMALL",	"WavePool", "STONE_FLOATERS"},	--Small variant of Golem encounter
+							["VALUE_MATCH"] = "STONE_FLOATERS",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"WavePool", "STONE_MECH"},							--"STONE_FLOATERS"
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","FOSSIL_MED",	"WavePool", "STONE_MECH"},	--Medium variant of Golem encounter
+							["VALUE_MATCH"] = "STONE_MECH",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"WavePool", "STONE_SET"},							--"STONE_MECH"		(STONE_SET is a Golem Mech with 1-2 Floating Golems as backup)
+							}		
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","FOSSIL_LARGE",	"WavePool", "STONE_MECH"},	--Large variant of Golem encounter
+							["VALUE_MATCH"] = "STONE_MECH",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"WavePool", "STONE_SET"},							--"STONE_MECH"		(STONE_SET is a Golem Mech with 1-2 Floating Golems as backup)
 							}		
 						},
 						{--For some reason this one had trouble finding the section normally?
-							--["PRECEDING_FIRST"] = "TRUE",
-							--["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
-							["PRECEDING_KEY_WORDS"] = {"Spawns"},
-							["SPECIAL_KEY_WORDS"] = {"Id","FACTORY_A"},		--Manufacturing Facility guards
-							--["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = AddSentinels ("Quad", 1, 1)
+							["SPECIAL_KEY_WORDS"] = {"Id","FACTORY_A",	"Spawns", "GcSentinelSpawnData"},		--Manufacturing Facility guards
+							--["PRECEDING_KEY_WORDS"] = {"Spawns"},
+							["SECTION_ACTIVE"] = {"1"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
+							["ADD"] = AddSentinels ("Quad", 1, 1, 2)
 						},
 						{--in 3.99 Causes a bug if run through AMUMSS without adding "Spawns", to the front of the Preceding Key Words?
 							--["PRECEDING_FIRST"] = "TRUE",
-							--["PRECEDING_KEY_WORDS"] = {"Spawns", "GcSentinelSpawnData.xml"},
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
-							["SPECIAL_KEY_WORDS"] = {"Id","HARVESTER_A"},	--Planetary Harvester guards
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = AddSentinels ("SummonerDrone", 1, 1)
+							--["PRECEDING_KEY_WORDS"] = {"Spawns", "GcSentinelSpawnData"},
+							--["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData"},
+							["SPECIAL_KEY_WORDS"] = {"Id","HARVESTER_A",	"Spawns", "GcSentinelSpawnData"},	--Planetary Harvester guards
+							["SECTION_ACTIVE"] = {"2"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
+							["ADD"] = AddSentinels ("SummonerDrone", 1, 1, 3)
 						},
 						{--in 3.99 Causes a bug if run through AMUMSS without adding "Spawns", to the front of the Preceding Key Words?
 							--["PRECEDING_FIRST"] = "TRUE",
-							--["PRECEDING_KEY_WORDS"] = {"Spawns", "GcSentinelSpawnData.xml"},
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
-							["SPECIAL_KEY_WORDS"] = {"Id","HIVE_A"},		--Sentinel Pillar guards
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = AddSentinels ("Quad", 1, 1)
+							--["PRECEDING_KEY_WORDS"] = {"Spawns", "GcSentinelSpawnData"},
+							--["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData"},
+							["SPECIAL_KEY_WORDS"] = {"Id","HIVE_A",	"Spawns", "GcSentinelSpawnData"},		--Sentinel Pillar guards
+							["SECTION_ACTIVE"] = {"2"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
+							["ADD"] = AddSentinels ("Quad", 1, 1, 3)
 						},
 						{--in 3.99 Causes a bug if run through AMUMSS without adding "Spawns", to the front of the Preceding Key Words?
 							--["PRECEDING_FIRST"] = "TRUE",
-							--["PRECEDING_KEY_WORDS"] = {"Spawns", "GcSentinelSpawnData.xml"},
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
-							["SPECIAL_KEY_WORDS"] = {"Id","HIVE_EX_A"},		--Sentinel Pillar guards, "Extreme" version?
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = AddSentinels ("Quad", 1, 1)
+							--["PRECEDING_KEY_WORDS"] = {"Spawns", "GcSentinelSpawnData"},
+							--["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData"},
+							["SPECIAL_KEY_WORDS"] = {"Id","HIVE_EX_A",	"Spawns", "GcSentinelSpawnData"},		--Sentinel Pillar guards, "Extreme" version?
+							["SECTION_ACTIVE"] = {"2"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
+							["ADD"] = AddSentinels ("Quad", 1, 1, 3)
 						},
 						{
 							["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns"},
 							["SPECIAL_KEY_WORDS"] = {"Id","SETTLE",		"SentinelType", "CorruptedDrone"},		--Settlement defense Corrupted Drones
 							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MinAmount", 3},							--6
@@ -542,58 +557,56 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns"},
 							["SPECIAL_KEY_WORDS"] = {"Id","SETTLE_EX",		"SentinelType", "CorruptedDrone"},		--Settlement defense Corrupted Drones, "Extreme" version?
 							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MinAmount", 6},							--9
 								{"MaxAmount", 10},							--9
 							}
 						},
-						--[[{	--As of NMS v3.99, Adding non-Corrupted Drones to the Sentinel Defense assaults seems to make a regular Wanted Level event occur at the same time, so you will have escalting waves of regular sentinels in addition to the corrupted Drones
-							--["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
-							["SPECIAL_KEY_WORDS"] = {"Id","SETTLE"},		--Settlement defense
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = AddSentinels ("Quad", 1, 1)
-						},
-						{
-							--["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
-							["SPECIAL_KEY_WORDS"] = {"Id","SETTLE"},		--Settlement defense
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = AddSentinels ("SummonerDrone", 1, 1)
-						},]]
 						{
 							["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns"},
 							["SPECIAL_KEY_WORDS"] = {"Id","SETTLE_EX",		"SentinelType", "CorruptedDrone"},		--Settlement defense Corrupted Drones, "Extreme" version?
 							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MinAmount", 7},							--9
 								{"MaxAmount", 11},							--9
 							}
 						},
+						--[[{	--As of NMS v3.99, Adding non-Corrupted Drones to the Sentinel Defense assaults seems to make a regular Wanted Level event occur at the same time, so you will have escalting waves of regular sentinels in addition to the corrupted Drones
+							--["PRECEDING_FIRST"] = "TRUE",
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData"},
+							["SPECIAL_KEY_WORDS"] = {"Id","SETTLE"},		--Settlement defense
+							["ADD_OPTION"]  = "ADDafterSECTION",
+							["ADD"] = AddSentinels ("Quad", 1, 1)
+						},
+						{
+							--["PRECEDING_FIRST"] = "TRUE",
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData"},
+							["SPECIAL_KEY_WORDS"] = {"Id","SETTLE"},		--Settlement defense
+							["ADD_OPTION"]  = "ADDafterSECTION",
+							["ADD"] = AddSentinels ("SummonerDrone", 1, 1)
+						},]]
 						--[[{	--Adding non-Corrupted Drones to the Sentinel Defense assaults seems to make a regular Wanted Level event occur at the same time, so you will have escalting waves of regular sentinels in addition to the corrupted Drones
 							--["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData"},
 							["SPECIAL_KEY_WORDS"] = {"Id","SETTLE_EX"},		--Settlement defense, "Extreme" version?
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = AddSentinels ("Quad", 2, 2)
 						},
 						{
 							--["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
+							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData"},
 							["SPECIAL_KEY_WORDS"] = {"Id","SETTLE_EX"},		--Settlement defense, "Extreme" version?
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = AddSentinels ("MedicDrone", 2, 2)
 						},]]
 					}
 				},
 				{	--This section added by Xen0nex
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\CORRUPTDRONEPILLAR\ENTITIES\DATA.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -605,10 +618,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCROBOTGLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"GrenadeLaunchFlightTime", 2},
@@ -698,7 +711,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{	--Also added by Xen0nex														This allows drones to continue to shoot at the player while you are moving away from them
-							["PRECEDING_KEY_WORDS"] = {"GcDroneWeaponData.xml"},
+							["SPECIAL_KEY_WORDS"] = {"DroneWeapons","GcDroneWeaponData"},
 							["REPLACE_TYPE"]         = "ALL",
 							["MATH_OPERATION"] 		= "*",
                             ["VALUE_MATCH"]         = "120",
@@ -713,9 +726,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ProjectileSpread", 0.07},							--0.05
-								{"FireInterval", 0.03},								--0.04
-								{"NumShotsMin", 50},								--30
-								{"NumShotsMax", 70},								--40
+								{"ProjectileFireInterval", 0.03},					--0.04
+								{"ProjectileNumShotsMin", 50},						--30
+								{"ProjectileNumShotsMax", 70},						--40
 								{"CooldownTimeMin", 2},								--3
 								{"CooldownTimeMax", 4},								--5
 								{"IdealRange", 8},									--8
@@ -729,16 +742,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ProjectileSpread", 0.07},							--0.01			(The Sentinel Mech appears to always aim for a point in space to the left side of the player, completely missing them normally?)
-								{"FireInterval", 0.03},								--0.05
-								{"NumShotsMin", 45},								--15
-								{"NumShotsMax", 75},								--25
+								{"ProjectileFireInterval", 0.03},					--0.05
+								{"ProjectileNumShotsMin", 45},						--15
+								{"ProjectileNumShotsMax", 75},						--25
 								{"IdealRange", 20},									--20
 								{"MinRange", 10},									--10
 								{"MaxRange", 60}									--40	[70]
 							}
 						},
 						{	--Also added by Xen0nex
-							["SPECIAL_KEY_WORDS"] = {"Attack","GcDroneControlData.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Attack","GcDroneControlData"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxSpeed", 8},								--4
@@ -747,8 +760,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{	--Also added by Xen0nex
-							["SPECIAL_KEY_WORDS"] = {"Search","GcDroneControlData.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",	
+							["SPECIAL_KEY_WORDS"] = {"Search","GcDroneControlData"},
+							--["INTEGER_TO_FLOAT"] = "FORCE",	
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxSpeed", 12},								--5
@@ -769,7 +782,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"NumShotsMax", 4},									--4
 								{"MinRange", 8},									--8
 								{"MaxRange", 50}									--40
-								
 							}
 						},
 						{	--Also added by Xen0nex
@@ -821,7 +833,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{	--Also added by Xen0nex
 							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTSMG"},			--Probably weapon of the Corrupted Drones
-							["INTEGER_TO_FLOAT"] = "FORCE",	
+							--["INTEGER_TO_FLOAT"] = "FORCE",	
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ProjectileSpread", 0},							--0
@@ -830,7 +842,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"FireTimeMax", 4.5},								--3
 								{"NumShotsMin", 12},								--8
 								{"NumShotsMax", 30},								--20
-								{"Range", 40}										--40	Multiplied by the change to GcDroneWeaponData.xml above
+								{"Range", 40}										--40	Multiplied by the change to GcDroneWeaponData above
 								
 							}
 						},
@@ -844,7 +856,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"FireTimeMax", 8},									--8
 								{"NumShotsMin", 1},									--1
 								{"NumShotsMax", 3},									--3
-								{"Range", 120},										--120	NOT Multiplied by the change to GcDroneWeaponData.xml above
+								{"Range", 120},										--120	NOT Multiplied by the change to GcDroneWeaponData above
 								{"ExplosionRadius", 2.2}							--2.2
 								
 							}
@@ -860,13 +872,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"FireTimeMax", 8},									--7
 								{"NumShotsMin", 3},									--2
 								{"NumShotsMax", 6},									--4
-								{"Range", 30}										--30	Multiplied by the change to GcDroneWeaponData.xml above
+								{"Range", 30}										--30	Multiplied by the change to GcDroneWeaponData above
 								
 							}
 						},
 						{	--Also added by Xen0nex
 							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTFLAME"},			--Probably weapon of the Corrupted Drones
-							["INTEGER_TO_FLOAT"] = "FORCE",		
+							--["INTEGER_TO_FLOAT"] = "FORCE",		
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ProjectileSpread", 0.07},							--0.05
@@ -875,46 +887,103 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"FireTimeMax", 7},									--7
 								{"NumShotsMin", 45},								--30
 								{"NumShotsMax", 60},								--40
-								{"Range", 20}										--20	Multiplied by the change to GcDroneWeaponData.xml above
+								{"Range", 20}										--20	Multiplied by the change to GcDroneWeaponData above
 								
 							}
 						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","RUINMECH_GREN"},				--Probably weapon of the new Golem Mech?
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ProjectilesPerShot", 3},							--3
+								{"ProjectileSpread", 0.5},							--0.5
+								{"ProjectileFireInterval", 0.2},					--0.2
+								{"ProjectileNumShotsMin", 1},						--1
+								{"ProjectileNumShotsMax", 3},						--2
+								{"MinRange", 20},									--20
+								{"MaxRange", 60},									--40
+								{"ProjectileExplosionRadius", 0.5}					--0.3
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","RUINMECHLASER"},				--Probably weapon of the new Golem Mech?
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ProjectileSpread", 0},							--0
+								{"ProjectileFireInterval", 0.1},					--0.1
+								{"LaserFireTimeMin", 4.5},							--4.5
+								{"LaserFireTimeMax", 7},							--7
+								{"CooldownTimeMin", 5},								--7
+								{"CooldownTimeMax", 10},							--12
+								{"ProjectileNumShotsMin", 4},						--4
+								{"ProjectileNumShotsMax", 8},						--6
+								{"MinRange", 5},									--5
+								{"MaxRange", 50}									--40
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","STONEGRENADE"},				--Probably weapon of the new Golem Floater?
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"NumProjectiles", 1},								--1
+								{"ProjectileSpread", 0},							--0
+								{"FireRate", 0.4},									--0.5
+								{"NumShotsMin", 1},									--1
+								{"NumShotsMax", 4},									--3
+								{"Range", 120},										--120
+								{"ExplosionRadius", 2.8}							--2.2
+							}
+						},
 						--There's also a new "PounceData" section, which seems like it may act as a mini "flurry attack" period where the enemy gets increases fire rate for a short time???
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"StoneMech","GcSentinelPounceBalance"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinTimeBetweenPounces", 3},						--3
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"StoneFloater","GcSentinelPounceBalance"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinTimeBetweenPounces", 3},						--3
+							}
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"QuadLookTurnSpeeds"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x", 1},										--1			Pre-4.20 was 2
-								{"y", 1.1}										--1.1		Pre-4.20 was 2.2
+								{"X", 1},										--1			Pre-4.20 was 2
+								{"Y", 1.1}										--1.1		Pre-4.20 was 2.2
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"QuadAttackTurnSpeeds"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x", 1},										--1			Pre-4.20 was 2
-								{"y", 1.2}										--1.1		Pre-4.20 was 2.4
+								{"X", 1},										--1			Pre-4.20 was 2
+								{"Y", 1.2}										--1.1		Pre-4.20 was 2.4
 							}
 						},						
 						{
 							["PRECEDING_KEY_WORDS"] = {"WalkerGunOffset1"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x", -0.005},		
-								{"y", 0.065}
+								{"X", -0.005},		
+								{"Y", 0.065}
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"WalkerGunOffset2"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x", -0.005},		
-								{"y", -0.007}
+								{"X", -0.005},		
+								{"Y", -0.007}
 							}
 						},
 						{					
 							["PRECEDING_KEY_WORDS"] = {"WalkerLaser"},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"LaserMiningDamage", 130},
@@ -928,7 +997,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{						
 							["PRECEDING_KEY_WORDS"] = {"QuadLaser"},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"LaserChargeTime", 0.5},
@@ -939,8 +1008,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{						
-							["PRECEDING_KEY_WORDS"] = {"DroneControl"},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["PRECEDING_FIRST"] = "TRUE",
+							["PRECEDING_KEY_WORDS"] = {"DroneControlData"},
+							["SPECIAL_KEY_WORDS"] = {"Id","DEFAULT",},		--For regular patrol drones
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"DronePatrolHonkTime", 1.2},						--2		(1.2)
@@ -952,14 +1023,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"AttackNumShotsMax", 1},							--From gexo's savage sentinels
 								--{"AttackFireTimeMin", 0.185},						--From gexo's savage sentinels
 								--{"AttackFireTimeMax", 0.185},						--From gexo's savage sentinels
-								{"AttackAngle", 30},			
+								{"AttackAngle", 30},								--15
 								--{"AttackRange", 120},								--From gexo's savage sentinels
 								{"AttackActivateTime", 0.01},						--2		(1)		Controls how long they wait before starting to attack you after finding you
-								{"AttackBobAmount", 0.5},
-								{"AttackBobRotation", 0.05},
+								{"AttackBobAmount", 0.5},							--1
+								{"AttackBobRotation", 0.05},						--0.02
 								--{"AttackMoveDistanceMin", 0.1},						--From gexo's savage sentinels
 								{"AttackMoveMinChoiceTime", 0.05},					--1.5
-								{"AttackMoveAngle", 1},
+								{"AttackMoveAngle", 1},								--30
 								{"AttackMaxDistanceFromAlert", 150},				--50		(120)
 								{"DroneSearchCriminalScanRadiusInShip", 8},			--20		(8?)
 								{"DroneScanPlayerTime", 15},						--8			(20?)
@@ -976,9 +1047,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"EngineDirAngleMax", 0}
 							}
 						},
+						{	--Also added by Xen0nex
+							["PRECEDING_FIRST"] = "TRUE",
+							["PRECEDING_KEY_WORDS"] = {"DroneControlData"},
+							["SPECIAL_KEY_WORDS"] = {"Id","STONE FLOATER",},		--For floating stone golems
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								--{"SpinAttackRange", 20},							--20		Increasing this may cause it to behave oddly
+								{"SpinAttackCooldown", 4},							--5
+								{"SpinAttackHomingStrength", 25},					--15
+								{"SpinAttackDamageRadius", 4},						--3
+								{"MeleeAttackWindUpTime", 0.7},						--0.9
+								{"MeleeAttackDamageRadius", 2},						--2
+								{"MeleeAttackHomingStrength", 15},					--10
+								{"MeleeAttackMaxTime", 10},							--10
+							}
+						},
 						{						
 							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONE.SCENE.MBIN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*800),},					--800
@@ -989,7 +1077,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{						
 							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONEARMOURED.SCENE.MBIN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*1450),},					--1450
@@ -1000,7 +1088,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},	
 						{						
 							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONEMEDIC.SCENE.MBIN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*1000),},					--1000
@@ -1011,7 +1099,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},	
 						{						
 							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONESUMMONER.SCENE.MBIN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*1250),},					--1250
@@ -1022,7 +1110,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},	
 						{						
 							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/CORRUPTEDDRONE.SCENE.MBIN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*2800),},					--2800		pre-4.20 was 3200
@@ -1033,7 +1121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{						
 							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/QUADRUPED.SCENE.MBIN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*4200),},					--4200
@@ -1044,7 +1132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{						
 							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SPIDER_QUADRUPED.SCENE.MBIN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*6000),},					--6000
@@ -1055,7 +1143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{						
 							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SPIDER_SMALLQUAD.SCENE.MBIN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*1050),},					--1050
@@ -1066,7 +1154,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{						
 							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SENTINELMECH.SCENE.MBIN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*7500),},					--7500
@@ -1077,7 +1165,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{						
 							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/WALKER.SCENE.MBIN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*16000),},					--16000
@@ -1088,7 +1176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{						
 							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONESHIELD.SCENE.MBIN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BaseHealth",	math.floor(SentHealth*2000),},					--2000
@@ -1097,10 +1185,32 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"RepairThreshold","95",},										--95
 							}
 						},
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/RUINMECH.SCENE.MBIN",},
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth",	math.floor(SentHealth*9000*0.8),},					--9000
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*15000*0.8),},--15000
+								{"RepairTime","7",},											--7
+								{"RepairThreshold","95",},										--95
+							}
+						},
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/PLANETS/ENEMIES/GOLEM/GOLEM.SCENE.MBIN",},
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth",	math.floor(SentHealth*4800*0.8),},					--4800
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*8800*0.8),},--8800
+								{"RepairTime","9",},											--9
+								{"RepairThreshold","60",},										--60
+							}
+						},
 						--Now covered by an earlier section above
 						--[[{						
 							["SPECIAL_KEY_WORDS"] = {"Id","SENMECHGUN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxRange","70",},
@@ -1108,16 +1218,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},]]
 						{						
 							["SPECIAL_KEY_WORDS"] = {"Id","SENMECHCANON",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxRange","100",},
+								{"MaxRange","100",},		--70
 							}
 						},
 						--Now covered by an earlier section above
 						--[[{						
 							["SPECIAL_KEY_WORDS"] = {"Id","MECHFLAME",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxRange","40",},
@@ -1129,4 +1239,3 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 	}	
 }
-

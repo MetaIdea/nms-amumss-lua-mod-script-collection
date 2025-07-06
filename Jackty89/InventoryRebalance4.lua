@@ -1,37 +1,42 @@
-ModName                                  = "InventoryRebalance"
+ModName = "InventoryRebalance"
 
-DIFFICULTYCONFIG                         = "METADATA/GAMESTATE/DIFFICULTYCONFIG.MBIN"
+DIFFICULTYCONFIG = "METADATA/GAMESTATE/DIFFICULTYCONFIG.MBIN"
 
-SubstanceAndProductSizeLimit             = 9999999
+SubstanceAndProductSizeLimit = 9999999
 
 -- Standard == NORMAL
-SubstanceInventorySizeStandard           = 50000
-SubstanceCargoSizeStandard               = 100000
-ProductInventorySizeStandard             = 50
-ProductCargoSizeStandard                 = 100
+SubstanceInventorySizeStandard = 50000
+SubstanceCargoSizeStandard = 100000
+ProductInventorySizeStandard = 50
+ProductCargoSizeStandard = 100
 
 -- Restricted == Survival/Perma
-SubstanceCargoSizeRestricted              = 1000
-SubstanceShipInventorySizeRestricted      = 2000
-SubstanceShipCargoSizeRestricted          = 2000
+SubstanceInventorySizeRestricted = 500
+SubstanceCargoSizeRestricted = 1000
+SubstanceShipInventorySizeRestricted = 2000
+SubstanceShipCargoSizeRestricted = 2000
 SubstanceFreighterInventorySizeRestricted = 5000
-SubstanceFreighterCargoSizeRestricted     = 5000
-SubstanceVehicleInventorySizeRestricted   = 2000
-SubstanceChestAndCapSizeRestricted        = 5000
+SubstanceFreighterCargoSizeRestricted = 5000
+SubstanceVehicleInventorySizeRestricted = 2000
+SubstanceChestAndCapSizeRestricted = 5000
+SubstanceMaintenanceObjectAndUIPopup = 250
 
-ProductShipInventorySizeRestricted       = 10
-ProductShipCargoSizeRestricted           = 10
-ProductFreighterInventorySizeRestricted  = 25
-ProductFreighterCargoSizeRestricted      = 25
-ProductVehicleInventorySizeRestricted    = 10
-ProductChestAndCapSizeRestricted         = 25
+ProductPersonalInventory = 5
+ProductPersonalInventoryCargo = 10
+ProductShipInventorySizeRestricted = 10
+ProductShipCargoSizeRestricted = 10
+ProductFreighterInventorySizeRestricted = 25
+ProductFreighterCargoSizeRestricted = 25
+ProductVehicleInventorySizeRestricted = 10
+ProductChestAndCapSizeRestricted = 25
+ProductMaintenanceObjectAndUIPopup = 250
 
 ExtraChanges = false
 Choice = 2
 
 InputExtraChanges = {ExtraChanges,
 [[
-    Do want to also change the highest difficulty stacksizes?
+    Do want to also change stack-sizes for Harsh invetory stack limit?
     Default = N | Current = >> ]] .. (ExtraChanges and "Y" or "N") .. [[ <<
 ]]}
 
@@ -41,79 +46,90 @@ if ExtraChanges then
 
     Input_Choice = {Choice,
     [[
-        Which edits do you want to use the Normal (1) or Surival/Perma (2) ?
+        Which edits do you want to use the Normal (1) or Survival/Perma-death (2) ?
         Default = ]]..Choice..[[ <<
     ]]}
     Choice = GUIF(Input_Choice, 10)
 end
 
-Edit_keys = {"NORMAL", "RESTRICED"}
+Edit_keys = {"NORMAL", "RESTRICTED"}
 
 Value_Change_Edits =
 {
-    ["NORMAL"] =
+    NORMAL =
     {
-        ["STACK_SIZE"] ={
+        STACK_SIZE =
+        {
             {"SubstanceStackLimit", SubstanceAndProductSizeLimit},
-            {"ProductStackLimit",   SubstanceAndProductSizeLimit}
+            {"ProductStackLimit", SubstanceAndProductSizeLimit}
         },
-        ["VCT_EDITS_SUB"] =
+        VCT_EDITS_SUB =
         {
-            {"Default",             SubstanceInventorySizeStandard},
-            {"Personal",            SubstanceInventorySizeStandard},
-            {"PersonalCargo",       SubstanceCargoSizeStandard},
-            {"Ship",                SubstanceInventorySizeStandard},
-            {"ShipCargo",           SubstanceCargoSizeStandard},
-            {"Freighter",           SubstanceInventorySizeStandard},
-            {"FreighterCargo",      SubstanceCargoSizeStandard},
-            {"Vehicle",             SubstanceInventorySizeStandard},
-            {"Chest",               SubstanceInventorySizeStandard},
-            {"BaseCapsule",         SubstanceInventorySizeStandard},
-            {"MaintenanceObject",   SubstanceInventorySizeStandard},
-            {"UIPopup",             SubstanceInventorySizeStandard},
+            {"Default", SubstanceInventorySizeStandard},
+            {"Personal", SubstanceInventorySizeStandard},
+            {"PersonalCargo", SubstanceCargoSizeStandard},
+            {"Ship", SubstanceInventorySizeStandard},
+            {"ShipCargo", SubstanceCargoSizeStandard},
+            {"Freighter", SubstanceInventorySizeStandard},
+            {"FreighterCargo", SubstanceCargoSizeStandard},
+            {"Vehicle", SubstanceInventorySizeStandard},
+            {"Chest", SubstanceInventorySizeStandard},
+            {"BaseCapsule", SubstanceInventorySizeStandard},
+            {"MaintenanceObject", SubstanceInventorySizeStandard},
+            {"UIPopup", SubstanceInventorySizeStandard},
         },
-        ["VCT_EDITS_PROD"] =
+        VCT_EDITS_PROD =
         {
-            {"Default",           ProductInventorySizeStandard},
-            {"Personal",          ProductInventorySizeStandard},
-            {"PersonalCargo",     ProductCargoSizeStandard},
-            {"Ship",              ProductInventorySizeStandard},
-            {"ShipCargo",         ProductCargoSizeStandard},
-            {"Freighter",         ProductInventorySizeStandard},
-            {"FreighterCargo",    ProductCargoSizeStandard},
-            {"Vehicle",           ProductInventorySizeStandard},
-            {"Chest",             ProductInventorySizeStandard},
-            {"BaseCapsule",       ProductInventorySizeStandard},
+            {"Default", ProductInventorySizeStandard},
+            {"Personal", ProductInventorySizeStandard},
+            {"PersonalCargo", ProductCargoSizeStandard},
+            {"Ship", ProductInventorySizeStandard},
+            {"ShipCargo", ProductCargoSizeStandard},
+            {"Freighter", ProductInventorySizeStandard},
+            {"FreighterCargo", ProductCargoSizeStandard},
+            {"Vehicle", ProductInventorySizeStandard},
+            {"Chest", ProductInventorySizeStandard},
+            {"BaseCapsule", ProductInventorySizeStandard},
             {"MaintenanceObject", ProductInventorySizeStandard},
-            {"UIPopup",           ProductInventorySizeStandard},
+            {"UIPopup", ProductInventorySizeStandard},
         }
     },
-    ["RESTRICED"] =
+    RESTRICTED =
     {
-        ["STACK_SIZE"] ={
+        STACK_SIZE =
+        {
             {"SubstanceStackLimit", SubstanceAndProductSizeLimit},
-            {"ProductStackLimit",   SubstanceAndProductSizeLimit}
+            {"ProductStackLimit", SubstanceAndProductSizeLimit}
         },
-        ["VCT_EDITS_SUB"] =
+        VCT_EDITS_SUB =
         {
-            {"PersonalCargo",     SubstanceCargoSizeRestricted},
-            {"Ship",              SubstanceShipInventorySizeRestricted},
-            {"ShipCargo",         SubstanceShipCargoSizeRestricted},
-            {"Freighter",         SubstanceFreighterInventorySizeRestricted},
-            {"FreighterCargo",    SubstanceFreighterCargoSizeRestricted},
-            {"Vehicle",           SubstanceVehicleInventorySizeRestricted},
-            {"Chest",             SubstanceChestAndCapSizeRestricted},
-            {"BaseCapsule",       SubstanceChestAndCapSizeRestricted}
+            {"Default", SubstanceInventorySizeRestricted},
+            {"Personal", SubstanceInventorySizeRestricted}, 
+            {"PersonalCargo", SubstanceCargoSizeRestricted},
+            {"Ship", SubstanceShipInventorySizeRestricted},
+            {"ShipCargo", SubstanceShipCargoSizeRestricted},
+            {"Freighter", SubstanceFreighterInventorySizeRestricted},
+            {"FreighterCargo", SubstanceFreighterCargoSizeRestricted},
+            {"Vehicle", SubstanceVehicleInventorySizeRestricted},
+            {"Chest", SubstanceChestAndCapSizeRestricted},
+            {"BaseCapsule", SubstanceChestAndCapSizeRestricted},
+            {"MaintenanceObject", SubstanceMaintenanceObjectAndUIPopup},
+            {"UIPopup", SubstanceMaintenanceObjectAndUIPopup},
         },
-        ["VCT_EDITS_PROD"] =
+        VCT_EDITS_PROD =
         {
-            {"Ship",              ProductShipInventorySizeRestricted},
-            {"ShipCargo",         ProductShipCargoSizeRestricted},
-            {"Freighter",         ProductFreighterInventorySizeRestricted},
-            {"FreighterCargo",    ProductFreighterCargoSizeRestricted},
-            {"Vehicle",           ProductVehicleInventorySizeRestricted},
-            {"Chest",             ProductChestAndCapSizeRestricted},
-            {"BaseCapsule",       ProductChestAndCapSizeRestricted}
+            {"Default", ProductPersonalInventory},
+            {"Personal", ProductPersonalInventory},
+            {"PersonalCargo", ProductPersonalInventoryCargo},
+            {"Ship", ProductShipInventorySizeRestricted},
+            {"ShipCargo", ProductShipCargoSizeRestricted},
+            {"Freighter", ProductFreighterInventorySizeRestricted},
+            {"FreighterCargo", ProductFreighterCargoSizeRestricted},
+            {"Vehicle", ProductVehicleInventorySizeRestricted},
+            {"Chest", ProductChestAndCapSizeRestricted},
+            {"BaseCapsule", ProductChestAndCapSizeRestricted}, 
+            {"MaintenanceObject", ProductMaintenanceObjectAndUIPopup},
+            {"UIPopup", ProductMaintenanceObjectAndUIPopup},
         }
     }
 }
@@ -121,47 +137,47 @@ Value_Change_Edits =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]        = ModName..".pak",
-    ["MOD_DESCRIPTION"]     = "Rebalance of InvetorySize and Deconstruction cost",
-    ["MOD_AUTHOR"]          = "Jackty89",
-    ["MODIFICATIONS"]       =
+    MOD_FILENAME = ModName,
+    MOD_DESCRIPTION = "Rebalance of InventorySize and Deconstruction cost",
+    MOD_AUTHOR = "Jackty89",
+    MODIFICATIONS =
     {
         {
-            ["MBIN_CHANGE_TABLE"] =
+            MBIN_CHANGE_TABLE =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]    = DIFFICULTYCONFIG,
-                    ["EXML_CHANGE_TABLE"]   =
+                    MBIN_FILE_SOURCE = DIFFICULTYCONFIG,
+                    MXML_CHANGE_TABLE =
                     {
-                        -- high == normal difficulty
+                        -- high == standard option == normal difficulty
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"High", "GcDifficultyInventoryStackSizeOptionData.xml"},
-                            ["VALUE_CHANGE_TABLE"]  = Value_Change_Edits["NORMAL"]["STACK_SIZE"]
+                            SPECIAL_KEY_WORDS = {"High", "GcDifficultyInventoryStackSizeOptionData"},
+                            VALUE_CHANGE_TABLE = Value_Change_Edits.NORMAL.STACK_SIZE
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"High", "GcDifficultyInventoryStackSizeOptionData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes"},
-                            ["VALUE_CHANGE_TABLE"]  = Value_Change_Edits["NORMAL"]["VCT_EDITS_SUB"]
+                            SPECIAL_KEY_WORDS = {"High", "GcDifficultyInventoryStackSizeOptionData"},
+                            PRECEDING_KEY_WORDS = {"MaxSubstanceStackSizes"},
+                            VALUE_CHANGE_TABLE = Value_Change_Edits.NORMAL.VCT_EDITS_SUB
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"High", "GcDifficultyInventoryStackSizeOptionData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes"},
-                            ["VALUE_CHANGE_TABLE"]  = Value_Change_Edits["NORMAL"]["VCT_EDITS_PROD"]
+                            SPECIAL_KEY_WORDS = {"High", "GcDifficultyInventoryStackSizeOptionData"},
+                            PRECEDING_KEY_WORDS = {"MaxProductStackSizes"},
+                            VALUE_CHANGE_TABLE = Value_Change_Edits.NORMAL.VCT_EDITS_PROD
                         },
-                        -- Restricted == Survival/Perma
+                        -- Normal == Restricted == Survival/Perma
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
-                            ["VALUE_CHANGE_TABLE"] = Value_Change_Edits["RESTRICED"]["STACK_SIZE"]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes"},
-                            ["VALUE_CHANGE_TABLE"]  = Value_Change_Edits["RESTRICED"]["VCT_EDITS_SUB"]
+                            SPECIAL_KEY_WORDS = {"Normal", "GcDifficultyInventoryStackSizeOptionData"},
+                            VALUE_CHANGE_TABLE = Value_Change_Edits.RESTRICTED.STACK_SIZE
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes"},
-                            ["VALUE_CHANGE_TABLE"]  = Value_Change_Edits["RESTRICED"]["VCT_EDITS_PROD"]
+                            SPECIAL_KEY_WORDS = {"Normal", "GcDifficultyInventoryStackSizeOptionData"},
+                            PRECEDING_KEY_WORDS = {"MaxSubstanceStackSizes"},
+                            VALUE_CHANGE_TABLE = Value_Change_Edits.RESTRICTED.VCT_EDITS_SUB
+                        },
+                        {
+                            SPECIAL_KEY_WORDS = {"Normal", "GcDifficultyInventoryStackSizeOptionData"},
+                            PRECEDING_KEY_WORDS = {"MaxProductStackSizes"},
+                            VALUE_CHANGE_TABLE = Value_Change_Edits.RESTRICTED.VCT_EDITS_PROD
                         }
                     }
                 }
@@ -170,29 +186,29 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-DifficultyConfigTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+DifficultyConfigTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 function EditStackSizesLow()
     Vct_Stack_Size = Value_Change_Edits[Edit_keys[Choice]]["STACK_SIZE"]
     Vct_Edits_Sub = Value_Change_Edits[Edit_keys[Choice]]["VCT_EDITS_SUB"]
     Vct_Edits_Prod = Value_Change_Edits[Edit_keys[Choice]]["VCT_EDITS_PROD"]
 
-    -- low is the highest difficulty
+    -- low == harsh option == most restrictive setting
     DifficultyConfigTable[#DifficultyConfigTable + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"low", "GcDifficultyInventoryStackSizeOptionData.xml"},
-        ["VALUE_CHANGE_TABLE"]  = Vct_Stack_Size
+        SPECIAL_KEY_WORDS = {"low", "GcDifficultyInventoryStackSizeOptionData"},
+        VALUE_CHANGE_TABLE = Vct_Stack_Size
     }
     DifficultyConfigTable[#DifficultyConfigTable + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"low", "GcDifficultyInventoryStackSizeOptionData.xml"},
-        ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes"},
-        ["VALUE_CHANGE_TABLE"]  = Vct_Edits_Sub
+        SPECIAL_KEY_WORDS = {"low", "GcDifficultyInventoryStackSizeOptionData"},
+        PRECEDING_KEY_WORDS = {"MaxSubstanceStackSizes"},
+        VALUE_CHANGE_TABLE = Vct_Edits_Sub
     }
     DifficultyConfigTable[#DifficultyConfigTable + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"low", "GcDifficultyInventoryStackSizeOptionData.xml"},
-        ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes"},
-        ["VALUE_CHANGE_TABLE"]  = Vct_Edits_Prod
+        SPECIAL_KEY_WORDS = {"low", "GcDifficultyInventoryStackSizeOptionData"},
+        PRECEDING_KEY_WORDS = {"MaxProductStackSizes"},
+        VALUE_CHANGE_TABLE = Vct_Edits_Prod
     }
 end
 

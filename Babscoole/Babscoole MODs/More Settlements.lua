@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "More Settlements.pak",
+["MOD_FILENAME"]    = "More Settlements",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MOD_DESCRIPTION"] = "Allows more settlements to spawn on various planet types",
 ["MODIFICATIONS"]   =
     {
@@ -11,20 +11,25 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ENVIRONMENT\PLANETBUILDINGTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Settlement_Hub", "GcBuildingDefinitionData.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Settlement_Hub",          "GcBuildingDefinitionData"},
+                                {"Settlement_Hub_Builders", "GcBuildingDefinitionData"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Dead",                       "0.2"},  --original 0
-                                {"Low",                        "0.2"},  --original 0.05
-                                {"Mid",                        "0.2"},  --original 0.05
-                                {"Full",                       "0.2"},  --original 0.05
-                                {"Weird",                      "0.2"},  --original 0
-                                {"HalfWeird",                  "0.2"},  --original 0
-                                {"EnabledWhenPlanetHasNoNPCs", "True"}, --original False
+                                {"Dead",                       "0.200000"},  --original 0
+                                {"Low",                        "0.200000"},  --original 0.05
+                                {"Mid",                        "0.200000"},  --original 0.05
+                                {"Full",                       "0.200000"},  --original 0.05
+                                {"Weird",                      "0.200000"},  --original 0
+                                {"HalfWeird",                  "0.200000"},  --original 0
+                                {"Waterworld",                 "0.200000"},  --original 0
+                                {"GasGiant",                   "0.200000"},  --original 0
+                                {"EnabledWhenPlanetHasNoNPCs", "true"}, --original false
                                 {"NumOverridesToGenerate",     "1"},    --original 0
                             }
                         },

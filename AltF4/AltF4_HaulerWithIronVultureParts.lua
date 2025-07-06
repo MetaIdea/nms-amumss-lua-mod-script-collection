@@ -1,8 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"] = "AltF4_HaulerWithIronVultureParts.pak",
+    ["MOD_FILENAME"] = "AltF4_HaulerWithIronVultureParts",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.70",
+    ["MOD_CONTRIBUTORS"] = "lMonk",
+    ["NMS_VERSION"] = "5.52",
     ["MOD_DESCRIPTION"] = "Make the hauler with random Iron Vulture parts can be generated naturally.",
     ["MODIFICATIONS"] = {
         {
@@ -11,21 +12,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\PLAYERDATA\CHARACTERCUSTOMISATIONDESCRIPTORGROUPSDATA.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value", "_COCKPIT_S13XNEVER"},
+                            ["SPECIAL_KEY_WORDS"] = {"GroupID", "DROPS_COCKS13"},
+                            ["PRECEDING_KEY_WORDS"] = {"Descriptors"},
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"Value", "_COCKPIT_S13"},
+                                {"Descriptors", "_COCKPIT_S13"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value", "_ENGINES_S13xNEVER"},
+                            ["SPECIAL_KEY_WORDS"] = {"GroupID", "DROPS_ENGIS13"},
+                            ["PRECEDING_KEY_WORDS"] = {"Descriptors"},
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"Value", "_ENGINES_S13"},
+                                {"Descriptors", "_ENGINES_S13"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value", "_WINGS_S13xNEVER"},
+                            ["SPECIAL_KEY_WORDS"] = {"GroupID", "DROPS_WINGS13"},
+                            ["PRECEDING_KEY_WORDS"] = {"Descriptors"},
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"Value", "_WINGS_S13"},
+                                {"Descriptors", "_WINGS_S13"},
                             }
                         },
                     }

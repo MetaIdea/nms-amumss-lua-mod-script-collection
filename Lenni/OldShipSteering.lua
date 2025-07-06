@@ -1,54 +1,9 @@
-GCINPUTBINDINGS = [[
-        <Property value="GcInputBinding.xml">
-          <Property name="Action" value="GcInputActions.xml">
-            <Property name="InputAction" value="Ship_TurnLeft" />
-          </Property>
-          <Property name="Button" value="TkInputEnum.xml">
-            <Property name="InputButton" value="None" />
-          </Property>
-          <Property name="Axis" value="TkInputAxisEnum.xml">
-            <Property name="InputAxis" value="Invalid" />
-          </Property>
-        </Property>
-        <Property value="GcInputBinding.xml">
-          <Property name="Action" value="GcInputActions.xml">
-            <Property name="InputAction" value="Ship_TurnRight" />
-          </Property>
-          <Property name="Button" value="TkInputEnum.xml">
-            <Property name="InputButton" value="None" />
-          </Property>
-          <Property name="Axis" value="TkInputAxisEnum.xml">
-            <Property name="InputAxis" value="Invalid" />
-          </Property>
-        </Property>
-]]
-
-ACTIONSET = [[
-        <Property value="GcActionSetAction.xml">
-          <Property name="Status" value="GcActionUseType.xml">
-            <Property name="ActionUseType" value="Active" />
-          </Property>
-          <Property name="Action" value="GcInputActions.xml">
-            <Property name="InputAction" value="Ship_TurnLeft" />
-          </Property>
-        </Property>
-        <Property value="GcActionSetAction.xml">
-          <Property name="Status" value="GcActionUseType.xml">
-            <Property name="ActionUseType" value="Active" />
-          </Property>
-          <Property name="Action" value="GcInputActions.xml">
-            <Property name="InputAction" value="Ship_TurnRight" />
-          </Property>
-        </Property>
-]]
-
-
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"]		= "OldShipSteering.pak",
   ["MOD_DESCRIPTION"]	= "Steer left and right",
   ["MOD_AUTHOR"]		= "Lenni",
-  ["NMS_VERSION"]		= "3.99.1",
+  ["NMS_VERSION"]		= "5.50",
   ["MODIFICATIONS"]		=
     {
         {
@@ -58,10 +13,36 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]	=
                     {
                         {
-							["SPECIAL_KEY_WORDS"]	= {"ActionSetType", "ShipControls"},
-							["SECTION_UP_SPECIAL"]	= 1,
-							["PRECEDING_KEY_WORDS"]	= "InputBindings",
-							["ADD"] = GCINPUTBINDINGS,
+							["SKW"]					=	{"InputBindings", "GcInputBinding"},
+							["SEC_COPY"]			=	"KeyboardInput",
+						},
+                        {
+							["SEC_EDIT"]			=	"KeyboardInput",
+							["VCT"]					=
+							{
+								{"InputAction", "Ship_TurnLeft"},
+								{"InputButton", "None"},
+								{"InputAxis", "Invalid"},
+							}
+						},
+                        {
+							["SKW"]					=	{"ActionSetType", "ShipControls"},
+							["SECTION_UP_SPECIAL"]	=	1,
+							["PKW"]					=	"InputBindings",
+							["SEC_PASTE"]			=	"KeyboardInput",
+						},
+                        {
+							["SEC_EDIT"]			=	"KeyboardInput",
+							["VCT"]					=
+							{
+								{"InputAction", "Ship_TurnRight"},
+							}
+						},
+                        {
+							["SKW"]					=	{"ActionSetType", "ShipControls"},
+							["SECTION_UP_SPECIAL"]	=	1,
+							["PKW"]					=	"InputBindings",
+							["SEC_PASTE"]			=	"KeyboardInput",
 						},
 					}
 				},
@@ -70,10 +51,33 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]	=
 					{
                         {
-							["SPECIAL_KEY_WORDS"]	= {"ActionSetType", "ShipControls"},
-							["SECTION_UP_SPECIAL"]	= 1,
-							["PRECEDING_KEY_WORDS"]	= "Actions",
-							["ADD"] = ACTIONSET,
+							["SKW"]			=	{"Actions", "GcActionSetAction"},
+							["SEC_COPY"]	=	"ActionSet",
+						},
+                        {
+							["SEC_EDIT"]	=	"ActionSet",
+							["VCT"]			=
+							{
+								{"ActionUseType", "Active"},
+								{"InputAction", "Ship_TurnLeft"},
+							}
+						},
+                        {
+							["SKW"]			=	{"ExternalId", "ShipControls"},
+							["PKW"]			=	"Actions",
+							["SEC_PASTE"]	=	"ActionSet",
+						},
+                        {
+							["SEC_EDIT"]	=	"ActionSet",
+							["VCT"]			=
+							{
+								{"InputAction", "Ship_TurnRight"},
+							}
+						},
+                        {
+							["SKW"]			=	{"ExternalId", "ShipControls"},
+							["PKW"]			=	"Actions",
+							["SEC_PASTE"]	=	"ActionSet",
 						},
 					},
 				},
@@ -82,15 +86,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]	=
 					{
                         {
-							["PRECEDING_KEY_WORDS"]	= "Ship_TurnLeft",
-							["VALUE_CHANGE_TABLE"]	=
+							["PKW"]	= "Ship_TurnLeft",
+							["VCT"]	=
 								{
 									{"LocTag", "SHIP_TURNLEFT"}
 								},
 						},
                         {
-							["PRECEDING_KEY_WORDS"]	= "Ship_TurnRight",
-							["VALUE_CHANGE_TABLE"]	=
+							["PKW"]	= "Ship_TurnRight",
+							["VCT"]	=
 								{
 									{"LocTag", "SHIP_TURNRIGHT"}
 								},

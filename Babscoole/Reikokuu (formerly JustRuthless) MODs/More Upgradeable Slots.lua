@@ -99,10 +99,10 @@ VehicleMaxUpgradeChanges =
 -----------------------------------------------------
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "More Upgradeable Slots.pak",
+["MOD_FILENAME"]    = "More Upgradeable Slots",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds more upgradeable inventory, technology, and cargo slots to exocrafts, multitools, ships, and freighters",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -110,10 +110,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSlots",     120},
@@ -123,7 +123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry"},
                             ["PRECEDING_KEY_WORDS"] = {"Bounds"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -140,7 +140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-local InventoryTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local InventoryTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 -- Ship Max Upgrade Table --
 for i = 1, #ShipMaxUpgradeChanges do

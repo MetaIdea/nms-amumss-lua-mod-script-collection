@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"] = "AltF4_MaxStandingTechDiscount.pak",
+    ["MOD_FILENAME"] = "AltF4_MaxStandingTechDiscount",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.62",
+    ["NMS_VERSION"] = "5.51",
     ["MOD_DESCRIPTION"] = "Max Standing Tech Discount",
     ["MODIFICATIONS"] = {
         {

@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"] = "No Filters - Less UI.pak",
+    ["MOD_FILENAME"] = "NoFiltersAndLessUI.pak",
     ["MOD_DESCRIPTION"] = "Modifies the binoculars appearance",
     ["MOD_AUTHOR"] = "Methatronc",
     ["MODIFICATIONS"] =
@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "LANGUAGE/NMS_LOC5_ENGLISH.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "UI_SURVEY_ENABLE"},
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "LANGUAGE/NMS_LOC5_FRENCH.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "UI_SURVEY_ENABLE"},
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/EFFECTS/SCREENFILTERS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = "Binoculars",
@@ -57,33 +57,32 @@ NMS_MOD_DEFINITION_CONTAINER =
             }
         },
         {
-            ["PAK_FILE_SOURCE"] = "NMSARC.515F1D3.pak",
             ["MBIN_CHANGE_TABLE"] =
             { 
                 {
                     ["MBIN_FILE_SOURCE"] = "UI/HUD/BINOCULARS/HUDBINOCSCENTRE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID", "XHAIR_DISTANCE"},
                             ["PRECEDING_KEY_WORDS"] = "",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsHidden", "True"}
+                                {"Is Hidden", "True"}
                             }
                         }
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "UI/HUD/BINOCULARS/HUDBINOCSSURVEYMIDDLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID", "SURVEY_STATUS"},
                             ["PRECEDING_KEY_WORDS"] = "",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsHidden", "True"}
+                                {"Is Hidden", "True"}
                             }
                         },
                         {
@@ -91,7 +90,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = "",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsHidden", "True"}
+                                {"Is Hidden", "True"}
                             }
                         },
                         {
@@ -99,7 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = "",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsHidden", "True"}
+                                {"Is Hidden", "True"}
                             }
                         }
                     }

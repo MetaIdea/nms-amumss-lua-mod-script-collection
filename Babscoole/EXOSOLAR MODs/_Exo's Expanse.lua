@@ -969,9 +969,9 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Exo's Expanse.pak",
+["MOD_FILENAME"]  = "_Exo's Expanse",
 ["MOD_AUTHOR"]    = "Exosolar & Babscoole",
-["NMS_VERSION"]   = "5.29",
+["NMS_VERSION"]   = "5.73",
 ["MODIFICATIONS"] =
     {
         {
@@ -986,80 +986,80 @@ NMS_MOD_DEFINITION_CONTAINER =
 function GetColours(R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,R6,G6,B6,A6,R7,G7,B7,A7,R8,G8,B8,A8,R9,G9,B9,A9,R10,G10,B10,A10,R11,G11,B11,A11,R12,G12,B12,A12,R13,G13,B13,A13)
     return
 [[
-    <Property value="GcSolarSystemSkyColourData.xml">
-      <Property name="TopColour" value="Colour.xml">
+    <Property name="Settings" value="GcSolarSystemSkyColourData">
+      <Property name="TopColour">
         <Property name="R" value="]].. R1 ..[[" />
         <Property name="G" value="]].. G1 ..[[" />
         <Property name="B" value="]].. B1 ..[[" />
         <Property name="A" value="]].. A1 ..[[" />
       </Property>
-      <Property name="MidColour" value="Colour.xml">
+      <Property name="MidColour">
         <Property name="R" value="]].. R2 ..[[" />
         <Property name="G" value="]].. G2 ..[[" />
         <Property name="B" value="]].. B2 ..[[" />
         <Property name="A" value="]].. A2 ..[[" />
       </Property>
-      <Property name="BottomColour" value="Colour.xml">
+      <Property name="BottomColour">
         <Property name="R" value="]].. R3 ..[[" />
         <Property name="G" value="]].. G3 ..[[" />
         <Property name="B" value="]].. B3 ..[[" />
         <Property name="A" value="]].. A3 ..[[" />
       </Property>
-      <Property name="TopColourPlanet" value="Colour.xml">
+      <Property name="TopColourPlanet">
         <Property name="R" value="]].. R4 ..[[" />
         <Property name="G" value="]].. G4 ..[[" />
         <Property name="B" value="]].. B4 ..[[" />
         <Property name="A" value="]].. A4 ..[[" />
       </Property>
-      <Property name="MidColourPlanet" value="Colour.xml">
+      <Property name="MidColourPlanet">
         <Property name="R" value="]].. R5 ..[[" />
         <Property name="G" value="]].. G5 ..[[" />
         <Property name="B" value="]].. B5 ..[[" />
         <Property name="A" value="]].. A5 ..[[" />
       </Property>
-      <Property name="BottomColourPlanet" value="Colour.xml">
+      <Property name="BottomColourPlanet">
         <Property name="R" value="]].. R6 ..[[" />
         <Property name="G" value="]].. G6 ..[[" />
         <Property name="B" value="]].. B6 ..[[" />
         <Property name="A" value="]].. A6 ..[[" />
       </Property>
-      <Property name="CloudColour" value="Colour.xml">
+      <Property name="CloudColour">
         <Property name="R" value="]].. R7 ..[[" />
         <Property name="G" value="]].. G7 ..[[" />
         <Property name="B" value="]].. B7 ..[[" />
         <Property name="A" value="]].. A7 ..[[" />
       </Property>
-      <Property name="LightColour" value="Colour.xml">
+      <Property name="LightColour">
         <Property name="R" value="]].. R8 ..[[" />
         <Property name="G" value="]].. G8 ..[[" />
         <Property name="B" value="]].. B8 ..[[" />
         <Property name="A" value="]].. A8 ..[[" />
       </Property>
-      <Property name="NebulaColour1" value="Colour.xml">
+      <Property name="NebulaColour1">
         <Property name="R" value="]].. R9 ..[[" />
         <Property name="G" value="]].. G9 ..[[" />
         <Property name="B" value="]].. B9 ..[[" />
         <Property name="A" value="]].. A9 ..[[" />
       </Property>
-      <Property name="NebulaColour2" value="Colour.xml">
+      <Property name="NebulaColour2">
         <Property name="R" value="]].. R10 ..[[" />
         <Property name="G" value="]].. G10 ..[[" />
         <Property name="B" value="]].. B10 ..[[" />
         <Property name="A" value="]].. A10 ..[[" />
       </Property>
-      <Property name="NebulaColour3" value="Colour.xml">
+      <Property name="NebulaColour3">
         <Property name="R" value="]].. R11 ..[[" />
         <Property name="G" value="]].. G11 ..[[" />
         <Property name="B" value="]].. B11 ..[[" />
         <Property name="A" value="]].. A11 ..[[" />
       </Property>
-      <Property name="FogColour" value="Colour.xml">
+      <Property name="FogColour">
         <Property name="R" value="]].. R12 ..[[" />
         <Property name="G" value="]].. G12 ..[[" />
         <Property name="B" value="]].. B12 ..[[" />
         <Property name="A" value="]].. A12 ..[[" />
       </Property>
-      <Property name="FogColour2" value="Colour.xml">
+      <Property name="FogColour2">
         <Property name="R" value="]].. R13 ..[[" />
         <Property name="G" value="]].. G13 ..[[" />
         <Property name="B" value="]].. B13 ..[[" />
@@ -1141,10 +1141,10 @@ for i = 1, #DataTable do
             "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACESKYCOLOURS.MBIN",
             "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACERARESKYCOLOURS.MBIN",
         },
-        ["EXML_CHANGE_TABLE"] =
+        ["MXML_CHANGE_TABLE"] =
         {
             {
-                ["PRECEDING_KEY_WORDS"] = {"GcSolarSystemSkyColourData.xml"},
+                ["SPECIAL_KEY_WORDS"] = {"Settings", "GcSolarSystemSkyColourData"},
                 ["REPLACE_TYPE"] = "ALL",
                 ["REMOVE"] = "SECTION"
             },

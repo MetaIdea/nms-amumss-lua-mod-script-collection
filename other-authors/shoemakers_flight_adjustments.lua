@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]    =   "shoemakers Flight Adjustments.pak",
+    ["MOD_FILENAME"]    =   "shoemakers-flight-adjustments.pak",
     ["MOD_AUTHOR"]      =   "shoemakerjones",
     ["LUA_AUTHOR"]      =   "shoemakerjones",
-    ["NMS_VERSION"]     =   "4.x",
-    ["MOD_DESCRIPTION"] =   "v2.3 - Makes significant changes to they way flight is handled, both in space as well as in planetary athmosphere.",
+    ["NMS_VERSION"]     =   "5.51",
+    ["MOD_DESCRIPTION"] =   "v2.31 - Updated for Worlds 2.0.",
     ["MODIFICATIONS"]   = 
     {
         {
@@ -40,13 +40,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxSpeed", "720"},  
                                 {"MinSpeed", "1"},  
                                 {"BoostThrustForce", "1000"},  
-                                {"BoostMaxSpeed", "2400"},  
-                                {"ReverseBrake", "0.6"},  
-                                {"OverSpeedBrake", "2"},  
-								{"TurnStrength", "2.4"},  
-								{"TurnBrakeMin", "0.5"},  
-								{"TurnBrakeMax", "0.5"},
+                                {"BoostMaxSpeed", "2400"}, 
                                 {"BoostingTurnDamp", "1"},   
+                                {"ReverseBrake", "0.6"},  
+                                {"OverSpeedBrake", "2"},   
+								{"TurnBrakeMin", "0.5"},  
+								{"TurnBrakeMax", "0.5"}, 
+								{"TurnStrength", "2.4"}, 
                             }
                         },
                         {
@@ -55,17 +55,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"]	= 
                             {
-								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this
                                 {"MaxSpeed", "500"},  
                                 {"MinSpeed", "1"}, 
                                 {"BoostThrustForce", "200"},  
-                                {"BoostMaxSpeed", "1200"},  
+                                {"BoostMaxSpeed", "1200"},
+                                {"BoostingTurnDamp", "0.50"},  
                                 {"ReverseBrake", "1"},  
-                                {"OverSpeedBrake", "2"},  
-								{"TurnStrength", "2.4"},  
+                                {"OverSpeedBrake", "2"},{"LowSpeedTurnDamper", "0.01"}, -- Do not change this  
 								{"TurnBrakeMin", "1"},  
-								{"TurnBrakeMax", "1.5"},
-                                {"BoostingTurnDamp", "0.50"}, 
+								{"TurnBrakeMax", "1.5"},  
+								{"TurnStrength", "2.4"}, 
                             }
                         },
                         {
@@ -74,17 +73,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"]	= 
                             {
-								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this
                                 {"MaxSpeed", "160"},  
                                 {"MinSpeed", "1"},  
                                 {"BoostThrustForce", "1000"},  
-                                {"BoostMaxSpeed", "2400"},  
+                                {"BoostMaxSpeed", "2400"},
+                                {"BoostingTurnDamp", "1"},   
                                 {"ReverseBrake", "0.6"},  
-                                {"OverSpeedBrake", "2"}, 
-								{"TurnStrength", "3"},  
+                                {"OverSpeedBrake", "2"},
+								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this  
 								{"TurnBrakeMin", "0.5"},  
-								{"TurnBrakeMax", "2"},
-                                {"BoostingTurnDamp", "1"},  
+								{"TurnBrakeMax", "2"}, 
+								{"TurnStrength", "3"}, 
                             }
                         },
                         {
@@ -93,23 +92,23 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"]	= 
                             {
-								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this
                                 {"MaxSpeed", "160"},  
                                 {"MinSpeed", "1"}, 
                                 {"BoostThrustForce", "200"},
-                                {"BoostMaxSpeed", "1200"},  
-                                {"ReverseBrake", "0.6"},  
-                                {"OverSpeedBrake", "2"},  
-								{"TurnStrength", "3"},  
-								{"TurnBrakeMin", "0.5"},  
-								{"TurnBrakeMax", "2"},
+                                {"BoostMaxSpeed", "1200"}, 
                                 {"BoostingTurnDamp", "1"},  
+                                {"ReverseBrake", "0.6"},  
+                                {"OverSpeedBrake", "2"}, 
+								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this 
+								{"TurnBrakeMin", "0.5"},  
+								{"TurnBrakeMax", "2"}, 
+								{"TurnStrength", "3"},  
                             }
                         }
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

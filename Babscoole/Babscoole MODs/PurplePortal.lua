@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "PurplePortal.pak",
+["MOD_FILENAME"]    = "PurplePortal",
 ["MOD_AUTHOR"]      = "FriendlyFire & Babscoole",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MOD_DESCRIPTION"] = "Changes portal activation lighting effects to purple",
 ["MODIFICATIONS"]   =
     {
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "R_NUB_UNLOCKED"},
@@ -26,12 +26,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "ADD_REWARDT",
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SECTION_ACTIVE"] = {2,3},
+                            ["SPECIAL_KEY_WORDS"] = {"List", "GcRewardTableItem"},
+                            ["SECTION_ACTIVE"] = {1,2},
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
+                            ["PRECEDING_KEY_WORDS"] = {"SpecialRewardTable"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "ADD_REWARDT",
                         },
@@ -39,23 +39,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value", "GIVE_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rewards", "GIVE_HYPERDRIVE"},
                             ["SEC_SAVE_TO"] = "ADD_ALIENPUZZLE_REWARD",
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_ALIENPUZZLE_REWARD",
+                            ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+                            ["REMOVE"] = "HBOS"
                         },
                         {
                             ["SEC_EDIT"] = "ADD_ALIENPUZZLE_REWARD",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "R_PURPLEPORTAL"},
+                                {"Rewards", "R_PURPLEPORTAL"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value", "ADVANCE_PORTAL"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rewards", "ADVANCE_PORTAL"},
                             ["REPLACE_TYPE"] = "ALL",
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "ADD_ALIENPUZZLE_REWARD"
                         },
                     }

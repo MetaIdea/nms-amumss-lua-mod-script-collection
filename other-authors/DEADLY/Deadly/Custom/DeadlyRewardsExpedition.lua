@@ -1,5 +1,5 @@
-RELIC_CHANCE_HIGH = 20
-RELIC_CHANCE_LOW = 10
+RELIC_CHANCE_HIGH = 20.0
+RELIC_CHANCE_LOW = 10.0
 
 UNITS_MIN_MULTI = 1
 UNITS_MAX_MULTI = 5
@@ -17,14 +17,11 @@ SUBSTANCE_50_MAX = 50
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyRewardsExpedition.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.46",
+    ["NMS_VERSION"]   = "5.63",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                --
-                -- METADATA/REALITY/TABLES/EXPEDITIONREWARDTABLE.MBIN
-                --
-                {
+                { -- METADATA/REALITY/TABLES/EXPEDITIONREWARDTABLE.MBIN
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/EXPEDITIONREWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
@@ -66,9 +63,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "ID", "EXP_CURIO1" },
                                 { "ID", "EXP_CURIO2" },
                             },
-                            ["SECTION_UP"]          = 1,
+                            ["SECTION_UP"]          = 2,
                             ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_MATCH"]         = "50",
+                            ["VALUE_MATCH"]         = "50.0",
                             ["VALUE_MATCH_OPTIONS"] = ">",
                             ["VALUE_CHANGE_TABLE"]  = {
                                 { "PercentageChance", RELIC_CHANCE_HIGH },
@@ -83,9 +80,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "ID", "EXP_CURIO1" },
                                 { "ID", "EXP_CURIO2" },
                             },
-                            ["SECTION_UP"]          = 1,
+                            ["SECTION_UP"]          = 2,
                             ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_MATCH"]         = "50",
+                            ["VALUE_MATCH"]         = "50.0",
                             ["VALUE_MATCH_OPTIONS"] = "<=",
                             ["VALUE_CHANGE_TABLE"]  = {
                                 { "PercentageChance", RELIC_CHANCE_LOW },

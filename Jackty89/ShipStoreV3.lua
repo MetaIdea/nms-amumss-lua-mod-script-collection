@@ -1,9 +1,9 @@
-Total_Seeds_Per_Class = 10000
+Total_Seeds_Per_Class = 10
 
 Input_Total_Seeds_Per_Class = {Total_Seeds_Per_Class,
 [[
     How many seeds do you wish to generate per Class-Type?
-    Default = 10000  Current = >> ]] .. Total_Seeds_Per_Class .. [[ <<
+    Default = >> ]] .. Total_Seeds_Per_Class .. [[ <<
 ]]}
 
 Languages =
@@ -27,79 +27,73 @@ Languages =
     ["US"] = "USEnglish"
 }
 
-Custom_Language_Desccription_Strings =
+local Language_Data =
 {
+    [Languages.EN] =
     {
-        ["ID"] = "CL_BFREIGH",
-        ["LANGUAGES"] =
+        CL_BFREIGH =
         {
-            {["LANGUAGE"] = Languages["EN"], ["NAME"] = "H.G. Corp. Freighter", ["DESCRIPTION"] = "H.G. Corp. Spacecraft Dynamics Freighter"}
-        }
-    },
-    {
-        ["ID"] = "CL_BHAUL",
-        ["LANGUAGES"] =
+            NAME = 'H.G. Corp. Freighter',
+            DESCRIPTION = 'H.G. Corp. Spacecraft Dynamics Freighter',
+            SUBTITLE = 'H.G. Corp. Freighter'
+        },
+        CL_BHAUL =
         {
-            {["LANGUAGE"] = Languages["EN"], ["NAME"] = "H.G. Corp. Hauler", ["DESCRIPTION"] = "H.G. Corp. Spacecraft Dynamics Hauler"}
-        }
-    },
-    {
-        ["ID"] = "CL_BEXPLO",
-        ["LANGUAGES"] =
+            NAME = 'H.G. Corp. Hauler',
+            DESCRIPTION = 'H.G. Corp. Spacecraft Dynamics Hauler',
+            SUBTITLE = 'H.G. Corp. Hauler'
+        },
+        CL_BEXPLO =
         {
-            {["LANGUAGE"] = Languages["EN"], ["NAME"] = "H.G. Corp. Explorer", ["DESCRIPTION"] = "H.G. Corp. Spacecraft Dynamics Explorer"}
-        }
-    },
-    {
-        ["ID"] = "CL_BSOLAR",
-        ["LANGUAGES"] =
+            NAME = 'H.G. Corp. Explorer',
+            DESCRIPTION = 'H.G. Corp. Spacecraft Dynamics Explorer',
+            SUBTITLE = 'H.G. Corp. Explorer'
+        },
+        CL_BSOLAR =
         {
-            {["LANGUAGE"] = Languages["EN"], ["NAME"] = "H.G. Corp. Solar", ["DESCRIPTION"] = "H.G. Corp. Spacecraft Dynamics Solar"}
-        }
-    },
-    {
-        ["ID"] = "CL_BFIGHT",
-        ["LANGUAGES"] =
+            NAME = 'H.G. Corp. Solar',
+            DESCRIPTION = 'H.G. Corp. Spacecraft Dynamics Solar',
+            SUBTITLE = 'H.G. Corp. Solar'
+        },
+        CL_BFIGHT =
         {
-            {["LANGUAGE"] = Languages["EN"], ["NAME"] = "H.G. Corp. Fighter", ["DESCRIPTION"] = "H.G. Corp. Spacecraft Dynamics Fighter"}
-        }
-    },
-    {
-        ["ID"] = "CL_BSHUT",
-        ["LANGUAGES"] =
+            NAME = 'H.G. Corp. Fighter',
+            DESCRIPTION = 'H.G. Corp. Spacecraft Dynamics Fighter',
+            SUBTITLE = 'H.G. Corp. Fighter'
+        },
+        CL_BSHUT =
         {
-            {["LANGUAGE"] = Languages["EN"], ["NAME"] = "H.G. Corp. Shuttle", ["DESCRIPTION"] = "H.G. Corp. Spacecraft Dynamics Shuttle"}
-        }
-    },
-    {
-        ["ID"] = "CL_BROYAL",
-        ["LANGUAGES"] =
+            NAME = 'H.G. Corp. Shuttle',
+            DESCRIPTION = 'H.G. Corp. Spacecraft Dynamics Shuttle',
+            SUBTITLE = 'H.G. Corp. Shuttle'
+        },
+        CL_BROYAL =
         {
-            {["LANGUAGE"] = Languages["EN"], ["NAME"] = "H.G. Corp. Exotic", ["DESCRIPTION"] = "H.G. Corp. Spacecraft Dynamics Exotic"}
-        }
-    },
-    {
-        ["ID"] = "CL_BALIEN",
-        ["LANGUAGES"] =
+            NAME = 'H.G. Corp. Exotic',
+            DESCRIPTION = 'H.G. Corp. Spacecraft Dynamics Exotic',
+            SUBTITLE = 'H.G. Corp. Exotic'
+        },
+        CL_BALIEN =
         {
-            {["LANGUAGE"] = Languages["EN"], ["NAME"] = "H.G. Corp. Bioship", ["DESCRIPTION"] = "H.G. Corp. Spacecraft Dynamics Bioship"}
-        }
-    },
-    {
-        ["ID"] = "CL_BROBOT",
-        ["LANGUAGES"] =
+            NAME = 'H.G. Corp. Bioship',
+            DESCRIPTION = 'H.G. Corp. Spacecraft Dynamics Bioship',
+            SUBTITLE = 'H.G. Corp. Bioship'
+        },
+        CL_BROBOT =
         {
-            {["LANGUAGE"] = Languages["EN"], ["NAME"] = "H.G. Corp. Sentinel Ship", ["DESCRIPTION"] = "H.G. Corp. Spacecraft Dynamics Sentinel Ship"}
-        }
-    },
-    {
-        ["ID"] = "CL_STORE",
-        ["LANGUAGES"] =
+            NAME = 'H.G. Corp. Sentinel Ship',
+            DESCRIPTION = 'H.G. Corp. Spacecraft Dynamics Sentinel Ship',
+            SUBTITLE = 'H.G. Corp. Sentinel Ship'
+        },
+        CL_STORE =
         {
-            {["LANGUAGE"] = Languages["EN"], ["NAME"] = "H.G. Corp. Spacecraft Dynamics", ["DESCRIPTION"] = "Spacecraft constucted by H.G. Corp."}
-        }
+            NAME = 'H.G. Corp. Spacecraft Dynamics',
+            DESCRIPTION = 'Spacecraft constucted by H.G. Corp.',
+            SUBTITLE = 'H.G. Corp. Spacecraft Dynamics'
+        },
     }
 }
+
 
 Classes = {"C", "B", "A", "S"}
 ClassesS = {"S"}
@@ -125,7 +119,7 @@ Ship_Types =
     ["Sail"] = "Sail",
     ["Alien"] = "Alien",
     ["Robot"] = "Robot",
-    ["Freighter"] = "Freighter"
+    -- ["Freighter"] = "Freighter"
 }
 
 for Key, _Value in pairs(Ship_Types) do
@@ -188,15 +182,12 @@ Price_Multiplier = GUIF(Input_Price_Multiplier, 10)
 ----------------------------------------------------------------------------------------------
 ModName = "ShipStore"
 Author = "jackty89"
-CustomLanguageTag = "ShipStore"
+Custom_Language_Tag = "ShipStore"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"] = ModName..".pak",
+    ["MOD_FILENAME"] = ModName,
     ["MOD_AUTHOR"] = Author,
-    ["ADD_FILES"] =
-    {
-    },
     ["MODIFICATIONS"] =
     {
         {
@@ -222,28 +213,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/DEFAULTREALITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                    }
+                    ["EXML_CHANGE_TABLE"] = {}
                 },
-                -- IF i want to use the QS store
-                -- {
-                --     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/PURCHASEABLESPECIALS.MBIN",
-                --     ["EXML_CHANGE_TABLE"] =
-                --     {
-                --     }
-                -- },
+                {
+                    MBIN_FILE_SOURCE = 'LANGUAGE/NMS_LOC8_ENGLISH.MBIN',
+                    EXML_CHANGE_TABLE = {}
+                },
                 {
                     ["MBIN_FILE_SOURCE"] = "GCDEBUGOPTIONS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"LocTableList"},
-                            ["ADD"] =
+                            PRECEDING_KEY_WORDS = {'LocTableList'},
+                            ADD =
                             [[
-                                <Property value="NMSString0x20.xml">
-                                    <Property name="Value" value="NMS_]]..CustomLanguageTag..[[" />
-                                </Property>
+                                <Property name="LocTableList" value="NMS_]]..Custom_Language_Tag..[[" />
                             ]]
                         }
                     }
@@ -258,10 +242,7 @@ local Changes_To_Product_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1
 local Changes_To_Consumable_Item_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 local Changes_To_Reward_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
 local Changes_To_Default_Reality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
--- IF i want to use the QS store
--- local Changes_To_Purchasable_Specials = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
-
-local AddCustomLanguageFiles = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
+local Changes_To_Language = NMS_MOD_DEFINITION_CONTAINER['MODIFICATIONS'][1]['MBIN_CHANGE_TABLE'][5]['EXML_CHANGE_TABLE']
 
 --EDITED
 function Create_New_Product(New_Product_ID, New_Product_Name, New_Product_Name_Lc, New_Product_Subtitle, New_Product_Description, New_Product_Stack_Size, New_Product_Value, New_Product_Icon)
@@ -282,9 +263,6 @@ function Create_New_Product(New_Product_ID, New_Product_Name, New_Product_Name_L
             {"StackMultiplier", New_Product_Stack_Size},
             {"Subtitle", New_Product_Subtitle},
             {"Description", New_Product_Description},
-
-
-            -- IF i want to use the QS store
             -- {"GiveRewardOnSpecialPurchase", "R_"..New_Product_ID},
             -- {"Consumable", "False"}
         }
@@ -292,7 +270,7 @@ function Create_New_Product(New_Product_ID, New_Product_Name, New_Product_Name_L
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         ["SEC_EDIT"] = New_Product_ID.."_PRODSEC",
-        ["SPECIAL_KEY_WORDS"] = {"Cost", "GcItemPriceModifiers.xml"},
+        ["SPECIAL_KEY_WORDS"] = {"Cost", "GcItemPriceModifiers"},
         ["VALUE_CHANGE_TABLE"] =
         {
             {"SpaceStationMarkup", "0"},
@@ -303,28 +281,10 @@ function Create_New_Product(New_Product_ID, New_Product_Name, New_Product_Name_L
             {"BuyMarkupMod", "0"}
         }
     }
-    -- Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
-    -- {
-    --     ["SEC_EDIT"] = New_Product_ID.."_PRODSEC",
-    --     ["SPECIAL_KEY_WORDS"] = {"Subtitle", "VariableSizeString.xml"},
-    --     ["VALUE_CHANGE_TABLE"] =
-    --     {
-    --         {"Value", New_Product_Subtitle},
-    --     }
-    -- }
-    -- Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
-    -- {
-    --     ["SEC_EDIT"] = New_Product_ID.."_PRODSEC",
-    --     ["SPECIAL_KEY_WORDS"] = {"Description", "VariableSizeString.xml"},
-    --     ["VALUE_CHANGE_TABLE"] =
-    --     {
-    --         {"Value", New_Product_Description},
-    --     }
-    -- }
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         ["SEC_EDIT"] = New_Product_ID.."_PRODSEC",
-        ["SPECIAL_KEY_WORDS"] = {"Icon", "TkTextureResource.xml"},
+        ["SPECIAL_KEY_WORDS"] = {"Icon", "TkTextureResource"},
         ["VALUE_CHANGE_TABLE"] =
         {
             {"Filename", New_Product_Icon},
@@ -333,22 +293,12 @@ function Create_New_Product(New_Product_ID, New_Product_Name, New_Product_Name_L
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         ["SEC_EDIT"] = New_Product_ID.."_PRODSEC",
-        ["SPECIAL_KEY_WORDS"] = {"HeroIcon", "TkTextureResource.xml"},
+        ["SPECIAL_KEY_WORDS"] = {"HeroIcon", "TkTextureResource"},
         ["VALUE_CHANGE_TABLE"] =
         {
             {"Filename", New_Product_Icon},
         }
     }
-    -- IF i want to use the QS store
-    -- Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
-    -- {
-    --     ["SEC_EDIT"] = New_Product_ID.."_PRODSEC",
-    --     ["SPECIAL_KEY_WORDS"] = {"TradeCategory", "GcTradeCategory.xml"},
-    --     ["VALUE_CHANGE_TABLE"] =
-    --     {
-    --         {"TradeCategory", "SpecialShop"},
-    --     }
-    -- }
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         ["SEC_EDIT"] = "PRODUCT_SEC_MASTER",
@@ -390,7 +340,7 @@ function Create_Reward_Table_Entry_Template()
     Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
     {
         ["SEC_EDIT"] = "REWARD_ENTRY_SEC",
-        ["PRECEDING_KEY_WORDS"] = { "GcRewardTableItem.xml"},
+        SPECIAL_KEY_WORDS = {"List", "GcRewardTableItem"},
         ["REPLACE_TYPE"] = "ALL",
         ["REMOVE"] = "SECTION"
     }
@@ -427,18 +377,18 @@ function Create_Reward_Table_Entry(Reward_ID, Reward_Choice, Reward_Entries)
     }
 end
 
-function Create_Ship_Techonlogy(Technology_Id, Amount, Max_Amount)
+function Create_Ship_Technology(Technology_Id, Amount, Max_Amount)
     return [[
-        <Property value="GcInventoryElement.xml">
-            <Property name="Type" value="GcInventoryType.xml">
+        <Property name="Slots" value="GcInventoryElement">
+            <Property name="Type" value="GcInventoryType">
                 <Property name="InventoryType" value="Technology" />
             </Property>
             <Property name="Id" value="]]..Technology_Id..[[" />
             <Property name="Amount" value="]]..Amount..[[" />
             <Property name="MaxAmount" value="]]..Max_Amount..[[" />
-            <Property name="DamageFactor" value="0" />
-            <Property name="FullyInstalled" value="True" />
-            <Property name="Index" value="GcInventoryIndex.xml">
+            <Property name="DamageFactor" value="0.000000" />
+            <Property name="FullyInstalled" value="true" />
+            <Property name="Index" value="GcInventoryIndex">
                 <Property name="X" value="-1" />
                 <Property name="Y" value="-1" />
             </Property>
@@ -504,151 +454,134 @@ function Get_Ship_Technologies(Ship_Type)
     end
 
     for j = 1, #Technology_Data_For_Type do
-        table.insert(Ship_Technologies, Create_Ship_Techonlogy(Technology_Data_For_Type[j]["TECH"], Technology_Data_For_Type[j]["AMOUNT"], Technology_Data_For_Type[j]["MAXAMOUNT"]))
+        table.insert(Ship_Technologies, Create_Ship_Technology(Technology_Data_For_Type[j]["TECH"], Technology_Data_For_Type[j]["AMOUNT"], Technology_Data_For_Type[j]["MAXAMOUNT"]))
     end
 
     return Ship_Technologies
 end
 
 function Create_Shop_Entry(Entry_ID)
+    -- Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
+    -- {
+    --     ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "SpaceStation", "AlwaysPresentProducts", "NMSString0x10.xml"},
+    --     ["SEC_SAVE_TO"] = "SHOP_ENTRY"
+    -- }
+    -- Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
+    -- {
+    --     ["SEC_EDIT"] = "SHOP_ENTRY",
+    --     ["VALUE_CHANGE_TABLE"] =
+    --     {
+    --         {"Value", Entry_ID}
+    --     }
+    -- }
+    -- Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
+    -- {
+    --     ["SEC_EDIT"] = "SHOP_MASTER_SEC",
+    --     ["ADD_OPTION"] = "ADDafterSECTION",
+    --     ["SEC_ADD_NAMED"] = "SHOP_ENTRY"
+    -- }
     Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
     {
-        ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "SpaceStation", "AlwaysPresentProducts", "NMSString0x10.xml"},
-        ["SEC_SAVE_TO"] = "SHOP_ENTRY"
-    }
-    Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
-    {
-        ["SEC_EDIT"] = "SHOP_ENTRY",
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {"Value", Entry_ID}
-        }
-    }
-    Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
-    {
-        ["SEC_EDIT"] = "SHOP_MASTER_SEC",
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["SEC_ADD_NAMED"] = "SHOP_ENTRY"
+        SEC_EDIT = 'SHOP_MASTER_SEC',
+        ADD = [[<Property name="AlwaysPresentProducts" value="]]..Entry_ID..[[" />]]
     }
 end
 
--- IF i want to use the QS store
--- function Create_Specials_Listing(Entry_ID)
---     Changes_To_Purchasable_Specials[#Changes_To_Purchasable_Specials + 1] =
---     {
+-- PATCH 5.5 and UP this has dissapeared in Rewrod table
+--Bases stats needed to assign Alien/robot property to specific ships
+-- function Create_Ship_Base_Stats(ship_type)
+--     if ship_type == "Alien" then
+--         return [[
+--             <Property value="GcInventoryBaseStatEntry.xml">
+--                 <Property name="BaseStatID" value="ALIEN_SHIP" />
+--                 <Property name="Value" value="1" />
+--             </Property>
+--         ]]
+--     end
+--     if ship_type == "Robot" then
+--         return [[
+--             <Property value="GcInventoryBaseStatEntry.xml">
+--                 <Property name="BaseStatID" value="ROBOT_SHIP" />
+--                 <Property name="Value" value="1" />
+--             </Property>
+--         ]]
+--     end
 
---         ["SPECIAL_KEY_WORDS"] = {"ID", "DECAL_BLUESYS"},
---         ["SEC_SAVE_TO"] = "SPECIAL_LISTING"
---     }
---     Changes_To_Purchasable_Specials[#Changes_To_Purchasable_Specials + 1] =
---     {
---         ["SEC_EDIT"] = "SPECIAL_LISTING",
---         ["VALUE_CHANGE_TABLE"] =
---         {
---             {"ID", Entry_ID},
---             {"ShopNumber", "23"},
---             {"MissionTier", "1"},
---             {"IsConsumable", "False"}
---         }
---     }
---     Changes_To_Purchasable_Specials[#Changes_To_Purchasable_Specials + 1] =
---     {
---         ["SEC_EDIT"] = "SPECIAL_MASTER_SEC",
---         ["SPECIAL_KEY_WORDS"] = {"ID", "DECAL_CREFLY"},
---         ["ADD_OPTION"] = "ADDafterSECTION",
---         ["SEC_ADD_NAMED"] = "SPECIAL_LISTING"
---     }
+--     return [[]]
 -- end
 
---UNCHANGED
---Bases stats needed to assign Alien/robot property to specific ships
-function Create_Ship_Base_Stats(ship_type)
-    if ship_type == "Alien" then
-        return [[
-            <Property value="GcInventoryBaseStatEntry.xml">
-                <Property name="BaseStatID" value="ALIEN_SHIP" />
-                <Property name="Value" value="1" />
-            </Property>
-        ]]
-    end
-    if ship_type == "Robot" then
-        return [[
-            <Property value="GcInventoryBaseStatEntry.xml">
-                <Property name="BaseStatID" value="ROBOT_SHIP" />
-                <Property name="Value" value="1" />
-            </Property>
-        ]]
-    end
-
-    return [[]]
-end
-
-function Create_Ship_Reward_Entry(ship_model, ship_seed, ship_slots, ship_technologies, ship_class, ship_type, ship_base_stats)
+-- removed
+-- <Property name="BaseStatValues">
+--     ]]..ship_base_stats..[[
+-- </Property>
+function Create_Ship_Reward_Entry(ship_model, ship_seed, ship_slots, ship_technologies, ship_class, ship_type)
     return [[
-        <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+        <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificShip.xml">
-                <Property name="ShipResource" value="GcResourceElement.xml">
-                    <Property name="Filename" value="]]..ship_model..[[" />
-                    <Property name="ResHandle" value="GcResource.xml">
-                        <Property name="ResourceID" value="0" />
-                    </Property>
-                    <Property name="Seed" value="GcSeed.xml">
+            <Property name="Reward" value="GcRewardSpecificShip">
+                <Property name="GcRewardSpecificShip">
+                    <Property name="ShipResource" value="GcResourceElement">
+                        <Property name="Filename" value="]]..ship_model..[[" />
+                        <Property name="ResHandle" value="GcResource">
+                            <Property name="ResourceID" value="0" />
+                        </Property>
                         <Property name="Seed" value="]]..ship_seed..[[" />
-                        <Property name="UseSeedValue" value="True" />
+                        <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
+                            <Property name="Samplers" />
+                        </Property>
+                        <Property name="AltId" value="" />
                     </Property>
-                    <Property name="AltId" value="" />
-                    <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-                        <Property name="Samplers" />
+                    <Property name="Customisation" value="GcCharacterCustomisationData">
+                        <Property name="DescriptorGroups" />
+                        <Property name="PaletteID" value="" />
+                        <Property name="Colours" />
+                        <Property name="TextureOptions" />
+                        <Property name="BoneScales" />
+                        <Property name="Scale" value="1.000000" />
                     </Property>
-                </Property>
-                <Property name="ShipLayout" value="GcInventoryLayout.xml">
-                    <Property name="Slots" value="]]..ship_slots..[[" />
-                    <Property name="Seed" value="GcSeed.xml">
+                    <Property name="ShipLayout" value="GcInventoryLayout">
+                        <Property name="Slots" value="]]..ship_slots..[[" />
                         <Property name="Seed" value="1" />
-                        <Property name="UseSeedValue" value="True" />
+                        <Property name="Level" value="1" />
                     </Property>
-                    <Property name="Level" value="1" />
-                </Property>
-                <Property name="ShipInventory" value="GcInventoryContainer.xml">
-                    <Property name="Slots">
-                        ]]..ship_technologies..[[
+                    <Property name="ShipInventory" value="GcInventoryContainer">
+                        <Property name="Slots">
+                                ]]..ship_technologies..[[
+                        </Property>
+                        <Property name="ValidSlotIndices" />
+                        <Property name="Class" value="GcInventoryClass">
+                            <Property name="InventoryClass" value="]]..ship_class..[[" />
+                        </Property>
+                        <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup">
+                            <Property name="InventoryStackSizeGroup" value="Default" />
+                        </Property>
+                        <Property name="BaseStatValues" />
+                        <Property name="SpecialSlots" />
+                        <Property name="Width" value="0" />
+                        <Property name="Height" value="0" />
+                        <Property name="IsCool" value="false" />
+                        <Property name="Name" value="" />
+                        <Property name="Version" value="0" />
                     </Property>
-                    <Property name="ValidSlotIndices" />
-                    <Property name="Class" value="GcInventoryClass.xml">
-                        <Property name="InventoryClass" value="]]..ship_class..[[" />
+                    <Property name="CostAmount" value="0" />
+                    <Property name="CostCurrency" value="GcCurrency">
+                        <Property name="Currency" value="Units" />
                     </Property>
-                    <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
-                        <Property name="InventoryStackSizeGroup" value="Default" />
+                    <Property name="ShipType" value="GcSpaceshipClasses">
+                        <Property name="ShipClass" value="]]..ship_type..[[" />
                     </Property>
-                    <Property name="BaseStatValues">
-                        ]]..ship_base_stats..[[
+                    <Property name="UseOverrideSizeType" value="false" />
+                    <Property name="OverrideSizeType" value="GcInventoryLayoutSizeType">
+                        <Property name="SizeType" value="SciSmall" />
                     </Property>
-                    <Property name="SpecialSlots" />
-                    <Property name="Width" value="0" />
-                    <Property name="Height" value="0" />
-                    <Property name="IsCool" value="False" />
-                    <Property name="Name" value="" />
-                    <Property name="Version" value="0" />
-                </Property>
-                <Property name="CostAmount" value="0" />
-                <Property name="CostCurrency" value="GcCurrency.xml">
-                  <Property name="Currency" value="Units" />
-                </Property>
-                <Property name="ShipType" value="GcSpaceshipClasses.xml">
-                    <Property name="ShipClass" value="]]..ship_type..[[" />
-                </Property>
-                <Property name="UseOverrideSizeType" value="False" />
-                <Property name="OverrideSizeType" value="GcInventoryLayoutSizeType.xml">
-                  <Property name="SizeType" value="SciSmall" />
-                </Property>
-                <Property name="NameOverride" value="CL_STORE_DESC" />
-                <Property name="IsGift" value="True" />
-                <Property name="IsRewardShip" value="True" />
-                <Property name="FormatAsSeasonal" value="False" />
-                <Property name="ModelViewOverride" value="GcModelViews.xml">
-                    <Property name="ModelViews" value="None" />
+                    <Property name="NameOverride" value="CL_STORE_DESC" />
+                    <Property name="IsGift" value="true" />
+                    <Property name="IsRewardShip" value="true" />
+                    <Property name="FormatAsSeasonal" value="false" />
+                    <Property name="ModelViewOverride" value="GcModelViews">
+                        <Property name="ModelViews" value="None" />
+                    </Property>
                 </Property>
             </Property>
         </Property>
@@ -661,6 +594,7 @@ function Get_Ship_Data(ship_type, ship_class )
     local price = 0;
     local base_price = 0
     local price_multiplier = 0
+    -- not good, only selects 1 speific model per class, need to be by seed basis
     -- local freighter_models =
     -- {
     --     "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN",
@@ -669,7 +603,7 @@ function Get_Ship_Data(ship_type, ship_class )
     -- }
     -- local rand = math.random(1, #freighter_models)
 
-    -- if Ship_Type == "Freighter" then
+    -- if ship_type == "Freighter" then
     --     Ship_Model = freighter_models[rand]
     --     base_price = 25000000 * Price_Multiplier
     --     custom_language_string = "CL_BFREIGH"
@@ -748,11 +682,6 @@ function Create_Master_Sec()
     {
         ["SEC_EMPTY"] = "SHOP_MASTER_SEC"
     }
-    -- IF i want to use the QS store
-    -- Changes_To_Purchasable_Specials[#Changes_To_Purchasable_Specials + 1] =
-    -- {
-    --     ["SEC_EMPTY"] = "SPECIAL_MASTER_SEC"
-    -- }
 end
 
 function Add_Master_Sec()
@@ -780,13 +709,6 @@ function Add_Master_Sec()
         ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "SpaceStation", "AlwaysPresentProducts"},
         ["SEC_ADD_NAMED"] = "SHOP_MASTER_SEC"
     }
-    -- IF i want to use the QS store
-    --Accumilative Add to Purchasable_Specials
-    -- Changes_To_Purchasable_Specials[#Changes_To_Purchasable_Specials + 1] =
-    -- {
-    --     ["PRECEDING_KEY_WORDS"] = {"Table"},
-    --     ["SEC_ADD_NAMED"] = "SPECIAL_MASTER_SEC"
-    -- }
 end
 
 function Start()
@@ -815,7 +737,7 @@ function Start()
             local Product_Id = string.upper(Ship_Type).."_"..string.upper(Ship_Class_String)
 
             local Name_Id = Custom_Language_String.."_NAME"
-            local Name_LC_Id = Custom_Language_String.."_NAME_L"
+            local Name_LC_Id = Custom_Language_String.."_NAME_LC"
             local Description_Id = Custom_Language_String.."_DESC"
             local Product_Icon = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.SHIPCLASS"..string.upper(Ship_Class_String)..".DDS";
 
@@ -831,8 +753,9 @@ function Start()
                 Ship_Seed =  math.random(0xFFFFFFFF)
 
                 Ship_Technologies = table.concat(Get_Ship_Technologies(Ship_Type))
-                Ship_Base_Stats = Create_Ship_Base_Stats(Ship_Type)
-                table.insert(Reward_Entries, Create_Ship_Reward_Entry(Ship_Model, Ship_Seed, Ship_Slots, Ship_Technologies, Ship_Class_String, Ship_Type, Ship_Base_Stats))
+                -- Ship_Base_Stats = Create_Ship_Base_Stats(Ship_Type)
+                -- table.insert(Reward_Entries, Create_Ship_Reward_Entry(Ship_Model, Ship_Seed, Ship_Slots, Ship_Technologies, Ship_Class_String, Ship_Type, Ship_Base_Stats))
+                table.insert(Reward_Entries, Create_Ship_Reward_Entry(Ship_Model, Ship_Seed, Ship_Slots, Ship_Technologies, Ship_Class_String, Ship_Type))
             end
             Create_Reward_Table_Entry(Reward_Id, "Select", table.concat(Reward_Entries))
         end
@@ -843,77 +766,184 @@ end
 ----------------------------------------------------------------------------------------------
 -------------------------------     Language file creation     -------------------------------
 ----------------------------------------------------------------------------------------------
-function NewLanguagueFile(DescriptionEntries)
-    return
-    [[<?xml version="1.0" encoding="utf-8"?>
-        <Data template="TkLocalisationTable">
-            <Property name="Table">]]
-            ..DescriptionEntries..
-            [[
-            </Property>
-        </Data>
-    ]]
-end
-
-function NewLanguageEntry(Language, NewDescription)
-    return [[<Property name="]]..Language..[[" value="]]..NewDescription..[[" />]]
-end
-
-function NewDescriptionText(newDescId, LanguageEntries)
-    return
-    [[
-        <Property value="TkLocalisationEntry.xml">
-            <Property name="Id" value="]]..newDescId..[[" />
-            ]]..LanguageEntries..[[
-        </Property>
-    ]]
-end
-
-function FillCustomlangFile()
-    local NewProductLangEntries = {}
-
-    for i = 1, #Custom_Language_Desccription_Strings do
-        local ProductID = string.upper(Custom_Language_Desccription_Strings[i]["ID"])
-        local DescriptionEntries = {}
-        local NameLCEntries = {}
-        local NameEntries = {}
-
-        local LanguagesData = Custom_Language_Desccription_Strings[i]["LANGUAGES"]
-
-        local NameID = ProductID.."_NAME"
-        local NameLCID = ProductID.."_NAME_L"
-        local DescID = ProductID.."_DESC"
-
-        for j = 1, #LanguagesData do
-            local Language = LanguagesData[j]["LANGUAGE"]
-
-            local NameLC = LanguagesData[j]["NAME"]
-            table.insert(NameLCEntries, NewLanguageEntry(Language, NameLC))
-
-            local Name = string.upper(NameLC)
-            table.insert(NameEntries, NewLanguageEntry(Language, Name))
-
-            local NewDescription = LanguagesData[j]["DESCRIPTION"]
-            table.insert(DescriptionEntries, NewLanguageEntry(Language, NewDescription))
-        end
-
-        table.insert(NewProductLangEntries, NewDescriptionText(NameLCID, table.concat(NameLCEntries)))
-        table.insert(NewProductLangEntries, NewDescriptionText(NameID, table.concat(NameEntries)))
-        table.insert(NewProductLangEntries, NewDescriptionText(DescID, table.concat(DescriptionEntries)))
-
-    end
-    return NewLanguagueFile(table.concat(NewProductLangEntries))
-end
-
-function AddLangauges()
-    for _Key , Language in pairs(Languages) do
-        AddCustomLanguageFiles[#AddCustomLanguageFiles +1] =
+local Changes_To_Mbin_Change_Table = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
+function Create_Language_Masters()
+    Changes_To_Language[#Changes_To_Language + 1] =
+    {
+        SPECIAL_KEY_WORDS = {'Table', 'TkLocalisationEntry'},
+        SEC_SAVE_TO = 'EMPTY_LOCAL_ENTRY_MASTER'
+    }
+    Changes_To_Language[#Changes_To_Language + 1] =
+    {
+        SEC_EDIT = 'EMPTY_LOCAL_ENTRY_MASTER',
+        VALUE_CHANGE_TABLE =
         {
-            ["FILE_DESTINATION"] = "LANGUAGE/NMS_"..CustomLanguageTag.."_"..Language..".EXML",
-            ["FILE_CONTENT"] = FillCustomlangFile()
+            {'English', ''}
+        },
+    }
+end
+
+function New_Empty_Language_File(New_Language_File_Name)
+    Changes_To_Mbin_Change_Table[#Changes_To_Mbin_Change_Table + 1] =
+    {
+        MBIN_FILE_SOURCE =
+        {
+            {'LANGUAGE/NMS_LOC8_ENGLISH.MBIN', New_Language_File_Name}
+        }
+    }
+    Changes_To_Mbin_Change_Table[#Changes_To_Mbin_Change_Table + 1] =
+    {
+        MBIN_FILE_SOURCE= New_Language_File_Name,
+        EXML_CHANGE_TABLE =
+        {
+            {
+                -- PRECEDING_KEY_WORDS = {'Table',},
+                SPECIAL_KEY_WORDS = {'Table', 'TkLocalisationEntry'},
+                -- REPLACE_TYPE = "ALLINSECTION",
+                REPLACE_TYPE = "ALL",
+                REMOVE = 'SECTION',
+            }
+        }
+    }
+    -- Changes_To_Mbin_Change_Table[#Changes_To_Mbin_Change_Table + 1] =
+    -- {
+    --     MBIN_FILE_SOURCE = New_Language_File_Name,
+    --     EXML_CHANGE_TABLE =
+    --     {
+    --         {
+    --             LINE_OFFSET = "3",
+    --             -- needs to be " quotes
+    --             -- 2 spaces == 1 tab in MXML
+    --             ADD = [[  <Property name="Table">]]
+    --         },
+    --         {
+    --             LINE_OFFSET = "4",
+    --             ADD = [[  </Property>]]
+    --         }
+    --     }
+    -- }
+end
+
+function New_Empty_Langauge_Entries(Language)
+    Changes_To_Language[#Changes_To_Language + 1] =
+    {
+        SEC_EMPTY = Language..'_ENTRIES'
+    }
+end
+
+function Fill_Custom_Language_File(Language, Language_Values)
+    for Language_Base, Language_Texts in pairs(Language_Values) do
+        Language_Name_Lc_Id = Language_Base..'_NAME_LC'
+        Language_Name_Id = Language_Base..'_NAME'
+        Language_Desc_Id = Language_Base..'_DESC'
+        Language_Sub_Id = Language_Base..'_SUB'
+
+        Changes_To_Language[#Changes_To_Language + 1] =
+        {
+            SEC_EDIT = 'EMPTY_LOCAL_ENTRY_MASTER',
+            SEC_SAVE_TO = Language_Name_Lc_Id..'_ENTRY'
+        }
+        Changes_To_Language[#Changes_To_Language + 1] =
+        {
+            SEC_EDIT = 'EMPTY_LOCAL_ENTRY_MASTER',
+            SEC_SAVE_TO = Language_Name_Id..'_ENTRY'
+        }
+        Changes_To_Language[#Changes_To_Language + 1] =
+        {
+            SEC_EDIT = 'EMPTY_LOCAL_ENTRY_MASTER',
+            SEC_SAVE_TO = Language_Desc_Id..'_ENTRY'
+        }
+        Changes_To_Language[#Changes_To_Language + 1] =
+        {
+            SEC_EDIT = 'EMPTY_LOCAL_ENTRY_MASTER',
+            SEC_SAVE_TO = Language_Sub_Id..'_ENTRY'
+        }
+        --change data inside empty tkloc
+        Changes_To_Language[#Changes_To_Language + 1] =
+        {
+            SEC_EDIT = Language_Name_Lc_Id..'_ENTRY',
+            VALUE_CHANGE_TABLE =
+            {
+                {'Id', Language_Name_Lc_Id},
+                {Language, Language_Texts.NAME}
+            }
+        }
+        Changes_To_Language[#Changes_To_Language + 1] =
+        {
+            SEC_EDIT = Language_Name_Id..'_ENTRY',
+            VALUE_CHANGE_TABLE =
+            {
+                {'Id', Language_Name_Id},
+                {Language, string.upper(Language_Texts.NAME)}
+            }
+        }
+        Changes_To_Language[#Changes_To_Language + 1] =
+        {
+            SEC_EDIT = Language_Desc_Id..'_ENTRY',
+            VALUE_CHANGE_TABLE =
+            {
+                {'Id', Language_Desc_Id},
+                {Language, Language_Texts.DESCRIPTION}
+            }
+        }
+        Changes_To_Language[#Changes_To_Language + 1] =
+        {
+            SEC_EDIT = Language_Sub_Id..'_ENTRY',
+            VALUE_CHANGE_TABLE =
+            {
+                {'Id', Language_Sub_Id},
+                {Language, Language_Texts.SUBTITLE}
+            }
+        }
+        -- Add singular entry to entries
+        Changes_To_Language[#Changes_To_Language + 1] =
+        {
+            SEC_EDIT = Language..'_ENTRIES',
+            SEC_ADD_NAMED = Language_Name_Lc_Id..'_ENTRY'
+        }
+        Changes_To_Language[#Changes_To_Language + 1] =
+        {
+            SEC_EDIT = Language..'_ENTRIES',
+            SEC_ADD_NAMED = Language_Name_Id..'_ENTRY'
+        }
+        Changes_To_Language[#Changes_To_Language + 1] =
+        {
+            SEC_EDIT = Language..'_ENTRIES',
+            SEC_ADD_NAMED = Language_Desc_Id..'_ENTRY'
+        }
+        Changes_To_Language[#Changes_To_Language + 1] =
+        {
+            SEC_EDIT = Language..'_ENTRIES',
+            SEC_ADD_NAMED = Language_Sub_Id..'_ENTRY'
         }
     end
 end
 
+function Add_Custom_Language_String()
+    Create_Language_Masters()
+    for Language , Language_Values in pairs(Language_Data) do
+        New_Language_File_Name = 'LANGUAGE/NMS_'..string.upper(Custom_Language_Tag)..'_'..string.upper(Language)..'.MBIN'
+        New_Empty_Language_File(New_Language_File_Name)
+        New_Empty_Langauge_Entries(Language)
+        Fill_Custom_Language_File(Language, Language_Values)
+
+        Changes_To_Mbin_Change_Table[#Changes_To_Mbin_Change_Table + 1] =
+        {
+            MBIN_FILE_SOURCE = New_Language_File_Name,
+            EXML_CHANGE_TABLE =
+            {
+                {
+                    PRECEDING_KEY_WORDS = {'Table'},
+                    SEC_ADD_NAMED = Language..'_ENTRIES'
+                }
+            }
+        }
+    end
+end
+
+----------------------------------------------------------------------------------------------
+-------------------------------     EXECUTING THE FUNCTIONS     ------------------------------
+----------------------------------------------------------------------------------------------
+
 Start()
-AddLangauges()
+Add_Custom_Language_String()

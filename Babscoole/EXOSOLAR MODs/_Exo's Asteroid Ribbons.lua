@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Exo's Asteroid Ribbons.pak",
+["MOD_FILENAME"]  = "_Exo's Asteroid Ribbons",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.29",
+["NMS_VERSION"]   = "5.73",
 ["MODIFICATIONS"] =
     {
         {
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
@@ -25,30 +25,30 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PlanetInvalidAsteroidZone",            "40000"},
-                                {"SparseAsteroidSpread",                 "-25"},
-                                {"AsteroidNoiseOctaves",                 "1"},
-                                {"AsteroidSpaceStationAvoidRadius",      "10000"},
-                                {"AsteroidAnomalyAvoidRadius",           "10000"},
-                                {"AsteroidWarpInAreaAvoidRadius",        "10000"},
-                                {"AsteroidSomeRaresOdds",                "0.52"},
-                                {"RareAsteroidMinResources",             "8"},
-                                {"RareAsteroidMaxResources",             "20"},
-                                {"CommonAsteroidMinResources",           "7"},
-                                {"CommonAsteroidMaxResources",           "16"},
-                                {"CommonAsteroidResourceFuelMultiplier", "3"},
-                                {"CommonAsteroidResourceFuelOdds",       "0.75"},
-                                {"RareAsteroidResourceFuelOdds",         "0.25"},
-                                {"LargeAsteroidFadeTime",                "1.2"},
+                                {"Planet Invalid Asteroid Zone",             "40000"},
+                                {"Sparse Asteroid Spread",                   "-25"},
+                                {"Asteroid Noise Octaves",                   "1"},
+                                {"Asteroid Space Station Avoid Radius",      "10000"},
+                                {"Asteroid Anomaly Avoid Radius",            "10000"},
+                                {"Asteroid Warp In Area Avoid Radius",       "10000"},
+                                {"Asteroid Some Rares Odds",                 "0.52"},
+                                {"Rare Asteroid Min Resources",              "8"},
+                                {"Rare Asteroid Max Resources",              "20"},
+                                {"Common Asteroid Min Resources",            "7"},
+                                {"Common Asteroid Max Resources",            "16"},
+                                {"Common Asteroid Resource Fuel Multiplier", "3"},
+                                {"Common Asteroid Resource Fuel Odds",       "0.75"},
+                                {"Rare Asteroid Resource Fuel Odds",         "0.25"},
+                                {"Large Asteroid Fade Time",                 "1.2"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"CommonAsteroidData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Common Asteroid Data"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Spacing",    "387"},
@@ -57,14 +57,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"CommonAsteroidData", "ScaleVariance"},
+                            ["PRECEDING_KEY_WORDS"] = {"Common Asteroid Data", "Scale Variance"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "1.3"}
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"CommonAsteroidData", "NoiseRange"},
+                            ["PRECEDING_KEY_WORDS"] = {"Common Asteroid Data", "Noise Range"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.499"},
@@ -72,21 +72,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"RingAsteroidData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Ring Asteroid Data"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FadeRange", "1000"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"RingAsteroidData", "ScaleVariance"},
+                            ["PRECEDING_KEY_WORDS"] = {"Ring Asteroid Data", "Scale Variance"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "1.3"}
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"LargeAsteroidData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Large Asteroid Data"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Spacing",    "3500"},
@@ -95,7 +95,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"LargeAsteroidData", "NoiseRange"},
+                            ["PRECEDING_KEY_WORDS"] = {"Large Asteroid Data", "Noise Range"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.495"},
@@ -103,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"RareAsteroidData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Rare Asteroid Data"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Spacing",    "510"},
@@ -112,14 +112,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"RareAsteroidData", "ScaleVariance"},
+                            ["PRECEDING_KEY_WORDS"] = {"Rare Asteroid Data", "Scale Variance"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "1.3"}
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"RareAsteroidData", "NoiseRange"},
+                            ["PRECEDING_KEY_WORDS"] = {"Rare Asteroid Data", "Noise Range"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.499"},
@@ -127,7 +127,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RareAsteroidNoiseRangeSomeRares", "Vector2f.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Rare Asteroid Noise Range Some Rares"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -136,7 +136,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RareAsteroidNoiseRangeLotsOfRares", "Vector2f.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Rare Asteroid Noise Range Lots Of Rares"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.498"},

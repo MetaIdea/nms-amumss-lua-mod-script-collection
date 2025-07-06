@@ -276,11 +276,11 @@ MISC_ON_FREIGHTER_ID_TABLE = {"POWERLINE_HIDER", "NOISEBOX", "SPAWNER_BALL", "BY
 -- Plant in any biome
 FARM_IN_ANY_BIOME_ID_TABLE = {"RADIOPLANT", "TOXICPLANT", "SNOWPLANT", "SACVENOMPLANT", "SCORCHEDPLANT", "POOPPLANT", "GRAVPLANT", "CREATUREPLANT", "BARRENPLANT", "LUSHPLANT", "PEARLPLANT", "NIPPLANT"}
 
--- Exceptions to {"CanScale", "True"}
+-- Exceptions to {"CanScale", "true"}
 NOT_SCALEABLE_BUILDPART_ID_TABLE = {"BASE_FLAG"}
 -- Notes : vehicles and prefab parts are excluded in the dedicated part at the bottom of the script.
 
--- Exceptions to {"CanScale", "False"}
+-- Exceptions to {"CanScale", "false"}
 FINAL_CANSCALE_OVERRIDE_TABLE = {"BUILDLADDER", "FRE_ROOM_LADDER", "WALLFLOORLADDER"}
 -- Notes : vehicles and prefab parts are excluded in the dedicated part at the bottom of the script.
 
@@ -343,7 +343,7 @@ CUSTOM_BUILDCOUNT_LIMITS =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]    = "_Beyond Base Building.pak",
+    ["MOD_FILENAME"]    = "_Beyond Base Building",
     ["MOD_AUTHOR"]      = "Babscoole after NeptuneX3 after Sparky after Exosolar",
     ["MOD_DESCRIPTION"] =
     [[ An extreme degree of freedom added to the vanilla base-building options.
@@ -374,7 +374,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     —For latest versions and more visit:-
     https://www.nexusmods.com/nomanssky/mods/1096
     ]],
-    ["NMS_VERSION"]   = "5.29",
+    ["NMS_VERSION"]   = "5.73",
     ["MODIFICATIONS"] =
     {
         {
@@ -382,29 +382,29 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         -- General modifications
                         {
                             ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_MATCH"] = "False",
+                            ["VALUE_MATCH"] = "false",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CanRotate3D",       "True"},
-                                {"CanScale",          "True"},
-                                {"CanChangeColour",   "True"},
-                                {"CanChangeMaterial", "True"},
-                                {"IsPlaceable",       "True"},
+                                {"CanRotate3D",       "true"},
+                                {"CanScale",          "true"},
+                                {"CanChangeColour",   "true"},
+                                {"CanChangeMaterial", "true"},
+                                {"IsPlaceable",       "true"},
                             },
                         },
                         {
                             ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_MATCH"] = "True",
+                            ["VALUE_MATCH"] = "true",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsDecoration",              "False"},
-                                {"CheckPlaceholderCollision", "False"},
-                                {"RemovesAttachedDecoration", "False"},
+                                {"IsDecoration",              "false"},
+                                -- {"CheckPlaceholderCollision", "false"},
+                                {"RemovesAttachedDecoration", "false"},
                             },
                         },
                         -- Reverts decals : must be destroyed when parent (wall, etc) is destroyed. Unlimited placement.
@@ -415,7 +415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsDecoration",       "True"},
+                                {"IsDecoration",       "true"},
                                 {"PlanetBaseLimit",    0},
                                 {"FreighterBaseLimit", 0},
                             },
@@ -437,7 +437,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsDecoration", "True"},
+                                {"IsDecoration", "true"},
                             },
                         },
                         {--Needed to avoid tutorial softlock
@@ -452,7 +452,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BuildableOnPlanet", "False"}
+                                {"BuildableOnPlanet", "false"}
                             }
                         },
                         {
@@ -462,8 +462,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Rate",                         "@*"..SolarRate},
                                 {"Storage",                      SolarStorage},
                                 {"DependsOnEnvironment",         "DayNight"},
-                                {"BuildableOnPlanet",            "False"},
-                                {"BuildableOnPlanetWithProduct", "False"},
+                                {"BuildableOnPlanet",            "false"},
+                                {"BuildableOnPlanetWithProduct", "false"},
                             }
                         },
                         {
@@ -472,18 +472,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"DependentRate",                "@*"..BioRate},
                                 {"Storage",                      BioStorage},
-                                {"BuildableOnSpaceBase",         "False"},
-                                {"BuildableOnFreighter",         "False"},
-                                {"BuildableOnPlanet",            "False"},
-                                {"BuildableOnPlanetWithProduct", "False"},
+                                {"BuildableOnSpaceBase",         "false"},
+                                {"BuildableOnFreighter",         "false"},
+                                {"BuildableOnPlanet",            "false"},
+                                {"BuildableOnPlanetWithProduct", "false"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID", "U_BATTERY_S"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BuildableOnPlanet",            "False"},
-                                {"BuildableOnPlanetWithProduct", "False"},
+                                {"BuildableOnPlanet",            "false"},
+                                {"BuildableOnPlanetWithProduct", "false"},
                                 {"Rate",                         BatteryRate},
                                 {"Storage",                      "@*"..BatteryStorage},
                             }
@@ -494,8 +494,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"DependsOnHotspots",            EMAnywhere},
                                 {"Rate",                         EMRate},
-                                {"BuildableOnPlanet",            "False"},
-                                {"BuildableOnPlanetWithProduct", "False"},
+                                {"BuildableOnPlanet",            "false"},
+                                {"BuildableOnPlanetWithProduct", "false"},
                                 {"RegionLimit",                  EMLimit},
                             }
                         },
@@ -505,8 +505,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Storage",                      "@*"..MineralStorage},
                                 {"Rate",                         "@*"..MineralRate},
-                                {"BuildableOnPlanet",            "False"},
-                                {"BuildableOnPlanetWithProduct", "False"},
+                                {"BuildableOnPlanet",            "false"},
+                                {"BuildableOnPlanetWithProduct", "false"},
                                 {"RegionLimit",                  MineralLimit},
                             }
                         },
@@ -516,8 +516,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Storage",                      "@*"..GasStorage},
                                 {"Rate",                         "@*"..GasRate},
-                                {"BuildableOnPlanet",            "False"},
-                                {"BuildableOnPlanetWithProduct", "False"},
+                                {"BuildableOnPlanet",            "false"},
+                                {"BuildableOnPlanetWithProduct", "false"},
                                 {"RegionLimit",                  GasLimit},
                             }
                         },
@@ -526,8 +526,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Storage",                      SiloStorage},
-                                {"BuildableOnPlanet",            "False"},
-                                {"BuildableOnPlanetWithProduct", "False"},
+                                {"BuildableOnPlanet",            "false"},
+                                {"BuildableOnPlanetWithProduct", "false"},
                                 {"PlanetBaseLimit",              SiloLimit},
                             }
                         },
@@ -556,22 +556,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"ID", "FRE_FACE_DOOR_A"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsPlaceable", "False"},
+                                {"IsPlaceable", "false"},
                             }
                         },
                         {--Fix bug with interior freighter walls
                             ["SPECIAL_KEY_WORDS"] = {"ID", "FRE_FACE_WALL"},
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"IsPlaceable", "False"},
+                                {"IsPlaceable", "false"},
                             }
                         },
-						{
-						    ["SPECIAL_KEY_WORDS"] = {"Id", "HEATER"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"CanPickUp", "True"},
-							}
-						},
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "HEATER"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"CanPickUp", "true"},
+                            }
+                        },
                     },
                 },
             },
@@ -581,8 +581,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 
 
---Create a shortcut to the EXML_CHANGE_TABLE table that is inside NMS_MOD_DEFINITION_CONTAINER
-local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+--Create a shortcut to the MXML_CHANGE_TABLE table that is inside NMS_MOD_DEFINITION_CONTAINER
+local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 
 -- Disable terrain edit for the designated parts
@@ -591,10 +591,10 @@ if DISABLE_TERRAINEDIT_FOR_ALL then
     Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["REPLACE_TYPE"] = "ALL",
-        ["VALUE_MATCH"] = "True",
+        ["VALUE_MATCH"] = "true",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"EditsTerrain", "False"},
+            {"EditsTerrain", "false"},
         },
     }
 
@@ -605,10 +605,10 @@ else
             Change_Table_Array[#Change_Table_Array + 1] =
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", DISABLE_TERRAINEDIT_ID_TABLE[i]},
-                ["VALUE_MATCH"] = "True",
+                ["VALUE_MATCH"] = "true",
                 ["VALUE_CHANGE_TABLE"] =
                 {
-                    {"EditsTerrain", "False"},
+                    {"EditsTerrain", "false"},
                 },
             }
         end
@@ -621,10 +621,10 @@ else
                 ["SPECIAL_KEY_WORDS"] = {"SubGroupName", DISABLE_TERRAINEDIT_KEYWORD_TABLE[i]},
                 ["SECTION_UP"] = 2,
                 ["REPLACE_TYPE"] = "ALL",
-                ["VALUE_MATCH"] = "True",
+                ["VALUE_MATCH"] = "true",
                 ["VALUE_CHANGE_TABLE"] =
                 {
-                    {"EditsTerrain", "False"},
+                    {"EditsTerrain", "false"},
                 },
             }
         end
@@ -640,10 +640,10 @@ if ALL_PARTS_ABOVE_WATER then
     Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["REPLACE_TYPE"] = "ALL",
-        ["VALUE_MATCH"] = "False",
+        ["VALUE_MATCH"] = "false",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"BuildableAboveWater", "True"},
+            {"BuildableAboveWater", "true"},
         },
     }
 
@@ -655,7 +655,7 @@ if ALL_PARTS_ABOVE_WATER then
             ["SPECIAL_KEY_WORDS"] = {"ID", "WATERBUBBLE"},
             ["VALUE_CHANGE_TABLE"] =
             {
-                {"BuildableAboveWater", "False"},
+                {"BuildableAboveWater", "false"},
             },
         }
     end
@@ -666,10 +666,10 @@ if ALL_PARTS_ABOVE_WATER then
         Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["SPECIAL_KEY_WORDS"] = {"ID", NOT_ABOVE_WATER_BUILDPART_ID_TABLE[i]},
-            ["VALUE_MATCH"] = "True",
+            ["VALUE_MATCH"] = "true",
             ["VALUE_CHANGE_TABLE"] =
             {
-                {"BuildableAboveWater", "False"},
+                {"BuildableAboveWater", "false"},
             },
         }
     end
@@ -684,10 +684,10 @@ if ALL_PARTS_UNDER_WATER then
     Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["REPLACE_TYPE"] = "ALL",
-        ["VALUE_MATCH"] = "False",
+        ["VALUE_MATCH"] = "false",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"BuildableUnderwater", "True"},
+            {"BuildableUnderwater", "true"},
         },
     }
 end
@@ -701,14 +701,14 @@ if ALL_PARTS_ON_FREIGHTER then
     Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["REPLACE_TYPE"] = "ALL",
-        ["VALUE_MATCH"] = "False",
+        ["VALUE_MATCH"] = "false",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"BuildableOnFreighter", "True"},
+            {"BuildableOnFreighter", "true"},
         },
     }
 
-    -- Reverts "BuildableOnFreighter" to "False" for vehicles
+    -- Reverts "BuildableOnFreighter" to "false" for vehicles
     -- Vehicles parts are matched by their "SubGroupName" keyword : if any new one is added by the devs it should trigger this.
     Change_Table_Array[#Change_Table_Array + 1] =
     {
@@ -717,11 +717,11 @@ if ALL_PARTS_ON_FREIGHTER then
         ["REPLACE_TYPE"] = "ALL",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"BuildableOnFreighter", "False"},
+            {"BuildableOnFreighter", "false"},
         },
     }
 
-    -- Reverts "BuildableOnFreighter" to "True" for geobays if GEOBAYS_ON_FREIGHTER is true
+    -- Reverts "BuildableOnFreighter" to "true" for geobays if GEOBAYS_ON_FREIGHTER is true
     if GEOBAYS_ON_FREIGHTER then
 
         for i = 1,#GEOBAYS_ON_FREIGHTER_ID_TABLE do
@@ -731,7 +731,7 @@ if ALL_PARTS_ON_FREIGHTER then
                 ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
                 ["VALUE_CHANGE_TABLE"] =
                 {
-                    {"BuildableOnFreighter", "True"},
+                    {"BuildableOnFreighter", "true"},
                 },
             }
         end
@@ -765,7 +765,7 @@ if ALL_PARTS_ON_FREIGHTER then
                 ["SPECIAL_KEY_WORDS"] = {"ID", NPCSTATION_ON_FREIGHTER_ID_TABLE[i]},
                 ["VALUE_CHANGE_TABLE"] =
                 {
-                    {"BuildableOnFreighter", "True"},
+                    {"BuildableOnFreighter", "true"},
                 },
             }
         end
@@ -799,7 +799,7 @@ if ALL_PARTS_ON_FREIGHTER then
                 ["SPECIAL_KEY_WORDS"] = {"ID", S9_ON_FREIGHTER_ID_TABLE[i]},
                 ["VALUE_CHANGE_TABLE"] =
                 {
-                    {"BuildableOnFreighter", "True"},
+                    {"BuildableOnFreighter", "true"},
                 },
             }
         end
@@ -849,10 +849,10 @@ if ALL_PARTS_ON_FREIGHTER then
         Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["SPECIAL_KEY_WORDS"] = {"ID", NOT_FREIGHTER_BUILDPART_ID_TABLE[i]},
-            ["VALUE_MATCH"] = "True",
+            ["VALUE_MATCH"] = "true",
             ["VALUE_CHANGE_TABLE"] =
             {
-                {"BuildableOnFreighter", "False"},
+                {"BuildableOnFreighter", "false"},
             },
         }
     end
@@ -869,10 +869,10 @@ if ALL_PARTS_ON_PLANETBASE then
     Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["REPLACE_TYPE"] = "ALL",
-        ["VALUE_MATCH"] = "False",
+        ["VALUE_MATCH"] = "false",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"BuildableOnPlanetBase", "True"},
+            {"BuildableOnPlanetBase", "true"},
         },
     }
 
@@ -885,12 +885,12 @@ if ALL_PARTS_ON_PLANETBASE then
             ["SPECIAL_KEY_WORDS"] = {"ID", "GARAGE_FREIGHT"},
             ["VALUE_CHANGE_TABLE"] =
             {
-                {"BuildableOnPlanetBase", "False"},
+                {"BuildableOnPlanetBase", "false"},
             },
         }
     end
 
-    -- Reverts "BuildableOnPlanetBase" to "False" for the exceptions list
+    -- Reverts "BuildableOnPlanetBase" to "false" for the exceptions list
     for i = 1,#NOT_PLANETBASE_BUILDPART_ID_TABLE do
 
         Change_Table_Array[#Change_Table_Array + 1] =
@@ -898,7 +898,7 @@ if ALL_PARTS_ON_PLANETBASE then
             ["SPECIAL_KEY_WORDS"] = {"ID", NOT_PLANETBASE_BUILDPART_ID_TABLE[i]},
             ["VALUE_CHANGE_TABLE"] =
             {
-                {"BuildableOnPlanetBase", "False"},
+                {"BuildableOnPlanetBase", "false"},
             },
         }
     end
@@ -911,23 +911,23 @@ end
 ---------------------------------------------
 if CAN_SCALE_PREFAB_PARTS == false then
 
-    -- Reverts "CanScale" to "False" for prefab parts
+    -- Reverts "CanScale" to "false" for prefab parts
     for i = 1,#PREFAB_KEYWORDS_TABLE do
 
         Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["SPECIAL_KEY_WORDS"] = {"Group", PREFAB_KEYWORDS_TABLE[i]},
             ["SECTION_UP"] = 2,
-            ["VALUE_MATCH"] = "True",
+            ["VALUE_MATCH"] = "true",
             ["REPLACE_TYPE"] = "ALL",
             ["VALUE_CHANGE_TABLE"] =
             {
-                {"CanScale", "False"},
+                {"CanScale", "false"},
             },
         }
     end
 
-    -- Reverts "CanScale" to "False" for freighter storage containers
+    -- Reverts "CanScale" to "false" for freighter storage containers
 
         Change_Table_Array[#Change_Table_Array + 1] =
         {
@@ -935,12 +935,12 @@ if CAN_SCALE_PREFAB_PARTS == false then
             ["REPLACE_TYPE"] = "ALL",
             ["VALUE_CHANGE_TABLE"] =
             {
-                {"CanScale", "False"},
+                {"CanScale", "false"},
             },
         }
 end
 
--- Reverts "CanScale" to "False" for vehicles parts (scaling them can cause important issues)
+-- Reverts "CanScale" to "false" for vehicles parts (scaling them can cause important issues)
 -- Vehicles parts are matched by their "Groups" keyword : if any new one is added by the devs it should trigger this.
 -- Change_Table_Array[#Change_Table_Array + 1] =
 -- {
@@ -949,11 +949,11 @@ end
     -- ["REPLACE_TYPE"] = "ALL",
     -- ["VALUE_CHANGE_TABLE"] =
     -- {
-        -- {"CanScale", "False"},
+        -- {"CanScale", "false"},
     -- },
 -- }
 
--- Reverts "CanScale" to "True" for vehicles parts that should be scaleable
+-- Reverts "CanScale" to "true" for vehicles parts that should be scaleable
 for i = 1,#SCALEABLE_VEHICLESPART_ID_TABLE do
 
     Change_Table_Array[#Change_Table_Array + 1] =
@@ -961,7 +961,7 @@ for i = 1,#SCALEABLE_VEHICLESPART_ID_TABLE do
         ["SPECIAL_KEY_WORDS"] = {"ID", SCALEABLE_VEHICLESPART_ID_TABLE[i]},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"CanScale", "True"},
+            {"CanScale", "true"},
         },
     }
 end
@@ -974,12 +974,12 @@ for i = 1,#NOT_SCALEABLE_BUILDPART_ID_TABLE do
         ["SPECIAL_KEY_WORDS"] = {"ID", NOT_SCALEABLE_BUILDPART_ID_TABLE[i]},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"CanScale", "False"},
+            {"CanScale", "false"},
         },
     }
 end
 
--- Final Override to True
+-- Final Override to true
 for i = 1,#FINAL_CANSCALE_OVERRIDE_TABLE do
 
     Change_Table_Array[#Change_Table_Array + 1] =
@@ -987,7 +987,7 @@ for i = 1,#FINAL_CANSCALE_OVERRIDE_TABLE do
         ["SPECIAL_KEY_WORDS"] = {"ID", FINAL_CANSCALE_OVERRIDE_TABLE[i]},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"CanScale", "True"},
+            {"CanScale", "true"},
         },
     }
 end
@@ -1080,7 +1080,7 @@ if FARM_IN_ANY_BIOME then
         ["VALUE_CHANGE_TABLE"] =
         {
             {"BaseBuildingDecorationType", "Normal"},
-            {"BuildableOnPlanet",          "False"},
+            {"BuildableOnPlanet",          "false"},
         },
     }
     Change_Table_Array[#Change_Table_Array + 1] =
@@ -1117,7 +1117,7 @@ if METAL_PARTS_OUTSIDE_BASE then
             ["SPECIAL_KEY_WORDS"] = {"ID", METAL_OUTSIDE_BASE_ID_TABLE[i]},
             ["VALUE_CHANGE_TABLE"] =
             {
-                {"BuildableOnPlanet", "True"}
+                {"BuildableOnPlanet", "true"}
             }
         }
     end
@@ -1162,7 +1162,7 @@ for i = 1,#PLANTERS_ON_FREIGHTER_ID_TABLE do
         ["SPECIAL_KEY_WORDS"] = {"ID", PLANTERS_ON_FREIGHTER_ID_TABLE[i]},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"IsPlaceable", "True"},
+            {"IsPlaceable", "true"},
         },
     }
 end
@@ -1190,8 +1190,8 @@ for i = 1,#MISC_ON_FREIGHTER_ID_TABLE do
         ["SPECIAL_KEY_WORDS"] = {"ID", MISC_ON_FREIGHTER_ID_TABLE[i]},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"BuildableOnSpaceBase", "True"},
-            {"BuildableOnFreighter", "True"},
+            {"BuildableOnSpaceBase", "true"},
+            {"BuildableOnFreighter", "true"},
         },
     }
 end

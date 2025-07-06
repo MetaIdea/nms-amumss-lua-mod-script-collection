@@ -20,169 +20,169 @@ WordChanges =
   { -- WordID
     {"TRA_WORD_DIRECT"},
     { -- Race, Category, UseCategory, Amount
-      {"Traders", "DIRECTIONS", "True", NPC},
+      {"Traders", "DIRECTIONS", "true", NPC},
     }
   },
   {
     {"TRA_WORD_HELP"},
     {
-      {"Traders", "HELP", "True", NPC},
+      {"Traders", "HELP", "true", NPC},
     }
   },
   {
     {"TRA_WORD_TRADE"},
     {
-      {"Traders", "TRADE", "True", NPC},
+      {"Traders", "TRADE", "true", NPC},
     }
   },
   {
     {"TRA_WORD_LORE"},
     {
-      {"Traders", "LORE", "True", NPC},
+      {"Traders", "LORE", "true", NPC},
     }
   },
   {
     {"TRA_WORD_TECH"},
     {
-      {"Traders", "TECH", "True", NPC},
+      {"Traders", "TECH", "true", NPC},
     }
   },
   {
     {"TRA_WORD_THREAT"},
     {
-      {"Traders", "THREAT", "True", NPC},
+      {"Traders", "THREAT", "true", NPC},
     }
   },
   {
     {"TRA_WORD_MISC"},
     {
-      {"Traders", "MISC", "True", NPC},
+      {"Traders", "MISC", "true", NPC},
     }
   },
   {
     {"EXP_WORD_DIRECT"},
     {
-      {"Explorers", "DIRECTIONS", "True", NPC},
+      {"Explorers", "DIRECTIONS", "true", NPC},
     }
   },
   {
     {"EXP_WORD_HELP"},
     {
-      {"Explorers", "HELP", "True", NPC},
+      {"Explorers", "HELP", "true", NPC},
     }
   },
   {
     {"EXP_WORD_TRADE"},
     {
-      {"Explorers", "TRADE", "True", NPC},
+      {"Explorers", "TRADE", "true", NPC},
     }
   },
   {
     {"EXP_WORD_LORE"},
     {
-      {"Explorers", "LORE", "True", NPC},
+      {"Explorers", "LORE", "true", NPC},
     }
   },
   {
     {"EXP_WORD_TECH"},
     {
-      {"Explorers", "TECH", "True", NPC},
+      {"Explorers", "TECH", "true", NPC},
     }
   },
   {
     {"EXP_WORD_THREAT"},
     {
-      {"Explorers", "THREAT", "True", NPC},
+      {"Explorers", "THREAT", "true", NPC},
     }
   },
   {
     {"EXP_WORD_MISC"},
     {
-      {"Explorers", "MISC", "True", NPC},
+      {"Explorers", "MISC", "true", NPC},
     }
   },
   {
     {"WAR_WORD_DIRECT"},
     {
-      {"Warriors", "DIRECTIONS", "True", NPC},
+      {"Warriors", "DIRECTIONS", "true", NPC},
     }
   },
   {
     {"WAR_WORD_HELP"},
     {
-      {"Warriors", "HELP", "True", NPC},
+      {"Warriors", "HELP", "true", NPC},
     }
   },
   {
     {"WAR_WORD_TRADE"},
     {
-      {"Warriors", "TRADE", "True", NPC},
+      {"Warriors", "TRADE", "true", NPC},
     }
   },
   {
     {"WAR_WORD_LORE"},
     {
-      {"Warriors", "LORE", "True", NPC},
+      {"Warriors", "LORE", "true", NPC},
     }
   },
   {
     {"WAR_WORD_TECH"},
     {
-      {"Warriors", "TECH", "True", NPC},
+      {"Warriors", "TECH", "true", NPC},
     }
   },
   {
     {"WAR_WORD_THREAT"},
     {
-      {"Warriors", "THREAT", "True", NPC},
+      {"Warriors", "THREAT", "true", NPC},
     }
   },
   {
     {"WAR_WORD_MISC"},
     {
-      {"Warriors", "MISC", "True", NPC},
+      {"Warriors", "MISC", "true", NPC},
     }
   },
   {
     {"BUI_WORD_DIRECT"},
     {
-      {"Builders", "DIRECTIONS", "True", NPC},
+      {"Builders", "DIRECTIONS", "true", NPC},
     }
   },
   {
     {"BUI_WORD_HELP"},
     {
-      {"Builders", "HELP", "True", NPC},
+      {"Builders", "HELP", "true", NPC},
     }
   },
   {
     {"BUI_WORD_TRADE"},
     {
-      {"Builders", "TRADE", "True", NPC},
+      {"Builders", "TRADE", "true", NPC},
     }
   },
   {
     {"BUI_WORD_LORE"},
     {
-      {"Builders", "LORE", "True", NPC},
+      {"Builders", "LORE", "true", NPC},
     }
   },
   {
     {"BUI_WORD_TECH"},
     {
-      {"Builders", "TECH", "True", NPC},
+      {"Builders", "TECH", "true", NPC},
     }
   },
   {
     {"BUI_WORD_THREAT"},
     {
-      {"Builders", "THREAT", "True", NPC},
+      {"Builders", "THREAT", "true", NPC},
     }
   },
   {
     {"BUI_WORD_MISC"},
     {
-      {"Builders", "MISC", "True", NPC},
+      {"Builders", "MISC", "true", NPC},
     }
   },
 }
@@ -192,19 +192,19 @@ NewWordChanges =
   { -- WordID
     {"WORD_STONE_R"},
     { -- Race, Category, UseCategory, Amount
-      {"None", "MISC", "False", KnowledgeStone},
+      {"None", "MISC", "false", KnowledgeStone},
     }
   },
   {
     {"WORD_STATION_R"},
     {
-      {"None", "MISC", "False", WordStation},
+      {"None", "MISC", "false", WordStation},
     }
   },
   {
     {"WORD_ATLAS_ORB"},
     {
-      {"Atlas", "MISC", "False", Atlas_Orb},
+      {"Atlas", "MISC", "false", Atlas_Orb},
     }
   },
 }
@@ -711,11 +711,11 @@ local RewardTable = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]        = "More Words.pak",
+["MOD_FILENAME"]        = "More Words",
 ["MOD_AUTHOR"]          = "Reikokuu & Babscoole",
 ["LUA_AUTHOR"]          = "Wbertro (speedup)",
 ["MOD_DESCRIPTION"]     = "Increases the amount of words learn from NPCs, Knowledge Stones, Encyclopedias, Monoliths, and Atlas Orbs",
-["NMS_VERSION"]         = "5.29",
+["NMS_VERSION"]         = "5.73",
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE",
 ["MODIFICATIONS"]       =
     {
@@ -724,26 +724,29 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = RewardTable,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "WORD"},
                             ["SEC_SAVE_TO"] = "ADD_NewReward",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "WORD"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WORD", "List", "GcRewardTableItem"},
                             ["SEC_SAVE_TO"] = "ADD_AddWord",
                         },
                     },
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = AlienPuzzle,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value", "GIVE_HYPERDRIVE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rewards", "GIVE_HYPERDRIVE"},
                             ["SEC_SAVE_TO"] = "ADD_AddReward",
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_AddReward",
+                            ["REMOVE"] = "HBOS",
                         },
                     },
 
@@ -754,7 +757,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
@@ -767,7 +770,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\WORDSTATION\ENTITIES\WORDSTATION.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
@@ -780,7 +783,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\ATLASSTATION\MODULARPARTS\INTERIOR\PATHORB\PATHORB\ENTITIES\ORBSTONE_1.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Reward", "TEACHWORD_ATLAS"},
@@ -796,7 +799,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 -- Helper Functions
 local function tableUnion(t1,t2)
@@ -842,8 +845,8 @@ for i = 1, #WordChanges do
 
   RewardTable[#RewardTable+1] =
   {
-    ["SPECIAL_KEY_WORDS"] = {"Id", WordID, "UseCategory", "False"},
-    ["SECTION_UP_SPECIAL"] = 1,
+    ["SPECIAL_KEY_WORDS"] = {"Id", WordID, "UseCategory", "false"},
+    ["SECTION_UP_SPECIAL"] = 2,
     ["REMOVE"] = "SECTION",
   }
 
@@ -893,6 +896,7 @@ for i = 1, #NewWordChanges do
     RewardTable[#RewardTable+1] =
     {
       ["SEC_EDIT"] = "ADD_NewReward",
+      SEC_KEEP = true,
       ["VALUE_CHANGE_TABLE"] =
       {
          {"Id",        NewWordID},
@@ -992,19 +996,34 @@ function ProcessAlienPuzzleTable(TheData)
   if processMonolithChanges then
     print([[    ***  Processing MonolithChanges  ***]])
 
-
     local AddReward_table = TheData["Sections"]["ADD_AddReward"]
+
+    if DEBUG then
+      print()
+      print("ADD_AddReward: Original")
+      for i=1,#AddReward_table do
+        print(" --> "..AddReward_table[i])
+      end
+      print()
+    end
 
     local currentWordID = "__currentWordID__"
     local currentWordIDLine = 0
-    for i=1,#AddReward_table do
-      if string.find(AddReward_table[i],[["Value"]]) then
-
+    for i=1,#AddReward_table do --Wbertro: was 2
+      if string.find(AddReward_table[i]:upper(),[["REWARDS"]],1,true) and string.find(AddReward_table[i],[[ value=]],1,true) then
         currentWordID = string.match(AddReward_table[i],[[^.+ue="(.-)".+]])
+        Dprint("currentWordID = ["..tostring(currentWordID).."]")
+        if currentWordID == "__currentWordID__" then
+          print("WARNING: Could not find currentWordID in: "..AddReward_table[i])
+        end
         currentWordIDLine = i
         break
       end
     end
+    if currentWordIDLine == 0 then
+      print("WARNING: Could not find currentWordID in Saved Section [ADD_AddReward]")
+    end
+    Dprintf("currentWordIDLine = %d",currentWordIDLine)
 
     local fastKey1Table,count = CreateFastAccessKey1Table(MonolithChanges)
 
@@ -1056,7 +1075,6 @@ function ProcessAlienPuzzleTable(TheData)
     local changeCount = 0
     local previousWordID = currentWordID
 
-
     if DEBUG then
       printf("#RewardLinesSorted = %d",#RewardLinesSorted)
       for i=1,#RewardLinesSorted do
@@ -1083,9 +1101,11 @@ function ProcessAlienPuzzleTable(TheData)
       Dprintf([[  line %d:       {"%s", "%s", %d},]],addLineInExml,OptionName,WordID,Amount - 1)
 
       if WordID ~= previousWordID then
-
-        AddReward_table[currentWordIDLine] = AddReward_table[currentWordIDLine]:gsub(previousWordID,WordID)
-
+        if AddReward_table[currentWordIDLine] then -- skip when nil
+          AddReward_table[currentWordIDLine] = AddReward_table[currentWordIDLine]:gsub(previousWordID,WordID)
+        else
+          print("WARNING: AddReward_table["..currentWordIDLine.."] is nil")
+        end
         previousWordID = WordID
       end
 
@@ -1127,16 +1147,32 @@ function ProcessAlienPuzzleTable(TheData)
 
     local AddReward_table = TheData["Sections"]["ADD_AddReward"]
 
+    if DEBUG then
+      print()
+      print("ADD_AddReward: Original")
+      for i=1,#AddReward_table do
+        print(" --> "..AddReward_table[i])
+      end
+      print()
+    end
+
     local currentWordID = "__currentWordID__"
     local currentWordIDLine = 0
-    for i=1,#AddReward_table do
-      if string.find(AddReward_table[i],[["Value"]]) then
-
+    for i=1,#AddReward_table do --Wbertro: was 2
+      if string.find(AddReward_table[i]:upper(),[["REWARDS"]],1,true) and string.find(AddReward_table[i],[[ value=]],1,true) then
         currentWordID = string.match(AddReward_table[i],[[^.+ue="(.-)".+]])
+        Dprint("currentWordID = ["..tostring(currentWordID).."]")
+        if currentWordID == "__currentWordID__" then
+          print("WARNING: Could not find currentWordID in: "..AddReward_table[i])
+        end
         currentWordIDLine = i
         break
       end
     end
+    if currentWordIDLine == 0 then
+      print("WARNING: Could not find currentWordID in Saved Section [ADD_AddReward]")
+    end
+    Dprintf("currentWordIDLine = %d",currentWordIDLine)
 
     local fastOptionName,count = CreateFastAccessChangeInfoTable(PlaqueChanges)
 
@@ -1203,9 +1239,11 @@ function ProcessAlienPuzzleTable(TheData)
       Dprintf([[  line %d:       {"%s", "%s", %d},]],addLineInExml,OptionName,WordID,Amount - 1)
 
       if WordID ~= previousWordID then
-
-        AddReward_table[currentWordIDLine] = AddReward_table[currentWordIDLine]:gsub(previousWordID,WordID)
-
+        if AddReward_table[currentWordIDLine] then
+          AddReward_table[currentWordIDLine] = AddReward_table[currentWordIDLine]:gsub(previousWordID,WordID)
+        else
+          print("WARNING: AddReward_table["..currentWordIDLine.."] is nil")
+        end
         previousWordID = WordID
       end
 

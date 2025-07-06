@@ -797,7 +797,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             TECH_COMP = {Type = 'Product', Amount = 5},
-            BLUE2 = {Type = 'Substance ', Amount = 100},
+            BLUE2 = {Type = 'Substance', Amount = 100},
             GRENFUEL1 = {Type = 'Product', Amount = 10}
         }
     },
@@ -818,7 +818,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             TECH_COMP = {Type = 'Product', Amount = 5},
-            BLUE2 = {Type = 'Substance ', Amount = 100},
+            BLUE2 = {Type = 'Substance', Amount = 100},
             GRENFUEL1 = {Type = 'Product', Amount = 10}
         }
     },
@@ -839,7 +839,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             TECH_COMP = {Type = 'Product', Amount = 5},
-            BLUE2 = {Type = 'Substance ', Amount = 100},
+            BLUE2 = {Type = 'Substance', Amount = 100},
             HYPERFUEL2 = {Type = 'Product', Amount = 100}
         }
     },
@@ -861,7 +861,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             TECH_COMP = {Type = 'Product', Amount = 5},
-            BLUE2 = {Type = 'Substance ', Amount = 100},
+            BLUE2 = {Type = 'Substance', Amount = 100},
             JELLY = {Type = 'Product', Amount = 100}
         }
     },
@@ -948,7 +948,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             TECH_COMP = {Type = 'Product', Amount = 5},
-            BLUE2 = {Type = 'Substance ', Amount = 500},
+            BLUE2 = {Type = 'Substance', Amount = 500},
             COMPOUND4 = {Type = 'Product', Amount = 10}
         }
     },
@@ -969,7 +969,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             COLD1 = {Type = 'Substance', Amount = 300},
-            ASTEROID1 = {Type = 'Substance ', Amount = 120},
+            ASTEROID1 = {Type = 'Substance', Amount = 120},
             YELLOW2 = {Type = 'Substance', Amount = 150}
         }
     },
@@ -990,7 +990,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             COLD1 = {Type = 'Substance', Amount = 1000},
-            ASTEROID1 = {Type = 'Substance ', Amount = 500},
+            ASTEROID1 = {Type = 'Substance', Amount = 500},
             YELLOW2 = {Type = 'Substance', Amount = 500}
         }
     },
@@ -1011,7 +1011,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             COLD1 = {Type = 'Substance', Amount = 300},
-            ASTEROID1 = {Type = 'Substance ', Amount = 120},
+            ASTEROID1 = {Type = 'Substance', Amount = 120},
             FARMPROD4 = {Type = 'Product', Amount = 1}
         }
     },
@@ -1032,7 +1032,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             HOT1 = {Type = 'Substance', Amount = 300},
-            ASTEROID1 = {Type = 'Substance ', Amount = 120},
+            ASTEROID1 = {Type = 'Substance', Amount = 120},
             YELLOW2 = {Type = 'Substance', Amount = 150}
         }
     },
@@ -1053,7 +1053,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             HOT1 = {Type = 'Substance', Amount = 1000},
-            ASTEROID1 = {Type = 'Substance ', Amount = 500},
+            ASTEROID1 = {Type = 'Substance', Amount = 500},
             YELLOW2 = {Type = 'Substance', Amount = 500}
         }
     },
@@ -1074,7 +1074,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             HOT1 = {Type = 'Substance', Amount = 300},
-            ASTEROID1 = {Type = 'Substance ', Amount = 120},
+            ASTEROID1 = {Type = 'Substance', Amount = 120},
             SALVAGE_TECH5 = {Type = 'Product', Amount = 1}
         }
     },
@@ -1095,7 +1095,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             TOXIC1 = {Type = 'Substance', Amount = 300},
-            ASTEROID1 = {Type = 'Substance ', Amount = 120},
+            ASTEROID1 = {Type = 'Substance', Amount = 120},
             YELLOW2 = {Type = 'Substance', Amount = 150}
         }
     },
@@ -1116,7 +1116,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             TOXIC1 = {Type = 'Substance', Amount = 1000},
-            ASTEROID1 = {Type = 'Substance ', Amount = 500},
+            ASTEROID1 = {Type = 'Substance', Amount = 500},
             YELLOW2 = {Type = 'Substance', Amount = 500}
         }
     },
@@ -1137,7 +1137,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             TOXIC1 = {Type = 'Substance', Amount = 300},
-            ASTEROID1 = {Type = 'Substance ', Amount = 120},
+            ASTEROID1 = {Type = 'Substance', Amount = 120},
             OXY_CRAFT = {Type = 'Product', Amount = 1}
         }
     },
@@ -1158,7 +1158,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             RADIO1 = {Type = 'Substance', Amount = 300},
-            ASTEROID1 = {Type = 'Substance ', Amount = 120},
+            ASTEROID1 = {Type = 'Substance', Amount = 120},
             YELLOW2 = {Type = 'Substance', Amount = 150}
         }
     },
@@ -1179,7 +1179,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             RADIO1 = {Type = 'Substance', Amount = 1000},
-            ASTEROID1 = {Type = 'Substance ', Amount = 500},
+            ASTEROID1 = {Type = 'Substance', Amount = 500},
             YELLOW2 = {Type = 'Substance', Amount = 500}
         }
     },
@@ -1200,7 +1200,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             RADIO1 = {Type = 'Substance', Amount = 300},
-            ASTEROID1 = {Type = 'Substance ', Amount = 120},
+            ASTEROID1 = {Type = 'Substance', Amount = 120},
             WATER_CRAFT = {Type = 'Product', Amount = 50}
         }
     },
@@ -1221,7 +1221,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             YELLOW2 = {Type = 'Substance', Amount = 150},
-            ASTEROID1 = {Type = 'Substance ', Amount = 120},
+            ASTEROID1 = {Type = 'Substance', Amount = 120},
             JELLY = {Type = 'Product', Amount = 50}
         }
     },
@@ -1242,7 +1242,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             ASTEROID1 = {Type = 'Substance', Amount = 500},
-            VENTGEM = {Type = 'Product ', Amount = 100},
+            VENTGEM = {Type = 'Product', Amount = 100},
             PRODFUEL2 = {Type = 'Product', Amount = 100}
         }
     },
@@ -1268,7 +1268,7 @@ local Custom_Upgrade_Technology =
         Requirements =
         {
             GRENFUEL1 = {Type = 'Product', Amount = 3},
-            FUEL2 = {Type = 'Product', Amount = 60},
+            FUEL2 = {Type = 'Substance', Amount = 60},
             TECH_COMP = {Type = 'Product', Amount = 2}
         }
     },
@@ -1702,25 +1702,25 @@ local Unlockable_Item_Trees =
             { Upgrade_Base = 'UC_DRIFT', Highest_Class_No = 4, Lowest_Class_No = 1 },
             { Upgrade_Base = 'UC_EXOB', Highest_Class_No = 4, Lowest_Class_No = 1 }
         }
-    },
-    Freighter_Page1 =
-    {
-        Item_Trees_Property_Name = 'FreighterTech',
-        Item_Tree_Main_Tree = 'UI_FREIGHTER_TREE',
-        Item_Tree_Page = 'UI_TECH_TREE_SUB',
-        Root_Tech = 'FRIGATE_FUEL_1',
-        Cost_Type = Cost_Types.NANITES,
-        Upgrade_Data = {}
-    },
-    Factory_Page1 =
-    {
-        Item_Trees_Property_Name = 'CraftProducts',
-        Item_Tree_Main_Tree = 'UI_PRODUCT_TREE',
-        Item_Tree_Page = 'UI_PRODUCT_TREE_FARM',
-        Root_Tech = 'PRODFUEL2',
-        Cost_Type = Cost_Types.FACTORY,
-        Upgrade_Data = {}
     }
+    -- Freighter_Page1 =
+    -- {
+    --     Item_Trees_Property_Name = 'FreighterTech',
+    --     Item_Tree_Main_Tree = 'UI_FREIGHTER_TREE',
+    --     Item_Tree_Page = 'UI_TECH_TREE_SUB',
+    --     Root_Tech = 'FRIGATE_FUEL_1',
+    --     Cost_Type = Cost_Types.NANITES,
+    --     Upgrade_Data = {}
+    -- },
+    -- Factory_Page1 =
+    -- {
+    --     Item_Trees_Property_Name = 'CraftProducts',
+    --     Item_Tree_Main_Tree = 'UI_PRODUCT_TREE',
+    --     Item_Tree_Page = 'UI_PRODUCT_TREE_FARM',
+    --     Root_Tech = 'PRODFUEL2',
+    --     Cost_Type = Cost_Types.FACTORY,
+    --     Upgrade_Data = {}
+    -- }
 }
 ----------------------------------------------------------------------------------------------
 -------------------------------     USER INPUT     -------------------------------------------
@@ -1744,10 +1744,9 @@ Class_Choice = GUIF(Input_Class_Choice, 10)
 ----------------------------------------------------------------------------------------------
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    MOD_FILENAME = Mode_Name..'.pak',
-    MOD_DESCRIPTION = 'Custom mods',
+    MOD_FILENAME = Mode_Name,
+    MOD_DESCRIPTION = 'Custom Mods Galore',
     MOD_AUTHOR = Author,
-    ADD_FILES = {},
     MODIFICATIONS =
     {
         {
@@ -1755,39 +1754,37 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     MBIN_FILE_SOURCE = Product_Table_Path,
-                    EXML_CHANGE_TABLE = {}
+                    MXML_CHANGE_TABLE = {}
                 },
                 {
                     MBIN_FILE_SOURCE = Technology_Table_Path,
-                    EXML_CHANGE_TABLE = {}
+                    MXML_CHANGE_TABLE = {}
                 },
                 {
                     MBIN_FILE_SOURCE = Procedural_Technology_Table_Path,
-                    EXML_CHANGE_TABLE = {}
+                    MXML_CHANGE_TABLE = {}
                 },
                 {
                     MBIN_FILE_SOURCE = Default_Reality_Path,
-                    EXML_CHANGE_TABLE = {}
+                    MXML_CHANGE_TABLE = {}
                 },
                 {
                     MBIN_FILE_SOURCE = Unlockable_Item_Trees_Path,
-                    EXML_CHANGE_TABLE = {}
+                    MXML_CHANGE_TABLE = {}
                 },
                 {
                     MBIN_FILE_SOURCE = English_Path,
-                    EXML_CHANGE_TABLE = {}
+                    MXML_CHANGE_TABLE = {}
                 },
                 {
                     MBIN_FILE_SOURCE = 'GCDEBUGOPTIONS.GLOBAL.MBIN',
-                    EXML_CHANGE_TABLE =
+                    MXML_CHANGE_TABLE =
                     {
                         {
                             PRECEDING_KEY_WORDS = {'LocTableList'},
                             ADD =
                             [[
-                                <Property value='NMSString0x20.xml'>
-                                    <Property name='Value' value='NMS_]]..Custom_Language_Tag..[[' />
-                                </Property>
+                                <Property name="LocTableList" value="NMS_]]..Custom_Language_Tag..[[" _index="8" />
                             ]]
                         }
                     }
@@ -1797,12 +1794,12 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-local Changes_To_Product_Table = NMS_MOD_DEFINITION_CONTAINER['MODIFICATIONS'][1]['MBIN_CHANGE_TABLE'][1]['EXML_CHANGE_TABLE']
-local Changes_To_Technology_Table = NMS_MOD_DEFINITION_CONTAINER['MODIFICATIONS'][1]['MBIN_CHANGE_TABLE'][2]['EXML_CHANGE_TABLE']
-local Changes_To_Procedural_Technology_Table = NMS_MOD_DEFINITION_CONTAINER['MODIFICATIONS'][1]['MBIN_CHANGE_TABLE'][3]['EXML_CHANGE_TABLE']
-local Changes_To_Default_Reality = NMS_MOD_DEFINITION_CONTAINER['MODIFICATIONS'][1]['MBIN_CHANGE_TABLE'][4]['EXML_CHANGE_TABLE']
-local Changes_To_Unlockable_Item_Trees = NMS_MOD_DEFINITION_CONTAINER['MODIFICATIONS'][1]['MBIN_CHANGE_TABLE'][5]['EXML_CHANGE_TABLE']
-local Changes_To_Language = NMS_MOD_DEFINITION_CONTAINER['MODIFICATIONS'][1]['MBIN_CHANGE_TABLE'][6]['EXML_CHANGE_TABLE']
+local Changes_To_Product_Table = NMS_MOD_DEFINITION_CONTAINER['MODIFICATIONS'][1]['MBIN_CHANGE_TABLE'][1]['MXML_CHANGE_TABLE']
+local Changes_To_Technology_Table = NMS_MOD_DEFINITION_CONTAINER['MODIFICATIONS'][1]['MBIN_CHANGE_TABLE'][2]['MXML_CHANGE_TABLE']
+local Changes_To_Procedural_Technology_Table = NMS_MOD_DEFINITION_CONTAINER['MODIFICATIONS'][1]['MBIN_CHANGE_TABLE'][3]['MXML_CHANGE_TABLE']
+local Changes_To_Default_Reality = NMS_MOD_DEFINITION_CONTAINER['MODIFICATIONS'][1]['MBIN_CHANGE_TABLE'][4]['MXML_CHANGE_TABLE']
+local Changes_To_Unlockable_Item_Trees = NMS_MOD_DEFINITION_CONTAINER['MODIFICATIONS'][1]['MBIN_CHANGE_TABLE'][5]['MXML_CHANGE_TABLE']
+local Changes_To_Language = NMS_MOD_DEFINITION_CONTAINER['MODIFICATIONS'][1]['MBIN_CHANGE_TABLE'][6]['MXML_CHANGE_TABLE']
 ----------------------------------------------------------------------------------------------
 -------------------------------     Creating Masters     -------------------------------------
 ----------------------------------------------------------------------------------------------
@@ -1862,8 +1859,7 @@ end
 function Create_Requirement(master_name, Requirement_ID, Requirement_Inventory_Type, Requirement_Amount)
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
-        SPECIAL_KEY_WORDS = {'ID', 'CASING'},
-        PRECEDING_KEY_WORDS = {'GcTechnologyRequirement.xml'},
+        SPECIAL_KEY_WORDS = {'ID', 'CASING', 'Requirements', 'GcTechnologyRequirement'},
         SEC_SAVE_TO = 'SINGLE_REQ'
     }
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
@@ -1913,8 +1909,7 @@ end
 function Create_Stat_Bonus(stat_bonus)
     Changes_To_Technology_Table[#Changes_To_Technology_Table + 1] =
     {
-        SPECIAL_KEY_WORDS = {'ID', 'UT_SHIPLAS'},
-        PRECEDING_KEY_WORDS = {'GcStatsBonus.xml'},
+        SPECIAL_KEY_WORDS = {'ID', 'UT_SHIPLAS', 'StatBonuses', 'GcStatsBonus'},
         SEC_SAVE_TO = 'SINGLE_STATBONUS'
     }
     Changes_To_Technology_Table[#Changes_To_Technology_Table + 1] =
@@ -1951,8 +1946,7 @@ end
 function Create_Stat_Level(stat_level, multiplier_per_rank, base_for_multiplier)
     Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
     {
-        SPECIAL_KEY_WORDS = {'ID', 'UP_LASER1'},
-        PRECEDING_KEY_WORDS = {'GcProceduralTechnologyStatLevel.xml'},
+        SPECIAL_KEY_WORDS = {'ID', 'UP_LASER1', 'StatLevels', 'GcProceduralTechnologyStatLevel'},
         SEC_SAVE_TO = 'SINGLE_STATLEVEL'
     }
 
@@ -1972,7 +1966,7 @@ function Create_Stat_Level(stat_level, multiplier_per_rank, base_for_multiplier)
     Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
     {
         SEC_EDIT = 'SINGLE_STATLEVEL',
-        SPECIAL_KEY_WORDS = {'WeightingCurve', 'GcWeightingCurve.xml'},
+        SPECIAL_KEY_WORDS = {'WeightingCurve', 'GcWeightingCurve'},
         VALUE_CHANGE_TABLE =
         {
             {'WeightingCurve', stat_level.Weighting_Curve}
@@ -2054,7 +2048,7 @@ function Create_New_Technology()
         Changes_To_Technology_Table[#Changes_To_Technology_Table + 1] =
         {
             SEC_EDIT = new_technology_id..'_TECHSEC',
-            PRECEDING_KEY_WORDS = {'Rarity'},
+            SPECIAL_KEY_WORDS = {'Rarity', 'GcTechnologyRarity'},
             VALUE_CHANGE_TABLE =
             {
                 {'TechnologyRarity', technology_data.Technology_Rarity}
@@ -2063,14 +2057,14 @@ function Create_New_Technology()
         Changes_To_Technology_Table[#Changes_To_Technology_Table + 1] =
         {
             SEC_EDIT = new_technology_id..'_TECHSEC',
-            PRECEDING_KEY_WORDS = {'GcTechnologyRequirement.xml'},
+            SPECIAL_KEY_WORDS = {'Requirements', 'GcTechnologyRequirement'},
             REPLACE_TYPE = 'ALL',
             REMOVE = 'SECTION'
         }
         Changes_To_Technology_Table[#Changes_To_Technology_Table + 1] =
         {
             SEC_EDIT = new_technology_id..'_TECHSEC',
-            PRECEDING_KEY_WORDS = {'GcStatsBonus.xml'},
+            SPECIAL_KEY_WORDS = {'StatBonuses', 'GcStatsBonus'},
             REPLACE_TYPE = 'ALL',
             REMOVE = 'SECTION'
         }
@@ -2104,23 +2098,24 @@ end
 -------------------------------     Creating Shopentries     --------------------------------
 ----------------------------------------------------------------------------------------------
 function Create_Shop_Entry(entry_ID, trade_setting)
-    Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
-    {
-        PRECEDING_KEY_WORDS = {'TradeSettings', 'SpaceStation', 'AlwaysPresentProducts', 'NMSString0x10.xml'},
-        SEC_SAVE_TO = 'SHOP_ENTRY'
-    }
-    Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
-    {
-        SEC_EDIT = 'SHOP_ENTRY',
-        VALUE_CHANGE_TABLE =
-        {
-            {'Value', entry_ID}
-        }
-    }
+    -- Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
+    -- {
+    --     PRECEDING_KEY_WORDS = {'TradeSettings', 'SpaceStation', 'AlwaysPresentProducts', 'AlwaysPresentProducts'},
+    --     SEC_SAVE_TO = 'SHOP_ENTRY'
+    -- }
+    -- Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
+    -- {
+    --     SEC_EDIT = 'SHOP_ENTRY',
+    --     VALUE_CHANGE_TABLE =
+    --     {
+    --         {'Value', entry_ID}
+    --     }
+    -- }
     Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
     {
         SEC_EDIT = 'SHOP_'..string.upper(trade_setting)..'_MASTER_SEC',
-        SEC_ADD_NAMED = 'SHOP_ENTRY'
+        -- SEC_ADD_NAMED = 'SHOP_ENTRY'
+        ADD = [[<Property name="OptionalProducts" value="]]..entry_ID..[[" />]]
     }
 end
 ----------------------------------------------------------------------------------------------
@@ -2152,7 +2147,7 @@ function Deployable_Technology_Product(product_Id, procedural_Technology_Id, pro
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         SEC_EDIT = product_Id..'_PRODSEC',
-        PRECEDING_KEY_WORDS = {'Icon'},
+        SPECIAL_KEY_WORDS = {'Icon', 'TkTextureResource'},
         VALUE_CHANGE_TABLE =
         {
             {'Filename', 'TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PROCTECH/PROCTECH.'..class..'.'..product_data.File_Name},
@@ -2161,7 +2156,7 @@ function Deployable_Technology_Product(product_Id, procedural_Technology_Id, pro
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         SEC_EDIT = product_Id..'_PRODSEC',
-        SPECIAL_KEY_WORDS = {'CraftAmountMultiplier', '1'},
+        -- SPECIAL_KEY_WORDS = {'CraftAmountMultiplier', '1'},
         PRECEDING_KEY_WORDS = {'Requirements'},
         CREATE_HOS = 'TRUE',
         SEC_ADD_NAMED = Requirement_key
@@ -2207,7 +2202,7 @@ function Pocedural_Technology(procedural_technology_Id, proc_tech_copy_ID, Base_
     Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
     {
         SEC_EDIT = procedural_technology_Id..'_PROCSEC',
-        PRECEDING_KEY_WORDS = {'GcProceduralTechnologyStatLevel.xml'},
+        SPECIAL_KEY_WORDS = {'StatLevels', 'GcProceduralTechnologyStatLevel'},
         REPLACE_TYPE = 'ALL',
         REMOVE = 'SECTION'
     }
@@ -2264,14 +2259,14 @@ end
 function Create_New_Tree_Root(item_tree_page_name, item_Trees_Property_Name, tree_Root, cost_Type)
     Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
     {
-        SPECIAL_KEY_WORDS = {item_Trees_Property_Name, 'GcUnlockableItemTrees.xml'},
-        PRECEDING_KEY_WORDS = {'Trees', 'GcUnlockableItemTree.xml'},
+        SPECIAL_KEY_WORDS = {item_Trees_Property_Name, 'GcUnlockableItemTrees', 'Trees', 'GcUnlockableItemTree'},
+        -- PRECEDING_KEY_WORDS = {'Trees', 'GcUnlockableItemTree.xml'},
         SEC_SAVE_TO = item_tree_page_name..'_ROOT_SEC'
     }
     Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
     {
         SEC_EDIT = item_tree_page_name..'_ROOT_SEC',
-        PRECEDING_KEY_WORDS = { 'GcUnlockableItemTreeNode.xml'},
+        SPECIAL_KEY_WORDS = {'Children', 'GcUnlockableItemTreeNode'},
         REPLACE_TYPE = 'ALL',
         REMOVE = 'SECTION'
     }
@@ -2286,7 +2281,7 @@ function Create_New_Tree_Root(item_tree_page_name, item_Trees_Property_Name, tre
     Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
     {
         SEC_EDIT = item_tree_page_name..'_ROOT_SEC',
-        PRECEDING_KEY_WORDS = {'Root'},
+        SPECIAL_KEY_WORDS = {'Root', 'GcUnlockableItemTreeNode'},
         VALUE_CHANGE_TABLE =
         {
             {'Unlockable', tree_Root}
@@ -2297,7 +2292,7 @@ end
 function Create_Item_Tree_Node(upgrade_Mod_ID)
     Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
     {
-        SPECIAL_KEY_WORDS = {'BaseParts', 'GcUnlockableItemTrees.xml', 'Unlockable', 'MAINROOMFRAME'},
+        SPECIAL_KEY_WORDS = {'BaseParts', 'GcUnlockableItemTrees', 'Unlockable', 'MAINROOMFRAME'},
         SEC_SAVE_TO = upgrade_Mod_ID..'_ITEM_TREE_NODE'
     }
     Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
@@ -2433,10 +2428,10 @@ end
 -------------------------------     Language file creation     -------------------------------
 ----------------------------------------------------------------------------------------------
 local Changes_To_Mbin_Change_Table = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
-function Create_Langauge_Masters()
+function Create_Language_Masters()
     Changes_To_Language[#Changes_To_Language + 1] =
     {
-        PRECEDING_KEY_WORDS = {'TkLocalisationEntry.xml'},
+        SPECIAL_KEY_WORDS = {'Table', 'TkLocalisationEntry'},
         SEC_SAVE_TO = 'EMPTY_LOCAL_ENTRY_MASTER'
     }
     Changes_To_Language[#Changes_To_Language + 1] =
@@ -2445,7 +2440,7 @@ function Create_Langauge_Masters()
         VALUE_CHANGE_TABLE =
         {
             {'English', ''}
-        }
+        },
     }
 end
 
@@ -2460,7 +2455,7 @@ function New_Empty_Language_File(New_Language_File_Name)
     Changes_To_Mbin_Change_Table[#Changes_To_Mbin_Change_Table + 1] =
     {
         MBIN_FILE_SOURCE= New_Language_File_Name,
-        EXML_CHANGE_TABLE =
+        MXML_CHANGE_TABLE =
         {
             {
                 PRECEDING_KEY_WORDS = {'Table'},
@@ -2471,11 +2466,17 @@ function New_Empty_Language_File(New_Language_File_Name)
     Changes_To_Mbin_Change_Table[#Changes_To_Mbin_Change_Table + 1] =
     {
         MBIN_FILE_SOURCE = New_Language_File_Name,
-        EXML_CHANGE_TABLE =
+        MXML_CHANGE_TABLE =
         {
             {
-                LINE_OFFSET = {3},
-                ADD = [[<Property name="Table"></Property>]]
+                LINE_OFFSET = "3",
+                -- needs to be " quotes
+                -- 2 spaces == 1 tab in MXML
+                ADD = [[  <Property name="Table">]]
+            },
+            {
+                LINE_OFFSET = "4",
+                ADD = [[  </Property>]]
             }
         }
     }
@@ -2577,7 +2578,7 @@ function Fill_Custom_Language_File(Language, Language_Values)
 end
 
 function Add_Custom_Language_String()
-    Create_Langauge_Masters()
+    Create_Language_Masters()
     for Language , Language_Values in pairs(Language_Data) do
         New_Language_File_Name = 'LANGUAGE/NMS_'..string.upper(Custom_Language_Tag)..'_'..string.upper(Language)..'.MBIN'
         New_Empty_Language_File(New_Language_File_Name)
@@ -2587,7 +2588,7 @@ function Add_Custom_Language_String()
         Changes_To_Mbin_Change_Table[#Changes_To_Mbin_Change_Table + 1] =
         {
             MBIN_FILE_SOURCE = New_Language_File_Name,
-            EXML_CHANGE_TABLE =
+            MXML_CHANGE_TABLE =
             {
                 {
                     PRECEDING_KEY_WORDS = {'Table'},
@@ -2609,6 +2610,7 @@ Create_New_Pocedural_Technology_Products()
 Create_New_Item_Trees()
 Add_Technologies_To_Item_Trees()
 Edit_Existing_Technology_Stats()
+
 Add_Masters_Sec()
 
 Add_Custom_Language_String()

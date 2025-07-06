@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyRewards.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "5.0",
+    ["NMS_VERSION"]   = "5.63",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
@@ -19,9 +19,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         --#region Repair trader's ship
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "R_TRADE_REPAIR", "AlienRace", "None" },
-                            ["SECTION_UP"]         = 2,
+                            ["SECTION_UP"]         = 3,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "PercentageChance", 50 }, -- 100
+                                { "PercentageChance", 50.0 }, -- 100
                             }
                         },
                         {

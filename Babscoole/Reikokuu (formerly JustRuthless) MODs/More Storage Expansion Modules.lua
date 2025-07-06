@@ -191,10 +191,10 @@ AddLoot =
 -----------------------------------------------------------
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "More Storage Expansion Modules.pak",
+["MOD_FILENAME"]    = "More Storage Expansion Modules",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Increases the chance and amount of multitool, ship, and freighter storage modules rewards",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -202,11 +202,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEAP_TOKEN"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEAP_TOKEN", "List", "GcRewardTableItem"},
                             ["SEC_SAVE_TO"] = "ADD_NewLoot",
                         },-- RewardTable
                     }
@@ -216,7 +215,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #RewardChanges do
   local ListID = RewardChanges[i][1][1]
@@ -231,7 +230,7 @@ for i = 1, #RewardChanges do
     RewardTable[#RewardTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", ListID, "ID", LootID},
-      ["SECTION_UP_SPECIAL"] = 1,
+      ["SECTION_UP"] = 2,
       ["VALUE_CHANGE_TABLE"] =
       {
         {"AmountMin",        Min},

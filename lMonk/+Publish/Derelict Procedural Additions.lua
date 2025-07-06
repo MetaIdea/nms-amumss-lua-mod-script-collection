@@ -11,16 +11,16 @@ local mod_desc = [[
 --	Generate an EXML-tagged text from a lua table representation of exml class
 --	@param class: a lua2exml formatted table
 local function ToExml(class)
+	--	Get the count of ALL objects in a table (non-recursive)
+	--	@param t: any table
+	local function len2(t)
+		if type(t) ~= 'table' then return -1 end
+		i=0; for _ in pairs(t) do i=i+1 end; return i
+	end
 	--	replace a boolean with its text equivalent (ignore otherwise)
 	--	@param b: any value
-	function bool(b)
-		return (type(b) == 'boolean') and ((b == true) and 'True' or 'False') or b
-	end
-
-	--	get the count of ALL objects in a table (non-recursive)
-	--	@param t: any table
-	function len2(t)
-		i=0; for _ in pairs(t) do i=i+1 end; return i
+	local function bool(b)
+		return (type(b) == 'boolean') and ((b == true) and 'true' or 'false') or b
 	end
 	local function exml_r(tlua)
 		local exml = {}
@@ -31,16 +31,19 @@ local function ToExml(class)
 			if key ~= 'meta' then
 				exml[#exml+1] = '<Property '
 				if type(cls) == 'table' and cls.meta then
-					local att, val = cls['meta'][1], cls['meta'][2]
+					local att, val, lnk = cls['meta'][1], cls['meta'][2], cls['meta'][3]
 					-- add and recurs for an inner table
 					if att == 'name' or att == 'value' then
-						exml:add({att, '="', val, '">'})
+						exml:add({att, '="', val})
 					else
-						exml:add({'name="', att, '" value="', val, '">'})
+						exml:add({'name="', att, '" value="', val})
+						if lnk then
+							exml:add({'" linked="', lnk})
+						end
 					end
-					exml:add({exml_r(cls), '</Property>'})
+					exml:add({'">', exml_r(cls), '</Property>'})
 				else
-					-- add normal property
+					-- add a regular property
 					if type(cls) == 'table' then
 						key, cls = next(cls)
 					end
@@ -62,7 +65,7 @@ local function ToExml(class)
 		return exml_r(class)
 	elseif class.meta and klen > 1 then
 		return exml_r( {class} )
-	-- concatenate unrelated exml sections, instead of nested inside each other
+	-- concatenate unrelated (instead of nested) exml sections
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
@@ -70,6 +73,7 @@ local function ToExml(class)
 		end
 		return table.concat(T)
 	end
+	return nil
 end
 
 --	Adds the xml header and data template
@@ -77,7 +81,7 @@ end
 --	@param data: a lua2exml formatted table
 --	@param template: an nms file template string
 local function FileWrapping(data, template)
-	local wrapper = '<Data template="%s">%s</Data>'
+	local wrapper = '<?xml version="1.0" encoding="utf-8"?><Data template="%s">%s</Data>'
 	if type(data) == 'string' then
 		return string.format(wrapper, template, data)
 	end
@@ -91,6 +95,22 @@ local function FileWrapping(data, template)
 	else
 		return string.format(wrapper, template, ToExml(data))
 	end
+end
+
+--	Determine if received is a single or multi-item
+--	then process items through the received function
+--	@param items: table of item properties or a non-keyed table of items (keys are ignored)
+--	@param acton: the function to process the items in the table
+local function ProcessOnenAll(items, acton)
+	-- first key = 1 means multiple entries
+	if next(items) == 1 then
+		local T = {}
+		for _,e in ipairs(items) do
+			T[#T+1] = acton(e)
+		end
+		return T
+	end
+	return acton(items)
 end
 
 --	Build a single -or list of TkSceneNodeData classes
@@ -123,7 +143,7 @@ local function ScNode(nodes)
 	--	Build a TkSceneNodeData class
 	local function sceneNode(props)
 		local T	= {
-			meta	= {'value', 'TkSceneNodeData.xml'},
+			meta	= {'Children', 'TkSceneNodeData'},
 			Name 				= props.name,
 			NameHash			= jenkinsHash(props.name),
 			Type				= props.ntype,
@@ -132,7 +152,7 @@ local function ScNode(nodes)
 		--	add TkTransformData class
 		props.form = props.form or {}
 		T.Form = {
-			meta	= {'Transform', 'TkTransformData.xml'},
+			meta	= {'Transform', 'TkTransformData'},
 			TransX	= (props.form.tx or props.form[1]) or nil,
 			TransY	= (props.form.ty or props.form[2]) or nil,
 			TransZ	= (props.form.tz or props.form[3]) or nil,
@@ -152,7 +172,7 @@ local function ScNode(nodes)
 			T.Attr = { meta = {'name', 'Attributes'} }
 			for nm, val in pairs(props.attr) do
 				T.Attr[#T.Attr+1] = {
-					meta	= {'value', 'TkSceneNodeAttributeData.xml'},
+					meta	= {'Attributes', 'TkSceneNodeAttributeData'},
 					Name	= nm,
 					Value	= val
 				}
@@ -167,18 +187,9 @@ local function ScNode(nodes)
 		end
 		return T
 	end
-	-----------------------------------------------------------------
-	local k,_ = next(nodes)
-	if k == 1 then
-	-- k=1 means the first of a list of unrelated, non-nested, nodes
-		local T = {}
-		for _,nd in ipairs(nodes) do
-				T[#T+1] = sceneNode(nd)
-		end
-		return T
-	end
-	return sceneNode(nodes)
+	return ProcessOnenAll(nodes, sceneNode)
 end
+
 -------------------------------------------------------------------------------
 local assets = {
 	{
@@ -309,26 +320,23 @@ end
 
 local function GenerateDescriptor()
 	local T = {
-		meta = {'template', 'TkModelDescriptorList'},
+		meta = {'template', 'cTkModelDescriptorList'},
 		List = {meta = {'name', 'List'}}
 	}
 	for _,group in ipairs(assets) do
 		local tmp = {
-			meta		= {'value', 'TkResourceDescriptorList.xml'},
+			meta		= {'List', 'TkResourceDescriptorList'},
 			TypeId		= group.name:upper(),
 			Descriptors	= {meta = {'name', 'Descriptors'}}
 		}
 		for i, scene in ipairs(group.node or group.desc) do
 			tmp.Descriptors[#tmp.Descriptors+1] = {
-				meta	= {'value', 'TkResourceDescriptorData.xml'},
+				meta	= {'Descriptors', 'TkResourceDescriptorData'},
 				Id		= (group.name..string.char(64 + i)):upper(),
 				Name	= group.name..string.char(64 + i),
 				ReferencePaths	= type(scene) == 'table' and {
 					meta = {'name','ReferencePaths'},
-					{
-						meta	= {'value', 'VariableSizeString.xml'},
-						Value	= scene.model
-					}
+					ReferencePaths = scene.model
 				} or nil
 			}
 		end
@@ -340,7 +348,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Derelict Procedural Additions.pak',
 	LUA_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.29',
+	NMS_VERSION			= '5.55',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{
@@ -358,30 +366,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}},
 	ADD_FILES	= {
 		{
-			FILE_DESTINATION = 'MODELS/SPACE/POI/DUNGEON.DESCRIPTOR.EXML',
+			FILE_DESTINATION = 'MODELS/SPACE/POI/DUNGEON.DESCRIPTOR.MXML',
 			FILE_CONTENT	 = FileWrapping(GenerateDescriptor())
 		},
 		{
-			FILE_DESTINATION = 'MODELS/COMMON/SHARED/ENTITIES/SPIN001.ENTITY.EXML',
+			FILE_DESTINATION = 'MODELS/COMMON/SHARED/ENTITIES/SPIN001.ENTITY.MXML',
 			FILE_CONTENT	 = FileWrapping({
-				meta = {'template', 'TkAttachmentData'},
+				meta = {'template','cTkAttachmentData'},
 				Components = {
-					meta = {'name', 'Components'},
+					meta = {'name','Components'},
 					{
-						meta = {'value','LinkableNMSTemplate.xml'},
-						Template = {
-							meta = {'Template','TkRotationComponentData.xml'},
-							Speed = 0.001,
-							Axis  = {
-								meta = {'Axis', 'Vector3f.xml'},
-								x = 1,
-								y = 1,
-								z = 1
+						meta = {'Components','TkRotationComponentData'},
+						TkRotationComponentData = {
+							meta = {'name','TkRotationComponentData'},
+							{Speed = 0.01},
+							{
+								meta = {'name','Axis'},
+								{X = 1},
+								{Y = 1},
+								{Z = 1}
 							},
-							AlwaysUpdate = true,
-							SyncGroup    = -1
-						},
-						Linked	= ''
+							{AlwaysUpdate = true},
+							{SyncGroup = -1}
+						}
 					}
 				}
 			})

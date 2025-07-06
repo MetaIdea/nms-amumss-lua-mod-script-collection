@@ -28,6 +28,8 @@ local dropship = {
 	engine_b =	{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/ENGINES/ENGINESB.SCENE.MBIN',							add=true},
 	engine_c =	{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/ENGINES/ENGINESC.SCENE.MBIN',							add=true},
 	engine_d =	{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/ENGINES/ENGINESD.SCENE.MBIN',							add=true},
+	s_wing_al =	{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSA/SUBWINGSA_LEFT.SCENE.MBIN',			add=true,	lod1=true},
+	s_wing_ar =	{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSA/SUBWINGSA_RIGHT.SCENE.MBIN',		add=true,	lod1=true},
 	s_wing_bl =	{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSB/SUBWINGSB_LEFT.SCENE.MBIN',			add=true,	lod1=true},
 	s_wing_br =	{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSB/SUBWINGSB_RIGHT.SCENE.MBIN',		add=true,	lod1=true},
 	s_wing_cl =	{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSC/SUBWINGSC_LEFT.SCENE.MBIN',			add=true},
@@ -62,17 +64,28 @@ local dropship = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Dropship Restoration.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '5.29',
+	NMS_VERSION				= '5.58',
 	MOD_DESCRIPTION			= mod_desc,
-	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
 		MBIN_CHANGE_TABLE		= {
+		{-- |dropship remove swing_a animation|
+			MBIN_FILE_SOURCE	= {
+				dropship.s_wing_al.src,
+				dropship.s_wing_ar.src
+			},
+			MXML_CHANGE_TABLE	= {
+				{
+					SPECIAL_KEY_WORDS	= {'Name', 'SubWing.-', 'Type', 'LOCATOR'},
+					REMOVE			 	= 'Section'
+				}
+			}
+		},
 		{-- |dropship interior lights|
 			MBIN_FILE_SOURCE	= {
 				dropship.inter_a.src,
 				dropship.inter_b.src,
 			},
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
 					REPLACE_TYPE 		= 'All',
 					SPECIAL_KEY_WORDS	= {'Name', 'INTENSITY'},
@@ -101,7 +114,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				dropship.s_wing_fl.src,
 				dropship.s_wing_fr.src,
 			},
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
 					SPECIAL_KEY_WORDS	= {'Name', 'Glow'},
 					VALUE_CHANGE_TABLE 	= {
@@ -110,10 +123,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					}
 				},
 				{
-					SPECIAL_KEY_WORDS 	= {
-						{'Name', 'pointLight1', 'Name', 'INTENSITY'},
-						{'Name', 'pointLight2', 'Name', 'INTENSITY'}
-					},
+					SPECIAL_KEY_WORDS 	= {'Name', 'pointLight[12]', 'Name', 'INTENSITY'},
 					VALUE_CHANGE_TABLE 	= {
 						{'Value',		26000}
 					}
@@ -122,7 +132,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{-- |dropship left subwing_F decal fix|
 			MBIN_FILE_SOURCE	= dropship.s_wing_fl.src,
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
 					SPECIAL_KEY_WORDS	= {'Name', '_Rectangle_A'},
 					VALUE_CHANGE_TABLE 	= {
@@ -141,12 +151,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{-- |dropship cockpit_A guns| placement
 			MBIN_FILE_SOURCE	= dropship.cockpit_a.src,
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
-					SPECIAL_KEY_WORDS	= {
-						{'Name',	'Gun1Ref1'},
-						{'Name',	'Gun1Ref2'},
-					},
+					SPECIAL_KEY_WORDS	= {'Name',	'Gun1Ref[12]'},
 					VALUE_CHANGE_TABLE 	= {
 						{'TransX',		1.33},
 						{'TransY',		1.47},
@@ -165,10 +172,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					}
 				},
 				{
-					SPECIAL_KEY_WORDS	= {
-						{'Name',	'_logoL_A'},
-						{'Name',	'_logoR_A'},
-					},
+					SPECIAL_KEY_WORDS	= {'Name',	'_logo[LR]_A'},
 					VALUE_CHANGE_TABLE 	= {
 						{'TransY',		1.8}
 					}
@@ -177,12 +181,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{-- |dropship cockpit_B guns| placement
 			MBIN_FILE_SOURCE	= dropship.cockpit_b.src,
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
-					SPECIAL_KEY_WORDS	= {
-						{'Name',	'Gun1Ref2'},
-						{'Name',	'Gun1Ref3'}
-					},
+					SPECIAL_KEY_WORDS	= {'Name',	'Gun1Ref[23]'},
 					VALUE_CHANGE_TABLE 	= {
 						{'TransX',		1.54},
 						{'TransY',		2.42},
@@ -204,12 +205,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{-- |dropship neck_5| decals
 			MBIN_FILE_SOURCE	= dropship.neck_5.src,
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
-					SPECIAL_KEY_WORDS	= {
-						{'Name',	'_Letter1_A1'},
-						{'Name',	'_Letter2_A2'}
-					},
+					SPECIAL_KEY_WORDS	= {'Name', '_Letter[12]_A[12]'},
 					VALUE_CHANGE_TABLE 	= {
 						{'TransZ',		3.7},
 						{'RotY',		90},
@@ -220,7 +218,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{-- |dropship subwing_E_L letter| decal
 			MBIN_FILE_SOURCE	= dropship.s_wing_el.src,
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
 					SPECIAL_KEY_WORDS	= {'Name', '_Letter_A'},
 					VALUE_CHANGE_TABLE 	= {
@@ -232,7 +230,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{-- |dropship subwing_E_R letter| decal
 			MBIN_FILE_SOURCE	= dropship.s_wing_er.src,
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
 					SPECIAL_KEY_WORDS	= {'Name', '_Letter_A'},
 					VALUE_CHANGE_TABLE 	= {
@@ -244,7 +242,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{-- |dropship subwing_G_R rect| decal
 			MBIN_FILE_SOURCE	= dropship.s_wing_gr.src,
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
 					SPECIAL_KEY_WORDS	= {'Name', '_Rectangle_A'},
 					VALUE_CHANGE_TABLE 	= {
@@ -260,7 +258,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{-- |dropship subwing_G_L rect| decal
 			MBIN_FILE_SOURCE	= dropship.s_wing_gl.src,
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				-- {
 					-- SPECIAL_KEY_WORDS	= {'Name', '_Letter_A'},
 					-- VALUE_CHANGE_TABLE 	= {
@@ -286,7 +284,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				dropship.s_wing_hl.src,
 				dropship.s_wing_hr.src,
 			},
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
 					SPECIAL_KEY_WORDS	= {'Name', '_Letter_A'},
 					VALUE_CHANGE_TABLE 	= {
@@ -307,7 +305,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{-- |dropship subwing_H| decal
 			MBIN_FILE_SOURCE	= dropship.s_wing_hr.src,
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
 					SPECIAL_KEY_WORDS	= {'Name', '_Letter_A'},
 					VALUE_CHANGE_TABLE 	= {
@@ -329,7 +327,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				dropship.s_wing_il.src,
 				dropship.s_wing_ir.src,
 			},
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
 					SPECIAL_KEY_WORDS	= {'Name', '_Letter_A'},
 					VALUE_CHANGE_TABLE 	= {
@@ -348,7 +346,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{-- |dropship subwing_I| decal
 			MBIN_FILE_SOURCE	= dropship.s_wing_ir.src,
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
 					SPECIAL_KEY_WORDS	= {'Name', '_Letter_A'},
 					VALUE_CHANGE_TABLE 	= {
@@ -359,7 +357,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{-- |dropship hull| decal fixs
 			MBIN_FILE_SOURCE	= dropship.hull_a.src,
-			EXML_CHANGE_TABLE	= {
+			MXML_CHANGE_TABLE	= {
 				{
 					SPECIAL_KEY_WORDS 	= {
 						{'Name', '_SideR_A'},
@@ -368,10 +366,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					REMOVE				= 'Section'
 				},
 				{
-					SPECIAL_KEY_WORDS	= {
-						{'Name', '_SideL_A'},
-						{'Name', '_SideL_A1'}
-					},
+					SPECIAL_KEY_WORDS	= {'Name', '_SideL_A[1]?'},
 					VALUE_CHANGE_TABLE 	= {
 						{'TransX',		0},
 						{'TransY',		2.65},
@@ -402,7 +397,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						local inx = #T+1
 						T[inx] = {
 							MBIN_FILE_SOURCE	= part.src,
-							EXML_CHANGE_TABLE	= {
+							MXML_CHANGE_TABLE	= {
 								{
 									SPECIAL_KEY_WORDS	= {'Name', 'NUMLODS'},
 									VALUE_CHANGE_TABLE 	= {
@@ -411,7 +406,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								}
 							}
 						}
-						ect = T[inx].EXML_CHANGE_TABLE
+						ect = T[inx].MXML_CHANGE_TABLE
 						if not part.lod1 then
 							ect[#ect+1] = {
 								SPECIAL_KEY_WORDS 	= {
@@ -427,7 +422,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								SPECIAL_KEY_WORDS	= {'Name', 'NUMLODS'},
 								ADD_OPTION			= 'AddAfterSection',
 								ADD 				= [[
-									<Property value="TkSceneNodeAttributeData.xml">
+									<Property name="Attributes" value="TkSceneNodeAttributeData">
 										<Property name="Name" value="ATTACHMENT"/>
 										<Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/ENTITIES/SHAREDLODDISTANCES.ENTITY.MBIN"/>
 									</Property>]]

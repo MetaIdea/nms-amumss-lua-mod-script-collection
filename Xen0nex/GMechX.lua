@@ -2,7 +2,7 @@ Author = "Gumsk,Devilin Pixy,Jasondude"		--Edited by Xen0nex
 ModName = "GMechX"
 --ModNameSub = "+ReducedFuelX"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
-GameVersion = "5_03"
+GameVersion = "5_55"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
@@ -52,11 +52,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
+["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {
 
 	{["MBIN_FILE_SOURCE"]	= FileSource1,
-	["EXML_CHANGE_TABLE"]	= {
+	["MXML_CHANGE_TABLE"]	= {
 		{["SPECIAL_KEY_WORDS"] = {"Anim", "FASTWALK"},
 			["INTEGER_TO_FLOAT"] = "FORCE",
 			["VALUE_CHANGE_TABLE"] = {
@@ -67,7 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"Speed", WalkSpeed}
 		}},
-		{["SPECIAL_KEY_WORDS"] = {"Template", "GcCreatureFullBodyIKComponentData.xml"},
+		{["PRECEDING_KEY_WORDS"] = {"GcCreatureFullBodyIKComponentData"},
 			["VALUE_CHANGE_TABLE"] = {
 				{"MaxFootAngle", MaxFootAngle},
 				{"MovementDamp", MovementDamp}
@@ -75,7 +76,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}},
 
 	{["MBIN_FILE_SOURCE"]	= FileSource2,
-	["EXML_CHANGE_TABLE"]	= {
+	["MXML_CHANGE_TABLE"]	= {
 		{["INTEGER_TO_FLOAT"] = "FORCE",
 		["VALUE_CHANGE_TABLE"] = {
 			{"MechContrailAlpha",MechContrailAlpha},
@@ -93,11 +94,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{"MechJetpackIgnitionTime",MechJetpackIgnitionTime},
 			{"MechJetpackDrainRate",MechJetpackDrainRate},
 			{"MechJetpackFillRate",MechJetpackFillRate},
-			{"DamageTechNumHitsRequired",DamageTechNumHitsRequired},
 			--[[{"VehicleFuelRate", VehicleFuelRate},
 			{"VehicleFuelRateSurvival", VehicleFuelRateSurvival},
 			{"VehicleBoostFuelRate", VehicleBoostFuelRate},
 			{"VehicleBoostFuelRateSurvival", VehicleBoostFuelRateSurvival}]]
+		}},
+		{["INTEGER_TO_FLOAT"] = "PRESERVE",
+		["VALUE_CHANGE_TABLE"] = {
+			{"DamageTechNumHitsRequired",DamageTechNumHitsRequired},
 		}},
 		{["SPECIAL_KEY_WORDS"] = {"Name","MECH"},
 			["INTEGER_TO_FLOAT"] = "FORCE",

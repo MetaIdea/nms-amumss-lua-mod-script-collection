@@ -4,23 +4,23 @@ local mod_desc = [[
   The multitool upgrade and salvage menus from the weapons specialist terminal.
   The ship salavage and upgrade menu from the old monitor station.
 ]]------------------------------------------------------------------------------
----	LUA 2 EXML (VERSION: 0.85.0) ... by lMonk
+---	LUA 2 EXML (VERSION: 0.85.7) ... by lMonk
 ---	A tool for converting exml to an equivalent lua table and back again.
 --- The complete tool can be found at: https://github.com/roie-r/exml_2_lua
 -------------------------------------------------------------------------------
 --	Generate an EXML-tagged text from a lua table representation of exml class
 --	@param class: a lua2exml formatted table
 local function ToExml(class)
+	--	Get the count of ALL objects in a table (non-recursive)
+	--	@param t: any table
+	local function len2(t)
+		if type(t) ~= 'table' then return -1 end
+		i=0; for _ in pairs(t) do i=i+1 end; return i
+	end
 	--	replace a boolean with its text equivalent (ignore otherwise)
 	--	@param b: any value
-	function bool(b)
-		return (type(b) == 'boolean') and ((b == true) and 'True' or 'False') or b
-	end
-
-	--	get the count of ALL objects in a table (non-recursive)
-	--	@param t: any table
-	function len2(t)
-		i=0; for _ in pairs(t) do i=i+1 end; return i
+	local function bool(b)
+		return (type(b) == 'boolean') and ((b == true) and 'true' or 'false') or b
 	end
 	local function exml_r(tlua)
 		local exml = {}
@@ -31,16 +31,19 @@ local function ToExml(class)
 			if key ~= 'meta' then
 				exml[#exml+1] = '<Property '
 				if type(cls) == 'table' and cls.meta then
-					local att, val = cls['meta'][1], cls['meta'][2]
+					local att, val, lnk = cls['meta'][1], cls['meta'][2], cls['meta'][3]
 					-- add and recurs for an inner table
 					if att == 'name' or att == 'value' then
-						exml:add({att, '="', val, '">'})
+						exml:add({att, '="', val})
 					else
-						exml:add({'name="', att, '" value="', val, '">'})
+						exml:add({'name="', att, '" value="', val})
+						if lnk then
+							exml:add({'" linked="', lnk})
+						end
 					end
-					exml:add({exml_r(cls), '</Property>'})
+					exml:add({'">', exml_r(cls), '</Property>'})
 				else
-					-- add normal property
+					-- add a regular property
 					if type(cls) == 'table' then
 						key, cls = next(cls)
 					end
@@ -62,7 +65,7 @@ local function ToExml(class)
 		return exml_r(class)
 	elseif class.meta and klen > 1 then
 		return exml_r( {class} )
-	-- concatenate unrelated exml sections, instead of nested inside each other
+	-- concatenate unrelated (instead of nested) exml sections
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
@@ -70,6 +73,7 @@ local function ToExml(class)
 		end
 		return table.concat(T)
 	end
+	return nil
 end
 
 --	Adds the xml header and data template
@@ -183,32 +187,28 @@ end
 -- interaction button attachment; full mbin or component only
 local function InteractEntity(action, full_entity)
 	local interact = {
-			meta = {'value','LinkableNMSTemplate.xml'},
-			Template = {
-				meta = {'Template','GcInteractionComponentData.xml'},
-				InteractionAction	= 'PressButton',
-				InteractionType		= {
-					meta = {'InteractionType','GcInteractionType.xml'},
-					InteractionType	= action
-				},
-				AttractDistanceSq	= 9,
-				InteractAngle		= 360,
-				InteractDistance	= 5
+		meta = {'Components','GcInteractionComponentData'},
+		{
+			meta = {'value','GcInteractionComponentData'},
+			InteractionAction = 'PressButton',
+			InteractionType = {
+				meta = {'InteractionType','GcInteractionType'},
+				InteractionType = action
 			},
-			Linked	= ''
+			AttractDistanceSq	= 9,
+			InteractAngle		= 360,
+			InteractDistance	= 5
+		}
 	}
 	if full_entity then
 		return FileWrapping({
-			meta = {'template','TkAttachmentData'},
+			meta = {'template','cTkAttachmentData'},
 			Components = {
 				meta = {'name','Components'},
-				Interaction	= interact,
-				{
-					meta = {'value','LinkableNMSTemplate.xml'},
-					Template = {
-						meta = {'Template','TkPhysicsComponentData.xml'}
-					},
-					Linked	= ''
+				Interaction	= interact,	
+				Physics		= {
+					meta = {'Components','TkPhysicsComponentData'},
+					{name='TkPhysicsComponentData'}
 				}
 			}
 		})
@@ -222,7 +222,7 @@ local buildparts = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.ship and multitool upgrade terminals.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.29',
+	NMS_VERSION			= '5.55',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{
@@ -232,7 +232,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'DATA'},
-				INTEGER_TO_FLOAT	= 'Force',
 				VALUE_CHANGE_TABLE 	= {
 					{'TransY',		0.7}
 				}
@@ -252,12 +251,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				PRECEDING_KEY_WORDS	= 'Components',
 				ADD					= ToExml({
 					InteractEntity('WeaponUpgrade'),
-					{
-						meta = {'value','LinkableNMSTemplate.xml'},
-						Template = {
-							meta = {'Template','TkPhysicsComponentData.xml'}
-						},
-						Linked	= ''
+					Physics = {
+						meta = {'Components','TkPhysicsComponentData'},
+						{name='TkPhysicsComponentData'}
 					}
 				})
 			}
@@ -316,7 +312,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}},
 	ADD_FILES	= {
 		{
-			FILE_DESTINATION = buildparts..'NPCROOMS/NPC_WEAPONS/ENTITIES/WEAP_SALVAGE.ENTITY.EXML',
+			FILE_DESTINATION = buildparts..'NPCROOMS/NPC_WEAPONS/ENTITIES/WEAP_SALVAGE.ENTITY.MXML',
 			FILE_CONTENT	 = InteractEntity('WeaponSalvage', true)
 		}
 	}

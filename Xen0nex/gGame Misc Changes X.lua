@@ -2,7 +2,7 @@ Author = "Gumsk"		--Edited by Xenonex
 ModName = "gGame"
 ModNameSub = "Misc Changes X"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "500"
+GameVersion = "5_55"
 ModVersion = "b"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
@@ -22,10 +22,10 @@ TorchDimFoV = 65								--65 Derelict Freighter FOV
 TorchDimStrength = 2.2							--1.5 Derelict Freighter Strength
 InteractionTorchFoV = 120						--120
 InteractionTorchStrength = 1.5					--2
-UndergroundTorchFoV = 70						--70
-UndergroundTorchFoVFar = 100					--100
-UndergroundTorchStrength = 3.0					--2.5
-UndergroundTorchStrengthFar = 7.5				--6.5
+UndergroundTorchFoV = 90						--90
+UndergroundTorchStrength = 3.5					--3.5
+--UndergroundTorchFoVFar = 100					--100	Deprecated in NMS v5.5
+--UndergroundTorchStrengthFar = 7.5				--6.5	Deprecated in NMS v5.5
 TorchOffsetX = 0								--Torch source, + right, -left of centerline of character, in u. Original value "0"
 TorchOffsetY = -0.35							--Torch source, + above, -below top of character head, in u. Original value "-0.5"
 TorchOffsetZ = -1.0								--Torch source, + behind, - in front of centerline of character, in u. Original value "-1.2" (-0.75)
@@ -39,7 +39,7 @@ TorchColourA = 1								--???? Original value "1"
 --[[
 TerrainResourceScanTime = 30					--30 ; ???
 TerrainResourceScanRange = 2000					--1200 ; ???
-BinocsDisplayUnknownCreatures = "False"			--False ; ???
+BinocsDisplayUnknownCreatures = "false"			--False ; ???
 BinocularScanTargetMinHeight = 5				--5 ; ???
 BinocularScanTargetHeightRange = 0				--0 ; ???
 ]]
@@ -97,8 +97,8 @@ SurveyMaxDistance = 1000						--How far away the scanner can detect hotspots, in
 
 --Trading Adjustments
 --[[
-UseTradingCostTable = "False"					--??? Original value "False"
-ChangePricesLocally = "False"					--?? Original value "False"
+UseTradingCostTable = "false"					--??? Original value "false"
+ChangePricesLocally = "false"					--?? Original value "false"
 TradeProdcutDecay = 60							--?Original value "60"
 TradeProductRestock = 60						--?Original value "60"
 TradeSubstanceDecay = 2							--?Original value "2"
@@ -151,12 +151,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
+["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]	= {
 {
 	["MBIN_CHANGE_TABLE"] = {
 		{
 			["MBIN_FILE_SOURCE"] = FileSource1,
-			["EXML_CHANGE_TABLE"] = {
+			["MXML_CHANGE_TABLE"] = {
 
 --Scanning
 				--[[
@@ -250,17 +251,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						--{"SurveySonarMinPulseSpeed", SurveySonarMinPulseSpeed},
 
 				--Grouping
-						{"MaxNumSameGroupTech", MaxNumSameGroupTech},
 						{"BonusSameTypeElementsAdd", BonusSameTypeAdd},
 						{"BonusSameTypeElementsMultiply", BonusSameTypeMult},
 						{"BonusChildTypeElementsAdd", BonusChildAdd},
 						{"BonusChildTypeElementsMultiply", BonusChildMult},
 
 				--Random
-						{"RefinerProductsMadeInTime", RefinerProductsMadeInTime},
-						{"RefinerSubsMadeInTime", RefinerSubsMadeInTime},
-						{"RefinerProductsMadeInTimeSurvival", RefinerProductsMadeInTimeSurvival},
-						{"RefinerSubsMadeInTimeSurvival", RefinerSubsMadeInTimeSurvival},
 						--[[
 						{"AtmosphereEntryTime", AtmosphereEntryTime},
 						{"ShipInteractRadius", ShipInteractRadius},
@@ -288,6 +284,37 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"LowSentinelProbability", LowSentinelProbability},
 						{"LowSentinelProbabilitySurvival", LowSentinelProbabilitySurvival},
 						{"NonAggressiveLushSurvivalProbabability", NonAggressiveLushSurvivalProbability},
+
+				--Torch
+						{"TorchFoV", TorchFoV},
+						{"TorchStrength", TorchStrength},
+						{"TorchDimFoV", TorchDimFoV},
+						{"TorchDimStrength", TorchDimStrength},
+						{"InteractionTorchFoV", InteractionTorchFoV},
+						{"InteractionTorchStrength", InteractionTorchStrength},
+						{"UndergroundTorchFoV", UndergroundTorchFoV},
+						{"UndergroundTorchStrength", UndergroundTorchStrength},
+						--{"UndergroundTorchFoVFar", UndergroundTorchFoVFar},	Deprecated in NMS v5.5
+						--{"UndergroundTorchStrengthFar", UndergroundTorchStrengthFar},	Deprecated in NMS v5.5
+						{"TorchOffsetX", TorchOffsetX},
+						{"TorchOffsetY", TorchOffsetY},
+						{"TorchOffsetZ", TorchOffsetZ},
+						{"TorchRotation", TorchRotation},
+					}
+				},
+				{
+					["INTEGER_TO_FLOAT"] = "PRESERVE",
+					["VALUE_CHANGE_TABLE"] = {
+				--Grouping
+						{"MaxNumSameGroupTech", MaxNumSameGroupTech},
+
+				--Random
+						{"RefinerProductsMadeInTime", RefinerProductsMadeInTime},
+						{"RefinerSubsMadeInTime", RefinerSubsMadeInTime},
+						{"RefinerProductsMadeInTimeSurvival", RefinerProductsMadeInTimeSurvival},
+						{"RefinerSubsMadeInTimeSurvival", RefinerSubsMadeInTimeSurvival},
+
+				--Sentinels
 						{"MaxDronesLow", MaxDronesLow},
 						{"MaxDronesLowSurvival", MaxDronesLowSurvival},
 						{"MaxDronesNormal", MaxDronesNormal},
@@ -296,21 +323,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"MaxDronesAggressiveSurvival", MaxDronesAggressiveSurvival},
 
 				--Torch
-						{"TorchFoV", TorchFoV},
-						{"TorchStrength", TorchStrength},
 						{"TorchCookieIndex", TorchCookieIndex},
-						{"TorchDimFoV", TorchDimFoV},
-						{"TorchDimStrength", TorchDimStrength},
-						{"InteractionTorchFoV", InteractionTorchFoV},
-						{"InteractionTorchStrength", InteractionTorchStrength},
-						{"UndergroundTorchFoV", UndergroundTorchFoV},
-						{"UndergroundTorchFoVFar", UndergroundTorchFoVFar},
-						{"UndergroundTorchStrength", UndergroundTorchStrength},
-						{"UndergroundTorchStrengthFar", UndergroundTorchStrengthFar},
-						{"TorchOffsetX", TorchOffsetX},
-						{"TorchOffsetY", TorchOffsetY},
-						{"TorchOffsetZ", TorchOffsetZ},
-						{"TorchRotation", TorchRotation},
 					}
 				},
 				{

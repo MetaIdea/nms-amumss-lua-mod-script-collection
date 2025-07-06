@@ -1,9 +1,9 @@
 Small = [[
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_Up" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.877108" />
         <Property name="TransZ" value="0" />
@@ -17,11 +17,11 @@ Small = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndUp_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -36,11 +36,11 @@ Small = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndUp_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -57,11 +57,11 @@ Small = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_Down" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-0.877108" />
         <Property name="TransZ" value="0" />
@@ -75,11 +75,11 @@ Small = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndUp_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -94,11 +94,11 @@ Small = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndUp_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -115,11 +115,11 @@ Small = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSSelf_N" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-0.666667" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -133,11 +133,11 @@ Small = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -152,11 +152,11 @@ Small = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -173,11 +173,11 @@ Small = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSSelf_E" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="-0.666667" />
@@ -191,11 +191,11 @@ Small = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -210,11 +210,11 @@ Small = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -231,11 +231,11 @@ Small = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSSelf_S" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.666667" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -249,11 +249,11 @@ Small = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -268,11 +268,11 @@ Small = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -289,11 +289,11 @@ Small = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSSelf_W" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0.666667" />
@@ -307,11 +307,11 @@ Small = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -326,11 +326,11 @@ Small = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -350,16 +350,16 @@ Small = [[
 ]]
 
 Medium = [[
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="RefSmallSnapPoint" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
         <Property name="RotX" value="0" />
-        <Property name="RotY" value="0" />
+        <Property name="RotY" value="180" />
         <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="1" />
         <Property name="ScaleY" value="1" />
@@ -367,22 +367,22 @@ Medium = [[
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULESMALL_SNAPPOINT.SCENE.MBIN" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="EMBEDGEOMETRY" />
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="RefTechCenterSnapScene" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -395,22 +395,22 @@ Medium = [[
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\TECH_SNAPPOINT.SCENE.MBIN" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="EMBEDGEOMETRY" />
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_N" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-1.333333" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -424,11 +424,11 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -443,11 +443,11 @@ Medium = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -464,11 +464,11 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_E" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="-1.333333" />
@@ -482,11 +482,11 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -501,11 +501,11 @@ Medium = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -522,11 +522,11 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_S" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="1.333333" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -540,11 +540,11 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -559,11 +559,11 @@ Medium = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -580,11 +580,11 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_W" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="1.333333" />
@@ -598,11 +598,11 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -617,11 +617,11 @@ Medium = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -638,11 +638,11 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloora_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -656,11 +656,11 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -677,11 +677,11 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorb_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -695,11 +695,11 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -716,11 +716,11 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloora" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -734,11 +734,11 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -755,11 +755,11 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloorb" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -773,11 +773,11 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -794,11 +794,11 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloor1_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -812,11 +812,11 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor1_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -833,11 +833,11 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloor2_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -851,11 +851,11 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor2_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -875,11 +875,11 @@ Medium = [[
 ]]
 
 Large = [[
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="RefTechCenterSnapScene" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -892,22 +892,22 @@ Large = [[
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\TECH_SNAPPOINT.SCENE.MBIN" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="EMBEDGEOMETRY" />
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_Vehicles" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -921,11 +921,11 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="Workstation_In" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="-1.4" />
@@ -940,11 +940,11 @@ Large = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="NullSnap_Vehicles" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -961,11 +961,11 @@ Large = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_Large_N" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.666667" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -979,11 +979,11 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -998,11 +998,11 @@ Large = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1019,11 +1019,11 @@ Large = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_Large_E" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="-2.666667" />
@@ -1037,11 +1037,11 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1056,11 +1056,11 @@ Large = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1077,11 +1077,11 @@ Large = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_Large_S" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.666667" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -1095,11 +1095,11 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1114,11 +1114,11 @@ Large = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1135,11 +1135,11 @@ Large = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_Large_W" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="2.666667" />
@@ -1153,11 +1153,11 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1172,11 +1172,11 @@ Large = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1193,11 +1193,11 @@ Large = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloora" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -1211,11 +1211,11 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1232,11 +1232,11 @@ Large = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloorb" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -1250,11 +1250,11 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1274,11 +1274,11 @@ Large = [[
 ]]
 
 Huge = [[
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="RefSnapPointFloor" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-0.5" />
         <Property name="TransZ" value="0" />
@@ -1291,22 +1291,22 @@ Huge = [[
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\MAINROOMFLOOR_SNAPPOINT.SCENE.MBIN" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="EMBEDGEOMETRY" />
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloora" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -1320,11 +1320,11 @@ Huge = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1341,11 +1341,11 @@ Huge = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloorb" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -1359,11 +1359,11 @@ Huge = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1384,10 +1384,10 @@ Huge = [[
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "SnappyIndustry.pak",
+["MOD_FILENAME"]    = "SnappyIndustry",
 ["MOD_AUTHOR"]      = "Ethreon, Babscoole, EMPTY.d, KuroPeach",
 ["LUA_AUTHOR"]      = "Babscoole, EMPTY.d, KuroPeach",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MOD_DESCRIPTION"] = "Add more snapping points to certain building modules in game",
 ["MODIFICATIONS"]   =
     {
@@ -1427,7 +1427,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_GASEXTRACTOR_PLACEMENT.SCENE.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_PUMPS_PLACEMENT.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "PlacementData"},
@@ -1443,7 +1443,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_GASEXTRACTOR_PLACEMENT.SCENE.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_PUMPS_PLACEMENT.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -1459,11 +1459,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloor3_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -1477,11 +1477,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor3_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1498,11 +1498,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloor4_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -1516,11 +1516,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor4_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1547,7 +1547,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_BATTERYS_PLACEMENT.SCENE.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_SOLARPANELS_PLACEMENT.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "PlacementData"},
@@ -1576,7 +1576,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\LANDINGPAD_PLACEMENT.SCENE.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\LANDINGZONE_PLACEMENT.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "PlacementData"},
@@ -1607,7 +1607,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASECAPSULE_PLACEMENT.SCENE.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHOPTERMINAL_PLACEMENT.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "PlacementData"},
@@ -1625,7 +1625,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\REFINER3_PLACEMENT.SCENE.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\REFINER2_PLACEMENT.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RefTechCenterSnapScene"}, -- Fix the failure caused by duplication
@@ -1640,7 +1640,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_BATTERYS_PLACEMENT.SCENE.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_SOLARPANELS_PLACEMENT.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RefSmallSnapPoint"},
@@ -1650,7 +1650,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\BASIC_FLOOR.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SnapSceneData"},
@@ -1658,11 +1658,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-1.333333" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="1.333333" />
@@ -1676,11 +1676,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1695,11 +1695,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1716,11 +1716,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="1.333333" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="1.333333" />
@@ -1734,11 +1734,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1753,11 +1753,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1774,11 +1774,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="1.333333" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="-1.333333" />
@@ -1792,11 +1792,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1811,11 +1811,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1832,11 +1832,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_4" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-1.333333" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="-1.333333" />
@@ -1850,11 +1850,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1869,11 +1869,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1890,11 +1890,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloora" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="0" />
@@ -1908,11 +1908,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1927,11 +1927,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1946,11 +1946,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="CubeFrameRoof_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -1967,11 +1967,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-1.333333" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="1.333333" />
@@ -1985,11 +1985,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2004,11 +2004,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2025,11 +2025,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="1.333333" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="1.333333" />
@@ -2043,11 +2043,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2062,11 +2062,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2083,11 +2083,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="1.333333" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="-1.333333" />
@@ -2101,11 +2101,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2120,11 +2120,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2141,11 +2141,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_4" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-1.333333" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="-1.333333" />
@@ -2159,11 +2159,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2178,11 +2178,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2199,11 +2199,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloorb" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="0" />
@@ -2217,11 +2217,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2236,11 +2236,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2257,11 +2257,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="RefSnapPointCubeRoomFoundation" />
       <Property name="NameHash" value="3303144020" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.4" />
         <Property name="TransZ" value="0" />
@@ -2274,11 +2274,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_FOUNDATION_SNAPPOINT.SCENE.MBIN" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="EMBEDGEOMETRY" />
           <Property name="Value" value="TRUE" />
         </Property>
@@ -2291,7 +2291,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\BASIC_FLOOR_QUARTER.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SnapSceneData"},
@@ -2299,11 +2299,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorSQrt1_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="0" />
@@ -2317,11 +2317,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor1_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2336,11 +2336,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor1_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2357,11 +2357,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorSQrt2_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="0" />
@@ -2375,11 +2375,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor2_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2394,11 +2394,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor2_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2415,11 +2415,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorSQrt3_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="0" />
@@ -2433,11 +2433,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor3_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2452,11 +2452,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor3_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2473,11 +2473,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorSQrt4_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="0" />
@@ -2491,11 +2491,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor4_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2510,11 +2510,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor4_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2570,7 +2570,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT8.SCENE.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT9.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "PlacementData"},
@@ -2578,11 +2578,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.666667" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="2.666667" />
@@ -2596,11 +2596,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2615,11 +2615,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2636,11 +2636,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.666667" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="2.666667" />
@@ -2654,11 +2654,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2673,11 +2673,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2694,11 +2694,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.666667" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="-2.666667" />
@@ -2712,11 +2712,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2731,11 +2731,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2752,11 +2752,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_4" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.666667" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="-2.666667" />
@@ -2770,11 +2770,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2789,11 +2789,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2810,11 +2810,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_5" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.666667" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="0" />
@@ -2828,11 +2828,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2847,11 +2847,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2868,11 +2868,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_6" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="-2.666667" />
@@ -2886,11 +2886,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2905,11 +2905,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2926,11 +2926,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_7" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.666667" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="0" />
@@ -2944,11 +2944,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2963,11 +2963,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2984,11 +2984,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_8" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="2.666667" />
@@ -3002,11 +3002,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3021,11 +3021,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3042,11 +3042,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloora" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="0" />
@@ -3060,11 +3060,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3079,11 +3079,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3100,11 +3100,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.666667" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="2.666667" />
@@ -3118,11 +3118,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3137,11 +3137,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3158,11 +3158,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.666667" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="2.666667" />
@@ -3176,11 +3176,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3195,11 +3195,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3216,11 +3216,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.666667" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="-2.666667" />
@@ -3234,11 +3234,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3253,11 +3253,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3274,11 +3274,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_4" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.666667" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="-2.666667" />
@@ -3292,11 +3292,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3311,11 +3311,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3332,11 +3332,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_5" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.666667" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="0" />
@@ -3350,11 +3350,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3369,11 +3369,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3390,11 +3390,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_6" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="-2.666667" />
@@ -3408,11 +3408,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3427,11 +3427,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3448,11 +3448,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_7" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.666667" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="0" />
@@ -3466,11 +3466,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3485,11 +3485,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3506,11 +3506,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_8" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="2.666667" />
@@ -3524,11 +3524,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3543,11 +3543,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3564,11 +3564,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloorb" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.14" />
         <Property name="TransZ" value="0" />
@@ -3582,11 +3582,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3601,11 +3601,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -3646,7 +3646,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT8.SCENE.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT9.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =

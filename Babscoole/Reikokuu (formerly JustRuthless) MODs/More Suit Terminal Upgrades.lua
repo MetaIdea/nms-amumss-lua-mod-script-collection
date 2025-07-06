@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "More Suit Terminal Upgrades.pak",
+["MOD_FILENAME"]    = "More Suit Terminal Upgrades",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Lets you buy more than one suit upgrade at space stations, space anomaly, and outlaw space stations",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -15,13 +15,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\CRYOCHAMBER\ENTITIES\CRYOCHAMBERINTERACTION.ENTITY.MBIN",
                         "MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\SHOPS\SUITSHOP_SUITSLOTPOINTB\ENTITIES\SUITSLOTPOINTTYPEB.ENTITY.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {-- makes it possible to interact with suit terminal more than once
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RepeatInteraction",        "True"},
-                                {"ReseedAfterRewardSuccess", "True"},
+                                {"RepeatInteraction",        "true"},
+                                {"ReseedAfterRewardSuccess", "true"},
                             },
                         },
                         {-- removes backpack hologram close animation after buying an upgrade

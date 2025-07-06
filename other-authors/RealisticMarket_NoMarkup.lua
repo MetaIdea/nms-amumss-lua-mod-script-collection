@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MBIN_CHANGE_TABLE"]	= {
 	
 	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\NMS_REALITY_GCSUBSTANCETABLE.MBIN",
-	["EXML_CHANGE_TABLE"]	= {
+	["MXML_CHANGE_TABLE"]	= {
 		{ --Nanites 1275 unit pricing
 		["SPECIAL_KEY_WORDS"] = {"ID","TECHFRAG"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{"BuyMarkupMod","0"}},
 			["REPLACE_TYPE"] = "ALL"},
 		{ --Nanites 0 Inflation Cost (flat price)
-		["SPECIAL_KEY_WORDS"] = {"ID","TECHFRAG","Cost","GcItemPriceModifiers.xml"},
+		["SPECIAL_KEY_WORDS"] = {"ID","TECHFRAG","Cost","GcItemPriceModifiers"},
 			["VALUE_CHANGE_TABLE"] = {
 				{"SpaceStationMarkup","0"},
 				{"LowPriceMod","0"},
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}},
 	
 	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
-	["EXML_CHANGE_TABLE"]	= {
+	["MXML_CHANGE_TABLE"]	= {
 		{ --Removes markup from all items
 		["VALUE_CHANGE_TABLE"] = {
 			{"SpaceStationMarkup","0"},
@@ -38,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["REPLACE_TYPE"] = "ALL"},
 		--Inflate S class Freighter modules
 		{ --S mining
-		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_MINE4","Cost","GcItemPriceModifiers.xml"},
+		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_MINE4","Cost","GcItemPriceModifiers"},
 			["VALUE_CHANGE_TABLE"] = {
 				{"SpaceStationMarkup","0"},
 				{"LowPriceMod","0"},
@@ -62,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"BaseValue","10000"}}},
 		{ --S scanner
-		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_EXP4","Cost","GcItemPriceModifiers.xml"},
+		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_EXP4","Cost","GcItemPriceModifiers"},
 			["VALUE_CHANGE_TABLE"] = {
 				{"SpaceStationMarkup","0"},
 				{"LowPriceMod","0"},
@@ -86,7 +86,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"BaseValue","10000"}}},
 		{ --S comm array
-		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_TRA4","Cost","GcItemPriceModifiers.xml"},
+		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_TRA4","Cost","GcItemPriceModifiers"},
 			["VALUE_CHANGE_TABLE"] = {
 				{"SpaceStationMarkup","0"},
 				{"LowPriceMod","0"},
@@ -110,7 +110,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"BaseValue","10000"}}},
 		{ --S defensive system
-		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_COM4","Cost","GcItemPriceModifiers.xml"},
+		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_COM4","Cost","GcItemPriceModifiers"},
 			["VALUE_CHANGE_TABLE"] = {
 				{"SpaceStationMarkup","0"},
 				{"LowPriceMod","0"},
@@ -134,7 +134,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"BaseValue","10000"}}},
 		{ --S fueling
-		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_FUEL4","Cost","GcItemPriceModifiers.xml"},
+		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_FUEL4","Cost","GcItemPriceModifiers"},
 			["VALUE_CHANGE_TABLE"] = {
 				{"SpaceStationMarkup","0"},
 				{"LowPriceMod","0"},
@@ -158,7 +158,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"BaseValue","10000"}}},
 		{ --S Navigation System (speed)
-		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_SPE4","Cost","GcItemPriceModifiers.xml"},
+		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_SPE4","Cost","GcItemPriceModifiers"},
 			["VALUE_CHANGE_TABLE"] = {
 				{"SpaceStationMarkup","0"},
 				{"LowPriceMod","0"},
@@ -182,7 +182,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"BaseValue","10000"}}},
 		{ --S Hyperdrive
-		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_HYP4","Cost","GcItemPriceModifiers.xml"},
+		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_HYP4","Cost","GcItemPriceModifiers"},
 			["VALUE_CHANGE_TABLE"] = {
 				{"SpaceStationMarkup","0"},
 				{"LowPriceMod","0"},
@@ -208,7 +208,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 
 	{["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\TRADINGCLASSDATATABLE.MBIN",
-	["EXML_CHANGE_TABLE"] = {
+	["MXML_CHANGE_TABLE"] = {
 
 	{ --Halt prices changes from all items
 		["VALUE_CHANGE_TABLE"] = {

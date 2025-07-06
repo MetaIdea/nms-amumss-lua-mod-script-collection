@@ -10,7 +10,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 1,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -19,7 +19,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 1,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -28,7 +28,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 1,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -37,7 +37,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 1,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -46,16 +46,17 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 1,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
-				}
+				},
+				["Display"] = "-1",
 			},
 			{
 				["ID"] = "CORNERPOST",
 				["AddGroup"] = 1,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -64,7 +65,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				-- ["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				-- ["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				-- {
-					-- {"BASIC_LEGACY", "LEG_FOUND"},
+					-- {"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				-- }
 			-- },
@@ -73,7 +74,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				-- ["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				-- ["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				-- {
-					-- {"BASIC_LEGACY", "LEG_FOUND"},
+					-- {"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				-- }
 			-- },
@@ -82,7 +83,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				-- ["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				-- ["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				-- {
-					-- {"BASIC_LEGACY", "LEG_FOUND"},
+					-- {"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				-- }
 			-- },
@@ -91,7 +92,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				-- ["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				-- ["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				-- {
-					-- {"BASIC_LEGACY", "LEG_FOUND"},
+					-- {"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				-- }
 			-- },
@@ -100,7 +101,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -109,7 +110,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -118,7 +119,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -127,7 +128,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -136,7 +137,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -145,7 +146,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -154,7 +155,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -163,7 +164,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -172,7 +173,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -181,7 +182,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -190,7 +191,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -199,7 +200,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -208,7 +209,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -217,7 +218,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -226,7 +227,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -235,7 +236,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -244,7 +245,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -253,7 +254,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -262,7 +263,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -271,7 +272,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -280,7 +281,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -289,7 +290,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -298,7 +299,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -307,7 +308,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -316,7 +317,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -325,7 +326,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -334,7 +335,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -343,7 +344,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -352,7 +353,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -361,7 +362,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -370,7 +371,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -379,7 +380,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -388,7 +389,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -397,7 +398,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -406,7 +407,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -415,7 +416,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -424,7 +425,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -433,7 +434,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -442,7 +443,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -451,7 +452,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -460,7 +461,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -469,7 +470,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -478,7 +479,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -487,7 +488,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -496,7 +497,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -505,7 +506,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -514,7 +515,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -523,7 +524,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -532,7 +533,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -541,7 +542,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -550,7 +551,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -559,7 +560,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -568,7 +569,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -577,7 +578,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -586,7 +587,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -595,7 +596,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -604,7 +605,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -613,7 +614,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -622,7 +623,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -631,7 +632,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -640,7 +641,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -649,7 +650,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -658,7 +659,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -667,7 +668,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -676,7 +677,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -685,7 +686,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -694,7 +695,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -703,7 +704,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -712,7 +713,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -721,7 +722,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -730,7 +731,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -782,7 +783,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				}
 			},
 			{
-				["ID"] = "SET_S_TOWER",
+				["ID"] = "S_TOWER",
 				["AddGroup"] = 2,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
@@ -801,7 +802,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -810,7 +811,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -819,7 +820,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -828,7 +829,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				-- ["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				-- ["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				-- {
-					-- {"BASIC_LEGACY", "LEG_FOUND"},
+					-- {"ROOMS", "LEG_FOUND"},
 					-- -- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				-- }
 			-- },
@@ -837,7 +838,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -846,7 +847,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -855,7 +856,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -864,7 +865,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -873,7 +874,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -882,7 +883,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -891,7 +892,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -900,7 +901,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -909,7 +910,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -918,7 +919,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -927,7 +928,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -936,7 +937,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -945,7 +946,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -954,7 +955,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -963,7 +964,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -972,7 +973,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -981,7 +982,7 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
-					{"BASIC_LEGACY", "LEG_FOUND"},
+					{"ROOMS", "LEG_FOUND"},
 					-- {"PF_STRUCT_2", "VANILLA_LEGACY"},
 				}
 			},
@@ -1078,17 +1079,19 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 
 function GetKnownProducts(ID)
 return [[
-<Property value="NMSString0x10.xml">
-<Property name="Value" value="]] .. ID .. [[" />
-</Property>
-]]
+<Property name="KnownProducts" value="]] .. ID .. [[" />]]
 end
 
-function GetGroupData(Group, SubGroup)
-return [[
-<Property value="GcBaseBuildingEntryGroup.xml">
+function GetGroupData(Group, SubGroup, Display)
+	if Display then
+	 EXPORT = [[
+<Property value="GcBaseBuildingEntryGroup" _display="WTP">]]
+	else EXPORT = [[
+<Property value="GcBaseBuildingEntryGroup">]]
+	end
+return EXPORT .. [[
 <Property name="Group" value="]] .. Group .. [[" />
-<Property name="SubGroupName" value="]] .. SubGroup .. [[" /> <!--BUILDFRAME TWEAK-->
+<Property name="SubGroupName" value="]] .. SubGroup .. [[" /> <!--BUILDFRAME-->
 <Property name="SubGroup" value="0" />
 </Property>
 ]]
@@ -1100,11 +1103,11 @@ KNOWNPRODUCTS = {}
 
 table.insert(CHANGE_LEOPARDON, 
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "UI_BUILD_GRID_METAL"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-							--["LINE_OFFSET"] 		= "+1",
+							["SPECIAL_KEY_WORDS"] = {"ID", "ROOMS"},
+							["PRECEDING_KEY_WORDS"] = {"SubGroups"},
+							["REPLACE_TYPE"] 		= "ADDendSECTION",
 							["ADD"] 				= 
-	[[<Property value="GcBaseBuildingSubGroup.xml">
+	[[<Property name="SubGroups" value="GcBaseBuildingSubGroup">
 	<Property name="Id" value="LEG_FOUND" />
 	<Property name="Name" value="LEGACY OBJECTS" />
 	</Property>]],
@@ -1116,7 +1119,8 @@ for _i,j in pairs(LEGACY_OBJECTS) do
 		if l["AddGroup"] == 1 then
 			ADDGROUP = {}
 			for _m,n in pairs(l["Groups"]) do
-				table.insert(ADDGROUP, GetGroupData(n[1],n[2]))
+				local ExportDisplay = false; if l["Display"] ~= nil then ExportDisplay = true end
+				table.insert(ADDGROUP, GetGroupData(n[1],n[2],ExportDisplay))
 			end
 			-- table.insert(ADDGROUP, [[</Property>]])
 			table.insert(CHANGE_LEOPARDON, 
@@ -1164,8 +1168,8 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "~~~BuildFrame_MILF.pak", -- Build Menu Infrastructure Listings from Foundation
-["MOD_BATCHNAME"]			= "~~~~BuildFrame_Comp.pak",
+["MOD_FILENAME"] 			= "~~BuildFrame_MILF", -- Build Menu Infrastructure Listings from Foundation
+["MOD_BATCHNAME"]		= "++++DO_NOT_COMBINE_IN_AMUMSS",
 ["MOD_AUTHOR"]				= "WinderTP",
 ["NMS_VERSION"]				= "uhhh",
 ["MODIFICATIONS"] 			= 
@@ -1174,16 +1178,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= { "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= CHANGE_LEOPARDON,
+					["MBIN_FILE_SOURCE"] 	= { "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.EXML"},
+					["MXML_CHANGE_TABLE"] 	= CHANGE_LEOPARDON,
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						-- [[METADATA/GAMESTATE/DEFAULTSAVEDATACREATIVE.MBIN]],
-						[[METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN]],
+						[[METADATA/GAMESTATE/DEFAULTSAVEDATA.EXML]],
 					},
-					["EXML_CHANGE_TABLE"]	= 
+					["MXML_CHANGE_TABLE"]	= 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
@@ -1202,11 +1206,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 												-- "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\WALLDOOR_PLACEMENT.SCENE.MBIN",
 												-- "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\WALLCURVED_PLACEMENT.SCENE.MBIN",
 											},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Type", "MESH"},
-							-- ["PRECEDING_KEY_WORDS"] = {"Children", "TkSceneNodeData.xml"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Children", "TkSceneNodeData"},
 							["VALUE_MATCH"] = "{SnapGroup_.}",
 							["REPLACE_TYPE"]    = "ALL",  
 							["REMOVE"] 	= "SECTION",
@@ -1215,11 +1219,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= 	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\WALLFLOOR.SCENE.MBIN",},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Type", "MESH"},
-							-- ["PRECEDING_KEY_WORDS"] = {"Children", "TkSceneNodeData.xml"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Children", "TkSceneNodeData"},
 							["VALUE_MATCH"] = {"SnapGroup_FloorCurved", "{SnapGroup_FloorSupport.}", "{SnapGroup_LadderConnect.}", "{RampConnector*}"},
 							["REPLACE_TYPE"]    = "ALL",  
 							["REMOVE"] 	= "SECTION",
@@ -1228,10 +1232,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				-- {
 					-- ["MBIN_FILE_SOURCE"] 	= { "METADATA\REALITY\TABLES\LEGACYBASEBUILDINGTABLE.MBIN"},
-					-- ["EXML_CHANGE_TABLE"] 	= 
+					-- ["MXML_CHANGE_TABLE"] 	= 
 					-- {
 						-- {
-							-- ["PRECEDING_KEY_WORDS"] = "GcBaseBuildingEntry.xml",
+							-- ["PRECEDING_KEY_WORDS"] = "GcBaseBuildingEntry",
 							-- ["REPLACE_TYPE"] 	= "ALL",
 							-- ["REMOVE"] = "SECTION",
 						-- },
@@ -1241,6 +1245,3 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 	}	
 }
---NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
---IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
---DON'T ADD ANYTHING PASS THIS POINT HERE

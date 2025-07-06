@@ -1,479 +1,423 @@
-QUICK_ACTION_LIST = 
-{
-	"MTSHOP",
-	"R_SHOW_HIVEONLY",
-	"R_SCANSENTCRASH",
-	"R_CHART_ROBOT",
-	"R_MONOLITH",
-	"R_CHART_BUILDER",
-	"R_BIOSHIPL",
-	"CRASHEDSHIP",
-	"SEC_SCN_OUTPOST",
-	"REVEAL_PORTAL"
-}
-
-GENERIC_BUTTON_ICON = "TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS"
-
+-- Actions will appear in reverse order in game
 QUICK_ACTION_MENU = 
 {
-	["R_SHOW_HIVEONLY"] = 
 	{
-		["TITLE"]	= "Locate Sentinel Pillar",
-		["ICON"]	= "TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS",
-		["ANIM"]	= "R_SHOW_HIVEONLY",
-		["TYPE"]	= "REWARD"
-},	
-	["SEC_SCN_OUTPOST"] = 
-	{
-		["TITLE"]	= "Locate Trading Post",
-		["ICON"]	= "TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\BUILDINGS.OUTPOST.DDS",
-		["ANIM"]	= "SEC_SCN_OUTPOST",
-		["TYPE"]	= "REWARD",
+		["ID"]		= "CRASHEDSHIP",
+		["EMOTE_ID"]= "CRASHEDSHIP",
+		["TITLE"]	= "Locate Crashed Ship",
+		["ICON"]	= "TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DISTRESSSIGNAL.DDS",
+		["SCANEVENT"]	= "DISTRESS"
 	},
-	["R_SCANSENTCRASH"] = 
 	{
-		["TITLE"]	= "Locate Sentinel Ship",
-		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.SENTINELCRASH.DDS",
-		["ANIM"]	= "R_SCANSENTCRASH",
-		["TYPE"]	= "REWARD",
-	},
-	["R_CHART_ROBOT"] = 
-	{
-		["TITLE"]	= "Locate Sentinel Multi-Tool",
-		["ICON"]	= "TEXTURES\UI\FRONTEND\ICONS\MISSIONS\MISSION.ROBOTHEAD.OFF.DDS",
-		["ANIM"]	= "R_CHART_ROBOT",
-		["TYPE"]	= "REWARD",
-	},
-	["R_MONOLITH"] = 
-	{
-		["TITLE"]	= "Locate Monolith",
-		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.RUNE.DDS",
-		["ANIM"]	= "R_MONOLITH",
-		["TYPE"]	= "REWARD",
-    },
-	["R_CHART_BUILDER"] = 
-	{
-		["TITLE"]	= "Locate Autophage Camp",
-		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.ROBOTHEAD.DDS",
-		["ANIM"]	= "R_CHART_BUILDER",
-		["TYPE"]	= "REWARD",
-    },
-	["R_BIOSHIPL"] = 
-	{
-		["TITLE"]	= "Locate Living Ship",
-		["ICON"]	= "TEXTURES\UI\FRONTEND\ICONS\MISSIONS\MISSION.FIEND.ON.DDS",
-		["ANIM"]	= "R_BIOSHIPL",
-		["TYPE"]	= "REWARD",
-	},
-	["REVEAL_PORTAL"] = 
-	{
-		["TITLE"]	= "Locate Portal",
-		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.PORTAL.DDS",
-		["ANIM"]	= "REVEAL_PORTAL",
-		["TYPE"]	= "REWARD",
-	},
-	["MTSHOP"] = 
-	{
+		["ID"]		= "MTSHOP",
+		["EMOTE_ID"]= "MTSHOP",
 		["TITLE"]	= "Locate Minor Settlement",
 		["ICON"]	= "TEXTURES/UI/HUD/MENUS/RENDER.GUN.DDS",
-		["ANIM"]	= "MTSHOP",
-		["TYPE"]	= "REWARD",
-		["REWARDTABLE"]	= 
-	[[
-    <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="MTSHOP" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardScanEvent.xml">
-              <Property name="Event" value="SHOP" />
-              <Property name="ScanEventTable" value="Planet" />
-              <Property name="DoAerialScan" value="False" />
-              <Property name="UseMissionSeedForEvent" value="False" />
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-	]],
+		["SCANEVENT"]	= "SHOP",
 	},
-	
-	["CRASHEDSHIP"] = 
 	{
-		["TITLE"]	= "Locate Crashed Ship",
-		["ICON"]	= "TEXTURES\UI\HUD\ICONS\BUILDINGS\BUILDING.DISTRESSSIGNAL.DDS",
-		["ANIM"]	= "CRASHEDSHIP",
-		["TYPE"]	= "REWARD",
-		["REWARDTABLE"]	= 
-	[[
-    <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="CRASHEDSHIP" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardScanEvent.xml">
-              <Property name="Event" value="DISTRESS" />
-              <Property name="ScanEventTable" value="Planet" />
-              <Property name="DoAerialScan" value="False" />
-              <Property name="UseMissionSeedForEvent" value="False" />
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-	]],
+		["ID"]		= "REVEAL_PORTAL",
+		["EMOTE_ID"]= "REVEAL_PORTAL",
+		["TITLE"]	= "Locate Portal",
+		["ICON"]	= "TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.PORTAL.DDS",
 	},
+	{
+		["ID"]		= "R_BIOSHIPL",
+		["EMOTE_ID"]= "BIOSHIPL",
+		["TITLE"]	= "Locate Living Ship",
+		["ICON"]	= "TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.FIEND.ON.DDS",
+	},
+	{
+		["ID"]		= "R_CHART_BUILDER",
+		["EMOTE_ID"]= "CHART_BUILDER",
+		["TITLE"]	= "Locate Autophage Camp",
+		["ICON"]	= "TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.ROBOTHEAD.DDS",
+    },
+	{
+		["ID"]		= "R_MONOLITH",
+		["EMOTE_ID"]= "MONOLITH",
+		["TITLE"]	= "Locate Monolith",
+		["ICON"]	= "TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUNE.DDS",
+    },
+	{
+		["ID"]		= "R_CHART_ROBOT",
+		["EMOTE_ID"]= "CHART_ROBOT",
+		["TITLE"]	= "Locate Sentinel Multi-Tool",
+		["ICON"]	= "TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.ROBOTHEAD.OFF.DDS",
+	},
+	{
+		["ID"]		= "R_SCANSENTCRASH",
+		["EMOTE_ID"]= "SCANSENTCRASH",
+		["TITLE"]	= "Locate Sentinel Ship",
+		["ICON"]	= "TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SENTINELCRASH.DDS",
+	},
+	{
+		["ID"]		= "SEC_SCN_OUTPOST",
+		["EMOTE_ID"]= "SCN_OUTPOST",
+		["TITLE"]	= "Locate Trading Post",
+		["ICON"]	= "TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/BUILDINGS.OUTPOST.DDS",
+	},
+	{
+		["ID"]		= "R_SHOW_HIVEONLY",
+		["EMOTE_ID"]= "SHOW_HIVEONLY",
+		["TITLE"]	= "Locate Sentinel Pillar",
+		["ICON"]	= "TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS",
+	},	
 }
 
-function GetTriggerAnim(ANIM)
-return [[
-        <Property value="TkAnimationData.xml">
-          <Property name="Anim" value="]] .. ANIM .. [[" />
-		  <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
-          <Property name="AnimType" value="OneShotBlendable" />
-          <Property name="AnimGroupOverride" value="False" />
-          <Property name="Priority" value="0" />
-          <Property name="FrameStart" value="0" />
-          <Property name="FrameEnd" value="0" />
-          <Property name="FrameEndGame" value="0" />
-          <Property name="StartNode" value="" />
-          <Property name="ExtraStartNodes" />
-          <Property name="AdditiveBaseAnim" value="" />
-          <Property name="AdditiveBaseFrame" value="0" />
-          <Property name="Mask" value="" />
-          <Property name="OffsetMin" value="0" />
-          <Property name="OffsetMax" value="0" />
-          <Property name="Delay" value="0" />
-          <Property name="Speed" value="1" />
-          <Property name="ActionStartFrame" value="0" />
-          <Property name="ActionFrame" value="-1" />
-          <Property name="Actions" />
-          <Property name="CreatureSize" value="AllSizes" />
-          <Property name="Additive" value="False" />
-          <Property name="Mirrored" value="False" />
-          <Property name="Active" value="True" />
-		  <Property name="Has30HzFrames" value="False" />
-		  <Property name="GameData" value="TkAnimationGameData.xml">
-            <Property name="RootMotion" value="None" />
-            <Property name="BlockPlayerMovement" value="False" />
-            <Property name="BlockPlayerWeapon" value="Unblocked" />
-          </Property>
-        </Property>
-]]
-end
+ANIMS			= {}
+REWARDACTIONS	= {}
+REWARDTABLE		= {}
+TRIGGERS		= {}
+EMOTEMENU		= {}
 
-function GetQuickAction(TITLE, ANIM, ICON, UNDERWATER)
-local INDEX
-if UNDERWATER == "True" then
-	INDEX = 1
-else
-	INDEX = 0
-end
-return [[
-    <Property value="GcPlayerEmote.xml">
-      <Property name="Title" value="]] .. TITLE .. [[" />
-      <Property name="ChatText" value="" />
-      <Property name="ChatUsesPrefix" value="False" />
-      <Property name="EmoteID" value="]] .. ANIM .. INDEX .. [[" />
-      <Property name="AnimationName" value="]] .. ANIM .. [[" />
-      <Property name="PropData" value="GcPlayerEmotePropData.xml">
-        <Property name="Model" value="" />
-        <Property name="Scale" value="0" />
-        <Property name="Hand" value="GcHand.xml">
-          <Property name="Hand" value="Right" />
-        </Property>
-        <Property name="IsHologram" value="False" />
-        <Property name="ScanEffectNodeName" value="" />
-        <Property name="ScanEffect" value="GcScanEffectData.xml">
-          <Property name="Id" value="" />
-          <Property name="ScanEffectType" value="Building" />
-          <Property name="Colour" value="Colour.xml">
-            <Property name="R" value="0.823" />
-            <Property name="G" value="0.475" />
-            <Property name="B" value="0.432" />
-            <Property name="A" value="1" />
-          </Property>
-          <Property name="BasecolourIntensity" value="0.2" />
-          <Property name="ScanlinesSeparation" value="0.1" />
-          <Property name="FresnelIntensity" value="3" />
-          <Property name="GlowIntensity" value="0" />
-          <Property name="WaveOffset" value="0" />
-          <Property name="WaveActive" value="True" />
-          <Property name="FixedUpAxis" value="False" />
-          <Property name="Transparent" value="False" />
-          <Property name="ModelFade" value="False" />
-          <Property name="FadeInTime" value="0.2" />
-          <Property name="FadeOutTime" value="0.2" />
-        </Property>
-        <Property name="DelayTime" value="0" />
-      </Property>
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="]] .. ICON .. [[" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="LinkedSpecialID" value="" />
-      <Property name="NeverShowInMenu" value="False" />
-      <Property name="LoopAnimUntilMove" value="" />
-      <Property name="CloseMenuOnSelect" value="False" />
-      <Property name="MoveToCancel" value="True" />
-      <Property name="GekAnimationName" value="" />
-      <Property name="GekLoopAnimUntilMove" value="" />
-      <Property name="AvailableUnderwater" value="]] .. UNDERWATER .. [[" />
-      <Property name="RidingAnimationName" value="]] .. ANIM .. [[" />
-      <Property name="IsPetCommand" value="False" />
-      <Property name="PetCommandTitle" value="" />
-      <Property name="PetCommandIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="IconResource" value="GcResource.xml">
-        <Property name="ResourceID" value="0" />
-      </Property>
-      <Property name="IconPetCommandResource" value="GcResource.xml">
-        <Property name="ResourceID" value="0" />
-      </Property>
-    </Property>
-]]
-end
+for i = 1, #QUICK_ACTION_MENU, 1 do
+      -- ["MBIN_FILE_SOURCE"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/HEALTHSTATION/ENTITIES/HEALTHSTATION.ENTITY.MBIN",
+      -- ["EXML_CHANGE_TABLE"] =
+  local ADD_REWARDACTION = {
+        {
+          ["SKW"] = {"Action", "GcRewardAction"},
+          ["SEC_COPY"] = "ADD_REWARDACTION" .. i,
+        },
+        {
+          ["SEC_EDIT"] =  "ADD_REWARDACTION" .. i,
+          ["VCT"] =
+          {
+            {"Reward", QUICK_ACTION_MENU[i].ID},
+          }
+        },
+      }
 
-function GetComponents(TRIGGER_ACTION)
-return [[
-  <Property value="LinkableNMSTemplate.xml">
-	<Property name="Template" value="GcTriggerActionComponentData.xml">
-      <Property name="HideModel" value="False" />
-      <Property name="StartInactive" value="False" />
-      <Property name="States">
-        <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="BOOT" />
-          <Property name="Triggers">
-]] .. TRIGGER_ACTION .. [[
-          </Property>
-        </Property>
-      </Property>
-      <Property name="Persistent" value="False" />
-      <Property name="PersistentState" value="" />
-      <Property name="ResetShotTimeOnStateChange" value="False" />
-      <Property name="LinkStateToBaseGrid" value="False" />
-    </Property>
-	<Property name="Linked" value="" />
-  </Property>
-]]
-end
+      -- ["MBIN_FILE_SOURCE"] = "MODELS/COMMON/ROBOTS/SPIDER_QUADRUPED/ENTITIES/SPIDERQUAD.ENTITY.MBIN",
+      -- ["EXML_CHANGE_TABLE"] =
+  local ADD_TRIGGER = {
+        {
+          ["SKW"] = {"Components", "GcTriggerActionComponentData"},
+          ["SEC_KEEP"] = "TRUE",
+          ["SEC_COPY"] = "ADD_TRIGGER" .. i,
+        },
+        {
+          ["SEC_EDIT"] = "ADD_TRIGGER" .. i,
+          ["VCT"] =
+          {
+            {"StateID",    "BOOT"},
+            {"Anim",       QUICK_ACTION_MENU[i].ID},
+            {"FrameStart", "0"},
+          }
+        },
+        {
+          ["SEC_EDIT"] = "ADD_TRIGGER" .. i,
+          ["PKW"] = "GcCameraShakeAction",
+          ["SECTION_UP"] = 1,
+          ["SEC_KEEP"] = "TRUE",
+          ["REMOVE"] = "SECTION"
+        },
+        {
+          ["SEC_EDIT"] = "ADD_TRIGGER" .. i,
+          ["PKW"] = "Action",
+          ["SEC_PASTE"] = "ADD_REWARDACTION" .. i
+        },
+      }
 
-function GetRewardAction(ANIM, REWARDID)
-return [[
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcAnimFrameEvent.xml">
-                <Property name="Anim" value="]] .. ANIM .. [[" />
-                <Property name="FrameStart" value="0" />
-                <Property name="StartFromEnd" value="False" />
-              </Property>	
-              <Property name="Action">
-                <Property value="GcRewardAction.xml">
-                  <Property name="Reward" value="]] .. REWARDID .. [[" />
-                </Property>
-              </Property>
-            </Property>
-]]
-end
+      -- ["MBIN_FILE_SOURCE"] = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN",
+      -- ["EXML_CHANGE_TABLE"] =
+  local ADD_ANIM = {
+        {
+          ["SKW"] = {"Anim", "0H_TURN_L"},
+          ["SEC_COPY"] = "ADD_ANIM" .. i,
+        },
+        {
+          ["SEC_EDIT"] = "ADD_ANIM" .. i,
+          ["VCT"] =
+          {
+            {"Anim",     QUICK_ACTION_MENU[i].ID},
+            {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
+          }
+        },
+        {
+          ["SKW"] = {"Components", "TkAnimationComponentData"},
+          ["PKW"] = "Anims",
+          ["SEC_PASTE"] = "ADD_ANIM" .. i,
+        },
+        {
+          ["PKW"] = "Components",
+          ["SEC_PASTE"] = "ADD_TRIGGER" .. i,
+        }
+      }
 
-ANIMS 				= ""
-COMPONENTS 			= ""
-COMPONENTS_ALL		= ""
-ACTIONCOMPONENTS 	= ""
-ACTIONCOMPONENTS_TABLE = {}
-EMOTEMENU 			= ""
-REWARDTABLE 		= ""
-ACTIONCOMPONENTS_COUNT = 0
-ACTIONCOMPONENTS_LIMIT = 28 --actually 32
-	
-for i=1,#QUICK_ACTION_LIST,1 do
-	print(QUICK_ACTION_LIST[i])
-	if ACTIONCOMPONENTS_COUNT >= ACTIONCOMPONENTS_LIMIT then
-		print("new GcTriggerActionComponentData")
-		ACTIONCOMPONENTS_LIMIT = ACTIONCOMPONENTS_LIMIT - 1
-		ACTIONCOMPONENTS_COUNT = 0
-		table.insert(ACTIONCOMPONENTS_TABLE, ACTIONCOMPONENTS)
-		ACTIONCOMPONENTS = ""
-	end
-	if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]] then 
-		if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["COMPONENT"] then
-			COMPONENTS = COMPONENTS 		.. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["COMPONENT"]
-		end		
-		if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TYPE"] == "REWARD" and not QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ACTION_TRIGGER"] then
-			ACTIONCOMPONENTS = ACTIONCOMPONENTS .. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])
-		else
-			ACTIONCOMPONENTS = ACTIONCOMPONENTS .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ACTION_TRIGGER"]
+	-- ["MBIN_FILE_SOURCE"]  = "METADATA/UI/EMOTEMENU.MBIN",
+	-- ["EXML_CHANGE_TABLE"] =
+  local EMOTE_ITEM = {
+	{
+		["SKW"] = {"Title", "EMOTE_WAVE"},
+		["SEC_COPY"] = "ADD_EMOTE" .. i,
+	},
+	{
+		["SEC_EDIT"] = "ADD_EMOTE" .. i,
+		["VCT"] =
+		{
+			{"Title",               QUICK_ACTION_MENU[i].TITLE},
+			{"ChatText",            ""},
+			{"ChatUsesPrefix",      "false"},
+			{"AvailableUnderwater", "false"},
+			{"EmoteID",             QUICK_ACTION_MENU[i]["EMOTE_ID"] .. 0},
+			{"AnimationName",       QUICK_ACTION_MENU[i].ID},
+			{"Filename",            QUICK_ACTION_MENU[i].ICON},
+			{"MoveToCancel",        "true"},
+			{"RidingAnimationName", QUICK_ACTION_MENU[i].ID},
+		}
+	},
+	{
+		["PKW"] = "Emotes",
+		["SEC_PASTE"] = "ADD_EMOTE" .. i,
+	},
+	{
+		["SEC_EDIT"] = "ADD_EMOTE" .. i,
+		["VCT"] =
+		{
+			{"AvailableUnderwater", "true"},
+			{"EmoteID",             QUICK_ACTION_MENU[i]["EMOTE_ID"] .. 1},
+		}
+	},
+	{
+		["PKW"] = "Emotes",
+		["SEC_PASTE"] = "ADD_EMOTE" .. i,
+	},
+  }
+
+	-- ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
+	-- ["EXML_CHANGE_TABLE"] =
+  local REWARDITEM = {
+		{
+			["SKW"] = {"GenericTable","GcGenericRewardTableEntry"},
+			["SEC_COPY"] = "GenericReward" .. i,
+		},
+		{
+			["SEC_EDIT"] = "GenericReward" .. i,
+			["SKW"] = {"List", "GcRewardTableItem"},
+			["REPLACE_TYPE"] = "ALL",
+			["REMOVE"] = "SECTION",
+		},
+		{
+			["SKW"] = {"Reward","GcRewardScanEvent"},
+			["SECTION_UP"] = 1,
+			["SEC_COPY"] = "ScanEvent" .. i,
+		},
+		{
+			["SEC_EDIT"] = "GenericReward" .. i,
+			["VCT"] =
+			{
+				{"Id", QUICK_ACTION_MENU[i].ID},
+				{"RewardChoice", "GiveAll"},
+				{"OverrideZeroSeed", "false"},
+				{"UseInventoryChoiceOverride", "false"},
+				{"IncrementStat", ""},
+			},
+		},
+		{
+			["SEC_EDIT"] = "ScanEvent" .. i,
+			["VCT"] =
+			{
+				{"PercentageChance", "100"},
+				{"Event", QUICK_ACTION_MENU[i].SCANEVENT},
+				{"ScanEventTable", "Planet"},
+				{"DoAerialScan", "false"},
+				{"UseMissionSeedForEvent", "false"},
+				{"UseMissionSeedForEvent", "false"},
+				{"StartDelay", "0"},
+				{"UseStartDelayWhenNoAerialScan", "false"},
+				{"ForceSilentFailure", "false"},
+				{"FailureOSD", ""},
+			},
+		},
+		{
+			["SEC_EDIT"] = "GenericReward" .. i,
+			["PKW"] = {"List", "List"},
+			["SEC_PASTE"] = "ScanEvent" .. i,
+		},
+		{
+			["PKW"] = "GenericTable",
+			["SEC_PASTE"] = "GenericReward" .. i,
+		}
+    }
+
+  for j = 1, #ADD_REWARDACTION, 1 do
+    table.insert(REWARDACTIONS, ADD_REWARDACTION[j])
+  end
+
+  for j = 1, #ADD_TRIGGER, 1 do
+    table.insert(TRIGGERS, ADD_TRIGGER[j])
+  end
+
+  for j = 1, #ADD_ANIM, 1 do
+    table.insert(ANIMS, ADD_ANIM[j])
+  end
+
+  for j = 1, #EMOTE_ITEM, 1 do
+    table.insert(EMOTEMENU, EMOTE_ITEM[j])
+  end
+
+	if QUICK_ACTION_MENU[i].SCANEVENT then
+		for j = 1, #REWARDITEM, 1 do
+			table.insert(REWARDTABLE, REWARDITEM[j])
 		end
-		EMOTEMENU 			= EMOTEMENU 		.. GetQuickAction(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ICON"], "True")
-		EMOTEMENU 			= EMOTEMENU 		.. GetQuickAction(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ICON"], "False")
-		ANIMS 				= ANIMS 			.. GetTriggerAnim(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"])
-		if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARDTABLE"] then
-			REWARDTABLE 		= REWARDTABLE 		.. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARDTABLE"]
-		end
-	else --pure reward
-		ACTIONCOMPONENTS 	= ACTIONCOMPONENTS 	.. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])	
-		EMOTEMENU 			= EMOTEMENU 		.. GetQuickAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i], GENERIC_BUTTON_ICON, "True")
-		EMOTEMENU 			= EMOTEMENU 		.. GetQuickAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i], GENERIC_BUTTON_ICON, "False")
-		ANIMS 				= ANIMS 			.. GetTriggerAnim(QUICK_ACTION_LIST[i])	
 	end
-	ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1
 end
 
-table.insert(ACTIONCOMPONENTS_TABLE, ACTIONCOMPONENTS)
-
-for i=1,#ACTIONCOMPONENTS_TABLE,1 do
-	COMPONENTS_ALL = COMPONENTS_ALL .. GetComponents(ACTIONCOMPONENTS_TABLE[i])
-end
-COMPONENTS_ALL = COMPONENTS_ALL .. COMPONENTS
-
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= "ShipHuntingQuickActions.pak",
+["MOD_FILENAME"] 			= "ShipHuntingQuickActions",
 ["MOD_AUTHOR"]				= "Lenni",
 ["LUA_AUTHOR"]				= "Lenni, Babscoole",
 ["MOD_DESCRIPTION"]			= "Quick Action to find various POIs for ship hunters",
-["NMS_VERSION"]				= "5.10",
-["MODIFICATIONS"] 			= 
-	{
+["NMS_VERSION"]				= "5.50",
+["MODIFICATIONS"] 			=
+{
+  {
+	  ["MBIN_CHANGE_TABLE"]     =
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{  
+      {
+        ["MBIN_FILE_SOURCE"]  = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/HEALTHSTATION/ENTITIES/HEALTHSTATION.ENTITY.MBIN",
+        ["EXML_CHANGE_TABLE"] = REWARDACTIONS
+      },
+      {
+        ["MBIN_FILE_SOURCE"]  = "MODELS/COMMON/ROBOTS/SPIDER_QUADRUPED/ENTITIES/SPIDERQUAD.ENTITY.MBIN",
+        ["EXML_CHANGE_TABLE"] = TRIGGERS
+      },
+      {
+        ["MBIN_FILE_SOURCE"]  = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN",
+        ["EXML_CHANGE_TABLE"] = ANIMS
+      },
+
+			{
+				["MBIN_FILE_SOURCE"]  = "METADATA/UI/EMOTEMENU.MBIN",
+				["EXML_CHANGE_TABLE"] = EMOTEMENU
+			},
+			{
+			  ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
+			  ["EXML_CHANGE_TABLE"] =
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
-							["ADD"] 				= ANIMS
+				  {
+					  ["SKW"] = {
+							{"Id", "R_SHOW_HIVEONLY"},
+							{"Id", "R_SCANSENTCRASH"},
+							{"Id", "R_CHART_ROBOT"},
+							{"Id", "R_CHART_BUILDER"},
 						},
+						["VCT"]	=
 						{
-							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
-							["ADD"] 				= COMPONENTS_ALL
+						  {"DoAerialScan", "False"}
 						}
-					}
-				},
+					},
+				}
+			},
+			{
+			  ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
+			  ["EXML_CHANGE_TABLE"] = REWARDTABLE
+			},
+			{
+			  ["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/MISSIONS/TABLES/SPACEPOIMISSIONTABLE.MBIN",
+				["EXML_CHANGE_TABLE"] =
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+				  {
+					  ["SKW"] = {"MissionID", "BIOSHIP_REPEAT", "Name", "UI_BIO_SHIP_LOG_REPEAT_OPT3", "Rewards", "R_BIOLOOP_EGG"},
+						["REMOVE"]  = "LINE"
+					},
 					{
+					  ["SKW"] = {"MissionID", "BIOSHIP_REPEAT", "Options", "GcAlienPuzzleOption"},
+						["SECTION_ACTIVE"]  = 1,
+						["VCT"] =
 						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= EMOTEMENU
+						  {"Cost", ""}
 						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					},
 					{
-						{
-							["SKW"] = {
-								{"Id", "R_SHOW_HIVEONLY"},
-								{"Id", "R_SCANSENTCRASH"},
-								{"Id", "R_CHART_ROBOT"},
-								{"Id", "R_CHART_BUILDER"},
-							},
-							["VALUE_CHANGE_TABLE"]	=
-								{
-									{"DoAerialScan", "False"}
-								}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= REWARDTABLE
-						}
+					  ["SKW"]     = {"MissionID", "BIOSHIP_REPEAT"},
+						["PKW"]     = "StartingConditions",
+						["REMOVE"]  = "SECTION",
 					}
-				},
+				}
+			},
+			{
+			  ["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/MISSIONS/TABLES/STARTEDONUSEMISSIONTABLE.MBIN",
+				["EXML_CHANGE_TABLE"] = 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/TABLES/SPACEPOIMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
+				  {
+					  ["SKW"]	= {"MissionID", "SENTSHIP_GALMAP", "Name", "SE_SENT_GALMAP"},
+						["VCT"]	=
 						{
-							["SPECIAL_KEY_WORDS"]	= {"MissionID", "BIOSHIP_REPEAT", "Name", "UI_BIO_SHIP_LOG_REPEAT_OPT3"},
-							["PRECEDING_KEY_WORDS"]	= "NMSString0x10.xml",
-							["SECTION_ACTIVE"]		= 1,
-							["REMOVE"]				= "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"]	= {"MissionID", "BIOSHIP_REPEAT"},
-							["PRECEDING_KEY_WORDS"]	= "GcAlienPuzzleOption.xml",
-							["SECTION_ACTIVE"]		= 1,
-							["VALUE_CHANGE_TABLE"]	=
-								{
-									{"Cost", ""}
-								}
-						},
-						{
-							["SPECIAL_KEY_WORDS"]		= {"MissionID", "BIOSHIP_REPEAT"},
-							["PRECEDING_KEY_WORDS"]		= "StartingConditions",
-							["REMOVE"] = "SECTION",
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/TABLES/STARTEDONUSEMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]	= {"MissionID", "SENTSHIP_GALMAP", "Name", "SE_SENT_GALMAP"},
-							["VALUE_CHANGE_TABLE"]	=
-								{
-									{"SurveyDistance", "0"}
-								}
+						  {"SurveyDistance", "0"}
 						}
 					}
 				}
-			}
+			},
 		},
 	},
-["ADD_FILES"] = 
-	{
-		{
-			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 = 
+},
+["ADD_FILES"] =
+{
+  {
+    ["FILE_DESTINATION"] = "MODELS/TESTS/EFFECTTEST.ANIM.MXML",
+    ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkAnimMetadata">
+
+<Data template="cTkAnimMetadata">
+  <Property name="NodeData">
+    <Property name="NodeData" value="TkAnimNodeData">
+      <Property name="Node" value="AnimatedTrans" />
+      <Property name="RotIndex" value="0" />
+      <Property name="TransIndex" value="0" />
+      <Property name="ScaleIndex" value="0" />
+    </Property>
+  </Property>
+  <Property name="AnimFrameData">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
+      <Property name="Rotations" />
+      <Property name="Translations" />
+      <Property name="Scales" />
+    </Property>
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
+      <Property name="Rotations" />
+      <Property name="Translations" />
+      <Property name="Scales" />
+    </Property>
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
+      <Property name="Rotations" />
+      <Property name="Translations" />
+      <Property name="Scales" />
+    </Property>
+  </Property>
+  <Property name="StillFrameData" value="TkAnimNodeFrameData">
+    <Property name="Rotations">
+      <Property name="Rotations" value="Quaternion">
+        <Property name="X" value="0" />
+        <Property name="Y" value="0" />
+        <Property name="Z" value="0" />
+        <Property name="W" value="1" />
+        <Property name="dropComponent" value="3" />
+      </Property>
+    </Property>
+    <Property name="Translations">
+      <Property name="Translations">
+        <Property name="X" value="-0.73121876" />
+        <Property name="Y" value="0.08333181" />
+        <Property name="Z" value="-0.02858855" />
+      </Property>
+    </Property>
+    <Property name="Scales">
+      <Property name="Scales">
+        <Property name="X" value="1.000000" />
+        <Property name="Y" value="1.000000" />
+        <Property name="Z" value="1.000000" />
+      </Property>
+    </Property>
+  </Property>
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="NodeData" /> 
-  <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />
-    </Property>  
-  </Property>	
-  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />	  
- </Property>
-</Data>	
-]]			
-		},		
-	}
+  <Property name="Has30HzFrames" value="false" />
+</Data>
+]]
+    },
+  }
 }
-
-if REWARDTABLE == "" then table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 3) 
-end
-
---"TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\EMOTE_MENU.DDS", "TEXTURES\UI\FRONTEND\COMPONENTS\STAR.DDS"

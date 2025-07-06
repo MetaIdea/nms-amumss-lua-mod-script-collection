@@ -5,15 +5,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                {
+                { -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
                     ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         -- Cargo Bulkhead
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "R_PIRATEBOARD_A", "ID", "FREI_INV_TOKEN" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 3 }, -- 1
-                                { "AmountMax", 3 }, -- 1
+                                { "AmountMin", 5 },  -- 1
+                                { "AmountMax", 15 }, -- 1
                             }
                         },
                         -- Multi-Tool Expansion Slot
@@ -118,25 +118,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         -- Salvaged Frigate Module
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_LOW", "ID", "FRIG_TOKEN" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 }, -- 1
-                                { "AmountMax", 2 }, -- 1
-                            }
-                        },
+                        -- {
+                        --     ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_LOW", "ID", "FRIG_TOKEN" },
+                        --     ["VALUE_CHANGE_TABLE"] = {
+                        --         { "AmountMin", 1 }, -- 1
+                        --         { "AmountMax", 2 }, -- 1
+                        --     }
+                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_MED", "ID", "FRIG_TOKEN" },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "AmountMin", 2 }, -- 1
-                                { "AmountMax", 3 }, -- 1
+                                { "AmountMax", 2 }, -- 1
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "R_MB_HIGH", "ID", "FRIG_TOKEN" },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "AmountMin", 3 }, -- 1
-                                { "AmountMax", 4 }, -- 1
+                                { "AmountMax", 3 }, -- 1
                             }
                         },
                         {

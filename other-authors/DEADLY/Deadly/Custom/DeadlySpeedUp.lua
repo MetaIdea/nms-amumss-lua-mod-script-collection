@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_AUTHOR"]      = "gh0stwizard",
     ["MOD_DESCRIPTION"] = "Increases speed of scanning things, interacting with objects, discovery notifications.",
     ["LUA_AUTHOR"]      = "gh0stwizard",
-    ["NMS_VERSION"]     = "5.10",
+    ["NMS_VERSION"]     = "5.63",
     ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = {
@@ -88,9 +88,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 --{ "PathUISelectionMultiplierMouse",   1.2 }, -- 0.4
                                 --{ "PathUISelectionMultiplierPushing", 0.3 }, -- 0.1
                                 -- ???
-                                --{ "PathUIConfirmSelectionMultiplier", 4 }, -- 2
+                                --{ "PathUIConfirmSelectionMultiplier", 4.0 }, -- 2.0
                                 -- transition time between world to map and vice versa
-                                { "TransitionTime",               1.1 }, -- 2.05
+                                { "Transition Time",               1.1 }, -- 2.05
                             }
                         },
                     }

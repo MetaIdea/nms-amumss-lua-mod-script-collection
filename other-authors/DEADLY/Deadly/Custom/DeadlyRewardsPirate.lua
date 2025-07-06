@@ -1,12 +1,12 @@
-PIRATELOOT_TRANSPONDER_CHANCE = 10
+PIRATELOOT_TRANSPONDER_CHANCE = 10.0
 
-PIRATELOOT_RELIC_CHANCE = 0
+PIRATELOOT_RELIC_CHANCE = 0.0
 
-PIRATELOOT_SCRAP_CHANCE = 5
+PIRATELOOT_SCRAP_CHANCE = 5.0
 PIRATELOOT_SCRAP_MIN = 1
 PIRATELOOT_SCRAP_MAX = 3
 
-PIRATELOOT_SHIPCHARGE_CHANCE = 10
+PIRATELOOT_SHIPCHARGE_CHANCE = 10.0
 PIRATELOOT_SHIPCHARGE_MIN = 1
 PIRATELOOT_SHIPCHARGE_MAX = 10
 
@@ -14,21 +14,18 @@ PIRATELOOT_SHIPCHARGE_MAX = 10
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyRewardsPirate.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "5.0",
+    ["NMS_VERSION"]   = "5.63",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                --
-                -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
-                --
-                {
+                { -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         -- allow no loot given by killing pirates
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "PIRATELOOT" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "RewardChoice",     "SelectSilent" }, -- SelectAlways
+                                { "RewardChoice", "SelectSilent" }, -- SelectAlways
                             }
                         },
                         -- disable race reputation for killing pirates
@@ -42,17 +39,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Id", "DE_SPACE_POI_1", "AlienRace", "None" }, -- ???
                                 { "Id", "R_DEFEND_RAID",  "AlienRace", "None" },
                             },
-                            ["SECTION_UP"]         = 2,
+                            ["SECTION_UP"]         = 3,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "PercentageChance", 0 },
+                                { "PercentageChance", 0.0 },
                             }
                         },
                         -- no nanites for killing pirate ships
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "PIRATELOOT", "Currency", "Nanites" },
-                            ["SECTION_UP"]         = 2,
+                            ["SECTION_UP"]         = 3,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "PercentageChance", 0 }, -- 100
+                                { "PercentageChance", 0.0 }, -- 100
                             }
                         },
                         -- chance of race's relics
@@ -62,7 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Id", "PIRATELOOT", "ID", "WAR_CURIO1" },
                                 { "Id", "PIRATELOOT", "ID", "EXP_CURIO1" },
                             },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "PercentageChance", PIRATELOOT_RELIC_CHANCE }, -- 40
                             }
@@ -81,7 +78,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         -- ship charges drop chance
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "PIRATELOOT", "ID", "SHIPCHARGE" },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "PercentageChance", PIRATELOOT_SHIPCHARGE_CHANCE }, -- 100
                             }
@@ -101,7 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Id", "PIRATELOOT", "ID", "SCRAP_TECH" },
                                 { "Id", "PIRATELOOT", "ID", "SCRAP_WEAP" },
                             },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "PercentageChance", PIRATELOOT_SCRAP_CHANCE }, -- 100
                             }
@@ -120,17 +117,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         -- Pirate Transponder
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "PIRATELOOT", "ID", "PIRATE_PROD" },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "PercentageChance", PIRATELOOT_TRANSPONDER_CHANCE }, -- 0
                             }
                         },
                     }
                 },
-                --
-                -- METADATA/SIMULATION/SPACE/AISPACESHIPATTACKDATATABLE.MBIN
-                --
-                {
+                { -- METADATA/SIMULATION/SPACE/AISPACESHIPATTACKDATATABLE.MBIN
                     ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SPACE/AISPACESHIPATTACKDATATABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {

@@ -36,10 +36,10 @@ PB_TABLE =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Exo's Dead Wreckoning.pak",
+["MOD_FILENAME"]  = "_Exo's Dead Wreckoning",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.29",
+["NMS_VERSION"]   = "5.73",
 ["MODIFICATIONS"] =
     {
         {
@@ -47,7 +47,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ENVIRONMENT\PLANETBUILDINGTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] =
@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"GivesShelter", "True"},
+                                {"GivesShelter", "true"},
                             }
                         },
                         {
@@ -80,7 +80,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
-local ChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #PB_TABLE do
   local BUILDING = PB_TABLE[i][1]

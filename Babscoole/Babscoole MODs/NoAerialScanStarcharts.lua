@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "NoAerialScanStarcharts.pak",
+["MOD_FILENAME"]    = "NoAerialScanStarcharts",
 ["MOD_DESCRIPTION"] = "Removes the fly up Aerial Scan animation when using StarCharts A-D",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -11,20 +11,20 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Id", "R_STARCHART_A", "List", "GcRewardTableItemList.xml"},
-                                {"Id", "R_STARCHART_B", "List", "GcRewardTableItemList.xml"},
-                                {"Id", "R_STARCHART_C", "List", "GcRewardTableItemList.xml"},
-                                {"Id", "R_STARCHART_D", "List", "GcRewardTableItemList.xml"},
+                                {"Id", "R_STARCHART_A", "List", "GcRewardTableItemList"},
+                                {"Id", "R_STARCHART_B", "List", "GcRewardTableItemList"},
+                                {"Id", "R_STARCHART_C", "List", "GcRewardTableItemList"},
+                                {"Id", "R_STARCHART_D", "List", "GcRewardTableItemList"},
                             },
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"DoAerialScan", "False"},
+                                {"DoAerialScan", "false"},
                             },
                         },
                     },

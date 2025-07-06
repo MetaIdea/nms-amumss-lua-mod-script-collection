@@ -1,10 +1,9 @@
-
 Author = "alchemist"
 ModName = "CompanionBehaviourAdjustments"
 --ModNexus = "https://www.nexusmods.com/nomanssky/mods/1871"
 BaseDescription = "Tweaks to pet behavior."
-GameVersion = "4-03"
-ModVersion = "6"
+GameVersion = "5-22"
+ModVersion = "7"
 
 -- BEGIN CONFIG
 
@@ -21,8 +20,8 @@ CHAT_CHANCE_HIGH = 1.0
 
 local function Trait(trait, tMin, tMax, wMin, wMax, cMin, cMax)
   return [[
-        <Property value="GcPetBehaviourTraitModifier.xml">
-          <Property name="Trait" value="GcCreaturePetTraits.xml">
+        <Property name="TraitBehaviourModifiers" value="GcPetBehaviourTraitModifier">
+          <Property name="Trait" value="GcCreaturePetTraits">
             <Property name="PetTrait" value="]]..trait..[[" />
           </Property>
           <Property name="TraitMin" value="]]..tMin..[[" />
@@ -37,8 +36,8 @@ end
 
 local function Mood(mood, mMin, mMax, wMin, wMax, cMin, cMax)
   return [[
-        <Property value="GcPetBehaviourMoodModifier.xml">
-          <Property name="Mood" value="GcCreaturePetMood.xml">
+        <Property name="MoodBehaviourModifiers" value="GcPetBehaviourMoodModifier">
+          <Property name="Mood" value="GcCreaturePetMood">
             <Property name="PetMood" value="]]..mood..[[" />
           </Property>
           <Property name="MoodMin" value="]]..mMin..[[" />
@@ -53,12 +52,12 @@ end
 
 local function FollowUp(behavior, traitBased, trait, tMin, tMax, wMin, wMax)
   return [[
-        <Property value="GcPetFollowUpBehaviour.xml">
-          <Property name="Behaviour" value="GcPetBehaviours.xml">
+        <Property name="FollowUpBehaviours" value="GcPetFollowUpBehaviour">
+          <Property name="Behaviour" value="GcPetBehaviours">
             <Property name="PetBehaviour" value="]]..behavior..[[" />
           </Property>
           <Property name="TraitBased" value="]]..traitBased..[[" />
-          <Property name="Trait" value="GcCreaturePetTraits.xml">
+          <Property name="Trait" value="GcCreaturePetTraits">
             <Property name="PetTrait" value="]]..trait..[[" />
           </Property>
           <Property name="TraitMin" value="]]..tMin..[[" />
@@ -83,7 +82,7 @@ BEHAVIOR_TABLE = {
   behaviors trait AND mood definitions to make room for the new ones. So always
   specify all traits and moods for a given behavior.
 
-  Follow Up behaviors will be wiped only if ["FollowUp"] is specified. Does NOT
+  Follow Up behaviors will be wiped only if FollowUp is specified. Does NOT
   support adding follow ups where they did not exist before (yet - see HadMoods).
 
   If the moods were originally empty be sure to set "HadMoods" to false or else
@@ -92,168 +91,168 @@ BEHAVIOR_TABLE = {
   --]]
 
   {"ScanForResource", {
-    ["VALUE_CHANGE_TABLE"] = {
+    VALUE_CHANGE_TABLE = {
       {"Weight", nms_round(2 * GLOBAL_WEIGHT_MODIFIER, 2)},
       {"CooldownTime", nms_round(90 * GLOBAL_COOLDOWN_MODIFIER)},
-      {"UsefulBehaviour", "False"},
+      {"UsefulBehaviour", "false"},
     },
-    ["Traits"] = {
+    Traits = {
       Trait("Helpfulness", -1, 1, 0, 1, 4, 0.5),
       Trait("Independence", -1, 1, 0.5, 1, 2, 1),
     },
-    ["Moods"] = {
+    Moods = {
       Mood("Hungry", 0, 1, 0.5, 1, 1, 1)
     }
   }},
 
   {"FindResource", {
-    ["VALUE_CHANGE_TABLE"] = {
+    VALUE_CHANGE_TABLE = {
       {"Weight", nms_round(2 * GLOBAL_WEIGHT_MODIFIER, 2)},
       {"CooldownTime", nms_round(60 * GLOBAL_COOLDOWN_MODIFIER)},
       {"ChatChance", CHAT_CHANCE_LOW},
-      {"UsefulBehaviour", "False"},
+      {"UsefulBehaviour", "false"},
       {"LabelText", "UI_PET_LABEL_EXPLORE"},
     },
-    ["Traits"] = {
+    Traits = {
       Trait("Helpfulness", -1, 1, 1, 0.5, 1, 2),
       Trait("Independence", -1, 1, 0, 1, 4, 0.5),
     },
-    ["Moods"] = {
+    Moods = {
       Mood("Hungry", 0.5, 0.75, 1, 0, 1, 2),
     }
   }},
 
   {"FindHazards", {
-    ["VALUE_CHANGE_TABLE"] = {
+    VALUE_CHANGE_TABLE = {
       {"Weight", nms_round(2 * GLOBAL_WEIGHT_MODIFIER_USEFUL, 2)},
       {"CooldownTime", nms_round(180 * GLOBAL_COOLDOWN_MODIFIER_USEFUL)},
       {"ChatChance", CHAT_CHANCE_MID},
     },
-    ["Traits"] = {
+    Traits = {
       Trait("Helpfulness", -1, 1, 1, 2, 2, 1),
       Trait("Aggression", -1, 1, 0, 3, 1, 0.25),
       Trait("Independence", -1, 1, 1, 2, 4, 0.5),
     },
-    ["Moods"] = {
+    Moods = {
       Mood("Hungry", 0.5, 0.75, 1, 0, 1, 1.5),
     },
-    ["FollowUp"] = {
-      FollowUp("Idle", "True", "Aggression", -1, 1, 0.5, 0),
-      FollowUp("AttackHazard", "True", "Helpfulness", -1, 1, 0, 1),
-      FollowUp("AttackHazard", "True", "Aggression", -1, 1, 0.5, 2),
+    FollowUp = {
+      FollowUp("Idle", "true", "Aggression", -1, 1, 0.5, 0),
+      FollowUp("AttackHazard", "true", "Helpfulness", -1, 1, 0, 1),
+      FollowUp("AttackHazard", "true", "Aggression", -1, 1, 0.5, 2),
     }
   }},
 
   {"FindBuilding", {
-    ["VALUE_CHANGE_TABLE"] = {
+    VALUE_CHANGE_TABLE = {
       {"Weight", nms_round(2 * GLOBAL_WEIGHT_MODIFIER_USEFUL, 2)},
       {"CooldownTime", nms_round(45 * GLOBAL_COOLDOWN_MODIFIER_USEFUL)},
       {"ChatChance", CHAT_CHANCE_HIGH},
       {"SearchDist", 30},
       {"LabelText", "UI_PET_LABEL_EXPLORE"},
     },
-    ["Traits"] = {
+    Traits = {
       Trait("Independence", -1, 1, 0.5, 2, 2, 1),
     },
-    ["HadMoods"] = false,
-    ["Moods"] = {},
+    HadMoods = false,
+    Moods = {},
   }},
 
   {"Explore", {
-    ["VALUE_CHANGE_TABLE"] = {
+    VALUE_CHANGE_TABLE = {
       {"Weight", nms_round(2 * GLOBAL_WEIGHT_MODIFIER_USEFUL, 2)},
       {"CooldownTime", nms_round(45 * GLOBAL_COOLDOWN_MODIFIER_USEFUL)},
       {"ChatChance", CHAT_CHANCE_HIGH},
-      {"UsefulBehaviour", "False"},
+      {"UsefulBehaviour", "false"},
       {"MinPerformTime", 15},
       {"MaxPerformTime", 20},
     },
-    ["Traits"] = {
+    Traits = {
       Trait("Helpfulness", -1, 1, 0, 1, 3, 0.5),
       Trait("Independence", -1, 1, 1, 2, 2, 1),
     },
-    ["HadMoods"] = false,
-    ["Moods"] = {}
+    HadMoods = false,
+    Moods = {}
   }},
 
   {"Emote", {
-    ["VALUE_CHANGE_TABLE"] = {
+    VALUE_CHANGE_TABLE = {
       {"Weight", nms_round(2.5 * GLOBAL_WEIGHT_MODIFIER, 2)},
       {"CooldownTime", nms_round(90 * GLOBAL_COOLDOWN_MODIFIER)},
       {"ChatChance", CHAT_CHANCE_HIGH},
-      {"UsefulBehaviour", "False"},
+      {"UsefulBehaviour", "false"},
     },
-    ["Traits"] = {
+    Traits = {
       Trait("Helpfulness", -1, 1, 2, 0.5, 1, 2),
       Trait("Independence", -1, 1, 2, 0.5, 1, 2),
     },
-    ["Moods"] = {
+    Moods = {
       Mood("Hungry", 0.5, 0.75, 1, 10, 1, 0.75),
       Mood("Lonely", 0.5, 0.75, 1, 10, 1, 0.75),
     },
   }},
 
   {"Mine", {
-    ["VALUE_CHANGE_TABLE"] = {
+    VALUE_CHANGE_TABLE = {
       {"Weight", nms_round(2 * GLOBAL_WEIGHT_MODIFIER_USEFUL, 2)},
       {"CooldownTime", nms_round(240 * GLOBAL_COOLDOWN_MODIFIER_USEFUL)},
       {"ChatChance", CHAT_CHANCE_HIGH},
     },
-    ["Traits"] = {
+    Traits = {
       Trait("Helpfulness", -1, 1, 0.25, 2, 4, 1),
     },
-    ["Moods"] = {
+    Moods = {
       Mood("Hungry", 0.4, 0.6, 1, 0, 1, 1),
     },
-    ["MoodModifyOnComplete"] = {
+    MoodModifyOnComplete = {
       {"Hungry", 0.1},
     }
   }},
 
   {"Attack", {
-    ["VALUE_CHANGE_TABLE"] = {
+    VALUE_CHANGE_TABLE = {
       {"Weight", nms_round(2.5 * GLOBAL_WEIGHT_MODIFIER_USEFUL, 2)},
       {"CooldownTime", nms_round(120 * GLOBAL_COOLDOWN_MODIFIER_USEFUL)},
       {"ChatChance", CHAT_CHANCE_HIGH},
-      {"UsefulBehaviour", "True"},
+      {"UsefulBehaviour", "true"},
       --{"MinPerformTime", 30},
       --{"MaxPerformTime", 30},
       --{"SearchDist", 60},
     },
-    ["Traits"] = {
+    Traits = {
       Trait("Aggression", 0, 1, 0.5, 3, 2, 1),
       Trait("Independence", -1, 1, 1, 2, 2, 1),
     },
-    ["Moods"] = {
+    Moods = {
       Mood("Hungry", 0.25, 0.5, 0.5, 2, 2, 1),
     },
-    ["FollowUp"] = {
-      -- FollowUp("Eat", "False", "Helpfulness", 0, 1, 1, 1),
-      FollowUp("FollowPlayer", "False", "Helpfulness", 0, 1, 1, 1),
+    FollowUp = {
+      -- FollowUp("Eat", "false", "Helpfulness", 0, 1, 1, 1),
+      FollowUp("FollowPlayer", "false", "Helpfulness", 0, 1, 1, 1),
     },
-    ["MoodModifyOnComplete"] = {
+    MoodModifyOnComplete = {
       {"Hungry", -0.30},
     }
   }},
 
   {"Greet", {
-    ["VALUE_CHANGE_TABLE"] = {
+    VALUE_CHANGE_TABLE = {
       {"Weight", nms_round(3 * GLOBAL_WEIGHT_MODIFIER_USEFUL, 2)},
       {"CooldownTime", nms_round(120 * GLOBAL_COOLDOWN_MODIFIER_USEFUL)},
       {"ChatChance", CHAT_CHANCE_HIGH},
-      {"UsefulBehaviour", "True"},
+      {"UsefulBehaviour", "true"},
       {"LabelText", "UI_PET_LABEL_BUILDING"}, -- "Tracking a lifeform"
     },
-    ["Traits"] = {
+    Traits = {
       Trait("Helpfulness", -1, 1, 2, 1, 1, 2),
       Trait("Aggression", -1, 1, 3, 0, 0.5, 4),
       Trait("Independence", -1, 1, 0.5, 3, 2, 1),
     },
-    ["Moods"] = {
+    Moods = {
       Mood("Hungry", 0.4, 0.75, 1, 0, 1, 1),
       Mood("Lonely", 0, 1, 1, 2, 1, 1),
     },
-    ["MoodModifyOnComplete"] = {
+    MoodModifyOnComplete = {
       {"Lonely", -0.15},
     }
   }},
@@ -268,69 +267,80 @@ NMS_MOD_DEFINITION_CONTAINER = {
 {["MBIN_CHANGE_TABLE"] = {
 
 {
-["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\ECOSYSTEM\\CREATUREPETBEHAVIOURTABLE.MBIN",
+["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREPETBEHAVIOURTABLE.MBIN",
 ["EXML_CHANGE_TABLE"] = {
 
   -- Globals
-  {["VALUE_CHANGE_TABLE"] = {
-    --{"GlobalCooldownModifier", 0.5}, -- original: 1
-    {"UsefulBehaviourLinkedCooldownAmount", 0.4},
-  }},
+  {
+    VALUE_CHANGE_TABLE = {
+      -- {"GlobalCooldownModifier", 1.0},
+      {"UsefulBehaviourLinkedCooldownAmount", 0.4},
+    },
+  },
 
   -- Disable Rest
-  {["PRECEDING_KEY_WORDS"] = {
-    "Rest"
+  {
+    PRECEDING_KEY_WORDS = {
+      "Rest"
+    },
+    INTEGER_TO_FLOAT = "FORCE",
+    VALUE_CHANGE_TABLE = {
+      {"Weight", 0},
+      {"CooldownTime", 90},
+    },
   },
-  ["INTEGER_TO_FLOAT"] = "FORCE",
-  ["VALUE_CHANGE_TABLE"] = {
-    {"Weight", 0},
-    {"CooldownTime", 90},
-  }},
 
   -- Rewards
-  {["PRECEDING_KEY_WORDS"] = {
-    "RewardMoodModifier",
-    "Tickle",
-    "MoodModifiers"
+  {
+    PRECEDING_KEY_WORDS = {
+      "RewardMoodModifier",
+      "Tickle",
+      "MoodModifiers"
+    },
+    INTEGER_TO_FLOAT = "FORCE",
+    VALUE_CHANGE_TABLE = {
+      {"Lonely", -0.3},
+    },
   },
-  ["INTEGER_TO_FLOAT"] = "FORCE",
-  ["VALUE_CHANGE_TABLE"] = {
-    {"Lonely", -0.3},
-  }},
 
-  {["PRECEDING_KEY_WORDS"] = {
-    "RewardMoodModifier",
-    "Treat",
-    "MoodModifiers"
+  {
+    PRECEDING_KEY_WORDS = {
+      "RewardMoodModifier",
+      "Treat",
+      "MoodModifiers"
+    },
+    INTEGER_TO_FLOAT = "FORCE",
+    VALUE_CHANGE_TABLE = {
+      {"Hungry", -0.3},
+      {"Lonely", -0.1},
+    },
   },
-  ["INTEGER_TO_FLOAT"] = "FORCE",
-  ["VALUE_CHANGE_TABLE"] = {
-    {"Hungry", -0.3},
-    {"Lonely", -0.1},
-  }},
 
-  {["PRECEDING_KEY_WORDS"] = {
-    "RewardMoodModifier",
-    "Ride",
-    "MoodModifiers"
+  {
+    PRECEDING_KEY_WORDS = {
+      "RewardMoodModifier",
+      "Ride",
+      "MoodModifiers"
+    },
+    INTEGER_TO_FLOAT = "FORCE",
+    VALUE_CHANGE_TABLE = {
+      {"Hungry", 0.05},
+      {"Lonely", -0.1},
+    },
   },
-  ["INTEGER_TO_FLOAT"] = "FORCE",
-  ["VALUE_CHANGE_TABLE"] = {
-    {"Hungry", 0.05},
-    {"Lonely", -0.1},
-  }},
 
-  {["PRECEDING_KEY_WORDS"] = {
-    "RewardMoodModifier",
-    "Customise",
-    "MoodModifiers"
+  {
+    PRECEDING_KEY_WORDS = {
+      "RewardMoodModifier",
+      "Customise",
+      "MoodModifiers"
+    },
+    INTEGER_TO_FLOAT = "FORCE",
+    VALUE_CHANGE_TABLE = {
+      {"Hungry", 0},
+      {"Lonely", -0.3},
+    },
   },
-  ["INTEGER_TO_FLOAT"] = "FORCE",
-  ["VALUE_CHANGE_TABLE"] = {
-    {"Hungry", 0},
-    {"Lonely", -0.3},
-  }},
-
 }},
 
 }}}}
@@ -342,16 +352,16 @@ for i = 1, #BEHAVIOR_TABLE do
   local ai = BEHAVIOR_TABLE[i][2]
 
   -- blast away the mood matrix
-  if ai["HadMoods"] == nil or ai["HadMoods"] == true then
+  if ai.HadMoods == nil or ai.HadMoods == true then
     Ref[#Ref + 1] = {
-      ["PRECEDING_KEY_WORDS"] = {id, "MoodBehaviourModifiers"},
-      ["REMOVE"] = "SECTION"
+      PRECEDING_KEY_WORDS = {id, "MoodBehaviourModifiers"},
+      REMOVE = "SECTION"
     }
-  elseif ai["HadMoods"] == false and #ai["Moods"] > 0 then
+  elseif ai.HadMoods == false and #ai.Moods > 0 then
     Ref[#Ref + 1] = {
-      ["PRECEDING_KEY_WORDS"] = {id},
-      ["REPLACE_TYPE"] = "RAW",
-      ["VALUE_CHANGE_TABLE"] = {
+      PRECEDING_KEY_WORDS = {id},
+      REPLACE_TYPE = "RAW",
+      VALUE_CHANGE_TABLE = {
         {
           [[<Property name="MoodBehaviourModifiers" />]],
           [[]]
@@ -362,10 +372,9 @@ for i = 1, #BEHAVIOR_TABLE do
 
   -- blast away the trait matrix
   Ref[#Ref + 1] = {
-    ["PRECEDING_KEY_WORDS"] = {id, "TraitBehaviourModifiers"},
-    ["REMOVE"] = "SECTION"
+    PRECEDING_KEY_WORDS = {id, "TraitBehaviourModifiers"},
+    REMOVE = "SECTION"
   }
-
 end
 
 for i = 1, #BEHAVIOR_TABLE do
@@ -373,50 +382,50 @@ for i = 1, #BEHAVIOR_TABLE do
   local ai = BEHAVIOR_TABLE[i][2]
 
   -- invoke change table if we have it
-  if ai["VALUE_CHANGE_TABLE"] ~= nil then
+  if ai.VALUE_CHANGE_TABLE ~= nil then
     Ref[#Ref + 1] = {
-      ["PRECEDING_KEY_WORDS"] = {"Behaviours", id},
-      ["INTEGER_TO_FLOAT"] = "FORCE",
-      ["VALUE_CHANGE_TABLE"] = ai["VALUE_CHANGE_TABLE"]
+      PRECEDING_KEY_WORDS = {"Behaviours", id},
+      INTEGER_TO_FLOAT = "FORCE",
+      VALUE_CHANGE_TABLE = ai.VALUE_CHANGE_TABLE
     }
   end
 
-  -- invoke on complete if we have it. seperate for cleaner api
-  if ai["MoodModifyOnComplete"] ~= nil then
+  -- invoke on complete if we have it. separate for cleaner API
+  if ai.MoodModifyOnComplete ~= nil then
     Ref[#Ref + 1] = {
-      ["PRECEDING_KEY_WORDS"] = {"Behaviours", id, "MoodModifyOnComplete"},
-      ["INTEGER_TO_FLOAT"] = "FORCE",
-      ["VALUE_CHANGE_TABLE"] = ai["MoodModifyOnComplete"]
+      PRECEDING_KEY_WORDS = {"Behaviours", id, "MoodModifyOnComplete"},
+      INTEGER_TO_FLOAT = "FORCE",
+      VALUE_CHANGE_TABLE = ai.MoodModifyOnComplete
     }
   end
 
-  -- handle followup behaviors first to preserve clean diffing
-  -- don't blast follow ups unless their are new ones
-  if ai["FollowUp"] ~= nil then
+  -- handle follow-up behaviors first to preserve clean diffing
+  -- don't blast follow-ups unless there are new ones
+  if ai.FollowUp ~= nil then
 
-    -- blast await follow ups
+    -- blast away follow-ups
     Ref[#Ref + 1] = {
-      ["PRECEDING_KEY_WORDS"] = {id, "FollowUpBehaviours"},
-      ["REMOVE"] = "SECTION"
+      PRECEDING_KEY_WORDS = {id, "FollowUpBehaviours"},
+      REMOVE = "SECTION"
     }
 
     -- start with empty
     local followStr = [[
       <Property name="FollowUpBehaviours" />]]
 
-    -- concat new ones if we got them
-    if #ai["FollowUp"] > 0 then
+    -- concat new ones if we have them
+    if #ai.FollowUp > 0 then
       followStr = [[
       <Property name="FollowUpBehaviours">
-]]..table.concat(ai["FollowUp"], string.char(10))..[[
+]]..table.concat(ai.FollowUp, string.char(10))..[[
       </Property>]]
     end
 
     -- add right before on complete mood modifiers
     Ref[#Ref + 1] = {
-      ["PRECEDING_KEY_WORDS"] = {id, "MoodModifyOnComplete"},
-      ["LINE_OFFSET"] = -1,
-      ["ADD"] = followStr
+      PRECEDING_KEY_WORDS = {id, "MoodModifyOnComplete"},
+      LINE_OFFSET = -1,
+      ADD = followStr
     }
   end
 
@@ -424,38 +433,37 @@ for i = 1, #BEHAVIOR_TABLE do
   local traitStr = [[
       <Property name="TraitBehaviourModifiers" />]]
 
-  if ai["Traits"] ~= nil then
+  if ai.Traits ~= nil then
     traitStr = [[
       <Property name="TraitBehaviourModifiers">
-]]..table.concat(ai["Traits"], string.char(10))..[[
+]]..table.concat(ai.Traits, string.char(10))..[[
       </Property>]]
   end
 
-  -- add before mode modifiers
+  -- add before mood modifiers
   Ref[#Ref + 1] = {
-    ["PRECEDING_KEY_WORDS"] = {id, "MoodModifyOnComplete"},
-    ["LINE_OFFSET"] = -1,
-    ["ADD"] = traitStr
+    PRECEDING_KEY_WORDS = {id, "MoodModifyOnComplete"},
+    LINE_OFFSET = -1,
+    ADD = traitStr
   }
 
   -- new mood matrix
   local moodStr = [[
       <Property name="MoodBehaviourModifiers" />]]
 
-  if ai["Moods"] ~= nil and #ai["Moods"] > 0 then
+  if ai.Moods ~= nil and #ai.Moods > 0 then
     moodStr = [[
       <Property name="MoodBehaviourModifiers">
-]]..table.concat(ai["Moods"], string.char(10))..[[
+]]..table.concat(ai.Moods, string.char(10))..[[
       </Property>]]
   end
 
   -- and add it in
-  if #ai["Moods"] > 0 then
+  if #ai.Moods > 0 then
     Ref[#Ref + 1] = {
-      ["PRECEDING_KEY_WORDS"] = {id, "MoodModifyOnComplete"},
-      ["LINE_OFFSET"] = -1,
-      ["ADD"] = moodStr
+      PRECEDING_KEY_WORDS = {id, "MoodModifyOnComplete"},
+      LINE_OFFSET = -1,
+      ADD = moodStr
     }
   end
-
 end

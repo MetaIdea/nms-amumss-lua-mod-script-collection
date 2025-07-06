@@ -3,11 +3,11 @@ LuaAuthor = "lyravega"
 ModName = "gBlack Market"
 ModNameSub = "Best X"
 BaseDescription = "Changes the weighting curve of X-class upgrades"
-GameVersion = "5.2.9.0"
+GameVersion = "5.5.5.0"
 ModVersion = "a"
 
 NewWeightingCurve = "MinIsSuperRare"			--MaxIsRare; X-class curves where higher is better
-NewWeightingCurveReverse = "MaxIsSuperRare" 	--MinIsUncommon; X-class curves where lower is better
+NewWeightingCurveReverse = "MaxIsSuperRare"	 --MinIsUncommon; X-class curves where lower is better
 
 --[[Files Modified:
 METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"

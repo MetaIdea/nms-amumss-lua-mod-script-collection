@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= "CampScanChain.pak",
+["MOD_FILENAME"] 			= "CampScanChain",
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "4.65",
+["NMS_VERSION"]				= "5.62",
 ["MOD_DESCRIPTION"]			= "Allows to scan for more camps while at a camp",
 ["MODIFICATIONS"] 			=
 	{
@@ -11,12 +11,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["SKW"]					= {"Text", "UI_ROBOT_CAMP_OPEN_DESC"},
-							["PKW"]					= "GcAlienPuzzleOption.xml",
-							["SECTION_ACTIVE"]		= "-2",
+							["SKW"]					= {"Text", "UI_ROBOT_CAMP_OPEN_DESC", "Options", "GcAlienPuzzleOption"},
 							["SEC_SAVE_TO"]			= "PuzzleOption",
 						},
 						{
@@ -27,14 +25,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SEC_EDIT"]		= "PuzzleOption",
-							["PKW"]					= "Rewards",
+							["PKW"]				= "Rewards",
+							["LINE_OFFSET"]		= 1,
 							["VALUE_CHANGE_TABLE"]	= {
-								{"Value", "R_CHART_ROBOT"},
+								{"Rewards", "R_CHART_ROBOT"},
 							}
 						},
 						{
-							["SKW"]					= {"Name", "UI_ROBO_CAMP_SHIP_OPT"},
-							["SECTION_ACTIVE"]		= {1, 2},
+							["SKW"]					= {"Text", "UI_ROBOT_CAMP_OPEN_DESC", "Name", "UI_ROBO_CAMP_SHIP_OPT"},
+							["REPLACE_TYPE"]		= "ALL",
 							["ADD_OPTION"]			= "ADDafterSECTION",
 							["SEC_ADD_NAMED"]		= "PuzzleOption",
 						},

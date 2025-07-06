@@ -121,13 +121,12 @@ local new_ship_texture = {
 		sci		= true
 	}
 }
-
 ---------------------------------------------------------------------------------------------------
 local module_ct = {}
-for _, ship in ipairs({'Fighter', 'Dropship', 'Sail'}) do
+for _,ship in ipairs({'Fighter', 'Dropship', 'Sail'}) do
 	-- ship :: copy GcModularCustomisationColourData
 	module_ct[#module_ct+1] = {
-		SPECIAL_KEY_WORDS	= {ship, 'GcModularCustomisationConfig.xml', 'RequiredTextureOption', 'PANELS'},
+		SPECIAL_KEY_WORDS	= {ship, 'GcModularCustomisationConfig', 'RequiredTextureOption', 'PANELS'},
 		SEC_SAVE_TO			= 'customisation_colour_data',
 	}
 	-- ship :: insert new texture options
@@ -141,7 +140,7 @@ for _, ship in ipairs({'Fighter', 'Dropship', 'Sail'}) do
 				}
 			}
 			module_ct[#module_ct+1] = {
-				SPECIAL_KEY_WORDS	= {ship, 'GcModularCustomisationConfig.xml'},
+				SPECIAL_KEY_WORDS	= {ship, 'GcModularCustomisationConfig'},
 				PRECEDING_KEY_WORDS = 'ColourDataPriorityList',
 				ADD_OPTION			= 'AddEndSection',
 				SEC_ADD_NAMED		= 'customisation_colour_data'
@@ -149,11 +148,36 @@ for _, ship in ipairs({'Fighter', 'Dropship', 'Sail'}) do
 		end
 	end
 end
+-- Sailship :: copy GcModularCustomisationColourData
+module_ct[#module_ct+1] = {
+	SPECIAL_KEY_WORDS	= {'Sail', 'GcModularCustomisationConfig', 'RequiredTextureOption', 'PANELS'},
+	SEC_SAVE_TO			= 'customisation_colour_data',
+}
+-- Sailship :: insert new texture options
+for _,snk in ipairs(new_ship_texture) do
+	if not snk.org then
+		module_ct[#module_ct+1] = {
+			SEC_EDIT 			= 'customisation_colour_data',
+			VALUE_CHANGE_TABLE 	= {
+				{'RequiredTextureOption',	snk.name},
+				{'PaletteID',				snk.metal and 'SHIP_METALLIC' or 'SHIP'},
+			}
+		}
+		module_ct[#module_ct+1] = {
+			SPECIAL_KEY_WORDS	= {'Sail', 'GcModularCustomisationConfig'},
+			PRECEDING_KEY_WORDS = 'ColourDataPriorityList',
+			ADD_OPTION			= 'AddEndSection',
+			SEC_ADD_NAMED		= 'customisation_colour_data'
+		}
+	end
+end
 -- Scientific :: ready and insert new options
 module_ct[#module_ct+1] = {
 	REPLACE_TYPE 		= 'All',
-	SPECIAL_KEY_WORDS	= {'Scientific', 'GcModularCustomisationConfig.xml'},
-	PRECEDING_KEY_WORDS = 'GcModularCustomisationColourData.xml',
+	SPECIAL_KEY_WORDS	= {
+		'Scientific', 'GcModularCustomisationConfig',
+		'ColourDataPriorityList', 'GcModularCustomisationColourData'
+	},
 	REMOVE				= 'Section'
 }
 module_ct[#module_ct+1] = {
@@ -182,16 +206,17 @@ for _,snk in ipairs(new_ship_texture) do
 			}
 		end
 		module_ct[#module_ct+1] = {
-			SPECIAL_KEY_WORDS	= {'Scientific', 'GcModularCustomisationConfig.xml'},
+			SPECIAL_KEY_WORDS	= {'Scientific', 'GcModularCustomisationConfig'},
 			PRECEDING_KEY_WORDS = 'ColourDataPriorityList',
 			ADD_OPTION			= 'AddEndSection',
 			SEC_ADD_NAMED		= 'customisation_colour_data'
 		}
 	end
 end
+
 ---------------------------------------------------------------------------------------------------
 local char_ct = {}
-local str20 = '<Property value="NMSString0x20.xml"><Property name="Value" value="%s"/></Property>'
+local str_prp = '<Property name="%s" value="%s"/>'
 -- ship :: copy multilayer
 char_ct[#char_ct+1] = {
 	SPECIAL_KEY_WORDS	= {'TextureOptionsID', 'COATING'},
@@ -208,51 +233,56 @@ for _,snk in ipairs(new_ship_texture) do
 			}
 		}
 		char_ct[#char_ct+1] = {
-			SPECIAL_KEY_WORDS	= {'MultiTextureOptionsID', 'SHIP_FIGHT'},
+			SPECIAL_KEY_WORDS	= {
+				{'MultiTextureOptionsID', 'SHIP_FIGHT'},
+				{'MultiTextureOptionsID', 'SHIP_SAIL'},
+			},
 			PRECEDING_KEY_WORDS = 'Options',
 			ADD_OPTION			= 'AddEndSection',
 			SEC_ADD_NAMED		= 'multi_texture_option'
 		}
 		char_ct[#char_ct+1] = {
-			SPECIAL_KEY_WORDS	= {'MultiTextureOptionsID', 'SHIP_FIGHT'},
+			SPECIAL_KEY_WORDS	= {
+				{'MultiTextureOptionsID', 'SHIP_FIGHT'},
+				{'MultiTextureOptionsID', 'SHIP_SAIL'},
+			},
 			PRECEDING_KEY_WORDS = 'Tips',
 			ADD_OPTION			= 'AddEndSection',
-			ADD					= string.format(str20, snk.name)
+			ADD					= str_prp:format('Tips', snk.name)
 		}
-
 		-- scientific :: add options and tips
 		if snk.sci then
 			char_ct[#char_ct+1] = {
 				SPECIAL_KEY_WORDS	= {'TextureOptionsID', 'SHIP_SCI'},
 				PRECEDING_KEY_WORDS = 'Options',
 				ADD_OPTION			= 'AddEndSection',
-				ADD					= string.format(str20, snk.name)
+				ADD					= str_prp:format('Options', snk.name)
 			}
 			char_ct[#char_ct+1] = {
 				SPECIAL_KEY_WORDS	= {'TextureOptionsID', 'SHIP_SCI'},
 				PRECEDING_KEY_WORDS = 'Tips',
 				ADD_OPTION			= 'AddEndSection',
-				ADD					= string.format(str20, snk.name)
+				ADD					= str_prp:format('Tips', snk.name)
 			}
 		end
 	end
 end
 --- fighter proc texture --------------------------------------------------------------------------
 local ship_path = 'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/'
-local ship_mct = {}
+local ship_ct = {}
 for _,src in ipairs({
-	'HQTRIM_PRIMARY.TEXTURE.MBIN',
-	'HQTRIM_SECONDARY.TEXTURE.MBIN',
-	'PRIMARY.TEXTURE.MBIN',
-	'SECONDARY.TEXTURE.MBIN',
-	'TERTIARY.TEXTURE.MBIN'
+	'HQTRIM_PRIMARY',
+	'HQTRIM_SECONDARY',
+	'PRIMARY',
+	'SECONDARY',
+	'TERTIARY'
 }) do
 	local T = {{
 		SPECIAL_KEY_WORDS	= {'Name', 'PAINTED'},
 		SEC_SAVE_TO			= 'procedural_texture',
 	}}
 	for _,snk in ipairs(new_ship_texture) do
-		if not snk.org then	
+		if not snk.org then
 			T[#T+1] = {
 				SEC_EDIT 			= 'procedural_texture',
 				VALUE_CHANGE_TABLE 	= {
@@ -263,9 +293,7 @@ for _,src in ipairs({
 			T[#T+1] = {
 				SEC_EDIT 			= 'procedural_texture',
 				VALUE_CHANGE_TABLE 	= {
-					{'Diffuse',		ship_path..'PRIMARY.X2.DDS'},
-					{'Normal',		ship_path..'PRIMARY.'..snk.name..'.NORMAL.DDS'},
-					{'Mask',		ship_path..'PRIMARY.'..snk.name..'.MASKS.DDS'}
+					{'TextureName',	ship_path..'PRIMARY.'..snk.name..'.DDS'}
 				}
 			}
 			T[#T+1] = {
@@ -284,14 +312,14 @@ for _,src in ipairs({
 			}
 		end
 	end
-	ship_mct[#ship_mct+1] = {
-		MBIN_FILE_SOURCE	= ship_path..src,
-		EXML_CHANGE_TABLE	= T
+	ship_ct[#ship_ct+1] = {
+		MBIN_FILE_SOURCE	= ship_path..src..'.TEXTURE.MBIN',
+		MXML_CHANGE_TABLE	= T
 	}
 end
 --- scientific proc texture -----------------------------------------------------------------------
 local sci_path = 'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/'
-local sci_ect = {
+local sci_ct = {
 	{
 		SPECIAL_KEY_WORDS	= {'Name', 'PAINT1', 'Name', 'PAINTED'},
 		SEC_SAVE_TO			= 'procedural_texture_paint',
@@ -303,35 +331,28 @@ local sci_ect = {
 }
 for _,snk in ipairs(new_ship_texture) do
 	if snk.sci and not snk.org then
-		sci_ect[#sci_ect+1] = {
+		sci_ct[#sci_ct+1] = {
 			SEC_EDIT 			= 'procedural_texture_paint',
-			VALUE_CHANGE_TABLE 	= {
+			VALUE_CHANGE_TABLE 	=  {
 				{'Name',		snk.name},
 				{'Probability',	0.005},
-				{'Diffuse',		sci_path..'SCIENTIFIC.PAINT1.SHINY.DDS'},
-				{'Normal',		sci_path..'PAINT1.'..snk.name..'.NORMAL.DDS'},
-				{'Mask',		sci_path..'SCIENTIFIC.BASE.SHINY.MASKS.DDS'}
+				{'TextureName',	sci_path..'SCIENTIFIC.PAINT1.'..snk.name..'.DDS'}
 			}
 		}
-		sci_ect[#sci_ect+1] = {
+		sci_ct[#sci_ct+1] = {
 			SPECIAL_KEY_WORDS	= {'Name', 'PAINT1'},
 			PRECEDING_KEY_WORDS = 'Textures',
 			ADD_OPTION			= 'AddEndSection',
 			SEC_ADD_NAMED		= 'procedural_texture_paint'
 		}
-		sci_ect[#sci_ect+1] = {
+		sci_ct[#sci_ct+1] = {
 			SEC_EDIT 			= 'procedural_texture_base',
 			VALUE_CHANGE_TABLE 	= {
 				{'Name',		snk.name},
-				{'Probability',	0.005},
-				{'Normal',		sci_path..'PAINT1.'..snk.name..'.NORMAL.DDS'},
-				{'Mask',		sci_path..'SCIENTIFIC.BASE.SHINY.MASKS.DDS'}
-				
-				
-				
+				{'Probability',	0.005}
 			}
 		}
-		sci_ect[#sci_ect+1] = {
+		sci_ct[#sci_ct+1] = {
 			SPECIAL_KEY_WORDS	= {'Name', 'BASE'},
 			PRECEDING_KEY_WORDS = 'Textures',
 			ADD_OPTION			= 'AddEndSection',
@@ -343,27 +364,26 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.Embossed Ships.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '5.29',
-	GLOBAL_INTEGER_TO_FLOAT = 'Force',
+	NMS_VERSION				= '5.62',
 	MOD_DESCRIPTION			= mod_desc,
 	MODIFICATIONS 			= {
 		{
 			MBIN_CHANGE_TABLE	= {
 				{
 					MBIN_FILE_SOURCE	= 'METADATA/GAMESTATE/PLAYERDATA/MODULARCUSTOMISATIONDATATABLE.MBIN',
-					EXML_CHANGE_TABLE	= module_ct
+					MXML_CHANGE_TABLE	= module_ct
 				},
 				{
 					MBIN_FILE_SOURCE	= 'METADATA/GAMESTATE/PLAYERDATA/CHARACTERCUSTOMISATIONTEXTUREOPTIONDATA.MBIN',
-					EXML_CHANGE_TABLE	= char_ct
+					MXML_CHANGE_TABLE	= char_ct
 				},
 				{
 					MBIN_FILE_SOURCE  	= 'UI/SHIP_BUILDER_PAGE.MBIN',
-					EXML_CHANGE_TABLE 	= {
+					MXML_CHANGE_TABLE 	= {
 						{
 							SPECIAL_KEY_WORDS	= {'ID', 'COLOUR'},
 							VALUE_CHANGE_TABLE	= {
-								{'PositionY',	44},
+								{'Position Y',	44},
 								{'Height',		580}
 							}
 						}
@@ -372,27 +392,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		},
 		{
-			MBIN_CHANGE_TABLE	= ship_mct
+			MBIN_CHANGE_TABLE	= ship_ct
 		},
 		{
 			MBIN_CHANGE_TABLE	= {{
 				MBIN_FILE_SOURCE	= sci_path..'SCIENTIFIC.TEXTURE.MBIN',
-				EXML_CHANGE_TABLE	= sci_ect
+				MXML_CHANGE_TABLE	= sci_ct
 			}}
 		}
 	},
 	ADD_FILES	= (
 		function()
-			local tex_path = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Ship/Embossed/'
+			local tex_path = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures_mod_source/textures/common/spacecraft/'
 			if lfs.attributes(tex_path) then
 				return {
 					{
-						EXTERNAL_FILE_SOURCE = tex_path..'Ship_2048/*.DDS',
-						FILE_DESTINATION	 = ship_path..'*.DDS'
+						EXTERNAL_FILE_SOURCE = tex_path..'fighters/shared/PRIMARY*.dds',
+						FILE_DESTINATION	 = ship_path
 					},
 					{
-						EXTERNAL_FILE_SOURCE = tex_path..'Scientific/*.DDS',
-						FILE_DESTINATION	 = sci_path..'*.DDS'
+						EXTERNAL_FILE_SOURCE = tex_path..'Scientific/shared/SCIENTIFIC*.dds',
+						FILE_DESTINATION	 = sci_path
 					}
 				}
 			end

@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]    = "NoPlanetaryPirateRaids.pak",
     ["MOD_AUTHOR"]      = "gh0stwizard",
     ["MOD_DESCRIPTION"] = "Disables Planetary Pirate Raids on specific types of buildings.",
-    ["NMS_VERSION"]     = "4.46",
+    ["NMS_VERSION"]     = "5.63",
     ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = {
@@ -35,6 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 -- { "Settlement_Double",          "False" },
                                 -- { "Settlement_Farm",            "False" },
                                 -- { "Settlement_Factory",         "False" },
+                                { "DigSite", "False" },
                             }
                         }
                     }

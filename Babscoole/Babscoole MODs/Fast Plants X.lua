@@ -59,11 +59,11 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Fast Plants X.pak",
+["MOD_FILENAME"]    = "Fast Plants X",
 ["MOD_DESCRIPTION"] = "Tired of dying of old age waiting for your crops to grow? Want to be able to finally make a living as a farmer? Look no further! Here at Fast Plants X our special fertilizer allows your crops to sprout to harvest as much time as it takes to eat dinner! Grow time options consist of 5 min, 15 min (standard), 30 min, and 1 hour.",
 ["MOD_AUTHOR"]      = "Masternetra & Babscoole",
 ["LUA_AUTHOR"]      = "MasterNetra & Babscoole",
-["NMS_VERSION"]     = "5.12",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -85,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/FARMTOXIC/ENTITIES/PLANTINTERACTION.ENTITY.MBIN",
                         "MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/FARMVENOMSAC/ENTITIES/PLANTINTERACTION.ENTITY.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"TriggerAction", "STEP0"},

@@ -1,7 +1,12 @@
+REWARD_ICON     = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.WARPFIX.DDS"
+REWARD_TITLE    = "RELIC_GATE_WARP"
+REWARD_ABBR     = "RGW"
+
+
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "RelicGateWarp.pak",
-["NMS_VERSION"]     = "5.29",
+["MOD_FILENAME"]    = "Relic Gate Warp",
+["NMS_VERSION"]     = "5.73",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "WTFAI",
 ["MODIFICATIONS"]   =
@@ -12,10 +17,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\POI\GATE_POI\ENTITIES\GATEPOI.ENTITY.MBIN",
                     ["MBIN_FS_DISCARD"] = "TRUE",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WarpType", "SpacePOI"},
+                            ["SPECIAL_KEY_WORDS"] = {"Action", "GcWarpAction"},
                             ["SEC_SAVE_TO"] = "ADD_REWARDACTION",
                         },
                     }
@@ -23,11 +28,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\SPIDER_QUADRUPED\ENTITIES\SPIDERQUAD.ENTITY.MBIN",
                     ["MBIN_FS_DISCARD"] = "TRUE",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcTriggerActionComponentData.xml"},
-                            ["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData"},
+                            ["SEC_KEEP"] = "TRUE",
                             ["SEC_SAVE_TO"] = "ADD_TRIGGER",
                         },
                         {
@@ -35,13 +40,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"StateID",    "BOOT"},
-                                {"Anim",       "RELIC_GATE_WARP"},
+                                {"Anim",       REWARD_TITLE},
                                 {"FrameStart", "0"},
                             }
                         },
                         {
                             ["SEC_EDIT"] = "ADD_TRIGGER",
-                            ["PRECEDING_KEY_WORDS"] = {"GcCameraShakeAction.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcCameraShakeAction"},
+                            ["SECTION_UP"] = 1,
+                            ["SEC_KEEP"] = "TRUE",
                             ["REMOVE"] = "SECTION"
                         },
                         {
@@ -54,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
@@ -64,27 +71,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SEC_EDIT"] = "ADD_ANIM",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Anim",     "RELIC_GATE_WARP"},
+                                {"Anim",     REWARD_TITLE},
                                 {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
-                            ["SECTION_ACTIVE"] = {2},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Anims"},
                             ["SEC_ADD_NAMED"] = "ADD_ANIM",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcPlayerEffectsComponentData.xml"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
                             ["SEC_ADD_NAMED"] = "ADD_TRIGGER",
                         }
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
@@ -94,27 +98,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SEC_EDIT"] = "ADD_EMOTE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Title",               "Relic Gate Warp"},
+                                {"Title",               REWARD_TITLE},
                                 {"ChatText",            ""},
-                                {"ChatUsesPrefix",      "False"},
-                                {"EmoteID",             "RELIC_GATE_WARP"},
-                                {"AnimationName",       "RELIC_GATE_WARP"},
-                                {"Filename",            "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.WARPFIX.DDS"},
-                                {"MoveToCancel",        "True"},
-                                {"RidingAnimationName", "RELIC_GATE_WARP"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_EMOTE",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_EMOTE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"EmoteID",             "RELIC_GATE_WARPW"},
-                                {"AvailableUnderwater", "True"},
+                                {"ChatUsesPrefix",      "false"},
+                                {"EmoteID",             "EMOTE_" .. REWARD_ABBR},
+                                {"AnimationName",       REWARD_TITLE},
+                                {"Filename",            REWARD_ICON},
+                                {"MoveToCancel",        "true"},
+                                {"RidingAnimationName", REWARD_TITLE},
                             }
                         },
                         {
@@ -130,14 +121,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["ADD_FILES"] =
     {
         {
-            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.EXML",
+            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkAnimMetadata">
+<Data template="cTkAnimMetadata">
   <Property name="NodeData">
-    <Property value="TkAnimNodeData.xml">
+    <Property name="NodeData" value="TkAnimNodeData">
       <Property name="Node" value="AnimatedTrans" />
       <Property name="RotIndex" value="0" />
       <Property name="TransIndex" value="0" />
@@ -145,52 +136,50 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
   </Property>
-  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
+  <Property name="StillFrameData" value="TkAnimNodeFrameData">
     <Property name="Rotations">
-      <Property value="Quaternion.xml">
-        <Property name="x" value="0" />
-        <Property name="y" value="0" />
-        <Property name="z" value="0" />
-        <Property name="w" value="1" />
+      <Property name="Rotations" value="Quaternion">
+        <Property name="X" value="0" />
+        <Property name="Y" value="0" />
+        <Property name="Z" value="0" />
+        <Property name="W" value="1" />
         <Property name="dropComponent" value="3" />
       </Property>
     </Property>
     <Property name="Translations">
-      <Property value="Vector4f.xml">
-        <Property name="x" value="-0.73121876" />
-        <Property name="y" value="0.08333181" />
-        <Property name="z" value="-0.02858855" />
-        <Property name="t" value="1" />
+      <Property name="Translations">
+        <Property name="X" value="-0.73121876" />
+        <Property name="Y" value="0.08333181" />
+        <Property name="Z" value="-0.02858855" />
       </Property>
     </Property>
     <Property name="Scales">
-      <Property value="Vector4f.xml">
-        <Property name="x" value="1" />
-        <Property name="y" value="1" />
-        <Property name="z" value="1" />
-        <Property name="t" value="1" />
+      <Property name="Scales">
+        <Property name="X" value="1.000000" />
+        <Property name="Y" value="1.000000" />
+        <Property name="Z" value="1.000000" />
       </Property>
     </Property>
   </Property>
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="Has30HzFrames" value="False" />
+  <Property name="Has30HzFrames" value="false" />
 </Data>
 ]]
         },

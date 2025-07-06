@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data template="cTkLocalisationTable">
+  <Property name="Table">
+
+    <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="FFPL_FISHGUN_N" />
+      <Property name="English" value="AQUATIC BLASTER" />
+    </Property>
+
+    <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="FFPL_FISHGUN_L" />
+      <Property name="English" value="Aquatic Blaster" />
+    </Property>
+
+    <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="FFPL_FISHGUN_S" />
+      <Property name="English" value="Marine Combat System" />
+    </Property>
+
+    <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="FFPL_FISHGUN_D" />
+      <Property name="English" value="Have you ever wanted to slap somebody with a fish?&#xA;&#xA;Access firing mode by pressing &lt;IMG&gt;CYCLEWEAPON&lt;&gt; and fire weapon with &lt;IMG&gt;ATTACK&lt;&gt;." />
+    </Property>
+
+    <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="FFPL_FISHGUNUPGR_N" />
+      <Property name="English" value="IMPROVED FISHTANK" />
+    </Property>
+
+    <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="FFPL_FISHGUNUPGR_L" />
+      <Property name="English" value="Improved Fishtank" />
+    </Property>
+
+    <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="FFPL_FISHGUNUPGR_S" />
+      <Property name="English" value="Aquatic Blaster Upgrade Module" />
+    </Property>
+
+    <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="FFPL_FISHGUNUPGR_D" />
+      <Property name="English" value="This module incorporates a &lt;TECHNOLOGY&gt;high grade fishtank&lt;&gt; for the fish. They get all happy and as a result the weapon system benefits from improvements across the board.&#xA;&#xA;Look, it was either this or spending 1 additional day reworking 2 more game files. Procedurally generated upgrade modules are a pain in the ass." />
+    </Property>
+
+      <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="FFPL_FISHGUNSTUN_N" />
+      <Property name="English" value="TOXIN INHIBITOR" />
+    </Property>
+
+    <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="FFPL_FISHGUNSTUN_L" />
+      <Property name="English" value="Toxin Inhibitor" />
+    </Property>
+
+    <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="FFPL_FISHGUNSTUN_S" />
+      <Property name="English" value="Aquatic Blaster Upgrade Module" />
+    </Property>
+
+    <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="FFPL_FISHGUNSTUN_D" />
+      <Property name="English" value="The fish have developed &lt;RARE&gt;potent neurotoxins&lt;&gt;, increasing overall damage output and causing targets to become &lt;STELLAR&gt;temporarily stunned&lt;&gt; on impact.&#xA;&#xA;Yes, it works on Sentinels. Don't ask how." />
+    </Property>
+
+  </Property>
+</Data>

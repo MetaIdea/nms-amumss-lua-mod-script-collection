@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "TitanBeGone.pak",
+["MOD_FILENAME"]    = "TitanBeGone",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MOD_DESCRIPTION"] = "Removes Titan burrow spawns from Infested planets",
 ["MODIFICATIONS"]   =
     {
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\INFESTATION.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"DebugName", "WORMSPAWNER"},
@@ -26,21 +26,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ROGUE_WORMS"},
                             ["REMOVE"] = "SECTION"
                         },
-                        {
-                            ["REPLACE_TYPE"] = "RAW",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {
-                                    [[<Property name="GroundWorms" value="GcSentinelSpawnSequenceGroupList.xml">]], [[<Property name="Reward" value="GcSentinelSpawnSequenceGroupList.xml">]]
-                                },
-                            }
-                        },
+                        -- {
+                            -- ["REPLACE_TYPE"] = "RAW",
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {
+                                    -- [[<Property name="GroundWorms" value="GcSentinelSpawnSequenceGroupList">]], [[<Property name="Reward" value="GcSentinelSpawnSequenceGroupList">]]
+                                -- },
+                            -- }
+                        -- },
                     }
                 },
             }

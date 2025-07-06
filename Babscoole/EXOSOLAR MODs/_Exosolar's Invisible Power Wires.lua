@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Exosolar's Invisible Power Wires.pak",
+["MOD_FILENAME"]            = "_Exosolar's Invisible Power Wires",
 ["MOD_AUTHOR"]              = "Exosolar & Babscoole",
 ["MOD_DESCRIPTION"]         = "Makes powered wires invisible",
-["NMS_VERSION"]             = "5.29",
+["NMS_VERSION"]             = "5.73",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -16,16 +16,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\POWERLINE\WIREON_MAT.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\POWERLINE\WIREOFF_MAT.MATERIAL.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Uniforms"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialColourVec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"t", "0"},
+                                {"W", "0.000000"},
                             }
                         },
                         {
+                            ["INTEGER_TO_FLOAT"] = "PRESERVE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Map",                ""},
@@ -38,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\POWERLINE\WIRE_MAT.MATERIAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -48,10 +49,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Uniforms"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialColourVec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"t", "0"},
+                                {"W", "0.000000"},
                             }
                         },
                     },

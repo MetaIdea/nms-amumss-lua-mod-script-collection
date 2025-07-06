@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]	= "RefinerFuelTimeMult x10.pak",
 ["MOD_AUTHOR"]		= "XiNaru",
-["NMS_VERSION"]		= "4.43",
+["NMS_VERSION"]		= "5.01.1",
 ["MOD_DESCRIPTION"]	= "Add the Ability to set an own Portable and Personal Refinery Fuel Capacity/Time",
 ["MODIFICATIONS"]	= 
 	{

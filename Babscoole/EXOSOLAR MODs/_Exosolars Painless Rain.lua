@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_Exosolars Painless Rain.pak",
+["MOD_FILENAME"]    = "_Exosolars Painless Rain",
 ["MOD_AUTHOR"]      = "Exosolar",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MOD_DESCRIPTION"] = "Makes lush storms harmless",
 ["MODIFICATIONS"]   =
     {
@@ -12,12 +12,12 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\HUMIDWEATHER.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OverrideTemperature", "False"}
+                                {"OverrideTemperature", "false"}
                             }
                         }
                     }

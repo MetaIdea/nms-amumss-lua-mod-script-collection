@@ -24,6 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_DESCRIPTION"]		= Description,
 	["MOD_AUTHOR"]			= "Xen0nex",
 	["NMS_VERSION"]			= GameVersion,
+	["EXML_CREATE"] = "FALSE",
 	["MODIFICATIONS"]		= 
 	{
 		{
@@ -31,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"] 	= {Path1},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {
@@ -51,7 +52,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {Path2},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {

@@ -4,6 +4,58 @@ SPECIAL_LIST =
 		["ShopNumber"] = "103",
 		["Table"] =  
 		{
+			{ ["ID"] = "EXPD_POSTER18A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER18B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER18C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_TITLE18",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_DECAL18",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_BANNER18",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_EGG_18",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_STAFF_18",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_STONE_PACK",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "STONE_HAT",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "STONE_ARMOUR",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "STONE_TORSO",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "STONE_GLOVES",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "STONE_LEGS",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "STONE_BOOTS",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_BANNER17",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_CAPE17",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_DECAL17",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER17A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER17B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER17C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_SHIP17",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_SHIPMAT17",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_STAFF_17",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_TITLE17",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FISH_BOB1",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FISH_BOB2",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FISH_BOB3",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FISH_BOB4",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FISH_BOB5",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FISH_BOB6",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FISH_HAT1",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FISH_HAT2",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FISH_HAT3",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FISH_HAT4",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FISH_HAT5",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_FISH_HAT6",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW10A",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW10B",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW10C",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW10D",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW10E",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN22",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN23",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN24",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_PET21",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_PET22",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP46",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP47",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP48",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP49",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP50",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "TGA_SHIP01",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 		}
 	},
@@ -133,9 +185,9 @@ SPECIAL_LIST =
 			{ ["ID"] = "TWITCH_GUN16",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "TWITCH_GUN17",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "TWITCH_GUN18",	["IsConsumable"] = "False", ["IsCape"] = "False"},
-			{ ["ID"] = "SPEC_FIREWORK07",	["IsConsumable"] = "True", ["IsCape"] = "False"},
-			{ ["ID"] = "SPEC_FIREWORK08",	["IsConsumable"] = "True", ["IsCape"] = "False"},
-			{ ["ID"] = "SPEC_FIREWORK09",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "SPEC_FIREWORK07",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "SPEC_FIREWORK08",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "SPEC_FIREWORK09",	["IsConsumable"] = "True", ["IsCape"] = "False"},
 		}
 	},
 	{
@@ -344,7 +396,7 @@ SPECIAL_LIST =
 		["ShopNumber"] = "60",
 		["Table"] =  
 		{
-			{ ["ID"] = "SHIP_PIRATE",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SHIP_PIRATE",	["IsConsumable"] = "False", ["IsCape"] = "False", ["Display"] = "-1"},
 			{ ["ID"] = "EXPD_CAPE06",	["IsConsumable"] = "False", ["IsCape"] = "True"},
 			{ ["ID"] = "SPEC_HOOD01",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_CUBE_06",	["IsConsumable"] = "False", ["IsCape"] = "False"},
@@ -490,25 +542,37 @@ UNLOCK_ALL =
 	{
 		{"ShopNumber", "1"},
 		{"MissionTier", "-1"} -- Original numbers other than -1 and are capitalist scum
-	}
+	},
 }
 
-function GetNewSpecial(ID, REPEAT)
-return[[    <Property value="GcPurchaseableSpecial.xml">
+SET_OVERWRITE_FLAG =
+{
+	["PKW"] = {"Table"},
+	["EXML_FLAGS"]  = "OVERWRITE", 
+}
+
+function GetNewSpecial(ID, REPEAT, DISPLAY)
+	FINISHED_EXPORT = [[    <Property value="GcPurchaseableSpecial" _id="]] .. ID .. [["]]
+	if DISPLAY then FINISHED_EXPORT = FINISHED_EXPORT .. [[ _display="WTP"]] end
+	FINISHED_EXPORT = FINISHED_EXPORT .. [[>
       <Property name="ID" value="]] .. ID .. [[" />
       <Property name="ShopNumber" value="1" />
       <Property name="MissionTier" value="-1" />
       <Property name="IsConsumable" value="]] .. REPEAT .. [[" />
     </Property>
 ]]
+return FINISHED_EXPORT
 end
 
 NEW_SPECIAL = {}
+ID_EXPORT = {}
 for _i,j in pairs(SPECIAL_LIST) do
 	SHOP_LIST_TEMP = {}
 	SPECIAL_EXPORT = {}
 	for _k,l in ipairs(j["Table"]) do
-		table.insert(SHOP_LIST_TEMP, GetNewSpecial(l["ID"], l["IsConsumable"]))
+		local ExportDisplay = false; if l["Display"] ~= nil then ExportDisplay = true end
+		table.insert(SHOP_LIST_TEMP, GetNewSpecial(l["ID"], l["IsConsumable"], ExportDisplay))
+		-- table.insert(ID_EXPORT, l["ID"]..string.char(10))
 	end
 	SPECIAL_EXPORT =
 	{
@@ -520,10 +584,22 @@ for _i,j in pairs(SPECIAL_LIST) do
 	table.insert(NEW_SPECIAL, SPECIAL_EXPORT)
 end
 table.insert(NEW_SPECIAL, UNLOCK_ALL)
+table.insert(NEW_SPECIAL, SET_OVERWRITE_FLAG)
+--[[table.insert(NEW_SPECIAL,
+{
+	["SEC_EMPTY"] = "ID_HANDOVER",
+})
+table.insert(NEW_SPECIAL,
+{
+	["SEC_EDIT"] = "ID_HANDOVER",
+	["REPLACE_TYPE"] = "RAW",
+	["VCT"] = {{"<EMPTY>", table.concat(ID_EXPORT)}},
+	["SEC_KEEP"] = "TRUE",
+})]]
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "~Consumerism.pak",
+["MOD_FILENAME"] 			= "~Consumerism",
 ["MOD_AUTHOR"]				= "WinderTP",
 ["NMS_VERSION"]				= "1.1.6",
 ["MODIFICATIONS"] 			= 
@@ -533,7 +609,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= { "METADATA\REALITY\TABLES\PURCHASEABLESPECIALS.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= NEW_SPECIAL
+					["MXML_CHANGE_TABLE"] 	= NEW_SPECIAL
 				},
 			}
 		},

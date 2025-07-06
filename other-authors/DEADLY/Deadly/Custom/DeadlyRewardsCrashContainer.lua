@@ -1,4 +1,6 @@
-CARGO_BULKHEAD_CHANCE = 30 -- 5
+CARGO_BULKHEAD_CHANCE = 30.0 -- 5.000000
+CARGO_BULKHEAD_MIN = 5 -- 1
+CARGO_BULKHEAD_MAX = 5 -- 1
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -9,10 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                --
-                -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
-                --
-                {
+                { -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
                     ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         -- Units
@@ -33,17 +32,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         -- Salvaged Frigate Module
-                        {
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_S", "ID", "FRIG_TOKEN" },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 }, -- 1
-                                { "AmountMax", 1 }, -- 1
-                            }
-                        },
+                        -- {
+                        --     ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_S", "ID", "FRIG_TOKEN" },
+                        --     ["VALUE_CHANGE_TABLE"] = {
+                        --         { "AmountMin", 1 }, -- 1
+                        --         { "AmountMax", 1 }, -- 1
+                        --     }
+                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "ID", "FRIG_TOKEN" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 }, -- 1
+                                { "AmountMin", 3 }, -- 1
                                 { "AmountMax", 3 }, -- 1
                             }
                         },
@@ -51,21 +50,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_S", "ID", "WEAP_INV_TOKEN" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 }, -- 1
-                                { "AmountMax", 2 }, -- 1
+                                { "AmountMin", 3 }, -- 1
+                                { "AmountMax", 3 }, -- 1
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "ID", "WEAP_INV_TOKEN" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 }, -- 1
+                                { "AmountMin", 5 }, -- 1
                                 { "AmountMax", 5 }, -- 1
                             }
                         },
                         -- Cargo Bulkhead
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "ID", "FREI_INV_TOKEN" },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "PercentageChance", CARGO_BULKHEAD_CHANCE }, -- 5
                             }
@@ -73,16 +72,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "ID", "FREI_INV_TOKEN" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 },  -- 1
-                                { "AmountMax", 10 }, -- 1
+                                { "AmountMin", CARGO_BULKHEAD_MIN }, -- 1
+                                { "AmountMax", CARGO_BULKHEAD_MAX }, -- 1
                             }
                         },
                         -- All illegal products
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "Value", "ILLEGAL_PROD3" },
-                            ["SECTION_UP"]         = 2,
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "ProductList", "ILLEGAL_PROD3" },
+                            ["SECTION_UP"]         = 3,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 },  -- 1
+                                { "AmountMin", 10 }, -- 1
                                 { "AmountMax", 10 }, -- 1
                             }
                         },
@@ -112,10 +111,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                         -- All Trade Products Tier 5
                         {
-                            ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "Value", "TRA_TECH5" },
-                            ["SECTION_UP"]         = 2,
+                            ["SPECIAL_KEY_WORDS"]  = { "Id", "CRASHCONT_M", "ProductList", "TRA_TECH5" },
+                            ["SECTION_UP"]         = 3,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AmountMin", 1 },  -- 5
+                                { "AmountMin", 10 }, -- 5
                                 { "AmountMax", 10 }, -- 5
                             }
                         },
@@ -148,7 +147,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "AmountMin", 1 }, -- 1
-                                { "AmountMax", 3 }, -- 1
+                                { "AmountMax", 5 }, -- 1
                             }
                         },
                         --  Salvaged Data
@@ -174,7 +173,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "AmountMin", 1 }, -- 1
-                                { "AmountMax", 3 }, -- 1
+                                { "AmountMax", 5 }, -- 1
                             }
                         },
                     }

@@ -3,7 +3,7 @@ LuaAuthor = "DeathWrench and Babscoole and Xen0nex"
 --ModName = "gExos Challenge"
 ModNameSub = "Space Combat+Larger Space BattlesX"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "5_12"
+GameVersion = "5_64"
 ModVersion = "a"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships & some freighters (individual ships have additonal multipliers applied)
@@ -73,6 +73,8 @@ BossFreighterPartsChanges =
 	},
 }
 
+HiddenCargo =		"true"			--"false"	Hides the reward for Cargo Pods so it is not displayed before you open / destroy them, to make it harder to collect the specific reward you are looking for.
+
 --Adjusts health, damage multipliers, and possible loot for various attached and standalone "Cargo Pods" on or near freighters
 CargoPodChanges =
 {
@@ -125,18 +127,16 @@ CargoPodChanges =
 }
 
 --"Spread" sets how far apart the ships are when they spawn, "Count" sets the minimum & maxmum number of ships which spawn.
---Currently missing 4 sets of changes to Spread and Count (Seems to just be for Freighters though), as I haven't found a way to target the sections they are in
-	--Similarly, this mod doesn't change the Scale on line 975 from 1.2 > 1.4
 LargerBattleChanges = 
 {
 	{
 		{
-			"FlybySpawns"
+			"FlybySpawns"		--Presumably are the neutral starships which sometimes fly overhead when on planets.
 		},
 		{
-			{
-				{
-					"GcAIShipSpawnData.xml"
+			{--Standard (regular starship)
+				{--name				value				_index	SubLevel
+					"FlybySpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
 					{"Spread",	30,			80},
@@ -147,30 +147,30 @@ LargerBattleChanges =
 	},
 	{
 		{
-			"SpaceFlybySpawns"
+			"SpaceFlybySpawns"		--Presumably are the neutral starships which sometimes fly nearby when in space.
 		},
 		{
-			{
-				{
-					"GcAIShipSpawnData.xml"
+			{--Standard (regular starship)
+				{	--name				value				_index	SubLevel
+					"SpaceFlybySpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
 					{"Spread",	300,		300},	--300,		300
 					{"Count",	2,			6}		--2,		3		[2,	6]
 				}
 			},
-			{--1st "ChildSpawns" entry
-				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+			{--Standard (regular starship)
+				{	--name				value				_index	SubLevel
+					"SpaceFlybySpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
 					{"Spread",	250,		250},	--250,		250
 					{"Count",	2,			4}		--2,		2		[2,	4]
 				}
 			},
-			{--2nd "ChildSpawns" entry
-				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+			{--Standard (regular starship)
+				{	--name				value				_index	SubLevel
+					"SpaceFlybySpawns", "GcAIShipSpawnData", "2",	4
 				},
 				{
 					{"Spread",	250,		250},	--250,		250
@@ -184,18 +184,19 @@ LargerBattleChanges =
 			"PirateSpawns"					--These do NOT attack Freighters.	For the following, RewardMessage is NOTIFY_PIRATE_WIN
 		},
 		{
-			{--This may control several things: it appears to act as a multiplier to the amount of pirates spawned during space station pirate hunting missions
+			{--Standard (regular starship)
+			--This may control several things: it appears to act as a multiplier to the amount of pirates spawned during space station pirate hunting missions
 				{
-					"GcAIShipSpawnData.xml"
+					"PirateSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
 					{"Spread",	80,			80},
 					{"Count",	1,			1}		--1,		1		(1,			6)		[1,		3]
 				}
 			},
-			{--1st "ChildSpawns" entry
+			{--Standard (regular starship)
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"PirateSpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
 					{"Spread",	80,			80},
@@ -206,12 +207,12 @@ LargerBattleChanges =
 	},
 	{
 		{
-			"PlanetaryPirateFlybySpawns"
+			"PlanetaryPirateFlybySpawns"		--Unclear
 		},
 		{
-			{
+			{--Standard (regular starship)
 				{
-					"GcAIShipSpawnData.xml"
+					"PlanetaryPirateFlybySpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
@@ -222,12 +223,12 @@ LargerBattleChanges =
 	},
 	{
 		{
-			"PlanetaryPirateRaidSpawns"
+			"PlanetaryPirateRaidSpawns"		--These seem to be the pirates spawned when pirates attack a planetary building you are near.
 		},
 		{
-			{
+			{--Standard (regular starship)
 				{
-					"GcAIShipSpawnData.xml"
+					"PlanetaryPirateRaidSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
@@ -242,9 +243,9 @@ LargerBattleChanges =
 			"PirateBattleSpawns"			--These DO attack Freighters.	RewardMessage is NOTIFY_PIRATE_BATTLE_WIN
 		},
 		{
-			{
+			{--Standard (regular starship)
 				{
-					"GcAIShipSpawnData.xml"
+					"PirateBattleSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
 					{"Spread",	100,		120},
@@ -258,45 +259,45 @@ LargerBattleChanges =
 			"PoliceSpawns"					--Enemy Sentinel Interceptors for different Wanted Level. Now has a separate "MaxCountsForFireteamSize" paramter, presumably to scale amount with the size of your multiplayer group?
 		},
 		{
-			{
+			{--Standard (regular starship)
 				{
-					"GcPoliceSpawnWaveData.xml"
+					"PoliceSpawns", "GcPoliceSpawnWaveData", "0",	5
 				},
 				{
 					{"Spread",	100,		120},
 					{"Count",	WantedSquadron1,	WantedSquadron1}		--1,		1		(1,		2)
 				}
 			},
-			{--1st "ChildSpawns" entry
+			{--Standard (regular starship)
 				{
-					"GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml"
+					"PoliceSpawns", "GcPoliceSpawnWaveData", "1",	5
 				},
 				{
 					{"Spread",	100,		120},
 					{"Count",	WantedSquadron2,	WantedSquadron2}		--1,		1		(2,		3)
 				}
 			},
-			{--2nd "ChildSpawns" entry, etc.
+			{--Standard (regular starship)
 				{
-					"GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml"
+					"PoliceSpawns", "GcPoliceSpawnWaveData", "2",	5
 				},
 				{
 					{"Spread",	100,		120},
 					{"Count",	WantedSquadron3,	WantedSquadron3}		--1,		1		(3,		4)
 				}
 			},
-			{--3rd "ChildSpawns" entry
+			{--Standard (regular starship)
 				{
-					"GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml"
+					"PoliceSpawns", "GcPoliceSpawnWaveData", "3",	5
 				},
 				{
 					{"Spread",	100,		120},
 					{"Count",	WantedSquadron4,	WantedSquadron4}		--1,		1		(3,		6)
 				}
 			},
-			{--4th "ChildSpawns" entry
+			{--Freighter
 				{
-					"GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml","GcPoliceSpawnWaveData.xml"
+					"PoliceSpawns", "GcPoliceSpawnWaveData", "4",	5
 				},
 				{
 					{"Spread",	200,		600},
@@ -310,58 +311,102 @@ LargerBattleChanges =
 			"TraderSpawns"		--Added by Xen0nex
 		},
 		{
-			{
+			{--Standard (regular starship)
 				{
-					"GcAIShipSpawnData.xml"
+					"TraderSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	1,			3}		--1,		1
+					{"Count",	1,			2}		--1,		1
 				}
 			}
 		}
 	},
 	{
 		{
-			"AmbientSpawns"
+			"AmbientSpawns"			--Presumably the neutral Freighter convoys sometimes seems waiting around in systems
 		},
 		{
-			{
+			{--Freighter
 				{
-					"GcAIShipSpawnData.xml"
+					"AmbientSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
 					{"Spread",	3000,		4500},
 					{"Count",	2,			6}		--2,		5
 				}
 			},
-			{--1st "ChildSpawns" entry
+			{--Frigate
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns","GcAIShipSpawnData", "0",	6
 				},
 				{
 					{"Spread",	1500,		3000},
 					{"Count",	0,			4}		--0,		3
 				}
 			},
-			{--2nd "ChildSpawns" entry, etc.
+			{--SmallFreighter
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns","GcAIShipSpawnData", "1",	6
 				},
 				{
 					{"Spread",	1500,		3500},
 					{"Count",	0,			7}		--0,		5
 				}
 			},
-			{--3rd "ChildSpawns" entry
+			--[[--DUPLICATE TARGET
+			{--TinyFreighter		3rd "ChildSpawns" entry
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns","GcAIShipSpawnData", "0",	8
 				},
 				{
 					{"Spread",	400,		1000},
 					{"Count",	1,			3}		--1,		3
 				}
-			}	--Missing change on line 646, no name so can't target
+			},
+			]]
+			{--Freighter
+				{
+					"AmbientSpawns", "GcAIShipSpawnData", "1",	4
+				},
+				{
+					{"Spread",	3000,		4500},	--3000,		3000
+					{"Count",	2,			6}		--2,		5
+				}
+			},
+			--[[--DUPLICATE TARGET
+			{--Frigate
+				{
+					"ChildSpawns","GcAIShipSpawnData", "0",	6
+				},
+				{
+					{"Spread",	1500,		2500},	--1000,		1500
+					{"Count",	0,			5}		--0,		3
+				}
+			},
+			]]
+			--[[--DUPLICATE TARGET
+			{--SmallFreighter
+				{
+					"ChildSpawns","GcAIShipSpawnData", "1",	6
+				},
+				{
+					{"Spread",	1500,		3500},	--1000,		1000
+					{"Count",	0,			7}		--0,		5
+				}
+			},
+			]]
+			--[[--DUPLICATE TARGET
+			{--TinyFreighter
+				{
+					"ChildSpawns","GcAIShipSpawnData", "0",	8
+				},
+				{
+					{"Spread",	400,		600},	--400,		600
+					{"Count",	1,			4}		--1,		4
+				}
+			},
+			]]
 		}
 	},
 	{
@@ -371,128 +416,174 @@ LargerBattleChanges =
 		{
 			{--Freighter
 				{
-					"GcAIShipSpawnData.xml"
+					"BattleSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
 					{"Spread",	0,			0},
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			{--1st "ChildSpawns" entry			--Freighter
+			{--Freighter
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns", "GcAIShipSpawnData", "0",	6
 				},
 				{
 					{"Spread",	2000,		4000},
 					{"Count",	2,			5}		--2,		3
 				}
 			},
-			{--2nd "ChildSpawns" entry			--SmallFreighter
+			{--SmallFreighter
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns", "GcAIShipSpawnData", "0",	8
 				},
 				{
 					{"Spread",	750,		1800},
-					{"Count",	2,			4}		--1,		2
+					{"Count",	2,			3}		--1,		2
 				}
 			},
-			{--3rd "ChildSpawns" entry			--TinyFreighter
+			{--TinyFreighter
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns", "GcAIShipSpawnData", "0",	10
 				},
 				{
 					{"Spread",	400,		500},
-					{"Count",	2,			3}		--2,		2
+					{"Count",	3,			3}		--2,		2
 				}
 			},
-			--[[{--4th "ChildSpawns" entry		--CapitalFreighter		(trying to change lines 944, 945 & 948, 949, but this entry targets lines 1051, 1052 & 1055, 1056 instead? the target section has no name, can't target it???) This entry is added manually at the bottom of the MBIN_CHANGE_TABLE.
+			{--CapitalFreighter
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"BattleSpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
 					{"Spread",	100,		100},
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			{--5th "ChildSpawns" entry		--Freighter				(trying to change lines 981, 982 & 985, 986 but same issue as above, this entry targets lines 1241, 1242 & 1245, 1246 instead?)
+			--[[--DUPLICATE TARGET
+			{--Freighter
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns", "GcAIShipSpawnData", "0",	6
 				},
 				{
 					{"Spread",	2400,		4200},
 					{"Count",	6,			12}		--4,		6
 				}
 			},
-			{--6th "ChildSpawns" entry		--SmallFreighter		(trying to change lines 1016, 1017 & 1020, 1021 but same issue as above?)
+			{--SmallFreighter
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns", "GcAIShipSpawnData", "0",	8
 				},
 				{
 					{"Spread",	800,		1800},
 					{"Count",	1,			5}		--1,		3
 				}
 			},
-			{--7th "ChildSpawns" entry		--TinyFreighter			(trying to change lines 1051, 1052 & 1056, 1057 but same issue as above?)
+			{--TinyFreighter
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns", "GcAIShipSpawnData", "0",	10
 				},
 				{
 					{"Spread",	400,		800},
 					{"Count",	2,			3}		--2,		2
 				}
-			}]]
-			
-		--[[
-			--the following 4 sets of changes omitted because I can't find a way to target them.
-			--These also seem to mostly target Freighters.  E.G. CapitalFreighter, Freighter, Standard, SmallFreighter, TinyFreighter
-				--The last of these sets of changes (lines 1241 ~ 1246) is added manually at the bottom of the MBIN_CHANGE_TABLE
-		]]
-			--[[
-			{--8th "ChildSpawns" entry			--CapitalFreighter
+			},
+			]]
+			{--CapitalFreighter
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"BattleSpawns", "GcAIShipSpawnData", "2",	4
 				},
 				{
 					{"Spread",	0,			0},		--0,		0
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			{--9th "ChildSpawns" entry			--Freighter
+			--[[--DUPLICATE TARGET
+			{--Freighter
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns", "GcAIShipSpawnData", "0",	6
 				},
 				{
 					{"Spread",	1800,		1800},	--1800,		1800
 					{"Count",	3,			5}		--3,		5
 				}
 			},
-			{--10th "ChildSpawns" entry			--Standard (regular starship???)
+			{--Standard (regular starship)
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns", "GcAIShipSpawnData", "0",	8
 				},
 				{
 					{"Spread",	1000,		100},	--1000,		100
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			{--11th "ChildSpawns" entry			--SmallFreighter
+			]]
+			{--SmallFreighter
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns", "GcAIShipSpawnData", "1",	8
 				},
 				{
 					{"Spread",	1000,		1500},	--1000,		1500
 					{"Count",	1,			4}		--1,		4
 				}
 			},
-			{--12th "ChildSpawns" entry			--TinyFreighter		(this entry is added manually at the bottom of the MBIN_CHANGE_TABLE)
+			--[[--DUPLICATE TARGET
+			{--TinyFreighter		(this entry is added manually at the bottom of the MBIN_CHANGE_TABLE)
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns", "GcAIShipSpawnData", "0",	10
+				},
+				{
+					{"Spread",	600,		900},	--500,		700
+					{"Count",	0,			4}		--0,		3
+				}
+			},
+			]]
+			{--CapitalFreighter
+				{
+					"BattleSpawns", "GcAIShipSpawnData", "3",	4
+				},
+				{
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			--[[--DUPLICATE TARGET
+			{--Freighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	6
+				},
+				{
+					{"Spread",	1800,		1800},	--1800,		1800
+					{"Count",	3,			5}		--3,		5
+				}
+			},
+			{--Standard (regular starship)
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	8
+				},
+				{
+					{"Spread",	1000,		100},	--1000,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--SmallFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "1",	8
+				},
+				{
+					{"Spread",	1000,		1500},	--1000,		1500
+					{"Count",	1,			4}		--1,		4
+				}
+			},
+			{--TinyFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	10
 				},
 				{
 					{"Spread",	500,		700},	--500,		700
 					{"Count",	0,			3}		--0,		3
 				}
-			},]]
+			},
+			]]
 		}
 	},
 	{
@@ -500,48 +591,48 @@ LargerBattleChanges =
 			"BattlePirateSpawns"				--These are presumably all related to Pirate Dreadnought battles, as this section was added in the NMS v4.4 update
 		},
 		{
-			{									--Standard (regular starship???)
+			{--Standard (regular starship
 				{
-					"GcAIShipSpawnData.xml"
+					"BattlePirateSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
 					{"Count",	1,			1},		--0,		0
-					{"StartTime",	0,		1}		--0,		0
+					{"StartTime",	0,		1}		--0,		0			This seems to give these starships a chance to actually spawn?
 				}
 			},
-			{--1st "ChildSpawns" entry			--Standard (regular starship???)
+			{--Standard (regular starship
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"BattlePirateSpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
 					{"Count",	1,			1},		--0,		0
-					{"StartTime",	0,		1}		--0,		0
+					{"StartTime",	0,		1}		--0,		0			This seems to give these starships a chance to actually spawn?
 				}
 			},
-			{--2nd "ChildSpawns" entry			--Standard (regular starship???)
+			{--Standard (regular starship
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"BattlePirateSpawns", "GcAIShipSpawnData", "2",	4
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
 					{"Count",	1,			1},		--0,		0
-					{"StartTime",	0,		1}		--0,		0
+					{"StartTime",	0,		1}		--0,		0			This seems to give these starships a chance to actually spawn?
 				}
 			},
-			{--3rd "ChildSpawns" entry			--CapitalFreighter (this is the Pirate Capital Freighter)
+			{--CapitalFreighter (this is the Pirate Capital Freighter)
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"BattlePirateSpawns", "GcAIShipSpawnData", "3",	4
 				},
 				{
 					{"Spread",	0,			0},		--0,		0
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			{--4th "ChildSpawns" entry			--Pirate Frigates
+			{--Pirate Frigates
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"ChildSpawns", "GcAIShipSpawnData", "0",	6
 				},
 				{
 					{"Spread",	1500,		1800},	--1200,		1300
@@ -555,36 +646,36 @@ LargerBattleChanges =
 			"BattleInitialStandardSpawns"			--These are presumably friendly ships that fight the pirates during freighter-pirates battles
 		},
 		{
-			{
+			{--Standard (regular starship
 				{
-					"GcAIShipSpawnData.xml"
+					"BattleInitialStandardSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
 					{"Spread",	100,		150},
 					{"Count",	2,			5}		--2,		2		(6,			18)
 				}
 			},
-			{--1st "ChildSpawns" entry
+			{--Standard (regular starship
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"BattleInitialStandardSpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
 					{"Spread",	100,		150},
 					{"Count",	2,			5}		--2,		2		(5,			15)
 				}
 			},
-			{--2nd "ChildSpawns" entry, etc.
+			{--Standard (regular starship
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"BattleInitialStandardSpawns", "GcAIShipSpawnData", "2",	4
 				},
 				{
 					{"Spread",	100,		150},
 					{"Count",	2,			5}		--2,		2		(6,			12)
 				}
 			},
-			{--3rd "ChildSpawns" entry		(added in the NMS v4.4 update)
+			{--Standard (regular starship		(added in the NMS v4.4 update)
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"BattleInitialStandardSpawns", "GcAIShipSpawnData", "3",	4
 				},
 				{
 					{"Spread",	100,		150},
@@ -596,38 +687,38 @@ LargerBattleChanges =
 	{
 		{
 			"BattleInitialPirateSpawns"			--These DO attack Freighters.	For the following, RewardMessage is NOTIFY_PIRATE_BATTLE_WIN
-		},			--How these numbers are used by the game is confusing... At the start of the Freighter-Pirate battle, it seems to take 3x the 1st Childspawns value, then adds 1x the 1st Childspawns value under BattleSecondaryPirateSpawns to get the total pirate count at the start of the battle, ignoring the other values?
+		},			--How these numbers are used by the game is confusing... At the start of the Freighter-Pirate battle, it seems to take 3x the _index 1 Count, then adds 1x the _index 1 Count from BattleSecondaryPirateSpawns to get the total pirate count at the start of the battle, ignoring the other values?
 		{
-			{
-				{
-					"GcAIShipSpawnData.xml"
+			{--Standard (regular starship
+				{--name								value				_index	SubLevel
+					"BattleInitialPirateSpawns"	, "GcAIShipSpawnData", "0",		4
 				},
 				{
 					{"Spread",	140,		200},
 					{"Count",	2,			4}		--2,		2		(2,			8)
 				}
 			},
-			{--1st "ChildSpawns" entry
-				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+			{--Standard (regular starship			Game seems to use 3x this Count?
+				{--name								value				_index	SubLevel
+					"BattleInitialPirateSpawns"	, "GcAIShipSpawnData", "1",		4
 				},
 				{
 					{"Spread",	240,		460},
 					{"Count",	2,			4}		--2,		2		(4,			16)
 				}
 			},
-			{--2nd "ChildSpawns" entry, etc.
-				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+			{--Standard (regular starship
+				{--name								value				_index	SubLevel
+					"BattleInitialPirateSpawns"	, "GcAIShipSpawnData", "2",		4
 				},
 				{
 					{"Spread",	180,		360},
 					{"Count",	2,			3}		--1,		1		(6,			12)
 				}
 			},
-			{--3rd "ChildSpawns" entry		(added in the NMS v4.4 update)
-				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+			{--Standard (regular starship		(added in the NMS v4.4 update)
+				{--name								value				_index	SubLevel
+					"BattleInitialPirateSpawns"	, "GcAIShipSpawnData", "3",		4
 				},
 				{
 					{"Spread",	0,			0},
@@ -641,36 +732,36 @@ LargerBattleChanges =
 			"BattleSecondaryPirateSpawns"			--These DO attack Freighters.	For the following, RewardMessage is NOTIFY_PIRATE_BATTLE_WIN
 		},
 		{
-			{
-				{
-					"GcAIShipSpawnData.xml"
+			{--Standard (regular starship
+				{--name								value				_index	SubLevel
+					"BattleSecondaryPirateSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
 					{"Spread",	180,		360},
 					{"Count",	2,			4}		--2,		2		(6,			12)
 				}
 			},
-			{--1st "ChildSpawns" entry
-				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+			{--Standard (regular starship			Game seems to add 1x this Count?
+				{--name								value				_index	SubLevel
+					"BattleSecondaryPirateSpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
 					{"Spread",	140,		280},
 					{"Count",	2,			4}		--2,		2		(4,			16)
 				}
 			},
-			{--2nd "ChildSpawns" entry, etc.
-				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+			{--Standard (regular starship
+				{--name								value				_index	SubLevel
+					"BattleSecondaryPirateSpawns", "GcAIShipSpawnData", "2",	4
 				},
 				{
 					{"Spread",	140,		240},
 					{"Count",	1,			3}		--1,		1		(2,			6)
 				}
 			},
-			{--3rd "ChildSpawns" entry		(added in the NMS v4.4 update)
-				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+			{--Standard (regular starship		(added in the NMS v4.4 update)
+				{--name								value				_index	SubLevel
+					"BattleSecondaryPirateSpawns", "GcAIShipSpawnData", "3",	4
 				},
 				{
 					{"Spread",	0,			0},
@@ -684,36 +775,36 @@ LargerBattleChanges =
 			"BattleRecurringPirateSpawns"			--(This section added in the NMS v4.4 update)
 		},
 		{
-			{
+			{--Standard (regular starship
 				{
-					"GcAIShipSpawnData.xml"
+					"BattleRecurringPirateSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
 					{"Spread",	180,		360},	--100,		120
 					{"Count",	2,			4}		--2,		2
 				}
 			},
-			{--1st "ChildSpawns" entry
+			{--Standard (regular starship
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"BattleRecurringPirateSpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
 					{"Spread",	140,		280},	--100,		120
 					{"Count",	2,			4}		--2,		2
 				}
 			},
-			{--2nd "ChildSpawns" entry
+			{--Standard (regular starship
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"BattleRecurringPirateSpawns", "GcAIShipSpawnData", "2",	4
 				},
 				{
 					{"Spread",	140,		240},	--100,		120
 					{"Count",	1,			3}		--1,		1
 				}
 			},
-			{--3rd "ChildSpawns" entry		(added in the NMS v4.4 update)
+			{--Standard (regular starship		(added in the NMS v4.4 update)
 				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
+					"BattleRecurringPirateSpawns", "GcAIShipSpawnData", "3",	4
 				},
 				{
 					{"Spread",	140,		280},	--100,		120
@@ -722,139 +813,194 @@ LargerBattleChanges =
 			}
 		}
 	},
+	--[[
 	{
 		{
-			"BattleReinforcingPirateFrigateSpawn"			--(This section added in the NMS v4.4 update)
+			"FrigateFlybySpawns"		--Probably just decorative frigate spawns on planets
 		},
 		{
-			{	--Pirate Frigates that reinforce each time the remaining Pirate Frigate count drops to the value set in "PTSd Black Hole Distance + Ship Scrapping Items + Misc.lua"
+			{--Frigate
 				{
-					
+					"FrigateFlybySpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
-					{"Spread",	5000,		2000},	--5000,		2000
-					{"Count",	1,			1}		--3,		3
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	1,			1}		--1,		1
 				}
-			}
+			},
+			{--Frigate
+				{
+					"FrigateFlybySpawns", "GcAIShipSpawnData", "1",	4
+				},
+				{
+					{"Spread",	400,		400},	--400,		400
+					{"Count",	2,			5}		--2,		5
+				}
+			},
+			{--Frigate
+				{
+					"FrigateFlybySpawns", "GcAIShipSpawnData", "2",	4
+				},
+				{
+					{"Spread",	800,		800},	--800,		800
+					{"Count",	2,			5}		--2,		5
+				}
+			},
+			{--Frigate
+				{
+					"FrigateFlybySpawns", "GcAIShipSpawnData", "3",	4
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Frigate
+				{
+					"FrigateFlybySpawns", "GcAIShipSpawnData", "4",	4
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Frigate
+				{
+					"FrigateFlybySpawns", "GcAIShipSpawnData", "5",	4
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
 		}
-	},
-	{
+	}
+	]]
+}
+
+MiscLargerChanges =
+{
+	{	--Pirate Frigates that reinforce each time the remaining Pirate Frigate count drops to the value set in "PTSd Black Hole Distance + Ship Scrapping Items + Misc.lua"
 		{
-			"PirateBountySpawns"				--These do NOT attack Freighters.	
+			"BattleReinforcingPirateFrigateSpawn", "GcAIShipSpawnData",
 		},
 		{
-			{--BOUNTY1					These are the "wandering" pirates				RewardMessage is NOTIFY_PIRATE_BATTLE_WIN
+			{"Spread",	5000,		2000},	--5000,		2000
+			{"Count",	1,			1}		--3,		3
+		}
+	},
+}
+
+LargerPirateBountyChanges =
+{
+	{
+		{
+			"PirateBountySpawns"				--These do NOT attack Freighters.
+		},
+		{
+			{--Standard (regular starship				These are the "wandering" pirates		RewardMessage is NOTIFY_PIRATE_BATTLE_WIN
 				{
-					"GcBountySpawnInfo.xml"				--Remember to switch to "GcBountySpawnInfo.xml" for the Bounty section
+					"PirateBountySpawns", "GcBountySpawnInfo", "BOUNTY1"				--Remember to switch to "GcBountySpawnInfo" for the Bounty section
 				},
 				{
 					{"Spread",	100,		100},
 					{"Count",	1,			2}		--1,		1		(1,			6)
 				}
 			},
-			{--BOUNTY2					RewardMessage is NOTIFY_PIRATE_BATTLE_WIN
+			{--Standard (regular starship				These are the "wandering" pirates		RewardMessage is NOTIFY_PIRATE_BATTLE_WIN
 				{
-					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
+					"PirateBountySpawns", "GcBountySpawnInfo", "BOUNTY2"
 				},
 				{
 					{"Spread",	100,		100},
 					{"Count",	2,			3}		--1,		1		(3,			12)
 				}
 			},
-			{--BOUNTY3					RewardMessage is NOTIFY_PIRATE_BATTLE_WIN
+			{--Standard (regular starship				These are the "wandering" pirates		RewardMessage is NOTIFY_PIRATE_BATTLE_WIN
 				{
-					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
+					"PirateBountySpawns", "GcBountySpawnInfo", "BOUNTY3"
 				},
 				{
 					{"Spread",	100,		100},
 					{"Count",	3,			4}		--1,		1		(3,			9)
 				}
 			},
-			--[[{----	Deprecated as of NMS v3.84	BOUNTY3 1st "ChildSpawns" entry.		This entry doesn't find it here, and instead targets lines 1869, 1870 & 1873, 1874
+			--Despite how it seems, the following don't appear to control the space station missions for hunting pirates. At least, the values don't match up with in-game, and changing these seems to have no effect on those missions.
+			{--Standard (regular starship
 				{
-					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
-				},
-				{
-					{"Spread",	100,		100},
-					{"Count",	1,			3}		--1,		1		(2,			8)
-				}
-			},]]
-			--Despite how it seems, the following don't appear to control the space station missions for hunting pirates. At least, the values don't match up with in-game, and changing these seems to have no effect.
-			{--EASYBOUNTY1
-				{
-					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
+					"PirateBountySpawns", "GcBountySpawnInfo", "EASYBOUNTY1"
 				},
 				{
 					{"Spread",	100,		100},
 					{"Count",	1,			1}		--1,		1		(1,			6)
 				}
 			},
-			{--EASYBOUNTY2			
+			{--Standard (regular starship			
 				{
-					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
+					"PirateBountySpawns", "GcBountySpawnInfo", "EASYBOUNTY2"
 				},
 				{
 					{"Spread",	100,		100},
 					{"Count",	1,			1}		--1,		1		(2,			8)		[2,	4]
 				}
 			},
-			{--MEDBOUNTY1
+			{--Standard (regular starship
 				{
-					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
+					"PirateBountySpawns", "GcBountySpawnInfo", "MEDBOUNTY1"
 				},
 				{
 					{"Spread",	100,		100},
 					{"Count",	1,			1}		--1,		1		(3,			12)		[1,	3]
 				}
 			},
-			{--MEDBOUNTY2
+			{--Standard (regular starship
 				{
-					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
+					"PirateBountySpawns", "GcBountySpawnInfo", "MEDBOUNTY2"
 				},
 				{
 					{"Spread",	100,		100},
 					{"Count",	1,			1}		--1,		1		(4,			12)		[1,	3]	(in the original mod, it seems these entries accidentally changed the "Scale" for MEDBOUNTY2 instead of changing the "Spread")
 				}
 			},
-			{--HARDBOUNTY1
+			{--Standard (regular starship
 				{
-					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
+					"PirateBountySpawns", "GcBountySpawnInfo", "HARDBOUNTY1"
 				},
 				{
 					{"Spread",	100,		100},
 					{"Count",	2,			2}		--1,		1		(3,			9)		[2,	3]
 				}
 			},
-			{--HARDBOUNTY2
+			{--Standard (regular starship
 				{
-					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
+					"PirateBountySpawns", "GcBountySpawnInfo", "HARDBOUNTY2"
 				},
 				{
 					{"Spread",	100,		100},
 					{"Count",	2,			2}		--3,		3		(6,			6)		[2,	3]
 				}
 			},
-			{--WEAPGUY_BOUNTY		Base Armourer mission
+			{--Standard (regular starship			Base Armourer mission
 				{
-					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
+					"PirateBountySpawns", "GcBountySpawnInfo", "WEAPGUY_BOUNTY"
 				},
 				{
 					{"Spread",	100,		100},
 					{"Count",	2,			2}		--2,		2		(4,			8)
 				}
 			},
-			{--PIRATE_SQUAD			Unknown function
+			{--Standard (regular starship			Unknown function
 				{
-					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
+					"PirateBountySpawns", "GcBountySpawnInfo", "PIRATE_SQUAD"
 				},
 				{
 					{"Spread",	800,		800},
 					{"Count",	6,			6}		--6,		6		(9,			18)		[6,		10]
 				}
 			},
-			{--PP_BOUNTY			Planet Procedural mission
+			{--Standard (regular starship			Planet Procedural mission
 				{
-					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
+					"PirateBountySpawns", "GcBountySpawnInfo", "PP_BOUNTY"
 				},
 				{
 					{"Spread",	100,		100},
@@ -863,214 +1009,180 @@ LargerBattleChanges =
 			}
 		}
 	},
-	{
-		{
-			"FrigateFlybySpawns"		--Probably just decorative frigate spawns
-		},
-		{
-			{
-				{
-					"GcAIShipSpawnData.xml"
-				},
-				{
-					{"Spread",	0,			0},		--0,		0
-					{"Count",	1,			1}		--1,		1
-				}
-			},
-			{--1st "ChildSpawns" entry
-				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
-				},
-				{
-					{"Spread",	400,		400},	--400,		400
-					{"Count",	2,			5}		--2,		5
-				}
-			},
-			{--2nd "ChildSpawns" entry
-				{
-					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
-				},
-				{
-					{"Spread",	800,		800},	--800,		800
-					{"Count",	2,			5}		--2,		5
-				}
-			},
-		}
-	},
 }
 
---THe following functions allow to add new custom ship Behaviours / Shields (Basically to allow for some Easy/Med/Hard variations of Behaviours as in pre-v3.85 NMS)
+--The following functions allow to add new custom ship Behaviours / Shields (Basically to allow for some Easy/Med/Hard variations of Behaviours as in pre-v3.85 NMS)
 function AddPlanetBehaviour (BehaviourID)
     return
-[[<Property value="GcShipAIAttackData.xml">
+[[<Property name="BehaviourTable" value="GcShipAIAttackData">
       <Property name="Id" value="]]..BehaviourID..[[" />
-      <Property name="GunDispersionAngle" value="5" />
-      <Property name="GunFireRate" value="0.15" />
-      <Property name="LaserHealthPoint" value="50" />
-      <Property name="AttackWeaponRange" value="500" />
-      <Property name="AttackAngle" value="30" />
-      <Property name="AttackShootWaitTime" value="0.1" />
-      <Property name="AttackShootTimeMin" value="2.5" />
-      <Property name="AttackShootTimeMax" value="5" />
-      <Property name="AttackReadyTime" value="0.3" />
-      <Property name="AttackMaxTime" value="6" />
-      <Property name="AttackApproachOffset" value="150" />
-      <Property name="AttackApproachMinRange" value="300" />
-      <Property name="AttackApproachMaxRange" value="650" />
-      <Property name="AttackTooCloseRange" value="150" />
-      <Property name="AttackFlybyOffset" value="150" />
-      <Property name="AttackBoostTimeToRange" value="1.5" />
-      <Property name="AttackBoostRange" value="550" />
-      <Property name="AttackBoostAngle" value="40" />
-      <Property name="AttackTurnMultiplier" value="1" />
-      <Property name="AttackMaxPlanetHeight" value="1000" />
-      <Property name="AttackTurnMultiplierMax" value="1" />
-      <Property name="AttackTurnMaxMinTime" value="3" />
-      <Property name="AttackTurnMaxTimeRange" value="6" />
+      <Property name="GunDispersionAngle" value="5.000000" />
+      <Property name="GunFireRate" value="0.150000" />
+      <Property name="LaserHealthPoint" value="50.000000" />
+      <Property name="AttackWeaponRange" value="500.000000" />
+      <Property name="AttackAngle" value="30.000000" />
+      <Property name="AttackShootWaitTime" value="0.100000" />
+      <Property name="AttackShootTimeMin" value="2.500000" />
+      <Property name="AttackShootTimeMax" value="5.000000" />
+      <Property name="AttackReadyTime" value="0.300000" />
+      <Property name="AttackMaxTime" value="6.000000" />
+      <Property name="AttackApproachOffset" value="150.000000" />
+      <Property name="AttackApproachMinRange" value="300.000000" />
+      <Property name="AttackApproachMaxRange" value="650.000000" />
+      <Property name="AttackTooCloseRange" value="150.000000" />
+      <Property name="AttackFlybyOffset" value="150.000000" />
+      <Property name="AttackBoostTimeToRange" value="1.500000" />
+      <Property name="AttackBoostRange" value="550.000000" />
+      <Property name="AttackBoostAngle" value="40.000000" />
+      <Property name="AttackTurnMultiplier" value="1.000000" />
+      <Property name="AttackMaxPlanetHeight" value="1000.000000" />
+      <Property name="AttackTurnMultiplierMax" value="1.000000" />
+      <Property name="AttackTurnMaxMinTime" value="3.000000" />
+      <Property name="AttackTurnMaxTimeRange" value="6.000000" />
       <Property name="NumHitsBeforeBail" value="3000" />
       <Property name="NumHitsBeforeReposition" value="1000" />
-      <Property name="FleeBrake" value="0.8" />
-      <Property name="FleeBoost" value="3" />
-      <Property name="FleeBrakeTime" value="0.5" />
-      <Property name="FleeRepositionTime" value="5" />
-      <Property name="FleeRepositionAngleMin" value="35" />
-      <Property name="FleeRepositionAngleMax" value="100" />
-      <Property name="FleeUrgentBrake" value="0.8" />
-      <Property name="FleeUrgentBoost" value="1.8" />
-      <Property name="FleeUrgentBrakeTime" value="0.4" />
-      <Property name="FleeRepositionUrgentTime" value="2" />
-      <Property name="FleeRepositionUrgentAngleMin" value="50" />
-      <Property name="FleeRepositionUrgentAngleMax" value="145" />
-      <Property name="FleeRange" value="400" />
-      <Property name="FleeMinTime" value="4" />
-      <Property name="FleeMaxTime" value="8" />
-      <Property name="FleeUrgentRange" value="75" />
-      <Property name="PlanetFleeHeightExtra" value="240" />
-      <Property name="AttackTargetMinRange" value="200" />
-      <Property name="AttackTargetMaxRange" value="1000" />
-      <Property name="AttackTargetOffsetMin" value="-200" />
-      <Property name="AttackTargetOffsetMax" value="500" />
-      <Property name="AttackTargetSwitchTargetTime" value="10" />
+      <Property name="FleeBrake" value="0.800000" />
+      <Property name="FleeBoost" value="3.000000" />
+      <Property name="FleeBrakeTime" value="0.500000" />
+      <Property name="FleeRepositionTime" value="5.000000" />
+      <Property name="FleeRepositionAngleMin" value="35.000000" />
+      <Property name="FleeRepositionAngleMax" value="100.000000" />
+      <Property name="FleeUrgentBrake" value="0.800000" />
+      <Property name="FleeUrgentBoost" value="1.800000" />
+      <Property name="FleeUrgentBrakeTime" value="0.400000" />
+      <Property name="FleeRepositionUrgentTime" value="2.000000" />
+      <Property name="FleeRepositionUrgentAngleMin" value="50.000000" />
+      <Property name="FleeRepositionUrgentAngleMax" value="145.000000" />
+      <Property name="FleeRange" value="400.000000" />
+      <Property name="FleeMinTime" value="4.000000" />
+      <Property name="FleeMaxTime" value="8.000000" />
+      <Property name="FleeUrgentRange" value="75.000000" />
+      <Property name="PlanetFleeHeightExtra" value="240.000000" />
+      <Property name="AttackTargetMinRange" value="200.000000" />
+      <Property name="AttackTargetMaxRange" value="1000.000000" />
+      <Property name="AttackTargetOffsetMin" value="-200.000000" />
+      <Property name="AttackTargetOffsetMax" value="500.000000" />
+      <Property name="AttackTargetSwitchTargetTime" value="10.000000" />
     </Property>]]
 end
 
 function AddSpaceBehaviour (BehaviourID)
     return
-[[<Property value="GcShipAIAttackData.xml">
+[[<Property name="BehaviourTable" value="GcShipAIAttackData">
       <Property name="Id" value="]]..BehaviourID..[[" />
-      <Property name="GunDispersionAngle" value="5.5" />
-      <Property name="GunFireRate" value="0.15" />
-      <Property name="LaserHealthPoint" value="50" />
-      <Property name="AttackWeaponRange" value="700" />
-      <Property name="AttackAngle" value="30" />
-      <Property name="AttackShootWaitTime" value="1" />
-      <Property name="AttackShootTimeMin" value="1" />
-      <Property name="AttackShootTimeMax" value="3" />
-      <Property name="AttackReadyTime" value="0.5" />
-      <Property name="AttackMaxTime" value="10" />
-      <Property name="AttackApproachOffset" value="180" />
-      <Property name="AttackApproachMinRange" value="300" />
-      <Property name="AttackApproachMaxRange" value="800" />
-      <Property name="AttackTooCloseRange" value="90" />
-      <Property name="AttackFlybyOffset" value="50" />
-      <Property name="AttackBoostTimeToRange" value="1.5" />
-      <Property name="AttackBoostRange" value="2000" />
-      <Property name="AttackBoostAngle" value="15" />
-      <Property name="AttackTurnMultiplier" value="1.15" />
-      <Property name="AttackMaxPlanetHeight" value="100" />
-      <Property name="AttackTurnMultiplierMax" value="1" />
-      <Property name="AttackTurnMaxMinTime" value="1" />
-      <Property name="AttackTurnMaxTimeRange" value="5" />
+      <Property name="GunDispersionAngle" value="5.500000" />
+      <Property name="GunFireRate" value="0.150000" />
+      <Property name="LaserHealthPoint" value="50.000000" />
+      <Property name="AttackWeaponRange" value="700.000000" />
+      <Property name="AttackAngle" value="30.000000" />
+      <Property name="AttackShootWaitTime" value="1.000000" />
+      <Property name="AttackShootTimeMin" value="1.000000" />
+      <Property name="AttackShootTimeMax" value="3.000000" />
+      <Property name="AttackReadyTime" value="0.500000" />
+      <Property name="AttackMaxTime" value="10.000000" />
+      <Property name="AttackApproachOffset" value="180.000000" />
+      <Property name="AttackApproachMinRange" value="300.000000" />
+      <Property name="AttackApproachMaxRange" value="800.000000" />
+      <Property name="AttackTooCloseRange" value="90.000000" />
+      <Property name="AttackFlybyOffset" value="50.000000" />
+      <Property name="AttackBoostTimeToRange" value="1.500000" />
+      <Property name="AttackBoostRange" value="2000.000000" />
+      <Property name="AttackBoostAngle" value="15.000000" />
+      <Property name="AttackTurnMultiplier" value="1.150000" />
+      <Property name="AttackMaxPlanetHeight" value="100.000000" />
+      <Property name="AttackTurnMultiplierMax" value="1.000000" />
+      <Property name="AttackTurnMaxMinTime" value="1.000000" />
+      <Property name="AttackTurnMaxTimeRange" value="5.000000" />
       <Property name="NumHitsBeforeBail" value="3000" />
       <Property name="NumHitsBeforeReposition" value="2000" />
-      <Property name="FleeBrake" value="1" />
-      <Property name="FleeBoost" value="8" />
-      <Property name="FleeBrakeTime" value="3" />
-      <Property name="FleeRepositionTime" value="3.5" />
-      <Property name="FleeRepositionAngleMin" value="140" />
-      <Property name="FleeRepositionAngleMax" value="180" />
-      <Property name="FleeUrgentBrake" value="2" />
-      <Property name="FleeUrgentBoost" value="2" />
-      <Property name="FleeUrgentBrakeTime" value="3" />
-      <Property name="FleeRepositionUrgentTime" value="1" />
-      <Property name="FleeRepositionUrgentAngleMin" value="180" />
-      <Property name="FleeRepositionUrgentAngleMax" value="180" />
-      <Property name="FleeRange" value="650" />
-      <Property name="FleeMinTime" value="0.5" />
-      <Property name="FleeMaxTime" value="10" />
-      <Property name="FleeUrgentRange" value="100" />
-      <Property name="PlanetFleeHeightExtra" value="200" />
-      <Property name="AttackTargetMinRange" value="250" />
-      <Property name="AttackTargetMaxRange" value="600" />
-      <Property name="AttackTargetOffsetMin" value="100" />
-      <Property name="AttackTargetOffsetMax" value="500" />
-      <Property name="AttackTargetSwitchTargetTime" value="10" />
+      <Property name="FleeBrake" value="1.000000" />
+      <Property name="FleeBoost" value="8.000000" />
+      <Property name="FleeBrakeTime" value="3.000000" />
+      <Property name="FleeRepositionTime" value="3.500000" />
+      <Property name="FleeRepositionAngleMin" value="140.000000" />
+      <Property name="FleeRepositionAngleMax" value="180.000000" />
+      <Property name="FleeUrgentBrake" value="2.000000" />
+      <Property name="FleeUrgentBoost" value="2.000000" />
+      <Property name="FleeUrgentBrakeTime" value="3.000000" />
+      <Property name="FleeRepositionUrgentTime" value="1.000000" />
+      <Property name="FleeRepositionUrgentAngleMin" value="180.000000" />
+      <Property name="FleeRepositionUrgentAngleMax" value="180.000000" />
+      <Property name="FleeRange" value="650.000000" />
+      <Property name="FleeMinTime" value="0.500000" />
+      <Property name="FleeMaxTime" value="10.000000" />
+      <Property name="FleeUrgentRange" value="100.000000" />
+      <Property name="PlanetFleeHeightExtra" value="200.000000" />
+      <Property name="AttackTargetMinRange" value="250.000000" />
+      <Property name="AttackTargetMaxRange" value="600.000000" />
+      <Property name="AttackTargetOffsetMin" value="100.000000" />
+      <Property name="AttackTargetOffsetMax" value="500.000000" />
+      <Property name="AttackTargetSwitchTargetTime" value="10.000000" />
     </Property>]]
 end
 
 function AddSquadronBehaviour (BehaviourID)
     return
-[[<Property value="GcShipAIAttackData.xml">
+[[<Property name="BehaviourTable" value="GcShipAIAttackData">
       <Property name="Id" value="]]..BehaviourID..[[" />
-      <Property name="GunDispersionAngle" value="4" />
-      <Property name="GunFireRate" value="0.2" />
-      <Property name="LaserHealthPoint" value="15" />
-      <Property name="AttackWeaponRange" value="850" />
-      <Property name="AttackAngle" value="40" />
-      <Property name="AttackShootWaitTime" value="2" />
-      <Property name="AttackShootTimeMin" value="1.5" />
-      <Property name="AttackShootTimeMax" value="2.5" />
-      <Property name="AttackReadyTime" value="1" />
-      <Property name="AttackMaxTime" value="8" />
-      <Property name="AttackApproachOffset" value="200" />
-      <Property name="AttackApproachMinRange" value="350" />
-      <Property name="AttackApproachMaxRange" value="600" />
-      <Property name="AttackTooCloseRange" value="200" />
-      <Property name="AttackFlybyOffset" value="-200" />
-      <Property name="AttackBoostTimeToRange" value="1.5" />
-      <Property name="AttackBoostRange" value="2250" />
-      <Property name="AttackBoostAngle" value="10" />
-      <Property name="AttackTurnMultiplier" value="1.25" />
-      <Property name="AttackMaxPlanetHeight" value="100" />
-      <Property name="AttackTurnMultiplierMax" value="1" />
-      <Property name="AttackTurnMaxMinTime" value="1" />
-      <Property name="AttackTurnMaxTimeRange" value="4" />
+      <Property name="GunDispersionAngle" value="4.000000" />
+      <Property name="GunFireRate" value="0.200000" />
+      <Property name="LaserHealthPoint" value="15.000000" />
+      <Property name="AttackWeaponRange" value="850.000000" />
+      <Property name="AttackAngle" value="40.000000" />
+      <Property name="AttackShootWaitTime" value="2.000000" />
+      <Property name="AttackShootTimeMin" value="1.500000" />
+      <Property name="AttackShootTimeMax" value="2.500000" />
+      <Property name="AttackReadyTime" value="1.000000" />
+      <Property name="AttackMaxTime" value="8.000000" />
+      <Property name="AttackApproachOffset" value="200.000000" />
+      <Property name="AttackApproachMinRange" value="350.000000" />
+      <Property name="AttackApproachMaxRange" value="600.000000" />
+      <Property name="AttackTooCloseRange" value="200.000000" />
+      <Property name="AttackFlybyOffset" value="-200.000000" />
+      <Property name="AttackBoostTimeToRange" value="1.500000" />
+      <Property name="AttackBoostRange" value="2250.000000" />
+      <Property name="AttackBoostAngle" value="10.000000" />
+      <Property name="AttackTurnMultiplier" value="1.250000" />
+      <Property name="AttackMaxPlanetHeight" value="100.000000" />
+      <Property name="AttackTurnMultiplierMax" value="1.000000" />
+      <Property name="AttackTurnMaxMinTime" value="1.000000" />
+      <Property name="AttackTurnMaxTimeRange" value="4.000000" />
       <Property name="NumHitsBeforeBail" value="800" />
       <Property name="NumHitsBeforeReposition" value="1100" />
-      <Property name="FleeBrake" value="1" />
-      <Property name="FleeBoost" value="6" />
-      <Property name="FleeBrakeTime" value="15" />
-      <Property name="FleeRepositionTime" value="10" />
-      <Property name="FleeRepositionAngleMin" value="90" />
-      <Property name="FleeRepositionAngleMax" value="180" />
-      <Property name="FleeUrgentBrake" value="1.5" />
-      <Property name="FleeUrgentBoost" value="1.5" />
-      <Property name="FleeUrgentBrakeTime" value="3" />
-      <Property name="FleeRepositionUrgentTime" value="3" />
-      <Property name="FleeRepositionUrgentAngleMin" value="180" />
-      <Property name="FleeRepositionUrgentAngleMax" value="180" />
-      <Property name="FleeRange" value="600" />
-      <Property name="FleeMinTime" value="1.5" />
-      <Property name="FleeMaxTime" value="8" />
-      <Property name="FleeUrgentRange" value="100" />
-      <Property name="PlanetFleeHeightExtra" value="200" />
-      <Property name="AttackTargetMinRange" value="300" />
-      <Property name="AttackTargetMaxRange" value="600" />
-      <Property name="AttackTargetOffsetMin" value="100" />
-      <Property name="AttackTargetOffsetMax" value="500" />
-      <Property name="AttackTargetSwitchTargetTime" value="10" />
+      <Property name="FleeBrake" value="1.000000" />
+      <Property name="FleeBoost" value="6.000000" />
+      <Property name="FleeBrakeTime" value="15.000000" />
+      <Property name="FleeRepositionTime" value="10.000000" />
+      <Property name="FleeRepositionAngleMin" value="90.000000" />
+      <Property name="FleeRepositionAngleMax" value="180.000000" />
+      <Property name="FleeUrgentBrake" value="1.500000" />
+      <Property name="FleeUrgentBoost" value="1.500000" />
+      <Property name="FleeUrgentBrakeTime" value="3.000000" />
+      <Property name="FleeRepositionUrgentTime" value="3.000000" />
+      <Property name="FleeRepositionUrgentAngleMin" value="180.000000" />
+      <Property name="FleeRepositionUrgentAngleMax" value="180.000000" />
+      <Property name="FleeRange" value="600.000000" />
+      <Property name="FleeMinTime" value="1.500000" />
+      <Property name="FleeMaxTime" value="8.000000" />
+      <Property name="FleeUrgentRange" value="100.000000" />
+      <Property name="PlanetFleeHeightExtra" value="200.000000" />
+      <Property name="AttackTargetMinRange" value="300.000000" />
+      <Property name="AttackTargetMaxRange" value="600.000000" />
+      <Property name="AttackTargetOffsetMin" value="100.000000" />
+      <Property name="AttackTargetOffsetMax" value="500.000000" />
+      <Property name="AttackTargetSwitchTargetTime" value="10.000000" />
     </Property>]]
 end
 
 function AddShield (ShieldID)
     return
-[[<Property value="GcSpaceshipShieldData.xml">
+[[<Property name="ShieldTable" value="GcSpaceshipShieldData">
       <Property name="Id" value="]]..ShieldID..[[" />
       <Property name="Health" value="5600" />
       <Property name="LevelledExtraHealth" value="19000" />
-      <Property name="RechargeTime" value="5" />
-      <Property name="RechargeDelayTime" value="6" />
-	  <Property name="StartDepletedWhenEnabled" value="False" />
+      <Property name="RechargeTime" value="5.000000" />
+      <Property name="RechargeDelayTime" value="6.000000" />
+	  <Property name="StartDepletedWhenEnabled" value="false" />
       <Property name="DamageMulOverride" value="" />
     </Property>]]
 end
@@ -1081,11 +1193,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_AUTHOR"]		= Author,
 ["LUA_AUTHOR"]		= LuaAuthor,
 ["NMS_VERSION"]		= GameVersion,
+["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {
 {	
 	["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"},
-	["EXML_CHANGE_TABLE"] 	= 
+	["MXML_CHANGE_TABLE"] 	= 
 	{
 		{
 			["PRECEDING_KEY_WORDS"] = {"PlanetaryPirateRaidSpawns"},
@@ -1108,94 +1221,43 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"AttackData", "PIRATE"}			--"PIRATE_EASY"
 			}
 		},
-		{--Was attempting to target lines 945, 946 but this entry targets lines 1051, 1052 instead? The target section has no name, can't target it???
-			["PRECEDING_FIRST"] = "True",
-			["PRECEDING_KEY_WORDS"] = {"BattleSpawns","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"},
-			["SPECIAL_KEY_WORDS"] = {"Spread","Vector2f.xml"},
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"x", 400},
-				{"y", 800}
-			}
-		},
-		{--Was attempting to target lines 948, 949 but this entry targets lines 1055, 1056 instead? the target section has no name, can't target it???
-			["PRECEDING_FIRST"] = "True",
-			["PRECEDING_KEY_WORDS"] = {"BattleSpawns","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"},
-			["SPECIAL_KEY_WORDS"] = {"Count","Vector2f.xml"},
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"x", 2},		--2
-				{"y", 3}		--2
-			}
-		},
-		{--Testing out attempts, this entry targets lines 1241, 1242 instead?
-			["PRECEDING_FIRST"] = "True",
-			["PRECEDING_KEY_WORDS"] = {"BattleSpawns","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"},
-			["SPECIAL_KEY_WORDS"] = {"Spread","Vector2f.xml"},
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"x", 600},
-				{"y", 900}
-			}
-		},
-		{--Testing out attempts, this entry targets lines 1245, 1246 instead?
-			["PRECEDING_FIRST"] = "True",
-			["PRECEDING_KEY_WORDS"] = {"BattleSpawns","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"},
-			["SPECIAL_KEY_WORDS"] = {"Count","Vector2f.xml"},
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"x", 0},		--0
-				{"y", 4}		--3
-			}
-		},
-		--[[	Deprecated as of NMS v3.85
-		{--Edits the ChildSpawns for BOUNTY3 which otherwise gets skipped
-			["PRECEDING_FIRST"] = "True",
-			["PRECEDING_KEY_WORDS"] = {"PirateBountySpawns","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","ChildSpawns"},
-			["SPECIAL_KEY_WORDS"] = {"Count","Vector2f.xml"},
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"x", 1},		--1		(2)
-				{"y", 3}		--1		(8)
-			}
-		}]]
 	}
 },
 {["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SPACE\AISPACESHIPATTACKDATATABLE.MBIN",
-["EXML_CHANGE_TABLE"] = {
+["MXML_CHANGE_TABLE"] = {
 	--Adding new custom Behaviours and Shields
 	{
-		["PRECEDING_KEY_WORDS"] = {"BehaviourTable",	"GcShipAIAttackData.xml"},
+		["SPECIAL_KEY_WORDS"] = {"BehaviourTable","GcShipAIAttackData"},
 		["REPLACE_TYPE"] = "ADDAFTERSECTION",
 		["ADD"] = AddPlanetBehaviour ("PLANET_EZ")
 	},
 	{
-		["PRECEDING_KEY_WORDS"] = {"BehaviourTable",	"GcShipAIAttackData.xml"},
+		["SPECIAL_KEY_WORDS"] = {"BehaviourTable","GcShipAIAttackData"},
 		["REPLACE_TYPE"] = "ADDAFTERSECTION",
 		["ADD"] = AddPlanetBehaviour ("PLANET_HRD")
 	},
 	{
-		["PRECEDING_KEY_WORDS"] = {"BehaviourTable",	"GcShipAIAttackData.xml"},
+		["SPECIAL_KEY_WORDS"] = {"BehaviourTable","GcShipAIAttackData"},
 		["REPLACE_TYPE"] = "ADDAFTERSECTION",
 		["ADD"] = AddSpaceBehaviour ("SPACE_EZ")
 	},
 	{
-		["PRECEDING_KEY_WORDS"] = {"BehaviourTable",	"GcShipAIAttackData.xml"},
+		["SPECIAL_KEY_WORDS"] = {"BehaviourTable","GcShipAIAttackData"},
 		["REPLACE_TYPE"] = "ADDAFTERSECTION",
 		["ADD"] = AddSpaceBehaviour ("SPACE_HRD")
 	},
 	{
-		["PRECEDING_KEY_WORDS"] = {"BehaviourTable",	"GcShipAIAttackData.xml"},
+		["SPECIAL_KEY_WORDS"] = {"BehaviourTable","GcShipAIAttackData"},
 		["REPLACE_TYPE"] = "ADDAFTERSECTION",
 		["ADD"] = AddSquadronBehaviour ("SQUADRON_MED")
 	},
 	{
-		["PRECEDING_KEY_WORDS"] = {"ShieldTable",	"GcSpaceshipShieldData.xml"},
+		["SPECIAL_KEY_WORDS"] = {"ShieldTable","GcSpaceshipShieldData"},
 		["REPLACE_TYPE"] = "ADDAFTERSECTION",
 		["ADD"] = AddShield ("SLOW_STRONG")
 	},
 	{
-		["PRECEDING_KEY_WORDS"] = {"ShieldTable",	"GcSpaceshipShieldData.xml"},
+		["SPECIAL_KEY_WORDS"] = {"ShieldTable","GcSpaceshipShieldData"},
 		["REPLACE_TYPE"] = "ADDAFTERSECTION",
 		["ADD"] = AddShield ("HUGE")
 	},
@@ -1203,7 +1265,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--Definitions
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_NOSHIELD"},				--Added in NMS v4.4
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE_EZ"},			--default "SPACE"
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
@@ -1218,7 +1280,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_EASY"},				--Used in vanilla for BOUNTY1 (wandering easy), EASYBOUNTY1 & EASYBOUNTY2 (space station mission),	PIRATE_SQUAD (Possibly the additional enemy pirates in the space station missions?),	& Base Armourer unique mission
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE_EZ"},			--default "SPACE"
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
@@ -1233,7 +1295,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE"},					--Used in vanilla for BOUNTY2 (wandering medium), MEDBOUNTY1, MEDBOUNTY2, & HARDBOUNTY2 (space station mission), & PP_BOUNTY (planet procedural mission)
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},				--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
@@ -1248,7 +1310,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_HARD"},				--Used in vanilla for BOUNTY3 (wandering hard), HARDBOUNTY1  (space station mission)
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE_HRD"},				--default "SPACE"
 		{"PlanetBehaviour", "PLANET_HRD"},		--default "PLANET"
@@ -1263,7 +1325,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","POLICE"},					--Sentinel Interceptors, presumably?
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},				--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
@@ -1278,7 +1340,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},	
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","TRADER"},
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE_EZ"},			--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
@@ -1293,7 +1355,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","TRADER_ESCORT"},
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE_HRD"},			--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
@@ -1308,7 +1370,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},				--Planetary Pirate raids on buildings, while the player is still on the ground. HOWEVER, vanilla seems bugged where at Planetary Archives, pirates use a "normal" behaviour instead of RAID_BUILDING
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},				--default "SPACE"
 		{"PlanetBehaviour", "RAID_BUILDING"},	--default "RAID_BUILDING"
@@ -1323,7 +1385,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","RAID_DOGFIGHT"},				--Planetary Pirate raids on buildings, once the player is in the air in their starship the pirates swap to using this behaviour
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},				--default "SPACE"
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
@@ -1338,7 +1400,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PLANET_FLYBY"},				--Unsure, some kind of pirate attack, maybe on planets?
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE_EZ"},			--default "SPACE"
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
@@ -1354,7 +1416,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--(Wingmen use SQUADGUN in METADATA\PROJECTILES\PROJECTILETABLE.MBIN for damage purposes)
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_C"},				--Wingmen in the player's squadron, Class C
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SQUADRON_WEAK"},		--default "SQUADRON_WEAK"
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
@@ -1369,7 +1431,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_B"},				--Wingmen in the player's squadron, Class B
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SQUADRON_MED"},		--default "SQUADRON_WEAK"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
@@ -1384,7 +1446,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_A"},				--Wingmen in the player's squadron, Class A
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SQUADRON_MED"},		--default "SQUADRON_STRONG"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
@@ -1399,7 +1461,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_S"},				--Wingmen in the player's squadron, Class S
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SQUADRON_STRONG"},	--default "SQUADRON_STRONG"
 		{"PlanetBehaviour", "PLANET_HRD"},	--default "PLANET"
@@ -1414,7 +1476,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","ALIEN_HOSTILE"},				--ALIEN_PIRATES, possibly part of a Season?
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},	--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
@@ -1429,7 +1491,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","POLICEFREIGHTER"},				--Sentinel Freighters fought at wanted level 5
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},	--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
@@ -1446,7 +1508,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--The following were added in NMS v4.4:
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER"},					--Neutral Freighters?
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},	--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
@@ -1461,7 +1523,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER_TINY"},					--Neutral Tiny Freighters?
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},	--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
@@ -1476,7 +1538,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER_SMALL"},					--Neutral Small Freighters?
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},	--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
@@ -1491,7 +1553,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","FRIGATE"},					--Neutral Frigates?
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},	--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
@@ -1506,7 +1568,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER_CAP"},					--Neutral Capital Freighters?
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},	--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
@@ -1521,7 +1583,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FREIGHT"},					--Pirate Dreadnought
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},	--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
@@ -1537,7 +1599,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FRIG"},					--Pirate Frigates
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},	--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
@@ -1552,7 +1614,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","CIV_LEADER"},					--Civilian freighter fighting pirate dreadnought?
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},	--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
@@ -1565,76 +1627,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"Shield", "CIVLEAD_SHIELD"},				--default "CIVLEAD_SHIELD"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
-	--[[	Deprecated as of NMS v3.85
-	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
-	["SPECIAL_KEY_WORDS"] = {"Id","AI_EASY"},
-	["PRECEDING_FIRST"] = "True",
-	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 25000},			--default 6200
-		{"LaserDamageLevel", 1},	--default 1
-		}},
-	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
-	["SPECIAL_KEY_WORDS"] = {"Id","AI_MEDIUM"},
-	["PRECEDING_FIRST"] = "True",
-	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 32000},			--default 8000
-		{"LaserDamageLevel",2},		--default 1
-		}},
-	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
-	["SPECIAL_KEY_WORDS"] = {"Id","AI_HARD"},
-	["PRECEDING_FIRST"] = "True",
-	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 56000},			--default 14000
-		{"LaserDamageLevel", 3},	--default 1
-		}},
-	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
-	["SPECIAL_KEY_WORDS"] = {"Id","AI_SOLO"},
-	["PRECEDING_FIRST"] = "True",
-	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 120000},			--default 30000
-		{"LaserDamageLevel", 3},	--default 1
-		}},
-	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
-	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FREIGHT"},			--Note, this does not seem to control the pirates in the Frieghter-pirate battles, at least not the ones with Capital Freighters
-	["PRECEDING_FIRST"] = "True",
-	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 18000},			--default 3600
-		{"LaserDamageLevel", 1},	--default 1
-		}},
-	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
-	["SPECIAL_KEY_WORDS"] = {"Id","TRADE_EASY"},
-	["PRECEDING_FIRST"] = "True",
-	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 24000},			--default 6000
-		{"LaserDamageLevel", 1},	--default 1
-		}},
-	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
-	["SPECIAL_KEY_WORDS"] = {"Id","TRADE_MED"},
-	["PRECEDING_FIRST"] = "True",
-	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 32000},			--default 8000
-		{"LaserDamageLevel",2},		--default 1
-		}},
-	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
-	["SPECIAL_KEY_WORDS"] = {"Id","TRADE_HARD"},
-	["PRECEDING_FIRST"] = "True",
-	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 56000},			--default 14000
-		{"LaserDamageLevel", 3},	--default 1
-		}},
-	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
-	["SPECIAL_KEY_WORDS"] = {"Id","BOUNTY"},
-	["PRECEDING_FIRST"] = "True",
-	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 800000},			--default 20000
-		{"LaserDamageLevel", 3},	--default 1
-		}},]]
 	
 	--Behaviours
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SPACE_EZ"},				--Custom Behaviour
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 3},						
 		{"GunFireRate", 0.08},							
@@ -1654,8 +1652,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SPACE"},
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 1.5},						--5.5
 		{"GunFireRate", 0.06},								--0.15
@@ -1675,8 +1673,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SPACE_HRD"},				--Custom Behaviour
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 1},
 		{"GunFireRate", 0.04},								
@@ -1696,8 +1694,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PLANET_EZ"},				--Custom Behaviour
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 2.7},
 		{"GunFireRate", 0.08},
@@ -1717,8 +1715,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PLANET"},
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 1.35},						--5
 		{"GunFireRate", 0.06},								--0.15
@@ -1738,8 +1736,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PLANET_HRD"},			--Custom Behaviour
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 0.9},
 		{"GunFireRate", 0.04},
@@ -1759,8 +1757,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 2},							--3				(0.9)
 		{"GunFireRate", 0.09},								--0.15			(0.06)
@@ -1780,8 +1778,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_WEAK"},
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 5},							--6
 		{"GunFireRate", 0.3},								--0.3
@@ -1801,8 +1799,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_MED"},			--Custom Behaviour
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 3},							--4
 		{"GunFireRate", 0.2},								--0.2
@@ -1822,8 +1820,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_STRONG"},
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 1.5},						--2
 		{"GunFireRate", 0.1},								--0.1
@@ -1841,179 +1839,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"NumHitsBeforeBail", 900	},						--600
 		{"NumHitsBeforeReposition", 1500},					--1000
 		}},
-	--[[	Deprecated as of NMS v3.85
-	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
-	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE"},
-	["PRECEDING_FIRST"] = "True",
-	--["PRECEDING_KEY_WORDS"] = {"GcShipAIAttackData.xml"}, --PIRATE
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"GunDispersionAngle", 2.8},						--X
-		{"GunFireRate", 0.075},								--X 0.07
-		{"LaserHealthPoint", 50},
-		{"AttackWeaponRange", 1500},
-		{"AttackShootWaitTime", 0.1},
-		{"AttackShootTimeMin", 0.1},
-		{"AttackShootTimeMax", 10},
-		{"AttackMaxTime", 60},
-		{"AttackApproachOffset", 800},
-		{"AttackApproachMinRange", 40},						--(40)
-		{"AttackTooCloseRange", 120},						--250	(0)
-		{"AttackFlybyOffset", -200},
-		{"AttackBoostAngle", 10},
-		{"NumHitsBeforeBail", 1200},						--600
-		}},
-	{--["PRECEDING_KEY_WORDS"] = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --EASY
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"GunDispersionAngle", 3.5},						--X
-		{"GunFireRate", 0.085},								--X	0.12
-		{"LaserHealthPoint", 0},
-		{"AttackWeaponRange", 1000},
-		{"AttackShootWaitTime", 0.1},
-		{"AttackShootTimeMin", 0.1},
-		{"AttackShootTimeMax", 10},
-		{"AttackMaxTime", 60},
-		{"AttackApproachOffset", 800},
-		{"AttackApproachMinRange", 40},						--(40)
-		{"AttackTooCloseRange", 150},						--250	(0)
-		{"AttackFlybyOffset", -200},
-		{"AttackBoostAngle", 10},
-		{"NumHitsBeforeBail", 900},							--600
-		}},
-	{--["PRECEDING_KEY_WORDS"] = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --MEDIUM
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"GunDispersionAngle", 2.8},						--X
-		{"GunFireRate", 0.07},							--X	0.1
-		{"LaserHealthPoint", 25},
-		{"AttackWeaponRange", 1500},
-		{"AttackShootWaitTime", 0.1},
-		{"AttackShootTimeMin", 0.1},
-		{"AttackShootTimeMax", 10},
-		{"AttackMaxTime", 60},
-		{"AttackApproachOffset", 800},
-		{"AttackApproachMinRange", 40},						--(40)
-		{"AttackTooCloseRange", 120},						--250	(0)
-		{"AttackFlybyOffset", -200},
-		{"AttackBoostAngle", 10},
-		{"NumHitsBeforeBail", 2000},						--1000
-		}},	
-	{--["PRECEDING_KEY_WORDS"] = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --HARD
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"GunDispersionAngle", 1.5},						--X
-		{"GunFireRate", 0.06},							--X	0.05
-		{"LaserHealthPoint", 50},
-		{"AttackWeaponRange", 2000},
-		{"AttackShootWaitTime", 0.1},
-		{"AttackShootTimeMin", 0.1},
-		{"AttackShootTimeMax", 60},
-		{"AttackMaxTime", 60},
-		{"AttackApproachOffset", 400},
-		{"AttackApproachMinRange", 40},						--(4)
-		{"AttackTooCloseRange", 100},						--150	(0)
-		{"AttackFlybyOffset", 50},
-		{"AttackBoostAngle", 210},
-		{"NumHitsBeforeBail", 2500},						--1000
-		}},			
-	{--["PRECEDING_KEY_WORDS"] = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --SOLO
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"GunDispersionAngle", 1},
-		{"GunFireRate", 0.04},	--0.05
-		{"LaserHealthPoint", 75},
-		{"AttackWeaponRange", 2000},
-		{"AttackShootWaitTime", 0.1},
-		{"AttackShootTimeMin", 0.1},
-		{"AttackShootTimeMax", 60},
-		{"AttackMaxTime", 60},
-		{"AttackApproachOffset", 400},
-		{"AttackApproachMinRange", 40},						--(4)
-		{"AttackTooCloseRange", 100},						--50	(0)
-		{"AttackFlybyOffset", 50},
-		{"AttackBoostAngle", 210},
-		{"NumHitsBeforeBail", 3000},						--2000
-		}},		
-	{--["PRECEDING_KEY_WORDS"] = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --POLICE
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"GunDispersionAngle", 1.5},						--X
-		{"GunFireRate", 0.05},						--X	0.06
-		{"LaserHealthPoint", 50},
-		{"AttackWeaponRange", 2000},
-		{"AttackShootWaitTime", 0.1},
-		{"AttackShootTimeMin", 0.1},
-		{"AttackShootTimeMax", 60},
-		{"AttackMaxTime", 60},
-		{"AttackApproachOffset", 400},
-		{"AttackApproachMinRange", 40},						--(4)
-		{"AttackTooCloseRange", 120},						--150	(0)
-		{"AttackFlybyOffset", 50},
-		{"AttackBoostAngle", 210},
-		{"NumHitsBeforeBail", 2000},							--600
-		}},		
-	{--["PRECEDING_KEY_WORDS"] = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --TRADER		(added by Xen0nex)
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"GunDispersionAngle", 1.5},						--X
-		{"GunFireRate", 0.05},						--X	0.06
-		{"LaserHealthPoint", 50},
-		{"AttackWeaponRange", 2000},
-		{"AttackShootWaitTime", 0.1},
-		{"AttackShootTimeMin", 0.1},
-		{"AttackShootTimeMax", 60},
-		{"AttackMaxTime", 60},
-		{"AttackApproachOffset", 400},
-		{"AttackApproachMinRange", 40},						--(4)
-		{"AttackTooCloseRange", 120},						--150	(0)
-		{"AttackFlybyOffset", 50},
-		{"AttackBoostAngle", 210},
-		{"NumHitsBeforeBail", 900},							--600
-		}},		
-	{--["PRECEDING_KEY_WORDS"] = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --BOUNTY
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"GunDispersionAngle", 1},						--X
-		{"GunFireRate", 0.04},						--X 0.05
-		{"LaserHealthPoint", 75},
-		{"AttackWeaponRange", 2000},
-		{"AttackShootWaitTime", 0.1},
-		{"AttackShootTimeMin", 0.1},
-		{"AttackShootTimeMax", 60},
-		{"AttackMaxTime", 60},
-		{"AttackApproachOffset", 400},
-		{"AttackApproachMinRange", 40},						--(4)
-		{"AttackTooCloseRange", 120},						--150	(0)
-		{"AttackFlybyOffset", 50},
-		{"AttackBoostAngle", 210},
-		{"NumHitsBeforeBail", 1500},							--600
-		}},	
-	{--["PRECEDING_KEY_WORDS"] = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --PIRATE_FREIGHT
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"GunDispersionAngle", 2},
-		{"GunFireRate", 0.06},	--0.06
-		{"LaserHealthPoint", 50},
-		{"AttackWeaponRange", 2000},
-		{"AttackAngle", 50},
-		{"AttackShootWaitTime", 0.1},
-		{"AttackShootTimeMin", 0.1},
-		{"AttackShootTimeMax", 60},
-		{"AttackMaxTime", 60},
-		{"AttackApproachOffset", 400},
-		{"AttackApproachMinRange", 40},						--(4)
-		{"AttackTooCloseRange", 120},						--150	(150)
-		{"AttackFlybyOffset", -200},
-		{"NumHitsBeforeBail", 900},							--600
-		}},]]
 	
 	--Engines
 		--Applying the same PowerSettingEngineMul multiplier from "PTSd Power Settings.lua" to BoostSpeed, to compensate how diverting power to engines makes it easier to escape pirates
 	{["PRECEDING_KEY_WORDS"] = {"EngineTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SPACE_EASY"},
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--10
 		{"MaxSpeed", 140},									--60		(200)
@@ -2022,12 +1854,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"DirectionBrake", 4},								--5
 		{"Roll", 2},										--1
 		{"MinHeight", 15},									--30
-		{"Hovering", "False"},								--"False"
+		{"Hovering", "false"},								--"false"
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"EngineTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SPACE_HARD"},
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--20
 		{"MaxSpeed", 200},									--90		(250)
@@ -2036,12 +1868,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"DirectionBrake", 2.5},							--3
 		{"Roll", 1.2},										--0.6
 		{"MinHeight", 15},									--30
-		{"Hovering", "False"},								--"False"
+		{"Hovering", "false"},								--"false"
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"EngineTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PLANET_EASY"},
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--50
 		{"MaxSpeed", 100},									--80
@@ -2050,12 +1882,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"DirectionBrake", 2.5},							--3
 		{"Roll", 2},										--1
 		{"MinHeight", 25},									--50
-		{"Hovering", "True"},								--"False"
+		{"Hovering", "true"},								--"false"
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"EngineTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PLANET_HARD"},
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 15},									--60
 		{"MaxSpeed", 160},									--130
@@ -2064,12 +1896,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"DirectionBrake", 1},								--1.2
 		{"Roll", 2},										--1
 		{"MinHeight", 12},									--25
-		{"Hovering", "True"},								--"False"
+		{"Hovering", "true"},								--"false"
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"EngineTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--10
 		{"MaxSpeed", 60},									--60
@@ -2078,12 +1910,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"DirectionBrake", 20},								--20
 		{"Roll", 1},										--1
 		{"MinHeight", 20},									--30
-		{"Hovering", "False"},								--"False"
+		{"Hovering", "false"},								--"false"
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"EngineTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_SLOW"},
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 0},									--0
 		{"MaxSpeed", 200},									--200
@@ -2092,12 +1924,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"DirectionBrake", 8},								--8
 		{"Roll", 1},										--1
 		{"MinHeight", 30},									--30
-		{"Hovering", "False"},								--"False"
+		{"Hovering", "false"},								--"false"
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"EngineTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_FAST"},
-	["PRECEDING_FIRST"] = "True",
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 0},									--0
 		{"MaxSpeed", 300},									--300
@@ -2106,89 +1938,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"DirectionBrake", 10},								--10
 		{"Roll", 1.5},										--1.5
 		{"MinHeight", 15},									--15
-		{"Hovering", "False"},								--"False"
+		{"Hovering", "false"},								--"false"
 		}},
-	--[[	Deprecated as of NMS v3.85
-	{--["PRECEDING_KEY_WORDS"] = {"GcSpaceshipTravelData.xml"}, --STANDARD
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"MinSpeed", 10},
-		{"MaxSpeed", 200},
-		{"BoostSpeed", 1200},
-		{"TurnMin", 0.6},
-		{"DirectionBrake", 4},
-		{"PlanetMinSpeed", 10},
-		{"PlanetMaxSpeed", 120},
-		{"PlanetDirectionBrake", 5.2},
-		{"Roll", 2},
-		{"MinHeight", 15},
-		{"Hovering", "True"},
-		}},	
-	{--["PRECEDING_KEY_WORDS"] = {"GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml"}, --SOLO
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"MinSpeed", 10},
-		{"MaxSpeed", 250},
-		{"BoostSpeed", 3000},
-		{"TurnMin", 0.6},
-		{"DirectionBrake", 2.5},
-		{"PlanetMinSpeed", 10},
-		{"PlanetMaxSpeed", 120},
-		{"PlanetDirectionBrake", 5.2},
-		{"Roll", 2},
-		{"MinHeight", 15},
-		{"Hovering", "False"},
-		}},	
-	{--["PRECEDING_KEY_WORDS"] = {"GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml"}, --PIRATE
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"MinSpeed", 10},
-		{"MaxSpeed", 250},
-		{"BoostSpeed", 3000},
-		{"TurnMin", 0.6},
-		{"DirectionBrake", 4},
-		{"PlanetMinSpeed", 10},
-		{"PlanetMaxSpeed", 140},
-		{"PlanetDirectionBrake", 5.2},
-		{"Roll", 3},
-		{"MinHeight", 50},
-		{"Hovering", "False"},
-		}},
-	{--["PRECEDING_KEY_WORDS"] = {"GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml"}, --POLICE
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"MinSpeed", 10},
-		{"MaxSpeed", 250},
-		{"BoostSpeed", 3000},
-		{"TurnMin", 0.6},
-		{"DirectionBrake", 4},
-		{"PlanetMinSpeed", 10},
-		{"PlanetMaxSpeed", 140},
-		{"PlanetDirectionBrake", 5.2},
-		{"Roll", 4},
-		{"MinHeight", 30},
-		{"Hovering", "False"},
-		}},	
-	{--["PRECEDING_KEY_WORDS"] = {"GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml"}, --BOUNTY
-	["INTEGER_TO_FLOAT"] = "FORCE",
-	["VALUE_CHANGE_TABLE"] = {
-		{"MinSpeed", 10},
-		{"MaxSpeed", 400},
-		{"BoostSpeed", 3000},
-		{"TurnMin", 0.6},
-		{"DirectionBrake", 4},
-		{"PlanetMinSpeed", 10},
-		{"PlanetMaxSpeed", 140},
-		{"PlanetDirectionBrake", 5.2},
-		{"Roll", 2},
-		{"MinHeight", 30},
-		{"Hovering", "False"},
-		}},]]
 	
 	--Shields
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER"},			--added in NMS v4.4
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(ShipShield*25000*0.67)},						--25000
@@ -2198,7 +1954,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","CIVLEAD_SHIELD"},		--added in NMS v4.4
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(1*5000000*1)},								--5000000
@@ -2208,7 +1964,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FREIGHT"},		--added in NMS v4.4
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(1*10000000*1)},								--10000000
@@ -2218,7 +1974,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","WEAK"},					--added in NMS v4.4
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(ShipShield*1200*0.75)},								--1200
@@ -2228,7 +1984,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","STANDARD"},
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(ShipShield*5600*0.667)},								--5600
@@ -2238,7 +1994,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","STRONG"},
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(ShipShield*10000*0.75)},								--10000
@@ -2248,7 +2004,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","FAST"},
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(ShipShield*2000)},								--2000
@@ -2258,7 +2014,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","FAST_STRONG"},
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(ShipShield*10000*0.75)},								--10000
@@ -2268,7 +2024,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","NULL"},
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(ShipShield*0)},									--0
@@ -2278,7 +2034,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SLOW_STRONG"},					--Custom Shield
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(ShipShield*15000)},										--Custom	[60000]
@@ -2288,7 +2044,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","HUGE"},							--Custom Shield
-	["PRECEDING_FIRST"] = "True",
+	["PRECEDING_FIRST"] = "true",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", math.floor(ShipShield*23000)},								--Custom	[90000]
@@ -2301,9 +2057,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 --[[
 {	
 	["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UTILITYPARTS/MODULE_TURRET_L/ENTITIES/TURRET_L.ENTITY.MBIN"},
-	["EXML_CHANGE_TABLE"] 	= 
+	["MXML_CHANGE_TABLE"] 	= 
 	{
-		{--Applies health increases to civilian Freighter turrets
+		{--Applies health increases to civilian Freighter turrets??
 			["MATH_OPERATION"] 		= "*",
 			["REPLACE_TYPE"] 		= "",
 			["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -2312,7 +2068,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"Health", 10 * ShipHull}						--3000
 			}
 		},
-		{--Applies health increases to civilian Freighter turrets
+		{--Applies health increases to civilian Freighter turrets??
 			["MATH_OPERATION"] 		= "",
 			["REPLACE_TYPE"] 		= "",
 			["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -2325,9 +2081,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 },
 {	
 	["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UTILITYPARTS/MODULE_TURRET_R/ENTITIES/TURRET_R.ENTITY.MBIN"},
-	["EXML_CHANGE_TABLE"] 	= 
+	["MXML_CHANGE_TABLE"] 	= 
 	{
-		{--Applies health increases to civilian Freighter turrets
+		{--Applies health increases to civilian Freighter turrets??
 			["MATH_OPERATION"] 		= "*",
 			["REPLACE_TYPE"] 		= "",
 			["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -2336,7 +2092,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"Health", 10 * ShipHull}						--3000
 			}
 		},
-		{--Applies health increases to civilian Freighter turrets
+		{--Applies health increases to civilian Freighter turrets??
 			["MATH_OPERATION"] 		= "",
 			["REPLACE_TYPE"] 		= "",
 			["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -2349,9 +2105,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 },
 {	
 	["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UTILITYPARTS/MODULE_TURRET/ENTITIES/TURRET.ENTITY.MBIN"},
-	["EXML_CHANGE_TABLE"] 	= 
+	["MXML_CHANGE_TABLE"] 	= 
 	{
-		{--Applies health increases to civilian Freighter turrets
+		{--Applies health increases to civilian Freighter turrets??
 			["MATH_OPERATION"] 		= "*",
 			["REPLACE_TYPE"] 		= "",
 			["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -2360,7 +2116,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"Health", 10 * ShipHull}						--3000
 			}
 		},
-		{--Applies health increases to civilian Freighter turrets
+		{--Applies health increases to civilian Freighter turrets??
 			["MATH_OPERATION"] 		= "",
 			["REPLACE_TYPE"] 		= "",
 			["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -2374,7 +2130,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ]]
 }}}}
 
-local ChangesToLargerBattles = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToLargerBattles = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #AddedSquadrons do
 	local AddAmount = AddedSquadrons[i]
@@ -2382,61 +2138,107 @@ for i = 1, #AddedSquadrons do
 			ChangesToLargerBattles[#ChangesToLargerBattles+1] =
 			{
 				["MATH_OPERATION"] 		= "+",
-				["PRECEDING_KEY_WORDS"] = {"GcPoliceSpawnWaveData.xml", "MaxCountsForFireteamSize"},
-				["SECTION_ACTIVE"] = {i,},
+				["SPECIAL_KEY_WORDS"] = {"PoliceSpawns", "GcPoliceSpawnWaveData"},
+				["SECTION_ACTIVE"] = {i-1,},
+				["AFTER_KEY_WORDS"] = {"MaxCountsForFireteamSize"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"IGNORE", AddAmount}
+					{"MaxCountsForFireteamSize", AddAmount},
+					{"MaxCountsForFireteamSize", AddAmount},
+					{"MaxCountsForFireteamSize", AddAmount},
+					{"MaxCountsForFireteamSize", AddAmount}
 				}
 			}
 end
 for i = 1, #LargerBattleChanges do
 	local SceneID = LargerBattleChanges[i][1][1]
-	local ChildLevels = LargerBattleChanges[i][2]
-	--local SpreadCounts = LargerBattleChanges[i][2]
+	local Entries = LargerBattleChanges[i][2]
 	
-	for j = 1, #ChildLevels do
-		--local ChildLevel = ChildLevels[j][1]
-		--local ChildLevel = table.concat(ChildLevels[j][1])
+	for j = 1, #Entries do
+		local EntryName = Entries[j][1][1]
+		local EntryValue = Entries[j][1][2]
+		local EntryIndex = Entries[j][1][3]
+		local EntrySubLevel = Entries[j][1][4]
 		
-		
-		local SpreadCounts = ChildLevels[j][2]
-		--local Replacers = ChildLevels[j][2]
+		local SpreadCounts = Entries[j][2]
 	
 		for k = 1, #SpreadCounts do
 		SpreadCount = SpreadCounts[k][1]
 			ReplacerX = SpreadCounts[k][2]
 			ReplacerY = SpreadCounts[k][3]
-			
-			local ChildLevel1 = ChildLevels[j][1][1]
-			local ChildLevel2 = ChildLevels[j][1][2]
-			local ChildLevel3 = ChildLevels[j][1][3]
-			local ChildLevel4 = ChildLevels[j][1][4]
-			local ChildLevel5 = ChildLevels[j][1][5]
-			local ChildLevel6 = ChildLevels[j][1][6]
-			local ChildLevel7 = ChildLevels[j][1][7]
-			local ChildLevel8 = ChildLevels[j][1][8]
-			local ChildLevel9 = ChildLevels[j][1][9]
-			local ChildLevel10 = ChildLevels[j][1][10]
-			local ChildLevel11 = ChildLevels[j][1][11]
-			local ChildLevel12 = ChildLevels[j][1][12]
-			local ChildLevel13 = ChildLevels[j][1][13]
 	
-			ChangesToLargerBattles_temp =
+			ChangesToLargerBattles[#ChangesToLargerBattles+1] =
 			{
-				["PRECEDING_FIRST"] = "True",
-				["PRECEDING_KEY_WORDS"] = {SceneID,ChildLevel1,ChildLevel2,ChildLevel3,ChildLevel4,ChildLevel5,ChildLevel6,ChildLevel7,ChildLevel8,ChildLevel9,ChildLevel10,ChildLevel11,ChildLevel12,ChildLevel13},
-				--["PRECEDING_KEY_WORDS"] = {ChildLevel},
-				["SPECIAL_KEY_WORDS"] = {SpreadCount,"Vector2f.xml"},
+				["PRECEDING_FIRST"] = "true",
+				["PRECEDING_KEY_WORDS"] = {SceneID},
+				["SPECIAL_KEY_WORDS"] = {EntryName,	EntryValue},
+				["SECTION_ACTIVE"] = {EntryIndex,},
+				["AFTER_KEY_WORDS"] = {SpreadCount},
+				["SUB_LEVEL"] = EntrySubLevel,
+				["REPLACE_TYPE"]         = "ONCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"x", ReplacerX},
-					{"y", ReplacerY}
+					{"X", ReplacerX},
+					{"Y", ReplacerY}
 				}
 			}
-			ChangesToLargerBattles[#ChangesToLargerBattles+1] = ChangesToLargerBattles_temp
 		end
 	end
+end
+for i = 1, #LargerPirateBountyChanges do
+	local SceneID = LargerPirateBountyChanges[i][1][1]
+	local Entries = LargerPirateBountyChanges[i][2]
+	
+	for j = 1, #Entries do
+		--local EntryName = Entries[j][1][1]
+		--local EntryValue = Entries[j][1][2]
+		local EntryId = Entries[j][1][3]
+		
+		local SpreadCounts = Entries[j][2]
+	
+		for k = 1, #SpreadCounts do
+		SpreadCount = SpreadCounts[k][1]
+			ReplacerX = SpreadCounts[k][2]
+			ReplacerY = SpreadCounts[k][3]
+	
+			ChangesToLargerBattles[#ChangesToLargerBattles+1] =
+			{
+				["PRECEDING_FIRST"] = "true",
+				["PRECEDING_KEY_WORDS"] = {SceneID},
+				["SPECIAL_KEY_WORDS"] = {"Id", EntryId},
+				["AFTER_KEY_WORDS"] = {SpreadCount},
+				["REPLACE_TYPE"]         = "ONCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"X", ReplacerX},
+					{"Y", ReplacerY}
+				}
+			}
+		end
+	end
+end
+for i = 1, #MiscLargerChanges do
+	local Name = MiscLargerChanges[i][1][1]
+	local Value = MiscLargerChanges[i][1][2]
+	local SpreadCounts = MiscLargerChanges[i][2]
+	
+		for j = 1, #SpreadCounts do
+		SpreadCount = SpreadCounts[j][1]
+			ReplacerX = SpreadCounts[j][2]
+			ReplacerY = SpreadCounts[j][3]
+	
+			ChangesToLargerBattles[#ChangesToLargerBattles+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {Name, Value},
+				["PRECEDING_KEY_WORDS"] = {SpreadCount},
+				["REPLACE_TYPE"]         = "ONCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"X", ReplacerX},
+					{"Y", ReplacerY}
+				}
+			}
+		end
 end
 
 local ChangesToMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
@@ -2451,7 +2253,7 @@ for i = 1, #BossFreighterPartsChanges do
 			ChangesToMBINChangeTable[#ChangesToMBINChangeTable+1] =
 			{
 				["MBIN_FILE_SOURCE"] 	= {FilePath},
-				["EXML_CHANGE_TABLE"] 	= 
+				["MXML_CHANGE_TABLE"] 	= 
 				{
 					{
 						["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -2461,7 +2263,7 @@ for i = 1, #BossFreighterPartsChanges do
 							{"LevelledExtraHealth", 	LevelledExtraHealth},
 							{"DamageMultiplier", 	DamageMultiplier},
 							{"GivesReward", 	GivesReward},
-							{"HideReward", 	"True"},	--"False"
+							{"HideReward", 	"true"},	--"false"
 						}
 					}
 				}
@@ -2479,7 +2281,7 @@ for i = 1, #CargoPodChanges do
 			ChangesToMBINChangeTable[#ChangesToMBINChangeTable+1] =
 			{
 				["MBIN_FILE_SOURCE"] 	= {FilePath},
-				["EXML_CHANGE_TABLE"] 	= 
+				["MXML_CHANGE_TABLE"] 	= 
 				{
 					{
 						["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -2490,7 +2292,7 @@ for i = 1, #CargoPodChanges do
 							{"DamageMultiplier", 	DamageMultiplier},
 							{"GivesReward", 	GivesReward},
 							{"PirateSystemAltReward", 	OutLawReward},
-							{"HideReward", 	"True"},	--"False"
+							{"HideReward", 	HiddenCargo},	--"false"
 						}
 					}
 				}

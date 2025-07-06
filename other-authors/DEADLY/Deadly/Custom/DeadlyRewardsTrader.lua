@@ -1,31 +1,31 @@
 -- Warp Hypercore
-HYPERFUEL2_CHANCE = 50
+HYPERFUEL2_CHANCE = 50.0
 HYPERFUEL2_MIN = 1
 HYPERFUEL2_MAX = 3
 -- technologies
-TRADERLOOT_TECH_CHANCE = 25
+TRADERLOOT_TECH_CHANCE = 25.0
 -- why??? in space??
-RUSTED_METAL_CHANCE = 0
+RUSTED_METAL_CHANCE = 0.0
 RUSTED_METAL_MIN = 99
 RUSTED_METAL_MAX = 299
 
-TRADE_PROD_T1_CHANCE = 75
+TRADE_PROD_T1_CHANCE = 75.0
 TRADE_PROD_T1_MIN = 15
 TRADE_PROD_T1_MAX = 25
 
-TRADE_PROD_T2_CHANCE = 30
+TRADE_PROD_T2_CHANCE = 30.0
 TRADE_PROD_T2_MIN = 15
 TRADE_PROD_T2_MAX = 25
 
-TRADE_PROD_T3_CHANCE = 10
+TRADE_PROD_T3_CHANCE = 10.0
 TRADE_PROD_T3_MIN = 3
 TRADE_PROD_T3_MAX = 5
 
-TRADE_PROD_T4_CHANCE = 3
+TRADE_PROD_T4_CHANCE = 3.0
 TRADE_PROD_T4_MIN = 1
 TRADE_PROD_T4_MAX = 3
 
-TRADE_PROD_T5_CHANCE = 1
+TRADE_PROD_T5_CHANCE = 1.0
 TRADE_PROD_T5_MIN = 1
 TRADE_PROD_T5_MAX = 1
 
@@ -36,572 +36,73 @@ TRADE_PROD_T5_MAX = 1
     TRA_EXOTICS1
     TRA_COMMODITY2
 --]]
-TRADERLOOT_NEW_PRODUCTS = [[
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="100" />
+
+local function Create_GcRewardTableItem(ID, MIN, MAX, CHANCE, INDEX)
+    return [[
+<Property name="List" value="GcRewardTableItem" _index="]] .. INDEX .. [[">
+    <Property name="PercentageChance" value="]] .. CHANCE .. [[" />
     <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
+    <Property name="Reward" value="GcRewardSpecificProduct">
+        <Property name="GcRewardSpecificProduct">
+            <Property name="Default" value="GcDefaultMissionProductEnum">
+                <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="ID" value="]] .. ID .. [[" />
+            <Property name="AmountMin" value="]] .. MIN .. [[" />
+            <Property name="AmountMax" value="]] .. MAX .. [[" />
+            <Property name="HideAmountInMessage" value="False" />
+            <Property name="ForceSpecialMessage" value="False" />
+            <Property name="HideInSeasonRewards" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="SeasonRewardListFormat" value="" />
+            <Property name="RequiresTech" value="" />
         </Property>
-        <Property name="ID" value="TRA_COMMODITY1" />
-        <Property name="AmountMin" value="15" />
-        <Property name="AmountMax" value="25" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="100" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_COMPONENT1" />
-        <Property name="AmountMin" value="15" />
-        <Property name="AmountMax" value="25" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="100" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_ENERGY1" />
-        <Property name="AmountMin" value="15" />
-        <Property name="AmountMax" value="25" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="100" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_TECH1" />
-        <Property name="AmountMin" value="15" />
-        <Property name="AmountMax" value="25" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="100" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_ALLOY2" />
-        <Property name="AmountMin" value="15" />
-        <Property name="AmountMax" value="25" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="100" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_COMPONENT2" />
-        <Property name="AmountMin" value="15" />
-        <Property name="AmountMax" value="25" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="100" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_ENERGY2" />
-        <Property name="AmountMin" value="15" />
-        <Property name="AmountMax" value="25" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="100" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_EXOTICS2" />
-        <Property name="AmountMin" value="15" />
-        <Property name="AmountMax" value="25" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="100" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_MINERALS2" />
-        <Property name="AmountMin" value="15" />
-        <Property name="AmountMax" value="25" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="100" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_TECH2" />
-        <Property name="AmountMin" value="15" />
-        <Property name="AmountMax" value="25" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="3" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_ALLOY3" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="5" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="3" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_COMMODITY3" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="5" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="3" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_COMPONENT3" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="5" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="3" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_ENERGY3" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="5" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="3" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_EXOTICS3" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="5" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="3" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_MINERALS3" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="5" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="3" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_TECH3" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="5" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="2" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_ALLOY4" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="3" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="2" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_COMMODITY4" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="3" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="2" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_COMPONENT4" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="3" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="2" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_ENERGY4" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="3" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="2" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_EXOTICS4" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="3" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="2" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_MINERALS4" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="3" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="2" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_TECH4" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="3" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="1" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_ALLOY5" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="1" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="1" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_COMMODITY5" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="1" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="1" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_COMPONENT5" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="1" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="1" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_ENERGY5" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="1" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="1" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_EXOTICS5" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="1" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="1" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_MINERALS5" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="1" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
-    </Property>
-</Property>
-<Property value="GcRewardTableItem.xml">
-    <Property name="PercentageChance" value="1" />
-    <Property name="LabelID" value="" />
-    <Property name="Reward" value="GcRewardSpecificProduct.xml">
-        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-            <Property name="DefaultProductType" value="None" />
-        </Property>
-        <Property name="ID" value="TRA_TECH5" />
-        <Property name="AmountMin" value="1" />
-        <Property name="AmountMax" value="1" />
-        <Property name="HideAmountInMessage" value="False" />
-        <Property name="ForceSpecialMessage" value="False" />
-        <Property name="HideInSeasonRewards" value="False" />
-        <Property name="Silent" value="False" />
-        <Property name="SeasonRewardListFormat" value="" />
-        <Property name="RequiresTech" value="" />
     </Property>
 </Property>
 ]]
+end
+
+local TRADERLOOT_NEW_PRODUCTS_TABLE = {
+    Create_GcRewardTableItem("TRA_COMMODITY1", 15, 25, 100.0, 10),
+    Create_GcRewardTableItem("TRA_COMPONENT1", 15, 25, 100.0, 11),
+    Create_GcRewardTableItem("TRA_ENERGY1", 15, 25, 100.0, 12),
+    Create_GcRewardTableItem("TRA_TECH1", 15, 25, 100.0, 13),
+    Create_GcRewardTableItem("TRA_ALLOY2", 15, 25, 100.0, 14),
+    Create_GcRewardTableItem("TRA_COMPONENT2", 15, 25, 100.0, 15),
+    Create_GcRewardTableItem("TRA_ENERGY2", 15, 25, 100.0, 16),
+    Create_GcRewardTableItem("TRA_EXOTICS2", 15, 25, 100.0, 17),
+    Create_GcRewardTableItem("TRA_MINERALS2", 15, 25, 100.0, 18),
+    Create_GcRewardTableItem("TRA_TECH2", 15, 25, 100.0, 19),
+    Create_GcRewardTableItem("TRA_ALLOY3", 1, 5, 3.0, 20),
+    Create_GcRewardTableItem("TRA_COMMODITY3", 1, 5, 3.0, 21),
+    Create_GcRewardTableItem("TRA_COMPONENT3", 1, 5, 3.0, 22),
+    Create_GcRewardTableItem("TRA_ENERGY3", 1, 5, 3.0, 22),
+    Create_GcRewardTableItem("TRA_EXOTICS3", 1, 5, 3.0, 23),
+    Create_GcRewardTableItem("TRA_MINERALS3", 1, 5, 3.0, 24),
+    Create_GcRewardTableItem("TRA_TECH3", 1, 5, 3.0, 25),
+    Create_GcRewardTableItem("TRA_ALLOY4", 1, 3, 2.0, 26),
+    Create_GcRewardTableItem("TRA_COMMODITY4", 1, 3, 2.0, 27),
+    Create_GcRewardTableItem("TRA_COMPONENT4", 1, 3, 2.0, 28),
+    Create_GcRewardTableItem("TRA_ENERGY4", 1, 3, 2.0, 29),
+    Create_GcRewardTableItem("TRA_EXOTICS4", 1, 3, 2.0, 30),
+    Create_GcRewardTableItem("TRA_MINERALS4", 1, 3, 2.0, 31),
+    Create_GcRewardTableItem("TRA_TECH4", 1, 3, 2.0, 32),
+    Create_GcRewardTableItem("TRA_ALLOY5", 1, 1, 1.0, 33),
+    Create_GcRewardTableItem("TRA_COMMODITY5", 1, 1, 1.0, 34),
+    Create_GcRewardTableItem("TRA_COMPONENT5", 1, 1, 1.0, 35),
+    Create_GcRewardTableItem("TRA_ENERGY5", 1, 1, 1.0, 36),
+    Create_GcRewardTableItem("TRA_EXOTICS5", 1, 1, 1.0, 37),
+    Create_GcRewardTableItem("TRA_MINERALS5", 1, 1, 1.0, 38),
+    Create_GcRewardTableItem("TRA_TECH5", 1, 1, 1.0, 39),
+}
+
+local TRADERLOOT_NEW_PRODUCTS = table.concat(TRADERLOOT_NEW_PRODUCTS_TABLE, "\n")
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyRewardsTrader.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.46",
+    ["NMS_VERSION"]   = "5.63",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
@@ -618,17 +119,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         -- no nanites
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "TRADERLOOT", "Currency", "Nanites" },
-                            ["SECTION_UP"]         = 2,
+                            ["SECTION_UP"]         = 3,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "PercentageChance", 0 }, -- 100
+                                { "PercentageChance", 0.0 }, -- 100.0
                             }
                         },
                         -- Warp Hypercore
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "TRADERLOOT", "ID", "HYPERFUEL2" },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "PercentageChance", HYPERFUEL2_CHANCE }, -- 100
+                                { "PercentageChance", HYPERFUEL2_CHANCE }, -- 100.0
                             }
                         },
                         {
@@ -645,17 +146,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Id", "TRADERLOOT", "Group", "LAUNCHER_NAME_L" },
                                 { "Id", "TRADERLOOT", "Group", "SHIPSHIELD_NAME_L" },
                             },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "PercentageChance", TRADERLOOT_TECH_CHANCE }, -- 100
+                                { "PercentageChance", TRADERLOOT_TECH_CHANCE }, -- 100.0
                             }
                         },
                         -- Rusted Metal
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Id", "TRADERLOOT", "ID", "SPACEGUNK3" },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "PercentageChance", RUSTED_METAL_CHANCE }, -- 100
+                                { "PercentageChance", RUSTED_METAL_CHANCE }, -- 100.0
                             }
                         },
                         {
@@ -667,7 +168,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                         -- add our products first to change their chance/min/max dynamically later below
                         {
-                            ["SPECIAL_KEY_WORDS"]   = { "Id", "TRADERLOOT", "List", "GcRewardTableItemList.xml" },
+                            ["SPECIAL_KEY_WORDS"]   = { "Id", "TRADERLOOT", "List", "GcRewardTableItemList" },
                             ["PRECEDING_KEY_WORDS"] = { "List" },
                             ["ADD_OPTION"]          = "ADDafterLINE",
                             ["ADD"]                 = TRADERLOOT_NEW_PRODUCTS
@@ -683,7 +184,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Id", "TRADERLOOT", "ID", "TRA_ENERGY1" },
                                 { "Id", "TRADERLOOT", "ID", "TRA_TECH1" },
                             },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "PercentageChance", TRADE_PROD_T1_CHANCE }, -- 100
                             }
@@ -714,7 +215,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Id", "TRADERLOOT", "ID", "TRA_MINERALS2" },
                                 { "Id", "TRADERLOOT", "ID", "TRA_TECH2" },
                             },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "PercentageChance", TRADE_PROD_T2_CHANCE }, -- 100
                             }
@@ -745,7 +246,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Id", "TRADERLOOT", "ID", "TRA_MINERALS3" },
                                 { "Id", "TRADERLOOT", "ID", "TRA_TECH3" },
                             },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "PercentageChance", TRADE_PROD_T3_CHANCE }, -- 3
                             }
@@ -776,7 +277,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Id", "TRADERLOOT", "ID", "TRA_MINERALS4" },
                                 { "Id", "TRADERLOOT", "ID", "TRA_TECH4" },
                             },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "PercentageChance", TRADE_PROD_T4_CHANCE }, -- 2
                             }
@@ -807,7 +308,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Id", "TRADERLOOT", "ID", "TRA_MINERALS5" },
                                 { "Id", "TRADERLOOT", "ID", "TRA_TECH5" },
                             },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "PercentageChance", TRADE_PROD_T5_CHANCE }, -- 1
                             }

@@ -1,5 +1,5 @@
 -- if set to true, the script will automatically run without asking for user input
-AUTORUN = false
+AUTORUN = true
 
 ---------------------------
 -- USER DEFAULTS SECTION --
@@ -43,6 +43,7 @@ CAPE_FRIGATE
 CAPE_SANDWORM
 CAPE_JELLY
 CAPE_SEED
+CAPE_RUIN
 ]]
 
 DEFAULT_BACKPACK = "BACKPACK_DIVING"
@@ -56,6 +57,7 @@ BACKPACK_ROYAL
 BACKPACK_SENT
 BACKPACK_ATLAS
 BACKPACK_CAPE
+BACKPACK_APOD
 BACKPACK_DIVING
 ]]
 
@@ -78,8 +80,8 @@ NEW_COLOURS_HEX =
 
 PRESET_COLOURS = 
 -- change the number in the "Colour" parameter to choose the custom colour to apply to the part
-{				-- skip with GcCharacterCustomisationColourData.xml
-				-- Palette, ColourAlt, and "Colour.xml" used as PRECEDING_KEY_WORDS
+{				-- skip with GcCharacterCustomisationColourData
+				-- Palette, ColourAlt, and "Colour" used as PRECEDING_KEY_WORDS
 	{
 		["Palette"] = 	"Custom_Head",		
 		["ColourAlt"] = "Primary",
@@ -263,6 +265,13 @@ HEADS =
 										"HEAD_APODCRY",
 										"HEAD_APODTOXIC",
 										"HEAD_DIVING",
+										"HEAD_OCTHULHU",
+										"HEAD_FISHBOWL1",
+										"HEAD_FISHBOWL2",
+										"HEAD_FISHBOWL3",
+										"HEAD_FISHBOWL4",
+										"HEAD_FISHBOWL5",
+										"HEAD_FISHBOWL6",
 									  },
 					  },
 		["BUI"] 	= {	["EXCLUDE"] = "BUI",
@@ -282,7 +291,7 @@ HEADS =
 										"FOR_HEAD_STING",
 										"GEK_HEAD_NUT",
 										"FOR_HEAD_HOOD",
-										"VYK_HEAD_WORM",
+										-- "VYK_HEAD_WORM",
 										"VYK_HEAD_ORC",
 										"KOR_HEAD_BUBBLE",
 										"FOR_HEAD_OWL",
@@ -290,6 +299,11 @@ HEADS =
 										"GEK_HEAD_LIZ",
 										"VYK_HEAD_SHARK",
 										"FOR_HEAD_SPOOK",
+									  },
+					  },
+		["VYKEEN"]	= { ["EXCLUDE"] = "VYKEEN",
+						["HEAD"]	= {
+										"VYK_HEAD_WORM",
 									  },
 					  },
 	},					
@@ -333,13 +347,11 @@ function trunc(x)
 	return math.modf(x*1000)/1000
 end
 
-function GetDescriptorGroupEntry(ENTRY)
-return[[
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="]] .. ENTRY .. [[" />
-          </Property>
-]]
-end
+-- function GetDescriptorGroupEntry(ENTRY)
+-- return[[
+        -- <Property name="Descriptors" value="]] .. ENTRY .. [[" />
+-- ]]
+-- end
 
 -- initialise all decision-making related variables
 EDITION = ""
@@ -390,7 +402,7 @@ if EDITION_DECISION == 0 or EDITION_DECISION > #PAK_NAME then
 end
 
 -- asking for cape
-CAPE_LIST = {"CAPE_ATLAS", "CAPE_PROTO", "CAPE_PIRATE", "CAPE_INFINITY", "CAPE_FREIGHTER", "CAPE_FRIGATE", "CAPE_SANDWORM", "CAPE_JELLY", "CAPE_SEED"}
+CAPE_LIST = {"CAPE_ATLAS", "CAPE_PROTO", "CAPE_PIRATE", "CAPE_INFINITY", "CAPE_FREIGHTER", "CAPE_FRIGATE", "CAPE_SANDWORM", "CAPE_JELLY", "CAPE_SEED", "CAPE_RUIN"}
 
 LIST_DISPLAY = ""
 for i,j in pairs(CAPE_LIST) do
@@ -417,7 +429,7 @@ end
 
 
 -- asking for backpack
-BACKPACK_LIST = {"BACKPACK_RETRO", "BACKPACK_EXPD1", "BACKPACK_ROYAL", "BACKPACK_SENT", "BACKPACK_ATLAS", "BACKPACK_CAPE", "BACKPACK_DIVING"}
+BACKPACK_LIST = {"BACKPACK_RETRO", "BACKPACK_EXPD1", "BACKPACK_ROYAL", "BACKPACK_SENT", "BACKPACK_ATLAS", "BACKPACK_CAPE", "BACKPACK_APOD", "BACKPACK_DIVING"}
 
 LIST_DISPLAY = ""
 for i,j in pairs(BACKPACK_LIST) do
@@ -521,6 +533,7 @@ if BACKPACK ~= "" then
 	table.insert(HEAD_CHANGE_TABLE,
 	{
 		["REPLACE_TYPE"] = "ALL",
+		-- ["PKW"] = {"Presets", "DescriptorGroups"},
 		["VALUE_MATCH"] = "BACKPACK_VANILL",
 		["VALUE_CHANGE_TABLE"] =
 		{
@@ -533,6 +546,7 @@ if CAPE ~= "" then
 	table.insert(HEAD_CHANGE_TABLE,
 	{
 		["REPLACE_TYPE"] = "ALL",
+		["PKW"] = {"Presets"},
 		["VALUE_MATCH"] = "CAPE_NULL",
 		["VALUE_CHANGE_TABLE"] =
 		{
@@ -545,6 +559,7 @@ if ARMOUR_DECISION then
 	table.insert(HEAD_CHANGE_TABLE,
 	{
 		["REPLACE_TYPE"] = "ALL",
+		["PKW"] = {"Presets"},
 		["VALUE_MATCH"] = RACES_ARMOUR,
 		["VALUE_CHANGE_TABLE"] =
 		{
@@ -554,6 +569,7 @@ if ARMOUR_DECISION then
 	table.insert(HEAD_CHANGE_TABLE,
 	{
 		["REPLACE_TYPE"] = "ALL",
+		["PKW"] = {"Presets"},
 		["VALUE_MATCH"] = RACES_TORSO,
 		["VALUE_CHANGE_TABLE"] =
 		{
@@ -645,7 +661,7 @@ for _i,j in pairs(HEADS[string.upper(EDITION)]) do
 				table.insert(CUSTOMISATIONUIDATA_CHANGE_TABLE,
 				{
 					["SPECIAL_KEY_WORDS"] = { "DescriptorGroupOption", n["Base"], "GroupID", "HEAD"},
-					["PRECEDING_KEY_WORDS"] = {"DescriptorOptions", "GcCustomisationDescriptorGroupOptions.xml", "DescriptorGroupOptions"},
+					["PRECEDING_KEY_WORDS"] = {"DescriptorGroupOptions"},
 					["ADD_OPTION"]  = "ADDendSECTION",
 					["SEC_PASTE"] = CUSTOMISATIONUIDATASEC_PREFIX .. l,
 				})
@@ -660,7 +676,8 @@ for	m,n in pairs(PRESET_COLOURS) do
 	if DEBUG_TEXT then print(m) end
 	CHANGE_PRESET_COLOUR = {}
 	CHANGE_PRESET_COLOUR = {	-- ["PRECEDING_KEY_WORDS"] = {"Colours"}, 
-								["PRECEDING_KEY_WORDS"] = {"GcCharacterCustomisationColourData.xml"}, 
+								-- ["PRECEDING_KEY_WORDS"] = {"GcCharacterCustomisationColourData"}, 
+								["SKW"] = {"Colours", "GcCharacterCustomisationColourData"},
 								-- ["CUSTOM_ORDER"] = {"WIS","SU"},
 								-- ["SECTION_UP"] = 1,
 								["WIS"] =
@@ -675,7 +692,7 @@ for	m,n in pairs(PRESET_COLOURS) do
 								["VALUE_CHANGE_TABLE"] = {},
 							}
 	-- for t=2, m do
-		-- table.insert(CHANGE_PRESET_COLOUR["PRECEDING_KEY_WORDS"],"GcCharacterCustomisationColourData.xml")
+		-- table.insert(CHANGE_PRESET_COLOUR["PRECEDING_KEY_WORDS"],"GcCharacterCustomisationColourData")
 	-- end
 	for r,s in pairs(RGB) do
 		HEAD_TEMP = {s, NEW_COLOURS[n["Colour"]][s]}
@@ -688,18 +705,25 @@ MAX_COLOUR_SLOTS = 64 - NUM_VANILLA_COLOUR -- limits number of custom colours si
 -- SECTION_RATIO_GENERAL = ""
 
 COLOUR_CHANGE_TABLE = {}
--- building the EXML_CHANGE_TABLE for player colour palette
+-- building the MXML_CHANGE_TABLE for player colour palette
 for i,j in pairs(NEW_COLOURS) do	
     if DEBUG_TEXT then print(i) end
 	ADD_COLOUR_ENTRY =
-	{	["SPECIAL_KEY_WORDS"] = { "ID", "PLAYER" },
-		["PRECEDING_KEY_WORDS"] = { "Colour.xml" },
+	{	["SPECIAL_KEY_WORDS"] = { "ID", "PLAYER", "R", "IGNORE"},
+	-- {	["SPECIAL_KEY_WORDS"] = { "ID", "PLAYER"},
+		-- ["PKW"] = {"Colours"}, 
+		-- ["PRECEDING_KEY_WORDS"] = { "Colours", "Colours" },
+		-- ["CUSTOM_ORDER"] = {"WISS", "SA"},
+		-- ["WISS"] =
+		-- {
+			-- {"R", "IGNORE"},
+		-- },
+		["SECTION_ACTIVE"] = (NUM_VANILLA_COLOUR + i - 1), --SA starts at index 0 now
 		["INTEGER_TO_FLOAT"] = "FORCE",
-		["SECTION_ACTIVE"] = -(NUM_VANILLA_COLOUR + i),
 		["VALUE_CHANGE_TABLE"] = {}
 	}	
 	-- for k=1, NUM_VANILLA_COLOUR + i do
-		-- table.insert(ADD_COLOUR_ENTRY["PRECEDING_KEY_WORDS"], "Colour.xml")
+		-- table.insert(ADD_COLOUR_ENTRY["PRECEDING_KEY_WORDS"], "Colour")
 	-- end
     for m,n in pairs(RGB) do
         COLOUR_TEMP = { n, j[n] }
@@ -725,11 +749,11 @@ table.insert(DESCRIPTORGROUP_CHANGE_TABLE,
 -- { 
 		-- ["PRECEDING_KEY_WORDS"] = 
 		-- {
-			-- { "HideIfGroupActive", "NMSString0x10.xml" },
-			-- { "SelectingRemovesGroup", "NMSString0x10.xml" },
-			-- { "SelectingAddsGroup", "NMSString0x10.xml" },
-			-- { "UnselectingRemovesGroup", "NMSString0x10.xml" },
-			-- { "UnselectingAddsGroup", "NMSString0x10.xml" },
+			-- { "HideIfGroupActive", "NMSString0x10" },
+			-- { "SelectingRemovesGroup", "NMSString0x10" },
+			-- { "SelectingAddsGroup", "NMSString0x10" },
+			-- { "UnselectingRemovesGroup", "NMSString0x10" },
+			-- { "UnselectingAddsGroup", "NMSString0x10" },
 		-- },
 		-- ["REPLACE_TYPE"] = "ALL",
 		-- ["REMOVE"] = "SECTION",
@@ -785,7 +809,7 @@ table.insert(DESCRIPTORGROUP_CHANGE_TABLE,
 
 -- table.insert(HEAD_UI_CHANGE_TABLE,
 -- {
-	-- ["SPECIAL_KEY_WORDS"] = { "ID", "OPTIONS1", "Layout", "GcNGuiLayoutData.xml"},
+	-- ["SPECIAL_KEY_WORDS"] = { "ID", "OPTIONS1", "Layout", "GcNGuiLayoutData"},
 	-- -- ["SECTION_UP"] = 1,
 	-- ["VALUE_CHANGE_TABLE"] = { { "Height", "540"} },
 -- })
@@ -806,7 +830,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_Winder_GettingHead_GettingOn_" .. EDITION .. ".pak",
+["MOD_FILENAME"] 			= "+Winder_GettingHead_GettingOn_" .. EDITION,
 -- ["MOD_FILENAME"] 			= PAK_NAME[EDITION],
 ["MOD_AUTHOR"]				= "WinderTP",
 ["AMUMSS_SUPPRESS_MSG"] 	= "UNUSED_VARIABLE",
@@ -816,24 +840,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\GAMESTATE\PLAYERDATA\CHARACTERCUSTOMISATIONDESCRIPTORGROUPSDATA.MBIN",
-					["EXML_CHANGE_TABLE"] 	= DESCRIPTORGROUP_CHANGE_TABLE
+					["MBIN_FILE_SOURCE"] 	= "METADATA\GAMESTATE\PLAYERDATA\CHARACTERCUSTOMISATIONDESCRIPTORGROUPSDATA.EXML",
+					["MXML_CHANGE_TABLE"] 	= DESCRIPTORGROUP_CHANGE_TABLE
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\CHARACTERCUSTOMISATIONUIDATA.MBIN",
-					["EXML_CHANGE_TABLE"] 	= CUSTOMISATIONUIDATA_CHANGE_TABLE
+					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\CHARACTERCUSTOMISATIONUIDATA.EXML",
+					["MXML_CHANGE_TABLE"] 	= CUSTOMISATIONUIDATA_CHANGE_TABLE
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\GAMESTATE\PLAYERDATA\CUSTOMISATIONCOLOURPALETTES.MBIN",
-					["EXML_CHANGE_TABLE"] 	= COLOUR_CHANGE_TABLE
+					["MBIN_FILE_SOURCE"] 	= "METADATA\GAMESTATE\PLAYERDATA\CUSTOMISATIONCOLOURPALETTES.EXML",
+					["MXML_CHANGE_TABLE"] 	= COLOUR_CHANGE_TABLE
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\GAMESTATE\PLAYERDATA\CHARACTERCUSTOMISATIONPRESETCUSTOMISATIONSDATA.MBIN",
-					["EXML_CHANGE_TABLE"] 	= HEAD_CHANGE_TABLE
+					["MBIN_FILE_SOURCE"] 	= "METADATA\GAMESTATE\PLAYERDATA\CHARACTERCUSTOMISATIONPRESETCUSTOMISATIONSDATA.EXML",
+					["MXML_CHANGE_TABLE"] 	= HEAD_CHANGE_TABLE
 				},
 				-- {
-					-- ["MBIN_FILE_SOURCE"] 	= "UI\COMPONENTS\CHARCUSTOMISE\NUMBEROPTIONS.MBIN",
-					-- ["EXML_CHANGE_TABLE"] 	= HEAD_UI_CHANGE_TABLE
+					-- ["MBIN_FILE_SOURCE"] 	= "UI\COMPONENTS\CHARCUSTOMISE\NUMBEROPTIONS.EXML",
+					-- ["MXML_CHANGE_TABLE"] 	= HEAD_UI_CHANGE_TABLE
 				-- },
 			}
 		},

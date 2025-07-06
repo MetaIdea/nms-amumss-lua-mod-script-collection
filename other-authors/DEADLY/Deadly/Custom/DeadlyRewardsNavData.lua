@@ -1,18 +1,18 @@
 NAVDATA_NANITES_MIN_MULTI = 1
 NAVDATA_NANITES_MAX_MULTI = 10
 
-DEBRIS_CHANCE_LOW = 5
-DEBRIS_CHANCE_HIGH = 10
+DEBRIS_CHANCE_LOW = 5.0
+DEBRIS_CHANCE_HIGH = 10.0
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]  = "_DeadlyRewardsNavData.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
-    ["NMS_VERSION"]   = "4.46",
+    ["NMS_VERSION"]   = "5.63",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                {
+                { -- METADATA/REALITY/TABLES/REWARDTABLE.MBIN
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         -- EXOSUIT UPGRADE CHART
@@ -86,13 +86,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["REPLACE_TYPE"]       = "ALL",
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "RewardChoice",     "GiveAllSilent" }, -- GiveAll
-                                { "PercentageChance", 0 },               -- 100
+                                { "PercentageChance", 0.0 },             -- 100.0
                             }
                         },
                         -- SPACE STATION ITEMS: remove navdata given by placed items at space stations
                         {
                             ["SPECIAL_KEY_WORDS"] = { "Id", "NAVDATA", "ID", "NAV_DATA" },
-                            ["SECTION_UP"]        = 1,
+                            ["SECTION_UP"]        = 2,
                             ["REMOVE"]            = "SECTION",
                         },
                         -- SPACE STATION ITEMS: nanites given by placed items at space stations
@@ -110,11 +110,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"]  = {
                                 "Id", "DEBRIS",
-                                "Common", "GcRewardTableCategory.xml",
-                                "Large", "GcRewardTableItemList.xml",
+                                "Common", "GcRewardTableCategory",
+                                "Large", "GcRewardTableItemList",
                                 "ID", "NAV_DATA"
                             },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "PercentageChance", DEBRIS_CHANCE_LOW }, -- 100
                             }
@@ -122,8 +122,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"]  = {
                                 "Id", "DEBRIS",
-                                "Common", "GcRewardTableCategory.xml",
-                                "Large", "GcRewardTableItemList.xml",
+                                "Common", "GcRewardTableCategory",
+                                "Large", "GcRewardTableItemList",
                                 "ID", "NAV_DATA"
                             },
                             ["VALUE_CHANGE_TABLE"] = {
@@ -135,18 +135,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SPECIAL_KEY_WORDS"]  = {
                                 {
                                     "Id", "DEBRIS",
-                                    "Rare", "GcRewardTableCategory.xml",
-                                    "Medium", "GcRewardTableItemList.xml",
+                                    "Rare", "GcRewardTableCategory",
+                                    "Medium", "GcRewardTableItemList",
                                     "ID", "NAV_DATA"
                                 },
                                 {
                                     "Id", "DEBRIS",
-                                    "Rare", "GcRewardTableCategory.xml",
-                                    "Large", "GcRewardTableItemList.xml",
+                                    "Rare", "GcRewardTableCategory",
+                                    "Large", "GcRewardTableItemList",
                                     "ID", "NAV_DATA"
                                 },
                             },
-                            ["SECTION_UP"]         = 1,
+                            ["SECTION_UP"]         = 2,
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "PercentageChance", DEBRIS_CHANCE_HIGH }, -- 100
                             }
@@ -154,8 +154,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"]  = {
                                 "Id", "DEBRIS",
-                                "Rare", "GcRewardTableCategory.xml",
-                                "Medium", "GcRewardTableItemList.xml",
+                                "Rare", "GcRewardTableCategory",
+                                "Medium", "GcRewardTableItemList",
                                 "ID", "NAV_DATA"
                             },
                             ["VALUE_CHANGE_TABLE"] = {
@@ -166,8 +166,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"]  = {
                                 "Id", "DEBRIS",
-                                "Rare", "GcRewardTableCategory.xml",
-                                "Large", "GcRewardTableItemList.xml",
+                                "Rare", "GcRewardTableCategory",
+                                "Large", "GcRewardTableItemList",
                                 "ID", "NAV_DATA"
                             },
                             ["VALUE_CHANGE_TABLE"] = {

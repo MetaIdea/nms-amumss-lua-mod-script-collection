@@ -1,4 +1,4 @@
-MOD_FILENAME	= "Winder_SamPorterProPisser.pak"
+MOD_FILENAME	= "+Winder_SamPorterProPisser"
 MOD_AUTHOR		= "Winder with block pieces from Mjjstral"
 MOD_DESCRIPTION	= "You take a piss on the floor, possibly while walking"
 NMS_VERSION		= "3.21+"
@@ -104,14 +104,14 @@ PISS_MODEL = 	{	["EXML"]	= "",
 --making file paths
 				
 TEXTURE_PATH["LOCATION"] = ROOT_PATH .. [[TEXTURE/]]
-PISS_MODEL["EXML"] = ROOT_PATH .. PISS_EFFECT["MODEL"] .. ".EXML"
+PISS_MODEL["EXML"] = ROOT_PATH .. PISS_EFFECT["MODEL"] .. ".MXML"
 PISS_MODEL["MBIN"] = ROOT_PATH .. PISS_EFFECT["MODEL"] .. ".MBIN"
 MATERIAL_PATH["MBIN"] = ROOT_PATH .. MATERIAL_PATH["EXML"] .. ".MBIN"
-MATERIAL_PATH["EXML"] = ROOT_PATH .. MATERIAL_PATH["EXML"] .. ".EXML"
+MATERIAL_PATH["EXML"] = ROOT_PATH .. MATERIAL_PATH["EXML"] .. ".MXML"
 for i=1, #PARTICLE_PATH, 1 do
 PARTICLE_PATH[i]["MBIN"] = ROOT_PATH .. PARTICLE_PATH[i]["EXML"] .. ".MBIN"
 PARTICLE_PATH[i]["MXML"] = ROOT_PATH .. PARTICLE_PATH[i]["EXML"] .. ".MBIN"
-PARTICLE_PATH[i]["EXML"] = ROOT_PATH .. PARTICLE_PATH[i]["EXML"] .. ".EXML"
+PARTICLE_PATH[i]["EXML"] = ROOT_PATH .. PARTICLE_PATH[i]["EXML"] .. ".MXML"
 end
 
 print ([[ROOT_PATH:  ]] .. ROOT_PATH .. "\n" ..
@@ -129,24 +129,24 @@ print ([[MATERIAL_PATH"MBIN":  ]] .. MATERIAL_PATH["MBIN"] .. "\n" ..
 
 function GetQuickAction(TITLE, ANIM, ICON, UNDERWATER, CHATTEXT, CHATPREFIX)
 return [[
-    <Property value="GcPlayerEmote.xml">
+    <Property value="GcPlayerEmote">
       <Property name="Title" value="]] .. TITLE .. [[" />
       <Property name="ChatText" value="]] .. CHATTEXT .. [[" />
       <Property name="ChatUsesPrefix" value="]] .. CHATPREFIX .. [[" />
       <Property name="EmoteID" value="]] .. ANIM .. [[" />
       <Property name="AnimationName" value="]] .. ANIM .. [[" />
-      <Property name="PropData" value="GcPlayerEmotePropData.xml">
+      <Property name="PropData" value="GcPlayerEmotePropData">
         <Property name="Model" value="" />
         <Property name="Scale" value="0" />
-        <Property name="Hand" value="GcHand.xml">
+        <Property name="Hand" value="GcHand">
           <Property name="Hand" value="Right" />
         </Property>
         <Property name="IsHologram" value="False" />
         <Property name="ScanEffectNodeName" value="" />
-        <Property name="ScanEffect" value="GcScanEffectData.xml">
+        <Property name="ScanEffect" value="GcScanEffectData">
           <Property name="Id" value="" />
           <Property name="ScanEffectType" value="Building" />
-          <Property name="Colour" value="Colour.xml">
+          <Property name="Colour" value="Colour">
             <Property name="R" value="0.823" />
             <Property name="G" value="0.475" />
             <Property name="B" value="0.432" />
@@ -166,9 +166,9 @@ return [[
         </Property>
         <Property name="DelayTime" value="0" />
       </Property>
-      <Property name="Icon" value="TkTextureResource.xml">
+      <Property name="Icon" value="TkTextureResource">
         <Property name="Filename" value="]] .. ICON .. [[" />
-        <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResHandle" value="GcResource">
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
@@ -183,9 +183,9 @@ return [[
       <Property name="RidingAnimationName" value="" />
       <Property name="IsPetCommand" value="False" />
       <Property name="PetCommandTitle" value="" />
-      <Property name="PetCommandIcon" value="TkTextureResource.xml">
+      <Property name="PetCommandIcon" value="TkTextureResource">
         <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResHandle" value="GcResource">
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
@@ -195,90 +195,105 @@ end
 
 function GetTriggerAnim(ANIM, FILEPATH)
 return [[
-        <Property value="TkAnimationData.xml">
-          <Property name="Anim" value="]] .. ANIM .. [[" />
-          <Property name="Filename" value="]] .. FILEPATH .. [[" />
-          <Property name="AnimType" value="Loop" />
-          <Property name="FrameStart" value="0" />
-          <Property name="FrameEnd" value="0" />
-          <Property name="StartNode" value="" />
-          <Property name="ExtraStartNodes" />
-          <Property name="Priority" value="0" />
-          <Property name="OffsetMin" value="0" />
-          <Property name="OffsetMax" value="0" />
-          <Property name="Delay" value="0" />
-          <Property name="Speed" value="1" />
-          <Property name="ActionStartFrame" value="0" />
-          <Property name="ActionFrame" value="-1" />
-          <Property name="CreatureSize" value="AllSizes" />
-          <Property name="Additive" value="False" />
-          <Property name="Mirrored" value="False" />
-          <Property name="Active" value="True" />
-          <Property name="AdditiveBaseAnim" value="" />
-          <Property name="AdditiveBaseFrame" value="0" />
-          <Property name="GameData" value="TkAnimationGameData.xml">
-            <Property name="RootMotionEnabled" value="False" />
-            <Property name="BlockPlayerMovement" value="True" />
-            <Property name="BlockPlayerWeapon" value="Unblocked" />
+          <Property name="Anims" value="TkAnimationData">
+            <Property name="Anim" value="]] .. ANIM .. [[" />
+			<Property name="Filename" value="]] .. FILEPATH .. [[" />
+            <Property name="AnimType" value="Loop" />
+            <Property name="AnimGroupOverride" value="False" />
+            <Property name="Priority" value="0" />
+            <Property name="FrameStart" value="0" />
+            <Property name="FrameEnd" value="0" />
+            <Property name="FrameEndGame" value="0" />
+            <Property name="StartNode" value="" />
+            <Property name="ExtraStartNodes" />
+            <Property name="AdditiveBaseAnim" value="" />
+            <Property name="AdditiveBaseFrame" value="0" />
+            <Property name="Mask" value="" />
+            <Property name="OffsetMin" value="0" />
+            <Property name="OffsetMax" value="0" />
+            <Property name="Delay" value="0" />
+            <Property name="Speed" value="1" />
+            <Property name="ActionStartFrame" value="0" />
+            <Property name="ActionFrame" value="-1" />
+            <Property name="Actions" />
+            <Property name="CreatureSize" value="AllSizes" />
+            <Property name="Additive" value="False" />
+            <Property name="Mirrored" value="False" />
+            <Property name="Active" value="True" />
+            <Property name="Has30HzFrames" value="False" />
+            <Property name="GameData" value="TkAnimationGameData">
+              <Property name="RootMotion" value="None" />
+              <Property name="BlockPlayerMovement" value="True" />
+              <Property name="BlockPlayerWeapon" value="Unblocked" />
+            </Property>
           </Property>
-        </Property>
 ]]
 end
 
 function GetTriggerAction(ANIM, EFFECT, EFF_POINT, REWARD)
 return [[
-    <Property value="GcTriggerActionComponentData.xml">
-      <Property name="HideModel" value="False" />
-      <Property name="StartInactive" value="False" />
-      <Property name="States">
-        <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="BOOT" />
-          <Property name="Triggers">
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcAnimFrameEvent.xml">
-                <Property name="Anim" value="]] .. ANIM .. [[" />
-                <Property name="FrameStart" value="0" />
-                <Property name="StartFromEnd" value="False" />
-              </Property>	
-              <Property name="Action">
-                <Property value="GcParticleAction.xml">
-                  <Property name="Effect" value="]] .. EFFECT .. [[" />
-                  <Property name="Joint" value="]] .. EFF_POINT .. [[" />
-                  <Property name="Exact" value="True" />
-                  <Property name="FindRange" value="GcBroadcastLevel.xml">
-                    <Property name="BroadcastLevel" value="Scene" />
-                  </Property>
-                </Property>
-                <Property value="GcScareCreaturesAction.xml">
-                  <Property name="HearRadius" value="5" />
-                  <Property name="FleeRadius" value="3" />
-                </Property>
-                <Property value="GcRewardAction.xml">
-                  <Property name="Reward" value="]] .. REWARD .. [[" />
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-      <Property name="Persistent" value="False" />
-      <Property name="PersistentState" value="" />
-      <Property name="ResetShotTimeOnStateChange" value="False" />
-      <Property name="LinkStateToBaseGrid" value="False" />
-    </Property>
+		<Property name="Components" value="GcTriggerActionComponentData">
+			<Property name="GcTriggerActionComponentData">
+				<Property name="HideModel" value="false" />
+				<Property name="StartInactive" value="false" />
+				<Property name="States">
+					<Property name="States" value="GcActionTriggerState">
+						<Property name="StateID" value="BOOT" />
+						<Property name="Triggers">
+							<Property name="Triggers" value="GcActionTrigger">
+								<Property name="Event" value="GcAnimFrameEvent">
+									<Property name="GcAnimFrameEvent">
+					<Property name="Anim" value="]] .. ANIM .. [[" />
+										<Property name="FrameStart" value="0" />
+										<Property name="StartFromEnd" value="false" />
+									</Property>
+								</Property>
+								<Property name="Action">
+									<Property name="Action" value="GcParticleAction">
+										<Property name="GcParticleAction">
+					  <Property name="Effect" value="]] .. EFFECT .. [[" />
+					  <Property name="Joint" value="]] .. EFF_POINT .. [[" />
+											<Property name="Exact" value="true" />
+											<Property name="FindRange" value="GcBroadcastLevel">
+												<Property name="BroadcastLevel" value="Scene" />
+											</Property>
+										</Property>
+									</Property>
+									<Property name="Action" value="GcScareCreaturesAction">
+										<Property name="GcScareCreaturesAction">
+											<Property name="HearRadius" value="5.000000" />
+											<Property name="FleeRadius" value="3.000000" />
+										</Property>
+									</Property>
+									<Property name="Action" value="GcRewardAction">
+										<Property name="GcRewardAction">
+					  <Property name="Reward" value="]] .. REWARD .. [[" />
+										</Property>
+									</Property>
+								</Property>
+							</Property>
+						</Property>
+					</Property>
+				</Property>
+				<Property name="Persistent" value="false" />
+				<Property name="PersistentState" value="" />
+				<Property name="ResetShotTimeOnStateChange" value="false" />
+				<Property name="LinkStateToBaseGrid" value="false" />
+			</Property>
+		</Property>
 ]]
 end
 
 function GetParticleFile(E_RATE, E_LIFE, E_MID, E_SPREAD, E_SPREAD_MIN, E_D_X, E_D_Y, E_D_Z, E_GRAV, E_DAMP, P_MAX, P_LIFE, P_ROTA, P_VELO, P_SIZE_A, P_SIZE_B, P_SIZE_C, P_R, P_G, P_B, P_A, P_H, P_S, P_V)
 return [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkParticleData">
+<Data template="cTkParticleData">
   <Property name="AudioEvent" value="0" />
   <Property name="StartEnabled" value="True" />
   <Property name="Oneshot" value="False" />
   <Property name="MaxCount" value="]] .. P_MAX .. [[" />
-  <Property name="BurstData" value="TkParticleBurstData.xml">
-    <Property name="BurstAmount" value="TkEmitterFloatProperty.xml">
+  <Property name="BurstData" value="TkParticleBurstData">
+    <Property name="BurstAmount" value="TkEmitterFloatProperty">
       <Property name="Authoring" value="FixedValue" />
       <Property name="FixedValue" value="0" />
       <Property name="MinRandomValue" value="0.1" />
@@ -288,14 +303,14 @@ return [[
       <Property name="CurveMidValue" value="1" />
       <Property name="CurveEndValue" value="1" />
       <Property name="CurveBlendMidpoint" value="0.5" />
-      <Property name="Curve1Shape" value="TkCurveType.xml">
+      <Property name="Curve1Shape" value="TkCurveType">
         <Property name="Curve" value="Linear" />
       </Property>
-      <Property name="Curve2Shape" value="TkCurveType.xml">
+      <Property name="Curve2Shape" value="TkCurveType">
         <Property name="Curve" value="Linear" />
       </Property>
     </Property>
-    <Property name="BurstInterval" value="TkEmitterFloatProperty.xml">
+    <Property name="BurstInterval" value="TkEmitterFloatProperty">
       <Property name="Authoring" value="FixedValue" />
       <Property name="FixedValue" value="1" />
       <Property name="MinRandomValue" value="0.1" />
@@ -305,16 +320,16 @@ return [[
       <Property name="CurveMidValue" value="1" />
       <Property name="CurveEndValue" value="1" />
       <Property name="CurveBlendMidpoint" value="0.5" />
-      <Property name="Curve1Shape" value="TkCurveType.xml">
+      <Property name="Curve1Shape" value="TkCurveType">
         <Property name="Curve" value="Linear" />
       </Property>
-      <Property name="Curve2Shape" value="TkCurveType.xml">
+      <Property name="Curve2Shape" value="TkCurveType">
         <Property name="Curve" value="Linear" />
       </Property>
     </Property>
     <Property name="LoopCount" value="0" />
   </Property>
-  <Property name="EmissionRate" value="TkEmitterFloatProperty.xml">
+  <Property name="EmissionRate" value="TkEmitterFloatProperty">
     <Property name="Authoring" value="FixedValue" />
     <Property name="FixedValue" value="]] .. E_RATE .. [[" />
     <Property name="MinRandomValue" value="0.1" />
@@ -324,19 +339,19 @@ return [[
     <Property name="CurveMidValue" value="1" />
     <Property name="CurveEndValue" value="1" />
     <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
+    <Property name="Curve1Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
+    <Property name="Curve2Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
   </Property>
   <Property name="Delay" value="0" />
-  <Property name="EmitFromParticleInfo" value="TkEmitFromParticleInfo.xml">
+  <Property name="EmitFromParticleInfo" value="TkEmitFromParticleInfo">
     <Property name="OtherEmitterIndex" value="-1" />
     <Property name="EmissionRateType" value="PerParticle" />
   </Property>
-  <Property name="ParticleLife" value="TkEmitterFloatProperty.xml">
+  <Property name="ParticleLife" value="TkEmitterFloatProperty">
     <Property name="Authoring" value="FixedValue" />
     <Property name="FixedValue" value="]] .. P_LIFE .. [[" />
     <Property name="MinRandomValue" value="0.1" />
@@ -346,14 +361,14 @@ return [[
     <Property name="CurveMidValue" value="1" />
     <Property name="CurveEndValue" value="1" />
     <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
+    <Property name="Curve1Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
+    <Property name="Curve2Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
   </Property>
-  <Property name="EmitterLife" value="TkEmitterFloatProperty.xml">
+  <Property name="EmitterLife" value="TkEmitterFloatProperty">
     <Property name="Authoring" value="FixedValue" />
     <Property name="FixedValue" value="]] .. E_LIFE .. [[" />
     <Property name="MinRandomValue" value="0.1" />
@@ -363,28 +378,28 @@ return [[
     <Property name="CurveMidValue" value="1" />
     <Property name="CurveEndValue" value="1" />
     <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
+    <Property name="Curve1Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
+    <Property name="Curve2Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
   </Property>
   <Property name="EmitterMidLifeRatio" value="]] .. E_MID .. [[" />
-  <Property name="EmitterLifeCurve1" value="TkCurveType.xml">
+  <Property name="EmitterLifeCurve1" value="TkCurveType">
     <Property name="Curve" value="Linear" />
   </Property>
-  <Property name="EmitterLifeCurve2" value="TkCurveType.xml">
+  <Property name="EmitterLifeCurve2" value="TkCurveType">
     <Property name="Curve" value="Linear" />
   </Property>
   <Property name="EmitterSpreadAngle" value="]] .. E_SPREAD .. [[" />
   <Property name="EmitterSpreadAngleMin" value="]] .. E_SPREAD_MIN .. [[" />
-  <Property name="EmitterDirection" value="Vector3f.xml">
-    <Property name="x" value="]] .. E_D_X .. [[" />
-    <Property name="y" value="]] .. E_D_Y .. [[" />
-    <Property name="z" value="]] .. E_D_Z .. [[" />
+  <Property name="EmitterDirection">
+    <Property name="X" value="]] .. E_D_X .. [[" />
+    <Property name="Y" value="]] .. E_D_Y .. [[" />
+    <Property name="Z" value="]] .. E_D_Z .. [[" />
   </Property>
-  <Property name="ParticleSpeedMultiplier" value="TkEmitterFloatProperty.xml">
+  <Property name="ParticleSpeedMultiplier" value="TkEmitterFloatProperty">
     <Property name="Authoring" value="RandomRangeFloat" />
     <Property name="FixedValue" value="1" />
     <Property name="MinRandomValue" value="1" />
@@ -394,14 +409,14 @@ return [[
     <Property name="CurveMidValue" value="1" />
     <Property name="CurveEndValue" value="1" />
     <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
+    <Property name="Curve1Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
+    <Property name="Curve2Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
   </Property>
-  <Property name="ParticleGravity" value="TkEmitterFloatProperty.xml">
+  <Property name="ParticleGravity" value="TkEmitterFloatProperty">
     <Property name="Authoring" value="FixedValue" />
     <Property name="FixedValue" value="]] .. E_GRAV .. [[" />
     <Property name="MinRandomValue" value="0.1" />
@@ -411,14 +426,14 @@ return [[
     <Property name="CurveMidValue" value="1" />
     <Property name="CurveEndValue" value="1" />
     <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
+    <Property name="Curve1Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
+    <Property name="Curve2Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
   </Property>
-  <Property name="ParticleDamping" value="TkEmitterFloatProperty.xml">
+  <Property name="ParticleDamping" value="TkEmitterFloatProperty">
     <Property name="Authoring" value="FixedValue" />
     <Property name="FixedValue" value="]] .. E_DAMP .. [[" />
     <Property name="MinRandomValue" value="0.1" />
@@ -428,14 +443,14 @@ return [[
     <Property name="CurveMidValue" value="1" />
     <Property name="CurveEndValue" value="1" />
     <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
+    <Property name="Curve1Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
+    <Property name="Curve2Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
   </Property>
-  <Property name="ParticleDrag" value="TkEmitterFloatProperty.xml">
+  <Property name="ParticleDrag" value="TkEmitterFloatProperty">
     <Property name="Authoring" value="FixedValue" />
     <Property name="FixedValue" value="0" />
     <Property name="MinRandomValue" value="0.1" />
@@ -445,10 +460,10 @@ return [[
     <Property name="CurveMidValue" value="1" />
     <Property name="CurveEndValue" value="1" />
     <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
+    <Property name="Curve1Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
+    <Property name="Curve2Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
   </Property>
@@ -456,12 +471,13 @@ return [[
   <Property name="Variation" value="1" />
   <Property name="StartOffset" value="0" />
   <Property name="SpawnOffsetType" value="Sphere" />
-  <Property name="SpawnOffsetParams" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
+  <Property name="SpawnOffsetParams">
+    <Property name="X" value="0" />
+    <Property name="Y" value="0" />
+    <Property name="Z" value="0" />
   </Property>
-  <Property name="ParticleSize" value="TkEmitterFloatProperty.xml">
+	<Property name="ParticleSize" value="TkParticleSize">
+		<Property name="GeneralSize" value="TkEmitterFloatProperty">
     <Property name="Authoring" value="Curves" />
     <Property name="FixedValue" value="1" />
     <Property name="MinRandomValue" value="0.1" />
@@ -471,14 +487,15 @@ return [[
     <Property name="CurveMidValue" value="]] .. P_SIZE_B .. [[" />
     <Property name="CurveEndValue" value="]] .. P_SIZE_C .. [[" />
     <Property name="CurveBlendMidpoint" value="0.45" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
+    <Property name="Curve1Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
+    <Property name="Curve2Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
   </Property>
-  <Property name="ParticleSizeY" value="TkEmitterFloatProperty.xml">
+		</Property>
+  <Property name="ParticleSizeY" value="TkEmitterFloatProperty">
     <Property name="Authoring" value="FixedValue" />
     <Property name="FixedValue" value="0" />
     <Property name="MinRandomValue" value="0.1" />
@@ -488,15 +505,15 @@ return [[
     <Property name="CurveMidValue" value="1" />
     <Property name="CurveEndValue" value="1" />
     <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
+    <Property name="Curve1Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
+    <Property name="Curve2Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
   </Property>
   <Property name="StartRotationVariation" value="360" />
-  <Property name="Rotation" value="TkEmitterFloatProperty.xml">
+  <Property name="Rotation" value="TkEmitterFloatProperty">
     <Property name="Authoring" value="RandomRangeFloat" />
     <Property name="FixedValue" value="]] .. P_ROTA .. [[" />
     <Property name="MinRandomValue" value="-180" />
@@ -506,58 +523,61 @@ return [[
     <Property name="CurveMidValue" value="1" />
     <Property name="CurveEndValue" value="1" />
     <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
+    <Property name="Curve1Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
+    <Property name="Curve2Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
   </Property>
   <Property name="Alignment" value="Rotation" />
-  <Property name="BillboardAlignment" value="Screen" />
-  <Property name="RotationPivot" value="Vector3f.xml">
-    <Property name="x" value="0.5" />
-    <Property name="y" value="0.5" />
-    <Property name="z" value="0" />
+	<Property name="Billboard Alignment" value="TkEmitterBillboardAlignment">
+		<Property name="BillboardAlignment" value="Screen" />
+		<Property name="CameraFacing" value="false" />
+	</Property>
+  <Property name="RotationPivot">
+    <Property name="X" value="0.5" />
+    <Property name="Y" value="0.5" />
+    <Property name="Z" value="0" />
   </Property>
-  <Property name="UCoordinate" value="TkCoordinateOrientation.xml">
+  <Property name="UCoordinate" value="TkCoordinateOrientation">
     <Property name="CoordinateOrientation" value="None" />
   </Property>
-  <Property name="VCoordinate" value="TkCoordinateOrientation.xml">
+  <Property name="VCoordinate" value="TkCoordinateOrientation">
     <Property name="CoordinateOrientation" value="None" />
   </Property>
   <Property name="VelocityInheritance" value="]] .. P_VELO .. [[" />
   <Property name="TrackEmitterPosition" value="0" />
   <Property name="RotateAroundEmitter" value="0" />
-  <Property name="RotateAroundEmitterAxis" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
+  <Property name="RotateAroundEmitterAxis">
+    <Property name="X" value="0" />
+    <Property name="Y" value="0" />
+    <Property name="Z" value="0" />
   </Property>
   <Property name="FlipbookPlaybackRate" value="Absolute" />
   <Property name="HueVariance" value="]] .. P_H .. [[" />
   <Property name="SaturationVariance" value="]] .. P_S .. [[" />
   <Property name="LightnessVariance" value="]] .. P_V .. [[" />
   <Property name="AlphaVariance" value="0" />
-  <Property name="ColourStart" value="Colour.xml">
+  <Property name="ColourStart">
     <Property name="R" value="]] .. P_R .. [[" />
     <Property name="G" value="]] .. P_G .. [[" />
     <Property name="B" value="]] .. P_B .. [[" />
     <Property name="A" value="]] .. P_A .. [[" />
   </Property>
-  <Property name="ColourMiddle" value="Colour.xml">
+  <Property name="ColourMiddle">
     <Property name="R" value="]] .. P_R .. [[" />
     <Property name="G" value="]] .. P_G .. [[" />
     <Property name="B" value="]] .. P_B .. [[" />
     <Property name="A" value="]] .. P_A .. [[" />
   </Property>
-  <Property name="ColourEnd" value="Colour.xml">
+  <Property name="ColourEnd">
     <Property name="R" value="]] .. P_R .. [[" />
     <Property name="G" value="]] .. P_G .. [[" />
     <Property name="B" value="]] .. P_B .. [[" />
     <Property name="A" value="]] .. P_A .. [[" />
   </Property>
-  <Property name="AlphaThreshold" value="TkEmitterFloatProperty.xml">
+  <Property name="AlphaThreshold" value="TkEmitterFloatProperty">
     <Property name="Authoring" value="FixedValue" />
     <Property name="FixedValue" value="0" />
     <Property name="MinRandomValue" value="0.1" />
@@ -567,10 +587,10 @@ return [[
     <Property name="CurveMidValue" value="1" />
     <Property name="CurveEndValue" value="1" />
     <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
+    <Property name="Curve1Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
+    <Property name="Curve2Shape" value="TkCurveType">
       <Property name="Curve" value="Linear" />
     </Property>
   </Property>
@@ -580,7 +600,7 @@ return [[
   <Property name="MaxRenderDistance" value="0" />
   <Property name="MaxSpawnDistance" value="0" />
   <Property name="SoftFadeStrength" value="5" />
-  <Property name="CameraDistanceFade" value="TkFloatRange.xml">
+  <Property name="CameraDistanceFade" value="TkFloatRange">
     <Property name="Minimum" value="0" />
     <Property name="Maximum" value="0" />
   </Property>
@@ -591,7 +611,7 @@ end
 function GetMaterialFile(FILEPATH, FILENAME)
 return [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkMaterialData">
+<Data template="cTkMaterialData">
   <Property name="Name" value="TrailParticleMatt" />
   <Property name="Metamaterial" value="Models/Common/Projectiles/EnergyBall/Materials/TrailParticleMatt.metamaterial.mXml" />
   <Property name="Class" value="Translucent" />
@@ -602,66 +622,66 @@ return [[
   <Property name="Link" value="" />
   <Property name="Shader" value="SHADERS/PARTICLE.SHADER.BIN" />
   <Property name="Flags">
-    <Property value="TkMaterialFlags.xml">
+    <Property value="TkMaterialFlags">
       <Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
     </Property>
-    <Property value="TkMaterialFlags.xml">
+    <Property value="TkMaterialFlags">
       <Property name="MaterialFlag" value="_F07_UNLIT" />
     </Property>
-    <Property value="TkMaterialFlags.xml">
+    <Property value="TkMaterialFlags">
       <Property name="MaterialFlag" value="_F09_TRANSPARENT" />
     </Property>
-    <Property value="TkMaterialFlags.xml">
+    <Property value="TkMaterialFlags">
       <Property name="MaterialFlag" value="_F22_TRANSPARENT_SCALAR" />
     </Property>
-    <Property value="TkMaterialFlags.xml">
+    <Property value="TkMaterialFlags">
       <Property name="MaterialFlag" value="_F27_VBTANGENT" />
     </Property>
   </Property>
   <Property name="Uniforms">
-    <Property value="TkMaterialUniform.xml">
+    <Property value="TkMaterialUniform">
       <Property name="Name" value="gMaterialColourVec4" />
-      <Property name="Values" value="Vector4f.xml">
-        <Property name="x" value="1" />
-        <Property name="y" value="1" />
-        <Property name="z" value="1" />
-        <Property name="t" value="1" />
+      <Property name="Values" value="Vector4f">
+        <Property name="X" value="1" />
+        <Property name="Y" value="1" />
+        <Property name="Z" value="1" />
+        <Property name="W" value="1" />
       </Property>
       <Property name="ExtendedValues" />
     </Property>
-    <Property value="TkMaterialUniform.xml">
+    <Property value="TkMaterialUniform">
       <Property name="Name" value="gMaterialParamsVec4" />
-      <Property name="Values" value="Vector4f.xml">
-        <Property name="x" value="0.9" />
-        <Property name="y" value="0.5" />
-        <Property name="z" value="0" />
-        <Property name="t" value="0" />
+      <Property name="Values" value="Vector4f">
+        <Property name="X" value="0.9" />
+        <Property name="Y" value="0.5" />
+        <Property name="Z" value="0" />
+        <Property name="W" value="0" />
       </Property>
       <Property name="ExtendedValues" />
     </Property>
-    <Property value="TkMaterialUniform.xml">
+    <Property value="TkMaterialUniform">
       <Property name="Name" value="gMaterialSFXVec4" />
-      <Property name="Values" value="Vector4f.xml">
-        <Property name="x" value="0" />
-        <Property name="y" value="0" />
-        <Property name="z" value="0" />
-        <Property name="t" value="0" />
+      <Property name="Values" value="Vector4f">
+        <Property name="X" value="0" />
+        <Property name="Y" value="0" />
+        <Property name="Z" value="0" />
+        <Property name="W" value="0" />
       </Property>
       <Property name="ExtendedValues" />
     </Property>
-    <Property value="TkMaterialUniform.xml">
+    <Property value="TkMaterialUniform">
       <Property name="Name" value="gMaterialSFXColVec4" />
-      <Property name="Values" value="Vector4f.xml">
-        <Property name="x" value="0" />
-        <Property name="y" value="0" />
-        <Property name="z" value="0" />
-        <Property name="t" value="0" />
+      <Property name="Values" value="Vector4f">
+        <Property name="X" value="0" />
+        <Property name="Y" value="0" />
+        <Property name="Z" value="0" />
+        <Property name="W" value="0" />
       </Property>
       <Property name="ExtendedValues" />
     </Property>
   </Property>
   <Property name="Samplers">
-    <Property value="TkMaterialSampler.xml">
+    <Property value="TkMaterialSampler">
       <Property name="Name" value="gDiffuseMap" />
       <Property name="Map" value="]] .. FILEPATH .. FILENAME .. [[" />
       <Property name="IsCube" value="False" />
@@ -682,11 +702,11 @@ end
 function GetSceneFile(PARTICLE_A, PARTICLE_B, MATERIAL)
 return [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkSceneNodeData">
+<Data template="cTkSceneNodeData">
   <Property name="Name" value="PISS" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="MODEL" />
-  <Property name="Transform" value="TkTransformData.xml">
+  <Property name="Transform" value="TkTransformData">
     <Property name="TransX" value="0" />
     <Property name="TransY" value="0" />
     <Property name="TransZ" value="0" />
@@ -699,11 +719,11 @@ return [[
   </Property>
   <Property name="Attributes" />
   <Property name="Children">
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="]] .. PARTICLE_A .. [[" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="EMITTER" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -715,22 +735,22 @@ return [[
         <Property name="ScaleZ" value="1" />
       </Property>
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="]] .. MATERIAL .. [[" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="DATA" />
           <Property name="Value" value="]] .. PARTICLE_A .. [[" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property value="TkSceneNodeData">
       <Property name="Name" value="]] .. PARTICLE_B .. [[" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="EMITTER" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -742,11 +762,11 @@ return [[
         <Property name="ScaleZ" value="1" />
       </Property>
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="]] .. MATERIAL .. [[" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="DATA" />
           <Property name="Value" value="]] .. PARTICLE_B .. [[" />
         </Property>
@@ -760,12 +780,12 @@ end
 
 function GetExplosion(ID, MODEL, AUDIO, LIFETIME, SCALE, DISTANCE_SCALE, DISTANCE_SCALE_MAX, MAX_SPAWN_DISTANCE)
 return [[
-    <Property value="GcExplosionData.xml">
+    <Property value="GcExplosionData">
       <Property name="Id" value="]] .. ID .. [[" />
-      <Property name="Model" value="TkModelResource.xml">
+      <Property name="Model" value="TkModelResource">
         <Property name="Filename" value="]] .. MODEL .. [[" />
       </Property>
-      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+      <Property name="AudioEvent" value="GcAudioWwiseEvents">
         <Property name="AkEvent" value="]] .. AUDIO .. [[" />
       </Property>
       <Property name="Debris" />
@@ -819,7 +839,7 @@ SCENE_FILE = GetSceneFile(PARTICLE_PATH[1]["MXML"],PARTICLE_PATH[2]["MXML"],MAT_
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Winder_SamPorterProPisser.pak",
+["MOD_FILENAME"] 			= "+Winder_SamPorterProPisser.pak",
 ["MOD_AUTHOR"]				= "Winder with block pieces from Mjjstral",
 ["MOD_DESCRIPTION"]			= "You take a piss on the floor, possibly while walking",
 ["NMS_VERSION"]				= "3.21+",
@@ -831,7 +851,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{  
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Anims"},  
@@ -847,8 +867,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/UI/EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] 	= "METADATA/UI/EMOTEMENU.EXML",
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
@@ -865,9 +885,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{  
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/EFFECTS/PLANETEFFECTS.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] 	= "METADATA/EFFECTS/PLANETEFFECTS.EXML",
+					["MXML_CHANGE_TABLE"] 	= 
 					{
+						-- {
+							-- ["SKW"] = {"Table", "GcExplosionData"}, 
+							-- ["REPLACE_TYPE"] = "ALL",
+							-- ["REMOVE"] = "SECTION"
+						-- },
 						{
 							["PRECEDING_KEY_WORDS"] = {"Table"}, 
 							-- ["LINE_OFFSET"] 		= "+0",
@@ -890,13 +915,13 @@ NMS_MOD_DEFINITION_CONTAINER =
   -- <Property name="NodeCount" value="0" />
   -- <Property name="NodeData" /> 
   -- <Property name="AnimFrameData">
-    -- <Property value="TkAnimNodeFrameData.xml">
+    -- <Property value="TkAnimNodeFrameData">
     -- <Property name="Rotations" />  
 	-- <Property name="Translations" /> 
 	-- <Property name="Scales" />
     -- </Property>  
   -- </Property>	
-  -- <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
+  -- <Property name="StillFrameData" value="TkAnimNodeFrameData">
     -- <Property name="Rotations" />  
 	-- <Property name="Translations" /> 
 	-- <Property name="Scales" />	  

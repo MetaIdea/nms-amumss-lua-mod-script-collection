@@ -1,23 +1,24 @@
 -- Mod_version = "1.22"
 
-QUICKSILV_S = [[
-            <Property value="NMSString0x10.xml">
-              <Property name="Value" value="RS_QUICKSILV_S" />
-            </Property>
+QUICKSILV_S =
+[[
+						<Property name="Rewards" value="RS_QUICKSILV_S" />
 ]]
 
 function  REWARD_ALL (AMOUNT)
     return
 [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+					<Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="]]..AMOUNT..[[" />
-              <Property name="AmountMax" value="]]..AMOUNT..[[" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Specials" />
+            <Property name="Reward" value="GcRewardMoney">
+							<Property name="GcRewardMoney">
+                <Property name="AmountMin" value="]]..AMOUNT..[[" />
+                <Property name="AmountMax" value="]]..AMOUNT..[[" />
+                <Property name="RoundNumber" value="false" />
+                <Property name="Currency" value="GcCurrency">
+                  <Property name="Currency" value="Specials" />
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -27,23 +28,25 @@ end
 function  REWARD_ENTRIES (NAME, AMOUNT)
     return
 [[
-    <Property value="GcGenericRewardTableEntry.xml">
+    <Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="]]..NAME..[[" />
-      <Property name="List" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList">
         <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="OverrideZeroSeed" value="false" />
+        <Property name="UseInventoryChoiceOverride" value="false" />
         <Property name="IncrementStat" value="" />
         <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="]]..AMOUNT..[[" />
-              <Property name="AmountMax" value="]]..AMOUNT..[[" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Specials" />
+            <Property name="Reward" value="GcRewardMoney">
+							<Property name="GcRewardMoney">
+                <Property name="AmountMin" value="]]..AMOUNT..[[" />
+                <Property name="AmountMax" value="]]..AMOUNT..[[" />
+                <Property name="RoundNumber" value="false" />
+                <Property name="Currency" value="GcCurrency">
+                  <Property name="Currency" value="Specials" />
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -53,15 +56,18 @@ function  REWARD_ENTRIES (NAME, AMOUNT)
 ]]
 end
 
-MISSIONS_QS = [[
-              <Property value="GcGenericMissionStage.xml">
-                <Property name="Stage" value="GcMissionSequenceReward.xml">
-                  <Property name="Message" value="UI_REWARD_FAILED_MSG" />
-                  <Property name="Reward" value="RS_QUICKSILV_ML" />
-                  <Property name="DoMissionBoardOverride" value="False" />
-                  <Property name="Silent" value="False" />
-                  <Property name="RewardInventoryOverride" value="None" />
-                  <Property name="DebugText" value="Giving QS reward" />
+MISSIONS_QS =
+[[
+              <Property name="Stages" value="GcGenericMissionStage">
+                <Property name="Stage" value="GcMissionSequenceReward">
+                  <Property name="GcMissionSequenceReward">
+                    <Property name="Message" value="UI_REWARD_FAILED_MSG" />
+                    <Property name="Reward" value="RS_QUICKSILV_ML" />
+                    <Property name="DoMissionBoardOverride" value="false" />
+                    <Property name="Silent" value="false" />
+                    <Property name="RewardInventoryOverride" value="None" />
+                    <Property name="DebugText" value="Giving QS reward" />
+								  </Property>
                 </Property>
               </Property>
 ]]
@@ -87,18 +93,18 @@ Rewards = {{
 }}
 
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"] = "EnjoyableQuicksilver.pak",
+    ["MOD_FILENAME"] = "EnjoyableQuicksilver",
     ["MOD_DESCRIPTION"] = "Allows the player to grind Quicksilver through a wide variety of different ways",
     ["MOD_AUTHOR"] = "ArtisticMisfit",
     ["LUA_AUTHOR"] = "Leonard, TheLich, Babscoole, ArtisticMisfit",
-    ["NMS_VERSION"] = "5.29",
+    ["NMS_VERSION"] = "5.73",
     ["MODIFICATIONS"] = {{
         ["MBIN_CHANGE_TABLE"] = {{
             ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
             ["REGEXBEFORE"] = {{[[(.*)(".*_CRA_OPT_A_.*")]], [[\1"SECTION_TO_CHANGE" oldvalue=\2]]},
                                {[[(.*)(".*_ABAN_OPT_A_.*")]], [[\1"SECTION_TO_CHANGE" oldvalue=\2]]}},
             ["REGEXAFTER"] = {{[[(.*)("SECTION_TO_CHANGE").*(".*")]], [[\1\3]]}},
-            ["EXML_CHANGE_TABLE"] = {{
+            ["MXML_CHANGE_TABLE"] = {{
                 ["SPECIAL_KEY_WORDS"] = {"Name", "SECTION_TO_CHANGE"},
                 ["PRECEDING_KEY_WORDS"] = "Rewards",
                 ["REPLACE_TYPE"] = "ALL",
@@ -106,34 +112,34 @@ NMS_MOD_DEFINITION_CONTAINER = {
             }}
         }, {
             ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
-            ["EXML_CHANGE_TABLE"] = {{
+            ["MXML_CHANGE_TABLE"] = {{
                 ["SPECIAL_KEY_WORDS"] = {"Id", "RS_MONEY_L"},
                 ["ADD_OPTION"] = "ADDafterSECTION",
                 ["ADD"] = REWARD_ENTRIES("RS_QUICKSILV_XSS",5)..REWARD_ENTRIES("RS_QUICKSILV_XXS",10)..REWARD_ENTRIES("RS_QUICKSILV_XS",25)..REWARD_ENTRIES("RS_QUICKSILV_ML",125)..REWARD_ENTRIES("RS_QUICKSILV_XL",250)
             }}
         }, {
             ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES/NPCMISSIONTABLE.MBIN",
-            ["EXML_CHANGE_TABLE"] = {{
+            ["MXML_CHANGE_TABLE"] = {{
                 ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_MISSION_OBJ1_MSG"},
-                ["SECTION_UP"] = 2,
+                ["SECTION_UP"] = 3,
                 ["REPLACE_TYPE"] = "ALL",
                 ["ADD_OPTION"] = "ADDendSECTION",
                 ["ADD"] = MISSIONS_QS
             }}
         }, {
             ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES/PIRATEMISSIONTABLE.MBIN",
-            ["EXML_CHANGE_TABLE"] = {{
+            ["MXML_CHANGE_TABLE"] = {{
                 ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_PIRATE_MSG"},
-                ["SECTION_UP"] = 2,
+                ["SECTION_UP"] = 3,
                 ["REPLACE_TYPE"] = "ALL",
                 ["ADD_OPTION"] = "ADDendSECTION",
                 ["ADD"] = MISSIONS_QS
             }}
         }, {
             ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES/MULTIPLAYERMISSIONTABLE.MBIN",
-            ["EXML_CHANGE_TABLE"] = {{
+            ["MXML_CHANGE_TABLE"] = {{
                 ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_MPMISSION_OBJ1_MSG"},
-                ["SECTION_UP"] = 2,
+                ["SECTION_UP"] = 3,
                 ["REPLACE_TYPE"] = "ALL",
                 ["ADD_OPTION"] = "ADDendSECTION",
                 ["ADD"] = MISSIONS_QS
@@ -142,16 +148,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
     }}
 }
 
--- Let us create a shortcut to the EXML_CHANGE_TABLE table that is inside NMS_MOD_DEFINITION_CONTAINER
-local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+-- Let us create a shortcut to the MXML_CHANGE_TABLE table that is inside NMS_MOD_DEFINITION_CONTAINER
+local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
 
 for i = 1, #Rewards do
     local reward = Rewards[i]
     for j = 1, #reward["IDS"] do
         local value = reward["IDS"][j]
         Change_Table_Array[#Change_Table_Array + 1] = {
-            ["SPECIAL_KEY_WORDS"] = {"Id", value},
-            ["PRECEDING_KEY_WORDS"] = {"List", "List"},
+            ["SPECIAL_KEY_WORDS"] = {"Id", value, "List", "GcRewardTableItemList"},
+            ["PRECEDING_KEY_WORDS"] = {"List"},
             ["ADD_OPTION"] = "ADDafterLINE",
             ["ADD"] = reward["REWARD"]
         }

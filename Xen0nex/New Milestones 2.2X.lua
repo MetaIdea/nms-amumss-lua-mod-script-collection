@@ -83,6 +83,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_AUTHOR"]		= MOD_AUTHOR,
   ["NMS_VERSION"]		= NMS_VERSION,
   ["MOD_DESCRIPTION"]	= MOD_DESC,
+  ["EXML_CREATE"] = "FALSE",
   ["MODIFICATIONS"] = 
   {
     {
@@ -90,27 +91,27 @@ NMS_MOD_DEFINITION_CONTAINER =
       {
 	  	{
           ["MBIN_FILE_SOURCE"] = {"METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLE.MBIN", "METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLESURVIVALMODE.MBIN"},
-          ["EXML_CHANGE_TABLE"] = change_intstats_table
+          ["MXML_CHANGE_TABLE"] = change_intstats_table
         },
 		{
           ["MBIN_FILE_SOURCE"] = {"METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLE.MBIN", "METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLESURVIVALMODE.MBIN"},
-          ["EXML_CHANGE_TABLE"] = change_floatstats_table
+          ["MXML_CHANGE_TABLE"] = change_floatstats_table
         },
 		{
           ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\STATS\JOURNEYMILESTONETABLE.MBIN",
-          ["EXML_CHANGE_TABLE"] = change_total_table
+          ["MXML_CHANGE_TABLE"] = change_total_table
         },
 		{ -- Milestone fixes
 		  ["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLE.MBIN", "METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLESURVIVALMODE.MBIN"},
-		  ["EXML_CHANGE_TABLE"] 	= 
+		  ["MXML_CHANGE_TABLE"] 	= 
 		  {
 			{
 			  ["SPECIAL_KEY_WORDS"] = {"StatId", "PIRATES_KILLED",},
 			  ["VALUE_CHANGE_TABLE"] 	= 
 			  {
 				{"StatMessageType",	"Silent"},
-				{"ShowInTerminal",	"False"},
-				{"ShowStatLevel", "False"},
+				{"ShowInTerminal",	"false"},
+				{"ShowStatLevel", "false"},
 			  }
 			},
 		  },

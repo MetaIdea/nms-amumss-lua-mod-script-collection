@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_MERGED_BBS_BBPx10.pak", 
+["MOD_FILENAME"] 			= "_MERGED_BBS_BBPx10", 
 ["MOD_AUTHOR"]				= "NooBzPoWaH",
 ["LUA_AUTHOR"]				= "NooBzPoWaH",
-["NMS_VERSION"]				= "5.+",
+["NMS_VERSION"]				= "5.5+",
 ["MOD_DESCRIPTION"]			= "Merged file for Better Buildings Scans and Base Boundary Plus",
 ["MODIFICATIONS"] 			= 
 	{
@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCBUILDINGGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "",

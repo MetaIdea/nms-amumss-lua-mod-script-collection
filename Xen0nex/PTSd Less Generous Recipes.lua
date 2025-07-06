@@ -1,19 +1,19 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "5_12"
+GameVersion = "5_64"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
 {
 --Fixes the simplest of the infinite Chromatic Metal loops
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_114",	2,					90},				--Makes Cadmium					x2		in	90 time
+		{"REFINERECIPE_114",	2,					45},				--Makes Cadmium					x2		in	90 time
 		{
 			{"RED2",			1},										--Requires Cadmium				x1
 			{"STELLAR2",		1}										--Requires Chromatic Metal		x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_115",	2,					90},				--Makes Indium					x2		in	90 time
+		{"REFINERECIPE_115",	2,					45},				--Makes Indium					x2		in	90 time
 		{
 			{"BLUE2",			1},										--Requires Indium				x1
 			{"STELLAR2",		2}										--Requires Chromatic Metal		x1
@@ -31,6 +31,13 @@ RecipeChanges =
 		{
 			{"YELLOW2",			2},										--Requires Copper				x1
 			{"STELLAR2",		1}										--Requires Chromatic Metal		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_341",	4,					90},				--Makes Quartzite				x2		in	90 time
+		{
+			{"PURPLE2",			2},										--Requires Quartzite			x1
+			{"STELLAR2",		5}										--Requires Chromatic Metal		x1
 		}
 	},
 --Nerfs certain recipes for Magnetised Ferrite from precious metals
@@ -336,21 +343,9 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_2",		125,				60},				--Makes Gold					x100	in	60 time
-		{
-			{"CLAMPEARL",		1}										--Requires Living Pearl			x1
-		}
-	},
-	{							--Amount per batch	--Time per batch
 		{"REFINERECIPE_4",		75,					60},				--Makes Nanites					x50		in	60 time
 		{
 			{"FISHCORE",		1}										--Requires Hadal Core			x1
-		}
-	},
-	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_5",		35,					60},				--Makes Sodium Nitrate			x50		in	60 time
-		{
-			{"VENTGEM",			1}										--Requires Crystal Sulphide		x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
@@ -407,17 +402,120 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_261",	1,					90},				--Makes Ion Battery				x1		in	90 time
+		{"REFINERECIPE_261",	1,					30},				--Makes Ion Battery				x1		in	90 time
 		{
 			{"LAND1",			5},										--Requires Ferrite Dust			10
-			{"ASTEROID1",		1},										--Requires Silver				10
-			{"CATALYST1",		5}										--Requires Sodium				10
+			{"ASTEROID1",		2},										--Requires Silver				10
+			{"CATALYST1",		8}										--Requires Sodium				10
 		}
 	},
 	{							--Amount per batch	--Time per batch
 		{"RECIPE_1122",			16,					5},					--Makes Nourishing Slime		x1		in	5 time
 		{
 			{"FOOD_M_GRUB",		1}										--Requires Juicy Grub			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_340",	5,					25},				--Makes Chromatic Metal			x4		in	25 time
+		{
+			{"PURPLE2",			2}										--Requires Quartzite			x2
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_337",	5,					15},				--Makes Chromatic Metal			x4		in	30 time
+		{
+			{"EX_PURPLE",		1}										--Requires Activated Quartzite	x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_343",	5,					90},				--Makes Chromatic Metal			x4		in	90 time
+		{
+			{"PURPLE2",			1},										--Requires Quartzite			x1
+			{"LAND2",			1}										--Requires Pure Ferrite			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_339",	10,					90},				--Makes Chromatic Metal			x8		in	90 time
+		{
+			{"EX_PURPLE",		1},										--Requires Activated Quartzite	x1
+			{"LAND2",			1}										--Requires Pure Ferrite			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_344",	40,					1200},				--Makes Chromatic Metal			x30		in	1200 time
+		{
+			{"ASTEROID1",		1},										--Requires Silver				x1
+			{"ASTEROID2",		1},										--Requires Gold					x1
+			{"PURPLE2",			1}										--Requires Quartzite			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_342",	5,					90},				--Makes Magnetised Ferrite		x4		in	90 time
+		{
+			{"PURPLE2",			1},										--Requires Quartzite			x1
+			{"LAND1",			1}										--Requires Ferrite Dust			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_338",	10,					90},				--Makes Magnetised Ferrite		x8		in	90 time
+		{
+			{"EX_PURPLE",		1},										--Requires Activated Quartzite	x1
+			{"LAND1",			1}										--Requires Ferrite Dust			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_358",	5,					90},				--Makes Sodium Nitrate			x2		in	90 time
+		{
+			{"EX_PURPLE",		1},										--Requires Activated Quartzite	x1
+			{"GASGIANT1",		1},										--Requires Crystallised Helium	x1
+			{"GAS4",			2}										--Requires Methane				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_374",	5,					90},				--Makes Sodium Nitrate			x2		in	90 time
+		{
+			{"EX_PURPLE",		1},										--Requires Activated Quartzite	x1
+			{"WATERWORLD1",		1},										--Requires Lithium				x1
+			{"GAS4",			2}										--Requires Methane				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_345",	2,					90},				--Makes Ferrite Dust			x1		in	90 time
+		{
+			{"GASGIANT1",		1}										--Requires Crystallised Helium	x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_361",	2,					90},				--Makes Ferrite Dust			x1		in	90 time
+		{
+			{"WATERWORLD1",		1}										--Requires Lithium				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_396",	2,					90},				--Makes Faecium					x1		in	90 time
+		{
+			{"GAS4",			1},										--Requires Methane				x1
+			{"CREATURE1",		1}										--Requires Mordite				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_395",	3,					180},				--Makes Kelp Sac				x1		in	90 time
+		{
+			{"GAS4",			2},										--Requires Methane				x1
+			{"WATERWORLD1",		1}										--Requires Lithium				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_394",	2,					90},				--Makes Marrow Bulb				x1		in	90 time
+		{
+			{"GAS4",			1},										--Requires Methane				x1
+			{"GASGIANT1",		1}										--Requires Crystallised Helium	x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_378",	2,					90},				--Makes Nitrogen				x1		in	90 time
+		{
+			{"GAS4",			1}										--Requires Methane				x3
 		}
 	},
 --Some Nutrient Processor Recipes with ingredients that are very easy to obtain passively or in huge quantities have had their costs increased, to indirectly nerf cooking profits & incentivize harvesting wild ingredients
@@ -487,6 +585,69 @@ RecipeChanges =
 			{"PLANT_WATER",		5}										--Requires Kelp Sac				x1
 		}
 	},
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_988",			1,					5},					--Makes Floral Wafer			x1		in	5 time
+		{
+			{"FOOD_B_DOUGH",	1},										--Requires Sugar Dough			x1
+			{"PLANT_LUSH",		25}										--Requires Star Bulb			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_989",			1,					5},					--Makes Floral Wafer			x1		in	5 time
+		{
+			{"FOOD_B_DOUGH",	1},										--Requires Sugar Dough			x1
+			{"PLANT_HOT",		25}										--Requires Solanium				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_990",			1,					5},					--Makes Cough Biscuits			x1		in	5 time
+		{
+			{"FOOD_B_DOUGH",	1},										--Requires Sugar Dough			x1
+			{"PLANT_SNOW",		25}										--Requires Frost Crystal		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_991",			1,					5},					--Makes Spore Dunkers			x1		in	5 time
+		{
+			{"FOOD_B_DOUGH",	1},										--Requires Sugar Dough			x1
+			{"PLANT_TOXIC",		25}										--Requires Fungal Mould			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_992",			1,					5},					--Makes Healthy Wheatblock		x1		in	5 time
+		{
+			{"FOOD_B_DOUGH",	1},										--Requires Sugar Dough			x1
+			{"PLANT_RADIO",		25}										--Requires Gamma Root			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_993",			1,					5},					--Makes Tooth Pickers			x1		in	5 time
+		{
+			{"FOOD_B_DOUGH",	1},										--Requires Sugar Dough			x1
+			{"PLANT_DUST",		25}										--Requires Cactus Flesh			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_994",			1,					5},					--Makes Questionable Biscuit	x1		in	5 time
+		{
+			{"FOOD_B_DOUGH",	1},										--Requires Sugar Dough			x1
+			{"PLANT_POOP",		5}										--Requires Faecium				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_995",			1,					5},					--Makes Questionable Biscuit	x1		in	5 time
+		{
+			{"FOOD_B_DOUGH",	1},										--Requires Sugar Dough			x1
+			{"CREATURE1",		5}										--Requires Mordite				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_996",			1,					5},					--Makes Healthy Wheatblock		x1		in	5 time
+		{
+			{"FOOD_B_DOUGH",	1},										--Requires Sugar Dough			x1
+			{"PLANT_CAVE",		5}										--Requires Marrow Bulb			x1
+		}
+	},
 --The amount of Creature Pellets made in this recipe will be multiplied by PelletsPerRecipe below
 	{							--Amount per batch	--Time per batch
 		{"RECIPE_577",			1,					5},					--Makes Creature Pellets		x1		in	5 time
@@ -503,42 +664,93 @@ RecipeChanges =
 	},
 --Nerfs simple recipes that were too generous 
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_328",	2,					30},				--Makes Pugneum					x2		in	30 time
+		{"REFINERECIPE_331",	2,					30},				--Makes Pugneum					x2		in	30 time
 		{
 			{"ROBOT2",			3}										--Requires Atlantideum			x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_58",		3,					45},				--Makes Carbon					x2		in	30 time
+		{"REFINERECIPE_328",	16,					500},				--Makes Nanites					x50	in	1800 time
 		{
-			{"PLANT_TOXIC",		2}										--Requires Fungal Mould			x1
+			{"DRONE_SHARD",		1}										--Requires Radiant Shard			x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_60",		3,					45},				--Makes Carbon					x2		in	30 time
+		{"REFINERECIPE_329",	48,					1100},				--Makes Nanites					x95	in	2200 time
 		{
-			{"PLANT_RADIO",		2}										--Requires Gamma Root			x1
+			{"DRONE_SALVAGE",	1}										--Requires Inverted Mirror			x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_61",		3,					45},				--Makes Carbon					x2		in	30 time
+		{"REFINERECIPE_330",	96,					1400},				--Makes Nanites					x230	in	3200 time
 		{
-			{"PLANT_DUST",		2}										--Requires Cactus Flesh			x1
+			{"SHIPBRAIN",		1}										--Requires Hyaline Brain			x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_62",		3,					45},				--Makes Carbon					x2		in	30 time
+		{"REFINERECIPE_58",		5,					105},				--Makes Carbon					x2		in	30 time
 		{
-			{"PLANT_HOT",		2}										--Requires Solanium			x1
+			{"PLANT_TOXIC",		4}										--Requires Fungal Mould			x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_63",		3,					45},				--Makes Carbon					x2		in	30 time
+		{"REFINERECIPE_60",		5,					105},				--Makes Carbon					x2		in	30 time
 		{
-			{"PLANT_LUSH",		2}										--Requires Star Bulb			x1
+			{"PLANT_RADIO",		4}										--Requires Gamma Root			x1
 		}
 	},
---Fixes the ratio for Cadmium > Chromatic Metal refining that oddly got changed NMS v4.4 made 
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_61",		5,					105},				--Makes Carbon					x2		in	30 time
+		{
+			{"PLANT_DUST",		4}										--Requires Cactus Flesh			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_62",		5,					105},				--Makes Carbon					x2		in	30 time
+		{
+			{"PLANT_HOT",		4}										--Requires Solanium				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_63",		5,					105},				--Makes Carbon					x2		in	30 time
+		{
+			{"PLANT_LUSH",		4}										--Requires Star Bulb			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_336",	1,					60},				--Makes Deuterium				x1		in	60 time
+		{
+			{"LAUNCHSUB",		1},										--Requires Di-hydrogen 			x1
+			{"SAND1",			5}										--Requires Silicate Powder 		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_397",	3,					145},				--Makes Pure Ferrite			x2		in	60 time
+		{
+			{"RUINSUB",			2}										--Requires Polished Stone		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_2",		70,					60},				--Makes Gold					x100	in	60 time
+		{
+			{"CLAMPEARL",		1}										--Requires Living Pearl			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_5",		20,					60},				--Makes Sodium Nitrate			x50		in	60 time
+		{
+			{"VENTGEM",			1}										--Requires Crystal Sulphide		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_248",	2,					180},				--Makes Gold					x1		in	1200 time
+		{
+			{"LAND1",			2},										--Requires Ferrite Dust 		x1
+			{"OXYGEN",			1},										--Requires Oxygen 				x1
+			{"GREEN2",			2}										--Requires Emeril 				x1
+		}
+	},
+--Fixes the ratio for Cadmium > Chromatic Metal refining that oddly got changed in NMS v4.4 
 	{							--Amount per batch	--Time per batch
 		{"REFINERECIPE_32",		2,					70},				--Makes Chromatic Metal			x1		in	70 time
 		{
@@ -641,29 +853,6 @@ RecipeChanges =
 	},
 }
 
---Nerfs simple recipes that were too generous (These recipes all have the same ID so need to be searched by RecipeType instead)
-CorruptRecipeChanges =
-{
-	{							--Amount per batch	--Time per batch
-		{"RECIPE_DRONESHARD",	16,					500},				--Makes Nanites					x50	in	1800 time
-		{
-			{"DRONE_SHARD",		1}										--Requires Radiant Shard			x1
-		}
-	},
-	{							--Amount per batch	--Time per batch
-		{"RECIPE_DRONESCRAP",	48,					1100},				--Makes Nanites					x95	in	2200 time
-		{
-			{"DRONE_SALVAGE",	1}										--Requires Inverted Mirror			x1
-		}
-	},
-	{							--Amount per batch	--Time per batch
-		{"RECIPE_SHIPBRAIN",	96,					1400},				--Makes Nanites					x230	in	3200 time
-		{
-			{"SHIPBRAIN",		1}										--Requires Hyaline Brain			x1
-		}
-	},
-}
-
 --Changes recipes, including changing which ingredients are required
 RecipeIngredientChanges =
 {
@@ -689,7 +878,7 @@ RecipeOutputChanges =
 	},
 	--This recipe takes an incredibly long time and is over ~10x less efficient than the alternative in vanilla
 	{							--PTSd output		--Amount per batch	--Time per batch
-		{"REFINERECIPE_330",	"SPACEGUNK1",		5,					150},	--Makes "SPACEGUNK4" Living Slime ( Jn )		x1		in	3600 time
+		{"REFINERECIPE_333",	"SPACEGUNK1",		5,					150},	--Makes "SPACEGUNK4" Living Slime ( Jn )		x1		in	3600 time
 		{--Vanilla ingredient	PTSd ingredient
 			{"ROBOT2",			"ROBOT2",			1},							--Requires Atlantideum   ( ∞ )	x5
 			{"CREATURE1",		"CREATURE1",		2}							--Requires Mordite   ( Mo )		x5
@@ -798,6 +987,9 @@ NewSalvagedDataRecipes =
 	{
 		"DATA_WALKER",	"PTSd: Large Data Extraction",		"WALKER_PROD",	"Product",		"1",		"24",	"8"
 	},
+	{
+		"DATA_GLASS",	"PTSd: Glassy Data Extraction",		"DEEPSEA_PROD",	"Product",		"1",		"15",	"5"
+	},
 }
 
 SilicateBasaltRatio = 2								--Sets how much Silicate Powder is created for every 1 Basalt refined with the new PTSd recipe
@@ -806,30 +998,30 @@ AlbumenPearlDiHydrogenYield = 50					--Sets how much Di-hydrogen is created for 
 
 --Adds recipes for creating Tritium or Di-Hydrogen by refining Gravitino Balls with either Sac Venom or Albumen Pearls 
 NewSacVenomRecipe = 
-[[<Property value="GcRefinerRecipe.xml">
+[[<Property name="Table" value="GcRefinerRecipe">
       <Property name="Id" value="TRITIUM_SACVENOM" />
       <Property name="RecipeType" value="RECIPE_TECHFRAG_PLANT_CAVE" />
       <Property name="RecipeName" value="PTSd: Tritium Sublimation" />
       <Property name="TimeToMake" value="1200" />
-      <Property name="Cooking" value="False" />
-      <Property name="Result" value="GcRefinerRecipeElement.xml">
+      <Property name="Cooking" value="false" />
+      <Property name="Result" value="GcRefinerRecipeElement">
         <Property name="Id" value="ROCKETSUB" />
-        <Property name="Type" value="GcInventoryType.xml">
+        <Property name="Type" value="GcInventoryType">
           <Property name="InventoryType" value="Substance" />
         </Property>
         <Property name="Amount" value="]]..SacVenomTritiumYield..[[" />
       </Property>
       <Property name="Ingredients">
-        <Property value="GcRefinerRecipeElement.xml">
+        <Property name="Ingredients" value="GcRefinerRecipeElement">
           <Property name="Id" value="GRAVBALL" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="2" />
         </Property>
-		<Property value="GcRefinerRecipeElement.xml">
+		<Property name="Ingredients" value="GcRefinerRecipeElement">
           <Property name="Id" value="SACVENOM" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="1" />
@@ -838,30 +1030,30 @@ NewSacVenomRecipe =
     </Property>]]
 
 NewAlbumenPearlRecipe = 
-[[<Property value="GcRefinerRecipe.xml">
+[[<Property name="Table" value="GcRefinerRecipe">
       <Property name="Id" value="DIH_ALBUMENPEARL" />
       <Property name="RecipeType" value="RECIPE_LAUNCHSUB" />
       <Property name="RecipeName" value="PTSd: Di-Hydrogen Extraction" />
       <Property name="TimeToMake" value="600" />
-      <Property name="Cooking" value="False" />
-      <Property name="Result" value="GcRefinerRecipeElement.xml">
+      <Property name="Cooking" value="false" />
+      <Property name="Result" value="GcRefinerRecipeElement">
         <Property name="Id" value="LAUNCHSUB" />
-        <Property name="Type" value="GcInventoryType.xml">
+        <Property name="Type" value="GcInventoryType">
           <Property name="InventoryType" value="Substance" />
         </Property>
         <Property name="Amount" value="]]..AlbumenPearlDiHydrogenYield..[[" />
       </Property>
       <Property name="Ingredients">
-        <Property value="GcRefinerRecipeElement.xml">
+        <Property name="Ingredients" value="GcRefinerRecipeElement">
           <Property name="Id" value="GRAVBALL" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="1" />
         </Property>
-		<Property value="GcRefinerRecipeElement.xml">
+		<Property name="Ingredients" value="GcRefinerRecipeElement">
           <Property name="Id" value="ALBUMENPEARL" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="2" />
@@ -873,60 +1065,60 @@ NewAlbumenPearlRecipe =
 	--First recipe takes 1 Aloe Flesh and 1 Condensed Carbon to make 2 Steamed Vegetables
 	--Second Recipe takes 1 Refreshing Drink and 1 Refined Flour to make 1 Cream
 NewAloeAndDrinkRecipes =
-[[<Property value="GcRefinerRecipe.xml">
+[[<Property name="Table" value="GcRefinerRecipe">
       <Property name="Id" value="VEG_ALOE" />
       <Property name="RecipeType" value="UI_COOK_VEG" />
       <Property name="RecipeName" value="PTSd: Aloe Steaming" />
       <Property name="TimeToMake" value="5" />
-      <Property name="Cooking" value="True" />
-      <Property name="Result" value="GcRefinerRecipeElement.xml">
+      <Property name="Cooking" value="true" />
+      <Property name="Result" value="GcRefinerRecipeElement">
         <Property name="Id" value="FOOD_R_VEG" />
-        <Property name="Type" value="GcInventoryType.xml">
+        <Property name="Type" value="GcInventoryType">
           <Property name="InventoryType" value="Product" />
         </Property>
         <Property name="Amount" value="2" />
       </Property>
       <Property name="Ingredients">
-        <Property value="GcRefinerRecipeElement.xml">
+        <Property name="Ingredients" value="GcRefinerRecipeElement">
           <Property name="Id" value="FUEL2" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="Substance" />
           </Property>
           <Property name="Amount" value="1" />
         </Property>
-		<Property value="GcRefinerRecipeElement.xml">
+		<Property name="Ingredients" value="GcRefinerRecipeElement">
           <Property name="Id" value="FOOD_P_DUSTWILD" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="1" />
         </Property>
       </Property>
     </Property>
-	<Property value="GcRefinerRecipe.xml">
+	<Property name="Table" value="GcRefinerRecipe">
       <Property name="Id" value="CREAM_DRINK" />
       <Property name="RecipeType" value="UI_COOK_DRINK" />
       <Property name="RecipeName" value="PTSd: Plant-Based Cream" />
       <Property name="TimeToMake" value="5" />
-      <Property name="Cooking" value="True" />
-      <Property name="Result" value="GcRefinerRecipeElement.xml">
+      <Property name="Cooking" value="true" />
+      <Property name="Result" value="GcRefinerRecipeElement">
         <Property name="Id" value="FOOD_R_CREAM" />
-        <Property name="Type" value="GcInventoryType.xml">
+        <Property name="Type" value="GcInventoryType">
           <Property name="InventoryType" value="Product" />
         </Property>
         <Property name="Amount" value="1" />
       </Property>
       <Property name="Ingredients">
-        <Property value="GcRefinerRecipeElement.xml">
+        <Property name="Ingredients" value="GcRefinerRecipeElement">
           <Property name="Id" value="FOOD_J_DUST" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="1" />
         </Property>
-        <Property value="GcRefinerRecipeElement.xml">
+        <Property name="Ingredients" value="GcRefinerRecipeElement">
           <Property name="Id" value="FOOD_R_FLOUR" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="1" />
@@ -936,9 +1128,9 @@ NewAloeAndDrinkRecipes =
 
 --For adding Hypnotic Eye as an ingredient in the final Worm Food recipe
 AddEyeball =
-[[<Property value="GcRefinerRecipeElement.xml">
+[[<Property name="Ingredients" value="GcRefinerRecipeElement">
           <Property name="Id" value="EYEBALL" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="1" />
@@ -962,15 +1154,15 @@ SeasoningChanges =
 	},
 	{
 		{FrostCrystalRequired,	"PLANT_SNOW"},
-		{"RECIPE_494", "RECIPE_495", "RECIPE_497", "RECIPE_499", "RECIPE_501", "RECIPE_503", "RECIPE_505", "RECIPE_507", "RECIPE_509", "RECIPE_511", "RECIPE_513", "RECIPE_515", "RECIPE_517", "RECIPE_519", "RECIPE_521", "RECIPE_523", "RECIPE_525", "RECIPE_527", "RECIPE_529", "RECIPE_531", "RECIPE_533", "RECIPE_535", "RECIPE_537", "RECIPE_539", "RECIPE_585", "RECIPE_587", "RECIPE_589", "RECIPE_591", "RECIPE_593", "RECIPE_595", "RECIPE_597", "RECIPE_599", "RECIPE_601", "RECIPE_603", "RECIPE_605", "RECIPE_607", "RECIPE_609", "RECIPE_611", "RECIPE_613", "RECIPE_615", "RECIPE_617", "RECIPE_619", "RECIPE_621", "RECIPE_990"}
+		{"RECIPE_494", "RECIPE_495", "RECIPE_497", "RECIPE_499", "RECIPE_501", "RECIPE_503", "RECIPE_505", "RECIPE_507", "RECIPE_509", "RECIPE_511", "RECIPE_513", "RECIPE_515", "RECIPE_517", "RECIPE_519", "RECIPE_521", "RECIPE_523", "RECIPE_525", "RECIPE_527", "RECIPE_529", "RECIPE_531", "RECIPE_533", "RECIPE_535", "RECIPE_537", "RECIPE_539", "RECIPE_585", "RECIPE_587", "RECIPE_589", "RECIPE_591", "RECIPE_593", "RECIPE_595", "RECIPE_597", "RECIPE_599", "RECIPE_601", "RECIPE_603", "RECIPE_605", "RECIPE_607", "RECIPE_609", "RECIPE_611", "RECIPE_613", "RECIPE_615", "RECIPE_617", "RECIPE_619", "RECIPE_621"}
 	},
 }
 
 function AddIngredient (IngredientID, IngredientAmount, ItemType)
     return
-[[<Property value="GcRefinerRecipeElement.xml">
+[[<Property name="Ingredients" value="GcRefinerRecipeElement">
           <Property name="Id" value="]]..IngredientID..[[" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="]]..ItemType..[[" />
           </Property>
           <Property name="Amount" value="]]..IngredientAmount..[[" />
@@ -979,23 +1171,23 @@ end
 
 function Add1IngrRefinerRecipe (RecipeID, Type, Name, Time, ResultID, ResultType, ResultAmount, IngredID, IngredType, IngredAmount)
 	return
-[[<Property value="GcRefinerRecipe.xml">
+[[<Property name="Table" value="GcRefinerRecipe">
       <Property name="Id" value="]]..RecipeID..[[" />
       <Property name="RecipeType" value="]]..Type..[[" />
       <Property name="RecipeName" value="]]..Name..[[" />
       <Property name="TimeToMake" value="]]..Time..[[" />
-      <Property name="Cooking" value="False" />
-      <Property name="Result" value="GcRefinerRecipeElement.xml">
+      <Property name="Cooking" value="false" />
+      <Property name="Result" value="GcRefinerRecipeElement">
         <Property name="Id" value="]]..ResultID..[[" />
-        <Property name="Type" value="GcInventoryType.xml">
+        <Property name="Type" value="GcInventoryType">
           <Property name="InventoryType" value="]]..ResultType..[[" />
         </Property>
         <Property name="Amount" value="]]..ResultAmount..[[" />
       </Property>
       <Property name="Ingredients">
-        <Property value="GcRefinerRecipeElement.xml">
+        <Property name="Ingredients" value="GcRefinerRecipeElement">
           <Property name="Id" value="]]..IngredID..[[" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="]]..IngredType..[[" />
           </Property>
           <Property name="Amount" value="]]..IngredAmount..[[" />
@@ -1006,30 +1198,30 @@ end
 
 function Add2IngrRefinerRecipe (RecipeID, Type, Name, Time, ResultID, ResultType, ResultAmount, Ingred1ID, Ingred1Type, Ingred1Amount, Ingred2ID, Ingred2Type, Ingred2Amount)
 	return
-[[<Property value="GcRefinerRecipe.xml">
+[[<Property name="Table" value="GcRefinerRecipe">
       <Property name="Id" value="]]..RecipeID..[[" />
       <Property name="RecipeType" value="]]..Type..[[" />
       <Property name="RecipeName" value="]]..Name..[[" />
       <Property name="TimeToMake" value="]]..Time..[[" />
-      <Property name="Cooking" value="False" />
-      <Property name="Result" value="GcRefinerRecipeElement.xml">
+      <Property name="Cooking" value="false" />
+      <Property name="Result" value="GcRefinerRecipeElement">
         <Property name="Id" value="]]..ResultID..[[" />
-        <Property name="Type" value="GcInventoryType.xml">
+        <Property name="Type" value="GcInventoryType">
           <Property name="InventoryType" value="]]..ResultType..[[" />
         </Property>
         <Property name="Amount" value="]]..ResultAmount..[[" />
       </Property>
       <Property name="Ingredients">
-        <Property value="GcRefinerRecipeElement.xml">
+        <Property name="Ingredients" value="GcRefinerRecipeElement">
           <Property name="Id" value="]]..Ingred1ID..[[" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="]]..Ingred1Type..[[" />
           </Property>
           <Property name="Amount" value="]]..Ingred1Amount..[[" />
         </Property>
-		<Property value="GcRefinerRecipeElement.xml">
+		<Property name="Ingredients" value="GcRefinerRecipeElement">
           <Property name="Id" value="]]..Ingred2ID..[[" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="]]..Ingred2Type..[[" />
           </Property>
           <Property name="Amount" value="]]..Ingred2Amount..[[" />
@@ -1043,11 +1235,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
+["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["PRECEDING_KEY_WORDS"] = {"Table"},
@@ -1060,6 +1253,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{--Adds Recipe for refining Basalt into Silicate Powder
 				["PRECEDING_KEY_WORDS"] = {"Table"},
 				["ADD"] = Add1IngrRefinerRecipe ("SILICATE_BASALT", "Requested Operation: Powderise", "PTSd: Basalt Pulverisation", "20", "SAND1", "Substance", SilicateBasaltRatio, "LAVA1", "Substance", "1")
+			},
+			{--Adds Recipe for refining Sea Glass into Salvaged Glass
+				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = Add1IngrRefinerRecipe ("SEAGLASS_SALGLASS", "Requested Operation: Warp Glass", "PTSd: Salvage Glass", "180", "SENTINEL_LOOT", "Product", "1", "DEEPSEA_PROD", "Product", "2")
+			},
+			{--Adds Recipe for refining Sea Glass and Radiant Shards into Inverted Mirror
+				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = Add2IngrRefinerRecipe ("SEAGLASS_MIRROR", "Requested Operation: Warp Glass", "PTSd: Mirror Glass", "180", "DRONE_SALVAGE", "Product", "2", "DEEPSEA_PROD", "Product", "1", "DRONE_SHARD", "Product", "2")
+			},
+			{--Adds Recipe for refining Sea Glass and Glass into Living Glass
+				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = Add2IngrRefinerRecipe ("SEAGLASS_LIVGLASS", "Requested Operation: Warp Glass", "PTSd: Construct Glass", "180", "FARMPROD8", "Product", "3", "DEEPSEA_PROD", "Product", "1", "FARMPROD3", "Product", "3")
+			},
+			{--Adds Recipe for refining Vortex Cubes and Pure Ferrite into Silver
+				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = Add1IngrRefinerRecipe ("VOID_SILVER", "Requested Operation: Silverize", "PTSd: Vortex Silvering", "120", "ASTEROID1", "Substance", "12", "CAVECUBE", "Product", "1")
 			},
 			{
 				["PRECEDING_KEY_WORDS"] = {"Table"},
@@ -1120,8 +1329,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["REMOVE"] = "SECTION"
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_895"},
-				["PRECEDING_KEY_WORDS"] = {"GcRefinerRecipeElement.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_1348"},			--Removes the Bone Broth alternative recipe that uses 2x Softened Marrow, as it will lose value in PTSd
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_895",		"Ingredients", "GcRefinerRecipeElement"},
 				["ADD"] = AddEyeball,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			},
@@ -1132,7 +1344,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 
 
-local ChangesToRecipes = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToRecipes = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #RecipeChanges do
 	local RecipeId = RecipeChanges[i][1][1]
@@ -1158,37 +1370,6 @@ for i = 1, #RecipeChanges do
 		ChangesToRecipes[#ChangesToRecipes+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", RecipeId},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"TimeToMake", Time},
-					{"Amount", AmountResult}
-				}
-			}
-end
-for i = 1, #CorruptRecipeChanges do
-	local RecipeType = CorruptRecipeChanges[i][1][1]
-	local Time = CorruptRecipeChanges[i][1][3]
-	local AmountResult = CorruptRecipeChanges[i][1][2]
-	local Ingredients = CorruptRecipeChanges[i][2]
-	
-		for j = 1, #Ingredients do
-			INGId = Ingredients[j][1]
-			AmountING = Ingredients[j][2]
-			
-			ChangesToRecipes[#ChangesToRecipes+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"RecipeType", RecipeType, "Id", INGId},
-				["REPLACE_TYPE"] = "ALL",
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Amount", AmountING}
-				}
-			}
-		end
-		
-		ChangesToRecipes[#ChangesToRecipes+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"RecipeType", RecipeType},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"TimeToMake", Time},
@@ -1281,8 +1462,7 @@ for i = 1, #RecipeAddedIngredients do
 		
 			ChangesToRecipes[#ChangesToRecipes+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id",RecipeId},
-				["PRECEDING_KEY_WORDS"] = {"GcRefinerRecipeElement.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id",RecipeId,		"Ingredients", "GcRefinerRecipeElement"},
 				["ADD"] = AddIngredient (IngredientID, IngredientAmount, ItemType),
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			}
@@ -1360,7 +1540,7 @@ ChangesToRecipes[#ChangesToRecipes+1] =
 	}
 }
 
---[[local ChangesToRecipes = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+--[[local ChangesToRecipes = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #RecipeChanges do
 	local RecipeId = RecipeChanges[i][1][1]
@@ -1378,7 +1558,7 @@ for i = 1, #RecipeChanges do
 			}
 end
 
-local ChangesToRecipes2 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local ChangesToRecipes2 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
 
 for i = 1, #RecipeChanges do
 	local RecipeId = RecipeChanges[i][1][1]

@@ -44,7 +44,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.fighter wingK FIX.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '5.29',
+	NMS_VERSION				= '5.52',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -65,14 +65,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= { {'Value', 4} }
 			},
 			{
-				FOREACH_SKW_GROUP 	= {
-					{'Name', 'WingsK_ALOD0'},
-					{'Name', 'WingsK_BLOD0'}
-				},
 				PRECEDING_KEY_WORDS	= 'Attributes',
 				SECTION_ACTIVE		= -1,
 				ADD 				= [[
-					<Property value="TkSceneNodeAttributeData.xml">
+					<Property name="Attributes" value="TkSceneNodeAttributeData">
 						<Property name="Name" value="ATTACHMENT"/>
 						<Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/ENTITIES/SHAREDLODDISTANCES.ENTITY.MBIN"/>
 					</Property>]]
@@ -103,14 +99,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'Id', '_WINGSK_A'},
-				PRECEDING_KEY_WORDS = {'TkModelDescriptorList.xml', 'List'},
+				PRECEDING_KEY_WORDS = {'TkModelDescriptorList', 'List'},
 				ADD				 	= (
 					function()
 						local desclist = [[
-							<Property value="TkResourceDescriptorList.xml">
+							<Property name="List" value="TkResourceDescriptorList">
 								<Property name="TypeId" value="%s"/>
 								<Property name="Descriptors">
-									<Property value="TkResourceDescriptorData.xml">
+									<Property name="Descriptors" value="TkResourceDescriptorData">
 										<Property name="Id" value="%s"/>
 										<Property name="Name" value="%s"/>
 									</Property>

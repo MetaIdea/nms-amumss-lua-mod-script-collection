@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"] = "AltF4_ReplaceFreighterLandingPad.pak",
+    ["MOD_FILENAME"] = "AltF4_ReplaceFreighterLandingPad",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.72",
+    ["NMS_VERSION"] = "5.51",
     ["MOD_DESCRIPTION"] = "Replace the freighter landing pad with the space station landing pad.",
     ["MODIFICATIONS"] = {
         {

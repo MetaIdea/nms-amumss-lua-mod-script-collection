@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"] = "AltF4_SquareSCSlots.pak",
+    ["MOD_FILENAME"] = "AltF4_SquareSCSlots",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "5.05",
+    ["NMS_VERSION"] = "5.51",
     ["MOD_DESCRIPTION"] = "Make the generated ships, multitools, freighters have square super charged slots.",
     ["MODIFICATIONS"] = {
         {

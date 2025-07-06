@@ -31,6 +31,9 @@ AllExoCannonUpMult =			0.5								--Multiplier to apply to the strength of firer
 AllExoLaserUpMult =				0.5								--Multiplier to apply to the strength of heat time from all procedural Exocraft Mining Laser upgrades.
 AllExoEngineUpMult =			0.5								--Multiplier to apply to the strength of Top Speed and Fuel Usage bonuses from all procedural Exocraft Engine upgrades.
 
+--Small tweaks
+ExoBoostBMin =					0.2								--0.15		0.15 is below the C Class Exocraft Boost Max value of 0.2, so changing this to 0.2 prevents a situation where a B Class Boost upgrade has a worse bonus than a C Class one
+
 --Changes to the Min & Max number of bonuses that certain upgrade modules can spawn with, and the weighting % chance to spawn with the Max number of bonuses
 NumStatsChanges =
 {
@@ -155,22 +158,22 @@ MultiplicativeUpgradeChanges =
 		{"Weapon_Laser_Mining_Speed",	MiningUpgradeSpeedMult},
 		{
 			{--	Upgrade			Min		Max
-				"UP_LASER0",	0.95,	0.99							--0.95,	0.99
+				"UP_LASER0",	0.96,	0.99							--0.95,	0.99
 			},
 			{--	Upgrade			Min		Max
-				"UP_LASER1",	0.9,	0.95							--0.9,	0.95
+				"UP_LASER1",	0.92,	0.96							--0.9,	0.95
 			},
 			{--	Upgrade			Min		Max
-				"UP_LASER2",	0.85,	0.95							--0.85,	0.95
+				"UP_LASER2",	0.86,	0.93							--0.85,	0.95
 			},
 			{--	Upgrade			Min		Max
-				"UP_LASER3",	0.8,	0.9								--0.8,	0.9	
+				"UP_LASER3",	0.82,	0.9								--0.8,	0.9	
 			},
 			{--	Upgrade			Min		Max
-				"UP_LASER4",	0.8,	0.85							--0.8,	0.85	
+				"UP_LASER4",	0.8,	0.87							--0.8,	0.85	
 			},
 			{--	Upgrade			Min		Max
-				"UP_LASERX",	0.8,	0.95							--0.8,	0.95
+				"UP_LASERX",	0.78,	0.95							--0.8,	0.95
 			},
 		}
 	},
@@ -318,13 +321,13 @@ MultiplicativeUpgradeChanges =
 				"UP_EXENG1",	1.01,	1.03							--1.01,	1.03
 			},
 			{
-				"UP_EXENG2",	1.03,	1.08							--1.03,	1.08
+				"UP_EXENG2",	1.03,	1.07							--1.03,	1.08
 			},
 			{
-				"UP_EXENG3",	1.08,	1.15							--1.08,	1.15
+				"UP_EXENG3",	1.07,	1.11							--1.08,	1.15
 			},
 			{
-				"UP_EXENG4",	1.1,	1.15							--1.1,	1.15
+				"UP_EXENG4",	1.11,	1.15							--1.1,	1.15
 			},
 		}
 	},
@@ -335,13 +338,13 @@ MultiplicativeUpgradeChanges =
 				"UP_EXSUB1",	0.9,	0.99							--0.9,	0.99
 			},
 			{--	Upgrade			Min		Max
-				"UP_EXSUB2",	0.85,	0.9								--0.85,	0.9	
+				"UP_EXSUB2",	0.85,	0.95							--0.85,	0.9	
 			},
 			{--	Upgrade			Min		Max
 				"UP_EXSUB3",	0.75,	0.85							--0.75,	0.85	
 			},
 			{--	Upgrade			Min		Max
-				"UP_EXSUB4",	0.7,	0.85							--0.7,	0.85	
+				"UP_EXSUB4",	0.7,	0.8								--0.7,	0.85	
 			},
 		}
 	},
@@ -349,16 +352,16 @@ MultiplicativeUpgradeChanges =
 		{"Vehicle_EngineTopSpeed",	AllExoEngineUpMult},
 		{
 			{--	Upgrade			Min		Max
-				"UP_EXSUB1",	1.03,	1.05							--1.03,	1.05
+				"UP_EXSUB1",	1.03,	1.05							--1.02,	1.04
 			},
 			{
-				"UP_EXSUB2",	1.05,	1.08							--1.05,	1.08
+				"UP_EXSUB2",	1.05,	1.07							--1.04,	1.06
 			},
 			{
-				"UP_EXSUB3",	1.08,	1.1								--1.08,	1.1
+				"UP_EXSUB3",	1.07,	1.09							--1.06,	1.075
 			},
 			{
-				"UP_EXSUB4",	1.1,	1.1								--1.1,	1.1
+				"UP_EXSUB4",	1.09,	1.1								--1.075,	1.075
 			},
 		}
 	},
@@ -476,16 +479,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]	= Description,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
+ ["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
-			{
-				["PRECEDING_KEY_WORDS"] = "",
-				["MATH_OPERATION"] 		= "", 
-				["REPLACE_TYPE"] 		= "",	 
+			{ 
 				["SPECIAL_KEY_WORDS"] = {"ID", "UP_SNSUIT",		"StatsType", "Suit_Energy"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	= 
@@ -493,10 +494,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"ValueMax",	ExoUpgradeMaxEnergy},
 				}
 			},
-			{
-				["PRECEDING_KEY_WORDS"] = "",
-				["MATH_OPERATION"] 		= "", 
-				["REPLACE_TYPE"] 		= "",	 
+			{ 
 				["SPECIAL_KEY_WORDS"] = {"ID", "UP_SNSUIT",		"StatsType", "Suit_Energy_Regen"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	= 
@@ -504,10 +502,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"ValueMax",	ExoUpgradeMaxEnergyRegen},
 				}
 			},
-			{
-				["PRECEDING_KEY_WORDS"] = "",
-				["MATH_OPERATION"] 		= "", 
-				["REPLACE_TYPE"] 		= "",	 
+			{ 
 				["SPECIAL_KEY_WORDS"] = {"ID", "UP_RBSUIT",		"StatsType", "Suit_Energy"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	= 
@@ -515,10 +510,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"ValueMax",	ExoUpgradeMaxEnergy},
 				}
 			},
-			{
-				["PRECEDING_KEY_WORDS"] = "",
-				["MATH_OPERATION"] 		= "", 
-				["REPLACE_TYPE"] 		= "",	 
+			{ 
 				["SPECIAL_KEY_WORDS"] = {"ID", "UP_RBSUIT",		"StatsType", "Suit_Energy_Regen"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	= 
@@ -526,15 +518,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"ValueMax",	ExoUpgradeMaxEnergyRegen},
 				}
 			},
+			{ 
+				["SPECIAL_KEY_WORDS"] = {"ID", "UP_BOOST2",		"StatsType", "Vehicle_BoostTanks"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"ValueMin",	ExoBoostBMin},
+				}
+			},
 		}
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "UT_MINER",		"StatsType", "Weapon_Laser_MiningBonus"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
@@ -547,7 +545,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}}}
 
 
-local ChangesToProcTech = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToProcTech = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #NumStatsChanges do
 	local UpgradeID = NumStatsChanges[i][1]
@@ -610,7 +608,6 @@ for i = 1, #MultiplicativeUpgradeChanges do
 
 			ChangesToProcTech[#ChangesToProcTech+1] =
 			{
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", UpgradeID, "StatsType", StatID},
 				["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "FORCE",

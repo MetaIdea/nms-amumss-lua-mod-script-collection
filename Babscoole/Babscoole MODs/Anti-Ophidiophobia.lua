@@ -2,9 +2,9 @@ ReplaceCreature = {"SEASNAKE","FLYINGSNAKE","SANDWORM"}
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Anti-Ophidiophobia.pak",
+["MOD_FILENAME"]    = "Anti-Ophidiophobia",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MOD_DESCRIPTION"] = "Removes snake like creatures",
 ["MODIFICATIONS"]   =
     {
@@ -13,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREFILENAMETABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
 
                     },
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     },
 }
 
-local ReplaceCreatureTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ReplaceCreatureTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i=1,#ReplaceCreature do
     local value = ReplaceCreature[i]

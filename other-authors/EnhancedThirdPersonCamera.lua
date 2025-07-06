@@ -7,9 +7,9 @@ _CameraType = 1 -- 1 = Centered | 2 = Right-Shoulder | 3 = Left-Shoulder
 --| CODE
 --|=======================================================================================--
 if _CameraType < 1 or _CameraType > 3 then print('>>> WARNING: Camera Type setting is INVALID, using 1 for "centered" by default. <<<') end
-local OffsetX, modNameSub = 0, "centered"
-if     _CameraType == 2 then OffsetX, modNameSub = 0.9, "right-shoulder"
-elseif _CameraType == 3 then OffsetX, modNameSub = -0.9, "left-shoulder"
+local OffsetX, modNameSub = "0", "centered"
+if     _CameraType == 2 then OffsetX, modNameSub = "0.9", "right-shoulder"
+elseif _CameraType == 3 then OffsetX, modNameSub = "-0.9", "left-shoulder"
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"OffsetYAlt", "0"},
 					{"OffsetYSlopeExtra", "0.5"},
 					{"OffsetZFlat", "0"},
-					{"BackMinDistance", "5"},
+					{"BackMinDistance", "6"},
 					{"BackMaxDistance", "9"},
 					{"BackSlopeAdjust", "0"},
 					{"BackSlopeRotationAdjust", "0"},

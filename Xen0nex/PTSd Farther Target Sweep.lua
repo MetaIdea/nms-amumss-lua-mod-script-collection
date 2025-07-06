@@ -34,6 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_DESCRIPTION"]		= Description,
 	["MOD_AUTHOR"]			= "Xen0nex",
 	["NMS_VERSION"]			= GameVersion,
+	["EXML_CREATE"] = "FALSE",  
 	["MODIFICATIONS"]		= 
 	{
 		{
@@ -55,7 +56,7 @@ for i = 1, #Filepaths do
 			ChangesToMissions[#ChangesToMissions+1] =
 			{
 				["MBIN_FILE_SOURCE"] 	= {FilePath},
-				["EXML_CHANGE_TABLE"] 	= 
+				["MXML_CHANGE_TABLE"] 	= 
 				{
 					{
 						["REPLACE_TYPE"] = "ALL",
@@ -73,7 +74,7 @@ for i = 1, #Filepaths do
 			ChangesToMissions[#ChangesToMissions+1] =
 			{
 				["MBIN_FILE_SOURCE"] 	= {FilePath},
-				["EXML_CHANGE_TABLE"] 	= 
+				["MXML_CHANGE_TABLE"] 	= 
 				{
 					{
 						["REPLACE_TYPE"] = "ALL",

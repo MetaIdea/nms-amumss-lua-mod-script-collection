@@ -2,23 +2,23 @@
 local mod_desc = [[
   Add a bottle standing on the cooker's left shelf that opens the fish storage menu
 ]]----------------------------------------------------------------------------------
----	LUA 2 EXML (VERSION: 0.85.0) ... by lMonk
+---	LUA 2 EXML (VERSION: 0.85.7) ... by lMonk
 ---	A tool for converting exml to an equivalent lua table and back again.
 --- The complete tool can be found at: https://github.com/roie-r/exml_2_lua
 -------------------------------------------------------------------------------
 --	Generate an EXML-tagged text from a lua table representation of exml class
 --	@param class: a lua2exml formatted table
-local function ToExml(class)
+function ToExml(class)
+	--	Get the count of ALL objects in a table (non-recursive)
+	--	@param t: any table
+	local function len2(t)
+		if type(t) ~= 'table' then return -1 end
+		i=0; for _ in pairs(t) do i=i+1 end; return i
+	end
 	--	replace a boolean with its text equivalent (ignore otherwise)
 	--	@param b: any value
-	function bool(b)
-		return (type(b) == 'boolean') and ((b == true) and 'True' or 'False') or b
-	end
-
-	--	get the count of ALL objects in a table (non-recursive)
-	--	@param t: any table
-	function len2(t)
-		i=0; for _ in pairs(t) do i=i+1 end; return i
+	local function bool(b)
+		return (type(b) == 'boolean') and ((b == true) and 'true' or 'false') or b
 	end
 	local function exml_r(tlua)
 		local exml = {}
@@ -29,14 +29,17 @@ local function ToExml(class)
 			if key ~= 'meta' then
 				exml[#exml+1] = '<Property '
 				if type(cls) == 'table' and cls.meta then
-					local att, val = cls['meta'][1], cls['meta'][2]
+					local att, val, lnk = cls['meta'][1], cls['meta'][2], cls['meta'][3]
 					-- add and recurs for an inner table
 					if att == 'name' or att == 'value' then
-						exml:add({att, '="', val, '">'})
+						exml:add({att, '="', val})
 					else
-						exml:add({'name="', att, '" value="', val, '">'})
+						exml:add({'name="', att, '" value="', val})
+						if lnk then
+							exml:add({'" linked="', lnk})
+						end
 					end
-					exml:add({exml_r(cls), '</Property>'})
+					exml:add({'">', exml_r(cls), '</Property>'})
 				else
 					-- add a regular property
 					if type(cls) == 'table' then
@@ -60,7 +63,7 @@ local function ToExml(class)
 		return exml_r(class)
 	elseif class.meta and klen > 1 then
 		return exml_r( {class} )
-	-- concatenate unrelated exml sections, instead of nested inside each other
+	-- concatenate unrelated (instead of nested) exml sections
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
@@ -68,8 +71,24 @@ local function ToExml(class)
 		end
 		return table.concat(T)
 	end
+	return nil
 end
 
+--	Determine if received is a single or multi-item
+--	then process items through the received function
+--	@param items: table of item properties or a non-keyed table of items (keys are ignored)
+--	@param acton: the function to process the items in the table
+local function ProcessOnenAll(items, acton)
+	-- first key = 1 means multiple entries
+	if next(items) == 1 then
+		local T = {}
+		for _,e in ipairs(items) do
+			T[#T+1] = acton(e)
+		end
+		return T
+	end
+	return acton(items)
+end
 
 --	Build a single -or list of TkSceneNodeData classes
 --	@param props: a keyed table for scene class properties.
@@ -82,7 +101,7 @@ end
 --	  attr	= [optional] Attributes table of {name, value} pairs
 --	  child	= [optional] Children table for ScNode tables
 --	}
-function ScNode(nodes)
+local function ScNode(nodes)
 	--	returns a jenkins hash from a string (by lyravega)
 	local function jenkinsHash(input)
 		local hash = 0
@@ -101,7 +120,7 @@ function ScNode(nodes)
 	--	Build a TkSceneNodeData class
 	local function sceneNode(props)
 		local T	= {
-			meta	= {'value', 'TkSceneNodeData.xml'},
+			meta	= {'Children', 'TkSceneNodeData'},
 			Name 				= props.name,
 			NameHash			= jenkinsHash(props.name),
 			Type				= props.ntype,
@@ -110,7 +129,7 @@ function ScNode(nodes)
 		--	add TkTransformData class
 		props.form = props.form or {}
 		T.Form = {
-			meta	= {'Transform', 'TkTransformData.xml'},
+			meta	= {'Transform', 'TkTransformData'},
 			TransX	= (props.form.tx or props.form[1]) or nil,
 			TransY	= (props.form.ty or props.form[2]) or nil,
 			TransZ	= (props.form.tz or props.form[3]) or nil,
@@ -130,7 +149,7 @@ function ScNode(nodes)
 			T.Attr = { meta = {'name', 'Attributes'} }
 			for nm, val in pairs(props.attr) do
 				T.Attr[#T.Attr+1] = {
-					meta	= {'value', 'TkSceneNodeAttributeData.xml'},
+					meta	= {'Attributes', 'TkSceneNodeAttributeData'},
 					Name	= nm,
 					Value	= val
 				}
@@ -145,23 +164,13 @@ function ScNode(nodes)
 		end
 		return T
 	end
-	-----------------------------------------------------------------
-	local k,_ = next(nodes)
-	if k == 1 then
-	-- k=1 means the first of a list of unrelated, non-nested, nodes
-		local T = {}
-		for _,nd in ipairs(nodes) do
-				T[#T+1] = sceneNode(nd)
-		end
-		return T
-	end
-	return sceneNode(nodes)
+	return ProcessOnenAll(nodes, sceneNode)
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.cook your fish.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.29',
+	NMS_VERSION			= '5.52',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{

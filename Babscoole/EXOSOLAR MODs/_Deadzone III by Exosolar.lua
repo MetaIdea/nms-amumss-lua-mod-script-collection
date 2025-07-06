@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Deadzone III by Exosolar.pak",
+["MOD_FILENAME"]  = "_Deadzone III by Exosolar",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.29",
+["NMS_VERSION"]   = "5.73",
 ["MODIFICATIONS"] =
     {
         {
@@ -11,20 +11,20 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIOME.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ExternalObjectLists"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"AllowLimiting", "False"},
+                                {"AllowLimiting", "false"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Features"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Crater", "2"},
+                                {"Crater", "2.000000"},
                             }
                         },
                         {
@@ -32,41 +32,41 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",  
                             ["ADD"] =
 [[
-    <Property value="GcScreenFilterOption.xml">
-      <Property name="Filter" value="GcScreenFilters.xml">
+    <Property name="FilterOptions" value="GcScreenFilterOption">
+      <Property name="Filter" value="GcScreenFilters">
         <Property name="ScreenFilter" value="DefaultStorm" />
       </Property>
-      <Property name="Weight" value="0.1" />
+      <Property name="Weight" value="0.100000" />
     </Property>
-    <Property value="GcScreenFilterOption.xml">
-      <Property name="Filter" value="GcScreenFilters.xml">
+    <Property name="FilterOptions" value="GcScreenFilterOption">
+      <Property name="Filter" value="GcScreenFilters">
         <Property name="ScreenFilter" value="BarrenStorm" />
       </Property>
-      <Property name="Weight" value="0.01" />
+      <Property name="Weight" value="0.010000" />
     </Property>
-    <Property value="GcScreenFilterOption.xml">
-      <Property name="Filter" value="GcScreenFilters.xml">
+    <Property name="FilterOptions" value="GcScreenFilterOption">
+      <Property name="Filter" value="GcScreenFilters">
         <Property name="ScreenFilter" value="FrozenStorm" />
       </Property>
-      <Property name="Weight" value="0.01" />
+      <Property name="Weight" value="0.010000" />
     </Property>
-    <Property value="GcScreenFilterOption.xml">
-      <Property name="Filter" value="GcScreenFilters.xml">
+    <Property name="FilterOptions" value="GcScreenFilterOption">
+      <Property name="Filter" value="GcScreenFilters">
         <Property name="ScreenFilter" value="ScorchedStorm" />
       </Property>
-      <Property name="Weight" value="0.02" />
+      <Property name="Weight" value="0.020000" />
     </Property>>
-    <Property value="GcScreenFilterOption.xml">
-      <Property name="Filter" value="GcScreenFilters.xml">
+    <Property name="FilterOptions" value="GcScreenFilterOption">
+      <Property name="Filter" value="GcScreenFilters">
         <Property name="ScreenFilter" value="ToxicStorm" />
       </Property>
-      <Property name="Weight" value="0.01" />
+      <Property name="Weight" value="0.010000" />
     </Property>
-    <Property value="GcScreenFilterOption.xml">
-      <Property name="Filter" value="GcScreenFilters.xml">
+    <Property name="FilterOptions" value="GcScreenFilterOption">
+      <Property name="Filter" value="GcScreenFilters">
         <Property name="ScreenFilter" value="RadioactiveStorm" />
       </Property>
-      <Property name="Weight" value="0.02" />
+      <Property name="Weight" value="0.020000" />
     </Property>
 ]],
                         },
@@ -74,47 +74,41 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADOBJECTSDEAD.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Objects", "GcEnvironmentSpawnData"},
                             ["PRECEDING_KEY_WORDS"] = {"DistantObjects"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
-      <Property value="GcObjectSpawnData.xml">
+      <Property name="DistantObjects" value="GcObjectSpawnData">
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
+        <Property name="Resource" value="GcResourceElement">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN" />
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
+          <Property name="Seed" value="0" />
           <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
             <Property name="Samplers" />
           </Property>
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
         <Property name="Placement" value="SPARSECLUMP" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceAnywhereNear" />
         <Property name="OverlapStyle" value="None" />
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="RelativeToSeaLevel" value="true" />
         <Property name="MinAngle" value="0" />
         <Property name="MaxAngle" value="60" />
-        <Property name="MatchGroundColour" value="False" />
+        <Property name="MatchGroundColour" value="false" />
         <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
+        <Property name="SwapPrimaryForSecondaryColour" value="false" />
+        <Property name="SwapPrimaryForRandomColour" value="false" />
+        <Property name="AlignToNormal" value="true" />
         <Property name="MinScale" value="2" />
         <Property name="MaxScale" value="8" />
         <Property name="MinScaleY" value="1" />
@@ -122,17 +116,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="SlopeScaling" value="1" />
         <Property name="PatchEdgeScaling" value="0" />
         <Property name="MaxXZRotation" value="10" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="True" />
-        <Property name="CollideWithPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="False" />
+        <Property name="AutoCollision" value="false" />
+        <Property name="CollideWithPlayer" value="true" />
+        <Property name="CollideWithPlayerVehicle" value="true" />
+        <Property name="DestroyedByPlayerVehicle" value="false" />
+        <Property name="DestroyedByPlayerShip" value="true" />
+        <Property name="DestroyedByTerrainEdit" value="true" />
+        <Property name="InvisibleToCamera" value="true" />
+        <Property name="CreaturesCanEat" value="false" />
         <Property name="ShearWindStrength" value="0" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
           <Property name="FlatDensity" value="0.5" />
@@ -152,7 +146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
+          <Property value="GcObjectSpawnDataVariant">
             <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="0.2" />
             <Property name="FlatDensity" value="0.055" />
@@ -173,40 +167,33 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData">
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
+        <Property name="Resource" value="GcResourceElement">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGESPIKEROCK.SCENE.MBIN" />
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
+          <Property name="Seed" value="0" />
           <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
             <Property name="Samplers" />
           </Property>
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
         <Property name="Placement" value="FLORACLUMP" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceAnywhereNear" />
         <Property name="OverlapStyle" value="None" />
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="RelativeToSeaLevel" value="true" />
         <Property name="MinAngle" value="0" />
         <Property name="MaxAngle" value="60" />
-        <Property name="MatchGroundColour" value="False" />
+        <Property name="MatchGroundColour" value="false" />
         <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
+        <Property name="SwapPrimaryForSecondaryColour" value="false" />
+        <Property name="SwapPrimaryForRandomColour" value="false" />
+        <Property name="AlignToNormal" value="true" />
         <Property name="MinScale" value="10" />
         <Property name="MaxScale" value="20" />
         <Property name="MinScaleY" value="1" />
@@ -214,17 +201,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="SlopeScaling" value="1" />
         <Property name="PatchEdgeScaling" value="0" />
         <Property name="MaxXZRotation" value="0" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="True" />
-        <Property name="CollideWithPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerShip" value="False" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="False" />
+        <Property name="AutoCollision" value="false" />
+        <Property name="CollideWithPlayer" value="true" />
+        <Property name="CollideWithPlayerVehicle" value="true" />
+        <Property name="DestroyedByPlayerVehicle" value="false" />
+        <Property name="DestroyedByPlayerShip" value="false" />
+        <Property name="DestroyedByTerrainEdit" value="true" />
+        <Property name="InvisibleToCamera" value="true" />
+        <Property name="CreaturesCanEat" value="false" />
         <Property name="ShearWindStrength" value="0" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
           <Property name="FlatDensity" value="0.5" />
@@ -244,7 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
+          <Property value="GcObjectSpawnDataVariant">
             <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="0.15" />
             <Property name="FlatDensity" value="0.005" />
@@ -268,34 +255,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["PRECEDING_FIRST"] = "True",
-                            ["PRECEDING_KEY_WORDS"] = {"Objects", "Objects"},
+                            ["SPECIAL_KEY_WORDS"] = {"Objects", "GcEnvironmentSpawnData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Objects"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-      <Property value="GcObjectSpawnData.xml">
+      <Property name="Objects" value="GcObjectSpawnData">
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
+        <Property name="Resource" value="GcResourceElement">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/ROCKS/MEDIUM/MEDIUMROCK.SCENE.MBIN" />
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
+          <Property name="Seed" value="0" />
           <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
             <Property name="Samplers">
-              <Property value="TkProceduralTextureChosenOptionSampler.xml">
+              <Property value="TkProceduralTextureChosenOptionSampler">
                 <Property name="Options">
-                  <Property value="TkProceduralTextureChosenOption.xml">
+                  <Property value="TkProceduralTextureChosenOption">
                     <Property name="Layer" value="SNOW" />
                     <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
+                    <Property name="Palette" value="TkPaletteTexture">
                       <Property name="Palette" value="Snow" />
                       <Property name="ColourAlt" value="Primary" />
                     </Property>
-                    <Property name="OverrideColour" value="False" />
-                    <Property name="Colour" value="Colour.xml">
+                    <Property name="OverrideColour" value="false" />
+                    <Property name="Colour" value="Colour">
                       <Property name="R" value="0.509" />
                       <Property name="G" value="0.685" />
                       <Property name="B" value="0.7" />
@@ -303,15 +287,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property name="OptionName" value="" />
                   </Property>
-                  <Property value="TkProceduralTextureChosenOption.xml">
+                  <Property value="TkProceduralTextureChosenOption">
                     <Property name="Layer" value="MOSS" />
                     <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
+                    <Property name="Palette" value="TkPaletteTexture">
                       <Property name="Palette" value="Plant" />
                       <Property name="ColourAlt" value="Primary" />
                     </Property>
-                    <Property name="OverrideColour" value="False" />
-                    <Property name="Colour" value="Colour.xml">
+                    <Property name="OverrideColour" value="false" />
+                    <Property name="Colour" value="Colour">
                       <Property name="R" value="0.278" />
                       <Property name="G" value="0.581" />
                       <Property name="B" value="0.653" />
@@ -319,15 +303,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property name="OptionName" value="" />
                   </Property>
-                  <Property value="TkProceduralTextureChosenOption.xml">
+                  <Property value="TkProceduralTextureChosenOption">
                     <Property name="Layer" value="BASE" />
                     <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
+                    <Property name="Palette" value="TkPaletteTexture">
                       <Property name="Palette" value="Rock" />
                       <Property name="ColourAlt" value="Primary" />
                     </Property>
-                    <Property name="OverrideColour" value="False" />
-                    <Property name="Colour" value="Colour.xml">
+                    <Property name="OverrideColour" value="false" />
+                    <Property name="Colour" value="Colour">
                       <Property name="R" value="0.334" />
                       <Property name="G" value="0.33" />
                       <Property name="B" value="0.327" />
@@ -343,23 +327,19 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
         <Property name="Placement" value="FLORACLUMP" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
         <Property name="PlacementPriority" value="High" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="RelativeToSeaLevel" value="true" />
         <Property name="MinAngle" value="0" />
         <Property name="MaxAngle" value="40" />
-        <Property name="MatchGroundColour" value="False" />
+        <Property name="MatchGroundColour" value="false" />
         <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
+        <Property name="SwapPrimaryForSecondaryColour" value="false" />
+        <Property name="SwapPrimaryForRandomColour" value="false" />
+        <Property name="AlignToNormal" value="true" />
         <Property name="MinScale" value="1" />
         <Property name="MaxScale" value="1.8" />
         <Property name="MinScaleY" value="1" />
@@ -367,17 +347,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="SlopeScaling" value="1" />
         <Property name="PatchEdgeScaling" value="0.2" />
         <Property name="MaxXZRotation" value="0" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="True" />
-        <Property name="CollideWithPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="False" />
+        <Property name="AutoCollision" value="false" />
+        <Property name="CollideWithPlayer" value="true" />
+        <Property name="CollideWithPlayerVehicle" value="false" />
+        <Property name="DestroyedByPlayerVehicle" value="true" />
+        <Property name="DestroyedByPlayerShip" value="true" />
+        <Property name="DestroyedByTerrainEdit" value="true" />
+        <Property name="InvisibleToCamera" value="true" />
+        <Property name="CreaturesCanEat" value="false" />
         <Property name="ShearWindStrength" value="0" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.18" />
           <Property name="FlatDensity" value="0.008" />
@@ -397,7 +377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
+          <Property value="GcObjectSpawnDataVariant">
             <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="0.18" />
             <Property name="FlatDensity" value="0.008" />
@@ -421,34 +401,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]],
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Objects", "GcEnvironmentSpawnData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Objects", "GcEnvironmentSpawnData"},
                             ["PRECEDING_KEY_WORDS"] = {"DetailObjects"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-      <Property value="GcObjectSpawnData.xml">
+      <Property name="DetailObjects" value="GcObjectSpawnData">
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
+        <Property name="Resource" value="GcResourceElement">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN" />
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="1" />
-            <Property name="UseSeedValue" value="True" />
-          </Property>
+          <Property name="Seed" value="1" />
           <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
             <Property name="Samplers">
-              <Property value="TkProceduralTextureChosenOptionSampler.xml">
+              <Property value="TkProceduralTextureChosenOptionSampler">
                 <Property name="Options">
-                  <Property value="TkProceduralTextureChosenOption.xml">
+                  <Property value="TkProceduralTextureChosenOption">
                     <Property name="Layer" value="BASE" />
                     <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
+                    <Property name="Palette" value="TkPaletteTexture">
                       <Property name="Palette" value="Plant" />
                       <Property name="ColourAlt" value="Primary" />
                     </Property>
-                    <Property name="OverrideColour" value="True" />
-                    <Property name="Colour" value="Colour.xml">
+                    <Property name="OverrideColour" value="true" />
+                    <Property name="Colour" value="Colour">
                       <Property name="R" value="0.42" />
                       <Property name="G" value="0.53" />
                       <Property name="B" value="0.239" />
@@ -464,23 +441,19 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
         <Property name="Placement" value="GRASS" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
         <Property name="PlacementPriority" value="Low" />
         <Property name="LargeObjectCoverage" value="AlwaysPlace" />
         <Property name="OverlapStyle" value="All" />
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="RelativeToSeaLevel" value="true" />
         <Property name="MinAngle" value="0" />
         <Property name="MaxAngle" value="48" />
-        <Property name="MatchGroundColour" value="True" />
+        <Property name="MatchGroundColour" value="true" />
         <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
+        <Property name="SwapPrimaryForSecondaryColour" value="false" />
+        <Property name="SwapPrimaryForRandomColour" value="false" />
+        <Property name="AlignToNormal" value="true" />
         <Property name="MinScale" value="1.44" />
         <Property name="MaxScale" value="1.5" />
         <Property name="MinScaleY" value="1" />
@@ -488,17 +461,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="SlopeScaling" value="1" />
         <Property name="PatchEdgeScaling" value="0.5" />
         <Property name="MaxXZRotation" value="0" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="False" />
-        <Property name="CollideWithPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="False" />
+        <Property name="AutoCollision" value="false" />
+        <Property name="CollideWithPlayer" value="false" />
+        <Property name="CollideWithPlayerVehicle" value="false" />
+        <Property name="DestroyedByPlayerVehicle" value="true" />
+        <Property name="DestroyedByPlayerShip" value="true" />
+        <Property name="DestroyedByTerrainEdit" value="true" />
+        <Property name="InvisibleToCamera" value="true" />
+        <Property name="CreaturesCanEat" value="false" />
         <Property name="ShearWindStrength" value="0.75" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="1" />
           <Property name="FlatDensity" value="0.6" />
@@ -518,7 +491,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
+          <Property value="GcObjectSpawnDataVariant">
             <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="1" />
             <Property name="FlatDensity" value="0.6" />
@@ -537,7 +510,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property value="500" />
             </Property>
           </Property>
-          <Property value="GcObjectSpawnDataVariant.xml">
+          <Property value="GcObjectSpawnDataVariant">
             <Property name="ID" value="ULTRA" />
             <Property name="Coverage" value="1" />
             <Property name="FlatDensity" value="0.6" />

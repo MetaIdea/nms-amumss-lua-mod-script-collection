@@ -230,6 +230,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                     }
                 },
+                { -- METADATA/SIMULATION/MISSIONS/TABLES/WATERMISSIONTABLE.MBIN
+                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES/WATERMISSIONTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        -- regexp: name="MarkerLabel" value="SUB_RADAR_OSD
+                        { -- Sunken Building Detected -> Sunken Structure
+                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "WATERSTORY5" },
+                            ["REPLACE_TYPE"]       = "ALL",
+                            ["VALUE_MATCH"]        = "SUB_RADAR_OSD_ABANDON",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "MarkerLabel", "UI_WATERMISSION3_MARKER" }, -- SUB_RADAR_OSD_ABANDON
+                            },
+                        },
+                        { -- Sunken Wreck Detected -> Shipwreck
+                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "WATERSTORY4", "Name", "SE_WATERMISSION4" },
+                            ["VALUE_MATCH"]        = "SUB_RADAR_OSD_FREIGHTER",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "MarkerLabel", "SHIPWRECK" }, -- SUB_RADAR_OSD_FREIGHTER
+                            },
+                        },
+                    }
+                },
                 --#endregion
 
                 --#region Using a chart shows the message "Inventory Full"

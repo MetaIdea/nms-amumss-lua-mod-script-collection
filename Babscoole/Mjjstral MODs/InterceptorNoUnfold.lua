@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]   = "InterceptorNoUnfold.pak",
+["MOD_FILENAME"]   = "InterceptorNoUnfold",
 ["MOD_AUTHOR"]     = "Mjstral & Babscoole",
-["NMS_VERSION"]    = "5.29",
+["NMS_VERSION"]    = "5.73",
 ["MODIFICATIONS"]  =
     {
         {
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEL\ENTITIES\DATA.ENTITY.MBIN",
                         "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY1\ENTITIES\DATA.ENTITY.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "TAKEOFF"},
@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\SENTINELSHIP_PROC\ENTITIES\ROOTJNT.ENTITY.MBIN",
                         "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\WINGSB\ENTITIES\ROOTJNT.ENTITY.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PKW_1"] = "True",
@@ -49,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEL\ENTITIES\DATA.ENTITY.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "LOWALTITUDE"},

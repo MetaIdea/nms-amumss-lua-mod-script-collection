@@ -1,5 +1,5 @@
 ModName = "PTSd Mission Adjustments"
-GameVersion = "5_12"
+GameVersion = "5_62"
 Description = "Increases the amount of items required to complete certain 'Expanding the Base' quests, some quests no longer give certain blueprints as rewards."
 
 --GcDefaultMissionProductEnum.xml
@@ -9,9 +9,12 @@ Description = "Increases the amount of items required to complete certain 'Expan
 --"MissionID" value="G_COLLECT3" />
 --"MissionID" value="G_COLLECT2" />
 
-StartingHazDamage =		25				--76	What percentage of your Hazard protection is missing when starting a new game file
-StarNewGameWithIonBatt = false			--		Set true to begin new games with Ion Battery in the inventory, false otherwise
+StartingHazDamage =		25				--76		What percentage of your Hazard protection is missing when starting a new game file
+StarNewGameWithIonBatt = false			--			Set true to begin new games with Ion Battery in the inventory, false otherwise
 NewGameIonBattAmmount = 1				--Amount of Ion Batteries to start the game with, if above setting set to true
+AbandModeStartAtlasSeeds = false		--false		Set true to begin Abandoned Mode with all Atlas Seeds recipes already known. Otherwise they have a chance to be learned when opening boxes on Abandoned Stations in Abandoned Mode
+AbandModeStartDiscordKey = false		--false		Set true to begin Abandoned Mode knowing the recipe for a PTSd-added tech which allows accessing Discordant Interfaces. Otherwise it can be learned when opening boxes on Abandoned Stations in Abandoned Mode
+AbandModeStartCreaPellet = false		--false		Set true to begin Abandoned Mode knowing the recipe for Creature Pellets. Otherwise it can be learned from opening Buried Caches, Crashed Freighter Containers, or unlocked from Construction Research Unit or Anomaly Construction Research Station (above Nutrient Processor)
 
 --Multipliers to apply to amount of items needed to hand in to complete certain stages of the "Expanding the Base" questline
 SubstanceReqMult =		20				--16x quests: 40 Chromatic Metal, 50 Pugneum,  45 Solanium, 100 Mordite, 100 Gold, 50 Mag. Ferrite, 30 Cobalt, 30 Marrow Bulb, 25 Faecium, 50 Frost Crystals, 50 Solanium, 50 Fungal Mould, 50 Gamma Root, 100 Cactus Flesh, 25 Star Bulbs, 25 Mordite
@@ -53,19 +56,21 @@ RemoveContainerMission = {"CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6"
 
 --Replacement Reward
 SalvagedDataReward =
-[[<Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
+[[<Property name="List" value="GcRewardTableItem">
+                <Property name="PercentageChance" value="100.000000" />
 				<Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardSpecificProduct.xml">
-                  <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                    <Property name="DefaultProductType" value="None" />
-                  </Property>
-                  <Property name="ID" value="BP_SALVAGE" />
-                  <Property name="AmountMin" value="1" />
-                  <Property name="AmountMax" value="1" />
-                  <Property name="ForceSpecialMessage" value="False" />
-                  <Property name="HideInSeasonRewards" value="False" />
-                  <Property name="Silent" value="False" />
+                <Property name="Reward" value="GcRewardSpecificProduct">
+                  <Property name="GcRewardSpecificProduct">
+					  <Property name="Default" value="GcDefaultMissionProductEnum">
+						<Property name="DefaultProductType" value="None" />
+					  </Property>
+					  <Property name="ID" value="BP_SALVAGE" />
+					  <Property name="AmountMin" value="1" />
+					  <Property name="AmountMax" value="1" />
+					  <Property name="ForceSpecialMessage" value="false" />
+					  <Property name="HideInSeasonRewards" value="false" />
+					  <Property name="Silent" value="false" />
+				  </Property>
                 </Property>
               </Property>]]
 
@@ -74,28 +79,52 @@ SalvagedDataReward =
 
 function RewardIonBattery (amount)
     return
-[[<Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+[[<Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="POWERCELL" />
-              <Property name="AmountMin" value="]]..amount..[[" />
-              <Property name="AmountMax" value="1" />
-              <Property name="ForceSpecialMessage" value="True" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="POWERCELL" />
+				  <Property name="AmountMin" value="]]..amount..[[" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="ForceSpecialMessage" value="true" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+			  </Property>
             </Property>
           </Property>]]
 end
 
 function AddMissionReward (RewardID)
     return
-    [[<Property value="NMSString0x10.xml">
-                    <Property name="Value" value="]]..RewardID..[[" />
-                  </Property>]]
+    [[<Property name="Rewards" value="]]..RewardID..[[" />]]
+end
+
+AtlasSeedRecipes =
+{"ATLAS_SEED_1", "ATLAS_SEED_2", "ATLAS_SEED_3", "ATLAS_SEED_4", "ATLAS_SEED_5", "ATLAS_SEED_6", "ATLAS_SEED_7", "ATLAS_SEED_8", "ATLAS_SEED_9", "ATLAS_SEED_10", }
+
+function AddProductRecipe (ProductId)
+	return
+	[[<Property name="ProductIds" value="]]..ProductId..[[" />]]
+end
+
+function TechRecipeReward (TechId, AutoPin, Silent)
+	return
+	[[<Property name="List" value="GcRewardTableItem">
+								<Property name="PercentageChance" value="100.000000" />
+								<Property name="LabelID" value="" />
+								<Property name="Reward" value="GcRewardSpecificTech">
+									<Property name="GcRewardSpecificTech">
+										<Property name="TechId" value="]]..TechId..[[" />
+										<Property name="AutoPin" value="]]..AutoPin..[[" />
+										<Property name="Silent" value="]]..Silent..[[" />
+										<Property name="HideInSeasonRewards" value="false" />
+									</Property>
+								</Property>
+							</Property>]]
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -103,11 +132,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
+["EXML_CREATE"] = "FALSE",  
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\SENTINELSETTLEMENTMISSIONTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Product", "BP_SALVAGE"},
@@ -123,7 +153,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\TUTORIALMISSIONTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "R_SET_HAZ"},
@@ -136,7 +166,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\MISSIONTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"MissionID", "TRADE_SURGE"},
@@ -147,15 +177,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Value","SACVENOMPLANT"},
-				["REMOVE"] = "SECTION"
+				["SPECIAL_KEY_WORDS"] = {"ProductIds","SACVENOMPLANT"},
+				["REMOVE"] = "LINE"
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Value","PEARLPLANT"},
-				["REMOVE"] = "SECTION"
+				["SPECIAL_KEY_WORDS"] = {"ProductIds","PEARLPLANT"},
+				["REMOVE"] = "LINE"
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Default", "GcDefaultMissionSubstanceEnum.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Default", "GcDefaultMissionSubstanceEnum"},
 				["REPLACE_TYPE"] 		= "ALL",
 				["MATH_OPERATION"] 		= "*",
 				["SECTION_UP"] = 1,
@@ -167,7 +197,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Default", "GcDefaultMissionProductEnum.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Default", "GcDefaultMissionProductEnum"},
 				["REPLACE_TYPE"] 		= "ALL",
 				["MATH_OPERATION"] 		= "*",
 				["SECTION_UP"] = 1,
@@ -226,9 +256,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--Resets these non-Expanding the Base mission requirements to default
 			{
 				["SPECIAL_KEY_WORDS"] = {
-				{"MissionID", "G_COLLECT2",		"Default", "GcDefaultMissionProductEnum.xml"}, 
-				{"MissionID", "G_COLLECT3",		"Default", "GcDefaultMissionProductEnum.xml"}, 
-				{"MissionID", "G_DEL_HARD",		"Default", "GcDefaultMissionProductEnum.xml"}, 
+				{"MissionID", "G_COLLECT2",		"Default", "GcDefaultMissionProductEnum"}, 
+				{"MissionID", "G_COLLECT3",		"Default", "GcDefaultMissionProductEnum"}, 
+				{"MissionID", "G_DEL_HARD",		"Default", "GcDefaultMissionProductEnum"}, 
 				},
 				["REPLACE_TYPE"] 		= "ALL",
 				["MATH_OPERATION"] 		= "/",
@@ -244,7 +274,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\STARTEDONUSEMISSIONTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Product", "DRONE_SHARD"},
@@ -270,7 +300,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\BASECOMPUTERMISSIONTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Stat", "WORDS_LEARNT"},
@@ -287,71 +317,99 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\COREMISSIONTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			--Intentionally left blank to be filled in by a function below
 		}
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\WATERMISSIONTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			--Intentionally left blank to be filled in by a function below
 		}
 	}
 }}}}
 
-local ChangesToSettlementMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToSettlementMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #ReplacedRewardsSentinel do
 	local RewardID = ReplacedRewardsSentinel[i]
 
 			ChangesToSettlementMissionTable[#ChangesToSettlementMissionTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", RewardID},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id", RewardID,	"List", "GcRewardTableItem"},
+				["ADD_OPTION"]  = "ADDafterSECTION", 
 				["ADD"] = SalvagedDataReward
 			}
 			
 			ChangesToSettlementMissionTable[#ChangesToSettlementMissionTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id",RewardID},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				--["SECTION_UP"] = 2,
+				["SPECIAL_KEY_WORDS"] = {"Id",RewardID,	"List", "GcRewardTableItem"},
 				["REMOVE"] = "SECTION"
 			}
 end
 
-local ChangesToTutorialMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local ChangesToTutorialMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
 
 if StarNewGameWithIonBatt then
 ChangesToTutorialMissionTable[#ChangesToTutorialMissionTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "R_SET_HAZ"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_SET_HAZ",	"List", "GcRewardTableItem"},
+				["ADD_OPTION"]  = "ADDafterSECTION", 
 				["ADD"] = RewardIonBattery (NewGameIonBattAmmount)
 			}
 end
 
-local ChangesToMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+if AbandModeStartAtlasSeeds then
+	for i = 1, #AtlasSeedRecipes do
+		local AtlasSeed = AtlasSeedRecipes[i]
+			
+				ChangesToTutorialMissionTable[#ChangesToTutorialMissionTable+1] =
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id", "R_ABAND_MODE"},
+					["PRECEDING_KEY_WORDS"] = {"ProductIds"},
+					["ADD_OPTION"]  = "ADDendSECTION", 
+					["ADD"] = AddProductRecipe (AtlasSeed)
+				}
+	end
+end
+if AbandModeStartDiscordKey then
+				ChangesToTutorialMissionTable[#ChangesToTutorialMissionTable+1] =
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id", "R_ABAND_MODE",		"List", "GcRewardTableItem"},
+					["ADD_OPTION"]  = "ADDafterSECTION", 
+					["ADD"] = TechRecipeReward ("DISCORDKEY", "false", "false")
+				}
+end
+if AbandModeStartCreaPellet then
+				ChangesToTutorialMissionTable[#ChangesToTutorialMissionTable+1] =
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id", "R_ABAND_MODE"},
+					["PRECEDING_KEY_WORDS"] = {"ProductIds"},
+					["ADD_OPTION"]  = "ADDendSECTION", 
+					["ADD"] = AddProductRecipe ("BAIT_BASIC")
+				}
+end
+
+
+
+local ChangesToMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["MXML_CHANGE_TABLE"]
 
 for i = 1, #RemoveContainerMission do
 	local ContainerID = RemoveContainerMission[i]
 		
 			ChangesToMissionTable[#ChangesToMissionTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "HAND_IN_OS4",	"Value",	ContainerID},
-				["REMOVE"] = "SECTION"
+				["SPECIAL_KEY_WORDS"] = {"Id", "HAND_IN_OS4",	"ProductIds",	ContainerID},
+				["REMOVE"] = "LINE"
 			}
 end
 if RemoveLargePlanterReward then
 ChangesToMissionTable[#ChangesToMissionTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Value",	"PLANTERMEGA"},
-				["REMOVE"] = "SECTION"
+				["SPECIAL_KEY_WORDS"] = {"ProductIds",	"PLANTERMEGA"},
+				["REMOVE"] = "LINE"
 			}
 ChangesToMissionTable[#ChangesToMissionTable+1] =
 			{
@@ -401,24 +459,24 @@ ChangesToMissionTable[#ChangesToMissionTable+1] =
 			}
 ChangesToMissionTable[#ChangesToMissionTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Value",	"HNDIN_WEAPGUY4"},
-				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["SPECIAL_KEY_WORDS"] = {"Rewards",	"HNDIN_WEAPGUY4"},
+				["ADD_OPTION"]  = "ADDafterLINE", 
 				["ADD"] = AddMissionReward ("PROC_TECH_SHIP")
 			}
 end
 
-local ChangesToCoreMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
+local ChangesToCoreMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["MXML_CHANGE_TABLE"]
 
 if RemoveEarlyRoamerReward then
 ChangesToCoreMissionTable[#ChangesToCoreMissionTable+1] =
 			{
 				["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {"Value",	"GARAGE_M"},
+				["SPECIAL_KEY_WORDS"] = {"ProductIds",	"GARAGE_M"},
 				["REMOVE"] = "SECTION"
 			}
 end
 
-local ChangesToWaterMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["EXML_CHANGE_TABLE"]
+local ChangesToWaterMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["MXML_CHANGE_TABLE"]
 
 if DreamsDeepNeedSonar2 then
 ChangesToWaterMissionTable[#ChangesToWaterMissionTable+1] =

@@ -8,11 +8,10 @@ LUSH_DENSITY_MULTIPLIER = 0.77
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Exo's Grass Fix.pak",
+["MOD_FILENAME"]            = "_Exo's Grass Fix",
 ["MOD_AUTHOR"]              = "Exosolar",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.29",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "5.73",
 ["MODIFICATIONS"]           =
     {
         {
@@ -20,14 +19,14 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", MINSCALE_MULTIPLIER},
+                                {"MinScale ", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -52,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"LargeObjectCoverage", "AlwaysPlace"},
                                 {"MaxAngle",            "46"},
-                                {"MinScale",            "1.66"},
+                                {"MinScale ",           "1.66"},
                                 {"MaxScale",            "1.67"},
                                 {"MinScaleY",           "0.7"},
                                 {"MaxScaleY",           "0.75"},
@@ -75,7 +74,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -89,7 +87,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -103,7 +101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -120,7 +118,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -139,14 +137,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", MINSCALE_MULTIPLIER},
+                                {"MinScale ", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -164,7 +162,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["VALUE_MATCH"] = "0.8",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale", "1.04"},
+                                -- {"MinScale ", "1.04"},
                             -- }
                         -- },
                         -- {
@@ -180,7 +178,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["VALUE_MATCH"] = "0.7",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale", "0.91"},
+                                -- {"MinScale ", "0.91"},
                             -- }
                         -- },
                         -- {
@@ -196,7 +194,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["VALUE_MATCH"] = "1",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale", "1.3"},
+                                -- {"MinScale ", "1.3"},
                             -- }
                         -- },
                         -- {
@@ -212,7 +210,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["VALUE_MATCH"] = "0.6",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale", "0.78"},
+                                -- {"MinScale ", "0.78"},
                             -- }
                         -- },
                         -- {
@@ -228,7 +226,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["VALUE_MATCH"] = "1.9",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale", "2.47"},
+                                -- {"MinScale ", "2.47"},
                             -- }
                         -- },
                         -- {
@@ -243,7 +241,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BUILDINGDRESSING.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DetailObjects"},
@@ -257,7 +255,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BUILDINGDRESSINGGLOW.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DetailObjects"},
@@ -271,14 +269,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 -- {
                     -- ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGELUSH\HUGELUSHOBJECTSFULL.MBIN",
-                    -- ["EXML_CHANGE_TABLE"] =
+                    -- ["MXML_CHANGE_TABLE"] =
                     -- {
                         -- {
                             -- ["REPLACE_TYPE"] = "ALL",
                             -- ["MATH_OPERATION"] = "*F:MaxScale",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale", MINSCALE_MULTIPLIER},
+                                -- {"MinScale ", MINSCALE_MULTIPLIER},
                             -- }
                         -- },
                         -- {
@@ -292,12 +290,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
-                            -- ["REPLACE_TYPE"] = "ONCEINSIDE",
+                            -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            -- ["VALUE_MATCH_TYPE"] = "STRING",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"Seed",         "1"},
-                                -- {"UseSeedValue", "True"},
+                                -- {"Seed", "1"},
                             -- }
                         -- },
                         -- {
@@ -312,7 +309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- {
                                 -- {"LargeObjectCoverage", "AlwaysPlace"},
                                 -- {"MaxAngle",            "46"},
-                                -- {"MinScale",            "1.66"},
+                                -- {"MinScale ",           "1.66"},
                                 -- {"MaxScale",            "1.67"},
                                 -- {"MinScaleY",           "0.7"},
                                 -- {"MaxScaleY",           "0.75"},
@@ -363,11 +360,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "GcObjectSpawnDataVariant.xml"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "QualityVariants"},
                             -- ["ADD_OPTION"] = "ADDafterSECTION",
                             -- ["ADD"] =
 -- [[
-          -- <Property value="GcObjectSpawnDataVariant.xml">
+          -- <Property value="QualityVariants">
             -- <Property name="ID" value="ULTRA" />
             -- <Property name="Coverage" value="0.21" />
             -- <Property name="FlatDensity" value="0.36" />
@@ -396,14 +393,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 -- },
                 -- {
                     -- ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL.MBIN",
-                    -- ["EXML_CHANGE_TABLE"] =
+                    -- ["MXML_CHANGE_TABLE"] =
                     -- {
                         -- {
                             -- ["REPLACE_TYPE"] = "ALL",
                             -- ["MATH_OPERATION"] = "*F:MaxScale",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MinScale", MINSCALE_MULTIPLIER},
+                                -- {"MinScale ", MINSCALE_MULTIPLIER},
                             -- }
                         -- },
                         -- {
@@ -417,36 +414,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "Seed"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData", "GcObjectSpawnData", "Seed"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"Seed",         "1"},
-                                -- {"UseSeedValue", "True"},
+                                -- {"Seed", "1"},
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "Samplers"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData", "GcObjectSpawnData", "Samplers"},
                             -- ["CREATE_HOES"] = "TRUE",
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData", "GcObjectSpawnData"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Placement",           "GRASS"},
                                 -- {"LargeObjectCoverage", "AlwaysPlace"},
                                 -- {"MaxAngle",            "46"},
-                                -- {"MatchGroundColour",   "True"},
-                                -- {"MinScale",            "1.66"},
+                                -- {"MatchGroundColour",   "true"},
+                                -- {"MinScale ",           "1.66"},
                                 -- {"MaxScale",            "1.67"},
                                 -- {"MinScaleY",           "0.7"},
                                 -- {"MaxScaleY",           "0.75"},
                                 -- {"SlopeScaling",        "1.1"},
                                 -- {"PatchEdgeScaling",    "0.5"},
-                                -- {"CreaturesCanEat",     "False"},
+                                -- {"CreaturesCanEat",     "false"},
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariantData"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData", "GcObjectSpawnData", "QualityVariantData"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage",          "0.21"},
@@ -457,7 +453,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData", "GcObjectSpawnData", "QualityVariants", "QualityVariants"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage",              "0.21"},
@@ -472,7 +468,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "LodDistances"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData", "GcObjectSpawnData", "QualityVariants", "LodDistances"},
                             -- ["REPLACE_TYPE"] = "ONCEINSIDE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -484,7 +480,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData", "GcObjectSpawnData", "QualityVariants", "QualityVariants", "QualityVariants"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage",              "0.21"},
@@ -499,7 +495,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- }
                         -- },
                         -- {
-                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData", "GcObjectSpawnData", "QualityVariants", "QualityVariants", "QualityVariants", "LodDistances"},
                             -- ["REPLACE_TYPE"] = "ONCEINSIDE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -517,7 +513,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- {
                                 -- {"LargeObjectCoverage", "AlwaysPlace"},
                                 -- {"MaxAngle",            "46"},
-                                -- {"MinScale",            "1.51"},
+                                -- {"MinScale ",           "1.51"},
                                 -- {"MaxScale",            "1.52"},
                                 -- {"MinScaleY",           "0.751"},
                                 -- {"MaxScaleY",           "0.752"},
@@ -569,7 +565,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"Coverage",              "0.185"},
@@ -586,7 +582,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
-                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants", "LodDistances"},
                             -- ["REPLACE_TYPE"] = "ONCEINSIDE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
@@ -601,14 +597,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 -- },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", MINSCALE_MULTIPLIER},
+                                {"MinScale ", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -627,12 +623,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["CREATE_HOES"] = "TRUE",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["VALUE_MATCH_TYPE"] = "STRING",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "1"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "1"},
                             }
                         },
                         {
@@ -642,8 +637,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"LargeObjectCoverage", "AlwaysPlace"},
                                 {"MaxAngle",            "46"},
-                                {"MatchGroundColour",   "True"},
-                                {"MinScale",            "1.66"},
+                                {"MatchGroundColour",   "true"},
+                                {"MinScale ",           "1.66"},
                                 {"MaxScale",            "1.67"},
                                 {"MinScaleY",           "0.7"},
                                 {"MaxScaleY",           "0.75"},
@@ -666,7 +661,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -680,7 +675,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -694,7 +689,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -711,7 +706,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -726,14 +721,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", MINSCALE_MULTIPLIER},
+                                {"MinScale ", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -768,7 +763,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"LargeObjectCoverage", "AlwaysPlace"},
                                 {"MaxAngle",            "46"},
-                                {"MinScale",            "1.66"},
+                                {"MinScale ",           "1.66"},
                                 {"MaxScale",            "1.67"},
                                 {"MinScaleY",           "0.7"},
                                 {"MaxScaleY",           "0.75"},
@@ -836,7 +831,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -853,7 +848,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -868,14 +863,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", LUSH_MINSCALE_MULTIPLIER},
+                                {"MinScale ", LUSH_MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -900,7 +895,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"LargeObjectCoverage", "AlwaysPlace"},
                                 {"MaxAngle",            "46"},
-                                {"MinScale",            "2.01"},
+                                {"MinScale ",           "2.01"},
                                 {"MaxScale",            "2.02"},
                                 {"MinScaleY",           "0.81"},
                                 {"MaxScaleY",           "0.82"},
@@ -951,7 +946,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -968,7 +963,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -983,14 +978,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", MINSCALE_MULTIPLIER},
+                                {"MinScale ", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1015,7 +1010,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"LargeObjectCoverage", "AlwaysPlace"},
                                 {"MaxAngle",            "46"},
-                                {"MinScale",            "1.66"},
+                                {"MinScale ",           "1.66"},
                                 {"MaxScale",            "1.67"},
                                 {"MinScaleY",           "0.7"},
                                 {"MaxScaleY",           "0.75"},
@@ -1066,7 +1061,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -1083,7 +1078,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1098,14 +1093,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", LUSH_MINSCALE_MULTIPLIER},
+                                {"MinScale ", LUSH_MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1130,7 +1125,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"LargeObjectCoverage", "AlwaysPlace"},
                                 {"MaxAngle",            "46"},
-                                {"MinScale",            "2.01"},
+                                {"MinScale ",           "2.01"},
                                 {"MaxScale",            "2.02"},
                                 {"MinScaleY",           "0.81"},
                                 {"MaxScaleY",           "0.82"},
@@ -1182,7 +1177,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -1199,7 +1194,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1214,14 +1209,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", MINSCALE_MULTIPLIER},
+                                {"MinScale ", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1235,12 +1230,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["VALUE_MATCH_TYPE"] = "STRING",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Seed", "1"},
-                                {"UseSeedValue", "True"},
                             }
                         },
                         {
@@ -1255,7 +1249,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"LargeObjectCoverage", "AlwaysPlace"},
                                 {"MaxAngle",            "46"},
-                                {"MinScale",            "1.66"},
+                                {"MinScale ",           "1.66"},
                                 {"MaxScale",            "1.67"},
                                 {"MinScaleY",           "0.7"},
                                 {"MaxScaleY",           "0.75"},
@@ -1306,7 +1300,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -1323,7 +1317,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1338,14 +1332,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSLOW.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", MINSCALE_MULTIPLIER},
+                                {"MinScale ", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1372,14 +1366,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Placement",           "GRASS"},
                                 {"LargeObjectCoverage", "AlwaysPlace"},
                                 {"MaxAngle",            "46"},
-                                {"MatchGroundColour",   "True"},
-                                {"MinScale",            "1.66"},
+                                {"MatchGroundColour",   "true"},
+                                {"MinScale ",           "1.66"},
                                 {"MaxScale",            "1.67"},
                                 {"MinScaleY",           "0.7"},
                                 {"MaxScaleY",           "0.75"},
                                 {"SlopeScaling",        "1.1"},
                                 {"PatchEdgeScaling",    "0.5"},
-                                {"CreaturesCanEat",     "False"},
+                                {"CreaturesCanEat",     "false"},
                             }
                         },
                         {
@@ -1398,7 +1392,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -1415,7 +1409,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1429,21 +1423,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-          <Property value="GcObjectSpawnDataVariant.xml">
+          <Property name="QualityVariants" value="GcObjectSpawnDataVariant" _id="ULTRA">
             <Property name="ID" value="ULTRA" />
             <Property name="Coverage" value="0.21" />
             <Property name="FlatDensity" value="0.36" />
             <Property name="SlopeDensity" value="0.4" />
             <Property name="SlopeMultiplier" value="1.1" />
-            <Property name="MaxRegionRadius" value="8" />
-            <Property name="MaxImposterRadius" value="8" />
-            <Property name="FadeOutStartDistance" value="80" />
-            <Property name="FadeOutEndDistance" value="120" />
-            <Property name="FadeOutOffsetDistance" value="15" />
             <Property name="LodDistances">
               <Property value="0" />
               <Property value="10" />
@@ -1451,16 +1440,20 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property value="35" />
               <Property value="180" />
             </Property>
+            <Property name="MaxRegionRadius" value="8" />
+            <Property name="MaxImposterRadius" value="8" />
+            <Property name="FadeOutStartDistance" value="80" />
+            <Property name="FadeOutEndDistance" value="120" />
+            <Property name="FadeOutOffsetDistance" value="15" />
           </Property>
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["VALUE_MATCH_TYPE"] = "STRING",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "1"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "1"},
                             }
                         },
                         {
@@ -1476,7 +1469,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxAngle",         "46"},
-                                {"MinScale",         "1.51"},
+                                {"MinScale ",        "1.51"},
                                 {"MaxScale",         "1.52"},
                                 {"MinScaleY",        "0.751"},
                                 {"MaxScaleY",        "0.752"},
@@ -1528,21 +1521,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-          <Property value="GcObjectSpawnDataVariant.xml">
+          <Property name="QualityVariants" value="GcObjectSpawnDataVariant" _id="ULTRA">
             <Property name="ID" value="ULTRA" />
             <Property name="Coverage" value="0.185" />
             <Property name="FlatDensity" value="0.32" />
             <Property name="SlopeDensity" value="0.36" />
             <Property name="SlopeMultiplier" value="1.1" />
-            <Property name="MaxRegionRadius" value="8" />
-            <Property name="MaxImposterRadius" value="8" />
-            <Property name="FadeOutStartDistance" value="80" />
-            <Property name="FadeOutEndDistance" value="120" />
-            <Property name="FadeOutOffsetDistance" value="15" />
             <Property name="LodDistances">
               <Property value="0" />
               <Property value="8" />
@@ -1550,6 +1538,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property value="25" />
               <Property value="180" />
             </Property>
+            <Property name="MaxRegionRadius" value="8" />
+            <Property name="MaxImposterRadius" value="8" />
+            <Property name="FadeOutStartDistance" value="80" />
+            <Property name="FadeOutEndDistance" value="120" />
+            <Property name="FadeOutOffsetDistance" value="15" />
           </Property>
 ]]
                         },
@@ -1557,14 +1550,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSMID.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", MINSCALE_MULTIPLIER},
+                                {"MinScale ", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1578,12 +1571,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["VALUE_MATCH_TYPE"] = "STRING",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "1"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "1"},
                             }
                         },
                         {
@@ -1597,7 +1589,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxAngle",     "46"},
-                                {"MinScale",     "1.66"},
+                                {"MinScale " ,   "1.66"},
                                 {"MaxScale",     "1.67"},
                                 {"MinScaleY",    "0.7"},
                                 {"MaxScaleY",    "0.75"},
@@ -1648,21 +1640,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-          <Property value="GcObjectSpawnDataVariant.xml">
+          <Property name="QualityVariants" value="GcObjectSpawnDataVariant" _id="ULTRA">
             <Property name="ID" value="ULTRA" />
             <Property name="Coverage" value="0.21" />
             <Property name="FlatDensity" value="0.36" />
             <Property name="SlopeDensity" value="0.4" />
             <Property name="SlopeMultiplier" value="1.1" />
-            <Property name="MaxRegionRadius" value="8" />
-            <Property name="MaxImposterRadius" value="8" />
-            <Property name="FadeOutStartDistance" value="80" />
-            <Property name="FadeOutEndDistance" value="120" />
-            <Property name="FadeOutOffsetDistance" value="15" />
             <Property name="LodDistances">
               <Property value="0" />
               <Property value="10" />
@@ -1670,6 +1657,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property value="35" />
               <Property value="180" />
             </Property>
+            <Property name="MaxRegionRadius" value="8" />
+            <Property name="MaxImposterRadius" value="8" />
+            <Property name="FadeOutStartDistance" value="80" />
+            <Property name="FadeOutEndDistance" value="120" />
+            <Property name="FadeOutOffsetDistance" value="15" />
           </Property>
 ]]
                         },
@@ -1677,14 +1669,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", MINSCALE_MULTIPLIER},
+                                {"MinScale ", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1698,12 +1690,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["VALUE_MATCH_TYPE"] = "STRING",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "1"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "1"},
                             }
                         },
                         {
@@ -1716,7 +1707,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"OverlapStyle",        "All"},
                                 {"MaxAngle",            "46"},
                                 {"MatchGroundColour",   "True"},
-                                {"MinScale",            "1.66"},
+                                {"MinScale ",           "1.66"},
                                 {"MaxScale",            "1.67"},
                                 {"MinScaleY",           "0.7"},
                                 {"MaxScaleY",           "0.75"},
@@ -1786,7 +1777,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -1802,7 +1793,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1817,14 +1808,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", MINSCALE_MULTIPLIER},
+                                {"MinScale ", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1838,12 +1829,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["VALUE_MATCH_TYPE"] = "STRING",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed",         "1"},
-                                {"UseSeedValue", "True"},
+                                {"Seed", "1"},
                             }
                         },
                         {
@@ -1855,8 +1845,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"LargeObjectCoverage", "AlwaysPlace"},
                                 {"OverlapStyle",        "All"},
                                 {"MaxAngle",            "46"},
-                                {"MatchGroundColour",   "True"},
-                                {"MinScale",            "1.66"},
+                                {"MatchGroundColour",   "true"},
+                                {"MinScale ",           "1.66"},
                                 {"MaxScale",            "1.67"},
                                 {"MinScaleY",           "0.7"},
                                 {"MaxScaleY",           "0.75"},
@@ -1926,7 +1916,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -1942,7 +1932,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1957,14 +1947,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMAOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", MINSCALE_MULTIPLIER},
+                                {"MinScale ", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -1989,7 +1979,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"LargeObjectCoverage", "AlwaysPlace"},
                                 {"MaxAngle",            "46"},
-                                {"MinScale",            "1.66"},
+                                {"MinScale ",           "1.66"},
                                 {"MaxScale",            "1.67"},
                                 {"MinScaleY",           "0.7"},
                                 {"MaxScaleY",           "0.75"},
@@ -2041,7 +2031,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -2058,7 +2048,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2073,14 +2063,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", MINSCALE_MULTIPLIER},
+                                {"MinScale ", MINSCALE_MULTIPLIER},
                             }
                         },
                         {
@@ -2105,7 +2095,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"LargeObjectCoverage", "AlwaysPlace"},
                                 {"MaxAngle",            "46"},
-                                {"MinScale",            "1.66"},
+                                {"MinScale ",           "1.66"},
                                 {"MaxScale",            "1.67"},
                                 {"MinScaleY",           "0.7"},
                                 {"MaxScaleY",           "0.75"},
@@ -2158,7 +2148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -2175,7 +2165,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {

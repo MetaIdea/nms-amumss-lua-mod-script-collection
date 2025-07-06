@@ -19,17 +19,19 @@ PacksList =
 function GetPack(Pack)
     return
 [[
-                  <Property value="GcNodeActivationAction.xml">
-                    <Property name="NodeActiveState" value="Toggle" />
-                    <Property name="Name" value="]]..Pack..[[" />
-                    <Property name="SceneToAdd" value="" />
-                    <Property name="IncludePhysics" value="True" />
-                    <Property name="IncludeChildPhysics" value="True" />
-                    <Property name="NotifyNPC" value="False" />
-                    <Property name="UseMasterModel" value="True" />
-                    <Property name="UseLocalNode" value="False" />
-                    <Property name="RestartEmitters" value="False" />
-                    <Property name="AffectModels" value="True" />
+                  <Property name="Action" value="GcNodeActivationAction">
+                    <Property name="GcNodeActivationAction">
+                      <Property name="NodeActiveState" value="Toggle" />
+                      <Property name="Name" value="]]..Pack..[[" />
+                      <Property name="SceneToAdd" value="" />
+                      <Property name="IncludePhysics" value="true" />
+                      <Property name="IncludeChildPhysics" value="true" />
+                      <Property name="NotifyNPC" value="false" />
+                      <Property name="UseMasterModel" value="true" />
+                      <Property name="UseLocalNode" value="false" />
+                      <Property name="RestartEmitters" value="false" />
+                      <Property name="AffectModels" value="true" />
+                    </Property>
                   </Property>
 ]]
 end
@@ -42,10 +44,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "BackpackToggle.pak",
+["MOD_FILENAME"]    = "BackpackToggle",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -53,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
@@ -68,49 +70,49 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
-                            ["SECTION_ACTIVE"] = {2},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Anims"},
                             ["SEC_ADD_NAMED"] = "ADD_ANIM",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcPlayerEffectsComponentData.xml"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
                             ["ADD"] =
 [[
-    <Property value="LinkableNMSTemplate.xml">
-      <Property name="Template" value="GcTriggerActionComponentData.xml">
-        <Property name="HideModel" value="False" />
-        <Property name="StartInactive" value="False" />
+    <Property name="Components" value="GcTriggerActionComponentData">
+      <Property name="GcTriggerActionComponentData">
+        <Property name="HideModel" value="false" />
+        <Property name="StartInactive" value="false" />
         <Property name="States">
-          <Property value="GcActionTriggerState.xml">
+          <Property name="States" value="GcActionTriggerState">
             <Property name="StateID" value="BOOT" />
             <Property name="Triggers">
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcAnimFrameEvent.xml">
-                  <Property name="Anim" value="BACKPACK_TOGGLE" />
-                  <Property name="FrameStart" value="0" />
-                  <Property name="StartFromEnd" value="False" />
+              <Property name="Triggers" value="GcActionTrigger">
+                <Property name="Event" value="GcAnimFrameEvent">
+                  <Property name="GcAnimFrameEvent">
+                    <Property name="Anim" value="BACKPACK_TOGGLE" />
+                    <Property name="FrameStart" value="0" />
+                    <Property name="StartFromEnd" value="false" />
+                  </Property>
                 </Property>
                 <Property name="Action">
 ]] .. table.concat(PACKS_ADDING_ALL) .. [[
-                  <Property value="GcPlayAudioAction.xml">
-                    <Property name="Sound" value="Obj_Shield_Repairer_Off" />
-                    <Property name="UseOcclusion" value="False" />
-                    <Property name="OcclusionRadius" value="2" />
+                  <Property name="Action" value="GcPlayAudioAction">
+                    <Property name="GcPlayAudioAction">
+                      <Property name="Sound" value="Obj_Shield_Repairer_Off" />
+                      <Property name="UseOcclusion" value="false" />
+                      <Property name="OcclusionRadius" value="2.000000" />
+                    </Property>
                   </Property>
                 </Property>
               </Property>
             </Property>
           </Property>
         </Property>
-        <Property name="Persistent" value="False" />
+        <Property name="Persistent" value="false" />
         <Property name="PersistentState" value="" />
-        <Property name="ResetShotTimeOnStateChange" value="False" />
-        <Property name="LinkStateToBaseGrid" value="False" />
+        <Property name="ResetShotTimeOnStateChange" value="false" />
+        <Property name="LinkStateToBaseGrid" value="false" />
       </Property>
-      <Property name="Linked" value="" />
     </Property>
 ]]
                         }
@@ -118,7 +120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
@@ -130,25 +132,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Title",               "Toggle Backpack"},
                                 {"ChatText",            ""},
-                                {"ChatUsesPrefix",      "False"},
+                                {"ChatUsesPrefix",      "false"},
                                 {"EmoteID",             "BACKPACK_TOGGLE"},
                                 {"AnimationName",       "BACKPACK_TOGGLE"},
                                 {"Filename",            "TEXTURES/UI/FRONTEND/COMPONENTS/CHARCUSTOMISE/BACKPACK.DDS"},
-                                {"MoveToCancel",        "True"},
+                                {"MoveToCancel",        "true"},
                                 {"RidingAnimationName", "BACKPACK_TOGGLE"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_EMOTE",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_EMOTE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"EmoteID",             "BACKPACK_TOGGLEW"},
-                                {"AvailableUnderwater", "True"},
                             }
                         },
                         {
@@ -164,14 +153,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["ADD_FILES"] =
     {
         {
-            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.EXML",
+            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkAnimMetadata">
+<Data template="cTkAnimMetadata">
   <Property name="NodeData">
-    <Property value="TkAnimNodeData.xml">
+    <Property name="NodeData" value="TkAnimNodeData">
       <Property name="Node" value="AnimatedTrans" />
       <Property name="RotIndex" value="0" />
       <Property name="TransIndex" value="0" />
@@ -179,52 +168,50 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
   </Property>
-  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
+  <Property name="StillFrameData" value="TkAnimNodeFrameData">
     <Property name="Rotations">
-      <Property value="Quaternion.xml">
-        <Property name="x" value="0" />
-        <Property name="y" value="0" />
-        <Property name="z" value="0" />
-        <Property name="w" value="1" />
+      <Property name="Rotations" value="Quaternion">
+        <Property name="X" value="0" />
+        <Property name="Y" value="0" />
+        <Property name="Z" value="0" />
+        <Property name="W" value="1" />
         <Property name="dropComponent" value="3" />
       </Property>
     </Property>
     <Property name="Translations">
-      <Property value="Vector4f.xml">
-        <Property name="x" value="-0.73121876" />
-        <Property name="y" value="0.08333181" />
-        <Property name="z" value="-0.02858855" />
-        <Property name="t" value="1" />
+      <Property name="Translations">
+        <Property name="X" value="-0.73121876" />
+        <Property name="Y" value="0.08333181" />
+        <Property name="Z" value="-0.02858855" />
       </Property>
     </Property>
     <Property name="Scales">
-      <Property value="Vector4f.xml">
-        <Property name="x" value="1" />
-        <Property name="y" value="1" />
-        <Property name="z" value="1" />
-        <Property name="t" value="1" />
+      <Property name="Scales">
+        <Property name="X" value="1.000000" />
+        <Property name="Y" value="1.000000" />
+        <Property name="Z" value="1.000000" />
       </Property>
     </Property>
   </Property>
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="Has30HzFrames" value="False" />
+  <Property name="Has30HzFrames" value="false" />
 </Data>
 ]]
         },

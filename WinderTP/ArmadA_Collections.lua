@@ -146,11 +146,11 @@ SHIPS_DATA =
 -- INDIVIDUAL PROC-GEN SCENE REFERENCE
 function GetSceneReference(NAME, SCENEGRAPH, TRANSFORM)
 return [[
-		<Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
 		  <Property name="Name" value="]] .. NAME .. [[" />
 		  <Property name="NameHash" value="0" />
 		  <Property name="Type" value="REFERENCE" />
-		  <Property name="Transform" value="TkTransformData.xml">
+		  <Property name="Transform" value="TkTransformData">
 			<Property name="TransX" value="]] .. TRANSFORM["TransX"] .. [[" />
 			<Property name="TransY" value="]] .. TRANSFORM["TransY"] .. [[" />
 			<Property name="TransZ" value="]] .. TRANSFORM["TransZ"] .. [[" />
@@ -162,9 +162,13 @@ return [[
 			<Property name="ScaleZ" value="]] .. TRANSFORM["Scale"] .. [[" />
 		  </Property>
 		  <Property name="Attributes">
-			<Property value="TkSceneNodeAttributeData.xml">
+			<Property value="TkSceneNodeAttributeData">
 			  <Property name="Name" value="SCENEGRAPH" />
 			  <Property name="Value" value="]] .. SCENEGRAPH .. [[" />
+			</Property>
+			<Property name="Attributes" value="TkSceneNodeAttributeData">
+				<Property name="Name" value="EMBEDGEOMETRY" />
+				<Property name="Value" value="TRUE" />
 			</Property>
 		  </Property>
 		  <Property name="Children" />
@@ -174,13 +178,11 @@ end
 
 function GetDescriptorEntry(NAME, SCENE)
 return [[
-        <Property value="TkResourceDescriptorData.xml">
+				<Property name="Descriptors" value="TkResourceDescriptorData">
           <Property name="Id" value="]] .. string.upper(NAME) .. [[" />
           <Property name="Name" value="]] .. NAME .. [[" />
           <Property name="ReferencePaths">
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="]] .. SCENE .. [[" />
-            </Property>
+            <Property name="ReferencePaths" value="]] .. SCENE .. [[" />
           </Property>
           <Property name="Chance" value="0" />
           <Property name="Children" />
@@ -231,9 +233,9 @@ end
 SHIP_DESCRIPTOR_EXPORT =
 [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkModelDescriptorList">
+<Data template="cTkModelDescriptorList">
   <Property name="List">
-    <Property value="TkResourceDescriptorList.xml">
+		<Property name="List" value="TkResourceDescriptorList">
       <Property name="TypeId" value="CAPSHIP" />
       <Property name="Descriptors">
 ]] .. table.concat(SHIP_DESCRIPTOR_LIST) .. [[
@@ -246,14 +248,14 @@ SHIP_DESCRIPTOR_EXPORT =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "~ArmadA_CustomCollection.pak",
+["MOD_FILENAME"] 			= "+ArmadA_CustomCollection.pak",
 ["MOD_AUTHOR"]				= "WinderTP, Gumsk, Kibbles",
 ["MOD_DESCRIPTION"]			= "SHIPS!",
 ["AMUMSS_SUPPRESS_MSG"] 	= "UNUSED_VARIABLE",
 ["ADD_FILES"] 				= 
 	{	
 		{
-			["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\CAPITALFREIGHTER_PROC.DESCRIPTOR.EXML",
+			["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\CAPITALFREIGHTER_PROC.DESCRIPTOR.MXML",
 			["FILE_CONTENT"] 	 = SHIP_DESCRIPTOR_EXPORT
 		},
 	},
@@ -281,7 +283,7 @@ NOCAP_SCENE =
 {
 	["SCENE"] =
 	{
-		["Path"] = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTER_PROC.SCENE.EXML",
+		["Path"] = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTER_PROC.SCENE.MXML",
 		["Contents"] = "",
 	},
 	["DESCRIPTOR"] =
@@ -353,11 +355,11 @@ end
 -- COMPLETING NORMAL FREIGHTER MAIN PROC-GEN SCENE & DESCRIPTOR DATA
 NOCAP_SCENE["SCENE"]["Contents"] =
 [[<?xml version="1.0" encoding="utf-8"?>
-<Data template="TkSceneNodeData">
+<Data template="cTkSceneNodeData">
   <Property name="Name" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTER_PROC.SCENE.MBIN" />
   <Property name="NameHash" value="0" />
   <Property name="Type" value="MODEL" />
-  <Property name="Transform" value="TkTransformData.xml">
+  <Property name="Transform" value="TkTransformData">
     <Property name="TransX" value="0" />
     <Property name="TransY" value="0" />
     <Property name="TransZ" value="0" />
@@ -369,7 +371,7 @@ NOCAP_SCENE["SCENE"]["Contents"] =
     <Property name="ScaleZ" value="1" />
   </Property>
   <Property name="Attributes">
-    <Property value="TkSceneNodeAttributeData.xml">
+    <Property value="TkSceneNodeAttributeData">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
@@ -382,9 +384,9 @@ NOCAP_SCENE["SCENE"]["Contents"] =
 NOCAP_SCENE["DESCRIPTOR"]["Contents"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkModelDescriptorList">
+<Data template="cTkModelDescriptorList">
   <Property name="List">
-    <Property value="TkResourceDescriptorList.xml">
+		<Property name="List" value="TkResourceDescriptorList">
       <Property name="TypeId" value="]] .. NOCAP_DESCRIPTOR_TYPEID .. [[" />
       <Property name="Descriptors">
 ]] .. table.concat(NOCAP_DESCRIPTOR_LIST) .. [[
@@ -407,12 +409,12 @@ table.insert(NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"],
 else
 table.insert(NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"], 
 		{
-			["FILE_DESTINATION"] = NOCAP_SCENE["SCENE"]["Path"]:gsub(".EXML", ".MBIN"),
-			["INTERNAL_FILE_SOURCE"] = NOCAP_SCENE["SCENE"]["Path"]:gsub(".EXML", ".MBIN")
+			["FILE_DESTINATION"] = NOCAP_SCENE["SCENE"]["Path"]:gsub(".MXML", ".MBIN"),
+			["INTERNAL_FILE_SOURCE"] = NOCAP_SCENE["SCENE"]["Path"]:gsub(".MXML", ".MBIN")
 		})
 table.insert(NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"], 
 		{
-			["FILE_DESTINATION"] = NOCAP_SCENE["DESCRIPTOR"]["Path"]:gsub(".EXML", ".MBIN"),
-			["INTERNAL_FILE_SOURCE"] = NOCAP_SCENE["DESCRIPTOR"]["Path"]:gsub(".EXML", ".MBIN")
+			["FILE_DESTINATION"] = NOCAP_SCENE["DESCRIPTOR"]["Path"]:gsub(".MXML", ".MBIN"),
+			["INTERNAL_FILE_SOURCE"] = NOCAP_SCENE["DESCRIPTOR"]["Path"]:gsub(".MXML", ".MBIN")
 		})
 end

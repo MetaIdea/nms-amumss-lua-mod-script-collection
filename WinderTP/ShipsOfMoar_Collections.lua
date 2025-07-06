@@ -906,25 +906,15 @@ SHIPS_DATA =
 
 function GetDescriptorEntry(NAME, SCENE)
 return [[
-        <Property value="TkResourceDescriptorData.xml">
+				<Property name="Descriptors" value="TkResourceDescriptorData">
           <Property name="Id" value="]] .. string.upper(NAME) .. [[" />
           <Property name="Name" value="]] .. NAME .. [[" />
           <Property name="ReferencePaths">
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="]] .. SCENE .. [[" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="CUSTOMMODELS/WINDER/ENGINE_BOOST.SCENE.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="CUSTOMMODELS/WINDER/ENGINE_BOOST_NEW.SCENE.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\ENGINE\ENGINE_BOOST_NEW.SCENE.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/WEAPONS/SHIPGUN.SCENE.MBIN" />
-            </Property>
+              <Property name="ReferencePaths" value="]] .. SCENE .. [[" />
+              <Property name="ReferencePaths" value="CUSTOMMODELS/WINDER/ENGINE_BOOST.SCENE.MBIN" />
+              <Property name="ReferencePaths" value="CUSTOMMODELS/WINDER/ENGINE_BOOST_NEW.SCENE.MBIN" />
+              <Property name="ReferencePaths" value="MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\ENGINE\ENGINE_BOOST_NEW.SCENE.MBIN" />
+              <Property name="ReferencePaths" value="MODELS/COMMON/SPACECRAFT/SHARED/WEAPONS/SHIPGUN.SCENE.MBIN" />
           </Property>
           <Property name="Chance" value="0" />
           <Property name="Children" />
@@ -976,10 +966,9 @@ end
 SHIP_DESCRIPTOR_EXPORT =
 [[
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.37.0)-->
-<Data template="TkModelDescriptorList">
+<Data template="cTkModelDescriptorList">
   <Property name="List">
-    <Property value="TkResourceDescriptorList.xml">
+		<Property name="List" value="TkResourceDescriptorList">
       <Property name="TypeId" value="_SHUTTLE_" />
       <Property name="Descriptors">
 ]] .. table.concat(SHIP_DESCRIPTOR_LIST) .. [[
@@ -993,7 +982,7 @@ SHIP_DESCRIPTOR_EXPORT =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "~ShipsOfMoar_CustomCollection.pak",
+["MOD_FILENAME"] 			= "+ShipsOfMoar_CustomCollection.pak",
 ["MOD_AUTHOR"]				= "WinderTP, Gumsk, Kibbles",
 ["MOD_DESCRIPTION"]			= "SHIPS!",
 ["NMS_VERSION"]				= "3.52+",
@@ -1001,7 +990,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["ADD_FILES"] 				= 
 	{	
 		{
-			["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SHUTTLE\SHUTTLE_PROC.DESCRIPTOR.EXML",
+			["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\SHUTTLE\SHUTTLE_PROC.DESCRIPTOR.MXML",
 			["FILE_CONTENT"] 	 = SHIP_DESCRIPTOR_EXPORT
 		},
 	}

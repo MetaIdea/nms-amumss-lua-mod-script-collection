@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "SentinelPolicePlayerShipBase.pak",
+["MOD_FILENAME"]            = "SentinelPolicePlayerShipBase",
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
-["NMS_VERSION"]             = "5.29",
+["NMS_VERSION"]             = "5.73",
 ["MOD_DESCRIPTION"]         = "This is just in case you already own the ship and don't need the menu interaction to get the ship anymore",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -18,17 +18,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"TransY", "1.4"},
-                                {"TransZ", "-1.5"},
-                                {"ScaleX", "1.4"},
-                                {"ScaleY", "1.4"},
-                                {"ScaleZ", "1.4"},
+                                {"TransY", "1.400000"},
+                                {"TransZ", "-1.500000"},
+                                {"ScaleX", "1.400000"},
+                                {"ScaleY", "1.400000"},
+                                {"ScaleZ", "1.400000"},
                             }
                         },
                         {
@@ -50,26 +50,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["ADD_FILES"] =
     {
         {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.EXML",
+            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkModelDescriptorList">
+<Data template="cTkModelDescriptorList">
   <Property name="List">
-    <Property value="TkResourceDescriptorList.xml">
+		<Property name="List" value="TkResourceDescriptorList">
       <Property name="TypeId" value="_SHIP_" />
       <Property name="Descriptors">
-        <Property value="TkResourceDescriptorData.xml">
+				<Property name="Descriptors" value="TkResourceDescriptorData">
           <Property name="Id" value="_SHIP_POLICE" />
           <Property name="Name" value="_Ship_Police" />
-          <Property name="ReferencePaths">
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
-            </Property>
-          </Property>
-          <Property name="Chance" value="0" />
-          <Property name="Children" />
+					<Property name="ReferencePaths">
+						<Property name="ReferencePaths" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
+					</Property>
+					<Property name="Chance" value="0.000000" />
+					<Property name="Children" />
         </Property>
       </Property>
     </Property>
@@ -78,49 +76,49 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.SCENE.EXML",
+            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.SCENE.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkSceneNodeData">
+<Data template="cTkSceneNodeData">
   <Property name="Name" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERCLASSICGOLD" />
   <Property name="NameHash" value="4182676705" />
   <Property name="Type" value="MODEL" />
-  <Property name="Transform" value="TkTransformData.xml">
-    <Property name="TransX" value="0" />
-    <Property name="TransY" value="0" />
-    <Property name="TransZ" value="0" />
-    <Property name="RotX" value="0" />
-    <Property name="RotY" value="0" />
-    <Property name="RotZ" value="0" />
-    <Property name="ScaleX" value="1" />
-    <Property name="ScaleY" value="1" />
-    <Property name="ScaleZ" value="1" />
+  <Property name="Transform" value="TkTransformData">
+		<Property name="TransX" value="0.000000" />
+		<Property name="TransY" value="0.000000" />
+		<Property name="TransZ" value="0.000000" />
+		<Property name="RotX" value="0.000000" />
+		<Property name="RotY" value="0.000000" />
+		<Property name="RotZ" value="0.000000" />
+		<Property name="ScaleX" value="1.000000" />
+		<Property name="ScaleY" value="1.000000" />
+		<Property name="ScaleZ" value="1.000000" />
   </Property>
   <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
-    <Property value="TkSceneNodeAttributeData.xml">
+		<Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="GEOMETRY" />
       <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.GEOMETRY.MBIN" />
     </Property>
-    <Property value="TkSceneNodeAttributeData.xml">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
   <Property name="Children">
-    <Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="EngineFlare_Distant" />
       <Property name="NameHash" value="3869425187" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="0" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="0.000000" />
         <Property name="TransY" value="1.628213" />
         <Property name="TransZ" value="-3.462083" />
-        <Property name="RotX" value="0" />
-        <Property name="RotY" value="180" />
-        <Property name="RotZ" value="0" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="180.000000" />
+        <Property name="RotZ" value="0.000000" />
         <Property name="ScaleX" value="20.8902454" />
         <Property name="ScaleY" value="20.8902454" />
         <Property name="ScaleZ" value="20.8902454" />
@@ -129,260 +127,260 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="ProcRoot_StarShip" />
       <Property name="NameHash" value="3871606254" />
       <Property name="Type" value="LOCATOR" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="0" />
-        <Property name="TransY" value="0" />
-        <Property name="TransZ" value="0" />
-        <Property name="RotX" value="0" />
-        <Property name="RotY" value="0" />
-        <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="1" />
-        <Property name="ScaleY" value="1" />
-        <Property name="ScaleZ" value="1" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="0.000000" />
+        <Property name="TransY" value="0.000000" />
+        <Property name="TransZ" value="0.000000" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="0.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="1.000000" />
+        <Property name="ScaleY" value="1.000000" />
+        <Property name="ScaleZ" value="1.000000" />
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="_Ship_Police" />
           <Property name="NameHash" value="3628092373" />
           <Property name="Type" value="REFERENCE" />
-          <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0" />
-            <Property name="TransY" value="0" />
-            <Property name="TransZ" value="0" />
-            <Property name="RotX" value="0" />
-            <Property name="RotY" value="0" />
-            <Property name="RotZ" value="0" />
-            <Property name="ScaleX" value="1" />
-            <Property name="ScaleY" value="1" />
-            <Property name="ScaleZ" value="1" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="0.000000" />
+            <Property name="ScaleX" value="1.000000" />
+            <Property name="ScaleY" value="1.000000" />
+            <Property name="ScaleZ" value="1.000000" />
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="EMBEDGEOMETRY" />
               <Property name="Value" value="TRUE" />
             </Property>
           </Property>
           <Property name="Children">
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="Data" />
               <Property name="NameHash" value="2810148397" />
               <Property name="Type" value="LOCATOR" />
-              <Property name="Transform" value="TkTransformData.xml">
-                <Property name="TransX" value="0" />
-                <Property name="TransY" value="0" />
-                <Property name="TransZ" value="0" />
-                <Property name="RotX" value="0" />
-                <Property name="RotY" value="0" />
-                <Property name="RotZ" value="0" />
-                <Property name="ScaleX" value="1" />
-                <Property name="ScaleY" value="1" />
-                <Property name="ScaleZ" value="1" />
+              <Property name="Transform" value="TkTransformData">
+                <Property name="TransX" value="0.000000" />
+                <Property name="TransY" value="0.000000" />
+                <Property name="TransZ" value="0.000000" />
+                <Property name="RotX" value="0.000000" />
+                <Property name="RotY" value="0.000000" />
+                <Property name="RotZ" value="0.000000" />
+                <Property name="ScaleX" value="1.000000" />
+                <Property name="ScaleY" value="1.000000" />
+                <Property name="ScaleZ" value="1.000000" />
               </Property>
               <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="ATTACHMENT" />
                   <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_A/COCKPITA/ENTITIES/COCKPIT_A.ENTITY.MBIN" />
                 </Property>
               </Property>
               <Property name="Children">
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="INTERACTOrigin" />
                   <Property name="NameHash" value="3066580072" />
                   <Property name="Type" value="LOCATOR" />
-                  <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="1.8" />
-                    <Property name="TransZ" value="0.7" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                  <Property name="Transform" value="TkTransformData">
+                    <Property name="TransX" value="0.000000" />
+                    <Property name="TransY" value="1.800000" />
+                    <Property name="TransZ" value="0.700000" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
                   <Property name="Children" />
                 </Property>
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="INTERACT" />
                   <Property name="NameHash" value="3698755080" />
                   <Property name="Type" value="LOCATOR" />
-                  <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="1.8" />
-                    <Property name="TransZ" value="0.7" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                  <Property name="Transform" value="TkTransformData">
+                    <Property name="TransX" value="0.000000" />
+                    <Property name="TransY" value="1.800000" />
+                    <Property name="TransZ" value="0.700000" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
                   <Property name="Children" />
                 </Property>
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="CrashEffect" />
                   <Property name="NameHash" value="1244254611" />
                   <Property name="Type" value="LOCATOR" />
-                  <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
+                  <Property name="Transform" value="TkTransformData">
+                    <Property name="TransX" value="0.000000" />
                     <Property name="TransY" value="2.309226" />
-                    <Property name="TransZ" value="0" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                    <Property name="TransZ" value="0.000000" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
                   <Property name="Children" />
                 </Property>
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="MaintenanceSlot1" />
                   <Property name="NameHash" value="304746222" />
                   <Property name="Type" value="LOCATOR" />
-                  <Property name="Transform" value="TkTransformData.xml">
+                  <Property name="Transform" value="TkTransformData">
                     <Property name="TransX" value="0.338705" />
                     <Property name="TransY" value="2.185556" />
                     <Property name="TransZ" value="-0.734243" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
                   <Property name="Children" />
                 </Property>
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="MaintenanceSlot0" />
                   <Property name="NameHash" value="1004495448" />
                   <Property name="Type" value="LOCATOR" />
-                  <Property name="Transform" value="TkTransformData.xml">
+                  <Property name="Transform" value="TkTransformData">
                     <Property name="TransX" value="0.338705" />
                     <Property name="TransY" value="1.328125" />
                     <Property name="TransZ" value="2.983213" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
                   <Property name="Children" />
                 </Property>
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="CUSTOM" />
                   <Property name="NameHash" value="2675539979" />
                   <Property name="Type" value="COLLISION" />
-                  <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="1.5" />
-                    <Property name="TransZ" value="0" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                  <Property name="Transform" value="TkTransformData">
+                    <Property name="TransX" value="0.000000" />
+                    <Property name="TransY" value="1.500000" />
+                    <Property name="TransZ" value="0.000000" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
-                    <Property value="TkSceneNodeAttributeData.xml">
+                    <Property name="Attributes" value="TkSceneNodeAttributeData">
                       <Property name="Name" value="TYPE" />
                       <Property name="Value" value="Box" />
                     </Property>
-                    <Property value="TkSceneNodeAttributeData.xml">
+                    <Property name="Attributes" value="TkSceneNodeAttributeData">
                       <Property name="Name" value="WIDTH" />
-                      <Property name="Value" value="1" />
+                      <Property name="Value" value="1.000000" />
                     </Property>
-                    <Property value="TkSceneNodeAttributeData.xml">
+                    <Property name="Attributes" value="TkSceneNodeAttributeData">
                       <Property name="Name" value="HEIGHT" />
-                      <Property name="Value" value="1" />
+                      <Property name="Value" value="1.000000" />
                     </Property>
-                    <Property value="TkSceneNodeAttributeData.xml">
+                    <Property name="Attributes" value="TkSceneNodeAttributeData">
                       <Property name="Name" value="DEPTH" />
-                      <Property name="Value" value="1" />
+                      <Property name="Value" value="1.000000" />
                     </Property>
                   </Property>
                   <Property name="Children" />
                 </Property>
-                <Property value="TkSceneNodeData.xml">
+                <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="Cockpit" />
                   <Property name="NameHash" value="876108911" />
                   <Property name="Type" value="LOCATOR" />
-                  <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="1" />
-                    <Property name="TransZ" value="0" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
+                  <Property name="Transform" value="TkTransformData">
+                    <Property name="TransX" value="0.000000" />
+                    <Property name="TransY" value="1.000000" />
+                    <Property name="TransZ" value="0.000000" />
+                    <Property name="RotX" value="0.000000" />
+                    <Property name="RotY" value="0.000000" />
+                    <Property name="RotZ" value="0.000000" />
+                    <Property name="ScaleX" value="1.000000" />
+                    <Property name="ScaleY" value="1.000000" />
+                    <Property name="ScaleZ" value="1.000000" />
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
                   <Property name="Children">
-                    <Property value="TkSceneNodeData.xml">
+                    <Property name="Children" value="TkSceneNodeData">
                       <Property name="Name" value="CockpitPos" />
                       <Property name="NameHash" value="465567180" />
                       <Property name="Type" value="LOCATOR" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="0" />
-                        <Property name="TransY" value="1" />
-                        <Property name="TransZ" value="0" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="0" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
+                      <Property name="Transform" value="TkTransformData">
+                        <Property name="TransX" value="0.000000" />
+                        <Property name="TransY" value="1.000000" />
+                        <Property name="TransZ" value="0.000000" />
+                        <Property name="RotX" value="0.000000" />
+                        <Property name="RotY" value="0.000000" />
+                        <Property name="RotZ" value="0.000000" />
+                        <Property name="ScaleX" value="1.000000" />
+                        <Property name="ScaleY" value="1.000000" />
+                        <Property name="ScaleZ" value="1.000000" />
                       </Property>
                       <Property name="PlatformExclusion" value="0" />
                       <Property name="Attributes" />
                       <Property name="Children" />
                     </Property>
-                    <Property value="TkSceneNodeData.xml">
+                    <Property name="Children" value="TkSceneNodeData">
                       <Property name="Name" value="Inventory" />
                       <Property name="NameHash" value="1402981485" />
                       <Property name="Type" value="LOCATOR" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="0" />
-                        <Property name="TransY" value="0" />
-                        <Property name="TransZ" value="0" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="0" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
+                      <Property name="Transform" value="TkTransformData">
+                        <Property name="TransX" value="0.000000" />
+                        <Property name="TransY" value="0.000000" />
+                        <Property name="TransZ" value="0.000000" />
+                        <Property name="RotX" value="0.000000" />
+                        <Property name="RotY" value="0.000000" />
+                        <Property name="RotZ" value="0.000000" />
+                        <Property name="ScaleX" value="1.000000" />
+                        <Property name="ScaleY" value="1.000000" />
+                        <Property name="ScaleZ" value="1.000000" />
                       </Property>
                       <Property name="PlatformExclusion" value="0" />
                       <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
+                        <Property name="Attributes" value="TkSceneNodeAttributeData">
                           <Property name="Name" value="ATTACHMENT" />
                           <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/ENTITIES/FIGHTERBASE.ENTITY.MBIN" />
                         </Property>

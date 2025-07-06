@@ -2,12 +2,13 @@ Author = "Gumsk"		--Edited by Xenonex
 ModName = "gCreatures Predators"
 ModNameSub = "Danger DangerousX"
 BaseDescription = "More aggressive and dangerous predators"
-GameVersion = "5_12"
+GameVersion = "5_62"
 ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 FileSource2 = "MODELS\PLANETS\CREATURES\SANDWORMMINI\SANDWORMMINI\ENTITIES\DATA.ENTITY.MBIN"
 FileSource3 = "MODELS\PLANETS\CREATURES\FISH\GRABBYPLANT\ENTITIES\GRABBYPLANT.ENTITY.MBIN"
 FileSource4 = "MODELS\COMMON\ROBOTS\WALKING_BUILDING\WALKINGBUILDING.ENTITY.MBIN"
+FileSource5 = "MODELS\PLANETS\BIOMES\COMMON\INTERACTIVE\SPOREVENT\ENTITIES\SPOREVENT.ENTITY.MBIN"
 
 --This section added by Xen0nex
 EyeballHealthMult = 6						--Multiplier to the Default 1600	(The underwater Eyeball monster / "Abyssal Horror")
@@ -23,6 +24,8 @@ BugQueenSpitballSpeed = 8					--Default 8			This is the speed at which they are 
 BugQueenSpitballExplosionRadius = 4.2		--Default 2.8
 BugFiendHealth = 2000						--Default 700		(Likely the smaller helpers for the The Vile Queen boss bug)
 
+ExplodingPlantRadius = 10					--Default 7.5		This is the radius of the AOE for the gas explosion of the inflating Hazardous Flora on planet surfaces
+
 CreatureSmallHealth = 500					--Default 200
 CreatureMedHealth = 2100					--Default 1400
 CreatureLargeHealth = 3600					--Default 2800
@@ -33,12 +36,12 @@ WalkBuildingType = "WALKINGBUILDING"		--"CREATURE"		Sets the damage multipliers 
 --Original section below
 SharkAttackSpeed = 15						--Default 10
 SharkAttackAccel = 5						--Default 3
-AggressiveSharks = "True"					--Default False
-PredatorPerceptionDistance = 60				--Default 40
-PredatorFishPerceptionDistance = 80			--Default 60
+AggressiveSharks = "true"					--Default False
+PredatorPerceptionDistance = 50				--Default 40
+PredatorFishPerceptionDistance = 70			--Default 60
 PassiveFleePlayerDistance = 10				--Default 10
 AdultBabyKilledNoticeDistance = 100			--Default 70
-PercentagePlayerPredators = 0.7				--Default 0.5
+PercentagePlayerPredators = 0.5				--Default 0.5
 PredatorSmallHealth = 1000					--Default 400
 PredatorMedHealth = 3000					--Default 1400
 PredatorLargeHealth = 5000					--Default 3000
@@ -51,7 +54,7 @@ PredatorChargeDist = 10						--Default 7
 PredatorChargeDistScale = 0.3				--Default 0.3
 FishPredatorChargeDist = 10					--Default 7
 FishPredatorChargeDistScale = 0.3			--Default 0.3
-ScuttlersCanAttack = "True"					--Default True
+ScuttlersCanAttack = "true"					--Default True
 ScuttlerHealth = 1500						--Default 600
 ScuttlerInitialNoAttackTime = 2.5			--Default 3.5
 ScuttlerMoveTimeMin = 0.5					--Default 0.8
@@ -67,8 +70,8 @@ MiniDroneEnergyRecoverRate = 0.8			--Default 0.5
 MiniDroneEnergyUsePerShot = 0.25			--Default 0.33
 MiniDroneShotDelay = 0.25					--Default 0.35
 MiniDroneShotMaxAngle = 15					--Default 10
-FiendsCanAttack = "True"					--Default True
-FiendOnscreenMarkers = "False"				--Default True
+FiendsCanAttack = "true"					--Default True
+FiendOnscreenMarkers = "false"				--Default True
 FiendHealth = 2300							--Default 1000
 FiendPerceptionDistance = 80				--Default 60
 FiendAggroTime = 30							--Default 45
@@ -105,15 +108,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_DESCRIPTION"]	= BaseDescription,
 	["MOD_AUTHOR"]		= Author,
 	["NMS_VERSION"]		= GameVersion,
+	["EXML_CREATE"] = "FALSE",
 	["MODIFICATIONS"]	= {
 		{
 			["MBIN_CHANGE_TABLE"] = {
 				{
 					["MBIN_FILE_SOURCE"] = FileSource1,
-					["EXML_CHANGE_TABLE"] = {
+					["MXML_CHANGE_TABLE"] = {
 						{
-							["PRECEDING_KEY_WORDS"] = {""},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							--["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = {
 								--These added by Xen0nex
 								{"GroundWormSpawnMin", GroundWormSpawnMin},
@@ -206,9 +209,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				},
 				{
 					["MBIN_FILE_SOURCE"] = FileSource2,
-					["EXML_CHANGE_TABLE"] = {
+					["MXML_CHANGE_TABLE"] = {
 						{
-							["PRECEDING_KEY_WORDS"] = {""},
 							["MATH_OPERATION"] 		= "*", 
 							["VALUE_CHANGE_TABLE"] = {
 								{"Health", WormHealthMult},
@@ -218,9 +220,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				},
 				{
 					["MBIN_FILE_SOURCE"] = FileSource3,
-					["EXML_CHANGE_TABLE"] = {
+					["MXML_CHANGE_TABLE"] = {
 						{
-							["PRECEDING_KEY_WORDS"] = {""},
 							["MATH_OPERATION"] 		= "*", 
 							["VALUE_CHANGE_TABLE"] = {
 								{"Health", EyeballHealthMult},
@@ -230,13 +231,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				},
 				{
 					["MBIN_FILE_SOURCE"] = FileSource4,
-					["EXML_CHANGE_TABLE"] = {
+					["MXML_CHANGE_TABLE"] = {
 						{
 							["REPLACE_TYPE"] 		= "ONCE",
 							["VALUE_MATCH"]         = "CREATURE", 
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"DamageMultiplier", WalkBuildingType},
+							}
+						},
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] = FileSource5,
+					["MXML_CHANGE_TABLE"] = {
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcPainAction"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Radius", ExplodingPlantRadius},
 							}
 						},
 					},

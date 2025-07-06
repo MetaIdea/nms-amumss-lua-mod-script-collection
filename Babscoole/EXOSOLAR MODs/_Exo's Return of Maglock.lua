@@ -10,9 +10,9 @@ Weapon_Changes =
 }
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Exo's Return of Maglock.pak",
+["MOD_FILENAME"]  = "_Exo's Return of Maglock",
 ["MOD_AUTHOR"]    = "Exosolar & Babscoole",
-["NMS_VERSION"]   = "5.29",
+["NMS_VERSION"]   = "5.73",
 ["MODIFICATIONS"] =
     {
         {
@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
 
                     }
@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     },
 }
 
-local DefaultReality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local DefaultReality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i=1,#Weapon_Changes do
     local Weapon             = Weapon_Changes[i][1]
@@ -40,12 +40,12 @@ for i=1,#Weapon_Changes do
     
     DefaultReality[#DefaultReality +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {Weapon, "GcShipWeaponData.xml"},
+        ["SPECIAL_KEY_WORDS"] = {Weapon, "GcShipWeaponData"},
         ["VALUE_CHANGE_TABLE"] =
         {
             {"AutoAimAngle",       AutoAimAngle},
             {"AutoAimExtraAngle",  AutoAimExtraAngle},
-            {"ShowOverheatSwitch", "False"},
+            {"ShowOverheatSwitch", "false"},
         }
     }
 end

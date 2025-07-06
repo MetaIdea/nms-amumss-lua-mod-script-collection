@@ -304,9 +304,7 @@ end
 
 local function CreateShopID(NewID)
     return [[
-        <Property value="NMSString0x10.xml">
-            <Property name="Value" value="]] .. NewID .. [[" />
-        </Property>
+                <Property name="AlwaysPresentProducts" value="]] .. NewID .. [[" />
     ]]
 end
 
@@ -318,10 +316,10 @@ end
 local ADDShipPartID = table.concat(ADDShipPartID,"\n")
 
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"] = "AltF4_AddShipPartsToShop.pak",
+    ["MOD_FILENAME"] = "AltF4_AddShipPartsToShop",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "5.05",
+    ["NMS_VERSION"] = "5.51",
     ["MOD_DESCRIPTION"] = "Add ship custom parts to space station shop.",
     ["MODIFICATIONS"] = {
         {
@@ -358,7 +356,7 @@ if Price then
 
     local addMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
     addMBINChangeTable[#addMBINChangeTable + 1] = {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_MODULARCUSTOMISATIONPRODUCTS.MBIN",
                     ["EXML_CHANGE_TABLE"] = ChangeTable,
                 }
 end

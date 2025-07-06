@@ -1,5 +1,5 @@
 ModName = "PTSd Other Difficulty Settings"
-GameVersion = "5_12"
+GameVersion = "5_64"
 Description = "Affects most of the Difficulty Setting menu options, except for Stack Sizes"
 
 DisablePlanetaryPirateRaids				=false								--false		Set true to disable any planetary pirate raids
@@ -14,33 +14,36 @@ StackLimitSettings =			"FullyEditable"							--"DecreaseOnly"		(Options are "Ful
 DRNone =						0										--0
 DRLow =							0.5										--0.2
 DRNormal =						1										--1
-DRHigh =						1.33									--1.5
-	--These are presumably how many hits before the Minotaur takes damage to installed tech when under AI autopilot (possibly overwrites the similar parameter in GCVEHICLEGLOBALS.GLOBAL.MBIN )
+DRHigh =						1.5										--1.5
+	--These seem to be how many hits before the Minotaur takes damage to installed tech when under AI autopilot (possibly overwrites the similar parameter in GCVEHICLEGLOBALS.GLOBAL.MBIN )
 DRMNone =						0										--0
 DRMLow =						56										--32
 DRMNormal =						28										--16
-DRMHigh =						14										--8
+DRMHigh =						19										--8
 
 --Multipliers for the "Enemy Strength" difficulty settings
 	--These presumably apply to the base health values for enemies set in GCROBOTGLOBALS.MBIN and AISPACESHIPATTACKDATATABLE.MBIN, modified by "_Extra Savage Sentinels by ExosolarX.lua" and "Space Combat+Larger Space BattlesX.lua"
-DGHigh =						2										--2.5
+DGHigh =						1.5										--2.5
 DGNormal =						1										--1
 DGLow =							0.5										--0.66
 
 --Multipliers for the "Survival Difficulty" difficulty 				(Set by the "Survival Difficulty" setting)
-	--These are applied to the base Hazard timers set in GCPLAYERGLOBALS.GLOBAL, modified by "PTSd Stronger Environmental Hazards.lua"
-HDSlow =						2.2										--0.35
-HDNormal =						6.6										--1.1
-HDFast =						9.9										--3.3
+	--These are applied to the base Hazard timers set in GCPLAYERGLOBALS.GLOBAL or HAZARDTABLE.MBIN, modified by "PTSd Stronger Environmental Hazards.lua"
+	--A higher number here means your protection drains faster
+	--(Values multiplied by 0.9238 to offset how "PTSd Stronger Environmental Hazards.lua" increase the base Ambient hazard intensity on most non-Extreme planets by ~1.0825)
+HDSlow =						2.2*0.9238								--0.35
+HDNormal =						6.6*0.9238								--1.1
+HDFast =						9.9*0.9238								--3.3
 --Multipliers for the "Energy Drain" (Life Support) difficulty	(Set by the "Survival Difficulty" setting)
 	--These are applied to the base Energy timers set in GCPLAYERGLOBALS.GLOBAL, modified by "PTSd Stronger Environmental Hazards.lua"
+	--A higher number here means your protection drains faster
 EDSlow =						0.5										--0.2
 EDNormal =						1										--1
 EDFast =						1.5										--1.66
 
 --Multipliers for the "Substance Collection" difficulty			(Set by the "Natural Resources" setting)
 	--Affects how much substances you get from most sources, particularly ones considered "wild" or found out in the world/space: Includes after fully destroying minable objects, from interacting with ("harvesting") most plants, Frigate expedition substance rewards, standing planters, destroying Resource Depots, opening the procedural "boxes" from buried caches / subterranean organic structures, space station mission rewards (rarely are substances) and most other sources of substances
-	--Does not apply to substances in the "output" slot of machines such as refiners / mining drills, etc. settlement substance rewards, or any substance rewards with "DisableMultiplier" set to "True" in REWARDTABLE.MBIN, which is mostly for harvesting the "domesticated" version crops that are plantable in hydroponic trays, which instead have fixed values
+	--Does not apply to substances in the "output" slot of machines such as refiners / mining drills, etc. settlement substance rewards, or any substance rewards with "DisableMultiplier" set to "true" in REWARDTABLE.MBIN, which is mostly for harvesting the "domesticated" version crops that are plantable in hydroponic trays, which instead have fixed values
 	--PTSd applies additional multipliers specifically for substances from either minable / non-minable objects in "PTSd Rewards Remixer.lua" that stack with these values
 SCHigh =						1.4										--2.5
 SCNormal =						0.8										--1
@@ -78,7 +81,7 @@ LFNormalShipSummon =			2										--1
 LFHigh =						1.5										--1.2
 LFHighShipSummon =				3										--4
 
---Multipliers for the "Currency Cost" difficulty settings
+--Multipliers for the "Purchases" difficulty settings
 --Unclear what "Specials" is, is not salvaged data / salvaged frigate modules. Perhaps Quicksilver shop?
 --The Units/Nanites/Specials settings below don't apply to generic substances/products in shop/vendor lists, but to prices when selecting an option from a menu/dialogue tree, such as purchasing an inventory upgrade on a Space Station, etc.
 	--The Units multipliers appear to also apply to the purchase, trade-in, & scan value of starships, but not the salvage value.
@@ -97,7 +100,7 @@ CCNormalNanites =				1										--1
 CCNormalSpecials =				1										--1
 CCNormalBuyPriceMarkup =		1										--1.5	
 CCExpensiveUnits =				2										--1.66
-CCExpensiveNanites =			1.5										--2.5
+CCExpensiveNanites =			2										--2.5
 CCExpensiveSpecials =			1										--1
 CCExpensiveBuyPriceMarkup =		2										--6		
 
@@ -125,9 +128,9 @@ SCMFast =						0.67									--0.55
 --Multipliers for the "Space Combat Difficulty" difficulty			(Set by the "Space Combat" setting)
 	--This applies an additional % bonus or malus of Hull & Shields to enemy ships. E.G. 0.25 means an additional +25% Hull & Shields for enemy ships
 SCMOffDiff =					0										--0
-SCMSlowDiff =					-0.2									--0
+SCMSlowDiff =					-0.34									--0
 SCMNormalDiff =					0										--0.25
-SCMFastDiff =					0.2										--1.2
+SCMFastDiff =					0.33									--1.2
 
 --Multipliers for the "Ground Combat" difficulty					(Set by the "On-Foot Combat" setting)
 	--Selecting the "Hostile" setting also makes more planets have Aggressive Sentinels regardless of values here, particularly Lush/Paradise planets
@@ -179,19 +182,35 @@ ShortCatchWindow =				0.67									--0.67
 InterestLevelChanges =
 {
 	{
-		{"PirateInterestLevels"},		--How much value of goods you need to be carrying before pirates scan you in space, with different levels of intensity?
+		{"PirateInterestLevels"},		--How much value of goods you need to be carrying before pirates scan you in space, presumably at low/medium/high levels of intensity?
 		{--	New Value		Old Value
-			{75000,			100000},		--Old Survival value 50000
-			{300000,		500000},		--Old Survival value 150000
-			{1600000,		2500000},		--Old Survival value 1600000
+			{100000,		--100000
+			400000,			--500000
+			2000000},		--2500000
 		},
 	},
 	{
-		{"PoliceInterestLevels"},		--How much value of goods you need to be carrying before pirates scan you in space, with different levels of intensity?
+		{"PirateInterestLevelsSurvival"},	--Unclear when these values are used in place of the "normal" ones
 		{--	New Value		Old Value
-			{1,				1},				--Old Survival value 1
-			{75000,			20000},			--Old Survival value 50000
-			{250000,		500000},		--Old Survival value 200000
+			{75000,			--50000
+			250000,			--150000
+			1600000},		--1600000
+		},
+	},
+	{
+		{"PoliceInterestLevels"},		--How much value of ILLEGAL goods you need to be carrying before sentinel interceptors scan you in space, presumably at low/medium/high levels of intensity?
+		{--	New Value		Old Value
+			{1,				--1
+			100000,			--20000
+			500000},		--500000
+		},
+	},
+	{
+		{"PoliceInterestLevelsSurvival"},	--Unclear when these values are used in place of the "normal" ones
+		{--	New Value		Old Value
+			{1,				--1
+			75000,			--50000
+			300000},		--200000
 		},
 	},
 }
@@ -240,69 +259,31 @@ SentinelTimersChanges =
 	}
 }
 
---Item Shop availability. These control which items no longer get sold at each setting, though currently unchanged from vanilla
+--Item Shop availability. These control which items no longer get sold at each setting
 --High = No items restricted (other than the shop-specific changes in "PTSd Scan + Discovery Rewards + Shop Stock Changes + Misc.lua")
 NormalNeverSoldItems = [[<Property name="NeverSoldItems">
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="OXYGEN" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="CATALYST1" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="CATALYST2" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="POWERCELL" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="PRODFUEL2" />
-          </Property>
+            <Property name="NeverSoldItems" value="OXYGEN" _index="0" />
+			<Property name="NeverSoldItems" value="CATALYST1" _index="1" />
+			<Property name="NeverSoldItems" value="CATALYST2" _index="2" />
+			<Property name="NeverSoldItems" value="FUEL1" _index="3" />
+			<Property name="NeverSoldItems" value="FUEL2" _index="4" />
         </Property>]]
 		
 LowNeverSoldItems = [[<Property name="NeverSoldItems">
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="FUEL1" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="FUEL2" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="OXYGEN" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="LAUNCHSUB" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="LAND1" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="CATALYST1" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="CATALYST2" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="CAVE1" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="WATER1" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="WATER2" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="CAVE2" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="RADIO1" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="POWERCELL" />
-          </Property>
-          <Property value="NMSString0x10.xml">
-            <Property name="Value" value="PRODFUEL2" />
-          </Property>
+            <Property name="NeverSoldItems" value="POWERCELL" _index="0" />
+			<Property name="NeverSoldItems" value="PRODFUEL2" _index="1" />
+			<Property name="NeverSoldItems" value="OXYGEN" _index="2" />
+			<Property name="NeverSoldItems" value="LAUNCHSUB" _index="3" />
+			<Property name="NeverSoldItems" value="LAND1" _index="4" />
+			<Property name="NeverSoldItems" value="CATALYST1" _index="5" />
+			<Property name="NeverSoldItems" value="CATALYST2" _index="6" />
+			<Property name="NeverSoldItems" value="CAVE1" _index="7" />
+			<Property name="NeverSoldItems" value="WATER1" _index="8" />
+			<Property name="NeverSoldItems" value="WATER2" _index="9" />
+			<Property name="NeverSoldItems" value="CAVE2" _index="10" />
+			<Property name="NeverSoldItems" value="RADIO1" _index="11" />
+			<Property name="NeverSoldItems" value="POWERCELL" _index="12" />
+			<Property name="NeverSoldItems" value="PRODFUEL2" _index="13" />
         </Property>]]
 
 --These define how many slots your suit & starting equipment get when choosing the "Maximum" setting for "Starting Slots" on new games
@@ -319,14 +300,14 @@ Presets =
 	{
 		{"Custom"},
 		{																						--Options generally go from easier to harder --> (except for True/False ones)
-			{"SettingsLocked",					"False"},					--False				(options are True, False)
-			{"InventoriesAlwaysInRange",		"False"},					--False				(options are True, False)
-			{"AllSlotsUnlocked",				"False"},					--False				(options are True, False)
-			{"WarpDriveRequirements",			"True"},					--True				(options are True, False)
-			{"CraftingIsFree",					"False"},					--False				(options are True, False)
-			{"TutorialEnabled",					"True"},					--True				(options are True, False)
-			{"StartWithAllItemsKnown",			"False"},					--False				(options are True, False)
-			{"BaseAutoPower",					"False"},					--False				(options are True, False)
+			{"SettingsLocked",					"false"},					--False				(options are True, False)
+			{"InventoriesAlwaysInRange",		"false"},					--False				(options are True, False)
+			{"AllSlotsUnlocked",				"false"},					--False				(options are True, False)
+			{"WarpDriveRequirements",			"true"},					--True				(options are True, False)
+			{"CraftingIsFree",					"false"},					--False				(options are True, False)
+			{"TutorialEnabled",					"true"},					--True				(options are True, False)
+			{"StartWithAllItemsKnown",			"false"},					--False				(options are True, False)
+			{"BaseAutoPower",					"false"},					--False				(options are True, False)
 			{"DeathConsequencesDifficulty",		"ItemGrave"},				--ItemGrave			(options are None, ItemGrave, DestroyItems, DestroySave)
 			{"DamageReceivedDifficulty",		"Normal"},					--Normal			(options are None, Low, Normal, High)
 			{"DamageGivenDifficulty",			"Normal"},					--Normal			(options are High, Normal, Low)
@@ -339,7 +320,7 @@ Presets =
 			{"FuelUseDifficulty",				"Normal"},					--Normal			(options are Free, Cheap, Normal, Expensive)
 			{"LaunchFuelCostDifficulty",		"Normal"},					--Normal			(options are Free, Low, Normal, High)
 			{"CurrencyCostDifficulty",			"Normal"},					--Normal			(options are Free, Cheap, Normal, Expensive)
-			{"ItemShopAvailabilityDifficulty",	"High"},					--Normal			(options are High, Normal, Low)
+			{"ItemShopAvailabilityDifficulty",	"Normal"},					--Normal			(options are High, Normal, Low)
 			{"ScannerRechargeDifficulty",		"Normal"},					--Normal			(options are VeryFast, Fast, Normal, Slow)
 			{"ReputationGainDifficulty",		"Normal"},					--Normal			(options are VeryFast, Fast, Normal, Slow)
 			{"CreatureHostilityDifficulty",		"FullEcosystem"},			--FullEcosystem		(options are NeverAttack, AttackIfProvoked, FullEcosystem)
@@ -355,14 +336,14 @@ Presets =
 	{
 		{"Normal"},
 		{																						--Options generally go from easier to harder --> (except for True/False ones)
-			{"SettingsLocked",					"False"},					--False				(options are True, False)
-			{"InventoriesAlwaysInRange",		"False"},					--False				(options are True, False)
-			{"AllSlotsUnlocked",				"False"},					--False				(options are True, False)
-			{"WarpDriveRequirements",			"True"},					--True				(options are True, False)
-			{"CraftingIsFree",					"False"},					--False				(options are True, False)
-			{"TutorialEnabled",					"True"},					--True				(options are True, False)
-			{"StartWithAllItemsKnown",			"False"},					--False				(options are True, False)
-			{"BaseAutoPower",					"False"},					--False				(options are True, False)
+			{"SettingsLocked",					"false"},					--False				(options are True, False)
+			{"InventoriesAlwaysInRange",		"false"},					--False				(options are True, False)
+			{"AllSlotsUnlocked",				"false"},					--False				(options are True, False)
+			{"WarpDriveRequirements",			"true"},					--True				(options are True, False)
+			{"CraftingIsFree",					"false"},					--False				(options are True, False)
+			{"TutorialEnabled",					"true"},					--True				(options are True, False)
+			{"StartWithAllItemsKnown",			"false"},					--False				(options are True, False)
+			{"BaseAutoPower",					"false"},					--False				(options are True, False)
 			{"DeathConsequencesDifficulty",		"ItemGrave"},				--ItemGrave			(options are None, ItemGrave, DestroyItems, DestroySave)
 			{"DamageReceivedDifficulty",		"Low"},						--Normal			(options are None, Low, Normal, High)
 			{"DamageGivenDifficulty",			"Normal"},					--Normal			(options are High, Normal, Low)
@@ -373,9 +354,9 @@ Presets =
 			{"InventoryStackLimitsDifficulty",	"High"},					--High				(options are High, Normal, Low)
 			{"ChargingRequirementsDifficulty",	"Normal"},					--Normal			(options are None, Low, Normal, High)
 			{"FuelUseDifficulty",				"Normal"},					--Normal			(options are Free, Cheap, Normal, Expensive)
-			{"LaunchFuelCostDifficulty",		"Low"},						--Normal			(options are Free, Low, Normal, High)
+			{"LaunchFuelCostDifficulty",		"Normal"},					--Normal			(options are Free, Low, Normal, High)
 			{"CurrencyCostDifficulty",			"Normal"},					--Normal			(options are Free, Cheap, Normal, Expensive)
-			{"ItemShopAvailabilityDifficulty",	"High"},					--Normal			(options are High, Normal, Low)
+			{"ItemShopAvailabilityDifficulty",	"Normal"},					--Normal			(options are High, Normal, Low)
 			{"ScannerRechargeDifficulty",		"Fast"},					--Normal			(options are VeryFast, Fast, Normal, Slow)
 			{"ReputationGainDifficulty",		"Normal"},					--Normal			(options are VeryFast, Fast, Normal, Slow)
 			{"CreatureHostilityDifficulty",		"FullEcosystem"},			--FullEcosystem		(options are NeverAttack, AttackIfProvoked, FullEcosystem)
@@ -391,14 +372,14 @@ Presets =
 	{
 		{"Creative"},
 		{																						--Options generally go from easier to harder --> (except for True/False ones)
-			{"SettingsLocked",					"False"},					--False				(options are True, False)
-			{"InventoriesAlwaysInRange",		"True"},					--True				(options are True, False)
-			{"AllSlotsUnlocked",				"True"},					--True				(options are True, False)
-			{"WarpDriveRequirements",			"False"},					--False				(options are True, False)
-			{"CraftingIsFree",					"True"},					--True				(options are True, False)
-			{"TutorialEnabled",					"False"},					--False				(options are True, False)
-			{"StartWithAllItemsKnown",			"True"},					--True				(options are True, False)
-			{"BaseAutoPower",					"True"},					--True				(options are True, False)
+			{"SettingsLocked",					"false"},					--False				(options are True, False)
+			{"InventoriesAlwaysInRange",		"true"},					--True				(options are True, False)
+			{"AllSlotsUnlocked",				"true"},					--True				(options are True, False)
+			{"WarpDriveRequirements",			"false"},					--False				(options are True, False)
+			{"CraftingIsFree",					"true"},					--True				(options are True, False)
+			{"TutorialEnabled",					"false"},					--False				(options are True, False)
+			{"StartWithAllItemsKnown",			"true"},					--True				(options are True, False)
+			{"BaseAutoPower",					"true"},					--True				(options are True, False)
 			{"DeathConsequencesDifficulty",		"None"},					--None				(options are None, ItemGrave, DestroyItems, DestroySave)
 			{"DamageReceivedDifficulty",		"None"},					--None				(options are None, Low, Normal, High)
 			{"DamageGivenDifficulty",			"High"},					--Normal			(options are High, Normal, Low)
@@ -427,14 +408,14 @@ Presets =
 	{
 		{"Relaxed"},
 		{																						--Options generally go from easier to harder --> (except for True/False ones)
-			{"SettingsLocked",					"False"},					--False				(options are True, False)
-			{"InventoriesAlwaysInRange",		"True"},					--True				(options are True, False)
-			{"AllSlotsUnlocked",				"False"},					--False				(options are True, False)
-			{"WarpDriveRequirements",			"True"},					--True				(options are True, False)
-			{"CraftingIsFree",					"False"},					--False				(options are True, False)
-			{"TutorialEnabled",					"True"},					--True				(options are True, False)
-			{"StartWithAllItemsKnown",			"False"},					--False				(options are True, False)
-			{"BaseAutoPower",					"True"},					--True				(options are True, False)
+			{"SettingsLocked",					"false"},					--False				(options are True, False)
+			{"InventoriesAlwaysInRange",		"true"},					--True				(options are True, False)
+			{"AllSlotsUnlocked",				"false"},					--False				(options are True, False)
+			{"WarpDriveRequirements",			"true"},					--True				(options are True, False)
+			{"CraftingIsFree",					"false"},					--False				(options are True, False)
+			{"TutorialEnabled",					"true"},					--True				(options are True, False)
+			{"StartWithAllItemsKnown",			"false"},					--False				(options are True, False)
+			{"BaseAutoPower",					"true"},					--True				(options are True, False)
 			{"DeathConsequencesDifficulty",		"None"},					--None				(options are None, ItemGrave, DestroyItems, DestroySave)
 			{"DamageReceivedDifficulty",		"Low"},						--Low				(options are None, Low, Normal, High)
 			{"DamageGivenDifficulty",			"High"},					--High				(options are High, Normal, Low)
@@ -463,14 +444,14 @@ Presets =
 	{
 		{"Survival"},
 		{																						--Options generally go from easier to harder --> (except for True/False ones)
-			{"SettingsLocked",					"False"},					--False				(options are True, False)
-			{"InventoriesAlwaysInRange",		"False"},					--False				(options are True, False)
-			{"AllSlotsUnlocked",				"False"},					--False				(options are True, False)
-			{"WarpDriveRequirements",			"True"},					--True				(options are True, False)
-			{"CraftingIsFree",					"False"},					--False				(options are True, False)
-			{"TutorialEnabled",					"True"},					--True				(options are True, False)
-			{"StartWithAllItemsKnown",			"False"},					--False				(options are True, False)
-			{"BaseAutoPower",					"False"},					--False				(options are True, False)
+			{"SettingsLocked",					"false"},					--False				(options are True, False)
+			{"InventoriesAlwaysInRange",		"false"},					--False				(options are True, False)
+			{"AllSlotsUnlocked",				"false"},					--False				(options are True, False)
+			{"WarpDriveRequirements",			"true"},					--True				(options are True, False)
+			{"CraftingIsFree",					"false"},					--False				(options are True, False)
+			{"TutorialEnabled",					"true"},					--True				(options are True, False)
+			{"StartWithAllItemsKnown",			"false"},					--False				(options are True, False)
+			{"BaseAutoPower",					"false"},					--False				(options are True, False)
 			{"DeathConsequencesDifficulty",		"DestroyItems"},			--DestroyItems		(options are None, ItemGrave, DestroyItems, DestroySave)
 			{"DamageReceivedDifficulty",		"Normal"},					--High				(options are None, Low, Normal, High)
 			{"DamageGivenDifficulty",			"Normal"},					--Normal			(options are High, Normal, Low)
@@ -483,7 +464,7 @@ Presets =
 			{"FuelUseDifficulty",				"Normal"},					--Expensive			(options are Free, Cheap, Normal, Expensive)
 			{"LaunchFuelCostDifficulty",		"Normal"},					--High				(options are Free, Low, Normal, High)
 			{"CurrencyCostDifficulty",			"Normal"},					--Normal			(options are Free, Cheap, Normal, Expensive)
-			{"ItemShopAvailabilityDifficulty",	"High"},					--Low				(options are High, Normal, Low)
+			{"ItemShopAvailabilityDifficulty",	"Normal"},					--Low				(options are High, Normal, Low)
 			{"ScannerRechargeDifficulty",		"Normal"},					--Normal			(options are VeryFast, Fast, Normal, Slow)
 			{"ReputationGainDifficulty",		"Normal"},					--Normal			(options are VeryFast, Fast, Normal, Slow)
 			{"CreatureHostilityDifficulty",		"FullEcosystem"},			--FullEcosystem		(options are NeverAttack, AttackIfProvoked, FullEcosystem)
@@ -493,20 +474,20 @@ Presets =
 		},
 		{
 			{"CombatTimerDifficultyOption",		"Normal"},--Space			--Fast				(options are Off, Slow, Normal, Fast)
-			{"CombatTimerDifficultyOption",		"Fast"},--Ground			--Fast				(options are Off, Slow, Normal, Fast)
+			{"CombatTimerDifficultyOption",		"Normal"},--Ground			--Fast				(options are Off, Slow, Normal, Fast)
 		}
 	},
 	{
 		{"Permadeath"},
 		{																						--Options generally go from easier to harder --> (except for True/False ones)
-			{"SettingsLocked",					"False"},					--False				(options are True, False)
-			{"InventoriesAlwaysInRange",		"False"},					--False				(options are True, False)
-			{"AllSlotsUnlocked",				"False"},					--False				(options are True, False)
-			{"WarpDriveRequirements",			"True"},					--True				(options are True, False)
-			{"CraftingIsFree",					"False"},					--False				(options are True, False)
-			{"TutorialEnabled",					"True"},					--True				(options are True, False)
-			{"StartWithAllItemsKnown",			"False"},					--False				(options are True, False)
-			{"BaseAutoPower",					"False"},					--False				(options are True, False)
+			{"SettingsLocked",					"false"},					--False				(options are True, False)
+			{"InventoriesAlwaysInRange",		"false"},					--False				(options are True, False)
+			{"AllSlotsUnlocked",				"false"},					--False				(options are True, False)
+			{"WarpDriveRequirements",			"true"},					--True				(options are True, False)
+			{"CraftingIsFree",					"false"},					--False				(options are True, False)
+			{"TutorialEnabled",					"true"},					--True				(options are True, False)
+			{"StartWithAllItemsKnown",			"false"},					--False				(options are True, False)
+			{"BaseAutoPower",					"false"},					--False				(options are True, False)
 			{"DeathConsequencesDifficulty",		"DestroySave"},				--DestroySave		(options are None, ItemGrave, DestroyItems, DestroySave)
 			{"DamageReceivedDifficulty",		"Normal"},					--High				(options are None, Low, Normal, High)
 			{"DamageGivenDifficulty",			"Normal"},					--Normal			(options are High, Normal, Low)
@@ -519,7 +500,7 @@ Presets =
 			{"FuelUseDifficulty",				"Normal"},					--Expensive			(options are Free, Cheap, Normal, Expensive)
 			{"LaunchFuelCostDifficulty",		"Normal"},					--High				(options are Free, Low, Normal, High)
 			{"CurrencyCostDifficulty",			"Normal"},					--Normal			(options are Free, Cheap, Normal, Expensive)
-			{"ItemShopAvailabilityDifficulty",	"High"},					--Low				(options are High, Normal, Low)
+			{"ItemShopAvailabilityDifficulty",	"Normal"},					--Low				(options are High, Normal, Low)
 			{"ScannerRechargeDifficulty",		"Normal"},					--Normal			(options are VeryFast, Fast, Normal, Slow)
 			{"ReputationGainDifficulty",		"Normal"},					--Normal			(options are VeryFast, Fast, Normal, Slow)
 			{"CreatureHostilityDifficulty",		"FullEcosystem"},			--FullEcosystem		(options are NeverAttack, AttackIfProvoked, FullEcosystem)
@@ -529,20 +510,20 @@ Presets =
 		},
 		{
 			{"CombatTimerDifficultyOption",		"Normal"},--Space			--Fast				(options are Off, Slow, Normal, Fast)
-			{"CombatTimerDifficultyOption",		"Fast"},--Ground			--Fast				(options are Off, Slow, Normal, Fast)
+			{"CombatTimerDifficultyOption",		"Normal"},--Ground			--Fast				(options are Off, Slow, Normal, Fast)
 		}
 	},
 	{
 		{"PermadeathMinSettings"},	--Minimum allowable settings to choose when doing a permadeath game? Or for Permadeath achievement, maybe?
 		{																						--Options generally go from easier to harder --> (except for True/False ones)
-			{"SettingsLocked",					"False"},					--False				(options are True, False)
-			{"InventoriesAlwaysInRange",		"False"},					--False				(options are True, False)
-			{"AllSlotsUnlocked",				"False"},					--False				(options are True, False)
-			{"WarpDriveRequirements",			"True"},					--True				(options are True, False)
-			{"CraftingIsFree",					"False"},					--False				(options are True, False)
-			{"TutorialEnabled",					"True"},					--True				(options are True, False)
-			{"StartWithAllItemsKnown",			"False"},					--False				(options are True, False)
-			{"BaseAutoPower",					"False"},					--False				(options are True, False)
+			{"SettingsLocked",					"false"},					--False				(options are True, False)
+			{"InventoriesAlwaysInRange",		"false"},					--False				(options are True, False)
+			{"AllSlotsUnlocked",				"false"},					--False				(options are True, False)
+			{"WarpDriveRequirements",			"true"},					--True				(options are True, False)
+			{"CraftingIsFree",					"false"},					--False				(options are True, False)
+			{"TutorialEnabled",					"true"},					--True				(options are True, False)
+			{"StartWithAllItemsKnown",			"false"},					--False				(options are True, False)
+			{"BaseAutoPower",					"false"},					--False				(options are True, False)
 			{"DeathConsequencesDifficulty",		"DestroySave"},				--DestroySave		(options are None, ItemGrave, DestroyItems, DestroySave)
 			{"DamageReceivedDifficulty",		"Low"},						--Normal			(options are None, Low, Normal, High)
 			{"DamageGivenDifficulty",			"Normal"},					--Normal			(options are High, Normal, Low)
@@ -555,7 +536,7 @@ Presets =
 			{"FuelUseDifficulty",				"Normal"},					--Normal			(options are Free, Cheap, Normal, Expensive)
 			{"LaunchFuelCostDifficulty",		"Normal"},					--Normal			(options are Free, Low, Normal, High)
 			{"CurrencyCostDifficulty",			"Normal"},					--Normal			(options are Free, Cheap, Normal, Expensive)
-			{"ItemShopAvailabilityDifficulty",	"High"},					--Normal			(options are High, Normal, Low)
+			{"ItemShopAvailabilityDifficulty",	"Normal"},					--Normal			(options are High, Normal, Low)
 			{"ScannerRechargeDifficulty",		"Fast"},					--Fast				(options are VeryFast, Fast, Normal, Slow)
 			{"ReputationGainDifficulty",		"Fast"},					--Fast				(options are VeryFast, Fast, Normal, Slow)
 			{"CreatureHostilityDifficulty",		"FullEcosystem"},			--FullEcosystem		(options are NeverAttack, AttackIfProvoked, FullEcosystem)
@@ -575,11 +556,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
+["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 	{
 		["MBIN_FILE_SOURCE"] 	= {"GCGAMEPLAYGLOBALS.GLOBAL.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["INTEGER_TO_FLOAT"] = "FORCE",
@@ -598,7 +580,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA/SIMULATION/SCANNING/SCANDATATABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID","TOOL"},
@@ -619,10 +601,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				["INTEGER_TO_FLOAT"] = "FORCE",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AllSlotsUnlockedStartingSuitSlots", AllSlotsUnlockedStartingSuitSlots},
@@ -633,7 +615,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"InventoryStackLimits","GcDifficultySettingCommonData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"InventoryStackLimits","GcDifficultySettingCommonData"},
 				--["PRECEDING_KEY_WORDS"] = "MaxSubstanceStackSizes",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -717,21 +699,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Free","GcDifficultyFuelUseOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Free","GcDifficultyFuelUseOptionData"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Multiplier", FUFree},
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Cheap","GcDifficultyFuelUseOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Cheap","GcDifficultyFuelUseOptionData"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Multiplier", FUCheap},
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Cheap","GcDifficultyFuelUseOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Cheap","GcDifficultyFuelUseOptionData"},
 				["PRECEDING_KEY_WORDS"] = "TechOverrides",
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -740,14 +722,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Normal","GcDifficultyFuelUseOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Normal","GcDifficultyFuelUseOptionData"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Multiplier", FUNormal},
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Expensive","GcDifficultyFuelUseOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Expensive","GcDifficultyFuelUseOptionData"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Multiplier", FUExpensive},
@@ -774,7 +756,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Free","GcDifficultyCurrencyCostOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Free","GcDifficultyCurrencyCostOptionData"},
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -785,7 +767,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Cheap","GcDifficultyCurrencyCostOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Cheap","GcDifficultyCurrencyCostOptionData"},
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -796,7 +778,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Normal","GcDifficultyCurrencyCostOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Normal","GcDifficultyCurrencyCostOptionData"},
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -807,7 +789,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Expensive","GcDifficultyCurrencyCostOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Expensive","GcDifficultyCurrencyCostOptionData"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Units", CCExpensiveUnits},
@@ -911,24 +893,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Normal","GcItemShopAvailabilityDifficultyOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Normal","GcItemShopAvailabilityDifficultyOptionData"},
 				["PRECEDING_KEY_WORDS"] = "NeverSoldItems",
 				--["LINE_OFFSET"] = "+2",
 				REMOVE = "SECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Normal","GcItemShopAvailabilityDifficultyOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Normal","GcItemShopAvailabilityDifficultyOptionData"},
 				--["LINE_OFFSET"] = "+1",
 				ADD = NormalNeverSoldItems
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Low","GcItemShopAvailabilityDifficultyOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Low","GcItemShopAvailabilityDifficultyOptionData"},
 				["PRECEDING_KEY_WORDS"] = "NeverSoldItems",
 				--["LINE_OFFSET"] = "+2",
 				REMOVE = "SECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Low","GcItemShopAvailabilityDifficultyOptionData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Low","GcItemShopAvailabilityDifficultyOptionData"},
 				--["LINE_OFFSET"] = "+1",
 				ADD = LowNeverSoldItems
 			},
@@ -937,24 +919,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}}}
 
 
-local ChangesToGameplayGlobals = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToGameplayGlobals = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #InterestLevelChanges do
 	local InterestType = InterestLevelChanges[i][1][1]
 	local Ranges = InterestLevelChanges[i][2]
 	
 	for j=1, #Ranges do
-		NewValue = Ranges[j][1]
-		OldValue = Ranges[j][2]
+		NewValue1 = Ranges[j][1]
+		NewValue2 = Ranges[j][2]
+		NewValue3 = Ranges[j][3]
 	
 			ChangesToGameplayGlobals[#ChangesToGameplayGlobals+1] = 
 			{
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["PRECEDING_KEY_WORDS"] = {InterestType},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{OldValue, NewValue},
+					{"IGNORE", NewValue1},
+					{"IGNORE", NewValue2},
+					{"IGNORE", NewValue3},
 				}
 			}
 	end
@@ -970,16 +953,12 @@ for i = 1, #SentinelTimersChanges do
 	
 			ChangesToGameplayGlobals[#ChangesToGameplayGlobals+1] = 
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
-				["SPECIAL_KEY_WORDS"] = {TimerType, "GcExperienceTimers.xml",	Level, "Vector2f.xml"},
-				--["PRECEDING_KEY_WORDS"] = {ItemType},
-				--["VALUE_MATCH"]         = OldItem, 
+				["SPECIAL_KEY_WORDS"] = {TimerType, "GcExperienceTimers"},
+				["PRECEDING_KEY_WORDS"] = {Level},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"x", X},
-					{"y", Y},
+					{"X", X},
+					{"Y", Y},
 				}
 			}
 	end
@@ -995,16 +974,12 @@ for i = 1, #PirateTimersChanges do
 	
 			ChangesToGameplayGlobals[#ChangesToGameplayGlobals+1] = 
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
-				["SPECIAL_KEY_WORDS"] = {TimerType, "GcExperienceTimers.xml",	Level, "Vector2f.xml"},
-				--["PRECEDING_KEY_WORDS"] = {ItemType},
-				--["VALUE_MATCH"]         = OldItem, 
+				["SPECIAL_KEY_WORDS"] = {TimerType, "GcExperienceTimers"},
+				["PRECEDING_KEY_WORDS"] = {Level},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"x", X},
-					{"y", Y},
+					{"X", X},
+					{"Y", Y},
 				}
 			}
 	end
@@ -1012,17 +987,17 @@ end
 if DisablePlanetaryPirateRaids then
 			ChangesToGameplayGlobals[#ChangesToGameplayGlobals+1] = 
 			{
-				["SPECIAL_KEY_WORDS"] = {"PlanetPirateTimers", "GcExperienceTimers.xml"},
+				["SPECIAL_KEY_WORDS"] = {"PlanetPirateTimers", "GcExperienceTimers"},
 				["REPLACE_TYPE"] = "ALL",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
-					{"x",	"0"},
-					{"y",	"0"}
+					{"X",	"0"},
+					{"Y",	"0"}
 				}
 			}
 end
 
-local ChangesToDifficulty = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+local ChangesToDifficulty = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["MXML_CHANGE_TABLE"]
 
 for i = 1, #Presets do
 	local PresetName = Presets[i][1][1]
@@ -1036,7 +1011,7 @@ for i = 1, #Presets do
 			ChangesToDifficulty[#ChangesToDifficulty+1] = 
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
-				["SPECIAL_KEY_WORDS"] = {PresetName, "GcDifficultySettingsData.xml"},
+				["SPECIAL_KEY_WORDS"] = {PresetName, "GcDifficultySettingsData"},
 				--["PRECEDING_KEY_WORDS"] = {ItemType},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -1047,7 +1022,7 @@ for i = 1, #Presets do
 			ChangesToDifficulty[#ChangesToDifficulty+1] = 
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
-				["SPECIAL_KEY_WORDS"] = {PresetName, "GcDifficultySettingsData.xml",	"SpaceCombatTimers", "GcCombatTimerDifficultyOption.xml"},
+				["SPECIAL_KEY_WORDS"] = {PresetName, "GcDifficultySettingsData",	"SpaceCombatTimers", "GcCombatTimerDifficultyOption"},
 				--["PRECEDING_KEY_WORDS"] = {ItemType},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -1058,7 +1033,7 @@ for i = 1, #Presets do
 			ChangesToDifficulty[#ChangesToDifficulty+1] = 
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
-				["SPECIAL_KEY_WORDS"] = {PresetName, "GcDifficultySettingsData.xml",	"GroundCombatTimers", "GcCombatTimerDifficultyOption.xml"},
+				["SPECIAL_KEY_WORDS"] = {PresetName, "GcDifficultySettingsData",	"GroundCombatTimers", "GcCombatTimerDifficultyOption"},
 				--["PRECEDING_KEY_WORDS"] = {ItemType},
 				["VALUE_CHANGE_TABLE"] 	=
 				{

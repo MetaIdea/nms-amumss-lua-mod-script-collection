@@ -46,26 +46,26 @@ local ENCOUNTER =
 }
 
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]	= "TransparentSpaceEncounters.pak",
 ["MOD_AUTHOR"]		= "Lenni",
 ["NMS_VERSION"]		= "3.98",
 ["MOD_DESCRIPTION"]	= "Adds icons and text to space encounters",
-["MODIFICATIONS"]	= 
+["MODIFICATIONS"]	=
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
+			["MBIN_CHANGE_TABLE"] 	=
+			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
 							["PRECEDING_KEY_WORDS"]		= "PulseEncounters",
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 		= 
-							{	
+							["VALUE_CHANGE_TABLE"] 		=
+							{
 								{ "UseMarkerIconInOSD", "True" },
 							},
 						},
@@ -73,8 +73,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 				}
 			}
 		}
-	}	
-}	
+	}
+}
 
 
 local ChangesToExperienceSpawnTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
@@ -83,8 +83,8 @@ for i=1,#ENCOUNTER,1 do
 	id = ENCOUNTER[i][1]
 	text = ENCOUNTER[i][2]
     -- Each id in said list we're going to contain in a var (not necissariy but makes it readable)
-    --for each change we want to do we are creating adding a new item to the ChangesToRewardTable    
-    ChangesToExperienceSpawnTable[#ChangesToExperienceSpawnTable + 1] = 
+    --for each change we want to do we are creating adding a new item to the ChangesToRewardTable
+    ChangesToExperienceSpawnTable[#ChangesToExperienceSpawnTable + 1] =
     {
         ["SPECIAL_KEY_WORDS"]   = {"Id", id},
         ["VALUE_CHANGE_TABLE"]	=

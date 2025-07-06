@@ -1,35 +1,50 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "5_20"
+GameVersion = "5_64"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
 
 --NOTE: Almost all rewards of substances in this file are also affected by the "Substance Collection" difficulty multiplier in "PTSD Other Difficulty Settings.lua" (adjustable with in-game difficulty setting)
-	--The exceptions in this file are any substance rewards with "DisableMultiplier" set to "True" in REWARDTABLE.MBIN, which is mostly just the "domesticated" version crops that are plantable in hydroponic trays, which instead have fixed values
+	--The exceptions in this file are any substance rewards with "DisableMultiplier" set to "true" in REWARDTABLE.MBIN, which is mostly just the "domesticated" version crops that are plantable in hydroponic trays, which instead have fixed values
 --Extra multipliers to apply to any substance rewards which are also affected by the "Substance Collection" difficulty multiplier
 MinableSubstanceMult =					0.85/1.2				--Multiplier for substance rewards for destroying minable objects like rocks or plants. Stacks with the "Substance Collection" difficulty multiplier. Divided by 1.2 to balance out how supercharging the mining laser increases yields by 1.2x
+RuinsExtraMiningMult =					0.42					--Extra multiplier for mining Polished Stone from small & medium "ruins" objects since they yield roughly double what medium & large rocks do in vanilla despite having 0.75x as much health. Stacks with the above MinableSubstanceMult multiplier
 NonMinableSubstanceMult =				1						--Multiplier for certain substance rewards from other sources, like harvesting wild plants, destroying Depots, Frigate Expeditions, various other rewards. Stacks with the "Substance Collection" difficulty multiplier
 
 TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pellet Recipe during the tutorial when teaching the Hermetic Seal recipe instead of later on, false otherwise
 NoNewTechAtCrashsites = true			--false		Set true to ensure all starship crashsite Distress Beacon rewards only give random-Class Upgrade Modules, not teaching a new core tech blueprint
+RevealPurpleSystemsEarly = true			--false	 	Set true to allow using Discordant Interfaces at Korvax Monoliths to reveal all Purple Systems on the Galaxy Map
 
---Changes the Class & inventory size when redeeming the five unique expedition reward starships or one unique Multi-Tool: Golden Vector, Utopia Speeder, Starborn Runner, Iron Vulture, and Boundary Herald starships and Atlas Sceptre Multi-Tool
-ExpShipClass = 							"C"						--"S"
-ExpShipCargoSlots = 					8						--36				The game adds 1 to whatever value is entered here
-ExpShipHaulerCargoSlots = 				20						--36				(For Iron Vulture) The game adds 1 to whatever value is entered here
-ExpShipSize = 							"FgtSmall"				--"FgtLarge"		Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range)
-ExpShipHaulerSize = 					"DrpSmall"				--"DrpLarge"		(For Iron Vulture) Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range)
-ExpShipExplorerSize = 					"SciSmall"				--"SciLarge"		(For Boundary Herald) Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range)
+--Changes the Class & inventory size when redeeming the six unique expedition reward starships or two unique Multi-Tools: Golden Vector, Utopia Speeder, Starborn Runner, Iron Vulture, Boundary Herald, and Wraith starships or Atlas Sceptre and Pillar of Titan Multi-Tool
+ExpShipClass = 							"C"						--"S"		Sets the Class for redeeming the expedition ships & tools
+--Changes Cargo inventory size for expedition reward starships. The game adds 1 to whatever value is entered here
+ExpShipFighterCargoSlots = 				8						--36	(For Golden Vector/Utopia Speeder)
+ExpShipHaulerCargoSlots = 				19						--36	(For Iron Vulture)
+ExpShipExplorerCargoSlots = 			8						--36	(For Boundary Herald)
+ExpShipExoticCargoSlots = 				7						--36	(For StarbornRunner/Phoenix)
+ExpShipAlienCargoSlots = 				10						--36	(For Wraith)
+--Changes Tech inventory size for expedition reward starships. based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range)
+ExpShipFighterTechSize = 				"SciSmall"				--"FgtLarge"	(16)	(For Golden Vector/Utopia Speeder)
+ExpShipHaulerTechSize = 				"DrpSmall"				--"DrpLarge"	(9)		(For Iron Vulture)
+ExpShipExplorerTechSize = 				"ShtMedium"				--"SciLarge"	(17)	(For Boundary Herald)
+ExpShipExoticTechSize = 				"DrpLarge"				--"RoyLarge"	(19-2=17)	(For StarbornRunner/Phoenix)	For some reason the game appears to deduct -2 tech slots for this ship?
+ExpShipAlienTechSize = 					"ShtMedium"				--"SciLarge"	(17)	(For Wraith)
+--Sets the Hyperdrive of all expedition/Twitch reward starships to be empty like when buying a regular starship, instead of coming fully fueled.
+RewardShipHyperdriveEmpty =				true					--false
 
 --If set to "true", makes all other starships & multitools rewarded from Expeditions & Twitch streams come as C Class and with the inventory sizes defined below
 AllTwitchExpRewardsC =					false					--false
 AllTwitchExpRewardsCargo =				8						--Varies	Only used if AllTwitchExpRewardsC = true		The game adds 1 to whatever value is entered here
-AllTwitchExpRewardsShipSize =			"FgtSmall"				--Varies	Only used if AllTwitchExpRewardsC = true		Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range, or sometimes uses the Max value?)
+AllTwitchExpRewardsShipSize =			"DrpMedium"				--Varies	(14)	Only used if AllTwitchExpRewardsC = true		Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range, or sometimes uses the Max value?)
 AllTwitchExpRewardsToolSlots =			8						--Varies	Only used if AllTwitchExpRewardsC = true
 --AllTwitchExpRewardsToolSize =			"WeaponLarge"			--Varies	Only used if AllTwitchExpRewardsC = true
 
 --Allows salvaging Reactor Cores from Shuttle & Exotic starships (Also requires changes in "PTSd More Expensive Pilots + Receivers + Ship&Tool slots etc.lua")
 ReactorSalvage = true					--false		Enables this test
+
+--Changes the reward for interacting with the "black orbs" on pedestals in the first few Atlas Stations during the Atlas Path missions
+AtlasOrbReward =						"ANTIMATTER"			--"HYPERFUEL1"
+AtlasOrbNanites =						"80"					--N/A	Amount of nanites to receive instead of the other reward 50% of the time
 
 --This controls what the COST (not reward) is certain dialogue choices with Travellers, such as asking directions to a grave
 TravellerNaniteCost =					"TECHFRAG_TRAV"			--"TECHFRAG_MD" 100 Nanites		"PTSd Expensive Pilots + Broadcast Receivers.lua" changes the value of TECHFRAG_MD and adds TECHFRAG_TRAV as a new entry costing 800 Nanites
@@ -38,24 +53,28 @@ TravellerNaniteCost =					"TECHFRAG_TRAV"			--"TECHFRAG_MD" 100 Nanites		"PTSd E
 TravRewardDiHydrMult =					1						--30 - 50 Di-Hydrogen
 TravRewardTritMult =					1						--30 - 50 Tritium
 
-TravTechChance =						100						--200	Relative chance weight to receive tech memory fragment from certain traveller dialogue rewards instead of inventory memory fragment or products (Vanilla total chance weight pool is 500)
-MemFragInvBulkChance =					20						--0		Relative chance weight to receive Freighter Bulkhead from Inventory Memory Fragments (Vanilla total chance weight pool is 100)
-MemFragProcChanceMult =					4						--Multiplier to apply to the relative chance weight for the ~25 proc tech options in tech memory fragments (as opposed to the ~44 regular tech options)
-MemFragProcLauncherChanceMult =			0.4						--Multiplier to apply to the relative chance weight for Launcher proc tech, base of 300 (Most other proc tech have ~100 for their chance weight, with a few hazard/weapon ones having 15~25 instead)
-MemFragOutlierTechChance =				200						--500	Relative chance weight for certain regular techs in the tech memory fragment option pool, which normally have ~5x as much chance as others to be received (Specifically, Neural Stimulator, Advanced Mining Laser, Optical Drill, Launch Auto-Charger)
+TravTechChance =						100.000000				--200	Relative chance weight to receive tech memory fragment from certain traveller dialogue rewards instead of inventory memory fragment or products (Vanilla total chance weight pool is 500)
+MemFragInvBulkChance =					20.000000				--0		Relative chance weight to receive Freighter Bulkhead from Inventory Memory Fragments (Vanilla total chance weight pool is 100)
+MemFragProcChanceMult =					4.000000				--Multiplier to apply to the relative chance weight for the ~25 proc tech options in tech memory fragments (as opposed to the ~44 regular tech options)
+MemFragProcLauncherChanceMult =			0.400000				--Multiplier to apply to the relative chance weight for Launcher proc tech, base of 300 (Most other proc tech have ~100 for their chance weight, with a few hazard/weapon ones having 15~25 instead)
+MemFragOutlierTechChance =				200.000000				--500	Relative chance weight for certain regular techs in the tech memory fragment option pool, which normally have ~5x as much chance as others to be received (Specifically, Neural Stimulator, Advanced Mining Laser, Optical Drill, Launch Auto-Charger)
 
 --Replacers for the relative chance weighting for getting certain techs / upgrades when opening Psychonic Eggs (all 6 kinds of procedural upgrades have chance weighting = 50)
-PsychonicWormhole =						250						--500	"Wormhole Brain" Conflict/Economy Scanner equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
-PsychonicChloroplast =					30						--500	"Chloroplast Membrane" Launch Auto-Charger equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
-PsychonicNeural =						250						--500	"Neural Shielding" Cargo Scan Deflector equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
-PsychonicWaterLand =					30						--500	"Saline Carapace" Aqua-Jets equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
+PsychonicWormhole =						250.000000				--500	"Wormhole Brain" Conflict/Economy Scanner equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
+PsychonicChloroplast =					30.000000				--500	"Chloroplast Membrane" Launch Auto-Charger equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
+PsychonicNeural =						250.000000				--500	"Neural Shielding" Cargo Scan Deflector equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
+PsychonicWaterLand =					30.000000				--500	"Saline Carapace" Aqua-Jets equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
+PsychonicTeleport =						200.000000				--500	"Grasping Tendrils" Teleport Receiver equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
 
 --Changes how many Nanites you receive for choosing "Extract Nanites" at a Manufacturing Facility
 FactoryMin = 							300						--90 Nanites
 FactoryMax = 							500						--120 Nanites
 
 --Multipliers to how many Factory Override Tokens you get awarded
-FactoryOverrideTokenMult	=	10						--This should match the multiplier for "RecipeCost" in the Unlock Costs mod, to balance it out
+FactoryOverrideTokenMult	=			10						--This should match the multiplier for "RecipeCost" in the Unlock Costs mod, to balance it out
+
+--Replaces the amount of nanites you receive directly in addition to Navigation Data from activating the little "waypoints" / "save beacons" found outside many buildings. Nanites for recording/discovering the waypoint location are handled in "!PTSd Scan Rewards + Shops etc.lua"
+WaypointNanites		=					30						--10
 
 --Multiplier for rewards of small amounts of Units from various sources (Not frigate expeditions)
 	--Note these multipliers will generally not be applied to any unit rewards set further below in this file, unless otherwise noted.
@@ -76,7 +95,7 @@ PirateRaidDefenseRewardMult = 			1.5						--200,000	~	300,000		Reward for defeat
 --Additional reward for defeating a pirate raid
 PirateRaidDefenseNanitesMin = 			100
 PirateRaidDefenseNanitesMax = 			300
-PirateRaidDefenseNanitesChance = 		100
+PirateRaidDefenseNanitesChance = 		100.000000
 
 --Rewards for the Space Station missions to hunt down pirates.
 	--Options for Reward are R_MB_LOW, R_MB_MED, R_MB_HIGH, R_MB_MEGA, and options for increased Standing with the missiongiver are MB_STAND_LOW, MB_STAND_MED, MB_STAND_HIGH, MB_STAND_GUILD
@@ -94,110 +113,110 @@ ShipLootChanges =
 	{	--Pirates:	per destroyed ship containers
 		{"PIRATELOOT"},							--Ships with this reward drop 1x containers	(Except Raids, Dogfights, and Planetary Flybys drop 2x)
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			1,			200},				--"SCRAP_GOODS",		1,			1,			100
-			{"SCRAP_TECH",			"SCRAP_TECH",			1,			1,			50},				--"SCRAP_TECH",			1,			1,			100
-			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			1,			50},				--"SCRAP_WEAP",			1,			1,			100
-			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100},				--"SHIPCHARGE",			3,			3,			100
-			{"TRA_CURIO1",			"TRA_CURIO1",			1,			1,			10},				--"TRA_CURIO1",			1,			3,			40
-			{"WAR_CURIO1",			"WAR_CURIO1",			1,			1,			10},				--"WAR_CURIO1",			1,			3,			40
-			{"EXP_CURIO1",			"EXP_CURIO1",			1,			1,			10},				--"EXP_CURIO1",			1,			3,			40
+			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			1,			200.000000},			--"SCRAP_GOODS",		1,			1,			100.000000
+			{"SCRAP_TECH",			"SCRAP_TECH",			1,			1,			50.000000},				--"SCRAP_TECH",			1,			1,			100.000000
+			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			1,			50.000000},				--"SCRAP_WEAP",			1,			1,			100.000000
+			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100.000000},			--"SHIPCHARGE",			3,			3,			100.000000
+			{"TRA_CURIO1",			"TRA_CURIO1",			1,			1,			10.000000},				--"TRA_CURIO1",			1,			3,			40.000000
+			{"WAR_CURIO1",			"WAR_CURIO1",			1,			1,			10.000000},				--"WAR_CURIO1",			1,			3,			40.000000
+			{"EXP_CURIO1",			"EXP_CURIO1",			1,			1,			10.000000},				--"EXP_CURIO1",			1,			3,			40.000000
 		}
 	},
 	{	--Easy Pirates:	per destroyed ship containers	(Added by this mod)
 		{"PIRATLTEASY"},						--Ships with this reward drop 1x containers
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			1,			100},				--"SCRAP_GOODS",		1,			1,			100
-			{"SCRAP_TECH",			"SCRAP_TECH",			1,			1,			20},				--"SCRAP_TECH",			1,			1,			100
-			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			1,			20},				--"SCRAP_WEAP",			1,			1,			100
-			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100},				--"SHIPCHARGE",			3,			3,			100
-			{"TRA_CURIO1",			"TRA_CURIO1",			1,			1,			40},				--"TRA_CURIO1",			1,			3,			40
-			{"WAR_CURIO1",			"WAR_CURIO1",			1,			1,			40},				--"WAR_CURIO1",			1,			3,			40
-			{"EXP_CURIO1",			"EXP_CURIO1",			1,			1,			40},				--"EXP_CURIO1",			1,			3,			40
+			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			1,			100.000000},			--"SCRAP_GOODS",		1,			1,			100.000000
+			{"SCRAP_TECH",			"SCRAP_TECH",			1,			1,			20.000000},				--"SCRAP_TECH",			1,			1,			100.000000
+			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			1,			20.000000},				--"SCRAP_WEAP",			1,			1,			100.000000
+			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100.000000},			--"SHIPCHARGE",			3,			3,			100.000000
+			{"TRA_CURIO1",			"TRA_CURIO1",			1,			1,			40.000000},				--"TRA_CURIO1",			1,			3,			40.000000
+			{"WAR_CURIO1",			"WAR_CURIO1",			1,			1,			40.000000},				--"WAR_CURIO1",			1,			3,			40.000000
+			{"EXP_CURIO1",			"EXP_CURIO1",			1,			1,			40.000000},				--"EXP_CURIO1",			1,			3,			40.000000
 		}
 	},
 	{	--Hard Pirates:	per destroyed ship containers	(Added by this mod)
 		{"PIRATLTHARD"},						--Ships with this reward drop 1x containers
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			2,			150},				--"SCRAP_GOODS",		1,			1,			100
-			{"SCRAP_TECH",			"SCRAP_TECH",			1,			2,			66},				--"SCRAP_TECH",			1,			1,			100
-			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			2,			66},				--"SCRAP_WEAP",			1,			1,			100
-			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100},				--"SHIPCHARGE",			3,			3,			100
+			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			2,			150.000000},			--"SCRAP_GOODS",		1,			1,			100.000000
+			{"SCRAP_TECH",			"SCRAP_TECH",			1,			2,			66.000000},				--"SCRAP_TECH",			1,			1,			100.000000
+			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			2,			66.000000},				--"SCRAP_WEAP",			1,			1,			100.000000
+			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100.000000},			--"SHIPCHARGE",			3,			3,			100.000000
 		}
 	},
 	{	--Sentinel Interceptors:	per destroyed ship containers
 		{"POLICELOOT"},							--Ships with this reward drop 1x containers
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"SHIPCHARGE",			"SHIPCHARGE",			2,			2,			80},				--"SHIPCHARGE",			1,			1,			70		100
-			{"ROBOT1",				"ROBOT1",				80,			120,		50},				--"ROBOT1",				80,			120,		60		100
-			{"SENTINEL_LOOT",		"SENTINEL_LOOT",		1,			1,			50},				--"SENTINEL_LOOT",		1,			1,			45
-			{"SHIPBRAIN",			"SHIPBRAIN",			1,			1,			50},				--"SHIPBRAIN",			1,			1,			50
+			{"SHIPCHARGE",			"SHIPCHARGE",			2,			2,			80.000000},				--"SHIPCHARGE",			1,			1,			70.000000		100.000000
+			{"ROBOT1",				"ROBOT1",				80,			120,		50.000000},				--"ROBOT1",				80,			120,		60.000000		100.000000
+			{"SENTINEL_LOOT",		"SENTINEL_LOOT",		1,			1,			50.000000},				--"SENTINEL_LOOT",		1,			1,			45.000000
+			{"SHIPBRAIN",			"SHIPBRAIN",			1,			1,			50.000000},				--"SHIPBRAIN",			1,			1,			50.000000
 		}
 	},
 	{	--Trade Ships:	per destroyed ship containers
 		{"TRADERLOOT"},							--Ships with this reward drop 1x containers
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"HYPERFUEL2",			"HYPERFUEL2",			1,			1,			100},				--"HYPERFUEL2",			1,			1,			100
-			{"SPACEGUNK3",			"SPACEGUNK3",			99,			299,		100},				--"SPACEGUNK3",			99,			299,		100
-			{"TRA_ALLOY1",			"TRA_ALLOY1",			15,			25,			100},				--"TRA_ALLOY1",			15,			25,			100
-			{"TRA_COMMODITY2",		"TRA_COMMODITY2",		15,			25,			100},				--"TRA_COMMODITY2",		15,			25,			100
-			{"TRA_MINERALS1",		"TRA_MINERALS1",		15,			25,			100},				--"TRA_MINERALS1",		15,			25,			100
-			{"TRA_EXOTICS1",		"FRIG_BOOST_TRA",		1,			1,			100},				--"TRA_EXOTICS1",		15,			25,			100
+			{"HYPERFUEL2",			"HYPERFUEL2",			1,			1,			100.000000},			--"HYPERFUEL2",			1,			1,			100.000000
+			{"SPACEGUNK3",			"SPACEGUNK3",			99,			299,		100.000000},			--"SPACEGUNK3",			99,			299,		100.000000
+			{"TRA_ALLOY1",			"TRA_ALLOY1",			15,			25,			100.000000},			--"TRA_ALLOY1",			15,			25,			100.000000
+			{"TRA_COMMODITY2",		"TRA_COMMODITY2",		15,			25,			100.000000},			--"TRA_COMMODITY2",		15,			25,			100.000000
+			{"TRA_MINERALS1",		"TRA_MINERALS1",		15,			25,			100.000000},			--"TRA_MINERALS1",		15,			25,			100.000000
+			{"TRA_EXOTICS1",		"FRIG_BOOST_TRA",		1,			1,			100.000000},			--"TRA_EXOTICS1",		15,			25,			100.000000
 		}	--(Also drop random upgrade modules for starship Launcher, Pulse Engine(Removed by this mod), and Shields(Removed by this mod) at 100 chance weight each)
 	},
 	{	--Trader Escorts:	per destroyed ship containers	(Added by this mod)
 		{"ESCORTLOOT"},							--Ships with this reward drop 1x containers
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"SHIPCHARGE",			"SHIPCHARGE",			2,			2,			50},				--"SHIPCHARGE",			1,			1,			100
-			{"FRIG_BOOST_TRA",		"FRIG_BOOST_TRA",		1,			1,			50},				--"FRIG_BOOST_TRA",			1,			1,			100
+			{"SHIPCHARGE",			"SHIPCHARGE",			2,			2,			50.000000},				--"SHIPCHARGE",			1,			1,			100.000000
+			{"FRIG_BOOST_TRA",		"FRIG_BOOST_TRA",		1,			1,			50.000000},				--"FRIG_BOOST_TRA",		1,			1,			100.000000
 		}	--(Also drop random upgrade modules for starship Pulse Engine, and Shields at 100 chance weight each)
 	},
 	{	--Seems to be Smuggler Freighter Cargo Pods, found in pirate/outlaw systems	
 			--NOTE: For some reason in-game the substance amounts are roughly ~1/5 of the values set here
 		{"SMUGGLELOOT"},
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"FRIGATE_FUEL_3",		"FRIGATE_FUEL_1",		1,			3,			100},				--"FRIGATE_FUEL_3",		1,			3,			100
-			{"FRIG_TOKEN",			"FRIG_TOKEN",			1,			1,			30},				--"FRIG_TOKEN",			1,			1,			20
-			{"LAND3",				"LAND3",				100*5,		150*5,		80},				--"LAND3",				200,		250,		100
-			{"STELLAR2",			"STELLAR2",				100*5,		150*5,		120},				--"STELLAR2",			200,		250,		100
-			{"CAVE2",				"CAVE2",				100*5,		150*5,		120},				--"CAVE2",				200,		250,		100
-			{"ASTEROID2",			"ASTEROID2",			100*5,		150*5,		80},				--"ASTEROID2",			200,		250,		100
-			{"ASTEROID3",			"ASTEROID3",			100*5,		150*5,		120},				--"ASTEROID3",			100,		250,		100
-			{"RADIO1",				"RADIO1",				100*5,		150*5,		80},				--"RADIO1",				200,		250,		100
-			{"ILLEGAL_PROD8",		"ILLEGAL_PROD8",		1,			2,			20},				--"ILLEGAL_PROD8",		1,			2,			100		(588,000 units sale value in PTSd)
-			{"ILLEGAL_PROD2",		"ILLEGAL_PROD2",		3,			5,			120},				--"ILLEGAL_PROD2",		5,			10,			100		(54,000 units sale value in PTSd)
-			{"ILLEGAL_PROD3",		"ILLEGAL_PROD3",		2,			3,			100},				--"ILLEGAL_PROD3",		4,			10,			100		(108,000 units sale value in PTSd)
-			{"ILLEGAL_PROD4",		"ILLEGAL_PROD4",		1,			4,			50},				--"ILLEGAL_PROD4",		3,			8,			100		(192,000 units sale value in PTSd)
-			{"ILLEGAL_PROD5",		"FRIG_BOOST_SPD",		1,			1,			80},				--"ILLEGAL_PROD5",		3,			6,			100		(348,000 units sale value in PTSd)
-			{"ILLEGAL_PROD6",		"ILLEGAL_PROD6",		1,			3,			40},				--"ILLEGAL_PROD6",		2,			4,			100		(408,000 units sale value in PTSd)
-			{"ILLEGAL_PROD7",		"ILLEGAL_PROD7",		1,			2,			30},				--"ILLEGAL_PROD7",		1,			2,			100		(498,000 units sale value in PTSd)
+			{"FRIGATE_FUEL_3",		"FRIGATE_FUEL_1",		1,			3,			100.000000},			--"FRIGATE_FUEL_3",		1,			3,			100.000000
+			{"FRIG_TOKEN",			"FRIG_TOKEN",			1,			1,			30.000000},				--"FRIG_TOKEN",			1,			1,			20.000000
+			{"LAND3",				"LAND3",				100*5,		150*5,		80.000000},				--"LAND3",				200,		250,		100.000000
+			{"STELLAR2",			"STELLAR2",				100*5,		150*5,		120.000000},			--"STELLAR2",			200,		250,		100.000000
+			{"CAVE2",				"CAVE2",				100*5,		150*5,		120.000000},			--"CAVE2",				200,		250,		100.000000
+			{"ASTEROID2",			"ASTEROID2",			100*5,		150*5,		80.000000},				--"ASTEROID2",			200,		250,		100.000000
+			{"ASTEROID3",			"ASTEROID3",			100*5,		150*5,		120.000000},			--"ASTEROID3",			100,		250,		100.000000
+			{"RADIO1",				"RADIO1",				100*5,		150*5,		80.000000},				--"RADIO1",				200,		250,		100.000000
+			{"ILLEGAL_PROD8",		"ILLEGAL_PROD8",		1,			2,			20.000000},				--"ILLEGAL_PROD8",		1,			2,			100.000000		(588,000 units sale value in PTSd)
+			{"ILLEGAL_PROD2",		"ILLEGAL_PROD2",		3,			5,			120.000000},			--"ILLEGAL_PROD2",		5,			10,			100.000000		(54,000 units sale value in PTSd)
+			{"ILLEGAL_PROD3",		"ILLEGAL_PROD3",		2,			3,			100.000000},			--"ILLEGAL_PROD3",		4,			10,			100.000000		(108,000 units sale value in PTSd)
+			{"ILLEGAL_PROD4",		"ILLEGAL_PROD4",		1,			4,			50.000000},				--"ILLEGAL_PROD4",		3,			8,			100.000000		(192,000 units sale value in PTSd)
+			{"ILLEGAL_PROD5",		"FRIG_BOOST_SPD",		1,			1,			80.000000},				--"ILLEGAL_PROD5",		3,			6,			100.000000		(348,000 units sale value in PTSd)
+			{"ILLEGAL_PROD6",		"ILLEGAL_PROD6",		1,			3,			40.000000},				--"ILLEGAL_PROD6",		2,			4,			100.000000		(408,000 units sale value in PTSd)
+			{"ILLEGAL_PROD7",		"ILLEGAL_PROD7",		1,			2,			30.000000},				--"ILLEGAL_PROD7",		1,			2,			100.000000		(498,000 units sale value in PTSd)
 		}
 	},
 	{	--Freighter Cargo Pods
 			--NOTE: For some reason in-game the substance amounts are roughly ~1/5 of the values set here
 		{"FREIGHTERLOOT"},
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"FRIGATE_FUEL_3",		"FRIGATE_FUEL_3",		1,			3,			100},				--"FRIGATE_FUEL_3",		1,			3,			100
-			{"FRIG_TOKEN",			"FRIG_TOKEN",			1,			1,			60},				--"FRIG_TOKEN",			1,			1,			20
-			{"LAND3",				"LAND3",				200*5,		250*5,		100},				--"LAND3",				200,		250,		100
-			{"STELLAR2",			"STELLAR2",				200*5,		250*5,		100},				--"STELLAR2",			200,		250,		100
-			{"CAVE2",				"CAVE2",				200*5,		250*5,		100},				--"CAVE2",				200,		250,		100
-			{"ASTEROID2",			"ASTEROID2",			200*5,		250*5,		100},				--"ASTEROID2",			200,		250,		100
-			{"ASTEROID3",			"ASTEROID3",			100*5,		250*5,		100},				--"ASTEROID3",			100,		250,		100
-			{"RADIO1",				"RADIO1",				200*5,		250*5,		100},				--"RADIO1",				200,		250,		100
-			{"TRA_COMMODITY3",		"TRA_COMMODITY3",		16,			20,			100},				--"TRA_COMMODITY3",		8,			10,			100
-			{"TRA_COMPONENT1",		"TRA_COMPONENT1",		35,			50,			100},				--"TRA_COMPONENT1",		25,			25,			100
-			{"TRA_ENERGY4",			"TRA_ENERGY4",			12,			16,			100},				--"TRA_ENERGY4",		8,			10,			100
-			{"TRA_EXOTICS5",		"TRA_EXOTICS5",			8,			12,			100},				--"TRA_EXOTICS5",		1,			3,			100
-			{"TRA_MINERALS3",		"TRA_MINERALS3",		16,			20,			100},				--"TRA_MINERALS3",		8,			10,			100
-			{"TRA_MINERALS2",		"FRIG_BOOST_SPD",		1,			1,			80},				--"TRA_MINERALS2",		15,			25,			100
-			{"TRA_TECH3",			"TRA_TECH3",			16,			20,			100},				--"TRA_TECH3",			8,			10,			100
+			{"FRIGATE_FUEL_3",		"FRIGATE_FUEL_3",		1,			3,			100.000000},			--"FRIGATE_FUEL_3",		1,			3,			100.000000
+			{"FRIG_TOKEN",			"FRIG_TOKEN",			1,			1,			60.000000},				--"FRIG_TOKEN",			1,			1,			20.000000
+			{"LAND3",				"LAND3",				200*5,		250*5,		100.000000},			--"LAND3",				200,		250,		100.000000
+			{"STELLAR2",			"STELLAR2",				200*5,		250*5,		100.000000},			--"STELLAR2",			200,		250,		100.000000
+			{"CAVE2",				"CAVE2",				200*5,		250*5,		100.000000},			--"CAVE2",				200,		250,		100.000000
+			{"ASTEROID2",			"ASTEROID2",			200*5,		250*5,		100.000000},			--"ASTEROID2",			200,		250,		100.000000
+			{"ASTEROID3",			"ASTEROID3",			100*5,		250*5,		100.000000},			--"ASTEROID3",			100,		250,		100.000000
+			{"RADIO1",				"RADIO1",				200*5,		250*5,		100.000000},			--"RADIO1",				200,		250,		100.000000
+			{"TRA_COMMODITY3",		"TRA_COMMODITY3",		16,			20,			100.000000},			--"TRA_COMMODITY3",		8,			10,			100.000000
+			{"TRA_COMPONENT1",		"TRA_COMPONENT1",		35,			50,			100.000000},			--"TRA_COMPONENT1",		25,			25,			100.000000
+			{"TRA_ENERGY4",			"TRA_ENERGY4",			12,			16,			100.000000},			--"TRA_ENERGY4",		8,			10,			100.000000
+			{"TRA_EXOTICS5",		"TRA_EXOTICS5",			8,			12,			100.000000},			--"TRA_EXOTICS5",		1,			3,			100.000000
+			{"TRA_MINERALS3",		"TRA_MINERALS3",		16,			20,			100.000000},			--"TRA_MINERALS3",		8,			10,			100.000000
+			{"TRA_MINERALS2",		"FRIG_BOOST_SPD",		1,			1,			80.000000},				--"TRA_MINERALS2",		15,			25,			100.000000
+			{"TRA_TECH3",			"TRA_TECH3",			16,			20,			100.000000},			--"TRA_TECH3",			8,			10,			100.000000
 		}
 	},
 	{	--Reward for rescuing a Freighter from Pirates, unlike above you have the listed chance to receive ALL listed rewards
 		{"FREIGHTER_SAVED"},							--Must decline choose to request a reward instead of buying the freighter to recieve this (confirm with 3.87)
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance
-			{"FREI_INV_TOKEN",		"FREI_INV_TOKEN",		1,			1,			100},				--"FREI_INV_TOKEN",		1,			1,			100
-			{"ASTEROID2",			"ROCKETSUB",			300,		500,		100},				--"ASTEROID2",			300,		500,		100
+			{"FREI_INV_TOKEN",		"FREI_INV_TOKEN",		1,			1,			100.000000},			--"FREI_INV_TOKEN",		1,			1,			100.000000
+			{"ASTEROID2",			"ROCKETSUB",			300,		500,		100.000000},			--"ASTEROID2",			300,		500,		100.000000
 		}
 	},
 	--[[{	--Pirate Type			Min	&	Max	Nanites		Shield restored (Vanilla 50)
@@ -209,14 +228,14 @@ ShipLootChanges =
 	{	--Pirate Type			Min	&	Max	Nanites		Shield restored (Vanilla 50)
 		{"PIRAT_LOOT_MED",		65,		80,				75},							--Ships with this reward drop 3x containers (confirm with 3.87)
 		{	--Old Item ID		New Item ID			AmountMin	AmountMax	PercentageChance
-			{"ALLOY4",			"ALLOY4",			2,			2,			30}							--"ALLOY4",				1,			1,			30
+			{"ALLOY4",			"ALLOY4",			2,			2,			30.000000}							--"ALLOY4",				1,			1,			30.000000
 		}
 	},
 	{	--Pirate Type			Min	&	Max	Nanites		Shield restored (Vanilla 50)
 		{"PIRAT_LOOT_HARD",		75,		100,			75},							--Ships with this reward drop 4x containers (confirm with 3.87)
 		{	--Old Item ID		New Item ID			AmountMin	AmountMax	PercentageChance
-			{"ALLOY3",			"ALLOY3",			3,			3,			30},						--"ALLOY3",				1,			1,			30
-			{"ALLOY4",			"ALLOY4",			3,			3,			30}							--"ALLOY4",				1,			1,			30
+			{"ALLOY3",			"ALLOY3",			3,			3,			30.000000},						--"ALLOY3",				1,			1,			30.000000
+			{"ALLOY4",			"ALLOY4",			3,			3,			30.000000}						--"ALLOY4",				1,			1,			30.000000
 		}
 	}]]
 }
@@ -226,55 +245,55 @@ ShipCurrencyChanges =
 	{
 		{"PIRATELOOT"},
 		{	--Currency	Min			Max			%Chance (relative weight, not necessarily out of 100)
-			{"Nanites",	120,		300,		100}			--100,			250,		100		
+			{"Nanites",	120,		300,		100.000000}			--100,			250,		100.000000		
 		}
 	},
 	{
 		{"PIRATLTEASY"},		--Added by this mod
 		{	--Currency	Min			Max			%Chance (relative weight, not necessarily out of 100)
-			{"Nanites",	65,			215,		100}			--100,			250,		100		
+			{"Nanites",	65,			215,		100.000000}			--100,			250,		100.000000		
 		}
 	},
 	{
 		{"PIRATLTHARD"},		--Added by this mod
 		{	--Currency	Min			Max			%Chance (relative weight, not necessarily out of 100)
-			{"Nanites",	180,		450,		100}			--100,			250,		100		
+			{"Nanites",	180,		450,		100.000000}			--100,			250,		100.000000		
 		}
 	},
 	{
 		{"POLICELOOT"},
 		{	--Currency	Min			Max			%Chance (relative weight, not necessarily out of 100)
-			{"Nanites",	90,			160,		100}			--90,			160,		100
+			{"Nanites",	90,			160,		100.000000}			--90,			160,		100.000000
 		}
 	},
 	{
 		{"TRADERLOOT"},
 		{	--Currency	Min			Max			%Chance (relative weight, not necessarily out of 100)
-			{"Nanites",	40,			60,			100}			--20,			30,			100		
+			{"Nanites",	40,			60,			100.000000}			--20,			30,			100.000000		
 		}
 	},
 	{
 		{"ESCORTLOOT"},			--Added by this mod
 		{	--Currency	Min			Max			%Chance (relative weight, not necessarily out of 100)
-			{"Nanites",	80,			160,		100}			--20,			30,			100		
+			{"Nanites",	80,			160,		100.000000}			--20,			30,			100.000000		
 		}
 	},
 	{
 		{"SMUGGLELOOT"},
 		{	--Currency	Min			Max			%Chance (relative weight, not necessarily out of 100)
-			{"Nanites",	40,			60,			100}			--20,			30,			100		
+			{"Nanites",	40,			60,			100.000000}			--20,			30,			100.000000		
 		}
 	},
 	{
 		{"FREIGHTERLOOT"},
 		{	--Currency	Min			Max			%Chance (relative weight, not necessarily out of 100)
-			{"Nanites",	40,			60,			100}			--20,			30,			100		
+			{"Nanites",	40,			60,			100.000000}			--20,			30,			100.000000		
 		}
 	},
 	{
 		{"FREIGHTER_SAVED"},
 		{	--Currency	Min			Max			%Chance
-			{"Nanites",	300,		500,		100}			--200,			300,		100		
+			{"Nanites",	300,		500,		100.000000}			--200,			300,		100.000000		
 		}
 	},
 }
@@ -282,16 +301,16 @@ ShipCurrencyChanges =
 --New Additional rewards for destroying POLICE (Sentinel Interceptors)
 PoliceFrigComMin = 					1			--Explosive Drones
 PoliceFrigComMax = 					1
-PoliceFrigComChance = 				60
+PoliceFrigComChance = 				60.000000
 
 --New additional rewards for rescuing a Freighter from Pirates in starships
 FreighterRescueUnitsMin = 			400000
 FreighterRescueUnitsMax = 			800000
-FreighterRescueUnitsChance = 		100
+FreighterRescueUnitsChance = 		100.000000
 
 FreighterRescueFrigModMin = 		1			--Salvaged Frigate Module
 FreighterRescueFrigModMax = 		1
-FreighterRescueFrigModChance = 		100
+FreighterRescueFrigModChance = 		100.000000
 
 --Rewards for rescuing Civilian Freighters from Pirate Freighters (added in NMS v4.4) and for making a pirate freighter surrender (added in NMS v4.5)
 DreadnoughtBattleRewardChanges =
@@ -299,22 +318,22 @@ DreadnoughtBattleRewardChanges =
 	{
 		{"R_CIV_SAVED_SM"},		--Appears to be the reward for saving the civilian freighter if the Dreadnought warps away
 		{	--Currency	Min			Max			%Chance	(Gives All)
-			{"Units",	4000000,	6000000,	100},		--400000,		600000,		100
-			{"Nanites",	300,		400,		100}		--200,			250,		100		Added by PTSd
+			{"Units",	4000000,	6000000,	100.000000},	--400000,		600000,		100.000000
+			{"Nanites",	300,		400,		100.000000}		--200,			250,		100.000000		Added by PTSd
 		}
 	},
 	{
 		{"R_CIV_SAVED_LG"},		--Appears to be the reward for saving the civilian freighter if the Dreadnought is destroyed or surrenders
 		{	--Currency	Min			Max			%Chance	(Gives All)
-			{"Units",	6000000,	9000000,	100},		--600000,		900000,		100
-			{"Nanites",	600,		800,		100}		--400,			500,		100
+			{"Units",	6000000,	9000000,	100.000000},	--600000,		900000,		100.000000
+			{"Nanites",	600,		800,		100.000000}		--400,			500,		100.000000
 		}
 	},
 	{
 		{"R_PIR_TRIBUTE"},		--The "reward" / tribute for defeating a pirate freighter / dreadnought and forcing it to surrender but not claim the Dreadnought for yourself. Awards both units & nanites. Note that R_CIV_SAVED above will also be received beforehand if the civilian freighter survived. May also receive R_PIR_FREI sometimes too, perhaps when civilian freighter is destroyed or waiting long enough before landing for negotiating terms?
 		{	--Currency	Min			Max			%Chance	(Gives All)
-			{"Units",	9000000,	12000000,	100},		--5000000,		10000000,	100
-			{"Nanites",	1000,		1600,		100}		--400,			500,		100		Added by PTSd
+			{"Units",	9000000,	12000000,	100.000000},	--5000000,		10000000,	100.000000
+			{"Nanites",	1000,		1600,		100.000000}		--400,			500,		100.000000		Added by PTSd
 		}
 	}
 }
@@ -336,24 +355,24 @@ DreadnoughtClaimCost =		"C_DREAD_FLAT"			--""		Adds a cost to claiming a Pirate 
 NewBossFreighterPartsLoot =			--Defines new Rewards for destroying various freighter parts during "boss" encounters as set in "Space Combat+Larger Space BattlesX.lua"
 {
 	--Anti-Freighter Cannons during Pirate Dreadnought battles
-	{	--RewardId			% Chance	ItemId				Item type	(Min  ,	Max) Amount
-		"CANNONLOOT",		"100",		"TECHFRAG",			"Nanites",	"80",	"120"			--N/A, no loot in vanilla
+	{	--RewardId			% Chance		ItemId				Item type	(Min  ,	Max) Amount
+		"CANNONLOOT",		"100.000000",	"TECHFRAG",			"Nanites",	"80",	"120"			--N/A, no loot in vanilla
 	},
 	--Freighter Warp Drives during Pirate Dreadnought battles
-	{	--RewardId			% Chance	ItemId				Item type	(Min  ,	Max) Amount
-		"WARPLOOT",			"75",		"FRIGATE_FUEL_1",	"Product",	"1",	"1"				--N/A, no loot in vanilla
+	{	--RewardId			% Chance		ItemId				Item type	(Min  ,	Max) Amount
+		"WARPLOOT",			"75.000000",	"FRIGATE_FUEL_1",	"Product",	"1",	"1"				--N/A, no loot in vanilla
 	},
 	--Anti-Ship Turrets during Pirate Dreadnought battles
-	{	--RewardId			% Chance	ItemId				Item type	(Min  ,	Max) Amount
-		"TURRETLOOT",		"100",		"TECHFRAG",			"Nanites",	"12",	"20"			--N/A, no loot in vanilla
+	{	--RewardId			% Chance		ItemId				Item type	(Min  ,	Max) Amount
+		"TURRETLOOT",		"100.000000",	"TECHFRAG",			"Nanites",	"12",	"20"			--N/A, no loot in vanilla
 	},
 	--Exposed Fuel Rods during Pirate Dreadnought battles
-	{	--RewardId			% Chance	ItemId				Item type	(Min  ,	Max) Amount
-		"FUELRODLOOT",		"20",		"FRIGATE_FUEL_1",	"Product",	"1",	"1"				--N/A, no loot in vanilla
+	{	--RewardId			% Chance		ItemId				Item type	(Min  ,	Max) Amount
+		"FUELRODLOOT",		"20.000000",	"FRIGATE_FUEL_1",	"Product",	"1",	"1"				--N/A, no loot in vanilla
 	},
 	--Freighter Shield Generators during Pirate Dreadnought battles
-	{	--RewardId			% Chance	ItemId				Item type	(Min  ,	Max) Amount
-		"SHIELDGENLOOT",	"50",		"SHIPCHARGE",		"Product",	"1",	"1"				--N/A, no loot in vanilla
+	{	--RewardId			% Chance		ItemId				Item type	(Min  ,	Max) Amount
+		"SHIELDGENLOOT",	"50.000000",	"SHIPCHARGE",		"Product",	"1",	"1"				--N/A, no loot in vanilla
 	},
 }
 
@@ -364,9 +383,9 @@ FreighterLootChanges =
 	{
 		{"R_PIR_FREI"},
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
-			{"SHIP_CORE_A",				"FRIG_TOKEN",			1,	1,		0},		--1,	1,		5		A-Class Reactor
-			{"SHIP_CORE_S",				"FREI_INV_TOKEN",		1,	1,		300},	--1,	1,		2		S-Class Reactor
-			--{"FREI_INV_TOKEN",			"FREI_INV_TOKEN",		3,	6,		300},	--3,	3,		300		Cargo Bulkhead
+			{"SHIP_CORE_A",				"FRIG_TOKEN",			1,	1,		0.000000},		--1,	1,		5.000000		A-Class Reactor
+			{"SHIP_CORE_S",				"FREI_INV_TOKEN",		1,	1,		300.000000},	--1,	1,		2.000000		S-Class Reactor
+			--{"FREI_INV_TOKEN",			"FREI_INV_TOKEN",		3,	6,		300.000000},	--3,	3,		300.000000		Cargo Bulkhead
 			--Also has all 7 of the Freighter/Frigate procedural upgrade modules set to S Class as possible rewards, each at 100 relative Chance %
 		}
 	},
@@ -384,18 +403,18 @@ SpaceStationMissionLootChanges =
 	{
 		{"R_MB_FIRST"},		--This seems to be the reward pool for the first few missions you take from space stations. Unsure when it switches from these to the other rewards below
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
-			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		6},		--1,	1,		150		Exosuit Upgrade Chart
-			{"REPAIRKIT",				"REPAIRKIT",			1,	2,		2},		--1,	1,		1		Repair Kit
-			{"HYPERFUEL2",				"HYPERFUEL2",			1,	2,		2},		--1,	2,		2		Warp Hypercore
-			{"BP_SALVAGE",				"BP_SALVAGE",			3,	5,		6},		--3,	5,		2		Salvaged Data
-			{"POWERCELL",				"POWERCELL",			5,	10,		2},		--5,	5,		1		Ion Battery
-			{"PRODFUEL2",				"PRODFUEL2",			5,	10,		2},		--5,	5,		1		Life Support Gel
-			{"SHIPCHARGE",				"SHIPCHARGE",			6,	12,		2},		--5,	5,		1		Starshield Battery
-			{"EYEBALL",					"EYEBALL",				1,	3,		1},		--1,	3,		1		Hypnotic Eye
-			{"NIPNIPBUDS",				"NAV_DATA",				3,	5,		6},		--1,	3,		1		NipNip Buds		(Navigation Data)
-			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		3,	5,		1},		--1,	3,		1		Storm Crystal
-			{"FIENDCORE",				"FIENDCORE",			3,	5,		1},		--1,	3,		1		Larval Core
-			{"FISHCORE",				"FISHCORE",				3,	5,		1},		--1,	3,		1		Hadal Core
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		6.000000},		--1,	1,		150		Exosuit Upgrade Chart
+			{"REPAIRKIT",				"REPAIRKIT",			1,	2,		2.000000},		--1,	1,		1		Repair Kit
+			{"HYPERFUEL2",				"HYPERFUEL2",			1,	2,		2.000000},		--1,	2,		2		Warp Hypercore
+			{"BP_SALVAGE",				"BP_SALVAGE",			3,	5,		6.000000},		--3,	5,		2		Salvaged Data
+			{"POWERCELL",				"POWERCELL",			5,	10,		2.000000},		--5,	5,		1		Ion Battery
+			{"PRODFUEL2",				"PRODFUEL2",			5,	10,		2.000000},		--5,	5,		1		Life Support Gel
+			{"SHIPCHARGE",				"SHIPCHARGE",			6,	12,		2.000000},		--5,	5,		1		Starshield Battery
+			{"EYEBALL",					"EYEBALL",				1,	3,		1.000000},		--1,	3,		1		Hypnotic Eye
+			{"NIPNIPBUDS",				"NAV_DATA",				3,	5,		6.000000},		--1,	3,		1		NipNip Buds		(Navigation Data)
+			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		3,	5,		1.000000},		--1,	3,		1		Storm Crystal
+			{"FIENDCORE",				"FIENDCORE",			3,	5,		1.000000},		--1,	3,		1		Larval Core
+			{"FISHCORE",				"FISHCORE",				3,	5,		1.000000},		--1,	3,		1		Hadal Core
 			{"TRA_MINERALS3",			"TRA_MINERALS3",		10,	18,		0.2},	--3,	5,		1		Trade item worth 15000
 			{"TRA_TECH3",				"TRA_TECH3",			10,	18,		0.2},	--3,	5,		1		Trade item worth 15000
 			{"TRA_COMPONENT3",			"TRA_COMPONENT3",		10,	18,		0.2},	--3,	5,		1		Trade item worth 15000
@@ -846,17 +865,17 @@ NexusMissionCurrencyChanges =
 	{
 		{"R_NEXUS_MED_C"},		--Nexus mission "Medium" rewards
 		{	--Currency	Min			Max			Old %Chance	New % Chance (relative weight, roughly but not necessarily out of 100)
-			{"Units",	400000,		600000,		50,			50},		--400000,		500000,		50,		50
-			{"Units",	750000,		1000000,	5,			5},			--400000,		500000,		5,		5
-			{"Nanites",	400,		550,		45,			45}			--300,			350,		45,		45
+			{"Units",	400000,		600000,		50.000000,	50.000000},		--400000,		500000,		50,		50
+			{"Units",	750000,		1000000,	5.000000,	5.000000},		--400000,		500000,		5,		5
+			{"Nanites",	400,		550,		45.000000,	45.000000}		--300,			350,		45,		45
 		}
 	},
 	{
 		{"R_NEXUS_MEGA_C"},		--Nexus mission "Mega" rewards
 		{	--Currency	Min			Max			Old %Chance	New % Chance (relative weight, roughly but not necessarily out of 100)
-			{"Units",	750000,		1000000,	50,			50},		--650000,		750000,		50,		50
-			{"Units",	1200000,	1800000,	5,			5},			--500000,		1500000,	5,		5
-			{"Nanites",	500,		750,		45,			45}			--400,			550,		45,		45
+			{"Units",	750000,		1000000,	50.000000,	50},		--650000,		750000,		50,		50
+			{"Units",	1200000,	1800000,	5.000000,	5},			--500000,		1500000,	5,		5
+			{"Nanites",	500,		750,		45.000000,	45}			--400,			550,		45,		45
 		}
 	}
 }
@@ -871,12 +890,12 @@ OutlawMissStandReward =				9							--2		Reward for certain Outlaw station missio
 --Alters the daily "items for nanites" trades offered by Iteration Ares at the Anomaly
 AresTradeChanges =
 {--Item amount	Trade Item Id			Min /	Max nanites per INDIVIDUAL item traded (final reward will be multiplied by item amount traded)
-	{"5",		"STORM_CRYSTAL",		"57",	"77"},		--"1",		"STORM_CRYSTAL",		"5",	"10"
-	{"10",		"CLAMPEARL",			"20",	"30"},		--"1",		"CLAMPEARL",			"5",	"15"
-	{"3",		"GEODE_ASTEROID",		"13",	"17"},		--"1",		"GEODE_ASTEROID",		"3",	"3"
-	{"5",		"GEODE_RARE",			"16",	"24"},		--"1",		"GRAVBALL",				"5",	"10"
-	{"10",		"CAVECUBE",				"11",	"15"},		--"1",		"CAVECUBE",				"5",	"10"
-	{"3",		"PIRATE_PROD",			"40",	"65"},		--"1",		"BP_SALVAGE",			"5",	"10"
+	{"6",		"STORM_CRYSTAL",		"76",	"114"},		--"1",		"STORM_CRYSTAL",		"5",	"10"		(123,600 units)
+	{"8",		"CLAMPEARL",			"27",	"41"},		--"1",		"CLAMPEARL",			"5",	"15"		(45,450 units)
+	{"3",		"DEEPSEA_PROD",			"192",	"288"},		--"1",		"GEODE_ASTEROID",		"3",	"3"			(319,200 units)
+	{"5",		"GEODE_RARE",			"29",	"44"},		--"1",		"GRAVBALL",				"5",	"10"		(48,960 units)
+	{"10",		"CAVECUBE",				"14",	"20"},		--"1",		"CAVECUBE",				"5",	"10"		(23,200 units)
+	{"4",		"PIRATE_PROD",			"51",	"77"},		--"1",		"BP_SALVAGE",			"5",	"10"		(85,000 units)
 } 
 
 --Replaces certain gifts from Guild Envoys in Space Stations (may be obsolete in NMS v4.6+)
@@ -991,10 +1010,10 @@ DerelictSuppliesChanges =
 --Changes the amount of nanites found in various containers / datapads on Derelict Freighters (weight is the relative % chance weight to receive this reward from the container)
 DerelictNaniteChanges =
 {--Container			New /	Old weight %	Min	/	Max	Nanites
-	{"R_ABAND_LOCK",	"20",	"20",			"100",	"200"},		--"20",	"50" Nanites	(Locker)	Total weight of rewards is 240 in vanilla
-	{"R_ABAND_CASE",	"40",	"40",			"80",	"160"},		--"20",	"50" Nanites	(Case)		Total weight of rewards is 141 in vanilla
-	{"R_ABAND_CASE",	"10",	"10",			"400",	"600"},		--"50",	"200" Nanites	(Case)		Total weight of rewards is 141 in vanilla
-	{"R_ABAND_NAN",		"60",	"60",			"80",	"160"},		--"15",	"30" Nanites	(Datapad)	Total weight of rewards is 100 in vanilla (but the only other option is a one-time password which gets passed over after you get it once)
+	{"R_ABAND_LOCK",	"20",	"20.000000",	"100",	"200"},		--"20",	"50" Nanites	(Locker)	Total weight of rewards is 240 in vanilla
+	{"R_ABAND_CASE",	"40",	"40.000000",	"80",	"160"},		--"20",	"50" Nanites	(Case)		Total weight of rewards is 141 in vanilla
+	{"R_ABAND_CASE",	"10",	"10.000000",	"400",	"600"},		--"50",	"200" Nanites	(Case)		Total weight of rewards is 141 in vanilla
+	{"R_ABAND_NAN",		"60",	"60.000000",	"80",	"160"},		--"15",	"30" Nanites	(Datapad)	Total weight of rewards is 100 in vanilla (but the only other option is a one-time password which gets passed over after you get it once)
 }
 
 --Rewards for choosing a tech upgrade at the end of a Derelict Freighter
@@ -1020,7 +1039,7 @@ PTSdFreiUpgrClassChances =			--Only has an effect if UsePTSdFreiUpgradeClassChan
 }
 
 TaintedMetalMult =						3						--1		Multiplier to all rewards of Tainted Metal (to balance out the increased price of Suspicious Packets when buying from Scrap Dealers)
-ScrapTaintIgnoreNatResSetting =			"True"					--"False"	Set to "True" to make the Tainted Metal reward from Scrap Dealers for turning in Crew Manifests / Captain's Logs be a set amount that ignores the in-game "Natural Resources" Difficulty Setting (e.g. if set to "False" on the Standard setting it will multiply the reward  amounts by 0.8x)
+ScrapTaintIgnoreNatResSetting =			"true"					--"false"	Set to "true" to make the Tainted Metal reward from Scrap Dealers for turning in Crew Manifests / Captain's Logs be a set amount that ignores the in-game "Natural Resources" Difficulty Setting (e.g. if set to "false" on the Standard setting it will multiply the reward  amounts by 0.8x)
 DerelictNaniteRewardMult =				3						--1		Multiplier applied to the 400-600 nanites awarded if choosing the nanite reward at the end of a Derelict Freighter
 
 --Replacers for how much Standing is awarded for turning over Derelict Freighter Crew Manifest / Captain's Log to Guild Envoys instead of Scrap Dealers
@@ -1126,7 +1145,30 @@ LittleWreckRewards =
 }
 LittleWreckBrokTechChance =		100					--100		(This is the "broken tech" consumable normally found in Buried Caches above)
 
---Changes the amounts & chances of rewards from opening various types of Suspicious Packets 
+--Changes the amounts & chances of standard rewards from opening Buried Caches buried underground in Abandoned Mode 
+AbandCrateChanges =
+{
+	{	--Abandoned Mode Buried Cache
+		{"DE_ABAND_CRATE"},
+		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
+			--Products
+			{"SHIP_INV_TOKEN",		"SHIP_INV_TOKEN",		1,			1,			1},					--Storage Augmentation,		1,			1,			10
+			{"WEAP_INV_TOKEN",		"WEAP_INV_TOKEN",		1,			1,			2},					--Multi-Tool Expansion Slot,1,			1,			15
+			{"SUIT_INV_TOKEN",		"NAV_DATA_DROP",		1,			1,			2},					--Exosuit Expansion Slot,	1,			1,			15		
+			{"ABAND_LOCATOR",		"ABAND_LOCATOR",		1,			1,			5},					--Emergency Signal Scanner,	1,			1,			10
+		}
+	}
+}
+--Changes to the chances for the procedural rewards sometimes found in Buried Caches in Abandoned Mode
+AbandCrateBrokTechChance =		35					--50		(This is the "broken tech" consumable normally found in Buried Caches above)
+AbandCrateDataRecordChance =	35					--50		(This is the "species/mineral record" consumable normally found from killing Walking Buildings, awards ~75 nanites on average, with rare chance for a Sentinel Boundary Map)
+AbandCrateUpgradeChance =		20					--50		(This is a random procedural upgrade module)
+AbandCrateUpgradeChanceC =		70					--70		This is the chance that the above random procedural upgrade module will be C Class
+AbandCrateUpgradeChanceB =		19					--20		This is the chance that the above random procedural upgrade module will be B Class
+AbandCrateUpgradeChanceA =		8					--10		This is the chance that the above random procedural upgrade module will be A Class
+AbandCrateUpgradeChanceS =		3					--5			This is the chance that the above random procedural upgrade module will be S Class
+
+--Changes the amounts & chances of standard rewards from opening various types of Suspicious Packets 
 SusPacketChanges =
 {
 	{	--Suspicious Packet (Goods)
@@ -1239,10 +1281,19 @@ SusPacketChanges =
 		}
 	}
 }
+--Changes to the chances for the procedural rewards sometimes found in various types of Suspicious Packets
 SusPacketGoodsBrokTechChance =		100					--100		(This is the "broken tech" consumable normally found in Buried Caches above)
 SusPacketTechBrokTechChance =		100					--100		(This is the "broken tech" consumable normally found in Buried Caches above)
 SusPacketTechDataRecordChance =		100					--100		(This is the "species/mineral record" consumable normally found from killing Walking Buildings, awards ~75 nanites on average, with rare chance for a Sentinel Boundary Map)
 SusPacketArmsProcToolChance =		50					--50		(This is a procedural "Tool" type artifact/treasure sometimes found in treasure chests, worth ~450,000 units on average)
+
+--Changes the rewards & costs for using Memory Stones
+MemStoneCostSubstance =				"RUINSUB"			--""
+MemStoneCostAmount =				64					--0
+MemStoneAltTreasureChanceWeight =	67					-- (The vanilla reward has a 100 chance weight)	In vanilla once all ruins blueprints are learnt, Memory Stones are intended to have a 100% chance to yield a random rarity "Loot" type procedural treasure. PTSd adds another possible reward of a fixed-rarity Common "Loot" treasure, and adjusting the weighted chance here affects how likely the Memory Stone is to award either the random or fixed-Common Loot treasure
+	--In vanilla Memory Stones never award the procedural "Loot" Treasure due to a vanilla issue with "TryFirst_ThenSelectAlways" which causes them to default to a "fallback" reward of ~100-200 nanites anytime it tries to award a blueprint you already know, instead of trying other rewards from the rewardpool
+MemStoneNaniteAmount =				350					--N/A		Sets the average amount of nanites for another posible reward from Memory Stones once all blueprints are known, instead of random/Common Loot treasure
+MemStoneNaniteChanceWeight =		167					--N/A		Sets the chance weight for the nanite reward to be awarded instead of the other possible rewards. E.G. setting it equal to 167 will make it a 50/50 chance between either a random/Common Loot Treasure or this new reward
 
 --Changes the amounts & chances of rewards from killing anomalous creatures on Weird / Exotic / Anomalous planets. All creatures on the same planet will drop the same loot
 WeirdCreatureLootChanges =
@@ -1282,12 +1333,34 @@ FishReleaseChanges =
 }
 
 --Adds new rewards for defeating Vile Queens
-QueenProductID			=				"EYEBALL"			-- N/A		(Hypnotic Eye)	This product loot is awarded every time you defeat a Vile Queen
-QueenProductAmount		=				1					-- N/A
-QueenSubstanceID		=				"SPACEGUNK2"		-- N/A		(Runaway Mould)	This substance loot is awarded every time you defeat a Vile Queen
-QueenSubstanceAmount	=				256					-- N/A
+QueenSubstanceID		=				"SPACEGUNK2"		-- N/A		(Runaway Mould)	This substance loot is awarded every time you defeat a Vile Queen, in addition to a Vile Cortex
+QueenSubstanceAmountMin	=				200					-- N/A
+QueenSubstanceAmountMax	=				300					-- N/A
 QueenProcType			=				"SpaceHorror"		-- N/A		This procedural loot is awarded 50% of the time when defeating a Vile Queen (the other 50% of the time is a chance to attempt getting one of the 4 bug helmets)
 QueenProcRarity			=				"Uncommon"			-- N/A		The rarity of the procedural loot. Can be Common, Uncommon, or Rare
+
+--Adds new rewards for defeating Deepsea Guardians
+GuardianLoot1			=				"FOOD_F_JELLY"		-- N/A		Must be a product
+GuardianLoot1Min		=				8					-- N/A
+GuardianLoot1Max		=				12					-- N/A
+GuardianLoot2			=				"WORMCORE"			-- N/A		Must be a product
+GuardianLoot2Min		=				3					-- N/A
+GuardianLoot2Max		=				5					-- N/A
+
+--Changes what is received when disturbing Vigilant Eyes into a Substance
+NewVigilantEyeItem		=	"RUINSUB"	--"STONE_EYE_PROD"	(PTSd changes to a Substance)
+NewVigilantEyeItemAmount=	24			--1
+--Applies a multiplier to how much Polished Stone is received from killing Mech/Floating Golems
+GolemPolishedStoneMult	=	0.5			--1			16-32 for Floating Golem, 32-84 for Mech Golem
+--Adds new rewards for defeating the Ancient Golem "Mech" and Golem floating "Living Stones" enemies, in addition to the Polished Stone they already drop
+GolemMechItemChance		=	100
+GolemMechItemAmountMin	=	1
+GolemMechItemAmountMax	=	2
+GolemMechItem			=	"STONE_EYE_PROD"		--	("STONE_EYE_PROD" is Vigilant Stone)
+GolemFloatItemChance	=	66
+GolemFloatItemAmountMin	=	1
+GolemFloatItemAmountMax	=	1
+GolemFloatItem			=	"STONE_EYE_PROD"		--	("STONE_EYE_PROD" is Vigilant Stone)
 
 --% Chance & amounts to drop the "Salvaged Glass" item when opening the loot capsules from dead sentinels
 DroneGlassDropChance	=	1			--66
@@ -1310,15 +1383,17 @@ PillarGlassMax			=	1			--1
 SentGunChance			=	10			--20
 SentSuitChance			=	10			--20
 
---% Chance to receive Sentinel Boundary Map from various sources
+--% Chance to receive Sentinel Boundary Map
 SalvageSentMapChance	=	5			--10		Chance from destroying Salvageable Scrap
---Changes substance & amount yielded from destroying the components surrounding Salvageable Scrap
+--% Chance for for each Protective Casing surrounding a Salvageable Scrap core to yield an additional procedural Scrap item when destroyed
+ExtraScrapChance		=	33.000000	--0			I'm assuming on average there are around ~3 Protective Casings per Scrap Core
+--Changes substance & amount yielded from destroying the "shielding" components surrounding Salvageable Scrap
 SalvageScrapSubstance	=	"SPACEGUNK3"	--"LAND1"	
 SalvageScrapSubAmountMult	=	0.33	--Applies multiplier to vanilla amount of 15-30
 
 --% Chance to receive Echo Locators from various sources
-SpiderMapChance			=	11			--7			Chance to drop from the large Arachnid Sentinels
-DisResMapChance			=	15			--20		Chance to drop from Dissonance Resonator
+SpiderMapChance			=	20			--7			Chance to drop from the large Arachnid Sentinels
+DisResMapChance			=	12			--20		Chance to drop from Dissonance Resonator
 
 --Changes to how many items are found when "cleaning" / "repairing" certain large green crates and broken sentinel machinery on Corrupt Planets
 	--Set these to "0" to go back to using the vanilla random ranges
@@ -1371,13 +1446,16 @@ ADSExosuitChartChance	=	5			--10
 --Multipliers to apply to rewards from some rare resource nodes
 MutantPlantSulphurine	=	0.75		--250 - 400
 CuriousDepositMould		=	0.6			--300 - 500
-OrganicRockChlorine		=	3			--25 - 60	
+OrganicRockChlorine		=	2.2			--25 - 60	
 OrganicRockMordite		=	0.27		--250 - 500			Unlike the other rare resource nodes here, this is unaffected by your Multi-Tool's Mining yield bonus
 MetalFingerGold			=	0.45		--100 - 200
 MetalFingerUranium		=	0.3			--200 - 250
 MetalFingerUraniumChance=	0.5			--100	(Relative % Chance a Metal Finger will yield Uranium instead of Gold)
 
-GassyPods				=	0.5			--20 - 30		The 3 red "Gassy Pods" you can harvest from the common Gas Exploding plant hazardous flora on most planets
+GassyPods				=	0.2			--20 - 30		The 3 red "Gassy Pods" you can harvest from the common Gas Exploding plant hazardous flora on most planets
+
+SimpleFoodHealth		=	1			--1~3		Various simple foods such as most raw meats, small cooked fish, etc. restore between 1-3 health when consumed. This changes it to always be a set amount instead
+GoodFoodHealth			=	2			--3~3		Various higher quality foods such as certain cooked meals or larger cooked fish, etc. restore 3 health when consumed. This changes that set amount
 
 --Changes how many crops are gathered from certain plants, and what the chance is to receive nanites in addition to the normal yield
 	--WIP: P_GRAVBALL doesn't control wild Gravitino balls, haven't tested P_ALBUMENPEARL or DE_URCHIN
@@ -1418,8 +1496,8 @@ CropYieldReduction =
 	{"WILD_SNOW",		1.75},					--18 - 30	Frost Crystal
 	{"WILD_SCORCHED",	1.75},					--18 - 30	Solanium
 	{"WILD_TOXIC",		1.75},					--18 - 30	Fungal Mould
-	{"PLANT_COMMODITY",	1.15},					--9  - 18	Sodium			(1.333333 HardModeMultiplier pre-NMS 4.0)
-	{"PLANT_FUEL",		1.15},					--20 - 25	Oxygen			(1.333333 HardModeMultiplier pre-NMS 4.0)
+	{"PLANT_COMMODITY",	1.07},					--9  - 18	Sodium			(1.333333 HardModeMultiplier pre-NMS 4.0)
+	{"PLANT_FUEL",		0.85},					--20 - 25	Oxygen			(1.333333 HardModeMultiplier pre-NMS 4.0)
 	--Farm plants	(Notable exception that is not affected by "Substance Collection" difficulty multiplier in "PTSD Other Difficulty Settings.lua")
 	{"PLANT_BARREN",	1},						--100		Cactus Flesh
 	{"PLANT_LUSH",		1},						--25		Star Bulb
@@ -1450,6 +1528,84 @@ FreighterCarbonWallReward = "INTERIORPLANTS"				--"PLANTER_CARBON" (Same reward 
 --HiveConditionTest = "AnyFalse"														--"AnyFalse"		("AnyTrue")
 --HiveEnablingConditionId = ""		--""			("GcMissionConditionAreDroneHivePartsDestroyed.xml")
 
+--Multipliers to apply to the amounts of primary substances yielded from mining certain minerals / plants. Stacks with MinableSubstanceMult
+PrimarySubstanceMults =
+{	--Object ID				Substance		Multiplier
+	{"DE_PLANT_SMALL",		"FUEL1",		1},				--Carbon, 			2-5
+	{"DE_PLANT_MED",		"FUEL1",		1},				--Carbon, 			10-25
+	{"DE_PLANT_LARGE",		"FUEL1",		1},				--Carbon, 			40-55
+	{"DE_WATERPLANT_S",		"WATERPLANT",	1},				--Cyto-Phosphate, 	10-20
+	{"DE_WATERPLANT_M",		"WATERPLANT",	1},				--Cyto-Phosphate, 	15-40
+	{"DE_WATERPLANT_L",		"WATERPLANT",	1},				--Cyto-Phosphate, 	60-80
+	{"DE_ROCK_SMALL",		"LAND1",		1},				--Ferrite Dust, 	4-8
+	{"DE_ROCK_MED",			"LAND1",		1},				--Ferrite Dust, 	15-20
+	{"DE_ROCK_LARGE",		"LAND2",		1},				--Pure Ferrite, 	20-40
+	{"DE_GEM_R_SMALL",		"FUEL2",		1},				--Condensed Carbon, 3-5
+	{"DE_GEM_R_MED",		"FUEL2",		1},				--Condensed Carbon, 10-20
+	{"DE_GEM_R_LARGE",		"FUEL2",		1},				--Condensed Carbon, 20-50
+	{"DE_GEM_B_SMALL",		"LAUNCHSUB",	1},				--Di-hydrogen, 		1-2
+	{"DE_GEM_B_MED",		"LAUNCHSUB",	1},				--Di-hydrogen, 		3-6
+	{"DE_GEM_B_LARGE",		"LAUNCHSUB",	1},				--Di-hydrogen, 		15-40
+	{"DE_GEM_Y_SMALL",		"CATALYST2",	1},				--Sodium Nitrate, 	3-5
+	{"DE_GEM_Y_MED",		"CATALYST2",	1},				--Sodium Nitrate, 	10-20
+	{"DE_GEM_Y_LARGE",		"CATALYST2",	1},				--Sodium Nitrate, 	20-40
+	{"DE_GEM_S_SMALL",		"ROBOT2",		1},				--Atlantideum, 		1-2
+	{"DE_GEM_S_LARGE",		"ROBOT2",		1},				--Atlantideum, 		20-25
+	{"DE_CAVE_MED",			"CAVE1",		1},				--Cobalt, 			10-20
+	{"DE_CAVE_MED",			"ASTEROID1",	1},				--Silver, 			20-30
+	{"DE_CAVE_MED",			"ASTEROID2",	1},				--Gold, 			20-30
+	{"DE_CAVE_MED",			"ASTEROID3",	1},				--Platinum, 		20-30
+	{"DE_CAVE_LARGE",		"CAVE1",		1},				--Cobalt, 			10-25
+	{"DE_CAVE_LARGE",		"ASTEROID1",	1},				--Silver, 			30-50
+	{"DE_CAVE_LARGE",		"ASTEROID2",	1},				--Gold, 			30-50
+	{"DE_CAVE_LARGE",		"ASTEROID3",	1},				--Platinum, 		30-50
+	{"DE_WATER_MED",		"WATER1",		0.83},			--Salt, 			25-50
+	{"DE_WATER_LARGE",		"WATER2",		1.5},			--Chlorine,			20-30
+	{"DE_GAS_PLANT",		"OXYGEN",		1.8},			--Oxygen, 			8-15
+	{"DE_GAS_PLANT",		"CATALYST1",	1.8},			--Sodium, 			8-15
+}
+
+--Replacements for the amount of secondary substances (the optional secondary substance some plants/minerals have after scanning them) yielded from mining certain types of minerals / plants. The amount of secondary substances is set to duplicate a % of the primary substance amount. e.g. 0.25 means if you get 40 primary substance, you also get 40x25%= 10 secondary substance
+SecondarySubstanceMults =
+{	--Object Type ID		Substance		AmountFactor
+	{"DE_WATERPLANT_A",		"OXYGEN",		0.3},			--Oxygen, 			1.0
+	{"DE_WATERPLANT_A",		"FUEL1",		0.25},			--Carbon, 			0.25
+	{"DE_WATERPLANT_A",		"WATER1",		0.25},			--Salt, 			0.25
+	{"DE_PLANT_SECOND",		"FUEL2",		0.2},			--Condensed Carbon, 0.2
+	{"DE_PLANT_SECOND",		"OXYGEN",		0.2},			--Oxygen, 			0.2
+	{"DE_ROCK_SECOND",		"LAUNCHSUB",	0.1},			--Di-hydrogen,		0.1
+	{"DE_ROCK_SECOND",		"OXYGEN",		0.1},			--Oxygen, 			0.1
+	{"DE_ROCK_SECOND",		"CATALYST1",	0.1},			--Sodium, 			0.1
+	{"DE_ROCK_SECOND",		"STELLAR2",		0.1},			--Chromatic Metal, 	0.1
+	{"DE_GEM_SECOND",		"LAND2",		0.25},			--Pure Ferrite, 	0.25
+	{"DE_GEM_SECOND",		"CAVE2",		0.25},			--Ionised Cobalt, 	0.25
+	{"DE_GEM_SECOND",		"WATER2",		0.25},			--Chlorine, 		0.25
+	{"DE_WATER_SECOND",		"LAND1",		0.3},			--Ferrite Dust, 	1.0
+	{"DE_WATER_SECOND",		"OXYGEN",		0.25},			--Oxygen, 			0.25
+	{"DE_WATER_SECOND",		"CATALYST1",	0.25},			--Sodium, 			0.25
+	{"DE_WATER_L_SEC",		"LAUNCHSUB",	0.3},			--Di-hydrogen, 		1.0
+	{"DE_CAVE_SECOND",		"ROCKETSUB",	0.25},			--Tritium, 			0.25
+	{"DE_CAVE_SECOND",		"LAUNCHSUB",	0.25},			--Di-hydrogen, 		0.25
+	{"DE_CAVE_SECOND",		"ASTEROID1",	0.25},			--Silver, 			0.25
+	{"DE_CAVE_SECOND",		"YELLOW2",		0.25},			--Copper, 			0.25
+	{"DE_CAVE_SECOND",		"CAVE2",		0.25},			--Ionised Cobalt, 	0.25
+	{"DE_CAVE_GAS1",		"WATER1",		0.25},			--Salt, 			0.25
+	{"DE_CAVE_GAS1",		"YELLOW2",		0.25},			--Copper, 			0.25
+	{"DE_CAVE_GAS1",		"GAS1",			0.25},			--Sulphurine, 		0.25
+	{"DE_CAVE_GAS1",		"LAND2",		0.25},			--Pure Ferrite, 	0.25
+	{"DE_CAVE_GAS2",		"WATER1",		0.25},			--Salt, 			0.25
+	{"DE_CAVE_GAS2",		"YELLOW2",		0.25},			--Copper, 			0.25
+	{"DE_CAVE_GAS2",		"GAS2",			0.25},			--Radon, 			0.25
+	{"DE_CAVE_GAS2",		"LAND2",		0.25},			--Pure Ferrite, 	0.25
+	{"DE_CAVE_GAS3",		"WATER1",		0.25},			--Salt, 			0.25
+	{"DE_CAVE_GAS3",		"YELLOW2",		0.25},			--Copper, 			0.25
+	{"DE_CAVE_GAS3",		"GAS3",			0.25},			--Nitrogen, 		0.25
+	{"DE_CAVE_GAS3",		"LAND2",		0.25},			--Pure Ferrite, 	0.25
+}
+
+--Changes the minimum depth that Sea Glass nodes can spawn underwater
+SeaGlassMinDepth = -800					-- -220		(Must use a minus sign (-) to indicate depth below sea level)
+
 --Changes the amount of items harvested from various underwater objects
 CrystalSulphide = 2						--1		Changes the yield of Crystal Sulphide from underwater Thermal Vents
 CrystalSulphideOther = 1				--1		Changes the yield of Crystal Sulphide from Glowing Mineral (Suspicious Packet (Goods) is controlled in SusPacketChanges above)
@@ -1458,42 +1614,51 @@ AlluringSpecHadalCore = 1				--1		Changes the yield of Hadal Core from underwate
 --Adds additional rewards to harvesting Aluuring Specimens
 	--NOTE: Currently rewarding 1 of each item instead of 2 of each item, since a side effect of making ship weapons not mine objects (disable explosions damaging objects) makes the Alluring Specimen no longer get destroyed by the Anglerfish when it spawns. 
 NewAlluringSpecRewards =
-[[<Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+[[<Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="VENTGEM" />
-              <Property name="AmountMin" value="2" />
-              <Property name="AmountMax" value="2" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="VENTGEM" />
+				  <Property name="AmountMin" value="2" />
+				  <Property name="AmountMax" value="2" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-		  <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+		  <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="CLAMPEARL" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="CLAMPEARL" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>]]
 
---Loot from Crashed Freighters and Harmonic Scrap wheelbarrows at Abandoned Camps
+
+--Loot from Crashed Freighters in regular & Abandoned Mode, small boxes in Abandoned Stations, and Harmonic Scrap wheelbarrows at Abandoned Camps
 CrashedFreighterLootChances =
 {
 	{
-		{"CRASHCONT_M"},
+		{"CRASHCONT_M"},		--Crashed Freighter containers normally
 		{	--Item						%Chance (relative weight, roughly but not necessarily out of 100)
 			{"FRIG_TOKEN",				16},					--10		Salvaged Frigate Module
 			{"WEAP_INV_TOKEN",			10},					--8			Multi-Tool Expansion Slot
@@ -1501,9 +1666,9 @@ CrashedFreighterLootChances =
 			--{"",						8},						--8			Chooses 1x random ILLEGAL_PROD trade good
 			{"HYPERFUEL2",				7},						--10		Warp Hypercore
 			{"BP_SALVAGE",				5},						--25		1-3 Salvaged Data
-			--{"",						20},					--20		Chooses 20x random TRA_ trade goods
-			{"FARMPROD6",				9},						--15		Unstable Gel
-			{"FARMPROD5",				7},						--9			Poly Fibre
+			--{"",						20},					--20		Chooses 5x random TRA_XXX5 trade goods worth 50,000 each
+			{"FARMPROD6",				3},						--15		Unstable Gel
+			{"FARMPROD5",				5},						--9			Poly Fibre
 			{"FARMPROD1",				5},						--5			Acid
 			{"FARMPROD4",				5},						--5			Heat Capacitor
 			{"FARMPROD7",				1},						--1			Liquid Explosive
@@ -1514,14 +1679,73 @@ CrashedFreighterLootChances =
 		}
 	},
 	{
-		{"CRASHCONT_S"},		--Seems to be if you loot a crashed freighter during the tutorial missions
+		{"CRASHCONT_S"},		--Crashed Freighter containers looted during the tutorial missions
 		{
-			{"FRIG_TOKEN",				15},					--8			Salvaged Frigate Module
-			{"WEAP_INV_TOKEN",			15},					--8			Multi-Tool Expansion Slot
+			{"FRIG_TOKEN",				8},						--8			Salvaged Frigate Module
+			{"WEAP_INV_TOKEN",			8},						--8			Multi-Tool Expansion Slot
 			{"ANTIMATTER",				10},					--15		Antimatter
 			{"AM_HOUSING",				10},					--15		Antimatter Housing
-			{"HYPERFUEL1",				10},					--15		Warp Cell
-			{"LAUNCHFUEL",				10},					--35		Launch Fuel
+			{"HYPERFUEL1",				20},					--15		Warp Cell
+			{"LAUNCHFUEL",				25},					--35		Launch Fuel
+		}
+	},
+	{
+		{"ABAND_LOOTBOX_S"},	--Crashed Freighter containers in Abandoned Mode, and also 2/3 of the new salvage boxes added to Abandoned Stations in vanilla
+		{	--Item						%Chance (relative weight, roughly but not necessarily out of 100)
+			--{"",						20},					--10		Chooses 1 random procedural upgrade module with a 55/25/15/5% chance for C/B/A/S Class
+			{"SUIT_INV_TOKEN",			2},						--10		Exosuit Expansion Slot
+			{"WEAP_INV_TOKEN",			2},						--8			Multi-Tool Expansion Slot
+			{"SHIP_INV_TOKEN",			3},						--5			Storage Augmentation
+			{"ABAND_LOCATOR",			7},						--5			Emergency Signal Scanner
+			--{"",						8},						--8			Chooses 1x random ILLEGAL_PROD trade good
+			{"HYPERFUEL2",				10},					--10		Warp Hypercore
+			{"BP_SALVAGE",				3},						--25		1-3 Salvaged Data
+			--{"",						25},					--20		Chooses 5x random TRA_XXX5 trade goods worth 50,000 each
+			{"FARMPROD6",				1},						--15		Unstable Gel
+			{"FARMPROD5",				5},						--9			Poly Fibre
+			{"FARMPROD1",				5},						--5			Acid
+			{"FARMPROD4",				5},						--5			Heat Capacitor
+			{"FARMPROD7",				5},						--1			Liquid Explosive
+		}
+	},
+	{
+		{"ABAND_LOOTBOX_L"},	--1/3 of the new salvage boxes added to Abandoned Stations in vanilla (3/3 in PTSd, outside of Abandoned Mode)
+		{
+			--{"",						20},					--50		Chooses 1 random procedural upgrade module with a 70/20/10/5% chance for C/B/A/S Class
+			{"SHIP_INV_TOKEN",			1},						--10		Storage Augmentation
+			{"WEAP_INV_TOKEN",			2},						--15		Multi-Tool Expansion Slot
+			{"NAV_DATA_DROP",			2},						--15		Exosuit Upgrade Chart (Exosuit Expansion Slot in vanilla)
+			{"ABAND_LOCATOR",			2},						--10		Emergency Signal Scanner
+			--Added by PTSd
+			{"SALVAGE_TECH3",			16},					--0			1-2 Reinforced Piping
+			{"REPAIRKIT",				12},					--0			Repair Kit
+			{"FIENDCORE",				16},					--0			Larval Core
+			{"POI_LOCATOR",				13},					--0			Anomaly Detector
+			{"NAV_DATA",				16},					--0			1-3 Navigation Data
+		}
+	},
+	{
+		{"ABAND_LOOTBOX_X1"},	--PTSd replacement for 2/3 of the new salvage boxes in Abandoned Stations in Abandoned Mode
+		{
+			--{"",						20},					--50		Chooses 1 random procedural upgrade module with a 70/20/10/5% chance for C/B/A/S Class
+			--{"",						10},					--N/A		Teaches 1 unknown Atlas Seed recipe, in order from 1 - 10, otherwise gives ~100-200 nanites
+			{"SHIP_INV_TOKEN",			1},						--10		Storage Augmentation
+			{"WEAP_INV_TOKEN",			2},						--15		Multi-Tool Expansion Slot
+			{"NAV_DATA_DROP",			2},						--15		Exosuit Upgrade Chart (Exosuit Expansion Slot in vanilla)
+			{"ABAND_LOCATOR",			10},					--10		Emergency Signal Scanner
+			{"SALVAGE_TECH3",			15},					--N/A		1-2 Reinforced Piping
+			{"REPAIRKIT",				15},					--N/A		Repair Kit
+			{"FIENDCORE",				10},					--N/A		Larval Core
+			{"POI_LOCATOR",				5},						--N/A		Anomaly Detector
+			{"NAV_DATA",				10},					--N/A		1-3 Navigation Data
+		}
+	},
+	{
+		{"ABAND_LOOTBOX_X"},	--PTSd replacement for 1/3 of the new salvage boxes in Abandoned Stations in Abandoned Mode
+		{
+			--{"",						1000},					--N/A		Teaches Creature Pellet recipe if not yet known, otherwise chance is 0
+			--{"",						10},					--N/A		Teaches Discordant Key recipe if not yet known, otherwise chance is 0
+			--{"",						0.1},					--N/A		Chooses 1 random procedural upgrade module with a 75/15/7/3% chance for C/B/A/S Class
 		}
 	},
 	{
@@ -1544,8 +1768,6 @@ CrashedFreighterLootChances =
 		}
 	}
 }
---Adds freighter bulkheads as loot to CRASHCONT_S
-CrashFreightBulkheadChance =			15						--0			Freighter Bulkhead
 
 --try reverting, then remove one of the units sections to just have one?
 --Multiplies the currency rewards from Crashed Freighteres and Harmonic Scrap wheelbarrows at Abandoned Camps
@@ -1574,19 +1796,22 @@ CrashedFreighterCurrencyChances =
 }
 
 --Large Artifact Chests awlays give a guaranteed Common Rarity "Lost Artifact" (Tool) in addition to a random artifact	 (The Tool Artifact should usually be exchangeable at a Colossal Archive for a better rarity)
-ExtraChestArtifact = [[<Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+ExtraChestArtifact = [[<Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardProceduralProduct.xml">
-              <Property name="Type" value="GcProceduralProductCategory.xml">
-                <Property name="ProceduralProductCategory" value="Tool" />
-              </Property>
-              <Property name="OSDMessage" value="" />
-              <Property name="SubIfPlayerAlreadyHasOne" value="False" />
-              <Property name="OverrideRarity" value="True" />
-              <Property name="Rarity" value="GcRarity.xml">
-                <Property name="Rarity" value="Common" />
-              </Property>
+            <Property name="Reward" value="GcRewardProceduralProduct">
+              <Property name="GcRewardProceduralProduct">
+				  <Property name="Type" value="GcProceduralProductCategory">
+					<Property name="ProceduralProductCategory" value="Tool" />
+				  </Property>
+				  <Property name="OSDMessage" value="" />
+				  <Property name="SubIfPlayerAlreadyHasOne" value="false" />
+				  <Property name="OverrideRarity" value="true" />
+				  <Property name="Rarity" value="GcRarity">
+					<Property name="Rarity" value="Common" />
+				  </Property>
+				  <Property name="FreighterTechQualityOverride" value="-1" />
+			  </Property>
             </Property>
           </Property>]]
 
@@ -1597,13 +1822,62 @@ BuriedTechSalvageMax =					4						--4
 --Set which recipes for Storage Containers to remove from most rewards where the game normally awards all 10 recipes
 RemoveContainerRewards = {"CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9", }		
 
+--Adds various tech to the random tech reward loot pools
+AddTechToPool =
+{
+	{	--Loot pool
+		{"PROC_TECH_ALL"},
+		{--Added tech				--Spot in TechList to place
+			{"UT_TRANSLATE1",		"POWERGLOVE"},
+			{"POWERGLOVE",			"UT_TRANSLATE1"},		--Adds another POWERGLOVE to the techlist since the one at the top of the list will get removed by a different change
+			{"UT_PROTECT",			"GROUND_SHIELD"}, 
+			{"UT_JET",				"SHIP_TELEPORT"}, 
+			{"SUIT_REFINER",		"SHIPSCAN_ECON"},	
+			{"UT_QUICKWARP",		"UT_PROTECT"},
+			{"UT_SHIPSHIELD",		"UT_QUICKWARP"},
+			{"UT_PULSEFUEL",		"SMG"},
+			{"UT_SCAN",				"STRONGLASER"},
+		}
+	},
+	{	--Loot pool
+		{"PROC_TECH_SUIT"},
+		{--Added tech				--Spot in TechList to place
+			{"UT_TRANSLATE1",		"POWERGLOVE"},
+			{"POWERGLOVE",			"UT_TRANSLATE1"},		--Adds another POWERGLOVE to the techlist since the one at the top of the list will get removed by a different change
+			{"UT_PROTECT",			"POWERGLOVE"}, 
+			{"UT_JET",				"UT_PROTECT"}, 
+			{"SUIT_REFINER",		"UT_JET"},	
+		}
+	},
+	{	--Loot pool
+		{"PROC_TECH_SHIP"},
+		{--Added tech				--Spot in TechList to place
+			{"UT_QUICKWARP",		"SHIP_TELEPORT"},
+			{"UT_SHIPSHIELD",		"UT_QUICKWARP"},
+			{"UT_PULSEFUEL",		"UT_SHIPSHIELD"},
+		}
+	},
+	{	--Loot pool
+		{"PROC_TECH_WEAP"},
+		{--Added tech				--Spot in TechList to place
+			{"UT_SCAN",				"STRONGLASER"},
+		}
+	},
+}
+
 --Remove various tech from the random tech reward loot pools
 RemoveTechFromPool =
 {
 	{	--Loot pool
 		{"PROC_TECH_ALL"},
 		{--Removed tech
-			"HDRIVEBOOST1", "HDRIVEBOOST2", "HDRIVEBOOST3", "SHIPSCAN_COMBAT", "TERRAIN_GREN", "RAILGUN", "SHOTGUN", "SHIPSHOTGUN", "SHIPMINIGUN", "SHIPPLASMA", 
+			"POWERGLOVE", "HDRIVEBOOST1", "HDRIVEBOOST2", "HDRIVEBOOST3", "SHIPSCAN_COMBAT", "TERRAIN_GREN", "RAILGUN", "SHOTGUN", "SHIPSHOTGUN", "SHIPMINIGUN", "SHIPPLASMA", 
+		}
+	},
+	{	--Loot pool
+		{"PROC_TECH_SUIT"},
+		{--Removed tech
+			"POWERGLOVE",
 		}
 	},
 	{	--Loot pool
@@ -1616,47 +1890,6 @@ RemoveTechFromPool =
 		{"PROC_TECH_WEAP"},
 		{--Removed tech
 			"TERRAIN_GREN", "RAILGUN", "SHOTGUN", 
-		}
-	},
-}
-
---Adds various tech to the random tech reward loot pools
-AddTechToPool =
-{
-	{	--Loot pool
-		{"PROC_TECH_ALL"},
-		{--Added tech				--Spot in TechList to place		Placed before or after that spot
-			{"UT_TRANSLATE1",		"POWERGLOVE",					"ADDbeforeSECTION"},
-			{"UT_PROTECT",			"GROUND_SHIELD",				"ADDafterSECTION"}, 
-			{"UT_JET",				"SHIP_TELEPORT",				"ADDafterSECTION"}, 
-			{"SUIT_REFINER",		"SHIPSCAN_ECON",				"ADDafterSECTION"},	
-			{"UT_QUICKWARP",		"UT_PROTECT",					"ADDafterSECTION"},
-			{"UT_SHIPSHIELD",		"UT_QUICKWARP",					"ADDafterSECTION"},
-			{"UT_PULSEFUEL",		"SMG",							"ADDafterSECTION"},
-			{"UT_SCAN",				"STRONGLASER",					"ADDafterSECTION"},
-		}
-	},
-	{	--Loot pool
-		{"PROC_TECH_SUIT"},
-		{--Added tech				--Spot in TechList to place		Placed before or after that spot
-			{"UT_TRANSLATE1",		"POWERGLOVE",					"ADDbeforeSECTION"},
-			{"UT_PROTECT",			"POWERGLOVE",					"ADDafterSECTION"}, 
-			{"UT_JET",				"UT_PROTECT",					"ADDafterSECTION"}, 
-			{"SUIT_REFINER",		"UT_JET",						"ADDafterSECTION"},	
-		}
-	},
-	{	--Loot pool
-		{"PROC_TECH_SHIP"},
-		{--Added tech				--Spot in TechList to place		Placed before or after that spot
-			{"UT_QUICKWARP",		"SHIP_TELEPORT",				"ADDafterSECTION"},
-			{"UT_SHIPSHIELD",		"UT_QUICKWARP",					"ADDafterSECTION"},
-			{"UT_PULSEFUEL",		"UT_SHIPSHIELD",				"ADDafterSECTION"},
-		}
-	},
-	{	--Loot pool
-		{"PROC_TECH_WEAP"},
-		{--Added tech				--Spot in TechList to place		Placed before or after that spot
-			{"UT_SCAN",				"STRONGLASER",					"ADDafterSECTION"},
 		}
 	},
 }
@@ -1692,67 +1925,119 @@ PirateMissionChanges	=
 
 function CurrencyReward (Currency, Min, Max, Chance)
     return
-[[<Property value="GcRewardTableItem.xml">
+[[<Property name="List" value="GcRewardTableItem">
             <Property name="PercentageChance" value="]]..Chance..[[" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="]]..Min..[[" />
-              <Property name="AmountMax" value="]]..Max..[[" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="]]..Currency..[[" />
-              </Property>
+            <Property name="Reward" value="GcRewardMoney">
+              <Property name="GcRewardMoney">
+				  <Property name="AmountMin" value="]]..Min..[[" />
+				  <Property name="AmountMax" value="]]..Max..[[" />
+				  <Property name="RoundNumber" value="false" />
+				  <Property name="Currency" value="GcCurrency">
+					<Property name="Currency" value="]]..Currency..[[" />
+				  </Property>
+			  </Property>
             </Property>
           </Property>]]
+end
+
+function SubstanceReward (Substance, Min, Max, Chance)
+    return
+[[<Property name="List" value="GcRewardTableItem">
+			<Property name="PercentageChance" value="]]..Chance..[[" />
+			<Property name="LabelID" value="" />
+			<Property name="Reward" value="GcRewardSpecificSubstance">
+				<Property name="GcRewardSpecificSubstance">
+					<Property name="Default" value="GcDefaultMissionSubstanceEnum">
+						<Property name="DefaultSubstanceType" value="None" />
+					</Property>
+					<Property name="ID" value="]]..Substance..[[" />
+					<Property name="AmountMin" value="]]..Min..[[" />
+					<Property name="AmountMax" value="]]..Max..[[" />
+					<Property name="DisableMultiplier" value="false" />
+					<Property name="RewardAsBlobs" value="false" />
+					<Property name="UseFuelMultiplier" value="false" />
+					<Property name="Silent" value="false" />
+					<Property name="UseMissionBoardDifficultyScale" value="false" />
+				</Property>
+			</Property>
+		</Property>]]
 end
 
 function ProductReward (Product, Min, Max, Chance)
     return
-[[<Property value="GcRewardTableItem.xml">
+[[<Property name="List" value="GcRewardTableItem">
             <Property name="PercentageChance" value="]]..Chance..[[" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="]]..Product..[[" />
-              <Property name="AmountMin" value="]]..Min..[[" />
-              <Property name="AmountMax" value="]]..Max..[[" />
-			  <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-			  <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="]]..Product..[[" />
+				  <Property name="AmountMin" value="]]..Min..[[" />
+				  <Property name="AmountMax" value="]]..Max..[[" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>]]
 end
 
+function ProceduralProductReward (Category, OverrideRarity, Rarity, Chance)
+    return
+[[<Property name="List" value="GcRewardTableItem">
+						<Property name="PercentageChance" value="]]..Chance..[[" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardProceduralProduct">
+							<Property name="GcRewardProceduralProduct">
+								<Property name="Type" value="GcProceduralProductCategory">
+									<Property name="ProceduralProductCategory" value="]]..Category..[[" />
+								</Property>
+								<Property name="OSDMessage" value="" />
+								<Property name="SubIfPlayerAlreadyHasOne" value="false" />
+								<Property name="OverrideRarity" value="]]..OverrideRarity..[[" />
+								<Property name="Rarity" value="GcRarity">
+									<Property name="Rarity" value="]]..Rarity..[[" />
+								</Property>
+								<Property name="FreighterTechQualityOverride" value="-1" />
+							</Property>
+						</Property>
+					</Property>]]
+end
+
 function AddWholeNewItemReward (RewardId, RewardChoice, Chance, ItemType, ItemID, AmountMin, AmountMax)
 	return
-[[<Property value="GcGenericRewardTableEntry.xml">
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="]]..RewardId..[[" />
-      <Property name="List" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList">
         <Property name="RewardChoice" value="]]..RewardChoice..[[" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="OverrideZeroSeed" value="false" />
+        <Property name="UseInventoryChoiceOverride" value="false" />
         <Property name="IncrementStat" value="" />
         <Property name="List">
-          <Property value="GcRewardTableItem.xml">
+          <Property name="List" value="GcRewardTableItem">
             <Property name="PercentageChance" value="]]..Chance..[[" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecific]]..ItemType..[[.xml">
-              <Property name="Default" value="GcDefaultMission]]..ItemType..[[Enum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="]]..ItemID..[[" />
-              <Property name="AmountMin" value="]]..AmountMin..[[" />
-              <Property name="AmountMax" value="]]..AmountMax..[[" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecific]]..ItemType..[[">
+              <Property name="GcRewardSpecific]]..ItemType..[[">
+				  <Property name="Default" value="GcDefaultMission]]..ItemType..[[Enum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="]]..ItemID..[[" />
+				  <Property name="AmountMin" value="]]..AmountMin..[[" />
+				  <Property name="AmountMax" value="]]..AmountMax..[[" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
         </Property>
@@ -1762,24 +2047,26 @@ end
 
 function AddWholeNewCurrencyReward (RewardId, RewardChoice, Chance, Currency, AmountMin, AmountMax)
 	return
-[[<Property value="GcGenericRewardTableEntry.xml">
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="]]..RewardId..[[" />
-      <Property name="List" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList">
         <Property name="RewardChoice" value="]]..RewardChoice..[[" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="OverrideZeroSeed" value="false" />
+        <Property name="UseInventoryChoiceOverride" value="false" />
         <Property name="IncrementStat" value="" />
         <Property name="List">
-          <Property value="GcRewardTableItem.xml">
+          <Property name="List" value="GcRewardTableItem">
             <Property name="PercentageChance" value="]]..Chance..[[" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="]]..AmountMin..[[" />
-              <Property name="AmountMax" value="]]..AmountMax..[[" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="]]..Currency..[[" />
-              </Property>
+            <Property name="Reward" value="GcRewardMoney">
+              <Property name="GcRewardMoney">
+				  <Property name="AmountMin" value="]]..AmountMin..[[" />
+				  <Property name="AmountMax" value="]]..AmountMax..[[" />
+				  <Property name="RoundNumber" value="false" />
+				  <Property name="Currency" value="GcCurrency">
+					<Property name="Currency" value="]]..Currency..[[" />
+				  </Property>
+			  </Property>
             </Property>
           </Property>
         </Property>
@@ -1789,168 +2076,133 @@ end
 
 function CropNanites (NanitesChance, NanitesAmount)
     return
-[[<Property value="GcRewardTableItem.xml">
+[[<Property name="List" value="GcRewardTableItem">
             <Property name="PercentageChance" value="]]..NanitesChance..[[" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="]]..NanitesAmount..[[" />
-              <Property name="AmountMax" value="]]..NanitesAmount..[[" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Nanites" />
-              </Property>
+            <Property name="Reward" value="GcRewardMoney">
+              <Property name="GcRewardMoney">
+				  <Property name="AmountMin" value="]]..NanitesAmount..[[" />
+				  <Property name="AmountMax" value="]]..NanitesAmount..[[" />
+				  <Property name="RoundNumber" value="false" />
+				  <Property name="Currency" value="GcCurrency">
+					<Property name="Currency" value="Nanites" />
+				  </Property>
+			  </Property>
             </Property>
           </Property>]]
 end
 
 InvBoxBulkheadReward =
-[[<Property value="GcRewardTableItem.xml">
+[[<Property name="List" value="GcRewardTableItem">
             <Property name="PercentageChance" value="]]..MemFragInvBulkChance..[[" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="FREI_INV_TOKEN" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="FREI_INV_TOKEN" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>]]
 
 CrewManGuildUnitReward =
-[[<Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+[[<Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="]]..CrewManGuildUnits..[[" />
-              <Property name="AmountMax" value="]]..CrewManGuildUnits..[[" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Units" />
-              </Property>
+            <Property name="Reward" value="GcRewardMoney">
+              <Property name="GcRewardMoney">
+				  <Property name="AmountMin" value="]]..CrewManGuildUnits..[[" />
+				  <Property name="AmountMax" value="]]..CrewManGuildUnits..[[" />
+				  <Property name="RoundNumber" value="false" />
+				  <Property name="Currency" value="GcCurrency">
+					<Property name="Currency" value="Units" />
+				  </Property>
+			  </Property>
             </Property>
           </Property>]]
 
 CaptLogGuildUnitReward =
-[[<Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+[[<Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="]]..CaptLogGuildUnits..[[" />
-              <Property name="AmountMax" value="]]..CaptLogGuildUnits..[[" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Units" />
-              </Property>
-            </Property>
-          </Property>]]
-
-NewCrashedFreighterLoot = 
-[[<Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="]]..CrashFreightBulkheadChance..[[" />
-			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="FREI_INV_TOKEN" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardMoney">
+              <Property name="GcRewardMoney">
+				  <Property name="AmountMin" value="]]..CaptLogGuildUnits..[[" />
+				  <Property name="AmountMax" value="]]..CaptLogGuildUnits..[[" />
+				  <Property name="RoundNumber" value="false" />
+				  <Property name="Currency" value="GcCurrency">
+					<Property name="Currency" value="Units" />
+				  </Property>
+			  </Property>
             </Property>
           </Property>]]
 
 NewQueenLoot = 
-[[<Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="0" />
+[[<Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="0.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMultiSpecificItems.xml">
-              <Property name="Silent" value="False" />
-              <Property name="Items">
-                <Property value="GcMultiSpecificItemEntry.xml">
-                  <Property name="MultiItemRewardType" value="Product" />
-                  <Property name="Id" value="]]..QueenProductID..[[" />
-                  <Property name="Amount" value="]]..QueenProductAmount..[[" />
-                  <Property name="ProcTechGroup" value="" />
-                  <Property name="ProcTechQuality" value="0" />
-                  <Property name="IllegalProcTech" value="False" />
-                  <Property name="SentinelProcTech" value="False" />
-                  <Property name="AlsoTeachTechBoxRecipe" value="False" />
-                  <Property name="ProcProdType" value="GcProceduralProductCategory.xml">
-                    <Property name="ProceduralProductCategory" value="Loot" />
-                  </Property>
-                  <Property name="ProcProdRarity" value="GcRarity.xml">
-                    <Property name="Rarity" value="Common" />
-                  </Property>
-                  <Property name="CommunityTierProductList" />
-                  <Property name="HideInSeasonRewards" value="False" />
-                  <Property name="SeasonRewardListFormat" value="" />
-                  <Property name="CustomRewardLocID" value="" />
-                </Property>
-                <Property value="GcMultiSpecificItemEntry.xml">
-                  <Property name="MultiItemRewardType" value="Substance" />
-                  <Property name="Id" value="]]..QueenSubstanceID..[[" />
-                  <Property name="Amount" value="]]..QueenSubstanceAmount..[[" />
-                  <Property name="ProcTechGroup" value="" />
-                  <Property name="ProcTechQuality" value="0" />
-                  <Property name="IllegalProcTech" value="False" />
-                  <Property name="SentinelProcTech" value="False" />
-                  <Property name="AlsoTeachTechBoxRecipe" value="False" />
-                  <Property name="ProcProdType" value="GcProceduralProductCategory.xml">
-                    <Property name="ProceduralProductCategory" value="Loot" />
-                  </Property>
-                  <Property name="ProcProdRarity" value="GcRarity.xml">
-                    <Property name="Rarity" value="Common" />
-                  </Property>
-                  <Property name="CommunityTierProductList" />
-                  <Property name="HideInSeasonRewards" value="False" />
-                  <Property name="SeasonRewardListFormat" value="" />
-                  <Property name="CustomRewardLocID" value="" />
-                </Property>
-              </Property>
-            </Property>
+			<Property name="Reward" value="GcRewardSpecificSubstance">
+				<Property name="GcRewardSpecificSubstance">
+					<Property name="Default" value="GcDefaultMissionSubstanceEnum">
+						<Property name="DefaultSubstanceType" value="None" />
+					</Property>
+					<Property name="ID" value="]]..QueenSubstanceID..[[" />
+					<Property name="AmountMin" value="]]..QueenSubstanceAmountMin..[[" />
+					<Property name="AmountMax" value="]]..QueenSubstanceAmountMax..[[" />
+					<Property name="DisableMultiplier" value="false" />
+					<Property name="RewardAsBlobs" value="false" />
+					<Property name="UseFuelMultiplier" value="false" />
+					<Property name="Silent" value="false" />
+					<Property name="UseMissionBoardDifficultyScale" value="false" />
+				</Property>
+			</Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="400" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="400.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardProceduralProduct.xml">
-              <Property name="Type" value="GcProceduralProductCategory.xml">
-                <Property name="ProceduralProductCategory" value="]]..QueenProcType..[[" />
-              </Property>
-              <Property name="OSDMessage" value="" />
-              <Property name="SubIfPlayerAlreadyHasOne" value="False" />
-              <Property name="OverrideRarity" value="True" />
-              <Property name="Rarity" value="GcRarity.xml">
-                <Property name="Rarity" value="]]..QueenProcRarity..[[" />
-              </Property>
-              <Property name="FreighterTechQualityOverride" value="-1" />
+            <Property name="Reward" value="GcRewardProceduralProduct">
+              <Property name="GcRewardProceduralProduct">
+				  <Property name="Type" value="GcProceduralProductCategory">
+					<Property name="ProceduralProductCategory" value="]]..QueenProcType..[[" />
+				  </Property>
+				  <Property name="OSDMessage" value="" />
+				  <Property name="SubIfPlayerAlreadyHasOne" value="false" />
+				  <Property name="OverrideRarity" value="true" />
+				  <Property name="Rarity" value="GcRarity">
+					<Property name="Rarity" value="]]..QueenProcRarity..[[" />
+				  </Property>
+				  <Property name="FreighterTechQualityOverride" value="-1" />
+			  </Property>
             </Property>
           </Property>]]
 
-GlassDrop = [[<Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="400" />
+GlassDrop = [[<Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="400.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="SENTINEL_LOOT" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="SENTINEL_LOOT" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>]]
 
@@ -1963,168 +2215,186 @@ ExpeditionMetalChanges	=
 }
 
 PIRATLTEASYRewards =
-[[<Property value="GcGenericRewardTableEntry.xml">
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="PIRATLTEASY" />
-      <Property name="List" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList">
         <Property name="RewardChoice" value="GiveFirst_ThenAlsoSelectAlwaysFromRest" />
-        <Property name="OverrideZeroSeed" value="True" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="OverrideZeroSeed" value="true" />
+        <Property name="UseInventoryChoiceOverride" value="false" />
         <Property name="IncrementStat" value="" />
 		<Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="0" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="0.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="PIRATE_PROD" />
-              <Property name="AmountMin" value="0" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="PIRATE_PROD" />
+				  <Property name="AmountMin" value="0" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-		  <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+		  <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="SCRAP_GOODS" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="SCRAP_GOODS" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="SCRAP_TECH" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="SCRAP_TECH" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="SCRAP_WEAP" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="SCRAP_WEAP" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="SHIPCHARGE" />
-              <Property name="AmountMin" value="3" />
-              <Property name="AmountMax" value="3" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="SHIPCHARGE" />
+				  <Property name="AmountMin" value="3" />
+				  <Property name="AmountMax" value="3" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="40" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="40.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="TRA_CURIO1" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="3" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="TRA_CURIO1" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="3" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="40" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="40.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="WAR_CURIO1" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="3" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="WAR_CURIO1" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="3" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="40" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="40.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="EXP_CURIO1" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="3" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="EXP_CURIO1" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="3" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="100" />
-              <Property name="AmountMax" value="250" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Nanites" />
-              </Property>
+            <Property name="Reward" value="GcRewardMoney">
+              <Property name="GcRewardMoney">
+				  <Property name="AmountMin" value="100" />
+				  <Property name="AmountMax" value="250" />
+				  <Property name="RoundNumber" value="false" />
+				  <Property name="Currency" value="GcCurrency">
+					<Property name="Currency" value="Nanites" />
+				  </Property>
+			  </Property>
             </Property>
           </Property>
         </Property>
@@ -2132,114 +2402,126 @@ PIRATLTEASYRewards =
     </Property>]]
 
 PIRATLTHARDRewards =
-[[<Property value="GcGenericRewardTableEntry.xml">
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="PIRATLTHARD" />
-      <Property name="List" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList">
         <Property name="RewardChoice" value="GiveFirst_ThenAlsoSelectAlwaysFromRest" />
-        <Property name="OverrideZeroSeed" value="True" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="OverrideZeroSeed" value="true" />
+        <Property name="UseInventoryChoiceOverride" value="false" />
         <Property name="IncrementStat" value="" />
 		<Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="0" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="0.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="PIRATE_PROD" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="2" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="PIRATE_PROD" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="2" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-		  <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+		  <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="SCRAP_GOODS" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="SCRAP_GOODS" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="SCRAP_TECH" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="SCRAP_TECH" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="SCRAP_WEAP" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="SCRAP_WEAP" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="SHIPCHARGE" />
-              <Property name="AmountMin" value="3" />
-              <Property name="AmountMax" value="3" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="SHIPCHARGE" />
+				  <Property name="AmountMin" value="3" />
+				  <Property name="AmountMax" value="3" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="100" />
-              <Property name="AmountMax" value="250" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Nanites" />
-              </Property>
+            <Property name="Reward" value="GcRewardMoney">
+              <Property name="GcRewardMoney">
+				  <Property name="AmountMin" value="100" />
+				  <Property name="AmountMax" value="250" />
+				  <Property name="RoundNumber" value="false" />
+				  <Property name="Currency" value="GcCurrency">
+					<Property name="Currency" value="Nanites" />
+				  </Property>
+			  </Property>
             </Property>
           </Property>
         </Property>
@@ -2247,85 +2529,97 @@ PIRATLTHARDRewards =
     </Property>]]
 
 ESCORTLOOTRewards =
-[[<Property value="GcGenericRewardTableEntry.xml">
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="ESCORTLOOT" />
-      <Property name="List" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList">
         <Property name="RewardChoice" value="SelectAlways" />
-        <Property name="OverrideZeroSeed" value="True" />
+        <Property name="OverrideZeroSeed" value="true" />
         <Property name="IncrementStat" value="" />
 		<Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="20" />
-              <Property name="AmountMax" value="30" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Nanites" />
-              </Property>
+            <Property name="Reward" value="GcRewardMoney">
+              <Property name="GcRewardMoney">
+				  <Property name="AmountMin" value="20" />
+				  <Property name="AmountMax" value="30" />
+				  <Property name="RoundNumber" value="false" />
+				  <Property name="Currency" value="GcCurrency">
+					<Property name="Currency" value="Nanites" />
+				  </Property>
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="SHIPCHARGE" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="SHIPCHARGE" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-		  <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+		  <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="FRIG_BOOST_TRA" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="FRIG_BOOST_TRA" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardProcTechProduct.xml">
-              <Property name="Group" value="SHIPJUMP_NAME_L" />
-              <Property name="WeightedChanceNormal" value="55" />
-              <Property name="WeightedChanceRare" value="25" />
-              <Property name="WeightedChanceEpic" value="15" />
-              <Property name="WeightedChanceLegendary" value="5" />
-              <Property name="ForceRelevant" value="False" />
-              <Property name="ForceQualityRelevant" value="False" />
+            <Property name="Reward" value="GcRewardProcTechProduct">
+              <Property name="GcRewardProcTechProduct">
+				  <Property name="Group" value="SHIPJUMP_NAME_L" />
+				  <Property name="WeightedChanceNormal" value="55" />
+				  <Property name="WeightedChanceRare" value="25" />
+				  <Property name="WeightedChanceEpic" value="15" />
+				  <Property name="WeightedChanceLegendary" value="5" />
+				  <Property name="ForceRelevant" value="false" />
+				  <Property name="ForceQualityRelevant" value="false" />
+				  <Property name="AllowAnyGroup" value="false" />
+			  </Property>
             </Property>
           </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardProcTechProduct.xml">
-              <Property name="Group" value="SHIPSHIELD_NAME_L" />
-              <Property name="WeightedChanceNormal" value="55" />
-              <Property name="WeightedChanceRare" value="25" />
-              <Property name="WeightedChanceEpic" value="15" />
-              <Property name="WeightedChanceLegendary" value="5" />
-              <Property name="ForceRelevant" value="False" />
-              <Property name="ForceQualityRelevant" value="False" />
+            <Property name="Reward" value="GcRewardProcTechProduct">
+              <Property name="GcRewardProcTechProduct">
+				  <Property name="Group" value="SHIPSHIELD_NAME_L" />
+				  <Property name="WeightedChanceNormal" value="55" />
+				  <Property name="WeightedChanceRare" value="25" />
+				  <Property name="WeightedChanceEpic" value="15" />
+				  <Property name="WeightedChanceLegendary" value="5" />
+				  <Property name="ForceRelevant" value="false" />
+				  <Property name="ForceQualityRelevant" value="false" />
+				  <Property name="AllowAnyGroup" value="false" />
+			  </Property>
             </Property>
           </Property>
         </Property>
@@ -2342,19 +2636,21 @@ PlaqueChanges =
 --Makes Knowledge Stones & Encyclopedias teach 2 words instead of 1 (doesn't affect NPCs teaching words)
 function AddOneWord(AlienType)
     return
-    [[<Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+    [[<Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="]]..AlienType..[[" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="wordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
+            <Property name="Reward" value="GcRewardTeachWord">
+              <Property name="GcRewardTeachWord">
+				  <Property name="Race" value="GcAlienRace">
+					<Property name="AlienRace" value="]]..AlienType..[[" />
+				  </Property>
+				  <Property name="UseCategory" value="false" />
+				  <Property name="Category" value="GcWordCategoryTableEnum">
+					<Property name="wordcategorytableEnum" value="MISC" />
+				  </Property>
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+			  </Property>
             </Property>
           </Property>]]
 end
@@ -2362,99 +2658,111 @@ end
 --Makes Ancient Plaques & Ruins & Monoliths teach 4 more words than normal
 function AddFourWords(AlienType)
     return
-    [[<Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+    [[<Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="]]..AlienType..[[" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="wordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
+            <Property name="Reward" value="GcRewardTeachWord">
+              <Property name="GcRewardTeachWord">
+				  <Property name="Race" value="GcAlienRace">
+					<Property name="AlienRace" value="]]..AlienType..[[" />
+				  </Property>
+				  <Property name="UseCategory" value="false" />
+				  <Property name="Category" value="GcWordCategoryTableEnum">
+					<Property name="wordcategorytableEnum" value="MISC" />
+				  </Property>
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+			  </Property>
             </Property>
           </Property>
-		  <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+		  <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="]]..AlienType..[[" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="wordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
+            <Property name="Reward" value="GcRewardTeachWord">
+              <Property name="GcRewardTeachWord">
+				  <Property name="Race" value="GcAlienRace">
+					<Property name="AlienRace" value="]]..AlienType..[[" />
+				  </Property>
+				  <Property name="UseCategory" value="false" />
+				  <Property name="Category" value="GcWordCategoryTableEnum">
+					<Property name="wordcategorytableEnum" value="MISC" />
+				  </Property>
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+			  </Property>
             </Property>
           </Property>
-		  <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+		  <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="]]..AlienType..[[" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="wordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
+            <Property name="Reward" value="GcRewardTeachWord">
+              <Property name="GcRewardTeachWord">
+				  <Property name="Race" value="GcAlienRace">
+					<Property name="AlienRace" value="]]..AlienType..[[" />
+				  </Property>
+				  <Property name="UseCategory" value="false" />
+				  <Property name="Category" value="GcWordCategoryTableEnum">
+					<Property name="wordcategorytableEnum" value="MISC" />
+				  </Property>
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+			  </Property>
             </Property>
           </Property>
-		  <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+		  <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="]]..AlienType..[[" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="wordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
+            <Property name="Reward" value="GcRewardTeachWord">
+              <Property name="GcRewardTeachWord">
+				  <Property name="Race" value="GcAlienRace">
+					<Property name="AlienRace" value="]]..AlienType..[[" />
+				  </Property>
+				  <Property name="UseCategory" value="false" />
+				  <Property name="Category" value="GcWordCategoryTableEnum">
+					<Property name="wordcategorytableEnum" value="MISC" />
+				  </Property>
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+			  </Property>
             </Property>
           </Property>]]
 end
 
 AddedExocraftNPCMoney =
-[[<Property value="GcGenericRewardTableEntry.xml">
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="R_D_EXOTUT_MONEY" />
-      <Property name="List" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList">
         <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="OverrideZeroSeed" value="false" />
+        <Property name="UseInventoryChoiceOverride" value="false" />
         <Property name="IncrementStat" value="" />
 		<Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="]]..ExocraftMinUnits..[[" />
-              <Property name="AmountMax" value="]]..ExocraftMaxUnits..[[" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Units" />
-              </Property>
+            <Property name="Reward" value="GcRewardMoney">
+              <Property name="GcRewardMoney">
+				  <Property name="AmountMin" value="]]..ExocraftMinUnits..[[" />
+				  <Property name="AmountMax" value="]]..ExocraftMaxUnits..[[" />
+				  <Property name="RoundNumber" value="false" />
+				  <Property name="Currency" value="GcCurrency">
+					<Property name="Currency" value="Units" />
+				  </Property>
+			  </Property>
             </Property>
           </Property>
-		  <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+		  <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="]]..ExocraftMinNanites..[[" />
-              <Property name="AmountMax" value="]]..ExocraftMaxNanites..[[" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Nanites" />
-              </Property>
+            <Property name="Reward" value="GcRewardMoney">
+              <Property name="GcRewardMoney">
+				  <Property name="AmountMin" value="]]..ExocraftMinNanites..[[" />
+				  <Property name="AmountMax" value="]]..ExocraftMaxNanites..[[" />
+				  <Property name="RoundNumber" value="false" />
+				  <Property name="Currency" value="GcCurrency">
+					<Property name="Currency" value="Nanites" />
+				  </Property>
+			  </Property>
             </Property>
           </Property>
         </Property>
@@ -2462,58 +2770,58 @@ AddedExocraftNPCMoney =
     </Property>]]
 
 AddedExocraftNPCMoneyID =
-[[<Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_D_EXOTUT_MONEY" />
-                  </Property>]]
+[[<Property name="Rewards" value="R_D_EXOTUT_MONEY" />]]
 
 function AddTechListItem (TechID)
     return
-    [[<Property value="NMSString0x10.xml">
-                  <Property name="Value" value="]]..TechID..[[" />
-                </Property>]]
+    [[<Property name="TechList" value="]]..TechID..[[" />]]
 end
 
 NewTravReward =
-[[<Property value="GcGenericRewardTableEntry.xml">
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="TRAV_PACKAGE" />
-      <Property name="List" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList">
         <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="OverrideZeroSeed" value="false" />
+        <Property name="UseInventoryChoiceOverride" value="false" />
         <Property name="IncrementStat" value="" />
 		<Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificSubstance.xml">
-              <Property name="Default" value="GcDefaultMissionSubstanceEnum.xml">
-                <Property name="DefaultSubstanceType" value="None" />
-              </Property>
-              <Property name="ID" value="LAUNCHSUB" />
-              <Property name="AmountMin" value="]]..math.floor(30*TravRewardDiHydrMult)..[[" />
-              <Property name="AmountMax" value="]]..math.floor(50*TravRewardDiHydrMult)..[[" />
-              <Property name="DisableMultiplier" value="False" />
-              <Property name="RewardAsBlobs" value="False" />
-              <Property name="UseFuelMultiplier" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="UseMissionBoardDifficultyScale" value="False" />
+            <Property name="Reward" value="GcRewardSpecificSubstance">
+              <Property name="GcRewardSpecificSubstance">
+				  <Property name="Default" value="GcDefaultMissionSubstanceEnum">
+					<Property name="DefaultSubstanceType" value="None" />
+				  </Property>
+				  <Property name="ID" value="LAUNCHSUB" />
+				  <Property name="AmountMin" value="]]..math.floor(30*TravRewardDiHydrMult)..[[" />
+				  <Property name="AmountMax" value="]]..math.floor(50*TravRewardDiHydrMult)..[[" />
+				  <Property name="DisableMultiplier" value="false" />
+				  <Property name="RewardAsBlobs" value="false" />
+				  <Property name="UseFuelMultiplier" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="UseMissionBoardDifficultyScale" value="false" />
+			  </Property>
             </Property>
           </Property>
-		  <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+		  <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificSubstance.xml">
-              <Property name="Default" value="GcDefaultMissionSubstanceEnum.xml">
-                <Property name="DefaultSubstanceType" value="None" />
-              </Property>
-              <Property name="ID" value="ROCKETSUB" />
-              <Property name="AmountMin" value="]]..math.floor(20*TravRewardTritMult)..[[" />
-              <Property name="AmountMax" value="]]..math.floor(40*TravRewardTritMult)..[[" />
-              <Property name="DisableMultiplier" value="False" />
-              <Property name="RewardAsBlobs" value="False" />
-              <Property name="UseFuelMultiplier" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="UseMissionBoardDifficultyScale" value="False" />
+            <Property name="Reward" value="GcRewardSpecificSubstance">
+              <Property name="GcRewardSpecificSubstance">
+				  <Property name="Default" value="GcDefaultMissionSubstanceEnum">
+					<Property name="DefaultSubstanceType" value="None" />
+				  </Property>
+				  <Property name="ID" value="ROCKETSUB" />
+				  <Property name="AmountMin" value="]]..math.floor(20*TravRewardTritMult)..[[" />
+				  <Property name="AmountMax" value="]]..math.floor(40*TravRewardTritMult)..[[" />
+				  <Property name="DisableMultiplier" value="false" />
+				  <Property name="RewardAsBlobs" value="false" />
+				  <Property name="UseFuelMultiplier" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="UseMissionBoardDifficultyScale" value="false" />
+			  </Property>
             </Property>
           </Property>
         </Property>
@@ -2521,165 +2829,161 @@ NewTravReward =
     </Property>]]
 
 SalvageExoticPuzzle =
-[[<Property value="GcAlienPuzzleOption.xml">
+[[<Property name="Options" value="GcAlienPuzzleOption">
           <Property name="Name" value="UI_COST_NO_SALVAGE" />
           <Property name="Text" value="UI_SALVAGE_PROD_RES" />
-          <Property name="IsAlien" value="True" />
-          <Property name="Cost" value="C_SALVAGE_ROY" />
-          <Property name="Rewards">
-            <Property value="NMSString0x10.xml">
-              <Property name="Value" value="R_SALVAGE_ROY" />
-            </Property>
+          <Property name="IsAlien" value="true" />
+          <Property name="ResponseLanguageOverride" value="GcAlienRace">
+			<Property name="AlienRace" value="None" />
           </Property>
-          <Property name="Mood" value="GcAlienMood.xml">
+		  <Property name="Cost" value="C_SALVAGE_ROY" />
+          <Property name="Rewards">
+            <Property name="Rewards" value="R_SALVAGE_ROY" />
+          </Property>
+          <Property name="Mood" value="GcAlienMood">
             <Property name="Mood" value="Neutral" />
           </Property>
-          <Property name="Prop" value="GcNPCPropType.xml">
+          <Property name="Prop" value="GcNPCPropType">
             <Property name="NPCProp" value="DontCare" />
           </Property>
-          <Property name="OverrideWithAlienWord" value="False" />
-          <Property name="ReseedInteractionOnUse" value="False" />
-          <Property name="KeepOpen" value="False" />
-          <Property name="DisplayCost" value="True" />
-          <Property name="TruncateCost" value="False" />
-          <Property name="MarkInteractionComplete" value="True" />
+          <Property name="OverrideWithAlienWord" value="false" />
+          <Property name="ReseedInteractionOnUse" value="false" />
+		  <Property name="AlienWordSpecificRace" value="GcAlienRace">
+			  <Property name="AlienRace" value="None" />
+		  </Property>
+          <Property name="KeepOpen" value="false" />
+          <Property name="DisplayCost" value="true" />
+          <Property name="TruncateCost" value="false" />
+          <Property name="MarkInteractionComplete" value="true" />
           <Property name="NextInteraction" value="" />
-          <Property name="SelectedOnBackOut" value="False" />
-          <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+          <Property name="SelectedOnBackOut" value="false" />
+          <Property name="AudioEvent" value="GcAudioWwiseEvents">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
           <Property name="TitleOverride" value="" />
-          <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+		  <Property name="SkipStraightToOptionsOnNextPuzzle" value="false" />
+          <Property name="EnablingConditionTest" value="GcMissionConditionTest">
             <Property name="ConditionTest" value="AnyFalse" />
           </Property>
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
-          <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+          <Property name="WordCategory" value="GcWordCategoryTableEnum">
             <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
         </Property>]]
 
 SalvageShuttlePuzzle =
-[[<Property value="GcAlienPuzzleOption.xml">
+[[<Property name="Options" value="GcAlienPuzzleOption">
           <Property name="Name" value="UI_COST_NO_SALVAGE" />
           <Property name="Text" value="UI_SALVAGE_PROD_RES" />
-          <Property name="IsAlien" value="True" />
+          <Property name="IsAlien" value="true" />
+		  <Property name="ResponseLanguageOverride" value="GcAlienRace">
+			<Property name="AlienRace" value="None" />
+          </Property>
           <Property name="Cost" value="C_SALVAGE_SHT" />
           <Property name="Rewards">
-            <Property value="NMSString0x10.xml">
-              <Property name="Value" value="R_SALVAGE_SHT" />
-            </Property>
+            <Property name="Rewards" value="R_SALVAGE_SHT" />
           </Property>
-          <Property name="Mood" value="GcAlienMood.xml">
+          <Property name="Mood" value="GcAlienMood">
             <Property name="Mood" value="Neutral" />
           </Property>
-          <Property name="Prop" value="GcNPCPropType.xml">
+          <Property name="Prop" value="GcNPCPropType">
             <Property name="NPCProp" value="DontCare" />
           </Property>
-          <Property name="OverrideWithAlienWord" value="False" />
-          <Property name="ReseedInteractionOnUse" value="False" />
-          <Property name="KeepOpen" value="False" />
-          <Property name="DisplayCost" value="True" />
-          <Property name="TruncateCost" value="False" />
-          <Property name="MarkInteractionComplete" value="True" />
+          <Property name="OverrideWithAlienWord" value="false" />
+		  <Property name="AlienWordSpecificRace" value="GcAlienRace">
+			  <Property name="AlienRace" value="None" />
+		  </Property>
+          <Property name="ReseedInteractionOnUse" value="false" />
+          <Property name="KeepOpen" value="false" />
+          <Property name="DisplayCost" value="true" />
+          <Property name="TruncateCost" value="false" />
+          <Property name="MarkInteractionComplete" value="true" />
           <Property name="NextInteraction" value="" />
-          <Property name="SelectedOnBackOut" value="False" />
-          <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+          <Property name="SelectedOnBackOut" value="false" />
+          <Property name="AudioEvent" value="GcAudioWwiseEvents">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
           <Property name="TitleOverride" value="" />
-          <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+		  <Property name="SkipStraightToOptionsOnNextPuzzle" value="false" />
+          <Property name="EnablingConditionTest" value="GcMissionConditionTest">
             <Property name="ConditionTest" value="AnyFalse" />
           </Property>
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
-          <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+          <Property name="WordCategory" value="GcWordCategoryTableEnum">
             <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
         </Property>]]
 
 ExoticSalvageReward = 
-[[<Property value="GcGenericRewardTableEntry.xml">
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="R_SALVAGE_ROY" />
-      <Property name="List" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList">
         <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="OverrideZeroSeed" value="false" />
+        <Property name="UseInventoryChoiceOverride" value="false" />
         <Property name="IncrementStat" value="" />
         <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="SHIP_CORE_S" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="SHIP_CORE_S" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-		  <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+		  <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="SALVAGE_TECH7" />
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="SALVAGE_TECH7" />
+				  <Property name="AmountMin" value="1" />
+				  <Property name="AmountMax" value="1" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-		  <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+		  <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSalvageShip.xml">
-              <Property name="RewardShipParts" value="True" />
-              <Property name="SpecificCustomisationSlotIDs">
-                <Property name="Freighter" value="NMSString0x10.xml">
-                  <Property name="Value" value="" />
-                </Property>
-                <Property name="Dropship" value="NMSString0x10.xml">
-                  <Property name="Value" value="DROPSHIP_CORE" />
-                </Property>
-                <Property name="Fighter" value="NMSString0x10.xml">
-                  <Property name="Value" value="FIGHTER_CORE" />
-                </Property>
-                <Property name="Scientific" value="NMSString0x10.xml">
-                  <Property name="Value" value="SCIENTIFIC_CORE" />
-                </Property>
-                <Property name="Shuttle" value="NMSString0x10.xml">
-                  <Property name="Value" value="SHUTTLE_CORE" />
-                </Property>
-                <Property name="PlayerFreighter" value="NMSString0x10.xml">
-                  <Property name="Value" value="" />
-                </Property>
-                <Property name="Royal" value="NMSString0x10.xml">
-                  <Property name="Value" value="SCIENTIFIC_CORE" />
-                </Property>
-                <Property name="Alien" value="NMSString0x10.xml">
-                  <Property name="Value" value="" />
-                </Property>
-                <Property name="Sail" value="NMSString0x10.xml">
-                  <Property name="Value" value="DROPSHIP_CORE" />
-                </Property>
-                <Property name="Robot" value="NMSString0x10.xml">
-                  <Property name="Value" value="FIGHTER_CORE" />
-                </Property>
-              </Property>
+            <Property name="Reward" value="GcRewardSalvageShip">
+              <Property name="GcRewardSalvageShip">
+				  <Property name="RewardShipParts" value="true" />
+				  <Property name="SpecificCustomisationSlotIDs">
+					<Property name="Freighter" value="" />
+					<Property name="Dropship" value="DROPSHIP_CORE" />
+					<Property name="Fighter" value="FIGHTER_CORE" />
+					<Property name="Scientific" value="SCIENTIFIC_CORE" />
+					<Property name="Shuttle" value="SHUTTLE_CORE" />
+					<Property name="PlayerFreighter" value="" />
+					<Property name="Royal" value="SCIENTIFIC_CORE" />
+					<Property name="Alien" value="" />
+					<Property name="Sail" value="DROPSHIP_CORE" />
+					<Property name="Robot" value="FIGHTER_CORE" />
+				  </Property>
+			  </Property>
             </Property>
           </Property>
         </Property>
@@ -2687,94 +2991,169 @@ ExoticSalvageReward =
     </Property>]]
 
 ShuttleSalvageReward = 
-[[<Property value="GcGenericRewardTableEntry.xml">
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="R_SALVAGE_SHT" />
-      <Property name="List" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList">
         <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="OverrideZeroSeed" value="false" />
+        <Property name="UseInventoryChoiceOverride" value="false" />
         <Property name="IncrementStat" value="" />
         <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificProduct.xml">
-              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                <Property name="DefaultProductType" value="None" />
-              </Property>
-              <Property name="ID" value="SALVAGE_TECH4" />
-              <Property name="AmountMin" value="3" />
-              <Property name="AmountMax" value="3" />
-              <Property name="HideAmountInMessage" value="False" />
-              <Property name="ForceSpecialMessage" value="False" />
-              <Property name="HideInSeasonRewards" value="False" />
-              <Property name="Silent" value="False" />
-              <Property name="SeasonRewardListFormat" value="" />
-              <Property name="RequiresTech" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct">
+              <Property name="GcRewardSpecificProduct">
+				  <Property name="Default" value="GcDefaultMissionProductEnum">
+					<Property name="DefaultProductType" value="None" />
+				  </Property>
+				  <Property name="ID" value="SALVAGE_TECH4" />
+				  <Property name="AmountMin" value="3" />
+				  <Property name="AmountMax" value="3" />
+				  <Property name="HideAmountInMessage" value="false" />
+				  <Property name="ForceSpecialMessage" value="false" />
+				  <Property name="HideInSeasonRewards" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="SeasonRewardListFormat" value="" />
+				  <Property name="RequiresTech" value="" />
+			  </Property>
             </Property>
           </Property>
-		  <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+		  <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSalvageShip.xml">
-              <Property name="RewardShipParts" value="True" />
-              <Property name="SpecificCustomisationSlotIDs">
-                <Property name="Freighter" value="NMSString0x10.xml">
-                  <Property name="Value" value="" />
-                </Property>
-                <Property name="Dropship" value="NMSString0x10.xml">
-                  <Property name="Value" value="DROPSHIP_CORE" />
-                </Property>
-                <Property name="Fighter" value="NMSString0x10.xml">
-                  <Property name="Value" value="FIGHTER_CORE" />
-                </Property>
-                <Property name="Scientific" value="NMSString0x10.xml">
-                  <Property name="Value" value="SCIENTIFIC_CORE" />
-                </Property>
-                <Property name="Shuttle" value="NMSString0x10.xml">
-                  <Property name="Value" value="SHUTTLE_CORE" />
-                </Property>
-                <Property name="PlayerFreighter" value="NMSString0x10.xml">
-                  <Property name="Value" value="" />
-                </Property>
-                <Property name="Royal" value="NMSString0x10.xml">
-                  <Property name="Value" value="SCIENTIFIC_CORE" />
-                </Property>
-                <Property name="Alien" value="NMSString0x10.xml">
-                  <Property name="Value" value="" />
-                </Property>
-                <Property name="Sail" value="NMSString0x10.xml">
-                  <Property name="Value" value="DROPSHIP_CORE" />
-                </Property>
-                <Property name="Robot" value="NMSString0x10.xml">
-                  <Property name="Value" value="FIGHTER_CORE" />
-                </Property>
-              </Property>
+            <Property name="Reward" value="GcRewardSalvageShip">
+              <Property name="GcRewardSalvageShip">
+				  <Property name="RewardShipParts" value="true" />
+				  <Property name="SpecificCustomisationSlotIDs">
+					<Property name="Freighter" value="" />
+					<Property name="Dropship" value="DROPSHIP_CORE" />
+					<Property name="Fighter" value="FIGHTER_CORE" />
+					<Property name="Scientific" value="SCIENTIFIC_CORE" />
+					<Property name="Shuttle" value="SHUTTLE_CORE" />
+					<Property name="PlayerFreighter" value="" />
+					<Property name="Royal" value="SCIENTIFIC_CORE" />
+					<Property name="Alien" value="" />
+					<Property name="Sail" value="DROPSHIP_CORE" />
+					<Property name="Robot" value="FIGHTER_CORE" />
+				  </Property>
+			  </Property>
             </Property>
           </Property>
         </Property>
       </Property>
     </Property>]]
 
+RevealPurpleSystemsOption =
+[[<Property name="Options" value="GcAlienPuzzleOption">
+					<Property name="Name" value="Reveal All Purple Star Systems" />
+					<Property name="Text" value="" />
+					<Property name="IsAlien" value="false" />
+					<Property name="ResponseLanguageOverride" value="GcAlienRace">
+						<Property name="AlienRace" value="None" />
+					</Property>
+					<Property name="Cost" value="PURP_COST" />
+					<Property name="Rewards">
+						<Property name="Rewards" value="R_OPENMAP" />
+						<Property name="Rewards" value="R_PURPSYS" />
+					</Property>
+					<Property name="Mood" value="GcAlienMood">
+						<Property name="Mood" value="Neutral" />
+					</Property>
+					<Property name="Prop" value="GcNPCPropType">
+						<Property name="NPCProp" value="DontCare" />
+					</Property>
+					<Property name="OverrideWithAlienWord" value="false" />
+					<Property name="AlienWordSpecificRace" value="GcAlienRace">
+						<Property name="AlienRace" value="None" />
+					</Property>
+					<Property name="ReseedInteractionOnUse" value="false" />
+					<Property name="KeepOpen" value="false" />
+					<Property name="DisplayCost" value="true" />
+					<Property name="TruncateCost" value="false" />
+					<Property name="MarkInteractionComplete" value="true" />
+					<Property name="NextInteraction" value="" />
+					<Property name="SelectedOnBackOut" value="false" />
+					<Property name="AudioEvent" value="GcAudioWwiseEvents">
+						<Property name="AkEvent" value="UI_NEW_DISCOVERY" />
+					</Property>
+					<Property name="TitleOverride" value="" />
+					<Property name="SkipStraightToOptionsOnNextPuzzle" value="false" />
+					<Property name="EnablingConditionTest" value="GcMissionConditionTest">
+						<Property name="ConditionTest" value="AnyFalse" />
+					</Property>
+					<Property name="EnablingConditions" />
+					<Property name="EnablingConditionId" value="" />
+					<Property name="WordCategory" value="GcWordCategoryTableEnum">
+						<Property name="wordcategorytableEnum" value="MISC" />
+					</Property>
+				</Property>]]
+
+RevealPurpleSystemsReward =
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry">
+			<Property name="Id" value="R_PURPSYS" />
+			<Property name="List" value="GcRewardTableItemList">
+				<Property name="RewardChoice" value="GiveAll" />
+				<Property name="OverrideZeroSeed" value="false" />
+				<Property name="UseInventoryChoiceOverride" value="false" />
+				<Property name="IncrementStat" value="" />
+				<Property name="List">
+					<Property name="List" value="GcRewardTableItem">
+						<Property name="PercentageChance" value="100.000000" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardPurpleSystems">
+							<Property name="GcRewardPurpleSystems">
+								<Property name="Allow" value="true" />
+							</Property>
+						</Property>
+					</Property>
+				</Property>
+			</Property>
+		</Property>]]
+
+OpenGalaxyMapReward =
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry">
+			<Property name="Id" value="R_OPENMAP" />
+			<Property name="List" value="GcRewardTableItemList">
+				<Property name="RewardChoice" value="GiveAll" />
+				<Property name="OverrideZeroSeed" value="false" />
+				<Property name="UseInventoryChoiceOverride" value="false" />
+				<Property name="IncrementStat" value="" />
+				<Property name="List">
+					<Property name="List" value="GcRewardTableItem">
+						<Property name="PercentageChance" value="100.000000" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardForceOpenGalaxyMap">
+							<Property name="GcRewardForceOpenGalaxyMap">
+								<Property name="BlockWarp" value="true" />
+							</Property>
+						</Property>
+					</Property>
+				</Property>
+			</Property>
+		</Property>]]
+
 function AddActivateMission (RewardId, MissionID)
 	return
-	[[<Property value="GcGenericRewardTableEntry.xml">
+	[[<Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="]]..RewardId..[[" />
-      <Property name="List" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList">
         <Property name="RewardChoice" value="GiveAllSilent" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="OverrideZeroSeed" value="false" />
+        <Property name="UseInventoryChoiceOverride" value="false" />
         <Property name="IncrementStat" value="" />
         <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMission.xml">
-              <Property name="Mission" value="]]..MissionID..[[" />
-              <Property name="SetAsSelected" value="False" />
-              <Property name="Restart" value="False" />
-              <Property name="FailRewardIfMissionActive" value="True" />
-              <Property name="AlreadyActiveFailureMessage" value="" />
+            <Property name="Reward" value="GcRewardMission">
+              <Property name="GcRewardMission">
+				  <Property name="Mission" value="]]..MissionID..[[" />
+				  <Property name="SetAsSelected" value="false" />
+				  <Property name="Restart" value="false" />
+				  <Property name="FailRewardIfMissionActive" value="true" />
+				  <Property name="AlreadyActiveFailureMessage" value="" />
+			  </Property>
             </Property>
           </Property>
         </Property>
@@ -2784,86 +3163,91 @@ end
 
 function Add2ItemMultiReward (Chance, Item1Type, Item1ID, Item1Amount, Item2Type, Item2ID, Item2Amount)
 	return
-	[[<Property value="GcRewardTableItem.xml">
+	[[<Property name="List" value="GcRewardTableItem">
             <Property name="PercentageChance" value="]]..Chance..[[" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMultiSpecificItems.xml">
-              <Property name="Silent" value="False" />
-              <Property name="Items">
-                <Property value="GcMultiSpecificItemEntry.xml">
-                  <Property name="MultiItemRewardType" value="]]..Item1Type..[[" />
-                  <Property name="Id" value="]]..Item1ID..[[" />
-                  <Property name="Amount" value="]]..Item1Amount..[[" />
-                  <Property name="ProcTechGroup" value="" />
-                  <Property name="ProcTechQuality" value="0" />
-                  <Property name="IllegalProcTech" value="False" />
-                  <Property name="SentinelProcTech" value="False" />
-                  <Property name="AlsoTeachTechBoxRecipe" value="False" />
-                  <Property name="ProcProdType" value="GcProceduralProductCategory.xml">
-                    <Property name="ProceduralProductCategory" value="Loot" />
-                  </Property>
-                  <Property name="ProcProdRarity" value="GcRarity.xml">
-                    <Property name="Rarity" value="Common" />
-                  </Property>
-                  <Property name="CommunityTierProductList" />
-                  <Property name="HideInSeasonRewards" value="False" />
-                  <Property name="SeasonRewardListFormat" value="" />
-                  <Property name="CustomRewardLocID" value="" />
-                </Property>
-                <Property value="GcMultiSpecificItemEntry.xml">
-                  <Property name="MultiItemRewardType" value="]]..Item2Type..[[" />
-                  <Property name="Id" value="]]..Item2ID..[[" />
-                  <Property name="Amount" value="]]..Item2Amount..[[" />
-                  <Property name="ProcTechGroup" value="" />
-                  <Property name="ProcTechQuality" value="0" />
-                  <Property name="IllegalProcTech" value="False" />
-                  <Property name="SentinelProcTech" value="False" />
-                  <Property name="AlsoTeachTechBoxRecipe" value="False" />
-                  <Property name="ProcProdType" value="GcProceduralProductCategory.xml">
-                    <Property name="ProceduralProductCategory" value="Loot" />
-                  </Property>
-                  <Property name="ProcProdRarity" value="GcRarity.xml">
-                    <Property name="Rarity" value="Common" />
-                  </Property>
-                  <Property name="CommunityTierProductList" />
-                  <Property name="HideInSeasonRewards" value="False" />
-                  <Property name="SeasonRewardListFormat" value="" />
-                  <Property name="CustomRewardLocID" value="" />
-                </Property>
-              </Property>
+            <Property name="Reward" value="GcRewardMultiSpecificItems">
+              <Property name="GcRewardMultiSpecificItems">
+				  <Property name="Silent" value="false" />
+				  <Property name="Items">
+					<Property name="Items" value="GcMultiSpecificItemEntry">
+					  <Property name="MultiItemRewardType" value="]]..Item1Type..[[" />
+					  <Property name="Id" value="]]..Item1ID..[[" />
+					  <Property name="Amount" value="]]..Item1Amount..[[" />
+					  <Property name="ProcTechGroup" value="" />
+					  <Property name="ProcTechQuality" value="0" />
+					  <Property name="IllegalProcTech" value="false" />
+					  <Property name="SentinelProcTech" value="false" />
+					  <Property name="AlsoTeachTechBoxRecipe" value="false" />
+					  <Property name="ProcProdType" value="GcProceduralProductCategory">
+						<Property name="ProceduralProductCategory" value="Loot" />
+					  </Property>
+					  <Property name="ProcProdRarity" value="GcRarity">
+						<Property name="Rarity" value="Common" />
+					  </Property>
+					  <Property name="CommunityTierProductList" />
+					  <Property name="HideInSeasonRewards" value="false" />
+					  <Property name="SeasonRewardListFormat" value="" />
+					  <Property name="CustomRewardLocID" value="" />
+					</Property>
+					<Property name="Items" value="GcMultiSpecificItemEntry">
+					  <Property name="MultiItemRewardType" value="]]..Item2Type..[[" />
+					  <Property name="Id" value="]]..Item2ID..[[" />
+					  <Property name="Amount" value="]]..Item2Amount..[[" />
+					  <Property name="ProcTechGroup" value="" />
+					  <Property name="ProcTechQuality" value="0" />
+					  <Property name="IllegalProcTech" value="false" />
+					  <Property name="SentinelProcTech" value="false" />
+					  <Property name="AlsoTeachTechBoxRecipe" value="false" />
+					  <Property name="ProcProdType" value="GcProceduralProductCategory">
+						<Property name="ProceduralProductCategory" value="Loot" />
+					  </Property>
+					  <Property name="ProcProdRarity" value="GcRarity">
+						<Property name="Rarity" value="Common" />
+					  </Property>
+					  <Property name="CommunityTierProductList" />
+					  <Property name="HideInSeasonRewards" value="false" />
+					  <Property name="SeasonRewardListFormat" value="" />
+					  <Property name="CustomRewardLocID" value="" />
+					</Property>
+				  </Property>
+			  </Property>
             </Property>
           </Property>]]
 end
 
 function AddUpgrade(UpgradeGroup, NormalChance, RareChance, EpicChance, LegendChance)
     return
-	[[<Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
+	[[<Property name="List" value="GcRewardTableItem">
+                <Property name="PercentageChance" value="100.000000" />
 				<Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardProcTechProduct.xml">
-                  <Property name="Group" value="]]..UpgradeGroup..[[" />
-                  <Property name="WeightedChanceNormal" value="]]..NormalChance..[[" />
-                  <Property name="WeightedChanceRare" value="]]..RareChance..[[" />
-                  <Property name="WeightedChanceEpic" value="]]..EpicChance..[[" />
-                  <Property name="WeightedChanceLegendary" value="]]..LegendChance..[[" />
-                  <Property name="ForceRelevant" value="False" />
-                  <Property name="ForceQualityRelevant" value="False" />
+                <Property name="Reward" value="GcRewardProcTechProduct">
+                  <Property name="GcRewardProcTechProduct">
+					  <Property name="Group" value="]]..UpgradeGroup..[[" />
+					  <Property name="WeightedChanceNormal" value="]]..NormalChance..[[" />
+					  <Property name="WeightedChanceRare" value="]]..RareChance..[[" />
+					  <Property name="WeightedChanceEpic" value="]]..EpicChance..[[" />
+					  <Property name="WeightedChanceLegendary" value="]]..LegendChance..[[" />
+					  <Property name="ForceRelevant" value="false" />
+					  <Property name="ForceQualityRelevant" value="false" />
+					  <Property name="AllowAnyGroup" value="false" />
+				  </Property>
                 </Property>
               </Property>]]
 end
 
 function AddTechForShip (TechId, Amount)
 	return
-	[[<Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
+	[[<Property name="Slots" value="GcInventoryElement" _id="]]..TechId..[[">
+                    <Property name="Type" value="GcInventoryType">
                       <Property name="InventoryType" value="Technology" />
                     </Property>
                     <Property name="Id" value="]]..TechId..[[" />
                     <Property name="Amount" value="]]..Amount..[[" />
                     <Property name="MaxAmount" value="]]..Amount..[[" />
                     <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
+                    <Property name="FullyInstalled" value="true" />
+                    <Property name="Index" value="GcInventoryIndex">
                       <Property name="X" value="-1" />
                       <Property name="Y" value="-1" />
                     </Property>
@@ -2873,31 +3257,40 @@ end
 ExpShipCoreTechs =
 {"SHIPSHIELD", "HYPERDRIVE", "LAUNCHER", "SHIPJUMP1", }
 
+ExpShipCoreTechsAlien =
+{"SHIELD_ALIEN", "WARP_ALIEN", "LAUNCHER_ALIEN", "SHIPJUMP_ALIEN", "SHIPGUN_ALIEN", "SHIPLAS_ALIEN"}
+
 ExpShipRewardIds =
-{	--RewardId		Hauler, Explorer, or Other
-	{"RS_S9_SHIP", "Other"},
-	{"RS_S9_COMPLETE", "Other"},
-	{"RS_S1_COMPLETE", "Other"},
-	{"RS_S12_SHIP", "Other"},
-	{"RS_S12_COMPLETE", "Other"},
-	{"RS_S13_SHIP", "Hauler"},
-	{"RS_S13_COMPLETE", "Hauler"},
-	{"RS_S16_SHIP", "Explorer"},
-	{"RS_S16_COMPLETE", "Explorer"},
+{	--RewardId			Unit cost		Fighter, Hauler, Explorer, Exotic, or Alien
+	{"RS_S1_SHIP", 		6000000,		"Fighter"},
+	{"RS_S1_COMPLETE", 	0,				"Fighter"},
+	{"RS_S9_SHIP", 		6000000,		"Fighter"},
+	{"RS_S9_COMPLETE",	0,				"Fighter"},
+	{"RS_S12_SHIP", 	6000000,		"Exotic"},
+	{"RS_S12_COMPLETE", 0,				"Exotic"},
+	{"R_TGA_SHIP01", 	6000000,		"Exotic"},
+	{"RS_S13_SHIP", 	6000000,		"Hauler"},
+	{"RS_S13_COMPLETE", 0,				"Hauler"},
+	{"RS_S16_SHIP", 	6000000,		"Explorer"},
+	{"RS_S16_COMPLETE", 0,				"Explorer"},
+	{"RS_S17_SHIP", 	8000000,		"Alien"},
+	{"RS_S17_COMPLETE", 0,				"Alien"},
 }
 
 ExpStaffRewardIds =
-{"RS_S12_PHASE3", "RS_S12_STAFF"}
+{"RS_S12_PHASE3", "RS_S12_STAFF", "RS_S17_PHASE4", "RS_S17_STAFF", "RS_S18_PHASE3", "RS_S18_STAFF"}
 
 TeachPellets =
-[[<Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
+[[<Property name="List" value="GcRewardTableItem">
+                <Property name="PercentageChance" value="100.000000" />
 				<Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardSpecificProductRecipe.xml">
-                  <Property name="ID" value="BAIT_BASIC" />
-                  <Property name="Silent" value="False" />
-                  <Property name="HideInSeasonRewards" value="False" />
-                  <Property name="SeasonRewardFormat" value="UI_BLUEPRINT_REWARD_FORMAT" />
+                <Property name="Reward" value="GcRewardSpecificProductRecipe">
+                  <Property name="GcRewardSpecificProductRecipe">
+					  <Property name="ID" value="BAIT_BASIC" />
+					  <Property name="Silent" value="false" />
+					  <Property name="HideInSeasonRewards" value="false" />
+					  <Property name="SeasonRewardFormat" value="UI_BLUEPRINT_REWARD_FORMAT" />
+				  </Property>
                 </Property>
               </Property>]]
 
@@ -2907,7 +3300,7 @@ MemFragOutlierTechs =
 MinableObjects =
 {
 	"DE_PLANT_SMALL", "DE_PLANT_MED", "DE_PLANT_LARGE", "DE_WATERPLANT_S", "DE_WATERPLANT_M", "DE_WATERPLANT_L", "DE_ROCK_SMALL", "DE_ROCK_MED", "DE_ROCK_LARGE", "DE_GEM_R_SMALL", "DE_GEM_R_MED", "DE_GEM_R_LARGE", "DE_GEM_B_SMALL", "DE_GEM_B_MED", "DE_GEM_B_LARGE", "DE_GEM_Y_SMALL", "DE_GEM_Y_MED", "DE_GEM_Y_LARGE", "DE_GEM_S_SMALL", "DE_GEM_S_LARGE", "DE_CAVE_MED", "DE_CAVE_LARGE", "DE_WATER_MED", "DE_WATER_LARGE", "DE_RARE_HOT", "DE_RARE_RADIO", "DE_RARE_COLD", "DE_RARE_GOLD", "DE_RARE_ROLLER", "DE_SCRAP_PART", 
-	"DE_TENTACLE", "DE_SPOREVENT", "DE_FLYTRAP", 
+	"DE_TENTACLE", "DE_SPOREVENT", "DE_FLYTRAP", "DE_GAS_PLANT", 
 }
 
 CrashsiteTechRewards =
@@ -2946,38 +3339,198 @@ function AresRewardId (Number)
 [[R_DM_NEXMILES_]]..Number..[[]]
 end
 
+
+AbandModeTeachCreaPellet =
+[[<Property name="List" value="GcRewardTableItem">
+						<Property name="PercentageChance" value="1000.000000" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardSpecificProductRecipeFromList">
+							<Property name="GcRewardSpecificProductRecipeFromList">
+								<Property name="FailIfAllKnown" value="true" />
+								<Property name="ProductList">
+									<Property name="ProductList" value="BAIT_BASIC" _index="0" />
+								</Property>
+								<Property name="ProductListRewardOrder" value="InOrder" />
+							</Property>
+						</Property>
+					</Property>]]
+
+--AbandModeTeachCreaPellet =
+--[[<Property name="List" value="GcRewardTableItem">
+                <Property name="PercentageChance" value="1000.000000" />
+				<Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSpecificProductRecipe">
+                  <Property name="GcRewardSpecificProductRecipe">
+					  <Property name="ID" value="BAIT_BASIC" />
+					  <Property name="Silent" value="false" />
+					  <Property name="HideInSeasonRewards" value="false" />
+					  <Property name="SeasonRewardFormat" value="UI_BLUEPRINT_REWARD_FORMAT" />
+				  </Property>
+                </Property>
+              </Property>]]
+
+
+function AbandModeRewardOverride (NewRewardID)
+    return
+[[<Property name="RewardOverrideTable" value="GcRewardMissionOverride">
+						<Property name="Mission" value="ABAND_DUMMY" />
+						<Property name="Reward" value="]]..NewRewardID..[[" />
+						<Property name="ForceLocalMissionSelection" value="" />
+					</Property>]]
+end
+
+AddNewAbandLootbox1 =
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry" _id="ABAND_LOOTBOX_X1">
+			<Property name="Id" value="ABAND_LOOTBOX_X1" />
+			<Property name="List" value="GcRewardTableItemList">
+				<Property name="RewardChoice" value="SelectAlways" />
+				<Property name="OverrideZeroSeed" value="false" />
+				<Property name="UseInventoryChoiceOverride" value="false" />
+				<Property name="IncrementStat" value="" />
+				<Property name="List">
+					<Property name="List" value="GcRewardTableItem" _index="0">
+						<Property name="PercentageChance" value="20.000000" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardProcTechProduct">
+							<Property name="GcRewardProcTechProduct">
+								<Property name="Group" value="" />
+								<Property name="WeightedChanceNormal" value="70" />
+								<Property name="WeightedChanceRare" value="20" />
+								<Property name="WeightedChanceEpic" value="10" />
+								<Property name="WeightedChanceLegendary" value="5" />
+								<Property name="ForceRelevant" value="true" />
+								<Property name="ForceQualityRelevant" value="false" />
+								<Property name="AllowAnyGroup" value="true" />
+							</Property>
+						</Property>
+					</Property>
+					<Property name="List" value="GcRewardTableItem" _index="1">
+						<Property name="PercentageChance" value="10.000000" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardSpecificProductRecipeFromList">
+							<Property name="GcRewardSpecificProductRecipeFromList">
+								<Property name="FailIfAllKnown" value="true" />
+								<Property name="ProductList">
+									<Property name="ProductList" value="ATLAS_SEED_1" _index="0" />
+									<Property name="ProductList" value="ATLAS_SEED_2" _index="1" />
+									<Property name="ProductList" value="ATLAS_SEED_3" _index="2" />
+									<Property name="ProductList" value="ATLAS_SEED_4" _index="3" />
+									<Property name="ProductList" value="ATLAS_SEED_5" _index="4" />
+									<Property name="ProductList" value="ATLAS_SEED_6" _index="5" />
+									<Property name="ProductList" value="ATLAS_SEED_7" _index="6" />
+									<Property name="ProductList" value="ATLAS_SEED_8" _index="7" />
+									<Property name="ProductList" value="ATLAS_SEED_9" _index="8" />
+									<Property name="ProductList" value="ATLAS_SEED_10" _index="9" />
+								</Property>
+								<Property name="ProductListRewardOrder" value="InOrder" />
+							</Property>
+						</Property>
+					</Property>
+				</Property>
+			</Property>
+		</Property>]]
+
+AddNewAbandLootbox =
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry" _id="ABAND_LOOTBOX_X">
+			<Property name="Id" value="ABAND_LOOTBOX_X" />
+			<Property name="List" value="GcRewardTableItemList">
+				<Property name="RewardChoice" value="SelectFromSuccess" />
+				<Property name="OverrideZeroSeed" value="false" />
+				<Property name="UseInventoryChoiceOverride" value="false" />
+				<Property name="IncrementStat" value="" />
+				<Property name="List">
+					<Property name="List" value="GcRewardTableItem">
+						<Property name="PercentageChance" value="1000.000000" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardSpecificProductRecipeFromList">
+							<Property name="GcRewardSpecificProductRecipeFromList">
+								<Property name="FailIfAllKnown" value="true" />
+								<Property name="ProductList">
+									<Property name="ProductList" value="BAIT_BASIC" _index="0" />
+								</Property>
+								<Property name="ProductListRewardOrder" value="InOrder" />
+							</Property>
+						</Property>
+					</Property>
+					<Property name="List" value="GcRewardTableItem" _index="1">
+						<Property name="PercentageChance" value="10.000000" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardSpecificTechFromList">
+							<Property name="GcRewardSpecificTechFromList">
+								<Property name="TechList">
+									<Property name="TechList" value="DISCORDKEY" _index="0" />
+								</Property>
+								<Property name="FailIfAllKnown" value="true" />
+								<Property name="TechListRewardOrder" value="InOrder" />
+							</Property>
+						</Property>
+					</Property>
+					<Property name="List" value="GcRewardTableItem">
+						<Property name="PercentageChance" value="0.100000" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardProcTechProduct">
+							<Property name="GcRewardProcTechProduct">
+								<Property name="Group" value="" />
+								<Property name="WeightedChanceNormal" value="75" />
+								<Property name="WeightedChanceRare" value="15" />
+								<Property name="WeightedChanceEpic" value="7" />
+								<Property name="WeightedChanceLegendary" value="3" />
+								<Property name="ForceRelevant" value="true" />
+								<Property name="ForceQualityRelevant" value="false" />
+								<Property name="AllowAnyGroup" value="true" />
+							</Property>
+						</Property>
+					</Property>
+				</Property>
+			</Property>
+		</Property>]]
+
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
+["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\NPCMISSIONTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			--This entry intentionally left blank, to be filled in by the PirateMissionChanges at the bottom of this script
 		}
 	},
 	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-	["EXML_CHANGE_TABLE"]	= 
+	["MXML_CHANGE_TABLE"]	= 
 		{
 			{
-				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
 				["ADD_OPTION"]  = "ADDafterSECTION",  
 				["ADD"] = AddActivateMission ("R_RESTART_LIS", "ABAND_HANDIN"),		--Adds a reward which can be used in "PTSd Resource + Product + Construction Rebalance.lua" for restarting the "Lost in Space" mission if it fails to spawn / disappears due to a vanilla bug, which otherwise would prevent you from turning in Crew Manifests / Captain's logs for rewards.
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","FTH_USEFUL_PROD",	"ID","TECHBOX"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	TravTechChance},
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_BOUNTY1","Reward","GcRewardMoney.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","HYPER"},
+				["PRECEDING_KEY_WORDS"] = {"List"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ID",	AtlasOrbReward}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "HYPER",		"List", "GcRewardTableItem"},
+				["ADD_OPTION"]  = "ADDafterSECTION",  
+				["ADD"] = CurrencyReward ("Nanites", AtlasOrbNanites, AtlasOrbNanites, "100"),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_BOUNTY1","Reward","GcRewardMoney"},
 				["MATH_OPERATION"] 		= "*", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2986,7 +3539,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_BOUNTY2","Reward","GcRewardMoney.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_BOUNTY2","Reward","GcRewardMoney"},
 				["MATH_OPERATION"] 		= "*", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2995,7 +3548,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_BOUNTY3","Reward","GcRewardMoney.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_BOUNTY3","Reward","GcRewardMoney"},
 				["MATH_OPERATION"] 		= "*", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3004,13 +3557,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_DEFEND_RAID","Reward","GcRewardMoney.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_DEFEND_RAID","Reward","GcRewardMoney"},
 				["MATH_OPERATION"] 		= "*", 
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	PirateRaidDefenseRewardMult}, 
 					{"AmountMax",	PirateRaidDefenseRewardMult} 	
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_WAYPOINT",		"Currency", "Nanites"},
+				["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	WaypointNanites},
+					{"AmountMax",	WaypointNanites}
 				}
 			},
 			{
@@ -3057,19 +3619,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","NPC_VEHICLE16S"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["ADD"] = CurrencyReward ("Nanites", ExocraftMinNanites, ExocraftMaxNanites, "100"),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id","NPC_VEHICLE16S",		"List", "GcRewardTableItem"},
+				["ADD"] = CurrencyReward ("Nanites", ExocraftMinNanites, ExocraftMaxNanites, "100.000000"),
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_INVBOX"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_INVBOX",		"List", "GcRewardTableItem"},
 				["ADD"] = InvBoxBulkheadReward,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_TECHBOX",	"Reward", "GcRewardProcTechProduct.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_TECHBOX",	"Reward", "GcRewardProcTechProduct"},
 				["REPLACE_TYPE"] 		= "ALL",
 				["MATH_OPERATION"] 		= "*",
 				["SECTION_UP"] = 1,
@@ -3081,7 +3641,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_TECHBOX",	"Group", "LAUNCHER_NAME_L"},
 				["MATH_OPERATION"] 		= "*",
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	MemFragProcLauncherChanceMult},
@@ -3089,7 +3649,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_ALIEN_TECH",	"ID", "UA_CARGOSHIELD"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	PsychonicNeural},
@@ -3097,7 +3657,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_ALIEN_TECH",	"ID", "UA_LAUNCHCHARGE"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	PsychonicChloroplast},
@@ -3105,7 +3665,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_ALIEN_TECH",	"ID", "UA_SHIPSCAN"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	PsychonicWormhole},
@@ -3113,23 +3673,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_ALIEN_TECH",	"ID", "UA_WATERLAND"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	PsychonicWaterLand},
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_CREW_GUILD"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["ADD"] = CrewManGuildUnitReward,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id","R_ALIEN_TECH",	"ID", "UA_TELEPORT"},
+				["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	PsychonicTeleport},
+				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_CAPT_GUILD"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_CREW_GUILD",		"List", "GcRewardTableItem"},
+				["ADD"] = CrewManGuildUnitReward,
+				["ADD_OPTION"]  = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_CAPT_GUILD",		"List", "GcRewardTableItem"},
 				["ADD"] = CaptLogGuildUnitReward,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","MB_STAND_LOW"},
@@ -3211,12 +3777,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","TRADERLOOT",	"Group","SHIPJUMP_NAME_L"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","TRADERLOOT",	"Group","SHIPSHIELD_NAME_L"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
 			},
 			{
@@ -3227,14 +3793,70 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","DE_QUEEN"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_QUEEN",		"List", "GcRewardTableItem"},
 				["ADD"] = NewQueenLoot,
 				["ADD_OPTION"] = "ADDBEFORESECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","DRONE_LOOT"},
-				["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_JELLYBOSS",		"List", "GcRewardTableItem"},
+				["ADD"] = ProductReward (GuardianLoot1, GuardianLoot1Min, GuardianLoot1Max, 100),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_JELLYBOSS",		"List", "GcRewardTableItem"},
+				["ADD"] = ProductReward (GuardianLoot2, GuardianLoot2Min, GuardianLoot2Max, 100),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_STONE_EYE",		"List", "GcRewardTableItem"},
+				["ADD"] = SubstanceReward (NewVigilantEyeItem, NewVigilantEyeItemAmount, NewVigilantEyeItemAmount, "100.000000"),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "DE_STONE_EYE",	"ID", "STONE_EYE_PROD"},
+				["SECTION_UP"] = 2,
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
+				["ADD"] = AddWholeNewItemReward ("GOLEM_MECH", "GiveAll", GolemMechItemChance, "Product", GolemMechItem, GolemMechItemAmountMin, GolemMechItemAmountMax),
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
+				["ADD"] = AddWholeNewItemReward ("GOLEM_FLOAT", "GiveAll", GolemFloatItemChance, "Product", GolemFloatItem, GolemFloatItemAmountMin, GolemFloatItemAmountMax),
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","GOLEM_MECH",		"List", "GcRewardTableItem"},
+				["ADD"] = SubstanceReward ("RUINSUB", 32, 84, "100.000000"),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","GOLEM_FLOAT",		"List", "GcRewardTableItem"},
+				["ADD"] = SubstanceReward ("RUINSUB", 16, 32, "100.000000"),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","GOLEM_MECH",		"ID", "RUINSUB"},
+				["MATH_OPERATION"]         = "*",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	GolemPolishedStoneMult}, 
+					{"AmountMax",	GolemPolishedStoneMult} 	
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","GOLEM_FLOAT",		"ID", "RUINSUB"},
+				["MATH_OPERATION"]         = "*",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	GolemPolishedStoneMult}, 
+					{"AmountMax",	GolemPolishedStoneMult} 	
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DRONE_LOOT",		"List", "GcRewardTableItem"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	DroneGlassDropChance}, 
@@ -3243,14 +3865,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","QUAD_LOOT"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","QUAD_LOOT",		"List", "GcRewardTableItem"},
 				["ADD"] = GlassDrop,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","QUAD_LOOT","ID","SENTINEL_LOOT"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	QuadGlassDropChance}, 
@@ -3259,14 +3880,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","MECH_LOOT"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","MECH_LOOT",		"List", "GcRewardTableItem"},
 				["ADD"] = GlassDrop,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","MECH_LOOT","ID","SENTINEL_LOOT"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	MechGlassDropChance}, 
@@ -3275,14 +3895,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","WALKER_LOOT"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","WALKER_LOOT",		"List", "GcRewardTableItem"},
 				["ADD"] = GlassDrop,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","WALKER_LOOT","ID","SENTINEL_LOOT"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	WalkerGlassDropChance}, 
@@ -3292,7 +3911,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_HIVESUB","ID","SENTINEL_LOOT"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	PillarGlassDropChance}, 
@@ -3302,11 +3921,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAPHEAP","ID","CHART_HIVE"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	SalvageSentMapChance}, 
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SCRAP_PART",		"List", "GcRewardTableItem"},
+				["ADD"] = ProceduralProductReward ("Salvage", "false", "Common", ExtraScrapChance),
+				["ADD_OPTION"] = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_SCRAP_PART",	"ID","LAND1"},
@@ -3327,7 +3951,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","SPIDER_LOOT","ID","CHART_ROBOT"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	SpiderMapChance}, 
@@ -3335,51 +3959,47 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_MINIHIVE","ID","CHART_ROBOT"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	DisResMapChance}, 
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"ID","U_SENTGUN"},
-				["SECTION_UP"] = 1,
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SENT_LOOT",	"ID","U_SENTGUN"},
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	SentGunChance}
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"ID","U_SENTSUIT"},
-				["SECTION_UP"] = 1,
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SENT_LOOT",	"ID","U_SENTSUIT"},
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	SentSuitChance}
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_DEFEND_RAID"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_DEFEND_RAID",		"List", "GcRewardTableItem"},
 				["ADD"] = CurrencyReward("Nanites", PirateRaidDefenseNanitesMin, PirateRaidDefenseNanitesMax, PirateRaidDefenseNanitesChance),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","POLICELOOT"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","POLICELOOT",		"List", "GcRewardTableItem"},
 				["ADD"] = ProductReward("FRIG_BOOST_COM", PoliceFrigComMin, PoliceFrigComMax, PoliceFrigComChance),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER_SAVED"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER_SAVED",		"List", "GcRewardTableItem"},
 				["ADD"] = CurrencyReward("Units", FreighterRescueUnitsMin, FreighterRescueUnitsMax, FreighterRescueUnitsChance),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER_SAVED"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER_SAVED",		"List", "GcRewardTableItem"},
 				["ADD"] = ProductReward("FRIG_TOKEN", FreighterRescueFrigModMin, FreighterRescueFrigModMax, FreighterRescueFrigModChance),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_FREI"},
@@ -3391,56 +4011,48 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_FREI"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_FREI",		"List", "GcRewardTableItem"},
 				["ADD_OPTION"]  = "ADDbeforeSECTION", 
 				["ADD"] = Add2ItemMultiReward ("0", "Product", GuaranteedFreighterLoot1, GuaranteedFreighterLoot1Amount, "Product", GuaranteedFreighterLoot2, GuaranteedFreighterLoot2Amount),
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_CIV_SAVED_SM"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_CIV_SAVED_SM",		"List", "GcRewardTableItem"},
 				["ADD_OPTION"]  = "ADDafterSECTION", 
-				["ADD"] = CurrencyReward ("Nanites", "200", "250", "100"),
+				["ADD"] = CurrencyReward ("Nanites", "200", "250", "100.000000"),
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_CIV_SAVED_SM"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_CIV_SAVED_SM",		"List", "GcRewardTableItem"},
 				["ADD_OPTION"]  = "ADDafterSECTION",
-				["ADD"] = ProductReward(CivSavedSmallItemID, CivSavedSmallItemCount, CivSavedSmallItemCount, "100"),
+				["ADD"] = ProductReward(CivSavedSmallItemID, CivSavedSmallItemCount, CivSavedSmallItemCount, "100.000000"),
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_CIV_SAVED_LG"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_CIV_SAVED_LG",		"List", "GcRewardTableItem"},
 				["ADD_OPTION"]  = "ADDafterSECTION",
-				["ADD"] = ProductReward(CivSavedLargeItemID1, CivSavedLargeItemCount1, CivSavedLargeItemCount1, "100"),
+				["ADD"] = ProductReward(CivSavedLargeItemID1, CivSavedLargeItemCount1, CivSavedLargeItemCount1, "100.000000"),
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_CIV_SAVED_LG"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_CIV_SAVED_LG",		"List", "GcRewardTableItem"},
 				["ADD_OPTION"]  = "ADDafterSECTION",
-				["ADD"] = ProductReward(CivSavedLargeItemID2, CivSavedLargeItemCount2, CivSavedLargeItemCount2, "100"),
+				["ADD"] = ProductReward(CivSavedLargeItemID2, CivSavedLargeItemCount2, CivSavedLargeItemCount2, "100.000000"),
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_TRIBUTE"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_TRIBUTE",		"List", "GcRewardTableItem"},
 				["ADD_OPTION"]  = "ADDafterSECTION", 
-				["ADD"] = CurrencyReward ("Nanites", "400", "500", "100"),
+				["ADD"] = CurrencyReward ("Nanites", "400", "500", "100.000000"),
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_TRIBUTE"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_TRIBUTE",		"List", "GcRewardTableItem"},
 				["ADD_OPTION"]  = "ADDafterSECTION",
-				["ADD"] = ProductReward("FRIG_TOKEN", DreadTributeFrigModMin, DreadTributeFrigModMax, "100"),
+				["ADD"] = ProductReward("FRIG_TOKEN", DreadTributeFrigModMin, DreadTributeFrigModMax, "100.000000"),
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_TRIBUTE"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_TRIBUTE",		"List", "GcRewardTableItem"},
 				["ADD_OPTION"]  = "ADDafterSECTION",
-				["ADD"] = ProductReward("FREI_INV_TOKEN", DreadTributeBulkheadMin, DreadTributeBulkheadMax, "100"),
+				["ADD"] = ProductReward("FREI_INV_TOKEN", DreadTributeBulkheadMin, DreadTributeBulkheadMax, "100.000000"),
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","NAVDATA_RARE",	"ID","NAV_DATA_DROP"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3449,7 +4061,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","NAVDATA_RARE",	"ID","NAV_DATA"},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3499,7 +4111,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_GOLD",	"ID","ASTEROID2"},
 				["MATH_OPERATION"] 		= "*",
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3510,7 +4122,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_GOLD",	"ID","RADIO1"},
 				["MATH_OPERATION"] 		= "*",
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3530,8 +4142,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RARE_SPHERE",	"Rare","GcRewardTableCategory.xml",	"Medium","GcRewardTableItemList.xml"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_FOOD_HEALTH"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	SimpleFoodHealth},
+					{"AmountMax",	SimpleFoodHealth}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_FOOD_HEALTH2"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	GoodFoodHealth},
+					{"AmountMax",	GoodFoodHealth}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RARE_SPHERE",	"Rare","GcRewardTableCategory",	"Medium","GcRewardTableItemList",		"List", "GcRewardTableItem"},
 				["REPLACE_TYPE"] = "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3541,22 +4168,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","PLANT_PEARL"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","PLANT_PEARL",		"List", "GcRewardTableItem"},
 				["ADD"] = CropNanites(AlbumenPearlFarmNanitesChance, AlbumenPearlFarmNanitesAmount),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","PLANT_GRAV"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","PLANT_GRAV",		"List", "GcRewardTableItem"},
 				["ADD"] = CropNanites(GravitinoFarmNanitesChance, GravitinoFarmNanitesAmount),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","PLANT_SACVENOM"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","PLANT_SACVENOM",		"List", "GcRewardTableItem"},
 				["ADD"] = CropNanites(SacVenomFarmNanitesChance, SacVenomFarmNanitesAmount),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RARE_OBJECT"},
@@ -3566,29 +4190,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RARE_OBJECT"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","RARE_OBJECT",		"List", "GcRewardTableItem"},
 				["ADD"] = CropNanites(GravitinoWildNanitesChance, GravitinoWildNanitesAmount),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			--[[{
-				["SPECIAL_KEY_WORDS"] = {"Id","RARE_SPHERE",	"Rare","GcRewardTableCategory.xml",	"Large","GcRewardTableItemList.xml"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","RARE_SPHERE",	"Rare","GcRewardTableCategory",	"Large","GcRewardTableItemList",		"List", "GcRewardTableItem"},
 				["ADD"] = CropNanites(VortexCubeNanitesChance, VortexCubeNanitesAmount),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},]]
 			--Try this if the above one doesn't work
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_CAVE"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_CAVE",		"List", "GcRewardTableItem"},
 				["ADD"] = CropNanites(VortexCubeNanitesChance, VortexCubeNanitesAmount),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","DE_STORMCRYSTAL"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_STORMCRYSTAL",		"List", "GcRewardTableItem"},
 				["ADD"] = CropNanites(StormCrystalNanitesChance, StormCrystalNanitesAmount),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "PLANTER_CARBON"},
@@ -3611,25 +4231,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","PROC_PROD_CHEST"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","PROC_PROD_CHEST",		"List", "GcRewardTableItem"},
 				["ADD"] = ExtraChestArtifact,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-			},
-			--[[{
-				["SPECIAL_KEY_WORDS"] = {"Id","CRASHCONT_M"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["ADD"] = NewCrashedFreighterLoot,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-			},]]
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","CRASHCONT_S"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["ADD"] = NewCrashedFreighterLoot,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "STATION_S_DATA",	"Reward", "GcRewardMoney.xml",		"AmountMin", "10"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "STATION_S_DATA",	"Reward", "GcRewardMoney",		"AmountMin", "10"},
 				["VALUE_MATCH"] 		= "Units",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3711,13 +4318,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_LIB_VAULT_C",	"Rarity","Common"},
 				["REPLACE_TYPE"] 		= "ALL",
-				["SECTION_UP"] = 2,
+				["SECTION_UP"] = 3,
 				["REMOVE"] = "SECTION"
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_LIB_VAULT_C",	"Rarity","Uncommon"},
 				["REPLACE_TYPE"] 		= "ALL",
-				["SECTION_UP"] = 2,
+				["SECTION_UP"] = 3,
 				["REMOVE"] = "SECTION"
 			},
 			{
@@ -3732,13 +4339,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_LIB_VAULT_U",	"Rarity","Uncommon"},
 				["REPLACE_TYPE"] 		= "ALL",
-				["SECTION_UP"] = 2,
+				["SECTION_UP"] = 3,
 				["REMOVE"] = "SECTION"
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","WORD"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id","WORD",		"List", "GcRewardTableItem"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
 				["ADD"] = AddOneWord("None")
 			},
 			--[[
@@ -3775,10 +4381,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","DE_FISHCORE"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_FISHCORE",		"List", "GcRewardTableItem"},
 				["ADD"] = NewAlluringSpecRewards,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","BP_SALVAGE", "ID", "BP_SALVAGE"},
@@ -3840,7 +4445,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","DE_LITTLEWRECK", "Reward", "GcRewardProceduralProduct.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_LITTLEWRECK", "Reward", "GcRewardProceduralProduct"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3848,7 +4453,141 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAP_GOODS", "Reward", "GcRewardProceduralProduct.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_ABAND_CRATE", "ProceduralProductCategory", "DismantleTech"},
+				["SECTION_UP"] = 3,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	AbandCrateBrokTechChance}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_ABAND_CRATE", "ProceduralProductCategory", "DismantleData"},
+				["SECTION_UP"] = 3,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	AbandCrateDataRecordChance}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_ABAND_CRATE", "Reward", "GcRewardProcTechProduct"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	AbandCrateUpgradeChance},
+					{"WeightedChanceNormal",	AbandCrateUpgradeChanceC},
+					{"WeightedChanceRare",	AbandCrateUpgradeChanceB},
+					{"WeightedChanceEpic",	AbandCrateUpgradeChanceA},
+					{"WeightedChanceLegendary",	AbandCrateUpgradeChanceS},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
+				["ADD"] = AddNewAbandLootbox,
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
+				["ADD"] = AddNewAbandLootbox1,
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ABAND_LOOTBOX_L",		"ID", "SUIT_INV_TOKEN"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ID",	"NAV_DATA_DROP"}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = 
+				{
+					{"Id", "ABAND_LOOTBOX_L",		"List", "GcRewardTableItem"},
+					{"Id", "ABAND_LOOTBOX_X1",		"List", "GcRewardTableItem"},
+				},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward ("SALVAGE_TECH3", 1, 2, 10.000000),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = 
+				{
+					{"Id", "ABAND_LOOTBOX_L",		"List", "GcRewardTableItem"},
+					{"Id", "ABAND_LOOTBOX_X1",		"List", "GcRewardTableItem"},
+				},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward ("REPAIRKIT", 1, 1, 10.000000),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = 
+				{
+					{"Id", "ABAND_LOOTBOX_L",		"List", "GcRewardTableItem"},
+					{"Id", "ABAND_LOOTBOX_X1",		"List", "GcRewardTableItem"},
+				},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward ("FIENDCORE", 1, 1, 10.000000),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = 
+				{
+					{"Id", "ABAND_LOOTBOX_L",		"List", "GcRewardTableItem"},
+					{"Id", "ABAND_LOOTBOX_X1",		"List", "GcRewardTableItem"},
+				},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward ("POI_LOCATOR", 1, 1, 10.000000),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = 
+				{
+					{"Id", "ABAND_LOOTBOX_L",		"List", "GcRewardTableItem"},
+					{"Id", "ABAND_LOOTBOX_X1",		"List", "GcRewardTableItem"},
+				},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward ("NAV_DATA", 1, 3, 10.000000),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ABAND_LOOTBOX_S",		"ProductList", "TRA_TECH5"},
+				["SECTION_UP"] = 4,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	25}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ABAND_LOOTBOX_S",		"Reward", "GcRewardProcTechProduct"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	20}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ABAND_LOOTBOX_L",		"Reward", "GcRewardProcTechProduct"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	20}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ABAND_LOOTBOX_X1",		"List", "GcRewardTableItem"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward ("SHIP_INV_TOKEN", 1, 1, 10.000000),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ABAND_LOOTBOX_X1",		"List", "GcRewardTableItem"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward ("WEAP_INV_TOKEN", 1, 1, 15.000000),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ABAND_LOOTBOX_X1",		"List", "GcRewardTableItem"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward ("NAV_DATA_DROP", 1, 1, 15.000000),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ABAND_LOOTBOX_X1",		"List", "GcRewardTableItem"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward ("ABAND_LOCATOR", 1, 1, 10.000000),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAP_GOODS", "Reward", "GcRewardProceduralProduct"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3857,7 +4596,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAP_TECH", "ProceduralProductCategory", "DismantleTech"},
-				["SECTION_UP"] = 2,
+				["SECTION_UP"] = 3,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	SusPacketTechBrokTechChance}
@@ -3865,19 +4604,47 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAP_TECH", "ProceduralProductCategory", "DismantleData"},
-				["SECTION_UP"] = 2,
+				["SECTION_UP"] = 3,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	SusPacketTechDataRecordChance}
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAP_WEAP", "Reward", "GcRewardProceduralProduct.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAP_WEAP", "Reward", "GcRewardProceduralProduct"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	SusPacketArmsProcToolChance}
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_RUINPLANS"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"RewardChoice",	"SelectFromSuccess"}	--"TryFirst_ThenSelectAlways"
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_RUINPLANS", 		"Reward", "GcRewardSpecificProductRecipeFromList"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	1000},	--0.000000
+					{"ProductListRewardOrder",	"InOrder"}	--"OneRandom"
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_RUINPLANS",		"List", "GcRewardTableItem"},
+				["ADD"] = ProceduralProductReward ("Loot", "true", "Common", MemStoneAltTreasureChanceWeight),
+				["SECTION_UP"] = 1,
+				["ADD_OPTION"] = "ADDendSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_RUINPLANS",		"List", "GcRewardTableItem"},
+				["ADD"] = CurrencyReward ("Nanites", math.floor(0.8*MemStoneNaniteAmount), math.floor(1.2*MemStoneNaniteAmount), MemStoneNaniteChanceWeight),
+				["SECTION_UP"] = 1,
+				["ADD_OPTION"] = "ADDendSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","TECHDEBRIS"},
@@ -3892,11 +4659,47 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"WeightedChanceLegendary",	DmgMachClassSChanceMult},
 				}
 			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
+				["ADD"] = RevealPurpleSystemsReward,
+				["ADD_OPTION"]  = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
+				["ADD"] = OpenGalaxyMapReward,
+				["ADD_OPTION"]  = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "DE_ABAND_CRATE",	"List", "GcRewardTableItem"},
+				["ADD"] = AbandModeTeachCreaPellet,
+				["ADD_OPTION"]  = "ADDbeforeSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "DE_ABAND_CRATE"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"RewardChoice",	"SelectFromSuccess"}
+				}
+			},
+			--[[
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ABAND_LOOTBOX_S",	"List", "GcRewardTableItem"},
+				["ADD"] = AbandModeTeachCreaPellet,
+				["ADD_OPTION"]  = "ADDbeforeSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ABAND_LOOTBOX_S"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"RewardChoice",	"SelectFromSuccess"}
+				}
+			},
+			]]
 		}
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Name", "FTH_NPC_OPT_B_16"},
@@ -3918,15 +4721,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"Cost",	DreadnoughtClaimCost},
-					{"MarkInteractionComplete",	"True"}		--"True"
+					{"MarkInteractionComplete",	"true"}		--"true"
 				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Name", "ALL_OFFER_NANITES"},
 				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_MATCH"] 		= "SEC_MONEY",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
-					{"Value",	"TRAV_PACKAGE"}			--"SEC_MONEY"
+					{"Rewards",	"TRAV_PACKAGE"}			--"SEC_MONEY"
 				}
 			},
 			{
@@ -3935,7 +4739,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["VALUE_MATCH"] 		= "TECHFRAG_M",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
-					{"Value",	"TECHFRAG_XXX"}
+					{"Rewards",	"TECHFRAG_XXX"}			--"TECHFRAG_XXX"
 				}
 			},
 			--[[
@@ -3950,17 +4754,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			]]
 			{
-				["SPECIAL_KEY_WORDS"] = {"Name", "WAR_CRA_OPT_B_3",		"Value", "PROC_TECH_WEAP"},
-				["REMOVE"] = "SECTION"
+				["SPECIAL_KEY_WORDS"] = {"Name", "WAR_CRA_OPT_B_3",		"Rewards", "PROC_TECH_WEAP"},
+				["REMOVE"] = "LINE"
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Name", "FOURTH_CRA_OPT_B_11",		"Value", "PROC_TECH_SHIP"},
-				["REMOVE"] = "SECTION"
+				["SPECIAL_KEY_WORDS"] = {"Name", "FOURTH_CRA_OPT_B_11",		"Rewards", "PROC_TECH_SHIP"},
+				["REMOVE"] = "LINE"
 			}
 		}
 	},
 	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\EXPEDITIONREWARDTABLE.MBIN",
-	["EXML_CHANGE_TABLE"] 	= 
+	["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["SPECIAL_KEY_WORDS"]	= {"Currency", "Units"},
@@ -4028,7 +4832,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["REPLACE_TYPE"] 		= "ALL",
-				["VALUE_MATCH"] 		= "0",
+				["VALUE_MATCH"] 		= {"0", "0.000000"},
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"AmountMin",	ExpeditionReward0Replacer}, 
@@ -4038,7 +4842,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				["VALUE_MATCH"] 		= "100", 
+				["VALUE_MATCH"] 		= {"100", "100.000000"}, 
 				["VALUE_MATCH_OPTIONS"] = "<",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -4048,7 +4852,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				["VALUE_MATCH"] 		= "100", 
+				["VALUE_MATCH"] 		= {"100", "100.000000"}, 
 				["VALUE_MATCH_OPTIONS"] = "=",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -4058,7 +4862,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				["VALUE_MATCH"] 		= "0", 
+				["VALUE_MATCH"] 		= {"0", "0.000000"}, 
 				["VALUE_MATCH_OPTIONS"] = "=",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -4096,7 +4900,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\PLANTROOM\PARTS\WALLBB0\ENTITIES\INTERACTION.ENTITY.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				--["PRECEDING_KEY_WORDS"] = {"LinkableNMSTemplate.xml"},
@@ -4110,31 +4914,31 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--[[
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\MAINTENANCEGROUPSTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				["SPECIAL_KEY_WORDS"] = {"Sentinels", "GcMaintenanceGroup.xml",		"Id", "SENTINEL_LOOT"},
+				["SPECIAL_KEY_WORDS"] = {"Sentinels", "GcMaintenanceGroup",		"Id", "SENTINEL_LOOT"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"OverrideAmount",	SentGlass}		--0
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Sentinels", "GcMaintenanceGroup.xml",		"Id", "WALKER_PROD"},
+				["SPECIAL_KEY_WORDS"] = {"Sentinels", "GcMaintenanceGroup",		"Id", "WALKER_PROD"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"OverrideAmount",	SentBrain}		--0
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Sentinels", "GcMaintenanceGroup.xml",		"Id", "DRONE_SALVAGE"},
+				["SPECIAL_KEY_WORDS"] = {"Sentinels", "GcMaintenanceGroup",		"Id", "DRONE_SALVAGE"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"OverrideAmount",	SentMirror}		--0
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Sentinels", "GcMaintenanceGroup.xml",		"Id", "QUAD_PROD"},
+				["SPECIAL_KEY_WORDS"] = {"Sentinels", "GcMaintenanceGroup",		"Id", "QUAD_PROD"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"OverrideAmount",	SentQuad}		--0
@@ -4145,7 +4949,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	]]
 	{
 		["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRATE\CRATE_LARGE_RARE\ENTITIES\CRATE_LARGE_RARE.ENTITY.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","SPACEGUNK3"},
@@ -4162,7 +4966,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\ROBOTHEADS\ENTITIES\DATA.ENTITY.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["PRECEDING_KEY_WORDS"] = {"PreInstalledTech"},
@@ -4179,7 +4983,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\MISSIONTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_EXOTUT_LOOP"},
@@ -4190,16 +4994,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_EXOTUT_LOOP"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["ADD"] = CurrencyReward ("Nanites", math.floor(1*ExocraftMinNanites), math.floor(1*ExocraftMaxNanites), "100"),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id","R_EXOTUT_LOOP",		"List", "GcRewardTableItem"},
+				["ADD"] = CurrencyReward ("Nanites", math.floor(1*ExocraftMinNanites), math.floor(1*ExocraftMaxNanites), "100.000000"),
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 		}
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\RECURRINGMISSIONTABLE.MBIN"},
-		["EXML_CHANGE_TABLE"] 	= 
+		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT"},
@@ -4213,39 +5016,180 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Value","R_D_EXOTUT"},
+				["SPECIAL_KEY_WORDS"] = {"Rewards","R_D_EXOTUT"},
 				["ADD"] = AddedExocraftNPCMoneyID,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterLINE",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT"},
 				["ADD"] = AddedExocraftNPCMoney,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT",		"List", "GcRewardTableItem"},
 				["ADD"] = AddUpgrade("UI_MECH_LASER_NAME_L", "0", math.floor(ExoClassCChance+ExoClassBChance), ExoClassAChance, ExoClassSChance),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT",		"List", "GcRewardTableItem"},
 				["ADD"] = AddUpgrade("UI_MECH_GUN_NAME_L", "0", math.floor(ExoClassCChance+ExoClassBChance), ExoClassAChance, ExoClassSChance),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT",		"List", "GcRewardTableItem"},
 				["ADD"] = AddUpgrade("UI_MECH_ENGINE_NAME_L", "0", math.floor(ExoClassCChance+ExoClassBChance), ExoClassAChance, ExoClassSChance),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Name","NPC_NEXUSMILES_OPT_B"},
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"KeepOpen",	"True"},			--Allows the player to continually trade items with Ares, like in Reikokuu & Babscoole's "Keep Gifting"
+					{"KeepOpen",	"true"},			--Allows the player to continually trade items with Ares, like in Reikokuu & Babscoole's "Keep Gifting"
+				}
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\UNDERWATERSPHERES.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/CRYSTALS/SEAGLASSCRYSTAL.SCENE.MBIN"},
+				["SECTION_UP"] = 1,
+				["REPLACE_TYPE"] = "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"MaxHeight", SeaGlassMinDepth}
+				}
+			}
+		}
+	},
+	{--Used for 2/3 of vanilla Abandoned Station boxes
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_SMALLB_ABANDONED1/ENTITIES/CRATESMALLBABANDONED1.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["VALUE_MATCH"] 		= "ABAND_LOOTBOX_S",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Id", "ABAND_LOOTBOX_L"}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"RewardOverrideTable", "GcRewardMissionOverride"},
+				["ADD"] = AbandModeRewardOverride ("ABAND_LOOTBOX_X1"),
+				["ADD_OPTION"]  = "ADDafterSECTION",
+			},
+			{
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"UsePersonalPersistentBuffer",	"true"},			--"false"		Speculation: based on some otehr entities where this is set "true", maybe this sets the object to be recorded into a longer list of "already looted" objects in the save file, to make it take longer to "respawn"/"refill"?
+				}
+			}
+		}
+	},
+	{--Used for 1/3 of vanilla Abandoned Station boxes
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_SMALLB_ABANDONED/ENTITIES/CRATESMALLBABANDONED.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"RewardOverrideTable", "GcRewardMissionOverride"},
+				["ADD"] = AbandModeRewardOverride ("ABAND_LOOTBOX_X"),
+				["ADD_OPTION"]  = "ADDafterSECTION",
+			},
+			{
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"UsePersonalPersistentBuffer",	"true"},			--"false"		Speculation: based on some otehr entities where this is set "true", maybe this sets the object to be recorded into a longer list of "already looted" objects in the save file, to make it take longer to "respawn"/"refill"?
+				}
+			}
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/COMMON/ROBOTS/MECH/ENTITIES/RUINMECH.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"GivesReward", "GOLEM_MECH"},
+				}
+			},
+			{
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMax", 0},
+					{"AmountMin", 0},
+				}
+			}
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/ENEMIES/GOLEM/GOLEM/ENTITIES/GOLEMDATA.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"GivesReward", "GOLEM_FLOAT"},
+				}
+			},
+			{
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMax", 0},
+					{"AmountMin", 0},
+				}
+			}
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/BIOMES/RUINS/ENTITIES/RUINSRESOURCE.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"ActivationCost","GcInteractionActivationCost"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"SubstanceId", MemStoneCostSubstance},
+					{"Cost", MemStoneCostAmount},
+				}
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/BIOMES/RUINS/ENTITIES/RUINSSMALLPHYSICS.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["MATH_OPERATION"]         = "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["PRECEDING_KEY_WORDS"] = {"GivesSubstances"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", MinableSubstanceMult*RuinsExtraMiningMult},
+					{"AmountMax", MinableSubstanceMult*RuinsExtraMiningMult},
+				}
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/BIOMES/RUINS/ENTITIES/RUINSMEDIUMPHYSICS.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["MATH_OPERATION"]         = "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["PRECEDING_KEY_WORDS"] = {"GivesSubstances"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", MinableSubstanceMult*RuinsExtraMiningMult},
+					{"AmountMax", MinableSubstanceMult*RuinsExtraMiningMult},
 				}
 			},
 		}
@@ -4253,7 +5197,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	
 }}}}
 
-local ChangesToPirateMissions = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToPirateMissions = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #PirateMissionChanges do
 	local Mission = PirateMissionChanges[i][1][1]
@@ -4277,7 +5221,7 @@ for i = 1, #PirateMissionChanges do
 	end
 end
 
-local ChangesToDialogPuzzle = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+local ChangesToDialogPuzzle = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["MXML_CHANGE_TABLE"]
 if NoNewTechAtCrashsites then
 for i = 1, #CrashsiteTechRewards do
 	local PuzzleName = CrashsiteTechRewards[i]
@@ -4289,7 +5233,7 @@ for i = 1, #CrashsiteTechRewards do
 				["VALUE_MATCH"] 		= "{^PROC_TECH_.+}",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Value", "PROC_TECH_ONLY"}
+					{"Rewards", "PROC_TECH_ONLY"}
 				}
 			}
 end
@@ -4297,18 +5241,16 @@ end
 if ReactorSalvage then
 			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "%?SHIP_SALVAGE_PROD_CHOICE"},
-				["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "%?SHIP_SALVAGE_PROD_CHOICE",		"Options", "GcAlienPuzzleOption"},
 				["ADD"] = SalvageExoticPuzzle,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			}
 			
 			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "%?SHIP_SALVAGE_PROD_CHOICE"},
-				["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "%?SHIP_SALVAGE_PROD_CHOICE",		"Options", "GcAlienPuzzleOption"},
 				["ADD"] = SalvageShuttlePuzzle,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			}
 end
 if ReplaceTECH then
@@ -4318,7 +5260,7 @@ if ReplaceTECH then
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Value", "PROC_TECH_ALL"}
+					{"Rewards", "PROC_TECH_ALL"}
 				}
 			}
 			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
@@ -4327,7 +5269,7 @@ if ReplaceTECH then
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Value", "PROC_TECH_SHIP"}
+					{"Rewards", "PROC_TECH_SHIP"}
 				}
 			}
 			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
@@ -4336,7 +5278,7 @@ if ReplaceTECH then
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Value", "PROC_TECH_SUIT"}
+					{"Rewards", "PROC_TECH_SUIT"}
 				}
 			}
 			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
@@ -4345,19 +5287,26 @@ if ReplaceTECH then
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Value", "PROC_TECH_WEAP"}
+					{"Rewards", "PROC_TECH_WEAP"}
 				}
 			}
 end
+if RevealPurpleSystemsEarly then
+			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "MONO_NUB_GUN",		"Options", "GcAlienPuzzleOption"},
+				["ADD"] = RevealPurpleSystemsOption,
+				["ADD_OPTION"]  = "ADDafterSECTION",
+			}
+end
 
-
-local ChangesToExpeditionMetals = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
+local ChangesToExpeditionMetals = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["MXML_CHANGE_TABLE"]
 
 ChangesToExpeditionMetals[#ChangesToExpeditionMetals+1] =
 			{
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {"DisableMultiplier", "False"},
+				["SPECIAL_KEY_WORDS"] = {"DisableMultiplier", "false"},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4382,29 +5331,28 @@ for i = 1, #ExpeditionMetalChanges do
 			}
 end
 
-local ChangesToRewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local ChangesToRewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
 
 if ReactorSalvage then
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
 				["ADD"] = ExoticSalvageReward,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			}
 			
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
 				["ADD"] = ShuttleSalvageReward,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			}
 end
-
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {"DisableMultiplier", "False"},
+				["SPECIAL_KEY_WORDS"] = {"DisableMultiplier", "false"},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4419,7 +5367,7 @@ for i = 1, #MinableObjects do
 			{
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {"ID", ObjectID,	"DisableMultiplier", "False"},
+				["SPECIAL_KEY_WORDS"] = {"ID", ObjectID,	"DisableMultiplier", "false"},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4441,7 +5389,7 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {"ShipType", "GcSpaceshipClasses.xml"},
+				["SPECIAL_KEY_WORDS"] = {"ShipType", "GcSpaceshipClasses"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4452,7 +5400,7 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 --[[ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {"WeaponType", "GcWeaponClasses.xml"},
+				["SPECIAL_KEY_WORDS"] = {"WeaponType", "GcWeaponClasses"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4463,7 +5411,7 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {"ShipLayout", "GcInventoryLayout.xml"},
+				["SPECIAL_KEY_WORDS"] = {"ShipLayout", "GcInventoryLayout"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Slots", AllTwitchExpRewardsCargo}
@@ -4473,7 +5421,7 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {"WeaponLayout", "GcInventoryLayout.xml"},
+				["SPECIAL_KEY_WORDS"] = {"WeaponLayout", "GcInventoryLayout"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Slots", AllTwitchExpRewardsToolSlots}
@@ -4483,19 +5431,26 @@ end
 
 for i = 1, #ExpShipRewardIds do
 	local ShipRewardId = ExpShipRewardIds[i][1]
-	local Shiptype = ExpShipRewardIds[i][2]
+	local ShipUnitCost = ExpShipRewardIds[i][2]
+	local Shiptype = ExpShipRewardIds[i][3]
 	local Class = ExpShipClass
 	local Slots = 8
 	local Size = "FgtSmall"
-	if Shiptype == "Hauler" then
+	if Shiptype == "Fighter" then
+		 Slots = ExpShipFighterCargoSlots
+		 Size = ExpShipFighterTechSize
+	elseif Shiptype == "Hauler" then
 		 Slots = ExpShipHaulerCargoSlots
-		 Size = ExpShipHaulerSize
+		 Size = ExpShipHaulerTechSize
 	elseif Shiptype == "Explorer" then
-		 Slots = ExpShipCargoSlots
-		 Size = ExpShipSize
-	elseif Shiptype == "Other" then
-		 Slots = ExpShipCargoSlots
-		 Size = ExpShipExplorerSize
+		 Slots = ExpShipExplorerCargoSlots
+		 Size = ExpShipExplorerTechSize
+	elseif Shiptype == "Exotic" then
+		 Slots = ExpShipExoticCargoSlots
+		 Size = ExpShipExoticTechSize
+	elseif Shiptype == "Alien" then
+		 Slots = ExpShipAlienCargoSlots
+		 Size = ExpShipAlienTechSize
 	end
 
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
@@ -4505,33 +5460,73 @@ for i = 1, #ExpShipRewardIds do
 				{
 					{"Slots",	Slots},
 					{"InventoryClass",	Class},
-					{"UseOverrideSizeType",	"True"},
+					{"CostAmount",	ShipUnitCost},
+					{"Currency",	"Units"},
+					{"UseOverrideSizeType",	"true"},
 					{"SizeType",	Size}
 				}
 			}
-
-	for j = 1, #ExpShipCoreTechs do
-		local TechId = ExpShipCoreTechs[j]
-		local Amount = 200
-		if TechId == "HYPERDRIVE" then
-			Amount = 120
-		else
-			Amount = 200
+	
+	if Shiptype == "Alien" then
+		for j = 1, #ExpShipCoreTechsAlien do
+			local TechId = ExpShipCoreTechsAlien[j]
+			local Amount = 200
+			if TechId == "WARP_ALIEN" then
+				Amount = 120
+			elseif TechId == "SHIPGUN_ALIEN" or TechId == "SHIPLAS_ALIEN" then
+				Amount = 100
+			else
+				Amount = 200
+			end
+			
+				ChangesToRewardTable[#ChangesToRewardTable+1] =
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer",	"Id", TechId},
+					["REMOVE"] = "SECTION",
+				}
+				ChangesToRewardTable[#ChangesToRewardTable+1] =
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer",	"Slots", "GcInventoryElement"},
+					["ADD_OPTION"]  = "ADDbeforeSECTION",  
+					["ADD"] = AddTechForShip (TechId, Amount),
+				}
 		end
-		
-			ChangesToRewardTable[#ChangesToRewardTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer.xml",	"Id", TechId},
-				["REMOVE"] = "SECTION",
-			}
-			ChangesToRewardTable[#ChangesToRewardTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer.xml"},
-				["PRECEDING_KEY_WORDS"] = {"GcInventoryElement.xml"},
-				["ADD_OPTION"]  = "ADDbeforeSECTION",  
-				["ADD"] = AddTechForShip (TechId, Amount),
-			}
+	else
+		for j = 1, #ExpShipCoreTechs do
+			local TechId = ExpShipCoreTechs[j]
+			local Amount = 200
+			if TechId == "HYPERDRIVE" then
+				Amount = 120
+			else
+				Amount = 200
+			end
+			
+				ChangesToRewardTable[#ChangesToRewardTable+1] =
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer",	"Id", TechId},
+					["REMOVE"] = "SECTION",
+				}
+				ChangesToRewardTable[#ChangesToRewardTable+1] =
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer",	"Slots", "GcInventoryElement"},
+					["ADD_OPTION"]  = "ADDbeforeSECTION",  
+					["ADD"] = AddTechForShip (TechId, Amount),
+				}
+		end
 	end
+end
+
+if RewardShipHyperdriveEmpty then
+
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ShipInventory", "GcInventoryContainer",		"Id", "HYPERDRIVE"},
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Amount",	"0"}		--"120"
+				}
+			}
 end
 
 for i = 1, #ExpStaffRewardIds do
@@ -4542,7 +5537,7 @@ for i = 1, #ExpStaffRewardIds do
 				["SPECIAL_KEY_WORDS"] = {"Id", StaffRewardId},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Slots",	ExpShipCargoSlots},
+					{"Slots",	ExpShipFighterCargoSlots},
 					{"InventoryClass",	ExpShipClass},
 				}
 			}
@@ -4552,46 +5547,45 @@ if TeachCreaturePelletsEarly then
 
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "TUT_INGREDS"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id", "TUT_INGREDS",		"List", "GcRewardTableItem"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
 				["ADD"] = TeachPellets
 			}
 end
 
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
 				["ADD"] = PIRATLTEASYRewards,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			}
 			
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
 				["ADD"] = PIRATLTHARDRewards,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			}
 			
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
 				["ADD"] = ESCORTLOOTRewards,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			}
 			
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
 				["ADD"] = AddWholeNewCurrencyReward ("TECHFRAG_XXX", "GiveAll", "100", "Nanites", FactoryMin, FactoryMax),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			}
 			
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
 				["ADD"] = NewTravReward,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			}
 
 for i = 1, #GuildGiftChanges do
@@ -4608,7 +5602,7 @@ for i = 1, #GuildGiftChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", GiftPool, "ID", OldItemID},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance", Chance},
@@ -4633,7 +5627,7 @@ for i = 1, #DerelictSuppliesChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", SupplyId, "ID", OldItemID},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance", Chance},
@@ -4654,7 +5648,7 @@ for i = 1, #LittleWreckRewards do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "DE_LITTLEWRECK", "ID", OldItemID},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance", Chance},
@@ -4669,10 +5663,9 @@ for i = 1, #AddedSuspiciousPacketTechs do
 		
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"ID", "R_SCRAP_TECH"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["ADD"] = ProductReward (TechID, "1", "1", "100"),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["SPECIAL_KEY_WORDS"] = {"ID", "R_SCRAP_TECH",		"List", "GcRewardTableItem"},
+				["ADD"] = ProductReward (TechID, "1", "1", "100.000000"),
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			}
 end
 for i = 1, #AddedSuspiciousPacketWeaps do
@@ -4680,11 +5673,35 @@ for i = 1, #AddedSuspiciousPacketWeaps do
 		
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"ID", "R_SCRAP_WEAP"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["ADD"] = ProductReward (TechID, "1", "1", "100"),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["SPECIAL_KEY_WORDS"] = {"ID", "R_SCRAP_WEAP",		"List", "GcRewardTableItem"},
+				["ADD"] = ProductReward (TechID, "1", "1", "100.000000"),
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			}
+end
+for i = 1, #AbandCrateChanges do
+	local RewardID = AbandCrateChanges[i][1][1]
+	local Items = AbandCrateChanges[i][2]
+	
+	for j=1, #Items do
+		OldItemID = Items[j][1]
+		NewItemID = Items[j][2]
+		AmountMin = Items[j][3]
+		AmountMax = Items[j][4]
+		Chance = Items[j][5]
+	
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", RewardID, "ID", OldItemID},
+				["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance", Chance},
+					{"ID", NewItemID},
+					{"AmountMin", AmountMin},
+					{"AmountMax", AmountMax}
+				}
+			}
+	end
 end
 for i = 1, #SusPacketChanges do
 	local PacketID = SusPacketChanges[i][1][1]
@@ -4700,7 +5717,7 @@ for i = 1, #SusPacketChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", PacketID, "ID", OldItemID},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance", Chance},
@@ -4725,7 +5742,7 @@ for i = 1, #WeirdCreatureLootChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", CreatureID, "ID", OldItemID},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance", Chance},
@@ -4745,15 +5762,14 @@ if ReplaceVanillaFishNanites then
 		
 				ChangesToRewardTable[#ChangesToRewardTable+1] =
 				{
-					["SPECIAL_KEY_WORDS"] = {"Id", FishQuality},
-					["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-					["ADD"] = CurrencyReward ("Nanites", MinNanites, MaxNanites, "100"),
-					["REPLACE_TYPE"] = "ADDAFTERSECTION",
+					["SPECIAL_KEY_WORDS"] = {"Id", FishQuality,		"List", "GcRewardTableItem"},
+					["ADD"] = CurrencyReward ("Nanites", MinNanites, MaxNanites, "100.000000"),
+					["ADD_OPTION"]  = "ADDafterSECTION",
 				}
 				
 				ChangesToRewardTable[#ChangesToRewardTable+1] =
 				{
-					["SPECIAL_KEY_WORDS"] = {"Id", FishQuality,		"Reward", "GcRewardFishRelease.xml"},
+					["SPECIAL_KEY_WORDS"] = {"Id", FishQuality,		"Reward", "GcRewardFishRelease"},
 					["REMOVE"] = "SECTION",
 				}
 	end
@@ -4769,22 +5785,20 @@ for i = 1, #ShipLootChanges do
 			--[[ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				--["REPLACE_TYPE"] 		= "",
-				["SPECIAL_KEY_WORDS"] = {"Id", ShipId},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id", ShipId,		"List", "GcRewardTableItem"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
 				["ADD"] = PirateNanites(PirateNanitesMin, PirateNanitesMax)
 			}
 	
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", ShipId},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id", ShipId,		"List", "GcRewardTableItem"},
 				["REMOVE"] = "SECTION"
 			}
 	
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", ShipId, "Reward", "GcRewardShield.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id", ShipId, "Reward", "GcRewardShield"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin", Shield},
@@ -4802,7 +5816,7 @@ for i = 1, #ShipLootChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", ShipId, "ID", OldItemID},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance", Chance},
@@ -4826,7 +5840,7 @@ for i = 1, #ShipCurrencyChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",ShipType,	"Currency", Currency},
-				["SECTION_UP"] = 2,
+				["SECTION_UP"] = 3,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	Chance},
@@ -4842,10 +5856,8 @@ for i = 1, #PlaqueChanges do
 	
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id",PlaqueType},
-				--["REPLACE_TYPE"] 		= "",
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id",PlaqueType,		"List", "GcRewardTableItem"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
 				["ADD"] = AddFourWords(AlienType)
 			}
 end
@@ -4882,15 +5894,14 @@ for i = 1, #BreakPlantsChangesProduct do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "R_BREAK_BIO",	"ID", OldReward},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
 			}
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "R_BREAK_BIO"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-				["ADD"] = ProductReward (NewReward, math.floor(50*AmountMult), math.floor(120*AmountMult), "100")
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_BREAK_BIO",		"List", "GcRewardTableItem"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward (NewReward, math.floor(50*AmountMult), math.floor(120*AmountMult), "100.000000")
 			}
 end
 for i = 1, #ResourceDepotChanges do
@@ -4908,7 +5919,7 @@ for i = 1, #ResourceDepotChanges do
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", DepotId, "ID", OldItemID},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance", Chance},
@@ -4944,8 +5955,7 @@ for i = 1, #CropYieldReduction do
 	
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id",PlantID},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id",PlantID,		"List", "GcRewardTableItem"},
 				["REPLACE_TYPE"] 		= "ALL",
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -4958,6 +5968,43 @@ for i = 1, #CropYieldReduction do
 				}
 			}
 end
+
+for i = 1, #PrimarySubstanceMults do
+	local ObjectID = PrimarySubstanceMults[i][1]
+	local SubID = PrimarySubstanceMults[i][2]
+	local SubMult = PrimarySubstanceMults[i][3]
+	
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id",ObjectID,		"ID", SubID},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	SubMult},
+					{"AmountMax",	SubMult}
+				}
+			}
+end
+
+for i = 1, #SecondarySubstanceMults do
+	local GroupID = SecondarySubstanceMults[i][1]
+	local SubID = SecondarySubstanceMults[i][2]
+	local AmountFactor = SecondarySubstanceMults[i][3]
+	
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id",GroupID,		"ID", SubID},
+				--["SECTION_UP"] = 2,
+				--["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountFactor",	AmountFactor}
+				}
+			}
+end
+
 for i = 1, #CrashedFreighterLootChances do
 	local CrashType = CrashedFreighterLootChances[i][1][1]
 	local Items = CrashedFreighterLootChances[i][2]
@@ -4969,7 +6016,7 @@ for i = 1, #CrashedFreighterLootChances do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",CrashType,	"ID", ItemID},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	Chance}
@@ -4992,7 +6039,7 @@ for i = 1, #CrashedFreighterCurrencyChances do
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",CrashType,	"Currency", OldCurrency},
 				["REPLACE_TYPE"] 		= "ALL",
-				["SECTION_UP"] = 2,
+				["SECTION_UP"] = 3,
 				["VALUE_MATCH"] 	= OldChance,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -5037,7 +6084,7 @@ for i = 1, #DreadnoughtBattleRewardChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"Currency", Currency},
-				["SECTION_UP"] = 2,
+				["SECTION_UP"] = 3,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	Chance},
@@ -5058,16 +6105,16 @@ for i = 1, #NewBossFreighterPartsLoot do
 		if ItemType == "Product" or ItemType == "Substance" then
 		ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
-				["ADD_OPTION"]  = "ADDbeforeSECTION", 
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
 				["ADD"] = AddWholeNewItemReward (RewardId, "GiveAll", Chance, ItemType, ItemId, AmountMin, AmountMax),
+				["ADD_OPTION"]  = "ADDafterSECTION", 
 			}
 		elseif ItemType == "Units" or ItemType == "Nanites" then
 		ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
-				["ADD_OPTION"]  = "ADDbeforeSECTION", 
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
 				["ADD"] = AddWholeNewCurrencyReward (RewardId, "GiveAll", Chance, ItemType, AmountMin, AmountMax),
+				["ADD_OPTION"]  = "ADDafterSECTION", 
 			}
 		end
 end
@@ -5085,8 +6132,8 @@ for i = 1, #FreighterLootChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"ID", OldItemID},
-				["SECTION_UP"] = 1,
-				["INTEGER_TO_FLOAT"] = "FORCE",
+				["SECTION_UP"] = 2,
+				--["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	Chance},
@@ -5108,7 +6155,7 @@ for i = 1, #DerelictNaniteChanges do
 		{
 			["SPECIAL_KEY_WORDS"] = {"Id", RewardID,	"PercentageChance", OldWeight,		"Currency", "Nanites"},
 			["REPLACE_TYPE"] = "ALL",
-			["SECTION_UP"] = 2,
+			["SECTION_UP"] = 3,
 			["VALUE_CHANGE_TABLE"] 	=
 			{
 				{"PercentageChance",	NewWeight},
@@ -5131,8 +6178,8 @@ for i = 1, #FreighterTechLootChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"ID", OldItemID},
-				["SECTION_UP"] = 1,
-				["INTEGER_TO_FLOAT"] = "FORCE",
+				["SECTION_UP"] = 2,
+				--["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	Chance},
@@ -5154,8 +6201,7 @@ if UsePTSdFreiUpgradeClassChances then
 		
 		ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "R_FREI_TECH"},
-				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_FREI_TECH",		"List", "GcRewardTableItem"},
 				["ADD_OPTION"]  = "ADDbeforeSECTION",
 				["ADD"] = AddUpgrade(Group, Normal, Rare, Epic, Legendary),
 			}
@@ -5168,7 +6214,7 @@ if UsePTSdFreiUpgradeClassChances then
 		ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "R_FREI_TECH",	"ProceduralProductCategory", Category},
-				["SECTION_UP"] = 2,
+				["SECTION_UP"] = 3,
 				["REMOVE"] = "SECTION",
 			}
 	end
@@ -5187,8 +6233,8 @@ for i = 1, #SpaceStationMissionLootChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"ID", OldItemID},
-				["SECTION_UP"] = 1,
-				["INTEGER_TO_FLOAT"] = "FORCE",
+				["SECTION_UP"] = 2,
+				--["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	Chance},
@@ -5212,7 +6258,7 @@ for i = 1, #SpaceStationMissionCurrencyChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"Currency", Currency},
-				["SECTION_UP"] = 2,
+				["SECTION_UP"] = 3,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	Chance},
@@ -5236,7 +6282,7 @@ for i = 1, #NexusMissionCurrencyChanges do
 		
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", RewardType,	"PercentageChance", OldChance},
+				["SPECIAL_KEY_WORDS"] = {"Id", RewardType,	"PercentageChance", OldChance.."00000"},
 				["VALUE_MATCH"] = {"Units","Nanites",},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -5246,7 +6292,7 @@ for i = 1, #NexusMissionCurrencyChanges do
 			
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"PercentageChance", OldChance},
+				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"PercentageChance", OldChance.."00000"},
 				--["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -5273,8 +6319,8 @@ for i = 1, #StationLootChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"ID", OldItemID},
-				["SECTION_UP"] = 1,
-				["INTEGER_TO_FLOAT"] = "FORCE",
+				["SECTION_UP"] = 2,
+				--["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	Chance},
@@ -5299,7 +6345,7 @@ for i = 1, #StationLootCurrencyChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"Currency", Currency},
-				["SECTION_UP"] = 2,
+				["SECTION_UP"] = 3,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	Chance},
@@ -5316,7 +6362,7 @@ for i = 1, #MemFragOutlierTechs do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_TECHBOX",	"ID", TechID},
-				["SECTION_UP"] = 1,
+				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	MemFragOutlierTechChance},
@@ -5328,9 +6374,25 @@ for i = 1, #RemoveContainerRewards do
 		
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "NPC_BUILD_GOTO",	"Value",	ContainerID},
-				["REMOVE"] = "SECTION"
+				["SPECIAL_KEY_WORDS"] = {"Id", "NPC_BUILD_GOTO",	"ProductIds",	ContainerID},
+				["REMOVE"] = "LINE"
 			}
+end
+for i = 1, #AddTechToPool do
+	local TechPool = AddTechToPool[i][1][1]
+	local Techs = AddTechToPool[i][2]
+		
+		for j=1, #Techs do
+			AddedTechID = Techs[j][1]
+			TechlistSpotID = Techs[j][2]
+			
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", TechPool,	"TechList",	TechlistSpotID},
+				["ADD_OPTION"]  = "ADDafterLINE", 
+				["ADD"] = AddTechListItem (AddedTechID)
+			}
+		end
 end
 for i = 1, #RemoveTechFromPool do
 	local TechPool = RemoveTechFromPool[i][1][1]
@@ -5341,31 +6403,13 @@ for i = 1, #RemoveTechFromPool do
 			
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", TechPool,	"Value",	TechID},
-				["REMOVE"] = "SECTION"
-			}
-		end
-end
-for i = 1, #AddTechToPool do
-	local TechPool = AddTechToPool[i][1][1]
-	local Techs = AddTechToPool[i][2]
-		
-		for j=1, #Techs do
-			AddedTechID = Techs[j][1]
-			TechlistSpotID = Techs[j][2]
-			BeforeOrAfter = Techs[j][3]
-			
-			ChangesToRewardTable[#ChangesToRewardTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id", TechPool,	"Value",	TechlistSpotID},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["ADD_OPTION"]  = BeforeOrAfter, 
-				["ADD"] = AddTechListItem (AddedTechID)
+				["SPECIAL_KEY_WORDS"] = {"Id", TechPool,	"TechList",	TechID},
+				["REMOVE"] = "LINE"
 			}
 		end
 end
 
-local ChangesToRecurringMissions = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][9]["EXML_CHANGE_TABLE"]
+local ChangesToRecurringMissions = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][9]["MXML_CHANGE_TABLE"]
 
 for i = 1, #AresTradeChanges do
 	local ItemAmount = AresTradeChanges[i][1]
@@ -5385,7 +6429,7 @@ for i = 1, #AresTradeChanges do
 			
 			ChangesToRecurringMissions[#ChangesToRecurringMissions+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", AresCostId (i),		"Cost", "GcCostProduct.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id", AresCostId (i),		"Cost", "GcCostProduct"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Id", ItemID},

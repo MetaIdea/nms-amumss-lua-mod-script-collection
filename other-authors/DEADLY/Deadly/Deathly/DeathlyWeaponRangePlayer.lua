@@ -1,17 +1,14 @@
-PLAYER_WEAPON_RANGE_MULTI = 2
+PLAYER_WEAPON_RANGE_MULTI = 2.0
 
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]    = "_DeathlyPlayerWeaponRange.pak",
     ["MOD_AUTHOR"]      = "gh0stwizard",
     ["MOD_DESCRIPTION"] = "Adjusts player starship weapon range.",
-    ["NMS_VERSION"]     = "4.46",
+    ["NMS_VERSION"]     = "5.63",
     ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                --
-                -- METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN
-                --
-                {
+                { -- METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN
                     ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         -- boost player's weapon range
@@ -33,10 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                     }
                 },
-                --
-                -- GCPLAYERGLOBALS.GLOBAL.MBIN
-                --
-                {
+                { -- GCPLAYERGLOBALS.GLOBAL.MBIN
                     ["MBIN_FILE_SOURCE"]  = "GCPLAYERGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         -- boost player's laser range
