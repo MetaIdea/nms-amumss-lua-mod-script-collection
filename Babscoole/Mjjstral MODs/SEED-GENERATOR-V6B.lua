@@ -1,4 +1,4 @@
-DEFAULT_SEED_NUMBER = 17000
+DEFAULT_SEED_NUMBER = 2000
 
 SELECTED_SEED_TYPES =
 {
@@ -31,147 +31,147 @@ STATS =
 {
     ["Fighter"] =
     {
-        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
-        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0.000000"},
+        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0.000000"},
+        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0.000000"},
 
     },
     ["Dropship"] =
     {
-        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
-        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0.000000"},
+        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0.000000"},
+        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0.000000"},
     },
     ["Scientific"] =
     {
-        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
-        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0.000000"},
+        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0.000000"},
+        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0.000000"},
     },
     ["Shuttle"] =
     {
-        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
-        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0.000000"},
+        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0.000000"},
+        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0.000000"},
     },
     ["Royal"] =
     {
-        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
-        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0.000000"},
+        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0.000000"},
+        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0.000000"},
     },
     ["Alien"] =
     {
-        {["ID"] = "SHIPJUMP_ALIEN", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPGUN_ALIEN", ["Amount"] ="100", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "SHIELD_ALIEN", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPLAS_ALIEN", ["Amount"] ="100", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "LAUNCHER_ALIEN", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "WARP_ALIEN", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP_ALIEN", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPGUN_ALIEN", ["Amount"] ="100", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "SHIELD_ALIEN", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPLAS_ALIEN", ["Amount"] ="100", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "LAUNCHER_ALIEN", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "WARP_ALIEN", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0.000000"},
     },
     ["Sail"] =
     {
-        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
-        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
-        {["ID"] = "SOLAR_SAIL", ["Amount"] ="-1", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0.000000"},
+        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0.000000"},
+        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0.000000"},
+        {["ID"] = "SOLAR_SAIL", ["Amount"] ="-1", ["MaxAmount"]="100", ["Damage"]="0.000000"},
     },
     ["Robot"] =
     {
-        {["ID"] = "SHIPJUMP_ROBO", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "SHIPGUN_ROBO", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
-        {["ID"] = "SHIPSHIELD_ROBO", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "LAUNCHER_ROBO", ["Amount"] ="300", ["MaxAmount"]="300", ["Damage"]="0"},
-        {["ID"] = "HYPERDRIVE_ROBO", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
-        {["ID"] = "LIFESUP_ROBO", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP_ROBO", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPGUN_ROBO", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0.000000"},
+        {["ID"] = "SHIPSHIELD_ROBO", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "LAUNCHER_ROBO", ["Amount"] ="300", ["MaxAmount"]="300", ["Damage"]="0.000000"},
+        {["ID"] = "HYPERDRIVE_ROBO", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0.000000"},
+        {["ID"] = "LIFESUP_ROBO", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0.000000"},
     },
     ["MULTITOOL"] =
     {
-        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
     },
     ["ROYALMULTITOOL"] =
     {
-        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
     },
     ["ROBOTMULTITOOL"] =
     {
-        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
     },
     ["ROBOTMULTITOOLB"] =
     {
-        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
     },
     ["ATLASMULTITOOL"] =
     {
-        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "ATLAS_LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "ATLAS_LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
     },
     ["STAFFMULTITOOL"] =
     {
-        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "UT_BUI_SCAN", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "UT_BUI_SCAN2", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "UT_BUI_SCAN", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "UT_BUI_SCAN2", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
     },
     ["STAFFMTATLAS"] =
     {
-        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "UT_BUI_SCAN", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "UT_BUI_SCAN2", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "UT_BUI_SCAN", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        {["ID"] = "UT_BUI_SCAN2", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
     },
     -- ["RODMULTITOOL"] =
     -- {
-        -- {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        -- {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        -- {["ID"] = "FISHLASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        -- -- {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        -- -- {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        -- {["ID"] = "UT_BUI_SCAN", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        -- {["ID"] = "UT_BUI_SCAN2", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        -- {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        -- {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        -- {["ID"] = "FISHLASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0.000000"},
+        -- -- {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        -- -- {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        -- {["ID"] = "UT_BUI_SCAN", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
+        -- {["ID"] = "UT_BUI_SCAN2", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0.000000"},
     -- },
 }
 
@@ -185,9 +185,6 @@ function GetSeed()
     local HEX = {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"}
     if not RANDOMSEED_INIT then
         math.randomseed(82398*os.time())
-        -- math.random()
-        -- math.random()
-        -- math.random()
         RANDOMSEED_INIT = true
     end
     for _=1,16,1 do
@@ -196,10 +193,17 @@ function GetSeed()
     return SEED
 end
 
+-- function HexToDec(number)
+    -- if type(number) == "number" then return number
+    -- elseif string.find(tostring(number),"0x") then return tonumber(number)
+    -- else return tonumber(number,16)
+    -- end
+-- end
+
 function HexToDec(number)
     if type(number) == "number" then return number
-    elseif string.find(tostring(number),"0x") then return tonumber(number)
-    else return tonumber(number,16)
+    elseif string.find(tostring(number),"0x") then return math.abs(tonumber(number))
+    else return math.abs(tonumber(number,16))
     end
 end
 
@@ -221,20 +225,20 @@ function AddInvetoryElements(TYPE)
         local Damage = statsList[i]["Damage"]
         statsString =
 [[
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
+                    <Property name="Slots" value="GcInventoryElement">
+                      <Property name="Type" value="GcInventoryType">
+                        <Property name="InventoryType" value="Technology" />
+                      </Property>
+                      <Property name="Id" value="]]..ID..[[" />
+                      <Property name="Amount" value="]]..Amount..[[" />
+                      <Property name="MaxAmount" value="]]..MaxAmount..[[" />
+                      <Property name="DamageFactor" value="]]..Damage..[[" />
+                      <Property name="FullyInstalled" value="true" />
+                      <Property name="Index" value="GcInventoryIndex">
+                        <Property name="X" value="-1" />
+                        <Property name="Y" value="-1" />
+                      </Property>
                     </Property>
-                    <Property name="Id" value="]]..ID..[[" />
-                    <Property name="Amount" value="]]..Amount..[[" />
-                    <Property name="MaxAmount" value="]]..MaxAmount..[[" />
-                    <Property name="DamageFactor" value="]]..Damage..[[" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
 ]]
         table.insert(statsStringTable, statsString)
     end
@@ -245,19 +249,19 @@ function AddBaseStats(TYPE)
     if TYPE == "Alien" then
         return
 [[
-                  <Property value="GcInventoryBaseStatEntry.xml">
+                  <Property value="GcInventoryBaseStatEntry">
                     <Property name="BaseStatID" value="SHIP_DAMAGE" />
                     <Property name="Value" value="1" />
                   </Property>
-                  <Property value="GcInventoryBaseStatEntry.xml">
+                  <Property value="GcInventoryBaseStatEntry">
                     <Property name="BaseStatID" value="SHIP_SHIELD" />
                     <Property name="Value" value="1" />
                   </Property>
-                  <Property value="GcInventoryBaseStatEntry.xml">
+                  <Property value="GcInventoryBaseStatEntry">
                     <Property name="BaseStatID" value="SHIP_HYPERDRIVE" />
                     <Property name="Value" value="1" />
                   </Property>
-                  <Property value="GcInventoryBaseStatEntry.xml">
+                  <Property value="GcInventoryBaseStatEntry">
                     <Property name="BaseStatID" value="ALIEN_SHIP" />
                     <Property name="Value" value="1" />
                   </Property>
@@ -266,19 +270,19 @@ function AddBaseStats(TYPE)
     elseif TYPE == "Robot" then
         return
 [[
-                  <Property value="GcInventoryBaseStatEntry.xml">
+                  <Property value="GcInventoryBaseStatEntry">
                     <Property name="BaseStatID" value="SHIP_DAMAGE" />
                     <Property name="Value" value="1" />
                   </Property>
-                  <Property value="GcInventoryBaseStatEntry.xml">
+                  <Property value="GcInventoryBaseStatEntry">
                     <Property name="BaseStatID" value="SHIP_SHIELD" />
                     <Property name="Value" value="1" />
                   </Property>
-                  <Property value="GcInventoryBaseStatEntry.xml">
+                  <Property value="GcInventoryBaseStatEntry">
                     <Property name="BaseStatID" value="SHIP_HYPERDRIVE" />
                     <Property name="Value" value="1" />
                   </Property>
-                  <Property value="GcInventoryBaseStatEntry.xml">
+                  <Property value="GcInventoryBaseStatEntry">
                     <Property name="BaseStatID" value="ROBOT_SHIP" />
                     <Property name="Value" value="1" />
                   </Property>
@@ -286,15 +290,15 @@ function AddBaseStats(TYPE)
     end
         return
 [[
-                  <Property value="GcInventoryBaseStatEntry.xml">
+                  <Property value="GcInventoryBaseStatEntry">
                     <Property name="BaseStatID" value="SHIP_DAMAGE" />
                     <Property name="Value" value="1" />
                   </Property>
-                  <Property value="GcInventoryBaseStatEntry.xml">
+                  <Property value="GcInventoryBaseStatEntry">
                     <Property name="BaseStatID" value="SHIP_SHIELD" />
                     <Property name="Value" value="1" />
                   </Property>
-                  <Property value="GcInventoryBaseStatEntry.xml">
+                  <Property value="GcInventoryBaseStatEntry">
                     <Property name="BaseStatID" value="SHIP_HYPERDRIVE" />
                     <Property name="Value" value="1" />
                   </Property>
@@ -304,48 +308,44 @@ end
 function CreateCustomMultitoolRewardSubEntry(DEC_SEED, HEX_SEED, TYPE)
 local GENERIC_REWARD_ENTRY =
 [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificWeapon.xml">
-              <Property name="WeaponInventory" value="GcInventoryContainer.xml">
-                <Property name="Slots">
+            <Property name="Reward" value="GcRewardSpecificWeapon">
+              <Property name="GcRewardSpecificWeapon">
+                <Property name="WeaponInventory" value="GcInventoryContainer">
+                  <Property name="Slots">
 ]]..AddInvetoryElements(TYPE)..[[
+                  </Property>
+                  <Property name="ValidSlotIndices" />
+                  <Property name="Class" value="GcInventoryClass">
+                    <Property name="InventoryClass" value="S" />
+                  </Property>
+                  <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup">
+                    <Property name="InventoryStackSizeGroup" value="Default" />
+                  </Property>
+                  <Property name="BaseStatValues" />
+                  <Property name="SpecialSlots" />
+                  <Property name="Width" value="0" />
+                  <Property name="Height" value="0" />
+                  <Property name="IsCool" value="false" />
+                  <Property name="Name" value="" />
+                  <Property name="Version" value="0" />
                 </Property>
-                <Property name="ValidSlotIndices" />
-                <Property name="Class" value="GcInventoryClass.xml">
-                  <Property name="InventoryClass" value="S" />
-                </Property>
-                <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
-                  <Property name="InventoryStackSizeGroup" value="Default" />
-                </Property>
-                <Property name="BaseStatValues" />
-                <Property name="SpecialSlots" />
-                <Property name="Width" value="0" />
-                <Property name="Height" value="0" />
-                <Property name="IsCool" value="False" />
-                <Property name="Name" value="" />
-                <Property name="Version" value="0" />
-              </Property>
-              <Property name="WeaponLayout" value="GcInventoryLayout.xml">
-                <Property name="Slots" value="24" />
-                <Property name="Seed" value="GcSeed.xml">
-                  <Property name="Seed" value="1" />
-                  <Property name="UseSeedValue" value="True" />
-                </Property>
-                <Property name="Level" value="1" />
-              </Property>
-              <Property name="WeaponResource" value="GcExactResource.xml">
-                <Property name="Filename" value="]] .. SEED_TYPE_PATH[TYPE] .. [[" />
-                <Property name="GenerationSeed" value="GcSeed.xml">
+                <Property name="WeaponLayout" value="GcInventoryLayout">
+                  <Property name="Slots" value="24" />
                   <Property name="Seed" value="]] .. DEC_SEED .. [[" />
-                  <Property name="UseSeedValue" value="True" />
+                  <Property name="Level" value="1" />
                 </Property>
+                <Property name="WeaponResource" value="GcExactResource">
+                  <Property name="Filename" value="]] .. SEED_TYPE_PATH[TYPE] .. [[" />
+                  <Property name="GenerationSeed" value="]] .. DEC_SEED .. [[" />
+                </Property>
+                <Property name="NameOverride" value="]] .. HEX_SEED .. [[" />
+                <Property name="IsGift" value="true" />
+                <Property name="IsRewardWeapon" value="true" />
+                <Property name="FormatAsSeasonal" value="false" />
               </Property>
-              <Property name="NameOverride" value="]] .. HEX_SEED .. [[" />
-              <Property name="IsGift" value="True" />
-              <Property name="IsRewardWeapon" value="True" />
-              <Property name="FormatAsSeasonal" value="False" />
             </Property>
           </Property>
 ]]
@@ -355,75 +355,74 @@ end
 function CreateCustomShipRewardSubEntry(DEC_SEED, HEX_SEED, TYPE)
 local GENERIC_REWARD_SUB_ENTRY =
 [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificShip.xml">
-              <Property name="ShipResource" value="GcResourceElement.xml">
-                <Property name="Filename" value="]] .. SEED_TYPE_PATH[TYPE] .. [[" />
-                <Property name="ResHandle" value="GcResource.xml">
-                  <Property name="ResourceID" value="0" />
-                </Property>
-                <Property name="Seed" value="GcSeed.xml">
+            <Property name="Reward" value="GcRewardSpecificShip">
+              <Property name="GcRewardSpecificShip">
+                <Property name="ShipResource" value="GcResourceElement">
+                  <Property name="Filename" value="]] .. SEED_TYPE_PATH[TYPE] .. [[" />
+                  <Property name="ResHandle" value="GcResource">
+                    <Property name="ResourceID" value="0" />
+                  </Property>
                   <Property name="Seed" value="]] .. DEC_SEED .. [[" />
-                  <Property name="UseSeedValue" value="True" />
+                  <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
+                    <Property name="Samplers" />
+                  </Property>
+                  <Property name="AltId" value="" />
                 </Property>
-                <Property name="AltId" value="" />
-                <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-                  <Property name="Samplers" />
+                <Property name="Customisation" value="GcCharacterCustomisationData">
+                  <Property name="DescriptorGroups" />
+                  <Property name="PaletteID" value="" />
+                  <Property name="Colours" />
+                  <Property name="TextureOptions" />
+                  <Property name="BoneScales" />
+                  <Property name="Scale" value="1.000000" />
                 </Property>
-              </Property>
-              <Property name="Customisation" value="GcCharacterCustomisationData.xml">
-                <Property name="DescriptorGroups" />
-                <Property name="PaletteID" value="" />
-                <Property name="Colours" />
-                <Property name="TextureOptions" />
-                <Property name="BoneScales" />
-                <Property name="Scale" value="1" />
-              </Property>
-              <Property name="ShipLayout" value="GcInventoryLayout.xml">
-                <Property name="Slots" value="48" />
-                <Property name="Seed" value="GcSeed.xml">
-                  <Property name="Seed" value="1" />
-                  <Property name="UseSeedValue" value="True" />
+                <Property name="ShipLayout" value="GcInventoryLayout">
+                  <Property name="Slots" value="48" />
+                  <Property name="Seed" value="]] .. DEC_SEED .. [[" />
+                  <Property name="Level" value="1" />
                 </Property>
-                <Property name="Level" value="1" />
-              </Property>
-              <Property name="ShipInventory" value="GcInventoryContainer.xml">
-                <Property name="Slots">
+                <Property name="ShipInventory" value="GcInventoryContainer">
+                  <Property name="Slots">
 ]]..AddInvetoryElements(TYPE)..[[
-                </Property>
-                <Property name="ValidSlotIndices" />
-                <Property name="Class" value="GcInventoryClass.xml">
-                  <Property name="InventoryClass" value="S" />
-                </Property>
-                <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
-                  <Property name="InventoryStackSizeGroup" value="Default" />
-                </Property>
-                <Property name="BaseStatValues">
+                  </Property>
+                  <Property name="ValidSlotIndices" />
+                  <Property name="Class" value="GcInventoryClass">
+                    <Property name="InventoryClass" value="S" />
+                  </Property>
+                  <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup">
+                    <Property name="InventoryStackSizeGroup" value="Default" />
+                  </Property>
+                  <Property name="BaseStatValues">
 ]]..AddBaseStats(TYPE)..[[
+                  </Property>
+                  <Property name="SpecialSlots" />
+                  <Property name="Width" value="0" />
+                  <Property name="Height" value="0" />
+                  <Property name="IsCool" value="false" />
+                  <Property name="Name" value="]] .. HEX_SEED .. [[" />
+                  <Property name="Version" value="0" />
                 </Property>
-                <Property name="SpecialSlots" />
-                <Property name="Width" value="0" />
-                <Property name="Height" value="0" />
-                <Property name="IsCool" value="False" />
-                <Property name="Name" value="]] .. HEX_SEED .. [[" />
-                <Property name="Version" value="0" />
-              </Property>
-              <Property name="CostAmount" value="0" />
-              <Property name="CostCurrency" value="GcCurrency.xml">
-                <Property name="Currency" value="Units" />
-              </Property>
-              <Property name="ShipType" value="GcSpaceshipClasses.xml">
-                <Property name="ShipClass" value="]] .. TYPE .. [[" />
-              </Property>
-              <Property name="UseOverrideSizeType" value="False" />
-              <Property name="NameOverride" value="" />
-              <Property name="IsGift" value="True" />
-              <Property name="IsRewardShip" value="True" />
-              <Property name="FormatAsSeasonal" value="False" />
-              <Property name="ModelViewOverride" value="GcModelViews.xml">
-                <Property name="ModelViews" value="None" />
+                <Property name="CostAmount" value="0" />
+                <Property name="CostCurrency" value="GcCurrency">
+                  <Property name="Currency" value="Units" />
+                </Property>
+                <Property name="ShipType" value="GcSpaceshipClasses">
+                  <Property name="ShipClass" value="]] .. TYPE .. [[" />
+                </Property>
+                <Property name="UseOverrideSizeType" value="false" />
+                <Property name="OverrideSizeType" value="GcInventoryLayoutSizeType">
+                  <Property name="SizeType" value="FgtLarge" />
+                </Property>
+                <Property name="NameOverride" value="" />
+                <Property name="IsGift" value="true" />
+                <Property name="IsRewardShip" value="true" />
+                <Property name="FormatAsSeasonal" value="false" />
+                <Property name="ModelViewOverride" value="GcModelViews">
+                  <Property name="ModelViews" value="None" />
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -434,12 +433,12 @@ end
 function CreateRewardMainEntry(REWARD_ID, SUB_ENTRY)
 local GENERIC_REWARD_MAIN_ENTRY =
 [[
-    <Property value="GcGenericRewardTableEntry.xml">
+    <Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="]] .. REWARD_ID .. [[" />
-      <Property name="List" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList">
         <Property name="RewardChoice" value="SelectAlways" />
-        <Property name="OverrideZeroSeed" value="True" />
-        <Property name="UseInventoryChoiceOverride" value="True" />
+        <Property name="OverrideZeroSeed" value="true" />
+        <Property name="UseInventoryChoiceOverride" value="true" />
         <Property name="IncrementStat" value="" />
         <Property name="List">
 ]] .. SUB_ENTRY .. [[
@@ -453,11 +452,11 @@ end
 function CreateAnimEntry(ANIM_ID)
 ANIM_TEMPLATE =
 [[
-          <Property value="TkAnimationData.xml">
+          <Property name="Anims" value="TkAnimationData">
             <Property name="Anim" value="]] .. ANIM_ID .. [[" />
             <Property name="Filename" value="]] .. GENERIC_ANIMATION_FILE .. [[" />
             <Property name="AnimType" value="OneShotBlendable" />
-            <Property name="AnimGroupOverride" value="False" />
+            <Property name="AnimGroupOverride" value="false" />
             <Property name="Priority" value="0" />
             <Property name="FrameStart" value="0" />
             <Property name="FrameEnd" value="0" />
@@ -465,23 +464,24 @@ ANIM_TEMPLATE =
             <Property name="StartNode" value="" />
             <Property name="ExtraStartNodes" />
             <Property name="AdditiveBaseAnim" value="" />
-            <Property name="AdditiveBaseFrame" value="0" />
+            <Property name="AdditiveBaseFrame" value="0.000000" />
             <Property name="Mask" value="" />
-            <Property name="OffsetMin" value="0" />
-            <Property name="OffsetMax" value="0" />
-            <Property name="Delay" value="0" />
-            <Property name="Speed" value="1" />
-            <Property name="ActionStartFrame" value="0" />
-            <Property name="ActionFrame" value="-1" />
+            <Property name="OffsetMin" value="0.000000" />
+            <Property name="OffsetMax" value="0.000000" />
+            <Property name="Delay" value="0.000000" />
+            <Property name="Speed" value="1.000000" />
+            <Property name="ActionStartFrame" value="0.000000" />
+            <Property name="ActionFrame" value="-1.000000" />
             <Property name="Actions" />
             <Property name="CreatureSize" value="AllSizes" />
-            <Property name="Additive" value="False" />
-            <Property name="Mirrored" value="False" />
-            <Property name="Active" value="True" />
-            <Property name="Has30HzFrames" value="False" />
-            <Property name="GameData" value="TkAnimationGameData.xml">
+            <Property name="Notifies" />
+            <Property name="Additive" value="false" />
+            <Property name="Mirrored" value="false" />
+            <Property name="Active" value="true" />
+            <Property name="Has30HzFrames" value="false" />
+            <Property name="GameData" value="TkAnimationGameData">
               <Property name="RootMotion" value="None" />
-              <Property name="BlockPlayerMovement" value="False" />
+              <Property name="BlockPlayerMovement" value="false" />
               <Property name="BlockPlayerWeapon" value="Unblocked" />
             </Property>
           </Property>
@@ -492,38 +492,49 @@ end
 function CreateActionTriggerRewardEntry(ANIM_ID, REWARD)
 ACTION_TRIGGER_ENTRY =
 [[
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcAnimFrameEvent.xml">
-                  <Property name="Anim" value="]] .. ANIM_ID .. [[" />
-                  <Property name="FrameStart" value="0" />
-                  <Property name="StartFromEnd" value="False" />
+              <Property name="Triggers" value="GcActionTrigger">
+                <Property name="Event" value="GcAnimFrameEvent">
+                  <Property name="GcAnimFrameEvent">
+                    <Property name="Anim" value="]] .. ANIM_ID .. [[" />
+                    <Property name="FrameStart" value="0" />
+                    <Property name="StartFromEnd" value="false" />
+                  </Property>
                 </Property>
                 <Property name="Action">
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="REWARD" />
+                  <Property name="Action" value="GcGoToStateAction">
+                    <Property name="GcGoToStateAction">
+                      <Property name="State" value="REWARD" />
+                    </Property>
                   </Property>
                 </Property>
               </Property>
             </Property>
           </Property>
-          <Property value="GcActionTriggerState.xml">
+          <Property name="States" value="GcActionTriggerState">
             <Property name="StateID" value="REWARD" />
             <Property name="Triggers">
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcStateTimeEvent.xml">
-                  <Property name="Seconds" value="0" />
-                  <Property name="RandomSeconds" value="0" />
-                  <Property name="UseMissionClock" value="False" />
+              <Property name="Triggers" value="GcActionTrigger">
+                <Property name="Event" value="GcStateTimeEvent">
+                  <Property name="GcStateTimeEvent">
+                    <Property name="Seconds" value="0.000000" />
+                    <Property name="RandomSeconds" value="0.000000" />
+                    <Property name="UseMissionClock" value="false" />
+                  </Property>
                 </Property>
                 <Property name="Action">
-                  <Property value="GcRewardAction.xml">
-                    <Property name="Reward" value="]] .. REWARD .. [[" />
+                  <Property name="Action" value="GcRewardAction">
+                    <Property name="GcRewardAction">
+                      <Property name="Reward" value="]] .. REWARD .. [[" />
+                    </Property>
                   </Property>
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="BOOT" />
+                  <Property name="Action" value="GcGoToStateAction">
+                    <Property name="GcGoToStateAction">
+                      <Property name="State" value="BOOT" />
+                    </Property>
                   </Property>
                 </Property>
               </Property>
+
 ]]
 return ACTION_TRIGGER_ENTRY
 end
@@ -531,24 +542,23 @@ end
 function CreateActionTriggerComponent(ACTION_TRIGGER_LIST_)
 ACTION_TRIGGER_COMPONENT =
 [[
-    <Property value="LinkableNMSTemplate.xml">
-      <Property name="Template" value="GcTriggerActionComponentData.xml">
-        <Property name="HideModel" value="False" />
-        <Property name="StartInactive" value="False" />
+    <Property name="Components" value="GcTriggerActionComponentData">
+      <Property name="GcTriggerActionComponentData">
+        <Property name="HideModel" value="false" />
+        <Property name="StartInactive" value="false" />
         <Property name="States">
-          <Property value="GcActionTriggerState.xml">
+          <Property name="States" value="GcActionTriggerState">
             <Property name="StateID" value="BOOT" />
             <Property name="Triggers">
 ]] .. ACTION_TRIGGER_LIST_ .. [[
             </Property>
           </Property>
         </Property>
-        <Property name="Persistent" value="False" />
+        <Property name="Persistent" value="false" />
         <Property name="PersistentState" value="" />
-        <Property name="ResetShotTimeOnStateChange" value="False" />
-        <Property name="LinkStateToBaseGrid" value="False" />
+        <Property name="ResetShotTimeOnStateChange" value="false" />
+        <Property name="LinkStateToBaseGrid" value="false" />
       </Property>
-      <Property name="Linked" value="" />
     </Property>
 ]]
 return ACTION_TRIGGER_COMPONENT
@@ -656,73 +666,6 @@ QUICK_ACTION_BUTTON_TEMPLATE =
         <Property name="ResourceID" value="0" />
       </Property>
     </Property>
-    <Property value="GcPlayerEmote.xml">
-      <Property name="Title" value="]] .. BUTTON_TITLE .. [[" />
-      <Property name="ChatText" value="" />
-      <Property name="ChatUsesPrefix" value="False" />
-      <Property name="EmoteID" value="]] .. ANIM_ID .. [[W" />
-      <Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
-      <Property name="PropData" value="GcPlayerEmotePropData.xml">
-        <Property name="Model" value="" />
-        <Property name="Scale" value="0" />
-        <Property name="Hand" value="GcHand.xml">
-          <Property name="Hand" value="Right" />
-        </Property>
-        <Property name="IsHologram" value="False" />
-        <Property name="ScanEffectNodeName" value="" />
-        <Property name="ScanEffect" value="GcScanEffectData.xml">
-          <Property name="Id" value="" />
-          <Property name="ScanEffectType" value="Building" />
-          <Property name="Colour" value="Colour.xml">
-            <Property name="R" value="0.823" />
-            <Property name="G" value="0.475" />
-            <Property name="B" value="0.432" />
-            <Property name="A" value="1" />
-          </Property>
-          <Property name="BasecolourIntensity" value="0.2" />
-          <Property name="ScanlinesSeparation" value="0.1" />
-          <Property name="FresnelIntensity" value="3" />
-          <Property name="GlowIntensity" value="0" />
-          <Property name="WaveOffset" value="0" />
-          <Property name="WaveActive" value="True" />
-          <Property name="FixedUpAxis" value="False" />
-          <Property name="Transparent" value="False" />
-          <Property name="ModelFade" value="False" />
-          <Property name="FadeInTime" value="0.2" />
-          <Property name="FadeOutTime" value="0.2" />
-        </Property>
-        <Property name="DelayTime" value="0" />
-      </Property>
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="]] .. ICON .. [[" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="LinkedSpecialID" value="" />
-      <Property name="NeverShowInMenu" value="False" />
-      <Property name="LoopAnimUntilMove" value="" />
-      <Property name="CloseMenuOnSelect" value="False" />
-      <Property name="MoveToCancel" value="True" />
-      <Property name="GekAnimationName" value="" />
-      <Property name="GekLoopAnimUntilMove" value="" />
-      <Property name="AvailableUnderwater" value="True" />
-      <Property name="RidingAnimationName" value="]] .. ANIM_ID .. [[" />
-      <Property name="IsPetCommand" value="False" />
-      <Property name="PetCommandTitle" value="" />
-      <Property name="PetCommandIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="IconResource" value="GcResource.xml">
-        <Property name="ResourceID" value="0" />
-      </Property>
-      <Property name="IconPetCommandResource" value="GcResource.xml">
-        <Property name="ResourceID" value="0" />
-      </Property>
-    </Property>
 ]]
 return QUICK_ACTION_BUTTON_TEMPLATE
 end
@@ -765,10 +708,10 @@ CreateSeedRewardLists()
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B.pak",
+["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -776,38 +719,39 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
-                            ["SECTION_ACTIVE"] = {2},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Anims"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] = ANIM_TEMPLATE_ALL
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcPlayerEffectsComponentData.xml"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] = ACTION_TRIGGER_COMPONENT
                         }
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Emotes"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] = QUICK_ACTION_BUTTON_ALL
                         }
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] = CUSTOM_GENERICREWARD_ALL
                         }
                     }
@@ -818,14 +762,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["ADD_FILES"] =
     {
         {
-            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.EXML",
+            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkAnimMetadata">
+<Data template="cTkAnimMetadata">
   <Property name="NodeData">
-    <Property value="TkAnimNodeData.xml">
+    <Property name="NodeData" value="TkAnimNodeData">
       <Property name="Node" value="AnimatedTrans" />
       <Property name="RotIndex" value="0" />
       <Property name="TransIndex" value="0" />
@@ -833,52 +777,50 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
   </Property>
-  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
+  <Property name="StillFrameData" value="TkAnimNodeFrameData">
     <Property name="Rotations">
-      <Property value="Quaternion.xml">
-        <Property name="x" value="0" />
-        <Property name="y" value="0" />
-        <Property name="z" value="0" />
-        <Property name="w" value="1" />
+      <Property name="Rotations" value="Quaternion">
+        <Property name="X" value="0" />
+        <Property name="Y" value="0" />
+        <Property name="Z" value="0" />
+        <Property name="W" value="1" />
         <Property name="dropComponent" value="3" />
       </Property>
     </Property>
     <Property name="Translations">
-      <Property value="Vector4f.xml">
-        <Property name="x" value="-0.73121876" />
-        <Property name="y" value="0.08333181" />
-        <Property name="z" value="-0.02858855" />
-        <Property name="t" value="1" />
+      <Property name="Translations">
+        <Property name="X" value="-0.73121876" />
+        <Property name="Y" value="0.08333181" />
+        <Property name="Z" value="-0.02858855" />
       </Property>
     </Property>
     <Property name="Scales">
-      <Property value="Vector4f.xml">
-        <Property name="x" value="1" />
-        <Property name="y" value="1" />
-        <Property name="z" value="1" />
-        <Property name="t" value="1" />
+      <Property name="Scales">
+        <Property name="X" value="1.000000" />
+        <Property name="Y" value="1.000000" />
+        <Property name="Z" value="1.000000" />
       </Property>
     </Property>
   </Property>
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="Has30HzFrames" value="False" />
+  <Property name="Has30HzFrames" value="false" />
 </Data>
 ]]
         },

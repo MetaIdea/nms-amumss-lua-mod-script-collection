@@ -3,7 +3,7 @@ DEFAULT_SEED_NUMBER = 2000
 SELECTED_SEED_TYPES =
 {
     "Fighter", "Dropship", "Scientific", "Shuttle", "Royal", "Alien", "Sail", "Robot",
-    "MULTITOOL", "ROYALMULTITOOL", "ROBOTMULTITOOL", "ROBOTMULTITOOLB", "ATLASMULTITOOL", "STAFFMULTITOOL", "STAFFMTATLAS",-- "RODMULTITOOL",
+    "MULTITOOL", "ROYALMULTITOOL", "ROBOTMULTITOOL", "ROBOTMULTITOOLB", "ATLASMULTITOOL", "STAFFMULTITOOL", "STAFFMTATLAS",
     -- "FREIGHTER", "CAPFREIGHTER", "FREIGHTERSMALL", "FREIGHTERTINY",
     -- "SCIENCEFRIG", "SUPPORTFRIG", "INDUSTRIALFRIG", "COMBATFRIG", "DIPLOMATICFRIG", "LIVINGFRIG", "GHOSTFRIG",
     -- "NPCFIFTH", "NPCFOURTH", "NPCGEK", "NPCKORVAX", "NPCVYKEEN",
@@ -31,11 +31,9 @@ SEED_TYPE_PATH =
     ["ATLASMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ATLASMULTITOOL.SCENE.MBIN",
     ["STAFFMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/STAFFMULTITOOL.SCENE.MBIN",
     ["STAFFMTATLAS"]="MODELS/COMMON/WEAPONS/MULTITOOL/STAFFMULTITOOLATLAS.SCENE.MBIN",
-    -- ["RODMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/RODMULTITOOL.SCENE.MBIN",
 
     -- ["FREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTER_PROC.SCENE.MBIN",
     -- ["CAPFREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN",
-
     -- ["FREIGHTERSMALL"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERSMALL_PROC.SCENE.MBIN",
     -- ["FREIGHTERTINY"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERTINY_PROC.SCENE.MBIN",
 
@@ -170,9 +168,6 @@ function GetSeed()
     local HEX = {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"}
     if not RANDOMSEED_INIT then
         math.randomseed(82398*os.time())
-        -- math.random()
-        -- math.random()
-        -- math.random()
         RANDOMSEED_INIT = true
     end
     for _=1,16,1 do
@@ -181,10 +176,17 @@ function GetSeed()
     return SEED
 end
 
+-- function HexToDec(number)
+    -- if type(number) == "number" then return number
+    -- elseif string.find(tostring(number),"0x") then return tonumber(number)
+    -- else return tonumber(number,16)
+    -- end
+-- end
+
 function HexToDec(number)
     if type(number) == "number" then return number
-    elseif string.find(tostring(number),"0x") then return tonumber(number)
-    else return tonumber(number,16)
+    elseif string.find(tostring(number),"0x") then return math.abs(tonumber(number))
+    else return math.abs(tonumber(number,16))
     end
 end
 
@@ -198,61 +200,57 @@ CUSTOM_GENERICREWARD_ALL = ""
 function CreateCustomMultitoolRewardSubEntry(DEC_SEED, HEX_SEED, TYPE)
 local GENERIC_REWARD_ENTRY =
 [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
             <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificWeapon.xml">
-              <Property name="WeaponInventory" value="GcInventoryContainer.xml">
-                <Property name="Slots">
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="LASER" />
-                    <Property name="Amount" value="200" />
-                    <Property name="MaxAmount" value="200" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
+            <Property name="Reward" value="GcRewardSpecificWeapon">
+              <Property name="GcRewardSpecificWeapon">
+                <Property name="WeaponInventory" value="GcInventoryContainer">
+                  <Property name="Slots">
+                    <Property name="Slots" value="GcInventoryElement">
+                      <Property name="Type" value="GcInventoryType">
+                        <Property name="InventoryType" value="Technology" />
+                      </Property>
+                      <Property name="Id" value="LASER" />
+                      <Property name="Amount" value="200" />
+                      <Property name="MaxAmount" value="200" />
+                      <Property name="DamageFactor" value="0.000000" />
+                      <Property name="FullyInstalled" value="true" />
+                      <Property name="Index" value="GcInventoryIndex">
+                        <Property name="X" value="-1" />
+                        <Property name="Y" value="-1" />
+                      </Property>
                     </Property>
                   </Property>
+                  <Property name="ValidSlotIndices" />
+                  <Property name="Class" value="GcInventoryClass">
+                    <Property name="InventoryClass" value="S" />
+                  </Property>
+                  <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup">
+                    <Property name="InventoryStackSizeGroup" value="Default" />
+                  </Property>
+                  <Property name="BaseStatValues" />
+                  <Property name="SpecialSlots" />
+                  <Property name="Width" value="0" />
+                  <Property name="Height" value="0" />
+                  <Property name="IsCool" value="false" />
+                  <Property name="Name" value="" />
+                  <Property name="Version" value="0" />
                 </Property>
-                <Property name="ValidSlotIndices" />
-                <Property name="Class" value="GcInventoryClass.xml">
-                  <Property name="InventoryClass" value="S" />
-                </Property>
-                <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
-                  <Property name="InventoryStackSizeGroup" value="Default" />
-                </Property>
-                <Property name="BaseStatValues" />
-                <Property name="SpecialSlots" />
-                <Property name="Width" value="0" />
-                <Property name="Height" value="0" />
-                <Property name="IsCool" value="False" />
-                <Property name="Name" value="" />
-                <Property name="Version" value="0" />
-              </Property>
-              <Property name="WeaponLayout" value="GcInventoryLayout.xml">
-                <Property name="Slots" value="24" />
-                <Property name="Seed" value="GcSeed.xml">
-                  <Property name="Seed" value="1" />
-                  <Property name="UseSeedValue" value="True" />
-                </Property>
-                <Property name="Level" value="1" />
-              </Property>
-              <Property name="WeaponResource" value="GcExactResource.xml">
-                <Property name="Filename" value="]] .. SEED_TYPE_PATH[TYPE] .. [[" />
-                <Property name="GenerationSeed" value="GcSeed.xml">
+                <Property name="WeaponLayout" value="GcInventoryLayout">
+                  <Property name="Slots" value="24" />
                   <Property name="Seed" value="]] .. DEC_SEED .. [[" />
-                  <Property name="UseSeedValue" value="True" />
+                  <Property name="Level" value="1" />
                 </Property>
+                <Property name="WeaponResource" value="GcExactResource">
+                  <Property name="Filename" value="]] .. SEED_TYPE_PATH[TYPE] .. [[" />
+                  <Property name="GenerationSeed" value="]] .. DEC_SEED .. [[" />
+                </Property>
+                <Property name="NameOverride" value="]] .. HEX_SEED .. [[" />
+                <Property name="IsGift" value="true" />
+                <Property name="IsRewardWeapon" value="true" />
+                <Property name="FormatAsSeasonal" value="false" />
               </Property>
-              <Property name="NameOverride" value="]] .. HEX_SEED .. [[" />
-              <Property name="IsGift" value="True" />
-              <Property name="IsRewardWeapon" value="True" />
-              <Property name="FormatAsSeasonal" value="False" />
             </Property>
           </Property>
 ]]
@@ -262,12 +260,12 @@ end
 function CreateRewardMainEntry(REWARD_ID, SUB_ENTRY)
 local GENERIC_REWARD_MAIN_ENTRY =
 [[
-    <Property value="GcGenericRewardTableEntry.xml">
+    <Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="]] .. REWARD_ID .. [[" />
-      <Property name="List" value="GcRewardTableItemList.xml">
+      <Property name="List" value="GcRewardTableItemList">
         <Property name="RewardChoice" value="SelectAlways" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="OverrideZeroSeed" value="false" />
+        <Property name="UseInventoryChoiceOverride" value="false" />
         <Property name="IncrementStat" value="" />
         <Property name="List">
 ]] .. SUB_ENTRY .. [[
@@ -284,11 +282,11 @@ end
 function CreateAnimEntry(ANIM_ID)
 ANIM_TEMPLATE =
 [[
-          <Property value="TkAnimationData.xml">
+          <Property name="Anims" value="TkAnimationData">
             <Property name="Anim" value="]] .. ANIM_ID .. [[" />
             <Property name="Filename" value="]] .. GENERIC_ANIMATION_FILE .. [[" />
             <Property name="AnimType" value="OneShotBlendable" />
-            <Property name="AnimGroupOverride" value="False" />
+            <Property name="AnimGroupOverride" value="false" />
             <Property name="Priority" value="0" />
             <Property name="FrameStart" value="0" />
             <Property name="FrameEnd" value="0" />
@@ -296,23 +294,24 @@ ANIM_TEMPLATE =
             <Property name="StartNode" value="" />
             <Property name="ExtraStartNodes" />
             <Property name="AdditiveBaseAnim" value="" />
-            <Property name="AdditiveBaseFrame" value="0" />
+            <Property name="AdditiveBaseFrame" value="0.000000" />
             <Property name="Mask" value="" />
-            <Property name="OffsetMin" value="0" />
-            <Property name="OffsetMax" value="0" />
-            <Property name="Delay" value="0" />
-            <Property name="Speed" value="1" />
-            <Property name="ActionStartFrame" value="0" />
-            <Property name="ActionFrame" value="-1" />
+            <Property name="OffsetMin" value="0.000000" />
+            <Property name="OffsetMax" value="0.000000" />
+            <Property name="Delay" value="0.000000" />
+            <Property name="Speed" value="1.000000" />
+            <Property name="ActionStartFrame" value="0.000000" />
+            <Property name="ActionFrame" value="-1.000000" />
             <Property name="Actions" />
             <Property name="CreatureSize" value="AllSizes" />
-            <Property name="Additive" value="False" />
-            <Property name="Mirrored" value="False" />
-            <Property name="Active" value="True" />
-            <Property name="Has30HzFrames" value="False" />
-            <Property name="GameData" value="TkAnimationGameData.xml">
+            <Property name="Notifies" />
+            <Property name="Additive" value="false" />
+            <Property name="Mirrored" value="false" />
+            <Property name="Active" value="true" />
+            <Property name="Has30HzFrames" value="false" />
+            <Property name="GameData" value="TkAnimationGameData">
               <Property name="RootMotion" value="None" />
-              <Property name="BlockPlayerMovement" value="False" />
+              <Property name="BlockPlayerMovement" value="false" />
               <Property name="BlockPlayerWeapon" value="Unblocked" />
             </Property>
           </Property>
@@ -323,35 +322,45 @@ end
 function CreateActionTriggerRewardEntry(ANIM_ID, REWARD)
 ACTION_TRIGGER_ENTRY =
 [[
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcAnimFrameEvent.xml">
-                  <Property name="Anim" value="]] .. ANIM_ID .. [[" />
-                  <Property name="FrameStart" value="0" />
-                  <Property name="StartFromEnd" value="False" />
+              <Property name="Triggers" value="GcActionTrigger">
+                <Property name="Event" value="GcAnimFrameEvent">
+                  <Property name="GcAnimFrameEvent">
+                    <Property name="Anim" value="]] .. ANIM_ID .. [[" />
+                    <Property name="FrameStart" value="0" />
+                    <Property name="StartFromEnd" value="false" />
+                  </Property>
                 </Property>
                 <Property name="Action">
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="REWARD" />
+                  <Property name="Action" value="GcGoToStateAction">
+                    <Property name="GcGoToStateAction">
+                      <Property name="State" value="REWARD" />
+                    </Property>
                   </Property>
                 </Property>
               </Property>
             </Property>
           </Property>
-          <Property value="GcActionTriggerState.xml">
+          <Property name="States" value="GcActionTriggerState">
             <Property name="StateID" value="REWARD" />
             <Property name="Triggers">
-              <Property value="GcActionTrigger.xml">
-                <Property name="Event" value="GcStateTimeEvent.xml">
-                  <Property name="Seconds" value="0" />
-                  <Property name="RandomSeconds" value="0" />
-                  <Property name="UseMissionClock" value="False" />
+              <Property name="Triggers" value="GcActionTrigger">
+                <Property name="Event" value="GcStateTimeEvent">
+                  <Property name="GcStateTimeEvent">
+                    <Property name="Seconds" value="0.000000" />
+                    <Property name="RandomSeconds" value="0.000000" />
+                    <Property name="UseMissionClock" value="false" />
+                  </Property>
                 </Property>
                 <Property name="Action">
-                  <Property value="GcRewardAction.xml">
-                    <Property name="Reward" value="]] .. REWARD .. [[" />
+                  <Property name="Action" value="GcRewardAction">
+                    <Property name="GcRewardAction">
+                      <Property name="Reward" value="]] .. REWARD .. [[" />
+                    </Property>
                   </Property>
-                  <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="BOOT" />
+                  <Property name="Action" value="GcGoToStateAction">
+                    <Property name="GcGoToStateAction">
+                      <Property name="State" value="BOOT" />
+                    </Property>
                   </Property>
                 </Property>
               </Property>
@@ -362,24 +371,23 @@ end
 function CreateActionTriggerComponent(ACTION_TRIGGER_LIST_)
 ACTION_TRIGGER_COMPONENT =
 [[
-    <Property value="LinkableNMSTemplate.xml">
-      <Property name="Template" value="GcTriggerActionComponentData.xml">
-        <Property name="HideModel" value="False" />
-        <Property name="StartInactive" value="False" />
+    <Property name="Components" value="GcTriggerActionComponentData">
+      <Property name="GcTriggerActionComponentData">
+        <Property name="HideModel" value="false" />
+        <Property name="StartInactive" value="false" />
         <Property name="States">
-          <Property value="GcActionTriggerState.xml">
+          <Property name="States" value="GcActionTriggerState">
             <Property name="StateID" value="BOOT" />
             <Property name="Triggers">
 ]] .. ACTION_TRIGGER_LIST_ .. [[
             </Property>
           </Property>
         </Property>
-        <Property name="Persistent" value="False" />
+        <Property name="Persistent" value="false" />
         <Property name="PersistentState" value="" />
-        <Property name="ResetShotTimeOnStateChange" value="False" />
-        <Property name="LinkStateToBaseGrid" value="False" />
+        <Property name="ResetShotTimeOnStateChange" value="false" />
+        <Property name="LinkStateToBaseGrid" value="false" />
       </Property>
-      <Property name="Linked" value="" />
     </Property>
 ]]
 return ACTION_TRIGGER_COMPONENT
@@ -412,8 +420,6 @@ function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\ROBOTPARTS\ROBOTPARTS.STAFFPOLE.5.DDS"
                 elseif ANIM_ID == "STAFFMTATLAS" then
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO1.EXPEDITION.ATLASSTAFF.DDS"
-                -- elseif ANIM_ID == "RODMULTITOOL" then
-                    -- ICON = "TEXTURES\UI\FRONTEND\ICONS\TECHNOLOGY\RENDER.FISHLASER.DDS"
                 else ICON = "TEXTURES\UI\FRONTEND\COMPONENTS\STAR.DDS"
                 end
 
@@ -487,73 +493,6 @@ QUICK_ACTION_BUTTON_TEMPLATE =
         <Property name="ResourceID" value="0" />
       </Property>
     </Property>
-    <Property value="GcPlayerEmote.xml">
-      <Property name="Title" value="]] .. BUTTON_TITLE .. [[" />
-      <Property name="ChatText" value="" />
-      <Property name="ChatUsesPrefix" value="False" />
-      <Property name="EmoteID" value="]] .. ANIM_ID .. [[W" />
-      <Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
-      <Property name="PropData" value="GcPlayerEmotePropData.xml">
-        <Property name="Model" value="" />
-        <Property name="Scale" value="0" />
-        <Property name="Hand" value="GcHand.xml">
-          <Property name="Hand" value="Right" />
-        </Property>
-        <Property name="IsHologram" value="False" />
-        <Property name="ScanEffectNodeName" value="" />
-        <Property name="ScanEffect" value="GcScanEffectData.xml">
-          <Property name="Id" value="" />
-          <Property name="ScanEffectType" value="Building" />
-          <Property name="Colour" value="Colour.xml">
-            <Property name="R" value="0.823" />
-            <Property name="G" value="0.475" />
-            <Property name="B" value="0.432" />
-            <Property name="A" value="1" />
-          </Property>
-          <Property name="BasecolourIntensity" value="0.2" />
-          <Property name="ScanlinesSeparation" value="0.1" />
-          <Property name="FresnelIntensity" value="3" />
-          <Property name="GlowIntensity" value="0" />
-          <Property name="WaveOffset" value="0" />
-          <Property name="WaveActive" value="True" />
-          <Property name="FixedUpAxis" value="False" />
-          <Property name="Transparent" value="False" />
-          <Property name="ModelFade" value="False" />
-          <Property name="FadeInTime" value="0.2" />
-          <Property name="FadeOutTime" value="0.2" />
-        </Property>
-        <Property name="DelayTime" value="0" />
-      </Property>
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="]] .. ICON .. [[" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="LinkedSpecialID" value="" />
-      <Property name="NeverShowInMenu" value="False" />
-      <Property name="LoopAnimUntilMove" value="" />
-      <Property name="CloseMenuOnSelect" value="False" />
-      <Property name="MoveToCancel" value="True" />
-      <Property name="GekAnimationName" value="" />
-      <Property name="GekLoopAnimUntilMove" value="" />
-      <Property name="AvailableUnderwater" value="True" />
-      <Property name="RidingAnimationName" value="]] .. ANIM_ID .. [[" />
-      <Property name="IsPetCommand" value="False" />
-      <Property name="PetCommandTitle" value="" />
-      <Property name="PetCommandIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="IconResource" value="GcResource.xml">
-        <Property name="ResourceID" value="0" />
-      </Property>
-      <Property name="IconPetCommandResource" value="GcResource.xml">
-        <Property name="ResourceID" value="0" />
-      </Property>
-    </Property>
 ]]
 return QUICK_ACTION_BUTTON_TEMPLATE
 end
@@ -592,10 +531,10 @@ CreateSeedRewardLists()
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6A.pak",
+["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6A",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "5.29",
+["NMS_VERSION"]     = "5.73",
 ["MODIFICATIONS"]   =
     {
         {
@@ -603,38 +542,39 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
-                            ["SECTION_ACTIVE"] = {2},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Anims"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] = ANIM_TEMPLATE_ALL
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcPlayerEffectsComponentData.xml"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] = ACTION_TRIGGER_COMPONENT
                         }
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Emotes"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] = QUICK_ACTION_BUTTON_ALL
                         }
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] = CUSTOM_GENERICREWARD_ALL
                         }
                     }
@@ -645,14 +585,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["ADD_FILES"] =
     {
         {
-            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.EXML",
+            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkAnimMetadata">
+<Data template="cTkAnimMetadata">
   <Property name="NodeData">
-    <Property value="TkAnimNodeData.xml">
+    <Property name="NodeData" value="TkAnimNodeData">
       <Property name="Node" value="AnimatedTrans" />
       <Property name="RotIndex" value="0" />
       <Property name="TransIndex" value="0" />
@@ -660,52 +600,50 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
-    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
   </Property>
-  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
+  <Property name="StillFrameData" value="TkAnimNodeFrameData">
     <Property name="Rotations">
-      <Property value="Quaternion.xml">
-        <Property name="x" value="0" />
-        <Property name="y" value="0" />
-        <Property name="z" value="0" />
-        <Property name="w" value="1" />
+      <Property name="Rotations" value="Quaternion">
+        <Property name="X" value="0" />
+        <Property name="Y" value="0" />
+        <Property name="Z" value="0" />
+        <Property name="W" value="1" />
         <Property name="dropComponent" value="3" />
       </Property>
     </Property>
     <Property name="Translations">
-      <Property value="Vector4f.xml">
-        <Property name="x" value="-0.73121876" />
-        <Property name="y" value="0.08333181" />
-        <Property name="z" value="-0.02858855" />
-        <Property name="t" value="1" />
+      <Property name="Translations">
+        <Property name="X" value="-0.73121876" />
+        <Property name="Y" value="0.08333181" />
+        <Property name="Z" value="-0.02858855" />
       </Property>
     </Property>
     <Property name="Scales">
-      <Property value="Vector4f.xml">
-        <Property name="x" value="1" />
-        <Property name="y" value="1" />
-        <Property name="z" value="1" />
-        <Property name="t" value="1" />
+      <Property name="Scales">
+        <Property name="X" value="1.000000" />
+        <Property name="Y" value="1.000000" />
+        <Property name="Z" value="1.000000" />
       </Property>
     </Property>
   </Property>
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="Has30HzFrames" value="False" />
+  <Property name="Has30HzFrames" value="false" />
 </Data>
 ]]
         },

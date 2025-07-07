@@ -60,7 +60,9 @@ table.insert(FINAL_CHANGES,
 							["REPLACE_TYPE"] 	= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MiniWarpSpeed",						"150000"},	
+								{"MiniWarpSpeed",						"150000"},
+								-- {"MiniWarpTopSpeedTime",				"3"},
+								{"MiniWarpCooldownTime",				"0.75"},
 								{"MiniWarpHUDArrowAttractAngle",		"2"},	
 								{"MiniWarpHUDArrowAttractAngleStation",	"2"},	
 								{"MiniWarpHUDArrowAttractAngleDense",	"1"},	
@@ -68,8 +70,8 @@ table.insert(FINAL_CHANGES,
 								{"MiniWarpMinPlanetDistance",			"300"},	
 								{"MiniWarpStoppingMarginDefault",		"750"},	
 								{"MiniWarpTrackingMargin",				"20"},	
-								{"MiniWarpExitSpeed",					"450"},	
-								{"MiniWarpExitTime",					"0.25"},	
+								{"MiniWarpExitSpeed ",					"450"},	-- Wbertro: NEEDS an ending space
+								{"MiniWarpExitTime ",					"0.25"},	-- Wbertro: NEEDS an ending space	
 								{"MiniWarpMarkerApproachSlowdown",		"0.1"},	
 								-- {"MiniWarpMarkerAlignSlowdownRange",	"30"},	
 								{"MiniWarpAlignSlerp",	"0.2"},	
@@ -95,7 +97,7 @@ table.insert(FINAL_CHANGES,
 						{
 							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"] 	= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+              ["VALUE_CHANGE_TABLE"] 	= 
 							{
 								-- MINIMUM HEIGHT SHIP CAN FLY AT ABOVE WATER LEVEL
 								{"GroundHeightSoft",					"-150"},	
@@ -128,13 +130,22 @@ table.insert(FINAL_CHANGES,
 								{"CockpitRollAngle",					"0"},
 								{"CockpitRollAngleExtra",				"0"},
 								-- {"AcrobaticLowFlightLevel",			"NaN"},
-								{"_3rdPersonRollAngle",					"0"},
-								{"_3rdPersonRollAngleDropship",			"0"},
-								{"_3rdPersonRollAngleScience",			"0"},
-								{"_3rdPersonRollAngleAlien",			"0"},
-								{"_3rdPersonPitchAngle",				"0"},
-								{"_3rdPersonYawAngle",					"0"},
-								{"CockpitRollMultiplierCentre",			"0"},
+								
+                {"3rdPersonRollAngle",					"0"}, -- Wbertro: NEW names
+								{"3rdPersonRollAngleDropship",			"0"},
+								{"3rdPersonRollAngleScience",			"0"},
+								{"3rdPersonRollAngleAlien",			"0"},
+								{"3rdPersonPitchAngle",				"0"},
+								{"3rdPersonYawAngle",					"0"},
+								
+                -- {"_3rdPersonRollAngle",					"0"}, -- Wbertro: THESE do not exist
+								-- {"_3rdPersonRollAngleDropship",			"0"},
+								-- {"_3rdPersonRollAngleScience",			"0"},
+								-- {"_3rdPersonRollAngleAlien",			"0"},
+								-- {"_3rdPersonPitchAngle",				"0"},
+								-- {"_3rdPersonYawAngle",					"0"},
+								
+                {"CockpitRollMultiplierCentre",			"0"},
 								{"CockpitRollMultiplierOpposite",		"0"},
 								-- DISBALES AUTO-LEVELLING AFTER ROLLING SIDEWAYS
 								{"BalanceTimeMin",					"9999"},
@@ -478,8 +489,8 @@ table.insert(FINAL_CHANGES,
 							["REPLACE_TYPE"] 	= "ALL",
 							["FOREACH_SKW_GROUP"] =
 							{
-								{"SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
-								{"CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+								{"SpaceEngine", "GcPlayerSpaceshipEngineData"},
+								{"CombatEngine", "GcPlayerSpaceshipEngineData"},
 							},
 							["MATH_OPERATION"] 		= "*",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -498,8 +509,8 @@ table.insert(FINAL_CHANGES,
 							["REPLACE_TYPE"] 	= "ALL",
 							["FOREACH_SKW_GROUP"] =
 							{
-								{"SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
-								{"CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+								{"SpaceEngine", "GcPlayerSpaceshipEngineData"},
+								{"CombatEngine", "GcPlayerSpaceshipEngineData"},
 							},
 							["MATH_OPERATION"] 		= "*",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -518,8 +529,8 @@ table.insert(FINAL_CHANGES,
 							-- ["PRECEDING_KEY_WORDS"] = {"PlanetEngine"},
 							["FOREACH_SKW_GROUP"] =
 							{
-								{"PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
-								{"AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+								{"PlanetEngine", "GcPlayerSpaceshipEngineData"},
+								{"AtmosCombatEngine", "GcPlayerSpaceshipEngineData"},
 							},
 							["REPLACE_TYPE"] 		= "ALL",
 							["MATH_OPERATION"] 		= "*",
@@ -533,11 +544,12 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 		= "Winder_GalaxySFlightUltra.pak",
-["MOD_BATCHNAME"]		= "~~GalaxySFlightUltra_COMPATIBILITY.pak",
+["MOD_FILENAME"] 		= "+Winder_GalaxySFlightUltra",
+["MOD_BATCHNAME"]		= "+++GalaxySFlightUltra_COMPATIBILITY",
 ["MOD_DESCRIPTION"]		= "Makes ships faster",
 ["MOD_AUTHOR"]			= "WinderTP, with references from JovianStone",
 ["NMS_VERSION"]			= "3.38.0.1",
+["AMUMSS_SUPPRESS_MSG"] = "NUMBERtoSTRING",
 ["MODIFICATIONS"] 		= 
 	{
 		{
@@ -545,7 +557,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"]	= FINAL_CHANGES
+					["MXML_CHANGE_TABLE"]	= FINAL_CHANGES
 				}
 			}
 		}
