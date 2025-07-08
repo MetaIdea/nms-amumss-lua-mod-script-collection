@@ -385,7 +385,7 @@ SHIELD_SCENE =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HASH" />
-					<Property name="Value" value="13535163643597906482" />
+          <Property name="Value" value="13535163643597906482" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
@@ -489,7 +489,7 @@ SHIELD_SCENE =
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="HASH" />
-							<Property name="Value" value="7910654785100097477" />
+              <Property name="Value" value="7910654785100097477" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
@@ -593,7 +593,7 @@ SHIELD_SCENE =
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="HASH" />
-							<Property name="Value" value="5515647454882198215" />
+              <Property name="Value" value="5515647454882198215" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
@@ -870,34 +870,34 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-				<Property name="Children" value="TkSceneNodeData">
-					<Property name="Name" value="REFShieldData" />
-					<Property name="NameHash" value="781004035" />
-					<Property name="Type" value="REFERENCE" />
-					<Property name="Transform" value="TkTransformData">
-						<Property name="TransX" value="0.000000" />
-						<Property name="TransY" value="0.000000" />
-						<Property name="TransZ" value="0.000000" />
-						<Property name="RotX" value="0.000000" />
-						<Property name="RotY" value="0.000000" />
-						<Property name="RotZ" value="0.000000" />
-						<Property name="ScaleX" value="1.000000" />
-						<Property name="ScaleY" value="1.000000" />
-						<Property name="ScaleZ" value="1.000000" />
-					</Property>
-					<Property name="PlatformExclusion" value="0" />
-					<Property name="Attributes">
-				    <Property name="Attributes" value="TkSceneNodeAttributeData">
-				    	<Property name="Name" value="SCENEGRAPH" />
-				    	<Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\SHIELD.SCENE.MBIN" />
-				    </Property>
-				    <Property name="Attributes" value="TkSceneNodeAttributeData">
-				    	<Property name="Name" value="EMBEDGEOMETRY" />
-				    	<Property name="Value" value="TRUE" />
-				    </Property>
-					</Property>
-					<Property name="Children" />
-				</Property>
+        <Property name="Children" value="TkSceneNodeData">
+          <Property name="Name" value="REFShieldData" />
+          <Property name="NameHash" value="781004035" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="0.000000" />
+            <Property name="ScaleX" value="1.000000" />
+            <Property name="ScaleY" value="1.000000" />
+            <Property name="ScaleZ" value="1.000000" />
+          </Property>
+          <Property name="PlatformExclusion" value="0" />
+          <Property name="Attributes">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\SHIELD.SCENE.MBIN" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
 ]]
                         },
                     }
