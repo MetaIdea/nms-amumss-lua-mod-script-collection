@@ -114,30 +114,30 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-				<Property name="Children" value="TkSceneNodeData">
-					<Property name="Name" value="SaveData" />
-					<Property name="NameHash" value="600109282" />
-					<Property name="Type" value="LOCATOR" />
-					<Property name="Transform" value="TkTransformData">
-						<Property name="TransX" value="0.000000" />
-						<Property name="TransY" value="0.000000" />
-						<Property name="TransZ" value="0.000000" />
-						<Property name="RotX" value="0.000000" />
-						<Property name="RotY" value="0.000000" />
-						<Property name="RotZ" value="0.000000" />
-						<Property name="ScaleX" value="1.000000" />
-						<Property name="ScaleY" value="1.000000" />
-						<Property name="ScaleZ" value="1.000000" />
-					</Property>
-					<Property name="PlatformExclusion" value="0" />
-					<Property name="Attributes">
-				    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
-				    	<Property name="Name" value="ATTACHMENT" />
-				    	<Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE.ENTITY.MBIN" />
-				    </Property>
-					</Property>
-					<Property name="Children" />
-				</Property>
+        <Property name="Children" value="TkSceneNodeData">
+          <Property name="Name" value="SaveData" />
+          <Property name="NameHash" value="600109282" />
+          <Property name="Type" value="LOCATOR" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="0.000000" />
+            <Property name="ScaleX" value="1.000000" />
+            <Property name="ScaleY" value="1.000000" />
+            <Property name="ScaleZ" value="1.000000" />
+          </Property>
+          <Property name="PlatformExclusion" value="0" />
+          <Property name="Attributes">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="ATTACHMENT" />
+              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE.ENTITY.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
 ]]
                         },
                     }
