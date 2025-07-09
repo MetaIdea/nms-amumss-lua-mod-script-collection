@@ -1652,146 +1652,146 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-				<Property name="Children" value="TkSceneNodeData">
-					<Property name="Name" value="REFGalMapData" />
-					<Property name="NameHash" value="4073298945" />
-					<Property name="Type" value="REFERENCE" />
-					<Property name="Transform" value="TkTransformData">
-						<Property name="TransX" value="0.000000" />
-						<Property name="TransY" value="0.000000" />
-						<Property name="TransZ" value="0.000000" />
-						<Property name="RotX" value="0.000000" />
-						<Property name="RotY" value="0.000000" />
-						<Property name="RotZ" value="0.000000" />
-						<Property name="ScaleX" value="1.000000" />
-						<Property name="ScaleY" value="1.000000" />
-						<Property name="ScaleZ" value="1.000000" />
-					</Property>
-					<Property name="PlatformExclusion" value="0" />
-					<Property name="Attributes">
-				    <Property name="Attributes" value="TkSceneNodeAttributeData">
-				    	<Property name="Name" value="SCENEGRAPH" />
-				    	<Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\GALACTICMAP\GALACTICMAP.SCENE.MBIN" />
-				    </Property>
-				    <Property name="Attributes" value="TkSceneNodeAttributeData">
-				    	<Property name="Name" value="EMBEDGEOMETRY" />
-				    	<Property name="Value" value="TRUE" />
-				    </Property>
-					</Property>
-					<Property name="Children" />
-				</Property>
-				<Property name="Children" value="TkSceneNodeData">
-					<Property name="Name" value="REFSaveData" />
-					<Property name="NameHash" value="96205072" />
-					<Property name="Type" value="REFERENCE" />
-					<Property name="Transform" value="TkTransformData">
-						<Property name="TransX" value="0.000000" />
-						<Property name="TransY" value="0.000000" />
-						<Property name="TransZ" value="0.000000" />
-						<Property name="RotX" value="0.000000" />
-						<Property name="RotY" value="0.000000" />
-						<Property name="RotZ" value="0.000000" />
-						<Property name="ScaleX" value="1.000000" />
-						<Property name="ScaleY" value="1.000000" />
-						<Property name="ScaleZ" value="1.000000" />
-					</Property>
-					<Property name="PlatformExclusion" value="0" />
-					<Property name="Attributes">
-				    <Property name="Attributes" value="TkSceneNodeAttributeData">
-				    	<Property name="Name" value="SCENEGRAPH" />
-				    	<Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SAVE\SAVE.SCENE.MBIN" />
-				    </Property>
-				    <Property name="Attributes" value="TkSceneNodeAttributeData">
-				    	<Property name="Name" value="EMBEDGEOMETRY" />
-				    	<Property name="Value" value="TRUE" />
-				    </Property>
-					</Property>
-					<Property name="Children" />
-				</Property>
-				<Property name="Children" value="TkSceneNodeData">
-					<Property name="Name" value="REFShieldData" />
-					<Property name="NameHash" value="781004035" />
-					<Property name="Type" value="REFERENCE" />
-					<Property name="Transform" value="TkTransformData">
-						<Property name="TransX" value="0.000000" />
-						<Property name="TransY" value="0.000000" />
-						<Property name="TransZ" value="0.000000" />
-						<Property name="RotX" value="0.000000" />
-						<Property name="RotY" value="0.000000" />
-						<Property name="RotZ" value="0.000000" />
-						<Property name="ScaleX" value="1.000000" />
-						<Property name="ScaleY" value="1.000000" />
-						<Property name="ScaleZ" value="1.000000" />
-					</Property>
-					<Property name="PlatformExclusion" value="0" />
-					<Property name="Attributes">
-				    <Property name="Attributes" value="TkSceneNodeAttributeData">
-				    	<Property name="Name" value="SCENEGRAPH" />
-				    	<Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\SHIELD.SCENE.MBIN" />
-				    </Property>
-				    <Property name="Attributes" value="TkSceneNodeAttributeData">
-				    	<Property name="Name" value="EMBEDGEOMETRY" />
-				    	<Property name="Value" value="TRUE" />
-				    </Property>
-					</Property>
-					<Property name="Children" />
-				</Property>
-				<Property name="Children" value="TkSceneNodeData">
-					<Property name="Name" value="REFHarvestData" />
-					<Property name="NameHash" value="2176906341" />
-					<Property name="Type" value="REFERENCE" />
-					<Property name="Transform" value="TkTransformData">
-						<Property name="TransX" value="0.000000" />
-						<Property name="TransY" value="0.000000" />
-						<Property name="TransZ" value="0.000000" />
-						<Property name="RotX" value="0.000000" />
-						<Property name="RotY" value="0.000000" />
-						<Property name="RotZ" value="0.000000" />
-						<Property name="ScaleX" value="1.000000" />
-						<Property name="ScaleY" value="1.000000" />
-						<Property name="ScaleZ" value="1.000000" />
-					</Property>
-					<Property name="PlatformExclusion" value="0" />
-					<Property name="Attributes">
-				    <Property name="Attributes" value="TkSceneNodeAttributeData">
-				    	<Property name="Name" value="SCENEGRAPH" />
-				    	<Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\HARVEST\HARVEST.SCENE.MBIN" />
-				    </Property>
-				    <Property name="Attributes" value="TkSceneNodeAttributeData">
-				    	<Property name="Name" value="EMBEDGEOMETRY" />
-				    	<Property name="Value" value="TRUE" />
-				    </Property>
-					</Property>
-					<Property name="Children" />
-				</Property>
-				<Property name="Children" value="TkSceneNodeData">
-					<Property name="Name" value="REFPScanData" />
-					<Property name="NameHash" value="241619397" />
-					<Property name="Type" value="REFERENCE" />
-					<Property name="Transform" value="TkTransformData">
-						<Property name="TransX" value="0.000000" />
-						<Property name="TransY" value="0.000000" />
-						<Property name="TransZ" value="0.000000" />
-						<Property name="RotX" value="0.000000" />
-						<Property name="RotY" value="0.000000" />
-						<Property name="RotZ" value="0.000000" />
-						<Property name="ScaleX" value="1.000000" />
-						<Property name="ScaleY" value="1.000000" />
-						<Property name="ScaleZ" value="1.000000" />
-					</Property>
-					<Property name="PlatformExclusion" value="0" />
-					<Property name="Attributes">
-				    <Property name="Attributes" value="TkSceneNodeAttributeData">
-				    	<Property name="Name" value="SCENEGRAPH" />
-				    	<Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\PLANETSCANNER\PLANETSCANNER.SCENE.MBIN" />
-				    </Property>
-				    <Property name="Attributes" value="TkSceneNodeAttributeData">
-				    	<Property name="Name" value="EMBEDGEOMETRY" />
-				    	<Property name="Value" value="TRUE" />
-				    </Property>
-					</Property>
-					<Property name="Children" />
-				</Property>
+        <Property name="Children" value="TkSceneNodeData">
+          <Property name="Name" value="REFGalMapData" />
+          <Property name="NameHash" value="4073298945" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="0.000000" />
+            <Property name="ScaleX" value="1.000000" />
+            <Property name="ScaleY" value="1.000000" />
+            <Property name="ScaleZ" value="1.000000" />
+          </Property>
+          <Property name="PlatformExclusion" value="0" />
+          <Property name="Attributes">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\GALACTICMAP\GALACTICMAP.SCENE.MBIN" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property name="Children" value="TkSceneNodeData">
+          <Property name="Name" value="REFSaveData" />
+          <Property name="NameHash" value="96205072" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="0.000000" />
+            <Property name="ScaleX" value="1.000000" />
+            <Property name="ScaleY" value="1.000000" />
+            <Property name="ScaleZ" value="1.000000" />
+          </Property>
+          <Property name="PlatformExclusion" value="0" />
+          <Property name="Attributes">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SAVE\SAVE.SCENE.MBIN" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property name="Children" value="TkSceneNodeData">
+          <Property name="Name" value="REFShieldData" />
+          <Property name="NameHash" value="781004035" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="0.000000" />
+            <Property name="ScaleX" value="1.000000" />
+            <Property name="ScaleY" value="1.000000" />
+            <Property name="ScaleZ" value="1.000000" />
+          </Property>
+          <Property name="PlatformExclusion" value="0" />
+          <Property name="Attributes">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\SHIELD.SCENE.MBIN" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property name="Children" value="TkSceneNodeData">
+          <Property name="Name" value="REFHarvestData" />
+          <Property name="NameHash" value="2176906341" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="0.000000" />
+            <Property name="ScaleX" value="1.000000" />
+            <Property name="ScaleY" value="1.000000" />
+            <Property name="ScaleZ" value="1.000000" />
+          </Property>
+          <Property name="PlatformExclusion" value="0" />
+          <Property name="Attributes">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\HARVEST\HARVEST.SCENE.MBIN" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property name="Children" value="TkSceneNodeData">
+          <Property name="Name" value="REFPScanData" />
+          <Property name="NameHash" value="241619397" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="0.000000" />
+            <Property name="ScaleX" value="1.000000" />
+            <Property name="ScaleY" value="1.000000" />
+            <Property name="ScaleZ" value="1.000000" />
+          </Property>
+          <Property name="PlatformExclusion" value="0" />
+          <Property name="Attributes">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\PLANETSCANNER\PLANETSCANNER.SCENE.MBIN" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
 ]]
                         },
                     }
@@ -2305,11 +2305,11 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="LodDistances">
-    <Property value="0" />
-    <Property value="50" />
-    <Property value="80" />
-    <Property value="150" />
-    <Property value="500" />
+    <Property name="LodDistances" value="0.000000" />
+    <Property name="LodDistances" value="50.000000" />
+    <Property name="LodDistances" value="80.000000" />
+    <Property name="LodDistances" value="150.000000" />
+    <Property name="LodDistances" value="500.000000" />
   </Property>
 </Data>
 ]]
@@ -2521,11 +2521,11 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="LodDistances">
-    <Property value="0" />
-    <Property value="50" />
-    <Property value="80" />
-    <Property value="150" />
-    <Property value="500" />
+    <Property name="LodDistances" value="0.000000" />
+    <Property name="LodDistances" value="50.000000" />
+    <Property name="LodDistances" value="80.000000" />
+    <Property name="LodDistances" value="150.000000" />
+    <Property name="LodDistances" value="500.000000" />
   </Property>
 </Data>
 ]]
@@ -3853,11 +3853,11 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="LodDistances">
-    <Property value="0" />
-    <Property value="50" />
-    <Property value="80" />
-    <Property value="150" />
-    <Property value="500" />
+    <Property name="LodDistances" value="0.000000" />
+    <Property name="LodDistances" value="50.000000" />
+    <Property name="LodDistances" value="80.000000" />
+    <Property name="LodDistances" value="150.000000" />
+    <Property name="LodDistances" value="500.000000" />
   </Property>
 </Data>
 ]]
@@ -4062,11 +4062,11 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="LodDistances">
-    <Property value="0" />
-    <Property value="50" />
-    <Property value="80" />
-    <Property value="150" />
-    <Property value="500" />
+    <Property name="LodDistances" value="0.000000" />
+    <Property name="LodDistances" value="50.000000" />
+    <Property name="LodDistances" value="80.000000" />
+    <Property name="LodDistances" value="150.000000" />
+    <Property name="LodDistances" value="500.000000" />
   </Property>
 </Data>
 ]]
