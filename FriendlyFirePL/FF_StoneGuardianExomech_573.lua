@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "StoneGuardianExomech"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "562"
+METADATA_NMS_VERSION    = "573"
 METADATA_MOD_DESC       = "This mod adds Stone Guardian pieces and dedicated technology modules for the Minotaur exocraft."
 
 
@@ -271,7 +271,7 @@ local function Technology_EditCrafting(section,data,slot) return
 {
     ["SEC_EDIT"] = section,
     ["SKW"] = {"Requirements","GcTechnologyRequirement",},
-    ["SECTION_ACTIVE"] = slot,
+    ["SECTION_ACTIVE"] = slot-1,
     ["VCT"] =
     {
         {"ID",data[slot][1],},

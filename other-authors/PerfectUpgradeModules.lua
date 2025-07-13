@@ -10,7 +10,7 @@ modMaint	= "DarkScythe"
 modDesc		= "Overrides all upgrade modules to have the best possible vanilla stats, with optional custom power scaling"
 modVer		= "1.1"
 scriptVer	= "a"
-gameVer		= "4.43"
+gameVer		= "4.47"
 
 --[[
 Enter a number here to set the approximate Power Scaling of upgrade module stats
@@ -84,7 +84,7 @@ and the mod is no longer being maintained.
 
 This mod will conflict with any other mod that alters these same files.
 A spot for merging in code from conflicting mods is provided below.
-Note that ONLY code from AMUMSS' EXML_CHANGE_TABLE blocks should be pasted there.
+Note that ONLY code from AMUMSS' MXML_CHANGE_TABLE blocks should be pasted there.
 
 One file is optional, and should only be active (and conflict with other mods)
 if its associated optional toggle is enabled; Otherwise it should not load.
@@ -356,7 +356,7 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 					we can just apply these next changes across the entire file
 					without needing to look for specific modules
 					--]]
-					EXML_CHANGE_TABLE	= {
+					MXML_CHANGE_TABLE	= {
 						{
 							--[[
 							We are using Lua Pattern Matching syntax here inside
@@ -415,7 +415,7 @@ add the appropriate entries into the AMUMSS mod container table above
 
 -- Define a variable pointing to the specific place in the AMUMSS table we want
 -- We will be referencing this throughout this section to add entries to it
-statModTable = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[1].EXML_CHANGE_TABLE
+statModTable = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[1].MXML_CHANGE_TABLE
 
 -- This function will go through each of the stat pool tables and create a table
 -- with the structure expected by AMUMSS

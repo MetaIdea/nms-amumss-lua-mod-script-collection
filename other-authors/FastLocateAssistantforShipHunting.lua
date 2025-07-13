@@ -139,7 +139,7 @@ and the mod is no longer being maintained.
 
 This mod will conflict with any other mod that alters these same files.
 A spot for merging in code from conflicting mods is provided in the tables below.
-Note that ONLY code from AMUMSS' EXML_CHANGE_TABLE blocks should be pasted there.
+Note that ONLY code from AMUMSS' MXML_CHANGE_TABLE blocks should be pasted there.
 
 Two files are optional, and should only be active (and conflict with other mods)
 if their associated optional toggles are enabled; Otherwise they shouldn't load.
@@ -318,7 +318,7 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 					-- Modding EXPERIENCESPAWNTABLE
 					-- Adjust the keywords if they ever change in future versions
 					MBIN_FILE_SOURCE	= spawnTableFile,
-					EXML_CHANGE_TABLE	= {
+					MXML_CHANGE_TABLE	= {
 						{
 							-- OutpostSpawns controls the waves bound for
 							-- Planetary Trading posts
@@ -356,14 +356,14 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 							-- that spawn when you're flying around in space
 							-- Used to help supplement the naturally lower
 							-- spawns in space
-							PKW	= {"SpaceFlybySpawns", "GcAIShipSpawnData.xml", "Count"},
+							PKW	= {"SpaceFlybySpawns", "Count"},
 							VCT	= {
 								{"x", minSpawns * spaceSpawnMulti},
 								{"y", maxSpawns * spaceSpawnMulti},
 							},
 						},
 						{
-							PKW	= {"SpaceFlybySpawns", "GcAIShipSpawnData.xml", "Spread"},
+							PKW	= {"SpaceFlybySpawns", "Spread"},
 							VCT	= {
 								{"x", 20},	-- Default 300
 								{"y", 30},	-- Default 300
@@ -380,7 +380,7 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 					-- All of these changes were already defined earlier, so
 					-- we'll just insert the table as-is here
 					MBIN_FILE_SOURCE	= shipGlobalFile,
-					EXML_CHANGE_TABLE	= {
+					MXML_CHANGE_TABLE	= {
 						shipBehaviorAdjustments,
 						----------------------------------------------------------------
 						---- Merge additional changes to GCAISPACESHIPGLOBALS below ----
@@ -413,7 +413,7 @@ if #shipsToRemove > 0 then
 	local shipSpawnFilter = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
 	shipSpawnFilter[#shipSpawnFilter + 1] = {
 		MBIN_FILE_SOURCE	= shipManagerFile,
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_FIRST	= "TRUE",
 				PKW				= shipFaction,
@@ -446,7 +446,7 @@ if forceSClass then
 	local addExtraTable = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
 	addExtraTable[#addExtraTable + 1] = {
 		MBIN_FILE_SOURCE	= inventoryTableFile,
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				-- Update this if the keyword ever changes in the future
 				PKW				= "ClassProbabilityData",
@@ -485,7 +485,7 @@ if modSpawnFreqMultis then
 	local addExtraTable = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
 	addExtraTable[#addExtraTable + 1] = {
 		MBIN_FILE_SOURCE	= solargenGlobalFile,
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				-- Update these keywords if they ever change in the future
 				PKW				= "SpaceshipSpawnFreqMultipliers",

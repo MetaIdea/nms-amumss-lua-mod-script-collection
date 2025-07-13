@@ -4,100 +4,123 @@ local mod_desc = [[
   The multitool upgrade and salvage menus from the weapons specialist terminal.
   The ship salavage and upgrade menu from the old monitor station.
 ]]------------------------------------------------------------------------------
----	LUA 2 EXML (VERSION: 0.85.7) ... by lMonk
----	A tool for converting exml to an equivalent lua table and back again.
---- The complete tool can be found at: https://github.com/roie-r/exml_2_lua
--------------------------------------------------------------------------------
---	Generate an EXML-tagged text from a lua table representation of exml class
---	@param class: a lua2exml formatted table
-local function ToExml(class)
-	--	Get the count of ALL objects in a table (non-recursive)
-	--	@param t: any table
-	local function len2(t)
-		if type(t) ~= 'table' then return -1 end
-		i=0; for _ in pairs(t) do i=i+1 end; return i
-	end
+---	MXML 2 LUA ... by lMonk ... version: 1.0.01
+---	A tool for converting between mxml file format and lua table.
+--- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
+--------------------------------------------------------------------------------
+--	=> Generate an MXML-tagged text from a lua table representation of mxml file
+--	@param class: a lua2mxml formatted table
+local function ToMxml(class)
 	--	replace a boolean with its text equivalent (ignore otherwise)
 	--	@param b: any value
 	local function bool(b)
-		return (type(b) == 'boolean') and ((b == true) and 'true' or 'false') or b
+		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
 	end
-	local function exml_r(tlua)
-		local exml = {}
-		function exml:add(t)
+	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite'}
+	local function mxml_r(tlua)
+		local out = {}
+		function out:add(t)
 			for _,v in ipairs(t) do self[#self+1] = v end
 		end
-		for key, cls in pairs(tlua) do
-			if key ~= 'meta' then
-				exml[#exml+1] = '<Property '
+		for attr, cls in pairs(tlua) do
+			if attr ~= 'meta' then
+				out:add({'<Property '})
 				if type(cls) == 'table' and cls.meta then
-					local att, val, lnk = cls['meta'][1], cls['meta'][2], cls['meta'][3]
-					-- add and recurs for an inner table
-					if att == 'name' or att == 'value' then
-						exml:add({att, '="', val})
-					else
-						exml:add({'name="', att, '" value="', val})
-						if lnk then
-							exml:add({'" linked="', lnk})
-						end
+				-- add new section and recurs for nested sections
+					for _,at in ipairs(at_ord) do
+						if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
 					end
-					exml:add({'">', exml_r(cls), '</Property>'})
+					-- for k, v in pairs(cls.meta) do
+						-- if k:sub(-1) ~= '_' then out:add({k, '="', bool(v), '"', ' '}) end
+					-- end
+					table.remove(out) -- trim last space
+					out:add({'>', mxml_r(cls), '</Property>'})
 				else
-					-- add a regular property
-					if type(cls) == 'table' then
-						key, cls = next(cls)
-					end
-					if key == 'name' or key == 'value' then
-						exml:add({key, '="', bool(cls), '"/>'})
+				-- add section properties
+					local att, val = nil, nil
+					if tonumber(attr) then
+						if type(cls) == 'table' then
+							att, val = next(cls)
+						else
+							att = tlua.meta.name
+							val = cls
+						end
 					else
-						exml:add({'name="', key, '" value="', bool(cls), '"/>'})
+						att = attr
+						val = cls
+					end
+					if att == 'name' then
+						out:add({att, '="', bool(val), '"/>'})
+					else
+						out:add({'name="', att, '" value="', bool(val), '"/>'})
 					end
 				end
 			end
 		end
-		return table.concat(exml)
+		return table.concat(out)
 	end
 	-------------------------------------------------------------------------
 	-- check the table level structure and meta placement
-	-- add the needed layer for the recursion and handle multiple tables
-	local klen = len2(class)
+	-- add parent table for the recursion and handle multiple tables
+	if type(class) ~= 'table' then return nil end
+	local klen=0; for _ in pairs(class) do klen=klen+1 end
+
 	if klen == 1 and class[1].meta then
-		return exml_r(class)
+		return mxml_r(class)
 	elseif class.meta and klen > 1 then
-		return exml_r( {class} )
-	-- concatenate unrelated (instead of nested) exml sections
+		return mxml_r( {class} )
+	-- concatenate unrelated (instead of nested) mxml sections
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
-			T[#T+1] = exml_r((tb.meta and klen > 1) and {tb} or tb)
+			T[#T+1] = mxml_r((tb.meta and klen > 1) and {tb} or tb)
 		end
 		return table.concat(T)
 	end
 	return nil
 end
 
---	Adds the xml header and data template
---	Uses the contained template meta if found (instead of the received variable)
---	@param data: a lua2exml formatted table
---	@param template: an nms file template string
-local function FileWrapping(data, template)
-	local wrapper = '<Data template="%s">%s</Data>'
-	if type(data) == 'string' then
-		return string.format(wrapper, template, data)
+--	=> Adds the header and class template for a standard mxml file
+--	@param data: A lua2mxml formatted table
+--	@param template: [optional] A class template string. Overwrites the internal template!
+local function ToMxmlFile(tlua, ext_tmpl)
+	local wrapper = '<?xml version="1.0" encoding="utf-8"?><Data template="%s">%s</Data>'
+	if type(tlua) == 'string' then
+		return wrapper:format(ext_tmpl, tlua)
 	end
-	-- remove the extra table added by ToLua
-	if data.template then data = data.template end
-	-- table loaded from file
-	if data.meta[1] == 'template' then
-		-- strip mock template
-		local txt_data = ToExml(data):sub(#data.meta[2] + 36, -12)
-		return string.format(wrapper, data.meta[2], txt_data)
-	else
-		return string.format(wrapper, template, ToExml(data))
+	-- replace existing or add template layer if needed
+	if ext_tmpl then
+		if tlua.meta.template then
+			tlua.meta.template = ext_tmpl
+		else
+			tlua = {
+				meta = {template=ext_tmpl},
+				tlua
+			}
+		end
 	end
+	-- strip mock template
+	local txt_data = ToMxml(tlua):sub(#tlua.meta.template + 23, -12)
+	return wrapper:format(tlua.meta.template, txt_data)
 end
 
---	Build a single -or list of TkSceneNodeData classes
+--	=> Determine if received is a single or multi-item
+--	then process items through the received function
+--	@param items: table of item properties or a non-keyed table of items (keys are ignored)
+--	@param acton: the function to process the items in the table
+local function ProcessOnenAll(items, acton)
+	-- first key = 1 means multiple entries
+	if next(items) == 1 then
+		local T = {}
+		for _,e in ipairs(items) do
+			T[#T+1] = acton(e)
+		end
+		return T
+	end
+	return acton(items)
+end
+
+--	=> Build a single -or list of TkSceneNodeData classes
 --	@param props: a keyed table for scene class properties.
 --	{
 --	  name	= scene node name (NameHash is calculated automatically)
@@ -108,7 +131,7 @@ end
 --	  attr	= [optional] Attributes table of {name, value} pairs
 --	  child	= [optional] Children table for ScNode tables
 --	}
-function ScNode(nodes)
+local function ScNode(nodes)
 	--	returns a jenkins hash from a string (by lyravega)
 	local function jenkinsHash(input)
 		local hash = 0
@@ -127,7 +150,7 @@ function ScNode(nodes)
 	--	Build a TkSceneNodeData class
 	local function sceneNode(props)
 		local T	= {
-			meta	= {'value', 'TkSceneNodeData.xml'},
+			meta	= {name='Children', value='TkSceneNodeData'},
 			Name 				= props.name,
 			NameHash			= jenkinsHash(props.name),
 			Type				= props.ntype,
@@ -136,7 +159,7 @@ function ScNode(nodes)
 		--	add TkTransformData class
 		props.form = props.form or {}
 		T.Form = {
-			meta	= {'Transform', 'TkTransformData.xml'},
+			meta	= {name='Transform', value='TkTransformData'},
 			TransX	= (props.form.tx or props.form[1]) or nil,
 			TransY	= (props.form.ty or props.form[2]) or nil,
 			TransZ	= (props.form.tz or props.form[3]) or nil,
@@ -153,10 +176,10 @@ function ScNode(nodes)
 			if props.attr.SCENEGRAPH then
 				props.attr.EMBEDGEOMETRY = 'TRUE'
 			end
-			T.Attr = { meta = {'name', 'Attributes'} }
+			T.Attr = { meta = {name='Attributes'} }
 			for nm, val in pairs(props.attr) do
 				T.Attr[#T.Attr+1] = {
-					meta	= {'value', 'TkSceneNodeAttributeData.xml'},
+					meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
 					Name	= nm,
 					Value	= val
 				}
@@ -167,32 +190,23 @@ function ScNode(nodes)
 			local k,_ = next(props.child)
 			cnd = ScNode(props.child)
 			T.Child	= k == 1 and cnd or {cnd}
-			T.Child.meta = {'name', 'Children'}
+			T.Child.meta = {name='Children'}
 		end
 		return T
 	end
-	-----------------------------------------------------------------
-	local k,_ = next(nodes)
-	if k == 1 then
-	-- k=1 means the first of a list of unrelated, non-nested, nodes
-		local T = {}
-		for _,nd in ipairs(nodes) do
-				T[#T+1] = sceneNode(nd)
-		end
-		return T
-	end
-	return sceneNode(nodes)
+	return ProcessOnenAll(nodes, sceneNode)
 end
+---------------------------------------------------------------------------------
 
 -- interaction button attachment; full mbin or component only
 local function InteractEntity(action, full_entity)
 	local interact = {
-		meta = {'Components','GcInteractionComponentData'},
+		meta = {name='Components', value='GcInteractionComponentData'},
 		{
-			meta = {'value','GcInteractionComponentData'},
+			meta = {name='value', value='GcInteractionComponentData'},
 			InteractionAction = 'PressButton',
 			InteractionType = {
-				meta = {'InteractionType','GcInteractionType'},
+				meta = {name='InteractionType', value='GcInteractionType'},
 				InteractionType = action
 			},
 			AttractDistanceSq	= 9,
@@ -201,13 +215,13 @@ local function InteractEntity(action, full_entity)
 		}
 	}
 	if full_entity then
-		return FileWrapping({
-			meta = {'template','cTkAttachmentData'},
+		return ToMxmlFile({
+			meta = {template='cTkAttachmentData'},
 			Components = {
-				meta = {'name','Components'},
-				Interaction	= interact,	
+				meta = {name='Components'},
+				Interaction	= interact,
 				Physics		= {
-					meta = {'Components','TkPhysicsComponentData'},
+					meta = {name='Components', value='TkPhysicsComponentData'},
 					{name='TkPhysicsComponentData'}
 				}
 			}
@@ -222,14 +236,14 @@ local buildparts = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.ship and multitool upgrade terminals.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.55',
+	NMS_VERSION			= '5.73',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{--	|ship upgrade menu|
 		MBIN_FILE_SOURCE	= buildparts..'DECORATION/NEXUSORBPILLAR.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'DATA'},
 				VALUE_CHANGE_TABLE 	= {
@@ -246,13 +260,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{--	|multitool upgrade menu|
 		MBIN_FILE_SOURCE	= buildparts..'NPCROOMS/NPC_WEAPONS/ENTITIES/WEAPON5SPIN.ENTITY.MBIN',
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_KEY_WORDS	= 'Components',
-				ADD					= ToExml({
+				ADD					= ToMxml({
 					InteractEntity('WeaponUpgrade'),
 					Physics = {
-						meta = {'Components','TkPhysicsComponentData'},
+						meta = {name='Components', value='TkPhysicsComponentData'},
 						{name='TkPhysicsComponentData'}
 					}
 				})
@@ -261,11 +275,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{--	|multitool salvage base|
 		MBIN_FILE_SOURCE	= buildparts..'NPCROOMS/NPC_WEAPONS.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'Workstation'},
 				PRECEDING_KEY_WORDS = 'Children',
-				ADD					= ToExml(
+				ADD					= ToMxml(
 					ScNode({
 						name	= 'WeapSalvage',
 						ntype	= 'LOCATOR',
@@ -286,11 +300,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{--	|multitool salvage freighter|
 		MBIN_FILE_SOURCE	= buildparts..'FREIGHTERBASE/ROOMS/NPCWEAROOM/PARTS/FLOOR0.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'Workstation'},
 				ADD_OPTION			= 'AddAfterSection',
-				ADD					= ToExml(
+				ADD					= ToMxml(
 					ScNode({
 						name	= 'WeapSalvage',
 						ntype	= 'LOCATOR',

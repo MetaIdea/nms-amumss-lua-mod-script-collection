@@ -1655,7 +1655,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="REFGalMapData" />
           <Property name="NameHash" value="4073298945" />
-          <Property name="Type" value="REFERENCE" />
+          <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0.000000" />
             <Property name="TransY" value="0.000000" />
@@ -1670,12 +1670,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property name="Attributes" value="TkSceneNodeAttributeData">
-              <Property name="Name" value="SCENEGRAPH" />
-              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\GALACTICMAP\GALACTICMAP.SCENE.MBIN" />
-            </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData">
-              <Property name="Name" value="EMBEDGEOMETRY" />
-              <Property name="Value" value="TRUE" />
+              <Property name="Name" value="ATTACHMENT" />
+              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\GALACTICMAP\ENTITIES\GALACTICMAP.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -1683,7 +1679,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="REFSaveData" />
           <Property name="NameHash" value="96205072" />
-          <Property name="Type" value="REFERENCE" />
+          <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0.000000" />
             <Property name="TransY" value="0.000000" />
@@ -1698,12 +1694,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property name="Attributes" value="TkSceneNodeAttributeData">
-              <Property name="Name" value="SCENEGRAPH" />
-              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SAVE\SAVE.SCENE.MBIN" />
-            </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData">
-              <Property name="Name" value="EMBEDGEOMETRY" />
-              <Property name="Value" value="TRUE" />
+              <Property name="Name" value="ATTACHMENT" />
+              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SAVE\ENTITIES\SAVE.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -1739,7 +1731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="REFHarvestData" />
           <Property name="NameHash" value="2176906341" />
-          <Property name="Type" value="REFERENCE" />
+          <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0.000000" />
             <Property name="TransY" value="0.000000" />
@@ -1754,12 +1746,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property name="Attributes" value="TkSceneNodeAttributeData">
-              <Property name="Name" value="SCENEGRAPH" />
-              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\HARVEST\HARVEST.SCENE.MBIN" />
-            </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData">
-              <Property name="Name" value="EMBEDGEOMETRY" />
-              <Property name="Value" value="TRUE" />
+              <Property name="Name" value="ATTACHMENT" />
+              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\HARVEST\ENTITIES\HARVEST.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -1767,7 +1755,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="REFPScanData" />
           <Property name="NameHash" value="241619397" />
-          <Property name="Type" value="REFERENCE" />
+          <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0.000000" />
             <Property name="TransY" value="0.000000" />
@@ -1782,12 +1770,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property name="Attributes" value="TkSceneNodeAttributeData">
-              <Property name="Name" value="SCENEGRAPH" />
-              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\PLANETSCANNER\PLANETSCANNER.SCENE.MBIN" />
-            </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData">
-              <Property name="Name" value="EMBEDGEOMETRY" />
-              <Property name="Value" value="TRUE" />
+              <Property name="Name" value="ATTACHMENT" />
+              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\PLANETSCANNER\ENTITIES\PLANETSCANNER.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -2152,38 +2136,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\GALACTICMAP\GALACTICMAP.SCENE.MXML",
-            ["FILE_CONTENT"] =
-[[
-<?xml version="1.0" encoding="utf-8"?>
-
-<Data template="cTkSceneNodeData">
-  <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\GALACTICMAP" />
-  <Property name="NameHash" value="1187083149" />
-  <Property name="Type" value="LOCATOR" />
-  <Property name="Transform" value="TkTransformData">
-    <Property name="TransX" value="0" />
-    <Property name="TransY" value="0" />
-    <Property name="TransZ" value="0" />
-    <Property name="RotX" value="0" />
-    <Property name="RotY" value="0" />
-    <Property name="RotZ" value="0" />
-    <Property name="ScaleX" value="1" />
-    <Property name="ScaleY" value="1" />
-    <Property name="ScaleZ" value="1" />
-    </Property>
-    <Property name="PlatformExclusion" value="0" />
-  <Property name="Attributes">
-    <Property name="Attributes" value="TkSceneNodeAttributeData">>
-      <Property name="Name" value="ATTACHMENT" />
-      <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\GALACTICMAP\ENTITIES\GALACTICMAP.ENTITY.MBIN" />
-    </Property>
-  </Property>
-  <Property name="Children" />
-</Data>
-]]
-        },
-        {
             ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\GALACTICMAP\ENTITIES\GALACTICMAP.ENTITY.MXML",
             ["FILE_CONTENT"] =
 [[
@@ -2311,38 +2263,6 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="LodDistances" value="150.000000" />
     <Property name="LodDistances" value="500.000000" />
   </Property>
-</Data>
-]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SAVE\SAVE.SCENE.MXML",
-            ["FILE_CONTENT"] =
-[[
-<?xml version="1.0" encoding="utf-8"?>
-
-<Data template="cTkSceneNodeData">
-  <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SAVE" />
-  <Property name="NameHash" value="643301275" />
-  <Property name="Type" value="LOCATOR" />
-  <Property name="Transform" value="TkTransformData">
-    <Property name="TransX" value="0" />
-    <Property name="TransY" value="0" />
-    <Property name="TransZ" value="0" />
-    <Property name="RotX" value="0" />
-    <Property name="RotY" value="0" />
-    <Property name="RotZ" value="0" />
-    <Property name="ScaleX" value="1" />
-    <Property name="ScaleY" value="1" />
-    <Property name="ScaleZ" value="1" />
-  </Property>
-  <Property name="PlatformExclusion" value="0" />
-  <Property name="Attributes">
-    <Property name="Attributes" value="TkSceneNodeAttributeData">
-      <Property name="Name" value="ATTACHMENT" />
-      <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SAVE\ENTITIES\SAVE.ENTITY.MBIN" />
-    </Property>
-  </Property>
-  <Property name="Children" />
 </Data>
 ]]
         },
@@ -3652,38 +3572,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\HARVEST\HARVEST.SCENE.MXML",
-            ["FILE_CONTENT"] =
-[[
-<?xml version="1.0" encoding="utf-8"?>
-
-<Data template="cTkSceneNodeData">
-  <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\HARVEST" />
-  <Property name="NameHash" value="4051767790" />
-  <Property name="Type" value="LOCATOR" />
-  <Property name="Transform" value="TkTransformData">
-    <Property name="TransX" value="0" />
-    <Property name="TransY" value="0" />
-    <Property name="TransZ" value="0" />
-    <Property name="RotX" value="0" />
-    <Property name="RotY" value="0" />
-    <Property name="RotZ" value="0" />
-    <Property name="ScaleX" value="1" />
-    <Property name="ScaleY" value="1" />
-    <Property name="ScaleZ" value="1" />
-  </Property>
-  <Property name="PlatformExclusion" value="0" />
-  <Property name="Attributes">
-    <Property name="Attributes" value="TkSceneNodeAttributeData">
-      <Property name="Name" value="ATTACHMENT" />
-      <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\HARVEST\ENTITIES\HARVEST.ENTITY.MBIN" />
-    </Property>
-  </Property>
-  <Property name="Children" />
-</Data>
-]]
-        },
-        {
             ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\HARVEST\ENTITIES\HARVEST.ENTITY.MXML",
             ["FILE_CONTENT"] =
 [[
@@ -3859,38 +3747,6 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="LodDistances" value="150.000000" />
     <Property name="LodDistances" value="500.000000" />
   </Property>
-</Data>
-]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\PLANETSCANNER\PLANETSCANNER.SCENE.MXML",
-            ["FILE_CONTENT"] =
-[[
-<?xml version="1.0" encoding="utf-8"?>
-
-<Data template="cTkSceneNodeData">
-  <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\PLANETSCANNER" />
-  <Property name="NameHash" value="3884128067" />
-  <Property name="Type" value="LOCATOR" />
-  <Property name="Transform" value="TkTransformData">
-    <Property name="TransX" value="0" />
-    <Property name="TransY" value="0" />
-    <Property name="TransZ" value="0" />
-    <Property name="RotX" value="0" />
-    <Property name="RotY" value="0" />
-    <Property name="RotZ" value="0" />
-    <Property name="ScaleX" value="1" />
-    <Property name="ScaleY" value="1" />
-    <Property name="ScaleZ" value="1" />
-    </Property>
-    <Property name="PlatformExclusion" value="0" />
-  <Property name="Attributes">
-    <Property name="Attributes" value="TkSceneNodeAttributeData">
-      <Property name="Name" value="ATTACHMENT" />
-      <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\PLANETSCANNER\ENTITIES\PLANETSCANNER.ENTITY.MBIN" />
-    </Property>
-  </Property>
-  <Property name="Children" />
 </Data>
 ]]
         },
