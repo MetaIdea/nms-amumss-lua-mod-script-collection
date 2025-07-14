@@ -1,10 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_AsteroidEffects_v522-A.pak",
+["MOD_FILENAME"]            = "MOD_DUD_AsteroidEffects_v564-A",
 ["MOD_AUTHOR"]              = "JasonDude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.22",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "5.64",
 ["MODIFICATIONS"]           =
     {
         {
@@ -12,15 +11,15 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/EFFECTS/SPACEEFFECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_R_EXP"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",               "1.5"},
-                                {"CamShake",           "True"},
-                                {"CamShakeSpaceScale", "True"},
+                                {"CamShake",           "true"},
+                                {"CamShakeSpaceScale", "true"},
                             }
                         },
                         {
@@ -32,8 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_R_EXP"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_R_EXP", "Debris", "GcDebrisData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number",        "2"},
@@ -45,27 +43,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_R_EXP"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-        <Property value="GcDebrisData.xml">
-          <Property name="Filename" value="TkModelResource.xml">
-            <Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
-            <Property name="ResHandle" value="GcResource.xml">
-              <Property name="ResourceID" value="0" />
-            </Property>
-          </Property>
-          <Property name="Number" value="3" />
-          <Property name="Radius" value="15" />
-          <Property name="Scale" value="0.008" />
-          <Property name="Speed" value="1000" />
-          <Property name="AnglularSpeed" value="10" />
-          <Property name="OverrideSeed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="True" />
-          </Property>
-        </Property>
+				<Property name="Debris" value="GcDebrisData">
+					<Property name="Filename" value="TkModelResource">
+						<Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
+						<Property name="ResHandle" value="GcResource">
+							<Property name="ResourceID" value="0" />
+						</Property>
+						<Property name="Seed" value="0" />
+					</Property>
+					<Property name="Number" value="3" />
+					<Property name="Radius" value="15.000000" />
+					<Property name="Scale" value="0.008000" />
+					<Property name="Speed" value="1000.000000" />
+					<Property name="AnglularSpeed" value="10.000000" />
+					<Property name="OverrideSeed" value="0" />
+				</Property>
 ]]
                         },
                         {
@@ -78,8 +74,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris", "GcDebrisData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP", "Debris", "GcDebrisData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number",        "2"},
@@ -90,11 +85,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
-                            ["PRECEDING_KEY_WORDS"] = {"Debris", "GcDebrisData.xml", "GcDebrisData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP", "Debris", "GcDebrisData"},
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number",        "4"},
+                                {"Number",        "3"},
                                 {"Radius",        "15"},
                                 {"Scale",         "0.02"},
                                 {"AnglularSpeed", "8"},
@@ -105,29 +100,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",               "3"},
-                                {"CamShake",           "True"},
-                                {"CamShakeSpaceScale", "True"},
+                                {"CamShake",           "true"},
+                                {"CamShakeSpaceScale", "true"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Number", "3"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
-                            ["VALUE_MATCH"] = 80,
+                            ["VALUE_MATCH"] = 80.000000,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Scale", "30"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_S_EXP"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_S_EXP", "Debris", "GcDebrisData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number",        "2"},
@@ -138,27 +124,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_S_EXP"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-        <Property value="GcDebrisData.xml">
-          <Property name="Filename" value="TkModelResource.xml">
-            <Property name="Filename" value="MODELS/SPACE/ASTEROIDS/SMALLASTEROID.SCENE.MBIN" />
-            <Property name="ResHandle" value="GcResource.xml">
-              <Property name="ResourceID" value="0" />
-            </Property>
-          </Property>
-          <Property name="Number" value="3" />
-          <Property name="Radius" value="15" />
-          <Property name="Scale" value="0.15" />
-          <Property name="Speed" value="1000" />
-          <Property name="AnglularSpeed" value="4" />
-          <Property name="OverrideSeed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-        </Property>
+				<Property name="Debris" value="GcDebrisData">
+					<Property name="Filename" value="TkModelResource">
+						<Property name="Filename" value="MODELS/SPACE/ASTEROIDS/SMALLASTEROID.SCENE.MBIN" />
+						<Property name="ResHandle" value="GcResource">
+							<Property name="ResourceID" value="0" />
+						</Property>
+						<Property name="Seed" value="0" />
+					</Property>
+					<Property name="Number" value="3" />
+					<Property name="Radius" value="15.000000" />
+					<Property name="Scale" value="0.150000" />
+					<Property name="Speed" value="1000.000000" />
+					<Property name="AnglularSpeed" value="4.000000" />
+					<Property name="OverrideSeed" value="NONE" />
+				</Property>
 ]]
                         },
                         {
@@ -166,8 +150,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",               "3"},
-                                {"CamShake",           "True"},
-                                {"CamShakeSpaceScale", "True"},
+                                {"CamShake",           "true"},
+                                {"CamShakeSpaceScale", "true"},
                             }
                         },
                         {
@@ -183,8 +167,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Scale",              "20"},
-                                {"CamShake",           "True"},
-                                {"CamShakeSpaceScale", "True"},
+                                {"CamShake",           "true"},
+                                {"CamShakeSpaceScale", "true"},
                             }
                         },
                         {
@@ -197,42 +181,38 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-      <Property name="Debris">
-        <Property value="GcDebrisData.xml">
-          <Property name="Filename" value="TkModelResource.xml">
-            <Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
-            <Property name="ResHandle" value="GcResource.xml">
-              <Property name="ResourceID" value="0" />
-            </Property>
-          </Property>
-          <Property name="Number" value="1" />
-          <Property name="Radius" value="1" />
-          <Property name="Scale" value="0.013" />
-          <Property name="Speed" value="700" />
-          <Property name="AnglularSpeed" value="10" />
-          <Property name="OverrideSeed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-        </Property>
-        <Property value="GcDebrisData.xml">
-          <Property name="Filename" value="TkModelResource.xml">
-            <Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
-            <Property name="ResHandle" value="GcResource.xml">
-              <Property name="ResourceID" value="0" />
-            </Property>
-          </Property>
-          <Property name="Number" value="1" />
-          <Property name="Radius" value="1" />
-          <Property name="Scale" value="0.01" />
-          <Property name="Speed" value="1000" />
-          <Property name="AnglularSpeed" value="20" />
-          <Property name="OverrideSeed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-        </Property>
-      </Property>
+			<Property name="Debris">
+				<Property name="Debris" value="GcDebrisData">
+					<Property name="Filename" value="TkModelResource">
+						<Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
+						<Property name="ResHandle" value="GcResource">
+							<Property name="ResourceID" value="0" />
+						</Property>
+						<Property name="Seed" value="0" />
+					</Property>
+					<Property name="Number" value="1" />
+					<Property name="Radius" value="1.000000" />
+					<Property name="Scale" value="0.013000" />
+					<Property name="Speed" value="700.000000" />
+					<Property name="AnglularSpeed" value="10.000000" />
+					<Property name="OverrideSeed" value="NONE" />
+				</Property>
+				<Property name="Debris" value="GcDebrisData">
+					<Property name="Filename" value="TkModelResource">
+						<Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
+						<Property name="ResHandle" value="GcResource">
+							<Property name="ResourceID" value="0" />
+						</Property>
+						<Property name="Seed" value="0" />
+					</Property>
+					<Property name="Number" value="1" />
+					<Property name="Radius" value="1.000000" />
+					<Property name="Scale" value="0.010000" />
+					<Property name="Speed" value="1000.000000" />
+					<Property name="AnglularSpeed" value="20.000000" />
+					<Property name="OverrideSeed" value="NONE" />
+				</Property>
+			</Property>
 ]]
                         },
                     }

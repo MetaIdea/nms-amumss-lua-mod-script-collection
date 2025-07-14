@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_BetterFishing_v512-B.pak",
+["MOD_FILENAME"]  = "MOD_DUD_BetterFishing_v564-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.12",
+["NMS_VERSION"]   = "5.64",
 ["MODIFICATIONS"] =
     {
         {
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "GCFISHINGGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -34,14 +34,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LineColourDefault", "Colour.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"LineColourDefault"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LineColourNibble", "Colour.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"LineColourNibble"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.48"},
@@ -51,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LineColourBite", "Colour.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"LineColourBite"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.467"},
@@ -61,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LineColourChase", "Colour.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"LineColourChase"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.467"},
@@ -71,14 +71,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LineColourLand", "Colour.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"LineColourLand"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.8"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LineColourFail", "Colour.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"LineColourFail"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.48"},

@@ -1,10 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v520-A.pak",
+["MOD_FILENAME"]            = "MOD_DUD_AiShipPlusMoreDamage_v564-A.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.20",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "5.64",
 ["MODIFICATIONS"]           =
     {
         {
@@ -12,70 +11,84 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SummonStartSpeed",                   "150"},
-                                {"MinimumCircleTimeBeforeLanding",     "20"},
-                                {"TradingPostTraderRequestTime",       "60"},
-                                {"TurretOriginOffset",                 "0"},
-                                {"SpaceStationTraderRequestTime",      "30"},
-                                {"DockingLandingTime",                 "2"},
-                                {"DockingLandingTimeDirectional",      "2"},
-                                {"DockWaitMinTime",                    "60"},
-                                {"DockWaitMaxTime",                    "120"},
-                                {"DisableTradeRoutes",                 "True"},
-                                {"LandingManuevreTime",                "2"},
-                                {"LandingManeuvreAlignTime",           "2"},
-                                {"GroundCircleHeight",                 "90"},
-                                {"MaxDifficultySpaceCombatTurnExtra",  "0"},
-                                {"MaxDifficultySpaceCombatSpeedExtra", "0"},
-                                {"TurretOriginOffset",                 "15"},
-                                {"AsteroidMiningMinDistFromPlayer",    "500"},
+                                {"DisplayShipAttackTypes",             "true"},
+                                {"MaxDifficultySpaceCombatTurnExtra",  "0.000000"},
+                                {"MaxDifficultySpaceCombatSpeedExtra", "0.000000"},
+                                {"MinimumCircleTimeBeforeLanding",     "20.000000"},
+                                {"TradersAttackPirates",               "false"},
+                                {"FreightersAlwaysAttackPlayer",       "true"},
+                                {"AtmosphereEffectEnabled",            "true"},
+                                {"EnergyShieldsEnabled",               "false"},
+                                {"EnergyShieldAlwaysVisible",          "true"},
+                                {"AttackRepositionBoost",              "false"},
+                                {"AttackShipsFollowLeader",            "true"},
+                                {"AsteroidMiningMinDistFromPlayer",    "500.000000"},
+                                {"Settlement_Hub_Builders",            "false"},
+                                {"Settlement_FishPond",                "true"},
+                                {"TradingPostTraderRequestTime",       "60.000000"},
+                                {"SpaceStationTraderRequestTime",      "30.000000"},
+                                {"FreightersSamePalette",              "false"},
+                                {"EnableLoot",                         "false"},
+                                {"FreighterIgnorePlayer",              "true"},
+                                {"ScaleDisabledWhenOnFreighter",       "true"},
+                                {"DockingLandingTime",                 "2.000000"},
+                                {"DockingLandingTimeDirectional",      "2.000000"},
+                                {"DockWaitMinTime",                    "60.000000"},
+                                {"DockWaitMaxTime",                    "120.000000"},
+                                {"LandingManuevreTime",                "2.000000"},
+                                {"LandingManeuvreAlignTime",           "2.000000"},
+                                {"GroundCircleHeight",                 "90.000000"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CombatFormationOffset", "Vector3f.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"CombatFormationOffset"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"y", "10"},
-                                {"z", "140"}
+                                {"Y", "10.000000"},
+                                {"Z", "140.000000"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CombatFormationOffsetThirdPerson", "Vector3f.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"CombatFormationOffsetThirdPerson"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"y", "10"},
-                                {"z", "110"}
+                                {"Y", "10.000000"},
+                                {"Z", "110.000000"}
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"AsteroidMiningPositioningTravelData", "GcSpaceshipTravelData.xml"},
-                                {"AsteroidMiningTravelData",            "GcSpaceshipTravelData.xml"},
+                                {"AsteroidMiningPositioningTravelData", "GcSpaceshipTravelData"},
+                                {"AsteroidMiningTravelData",            "GcSpaceshipTravelData"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Force", "20"},
+                                {"Force", "20.000000"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TradeRouteColours"},
-                            ["REPLACE_TYPE"] = "ALL",
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                              {"TrailScaleCurve", "TkCurveType"},
+                              {"WarpInCurve",     "TkCurveType"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"A", "0.02"},
+                                {"Curve", "Linear"},
                             },
+
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SPACE\AISPACESHIPATTACKDATATABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
@@ -367,7 +380,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_STRONG"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"GunDispersionAngle",           "3"},
+                                {"GunDispersionAngle",           "2"},
                                 {"GunFireRate",                  "0.13"},
                                 {"AttackWeaponRange",            "2000"},
                                 {"AttackShootWaitTime",          "1"},
@@ -559,7 +572,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\PROJECTILES\PROJECTILETABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SHIPGUN"},
@@ -639,7 +652,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTGUNDMG"},
@@ -678,6 +691,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "PLANTDMG"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Damage", "35"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SPORE_VENT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Damage", "35"},
@@ -771,12 +791,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\ENTITIES\TURRET.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TurretRange",                      "2500"},
+                                {"TurretLaserShootTime",             "2"},
+                                {"TurretLaserMoveSpeed",             "5"},
                                 {"TurretLaserAbortDistance",         "1500"},
                                 {"TurretShootPauseTime",             "2"},
                                 {"TurretBurstCount",                 "20"},
@@ -791,7 +813,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA_POLICE\ENTITIES\TURRETPOLICE.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -799,11 +821,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TurretRange",                      "2500"},
                                 {"TurretLaserShootTime",             "2"},
                                 {"TurretLaserMoveSpeed",             "5"},
-                                {"TurretLaserChargeTime",            "0"},
+                                {"TurretLaserChargeTime",            "0.5"},
                                 {"TurretLaserAbortDistance",         "1500"},
                                 {"TurretShootPauseTime",             "2"},
-                                {"TurretBurstCount",                 "1"},
-                                {"TurretBurstTime",                  "0.15"},
+                                {"TurretBurstCount",                 "20"},
+                                {"TurretBurstTime",                  "0.20"},
                                 {"TurretMaxYawTurnSpeedDegPerSec",   "360"},
                                 {"TurretMaxPitchTurnSpeedDegPerSec", "180"},
                                 {"TurretAngle",                      "360"},
