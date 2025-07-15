@@ -3,7 +3,7 @@ local lua_author  = "Silent"
 local lua_version = "4.5"
 local mod_author  = "Silent369"
 local contributor = "Spectrus1702"
-local nms_version = "5.73"
+local nms_version = "5.74"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
@@ -17,22 +17,16 @@ https://github.com/cmkushnir/NMSModBuilder
 
 ------------------------------------------------------------------------------------------
 
-local _ScanRange = 15000.000000
-local _ScanTime  = 30.000000
-local _RangeMult = 1.000000
-local _ShowRange = 15000.000000
-local _Override  = 50.000000
+local m_ScanRange = 15000.000000
+local m_ScanTime  = 30.000000
+local m_RangeMult = 1.000000
+local m_ShowRange = 15000.000000
+local m_Override  = 50.000000
 
 ------------------------------------------------------------------------------------------
 -- Create Scannable Component Data (with optional Wrapper)
 ------------------------------------------------------------------------------------------
 function CreateScannableComponentData(ScanRange, ScanName, ScanTime, RangeMult, ShowRange, DisplayIcon, AllowMerge, Override, Wrapper)
-    ScanRange = tostring(ScanRange)
-    ScanTime  = tostring(ScanTime)
-    RangeMult = tostring(RangeMult)
-    ShowRange = tostring(ShowRange)
-    Override  = tostring(Override)
-
     local Content = [[
 			<Property name="GcScannableComponentData">
 				<Property name="ScanRange" value="]]..ScanRange..[[" />
@@ -61,7 +55,7 @@ function CreateScannableComponentData(ScanRange, ScanName, ScanTime, RangeMult, 
 				<Property name="MarkerActiveWithNodeInactive" value="true" />
 				<Property name="ValidMissionSurveyIds" />
 				<Property name="MinDisplayDistanceOverride" value="0.000000" />
-				<Property name="MarkerOffsetOverride" value="0.000000" />
+				<Property name="MarkerOffsetOverride" value="]]..Override..[[" />
 			</Property>]]
 
     -- Rolling Plant has a specific GcScannableComponentData with an _index
@@ -80,8 +74,7 @@ end
 ------------------------------------------------------------------------------------------
 -- Audio component for Distress Signals
 ------------------------------------------------------------------------------------------
-local DistressSound =
-[[
+local DistressSound = [[
 		<Property name="Components" value="GcAudioAreaTriggerComponentData">
 			<Property name="GcAudioAreaTriggerComponentData">
 				<Property name="Event Enter" value="GcAudioWwiseEvents">
@@ -90,8 +83,8 @@ local DistressSound =
 				<Property name="Event Exit" value="GcAudioWwiseEvents">
 					<Property name="AkEvent" value="INVALID_EVENT" />
 				</Property>
-				<Property name="Enter Distance" value="]]..tostring(_ShowRange)..[[" />
-				<Property name="Exit Distance" value="]]..tostring(_ShowRange)..[[" />
+				<Property name="Enter Distance" value="]]..tostring(m_ShowRange)..[[" />
+				<Property name="Exit Distance" value="]]..tostring(m_ShowRange)..[[" />
 			</Property>
 		</Property>
 ]]
@@ -162,41 +155,43 @@ local phys_Physics  = CreatePhysicsComponent("false", "Open")
 ------------------------------------------------------------------------------------------
 
 -- Define the GcScannableComponentData for various entities.
--- The wrapper 'true' argument indicates that the full wrapper should be included.
--- The wrapper 'false' argument indicates that only the inner GcScannableComponentData should be returned.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---BUILDING                                                SIGNAL/SCAN TYPE                SCANTIME   RANGEMULT   SHOWRANGE  ICON             ALLOW MERGE   OVERRIDE   WRAPPER
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-AddAbandoned   = CreateScannableComponentData(_ScanRange, "BUILDING_ABANDONED_L",        _ScanTime, _RangeMult, _ShowRange, "HazardEgg",          "true",  _Override,  true)
-AddBase        = CreateScannableComponentData(_ScanRange, "UI_RECOVER_BASE_MARKER",      _ScanTime, _RangeMult, _ShowRange, "Shield",            "false",  _Override,  true)
-AddBones       = CreateScannableComponentData(_ScanRange, "UI_UNDERGROUND_BONES_NAME_L", _ScanTime, _RangeMult, _ShowRange, "BuriedRare",         "true", "0.000000",  true)
-AddFossil      = CreateScannableComponentData(_ScanRange, "UI_UNDERGROUND_BONES_NAME_L", _ScanTime, _RangeMult, _ShowRange, "BuriedFossil",      "false", "0.000000",  true)
-AddDepot       = CreateScannableComponentData(_ScanRange, "SIGNAL_DEPOT",                _ScanTime, _RangeMult, _ShowRange, "Drone",              "true",  _Override,  true)
-AddDistress    = CreateScannableComponentData(_ScanRange, "BUILDING_DISTRESSSIGNAL_L",   _ScanTime, _RangeMult, _ShowRange, "HazardPlant",       "false",  _Override,  true)
-AddFactory     = CreateScannableComponentData(_ScanRange, "BUILDING_FACTORY_L",          _ScanTime, _RangeMult, _ShowRange, "Drone",              "true",  _Override,  true)
-AddFreighter   = CreateScannableComponentData(_ScanRange, "BUILDING_FREIGHTER_ALT",      _ScanTime, _RangeMult, _ShowRange, "HazardPlant",       "false",  _Override,  true)
-AddGrave       = CreateScannableComponentData(_ScanRange, "BUILDING_GRAVEINCAVE",        _ScanTime, _RangeMult, _ShowRange, "Grave",             "false",  _Override,  true)
-AddHarvester   = CreateScannableComponentData(_ScanRange, "BUILD_HARVESTER_L",           _ScanTime, _RangeMult, _ShowRange, "HarvestPlant",      "false",  _Override,  true)
-AddMessage     = CreateScannableComponentData(_ScanRange, "BLD_MESSAGEMODULE_NAME_L",    _ScanTime, _RangeMult, _ShowRange, "Grave",             "false",  _Override,  true)
-AddMonolith    = CreateScannableComponentData(_ScanRange, "BUILDING_MONOLITH_L",         _ScanTime, _RangeMult, _ShowRange, "Artifact",          "false",  _Override,  true)
-AddObserver    = CreateScannableComponentData(_ScanRange, "BUILDING_OBSERVATORY_L",      _ScanTime, _RangeMult, _ShowRange, "SignalBooster",      "true",  _Override,  true)
-AddOutpost     = CreateScannableComponentData(_ScanRange, "BUILDING_OUTPOST_L",          _ScanTime, _RangeMult, _ShowRange, "FreighterDoor",      "true",  _Override,  true)
---AddPlaque      = CreateScannableComponentData(_ScanRange, "SIGNAL_PLAQUE",               _ScanTime, _RangeMult, _ShowRange, "Artifact",          "false",  _Override,  true)
-AddPSettlement = CreateScannableComponentData(_ScanRange, "UI_SETTLEMENT_LOCATED_OSD",   _ScanTime, _RangeMult, _ShowRange, "HazardPlant",       "false",  _Override,  true)
-AddPortal      = CreateScannableComponentData(_ScanRange, "BUILDING_PORTAL_L",           _ScanTime, _RangeMult, _ShowRange, "Artifact",          "false",  _Override,  true)
-AddRadioTower  = CreateScannableComponentData(_ScanRange, "BUILDING_RADIOTOWER_L",       _ScanTime, _RangeMult, _ShowRange, "SignalBooster",      "true",  _Override,  true)
-AddRuin        = CreateScannableComponentData(_ScanRange, "UI_SIGNAL_TREASURERUIN",      _ScanTime, _RangeMult, _ShowRange, "Artifact",           "true",  _Override,  true)
-AddTreasure    = CreateScannableComponentData(_ScanRange, "PLANT_FOOD_38",               _ScanTime, _RangeMult, _ShowRange, "ArtifactCrate",      "true",  _Override,  true)
-AddSentinelH   = CreateScannableComponentData(_ScanRange, "UI_MP_HIVE_LABEL",            _ScanTime, _RangeMult, _ShowRange, "Drone",              "true",  _Override,  true)
-AddSentinelD   = CreateScannableComponentData(_ScanRange, "UI_MP_HIVE_LABEL",            _ScanTime, _RangeMult, _ShowRange, "FriendlyDrone",      "true",  _Override,  true)
-AddStoryGlitch = CreateScannableComponentData(_ScanRange, "Alien Anomaly Detected",      _ScanTime, _RangeMult, _ShowRange, "Artifact",          "false",  _Override,  true)
-AddMinorSettle = CreateScannableComponentData(_ScanRange, "BUILDING_SHOP_L",             _ScanTime, _RangeMult, _ShowRange, "Hazard",            "false",  _Override,  true)
-AddTerminal    = CreateScannableComponentData(_ScanRange, "SIGNAL_TERMINAL",             _ScanTime, _RangeMult, _ShowRange, "FreighterTerminal", "false",  _Override,  true)
-AddRunawayMold = CreateScannableComponentData(_ScanRange, "UI_WEIRD_BALL_NAME_L",        _ScanTime, _RangeMult, _ShowRange, "Rare3",              "true", "0.000000", false)
-AddSentinCrash = CreateScannableComponentData(_ScanRange, "UI_SENTINEL_CRASH_MARKER",    _ScanTime, _RangeMult, _ShowRange, "FriendlyDrone",      "true",  _Override,  true)
-AddDropPod     = CreateScannableComponentData(_ScanRange, "BUILDING_DAMAGEDMACHINE_L",   _ScanTime, _RangeMult, _ShowRange, "Tech",              "false",  _Override,  true)
-AddPillar      = CreateScannableComponentData(_ScanRange, "UI_MINIHIVE_CORRUPT_NAME",    _ScanTime, _RangeMult, _ShowRange, "CorruptedMachine",  "false",  _Override,  true)
-AddCamp        = CreateScannableComponentData(_ScanRange, "UI_ROBOT_CAMP_TERMINAL_NAME", _ScanTime, _RangeMult, _ShowRange, "RobotHead",         "false",  _Override,  true)
+-- If ANY are disabled (commented with --), check below to enable that section!
+
+-- Wrapper 'true'  argument indicates the full wrapper should be used.
+-- Wrapper 'false' argument indicates the solo wrapper should be used.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--BUILDING                                                  SIGNAL/SCAN TYPE              SCANTIME    RANGEMULT    SHOWRANGE    ICON                  MERGE    OVERRIDE    WRAP
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+AddAbandoned   = CreateScannableComponentData(m_ScanRange, "BUILDING_ABANDONED_L",        m_ScanTime, m_RangeMult, m_ShowRange, "HazardEgg",          "true",  m_Override, true)
+AddBase        = CreateScannableComponentData(m_ScanRange, "UI_RECOVER_BASE_MARKER",      m_ScanTime, m_RangeMult, m_ShowRange, "Shield",            "false",  m_Override, true)
+AddBones       = CreateScannableComponentData(m_ScanRange, "UI_UNDERGROUND_BONES_NAME_L", m_ScanTime, m_RangeMult, m_ShowRange, "BuriedRare",         "true", "0.000000", true)
+AddFossil      = CreateScannableComponentData(m_ScanRange, "UI_UNDERGROUND_BONES_NAME_L", m_ScanTime, m_RangeMult, m_ShowRange, "BuriedFossil",      "false", "0.000000", true)
+AddDepot       = CreateScannableComponentData(m_ScanRange, "SIGNAL_DEPOT",                m_ScanTime, m_RangeMult, m_ShowRange, "Drone",              "true",  m_Override, true)
+AddDistress    = CreateScannableComponentData(m_ScanRange, "BUILDING_DISTRESSSIGNAL_L",   m_ScanTime, m_RangeMult, m_ShowRange, "HazardPlant",       "false",  m_Override, true)
+AddFactory     = CreateScannableComponentData(m_ScanRange, "BUILDING_FACTORY_L",          m_ScanTime, m_RangeMult, m_ShowRange, "Drone",              "true",  m_Override, true)
+AddFreighter   = CreateScannableComponentData(m_ScanRange, "BUILDING_FREIGHTER_ALT",      m_ScanTime, m_RangeMult, m_ShowRange, "HazardPlant",       "false",  m_Override, true)
+AddGrave       = CreateScannableComponentData(m_ScanRange, "BUILDING_GRAVEINCAVE",        m_ScanTime, m_RangeMult, m_ShowRange, "Grave",             "false",  m_Override, true)
+AddHarvester   = CreateScannableComponentData(m_ScanRange, "BUILD_HARVESTER_L",           m_ScanTime, m_RangeMult, m_ShowRange, "HarvestPlant",      "false",  m_Override, true)
+AddMessage     = CreateScannableComponentData(m_ScanRange, "BLD_MESSAGEMODULE_NAME_L",    m_ScanTime, m_RangeMult, m_ShowRange, "Grave",             "false",  m_Override, true)
+AddMonolith    = CreateScannableComponentData(m_ScanRange, "BUILDING_MONOLITH_L",         m_ScanTime, m_RangeMult, m_ShowRange, "Artifact",          "false",  m_Override, true)
+AddObserver    = CreateScannableComponentData(m_ScanRange, "BUILDING_OBSERVATORY_L",      m_ScanTime, m_RangeMult, m_ShowRange, "SignalBooster",      "true",  m_Override, true)
+AddOutpost     = CreateScannableComponentData(m_ScanRange, "BUILDING_OUTPOST_L",          m_ScanTime, m_RangeMult, m_ShowRange, "FreighterDoor",      "true",  m_Override, true)
+--AddPlaque      = CreateScannableComponentData(m_ScanRange, "SIGNAL_PLAQUE",               m_ScanTime, m_RangeMult, m_ShowRange, "Artifact",          "false",  m_Override, true)
+AddPSettlement = CreateScannableComponentData(m_ScanRange, "UI_SETTLEMENT_LOCATED_OSD",   m_ScanTime, m_RangeMult, m_ShowRange, "HazardPlant",       "false",  m_Override, true)
+AddPortal      = CreateScannableComponentData(m_ScanRange, "BUILDING_PORTAL_L",           m_ScanTime, m_RangeMult, m_ShowRange, "Artifact",          "false",  m_Override, true)
+AddRadioTower  = CreateScannableComponentData(m_ScanRange, "BUILDING_RADIOTOWER_L",       m_ScanTime, m_RangeMult, m_ShowRange, "SignalBooster",      "true",  m_Override, true)
+AddRuin        = CreateScannableComponentData(m_ScanRange, "UI_SIGNAL_TREASURERUIN",      m_ScanTime, m_RangeMult, m_ShowRange, "Artifact",           "true",  m_Override, true)
+AddTreasure    = CreateScannableComponentData(m_ScanRange, "PLANT_FOOD_38",               m_ScanTime, m_RangeMult, m_ShowRange, "ArtifactCrate",      "true",  m_Override, true)
+AddSentinelH   = CreateScannableComponentData(m_ScanRange, "UI_MP_HIVE_LABEL",            m_ScanTime, m_RangeMult, m_ShowRange, "Drone",              "true",  m_Override, true)
+AddSentinelD   = CreateScannableComponentData(m_ScanRange, "UI_MP_HIVE_LABEL",            m_ScanTime, m_RangeMult, m_ShowRange, "FriendlyDrone",      "true",  m_Override, true)
+AddStoryGlitch = CreateScannableComponentData(m_ScanRange, "Alien Anomaly Detected",      m_ScanTime, m_RangeMult, m_ShowRange, "Artifact",          "false",  m_Override, true)
+AddMinorSettle = CreateScannableComponentData(m_ScanRange, "BUILDING_SHOP_L",             m_ScanTime, m_RangeMult, m_ShowRange, "Hazard",            "false",  m_Override, true)
+AddTerminal    = CreateScannableComponentData(m_ScanRange, "SIGNAL_TERMINAL",             m_ScanTime, m_RangeMult, m_ShowRange, "FreighterTerminal", "false",  m_Override, true)
+AddRunawayMold = CreateScannableComponentData(m_ScanRange, "UI_WEIRD_BALL_NAME_L",        m_ScanTime, m_RangeMult, m_ShowRange, "Rare3",              "true", "0.000000", false)
+AddSentinCrash = CreateScannableComponentData(m_ScanRange, "UI_SENTINEL_CRASH_MARKER",    m_ScanTime, m_RangeMult, m_ShowRange, "FriendlyDrone",      "true",  m_Override, true)
+AddDropPod     = CreateScannableComponentData(m_ScanRange, "BUILDING_DAMAGEDMACHINE_L",   m_ScanTime, m_RangeMult, m_ShowRange, "Tech",              "false",  m_Override, true)
+AddPillar      = CreateScannableComponentData(m_ScanRange, "UI_MINIHIVE_CORRUPT_NAME",    m_ScanTime, m_RangeMult, m_ShowRange, "CorruptedMachine",  "false",  m_Override, true)
+AddCamp        = CreateScannableComponentData(m_ScanRange, "UI_ROBOT_CAMP_TERMINAL_NAME", m_ScanTime, m_RangeMult, m_ShowRange, "RobotHead",         "false",  m_Override, true)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -533,17 +528,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             SKW = {"Components", "TkSketchComponentData"},
-                            ADD_OPTION = "ADDafterSECTION",
-                            ADD = AddPortal,
-                        },
-                    }
-                },
-                {
-                    MBIN_FS = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\PORTALSTRUCTURE.ENTITY.MBIN]],
-                    MXML_CT =
-                    {
-                        {
-                            SKW = {"Components", "TkPhysicsComponentData"},
                             ADD_OPTION = "ADDafterSECTION",
                             ADD = AddPortal,
                         },

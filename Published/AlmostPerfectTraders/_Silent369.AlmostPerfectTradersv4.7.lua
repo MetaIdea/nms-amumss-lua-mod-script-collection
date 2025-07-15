@@ -2,7 +2,7 @@ local modfilename = "AlmostPerfectTraders"
 local lua_author  = "Silent"
 local lua_version = "4.7"
 local mod_author  = "Silent369"
-local nms_version = "5.73"
+local nms_version = "5.74"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
@@ -21,15 +21,17 @@ and to minimise the damage to Crashed Ships when discovered to save resources on
 
 ]]
 
---|=======================================================================================--
+-- Initialise Variables
+--------------------------------------------------------------------------------------------
 
 local m_NoPirateAttacks = true
 local m_CrashShipDamage = true
 local m_FillUp_Outposts = true
 
---|=======================================================================================--
 
---Outpost / Trader Spawns
+-- Outpost / Trader Spawns
+--------------------------------------------------------------------------------------------
+
 local m_xAIFlybySpawns  = 2
 local m_yAIFlybySpawns  = 4
 local m_xSPFlybySpawns  = 3
@@ -43,24 +45,28 @@ local m_yTradersSpawns  = 2
 local m_xAmbientSpawns  = 2
 local m_yAmbientSpawns  = 2
 
---Station Entity
+-- Station Entity
+--------------------------------------------------------------------------------------------
+
 local m_sApproachRange  = 155
 local m_sApproachSpeed  = 200
 local m_sAutoLandRange  = 345
 
---Station Dock Entity
-local m_dApproachRange  = 105
+-- Station Dock Entity
+--------------------------------------------------------------------------------------------
+
+local m_dApproachRange  = 155
 local m_dApproachSpeed  = 200
 local m_dAutoLandRange  = 345
 
---|=======================================================================================--
+--------------------------------------------------------------------------------------------
 
 TableData = TableData or {}
 
---|=======================================================================================--
+--------------------------------------------------------------------------------------------
 
---| Crashed Ships Have Less Damaged Slots / Cost Less To Repair
---|=======================================================================================--
+-- Crashed Ships Have Less Damaged Slots / Cost Less To Repair
+--------------------------------------------------------------------------------------------
 
 if m_CrashShipDamage then
     table.insert(TableData,
@@ -79,8 +85,8 @@ if m_CrashShipDamage then
     )
 end
 
---| No Pirate Attacks On Specific Buildings (for Ship Hunters, Outposts/Planet Archives).
---|=======================================================================================--
+-- No Pirate Attacks On Specific Buildings (for Ship Hunters, Outposts/Planet Archives).
+--------------------------------------------------------------------------------------------
 
 if m_NoPirateAttacks then
     table.insert(TableData,
@@ -94,8 +100,8 @@ if m_NoPirateAttacks then
     )
 end
 
---| Toggle whether to Fill Up Outposts or not.
---|=======================================================================================--
+-- Toggle whether to Fill Up Outposts or not.
+--------------------------------------------------------------------------------------------
 
 if m_FillUp_Outposts then
     table.insert(TableData,
@@ -107,7 +113,7 @@ if m_FillUp_Outposts then
     )
 end
 
---|=======================================================================================--
+--------------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -152,13 +158,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ApproachSpeed",              m_sApproachSpeed}, --Original "150"
                                 {"PlayerAutoLandRange",        m_sAutoLandRange}, --Original "300"
                                 {"CircleRadius",                         "1900"}, --Original "2000"
-                                {"LandingSpeed",                     "5.000000"}, --Original "10"
-                                {"TakeOffHeight",                           "0"}, --Original "3"
-                                {"TakeOffFwdDist",                          "3"}, --Original "5"
-                                {"TakeOffAlignTime",                      "1.5"}, --Original "1"
-                                {"TakeOffExtraAIHeight",                    "0"}, --Original "7"
+                                {"LandingSpeed",                          "1.5"}, --Original "10"
+                                {"TakeOffTime",                           "0.6"}, --Original "1"
+                                {"TakeOffAlignTime",                      "1.1"}, --Original "1"
+                                {"TakeOffExtraAIHeight",                    "5"}, --Original "7"
                                 {"PostTakeOffExtraPlayerHeight",           "-1"}, --Original "0"
                                 {"PostTakeOffExtraPlayerSpeed",            "30"}, --Original "60"
+                                {"TakeOffProgressForExtraHeight",           "2"}, --Original "1"
                             }
                         },
                     }
@@ -179,20 +185,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ApproachSpeed",              m_dApproachSpeed}, --Original "100"
                                 {"PlayerAutoLandRange",        m_dAutoLandRange}, --Original "300"
                                 {"CircleRadius",                          "150"}, --Original "200"
-                                {"LandingSpeed",                     "5.000000"}, --Original "10"
-                                {"TakeOffHeight",                           "0"}, --Original "10"
-                                {"TakeOffFwdDist",                          "3"}, --Original "5"
-                                {"TakeOffAlignTime",                      "1.5"}, --Original "1"
-                                {"TakeOffExtraAIHeight",                    "0"}, --Original "7"
+                                {"LandingSpeed",                          "1.5"}, --Original "10"
+                                {"TakeOffTime",                           "0.6"}, --Original "1"
+                                {"TakeOffAlignTime",                      "1.1"}, --Original "1"
+                                {"TakeOffExtraAIHeight",                    "5"}, --Original "7"
                                 {"PostTakeOffExtraPlayerHeight",           "-1"}, --Original "0"
                                 {"PostTakeOffExtraPlayerSpeed",            "30"}, --Original "60"
+                                {"TakeOffProgressForExtraHeight",           "2"}, --Original "1"
                             }
                         },
                     }
                 },
-                --|=======================================================================================--
-                --Outpost / Planet Landing Adjustments (NPC)
-                --|=======================================================================================--
+                --------------------------------------------------------------------------------------------
+                -- Outpost / Planet Landing Adjustments (NPC)
+                --------------------------------------------------------------------------------------------
                 {
                     MBIN_FS = [[GCAISPACESHIPGLOBALS.GLOBAL.MBIN]],
                     MXML_CT =
@@ -252,9 +258,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-                --|=======================================================================================--
-                --Outpost / Trader Spawn Rates
-                --|=======================================================================================--
+                --------------------------------------------------------------------------------------------
+                -- Outpost / Trader Spawn Rates
+                --------------------------------------------------------------------------------------------
                 {
                     MBIN_FS = [[METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN]],
                     MXML_CT =
