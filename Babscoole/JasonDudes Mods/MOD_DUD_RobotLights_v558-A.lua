@@ -1,10 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_RobotLights_v503-A.pak",
+["MOD_FILENAME"]            = "MOD_DUD_RobotLights_v558-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.03",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "5.58",
 ["MODIFICATIONS"]           =
     {
         {
@@ -12,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\CORRUPTEDDRONE.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "AttackSpotLight"},
@@ -99,7 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "10000"}
+                                {"Value", "10000.000000"}
                             },
                         },
                         {
@@ -125,7 +124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\COMMON\ROBOTS\DRONESUMMONER.SCENE.MBIN",
                         "MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -232,14 +231,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "10000"}
+                                {"Value", "10000.000000"}
                             },
                         },
                     }
                 },
                 -- {
                     -- ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN",
-                    -- ["EXML_CHANGE_TABLE"] =
+                    -- ["MXML_CHANGE_TABLE"] =
                     -- {
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] =
@@ -271,7 +270,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 -- },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\HOVERPET.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -378,7 +377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "10000"}
+                                {"Value", "10000.000000"}
                             },
                         },
                         -- {
@@ -415,7 +414,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\COMMON\ROBOTS\QUADRUPED.SCENE.MBIN",
                         "MODELS\COMMON\ROBOTS\QUADRUPEDPET.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -510,14 +509,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "10000"}
+                                {"Value", "10000.000000"}
                             },
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\QUADRUPEDPET.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] =
@@ -549,7 +548,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "InvestSpotLight1", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "InvestSpotLi"}
+                                {"Value", "linear"}
                             },
                         },
                     }
@@ -560,7 +559,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\COMMON\ROBOTS\SPIDER_QUADRUPED.SCENE.MBIN",
                         "MODELS\COMMON\ROBOTS\SPIDER_SMALLQUAD.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "InvestSpotLight2"},
@@ -615,14 +614,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight4", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "10000"}
+                                {"Value", "10000.000000"}
                             },
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\WALKER.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -717,19 +716,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "10000"}
+                                {"Value", "10000.000000"}
                             },
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight1", "Name", "VOLUMETRIC"},
-                                {"Name", "spotLight3", "Name", "VOLUMETRIC"},
                                 {"Name", "spotLight2", "Name", "VOLUMETRIC"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.500000"}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight3", "Name", "VOLUMETRIC"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "1.000000"}
                             },
                         },
                     }

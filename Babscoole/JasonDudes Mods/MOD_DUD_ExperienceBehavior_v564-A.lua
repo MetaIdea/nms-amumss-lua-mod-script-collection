@@ -1,10 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ExperienceBehavior_v529-B.pak",
+["MOD_FILENAME"]            = "MOD_DUD_ExperienceBehavior_v564-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.29",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "5.64",
 ["MODIFICATIONS"]           =
     {
         {
@@ -12,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "GCCREATUREGLOBALS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -48,7 +47,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -94,14 +93,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREPETBEHAVIOURTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"FindResource", "GcPetBehaviourData.xml"},
-                                {"FindBuilding", "GcPetBehaviourData.xml"},
-                                {"Explore",      "GcPetBehaviourData.xml"},
+                                {"FindResource", "GcPetBehaviourData"},
+                                {"FindBuilding", "GcPetBehaviourData"},
+                                {"Explore",      "GcPetBehaviourData"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -111,9 +110,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"FindHazards",  "GcPetBehaviourData.xml"},
-                                {"AttackHazard", "GcPetBehaviourData.xml"},
-                                {"Attack",       "GcPetBehaviourData.xml"},
+                                {"FindHazards",  "GcPetBehaviourData"},
+                                {"AttackHazard", "GcPetBehaviourData"},
+                                {"Attack",       "GcPetBehaviourData"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -121,7 +120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TeleportToPlayer", "GcPetBehaviourData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"TeleportToPlayer", "GcPetBehaviourData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CooldownTime", "2"},
@@ -131,7 +130,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FlybySpawns"},
@@ -144,15 +143,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"FlybySpawns", "Spread"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "30"},
-                                {"y", "60"},
+                                {"X", "30"},
+                                {"Y", "60"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FlybySpawns", "StartTime"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"y", "8"},
+                                {"Y", "8"},
                             }
                         },
                         {
@@ -181,7 +180,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MiningFlybySpawns", "Count"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0"},
+                                {"X", "0"},
                             }
                         },
                         {

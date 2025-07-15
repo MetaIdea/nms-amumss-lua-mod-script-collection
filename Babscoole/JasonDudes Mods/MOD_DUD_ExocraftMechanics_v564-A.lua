@@ -1,10 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ExocraftMechanics_v520-A.pak",
+["MOD_FILENAME"]            = "MOD_DUD_ExocraftMechanics_v564-A",
 ["MOD_AUTHOR"]              = "JasonDude7116",
 ["LUA_AUTHOR"]              = "Babscoole and Wbertro",
-["NMS_VERSION"]             = "5.20",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "5.64",
 ["MODIFICATIONS"]           =
     {
         {
@@ -12,22 +11,22 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "GCCAMERAGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"VehicleCam", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"VehicleCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance",     "1"},
                                 {"UpMinDistance",       "1"},
-                                {"VertRotationMin",     "-44.99"},
-                                {"VertRotationMax",     "-44.99"},
+                                {"VertRotationMin",     "-45"},
+                                {"VertRotationMax",     "-45"},
                                 {"VertMaxSpring",       "1"},
                                 {"LookStickLimitAngle", "30"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MechFirstPersonCam", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"MechFirstPersonCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",             "0.5"},
@@ -39,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCam", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",                    "1.5"},
@@ -52,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamMedium", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamMedium", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",                    "1.75"},
@@ -65,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamLarge", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamLarge", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",                    "2"},
@@ -78,7 +77,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamHuge", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamHuge", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",                    "2.25"},
@@ -91,7 +90,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"BuggyFollowCam", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"BuggyFollowCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",         "2.25"},
@@ -104,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SubmarineFollowCam", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"SubmarineFollowCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed",        "10"},
@@ -118,7 +117,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"BikeFollowCam", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"SubmarineFollowCamSurface", "GcCameraFollowSettings"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinSpeed",        "10"},
+                                {"SpeedRange",      "15"},
+                                {"OffsetY",         "3.35"},
+                                {"OffsetYAlt",      "5"},
+                                {"UpMinDistance",   "0.3"},
+                                {"UpMaxDistance",   "0.3"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"BikeFollowCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",         "0.35"},
@@ -131,7 +142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WheeledBikeFollowCam", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"WheeledBikeFollowCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",         "-0.75"},
@@ -146,7 +157,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"TruckFollowCam", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"TruckFollowCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "22"},
@@ -157,7 +168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MechFollowCam", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"MechFollowCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",         "0.2"},
@@ -166,14 +177,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MechCombatCam", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"MechCombatCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "11"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MechJetpackCam", "GcCameraFollowSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"MechJetpackCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",         "0"},
@@ -184,12 +195,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SpecialVehicleMouseRecentreTime", "5"},
-                                {"UnderwaterCameraSurfaceOffset",   "5"},
                                 {"MechCameraArmShootOffsetY",       "2"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"WarpSettings", "GcCameraWarpSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"WarpSettings", "GcCameraWarpSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetZFrequency_1", "0.5"},
@@ -204,7 +214,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FreighterWarpSettings", "GcCameraWarpSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"FreighterWarpSettings", "GcCameraWarpSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetZBias",  "-30"},
@@ -214,7 +224,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"PirateFreighterWarpSettings", "GcCameraWarpSettings.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"PirateFreighterWarpSettings", "GcCameraWarpSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetZBias",  "-45"},
@@ -226,7 +236,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "GCVEHICLEGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -326,58 +336,49 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SUBMARINE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"UnderwaterEnginePower",    "3"},
-                                {"UnderwaterEngineMaxSpeed", "12"},
-                                {"TopSpeedForward",          "12"},
-                                {"TopSpeedReverse",          "5"},
-                                {"VehicleBoostMaxSpeed",     "20"},
-                                {"VehicleBoostRechargeTime", "9"},
+                                {"UnderwaterEnginePower",      "3"},
+                                {"UnderwaterEnginePowerVR",    "3"},
+                                {"UnderwaterEngineMaxSpeed",   "12"},
+                                {"UnderwaterEngineMaxSpeedVR", "12"},
+                                {"TopSpeedForward",            "15"},
+                                {"TopSpeedReverse",            "5"},
+                                {"VehicleGravity",             "90"},
+                                {"VehicleBoostMaxSpeed",       "20"},
+                                {"VehicleBoostRechargeTime",   "9"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MECH"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"HeadlightIntensity", "6"},
+                                {"HeadlightIntensity", "16"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MECH"},
-                            ["PRECEDING_KEY_WORDS"] = {"CockpitHeadlightNames", "NMSString0x100.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"CockpitHeadlightNames"},
+                            ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "cockpitSpotLight1s"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MECH"},
-                            ["PRECEDING_KEY_WORDS"] = {"CockpitHeadlightNames", "NMSString0x100.xml", "NMSString0x100.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "cockpitSpotLight2s"},
+                                {"CockpitHeadlightNames", "cockpitSpotLight1s"},
+                                {"CockpitHeadlightNames", "cockpitSpotLight2s"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "TRUCK"},
-                            ["PRECEDING_KEY_WORDS"] = {"CockpitHeadlightNames", "NMSString0x100.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"CockpitHeadlightNames"},
+                            ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "Lights_spotLight1"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "TRUCK"},
-                            ["PRECEDING_KEY_WORDS"] = {"CockpitHeadlightNames", "NMSString0x100.xml", "NMSString0x100.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "Lights_spotLight3"},
+                                {"CockpitHeadlightNames", "Lights_spotLight1"},
+                                {"CockpitHeadlightNames", "Lights_spotLight3"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\VEHICLES\BIKE\BIKEPRES.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -391,7 +392,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-20.62733"},
+                                {"RotX", "-20.6273327"},
                             },
                         },
                         {
@@ -410,6 +411,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight1"},
+                            ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Children", "IGNORE"},
@@ -418,60 +420,60 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =
 [[
           <Property name="Children">
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="spotLight4" />
               <Property name="NameHash" value="2728205036" />
               <Property name="Type" value="LIGHT" />
-              <Property name="Transform" value="TkTransformData.xml">
-                <Property name="TransX" value="0" />
-                <Property name="TransY" value="0" />
-                <Property name="TransZ" value="0" />
-                <Property name="RotX" value="0" />
-                <Property name="RotY" value="0" />
-                <Property name="RotZ" value="180" />
-                <Property name="ScaleX" value="23.548" />
-                <Property name="ScaleY" value="23.548" />
-                <Property name="ScaleZ" value="23.548" />
+              <Property name="Transform" value="TkTransformData">
+                <Property name="TransX" value="0.000000" />
+                <Property name="TransY" value="0.000000" />
+                <Property name="TransZ" value="0.000000" />
+                <Property name="RotX" value="0.000000" />
+                <Property name="RotY" value="0.000000" />
+                <Property name="RotZ" value="180.000000" />
+                <Property name="ScaleX" value="23.548000" />
+                <Property name="ScaleY" value="23.548000" />
+                <Property name="ScaleZ" value="23.548000" />
               </Property>
               <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="FOV" />
                   <Property name="Value" value="50.797997" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="FALLOFF" />
                   <Property name="Value" value="quadratic" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="FALLOFF_RATE" />
                   <Property name="Value" value="2.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="INTENSITY" />
                   <Property name="Value" value="20000.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COL_R" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COL_G" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COL_B" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COOKIE_IDX" />
                   <Property name="Value" value="-1" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="VOLUMETRIC" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
                 </Property>
@@ -485,7 +487,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-20.62733"},
+                                {"RotX", "-20.6273327"},
                             },
                         },
                         {
@@ -504,6 +506,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight2"},
+                            ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Children", "IGNORE"},
@@ -512,60 +515,60 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =
 [[
           <Property name="Children">
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="spotLight5" />
               <Property name="NameHash" value="3025124945" />
               <Property name="Type" value="LIGHT" />
-              <Property name="Transform" value="TkTransformData.xml">
-                <Property name="TransX" value="0" />
-                <Property name="TransY" value="0" />
-                <Property name="TransZ" value="0" />
-                <Property name="RotX" value="0" />
-                <Property name="RotY" value="0" />
-                <Property name="RotZ" value="180" />
-                <Property name="ScaleX" value="23.548" />
-                <Property name="ScaleY" value="23.548" />
-                <Property name="ScaleZ" value="23.548" />
+              <Property name="Transform" value="TkTransformData">
+                <Property name="TransX" value="0.000000" />
+                <Property name="TransY" value="0.000000" />
+                <Property name="TransZ" value="0.000000" />
+                <Property name="RotX" value="0.000000" />
+                <Property name="RotY" value="0.000000" />
+                <Property name="RotZ" value="180.000000" />
+                <Property name="ScaleX" value="23.548000" />
+                <Property name="ScaleY" value="23.548000" />
+                <Property name="ScaleZ" value="23.548000" />
               </Property>
               <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="FOV" />
                   <Property name="Value" value="50.797997" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="FALLOFF" />
                   <Property name="Value" value="quadratic" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="FALLOFF_RATE" />
                   <Property name="Value" value="2.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="INTENSITY" />
                   <Property name="Value" value="20000.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COL_R" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COL_G" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COL_B" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COOKIE_IDX" />
                   <Property name="Value" value="-1" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="VOLUMETRIC" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
                 </Property>
@@ -579,7 +582,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\VEHICLES\BUGGY\BUGGYPRES.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -596,119 +599,119 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="spotLight1" />
           <Property name="NameHash" value="422545419" />
           <Property name="Type" value="LIGHT" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="-0.502999" />
-            <Property name="TransY" value="1.10516" />
+            <Property name="TransY" value="1.105160" />
             <Property name="TransZ" value="2.461668" />
-            <Property name="RotX" value="-20.62733" />
-            <Property name="RotY" value="180" />
-            <Property name="RotZ" value="0" />
+            <Property name="RotX" value="-20.627327" />
+            <Property name="RotY" value="180.000000" />
+            <Property name="RotZ" value="0.000000" />
             <Property name="ScaleX" value="23.547716" />
             <Property name="ScaleY" value="23.547716" />
             <Property name="ScaleZ" value="23.547716" />
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="75.275394" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="linear" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="45000.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="Value" value="-1" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="0.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
           </Property>
           <Property name="Children">
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="spotLight3" />
               <Property name="NameHash" value="282392410" />
               <Property name="Type" value="LIGHT" />
-              <Property name="Transform" value="TkTransformData.xml">
-                <Property name="TransX" value="0" />
-                <Property name="TransY" value="0" />
-                <Property name="TransZ" value="0" />
-                <Property name="RotX" value="0" />
-                <Property name="RotY" value="0" />
-                <Property name="RotZ" value="180" />
-                <Property name="ScaleX" value="23.548" />
-                <Property name="ScaleY" value="23.548" />
-                <Property name="ScaleZ" value="23.548" />
+              <Property name="Transform" value="TkTransformData">
+                <Property name="TransX" value="0.000000" />
+                <Property name="TransY" value="0.000000" />
+                <Property name="TransZ" value="0.000000" />
+                <Property name="RotX" value="0.000000" />
+                <Property name="RotY" value="0.000000" />
+                <Property name="RotZ" value="180.000000" />
+                <Property name="ScaleX" value="23.548000" />
+                <Property name="ScaleY" value="23.548000" />
+                <Property name="ScaleZ" value="23.548000" />
               </Property>
               <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="FOV" />
                   <Property name="Value" value="50.797997" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="FALLOFF" />
                   <Property name="Value" value="quadratic" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="FALLOFF_RATE" />
                   <Property name="Value" value="2.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="INTENSITY" />
                   <Property name="Value" value="20000.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COL_R" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COL_G" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COL_B" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COOKIE_IDX" />
                   <Property name="Value" value="-1" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="VOLUMETRIC" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
                 </Property>
@@ -717,119 +720,119 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="spotLight2" />
           <Property name="NameHash" value="4278932423" />
           <Property name="Type" value="LIGHT" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0.502999" />
-            <Property name="TransY" value="1.10516" />
+            <Property name="TransY" value="1.105160" />
             <Property name="TransZ" value="2.461668" />
-            <Property name="RotX" value="-20.62733" />
-            <Property name="RotY" value="180" />
-            <Property name="RotZ" value="0" />
+            <Property name="RotX" value="-20.627327" />
+            <Property name="RotY" value="180.000000" />
+            <Property name="RotZ" value="0.000000" />
             <Property name="ScaleX" value="23.547716" />
             <Property name="ScaleY" value="23.547716" />
             <Property name="ScaleZ" value="23.547716" />
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="75.275394" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="linear" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="45000.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="Value" value="-1" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="0.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
           </Property>
           <Property name="Children">
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="spotLight4" />
               <Property name="NameHash" value="2728205036" />
               <Property name="Type" value="LIGHT" />
-              <Property name="Transform" value="TkTransformData.xml">
-                <Property name="TransX" value="0" />
-                <Property name="TransY" value="0" />
-                <Property name="TransZ" value="0" />
-                <Property name="RotX" value="0" />
-                <Property name="RotY" value="0" />
-                <Property name="RotZ" value="180" />
-                <Property name="ScaleX" value="23.548" />
-                <Property name="ScaleY" value="23.548" />
-                <Property name="ScaleZ" value="23.548" />
+              <Property name="Transform" value="TkTransformData">
+                <Property name="TransX" value="0.000000" />
+                <Property name="TransY" value="0.000000" />
+                <Property name="TransZ" value="0.000000" />
+                <Property name="RotX" value="0.000000" />
+                <Property name="RotY" value="0.000000" />
+                <Property name="RotZ" value="180.000000" />
+                <Property name="ScaleX" value="23.548000" />
+                <Property name="ScaleY" value="23.548000" />
+                <Property name="ScaleZ" value="23.548000" />
               </Property>
               <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="FOV" />
                   <Property name="Value" value="50.797997" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="FALLOFF" />
                   <Property name="Value" value="quadratic" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="FALLOFF_RATE" />
                   <Property name="Value" value="2.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="INTENSITY" />
                   <Property name="Value" value="20000.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COL_R" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COL_G" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COL_B" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="COOKIE_IDX" />
                   <Property name="Value" value="-1" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="VOLUMETRIC" />
                   <Property name="Value" value="1.000000" />
                 </Property>
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
                 </Property>
@@ -844,7 +847,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight2", "Name", "FOV"},
@@ -862,6 +865,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight2"},
+                            ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Children", "IGNORE"},
@@ -870,60 +874,60 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =
 [[
                       <Property name="Children">
-                        <Property value="TkSceneNodeData.xml">
+                        <Property name="Children" value="TkSceneNodeData">
                           <Property name="Name" value="Lights_spotLight1" />
                           <Property name="NameHash" value="3822722958" />
                           <Property name="Type" value="LIGHT" />
-                          <Property name="Transform" value="TkTransformData.xml">
-                            <Property name="TransX" value="0" />
-                            <Property name="TransY" value="0" />
-                            <Property name="TransZ" value="0" />
-                            <Property name="RotX" value="0" />
-                            <Property name="RotY" value="0" />
-                            <Property name="RotZ" value="180" />
+                          <Property name="Transform" value="TkTransformData">
+                            <Property name="TransX" value="0.000000" />
+                            <Property name="TransY" value="0.000000" />
+                            <Property name="TransZ" value="0.000000" />
+                            <Property name="RotX" value="0.000000" />
+                            <Property name="RotY" value="0.000000" />
+                            <Property name="RotZ" value="180.000000" />
                             <Property name="ScaleX" value="23.547716" />
                             <Property name="ScaleY" value="23.547716" />
                             <Property name="ScaleZ" value="23.547716" />
                           </Property>
                           <Property name="PlatformExclusion" value="0" />
                           <Property name="Attributes">
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="FOV" />
                               <Property name="Value" value="50.275394" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="FALLOFF" />
                               <Property name="Value" value="quadratic" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="FALLOFF_RATE" />
                               <Property name="Value" value="2.000000" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="INTENSITY" />
                               <Property name="Value" value="20000.000000" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="COL_R" />
                               <Property name="Value" value="1.000000" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="COL_G" />
                               <Property name="Value" value="1.000000" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="COL_B" />
                               <Property name="Value" value="1.000000" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="COOKIE_IDX" />
                               <Property name="Value" value="-1" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="VOLUMETRIC" />
                               <Property name="Value" value="1.000000" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="MATERIAL" />
                               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
                             </Property>
@@ -956,6 +960,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight3"},
+                            ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Children", "IGNORE"},
@@ -964,60 +969,60 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =
 [[
                       <Property name="Children">
-                        <Property value="TkSceneNodeData.xml">
+                        <Property name="Children" value="TkSceneNodeData">
                           <Property name="Name" value="Lights_spotLight2" />
                           <Property name="NameHash" value="1370651453" />
                           <Property name="Type" value="LIGHT" />
-                          <Property name="Transform" value="TkTransformData.xml">
-                            <Property name="TransX" value="0" />
-                            <Property name="TransY" value="0" />
-                            <Property name="TransZ" value="0" />
-                            <Property name="RotX" value="0" />
-                            <Property name="RotY" value="0" />
-                            <Property name="RotZ" value="180" />
+                          <Property name="Transform" value="TkTransformData">
+                            <Property name="TransX" value="0.000000" />
+                            <Property name="TransY" value="0.000000" />
+                            <Property name="TransZ" value="0.000000" />
+                            <Property name="RotX" value="0.000000" />
+                            <Property name="RotY" value="0.000000" />
+                            <Property name="RotZ" value="180.000000" />
                             <Property name="ScaleX" value="23.547716" />
                             <Property name="ScaleY" value="23.547716" />
                             <Property name="ScaleZ" value="23.547716" />
                           </Property>
                           <Property name="PlatformExclusion" value="0" />
                           <Property name="Attributes">
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="FOV" />
                               <Property name="Value" value="50.275394" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="FALLOFF" />
                               <Property name="Value" value="quadratic" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="FALLOFF_RATE" />
                               <Property name="Value" value="2.000000" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="INTENSITY" />
                               <Property name="Value" value="20000.000000" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="COL_R" />
                               <Property name="Value" value="1.000000" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="COL_G" />
                               <Property name="Value" value="1.000000" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="COL_B" />
                               <Property name="Value" value="1.000000" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="COOKIE_IDX" />
                               <Property name="Value" value="-1" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="VOLUMETRIC" />
                               <Property name="Value" value="1.000000" />
                             </Property>
-                            <Property value="TkSceneNodeAttributeData.xml">
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="MATERIAL" />
                               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
                             </Property>
@@ -1031,7 +1036,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT_COCKPIT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -1045,123 +1050,123 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Mesh"},
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SECTION_ACTIVE"] = 1,
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="cockpitSpotLight1" />
       <Property name="NameHash" value="4104855990" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="-0.6" />
-        <Property name="TransY" value="-0.2" />
-        <Property name="TransZ" value="-2.5" />
-        <Property name="RotX" value="-12" />
-        <Property name="RotY" value="18" />
-        <Property name="RotZ" value="0" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="-0.600000" />
+        <Property name="TransY" value="-0.200000" />
+        <Property name="TransZ" value="-2.500000" />
+        <Property name="RotX" value="-12.000000" />
+        <Property name="RotY" value="18.000000" />
+        <Property name="RotZ" value="0.000000" />
         <Property name="ScaleX" value="23.547716" />
         <Property name="ScaleY" value="23.547716" />
         <Property name="ScaleZ" value="23.547716" />
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="75.335918" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="55000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="cockpitSpotLight1s" />
           <Property name="NameHash" value="1548811781" />
           <Property name="Type" value="LIGHT" />
-          <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="-0.18" />
-            <Property name="TransY" value="0" />
-            <Property name="TransZ" value="0" />
-            <Property name="RotX" value="0" />
-            <Property name="RotY" value="0" />
-            <Property name="RotZ" value="0" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="-0.180000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="0.000000" />
             <Property name="ScaleX" value="23.547716" />
             <Property name="ScaleY" value="23.547716" />
             <Property name="ScaleZ" value="23.547716" />
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="40.335918" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="100.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="0.400000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="0.400000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="0.400000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="Value" value="-1" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -1170,119 +1175,119 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="cockpitSpotLight2" />
       <Property name="NameHash" value="3839787549" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="0.6" />
-        <Property name="TransY" value="-0.2" />
-        <Property name="TransZ" value="-2.5" />
-        <Property name="RotX" value="-12" />
-        <Property name="RotY" value="-18" />
-        <Property name="RotZ" value="0" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="0.600000" />
+        <Property name="TransY" value="-0.200000" />
+        <Property name="TransZ" value="-2.500000" />
+        <Property name="RotX" value="-12.000000" />
+        <Property name="RotY" value="-18.000000" />
+        <Property name="RotZ" value="0.000000" />
         <Property name="ScaleX" value="23.547716" />
         <Property name="ScaleY" value="23.547716" />
         <Property name="ScaleZ" value="23.547716" />
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="75.335918" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="55000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="cockpitSpotLight2s" />
           <Property name="NameHash" value="57263980" />
           <Property name="Type" value="LIGHT" />
-          <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0.18" />
-            <Property name="TransY" value="0" />
-            <Property name="TransZ" value="0" />
-            <Property name="RotX" value="0" />
-            <Property name="RotY" value="0" />
-            <Property name="RotZ" value="0" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.180000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="0.000000" />
             <Property name="ScaleX" value="23.547716" />
             <Property name="ScaleY" value="23.547716" />
             <Property name="ScaleZ" value="23.547716" />
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="40.335918" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="100.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="0.400000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="0.400000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="0.400000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="Value" value="-1" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -1297,126 +1302,126 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\VEHICLES\ROVER\ROVERCOCKPIT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SideMonitor1_R_Ref"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Lights_spotLight1" />
       <Property name="NameHash" value="3822722958" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-0.648775" />
         <Property name="TransY" value="-1.145884" />
-        <Property name="TransZ" value="3.07" />
-        <Property name="RotX" value="-20.62733" />
-        <Property name="RotY" value="180" />
-        <Property name="RotZ" value="0" />
+        <Property name="TransZ" value="3.070000" />
+        <Property name="RotX" value="-20.627330" />
+        <Property name="RotY" value="180.000000" />
+        <Property name="RotZ" value="0.000000" />
         <Property name="ScaleX" value="23.547716" />
         <Property name="ScaleY" value="23.547716" />
         <Property name="ScaleZ" value="23.547716" />
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="90.275394" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="45000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="Lights_spotLight2" />
           <Property name="NameHash" value="1370651453" />
           <Property name="Type" value="LIGHT" />
-          <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0" />
-            <Property name="TransY" value="0" />
-            <Property name="TransZ" value="0" />
-            <Property name="RotX" value="0" />
-            <Property name="RotY" value="0" />
-            <Property name="RotZ" value="180" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="180.000000" />
             <Property name="ScaleX" value="23.547716" />
             <Property name="ScaleY" value="23.547716" />
             <Property name="ScaleZ" value="23.547716" />
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="50.275394" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="20000.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="Value" value="-1" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -1425,119 +1430,119 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Lights_spotLight3" />
       <Property name="NameHash" value="1065637601" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.648775" />
         <Property name="TransY" value="-1.145884" />
-        <Property name="TransZ" value="3.07" />
-        <Property name="RotX" value="-20.62733" />
-        <Property name="RotY" value="180" />
-        <Property name="RotZ" value="0" />
+        <Property name="TransZ" value="3.070000" />
+        <Property name="RotX" value="-20.627330" />
+        <Property name="RotY" value="180.000000" />
+        <Property name="RotZ" value="0.000000" />
         <Property name="ScaleX" value="23.547716" />
         <Property name="ScaleY" value="23.547716" />
         <Property name="ScaleZ" value="23.547716" />
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="90.275394" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="45000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="Lights_spotLight4" />
           <Property name="NameHash" value="756462086" />
           <Property name="Type" value="LIGHT" />
-          <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0" />
-            <Property name="TransY" value="0" />
-            <Property name="TransZ" value="0" />
-            <Property name="RotX" value="0" />
-            <Property name="RotY" value="0" />
-            <Property name="RotZ" value="180" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="180.000000" />
             <Property name="ScaleX" value="23.547716" />
             <Property name="ScaleY" value="23.547716" />
             <Property name="ScaleZ" value="23.547716" />
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="50.275394" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="20000.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="Value" value="-1" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -1552,7 +1557,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\VEHICLES\ROVER\ROVERPRES.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -1568,7 +1573,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "-20.62733"},
+                                {"RotX", "-20.6273327"},
                             },
                         },
                         {
@@ -1591,60 +1596,60 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["CREATE_HOS"] = "TRUE", 
                             ["ADD"] =
 [[
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="spotLight4" />
           <Property name="NameHash" value="2728205036" />
           <Property name="Type" value="LIGHT" />
-          <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0" />
-            <Property name="TransY" value="0" />
-            <Property name="TransZ" value="0" />
-            <Property name="RotX" value="0" />
-            <Property name="RotY" value="0" />
-            <Property name="RotZ" value="180" />
-            <Property name="ScaleX" value="23.548" />
-            <Property name="ScaleY" value="23.548" />
-            <Property name="ScaleZ" value="23.548" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="180.000000" />
+            <Property name="ScaleX" value="23.548000" />
+            <Property name="ScaleY" value="23.548000" />
+            <Property name="ScaleZ" value="23.548000" />
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="65.797997" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="20000.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="Value" value="-1" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -1658,119 +1663,119 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION", 
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="spotLight3" />
       <Property name="NameHash" value="282392410" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.648775" />
         <Property name="TransY" value="1.945884" />
-        <Property name="TransZ" value="3.68018" />
-        <Property name="RotX" value="-20.62733" />
-        <Property name="RotY" value="180" />
-        <Property name="RotZ" value="0" />
+        <Property name="TransZ" value="3.680180" />
+        <Property name="RotX" value="-20.6273327" />
+        <Property name="RotY" value="180.000000" />
+        <Property name="RotZ" value="0.000000" />
         <Property name="ScaleX" value="23.547716" />
         <Property name="ScaleY" value="23.547716" />
         <Property name="ScaleZ" value="23.547716" />
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="90.275394" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="45000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="spotLight5" />
           <Property name="NameHash" value="3025124945" />
           <Property name="Type" value="LIGHT" />
-          <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0" />
-            <Property name="TransY" value="0" />
-            <Property name="TransZ" value="0" />
-            <Property name="RotX" value="0" />
-            <Property name="RotY" value="0" />
-            <Property name="RotZ" value="180" />
-            <Property name="ScaleX" value="23.548" />
-            <Property name="ScaleY" value="23.548" />
-            <Property name="ScaleZ" value="23.548" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="180.000000" />
+            <Property name="ScaleX" value="23.548000" />
+            <Property name="ScaleY" value="23.548000" />
+            <Property name="ScaleZ" value="23.548000" />
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="65.797997" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="20000.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="Value" value="-1" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -1785,7 +1790,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"]     = "MODELS\COMMON\VEHICLES\WHEELEDBIKE\WHEELEDBIKEPRES.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"]     =
+                    ["MXML_CHANGE_TABLE"]     =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -1801,119 +1806,119 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="spotLight2" />
       <Property name="NameHash" value="4278932423" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-0.229029" />
         <Property name="TransY" value="1.342419" />
         <Property name="TransZ" value="0.647816" />
-        <Property name="RotX" value="-20.62733" />
-        <Property name="RotY" value="180" />
-        <Property name="RotZ" value="0" />
+        <Property name="RotX" value="-20.6273327" />
+        <Property name="RotY" value="180.000000" />
+        <Property name="RotZ" value="0.000000" />
         <Property name="ScaleX" value="23.547716" />
         <Property name="ScaleY" value="23.547716" />
         <Property name="ScaleZ" value="23.547716" />
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="75.275394" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="45000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="spotLight1" />
           <Property name="NameHash" value="422545419" />
           <Property name="Type" value="LIGHT" />
-          <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0" />
-            <Property name="TransY" value="0" />
-            <Property name="TransZ" value="0" />
-            <Property name="RotX" value="0" />
-            <Property name="RotY" value="0" />
-            <Property name="RotZ" value="180" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="180.000000" />
             <Property name="ScaleX" value="23.547716" />
             <Property name="ScaleY" value="23.547716" />
             <Property name="ScaleZ" value="23.547716" />
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="50.275394" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="15000.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="Value" value="-1" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -1922,119 +1927,119 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="spotLight3" />
       <Property name="NameHash" value="282392410" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.243155" />
         <Property name="TransY" value="1.342419" />
         <Property name="TransZ" value="0.647816" />
-        <Property name="RotX" value="-20.62733" />
-        <Property name="RotY" value="180" />
-        <Property name="RotZ" value="0" />
+        <Property name="RotX" value="-20.6273327" />
+        <Property name="RotY" value="180.000000" />
+        <Property name="RotZ" value="0.000000" />
         <Property name="ScaleX" value="23.547716" />
         <Property name="ScaleY" value="23.547716" />
         <Property name="ScaleZ" value="23.547716" />
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="75.275394" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="45000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="spotLight4" />
           <Property name="NameHash" value="2728205036" />
           <Property name="Type" value="LIGHT" />
-          <Property name="Transform" value="TkTransformData.xml">
-            <Property name="TransX" value="0" />
-            <Property name="TransY" value="0" />
-            <Property name="TransZ" value="0" />
-            <Property name="RotX" value="0" />
-            <Property name="RotY" value="0" />
-            <Property name="RotZ" value="180" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.000000" />
+            <Property name="TransY" value="0.000000" />
+            <Property name="TransZ" value="0.000000" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="180.000000" />
             <Property name="ScaleX" value="23.547716" />
             <Property name="ScaleY" value="23.547716" />
             <Property name="ScaleZ" value="23.547716" />
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="50.275394" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="15000.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="Value" value="-1" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
             </Property>
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
