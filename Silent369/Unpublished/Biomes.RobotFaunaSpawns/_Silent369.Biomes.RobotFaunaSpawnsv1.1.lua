@@ -2,7 +2,7 @@ local modfilename = "RobotFaunaSpawns"
 local lua_author  = "Silent"
 local lua_version = "1.1"
 local mod_author  = "Silent369"
-local nms_version = "5.73"
+local nms_version = "5.74"
 local maintenance = mod_author
 local description = [[
 
@@ -39,8 +39,8 @@ local BiomeSpecific = {
     "Green",
     "Blue",
     "Swamp",
-    "Lava",
-    "GasGiant"
+    --"Lava",
+    --"GasGiant"
 }
 
 --|-------------------------------------------------------------------------------------------------------
@@ -50,24 +50,24 @@ local BiomeSpecific = {
 local SubBiomeSpecific = {
     "Standard",
     "HighQuality",
-    "HugePlant",
-    "HugeLush",
-    "HugeRing",
-    "HugeRock",
-    "HugeScorch",
-    "HugeToxic",
+    --"HugePlant",
+    --"HugeLush",
+    --"HugeRing",
+    --"HugeRock",
+    --"HugeScorch",
+    --"HugeToxic",
     "Variant_A",
     "Variant_B",
     "Variant_C",
     "Variant_D",
-    "Infested",
+    --"Infested",
     "Swamp",
-    "Lava",
+    --"Lava",
     "Worlds",
-    "Remix_A",
-    "Remix_B",
-    "Remix_C",
-    "Remix_D"
+    --"Remix_A",
+    --"Remix_B",
+    --"Remix_C",
+    --"Remix_D"
 }
 
 local AbandonedBiomes = {
@@ -111,7 +111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             SKW = {"Id", "ROBOTANTELOPE"},
                             REPLACE_TYPE = "ALL",
-                            VCT = {{"OnlySpawnWhenIdIsForced", "False"},}
+                            VCT = {{"OnlySpawnWhenIdIsForced", "false"},}
                         },
                     }
                 },

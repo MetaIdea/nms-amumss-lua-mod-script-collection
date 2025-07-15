@@ -1,26 +1,39 @@
-local modfilename = "UnifiedWarpsStarsNoLines"
+local modfilename = "UnifiedWarpsStars"
 local lua_author  = "Silent"
-local lua_version = "4.5"
+local lua_version = "4.6"
 local mod_author  = "Silent369"
-local nms_version = "5.73"
+local nms_version = "5.74"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
 
 Unifies Blackhole/Portal/Ship/Teleporter Warps
 
+Modifies:
+GCCAMERAGLOBALS.GLOBAL.MBIN
+GCSIMULATIONGLOBALS.GLOBAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL\ENTITIES\ANIMATEDLIGHTS.ENTITY.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELALT2MAT.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELALTMAT.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN
+
 ]]
 
---|----------------------------------------------------------------------------------------
---MODIFIES:
---GCSIMULATIONGLOBALS.GLOBAL.MBIN
---MODELS\EFFECTS\WARP\WARPTUNNEL\ENTITIES\ANIMATEDLIGHTS.ENTITY.MBIN
---MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN
---MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELALT2MAT.MATERIAL.MBIN
---MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELALTMAT.MATERIAL.MBIN
---MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN
---MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN
---|----------------------------------------------------------------------------------------
+-- Warp Camera Settings for Freighters / Ships
+-------------------------------------------------------------------------------------------
+
+local m_WarpSettingsFPos = true
+local m_WarpSettingsSPos = true
+
+
+-- Initialise TableData
+-------------------------------------------------------------------------------------------
+
+TableData = TableData or {}
+
+-------------------------------------------------------------------------------------------
 
 m_ScrollStep = [[
     <Property name="Uniforms_Float" value="TkMaterialUniform_Float">
@@ -35,7 +48,92 @@ m_ScrollStep = [[
     </Property>
 ]]
 
---|----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+-- Warp Settings
+-------------------------------------------------------------------------------------------
+if m_WarpSettingsSPos then
+table.insert(TableData,
+    {
+        SKW = {"WarpSettings", "GcCameraWarpSettings"},
+        REPLACE_TYPE = "ALL",
+        VCT = {
+            {"FocusPointDist",       "100000"}, --Original "100000"
+            {"OffsetZFrequency_1",      "0.1"}, --Original "1.1"
+            {"OffsetZFrequency_2",      "0.2"}, --Original "0.9"
+            {"OffsetZStartBias",         "15"}, --Original "15"
+            {"OffsetZBias",               "0"}, --Original "2"
+            {"OffsetZRange",              "1"}, --Original "1.5"
+            {"OffsetYFrequency_1",      "0.1"}, --Original "1.1"
+            {"OffsetYFrequency_2",      "0.1"}, --Original "0.9"
+            {"OffsetYStartBias",          "7"}, --Original "3.5"
+            {"OffsetYBias",            "-0.4"}, --Original "0"
+            {"OffsetYRange",              "2"}, --Original "0.75"
+            {"OffsetXFrequency",        "0.3"}, --Original "0.25"
+            {"OffsetXPhase",              "0"}, --Original "0"
+            {"OffsetXRange",            "1.5"}, --Original "3.5"
+            {"RollRange",               "0.8"}, --Original "1"
+            {"YawnRange",               "300"}, --Original "600"
+            {"Curve",           "SmoothInOut"}, --Original "EaseInOutBack"
+        }
+    })
+end
+
+if m_WarpSettingsFPos then
+table.insert(TableData,
+    {
+        SKW = {"FreighterWarpSettings", "GcCameraWarpSettings"},
+        REPLACE_TYPE = "ALL",
+        VCT = {
+            {"FocusPointDist",       "100000"}, --Original "100000"
+            {"OffsetZFrequency_1",      "0.1"}, --Original "0.25"
+            {"OffsetZFrequency_2",      "0.2"}, --Original "0.35"
+            {"OffsetZStartBias",         "10"}, --Original "50"
+            {"OffsetZBias",             "-11"}, --Original "-11"
+            {"OffsetZRange",             "75"}, --Original "200"
+            {"OffsetYFrequency_1",      "0.1"}, --Original "0.2"
+            {"OffsetYFrequency_2",      "0.2"}, --Original "0.3"
+            {"OffsetYStartBias",        "1.0"}, --Original "3.5"
+            {"OffsetYBias",             "-20"}, --Original "0"
+            {"OffsetYRange",             "10"}, --Original "150"
+            {"OffsetXFrequency",        "0.4"}, --Original "0.15"
+            {"OffsetXPhase",              "0"}, --Original "0"
+            {"OffsetXRange",            "350"}, --Original "350"
+            {"RollRange",               "0.6"}, --Original "0.6"
+            {"YawnRange",               "400"}, --Original "400"
+            {"Curve",           "SmoothInOut"}, --Original "EaseInOutBack"
+        },
+    })
+end
+
+if m_WarpSettingsFPos then
+table.insert(TableData,
+    {
+        SKW = {"PirateFreighterWarpSettings", "GcCameraWarpSettings"},
+        REPLACE_TYPE = "ALL",
+        VCT = {
+            {"FocusPointDist",       "100000"}, --Original "100000"
+            {"OffsetZFrequency_1",        "0"}, --Original "0.25"
+            {"OffsetZFrequency_2",        "0"}, --Original "0.35"
+            {"OffsetZStartBias",          "0"}, --Original "50"
+            {"OffsetZBias",             "-11"}, --Original "-11"
+            {"OffsetZRange",            "300"}, --Original "700"
+            {"OffsetYFrequency_1",        "0"}, --Original "0.2"
+            {"OffsetYFrequency_2",        "0"}, --Original "0.3"
+            {"OffsetYStartBias",       "1000"}, --Original "2000"
+            {"OffsetYBias",             "-35"}, --Original "0"
+            {"OffsetYRange",             "10"}, --Original "300"
+            {"OffsetXFrequency",        "0.2"}, --Original "0.15"
+            {"OffsetXPhase",       "0.000010"}, --Original "0"
+            {"OffsetXRange",            "350"}, --Original "350"
+            {"RollRange",               "0.6"}, --Original "0.6"
+            {"YawnRange",               "400"}, --Original "400"
+            {"Curve",           "SmoothInOut"}, --Original "EaseInOutBack"
+        }
+    })
+end
+
+-------------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -48,6 +146,15 @@ NMS_MOD_DEFINITION_CONTAINER =
     EXML_CREATE     = exmlcreate,
     MODIFICATIONS   =
     {
+        {
+            MBIN_CT =
+            {
+                {
+                    MBIN_FS = [[GCCAMERAGLOBALS.GLOBAL.MBIN]],
+                    MXML_CT = TableData,
+                },
+            },
+        },
         {
             MBIN_CT =
             {
@@ -73,12 +180,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 
                         -- Animated Lights
+                        -------------------------------------------------------------------------------------------
 
                         {
                             SKW = {"Name", "AnimatedLights", "Type", "LIGHT", "Name", "FALLOFF_RATE"},
                             REPLACE_TYPE = "ALL",
                             VCT = {
-                                {"Value",   "0.500000"}, --Original "2.000000"
+                                {"Value",   "3.000000"}, --Original "2.000000"
                             }
                         },
                         {
@@ -90,7 +198,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 
                         -- Exit Warp Early Fade.
-                        -- Sadly, immersion breaking when Teleport Warping but, it looks so cool!
+                        -- Sadly, immersion breaking when Teleport Warping, but it looks so cool!
+                        -------------------------------------------------------------------------------------------
 
                         --{
                         --    SKW = {"Name", "WarpCylinder1", "Transform", "TkTransformData"},
@@ -100,6 +209,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --},
 
                         -- Stars (Lines)
+                        -------------------------------------------------------------------------------------------
 
                         {
                             SKW = {"Name", "stars", "Transform", "TkTransformData"},
@@ -121,18 +231,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 
                         -- LightArms Position / Scale
+                        -------------------------------------------------------------------------------------------
 
                         {
                             SKW = {"Name", "LightArms", "Transform", "TkTransformData"},
                             VCT = {
-                                {"TransZ", "-160"}, --Original "0"
+                                {"TransZ", "-180"}, --Original "0"
                                 {"ScaleX",    "8"}, --Original "1"
                                 {"ScaleY",    "8"}, --Original "1"
                                 {"ScaleZ",    "8"}, --Original "1"
                             }
                         },
+                        {
+                            SKW = {"Name", "LightArms", "Attributes", "TkSceneNodeAttributeData", "Name", "MATERIAL"},
+                            PKW = {"Attributes"},
+                            VCT = {
+                                {"Value", [[MODELS\EFFECTS\WARP\WARPLARGEPORTAL\LIGHTARMSREDMAT.MATERIAL.MBIN]]},
+                            }
+                        },
 
                         -- Insert New Light Material
+                        -------------------------------------------------------------------------------------------
 
                         {
                             SKW = {"Type", "LIGHT", "Name", "MATERIAL"},
@@ -143,6 +262,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
 
                 -- Animated Lights
+                -------------------------------------------------------------------------------------------
 
                 {
                     MBIN_FS = [[MODELS\EFFECTS\WARP\WARPTUNNEL\ENTITIES\ANIMATEDLIGHTS.ENTITY.MBIN]],
@@ -156,9 +276,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
 
                 -- Light Arms
+                -------------------------------------------------------------------------------------------
 
                 {
-                    MBIN_FS = [[MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN]],
+                    MBIN_FS = {
+                        [[MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN]],
+                        [[MODELS\EFFECTS\WARP\WARPLARGEPORTAL\LIGHTARMSREDMAT.MATERIAL.MBIN]]
+                    },
                     MXML_CT = {
                         {
                             SKW = {"Name", "gMaterialParams2Vec4"},
@@ -166,13 +290,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             VCT = {
                                 {"X", "0.65"}, --Original "1.3"
                                 {"Y",  "0.5"}, --Original "1"
-                                {"W", "0.03"}, --Original "0"
+                                {"W", "0.05"}, --Original "0"
                             }
                         },
                     }
                 },
 
                 -- Stars / Lines
+                -------------------------------------------------------------------------------------------
 
                 {
                     MBIN_FS = [[MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN]],
@@ -183,7 +308,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             SKW = {"Name", "gDiffuseMap"},
-                            VCT = {{"Map", "TEXTURES/EFFECTS/BLACKHOLE/LINES.DDS"},}
+                            VCT = {{"Map", "TEXTURES/EFFECTS/WARP/LINES.DDS"},}
                         },
                     }
                 },
@@ -217,6 +342,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
 
                 -- ScrollingWave
+                -------------------------------------------------------------------------------------------
 
                 {
                     MBIN_FS = [[MODELS\EFFECTS\WARP\WARPTUNNEL\SCROLLINGWAVES2MAT.MATERIAL.MBIN]],
@@ -235,27 +361,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
 
                 -- End Glow Cap Mat
+                -------------------------------------------------------------------------------------------
 
                 {
                     MBIN_FS = {
-                      [[MODELS\EFFECTS\WARP\WARPTUNNEL\ENDGLOWMAT.MATERIAL.MBIN]],
-                    },
-                    MXML_CT =
-                    {
-                        {
-                            SKW = {"Name", "gMaterialParams2Vec4"},
-                            VCT = {
-                                {"X", "0"},
-                                {"Y", "0"},
-                                {"Z", "0"},
-                                {"W", "0"}
-                            }
-                        },
-                    }
-                },
-                {
-                    MBIN_FS = {
-                      [[MODELS\EFFECTS\WARP\WARPTUNNEL\ENGGLOWCAPMAT.MATERIAL.MBIN]],
+                        [[MODELS\EFFECTS\WARP\WARPTUNNEL\ENDGLOWMAT.MATERIAL.MBIN]],
+                        [[MODELS\EFFECTS\WARP\WARPTUNNEL\ENGGLOWCAPMAT.MATERIAL.MBIN]]
                     },
                     MXML_CT =
                     {
@@ -272,6 +383,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
 
                 --Create the new Light Material
+                -------------------------------------------------------------------------------------------
 
                 {
                     MBIN_FS =
@@ -296,13 +408,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             VCT = {{"Anisotropy",  "0"},}
                         },
                         {
-                            SKW	= {"Name", "gLightCookiesMap"},
+                            SKW = {"Name", "gLightCookiesMap"},
                             REMOVE = "SECTION"
                         },
                     }
                 },
 
                 -- Simulation
+                -------------------------------------------------------------------------------------------
 
                 {
                     MBIN_FS = [[GCSIMULATIONGLOBALS.GLOBAL.MBIN]],
@@ -310,6 +423,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             REPLACE_TYPE = "ALL",
                             VCT = {
+                                {"WarpTunnelScale",       "240"},
                                 {"BlackHoleTunnelFile",   "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE.SCENE.MBIN"
                                 {"TeleportTunnelFile",    "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPPORTAL.SCENE.MBIN"
                                 {"PortalTunnelFile",      "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPLARGEPORTAL.SCENE.MBIN""

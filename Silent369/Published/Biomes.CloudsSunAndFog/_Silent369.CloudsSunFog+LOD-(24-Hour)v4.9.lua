@@ -1,26 +1,25 @@
-local modfilename = "CloudsSunFog+LOD-(12-Hour)"
+local modfilename = "CloudsSunFog+LOD-(24-Hour)"
 local lua_author  = "Silent"
-local lua_version = "4.8"
+local lua_version = "4.9"
 local mod_author  = "Silent369"
-local nms_version = "5.73"
+local nms_version = "5.74"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
 
 Realtime (NMS time) Day Length (Optional), Better Detailed Clouds, Slower Cloud Animation,
-Sun Properties and Planet Fog Adjustments. Optional Lens Dirt Removal. Also disables all
-Bloom effects but leaves lensing effects intact.
+Sun Properties and Planet Fog Adjustments. Lens Dirt Removal and Disables Bloom Effects.
 
 ]]
 
---modifies the following:
+--Modifies The Following:
 --GCGRAPHICSGLOBALS.GLOBAL.MBIN
 --GCENVIRONMENTGLOBALS.GLOBAL.MBIN
 --GCSKYGLOBALS.GLOBALS.MBIN
 --PIPELINES\PIPELINEDEFERRED.BIN
 --PIPELINES\PIPELINEDEFERREDVR.BIN
 
---TIME RATIOS
+--Time Ratios
 --30 Mn =   1800
 --01 Hr =   3600
 --03 Hr =  10800
@@ -32,89 +31,89 @@ Bloom effects but leaves lensing effects intact.
 --96 Hr = 345600
 --192Hr = 691200
 
-m_Day_Length              = 43200 --Original "1800"
+local m_Day_Length = 86400 --Original "1800"
 
---CLOUD ANIM SPEED
-m_Anim_Scale              = 10    --Original "50"
+--Cloud Anim Speed
+local m_Anim_Scale = 10    --Original "50"
 
 ----------------------------------------------------------------------------------------------------
 --------------------------- SHOULD LEAVE THESE VALUES ALONE - PROBABLY!  ---------------------------
 ----------------------------------------------------------------------------------------------------
 
---TERRAIN
-m_UncachedTerrain         = true  --Original "False"
-m_VariableUpdates         = false --Original "True"
+--Terrain
+local m_UncachedTerrain         = true  --Original "False"
+local m_VariableUpdates         = false --Original "True"
 
---SUN BRIGHTNESS
-m_LUTDFMult               = 0    --Original "0"
-m_Intensity               = 3.2  --Original "3"
-m_MaxSpaceFogStrength     = 0.2  --Original "0.5"
-m_ReflectionStrength      = 0.2  --Original "0.3"
-m_DOFFarStrengthWater     = 0    --Original "0"
-m_WeatherFilterSTCTime    = 5    --Original "10"
+--Sun Brightness
+local m_LUTDFMult               = 0    --Original "0"
+local m_Intensity               = 4.2  --Original "3"
+local m_MaxSpaceFogStrength     = 0.2  --Original "0.5"
+local m_ReflectionStrength      = 0.2  --Original "0.3"
+local m_DOFFarStrengthWater     = 0    --Original "0"
+local m_WeatherFilterSTCTime    = 5    --Original "10"
 
---STORM SETTINGS
-m_StormWarningTime        = 15   --Original "25"
-m_StormTransitionTime     = 20   --Original "25"
-m_MaxCloudCover           = 0.89 --Original "0.8"
-m_MaxStormCloudCover      = 0.99 --Original "0.8"
-m_CloudCoverSmoothTime    = 20   --Original "10"
-m_CloudRatioSmoothTime    = 16   --Original "4"
-m_StormCloudSmoothTime    = 3.2  --Original "0.8"
+--Storm Settings
+local m_StormWarningTime        = 15   --Original "25"
+local m_StormTransitionTime     = 20   --Original "25"
+local m_MaxCloudCover           = 0.89 --Original "0.8"
+local m_MaxStormCloudCover      = 0.99 --Original "0.8"
+local m_CloudCoverSmoothTime    = 20   --Original "10"
+local m_CloudRatioSmoothTime    = 16   --Original "4"
+local m_StormCloudSmoothTime    = 3.2  --Original "0.8"
 
---STORM SETTINGS
-m_MinStormLengthLow       = 60   --Original "120"
-m_MaxStormLengthLow       = 90   --Original "180"
-m_MinStormLengthHigh      = 75   --Original "150"
-m_MaxStormLengthHigh      = 160  --Original "320"
-m_MinTBSExtremeFallback   = 2400 --Original "240"
-m_MaxTBSExtremeFallback   = 6200 --Original "620"
+--Storm Settings
+local m_MinStormLengthLow       = 60   --Original "120"
+local m_MaxStormLengthLow       = 90   --Original "180"
+local m_MinStormLengthHigh      = 75   --Original "150"
+local m_MaxStormLengthHigh      = 160  --Original "320"
+local m_MinTBSExtremeFallback   = 2400 --Original "240"
+local m_MaxTBSExtremeFallback   = 6200 --Original "620"
 
-m_ExtremeAudioLevel       = 0.2  --Original "0.3"
-m_StormAudioLevel         = 0.4  --Original "0.5"
+local m_ExtremeAudioLevel       = 0.2  --Original "0.3"
+local m_StormAudioLevel         = 0.4  --Original "0.5"
 
---CLOUD RATIO
-m_CloudRatio              = 0.59  --Original "0.5-0.6"
-m_CloudRatioPrime         = 0.69  --Original "0.5-0.6"
+--Cloud Ratio
+local m_CloudRatio              = 0.59  --Original "0.5-0.6"
+local m_CloudRatioPrime         = 0.69  --Original "0.5-0.6"
 
---CLOUD SETTINGS
-m_LightScalar             = 5    --Original "5"
-m_AmbientScalar           = 1.72 --Original "1.721854"
-m_SunRayLength            = 80   --Original "50"
-m_Density                 = 10   --Original "1"
-m_AmbientDensity          = 5    --Original "0.1"
-m_ForwardScatteringG      = 0.75 --Original "0.9"
-m_BackwardScatteringG     = 0.15 --Original "0.3"
-m_BaseScale               = 1    --Original "1"
-m_SampleScalar            = 3    --Original "5"
-m_SampleThreshold         = 0.3  --Original "0.25"
-m_CloudBottomFade         = 1    --Original "1"
-m_DetailScale             = 7    --Original "6"
-m_ErosionEdgeSize         = 0.75 --Original "0.5"
-m_CloudDistortion         = 79   --Original "50"
-m_CloudDistortionScale    = 1.15 --Original "1"
-m_MaxIterations           = 128  --Original "128"
+--Cloud Settings
+local m_LightScalar             = 5    --Original "5"
+local m_AmbientScalar           = 1.72 --Original "1.721854"
+local m_SunRayLength            = 80   --Original "50"
+local m_Density                 = 10   --Original "1"
+local m_AmbientDensity          = 5    --Original "0.1"
+local m_ForwardScatteringG      = 0.75 --Original "0.9"
+local m_BackwardScatteringG     = 0.15 --Original "0.3"
+local m_BaseScale               = 1    --Original "1"
+local m_SampleScalar            = 3    --Original "5"
+local m_SampleThreshold         = 0.3  --Original "0.25"
+local m_CloudBottomFade         = 1    --Original "1"
+local m_DetailScale             = 7    --Original "6"
+local m_ErosionEdgeSize         = 0.75 --Original "0.5"
+local m_CloudDistortion         = 79   --Original "50"
+local m_CloudDistortionScale    = 1.15 --Original "1"
+local m_MaxIterations           = 128  --Original "128"
 
---HORIZON
-m_HorizonFadeStartAlpha   = -0.3 --Original "0"
-m_HorizonFadeScalar       = 0.2  --Original "0.25"
-m_HorizonDistance         = 23165 --Original "11165"
+--Horizon
+local m_HorizonFadeStartAlpha   = -0.3 --Original "0"
+local m_HorizonFadeScalar       = 0.2  --Original "0.25"
+local m_HorizonDistance         = 23165 --Original "11165"
 
---CLOUD HEIGHTS
-m_CloudHeightMin          = 2400  --Original "650"
-m_CloudHeightMax          = 2500  --Original "900"
-m_SkyAtmosphereHeight     = 7400 --Original "6000"
-m_StratosphereHeight      = 5400 --Original "4000"
+--Cloud Heights
+local m_CloudHeightMin          = 2400  --Original "650"
+local m_CloudHeightMax          = 2500  --Original "900"
+local m_SkyAtmosphereHeight     = 7400 --Original "6000"
+local m_StratosphereHeight      = 5400 --Original "4000"
 
-m_CloudHeightMinP         = 3400 --Original "2400"
-m_CloudHeightMaxP         = 3500 --Original "2500"
-m_SkyAtmosphereHeightP    = 8400 --Original "7400"
-m_StratosphereHeightP     = 6400 --Original "5400"
+local m_CloudHeightMinP         = 3400 --Original "2400"
+local m_CloudHeightMaxP         = 3500 --Original "2500"
+local m_SkyAtmosphereHeightP    = 8400 --Original "7400"
+local m_StratosphereHeightP     = 6400 --Original "5400"
 
-m_CloudHeightMinG         = 2400 --Original "1500"
-m_CloudHeightMaxG         = 2500 --Original "1500"
-m_SkyAtmosphereHeightG    = 7400 --Original "7200"
-m_StratosphereHeightG     = 5400 --Original "5200"
+local m_CloudHeightMinG         = 2400 --Original "1500"
+local m_CloudHeightMaxG         = 2500 --Original "1500"
+local m_SkyAtmosphereHeightG    = 7400 --Original "7200"
+local m_StratosphereHeightG     = 5400 --Original "5200"
 
 --Curve types that make sense with cloud animations
 --Linear
@@ -125,81 +124,81 @@ m_StratosphereHeightG     = 5400 --Original "5200"
 --EaseInOutSine
 --EaseInOutQuad
 
-m_Curve                    = "SmootherStep" --Original "Linear"
+local m_Curve                   = "SmootherStep" --Original "Linear"
 
---WIND OFFSET
-m_WindOffsetX              = 0.1  --Original "0.5"
-m_WindOffsetY              = 0.1  --Original "0.5"
+--Wind Offset
+local m_WindOffsetX             = 0.1  --Original "0.5"
+local m_WindOffsetY             = 0.1  --Original "0.5"
 
---STRATOSPHERE WIND OFFSET
-m_SWindOffsetX             = -0.15 --Original "-0.5"
-m_SWindOffsetY             = 0.15  --Original "0.5"
+--Stratosphere Wind Offset
+local m_SWindOffsetX            = -0.15 --Original "-0.5"
+local m_SWindOffsetY            = 0.15  --Original "0.5"
 
---CLOUD GRADIENT
-m_Cloud01X                 = 0.08  --Original "0.1"
-m_Cloud01Y                 = 0.12  --Original "0.15"
-m_Cloud01Z                 = 0.10  --Original "0.15"
-m_Cloud01T                 = 0.15  --Original "0.2"
+--Cloud Gradient
+local m_Cloud01X                = 0.08  --Original "0.1"
+local m_Cloud01Y                = 0.12  --Original "0.15"
+local m_Cloud01Z                = 0.10  --Original "0.15"
+local m_Cloud01T                = 0.15  --Original "0.2"
 
-m_Cloud02X                 = 0     --Original "0"
-m_Cloud02Y                 = 0.12  --Original "0.1"
-m_Cloud02Z                 = 0.15  --Original "0.3"
-m_Cloud02T                 = 0.3   --Original "0.6"
+local m_Cloud02X                = 0     --Original "0"
+local m_Cloud02Y                = 0.12  --Original "0.1"
+local m_Cloud02Z                = 0.15  --Original "0.3"
+local m_Cloud02T                = 0.3   --Original "0.6"
 
-m_Cloud03X                 = 0     --Original "0"
-m_Cloud03Y                 = 0.12  --Original "0.2"
-m_Cloud03Z                 = 0.2   --Original "0.3"
-m_Cloud03T                 = 0.4   --Original "1"
+local m_Cloud03X                = 0     --Original "0"
+local m_Cloud03Y                = 0.12  --Original "0.2"
+local m_Cloud03Z                = 0.2   --Original "0.3"
+local m_Cloud03T                = 0.4   --Original "1"
 
---FOG HEIGHT
-m_HeightFogHeightMin      = -3   --Original "100"
-m_WaterAlphaHeightMin     = 20   --Original "40"
+--Fog Height
+local m_HeightFogHeightMin      = -3   --Original "100"
+local m_WaterAlphaHeightMin     = 20   --Original "40"
 
---PLANET FOG
-m_PPF_FogStrength         = 0.03 --Original "0.04"
-m_PPF_FogMax              = 0.7  --Original "1"
-m_PPF_FogColourStrength   = 0.8  --Original "10"
-m_PPF_HeightFogStrength   = 0.06 --Original "0.08"
-m_PPF_HeightFogFOStrength = 0.12 --Original "0.25"
-m_PPF_HeightFogMax        = 0.65 --Original "0.8"
-m_PPF_FogHeight           = 96   --Original "128"
+--Planet Fog
+local m_PPF_FogStrength         = 0.03 --Original "0.04"
+local m_PPF_FogMax              = 0.7  --Original "1"
+local m_PPF_FogColourStrength   = 0.8  --Original "10"
+local m_PPF_HeightFogStrength   = 0.06 --Original "0.08"
+local m_PPF_HeightFogFOStrength = 0.12 --Original "0.25"
+local m_PPF_HeightFogMax        = 0.65 --Original "0.8"
+local m_PPF_FogHeight           = 96   --Original "128"
 
---PLANET FLIGHT FOG
-m_PFF_FogStrength         = 0.03 --Original "0.04"
-m_PFF_FogMax              = 0.7  --Original "1"
-m_PFF_FogColourStrength   = 0.8  --Original "10"
-m_PFF_HeightFogStrength   = 0.06 --Original "0.08"
-m_PFF_HeightFogFOStrength = 0.12 --Original "0.25"
-m_PFF_HeightFogMax        = 0.65 --Original "0.8"
-m_PFF_FogHeight           = 96   --Original "128"
+--Planet Flight Fog
+local m_PFF_FogStrength         = 0.03 --Original "0.04"
+local m_PFF_FogMax              = 0.7  --Original "1"
+local m_PFF_FogColourStrength   = 0.8  --Original "10"
+local m_PFF_HeightFogStrength   = 0.06 --Original "0.08"
+local m_PFF_HeightFogFOStrength = 0.12 --Original "0.25"
+local m_PFF_HeightFogMax        = 0.65 --Original "0.8"
+local m_PFF_FogHeight           = 96   --Original "128"
 
---PLANET EXTREME FOG
-m_PXF_FogStrength         = 0.4  --Original "0.5"
-m_PXF_FogMax              = 0.6  --Original "0.9"
-m_PXF_FogColourStrength   = 0.8  --Original "6"
-m_PXF_HeightFogStrength   = 0.06 --Original "0.3"
-m_PXF_HeightFogFOStrength = 0.05 --Original "0.1"
-m_PXF_HeightFogMax        = 0.4  --Original "0.6"
-m_PXF_FogHeight           = 6    --Original "8"
+--Planet Extreme Fog
+local m_PXF_FogStrength         = 0.4  --Original "0.5"
+local m_PXF_FogMax              = 0.6  --Original "0.9"
+local m_PXF_FogColourStrength   = 0.8  --Original "6"
+local m_PXF_HeightFogStrength   = 0.06 --Original "0.3"
+local m_PXF_HeightFogFOStrength = 0.05 --Original "0.1"
+local m_PXF_HeightFogMax        = 0.4  --Original "0.6"
+local m_PXF_FogHeight           = 6    --Original "8"
 
---PLANET STORM FOG
-m_PSF_FogStrength         = 0.85 --Original "1.5"
-m_PSF_FogMax              = 0.7  --Original "0.95"
-m_PSF_FogColourStrength   = 0.8  --Original "2.5"
-m_PSF_HeightFogStrength   = 0.06 --Original "0.5"
-m_PSF_HeightFogFOStrength = 0.15 --Original "0.3"
-m_PSF_HeightFogMax        = 0.4  --Original "0.6"
-m_PSF_FogHeight           = 2    --Original "4"
+--Planet Storm Fog
+local m_PSF_FogStrength         = 0.85 --Original "1.5"
+local m_PSF_FogMax              = 0.7  --Original "0.95"
+local m_PSF_FogColourStrength   = 0.8  --Original "2.5"
+local m_PSF_HeightFogStrength   = 0.06 --Original "0.5"
+local m_PSF_HeightFogFOStrength = 0.15 --Original "0.3"
+local m_PSF_HeightFogMax        = 0.4  --Original "0.6"
+local m_PSF_FogHeight           = 2    --Original "4"
 
---SUN CLAMP
-m_SunClmHMin              = 300  --Original "300"
-m_SunClmHMax              = 390  --Original "390"
-m_SunClampAngle           = 55   --Original "55"
-m_SunFactorMin            = 0.4  --Original "0.4"
+--Sun Clamp
+local m_SunClmHMin              = 300  --Original "300"
+local m_SunClmHMax              = 390  --Original "390"
+local m_SunClampAngle           = 55   --Original "55"
+local m_SunFactorMin            = 0.4  --Original "0.4"
 
---STAR CHANCE
-m_BinaryStarChance        = 0.2  --Original "0.2"
-m_TernaryStarChance       = 0.05 --Original "0.05"
+--Star Chance
+local m_BinaryStarChance        = 0.2  --Original "0.2"
+local m_TernaryStarChance       = 0.05 --Original "0.05"
 
 -----------------------------------------------------------------------------------------------------
 
@@ -235,7 +234,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             REPLACE_TYPE = "RAW",
-                            VCT	=
+                            VCT =
                             {
                                 {"<Stage id=\"LensSun\">", "<Stage id=\"LensSun\" enabled=\"false\">"},
                                 {"<Stage id=\"NewBloomBright\" enabled=\"true\">", "<Stage id=\"NewBloomBright\" enabled=\"false\">"},
@@ -286,7 +285,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     MXML_CT =
                     {
                         ----------------------------------------------------------------------------
-                        --SUN LIGHT SETTINGS
+                        --Sun Light Settings
                         ----------------------------------------------------------------------------
                         {
                             VCT = {
@@ -296,110 +295,110 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ReflectionStrength",   m_ReflectionStrength}, --Original "0.3"
                                 {"DOFFarStrengthWater", m_DOFFarStrengthWater}, --Original "0"
 
-                                {"ShadowLength",                        "800"}, --Original "400"
-                                {"ShadowLengthStation",                "2000"}, --Original "1300"
+                                {"ShadowLength",         "800"}, --Original "400"
+                                {"ShadowLengthStation", "2000"}, --Original "1300"
 
                                 ----------------------------------------------------------------------------
                                 --Lens Dirt Options
                                 ----------------------------------------------------------------------------
 
-                                {"LensScale",                            "0"}, --Original "0.3"
-                                {"LensDirt",                             "0"}, --Original "0.3"
-                                {"LensScaleCave",                        "0"}, --Original "4"
-                                {"LensDirtCave",                         "0"}, --Original "0.4"
+                                {"LensScale",     "0"}, --Original "0.3"
+                                {"LensDirt",      "0"}, --Original "0.3"
+                                {"LensScaleCave", "0"}, --Original "4"
+                                {"LensDirtCave",  "0"}, --Original "0.4"
 
                                 ----------------------------------------------------------------------------
                                 --LOD Value Changes
                                 ----------------------------------------------------------------------------
 
-                                {"ForceUncachedTerrain",   m_UncachedTerrain}, --Original "False"
-                                {"EnableVariableUpdate",   m_VariableUpdates}, --Original "True"
+                                {"ForceUncachedTerrain", m_UncachedTerrain}, --Original "False"
+                                {"EnableVariableUpdate", m_VariableUpdates}, --Original "True"
                             }
                         },
 
                         ----------------------------------------------------------------------------
-                        --LIGHT SHAFT PROPERTIES
+                        --Light Shaft Properties
                         ----------------------------------------------------------------------------
 
                         {
                             PKW = {"LightShaftProperties",},
                             VCT = {
-                                {"LightShaft Scattering",   "2E-06"}, --Original "0.55"
-                                {"LightShaft Strength",       "0.4"}, --Original "2"
-                                {"LightShaft Bottom",       "0.002"}, --Original "0"
-                                {"LightShaft Top",            "0.1"}, --Original "0.75"
+                                {"LightShaft Scattering", "2E-06"}, --Original "0.55"
+                                {"LightShaft Strength",     "0.4"}, --Original "2"
+                                {"LightShaft Bottom",     "0.002"}, --Original "0"
+                                {"LightShaft Top",          "0.1"}, --Original "0.75"
                             }
                         },
                         {
                             PKW = {"LightShaftProperties", "LightShaftColourBottom",},
                             VCT = {
-                                {"R",                        "0.1"}, --Original "0.263"
-                                {"G",                        "0.1"}, --Original "0.263"
-                                {"B",                       "0.13"}, --Original "0.263"
-                                {"A",                        "0.5"}, --Original "1"
+                                {"R",  "0.1"}, --Original "0.263"
+                                {"G",  "0.1"}, --Original "0.263"
+                                {"B", "0.13"}, --Original "0.263"
+                                {"A",  "0.5"}, --Original "1"
                             }
                         },
                         {
                             PKW = {"LightShaftProperties", "LightShaftColourTop",},
                             VCT = {
-                                {"R",                        "0.1"}, --Original "0.387"
-                                {"G",                        "0.1"}, --Original "0.341"
-                                {"B",                       "0.13"}, --Original "0.253"
-                                {"A",                        "0.5"}, --Original "1"
+                                {"R",  "0.1"}, --Original "0.387"
+                                {"G",  "0.1"}, --Original "0.341"
+                                {"B", "0.13"}, --Original "0.253"
+                                {"A",  "0.5"}, --Original "1"
                             }
                         },
                         ----------------------------------------------------------------------------
-                        --STORM LIGHT SHAFT PROPERTIES
+                        --Storm Light Shaft Properties
                         ----------------------------------------------------------------------------
                         {
                             PKW = {"StormLightShaftProperties",},
                             VCT = {
-                                {"LightShaft Scattering",   "4E-06"}, --Original "0.55"
-                                {"LightShaft Strength",       "0.4"}, --Original "25"
-                                {"LightShaft Bottom",       "0.002"}, --Original "0"
-                                {"LightShaft Top",            "0.1"}, --Original "0.25"
+                                {"LightShaft Scattering", "4E-06"}, --Original "0.55"
+                                {"LightShaft Strength",     "0.4"}, --Original "25"
+                                {"LightShaft Bottom",     "0.002"}, --Original "0"
+                                {"LightShaft Top",          "0.1"}, --Original "0.25"
                             }
                         },
                         {
                             PKW = {"StormLightShaftProperties", "LightShaftColourBottom",},
                             VCT = {
-                                {"R",                        "0.1"}, --Original "0.531"
-                                {"G",                        "0.1"}, --Original "0.493"
-                                {"B",                       "0.13"}, --Original "0.443"
-                                {"A",                        "0.5"}, --Original "1"
+                                {"R",  "0.1"}, --Original "0.531"
+                                {"G",  "0.1"}, --Original "0.493"
+                                {"B", "0.13"}, --Original "0.443"
+                                {"A",  "0.5"}, --Original "1"
                             }
                         },
                         {
                             PKW = {"StormLightShaftProperties", "LightShaftColourTop",},
                             VCT = {
-                                {"R",                        "0.1"}, --Original "0.04"
-                                {"G",                        "0.1"}, --Original "0.034"
-                                {"B",                       "0.13"}, --Original "0.03"
-                                {"A",                        "0.5"}, --Original "1"
+                                {"R",  "0.1"}, --Original "0.04"
+                                {"G",  "0.1"}, --Original "0.034"
+                                {"B", "0.13"}, --Original "0.03"
+                                {"A",  "0.5"}, --Original "1"
                             }
                         },
                         ----------------------------------------------------------------------------
-                        --WIND DIRECTION
+                        --Wind Direction
                         ----------------------------------------------------------------------------
                         {
                             PKW = {"WindDir1",},
                             VCT = {
-                                {"X",                        "0.3"}, --Original "1"
-                                {"Y",                        "0.3"}, --Original "0.5"
+                                {"X",  "0.3"}, --Original "1"
+                                {"Y",  "0.3"}, --Original "0.5"
                             }
                         },
                         {
                             PKW = {"WindDir2",},
                             VCT = {
-                                {"X",                        "0.3"}, --Original "1"
-                                {"Y",                        "-0.3"}, --Original "-0.75"
+                                {"X",  "0.3"}, --Original "1"
+                                {"Y", "-0.3"}, --Original "-0.75"
                             }
                         },
                     }
                 },
 
                 ----------------------------------------------------------------------------
-                --GC ENVIRONMENT GLOBALS
+                --Gc Environment Globals
                 ----------------------------------------------------------------------------
 
                 {
@@ -421,11 +420,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 --LOD Value Changes
                                 ----------------------------------------------------------------------------
 
-                                {"TerrainFadeTime",                          "1"}, -- Original "2"
-                                {"TerrainFadeTimeInShip",                    "1"}, -- Original "2"
-                                {"CreatureFadeTime",                       "0.7"}, -- Original "1.5"
-                                {"FloraFadeTimeMin",                       "0.3"}, -- Original "0.6"
-                                {"FloraFadeTimeMax",                         "1"}  -- Original "2.25"
+                                {"TerrainFadeTime",         "1"}, -- Original "2"
+                                {"TerrainFadeTimeInShip",   "1"}, -- Original "2"
+                                {"CreatureFadeTime",      "0.7"}, -- Original "1.5"
+                                {"FloraFadeTimeMin",      "0.3"}, -- Original "0.6"
+                                {"FloraFadeTimeMax",        "1"}  -- Original "2.25"
                             }
                         },
 
@@ -457,42 +456,42 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             PKW = {"EnvironmentProperties"},
                             VCT = {
-                                {"PlanetObjectSwitch",                   "6000"}, -- Original "700"
-                                {"PlanetLodSwitch0",                     "3000"}, -- Original "300"
-                                {"PlanetLodSwitch0Elevation",            "6000"}, -- Original "700"
-                                {"PlanetLodSwitch1",                    "10000"}, -- Original "2000"
-                                {"PlanetLodSwitch2",                    "50000"}, -- Original "10000"
-                                {"PlanetLodSwitch3",                   "100000"}, -- Original "20000"
+                                {"PlanetObjectSwitch",          "6000"}, -- Original "700"
+                                {"PlanetLodSwitch0",            "3000"}, -- Original "300"
+                                {"PlanetLodSwitch0Elevation",   "6000"}, -- Original "700"
+                                {"PlanetLodSwitch1",           "10000"}, -- Original "2000"
+                                {"PlanetLodSwitch2",           "50000"}, -- Original "10000"
+                                {"PlanetLodSwitch3",          "100000"}, -- Original "20000"
                             }
                         },
                         {
                             PKW = {"EnvironmentPrimeProperties"},
                             VCT = {
-                                {"PlanetObjectSwitch",                   "6000"}, -- Original "2000"
-                                {"PlanetLodSwitch0",                     "3000"}, -- Original "2000"
-                                {"PlanetLodSwitch0Elevation",            "6000"}, -- Original "2000"
-                                {"PlanetLodSwitch1",                    "10000"}, -- Original "2000"
-                                {"PlanetLodSwitch2",                    "60000"}, -- Original "10000"
-                                {"PlanetLodSwitch3",                   "100000"}, -- Original "20000"
+                                {"PlanetObjectSwitch",          "6000"}, -- Original "2000"
+                                {"PlanetLodSwitch0",            "3000"}, -- Original "2000"
+                                {"PlanetLodSwitch0Elevation",   "6000"}, -- Original "2000"
+                                {"PlanetLodSwitch1",           "10000"}, -- Original "2000"
+                                {"PlanetLodSwitch2",           "60000"}, -- Original "10000"
+                                {"PlanetLodSwitch3",          "100000"}, -- Original "20000"
                             }
                         },
                         {
                             PKW = {"EnvironmentGasGiantProperties"},
                             VCT = {
-                                {"PlanetObjectSwitch",                   "6000"}, -- Original "2000"
-                                {"PlanetLodSwitch0",                     "3000"}, -- Original "2000"
-                                {"PlanetLodSwitch0Elevation",            "6000"}, -- Original "2000"
-                                {"PlanetLodSwitch1",                    "10000"}, -- Original "2000"
-                                {"PlanetLodSwitch2",                    "60000"}, -- Original "10000"
-                                {"PlanetLodSwitch3",                   "100000"}, -- Original "20000"
+                                {"PlanetObjectSwitch",          "6000"}, -- Original "2000"
+                                {"PlanetLodSwitch0",            "3000"}, -- Original "2000"
+                                {"PlanetLodSwitch0Elevation",   "6000"}, -- Original "2000"
+                                {"PlanetLodSwitch1",           "10000"}, -- Original "2000"
+                                {"PlanetLodSwitch2",           "60000"}, -- Original "10000"
+                                {"PlanetLodSwitch3",          "100000"}, -- Original "20000"
                             }
                         },
 
                         ----------------------------------------------------------------------------
-                        --ENVIRONMENT PROPERTIES
+                        --Environment Properties
                         ----------------------------------------------------------------------------
                         ----------------------------------------------------------------------------
-                        --CLOUD SETTINGS NORMAL
+                        --Cloud Settings Normal
                         ----------------------------------------------------------------------------
                         {
                             PKW = "EnvironmentProperties",
@@ -504,7 +503,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         ----------------------------------------------------------------------------
-                        --CLOUD SETTINGS PRIME
+                        --Cloud Settings Prime
                         ----------------------------------------------------------------------------
                         {
                             PKW = "EnvironmentPrimeProperties",
@@ -516,7 +515,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         ----------------------------------------------------------------------------
-                        --CLOUD SETTINGS GAS
+                        --Cloud Settings Gas
                         ----------------------------------------------------------------------------
                         {
                             PKW = "EnvironmentGasGiantProperties",
@@ -528,7 +527,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         ----------------------------------------------------------------------------
-                        --PRIMARY CLOUD PROPERTIES
+                        --Primary Cloud Properties
                         ----------------------------------------------------------------------------
                         {
                             SKW = {"CloudProperties", "GcCloudProperties"},
@@ -557,67 +556,67 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         ----------------------------------------------------------------------------
-                        --CLOUD GRADIENT SETTINGS
+                        --Cloud Gradient Settings
                         ----------------------------------------------------------------------------
                         {
                             PKW = {"CloudHeightGradient1"},
                             VCT = {
-                                {"X",                   m_Cloud01X}, --Original "0.1"
-                                {"Y",                   m_Cloud01Y}, --Original "0.15"
-                                {"Z",                   m_Cloud01Z}, --Original "0.15"
-                                {"W",                   m_Cloud01T}, --Original "0.2"
+                                {"X", m_Cloud01X}, --Original "0.1"
+                                {"Y", m_Cloud01Y}, --Original "0.15"
+                                {"Z", m_Cloud01Z}, --Original "0.15"
+                                {"W", m_Cloud01T}, --Original "0.2"
                             }
                         },
                         {
                             PKW = {"CloudHeightGradient2"},
                             VCT = {
-                                {"X",                   m_Cloud02X}, --Original "0"
-                                {"Y",                   m_Cloud02Y}, --Original "0.1"
-                                {"Z",                   m_Cloud02Z}, --Original "0.3"
-                                {"W",                   m_Cloud02T}, --Original "0.6"
+                                {"X", m_Cloud02X}, --Original "0"
+                                {"Y", m_Cloud02Y}, --Original "0.1"
+                                {"Z", m_Cloud02Z}, --Original "0.3"
+                                {"W", m_Cloud02T}, --Original "0.6"
                             }
                         },
                         {
                             PKW = {"CloudHeightGradient3"},
                             VCT = {
-                                {"X",                   m_Cloud03X}, --Original "0"
-                                {"Y",                   m_Cloud03Y}, --Original "0.2"
-                                {"Z",                   m_Cloud03Z}, --Original "0.3"
-                                {"W",                   m_Cloud03T}, --Original "1"
+                                {"X", m_Cloud03X}, --Original "0"
+                                {"Y", m_Cloud03Y}, --Original "0.2"
+                                {"Z", m_Cloud03Z}, --Original "0.3"
+                                {"W", m_Cloud03T}, --Original "1"
                             }
                         },
                         ----------------------------------------------------------------------------
-                        --WIND OFFSET SETTINGS
+                        --Wind Offset Settings
                         ----------------------------------------------------------------------------
                         {
                             PKW = {"Wind Offset"},
                             VCT = {
-                                {"X",                   m_WindOffsetX}, --Original "0.5"
-                                {"Y",                   m_WindOffsetY}, --Original "0.5"
+                                {"X", m_WindOffsetX}, --Original "0.5"
+                                {"Y", m_WindOffsetY}, --Original "0.5"
                             }
                         },
                         {
                             PKW = {"Stratosphere Wind Offset"},
                             VCT = {
-                                {"X",                   m_SWindOffsetX},
-                                {"Y",                   m_SWindOffsetY},
+                                {"X", m_SWindOffsetX},
+                                {"Y", m_SWindOffsetY},
                             }
                         },
                         ----------------------------------------------------------------------------
-                        --WIND SHEAR SETTINGS
+                        --Wind Shear Settings
                         ----------------------------------------------------------------------------
                         {
                             PKW = {"ShearWindSettings", "Octave0"},
                             VCT = {
-                                {"MinStrength",            "0.05"}, --Original "0.1"
-                                {"MaxStrength",           "0.075"}, --Original "0.15"
+                                {"MinStrength",  "0.05"}, --Original "0.1"
+                                {"MaxStrength", "0.075"}, --Original "0.15"
                             }
                         },
                     },
                 },
 
                 ----------------------------------------------------------------------------
-                --SKY GLOBALS SETTINGS
+                --Sky Globals Settings
                 ----------------------------------------------------------------------------
 
                 {
@@ -650,7 +649,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 
                         ----------------------------------------------------------------------------
-                        --SUN PROPERTIES
+                        --Sun Properties
                         ----------------------------------------------------------------------------
                         {
                             SKW = {"PlanetProperties", "GcPlanetSkyProperties"},
@@ -698,16 +697,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 
                         ----------------------------------------------------------------------------
-                        --GLOBAL PROPERTIES
+                        --Global Properties
                         ----------------------------------------------------------------------------
                         {
                             PKW = {"DayLightColour"},
                             REPLACE_TYPE = "ALLINSECTION",
                             VCT = {
-                                {"R",                           "1"}, --Original "1"
-                                {"G",                           "1"}, --Original "1"
-                                {"B",                        "0.91"}, --Original "0.904"
-                                {"A",                           "1"}, --Original "1"
+                                {"R",    "1"}, --Original "1"
+                                {"G",    "1"}, --Original "1"
+                                {"B", "0.91"}, --Original "0.904"
+                                {"A",    "1"}, --Original "1"
                             }
                         },
                         {
@@ -715,26 +714,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                             PKW = {"HeightFogColour"},
                             REPLACE_TYPE = "ALLINSECTION",
                             VCT = {
-                                {"R",                       "0.007"}, --Original "207"
-                                {"G",                       "0.007"}, --Original "207"
-                                {"B",                       "0.007"}, --Original "207"
-                                {"A",                           "1"}, --Original "1"
+                                {"R", "0.007"}, --Original "207"
+                                {"G", "0.007"}, --Original "207"
+                                {"B", "0.007"}, --Original "207"
+                                {"A",     "1"}, --Original "1"
                             }
                         },
 
                         ----------------------------------------------------------------------------
-                        --PHOTO MODE VIGNETTE
+                        --Photo Mode Vignette
                         ----------------------------------------------------------------------------
                         {
                             PKW = {"PhotoModeVignette"},
                             VCT = {
-                                {"X",                         "1.0"}, --Original "0.9"
-                                {"Y",                         "1.0"}, --Original "0.3"
+                                {"X", "1.0"}, --Original "0.9"
+                                {"Y", "1.0"}, --Original "0.3"
                             }
                         },
 
                         ----------------------------------------------------------------------------
-                        --FOG PROPERTIES
+                        --Fog Properties
                         ----------------------------------------------------------------------------
                         {
                             SKW = {
@@ -819,7 +818,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 
                         ----------------------------------------------------------------------------
-                        --CLOUD ADJUST CURVE
+                        --Cloud Adjust Curve
                         ----------------------------------------------------------------------------
                         {
                             SKW = {"CloudAdjust", "GcPhotoModeAdjustData", "AdjustMaxCurve", "TkCurveType"},
@@ -828,63 +827,63 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         ----------------------------------------------------------------------------
-                        --CLOUD RATIO PROPERTIES
+                        --Cloud Ratio Properties
                         ----------------------------------------------------------------------------
                         {
                             PKW = "PlanetProperties",
                             REPLACE_TYPE = "ALL",
                             VCT = {
-                                {"CloudRatio",      m_CloudRatio}, --Original "0.5-0.6"
+                                {"CloudRatio", m_CloudRatio}, --Original "0.5-0.6"
                             }
                         },
                         {
                             PKW = "PlanetPrimeProperties",
                             REPLACE_TYPE = "ALL",
                             VCT = {
-                                {"CloudRatio",      m_CloudRatioPrime}, --Original "0.5-0.6"
+                                {"CloudRatio", m_CloudRatioPrime}, --Original "0.5-0.6"
                             }
                         },
                         ----------------------------------------------------------------------------
-                        --CLOUD COVERAGE PROPERTIES
+                        --Cloud Coverage Properties
                         ----------------------------------------------------------------------------
                         {
                             SKW = {"PlanetCloudsMin", "GcPlanetCloudProperties"},
                             VCT = {
-                                {"Coverage1",                   "1"}, --Original "0.5"
-                                {"Coverage2",                   "2"}, --Original "1"
-                                {"Coverage3",                   "3"}, --Original "1"
-                                {"Offset1",                     "1"}, --Original "0"
-                                {"Offset2",                     "3"}, --Original "0"
-                                {"Offset3",                     "5"}, --Original "0"
-                                {"RateOfChange",             "0.01"}, --Original "0.1"
-                                {"SecondaryRateOfChange",   "0.025"}, --Original "0.15"
-                                {"Cloudiness",              "CloudyWithClearSpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
+                                {"Coverage1",                 "1"}, --Original "0.5"
+                                {"Coverage2",                 "2"}, --Original "1"
+                                {"Coverage3",                 "3"}, --Original "1"
+                                {"Offset1",                   "1"}, --Original "0"
+                                {"Offset2",                   "3"}, --Original "0"
+                                {"Offset3",                   "5"}, --Original "0"
+                                {"RateOfChange",           "0.01"}, --Original "0.1"
+                                {"SecondaryRateOfChange", "0.025"}, --Original "0.15"
+                                {"Cloudiness",            "CloudyWithClearSpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
                             }
                         },
                         {
                             SKW = {"PlanetCloudsMax", "GcPlanetCloudProperties"},
                             VCT = {
-                                {"Coverage1",                   "6"}, --Original "3"
-                                {"Coverage2",                   "9"}, --Original "6"
-                                {"Coverage3",                  "12"}, --Original "9"
-                                {"Offset2",                     "5"}, --Original "5"
-                                {"Offset2",                    "10"}, --Original "5"
-                                {"Offset3",                    "15"}, --Original "5"
-                                {"RateOfChange",             "0.01"}, --Original "0.1"
-                                {"SecondaryRateOfChange",   "0.045"}, --Original "0.15"
-                                {"Cloudiness",              "CloudyWithClearSpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
+                                {"Coverage1",                 "6"}, --Original "3"
+                                {"Coverage2",                 "9"}, --Original "6"
+                                {"Coverage3",                "12"}, --Original "9"
+                                {"Offset2",                   "5"}, --Original "5"
+                                {"Offset2",                  "10"}, --Original "5"
+                                {"Offset3",                  "15"}, --Original "5"
+                                {"RateOfChange",           "0.01"}, --Original "0.1"
+                                {"SecondaryRateOfChange", "0.045"}, --Original "0.15"
+                                {"Cloudiness",            "CloudyWithClearSpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
                             }
                         },
                         ----------------------------------------------------------------------------
-                        --HEAVEY AIR SETINGS
+                        --Heavey Air Setings
                         ----------------------------------------------------------------------------
                         {
                             SKW = {"Settings", "GcHeavyAirSettingValues"},
                             REPLACE_TYPE = "ALL",
                             VCT = {
-                                {"Thickness",                 "0.1"}, --Original "1"
-                                {"Alpha1",                    "0.1"}, --Original "1"
-                                {"Alpha2",                    "0.1"}, --Original "1"
+                                {"Thickness", "0.1"}, --Original "1"
+                                {"Alpha1",    "0.1"}, --Original "1"
+                                {"Alpha2",    "0.1"}, --Original "1"
                             }
                         },
                     }

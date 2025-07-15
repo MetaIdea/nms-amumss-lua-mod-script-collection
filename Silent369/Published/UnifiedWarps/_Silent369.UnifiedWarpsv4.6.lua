@@ -1,58 +1,133 @@
 local modfilename = "UnifiedWarps"
 local lua_author  = "Silent"
-local lua_version = "4.5"
+local lua_version = "4.6"
 local mod_author  = "Silent369"
-local nms_version = "5.73"
+local nms_version = "5.74"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
 
 Unifies Blackhole/Portal/Ship/Teleporter Warps
 
+Modifies:
+GCCAMERAGLOBALS.GLOBAL.MBIN
+GCSIMULATIONGLOBALS.GLOBAL.MBIN
+MATERIALS\LIGHT_WARPTUNNEL.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL\ENGGLOWCAPMAT.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL\SCROLLINGWAVES2MAT.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL\WARPBGMAT.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN
+
 ]]
 
---|----------------------------------------------------------------------------------------
+-- Warp Camera Settings for Freighters / Ships
+-------------------------------------------------------------------------------------------
 
---MODIFIES:
---GCSIMULATIONGLOBALS.GLOBAL.MBIN
---MATERIALS\LIGHT_WARPTUNNEL.MATERIAL.MBIN
---MODELS\EFFECTS\WARP\WARPTUNNEL\ENGGLOWCAPMAT.MATERIAL.MBIN
---MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN
---MODELS\EFFECTS\WARP\WARPTUNNEL\SCROLLINGWAVES2MAT.MATERIAL.MBIN
---MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN
---MODELS\EFFECTS\WARP\WARPTUNNEL\WARPBGMAT.MATERIAL.MBIN
---MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN
+local m_WarpSettingsFPos = true
+local m_WarpSettingsSPos = true
 
---|----------------------------------------------------------------------------------------
 
-m_FOV       = "360"
-m_FALLOFF   = "quadratic"
-m_FALLOFF_R = "0.5"
-m_INTENSITY = "200000.000000"
-m_COL_R     = "1.85"
-m_COL_G     = "0.50"
-m_COL_B     = "2.25"
+-- Initialise TableData
+-------------------------------------------------------------------------------------------
 
---m_UVScroll = [[
---    <Property name="Flags" value="TkMaterialFlags">
---      <Property name="MaterialFlag" value="_F14_UVSCROLL" />
---    </Property>
---]]
---
---m_ScrollStep = [[
---    <Property name="Uniforms_Float" value="TkMaterialUniform_Float">
---      <Property name="Name" value="gUVScrollStepVec4" />
---      <Property name="Values">
---        <Property name="X" value="0" />
---        <Property name="Y" value="3" />
---        <Property name="Z" value="0" />
---        <Property name="W" value="0" />
---      </Property>
---      <Property name="ExtendedValues" />
---    </Property>
---]]
+TableData = TableData or {}
 
---|----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+local m_FOV       = "360"
+local m_FALLOFF   = "quadratic"
+local m_FALLOFF_R = "0.5"
+local m_INTENSITY = "200000.000000"
+local m_COL_R     = "1.85"
+local m_COL_G     = "0.50"
+local m_COL_B     = "2.25"
+
+-- Warp Settings
+-------------------------------------------------------------------------------------------
+if m_WarpSettingsSPos then
+table.insert(TableData,
+    {
+        SKW = {"WarpSettings", "GcCameraWarpSettings"},
+        REPLACE_TYPE = "ALL",
+        VCT = {
+            {"FocusPointDist",       "100000"}, --Original "100000"
+            {"OffsetZFrequency_1",      "0.1"}, --Original "1.1"
+            {"OffsetZFrequency_2",      "0.2"}, --Original "0.9"
+            {"OffsetZStartBias",         "15"}, --Original "15"
+            {"OffsetZBias",               "0"}, --Original "2"
+            {"OffsetZRange",              "1"}, --Original "1.5"
+            {"OffsetYFrequency_1",      "0.1"}, --Original "1.1"
+            {"OffsetYFrequency_2",      "0.1"}, --Original "0.9"
+            {"OffsetYStartBias",          "7"}, --Original "3.5"
+            {"OffsetYBias",            "-0.4"}, --Original "0"
+            {"OffsetYRange",              "2"}, --Original "0.75"
+            {"OffsetXFrequency",        "0.3"}, --Original "0.25"
+            {"OffsetXPhase",              "0"}, --Original "0"
+            {"OffsetXRange",            "1.5"}, --Original "3.5"
+            {"RollRange",               "0.8"}, --Original "1"
+            {"YawnRange",               "300"}, --Original "600"
+            {"Curve",           "SmoothInOut"}, --Original "EaseInOutBack"
+        }
+    })
+end
+
+if m_WarpSettingsFPos then
+table.insert(TableData,
+    {
+        SKW = {"FreighterWarpSettings", "GcCameraWarpSettings"},
+        REPLACE_TYPE = "ALL",
+        VCT = {
+            {"FocusPointDist",       "100000"}, --Original "100000"
+            {"OffsetZFrequency_1",      "0.1"}, --Original "0.25"
+            {"OffsetZFrequency_2",      "0.2"}, --Original "0.35"
+            {"OffsetZStartBias",         "10"}, --Original "50"
+            {"OffsetZBias",             "-11"}, --Original "-11"
+            {"OffsetZRange",             "75"}, --Original "200"
+            {"OffsetYFrequency_1",      "0.1"}, --Original "0.2"
+            {"OffsetYFrequency_2",      "0.2"}, --Original "0.3"
+            {"OffsetYStartBias",        "1.0"}, --Original "3.5"
+            {"OffsetYBias",             "-20"}, --Original "0"
+            {"OffsetYRange",             "10"}, --Original "150"
+            {"OffsetXFrequency",        "0.4"}, --Original "0.15"
+            {"OffsetXPhase",              "0"}, --Original "0"
+            {"OffsetXRange",            "350"}, --Original "350"
+            {"RollRange",               "0.6"}, --Original "0.6"
+            {"YawnRange",               "400"}, --Original "400"
+            {"Curve",           "SmoothInOut"}, --Original "EaseInOutBack"
+        },
+    })
+end
+
+if m_WarpSettingsFPos then
+table.insert(TableData,
+    {
+        SKW = {"PirateFreighterWarpSettings", "GcCameraWarpSettings"},
+        REPLACE_TYPE = "ALL",
+        VCT = {
+            {"FocusPointDist",       "100000"}, --Original "100000"
+            {"OffsetZFrequency_1",        "0"}, --Original "0.25"
+            {"OffsetZFrequency_2",        "0"}, --Original "0.35"
+            {"OffsetZStartBias",          "0"}, --Original "50"
+            {"OffsetZBias",             "-11"}, --Original "-11"
+            {"OffsetZRange",            "300"}, --Original "700"
+            {"OffsetYFrequency_1",        "0"}, --Original "0.2"
+            {"OffsetYFrequency_2",        "0"}, --Original "0.3"
+            {"OffsetYStartBias",       "1000"}, --Original "2000"
+            {"OffsetYBias",             "-35"}, --Original "0"
+            {"OffsetYRange",             "10"}, --Original "300"
+            {"OffsetXFrequency",        "0.2"}, --Original "0.15"
+            {"OffsetXPhase",       "0.000010"}, --Original "0"
+            {"OffsetXRange",            "350"}, --Original "350"
+            {"RollRange",               "0.6"}, --Original "0.6"
+            {"YawnRange",               "400"}, --Original "400"
+            {"Curve",           "SmoothInOut"}, --Original "EaseInOutBack"
+        }
+    })
+end
+
+-------------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -65,6 +140,15 @@ NMS_MOD_DEFINITION_CONTAINER =
     EXML_CREATE     = exmlcreate,
     MODIFICATIONS   =
     {
+        {
+            MBIN_CT =
+            {
+                {
+                    MBIN_FS = [[GCCAMERAGLOBALS.GLOBAL.MBIN]],
+                    MXML_CT = TableData,
+                },
+            },
+        },
         {
             MBIN_CT =
             {
@@ -137,14 +221,36 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 
                         -- Insert New Light Material
+                        -------------------------------------------------------------------------------------------
 
                         {
                             SKW = {"Type", "LIGHT", "Name", "MATERIAL"},
                             REPLACE_TYPE = "ALL",
                             VCT = {{"Value", "MATERIALS/LIGHT_WARPTUNNEL.MATERIAL.MBIN"},}
                         },
+
+                        -- LightArms Position / Scale
+                        -------------------------------------------------------------------------------------------
+
+                        {
+                            SKW = {"Name", "LightArms", "Transform", "TkTransformData"},
+                            VCT = {
+                                {"TransZ", "-180"}, --Original "0"
+                                {"ScaleX",    "8"}, --Original "1"
+                                {"ScaleY",    "8"}, --Original "1"
+                                {"ScaleZ",    "8"}, --Original "1"
+                            }
+                        },
+                        {
+                            SKW = {"Name", "LightArms", "Attributes", "TkSceneNodeAttributeData", "Name", "MATERIAL"},
+                            PKW = {"Attributes"},
+                            VCT = {
+                                {"Value", [[MODELS\EFFECTS\WARP\WARPLARGEPORTAL\LIGHTARMSREDMAT.MATERIAL.MBIN]]},
+                            }
+                        },
                     }
                 },
+                -------------------------------------------------------------------------------------------
                 {
                     MBIN_FS = [[MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN]],
                     MXML_CT =
@@ -160,6 +266,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
+                -------------------------------------------------------------------------------------------
                 {
                     MBIN_FS = [[MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN]],
                     MXML_CT =
@@ -168,19 +275,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                             SKW = {"Class", "GlowTranslucent"},
                             VCT = {{"Class", "Translucent"},} --Original "GlowTranslucent"
                         },
-                        --{
-                        --    SKW = {"MaterialFlag", "_F09_TRANSPARENT"},
-                        --    PKW = {"Flags"},
-                        --    ADD_OPTION = "ADDafterSECTION",
-                        --    ADD = m_UVScroll,
-                        --},
-                        --{
-                        --    SKW = {"Uniforms_Float", "TkMaterialUniform_Float", "Name", "gMaterialSFXColVec4"},
-                        --    ADD_OPTION = "ADDafterSECTION",
-                        --    ADD = m_ScrollStep,
-                        --},
                     }
                 },
+                {
+                    MBIN_FS = {
+                        [[MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN]],
+                        [[MODELS\EFFECTS\WARP\WARPLARGEPORTAL\LIGHTARMSREDMAT.MATERIAL.MBIN]]
+                    },
+                    MXML_CT = {
+                        {
+                            SKW = {"Name", "gMaterialParams2Vec4"},
+                            PKW = {"Values"},
+                            VCT = {
+                                {"X", "0.65"}, --Original "1.3"
+                                {"Y",  "0.5"}, --Original "1"
+                                {"W", "0.05"}, --Original "0"
+                            }
+                        },
+                    }
+                },
+                -------------------------------------------------------------------------------------------
                 {
                     MBIN_FS = [[MODELS\EFFECTS\WARP\WARPTUNNEL\SCROLLINGWAVES2MAT.MATERIAL.MBIN]],
                     MXML_CT =
@@ -189,19 +303,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             SKW = {"Class", "GlowTranslucent"},
                             VCT = {{"Class", "Translucent"},} --Original "GlowTranslucent"
                         },
-                        --{
-                        --    SKW = {"MaterialFlag", "_F09_TRANSPARENT"},
-                        --    PKW = {"Flags"},
-                        --    ADD_OPTION = "ADDafterSECTION",
-                        --    ADD = m_UVScroll,
-                        --},
-                        --{
-                        --    SKW = {"Uniforms_Float", "TkMaterialUniform_Float", "Name", "gMaterialSFXColVec4"},
-                        --    ADD_OPTION = "ADDafterSECTION",
-                        --    ADD = m_ScrollStep,
-                        --},
                     }
                 },
+                -------------------------------------------------------------------------------------------
                 {
                     MBIN_FS = [[MODELS\EFFECTS\WARP\WARPTUNNEL\WARPBGMAT.MATERIAL.MBIN]],
                     MXML_CT =
@@ -215,6 +319,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
 
                 -- End Glow Cap Mat
+                -------------------------------------------------------------------------------------------
 
                 {
                     MBIN_FS = {
@@ -254,6 +359,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
 
                 --Create the new Light Material
+                -------------------------------------------------------------------------------------------
 
                 {
                     MBIN_FS =
@@ -285,6 +391,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
 
                 -- Simulation
+                -------------------------------------------------------------------------------------------
 
                 {
                     MBIN_FS = [[GCSIMULATIONGLOBALS.GLOBAL.MBIN]],
@@ -294,6 +401,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             REPLACE_TYPE = "ALL",
                             VCT =
                             {
+                                {"WarpTunnelScale",       "240"},
                                 {"BlackHoleTunnelFile",   "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE.SCENE.MBIN"
                                 {"TeleportTunnelFile",    "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPPORTAL.SCENE.MBIN"
                                 {"PortalTunnelFile",      "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPLARGEPORTAL.SCENE.MBIN""
