@@ -2,16 +2,16 @@ Author = "Gumsk"	-- Edited by Xen0nex	(temporary fix to BOUNTYLASER3 typo)
 --ModName = "GExos Challenge"
 ModNameSub = "gDamageX"
 BaseDescription = "Damage & Tech Damage adjustments"
-GameVersion = "5_20"
+GameVersion = "5_61"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
 
 --Global damage multipliers to quickly adjust all damage values within a particular category, on top of any individual adjustments below
-Starships =					1				--Damage from enemy starships / freighters
+Starships =					1				--Damage from all kinds of enemy starships / freighters
 Flora =						1				--Damage from all kinds of Hazardous Flora
 Fauna =						1				--Damage from all kinds of Hazardous Fauna / Creatures
-Robots =					1				--Damage from planetary Sentinels, turrets/drones in Derelict Freighters (Sentinel starships/freighters covered by "Starships")
+Robots =					1				--Damage from planetary Sentinels, Golems/Living Stones, & turrets/drones in Derelict Freighters (Sentinel starships/freighters covered by "Starships")
 Other =						1				--Damage from most other damage sources such as environmental hazards, falling, starship impact, pirate building raids, etc.
 
 --Multiplier to the chance that various damage sources will damage installed tech
@@ -24,11 +24,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["EXML_CREATE"] = "FALSE",
+--["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {{
 ["MBIN_FILE_SOURCE"] = FileSource,
-["EXML_CHANGE_TABLE"] = {
+["MXML_CHANGE_TABLE"] = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","BASICDAMAGE"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -54,10 +55,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 50*Other}}}, --default 28
 
+	{["SPECIAL_KEY_WORDS"] = {"Id","TOX_ANOMALY"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 10*Other}}}, --default 5
+	
 	{["SPECIAL_KEY_WORDS"] = {"Id","RADIATIONDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 50*Other}}}, --default 28
-
+	
+	{["SPECIAL_KEY_WORDS"] = {"Id","RAD_ANOMALY"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 10*Other}}}, --default 5
+	
 	{["SPECIAL_KEY_WORDS"] = {"Id","STANDING_STONE"},		--Added by Xen0nex
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 75*Other}}}, --default 50, HardModeMultiplier 1.5
@@ -78,6 +87,33 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 11*Robots}}}, --default 7
 
+	{["SPECIAL_KEY_WORDS"] = {"Id","STONEGRENADEDMG"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 9*Robots}}}, --default 3
+		
+	{["SPECIAL_KEY_WORDS"] = {"Id","STONESPIN_DMG"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 18*Robots}, --default 8
+		{"PushForce", 60}}}, --default 50
+		
+	{["SPECIAL_KEY_WORDS"] = {"Id","STONEPUNCH_DMG"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 20*Robots}, --default 10
+		{"PushForce", 75}}}, --default 50
+		
+	{["SPECIAL_KEY_WORDS"] = {"Id","STONE_EXPLODE"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 30*Robots}, --default 12
+		{"PushForce", 90}}}, --default 50
+
+	{["SPECIAL_KEY_WORDS"] = {"Id","STONELASER_DMG"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 5*Robots}}}, --default 2
+
+	{["SPECIAL_KEY_WORDS"] = {"Id","SPIDER_EXPLODE"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 27*Robots}}}, --default 18
+	
 	{["SPECIAL_KEY_WORDS"] = {"Id","LASERDAMAGE"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 9*Robots}}}, --default 3	(used to be 7, default 5) ~Xen0nex, HardModeMultiplier 1.5
@@ -152,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"Damage", 25*Fauna}, 	--default 5
 		{"HazardDrain", 10}}}, 	--default 10	(Special Cursed Expedition hazard)
 		
-	{["SPECIAL_KEY_WORDS"] = {"Id","PLANTDMG"},
+	{["SPECIAL_KEY_WORDS"] = {"Id","PLANTDMG"},		--"Whip" style Hazardous Flora & spines from wild Venom Urchins
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 150*Flora}}}, --default 20, HardModeMultiplier 1.5
 		
@@ -252,19 +288,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"Damage", 67.5*Starships}, --default 20, HardModeMultiplier 1.5
 		{"TechDamageChance", 0.075*StarshipTech}}}, --default 0.075		Added Xen0nex
 
-	{["SPECIAL_KEY_WORDS"] = {"Id","GASPLANT"},
+	{["SPECIAL_KEY_WORDS"] = {"Id","GASPLANT"},		--Hazardous Flora in caves which steadily release spores/gas
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 100*Flora}}}, --default 18
 
-	{["SPECIAL_KEY_WORDS"] = {"Id","VENT_HEAT"},
+	{["SPECIAL_KEY_WORDS"] = {"Id","VENT_HEAT"},	--Underwater geothermal vents
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 125*Other}}}, --default 75
 
-	{["SPECIAL_KEY_WORDS"] = {"Id","SPORE_VENT"},
+	{["SPECIAL_KEY_WORDS"] = {"Id","SPORE_VENT"},	--Hazardous Flora on the surface which inflate & explode with gas
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 120*Flora}}}, --default 20, HardModeMultiplier 1.5
 
-	{["SPECIAL_KEY_WORDS"] = {"Id","FISHFIEND_DMG"},
+	{["SPECIAL_KEY_WORDS"] = {"Id","FISHFIEND_DMG"},	--Large fish spawned by Alluring Specimen
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 150*Fauna}}}, --default 65, HardModeMultiplier 2
 		
@@ -276,11 +312,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 35*Fauna}}}, --default 20
 		
-	{["SPECIAL_KEY_WORDS"] = {"Id","GRABPLANT_DMG"},
+	{["SPECIAL_KEY_WORDS"] = {"Id","GRABPLANT_DMG"},	--Eyeball type Abyssal Horror
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 75*Flora}}}, --default 10, HardModeMultiplier 1.5
 		
-	{["SPECIAL_KEY_WORDS"] = {"Id","FISHFIEND_PROP"},
+	{["SPECIAL_KEY_WORDS"] = {"Id","FISHFIEND_PROP"},	--Explosion from Alluring Specimen
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 75*Fauna}}}, --default 1, HardModeMultiplier 1.5
 		
@@ -288,7 +324,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 100*Fauna}}}, --default 35
 		
-	{["SPECIAL_KEY_WORDS"] = {"Id","VENUSFLY_DMG"},
+	{["SPECIAL_KEY_WORDS"] = {"Id","VENUSFLY_DMG"},		--Hazardous Flora with flytrap appearance
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 150*Flora}}}, --default 20, HardModeMultiplier 1.5
 		
@@ -320,6 +356,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 125*Other}}}, --default 75
 
+	{["SPECIAL_KEY_WORDS"] = {"Id","LIGHTNING_SMALL"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 80*Other}}}, --default 50
+	
+	{["SPECIAL_KEY_WORDS"] = {"Id","LIGHTNING_DOT"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 2*Other}}}, --default 1
+	
 	{["SPECIAL_KEY_WORDS"] = {"Id","METEOR"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 125*Other}}}, --default 75
