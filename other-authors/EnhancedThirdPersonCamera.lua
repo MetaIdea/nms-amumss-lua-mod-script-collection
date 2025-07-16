@@ -18,12 +18,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["LUA_AUTHOR"]       = "Umaroth",
 	["NMS_VERSION"]      = "5.12",
 	["MOD_DESCRIPTION"]  = "Improves third person camera in various ways.",
-	["MAINTENANCE"]      = "Umaroth",
-	["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 	["MODIFICATIONS"] = {{
 		["MBIN_CT"] = {{
 			["MBIN_FS"] = "GCCAMERAGLOBALS.GLOBAL.MBIN",
-			["EXML_CT"] = {{
+			["MXML_CT"] = {{
 				["PKW"] = {
 					{"CharacterUnarmedCam"},
 					{"CharacterRunCam"},
