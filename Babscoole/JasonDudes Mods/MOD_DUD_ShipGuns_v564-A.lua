@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_ShipGuns_v503-A.pak",
+["MOD_FILENAME"]  = "MOD_DUD_ShipGuns_v564-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.03",
+["NMS_VERSION"]   = "5.64",
 ["MODIFICATIONS"] =
     {
         {
@@ -11,10 +11,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Laser", "GcShipWeaponData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Laser", "GcShipWeaponData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AutoAimAngle",      "3"},
@@ -22,21 +22,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Plasma", "GcShipWeaponData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Plasma", "GcShipWeaponData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AutoAimAngle", "4"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Missile", "GcShipWeaponData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Missile", "GcShipWeaponData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AutoAimAngle", "1.3"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Rocket", "GcShipWeaponData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Rocket", "GcShipWeaponData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AutoAimAngle", "4"},

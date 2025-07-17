@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_LessCreatureIconsHard_v525-A.pak",
+["MOD_FILENAME"]  = "MOD_DUD_LessCreatureIconsHard_v564-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.25",
+["NMS_VERSION"]   = "5.64",
 ["MODIFICATIONS"] =
     {
         {
@@ -13,10 +13,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "GCUIGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureDistanceAlpha", "0"},
@@ -26,10 +25,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\UI\HUD\SCANNERICONS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CreatureUndiscovered", "GcScannerIcon.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"CreatureUndiscovered", "GcScannerIcon"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Filename", "TEXTURES/UI/HUD/DUDCREATURE.RED.DDS"},

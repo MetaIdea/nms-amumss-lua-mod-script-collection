@@ -2,11 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_WeatherHazards_v520-A.pak",
+["MOD_FILENAME"]            = "MOD_DUD_WeatherHazards_v564-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.20",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "5.64",
 ["MODIFICATIONS"]           =
     {
         {
@@ -14,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\WEATHEREFFECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "METEOR_EFFECT"},
@@ -34,13 +33,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\WEATHERHAZARDS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "METEOR"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpawnScale", "4"},
+                                {"MinMeteors",    "2"},
                                 {"MaxMeteors",    "8"},
                                 {"DamageRadius",  "10"},
                             }
@@ -53,7 +53,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "TORNADO"},
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                              {"Id", "TORNADO"},
+                              {"Id", "TORNADO_GAS"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpawnScale",      "1.5"},
