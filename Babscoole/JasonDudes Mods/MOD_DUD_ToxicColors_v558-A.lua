@@ -509,10 +509,10 @@ ToxicTentDataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_ToxicColors_v503-A.pak",
+["MOD_FILENAME"]  = "MOD_DUD_ToxicColors_v558-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.03",
+["NMS_VERSION"]   = "5.58",
 ["MODIFICATIONS"] =
     {
         {
@@ -520,15 +520,15 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICCOLOURPALETTES.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Grass", "GcPaletteData.xml"},
-                                {"Wood",  "GcPaletteData.xml"},
-                                {"Stone", "GcPaletteData.xml"},
-                                {"Dirt",  "GcPaletteData.xml"},
+                                {"Grass", "GcPaletteData"},
+                                {"Wood",  "GcPaletteData"},
+                                {"Stone", "GcPaletteData"},
+                                {"Dirt",  "GcPaletteData"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -538,8 +538,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"RockSaturated", "GcPaletteData.xml"},
-                                {"RockDark",      "GcPaletteData.xml"},
+                                {"RockSaturated", "GcPaletteData"},
+                                {"RockDark",      "GcPaletteData"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -550,14 +550,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSCOLOURPALETTES.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             { 
-                                {"Wood",  "GcPaletteData.xml"},
-                                {"Stone", "GcPaletteData.xml"},
-                                {"Dirt",  "GcPaletteData.xml"},
+                                {"Wood",  "GcPaletteData"},
+                                {"Stone", "GcPaletteData"},
+                                {"Dirt",  "GcPaletteData"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -567,9 +567,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Plant", "GcPaletteData.xml"},
-                                {"Leaf",  "GcPaletteData.xml"},
-                                {"Rock",  "GcPaletteData.xml"},
+                                {"Plant", "GcPaletteData"},
+                                {"Leaf",  "GcPaletteData"},
+                                {"Rock",  "GcPaletteData"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -580,15 +580,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICTENTACLESCOLOURPALETTES.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Grass", "GcPaletteData.xml"},
-                                {"Wood",  "GcPaletteData.xml"},
-                                {"Stone", "GcPaletteData.xml"},
-                                {"Dirt",  "GcPaletteData.xml"},
+                                {"Grass", "GcPaletteData"},
+                                {"Wood",  "GcPaletteData"},
+                                {"Stone", "GcPaletteData"},
+                                {"Dirt",  "GcPaletteData"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -605,11 +605,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 function GetColours(R,G,B,A)
     return
     [[
-    <Property value="Colour.xml">
-          <Property name="R" value="]].. R ..[[" />
-          <Property name="G" value="]].. G ..[[" />
-          <Property name="B" value="]].. B ..[[" />
-          <Property name="A" value="]].. A ..[[" />
+        <Property name="Colours">
+          <Property name="R" value="]].. string.format("%0.6f",R) ..[[" />
+          <Property name="G" value="]].. string.format("%0.6f",G) ..[[" />
+          <Property name="B" value="]].. string.format("%0.6f",B) ..[[" />
+          <Property name="A" value="]].. string.format("%0.6f",A) ..[[" />
         </Property>
     ]]
 end
@@ -633,7 +633,7 @@ function CreateColoursProperty(PaletteColours)
     return PropertyColoursString
 end
 
-local ToxicBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ToxicBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 for i = 1, #ToxicDataTable do
     local Palette = ToxicDataTable[i]["PALETTE"]
     local PaletteColours = ToxicDataTable[i]["COLOURS"]
@@ -641,19 +641,19 @@ for i = 1, #ToxicDataTable do
 
     ToxicBaseColourPalettesTable[#ToxicBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
     ToxicBaseColourPalettesTable[#ToxicBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local ToxicEggBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local ToxicEggBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
 for i = 1, #ToxicEggDataTable do
     local Palette = ToxicEggDataTable[i]["PALETTE"]
     local PaletteColours = ToxicEggDataTable[i]["COLOURS"]
@@ -661,19 +661,19 @@ for i = 1, #ToxicEggDataTable do
 
     ToxicEggBaseColourPalettesTable[#ToxicEggBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
     ToxicEggBaseColourPalettesTable[#ToxicEggBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
 
-local ToxicTentBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+local ToxicTentBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["MXML_CHANGE_TABLE"]
 for i = 1, #ToxicTentDataTable do
     local Palette = ToxicTentDataTable[i]["PALETTE"]
     local PaletteColours = ToxicTentDataTable[i]["COLOURS"]
@@ -681,14 +681,14 @@ for i = 1, #ToxicTentDataTable do
 
     ToxicTentBaseColourPalettesTable[#ToxicTentBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
     ToxicTentBaseColourPalettesTable[#ToxicTentBaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end

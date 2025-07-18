@@ -598,10 +598,10 @@ function GetColours(R,G,B)
     return
     [[
     <Property value="Colour.xml">
-          <Property name="R" value="]].. R ..[[" />
-          <Property name="G" value="]].. G ..[[" />
-          <Property name="B" value="]].. B ..[[" />
-          <Property name="A" value="1" />
+          <Property name="R" value="]].. string.format("%0.6f",R) ..[[" />
+          <Property name="G" value="]].. string.format("%0.6f",G) ..[[" />
+          <Property name="B" value="]].. string.format("%0.6f",B) ..[[" />
+          <Property name="A" value="1.000000" />
         </Property>
     ]]
 end
