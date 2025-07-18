@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_PlanetFilters_v529-A.pak",
+["MOD_FILENAME"]  = "MOD_DUD_PlanetFilters_v558-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.29",
+["NMS_VERSION"]   = "5.58",
 ["MODIFICATIONS"] =
     {
         {
@@ -13,13 +13,13 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\EFFECTS\SCREENFILTERS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Weird4",       "GcScreenFilterData.xml"},
-                                {"SepiaExtreme", "GcScreenFilterData.xml"},
+                                {"Weird4",       "GcScreenFilterData"},
+                                {"SepiaExtreme", "GcScreenFilterData"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Weird7", "GcScreenFilterData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Weird7", "GcScreenFilterData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FadeDistance", "600"}
@@ -36,10 +36,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"HueShiftA", "GcScreenFilterData.xml"},
-                                {"HueShiftB", "GcScreenFilterData.xml"},
-                                {"HueShiftC", "GcScreenFilterData.xml"},
-                                {"HueShiftD", "GcScreenFilterData.xml"},
+                                {"HueShiftA", "GcScreenFilterData"},
+                                {"HueShiftB", "GcScreenFilterData"},
+                                {"HueShiftC", "GcScreenFilterData"},
+                                {"HueShiftD", "GcScreenFilterData"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -49,13 +49,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"NMSRetroA", "GcScreenFilterData.xml"},
-                                {"NMSRetroB", "GcScreenFilterData.xml"},
-                                {"NMSRetroC", "GcScreenFilterData.xml"},
-                                {"NMSRetroD", "GcScreenFilterData.xml"},
-                                {"NMSRetroE", "GcScreenFilterData.xml"},
-                                {"NMSRetroF", "GcScreenFilterData.xml"},
-                                {"NMSRetroG", "GcScreenFilterData.xml"},
+                                {"NMSRetroA", "GcScreenFilterData"},
+                                {"NMSRetroB", "GcScreenFilterData"},
+                                {"NMSRetroC", "GcScreenFilterData"},
+                                {"NMSRetroD", "GcScreenFilterData"},
+                                {"NMSRetroE", "GcScreenFilterData"},
+                                {"NMSRetroF", "GcScreenFilterData"},
+                                {"NMSRetroG", "GcScreenFilterData"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {

@@ -1,10 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_NPCWarpFX_v465-A.pak",
+["MOD_FILENAME"]            = "MOD_DUD_NPCWarpFX_v558-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.65",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "5.58",
 ["MODIFICATIONS"]           =
     {
         {
@@ -12,54 +11,54 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPACE\WARPSTART\BLACK.PARTICLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ParticleSize", "TkEmitterFloatProperty.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ParticleSize", "TkParticleSize"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CurveStartValue",    "0"},
-                                {"CurveMidValue",      "0"},
-                                {"CurveEndValue",      "0"},
-                                {"CurveBlendMidpoint", "0.2"},
+                                {"CurveStartValue",    "0.000000"},
+                                {"CurveMidValue",      "0.000000"},
+                                {"CurveEndValue",      "0.000000"},
+                                {"CurveBlendMidpoint", "0.200000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ColourMiddle", "Colour.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"ColourMiddle"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R", "1"},
-                                {"G", "1"},
+                                {"R", "1.000000"},
+                                {"G", "1.000000"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPACE\WARPSTART\BLACKHOLE.PARTICLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ParticleSize", "TkEmitterFloatProperty.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ParticleSize", "TkParticleSize"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CurveStartValue",    "0"},
-                                {"CurveMidValue",      "0"},
-                                {"CurveBlendMidpoint", "0.4"},
+                                {"CurveStartValue",    "0.000000"},
+                                {"CurveMidValue",      "0.000000"},
+                                {"CurveBlendMidpoint", "0.400000"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPACE\WARPSTART\WARPBASE.PARTICLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ParticleSize", "TkEmitterFloatProperty.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ParticleSize", "TkParticleSize"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CurveStartValue", "0"},
-                                {"CurveMidValue",   "0"},
-                                {"CurveEndValue",   "0"},
+                                {"CurveStartValue", "0.000000"},
+                                {"CurveMidValue",   "0.000000"},
+                                {"CurveEndValue",   "0.000000"},
                             }
                         },
                     }
