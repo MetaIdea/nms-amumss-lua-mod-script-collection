@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_PotatoLOD_v503-A.pak",
+["MOD_FILENAME"]  = "MOD_DUD_PotatoLOD_v558-A.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.03",
+["NMS_VERSION"]   = "5.58",
 ["MODIFICATIONS"] =
     {
         {
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\SHARED\ENTITIES\LODDATA.ENTITY.MBIN",
                         "MODELS\COMMON\SPACECRAFT\SHARED\ENTITIES\SHAREDLODDISTANCES.ENTITY.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LodDistances"},
@@ -41,7 +41,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\SHARED\ENTITIES\LODDATA.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LodDistances"},
@@ -59,7 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\SHARED\ENTITIES\SHAREDLODDISTANCES.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LodDistances"},

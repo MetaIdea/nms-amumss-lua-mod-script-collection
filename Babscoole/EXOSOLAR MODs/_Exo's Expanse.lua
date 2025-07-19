@@ -971,7 +971,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_Exo's Expanse",
 ["MOD_AUTHOR"]    = "Exosolar & Babscoole",
-["NMS_VERSION"]   = "5.73",
+["NMS_VERSION"]   = "5.74",
 ["MODIFICATIONS"] =
     {
         {
@@ -988,82 +988,82 @@ function GetColours(R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,
 [[
     <Property name="Settings" value="GcSolarSystemSkyColourData">
       <Property name="TopColour">
-        <Property name="R" value="]].. R1 ..[[" />
-        <Property name="G" value="]].. G1 ..[[" />
-        <Property name="B" value="]].. B1 ..[[" />
-        <Property name="A" value="]].. A1 ..[[" />
+        <Property name="R" value="]].. string.format("%0.6f",R1) ..[[" />
+        <Property name="G" value="]].. string.format("%0.6f",G1) ..[[" />
+        <Property name="B" value="]].. string.format("%0.6f",B1) ..[[" />
+        <Property name="A" value="]].. string.format("%0.6f",A1) ..[[" />
       </Property>
       <Property name="MidColour">
-        <Property name="R" value="]].. R2 ..[[" />
-        <Property name="G" value="]].. G2 ..[[" />
-        <Property name="B" value="]].. B2 ..[[" />
-        <Property name="A" value="]].. A2 ..[[" />
+        <Property name="R" value="]].. string.format("%0.6f",R2) ..[[" />
+        <Property name="G" value="]].. string.format("%0.6f",G2) ..[[" />
+        <Property name="B" value="]].. string.format("%0.6f",B2) ..[[" />
+        <Property name="A" value="]].. string.format("%0.6f",A2) ..[[" />
       </Property>
       <Property name="BottomColour">
-        <Property name="R" value="]].. R3 ..[[" />
-        <Property name="G" value="]].. G3 ..[[" />
-        <Property name="B" value="]].. B3 ..[[" />
-        <Property name="A" value="]].. A3 ..[[" />
+        <Property name="R" value="]].. string.format("%0.6f",R3) ..[[" />
+        <Property name="G" value="]].. string.format("%0.6f",G3) ..[[" />
+        <Property name="B" value="]].. string.format("%0.6f",B3) ..[[" />
+        <Property name="A" value="]].. string.format("%0.6f",A3) ..[[" />
       </Property>
       <Property name="TopColourPlanet">
-        <Property name="R" value="]].. R4 ..[[" />
-        <Property name="G" value="]].. G4 ..[[" />
-        <Property name="B" value="]].. B4 ..[[" />
-        <Property name="A" value="]].. A4 ..[[" />
+        <Property name="R" value="]].. string.format("%0.6f",R4) ..[[" />
+        <Property name="G" value="]].. string.format("%0.6f",G4) ..[[" />
+        <Property name="B" value="]].. string.format("%0.6f",B4) ..[[" />
+        <Property name="A" value="]].. string.format("%0.6f",A4) ..[[" />
       </Property>
       <Property name="MidColourPlanet">
-        <Property name="R" value="]].. R5 ..[[" />
-        <Property name="G" value="]].. G5 ..[[" />
-        <Property name="B" value="]].. B5 ..[[" />
-        <Property name="A" value="]].. A5 ..[[" />
+        <Property name="R" value="]].. string.format("%0.6f",R5) ..[[" />
+        <Property name="G" value="]].. string.format("%0.6f",G5) ..[[" />
+        <Property name="B" value="]].. string.format("%0.6f",B5) ..[[" />
+        <Property name="A" value="]].. string.format("%0.6f",A5) ..[[" />
       </Property>
       <Property name="BottomColourPlanet">
-        <Property name="R" value="]].. R6 ..[[" />
-        <Property name="G" value="]].. G6 ..[[" />
-        <Property name="B" value="]].. B6 ..[[" />
-        <Property name="A" value="]].. A6 ..[[" />
+        <Property name="R" value="]].. string.format("%0.6f",R6) ..[[" />
+        <Property name="G" value="]].. string.format("%0.6f",G6) ..[[" />
+        <Property name="B" value="]].. string.format("%0.6f",B6) ..[[" />
+        <Property name="A" value="]].. string.format("%0.6f",A6) ..[[" />
       </Property>
       <Property name="CloudColour">
-        <Property name="R" value="]].. R7 ..[[" />
-        <Property name="G" value="]].. G7 ..[[" />
-        <Property name="B" value="]].. B7 ..[[" />
-        <Property name="A" value="]].. A7 ..[[" />
+        <Property name="R" value="]].. string.format("%0.6f",R7) ..[[" />
+        <Property name="G" value="]].. string.format("%0.6f",G7) ..[[" />
+        <Property name="B" value="]].. string.format("%0.6f",B7) ..[[" />
+        <Property name="A" value="]].. string.format("%0.6f",A7) ..[[" />
       </Property>
       <Property name="LightColour">
-        <Property name="R" value="]].. R8 ..[[" />
-        <Property name="G" value="]].. G8 ..[[" />
-        <Property name="B" value="]].. B8 ..[[" />
-        <Property name="A" value="]].. A8 ..[[" />
+        <Property name="R" value="]].. string.format("%0.6f",R8) ..[[" />
+        <Property name="G" value="]].. string.format("%0.6f",G8) ..[[" />
+        <Property name="B" value="]].. string.format("%0.6f",B8) ..[[" />
+        <Property name="A" value="]].. string.format("%0.6f",A8) ..[[" />
       </Property>
       <Property name="NebulaColour1">
-        <Property name="R" value="]].. R9 ..[[" />
-        <Property name="G" value="]].. G9 ..[[" />
-        <Property name="B" value="]].. B9 ..[[" />
-        <Property name="A" value="]].. A9 ..[[" />
+        <Property name="R" value="]].. string.format("%0.6f",R9) ..[[" />
+        <Property name="G" value="]].. string.format("%0.6f",G9) ..[[" />
+        <Property name="B" value="]].. string.format("%0.6f",B9) ..[[" />
+        <Property name="A" value="]].. string.format("%0.6f",A9) ..[[" />
       </Property>
       <Property name="NebulaColour2">
-        <Property name="R" value="]].. R10 ..[[" />
-        <Property name="G" value="]].. G10 ..[[" />
-        <Property name="B" value="]].. B10 ..[[" />
-        <Property name="A" value="]].. A10 ..[[" />
+        <Property name="R" value="]].. string.format("%0.6f",R10) ..[[" />
+        <Property name="G" value="]].. string.format("%0.6f",G10) ..[[" />
+        <Property name="B" value="]].. string.format("%0.6f",B10) ..[[" />
+        <Property name="A" value="]].. string.format("%0.6f",A10) ..[[" />
       </Property>
       <Property name="NebulaColour3">
-        <Property name="R" value="]].. R11 ..[[" />
-        <Property name="G" value="]].. G11 ..[[" />
-        <Property name="B" value="]].. B11 ..[[" />
-        <Property name="A" value="]].. A11 ..[[" />
+        <Property name="R" value="]].. string.format("%0.6f",R11) ..[[" />
+        <Property name="G" value="]].. string.format("%0.6f",G11) ..[[" />
+        <Property name="B" value="]].. string.format("%0.6f",B11) ..[[" />
+        <Property name="A" value="]].. string.format("%0.6f",A11) ..[[" />
       </Property>
       <Property name="FogColour">
-        <Property name="R" value="]].. R12 ..[[" />
-        <Property name="G" value="]].. G12 ..[[" />
-        <Property name="B" value="]].. B12 ..[[" />
-        <Property name="A" value="]].. A12 ..[[" />
+        <Property name="R" value="]].. string.format("%0.6f",R12) ..[[" />
+        <Property name="G" value="]].. string.format("%0.6f",G12) ..[[" />
+        <Property name="B" value="]].. string.format("%0.6f",B12) ..[[" />
+        <Property name="A" value="]].. string.format("%0.6f",A12) ..[[" />
       </Property>
       <Property name="FogColour2">
-        <Property name="R" value="]].. R13 ..[[" />
-        <Property name="G" value="]].. G13 ..[[" />
-        <Property name="B" value="]].. B13 ..[[" />
-        <Property name="A" value="]].. A13 ..[[" />
+        <Property name="R" value="]].. string.format("%0.6f",R13) ..[[" />
+        <Property name="G" value="]].. string.format("%0.6f",G13) ..[[" />
+        <Property name="B" value="]].. string.format("%0.6f",B13) ..[[" />
+        <Property name="A" value="]].. string.format("%0.6f",A13) ..[[" />
       </Property>
     </Property>
 ]]

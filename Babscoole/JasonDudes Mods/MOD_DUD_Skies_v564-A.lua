@@ -279,11 +279,10 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_Skies_v529-B.pak",
+["MOD_FILENAME"]            = "MOD_DUD_Skies_v564-A.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.29",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "5.64",
 ["MODIFICATIONS"]           =
     {
         {
@@ -292,34 +291,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\DAYSKYCOLOURS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GenericSettings", "GcWeatherColourSettingList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcPlanetWeatherColourData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"GenericSettings", "GcWeatherColourSettingList", "Settings", "GcPlanetWeatherColourData"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Scorched", "GcWeatherColourSettingList.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Scorched", "GcWeatherColourSettingList"},
                             ["PRECEDING_KEY_WORDS"] = {"Settings"},
                             ["CREATE_HOS"] = "TRUE",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Frozen", "GcWeatherColourSettingList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcPlanetWeatherColourData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Frozen", "GcWeatherColourSettingList", "Settings", "GcPlanetWeatherColourData"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Swamp", "GcWeatherColourSettingList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcPlanetWeatherColourData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Swamp", "GcWeatherColourSettingList", "Settings", "GcPlanetWeatherColourData"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Lava", "GcWeatherColourSettingList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcPlanetWeatherColourData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Lava", "GcWeatherColourSettingList", "Settings", "GcPlanetWeatherColourData"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION",
                         },
@@ -327,10 +322,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\BUBBLEWEATHER.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.04"},
@@ -343,7 +338,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FlightFog", "GcFogProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"FlightFog", "GcFogProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.06"},
@@ -358,7 +353,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"StormFog", "GcFogProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"StormFog", "GcFogProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",          "0.8"},
@@ -372,7 +367,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.1"},
@@ -388,7 +383,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Storms", "GcStormProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Storms", "GcStormProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.2"},
@@ -407,10 +402,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\CLEARCOLD.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed",  "0.5"},
@@ -419,14 +414,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "Snow"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour2"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Snow"},
@@ -434,7 +431,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "1"},
@@ -442,7 +440,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "Colour1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour1"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Snow"},
@@ -450,7 +450,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "Colour2"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour2"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Snow"},
@@ -458,42 +460,57 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value", "MODELS/EFFECTS/HEAVYAIR/MARS/MARS.SCENE.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"HeavyAir", "MODELS/EFFECTS/HEAVYAIR/MARS/MARS.SCENE.MBIN"},
+                            ["SUB_LEVEL"] = 2,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/DUDCLEARCOLD.SCENE.MBIN"},
+                                {"HeavyAir", "MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/DUDCLEARCOLD.SCENE.MBIN"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\CLEARWEATHER.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Speed",  "0.5"},
-                                {"Alpha1", "0.2"},
-                                {"Alpha2", "0.3"},
+                                {"Thickness",  "1"},
+                                {"Alpha1",     "0.05"},
+                                {"Alpha2",     "0.05"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Thickness", "0"},
+                                {"Thickness", "1"},
+                                {"Speed",     "0.4"},
+                                {"Alpha1",    "0.05"},
+                                {"Alpha2",    "0.05"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"2"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed",  "0.3"},
+                                {"Alpha1", "0.05"},
+                                {"Alpha2", "0.05"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\FIRESTORMWEATHER.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.01"},
@@ -506,7 +523,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.01"},
@@ -519,7 +536,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Alpha1", "0.2"},
@@ -543,7 +561,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Storms", "Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Storms", "GcStormProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Alpha1", "0.3"},
@@ -551,7 +570,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sky", "GcSkyProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sky", "GcSkyProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DuskHorizonMultiplier",  "0.35665"},
@@ -562,10 +581,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\GRAVITYSTORMWEATHER.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.01"},
@@ -578,7 +597,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed",  "0.2"},
@@ -587,7 +606,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.2"},
@@ -597,14 +617,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.23"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.3"},
@@ -614,7 +636,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.01"},
@@ -627,7 +649,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.3"},
@@ -637,7 +659,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.3"},
@@ -647,7 +670,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.6"},
@@ -656,7 +680,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.5"},
@@ -680,7 +705,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Storms", "Fog", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Storms", "GcStormProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.5"},
@@ -690,7 +715,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Storms", "Fog", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Storms", "GcStormProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.5"},
@@ -700,7 +726,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Storms", "Fog", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Storms", "GcStormProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.7"},
@@ -709,7 +736,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Storms", "Fog", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Storms", "GcStormProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.65"},
@@ -717,7 +745,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sky", "GcSkyProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sky", "GcSkyProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"HorizonMultiplier",      "0.180624"},
@@ -729,10 +757,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\LAVAWEATHER.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogMax",                   "0.95"},
@@ -743,7 +771,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.1"},
@@ -773,7 +801,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sky", "GcSkyProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sky", "GcSkyProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DuskHorizonMultiplier",  "0.35665"},
@@ -784,17 +812,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SNOWWEATHER.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "Snow"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour2"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Snow"},
@@ -802,7 +832,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"2"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -810,7 +841,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"3"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -818,7 +850,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Fog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"4"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -826,14 +859,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour1"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "Snow"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour2"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Snow"},
@@ -841,7 +876,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"2"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -849,7 +885,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"3"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -857,7 +894,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"4"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -865,7 +903,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Storms", "HeavyAir", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Storms", "GcStormProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -873,7 +911,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Storms", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "Colour1"},
+                            ["SPECIAL_KEY_WORDS"] = {"Storms", "GcStormProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour1"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Snow"},
@@ -881,7 +921,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Storms", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "Colour2"},
+                            ["SPECIAL_KEY_WORDS"] = {"Storms", "GcStormProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour2"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette",   "Snow"},
@@ -889,7 +931,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Storms", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Storms", "GcStormProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"2"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -897,7 +940,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Storms", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Storms", "GcStormProperties", "HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
+                            ["SECTION_ACTIVE"] = {"4"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -908,7 +952,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SWAMPWEATHER.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog"},
@@ -925,7 +969,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog", "GcFogProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",              "0.1"},
@@ -959,7 +1003,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Sky", "GcSkyProperties.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Sky", "GcSkyProperties"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"HorizonMultiplier",      "0.6"},
@@ -971,7 +1015,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FLORAL\FLORALOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -1013,7 +1057,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 1,
+                            ["SECTION_ACTIVE"] = 0,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.2"}
@@ -1025,15 +1069,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "0.533333"},
-                                {"MaxScale", "0.866666"},
+                                {"MinScale ",    "0.533333"},
+                                {"MaxScale",     "0.866666"},
+                                {"SlopeScaling", "1"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FLORAL\FLORALOBJECTSGRASS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -1077,14 +1122,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "0.571428"},
-                                {"MaxScale", "0.714285"},
+                                {"MinScale ", "0.800000"},
+                                {"MaxScale",  "1.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 1,
+                            ["SECTION_ACTIVE"] = 0,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.7"}
@@ -1094,12 +1139,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENALIENOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 1,
+                            ["SECTION_ACTIVE"] = 0,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.65"}
@@ -1108,7 +1153,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.75"}
@@ -1120,7 +1165,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.4"},
+                                {"MinScale ",          "0.4"},
                                 {"MaxScale",          "0.533333"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -1138,7 +1183,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
@@ -1168,7 +1213,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.333333"},
+                                {"MinScale ",          "0.333333"},
                                 {"MaxScale",          "0.6"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -1177,7 +1222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
@@ -1209,11 +1254,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 0,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale ",          "0.266666"},
+                                {"MaxScale",          "0.4"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
                             ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.266666"},
-                                {"MaxScale",          "0.4"},
+                                {"MinScale ",          "0.4"},
+                                {"MaxScale",          "0.533333"},
                                 {"ShearWindStrength", "0.75"}
                             }
                         },
@@ -1223,8 +1279,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = 2,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.4"},
-                                {"MaxScale",          "0.533333"},
+                                {"MinScale ",          "0.6"},
+                                {"MaxScale",          "0.666666"},
                                 {"ShearWindStrength", "0.75"}
                             }
                         },
@@ -1234,8 +1290,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = 3,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.6"},
-                                {"MaxScale",          "0.666666"},
+                                {"MinScale ",          "0.533333"},
+                                {"MaxScale",          "0.6"},
                                 {"ShearWindStrength", "0.75"}
                             }
                         },
@@ -1245,18 +1301,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = 4,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.533333"},
-                                {"MaxScale",          "0.6"},
-                                {"ShearWindStrength", "0.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 5,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinScale",          "0.333333"},
+                                {"MinScale ",          "0.333333"},
                                 {"MaxScale",          "0.666666"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -1283,7 +1328,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLAROBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
@@ -1297,7 +1342,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 1,
+                            ["SECTION_ACTIVE"] = 0,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.65"}
@@ -1306,7 +1351,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.75"}
@@ -1318,7 +1363,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.4"},
+                                {"MinScale ",          "0.4"},
                                 {"MaxScale",          "0.533333"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -1336,14 +1381,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGELUSH\HUGELUSHOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                
-                                
+
+
                             },
                             ["SECTION_UP"] = 1,
                             ["REPLACE_TYPE"] = "ALL",
@@ -1358,7 +1403,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.533333"},
+                                {"MinScale ",          "0.533333"},
                                 {"MaxScale",          "1"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -1367,7 +1412,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
@@ -1397,7 +1442,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.533333"},
+                                {"MinScale ",          "0.533333"},
                                 {"MaxScale",          "1"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -1411,7 +1456,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHOBJECTSFULL.MBIN",
                         "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTS.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
@@ -1441,7 +1486,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.333333"},
+                                {"MinScale ",          "0.333333"},
                                 {"MaxScale",          "0.6"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -1450,7 +1495,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
@@ -1480,7 +1525,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.4"},
+                                {"MinScale ",          "0.4"},
                                 {"MaxScale",          "0.666666"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -1489,7 +1534,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
@@ -1529,7 +1574,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.3"}
@@ -1541,7 +1586,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.5"},
+                                {"MinScale ",          "0.5"},
                                 {"MaxScale",          "0.866666"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -1550,7 +1595,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -1571,7 +1616,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.3"}
@@ -1583,8 +1628,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.228571"},
-                                {"MaxScale",          "0.428571"},
+                                {"MinScale ",         "0.320000"},
+                                {"MaxScale",          "0.600000"},
                                 {"ShearWindStrength", "0.75"}
                             }
                         },
@@ -1592,7 +1637,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -1613,7 +1658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.3"}
@@ -1625,7 +1670,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.533333"},
+                                {"MinScale ",          "0.533333"},
                                 {"MaxScale",          "0.866666"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -1634,7 +1679,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -1670,16 +1715,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.228571"},
-                                {"MaxScale",          "0.428571"},
-                                {"ShearWindStrength", "0.75"}
+                                {"MinScale ",          "0.320000"},
+                                {"MaxScale",           "0.600000"},
+                                {"ShearWindStrength",  "0.75"}
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
@@ -1710,7 +1755,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.6"}
@@ -1719,7 +1764,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.3"}
@@ -1731,7 +1776,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.5"},
+                                {"MinScale ",          "0.5"},
                                 {"MaxScale",          "0.866666"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -1744,7 +1789,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSLOW.MBIN",
                         "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSMID.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
@@ -1774,7 +1819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.533333"},
+                                {"MinScale ",          "0.533333"},
                                 {"MaxScale",          "1"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -1787,12 +1832,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYOBJECTS.MBIN",
                         "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDOBJECTS.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 1,
+                            ["SECTION_ACTIVE"] = 0,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.5"}
@@ -1801,7 +1846,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.3"}
@@ -1835,7 +1880,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.733333"},
+                                {"MinScale ",          "0.733333"},
                                 {"MaxScale",          "1.066666"},
                                 {"ShearWindStrength", "0.4"}
                             }
@@ -1843,23 +1888,39 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHRUINSOBJECTS.MBIN",
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale ", "0.320000"},
+                                {"MaxScale",  "0.600000"},
+                            }
+                        },
+                    }
+                },
+                {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHULTRAOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "0.228571"},
-                                {"MaxScale", "0.428571"},
+                                {"MinScale ", "0.320000"},
+                                {"MaxScale",  "0.600000"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
@@ -1891,7 +1952,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.2"}
@@ -1903,7 +1964,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.666666"},
+                                {"MinScale ",          "0.666666"},
                                 {"MaxScale",          "0.8"},
                                 {"ShearWindStrength", "0.4"}
                             }
@@ -1912,7 +1973,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\ROCKY\ROCKOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
@@ -1938,7 +1999,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "1"},
+                                {"MinScale ",          "1"},
                                 {"MaxScale",          "1.333333"},
                                 {"ShearWindStrength", "0.4"}
                             }
@@ -1946,50 +2007,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RUINS\RUINSOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinScale",          "0.228571"},
-                                {"MaxScale",          "0.428571"},
-                                {"ShearWindStrength", "0.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "0.2"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =  {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "0.3"}
-                            }
-                        },
-                    }
-                },
-                {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
@@ -2018,7 +2037,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.333333"},
+                                {"MinScale ",          "0.333333"},
                                 {"MaxScale",          "0.6"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -2027,12 +2046,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = {1,2},
+                            ["SECTION_ACTIVE"] = {0,1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.75"}
@@ -2054,7 +2073,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 3,
+                            ["SECTION_ACTIVE"] = 2,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.5"}
@@ -2063,7 +2082,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.2"}
@@ -2074,41 +2093,31 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.533333"},
-                                {"MaxScale",          "0.666666"},
-                                {"ShearWindStrength", "0.4"}
+                                {"MinScale ",          "0.533333"},
+                                {"MaxScale",           "0.666666"},
+                                {"ShearWindStrength",  "0.4"}
                             }
                         },
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPISLANDSOBJECTSFULL.MBIN",
+                    ["MXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "0.2"}
-                            }
-                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.533333"},
-                                {"MaxScale",          "0.866666"},
-                                {"ShearWindStrength", "0.75"}
+                                {"MinScale ", "0.533333"},
+                                {"MaxScale",  "0.866666"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
@@ -2142,7 +2151,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.533333"},
+                                {"MinScale ",          "0.533333"},
                                 {"MaxScale",          "1"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -2151,15 +2160,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 3,
+                            ["SECTION_ACTIVE"] = 2,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.333333"},
+                                {"MinScale ",          "0.333333"},
                                 {"MaxScale",          "0.8"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -2175,7 +2184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 1,
+                            ["SECTION_ACTIVE"] = 0,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.3"}
@@ -2184,7 +2193,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShearWindStrength", "0.5"}
@@ -2206,14 +2215,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD.MBIN",
                         "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.533333"},
+                                {"MinScale ",          "0.533333"},
                                 {"MaxScale",          "0.8"},
                                 {"ShearWindStrength", "0.2"}
                             }
@@ -2222,14 +2231,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",          "0.666666"},
+                                {"MinScale ",          "0.666666"},
                                 {"MaxScale",          "0.933333"},
                                 {"ShearWindStrength", "0.2"}
                             }
@@ -2238,7 +2247,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\GRAVITYSTORM.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "GravStormSpikeHeavyAirNode", "Name", "DATA"},
@@ -2272,7 +2281,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\GRASS\NEWCROSSGRASS.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "^%w+_LOD%d$"},
@@ -2288,7 +2297,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\GRASS\NEWLUSHGRASS.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -2299,9 +2308,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ScaleX", "4.81344"},
-                                {"ScaleY", "3.723105"},
-                                {"ScaleZ", "4.81344"}
+                                {"ScaleX", "2.888064"},
+                                {"ScaleY", "2.233863"},
+                                {"ScaleZ", "2.888064"}
                             }
                         },
                     }
@@ -2324,40 +2333,40 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\PEACOCKTREE\PEACOCKTREETRUNKMAT.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\NOXIOUS\LARGE\LARGETREE\LARGEPLANTWIND.MATERIAL.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.125"},
-                                {"y", "0.2"},
-                                {"t", "0.25"},
+                                {"X", "0.125"},
+                                {"Y", "0.2"},
+                                {"W", "0.25"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\ROCKY\GROUNDFLOWER\PETALSNOWIND.MATERIAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.4"},
-                                {"y", "0.6"},
-                                {"z", "0"},
-                                {"t", "0.55"},
+                                {"X", "0.4"},
+                                {"Y", "0.6"},
+                                {"Z", "0"},
+                                {"W", "0.55"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.125"},
-                                {"y", "0.4"},
-                                {"z", "0.2"},
+                                {"X", "0.125"},
+                                {"Y", "0.4"},
+                                {"Z", "0.2"},
                             }
                         },
                     }
@@ -2372,25 +2381,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\NOXIOUS\LARGE\LARGETREE\LARGEPLANTWIND.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\NOXIOUS\HUGE\HUGETREE\HUGEPLANTWIND.MATERIAL.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.125"},
-                                {"y", "0.2"},
-                                {"z", "0"},
-                                {"t", "0.25"},
+                                {"X", "0.125"},
+                                {"Y", "0.2"},
+                                {"Z", "0"},
+                                {"W", "0.25"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.1"},
-                                {"y", "8"},
-                                {"z", "0.4"},
+                                {"X", "0.1"},
+                                {"Y", "8"},
+                                {"Z", "0.4"},
                             }
                         },
                     }
@@ -2401,25 +2410,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\IRRADIATED\LARGE\LARGETREE\LARGEPLANTWIND.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\IRRADIATED\LARGE\LARGETREE\LARGEPLANTWIND.MATERIAL.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.1"},
-                                {"y", "0.1"},
-                                {"z", "0.05"},
-                                {"t", "0.2"},
+                                {"X", "0.1"},
+                                {"Y", "0.1"},
+                                {"Z", "0.05"},
+                                {"W", "0.2"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.375"},
-                                {"y", "0.25"},
-                                {"z", "0.5"},
+                                {"X", "0.375"},
+                                {"Y", "0.25"},
+                                {"Z", "0.5"},
                             }
                         },
                     }
@@ -2430,25 +2439,122 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\IRRADIATED\HUGE\HUGETREE\HUGEPLANTWIND.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\IRRADIATED\HUGE\HUGETREE\HUGEPLANTWINDDS.MATERIAL.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.15"},
-                                {"y", "0.1"},
-                                {"z", "0.05"},
-                                {"t", "0.2"},
+                                {"X", "0.15"},
+                                {"Y", "0.1"},
+                                {"Z", "0.05"},
+                                {"W", "0.2"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.25"},
-                                {"y", "0.5"},
-                                {"z", "0.25"},
+                                {"X", "0.25"},
+                                {"Y", "0.5"},
+                                {"Z", "0.25"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\PLANETS\BIOMES\JUNGLE\HUGE\HUGETREE\DSHUGEPLANTWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\JUNGLE\HUGE\HUGETREE\HUGEPLANTWIND.MATERIAL.MBIN",
+                    },
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"X", "0.15"},
+                                {"Y", "9"},
+                                {"Z", "2"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\PLANETS\BIOMES\JUNGLE\LARGE\LARGEPLANT\DSLARGEPLANTWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\JUNGLE\LARGE\LARGETREE\DSLARGETREEWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\JUNGLE\LARGE\LARGETREE\LARGETREEWIND.MATERIAL.MBIN",
+                    },
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"X", "3"},
+                                {"Y", "2"},
+                                {"Z", "1"},
+                                {"W", "0.2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"X", "0.15"},
+                                {"Y", "7"},
+                                {"Z", "2"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\PLANETS\BIOMES\JUNGLE\LARGE\LARGEROCK\DSLARGEROCKWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\JUNGLE\LARGE\LARGEROCK\LARGEROCKWIND.MATERIAL.MBIN",
+                    },
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"X", "3"},
+                                {"Y", "2"},
+                                {"Z", "1"},
+                                {"W", "0.2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"X", "0.1"},
+                                {"Y", "10"},
+                                {"Z", "2"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\PLANETS\BIOMES\JUNGLE\RARE\RARELARGE\DSRAREWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\JUNGLE\RARE\RARELARGE\RAREWIND.MATERIAL.MBIN",
+                    },
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"X", "0.15"},
+                                {"Y", "10"},
+                                {"Z", "2"},
                             }
                         },
                     }
@@ -2712,6 +2818,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE09\IVYMAT.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE10\IVYMAT.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE11\IVYMAT.MATERIAL.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE20\IVYMAT.MATERIAL.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE21\IVYMAT.MATERIAL.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE22\IVYMAT.MATERIAL.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE23\IVYMAT.MATERIAL.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE24\IVYMAT.MATERIAL.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE25\IVYMAT.MATERIAL.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE26\IVYMAT.MATERIAL.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE27\IVYMAT.MATERIAL.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE28\IVYMAT.MATERIAL.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE29\IVYMAT1.MATERIAL.MBIN",
+                        -- "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE30\IVYMAT1.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE31\IVYMAT.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE32\IVYMAT.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE33\IVYMAT.MATERIAL.MBIN",
@@ -2737,23 +2854,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE64\IVYMAT.MATERIAL.MBIN",
 
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.25"},
-                                {"y", "0.4"},
-                                {"t", "0.5"},
+                                {"X", "0.25"},
+                                {"Y", "0.4"},
+                                {"W", "0.5"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"y", "1.5"},
-                                {"z", "0.8"},
+                                {"Y", "1.5"},
+                                {"Z", "0.8"},
                             }
                         },
                     }
@@ -2764,30 +2881,30 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE65/GIANTLILYMAT.MATERIAL.MBIN",
                         "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE66/GIANTLILYMAT.MATERIAL.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "1"},
-                                {"y", "1"},
-                                {"z", "0.5"},
+                                {"X", "1"},
+                                {"Y", "1"},
+                                {"Z", "0.5"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.375"},
-                                {"y", "1"},
+                                {"X", "0.375"},
+                                {"Y", "1"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE49\HQFROND3.MATERIAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
@@ -2814,13 +2931,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE45\LEAF.MATERIAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialColourVec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"t", "1"},
+                                {"W", "1"},
                             }
                         },
                         {
@@ -2839,7 +2956,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE16\BARK1.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE17\BARK1.MATERIAL.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F42_DETAIL_NORMAL"},
@@ -2874,21 +2991,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","gDetailNormalMap"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name","gNormal2Map"},
                             ["REMOVE"] = "SECTION"
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE19\BARK1.MATERIAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Flags"},
-                            ["ADD_OPTION"] = "ADDendSECTION", 
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-    <Property value="TkMaterialFlags.xml">
+    <Property value="TkMaterialFlags">
       <Property name="MaterialFlag" value="_F42_DETAIL_NORMAL" />
     </Property>
 ]]
@@ -2923,10 +3040,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Samplers"},
-                            ["ADD_OPTION"] = "ADDendSECTION", 
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-    <Property value="TkMaterialSampler.xml">
+    <Property value="TkMaterialSampler">
       <Property name="Name" value="gDetailNormalMap" />
       <Property name="Map" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARKGROUNDDECAL.BASE.1.NORMAL.DDS" />
       <Property name="IsCube" value="False" />
@@ -2948,7 +3065,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE21\BARK1.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE22\BARK1.MATERIAL.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
@@ -2986,24 +3103,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\FLORAL\SMALLPLANT\FOXGLOVEBUDS\PETALS1.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\FLORAL\MEDIUMPLANT\FOXGLOVE\PETALS1.MATERIAL.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.25"},
-                                {"y", "0.4"},
-                                {"t", "0.6"},
+                                {"X", "0.25"},
+                                {"Y", "0.4"},
+                                {"W", "0.6"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.15"},
-                                {"y", "0.25"},
-                                {"z", "0.25"},
+                                {"X", "0.15"},
+                                {"Y", "0.25"},
+                                {"Z", "0.25"},
                             }
                         },
                     }
@@ -3014,37 +3131,37 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\FLORAL\SMALLPLANT\FLORALPLANTSMALL\PROCGLOWWIND.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\FLORAL\MEDIUMPLANT\FLYINGFERN\PROCGLOWWIND.MATERIAL.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.5"},
-                                {"y", "0.5"},
-                                {"z", "0.5"},
-                                {"t", "0.2"},
+                                {"X", "1"},
+                                {"Y", "20"},
+                                {"Z", "0"},
+                                {"W", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"z", "0.75"},
+                                {"Z", "0.75"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\FLORAL\SMALLPLANT\FLORALPLANTSMALL\PETALSWIND.MATERIAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F11_ALPHACUTOUT"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property value="TkMaterialFlags.xml">
+    <Property value="TkMaterialFlags">
       <Property name="MaterialFlag" value="_F15_WIND" />
     </Property>
 ]]
@@ -3066,51 +3183,51 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.3"},
-                                {"y", "0.5"},
-                                {"z", "0"},
-                                {"t", "0.65"},
+                                {"X", "0.3"},
+                                {"Y", "0.5"},
+                                {"Z", "0"},
+                                {"W", "0.65"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.7"},
-                                {"y", "0.3"},
-                                {"z", "0.4"},
+                                {"X", "0.7"},
+                                {"Y", "0.3"},
+                                {"Z", "0.4"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\FLORAL\SMALLPLANT\FLORALPLANTSMALL\PETALSNOWIND.MATERIAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.3"},
-                                {"y", "0.5"},
-                                {"z", "0"},
-                                {"t", "0.65"},
+                                {"X", "0.3"},
+                                {"Y", "0.5"},
+                                {"Z", "0"},
+                                {"W", "0.65"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.7"},
-                                {"y", "0.3"},
-                                {"z", "0.4"},
+                                {"X", "0.7"},
+                                {"Y", "0.3"},
+                                {"Z", "0.4"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CloudProperties"},
@@ -3122,19 +3239,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"CloudProperties", "WindOffset"},
+                            ["PRECEDING_KEY_WORDS"] = {"CloudProperties", "Wind Offset"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.625"},
-                                {"y", "0.625"},
+                                {"X", "0.625"},
+                                {"Y", "0.625"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"CloudProperties", "StratosphereWindOffset"},
+                            ["PRECEDING_KEY_WORDS"] = {"CloudProperties", "Stratosphere Wind Offset"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "-0.625"},
-                                {"y", "0.625"},
+                                {"X", "-0.625"},
+                                {"Y", "0.625"},
                             }
                         },
                         {
@@ -3225,8 +3342,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Octave3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"StrengthVariationFreq", "0.125"},
-                                {"WaveFrequency",         "3"},
+                                {"StrengthVariationFreq", "1"},
+                                {"WaveFrequency",         "45"},
                             }
                         },
                         {
@@ -3271,9 +3388,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"MinStrength",           "0"},
                                 {"MaxStrength",           "0"},
-                                {"StrengthVariationFreq", "1"},
-                                {"WaveSize",              "1"},
-                                {"WaveFrequency",         "6"},
+                                {"StrengthVariationFreq", "0"},
+                                {"WaveSize",              ".01"},
+                                {"WaveFrequency",         "12"},
                             }
                         },
                         {
@@ -3282,16 +3399,72 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxStrength",           "0"},
-                                {"StrengthVariationFreq", "0.125"},
-                                {"WaveSize",              "2"},
-                                {"WaveFrequency",         "3"},
+                                {"StrengthVariationFreq", "1"},
+                                {"WaveSize",              "1"},
+                                {"WaveFrequency",         "40"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"EnvironmentProperties", "GcEnvironmentProperties"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FlightFogHeight",           "850.000000"},
+                                {"FlightFogBlend",            "100.000000"},
+                                {"HeavyAirHeightMin",         "1000.000000"},
+                                {"PlanetObjectSwitch",        "2000.000000"},
+                                {"PlanetLodSwitch0",          "2000.000000"},
+                                {"PlanetLodSwitch0Elevation", "2000.000000"},
+                                {"PlanetLodSwitch1",          "4000.000000"},
+                                {"AsteroidFadeHeightMin",     "1900.000000"},
+                                {"AsteroidFadeHeightMax",     "2500.000000"},
+                                {"SkyAtmosphereHeight",       "2000.000000"},
+                                {"SolarSystemLUTHeight",      "1700.000000"},
+                                {"SolarSystemLUTBlendLength", "2000.000000"},
+                                {"AtmosphereStartHeight",     "800.000000"},
+                                {"AtmosphereEndHeight",       "1476.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"EnvironmentPrimeProperties", "GcEnvironmentProperties"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FlightFogHeight",           "1700.000000"},
+                                {"FlightFogBlend",            "100.000000"},
+                                {"HeavyAirHeightMin",         "2000.000000"},
+                                {"HeavyAirHeightMax",         "2000.000000"},
+                                {"PlanetLodSwitch1",          "5000.000000"},
+                                {"SkyAtmosphereHeight",       "2000.000000"},
+                                {"SolarSystemLUTHeight",      "1500.000000"},
+                                {"SolarSystemLUTBlendLength", "3500.000000"},
+                                {"AtmosphereStartHeight",     "1600.000000"},
+                                {"AtmosphereEndHeight",       "2276.000000"},
+                                {"StratosphereHeight",        "5000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"EnvironmentGasGiantProperties", "GcEnvironmentProperties"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FlightFogHeight",           "1700.000000"},
+                                {"FlightFogBlend",            "100.000000"},
+                                {"HeavyAirHeightMin",         "2000.000000"},
+                                {"HeavyAirHeightMax",         "2000.000000"},
+                                {"PlanetLodSwitch1",          "5000.000000"},
+                                {"SkyAtmosphereHeight",       "2000.000000"},
+                                {"HorizonBlendHeight",        "1000.000000"},
+                                {"HorizonBlendLength",        "1000.000000"},
+                                {"SolarSystemLUTHeight",      "1500.000000"},
+                                {"SolarSystemLUTBlendLength", "3500.000000"},
+                                {"AtmosphereStartHeight",     "1600.000000"},
+                                {"AtmosphereEndHeight",       "2276.000000"},
+                                {"StratosphereHeight",        "5000.000000"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "GCSKYGLOBALS.GLOBALS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -3465,7 +3638,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SunStrength",              "0.8"},
                                 {"SpaceFogPlanetMax",        "0.8"},
                                 {"NebulaSeed",               "200"},
-                                {"NebulaDistortionStrength", "0.25"},
+                                {"NebulaDistortionStrength", "0.2"},
                             }
                         },
                     }
@@ -3476,695 +3649,690 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["ADD_FILES"] =
     {
         {
-            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\DUDCLEARCOLD\DUDCLEARCOLD.SCENE.EXML",
+            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\DUDCLEARCOLD\DUDCLEARCOLD.SCENE.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkSceneNodeData">
-  <Property name="Name" value="MODELS\EFFECTS\HEAVYAIR\DUDCLEARCOLD\DUDCLEARCOLD.SCENE.MXML" />
-  <Property name="NameHash" value="0" />
-  <Property name="Type" value="GROUP" />
-  <Property name="Transform" value="TkTransformData.xml">
-    <Property name="TransX" value="0" />
-    <Property name="TransY" value="0" />
-    <Property name="TransZ" value="0" />
-    <Property name="RotX" value="0" />
-    <Property name="RotY" value="0" />
-    <Property name="RotZ" value="0" />
-    <Property name="ScaleX" value="1" />
-    <Property name="ScaleY" value="1" />
-    <Property name="ScaleZ" value="1" />
-  </Property>
-  <Property name="PlatformExclusion" value="0" />
-  <Property name="Attributes" />
-  <Property name="Children">
-    <Property value="TkSceneNodeData.xml">
-      <Property name="Name" value="DUDFogClearCold01HeavyAir" />
-      <Property name="NameHash" value="0" />
-      <Property name="Type" value="HEAVYAIR" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="0" />
-        <Property name="TransY" value="0" />
-        <Property name="TransZ" value="0" />
-        <Property name="RotX" value="0" />
-        <Property name="RotY" value="0" />
-        <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="1" />
-        <Property name="ScaleY" value="1" />
-        <Property name="ScaleZ" value="1" />
-      </Property>
-      <Property name="PlatformExclusion" value="0" />
-      <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
-          <Property name="Name" value="DATA" />
-          <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/DUDFOGCLEARCOLD01.HEAVYAIR.MBIN" />
-        </Property>
-      </Property>
-      <Property name="Children" />
-    </Property>
-    <Property value="TkSceneNodeData.xml">
-      <Property name="Name" value="DUDFogClearCold02HeavyAir" />
-      <Property name="NameHash" value="0" />
-      <Property name="Type" value="HEAVYAIR" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="0" />
-        <Property name="TransY" value="0" />
-        <Property name="TransZ" value="0" />
-        <Property name="RotX" value="0" />
-        <Property name="RotY" value="0" />
-        <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="1" />
-        <Property name="ScaleY" value="1" />
-        <Property name="ScaleZ" value="1" />
-      </Property>
-      <Property name="PlatformExclusion" value="0" />
-      <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
-          <Property name="Name" value="DATA" />
-          <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/DUDFOGCLEARCOLD02.HEAVYAIR.MBIN" />
-        </Property>
-      </Property>
-      <Property name="Children" />
-    </Property>
-  </Property>
+<Data template="cTkSceneNodeData">
+	<Property name="Name" value="MODELS\EFFECTS\HEAVYAIR\DUDCLEARCOLD\DUDCLEARCOLD.SCENE.MXML" />
+	<Property name="NameHash" value="0" />
+	<Property name="Type" value="GROUP" />
+	<Property name="Transform" value="TkTransformData">
+		<Property name="TransX" value="0.000000" />
+		<Property name="TransY" value="0.000000" />
+		<Property name="TransZ" value="0.000000" />
+		<Property name="RotX" value="0.000000" />
+		<Property name="RotY" value="0.000000" />
+		<Property name="RotZ" value="0.000000" />
+		<Property name="ScaleX" value="1.000000" />
+		<Property name="ScaleY" value="1.000000" />
+		<Property name="ScaleZ" value="1.000000" />
+	</Property>
+	<Property name="PlatformExclusion" value="0" />
+	<Property name="Attributes" />
+	<Property name="Children">
+		<Property name="Children" value="TkSceneNodeData" _index="0">
+			<Property name="Name" value="DUDFogClearCold01HeavyAir" />
+			<Property name="NameHash" value="0" />
+			<Property name="Type" value="HEAVYAIR" />
+			<Property name="Transform" value="TkTransformData">
+				<Property name="TransX" value="0.000000" />
+				<Property name="TransY" value="0.000000" />
+				<Property name="TransZ" value="0.000000" />
+				<Property name="RotX" value="0.000000" />
+				<Property name="RotY" value="0.000000" />
+				<Property name="RotZ" value="0.000000" />
+				<Property name="ScaleX" value="1.000000" />
+				<Property name="ScaleY" value="1.000000" />
+				<Property name="ScaleZ" value="1.000000" />
+			</Property>
+			<Property name="PlatformExclusion" value="0" />
+			<Property name="Attributes">
+				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+					<Property name="Name" value="DATA" />
+					<Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/DUDFOGCLEARCOLD01.HEAVYAIR.MBIN" />
+				</Property>
+			</Property>
+			<Property name="Children" />
+		</Property>
+		<Property name="Children" value="TkSceneNodeData" _index="1">
+			<Property name="Name" value="DUDFogClearCold02HeavyAir" />
+			<Property name="NameHash" value="0" />
+			<Property name="Type" value="HEAVYAIR" />
+			<Property name="Transform" value="TkTransformData">
+				<Property name="TransX" value="0.000000" />
+				<Property name="TransY" value="0.000000" />
+				<Property name="TransZ" value="0.000000" />
+				<Property name="RotX" value="0.000000" />
+				<Property name="RotY" value="0.000000" />
+				<Property name="RotZ" value="0.000000" />
+				<Property name="ScaleX" value="1.000000" />
+				<Property name="ScaleY" value="1.000000" />
+				<Property name="ScaleZ" value="1.000000" />
+			</Property>
+			<Property name="PlatformExclusion" value="0" />
+			<Property name="Attributes">
+				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+					<Property name="Name" value="DATA" />
+					<Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/DUDFOGCLEARCOLD02.HEAVYAIR.MBIN" />
+				</Property>
+			</Property>
+			<Property name="Children" />
+		</Property>
+	</Property>
 </Data>
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\DUDCLEARCOLD\DUDFOGCLEARCOLD01.HEAVYAIR.EXML",
+            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\DUDCLEARCOLD\DUDFOGCLEARCOLD01.HEAVYAIR.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkHeavyAirData">
-  <Property name="Material" value="MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/MATERIALS/DUDFOGCLEARCOLD.MATERIAL.MBIN" />
-  <Property name="NumberOfParticles" value="1000" />
-  <Property name="Radius" value="20" />
-  <Property name="RadiusY" value="0" />
-  <Property name="MinParticleLifetime" value="2" />
-  <Property name="MaxParticleLifetime" value="4" />
-  <Property name="FadeTime" value="1" />
-  <Property name="SpeedFadeInTime" value="0" />
-  <Property name="MinVisibleSpeed" value="0" />
-  <Property name="SpeedFadeOutTime" value="1.5" />
-  <Property name="MaxVisibleSpeed" value="1.5" />
-  <Property name="SoftFadeStrength" value="5" />
-  <Property name="SpawnRotationRange" value="5" />
-  <Property name="MajorDirection" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0.05" />
-  </Property>
-  <Property name="ScaleRange" value="Vector3f.xml">
-    <Property name="x" value="2" />
-    <Property name="y" value="4" />
-    <Property name="z" value="2" />
-  </Property>
-  <Property name="RotationSpeedRange" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0.05" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="TwinkleRange" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="AmplitudeMin" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="AmplitudeMax" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0.05" />
-  </Property>
-  <Property name="Colour1" value="Colour.xml">
-    <Property name="R" value="0.904451" />
-    <Property name="G" value="0.817432" />
-    <Property name="B" value="0.819549" />
-    <Property name="A" value="1" />
-  </Property>
-  <Property name="Colour2" value="Colour.xml">
-    <Property name="R" value="0.904451" />
-    <Property name="G" value="0.817432" />
-    <Property name="B" value="0.819549" />
-    <Property name="A" value="1" />
-  </Property>
-  <Property name="EmitterShape" value="BottomHalfSphere" />
-  <Property name="VelocityAlignment" value="False" />
-  <Property name="WindDrift" value="TkEmitterWindDrift.xml">
-    <Property name="Strength" value="0.1" />
-    <Property name="LimitEmitterSpeed" value="False" />
-    <Property name="Speed" value="0.5" />
-    <Property name="LimitEmitterLifetime" value="False" />
-    <Property name="CurveStartValue" value="0" />
-    <Property name="CurveMidValue" value="0.35" />
-    <Property name="CurveEndValue" value="0.7" />
-    <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
-      <Property name="Curve" value="Linear" />
-    </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
-      <Property name="Curve" value="Linear" />
-    </Property>
-  </Property>
+<Data template="cTkHeavyAirData">
+	<Property name="Material" value="MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/MATERIALS/DUDFOGCLEARCOLD.MATERIAL.MBIN" />
+	<Property name="Number Of Particles" value="1000" />
+	<Property name="Radius" value="20.000000" />
+	<Property name="RadiusY" value="0.000000" />
+	<Property name="Min Particle Lifetime" value="2.000000" />
+	<Property name="Max Particle Lifetime" value="4.000000" />
+	<Property name="Fade Time" value="1.000000" />
+	<Property name="Speed Fade In Time" value="0.000000" />
+	<Property name="Min Visible Speed" value="0.000000" />
+	<Property name="Speed Fade Out Time" value="1.500000" />
+	<Property name="Max Visible Speed" value="1.500000" />
+	<Property name="Soft Fade Strength" value="5.000000" />
+	<Property name="Spawn Rotation Range" value="5.000000" />
+	<Property name="Major Direction">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.050000" />
+	</Property>
+	<Property name="Scale Range">
+		<Property name="X" value="2.000000" />
+		<Property name="Y" value="4.000000" />
+		<Property name="Z" value="2.000000" />
+	</Property>
+	<Property name="Rotation Speed Range">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.050000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Twinkle Range">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Amplitude Min">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Amplitude Max">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.050000" />
+	</Property>
+	<Property name="Colour 1">
+		<Property name="R" value="0.904451" />
+		<Property name="G" value="0.817432" />
+		<Property name="B" value="0.819549" />
+		<Property name="A" value="1.000000" />
+	</Property>
+	<Property name="Colour 2">
+		<Property name="R" value="0.904451" />
+		<Property name="G" value="0.817432" />
+		<Property name="B" value="0.819549" />
+		<Property name="A" value="1.000000" />
+	</Property>
+	<Property name="EmitterShape" value="BottomHalfSphere" />
+	<Property name="VelocityAlignment" value="false" />
+	<Property name="WindDrift" value="TkEmitterWindDrift">
+		<Property name="Strength" value="0.100000" />
+		<Property name="LimitEmitterSpeed" value="false" />
+		<Property name="Speed" value="0.500000" />
+		<Property name="LimitEmitterLifetime" value="false" />
+		<Property name="CurveStartValue" value="0.000000" />
+		<Property name="CurveMidValue" value="0.350000" />
+		<Property name="CurveEndValue" value="0.700000" />
+		<Property name="CurveBlendMidpoint" value="0.500000" />
+		<Property name="Curve1Shape" value="TkCurveType">
+			<Property name="Curve" value="Linear" />
+		</Property>
+		<Property name="Curve2Shape" value="TkCurveType">
+			<Property name="Curve" value="Linear" />
+		</Property>
+	</Property>
 </Data>
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\DUDCLEARCOLD\DUDFOGCLEARCOLD02.HEAVYAIR.EXML",
+            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\DUDCLEARCOLD\DUDFOGCLEARCOLD02.HEAVYAIR.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkHeavyAirData">
-  <Property name="Material" value="MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/MATERIALS/DUDFOGCLEARCOLD.MATERIAL.MBIN" />
-  <Property name="NumberOfParticles" value="1500" />
-  <Property name="Radius" value="40" />
-  <Property name="RadiusY" value="0" />
-  <Property name="MinParticleLifetime" value="3" />
-  <Property name="MaxParticleLifetime" value="5" />
-  <Property name="FadeTime" value="1" />
-  <Property name="SpeedFadeInTime" value="0" />
-  <Property name="MinVisibleSpeed" value="0" />
-  <Property name="SpeedFadeOutTime" value="1.5" />
-  <Property name="MaxVisibleSpeed" value="1.5" />
-  <Property name="SoftFadeStrength" value="5" />
-  <Property name="SpawnRotationRange" value="5" />
-  <Property name="MajorDirection" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0.05" />
-  </Property>
-  <Property name="ScaleRange" value="Vector3f.xml">
-    <Property name="x" value="4" />
-    <Property name="y" value="8" />
-    <Property name="z" value="4" />
-  </Property>
-  <Property name="RotationSpeedRange" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0.05" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="TwinkleRange" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="AmplitudeMin" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="AmplitudeMax" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0.05" />
-  </Property>
-  <Property name="Colour1" value="Colour.xml">
-    <Property name="R" value="0.904451" />
-    <Property name="G" value="0.817432" />
-    <Property name="B" value="0.819549" />
-    <Property name="A" value="1" />
-  </Property>
-  <Property name="Colour2" value="Colour.xml">
-    <Property name="R" value="0.904451" />
-    <Property name="G" value="0.817432" />
-    <Property name="B" value="0.819549" />
-    <Property name="A" value="1" />
-  </Property>
-  <Property name="EmitterShape" value="BottomHalfSphere" />
-  <Property name="VelocityAlignment" value="False" />
-  <Property name="WindDrift" value="TkEmitterWindDrift.xml">
-    <Property name="Strength" value="0.15" />
-    <Property name="LimitEmitterSpeed" value="False" />
-    <Property name="Speed" value="0.5" />
-    <Property name="LimitEmitterLifetime" value="False" />
-    <Property name="CurveStartValue" value="0" />
-    <Property name="CurveMidValue" value="0.35" />
-    <Property name="CurveEndValue" value="0.7" />
-    <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
-      <Property name="Curve" value="Linear" />
-    </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
-      <Property name="Curve" value="Linear" />
-    </Property>
-  </Property>
+<Data template="cTkHeavyAirData">
+	<Property name="Material" value="MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/MATERIALS/DUDFOGCLEARCOLD.MATERIAL.MBIN" />
+	<Property name="Number Of Particles" value="1500" />
+	<Property name="Radius" value="40.000000" />
+	<Property name="RadiusY" value="0.000000" />
+	<Property name="Min Particle Lifetime" value="3.000000" />
+	<Property name="Max Particle Lifetime" value="5.000000" />
+	<Property name="Fade Time" value="1.000000" />
+	<Property name="Speed Fade In Time" value="0.000000" />
+	<Property name="Min Visible Speed" value="0.000000" />
+	<Property name="Speed Fade Out Time" value="1.500000" />
+	<Property name="Max Visible Speed" value="1.500000" />
+	<Property name="Soft Fade Strength" value="5.000000" />
+	<Property name="Spawn Rotation Range" value="5.000000" />
+	<Property name="Major Direction">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.050000" />
+	</Property>
+	<Property name="Scale Range">
+		<Property name="X" value="4.000000" />
+		<Property name="Y" value="8.000000" />
+		<Property name="Z" value="4.000000" />
+	</Property>
+	<Property name="Rotation Speed Range">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.050000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Twinkle Range">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Amplitude Min">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Amplitude Max">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.050000" />
+	</Property>
+	<Property name="Colour 1">
+		<Property name="R" value="0.904451" />
+		<Property name="G" value="0.817432" />
+		<Property name="B" value="0.819549" />
+		<Property name="A" value="1.000000" />
+	</Property>
+	<Property name="Colour 2">
+		<Property name="R" value="0.904451" />
+		<Property name="G" value="0.817432" />
+		<Property name="B" value="0.819549" />
+		<Property name="A" value="1.000000" />
+	</Property>
+	<Property name="EmitterShape" value="BottomHalfSphere" />
+	<Property name="VelocityAlignment" value="false" />
+	<Property name="WindDrift" value="TkEmitterWindDrift">
+		<Property name="Strength" value="0.150000" />
+		<Property name="LimitEmitterSpeed" value="false" />
+		<Property name="Speed" value="0.500000" />
+		<Property name="LimitEmitterLifetime" value="false" />
+		<Property name="CurveStartValue" value="0.000000" />
+		<Property name="CurveMidValue" value="0.350000" />
+		<Property name="CurveEndValue" value="0.700000" />
+		<Property name="CurveBlendMidpoint" value="0.500000" />
+		<Property name="Curve1Shape" value="TkCurveType">
+			<Property name="Curve" value="Linear" />
+		</Property>
+		<Property name="Curve2Shape" value="TkCurveType">
+			<Property name="Curve" value="Linear" />
+		</Property>
+	</Property>
 </Data>
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\DUDCLEARCOLD\MATERIALS\DUDFOGCLEARCOLD.MATERIAL.EXML",
+            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\DUDCLEARCOLD\MATERIALS\DUDFOGCLEARCOLD.MATERIAL.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkMaterialData">
-  <Property name="Name" value="DUDFOGCLEARCOLDMAT" />
-  <Property name="Metamaterial" value="Models/Effects/Fog/SwampFog/Materials/FogSwampMat.metamaterial.mXml" />
-  <Property name="Class" value="Translucent" />
-  <Property name="TransparencyLayerID" value="0" />
-  <Property name="CastShadow" value="True" />
-  <Property name="DisableZTest" value="False" />
-  <Property name="CreateFur" value="False" />
-  <Property name="Link" value="" />
-  <Property name="Shader" value="SHADERS/PARTICLE.SHADER.BIN" />
-  <Property name="Flags">
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
-    </Property>
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F07_UNLIT" />
-    </Property>
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-    </Property>
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F13_UVANIMATION" />
-    </Property>
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F14_UVSCROLL" />
-    </Property>
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F22_TRANSPARENT_SCALAR" />
-    </Property>
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F23_TRANSLUCENT" />
-    </Property>
-  </Property>
-  <Property name="Uniforms">
-    <Property value="TkMaterialUniform.xml">
-      <Property name="Name" value="gMaterialColourVec4" />
-      <Property name="Values" value="Vector4f.xml">
-        <Property name="x" value="1" />
-        <Property name="y" value="1" />
-        <Property name="z" value="1" />
-        <Property name="t" value="1" />
-      </Property>
-      <Property name="ExtendedValues" />
-    </Property>
-    <Property value="TkMaterialUniform.xml">
-      <Property name="Name" value="gMaterialParamsVec4" />
-      <Property name="Values" value="Vector4f.xml">
-        <Property name="x" value="1" />
-        <Property name="y" value="1" />
-        <Property name="z" value="0" />
-        <Property name="t" value="0" />
-      </Property>
-      <Property name="ExtendedValues" />
-    </Property>
-    <Property value="TkMaterialUniform.xml">
-      <Property name="Name" value="gMaterialParams2Vec4" />
-      <Property name="Values" value="Vector4f.xml">
-        <Property name="x" value="0" />
-        <Property name="y" value="1" />
-        <Property name="z" value="0" />
-        <Property name="t" value="0" />
-      </Property>
-      <Property name="ExtendedValues" />
-    </Property>
-    <Property value="TkMaterialUniform.xml">
-      <Property name="Name" value="gMaterialSFXVec4" />
-      <Property name="Values" value="Vector4f.xml">
-        <Property name="x" value="0" />
-        <Property name="y" value="0" />
-        <Property name="z" value="0" />
-        <Property name="t" value="0" />
-      </Property>
-      <Property name="ExtendedValues" />
-    </Property>
-    <Property value="TkMaterialUniform.xml">
-      <Property name="Name" value="gMaterialSFXColVec4" />
-      <Property name="Values" value="Vector4f.xml">
-        <Property name="x" value="0" />
-        <Property name="y" value="0" />
-        <Property name="z" value="0" />
-        <Property name="t" value="0" />
-      </Property>
-      <Property name="ExtendedValues" />
-    </Property>
-    <Property value="TkMaterialUniform.xml">
-      <Property name="Name" value="gUVScrollStepVec4" />
-      <Property name="Values" value="Vector4f.xml">
-        <Property name="x" value="1" />
-        <Property name="y" value="0.125" />
-        <Property name="z" value="1" />
-        <Property name="t" value="0" />
-      </Property>
-      <Property name="ExtendedValues" />
-    </Property>
-  </Property>
-  <Property name="Samplers">
-    <Property value="TkMaterialSampler.xml">
-      <Property name="Name" value="gDiffuseMap" />
-      <Property name="Map" value="TEXTURES/EFFECTS/FOG/SWAMPFOGANIM.DDS" />
-      <Property name="IsCube" value="False" />
-      <Property name="UseCompression" value="True" />
-      <Property name="UseMipMaps" value="True" />
-      <Property name="IsSRGB" value="True" />
-      <Property name="MaterialAlternativeId" value="" />
-      <Property name="TextureAddressMode" value="Wrap" />
-      <Property name="TextureFilterMode" value="Trilinear" />
-      <Property name="Anisotropy" value="0" />
-    </Property>
-  </Property>
-  <Property name="ShaderMillDataHash" value="0" />
+<Data template="cTkMaterialData">
+	<Property name="Name" value="DUDFOGCLEARCOLDMAT" />
+	<Property name="Metamaterial" value="Models/Effects/Fog/SwampFog/Materials/FogSwampMat.metamaterial.mXml" />
+	<Property name="Class" value="Translucent" />
+	<Property name="TransparencyLayerID" value="0" />
+	<Property name="CastShadow" value="true" />
+	<Property name="DisableZTest" value="false" />
+	<Property name="CreateFur" value="false" />
+	<Property name="EnableLodFade" value="false" />
+	<Property name="Link" value="" />
+	<Property name="Shader" value="SHADERS/PARTICLE.SHADER.BIN" />
+	<Property name="Flags">
+		<Property name="Flags" value="TkMaterialFlags" _index="0">
+			<Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
+		</Property>
+		<Property name="Flags" value="TkMaterialFlags" _index="1">
+			<Property name="MaterialFlag" value="_F07_UNLIT" />
+		</Property>
+		<Property name="Flags" value="TkMaterialFlags" _index="2">
+			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
+		</Property>
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
+			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
+		</Property>
+		<Property name="Flags" value="TkMaterialFlags" _index="5">
+			<Property name="MaterialFlag" value="_F22_OCCLUSION_MAP" />
+		</Property>
+	</Property>
+	<Property name="Uniforms_Float">
+		<Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="0">
+			<Property name="Name" value="gMaterialColourVec4" />
+			<Property name="Values">
+				<Property name="X" value="1.000000" />
+				<Property name="Y" value="1.000000" />
+				<Property name="Z" value="1.000000" />
+				<Property name="W" value="1.000000" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="1">
+			<Property name="Name" value="gMaterialParamsVec4" />
+			<Property name="Values">
+				<Property name="X" value="1.000000" />
+				<Property name="Y" value="1.000000" />
+				<Property name="Z" value="0.000000" />
+				<Property name="W" value="0.000000" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="2">
+			<Property name="Name" value="gMaterialParams2Vec4" />
+			<Property name="Values">
+				<Property name="X" value="0.000000" />
+				<Property name="Y" value="1.000000" />
+				<Property name="Z" value="0.000000" />
+				<Property name="W" value="0.000000" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="3">
+			<Property name="Name" value="gMaterialSFXVec4" />
+			<Property name="Values">
+				<Property name="X" value="0.000000" />
+				<Property name="Y" value="0.000000" />
+				<Property name="Z" value="0.000000" />
+				<Property name="W" value="0.000000" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="4">
+			<Property name="Name" value="gMaterialSFXColVec4" />
+			<Property name="Values">
+				<Property name="X" value="0.000000" />
+				<Property name="Y" value="0.000000" />
+				<Property name="Z" value="0.000000" />
+				<Property name="W" value="0.000000" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="5">
+			<Property name="Name" value="gUVScrollStepVec4" />
+			<Property name="Values">
+				<Property name="X" value="1.000000" />
+				<Property name="Y" value="0.125000" />
+				<Property name="Z" value="1.000000" />
+				<Property name="W" value="0.000000" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+	</Property>
+	<Property name="Samplers">
+		<Property name="Samplers" value="TkMaterialSampler" _index="0">
+			<Property name="Name" value="gDiffuseMap" />
+			<Property name="Map" value="TEXTURES/EFFECTS/FOG/SWAMPFOGANIM.DDS" />
+			<Property name="IsCube" value="false" />
+			<Property name="UseCompression" value="true" />
+			<Property name="UseMipMaps" value="true" />
+			<Property name="IsSRGB" value="true" />
+			<Property name="MaterialAlternativeId" value="" />
+			<Property name="TextureAddressMode" value="Wrap" />
+			<Property name="TextureFilterMode" value="Trilinear" />
+			<Property name="Anisotropy" value="0" />
+		</Property>
+	</Property>
+	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\DUDGRAVITYSTORMGAS.HEAVYAIR.EXML",
+            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\DUDGRAVITYSTORMGAS.HEAVYAIR.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkHeavyAirData">
-  <Property name="Material" value="MODELS/EFFECTS/COMMON/MATERIALS/NEWSMOKE.MATERIAL.MBIN" />
-  <Property name="NumberOfParticles" value="1000" />
-  <Property name="Radius" value="30" />
-  <Property name="RadiusY" value="200" />
-  <Property name="MinParticleLifetime" value="5" />
-  <Property name="MaxParticleLifetime" value="5" />
-  <Property name="FadeTime" value="1" />
-  <Property name="SpeedFadeInTime" value="0" />
-  <Property name="MinVisibleSpeed" value="0" />
-  <Property name="SpeedFadeOutTime" value="0" />
-  <Property name="MaxVisibleSpeed" value="1500" />
-  <Property name="SoftFadeStrength" value="0.1" />
-  <Property name="SpawnRotationRange" value="0" />
-  <Property name="MajorDirection" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0.2" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="ScaleRange" value="Vector3f.xml">
-    <Property name="x" value="8" />
-    <Property name="y" value="10" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="RotationSpeedRange" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0.3" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="TwinkleRange" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="AmplitudeMin" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="AmplitudeMax" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="Colour1" value="Colour.xml">
-    <Property name="R" value="0.725" />
-    <Property name="G" value="0.467" />
-    <Property name="B" value="0.824" />
-    <Property name="A" value="0.2" />
-  </Property>
-  <Property name="Colour2" value="Colour.xml">
-    <Property name="R" value="0.725" />
-    <Property name="G" value="0.467" />
-    <Property name="B" value="0.824" />
-    <Property name="A" value="0.3" />
-  </Property>
-  <Property name="EmitterShape" value="BottomHalfSphere" />
-  <Property name="VelocityAlignment" value="False" />
-  <Property name="WindDrift" value="TkEmitterWindDrift.xml">
-    <Property name="Strength" value="0.5" />
-    <Property name="LimitEmitterSpeed" value="False" />
-    <Property name="Speed" value="0.25" />
-    <Property name="LimitEmitterLifetime" value="False" />
-    <Property name="CurveStartValue" value="0" />
-    <Property name="CurveMidValue" value="0.35" />
-    <Property name="CurveEndValue" value="0.7" />
-    <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
-      <Property name="Curve" value="Linear" />
-    </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
-      <Property name="Curve" value="Linear" />
-    </Property>
-  </Property>
+<Data template="cTkHeavyAirData">
+	<Property name="Material" value="MODELS/EFFECTS/COMMON/MATERIALS/NEWSMOKE.MATERIAL.MBIN" />
+	<Property name="Number Of Particles" value="1000" />
+	<Property name="Radius" value="30.000000" />
+	<Property name="RadiusY" value="200.000000" />
+	<Property name="Min Particle Lifetime" value="5.000000" />
+	<Property name="Max Particle Lifetime" value="5.000000" />
+	<Property name="Fade Time" value="1.000000" />
+	<Property name="Speed Fade In Time" value="0.000000" />
+	<Property name="Min Visible Speed" value="0.000000" />
+	<Property name="Speed Fade Out Time" value="0.000000" />
+	<Property name="Max Visible Speed" value="1500.000000" />
+	<Property name="Soft Fade Strength" value="0.100000" />
+	<Property name="Spawn Rotation Range" value="0.000000" />
+	<Property name="Major Direction">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.200000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Scale Range">
+		<Property name="X" value="8.000000" />
+		<Property name="Y" value="10.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Rotation Speed Range">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.300000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Twinkle Range">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Amplitude Min">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Amplitude Max">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Colour 1">
+		<Property name="R" value="0.725000" />
+		<Property name="G" value="0.467000" />
+		<Property name="B" value="0.824000" />
+		<Property name="A" value="0.200000" />
+	</Property>
+	<Property name="Colour 2">
+		<Property name="R" value="0.725000" />
+		<Property name="G" value="0.467000" />
+		<Property name="B" value="0.824000" />
+		<Property name="A" value="0.300000" />
+	</Property>
+	<Property name="EmitterShape" value="BottomHalfSphere" />
+	<Property name="VelocityAlignment" value="false" />
+	<Property name="WindDrift" value="TkEmitterWindDrift">
+		<Property name="Strength" value="0.500000" />
+		<Property name="LimitEmitterSpeed" value="false" />
+		<Property name="Speed" value="0.250000" />
+		<Property name="LimitEmitterLifetime" value="false" />
+		<Property name="CurveStartValue" value="0.000000" />
+		<Property name="CurveMidValue" value="0.350000" />
+		<Property name="CurveEndValue" value="0.700000" />
+		<Property name="CurveBlendMidpoint" value="0.500000" />
+		<Property name="Curve1Shape" value="TkCurveType">
+			<Property name="Curve" value="Linear" />
+		</Property>
+		<Property name="Curve2Shape" value="TkCurveType">
+			<Property name="Curve" value="Linear" />
+		</Property>
+	</Property>
 </Data>
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\DUDGRAVITYSTORMSPIKE.HEAVYAIR.EXML",
+            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\DUDGRAVITYSTORMSPIKE.HEAVYAIR.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkHeavyAirData">
-  <Property name="Material" value="MODELS/EFFECTS/HEAVYAIR/GRAVITYSPIKES/GRAVITYSPIKEMAT.MATERIAL.MBIN" />
-  <Property name="NumberOfParticles" value="1000" />
-  <Property name="Radius" value="20" />
-  <Property name="RadiusY" value="200" />
-  <Property name="MinParticleLifetime" value="3" />
-  <Property name="MaxParticleLifetime" value="4" />
-  <Property name="FadeTime" value="0.5" />
-  <Property name="SpeedFadeInTime" value="0" />
-  <Property name="MinVisibleSpeed" value="0" />
-  <Property name="SpeedFadeOutTime" value="1.5" />
-  <Property name="MaxVisibleSpeed" value="1.5" />
-  <Property name="SoftFadeStrength" value="5" />
-  <Property name="SpawnRotationRange" value="0" />
-  <Property name="MajorDirection" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0.5" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="ScaleRange" value="Vector3f.xml">
-    <Property name="x" value="0.2" />
-    <Property name="y" value="1.25" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="RotationSpeedRange" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="TwinkleRange" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="AmplitudeMin" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0.3" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="AmplitudeMax" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="Colour1" value="Colour.xml">
-    <Property name="R" value="0.725" />
-    <Property name="G" value="0.467" />
-    <Property name="B" value="0.824" />
-    <Property name="A" value="0.5" />
-  </Property>
-  <Property name="Colour2" value="Colour.xml">
-    <Property name="R" value="0.725" />
-    <Property name="G" value="0.467" />
-    <Property name="B" value="0.824" />
-    <Property name="A" value="0.7" />
-  </Property>
-  <Property name="EmitterShape" value="Sphere" />
-  <Property name="VelocityAlignment" value="True" />
-  <Property name="WindDrift" value="TkEmitterWindDrift.xml">
-    <Property name="Strength" value="0" />
-    <Property name="LimitEmitterSpeed" value="False" />
-    <Property name="Speed" value="0.5" />
-    <Property name="LimitEmitterLifetime" value="False" />
-    <Property name="CurveStartValue" value="0" />
-    <Property name="CurveMidValue" value="0.35" />
-    <Property name="CurveEndValue" value="0.7" />
-    <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
-      <Property name="Curve" value="Linear" />
-    </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
-      <Property name="Curve" value="Linear" />
-    </Property>
-  </Property>
+<Data template="cTkHeavyAirData">
+	<Property name="Material" value="MODELS/EFFECTS/HEAVYAIR/GRAVITYSPIKES/GRAVITYSPIKEMAT.MATERIAL.MBIN" />
+	<Property name="Number Of Particles" value="1000" />
+	<Property name="Radius" value="20.000000" />
+	<Property name="RadiusY" value="200.000000" />
+	<Property name="Min Particle Lifetime" value="3.000000" />
+	<Property name="Max Particle Lifetime" value="4.000000" />
+	<Property name="Fade Time" value="0.500000" />
+	<Property name="Speed Fade In Time" value="0.000000" />
+	<Property name="Min Visible Speed" value="0.000000" />
+	<Property name="Speed Fade Out Time" value="1.500000" />
+	<Property name="Max Visible Speed" value="1.500000" />
+	<Property name="Soft Fade Strength" value="5.000000" />
+	<Property name="Spawn Rotation Range" value="0.000000" />
+	<Property name="Major Direction">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.500000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Scale Range">
+		<Property name="X" value="0.200000" />
+		<Property name="Y" value="1.250000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Rotation Speed Range">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Twinkle Range">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Amplitude Min">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.300000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Amplitude Max">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Colour 1">
+		<Property name="R" value="0.725000" />
+		<Property name="G" value="0.467000" />
+		<Property name="B" value="0.824000" />
+		<Property name="A" value="0.500000" />
+	</Property>
+	<Property name="Colour 2">
+		<Property name="R" value="0.725000" />
+		<Property name="G" value="0.467000" />
+		<Property name="B" value="0.824000" />
+		<Property name="A" value="0.700000" />
+	</Property>
+	<Property name="EmitterShape" value="Sphere" />
+	<Property name="VelocityAlignment" value="true" />
+	<Property name="WindDrift" value="TkEmitterWindDrift">
+		<Property name="Strength" value="0.000000" />
+		<Property name="LimitEmitterSpeed" value="false" />
+		<Property name="Speed" value="0.500000" />
+		<Property name="LimitEmitterLifetime" value="false" />
+		<Property name="CurveStartValue" value="0.000000" />
+		<Property name="CurveMidValue" value="0.350000" />
+		<Property name="CurveEndValue" value="0.700000" />
+		<Property name="CurveBlendMidpoint" value="0.500000" />
+		<Property name="Curve1Shape" value="TkCurveType">
+			<Property name="Curve" value="Linear" />
+		</Property>
+		<Property name="Curve2Shape" value="TkCurveType">
+			<Property name="Curve" value="Linear" />
+		</Property>
+	</Property>
 </Data>
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\DUDGRAVITYSTORMSPIKEL.HEAVYAIR.EXML",
+            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\DUDGRAVITYSTORMSPIKEL.HEAVYAIR.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkHeavyAirData">
-  <Property name="Material" value="MODELS/EFFECTS/HEAVYAIR/GRAVITYSPIKES/GRAVITYSPIKELMAT.MATERIAL.MBIN" />
-  <Property name="NumberOfParticles" value="1500" />
-  <Property name="Radius" value="20" />
-  <Property name="RadiusY" value="200" />
-  <Property name="MinParticleLifetime" value="3" />
-  <Property name="MaxParticleLifetime" value="4" />
-  <Property name="FadeTime" value="0.5" />
-  <Property name="SpeedFadeInTime" value="0" />
-  <Property name="MinVisibleSpeed" value="0" />
-  <Property name="SpeedFadeOutTime" value="1.5" />
-  <Property name="MaxVisibleSpeed" value="1.5" />
-  <Property name="SoftFadeStrength" value="5" />
-  <Property name="SpawnRotationRange" value="0" />
-  <Property name="MajorDirection" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="1" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="ScaleRange" value="Vector3f.xml">
-    <Property name="x" value="1.5" />
-    <Property name="y" value="2" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="RotationSpeedRange" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="TwinkleRange" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="AmplitudeMin" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0.3" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="AmplitudeMax" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="Colour1" value="Colour.xml">
-    <Property name="R" value="0.695275" />
-    <Property name="G" value="0.411427" />
-    <Property name="B" value="0.824" />
-    <Property name="A" value="1" />
-  </Property>
-  <Property name="Colour2" value="Colour.xml">
-    <Property name="R" value="0.51475" />
-    <Property name="G" value="0.076588" />
-    <Property name="B" value="0.824" />
-    <Property name="A" value="1" />
-  </Property>
-  <Property name="EmitterShape" value="Sphere" />
-  <Property name="VelocityAlignment" value="False" />
-  <Property name="WindDrift" value="TkEmitterWindDrift.xml">
-    <Property name="Strength" value="0" />
-    <Property name="LimitEmitterSpeed" value="False" />
-    <Property name="Speed" value="0.5" />
-    <Property name="LimitEmitterLifetime" value="False" />
-    <Property name="CurveStartValue" value="0" />
-    <Property name="CurveMidValue" value="0.35" />
-    <Property name="CurveEndValue" value="0.7" />
-    <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
-      <Property name="Curve" value="Linear" />
-    </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
-      <Property name="Curve" value="Linear" />
-    </Property>
-  </Property>
+<Data template="cTkHeavyAirData">
+	<Property name="Material" value="MODELS/EFFECTS/HEAVYAIR/GRAVITYSPIKES/GRAVITYSPIKELMAT.MATERIAL.MBIN" />
+	<Property name="Number Of Particles" value="1500" />
+	<Property name="Radius" value="20.000000" />
+	<Property name="RadiusY" value="200.000000" />
+	<Property name="Min Particle Lifetime" value="3.000000" />
+	<Property name="Max Particle Lifetime" value="4.000000" />
+	<Property name="Fade Time" value="0.500000" />
+	<Property name="Speed Fade In Time" value="0.000000" />
+	<Property name="Min Visible Speed" value="0.000000" />
+	<Property name="Speed Fade Out Time" value="1.500000" />
+	<Property name="Max Visible Speed" value="1.500000" />
+	<Property name="Soft Fade Strength" value="5.000000" />
+	<Property name="Spawn Rotation Range" value="0.000000" />
+	<Property name="Major Direction">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="1.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Scale Range">
+		<Property name="X" value="1.500000" />
+		<Property name="Y" value="2.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Rotation Speed Range">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Twinkle Range">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Amplitude Min">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.300000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Amplitude Max">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Colour 1">
+		<Property name="R" value="0.695275" />
+		<Property name="G" value="0.411427" />
+		<Property name="B" value="0.824000" />
+		<Property name="A" value="1.000000" />
+	</Property>
+	<Property name="Colour 2">
+		<Property name="R" value="0.514750" />
+		<Property name="G" value="0.076588" />
+		<Property name="B" value="0.824000" />
+		<Property name="A" value="1.000000" />
+	</Property>
+	<Property name="EmitterShape" value="Sphere" />
+	<Property name="VelocityAlignment" value="false" />
+	<Property name="WindDrift" value="TkEmitterWindDrift">
+		<Property name="Strength" value="0.000000" />
+		<Property name="LimitEmitterSpeed" value="false" />
+		<Property name="Speed" value="0.500000" />
+		<Property name="LimitEmitterLifetime" value="false" />
+		<Property name="CurveStartValue" value="0.000000" />
+		<Property name="CurveMidValue" value="0.350000" />
+		<Property name="CurveEndValue" value="0.700000" />
+		<Property name="CurveBlendMidpoint" value="0.500000" />
+		<Property name="Curve1Shape" value="TkCurveType">
+			<Property name="Curve" value="Linear" />
+		</Property>
+		<Property name="Curve2Shape" value="TkCurveType">
+			<Property name="Curve" value="Linear" />
+		</Property>
+	</Property>
 </Data>
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\DUDGRAVITYSTORMSPIKEREFRACTION.HEAVYAIR.EXML",
+            ["FILE_DESTINATION"] = "MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\DUDGRAVITYSTORMSPIKEREFRACTION.HEAVYAIR.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkHeavyAirData">
-  <Property name="Material" value="MODELS/EFFECTS/HEAVYAIR/GRAVITYSPIKES/GRAVITYSPIKEREFRACTION.MATERIAL.MBIN" />
-  <Property name="NumberOfParticles" value="500" />
-  <Property name="Radius" value="20" />
-  <Property name="RadiusY" value="200" />
-  <Property name="MinParticleLifetime" value="2" />
-  <Property name="MaxParticleLifetime" value="3" />
-  <Property name="FadeTime" value="0.5" />
-  <Property name="SpeedFadeInTime" value="0" />
-  <Property name="MinVisibleSpeed" value="0" />
-  <Property name="SpeedFadeOutTime" value="1.5" />
-  <Property name="MaxVisibleSpeed" value="1.5" />
-  <Property name="SoftFadeStrength" value="5" />
-  <Property name="SpawnRotationRange" value="360" />
-  <Property name="MajorDirection" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0.2" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="ScaleRange" value="Vector3f.xml">
-    <Property name="x" value="0.7" />
-    <Property name="y" value="1.2" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="RotationSpeedRange" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="TwinkleRange" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="AmplitudeMin" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="AmplitudeMax" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0.1" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="Colour1" value="Colour.xml">
-    <Property name="R" value="0.116" />
-    <Property name="G" value="0.467" />
-    <Property name="B" value="0" />
-    <Property name="A" value="1" />
-  </Property>
-  <Property name="Colour2" value="Colour.xml">
-    <Property name="R" value="0.725" />
-    <Property name="G" value="0" />
-    <Property name="B" value="0" />
-    <Property name="A" value="1" />
-  </Property>
-  <Property name="EmitterShape" value="BottomHalfSphere" />
-  <Property name="VelocityAlignment" value="False" />
-  <Property name="WindDrift" value="TkEmitterWindDrift.xml">
-    <Property name="Strength" value="0" />
-    <Property name="LimitEmitterSpeed" value="False" />
-    <Property name="Speed" value="0.5" />
-    <Property name="LimitEmitterLifetime" value="False" />
-    <Property name="CurveStartValue" value="0" />
-    <Property name="CurveMidValue" value="0.35" />
-    <Property name="CurveEndValue" value="0.7" />
-    <Property name="CurveBlendMidpoint" value="0.5" />
-    <Property name="Curve1Shape" value="TkCurveType.xml">
-      <Property name="Curve" value="Linear" />
-    </Property>
-    <Property name="Curve2Shape" value="TkCurveType.xml">
-      <Property name="Curve" value="Linear" />
-    </Property>
-  </Property>
+<Data template="cTkHeavyAirData">
+	<Property name="Material" value="MODELS/EFFECTS/HEAVYAIR/GRAVITYSPIKES/GRAVITYSPIKEREFRACTION.MATERIAL.MBIN" />
+	<Property name="Number Of Particles" value="500" />
+	<Property name="Radius" value="20.000000" />
+	<Property name="RadiusY" value="200.000000" />
+	<Property name="Min Particle Lifetime" value="2.000000" />
+	<Property name="Max Particle Lifetime" value="3.000000" />
+	<Property name="Fade Time" value="0.500000" />
+	<Property name="Speed Fade In Time" value="0.000000" />
+	<Property name="Min Visible Speed" value="0.000000" />
+	<Property name="Speed Fade Out Time" value="1.500000" />
+	<Property name="Max Visible Speed" value="1.500000" />
+	<Property name="Soft Fade Strength" value="5.000000" />
+	<Property name="Spawn Rotation Range" value="360.000000" />
+	<Property name="Major Direction">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.200000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Scale Range">
+		<Property name="X" value="0.700000" />
+		<Property name="Y" value="1.200000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Rotation Speed Range">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Twinkle Range">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Amplitude Min">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.000000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Amplitude Max">
+		<Property name="X" value="0.000000" />
+		<Property name="Y" value="0.100000" />
+		<Property name="Z" value="0.000000" />
+	</Property>
+	<Property name="Colour 1">
+		<Property name="R" value="0.116000" />
+		<Property name="G" value="0.467000" />
+		<Property name="B" value="0.000000" />
+		<Property name="A" value="1.000000" />
+	</Property>
+	<Property name="Colour 2">
+		<Property name="R" value="0.725000" />
+		<Property name="G" value="0.000000" />
+		<Property name="B" value="0.000000" />
+		<Property name="A" value="1.000000" />
+	</Property>
+	<Property name="EmitterShape" value="BottomHalfSphere" />
+	<Property name="VelocityAlignment" value="false" />
+	<Property name="WindDrift" value="TkEmitterWindDrift">
+		<Property name="Strength" value="0.000000" />
+		<Property name="LimitEmitterSpeed" value="false" />
+		<Property name="Speed" value="0.500000" />
+		<Property name="LimitEmitterLifetime" value="false" />
+		<Property name="CurveStartValue" value="0.000000" />
+		<Property name="CurveMidValue" value="0.350000" />
+		<Property name="CurveEndValue" value="0.700000" />
+		<Property name="CurveBlendMidpoint" value="0.500000" />
+		<Property name="Curve1Shape" value="TkCurveType">
+			<Property name="Curve" value="Linear" />
+		</Property>
+		<Property name="Curve2Shape" value="TkCurveType">
+			<Property name="Curve" value="Linear" />
+		</Property>
+	</Property>
 </Data>
 ]]
         },
@@ -4172,76 +4340,84 @@ NMS_MOD_DEFINITION_CONTAINER =
 }
 
 
-function GetColours(SW,R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,R6,G6,B6,A6,R7,G7,B7,A7,x8,y8,z8,R9,G9,B9,A9,R10,G10,B10,A10,R11,G11,B11,A11)
+function GetColours(SW,R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,R6,G6,B6,A6,R7,G7,B7,A7,X8,Y8,Z8,R9,G9,B9,A9,R10,G10,B10,A10,R11,G11,B11,A11)
     return
 [[
-      <Property value="GcPlanetWeatherColourData.xml">
-        <Property name="SelectionWeighting" value="]].. SW ..[[" />
-        <Property name="SkyColour" value="Colour.xml">
-          <Property name="R" value="]].. R1 ..[[" />
-          <Property name="G" value="]].. G1 ..[[" />
-          <Property name="B" value="]].. B1 ..[[" />
-          <Property name="A" value="]].. A1 ..[[" />
+      <Property name="Settings" value="GcPlanetWeatherColourData">
+        <Property name="SelectionWeighting" value="]].. string.format("%0.6f",SW) ..[[" />
+        <Property name="SkyColour">
+          <Property name="R" value="]].. string.format("%0.6f",R1) ..[[" />
+          <Property name="G" value="]].. string.format("%0.6f",G1) ..[[" />
+          <Property name="B" value="]].. string.format("%0.6f",B1) ..[[" />
+          <Property name="A" value="]].. string.format("%0.6f",A1) ..[[" />
         </Property>
-        <Property name="SkyUpperColour" value="Colour.xml">
-          <Property name="R" value="]].. R2 ..[[" />
-          <Property name="G" value="]].. G2 ..[[" />
-          <Property name="B" value="]].. B2 ..[[" />
-          <Property name="A" value="]].. A2 ..[[" />
+        <Property name="SkyUpperColour">
+          <Property name="R" value="]].. string.format("%0.6f",R2) ..[[" />
+          <Property name="G" value="]].. string.format("%0.6f",G2) ..[[" />
+          <Property name="B" value="]].. string.format("%0.6f",B2) ..[[" />
+          <Property name="A" value="]].. string.format("%0.6f",A2) ..[[" />
         </Property>
-        <Property name="SkySolarColour" value="Colour.xml">
-          <Property name="R" value="]].. R3 ..[[" />
-          <Property name="G" value="]].. G3 ..[[" />
-          <Property name="B" value="]].. B3 ..[[" />
-          <Property name="A" value="]].. A3 ..[[" />
+        <Property name="SkySolarColour">
+          <Property name="R" value="]].. string.format("%0.6f",R3) ..[[" />
+          <Property name="G" value="]].. string.format("%0.6f",G3) ..[[" />
+          <Property name="B" value="]].. string.format("%0.6f",B3) ..[[" />
+          <Property name="A" value="]].. string.format("%0.6f",A3) ..[[" />
         </Property>
-        <Property name="HorizonColour" value="Colour.xml">
-          <Property name="R" value="]].. R4 ..[[" />
-          <Property name="G" value="]].. G4 ..[[" />
-          <Property name="B" value="]].. B4 ..[[" />
-          <Property name="A" value="]].. A4 ..[[" />
+        <Property name="HorizonColour">
+          <Property name="R" value="]].. string.format("%0.6f",R4) ..[[" />
+          <Property name="G" value="]].. string.format("%0.6f",G4) ..[[" />
+          <Property name="B" value="]].. string.format("%0.6f",B4) ..[[" />
+          <Property name="A" value="]].. string.format("%0.6f",A4) ..[[" />
         </Property>
-        <Property name="SunColour" value="Colour.xml">
-          <Property name="R" value="]].. R5 ..[[" />
-          <Property name="G" value="]].. G5 ..[[" />
-          <Property name="B" value="]].. B5 ..[[" />
-          <Property name="A" value="]].. A5 ..[[" />
+        <Property name="SunColour">
+          <Property name="R" value="]].. string.format("%0.6f",R5) ..[[" />
+          <Property name="G" value="]].. string.format("%0.6f",G5) ..[[" />
+          <Property name="B" value="]].. string.format("%0.6f",B5) ..[[" />
+          <Property name="A" value="]].. string.format("%0.6f",A5) ..[[" />
         </Property>
-        <Property name="FogColour" value="Colour.xml">
-          <Property name="R" value="]].. R6 ..[[" />
-          <Property name="G" value="]].. G6 ..[[" />
-          <Property name="B" value="]].. B6 ..[[" />
-          <Property name="A" value="]].. A6 ..[[" />
+        <Property name="FogColour">
+          <Property name="R" value="]].. string.format("%0.6f",R6) ..[[" />
+          <Property name="G" value="]].. string.format("%0.6f",G6) ..[[" />
+          <Property name="B" value="]].. string.format("%0.6f",B6) ..[[" />
+          <Property name="A" value="]].. string.format("%0.6f",A6) ..[[" />
         </Property>
-        <Property name="HeightFogColour" value="Colour.xml">
-          <Property name="R" value="]].. R7 ..[[" />
-          <Property name="G" value="]].. G7 ..[[" />
-          <Property name="B" value="]].. B7 ..[[" />
-          <Property name="A" value="]].. A7 ..[[" />
+        <Property name="HeightFogColour">
+          <Property name="R" value="]].. string.format("%0.6f",R7) ..[[" />
+          <Property name="G" value="]].. string.format("%0.6f",G7) ..[[" />
+          <Property name="B" value="]].. string.format("%0.6f",B7) ..[[" />
+          <Property name="A" value="]].. string.format("%0.6f",A7) ..[[" />
         </Property>
-        <Property name="SkyGradientSpeed" value="Vector3f.xml">
-          <Property name="x" value="]].. x8 ..[[" />
-          <Property name="y" value="]].. y8 ..[[" />
-          <Property name="z" value="]].. z8 ..[[" />
+        <Property name="SkyGradientSpeed">
+          <Property name="X" value="]].. string.format("%0.6f",X8) ..[[" />
+          <Property name="Y" value="]].. string.format("%0.6f",Y8) ..[[" />
+          <Property name="Z" value="]].. string.format("%0.6f",Z8) ..[[" />
         </Property>
-        <Property name="LightColour" value="Colour.xml">
-          <Property name="R" value="]].. R9 ..[[" />
-          <Property name="G" value="]].. G9 ..[[" />
-          <Property name="B" value="]].. B9 ..[[" />
-          <Property name="A" value="]].. A9 ..[[" />
+        <Property name="LightColour">
+          <Property name="R" value="]].. string.format("%0.6f",R9) ..[[" />
+          <Property name="G" value="]].. string.format("%0.6f",G9) ..[[" />
+          <Property name="B" value="]].. string.format("%0.6f",B9) ..[[" />
+          <Property name="A" value="]].. string.format("%0.6f",A9) ..[[" />
         </Property>
-        <Property name="CloudColour1" value="Colour.xml">
-          <Property name="R" value="]].. R10 ..[[" />
-          <Property name="G" value="]].. G10 ..[[" />
-          <Property name="B" value="]].. B10 ..[[" />
-          <Property name="A" value="]].. A10 ..[[" />
+        <Property name="LightColourUnderground">
+          <Property name="R" value="1.000000" />
+          <Property name="G" value="1.000000" />
+          <Property name="B" value="1.000000" />
+          <Property name="A" value="1.000000" />
         </Property>
-        <Property name="CloudColour2" value="Colour.xml">
-          <Property name="R" value="]].. R11 ..[[" />
-          <Property name="G" value="]].. G11 ..[[" />
-          <Property name="B" value="]].. B11 ..[[" />
-          <Property name="A" value="]].. A11 ..[[" />
+        <Property name="CloudColour1">
+          <Property name="R" value="]].. string.format("%0.6f",R10) ..[[" />
+          <Property name="G" value="]].. string.format("%0.6f",G10) ..[[" />
+          <Property name="B" value="]].. string.format("%0.6f",B10) ..[[" />
+          <Property name="A" value="]].. string.format("%0.6f",A10) ..[[" />
         </Property>
+        <Property name="CloudColour2">
+          <Property name="R" value="]].. string.format("%0.6f",R11) ..[[" />
+          <Property name="G" value="]].. string.format("%0.6f",G11) ..[[" />
+          <Property name="B" value="]].. string.format("%0.6f",B11) ..[[" />
+          <Property name="A" value="]].. string.format("%0.6f",A11) ..[[" />
+        </Property>
+        <Property name="CirrusCloudDensity" value="0.300000" />
+        <Property name="GasGiantAtmosphereID" value="" />
       </Property>
 ]]
 end
@@ -4279,9 +4455,9 @@ function CreateColoursProperty(PaletteColours)
         local G7  = PaletteColours[j][27]
         local B7  = PaletteColours[j][28]
         local A7  = PaletteColours[j][29]
-        local x8  = PaletteColours[j][30]
-        local y8  = PaletteColours[j][31]
-        local z8  = PaletteColours[j][32]
+        local X8  = PaletteColours[j][30]
+        local Y8  = PaletteColours[j][31]
+        local Z8  = PaletteColours[j][32]
         local R9  = PaletteColours[j][33]
         local G9  = PaletteColours[j][34]
         local B9  = PaletteColours[j][35]
@@ -4294,19 +4470,19 @@ function CreateColoursProperty(PaletteColours)
         local G11 = PaletteColours[j][42]
         local B11 = PaletteColours[j][43]
         local A11 = PaletteColours[j][44]
-        table.insert(PropertiesString,GetColours(SW, R1, G1, B1, A1, R2, G2, B2, A2, R3, G3, B3, A3, R4, G4, B4, A4, R5, G5, B5, A5, R6, G6, B6, A6, R7, G7, B7, A7, x8, y8, z8, R9, G9, B9, A9, R10, G10, B10, A10, R11, G11, B11, A11))
+        table.insert(PropertiesString,GetColours(SW, R1, G1, B1, A1, R2, G2, B2, A2, R3, G3, B3, A3, R4, G4, B4, A4, R5, G5, B5, A5, R6, G6, B6, A6, R7, G7, B7, A7, X8, Y8, Z8, R9, G9, B9, A9, R10, G10, B10, A10, R11, G11, B11, A11))
     end
 return table.concat(PropertiesString)
 end
 
-local BaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local BaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 for i = 1, #DataTable do
     local Palette = DataTable[i]["PALETTE"]
     local PaletteColours = DataTable[i]["COLOURS"]
 
     BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {Palette, "GcWeatherColourSettingList.xml"},
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcWeatherColourSettingList"},
         ["PRECEDING_KEY_WORDS"] = {"Settings"},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
