@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Small Panels 4.8.pak", 
+["MOD_FILENAME"] 			= "Small Panels 4.9.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k & Basbcoole",
-["NMS_VERSION"]				= "5.73",
+["NMS_VERSION"]				= "5.74",
 ["MOD_DESCRIPTION"]			= "This mod reduces the size of most game panels",
 ["MODIFICATIONS"] 			= 
 	{
@@ -882,7 +882,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},	
 				{
-					["MBIN_FILE_SOURCE"] 	= "UI\COMPONENTS\TECH\TECHSTATSSECTION.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "UI\COMPONENTS\TECH\TECHSTATSSECTION.MBIN",  --3 or 4 stats
 					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -890,7 +890,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"]    = "ALL", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Height",	"144"},		-- Original "202"											
+								{"Height",	"134"},		-- Original "202"											
 							}
 						},
 						{
@@ -906,7 +906,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"]    = "ALL", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Height",	"144"},		-- Original "180"									
+								{"Height",	"134"},		-- Original "180"									
 							}
 						},
 						{
@@ -926,7 +926,53 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 					}
-				},					
+				},	
+				{
+					["MBIN_FILE_SOURCE"] 	= "UI\COMPONENTS\TECH\TECHSTATSSECTIONSMALL.MBIN",  -- 2 stats
+					["MXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID",	"STATS_SMALL"},
+							["REPLACE_TYPE"]    = "ALL", 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Height",	"84"},		-- Original "132"											
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"PaddingX",	"30.000000"},
+							["REPLACE_TYPE"]    = "ALL", 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"PaddingX",	"24"},		-- Original "30"									
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Height",	"110.000000"},
+							["REPLACE_TYPE"]    = "ALL", 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Height",	"84"},		-- Original "110"									
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Font Height",	"30.000000"},
+							["REPLACE_TYPE"]    = "ALL", 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Font Height",	"24"},		-- Original "30"									
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Width",	"290.000000"},
+							["REPLACE_TYPE"]    = "ALL", 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Width",	"200"},		-- Original "290"									
+							}
+						},
+					}
+				},				
 			}
 		}
 	}	
