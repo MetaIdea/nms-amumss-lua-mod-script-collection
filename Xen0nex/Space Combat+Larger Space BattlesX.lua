@@ -139,7 +139,7 @@ LargerBattleChanges =
 					"FlybySpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
-					{"Spread",	30,			80},
+					{"Spread",	20,			30},	--20,		30
 					{"Count",	1,			4}		--1,		3
 				}
 			}
@@ -190,7 +190,7 @@ LargerBattleChanges =
 					"PirateSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
-					{"Spread",	80,			80},
+					{"Spread",	80,			80},	--80,		80
 					{"Count",	1,			1}		--1,		1		(1,			6)		[1,		3]
 				}
 			},
@@ -199,7 +199,7 @@ LargerBattleChanges =
 					"PirateSpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
-					{"Spread",	80,			80},
+					{"Spread",	80,			80},	--80,		80
 					{"Count",	1,			2}		--1,		1		(2,			6)		[1,		3]
 				}
 			},
@@ -248,7 +248,7 @@ LargerBattleChanges =
 					"PirateBattleSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
-					{"Spread",	100,		120},
+					{"Spread",	100,		120},	--100,		120
 					{"Count",	4,			8}		--2,		2		(10,			24)
 				}
 			}
@@ -419,7 +419,7 @@ LargerBattleChanges =
 					"BattleSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
-					{"Spread",	0,			0},
+					{"Spread",	0,			0},		--0,		0
 					{"Count",	1,			1}		--1,		1
 				}
 			},
@@ -428,7 +428,7 @@ LargerBattleChanges =
 					"ChildSpawns", "GcAIShipSpawnData", "0",	6
 				},
 				{
-					{"Spread",	2000,		4000},
+					{"Spread",	1500,		2000},	--1500,		2000
 					{"Count",	2,			5}		--2,		3
 				}
 			},
@@ -437,7 +437,7 @@ LargerBattleChanges =
 					"ChildSpawns", "GcAIShipSpawnData", "0",	8
 				},
 				{
-					{"Spread",	750,		1800},
+					{"Spread",	500,		1000},	--500,		1000
 					{"Count",	2,			3}		--1,		2
 				}
 			},
@@ -446,7 +446,7 @@ LargerBattleChanges =
 					"ChildSpawns", "GcAIShipSpawnData", "0",	10
 				},
 				{
-					{"Spread",	400,		500},
+					{"Spread",	400,		400},	--400,		400
 					{"Count",	3,			3}		--2,		2
 				}
 			},
@@ -455,7 +455,7 @@ LargerBattleChanges =
 					"BattleSpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
-					{"Spread",	100,		100},
+					{"Spread",	0,			0},		--0,		0
 					{"Count",	1,			1}		--1,		1
 				}
 			},
@@ -465,7 +465,7 @@ LargerBattleChanges =
 					"ChildSpawns", "GcAIShipSpawnData", "0",	6
 				},
 				{
-					{"Spread",	2400,		4200},
+					{"Spread",	2400,		4200},	--2400,		2500
 					{"Count",	6,			12}		--4,		6
 				}
 			},
@@ -474,7 +474,7 @@ LargerBattleChanges =
 					"ChildSpawns", "GcAIShipSpawnData", "0",	8
 				},
 				{
-					{"Spread",	800,		1800},
+					{"Spread",	800,		1800},	--500,		1000
 					{"Count",	1,			5}		--1,		3
 				}
 			},
@@ -483,7 +483,7 @@ LargerBattleChanges =
 					"ChildSpawns", "GcAIShipSpawnData", "0",	10
 				},
 				{
-					{"Spread",	400,		800},
+					{"Spread",	400,		800},	--400,		400
 					{"Count",	2,			3}		--2,		2
 				}
 			},
@@ -503,7 +503,7 @@ LargerBattleChanges =
 					"ChildSpawns", "GcAIShipSpawnData", "0",	6
 				},
 				{
-					{"Spread",	1800,		1800},	--1800,		1800
+					{"Spread",	1800,		1800},	--3200,		2500
 					{"Count",	3,			5}		--3,		5
 				}
 			},
@@ -635,7 +635,7 @@ LargerBattleChanges =
 					"ChildSpawns", "GcAIShipSpawnData", "0",	6
 				},
 				{
-					{"Spread",	1500,		1800},	--1200,		1300
+					{"Spread",	1200,		1300},	--1200,		1300
 					{"Count",	8,			8}		--6,		6
 				}
 			}
@@ -651,7 +651,7 @@ LargerBattleChanges =
 					"BattleInitialStandardSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
-					{"Spread",	100,		150},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	2,			5}		--2,		2		(6,			18)
 				}
 			},
@@ -660,7 +660,7 @@ LargerBattleChanges =
 					"BattleInitialStandardSpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
-					{"Spread",	100,		150},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	2,			5}		--2,		2		(5,			15)
 				}
 			},
@@ -669,7 +669,7 @@ LargerBattleChanges =
 					"BattleInitialStandardSpawns", "GcAIShipSpawnData", "2",	4
 				},
 				{
-					{"Spread",	100,		150},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	2,			5}		--2,		2		(6,			12)
 				}
 			},
@@ -678,7 +678,7 @@ LargerBattleChanges =
 					"BattleInitialStandardSpawns", "GcAIShipSpawnData", "3",	4
 				},
 				{
-					{"Spread",	100,		150},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	2,			5}		--2,		2
 				}
 			}
@@ -694,7 +694,7 @@ LargerBattleChanges =
 					"BattleInitialPirateSpawns"	, "GcAIShipSpawnData", "0",		4
 				},
 				{
-					{"Spread",	140,		200},
+					{"Spread",	100,		120},	--100,		120
 					{"Count",	2,			4}		--2,		2		(2,			8)
 				}
 			},
@@ -703,7 +703,7 @@ LargerBattleChanges =
 					"BattleInitialPirateSpawns"	, "GcAIShipSpawnData", "1",		4
 				},
 				{
-					{"Spread",	240,		460},
+					{"Spread",	100,		120},	--100,		120
 					{"Count",	2,			4}		--2,		2		(4,			16)
 				}
 			},
@@ -712,7 +712,7 @@ LargerBattleChanges =
 					"BattleInitialPirateSpawns"	, "GcAIShipSpawnData", "2",		4
 				},
 				{
-					{"Spread",	180,		360},
+					{"Spread",	100,		120},	--100,		120
 					{"Count",	2,			3}		--1,		1		(6,			12)
 				}
 			},
@@ -721,7 +721,7 @@ LargerBattleChanges =
 					"BattleInitialPirateSpawns"	, "GcAIShipSpawnData", "3",		4
 				},
 				{
-					{"Spread",	0,			0},
+					{"Spread",	0,			0},		--0,		0
 					{"Count",	0,			0}		--0,		0
 				}
 			}
@@ -737,7 +737,7 @@ LargerBattleChanges =
 					"BattleSecondaryPirateSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
-					{"Spread",	180,		360},
+					{"Spread",	100,		120},	--100,		120
 					{"Count",	2,			4}		--2,		2		(6,			12)
 				}
 			},
@@ -746,7 +746,7 @@ LargerBattleChanges =
 					"BattleSecondaryPirateSpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
-					{"Spread",	140,		280},
+					{"Spread",	100,		120},	--100,		120
 					{"Count",	2,			4}		--2,		2		(4,			16)
 				}
 			},
@@ -755,7 +755,7 @@ LargerBattleChanges =
 					"BattleSecondaryPirateSpawns", "GcAIShipSpawnData", "2",	4
 				},
 				{
-					{"Spread",	140,		240},
+					{"Spread",	100,		120},	--100,		120
 					{"Count",	1,			3}		--1,		1		(2,			6)
 				}
 			},
@@ -764,7 +764,7 @@ LargerBattleChanges =
 					"BattleSecondaryPirateSpawns", "GcAIShipSpawnData", "3",	4
 				},
 				{
-					{"Spread",	0,			0},
+					{"Spread",	0,			0},		--0,		0
 					{"Count",	0,			0}		--0,		0
 				}
 			}
@@ -780,7 +780,7 @@ LargerBattleChanges =
 					"BattleRecurringPirateSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
-					{"Spread",	180,		360},	--100,		120
+					{"Spread",	100,		120},	--100,		120
 					{"Count",	2,			4}		--2,		2
 				}
 			},
@@ -789,7 +789,7 @@ LargerBattleChanges =
 					"BattleRecurringPirateSpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
-					{"Spread",	140,		280},	--100,		120
+					{"Spread",	100,		120},	--100,		120
 					{"Count",	2,			4}		--2,		2
 				}
 			},
@@ -798,7 +798,7 @@ LargerBattleChanges =
 					"BattleRecurringPirateSpawns", "GcAIShipSpawnData", "2",	4
 				},
 				{
-					{"Spread",	140,		240},	--100,		120
+					{"Spread",	100,		120},	--100,		120
 					{"Count",	1,			3}		--1,		1
 				}
 			},
@@ -807,7 +807,7 @@ LargerBattleChanges =
 					"BattleRecurringPirateSpawns", "GcAIShipSpawnData", "3",	4
 				},
 				{
-					{"Spread",	140,		280},	--100,		120
+					{"Spread",	100,		120},	--100,		120
 					{"Count",	2,			4}		--2,		2
 				}
 			}
@@ -903,7 +903,7 @@ LargerPirateBountyChanges =
 					"PirateBountySpawns", "GcBountySpawnInfo", "BOUNTY1"				--Remember to switch to "GcBountySpawnInfo" for the Bounty section
 				},
 				{
-					{"Spread",	100,		100},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	1,			2}		--1,		1		(1,			6)
 				}
 			},
@@ -912,7 +912,7 @@ LargerPirateBountyChanges =
 					"PirateBountySpawns", "GcBountySpawnInfo", "BOUNTY2"
 				},
 				{
-					{"Spread",	100,		100},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	2,			3}		--1,		1		(3,			12)
 				}
 			},
@@ -921,7 +921,7 @@ LargerPirateBountyChanges =
 					"PirateBountySpawns", "GcBountySpawnInfo", "BOUNTY3"
 				},
 				{
-					{"Spread",	100,		100},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	3,			4}		--1,		1		(3,			9)
 				}
 			},
@@ -931,7 +931,7 @@ LargerPirateBountyChanges =
 					"PirateBountySpawns", "GcBountySpawnInfo", "EASYBOUNTY1"
 				},
 				{
-					{"Spread",	100,		100},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	1,			1}		--1,		1		(1,			6)
 				}
 			},
@@ -940,7 +940,7 @@ LargerPirateBountyChanges =
 					"PirateBountySpawns", "GcBountySpawnInfo", "EASYBOUNTY2"
 				},
 				{
-					{"Spread",	100,		100},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	1,			1}		--1,		1		(2,			8)		[2,	4]
 				}
 			},
@@ -949,7 +949,7 @@ LargerPirateBountyChanges =
 					"PirateBountySpawns", "GcBountySpawnInfo", "MEDBOUNTY1"
 				},
 				{
-					{"Spread",	100,		100},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	1,			1}		--1,		1		(3,			12)		[1,	3]
 				}
 			},
@@ -958,7 +958,7 @@ LargerPirateBountyChanges =
 					"PirateBountySpawns", "GcBountySpawnInfo", "MEDBOUNTY2"
 				},
 				{
-					{"Spread",	100,		100},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	1,			1}		--1,		1		(4,			12)		[1,	3]	(in the original mod, it seems these entries accidentally changed the "Scale" for MEDBOUNTY2 instead of changing the "Spread")
 				}
 			},
@@ -967,7 +967,7 @@ LargerPirateBountyChanges =
 					"PirateBountySpawns", "GcBountySpawnInfo", "HARDBOUNTY1"
 				},
 				{
-					{"Spread",	100,		100},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	2,			2}		--1,		1		(3,			9)		[2,	3]
 				}
 			},
@@ -976,7 +976,7 @@ LargerPirateBountyChanges =
 					"PirateBountySpawns", "GcBountySpawnInfo", "HARDBOUNTY2"
 				},
 				{
-					{"Spread",	100,		100},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	2,			2}		--3,		3		(6,			6)		[2,	3]
 				}
 			},
@@ -985,7 +985,7 @@ LargerPirateBountyChanges =
 					"PirateBountySpawns", "GcBountySpawnInfo", "WEAPGUY_BOUNTY"
 				},
 				{
-					{"Spread",	100,		100},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	2,			2}		--2,		2		(4,			8)
 				}
 			},
@@ -994,7 +994,7 @@ LargerPirateBountyChanges =
 					"PirateBountySpawns", "GcBountySpawnInfo", "PIRATE_SQUAD"
 				},
 				{
-					{"Spread",	800,		800},
+					{"Spread",	800,		800},	--800,		800
 					{"Count",	6,			6}		--6,		6		(9,			18)		[6,		10]
 				}
 			},
@@ -1003,7 +1003,7 @@ LargerPirateBountyChanges =
 					"PirateBountySpawns", "GcBountySpawnInfo", "PP_BOUNTY"
 				},
 				{
-					{"Spread",	100,		100},
+					{"Spread",	100,		100},	--100,		100
 					{"Count",	2,			4}		--1,		1		(3,			6)
 				}
 			}
@@ -2027,7 +2027,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "true",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*0)},									--0
+		{"Health", math.floor(ShipShield*0)},									--0		A value of 0 makes the shield invincible
 		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*0)},						--0
 		{"RechargeTime", 5},										--5
 		{"RechargeDelayTime", 10},									--10
