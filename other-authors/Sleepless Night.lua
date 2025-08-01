@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"]    = "Sleepless Night.pak",
+	["MOD_FILENAME"]    = "Sleepless Night",
 	["MOD_AUTHOR"]      = "Degraaaff, KuroPeach",
 	["LUA_AUTHOR"]      = "Lo2k, KuroPeach",
-	["NMS_VERSION"]     = "5.20",
+	["NMS_VERSION"]     = "5.75",
 	["MOD_DESCRIPTION"] = "This mods changes night lighting like dusk",
 	["MODIFICATIONS"]   = {
 		{
@@ -11,12 +11,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\NIGHTSKYCOLOURS.MBIN",
-					["EXML_CHANGE_TABLE"] =
+					["MXML_CHANGE_TABLE"] =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = { "SkyColour" },
 							["REPLACE_TYPE"]        = "ALL",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["VALUE_CHANGE_TABLE"]  =
 							{
 								{ "R", "0.682" },
@@ -28,7 +27,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "SkyUpperColour" },
 							["REPLACE_TYPE"]        = "ALL",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["VALUE_CHANGE_TABLE"]  =
 							{
 								{ "R", "0.612" },
@@ -40,7 +38,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "HorizonColour" },
 							["REPLACE_TYPE"]        = "ALL",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["VALUE_CHANGE_TABLE"]  =
 							{
 								{ "R", "1" },
@@ -52,7 +49,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "FogColour" },
 							["REPLACE_TYPE"]        = "ALL",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["VALUE_CHANGE_TABLE"]  =
 							{
 								{ "R", "0.35" },
@@ -64,7 +60,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "HeightFogColour" },
 							["REPLACE_TYPE"]        = "ALL",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["VALUE_CHANGE_TABLE"]  =
 							{
 								{ "R", "0.987" },
@@ -76,7 +71,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "LightColour" },
 							["REPLACE_TYPE"]        = "ALL",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["VALUE_CHANGE_TABLE"]  =
 							{
 								{ "R", "0.943" },
@@ -88,7 +82,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "CloudColour1" },
 							["REPLACE_TYPE"]        = "ALL",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["VALUE_CHANGE_TABLE"]  =
 							{
 								{ "R", "0.073" },
@@ -100,7 +93,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "CloudColour2" },
 							["REPLACE_TYPE"]        = "ALL",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["VALUE_CHANGE_TABLE"]  =
 							{
 								{ "R", "0.027" },

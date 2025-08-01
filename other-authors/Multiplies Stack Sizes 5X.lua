@@ -1,4 +1,4 @@
-Multiplier = 100
+Multiplier = 5
 Remainder = Multiplier
 
 if Multiplier == 10 or Multiplier == 100 then

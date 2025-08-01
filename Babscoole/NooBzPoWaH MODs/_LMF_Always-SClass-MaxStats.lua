@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_LMF_Always-SClass-MaxStats.pak",
+["MOD_FILENAME"]    = "_LMF_Always-SClass-MaxStats",
 ["MOD_DESCRIPTION"] = "This mod makes Frigates spawn with best initial stats and always as S class",
 ["MOD_AUTHOR"]      = "ll62518475TheSecond & NooBzPoWaH",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.+",
+["NMS_VERSION"]     = "5.7+",
 ["MODIFICATIONS"]   =
     {
         {
@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                     {
                     ["MBIN_FILE_SOURCE"] = "GCFLEETGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -44,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -52,7 +52,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -60,7 +60,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -69,7 +69,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -77,7 +77,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -86,7 +86,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -94,7 +94,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -102,7 +102,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -111,7 +111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -119,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -127,7 +127,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -136,7 +136,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -144,7 +144,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -153,7 +153,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -161,7 +161,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -169,7 +169,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -177,7 +177,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -186,7 +186,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -195,7 +195,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -203,7 +203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -211,7 +211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -219,7 +219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -227,7 +227,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -236,7 +236,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -245,7 +245,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","ExtraLoot"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -254,7 +254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         }, 
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Normandy","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Normandy","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -263,7 +263,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Normandy","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Normandy","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","ExtraLoot"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -272,7 +272,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Normandy","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Normandy","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Stealth"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -281,7 +281,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"DeepSpace","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"DeepSpace","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -290,7 +290,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         }, 
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -298,7 +298,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -306,7 +306,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -314,7 +314,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -322,7 +322,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -331,7 +331,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Stealth"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -340,7 +340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -349,7 +349,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -357,7 +357,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -365,7 +365,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -373,7 +373,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -382,7 +382,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Pirate","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Stealth"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -391,7 +391,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -400,7 +400,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -409,7 +409,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -418,7 +418,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -427,7 +427,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -436,7 +436,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","FuelCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -445,7 +445,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Speed"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -454,7 +454,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","ExtraLoot"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -463,7 +463,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Repair"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -472,7 +472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Invulnerable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -481,7 +481,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats",},
                             ["PRECEDING_KEY_WORDS"] = {"Stats","Stealth"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -492,11 +492,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\FRIGATETRAITTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\FRIGATETRAITTABLE.MBIN",
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] =  
+                            ["FOREACH_SKW_GROUP"] =  
                             {  
                                 {"ID","FUEL_BAD_1",},
                                 {"ID","FUEL_BAD_2",},
@@ -537,7 +537,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"DeepSpace",       "0"},
                                 {"DeepSpaceCommon", "0"},
                                 {"Pirate",          "0"},
-                                {"GhostShip",       "0"},
+				{"GhostShip",       "0"},
                             }
                         },
                     }

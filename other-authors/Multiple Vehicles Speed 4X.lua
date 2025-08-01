@@ -1,4 +1,4 @@
-Multiplier = 2
+Multiplier = 4
 Gravity = 1 + Multiplier / 10
 
 NMS_MOD_DEFINITION_CONTAINER =

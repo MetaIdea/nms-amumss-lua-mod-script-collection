@@ -1,6 +1,6 @@
 ModName = "Multiplies Plant Harvest"
 Author = "KuroPeach"
-HarvestMultiple = 2
+HarvestMultiple = 5
 
 PlantRewardIds =
 {

@@ -1,11 +1,11 @@
-Multiple = 5;
+Multiple = 5
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]    = "More Useful Bait " .. Multiple .. "X.pak",
+    ["MOD_FILENAME"]    = "More Useful Bait " .. Multiple .. "X",
     ["MOD_AUTHOR"]      = "KuroPeach",
     ["LUA_AUTHOR"]      = "KuroPeach",
-    ["NMS_VERSION"]     = "5.20",
+    ["NMS_VERSION"]     = "5.75",
     ["MOD_DESCRIPTION"] = "加强各种鱼饵的效果",
     ["MODIFICATIONS"]   =
     {
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BAITDATATABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",

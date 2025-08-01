@@ -982,7 +982,7 @@ SHIP_DESCRIPTOR_EXPORT =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "+ShipsOfMoar_CustomCollection.pak",
+["MOD_FILENAME"] 			= "+ShipsOfMoar_CustomCollection",
 ["MOD_AUTHOR"]				= "WinderTP, Gumsk, Kibbles",
 ["MOD_DESCRIPTION"]			= "SHIPS!",
 ["NMS_VERSION"]				= "3.52+",

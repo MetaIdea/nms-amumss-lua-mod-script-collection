@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exo's Dead Wreckoning",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.73",
+["NMS_VERSION"]   = "5.75",
 ["MODIFICATIONS"] =
     {
         {
@@ -64,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"BuildingPlacement", "DistressSignal"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OverrideRadius", "45"},
+                                {"OverrideRadius ", "45"},
                             }
                         },
                         {

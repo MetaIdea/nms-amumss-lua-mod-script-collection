@@ -1,11 +1,11 @@
 Multiplier = 5
-Gravity = 1 + Multiplier / 10
+-- Gravity = 1 + Multiplier / 10
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"]  = "Multiple Vehicles Speed" .. Multiplier .. "X-FlyCarForFun.pak",
+	["MOD_FILENAME"]  = "Multiple Vehicles Speed" .. Multiplier .. "X-FlyCarForFun",
 	["MOD_AUTHOR"]    = "KuroPeach",
-	["NMS_VERSION"]   = "5.20",
+	["NMS_VERSION"]   = "5.75",
 	["MODIFICATIONS"] =
 	{
 		{
@@ -13,11 +13,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"]  = "GCVEHICLEGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] =
+					["MXML_CHANGE_TABLE"] =
 					{
 						{
-							["SPECIAL_KEY_WORDS"]  = {},
-							["INTEGER_TO_FLOAT"]   = "FORCE",
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{ "MechJetpackMaxSpeed",             20 * Multiplier }, -- Original "20"
@@ -38,7 +36,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "Name", "SUBMARINE" }, -- Original "15 18 25 10 "
 								{ "Name", "MECH" }, -- Original "02 15 25 10 "
 							},
-							["INTEGER_TO_FLOAT"]   = "FORCE",
 							["MATH_OPERATION"]     = "*",
 							["VALUE_CHANGE_TABLE"] =
 							{
