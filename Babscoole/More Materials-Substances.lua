@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] = "MoreSubstances.pak",
 ["MOD_AUTHOR"]	= "Flugelwulff",
 ["LUA_AUTHOR"]	= "Babscoole/Flugelwulff",
-["NMS_VERSION"]	= "5.02",
+["NMS_VERSION"]	= "5.75",
 ["MODIFICATIONS"] =
 	{
 		{
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\DEFAULTREALITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "MinAmountOfSubstanceAvailable",

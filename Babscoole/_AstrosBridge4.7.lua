@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "AstrosBridge.pak",
+["MOD_FILENAME"]    = "AstrosBridge",
 ["MOD_AUTHOR"]      = "AstronautInOrbit",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.72",
+["NMS_VERSION"]     = "5.75",
 ["MOD_DESCRIPTION"] = "Changes the design of freighter bridges.",
 ["MODIFICATIONS"]   =
     {
