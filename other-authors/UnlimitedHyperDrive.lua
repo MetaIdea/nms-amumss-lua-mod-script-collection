@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","HYPERDRIVE",},
+							["SPECIAL_KEY_WORDS"] = {"ID", "HYPERDRIVE", "StatsType", },
 							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
                         {
-							["SPECIAL_KEY_WORDS"] = {"ID","WARP_ALIEN",},
+							["SPECIAL_KEY_WORDS"] = {"ID","WARP_ALIEN", "StatsType", },
 							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{

@@ -1,12 +1,12 @@
-Divisor = "@/10"
-Multiplier = "@*10"
+DIVISOR = 10
+MULTIPLIER = 10
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "More Creature Harvest",
 ["MOD_DESCRIPTION"] = "Fauna produce more products and the harvesting cooldown time is greatly reduced.",
 ["MOD_AUTHOR"]      = "chickazee4 & Babscoole",
-["NMS_VERSION"]     = "5.73",
+["NMS_VERSION"]     = "5.75",
 ["MODIFICATIONS"]   =
   {
     {
@@ -19,12 +19,12 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"CreatureHarvestAmountSmall", Multiplier},
-                {"CreatureHarvestAmountMed",   Multiplier},
-                {"CreatureHarvestAmountLarge", Multiplier},
-                {"CreatureHarvestAmountHuge",  Multiplier},
-                {"HarvestCooldownMin",         Divisor},
-                {"HarvestCooldownMax",         Divisor},
+                {"CreatureHarvestAmountSmall", "@*"..MULTIPLIER},
+                {"CreatureHarvestAmountMed",   "@*"..MULTIPLIER},
+                {"CreatureHarvestAmountLarge", "@*"..MULTIPLIER},
+                {"CreatureHarvestAmountHuge",  "@*"..MULTIPLIER},
+                {"HarvestCooldownMin",         "@/"..DIVISOR},
+                {"HarvestCooldownMax",         "@/"..DIVISOR},
               }
             },
           }

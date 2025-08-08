@@ -14,7 +14,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/RARE/METALFORMATION.MBIN",
                             "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/RARE/PHYSICSPROPS.MBIN",
-                            "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/RARE/PHYSICSPROPS.MBIN",
                         },
                     ["MXML_CHANGE_TABLE"] =
                     {
