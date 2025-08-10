@@ -1,27 +1,30 @@
 Techfrag = [[
-          <Property name="Value" value="TECHFRAG" />
+          <Property name="AlwaysPresentSubstances" value="TECHFRAG" />
 ]]
+
 Products = [[
-          <Property name="Value" value="HYPERFUEL2" />
-          <Property name="Value" value="BP_SALVAGE" />
-          <Property name="Value" value="FRIG_TOKEN" />
+          <Property name="AlwaysPresentSubstances" value="HYPERFUEL2" />
+          <Property name="AlwaysPresentSubstances" value="BP_SALVAGE" />
+          <Property name="AlwaysPresentSubstances" value="FRIG_TOKEN" />
 ]]
+
 Fleets= [[
-          <Property name="Value" value="U_FR_MINE4" />
-          <Property name="Value" value="U_FR_EXP4" />
-          <Property name="Value" value="U_FR_TRA4" />
-          <Property name="Value" value="U_FR_COM4" />
-          <Property name="Value" value="U_FR_FUEL4" />
-          <Property name="Value" value="U_FR_SPE4" />
-          <Property name="Value" value="U_FR_HYP4" />
+          <Property name="AlwaysPresentSubstances" value="U_FR_MINE4" />
+          <Property name="AlwaysPresentSubstances" value="U_FR_EXP4" />
+          <Property name="AlwaysPresentSubstances" value="U_FR_TRA4" />
+          <Property name="AlwaysPresentSubstances" value="U_FR_COM4" />
+          <Property name="AlwaysPresentSubstances" value="U_FR_FUEL4" />
+          <Property name="AlwaysPresentSubstances" value="U_FR_SPE4" />
+          <Property name="AlwaysPresentSubstances" value="U_FR_HYP4" />
 ]]
+
 Alien= [[
-          <Property name="Value" value="AP_SHIPLAS4" />
-          <Property name="Value" value="AP_SHIPGUN4" />
-          <Property name="Value" value="AP_PULSE4" />
-          <Property name="Value" value="AP_HYPER4" />
-          <Property name="Value" value="AP_LAUNCH4" />
-          <Property name="Value" value="AP_SHIPSHIELD4" />
+          <Property name="AlwaysPresentSubstances" value="AP_SHIPLAS4" />
+          <Property name="AlwaysPresentSubstances" value="AP_SHIPGUN4" />
+          <Property name="AlwaysPresentSubstances" value="AP_PULSE4" />
+          <Property name="AlwaysPresentSubstances" value="AP_HYPER4" />
+          <Property name="AlwaysPresentSubstances" value="AP_LAUNCH4" />
+          <Property name="AlwaysPresentSubstances" value="AP_SHIPSHIELD4" />
 ]]
 
 NMS_MOD_DEFINITION_CONTAINER =

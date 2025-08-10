@@ -1,39 +1,39 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Graphics Downgrade for Potato Computers (Atmosphere).pak",
+["MOD_FILENAME"]  = "Graphics Downgrade for Potato Computers (Atmosphere)",
 ["MOD_AUTHOR"]    = "N1h1lius",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.64",
+["NMS_VERSION"]   = "5.75",
 ["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "GCDEBUGOPTIONS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MBIN_FILE_SOURCE"] = "GCDEBUGOPTIONS.GLOBAL.MBIN",
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SkipIntro",                "True"},
-                                {"SkipLogos",                "True"},
-                                {"FastLoad",                 "True"},
-                                {"CanLeaveDialogs",          "True"},
-                                {"UnlockAllSeasonRewards",   "True"},
-                                {"UnlockAllTwitchRewards",   "True"},
-                                {"UnlockAllPlatformRewards", "True"},
-                                {"UseParticles",             "False"},
-                                {"UseVolumetrics",           "False"},
-                                {"UseClouds",                "False"},
-                                {"EnableCloudAnimation",     "False"},
+                                {"SkipIntro",                "true"},
+                                {"SkipLogos",                "true"},
+                                {"FastLoad",                 "true"},
+                                {"CanLeaveDialogs",          "true"},
+                                {"UnlockAllSeasonRewards",   "true"},
+                                {"UnlockAllTwitchRewards",   "true"},
+                                {"UnlockAllPlatformRewards", "true"},
+                                {"UseParticles",             "false"},
+                                {"UseVolumetrics",           "false"},
+                                {"UseClouds",                "false"},
+                                {"EnableCloudAnimation",     "false"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"]  = "GCGRAPHICSGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -70,10 +70,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"]  = "GCSKYGLOBALS.GLOBALS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FogAdjust", "GcPhotoModeAdjustData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"FogAdjust", "GcPhotoModeAdjustData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AdjustMin", "0"},
@@ -81,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"CloudAdjust", "GcPhotoModeAdjustData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"CloudAdjust", "GcPhotoModeAdjustData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AdjustMax",      "0"},
@@ -110,7 +110,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"]  = "GCSMOKETESTOPTIONS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =

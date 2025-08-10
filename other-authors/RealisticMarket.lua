@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{"BuyMarkupMod","1"}},
 			["REPLACE_TYPE"] = "ALL"},
 		{ --Reset markup of all items that has no price modifier in first place (static priced)
-			["SPECIAL_KEY_WORDS"] = {"LowPriceMod","0","HighPriceMod","0"},
+			["SPECIAL_KEY_WORDS"] = {"LowPriceMod","0.000000","HighPriceMod","0.000000"},
 			["VALUE_CHANGE_TABLE"] 	= 
 			{
 				{"BuyBaseMarkup","0"},
@@ -93,7 +93,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"BaseValue","10000"}}},
 		{ --S comm array
-		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_TRA4","Cost","GcItemPriceModifiers.xml"},
+		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_TRA4","Cost","GcItemPriceModifiers"},
 			["VALUE_CHANGE_TABLE"] = {
 				{"SpaceStationMarkup","0"},
 				{"LowPriceMod","0"},

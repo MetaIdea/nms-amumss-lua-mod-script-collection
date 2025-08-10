@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "No Cave Spawns",
+["MOD_FILENAME"]  = "High Density",
 ["MOD_AUTHOR"]    = "courtykat and Babscoole",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "5.75",
@@ -10,19 +10,17 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\ECOSYSTEM\CAVE\CAVETABLECOMMON.MBIN",
-                        "METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\CAVE\CAVETABLECOMMON.MBIN",
-                    },
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["REPLACE_TYPE"] = "ALL",
+                            ["PRECEDING_KEY_WORDS"] = {"DensityModifiers"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ProbabilityOfBeingEnabled", "0"},
-                                {"IncreasedSpawnDistance",    "2"},
+                                {"Sparse",    "4.000000"}, --Default 0.500000
+                                {"Normal",    "4.000000"}, --Default 1.000000
+                                {"Dense",     "4.000000"}, --Default 2.000000
+                                {"VeryDense", "4.000000"}, --Default 4.000000
                             }
                         },
                     }
