@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Deadzone III by Exosolar",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.73",
+["NMS_VERSION"]   = "5.75",
 ["MODIFICATIONS"] =
     {
         {
@@ -55,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScreenFilter" value="ScorchedStorm" />
       </Property>
       <Property name="Weight" value="0.020000" />
-    </Property>>
+    </Property>
     <Property name="FilterOptions" value="GcScreenFilterOption">
       <Property name="Filter" value="GcScreenFilters">
         <Property name="ScreenFilter" value="ToxicStorm" />

@@ -23,6 +23,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
+                    ["MBIN_FILE_SOURCE"] = "GCROBOTGLOBALS.MBIN",
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FriendlyDroneChatCooldown",           "999999.000000"},
+                                {"FriendlyDroneChatChanceSummoned",     "0.000000"},
+                                {"FriendlyDroneChatChanceUnsummoned",   "0.000000"},
+                                {"FriendlyDroneChatChanceBecomeWanted", "0.000000"},
+                                {"FriendlyDroneChatChanceLoseWanted",   "0.000000"},
+                                {"FriendlyDroneChatChanceIdle",         "0.000000"},
+                                {"FriendlyDroneBeepReplaceChatChance",  "0.000000"},
+                            }
+                        },
+                    }
+                },
+                {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREPETBEHAVIOURTABLE.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
@@ -54,6 +72,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OddsOfProcReplacement", "0.000000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"FriendlyDroneChatTemplates"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"GenericFallback", ""},
                             }
                         },
                     }
