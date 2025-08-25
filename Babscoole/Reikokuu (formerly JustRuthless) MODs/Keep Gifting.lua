@@ -92,7 +92,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Keep Gifting",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Makes the npcs gifting dialogue stay open when gifting items to increase faction rep and also adds a gifting option for 5x",
-["NMS_VERSION"]     = "5.73",
+["NMS_VERSION"]     = "5.75",
 ["MODIFICATIONS"]   =
     {
         {
@@ -239,12 +239,12 @@ for i = 1, #OptionChanges do
          {"KeepOpen", KeepOpen},
       }
     }
-    
+
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
       ["SEC_EDIT"] = "ADD_PUZZLE",
       ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-      ["REPLACE_TYPE"] = "ONCEINSIDE", 
+      ["REPLACE_TYPE"] = "ONCEINSIDE",
       ["VALUE_CHANGE_TABLE"] =
       {
          {"Rewards", Reward},
@@ -255,7 +255,8 @@ for i = 1, #OptionChanges do
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", OldID, "Cost", OldCost},
       ["REPLACE_TYPE"] = "ALL",
-      ["ADD_OPTION"] = "ADDafterSECTION",
+      ["ADD_OPTION"] = "REPLACEwholeSECTION",
+      ["EXML_INDEX"] = 2,
       ["SEC_ADD_NAMED"] = "ADD_PUZZLE"
     }
   end

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gHot"
 ModNameSub = "All S"
 BaseDescription = "Hotspot balancing"
-GameVersion = "5.2.2.0"
+GameVersion = "5.7.5.0"
 ModVersion = "a"
 
 --Files Changed
@@ -36,33 +36,32 @@ Original_Hotspot_Array = {			-- This is for reference. Don't change it!
 -- Preceding_Array = {"ProbabilityWeighting", "MinRange", "MaxRange", "ClassWeightings", "ClassWeightings", "ClassWeightings", "ClassWeightings", "ClassStrengths", "ClassStrengths", "ClassStrengths", "ClassStrengths", "DiscoveryDistanceThreshold"}
 
 New_Hotspot_Array = {
-				{"Power",		"Mineral1",		"Mineral2",		"Mineral3", 	"Gas1",			"Gas2"},		--Type
-				{25,			15,				15,				15,				15,				15}, 			--Probability. Divide by total
-				{200,			190,			190,			190,			190,			190}, 			--MinRange?? Min until another hotspot?
-				{250,			225,			225,			225,			225,			225},			--MaxRange?? Extraction radius? Max distance to a new hotspot?
-				{0,				0,				0,				0,				0,				0}, 			--C-class probability. Total = 100, but does not need to.
-				{0,				0,				0,				0,				0,				0}, 			--B-class probability 
-				{0,				0,				0,				0,				0,				0},			--A-class probability. 
-				{100,			100,			100,			100,			100,			100}, 			--S-class probability. 
-				{(100*OutX),	(0.5*OutX),		(0.5*OutX),		(0.5*OutX),		(0.5*OutX),		(0.5*OutX)},	--C-class output. Units unknwon.
-				{(200*OutX),	(1.0*OutX),		(1.0*OutX),		(1.0*OutX),		(1.0*OutX),		(1.0*OutX)}, 	--B-class output
-				{(400*OutX),	(2.0*OutX),		(2.0*OutX),		(2.0*OutX),		(2.0*OutX),		(2.0*OutX)}, 	--A-class output
-				{(1200*OutX),	(6.0*OutX),		(6.0*OutX),		(6.0*OutX),		(6.0*OutX),		(6.0*OutX)}, 	--S-class output
-				{0.95,			0.95,			0.95,			0.95,			0.95,			0.95} 			--DiscoverThreshold??
+				{"Power",		"Mineral1",		"Mineral2",		"Mineral3", 	"Gas1"},		--Type
+				{25,			15,				15,				15,				15}, 			--Probability. Divide by total
+				{200,			190,			190,			190,			190}, 			--MinRange?? Min until another hotspot?
+				{250,			225,			225,			225,			225},			--MaxRange?? Extraction radius? Max distance to a new hotspot?
+				{0,				0,				0,				0,				0}, 			--C-class probability. Total = 100, but does not need to.
+				{0,				0,				0,				0,				0}, 			--B-class probability 
+				{0,				0,				0,				0,				0},			--A-class probability. 
+				{100,			100,			100,			100,			100}, 			--S-class probability. 
+				{(100*OutX),	(0.5*OutX),		(0.5*OutX),		(0.5*OutX),		(0.5*OutX)},	--C-class output. Units unknwon.
+				{(200*OutX),	(1.0*OutX),		(1.0*OutX),		(1.0*OutX),		(1.0*OutX)}, 	--B-class output
+				{(400*OutX),	(2.0*OutX),		(2.0*OutX),		(2.0*OutX),		(2.0*OutX)}, 	--A-class output
+				{(1200*OutX),	(6.0*OutX),		(6.0*OutX),		(6.0*OutX),		(6.0*OutX)}, 	--S-class output
+				{0.95,			0.95,			0.95,			0.95,			0.95} 			--DiscoverThreshold??
 			}
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
 	MOD_DESCRIPTION	= BaseDescription,
 	MOD_AUTHOR		= Author,
 	NMS_VERSION		= GameVersion,
-	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
 	MODIFICATIONS	= {
 		{
 			MBIN_CHANGE_TABLE = {
 				{
 					MBIN_FILE_SOURCE = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN",
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 					},
 				}
 			},
@@ -70,11 +69,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}
 }
 
-local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINERMODIFICATIONS[1]MBIN_CHANGE_TABLE[1]EXML_CHANGE_TABLE
-for i = 1,6 do
+local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
+for i = 1,5 do
 	local temp_table1 =
 		{
-			SPECIAL_KEY_WORDS = {Original_Hotspot_Array[1][i],"GcRegionHotspotData.xml"},
+			SPECIAL_KEY_WORDS = {Original_Hotspot_Array[1][i],"GcRegionHotspotData"},
 			VALUE_CHANGE_TABLE = {
 				{"ProbabilityWeighting",New_Hotspot_Array[2][i]},
 				{"MinRange",New_Hotspot_Array[3][i]},
@@ -85,7 +84,7 @@ for i = 1,6 do
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table1
 	local temp_table2 =
 		{
-			SPECIAL_KEY_WORDS = {Original_Hotspot_Array[1][i],"GcRegionHotspotData.xml"},
+			SPECIAL_KEY_WORDS = {Original_Hotspot_Array[1][i],"GcRegionHotspotData"},
 			PRECEDING_KEY_WORDS = {"ClassWeightings"},
 			VALUE_CHANGE_TABLE = {
 				{"C",New_Hotspot_Array[5][i]},
@@ -97,7 +96,7 @@ for i = 1,6 do
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table2	
 	local temp_table3 =
 		{
-			SPECIAL_KEY_WORDS = {Original_Hotspot_Array[1][i],"GcRegionHotspotData.xml"},
+			SPECIAL_KEY_WORDS = {Original_Hotspot_Array[1][i],"GcRegionHotspotData"},
 			PRECEDING_KEY_WORDS = {"ClassStrengths"},
 			VALUE_CHANGE_TABLE = {
 				{"C",New_Hotspot_Array[9][i]},

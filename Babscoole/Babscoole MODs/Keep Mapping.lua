@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "KeepMapping.pak",
+["MOD_FILENAME"]    = "Keep Mapping",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.05",
+["NMS_VERSION"]     = "5.75",
 ["MOD_DESCRIPTION"] = "Keeps map seller dialog open, so you can buy multiple maps in the same session",
 ["MODIFICATIONS"]   =
     {
@@ -10,8 +10,8 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "NPC_MAPSHOP_OPT_C"},
@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH_TYPE"] = "STRING",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"KeepOpen", "True"},
+                                {"KeepOpen", "true"},
                             },
                         },
                     }

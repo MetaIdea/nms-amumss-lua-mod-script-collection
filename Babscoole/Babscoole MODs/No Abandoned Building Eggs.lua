@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "NoAbandonedBuildingEggs.pak",
+["MOD_FILENAME"]    = "No Abandoned Building Eggs",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.15",
+["NMS_VERSION"]     = "5.75",
 ["MOD_DESCRIPTION"] = "Removes fiend egg nests from the abandoned building scene",
 ["MODIFICATIONS"]   =
     {
@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\WARRIORPARTS\LAYOUTS\EXTLAYOUT_ABANDONED3.SCENE.MBIN",
                         "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\WARRIORPARTS\LAYOUTS\EXTLAYOUT_ABANDONED4.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Value", "MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\FIENDEGG.SCENE.MBIN"},

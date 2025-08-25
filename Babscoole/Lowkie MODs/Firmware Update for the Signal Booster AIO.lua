@@ -50,25 +50,26 @@ print("AERIAL_SCAN = "..tostring(AERIAL_SCAN))
 --SCANEVENTTABLE file.  For DialogDataTable, each "page" can have three entries only (P1 has another special scan added later in the script, which is not in the table).  After three, will need to make a new page table section(Eg "D_FUSBS_SCAN_P7).
 --For entries in MissionDataTable and Rewards in DialogDataTable, just follow the naming convention used by the existing entries.
 ScanDataTable = --Additions to SCANEVENTTABLEPLANET
-{--  NAME,         INTERACTIONTYPE, BUILDINGLOCATION, BUILDINGTYPE,        BUILDINGCLASS,            FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, OSDMESSAGE,                    TOOLTIP,                         MARKERLABEL
-    {"SE_GL_SHLT", "None",          "Nearest",        "AnyShelter",        "None",                   "false",         "false",                  "SIGNAL_SHELTER",              "TIP_SHELTER",                   ""                         },
-    {"SE_GL_PORT", "Portal",        "Nearest",        "BuildingClass",     "Portal",                 "false",         "true" ,                  "SIGNAL_PORTAL",               "TIP_PORTAL",                    ""                         },
-    {"SE_GL_DIST", "None",          "Nearest",        "BuildingClass",     "DistressSignal",         "false",         "false",                  "SIGNAL_DISTRESSSIGNAL",       "TIP_DISTRESSSIGNAL",            "BUILDING_DISTRESSSIGNAL_L"},
-    {"SE_GL_SHOP", "None",          "Nearest",        "BuildingClass",     "Shop",                   "false",         "true" ,                  "SIGNAL_SHOP",                 "TIP_SHOP",                      ""                         },
-    {"SE_GL_FACT", "None",          "Nearest",        "BuildingClass",     "Factory",                "false",         "false",                  "SIGNAL_FACTORY",              "TIP_FACTORY",                   ""                         },
-    {"SE_GL_DPOD", "None",          "Nearest",        "BuildingClass",     "DamagedMachine",         "false",         "false",                  "SIGNAL_DAMAGEDMACHINE",       "TIP_DAMAGEDMACHINE",            ""                         },
-    {"SE_GL_LBRY", "None",          "Nearest",        "BuildingClass",     "LargeBuilding",          "false",         "true" ,                  "SIGNAL_LIBRARY",              "TIP_LIBRARY",                   ""                         },
-    {"SE_GL_CRFR", "None",          "Nearest",        "BuildingClass",     "CrashedFreighter",       "false",         "false",                  "UI_CORE_ACT2_STEP8_OSD1",     "UI_CORE_ACT2_STEP8_OBJ2",       "UI_CORE_ACT2_STEP8_MARKER"},
-    {"SE_GL_OBSV", "None",          "Nearest",        "BuildingClass",     "Observatory",            "false",         "false",                  "SIGNAL_OBSERVATORY",          "TIP_OBSERVATORY",               ""                         },
-    {"SE_GL_OUTP", "None",          "Nearest",        "BuildingClass",     "Outpost",                "false",         "true" ,                  "SIGNAL_OUTPOST",              "TIP_OUTPOST",                   ""                         },
-    {"SE_GL_DRHV", "None",          "Nearest",        "BuildingClass",     "DroneHive",              "false",         "false",                  "UI_DRONEHIVE_LOCATED_OSD",    "UI_DRONEHIVE_LOCATED",          ""                         },
-    {"SE_GL_GRV" , "None",          "Nearest",        "BuildingClass",     "GraveInCave",            "false",         "false",                  "UI_MP_PLANTKILL_GRAVE_OSD",   "UI_TITLE_OWNED_LORE1",          "SCAN_GRAVE"               },
-    {"SE_GL_BASE", "None",          "Nearest",        "BuildingClass",     "Base",                   "false",         "false",                  "SIGNAL_BASE",                 "TIP_BASE",                      ""                         },
-    {"SE_GL_GLCH", "None",          "Nearest",        "BuildingClass",     "StoryGlitch",            "false",         "false",                  "NPC_COMM_WEEK_04_GLITCH_OSD", "NPC_COMM_WEEK_04_GLITCH_RES_A", "BUILDING_GLITCHYSTORYBOX" },
-    {"SE_GL_ABAN", "None",          "Nearest",        "BuildingClass",     "Abandoned",              "false",         "false",                  "SIGNAL_ABANDONED",            "TIP_ABANDONED",                 ""                         },
-    {"SE_GL_RBCP", "None",          "Nearest",        "BuildingClass",     "AbandonedRobotCamp",     "false",         "false",                  "UI_CAMP_REVEAL_OSD",          "UI_CAMP_REVEAL_MSG",            "UI_CAMP_REVEAL_MARKER"    },
-    {"SE_GL_DRCS", "None",          "Nearest",        "BuildingClass",     "SentinelDistressSignal", "false",         "false",                  "UI_CRASH_REVEAL_OSD",         "UI_CRASH_REVEAL_MSG",           "UI_CRASH_REVEAL_MARKER"   },
-    {"SE_GL_SETL", "None",          "Random" ,        "UnownedSettlement", "None",                   "true" ,         "true" ,                  "UI_SETTLEMENT_LOCATED_OSD",   "UI_SETTLEMENT_LOCATED",         ""                         },
+{--  NAME,         INTERACTIONTYPE, BUILDINGLOCATION, SEARCHTYPE,                   BUILDINGCLASS,            FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, OSDMESSAGE,                      TOOLTIP,                         MARKERLABEL
+    {"SE_GL_SHLT", "None",          "Nearest",        "AnyShelter",                 "None",                   "false",         "false",                  "SIGNAL_SHELTER",                "TIP_SHELTER",                   ""                         },
+    {"SE_GL_PORT", "Portal",        "Nearest",        "FindBuildingClass",          "Portal",                 "false",         "true" ,                  "SIGNAL_PORTAL",                 "TIP_PORTAL",                    ""                         },
+    {"SE_GL_DIST", "None",          "Nearest",        "FindBuildingClass",          "DistressSignal",         "false",         "false",                  "SIGNAL_DISTRESSSIGNAL",         "TIP_DISTRESSSIGNAL",            "BUILDING_DISTRESSSIGNAL_L"},
+    {"SE_GL_SHOP", "None",          "Nearest",        "FindBuildingClass",          "Shop",                   "false",         "true" ,                  "SIGNAL_SHOP",                   "TIP_SHOP",                      ""                         },
+    {"SE_GL_FACT", "None",          "Nearest",        "FindBuildingClass",          "Factory",                "false",         "false",                  "SIGNAL_FACTORY",                "TIP_FACTORY",                   ""                         },
+    {"SE_GL_DPOD", "None",          "Nearest",        "FindBuildingClass",          "DamagedMachine",         "false",         "false",                  "SIGNAL_DAMAGEDMACHINE",         "TIP_DAMAGEDMACHINE",            ""                         },
+    {"SE_GL_LBRY", "None",          "Nearest",        "FindBuildingClass",          "LargeBuilding",          "false",         "true" ,                  "SIGNAL_LIBRARY",                "TIP_LIBRARY",                   ""                         },
+    {"SE_GL_CRFR", "None",          "Nearest",        "FindBuildingClass",          "CrashedFreighter",       "false",         "false",                  "UI_CORE_ACT2_STEP8_OSD1",       "UI_CORE_ACT2_STEP8_OBJ2",       "UI_CORE_ACT2_STEP8_MARKER"},
+    {"SE_GL_OBSV", "None",          "Nearest",        "FindBuildingClass",          "Observatory",            "false",         "false",                  "SIGNAL_OBSERVATORY",            "TIP_OBSERVATORY",               ""                         },
+    {"SE_GL_OUTP", "None",          "Nearest",        "FindBuildingClass",          "Outpost",                "false",         "true" ,                  "SIGNAL_OUTPOST",                "TIP_OUTPOST",                   ""                         },
+    {"SE_GL_DRHV", "None",          "Nearest",        "FindBuildingClass",          "DroneHive",              "false",         "false",                  "UI_DRONEHIVE_LOCATED_OSD",      "UI_DRONEHIVE_LOCATED",          ""                         },
+    {"SE_GL_GRV" , "None",          "Nearest",        "FindBuildingClass",          "GraveInCave",            "false",         "false",                  "UI_MP_PLANTKILL_GRAVE_OSD",     "UI_TITLE_OWNED_LORE1",          "SCAN_GRAVE"               },
+    {"SE_GL_BASE", "None",          "Nearest",        "FindBuildingClass",          "Base",                   "false",         "false",                  "SIGNAL_BASE",                   "TIP_BASE",                      ""                         },
+    {"SE_GL_GLCH", "None",          "Nearest",        "FindBuildingClass",          "StoryGlitch",            "false",         "false",                  "NPC_COMM_WEEK_04_GLITCH_OSD",   "NPC_COMM_WEEK_04_GLITCH_RES_A", "BUILDING_GLITCHYSTORYBOX" },
+    {"SE_GL_ABAN", "None",          "Nearest",        "FindBuildingClass",          "Abandoned",              "false",         "false",                  "SIGNAL_ABANDONED",              "TIP_ABANDONED",                 ""                         },
+    {"SE_GL_RBCP", "None",          "Nearest",        "FindBuildingClass",          "AbandonedRobotCamp",     "false",         "false",                  "UI_CAMP_REVEAL_OSD",            "UI_CAMP_REVEAL_MSG",            "UI_CAMP_REVEAL_MARKER"    },
+    {"SE_GL_DRCS", "None",          "Nearest",        "FindBuildingClass",          "SentinelDistressSignal", "false",         "false",                  "UI_CRASH_REVEAL_OSD",           "UI_CRASH_REVEAL_MSG",           "UI_CRASH_REVEAL_MARKER"   },
+    {"SE_GL_SETL", "None",          "Random" ,        "UnownedSettlement",          "None",                   "true" ,         "true" ,                  "UI_SETTLEMENT_LOCATED_OSD",     "UI_SETTLEMENT_LOCATED",         ""                         },
+    {"SE_GL_SETB", "None",          "Random" ,        "UnownedSettlement_Builders", "None",                   "true" ,         "true" ,                  "UI_SETTLEMENT_BUI_LOCATED_OSD", "UI_SETTLEMENT_BUI_LOCATED",     ""                         },
 }
 
 MissionDataTable = --Additions to ENABLINGCONDITIONSTABLE and REWARDTABLE
@@ -92,6 +93,7 @@ MissionDataTable = --Additions to ENABLINGCONDITIONSTABLE and REWARDTABLE
     {"R_GLS_SCAN_15", "15",           "R_GL_RBCP", "SE_GL_RBCP"},
     {"R_GLS_SCAN_16", "16",           "R_GL_DRCS", "SE_GL_DRCS"},
     {"R_GLS_SCAN_17", "17",           "R_GL_SETL", "SE_GL_SETL"},
+    {"R_GLS_SCAN_18", "18",           "R_GL_SETB", "SE_GL_SETB"},
 }
 
 DialogDataTable = --Dialog (menu) additions to ENABLINGCONDITIONSTABLE.
@@ -143,6 +145,12 @@ DialogDataTable = --Dialog (menu) additions to ENABLINGCONDITIONSTABLE.
             {"UI_SETTLEMENT_LABEL",      "R_GLS_SCAN_17"},
         }
     },
+    {
+        {"D_GLS_SCAN_P7"},
+        {
+            {"UI_SETTLEMENT_BUI_LABEL", "R_GLS_SCAN_18"},
+        }
+    },
 }
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -150,7 +158,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster"..FILENAME,
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie & Babscoole",
-  ["NMS_VERSION"]     = "5.73",
+  ["NMS_VERSION"]     = "5.75",
   ["MODIFICATIONS"]   =
     {
         {
@@ -209,7 +217,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIGNALSCANNER"},
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Id", "SIGNALSCANNER"},
+                                {"Id", "%?SIGNALSCANNER_S13"},
+                            },
                             ["REMOVE"] = "SECTION",
                         },
                     },
@@ -645,7 +657,7 @@ for i=1, #ScanDataTable, 1 do
   local NAME                     = ScanDataTable[i][1]
   local INTERACTIONTYPE          = ScanDataTable[i][2]
   local BUILDINGLOCATION         = ScanDataTable[i][3]
-  local BUILDINGTYPE             = ScanDataTable[i][4]
+  local SEARCHTYPE               = ScanDataTable[i][4]
   local BUILDINGCLASS            = ScanDataTable[i][5]
   local FORCEWIDERANDOM          = ScanDataTable[i][6]
   local ALLOWOVERRIDDENBUILDINGS = ScanDataTable[i][7]
@@ -661,7 +673,7 @@ for i=1, #ScanDataTable, 1 do
             {"Name",                     NAME},
             {"InteractionType",          INTERACTIONTYPE},
             {"BuildingLocation",         BUILDINGLOCATION},
-            {"BuildingType",             BUILDINGTYPE},
+            {"SearchType",               SEARCHTYPE},
             {"ForceWideRandom",          FORCEWIDERANDOM},
             {"AllowOverriddenBuildings", ALLOWOVERRIDDENBUILDINGS},
             {"Range",                    "0"},
@@ -675,8 +687,7 @@ for i=1, #ScanDataTable, 1 do
   ScanEventTablePlanet[#ScanEventTablePlanet+1] =
     {
         ["SEC_EDIT"] = "GetCustomScanEvent",
-        ["SPECIAL_KEY_WORDS"] = {"BuildingClass", "GcBuildingClassification"},
-        ["LINE_OFFSET"] = "1",
+        ["SPECIAL_KEY_WORDS"] = {"SpecificBuildingClass", "GcBuildingClassification"},
         ["VALUE_CHANGE_TABLE"] =
         {
             {"BuildingClass", BUILDINGCLASS},

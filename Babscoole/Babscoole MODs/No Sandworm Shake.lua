@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]    = "NoCameraWormShake.pak",
+["MOD_FILENAME"]    = "No Sandworm Shake",
 ["MOD_DESCRIPTION"] = "No Sandworm Shaking",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.38",
+["NMS_VERSION"]     = "5.75",
 ["MODIFICATIONS"]   = 
     {
         {
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "GCCAMERAGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["MXML_CHANGE_TABLE"] = 
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Active", "False"},
+                                {"Active", "false"},
                             }
                         },
                     }
