@@ -1,5 +1,5 @@
 ModName = "PTSd More Expensive Costs etc"
-GameVersion = "5_64"
+GameVersion = "6_00"
 Description = "Changes costs for Starship or Multi-Tool inventory slots, Broadcast Receivers, Pilot Slots, etc."
 
 --Allows salvaging Reactor Cores from Shuttle & Exotic starships (Also requires changes in "PTSd Rewards Remixer.lua")
@@ -316,6 +316,7 @@ SalvageExoticCost =
 				  <Property name="Alien" value="" />
 				  <Property name="Sail" value="" />
 				  <Property name="Robot" value="" />
+				  <Property name="Corvette" value="" />
 			  </Property>
 			  <Property name="CannotAffordIfStringOverrideIsNull" value="true" />
 		  </Property>
@@ -351,6 +352,7 @@ SalvageShuttleCost =
 				  <Property name="Alien" value="" />
 				  <Property name="Sail" value="" />
 				  <Property name="Robot" value="" />
+				  <Property name="Corvette" value="" />
 			  </Property>
 			  <Property name="CannotAffordIfStringOverrideIsNull" value="true" />
 		  </Property>

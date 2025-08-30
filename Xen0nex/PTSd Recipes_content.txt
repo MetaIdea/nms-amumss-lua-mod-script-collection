@@ -1,0 +1,25 @@
+This mod contains:
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Recipes\PTSd Less Generous Recipes.lua
+   MOD FILENAME: PTSd Less Generous Recipes5_64.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes.>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_64
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Recipes\___MOD_BATCHNAME_PTSD6.lua
+   MOD FILENAME: PTSd Recipes.pak
+   MOD BATCHNAME: PTSd Recipes.pak
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 470

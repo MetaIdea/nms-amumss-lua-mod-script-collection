@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------
 ModName = 'PTSd Starship Tech Changes'
 ModAuthor = 'Xen0nex and lMonk'		--Edited by Xen0nex
-Version = '5_64'
+Version = '6_00'
 local desc = [[
   Changes to various aspects of starship speeds and charging.
   Includes improvements to Living Ships and related quest timers from "Living Ship Upgrades" by lMonk
@@ -46,7 +46,7 @@ SublightBonus = 1.25									--1.3
 --Changes the bonus Pulse Jump speed for Living Ship's Pulsing Heart, since they cannot install Sub-Light Amplifier.
 LivingPulseBonus = 1.2									--1
 --Changes the bonus Pulse Jump speed for Solar Ships's Vesper Sail
-SolarPulseBonus = 1.2									--1
+SolarPulseBonus = 1.5									--1
 
 --Changes the bonus for Starship Trail techs
 TrailStat = "Ship_Hyperdrive_JumpDistance"				--"Ship_Boost"
@@ -60,6 +60,9 @@ RemoveVesperAutoCharge = true							--false
 
 --Set to true to remove the Auto-Recharging effect for Living Ship S-Class Launcher upgrade modules (Living Ships now have a dedicated tech for that)
 RemoveLivingAutoCharge = true							--false
+
+--Set to true to remove the Auto-Recharging effect all Corvette modules (can still instead regular starship auto-recharging tech)
+RemoveCorvetteAutoCharge = true							--false
 
 --Changes to using items to recharge starship tech
 ShipLaunchRechargeMult = 6								--	Multiplier to apply to the cost of Uranium on recharging ship launchers										40 to fully charge
@@ -325,7 +328,7 @@ AddStarShieldBatt =
 [[<Property name="ChargeBy" value="SHIPCHARGE" />]]
 
 ShipTrailTechs =
-{"T_SHIP_DARK", "T_SHIP_GOLD", "T_SHIP_GREEN", "T_SHIP_PIRATE", "T_SHIP_RAINBOW", "T_SHIP_RED", "T_SHIP_ROGUE"}
+{"T_SHIP_DARK", "T_SHIP_GOLD", "T_SHIP_GREEN", "T_SHIP_PIRATE", "T_SHIP_RAINBOW", "T_SHIP_RED", "T_SHIP_ROGUE", "T_SHIP_PLASMA"}
 
 ShipPulseMods =
 {"UP_PULSE0", "UP_PULSE1", "UP_PULSE2", "UP_PULSE3", "UP_PULSE4", "UP_PULSEX"}
@@ -1235,6 +1238,19 @@ if RemoveLivingAutoCharge then
 ChangesToProcTech[#ChangesToProcTech+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID", "UA_LAUN4",	"StatsType", "Ship_Launcher_AutoCharge"},
+				["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			}
+end
+if RemoveCorvetteAutoCharge then
+ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {
+                     {"ID", "CV_SCI1",	"StatsType", "Ship_Launcher_AutoCharge"},
+                     {"ID", "CV_SCI2",	"StatsType", "Ship_Launcher_AutoCharge"},
+					 {"ID", "CV_SCI3",	"StatsType", "Ship_Launcher_AutoCharge"},
+					 {"ID", "CV_SCI4",	"StatsType", "Ship_Launcher_AutoCharge"},
+                   },
 				["SECTION_UP"] = 1,
 				["REMOVE"] = "SECTION"
 			}

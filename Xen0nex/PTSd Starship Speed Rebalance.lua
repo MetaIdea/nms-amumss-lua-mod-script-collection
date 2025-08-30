@@ -1,6 +1,6 @@
 ModName = "PTSd Starship Speed Rebalance"
 ModAuthor = 'Xen0nex'
-GameVersion = "5_57"
+GameVersion = "6_00"
 Description = 'Makes all ships start out slower but end up faster with enough upgrades, tweaks balance of boosting speed for different ship types'
 
 ThrustMult = 1												--	Global multiplier for Thrust for all ships. (accelration?)
@@ -14,6 +14,8 @@ ClassBonusMult = 1											--	Global multiplier for all Speed / Thrust related
 ManMult = 1													--	Global multiplier for Maneuverability for all ships ???  There are other aspects to maneuverability as well, such as TurnBrakeMin, etc. (maybe use fairly small multipliers, as these are 0.6 ~ 1.65 in vanilla)
 
 ReplaceControlHover = true									--false			Set to true to make ControlHover be based off of Control instead of off of ControlHeavy
+
+CorvettePulseBoost = 1.33									--3			Presumably how much faster than normal the Corvette's Pulse Jump speed is
 
 ShipSpeedChanges =
 {
@@ -241,6 +243,51 @@ ShipSpeedChanges =
 				}
 			},
 		}
+	},
+	{
+		{"ControlCorvette"},							--Corvettes
+		{
+			{
+				{"SpaceEngine"},						--Speed in open space
+				{
+					{"ThrustForce",						30*ThrustMult},						--40		Thrust / acceleration?
+					{"MaxSpeed",						150*MaxSpeedMult},					--180		Top Speed?
+					{"BoostThrustForce",				400*BoostThrustMult},				--500		Boosting Thrust / acceleration?
+					{"BoostMaxSpeed",					1000*MaxBoostSpeedMult},			--1100		Boosting Top Speed?
+					{"TurnStrength",					0.6*ManMult},						--0.6		Maneuverability?
+				}
+			},
+			{
+				{"PlanetEngine"},						--Speed in atmosphere
+				{
+					{"ThrustForce",						20*ThrustMult},						--20		Thrust / acceleration?
+					{"MaxSpeed",						110*MaxSpeedMult},					--130		Top Speed?
+					{"BoostThrustForce",				50*BoostThrustMult},				--20		Boosting Thrust / acceleration?
+					{"BoostMaxSpeed",					140*MaxBoostSpeedMult},				--185		Boosting Top Speed?
+					{"TurnStrength",					0.7*ManMult},						--0.7		Maneuverability?
+				}
+			},
+			{
+				{"CombatEngine"},						--Speed while fighting in space
+				{
+					{"ThrustForce",						30*ThrustMult},						--40		Thrust / acceleration?
+					{"MaxSpeed",						100*MaxSpeedMult},					--100		Top Speed?
+					{"BoostThrustForce",				400*BoostThrustMult},				--500		Boosting Thrust / acceleration?
+					{"BoostMaxSpeed",					1000*MaxBoostSpeedMult},			--1100		Boosting Top Speed?
+					{"TurnStrength",					1*ManMult},							--1			Maneuverability?
+				}
+			},
+			{
+				{"AtmosCombatEngine"},					--Speed while fighting in atmosphere
+				{
+					{"ThrustForce",						30*ThrustMult},						--40		Thrust / acceleration?
+					{"MaxSpeed",						70*MaxSpeedMult},					--80		Top Speed?
+					{"BoostThrustForce",				60*BoostThrustMult},				--50		Boosting Thrust / acceleration?
+					{"BoostMaxSpeed",					120*MaxBoostSpeedMult},				--120		Boosting Top Speed?
+					{"TurnStrength",					1*ManMult},							--1			Maneuverability?
+				}
+			},
+		}
 	}
 }
 
@@ -465,7 +512,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{
 		MBIN_FILE_SOURCE	= 'GCSPACESHIPGLOBALS.GLOBAL.MBIN',
 		MXML_CHANGE_TABLE	= {
-			--Intentionally left blank to be filled by the function below
+			{
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"CorvettePulseBoost", CorvettePulseBoost}
+				}
+			},
 		}
 	},
 }}}}

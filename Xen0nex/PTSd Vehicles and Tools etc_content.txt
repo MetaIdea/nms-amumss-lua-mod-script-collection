@@ -1,0 +1,109 @@
+This mod contains:
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Vehicles and Tools etc\gGame Misc Changes X.lua
+   MOD FILENAME: gGame Misc Changes X 5_55b.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Gumsk
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Various modifications to gameplay globals>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_55
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Vehicles and Tools etc\GMechX.lua
+   MOD FILENAME: GMechX 5_55a.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Gumsk,Devilin Pixy,Jasondude
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Mech modifications, faster animations, higher speed, infinite mechjets>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_55
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Vehicles and Tools etc\PTSd Black Holes + Scrapping etc.lua
+   MOD FILENAME: PTSd Black Holes + Scrapping etc6_00.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Black Holes send you farther, Adjusts Living Ship Module Evolution costs, Changes Illegal goods price markup, Adjust Death Penalty units cost, Replaces some of the substances you can receive from scrapping ships>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 6_00
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Vehicles and Tools etc\PTSd Other Difficulty Settings.lua
+   MOD FILENAME: PTSd Other Difficulty Settings5_64.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Affects most of the Difficulty Setting menu options, except for Stack Sizes>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_64
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Vehicles and Tools etc\PTSd Scanner and Mining Bonus.lua
+   MOD FILENAME: PTSd Scanner and Mining Bonus5_55.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Makes a Multitool's Mining stat also increase the yield of mined resources, and it's Scan stat also increase the value of scanned flora/fauna>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_55
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Vehicles and Tools etc\PTSd Ship+MultiTool Rebalance.lua
+   MOD FILENAME: PTSd Ship+MultiTool Rebalance6_00.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 6_00
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Vehicles and Tools etc\PTSd Suit Inventory and Stack Sizes.lua
+   MOD FILENAME: PTSd Suit Inventory and Stack Sizes5_55.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Rebalance of inventory Slot stack sizes, as well as initial & max exosuit inventory size>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_55
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Vehicles and Tools etc\UniqueExocraftsX.lua
+   MOD FILENAME: UniqueExoCraftsX5_62.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Jackty89
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<A small mod that make exocraft faster but also stand out from eachother>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_62
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Vehicles and Tools etc\___MOD_BATCHNAME7.lua
+   MOD FILENAME: PTSd Vehicles and Tools etc.pak
+   MOD BATCHNAME: PTSd Vehicles and Tools etc.pak
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 470

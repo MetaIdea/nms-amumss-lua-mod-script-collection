@@ -1094,7 +1094,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["PRECEDING_FIRST"] = "True",
 	----["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", math.floor(ShipShield*0)},									--0
+		{"Health", math.floor(ShipShield*0)},									--0		A value of 0 makes the shield invincible
 		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*0)},						--0
 		{"RechargeTime", 5},										--5
 		{"RechargeDelayTime", 10},									--10

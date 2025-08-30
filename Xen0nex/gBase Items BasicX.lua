@@ -2,12 +2,12 @@ Author = "Gumsk"			--Edited by Xen0nex
 ModName = "gBase"
 ModNameSub = "Items BasicX"
 BaseDescription = "Removes restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
-GameVersion = "5_64"
+GameVersion = "6_00"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 FileSource2 = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN"		--Added by Xen0nex
 
-FixHotspotIDs = true		--false		Set true to make the different types of hotspots back to their pre-5.61 names, which seems to possibly be some kind of bug
+FixHotspotIDs = false		--false		Set true to make the different types of hotspots back to their pre-5.61 names, which seems to possibly be some kind of bug	(No longer needed as of NMS v 6.00 seemingly)
 FreebuildShelters = true	--false		Set true to make the "Ragged Tent" and "Mud Hut" base building objects buildable anywhere on planets to use as shelter, even outside of a base
 
 MessageModRegion = 2		--Original 3/planet					~X (Vanilla is 2/Region?)

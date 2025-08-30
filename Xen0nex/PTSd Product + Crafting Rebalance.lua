@@ -1,5 +1,5 @@
 ModName = "PTSd Product + Crafting Rebalance"
-GameVersion = "5_64"
+GameVersion = "6_00"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --Changes how effective certain substances are at recharging certain techs
@@ -685,6 +685,9 @@ AddItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MBIN
 	{	--Alloy Skylight Roof
 		"F_ROOF_M_WIN",			"FARMPROD3",		1,		"Product",
 	},
+	{	--Refiner Unit (Corvette) 
+		"B_WALL_TECH0",			"GREEN2",			100,	"Substance",
+	},
 }
 --Replaces an existing component for certain objects with various items instead
 ReplaceItems =
@@ -775,7 +778,7 @@ ReplaceItems =
 	},
 }
 ReplaceItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MBIN
-{
+{		--Blueprint ID			New Item ID		# of Items	New Item Type	Replaced Item
 	{	--Roamer Geobay 
 		"GARAGE_M",				"RED2",				50,		"Substance",	"POWERCELL",
 	},
@@ -850,6 +853,24 @@ ReplaceItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MB
 	},
 	{	--Timber Skylight Roof
 		"T_ROOF_M_WIN",			"FARMPROD3",		1,		"Product",		"LAND1",
+	},
+	{	--Nutrition Unit (Corvette) 
+		"B_WALL_KITC0",			"COOKER",			1,		"Product",		"CARBON_SEAL",
+	},
+	{	--Living Wall (Corvette) 
+		"B_WALL_PLAN0",			"ASTEROID1",		60,		"Substance",	"ASTEROID1",
+	},
+	{	--Living Wall (Corvette) 
+		"B_WALL_PLAN0",			"CASING",			5,		"Product",		"SAND1",
+	},
+	{	--Living Wall (Corvette) 
+		"B_WALL_PLAN0",			"PLANT_POOP",		90,		"Substance",	"FUEL1",
+	},
+	{	--Refiner Unit (Corvette) 
+		"B_WALL_TECH0",			"ASTEROID3",		30,		"Substance",	"ASTEROID3",
+	},
+	{	--Refiner Unit (Corvette) 
+		"B_WALL_TECH0",			"MICROCHIP",		8,		"Product",		"HYDRALIC",
 	},
 }
 

@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "5_64"
+GameVersion = "6_00"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -164,8 +164,27 @@ SpecificShipStatChanges =
 		},
 	},
 	{
+		{"Corvette"},	--Corvette
+		{
+			{
+				{"B",	"SHIP_HYPERDRIVE"},	--Class,	Stat
+				{
+					{"Min",		10},		--8
+					{"Max",		20},		--15
+				},
+			},
+		},
+	},
+	{
 		{"Freighter"},	--Freighter
 		{
+			{
+				{"C",	"SHIP_DAMAGE"},	--Class,	Stat
+				{
+					{"Min",		0.5},		--0
+					{"Max",		3},			--0
+				},
+			},
 			{
 				{"C",	"FREI_HYPERDRIVE"},	--Class,	Stat
 				{
@@ -245,7 +264,7 @@ ShipStatChanges	=
 	},
 	{
 		{
-			"Sail"			--Solar		Maneuverability: High (350-445 +10%)			Speed: High ??? +15%			Pulse jump costs only 20% of base pulse fuel rate, launch fuel auto-recharges
+			"Sail"			--Solar			Maneuverability: High (350-445 +10%)			Speed: High ??? +15%			Pulse jump costs only 20% of base pulse fuel rate, launch fuel auto-recharges
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				0.94,	0.94,	0.94,	0.94},		--			+		8-15,		23-45,		45-60,		60-75	%
@@ -263,6 +282,17 @@ ShipStatChanges	=
 			{"SHIP_SHIELD",				1.9,	1.9,	1.9,	1.9},		--			+		3-8,		8-15[8-12],	12-20,		20-35	%
 			{"SHIP_HYPERDRIVE",			1.6,	1.6,	1.6,	1.6},		--			+		0,			3-8[2-4],	3-10[4-7],	5-10[7-10]	%
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		8-15,		20-30,		20-30,		40-50,	%
+		}
+	},
+	{
+		{
+			"Corvette"	--Corvette			Maneuverability: Low	Speed: Low	
+		},
+		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
+			{"SHIP_DAMAGE",				1,		1,		1,		1},			--			+		0[0.5-3],	3-8,		8-15,		15-30	%
+			{"SHIP_SHIELD",				1.5,	1.5,	1.5,	1.5},		--			+		18-30,		40-55,		60-75,		95-125	%
+			{"SHIP_HYPERDRIVE",			1.2,	1.2,	1.2,	1.2},		--			+		5-10,		8-15[10-20], 23-37,		45-58	%
+			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		0,			0-5,		5-10,		10-15,	%
 		}
 	},
 	{
@@ -341,13 +371,19 @@ ShipAgileChanges	=
 	},
 	{
 		{
+			"Corvette",				10,		13.3,	16.7,	20,			--			+		0,			0-5,		5-10,		10-15,	%
+		},
+		{"C", "B", "A", "S"}		
+	},
+	{
+		{
 			"Alien",				25,		33.3,	41.6,	50,			--			+		N/A,		N/A,		N/A,		10-15,	%
 		},
 		{"S"}			
 	},
 }
 
-ShipTypeSizes = {"SciSmall", "SciMedium", "SciLarge", "FgtSmall", "FgtMedium", "FgtLarge", "ShuSmall", "ShtMedium", "ShtLarge", "DrpSmall", "DrpMedium", "DrpLarge", "RoySmall", "RoyMedium", "RoyLarge", "AlienSmall", "AlienMedium", "AlienLarge", "SailSmall", "SailMedium", "SailLarge", "RobotSmall", "RobotMedium", "RobotLarge", "FreighterSmall", "FreighterMedium", "FreighterLarge"}
+ShipTypeSizes = {"SciSmall", "SciMedium", "SciLarge", "FgtSmall", "FgtMedium", "FgtLarge", "ShuSmall", "ShtMedium", "ShtLarge", "DrpSmall", "DrpMedium", "DrpLarge", "RoySmall", "RoyMedium", "RoyLarge", "AlienSmall", "AlienMedium", "AlienLarge", "SailSmall", "SailMedium", "SailLarge", "RobotSmall", "RobotMedium", "RobotLarge", "FreighterSmall", "FreighterMedium", "FreighterLarge", "Corvette"}
 
 ShipBounds = 
 {	--Maximum Width(X) and Height(Y) for the boundaries where slots can appear in inventories for Small(S), Medium(M), or Large(L) varieties of ships. By default, Supercharged slots within X=9, Y=2	(upper left slot is X=0, Y0)
@@ -391,10 +427,13 @@ ShipInitialSizeChanges	=
 	{"RobotSmall",				9,		13,			15,		22,			9,	2},			--	32,		40,			22,		28,			-1,	-1	Seems unused in-game by default?
 	{"RobotMedium",				9,		13,			15,		22,			9,	2},			--	32,		40,			22,		28,			-1,	-1	Seems unused in-game by default?
 	{"RobotLarge",				9,		13,			15,		22,			9,	2},			--	32,		40,			22,		28,			-1,	-1
+	{"Corvette",				13,		14,			16,		21,			9,	2},			--	40,		48,			20,		30,			9,	2
 	{"FreighterSmall",			17,		30,			8,		14,			9,	2},			--	15,		19,			8,		12,			9,	2	"Regular" Freighters
 	{"FreighterMedium",			28,		41,			13,		19,			9,	2},			--	24,		34,			12,		20,			9,	2	"Capital" Freighters
 	{"FreighterLarge",			39,		52,			18,		24,			9,	2},			--	35,		48,			18,		30,			9,	2	Unused in-game by default
 }
+
+DefaultCorvetteSlots = 15			--26		(the game adds +1 to this value)	Presumably default Cargo Slots on new Corvettes
 
 --Replacers for maximum UPGRADEABLE Inventory size for ships. NOT initial sizes for spawned ships.
 ShipUpgradeSizeChanges	=
@@ -411,6 +450,7 @@ ShipUpgradeSizeChanges	=
 			--{"Alien",							0,		0,		0,		30},		--				120,	120,	120,	120,		--Handled in LivingShipUpgradeSizeChanges section below
 			{"Sail",							17,		23,		29,		35},		--				50,		70,		90,		110,
 			{"Robot",							15,		20,		25,		30},		--				60,		80,		100,	120,
+			{"Corvette",						20,		25,		30,		35},		--				60,		80,		100,	120,
 			{"Freighter",						35,		45,		55,		65},		--				60,		80,		100,	120,
 			{"PlayerFreighter",					0,		0,		0,		0},			--				0,		0,		0,		0,			--Most likely PlayerFreighter is just some obsolete, unused data, but included for completeness
 		}
@@ -427,6 +467,7 @@ ShipUpgradeSizeChanges	=
 			--{"Alien",							0,		0,		0,		48},		--				60,		60,		60,		60,		--Handled in LivingShipUpgradeSizeChanges section below
 			{"Sail",							18,		24,		30,		40},		--				30,		40,		50,		60,
 			{"Robot",							18,		24,		30,		40},		--				30,		40,		50,		60,
+			{"Corvette",						30,		40,		50,		60},		--				30,		40,		50,		60,
 			{"Freighter",						18,		24,		30,		36},		--				30,		40,		50,		60,
 			{"PlayerFreighter",					0,		0,		0,		0},			--				0,		0,		0,		0},
 		},
@@ -617,6 +658,7 @@ CostChanges	=
 			{"Alien",				5,			70,			16,			30},		--Vanilla values are 5 mil,			70 mil,			25,	48		Catalogued at 2.98 mil	~	2.98mil		(2.98 mil)			22	~	22	general &	21	~	21	tech slots initially
 			{"Sail",				11.468,		424.182,	15,			45},		--Vanilla values are 2.2 mil,		11.1 mil,		19,	36		Catalogued at 1.00 mil	~	2.42mil		(2.2 mil)			15	~	19	general &	4	~	6	tech slots initially
 			{"Robot",				6,			48,			5,			15},		--Vanilla values are 4.2 mil,		34.5 mil,		19,	36		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially	Has CoolMultiplier of 20
+			{"Corvette",			5,			600,		15,			45},		--Vanilla values are 10 mil,		120 mil,		15,	48		Has CoolMultiplier of 20
 			{"Freighter",			18.097,		316.478,	15,			45},		--Vanilla values are 5 mil,			300 mil,		15,	48		Catalogued at 5 mil		~	23 mil  	(11.5 mil)			15	~	19	general &	3	~	6	tech slots initially for Regular,		26.15 mil	~	178 mil 	(89 mil) 24	~	34	general &	5	~	9	tech slots initially for Capital (Reg and Capital just Small and Medium size freighters)
 			{"PlayerFreighter",		18.097,		316.478,	15,			45}			--Vanilla values are 5 mil,			300 mil,		15,	48		Catalogued at 5 mil		~	23 mil  	(11.5 mil)			15	~	19	general &	3	~	6	tech slots initially for Regular,		26.15 mil	~	178 mil 	(89 mil) 24	~	34	general &	5	~	9	tech slots initially for Capital (Reg and Capital just Small and Medium size freighters)
 		}
@@ -667,6 +709,7 @@ CostClassModifierChanges =	--Replaces vanilla cost bonus at different Classes
 			{"Alien",					0,		0,		0,		300},				--Vanilla values are +		0,		0,		0,		0	%
 			{"Sail",					0,		50,		125,	300},				--Vanilla values are +		0,		10,		25,		50	%
 			{"Robot",					0,		25,		63,		150},				--Vanilla values are +		0,		10,		25,		50	%
+			{"Corvette",				0,		50,		125,	300},				--Vanilla values are +		0,		10,		25,		50	%
 			{"Freighter",				0,		50,		125,	300},				--Vanilla values are +		0,		40,		60,		100	%
 			{"PlayerFreighter",			0,		50,		125,	300},				--Vanilla values are +		0,		40,		60,		100	%
 		}
@@ -1196,7 +1239,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 					}
-				}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {"GCBUILDABLESHIPGLOBALS.GLOBAL.MBIN"},
+					["MXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"ShipLayout", "GcInventoryLayout"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Slots", DefaultCorvetteSlots}
+							}
+						},
+					}
+				},
             }
 		}
     }

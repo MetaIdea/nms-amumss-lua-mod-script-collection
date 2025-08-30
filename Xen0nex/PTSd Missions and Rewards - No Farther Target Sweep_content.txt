@@ -1,0 +1,49 @@
+This mod contains:
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Missions and Rewards - No Farther Target Sweep\PTSd Mission Adjustments.lua
+   MOD FILENAME: PTSd Mission Adjustments5_62.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Increases the amount of items required to complete certain 'Expanding the Base' quests, some quests no longer give certain blueprints as rewards.>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_62
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Missions and Rewards - No Farther Target Sweep\PTSd Rewards Remixer.lua
+   MOD FILENAME: PTSd Rewards Remixer6_00.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts.>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 6_00
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Missions and Rewards - No Farther Target Sweep\PTSd Settlement Rewards.lua
+   MOD FILENAME: PTSd Settlement Rewards5_73.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Rebalances settlement produced items by race & wealth, Increases cap on stored settlement rewards, and can optionally change settlement timers>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_73
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Missions and Rewards - No Farther Target Sweep\___MOD_BATCHNAME.lua
+   MOD FILENAME: PTSd Missions and Rewards - No Farther Target Sweep.pak
+   MOD BATCHNAME: PTSd Missions and Rewards - No Farther Target Sweep.pak
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 470

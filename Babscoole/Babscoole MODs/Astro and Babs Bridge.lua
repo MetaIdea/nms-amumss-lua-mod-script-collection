@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Astro and Babs Bridge",
 ["MOD_AUTHOR"]      = "AstronautInOrbit and Babscoole",
-["NMS_VERSION"]     = "5.75",
+["NMS_VERSION"]     = "6.00",
 ["MOD_DESCRIPTION"] = "Changes the design of freighter bridges.",
 ["MODIFICATIONS"]   =
     {
@@ -7062,6 +7062,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 { "TransZ", "-28.623486" },
                                 { "ScaleX", "1.300000" },
                                 { "ScaleZ", "1.300000" },
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "BIGGSPLATFORM_HOVERPAD_DOCK1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransX", "125.000000"},
+                                {"TransY", "75.000000"},
+                                {"TransZ", "-200.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "BIGGSPLATFORM_HOVERPAD_DOCK2"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransX", "-125.000000"},
+                                {"TransY", "75.000000"},
+                                {"TransZ", "-200.000000"},
                             }
                         },
                     }

@@ -1,0 +1,109 @@
+This mod contains:
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Miscellaneous\gBase Boundary 2k+FarwalkX.lua
+   MOD FILENAME: gBase Boundary 2k+FarwalkX 441a.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Gumsk
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Base boundary and wire length extensions, increases distance for initial walk to starship>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 441
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Miscellaneous\gBase Items BasicX.lua
+   MOD FILENAME: gBase Items BasicX 6_00a.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Gumsk
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Removes restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 6_00
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Miscellaneous\PTSd Asteroid Odds.lua
+   MOD FILENAME: PTSd Asteroid Odds5_63.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Changes the odds of a system having many rare asteroids with Platinum, and also the chances of different rewards from shooting asteroids>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_63
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Miscellaneous\PTSd Crops + Machine Speed.lua
+   MOD FILENAME: PTSd Crops + Machine Speed5_11.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Changes the growth time for a few farmable plants to make Albumen Pearls, Sac Venom, etc. more worthwhile. Also the carbon-powered mining & gas harvesters Note that the build menu UI does not accurately show the correct growth times.>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_11
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Miscellaneous\PTSd Fishing Tweaks.lua
+   MOD FILENAME: PTSd Fishing Tweaks5_57.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Changes certain aspects of fishing & baits.>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_57
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Miscellaneous\PTSd Higher Frigate Challenge.lua
+   MOD FILENAME: PTSd Higher Frigate Challenge5_57.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Makes Frigates more expensive to buy, and enables 4 star difficulty Frigate missions, and increases by 2~3x how many stat points needed to make a fleet of a particular Star ranking>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_57
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Miscellaneous\PTSd More Gas Giant Buildings.lua
+   MOD FILENAME: PTSd More Gas Giant Buildings5_60.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Allows more types of buildings & structures to spawn on Gas Giants>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_60
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Miscellaneous\PTSd UI Description Adjustments.lua
+   MOD FILENAME: PTSd UI Description Adjustments6_00.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 6_00
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Miscellaneous\___MOD_BATCHNAME_PTSD3.lua
+   MOD FILENAME: PTSd Miscellaneous.pak
+   MOD BATCHNAME: PTSd Miscellaneous.pak
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 470

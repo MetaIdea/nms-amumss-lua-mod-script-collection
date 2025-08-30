@@ -1,5 +1,5 @@
 ModName = "PTSd Black Holes + Scrapping etc"
-GameVersion = "5_61"
+GameVersion = "6_00"
 Description = "Black Holes send you farther, Adjusts Living Ship Module Evolution costs, Changes Illegal goods price markup, Adjust Death Penalty units cost, Replaces some of the substances you can receive from scrapping ships"
 
 --Controls how much of a bonus Supercharged Tech Slots give
@@ -64,6 +64,14 @@ NonNaturalCostMul =						0.5								--0.5			Presumably a multiplier on the trade
 --Sets some Freighter Rooms & most Freighter Storage Room recipes to be unknwon at the start of the game, to require unlocking at the Anomaly
 UnknownRecipes =						
 {"FRE_ROOM_SHOP", "FRE_ROOM_PLANT1", "FRE_ROOM_REFINE", "FRE_ROOM_STORE1", "FRE_ROOM_STORE2", "FRE_ROOM_STORE3", "FRE_ROOM_STORE4", "FRE_ROOM_STORE5", "FRE_ROOM_STORE6", "FRE_ROOM_STORE7", "FRE_ROOM_STORE8", "FRE_ROOM_STORE9"}
+--For blueprints which are only set as known in DIFFICULTYCONFIG.MBIN but not DEFAULTSAVEDATA.MBIN
+UnknownRecipesDiffOnly =
+{"B_WALL_TECH0", "B_WALL_PLAN0", "B_WALL_CARG0", "B_WALL_CARG1", "B_WALL_CARG2", "B_WALL_CARG3", "B_WALL_CARG4", "B_WALL_CARG5", "B_WALL_CARG6", "B_WALL_CARG7", "B_WALL_CARG8", "B_WALL_CARG9"}
+
+--Changes to non-Dreadnought freighter battles with pirates (possibly affects other space battles as well?)
+SpaceBattleRadius =						13500								--13500		Unclear, may be how far the play can be from a generic space battle before it is considered "inactive"?
+SpaceBattleAnyHostileShipsRadius =		10000								--10000		Unclear, may be how far the play can be from any hostile enemy ships before the related battle is considered "inactive"?
+FreighterBattleRadius =					5000								--5000		Unclear, may be how far the play can be from a freighter-pirate battle before it is considered "inactive"?
 
 --Changes to Pirate Dreadnought encounter
 TorpedoCooldown =						75									--75		Seems to be how long each Pirate Frigate must wait between firing Torpedos
@@ -150,6 +158,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"RewardInventoryClassItemFromShipSalvage", ClassItemFromShipSalvage},
 					{"MaxStandingTechDiscount", MaxStandingTechDiscount},
 					{"NonNaturalCostMul", NonNaturalCostMul},
+					{"SpaceBattleRadius", SpaceBattleRadius},
+					{"SpaceBattleAnyHostileShipsRadius", SpaceBattleAnyHostileShipsRadius},
+					{"FreighterBattleRadius", FreighterBattleRadius},
 					{"TorpedoCooldown", TorpedoCooldown},
 					{"TorpedoCooldownRandomExtra", TorpedoCooldownRandomExtra},
 					{"MaxTorpedoesInFlight", MaxTorpedoesInFlight},
@@ -275,6 +286,16 @@ local ChangesToDifficulty = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MB
 
 for i = 1, #UnknownRecipes do
 	local ContainerID = UnknownRecipes[i]
+		
+			ChangesToDifficulty[#ChangesToDifficulty+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"StartWithAllItemsKnownDisabledData", "GcDifficultyStartWithAllItemsKnownOptionData",	"IGNORE", ContainerID},
+				["REMOVE"] = "LINE"
+			}
+end
+
+for i = 1, #UnknownRecipesDiffOnly do
+	local ContainerID = UnknownRecipesDiffOnly[i]
 		
 			ChangesToDifficulty[#ChangesToDifficulty+1] =
 			{

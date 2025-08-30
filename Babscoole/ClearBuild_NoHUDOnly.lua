@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "ClearBuild_NoHUDOnly.pak",
 ["MOD_AUTHOR"]    = "PakMack",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.65",
+["NMS_VERSION"]   = "6.01",
 ["MODIFICATIONS"] =
     {
         {
@@ -38,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsHidden", "True"},
+                                {"Is Hidden", "true"},
                             }
                         },
                     }

@@ -1,0 +1,61 @@
+This mod contains:
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Missions and Rewards\PTSd Farther Target Sweep.lua
+   MOD FILENAME: PTSd Farther Target Sweep5_10.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Makes the distance between the 'Approximate Location' and final mission target using Target Sweep farther away.>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_10
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Missions and Rewards\PTSd Mission Adjustments.lua
+   MOD FILENAME: PTSd Mission Adjustments5_62.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Increases the amount of items required to complete certain 'Expanding the Base' quests, some quests no longer give certain blueprints as rewards.>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_62
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Missions and Rewards\PTSd Rewards Remixer.lua
+   MOD FILENAME: PTSd Rewards Remixer6_00.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts.>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 6_00
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Missions and Rewards\PTSd Settlement Rewards.lua
+   MOD FILENAME: PTSd Settlement Rewards5_73.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Rebalances settlement produced items by race & wealth, Increases cap on stored settlement rewards, and can optionally change settlement timers>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 5_73
+
+=====================
+Original information:
+    SCRIPT NAME: PTSd Missions and Rewards\___MOD_BATCHNAME_PTSD4.lua
+   MOD FILENAME: PTSd Missions and Rewards.pak
+   MOD BATCHNAME: PTSd Missions and Rewards.pak
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 470

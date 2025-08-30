@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "5_64"
+GameVersion = "6_00"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -120,6 +120,8 @@ ShipLootChanges =
 			{"TRA_CURIO1",			"TRA_CURIO1",			1,			1,			10.000000},				--"TRA_CURIO1",			1,			3,			40.000000
 			{"WAR_CURIO1",			"WAR_CURIO1",			1,			1,			10.000000},				--"WAR_CURIO1",			1,			3,			40.000000
 			{"EXP_CURIO1",			"EXP_CURIO1",			1,			1,			10.000000},				--"EXP_CURIO1",			1,			3,			40.000000
+			--{<One of 63 Corvette parts>,					1,			1,			33},					--<One of 63 Corvette parts>,	1,	1,			33	 Worth 236,694 units on average
+			--{<One of 26 Corvette parts>,					1,			1,			20},					--<One of 26 Corvette parts>,	1,	1,			20	 Worth 1,052,400 units on average
 		}
 	},
 	{	--Easy Pirates:	per destroyed ship containers	(Added by this mod)
@@ -132,6 +134,8 @@ ShipLootChanges =
 			{"TRA_CURIO1",			"TRA_CURIO1",			1,			1,			40.000000},				--"TRA_CURIO1",			1,			3,			40.000000
 			{"WAR_CURIO1",			"WAR_CURIO1",			1,			1,			40.000000},				--"WAR_CURIO1",			1,			3,			40.000000
 			{"EXP_CURIO1",			"EXP_CURIO1",			1,			1,			40.000000},				--"EXP_CURIO1",			1,			3,			40.000000
+			--{<One of 63 Corvette parts>,					1,			1,			33},					--<One of 63 Corvette parts>,	1,	1,			33	 Worth 236,694 units on average
+			--{<One of 26 Corvette parts>,					1,			1,			10},					--<One of 26 Corvette parts>,	1,	1,			10	 Worth 1,052,400 units on average
 		}
 	},
 	{	--Hard Pirates:	per destroyed ship containers	(Added by this mod)
@@ -141,6 +145,8 @@ ShipLootChanges =
 			{"SCRAP_TECH",			"SCRAP_TECH",			1,			2,			66.000000},				--"SCRAP_TECH",			1,			1,			100.000000
 			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			2,			66.000000},				--"SCRAP_WEAP",			1,			1,			100.000000
 			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100.000000},			--"SHIPCHARGE",			3,			3,			100.000000
+			--{<One of 63 Corvette parts>,					1,			1,			20},					--<One of 63 Corvette parts>,	1,	1,			20	 Worth 236,694 units on average
+			--{<One of 26 Corvette parts>,					1,			1,			30},					--<One of 26 Corvette parts>,	1,	1,			30	 Worth 1,052,400 units on average
 		}
 	},
 	{	--Sentinel Interceptors:	per destroyed ship containers
@@ -189,6 +195,8 @@ ShipLootChanges =
 			{"ILLEGAL_PROD5",		"FRIG_BOOST_SPD",		1,			1,			80.000000},				--"ILLEGAL_PROD5",		3,			6,			100.000000		(348,000 units sale value in PTSd)
 			{"ILLEGAL_PROD6",		"ILLEGAL_PROD6",		1,			3,			40.000000},				--"ILLEGAL_PROD6",		2,			4,			100.000000		(408,000 units sale value in PTSd)
 			{"ILLEGAL_PROD7",		"ILLEGAL_PROD7",		1,			2,			30.000000},				--"ILLEGAL_PROD7",		1,			2,			100.000000		(498,000 units sale value in PTSd)
+			--{<One of 26 Corvette parts>,					1,			1,			7},						--<One of 26 Corvette parts>,	1,	1,			7	 Worth 1,052,400 units on average
+			--{<One of 63 Corvette parts>,					1,			1,			15},					--<One of 63 Corvette parts>,	1,	1,			15	 Worth 236,694 units on average
 		}
 	},
 	{	--Freighter Cargo Pods
@@ -210,6 +218,8 @@ ShipLootChanges =
 			{"TRA_MINERALS3",		"TRA_MINERALS3",		16,			20,			100.000000},			--"TRA_MINERALS3",		8,			10,			100.000000
 			{"TRA_MINERALS2",		"FRIG_BOOST_SPD",		1,			1,			80.000000},				--"TRA_MINERALS2",		15,			25,			100.000000
 			{"TRA_TECH3",			"TRA_TECH3",			16,			20,			100.000000},			--"TRA_TECH3",			8,			10,			100.000000
+			--{<One of 26 Corvette parts>,					1,			1,			7},						--<One of 26 Corvette parts>,	1,	1,			7	 Worth 1,052,400 units on average
+			--{<One of 63 Corvette parts>,					1,			1,			15},					--<One of 63 Corvette parts>,	1,	1,			15	 Worth 236,694 units on average
 		}
 	},
 	{	--Reward for rescuing a Freighter from Pirates, unlike above you have the listed chance to receive ALL listed rewards
@@ -714,6 +724,8 @@ SpaceStationMissionLootChanges =
 			{"FOOD_J_SALT",				"ABAND_LOCATOR",		1,	1,		20},	--3,	6,		2		Food worth 1800		(Emergency Signal Scanner)
 			{"FOOD_ICE_FISH",			"MECH_PROD",			1,	3,		30},	--3,	6,		2		Food worth 36000	(Hardframe Engine)
 			{"FOOD_MM_APPLE",			"FOOD_MM_APPLE",		5,	10,		2},		--2,	5,		2		Food worth 149400
+			--{<One of 26 Corvette parts>,						1,	1,		7},		--1,	1,		7		<One of 26 Corvette parts>	 Worth 1,052,400 units on average
+			--{<One of 63 Corvette parts>,						1,	1,		15},	--1,	1,		15		<One of 63 Corvette parts>	 Worth 236,694 units on average
 		}
 	},
 	{
@@ -732,7 +744,7 @@ SpaceStationMissionLootChanges =
 			{"REPAIRKIT",				"REPAIRKIT",			3,	4,		4},		--3,	3,		3		Repair Kit
 			{"LAUNCHFUEL",				"LAUNCHFUEL",			2,	4,		1},		--4,	4,		1		Launch Fuel
 			{"GRENFUEL1",				"GRENFUEL1",			4,	4,		3},		--4,	4,		3		Unstable Plasma
-			{"FACT_TOKEN",				"FACT_TOKEN",			math.floor(1*FactoryOverrideTokenMult),	math.floor(1*FactoryOverrideTokenMult),		5},		--1,	1,		5		Salvaged Frigate Module
+			{"FACT_TOKEN",				"FACT_TOKEN",			math.floor(1*FactoryOverrideTokenMult),	math.floor(1*FactoryOverrideTokenMult),		5},		--1,	1,		5		Factory Override Unit
 			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	1,		5},		--1,	1,		5		Salvaged Frigate Module
 			{"POLICE_TOKEN",			"POLICE_TOKEN",			2,	2,		2},		--1,	1,		2		Defence Chit
 			{"BP_SALVAGE",				"BP_SALVAGE",			4,	6,		10},	--3,	5,		10		Salvaged Data
@@ -810,6 +822,277 @@ SpaceStationMissionLootChanges =
 			{"SHIP_CORE_B",				"SHIP_CORE_B",			1,	1,		0},		--1,	1,		4		B-Class Reactor
 			{"SHIP_CORE_A",				"SHIP_CORE_A",			1,	1,		0},		--1,	1,		2		A-Class Reactor
 			{"SHIP_CORE_S",				"SHIP_CORE_S",			1,	1,		0},		--1,	1,		1		S-Class Reactor
+			--{<One of 26 Corvette parts>,						1,	1,		7},		--1,	1,		7		<One of 26 Corvette parts>	 Worth 1,052,400 units on average
+			--{<One of 63 Corvette parts>,						1,	1,		15},	--1,	1,		15		<One of 63 Corvette parts>	 Worth 236,694 units on average
+		}
+	},
+	{
+		{"R_CV_LOW"},		--"Low" reward for Corvette missions / Mission Radar
+		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
+			{"HYPERFUEL2",				"HYPERFUEL2",			1,	2,		2},		--1,	2,		2		Warp Hypercore
+			{"LAUNCHFUEL",				"LAUNCHFUEL",			2,	2,		2},		--4,	4,		1		Launch Fuel
+			{"POLICE_TOKEN",			"POLICE_TOKEN",			1,	1,		7},		--1,	1,		2		Defence Chit
+			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		1,	3,		0},		--1,	3,		1		Frigate Fuel (200 tonnes)
+			{"FRIG_BOOST_TRA",			"FRIG_BOOST_TRA",		1,	1,		0},		--1,	1,		1		Mind Control Device
+			{"FRIG_BOOST_EXP",			"FRIG_BOOST_EXP",		1,	1,		0},		--1,	1,		1		Holographic Analyser
+			{"FRIG_BOOST_MIN",			"FRIG_BOOST_MIN",		1,	1,		0},		--1,	1,		1		Mineral Compressor
+			{"FRIG_BOOST_COM",			"FRIG_BOOST_COM",		1,	1,		0},		--1,	1,		1		Explosive Drones
+			{"FRIG_BOOST_SPD",			"FRIG_BOOST_SPD",		1,	1,		0},		--1,	1,		1		Fuel Oxidiser
+			{"POWERCELL",				"POWERCELL",			5,	10,		2},		--5,	5,		1		Ion Battery
+			{"PRODFUEL2",				"PRODFUEL2",			5,	10,		2},		--5,	5,		1		Life Support Gel
+			{"SHIPCHARGE",				"SHIPCHARGE",			6,	12,		2},		--5,	5,		1		Starshield Battery
+			{"EYEBALL",					"EYEBALL",				1,	3,		1},		--1,	3,		1		Hypnotic Eye
+			{"NIPNIPBUDS",				"NIPNIPBUDS",			3,	5,		0},		--1,	3,		1		NipNip Buds
+			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		3,	5,		1},		--1,	3,		1		Storm Crystal
+			{"FIENDCORE",				"FIENDCORE",			3,	5,		1},		--1,	3,		1		Larval Core
+			{"FISHCORE",				"FISHCORE",				3,	5,		1},		--1,	3,		1		Hadal Core
+			{"TRA_MINERALS3",			"TRA_MINERALS3",		10,	18,		0.2},	--3,	5,		1		Trade item worth 15000
+			{"TRA_TECH3",				"TRA_TECH3",			10,	18,		0.2},	--3,	5,		1		Trade item worth 15000
+			{"TRA_COMPONENT3",			"TRA_COMPONENT3",		10,	18,		0.2},	--3,	5,		1		Trade item worth 15000
+			{"TRA_ENERGY3",				"TRA_ENERGY3",			10,	18,		0.2},	--3,	5,		1		Trade item worth 15000
+			{"TRA_EXOTICS3",			"TRA_EXOTICS3",			10,	18,		0.2},	--3,	5,		1		Trade item worth 15000
+			{"TRA_COMMODITY3",			"TRA_COMMODITY3",		10,	18,		0.2},	--3,	5,		1		Trade item worth 15000
+			{"SPACEGUNK2",				"SPACEGUNK2",			500,1000,	1},		--100,	100,	1		Runaway Mould
+			{"FOOD_EGGPIE_GM",			"FOOD_EGGPIE_GM",		2,	3,		0.1},	--1,	1,		0.2		Food worth 102000
+			{"FOOD_CK_CACTUS",			"FOOD_CK_CACTUS",		4,	6,		0.1},	--1,	1,		0.2		Food worth 57800
+			{"FOOD_R_EYESTEW",			"FOOD_R_EYESTEW",		2,	3,		0.1},	--1,	1,		0.2		Food worth 90000
+			{"FOOD_ICE_GRAH",			"FOOD_ICE_GRAH",		4,	6,		0.1},	--1,	1,		0.2		Food worth 44000
+			{"FOOD_CG_JGLITCH",			"FOOD_CG_JGLITCH",		1,	1,		0.1},	--1,	1,		0.2		Food worth 80800
+			{"FOOD_CB_FCUST",			"FOOD_CB_FCUST",		2,	3,		0.1},	--1,	1,		0.2		Food worth 92300
+			{"FOOD_CB_SCUST",			"FOOD_CB_SCUST",		2,	3,		0.1},	--1,	1,		0.2		Food worth 92300
+			{"FOOD_CM_CHOC",			"FOOD_CM_CHOC",			2,	3,		0.1},	--1,	1,		0.2		Food worth 148000
+			{"FOOD_MM_CARM",			"FOOD_MM_CARM",			2,	3,		0.1},	--1,	1,		0.2		Food worth 128000
+			{"FOOD_CG_HONEY",			"FOOD_CG_HONEY",		4,	6,		0.1},	--1,	1,		0.2		Food worth 62200
+			{"FOOD_STEW_M_CH",			"FOOD_STEW_M_CH",		4,	6,		0.1},	--1,	1,		0.2		Food worth 36000
+			{"FOOD_PIE_CRABJ",			"FOOD_PIE_CRABJ",		4,	6,		0.1},	--1,	1,		0.2		Food worth 54000
+			{"FOOD_PIE_CRAB",			"FOOD_PIE_CRAB",		4,	6,		0.1},	--1,	1,		0.2		Food worth 40000
+			{"FOOD_DNUT_MEAT",			"FOOD_DNUT_MEAT",		4,	6,		0.1},	--1,	1,		0.2		Food worth 65000
+			{"FOOD_DNUT_AJAM",			"FOOD_DNUT_AJAM",		4,	6,		0.1},	--1,	1,		0.2		Food worth 70000
+			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		2},		--1,	1,		5		Storage Augmentation
+			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	1,		4},		--1,	1,		5		Multi-Tool Expansion Slot
+			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		1},		--1,	1,		5		Exosuit Expansion Slot
+			{"NAV_DATA",				"NAV_DATA",				3,	6,		3},		--2,	2,		3		Navigation Data
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		5},		--1,	1,		5		Exosuit Upgrade Chart
+			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	1,		1},		--1,	1,		2		Salvaged Frigate Module
+			{"REPAIRKIT",				"REPAIRKIT",			1,	2,		2},		--1,	1,		1		Repair Kit
+			{"BP_SALVAGE",				"BP_SALVAGE",			3,	5,		5},		--3,	5,		5		Salvaged Data
+		}
+	},
+	{
+		{"R_CV_MED"},		--"Medium" reward for Corvette missions / Mission Radar
+		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
+			{"HYPERFUEL2",				"HYPERFUEL2",			2,	3,		1},		--1,	2,		1		Warp Hypercore
+			{"LAUNCHFUEL",				"LAUNCHFUEL",			3,	3,		0.5},	--4,	4,		1		Launch Fuel
+			{"POLICE_TOKEN",			"POLICE_TOKEN",			1,	2,		5},		--1,	1,		1		Defence Chit
+			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		1,	3,		0},		--1,	3,		1		Frigate Fuel (200 tonnes)
+			{"FRIG_BOOST_TRA",			"FRIG_BOOST_TRA",		1,	1,		0.5},	--1,	1,		1		Mind Control Device
+			{"FRIG_BOOST_EXP",			"FRIG_BOOST_EXP",		1,	1,		0.5},	--1,	1,		1		Holographic Analyser
+			{"FRIG_BOOST_MIN",			"FRIG_BOOST_MIN",		1,	1,		0.5},	--1,	1,		1		Mineral Compressor
+			{"FRIG_BOOST_COM",			"FRIG_BOOST_COM",		1,	1,		0.5},	--1,	1,		1		Explosive Drones
+			{"FRIG_BOOST_SPD",			"FRIG_BOOST_SPD",		1,	1,		0.5},	--1,	1,		1		Fuel Oxidiser
+			{"POWERCELL",				"POWERCELL",			10,	15,		0.5},	--5,	15,		1		Ion Battery
+			{"PRODFUEL2",				"PRODFUEL2",			10,	15,		0.5},	--5,	15,		1		Life Support Gel
+			{"SHIPCHARGE",				"SHIPCHARGE",			8,	14,		1},		--5,	5,		1		Starshield Battery
+			{"EYEBALL",					"EYEBALL",				3,	5,		1},		--3,	5,		1		Hypnotic Eye
+			{"WALKER_PROD",				"MECH_PROD",			1,	1,		0.5},	--1,	1,		0.5		Walker Brain	(Hardframe Engine)
+			{"NIPNIPBUDS",				"NIPNIPBUDS",			5,	8,		0.5},	--3,	5,		1		NipNip Buds
+			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		5,	8,		1},		--5,	5,		1		Storm Crystal
+			{"FIENDCORE",				"FIENDCORE",			5,	8,		1},		--5,	5,		1		Larval Core
+			{"FISHCORE",				"FISHCORE",				5,	8,		1},		--5,	5,		1		Hadal Core
+			{"TRA_MINERALS4",			"TRA_MINERALS4",		14,	20,		0.2},	--3,	5,		1		Trade item worth 30000
+			{"TRA_TECH4",				"TRA_TECH4",			14,	20,		0.2},	--3,	5,		1		Trade item worth 30000
+			{"TRA_COMPONENT4",			"TRA_COMPONENT4",		14,	20,		0.2},	--3,	5,		1		Trade item worth 30000
+			{"TRA_ENERGY4",				"TRA_ENERGY4",			14,	20,		0.2},	--3,	5,		1		Trade item worth 30000
+			{"TRA_EXOTICS4",			"TRA_EXOTICS4",			14,	20,		0.2},	--3,	5,		1		Trade item worth 30000
+			{"TRA_COMMODITY4",			"TRA_COMMODITY4",		14,	20,		0.2},	--3,	5,		1		Trade item worth 30000
+			{"SPACEGUNK2",				"SPACEGUNK2",			100,100,	0},		--100,	100,	1		Runaway Mould
+			{"FOOD_EGGPIE_GM",			"FOOD_EGGPIE_GM",		4,	6,		0.1},	--1,	1,		0.2		Food worth 102000
+			{"FOOD_CK_CACTUS",			"FOOD_CK_CACTUS",		8,	12,		0.1},	--1,	1,		0.2		Food worth 57800
+			{"FOOD_R_EYESTEW",			"FOOD_R_EYESTEW",		4,	6,		0.1},	--1,	1,		0.2		Food worth 90000
+			{"FOOD_ICE_GRAH",			"FOOD_ICE_GRAH",		8,	12,		0.1},	--1,	1,		0.2		Food worth 44000
+			{"FOOD_CG_JGLITCH",			"FOOD_CG_JGLITCH",		1,	1,		0.1},	--1,	1,		0.2		Food worth 80800
+			{"FOOD_CB_FCUST",			"FOOD_CB_FCUST",		4,	6,		0.1},	--1,	1,		0.2		Food worth 92300
+			{"FOOD_CB_SCUST",			"FOOD_CB_SCUST",		4,	6,		0.1},	--1,	1,		0.2		Food worth 92300
+			{"FOOD_CM_CHOC",			"FOOD_CM_CHOC",			4,	6,		0.1},	--1,	1,		0.2		Food worth 148000
+			{"FOOD_MM_CARM",			"FOOD_MM_CARM",			4,	6,		0.1},	--1,	1,		0.2		Food worth 128000
+			{"FOOD_CG_HONEY",			"FOOD_CG_HONEY",		8,	12,		0.1},	--1,	1,		0.2		Food worth 62200
+			{"FOOD_STEW_M_CH",			"FOOD_STEW_M_CH",		8,	12,		0.1},	--1,	1,		0.2		Food worth 36000
+			{"FOOD_PIE_CRABJ",			"FOOD_PIE_CRABJ",		8,	12,		0.1},	--1,	1,		0.2		Food worth 54000
+			{"FOOD_PIE_CRAB",			"REACTION1",			5,	5,		2},		--1,	1,		0.2		Food worth 40000		(Thermic Condensate)
+			{"FOOD_DNUT_MEAT",			"REACTION2",			5,	5,		2},		--1,	1,		0.2		Food worth 65000		(Enriched Carbon)
+			{"FOOD_DNUT_AJAM",			"REACTION3",			5,	5,		2},		--1,	1,		0.2		Food worth 70000		(Nitrogen Salt)
+			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		4},		--1,	1,		6		Storage Augmentation
+			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	1,		5},		--1,	1,		6		Multi-Tool Expansion Slot
+			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		3},		--1,	1,		6		Exosuit Expansion Slot
+			{"NAV_DATA",				"NAV_DATA",				6,	8,		4},		--2,	4,		4		Navigation Data
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		5},		--1,	1,		6		Exosuit Upgrade Chart
+			{"REPAIRKIT",				"REPAIRKIT",			2,	3,		2},		--1,	2,		2		Repair Kit
+			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	1,		3},		--1,	1,		3		Salvaged Frigate Module
+			{"BP_SALVAGE",				"BP_SALVAGE",			6,	8,		6},		--3,	5,		6		Salvaged Data
+		}
+	},
+	{
+		{"R_CV_HIGH"},		--"High" reward for Corvette missions / Mission Radar
+		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
+			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},		--1,	1,		5		C-Class Reactor
+			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},		--1,	1,		3		C-Class Reactor
+			{"HYPERFUEL2",				"HYPERFUEL2",			3,	4,		1},		--1,	2,		2		Warp Hypercore
+			{"LAUNCHFUEL",				"POLICE_TOKEN",			2,	3,		2},		--4,	4,		1		Launch Fuel					(Defence Chit)
+			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		2,	3,		1},		--1,	3,		1		Frigate Fuel (200 tonnes)
+			{"FRIG_BOOST_TRA",			"FRIG_BOOST_TRA",		1,	2,		1},		--1,	1,		1		Mind Control Device
+			{"FRIG_BOOST_EXP",			"FRIG_BOOST_EXP",		1,	2,		1},		--1,	1,		1		Holographic Analyser
+			{"FRIG_BOOST_MIN",			"FRIG_BOOST_MIN",		1,	2,		1},		--1,	1,		1		Mineral Compressor
+			{"FRIG_BOOST_COM",			"FRIG_BOOST_COM",		1,	2,		1},		--1,	1,		1		Explosive Drones
+			{"FRIG_BOOST_SPD",			"FRIG_BOOST_SPD",		1,	2,		1},		--1,	1,		1		Fuel Oxidiser
+			{"POWERCELL",				"POWERCELL",			5,	15,		0},		--5,	15,		0.5		Ion Battery
+			{"PRODFUEL2",				"PRODFUEL2",			5,	15,		0},		--5,	15,		0.5		Life Support Gel
+			{"SHIPCHARGE",				"SHIPCHARGE",			12,	18,		0.5},	--5,	5,		1		Starshield Battery
+			{"EYEBALL",					"EYEBALL",				5,	8,		1},		--3,	5,		1		Hypnotic Eye
+			{"WALKER_PROD",				"WALKER_PROD",			1,	1,		1},		--1,	1,		1		Walker Brain
+			{"NIPNIPBUDS",				"NIPNIPBUDS",			10,	12,		1},		--3,	5,		1		NipNip Buds
+			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		10,	12,		1},		--10,	10,		1		Storm Crystal
+			{"FIENDCORE",				"FIENDCORE",			10,	12,		1},		--10,	10,		1		Larval Core
+			{"FISHCORE",				"FISHCORE",				10,	12,		1},		--10,	10,		1		Hadal Core
+			{"TRA_MINERALS5",			"TRA_MINERALS5",		12,	20,		0.2},	--3,	5,		1		Trade item worth 50000
+			{"TRA_TECH5",				"TRA_TECH5",			12,	20,		0.2},	--3,	5,		1		Trade item worth 50000
+			{"TRA_COMPONENT5",			"TRA_COMPONENT5",		12,	20,		0.2},	--3,	5,		1		Trade item worth 50000
+			{"TRA_ENERGY5",				"TRA_ENERGY5",			12,	20,		0.2},	--3,	5,		1		Trade item worth 50000
+			{"TRA_EXOTICS5",			"TRA_EXOTICS5",			12,	20,		0.2},	--3,	5,		1		Trade item worth 50000
+			{"TRA_COMMODITY5",			"TRA_COMMODITY5",		12,	20,		0.2},	--3,	5,		1		Trade item worth 50000
+			{"SPACEGUNK2",				"SPACEGUNK2",			100,100,	0},		--100,	100,	1		Runaway Mould
+			{"FOOD_EGGPIE_GM",			"FOOD_EGGPIE_GM",		5,	10,		0.3},	--1,	1,		0.2		Food worth 102000
+			{"FOOD_CK_CACTUS",			"FOOD_CK_CACTUS",		1,	1,		0.0},	--1,	1,		0.2		Food worth 57800
+			{"FOOD_R_EYESTEW",			"FOOD_R_EYESTEW",		1,	1,		0.0},	--1,	1,		0.2		Food worth 90000
+			{"FOOD_ICE_GRAH",			"FOOD_ICE_GRAH",		1,	1,		0.0},	--1,	1,		0.2		Food worth 44000
+			{"FOOD_CG_JGLITCH",			"FOOD_CG_JGLITCH",		1,	1,		0.0},	--1,	1,		0.2		Food worth 80800
+			{"FOOD_CB_FCUST",			"FOOD_CB_FCUST",		1,	1,		0.0},	--1,	1,		0.2		Food worth 92300
+			{"FOOD_CB_SCUST",			"FOOD_CB_SCUST",		1,	1,		0.0},	--1,	1,		0.2		Food worth 92300
+			{"FOOD_CM_CHOC",			"FOOD_CM_CHOC",			5,	10,		0.3},	--1,	1,		0.2		Food worth 148000
+			{"FOOD_MM_CARM",			"FOOD_MM_CARM",			5,	10,		0.3},	--1,	1,		0.2		Food worth 128000
+			{"FOOD_CG_HONEY",			"FOOD_CG_HONEY",		1,	1,		0.0},	--1,	1,		0.2		Food worth 62200
+			{"FOOD_STEW_M_CH",			"FOOD_STEW_M_CH",		1,	1,		0.0},	--1,	1,		0.2		Food worth 36000
+			{"FOOD_PIE_CRABJ",			"FOOD_PIE_CRABJ",		1,	1,		0.0},	--1,	1,		0.2		Food worth 54000
+			{"FOOD_PIE_CRAB",			"ABAND_LOCATOR",		1,	1,		1},		--1,	1,		0.2		Food worth 40000		(Emergency Signal Scanner)
+			{"FOOD_DNUT_MEAT",			"MECH_PROD",			1,	2,		1},		--1,	1,		0.2		Food worth 65000		(Hardframe Engine)
+			{"FOOD_DNUT_AJAM",			"FREI_INV_TOKEN",		1,	1,		1},		--1,	1,		0.2		Food worth 70000		(Freighter Bulkhead)
+			{"REACTION1",				"REACTION1",			5,	5,		0},		--5,	5,		3		Thermic Condensate
+			{"REACTION2",				"REACTION2",			5,	5,		0},		--5,	5,		3		Enriched Carbon
+			{"REACTION3",				"REACTION3",			5,	5,		0},		--5,	5,		3		Nitrogen Salt
+			{"COMPOUND1",				"COMPOUND1",			5,	5,		2},		--5,	5,		3		Organic Catalyst
+			{"COMPOUND2",				"COMPOUND2",			5,	5,		2},		--5,	5,		3		Semiconductor
+			{"COMPOUND3",				"COMPOUND3",			5,	5,		2},		--5,	5,		3		Hot Ice
+			{"COMPOUND4",				"COMPOUND4",			2,	3,		1},		--5,	5,		3		Fusion Accelerant
+			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	2,		6},		--1,	1,		5		Salvaged Frigate Module
+			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		6},		--1,	1,		6		Storage Augmentation
+			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	2,		3},		--1,	1,		6		Multi-Tool Expansion Slot
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	2,		3},		--1,	1,		7		Exosuit Upgrade Chart
+			{"REPAIRKIT",				"REPAIRKIT",			3,	4,		4},		--3,	3,		5		Repair Kit
+			{"BP_SALVAGE",				"BP_SALVAGE",			8,	12,		5},		--3,	5,		6		Salvaged Data
+			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		1},		--1,	1,		6		Exosuit Expansion Slot
+			{"NAV_DATA",				"NAV_DATA",				9,	12,		2},		--3,	5,		4		Navigation Data
+			--{<One of 26 Corvette parts>,						1,	1,		7},		--1,	1,		7		<One of 26 Corvette parts>	 Worth 1,052,400 units on average
+			--{<One of 63 Corvette parts>,						1,	1,		15},	--1,	1,		15		<One of 63 Corvette parts>	 Worth 236,694 units on average
+		}
+	},
+	{
+		{"R_CV_MEGA"},		--"Mega" reward for Corvette missions / Mission Radar
+		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
+			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},		--1,	1,		5		C-Class Reactor
+			{"SHIP_CORE_B",				"SHIP_CORE_B",			1,	1,		0},		--1,	1,		3		B-Class Reactor
+			{"SHIP_CORE_A",				"SHIP_CORE_A",			1,	1,		0},		--1,	1,		2		A-Class Reactor
+			{"SHIP_CORE_S",				"SHIP_CORE_S",			1,	1,		0},		--1,	1,		1		S-Class Reactor
+			{"HYPERFUEL2",				"HYPERFUEL2",			3,	4,		0},		--1,	2,		2		Warp Hypercore
+			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		3,	5,		1},		--1,	3,		1		Frigate Fuel (200 tonnes)
+			{"FRIG_BOOST_TRA",			"FRIG_BOOST_TRA",		2,	3,		1},		--1,	1,		1		Mind Control Device
+			{"FRIG_BOOST_EXP",			"FRIG_BOOST_EXP",		2,	3,		1},		--1,	1,		1		Holographic Analyser
+			{"FRIG_BOOST_MIN",			"FRIG_BOOST_MIN",		2,	3,		1},		--1,	1,		1		Mineral Compressor
+			{"FRIG_BOOST_COM",			"FRIG_BOOST_COM",		2,	3,		1},		--1,	1,		1		Explosive Drones
+			{"FRIG_BOOST_SPD",			"FRIG_BOOST_SPD",		2,	3,		1},		--1,	1,		1		Fuel Oxidiser
+			{"EYEBALL",					"EYEBALL",				8,	11,		0},		--3,	5,		1		Hypnotic Eye
+			{"WALKER_PROD",				"WALKER_PROD",			2,	3,		2},		--1,	1,		1		Walker Brain
+			{"NIPNIPBUDS",				"NIPNIPBUDS",			12,	15,		1},		--3,	5,		1		NipNip Buds
+			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		12,	15,		1},		--10,	10,		1		Storm Crystal
+			{"FIENDCORE",				"FIENDCORE",			12,	15,		1},		--10,	10,		1		Larval Core
+			{"FISHCORE",				"FISHCORE",				12,	15,		1},		--10,	10,		1		Hadal Core
+			{"TRA_MINERALS5",			"TRA_MINERALS5",		20,	28,		0.2},	--3,	5,		1		Trade item worth 50000
+			{"TRA_TECH5",				"TRA_TECH5",			20,	28,		0.2},	--3,	5,		1		Trade item worth 50000
+			{"TRA_COMPONENT5",			"TRA_COMPONENT5",		20,	28,		0.2},	--3,	5,		1		Trade item worth 50000
+			{"TRA_ENERGY5",				"TRA_ENERGY5",			20,	28,		0.2},	--3,	5,		1		Trade item worth 50000
+			{"TRA_EXOTICS5",			"TRA_EXOTICS5",			20,	28,		0.2},	--3,	5,		1		Trade item worth 50000
+			{"TRA_COMMODITY5",			"TRA_COMMODITY5",		20,	28,		0.2},	--3,	5,		1		Trade item worth 50000
+			{"SPACEGUNK2",				"SPACEGUNK2",			100,100,	0},		--100,	100,	1		Runaway Mould
+			{"FOOD_EGGPIE_GM",			"FOOD_EGGPIE_GM",		10,	15,		0.3},	--1,	1,		0.2		Food worth 102000
+			{"FOOD_CK_CACTUS",			"POLICE_TOKEN",			3,	4,		1},		--1,	1,		0.2		Food worth 57800		(Defence Chit)
+			{"FOOD_R_EYESTEW",			"FOOD_R_EYESTEW",		1,	1,		0.0},	--1,	1,		0.2		Food worth 90000
+			{"FOOD_ICE_GRAH",			"FOOD_ICE_GRAH",		1,	1,		0.0},	--1,	1,		0.2		Food worth 44000
+			{"FOOD_CG_JGLITCH",			"FOOD_CG_JGLITCH",		1,	1,		0.0},	--1,	1,		0.2		Food worth 80800
+			{"FOOD_CB_FCUST",			"FOOD_CB_FCUST",		1,	1,		0.0},	--1,	1,		0.2		Food worth 92300
+			{"FOOD_CB_SCUST",			"FOOD_CB_SCUST",		1,	1,		0.0},	--1,	1,		0.2		Food worth 92300
+			{"FOOD_CM_CHOC",			"FOOD_CM_CHOC",			10,	15,		0.3},	--1,	1,		0.2		Food worth 148000
+			{"FOOD_MM_CARM",			"FOOD_MM_CARM",			10,	15,		0.3},	--1,	1,		0.2		Food worth 128000
+			{"FOOD_CG_HONEY",			"FOOD_CG_HONEY",		1,	1,		0.0},	--1,	1,		0.2		Food worth 62200
+			{"FOOD_STEW_M_CH",			"FOOD_STEW_M_CH",		1,	1,		0.0},	--1,	1,		0.2		Food worth 36000
+			{"FOOD_PIE_CRABJ",			"FOOD_PIE_CRABJ",		1,	1,		0.0},	--1,	1,		0.2		Food worth 54000
+			{"FOOD_PIE_CRAB",			"ABAND_LOCATOR",		1,	1,		2},		--1,	1,		0.2		Food worth 40000		(Emergency Signal Scanner)
+			{"FOOD_DNUT_MEAT",			"MECH_PROD",			2,	3,		2},		--1,	1,		0.2		Food worth 65000		(Hardframe Engine)
+			{"FOOD_DNUT_AJAM",			"FREI_INV_TOKEN",		1,	1,		5},		--1,	1,		0.2		Food worth 70000		(Freighter Bulkhead)
+			{"MEGAPROD1",				"MEGAPROD1",			2,	3,		2},		--1,	1,		3		Portable Reactor
+			{"MEGAPROD2",				"MEGAPROD2",			2,	3,		2},		--1,	1,		3		Quantum Processor
+			{"MEGAPROD3",				"MEGAPROD3",			2,	3,		2},		--1,	1,		3		Cryogenic Chamber
+			{"COMPOUND6",				"COMPOUND6",			3,	5,		1},		--2,	3,		3		Cryo-Pump
+			{"COMPOUND5",				"COMPOUND5",			3,	5,		1},		--2,	3,		3		Superconductor
+			{"COMPOUND4",				"COMPOUND4",			3,	5,		1},		--2,	3,		3		Fusion Accelerant
+			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		3},		--1,	1,		4		Exosuit Expansion Slot
+			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	2,		7},		--1,	1,		7		Storage Augmentation
+			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		2,	2,		2},		--1,	1,		7		Multi-Tool Expansion Slot
+			{"FRIG_TOKEN",				"FRIG_TOKEN",			2,	2,		7},		--1,	1,		6		Salvaged Frigate Module
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		2,	2,		0},		--1,	1,		6		Exosuit Upgrade Chart
+			{"REPAIRKIT",				"REPAIRKIT",			4,	5,		2},		--3,	3,		6		Repair Kit
+			{"BP_SALVAGE",				"BP_SALVAGE",			10,	14,		5},		--3,	5,		5		Salvaged Data
+			{"NAV_DATA",				"NAV_DATA",				16,	16,		2},		--5,	5,		4		Navigation Data
+			--{<One of 26 Corvette parts>,						1,	1,		7},		--1,	1,		7		<One of 26 Corvette parts> Worth 1,052,400 units on average
+			--{<One of 63 Corvette parts>,						1,	1,		15},	--1,	1,		15		<One of 63 Corvette parts> Worth 236,694 units on average
+		}
+	},
+	{
+		{"R_CVBOARD_MED"},		--Presumably additional / alternative reward for Corvette missions / Mission Radar?
+		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
+			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},		--1,	1,		3		C-Class Reactor
+			{"SHIP_CORE_B",				"SHIP_CORE_B",			1,	1,		0},		--1,	1,		3		B-Class Reactor
+			{"SENTFREI_PROD",			"SENTFREI_PROD",		1,	1,		1},		--1,	1,		3		Carrier AI Fragment
+			{"HYPERFUEL2",				"HYPERFUEL2",			1,	2,		5},		--1,	2,		10		Warp Hypercore
+			{"REPAIRKIT",				"REPAIRKIT",			3,	4,		4},		--3,	3,		3		Repair Kit
+			{"LAUNCHFUEL",				"LAUNCHFUEL",			2,	4,		1},		--4,	4,		1		Launch Fuel
+			{"GRENFUEL1",				"GRENFUEL1",			4,	4,		3},		--4,	4,		3		Unstable Plasma
+			{"FACT_TOKEN",				"FACT_TOKEN",			math.floor(1*FactoryOverrideTokenMult),	math.floor(1*FactoryOverrideTokenMult),		5},		--1,	1,		5		Factory Override Unit
+			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	1,		5},		--1,	1,		5		Salvaged Frigate Module
+			{"POLICE_TOKEN",			"POLICE_TOKEN",			2,	2,		2},		--1,	1,		2		Defence Chit
+			{"BP_SALVAGE",				"BP_SALVAGE",			4,	6,		10},	--3,	5,		10		Salvaged Data
+			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		1,	3,		1},		--1,	3,		5		Frigate Fuel (200 tonnes)
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		3},		--1,	1,		3		Exosuit Upgrade Chart
+			{"FRIG_BOOST_TRA",			"FRIG_BOOST_TRA",		1,	2,		2},		--1,	1,		2		Mind Control Device
+			{"FRIG_BOOST_EXP",			"FRIG_BOOST_EXP",		1,	2,		2},		--1,	1,		2		Holographic Analyser
+			{"FRIG_BOOST_MIN",			"FRIG_BOOST_MIN",		1,	2,		2},		--1,	1,		2		Mineral Compressor
+			{"FRIG_BOOST_COM",			"FRIG_BOOST_COM",		1,	2,		2},		--1,	1,		2		Explosive Drones
+			{"FRIG_BOOST_SPD",			"FRIG_BOOST_SPD",		1,	2,		2},		--1,	1,		2		Fuel Oxidiser
+			{"POWERCELL",				"POWERCELL",			5,	15,		0.5},	--5,	15,		10		Ion Battery
+			{"PRODFUEL2",				"PRODFUEL2",			5,	15,		0.5},	--5,	15,		10		Life Support Gel
+			{"SHIPCHARGE",				"SHIPCHARGE",			10,	15,		3},		--5,	5,		3.5		Starshield Battery
+			{"EYEBALL",					"EYEBALL",				4,	6,		5},		--3,	5,		5		Hypnotic Eye
+			{"WALKER_PROD",				"WALKER_PROD",			1,	1,		1},		--1,	1,		3		Walker Brain
+			{"NIPNIPBUDS",				"NIPNIPBUDS",			4,	8,		5},		--3,	5,		5		NipNip Buds
+			{"FARMPROD1",				"FARMPROD1",			3,	5,		1},		--3,	5,		1		Acid
+			{"FARMPROD2",				"FARMPROD2",			3,	5,		1},		--3,	5,		1		Lubricant
+			{"FARMPROD4",				"FARMPROD4",			3,	5,		1},		--3,	5,		1		Heat Capacitor
+			{"FARMPROD5",				"FARMPROD5",			3,	5,		1},		--3,	5,		1		Poly Fibre
+			{"FARMPROD6",				"FARMPROD6",			3,	5,		1},		--3,	5,		1		Unstable Gel
+			{"FARMPROD7",				"FARMPROD7",			1,	1,		5},		--1,	1,		5		Liquid Explosive
+			{"FARMPROD8",				"FARMPROD8",			1,	1,		5},		--1,	1,		5		Living Glass
+			{"FARMPROD9",				"FARMPROD9",			1,	1,		5},		--1,	1,		5		Circuit Board
+			{"SPEC_FIREWORK01",			"SPEC_FIREWORK01",		5,	5,		1},		--5,	5,		1		Blue Firework
+			{"SPEC_FIREWORK02",			"SPEC_FIREWORK02",		5,	5,		1},		--5,	5,		1		Red Firework
+			{"SPEC_FIREWORK03",			"SPEC_FIREWORK03",		5,	5,		1},		--5,	5,		1		Green Firework
+			{"TECH_COMP",				"TECH_COMP",			5,	15,		5},		--5,	15,		5		Wiring Loom
 		}
 	},
 }
@@ -1041,6 +1324,7 @@ PTSdFreiUpgrClassChances =			--Only has an effect if UsePTSdFreiUpgradeClassChan
 TaintedMetalMult =						3						--1		Multiplier to all rewards of Tainted Metal (to balance out the increased price of Suspicious Packets when buying from Scrap Dealers)
 ScrapTaintIgnoreNatResSetting =			"true"					--"false"	Set to "true" to make the Tainted Metal reward from Scrap Dealers for turning in Crew Manifests / Captain's Logs be a set amount that ignores the in-game "Natural Resources" Difficulty Setting (e.g. if set to "false" on the Standard setting it will multiply the reward  amounts by 0.8x)
 DerelictNaniteRewardMult =				3						--1		Multiplier applied to the 400-600 nanites awarded if choosing the nanite reward at the end of a Derelict Freighter
+DerelictGoodCorvChance =				100						--60		Chance to get one of the "good" 26 Corvette parts in addition to 2-3 of the "OK" 63 Corvette parts at the end of a Derelict Freighter
 
 --Replacers for how much Standing is awarded for turning over Derelict Freighter Crew Manifest / Captain's Log to Guild Envoys instead of Scrap Dealers
 CrewManGuildStand =						4						--2
@@ -1383,13 +1667,19 @@ PillarGlassMax			=	1			--1
 SentGunChance			=	10			--20
 SentSuitChance			=	10			--20
 
---% Chance to receive Sentinel Boundary Map
-SalvageSentMapChance	=	5			--10		Chance from destroying Salvageable Scrap
---% Chance for for each Protective Casing surrounding a Salvageable Scrap core to yield an additional procedural Scrap item when destroyed
-ExtraScrapChance		=	33.000000	--0			I'm assuming on average there are around ~3 Protective Casings per Scrap Core
---Changes substance & amount yielded from destroying the "shielding" components surrounding Salvageable Scrap
+--% Chance to receive various items from the core of a Salvageable Scrap node (can receive all items simultaneously if lucky)
+SalvageSentMapChance	=	5			--10		Chance for Sentinel Boundary Map
+ScrapCoreScrapChance	=	40			--40		Chance for procedural Scrap loot item
+ScrapCoreGoodCorvChance	=	24			--40		Chance for one of 26 "good" Corvette parts, worth 1,052,400 units on average
+ScrapCoreOKCorvChance	=	100			--100		Chance for one of 63 "OK" Corvette parts, worth 237,000 units on average
+
+--Changes substance & amount yielded from destroying the Protective Casing components surrounding a Salvageable Scrap core
 SalvageScrapSubstance	=	"SPACEGUNK3"	--"LAND1"	
 SalvageScrapSubAmountMult	=	0.33	--Applies multiplier to vanilla amount of 15-30
+--% Chance to receive various additional items from each Protective Casing surrounding the core of a Salvageable Scrap node (can receive all items simultaneously if lucky)  (I'm assuming on average there are around ~3 Protective Casings per Scrap Core)
+ScrapCaseGoodCorvChance	=	0.03		--20		Chance for one of 26 "good" Corvette parts, worth 1,052,400 units on average
+ScrapCaseOKCorvChance	=	0.06		--33		Chance for one of 63 "OK" Corvette parts, worth 237,000 units on average
+ExtraScrapChance		=	0			--0			Chance for an additional procedural Scrap item
 
 --% Chance to receive Echo Locators from various sources
 SpiderMapChance			=	20			--7			Chance to drop from the large Arachnid Sentinels
@@ -1676,6 +1966,8 @@ CrashedFreighterLootChances =
 			{"COMPOUND5",				1},						--1			Superconductor
 			{"COMPOUND6",				1},						--1			Cryo-Pump
 			{"COMPOUND3",				3},						--3			Hot Ice
+			--{<One of 26 Corvette parts>,	7},					--7			<One of 26 Corvette parts>	Worth 1,052,400 units on average
+			--{<One of 63 Corvette parts>,	15},				--15		<One of 63 Corvette parts>	Worth 236,694 units on average
 		}
 	},
 	{
@@ -2397,6 +2689,123 @@ PIRATLTEASYRewards =
 			  </Property>
             </Property>
           </Property>
+		  <Property name="List" value="GcRewardTableItem">
+				<Property name="PercentageChance" value="33.000000" />
+				<Property name="LabelID" value="" />
+				<Property name="Reward" value="GcRewardSpecificProductFromList">
+					<Property name="GcRewardSpecificProductFromList">
+						<Property name="ProductList">
+							<Property name="ProductList" value="B_WNG_E" _index="0" />
+							<Property name="ProductList" value="B_WNG_G" _index="1" />
+							<Property name="ProductList" value="B_WNG_J" _index="2" />
+							<Property name="ProductList" value="B_WNG_K" _index="3" />
+							<Property name="ProductList" value="B_WNG_M" _index="4" />
+							<Property name="ProductList" value="B_WNG_N" _index="5" />
+							<Property name="ProductList" value="B_WNG_O_0" _index="6" />
+							<Property name="ProductList" value="B_WNG_O_1" _index="7" />
+							<Property name="ProductList" value="B_WNG_O_2" _index="8" />
+							<Property name="ProductList" value="B_STR_A_NE" _index="9" />
+							<Property name="ProductList" value="B_STR_B_NE" _index="10" />
+							<Property name="ProductList" value="B_STR_B_N" _index="11" />
+							<Property name="ProductList" value="B_STR_C_N" _index="12" />
+							<Property name="ProductList" value="B_STR_D_NE" _index="13" />
+							<Property name="ProductList" value="B_STR_D_N" _index="14" />
+							<Property name="ProductList" value="B_STR_E_NE" _index="15" />
+							<Property name="ProductList" value="B_STR_E_N" _index="16" />
+							<Property name="ProductList" value="B_STR_F_NE" _index="17" />
+							<Property name="ProductList" value="B_STR_F_N" _index="18" />
+							<Property name="ProductList" value="B_STR_G_NE" _index="19" />
+							<Property name="ProductList" value="B_STR_G_N" _index="20" />
+							<Property name="ProductList" value="B_STR_H_NE" _index="21" />
+							<Property name="ProductList" value="B_STR_H_N" _index="22" />
+							<Property name="ProductList" value="B_STR_I_NE" _index="23" />
+							<Property name="ProductList" value="B_STR_I_N" _index="24" />
+							<Property name="ProductList" value="B_STR_J_NE" _index="25" />
+							<Property name="ProductList" value="B_STR_J_N" _index="26" />
+							<Property name="ProductList" value="B_STR_K_NE" _index="27" />
+							<Property name="ProductList" value="B_STR_K_N" _index="28" />
+							<Property name="ProductList" value="B_STR_L_NE" _index="29" />
+							<Property name="ProductList" value="B_STR_L_N" _index="30" />
+							<Property name="ProductList" value="B_STR_M_N" _index="31" />
+							<Property name="ProductList" value="B_STR_N_N" _index="32" />
+							<Property name="ProductList" value="B_STR_O_N" _index="33" />
+							<Property name="ProductList" value="B_STR_Q_N" _index="34" />
+							<Property name="ProductList" value="B_STR_P_N" _index="35" />
+							<Property name="ProductList" value="B_STR_R_N" _index="36" />
+							<Property name="ProductList" value="B_STR_S_N" _index="37" />
+							<Property name="ProductList" value="B_DECO_B" _index="38" />
+							<Property name="ProductList" value="B_DECO_C" _index="39" />
+							<Property name="ProductList" value="B_DECO_D" _index="40" />
+							<Property name="ProductList" value="B_DECO_E" _index="41" />
+							<Property name="ProductList" value="B_DECO_F" _index="42" />
+							<Property name="ProductList" value="B_DECO_G" _index="43" />
+							<Property name="ProductList" value="B_DECO_H" _index="44" />
+							<Property name="ProductList" value="B_DECO_J" _index="45" />
+							<Property name="ProductList" value="B_DECO_K" _index="46" />
+							<Property name="ProductList" value="B_DECO_L" _index="47" />
+							<Property name="ProductList" value="B_DECO_N_0" _index="48" />
+							<Property name="ProductList" value="B_DECO_N_1" _index="49" />
+							<Property name="ProductList" value="B_DECO_O" _index="50" />
+							<Property name="ProductList" value="B_CON_L_0" _index="51" />
+							<Property name="ProductList" value="B_CON_L_1" _index="52" />
+							<Property name="ProductList" value="B_CON_L_3" _index="53" />
+							<Property name="ProductList" value="B_CON_5" _index="54" />
+							<Property name="ProductList" value="B_CON_6" _index="55" />
+							<Property name="ProductList" value="B_CON_7" _index="56" />
+							<Property name="ProductList" value="B_CON_8" _index="57" />
+							<Property name="ProductList" value="B_CON_9" _index="58" />
+							<Property name="ProductList" value="B_CON2_0" _index="59" />
+							<Property name="ProductList" value="B_CON2_1" _index="60" />
+							<Property name="ProductList" value="B_CON2_2" _index="61" />
+							<Property name="ProductList" value="B_CON2_3" _index="62" />
+						</Property>
+						<Property name="AmountMin" value="1" />
+						<Property name="AmountMax" value="1" />
+						<Property name="ForceSpecialMessage" value="false" />
+						<Property name="IncrementGlobalStatOnSuccess" value="BIGGS_PART_GOT" />
+					</Property>
+				</Property>
+			</Property>
+			<Property name="List" value="GcRewardTableItem">
+				<Property name="PercentageChance" value="10.000000" />
+				<Property name="LabelID" value="" />
+				<Property name="Reward" value="GcRewardSpecificProductFromList">
+					<Property name="GcRewardSpecificProductFromList">
+						<Property name="ProductList">
+							<Property name="ProductList" value="B_COK_A" _index="0" />
+							<Property name="ProductList" value="B_COK_B" _index="1" />
+							<Property name="ProductList" value="B_HAB_A" _index="2" />
+							<Property name="ProductList" value="B_HAB_C" _index="3" />
+							<Property name="ProductList" value="B_HAB1_A" _index="4" />
+							<Property name="ProductList" value="B_HAB1_B" _index="5" />
+							<Property name="ProductList" value="B_HAB1_C" _index="6" />
+							<Property name="ProductList" value="B_WNG_A" _index="7" />
+							<Property name="ProductList" value="B_WNG_B" _index="8" />
+							<Property name="ProductList" value="B_WNG_D" _index="9" />
+							<Property name="ProductList" value="B_WNG_F" _index="10" />
+							<Property name="ProductList" value="B_WNG_L" _index="11" />
+							<Property name="ProductList" value="B_TRU_A" _index="12" />
+							<Property name="ProductList" value="B_TRU_B" _index="13" />
+							<Property name="ProductList" value="B_TRU_C" _index="14" />
+							<Property name="ProductList" value="B_GEN_0" _index="15" />
+							<Property name="ProductList" value="B_GEN_2" _index="16" />
+							<Property name="ProductList" value="B_GEN_3" _index="17" />
+							<Property name="ProductList" value="B_TUR_C" _index="18" />
+							<Property name="ProductList" value="B_DECO_I" _index="19" />
+							<Property name="ProductList" value="B_LND_B" _index="20" />
+							<Property name="ProductList" value="B_ALK_B" _index="21" />
+							<Property name="ProductList" value="B_ALK_C" _index="22" />
+							<Property name="ProductList" value="B_SHL_A" _index="23" />
+							<Property name="ProductList" value="B_SHL_B" _index="24" />
+							<Property name="ProductList" value="B_SHL_C" _index="25" />
+						</Property>
+						<Property name="AmountMin" value="1" />
+						<Property name="AmountMax" value="1" />
+						<Property name="ForceSpecialMessage" value="false" />
+						<Property name="IncrementGlobalStatOnSuccess" value="BIGGS_PART_GOT" />
+					</Property>
+				</Property>
+			</Property>
         </Property>
       </Property>
     </Property>]]
@@ -2524,6 +2933,123 @@ PIRATLTHARDRewards =
 			  </Property>
             </Property>
           </Property>
+		  <Property name="List" value="GcRewardTableItem">
+				<Property name="PercentageChance" value="20.000000" />
+				<Property name="LabelID" value="" />
+				<Property name="Reward" value="GcRewardSpecificProductFromList">
+					<Property name="GcRewardSpecificProductFromList">
+						<Property name="ProductList">
+							<Property name="ProductList" value="B_WNG_E" _index="0" />
+							<Property name="ProductList" value="B_WNG_G" _index="1" />
+							<Property name="ProductList" value="B_WNG_J" _index="2" />
+							<Property name="ProductList" value="B_WNG_K" _index="3" />
+							<Property name="ProductList" value="B_WNG_M" _index="4" />
+							<Property name="ProductList" value="B_WNG_N" _index="5" />
+							<Property name="ProductList" value="B_WNG_O_0" _index="6" />
+							<Property name="ProductList" value="B_WNG_O_1" _index="7" />
+							<Property name="ProductList" value="B_WNG_O_2" _index="8" />
+							<Property name="ProductList" value="B_STR_A_NE" _index="9" />
+							<Property name="ProductList" value="B_STR_B_NE" _index="10" />
+							<Property name="ProductList" value="B_STR_B_N" _index="11" />
+							<Property name="ProductList" value="B_STR_C_N" _index="12" />
+							<Property name="ProductList" value="B_STR_D_NE" _index="13" />
+							<Property name="ProductList" value="B_STR_D_N" _index="14" />
+							<Property name="ProductList" value="B_STR_E_NE" _index="15" />
+							<Property name="ProductList" value="B_STR_E_N" _index="16" />
+							<Property name="ProductList" value="B_STR_F_NE" _index="17" />
+							<Property name="ProductList" value="B_STR_F_N" _index="18" />
+							<Property name="ProductList" value="B_STR_G_NE" _index="19" />
+							<Property name="ProductList" value="B_STR_G_N" _index="20" />
+							<Property name="ProductList" value="B_STR_H_NE" _index="21" />
+							<Property name="ProductList" value="B_STR_H_N" _index="22" />
+							<Property name="ProductList" value="B_STR_I_NE" _index="23" />
+							<Property name="ProductList" value="B_STR_I_N" _index="24" />
+							<Property name="ProductList" value="B_STR_J_NE" _index="25" />
+							<Property name="ProductList" value="B_STR_J_N" _index="26" />
+							<Property name="ProductList" value="B_STR_K_NE" _index="27" />
+							<Property name="ProductList" value="B_STR_K_N" _index="28" />
+							<Property name="ProductList" value="B_STR_L_NE" _index="29" />
+							<Property name="ProductList" value="B_STR_L_N" _index="30" />
+							<Property name="ProductList" value="B_STR_M_N" _index="31" />
+							<Property name="ProductList" value="B_STR_N_N" _index="32" />
+							<Property name="ProductList" value="B_STR_O_N" _index="33" />
+							<Property name="ProductList" value="B_STR_Q_N" _index="34" />
+							<Property name="ProductList" value="B_STR_P_N" _index="35" />
+							<Property name="ProductList" value="B_STR_R_N" _index="36" />
+							<Property name="ProductList" value="B_STR_S_N" _index="37" />
+							<Property name="ProductList" value="B_DECO_B" _index="38" />
+							<Property name="ProductList" value="B_DECO_C" _index="39" />
+							<Property name="ProductList" value="B_DECO_D" _index="40" />
+							<Property name="ProductList" value="B_DECO_E" _index="41" />
+							<Property name="ProductList" value="B_DECO_F" _index="42" />
+							<Property name="ProductList" value="B_DECO_G" _index="43" />
+							<Property name="ProductList" value="B_DECO_H" _index="44" />
+							<Property name="ProductList" value="B_DECO_J" _index="45" />
+							<Property name="ProductList" value="B_DECO_K" _index="46" />
+							<Property name="ProductList" value="B_DECO_L" _index="47" />
+							<Property name="ProductList" value="B_DECO_N_0" _index="48" />
+							<Property name="ProductList" value="B_DECO_N_1" _index="49" />
+							<Property name="ProductList" value="B_DECO_O" _index="50" />
+							<Property name="ProductList" value="B_CON_L_0" _index="51" />
+							<Property name="ProductList" value="B_CON_L_1" _index="52" />
+							<Property name="ProductList" value="B_CON_L_3" _index="53" />
+							<Property name="ProductList" value="B_CON_5" _index="54" />
+							<Property name="ProductList" value="B_CON_6" _index="55" />
+							<Property name="ProductList" value="B_CON_7" _index="56" />
+							<Property name="ProductList" value="B_CON_8" _index="57" />
+							<Property name="ProductList" value="B_CON_9" _index="58" />
+							<Property name="ProductList" value="B_CON2_0" _index="59" />
+							<Property name="ProductList" value="B_CON2_1" _index="60" />
+							<Property name="ProductList" value="B_CON2_2" _index="61" />
+							<Property name="ProductList" value="B_CON2_3" _index="62" />
+						</Property>
+						<Property name="AmountMin" value="1" />
+						<Property name="AmountMax" value="1" />
+						<Property name="ForceSpecialMessage" value="false" />
+						<Property name="IncrementGlobalStatOnSuccess" value="BIGGS_PART_GOT" />
+					</Property>
+				</Property>
+			</Property>
+			<Property name="List" value="GcRewardTableItem">
+				<Property name="PercentageChance" value="30.000000" />
+				<Property name="LabelID" value="" />
+				<Property name="Reward" value="GcRewardSpecificProductFromList">
+					<Property name="GcRewardSpecificProductFromList">
+						<Property name="ProductList">
+							<Property name="ProductList" value="B_COK_A" _index="0" />
+							<Property name="ProductList" value="B_COK_B" _index="1" />
+							<Property name="ProductList" value="B_HAB_A" _index="2" />
+							<Property name="ProductList" value="B_HAB_C" _index="3" />
+							<Property name="ProductList" value="B_HAB1_A" _index="4" />
+							<Property name="ProductList" value="B_HAB1_B" _index="5" />
+							<Property name="ProductList" value="B_HAB1_C" _index="6" />
+							<Property name="ProductList" value="B_WNG_A" _index="7" />
+							<Property name="ProductList" value="B_WNG_B" _index="8" />
+							<Property name="ProductList" value="B_WNG_D" _index="9" />
+							<Property name="ProductList" value="B_WNG_F" _index="10" />
+							<Property name="ProductList" value="B_WNG_L" _index="11" />
+							<Property name="ProductList" value="B_TRU_A" _index="12" />
+							<Property name="ProductList" value="B_TRU_B" _index="13" />
+							<Property name="ProductList" value="B_TRU_C" _index="14" />
+							<Property name="ProductList" value="B_GEN_0" _index="15" />
+							<Property name="ProductList" value="B_GEN_2" _index="16" />
+							<Property name="ProductList" value="B_GEN_3" _index="17" />
+							<Property name="ProductList" value="B_TUR_C" _index="18" />
+							<Property name="ProductList" value="B_DECO_I" _index="19" />
+							<Property name="ProductList" value="B_LND_B" _index="20" />
+							<Property name="ProductList" value="B_ALK_B" _index="21" />
+							<Property name="ProductList" value="B_ALK_C" _index="22" />
+							<Property name="ProductList" value="B_SHL_A" _index="23" />
+							<Property name="ProductList" value="B_SHL_B" _index="24" />
+							<Property name="ProductList" value="B_SHL_C" _index="25" />
+						</Property>
+						<Property name="AmountMin" value="1" />
+						<Property name="AmountMax" value="1" />
+						<Property name="ForceSpecialMessage" value="false" />
+						<Property name="IncrementGlobalStatOnSuccess" value="BIGGS_PART_GOT" />
+					</Property>
+				</Property>
+			</Property>
         </Property>
       </Property>
     </Property>]]
@@ -2862,11 +3388,11 @@ SalvageExoticPuzzle =
           </Property>
           <Property name="TitleOverride" value="" />
 		  <Property name="SkipStraightToOptionsOnNextPuzzle" value="false" />
-          <Property name="EnablingConditionTest" value="GcMissionConditionTest">
+          <Property name="DisablingConditionTest" value="GcMissionConditionTest">
             <Property name="ConditionTest" value="AnyFalse" />
           </Property>
-          <Property name="EnablingConditions" />
-          <Property name="EnablingConditionId" value="" />
+          <Property name="DisablingConditions" />
+          <Property name="DisablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum">
             <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
@@ -2906,11 +3432,11 @@ SalvageShuttlePuzzle =
           </Property>
           <Property name="TitleOverride" value="" />
 		  <Property name="SkipStraightToOptionsOnNextPuzzle" value="false" />
-          <Property name="EnablingConditionTest" value="GcMissionConditionTest">
+          <Property name="DisablingConditionTest" value="GcMissionConditionTest">
             <Property name="ConditionTest" value="AnyFalse" />
           </Property>
-          <Property name="EnablingConditions" />
-          <Property name="EnablingConditionId" value="" />
+          <Property name="DisablingConditions" />
+          <Property name="DisablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum">
             <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
@@ -2982,6 +3508,7 @@ ExoticSalvageReward =
 					<Property name="Alien" value="" />
 					<Property name="Sail" value="DROPSHIP_CORE" />
 					<Property name="Robot" value="FIGHTER_CORE" />
+					<Property name="Corvette" value="" />
 				  </Property>
 			  </Property>
             </Property>
@@ -3036,6 +3563,7 @@ ShuttleSalvageReward =
 					<Property name="Alien" value="" />
 					<Property name="Sail" value="DROPSHIP_CORE" />
 					<Property name="Robot" value="FIGHTER_CORE" />
+					<Property name="Corvette" value="" />
 				  </Property>
 			  </Property>
             </Property>
@@ -3079,11 +3607,11 @@ RevealPurpleSystemsOption =
 					</Property>
 					<Property name="TitleOverride" value="" />
 					<Property name="SkipStraightToOptionsOnNextPuzzle" value="false" />
-					<Property name="EnablingConditionTest" value="GcMissionConditionTest">
+					<Property name="DisablingConditionTest" value="GcMissionConditionTest">
 						<Property name="ConditionTest" value="AnyFalse" />
 					</Property>
-					<Property name="EnablingConditions" />
-					<Property name="EnablingConditionId" value="" />
+					<Property name="DisablingConditions" />
+					<Property name="DisablingConditionId" value="" />
 					<Property name="WordCategory" value="GcWordCategoryTableEnum">
 						<Property name="wordcategorytableEnum" value="MISC" />
 					</Property>
@@ -3247,6 +3775,7 @@ function AddTechForShip (TechId, Amount)
                     <Property name="MaxAmount" value="]]..Amount..[[" />
                     <Property name="DamageFactor" value="0" />
                     <Property name="FullyInstalled" value="true" />
+					<Property name="AddedAutomatically" value="false" />
                     <Property name="Index" value="GcInventoryIndex">
                       <Property name="X" value="-1" />
                       <Property name="Y" value="-1" />
@@ -3748,6 +4277,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_END_CV",		"List", "GcRewardTableItem"},
+				["SECTION_ACTIVE"] = {0,},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	DerelictGoodCorvChance},
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"ID","AF_METAL"},
 				["MATH_OPERATION"] 		= "*", 
 				["REPLACE_TYPE"] 		= "ALL",
@@ -3925,6 +4462,46 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	SalvageSentMapChance}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAPHEAP",	"List","GcRewardTableItem"},
+				["SECTION_ACTIVE"] = {0,},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	ScrapCoreScrapChance}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAPHEAP",	"List","GcRewardTableItem"},
+				["SECTION_ACTIVE"] = {1,},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	ScrapCoreGoodCorvChance}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAPHEAP",	"List","GcRewardTableItem"},
+				["SECTION_ACTIVE"] = {2,},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	ScrapCoreOKCorvChance}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SCRAP_PART",	"List","GcRewardTableItem"},
+				["SECTION_ACTIVE"] = {1,},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	ScrapCaseGoodCorvChance}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SCRAP_PART",	"List","GcRewardTableItem"},
+				["SECTION_ACTIVE"] = {2,},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	ScrapCaseOKCorvChance}, 
 				}
 			},
 			{
@@ -4860,7 +5437,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_MATCH"] 		= {"0", "0.000000"}, 
 				["VALUE_MATCH_OPTIONS"] = "=",

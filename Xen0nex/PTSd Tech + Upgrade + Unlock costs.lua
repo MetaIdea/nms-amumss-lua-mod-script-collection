@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Unlock costs"
-GameVersion = "5_64"
+GameVersion = "6_00"
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
 UpgradeCMult	=		1.2							--Vanilla cost is	60		This multiplies the vanilla "BaseValue", affecting both purchase and selling prices.	E.G. "1.2" means you sell them for 1.2x the vanilla price, and shops charge 1.2x more
@@ -63,6 +63,8 @@ FreighterDoubleCultivationRoomMult	=	2		--Multiplier applied to default cost of 
 FreighterScannerRoomMult			=	3		--Multiplier applied to default cost of 1 Salvaged Frigate Data
 FreighterExocraftRoomMult			=	1		--Multiplier applied to default cost of 1 Salvaged Frigate Data
 FreighterRefinerRoomMult			=	2		--Multiplier applied to default cost of 1 Salvaged Frigate Data
+
+CorvetteBasicMachines				=	1		--Multiplier applied to default cost of 1 Salvaged Data
 
 --Specific Tech Adjustment Multipliers	(stacks multiplicatively with the TechCostMult)
 TechAdjustments =
@@ -1111,12 +1113,15 @@ RecipeChangesBase	=			--For items which have their data in NMS_MODULARCUSTOMISAT
 			"F_CHEV_WALL_H_C",
 			"S_CHEV_WALL_H_C",
 			"T_CHEV_WALL_H_C",
+			"B_CHEV_WALL_H_C",
 			"S_GFLOOR",
 			"T_GFLOOR",
 			"F_GFLOOR",
+			"B_GFLOOR",
 			"F_RAMP_Q_TOP",
 			"S_RAMP_Q_TOP",
 			"T_RAMP_Q_TOP",
+			"B_RAMP_Q_TOP",
 		--Default cost of 6 Salvaged Data
 			"MAINROOMCUBE_W",
 			"MAINROOM_WATER",
@@ -1235,6 +1240,15 @@ RecipeChangesBase	=			--For items which have their data in NMS_MODULARCUSTOMISAT
 		},
 		{
 			"FRE_ROOM_REFINE"				--Refiner Room					1 Salvaged Frigate Modules
+		}
+	},
+	{
+		{
+			CorvetteBasicMachines
+		},
+		{						--All cost 1 Salvaged Data
+			"B_WALL_PLAN0",					--Living Wall
+			"B_WALL_TECH0",					--Refiner Unit	
 		}
 	},
 }
@@ -1915,22 +1929,37 @@ NewContainerTree =
             <Property name="Unlockable" value="CONTAINER0" />
             <Property name="Children">
 			  <Property name="Children" value="GcUnlockableItemTreeNode">
-                    <Property name="Unlockable" value="FRE_ROOM_STORE0" />
-                    <Property name="Children" />
+                    <Property name="Unlockable" value="B_WALL_CARG0" />
+                    <Property name="Children">
+						<Property name="Children" value="GcUnlockableItemTreeNode">
+						  <Property name="Unlockable" value="FRE_ROOM_STORE0" />
+						  <Property name="Children" />
+					    </Property>
+					</Property>
                   </Property>
               <Property name="Children" value="GcUnlockableItemTreeNode">
                 <Property name="Unlockable" value="CONTAINER1" />
                 <Property name="Children">
                   <Property name="Children" value="GcUnlockableItemTreeNode">
-                    <Property name="Unlockable" value="FRE_ROOM_STORE1" />
-                    <Property name="Children" />
+                    <Property name="Unlockable" value="B_WALL_CARG1" />
+                    <Property name="Children">
+						<Property name="Children" value="GcUnlockableItemTreeNode">
+						  <Property name="Unlockable" value="FRE_ROOM_STORE1" />
+						  <Property name="Children" />
+					    </Property>
+					</Property>
                   </Property>
 				  <Property name="Children" value="GcUnlockableItemTreeNode">
                     <Property name="Unlockable" value="CONTAINER2" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="FRE_ROOM_STORE2" />
-						  <Property name="Children" />
+						  <Property name="Unlockable" value="B_WALL_CARG2" />
+						  <Property name="Children">
+								<Property name="Children" value="GcUnlockableItemTreeNode">
+								  <Property name="Unlockable" value="FRE_ROOM_STORE2" />
+								  <Property name="Children" />
+								</Property>
+							</Property>
 					    </Property>
 					</Property>
                   </Property>
@@ -1938,8 +1967,13 @@ NewContainerTree =
                     <Property name="Unlockable" value="CONTAINER3" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="FRE_ROOM_STORE3" />
-						  <Property name="Children" />
+						  <Property name="Unlockable" value="B_WALL_CARG3" />
+						  <Property name="Children">
+							<Property name="Children" value="GcUnlockableItemTreeNode">
+							  <Property name="Unlockable" value="FRE_ROOM_STORE3" />
+							  <Property name="Children" />
+							</Property>
+						</Property>
 					    </Property>
 					</Property>
                   </Property>
@@ -1949,15 +1983,25 @@ NewContainerTree =
                 <Property name="Unlockable" value="CONTAINER4" />
                 <Property name="Children">
                   <Property name="Children" value="GcUnlockableItemTreeNode">
-                    <Property name="Unlockable" value="FRE_ROOM_STORE4" />
-                    <Property name="Children" />
+                    <Property name="Unlockable" value="B_WALL_CARG4" />
+                    <Property name="Children">
+						<Property name="Children" value="GcUnlockableItemTreeNode">
+						  <Property name="Unlockable" value="FRE_ROOM_STORE4" />
+						  <Property name="Children" />
+					    </Property>
+					</Property>
                   </Property>
 				  <Property name="Children" value="GcUnlockableItemTreeNode">
                     <Property name="Unlockable" value="CONTAINER5" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="FRE_ROOM_STORE5" />
-						  <Property name="Children" />
+						  <Property name="Unlockable" value="B_WALL_CARG5" />
+						  <Property name="Children">
+							<Property name="Children" value="GcUnlockableItemTreeNode">
+							  <Property name="Unlockable" value="FRE_ROOM_STORE5" />
+							  <Property name="Children" />
+							</Property>
+						</Property>
 					    </Property>
 					</Property>
                   </Property>
@@ -1965,8 +2009,13 @@ NewContainerTree =
                     <Property name="Unlockable" value="CONTAINER6" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="FRE_ROOM_STORE6" />
-						  <Property name="Children" />
+						  <Property name="Unlockable" value="B_WALL_CARG6" />
+						  <Property name="Children">
+							<Property name="Children" value="GcUnlockableItemTreeNode">
+							  <Property name="Unlockable" value="FRE_ROOM_STORE6" />
+							  <Property name="Children" />
+							</Property>
+						</Property>
 					    </Property>
 					</Property>
                   </Property>
@@ -1976,15 +2025,25 @@ NewContainerTree =
                 <Property name="Unlockable" value="CONTAINER7" />
                 <Property name="Children">
                   <Property name="Children" value="GcUnlockableItemTreeNode">
-                    <Property name="Unlockable" value="FRE_ROOM_STORE7" />
-                    <Property name="Children" />
+                    <Property name="Unlockable" value="B_WALL_CARG7" />
+                    <Property name="Children">
+						<Property name="Children" value="GcUnlockableItemTreeNode">
+						  <Property name="Unlockable" value="FRE_ROOM_STORE7" />
+						  <Property name="Children" />
+					    </Property>
+					</Property>
                   </Property>
 				  <Property name="Children" value="GcUnlockableItemTreeNode">
                     <Property name="Unlockable" value="CONTAINER8" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="FRE_ROOM_STORE8" />
-						  <Property name="Children" />
+						  <Property name="Unlockable" value="B_WALL_CARG8" />
+						  <Property name="Children">
+							<Property name="Children" value="GcUnlockableItemTreeNode">
+							  <Property name="Unlockable" value="FRE_ROOM_STORE8" />
+							  <Property name="Children" />
+							</Property>
+						</Property>
 					    </Property>
 					</Property>
                   </Property>
@@ -1992,8 +2051,13 @@ NewContainerTree =
                     <Property name="Unlockable" value="CONTAINER9" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="FRE_ROOM_STORE9" />
-						  <Property name="Children" />
+						  <Property name="Unlockable" value="B_WALL_CARG9" />
+						  <Property name="Children">
+							<Property name="Children" value="GcUnlockableItemTreeNode">
+							  <Property name="Unlockable" value="FRE_ROOM_STORE9" />
+							  <Property name="Children" />
+							</Property>
+						</Property>
 					    </Property>
 					</Property>
                   </Property>
@@ -2002,16 +2066,64 @@ NewContainerTree =
             </Property>
           </Property>]]
 
-AddRefinerRoom =
+NewRefinerTree =
 [[<Property name="Children" value="GcUnlockableItemTreeNode">
-                        <Property name="Unlockable" value="BUILD_REFINER3" />
-                        <Property name="Children">
-                          <Property name="Children" value="GcUnlockableItemTreeNode">
-                            <Property name="Unlockable" value="FRE_ROOM_REFINE" />
-                            <Property name="Children" />
-                          </Property>
-                        </Property>
-                      </Property>]]
+										<Property name="Unlockable" value="BUILD_REFINER1" />
+										<Property name="Children">
+											<Property name="Children" value="GcUnlockableItemTreeNode" _index="0">
+												<Property name="Unlockable" value="BUILD_REFINER2" />
+												<Property name="Children">
+													<Property name="Children" value="GcUnlockableItemTreeNode" _index="1">
+														<Property name="Unlockable" value="BUILDANTIMATTER" />
+														<Property name="Children" />
+													</Property>
+													<Property name="Children" value="GcUnlockableItemTreeNode">
+														<Property name="Unlockable" value="BUILD_REFINER3" />
+														<Property name="Children">
+														  <Property name="Children" value="GcUnlockableItemTreeNode">
+															<Property name="Unlockable" value="B_WALL_TECH0" />
+															<Property name="Children">
+															  <Property name="Children" value="GcUnlockableItemTreeNode">
+																<Property name="Unlockable" value="FRE_ROOM_REFINE" />
+																<Property name="Children" />
+															  </Property>
+															</Property>
+														  </Property>
+														</Property>
+													  </Property>
+												</Property>
+											</Property>
+											<Property name="Children" value="GcUnlockableItemTreeNode" _index="1">
+												<Property name="Unlockable" value="COOKER" />
+												<Property name="Children">
+													<Property name="Children" value="GcUnlockableItemTreeNode" _index="0">
+														<Property name="Unlockable" value="CREATURE_FARM" />
+														<Property name="Children" />
+													</Property>
+													<Property name="Children" value="GcUnlockableItemTreeNode" _index="1">
+														<Property name="Unlockable" value="CREATURE_FEED" />
+														<Property name="Children" />
+													</Property>
+												</Property>
+											</Property>
+										</Property>
+									</Property>]]
+
+AddRefinerRooms =
+[[<Property name="Children" value="GcUnlockableItemTreeNode">
+					<Property name="Unlockable" value="BUILD_REFINER3" />
+					<Property name="Children">
+					  <Property name="Children" value="GcUnlockableItemTreeNode">
+						<Property name="Unlockable" value="B_WALL_TECH0" />
+						<Property name="Children">
+						  <Property name="Children" value="GcUnlockableItemTreeNode">
+							<Property name="Unlockable" value="FRE_ROOM_REFINE" />
+							<Property name="Children" />
+						  </Property>
+						</Property>
+					  </Property>
+					</Property>
+				  </Property>]]
 
 AddTradeRoom =
 [[<Property name="Children" value="GcUnlockableItemTreeNode">
@@ -2029,11 +2141,16 @@ AddTradeRoom =
                     </Property>
                   </Property>]]
 
-AddCultRoom =
+AddWallAndCult =
 [[<Property name="Children" value="GcUnlockableItemTreeNode">
-                <Property name="Unlockable" value="FRE_ROOM_PLANT1" />
-                <Property name="Children" />
-              </Property>]]
+                        <Property name="Unlockable" value="B_WALL_PLAN0" />
+                        <Property name="Children">
+                          <Property name="Children" value="GcUnlockableItemTreeNode">
+                            <Property name="Unlockable" value="FRE_ROOM_PLANT1" />
+                            <Property name="Children" />
+                          </Property>
+                        </Property>
+                      </Property>]]
 
 AddSavePoint =
 [[<Property name="Children" value="GcUnlockableItemTreeNode">
@@ -2462,17 +2579,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "BUILDANTIMATTER"},
 							["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["ADD"] = AddRefinerRoom
+                            ["ADD"] = AddRefinerRooms
                         },
 						{
-							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "BUILD_REFINER3"},		--Removes vanilla Storage Container tree
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "BYTEBEATSWITCH"},		--Reshuffles to make more room in UI
+                            ["REMOVE"] = "SECTION"
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "U_BYTEBEATLINE"},
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							["CREATE_HOS"] = "TRUE",
+                            ["ADD"] = AddSingleHOESChild("BYTEBEATSWITCH")
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "BUILD_REFINER1"},		--Removes vanilla Storage Container tree
 							--["SECTION_UP"] = 1,
                             ["REMOVE"] = "SECTION"
                         },
 						{
-							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "BUILDANTIMATTER"},
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "TELEPORTER"},
 							["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["ADD"] = AddRefinerRoom
+                            ["ADD"] = NewRefinerTree
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "BYTEBEATSWITCH"},		--Reshuffles to make more room in UI
+                            ["REMOVE"] = "SECTION"
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "U_BYTEBEATLINE"},
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							["CREATE_HOS"] = "TRUE",
+                            ["ADD"] = AddSingleHOESChild("BYTEBEATSWITCH")
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Unlockable", "FRE_ROOM_DRESS"},	
@@ -2511,7 +2648,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Unlockable", "PLANTERMEGA"},
 							["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["ADD"] = AddCultRoom
+                            ["ADD"] = AddWallAndCult
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASICTECH_TREE",		"Unlockable", "BUILDBEACON"},
@@ -2602,6 +2739,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASICPARTS_TREE",		"Unlockable", "U_BIOGENERATOR"},
 							["ADD_OPTION"]  = "ADDbeforeSECTION",
                             ["ADD"] = AddSingleHOESChild ("BAIT_BASIC")
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_BIGGS_BASEPARTS_TREE",			"Unlockable", "BIG_WALL_KITC0"},
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							--["CREATE_HOS"] = "TRUE",
+                            ["ADD"] = AddSingleHOESChild("BIG_WALL_PLAN0")
                         },
                     }
 				},
