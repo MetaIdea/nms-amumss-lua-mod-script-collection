@@ -10,12 +10,12 @@ AUTORUN = true
 ---------------------------
 
 -- Edition of Getting Head to use
-DEFAULT_EDITION = "Anomaly" -- Anomaly, Traveller
+DEFAULT_EDITION = "Traveller" -- Anomaly, Traveller
 
 -- Default value to remove armour piece and allow subsequent torso piece selection
 REMOVE_ARMOUR = true
 
-DEFAULT_TORSO = "TORSO_GEK"
+DEFAULT_TORSO = "TORSO_CLASSIC"
 -- Choose the torso without armour
 -- Copy and paste the IDs or your game may become unstable!
 -- Unused if not removing armour piece
@@ -26,9 +26,10 @@ TORSO_GEK
 TORSO_VYK
 TORSO_FOURTH
 TORSO_BUILDERS
+TORSO_CLASSIC
 ]]
 
-DEFAULT_CAPE = "CAPE_SEED"
+DEFAULT_CAPE = "CAPE_RUIN"
 -- Choose the cape
 -- Copy and paste the IDs or your game may become unstable!
 -- Leave this field empty if you don't want any capes
@@ -46,7 +47,7 @@ CAPE_SEED
 CAPE_RUIN
 ]]
 
-DEFAULT_BACKPACK = "BACKPACK_DIVING"
+DEFAULT_BACKPACK = "BACKPACK_CLASSI"
 -- Choose the backpack
 -- Copy and paste the IDs or your game may become unstable!
 -- Leave this field empty if you want the default backpack
@@ -59,6 +60,7 @@ BACKPACK_ATLAS
 BACKPACK_CAPE
 BACKPACK_APOD
 BACKPACK_DIVING
+BACKPACK_CLASSI
 ]]
 
 -- Default value to set all presets to the Gek body type
@@ -234,8 +236,8 @@ RACES =	{ 	["ASTRO"] = 	{ 	["Name"] = "ASTRO",
 								["Head"] = "BUILDER_HEAD"
 							}
 		}
-RACES_ARMOUR ={ "ARMOUR_VANILLA", "ARMOUR_ASTRO", "ARMOUR_GEK", "ARMOUR_VYK", "ARMOUR_FOURTH", "ARMOUR_BUI1", "ARMOUR_BUI2", "ARMOUR_BUI3", "ARMOUR_BUI4", "ARMOUR_APOD", "ARMOUR_DIVING"}
-RACES_TORSO ={ "TORSO_ASTRO", "TORSO_VANILLA", "TORSO_GEK", "TORSO_VYK", "TORSO_FOURTH", "TORSO_BUILDERS"}
+RACES_ARMOUR ={ "ARMOUR_VANILLA", "ARMOUR_ASTRO", "ARMOUR_GEK", "ARMOUR_VYK", "ARMOUR_FOURTH", "ARMOUR_BUI1", "ARMOUR_BUI2", "ARMOUR_BUI3", "ARMOUR_BUI4", "ARMOUR_APOD", "ARMOUR_DIVING", "ARMOUR_CLASSIC"}
+RACES_TORSO ={ "TORSO_ASTRO", "TORSO_VANILLA", "TORSO_GEK", "TORSO_VYK", "TORSO_FOURTH", "TORSO_BUILDERS", "TORSO_CLASSIC"}
 
 -- heads to apply per race to exclude
 HEADS = 
@@ -272,6 +274,7 @@ HEADS =
 										"HEAD_FISHBOWL4",
 										"HEAD_FISHBOWL5",
 										"HEAD_FISHBOWL6",
+										"HEAD_CLASSIC",
 									  },
 					  },
 		["BUI"] 	= {	["EXCLUDE"] = "BUI",
@@ -429,7 +432,7 @@ end
 
 
 -- asking for backpack
-BACKPACK_LIST = {"BACKPACK_RETRO", "BACKPACK_EXPD1", "BACKPACK_ROYAL", "BACKPACK_SENT", "BACKPACK_ATLAS", "BACKPACK_CAPE", "BACKPACK_APOD", "BACKPACK_DIVING"}
+BACKPACK_LIST = {"BACKPACK_RETRO", "BACKPACK_EXPD1", "BACKPACK_ROYAL", "BACKPACK_SENT", "BACKPACK_ATLAS", "BACKPACK_CAPE", "BACKPACK_APOD", "BACKPACK_DIVING", "BACKPACK_CLASSI"}
 
 LIST_DISPLAY = ""
 for i,j in pairs(BACKPACK_LIST) do
