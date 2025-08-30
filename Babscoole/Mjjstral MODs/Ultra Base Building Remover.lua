@@ -1273,8 +1273,8 @@ PLACEMENTDATA_ENTITY =
 <Data template="cTkAttachmentData">
   <Property name="AdditionalData" />
   <Property name="Components">
-    <Property name="Components" value="TkPhysicsComponentData">
-      <Property name="TkPhysicsComponentData">
+    <Property name="Components" value="TkStaticPhysicsComponentData">
+      <Property name="TkStaticPhysicsComponentData">
         <Property name="Data" value="TkPhysicsData">
           <Property name="Mass" value="0.000000" />
           <Property name="Friction" value="0.500000" />
@@ -1292,40 +1292,15 @@ PLACEMENTDATA_ENTITY =
             <Property name="NavMeshAreaType" value="Auto" />
           </Property>
         </Property>
-        <Property name="TriggerVolume" value="false" />
         <Property name="TriggerVolumeType" value="TkVolumeTriggerType">
           <Property name="VolumeTriggerType" value="Open" />
         </Property>
-        <Property name="SurfaceProperties" value="None" />
-        <Property name="ModelOwnership" value="Model" />
+        <Property name="TriggerVolume" value="false" />
         <Property name="Climbable" value="false" />
-        <Property name="Walkable" value="true" />
-        <Property name="Floor" value="false" />
-        <Property name="IgnoreModelOwner" value="false" />
         <Property name="NoVehicleCollide" value="false" />
         <Property name="NoPlayerCollide" value="false" />
         <Property name="NoTerrainCollide" value="false" />
-        <Property name="NoFireCollide" value="false" />
-        <Property name="NoFallDamage" value="false" />
-        <Property name="IgnoreAllCollisions" value="false" />
-        <Property name="BlocksInteract" value="true" />
         <Property name="CameraInvisible" value="false" />
-        <Property name="InvisibleForInteraction" value="false" />
-        <Property name="AllowTeleporter" value="false" />
-        <Property name="BlockTeleporter" value="false" />
-        <Property name="DisableGravity" value="false" />
-        <Property name="SpinOnCreate" value="0.000000" />
-        <Property name="ScaleAffectsMass" value="false" />
-        <Property name="AllowedDefaultCollision" value="true" />
-        <Property name="Animated" value="false" />
-        <Property name="UseBasePartOptimisation" value="false" />
-        <Property name="IsTransporter" value="false" />
-        <Property name="UseSimpleCharacterCollision" value="false" />
-        <Property name="RotateSimpleCharacterCollisionCapsule" value="false" />
-        <Property name="SimpleCharacterCollisionRadius" value="0.500000" />
-        <Property name="SimpleCharacterCollisionHeight" value="2.000000" />
-        <Property name="SimpleCharacterCollisionHeightOffset" value="0.000000" />
-        <Property name="SimpleCharacterCollisionFwdOffset" value="0.000000" />
       </Property>
     </Property>
     <Property name="Components" value="GcBasePlacementComponentData">
@@ -1591,7 +1566,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]     = "zzz-Ultra Base Building Remover",
 ["MOD_AUTHOR"]       = "Mjjstral and Babscoole",
 ["MOD_CONTRIBUTORS"] = "Ignacio and GhostRick",
-["NMS_VERSION"]      = "5.73",
+["NMS_VERSION"]      = "6.00",
 ["ADD_FILES"]        = ADD_FILES_TABLE,
 ["MODIFICATIONS"]    =
     {
@@ -1735,169 +1710,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REMOVE"] = "SECTION"
                         },
                     }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                            "MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEHIVE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\SANDCOVEREDWEIRDPROP.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQFROZEN\TREES\HEROPINE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQFROZEN\TREES\SKINNYPINE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQFROZEN\TREES\TALLPINE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE01.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE02.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE03.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE04.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE05.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE06.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE07.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE08.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE09.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE10.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE11.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE12.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE13.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE14.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE15.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE16.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE17.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE18.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE19.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE20.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE21.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE22.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE23.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE24.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE25.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE26.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE27.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE28.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE29.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE30.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE31.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE32.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE33.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE34.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE35.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE36.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE37.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE38.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE39.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE40.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE41.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE42.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE43.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE44.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE45.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE46.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE47.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE48.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE49.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE50.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE51.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE52.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE53.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE54.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE55.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE56.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE57.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE58.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE59.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE60.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE61.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE62.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE63.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE64.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE65.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE66.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE67.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE68.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE69.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE70.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE71.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE72.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE73.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE74.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE75.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LAVA\LARGEPROPS\DEADTREE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\ARRAYSHELLSAND.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\ARRAYTWIST.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\BIOTANK.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\FLAMESPLINTER.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\FROZENUMBRELLA.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\LARGEEGG.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\LARGEEGGHOLDER.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\LARGESUMMEREGG.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\LOWUMBRELLA.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\SINGLESUMMER.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\SINGLEUMBRELLA.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\SUMMERUMBRELLA.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\MEDIUM\ARRAYSHELL.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\MEDIUM\CURLYTENDRILS.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\MEDIUM\FROZENSPIKE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\MEDIUM\HOTROCK.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\MEDIUM\HOTROCKLIFTED.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\MEDIUM\HOTTENDRILS.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\MEDIUM\MEDIUMPLANT.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\MEDIUM\SPINDLEEGG.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\MEDIUM\SPINDLESUMMER.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\MEDIUM\SUMMERSPIKE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LIVINGSHIP\SMALL\SMALLPLANT.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOM.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\LUSHROOM\MEDIUMSHROOM.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\RADIOACTIVETREE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\LARGETREE1.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\MEDIUMTREE1.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\MEDIUMTREE2.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\SMALLTREE1.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\SMALLTREE2.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGEROCK.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\VOLCANICPLANT.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\MANGROVELARGE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\TOXIC\HOUDINIPROPS\MEDIUMTENTACLEBLOB.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\TOXIC\LARGE\FUNGALTREE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGEBLOB.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\UNDERWATER\LARGEPROP\LARGESPIKEROCK.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\UNDERWATER\LARGEPROP\LARGETUBEROCK.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANTS\MEDIUMJELLYPLANT.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BURST.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BURSTB.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BURSTC.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERINGINST.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\BONESPIRE\BONEFIN.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\BONESPIRE\BONEFIN2.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\BONESPIRE\BONESEED.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\BONESPIRE\BONESPORE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\BONESPIRE\BONESPORE2.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\BONESPIRE\BONETREE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\BONESPIRE\BONETREEBIGGLOW.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\BONESPIRE\BONETREEDAMAGED.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\HOUDINIPROPS\LARGECRYSTAL.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\HOUDINIPROPS\SPIKYPOTATO.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\HOUDINIPROPS\VORONOITREE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\HYDROGARDEN\LARGEMUSHROOM.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\HYDROGARDEN\LARGEMUSHROOMDEAD.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\HYDROGARDEN\WEIRDMEDIUMBUSH.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\IRRISHELLS\SHELLSAIL.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\IRRISHELLS\SHELLSHARD.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\FLOATJOINT.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTURE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLBLOCK.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLMEGATREE.SCENE.MBIN",
-                            "MODELS\PLANETS\BIOMES\WOODLAND\LARGEPLANT\MEDIUMOAK1.SCENE.MBIN",
-                    },
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Type", "MESH"},
-                            ["VALUE_MATCH"] = "{.*_imposter}",
-                            ["REMOVE"] = "SECTION",
-                        }
-                    },
                 },
             }
         },

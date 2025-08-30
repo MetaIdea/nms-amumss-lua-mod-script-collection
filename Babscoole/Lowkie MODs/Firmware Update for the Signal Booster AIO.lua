@@ -72,7 +72,7 @@ ScanDataTable = --Additions to SCANEVENTTABLEPLANET
     {"SE_GL_SETB", "None",          "Random" ,        "UnownedSettlement_Builders", "None",                   "true" ,         "true" ,                  "UI_SETTLEMENT_BUI_LOCATED_OSD", "UI_SETTLEMENT_BUI_LOCATED",     ""                         },
 }
 
-MissionDataTable = --Additions to ENABLINGCONDITIONSTABLE and REWARDTABLE
+MissionDataTable = --Additions to DISABLINGCONDITIONSTABLE and REWARDTABLE
  --  MISSION            MISSION AMOUNT  REWARDTABLE ID   REWARDTABLE EVENT
 {--  SCANREWARDS ID     PROXY LEVEL     PROXY REWARD
     {"R_GLS_SCAN_0",  "0" ,           "R_GL_SHLT", "SE_GL_SHLT"},
@@ -96,7 +96,7 @@ MissionDataTable = --Additions to ENABLINGCONDITIONSTABLE and REWARDTABLE
     {"R_GLS_SCAN_18", "18",           "R_GL_SETB", "SE_GL_SETB"},
 }
 
-DialogDataTable = --Dialog (menu) additions to ENABLINGCONDITIONSTABLE.
+DialogDataTable = --Dialog (menu) additions to DISABLINGCONDITIONSTABLE.
 {
     {--GcAlienPuzzleEntry Id
         {"D_GLS_SCAN_P1"},
@@ -158,7 +158,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster"..FILENAME,
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie & Babscoole",
-  ["NMS_VERSION"]     = "5.75",
+  ["NMS_VERSION"]     = "6.00",
   ["MODIFICATIONS"]   =
     {
         {
@@ -475,7 +475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\ENABLINGCONDITIONSTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\DISABLINGCONDITIONSTABLE.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
@@ -650,7 +650,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 local RewardTable             = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
 local ScanEventTablePlanet    = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["MXML_CHANGE_TABLE"]
-local EnablingConditionsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["MXML_CHANGE_TABLE"]
+local DisablingConditionsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["MXML_CHANGE_TABLE"]
 
 --Add ScanEventTablePlanet entries
 for i=1, #ScanDataTable, 1 do
@@ -737,13 +737,13 @@ for i=1, #MissionDataTable, 1 do
     }
 end
 
---Add ENABLINGCONDITIONSTABLE entries
+--Add DISABLINGCONDITIONSTABLE entries
 --Add ScanEvent Stat rewards
 for i = 1, #MissionDataTable do
   local Id     = MissionDataTable[i][1]
   local AMOUNT = MissionDataTable[i][2]
 
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    DisablingConditionsTable[#DisablingConditionsTable+1] =
     {
         ["SEC_EDIT"] = "GetRewardModifyStat",
         ["VALUE_CHANGE_TABLE"] =
@@ -752,7 +752,7 @@ for i = 1, #MissionDataTable do
             {"Amount", AMOUNT},
         }
     }
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    DisablingConditionsTable[#DisablingConditionsTable+1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_SCAN"},
         ["PRECEDING_KEY_WORDS"] = {"Rewards"},
@@ -780,7 +780,7 @@ for i = 1, #DialogDataTable do
         InteractionType = "None"
     end
 
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    DisablingConditionsTable[#DisablingConditionsTable+1] =
     {
         ["SEC_EDIT"] = "GetPuzzleEntry",
         ["VALUE_CHANGE_TABLE"] =
@@ -789,7 +789,7 @@ for i = 1, #DialogDataTable do
             {"InteractionType", InteractionType},
         }
     }
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    DisablingConditionsTable[#DisablingConditionsTable+1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_SCAN"},
         ["PRECEDING_KEY_WORDS"] = {"Table"},
@@ -802,7 +802,7 @@ for i = 1, #DialogDataTable do
     local Reward = Change[j][2]
     local Cost   = COSTCHOICE
 
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    DisablingConditionsTable[#DisablingConditionsTable+1] =
     {
         ["SEC_EDIT"] = "GetOption",
         ["VALUE_CHANGE_TABLE"] =
@@ -811,7 +811,7 @@ for i = 1, #DialogDataTable do
             {"Cost",  Cost},
         }
     }
-     EnablingConditionsTable[#EnablingConditionsTable+1] =
+    DisablingConditionsTable[#DisablingConditionsTable+1] =
     {
         ["SEC_EDIT"] = "GetOption",
         ["PRECEDING_KEY_WORDS"] = {"Rewards"},
@@ -821,7 +821,7 @@ for i = 1, #DialogDataTable do
             {"Rewards", Reward},
         }
     }
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    DisablingConditionsTable[#DisablingConditionsTable+1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_SCAN", "Id", EntryId},
         ["PRECEDING_KEY_WORDS"] = {"Options"},
@@ -829,7 +829,7 @@ for i = 1, #DialogDataTable do
         ["SEC_ADD_NAMED"] = "GetOption",
     }
   end
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    DisablingConditionsTable[#DisablingConditionsTable+1] =
     {
         ["SEC_EDIT"] = "GetMore",
         ["VALUE_CHANGE_TABLE"] =
@@ -837,7 +837,7 @@ for i = 1, #DialogDataTable do
             {"NextInteraction", NextInteraction},
         }
     }
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    DisablingConditionsTable[#DisablingConditionsTable+1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_SCAN", "Id", EntryId},
         ["PRECEDING_KEY_WORDS"] = {"Options"},
@@ -845,7 +845,7 @@ for i = 1, #DialogDataTable do
         ["SEC_ADD_NAMED"] = "GetMore",
     }
 end
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    DisablingConditionsTable[#DisablingConditionsTable+1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_SCAN", "Id", "D_GLS_SCAN_P1"},
         ["PRECEDING_KEY_WORDS"] = {"Options"},
@@ -853,7 +853,7 @@ end
         ["SEC_ADD_NAMED"] = "GetNearScan",
     }
   local LastPage = DialogDataTable[#DialogDataTable][1][1]
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    DisablingConditionsTable[#DisablingConditionsTable+1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_SCAN", "Id", LastPage, "Name", "More Options"},
         ["VALUE_CHANGE_TABLE"] =
@@ -869,7 +869,7 @@ for i = #MissionDataTable, 1, -1 do
   local REWARD = MissionDataTable[i][3]
   local LEVEL  = MissionDataTable[i][2]
 
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    DisablingConditionsTable[#DisablingConditionsTable+1] =
     {
         ["SEC_EDIT"] = "GetGenericMissionStage",
         ["VALUE_CHANGE_TABLE"] =
@@ -878,7 +878,7 @@ for i = #MissionDataTable, 1, -1 do
             {"Reward", REWARD},
         }
     }
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    DisablingConditionsTable[#DisablingConditionsTable+1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_PROXY", "Stage", "GcMissionSequenceGroup"},
         ["PRECEDING_KEY_WORDS"] = {"Stages"},

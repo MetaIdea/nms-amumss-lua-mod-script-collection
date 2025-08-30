@@ -1,10 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "ClearBuild_NoPopups.pak",
+["MOD_FILENAME"]            = "ClearBuild_NoPopups",
 ["MOD_AUTHOR"]              = "PakMack",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.65",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "6.01",
 ["MODIFICATIONS"]           =
     {
         {
@@ -12,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "UI\HUD\HUDBUILDNOTIFY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -22,20 +21,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsHidden", "True"},
+                                {"Is Hidden", "true"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "UI\POPUP_BUILDMENUITEM.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ElementData", "GcNGuiElementData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Element Data", "GcNGuiElementData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsHidden", "True"},
+                                {"Is Hidden", "true"},
                             }
                         },
                         {
@@ -46,74 +45,79 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IsHidden", "True"},
+                                {"Is Hidden", "true"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GraphicStyle", "TkNGuiGraphicStyle.xml", "Colour","Colour.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Graphic Style", "TkNGuiGraphicStyle"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R", "0.004"},
-                                {"G", "0.004"},
-                                {"B", "0.071"},
-                                {"A", "0.77"},
+                                {"R", "0.004000"},
+                                {"G", "0.004000"},
+                                {"B", "0.071000"},
+                                {"A", "0.770000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Default", "TkNGuiGraphicStyleData.xml", "Colour", "Colour.xml"},
-                            ["SECTION_ACTIVE"] = {5,7,11,13,16,19},
+                            ["SPECIAL_KEY_WORDS"] = {"Default", "TkNGuiGraphicStyleData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour"},
+                            ["SECTION_ACTIVE"] = {4,6,10,12,15,18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R", "0.004"},
-                                {"G", "0.004"},
-                                {"B", "0.071"},
-                                {"A", "0.77"},
+                                {"R", "0.004000"},
+                                {"G", "0.004000"},
+                                {"B", "0.071000"},
+                                {"A", "0.770000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Highlight", "TkNGuiGraphicStyleData.xml", "Colour","Colour.xml"},
-                            ["SECTION_ACTIVE"] = {4,5,7,10,11,13,16,19},
+                            ["SPECIAL_KEY_WORDS"] = {"Highlight", "TkNGuiGraphicStyleData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour"},
+                            ["SECTION_ACTIVE"] = {3,4,6,9,10,12,15,18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R", "0.004"},
-                                {"G", "0.004"},
-                                {"B", "0.071"},
-                                {"A", "0.77"},
+                                {"R", "0.004000"},
+                                {"G", "0.004000"},
+                                {"B", "0.071000"},
+                                {"A", "0.770000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Active", "TkNGuiGraphicStyleData.xml", "Colour", "Colour.xml"},
-                            ["SECTION_ACTIVE"] = {4,5,7,11,13,16,19},
+                            ["SPECIAL_KEY_WORDS"] = {"Active", "TkNGuiGraphicStyleData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour"},
+                            ["SECTION_ACTIVE"] = {3,4,6,10,12,15,18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R", "0.004"},
-                                {"G", "0.004"},
-                                {"B", "0.071"},
-                                {"A", "0.77"},
+                                {"R", "0.004000"},
+                                {"G", "0.004000"},
+                                {"B", "0.071000"},
+                                {"A", "0.770000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Highlight", "TkNGuiGraphicStyleData.xml", "Colour","Colour.xml"},
-                            ["SECTION_ACTIVE"] = {10},
+                            ["SPECIAL_KEY_WORDS"] = {"Highlight", "TkNGuiGraphicStyleData"},
+                            ["PRECEDING_KEY_WORDS"] = {"Colour"},
+                            ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"R", "0"},
-                                {"G", "0"},
-                                {"B", "0"},
-                                {"A", "0.5"},
+                                {"R", "0.000000"},
+                                {"G", "0.000000"},
+                                {"B", "0.000000"},
+                                {"A", "0.500000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ElementData", "GcNGuiElementData.xml"},
-                            ["SECTION_ACTIVE"] = {17,20},
+                            ["SPECIAL_KEY_WORDS"] = {"Element Data", "GcNGuiElementData"},
+                            ["SECTION_ACTIVE"] = {16,19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Height", "79"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ElementData", "GcNGuiElementData.xml"},
-                            ["SECTION_ACTIVE"] = {19},
+                            ["SPECIAL_KEY_WORDS"] = {"Element Data", "GcNGuiElementData"},
+                            ["SECTION_ACTIVE"] = {18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Height", "79"},

@@ -1,9 +1,9 @@
 -- Configuration constants
-local NMS_VERSION = "5.74"
+local NMS_VERSION = "6.01"
 local MOD_VERSION = "0"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-   ["MOD_FILENAME"] = "No Charge Portals " .. NMS_VERSION .. "." .. MOD_VERSION,
+   ["MOD_FILENAME"] = string.format("No Charge Portals %s.%s", NMS_VERSION, MOD_VERSION),
    ["MOD_AUTHOR"] = "NilOutput",
    ["LUA_AUTHOR"] = "NilOutput",
    ["MOD_DESCRIPTION"] = "Portals don't require charging. Just enter the glyphs and go!",

@@ -1077,16 +1077,6 @@ return [[
 									<Property name="Has Inner Gradient" value="false" />
 									<Property name="Gradient Offset Percent" value="false" />
 									<Property name="Stroke Gradient" value="true" />
-									<Property name="Animated" value="TkNGuiGraphicAnimatedImageData">
-										<Property name="NGuiImageAnimType" value="None" />
-										<Property name="Blend Frames" value="false" />
-										<Property name="Frames Per Second" value="10.000000" />
-										<Property name="Total Frames" value="0" />
-										<Property name="Frames Horizontal" value="1" />
-										<Property name="Frames Vertical" value="1" />
-										<Property name="Scroll Angle" value="0.000000" />
-										<Property name="Scroll Speed" value="1.000000" />
-									</Property>
 								</Property>
 								<Property name="Highlight" value="TkNGuiGraphicStyleData">
 									<Property name="Colour">
@@ -1142,16 +1132,6 @@ return [[
 									<Property name="Has Inner Gradient" value="false" />
 									<Property name="Gradient Offset Percent" value="false" />
 									<Property name="Stroke Gradient" value="true" />
-									<Property name="Animated" value="TkNGuiGraphicAnimatedImageData">
-										<Property name="NGuiImageAnimType" value="None" />
-										<Property name="Blend Frames" value="false" />
-										<Property name="Frames Per Second" value="10.000000" />
-										<Property name="Total Frames" value="0" />
-										<Property name="Frames Horizontal" value="1" />
-										<Property name="Frames Vertical" value="1" />
-										<Property name="Scroll Angle" value="0.000000" />
-										<Property name="Scroll Speed" value="1.000000" />
-									</Property>
 								</Property>
 								<Property name="Active" value="TkNGuiGraphicStyleData">
 									<Property name="Colour">
@@ -1207,16 +1187,6 @@ return [[
 									<Property name="Has Inner Gradient" value="false" />
 									<Property name="Gradient Offset Percent" value="false" />
 									<Property name="Stroke Gradient" value="true" />
-									<Property name="Animated" value="TkNGuiGraphicAnimatedImageData">
-										<Property name="NGuiImageAnimType" value="None" />
-										<Property name="Blend Frames" value="false" />
-										<Property name="Frames Per Second" value="10.000000" />
-										<Property name="Total Frames" value="0" />
-										<Property name="Frames Horizontal" value="1" />
-										<Property name="Frames Vertical" value="1" />
-										<Property name="Scroll Angle" value="0.000000" />
-										<Property name="Scroll Speed" value="1.000000" />
-									</Property>
 								</Property>
 								<Property name="InheritStyleFromParentLayer" value="false" />
 								<Property name="AutoAdjustToChildrenHeight" value="false" />

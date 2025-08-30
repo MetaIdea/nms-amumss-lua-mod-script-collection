@@ -1,5 +1,5 @@
 -- Configuration constants
-local NMS_VERSION = "5.75"
+local NMS_VERSION = "6.01"
 local MOD_VERSION = "0"
 
 -- Settlement timer constants (reduced from defaults)
