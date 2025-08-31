@@ -364,7 +364,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.Embossed Ships.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '5.62',
+	NMS_VERSION				= '6.02',
 	MOD_DESCRIPTION			= mod_desc,
 	MODIFICATIONS 			= {
 		{

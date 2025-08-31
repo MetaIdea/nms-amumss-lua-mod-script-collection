@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "SmokeAndMistBegone"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "558"
+METADATA_NMS_VERSION    = "600"
 METADATA_MOD_DESC       = "This mod removes mist, clouds and smoke effects from selected structures/buildings found on planets. Modifies various files in MODELS\PLANETS\BIOMES\COMMON\BUILDINGS directory."
 
 
@@ -63,7 +63,7 @@ end
 function RemoveNodes(scene,nodes) return
 {
     ["MBIN_FILE_SOURCE"] = scene,
-    ["EXML_CHANGE_TABLE"] =
+    ["MXML_CHANGE_TABLE"] =
     {
         {
             ["SKW"] = BuildSKWList(nodes),
@@ -97,7 +97,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- archive smoke emitter MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_ARCHIVE_SMOKE,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- yeet out the smoke emitter

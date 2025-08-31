@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Boundary 2k"
 BaseDescription = "Base boundary and wire length extensions"
-GameVersion = "5.2.9.0"
+GameVersion = "6.0.1.0"
 ModVersion = "a"
 FileSource1 = "GCBUILDINGGLOBALS.GLOBAL.MBIN"
 
@@ -28,7 +28,7 @@ NMS_VERSION		= GameVersion,
 MODIFICATIONS	= {
 {MBIN_CHANGE_TABLE = {{
 MBIN_FILE_SOURCE = FileSource1,
-EXML_CHANGE_TABLE = {
+MXML_CHANGE_TABLE = {
 	{PRECEDING_KEY_WORDS = "",
 		VALUE_CHANGE_TABLE = {
 		{"MinRadiusForBases", MinRadiusForBases},
@@ -43,7 +43,7 @@ EXML_CHANGE_TABLE = {
 	}},
 	{PRECEDING_KEY_WORDS = "BuildingPlacementScaleMinMax",
 		VALUE_CHANGE_TABLE = {
-		{"x", BuildingPlacementScaleMin},
-		{"y", BuildingPlacementScaleMax},
+		{"X", BuildingPlacementScaleMin},
+		{"Y", BuildingPlacementScaleMax},
 	}},
 }}}}}}

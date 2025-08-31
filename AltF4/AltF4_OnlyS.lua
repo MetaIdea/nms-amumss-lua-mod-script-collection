@@ -28,14 +28,26 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_OnlyS",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "5.51",
+    ["NMS_VERSION"] = "6.01",
     ["MOD_DESCRIPTION"] = "Make the generated ships, multitools, freighters and frigates only have S class. Make frigates have max stats.",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
                 {
+                    ["MBIN_FILE_SOURCE"] = "GCBUILDABLESHIPGLOBALS.GLOBAL.MBIN",
+                    ["MXML_CHANGE_TABLE"] = {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Class"},
+                            ["VALUE_CHANGE_TABLE"] = 
+                            {
+                                {"InventoryClass","S"},
+                            }
+                        },
+                    }
+                },
+                {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MXML_CHANGE_TABLE"] = {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ClassProbabilities"},
                             ["REPLACE_TYPE"] = "ALL",
@@ -57,7 +69,7 @@ if Stats then
     local addMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
     addMBINChangeTable[#addMBINChangeTable + 1] = {
                     ["MBIN_FILE_SOURCE"] = "GCFLEETGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"PercentChangeOfFrigateBeingPurchasable", "100"},         --60
@@ -95,7 +107,7 @@ if Traits then
     local addMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
     addMBINChangeTable[#addMBINChangeTable + 1] = {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\FRIGATETRAITTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MXML_CHANGE_TABLE"] = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {
                                 {"FrigateTraitStrength", "NegativeSmall"},

@@ -6,7 +6,7 @@ local mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Construct separate light color.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.62',
+	NMS_VERSION			= '6.02',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -15,23 +15,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {
-					{'DescriptorOption', 'HEAD_ASTBOT[12]', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'HEAD_ASTBOT2', 'Title', 'CUSTOMISE_TERTIARY'},
-					{'DescriptorOption', 'BHEAD_%d.-', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_3', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_4', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_5', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_6', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_7', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_9', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_10', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_11', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_12', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_13', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_14', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_15', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_16', 'Title', 'CUSTOMISE_TERTIARY'},
-					-- {'DescriptorOption', 'BHEAD_17', 'Title', 'CUSTOMISE_TERTIARY'},
+					{'DescriptorOption', 'HEAD_ASTBOT[12]',	'Title', 'CUSTOMISE_TERTIARY'},
+					{'DescriptorOption', 'BHEAD_%d.-',		'Title', 'CUSTOMISE_TERTIARY'}
 				},
 				ADD_OPTION			= 'AddAfterSection',
 				ADD					= [[

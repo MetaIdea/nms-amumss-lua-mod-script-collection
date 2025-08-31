@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]    = "No Flying Pollens 1.4.pak",
+    ["MOD_FILENAME"]    = "No Flying Pollens 1.5.pak",
     ["MOD_DESCRIPTION"] = "Removes flying pollens from lush planets",
     ["MOD_AUTHOR"]      = "Lo2k",
 	["LUA_AUTHOR"]      = "Lo2k",
-    ["NMS_VERSION"]     = "5.53",
+    ["NMS_VERSION"]     = "6.01",
     ["MODIFICATIONS"]   = 
 	{
         {
@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					"MODELS\EFFECTS\HEAVYAIR\EARTH\EARTH2.HEAVYAIR.MBIN",
 					"MODELS\EFFECTS\HEAVYAIR\EARTH\NIGHTTIME.HEAVYAIR.MBIN"
 					},
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["MXML_CHANGE_TABLE"] = 
 					{
                         {
                             ["VALUE_CHANGE_TABLE"] = {{"Number Of Particles","0"},},

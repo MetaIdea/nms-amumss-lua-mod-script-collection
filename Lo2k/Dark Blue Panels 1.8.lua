@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Dark Black Panels 1.7.pak", 
+["MOD_FILENAME"] 			= "Dark Blue Panels 1.8.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.73",
+["NMS_VERSION"]				= "6.01",
 ["MOD_DESCRIPTION"]			= "This mod make panel backgrounds darker",
 ["MODIFICATIONS"] 			= 
 	{
@@ -46,7 +46,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"]    = "ALL", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"A",	"0.85"},		-- Alpha/transparency - Original "0.77"											
+								{"R",	"0.00"},		-- Red tint - Original "0.00"	
+								{"G",	"0.06"},		-- Green tint - Original "0.00"	
+								{"B",	"0.12"},		-- Blue tint - Original "0.00"	
+								{"A",	"0.88"},		-- Alpha/transparency - Original "0.77"											
 							}
 						},
 					}
@@ -61,13 +64,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"R",	"0.00"},		-- Red tint - Original "0.768627465"	
-								{"G",	"0.00"},		-- Green tint - Original "0.768627465"	
-								{"B",	"0.00"},		-- Blue tint - Original "0.768627465"	
-								{"A",	"0.85"},		-- Alpha/transparency - Original "0.501960814"											
+								{"G",	"0.06"},		-- Green tint - Original "0.768627465"	
+								{"B",	"0.12"},		-- Blue tint - Original "0.768627465"	
+								{"A",	"0.88"},		-- Alpha/transparency - Original "0.501960814"											
 							}
 						},
 					}
-				}							
+				}				
 			}
 		}
 	}	

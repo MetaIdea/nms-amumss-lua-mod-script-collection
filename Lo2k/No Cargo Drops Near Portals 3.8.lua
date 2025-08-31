@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Cargo Drops Near Portals 3.5.pak", 
+["MOD_FILENAME"] 			= "No Cargo Drops Near Portals 3.8.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lowkie",
-["NMS_VERSION"]				= "5.21",
+["NMS_VERSION"]				= "6.01",
 ["MOD_DESCRIPTION"]			= "This mod removes cargo drops near each portal",
 ["MODIFICATIONS"] 			= 
 	{
@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
                     ["MBIN_FILE_SOURCE"]     = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL.SCENE.MBIN"},
-                    ["EXML_CHANGE_TABLE"]     = 
+                    ["MXML_CHANGE_TABLE"]     = 
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "_Clump1"},

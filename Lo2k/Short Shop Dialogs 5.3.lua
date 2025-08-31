@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= "Short Shop Dialogs 5.2.pak",
+	["MOD_FILENAME"]	= "Short Shop Dialogs 5.3.pak",
 	["MOD_AUTHOR"]		= "Lo2k",
 	["LUA_AUTHOR"]		= "Droseran & Babscoole",
-	["NMS_VERSION"]		= "5.71",
+	["NMS_VERSION"]		= "6.01",
 	["MOD_DESCRIPTION"]	= "Reduces shop dialogs to a single page.",
 	["MODIFICATIONS"]	= {
 		{

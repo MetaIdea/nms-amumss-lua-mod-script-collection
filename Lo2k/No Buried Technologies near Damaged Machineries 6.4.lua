@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Buried Technologies near Damaged Machineries 5.4.pak", 
+["MOD_FILENAME"] 			= "No Buried Technologies near Damaged Machineries 6.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "5.21",
+["NMS_VERSION"]				= "6.01",
 ["MOD_DESCRIPTION"]			= "This mod removes buried Technologies near EACH AND EVERY damaged machinery",
 ["MODIFICATIONS"] 			= 
 	{
@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DEBRIS\DEBRISLARGE_COMMON.SCENE.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "ObjectPlacementData"},

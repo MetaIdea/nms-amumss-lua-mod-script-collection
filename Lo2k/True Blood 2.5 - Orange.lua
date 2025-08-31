@@ -15,10 +15,10 @@ EndB = "0.084",};
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "True Blood 2.4 - Orange.pak", 
+["MOD_FILENAME"] 			= "True Blood 2.5 - Orange.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.30",
+["NMS_VERSION"]				= "6.01",
 ["MOD_DESCRIPTION"]			= "This mod changes creature blood color",
 ["MODIFICATIONS"] 			= 
 	{
@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 											   "MODELS\EFFECTS\BLOOD\FIENDDEATH\EMITTERS\FBLOODCHUNKS.PARTICLE.MBIN",
 											   "MODELS\EFFECTS\BLOOD\FIENDDEATH\EMITTERS\FBLOODSPLATEMITTER.PARTICLE.MBIN",
 											   },
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["PRECEDING_KEY_WORDS"]  = {"ColourStart"},

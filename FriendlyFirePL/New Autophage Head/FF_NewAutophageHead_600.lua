@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "NewAutophageHead"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "558"
+METADATA_NMS_VERSION    = "600"
 METADATA_MOD_DESC       = "This mod adds a new Autophage head option to use in player customisation. Modifies various files in MODELS\COMMON\PLAYER\PLAYERCHARACTER and METADATA directories."
 
 
@@ -93,7 +93,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_NPCROBOT_SCENE,
                     ["MBIN_FS_DISCARD"] = "TRUE",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- get the node for specific head
@@ -197,7 +197,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- new head scene MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_NEWHEAD_SCENE,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- yeet out all the elements
@@ -219,7 +219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- player character scene MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_PLAYER_SCENE,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- add reference to new head scene
@@ -237,7 +237,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_NPCROBOT_DESCR,
                     ["MBIN_FS_DISCARD"] = "TRUE",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- get the descriptor for armored head
@@ -259,7 +259,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- player descriptors MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_PLAYER_DESCR,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- copy headgear descriptors from head 4
@@ -289,7 +289,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- character description groups MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_METADATA_CHARACTER_DESCR,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- get template for a descriptors group
@@ -370,7 +370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- customisation UI data MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_METADATA_CUSTOMISATION_UI,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- get a template for customisation option
@@ -399,7 +399,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- main head texture MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_TEXTURE_ROBOTHEAD_MAIN,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- assign new textures to base layer
@@ -421,7 +421,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- main head material MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MATERIAL_ROBOTHEAD_MAIN,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         -- assign new textures
                         {   ["SKW"] = {"Name","gDiffuseMap",},      ["VCT"] = {{"Map","TEXTURES/COMMON/ROBOTS/ROBOTHEADMAIN.DDS",},},            },
@@ -435,7 +435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- head detail texture MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_TEXTURE_ROBOTHEAD_DETAIL,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- assign new textures to base layer
@@ -457,7 +457,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- head detail material MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MATERIAL_ROBOTHEAD_DETAIL,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         -- assign new textures
                         {   ["SKW"] = {"Name","gDiffuseMap",},      ["VCT"] = {{"Map","TEXTURES/COMMON/ROBOTS/ROBOTHEADDETAIL.DDS",},},            },
@@ -471,7 +471,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- head inner material MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MATERIAL_ROBOTHEAD_INNER,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         -- assign new textures
                         {   ["SKW"] = {"Name","gDiffuseMap",},      ["VCT"] = {{"Map","TEXTURES/COMMON/ROBOTS/ROBOTHEADINNER.BASE.DDS",},},       },

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-MOD_FILENAME = "Data Warps.pak", 
+MOD_FILENAME = "Data Warps 1.1.pak", 
 MOD_AUTHOR	 = "Lo2k",
 LUA_AUTHOR	 = "Lo2k",
-NMS_VERSION  = "5.74",
+NMS_VERSION  = "6.01",
 MOD_DESCRIPTION = "Data Warps",
 MODIFICATIONS= 
 	{
