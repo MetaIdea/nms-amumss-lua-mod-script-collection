@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Increase Auto-Land Range",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "Restore default auto-land range assist range from the NMS 5.x 100, back to the original 300",
-["NMS_VERSION"]     = "5.73",
+["NMS_VERSION"]     = "6.00",
 ["MODIFICATIONS"]   =
     {
         {
@@ -37,6 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\SPACE\POI\PARTS\DUNGEON_ENTRANCE\ENTITIES\DUNGEONENTRANCE.ENTITY.MBIN",
                         "MODELS\SPACE\SPACESTATION\MODULARPARTS\ENTITIES\STATION_DOCK.ENTITY.MBIN",
                         "MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.MBIN",
+                        "MODELS\COMMON\SPACECRAFT\BIGGS\ENTITIES\BIGGSLANDINGZONEOUTPOST.ENTITY.MBIN",
                         
                         -- Below have higher values in vanilla, so leaving as is.  In vanilla, from top to bottom, 600,700.400,400
                         -- "MODELS\SPACE\ATLASSTATION\SHARED\ENTITIES\ATLASSTATION.ENTITY.MBIN",

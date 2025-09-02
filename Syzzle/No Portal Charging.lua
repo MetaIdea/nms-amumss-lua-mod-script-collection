@@ -1,11 +1,11 @@
 Author = "Syzzle"
 ModName = "No Portal Charging"
-GameVersion = "5.29"
+GameVersion = "6.02"
 Description = "Skips the whole process of charging the portal in order to use it."
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= ModName..".pak",
+["MOD_FILENAME"] 			= ModName,
 ["MOD_AUTHOR"]				= Author,
 ["NMS_VERSION"]				= GameVersion,
 ["MOD_DESCRIPTION"] 		= Description,
@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       { 
         {
           ["MBIN_FILE_SOURCE"] 	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PORTAL/PORTAL/ENTITIES/BUTTON.ENTITY.MBIN",
-          ["EXML_CHANGE_TABLE"] 	= 
+          ["MXML_CHANGE_TABLE"] 	= 
           {
             {
               ["VALUE_CHANGE_TABLE"]  =

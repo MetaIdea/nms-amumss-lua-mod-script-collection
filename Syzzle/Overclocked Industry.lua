@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Overclocked Industry"
-GameVersion = "5.29"
+GameVersion = "6.02"
 --ModVersion = "v1.4"
 Description = "Power up Autonomous Mining, Atmosphere Harvester and Oxygen Harvester to harvest a full stack of 9999 in 5 minutes."
 
@@ -12,7 +12,7 @@ Output = "9999"		-- How many resources it will give at the end of the work cycle
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= ModName..".pak",
+["MOD_FILENAME"] 			= ModName,
 ["MOD_AUTHOR"]				= Author,
 ["NMS_VERSION"]				= GameVersion,
 ["MOD_DESCRIPTION"] 		= Description,
@@ -23,93 +23,100 @@ NMS_MOD_DEFINITION_CONTAINER =
       { 
         {
           ["MBIN_FILE_SOURCE"] 	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/HARVESTER/ENTITIES/RESOURCEHARVESTER.ENTITY.MBIN", 
-          ["EXML_CHANGE_TABLE"] 	= 
+          ["MXML_CHANGE_TABLE"] 	= 
           {
             {
-              ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
-              ["SECTION_ACTIVE"] = 1,
+              ["SPECIAL_KEY_WORDS"] = {"PreInstalledTech","GcMaintenanceElement"},
+              ["SECTION_ACTIVE"] = 0,
+              ["WHERE_IN_SECTION"] =  
+                {  
+                  {"AmountEmptyTimePeriod","3600.000000",}, 
+                },
               ["VALUE_CHANGE_TABLE"] 	= 
               {
-                {"AmountEmptyTimePeriod",FuelTime}
+                {"AmountEmptyTimePeriod",FuelTime} -- Original: 3600
               }
             },
             {
-              ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
-              ["SECTION_ACTIVE"] = 2,
+              ["SPECIAL_KEY_WORDS"] = {"PreInstalledTech","GcMaintenanceElement"},
+              ["SECTION_ACTIVE"] = 1,
+              ["WHERE_IN_SECTION"] =  
+                {  
+                  {"AmountEmptyTimePeriod","-3600.000000",},
+                  {"MaxCapacity","250",},
+                },
               ["VALUE_CHANGE_TABLE"] 	= 
               {
-                {"MaxCapacity",Output},
-                {"AmountEmptyTimePeriod",WorkTime}
+                {"MaxCapacity",Output}, -- Original: 250
+                {"AmountEmptyTimePeriod",WorkTime} -- Original: -3600
               }
             },
           }
         },
         {
           ["MBIN_FILE_SOURCE"] 	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/OXYGENHARVESTER180/ENTITIES/OXYGENHARVESTER.ENTITY.MBIN",
-          ["EXML_CHANGE_TABLE"] 	= 
+          ["MXML_CHANGE_TABLE"] 	= 
           {
             {
-              ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
-              ["SECTION_ACTIVE"] = 1,
+              ["SPECIAL_KEY_WORDS"] = {"PreInstalledTech","GcMaintenanceElement"},
+              ["SECTION_ACTIVE"] = 0,
+              ["WHERE_IN_SECTION"] =  
+                {  
+                  {"AmountEmptyTimePeriod","720.000000",}, 
+                },
               ["VALUE_CHANGE_TABLE"] 	= 
               {
-                {"AmountEmptyTimePeriod",FuelTime}
+                {"AmountEmptyTimePeriod",FuelTime} -- Original: 720
               }
             },
             {
-              ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
-              ["SECTION_ACTIVE"] = 2,
+              ["SPECIAL_KEY_WORDS"] = {"PreInstalledTech","GcMaintenanceElement"},
+              ["SECTION_ACTIVE"] = 1,
+              ["WHERE_IN_SECTION"] =  
+                {  
+                  {"AmountEmptyTimePeriod","-720.000000",},
+                  {"MaxCapacity","250",}, 
+                },
               ["VALUE_CHANGE_TABLE"] 	= 
               {
-                {"MaxCapacity",Output},
-                {"AmountEmptyTimePeriod",WorkTime}
+                {"MaxCapacity",Output}, -- Original: 250
+                {"AmountEmptyTimePeriod",WorkTime} -- Original: -720
               }
             },
           }
         },
         {
           ["MBIN_FILE_SOURCE"] 	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/GASHARVESTER/ENTITIES/GASHARVESTER.ENTITY.MBIN",
-          ["EXML_CHANGE_TABLE"] 	= 
+          ["MXML_CHANGE_TABLE"] 	= 
           {
             {
-              ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
-              ["SECTION_ACTIVE"] = 1,
+              ["SPECIAL_KEY_WORDS"] = {"PreInstalledTech","GcMaintenanceElement"},
+              ["SECTION_ACTIVE"] = 0,
+              ["WHERE_IN_SECTION"] =  
+                {  
+                  {"AmountEmptyTimePeriod","3600.000000",}, 
+                },
               ["VALUE_CHANGE_TABLE"] 	= 
               {
-                {"AmountEmptyTimePeriod",FuelTime}
+                {"AmountEmptyTimePeriod",FuelTime} -- Original: 3600
               }
             },
             {
-              ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
-              ["SECTION_ACTIVE"] = 2,
+              ["SPECIAL_KEY_WORDS"] = {"PreInstalledTech","GcMaintenanceElement"},
+              ["SECTION_ACTIVE"] = 1,
+              ["WHERE_IN_SECTION"] =  
+                {  
+                  {"AmountEmptyTimePeriod","-3600.000000",},
+                  {"MaxCapacity","250",},
+                },
               ["VALUE_CHANGE_TABLE"] 	= 
               {
-                {"MaxCapacity",Output},
-                {"AmountEmptyTimePeriod",WorkTime}
+                {"MaxCapacity",Output}, -- Original: 250
+                {"AmountEmptyTimePeriod",WorkTime} -- Original: -3600
               }
             },
           }
         },
-        {
-          ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN",
-          ["EXML_CHANGE_TABLE"] 	= 
-          {
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID","BUILDHARVESTER"},
-              ["VALUE_CHANGE_TABLE"] 	= 
-              {
-                {"CanPickUp","True"}
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID","O2_HARVESTER"},
-              ["VALUE_CHANGE_TABLE"] 	= 
-              {
-                {"CanPickUp","True"}
-              }
-            },
-          }
-        }
       }
     }
   }

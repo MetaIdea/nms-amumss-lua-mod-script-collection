@@ -1,11 +1,11 @@
 Author = "Syzzle"
 ModName = "You're going to Brazil - Random Black Hole"
-GameVersion = "5.29"
+GameVersion = "6.02"
 Description = "Black Hole destination is now random instead of fixed."
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= ModName..".pak",
+["MOD_FILENAME"] 			= ModName,
 ["MOD_AUTHOR"]				= Author,
 ["NMS_VERSION"]				= GameVersion,
 ["MOD_DESCRIPTION"] 		= Description,
@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       { 
         {
           ["MBIN_FILE_SOURCE"] 	= "MODELS/SPACE/BLACKHOLE/BLACKHOLE/ENTITIES/BLACKHOLE.ENTITY.MBIN",
-          ["EXML_CHANGE_TABLE"] 	= 
+          ["MXML_CHANGE_TABLE"] 	= 
           {
             {
               ["VALUE_CHANGE_TABLE"]  =

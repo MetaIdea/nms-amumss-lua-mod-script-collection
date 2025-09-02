@@ -66,7 +66,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Better Space Stations Sell Everything (EISS)-WOSP",
 ["MOD_AUTHOR"]      = "MasterNetra & musty123 & Babscoole",
 ["LUA_AUTHOR"]      = "Babscoole & MasterNetra",
-["NMS_VERSION"]     = "5.73",
+["NMS_VERSION"]     = "6.00",
 ["MOD_DESCRIPTION"] = "This mod adds the most of the items in game to the space station vendors.(No Ship Parts Version)",
 ["MODIFICATIONS"]   =
     {

@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Better Rifles"
-GameVersion = "5.29"
+GameVersion = "6.02"
 --ModVersion = "v1.1"
 Description = "Change Rifle base stats to the same as Alien Multi-Tool."
 
@@ -8,7 +8,7 @@ Description = "Change Rifle base stats to the same as Alien Multi-Tool."
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= ModName..".pak",
+["MOD_FILENAME"] 			= ModName,
 ["MOD_AUTHOR"]				= Author,
 ["NMS_VERSION"]				= GameVersion,
 ["MOD_DESCRIPTION"] 		= Description,
@@ -20,10 +20,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         {
           ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN",
             
-          ["EXML_CHANGE_TABLE"] 	= 
+          ["MXML_CHANGE_TABLE"] 	= 
           {
             {
-              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryCostDataEntry.xml",},
+              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryCostDataEntry",},
               ["VALUE_CHANGE_TABLE"]  =
               {
                 {"B",10},
@@ -33,7 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             },	
             -- Class C Multitools Base Stats
             {
-              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE",},
+              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData","C","GcInventoryGenerationBaseStatClassData","BaseStatID","WEAPON_DAMAGE",},
               ["VALUE_CHANGE_TABLE"] 	= 
               {
                 {"Min",10},
@@ -41,14 +41,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING",},
+              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData","C","GcInventoryGenerationBaseStatClassData","BaseStatID","WEAPON_MINING",},
               ["VALUE_CHANGE_TABLE"] 	= 
               {
                 {"Max",5}
               }
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","C","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN",},
+              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData","C","GcInventoryGenerationBaseStatClassData","BaseStatID","WEAPON_SCAN",},
               ["VALUE_CHANGE_TABLE"] 	= 
               {
                 {"Min",20},
@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
             -- Class B Multitools Base Stats
             {
-              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE",},
+              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData","B","GcInventoryGenerationBaseStatClassData","BaseStatID","WEAPON_DAMAGE",},
               ["VALUE_CHANGE_TABLE"] 	= 
               {
                 {"Min",15},
@@ -65,7 +65,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING",},
+              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData","B","GcInventoryGenerationBaseStatClassData","BaseStatID","WEAPON_MINING",},
               ["VALUE_CHANGE_TABLE"] 	= 
               {
                 {"Min",5},
@@ -73,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","B","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN",},
+              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData","B","GcInventoryGenerationBaseStatClassData","BaseStatID","WEAPON_SCAN",},
               ["VALUE_CHANGE_TABLE"] 	= 
               {
                 {"Min",30},
@@ -82,7 +82,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
             -- Class A Multitools Base Stats
             {
-              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE",},
+              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData","A","GcInventoryGenerationBaseStatClassData","BaseStatID","WEAPON_DAMAGE",},
               ["VALUE_CHANGE_TABLE"] 	= 
               {
                 {"Min",20},
@@ -90,7 +90,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING",},
+              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData","A","GcInventoryGenerationBaseStatClassData","BaseStatID","WEAPON_MINING",},
               ["VALUE_CHANGE_TABLE"] 	= 
               {
                 {"Min",10},
@@ -98,7 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","A","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN",},
+              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData","A","GcInventoryGenerationBaseStatClassData","BaseStatID","WEAPON_SCAN",},
               ["VALUE_CHANGE_TABLE"] 	= 
               {
                 {"Min",40},
@@ -107,7 +107,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
             -- Class S Multitools Base Stats
             {
-              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_DAMAGE",},
+              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData","S","GcInventoryGenerationBaseStatClassData","BaseStatID","WEAPON_DAMAGE",},
               ["VALUE_CHANGE_TABLE"] 	= 
               {
                 {"Min",25},
@@ -115,7 +115,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_MINING",},
+              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData","S","GcInventoryGenerationBaseStatClassData","BaseStatID","WEAPON_MINING",},
               ["VALUE_CHANGE_TABLE"] 	= 
               {
                 {"Min",15},
@@ -123,7 +123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData.xml","S","GcInventoryGenerationBaseStatClassData.xml","BaseStatID","WEAPON_SCAN",},
+              ["SPECIAL_KEY_WORDS"] = {"Rifle","GcInventoryGenerationBaseStatData","S","GcInventoryGenerationBaseStatClassData","BaseStatID","WEAPON_SCAN",},
               ["VALUE_CHANGE_TABLE"] 	= 
               {
                 {"Min",50},

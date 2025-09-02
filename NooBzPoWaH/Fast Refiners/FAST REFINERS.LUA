@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]				= "wim95-NooBzPoWaH",
 ["LUA_AUTHOR"]				= "wim95-NooBzPoWaH",
 ["MOD_DESCRIPTION"]			= "This Mod makes Refiners speed 10 times faster",
-["NMS_VERSION"]				= "5.64+",
+["NMS_VERSION"]				= "6.+",
 ["MODIFICATIONS"] 			= 
 	{
 		{

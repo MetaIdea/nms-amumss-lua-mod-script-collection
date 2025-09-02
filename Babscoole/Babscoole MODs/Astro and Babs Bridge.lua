@@ -7084,6 +7084,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\BIGGS\ENTITIES\BIGGSLANDINGZONEOUTPOST.ENTITY.MBIN",
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Components", "GcOutpostComponentData"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PlayerAutoLandRange", "300.000000"},
+                            }
+                        },
+                    }
+                },
             }
         }
     },
