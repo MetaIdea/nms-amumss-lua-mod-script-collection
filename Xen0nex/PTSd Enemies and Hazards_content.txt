@@ -75,14 +75,14 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
     SCRIPT NAME: PTSd Enemies and Hazards\PTSd Stronger Environmental Hazards.lua
-   MOD FILENAME: PTSd Stronger Environmental Hazards5_64.pak
+   MOD FILENAME: PTSd Stronger Environmental Hazards6_00.pak
    MOD BATCHNAME: nil
      MOD AUTHOR: Xen0nex
      LUA AUTHOR: nil
 MOD MAINTENANCE: nil
 MOD DESCRIPTION: <<<Makes hazards (toxic, cold, hot, radiation) harsher. Also increases chances for special weather events (Tornadoes) and adjusts their properties.>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 5_64
+    NMS VERSION: 6_00
 
 =====================
 Original information:

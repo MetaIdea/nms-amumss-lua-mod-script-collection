@@ -62,6 +62,18 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 
 =====================
 Original information:
+    SCRIPT NAME: PTSd Prices and Tech etc\PTSd Corvette module stats.lua
+   MOD FILENAME: PTSd Corvette module stats6_00.pak
+   MOD BATCHNAME: nil
+     MOD AUTHOR: Xen0nex
+     LUA AUTHOR: nil
+MOD MAINTENANCE: nil
+MOD DESCRIPTION: <<<Adjusts the bonuses and their strengths granted by Corvette modules, eliminates random variation of stat bonuses from Corvette modules>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+    NMS VERSION: 6_00
+
+=====================
+Original information:
     SCRIPT NAME: PTSd Prices and Tech etc\PTSd Exocraft scanner Changes.lua
    MOD FILENAME: PTSd Exocraft scanner Changes5_58.pak
    MOD BATCHNAME: nil

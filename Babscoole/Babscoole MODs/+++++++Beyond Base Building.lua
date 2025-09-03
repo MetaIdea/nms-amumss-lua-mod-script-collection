@@ -1246,4 +1246,22 @@ if BASEPARTS_ON_CORVETTE then
             {"BuildableInShipDecorative", "true"}
         },
     }
+
+    Change_Table_Array[#Change_Table_Array + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "U_MINIPORTAL"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"BuildableInShipDecorative", "false"},
+        },
+    }
+
+    Change_Table_Array[#Change_Table_Array + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "U_MINIPORTAL_CV"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"BuildableOnPlanetBase", "false"},
+        },
+    }
 end

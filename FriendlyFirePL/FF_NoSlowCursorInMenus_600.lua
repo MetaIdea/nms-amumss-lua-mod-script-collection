@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "NoSlowCursorInMenus"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "Babscoole, FriendlyFirePL"
-METADATA_NMS_VERSION    = "600"
+METADATA_NMS_VERSION    = "602"
 METADATA_MOD_DESC       = "This mod removes the cursor slow down effect present in menus when using analog sticks for input"
 
 

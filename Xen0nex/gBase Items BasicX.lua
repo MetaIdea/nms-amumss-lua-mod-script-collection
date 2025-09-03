@@ -108,7 +108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"BuildEffectAccelerator",1},
 		}},
 	
-	{["PRECEDING_KEY_WORDS"] = {""},
+	{["PRECEDING_KEY_WORDS"] = {""},				--Removes most restrictions for most items on where/when they can be placed
 	["REPLACE_TYPE"] = "ALL",
 	["VALUE_CHANGE_TABLE"] = {
 		{"IsDecoration","false"},
@@ -133,6 +133,69 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"DependsOnEnvironment","None"},
 		{"RemovesAttachedDecoration","false"},
 		{"RemovesWhenUnsnapped","false"},
+		}},
+		
+	{["SPECIAL_KEY_WORDS"] = {"BuildableInShipStructural", "true"},	--Re-adds most restrictions for all structural Corvette parts
+	["REPLACE_TYPE"] = "ALL",
+	["VALUE_CHANGE_TABLE"] = {
+		{"IsDecoration","false"},
+		{"IsPlaceable","true"},
+		{"BuildableOnPlanetBase","false"},
+		{"BuildableOnFreighter","false"},
+		{"BuildableOnSpaceBase","false"},
+		{"BuildableUnderwater","true"},
+		{"BuildableAboveWater","true"},
+		{"PlanetBaseLimit",0},
+		{"RegionLimit",0},
+		{"PlanetLimit",0},
+		{"FreighterBaseLimit",0},
+		{"CheckPlaceholderCollision","false"},
+		{"CheckPlayerCollision","true"},
+		{"CanRotate3D","false"},
+		{"CanScale","false"},
+		{"CanChangeColour","true"},
+		{"CanChangeMaterial","true"},
+		{"DependsOnEnvironment","None"},
+		{"RemovesAttachedDecoration","true"},
+		{"RemovesWhenUnsnapped","false"},
+		}},
+		
+	{["SPECIAL_KEY_WORDS"] = {										--Re-adds most restrictions for all structural Corvette parts
+                     {"ID", "B_WALL_TOIL0"}, {"ID", "B_WALL_KITC0"}, {"ID", "B_WALL_BUNK0"}, {"ID", "B_WALL_CARG0"}, {"ID", "B_WALL_CARG1"}, {"ID", "B_WALL_CARG2"}, {"ID", "B_WALL_CARG3"}, {"ID", "B_WALL_CARG4"}, {"ID", "B_WALL_CARG5"}, {"ID", "B_WALL_CARG6"}, {"ID", "B_WALL_CARG7"}, {"ID", "B_WALL_CARG8"}, {"ID", "B_WALL_CARG9"}, {"ID", "B_WALL_MED0"}, {"ID", "B_WALL_TECH0"}, {"ID", "B_WALL_TECH1"}, {"ID", "B_WALL_PLAN0"}, {"ID", "B_DOOR0"}, {"ID", "B_STAIRS0"}, {"ID", "B_WALL_WIND0"}, {"ID", "B_WALL_WIND1"}, {"ID", "B_WALL_WIND2"},
+                   },
+	["VALUE_CHANGE_TABLE"] = {
+		{"IsDecoration","true"},
+		{"IsPlaceable","false"},
+		{"BuildableOnPlanetBase","false"},
+		{"BuildableOnFreighter","false"},
+		{"BuildableOnSpaceBase","false"},
+		{"BuildableUnderwater","true"},
+		{"BuildableAboveWater","true"},
+		{"PlanetBaseLimit",0},
+		{"RegionLimit",0},
+		{"PlanetLimit",0},
+		{"FreighterBaseLimit",0},
+		{"CheckPlaceholderCollision","false"},
+		{"CheckPlayerCollision","true"},
+		{"CanRotate3D","false"},
+		{"CanScale","false"},
+		{"CanChangeColour","true"},
+		{"CanChangeMaterial","false"},
+		{"DependsOnEnvironment","None"},
+		{"RemovesAttachedDecoration","true"},
+		{"RemovesWhenUnsnapped","false"},
+		}},
+		
+	{["SPECIAL_KEY_WORDS"] = {"ID", "B_DOOR0"},						--Re-adds most restrictions for all structural Corvette parts
+	["VALUE_CHANGE_TABLE"] = {
+		{"IsDecoration","true"},
+		{"IsPlaceable","true"},
+		}},
+		
+	{["SPECIAL_KEY_WORDS"] = {"ID", "B_STAIRS0"},					--Re-adds most restrictions for all structural Corvette parts
+	["VALUE_CHANGE_TABLE"] = {
+		{"IsDecoration","false"},
+		{"IsPlaceable","false"},
 		}},
 
 	{["SPECIAL_KEY_WORDS"] = {"ID","MESSAGEMODULE"},

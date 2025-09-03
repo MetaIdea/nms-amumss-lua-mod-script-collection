@@ -16,7 +16,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"] = ModName..".pak",
+    ["MOD_FILENAME"] = ModName,
     ["MOD_DESCRIPTION"] = ModDescription,
     ["MOD_AUTHOR"] = Author,
 	["AMUMSS_SUPPRESS_MSG"] = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE, MIXED_TABLE",
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {   
                             ["PKW"]   = {"BaseStats"},

@@ -289,9 +289,9 @@ ShipStatChanges	=
 			"Corvette"	--Corvette			Maneuverability: Low	Speed: Low	
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"SHIP_DAMAGE",				1,		1,		1,		1},			--			+		0[0.5-3],	3-8,		8-15,		15-30	%
-			{"SHIP_SHIELD",				1.5,	1.5,	1.5,	1.5},		--			+		18-30,		40-55,		60-75,		95-125	%
-			{"SHIP_HYPERDRIVE",			1.2,	1.2,	1.2,	1.2},		--			+		5-10,		8-15[10-20], 23-37,		45-58	%
+			{"SHIP_DAMAGE",				0.5,	0.5,	0.5,	0.5},		--			+		0[0.5-3],	3-8,		8-15,		15-30	%
+			{"SHIP_SHIELD",				1,		1,		1,		1},			--			+		18-30,		40-55,		60-75,		95-125	%
+			{"SHIP_HYPERDRIVE",			1.1,	1.1,	1.1,	1.1},		--			+		5-10,		8-15[10-20], 23-37,		45-58	%
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		0,			0-5,		5-10,		10-15,	%
 		}
 	},
@@ -371,7 +371,7 @@ ShipAgileChanges	=
 	},
 	{
 		{
-			"Corvette",				10,		13.3,	16.7,	20,			--			+		0,			0-5,		5-10,		10-15,	%
+			"Corvette",				-15,	-10,	-5,		0,			--			+		0,			0-5,		5-10,		10-15,	%
 		},
 		{"C", "B", "A", "S"}		
 	},
@@ -400,7 +400,7 @@ ShipBounds =
 --Replacers for INITIAL Inventory size found on spawned purchaseable / crashed ships. NOT maximum upgradeable size for ships.
 	--NOTE as of NMS 4.0, any reference in game files to "cargo" slots/inventory are actually referring to the deprecated 3rd inventory type, so no longer have any effect
 	--NOTE: # of supercharged slots can not be changed here for starships or multi-tools, only for exocraft and the exosuit in DEFAULTSAVEDATA.MBIN
-		--However, the bounds where supercharged slots can be set for multi-tools. SX & SY set these bounds (top left slot is X=0, Y=0)  (Does not appear to wrk for starships?)
+		--However, the bounds where supercharged slots can be set for multi-tools. SX & SY set these bounds (top left slot is X=0, Y=0)  (Does not appear to work for starships?)
 ShipInitialSizeChanges	=
 {	--Ship type & size			MinCarg	MaxCarg		MinTech	MaxTech		SX	SY		Vanilla	MinCarg	MaxCarg		MinTech	MaxTech		SX	SY
 	{"ShuSmall",				10,		15,			9,		14,			9,	2},			--	24,		32,			12,		19,			9,	2
@@ -427,13 +427,13 @@ ShipInitialSizeChanges	=
 	{"RobotSmall",				9,		13,			15,		22,			9,	2},			--	32,		40,			22,		28,			-1,	-1	Seems unused in-game by default?
 	{"RobotMedium",				9,		13,			15,		22,			9,	2},			--	32,		40,			22,		28,			-1,	-1	Seems unused in-game by default?
 	{"RobotLarge",				9,		13,			15,		22,			9,	2},			--	32,		40,			22,		28,			-1,	-1
-	{"Corvette",				13,		14,			16,		21,			9,	2},			--	40,		48,			20,		30,			9,	2
+	{"Corvette",				9,		10,			12,		16,			9,	2},			--	40,		48,			20,		30,			9,	2
 	{"FreighterSmall",			17,		30,			8,		14,			9,	2},			--	15,		19,			8,		12,			9,	2	"Regular" Freighters
 	{"FreighterMedium",			28,		41,			13,		19,			9,	2},			--	24,		34,			12,		20,			9,	2	"Capital" Freighters
 	{"FreighterLarge",			39,		52,			18,		24,			9,	2},			--	35,		48,			18,		30,			9,	2	Unused in-game by default
 }
 
-DefaultCorvetteSlots = 15			--26		(the game adds +1 to this value)	Presumably default Cargo Slots on new Corvettes
+DefaultCorvetteSlots = 9			--26		(the game adds +1 to this value)	Presumably default Cargo Slots on new Corvettes
 
 --Replacers for maximum UPGRADEABLE Inventory size for ships. NOT initial sizes for spawned ships.
 ShipUpgradeSizeChanges	=
@@ -467,7 +467,7 @@ ShipUpgradeSizeChanges	=
 			--{"Alien",							0,		0,		0,		48},		--				60,		60,		60,		60,		--Handled in LivingShipUpgradeSizeChanges section below
 			{"Sail",							18,		24,		30,		40},		--				30,		40,		50,		60,
 			{"Robot",							18,		24,		30,		40},		--				30,		40,		50,		60,
-			{"Corvette",						30,		40,		50,		60},		--				30,		40,		50,		60,
+			{"Corvette",						35,		44,		53,		65},		--				30,		40,		50,		60,
 			{"Freighter",						18,		24,		30,		36},		--				30,		40,		50,		60,
 			{"PlayerFreighter",					0,		0,		0,		0},			--				0,		0,		0,		0},
 		},

@@ -15,7 +15,7 @@ ManMult = 1													--	Global multiplier for Maneuverability for all ships ?
 
 ReplaceControlHover = true									--false			Set to true to make ControlHover be based off of Control instead of off of ControlHeavy
 
-CorvettePulseBoost = 1.33									--3			Presumably how much faster than normal the Corvette's Pulse Jump speed is
+CorvettePulseBoost = 1										--3			Presumably how much faster than normal the Corvette's Pulse Jump speed is
 
 ShipSpeedChanges =
 {
@@ -250,10 +250,10 @@ ShipSpeedChanges =
 			{
 				{"SpaceEngine"},						--Speed in open space
 				{
-					{"ThrustForce",						30*ThrustMult},						--40		Thrust / acceleration?
-					{"MaxSpeed",						150*MaxSpeedMult},					--180		Top Speed?
-					{"BoostThrustForce",				400*BoostThrustMult},				--500		Boosting Thrust / acceleration?
-					{"BoostMaxSpeed",					1000*MaxBoostSpeedMult},			--1100		Boosting Top Speed?
+					{"ThrustForce",						45*ThrustMult},						--40		Thrust / acceleration?
+					{"MaxSpeed",						190*MaxSpeedMult},					--180		Top Speed?
+					{"BoostThrustForce",				425*BoostThrustMult},				--500		Boosting Thrust / acceleration?
+					{"BoostMaxSpeed",					1300*MaxBoostSpeedMult},			--1100		Boosting Top Speed?
 					{"TurnStrength",					0.6*ManMult},						--0.6		Maneuverability?
 				}
 			},
@@ -264,16 +264,16 @@ ShipSpeedChanges =
 					{"MaxSpeed",						110*MaxSpeedMult},					--130		Top Speed?
 					{"BoostThrustForce",				50*BoostThrustMult},				--20		Boosting Thrust / acceleration?
 					{"BoostMaxSpeed",					140*MaxBoostSpeedMult},				--185		Boosting Top Speed?
-					{"TurnStrength",					0.7*ManMult},						--0.7		Maneuverability?
+					{"TurnStrength",					0.6*ManMult},						--0.7		Maneuverability?
 				}
 			},
 			{
 				{"CombatEngine"},						--Speed while fighting in space
 				{
-					{"ThrustForce",						30*ThrustMult},						--40		Thrust / acceleration?
-					{"MaxSpeed",						100*MaxSpeedMult},					--100		Top Speed?
-					{"BoostThrustForce",				400*BoostThrustMult},				--500		Boosting Thrust / acceleration?
-					{"BoostMaxSpeed",					1000*MaxBoostSpeedMult},			--1100		Boosting Top Speed?
+					{"ThrustForce",						45*ThrustMult},						--40		Thrust / acceleration?
+					{"MaxSpeed",						120*MaxSpeedMult},					--100		Top Speed?
+					{"BoostThrustForce",				525*BoostThrustMult},				--500		Boosting Thrust / acceleration?
+					{"BoostMaxSpeed",					1300*MaxBoostSpeedMult},			--1100		Boosting Top Speed?
 					{"TurnStrength",					1*ManMult},							--1			Maneuverability?
 				}
 			},
@@ -284,7 +284,7 @@ ShipSpeedChanges =
 					{"MaxSpeed",						70*MaxSpeedMult},					--80		Top Speed?
 					{"BoostThrustForce",				60*BoostThrustMult},				--50		Boosting Thrust / acceleration?
 					{"BoostMaxSpeed",					120*MaxBoostSpeedMult},				--120		Boosting Top Speed?
-					{"TurnStrength",					1*ManMult},							--1			Maneuverability?
+					{"TurnStrength",					0.85*ManMult},						--1			Maneuverability?
 				}
 			},
 		}

@@ -27,8 +27,14 @@ EngManMult = 1											--	Multiplier to apply to the base Maneuverability for 
 LnchModSpdMult = 0.333*0.5								--	Multiplier to apply to the bonus boost speed from regular ship Launcher upgrade modules
 LnchModLSSpdMult = 0.333*0.5*1.2						--	Multiplier to apply to the bonus boost speed from Living ship Launcher upgrade modules	(By default this mod gives Living ship Launcher modules the same boost speed bonus that regular ship Launcher modules have, instead of no speed boost)
 
+LnchModCstMult = 0.75									--	Multiplier to apply to the launch cost discount from regular ship Launcher upgrade modules (Not the Efficient Thrusters tech)
+LnchModLSCstMult = 0.75									--	Multiplier to apply to the launch cost discount from Living ship Launcher upgrade modules
+
 EngModSpdMult = 0.333*0.5								--	Multiplier to apply to the bonus boost speed from regular ship Pulse Engine upgrade modules (And also the Photonix Core and the bobblehead bonus)
 EngModLSSpdMult = 0.333*0.5*1.2							--	Multiplier to apply to the bonus boost speed from Living ship Pulse Engine upgrade modules
+
+EngModPEffMult = 0.5									--	Multiplier to apply to the pulse jump fuel discount from regular ship Pulse Engine upgrade modules
+EngModLSPEffMult = 0.5									--	Multiplier to apply to the pulse jump fuel discount from Living ship Pulse Engine upgrade modules
 
 EngModManMult = 0.5										--	Multiplier to apply to the bonus maneuverability from regular ship Pulse Engine upgrade modules 
 EngModLSManMult = 0.5									--	Multiplier to apply to the bonus maneuverability from Living ship Pulse Engine upgrade modules
@@ -60,9 +66,6 @@ RemoveVesperAutoCharge = true							--false
 
 --Set to true to remove the Auto-Recharging effect for Living Ship S-Class Launcher upgrade modules (Living Ships now have a dedicated tech for that)
 RemoveLivingAutoCharge = true							--false
-
---Set to true to remove the Auto-Recharging effect all Corvette modules (can still instead regular starship auto-recharging tech)
-RemoveCorvetteAutoCharge = true							--false
 
 --Changes to using items to recharge starship tech
 ShipLaunchRechargeMult = 6								--	Multiplier to apply to the cost of Uranium on recharging ship launchers										40 to fully charge
@@ -100,10 +103,10 @@ ConBridgeSubstance = "GREEN2"							--"ROBOT1"
 DistanceMultLong = 4									--Multiplier to apply to distances greater than 650
 DistanceMultShort = 10									--Multiplier to apply to distances 650 or lower
 
---Changes for Hyperdrive upgrade modules
-HyperEffBonusMin = 0.5									--1		Minimum efficiency bonus for A, S, X Class Hyperdrive upgrade modules for all starships & freigthers. Vanilla value of 1 = 100% more efficient (double)
-HyperEffBonusMax = 0.5									--1		Maximum efficiency bonus for A, S, X Class Hyperdrive upgrade modules for all starships & freigthers. Vanilla value of 1 = 100% more efficient (double)
-HyperDistBonusMult = 1.1								--1		Multiplier to apply to the strength of the distance bonus on all starships & freigthers hyperdrive upgrades
+--Changes for procedural Hyperdrive upgrade modules
+HyperEffBonusMin = 0.5									--1		Minimum efficiency bonus for A, S, X Class Hyperdrive upgrade modules for all starships & freighters (also affects any relevant Corvette modules). Vanilla value of 1 = 100% more efficient (double)
+HyperEffBonusMax = 0.5									--1		Maximum efficiency bonus for A, S, X Class Hyperdrive upgrade modules for all starships & freighters (also affects any relevant Corvette modules). Vanilla value of 1 = 100% more efficient (double)
+HyperDistBonusMult = 1.1								--1		Multiplier to apply to the strength of the distance bonus on all starships & freighters hyperdrive upgrades (also affects any relevant Corvette modules)
 
 --Changes some attributes of the special tech that Sentinel Interceptors start with
 RemoveRoboAutoCharge = true								--false		Set to true to remove the Sentinel Interceptor's innate Launch Thruster autocharge ability
@@ -330,11 +333,29 @@ AddStarShieldBatt =
 ShipTrailTechs =
 {"T_SHIP_DARK", "T_SHIP_GOLD", "T_SHIP_GREEN", "T_SHIP_PIRATE", "T_SHIP_RAINBOW", "T_SHIP_RED", "T_SHIP_ROGUE", "T_SHIP_PLASMA"}
 
+ShipLaunchMods =
+{"UP_LAUN0", "UP_LAUN1", "UP_LAUN2", "UP_LAUN3", "UP_LAUN4", "UP_LAUNX"}
+
+LivingShipLaunchMods =
+{"UA_LAUN1", "UA_LAUN2", "UA_LAUN3", "UA_LAUN4"}
+
 ShipPulseMods =
 {"UP_PULSE0", "UP_PULSE1", "UP_PULSE2", "UP_PULSE3", "UP_PULSE4", "UP_PULSEX"}
 
 LivingShipPulseMods =
 {"UA_PULSE1", "UA_PULSE2", "UA_PULSE3", "UA_PULSE4"}
+
+HyperdriveDistUpgrades =
+{"UP_HYP1", "UP_HYP2", "UP_HYP3", "UP_HYP4", "UP_HYPX", "UP_HYP0", "UA_HYP1", "UA_HYP2", "UA_HYP3", "UA_HYP4",}
+
+FreiHyperdriveDistUpgrades =
+{"UP_FRHYP1", "UP_FRHYP2", "UP_FRHYP3", "UP_FRHYP4",}
+
+HyperdriveEffUpgrades =
+{"UP_HYP3", "UP_HYP4", "UP_HYPX", "UA_HYP3", "UA_HYP4",}
+
+FreiHyperdriveEffUpgrades =
+{"UP_FRHYP3", "UP_FRHYP4",}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= ModName..Version..".pak",
@@ -919,48 +940,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'ValueMax', 0.2*ShieldLSModMult}
 				}
 			},
-			{
-				SPECIAL_KEY_WORDS	= {"StatsType", "Ship_Hyperdrive_JumpsPerCell"},
-				REPLACE_TYPE 		= 'ALL',
-				INTEGER_TO_FLOAT	= 'FORCE',
-				SECTION_UP = 1,
-				VALUE_CHANGE_TABLE 	= {
-					{'ValueMin', HyperEffBonusMin},
-					{'ValueMax', HyperEffBonusMax}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {"StatsType", "Freighter_Hyperdrive_JumpsPerCell"},
-				REPLACE_TYPE 		= 'ALL',
-				INTEGER_TO_FLOAT	= 'FORCE',
-				SECTION_UP = 1,
-				VALUE_CHANGE_TABLE 	= {
-					{'ValueMin', HyperEffBonusMin},
-					{'ValueMax', HyperEffBonusMax}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {"StatsType", "Ship_Hyperdrive_JumpDistance"},
-				REPLACE_TYPE 		= 'ALL',
-				MATH_OPERATION 		= '*',
-				INTEGER_TO_FLOAT	= 'PRESERVE',
-				SECTION_UP = 1,
-				VALUE_CHANGE_TABLE 	= {
-					{'ValueMin', HyperDistBonusMult},
-					{'ValueMax', HyperDistBonusMult}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {"StatsType", "Freighter_Hyperdrive_JumpDistance"},
-				REPLACE_TYPE 		= 'ALL',
-				MATH_OPERATION 		= '*',
-				INTEGER_TO_FLOAT	= 'PRESERVE',
-				SECTION_UP = 1,
-				VALUE_CHANGE_TABLE 	= {
-					{'ValueMin', HyperDistBonusMult},
-					{'ValueMax', HyperDistBonusMult}
-				}
-			},
 		}
 	},
 	--Living Ship Speed and Maneuverability now handled by ShipTechChanges above
@@ -1242,19 +1221,82 @@ ChangesToProcTech[#ChangesToProcTech+1] =
 				["REMOVE"] = "SECTION"
 			}
 end
-if RemoveCorvetteAutoCharge then
-ChangesToProcTech[#ChangesToProcTech+1] =
+
+for i = 1, #ShipLaunchMods do
+	local ModID = ShipLaunchMods[i]
+
+			ChangesToProcTech[#ChangesToProcTech+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {
-                     {"ID", "CV_SCI1",	"StatsType", "Ship_Launcher_AutoCharge"},
-                     {"ID", "CV_SCI2",	"StatsType", "Ship_Launcher_AutoCharge"},
-					 {"ID", "CV_SCI3",	"StatsType", "Ship_Launcher_AutoCharge"},
-					 {"ID", "CV_SCI4",	"StatsType", "Ship_Launcher_AutoCharge"},
-                   },
+				["MATH_OPERATION"] 		= "-",
+				["SPECIAL_KEY_WORDS"] = {"ID", ModID,		"StatsType", "Ship_Launcher_TakeOffCost"},
 				["SECTION_UP"] = 1,
-				["REMOVE"] = "SECTION"
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", 1},
+					{"ValueMax", 1}
+				}
+			}
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["MATH_OPERATION"] 		= "*",
+				["SPECIAL_KEY_WORDS"] = {"ID", ModID,		"StatsType", "Ship_Launcher_TakeOffCost"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", LnchModCstMult},
+					{"ValueMax", LnchModCstMult}
+				}
+			}
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["MATH_OPERATION"] 		= "+",
+				["SPECIAL_KEY_WORDS"] = {"ID", ModID,		"StatsType", "Ship_Launcher_TakeOffCost"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", 1},
+					{"ValueMax", 1}
+				}
 			}
 end
+for i = 1, #LivingShipLaunchMods do
+	local ModID = LivingShipLaunchMods[i]
+
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["MATH_OPERATION"] 		= "-",
+				["SPECIAL_KEY_WORDS"] = {"ID", ModID,		"StatsType", "Ship_Launcher_TakeOffCost"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", 1},
+					{"ValueMax", 1}
+				}
+			}
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["MATH_OPERATION"] 		= "*",
+				["SPECIAL_KEY_WORDS"] = {"ID", ModID,		"StatsType", "Ship_Launcher_TakeOffCost"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", LnchModLSCstMult},
+					{"ValueMax", LnchModLSCstMult}
+				}
+			}
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["MATH_OPERATION"] 		= "+",
+				["SPECIAL_KEY_WORDS"] = {"ID", ModID,		"StatsType", "Ship_Launcher_TakeOffCost"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", 1},
+					{"ValueMax", 1}
+				}
+			}
+end
+
 for i = 1, #ShipPulseMods do
 	local ModID = ShipPulseMods[i]
 
@@ -1318,6 +1360,39 @@ for i = 1, #ShipPulseMods do
 			{
 				["MATH_OPERATION"] 		= "+",
 				["SPECIAL_KEY_WORDS"] = {"ID", ModID,		"StatsType", "Ship_Maneuverability"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", 1},
+					{"ValueMax", 1}
+				}
+			}
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["MATH_OPERATION"] 		= "-",
+				["SPECIAL_KEY_WORDS"] = {"ID", ModID,		"StatsType", "Ship_PulseDrive_MiniJumpFuelSpending"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", 1},
+					{"ValueMax", 1}
+				}
+			}
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["MATH_OPERATION"] 		= "*",
+				["SPECIAL_KEY_WORDS"] = {"ID", ModID,		"StatsType", "Ship_PulseDrive_MiniJumpFuelSpending"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", EngModPEffMult},
+					{"ValueMax", EngModPEffMult}
+				}
+			}
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["MATH_OPERATION"] 		= "+",
+				["SPECIAL_KEY_WORDS"] = {"ID", ModID,		"StatsType", "Ship_PulseDrive_MiniJumpFuelSpending"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -1394,6 +1469,101 @@ for i = 1, #LivingShipPulseMods do
 				{
 					{"ValueMin", 1},
 					{"ValueMax", 1}
+				}
+			}
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["MATH_OPERATION"] 		= "-",
+				["SPECIAL_KEY_WORDS"] = {"ID", ModID,		"StatsType", "Ship_PulseDrive_MiniJumpFuelSpending"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", 1},
+					{"ValueMax", 1}
+				}
+			}
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["MATH_OPERATION"] 		= "*",
+				["SPECIAL_KEY_WORDS"] = {"ID", ModID,		"StatsType", "Ship_PulseDrive_MiniJumpFuelSpending"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", EngModLSPEffMult},
+					{"ValueMax", EngModLSPEffMult}
+				}
+			}
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["MATH_OPERATION"] 		= "+",
+				["SPECIAL_KEY_WORDS"] = {"ID", ModID,		"StatsType", "Ship_PulseDrive_MiniJumpFuelSpending"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", 1},
+					{"ValueMax", 1}
+				}
+			}
+end
+for i = 1, #HyperdriveDistUpgrades do
+	local HypID = HyperdriveDistUpgrades[i]
+
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", HypID,		"StatsType", "Ship_Hyperdrive_JumpDistance"},
+				["MATH_OPERATION"] = "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", HyperDistBonusMult},
+					{"ValueMax", HyperDistBonusMult}
+				}
+			}
+end
+for i = 1, #FreiHyperdriveDistUpgrades do
+	local HypID = FreiHyperdriveDistUpgrades[i]
+
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", HypID,		"StatsType", "Freighter_Hyperdrive_JumpDistance"},
+				["MATH_OPERATION"] = "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", HyperDistBonusMult},
+					{"ValueMax", HyperDistBonusMult}
+				}
+			}
+end
+for i = 1, #HyperdriveEffUpgrades do
+	local HypID = HyperdriveEffUpgrades[i]
+
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", HypID,		"StatsType", "Ship_Hyperdrive_JumpsPerCell"},
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", HyperEffBonusMin},
+					{"ValueMax", HyperEffBonusMax}
+				}
+			}
+end
+for i = 1, #FreiHyperdriveEffUpgrades do
+	local HypID = FreiHyperdriveEffUpgrades[i]
+
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", HypID,		"StatsType", "Freighter_Hyperdrive_JumpsPerCell"},
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", HyperEffBonusMin},
+					{"ValueMax", HyperEffBonusMax}
 				}
 			}
 end

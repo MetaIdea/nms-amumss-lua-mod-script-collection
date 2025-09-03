@@ -1,5 +1,5 @@
 ModName = "PTSd Stronger Environmental Hazards"
-GameVersion = "5_64"
+GameVersion = "6_00"
 Description = "Makes hazards (toxic, cold, hot, radiation) harsher. Also increases chances for special weather events (Tornadoes) and adjusts their properties."
 
 --TODO:
@@ -9,7 +9,7 @@ EventMult = 1												--Global Multiplier to apply to the chances for all the
 																--Note, doesn't apply to any events which currently are set to "-1", which is presumbaly so the game can read some other value from elsewhere in the game code?
 
 --For most of the following values, lower numbers means "faster" / "harder"
-FreighterAbandonedHazardTimeMultiplier = 0.15				--0.15			(Seems to stack in some way with HardModeHazardTimeMultiplier ?)
+FreighterAbandonedHazardTimeMultiplier = 0.15				--0.15			(Seems to stack in some way with NormalModeHazardTimeMultiplier / HardModeHazardTimeMultiplier ?)
 AbandonedFreighterRechargeMod = 0.33						--0.33			I assume this applies a multiplier to the normal HazardRechargeUnderground rate, i.e. Cold protection recharges at 1/3 of the normal rate next to a heater on a derelict freighter
 
 NormalModeHazardTimeMultiplier = 0.15						--0.9	(0.30)	This appears deprecated as of NMS v4.0, changes made by "Survival Difficulty" in "PTSd Other Difficulty Settings.lua" instead
@@ -29,11 +29,11 @@ DeepWaterOxygenMultiplier = 0.2								--0.2			Reduced breath timer when in deep
 StartHazardTimeMultiplier =		3							--10			Applies a temporary bonus multiplier to NormalModeHazardTimeMultiplier at the start of a new game (as long as you have no scanner tech installed on any multi-tool)
 EarlyHazardTimeMultiplier =		1.5							--1.6			Applies a temporary bonus multiplier to NormalModeHazardTimeMultiplier from the time you have a scanner installed in a multi-tool, until you first reach your starship.
 
---Life Support traits
+--Life Support traits	(lower values means easier/slower)
 EnergyDischargeRateLow = 0.08								--0.02			Was 0.08 in the Deprecated "HardMode" version of this value pre-4.0
 EnergyDischargeRateMedium = 0.8								--0.25			Was 0.8 in the Deprecated "HardMode" version of this value pre-4.0
 EnergyDischargeRateHigh = 2.2								--0.9			Was 2.2 in the Deprecated "HardMode" version of this value pre-4.0
-EnergyDischargeRateFloatingInSpace = 30						--30			If the player falls out of a ship / freighter
+EnergyDischargeRateFloatingInSpace = 0.5					--0.2	(30 pre-6.0)	If the player jumps out of a Corvette / freighter / frigate in space
 EnergyDischargeRateDeepWater = 3							--3				Presumably when going deep on deepwater planets
 
 EnergyDamageMinTime = 30									--30			Unknown function

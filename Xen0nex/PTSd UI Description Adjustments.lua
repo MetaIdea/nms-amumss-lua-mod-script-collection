@@ -2,6 +2,40 @@ ModName = "PTSd UI Description Adjustments"
 GameVersion = "6_00"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
+--[[
+NOTE: When using a computer set to a language other than English, PTSd's edits to the names & descriptions for vanilla items/technologies/difficulty settings will not be displayed by default. 
+These edits make the descriptions display accurate info for the changes that PTSd makes, as well as giving more context and tips for using PTSd, especially for the Difficulty Setting descriptions.
+
+If you want to see the accurate info and added context / tips (in English), you can force them to display even when using other language settings by following these instructions
+(This example is for Japanese, for other languages see the list below):
+
+0.	Download AMUMSS if you do not already have it (instructions on downloading & using AMUMSS here: https://www.nexusmods.com/nomanssky/mods/2626 )
+1.	Open the PTSd UI Description Adjustments.lua file in the PTSd Miscellaneous module with any text editor (such as Notepad or Notepad++)
+2.	Do a Find & Replace (ctrl-h on Windows) Replace All from 		ENGLISH.MBIN	 to 	JAPANESE.MBIN
+3.	Also do a Replace All from 		"English"	 to 	"Japanese"		 (do include the quotation marks "")
+4.	Recompile the PTSd Miscellaneous module as a Combined Mod with AMUMSS by placing it in AMUMSS' ModScript folder and running BUILDMOD.bat
+Then just use the resulting edited PTSd Miscellaneous module in place of the original one, and PTSd's edits to vanilla text should display when using that language setting.
+
+List of terms to use in steps 2. & 3. instead of JAPANESE.MBIN / "Japanese" for other languages:
+ENGLISH.MBIN		"English"
+FRENCH.MBIN			"French"
+ITALIAN.MBIN		"Italian"
+GERMAN.MBIN			"German"
+SPANISH.MBIN		"Spanish"
+RUSSIAN.MBIN		"Russian"
+POLISH.MBIN			"Polish"
+DUTCH.MBIN			"Dutch"
+PORTUGUESE.MBIN		"Portuguese"
+LATINAMERICANSPANISH.MBIN		"LatinAmericanSpanish"
+BRAZILIANPORTUGUESE.MBIN	"BrazilianPortuguese"
+SIMPLIFIEDCHINESE.MBIN		"SimplifiedChinese"
+TRADITIONALCHINESE.MBIN		"TraditionalChinese"
+TENCENTCHINESE.MBIN		"TencentChinese"
+KOREAN.MBIN			"Korean"
+JAPANESE.MBIN		"Japanese"
+USENGLISH.MBIN		"USEnglish"
+]]
+
 AnalysisVisorDesc =
 [[Specialist &lt;TECHNOLOGY&gt;Discovery&lt;&gt; and &lt;TECHNOLOGY&gt;Survey&lt;&gt; unit.&#xA;&#xA;Augments standard &lt;TECHNOLOGY&gt;Scanner&lt;&gt; capabilities by projecting detailed environmental data directly over the user's visor. Allows the identification of &lt;STELLAR&gt;distant points of interest&lt;&gt;.&#xA;&#xA;The Visor will generate &lt;COMMODITY&gt;valuable data&lt;&gt; when used to study &lt;TRADEABLE&gt;flora&lt;&gt;, &lt;FUEL&gt;fauna&lt;&gt; and &lt;TECHNOLOGY&gt;minerals&lt;&gt;.&#xA;&lt;HIGHLIGHT&gt;This data's value&lt;&gt; is further boosted by the &lt;CATALYST&gt;Scanning&lt;&gt; stat bonus for your Multi-Tool's type.&#xA;&#xA;Hold &lt;IMG&gt;AIM&lt;&gt; to operate. Press &lt;IMG&gt;ZOOM&lt;&gt; to zoom.]]
 
@@ -30,13 +64,52 @@ HazardProtectDesc =
 [[The Exosuit's &lt;CATALYST&gt;Hazard Protection&lt;&gt; system continually monitors and stabilises the user's environment. &#xA;&#xA;General reactive protection may be augmented with &lt;TECHNOLOGY&gt;Environmental Shields&lt;&gt;, offering increased protection against specific conditions. Additionally, riding in the cockpit of any &lt;TECHNOLOGY&gt;Exocraft&lt;&gt; will provide &lt;TRADE&gt;significant&lt;&gt; environmental protection, &lt;HIGHLIGHT&gt;tripling&lt;&gt; hazard survival times.&#xA;&#xA;The device is charged with &lt;CATALYST&gt;sodium-based substances&lt;&gt; or &lt;CATALYST&gt;Ion Batteries&lt;&gt;. User is advised that a failure to charge the Hazard Protection system may allow their environment to become incompatible with life.]]
 
 VesperSailDesc =
-[[A high-performance &lt;STELLAR&gt;solar sail&lt;&gt;, deployed automatically during flight. This advanced &lt;TECHNOLOGY&gt;propulsion device&lt;&gt; generates an electric field within the sails themselves, allowing the starship to build momentum from the solar wind when pulsing.&#xA;&#xA;Offers substantial gains in &lt;STELLAR&gt;fuel efficiency&lt;&gt; and &lt;STELLAR&gt;Pulse Jump speed&lt;&gt; performance over even &lt;HIGHLIGHT&gt;Corvette&lt;&gt; engine systems, as well as the photovoltaic cells enabling more &lt;STELLAR&gt;efficient&lt;&gt; use of the starship's &lt;TECHNOLOGY&gt;launch systems&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;However&lt;&gt;, when not shielded by the &lt;STELLAR&gt;Pulse Jump&lt;&gt; corona effect, the sails collect stray tachyons which slightly &lt;FUEL&gt;reduces&lt;&gt; &lt;STELLAR&gt;Boosting speed&lt;&gt;, especially when &lt;COMMODITY&gt;supercharged&lt;&gt;. This &lt;FUEL&gt;slowdown effect&lt;&gt; becomes even smaller with enough bonuses to &lt;STELLAR&gt;Boosting speed&lt;&gt;, such as from &lt;HIGHLIGHT&gt;upgrade modules&lt;&gt;.]]
+[[A high-performance &lt;STELLAR&gt;solar sail&lt;&gt;, deployed automatically during flight. This advanced &lt;TECHNOLOGY&gt;propulsion device&lt;&gt; generates an electric field within the sails themselves, allowing the starship to build momentum from the solar wind when pulsing.&#xA;&#xA;Offers substantial gains in &lt;STELLAR&gt;fuel efficiency&lt;&gt; and &lt;STELLAR&gt;Pulse Jump speed&lt;&gt; performance over standard engine systems, as well as the photovoltaic cells enabling more &lt;STELLAR&gt;efficient&lt;&gt; use of the starship's &lt;TECHNOLOGY&gt;launch systems&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;However&lt;&gt;, when not shielded by the &lt;STELLAR&gt;Pulse Jump&lt;&gt; corona effect, the sails collect stray tachyons which slightly &lt;FUEL&gt;reduces&lt;&gt; &lt;STELLAR&gt;Boosting speed&lt;&gt;, especially when &lt;COMMODITY&gt;supercharged&lt;&gt;. This &lt;FUEL&gt;slowdown effect&lt;&gt; becomes even smaller with enough bonuses to &lt;STELLAR&gt;Boosting speed&lt;&gt;, such as from &lt;HIGHLIGHT&gt;upgrade modules&lt;&gt;.]]
 
 PulseEngineDesc =
 [[Spaceflight propulsion, boosts and on-demand Pulse Jumps through local system.&#xA; &#xA;User is advised that &lt;EXOTIC&gt;Tritium&lt;&gt; or &lt;TECHNOLOGY&gt;Pyrite&lt;&gt; is required to charge Pulse Engine. Tritium is abundant in &lt;COMMODITY&gt;near-space asteroid fields&lt;&gt;. Locate Tritium with the starship scanner (&lt;IMG&gt;SCAN&lt;&gt;).&#xA;&#xA;Hold &lt;IMG&gt;PULSEJUMP&lt;&gt; to engage Pulse Jump.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to initiate in-flight speed boost.&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: With enough bonuses to &lt;TECHNOLOGY&gt;Boost Speed&lt;&gt;, any type of starship can eventually become fast enough to outrun even the fastest enemies in space.]]
 
 LauncherDesc =
-[[Vital launch and landing gear system, can also &lt;HIGHLIGHT&gt;summon&lt;&gt; your starship at &lt;STELLAR&gt;double&lt;&gt; normal launch cost.&#xA;&#xA;User is advised that &lt;TECHNOLOGY&gt;specialised fuel&lt;&gt; or &lt;CATALYST&gt;Uranium&lt;&gt; is required to recharge thruster. Launch procedures require sufficient fuel levels before activation.&#xA;&lt;FUEL&gt;NOTE&lt;&gt;: &lt;HIGHLIGHT&gt;Supercharging&lt;&gt; the core &lt;TECHNOLOGY&gt;Launch Thruster&lt;&gt; tech &lt;FUEL&gt;increases&lt;&gt; launch cost due to negative high-voltage interactions.&#xA;&#xA;&lt;SPECIAL&gt;Interceptors&lt;&gt; only spend &lt;STELLAR&gt;80%&lt;&gt; of usual Launch costs,&#xA;&lt;HIGHLIGHT&gt;Solar Ships&lt;&gt; only spend &lt;STELLAR&gt;75%&lt;&gt; of usual Launch costs,&#xA;&lt;TRADE&gt;Shuttles&lt;&gt; only spend &lt;STELLAR&gt;66%&lt;&gt; of usual Launch costs,&#xA;&lt;TECHNOLOGY&gt;Explorers&lt;&gt; only spend &lt;STELLAR&gt;50%&lt;&gt; of usual Launch costs.&#xA;&#xA;Hold &lt;IMG&gt;THRUST&lt;&gt; to take off from planet.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to initiate in-flight speed boost.]]
+[[Vital launch and landing gear system, can also &lt;HIGHLIGHT&gt;summon&lt;&gt; your starship at &lt;STELLAR&gt;double&lt;&gt; normal launch cost.&#xA;&#xA;User is advised that &lt;TECHNOLOGY&gt;specialised fuel&lt;&gt; or &lt;CATALYST&gt;Uranium&lt;&gt; is required to recharge thruster. Launch procedures require sufficient fuel levels before activation.&#xA;&lt;FUEL&gt;NOTE&lt;&gt;: &lt;HIGHLIGHT&gt;Supercharging&lt;&gt; the core &lt;TECHNOLOGY&gt;Launch Thruster&lt;&gt; tech &lt;FUEL&gt;increases&lt;&gt; launch cost due to negative high-voltage interactions.&#xA;&#xA;&lt;SPECIAL&gt;Interceptors&lt;&gt; only spend &lt;STELLAR&gt;80%&lt;&gt; of usual Launch costs,&#xA;&lt;HIGHLIGHT&gt;Solar Ships&lt;&gt; only spend &lt;STELLAR&gt;75%&lt;&gt; of usual Launch costs,&#xA;&lt;TRADE&gt;Shuttles&lt;&gt; only spend &lt;STELLAR&gt;66%&lt;&gt; of usual Launch costs,&#xA;&lt;TECHNOLOGY&gt;Explorers&lt;&gt; only spend &lt;STELLAR&gt;50%&lt;&gt; of usual Launch costs&#xA;&lt;STELLAR&gt;Corvettes&lt;&gt; spend &lt;STELLAR&gt;160%&lt;&gt; of usual Launch costs by default.&#xA;&#xA;Hold &lt;IMG&gt;THRUST&lt;&gt; to take off from planet.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to initiate in-flight speed boost.]]
+
+CorvetteCockpitDesc =
+[[The core command-and-control centre for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, housing both pilot and vital avionics systems.&#xA;The size of Corvettes make them &lt;FUEL&gt;initially slower and less efficient&lt;&gt; than typical starships, however installing enough appropriate &lt;STELLAR&gt;Corvette modules&lt;&gt; and &lt;HIGHLIGHT&gt;standard upgrades&lt;&gt; can allow them to match or possibly exceed the performance of many starships in some aspects.&#xA;&#xA;Assemble a corvette at the dedicated &lt;TECHNOLOGY&gt;Corvette Workshop&lt;&gt; aboard any Space Station.]]
+
+CorvetteCockpitAltDesc =
+[[The core command-and-control centre for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, housing both pilot and vital avionics systems.&#xA;The size of Corvettes make them &lt;FUEL&gt;initially slower and less efficient&lt;&gt; than typical starships, however installing enough appropriate &lt;STELLAR&gt;Corvette modules&lt;&gt; and &lt;HIGHLIGHT&gt;standard upgrades&lt;&gt; can allow them to match or possibly exceed the performance of many starships in some aspects.]]
+
+CorvetteLandingOtherDesc =
+[[An advanced landing system for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship. Capable of providing a stable planetary anchor on rough terrain, as well as interfacing with all standard interstellar docks.&#xA;The base launch cost is &lt;FUEL&gt;too high&lt;&gt; to allow &lt;TECHNOLOGY&gt;summoning&lt;&gt; by default, but can be greatly lowered by installing additional &lt;STELLAR&gt;landing gear&lt;&gt; or &lt;STELLAR&gt;Azimuth-Class Reactors&lt;&gt;&#xA;&#xA;Assemble a corvette at the dedicated &lt;TECHNOLOGY&gt;Corvette Workshop&lt;&gt; aboard any Space Station.]]
+
+CorvetteLandingDesc =
+[[An advanced landing system for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, compatible with both standard interstellar docks and planetary descents alike.&#xA;The base launch cost is &lt;FUEL&gt;too high&lt;&gt; to allow &lt;TECHNOLOGY&gt;summoning&lt;&gt; by default, but can be greatly lowered by installing additional &lt;STELLAR&gt;landing gear&lt;&gt; or &lt;STELLAR&gt;Azimuth-Class Reactors&lt;&gt;&#xA;&#xA;Assemble a corvette at the dedicated &lt;TECHNOLOGY&gt;Corvette Workshop&lt;&gt; aboard any Space Station.]]
+
+CorvetteLandingAltDesc =
+[[An advanced landing system for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, compatible with both standard interstellar docks and planetary descents alike.&#xA;The base launch cost is &lt;FUEL&gt;too high&lt;&gt; to allow &lt;TECHNOLOGY&gt;summoning&lt;&gt; by default, but can be greatly lowered by installing additional &lt;STELLAR&gt;landing gear&lt;&gt; or &lt;STELLAR&gt;Azimuth-Class Reactors&lt;&gt;]]
+
+CorvetteHabDesc =
+[[The main living area for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, providing space for passengers as well as installable utility modules.&#xA;The size and weight &lt;FUEL&gt;reduces speed and handling&lt;&gt;, but only up to a point.&#xA;&#xA;Assemble a corvette at the dedicated &lt;TECHNOLOGY&gt;Corvette Workshop&lt;&gt; aboard any Space Station.]]
+
+CorvetteHabAltDesc =
+[[The main living area for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, providing space for passengers as well as installable utility modules.&#xA;The size and weight &lt;FUEL&gt;reduces speed and handling&lt;&gt;, but only up to a point.]]
+
+CorvetteWalkwayDesc =
+[[A compact-sized living area for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, providing space for passengers as well as installable utility modules.&#xA;The size and weight &lt;FUEL&gt;reduces speed and handling&lt;&gt;, but only up to a point.&#xA;&#xA;Assemble a corvette at the dedicated &lt;TECHNOLOGY&gt;Corvette Workshop&lt;&gt; aboard any Space Station.]]
+
+CorvetteWalkwayAltDesc =
+[[A compact-sized living area for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, providing space for passengers as well as installable utility modules.&#xA;The size and weight &lt;FUEL&gt;reduces speed and handling&lt;&gt;, but only up to a point.]]
+
+CorvetteShieldGenDesc =
+[[A multi-purpose generator system for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, it both strengthens shields and can amplify other ship systems, although installing too many can leave little power for weapon platforms.&#xA;As with all bonuses to ship shield strength, there are &lt;FUEL&gt;diminishing returns&lt;&gt; the more the shields are already boosted above their base strength.&#xA;&#xA;Assemble a corvette at the dedicated &lt;TECHNOLOGY&gt;Corvette Workshop&lt;&gt; aboard any Space Station.]]
+
+CorvetteShieldGenAltDesc =
+[[A multi-purpose generator system for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, it both strengthens shields and can amplify other ship systems, although installing too many can leave little power for weapon platforms.&#xA;As with all bonuses to ship shield strength, there are &lt;FUEL&gt;diminishing returns&lt;&gt; the more the shields are already boosted above their base strength.]]
+
+CorvetteWeaponDesc =
+[[A dedicated weapon platform for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship.&#xA;Can roughly &lt;HIGHLIGHT&gt;double&lt;&gt; the DPS for the relevant weapon with 5 modules installed.&#xA;&#xA;Assemble a corvette at the dedicated &lt;TECHNOLOGY&gt;Corvette Workshop&lt;&gt; aboard any Space Station.]]
+
+CorvetteWeaponAltDesc =
+[[A dedicated weapon platform for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship.&#xA;Can roughly &lt;HIGHLIGHT&gt;double&lt;&gt; the DPS for the relevant weapon with 5 modules installed.]]
 
 --Note, the description for the Anti-Gravity Well appears to be hardcoded and unable to actually be changed
 AntiGravWellDesc =
@@ -346,7 +419,7 @@ NatResourcesDesc =
 [[Mining and gathering materials such as &lt;TITLE&gt;minerals&lt;&gt;, &lt;TRADEABLE&gt;vegetation&lt;&gt;, &lt;STELLAR&gt;animal products&lt;&gt;, &lt;FUEL&gt;loot&lt;&gt;, and many other sources is essential for survival while exploring.&#xA;&#xA;This setting scales the abundance of Substance-type resources and how quickly they are gathered. Note that this actually affects the yield of &lt;STELLAR&gt;most&lt;&gt; Substances collected while exploring &lt;TRADE&gt;Planets&lt;&gt; or &lt;SPECIAL&gt;Space&lt;&gt;, not just those collected from &lt;HIGHLIGHT&gt;mining&lt;&gt;, but does not apply to most &lt;TECHNOLOGY&gt;automated sources&lt;&gt; such as player-planted crops, machines such as extractors or refiners, settlements, etc.&#xA;&#xA;&lt;TRADE&gt;Abundant&lt;&gt;: ~175% Substance yield&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% Substance yield&#xA;&lt;FUEL&gt;Scarce&lt;&gt;: ~63% Substance yield]]
 
 FuelUsageDesc =
-[[Technologies such as the &lt;TECHNOLOGY&gt;Mining Laser&lt;&gt; or the starship's &lt;TECHNOLOGY&gt;Launch Thrusters&lt;&gt; require regular recharging to remain functional.&#xA;This setting scales the cost of recharging these technologies.&#xA;&#xA;&lt;TRADE&gt;Discounted&lt;&gt;: 38% Launch cost (&lt;STELLAR&gt;6 launches&lt;&gt; by default), 67% other fuel costs, refueling is 150% more efficient, Mining Laser and Terrain Manipulator consume &lt;HIGHLIGHT&gt;no fuel&lt;&gt;&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% for all launch and fuel costs (&lt;STELLAR&gt;2 launches&lt;&gt; by default) and 100% refueling efficiency&#xA;&lt;FUEL&gt;Expensive&lt;&gt;: 150% Launch cost (&lt;STELLAR&gt;1 launch&lt;&gt; by default), 133% other fuel costs, refueling is 75% as efficient&#xA;&#xA;&lt;TECHNOLOGY&gt;Summoning&lt;&gt; a starship costs &lt;HIGHLIGHT&gt;2x&lt;&gt; the usual launch cost.&#xA;&#xA;&lt;SPECIAL&gt;Sentinel Interceptors&lt;&gt; only spend &lt;STELLAR&gt;80%&lt;&gt; of usual Launch costs&#xA;&lt;HIGHLIGHT&gt;Solar Ships&lt;&gt; only spend &lt;STELLAR&gt;75%&lt;&gt; of usual Launch costs&#xA;&lt;TRADE&gt;Shuttles&lt;&gt; only spend &lt;STELLAR&gt;66%&lt;&gt; of usual Launch costs&#xA;&lt;TECHNOLOGY&gt;Explorers&lt;&gt; only spend &lt;STELLAR&gt;50%&lt;&gt; of usual Launch costs]]
+[[Technologies such as the &lt;TECHNOLOGY&gt;Mining Laser&lt;&gt; or the starship's &lt;TECHNOLOGY&gt;Launch Thrusters&lt;&gt; require regular recharging to remain functional.&#xA;This setting scales the cost of recharging these technologies.&#xA;&#xA;&lt;TRADE&gt;Discounted&lt;&gt;: 38% Launch cost (&lt;STELLAR&gt;6 launches&lt;&gt; by default), 67% other fuel costs, refueling is 150% more efficient, Mining Laser and Terrain Manipulator consume &lt;HIGHLIGHT&gt;no fuel&lt;&gt;&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% for all launch and fuel costs (&lt;STELLAR&gt;2 launches&lt;&gt; by default) and 100% refueling efficiency&#xA;&lt;FUEL&gt;Expensive&lt;&gt;: 150% Launch cost (&lt;STELLAR&gt;1 launch&lt;&gt; by default), 133% other fuel costs, refueling is 75% as efficient&#xA;&#xA;&lt;TECHNOLOGY&gt;Summoning&lt;&gt; a starship costs &lt;HIGHLIGHT&gt;2x&lt;&gt; the usual launch cost.&#xA;&#xA;&lt;SPECIAL&gt;Sentinel Interceptors&lt;&gt; only spend &lt;STELLAR&gt;80%&lt;&gt; of usual Launch costs&#xA;&lt;HIGHLIGHT&gt;Solar Ships&lt;&gt; only spend &lt;STELLAR&gt;75%&lt;&gt; of usual Launch costs&#xA;&lt;TRADE&gt;Shuttles&lt;&gt; only spend &lt;STELLAR&gt;66%&lt;&gt; of usual Launch costs&#xA;&lt;TECHNOLOGY&gt;Explorers&lt;&gt; only spend &lt;STELLAR&gt;50%&lt;&gt; of usual Launch costs&#xA;&lt;STELLAR&gt;Corvettes&lt;&gt; spend &lt;STELLAR&gt;160%&lt;&gt; of usual Launch costs by default]]
 
 ScanRechargeDesc =
 [[The &lt;STELLAR&gt;Exosuit&lt;&gt; &lt;TECHNOLOGY&gt;scanner&lt;&gt; assists with locating nearby survival resources such as &lt;FUEL&gt;oxygen&lt;&gt; and &lt;CATALYST&gt;sodium&lt;&gt; with pulses.&#xA;The &lt;TECHNOLOGY&gt;Exocraft&lt;&gt; radar &lt;TECHNOLOGY&gt;scanner&lt;&gt; can reveal even more types of nearby &lt;HIGHLIGHT&gt;valuable resources&lt;&gt; with pulses, or can locate distant &lt;STELLAR&gt;sites of interest&lt;&gt; from the &lt;TECHNOLOGY&gt;Quick Menu&lt;&gt;.&#xA;The &lt;SPECIAL&gt;Starship&lt;&gt; &lt;TECHNOLOGY&gt;scanner&lt;&gt; can reveal &lt;STELLAR&gt;additional information&lt;&gt; about planets from space without landing on them, or when used while flying within a planet's atmosphere may detect &lt;TECHNOLOGY&gt;nearby buildings&lt;&gt;.&#xA;&#xA;After a scan pulse, the scanner must be &lt;STELLAR&gt;recharged&lt;&gt; before it can be used again. This setting adjusts how quickly the scanner &lt;STELLAR&gt;recharges&lt;&gt; after each scan pulse.&#xA;&#xA;&lt;HIGHLIGHT&gt;Very Fast&lt;&gt;: 500% Recharge rate&#xA;&lt;TRADE&gt;Fast&lt;&gt;: 200% Recharge rate&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% Recharge rate&#xA;&lt;FUEL&gt;Challenging&lt;&gt;: 67% Recharge rate]]
@@ -2410,6 +2483,97 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", AppendText (SettleOverviewNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_COK_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteCockpitDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_COK_DESC_ALT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteCockpitAltDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_LAN_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteLandingOtherDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_LND_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteLandingDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_LND_DESC_ALT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteLandingAltDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_HAB_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteHabDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_HAB_DESC_ALT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteHabAltDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_HAB1_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteWalkwayDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_HAB1_DESC_ALT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteWalkwayAltDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_SHL_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteShieldGenDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_SHL_DESC_ALT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteShieldGenAltDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_TUR_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteWeaponDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_TUR_DESC_ALT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteWeaponAltDesc}
 							}
 						},
 					}

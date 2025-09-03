@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "RestoreOldPopupBackgrounds"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "600"
+METADATA_NMS_VERSION    = "602"
 METADATA_MOD_DESC       = "This mod restores the dark grey and less translucent backgrounds for various UI elements. Modifies files in UI directory."
 
 
