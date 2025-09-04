@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Unlock costs"
-GameVersion = "6_00"
+GameVersion = "6_03"
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
 UpgradeCMult	=		1.2							--Vanilla cost is	60		This multiplies the vanilla "BaseValue", affecting both purchase and selling prices.	E.G. "1.2" means you sell them for 1.2x the vanilla price, and shops charge 1.2x more
@@ -88,10 +88,22 @@ TechAdjustments =
 		"MECH_SCAN0",	1				--Minotaur Ultra Radar Array (added by PTSd)	240 Nanites
 	},
 	{
-		"MECH_LASER1",	0.7143			--Precision Minotaur Laser				210 Nanites
+		"MECH_SENT_HEAD",	0.23		--Hardframe Body (Abandoned Mode)		480 Nanites
+	},
+	{
+		"MECH_SENT_LEGS",	0.48		--Hardframe Legs (Abandoned Mode)		500 Nanites
+	},
+	{
+		"MECH_SENT_L_ARM",	0.48		--Hardframe Left Arm (Abandoned Mode)	500 Nanites
+	},
+	{
+		"MECH_SENT_R_ARM",	0.48		--Hardframe Right Arm (Abandoned Mode)	500 Nanites
 	},
 	{
 		"VEHICLE_LASER1",	0.7143		--Advanced Exocraft Laser				210 Nanites
+	},
+	{
+		"MECH_LASER1",	0.7143			--Precision Minotaur Laser				210 Nanites
 	},
 	{
 		"VEHICLE_GUN",	0.7143			--Mounted Cannon						210 Nanites
@@ -2745,6 +2757,66 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Children"},
 							--["CREATE_HOS"] = "TRUE",
                             ["ADD"] = AddSingleHOESChild("BIG_WALL_PLAN0")
+                        },
+						--Rearranges the Sentinel Hardframe unlocks (only visible in Abandoned Mode) to not make the tree so wide it extends past the screen edges
+						{
+							["SPECIAL_KEY_WORDS"] = {
+								 {"ExocraftTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_MINER"},
+								 {"S9ExoTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_MINER"},
+							   },
+                            ["REMOVE"] = "SECTION"
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {
+								 {"ExocraftTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_GUN"},
+								 {"S9ExoTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_GUN"},
+							   },
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							["CREATE_HOS"] = "TRUE",
+                            ["ADD"] = AddSingleHOESChild("MECH_MINER")
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {
+								 {"ExocraftTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_SENT_HEAD"},
+								 --{"S9ExoTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_SENT_HEAD"},
+							   },
+                            ["REMOVE"] = "SECTION"
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {
+								 {"ExocraftTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_PILOT"},
+								 {"S9ExoTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_PILOT"},
+							   },
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							--["CREATE_HOS"] = "TRUE",
+                            ["ADD"] = AddSingleHOESChild("MECH_SENT_HEAD")
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {
+								 {"ExocraftTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_FUEL"},
+								 {"S9ExoTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_FUEL"},
+							   },
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							["CREATE_HOS"] = "TRUE",
+                            ["ADD"] = AddSingleHOESChild("MECH_SENT_LEGS")
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {
+								 {"ExocraftTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_LASER1"},
+								 {"S9ExoTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_LASER1"},
+							   },
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							["CREATE_HOS"] = "TRUE",
+                            ["ADD"] = AddSingleHOESChild("MECH_SENT_L_ARM")
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {
+								 {"ExocraftTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_MINER"},
+								 {"S9ExoTech", "GcUnlockableItemTrees",		"Unlockable", "MECH_MINER"},
+							   },
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							["CREATE_HOS"] = "TRUE",
+                            ["ADD"] = AddSingleHOESChild("MECH_SENT_R_ARM")
                         },
                     }
 				},

@@ -1,8 +1,8 @@
 Author = "alchemist"
 ModName = "InterceptorAdjustments"
 BaseDescription = [[Balance adjustments for technology added by the Interceptor update.]]
-GameVersion = "5-52"
-ModVersion = "4"
+GameVersion = "6.03"
+ModVersion = "1"
 
 local Config = {
   ModifyProductCharge = {
@@ -83,7 +83,7 @@ if Config.ModifyProductCharge.Enabled then
 
   Ref[#Ref+1] = {
     MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
-    EXML_CHANGE_TABLE = changeTable
+    MXML_CHANGE_TABLE = changeTable
   }
 end
 
@@ -101,7 +101,7 @@ if Config.ModifySubstanceCharge.Enabled then
 
   Ref[#Ref+1] = {
     MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_REALITY_GCSUBSTANCETABLE.MBIN",
-    EXML_CHANGE_TABLE = changeTable
+    MXML_CHANGE_TABLE = changeTable
   }
 end
 
@@ -139,6 +139,6 @@ end
 if #techChangeTable > 0 then
   Ref[#Ref+1] = {
     MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
-    EXML_CHANGE_TABLE = techChangeTable
+    MXML_CHANGE_TABLE = techChangeTable
   }
 end

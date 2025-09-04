@@ -1,8 +1,8 @@
 Author = "alchemist"
 ModName = "InterceptorAdjustments"
 BaseDescription = [[Balance adjustments for refinement recipes added by the Interceptor update.]]
-GameVersion = "5-52"
-ModVersion = "4"
+GameVersion = "6.03"
+ModVersion = "1"
 
 local Config = {
   ModRefinerRecipes = {
@@ -186,6 +186,6 @@ end
 if #refinerChangeTable > 0 then
   Ref[#Ref+1] = {
     MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_REALITY_GCRECIPETABLE.MBIN",
-    EXML_CHANGE_TABLE = refinerChangeTable
+    MXML_CHANGE_TABLE = refinerChangeTable
   }
 end

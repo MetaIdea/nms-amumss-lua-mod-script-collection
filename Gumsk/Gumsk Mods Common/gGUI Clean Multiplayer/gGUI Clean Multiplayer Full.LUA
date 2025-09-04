@@ -2,7 +2,7 @@ Author = "Gumsk,lMonk"
 ModName = "gGUI Clean Multiplayer"
 ModNameSub = "Full"
 BaseDescription = ""
-GameVersion = "5.5.5.0"
+GameVersion = "6.0.3.0"
 ModVersion = "a"
 
 --[[Files Modified
@@ -20,13 +20,16 @@ Line3D_EMPTY_MXML = [[<?xml version="1.0" encoding="utf-8"?>
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
+	<Property name="EnableLodFade" value="false" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value=""/>
 	<Property name="Shader" value="SHADERS/LINE3D.SHADER.BIN" />
 	<Property name="Flags" />
-	<Property name="Uniforms">
-		<Property name="Uniforms" value="TkMaterialUniform.xml ">
+	<Property name="FxFlags" />
+	<Property name="Uniforms_Float">
+		<Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="0">
 			<Property name="Name" value="gColour"/>
-			<Property name="Values" value="Vector4f.xml">
+			<Property name="Values">
 				<Property name="X" value="0.000000" />
 				<Property name="Y" value="0.000000" />
 				<Property name="Z" value="0.000000" />
@@ -35,6 +38,7 @@ Line3D_EMPTY_MXML = [[<?xml version="1.0" encoding="utf-8"?>
 			<Property name="ExtendedValues" />
 		</Property>
 	</Property>
+	<Property name="Uniforms_UInt" />
 	<Property name="Samplers" />
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
@@ -84,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				--=========================================================================			
 				{
 					MBIN_FILE_SOURCE = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/MESSENGER/MESSENGER.SCENE.MBIN",
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Type","MESH"},
 							REMOVE = "SECTION",
@@ -99,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				},
 				{
 					MBIN_FILE_SOURCE = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\MESSENGER\ENTITIES\MESSENGER.ENTITY.MBIN",
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 					
 						{
 							INTEGER_TO_FLOAT = "PRESERVE",
@@ -142,7 +146,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				--=========================================================================
 				{
 					MBIN_FILE_SOURCE = "MODELS/EFFECTS/LINES/LINERENDERER.SCENE.MBIN",
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS	= {"Name","MATERIAL"},
 							VALUE_CHANGE_TABLE	 = {

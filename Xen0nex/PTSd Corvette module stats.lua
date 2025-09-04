@@ -25,8 +25,8 @@ CorvetteModuleBonuses =
 		{"CV_FIT1"},		--Cockpits
 		{
 			{"Ship_Launcher_TakeOffCost", 					1.4},			--N/A (1)		(Added by PTSd)
-			{"Ship_Boost", 									0.6},			--1.01-1.1
-			{"Ship_PulseDrive_MiniJumpFuelSpending", 		1.4},			--N/A (1)		(Added by PTSd)
+			{"Ship_Boost", 									0.8},			--1.01-1.1
+			{"Ship_PulseDrive_MiniJumpFuelSpending", 		1.3},			--N/A (1)		(Added by PTSd)
 			{"Ship_PulseDrive_MiniJumpSpeed", 				0.8},			--N/A (1)		(Added by PTSd)
 		},
 	},
@@ -58,8 +58,8 @@ CorvetteModuleBonuses =
 	{
 		{"CV_FIT3"},		--Medusa-Class Reactor
 		{
-			{"Ship_Boost", 									1.09},			--1.1-1.2
-			{"Ship_BoostManeuverability", 					1.09},			--1.05-1.16
+			{"Ship_Boost", 									1.06},			--1.1-1.2
+			{"Ship_BoostManeuverability", 					1.06},			--1.05-1.16
 			{"Ship_Maneuverability", 						1.003},			--1.005-1.005
 		},
 	},
@@ -74,7 +74,7 @@ CorvetteModuleBonuses =
 		{"CV_TRA3"},		--Ceto-Class Reactor
 		{
 			{"Ship_Armour_Shield_Strength", 				0.1},			--0.1-0.2
-			{"Ship_PulseDrive_MiniJumpSpeed", 				1.12},			--N/A (1)		(Added by PTSd)
+			{"Ship_PulseDrive_MiniJumpSpeed", 				1.09},			--N/A (1)		(Added by PTSd)
 			{"Ship_Cargo_Slots", 							1},				--N/A (0)		(Added by PTSd)
 		},
 	},
@@ -83,15 +83,15 @@ CorvetteModuleBonuses =
 		{
 			{"Ship_Armour_Shield_Strength", 					0.3},		--0.05-0.1
 			{"Ship_PulseDrive_MiniJumpSpeed", 					1.06},		--N/A (1)		(Added by PTSd)
-			{"Ship_Boost", 										1.06},		--N/A (1)		(Added by PTSd)
+			{"Ship_Boost", 										1.04},		--N/A (1)		(Added by PTSd)
 		},
 	},
 	{
 		{"CV_S_SHLB"},		--Ion Barrier
 		{
 			{"Ship_Armour_Shield_Strength", 					0.3},		--0.05-0.1
-			{"Ship_BoostManeuverability", 						1.06},		--N/A (1)		(Added by PTSd)
-			{"Ship_Maneuverability", 							1.003},		--N/A (1)		(Added by PTSd)
+			{"Ship_BoostManeuverability", 						1.04},		--N/A (1)		(Added by PTSd)
+			{"Ship_Maneuverability", 							1.002},		--N/A (1)		(Added by PTSd)
 			{"Ship_Launcher_TakeOffCost", 						0.9},		--N/A (1)		(Added by PTSd)
 		},
 	},
@@ -106,32 +106,36 @@ CorvetteModuleBonuses =
 	{
 		{"CV_SROC3"},		--Torpedo Launcher
 		{
-			{"Ship_Weapons_Guns_Damage", 						2400},			--65-80
+			{"Ship_Weapons_Guns_Damage", 						3000},			--65-80
 			{"Ship_Weapons_Guns_CoolTime", 						0.8},			--0.75-0.8	(Does not seem to work in vanilla)
 			{"Ship_Weapons_Guns_Range", 						1.1},			--1.05-1.1
+			{"Ship_Armour_Shield_Strength", 					-0.2},			--N/A (0)		(Added by PTSd)
 		},
 	},
 	{
 		{"CV_SGUN3"},		--Photon Cannon Array
 		{
-			{"Ship_Weapons_Guns_Damage", 						142},			--16-24
+			{"Ship_Weapons_Guns_Damage", 						178},			--16-24
 			--{"Ship_Weapons_Guns_Rate", 							1.021},			--1.016-1.021		(Removed in PTSd)
 			{"Ship_Weapons_Guns_HeatTime", 						1.03},			--1.02-1.03
+			{"Ship_Armour_Shield_Strength", 					-0.2},			--N/A (0)		(Added by PTSd)
 		},
 	},
 	{
 		{"CV_SSHOT3"},		--Deadeye Cannon	(Positron Ejector)
 		{
-			{"Ship_Weapons_Guns_Damage", 						65},			--5-6
+			{"Ship_Weapons_Guns_Damage", 						81},			--5-6
 			--{"Ship_Weapons_Guns_Rate", 							1.1},			--1.06-1.1			(Removed in PTSd)
 			{"Ship_Weapons_Guns_HeatTime", 						1.03},			--1.06-1.1
+			{"Ship_Armour_Shield_Strength", 					-0.2},			--N/A (0)		(Added by PTSd)
 		},
 	},
 	{
 		{"CV_SLASR3"},		--Phase Beam Array
 		{
 			{"Ship_Weapons_Lasers_HeatTime", 					1.05},			--1.55-1.75
-			{"Ship_Weapons_Lasers_Damage", 						180},			--50-60
+			{"Ship_Weapons_Lasers_Damage", 						225},			--50-60
+			{"Ship_Armour_Shield_Strength", 					-0.2},			--N/A (0)		(Added by PTSd)
 		},
 	},
 	--Not yet implemented in vanilla
@@ -153,7 +157,7 @@ CorvetteModuleBonuses =
 		{"CV_LAUN2"},		--Thunderbird Landing Thrusters
 		{
 			{"Ship_Launcher_TakeOffCost", 						0.98},		--0.85-0.9
-			{"Ship_Boost", 										1.03},		--1.02-1.05
+			{"Ship_Boost", 										1.02},		--1.02-1.05
 			{"Ship_PulseDrive_MiniJumpFuelSpending", 			0.98},		--N/A (1)		(Added by PTSd)
 		},
 	},
@@ -177,37 +181,41 @@ CorvetteModuleBonuses =
 		{"CV_PULSEA"},		--Twin Echo Jets, Twin Dynamo Jets, Pyrodrive Booster
 		{
 			--{"Ship_PulseDrive_MiniJumpSpeed", 					1.015},		--N/A (1)		(Removed in PTSd)	(Replaces Ship_PulseDrive_MiniJumpFuelSpending by PTSd)
-			{"Ship_Boost", 										1.03},		--1.1-1.15
-			{"Ship_BoostManeuverability", 						1.06},		--1.01-1.12
-			{"Ship_Maneuverability", 							1.003},		--1.005-1.005
+			{"Ship_Boost", 										1.02},		--1.1-1.15
+			{"Ship_BoostManeuverability", 						1.04},		--1.01-1.12
+			{"Ship_Maneuverability", 							1.002},		--1.005-1.005
+			--{"Ship_Launcher_TakeOffCost", 						1.03},		--N/A (1)		(Added by PTSd)
 		},
 	},
 	{
 		{"CV_PULSE2"},		--All Sublight Thrusters
 		{
 			{"Ship_PulseDrive_MiniJumpSpeed", 					1.06},		--N/A (1)		(Replaces Ship_PulseDrive_MiniJumpFuelSpending by PTSd)
-			--{"Ship_Boost", 										1.015},		--1.1-1.15		(Removed in PTSd)
-			{"Ship_BoostManeuverability", 						1.03},		--1.01-1.12
-			{"Ship_Maneuverability", 							1.0015},	--1.005-1.005
+			--{"Ship_Boost", 										1.01},		--1.1-1.15		(Removed in PTSd)
+			{"Ship_BoostManeuverability", 						1.02},		--1.01-1.12
+			{"Ship_Maneuverability", 							1.001},	--1.005-1.005
+			--{"Ship_Launcher_TakeOffCost", 						1.03},		--N/A (1)		(Added by PTSd)
 		},
 	},
 	{
 		{"CV_PULSE3"},		--All Heavy Boosters
 		{
 			{"Ship_PulseDrive_MiniJumpSpeed", 					1.03},		--N/A (1)		(Replaces Ship_PulseDrive_MiniJumpFuelSpending by PTSd)
-			{"Ship_Boost", 										1.06},		--1.1-1.2
-			--{"Ship_BoostManeuverability", 						1.015},		--1.05-1.16		(Removed in PTSd)
-			--{"Ship_Maneuverability", 							1.0005},		--1.005-1.005		(Removed in PTSd)
+			{"Ship_Boost", 										1.04},		--1.1-1.2
+			--{"Ship_BoostManeuverability", 						1.01},		--1.05-1.16		(Removed in PTSd)
+			--{"Ship_Maneuverability", 							1.005},		--1.005-1.005		(Removed in PTSd)
+			--{"Ship_Launcher_TakeOffCost", 						1.03},		--N/A (1)		(Added by PTSd)
 		},
 	},
 	{
 		{"CV_PULSEB"},		--Kineostream Thruster
 		{
 			{"Ship_PulseDrive_MiniJumpSpeed", 					1.06},		--N/A (1)		(Replaces Ship_PulseDrive_MiniJumpFuelSpending by PTSd)
-			{"Ship_Boost", 										1.06},		--1.1-1.2
-			{"Ship_PulseDrive_MiniJumpFuelSpending", 			1.1},		--N/A (1)		(Added by PTSd)
-			--{"Ship_BoostManeuverability", 						1.06},		--1.05-1.16		(Removed in PTSd)
-			--{"Ship_Maneuverability", 							1.0015},		--1.005-1.005		(Removed in PTSd)
+			{"Ship_Boost", 										1.04},		--1.1-1.2
+			{"Ship_PulseDrive_MiniJumpFuelSpending", 			1.06},		--N/A (1)		(Added by PTSd)
+			--{"Ship_BoostManeuverability", 						1.04},		--1.05-1.16		(Removed in PTSd)
+			--{"Ship_Maneuverability", 							1.002},		--1.005-1.005		(Removed in PTSd)
+			--{"Ship_Launcher_TakeOffCost", 						1.03},		--N/A (1)		(Added by PTSd)
 		},
 	},
 }
@@ -465,6 +473,32 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["ADD_OPTION"] = "ADDafterSECTION",
 				["ADD"] = AddBonusStat ("Ship_PulseDrive_MiniJumpFuelSpending", "1.000000")
 			},
+			--WIP, currently increases Launch costs too much due to adjacency bonuses
+			--[[
+			{
+				["SPECIAL_KEY_WORDS"] = {
+                     {"ID", "CV_PULSEA",		"StatLevels", "GcProceduralTechnologyStatLevel"},
+                     {"ID", "CV_PULSEB",		"StatLevels", "GcProceduralTechnologyStatLevel"},
+					 {"ID", "CV_PULSE2",	"StatLevels", "GcProceduralTechnologyStatLevel"},
+					 {"ID", "CV_PULSE3",	"StatLevels", "GcProceduralTechnologyStatLevel"},
+                   },
+				["ADD_OPTION"] = "ADDafterSECTION",
+				["ADD"] = AddBonusStat ("Ship_Launcher_TakeOffCost", "1.03")
+			},
+			]]
+			{
+				["SPECIAL_KEY_WORDS"] = {
+                     {"ID", "CV_PULSEA"},
+                     {"ID", "CV_PULSEB"},
+					 {"ID", "CV_PULSE2"},
+					 {"ID", "CV_PULSE3"},
+                   },
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"NumStatsMin", 4},
+					{"NumStatsMax", 4},
+				}
+			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Table", "GcProceduralTechnologyData"},
 				["ADD_OPTION"]  = "ADDafterSECTION",
@@ -614,6 +648,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"] = {"ID", "CV_SSHOT3",		"StatsType", "Ship_Weapons_Guns_Rate"},
 				["SECTION_UP"] = 1,
 				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+                     {"ID", "CV_SROC3",		"StatLevels", "GcProceduralTechnologyStatLevel"},
+                     {"ID", "CV_SGUN3",		"StatLevels", "GcProceduralTechnologyStatLevel"},
+					 {"ID", "CV_SSHOT3",	"StatLevels", "GcProceduralTechnologyStatLevel"},
+					 {"ID", "CV_SLASR3",	"StatLevels", "GcProceduralTechnologyStatLevel"},
+                   },
+				["ADD_OPTION"] = "ADDafterSECTION",
+				["ADD"] = AddBonusStat ("Ship_Armour_Shield_Strength", "-0.1")
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+                     {"ID", "CV_SROC3"},
+                     {"ID", "CV_SGUN3"},
+					 {"ID", "CV_SSHOT3"},
+					 {"ID", "CV_SLASR3"},
+                   },
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"NumStatsMin", 4},
+					{"NumStatsMax", 4},
+				}
 			},
 		}
 	},

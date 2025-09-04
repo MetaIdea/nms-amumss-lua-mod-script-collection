@@ -1,8 +1,8 @@
 Author = "alchemist"
 ModName = "RefinerInputsExpanded"
 BaseDescription = "Increases the number of inputs for various refiners."
-GameVersion = "5-51"
-ModVersion = "4"
+GameVersion = "6.03"
+ModVersion = "1"
 
 local Config = {
   -- NumInputs > 3 will crash the game.
@@ -122,7 +122,7 @@ if Config.Backpack.Fuel.ModifyCharge.Enabled then
     for i = 1, #Config.Backpack.Fuel.ModifyCharge.SharedEntities do
       Ref[#Ref+1] = {
         MBIN_FILE_SOURCE = Config.Backpack.Fuel.ModifyCharge.SharedEntities[i],
-        EXML_CHANGE_TABLE = {
+        MXML_CHANGE_TABLE = {
           {
             SPECIAL_KEY_WORDS = {"ID", "MAINT_FUEL1"},
             VALUE_CHANGE_TABLE = {
@@ -157,7 +157,7 @@ end
 if Config.BaseMedium.Enabled then
   Ref[#Ref+1] = {
     MBIN_FILE_SOURCE = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/REFINER/ENTITIES/REFINER2.ENTITY.MBIN",
-    EXML_CHANGE_TABLE = {
+    MXML_CHANGE_TABLE = {
       {
         SPECIAL_KEY_WORDS = {
           "Title", "REFINER2_NAME_L",
@@ -175,7 +175,7 @@ end
 if Config.Portable.Enabled then
   Ref[#Ref+1] = {
     MBIN_FILE_SOURCE = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/REFINER/ENTITIES/REFINER1.ENTITY.MBIN",
-    EXML_CHANGE_TABLE = {
+    MXML_CHANGE_TABLE = {
       {
         SPECIAL_KEY_WORDS = {
           "Title", "REFINER1_NAME_L",
@@ -200,10 +200,10 @@ end
 
 Ref[#Ref+1] = {
   MBIN_FILE_SOURCE = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN",
-  EXML_CHANGE_TABLE = playerEntityChangeTable
+  MXML_CHANGE_TABLE = playerEntityChangeTable
 }
 
 Ref[#Ref+1] = {
   MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
-  EXML_CHANGE_TABLE = techChangeTable
+  MXML_CHANGE_TABLE = techChangeTable
 }

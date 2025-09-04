@@ -24,6 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]             = "AtmoReverse-PulseSpeedDefined",
 ["MOD_AUTHOR"]               = "BigEx20 AKA Chromos",
+["LUA_AUTHOR"]				 = "BigEx20 AKA Chromos",
 ["MOD_DESCRIPTION"]          = "This mod allows hovering at 0u/s in the atmosphere and also brings quality-of-life adjustments to pulse engine speed defined by you via this .lua script.",
 ["MODIFICATIONS"]            = 
 	{
@@ -58,6 +59,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetEngine","PlanetEngine","PlanetEngine"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinSpeed",           "-1"},                                  -- Original 20
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"PlanetEngine","PlanetEngine","PlanetEngine","PlanetEngine","PlanetEngine"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MinSpeed",           "-1"},                                  -- Original 20

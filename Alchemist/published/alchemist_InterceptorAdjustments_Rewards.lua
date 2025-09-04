@@ -1,8 +1,8 @@
 Author = "alchemist"
 ModName = "InterceptorAdjustments_Rewards"
 BaseDescription = [[Balance adjustments for rewards added by the Interceptor update.]]
-GameVersion = "5-52"
-ModVersion = "4"
+GameVersion = "6.03"
+ModVersion = "1"
 
 local Config = {
   RobotSubstanceReduction = {
@@ -241,7 +241,7 @@ if Config.SmallSpiderDiscreteLoot.Enabled then
 
   Ref[#Ref+1] = {
     MBIN_FILE_SOURCE = Config.SmallSpiderDiscreteLoot.Source.SceneToFile,
-    EXML_CHANGE_TABLE = {
+    MXML_CHANGE_TABLE = {
       {
         VALUE_CHANGE_TABLE = {
           {"Name", Config.SmallSpiderDiscreteLoot.Source.SceneToName},
@@ -259,7 +259,7 @@ if Config.SmallSpiderDiscreteLoot.Enabled then
 
   Ref[#Ref+1] = {
     MBIN_FILE_SOURCE = Config.SmallSpiderDiscreteLoot.Source.EntityToFile,
-    EXML_CHANGE_TABLE = {
+    MXML_CHANGE_TABLE = {
       {
         SPECIAL_KEY_WORDS = {"Components","GcSimpleInteractionComponentData"},
         SECTION_UP = 1,
@@ -279,7 +279,7 @@ if Config.SmallSpiderDiscreteLoot.Enabled then
 
   Ref[#Ref+1] = {
     MBIN_FILE_SOURCE = "MODELS/COMMON/ROBOTS/SPIDER_SMALLQUAD/ENTITIES/SPIDERSMALLQUAD.ENTITY.MBIN",
-    EXML_CHANGE_TABLE = {
+    MXML_CHANGE_TABLE = {
       {
         SPECIAL_KEY_WORDS = {"Components","GcDestructableComponentData"},
         PRECEDING_KEY_WORDS = {
@@ -338,7 +338,7 @@ if Config.MaintenanceLoot.Enabled then
 
   Ref[#Ref+1] = {
     MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/MAINTENANCEGROUPSTABLE.MBIN",
-    EXML_CHANGE_TABLE = maintenanceTable
+    MXML_CHANGE_TABLE = maintenanceTable
   }
 end
 
@@ -346,6 +346,6 @@ end
 if #rewardChangeTable > 0 then
   Ref[#Ref+1] = {
     MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
-    EXML_CHANGE_TABLE = rewardChangeTable
+    MXML_CHANGE_TABLE = rewardChangeTable
   }
 end

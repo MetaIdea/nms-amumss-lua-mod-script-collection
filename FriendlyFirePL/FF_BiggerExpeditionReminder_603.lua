@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "BiggerExpeditionReminder"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "600"
+METADATA_NMS_VERSION    = "603"
 METADATA_MOD_DESC       = "This mod reworks the expedition reminder panel found in boot menu from 1 flimsy line of text into a proper box"
 
 
@@ -17,7 +17,7 @@ FILE_UI_MAIN_MENU = "UI\BOOT\ROOTMENU2.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"] 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_NMS_VERSION,
+    ["MOD_FILENAME"] 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_NMS_VERSION..".pak",
     ["MOD_AUTHOR"]		    = METADATA_MOD_AUTHOR,
     ["LUA_AUTHOR"]		    = METADATA_LUA_AUTHOR,
     ["NMS_VERSION"]		    = METADATA_NMS_VERSION,
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             -- move and transform the actual text
                             ["SKW"] = {"ID","TEXT",},
-                            ["SECTION_ACTIVE"] = -2,
+                            ["SECTION_ACTIVE"] = -1,
                             ["VCT"] = 
                             {
                                 {"Position X",50,},                      -- anchor pos X: 50% of container width            
@@ -85,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             -- modify the text: set yellow colour, replace once
                             ["SKW"] = {"ID","TEXT",},
-                            ["SECTION_ACTIVE"] = -2,
+                            ["SECTION_ACTIVE"] = -1,
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["VCT"] = {{"R",0.97,},{"G",0.69,},{"B",0.038,},}
                         },
@@ -93,7 +93,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {   
                             -- modify text: increase font size, disable scrolling on hover
                             ["SKW"] = {"ID","TEXT",},
-                            ["SECTION_ACTIVE"] = 2,
+                            ["SECTION_ACTIVE"] = 1,
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["VCT"] = {{"Font Height",26,},{"Allow Scroll","false",},},
                         },

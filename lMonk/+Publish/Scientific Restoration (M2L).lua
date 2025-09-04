@@ -19,6 +19,7 @@ local function ToMxml(class)
 	local function bool(b)
 		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
 	end
+	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite'}
 	local function mxml_r(tlua)
 		local out = {}
 		function out:add(t)
@@ -26,12 +27,15 @@ local function ToMxml(class)
 		end
 		for attr, cls in pairs(tlua) do
 			if attr ~= 'meta' then
-				out[#out+1] = '<Property '
+				out:add({'<Property '})
 				if type(cls) == 'table' and cls.meta then
 				-- add new section and recurs for nested sections
-					for k, v in pairs(cls.meta) do
-						if k:sub(-1) ~= '_' then out:add({k, '="', bool(v), '"', ' '}) end
+					for _,at in ipairs(at_ord) do
+						if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
 					end
+					-- for k, v in pairs(cls.meta) do
+						-- if k:sub(-1) ~= '_' then out:add({k, '="', bool(v), '"', ' '}) end
+					-- end
 					table.remove(out) -- trim last space
 					out:add({'>', mxml_r(cls), '</Property>'})
 				else
@@ -281,7 +285,7 @@ local science = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.Scientific Restoration.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '5.59',
+	NMS_VERSION				= '6.02',
 	AMUMSS_SUPPRESS_MSG		= 'MULTIPLE_STATEMENTS',
 	MOD_DESCRIPTION			= mod_desc,
 	MODIFICATIONS 			= {{

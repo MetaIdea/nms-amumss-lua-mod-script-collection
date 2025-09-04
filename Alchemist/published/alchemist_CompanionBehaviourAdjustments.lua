@@ -2,8 +2,8 @@ Author = "alchemist"
 ModName = "CompanionBehaviourAdjustments"
 --ModNexus = "https://www.nexusmods.com/nomanssky/mods/1871"
 BaseDescription = "Tweaks to pet behavior."
-GameVersion = "5-22"
-ModVersion = "7"
+GameVersion = "6.03"
+ModVersion = "1"
 
 -- BEGIN CONFIG
 
@@ -268,7 +268,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 {
 ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREPETBEHAVIOURTABLE.MBIN",
-["EXML_CHANGE_TABLE"] = {
+["MXML_CHANGE_TABLE"] = {
 
   -- Globals
   {
@@ -345,7 +345,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 }}}}
 
-local Ref = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local Ref = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i = 1, #BEHAVIOR_TABLE do
   local id = BEHAVIOR_TABLE[i][1]

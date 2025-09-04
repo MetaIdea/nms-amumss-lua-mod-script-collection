@@ -14,6 +14,8 @@ ExoSkiffSlots =		30								--60	Slots for fish/bait storage in Exo-Skiff. May on
 ExoSkiffSlotsWidth = 6								--10	How many columns of slots are available for the Exo-Skiff
 ExoSkiffSlotsHeight =5								--6		How many rows of slots are available for the Exo-Skiff
 
+CorvetteGearGunVFXCap = 6							--4		Presumably limits how many installed Guns and Landing Gears will display visual animations / particle effects etc., but may not actually have any effect. As PTSd increases the amount of Landing Gear / Weapons, etc. which gives bonuses from 3 to 5, this is intended to avoid having gear installed with no animations.
+
 --As of NMS v4.08, the definition for what ship attributes the "SHIP_AGILE" stat affects appears to mistakenly list Ship_BoostManeuverability twice, instead of Ship_Maneuverability and Ship_BoostManeuverability together.
 FixAgilityStat = true			--false			If true, this will try to ensure there is an entry for both Ship_BoostManeuverability and Ship_Maneuverability under the SHIP_AGILE definition
 RemoveAgilitySpeed = true		--false			If true, this will make the SHIP_AGILE stat no longer affect Boosting Speed, but only Maneuverability (& Boosting Maneuverability). Either way, this setting can't really affect the final maxed-out Boosting Speed, which is soft-capped based on the intial speed of the ship
@@ -427,13 +429,13 @@ ShipInitialSizeChanges	=
 	{"RobotSmall",				9,		13,			15,		22,			9,	2},			--	32,		40,			22,		28,			-1,	-1	Seems unused in-game by default?
 	{"RobotMedium",				9,		13,			15,		22,			9,	2},			--	32,		40,			22,		28,			-1,	-1	Seems unused in-game by default?
 	{"RobotLarge",				9,		13,			15,		22,			9,	2},			--	32,		40,			22,		28,			-1,	-1
-	{"Corvette",				9,		10,			12,		16,			9,	2},			--	40,		48,			20,		30,			9,	2
+	{"Corvette",				8,		9,			12,		16,			9,	2},			--	40,		48,			20,		30,			9,	2
 	{"FreighterSmall",			17,		30,			8,		14,			9,	2},			--	15,		19,			8,		12,			9,	2	"Regular" Freighters
 	{"FreighterMedium",			28,		41,			13,		19,			9,	2},			--	24,		34,			12,		20,			9,	2	"Capital" Freighters
 	{"FreighterLarge",			39,		52,			18,		24,			9,	2},			--	35,		48,			18,		30,			9,	2	Unused in-game by default
 }
 
-DefaultCorvetteSlots = 9			--26		(the game adds +1 to this value)	Presumably default Cargo Slots on new Corvettes
+DefaultCorvetteSlots = 8			--26		(the game adds +1 to this value)	Presumably default Cargo Slots on new Corvettes
 
 --Replacers for maximum UPGRADEABLE Inventory size for ships. NOT initial sizes for spawned ships.
 ShipUpgradeSizeChanges	=
@@ -1249,6 +1251,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Slots", DefaultCorvetteSlots}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"PartFXLimits"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Gear", CorvetteGearGunVFXCap},
+								{"Gun", CorvetteGearGunVFXCap},
 							}
 						},
 					}

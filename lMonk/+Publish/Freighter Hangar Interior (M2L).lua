@@ -367,7 +367,7 @@ mx_ct[#mx_ct+1] = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.Freighter Hangar Changes.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '5.63',
+	NMS_VERSION				= '6.02',
 	MOD_DESCRIPTION			= mod_desc,
 	AMUMSS_SUPPRESS_MSG		= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 			= {{
@@ -502,8 +502,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			local tex_path = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures_mod_source/textures/space/spacestation/PIRATES/'
 			if lfs.attributes(tex_path) then
 				return {{
-					EXTERNAL_FILE_SOURCE = tex_path..'*.dds',
-					FILE_DESTINATION	 = 'TEXTURES/SPACE/SPACESTATION/PIRATES/*.dds'
+					EXTERNAL_FILE_SOURCE = tex_path..'*.DDS',
+					FILE_DESTINATION	 = 'TEXTURES/SPACE/SPACESTATION/PIRATES/*.DDS'
 				}}
 			end
 			return nil

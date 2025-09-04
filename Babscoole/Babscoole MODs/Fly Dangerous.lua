@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Fly Dangerous",
 ["MOD_DESCRIPTION"] = "Flight Overhaul",
 ["MOD_AUTHOR"]      = "PyronoxOmega and Babscoole",
-["NMS_VERSION"]     = "5.73",
+["NMS_VERSION"]     = "6.00",
 ["MODIFICATIONS"]   =
   {
 		{
@@ -406,6 +406,79 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"ControlHover", "AtmosCombatEngine"},
+							["VALUE_CHANGE_TABLE"] =
+              {
+								{"ThrustForce", 120}, --40
+								{"MaxSpeed", 240}, --80
+								{"MinSpeed", 0.01}, --50
+								--{"Falloff", 0.05},							--0.7
+								{"BoostThrustForce", 150}, --500
+								{"BoostMaxSpeed", 3}, --120
+								{"BoostFalloff", 0}, --0.7
+								{"TurnStrength", 4}, --1 Determines how fast ship will turn
+								{"ReverseBrake", 1}, --0.5
+								{"OverspeedBrake", 6}, --3
+								{"TurnBrakeMin", 0.8}, --1
+								{"TurnBrakeMax", 8} --4
+							}
+						},
+						--control corvette --
+						{
+							["PRECEDING_KEY_WORDS"] = {"ControlCorvette", "SpaceEngine"},
+							["VALUE_CHANGE_TABLE"] =
+              {
+								{"ThrustForce", 120}, --40
+								{"MaxSpeed", 540}, --180
+								{"MinSpeed", 0.01}, --1
+								--{"Falloff", 0.05},							--0.7
+								{"BoostThrustForce", 1500}, --500
+								{"BoostMaxSpeed", 3300}, --1100
+								{"BoostFalloff", 0.0}, --0.7
+								{"TurnStrength", 0.8}, --0.6 Determines how fast ship will turn
+								{"ReverseBrake", 1}, --0.5
+								{"OverspeedBrake", 5}, --3
+								{"TurnBrakeMin", 0.8}, --1
+								{"TurnBrakeMax", 6} --3
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"ControlCorvette", "PlanetEngine"},
+							["VALUE_CHANGE_TABLE"] =
+              {
+								{"ThrustForce", 60}, --20
+								{"MaxSpeed", 390}, --130
+								{"MinSpeed", 0.01}, --20
+								--{"Falloff", 0.05},							--0.5
+								{"BoostThrustForce", 60}, --20
+								{"BoostMaxSpeed", 555}, --185
+								{"BoostFalloff", 0}, --0.7
+								{"TurnStrength", 2.4}, --0.7 Determines how fast ship will turn
+								{"ReverseBrake", 2}, --1
+								{"OverspeedBrake", 6}, --3
+								{"TurnBrakeMin", 0.8}, --1
+								{"TurnBrakeMax", 4} --2
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"ControlCorvette", "CombatEngine"},
+							["VALUE_CHANGE_TABLE"] =
+              {
+								{"ThrustForce", 120}, --40
+								{"MaxSpeed", 240}, --80
+								{"MinSpeed", 0.01}, --50
+								--{"Falloff", 0.05},							--0.7
+								{"BoostThrustForce", 1500}, --500
+								{"BoostMaxSpeed", 4020}, --1100
+								{"BoostFalloff", 0}, --0.7
+								{"TurnStrength", 4}, --1 Determines how fast ship will turn
+								{"ReverseBrake", 1}, --0.5
+								{"OverspeedBrake", 6}, --3
+								{"TurnBrakeMin", 0.8}, --1
+								{"TurnBrakeMax", 8} --4
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"ControlCorvette", "AtmosCombatEngine"},
 							["VALUE_CHANGE_TABLE"] =
               {
 								{"ThrustForce", 120}, --40
