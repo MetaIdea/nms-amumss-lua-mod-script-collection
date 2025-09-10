@@ -1,5 +1,5 @@
 ModName = "PTSd UI Description Adjustments"
-GameVersion = "6_00"
+GameVersion = "6_03"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 --[[
@@ -100,16 +100,19 @@ CorvetteWalkwayAltDesc =
 [[A compact-sized living area for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, providing space for passengers as well as installable utility modules.&#xA;The size and weight &lt;FUEL&gt;reduces speed and handling&lt;&gt;, but only up to a point.]]
 
 CorvetteShieldGenDesc =
-[[A multi-purpose generator system for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, it both strengthens shields and can amplify other ship systems, although installing too many can leave little power for weapon platforms.&#xA;As with all bonuses to ship shield strength, there are &lt;FUEL&gt;diminishing returns&lt;&gt; the more the shields are already boosted above their base strength.&#xA;&#xA;Assemble a corvette at the dedicated &lt;TECHNOLOGY&gt;Corvette Workshop&lt;&gt; aboard any Space Station.]]
+[[A multi-purpose generator system for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, it both strengthens shields and can amplify other ship systems, although it shares the same power grid as Corvette weapon array platforms.&#xA;As with all bonuses to ship shield strength, there are &lt;FUEL&gt;diminishing returns&lt;&gt; the more the shields are already boosted above their base strength.&#xA;&#xA;Assemble a corvette at the dedicated &lt;TECHNOLOGY&gt;Corvette Workshop&lt;&gt; aboard any Space Station.]]
 
 CorvetteShieldGenAltDesc =
-[[A multi-purpose generator system for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, it both strengthens shields and can amplify other ship systems, although installing too many can leave little power for weapon platforms.&#xA;As with all bonuses to ship shield strength, there are &lt;FUEL&gt;diminishing returns&lt;&gt; the more the shields are already boosted above their base strength.]]
+[[A multi-purpose generator system for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, it both strengthens shields and can amplify other ship systems, although it shares the same power grid as Corvette weapon array platforms.&#xA;As with all bonuses to ship shield strength, there are &lt;FUEL&gt;diminishing returns&lt;&gt; the more the shields are already boosted above their base strength.]]
 
 CorvetteWeaponDesc =
-[[A dedicated weapon platform for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship.&#xA;Can more than &lt;HIGHLIGHT&gt;double&lt;&gt; the DPS for the relevant weapon with 5 modules installed, although each weapon module diverts some power from the ship's shield systems.&#xA;&#xA;Assemble a corvette at the dedicated &lt;TECHNOLOGY&gt;Corvette Workshop&lt;&gt; aboard any Space Station.]]
+[[A dedicated weapon platform for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship.&#xA;Can more than &lt;HIGHLIGHT&gt;double&lt;&gt; the DPS for the relevant weapon with 5 modules installed. However, not only do they they share the same power grid as Corvette shield generators, each installed weapon platform &lt;FUEL&gt;slightly reduces shield strength&lt;&gt; due to the power draw.&#xA;&#xA;Assemble a corvette at the dedicated &lt;TECHNOLOGY&gt;Corvette Workshop&lt;&gt; aboard any Space Station.]]
 
 CorvetteWeaponAltDesc =
-[[A dedicated weapon platform for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship.&#xA;Can more than &lt;HIGHLIGHT&gt;double&lt;&gt; the DPS for the relevant weapon with 5 modules installed, although each weapon module diverts some power from the ship's shield systems.]]
+[[A dedicated weapon platform for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship.&#xA;Can more than &lt;HIGHLIGHT&gt;double&lt;&gt; the DPS for the relevant weapon with 5 modules installed. However, not only do they they share the same power grid as Corvette shield generators, each installed weapon platform &lt;FUEL&gt;slightly reduces shield strength&lt;&gt; due to the power draw.]]
+
+CorvetteTradeAdvancedParts =
+[[Trade advanced modules, at a loss]]
 
 --Note, the description for the Anti-Gravity Well appears to be hardcoded and unable to actually be changed
 AntiGravWellDesc =
@@ -2574,6 +2577,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", CorvetteWeaponAltDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_BIGGS_SHOP_OPT_BARTER"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvetteTradeAdvancedParts}
 							}
 						},
 					}

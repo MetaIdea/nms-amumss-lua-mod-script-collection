@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "SentinelPolicePlayerShip",
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
-["NMS_VERSION"]             = "5.73",
+["NMS_VERSION"]             = "6.00",
 ["MOD_DESCRIPTION"]         = "Cockpitable sentinel police ship you can get via quick action emote menu action",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -70,65 +70,65 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-		<Property name="Components" value="GcTriggerActionComponentData">
-			<Property name="GcTriggerActionComponentData">
-				<Property name="HideModel" value="false" />
-				<Property name="StartInactive" value="false" />
-				<Property name="States">
-					<Property name="States" value="GcActionTriggerState">
-						<Property name="StateID" value="BOOT" />
-						<Property name="Triggers">
-							<Property name="Triggers" value="GcActionTrigger">
-								<Property name="Event" value="GcAnimFrameEvent">
-									<Property name="GcAnimFrameEvent">
-										<Property name="Anim" value="POLICE" />
-										<Property name="FrameStart" value="0" />
-										<Property name="StartFromEnd" value="false" />
-									</Property>
-								</Property>
-								<Property name="Action">
-									<Property name="Action" value="GcGoToStateAction">
-										<Property name="GcGoToStateAction">
-											<Property name="State" value="REWARD" />
-										</Property>
-									</Property>
-								</Property>
-							</Property>
-						</Property>
-					</Property>
-					<Property name="States" value="GcActionTriggerState">
-						<Property name="StateID" value="REWARD" />
-						<Property name="Triggers">
-							<Property name="Triggers" value="GcActionTrigger">
-								<Property name="Event" value="GcStateTimeEvent">
-									<Property name="GcStateTimeEvent">
-										<Property name="Seconds" value="0.000000" />
-										<Property name="RandomSeconds" value="0.000000" />
-										<Property name="UseMissionClock" value="false" />
-									</Property>
-								</Property>
-								<Property name="Action">
-									<Property name="Action" value="GcRewardAction">
-										<Property name="GcRewardAction">
-											<Property name="Reward" value="POLICE" />
-										</Property>
-									</Property>
-									<Property name="Action" value="GcGoToStateAction">
-										<Property name="GcGoToStateAction">
-											<Property name="State" value="BOOT" />
-										</Property>
-									</Property>
-								</Property>
-							</Property>
-						</Property>
-					</Property>
-				</Property>
-				<Property name="Persistent" value="false" />
-				<Property name="PersistentState" value="" />
-				<Property name="ResetShotTimeOnStateChange" value="false" />
-				<Property name="LinkStateToBaseGrid" value="false" />
-			</Property>
-		</Property>
+    <Property name="Components" value="GcTriggerActionComponentData">
+      <Property name="GcTriggerActionComponentData">
+        <Property name="HideModel" value="false" />
+        <Property name="StartInactive" value="false" />
+        <Property name="States">
+          <Property name="States" value="GcActionTriggerState">
+            <Property name="StateID" value="BOOT" />
+            <Property name="Triggers">
+              <Property name="Triggers" value="GcActionTrigger">
+                <Property name="Event" value="GcAnimFrameEvent">
+                  <Property name="GcAnimFrameEvent">
+                    <Property name="Anim" value="POLICE" />
+                    <Property name="FrameStart" value="0" />
+                    <Property name="StartFromEnd" value="false" />
+                  </Property>
+                </Property>
+                <Property name="Action">
+                  <Property name="Action" value="GcGoToStateAction">
+                    <Property name="GcGoToStateAction">
+                      <Property name="State" value="REWARD" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+          <Property name="States" value="GcActionTriggerState">
+            <Property name="StateID" value="REWARD" />
+            <Property name="Triggers">
+              <Property name="Triggers" value="GcActionTrigger">
+                <Property name="Event" value="GcStateTimeEvent">
+                  <Property name="GcStateTimeEvent">
+                    <Property name="Seconds" value="0.000000" />
+                    <Property name="RandomSeconds" value="0.000000" />
+                    <Property name="UseMissionClock" value="false" />
+                  </Property>
+                </Property>
+                <Property name="Action">
+                  <Property name="Action" value="GcRewardAction">
+                    <Property name="GcRewardAction">
+                      <Property name="Reward" value="POLICE" />
+                    </Property>
+                  </Property>
+                  <Property name="Action" value="GcGoToStateAction">
+                    <Property name="GcGoToStateAction">
+                      <Property name="State" value="BOOT" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property name="Persistent" value="false" />
+        <Property name="PersistentState" value="" />
+        <Property name="ResetShotTimeOnStateChange" value="false" />
+        <Property name="LinkStateToBaseGrid" value="false" />
+      </Property>
+    </Property>
 ]]
                         }
                     }
@@ -170,155 +170,155 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
                             ["ADD"] =
 [[
-		<Property name="GenericTable" value="GcGenericRewardTableEntry">
-			<Property name="Id" value="POLICE" />
-			<Property name="List" value="GcRewardTableItemList">
-				<Property name="RewardChoice" value="GiveAll" />
-				<Property name="OverrideZeroSeed" value="false" />
-				<Property name="UseInventoryChoiceOverride" value="false" />
-				<Property name="IncrementStat" value="" />
-				<Property name="List">
-					<Property name="List" value="GcRewardTableItem">
-						<Property name="PercentageChance" value="100.000000" />
-						<Property name="LabelID" value="" />
-						<Property name="Reward" value="GcRewardSpecificShip">
-							<Property name="GcRewardSpecificShip">
-								<Property name="ShipResource" value="GcResourceElement">
-									<Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERPOLICE.SCENE.MBIN" />
-									<Property name="ResHandle" value="GcResource">
-										<Property name="ResourceID" value="0" />
-									</Property>
-									<Property name="Seed" value="1" />
-									<Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
-										<Property name="Samplers" />
-									</Property>
-									<Property name="AltId" value="" />
-								</Property>
-								<Property name="Customisation" value="GcCharacterCustomisationData">
-									<Property name="DescriptorGroups" />
-									<Property name="PaletteID" value="" />
-									<Property name="Colours" />
-									<Property name="TextureOptions" />
-									<Property name="BoneScales" />
-									<Property name="Scale" value="1.000000" />
-								</Property>
-								<Property name="ShipLayout" value="GcInventoryLayout">
-									<Property name="Slots" value="60" />
-									<Property name="Seed" value="1" />
-									<Property name="Level" value="1" />
-								</Property>
-								<Property name="ShipInventory" value="GcInventoryContainer">
-									<Property name="Slots">
-										<Property name="Slots" value="GcInventoryElement">
-											<Property name="Type" value="GcInventoryType">
-												<Property name="InventoryType" value="Technology" />
-											</Property>
-											<Property name="Id" value="LAUNCHER" />
-											<Property name="Amount" value="300" />
-											<Property name="MaxAmount" value="300" />
-											<Property name="DamageFactor" value="0.000000" />
-											<Property name="FullyInstalled" value="true" />
-											<Property name="Index" value="GcInventoryIndex">
-												<Property name="X" value="-1" />
-												<Property name="Y" value="-1" />
-											</Property>
-										</Property>
-										<Property name="Slots" value="GcInventoryElement">
-											<Property name="Type" value="GcInventoryType">
-												<Property name="InventoryType" value="Technology" />
-											</Property>
-											<Property name="Id" value="SHIPJUMP1" />
-											<Property name="Amount" value="100" />
-											<Property name="MaxAmount" value="100" />
-											<Property name="DamageFactor" value="0.000000" />
-											<Property name="FullyInstalled" value="true" />
-											<Property name="Index" value="GcInventoryIndex">
-												<Property name="X" value="-1" />
-												<Property name="Y" value="-1" />
-											</Property>
-										</Property>
-										<Property name="Slots" value="GcInventoryElement">
-											<Property name="Type" value="GcInventoryType">
-												<Property name="InventoryType" value="Technology" />
-											</Property>
-											<Property name="Id" value="SHIPSHIELD" />
-											<Property name="Amount" value="200" />
-											<Property name="MaxAmount" value="200" />
-											<Property name="DamageFactor" value="0.000000" />
-											<Property name="FullyInstalled" value="true" />
-											<Property name="Index" value="GcInventoryIndex">
-												<Property name="X" value="-1" />
-												<Property name="Y" value="-1" />
-											</Property>
-										</Property>
-										<Property name="Slots" value="GcInventoryElement">
-											<Property name="Type" value="GcInventoryType">
-												<Property name="InventoryType" value="Technology" />
-											</Property>
-											<Property name="Id" value="HYPERDRIVE" />
-											<Property name="Amount" value="120" />
-											<Property name="MaxAmount" value="120" />
-											<Property name="DamageFactor" value="0.000000" />
-											<Property name="FullyInstalled" value="true" />
-											<Property name="Index" value="GcInventoryIndex">
-												<Property name="X" value="-1" />
-												<Property name="Y" value="-1" />
-											</Property>
-										</Property>
-										<Property name="Slots" value="GcInventoryElement" _id="SHIPLAS1">
-											<Property name="Type" value="GcInventoryType">
-												<Property name="InventoryType" value="Technology" />
-											</Property>
-											<Property name="Id" value="SHIPGUN1" />
-											<Property name="Amount" value="1000" />
-											<Property name="MaxAmount" value="1000" />
-											<Property name="DamageFactor" value="0.000000" />
-											<Property name="FullyInstalled" value="true" />
-											<Property name="Index" value="GcInventoryIndex">
-												<Property name="X" value="-1" />
-												<Property name="Y" value="-1" />
-											</Property>
-										</Property>
-									</Property>
-									<Property name="ValidSlotIndices" />
-									<Property name="Class" value="GcInventoryClass">
-										<Property name="InventoryClass" value="S" />
-									</Property>
-									<Property name="StackSizeGroup" value="GcInventoryStackSizeGroup">
-										<Property name="InventoryStackSizeGroup" value="Default" />
-									</Property>
-									<Property name="BaseStatValues" />
-									<Property name="SpecialSlots" />
-									<Property name="Width" value="0" />
-									<Property name="Height" value="0" />
-									<Property name="IsCool" value="false" />
-									<Property name="Name" value="" />
-									<Property name="Version" value="0" />
-								</Property>
-								<Property name="CostAmount" value="0" />
-								<Property name="CostCurrency" value="GcCurrency">
-									<Property name="Currency" value="Units" />
-								</Property>
-								<Property name="ShipType" value="GcSpaceshipClasses">
-									<Property name="ShipClass" value="Fighter" />
-								</Property>
-								<Property name="UseOverrideSizeType" value="false" />
-								<Property name="OverrideSizeType" value="GcInventoryLayoutSizeType">
-									<Property name="SizeType" value="SciMedium" />
-								</Property>
-								<Property name="NameOverride" value="Police" />
-								<Property name="IsGift" value="true" />
-								<Property name="IsRewardShip" value="true" />
-								<Property name="FormatAsSeasonal" value="false" />
-								<Property name="ModelViewOverride" value="GcModelViews">
-									<Property name="ModelViews" value="None" />
-								</Property>
-							</Property>
-						</Property>
-					</Property>
-				</Property>
-			</Property>
-		</Property>
+    <Property name="GenericTable" value="GcGenericRewardTableEntry">
+      <Property name="Id" value="POLICE" />
+      <Property name="List" value="GcRewardTableItemList">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="false" />
+        <Property name="UseInventoryChoiceOverride" value="false" />
+        <Property name="IncrementStat" value="" />
+        <Property name="List">
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="100.000000" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecificShip">
+              <Property name="GcRewardSpecificShip">
+                <Property name="ShipResource" value="GcResourceElement">
+                  <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERPOLICE.SCENE.MBIN" />
+                  <Property name="ResHandle" value="GcResource">
+                    <Property name="ResourceID" value="0" />
+                  </Property>
+                  <Property name="Seed" value="1" />
+                  <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
+                    <Property name="Samplers" />
+                  </Property>
+                  <Property name="AltId" value="" />
+                </Property>
+                <Property name="Customisation" value="GcCharacterCustomisationData">
+                  <Property name="DescriptorGroups" />
+                  <Property name="PaletteID" value="" />
+                  <Property name="Colours" />
+                  <Property name="TextureOptions" />
+                  <Property name="BoneScales" />
+                  <Property name="Scale" value="1.000000" />
+                </Property>
+                <Property name="ShipLayout" value="GcInventoryLayout">
+                  <Property name="Slots" value="60" />
+                  <Property name="Seed" value="1" />
+                  <Property name="Level" value="1" />
+                </Property>
+                <Property name="ShipInventory" value="GcInventoryContainer">
+                  <Property name="Slots">
+                    <Property name="Slots" value="GcInventoryElement">
+                      <Property name="Type" value="GcInventoryType">
+                        <Property name="InventoryType" value="Technology" />
+                      </Property>
+                      <Property name="Id" value="LAUNCHER" />
+                      <Property name="Amount" value="300" />
+                      <Property name="MaxAmount" value="300" />
+                      <Property name="DamageFactor" value="0.000000" />
+                      <Property name="FullyInstalled" value="true" />
+                      <Property name="Index" value="GcInventoryIndex">
+                        <Property name="X" value="-1" />
+                        <Property name="Y" value="-1" />
+                      </Property>
+                    </Property>
+                    <Property name="Slots" value="GcInventoryElement">
+                      <Property name="Type" value="GcInventoryType">
+                        <Property name="InventoryType" value="Technology" />
+                      </Property>
+                      <Property name="Id" value="SHIPJUMP1" />
+                      <Property name="Amount" value="100" />
+                      <Property name="MaxAmount" value="100" />
+                      <Property name="DamageFactor" value="0.000000" />
+                      <Property name="FullyInstalled" value="true" />
+                      <Property name="Index" value="GcInventoryIndex">
+                        <Property name="X" value="-1" />
+                        <Property name="Y" value="-1" />
+                      </Property>
+                    </Property>
+                    <Property name="Slots" value="GcInventoryElement">
+                      <Property name="Type" value="GcInventoryType">
+                        <Property name="InventoryType" value="Technology" />
+                      </Property>
+                      <Property name="Id" value="SHIPSHIELD" />
+                      <Property name="Amount" value="200" />
+                      <Property name="MaxAmount" value="200" />
+                      <Property name="DamageFactor" value="0.000000" />
+                      <Property name="FullyInstalled" value="true" />
+                      <Property name="Index" value="GcInventoryIndex">
+                        <Property name="X" value="-1" />
+                        <Property name="Y" value="-1" />
+                      </Property>
+                    </Property>
+                    <Property name="Slots" value="GcInventoryElement">
+                      <Property name="Type" value="GcInventoryType">
+                        <Property name="InventoryType" value="Technology" />
+                      </Property>
+                      <Property name="Id" value="HYPERDRIVE" />
+                      <Property name="Amount" value="120" />
+                      <Property name="MaxAmount" value="120" />
+                      <Property name="DamageFactor" value="0.000000" />
+                      <Property name="FullyInstalled" value="true" />
+                      <Property name="Index" value="GcInventoryIndex">
+                        <Property name="X" value="-1" />
+                        <Property name="Y" value="-1" />
+                      </Property>
+                    </Property>
+                    <Property name="Slots" value="GcInventoryElement" _id="SHIPLAS1">
+                      <Property name="Type" value="GcInventoryType">
+                        <Property name="InventoryType" value="Technology" />
+                      </Property>
+                      <Property name="Id" value="SHIPGUN1" />
+                      <Property name="Amount" value="1000" />
+                      <Property name="MaxAmount" value="1000" />
+                      <Property name="DamageFactor" value="0.000000" />
+                      <Property name="FullyInstalled" value="true" />
+                      <Property name="Index" value="GcInventoryIndex">
+                        <Property name="X" value="-1" />
+                        <Property name="Y" value="-1" />
+                      </Property>
+                    </Property>
+                  </Property>
+                  <Property name="ValidSlotIndices" />
+                  <Property name="Class" value="GcInventoryClass">
+                    <Property name="InventoryClass" value="S" />
+                  </Property>
+                  <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup">
+                    <Property name="InventoryStackSizeGroup" value="Default" />
+                  </Property>
+                  <Property name="BaseStatValues" />
+                  <Property name="SpecialSlots" />
+                  <Property name="Width" value="0" />
+                  <Property name="Height" value="0" />
+                  <Property name="IsCool" value="false" />
+                  <Property name="Name" value="" />
+                  <Property name="Version" value="0" />
+                </Property>
+                <Property name="CostAmount" value="0" />
+                <Property name="CostCurrency" value="GcCurrency">
+                  <Property name="Currency" value="Units" />
+                </Property>
+                <Property name="ShipType" value="GcSpaceshipClasses">
+                  <Property name="ShipClass" value="Fighter" />
+                </Property>
+                <Property name="UseOverrideSizeType" value="false" />
+                <Property name="OverrideSizeType" value="GcInventoryLayoutSizeType">
+                  <Property name="SizeType" value="SciMedium" />
+                </Property>
+                <Property name="NameOverride" value="Police" />
+                <Property name="IsGift" value="true" />
+                <Property name="IsRewardShip" value="true" />
+                <Property name="FormatAsSeasonal" value="false" />
+                <Property name="ModelViewOverride" value="GcModelViews">
+                  <Property name="ModelViews" value="None" />
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
 ]]
                         }
                     }
@@ -336,17 +336,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 <Data template="cTkModelDescriptorList">
   <Property name="List">
-		<Property name="List" value="TkResourceDescriptorList">
+    <Property name="List" value="TkResourceDescriptorList">
       <Property name="TypeId" value="_SHIP_" />
       <Property name="Descriptors">
-				<Property name="Descriptors" value="TkResourceDescriptorData">
+        <Property name="Descriptors" value="TkResourceDescriptorData">
           <Property name="Id" value="_SHIP_POLICE" />
           <Property name="Name" value="_Ship_Police" />
-					<Property name="ReferencePaths">
-						<Property name="ReferencePaths" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
-					</Property>
-					<Property name="Chance" value="0.000000" />
-					<Property name="Children" />
+          <Property name="ReferencePaths">
+            <Property name="ReferencePaths" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
+          </Property>
+          <Property name="Chance" value="0.000000" />
+          <Property name="Children" />
         </Property>
       </Property>
     </Property>
@@ -365,19 +365,19 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="NameHash" value="4182676705" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData">
-		<Property name="TransX" value="0.000000" />
-		<Property name="TransY" value="0.000000" />
-		<Property name="TransZ" value="0.000000" />
-		<Property name="RotX" value="0.000000" />
-		<Property name="RotY" value="0.000000" />
-		<Property name="RotZ" value="0.000000" />
-		<Property name="ScaleX" value="1.000000" />
-		<Property name="ScaleY" value="1.000000" />
-		<Property name="ScaleZ" value="1.000000" />
+    <Property name="TransX" value="0.000000" />
+    <Property name="TransY" value="0.000000" />
+    <Property name="TransZ" value="0.000000" />
+    <Property name="RotX" value="0.000000" />
+    <Property name="RotY" value="0.000000" />
+    <Property name="RotZ" value="0.000000" />
+    <Property name="ScaleX" value="1.000000" />
+    <Property name="ScaleY" value="1.000000" />
+    <Property name="ScaleZ" value="1.000000" />
   </Property>
   <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
-		<Property name="Attributes" value="TkSceneNodeAttributeData">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="GEOMETRY" />
       <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.GEOMETRY.MBIN" />
     </Property>
@@ -387,7 +387,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="Children">
-		<Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="EngineFlare_Distant" />
       <Property name="NameHash" value="3869425187" />
       <Property name="Type" value="LOCATOR" />
@@ -406,7 +406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="ProcRoot_StarShip" />
       <Property name="NameHash" value="3871606254" />
       <Property name="Type" value="LOCATOR" />
@@ -586,6 +586,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
+                    <Property name="Attributes" value="TkSceneNodeAttributeData">
+                      <Property name="Name" value="NAVIGATION" />
+                      <Property name="Value" value="FALSE" />
+                    </Property>
                     <Property name="Attributes" value="TkSceneNodeAttributeData">
                       <Property name="Name" value="TYPE" />
                       <Property name="Value" value="Box" />

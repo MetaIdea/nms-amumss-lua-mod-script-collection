@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "SentinelStarshipFabricator"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "600"
+METADATA_NMS_VERSION    = "603"
 METADATA_MOD_DESC       = "This mod allows players to synthesize Interceptor-type starships in the fabricator machines using a very simplified assembly process. Modifies files in METADATA\GAMESTATE\PLAYERDATA and UI directories."
 
 

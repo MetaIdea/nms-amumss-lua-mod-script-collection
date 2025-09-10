@@ -1401,6 +1401,10 @@ PLACEMENT_SCENE =
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="NAVIGATION" />
+              <Property name="Value" value="FALSE" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Box" />
             </Property>

@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Golden Vector Unlocker",
 ["MOD_AUTHOR"]      = "Babscoole & Mjstral",
 ["MOD_DESCRIPTION"] = "Unlock a reward via speical emote menu quick action",
-["NMS_VERSION"]     = "5.73",
+["NMS_VERSION"]     = "6.00",
 ["MODIFICATIONS"]   =
     {
         {
@@ -188,6 +188,57 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
   <Property name="Has30HzFrames" value="false" />
+</Data>
+]]
+        },
+        {
+            ["FILE_DESTINATION"] = "LocTable.MXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+<Data template="TkLocalisationTable">
+  <Property name="Table">
+    <Property value="TkLocalisationEntry">
+      <Property name="Id" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="English" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="French" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="Italian" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="German" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="Spanish" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="Russian" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="Polish" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="Dutch" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="Portuguese" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="LatinAmericanSpanish" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="BrazilianPortuguese" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="SimplifiedChinese" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="TraditionalChinese" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="TencentChinese" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="Korean" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="Japanese" value="]] .. REWARD_TITLE .. [[" />
+      <Property name="USEnglish" value="]] .. REWARD_TITLE .. [[" />
+    </Property>
+    <Property value="TkLocalisationEntry">
+      <Property name="Id" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="English" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="French" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="Italian" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="German" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="Spanish" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="Russian" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="Polish" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="Dutch" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="Portuguese" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="LatinAmericanSpanish" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="BrazilianPortuguese" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="SimplifiedChinese" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="TraditionalChinese" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="TencentChinese" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="Korean" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="Japanese" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+      <Property name="USEnglish" value="EMOTE_]] .. REWARD_ABBR .. [[" />
+    </Property>
+  </Property>
 </Data>
 ]]
         },

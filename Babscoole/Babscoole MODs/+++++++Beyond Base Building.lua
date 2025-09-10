@@ -80,6 +80,9 @@ print("BASESTORAGE_ON_FREIGHTER = "..tostring(BASESTORAGE_ON_FREIGHTER))
 FREIGHTERROOMS_ON_PLANETBASE = GUIF({false, [[Do you want to place Freighter Tech and Bio rooms on Planet Bases?  Default = N.  Press ENTER for default value.]]},10)
 print("FREIGHTERROOMS_ON_PLANETBASE = "..tostring(FREIGHTERROOMS_ON_PLANETBASE))
 
+BASEPARTS_ON_CORVETTE = GUIF({true, [[Do you want to place Corvette parts on Planet Bases?  Default = Y.  Press ENTER for default value.]]},10)
+print("BASEPARTS_ON_CORVETTE = "..tostring(BASEPARTS_ON_CORVETTE))
+
 InputMultiplier = {Multiplier,
 [[
     Choose a multiplier for Storage and Rates and EMAnywhere status:

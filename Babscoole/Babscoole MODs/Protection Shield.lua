@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Protection Shield",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "5.74",
+["NMS_VERSION"]     = "6.00",
 ["MOD_DESCRIPTION"] = "Protective shield against hazards, bullets ...",
 ["MODIFICATIONS"]   =
     {
@@ -313,6 +313,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
               <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
+                  <Property name="Name" value="NAVIGATION" />
+                  <Property name="Value" value="FALSE" />
+                </Property>
                 <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="TYPE" />
                   <Property name="Value" value="Sphere" />

@@ -1,4 +1,4 @@
-local mod_desc = [[camera tweak2]]
+local mod_desc = [[CAMERA TWEAK2 No Zoom ShipCam]]
 
 local cam_ect = {}
 
@@ -684,7 +684,7 @@ cam_ect[#cam_ect+1] = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= 'camera tweak2.pak',
+	MOD_FILENAME 		= 'CAMERA TWEAK2 No Zoom ShipCam.pak',
 	MOD_AUTHOR			= 'TEAM',
 	NMS_VERSION			= '5.5',
 	MOD_DESCRIPTION		= mod_desc,

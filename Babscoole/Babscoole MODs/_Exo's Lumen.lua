@@ -54,6 +54,10 @@ function GetBlock(Name,NameHash,TransX,TransY,TransZ,RotX,RotY,RotZ,ScaleX,Scale
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="]].. VOLUMETRIC ..[[" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
+        </Property>
         <Property value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
@@ -85,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_Exo's Lumen",
 ["MOD_AUTHOR"]              = "Exosolar and Babscoole",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.73",
+["NMS_VERSION"]             = "6.00",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

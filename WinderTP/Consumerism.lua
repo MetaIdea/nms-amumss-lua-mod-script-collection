@@ -4,9 +4,10 @@ SPECIAL_LIST =
 		["ShopNumber"] = "106",
 		["Table"] =  
 		{
+			{ ["ID"] = "B_TUR_B",	["IsConsumable"] = "true", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_BANNER19",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_DECAL19",	["IsConsumable"] = "False", ["IsCape"] = "False"},
-			{ ["ID"] = "EXPD_EGG_19",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_EGG_19",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_POSTER19A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_POSTER19B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_POSTER19C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
@@ -14,7 +15,7 @@ SPECIAL_LIST =
 			{ ["ID"] = "JETS_RUIN",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "S19_TP",	["IsConsumable"] = "True", ["IsCape"] = "False"},
 			{ ["ID"] = "SHIP_PLASMA",	["IsConsumable"] = "False", ["IsCape"] = "False"},
-			{ ["ID"] = "TWITCH_FIREW11A",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW11A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			-- { ["ID"] = "TWITCH_FIREW11B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			-- { ["ID"] = "TWITCH_FIREW11C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			-- { ["ID"] = "TWITCH_FIREW11D",	["IsConsumable"] = "False", ["IsCape"] = "False"},

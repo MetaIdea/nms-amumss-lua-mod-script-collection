@@ -14,7 +14,7 @@ NEW_EMOTE_TABLE =
 	{ ["TITLE"]="Doing Great", ["ANIM"]="0H_HAPPY_04", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
 	{ ["TITLE"]="Thumbs Up", ["ANIM"]="0H_HAPPY_05", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
 	{ ["TITLE"]="You Got It", ["ANIM"]="0H_HAPPY_06", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Nod", ["ANIM"]="0H_HAPPY_07", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Nod", ["ANIM"]="0H_HAPPY_07", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="", ["Display"]="-1" },
 	{ ["TITLE"]="Enthusiatic Nod", ["ANIM"]="0H_HAPPY_08", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
 	{ ["TITLE"]="Reassuring Nod", ["ANIM"]="0H_HAPPY_09", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
 	{ ["TITLE"]="Hmph!", ["ANIM"]="0H_ANGRY_01", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="0H_SIT_ANGRY_01" },
@@ -46,12 +46,18 @@ NEW_EMOTE_TABLE =
 	{ ["TITLE"]="Fake Death", ["ANIM"]="0H_DEATH", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/WIKI/COMBATHEADER.DDS", ["CANCEL"]="True", ["LOOP"]="FUCKYOU", ["RIDE"]="" },
 	{ ["TITLE"]="Falling Forwards", ["ANIM"]="0H_DEATH_FALL_F", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/WIKI/COMBATHEADER.DDS", ["CANCEL"]="True", ["LOOP"]="FUCKYOU", ["RIDE"]="" },
 	{ ["TITLE"]="Falling Backwards", ["ANIM"]="0H_DEATH_FALL_B", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/WIKI/COMBATHEADER.DDS", ["CANCEL"]="True", ["LOOP"]="FUCKYOU", ["RIDE"]="" },
+	{ ["TITLE"]="Phantom Sit", ["ANIM"]="CKPIT_SIT_IN", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/SIT.DDS", ["CANCEL"]="True", ["LOOP"]="CKPIT_SIT_LOOP", ["RIDE"]="" },
 	{ ["TITLE"]="PANIC!", ["ANIM"]="0H_ANY2AIR", ["ICON"]=EMOTE_GENERIC_ICON, ["CANCEL"]="False", ["LOOP"]="0H_FALL_PANIC", ["RIDE"]="" },
 	{ ["TITLE"]="Slide", ["ANIM"]="0H_SLIDE_F", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\SPECIAL02.DDS", ["CANCEL"]="False", ["LOOP"]="", ["RIDE"]="0H_SLIDE_F" },
 	{ ["TITLE"]="Land Float", ["ANIM"]="0H_SWIM_IDLE", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\WATER_NO_PROBLEM.DDS", ["CANCEL"]="False", ["LOOP"]="", ["RIDE"]="0H_SWIM_IDLE" },
 	{ ["TITLE"]="Land Swim", ["ANIM"]="0H_SWIM_F", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\WATER_NO_PROBLEM.DDS", ["CANCEL"]="False", ["LOOP"]="", ["RIDE"]="0H_SWIM_F" },
+	{ ["TITLE"]="Dry Drowning", ["ANIM"]="0H_SW_TRAP_TENT", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\WATER_NO_PROBLEM.DDS", ["CANCEL"]="False", ["LOOP"]="", ["RIDE"]="0H_SW_TRAP_TENT" },
 	{ ["TITLE"]="Moonwalk", ["ANIM"]="0H_WALK_F", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\SPECIAL01.DDS", ["CANCEL"]="False", ["LOOP"]="", ["RIDE"]="" },
 	{ ["TITLE"]="Moonrun", ["ANIM"]="0H_JOG_F", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\SPECIAL01.DDS", ["CANCEL"]="False", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Take a Dive", ["ANIM"]="JPACK_SKYDIVE", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL.EXPEDITION.BACKPACK01.DDS", ["CANCEL"]="False", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Human Bullet", ["ANIM"]="JPACK_ON", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL.EXPEDITION.BACKPACK01.DDS", ["CANCEL"]="False", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Space Float", ["ANIM"]="JPACK_IDLE", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL.EXPEDITION.BACKPACK01.DDS", ["CANCEL"]="False", ["LOOP"]="", ["RIDE"]="JPACK_IDLE" },
+	{ ["TITLE"]="Space Chill", ["ANIM"]="JPACK_ON_RELAX", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL.EXPEDITION.BACKPACK01.DDS", ["CANCEL"]="False", ["LOOP"]="", ["RIDE"]="JPACK_ON_RELAX" },
 	{ ["TITLE"]="Clap", ["ANIM"]="0H_INT_RT_01_IN", ["ICON"]=EMOTE_GENERIC_ICON, ["CANCEL"]="False", ["LOOP"]="0H_INT_RT_01_LP", ["RIDE"]="" },
 	{ ["TITLE"]="Grooving", ["ANIM"]="0H_INT_RT_02_IN", ["ICON"]=EMOTE_GENERIC_ICON, ["CANCEL"]="False", ["LOOP"]="0H_INT_RT_02_LP", ["RIDE"]="" },
 	{ ["TITLE"]="Casual Salute", ["ANIM"]="0H_INT_RT_03", ["ICON"]=EMOTE_GENERIC_ICON, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
@@ -82,149 +88,139 @@ NEW_EMOTE_TABLE =
 	{ ["TITLE"]="Two-hand Melee", ["ANIM"]="2H_MELEEHIT", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\THANKS.DDS", ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="2H_MELEEHIT" },
 }
 
-function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID, ICON, MOVECAN, ANIMLOOP, ANIMRIDE)
+LANGUAGE_TYPE = {"English", "French", "Italian", "German", "Spanish", "Russian", "Polish", "Dutch", "Portuguese", "LatinAmericanSpanish", "BrazilianPortuguese", "SimplifiedChinese", "TraditionalChinese", "TencentChinese", "Korean", "Japanese", "USEnglish"}
+
+function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID, ICON, MOVECAN, ANIMLOOP, ANIMRIDE, DISPLAY)
+	if DISPLAY then DIS_EXPORT = [[
+    <Property name="Emotes" value="GcPlayerEmote" _display="WTP">]]
+	else DIS_EXPORT = [[
+    <Property name="Emotes" value="GcPlayerEmote">]]
+	end
 QUICK_ACTION_BUTTON_TEMPLATE =
 [[
-    <Property value="GcPlayerEmote.xml">
-      <Property name="Title" value="]] .. BUTTON_TITLE .. [[" />
-      <Property name="ChatText" value="" />
-      <Property name="ChatUsesPrefix" value="False" />
-      <Property name="EmoteID" value="]] .. ANIM_ID .. [[1" />
-      <Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
-      <Property name="PropData" value="GcPlayerEmotePropData.xml">
-        <Property name="Model" value="" />
-        <Property name="Scale" value="0" />
-        <Property name="Hand" value="GcHand.xml">
-          <Property name="Hand" value="Right" />
-        </Property>
-        <Property name="IsHologram" value="False" />
-        <Property name="ScanEffectNodeName" value="" />
-        <Property name="ScanEffect" value="GcScanEffectData.xml">
-          <Property name="Id" value="" />
-          <Property name="ScanEffectType" value="Building" />
-          <Property name="Colour" value="Colour.xml">
+			<Property name="Title" value="W]] .. ANIM_ID .. [[" />
+			<Property name="ChatText" value="" />
+			<Property name="ChatUsesPrefix" value="true" />
+			<Property name="EmoteID" value="]] .. ANIM_ID .. [[1" />
+			<Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
+			<Property name="PropData" value="GcPlayerEmotePropData">
+				<Property name="Model" value="" />
+				<Property name="Scale" value="0.000000" />
+				<Property name="Hand" value="GcHand">
+					<Property name="Hand" value="Right" />
+				</Property>
+				<Property name="IsHologram" value="false" />
+				<Property name="ScanEffectNodeName" value="" />
+				<Property name="ScanEffect" value="GcScanEffectData">
+					<Property name="Id" value="" />
+					<Property name="ScanEffectType" value="Building" />
+					<Property name="Colour">
             <Property name="R" value="0.823" />
             <Property name="G" value="0.475" />
             <Property name="B" value="0.432" />
             <Property name="A" value="1" />
-          </Property>
-          <Property name="BasecolourIntensity" value="0.2" />
-          <Property name="ScanlinesSeparation" value="0.1" />
-          <Property name="FresnelIntensity" value="3" />
-          <Property name="GlowIntensity" value="0" />
-          <Property name="WaveOffset" value="0" />
-          <Property name="WaveActive" value="True" />
-          <Property name="FixedUpAxis" value="False" />
-          <Property name="Transparent" value="False" />
-          <Property name="ModelFade" value="False" />
-          <Property name="FadeInTime" value="0.2" />
-          <Property name="FadeOutTime" value="0.2" />
-        </Property>
-        <Property name="DelayTime" value="0" />
-      </Property>
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="]] .. ICON .. [[" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="LinkedSpecialID" value="" />
-      <Property name="NeverShowInMenu" value="False" />
-      <Property name="LoopAnimUntilMove" value="]] .. ANIMLOOP .. [[" />
-      <Property name="CloseMenuOnSelect" value="False" />
-      <Property name="MoveToCancel" value="]] .. MOVECAN .. [[" />
-      <Property name="GekAnimationName" value="" />
-      <Property name="GekLoopAnimUntilMove" value="" />
-      <Property name="AvailableUnderwater" value="False" />
-      <Property name="RidingAnimationName" value="]] .. ANIMRIDE .. [[" />
-      <Property name="IsPetCommand" value="False" />
-      <Property name="PetCommandTitle" value="" />
-      <Property name="PetCommandIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcPlayerEmote.xml">
-      <Property name="Title" value="]] .. BUTTON_TITLE .. [[" />
-      <Property name="ChatText" value="" />
-      <Property name="ChatUsesPrefix" value="False" />
-      <Property name="EmoteID" value="]] .. ANIM_ID .. [[2" />
-      <Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
-      <Property name="PropData" value="GcPlayerEmotePropData.xml">
-        <Property name="Model" value="" />
-        <Property name="Scale" value="0" />
-        <Property name="Hand" value="GcHand.xml">
-          <Property name="Hand" value="Right" />
-        </Property>
-        <Property name="IsHologram" value="False" />
-        <Property name="ScanEffectNodeName" value="" />
-        <Property name="ScanEffect" value="GcScanEffectData.xml">
-          <Property name="Id" value="" />
-          <Property name="ScanEffectType" value="Building" />
-          <Property name="Colour" value="Colour.xml">
-            <Property name="R" value="0.823" />
-            <Property name="G" value="0.475" />
-            <Property name="B" value="0.432" />
-            <Property name="A" value="1" />
-          </Property>
-          <Property name="BasecolourIntensity" value="0.2" />
-          <Property name="ScanlinesSeparation" value="0.1" />
-          <Property name="FresnelIntensity" value="3" />
-          <Property name="GlowIntensity" value="0" />
-          <Property name="WaveOffset" value="0" />
-          <Property name="WaveActive" value="True" />
-          <Property name="FixedUpAxis" value="False" />
-          <Property name="Transparent" value="False" />
-          <Property name="ModelFade" value="False" />
-          <Property name="FadeInTime" value="0.2" />
-          <Property name="FadeOutTime" value="0.2" />
-        </Property>
-        <Property name="DelayTime" value="0" />
-      </Property>
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="]] .. ICON .. [[" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="LinkedSpecialID" value="" />
-      <Property name="NeverShowInMenu" value="False" />
-      <Property name="LoopAnimUntilMove" value="]] .. ANIMLOOP .. [[" />
-      <Property name="CloseMenuOnSelect" value="False" />
-      <Property name="MoveToCancel" value="]] .. MOVECAN .. [[" />
-      <Property name="GekAnimationName" value="" />
-      <Property name="GekLoopAnimUntilMove" value="" />
-      <Property name="AvailableUnderwater" value="True" />
-      <Property name="RidingAnimationName" value="" />
-      <Property name="IsPetCommand" value="False" />
-      <Property name="PetCommandTitle" value="" />
-      <Property name="PetCommandIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-    </Property>	
+					</Property>
+					<Property name="BasecolourIntensity" value="0.200000" />
+					<Property name="ScanlinesSeparation" value="0.100000" />
+					<Property name="FresnelIntensity" value="3.000000" />
+					<Property name="GlowIntensity" value="0.000000" />
+					<Property name="WaveOffset" value="0.000000" />
+					<Property name="WaveActive" value="true" />
+					<Property name="FixedUpAxis" value="false" />
+					<Property name="Transparent" value="false" />
+					<Property name="ModelFade" value="false" />
+					<Property name="FadeInTime" value="0.200000" />
+					<Property name="FadeOutTime" value="0.200000" />
+				</Property>
+				<Property name="DelayTime" value="0.000000" />
+			</Property>
+			<Property name="Icon" value="TkTextureResource">
+				<Property name="Filename" value="]] .. ICON .. [[" />
+				<Property name="ResHandle" value="GcResource">
+					<Property name="ResourceID" value="0" />
+				</Property>
+			</Property>
+			<Property name="LinkedSpecialID" value="" />
+			<Property name="NeverShowInMenu" value="false" />
+			<Property name="LoopAnimUntilMove" value="]] .. ANIMLOOP .. [[" />
+			<Property name="CloseMenuOnSelect" value="false" />
+			<Property name="MoveToCancel" value="]] .. MOVECAN .. [[" />
+			<Property name="GekAnimationName" value="" />
+			<Property name="GekLoopAnimUntilMove" value="" />
+			<Property name="AvailableUnderwater" value="true" />
+			<Property name="RidingAnimationName" value="]] .. ANIMRIDE .. [[" />
+			<Property name="IsPetCommand" value="false" />
+			<Property name="PetCommandTitle" value="" />
+			<Property name="PetCommandIcon" value="TkTextureResource">
+				<Property name="Filename" value="" />
+				<Property name="ResHandle" value="GcResource">
+					<Property name="ResourceID" value="0" />
+				</Property>
+			</Property>
+			<Property name="IconResource" value="GcResource">
+				<Property name="ResourceID" value="0" />
+			</Property>
+			<Property name="IconPetCommandResource" value="GcResource">
+				<Property name="ResourceID" value="0" />
+			</Property>
+		</Property>
 ]]
-return QUICK_ACTION_BUTTON_TEMPLATE
+return DIS_EXPORT .. QUICK_ACTION_BUTTON_TEMPLATE
 end
 
+function GetLanguageEntry(VALUE, LOCALE)
+return[[
+      <Property name="]] .. LOCALE .. [[" value="]] .. VALUE .. [[" />
+]]
+end
+
+NEWFILES_FINAL = {}
 NEW_EMOTES_ALL = {""}
 NEW_EMOTES_EXPORT = ""
 
+-- BUILDING LANGUAGE TABLES 
+LANGUAGE_FILE_HEADER = [[
+<?xml version="1.0" encoding="utf-8"?>
+<Data template="TkLocalisationTable">
+  <Property name="Table">]]
+	LANGUAGE_TEMP = {}
+	EXPORT_LANGUAGE = {}
+	table.insert(EXPORT_LANGUAGE, LANGUAGE_FILE_HEADER)
+for _k,l in pairs(NEW_EMOTE_TABLE) do
+		-- USES ENGLISH ENTRY IF THERE IS NO TRANSLATION
+		table.insert(EXPORT_LANGUAGE, [[
+    <Property value="TkLocalisationEntry">
+      <Property name="Id" value="W]] .. l["ANIM"] .. [[" />
+]])
+		for _i,j in pairs(LANGUAGE_TYPE) do
+			table.insert(EXPORT_LANGUAGE, GetLanguageEntry(l["TITLE"],j))
+		end
+		table.insert(EXPORT_LANGUAGE, [[
+    </Property>
+]])
+end
+		table.insert(EXPORT_LANGUAGE, [[
+</Property>
+</Data>]])
+LANGUAGE_TEMP = {
+					["FILE_DESTINATION"] = [[LocTable.MXML]] ,
+					["FILE_CONTENT"] = table.concat(EXPORT_LANGUAGE)
+				}
+table.insert(NEWFILES_FINAL, LANGUAGE_TEMP)
+
 for i=1,#NEW_EMOTE_TABLE,1 do
-	NEW_EMOTES_ALL[i] = CreateQuickActionMenuEntry(NEW_EMOTE_TABLE[i]["TITLE"], NEW_EMOTE_TABLE[i]["ANIM"], NEW_EMOTE_TABLE[i]["ICON"], NEW_EMOTE_TABLE[i]["CANCEL"], NEW_EMOTE_TABLE[i]["LOOP"], NEW_EMOTE_TABLE[i]["RIDE"])
+	local ExportDisplay = false; if NEW_EMOTE_TABLE[i]["Display"] ~= nil then ExportDisplay = true end
+	NEW_EMOTES_ALL[i] = CreateQuickActionMenuEntry(NEW_EMOTE_TABLE[i]["TITLE"], NEW_EMOTE_TABLE[i]["ANIM"], NEW_EMOTE_TABLE[i]["ICON"], NEW_EMOTE_TABLE[i]["CANCEL"], NEW_EMOTE_TABLE[i]["LOOP"], NEW_EMOTE_TABLE[i]["RIDE"], ExportDisplay)
 end	
 NEW_EMOTES_EXPORT = table.concat(NEW_EMOTES_ALL)
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_Emotes_Unlock.pak",
+["MOD_FILENAME"] 			= "Emotes_Unlock.pak",
 ["MOD_AUTHOR"]				= "Monkeyman192 and script conversion by Mjjstral, updated by WInderTP",
 ["MOD_DESCRIPTION"]			= "Adds additional emotes",
 ["NMS_VERSION"]				= "2.0+",
+["ADD_FILES"] 			= NEWFILES_FINAL,
 ["MODIFICATIONS"] 			= 
 	{	
 		{
@@ -232,7 +228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{  
 				{
 					["MBIN_FILE_SOURCE"] 	= { "METADATA\UI\EMOTEMENU.MBIN" },
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 

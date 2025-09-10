@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] = "_Exo's Extreme Industrial FPS Booster",
 ["MOD_AUTHOR"]   = "Exosolar",
 ["LUA_AUTHOR"]   = "Babscoole",
-["NMS_VERSION"]  = "5.73",
+["NMS_VERSION"]  = "6.00",
 ["ADD_FILES"]    =
     {
         {
@@ -313,6 +313,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="NAVIGATION" />
+              <Property name="Value" value="FALSE" />
+            </Property>
             <Property value="TkSceneNodeAttributeData">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Box" />
@@ -402,6 +406,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="NAVIGATION" />
+              <Property name="Value" value="FALSE" />
+            </Property>
             <Property value="TkSceneNodeAttributeData">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Sphere" />
@@ -634,6 +642,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="NAVIGATION" />
+              <Property name="Value" value="FALSE" />
+            </Property>
             <Property value="TkSceneNodeAttributeData">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Cylinder" />
@@ -710,6 +722,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="NAVIGATION" />
+              <Property name="Value" value="FALSE" />
+            </Property>
             <Property value="TkSceneNodeAttributeData">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Box" />

@@ -1,5 +1,5 @@
 ModName = "PTSd Product + Crafting Rebalance"
-GameVersion = "6_00"
+GameVersion = "6_03"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --Changes how effective certain substances are at recharging certain techs
@@ -292,6 +292,11 @@ FossilCategorySaleChanges =
 	{"Limb",			1.5*0.85},			--72000		(10 different items)
 	{"Tail",			1.5*0.7},			--72000		(11 different items)
 }
+
+--These are the 13 "Basic" Corvette parts which can be directly purchased at Corvette workshops
+	--Increasing BasicCorvettePartBaseMarkup strangely seems to make those parts worth more when bartering them?
+BasicCorvettePartSaleChanges =		1				--1			Multiplier to apply to the base value (used for both buying & selling this item)
+BasicCorvettePartBaseMarkup =		0.000000		--0			(0.352942)	Added as a % of the base value to the purchase price when buying them
 
 --These various "geode" style items are given base values equal to 2x the expected value of opening & selling their contents on average
 	--Certain geodes given further multipliers due to either the difficulty of obtaining them or having particularly low-value contents
@@ -1219,7 +1224,7 @@ ProductCostChangesBase =		--For items which have their data in NMS_BASEPARTPRODU
 	{"BLD_ABAND_FOOTLOCKER_NAME",	0,	ScrapDealerDecorativeBaseMarkup,	0},
 	{"BLD_ABAND_BENCH_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
 	{"BLD_ABAND_PALLET_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
-	{"BLD_ABAND_BARREL_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},							
+	{"BLD_ABAND_BARREL_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},															--
 }
 
 --[[TradingCostChanges =	--This is attempting to correct for the greatly reduced Demand for items that happens when the buy price is raised
@@ -1390,6 +1395,9 @@ ChartCostChanges =
 	{"CHART_SETTLE",		SettlementChartCost},
 	{"NAV_DATA_DROP",		ExosuitUpgradeChartCost}
 }
+
+BasicCorvetteParts =
+{"B_COK_D", "B_HAB_B", "B_LND_A", "B_WNG_H", "B_GEN_1", "B_TUR_A", "B_ALK_A", "B_TRU_D", "B_WNG_I", "B_STR_A_N", "B_STR_C_NE", "B_DECO_A", "B_DECO_M"}
 
 function AddedItemCost (ItemCostID, ItemCostAmount, ItemCostType)
     return
@@ -2468,6 +2476,29 @@ for i = 1, #FreeExhibitIDs do
 				["SPECIAL_KEY_WORDS"] = {"ID", ExhibitID},
 				["PRECEDING_KEY_WORDS"] = {"Requirements"},
 				["CREATE_HOES"] = "TRUE",
+			}
+end
+for i = 1, #BasicCorvetteParts do
+	local PartID = BasicCorvetteParts[i]
+
+			ChangesToBaseProduct[#ChangesToBaseProduct+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", PartID},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"BaseValue", BasicCorvettePartSaleChanges}
+				}
+			}
+			ChangesToBaseProduct[#ChangesToBaseProduct+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", PartID},
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"BuyBaseMarkup", BasicCorvettePartBaseMarkup}
+				}
 			}
 end
 

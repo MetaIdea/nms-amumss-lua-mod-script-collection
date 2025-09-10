@@ -1153,6 +1153,31 @@ return [[
 ]]
 end
 
+function GetLanguage(TITLE)
+return [[
+    <Property value="TkLocalisationEntry">
+      <Property name="Id" value="]] .. TITLE .. [[" />
+      <Property name="English" value="]] .. TITLE .. [[" />
+      <Property name="French" value="]] .. TITLE .. [[" />
+      <Property name="Italian" value="]] .. TITLE .. [[" />
+      <Property name="German" value="]] .. TITLE .. [[" />
+      <Property name="Spanish" value="]] .. TITLE .. [[" />
+      <Property name="Russian" value="]] .. TITLE .. [[" />
+      <Property name="Polish" value="]] .. TITLE .. [[" />
+      <Property name="Dutch" value="]] .. TITLE .. [[" />
+      <Property name="Portuguese" value="]] .. TITLE .. [[" />
+      <Property name="LatinAmericanSpanish" value="]] .. TITLE .. [[" />
+      <Property name="BrazilianPortuguese" value="]] .. TITLE .. [[" />
+      <Property name="SimplifiedChinese" value="]] .. TITLE .. [[" />
+      <Property name="TraditionalChinese" value="]] .. TITLE .. [[" />
+      <Property name="TencentChinese" value="]] .. TITLE .. [[" />
+      <Property name="Korean" value="]] .. TITLE .. [[" />
+      <Property name="Japanese" value="]] .. TITLE .. [[" />
+      <Property name="USEnglish" value="]] .. TITLE .. [[" />
+    </Property>
+]]
+end
+
 function GetComponents(TRIGGER_ACTION)
 return [[
     <Property name="Components" value="GcTriggerActionComponentData">
@@ -1420,6 +1445,7 @@ return
 ]]
 end
 
+LANGUAGE = ""
 NEW_EMOTES_ALL = ""
 EMOTE_GENERIC_ICON = "TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/WONDER.DDS"
 EMOTE_GENERIC_ICON_HAPPY = "TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/LAUGH.DDS"
@@ -1456,6 +1482,7 @@ NEW_EMOTE_TABLE =
 }
 for i=1,#NEW_EMOTE_TABLE,1 do
     NEW_EMOTES_ALL = NEW_EMOTES_ALL .. GetQuickAction(NEW_EMOTE_TABLE[i]["TITLE"], NEW_EMOTE_TABLE[i]["ANIM"], NEW_EMOTE_TABLE[i]["ICON"])
+    LANGUAGE = LANGUAGE .. GetLanguage(NEW_EMOTE_TABLE[i]["TITLE"])
 end
 
 ANIMS                  = ""
@@ -1488,6 +1515,7 @@ for i=1,#QUICK_ACTION_LIST,1 do
             ACTIONCOMPONENTS = ACTIONCOMPONENTS .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ACTION_TRIGGER"]
         end
         EMOTEMENU = EMOTEMENU .. GetQuickAction(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ICON"])
+        LANGUAGE = LANGUAGE .. GetLanguage(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"])
         ANIMS     = ANIMS     .. GetTriggerAnim(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"])
         if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARDTABLE"] then
             REWARDTABLE = REWARDTABLE .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARDTABLE"]
@@ -1498,6 +1526,7 @@ for i=1,#QUICK_ACTION_LIST,1 do
     else --pure reward
         ACTIONCOMPONENTS = ACTIONCOMPONENTS .. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])
         EMOTEMENU        = EMOTEMENU        .. GetQuickAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i], GENERIC_BUTTON_ICON)
+        LANGUAGE         = LANGUAGE         .. GetLanguage(QUICK_ACTION_LIST[i])
         ANIMS            = ANIMS            .. GetTriggerAnim(QUICK_ACTION_LIST[i])
     end
     ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1
@@ -1522,16 +1551,19 @@ if #USER_SEED_LIST > 0 then
             MULTITOOLCOUNTER = MULTITOOLCOUNTER + 1
             REWARDTABLE      = REWARDTABLE .. GetMultitoolRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
             EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN02.DDS")
+            LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
         elseif USER_SEED_LIST[i][1] == "POLICESHIP" then
             REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
             SHIPCOUNTER      = SHIPCOUNTER + 1
             REWARDTABLE      = REWARDTABLE .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], HexToDec(USER_SEED_LIST[i][2]))
             EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS")
+            LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
         else
             REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
             SHIPCOUNTER      = SHIPCOUNTER + 1
             REWARDTABLE      = REWARDTABLE .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], HexToDec(USER_SEED_LIST[i][2]))
             EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.TWITCH.SHIP11.DDS")
+            LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
         end
         ACTIONCOMPONENTS       = ACTIONCOMPONENTS .. GetRewardAction(REWARD_ID, REWARD_ID)
         ANIMS                  = ANIMS            .. GetTriggerAnim(REWARD_ID)
@@ -1895,6 +1927,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property name="Attributes" value="TkSceneNodeAttributeData">
+                  <Property name="Name" value="NAVIGATION" />
+                  <Property name="Value" value="FALSE" />
+                </Property>
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="TYPE" />
                   <Property name="Value" value="Sphere" />
                 </Property>
@@ -2182,6 +2218,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
+                    <Property name="Attributes" value="TkSceneNodeAttributeData">
+                      <Property name="Name" value="NAVIGATION" />
+                      <Property name="Value" value="FALSE" />
+                    </Property>
                     <Property name="Attributes" value="TkSceneNodeAttributeData">
                       <Property name="Name" value="TYPE" />
                       <Property name="Value" value="Box" />
@@ -3005,6 +3045,18 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
   <Property name="Has30HzFrames" value="false" />
+</Data>
+]]
+        },
+        {
+            ["FILE_DESTINATION"] = "LocTable.MXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+<Data template="TkLocalisationTable">
+  <Property name="Table">
+]] .. (LANGUAGE) .. [[
+  </Property>
 </Data>
 ]]
         },

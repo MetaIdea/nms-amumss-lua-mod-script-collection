@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "6_00"
+GameVersion = "6_03"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -1677,8 +1677,8 @@ ScrapCoreOKCorvChance	=	100			--100		Chance for one of 63 "OK" Corvette parts, w
 SalvageScrapSubstance	=	"SPACEGUNK3"	--"LAND1"	
 SalvageScrapSubAmountMult	=	0.33	--Applies multiplier to vanilla amount of 15-30
 --% Chance to receive various additional items from each Protective Casing surrounding the core of a Salvageable Scrap node (can receive all items simultaneously if lucky)  (I'm assuming on average there are around ~3 Protective Casings per Scrap Core)
-ScrapCaseGoodCorvChance	=	0.03		--20		Chance for one of 26 "good" Corvette parts, worth 1,052,400 units on average
-ScrapCaseOKCorvChance	=	0.06		--33		Chance for one of 63 "OK" Corvette parts, worth 237,000 units on average
+ScrapCaseGoodCorvChance	=	3			--20		Chance for one of 26 "good" Corvette parts, worth 1,052,400 units on average
+ScrapCaseOKCorvChance	=	7			--33		Chance for one of 63 "OK" Corvette parts, worth 237,000 units on average
 ExtraScrapChance		=	0			--0			Chance for an additional procedural Scrap item
 
 --% Chance to receive Echo Locators from various sources

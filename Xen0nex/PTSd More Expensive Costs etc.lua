@@ -1,5 +1,5 @@
 ModName = "PTSd More Expensive Costs etc"
-GameVersion = "6_00"
+GameVersion = "6_03"
 Description = "Changes costs for Starship or Multi-Tool inventory slots, Broadcast Receivers, Pilot Slots, etc."
 
 --Allows salvaging Reactor Cores from Shuttle & Exotic starships (Also requires changes in "PTSd Rewards Remixer.lua")
@@ -35,6 +35,12 @@ CrashedContAmount =		10					--0
 --Adds a cost to using the Scanner Room on freighters
 ScannerRoomSubstance =	"NAV_DATA"			--""			Navigation Data
 ScannerRoomAmount =		2					--0
+
+--Adds a cost to returning to a Corvette from a planet's surface via the temporary Corvette teleporter
+	--NOTE: This feature can also be disabled by simply deleting "No Man's Sky\GAMEDATA\MODS\PTSd Prices and Tech etc\MODELS\COMMON\SPACECRAFT\BIGGS\TELEPORTER\ENTITIES\TELEPORTER.ENTITY.MBIN"
+CovetteTeleportCost =	true				--false			Set to true to make the teleporter cost 1 Navigation Data when returning to a Corvette from a planet's surface via the temporary Corvette teleporter (can continually re-use the same temporary teleporter for free)
+CorvetteTeleportSubstance =	"NAV_DATA"			--""			Navigation Data
+CorvetteTeleportAmount =	1					--0
 
 --Adds a cost to claim a Pirate Dreadnought (cost is paid each time you begin the freighter exchange menu, not when you complete it like with other freighters)
 DreadnoughtFlatCost =	350000000			--0
@@ -449,6 +455,34 @@ AbandonedModeCompleteCost =
 					<Property name="InventoryToCheck" value="All" />
 				</Property>
 			</Property>]]
+			
+AddCorvTeleportCost =
+[[<Property name="ItemCostsTable" value="GcCostTableEntry" _id="CORV_COST">
+			<Property name="Id" value="CORV_COST" />
+			<Property name="DisplayCost" value="true" />
+			<Property name="DontCharge" value="false" />
+			<Property name="HideOptionAndDisplayCostOnly" value="false" />
+			<Property name="DisplayOnlyCostIfCantAfford" value="false" />
+			<Property name="HideCostStringIfCanAfford" value="false" />
+			<Property name="RemoveOptionIfCantAfford" value="false" />
+			<Property name="InvertCanAffordOutcome" value="false" />
+			<Property name="MustAffordInCreative" value="false" />
+			<Property name="CommunityContributionValue" value="0" />
+			<Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+			<Property name="CannotAffordOSDMsg" value="CORVCOSTFAIL" />
+			<Property name="MissionMessageWhenCharged" value="" />
+			<Property name="Cost" value="GcCostProduct">
+				<Property name="GcCostProduct">
+					<Property name="Default" value="GcDefaultMissionProductEnum">
+						<Property name="DefaultProductType" value="None" />
+					</Property>
+					<Property name="Id" value="NAV_DATA" />
+					<Property name="Amount" value="1" />
+					<Property name="UseDefaultAmount" value="false" />
+					<Property name="TakeIDFromSeasonData" value="false" />
+				</Property>
+			</Property>
+		</Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= ModName..GameVersion..".pak",
@@ -634,6 +668,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["ADD"] = AddAbandChestCost,
 				["ADD_OPTION"] = "ADDafterSECTION",
 			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ItemCostsTable","GcCostTableEntry"},
+				["ADD"] = AddCorvTeleportCost,
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
 		}
 	},
 	{
@@ -667,9 +706,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"SubstanceId", ScannerRoomSubstance},
 					{"Cost", ScannerRoomAmount},
-					--{"Repeat", "true"},
+					--{"Repeat", "true"},		--"false"
 				}
 			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/COMMON/SPACECRAFT/BIGGS/TELEPORTER/ENTITIES/TELEPORTER.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			--Intentionally left blank
 		}
 	},
 	--[[
@@ -781,5 +827,21 @@ if AtlantidToolsAbandonedMode then
 				["SPECIAL_KEY_WORDS"] = {"Id","C_MONO_NUB_ON",		"Costs", "GcCostMissionComplete"},
 				["ADD"] = AbandonedModeCompleteCost,
 				["ADD_OPTION"] = "ADDafterSECTION",
+			}
+end
+
+local ChangesToCorvTeleporter = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["MXML_CHANGE_TABLE"]
+
+if CovetteTeleportCost then
+			ChangesToCorvTeleporter[#ChangesToCorvTeleporter+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ActivationCost","GcInteractionActivationCost"},
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"SubstanceId", CorvetteTeleportSubstance},
+					{"Cost", CorvetteTeleportAmount},
+					--{"UseCostID", "CORV_COST"},
+					--{"Repeat", "true"},		--"false"
+				}
 			}
 end

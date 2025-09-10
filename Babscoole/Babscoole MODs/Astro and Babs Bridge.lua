@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-		<Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom wall right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
@@ -67,7 +67,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom wall front" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
@@ -84,14 +84,14 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-		    <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom wall left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
@@ -108,7 +108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-		    <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL.SCENE.MBIN" />
         </Property>
@@ -291,7 +291,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-		<Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingTri" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
@@ -346,7 +346,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-		<Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge_Frontrow_TilesL1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
@@ -370,7 +370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge_Frontrow_TilesCenter" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
@@ -394,7 +394,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge_Frontrow_TilesR1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
@@ -623,7 +623,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-		<Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Galaxy globe" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
@@ -655,7 +655,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-		    <Property name="Children" value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="BridgeScanner" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -732,7 +732,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
-		<Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="HelmDesk" />
       <Property name="NameHash" value="1840047114" />
       <Property name="Type" value="REFERENCE" />
@@ -1686,6 +1686,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Cylinder" />
         </Property>
@@ -1717,6 +1721,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
@@ -1754,6 +1762,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
@@ -1789,6 +1801,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
@@ -1826,6 +1842,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
@@ -1861,6 +1881,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
@@ -1898,6 +1922,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
@@ -1933,6 +1961,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
@@ -1970,6 +2002,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
@@ -2005,6 +2041,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
@@ -2042,6 +2082,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
@@ -2077,6 +2121,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
@@ -2481,6 +2529,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="linear" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="Value" value="2.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
@@ -2529,6 +2581,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="linear" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="Value" value="2.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
@@ -2543,6 +2599,18 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="Value" value="0.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
@@ -2577,6 +2645,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="linear" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="Value" value="2.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
@@ -2591,6 +2663,18 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="Value" value="0.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
@@ -2625,6 +2709,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="linear" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="Value" value="2.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
@@ -2639,6 +2727,18 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="Value" value="0.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
@@ -4395,6 +4495,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Cylinder" />
         </Property>
@@ -4426,6 +4530,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
@@ -4463,6 +4571,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
@@ -4498,6 +4610,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
@@ -4535,6 +4651,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
@@ -4570,6 +4690,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
@@ -4607,6 +4731,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
@@ -4642,6 +4770,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
@@ -4679,6 +4811,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
@@ -4714,6 +4850,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
@@ -4751,6 +4891,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
@@ -4786,6 +4930,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="NAVIGATION" />
+          <Property name="Value" value="FALSE" />
+        </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
@@ -5190,6 +5338,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="linear" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="Value" value="2.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
@@ -5204,6 +5356,18 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="Value" value="0.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
@@ -5238,6 +5402,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="linear" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="Value" value="2.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
@@ -5252,6 +5420,18 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="Value" value="0.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
@@ -5286,6 +5466,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="linear" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="Value" value="2.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
@@ -5300,6 +5484,18 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="Value" value="0.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
@@ -5334,6 +5530,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="linear" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="FALLOFF_RATE" />
+          <Property name="Value" value="2.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
@@ -5348,6 +5548,18 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="COOKIE_IDX" />
+          <Property name="Value" value="-1" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="VOLUMETRIC" />
+          <Property name="Value" value="0.000000" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />

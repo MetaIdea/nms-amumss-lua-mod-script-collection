@@ -60,14 +60,14 @@ COLORNAME = ""
 
 E_NOTICE = false
 
-E_NOTICE = GUIF({false, [[Do you want to remove "Press E to place Custom Marker" notification?  Default = N.  Press ENTER for default value.]]},5)
+E_NOTICE = GUIF({false, [[Do you want to remove "Press E to place Custom Marker" notification?  Default = N.  Press ENTER for default value.]]},10)
 print("E_NOTICE = "..tostring(E_NOTICE))
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "Custom Binoc Panels-"..COLORNAME,
 ["MOD_AUTHOR"]              = "Babscoole & Exosolar",
-["NMS_VERSION"]             = "5.73",
+["NMS_VERSION"]             = "6.00",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -233,11 +233,21 @@ if E_NOTICE then
 
     LEFTTABLE[#LEFTTABLE +1] =
     {-- Hide "Press E to place Custom Marker" notification. (C) Balzhur
-        ["SPECIAL_KEY_WORDS"] =
+        ["SPECIAL_KEY_WORDS"] = {"Text",  "CUSTOM_HINT"},
+				["VALUE_CHANGE_TABLE"] =
         {
-            {"Text",  "UI_CUSTOM_MARKER_TIP"},
-            {"Image", "/TEXTURES/UI/HUD/ICONS/SCANNING/DECSLASH.DDS"},
-        },
-        ["REMOVE"] = "SECTION"
+					{"Is Hidden",	"true"} -- Original "false"
+				}
+    }
+
+    LEFTTABLE[#LEFTTABLE +1] =
+    {-- Hide "Press E to place Custom Marker" notification. (C) Balzhur
+        ["SPECIAL_KEY_WORDS"] = {"Image", "/TEXTURES/UI/HUD/ICONS/SCANNING/DECSLASH.DDS"},
+				["SECTION_UP_SPECIAL"] = 1,
+				["PRECEDING_KEY_WORDS"] = {"Children"},
+				["VALUE_CHANGE_TABLE"] =
+        {
+					{"Is Hidden",	"true"} -- Original "false"
+				}
     }
 end

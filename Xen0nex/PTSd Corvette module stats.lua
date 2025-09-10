@@ -81,7 +81,7 @@ CorvetteModuleBonuses =
 	{
 		{"CV_S_SHLA"},		--Deflector Shield
 		{
-			{"Ship_Armour_Shield_Strength", 					0.3},		--0.05-0.1
+			{"Ship_Armour_Shield_Strength", 					0.2},		--0.05-0.1
 			{"Ship_PulseDrive_MiniJumpSpeed", 					1.06},		--N/A (1)		(Added by PTSd)
 			{"Ship_Boost", 										1.04},		--N/A (1)		(Added by PTSd)
 		},
@@ -89,7 +89,7 @@ CorvetteModuleBonuses =
 	{
 		{"CV_S_SHLB"},		--Ion Barrier
 		{
-			{"Ship_Armour_Shield_Strength", 					0.3},		--0.05-0.1
+			{"Ship_Armour_Shield_Strength", 					0.2},		--0.05-0.1
 			{"Ship_BoostManeuverability", 						1.04},		--N/A (1)		(Added by PTSd)
 			{"Ship_Maneuverability", 							1.002},		--N/A (1)		(Added by PTSd)
 			{"Ship_Launcher_TakeOffCost", 						0.9},		--N/A (1)		(Added by PTSd)
@@ -98,7 +98,7 @@ CorvetteModuleBonuses =
 	{
 		{"CV_S_SHL2"},		--High-Energy Shield
 		{
-			{"Ship_Armour_Shield_Strength", 					0.3},		--0.05-0.1
+			{"Ship_Armour_Shield_Strength", 					0.2},		--0.05-0.1
 			{"Ship_Hyperdrive_JumpDistance", 					500},		--N/A (0)		(Added by PTSd)
 			{"Ship_PulseDrive_MiniJumpFuelSpending", 			0.9},		--N/A (1)		(Added by PTSd)
 		},
@@ -109,7 +109,7 @@ CorvetteModuleBonuses =
 			{"Ship_Weapons_Guns_Damage", 						3000},			--65-80
 			{"Ship_Weapons_Guns_CoolTime", 						0.8},			--0.75-0.8	(Does not seem to work in vanilla)
 			{"Ship_Weapons_Guns_Range", 						1.1},			--1.05-1.1
-			{"Ship_Armour_Shield_Strength", 					-0.2},			--N/A (0)		(Added by PTSd)
+			{"Ship_Armour_Shield_Strength", 					-0.05},			--N/A (0)		(Added by PTSd)		If this value is too large (e.g. -0.2), it can cause issues with negative shield strength when multiple modules are installed
 		},
 	},
 	{
@@ -118,7 +118,7 @@ CorvetteModuleBonuses =
 			{"Ship_Weapons_Guns_Damage", 						178},			--16-24
 			--{"Ship_Weapons_Guns_Rate", 							1.021},			--1.016-1.021		(Removed in PTSd)
 			{"Ship_Weapons_Guns_HeatTime", 						1.03},			--1.02-1.03
-			{"Ship_Armour_Shield_Strength", 					-0.2},			--N/A (0)		(Added by PTSd)
+			{"Ship_Armour_Shield_Strength", 					-0.05},			--N/A (0)		(Added by PTSd)		If this value is too large (e.g. -0.2), it can cause issues with negative shield strength when multiple modules are installed
 		},
 	},
 	{
@@ -127,7 +127,7 @@ CorvetteModuleBonuses =
 			{"Ship_Weapons_Guns_Damage", 						81},			--5-6
 			--{"Ship_Weapons_Guns_Rate", 							1.1},			--1.06-1.1			(Removed in PTSd)
 			{"Ship_Weapons_Guns_HeatTime", 						1.03},			--1.06-1.1
-			{"Ship_Armour_Shield_Strength", 					-0.2},			--N/A (0)		(Added by PTSd)
+			{"Ship_Armour_Shield_Strength", 					-0.05},			--N/A (0)		(Added by PTSd)		If this value is too large (e.g. -0.2), it can cause issues with negative shield strength when multiple modules are installed
 		},
 	},
 	{
@@ -135,7 +135,7 @@ CorvetteModuleBonuses =
 		{
 			{"Ship_Weapons_Lasers_HeatTime", 					1.05},			--1.55-1.75
 			{"Ship_Weapons_Lasers_Damage", 						225},			--50-60
-			{"Ship_Armour_Shield_Strength", 					-0.2},			--N/A (0)		(Added by PTSd)
+			{"Ship_Armour_Shield_Strength", 					-0.05},			--N/A (0)		(Added by PTSd)		If this value is too large (e.g. -0.2), it can cause issues with negative shield strength when multiple modules are installed
 		},
 	},
 	--Not yet implemented in vanilla
@@ -156,9 +156,9 @@ CorvetteModuleBonuses =
 	{
 		{"CV_LAUN2"},		--Thunderbird Landing Thrusters
 		{
-			{"Ship_Launcher_TakeOffCost", 						0.98},		--0.85-0.9
+			{"Ship_Launcher_TakeOffCost", 						0.9625},	--0.85-0.9
 			{"Ship_Boost", 										1.02},		--1.02-1.05
-			{"Ship_PulseDrive_MiniJumpFuelSpending", 			0.98},		--N/A (1)		(Added by PTSd)
+			{"Ship_PulseDrive_MiniJumpFuelSpending", 			0.9625},	--N/A (1)		(Added by PTSd)
 		},
 	},
 	{
@@ -212,7 +212,7 @@ CorvetteModuleBonuses =
 		{
 			{"Ship_PulseDrive_MiniJumpSpeed", 					1.06},		--N/A (1)		(Replaces Ship_PulseDrive_MiniJumpFuelSpending by PTSd)
 			{"Ship_Boost", 										1.04},		--1.1-1.2
-			{"Ship_PulseDrive_MiniJumpFuelSpending", 			1.06},		--N/A (1)		(Added by PTSd)
+			{"Ship_PulseDrive_MiniJumpFuelSpending", 			1.04},		--N/A (1)		(Added by PTSd)
 			--{"Ship_BoostManeuverability", 						1.04},		--1.05-1.16		(Removed in PTSd)
 			--{"Ship_Maneuverability", 							1.002},		--1.005-1.005		(Removed in PTSd)
 			--{"Ship_Launcher_TakeOffCost", 						1.03},		--N/A (1)		(Added by PTSd)
@@ -657,7 +657,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					 {"ID", "CV_SLASR3",	"StatLevels", "GcProceduralTechnologyStatLevel"},
                    },
 				["ADD_OPTION"] = "ADDafterSECTION",
-				["ADD"] = AddBonusStat ("Ship_Armour_Shield_Strength", "-0.1")
+				["ADD"] = AddBonusStat ("Ship_Armour_Shield_Strength", "-0.05")
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {

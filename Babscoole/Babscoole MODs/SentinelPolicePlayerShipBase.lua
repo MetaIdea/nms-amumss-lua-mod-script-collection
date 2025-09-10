@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "SentinelPolicePlayerShipBase",
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
-["NMS_VERSION"]             = "5.73",
+["NMS_VERSION"]             = "6.00",
 ["MOD_DESCRIPTION"]         = "This is just in case you already own the ship and don't need the menu interaction to get the ship anymore",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -57,17 +57,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 <Data template="cTkModelDescriptorList">
   <Property name="List">
-		<Property name="List" value="TkResourceDescriptorList">
+    <Property name="List" value="TkResourceDescriptorList">
       <Property name="TypeId" value="_SHIP_" />
       <Property name="Descriptors">
-				<Property name="Descriptors" value="TkResourceDescriptorData">
+        <Property name="Descriptors" value="TkResourceDescriptorData">
           <Property name="Id" value="_SHIP_POLICE" />
           <Property name="Name" value="_Ship_Police" />
-					<Property name="ReferencePaths">
-						<Property name="ReferencePaths" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
-					</Property>
-					<Property name="Chance" value="0.000000" />
-					<Property name="Children" />
+          <Property name="ReferencePaths">
+            <Property name="ReferencePaths" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
+          </Property>
+          <Property name="Chance" value="0.000000" />
+          <Property name="Children" />
         </Property>
       </Property>
     </Property>
@@ -86,19 +86,19 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="NameHash" value="4182676705" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData">
-		<Property name="TransX" value="0.000000" />
-		<Property name="TransY" value="0.000000" />
-		<Property name="TransZ" value="0.000000" />
-		<Property name="RotX" value="0.000000" />
-		<Property name="RotY" value="0.000000" />
-		<Property name="RotZ" value="0.000000" />
-		<Property name="ScaleX" value="1.000000" />
-		<Property name="ScaleY" value="1.000000" />
-		<Property name="ScaleZ" value="1.000000" />
+    <Property name="TransX" value="0.000000" />
+    <Property name="TransY" value="0.000000" />
+    <Property name="TransZ" value="0.000000" />
+    <Property name="RotX" value="0.000000" />
+    <Property name="RotY" value="0.000000" />
+    <Property name="RotZ" value="0.000000" />
+    <Property name="ScaleX" value="1.000000" />
+    <Property name="ScaleY" value="1.000000" />
+    <Property name="ScaleZ" value="1.000000" />
   </Property>
   <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
-		<Property name="Attributes" value="TkSceneNodeAttributeData">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="GEOMETRY" />
       <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.GEOMETRY.MBIN" />
     </Property>
@@ -108,7 +108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="Children">
-		<Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="EngineFlare_Distant" />
       <Property name="NameHash" value="3869425187" />
       <Property name="Type" value="LOCATOR" />
@@ -127,7 +127,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="ProcRoot_StarShip" />
       <Property name="NameHash" value="3871606254" />
       <Property name="Type" value="LOCATOR" />
@@ -307,6 +307,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
+                    <Property name="Attributes" value="TkSceneNodeAttributeData">
+                      <Property name="Name" value="NAVIGATION" />
+                      <Property name="Value" value="FALSE" />
+                    </Property>
                     <Property name="Attributes" value="TkSceneNodeAttributeData">
                       <Property name="Name" value="TYPE" />
                       <Property name="Value" value="Box" />
