@@ -1,16 +1,22 @@
-LaunchCost = 10
+LaunchCost = 800
+
+Difficulty = "Discounted"
+
+DiscountedPercentage = math.floor(LaunchCost * 0.125)
+StandardPercentage = math.floor(LaunchCost * 0.5)
+ExpensivePercentage = math.floor(LaunchCost * 0.6)
 
 LUAAuthor = "Cykron0271"
 OriginalCreators = "Lexman6\lo2k"
-ModName	= "ReducedShipLaunchCosts"
+ModName	= "Reduced_Ship_Launch_Costs-Or_Increased"
 BaseDescription = "Reduce fuel costs needed for ships to take off from the ground"
 GameVersion = "v6.03"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= "LaunchCosts".."_"..LaunchCost.."-"..GameVersion,
+	["MOD_FILENAME"]	= ModName.."-"..Difficulty.."-"..DiscountedPercentage.."%-"..GameVersion,
 	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
+	["MOD_AUTHOR"]		= "Current Author:"..LUAAuthor..", Original Authors".."OriginalCreators",
 	["NMS_VERSION"] 	= GameVersion,
 	["MODIFICATIONS"]	= {
 		{
@@ -20,14 +26,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["MXML_CHANGE_TABLE"]	=	{
 						{
 							["SPECIAL_KEY_WORDS"]	=	{"ID","LAUNCHER","StatBonuses","GcStatsBonus","StatsType","Ship_Launcher_TakeOffCost"},
-							["SECTION_UP"]		=	1,
-							["REPLACE_TYPE"]		=	"ALL",
-							["VALUE_CHANGE_TABLE"]	=	{
-								{"Bonus",LaunchCost},
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]	=	{"ID","UT_LAUNCHER","StatBonuses","GcStatsBonus","StatsType","Ship_Launcher_TakeOffCost"},
 							["SECTION_UP"]		=	1,
 							["REPLACE_TYPE"]		=	"ALL",
 							["VALUE_CHANGE_TABLE"]	=	{

@@ -39,7 +39,7 @@ local Config = {
     Recipes = {
       {
         _IsReplacementFor = "R_NAME_DRONESHARD",
-        Id = "REFINERECIPE_327",
+        Id = "REFINERECIPE_328",
         RecipeType = "RECIPE_DRONESHARD",
         RecipeName = "R_NAME_DRONESHARD",
         TimeToMake = 90,
@@ -177,8 +177,7 @@ if Config.AddRefinerRecipes.Enabled and #Config.AddRefinerRecipes.Recipes > 0 th
 
   refinerChangeTable[#refinerChangeTable+1] = {
     PRECEDING_KEY_WORDS = {"Table"},
-    REPLACE_TYPE = "ADDafterSECTION",
-    LINE_OFFSET = -1,
+    REPLACE_TYPE = "ADDendSECTION",
     ADD = table.concat(recipeTableAdditions, "\n")
   }
 end

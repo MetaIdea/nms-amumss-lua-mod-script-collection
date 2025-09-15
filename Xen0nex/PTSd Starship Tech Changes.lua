@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------
 ModName = 'PTSd Starship Tech Changes'
 ModAuthor = 'Xen0nex and lMonk'		--Edited by Xen0nex
-Version = '6_00'
+Version = '6_04'
 local desc = [[
   Changes to various aspects of starship speeds and charging.
   Includes improvements to Living Ships and related quest timers from "Living Ship Upgrades" by lMonk
@@ -47,12 +47,11 @@ ShieldLSModMult = 1										--	Multiplier to apply to the bonus shield from Liv
 
 AblativeArmourMult = 2.668								--	Multiplier to apply to the bonus shield from the crafted Ablative Armour tech (vanilla 0.05)	NOTE, the game increases this by 50%
 
---Changes the bonus Pulse Jump speed for Sub-Light Amplifier, since it is greatly increased when supercharged.
-SublightBonus = 1.25									--1.3
---Changes the bonus Pulse Jump speed for Living Ship's Pulsing Heart, since they cannot install Sub-Light Amplifier.
-LivingPulseBonus = 1.2									--1
---Changes the bonus Pulse Jump speed for Solar Ships's Vesper Sail
-SolarPulseBonus = 1.5									--1
+--Multipliers for the Pulse Jump Speed of various types of starship engines
+SublightBonus = 1.25									--1.3		Changes the bonus Pulse Jump speed for Sub-Light Amplifier, since it is greatly increased when supercharged.
+LivingPulseBonus = 1.2									--1			Changes the bonus Pulse Jump speed for Living Ship's Pulsing Heart, since they cannot install Sub-Light Amplifier.
+SolarPulseBonus = 1.5									--1			Changes the bonus Pulse Jump speed for Solar Ships's Vesper Sail
+RoboPulseBonus = 1.2									--1.1		Changes the bonus Pulse Jump speed for Interceptor engine (only applies if RemoveRoboJumpSpeed is set to false)
 
 --Changes the bonus for Starship Trail techs
 TrailStat = "Ship_Hyperdrive_JumpDistance"				--"Ship_Boost"
@@ -110,7 +109,7 @@ HyperDistBonusMult = 1.1								--1		Multiplier to apply to the strength of the 
 
 --Changes some attributes of the special tech that Sentinel Interceptors start with
 RemoveRoboAutoCharge = true								--false		Set to true to remove the Sentinel Interceptor's innate Launch Thruster autocharge ability
-RemoveRoboJumpSpeed = true								--false		Set to true to remove the Sentinel Interceptor's bonus to Pulse Jump speed so it no longer provides adjacency/supercharge bonuses
+RemoveRoboJumpSpeed = false								--false		Set to true to remove the Sentinel Interceptor's bonus to Pulse Jump speed so it no longer provides adjacency/supercharge bonuses
 RoboJumpDist = 600										--600		How many lightyears the Sentinel Interceptor can jump at base level	(Other ships = 100)
 RoboWarpsPerCell = 1									--2			How many times the Sentinel Interceptor can warp from the fuel in a single Warp Cell (24 units of fuel per cell, fuel tank size is 120) (Other ships = 1, IE they use 24 units of fuel, or 20% of a full hyperdrive tank per warp) 
 RoboWarpTankSize = 48									--120		How much fuel the Crimson Core can hold when full. By default each warp consumes 24 units of fuel, so the default tank holds enough for 5 warps
@@ -206,7 +205,7 @@ ShipTechChanges =
 				"Ship_PulseDrive_MiniJumpSpeed",	SolarPulseBonus					--1
 			},
 			{
-				"Ship_PulseDrive_MiniJumpFuelSpending",		0.5						--0.2
+				"Ship_PulseDrive_MiniJumpFuelSpending",		0.75					--0.2
 			}
 		}
 	},
@@ -235,10 +234,10 @@ ShipTechChanges =
 				"Ship_BoostManeuverability",		1.25							--1.5
 			},
 			{
-				"Ship_PulseDrive_MiniJumpSpeed",	1								--1.1
+				"Ship_PulseDrive_MiniJumpSpeed",	RoboPulseBonus					--1.1
 			},
 			{
-				"Ship_PulseDrive_MiniJumpFuelSpending",		0.8						--1
+				"Ship_PulseDrive_MiniJumpFuelSpending",		0.9						--1
 			}
 		}
 	},

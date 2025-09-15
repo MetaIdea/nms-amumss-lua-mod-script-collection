@@ -1,13 +1,8 @@
 ModName = "PTSd Mission Adjustments"
-GameVersion = "5_62"
+GameVersion = "6_04"
 Description = "Increases the amount of items required to complete certain 'Expanding the Base' quests, some quests no longer give certain blueprints as rewards."
 
---GcDefaultMissionProductEnum.xml
---GcDefaultMissionSubstanceEnum.xml
-
---"MissionID" value="G_DEL_HARD"
---"MissionID" value="G_COLLECT3" />
---"MissionID" value="G_COLLECT2" />
+AdjustVoyagersExpTasks = true			--false		Changes the requirements for certain tasks in the Voyagers Expedition to work with alterations made by PTSd
 
 StartingHazDamage =		25				--76		What percentage of your Hazard protection is missing when starting a new game file
 StarNewGameWithIonBatt = false			--			Set true to begin new games with Ion Battery in the inventory, false otherwise
@@ -125,6 +120,26 @@ function TechRecipeReward (TechId, AutoPin, Silent)
 									</Property>
 								</Property>
 							</Property>]]
+end
+
+function AddCorvetteCatCondition (CorvettePartCategory, CorvetteToQuery)
+	return
+[[<Property name="Conditions" value="GcMissionConditionCorvetteHasTaggedParts" _index="0">
+																	<Property name="GcMissionConditionCorvetteHasTaggedParts">
+																		<Property name="PartType" value="GcCorvettePartCategory">
+																			<Property name="CorvettePartCategory" value="]]..CorvettePartCategory..[[" />
+																		</Property>
+																		<Property name="Amount" value="1" />
+																		<Property name="TakeAmountFromSeasonData" value="true" />
+																		<Property name="Test" value="TkEqualityEnum">
+																			<Property name="EqualityEnum" value="GreaterEqual" />
+																		</Property>
+																		<Property name="CorvetteToQuery" value="]]..CorvetteToQuery..[[" />
+																		<Property name="AlsoCountPartsInInventory" value="false" />
+																		<Property name="SpecificItem" value="" />
+																		<Property name="UseSpecificItemOnlyForText" value="false" />
+																	</Property>
+																</Property>]]
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -328,6 +343,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			--Intentionally left blank to be filled in by a function below
 		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\SEASONALMISSIONTABLE.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			--Intentionally left blank to be filled in by a function below
+		}
 	}
 }}}}
 
@@ -486,5 +508,72 @@ ChangesToWaterMissionTable[#ChangesToWaterMissionTable+1] =
 				{
 					{"Technology", "SUB_BINOCS0"},
 				}
+			}
+end
+
+local ChangesToSeasonalMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][8]["MXML_CHANGE_TABLE"]
+
+if AdjustVoyagersExpTasks then
+ChangesToSeasonalMissionTable[#ChangesToSeasonalMissionTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Message",	"UI_EXPED_BIGGS_UP_INV_MSG4"},
+				["REPLACE_TYPE"] 		= "ONCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Message", "UI_EXPED_BIGGS_UP_SHI_MSG4"},
+				}
+			}
+ChangesToSeasonalMissionTable[#ChangesToSeasonalMissionTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {
+                     {"MissionID",	"BIGGS_UP_SHIELD",		"Conditions", "GcMissionConditionTechGroupCount"},
+                     {"Message",	"UI_EXPED_BIGGS_UP_SHI_MSG1",		"Conditions", "GcMissionConditionTechGroupCount"},
+					 {"Message",	"UI_EXPED_BIGGS_UP_SHI_MSG4",		"Conditions", "GcMissionConditionTechGroupCount"},
+                   },
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = AddCorvetteCatCondition ("Shield", "PrimaryShip")
+			}
+ChangesToSeasonalMissionTable[#ChangesToSeasonalMissionTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Message",	"UI_EXPED_BIGGS_UP_SHI_MSG2",		"Conditions", "GcMissionConditionTechGroupCount"},
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = AddCorvetteCatCondition ("Shield", "Draft")
+			}
+ChangesToSeasonalMissionTable[#ChangesToSeasonalMissionTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {
+                     {"MissionID",	"BIGGS_UP_SHIELD",		"Conditions", "GcMissionConditionTechGroupCount"},
+                     {"Message",	"UI_EXPED_BIGGS_UP_SHI_MSG1",		"Conditions", "GcMissionConditionTechGroupCount"},
+					 {"Message",	"UI_EXPED_BIGGS_UP_SHI_MSG2",		"Conditions", "GcMissionConditionTechGroupCount"},
+					 {"Message",	"UI_EXPED_BIGGS_UP_SHI_MSG4",		"Conditions", "GcMissionConditionTechGroupCount"},
+                   },
+				["REMOVE"] = "SECTION"
+			}
+
+ChangesToSeasonalMissionTable[#ChangesToSeasonalMissionTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {
+                     {"MissionID",	"BIGGS_UP_HYP",		"Conditions", "GcMissionConditionTechGroupCount"},
+                     {"Message",	"UI_EXPED_BIGGS_UP_HYP_MSG1",		"Conditions", "GcMissionConditionTechGroupCount"},
+					 {"Message",	"UI_EXPED_BIGGS_UP_HYP_MSG4",		"Conditions", "GcMissionConditionTechGroupCount"},
+                   },
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = AddCorvetteCatCondition ("Reactor", "PrimaryShip")
+			}
+ChangesToSeasonalMissionTable[#ChangesToSeasonalMissionTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Message",	"UI_EXPED_BIGGS_UP_HYP_MSG2",		"Conditions", "GcMissionConditionTechGroupCount"},
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = AddCorvetteCatCondition ("Reactor", "Draft")
+			}
+ChangesToSeasonalMissionTable[#ChangesToSeasonalMissionTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {
+                     {"MissionID",	"BIGGS_UP_HYP",		"Conditions", "GcMissionConditionTechGroupCount"},
+                     {"Message",	"UI_EXPED_BIGGS_UP_HYP_MSG1",		"Conditions", "GcMissionConditionTechGroupCount"},
+					 {"Message",	"UI_EXPED_BIGGS_UP_HYP_MSG2",		"Conditions", "GcMissionConditionTechGroupCount"},
+					 {"Message",	"UI_EXPED_BIGGS_UP_HYP_MSG4",		"Conditions", "GcMissionConditionTechGroupCount"},
+                   },
+				["REMOVE"] = "SECTION"
 			}
 end

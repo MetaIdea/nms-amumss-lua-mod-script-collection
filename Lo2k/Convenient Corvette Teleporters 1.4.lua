@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Convenient Corvette Teleporters 1.3.pak", 
+["MOD_FILENAME"] 			= "Convenient Corvette Teleporters 1.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
 ["NMS_VERSION"]				= "6.04",
@@ -57,17 +57,40 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {"MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIOR.SCENE.MBIN",
-											"MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIORPIRATE.SCENE.MBIN",  };					
+											"MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIORPIRATE.SCENE.MBIN",  },					
 					["MXML_CHANGE_TABLE"] 	= 
 					{	--Position of freighter corvette teleporters
 						{
-							["SPECIAL_KEY_WORDS"]  = {{"Name","RefBiggsTeleporter"}, {"Name","RefBiggsTeleporter1"},  },
+							["SPECIAL_KEY_WORDS"]  = {{"Name","RefBiggsTeleporter"},  },
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"TransZ", "-25.2495041"}, 
-								{"RotY", "0.000000"}, 
+								{"TransX", "24.3"}, --original 22.6
+								{"TransZ", "14.0"}, --original 66
+								{"RotY", "-90.000000"}, 
 							},
-						},												
+						},		
+						{
+							["SPECIAL_KEY_WORDS"]  = {{"Name","RefBiggsTeleporter1"}, },
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TransX", "-24.3"}, --original -22.6
+								{"TransZ", "14.0"}, --original 66
+								{"RotY", "90.000000"}, 
+							},
+						},							
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {"MODELS\COMMON\SPACECRAFT\BIGGS\BIGGSTELEPORTER_FREIGHTERS.SCENE.MBIN", },					
+					["MXML_CHANGE_TABLE"] 	= 
+					{	--Direction when exiting teleporters
+						{
+							["SPECIAL_KEY_WORDS"]  = {{"Type","LOCATOR"}, },  -- interaction point / "REFERENCE" turns TP but not player
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RotY", "90.000000"},  --original 0
+							},
+						},								
 					},
 				},
 			}

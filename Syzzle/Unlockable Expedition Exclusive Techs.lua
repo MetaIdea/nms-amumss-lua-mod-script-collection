@@ -1,7 +1,6 @@
 Author = "Syzzle"
 ModName = "Unlockable Expedition Exclusive Techs"
-GameVersion = "6.02"
---ModVersion = "v1.4"
+GameVersion = "6.04"
 Description = "Add the Expedition exclusive Ship Techs, Exosuit Techs, Freighter Tech and unavailable Multitool Tech to the Anomaly list to be unlocked."
 
 -- SHIP BLUEPRINTS
@@ -104,6 +103,14 @@ FREIGHTERGROUP  = [[
   </Property>
 ]]
 
+-- ORBITAL UPLINK BLUEPRINT
+ORBITALUPLINK = [[
+  <Property name="Children" value="GcUnlockableItemTreeNode">
+    <Property name="Unlockable" value="S19_TP" />
+    <Property name="Children" />
+  </Property>
+]]
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 			= ModName,
@@ -182,6 +189,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"Trees"},
               ["ADD"]	=	UNLOCKABLEITEMTREES_PORTABLE,
             },
+            -- ADD ORBITAL UPLINK BLUEPRINT
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Unlockable","ACCESS3"},
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["CREATE_HOS"]  = "TRUE",
+              ["ADD"]	=	ORBITALUPLINK,
+            },
           }
         },
         {
@@ -216,45 +230,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"]  =
               {
                 {"Core","False"},
-                --{"TechnologyRarity","Rare"},
-              }
-            },
-            -- {
-            --   ["SPECIAL_KEY_WORDS"]  = {"RequiredTech","SHIPJUMP_SPEC","TechShopRarity","GcTechnologyRarity.xml",},
-            --   ["VALUE_CHANGE_TABLE"]  =
-            --   {
-            --     {"TechnologyRarity","Normal"},
-            --   }
-            -- },
-            {
-              ["SPECIAL_KEY_WORDS"]  = {"RequiredTech","SHIPJUMP_SPEC",},
-              ["VALUE_CHANGE_TABLE"]  =
-              {
                 {"FragmentCost",1000},
-                --{"WikiEnabled","True"},
               }
             },
             -- Photonix Core
-            -- {
-            --   ["SPECIAL_KEY_WORDS"]  = {"ID","PHOTONIX_CORE",},
-            --   ["VALUE_CHANGE_TABLE"]  =
-            --   {
-            --     {"TechnologyRarity","Rare"},
-            --   }
-            -- },
-            -- {
-            --   ["SPECIAL_KEY_WORDS"]  = {"ID","PHOTONIX_CORE","TechShopRarity","GcTechnologyRarity.xml",},
-            --   ["VALUE_CHANGE_TABLE"]  =
-            --   {
-            --     {"TechnologyRarity","Normal"},
-            --   }
-            -- },
             {
               ["SPECIAL_KEY_WORDS"]  = {"ID","PHOTONIX_CORE",},
               ["VALUE_CHANGE_TABLE"]  =
               {
                 {"FragmentCost",1000},
-                --{"WikiEnabled","True"},
               }
             },
             -- Frameshift Catapult
@@ -263,22 +247,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"]  =
               {
                 {"Core","False"},
-                --{"TechnologyRarity","Rare"},
-              }
-            },
-            -- {
-            --   ["SPECIAL_KEY_WORDS"]  = {"RequiredTech","HYPERDRIVE_SPEC","TechShopRarity","GcTechnologyRarity.xml",},
-            --   ["VALUE_CHANGE_TABLE"]  =
-            --   {
-            --     {"TechnologyRarity","Normal"},
-            --   }
-            -- },
-            {
-              ["SPECIAL_KEY_WORDS"]  = {"RequiredTech","HYPERDRIVE_SPEC",},
-              ["VALUE_CHANGE_TABLE"]  =
-              {
                 {"FragmentCost",1000},
-                --{"WikiEnabled","True"},
               }
             },
             -- Advanced Launcher System
@@ -287,22 +256,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"]  =
               {
                 {"Core","False"},
-                --{"TechnologyRarity","Rare"},
-              }
-            },
-            -- {
-            --   ["SPECIAL_KEY_WORDS"]  = {"RequiredTech","LAUNCHER_SPEC","TechShopRarity","GcTechnologyRarity.xml",},
-            --   ["VALUE_CHANGE_TABLE"]  =
-            --   {
-            --     {"TechnologyRarity","Normal"},
-            --   }
-            -- },
-            {
-              ["SPECIAL_KEY_WORDS"]  = {"RequiredTech","LAUNCHER_SPEC",},
-              ["VALUE_CHANGE_TABLE"]  =
-              {
                 {"FragmentCost",1000},
-                --{"WikiEnabled","True"},
               }
             },
             -- Singularity Engine
@@ -311,53 +265,22 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"]  =
               {
                 {"FragmentCost",5},
-                --{"TechnologyRarity","Rare"}
               }
             },
             -- BOLTCASTER SM
-            -- {
-            --   ["SPECIAL_KEY_WORDS"]  = {"ID","BOLT_SM",},
-            --   ["VALUE_CHANGE_TABLE"]  =
-            --   {
-            --     {"TechnologyRarity","Rare"},
-            --   }
-            -- },
-            -- {
-            --   ["SPECIAL_KEY_WORDS"]  = {"ID","BOLT_SM","TechShopRarity","GcTechnologyRarity.xml",},
-            --   ["VALUE_CHANGE_TABLE"]  =
-            --   {
-            --     {"TechnologyRarity","Normal"},
-            --   }
-            -- },
             {
               ["SPECIAL_KEY_WORDS"]  = {"ID","BOLT_SM",},
               ["VALUE_CHANGE_TABLE"]  =
               {
                 {"FragmentCost",500},
-                --{"WikiEnabled","True"},
               }
             },
             -- PLASMA RESONATOR
-            -- {
-            --   ["SPECIAL_KEY_WORDS"]  = {"ID","LASER_XO",},
-            --   ["VALUE_CHANGE_TABLE"]  =
-            --   {
-            --     {"TechnologyRarity","Rare"},
-            --   }
-            -- },
-            -- {
-            --   ["SPECIAL_KEY_WORDS"]  = {"ID","LASER_XO","TechShopRarity","GcTechnologyRarity.xml",},
-            --   ["VALUE_CHANGE_TABLE"]  =
-            --   {
-            --     {"TechnologyRarity","Normal"},
-            --   }
-            -- },
             {
               ["SPECIAL_KEY_WORDS"]  = {"ID","LASER_XO",},
               ["VALUE_CHANGE_TABLE"]  =
               {
                 {"FragmentCost",300},
-                --{"WikiEnabled","True"},
               }
             },
             -- VISCERAL SYNTHESISER
@@ -374,6 +297,19 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"]  =
               {
                 {"FragmentCost",600},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
+          ["MXML_CHANGE_TABLE"] 	= 
+          {
+            {
+              ["SPECIAL_KEY_WORDS"]  = {"ID","S19_TP",},
+              ["VALUE_CHANGE_TABLE"]  =
+              {
+                {"RecipeCost",2},
               }
             },
           }

@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"]		= "Derelict_Freighter_Specific_Upgrades.pak",
     ["MOD_DESCRIPTION"]		= "Limits derelict freighter loot to hyperdrive and fuel modules",
     ["MOD_AUTHOR"]			= "Lenni",
-    ["NMS_VERSION"]			= "5.50",
+    ["NMS_VERSION"]			= "6.04",
     ["MODIFICATIONS"]		=
     {
         {
@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
 						{
 							["SKW"] = {"Id", "R_FREI_TECH", "Reward", "GcRewardSpecificProduct"},
@@ -56,7 +56,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-local ChangesToRewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToRewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 -- now we're looping OVERWRITE_LOOT
 for i=1,#OVERWRITE_LOOT,1 do
     -- Each id in said list we're going to contain in a var (not necessary, but makes it readable)

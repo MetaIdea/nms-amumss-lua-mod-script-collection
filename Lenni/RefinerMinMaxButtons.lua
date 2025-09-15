@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"]	= "UI/REFINERPAGE.MBIN",
-					["EXML_CHANGE_TABLE"]	=
+					["MXML_CHANGE_TABLE"]	=
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"ID", "BUTTONMAX"},

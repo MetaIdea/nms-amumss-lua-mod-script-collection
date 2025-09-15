@@ -2,8 +2,8 @@ ModAuthor = "Pekerson"
 LuaAuthor = "Pekerson"
 ModName = "X-Class Always Better than S-Class"
 BaseDescription = "Changes the weight of X-Class Upgrade Modules"
-GameVersion = "5.70"
-ModVersion = "v1.10"
+GameVersion = ""
+ModVersion = "v6.0"
 --[[Files Modified:METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -461,11 +461,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["SPECIAL_KEY_WORDS"] = {
 								"ID","UP_CANNX",
 								"ValueMin","5.000000",
-								"ValueMax","15.000000",
+								"ValueMax","18.000000",
 							},
 							["VALUE_CHANGE_TABLE"] = {
 								{"ValueMin","18.000000"},
-								{"ValueMax","24.000000"},
+								{"ValueMax","18.000000"},
 							},
 						},
 						{	
@@ -489,18 +489,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 							["VALUE_CHANGE_TABLE"] = {
 								{"ValueMin","25.000000"},
-								{"ValueMax","30.000000"},
+								{"ValueMax","25.000000"},
 							},
 						},
 						{	
 							COMMENT = [[UP_CANNX Weapon_ChargedProjectile_ChargeTime]],
 							["SPECIAL_KEY_WORDS"] = {
 								"ID","UP_CANNX",
-								"ValueMin","0.700000",
+								"ValueMin","0.500000",
 								"ValueMax","0.950000",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","0.400000"},
+								{"ValueMin","0.500000"},
 								{"ValueMax","0.500000"},
 							},
 						},

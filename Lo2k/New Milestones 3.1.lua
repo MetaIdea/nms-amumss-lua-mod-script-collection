@@ -1,7 +1,7 @@
- MOD_NAME		= "New Milestones 2.9.pak"; 
+ MOD_NAME		= "New Milestones 3.1.pak"; 
  MOD_AUTHOR 	= "Lo2k";
  LUA_AUTHOR 	= "Lo2k";
- NMS_VERSION 	= "5.58";
+ NMS_VERSION 	= "6.04";
  MOD_DESC		= "This mods changes milestones pacing";
   
 
@@ -92,19 +92,19 @@ NMS_MOD_DEFINITION_CONTAINER =
       {
 	  	{
           ["MBIN_FILE_SOURCE"] = {"METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLE.MBIN", "METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLESURVIVALMODE.MBIN"},
-          ["EXML_CHANGE_TABLE"] = change_intstats_table
+          ["MXML_CHANGE_TABLE"] = change_intstats_table
         },
 		{
           ["MBIN_FILE_SOURCE"] = {"METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLE.MBIN", "METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLESURVIVALMODE.MBIN"},
-          ["EXML_CHANGE_TABLE"] = change_floatstats_table
+          ["MXML_CHANGE_TABLE"] = change_floatstats_table
         },
 		{
           ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\STATS\JOURNEYMILESTONETABLE.MBIN",
-          ["EXML_CHANGE_TABLE"] = change_total_table
+          ["MXML_CHANGE_TABLE"] = change_total_table
         },
 		{ -- Milestone fixes
 		  ["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLE.MBIN", "METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLESURVIVALMODE.MBIN"},
-		  ["EXML_CHANGE_TABLE"] 	= 
+		  ["MXML_CHANGE_TABLE"] 	= 
 		  {
 			{
 			  ["SPECIAL_KEY_WORDS"] = {"StatId", "PIRATES_KILLED",},

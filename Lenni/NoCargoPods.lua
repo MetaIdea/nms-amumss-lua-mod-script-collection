@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 				{
                     ["MBIN_FILE_SOURCE"]     = {"METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN"},
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERSMALL_PROC.SCENE.MBIN"},

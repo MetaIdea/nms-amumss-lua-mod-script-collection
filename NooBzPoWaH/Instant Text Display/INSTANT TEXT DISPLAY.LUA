@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_AUTHOR"]       = "NooBzPoWaH",
     ["LUA_AUTHOR"]       = "Makto, gh0stwizard",
     ["MOD_DESCRIPTION"]  = "This mod displays the text pretty instantly when interacting with objects or aliens (NPCs).",
-    ["NMS_VERSION"]      = "5.72+",
+    ["NMS_VERSION"]      = "6.+",
     ["EXML_CREATE"]      = "false",
     ["MODIFICATIONS"]    = {
         {

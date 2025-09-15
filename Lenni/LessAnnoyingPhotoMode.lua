@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "UI\PHOTOMODE\PHOTOCAMMODE.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MXML_CHANGE_TABLE"] 	=
 					{
 						{
 							["REPLACE_TYPE"] 		= "ALL",
@@ -23,10 +23,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCSKYGLOBALS.GLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["SPECIAL_KEY_WORDS"] 	= {"PhotoModeVignette","Vector2f",},
+							["PKW"] 	= "PhotoModeVignette",
 							["VALUE_CHANGE_TABLE"] 		=
 							{
 								{ "x", 									"1" }, 		--Original "0.9"

@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"] = "GCSKYGLOBALS.GLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] =
+					["MXML_CHANGE_TABLE"] =
 					{
 						{
 							-- no more weird space fog

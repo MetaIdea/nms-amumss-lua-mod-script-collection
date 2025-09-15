@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "DontHideAutophageCamps.pak",
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "5.50",
+["NMS_VERSION"]				= "6.04",
 ["MOD_DESCRIPTION"]			= "Do not hide Autophage camps",
 ["MODIFICATIONS"] 			=
 	{
@@ -11,13 +11,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/NPCS/NPCSPAWNTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MXML_CHANGE_TABLE"] 	=
 					{
 						{
 							["REPLACE_TYPE"]	= "ALL",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"UseScanToRevealData", "False"},
+								{"UseScanToRevealData", "false"},
 							}
 						},
 					}
@@ -29,14 +29,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"MODELS/PLANETS/COMMON/BUILDINGS/ROBOT/PARTS/ROBOTSMALLSHACK/ENTITIES/DATA.ENTITY.MBIN",
 						"MODELS/PLANETS/COMMON/BUILDINGS/ROBOT/PARTS/ROBOTTERMINALSMALL/ENTITIES/ROBOTTERMINAL.ENTITY.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	=
+					["MXML_CHANGE_TABLE"] 	=
 					{
 						{
 							["PKW"]	= "GcScanToRevealComponentData",
 							["REPLACE_TYPE"]	= "ALL",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"StartEnabled", "False"},
+								{"StartEnabled", "false"},
 							}
 						},
 					}

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]  = "FullOfStars.pak",
+["MOD_FILENAME"]  = "It's Full of Stars",
 ["MOD_AUTHOR"]    = "darkmessenger84",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.03",
+["NMS_VERSION"]   = "6.04",
 ["MODIFICATIONS"] = 
 	{
 		{
@@ -11,12 +11,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"]  = "GCGALAXYGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["MXML_CHANGE_TABLE"] = 
 					{
 						{					
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"StarGenerationThreshold", "0.0"}, -- Original "0.68"
+								{"Star Generation Threshold", "0.0"}, -- Original "0.68"
 							}
 						},					
 					}

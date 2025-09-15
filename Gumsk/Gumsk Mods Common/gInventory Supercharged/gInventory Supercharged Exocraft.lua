@@ -11,11 +11,11 @@ AddSpecialSlots = [[          <Property name="SpecialSlots">
 
 for i = 0,9 do
 	for j = 0,2 do
-		AddSpecialSlots = AddSpecialSlots..[[            <Property value="GcInventorySpecialSlot.xml">
-              <Property name="Type" value="GcInventorySpecialSlotType.xml">
+		AddSpecialSlots = AddSpecialSlots..[[            <Property value="GcInventorySpecialSlot">
+              <Property name="Type" value="GcInventorySpecialSlotType">
                 <Property name="InventorySpecialSlotType" value="TechBonus" />
               </Property>
-              <Property name="Index" value="GcInventoryIndex.xml">
+              <Property name="Index" value="GcInventoryIndex">
                 <Property name="X" value="]]..i..[[" />
                 <Property name="Y" value="]]..j..[[" />
               </Property>
@@ -36,15 +36,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			MBIN_CHANGE_TABLE = {
 				{
 					MBIN_FILE_SOURCE = FileSource1,
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
-							SPECIAL_KEY_WORDS = {"Inventory_TechOnly","GcInventoryContainer.xml"},
+							SPECIAL_KEY_WORDS = {"Inventory_TechOnly","GcInventoryContainer"},
 							PRECEDING_KEY_WORDS = {"SpecialSlots"},
 							SECTION_ACTIVE = {2,3,4,5,6,7,8},
 							REMOVE = "SECTION",
 						},
 						{
-							SPECIAL_KEY_WORDS = {"Inventory_TechOnly","GcInventoryContainer.xml","StackSizeGroup","GcInventoryStackSizeGroup.xml"},
+							SPECIAL_KEY_WORDS = {"Inventory_TechOnly","GcInventoryContainer","StackSizeGroup","GcInventoryStackSizeGroup"},
 							LINE_OFFSET = "+3",
 							SECTION_ACTIVE = {2,3,4,5,6,7,8},
 							ADD = AddSpecialSlots

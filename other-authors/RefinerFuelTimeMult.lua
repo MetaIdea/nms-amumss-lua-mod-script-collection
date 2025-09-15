@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]	= "RefinerFuelTimeMult.pak",
 ["MOD_AUTHOR"]		= "XiNaru",
-["NMS_VERSION"]		= "4.43",
+["NMS_VERSION"]		= "5.01.1",
 ["MOD_DESCRIPTION"]	= "Add the Ability to set an own Portable and Personal Refinery Fuel Capacity/Time",
 ["MODIFICATIONS"]	= 
 	{
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					                            "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\REFINER\ENTITIES\REFINER1.ENTITY.MBIN",
 												"MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
 											  },
-					["EXML_CHANGE_TABLE"]	= 
+					["MXML_CHANGE_TABLE"]	= 
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"ID", "MAINT_FUEL1"},

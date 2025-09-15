@@ -4,7 +4,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]              = "nPwka",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.48",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
         {
@@ -12,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ExtremePlanetChance"},
@@ -43,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Poor"},
@@ -59,23 +58,29 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ENVIRONMENT\PLANETBUILDINGTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Settlement_Hub", "GcBuildingDefinitionData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Settlement_Hub", "GcBuildingDefinitionData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Low",       "0.2"},
-                                {"Mid",       "0.2"},
-                                {"Full",      "0.2"},
-                                {"HalfWeird", "0.2"},
+                                {"Dead",                               "0.2"},  --original 0
+                                {"Low",                                "0.2"},  --original 0.05
+                                {"Mid",                                "0.2"},  --original 0.05
+                                {"Full",                               "0.2"},  --original 0.05
+                                {"Weird",                              "0.2"},  --original 0
+                                {"HalfWeird",                          "0.2"},  --original 0
+                                {"GasGiant",                           "0.2"},  --original 0
+                                {"NumOverridesToGenerate",               "1"},  --original 0
+                                {"NumOverridesToGenerateWaterworlds",    "1"},  --original 0
+								{"EnabledWhenPlanetHasNoNPCs",        "true"},  --original 0
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMELISTPERSTARTYPE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"StarType", "Yellow", "BiomeProbability"},

@@ -1346,10 +1346,16 @@ ExoClassAChance =						30						--15
 ExoClassSChance =						10						--5
 
 --Multipliers to the quality chance % (C, B, A, S Class) for random various upgrade modules rarely found (~12% of the time) in Damaged Machinery on planets
+	--NOTE: This doesn't set the chance of a Damaged Machinery yielding an upgrade module when looted, but the chances for it to be a particular Class when it does spawn one.
+	--You can increase/decrease the relative chance to yield upgrade modules by decreasing/increasing the chances for Starship Luanch Fuel / Nanites to spawn in the section below
 DmgMachClassCChanceMult =				1						--55 (0 for hazard & life support upgrades)
 DmgMachClassBChanceMult =				1						--25 (60 for hazard and 65 for life support upgrades)
 DmgMachClassAChanceMult =				1						--15 (30 for hazard & life support upgrades)
 DmgMachClassSChanceMult =				1						--5 (10 for hazard & life support upgrades)
+
+--Multipliers for the chance weighting for other loot from Damaged Machinery (upgrade modules have a chance weighting of 1 each, for all 15 of them)
+DmgMachFuelChance =						1						--10	1 Starship Launch Fuel
+DmgMachNaniteChance =					1						--100	25-35 Nanites
 
 --Multipliers to apply to the various kinds of rewards from Frigate Expedition missions
 ExpeditionPosUnitsMultiplier =			0.8						--Only applies to positive amounts of Units (i.e. the player gains units)
@@ -1670,15 +1676,15 @@ SentSuitChance			=	10			--20
 --% Chance to receive various items from the core of a Salvageable Scrap node (can receive all items simultaneously if lucky)
 SalvageSentMapChance	=	5			--10		Chance for Sentinel Boundary Map
 ScrapCoreScrapChance	=	40			--40		Chance for procedural Scrap loot item
-ScrapCoreGoodCorvChance	=	24			--40		Chance for one of 26 "good" Corvette parts, worth 1,052,400 units on average
-ScrapCoreOKCorvChance	=	100			--100		Chance for one of 63 "OK" Corvette parts, worth 237,000 units on average
+ScrapCoreGoodCorvChance	=	24			--40		Chance for 1-2 of 26 "good" Corvette parts, worth 1,052,400 units on average
+ScrapCoreOKCorvChance	=	100			--100		Chance for 1-2 of 63 "OK" Corvette parts, worth 237,000 units on average
 
 --Changes substance & amount yielded from destroying the Protective Casing components surrounding a Salvageable Scrap core
 SalvageScrapSubstance	=	"SPACEGUNK3"	--"LAND1"	
 SalvageScrapSubAmountMult	=	0.33	--Applies multiplier to vanilla amount of 15-30
 --% Chance to receive various additional items from each Protective Casing surrounding the core of a Salvageable Scrap node (can receive all items simultaneously if lucky)  (I'm assuming on average there are around ~3 Protective Casings per Scrap Core)
-ScrapCaseGoodCorvChance	=	3			--20		Chance for one of 26 "good" Corvette parts, worth 1,052,400 units on average
-ScrapCaseOKCorvChance	=	7			--33		Chance for one of 63 "OK" Corvette parts, worth 237,000 units on average
+ScrapCaseGoodCorvChance	=	3			--20		Chance for 1 of 26 "good" Corvette parts, worth 1,052,400 units on average
+ScrapCaseOKCorvChance	=	7			--33		Chance for 1 of 63 "OK" Corvette parts, worth 237,000 units on average
 ExtraScrapChance		=	0			--0			Chance for an additional procedural Scrap item
 
 --% Chance to receive Echo Locators from various sources
@@ -5234,6 +5240,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"WeightedChanceRare",	DmgMachClassBChanceMult},
 					{"WeightedChanceEpic",	DmgMachClassAChanceMult},
 					{"WeightedChanceLegendary",	DmgMachClassSChanceMult},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","TECHDEBRIS", 		"ID", "LAUNCHFUEL"},
+				["SECTION_UP"] = 2,
+				["MATH_OPERATION"] 		= "*",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	DmgMachFuelChance},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","TECHDEBRIS", 		"Reward", "GcRewardMoney"},
+				["SECTION_UP"] = 1,
+				["MATH_OPERATION"] 		= "*",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	DmgMachNaniteChance},
 				}
 			},
 			{

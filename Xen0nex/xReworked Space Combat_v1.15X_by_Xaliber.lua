@@ -2,8 +2,8 @@ Author = "Xaliber"
 LuaAuthor = "DeathWrench and Babscoole, updated by Xen0nex"
 ModName = "Reworked Space Combat"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "5.64"
-ModVersion = "1.13X"
+GameVersion = "6.04"
+ModVersion = "1.15X"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships & some freighters (individual ships have additonal multipliers applied)
 	--Note that "SpaceCombatDifficultyMultipliers" values in GCGAMEPLAYGLOBALS.GLOBAL.MBIN control additional (or subtract) Hull & Shields for enemy starships depending on Space Combat difficulty setting
@@ -309,6 +309,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 	{
 		["SPECIAL_KEY_WORDS"] = {"BehaviourTable","GcShipAIAttackData"},
 		["REPLACE_TYPE"] = "ADDAFTERSECTION",
+		["ADD"] = AddPlanetBehaviour ("P_FLYBY")
+	},
+	{
+		["SPECIAL_KEY_WORDS"] = {"BehaviourTable","GcShipAIAttackData"},
+		["REPLACE_TYPE"] = "ADDAFTERSECTION",
 		["ADD"] = AddSpaceBehaviour ("SPACE_EZ")
 	},
 	{
@@ -473,13 +478,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["PRECEDING_FIRST"] = "True",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE_EZ"},			--default "SPACE"
-		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
+		{"PlanetBehaviour", "P_FLYBY"},		--default "PLANET"
 		{"Engine", "SPACE_EASY"},			--default "SPACE_EASY"
 		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 2},					--default 2
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
-		{"Health", math.floor(ShipHull*5200)},			--default 5200
-		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*14000)},		--default 14000
+		{"Health", math.floor(ShipHull*5200*2)},			--default 5200
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*14000*2)},		--default 14000
 		{"Shield", "STANDARD"},				--default "STANDARD"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -843,6 +848,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"AttackBoostAngle", 210},							--40
 		{"NumHitsBeforeBail", 5000},						--3000
 		{"NumHitsBeforeReposition", 1750},					--1000
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
+	["SPECIAL_KEY_WORDS"] = {"Id","P_FLYBY"},				--Custom Behaviour
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
+	["VALUE_CHANGE_TABLE"] = {
+		{"GunDispersionAngle", 6},
+		{"GunFireRate", 1.8},
+		{"LaserHealthPoint", 80},
+		{"AttackWeaponRange", 600},
+		{"AttackShootWaitTime", 0.1},						--N/A			(0)
+		{"AttackShootTimeMin", 5},
+		{"AttackShootTimeMax", 15},
+		{"AttackMaxTime", 20},
+		{"AttackApproachOffset", 150},
+		{"AttackApproachMinRange", 300},
+		{"AttackTooCloseRange", 150},
+		{"AttackFlybyOffset", 150},
+		{"AttackBoostAngle", 40},
+		{"NumHitsBeforeBail", 3000},
+		{"NumHitsBeforeReposition", 1000},
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_WEAK"},

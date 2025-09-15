@@ -1,5 +1,3 @@
-FILE_METADATA_PRODUCT_TABLE = "METADATA/REALITY/TABLES/NMS_BASEPARTPRODUCTS.MBIN"
-
 -- VCT for modifying prices of the ship parts
 VCT_PRICE = {{"BaseValue","@/20",},}
 
@@ -99,11 +97,18 @@ LIST_SHIP_PARTS = {
 	"B_CON_L_0",
 	"B_CON_L_1",
 	"B_CON_L_3",
+	"B_CON_4",
 	"B_CON_5",
 	"B_CON_6",
 	"B_CON_7",
 	"B_CON_8",
 	"B_CON_9",
+	"B_CON_10",
+	"B_CON_11",
+	"B_CON_12",
+	"B_CON_13",
+	"B_CON_14",
+	"B_CON_15",
 	"B_CON2_0",
 	"B_CON_L_2",
 }
@@ -141,7 +146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --------------------------------------------------
                     -- product table MBIN
                     --------------------------------------------------
-                    ["MBIN_FILE_SOURCE"] = FILE_METADATA_PRODUCT_TABLE,
+                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_BASEPARTPRODUCTS.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
@@ -155,4 +160,3 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
-

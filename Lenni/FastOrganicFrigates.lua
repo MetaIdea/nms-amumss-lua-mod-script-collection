@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "FastOrganicFrigates.pak",
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "5.10",
+["NMS_VERSION"]				= "6.04",
 ["MOD_DESCRIPTION"]			= "Makes the Dream Aerial not useless",
 ["MODIFICATIONS"] 			= 
 	{
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/TABLES/SPACEPOIMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	=	{"MissionID", "BIO_FRIG"},
@@ -20,14 +20,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"]	=	{"MissionID", "BIO_FRIG"},
-							["SECTION_ACTIVE"]		=	1,
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"RestartOnCompletion", "True"},
+								{"RestartOnCompletion", "true"},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"]	=	{"MissionID", "BIO_FRIG", "Stage", "GcMissionSequenceCreateSpecificPulseEncounter.xml"},
+							["SPECIAL_KEY_WORDS"]	=	{"MissionID", "BIO_FRIG", "Stage", "GcMissionSequenceCreateSpecificPulseEncounter"},
 							["VALUE_CHANGE_TABLE"]	=
 							{
 								{"PulseEncounterID", "BIO_FRIG"},
@@ -35,14 +34,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SKW"]	=  
-							{  
-								{"MissionID", "BIO_FRIG", "MissionTitles", "GcNumberedTextList.xml"},
-								{"MissionID", "BIO_FRIG", "MissionSubtitles", "GcNumberedTextList.xml"},
-								{"MissionID", "BIO_FRIG", "MissionDescriptions", "GcNumberedTextList.xml"},
+							{
+								{"MissionID", "BIO_FRIG", "MissionTitles", "GcNumberedTextList"},
+								{"MissionID", "BIO_FRIG", "MissionSubtitles", "GcNumberedTextList"},
+								{"MissionID", "BIO_FRIG", "MissionDescriptions", "GcNumberedTextList"},
 							},
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"Format", ""},
+								{"Format", ""}, --remove messages about "dream aerial is missing" if the aerial is not in the inventory
 							}
 						},
 					},

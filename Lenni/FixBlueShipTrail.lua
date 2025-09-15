@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS/EFFECTS/TRAILS/SPACECRAFT/HOT/HOTTRAIL.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MXML_CHANGE_TABLE"] 	=
 					{
 						{
 							["PKW"] = "Samplers",

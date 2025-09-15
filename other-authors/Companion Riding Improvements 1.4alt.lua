@@ -1,18 +1,19 @@
-Author = "aharttsx"
-ModName = "Companion Riding Improvements (Infinite Stamina)"
+Author = "aharttsx"						--Edited by Xen0nex
+ModName = "Companion Riding Improvements"
 BaseDescription = "Increases Companion ride speeds, reduces stamina drain rate, improves mounted camera rotation range, and sligtly shortens teleport-to-player distance to help prevent despawning as frequently"
-GameVersion = "3.97"
-ModVersion = "1.3"
+GameVersion = "6.03"
+ModVersion = "1.4alt"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 FileSource2 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREPETBEHAVIOURTABLE.MBIN"
 FileSource3 = "GCCAMERAGLOBALS.GLOBAL.MBIN"
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..GameVersion..ModVersion..".pak",
+["MOD_FILENAME"]	= ModName.." "..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
+--["EXML_CREATE"] = "FALSE",		--Remove the -- before ["EXML_CREATE"] in order to have AMUMSS create an .MBIN style mod instead of an .EXML style mod
 ["MODIFICATIONS"]	= 
 
 	{
@@ -21,12 +22,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				{
 					["MBIN_FILE_SOURCE"] = FileSource1,
-					["EXML_CHANGE_TABLE"] = 
+					["MXML_CHANGE_TABLE"] = 
 					{
 						{
 							["VALUE_CHANGE_TABLE"] = {
 								{"RideSpeedSlow", "1.5"}, 			-- original= 0.5
-								{"RideSpeedFast", "5"}, 			-- original= 2
+								{"RideSpeedFast", "4"}, 			-- original= 2							(5)
 								{"PetTeleportDistOnPlanet", "90"}, 	-- original= 150
 								{"RidingSteerWeight",	"1"},		-- original= 2
 							},	
@@ -36,28 +37,30 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			
 				{
 					["MBIN_FILE_SOURCE"] = FileSource2,
-					["EXML_CHANGE_TABLE"] = 
+					["MXML_CHANGE_TABLE"] = 
 					{
 						{	-- stamina modifiers determined by mood: Hunger
-							["PRECEDING_KEY_WORDS"] = {"MoodStaminaModifiers", "GcPetMoodStaminaModifier.xml" },
+							["SPECIAL_KEY_WORDS"] = {"MoodStaminaModifiers","GcPetMoodStaminaModifier"},
+							["SECTION_ACTIVE"] = {0,},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"StaminaDrainModifierMin",		"0"},	-- Original= 1
-								{"StaminaDrainModifierMax",	"0"},		-- original= 0.7
+								{"StaminaDrainModifierMin",	"0.7"},		-- Original= 0.7					(0.3)
+								{"StaminaDrainModifierMax",	"1"},		-- original= 1						(0.6)
 							},
 						},
 						
 						{	-- stamina modifiers determined by mood: Lonely
-							["PRECEDING_KEY_WORDS"] = {"MoodStaminaModifiers", "GcPetMoodStaminaModifier.xml", "GcPetMoodStaminaModifier.xml" },
+							["SPECIAL_KEY_WORDS"] = {"MoodStaminaModifiers","GcPetMoodStaminaModifier"},
+							["SECTION_ACTIVE"] = {1,},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"StaminaDrainModifierMin",		"0"},	-- Original= 1
-								{"StaminaDrainModifierMax",	"0"},		-- original= 0.7
+								{"StaminaDrainModifierMin",	"0.7"},		-- Original= 0.7					(0.3)
+								{"StaminaDrainModifierMax",	"1"},		-- original= 1						(0.6)
 							},
 						},
 						
 						{	-- removes cooldown time so pet can (hopefully) teleport to player more reliably
-							["PRECEDING_KEY_WORDS"] = {"TeleportToPlayer",},
+							["SPECIAL_KEY_WORDS"] = {"TeleportToPlayer","GcPetBehaviourData"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"CooldownTime",		"0"},	-- Original= 10
@@ -68,7 +71,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	
 				{
 					["MBIN_FILE_SOURCE"] = FileSource3,
-					["EXML_CHANGE_TABLE"] = 
+					["MXML_CHANGE_TABLE"] = 
 					{
 		
 						{
@@ -79,7 +82,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 		
 						{	
-							["PRECEDING_KEY_WORDS"] = {"CharacterRideCam",},
+							["SPECIAL_KEY_WORDS"] = {"CharacterRideCam","GcCameraFollowSettings"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"HorizRotationAngleMaxPerFrame",	"3"}, 			-- original = 0			
@@ -91,7 +94,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						
 						{	
-							["PRECEDING_KEY_WORDS"] = {"CharacterRideCamMedium",},
+							["SPECIAL_KEY_WORDS"] = {"CharacterRideCamMedium","GcCameraFollowSettings"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"HorizRotationAngleMaxPerFrame",	"3"}, 			-- original = 0	
@@ -103,7 +106,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						
 						{	
-							["PRECEDING_KEY_WORDS"] = {"CharacterRideCamLarge",},
+							["SPECIAL_KEY_WORDS"] = {"CharacterRideCamLarge","GcCameraFollowSettings"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"HorizRotationAngleMaxPerFrame",	"3"}, 			-- original = 0			
@@ -115,7 +118,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						
 						{	
-							["PRECEDING_KEY_WORDS"] = {"CharacterRideCamHuge",},
+							["SPECIAL_KEY_WORDS"] = {"CharacterRideCamHuge","GcCameraFollowSettings"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"HorizRotationAngleMaxPerFrame",	"3"}, 			-- original = 0			

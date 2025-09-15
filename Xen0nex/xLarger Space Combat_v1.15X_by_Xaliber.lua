@@ -3,8 +3,8 @@ AuthorLua = "Xen0nex"
 ModName = "Larger Space Combat"
 ModNameType = "Tweak"
 BaseDescription = "Larger Space Combat - separate from Reworked Space Combat for modularity"
-GameVersion = "5.64"
-ModVersion = "1.13X"
+GameVersion = "6.04"
+ModVersion = "1.15X"
 
 --Adds additional Squadrons to appear at each Wanted Level, for all multiplayer group sizes
 AddedSquadrons =
@@ -24,7 +24,9 @@ WantedSquadron4 =		2								--1 Interceptor per Squadron
 WantedSquadron5 =		2								--1 Sentinel Freighter per Squadron (Each Freighter comes with it's own set of 2 Squadrons of 2 Interceptors each, so 4 Interceptors per Freighter)
 
 --Adjusts some settings for Planetary Pirate Raids
-RaidSpawnRange =		3200							--800	How far away from the player they will spawn.
+RaidSpawnRange =				3200						--200	(No apparent effect) How far away from the player they will spawn when the player is not near an eligible building
+BuildingRaidSpawnRange =		3200						--800	How far away from the player they will spawn when attacking a building
+--RaidSpawnTime =			0								--0		Possibly how long between the event starting and the actual ships appearing? (No apparent effect)
 
 --"Spread" sets how far apart the ships are when they spawn, "Count" sets the minimum & maxmum number of ships which spawn.
 LargerBattleChanges = 
@@ -107,7 +109,7 @@ LargerBattleChanges =
 	},
 	{
 		{
-			"PlanetaryPirateFlybySpawns"		--Unclear
+			"PlanetaryPirateFlybySpawns"		--These seem to be the pirates spawned when pirates attack you on the surface with no eligible buildings nearby, "PLANET_FLYBY"
 		},
 		{
 			{--Standard (regular starship)
@@ -116,14 +118,14 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
-					{"Count",	2,			4}		--1,		3
+					{"Count",	1,			1}		--1,		3
 				}
 			}
 		}
 	},
 	{
 		{
-			"PlanetaryPirateRaidSpawns"		--These seem to be the pirates spawned when pirates attack a planetary building you are near.
+			"PlanetaryPirateRaidSpawns"		--These seem to be the pirates spawned when pirates attack a planetary building you are near, "RAID_BUILDING"
 		},
 		{
 			{--Standard (regular starship)
@@ -926,10 +928,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["MXML_CHANGE_TABLE"] 	= 
 	{
 		{
-			["PRECEDING_KEY_WORDS"] = {"PlanetaryPirateRaidSpawns"},
+			["PRECEDING_KEY_WORDS"] = {"PlanetaryPirateFlybySpawns"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
 				{"MinRange", RaidSpawnRange}
+			}
+		},
+		{
+			["PRECEDING_KEY_WORDS"] = {"PlanetaryPirateRaidSpawns"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"MinRange", BuildingRaidSpawnRange}
 			}
 		},
 		{--Changes HARDBOUNTY2 to use PIRATE_HARD ships instead of PIRATE ships

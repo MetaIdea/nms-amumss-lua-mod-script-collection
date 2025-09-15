@@ -73,7 +73,7 @@ EMOTEMENU		= {}
 
 for i = 1, #QUICK_ACTION_MENU, 1 do
       -- ["MBIN_FILE_SOURCE"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/HEALTHSTATION/ENTITIES/HEALTHSTATION.ENTITY.MBIN",
-      -- ["EXML_CHANGE_TABLE"] =
+      -- ["MXML_CHANGE_TABLE"] =
   local ADD_REWARDACTION = {
         {
           ["SKW"] = {"Action", "GcRewardAction"},
@@ -89,7 +89,7 @@ for i = 1, #QUICK_ACTION_MENU, 1 do
       }
 
       -- ["MBIN_FILE_SOURCE"] = "MODELS/COMMON/ROBOTS/SPIDER_QUADRUPED/ENTITIES/SPIDERQUAD.ENTITY.MBIN",
-      -- ["EXML_CHANGE_TABLE"] =
+      -- ["MXML_CHANGE_TABLE"] =
   local ADD_TRIGGER = {
         {
           ["SKW"] = {"Components", "GcTriggerActionComponentData"},
@@ -120,7 +120,7 @@ for i = 1, #QUICK_ACTION_MENU, 1 do
       }
 
       -- ["MBIN_FILE_SOURCE"] = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN",
-      -- ["EXML_CHANGE_TABLE"] =
+      -- ["MXML_CHANGE_TABLE"] =
   local ADD_ANIM = {
         {
           ["SKW"] = {"Anim", "0H_TURN_L"},
@@ -146,7 +146,7 @@ for i = 1, #QUICK_ACTION_MENU, 1 do
       }
 
 	-- ["MBIN_FILE_SOURCE"]  = "METADATA/UI/EMOTEMENU.MBIN",
-	-- ["EXML_CHANGE_TABLE"] =
+	-- ["MXML_CHANGE_TABLE"] =
   local EMOTE_ITEM = {
 	{
 		["SKW"] = {"Title", "EMOTE_WAVE"},
@@ -159,8 +159,8 @@ for i = 1, #QUICK_ACTION_MENU, 1 do
 			{"Title",               QUICK_ACTION_MENU[i].TITLE},
 			{"ChatText",            ""},
 			{"ChatUsesPrefix",      "false"},
-			{"AvailableUnderwater", "false"},
-			{"EmoteID",             QUICK_ACTION_MENU[i]["EMOTE_ID"] .. 0},
+			{"AvailableUnderwater", "true"},
+			{"EmoteID",             QUICK_ACTION_MENU[i]["EMOTE_ID"]},
 			{"AnimationName",       QUICK_ACTION_MENU[i].ID},
 			{"Filename",            QUICK_ACTION_MENU[i].ICON},
 			{"MoveToCancel",        "true"},
@@ -171,22 +171,8 @@ for i = 1, #QUICK_ACTION_MENU, 1 do
 		["PKW"] = "Emotes",
 		["SEC_PASTE"] = "ADD_EMOTE" .. i,
 	},
-	{
-		["SEC_EDIT"] = "ADD_EMOTE" .. i,
-		["VCT"] =
-		{
-			{"AvailableUnderwater", "true"},
-			{"EmoteID",             QUICK_ACTION_MENU[i]["EMOTE_ID"] .. 1},
-		}
-	},
-	{
-		["PKW"] = "Emotes",
-		["SEC_PASTE"] = "ADD_EMOTE" .. i,
-	},
   }
 
-	-- ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
-	-- ["EXML_CHANGE_TABLE"] =
   local REWARDITEM = {
 		{
 			["SKW"] = {"GenericTable","GcGenericRewardTableEntry"},
@@ -222,8 +208,7 @@ for i = 1, #QUICK_ACTION_MENU, 1 do
 				{"Event", QUICK_ACTION_MENU[i].SCANEVENT},
 				{"ScanEventTable", "Planet"},
 				{"DoAerialScan", "false"},
-				{"UseMissionSeedForEvent", "false"},
-				{"UseMissionSeedForEvent", "false"},
+				{"UseMissionIDSeedForEvent", "false"},
 				{"StartDelay", "0"},
 				{"UseStartDelayWhenNoAerialScan", "false"},
 				{"ForceSilentFailure", "false"},
@@ -270,7 +255,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]				= "Lenni",
 ["LUA_AUTHOR"]				= "Lenni, Babscoole",
 ["MOD_DESCRIPTION"]			= "Quick Action to find various POIs for ship hunters",
-["NMS_VERSION"]				= "5.50",
+["NMS_VERSION"]				= "6.04",
 ["MODIFICATIONS"] 			=
 {
   {
@@ -278,46 +263,46 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{
       {
         ["MBIN_FILE_SOURCE"]  = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/HEALTHSTATION/ENTITIES/HEALTHSTATION.ENTITY.MBIN",
-        ["EXML_CHANGE_TABLE"] = REWARDACTIONS
+        ["MXML_CHANGE_TABLE"] = REWARDACTIONS
       },
       {
         ["MBIN_FILE_SOURCE"]  = "MODELS/COMMON/ROBOTS/SPIDER_QUADRUPED/ENTITIES/SPIDERQUAD.ENTITY.MBIN",
-        ["EXML_CHANGE_TABLE"] = TRIGGERS
+        ["MXML_CHANGE_TABLE"] = TRIGGERS
       },
       {
         ["MBIN_FILE_SOURCE"]  = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN",
-        ["EXML_CHANGE_TABLE"] = ANIMS
+        ["MXML_CHANGE_TABLE"] = ANIMS
       },
 
+	  {
+		["MBIN_FILE_SOURCE"]  = "METADATA/UI/EMOTEMENU.MBIN",
+		["MXML_CHANGE_TABLE"] = EMOTEMENU
+	  },
+	  {
+		["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
+		["MXML_CHANGE_TABLE"] =
+		  {
 			{
-				["MBIN_FILE_SOURCE"]  = "METADATA/UI/EMOTEMENU.MBIN",
-				["EXML_CHANGE_TABLE"] = EMOTEMENU
-			},
-			{
-			  ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
-			  ["EXML_CHANGE_TABLE"] =
+			  ["SKW"] = {
+				{"Id", "R_SHOW_HIVEONLY"},
+				{"Id", "R_SCANSENTCRASH"},
+				{"Id", "R_CHART_ROBOT"},
+				{"Id", "R_CHART_BUILDER"},
+			  },
+			  ["VCT"]	=
 				{
-				  {
-					  ["SKW"] = {
-							{"Id", "R_SHOW_HIVEONLY"},
-							{"Id", "R_SCANSENTCRASH"},
-							{"Id", "R_CHART_ROBOT"},
-							{"Id", "R_CHART_BUILDER"},
-						},
-						["VCT"]	=
-						{
-						  {"DoAerialScan", "False"}
-						}
-					},
+				  {"DoAerialScan", "False"}
 				}
-			},
+			  },
+			}
+		},
 			{
 			  ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
-			  ["EXML_CHANGE_TABLE"] = REWARDTABLE
+			  ["MXML_CHANGE_TABLE"] = REWARDTABLE
 			},
 			{
 			  ["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/MISSIONS/TABLES/SPACEPOIMISSIONTABLE.MBIN",
-				["EXML_CHANGE_TABLE"] =
+				["MXML_CHANGE_TABLE"] =
 				{
 				  {
 					  ["SKW"] = {"MissionID", "BIOSHIP_REPEAT", "Name", "UI_BIO_SHIP_LOG_REPEAT_OPT3", "Rewards", "R_BIOLOOP_EGG"},
@@ -325,7 +310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 					{
 					  ["SKW"] = {"MissionID", "BIOSHIP_REPEAT", "Options", "GcAlienPuzzleOption"},
-						["SECTION_ACTIVE"]  = 1,
+						["SECTION_ACTIVE"]  = 0, --removing 10k nanite payment
 						["VCT"] =
 						{
 						  {"Cost", ""}
@@ -340,7 +325,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			},
 			{
 			  ["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/MISSIONS/TABLES/STARTEDONUSEMISSIONTABLE.MBIN",
-				["EXML_CHANGE_TABLE"] = 
+				["MXML_CHANGE_TABLE"] = 
 				{
 				  {
 					  ["SKW"]	= {"MissionID", "SENTSHIP_GALMAP", "Name", "SE_SENT_GALMAP"},
