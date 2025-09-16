@@ -17,6 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]	=	{"MissionID", "BIO_FRIG"},
 							["PRECEDING_KEY_WORDS"]	=	"CancelingConditions",
 							["REMOVE"] = "SECTION",
+							["CREATE_HOES"] = "TRUE", --this needs to be here, otherwise the section isn't removed properly
 						},
 						{
 							["SPECIAL_KEY_WORDS"]	=	{"MissionID", "BIO_FRIG"},

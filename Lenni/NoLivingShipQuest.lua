@@ -65,6 +65,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]		= {"MissionID", "BIOSHIP_REPEAT"},
 							["PRECEDING_KEY_WORDS"]		= "StartingConditions",
 							["REMOVE"] = "SECTION",
+							["CREATE_HOES"] = "TRUE", --this needs to be here, otherwise the section isn't removed properly
 						}
 					}
 				}
