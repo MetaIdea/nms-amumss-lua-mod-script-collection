@@ -1,8 +1,8 @@
 local modfilename = "AlmostPerfectTraders"
 local lua_author  = "Silent"
-local lua_version = "4.7"
+local lua_version = "4.8"
 local mod_author  = "Silent369"
-local nms_version = "5.74"
+local nms_version = "6.04"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
@@ -23,15 +23,12 @@ and to minimise the damage to Crashed Ships when discovered to save resources on
 
 -- Initialise Variables
 --------------------------------------------------------------------------------------------
-
 local m_NoPirateAttacks = true
 local m_CrashShipDamage = true
 local m_FillUp_Outposts = true
 
-
 -- Outpost / Trader Spawns
 --------------------------------------------------------------------------------------------
-
 local m_xAIFlybySpawns  = 2
 local m_yAIFlybySpawns  = 4
 local m_xSPFlybySpawns  = 3
@@ -47,17 +44,17 @@ local m_yAmbientSpawns  = 2
 
 -- Station Entity
 --------------------------------------------------------------------------------------------
-
 local m_sApproachRange  = 155
 local m_sApproachSpeed  = 200
 local m_sAutoLandRange  = 345
 
 -- Station Dock Entity
 --------------------------------------------------------------------------------------------
-
 local m_dApproachRange  = 155
 local m_dApproachSpeed  = 200
 local m_dAutoLandRange  = 345
+local m_dLandingHeight  = 15
+local m_dRotateToDock   = true
 
 --------------------------------------------------------------------------------------------
 
@@ -73,7 +70,6 @@ if m_CrashShipDamage then
         {
             REPLACE_TYPE = "ALL",
             VCT = {
-                --{"CrashedShipMinNonBrokenSlots",           "15"}, --Original "3"
                 {"CrashedShipBrokenSlotChance",             "0"}, --Original "0.75"
                 {"CrashedShipBrokenTechChance",             "0"}, --Original "0.7"
                 {"CrashedShipRepairSlotCostIncreaseFactor", "0"}, --Original "1.3"
@@ -159,12 +155,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"PlayerAutoLandRange",        m_sAutoLandRange}, --Original "300"
                                 {"CircleRadius",                         "1900"}, --Original "2000"
                                 {"LandingSpeed",                          "1.5"}, --Original "10"
+                                {"LandingHeight",              m_dLandingHeight}, --Original "10"
+                                {"RotateToDock",                m_dRotateToDock}, --Original "true"
                                 {"TakeOffTime",                           "0.6"}, --Original "1"
                                 {"TakeOffAlignTime",                      "1.1"}, --Original "1"
-                                {"TakeOffExtraAIHeight",                    "5"}, --Original "7"
+                                {"TakeOffExtraAIHeight",                    "6"}, --Original "7"
                                 {"PostTakeOffExtraPlayerHeight",           "-1"}, --Original "0"
-                                {"PostTakeOffExtraPlayerSpeed",            "30"}, --Original "60"
-                                {"TakeOffProgressForExtraHeight",           "2"}, --Original "1"
+                                {"PostTakeOffExtraPlayerSpeed",            "65"}, --Original "60"
+                                {"TakeOffProgressForExtraHeight",         "0.8"}, --Original "1"
                             }
                         },
                     }
@@ -186,12 +184,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"PlayerAutoLandRange",        m_dAutoLandRange}, --Original "300"
                                 {"CircleRadius",                          "150"}, --Original "200"
                                 {"LandingSpeed",                          "1.5"}, --Original "10"
+                                {"LandingHeight",              m_dLandingHeight}, --Original "10"
+                                {"RotateToDock",                m_dRotateToDock}, --Original "true"
                                 {"TakeOffTime",                           "0.6"}, --Original "1"
                                 {"TakeOffAlignTime",                      "1.1"}, --Original "1"
-                                {"TakeOffExtraAIHeight",                    "5"}, --Original "7"
+                                {"TakeOffExtraAIHeight",                    "6"}, --Original "7"
                                 {"PostTakeOffExtraPlayerHeight",           "-1"}, --Original "0"
-                                {"PostTakeOffExtraPlayerSpeed",            "30"}, --Original "60"
-                                {"TakeOffProgressForExtraHeight",           "2"}, --Original "1"
+                                {"PostTakeOffExtraPlayerSpeed",            "65"}, --Original "60"
+                                {"TakeOffProgressForExtraHeight",         "0.8"}, --Original "1"
                             }
                         },
                     }
@@ -245,7 +245,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"OutpostDockApproachUpAmount",           "0.2"}, --Original "0.1"
                                 {"LandingTipAngle",                        "15"}, --Original "25"
                                 {"LandingLongTipAngle",                     "7"}, --Original "10"
-                                {"MaxNumActiveTraders",                    "30"}, --Original "15"
+                                {"MaxNumActiveTraders",                    "20"}, --Original "15"
                                 {"SpaceStationTraderRequestTime",           "1"}, --Original "20"
                                 {"TraderArriveSpeed",                     "800"}, --Original "300"
                                 {"TraderArriveTime",                        "1"}, --Original "3"

@@ -1,8 +1,8 @@
-local modfilename = "AlmostPerfectFlightLite"
+local modfilename = "AlmostPerfectFlightLiteNoReverse"
 local lua_author  = "Silent"
-local lua_version = "4.9"
+local lua_version = "5.0"
 local mod_author  = "Silent369"
-local nms_version = "5.74"
+local nms_version = "6.04"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
@@ -10,24 +10,21 @@ local description = [[
 Changes Ship Pulse Flight, Combat/Planet/Space Flight and Ship Hover Characteristics.
 With optional settings to make flight much easier (a bit cheaty, hence optional).
 
+Modifies:
+GCSPACESHIPGLOBALS.GLOBAL.MBIN
+
 ]]
 
---Modifies:
---GCSPACESHIPGLOBALS.GLOBAL.MBIN
-
---|=======================================================================================--
-
+--Main Settings
 local m_cheatySettings = true
 local m_launchFuelCost = true
 local m_shipHoverSpeed = true
 local m_shipStatsBonus = true
 local m_warpSpeedMulti = true
 
---|=======================================================================================--
-
 --Cheaty Settings
 local m_cheatMult = 50
-local m_cheatTime = 0.1
+local m_cheatTime = 0.01
 
 --Ship Boosts
 local m_boostMult = 1.25
@@ -41,7 +38,7 @@ local m_dBreakMin = 1
 local m_dBreakMax = 1.5
 local m_rev_break = 2
 local m_lsptrnDmp = 0.1
-local m_min_speed = -1
+local m_min_speed = 0.01
 local m_overBreak = 0.4
 local m_rolAmount = 2
 local m_rollForce = 1.5
@@ -61,12 +58,33 @@ local m_fuelMulti = 0.35 --launch fuel saving
 --NoBoost/MiniWarp/Stopping
 local m_Restricts = 0.15 --relax noboost/miniwarp
 local m_Multplier = 0.6  --miniwarp exit speed
-local m_mStopping = 0.4  --stopping margin
+local m_mStopping = 0.5  --stopping margin
+
+--Control Types
+local controlTypes = {
+    "Control",
+    "ControlLight",
+    "ControlHeavy",
+    "ControlHeavyHover",
+    "ControlCorvette",
+    "ControlHover"
+}
+
+--Engine Types
+local engineTypes = {
+    "SpaceEngine",
+    "PlanetEngine",
+    "CombatEngine",
+    "AtmosCombatEngine"
+}
+
+--------------------------------------------------------------------------------------------
 
 TableData  = TableData or {}
 
---| Cheat Area, Charge Rate, Regen Time Period, Miniwarp Charge/Fuel
---|=======================================================================================--
+--------------------------------------------------------------------------------------------
+-- Cheat Area, Charge Rate, Regen Time Period, Miniwarp Charge/Fuel
+--------------------------------------------------------------------------------------------
 
 if m_cheatySettings then
     table.insert(TableData, {
@@ -80,8 +98,9 @@ if m_cheatySettings then
     })
 end
 
---| Fuel Saving
---|=======================================================================================--
+--------------------------------------------------------------------------------------------
+-- Fuel Saving
+--------------------------------------------------------------------------------------------
 
 if m_launchFuelCost then
     table.insert(TableData, {
@@ -96,21 +115,21 @@ if m_launchFuelCost then
     })
 end
 
---| Mini Warp Speed
---|=======================================================================================--
+--------------------------------------------------------------------------------------------
+-- Mini Warp Speed
+--------------------------------------------------------------------------------------------
 
 if m_warpSpeedMulti then
     table.insert(TableData, {
         MATH_OP = "*",
         REPLACE_TYPE = "ALL",
-        VCT = {
-            {"MiniWarpSpeed", m_warpSMult}, --(30000 x _warpSMult)
-        }
+        VCT = {{"MiniWarpSpeed", m_warpSMult},} --(30000 x _warpSMult)
     })
 end
 
---| Flight Control, Engine Data
---|=======================================================================================--
+--------------------------------------------------------------------------------------------
+-- Flight Control, Engine Data
+--------------------------------------------------------------------------------------------
 
 local function insertEngineData(controlType, engineType)
     local entry = {
@@ -141,9 +160,6 @@ local function insertEngineData(controlType, engineType)
     table.insert(TableData, entry)
 end
 
-local controlTypes = {"Control", "ControlLight", "ControlHeavy", "ControlHeavyHover", "ControlHover"}
-local engineTypes  = {"SpaceEngine", "PlanetEngine", "CombatEngine", "AtmosCombatEngine"}
-
 if m_shipStatsBonus then
     for _, controlType in ipairs(controlTypes) do
         for _, engineType in ipairs(engineTypes) do
@@ -152,8 +168,9 @@ if m_shipStatsBonus then
     end
 end
 
---| Ship Hover
---|=======================================================================================--
+--------------------------------------------------------------------------------------------
+-- Ship Hover
+--------------------------------------------------------------------------------------------
 
 local function insertHoverData(controlType)
     local entry = {
@@ -166,15 +183,13 @@ local function insertHoverData(controlType)
     table.insert(TableData, entry)
 end
 
-local controlTypes = {"Control", "ControlLight", "ControlHeavy", "ControlHeavyHover", "ControlHover"}
-
 if m_shipHoverSpeed then
     for _, controlType in ipairs(controlTypes) do
         insertHoverData(controlType)
     end
 end
 
---|=======================================================================================--
+--------------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -203,9 +218,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     MBIN_FS = [[GCSPACESHIPGLOBALS.GLOBAL.MBIN]],
                     MXML_CT =
                     {
-                        --|=======================================================================================--
-                        --| NoBoost/MiniWarp Settings
-                        --|=======================================================================================--
+                        --------------------------------------------------------------------------------------------
+                        -- NoBoost/MiniWarp Settings
+                        --------------------------------------------------------------------------------------------
                         {
                             MATH_OP = "*",
                             REPLACE_TYPE = "ONCE",
@@ -248,15 +263,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MiniWarpHUDArrowNumMarkersToBeDense",           "5"}, --Original "6"
                             }
                         },
-                        --|=======================================================================================--
-                        --| General Settings
-                        --|=======================================================================================--
+                        --------------------------------------------------------------------------------------------
+                        -- General Settings
+                        --------------------------------------------------------------------------------------------
                         {
                             VCT = {
                                 {"AutoLevelMinAngle",                             "1"}, --Original "5"
+                                {"CorvetteAutopilotSpeed",                      "120"}, --Original "60"
+                                {"CorvetteAutopilotSpeedSpace",                 "480"}, --Original "240"
                                 {"GroundHeightSoft",                              "7"}, --Original "20"
                                 {"GroundHeightSoftForce",                        "10"}, --Original "35"
-                                {"LandingHoverOffset",                            "2"}, --Original "3"
+                                {"LandingHoverOffset",                            "0"}, --Original "3"
                                 {"LandingMaxSpeed",                             "160"}, --Original "80"
                                 {"LandingMaxAngle",                              "60"}, --Original "45"
                                 {"LandingMargin",                               "1.0"}, --Original "1.4"
@@ -265,6 +282,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"BoostNoAsteroidRadius ",                     "9000"}, --Original "1000"
                                 {"DockingRotateSpeed",                    m_padTurnSp}, --Original "1"
                                 {"HoverTakeoffHeight",                           "75"}, --Original "90"
+                                {"HoverSpeedFactor",                             "10"}, --Original "20"
+                                {"HoverLandReachedDistance",                      "4"}, --Original "10"
                                 {"HoverAlignTime",                              "0.2"}, --Original "0.7"
                                 {"HoverMinSpeed",                         m_min_speed}, --Original "1"
                                 {"HoverLandReachedDistance",                      "3"}, --Original "4"
@@ -274,63 +293,53 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"LandHeightThreshold",                          "80"}, --Original "100"
                                 {"LandingPushNoseUpFactor",                     "0.1"}, --Original "0.15"
                                 {"MiniWarpChargeTime",                          "1.1"}, --Original "2"
-                                {"MiniWarpLinesNum",                              "0"}, --Original "4"      --METRIC LINES
+                                {"MiniWarpLinesNum",                              "0"}, --Original "4"   --METRIC LINES
                                 {"MiniWarpFlashIntensity ",                       "0"}, --Original "0.9"
                                 {"MiniWarpFlashDuration ",                        "0"}, --Original "0.9"
                                 {"MiniWarpNoAsteroidRadius ",                  "9000"}, --Original "1500"
                                 {"MiniWarpExitTime ",                          "0.05"}, --Original "0.5"
                                 {"PadTurnSpeed",                          m_padTurnSp}, --Original "1"
-                                {"PostWarpSlowDownTime",                        "1.5"}, --Original "3"
+                                {"PostWarpSlowDownTime",                          "0"}, --Original "3"
                                 {"PulseDriveStationApproachSlowdownRange",     "3500"}, --Original "5000"
                                 {"PulseDriveStationApproachSlowdownRangeMin",   "700"}, --Original "1000"
                                 {"RudderToRollCutoffRotation",                   "90"}, --Original "70"
                                 {"TurnRudderStrength",                    m_rudTurnSt}, --Original "0.4"
                                 {"ShieldLeechMul",                             "0.02"}, --Original "0.07"
                                 {"MaximumDistanceFromShipWhenExiting",            "4"}, --Original "10"
-
-                        --|=======================================================================================--
-                        --| Freighter Approach Settings
-                        --|=======================================================================================--
-
+                        --------------------------------------------------------------------------------------------
+                        -- Freighter Approach Settings
+                        --------------------------------------------------------------------------------------------
                                 {"FreighterApproachDistanceMin",                 "30"}, --Original "50"
                                 {"FreighterApproachDistanceMax",                "150"}, --Original "300"
                                 {"FreighterApproachExtraMargin",                "600"}, --Original "1000"
                                 {"SummonShipAnywhereFwdOffset",                 "-50"}, --Original "-100"
-
-                        --|=======================================================================================--
-                        --| Landing Slope Settings
-                        --|=======================================================================================--
-
+                        --------------------------------------------------------------------------------------------
+                        -- Landing Slope Settings
+                        --------------------------------------------------------------------------------------------
                                 {"LandSlopeMax",                                 "90"}, --Original "22"
                                 {"LandingAreaFloorOffset",                      "0.5"}, --Original "1"
-
-                        --|=======================================================================================--
-                        --| WarpIn Range Settings
-                        --|=======================================================================================--
-
-                                {"MiniWarpMarkerApproachSlowdown",              "1.0"}, --Original "0.5"
-                                {"MiniWarpMarkerAlignSlowdown",                 "1.6"}, --Original "0.8"
-                                {"MiniWarpMarkerAlignSlowdownRange",             "12"}, --Original "6"
-                                {"MiniWarpAlignSlerp",                         "0.16"}, --Original "0.08"
+                        --------------------------------------------------------------------------------------------
+                        -- WarpIn Range Settings
+                        --------------------------------------------------------------------------------------------
+                                {"MiniWarpMarkerApproachSlowdown",              "0.6"}, --Original "0.5"
+                                {"MiniWarpMarkerAlignSlowdown",                 "0.9"}, --Original "0.8"
+                                {"MiniWarpMarkerAlignSlowdownRange",              "5"}, --Original "6"
+                                {"MiniWarpAlignSlerp",                         "0.10"}, --Original "0.08"
                                 {"WarpInRangeNexus",                           "3500"}, --Original "5000"
                                 {"WarpNexusDistance",                         "-6000"}, --Original "-9000"
                                 {"WarpNexusPitch",                                "0"}, --Original "15"
                                 {"WarpNexusRotation",                             "0"}, --Original "15"
-                                {"WarpAnimMinSpeed",                              "4"}, --Original "2"
-                                {"WarpAnimMaxSpeed",                              "6"}, --Original "4"
-
-                        --|=======================================================================================--
-                        --| Low Altitude Animation Trigger (Solar Ships Sails Open/Retract Speed)
-                        --|=======================================================================================--
-
+                                {"WarpAnimMinSpeed",                              "6"}, --Original "2"
+                                {"WarpAnimMaxSpeed",                             "12"}, --Original "4"
+                        --------------------------------------------------------------------------------------------
+                        -- Low Altitude Animation Trigger (Solar Ships Sails Open/Retract Speed)
+                        --------------------------------------------------------------------------------------------
                                 {"LowAltitudeAnimationHeight",                 "1045"}, --Original "1200"
                                 {"LowAltitudeAnimationHysteresisTime",            "1"}, --Original "4"
                                 {"LowAltitudeAnimationTime",                      "2"}, --Original "6"
-
-                        --|=======================================================================================--
-                        --| 3rd Person Wander Changes
-                        --|=======================================================================================--
-
+                        --------------------------------------------------------------------------------------------
+                        -- 3rd Person Wander Changes
+                        --------------------------------------------------------------------------------------------
                                 {"3rdPersonWarpWanderStartTime",               "0.01"}, --Original "6.5"
                                 {"3rdPersonWarpXWander",                       "0.01"}, --Original "6"
                                 {"3rdPersonWarpYWander",                       "0.01"}, --Original "1.5"
@@ -341,15 +350,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"3rdPersonWarpWanderTimeZ",                   "0.01"}, --Original "30"
                             }
                         },
-
-                        --|=======================================================================================--
-                        --| Landing Curves
-                        --|=======================================================================================--
-
-                        {
-                            PKW = {"PitchCorrectHeightCurve",},
-                            VCT = {{"Curve", "Squared"},} --"Squared"
-                        },
+                        --------------------------------------------------------------------------------------------
+                        -- Landing Curves
+                        --------------------------------------------------------------------------------------------
                         {
                             PKW = {"LandingCurve",},
                             VCT = {{"Curve", "SmootherStep"},}  --"SlowOut"

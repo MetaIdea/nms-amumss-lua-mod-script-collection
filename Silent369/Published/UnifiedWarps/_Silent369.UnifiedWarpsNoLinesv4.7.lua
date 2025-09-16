@@ -1,8 +1,8 @@
-local modfilename = "UnifiedWarps"
+local modfilename = "UnifiedWarpsNoLines"
 local lua_author  = "Silent"
-local lua_version = "4.6"
+local lua_version = "4.7"
 local mod_author  = "Silent369"
-local nms_version = "5.74"
+local nms_version = "6.04"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
@@ -12,19 +12,19 @@ Unifies Blackhole/Portal/Ship/Teleporter Warps
 Modifies:
 GCCAMERAGLOBALS.GLOBAL.MBIN
 GCSIMULATIONGLOBALS.GLOBAL.MBIN
-MATERIALS\LIGHT_WARPTUNNEL.MATERIAL.MBIN
-MODELS\EFFECTS\WARP\WARPTUNNEL\ENGGLOWCAPMAT.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPLARGEPORTAL\LIGHTARMSREDMAT.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL\ENTITIES\ANIMATEDLIGHTS.ENTITY.MBIN
 MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN
-MODELS\EFFECTS\WARP\WARPTUNNEL\SCROLLINGWAVES2MAT.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELALT2MAT.MATERIAL.MBIN
+MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELALTMAT.MATERIAL.MBIN
 MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN
-MODELS\EFFECTS\WARP\WARPTUNNEL\WARPBGMAT.MATERIAL.MBIN
 MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN
 
 ]]
 
--- Warp Camera Settings for Freighters / Ships
+-- Warp Camera Settings for Corvettes / Freighters and Ships
 -------------------------------------------------------------------------------------------
-
+local m_WarpSettingsCPos = true
 local m_WarpSettingsFPos = true
 local m_WarpSettingsSPos = true
 
@@ -58,6 +58,33 @@ table.insert(TableData,
             {"OffsetZStartBias",         "15"}, --Original "15"
             {"OffsetZBias",               "0"}, --Original "2"
             {"OffsetZRange",              "1"}, --Original "1.5"
+            {"OffsetYFrequency_1",      "0.1"}, --Original "1.1"
+            {"OffsetYFrequency_2",      "0.1"}, --Original "0.9"
+            {"OffsetYStartBias",          "7"}, --Original "3.5"
+            {"OffsetYBias",            "-0.4"}, --Original "0"
+            {"OffsetYRange",              "2"}, --Original "0.75"
+            {"OffsetXFrequency",        "0.3"}, --Original "0.25"
+            {"OffsetXPhase",              "0"}, --Original "0"
+            {"OffsetXRange",            "1.5"}, --Original "3.5"
+            {"RollRange",               "0.8"}, --Original "1"
+            {"YawnRange",               "300"}, --Original "600"
+            {"Curve",           "SmoothInOut"}, --Original "EaseInOutBack"
+        }
+    })
+end
+
+if m_WarpSettingsCPos then
+table.insert(TableData,
+    {
+        SKW = {"CorvetteWarpSettings", "GcCameraWarpSettings"},
+        REPLACE_TYPE = "ALL",
+        VCT = {
+            {"FocusPointDist",       "100000"}, --Original "100000"
+            {"OffsetZFrequency_1",      "0.1"}, --Original "1.1"
+            {"OffsetZFrequency_2",      "0.2"}, --Original "0.9"
+            {"OffsetZStartBias",         "25"}, --Original "45"
+            {"OffsetZBias",               "1"}, --Original "2"
+            {"OffsetZRange",            "1.5"}, --Original "2.5"
             {"OffsetYFrequency_1",      "0.1"}, --Original "1.1"
             {"OffsetYFrequency_2",      "0.1"}, --Original "0.9"
             {"OffsetYStartBias",          "7"}, --Original "3.5"
@@ -131,7 +158,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    MOD_FILENAME    = modfilename.."v"..lua_version,
+    MOD_FILENAME    = table.concat({modfilename, ".v", lua_version}),
     LUA_AUTHOR      = lua_author,
     MOD_AUTHOR      = mod_author,
     NMS_VERSION     = nms_version,
@@ -262,7 +289,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             SKW = {"Samplers", "TkMaterialSampler", "Name", "gDiffuseMap"},
-                            VCT = {{"Map", "TEXTURES/EFFECTS/WARP/LINES.DDS"},}
+                            VCT = {{"Map", "TEXTURES/EFFECTS/BLACKHOLE/LINES.DDS"},}
                         },
                     }
                 },
@@ -398,10 +425,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     MXML_CT =
                     {
                         {
-                            REPLACE_TYPE = "ALL",
                             VCT =
                             {
-                                {"WarpTunnelScale",       "240"},
+                                {"WarpTunnelScale",       "2048"}, -- stops freighter warp reversing
                                 {"BlackHoleTunnelFile",   "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE.SCENE.MBIN"
                                 {"TeleportTunnelFile",    "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPPORTAL.SCENE.MBIN"
                                 {"PortalTunnelFile",      "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPLARGEPORTAL.SCENE.MBIN""

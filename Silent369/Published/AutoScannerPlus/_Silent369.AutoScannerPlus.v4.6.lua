@@ -1,9 +1,9 @@
 local modfilename = "AutoScannerPlus"
 local lua_author  = "Silent"
-local lua_version = "4.5"
+local lua_version = "4.6"
 local mod_author  = "Silent369"
 local contributor = "Spectrus1702"
-local nms_version = "5.74"
+local nms_version = "6.04"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
@@ -17,10 +17,10 @@ https://github.com/cmkushnir/NMSModBuilder
 
 ------------------------------------------------------------------------------------------
 
-local m_ScanRange = 15000.000000
+local m_ScanRange = 12500.000000
 local m_ScanTime  = 30.000000
 local m_RangeMult = 1.000000
-local m_ShowRange = 15000.000000
+local m_ShowRange = 12500.000000
 local m_Override  = 50.000000
 
 ------------------------------------------------------------------------------------------
@@ -104,15 +104,6 @@ function CreatePhysicsComponent(TriggerVolume, TriggerType)
 					<Property name="LinearDamping" value="0.100000" />
 					<Property name="Gravity" value="20.000000" />
 				</Property>
-				<Property name="NavMeshInclusion" value="TkNavMeshInclusionParams">
-					<Property name="InclusionType" value="TkNavMeshInclusionType">
-						<Property name="NavMeshInclusionType" value="Auto" />
-					</Property>
-					<Property name="InclusionMinSize" value="0.000000" />
-					<Property name="AreaType" value="TkNavMeshAreaType">
-						<Property name="NavMeshAreaType" value="Auto" />
-					</Property>
-				</Property>
 				<Property name="TriggerVolume" value="]]..TriggerVolume..[[" />
 				<Property name="TriggerVolumeType" value="TkVolumeTriggerType">
 					<Property name="VolumeTriggerType" value="]]..TriggerType..[[" />
@@ -164,15 +155,15 @@ local phys_Physics  = CreatePhysicsComponent("false", "Open")
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 AddAbandoned   = CreateScannableComponentData(m_ScanRange, "BUILDING_ABANDONED_L",        m_ScanTime, m_RangeMult, m_ShowRange, "HazardEgg",          "true",  m_Override, true)
 AddBase        = CreateScannableComponentData(m_ScanRange, "UI_RECOVER_BASE_MARKER",      m_ScanTime, m_RangeMult, m_ShowRange, "Shield",            "false",  m_Override, true)
-AddBones       = CreateScannableComponentData(m_ScanRange, "UI_UNDERGROUND_BONES_NAME_L", m_ScanTime, m_RangeMult, m_ShowRange, "BuriedRare",         "true", "0.000000", true)
-AddFossil      = CreateScannableComponentData(m_ScanRange, "UI_UNDERGROUND_BONES_NAME_L", m_ScanTime, m_RangeMult, m_ShowRange, "BuriedFossil",      "false", "0.000000", true)
+AddBones       = CreateScannableComponentData(m_ScanRange, "UI_UNDERGROUND_BONES_NAME_L", m_ScanTime, m_RangeMult, m_ShowRange, "BuriedRare",         "true",  "0.000000", true)
+AddFossil      = CreateScannableComponentData(m_ScanRange, "UI_UNDERGROUND_BONES_NAME_L", m_ScanTime, m_RangeMult, m_ShowRange, "BuriedFossil",      "false",  "0.000000", true)
 AddDepot       = CreateScannableComponentData(m_ScanRange, "SIGNAL_DEPOT",                m_ScanTime, m_RangeMult, m_ShowRange, "Drone",              "true",  m_Override, true)
 AddDistress    = CreateScannableComponentData(m_ScanRange, "BUILDING_DISTRESSSIGNAL_L",   m_ScanTime, m_RangeMult, m_ShowRange, "HazardPlant",       "false",  m_Override, true)
 AddFactory     = CreateScannableComponentData(m_ScanRange, "BUILDING_FACTORY_L",          m_ScanTime, m_RangeMult, m_ShowRange, "Drone",              "true",  m_Override, true)
 AddFreighter   = CreateScannableComponentData(m_ScanRange, "BUILDING_FREIGHTER_ALT",      m_ScanTime, m_RangeMult, m_ShowRange, "HazardPlant",       "false",  m_Override, true)
 AddGrave       = CreateScannableComponentData(m_ScanRange, "BUILDING_GRAVEINCAVE",        m_ScanTime, m_RangeMult, m_ShowRange, "Grave",             "false",  m_Override, true)
 AddHarvester   = CreateScannableComponentData(m_ScanRange, "BUILD_HARVESTER_L",           m_ScanTime, m_RangeMult, m_ShowRange, "HarvestPlant",      "false",  m_Override, true)
-AddMessage     = CreateScannableComponentData(m_ScanRange, "BLD_MESSAGEMODULE_NAME_L",    m_ScanTime, m_RangeMult, m_ShowRange, "Grave",             "false",  m_Override, true)
+--AddMessage     = CreateScannableComponentData(m_ScanRange, "BLD_MESSAGEMODULE_NAME_L",    m_ScanTime, m_RangeMult, m_ShowRange, "Grave",             "false",  m_Override, true)
 AddMonolith    = CreateScannableComponentData(m_ScanRange, "BUILDING_MONOLITH_L",         m_ScanTime, m_RangeMult, m_ShowRange, "Artifact",          "false",  m_Override, true)
 AddObserver    = CreateScannableComponentData(m_ScanRange, "BUILDING_OBSERVATORY_L",      m_ScanTime, m_RangeMult, m_ShowRange, "SignalBooster",      "true",  m_Override, true)
 AddOutpost     = CreateScannableComponentData(m_ScanRange, "BUILDING_OUTPOST_L",          m_ScanTime, m_RangeMult, m_ShowRange, "FreighterDoor",      "true",  m_Override, true)
@@ -187,7 +178,7 @@ AddSentinelD   = CreateScannableComponentData(m_ScanRange, "UI_MP_HIVE_LABEL",  
 AddStoryGlitch = CreateScannableComponentData(m_ScanRange, "Alien Anomaly Detected",      m_ScanTime, m_RangeMult, m_ShowRange, "Artifact",          "false",  m_Override, true)
 AddMinorSettle = CreateScannableComponentData(m_ScanRange, "BUILDING_SHOP_L",             m_ScanTime, m_RangeMult, m_ShowRange, "Hazard",            "false",  m_Override, true)
 AddTerminal    = CreateScannableComponentData(m_ScanRange, "SIGNAL_TERMINAL",             m_ScanTime, m_RangeMult, m_ShowRange, "FreighterTerminal", "false",  m_Override, true)
-AddRunawayMold = CreateScannableComponentData(m_ScanRange, "UI_WEIRD_BALL_NAME_L",        m_ScanTime, m_RangeMult, m_ShowRange, "Rare3",              "true", "0.000000", false)
+AddRunawayMold = CreateScannableComponentData(m_ScanRange, "UI_WEIRD_BALL_NAME_L",        m_ScanTime, m_RangeMult, m_ShowRange, "Rare3",              "true",  "0.000000", false)
 AddSentinCrash = CreateScannableComponentData(m_ScanRange, "UI_SENTINEL_CRASH_MARKER",    m_ScanTime, m_RangeMult, m_ShowRange, "FriendlyDrone",      "true",  m_Override, true)
 AddDropPod     = CreateScannableComponentData(m_ScanRange, "BUILDING_DAMAGEDMACHINE_L",   m_ScanTime, m_RangeMult, m_ShowRange, "Tech",              "false",  m_Override, true)
 AddPillar      = CreateScannableComponentData(m_ScanRange, "UI_MINIHIVE_CORRUPT_NAME",    m_ScanTime, m_RangeMult, m_ShowRange, "CorruptedMachine",  "false",  m_Override, true)
@@ -292,7 +283,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                      --HARVESTER
                      ----------------------------------------------------------------------------------------------
                 {
-                    MBIN_FS = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\HARVESTER\HARVESTERSCIENTIFIC\ENTITIES\HARVESTERINTERACTION.ENTITY.MBIN]],
+                    MBIN_FS = {
+                      [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\HARVESTER\ENTITIES\RESOURCEHARVESTER.ENTITY.MBIN]],
+                      [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\HARVESTER\HARVESTERSCIENTIFIC\ENTITIES\HARVESTERINTERACTION.ENTITY.MBIN]],
+                      [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\HARVESTER\HARVESTERTRADER\ENTITIES\HARVESTERINTERACTION.ENTITY.MBIN]],
+                      [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\HARVESTER\HARVESTERWARRIOR\ENTITIES\HARVESTERINTERACTION.ENTITY.MBIN]]
+                    },
                     MXML_CT =
                     {
                         {
@@ -305,17 +301,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ----------------------------------------------------------------------------------------------
                     --MESSAGE MODULE
                     ----------------------------------------------------------------------------------------------
-                {
-                    MBIN_FS = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\MESSAGEMODULE\ENTITIES\MESSAGEMODULE.ENTITY.MBIN]],
-                    MXML_CT =
-                    {
-                        {
-                            SKW = {"Components", "TkPhysicsComponentData"},
-                            ADD_OPTION = "ADDbeforeSECTION",
-                            ADD = AddMessage,
-                        },
-                    },
-                },
+                --{
+                --    MBIN_FS = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\MESSAGEMODULE\ENTITIES\MESSAGEMODULE.ENTITY.MBIN]],
+                --    MXML_CT =
+                --    {
+                --        {
+                --            SKW = {"Components", "TkPhysicsComponentData"},
+                --            ADD_OPTION = "ADDbeforeSECTION",
+                --            ADD = AddMessage,
+                --        },
+                --    },
+                --},
                     ----------------------------------------------------------------------------------------------
                     --STORY GLITCH (ANOMOLY RINGS)
                     ----------------------------------------------------------------------------------------------
@@ -377,29 +373,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ----------------------------------------------------------------------------------------------
                 {
                     MBIN_FS = {
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SETTLEMENT\TOWER_STONE_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN]],
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SETTLEMENT\MONUMENT\MONUMENT0_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN]]
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SETTLEMENT\MONUMENT\MONUMENT0_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SETTLEMENT\MAYOR_TERMINAL_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN]]
                     },
                     MXML_CT =
                     {
                         {
-                            SKW = {"Components", "TkPhysicsComponentData"},
-                            ADD_OPTION = "ADDbeforeSECTION",
-                            ADD = AddPSettlement,
-                        },
-                    }
-                },
-                    ----------------------------------------------------------------------------------------------
-                    --MONUMENTS
-                    ----------------------------------------------------------------------------------------------
-                {
-                    MBIN_FS = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONUMENTS\MONUMENT\ENTITIES\MONUMENT.ENTITY.MBIN]],
-                    MXML_CT =
-                    {
-                        {
-                            SKW = {"Components", "TkPhysicsComponentData"},
+                            SKW = {"Components", "TkStaticPhysicsComponentData"},
                             ADD_OPTION = "ADDafterSECTION",
-                            ADD = AddMinorSettle,
+                            ADD = AddPSettlement,
                         },
                     }
                 },
@@ -523,11 +505,36 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --PORTAL SITE (DOES NOT WORK, LOOKING FOR OTHER METHODS!)
                     ----------------------------------------------------------------------------------------------
                 {
-                    MBIN_FS = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\PORTAL.ENTITY.MBIN]],
+                    MBIN_FS = {
+                      [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\PORTAL.ENTITY.MBIN]],
+                    },
                     MXML_CT =
                     {
                         {
-                            SKW = {"Components", "TkSketchComponentData"},
+                            SKW = {"Components", "GcInteractionComponentData"},
+                            EXML_FLAGS = "UPDATESECTION",
+                            ADD_OPTION = "ADDafterSECTION",
+                            ADD = AddPortal,
+                        },
+                    }
+                },
+                     ----------------------------------------------------------------------------------------------
+                    --MONUMENTS
+                    ----------------------------------------------------------------------------------------------
+                {
+                    MBIN_FS = {
+                        ---[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONUMENTS\MONUMENT\ENTITIES\MONUMENT.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONUMENTS\STARGATEMAIN\ENTITIES\MAINMONO.ENTITY.MBIN]]
+                    },
+                    MXML_CT =
+                    {
+                        {
+                            SKW = {"Components", "TkAudioComponentData"},
+                            ADD_OPTION = "ADDafterSECTION",
+                            ADD = phys_Physics,
+                        },
+                        {
+                            SKW = {"Components", "TkPhysicsComponentData"},
                             ADD_OPTION = "ADDafterSECTION",
                             ADD = AddPortal,
                         },

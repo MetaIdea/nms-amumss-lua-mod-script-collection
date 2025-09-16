@@ -1,47 +1,39 @@
 local modfilename = "FireFliesRemoved"
 local lua_author  = "Silent"
-local lua_version = "4.4"
+local lua_version = "4.6"
 local mod_author  = "Silent369"
-local nms_version = "5.74"
+local nms_version = "6.04"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
 
-Resized/Reduced 'heavyair' firefly particles in all biomes.
+Removes 'heavyair' firefly particles in all biomes.
 
-This also has an impact on ship flight through the atmosphere,
-facilitating smoother flight overall, and has an additional
-benefit of further reducing the 'fireflies' that are ever
-present within the games different biomes.
-
-This mod also reduces the amount of fog present within game.
+Optionally disables the HeavyAir mechanism which is on by
+default. If set to 'false' effectively removes all floating
+particles.
 
 ]]
 
--- Variable Configuration
 ------------------------------------------------------------------------------
-local fog_fogstrength       = 0.1 -- Fog Strength
-local fog_fogmax            = 0.1 -- Fog Max
-local fog_fogcolourstrength = 0.1 -- Fog Colour Strength
-local fog_fogcolourmax      = 0.1 -- Fog Colour Max
-local fog_heightfogstrength = 0.1 -- Height Fog Strength
-local fog_fadeoutstrength   = 0.1 -- Height Fog Fade Out Strength
-local fog_heightfogoffset   = 0.1 -- Height Fog Offset
-local fog_heightfogmax      = 0.1 -- Height Fog Max
-local fog_fogheight         = 0.1 -- Fog Height
+local Use_HeavyAir = false
 ------------------------------------------------------------------------------
-local heavy_thick   = 0.3 -- Modifies heavyair Thickness
-local heavy_speed   = 0.1 -- Modifies heavyair Speed
-local heavy_alph1   = 1.0 -- Modifies heavyair Alpha1
-local heavy_alph2   = 1.0 -- Modifies heavyair Alpha2
+local heavy_thick   = 0.3  -- Modifies heavyair Thickness.
+local heavy_speed   = 0.1  -- Modifies heavyair Speed.
+local heavy_alpha1  = 0.8  -- Modifies heavyair Alpha 1.
+local heavy_alpha2  = 0.8  -- Modifies heavyair Alpha 2.
 ------------------------------------------------------------------------------
-local heavy_partcnt = 0 -- Modifies the number of heavyair particles
-local heavy_speed_v = 0 -- Modifies the visible speed of particles
-local heavy_radi_xy = 0 -- Modifies the particles radius / radiusY
-local heavy_plife_t = 0 -- Modifies particles Min / Max lifetime
-local heavy_fades_m = 0 -- Modifies fade speed of rendered particles
-local heavy_scale_m = 0 -- Modifies the x,y,z particles scale ranges
-local heavy_rotat_r = 0 -- Modifies the rotational range of particles
+local heavy_partcnt = 0.0  -- Modifies the number of heavyair particles
+local heavy_speed_v = 0.0  -- Modifies the visible speed of particles
+local heavy_radi_xy = 0.0  -- Modifies the particles radius / radiusY
+local heavy_plife_t = 0.0  -- Modifies particles Min / Max lifetime
+local heavy_fades_m = 0.0  -- Modifies fade speed of rendered particles
+local heavy_scale_m = 0.0  -- Modifies the x,y,z particles scale ranges
+local heavy_rotat_r = 0.0  -- Modifies the rotational range of particles
+------------------------------------------------------------------------------
+local fogstrength   = 0.0  -- Modifies fogstrength
+local fogmax        = 0.0  -- Modifies fogmax
+local fogheight     = 0.0  -- Modifies fogheight
 ------------------------------------------------------------------------------
 
 local cfgScale = {
@@ -49,7 +41,7 @@ local cfgScale = {
 }
 
 local cfgRotation = {
-    ["Rotation Speed Range"]  = {heavy_rotat_r}
+    ["Rotation Speed Range"] = {heavy_rotat_r}
 }
 
 local cfgParticles = {
@@ -62,33 +54,36 @@ local cfgParticles = {
     ["Fade Time"]             = {heavy_fades_m}
 }
 
-local cfgFogSettings = {
-    FogStrength               = {fog_fogstrength},
-    FogMax                    = {fog_fogmax},
-    FogColourStrength         = {fog_fogcolourstrength},
-    FogColourMax              = {fog_fogcolourmax},
-    HeightFogStrength         = {fog_heightfogstrength},
-    HeightFogFadeOutStrength  = {fog_fadeoutstrength},
-    HeightFogOffset           = {fog_heightfogoffset},
-    HeightFogMax              = {fog_heightfogmax},
-    FogHeight                 = {fog_fogheight}
+local cfgFog = {
+    FogStrength = {fogstrength},
+    FogMax      = {fogmax},
+    FogHeight   = {fogheight}
 }
 
-local cfgHeavyAir1 = {
+local cfgColours = {
+    ["Colour 1"] = {0.80, 0.75, 0.55},
+    ["Colour 2"] = {0.75, 0.55, 0.35},
+}
+
+local cfgToolKit = {
+    UseHeavyAir = {Use_HeavyAir},
+}
+
+local cfgHeavyAir = {
     Thickness = {heavy_thick},
     Speed     = {heavy_speed},
-    Alpha1    = {heavy_alph1},
-    Alpha2    = {heavy_alph2}
-}
-
-local cfgHeavyAir2 = {
-    ReduceThicknessWithCloudCoverage = {true}
+    Alpha1    = {heavy_alpha1},
+    Alpha2    = {heavy_alpha2}
 }
 
 -- Configurations
 ------------------------------------------------------------------------------
 
-local heavyair_paths = {
+local cfgDebugoptions = {
+  [[GCDEBUGOPTIONS.GLOBAL.MBIN]]
+}
+
+local cfgHeavyairPaths = {
   [[MODELS\EFFECTS\HEAVYAIR\ALIEN\ALIEN.HEAVYAIR.MBIN]],
   [[MODELS\EFFECTS\HEAVYAIR\ALIEN\ALIEN2.HEAVYAIR.MBIN]],
   [[MODELS\EFFECTS\HEAVYAIR\ALPINE\ALPINE.HEAVYAIR.MBIN]],
@@ -156,7 +151,7 @@ local heavyair_paths = {
   [[MODELS\EFFECTS\HEAVYAIR\WATER\WATER.HEAVYAIR.MBIN]]
 }
 
-local weather_paths = {
+local cfgWeatherPaths = {
   [[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\BLUEWEATHER.MBIN]],
   [[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\BUBBLEWEATHER.MBIN]],
   [[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\CLEARCOLD.MBIN]],
@@ -179,16 +174,37 @@ local weather_paths = {
 }
 
 -- Initialise Modifications
+
+----------------------------------------------------------------------------------------
+local all_modifications = {}
 ----------------------------------------------------------------------------------------
 
-local all_modifications = {}
+-- Lod Override
+----------------------------------------------------------------------------------------
+
+for _, filepath in ipairs({cfgDebugoptions}) do
+    local modifications = {}
+    for property, value in pairs(cfgToolKit) do
+        table.insert(modifications, {
+            SKW = {"ToolkitGlobals", "TkGlobals"},
+            VCT = {{property, value[1]},}
+        })
+    end
+    table.insert(all_modifications, {
+        MBIN_CT = {
+            {
+                MBIN_FS = filepath,
+                MXML_CT = modifications
+            }
+        }
+    })
+end
 
 -- HeavyAir Particles Modifications
 ----------------------------------------------------------------------------------------
 
-for _, filepath in ipairs(heavyair_paths) do
+for _, filepath in ipairs(cfgHeavyairPaths) do
     local modifications = {}
-
     for property, value in pairs(cfgScale) do
         table.insert(modifications, {
             PKW = {property},
@@ -201,7 +217,6 @@ for _, filepath in ipairs(heavyair_paths) do
             }
         })
     end
-
     for property, value in pairs(cfgRotation) do
         table.insert(modifications, {
             PKW = {property},
@@ -212,7 +227,6 @@ for _, filepath in ipairs(heavyair_paths) do
             }
         })
     end
-
     for property, value in pairs(cfgParticles) do
         table.insert(modifications, {
             MATH_OP = "*",
@@ -223,7 +237,19 @@ for _, filepath in ipairs(heavyair_paths) do
             }
         })
     end
-
+    for property, value in pairs(cfgColours) do
+        table.insert(modifications, {
+            PKW = {property},
+            MATH_OP = "*",
+            REPLACE_TYPE = "ALL",
+            VCT = {
+                {"R", value[1]},
+                {"G", value[2]},
+                {"B", value[3]},
+                {"A", 1.000000},
+            }
+        })
+    end
     table.insert(all_modifications, {
         MBIN_CT = {
             {
@@ -234,42 +260,29 @@ for _, filepath in ipairs(heavyair_paths) do
     })
 end
 
--- Weather Modifications
+
+-- HeavyAir Weather Modifications
 ----------------------------------------------------------------------------------------
 
-for _, filepath in ipairs({weather_paths}) do
+for _, filepath in ipairs({cfgWeatherPaths}) do
     local modifications = {}
-
-    for property, value in pairs(cfgFogSettings) do
+    for property, value in pairs(cfgHeavyAir) do
         table.insert(modifications, {
+            SKW = {"Settings", "GcHeavyAirSettingValues"},
+            SECTION_UP = 1,
+            REPLACE_TYPE = "ALL",
+            MATH_OP = "*",
+            VCT = {{property, value[1]},}
+        })
+    end
+    for property, value in pairs(cfgFog) do
+        table.insert(modifications, {
+            SKW = {"Fog", "GcFogProperties"},
             MATH_OP = "*",
             REPLACE_TYPE = "ALL",
             VCT = {{property, value[1]},}
         })
     end
-
-    for property, value in pairs(cfgHeavyAir1) do
-        table.insert(modifications, {
-            SKW = {"HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
-            MATH_OP = "*",
-            REPLACE_TYPE = "ALL",
-            VCT = {{property, value[1]},}
-        })
-    end
-
-    for property, value in pairs(cfgHeavyAir2) do
-        table.insert(modifications, {
-            SKW = {"HeavyAir", "GcHeavyAirSetting", "Settings", "GcHeavyAirSettingValues"},
-            REPLACE_TYPE = "ALL",
-            VCT = {{property, value[1]},}
-        })
-    end
-
-    table.insert(modifications, {
-        REPLACE_TYPE = "ALL",
-        VCT = {{"CloudRatio", 0.75},}
-    })
-
     table.insert(all_modifications, {
         MBIN_CT = {
             {
@@ -282,6 +295,7 @@ end
 
 -- Mod Definition Container
 ----------------------------------------------------------------------------------------
+
 NMS_MOD_DEFINITION_CONTAINER =
 {
     MOD_FILENAME    = table.concat({modfilename, ".v", lua_version}),
