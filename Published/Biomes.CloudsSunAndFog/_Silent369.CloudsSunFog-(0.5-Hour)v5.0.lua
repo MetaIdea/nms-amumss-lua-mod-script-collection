@@ -1,8 +1,8 @@
-local modfilename = "CloudsSunFog+LOD-(1.0-Hour)"
+local modfilename = "CloudsSunAndFog-(0.5-Hour)"
 local lua_author  = "Silent"
-local lua_version = "4.9"
+local lua_version = "5.0"
 local mod_author  = "Silent369"
-local nms_version = "5.74"
+local nms_version = "6.04"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
@@ -31,26 +31,22 @@ Sun Properties and Planet Fog Adjustments. Lens Dirt Removal and Disables Bloom 
 --96 Hr = 345600
 --192Hr = 691200
 
-local m_Day_Length = 3600 --Original "1800"
+local m_Day_Length = 1800 --Original "1800"
 
 --Cloud Anim Speed
-local m_Anim_Scale = 10    --Original "50"
+local m_Anim_Scale = 120  --Original "50"
 
 ----------------------------------------------------------------------------------------------------
 --------------------------- SHOULD LEAVE THESE VALUES ALONE - PROBABLY!  ---------------------------
 ----------------------------------------------------------------------------------------------------
 
 --Terrain
-local m_UncachedTerrain         = true  --Original "False"
-local m_VariableUpdates         = false --Original "True"
+local m_UncachedTerrain         = true  --Original "false"
+local m_VariableUpdates         = false --Original "true"
 
 --Sun Brightness
-local m_LUTDFMult               = 0    --Original "0"
+local m_LUTDFMult               = 1    --Original "0"
 local m_Intensity               = 4.2  --Original "3"
-local m_MaxSpaceFogStrength     = 0.2  --Original "0.5"
-local m_ReflectionStrength      = 0.2  --Original "0.3"
-local m_DOFFarStrengthWater     = 0    --Original "0"
-local m_WeatherFilterSTCTime    = 5    --Original "10"
 
 --Storm Settings
 local m_StormWarningTime        = 15   --Original "25"
@@ -73,21 +69,14 @@ local m_ExtremeAudioLevel       = 0.2  --Original "0.3"
 local m_StormAudioLevel         = 0.4  --Original "0.5"
 
 --Cloud Ratio
-local m_CloudRatio              = 0.59  --Original "0.5-0.6"
-local m_CloudRatioPrime         = 0.69  --Original "0.5-0.6"
+local m_CloudRatio              = 0.55  --Original "0.5-0.6"
+local m_CloudRatioPrime         = 0.65  --Original "0.5-0.6"
 
 --Cloud Settings
-local m_LightScalar             = 5    --Original "5"
-local m_AmbientScalar           = 1.72 --Original "1.721854"
 local m_SunRayLength            = 80   --Original "50"
-local m_Density                 = 10   --Original "1"
-local m_AmbientDensity          = 5    --Original "0.1"
-local m_ForwardScatteringG      = 0.75 --Original "0.9"
-local m_BackwardScatteringG     = 0.15 --Original "0.3"
-local m_BaseScale               = 1    --Original "1"
+local m_AmbientDensity          = 1    --Original "0.1"
 local m_SampleScalar            = 3    --Original "5"
-local m_SampleThreshold         = 0.3  --Original "0.25"
-local m_CloudBottomFade         = 1    --Original "1"
+local m_SampleThreshold         = 0.2  --Original "0.25"
 local m_DetailScale             = 7    --Original "6"
 local m_ErosionEdgeSize         = 0.75 --Original "0.5"
 local m_CloudDistortion         = 79   --Original "50"
@@ -98,22 +87,6 @@ local m_MaxIterations           = 128  --Original "128"
 local m_HorizonFadeStartAlpha   = -0.3 --Original "0"
 local m_HorizonFadeScalar       = 0.2  --Original "0.25"
 local m_HorizonDistance         = 23165 --Original "11165"
-
---Cloud Heights
-local m_CloudHeightMin          = 2400  --Original "650"
-local m_CloudHeightMax          = 2500  --Original "900"
-local m_SkyAtmosphereHeight     = 7400 --Original "6000"
-local m_StratosphereHeight      = 5400 --Original "4000"
-
-local m_CloudHeightMinP         = 3400 --Original "2400"
-local m_CloudHeightMaxP         = 3500 --Original "2500"
-local m_SkyAtmosphereHeightP    = 8400 --Original "7400"
-local m_StratosphereHeightP     = 6400 --Original "5400"
-
-local m_CloudHeightMinG         = 2400 --Original "1500"
-local m_CloudHeightMaxG         = 2500 --Original "1500"
-local m_SkyAtmosphereHeightG    = 7400 --Original "7200"
-local m_StratosphereHeightG     = 5400 --Original "5200"
 
 --Curve types that make sense with cloud animations
 --Linear
@@ -190,16 +163,6 @@ local m_PSF_HeightFogFOStrength = 0.15 --Original "0.3"
 local m_PSF_HeightFogMax        = 0.4  --Original "0.6"
 local m_PSF_FogHeight           = 2    --Original "4"
 
---Sun Clamp
-local m_SunClmHMin              = 300  --Original "300"
-local m_SunClmHMax              = 390  --Original "390"
-local m_SunClampAngle           = 55   --Original "55"
-local m_SunFactorMin            = 0.4  --Original "0.4"
-
---Star Chance
-local m_BinaryStarChance        = 0.2  --Original "0.2"
-local m_TernaryStarChance       = 0.05 --Original "0.05"
-
 -----------------------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -225,27 +188,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                             VCT =
                             {
                                 {[[    <RenderTarget id="CLOUDSHADOWS"       depthBuf="false"        numColBufs="1" format="RED8"   applyDrs="true" scale="0.5" allowDcc="false" />]], [[    <RenderTarget id="CLOUDSHADOWS"       depthBuf="false"        numColBufs="1" format="RED8"   applyDrs="true" scale="1.0" allowDcc="false" />]]},
-                                {[[    <RenderTarget id="CLOUDS_MRT"         depthBuf="false"        numColBufs="2" format0="RGBA16F" format1="R32FG32F" scale="0.5" applyDrs="true" allowDcc="NEXT" shareTarget0="CLOUDS_COLOUR" shareTarget1="CLOUDS_DEPTH" />]], [[    <RenderTarget id="CLOUDS_MRT"         depthBuf="false"        numColBufs="2" format0="RGBA16F" format1="R32FG32F" scale="1.0" applyDrs="true" allowDcc="NEXT" shareTarget0="CLOUDS_COLOUR" shareTarget1="CLOUDS_DEPTH" />]]},
-                                {[[    <RenderTarget id="CLOUDS_COLOUR"      depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="0.5" applyDrs="true" allowDcc="NEXT" />]], [[    <RenderTarget id="CLOUDS_COLOUR"      depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="1.0" applyDrs="true" allowDcc="NEXT" />]]},
-                                {[[    <RenderTarget id="CLOUDS_DEPTH"       depthBuf="false"        numColBufs="1" format="R32FG32F"  scale="0.5" applyDrs="true" allowDcc="NEXT" />]], [[    <RenderTarget id="CLOUDS_DEPTH"       depthBuf="false"        numColBufs="1" format="R32FG32F"  scale="1.0" applyDrs="true" allowDcc="NEXT" />]]},
-                                {[[    <RenderTarget id="CLOUDS_HISTORY"     depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="0.5" applyDrs="true" allowDcc="NEXT" />]], [[    <RenderTarget id="CLOUDS_HISTORY"     depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="1.0" applyDrs="true" allowDcc="NEXT" />]]},
-                                {[[    <RenderTarget id="CLOUDS_FINAL"       depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="0.5" applyDrs="true" allowDcc="NEXT" />]], [[    <RenderTarget id="CLOUDS_FINAL"       depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="1.0" applyDrs="true" allowDcc="NEXT" />]]},
+                                {[[    <RenderTarget id="CLOUDS_MRT"         titles="legacy"   depthBuf="false"        numColBufs="2" format0="RGBA16F" format1="R32FG32F" scale="0.5" applyDrs="true" allowDcc="NEXT" shareTarget0="CLOUDS_COLOUR" shareTarget1="CLOUDS_DEPTH" />]], [[    <RenderTarget id="CLOUDS_MRT"         titles="legacy"   depthBuf="false"        numColBufs="2" format0="RGBA16F" format1="R32FG32F" scale="1.0" applyDrs="true" allowDcc="NEXT" shareTarget0="CLOUDS_COLOUR" shareTarget1="CLOUDS_DEPTH" />]]},
+                                {[[    <RenderTarget id="CLOUDS_COLOUR"      titles="legacy"   depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="0.5" applyDrs="true" allowDcc="NEXT" shareTarget0="RGBA16F_HR_BUF_0" />]], [[    <RenderTarget id="CLOUDS_COLOUR"      titles="legacy"   depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="1.0" applyDrs="true" allowDcc="NEXT" shareTarget0="RGBA16F_HR_BUF_0" />]]},
+                                {[[    <RenderTarget id="CLOUDS_DEPTH"       titles="legacy"   depthBuf="false"        numColBufs="1" format="R32FG32F"  scale="0.5" applyDrs="true" allowDcc="NEXT" />]], [[    <RenderTarget id="CLOUDS_DEPTH"       titles="legacy"   depthBuf="false"        numColBufs="1" format="R32FG32F"  scale="1.0" applyDrs="true" allowDcc="NEXT" />]]},
+                                {[[    <RenderTarget id="CLOUDS_HISTORY"     titles="legacy"   depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="0.5" applyDrs="true" allowDcc="NEXT" />]], [[    <RenderTarget id="CLOUDS_HISTORY"     titles="legacy"   depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="1.0" applyDrs="true" allowDcc="NEXT" />]]},
+                                {[[    <RenderTarget id="CLOUDS_FINAL"       titles="legacy"   depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="0.5" applyDrs="true" allowDcc="NEXT" />]], [[    <RenderTarget id="CLOUDS_FINAL"       titles="legacy"   depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="1.0" applyDrs="true" allowDcc="NEXT" />]]},
                             }
                         },
                         {
                             REPLACE_TYPE = "RAW",
                             VCT =
                             {
-                                {"<Stage id=\"LensSun\">", "<Stage id=\"LensSun\" enabled=\"false\">"},
                                 {"<Stage id=\"NewBloomBright\" enabled=\"true\">", "<Stage id=\"NewBloomBright\" enabled=\"false\">"},
-                                {"<Stage id=\"Effects\" enabled=\"true\">", "<Stage id=\"Effects\" enabled=\"false\">"},
                                 {"<Stage id=\"NewBloomPre\" enabled=\"true\">", "<Stage id=\"NewBloomPre\" enabled=\"false\">"},
                                 {"<Stage id=\"NewBloomPost\" enabled=\"true\">", "<Stage id=\"NewBloomPost\" enabled=\"false\">"},
                                 {"<Stage id=\"NewBloomResolve\" enabled=\"true\">", "<Stage id=\"NewBloomResolve\" enabled=\"false\">"},
                                 {"<Stage id=\"NewBloomExposure\" enabled=\"true\">", "<Stage id=\"NewBloomExposure\" enabled=\"false\">"},
                                 {"<Stage id=\"NoBloom\" enabled=\"false\">", "<Stage id=\"NoBloom\" enabled=\"true\">"},
-                                {"<Stage id=\"LensFlare\">", "<Stage id=\"LensFlare\" enabled=\"false\">"},
-                                {"<Stage id=\"LensFlareAnamorphic\">", "<Stage id=\"LensFlareAnamorphic\" enabled=\"false\">"},
+                                {"<Stage id=\"SpeedLines\">", "<Stage id=\"SpeedLines\" enabled=\"false\">"},
                             }
                         }
                     }
@@ -270,12 +230,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             REPLACE_TYPE = "RAW",
                             VCT =
                             {
-                                {"<Stage id=\"LensFlare\">", "<Stage id=\"LensFlare\" enabled=\"false\">"},
                                 {"<Stage id=\"NewBloomBright\" enabled=\"true\">", "<Stage id=\"NewBloomBright\" enabled=\"false\">"},
                                 {"<Stage id=\"NewBloom\" enabled=\"true\">", "<Stage id=\"NewBloom\" enabled=\"false\">"},
                                 {"<Stage id=\"NewBloomResolve\" enabled=\"true\">", "<Stage id=\"NewBloomResolve\" enabled=\"false\">"},
                                 {"<Stage id=\"NewBloomExposure\" enabled=\"true\">", "<Stage id=\"NewBloomExposure\" enabled=\"false\">"},
                                 {"<Stage id=\"NoBloom\" enabled=\"false\">", "<Stage id=\"NoBloom\" enabled=\"true\">"},
+                                {"<Stage id=\"SpeedLines\">", "<Stage id=\"SpeedLines\" enabled=\"false\">"},
                             }
                         }
                     }
@@ -291,9 +251,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             VCT = {
                                 {"LUTDistanceFlightMultiplier",   m_LUTDFMult}, --Original "0"
                                 {"Sun Light Intensity",          m_Intensity }, --Original "3"
-                                {"MaxSpaceFogStrength", m_MaxSpaceFogStrength}, --Original "0.5"
-                                {"ReflectionStrength",   m_ReflectionStrength}, --Original "0.3"
-                                {"DOFFarStrengthWater", m_DOFFarStrengthWater}, --Original "0"
 
                                 {"ShadowLength",         "800"}, --Original "400"
                                 {"ShadowLengthStation", "2000"}, --Original "1300"
@@ -311,8 +268,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 --LOD Value Changes
                                 ----------------------------------------------------------------------------
 
-                                {"ForceUncachedTerrain", m_UncachedTerrain}, --Original "False"
-                                {"EnableVariableUpdate", m_VariableUpdates}, --Original "True"
+                                {"ForceUncachedTerrain", m_UncachedTerrain}, --Original "false"
+                                {"EnableVariableUpdate", m_VariableUpdates}, --Original "true"
                             }
                         },
 
@@ -323,10 +280,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             PKW = {"LightShaftProperties",},
                             VCT = {
-                                {"LightShaft Scattering", "2E-06"}, --Original "0.55"
-                                {"LightShaft Strength",     "0.4"}, --Original "2"
+                                {"LightShaft Scattering",  "0.35"}, --Original "0.55"
+                                {"LightShaft Strength",     "0.8"}, --Original "2"
                                 {"LightShaft Bottom",     "0.002"}, --Original "0"
-                                {"LightShaft Top",          "0.1"}, --Original "0.75"
+                                {"LightShaft Top",         "0.35"}, --Original "0.75"
                             }
                         },
                         {
@@ -335,7 +292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"R",  "0.1"}, --Original "0.263"
                                 {"G",  "0.1"}, --Original "0.263"
                                 {"B", "0.13"}, --Original "0.263"
-                                {"A",  "0.5"}, --Original "1"
+                                {"A", "0.75"}, --Original "1"
                             }
                         },
                         {
@@ -344,7 +301,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"R",  "0.1"}, --Original "0.387"
                                 {"G",  "0.1"}, --Original "0.341"
                                 {"B", "0.13"}, --Original "0.253"
-                                {"A",  "0.5"}, --Original "1"
+                                {"A", "0.75"}, --Original "1"
                             }
                         },
                         ----------------------------------------------------------------------------
@@ -353,10 +310,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             PKW = {"StormLightShaftProperties",},
                             VCT = {
-                                {"LightShaft Scattering", "4E-06"}, --Original "0.55"
-                                {"LightShaft Strength",     "0.4"}, --Original "25"
+                                {"LightShaft Scattering",  "0.35"}, --Original "0.55"
+                                {"LightShaft Strength",    "10.0"}, --Original "25"
                                 {"LightShaft Bottom",     "0.002"}, --Original "0"
-                                {"LightShaft Top",          "0.1"}, --Original "0.25"
+                                {"LightShaft Top",         "0.15"}, --Original "0.25"
                             }
                         },
                         {
@@ -365,7 +322,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"R",  "0.1"}, --Original "0.531"
                                 {"G",  "0.1"}, --Original "0.493"
                                 {"B", "0.13"}, --Original "0.443"
-                                {"A",  "0.5"}, --Original "1"
+                                {"A", "0.75"}, --Original "1"
                             }
                         },
                         {
@@ -374,7 +331,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"R",  "0.1"}, --Original "0.04"
                                 {"G",  "0.1"}, --Original "0.034"
                                 {"B", "0.13"}, --Original "0.03"
-                                {"A",  "0.5"}, --Original "1"
+                                {"A", "0.75"}, --Original "1"
                             }
                         },
                         ----------------------------------------------------------------------------
@@ -408,23 +365,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             REPLACE_TYPE = "ALL",
                             VCT = {
-                                {"IndoorsLightingTransitionTime",          "3.2"}, --Original "1.2"
+                                {"IndoorsLightingTransitionTime",         "0.75"}, --Original "1.2"
                                 {"HeightFogHeightMin",      m_HeightFogHeightMin}, --Original "100"
                                 {"WaterAlphaHeightMin",    m_WaterAlphaHeightMin}, --Original "40"
-                                {"SunClampHeightMin",               m_SunClmHMin}, --Original "300"
-                                {"SunClampHeightMax",               m_SunClmHMax}, --Original "390"
-                                {"SunFactorMin",                  m_SunFactorMin}, --Original "0.4"
                                 {"InteractionRadius",                     "0.30"}, --Original "0.15"
-
-                                ----------------------------------------------------------------------------
-                                --LOD Value Changes
-                                ----------------------------------------------------------------------------
-
-                                {"TerrainFadeTime",         "1"}, -- Original "2"
-                                {"TerrainFadeTimeInShip",   "1"}, -- Original "2"
-                                {"CreatureFadeTime",      "0.7"}, -- Original "1.5"
-                                {"FloraFadeTimeMin",      "0.3"}, -- Original "0.6"
-                                {"FloraFadeTimeMax",        "1"}  -- Original "2.25"
                             }
                         },
 
@@ -439,91 +383,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                               {"Ultra",  "TkLODSettingsData"},
                             },
                             VCT = {
+                                {"ViewImpostersFromSpace", true},
                                 {"MaxAsteroidGenerationPerFramePulseJump", "0"},
                             },
                         },
 
                         ----------------------------------------------------------------------------
-                        --LOD Value Changes
+                        --Undergound Lighting Transition
                         ----------------------------------------------------------------------------
-
                         {
-                            PKW = {"LODAdjust"},
-                            SECTION_ACTIVE = {4},
-                            REPLACE_TYPE = "ALLINSIDESECTION",
-                            VCT = {{"IGNORE", "3"},} -- Original "1"
-                        },
-                        {
-                            PKW = {"EnvironmentProperties"},
                             VCT = {
-                                {"PlanetObjectSwitch",          "6000"}, -- Original "700"
-                                {"PlanetLodSwitch0",            "3000"}, -- Original "300"
-                                {"PlanetLodSwitch0Elevation",   "6000"}, -- Original "700"
-                                {"PlanetLodSwitch1",           "10000"}, -- Original "2000"
-                                {"PlanetLodSwitch2",           "50000"}, -- Original "10000"
-                                {"PlanetLodSwitch3",          "100000"}, -- Original "20000"
-                            }
-                        },
-                        {
-                            PKW = {"EnvironmentPrimeProperties"},
-                            VCT = {
-                                {"PlanetObjectSwitch",          "6000"}, -- Original "2000"
-                                {"PlanetLodSwitch0",            "3000"}, -- Original "2000"
-                                {"PlanetLodSwitch0Elevation",   "6000"}, -- Original "2000"
-                                {"PlanetLodSwitch1",           "10000"}, -- Original "2000"
-                                {"PlanetLodSwitch2",           "60000"}, -- Original "10000"
-                                {"PlanetLodSwitch3",          "100000"}, -- Original "20000"
-                            }
-                        },
-                        {
-                            PKW = {"EnvironmentGasGiantProperties"},
-                            VCT = {
-                                {"PlanetObjectSwitch",          "6000"}, -- Original "2000"
-                                {"PlanetLodSwitch0",            "3000"}, -- Original "2000"
-                                {"PlanetLodSwitch0Elevation",   "6000"}, -- Original "2000"
-                                {"PlanetLodSwitch1",           "10000"}, -- Original "2000"
-                                {"PlanetLodSwitch2",           "60000"}, -- Original "10000"
-                                {"PlanetLodSwitch3",          "100000"}, -- Original "20000"
-                            }
-                        },
-
-                        ----------------------------------------------------------------------------
-                        --Environment Properties
-                        ----------------------------------------------------------------------------
-                        ----------------------------------------------------------------------------
-                        --Cloud Settings Normal
-                        ----------------------------------------------------------------------------
-                        {
-                            PKW = "EnvironmentProperties",
-                            VCT = {
-                                {"CloudHeightMin",             m_CloudHeightMin}, --Original "650"
-                                {"CloudHeightMax",             m_CloudHeightMax}, --Original "900"
-                                {"SkyAtmosphereHeight",   m_SkyAtmosphereHeight}, --Original "6000"
-                                {"StratosphereHeight",     m_StratosphereHeight}, --Original "4000"
-                            }
-                        },
-                        ----------------------------------------------------------------------------
-                        --Cloud Settings Prime
-                        ----------------------------------------------------------------------------
-                        {
-                            PKW = "EnvironmentPrimeProperties",
-                            VCT = {
-                                {"CloudHeightMin",            m_CloudHeightMinP}, --Original "1500"
-                                {"CloudHeightMax",            m_CloudHeightMaxP}, --Original "1500"
-                                {"SkyAtmosphereHeight",  m_SkyAtmosphereHeightP}, --Original "7200"
-                                {"StratosphereHeight",    m_StratosphereHeightP}, --Original "5200"
-                            }
-                        },
-                        ----------------------------------------------------------------------------
-                        --Cloud Settings Gas
-                        ----------------------------------------------------------------------------
-                        {
-                            PKW = "EnvironmentGasGiantProperties",
-                            VCT = {
-                                {"CloudHeightMin",            m_CloudHeightMinG}, --Original "1500"
-                                {"CloudHeightMax",            m_CloudHeightMaxG}, --Original "1500"
-                                {"SkyAtmosphereHeight",  m_SkyAtmosphereHeightG}, --Original "7200"
-                                {"StratosphereHeight",    m_StratosphereHeightG}, --Original "5200"
+                                {"IblUndergroundLightIntensity", 8},
+                                {"IblUndergroundLightDirectionHorizonBias", 0.5},
+                                {"IblUndergroundFadeSpeed", 0.1},
                             }
                         },
                         ----------------------------------------------------------------------------
@@ -533,18 +405,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             SKW = {"CloudProperties", "GcCloudProperties"},
                             REPLACE_TYPE = "ALL",
                             VCT = {
-                                {"LightScalar",                    m_LightScalar}, --Original "5"
-                                {"AmbientScalar",                m_AmbientScalar}, --Original "1.721854"
                                 {"SunRayLength",                  m_SunRayLength}, --Original "50"
                                 {"AnimationScale",                  m_Anim_Scale}, --Original "50"
-                                {"Density",                            m_Density}, --Original "1"
                                 {"AmbientDensity",              m_AmbientDensity}, --Original "0.1"
-                                {"ForwardScatteringG",      m_ForwardScatteringG}, --Original "0.9"
-                                {"BackwardScatteringG",    m_BackwardScatteringG}, --Original "0.3"
-                                {"BaseScale",                        m_BaseScale}, --Original "1"
                                 {"SampleScalar",                  m_SampleScalar}, --Original "5"
                                 {"SampleThreshold",            m_SampleThreshold}, --Original "0.25"
-                                {"CloudBottomFade",            m_CloudBottomFade}, --Original "1"
                                 {"DetailScale",                    m_DetailScale}, --Original "6"
                                 {"ErosionEdgeSize",            m_ErosionEdgeSize}, --Original "0.5"
                                 {"CloudDistortion",            m_CloudDistortion}, --Original "50"
@@ -626,7 +491,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             VCT = {
                                 {"DayLength",                          m_Day_Length}, --Original "1800"
-                                {"SunClampAngle",                   m_SunClampAngle}, --Original "55"
                                 {"StormWarningTime",             m_StormWarningTime}, --Original "25"
                                 {"StormTransitionTime",       m_StormTransitionTime}, --Original "25"
                                 {"MaxCloudCover",                   m_MaxCloudCover}, --Original "0.8"
@@ -634,7 +498,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"CloudCoverSmoothTime",     m_CloudCoverSmoothTime}, --Original "10"
                                 {"CloudRatioSmoothTime",     m_CloudRatioSmoothTime}, --Original "4"
                                 {"StormCloudSmoothTime",     m_StormCloudSmoothTime}, --Original "0.8"
-                                {"WeatherFilterSpaceTransitionChangeTime", m_WeatherFilterSTCTime}, --Original "10"
                                 {"MinStormLengthLow",           m_MinStormLengthLow}, --Original "120"
                                 {"MaxStormLengthLow",           m_MaxStormLengthLow}, --Original "180"
                                 {"MinStormLengthHigh",         m_MinStormLengthHigh}, --Original "150"
@@ -643,8 +506,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxTimeBetweenStormsExtremeFallback", m_MaxTBSExtremeFallback}, --Original "620"
                                 {"ExtremeAudioLevel",           m_ExtremeAudioLevel}, --Original "0.3"
                                 {"StormAudioLevel",               m_StormAudioLevel}, --Original "0.5"
-                                {"BinaryStarChance",             m_BinaryStarChance}, --Original "0.2"
-                                {"TernaryStarChance",           m_TernaryStarChance}, --Original "0.05"
                             }
                         },
 
@@ -872,18 +733,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"RateOfChange",           "0.01"}, --Original "0.1"
                                 {"SecondaryRateOfChange", "0.045"}, --Original "0.15"
                                 {"Cloudiness",            "CloudyWithClearSpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
-                            }
-                        },
-                        ----------------------------------------------------------------------------
-                        --Heavey Air Setings
-                        ----------------------------------------------------------------------------
-                        {
-                            SKW = {"Settings", "GcHeavyAirSettingValues"},
-                            REPLACE_TYPE = "ALL",
-                            VCT = {
-                                {"Thickness", "0.1"}, --Original "1"
-                                {"Alpha1",    "0.1"}, --Original "1"
-                                {"Alpha2",    "0.1"}, --Original "1"
                             }
                         },
                     }

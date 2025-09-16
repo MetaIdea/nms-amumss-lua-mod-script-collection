@@ -1,8 +1,8 @@
-local modfilename = "UnifiedWarpsStars"
+local modfilename = "UnifiedWarpsStarsNoLines"
 local lua_author  = "Silent"
-local lua_version = "4.6"
+local lua_version = "4.7"
 local mod_author  = "Silent369"
-local nms_version = "5.74"
+local nms_version = "6.04"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
@@ -12,6 +12,7 @@ Unifies Blackhole/Portal/Ship/Teleporter Warps
 Modifies:
 GCCAMERAGLOBALS.GLOBAL.MBIN
 GCSIMULATIONGLOBALS.GLOBAL.MBIN
+MODELS\EFFECTS\WARP\WARPLARGEPORTAL\LIGHTARMSREDMAT.MATERIAL.MBIN
 MODELS\EFFECTS\WARP\WARPTUNNEL\ENTITIES\ANIMATEDLIGHTS.ENTITY.MBIN
 MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN
 MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELALT2MAT.MATERIAL.MBIN
@@ -21,12 +22,11 @@ MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN
 
 ]]
 
--- Warp Camera Settings for Freighters / Ships
+-- Warp Camera Settings for Corvettes / Freighters and Ships
 -------------------------------------------------------------------------------------------
-
+local m_WarpSettingsCPos = true
 local m_WarpSettingsFPos = true
 local m_WarpSettingsSPos = true
-
 
 -- Initialise TableData
 -------------------------------------------------------------------------------------------
@@ -40,7 +40,7 @@ m_ScrollStep = [[
       <Property name="Name" value="gUVScrollStepVec4" />
       <Property name="Values">
         <Property name="X" value="0.000000" />
-        <Property name="Y" value="3.000000" />
+        <Property name="Y" value="4.000000" />
         <Property name="Z" value="0.000000" />
         <Property name="W" value="0.000000" />
       </Property>
@@ -64,6 +64,33 @@ table.insert(TableData,
             {"OffsetZStartBias",         "15"}, --Original "15"
             {"OffsetZBias",               "0"}, --Original "2"
             {"OffsetZRange",              "1"}, --Original "1.5"
+            {"OffsetYFrequency_1",      "0.1"}, --Original "1.1"
+            {"OffsetYFrequency_2",      "0.1"}, --Original "0.9"
+            {"OffsetYStartBias",          "7"}, --Original "3.5"
+            {"OffsetYBias",            "-0.4"}, --Original "0"
+            {"OffsetYRange",              "2"}, --Original "0.75"
+            {"OffsetXFrequency",        "0.3"}, --Original "0.25"
+            {"OffsetXPhase",              "0"}, --Original "0"
+            {"OffsetXRange",            "1.5"}, --Original "3.5"
+            {"RollRange",               "0.8"}, --Original "1"
+            {"YawnRange",               "300"}, --Original "600"
+            {"Curve",           "SmoothInOut"}, --Original "EaseInOutBack"
+        }
+    })
+end
+
+if m_WarpSettingsCPos then
+table.insert(TableData,
+    {
+        SKW = {"CorvetteWarpSettings", "GcCameraWarpSettings"},
+        REPLACE_TYPE = "ALL",
+        VCT = {
+            {"FocusPointDist",       "100000"}, --Original "100000"
+            {"OffsetZFrequency_1",      "0.1"}, --Original "1.1"
+            {"OffsetZFrequency_2",      "0.2"}, --Original "0.9"
+            {"OffsetZStartBias",         "25"}, --Original "45"
+            {"OffsetZBias",               "1"}, --Original "2"
+            {"OffsetZRange",            "1.5"}, --Original "2.5"
             {"OffsetYFrequency_1",      "0.1"}, --Original "1.1"
             {"OffsetYFrequency_2",      "0.1"}, --Original "0.9"
             {"OffsetYStartBias",          "7"}, --Original "3.5"
@@ -163,10 +190,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     MXML_CT = {
                         {
                             SKW = {
-                                {"Name", "scrollingwave9"},
                                 {"Name", "scrollingwaveALT"},
+                                {"Name", "scrollingwave9"},
                                 {"Name", "scrollingwaveALT1"},
-                                --{"Name", "scrollingwave"},
                                 {"Name", "gradientCloud"},
                                 {"Name", "gradientCloudAlt"},
                                 {"Name", "EndGlowCaps"},
@@ -186,7 +212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             SKW = {"Name", "AnimatedLights", "Type", "LIGHT", "Name", "FALLOFF_RATE"},
                             REPLACE_TYPE = "ALL",
                             VCT = {
-                                {"Value",   "3.000000"}, --Original "2.000000"
+                                {"Value",   "0.500000"}, --Original "2.000000"
                             }
                         },
                         {
@@ -196,17 +222,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Value",   "200000.000000"}, --Original "100000.000000"
                             }
                         },
-
-                        -- Exit Warp Early Fade.
-                        -- Sadly, immersion breaking when Teleport Warping, but it looks so cool!
-                        -------------------------------------------------------------------------------------------
-
-                        --{
-                        --    SKW = {"Name", "WarpCylinder1", "Transform", "TkTransformData"},
-                        --    VCT = {
-                        --        {"ScaleZ",     "0.01"}, --Original "1.02175"
-                        --    }
-                        --},
 
                         -- Stars (Lines)
                         -------------------------------------------------------------------------------------------
@@ -268,9 +283,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     MBIN_FS = [[MODELS\EFFECTS\WARP\WARPTUNNEL\ENTITIES\ANIMATEDLIGHTS.ENTITY.MBIN]],
                     MXML_CT = {
                         {
-                            SKW = {"Components", "TkAnimationComponentData"},
-                            PKW = {"TkAnimationComponentData", "Idle"},
-                            VCT = {{"Speed", "0.5"},} --Original "1"
+                            SKW = {"Components", "TkAnimationComponentData", "Idle", "TkAnimationData"},
+                            VCT = {
+                                {"Speed",    "0.500000"}, --Original "1.000000"
+                                {"Mirrored",     "true"}, --Original "false"
+                            }
                         },
                     }
                 },
@@ -308,7 +325,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             SKW = {"Name", "gDiffuseMap"},
-                            VCT = {{"Map", "TEXTURES/EFFECTS/WARP/LINES.DDS"},}
+                            VCT = {{"Map", "TEXTURES/EFFECTS/BLACKHOLE/LINES.DDS"},}
                         },
                     }
                 },
@@ -335,7 +352,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             SKW = {"Name", "gUVScrollStepVec4"},
                             VCT = {
-                                {"Y", "0.05"}, --Original "0.3"
+                                {"Y", "0.1"}, --Original "0.3"
                             }
                         },
                     }
@@ -421,9 +438,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     MBIN_FS = [[GCSIMULATIONGLOBALS.GLOBAL.MBIN]],
                     MXML_CT = {
                         {
-                            REPLACE_TYPE = "ALL",
                             VCT = {
-                                {"WarpTunnelScale",       "240"},
+                                {"WarpTunnelScale",       "2048"}, -- stops freighter warp reversing
                                 {"BlackHoleTunnelFile",   "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE.SCENE.MBIN"
                                 {"TeleportTunnelFile",    "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPPORTAL.SCENE.MBIN"
                                 {"PortalTunnelFile",      "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN"}, --Original "MODELS/EFFECTS/WARP/WARPLARGEPORTAL.SCENE.MBIN""

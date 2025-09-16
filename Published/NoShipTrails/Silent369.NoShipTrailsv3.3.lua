@@ -1,8 +1,8 @@
 local modfilename = "NoShipTrails"
 local lua_author  = "Silent"
-local lua_version = "3.2"
+local lua_version = "3.3"
 local mod_author  = "Silent369"
-local nms_version = "5.74"
+local nms_version = "6.04"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
@@ -11,7 +11,10 @@ Simply removes all ship trails!
 
 ]]
 
-local SourceFiles = {
+-- File Sources
+--------------------------------------------------------------------------------------------
+
+local cfgFiles = {
     [[MODELS\EFFECTS\TRAILS\SPACECRAFT\HOT\HOTCYANTRAIL.MATERIAL.MBIN]],
     [[MODELS\EFFECTS\TRAILS\SPACECRAFT\HOT\HOTDARKTRAIL.MATERIAL.MBIN]],
     [[MODELS\EFFECTS\TRAILS\SPACECRAFT\HOT\HOTGOLDTRAIL.MATERIAL.MBIN]],
@@ -24,10 +27,31 @@ local SourceFiles = {
     [[MODELS\EFFECTS\TRAILS\SPACECRAFT\HOT\TIMELOOPTRAIL.MATERIAL.MBIN]]
 }
 
-local ExmlChangeTable = {
-    PKW = {"Samplers"},
-    VCT = {{"Map", ""},}
-}
+--------------------------------------------------------------------------------------------
+
+local all_modifications = {}
+
+--------------------------------------------------------------------------------------------
+
+for _, filepath in ipairs(cfgFiles) do
+    local modifications = {}
+
+    table.insert(modifications, {
+        PKW = {"Samplers"},
+        VCT = {{"Map", ""},}
+    })
+
+    table.insert(all_modifications, {
+        MBIN_CT = {
+            {
+                MBIN_FS = filepath,
+                MXML_CT = modifications
+            }
+        }
+    })
+end
+
+--------------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -38,18 +62,5 @@ NMS_MOD_DEFINITION_CONTAINER =
     MOD_DESCRIPTION = description,
     MOD_MAINTENANCE = maintenance,
     EXML_CREATE     = exmlcreate,
-    MODIFICATIONS   =
-    {
-        {
-            MBIN_CT =
-            {
-                {
-                    MBIN_FS = SourceFiles,
-                    MXML_CT = {
-                        ExmlChangeTable
-                    }
-                },
-            }
-        },
-    }
+    MODIFICATIONS   = all_modifications,
 }

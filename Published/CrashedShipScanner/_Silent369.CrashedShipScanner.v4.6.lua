@@ -1,17 +1,14 @@
 local modfilename = "CrashedShipScanner"
 local lua_author  = "Silent"
-local lua_version = "4.5"
+local lua_version = "4.6"
 local mod_author  = "Silent369"
 local contributor = "Spectrus1702"
-local nms_version = "5.74"
+local nms_version = "6.04"
 local maintenance = mod_author
 local exmlcreate  = true
 local description = [[
 
-Auto Scan planet entities (objects, structures) within given range.
-
-Inspired by the Scan_Auto.cs script provided by cmkNMSModBuilder
-https://github.com/cmkushnir/NMSModBuilder
+Auto Scan for Crashed Ships Only (by request)
 
 ]]
 
@@ -103,15 +100,6 @@ function CreatePhysicsComponent(TriggerVolume, TriggerType)
 					<Property name="AngularDamping" value="0.200000" />
 					<Property name="LinearDamping" value="0.100000" />
 					<Property name="Gravity" value="20.000000" />
-				</Property>
-				<Property name="NavMeshInclusion" value="TkNavMeshInclusionParams">
-					<Property name="InclusionType" value="TkNavMeshInclusionType">
-						<Property name="NavMeshInclusionType" value="Auto" />
-					</Property>
-					<Property name="InclusionMinSize" value="0.000000" />
-					<Property name="AreaType" value="TkNavMeshAreaType">
-						<Property name="NavMeshAreaType" value="Auto" />
-					</Property>
 				</Property>
 				<Property name="TriggerVolume" value="]]..TriggerVolume..[[" />
 				<Property name="TriggerVolumeType" value="TkVolumeTriggerType">
