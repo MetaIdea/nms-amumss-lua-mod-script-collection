@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_AUTHOR"]      = "Democrity",
     ["LUA_AUTHOR"]      = "Babscoole, gh0stwizard",
     ["MOD_DESCRIPTION"] = "Based on Improved Containers mod, but with hidden contents.",
-    ["NMS_VERSION"]     = "5.0",
+    ["NMS_VERSION"]     = "6.4",
     ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = {
@@ -11,9 +11,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["MBIN_FILE_SOURCE"]  = {
                         [[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_LARGE_RARE/ENTITIES/CRATE_LARGE_RARE.ENTITY.MBIN]],
                         -- requested by buddha465
-                        [[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/PARTS/DEBRILARGECONTAINER/ENTITIES/TECHDEBRIS.ENTITY.EXML]],
+                        [[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/PARTS/DEBRILARGECONTAINER/ENTITIES/TECHDEBRIS.ENTITY.MBIN]],
                     },
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MXML_CHANGE_TABLE"] = {
                         {
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] = {
@@ -28,7 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         [[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/MODULES/DAMAGEDDOOR/ENTITIES/BROKENDOORDATA.ENTITY.MBIN]],
                         [[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/MODULES/DAMAGEDWALL/ENTITIES/DAMAGEDWALL.ENTITY.MBIN]],
                     },
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "Health", "10" },
@@ -47,7 +47,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         [[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/UNDERGROUNDCRATE/ENTITIES/UNDERGROUNDCRATE.ENTITY.MBIN]],
                         [[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/CONTAINERS/CRATE_LARGE_RARE/ENTITIES/CRATE_LARGE_RARE.ENTITY.MBIN]],
                     },
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "Delay", "0.2" },
@@ -56,9 +56,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  =
-                    "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_MEDIUM_RARE/ENTITIES/CRATE_MEDIUM_RARE.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MBIN_FILE_SOURCE"]  = {
+                        [[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_MEDIUM_RARE/ENTITIES/CRATE_MEDIUM_RARE.ENTITY.MBIN]],
+                    },
+                    ["MXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "Delay", "0.3" },
@@ -67,9 +68,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  =
-                    "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/TREASURE_CHEST/ENTITIES/TREASURE_CHEST.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MBIN_FILE_SOURCE"]  = {
+                        [[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/TREASURE_CHEST/ENTITIES/TREASURE_CHEST.ENTITY.MBIN]],
+                    },
+                    ["MXML_CHANGE_TABLE"] = {
                         {
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] = {
@@ -79,9 +81,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  =
-                    "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/PARTS/CONTAINERTERMINAL/ENTITIES/TERMINALCHAR.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MBIN_FILE_SOURCE"]  = {
+                        [[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/PARTS/CONTAINERTERMINAL/ENTITIES/TERMINALCHAR.ENTITY.MBIN]],
+                    },
+                    ["MXML_CHANGE_TABLE"] = {
                         {
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] = {
