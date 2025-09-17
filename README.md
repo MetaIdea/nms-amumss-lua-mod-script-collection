@@ -1,4 +1,4 @@
-# No Man's Sky Mod Collection - Updated for 5.74
+# No Man's Sky Mod Collection - Updated for 6.04
 
 ### These are the current published and unpublished mods created for No Man's Sky.
 
@@ -14,6 +14,7 @@
 [Biomes Sun Clouds Fog and LOD Tweaks](https://www.nexusmods.com/nomanssky/mods/2125)<br />
 [Freighter Salvage Terminals](https://www.nexusmods.com/nomanssky/mods/2601)<br />
 [Native Sentinel Ships](https://www.nexusmods.com/nomanssky/mods/2841)<br />
+[Nebulant Nebulae](https://www.nexusmods.com/nomanssky/mods/3789)<br />
 [No Speed Lines 4 Streamers](https://www.nexusmods.com/nomanssky/mods/2343)<br />
 [Slower Sentinel Ship Animations](https://www.nexusmods.com/nomanssky/mods/2764)<br />
 [Spookship - Black Stealth](https://www.nexusmods.com/nomanssky/mods/3262)<br />
