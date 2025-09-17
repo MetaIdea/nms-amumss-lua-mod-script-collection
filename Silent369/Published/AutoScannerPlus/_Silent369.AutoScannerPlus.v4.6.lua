@@ -173,6 +173,7 @@ AddPortal      = CreateScannableComponentData(m_ScanRange, "BUILDING_PORTAL_L", 
 AddRadioTower  = CreateScannableComponentData(m_ScanRange, "BUILDING_RADIOTOWER_L",       m_ScanTime, m_RangeMult, m_ShowRange, "SignalBooster",      "true",  m_Override, true)
 AddRuin        = CreateScannableComponentData(m_ScanRange, "UI_SIGNAL_TREASURERUIN",      m_ScanTime, m_RangeMult, m_ShowRange, "Artifact",           "true",  m_Override, true)
 AddTreasure    = CreateScannableComponentData(m_ScanRange, "PLANT_FOOD_38",               m_ScanTime, m_RangeMult, m_ShowRange, "ArtifactCrate",      "true",  m_Override, true)
+AddScrap       = CreateScannableComponentData(m_ScanRange, "UI_SCRAP_REWARD",             m_ScanTime, m_RangeMult, m_ShowRange, "BuriedRare",        "false",  "0.000000", true)
 AddSentinelH   = CreateScannableComponentData(m_ScanRange, "UI_MP_HIVE_LABEL",            m_ScanTime, m_RangeMult, m_ShowRange, "Drone",              "true",  m_Override, true)
 AddSentinelD   = CreateScannableComponentData(m_ScanRange, "UI_MP_HIVE_LABEL",            m_ScanTime, m_RangeMult, m_ShowRange, "FriendlyDrone",      "true",  m_Override, true)
 AddStoryGlitch = CreateScannableComponentData(m_ScanRange, "Alien Anomaly Detected",      m_ScanTime, m_RangeMult, m_ShowRange, "Artifact",          "false",  m_Override, true)
@@ -697,6 +698,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                              ADD_OPTION = "REPLACEwholeSECTION",
                              ADD = AddFossil,
                           }
+                    },
+                },
+                    ----------------------------------------------------------------------------------------------
+                    --SCRAP / SALVAGE, Already has GcScannableComponentData, we're overriding for AllowMerge
+                    ----------------------------------------------------------------------------------------------
+                {
+                    MBIN_FS = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\SCRAPHEAP\ENTITIES\SCRAPCORE.ENTITY.MBIN]],
+                    MXML_CT =
+                    {
+                        {
+                           SKW = {"Components", "GcScannableComponentData"},
+                           ADD_OPTION = "REPLACEwholeSECTION",
+                           ADD = AddScrap,
+                        }
                     },
                 },
                     ----------------------------------------------------------------------------------------------
