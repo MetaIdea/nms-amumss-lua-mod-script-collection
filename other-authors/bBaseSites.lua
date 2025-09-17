@@ -107,7 +107,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             SEC_EDIT = "Base",
                             VALUE_CHANGE_TABLE = {
-                                {"LabelID", "Base"}
+                                {"LabelID", "Base"},
+                                {"Event", "BASE"}
                             }
                         },
                         {

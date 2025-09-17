@@ -169,7 +169,7 @@ local function ScNode(nodes)
 		if props.child then
 		--	add children list if found
 			local k,_ = next(props.child)
-			cnd = ScNode(props.child)
+			local cnd = ScNode(props.child)
 			T.Child	= k == 1 and cnd or {cnd}
 			T.Child.meta = {name='Children'}
 		end
@@ -179,40 +179,46 @@ local function ScNode(nodes)
 end
 ---------------------------------------------------------------------------------
 
-local mx_ct = {}
+local mx_ct = { {SKW={}, REMOVE='Section'} }
 for node, form in pairs({
-	NPC_01			= {tx=-9.507,	ty=-3.35,	tz=-28.34},
-	NPC_02			= {tx=-56,		ty=-7.34,	tz=62.5,	ry=-150},
-	NPC_03			= {tx=-8.337,	ty=-3.35,	tz=-28.03},
-	NPC_04			= {tx=38.4,		ty=-7.34,	tz=69.35,	ry=35},
-	NPC_06			= {tx=-21.92,	ty=-4.18,	tz=5.5},
-	NPC_07			= {tx=-57.8,	ty=8.12,	tz=57.14,	ry=270},
-	RefHangarCrane2	= {tx=41.88,				tz=61.2},
-	RefHangarCrane	= {tx=-3.43,				tz=59.5},
-	RefHangarCrane1	= {tx=-41.96,				tz=60.9},
-	MonitorDesk		= {tx=-55.5,	ty=-7.35,	tz=63.2,	ry=305},
-	RefFuelTank2	= {tx=35.53,	ty=-7.34,	tz=72.55,	ry=180},
-	RefLargeCrate103= {tx=-22.65,	ty=-4.31,	tz=17.17,	rx=180,		sx=4.1},		-- teleoprt R
-	RefLargeCrate113= {tx=22.65,	ty=-4.315,	tz=17.17,	rx=180,		sx=4.1},		-- teleoprt L
-	RefLargeCrate10	= {tx=7,		ty=-7.35,	tz=66.8,	rx=180,		sx=4.3,	sz=4.3},-- cross gap M
-	RefLargeCrate6	= {tx=-52.35,	ty=-7.35,	tz=66.8,	rx=180,		sx=4.3,	sz=4.3},-- cross gap R
-	RefPallet30		= {tx=7.79,		ty=-5.72,	tz=66.7,	rz=-58.5,	sx=2.6,	sy=2.4,	sz=2.8},
-	MidCeiling201	= {							tz=33.2,								sz=1.25},
+	NPC_01				= {tx=-9.507,	ty=-3.35,	tz=-28.34},
+	NPC_02				= {tx=-56,		ty=-7.34,	tz=62.5,	ry=-150},
+	NPC_03				= {tx=-8.337,	ty=-3.35,	tz=-28.03},
+	NPC_04				= {tx=38.4,		ty=-7.34,	tz=69.35,	ry=35},
+	NPC_06				= {tx=-21.92,	ty=-4.18,	tz=5.5},
+	NPC_07				= {tx=-57.8,	ty=8.12,	tz=57.14,	ry=270},
+	RefHangarCrane2		= {tx=41.88,				tz=61.2},
+	RefHangarCrane		= {tx=-3.43,				tz=59.5},
+	RefHangarCrane1		= {tx=-41.96,				tz=60.9},
+	MonitorDesk			= {tx=-55.5,	ty=-7.35,	tz=63.2,	ry=305},
+	RefFuelTank2		= {tx=35.53,	ty=-7.34,	tz=72.55,	ry=180},
+	RefLargeCrate103	= {tx=-22.65,	ty=-4.31,	tz=17.17,	rx=180,		sx=4.1},		-- teleoprt entrance gap R
+	RefLargeCrate113	= {tx=22.65,	ty=-4.315,	tz=17.17,	rx=180,		sx=4.1},		-- teleoprt entrance gap L
+	RefLargeCrate10		= {tx=7,		ty=-7.35,	tz=66.8,	rx=180,		sx=4.3,	sz=4.3},-- crossing gap M
+	RefLargeCrate6		= {tx=-52.35,	ty=-7.35,	tz=66.8,	rx=180,		sx=4.3,	sz=4.3},-- crossing gap R
+	RefPallet30			= {tx=7.79,		ty=-5.72,	tz=66.7,	rz=-58.5,	sx=2.6,	sy=2.4,	sz=2.8},
+	MidCeiling201		= {							tz=33.2,								sz=1.25},
+	RefBiggsTeleporter	= {del=true},
+	RefBiggsTeleporter1	= {del=true}
 }) do
-	mx_ct[#mx_ct+1] = {
-		SPECIAL_KEY_WORDS	= {'Name', node},
-		VALUE_CHANGE_TABLE	= {
-			{'TransX',	form.tx or 'IGNORE'},
-			{'TransY',	form.ty or 'IGNORE'},
-			{'TransZ',	form.tz or 'IGNORE'},
-			{'RotX',	form.rx or 'IGNORE'},
-			{'RotY',	form.ry or 'IGNORE'},
-			{'RotZ',	form.rz or 'IGNORE'},
-			{'ScaleX',	form.sx or 'IGNORE'},
-			{'ScaleY',	form.sy or 'IGNORE'},
-			{'ScaleZ',	form.sz or 'IGNORE'}
+	if form.del then
+		mx_ct[1].SKW[#mx_ct[1].SKW+1] = {'Name', node}
+	else
+		mx_ct[#mx_ct+1] = {
+			SPECIAL_KEY_WORDS	= {'Name', node},
+			VALUE_CHANGE_TABLE	= {
+				{'TransX',	form.tx or 'IGNORE'},
+				{'TransY',	form.ty or 'IGNORE'},
+				{'TransZ',	form.tz or 'IGNORE'},
+				{'RotX',	form.rx or 'IGNORE'},
+				{'RotY',	form.ry or 'IGNORE'},
+				{'RotZ',	form.rz or 'IGNORE'},
+				{'ScaleX',	form.sx or 'IGNORE'},
+				{'ScaleY',	form.sy or 'IGNORE'},
+				{'ScaleZ',	form.sz or 'IGNORE'}
+			}
 		}
-	}
+	end
 end
 mx_ct[#mx_ct+1] = {
 	PRECEDING_KEY_WORDS = 'Children',
@@ -367,7 +373,7 @@ mx_ct[#mx_ct+1] = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.Freighter Hangar Changes.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '6.02',
+	NMS_VERSION				= '6.05',
 	MOD_DESCRIPTION			= mod_desc,
 	AMUMSS_SUPPRESS_MSG		= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 			= {{
@@ -386,29 +392,67 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				PRECEDING_KEY_WORDS = 'Children',
 				ADD					= ToMxml( ScNode({
-					name	= '1RefMonitorShip',
-					ntype	= 'REFERENCE',
-					form	= {tx=2.55, ty=0.12, tz=5.4, ry=135, rz=180, sx=0.55, sy=0.55, sz=0.55},
-					attr	= {
-						SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ROOFMONITOR/ROOFMONITOR.SCENE.MBIN'
-					},
-					child	= {
-						name	= 'ColShipSalvage1',
-						ntype	= 'COLLISION',
-						form	= {ty=-3},
+					{--	add ship outfitting
+						name	= '1RefMonitorShip',
+						ntype	= 'REFERENCE',
+						form	= {tx=2.55, ty=0.12, tz=5.4, ry=135, rz=180, sx=0.55, sy=0.55, sz=0.55},
 						attr	= {
-							TYPE	= 'Sphere',
-							RADIUS	= 0.2
+							SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ROOFMONITOR/ROOFMONITOR.SCENE.MBIN'
 						},
 						child	= {
-							name	= 'LocShipSalvage1',
-							ntype	= 'LOCATOR',
+							name	= 'ColShipSalvage1',
+							ntype	= 'COLLISION',
+							form	= {ty=-3},
 							attr	= {
-								ATTACHMENT = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/OBJECTSPAWNER/ENTITIES/SHIPSALVAGETERMINAL.ENTITY.MBIN'
+								TYPE	= 'Sphere',
+								RADIUS	= 0.2
+							},
+							child	= {
+								name	= 'LocShipSalvage1',
+								ntype	= 'LOCATOR',
+								attr	= {
+									ATTACHMENT = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/OBJECTSPAWNER/ENTITIES/SHIPSALVAGETERMINAL.ENTITY.MBIN'
+								}
 							}
 						}
+					},
+					{--	corvette beam trigger
+						name	= '1LocCorvTeleport',
+						ntype	= 'LOCATOR',
+						form	= {tx=-1.97, ty=1.38, tz=4.55},
+						attr	= {
+							ATTACHMENT = 'MODELS/COMMON/SPACECRAFT/BIGGS/BIGGSTELEPORTER_FREIGHTERS/ENTITIES/BIGGSTELEPORTER_FREIGHTERS.ENTITY.MBIN'
+						},
+						child	= {
+							{
+								name	= 'ColCorvTeleport',
+								ntype	= 'COLLISION',
+								form	= {ry=180},
+								attr	= {
+									TYPE		= 'Sphere',
+									RADIUS		= 0.4,
+									NAVIGATION = 'FALSE'
+								}
+							},
+						}
+					},
+					{--	corvette beam button
+						name	= 'RefCorvButton',
+						ntype	= 'REFERENCE',
+						form	= {tx=-1.97, ty=1.38, tz=4.55, ry=180, sx=0.77, sy=0.77, sz=0.77},
+						attr	= {
+							SCENEGRAPH = 'MODELS/COMMON/SPACECRAFT/BIGGS/TELECONTROL.SCENE.MBIN'
+						}
+					},
+					{--	corvette beam button base
+						name	= '1RefCorvSign',
+						ntype	= 'REFERENCE',
+						form	= {tx=-1.97, ty=1.38, tz=4.49, rx=90, rz=-90, sx=0.7, sy=0.7, sz=0.6},
+						attr	= {
+							SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ABANDONED/WARNINGSIGN_1.SCENE.MBIN'
+						}
 					}
-				}) )
+				}))
 			}
 		}
 	},

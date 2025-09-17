@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "DiscoverAllPlanetsEverywhere.pak",
 ["MOD_AUTHOR"]      = "Lenni",
 ["MOD_DESCRIPTION"] = "Enable hotkey planet discovery (quick action emote menu)",
-["NMS_VERSION"]     = "5.01.1",
+["NMS_VERSION"]     = "6.04",
 ["MODIFICATIONS"]   = 
 	{
 		{
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{  
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["MXML_CHANGE_TABLE"] = 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE",},						
@@ -19,9 +19,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"]      = "ADDAFTERSECTION",
 							["ADD"] = 
 [[
-        <Property value="TkAnimationData.xml">
+        <Property name="Anims" value="TkAnimationData">
           <Property name="Anim" value="DISCOVER" />
-		  <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
+		  <Property name="Filename" value="MODELS/TESTS/EFFECTTEST.ANIM.MBIN" />
           <Property name="AnimType" value="OneShotBlendable" />
           <Property name="AnimGroupOverride" value="False" />
           <Property name="Priority" value="0" />
@@ -45,7 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Mirrored" value="False" />
           <Property name="Active" value="True" />
 		  <Property name="Has30HzFrames" value="False" />
-		  <Property name="GameData" value="TkAnimationGameData.xml">
+		  <Property name="GameData" value="TkAnimationGameData">
             <Property name="RootMotion" value="None" />
             <Property name="BlockPlayerMovement" value="False" />
             <Property name="BlockPlayerWeapon" value="Unblocked" />
@@ -54,231 +54,251 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]				
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"]         = "-2",
+							["PRECEDING_KEY_WORDS"] = "Components", 
 							["ADD"] = 
 [[
-    <Property value="LinkableNMSTemplate.xml">
-		<Property name="Template" value="GcSimpleInteractionComponentData.xml">
-		  <Property name="SimpleInteractionType" value="SuperDoopaScanner" />
-		  <Property name="InteractDistance" value="0" />
-		  <Property name="Use2dInteractDistance" value="False" />
-		  <Property name="Id" value="" />
-		  <Property name="Rarity" value="GcRarity.xml">
-			<Property name="Rarity" value="Common" />
-		  </Property>
-		  <Property name="Size" value="GcSizeIndicator.xml">
-			<Property name="SizeIndicator" value="Medium" />
-		  </Property>
-		  <Property name="TriggerAction" value="INACTIVE" />
-		  <Property name="TriggerActionOnPrepare" value="" />
-		  <Property name="TriggerActionToggle" value="" />
-		  <Property name="BroadcastTriggerAction" value="False" />
-		  <Property name="Delay" value="0" />
-		  <Property name="HideContents" value="True" />
-		  <Property name="InteractIsCrime" value="False" />
-		  <Property name="InteractFiendCrimeType" value="GcFiendCrime.xml">
-			<Property name="FiendCrime" value="None" />
-		  </Property>
-		  <Property name="InteractFiendCrimeChance" value="1" />
-		  <Property name="InteractCrimeLevel" value="0" />
-		  <Property name="IncreaseCorruptSentinelWanted" value="0" />
-		  <Property name="NotifyEncounter" value="False" />
-		  <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
-			<Property name="SubstanceId" value="" />
-			<Property name="AltIds" />
-			<Property name="Cost" value="0" />
-			<Property name="Repeat" value="False" />
-			<Property name="RequiredTech" value="" />
-			<Property name="UseCostID" value="" />
-			<Property name="StartMissionOnCantAfford" value="" />
-			<Property name="OnlyChargeDuringSeasons" />
-		  </Property>
-		  <Property name="StatToTrack" value="GcStatsEnum.xml">
-			<Property name="StatEnum" value="None" />
-		  </Property>
-		  <Property name="StartsBuried" value="False" />
-		  <Property name="MustBeVisibleToInteract" value="False" />
-		  <Property name="NeedsStorm" value="False" />
-		  <Property name="Name" value="UI_SCAN_ROOM_LABEL" />
-		  <Property name="VRInteractMessage" value="" />
-		  <Property name="TerminalHeading" value="" />
-		  <Property name="TerminalMessage" value="" />
-		  <Property name="ScanType" value="BINOC_INTERACTABLE" />
-		  <Property name="ScanData" value="" />
-		  <Property name="ScanIcon" value="GcDiscoveryType.xml">
-			<Property name="DiscoveryType" value="Unknown" />
-		  </Property>
-		  <Property name="ActivateLocatorsFromRarity" value="False" />
-		  <Property name="RarityLocators">
-			<Property name="Common" value="NMSString0x10.xml">
-			  <Property name="Value" value="" />
+		<Property name="Components" value="GcSimpleInteractionComponentData">
+			<Property name="GcSimpleInteractionComponentData">
+				<Property name="SimpleInteractionType" value="SuperDoopaScanner" />
+				<Property name="InteractDistance" value="0.000000" />
+				<Property name="Use2dInteractDistance" value="false" />
+				<Property name="Id" value="" />
+				<Property name="Rarity" value="GcRarity">
+					<Property name="Rarity" value="Common" />
+				</Property>
+				<Property name="Size" value="GcSizeIndicator">
+					<Property name="SizeIndicator" value="Medium" />
+				</Property>
+				<Property name="TriggerAction" value="INACTIVE" />
+				<Property name="TriggerActionOnPrepare" value="" />
+				<Property name="TriggerActionToggle" value="" />
+				<Property name="DeactivateSimilarInteractionsNearbyRadius" value="0.000000" />
+				<Property name="BroadcastTriggerAction" value="false" />
+				<Property name="Delay" value="0.000000" />
+				<Property name="HideContents" value="true" />
+				<Property name="InteractIsCrime" value="false" />
+				<Property name="InteractFiendCrimeType" value="GcFiendCrime">
+					<Property name="FiendCrime" value="None" />
+				</Property>
+				<Property name="InteractFiendCrimeChance" value="1.000000" />
+				<Property name="InteractCrimeLevel" value="0" />
+				<Property name="IncreaseCorruptSentinelWanted" value="0" />
+				<Property name="NotifyEncounter" value="false" />
+				<Property name="ActivationCost" value="GcInteractionActivationCost">
+					<Property name="SubstanceId" value="" />
+					<Property name="AltIds" />
+					<Property name="Cost" value="0" />
+					<Property name="Repeat" value="false" />
+					<Property name="RequiredTech" value="" />
+					<Property name="UseCostID" value="" />
+					<Property name="StartMissionOnCantAfford" value="" />
+					<Property name="OnlyChargeDuringSeasons" />
+				</Property>
+				<Property name="StatToTrack" value="GcStatsEnum">
+					<Property name="StatEnum" value="None" />
+				</Property>
+				<Property name="StartsBuried" value="false" />
+				<Property name="MustBeVisibleToInteract" value="false" />
+				<Property name="NeedsStorm" value="false" />
+				<Property name="Name" value="UI_SCAN_ROOM_LABEL" />
+				<Property name="ForceSubtitle" value="" />
+				<Property name="VRInteractMessage" value="" />
+				<Property name="TerminalHeading" value="" />
+				<Property name="TerminalMessage" value="" />
+				<Property name="ScanType" value="BINOC_INTERACTABLE" />
+				<Property name="ScanData" value="" />
+				<Property name="ScanIcon" value="GcDiscoveryType">
+					<Property name="DiscoveryType" value="Unknown" />
+				</Property>
+				<Property name="ActivateLocatorsFromRarity" value="false" />
+				<Property name="RarityLocators">
+					<Property name="Common" value="" />
+					<Property name="Uncommon" value="" />
+					<Property name="Rare" value="" />
+				</Property>
+				<Property name="BaseBuildingTriggerActions" />
+				<Property name="RewardOverrideTable" />
+				<Property name="PersistencyBufferOverride" />
+				<Property name="UsePersonalPersistentBuffer" value="false" />
+				<Property name="ReseedOnRewardSuccess" value="false" />
+				<Property name="CanCollectInMech" value="false" />
+				<Property name="DisableAnimationUntilInteract" value="false" />
 			</Property>
-			<Property name="Uncommon" value="NMSString0x10.xml">
-			  <Property name="Value" value="" />
-			</Property>
-			<Property name="Rare" value="NMSString0x10.xml">
-			  <Property name="Value" value="" />
-			</Property>
-		  </Property>
-		  <Property name="BaseBuildingTriggerActions" />
-		  <Property name="RewardOverrideTable" />
-		  <Property name="PersistencyBufferOverride" />
-		  <Property name="UsePersonalPersistentBuffer" value="False" />
-		  <Property name="ReseedOnRewardSuccess" value="False" />
-		  <Property name="CanCollectInMech" value="False" />
 		</Property>
-		<Property name="Linked" value="" />
-	  </Property>
-	  <Property value="LinkableNMSTemplate.xml">
-		<Property name="Template" value="GcTriggerActionComponentData.xml">
-		  <Property name="HideModel" value="False" />
-		  <Property name="StartInactive" value="False" />
+
+	  <Property name="Components" value="GcTriggerActionComponentData">
+		<Property name="GcTriggerActionComponentData">
+		  <Property name="HideModel" value="false" />
+		  <Property name="StartInactive" value="false" />
 		  <Property name="States">
-			<Property value="GcActionTriggerState.xml">
+			<Property name="States" value="GcActionTriggerState">
 			  <Property name="StateID" value="BOOT" />
 			  <Property name="Triggers">
-				<Property value="GcActionTrigger.xml">
-				  <Property name="Event" value="GcStateTimeEvent.xml">
-					<Property name="Seconds" value="0" />
-					<Property name="RandomSeconds" value="0" />
-					<Property name="UseMissionClock" value="False" />				
-				  </Property>		  
+				<Property name="Triggers" value="GcActionTrigger">
+				  <Property name="Event" value="GcStateTimeEvent">
+					<Property name="GcStateTimeEvent">
+					  <Property name="Seconds" value="0" />
+					  <Property name="RandomSeconds" value="0" />
+					  <Property name="UseMissionClock" value="false" />				
+					</Property>
+				  </Property>
 				  <Property name="Action">
-					<Property value="GcGoToStateAction.xml">
-					  <Property name="State" value="WAIT_FOR_DISCOV" />
-					  <Property name="Broadcast" value="False" />
-					  <Property name="BroadcastLevel" value="Local" />
-					</Property>			
+					<Property name="Action" value="GcGoToStateAction">
+					  <Property name="GcGoToStateAction">
+						<Property name="State" value="WAIT_FOR_DISCOV" />
+						<Property name="Broadcast" value="False" />
+						<Property name="BroadcastLevel" value="GcBroadcastLevel">
+						  <Property name="BroadcastLevel" value="Local" />
+						</Property>
+					  </Property>
+					</Property>
 				  </Property>
 				</Property>
 			  </Property>
 			</Property>
-			<Property value="GcActionTriggerState.xml">
+			<Property name="States" value="GcActionTriggerState">
 			  <Property name="StateID" value="DISCOVER" />
 			  <Property name="Triggers">
-				<Property value="GcActionTrigger.xml">
-				  <Property name="Event" value="GcStateTimeEvent.xml">
-					<Property name="Seconds" value="0" />
-					<Property name="RandomSeconds" value="0" />
-					<Property name="UseMissionClock" value="False" />				
+				<Property name="Triggers" value="GcActionTrigger">
+				  <Property name="Event" value="GcStateTimeEvent">
+					<Property name="GcStateTimeEvent">
+					  <Property name="Seconds" value="0" />
+					  <Property name="RandomSeconds" value="0" />
+					  <Property name="UseMissionClock" value="False" />				
+					</Property>
 				  </Property>
 				  <Property name="Action">
-					<Property value="GcFireSimpleInteractionAction.xml" />
-					<Property value="GcGoToStateAction.xml">
-					  <Property name="State" value="WAIT_FOR_DISCOV" />
-					  <Property name="Broadcast" value="False" />
-					  <Property name="BroadcastLevel" value="Local" />
+					<Property name="Action" value="GcFireSimpleInteractionAction">
+					  <Property name="GcFireSimpleInteractionAction" />
+					</Property>
+					<Property name="Action" value="GcGoToStateAction">
+					  <Property name="GcGoToStateAction">
+						<Property name="State" value="WAIT_FOR_DISCOV" />
+						<Property name="Broadcast" value="False" />
+						<Property name="BroadcastLevel" value="GcBroadcastLevel">
+						  <Property name="BroadcastLevel" value="Local" />
+						</Property>
+					  </Property>				
 					</Property>				
 				  </Property>
 				</Property>
 			  </Property>
 			</Property>
-			<Property value="GcActionTriggerState.xml">
+			<Property name="States" value="GcActionTriggerState">
 			  <Property name="StateID" value="WAIT_FOR_DISCOV" />
 			  <Property name="Triggers">
-				<Property value="GcActionTrigger.xml">
-				  <Property name="Event" value="GcAnimFrameEvent.xml">
-					<Property name="Anim" value="DISCOVER" />
-					<Property name="FrameStart" value="0" />
-					<Property name="StartFromEnd" value="False" />
+				<Property name="Triggers" value="GcActionTrigger">
+				  <Property name="Event" value="GcAnimFrameEvent">
+					<Property name="GcAnimFrameEvent">
+					  <Property name="Anim" value="DISCOVER" />
+					  <Property name="FrameStart" value="0" />
+					  <Property name="StartFromEnd" value="False" />
+					</Property>			  
 				  </Property>			  
 				  <Property name="Action">
-					<Property value="GcGoToStateAction.xml">
-					  <Property name="State" value="DISCOVER" />
-					  <Property name="Broadcast" value="False" />
-					  <Property name="BroadcastLevel" value="Local" />
+					<Property name="Action" value="GcGoToStateAction">
+					  <Property name="GcGoToStateAction">
+						<Property name="State" value="DISCOVER" />
+						<Property name="Broadcast" value="False" />
+						<Property name="BroadcastLevel" value="GcBroadcastLevel">
+						  <Property name="BroadcastLevel" value="Local" />
+						</Property>
+					  </Property>			
 					</Property>			
 				  </Property>
 				</Property>	
 			  </Property>
 			</Property>
 		  </Property>
-		  <Property name="Persistent" value="False" />
+		  <Property name="Persistent" value="false" />
 		  <Property name="PersistentState" value="" />
-		  <Property name="ResetShotTimeOnStateChange" value="False" />
-		  <Property name="LinkStateToBaseGrid" value="False" />
+		  <Property name="ResetShotTimeOnStateChange" value="false" />
+		  <Property name="LinkStateToBaseGrid" value="false" />
 		</Property>
-		<Property name="Linked" value="" />
-    </Property>	
-]]							
+      </Property>
+]]
+
+--[[
+]]--
 						}
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["MXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
 							["LINE_OFFSET"]         = "+0",
 							["ADD"] = 
 [[
-	<Property value="GcPlayerEmote.xml">
-	  <Property name="Title" value="Discover" />
-	  <Property name="ChatText" value="" />
-	  <Property name="ChatUsesPrefix" value="False" />
-	  <Property name="EmoteID" value="DISCOVER" />
-	  <Property name="AnimationName" value="DISCOVER" />
-      <Property name="PropData" value="GcPlayerEmotePropData.xml">
-        <Property name="Model" value="" />
-        <Property name="Scale" value="0" />
-        <Property name="Hand" value="GcHand.xml">
-          <Property name="Hand" value="Right" />
-        </Property>
-        <Property name="IsHologram" value="False" />
-        <Property name="ScanEffectNodeName" value="" />
-        <Property name="ScanEffect" value="GcScanEffectData.xml">
-          <Property name="Id" value="" />
-          <Property name="ScanEffectType" value="Building" />
-          <Property name="Colour" value="Colour.xml">
-            <Property name="R" value="0.823" />
-            <Property name="G" value="0.475" />
-            <Property name="B" value="0.432" />
-            <Property name="A" value="1" />
-          </Property>
-          <Property name="BasecolourIntensity" value="0.2" />
-          <Property name="ScanlinesSeparation" value="0.1" />
-          <Property name="FresnelIntensity" value="3" />
-          <Property name="GlowIntensity" value="0" />
-          <Property name="WaveOffset" value="0" />
-          <Property name="WaveActive" value="True" />
-          <Property name="FixedUpAxis" value="False" />
-          <Property name="Transparent" value="False" />
-          <Property name="ModelFade" value="False" />
-          <Property name="FadeInTime" value="0.2" />
-          <Property name="FadeOutTime" value="0.2" />
-        </Property>
-        <Property name="DelayTime" value="0" />
-      </Property>
-	  <Property name="Icon" value="TkTextureResource.xml">
-		<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/CATEGORIES/UPGRADECAT.SCAN.DDS" />
-		<Property name="ResHandle" value="GcResource.xml">
-		  <Property name="ResourceID" value="0" />
+		<Property name="Emotes" value="GcPlayerEmote">
+			<Property name="Title" value="Discover" />
+			<Property name="ChatText" value="" />
+			<Property name="ChatUsesPrefix" value="false" />
+			<Property name="EmoteID" value="DISCOVER" />
+			<Property name="AnimationName" value="DISCOVER" />
+			<Property name="PropData" value="GcPlayerEmotePropData">
+				<Property name="Model" value="" />
+				<Property name="Scale" value="0.000000" />
+				<Property name="Hand" value="GcHand">
+					<Property name="Hand" value="Right" />
+				</Property>
+				<Property name="IsHologram" value="false" />
+				<Property name="ScanEffectNodeName" value="" />
+				<Property name="ScanEffect" value="GcScanEffectData">
+					<Property name="Id" value="" />
+					<Property name="ScanEffectType" value="Building" />
+					<Property name="Colour">
+						<Property name="R" value="0.823000" />
+						<Property name="G" value="0.475000" />
+						<Property name="B" value="0.432000" />
+						<Property name="A" value="1.000000" />
+					</Property>
+					<Property name="BasecolourIntensity" value="0.200000" />
+					<Property name="ScanlinesSeparation" value="0.100000" />
+					<Property name="FresnelIntensity" value="3.000000" />
+					<Property name="GlowIntensity" value="0.000000" />
+					<Property name="WaveOffset" value="0.000000" />
+					<Property name="WaveActive" value="true" />
+					<Property name="FixedUpAxis" value="false" />
+					<Property name="Transparent" value="false" />
+					<Property name="ModelFade" value="false" />
+					<Property name="FadeInTime" value="0.200000" />
+					<Property name="FadeOutTime" value="0.200000" />
+				</Property>
+				<Property name="DelayTime" value="0.000000" />
+			</Property>
+			<Property name="Icon" value="TkTextureResource">
+				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/CATEGORIES/UPGRADECAT.SCAN.DDS" />
+				<Property name="ResHandle" value="GcResource">
+					<Property name="ResourceID" value="0" />
+				</Property>
+			</Property>
+			<Property name="LinkedSpecialID" value="" />
+			<Property name="NeverShowInMenu" value="false" />
+			<Property name="LoopAnimUntilMove" value="" />
+			<Property name="CloseMenuOnSelect" value="true" />
+			<Property name="MoveToCancel" value="false" />
+			<Property name="GekAnimationName" value="" />
+			<Property name="GekLoopAnimUntilMove" value="" />
+			<Property name="AvailableUnderwater" value="false" />
+			<Property name="RidingAnimationName" value="DISCOVER" />
+			<Property name="IsPetCommand" value="false" />
+			<Property name="PetCommandTitle" value="" />
+			<Property name="PetCommandIcon" value="TkTextureResource">
+				<Property name="Filename" value="" />
+				<Property name="ResHandle" value="GcResource">
+					<Property name="ResourceID" value="0" />
+				</Property>
+			</Property>
+			<Property name="IconResource" value="GcResource">
+				<Property name="ResourceID" value="0" />
+			</Property>
+			<Property name="IconPetCommandResource" value="GcResource">
+				<Property name="ResourceID" value="0" />
+			</Property>
 		</Property>
-	  </Property>
-	  <Property name="LinkedSpecialID" value="" />
-	  <Property name="LoopAnimUntilMove" value="" />
-	  <Property name="CloseMenuOnSelect" value="False" />
-	  <Property name="GekAnimationName" value="" />
-	  <Property name="GekLoopAnimUntilMove" value="" />
-	  <Property name="AvailableUnderwater" value="False" />
-	  <Property name="RidingAnimationName" value="DISCOVER" />
-      <Property name="IsPetCommand" value="False" />
-      <Property name="PetCommandTitle" value="" />
-      <Property name="PetCommandIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="IconResource" value="GcResource.xml">
-        <Property name="ResourceID" value="0" />
-      </Property>
-      <Property name="IconPetCommandResource" value="GcResource.xml">
-        <Property name="ResourceID" value="0" />
-      </Property>
-	</Property>
 ]]							
 						}
 					}
@@ -286,32 +306,68 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		}		
 	},
-["ADD_FILES"] = 
-	{
-		{
-			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 = 
-[[
+    ["ADD_FILES"] = {
+        {
+            ["FILE_DESTINATION"] = "MODELS/TESTS/EFFECTTEST.ANIM.MXML",
+            ["FILE_CONTENT"] = [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkAnimMetadata">
+
+<Data template="cTkAnimMetadata">
+  <Property name="NodeData">
+    <Property name="NodeData" value="TkAnimNodeData">
+      <Property name="Node" value="AnimatedTrans" />
+      <Property name="RotIndex" value="0" />
+      <Property name="TransIndex" value="0" />
+      <Property name="ScaleIndex" value="0" />
+    </Property>
+  </Property>
+  <Property name="AnimFrameData">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
+      <Property name="Rotations" />
+      <Property name="Translations" />
+      <Property name="Scales" />
+    </Property>
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
+      <Property name="Rotations" />
+      <Property name="Translations" />
+      <Property name="Scales" />
+    </Property>
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
+      <Property name="Rotations" />
+      <Property name="Translations" />
+      <Property name="Scales" />
+    </Property>
+  </Property>
+  <Property name="StillFrameData" value="TkAnimNodeFrameData">
+    <Property name="Rotations">
+      <Property name="Rotations" value="Quaternion">
+        <Property name="X" value="0" />
+        <Property name="Y" value="0" />
+        <Property name="Z" value="0" />
+        <Property name="W" value="1" />
+        <Property name="dropComponent" value="3" />
+      </Property>
+    </Property>
+    <Property name="Translations">
+      <Property name="Translations">
+        <Property name="X" value="-0.73121876" />
+        <Property name="Y" value="0.08333181" />
+        <Property name="Z" value="-0.02858855" />
+      </Property>
+    </Property>
+    <Property name="Scales">
+      <Property name="Scales">
+        <Property name="X" value="1.000000" />
+        <Property name="Y" value="1.000000" />
+        <Property name="Z" value="1.000000" />
+      </Property>
+    </Property>
+  </Property>
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="NodeData" /> 
-  <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />
-    </Property>  
-  </Property>	
-  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />	  
- </Property>
-</Data>	
-]]			
-		}
-	}
+  <Property name="Has30HzFrames" value="false" />
+</Data>
+]]
+        }
+    }
 }
-
