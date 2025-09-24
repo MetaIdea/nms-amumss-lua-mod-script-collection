@@ -125,42 +125,42 @@ local m_Cloud03T                = 0.4   --Original "1"
 
 --Fog Height
 local m_HeightFogHeightMin      = -3   --Original "100"
-local m_WaterAlphaHeightMin     = 20   --Original "40"
+local m_WaterAlphaHeightMin     = 10   --Original "40"
 
 --Planet Fog
-local m_PPF_FogStrength         = 0.03 --Original "0.04"
-local m_PPF_FogMax              = 0.7  --Original "1"
-local m_PPF_FogColourStrength   = 0.8  --Original "10"
-local m_PPF_HeightFogStrength   = 0.06 --Original "0.08"
-local m_PPF_HeightFogFOStrength = 0.12 --Original "0.25"
-local m_PPF_HeightFogMax        = 0.65 --Original "0.8"
-local m_PPF_FogHeight           = 96   --Original "128"
+local m_PPF_FogStrength         = 0.01 --Original "0.04"
+local m_PPF_FogMax              = 0.3  --Original "1"
+local m_PPF_FogColourStrength   = 0.5  --Original "10"
+local m_PPF_HeightFogStrength   = 0.01 --Original "0.08"
+local m_PPF_HeightFogFOStrength = 0.10 --Original "0.25"
+local m_PPF_HeightFogMax        = 0.35 --Original "0.8"
+local m_PPF_FogHeight           = 32   --Original "128"
 
 --Planet Flight Fog
-local m_PFF_FogStrength         = 0.03 --Original "0.04"
-local m_PFF_FogMax              = 0.7  --Original "1"
-local m_PFF_FogColourStrength   = 0.8  --Original "10"
-local m_PFF_HeightFogStrength   = 0.06 --Original "0.08"
-local m_PFF_HeightFogFOStrength = 0.12 --Original "0.25"
-local m_PFF_HeightFogMax        = 0.65 --Original "0.8"
-local m_PFF_FogHeight           = 96   --Original "128"
+local m_PFF_FogStrength         = 0.01 --Original "0.04"
+local m_PFF_FogMax              = 0.3  --Original "1"
+local m_PFF_FogColourStrength   = 0.5  --Original "10"
+local m_PFF_HeightFogStrength   = 0.01 --Original "0.08"
+local m_PFF_HeightFogFOStrength = 0.10 --Original "0.25"
+local m_PFF_HeightFogMax        = 0.35 --Original "0.8"
+local m_PFF_FogHeight           = 32   --Original "128"
 
 --Planet Extreme Fog
-local m_PXF_FogStrength         = 0.4  --Original "0.5"
-local m_PXF_FogMax              = 0.6  --Original "0.9"
-local m_PXF_FogColourStrength   = 0.8  --Original "6"
-local m_PXF_HeightFogStrength   = 0.06 --Original "0.3"
+local m_PXF_FogStrength         = 0.2  --Original "0.5"
+local m_PXF_FogMax              = 0.3  --Original "0.9"
+local m_PXF_FogColourStrength   = 0.3  --Original "6"
+local m_PXF_HeightFogStrength   = 0.01 --Original "0.3"
 local m_PXF_HeightFogFOStrength = 0.05 --Original "0.1"
-local m_PXF_HeightFogMax        = 0.4  --Original "0.6"
-local m_PXF_FogHeight           = 6    --Original "8"
+local m_PXF_HeightFogMax        = 0.3  --Original "0.6"
+local m_PXF_FogHeight           = 4    --Original "8"
 
 --Planet Storm Fog
-local m_PSF_FogStrength         = 0.85 --Original "1.5"
-local m_PSF_FogMax              = 0.7  --Original "0.95"
-local m_PSF_FogColourStrength   = 0.8  --Original "2.5"
-local m_PSF_HeightFogStrength   = 0.06 --Original "0.5"
-local m_PSF_HeightFogFOStrength = 0.15 --Original "0.3"
-local m_PSF_HeightFogMax        = 0.4  --Original "0.6"
+local m_PSF_FogStrength         = 0.5  --Original "1.5"
+local m_PSF_FogMax              = 0.3  --Original "0.95"
+local m_PSF_FogColourStrength   = 0.3  --Original "2.5"
+local m_PSF_HeightFogStrength   = 0.01 --Original "0.5"
+local m_PSF_HeightFogFOStrength = 0.05 --Original "0.3"
+local m_PSF_HeightFogMax        = 0.3  --Original "0.6"
 local m_PSF_FogHeight           = 2    --Original "4"
 
 -----------------------------------------------------------------------------------------------------
@@ -383,7 +383,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                               {"Ultra",  "TkLODSettingsData"},
                             },
                             VCT = {
-                                {"ViewImpostersFromSpace", true},
                                 {"MaxAsteroidGenerationPerFramePulseJump", "0"},
                             },
                         },
