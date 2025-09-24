@@ -10,6 +10,8 @@ local description = [[
 No speed lines.
 No ship halo effect at cruise/boost/pulse in space.
 No Space Dust / Plasma.
+No Asteroids During Pulse.
+No Metric Lines During Pulse
 
 ]]
 
@@ -50,12 +52,68 @@ local cfgSpacePlasma = {
   [[MODELS\EFFECTS\SPACE\PLASMA\PLASMA.MATERIAL.MBIN]]
 }
 
+local cfgNoAsteroidsPulse = {
+  [[GCENVIRONMENTGLOBALS.GLOBAL.MBIN]]
+}
+
+local cfgNoMetricLines = {
+  [[GCSPACESHIPGLOBALS.GLOBAL.MBIN]]
+}
+
 -- Modifications
 ----------------------------------------------------------------------------------------
 
 local all_modifications = {}
 
 ----------------------------------------------------------------------------------------
+
+-- No Metric Lines During Pulse
+----------------------------------------------------------------------------------------
+
+for _, filepath in ipairs(cfgNoMetricLines) do
+    local modifications = {}
+
+    table.insert(modifications, {
+        VCT = {{"MiniWarpLinesNum", 0},}
+    })
+
+    table.insert(all_modifications, {
+        MBIN_CT = {
+            {
+                MBIN_FS = filepath,
+                MXML_CT = modifications
+            }
+        }
+    })
+end
+
+-- No Asteroids During Pulse
+----------------------------------------------------------------------------------------
+
+for _, filepath in ipairs(cfgNoAsteroidsPulse) do
+    local modifications = {}
+
+    table.insert(modifications, {
+        SKW = {
+          {"Low",    "TkLODSettingsData"},
+          {"Medium", "TkLODSettingsData"},
+          {"High",   "TkLODSettingsData"},
+          {"Ultra",  "TkLODSettingsData"},
+        },
+        VCT = {
+            {"MaxAsteroidGenerationPerFramePulseJump", "0"},
+        },
+    })
+
+    table.insert(all_modifications, {
+        MBIN_CT = {
+            {
+                MBIN_FS = filepath,
+                MXML_CT = modifications
+            }
+        }
+    })
+end
 
 -- Ship Boost
 ----------------------------------------------------------------------------------------
