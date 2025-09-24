@@ -783,8 +783,24 @@ LEGACY_OBJECTS = -- DEFAULTSAVEDATA VANILLA KnownProducts
 				}
 			},
 			{
+				["ID"] = "SET_B_MONU",
+				["AddGroup"] = 2,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
+				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
+				{
+					{"FURNITURE", "FURNDECOR"},
+				}
+			},
+			{
 				["ID"] = "S_TOWER",
 				["AddGroup"] = 2,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
+				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
+				{
+					{"FURNITURE", "FURNDECOR"},
+				}
+			},
+			{
+				["ID"] = "SET_FISHPOND",
+				["AddGroup"] = 3,	-- ONLY USE 1 IF OBJECT IS IN NO GROUP IN VANILLA, ELSE USE 2 TO REPLACE GROUP AND SUBGROUP
 				["Groups"] =		-- AddGroup = 1: add groups to empty groups; 2, replace current with first entry; 3, do nothing
 				{
 					{"FURNITURE", "FURNDECOR"},
@@ -1194,6 +1210,292 @@ NMS_MOD_DEFINITION_CONTAINER =
 							-- ["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= table.concat(KNOWNPRODUCTS)
 						}
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/NMS_BASEPARTPRODUCTS.EXML",
+					["MXML_CHANGE_TABLE"]	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_CONSTRUCT"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "UI_SETTLEMENT_MISS_MARKER_2"},
+								{"NameLower", "UI_SETTLEMENT_MISS_MARKER_2"},
+								-- {"BLD_SET_SUB", "UI_SETTLEMENT_MISS_MARKER_2"},
+								-- {"BLD_SET_MONUMENT_DESC", "UI_SETTLEMENT_MISS_MARKER_2"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.MONITORDESK.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_CONSTRUCT"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Subtitle", "UI_SETTLEMENT_MISS_MARKER_2"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_CONSTRUCT"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Description"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Description", "UI_SETTLEMENT_MISS_MARKER_2"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_CONSTRUCT"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.MONITORDESK.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MAYORTERM"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "UI_SETTLEMENT_MISS_MARKER_3"},
+								{"NameLower", "UI_SETTLEMENT_MISS_MARKER_3"},
+								-- {"BLD_SET_SUB", "UI_SETTLEMENT_MISS_MARKER_3"},
+								-- {"BLD_SET_MONUMENT_DESC", "UI_SETTLEMENT_MISS_MARKER_3"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.MONITORDESK.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MAYORTERM"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Subtitle", "UI_SETTLEMENT_MISS_MARKER_3"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MAYORTERM"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Description"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Description", "UI_SETTLEMENT_MISS_MARKER_3"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MAYORTERM"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.MONITORDESK.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MONUMENT"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "UI_SETTLEMENT_MISS_MARKER_1"},
+								{"NameLower", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_SUB", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_MONUMENT_DESC", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "TEXTURES\UI\FRONTEND\ICONS\SETTLEMENT/SETTLE_MONU_S.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MONUMENT"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Subtitle", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MONUMENT"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Description"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Description", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MONUMENT"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "TEXTURES\UI\FRONTEND\ICONS\SETTLEMENT/RACE.VYKEEN.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_T_MONU"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "UI_SETTLEMENT_MISS_MARKER_1"},
+								{"NameLower", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_SUB", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_MONUMENT_DESC", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "TEXTURES\UI\FRONTEND\ICONS\SETTLEMENT/SETTLE_MONU_F.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_T_MONU"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Subtitle", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_T_MONU"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Description"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Description", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_T_MONU"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "TEXTURES\UI\FRONTEND\ICONS\SETTLEMENT/RACE.KORVAX.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_F_MONU"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "UI_SETTLEMENT_MISS_MARKER_1"},
+								{"NameLower", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_SUB", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_MONUMENT_DESC", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "TEXTURES\UI\FRONTEND\ICONS\SETTLEMENT/SETTLE_MONU_T.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_F_MONU"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Subtitle", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_F_MONU"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Description"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Description", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_F_MONU"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "TEXTURES\UI\FRONTEND\ICONS\SETTLEMENT/RACE.GEK.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","S_TOWER"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "BLD_TOWER_NAME"},
+								{"NameLower", "BLD_TOWER_NAME_L"},
+								-- {"BLD_SET_SUB", "BLD_TOWER_SUBTITLE"},
+								-- {"BLD_SET_MONUMENT_DESC", "BLD_TOWER_DESCRIPTION"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "TEXTURES\UI\FRONTEND\ICONS\SETTLEMENT/SETTLE_TOWER_S.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","S_TOWER"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Subtitle", "BLD_TOWER_SUBTITLE"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","S_TOWER"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Description"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Description", "BLD_TOWER_DESCRIPTION"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","S_TOWER"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "TEXTURES\UI\FRONTEND\ICONS\SETTLEMENT/RACE.VYKEEN.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_B_MONU"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "UI_SETTLEMENT_MISS_MARKER_1"},
+								{"NameLower", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_SUB", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_MONUMENT_DESC", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "TEXTURES\UI\FRONTEND\ICONS\SETTLEMENT/SETTLE_MONU_T.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_B_MONU"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Subtitle", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_B_MONU"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Description"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Description", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_B_MONU"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "TEXTURES\UI\FRONTEND\ICONS\SETTLEMENT/RACE.ROBOT.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_FISHPOND"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "UI_SETTLEMENT_PROD_REQ_FISH"},
+								{"NameLower", "UI_SETTLEMENT_PROD_REQ_FISH"},
+								-- {"BLD_SET_SUB", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_MONUMENT_DESC", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "TEXTURES\UI\FRONTEND\ICONS\SETTLEMENT/SETTLE_MONU_T.DDS"},
+							}
+						},
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","SET_FISHPOND"},
+							-- -- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"Subtitle", "UI_SETTLEMENT_MISS_MARKER_1"},
+							-- }
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","SET_FISHPOND"},
+							-- -- ["PRECEDING_KEY_WORDS"] = {"Description"},
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"Description", "UI_SETTLEMENT_MISS_MARKER_1"},
+							-- }
+						-- },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_FISHPOND"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "TEXTURES\UI\FRONTEND\ICONS\QUICKMENU/SUMMONFISHINGPLATFORM.DDS"},
+							}
+						},
 					},
 				},
 				{

@@ -2,7 +2,7 @@ DIVISOR = "2"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "TinyCreatures-All",
+["MOD_FILENAME"]            = "Tiny Creatures-All",
 ["MOD_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "5.73",
 ["MOD_DESCRIPTION"]         = "Reduces size for all creature types by ~50%",

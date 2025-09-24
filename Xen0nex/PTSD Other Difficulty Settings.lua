@@ -1,8 +1,12 @@
 ModName = "PTSd Other Difficulty Settings"
-GameVersion = "5_64"
+GameVersion = "6_04"
 Description = "Affects most of the Difficulty Setting menu options, except for Stack Sizes"
 
-DisablePlanetaryPirateRaids				=false								--false		Set true to disable any planetary pirate raids
+DisablePlanetaryPirateRaids				=false							--false		Set true to disable any planetary pirate raids
+
+LowerExpeditionMinimums =				true							--false		Allows various difficulty settings to be adjusted lower in Expedition Mode
+AllowExpeditionFreeCraft =				true							--false		Allows Crafting difficulty to be set all the way to "Free" in Expeditions (for the purpose of working around PTSd recipes which may not be possible otherwise during Expeditions)
+	--NOTE: For most Expeditions, you will have to manually set "CraftingIsFree" to true in the "SEASON_DATA_CACHE.JSON" file of the cache folder of your savegame folder, "\AppData\Roaming\HelloGames\NMS" by default for Steam on Windows
 
 --Controls whether you can both increase and decrease the Stack Size limit from the options menu after starting a game
 StackLimitSettings =			"FullyEditable"							--"DecreaseOnly"		(Options are "FullyEditable", "DecreaseOnly", "LockedHidden")
@@ -915,6 +919,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				ADD = LowNeverSoldItems
 			},
 		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DEFAULTSEASONALDATA.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			--Left intentionally blank
+		}
 	}
 }}}}
 
@@ -1038,6 +1049,48 @@ for i = 1, #Presets do
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{CombatValues[2][1], CombatValues[2][2]}
+				}
+			}
+end
+
+local ChangesToDefaultSeasonData = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["MXML_CHANGE_TABLE"]
+
+if LowerExpeditionMinimums then
+			ChangesToDefaultSeasonData[#ChangesToDefaultSeasonData+1] = 
+			{
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"DeathConsequences",	"ItemGrave"},
+					{"DamageReceivedDifficulty",	"Low"},
+					{"DamageGiven",	"Normal"},
+					{"ActiveSurvivalBars",	"All"},
+					{"HazardDrain",	"Slow"},
+					{"EnergyDrain",	"Slow"},
+					{"SubstanceCollection",	"Normal"},
+					{"InventoryStackLimits",	"High"},
+					{"ChargingRequirements",	"Low"},
+					{"FuelUse",	"Cheap"},
+					{"LaunchFuelCost",	"Low"},
+					{"CurrencyCost",	"Cheap"},
+					{"ItemShopAvailability",	"High"},
+					{"ScannerRecharge",	"Fast"},
+					{"ReputationGain",	"Fast"},
+					{"CreatureHostility",	"AttackIfProvoked"},
+					{"SpaceCombatTimers",	"Slow"},
+					{"GroundCombatTimers",	"Slow"},
+					{"SprintingCost",	"Low"},
+					{"BreakTechOnDamage",	"None"},
+					{"Fishing",	"LongCatchWindow"},
+				}
+			}
+end
+
+if AllowExpeditionFreeCraft then
+			ChangesToDefaultSeasonData[#ChangesToDefaultSeasonData+1] = 
+			{
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"CraftingIsFree",	"true"}
 				}
 			}
 end

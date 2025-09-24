@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Unlock costs"
-GameVersion = "6_03"
+GameVersion = "6_04"
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
 UpgradeCMult	=		1.2							--Vanilla cost is	60		This multiplies the vanilla "BaseValue", affecting both purchase and selling prices.	E.G. "1.2" means you sell them for 1.2x the vanilla price, and shops charge 1.2x more
@@ -23,7 +23,7 @@ TechCostMult = 			20							--Multiplier applies to the "FragmentCost" of the tec
 	--Additional multipliers are applied to specific Tech to balance them due to normally having unbalanced prices that are too high or too low, e.g. Translator tech having a very high price
 	--These adjustment multipliers can be seen and changed in the TechAdjustments Table below
 
---Recipe Cost mutipliers	(Note, these multipliers also apply to the cost in Factory Override Units to unlock at a breached Manufacturing facility, so you should make sure the "FACT_TOKEN" reward for those is also multiplied by the same amount, e.g. by BountyandExpeditionRewards+FactTokens mod)
+--Recipe Cost mutipliers	(Note, these multipliers also apply to the cost in Factory Override Units to unlock at a breached Manufacturing facility, so you should make sure the "FACT_TOKEN" reward for those is also multiplied by the same amount, e.g. by PTSd Rewards Remixer.lua)
 	--NOTE: Probably works best if these are all the same value, so that you can use that same value to multiply the Factory Override Token award amount and stack size
 AtlasPassesMult	=					10			--Multiplier applied to default cost of 250 Nanites
 ComponentCraftsMult	=				10			--Multiplier applied to default cost of 250 Nanites for Components & Devices
@@ -44,13 +44,15 @@ SimpleMachineMult	=				5			--Multiplier applied to default cost of 1 Salvaged Da
 MachineMult	=						3			--Multiplier applied to default cost of 10 Salvaged Data	(Alternative Landing Pad is 1 Salvaged Data, though)
 MedRefinerMult	=					1.5			--Multiplier applied to default cost of 10 Salvaged Data
 AntimatterReactorMult	=			2			--Multiplier applied to default cost of 20 Salvaged Data
-StorageContainers012Mult	=		1			--Multiplier applied to default cost of 5 Salvaged Data for Containers 0, 1, & 2	(These are the only ones given freely by the base building mission in PTSd)
-StorageContainers345Mult	=		2			--Multiplier applied to default cost of 5 Salvaged Data for Containers 3, 4, & 5
-StorageContainers678Mult	=		3			--Multiplier applied to default cost of 5 Salvaged Data for Containers 6, 7, & 8
-StorageContainer9Mult	=			4			--Multiplier applied to default cost of 5 Salvaged Data for Container 9
 FabricatorsMult	=					10			--Multiplier applied to default cost of 1 Salvaged Data (These are the Barrel/Crate Fabricators that spawn items)
 WonderProjectorMult	=				0.5			--Multiplier applied to default cost of 12 Salvaged Data
 AutoFishTrapMult	=				6			--Multiplier applied to default cost of 1 Salvaged Data
+
+StorageContainers012Mult	=		1			--Multiplier applied to default cost of 5 Salvaged Data for Containers 0, 1, & 2	(These are the only ones given freely by the base building mission in PTSd), and 1 Salvaged Data for Cargo Racks 0, 1, & 2
+StorageContainers345Mult	=		2			--Multiplier applied to default cost of 5 Salvaged Data for Containers 3, 4, & 5, and 1 Salvaged Data for Cargo Racks 3, 4, & 5
+StorageContainers678Mult	=		3			--Multiplier applied to default cost of 5 Salvaged Data for Containers 6, 7, & 8, and 1 Salvaged Data for Cargo Racks 6, 7, & 8
+StorageContainer9Mult	=			4			--Multiplier applied to default cost of 5 Salvaged Data for Container 9, and 1 Salvaged Data for Cargo Rack 9
+CorvetteContainerMult	=			5			--Multiplier applied to the cost for all Corvette Cargo Racks, stacking with the multipliers above
 
 ExpensivePrefabAMult	=			0.33		--Multiplier applied to default cost of 3 or 6 Salvaged Data
 ExpensivePrefabBMult	=			0.2			--Multiplier applied to default cost of 5 or 10 Salvaged Data
@@ -1082,6 +1084,44 @@ RecipeChangesBase	=			--For items which have their data in NMS_MODULARCUSTOMISAT
 	},
 	{
 		{
+			StorageContainers012Mult*CorvetteContainerMult
+		},
+		{
+			"B_WALL_CARG0",
+			"B_WALL_CARG1",
+			"B_WALL_CARG2"
+		},
+	},
+	{
+		{
+			StorageContainers345Mult*CorvetteContainerMult
+		},
+		{
+			"B_WALL_CARG3",
+			"B_WALL_CARG4",
+			"B_WALL_CARG5"
+		},
+	},
+	{
+		{
+			StorageContainers678Mult*CorvetteContainerMult
+		},
+		{
+			"B_WALL_CARG6",
+			"B_WALL_CARG7",
+			"B_WALL_CARG8"
+		},
+	},
+	{
+		{
+			StorageContainer9Mult*CorvetteContainerMult
+		},
+		{
+			"B_WALL_CARG9"
+		},
+	},
+	{
+		{
 			FabricatorsMult
 		},
 		{
@@ -1941,10 +1981,10 @@ NewContainerTree =
             <Property name="Unlockable" value="CONTAINER0" />
             <Property name="Children">
 			  <Property name="Children" value="GcUnlockableItemTreeNode">
-                    <Property name="Unlockable" value="B_WALL_CARG0" />
+                    <Property name="Unlockable" value="FRE_ROOM_STORE0" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="FRE_ROOM_STORE0" />
+						  <Property name="Unlockable" value="B_WALL_CARG0" />
 						  <Property name="Children" />
 					    </Property>
 					</Property>
@@ -1953,10 +1993,10 @@ NewContainerTree =
                 <Property name="Unlockable" value="CONTAINER1" />
                 <Property name="Children">
                   <Property name="Children" value="GcUnlockableItemTreeNode">
-                    <Property name="Unlockable" value="B_WALL_CARG1" />
+                    <Property name="Unlockable" value="FRE_ROOM_STORE1" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="FRE_ROOM_STORE1" />
+						  <Property name="Unlockable" value="B_WALL_CARG1" />
 						  <Property name="Children" />
 					    </Property>
 					</Property>
@@ -1965,10 +2005,10 @@ NewContainerTree =
                     <Property name="Unlockable" value="CONTAINER2" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="B_WALL_CARG2" />
+						  <Property name="Unlockable" value="FRE_ROOM_STORE2" />
 						  <Property name="Children">
 								<Property name="Children" value="GcUnlockableItemTreeNode">
-								  <Property name="Unlockable" value="FRE_ROOM_STORE2" />
+								  <Property name="Unlockable" value="B_WALL_CARG2" />
 								  <Property name="Children" />
 								</Property>
 							</Property>
@@ -1979,10 +2019,10 @@ NewContainerTree =
                     <Property name="Unlockable" value="CONTAINER3" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="B_WALL_CARG3" />
+						  <Property name="Unlockable" value="FRE_ROOM_STORE3" />
 						  <Property name="Children">
 							<Property name="Children" value="GcUnlockableItemTreeNode">
-							  <Property name="Unlockable" value="FRE_ROOM_STORE3" />
+							  <Property name="Unlockable" value="B_WALL_CARG3" />
 							  <Property name="Children" />
 							</Property>
 						</Property>
@@ -1995,10 +2035,10 @@ NewContainerTree =
                 <Property name="Unlockable" value="CONTAINER4" />
                 <Property name="Children">
                   <Property name="Children" value="GcUnlockableItemTreeNode">
-                    <Property name="Unlockable" value="B_WALL_CARG4" />
+                    <Property name="Unlockable" value="FRE_ROOM_STORE4" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="FRE_ROOM_STORE4" />
+						  <Property name="Unlockable" value="B_WALL_CARG4" />
 						  <Property name="Children" />
 					    </Property>
 					</Property>
@@ -2007,10 +2047,10 @@ NewContainerTree =
                     <Property name="Unlockable" value="CONTAINER5" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="B_WALL_CARG5" />
+						  <Property name="Unlockable" value="FRE_ROOM_STORE5" />
 						  <Property name="Children">
 							<Property name="Children" value="GcUnlockableItemTreeNode">
-							  <Property name="Unlockable" value="FRE_ROOM_STORE5" />
+							  <Property name="Unlockable" value="B_WALL_CARG5" />
 							  <Property name="Children" />
 							</Property>
 						</Property>
@@ -2021,10 +2061,10 @@ NewContainerTree =
                     <Property name="Unlockable" value="CONTAINER6" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="B_WALL_CARG6" />
+						  <Property name="Unlockable" value="FRE_ROOM_STORE6" />
 						  <Property name="Children">
 							<Property name="Children" value="GcUnlockableItemTreeNode">
-							  <Property name="Unlockable" value="FRE_ROOM_STORE6" />
+							  <Property name="Unlockable" value="B_WALL_CARG6" />
 							  <Property name="Children" />
 							</Property>
 						</Property>
@@ -2037,10 +2077,10 @@ NewContainerTree =
                 <Property name="Unlockable" value="CONTAINER7" />
                 <Property name="Children">
                   <Property name="Children" value="GcUnlockableItemTreeNode">
-                    <Property name="Unlockable" value="B_WALL_CARG7" />
+                    <Property name="Unlockable" value="FRE_ROOM_STORE7" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="FRE_ROOM_STORE7" />
+						  <Property name="Unlockable" value="B_WALL_CARG7" />
 						  <Property name="Children" />
 					    </Property>
 					</Property>
@@ -2049,10 +2089,10 @@ NewContainerTree =
                     <Property name="Unlockable" value="CONTAINER8" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="B_WALL_CARG8" />
+						  <Property name="Unlockable" value="FRE_ROOM_STORE8" />
 						  <Property name="Children">
 							<Property name="Children" value="GcUnlockableItemTreeNode">
-							  <Property name="Unlockable" value="FRE_ROOM_STORE8" />
+							  <Property name="Unlockable" value="B_WALL_CARG8" />
 							  <Property name="Children" />
 							</Property>
 						</Property>
@@ -2063,10 +2103,10 @@ NewContainerTree =
                     <Property name="Unlockable" value="CONTAINER9" />
                     <Property name="Children">
 						<Property name="Children" value="GcUnlockableItemTreeNode">
-						  <Property name="Unlockable" value="B_WALL_CARG9" />
+						  <Property name="Unlockable" value="FRE_ROOM_STORE9" />
 						  <Property name="Children">
 							<Property name="Children" value="GcUnlockableItemTreeNode">
-							  <Property name="Unlockable" value="FRE_ROOM_STORE9" />
+							  <Property name="Unlockable" value="B_WALL_CARG9" />
 							  <Property name="Children" />
 							</Property>
 						</Property>

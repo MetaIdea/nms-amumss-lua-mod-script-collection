@@ -1,5 +1,5 @@
 ModName = "PTSd Product + Crafting Rebalance"
-GameVersion = "6_03"
+GameVersion = "6_04"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --Changes how effective certain substances are at recharging certain techs
@@ -693,6 +693,38 @@ AddItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MBIN
 	{	--Refiner Unit (Corvette) 
 		"B_WALL_TECH0",			"GREEN2",			100,	"Substance",
 	},
+	--Delete the below 10 entries to remove the extra stellar metal / atlas seed requirements for Corvette Cargo Racks
+	{	--Cargo Rack 0 (Corvette) 
+		"B_WALL_CARG0",			"RED2",				100,	"Substance",	--Cadmium
+	},
+	{	--Cargo Rack 1 (Corvette) 
+		"B_WALL_CARG1",			"GREEN2",			100,	"Substance",	--Emeril
+	},
+	{	--Cargo Rack 2 (Corvette) 
+		"B_WALL_CARG2",			"BLUE2",			100,	"Substance",	--Indium
+	},
+	{	--Cargo Rack 3 (Corvette) 
+		"B_WALL_CARG3",			"PURPLE2",			100,	"Substance",	--Quartzite
+	},
+	{	--Cargo Rack 4 (Corvette) 
+		"B_WALL_CARG4",			"WATERWORLD1",		100,	"Substance",	--Lithium
+	},
+	{	--Cargo Rack 5 (Corvette) 
+		"B_WALL_CARG5",			"ATLAS_SEED_7",		1,		"Product",		--State Phasure
+	},
+	{	--Cargo Rack 6 (Corvette) 
+		"B_WALL_CARG6",			"ATLAS_SEED_7",		1,		"Product",		--State Phasure
+	},
+	{	--Cargo Rack 7 (Corvette) 
+		"B_WALL_CARG7",			"ATLAS_SEED_8",		1,		"Product",		--Novae Reclaimant
+	},
+	{	--Cargo Rack 8 (Corvette) 
+		"B_WALL_CARG8",			"ATLAS_SEED_8",		1,		"Product",		--Novae Reclaimant
+	},
+	{	--Cargo Rack 9 (Corvette) 
+		"B_WALL_CARG9",			"ATLAS_SEED_9",		1,		"Product",		--Modified Quanta
+	},
+	--Delete the above 10 entries to remove the extra stellar metal / atlas seed requirements for Corvette Cargo Racks
 }
 --Replaces an existing component for certain objects with various items instead
 ReplaceItems =
@@ -878,6 +910,11 @@ ReplaceItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MB
 		"B_WALL_TECH0",			"MICROCHIP",		8,		"Product",		"HYDRALIC",
 	},
 }
+
+--Changes the amount of certain products required to construct all Corvette Cargo Racks
+CargoRackPlating				=	5				--3		Metal Plating
+CargoRackChip					=	3				--1		Microprocessor
+CargoRack2ndProduct				=	"SALVAGE_TECH7"	--"MICROCHIP"		Changes the Microprocessor ingredient to a different product (Recycled Circuitry)
 
 --Changes the substance and amount needed for crafting the "assembling" exhibit stations
 ExhibitSubstance				=	"RUINSUB"		--"LAND2"
@@ -1893,6 +1930,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ID", "MEGAPROD2"}
 							}
 						},
+						{
+							["SPECIAL_KEY_WORDS"] = {
+								 {"ID", "B_WALL_CARG0",	"ID", "CASING"}, {"ID", "B_WALL_CARG1",	"ID", "CASING"}, {"ID", "B_WALL_CARG2",	"ID", "CASING"}, {"ID", "B_WALL_CARG3",	"ID", "CASING"}, {"ID", "B_WALL_CARG4",	"ID", "CASING"}, {"ID", "B_WALL_CARG5",	"ID", "CASING"}, {"ID", "B_WALL_CARG6",	"ID", "CASING"}, {"ID", "B_WALL_CARG7",	"ID", "CASING"}, {"ID", "B_WALL_CARG8",	"ID", "CASING"}, {"ID", "B_WALL_CARG9",	"ID", "CASING"}, 
+							   },
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", CargoRackPlating},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {
+								 {"ID", "B_WALL_CARG0",	"ID", "MICROCHIP"}, {"ID", "B_WALL_CARG1",	"ID", "MICROCHIP"}, {"ID", "B_WALL_CARG2",	"ID", "MICROCHIP"}, {"ID", "B_WALL_CARG3",	"ID", "MICROCHIP"}, {"ID", "B_WALL_CARG4",	"ID", "MICROCHIP"}, {"ID", "B_WALL_CARG5",	"ID", "MICROCHIP"}, {"ID", "B_WALL_CARG6",	"ID", "MICROCHIP"}, {"ID", "B_WALL_CARG7",	"ID", "MICROCHIP"}, {"ID", "B_WALL_CARG8",	"ID", "MICROCHIP"}, {"ID", "B_WALL_CARG9",	"ID", "MICROCHIP"}, 
+							   },
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", CargoRackChip},
+								{"ID", CargoRack2ndProduct}
+							}
+						},
 					}
 				}
 			}
@@ -2455,6 +2511,7 @@ for i = 1, #ReplaceItemsBase do
 				}
 			}
 end
+
 for i = 1, #SubstanceExhibitIDs do
 	local ExhibitID = SubstanceExhibitIDs[i]
 		

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exotic Booster",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.73",
+["NMS_VERSION"]   = "6.00",
 ["MODIFICATIONS"] =
     {
         {
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Green", "GcBiomeList.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Green", "GcBiomeList"},
                             ["PRECEDING_KEY_WORDS"] = {"BiomeProbability"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Blue", "GcBiomeList.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Blue", "GcBiomeList"},
                             ["PRECEDING_KEY_WORDS"] = {"BiomeProbability"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Red", "GcBiomeList.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Red", "GcBiomeList"},
                             ["PRECEDING_KEY_WORDS"] = {"BiomeProbability"},
                             ["VALUE_CHANGE_TABLE"] =
                             {

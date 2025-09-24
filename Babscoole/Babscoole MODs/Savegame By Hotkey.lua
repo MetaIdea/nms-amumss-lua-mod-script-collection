@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "z-SavegameByHotkey",
+["MOD_FILENAME"]    = "Savegame By Hotkey",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
-["NMS_VERSION"]     = "5.73",
+["NMS_VERSION"]     = "6.00",
 ["MODIFICATIONS"]   =
     {
         {
@@ -115,8 +115,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData">
-          <Property name="Name" value="SaveData" />
-          <Property name="NameHash" value="600109282" />
+          <Property name="Name" value="REFSaveData" />
+          <Property name="NameHash" value="96205072" />
           <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0.000000" />
@@ -133,7 +133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="ATTACHMENT" />
-              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE.ENTITY.MBIN" />
+              <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SAVE\ENTITIES\SAVE.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -148,7 +148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["ADD_FILES"] =
     {
         {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE.ENTITY.MXML",
+            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SAVE\ENTITIES\SAVE.ENTITY.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
@@ -391,6 +391,57 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
   <Property name="Has30HzFrames" value="false" />
+</Data>
+]]
+        },
+        {
+            ["FILE_DESTINATION"] = "LocTable.MXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+<Data template="TkLocalisationTable">
+  <Property name="Table">
+    <Property value="TkLocalisationEntry">
+      <Property name="Id" value="Save" />
+      <Property name="English" value="Save" />
+      <Property name="French" value="Save" />
+      <Property name="Italian" value="Save" />
+      <Property name="German" value="Save" />
+      <Property name="Spanish" value="Save" />
+      <Property name="Russian" value="Save" />
+      <Property name="Polish" value="Save" />
+      <Property name="Dutch" value="Save" />
+      <Property name="Portuguese" value="Save" />
+      <Property name="LatinAmericanSpanish" value="Save" />
+      <Property name="BrazilianPortuguese" value="Save" />
+      <Property name="SimplifiedChinese" value="Save" />
+      <Property name="TraditionalChinese" value="Save" />
+      <Property name="TencentChinese" value="Save" />
+      <Property name="Korean" value="Save" />
+      <Property name="Japanese" value="Save" />
+      <Property name="USEnglish" value="Save" />
+    </Property>
+    <Property value="TkLocalisationEntry">
+      <Property name="Id" value="SAVEGAME" />
+      <Property name="English" value="SAVEGAME" />
+      <Property name="French" value="SAVEGAME" />
+      <Property name="Italian" value="SAVEGAME" />
+      <Property name="German" value="SAVEGAME" />
+      <Property name="Spanish" value="SAVEGAME" />
+      <Property name="Russian" value="SAVEGAME" />
+      <Property name="Polish" value="SAVEGAME" />
+      <Property name="Dutch" value="SAVEGAME" />
+      <Property name="Portuguese" value="SAVEGAME" />
+      <Property name="LatinAmericanSpanish" value="SAVEGAME" />
+      <Property name="BrazilianPortuguese" value="SAVEGAME" />
+      <Property name="SimplifiedChinese" value="SAVEGAME" />
+      <Property name="TraditionalChinese" value="SAVEGAME" />
+      <Property name="TencentChinese" value="SAVEGAME" />
+      <Property name="Korean" value="SAVEGAME" />
+      <Property name="Japanese" value="SAVEGAME" />
+      <Property name="USEnglish" value="SAVEGAME" />
+    </Property>
+  </Property>
 </Data>
 ]]
         },

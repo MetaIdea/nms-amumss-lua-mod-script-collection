@@ -41,7 +41,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "BackpackToggleKeepArmor",
+["MOD_FILENAME"]    = "Backpack Toggle - Keep Armor",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
 ["NMS_VERSION"]     = "6.00",
@@ -209,6 +209,57 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
   <Property name="Has30HzFrames" value="false" />
+</Data>
+]]
+        },
+        {
+            ["FILE_DESTINATION"] = "LocTable.MXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+<Data template="TkLocalisationTable">
+  <Property name="Table">
+    <Property value="TkLocalisationEntry">
+      <Property name="Id" value="Toggle Backpack" />
+      <Property name="English" value="Toggle Backpack" />
+      <Property name="French" value="Toggle Backpack" />
+      <Property name="Italian" value="Toggle Backpack" />
+      <Property name="German" value="Toggle Backpack" />
+      <Property name="Spanish" value="Toggle Backpack" />
+      <Property name="Russian" value="Toggle Backpack" />
+      <Property name="Polish" value="Toggle Backpack" />
+      <Property name="Dutch" value="Toggle Backpack" />
+      <Property name="Portuguese" value="Toggle Backpack" />
+      <Property name="LatinAmericanSpanish" value="Toggle Backpack" />
+      <Property name="BrazilianPortuguese" value="Toggle Backpack" />
+      <Property name="SimplifiedChinese" value="Toggle Backpack" />
+      <Property name="TraditionalChinese" value="Toggle Backpack" />
+      <Property name="TencentChinese" value="Toggle Backpack" />
+      <Property name="Korean" value="Toggle Backpack" />
+      <Property name="Japanese" value="Toggle Backpack" />
+      <Property name="USEnglish" value="Toggle Backpack" />
+    </Property>
+    <Property value="TkLocalisationEntry">
+      <Property name="Id" value="BACKPACK_TOGGLE" />
+      <Property name="English" value="BACKPACK_TOGGLE" />
+      <Property name="French" value="BACKPACK_TOGGLE" />
+      <Property name="Italian" value="BACKPACK_TOGGLE" />
+      <Property name="German" value="BACKPACK_TOGGLE" />
+      <Property name="Spanish" value="BACKPACK_TOGGLE" />
+      <Property name="Russian" value="BACKPACK_TOGGLE" />
+      <Property name="Polish" value="BACKPACK_TOGGLE" />
+      <Property name="Dutch" value="BACKPACK_TOGGLE" />
+      <Property name="Portuguese" value="BACKPACK_TOGGLE" />
+      <Property name="LatinAmericanSpanish" value="BACKPACK_TOGGLE" />
+      <Property name="BrazilianPortuguese" value="BACKPACK_TOGGLE" />
+      <Property name="SimplifiedChinese" value="BACKPACK_TOGGLE" />
+      <Property name="TraditionalChinese" value="BACKPACK_TOGGLE" />
+      <Property name="TencentChinese" value="BACKPACK_TOGGLE" />
+      <Property name="Korean" value="BACKPACK_TOGGLE" />
+      <Property name="Japanese" value="BACKPACK_TOGGLE" />
+      <Property name="USEnglish" value="BACKPACK_TOGGLE" />
+    </Property>
+  </Property>
 </Data>
 ]]
         },

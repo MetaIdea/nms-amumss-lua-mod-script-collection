@@ -1,10 +1,10 @@
 ----------------------------------------------------------------------------------------------------
 -- mod description
 ----------------------------------------------------------------------------------------------------
-METADATA_MOD_NAME       = "ScrapDealerSellsShipParts"
+METADATA_MOD_NAME       = "ScrapDealerSellsShipParts_AndHasASaleGoingOn"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "558"
+METADATA_NMS_VERSION    = "600"
 METADATA_MOD_DESC       = "This mod reworks the scrap dealers shop inventory, allowing them to sell starship components for Tainted Metal. Modifies files METADATA\REALITY\DEFAULTREALITY.MBIN and MMETADATA\REALITY\TABLES\NMS_MODULARCUSTOMISATIONPRODUCTS.MBIN."
 
 
@@ -31,7 +31,7 @@ ITEMS_LIMIT = 12
 SKW_SCRAP_DEALER = {"Scrap","GcTradeData",}
 
 -- VCT for modifying prices of the ship parts
-VCT_PRICE = {{"BaseValue","@/200",},}
+VCT_PRICE = {{"BaseValue","@/400",},}
 
 --------------------------------------------------
 -- lists of items displayed in scrap dealer shop
@@ -120,7 +120,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"] 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_NMS_VERSION..".pak",
+    ["MOD_FILENAME"] 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_NMS_VERSION,
     ["MOD_AUTHOR"]		    = METADATA_MOD_AUTHOR,
     ["LUA_AUTHOR"]		    = METADATA_LUA_AUTHOR,
     ["NMS_VERSION"]		    = METADATA_NMS_VERSION,

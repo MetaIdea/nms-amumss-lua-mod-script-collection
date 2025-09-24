@@ -718,6 +718,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--Intentionally left blank
 		}
 	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/COMMON/SPACECRAFT/BIGGS/TELEWATER/ENTITIES/TELEWATER.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			--Intentionally left blank
+		}
+	},
 	--[[
 	{
 		["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/COMMON/BUILDINGS/ROBOT/ROBOTBASE/ENTITIES/ROBOTWEAPONCRATE.ENTITY.MBIN"},
@@ -834,6 +841,22 @@ local ChangesToCorvTeleporter = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]
 
 if CovetteTeleportCost then
 			ChangesToCorvTeleporter[#ChangesToCorvTeleporter+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ActivationCost","GcInteractionActivationCost"},
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"SubstanceId", CorvetteTeleportSubstance},
+					{"Cost", CorvetteTeleportAmount},
+					--{"UseCostID", "CORV_COST"},
+					--{"Repeat", "true"},		--"false"
+				}
+			}
+end
+
+local ChangesToCorvTeleporterWater = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["MXML_CHANGE_TABLE"]
+
+if CovetteTeleportCost then
+			ChangesToCorvTeleporterWater[#ChangesToCorvTeleporterWater+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"ActivationCost","GcInteractionActivationCost"},
 				["VALUE_CHANGE_TABLE"] 	= 

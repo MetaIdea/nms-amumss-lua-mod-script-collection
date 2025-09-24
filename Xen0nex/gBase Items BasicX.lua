@@ -2,7 +2,7 @@ Author = "Gumsk"			--Edited by Xen0nex
 ModName = "gBase"
 ModNameSub = "Items BasicX"
 BaseDescription = "Removes restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
-GameVersion = "6_00"
+GameVersion = "6_04"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 FileSource2 = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN"		--Added by Xen0nex
@@ -63,6 +63,9 @@ OtherFreighter = "false"		--"false"		Override for setting if regular Galactic Tr
 --Controls whether any "decorative" freighter rooms / doors / walkways / storage rooms / etc. are buildable on planets or not
 FreighterRoomsPlanetside = "true"	--"false"	Override for setting if various Freighter rooms/doors/walkways/storage rooms/etc. without special functions can be built on planets or not.
 PossibleFreighterRooms = {"FRE_ROOM_IND", "FRE_ROOM_IND1", "FRE_ROOM_LADDER", "FRE_ROOM_STORE0", "FRE_ROOM_STORE1", "FRE_ROOM_STORE2", "FRE_ROOM_STORE3", "FRE_ROOM_STORE4", "FRE_ROOM_STORE5", "FRE_ROOM_STORE6", "FRE_ROOM_STORE7", "FRE_ROOM_STORE8", "FRE_ROOM_STORE9", "FRE_CORR_A", "FRE_CORR_A_GLAS", "FRE_CORR_A_L", "FRE_CORR_A_STR", "FRE_CORR_A_T", "FRE_CORR_GLA_L", "FRE_CORR_GLA_ST", "FRE_CORR_GLA_T", "FRE_CORR_G_STA", "FRE_EXT_PLATFOR", "FRE_EXT_WALKWAY", "FRE_EXT_W_STA", "FRE_FACE_DOOR_A", "FRE_FACE_WALL", "FRE_FACE_WINDOW", "FRE_ROOM_LADDER", "FRE_CORR_STA", }
+
+--Controls whether the Corvette storage rooms (Cargo Racks) are buildable on Corvettes or not
+CorvStorageBuildable = "true"	--"true"		Override for setting if all Corvette storage containers (Cargo Racks) can be built on Corvettes or not
 
 --Changes to base values for extractor rates & storage in RegionHotspotsTable, to allow higher effective storage / extraction rates without disabling base uploading
 	-- <Storage or Rate values above> / AmountCost * SubstanceYeild => in-game storage amount or rate
@@ -198,6 +201,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"IsPlaceable","false"},
 		}},
 
+	{["SPECIAL_KEY_WORDS"] = {										--Controls if Corvette storage containers are buildable or not
+                     {"ID", "B_WALL_CARG0"}, {"ID", "B_WALL_CARG1"}, {"ID", "B_WALL_CARG2"}, {"ID", "B_WALL_CARG3"}, {"ID", "B_WALL_CARG4"}, {"ID", "B_WALL_CARG5"}, {"ID", "B_WALL_CARG6"}, {"ID", "B_WALL_CARG7"}, {"ID", "B_WALL_CARG8"}, {"ID", "B_WALL_CARG9"}, 
+                   },
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableInShipDecorative", CorvStorageBuildable},
+		}},
+	
 	{["SPECIAL_KEY_WORDS"] = {"ID","MESSAGEMODULE"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"RegionLimit",MessageModRegion},

@@ -64,6 +64,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -88,6 +92,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -111,6 +119,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -312,6 +324,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_FLOOR_TRI.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -367,6 +383,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -391,6 +411,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -414,6 +438,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -644,6 +672,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\TOY_CORE.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -753,6 +785,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\BRIDGE\HELMDESK.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -776,6 +812,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -801,6 +841,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -824,6 +868,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -849,6 +897,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -872,6 +924,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\PILOTTERMINAL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -897,6 +953,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\PILOTTERMINAL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -920,6 +980,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -945,6 +1009,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -968,6 +1036,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\FLATPANEL2.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -993,6 +1065,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\FLATPANEL3.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -1016,6 +1092,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1041,6 +1121,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -1064,6 +1148,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1089,6 +1177,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -1112,6 +1204,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_L.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1137,6 +1233,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_L.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -1161,6 +1261,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_L.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -1184,6 +1288,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_L.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1299,6 +1407,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -1322,6 +1434,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1347,6 +1463,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -1370,6 +1490,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1395,6 +1519,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -1418,6 +1546,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1443,6 +1575,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -1466,6 +1602,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1491,6 +1631,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -1515,6 +1659,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -1538,6 +1686,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2493,6 +2645,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="Name" value="SCENEGRAPH" />
                   <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\BRIDGE\DRONE.SCENE.MBIN" />
                 </Property>
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
+                  <Property name="Name" value="EMBEDGEOMETRY" />
+                  <Property name="Value" value="TRUE" />
+                </Property>
               </Property>
               <Property name="Children" />
             </Property>
@@ -2807,6 +2963,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_CORNER.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -2830,6 +2990,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2855,6 +3019,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_CORNER.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -2878,6 +3046,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2903,6 +3075,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -2926,6 +3102,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_TOP.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2951,6 +3131,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_TOP.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -2974,6 +3158,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\BIOROOM_FRAME.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -2999,6 +3187,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOMFOUNDATION.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3022,6 +3214,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\BIOROOM_CEILING_3.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3047,6 +3243,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\MAINROOM_FLOOR.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3070,6 +3270,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOMFOUNDATION.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3095,6 +3299,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3118,6 +3326,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3143,6 +3355,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3166,6 +3382,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3191,6 +3411,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3214,6 +3438,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3239,6 +3467,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3262,6 +3494,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3287,6 +3523,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3310,6 +3550,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3335,6 +3579,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3358,6 +3606,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3383,6 +3635,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3406,6 +3662,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3431,6 +3691,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3454,6 +3718,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3479,6 +3747,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3502,6 +3774,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3527,6 +3803,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3550,6 +3830,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3575,6 +3859,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3598,6 +3886,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3623,6 +3915,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3646,6 +3942,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3671,6 +3971,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3694,6 +3998,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3719,6 +4027,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3742,6 +4054,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3767,6 +4083,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3790,6 +4110,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3815,6 +4139,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3838,6 +4166,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3863,6 +4195,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3887,6 +4223,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3910,6 +4250,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3935,6 +4279,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3958,6 +4306,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -3983,6 +4335,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4006,6 +4362,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -4031,6 +4391,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4054,6 +4418,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -4079,6 +4447,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4102,6 +4474,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -4127,6 +4503,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\GALAXYTERMINAL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4150,6 +4530,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CAPTAIN_CHAIR.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -4175,6 +4559,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\PILOT_STATION.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4198,6 +4586,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\STAIRS_RAILINGS.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -4223,6 +4615,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\BRIDGE_BACKWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4246,6 +4642,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LARGEDESK.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -4271,6 +4671,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LARGEDESK.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4294,6 +4698,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SAVEPOINT.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -4319,6 +4727,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITA.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4342,6 +4754,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CIRCULARRAILING.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -5302,6 +5718,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="Name" value="SCENEGRAPH" />
                   <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\BRIDGE\DRONE.SCENE.MBIN" />
                 </Property>
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
+                  <Property name="Name" value="EMBEDGEOMETRY" />
+                  <Property name="Value" value="TRUE" />
+                </Property>
               </Property>
               <Property name="Children" />
             </Property>
@@ -5618,6 +6038,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_CORNER.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5641,6 +6065,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -5666,6 +6094,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_CORNER.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5689,6 +6121,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -5714,6 +6150,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5737,6 +6177,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_TOP.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -5762,6 +6206,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_TOP.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5785,6 +6233,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\BIOROOM_FRAME.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -5810,6 +6262,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOMFOUNDATION.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5833,6 +6289,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\BIOROOM_CEILING_3.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -5858,6 +6318,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\MAINROOM_FLOOR.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5881,6 +6345,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOMFOUNDATION.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -5906,6 +6374,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5929,6 +6401,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -5954,6 +6430,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5977,6 +6457,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6002,6 +6486,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6025,6 +6513,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6050,6 +6542,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6073,6 +6569,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6098,6 +6598,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6121,6 +6625,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6146,6 +6654,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6169,6 +6681,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6194,6 +6710,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6217,6 +6737,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6242,6 +6766,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6265,6 +6793,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6290,6 +6822,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6313,6 +6849,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6338,6 +6878,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6361,6 +6905,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6386,6 +6934,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6409,6 +6961,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6434,6 +6990,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6457,6 +7017,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6482,6 +7046,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6505,6 +7073,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6530,6 +7102,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6553,6 +7129,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6578,6 +7158,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6601,6 +7185,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6626,6 +7214,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6649,6 +7241,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6674,6 +7270,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6698,6 +7298,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6721,6 +7325,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6746,6 +7354,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6769,6 +7381,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6794,6 +7410,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6817,6 +7437,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6842,6 +7466,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6865,6 +7493,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6890,6 +7522,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6913,6 +7549,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6938,6 +7578,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\GALAXYTERMINAL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6961,6 +7605,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CAPTAIN_CHAIR.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -6986,6 +7634,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\PILOT_STATION.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7009,6 +7661,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\STAIRS_RAILINGS.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7034,6 +7690,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\BRIDGE_BACKWALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7057,6 +7717,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LARGEDESK.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7082,6 +7746,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LARGEDESK.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7105,6 +7773,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SAVEPOINT.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7130,6 +7802,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITA.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7153,6 +7829,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CIRCULARRAILING.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7368,6 +8048,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7391,6 +8075,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7416,6 +8104,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7439,6 +8131,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\BRIDGEDOORS\ANIMATEDDOOR.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7464,6 +8160,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7487,6 +8187,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7512,6 +8216,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7535,6 +8243,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7560,6 +8272,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7583,6 +8299,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7608,6 +8328,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7631,6 +8355,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7656,6 +8384,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7679,6 +8411,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7704,6 +8440,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7727,6 +8467,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7752,6 +8496,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7775,6 +8523,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7800,6 +8552,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7823,6 +8579,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7848,6 +8608,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7871,6 +8635,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7896,6 +8664,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7919,6 +8691,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7944,6 +8720,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7967,6 +8747,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -7992,6 +8776,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8015,6 +8803,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8040,6 +8832,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8063,6 +8859,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8088,6 +8888,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8111,6 +8915,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8136,6 +8944,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8159,6 +8971,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8184,6 +9000,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8207,6 +9027,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8232,6 +9056,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8255,6 +9083,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8280,6 +9112,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8303,6 +9139,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8328,6 +9168,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\VENTILATION\VENTUNIT.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8352,6 +9196,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_BLUE.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>        
       </Property>
       <Property name="Children" />
     </Property>
@@ -8375,6 +9223,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_BLUE.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8437,6 +9289,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_CEILING_3.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8460,6 +9316,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\CHAIRS\WAITINGROOMCHAIR.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8485,6 +9345,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8508,6 +9372,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8533,6 +9401,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8556,6 +9428,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8581,6 +9457,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8604,6 +9484,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\SMALLCONSOLE.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8629,6 +9513,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\DATA_PAD.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8652,6 +9540,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\SCREENS\DROPPODSCREEN.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8677,6 +9569,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TECHPANEL\TECHPANEL.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8700,6 +9596,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TECHPANEL\TECHPANEL.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8725,6 +9625,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8748,6 +9652,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8773,6 +9681,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8796,6 +9708,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8858,6 +9774,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8881,6 +9801,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -8943,6 +9867,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CURVEDRAILING.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8967,6 +9895,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CURVEDRAILING.SCENE.MBIN" />
         </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8990,6 +9922,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CURVEDRAILING.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />

@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= "Corvette Tech Expanded 6.04", 
+["MOD_FILENAME"] 			= "Corvette Tech Expanded 6.05", 
 ["MOD_AUTHOR"]				= "Zay",
-["NMS_VERSION"]				= "6.04",
+["NMS_VERSION"]				= "6.05",
 ["MOD_DESCRIPTION"]			= "Increases Corvette tech slot upgrade capacity by 2 more rows (10x8)",
 ["MODIFICATIONS"] 			= 
 	{

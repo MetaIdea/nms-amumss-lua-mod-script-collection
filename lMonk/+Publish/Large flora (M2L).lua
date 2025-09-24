@@ -30,8 +30,8 @@ local mod_desc = [[
 
 --	Properties of [GcObjectSpawnData] being modified
 local spawn_data = {
-	numr = {
-		ns	= 'MinScale ',				-- [*] The space is NOT a bug!!
+	numeral = {
+		ns	= 'MinScale ',				-- [*] The space is NOT a bug!
 		xs	= 'MaxScale',				-- [*] multiplier modifier
 		an	= 'MaxAngle',				-- [+] additive modifier
 		sw	= 'ShearWindStrength',		-- [*]
@@ -173,6 +173,12 @@ local solar_modifiers = {
 			}
 		},
 		{
+			biotg = 'ISLAND',
+			flora = {
+				ISLAND		= {cr=0.84}
+			}
+		},
+		{
 			biotg = 'WEIRD',
 			flora = {
 				WEIRD		= {ld=2.6,	rr=6,		ul=true},
@@ -229,7 +235,7 @@ local solar_modifiers = {
 		SMALL		= {ns=0.95,	xs=0.8},
 
 	--- global lod multiplier
-		SCENE		= {ld=1.2},
+		SCENE		= {ld=1.25},
 
 	---	ignored
 		LAVA		= {ig=true},
@@ -241,16 +247,19 @@ local solar_modifiers = {
 	global_flags = {}
 }
 
----	MXML 2 LUA (VERSION: 0.88.03) ... by lMonk
----	A tool for converting between mxml and lua.
---- The full version can be found at: https://github.com/roie-r/mxml_2_lua
+---	MXML 2 LUA ... by lMonk ... version: 1.0.01
+---	A tool for converting between mxml file format and lua table.
+--- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
+--	=> Generate an MXML-tagged text from a lua table representation of mxml file
+--	@param class: a lua2mxml formatted table
 local function ToMxml(class)
 	--	replace a boolean with its text equivalent (ignore otherwise)
 	--	@param b: any value
 	local function bool(b)
 		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
 	end
+	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite'}
 	local function mxml_r(tlua)
 		local out = {}
 		function out:add(t)
@@ -258,15 +267,19 @@ local function ToMxml(class)
 		end
 		for attr, cls in pairs(tlua) do
 			if attr ~= 'meta' then
-				out[#out+1] = '<Property '
+				out:add({'<Property '})
 				if type(cls) == 'table' and cls.meta then
-				-- add and recurs for an inner table
-					for k, v in pairs(cls.meta) do
-						if k:sub(-1) ~= '_' then out:add({k, '="', bool(v), '"', ' '}) end
+				-- add new section and recurs for nested sections
+					for _,at in ipairs(at_ord) do
+						if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
 					end
+					-- for k, v in pairs(cls.meta) do
+						-- if k:sub(-1) ~= '_' then out:add({k, '="', bool(v), '"', ' '}) end
+					-- end
 					table.remove(out) -- trim last space
 					out:add({'>', mxml_r(cls), '</Property>'})
 				else
+				-- add section properties
 					local att, val = nil, nil
 					if tonumber(attr) then
 						if type(cls) == 'table' then
@@ -279,7 +292,7 @@ local function ToMxml(class)
 						att = attr
 						val = cls
 					end
-					if att == 'name' or att == 'value' then
+					if att == 'name' then
 						out:add({att, '="', bool(val), '"/>'})
 					else
 						out:add({'name="', att, '" value="', bool(val), '"/>'})
@@ -310,53 +323,46 @@ local function ToMxml(class)
 	return nil
 end
 
-
-local function FileWrapping(tlua, ext_tmpl)
-	local wrapper = '<?xml version="1.0" encoding="utf-8"?><Data template="%s">%s</Data>'
-	if type(tlua) == 'string' then
-		return string.format(wrapper, ext_tmpl, tlua)
-	end
-	-- replace existing or add template layer if needed
-	if ext_tmpl then
-		if tlua.meta.template then
-			tlua.meta.template = ext_tmpl
-		else
-			tlua = {
-				meta = {template=ext_tmpl},
-				tlua
-			}
-		end
-	end
-	-- strip mock template
-	local txt_data = ToMxml(tlua):sub(#tlua.meta.template + 23, -12)
-	return string.format(wrapper, tlua.meta.template, txt_data)
-end
-
-local function UnionTables(arr)
-	local merged = {}
-	for _, tbl in ipairs(arr) do
-		for k, val in pairs(tbl) do
-			if type(val) == 'table' then
-				merged[k] = merged[k] or {}
-				merged[k] = UnionTables({merged[k], val})
-			else
-				merged[k] = val
-			end
-		end
-	end
-	return merged
-end
-
-local function UnWrap(mxml)
+--	=> Strip the XML header and data template if found
+--	The template is re-added as a faux property
+--	@param mxml: mxml-formatted string
+local function unWrap(mxml)
 	if mxml:sub(1, 5) == '<?xml' then
-		local template = mxml:match('<Data template="([%w_]+)">')
-		return '<Property template="'..template..'">\n'..
-				mxml:sub(mxml:find('<Property'), -8)..'</Property>'
+		return ('<Property template="%s">%s</Property>'):format(
+			mxml:match('<Data template="([%w_]+)">'),
+			mxml:sub(mxml:find('<Property'), -8)
+		)
 	else
 		return mxml
 	end
 end
 
+--	=> Parse attributes from xml tag and return them in a table
+--	* Keys with [_] suffix are ignored by ToMxml
+--	@param prop: string containing xml tag attributes
+local function parseTag(prop)
+	if #prop < 1 then return nil end
+	local attr = {-- the attribute container for each tag
+		opn_ = prop:sub(-1) ~= '/',
+		ord_ = {} -- keep order for writing attributes to file
+	}
+	for at1, val in prop:gmatch('(.-)="(.-)"') do
+		local att = at1:gsub('^%s+', '')
+		attr[att] = val
+		attr.ord_[#attr.ord_+1] = att
+	end
+	local ln = select(2, prop:gsub('=', ''))
+	attr.lst_ = ln == 1
+	local prx = attr.name and attr.name:sub(0,2) or nil
+	attr.cls_ = prx == 'Gc' or prx == 'Tk' or ln > 1
+	return attr
+end
+
+--	=> Returns a table representation of MXML sections
+--	When parsing a full file, the header is stripped and a mock template is added
+--	* Does not handle commented lines!
+--	@param mxml: requires complete MXML sections in the nomral format
+--	@param use_id: use _id as section key where possible [Default: false]
 local function ToLua(mxml, use_id)
 	local function eval(val)
 		if val == 'true' then
@@ -369,36 +375,19 @@ local function ToLua(mxml, use_id)
 			return val
 		end
 	end
-	local function parseTag(line)
-		if #line < 1 then return nil end
-		local attr = {
-			opn_ = line:sub(-1) ~= '/',
-			n_	 = 0
-		}
-		for att, val in line:gmatch('(.-)="(.-)"') do
-			attr[att:gsub('^%s+', '')] = val
-			attr.n_ = attr.n_ + 1
-		end
-		return attr
-	end
 	local tlua, st_node = {}, {}
 	local parent= tlua
 	local node	= nil
-	for prop in UnWrap(mxml):gmatch('<[/]?Property[ ]?(.-[/]?)>') do
+	for prop in unWrap(mxml):gmatch('<[/]?Property[ ]?(.-[/]?)>') do
 		local tag = parseTag(prop)
 		if tag then
 			if tag.opn_ then -- open tag; add new section
 				st_node[#st_node+1] = parent
 				node = {meta = tag}
-				if tag._id then
-					if use_id then
-						key = tag._id
-					else
-						key = #parent + 1
-					end
-				elseif tag._index then
-					key = #parent + 1
-				elseif (tag.name and tag.n_ == 1) or (parent.meta and parent.meta.n_ > 1) then
+				local key = nil
+				if tag._id and use_id then
+					key = tag._id
+				elseif parent.meta and (parent.meta.template or parent.meta.cls_) then
 					key = tag.name
 				else
 					key = #parent + 1
@@ -407,13 +396,10 @@ local function ToLua(mxml, use_id)
 				parent = node
 			else -- closed tag; add property to section
 				local att, val = nil, nil
-				if tag.name and tag.n_ == 1 then
+				if tag.lst_ then
 					att = #node+1
 					val = {name = eval(tag.name)} -- list stub
-				elseif parent.meta.n_ > 1 or parent.meta.template then
-					att = tag.name
-					val = eval(tag.value)
-				elseif parent.meta.n_ == 1 then
+				elseif parent.meta.lst_ and not parent.meta.template and not parent.meta.cls_ then
 					att = #node+1
 					if parent.meta.name == tag.name then
 						val = eval(tag.value)
@@ -433,6 +419,48 @@ local function ToLua(mxml, use_id)
 		end
 	end
 	return tlua[1] -- discard the wrapping table
+end
+
+--	=> Adds the header and class template for a standard mxml file
+--	@param data: A lua2mxml formatted table
+--	@param template: [optional] A class template string. Overwrites the internal template!
+local function ToMxmlFile(tlua, ext_tmpl)
+	local wrapper = '<?xml version="1.0" encoding="utf-8"?><Data template="%s">%s</Data>'
+	if type(tlua) == 'string' then
+		return wrapper:format(ext_tmpl, tlua)
+	end
+	-- replace existing or add template layer if needed
+	if ext_tmpl then
+		if tlua.meta.template then
+			tlua.meta.template = ext_tmpl
+		else
+			tlua = {
+				meta = {template=ext_tmpl},
+				tlua
+			}
+		end
+	end
+	-- strip mock template
+	local txt_data = ToMxml(tlua):sub(#tlua.meta.template + 23, -12)
+	return wrapper:format(tlua.meta.template, txt_data)
+end
+
+--	=> A Union All function for an ordered array of tables. Last in the array wins
+--	Returns a copy by-value. A repeating keys's values are overwritten.
+--	@param arr: A table of tables.
+local function UnionTables(arr)
+	local merged = {}
+	for _, tbl in ipairs(arr) do
+		for k, val in pairs(tbl) do
+			if type(val) == 'table' then
+				merged[k] = merged[k] or {}
+				merged[k] = UnionTables({merged[k], val})
+			else
+				merged[k] = val
+			end
+		end
+	end
+	return merged
 end
 ---------------------------------------------------------------------------------
 
@@ -588,7 +616,7 @@ function spawn_data:averageScales(spawn, worktags)
 	self.mods	= {}
 	self.res	= {} -- will store the calculated result
 	self.ultra	= nil
-	for k,_ in pairs(self.numr) do
+	for k,_ in pairs(self.numeral) do
 		self.mods[k] = {v=0, i=0}
 		self.res[k]  = -1 -- (-1 == empty)
 	end
@@ -678,19 +706,15 @@ local function ProcessBiome(exml, mbin)
 	local solar_biome = ToLua(exml)
 	if not hasQVariant(solar_biome) then return 'IGNORE' end
 
-	local prp = spawn_data.numr -- shorter reference to GcObjectSpawnData property names
+	local prp = spawn_data.numeral -- shorter reference to GcObjectSpawnData property names
 	local biomeflora, biomeflags = solar_modifiers:getModifiers(mbin)
 	-- merged, biome-specific modifiers table
 	local workflora	= UnionTables({solar_modifiers.global_flora, biomeflora})
 	-- merged, biome-specific flags table
 	local workflags	= UnionTables({solar_modifiers.global_flags, biomeflags})
-	-- for key, objs in pairs(solar_biome.template.Objects) do
-	for key, objs in pairs(solar_biome[1]) do
+	for key, objs in pairs(solar_biome.Objects) do
 		if key ~= 'meta' and objs[1] and objs[1].meta.value == 'GcObjectSpawnData' then
 			for _, spn in ipairs(objs) do
-				---DEBUG---------------------------
-				-- valueDump(mbin, spn, 'MaxScale')
-				-----------------------------------
 				spawn_data:averageScales(spn.Resource.Filename, workflora)
 				if spawn_data:HasMod('ns') then spn[prp.ns] = spn[prp.ns] * spawn_data.res.ns end	-- MinScale
 				if spawn_data:HasMod('xs') then spn[prp.xs]	= spn[prp.xs] * spawn_data.res.xs end	-- MaxScale
@@ -703,7 +727,7 @@ local function ProcessBiome(exml, mbin)
 					qvr[prp.df] = qvr[prp.df] * spawn_data.res.df	-- FlatDensity
 					qvr[prp.ds] = qvr[prp.df] * 1.06				-- SlopeDensity
 				end
-				if spawn_data:HasMod('fs') and tonumber(qvr[prp.fs]) < 9000 then
+				if spawn_data:HasMod('fs') and qvr[prp.fs] < 9000 then
 					qvr[prp.fs] = qvr[prp.fs] * spawn_data.res.fs	-- FadeOutStartDistance
 					qvr[prp.fe] = qvr[prp.fs] + 20					-- FadeOutEndDistance
 				end
@@ -713,13 +737,13 @@ local function ProcessBiome(exml, mbin)
 				for i=2, #qvr[prp.ld] do
 					qvr[prp.ld][i] = qvr[prp.ld][i] * lod			-- LodDistances
 				end
-				local rr = tonumber(qvr[prp.rr])
+				local rr = qvr[prp.rr]
 				if spawn_data:HasMod('rr') then
 					qvr[prp.rr] = math.floor(rr + spawn_data.res.rr)-- MaxRegionRadius
 				elseif rr < 90 then
-					qvr[prp.rr] = rr + ((rr < 15 and rr > 6) and 1 or 4)
+					qvr[prp.rr] = rr + ((rr < 15 and rr > 6) and 1 or 3)
 				end
-				if spawn_data:HasMod('pr') and tonumber(qvr[prp.pr]) < 90 and rr < 90 then
+				if spawn_data:HasMod('pr') and qvr[prp.pr] < 90 and rr < 90 then
 					qvr[prp.pr] = math.floor(qvr[prp.pr] + spawn_data.res.pr * 10) -- MaxImposterRadius
 				end
 				--	loop through boolean flags
@@ -730,7 +754,7 @@ local function ProcessBiome(exml, mbin)
 			end
 		end
 	end
-	return FileWrapping(solar_biome)
+	return ToMxmlFile(solar_biome)
 end
 
 -----------------------------------------------------------------------------------------
@@ -747,13 +771,14 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.large flora.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.58',
+	NMS_VERSION			= '6.06',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE,UNDEFINED_VARIABLE',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		MBIN_FILE_SOURCE = source_mbins,
-		EXT_FUNC		 = { 'ProcessRawMxml' }
+		MBIN_FILE_SOURCE	= source_mbins,
+		EXML_CREATE			= false,
+		EXT_FUNC			 = { 'ProcessRawMxml' }
 	}
 }}}}

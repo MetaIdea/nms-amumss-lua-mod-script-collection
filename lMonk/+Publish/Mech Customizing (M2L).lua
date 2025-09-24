@@ -3,7 +3,7 @@ local mod_desc = [[
   Adds in-game customizing for the hardframe and Liquidator mech!
   (Customizing is done through the mech's geobay menu)
 
-  * ADD_FILES will skipped SILENTLY if new files are not found!
+  * DDS files import is skipped SILENTLY if file paths are not found!
 ]]-------------------------------------------------------------------
 ---	MXML 2 LUA ... by lMonk ... version: 1.0.01
 ---	A tool for converting between mxml file format and lua table.
@@ -243,7 +243,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Mech Customizing.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.01',
+	NMS_VERSION			= '6.06',
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES			= (

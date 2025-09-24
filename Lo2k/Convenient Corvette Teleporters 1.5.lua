@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Convenient Corvette Teleporters 1.4.pak", 
+["MOD_FILENAME"] 			= "Convenient Corvette Teleporters 1.5.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "6.04",
+["NMS_VERSION"]				= "6.05",
 ["MOD_DESCRIPTION"]			= "This mod improves Corvette teleportes placements",
 ["MODIFICATIONS"] 			= 
 	{
@@ -64,18 +64,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {{"Name","RefBiggsTeleporter"},  },
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"TransX", "24.3"}, --original 22.6
-								{"TransZ", "14.0"}, --original 66
-								{"RotY", "-90.000000"}, 
+								{"TransX", "20.95"}, --original 22.6
+								{"TransZ", "13.4"}, --original 66
+								{"RotY", "90.000000"}, 
 							},
 						},		
 						{
 							["SPECIAL_KEY_WORDS"]  = {{"Name","RefBiggsTeleporter1"}, },
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"TransX", "-24.3"}, --original -22.6
-								{"TransZ", "14.0"}, --original 66
-								{"RotY", "90.000000"}, 
+								{"TransX", "-20.95"}, --original -22.6
+								{"TransZ", "13.4"}, --original 66
+								{"RotY", "-90.000000"}, 
 							},
 						},							
 					},
@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {{"Type","LOCATOR"}, },  -- interaction point / "REFERENCE" turns TP but not player
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"RotY", "90.000000"},  --original 0
+								{"RotY", "-90.000000"},  --original 0
 							},
 						},								
 					},

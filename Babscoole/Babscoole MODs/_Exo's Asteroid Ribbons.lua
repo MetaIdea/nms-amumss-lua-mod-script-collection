@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exo's Asteroid Ribbons",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.73",
+["NMS_VERSION"]   = "6.00",
 ["MODIFICATIONS"] =
     {
         {
@@ -52,37 +52,37 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Spacing",    "387"},
-                                {"FadeRange",  "1000"},
-                                {"NoiseScale", "100000"},
+                                {"Fade Range",  "1000"},
+                                {"Noise Scale", "100000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Common Asteroid Data", "Scale Variance"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"y", "1.3"}
+                                {"Y", "1.3"}
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Common Asteroid Data", "Noise Range"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.499"},
-                                {"y", "0.501"}
+                                {"X", "0.499"},
+                                {"Y", "0.501"}
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Ring Asteroid Data"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FadeRange", "1000"},
+                                {"Fade Range", "1000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Ring Asteroid Data", "Scale Variance"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"y", "1.3"}
+                                {"Y", "1.3"}
                             }
                         },
                         {
@@ -90,16 +90,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Spacing",    "3500"},
-                                {"FadeRange",  "3500"},
-                                {"NoiseScale", "100000"},
+                                {"Fade Range",  "3500"},
+                                {"Noise Scale", "100000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Large Asteroid Data", "Noise Range"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.495"},
-                                {"y", "0.505"}
+                                {"X", "0.495"},
+                                {"Y", "0.505"}
                             }
                         },
                         {
@@ -107,23 +107,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Spacing",    "510"},
-                                {"FadeRange",  "1000"},
-                                {"NoiseScale", "100000"},
+                                {"Fade Range",  "1000"},
+                                {"Noise Scale", "100000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Rare Asteroid Data", "Scale Variance"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"y", "1.3"}
+                                {"Y", "1.3"}
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Rare Asteroid Data", "Noise Range"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.499"},
-                                {"y", "0.501"}
+                                {"X", "0.499"},
+                                {"Y", "0.501"}
                             }
                         },
                         {
@@ -131,16 +131,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.4985"},
-                                {"y", "0.5015"}
+                                {"X", "0.4985"},
+                                {"Y", "0.5015"}
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Rare Asteroid Noise Range Lots Of Rares"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.498"},
-                                {"y", "0.502"}
+                                {"X", "0.498"},
+                                {"Y", "0.502"}
                             }
                         },
                     }
