@@ -1,5 +1,5 @@
 Author = "Xen0nex"
-ModName = "PTSd Prices and Tech and Starship Speed and More"
+ModName = "PTSd Prices and Tech etc"
 BaseDescription = ""
 GameVersion = "470"
 

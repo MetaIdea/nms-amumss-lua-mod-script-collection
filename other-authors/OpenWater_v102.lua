@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= "zzz_openwater_v102.pak",
+  ["MOD_FILENAME"] 			= "zzz_openwater_v102",
   ["MOD_AUTHOR"]			= "camus",
   ["LUA_AUTHOR"]			= "camus",
   ["NMS_VERSION"]			= "5.12",
@@ -11,11 +11,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\VOXELGENERATORSETTINGS.MBIN",  
-					["EXML_CHANGE_TABLE"] = 
+					["MXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"UnderWater","TkNoiseUberLayerData.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							["SPECIAL_KEY_WORDS"] = {"UnderWater","TkNoiseUberLayerData"},
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{

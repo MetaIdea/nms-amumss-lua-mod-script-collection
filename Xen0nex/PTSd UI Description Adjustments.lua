@@ -1,5 +1,5 @@
 ModName = "PTSd UI Description Adjustments"
-GameVersion = "6_04"
+GameVersion = "6_05"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 --[[
@@ -70,7 +70,7 @@ PulseEngineDesc =
 [[Spaceflight propulsion, boosts and on-demand Pulse Jumps through local system.&#xA; &#xA;User is advised that &lt;EXOTIC&gt;Tritium&lt;&gt; or &lt;TECHNOLOGY&gt;Pyrite&lt;&gt; is required to charge Pulse Engine. Tritium is abundant in &lt;COMMODITY&gt;near-space asteroid fields&lt;&gt;. Locate Tritium with the starship scanner (&lt;IMG&gt;SCAN&lt;&gt;).&#xA;&#xA;Hold &lt;IMG&gt;PULSEJUMP&lt;&gt; to engage Pulse Jump.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to initiate in-flight speed boost.&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: With enough bonuses to &lt;TECHNOLOGY&gt;Boost Speed&lt;&gt;, any type of starship can eventually become fast enough to outrun even the fastest enemies in space.]]
 
 LuminanceEnigineDesc =
-[[Aligns the ship's electromagnetic emissions with &lt;FUEL&gt;A T L A S&lt;&gt; waves, providing &lt;STELLAR&gt;highly maneuverable&lt;&gt; propulsion capability as well Pulse Jump speed and efficiency &lt;STELLAR&gt;slightly above&lt;&gt; standard starships.&#xA; &#xA;The sub-light drive hungers for &lt;EXOTIC&gt;tritium&lt;&gt; or &lt;SPECIAL&gt;radiant shards&lt;&gt;.&#xA;&#xA;Hold &lt;IMG&gt;PULSEJUMP&lt;&gt; to engage Pulse Jump.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to initiate in-flight speed boost.]]
+[[Aligns the ship's electromagnetic emissions with &lt;FUEL&gt;A T L A S&lt;&gt; waves, providing &lt;STELLAR&gt;highly maneuverable&lt;&gt; propulsion capability as well as Pulse Jump speed and efficiency &lt;STELLAR&gt;slightly above&lt;&gt; standard starships.&#xA; &#xA;The sub-light drive hungers for &lt;EXOTIC&gt;tritium&lt;&gt; or &lt;SPECIAL&gt;radiant shards&lt;&gt;.&#xA;&#xA;Hold &lt;IMG&gt;PULSEJUMP&lt;&gt; to engage Pulse Jump.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to initiate in-flight speed boost.]]
 
 LauncherDesc =
 [[Vital launch and landing gear system, can also &lt;HIGHLIGHT&gt;summon&lt;&gt; your starship at &lt;STELLAR&gt;double&lt;&gt; normal launch cost.&#xA;&#xA;User is advised that &lt;TECHNOLOGY&gt;specialised fuel&lt;&gt; or &lt;CATALYST&gt;Uranium&lt;&gt; is required to recharge thruster. Launch procedures require sufficient fuel levels before activation.&#xA;&lt;FUEL&gt;NOTE&lt;&gt;: &lt;HIGHLIGHT&gt;Supercharging&lt;&gt; the core &lt;TECHNOLOGY&gt;Launch Thruster&lt;&gt; tech &lt;FUEL&gt;increases&lt;&gt; launch cost due to negative high-voltage interactions.&#xA;&#xA;&lt;SPECIAL&gt;Interceptors&lt;&gt; only spend &lt;STELLAR&gt;80%&lt;&gt; of usual Launch costs,&#xA;&lt;HIGHLIGHT&gt;Solar Ships&lt;&gt; only spend &lt;STELLAR&gt;75%&lt;&gt; of usual Launch costs,&#xA;&lt;TRADE&gt;Shuttles&lt;&gt; only spend &lt;STELLAR&gt;66%&lt;&gt; of usual Launch costs,&#xA;&lt;TECHNOLOGY&gt;Explorers&lt;&gt; only spend &lt;STELLAR&gt;50%&lt;&gt; of usual Launch costs&#xA;&lt;STELLAR&gt;Corvettes&lt;&gt; spend &lt;STELLAR&gt;140%&lt;&gt; of usual Launch costs by default.&#xA;&#xA;Hold &lt;IMG&gt;THRUST&lt;&gt; to take off from planet.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to initiate in-flight speed boost.]]
@@ -300,6 +300,12 @@ FreightWarpDrives =
 
 FreighterShieldGen =
 [[&lt;CATALYST&gt;Freighter Shield Generator - Shielded&lt;&gt;]]
+
+PirateRaidBuildingWarning =
+[[&lt;FUEL&gt;TAKE COVER&lt;&gt; &lt;IMG&gt;SLASH&lt;&gt; Pirates Raiding Nearby Building!]]
+
+PirateRaidWarning =
+[[&lt;FUEL&gt;TAKE COVER&lt;&gt; &lt;IMG&gt;SLASH&lt;&gt; Pirates Targeting Exosuit Signal!]]
 
 DerelictEndDesc =
 [[Engineering Control Panel Accessed...&#xA;Generator failure detected. Fabricators on &lt;AUDIO&gt;TXT_RadioNoise&lt;&gt;&lt;FUEL&gt;emergency power&lt;&gt;.&#xA;The &lt;HIGHLIGHT&gt;Class&lt;&gt; of &lt;STELLAR&gt;Fabricated Tech Upgrades&lt;&gt; will be truly &lt;SPECIAL&gt;randomized&lt;&gt; each time. Construct component?]]
@@ -1980,6 +1986,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", AppendText (SettleOverviewNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_PIRATE_RAID_OSD"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", PirateRaidBuildingWarning}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_PIRATE_RAID_OSD_ALT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", PirateRaidWarning}
 							}
 						},
 					}

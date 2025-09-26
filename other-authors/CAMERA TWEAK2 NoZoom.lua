@@ -12,8 +12,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -36,8 +36,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -60,8 +60,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -85,8 +85,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -109,8 +109,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -133,8 +133,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -157,8 +157,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -181,8 +181,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -205,8 +205,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -229,8 +229,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -253,8 +253,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -277,8 +277,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -301,8 +301,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -325,8 +325,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -349,8 +349,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -373,8 +373,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -397,8 +397,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -421,8 +421,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -445,8 +445,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -469,8 +469,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -491,8 +491,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -515,8 +515,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -547,12 +547,12 @@ cam_ect[#cam_ect+1] = {
 
 		{"OffsetZFlat",0.4},
 		{"OffsetY",0.7},
-		{"BackMinDistance", 7},
+		{"BackMinDistance", 14},
 		{"BackMaxDistance", "14"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},		
 
@@ -564,12 +564,12 @@ cam_ect[#cam_ect+1] = {
 
 		{"OffsetZFlat",0.4},
 		{"OffsetY",0.7},
-		{"BackMinDistance", 7},
+		{"BackMinDistance", 14},
 		{"BackMaxDistance", "14"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},				
 
@@ -581,12 +581,12 @@ cam_ect[#cam_ect+1] = {
 
 		{"OffsetZFlat",0.4},
 		{"OffsetY",0.7},
-		{"BackMinDistance", 7},
+		{"BackMinDistance", 14},
 		{"BackMaxDistance", "14"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},		
 
@@ -598,12 +598,12 @@ cam_ect[#cam_ect+1] = {
 
 		{"OffsetZFlat",0.4},
 		{"OffsetY",0.7},
-		{"BackMinDistance", 7},
+		{"BackMinDistance", 14},
 		{"BackMaxDistance", "14"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},
 	}
@@ -613,7 +613,7 @@ cam_ect[#cam_ect+1] = {
 	["VALUE_CHANGE_TABLE"] = {
 
 		{"BackMinDistance",22},
-		{"BackMaxDistance",33},			
+		{"BackMaxDistance",22},			
 	}
 }
 cam_ect[#cam_ect+1] = {
@@ -621,7 +621,7 @@ cam_ect[#cam_ect+1] = {
 	["VALUE_CHANGE_TABLE"] = {
 
 		{"BackMinDistance",33},
-		{"BackMaxDistance",44},	
+		{"BackMaxDistance",33},	
 		
 	}
 }
@@ -630,11 +630,11 @@ cam_ect[#cam_ect+1] = {
 	["VALUE_CHANGE_TABLE"] = {
 
 		{"BackMinDistance",22},
-		{"BackMaxDistance",33},
+		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},		
 		
@@ -645,11 +645,11 @@ cam_ect[#cam_ect+1] = {
 	["VALUE_CHANGE_TABLE"] = {
 
 		{"BackMinDistance",22},
-		{"BackMaxDistance",33},
+		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},				
 		
@@ -662,11 +662,11 @@ cam_ect[#cam_ect+1] = {
 		{"OffsetY",-0.5},
 		{"OffsetZFlat",-2.0},
 		{"BackMinDistance",22},
-		{"BackMaxDistance",33},
+		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},		
 		
@@ -677,11 +677,11 @@ cam_ect[#cam_ect+1] = {
 	["VALUE_CHANGE_TABLE"] = {
 
 		{"BackMinDistance",22},
-		{"BackMaxDistance",33},
+		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},				
 		
@@ -692,11 +692,11 @@ cam_ect[#cam_ect+1] = {
 	["VALUE_CHANGE_TABLE"] = {
 
 		{"BackMinDistance",22},
-		{"BackMaxDistance",33},
+		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},		
 		
@@ -709,11 +709,11 @@ cam_ect[#cam_ect+1] = {
 		{"OffsetZFlat",-2.2},
 		{"OffsetY",3.3},
 		{"BackMinDistance",33},
-		{"BackMaxDistance",44},
+		{"BackMaxDistance",33},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},		
 		
@@ -724,11 +724,11 @@ cam_ect[#cam_ect+1] = {
 	["VALUE_CHANGE_TABLE"] = {
 						
 		{"BackMinDistance",22},
-		{"BackMaxDistance",33},
+		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},		
 
@@ -740,11 +740,11 @@ cam_ect[#cam_ect+1] = {
 	["VALUE_CHANGE_TABLE"] = {
 		
 		{"BackMinDistance",22},
-		{"BackMaxDistance",33},
+		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},		
 
@@ -755,11 +755,11 @@ cam_ect[#cam_ect+1] = {
 	["VALUE_CHANGE_TABLE"] = {
 			
 		{"BackMinDistance",22},
-		{"BackMaxDistance",33},
+		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
-		{"VertRotationMin", "-85"},
-		{"VertRotationMax", "85"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},		
 
@@ -769,14 +769,15 @@ cam_ect[#cam_ect+1] = {
 	REPLACE_TYPE 		= 'All',
 	VALUE_CHANGE_TABLE 	= {
 
-	{'BinocularFlashTime', 0},
-	{'BinocularFlashStrength', 0},
-	{'ModelViewFlashTime', 0},
-	{'PhotoModeFlashDuration', 0},
-	{'PhotoModeFlashIntensity', 0},
-	{'VehicleExitFlashTime', 0},
-	{'VehicleExitFlashStrength', 0},	
-	{'BuildingModeMaxDistance', 99999},
+		{'BinocularFlashTime', 0},
+		{'BinocularFlashStrength', 0},
+		{'ModelViewFlashTime', 0},
+		{'PhotoModeFlashDuration', 0},
+		{'PhotoModeFlashIntensity', 0},
+		{'VehicleExitFlashTime', 0},
+		{'VehicleExitFlashStrength', 0},	
+		{'BuildingModeMaxDistance', 99999},
+		{"UseSpeedBasedSpring", "False"},
 
 	}
 }

@@ -39,14 +39,14 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
     SCRIPT NAME: PTSd Vehicles and Tools etc\PTSd Other Difficulty Settings.lua
-   MOD FILENAME: PTSd Other Difficulty Settings5_64.pak
+   MOD FILENAME: PTSd Other Difficulty Settings6_04.pak
    MOD BATCHNAME: nil
      MOD AUTHOR: Xen0nex
      LUA AUTHOR: nil
 MOD MAINTENANCE: nil
 MOD DESCRIPTION: <<<Affects most of the Difficulty Setting menu options, except for Stack Sizes>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 5_64
+    NMS VERSION: 6_04
 
 =====================
 Original information:
@@ -63,14 +63,14 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
     SCRIPT NAME: PTSd Vehicles and Tools etc\PTSd Ship+MultiTool Rebalance.lua
-   MOD FILENAME: PTSd Ship+MultiTool Rebalance6_00.pak
+   MOD FILENAME: PTSd Ship+MultiTool Rebalance6_03.pak
    MOD BATCHNAME: nil
      MOD AUTHOR: Xen0nex
      LUA AUTHOR: nil
 MOD MAINTENANCE: nil
 MOD DESCRIPTION: <<<PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 6_00
+    NMS VERSION: 6_03
 
 =====================
 Original information:

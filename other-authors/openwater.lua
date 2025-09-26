@@ -16,11 +16,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
             ["MBIN_CHANGE_TABLE"] = {
                 {
                     ["MBIN_FILE_SOURCE"] = FileSource1,
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MXML_CHANGE_TABLE"] = {
 
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"UnderWater", "TkNoiseUberLayerData.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["SPECIAL_KEY_WORDS"] = {"UnderWater", "TkNoiseUberLayerData"},
                             ["REPLACE_TYPE"]         = "ALL",
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"Height",10},                                        -- 100
