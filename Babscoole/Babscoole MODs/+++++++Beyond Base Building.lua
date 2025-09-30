@@ -745,7 +745,7 @@ if ALL_PARTS_ON_FREIGHTER then
                 ["ADD_OPTION"] = "ADDafterLINE",
                 ["ADD"] =
 [[
-        <Property value="GcBaseBuildingEntryGroup.xml">
+        <Property name="Groups" value="GcBaseBuildingEntryGroup">
           <Property name="Group" value="FREIGHTER_TECH" />
           <Property name="SubGroupName" value="FRE_TECH_OTHER" />
           <Property name="SubGroup" value="0" />
@@ -779,7 +779,7 @@ if ALL_PARTS_ON_FREIGHTER then
                 ["ADD_OPTION"] = "ADDafterLINE",
                 ["ADD"] =
 [[
-        <Property value="GcBaseBuildingEntryGroup.xml">
+        <Property name="Groups" value="GcBaseBuildingEntryGroup">
           <Property name="Group" value="FREIGHTER_TECH" />
           <Property name="SubGroupName" value="FRE_TECH_OTHER" />
           <Property name="SubGroup" value="0" />
@@ -813,7 +813,7 @@ if ALL_PARTS_ON_FREIGHTER then
                 ["ADD_OPTION"] = "ADDafterLINE",
                 ["ADD"] =
 [[
-        <Property value="GcBaseBuildingEntryGroup.xml">
+        <Property name="Groups" value="GcBaseBuildingEntryGroup">
           <Property name="Group" value="FREIGHTER_TECH" />
           <Property name="SubGroupName" value="FRE_TECH_OTHER" />
           <Property name="SubGroup" value="0" />
@@ -834,7 +834,7 @@ if ALL_PARTS_ON_FREIGHTER then
                 ["ADD_OPTION"] = "ADDafterLINE",
                 ["ADD"] =
 [[
-        <Property value="GcBaseBuildingEntryGroup.xml">
+        <Property name="Groups" value="GcBaseBuildingEntryGroup">
           <Property name="Group" value="FREIGHT_LEGACY" />
           <Property name="SubGroupName" value="FREIGHTERLEGACY" />
           <Property name="SubGroup" value="0" />
@@ -1086,7 +1086,7 @@ if FARM_IN_ANY_BIOME then
     Change_Table_Array[#Change_Table_Array + 1] =
 
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", FARM_IN_ANY_BIOME_ID_TABLE[i], "Biome", "GcBiomeType.xml"},
+        ["SPECIAL_KEY_WORDS"] = {"ID", FARM_IN_ANY_BIOME_ID_TABLE[i], "Biome", "GcBiomeType"},
         ["REPLACE_TYPE"] = "ONCEINSIDE",
         ["VALUE_CHANGE_TABLE"] =
         {
@@ -1149,7 +1149,7 @@ for i = 1,#PLANTERS_ON_FREIGHTER_ID_TABLE do
         ["ADD_OPTION"] = "ADDafterLINE",
         ["ADD"] =
 [[
-        <Property value="GcBaseBuildingEntryGroup.xml">
+        <Property name="Groups" value="GcBaseBuildingEntryGroup">
           <Property name="Group" value="FREIGHTER_BIO" />
           <Property name="SubGroupName" value="FRE_PLANTS" />
           <Property name="SubGroup" value="0" />
@@ -1177,7 +1177,7 @@ for i = 1,#MISC_ON_FREIGHTER_ID_TABLE do
         ["ADD_OPTION"] = "ADDafterLINE",
         ["ADD"] =
 [[
-        <Property value="GcBaseBuildingEntryGroup.xml">
+        <Property name="Groups" value="GcBaseBuildingEntryGroup">
           <Property name="Group" value="FREIGHTER_TECH" />
           <Property name="SubGroupName" value="FRE_TECH_OTHER" />
           <Property name="SubGroup" value="0" />
@@ -1207,7 +1207,7 @@ if FREIGHTERROOMS_ON_PLANETBASE then
             ["ADD_OPTION"] = "ADDafterLINE",
             ["ADD"] =
 [[
-        <Property value="GcBaseBuildingEntryGroup.xml">
+        <Property name="Groups" value="GcBaseBuildingEntryGroup">
           <Property name="Group" value="FREIGHTER_IND" />
           <Property name="SubGroupName" value="BBB_PB_ADD" />
           <Property name="SubGroup" value="0" />
@@ -1221,7 +1221,7 @@ if FREIGHTERROOMS_ON_PLANETBASE then
         ["ADD_OPTION"] = "ADDafterSECTION",
         ["ADD"] =
 [[
-        <Property value="GcBaseBuildingSubGroup.xml">
+        <Property name="SubGroups" value="GcBaseBuildingSubGroup">
           <Property name="Id" value="BBB_PB_ADD" />
           <Property name="Name" value="BBB PlanetBase Add" />
         </Property>

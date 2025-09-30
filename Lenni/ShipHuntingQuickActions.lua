@@ -146,12 +146,23 @@ for i = 1, #QUICK_ACTION_MENU, 1 do
                 {"Title", QUICK_ACTION_MENU[i].TITLE},
                 {"ChatText", ""},
                 {"ChatUsesPrefix", "false"},
-                {"AvailableUnderwater", "true"},
-                {"EmoteID", QUICK_ACTION_MENU[i]["EMOTE_ID"]},
+                {"AvailableUnderwater", "false"},
+                {"EmoteID", QUICK_ACTION_MENU[i]["EMOTE_ID"] .. 0},
                 {"AnimationName", QUICK_ACTION_MENU[i].ID},
                 {"Filename", QUICK_ACTION_MENU[i].ICON},
                 {"MoveToCancel", "true"},
                 {"RidingAnimationName", QUICK_ACTION_MENU[i].ID}
+            }
+        },
+        {
+            ["PKW"] = "Emotes",
+            ["SEC_PASTE"] = "ADD_EMOTE" .. i
+        },
+        {
+            ["SEC_EDIT"] = "ADD_EMOTE" .. i,
+            ["VCT"] = {
+                {"AvailableUnderwater", "true"},
+                {"EmoteID", QUICK_ACTION_MENU[i]["EMOTE_ID"] .. 1},
             }
         },
         {

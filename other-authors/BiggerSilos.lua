@@ -3,8 +3,8 @@ SiloStorage = 7000000       --Original 1400000 which equals to 1k
 NMS_MOD_DEFINITION_CONTAINER = 
 {
     ["MOD_FILENAME"]    = "BiggerSilos.pak",
-    ["MOD_AUTHOR"]      = "MusicManiac",
-    ["NMS_VERSION"]     = "4.05",
+    ["MOD_AUTHOR"]      = "layb",
+    ["NMS_VERSION"]     = "6.0",
     ["MODIFICATIONS"]   = 
     {
         {

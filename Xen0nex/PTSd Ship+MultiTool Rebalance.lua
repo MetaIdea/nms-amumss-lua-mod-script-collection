@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "6_03"
+GameVersion = "6_06"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -14,8 +14,9 @@ ExoSkiffSlots =		30								--60	Slots for fish/bait storage in Exo-Skiff. May on
 ExoSkiffSlotsWidth = 6								--10	How many columns of slots are available for the Exo-Skiff
 ExoSkiffSlotsHeight =5								--6		How many rows of slots are available for the Exo-Skiff
 
-CorvetteGearGunVFXCap = 6							--4		Limits how many installed Guns and Landing Gears will display visual animations / particle effects etc. (but may not actually have any effect for Guns) As PTSd increases the amount of Landing Gear / Weapons, etc. which gives bonuses from 3 to 5, this is intended to avoid having gear installed with no animations.
+CorvetteGearVFXCap = 6								--4		Limits how many installed Landing Gears will display visual animations / particle effects etc. As PTSd increases the amount of Landing Gear, etc. which gives bonuses from 3 to 5, this is intended to avoid having gear installed with no animations.
 CorvetteWingsVFXCap = 6								--4		As above, but for Corvette Wing modules with animations (e.g. spinning rotors, etc.)
+CorvetteGunVFXCap = 10								--10	As above, but for Corvette Weapon modules
 
 --As of NMS v4.08, the definition for what ship attributes the "SHIP_AGILE" stat affects appears to mistakenly list Ship_BoostManeuverability twice, instead of Ship_Maneuverability and Ship_BoostManeuverability together.
 FixAgilityStat = true			--false			If true, this will try to ensure there is an entry for both Ship_BoostManeuverability and Ship_Maneuverability under the SHIP_AGILE definition
@@ -1258,8 +1259,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"PartFXLimits"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Gear", CorvetteGearGunVFXCap},
-								{"Gun", CorvetteGearGunVFXCap},
+								{"Gear", CorvetteGearVFXCap},
+								{"Gun", CorvetteGunVFXCap},
 								{"Wing", CorvetteWingsVFXCap},
 							}
 						},

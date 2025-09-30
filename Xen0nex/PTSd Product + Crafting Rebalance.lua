@@ -1,5 +1,5 @@
 ModName = "PTSd Product + Crafting Rebalance"
-GameVersion = "6_04"
+GameVersion = "6_06"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --Changes how effective certain substances are at recharging certain techs
@@ -908,6 +908,9 @@ ReplaceItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MB
 	},
 	{	--Refiner Unit (Corvette) 
 		"B_WALL_TECH0",			"MICROCHIP",		8,		"Product",		"HYDRALIC",
+	},
+	{	--Deadeye Cannon (Corvette) 
+		"B_TUR_B",				"SALVAGE_TECH7",	2,		"Product",		"SHIPCHARGE",
 	},
 }
 
