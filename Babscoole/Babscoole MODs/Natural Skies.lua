@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Natural Skies",
 ["MOD_AUTHOR"]    = "degraaaff & Babscoole",
-["NMS_VERSION"]   = "5.74",
+["NMS_VERSION"]   = "6.00",
 ["MODIFICATIONS"] =
     {
         {
@@ -190,7 +190,11 @@ for i = 1, #DataTable do
                 ["SPECIAL_KEY_WORDS"] = {"GenericSettings", "GcWeatherColourSettingList"},
                 ["PRECEDING_KEY_WORDS"] = {"Settings"},
                 ["ADD"] = CreateColoursProperty(PaletteColours)
+            },
+            {
+                ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                ["EXML_FLAGS"]  = "OVERWRITE",
             }
-        }
+        },
     }
 end

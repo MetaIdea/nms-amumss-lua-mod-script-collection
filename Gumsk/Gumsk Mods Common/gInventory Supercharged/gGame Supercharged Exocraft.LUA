@@ -1,14 +1,14 @@
 Author = "Gumsk"
 ModName = "gGame Inventory Supercharged"
 ModNameSub = "Exocraft"
-BaseDescription = "Makes alll exocraft slots supercharged"
-GameVersion = "6.0.6.0"
+BaseDescription = "Makes all exocraft slots supercharged"
+GameVersion = "6.0.7.0"
 ModVersion = "a"
 
 AddSpecialSlots = [[					<Property name="SpecialSlots">
 ]]
 
-for i = 0,9 do
+for i = 0,8 do
 	for j = 0,2 do
 		AddSpecialSlots = AddSpecialSlots..[[						<Property name="SpecialSlots" value="GcInventorySpecialSlot">
 							<Property name="Type" value="GcInventorySpecialSlotType">

@@ -85,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Natural Blue Skies",
 ["MOD_AUTHOR"]      = "courtykat and Babscoole",
-["NMS_VERSION"]     = "5.75",
+["NMS_VERSION"]     = "6.00",
 ["MODIFICATIONS"]   =
     {
         {
@@ -104,6 +104,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"GenericSettings", "GcWeatherColourSettingList"},
+                                {"Swamp",           "GcWeatherColourSettingList"},
+                                {"Lava",            "GcWeatherColourSettingList"},
+                            },
+                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                            ["EXML_FLAGS"]  = "OVERWRITE",
                         },
                     }
                 },

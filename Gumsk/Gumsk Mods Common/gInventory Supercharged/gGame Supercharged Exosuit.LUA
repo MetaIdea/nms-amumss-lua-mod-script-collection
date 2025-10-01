@@ -2,13 +2,13 @@ Author = "Gumsk"
 ModName = "gGame Inventory Supercharged"
 ModNameSub = "Exosuit"
 BaseDescription = "Makes all exosuit slots supercharged"
-GameVersion = "6.0.6.0"
+GameVersion = "6.0.7.0"
 ModVersion = "a"
 
 AddSpecialSlots = [[					<Property name="SpecialSlots">
 ]]
 
-for i = 0,9 do
+for i = 0,8 do
 	for j = 0,5 do
 		AddSpecialSlots = AddSpecialSlots..[[						<Property name="SpecialSlots" value="GcInventorySpecialSlot">
 							<Property name="Type" value="GcInventorySpecialSlotType">

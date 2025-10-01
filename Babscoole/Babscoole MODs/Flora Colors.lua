@@ -314,6 +314,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NumColours", "All"}
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Grass",    "GcPaletteData"},
+                                {"Plant",    "GcPaletteData"},
+                                {"Leaf",     "GcPaletteData"},
+                                {"GrassAlt", "GcPaletteData"},
+                            },
+                            ["EXML_FLAGS"]  = "OVERWRITE",
+                        },
                     }
                 }
             }

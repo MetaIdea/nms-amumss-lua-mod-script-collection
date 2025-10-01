@@ -3338,7 +3338,11 @@ for i = 1, #DataTable do
             {
                 ["PRECEDING_KEY_WORDS"] = {"Settings"},
                 ["ADD"] = CreateColoursProperty(PaletteColours)
-            }
+            },
+            {
+                ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                ["EXML_FLAGS"]  = "OVERWRITE",
+            },
         }
     }
 end
