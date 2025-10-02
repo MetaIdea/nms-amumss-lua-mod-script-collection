@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "Storm Hammer",
 ["MOD_AUTHOR"]    = "ArmaTec",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.75",
+["NMS_VERSION"]   = "6.00",
 ["MODIFICATIONS"] =
     {
         {

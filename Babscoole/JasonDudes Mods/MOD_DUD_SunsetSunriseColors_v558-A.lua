@@ -138,6 +138,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION",
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"GenericSettings", "GcWeatherColourSettingList"},
+                                {"Swamp",           "GcWeatherColourSettingList"},
+                                {"Lava",            "GcWeatherColourSettingList"},
+                            },
+                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                            ["EXML_FLAGS"]  = "OVERWRITE",
+                        },
                     }
                 },
             }

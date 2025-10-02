@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Exotic Wings Return Inverted Y Wings",
 ["MOD_AUTHOR"]    = "Babscoole, Seekker, Mjjstral",
-["NMS_VERSION"]   = "5.73",
+["NMS_VERSION"]   = "6.00",
 ["MODIFICATIONS"] =
   {
     {

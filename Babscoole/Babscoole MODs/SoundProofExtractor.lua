@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"]    = "SoundProofExtractor",
   ["MOD_DESCRIPTION"] = "Makes Noisy Mineral Extractors Silent",
   ["MOD_AUTHOR"]      = "Pyronox Omega and Babscoole",
-  ["NMS_VERSION"]     = "5.73",
+  ["NMS_VERSION"]     = "6.00",
   ["MODIFICATIONS"]   =
   {
     {

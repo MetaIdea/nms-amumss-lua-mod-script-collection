@@ -4,7 +4,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
 ["NMS_VERSION"]             = "6.00",
 ["MOD_DESCRIPTION"]         = "Cockpitable sentinel police ship you can get via quick action emote menu action",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
         {
@@ -742,6 +741,57 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
   <Property name="Has30HzFrames" value="false" />
+</Data>
+]]
+        },
+        {
+            ["FILE_DESTINATION"] = "LocTable.MXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+<Data template="TkLocalisationTable">
+  <Property name="Table">
+    <Property value="TkLocalisationEntry">
+      <Property name="Id" value="Police" />
+      <Property name="English" value="Police" />
+      <Property name="French" value="Police" />
+      <Property name="Italian" value="Police" />
+      <Property name="German" value="Police" />
+      <Property name="Spanish" value="Police" />
+      <Property name="Russian" value="Police" />
+      <Property name="Polish" value="Police" />
+      <Property name="Dutch" value="Police" />
+      <Property name="Portuguese" value="Police" />
+      <Property name="LatinAmericanSpanish" value="Police" />
+      <Property name="BrazilianPortuguese" value="Police" />
+      <Property name="SimplifiedChinese" value="Police" />
+      <Property name="TraditionalChinese" value="Police" />
+      <Property name="TencentChinese" value="Police" />
+      <Property name="Korean" value="Police" />
+      <Property name="Japanese" value="Police" />
+      <Property name="USEnglish" value="Police" />
+    </Property>
+    <Property value="TkLocalisationEntry">
+      <Property name="Id" value="POLICE" />
+      <Property name="English" value="POLICE" />
+      <Property name="French" value="POLICE" />
+      <Property name="Italian" value="POLICE" />
+      <Property name="German" value="POLICE" />
+      <Property name="Spanish" value="POLICE" />
+      <Property name="Russian" value="POLICE" />
+      <Property name="Polish" value="POLICE" />
+      <Property name="Dutch" value="POLICE" />
+      <Property name="Portuguese" value="POLICE" />
+      <Property name="LatinAmericanSpanish" value="POLICE" />
+      <Property name="BrazilianPortuguese" value="POLICE" />
+      <Property name="SimplifiedChinese" value="POLICE" />
+      <Property name="TraditionalChinese" value="POLICE" />
+      <Property name="TencentChinese" value="POLICE" />
+      <Property name="Korean" value="POLICE" />
+      <Property name="Japanese" value="POLICE" />
+      <Property name="USEnglish" value="POLICE" />
+    </Property>
+  </Property>
 </Data>
 ]]
         },

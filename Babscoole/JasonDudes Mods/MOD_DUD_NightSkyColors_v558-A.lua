@@ -90,6 +90,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Settings"},
                             ["CREATE_HOES"] = "TRUE",
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"GenericSettings", "GcWeatherColourSettingList"},
+                                {"DarkSettings",    "GcWeatherColourSettingList"},
+                            },
+                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                            ["EXML_FLAGS"]  = "OVERWRITE",
+                        },
                     }
                 },
             }

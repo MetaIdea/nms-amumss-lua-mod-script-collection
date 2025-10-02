@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Protection Shield",
+["MOD_FILENAME"]    = "Personal Shield Generator",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["NMS_VERSION"]     = "6.00",
 ["MOD_DESCRIPTION"] = "Protective shield against hazards, bullets ...",
@@ -407,6 +407,57 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
   <Property name="Has30HzFrames" value="false" />
+</Data>
+]]
+        },
+        {
+            ["FILE_DESTINATION"] = "LocTable.MXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+<Data template="TkLocalisationTable">
+  <Property name="Table">
+    <Property value="TkLocalisationEntry">
+      <Property name="Id" value="Shield" />
+      <Property name="English" value="Shield" />
+      <Property name="French" value="Shield" />
+      <Property name="Italian" value="Shield" />
+      <Property name="German" value="Shield" />
+      <Property name="Spanish" value="Shield" />
+      <Property name="Russian" value="Shield" />
+      <Property name="Polish" value="Shield" />
+      <Property name="Dutch" value="Shield" />
+      <Property name="Portuguese" value="Shield" />
+      <Property name="LatinAmericanSpanish" value="Shield" />
+      <Property name="BrazilianPortuguese" value="Shield" />
+      <Property name="SimplifiedChinese" value="Shield" />
+      <Property name="TraditionalChinese" value="Shield" />
+      <Property name="TencentChinese" value="Shield" />
+      <Property name="Korean" value="Shield" />
+      <Property name="Japanese" value="Shield" />
+      <Property name="USEnglish" value="Shield" />
+    </Property>
+    <Property value="TkLocalisationEntry">
+      <Property name="Id" value="TOGGLE_SHIELD" />
+      <Property name="English" value="TOGGLE_SHIELD" />
+      <Property name="French" value="TOGGLE_SHIELD" />
+      <Property name="Italian" value="TOGGLE_SHIELD" />
+      <Property name="German" value="TOGGLE_SHIELD" />
+      <Property name="Spanish" value="TOGGLE_SHIELD" />
+      <Property name="Russian" value="TOGGLE_SHIELD" />
+      <Property name="Polish" value="TOGGLE_SHIELD" />
+      <Property name="Dutch" value="TOGGLE_SHIELD" />
+      <Property name="Portuguese" value="TOGGLE_SHIELD" />
+      <Property name="LatinAmericanSpanish" value="TOGGLE_SHIELD" />
+      <Property name="BrazilianPortuguese" value="TOGGLE_SHIELD" />
+      <Property name="SimplifiedChinese" value="TOGGLE_SHIELD" />
+      <Property name="TraditionalChinese" value="TOGGLE_SHIELD" />
+      <Property name="TencentChinese" value="TOGGLE_SHIELD" />
+      <Property name="Korean" value="TOGGLE_SHIELD" />
+      <Property name="Japanese" value="TOGGLE_SHIELD" />
+      <Property name="USEnglish" value="TOGGLE_SHIELD" />
+    </Property>
+  </Property>
 </Data>
 ]]
         },

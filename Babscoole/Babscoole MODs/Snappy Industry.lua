@@ -1384,7 +1384,7 @@ Huge = [[
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "SnappyIndustry",
+["MOD_FILENAME"]    = "Snappy Industry",
 ["MOD_AUTHOR"]      = "Ethreon, Babscoole, EMPTY.d, KuroPeach",
 ["LUA_AUTHOR"]      = "Babscoole, EMPTY.d, KuroPeach",
 ["NMS_VERSION"]     = "6.00",

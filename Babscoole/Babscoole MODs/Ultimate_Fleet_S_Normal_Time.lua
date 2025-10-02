@@ -5,7 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "Ultimate_Fleet_S_Normal_Time",
 ["MOD_DESCRIPTION"] = "Mostly S-class with high Stats based on RNG",
 ["MOD_AUTHOR"]    = "PyronoxOmega and Babscoole",
-["NMS_VERSION"]   = "5.73",
+["NMS_VERSION"]   = "6.00",
 ["MODIFICATIONS"] =
   {
     {

@@ -530,6 +530,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NumColours", "All"}
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Grass",         "GcPaletteData"},
+                                {"Plant",         "GcPaletteData"},
+                                {"Leaf",          "GcPaletteData"},
+                                {"SkyNight",      "GcPaletteData"},
+                                {"RockSaturated", "GcPaletteData"},
+                                {"RockLight",     "GcPaletteData"},
+                                {"RockDark",      "GcPaletteData"},
+                            },
+                            ["EXML_FLAGS"]  = "OVERWRITE",
+                        },
                     }
                 }
             }

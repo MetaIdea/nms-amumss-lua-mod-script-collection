@@ -9,7 +9,7 @@ local mod_desc = [[
     standard	[0 - 255]:	{221,  32,   112}
 	hex code 	'string' :	'DD2070'
 
-  * ADD_FILES will skipped SILENTLY if new files are not found!
+  * DDS files import is skipped SILENTLY if file paths are not found!
 ]]---------------------------------------------------------------------------
 
 local palette_for_royals = {
@@ -81,7 +81,7 @@ local palette_for_royals = {
 
 local function RebuildPaletteColors()
 	local function trunc(x, n)
-		return tonumber(string.format('%.'..n..'f', x))
+		return tonumber(('%.'..n..'f'):format(x))
 	end
 	local function hex2rgb(hex)
 		local n = {}
@@ -104,17 +104,16 @@ local function RebuildPaletteColors()
 		end
 		return c
 	end
-	local rgba = [[
-		<Property name="Colours">
-			<Property name="R" value="%s"/>
-			<Property name="G" value="%s"/>
-			<Property name="B" value="%s"/>
-			<Property name="A" value="%s"/>
-		</Property>]]
 	local T = {}
 	for _,c in ipairs(palette_for_royals) do
 		c = Convert2Rgba(c)
-		table.insert(T, string.format(rgba, c[1], c[2], c[3], c[4] or 1))
+		T[#T+1] = ([[
+			<Property name="Colours">
+				<Property name="R" value="%s"/>
+				<Property name="G" value="%s"/>
+				<Property name="B" value="%s"/>
+				<Property name="A" value="%s"/>
+			</Property>]]):format(c[1], c[2], c[3], c[4] or 1)
 	end
 	return '<Property name="Colours">'..table.concat(T)..'</Property>'
 end
@@ -122,13 +121,13 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.royal palette.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.55',
+	NMS_VERSION			= '6.06',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SOLARSYSTEM/COLOURS/BASECOLOURPALETTES.MBIN',
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_KEY_WORDS = 'SpaceBottom',
 				VALUE_CHANGE_TABLE 	= {
@@ -148,7 +147,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		MBIN_FILE_SOURCE	= 'TEXTURES/COMMON/SPACECRAFT/S-CLASS/ROYALSCLASS_TRIM.TEXTURE.MBIN',
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'OVERLAY'},
 				REMOVE				= 'Section'
@@ -177,7 +176,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}},
 	ADD_FILES	= (
 		function()
-			local tex_path = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Ship/Royal/'
+			local tex_path = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures_mod_source/textures/common/spacecraft/s-class/'
 			if lfs.attributes(tex_path) then
 				return {{
 					EXTERNAL_FILE_SOURCE = tex_path..'*.DDS',

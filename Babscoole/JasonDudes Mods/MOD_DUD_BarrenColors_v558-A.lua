@@ -251,6 +251,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NumColours", "All"}
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Leaf",      "GcPaletteData"},
+                                {"Wood",      "GcPaletteData"},
+                                {"RockLight", "GcPaletteData"},
+                            },
+                            ["EXML_FLAGS"]  = "OVERWRITE",
+                        },
                     }
                 }
             }

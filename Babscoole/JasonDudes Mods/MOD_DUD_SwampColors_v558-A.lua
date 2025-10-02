@@ -607,6 +607,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NumColours", "Inactive"}
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"SkyNight", "GcPaletteData"},
+                            ["EXML_FLAGS"]  = "OVERWRITE",
+                        },
                     }
                 },
                 {
@@ -619,6 +623,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Grass",    "GcPaletteData"},
                                 {"Plant",    "GcPaletteData"},
                                 {"Leaf",     "GcPaletteData"},
+                                {"Wood",     "GcPaletteData"},
                                 {"SkyNight", "GcPaletteData"},
                                 {"Cave",     "GcPaletteData"},
                                 {"GrassAlt", "GcPaletteData"},
@@ -641,6 +646,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"NumColours", "_4"}
                             }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Grass",         "GcPaletteData"},
+                                {"RockSaturated", "GcPaletteData"},
+                                {"RockDark",      "GcPaletteData"},
+                                {"Plant",         "GcPaletteData"},
+                                {"Leaf",          "GcPaletteData"},
+                                {"Rock",          "GcPaletteData"},
+                                {"Grass",         "GcPaletteData"},
+                            },
+                            ["EXML_FLAGS"]  = "OVERWRITE",
                         },
                     }
                 },

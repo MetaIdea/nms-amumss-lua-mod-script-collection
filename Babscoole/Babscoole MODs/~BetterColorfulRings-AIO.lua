@@ -35,22 +35,22 @@ COLORNAME = ""
   elseif COLORCHOICE == 2 then
       VERNAME = "POLYMER"
       COLORNAME = "Plastic"
-  elseif COLORCHOICE == 3 then 
+  elseif COLORCHOICE == 3 then
       VERNAME = "EXPANSE"
       COLORNAME = "Space"
-  elseif COLORCHOICE == 4 then 
+  elseif COLORCHOICE == 4 then
       VERNAME = "PASTELS"
       COLORNAME = "Sky"
-  elseif COLORCHOICE == 5 then 
+  elseif COLORCHOICE == 5 then
       VERNAME = "NATURE"
       COLORNAME = "GrassAlt"
-  elseif COLORCHOICE == 6 then 
+  elseif COLORCHOICE == 6 then
       VERNAME = "ARMOR"
       COLORNAME = "Custom_Head"
-  elseif COLORCHOICE == 7 then 
+  elseif COLORCHOICE == 7 then
       VERNAME = "INDUSTRIAL"
       COLORNAME = "FreighterPaint"
-  elseif COLORCHOICE == 8 then 
+  elseif COLORCHOICE == 8 then
       VERNAME = "DARKSTEEL"
       COLORNAME = "Metal"
   end
@@ -59,7 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "~BetterColorfulRings-"..VERNAME,
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.73",
+["NMS_VERSION"]     = "6.00",
 ["MOD_DESCRIPTION"] = "Change palette colors for planetary rings",
 ["MODIFICATIONS"]   =
     {
@@ -99,6 +99,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"RockDark", "GcPaletteData"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "ADD_PALETTE",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"PlanetRing", "GcPaletteData"},
+                            ["EXML_FLAGS"]  = "OVERWRITE",
                         },
                     }
                 }

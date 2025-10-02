@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Binocular Scan Colors 3.8.pak", 
+["MOD_FILENAME"] 			= "Better Binocular Scan Colors 4.0", 
 ["MOD_AUTHOR"]				= "Sefer",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.21",
+["NMS_VERSION"]				= "6.00",
 ["MOD_DESCRIPTION"]			= "This mods improves identification colors",
 ["MODIFICATIONS"] 			= 
 	{

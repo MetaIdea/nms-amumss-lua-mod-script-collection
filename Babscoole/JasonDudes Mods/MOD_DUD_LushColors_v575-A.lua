@@ -173,6 +173,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NumColours", "Inactive"}
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Wood",  "GcPaletteData"},
+                                {"Stone", "GcPaletteData"},
+                            },
+                            ["EXML_FLAGS"]  = "OVERWRITE",
+                        },
                     }
                 },
                 {

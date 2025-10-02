@@ -1116,6 +1116,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NumColours", "All"}
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Grass",              "GcPaletteData"},
+                                {"Plant",              "GcPaletteData"},
+                                {"Leaf",               "GcPaletteData"},
+                                {"Wood",               "GcPaletteData"},
+                                {"Rock",               "GcPaletteData"},
+                                {"Stone",              "GcPaletteData"},
+                                {"Crystal",            "GcPaletteData"},
+                                {"Sand",               "GcPaletteData"},
+                                 "RockSaturated",      "GcPaletteData"},
+                                 "RockLight",          "GcPaletteData"},
+                                 "RockDark",           "GcPaletteData"},
+                                 "PlanetRing",         "GcPaletteData"},
+                                 "GrassAlt",           "GcPaletteData"},
+                                 "SpaceStationAlt",    "GcPaletteData"},
+                                 "SpaceStationLights", "GcPaletteData"},
+                            },
+                            ["EXML_FLAGS"]  = "OVERWRITE",
+                        },
                     }
                 },
                 {

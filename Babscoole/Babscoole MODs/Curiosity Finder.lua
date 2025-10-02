@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "CuriosityFinder",
+["MOD_FILENAME"]    = "Curiosity Finder",
 ["MOD_AUTHOR"]      = "Pyronox Omega and Babscoole",
 ["MOD_DESCRIPTION"] = "easily find curiosities on planet surface",
-["NMS_VERSION"]     = "5.73",
+["NMS_VERSION"]     = "6.00",
 ["MODIFICATIONS"]   =
     {
         {
@@ -13,7 +13,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] =
                         {
                             "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/RARE/METALFORMATION.MBIN",
-                            "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/RARE/PHYSICSPROPS.MBIN",
                             "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/RARE/PHYSICSPROPS.MBIN",
                         },
                     ["MXML_CHANGE_TABLE"] =

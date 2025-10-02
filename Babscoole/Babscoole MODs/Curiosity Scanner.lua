@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "CuriosityScanner",
+["MOD_FILENAME"]    = "Curiosity Scanner",
 ["MOD_AUTHOR"]      = "Pyronox Omega and Babscoole",
 ["MOD_DESCRIPTION"] = "increase number curiosities spawn on planet surface",
-["NMS_VERSION"]     = "5.73",
+["NMS_VERSION"]     = "6.00",
 ["MODIFICATIONS"]   =
     {
         {

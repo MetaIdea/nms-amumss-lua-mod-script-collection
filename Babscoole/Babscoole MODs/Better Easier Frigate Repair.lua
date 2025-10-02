@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Better Easier Frigate Repair",
 ["MOD_AUTHOR"]    = "Democrity & Babscoole",
-["NMS_VERSION"]   = "5.72",
+["NMS_VERSION"]   = "6.00",
 ["MODIFICATIONS"] =
   {
     {

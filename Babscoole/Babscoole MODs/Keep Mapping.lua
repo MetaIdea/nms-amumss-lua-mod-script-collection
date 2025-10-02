@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Keep Mapping",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.75",
+["NMS_VERSION"]     = "6.00",
 ["MOD_DESCRIPTION"] = "Keeps map seller dialog open, so you can buy multiple maps in the same session",
 ["MODIFICATIONS"]   =
     {

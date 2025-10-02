@@ -546,6 +546,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NumColours", "_16"}
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Grass",         "GcPaletteData"},
+                                {"RockSaturated", "GcPaletteData"},
+                                {"RockDark",      "GcPaletteData"},
+                                {"Plant",         "GcPaletteData"},
+                                {"Leaf",          "GcPaletteData"},
+                                {"Rock",          "GcPaletteData"},
+                                {"Grass",         "GcPaletteData"},
+                            },
+                            ["EXML_FLAGS"]  = "OVERWRITE",
+                        },
                     }
                 },
                 {
@@ -576,6 +589,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NumColours", "_16"}
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Grass",         "GcPaletteData"},
+                                {"RockSaturated", "GcPaletteData"},
+                                {"RockDark",      "GcPaletteData"},
+                                {"Plant",         "GcPaletteData"},
+                                {"Leaf",          "GcPaletteData"},
+                                {"Rock",          "GcPaletteData"},
+                                {"Grass",         "GcPaletteData"},
+                            },
+                            ["EXML_FLAGS"]  = "OVERWRITE",
+                        },
                     }
                 },
                 {
@@ -594,6 +620,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"NumColours", "All"}
                             }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Grass",         "GcPaletteData"},
+                                {"RockSaturated", "GcPaletteData"},
+                                {"RockDark",      "GcPaletteData"},
+                                {"Plant",         "GcPaletteData"},
+                                {"Leaf",          "GcPaletteData"},
+                                {"Rock",          "GcPaletteData"},
+                                {"Grass",         "GcPaletteData"},
+                            },
+                            ["EXML_FLAGS"]  = "OVERWRITE",
                         },
                     }
                 },
