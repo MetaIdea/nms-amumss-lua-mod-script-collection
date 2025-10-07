@@ -530,19 +530,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NumColours", "All"}
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Grass",         "GcPaletteData"},
-                                {"Plant",         "GcPaletteData"},
-                                {"Leaf",          "GcPaletteData"},
-                                {"SkyNight",      "GcPaletteData"},
-                                {"RockSaturated", "GcPaletteData"},
-                                {"RockLight",     "GcPaletteData"},
-                                {"RockDark",      "GcPaletteData"},
-                            },
-                            ["EXML_FLAGS"]  = "OVERWRITE",
-                        },
                     }
                 }
             }
@@ -598,5 +585,12 @@ for i = 1, #DataTable do
     {
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
+    }
+    
+    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
+        ["EXML_FLAGS"]  = "OVERWRITE",
     }
 end

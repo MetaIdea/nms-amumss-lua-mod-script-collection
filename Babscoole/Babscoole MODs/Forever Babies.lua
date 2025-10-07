@@ -1,7 +1,7 @@
 Author = "courtykat and Babscoole"
 ModName = "Forever Babies"
 BaseDescription = "Companions will stay as cute lil babies forever."
-GameVersion = "5.75"
+GameVersion = "6.00"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {

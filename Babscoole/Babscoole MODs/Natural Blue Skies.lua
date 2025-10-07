@@ -105,16 +105,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION",
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"GenericSettings", "GcWeatherColourSettingList"},
-                                {"Swamp",           "GcWeatherColourSettingList"},
-                                {"Lava",            "GcWeatherColourSettingList"},
-                            },
-                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
-                            ["EXML_FLAGS"]  = "OVERWRITE",
-                        },
                     }
                 },
                 {
@@ -459,5 +449,12 @@ for i = 1, #DataTable do
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcWeatherColourSettingList"},
         ["PRECEDING_KEY_WORDS"] = {"Settings"},
         ["ADD"] = CreateColoursProperty(PaletteColours)
+    }
+    
+    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcWeatherColourSettingList"},
+        ["PRECEDING_KEY_WORDS"] = {"Settings"},
+        ["EXML_FLAGS"]  = "OVERWRITE",
     }
 end

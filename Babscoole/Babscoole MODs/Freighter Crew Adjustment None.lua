@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "Freighter Crew Adjustment None",
 ["MOD_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.75",
+["NMS_VERSION"]             = "6.00",
 ["MODIFICATIONS"] =
     {
         {

@@ -546,19 +546,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NumColours", "_16"}
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Grass",         "GcPaletteData"},
-                                {"RockSaturated", "GcPaletteData"},
-                                {"RockDark",      "GcPaletteData"},
-                                {"Plant",         "GcPaletteData"},
-                                {"Leaf",          "GcPaletteData"},
-                                {"Rock",          "GcPaletteData"},
-                                {"Grass",         "GcPaletteData"},
-                            },
-                            ["EXML_FLAGS"]  = "OVERWRITE",
-                        },
                     }
                 },
                 {
@@ -589,19 +576,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NumColours", "_16"}
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Grass",         "GcPaletteData"},
-                                {"RockSaturated", "GcPaletteData"},
-                                {"RockDark",      "GcPaletteData"},
-                                {"Plant",         "GcPaletteData"},
-                                {"Leaf",          "GcPaletteData"},
-                                {"Rock",          "GcPaletteData"},
-                                {"Grass",         "GcPaletteData"},
-                            },
-                            ["EXML_FLAGS"]  = "OVERWRITE",
-                        },
                     }
                 },
                 {
@@ -620,19 +594,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"NumColours", "All"}
                             }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Grass",         "GcPaletteData"},
-                                {"RockSaturated", "GcPaletteData"},
-                                {"RockDark",      "GcPaletteData"},
-                                {"Plant",         "GcPaletteData"},
-                                {"Leaf",          "GcPaletteData"},
-                                {"Rock",          "GcPaletteData"},
-                                {"Grass",         "GcPaletteData"},
-                            },
-                            ["EXML_FLAGS"]  = "OVERWRITE",
                         },
                     }
                 },
@@ -690,6 +651,13 @@ for i = 1, #ToxicDataTable do
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
+    
+    ToxicBaseColourPalettesTable[#ToxicBaseColourPalettesTable +1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
+        ["EXML_FLAGS"]  = "OVERWRITE",
+    }
 end
 
 local ToxicEggBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
@@ -710,6 +678,13 @@ for i = 1, #ToxicEggDataTable do
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
+    
+    ToxicEggBaseColourPalettesTable[#ToxicEggBaseColourPalettesTable +1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
+        ["EXML_FLAGS"]  = "OVERWRITE",
+    }
 end
 
 local ToxicTentBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["MXML_CHANGE_TABLE"]
@@ -729,5 +704,12 @@ for i = 1, #ToxicTentDataTable do
     {
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
+    }
+    
+    ToxicTentBaseColourPalettesTable[#ToxicTentBaseColourPalettesTable +1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
+        ["EXML_FLAGS"]  = "OVERWRITE",
     }
 end

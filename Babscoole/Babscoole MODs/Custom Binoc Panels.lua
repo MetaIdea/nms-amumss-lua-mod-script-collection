@@ -239,7 +239,7 @@ if E_NOTICE then
 					{"Is Hidden",	"true"} -- Original "false"
 				}
     }
-
+    
     LEFTTABLE[#LEFTTABLE +1] =
     {-- Hide "Press E to place Custom Marker" notification. (C) Balzhur
         ["SPECIAL_KEY_WORDS"] = {"Image", "/TEXTURES/UI/HUD/ICONS/SCANNING/DECSLASH.DDS"},

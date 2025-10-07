@@ -1,5 +1,6 @@
-MOD_VERSION = "3.0"
+MOD_VERSION = "3.2"
 EnableLegacyParts = false
+EnableFleetResearch = true
 UseNanitesForProductTree = true
 
 -- Changes the product research table cost to match the one in the Anomaly.
@@ -58,12 +59,12 @@ CraftableItemsList = {
     "ULTRAPROD1",
     "MEGAPROD3",
     "ULTRAPROD2",
-    "TECH_COMP",
 }
 
 LegacyRecipeTree = {
     {
         ["Title"] = "Wooden Structures",
+        ["CostTypeID"] = "SALVAGE",
         ["Unlockable"] = "W_WALL",
         ["Children"] = {
             {"W_FLOOR", {
@@ -96,6 +97,7 @@ LegacyRecipeTree = {
     },
     {
         ["Title"] = "Wooden Roofing",
+        ["CostTypeID"] = "SALVAGE",
         ["Unlockable"] = "W_ROOF",
         ["Children"] = {
             {"W_ROOF_M", nil},
@@ -106,6 +108,7 @@ LegacyRecipeTree = {
     },
     {
         ["Title"] = "Metal Structures",
+        ["CostTypeID"] = "SALVAGE",
         ["Unlockable"] = "M_WALL",
         ["Children"] = {
             {"M_FLOOR", {
@@ -138,6 +141,7 @@ LegacyRecipeTree = {
     },
     {
         ["Title"] = "Metal Roofing",
+        ["CostTypeID"] = "SALVAGE",
         ["Unlockable"] = "M_ROOF",
         ["Children"] = {
             {"M_ROOF_M", nil},
@@ -148,6 +152,7 @@ LegacyRecipeTree = {
     },
     {
         ["Title"] = "Concrete Structures",
+        ["CostTypeID"] = "SALVAGE",
         ["Unlockable"] = "C_WALL",
         ["Children"] = {
             {"C_FLOOR", {
@@ -181,6 +186,7 @@ LegacyRecipeTree = {
     },
     {
         ["Title"] = "Concrete Roofing",
+        ["CostTypeID"] = "SALVAGE",
         ["Unlockable"] = "C_ROOF",
         ["Children"] = {
             {"C_ROOF_M", nil},
@@ -211,16 +217,7 @@ DialogDataTable = --Dialog (menu) additions to DISABLINGCONDITIONSTABLE.
     }
 }
 
-if EnableLegacyParts then
-    DialogDataTable[#DialogDataTable+1] = 
-    {
-        {"?D_BPA_TECH_P3"},
-        {
-            {"UI_FREIGHTER_RESEARCH_HINT", "TREE_FRIGATE"}, -- Fleet Research
-            {"Legacy Structures", "TREE_LEGACY"} -- Legacy Parts
-        }
-    }
-else
+if EnableFleetResearch then
     DialogDataTable[#DialogDataTable+1] = 
     {
         {"?D_BPA_TECH_P3"},
@@ -232,7 +229,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"] = "AnomalousResearchUnit_v".. MOD_VERSION,
+    ["MOD_FILENAME"] = "AnomalousResearchUnitV".. MOD_VERSION,
     ["MOD_AUTHOR"] = "Aristotale",
     ["MOD_DESCRIPTION"] = "Replaces the Utopia Build Station with all of the research trees from the Anomaly and your Freighter. Optionally include Legacy building items too.",
     ["LUA_AUTHOR"]    = "Aristotale",
@@ -285,7 +282,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SEC_EDIT"] = "GetPuzzleEntry",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Title", "Anomalous Research Unit"},
+                                {"Title", "Anomalous Research Station"},
                                 {"TextAlien", "UI_BP_ANALYSTER_LANG"},
                             }
                         },
@@ -340,7 +337,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Reward","R_S9_TREE_PART"},
                             ["VALUE_CHANGE_TABLE"] = 
                             {
-                                {"Name", "Anomalous Research Unit"},
+                                {"Name", "Anomalous Research Station"},
                                 {"Reward", "JUNK"},
                             }
                         },
@@ -383,6 +380,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"BuildableOnFreighter", "True"},
                                 {"BuildableOnSpaceBase", "True"},
                                 {"BuildableInShipDecorative", "True"},
+                                {"BuildableOnPlanet", "True"},
                             }
                         },
                     }
@@ -397,18 +395,6 @@ local UnlockableTreeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MB
 local ProductRecipeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["MXML_CHANGE_TABLE"]
 local NanitePricing = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
 local BaseProductRecipeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["MXML_CHANGE_TABLE"]
-
-if EnableLegacyParts then
-    NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][#NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]+1] = 
-    {
-        ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
-        ["MXML_CHANGE_TABLE"] =
-        {
-        }
-    }
-    RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][#NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]]["MXML_CHANGE_TABLE"]
-end
-
 
 function SetNanitePricing()
     NanitePricing[#NanitePricing+1] = 
@@ -447,7 +433,10 @@ end
 function AddTreeNodes(nodes)
     local nodeOutput = ""
     for i = 1, #nodes, 1 do
-        nodeOutput = ''
+        nodeOutput = nodeOutput .. [[
+            <Property name="Children" value="GcUnlockableItemTreeNode" _index="]] .. i-1 .. [[">
+                <Property name="Unlockable" value="]] .. nodes[i][1] .. [[" />
+        ]]
         if nodes[i][2] == nil then
             nodeOutput = nodeOutput .. [[
                     <Property name="Children" />
@@ -456,7 +445,7 @@ function AddTreeNodes(nodes)
         else
             nodeOutput = nodeOutput .. [[
                 <Property name="Children">
-                ]] .. AddTreeNodes(nodes[i][2]) .. [[
+                    ]] .. AddTreeNodes(nodes[i][2]) .. [[
                 </Property>
             </Property>
             ]]
@@ -466,69 +455,33 @@ function AddTreeNodes(nodes)
 end
 
 function ConstructLegacyRecipeTree()
-  RecipeTreeConstructed = ''
+    RecipeTreeConstructed = ''
+    index = 50
     for i = 1, #LegacyRecipeTree, 1 do
         RecipeTreeConstructed = RecipeTreeConstructed .. [[
-            <Property name="Trees" value="GcUnlockableItemTree" _index="]] .. i .. [[">
+            <Property name="Trees" value="GcUnlockableItemTree" _index="]] .. index .. [[">
                 <Property name="Title" value="]] .. LegacyRecipeTree[i]["Title"] .. [[" />
                 <Property name="CostTypeID" value="SALVAGE" />
                 <Property name="Root" value="GcUnlockableItemTreeNode">
                     <Property name="Unlockable" value="]] .. LegacyRecipeTree[i]["Unlockable"] .. [[" />
-                    ]] .. AddTreeNodes(LegacyRecipeTree[i]["Children"]) .. [[
+                    <Property name="Children">
+                        ]] .. AddTreeNodes(LegacyRecipeTree[i]["Children"]) .. [[
+                    </Property>
                 </Property>
             </Property>
         ]]
+        index = index + 1
     end
     return RecipeTreeConstructed
 end
 
 function AddLegacyStuff()
     if EnableLegacyParts then
-        RewardTable[#RewardTable+1] =
+        UnlockableTreeTable[#UnlockableTreeTable+1] =
         {
-            ["SEC_EMPTY"] = "REWARD_LEGACY_TREE"
-        }
-        RewardTable[#RewardTable+1] =
-        {
-            ["SPECIAL_KEY_WORDS"] = {"Id", "TREE_TECHBASICS"},
-            ["SEC_SAVE_TO"] = "Tree_Legacy"
-        }
-        RewardTable[#RewardTable+1] =
-        {
-            ["SEC_EDIT"] = "Tree_Legacy",
-            ["VALUE_CHANGE_TABLE"] =
-            {
-                {"Id", "TREE_LEGACY"},
-                {"UnlockableItemTree", "Test"},
-            }
-        }
-        RewardTable[#RewardTable+1] =
-        {
-            ["SEC_EDIT"] = "REWARD_LEGACY_TREE",
-            ["ADD_OPTION"] = "ADDafterSECTION",
-            ["SEC_ADD_NAMED"] = "Tree_Legacy"
-        }
-        RewardTable[#RewardTable+1] =
-        {
-            ["SPECIAL_KEY_WORDS"] = {
-                {"Id", "TREE_TECHBASICS"},
-            },
-            ["SECTION_UP"] = 1,
+            ["SPECIAL_KEY_WORDS"] = {"BaseParts","GcUnlockableItemTrees"},
+            ["PRECEDING_KEY_WORDS"] = {"Trees"},
             ["ADD_OPTION"] = "ADDendSECTION",
-            ["SEC_ADD_NAMED"] = "REWARD_LEGACY_TREE"
-        }
-        UnlockableTreeTable[#UnlockableTreeTable+1] =
-        {
-            ["SPECIAL_KEY_WORDS"] = {"Test","GcUnlockableItemTrees"},
-            ["REPLACE_TYPE"] = "ALL",
-            ["REMOVE"] = "SECTION",
-        }
-        UnlockableTreeTable[#UnlockableTreeTable+1] =
-        {
-            ["SPECIAL_KEY_WORDS"] = {"Test","GcUnlockableItemTrees"},
-            ["VALUE_CHANGE_TABLE"] = {
-                {"Title", "Legacy Building Structures"},
-            },
             ["ADD"] = ConstructLegacyRecipeTree(),
         }
     end
@@ -539,13 +492,12 @@ function AddLegacyStuff()
 end
 
 function AddAnomalyResearchTrees()
-    AnotherFunctionIdkAnymore()
     ResearchTreeTable[#ResearchTreeTable+1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"Id", "%?D_S9_TREE_PART"},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"Title", "Anomalous Research Unit"},
+            {"Title", "Anomalous Research Station"},
             {"TextAlien", "UI_BP_ANALYSTER_LANG"},
         }
     }
@@ -555,12 +507,12 @@ function AddAnomalyResearchTrees()
         ["PRECEDING_KEY_WORDS"] = {"Table"},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"Name", "ANOMALOUS RESEARCH UNIT"},
-            {"NameLower", "Anomalous Research Unit"},
+            {"Name", "Anomalous Research Station"},
+            {"NameLower", "Anomalous Research Station"},
         }
     }
 end
-function AnotherFunctionIdkAnymore()
+function AddDialogOptions()
 --Add Puzzle Entries and Options
 for i = 1, #DialogDataTable do
   local EntryId         = DialogDataTable[i][1][1]
@@ -649,4 +601,5 @@ end
 
 end
 AddLegacyStuff()
+AddDialogOptions()
 AddAnomalyResearchTrees()

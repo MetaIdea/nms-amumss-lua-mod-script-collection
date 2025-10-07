@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]  = "TrueColor-Standard",
     ["MOD_AUTHOR"]    = "courtykat and Babscoole",
-    ["NMS_VERSION"]   = "5.75",
+    ["NMS_VERSION"]   = "6.00",
     ["MODIFICATIONS"] =
     {
         {
@@ -589,7 +589,7 @@ CustomDataTable =
 function GetColours(R,G,B)
     return
     [[
-    <Property value="Colour.xml">
+    <Property name="Colours">
           <Property name="R" value="]].. string.format("%0.6f",R) ..[[" />
           <Property name="G" value="]].. string.format("%0.6f",G) ..[[" />
           <Property name="B" value="]].. string.format("%0.6f",B) ..[[" />
@@ -636,6 +636,13 @@ for i = 1, #BaseDataTable do
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
+    
+    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
+        ["EXML_FLAGS"]  = "OVERWRITE",
+    }
 end
 
 local BaseColourPalettesTable2 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
@@ -657,6 +664,13 @@ for i = 1, #CustomDataTable do
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", Palette, "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
+    }
+    
+    BaseColourPalettesTable2[#BaseColourPalettesTable2 +1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", Palette},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
+        ["EXML_FLAGS"]  = "OVERWRITE",
     }
     end
 end

@@ -607,10 +607,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"NumColours", "Inactive"}
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"SkyNight", "GcPaletteData"},
-                            ["EXML_FLAGS"]  = "OVERWRITE",
-                        },
                     }
                 },
                 {
@@ -646,19 +642,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"NumColours", "_4"}
                             }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Grass",         "GcPaletteData"},
-                                {"RockSaturated", "GcPaletteData"},
-                                {"RockDark",      "GcPaletteData"},
-                                {"Plant",         "GcPaletteData"},
-                                {"Leaf",          "GcPaletteData"},
-                                {"Rock",          "GcPaletteData"},
-                                {"Grass",         "GcPaletteData"},
-                            },
-                            ["EXML_FLAGS"]  = "OVERWRITE",
                         },
                     }
                 },
@@ -767,6 +750,13 @@ for i = 1, #LushDataTable do
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
+    
+    LushBaseColourPalettesTable[#LushBaseColourPalettesTable +1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
+        ["EXML_FLAGS"]  = "OVERWRITE",
+    }
 end
 
 local SwampBaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
@@ -786,5 +776,12 @@ for i = 1, #SwampDataTable do
     {
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
+    }
+    
+    SwampBaseColourPalettesTable[#SwampBaseColourPalettesTable +1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},
+        ["PRECEDING_KEY_WORDS"] = {"Colours"},
+        ["EXML_FLAGS"]  = "OVERWRITE",
     }
 end

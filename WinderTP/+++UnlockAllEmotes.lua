@@ -147,6 +147,73 @@ QUICK_ACTION_BUTTON_TEMPLATE =
 			<Property name="MoveToCancel" value="]] .. MOVECAN .. [[" />
 			<Property name="GekAnimationName" value="" />
 			<Property name="GekLoopAnimUntilMove" value="" />
+			<Property name="AvailableUnderwater" value="false" />
+			<Property name="RidingAnimationName" value="]] .. ANIMRIDE .. [[" />
+			<Property name="IsPetCommand" value="false" />
+			<Property name="PetCommandTitle" value="" />
+			<Property name="PetCommandIcon" value="TkTextureResource">
+				<Property name="Filename" value="" />
+				<Property name="ResHandle" value="GcResource">
+					<Property name="ResourceID" value="0" />
+				</Property>
+			</Property>
+			<Property name="IconResource" value="GcResource">
+				<Property name="ResourceID" value="0" />
+			</Property>
+			<Property name="IconPetCommandResource" value="GcResource">
+				<Property name="ResourceID" value="0" />
+			</Property>
+		</Property>
+    <Property name="Emotes" value="GcPlayerEmote">
+			<Property name="Title" value="W]] .. ANIM_ID .. [[" />
+			<Property name="ChatText" value="" />
+			<Property name="ChatUsesPrefix" value="true" />
+			<Property name="EmoteID" value="]] .. ANIM_ID .. [[1" />
+			<Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
+			<Property name="PropData" value="GcPlayerEmotePropData">
+				<Property name="Model" value="" />
+				<Property name="Scale" value="0.000000" />
+				<Property name="Hand" value="GcHand">
+					<Property name="Hand" value="Right" />
+				</Property>
+				<Property name="IsHologram" value="false" />
+				<Property name="ScanEffectNodeName" value="" />
+				<Property name="ScanEffect" value="GcScanEffectData">
+					<Property name="Id" value="" />
+					<Property name="ScanEffectType" value="Building" />
+					<Property name="Colour">
+            <Property name="R" value="0.823" />
+            <Property name="G" value="0.475" />
+            <Property name="B" value="0.432" />
+            <Property name="A" value="1" />
+					</Property>
+					<Property name="BasecolourIntensity" value="0.200000" />
+					<Property name="ScanlinesSeparation" value="0.100000" />
+					<Property name="FresnelIntensity" value="3.000000" />
+					<Property name="GlowIntensity" value="0.000000" />
+					<Property name="WaveOffset" value="0.000000" />
+					<Property name="WaveActive" value="true" />
+					<Property name="FixedUpAxis" value="false" />
+					<Property name="Transparent" value="false" />
+					<Property name="ModelFade" value="false" />
+					<Property name="FadeInTime" value="0.200000" />
+					<Property name="FadeOutTime" value="0.200000" />
+				</Property>
+				<Property name="DelayTime" value="0.000000" />
+			</Property>
+			<Property name="Icon" value="TkTextureResource">
+				<Property name="Filename" value="]] .. ICON .. [[" />
+				<Property name="ResHandle" value="GcResource">
+					<Property name="ResourceID" value="0" />
+				</Property>
+			</Property>
+			<Property name="LinkedSpecialID" value="" />
+			<Property name="NeverShowInMenu" value="false" />
+			<Property name="LoopAnimUntilMove" value="]] .. ANIMLOOP .. [[" />
+			<Property name="CloseMenuOnSelect" value="false" />
+			<Property name="MoveToCancel" value="]] .. MOVECAN .. [[" />
+			<Property name="GekAnimationName" value="" />
+			<Property name="GekLoopAnimUntilMove" value="" />
 			<Property name="AvailableUnderwater" value="true" />
 			<Property name="RidingAnimationName" value="]] .. ANIMRIDE .. [[" />
 			<Property name="IsPetCommand" value="false" />
