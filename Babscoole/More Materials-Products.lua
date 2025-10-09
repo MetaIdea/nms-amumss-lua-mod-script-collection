@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] = "MoreProducts.pak",
-["MOD_AUTHOR"]	= "Flugelwulff",
-["LUA_AUTHOR"]	= "Babscoole/Flugelwulff",
-["NMS_VERSION"]	= "5.75",
+["MOD_AUTHOR"] = "Flugelwulff",
+["LUA_AUTHOR"] = "Babscoole/Flugelwulff",
+["NMS_VERSION"]	= "6.02",
 ["MODIFICATIONS"] = 
 	{
 		{

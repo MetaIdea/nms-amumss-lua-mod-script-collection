@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] = "MiningMultiplier.pak",
 ["MOD_AUTHOR"] = "Flugelwulff",
 ["LUA_AUTHOR"] = "Flugelwulff",
-["NMS_VERSION"] = "5.75",
+["NMS_VERSION"] = "6.02",
 ["MODIFICATIONS"] =
 	{
 		{

@@ -30,7 +30,7 @@ local base_tree = {
 			'UI_BASIC_BUILDERS_SUB',
 			'UI_BASIC_BUILDERS_ROOFS_SUB',
 			'UI_SHAPES_TREE',
-			'UI_STORAGE_TREE',
+			'UI_STORAGE_TREE'
 		}
 	},
 	{
@@ -39,7 +39,7 @@ local base_tree = {
 		subs	= {
 			'UI_FRE_BASE_TREE'
 		}
-	},
+	}
 }
 local tech_tree = {
 	{
@@ -128,9 +128,9 @@ for _,node in ipairs(tech_tree) do
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit ALL.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.Construction Unit ALL',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.71',
+	NMS_VERSION			= '6.06',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

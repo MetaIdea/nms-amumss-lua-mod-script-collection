@@ -7,7 +7,7 @@ local mod_desc = [[
   - Loitering NPCs repositioned.
   - Starship outfitting consoles added near the teleport entrances.
 
-  * ADD_FILES will skipped SILENTLY if new files are not found!
+  * DDS files import is skipped SILENTLY if file paths are not found!
 ]]------------------------------------------------------------------------------
 ---	MXML 2 LUA ... by lMonk ... version: 1.0.01
 ---	A tool for converting between mxml file format and lua table.
@@ -153,9 +153,11 @@ local function ScNode(nodes)
 		}
 		--	if present, add attributes list
 		if props.attr then
-			-- add accompanying attribute to scenegraph
+			-- add accompanying attributes
 			if props.attr.SCENEGRAPH then
 				props.attr.EMBEDGEOMETRY = 'TRUE'
+			elseif props.attr.TYPE then
+				props.attr.NAVIGATION = 'FALSE'
 			end
 			T.Attr = { meta = {name='Attributes'} }
 			for nm, val in pairs(props.attr) do
@@ -371,9 +373,9 @@ mx_ct[#mx_ct+1] = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 			= '_MOD.lMonk.Freighter Hangar Changes.pak',
+	MOD_FILENAME 			= 'MOD.lMonk.Freighter Hangar Changes',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '6.05',
+	NMS_VERSION				= '6.06',
 	MOD_DESCRIPTION			= mod_desc,
 	AMUMSS_SUPPRESS_MSG		= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 			= {{
@@ -382,7 +384,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIOR.SCENE.MBIN',
 		MXML_CHANGE_TABLE	= mx_ct
 	},
-	{--	add |hangar ship outfitting|
+	{--	|hangar teleport room| add outfitting and corvette beam
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/TELEPORTER/TELEPORTER.SCENE.MBIN',
 		MXML_CHANGE_TABLE	= {
 			{
@@ -393,25 +395,35 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				PRECEDING_KEY_WORDS = 'Children',
 				ADD					= ToMxml( ScNode({
 					{--	add ship outfitting
-						name	= '1RefMonitorShip',
-						ntype	= 'REFERENCE',
-						form	= {tx=2.55, ty=0.12, tz=5.4, ry=135, rz=180, sx=0.55, sy=0.55, sz=0.55},
+						name	= '1LocShipSalvage',
+						ntype	= 'LOCATOR',
+						form	= {tx=2.55, ty=1.4, tz=5.4},
 						attr	= {
-							SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ROOFMONITOR/ROOFMONITOR.SCENE.MBIN'
+							ATTACHMENT = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/OBJECTSPAWNER/ENTITIES/SHIPSALVAGETERMINAL.ENTITY.MBIN'
 						},
 						child	= {
-							name	= 'ColShipSalvage1',
+							name	= 'ColShipSalvage',
 							ntype	= 'COLLISION',
-							form	= {ty=-3},
 							attr	= {
 								TYPE	= 'Sphere',
-								RADIUS	= 0.2
+								RADIUS	= 0.3
 							},
 							child	= {
-								name	= 'LocShipSalvage1',
-								ntype	= 'LOCATOR',
-								attr	= {
-									ATTACHMENT = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/OBJECTSPAWNER/ENTITIES/SHIPSALVAGETERMINAL.ENTITY.MBIN'
+								{
+									name	= 'RefMonitorShipSalvage',
+									ntype	= 'REFERENCE',
+									form	= {ty=-1.1, ry=135, rz=180, sx=0.55, sy=0.55, sz=0.55},
+									attr	= {
+										SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ROOFMONITOR/ROOFMONITOR.SCENE.MBIN'
+									}
+								},
+								{
+									name	= 'RefBaseShipSalvage',
+									ntype	= 'REFERENCE',
+									form	= {ty=-1.8, sx=1.3, sy=1.3, sz=1.3},
+									attr	= {
+										SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/CANISTER0.SCENE.MBIN'
+									}
 								}
 							}
 						}
@@ -430,29 +442,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								form	= {ry=180},
 								attr	= {
 									TYPE		= 'Sphere',
-									RADIUS		= 0.4,
-									NAVIGATION = 'FALSE'
+									RADIUS		= 0.4
 								}
 							},
-						}
-					},
-					{--	corvette beam button
-						name	= 'RefCorvButton',
-						ntype	= 'REFERENCE',
-						form	= {tx=-1.97, ty=1.38, tz=4.55, ry=180, sx=0.77, sy=0.77, sz=0.77},
-						attr	= {
-							SCENEGRAPH = 'MODELS/COMMON/SPACECRAFT/BIGGS/TELECONTROL.SCENE.MBIN'
-						}
-					},
-					{--	corvette beam button base
-						name	= '1RefCorvSign',
-						ntype	= 'REFERENCE',
-						form	= {tx=-1.97, ty=1.38, tz=4.49, rx=90, rz=-90, sx=0.7, sy=0.7, sz=0.6},
-						attr	= {
-							SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ABANDONED/WARNINGSIGN_1.SCENE.MBIN'
+							{--	corvette beam button
+								name	= 'RefCorvButton',
+								ntype	= 'REFERENCE',
+								form	= {ry=180, sx=0.77, sy=0.77, sz=0.77},
+								attr	= {
+									SCENEGRAPH = 'MODELS/COMMON/SPACECRAFT/BIGGS/TELECONTROL.SCENE.MBIN'
+								}
+							},
+							{--	corvette beam button base
+								name	= '1RefCorvSign',
+								ntype	= 'REFERENCE',
+								form	= {tz=-0.06, rx=90, rz=-90, sx=0.7, sy=0.7, sz=0.6},
+								attr	= {
+									SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ABANDONED/WARNINGSIGN_1.SCENE.MBIN'
+								}
+							}
 						}
 					}
-				}))
+				}) )
 			}
 		}
 	},

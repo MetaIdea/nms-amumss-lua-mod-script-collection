@@ -8,8 +8,8 @@ local unlockable_items = {
 	{--	construction unit: (replace tree) tech
 		root	= 'BasicTechParts',
 		parent	= 'UI_PURCHASABLE_BASICTECH_TREE',
-		rmtree	= 'UI_BASIC_TECH_SUB',
-		cost	= 'SALVAGE',
+		title	= 'UI_BASIC_TECH_SUB',
+		isfull	= true,
 		tree	= {
 			'BUILDSAVE',{ -- save point
 				{
@@ -124,6 +124,7 @@ local unlockable_items = {
 		parent	= 'UI_PURCHASABLE_BASICTECH_TREE',
 		title   = 'UI_PRODUCT_TREE_CRAFT',
 		cost	= 'FACTORY',
+		isfull	= true,
 		toend	= true,
 		tree	= {
 			'AM_HOUSING',{ -- antimatter housing
@@ -211,9 +212,9 @@ local unlockable_items = {
 	{--	construction unit: (replace tree) timber base parts
 		root	= 'BasicTechParts',
 		parent	= 'UI_PURCHASABLE_BASICTECH_TREE',
-		rmtree	= 'UI_BASIC_TIMBER_SUB',
+		title	= 'UI_BASIC_TIMBER_SUB',
 		toend	= true,
-		cost	= 'SALVAGE',
+		isfull	= true,
 		tree	= {
 			'T_WALL',{ -- timber wall
 				{
@@ -360,8 +361,8 @@ local unlockable_items = {
 	{--	construction unit: (replace tree) alloy base parts
 		root	= 'BasicTechParts',
 		parent	= 'UI_PURCHASABLE_BASICTECH_TREE',
-		rmtree	= 'UI_BASIC_FIBREGLASS_SUB',
-		cost	= 'SALVAGE',
+		title	= 'UI_BASIC_FIBREGLASS_SUB',
+		isfull	= true,
 		toend	= true,
 		tree	= {
 			'F_WALL',{ -- alloy wall
@@ -509,8 +510,8 @@ local unlockable_items = {
 	{--	construction unit: (replace tree) stone base parts
 		root	= 'BasicTechParts',
 		parent	= 'UI_PURCHASABLE_BASICTECH_TREE',
-		rmtree	= 'UI_BASIC_STONE_SUB',
-		cost	= 'SALVAGE',
+		title	= 'UI_BASIC_STONE_SUB',
+		isfull	= true,
 		toend	= true,
 		tree	= {
 			'S_WALL',{ -- stone wall
@@ -655,11 +656,160 @@ local unlockable_items = {
 			}
 		}
 	},
+	{--	construction unit: builder (salvaged) base parts
+		root	= 'BasicTechParts',
+		parent	= 'UI_PURCHASABLE_BASICTECH_TREE',
+		title	= 'UI_BASIC_BUILDERS_SUB',
+		isfull	= true,
+		toend	= true,
+		tree	= {
+			'B_WALL',{ -- salvaged wall
+				{
+					'B_FLOOR',{ -- salvaged floor panel
+						{
+							'B_GFLOOR',{ -- salvaged floor grille
+								{
+									'B_FLOOR_Q' -- small salvaged panel
+								}
+							}
+						},
+						{
+							'B_RAMP',{ -- salvaged ramp
+								{
+									'B_RAMP_H',{ -- salvaged half ramp
+										{
+											'B_RAMP_Q_TOP' -- salvaged half ramp platform
+										}
+									}
+								}
+							}
+						},
+						{
+							'B_TRIFLOOR',{ -- salvaged triangle
+								{
+									'B_TRIFLOOR_Q',{ -- small salvaged triangle
+										{
+											'B_WALLDIAGONAL' -- sloping salvaged panel
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				{
+					'B_WALL_H',{ -- thin salvaged wall
+						{
+							'B_WALL_Q',{ -- small salvaged wall a
+								{
+									'B_WALL_Q1' -- small salvaged wall b
+								}
+							}
+						},
+						{
+							'B_WALL_Q_H',{ -- short salvaged wall a
+								{
+									'B_WALL_Q_H1' -- short salvaged wall b
+								}
+							}
+						}
+					}
+				},
+				{
+					'B_CHEV_WALL',{ -- extruded salvaged wall
+						{
+							'B_CHEV_DOOR',{ -- extruded salvaged door
+								{
+									'B_CHEV_WALL_H_C' -- extruded salvaged wall cap
+								}
+							}
+						},
+						{
+							'B_CHEV_WIN0',{ -- extruded salvaged grille a
+								{
+									'B_CHEV_WIN1',{ -- extruded salvaged circle window
+										{
+											'B_CHEV_WIN2' -- extruded salvaged grille b
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				{
+					'B_DOOR_H',{ -- salvaged doorway
+						{
+							'B_DOORWINDOW',{ -- salvaged frontage
+								{
+									'B_WALL_WIN1',{ -- salvaged grille window
+										{
+											'B_WALL_WIN2' -- salvaged large window
+										},
+										{
+											'B_WALL_WIN3' -- salvaged circle window
+										}
+									}
+								},
+								{
+									'B_WALL_WINDOW' -- salvaged slit window
+								}
+							}
+						},
+						{
+							'B_DOOR',{ -- salvaged arch door
+								{
+									'B_DOOR1',{ -- salvaged rectangular door
+										{
+											'B_GDOOR' -- salvaged power door
+										}
+									}
+								}
+							}
+						},
+						{
+							'B_ARCH',{ -- salvaged arch
+								{
+									'B_ARCH_H' -- salvaged half arch
+								}
+							}
+						}
+					}
+				},
+				{
+					'B_ROOF3',{ -- flat salvaged roof
+						{
+							'B_ROOF_M',{ -- salvaged roof panel
+								{
+									'B_ROOF_M_Q',{ -- sloping salvaged roof panel
+										{
+											'B_ROOF_E_Q' -- sloping salvaged roof gable
+										}
+									}
+								}
+							}
+						},
+						{
+							'B_ROOF2',{ -- angled flat salvaged roof
+								{
+									'B_ROOF0',{ -- rounded flat salvaged roof
+										{
+											'B_ROOF_M_CAP' -- salvaged roof cap
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
 	{--	base parts: re-add basic concrete shelter parts tree
 		root	= 'BaseParts',
 		parent	= 'UI_PURCHASABLE_BASEPARTS_TREE',
 		title   = 'UI_BASIC_CONCRETE_SUB',
-		cost	= 'SALVAGE',
+		isfull	= true,
 		toend	= true,
 		tree	= {
 			'C_WALL',{ -- concrete wall
@@ -750,7 +900,7 @@ local unlockable_items = {
 		root	= 'BaseParts',
 		parent	= 'UI_PURCHASABLE_BASEPARTS_TREE',
 		title   = 'UI_BASIC_METAL_SUB',
-		cost	= 'SALVAGE',
+		isfull	= true,
 		toend	= true,
 		tree	= {
 			'M_WALL',{ -- metal wall
@@ -841,7 +991,7 @@ local unlockable_items = {
 		root	= 'BaseParts',
 		parent	= 'UI_PURCHASABLE_BASEPARTS_TREE',
 		title   = 'UI_BASIC_WOOD_SUB',
-		cost	= 'SALVAGE',
+		isfull	= true,
 		toend	= true,
 		tree	= {
 			'W_WALL',{ -- wooden wall
@@ -1023,17 +1173,17 @@ local function BuildTree(node)
 		return T
 	end
 	local e2l = traverse(node.tree)
-	if node.cost then e2l.meta.name = 'Root' end
+	if node.isfull then e2l.meta.name = 'Root' end
 	return e2l
 end
 
 local function AddTreeToChangeTable(node)
-	if node.cost then
+	if node.isfull then
 	--- full tree addition ---
 		local tree_root = {
 			meta	= {name='Trees', value='GcUnlockableItemTree'},
 			Title		= node.title or node.rmtree,
-			CostTypeID	= node.cost,
+			CostTypeID	= node.cost or 'SALVAGE',
 			Root		= BuildTree(node)
 		}
 		if node.after then
@@ -1070,23 +1220,23 @@ local function AddTreeToChangeTable(node)
 	end
 end
 
-local mx_ct = {}
-local rem = #mx_ct + 1
-mx_ct[rem] = {SKW={}, REMOVE='Section'}
+local mx_ct = {
+	{
+		REPLACE_TYPE= 'All',
+		SKW			= {'BasicTechParts', 'GcUnlockableItemTrees', 'Trees', 'GcUnlockableItemTree'},
+		REMOVE		= 'Section'
+	}
+}
 
 -- process changes/additions to all trees
 for _,node in ipairs(unlockable_items) do
-	-- do all REMOVEs before adding
-	if node.rmtree then
-		mx_ct[rem].SKW[#mx_ct[rem].SKW + 1] = {node.root, 'GcUnlockableItemTrees', 'Title', node.parent, 'Title', node.rmtree}
-	end
 	mx_ct[#mx_ct+1] = AddTreeToChangeTable(node)
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit Update.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.Construction Unit Update',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.71',
+	NMS_VERSION			= '6.06',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
