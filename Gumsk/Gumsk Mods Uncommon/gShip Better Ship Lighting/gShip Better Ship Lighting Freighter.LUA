@@ -1,15 +1,17 @@
-ModName = "gLight Better Ship Lighting"
+ModName = "gShip Better Ship Lighting"
 ModNameSub = "Freighter"
 BaseDescription = ""
-GameVersion = "5.2.8.0"
+GameVersion = "6.0.7.0"
 ModVersion = "a"
 
 --[[ Files Modified:
 MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\LANDINGPAD_HANGAR.SCENE.MBIN
+MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN
+MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIOR.SCENE.MBIN
 ]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
 	MOD_DESCRIPTION	= BaseDescription,
 	MOD_AUTHOR		= "Gumsk",
 	LUA_AUTHOR		= "Gumsk",
@@ -19,14 +21,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			MBIN_CHANGE_TABLE = {
 				{
 					MBIN_FILE_SOURCE = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\LANDINGPAD_HANGAR.SCENE.MBIN",
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {
 								"Name","COL_R"
 							},
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
+								{"Value",1.000000},
 							}
 						},
 						{
@@ -35,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
+								{"Value",1.000000},
 							}
 						},
 						{
@@ -44,7 +46,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
+								{"Value",1.000000},
 							}
 						},
 						{
@@ -62,21 +64,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							VALUE_CHANGE_TABLE = {
-								{"Value",35000.0},
+								{"Value",35000.000000},
 							}
 						},
 					}
 				},
 				{
 					MBIN_FILE_SOURCE = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN",
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {
 								"Name","COL_R"
 							},
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
+								{"Value",1.000000},
 							}
 						},
 						{
@@ -85,7 +87,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
+								{"Value",1.000000},
 							}
 						},
 						{
@@ -94,21 +96,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
+								{"Value",1.000000},
 							}
 						},
 					}
 				},
 				{
 					MBIN_FILE_SOURCE = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIOR.SCENE.MBIN",
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {
 								"Name","COL_R"
 							},
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
+								{"Value",1.000000},
 							}
 						},
 						{
@@ -117,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
+								{"Value",1.000000},
 							}
 						},
 						{
@@ -126,7 +128,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
+								{"Value",1.000000},
 							}
 						},
 					}

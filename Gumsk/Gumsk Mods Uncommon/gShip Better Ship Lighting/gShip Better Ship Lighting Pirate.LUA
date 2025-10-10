@@ -1,15 +1,15 @@
-ModName = "gLight Better Ship Lighting"
+ModName = "gShip Better Ship Lighting"
 ModNameSub = "Pirate"
 BaseDescription = ""
-GameVersion = "5.2.8.0"
+GameVersion = "6.0.7.0"
 ModVersion = "a"
 
 --[[ Files Modified:
-MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\LANDINGPAD_HANGAR.SCENE.MBIN
+MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN
 ]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
 	MOD_DESCRIPTION	= BaseDescription,
 	MOD_AUTHOR		= "Gumsk",
 	LUA_AUTHOR		= "Gumsk",
@@ -19,32 +19,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			MBIN_CHANGE_TABLE = {
 				{
 					MBIN_FILE_SOURCE = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN",
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {
 								"Name","COL_R"
 							},
-							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
+								{"Value",1.000000},
 							}
 						},
 						{
 							SPECIAL_KEY_WORDS = {
 								"Name","COL_G"
 							},
-							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
+								{"Value",1.000000},
 							}
 						},
 						{
 							SPECIAL_KEY_WORDS = {
 								"Name","COL_B"
 							},
-							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
+								{"Value",1.000000},
 							}
 						},
 						{
@@ -52,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","FOV"
 							},
 							VALUE_CHANGE_TABLE = {
-								{"Value",120.0},
+								{"Value",120.000000},
 							}
 						},
 						{
@@ -60,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","LandingPadLight",
 							},
 							VALUE_CHANGE_TABLE = {
-								{"TransY",12.0},
+								{"TransY",12.000000},
 							}
 						},
 					}
