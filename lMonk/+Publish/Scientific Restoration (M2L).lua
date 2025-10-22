@@ -7,7 +7,7 @@ local mod_desc = [[
   Decals placement tweaks.
   lod fixes
 ]]-----------------------------------------------------------------------------------
----	MXML 2 LUA ... by lMonk ... version: 1.0.01
+---	MXML 2 LUA ... by lMonk ... version: 1.0.03
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -83,6 +83,13 @@ local function ToMxml(class)
 	return nil
 end
 
+--	=> Translates a 0xFF hex section from a longer string to 0-1.0 percentage
+--	@param hex: hex string (case insensitive [A-z0-9])
+--	@param i: the hex pair's index
+local function Hex2Percent(hex, i)
+	return math.floor(tonumber(hex:sub(i * 2 - 1, i * 2), 16) / 255 * 1000) / 1000
+end
+
 --	=> Determine if received is a single or multi-item
 --	then process items through the received function
 --	@param items: table of item properties or a non-keyed table of items (keys are ignored)
@@ -145,15 +152,17 @@ local function ScNode(nodes)
 			RotX	= (props.form.rx or props.form[4]) or nil,
 			RotY	= (props.form.ry or props.form[5]) or nil,
 			RotZ	= (props.form.rz or props.form[6]) or nil,
-			ScaleX	= (props.form.sx or props.form[7]) or 1,
-			ScaleY	= (props.form.sy or props.form[8]) or 1,
-			ScaleZ	= (props.form.sz or props.form[9]) or 1
+			ScaleX	= (props.form.sl or props.form.sx or props.form[7]) or 1,
+			ScaleY	= (props.form.sl or props.form.sy or props.form[8] or props.form[7]) or 1,
+			ScaleZ	= (props.form.sl or props.form.sz or props.form[9] or props.form[7]) or 1
 		}
 		--	if present, add attributes list
 		if props.attr then
-			-- add accompanying attribute to scenegraph
+			-- add accompanying attributes
 			if props.attr.SCENEGRAPH then
 				props.attr.EMBEDGEOMETRY = 'TRUE'
+			elseif props.attr.TYPE then
+				props.attr.NAVIGATION = 'FALSE'
 			end
 			T.Attr = { meta = {name='Attributes'} }
 			for nm, val in pairs(props.attr) do
@@ -167,20 +176,13 @@ local function ScNode(nodes)
 		if props.child then
 		--	add children list if found
 			local k,_ = next(props.child)
-			cnd = ScNode(props.child)
+			local cnd = ScNode(props.child)
 			T.Child	= k == 1 and cnd or {cnd}
 			T.Child.meta = {name='Children'}
 		end
 		return T
 	end
 	return ProcessOnenAll(nodes, sceneNode)
-end
-
---	=> Translates a 0xFF hex section from a longer string to 0-1.0 percentage
---	@param hex: hex string (case insensitive [A-z0-9])
---	@param i: the hex pair's index
-local function Hex2Percent(hex, i)
-	return math.floor(tonumber(hex:sub(i * 2 - 1, i * 2), 16) / 255 * 1000) / 1000
 end
 
 --	=> Builds light TkSceneNodeData sections.
@@ -235,57 +237,59 @@ end
 ---------------------------------------------------------------------------------
 
 local science = {
+	canopy_a =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/CANOPY/CANOPYA/CANOPYA.SCENE.MBIN'},
+	canopy_b =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/CANOPY/CANOPYB/CANOPYB.SCENE.MBIN'},
 	interior =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/INTERIORS/CANOPYA_INTERIOR.SCENE.MBIN',      		skip=true},
 	lamp =		{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/ACCESSORIES/LAMP.SCENE.MBIN',						skip=true},
-	cockpit_a =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITA/COCKPITA.SCENE.MBIN',			add=true},
-	cockbck_a =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITA/BACK/COCKPITABACKB.SCENE.MBIN',	add=true},
-	cockpit_b =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITB/COCKPITB.SCENE.MBIN',    		add=true,	lod1=true},
-	cockpit_c =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITC/COCKPITC.SCENE.MBIN',    		add=true},
-	cockpit_d =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITD/COCKPITD.SCENE.MBIN',    		add=true},
-	wing_al	=	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSA/WINGSA_LEFT.SCENE.MBIN',      		add=true},
-	wing_ar =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSA/WINGSA_RIGHT.SCENE.MBIN',      		add=true},
-	wing_bl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSB/WINGSBLEFT.SCENE.MBIN',      		add=true},
-	wing_br =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSB/WINGSBRIGHT.SCENE.MBIN',      		add=true},
-	wing_cl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSC/WINGCLEFT.SCENE.MBIN',      			add=true},
-	wing_cr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSC/WINGCRIGHT.SCENE.MBIN',      		add=true},
-	wing_dl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSD/WINGDLEFT.SCENE.MBIN',      			add=true},
-	wing_dr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSD/WINGDRIGHT.SCENE.MBIN',      		add=true},
-	wing_el =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSE/WINGELEFT.SCENE.MBIN',      			add=true},
-	wing_er =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSE/WINGERIGHT.SCENE.MBIN',      		add=true},
-	wing_fl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSF/WINGFLEFT.SCENE.MBIN',      			add=true},
-	wing_fr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSF/WINGFRIGHT.SCENE.MBIN',      		add=true},
-	wing_gl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSG/WINGGLEFT.SCENE.MBIN',      			add=true},
-	wing_gr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSG/WINGGRIGHT.SCENE.MBIN',      		add=true},
-	wing_hl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSH/WINGHLEFT.SCENE.MBIN',      			add=true},
-	wing_hr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSH/WINGHRIGHT.SCENE.MBIN',      		add=true},
-	wing_il =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSI/WINGILEFT.SCENE.MBIN',  				add=true},
-	wing_ir =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSI/WINGIRIGHT.SCENE.MBIN',  			add=true},
-	wing_jl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSJ/WINGJLEFT.SCENE.MBIN',  				add=true,	lod1=true},
-	wing_jr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSJ/WINGJRIGHT.SCENE.MBIN',  			add=true,	lod1=true},
-	wing_kl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSK/WINGKLEFT.SCENE.MBIN',  				add=true},
-	wing_kr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSK/WINGKRIGHT.SCENE.MBIN',  			add=true},
-	wing_ll =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSL/WINGSL_LEFT.SCENE.MBIN',  			add=true},
-	wing_lr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSL/WINGSL_RIGHT.SCENE.MBIN',  			add=true},
-	wing_ml =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSM/WINGSM_L.SCENE.MBIN',  				add=true},
-	wing_mr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSM/WINGSM_R.SCENE.MBIN',  				add=true},
-	wing_tl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGTOPJOINT/WINGTOPJOINT_LEFT.SCENE.MBIN',	add=true},
-	wing_tr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGTOPJOINT/WINGTOPJOINT_RIGHT.SCENE.MBIN',add=true},
-	s_wing_al =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSA/SUBWINGSA_LEFT.SCENE.MBIN', 	add=true},
-	s_wing_ar =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSA/SUBWINGSA_RIGHT.SCENE.MBIN', 	add=true},
-	s_wing_bl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSB/SUBWINGSB_LEFT.SCENE.MBIN', 	add=true,	lod1=true},
-	s_wing_br =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSB/SUBWINGSB_RIGHT.SCENE.MBIN', 	add=true,	lod1=true},
-	s_wing_cl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSC/SUBWINGSC_LEFT.SCENE.MBIN', 	add=true,	lod1=true},
-	s_wing_cr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSC/SUBWINGSC_RIGHT.SCENE.MBIN', 	add=true,	lod1=true},
-	s_wing_dl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSD/SUBWINGSD_LEFT.SCENE.MBIN', 	add=true,	lod1=true},
-	s_wing_dr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSD/SUBWINGSD_RIGHT.SCENE.MBIN', 	add=true,	lod1=true},
-	s_wing_el =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSE/SUBWINGE_L.SCENE.MBIN', 		add=true},
-	s_wing_er =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSE/SUBWINGE_R.SCENE.MBIN', 		add=true},
+	cockpit_a =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITA/COCKPITA.SCENE.MBIN'},
+	cockbck_a =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITA/BACK/COCKPITABACKB.SCENE.MBIN'},
+	cockpit_b =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITB/COCKPITB.SCENE.MBIN',			skip=true},
+	cockpit_c =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITC/COCKPITC.SCENE.MBIN'},
+	cockpit_d =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITD/COCKPITD.SCENE.MBIN'},
+	wing_al	=	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSA/WINGSA_LEFT.SCENE.MBIN'},
+	wing_ar =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSA/WINGSA_RIGHT.SCENE.MBIN'},
+	wing_bl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSB/WINGSBLEFT.SCENE.MBIN'},
+	wing_br =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSB/WINGSBRIGHT.SCENE.MBIN'},
+	wing_cl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSC/WINGCLEFT.SCENE.MBIN'},
+	wing_cr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSC/WINGCRIGHT.SCENE.MBIN'},
+	wing_dl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSD/WINGDLEFT.SCENE.MBIN'},
+	wing_dr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSD/WINGDRIGHT.SCENE.MBIN'},
+	wing_el =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSE/WINGELEFT.SCENE.MBIN'},
+	wing_er =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSE/WINGERIGHT.SCENE.MBIN'},
+	wing_fl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSF/WINGFLEFT.SCENE.MBIN'},
+	wing_fr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSF/WINGFRIGHT.SCENE.MBIN'},
+	wing_gl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSG/WINGGLEFT.SCENE.MBIN'},
+	wing_gr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSG/WINGGRIGHT.SCENE.MBIN'},
+	wing_hl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSH/WINGHLEFT.SCENE.MBIN'},
+	wing_hr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSH/WINGHRIGHT.SCENE.MBIN'},
+	wing_il =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSI/WINGILEFT.SCENE.MBIN'},
+	wing_ir =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSI/WINGIRIGHT.SCENE.MBIN'},
+	wing_jl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSJ/WINGJLEFT.SCENE.MBIN',				skip=true},
+	wing_jr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSJ/WINGJRIGHT.SCENE.MBIN',				skip=true},
+	wing_kl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSK/WINGKLEFT.SCENE.MBIN'},
+	wing_kr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSK/WINGKRIGHT.SCENE.MBIN'},
+	wing_ll =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSL/WINGSL_LEFT.SCENE.MBIN'},
+	wing_lr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSL/WINGSL_RIGHT.SCENE.MBIN'},
+	wing_ml =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSM/WINGSM_L.SCENE.MBIN'},
+	wing_mr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSM/WINGSM_R.SCENE.MBIN'},
+	wing_tl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGTOPJOINT/WINGTOPJOINT_LEFT.SCENE.MBIN'},
+	wing_tr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGTOPJOINT/WINGTOPJOINT_RIGHT.SCENE.MBIN'},
+	s_wing_al =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSA/SUBWINGSA_LEFT.SCENE.MBIN'},
+	s_wing_ar =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSA/SUBWINGSA_RIGHT.SCENE.MBIN'},
+	s_wing_bl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSB/SUBWINGSB_LEFT.SCENE.MBIN',	skip=true},
+	s_wing_br =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSB/SUBWINGSB_RIGHT.SCENE.MBIN',	skip=true},
+	s_wing_cl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSC/SUBWINGSC_LEFT.SCENE.MBIN',	skip=true},
+	s_wing_cr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSC/SUBWINGSC_RIGHT.SCENE.MBIN',	skip=true},
+	s_wing_dl =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSD/SUBWINGSD_LEFT.SCENE.MBIN',	skip=true},
+	s_wing_dr =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSD/SUBWINGSD_RIGHT.SCENE.MBIN',	skip=true},
+	s_wing_el =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSE/SUBWINGE_L.SCENE.MBIN'},
+	s_wing_er =	{src='MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SUBWINGS/SUBWINGSE/SUBWINGE_R.SCENE.MBIN'},
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 			= '_MOD.lMonk.Scientific Restoration.pak',
+	MOD_FILENAME 			= 'MOD.lMonk.Scientific Restoration',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '6.02',
+	NMS_VERSION				= '6.06',
 	AMUMSS_SUPPRESS_MSG		= 'MULTIPLE_STATEMENTS',
 	MOD_DESCRIPTION			= mod_desc,
 	MODIFICATIONS 			= {{
@@ -457,44 +461,37 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }},
 	{
 		MBIN_CHANGE_TABLE = (
-			function()
-				T = {}
-				for _,part in pairs(science) do
-					if not part.skip then
-						local inx = #T+1
-						T[inx] = {
-							MBIN_FILE_SOURCE	= part.src,
-							MXML_CHANGE_TABLE	= {
-								{
-									SPECIAL_KEY_WORDS	= {'Name', 'NUMLODS'},
-									VALUE_CHANGE_TABLE 	= {
-										{'Value',		4}
-									}
+		function()
+			local T = {}
+			for _,part in pairs(science) do
+				if not part.skip then
+					T[#T+1] = {
+						MBIN_FILE_SOURCE	= part.src,
+						MXML_CHANGE_TABLE	= {
+							{
+								SPECIAL_KEY_WORDS	= {'Name', 'LODDIST1'},
+								VALUE_CHANGE_TABLE 	= {
+									{'Value',		200}
+								}
+							},
+							{
+								SPECIAL_KEY_WORDS	= {'Name', 'LODDIST2'},
+								VALUE_CHANGE_TABLE 	= {
+									{'Value',		360}
+								}
+							},
+							{
+								SPECIAL_KEY_WORDS	= {'Name', 'LODDIST3'},
+								VALUE_CHANGE_TABLE 	= {
+									{'Value',		480}
 								}
 							}
 						}
-						local mct = T[inx].MXML_CHANGE_TABLE
-						if not part.lod1 then
-							mct[#mct+1] = {
-								SPECIAL_KEY_WORDS 	= {'Name', 'LODDIST[1-3]'},
-								REMOVE				= 'Section'
-							}
-						end
-						if part.add then
-							mct[#mct+1] = {
-								SPECIAL_KEY_WORDS	= {'Name', 'NUMLODS'},
-								ADD_OPTION			= 'AddAfterSection',
-								ADD 				= ToMxml({
-									meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
-									Name	= 'ATTACHMENT',
-									Value	= 'MODELS/COMMON/SPACECRAFT/SHARED/ENTITIES/SHAREDLODDISTANCES.ENTITY.MBIN'
-								})
-							}
-						end
-					end
+					}
 				end
-				return T
 			end
+			return T
+		end
 		)()
 	}
 }}

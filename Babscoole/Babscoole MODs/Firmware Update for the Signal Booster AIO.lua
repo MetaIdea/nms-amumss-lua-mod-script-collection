@@ -65,6 +65,7 @@ ScanDataTable = --Additions to SCANEVENTTABLEPLANET
     {"SE_GL_GRV" , "None",          "Nearest",        "FindBuildingClass",          "GraveInCave",            "false",         "false",                  "UI_MP_PLANTKILL_GRAVE_OSD",     "UI_TITLE_OWNED_LORE1",          "SCAN_GRAVE"               },
     {"SE_GL_BASE", "None",          "Nearest",        "FindBuildingClass",          "Base",                   "false",         "false",                  "SIGNAL_BASE",                   "TIP_BASE",                      ""                         },
     {"SE_GL_GLCH", "None",          "Nearest",        "FindBuildingClass",          "StoryGlitch",            "false",         "false",                  "NPC_COMM_WEEK_04_GLITCH_OSD",   "NPC_COMM_WEEK_04_GLITCH_RES_A", "BUILDING_GLITCHYSTORYBOX" },
+    {"SE_GL_MONO", "None",          "Nearest",        "FindBuildingClass",          "Monolith",               "false",         "false",                  "SIGNAL_MONOLITH",               "TIP_MONOLITH",                  "BUILDING_MONOLITH" },
     {"SE_GL_ABAN", "None",          "Nearest",        "FindBuildingClass",          "Abandoned",              "false",         "false",                  "SIGNAL_ABANDONED",              "TIP_ABANDONED",                 ""                         },
     {"SE_GL_RBCP", "None",          "Nearest",        "FindBuildingClass",          "AbandonedRobotCamp",     "false",         "false",                  "UI_CAMP_REVEAL_OSD",            "UI_CAMP_REVEAL_MSG",            "UI_CAMP_REVEAL_MARKER"    },
     {"SE_GL_DRCS", "None",          "Nearest",        "FindBuildingClass",          "SentinelDistressSignal", "false",         "false",                  "UI_CRASH_REVEAL_OSD",           "UI_CRASH_REVEAL_MSG",           "UI_CRASH_REVEAL_MARKER"   },
@@ -72,7 +73,7 @@ ScanDataTable = --Additions to SCANEVENTTABLEPLANET
     {"SE_GL_SETB", "None",          "Random" ,        "UnownedSettlement_Builders", "None",                   "true" ,         "true" ,                  "UI_SETTLEMENT_BUI_LOCATED_OSD", "UI_SETTLEMENT_BUI_LOCATED",     ""                         },
 }
 
-MissionDataTable = --Additions to DISABLINGCONDITIONSTABLE and REWARDTABLE
+MissionDataTable = --Additions to ENABLINGCONDITIONSTABLE and REWARDTABLE
  --  MISSION            MISSION AMOUNT  REWARDTABLE ID   REWARDTABLE EVENT
 {--  SCANREWARDS ID     PROXY LEVEL     PROXY REWARD
     {"R_GLS_SCAN_0",  "0" ,           "R_GL_SHLT", "SE_GL_SHLT"},
@@ -89,14 +90,15 @@ MissionDataTable = --Additions to DISABLINGCONDITIONSTABLE and REWARDTABLE
     {"R_GLS_SCAN_11", "11",           "R_GL_GRV" , "SE_GL_GRV" },
     {"R_GLS_SCAN_12", "12",           "R_GL_BASE", "SE_GL_BASE"},
     {"R_GLS_SCAN_13", "13",           "R_GL_GLCH", "SE_GL_GLCH"},
-    {"R_GLS_SCAN_14", "14",           "R_GL_ABAN", "SE_GL_ABAN"},
-    {"R_GLS_SCAN_15", "15",           "R_GL_RBCP", "SE_GL_RBCP"},
-    {"R_GLS_SCAN_16", "16",           "R_GL_DRCS", "SE_GL_DRCS"},
-    {"R_GLS_SCAN_17", "17",           "R_GL_SETL", "SE_GL_SETL"},
-    {"R_GLS_SCAN_18", "18",           "R_GL_SETB", "SE_GL_SETB"},
+    {"R_GLS_SCAN_14", "14",           "R_GL_MONO", "SE_GL_MONO"},
+    {"R_GLS_SCAN_15", "15",           "R_GL_ABAN", "SE_GL_ABAN"},
+    {"R_GLS_SCAN_16", "16",           "R_GL_RBCP", "SE_GL_RBCP"},
+    {"R_GLS_SCAN_17", "17",           "R_GL_DRCS", "SE_GL_DRCS"},
+    {"R_GLS_SCAN_18", "18",           "R_GL_SETL", "SE_GL_SETL"},
+    {"R_GLS_SCAN_19", "19",           "R_GL_SETB", "SE_GL_SETB"},
 }
 
-DialogDataTable = --Dialog (menu) additions to DISABLINGCONDITIONSTABLE.
+DialogDataTable = --Dialog (menu) additions to ENABLINGCONDITIONSTABLE.
 {
     {--GcAlienPuzzleEntry Id
         {"D_GLS_SCAN_P1"},
@@ -134,21 +136,22 @@ DialogDataTable = --Dialog (menu) additions to DISABLINGCONDITIONSTABLE.
         {
             {"INTRCT_CLAIM_BASE",        "R_GLS_SCAN_12"},
             {"BUILDING_GLITCHYSTORYBOX", "R_GLS_SCAN_13"},
-            {"BUILDING_ABANDONED_L",     "R_GLS_SCAN_14"},
+            {"BUILDING_MONOLITH",        "R_GLS_SCAN_14"},
         }
     },
     {
         {"D_GLS_SCAN_P6"},
         {
-            {"UI_ABAND_ROBOT_CAMP_NAME", "R_GLS_SCAN_15"},
-            {"UI_SENTINEL_CRASH_MARKER", "R_GLS_SCAN_16"},
-            {"UI_SETTLEMENT_LABEL",      "R_GLS_SCAN_17"},
+            {"BUILDING_ABANDONED_L",     "R_GLS_SCAN_15"},
+            {"UI_ABAND_ROBOT_CAMP_NAME", "R_GLS_SCAN_16"},
+            {"UI_SENTINEL_CRASH_MARKER", "R_GLS_SCAN_17"},
         }
     },
     {
         {"D_GLS_SCAN_P7"},
         {
-            {"UI_SETTLEMENT_BUI_LABEL", "R_GLS_SCAN_18"},
+            {"UI_SETTLEMENT_LABEL",     "R_GLS_SCAN_18"},
+            {"UI_SETTLEMENT_BUI_LABEL", "R_GLS_SCAN_19"},
         }
     },
 }
@@ -737,7 +740,7 @@ for i=1, #MissionDataTable, 1 do
     }
 end
 
---Add DISABLINGCONDITIONSTABLE entries
+--Add ENABLINGCONDITIONSTABLE entries
 --Add ScanEvent Stat rewards
 for i = 1, #MissionDataTable do
   local Id     = MissionDataTable[i][1]

@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "SentinelStarshipFabricator"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "603"
+METADATA_NMS_VERSION    = "606"
 METADATA_MOD_DESC       = "This mod allows players to synthesize Interceptor-type starships in the fabricator machines using a very simplified assembly process. Modifies files in METADATA\GAMESTATE\PLAYERDATA and UI directories."
 
 
@@ -1531,7 +1531,8 @@ function Descriptors_BuildChangeTable(exml)
     local INSTRUCTIONS =
     {
         Descr_GetGroupTemplate("VYKEEN_HEAD"),
-        Descr_RenameAndRequire("SENTINEL_LIGHTSB","SENT_PIT_B"),
+        --Descr_RenameAndRequire("SENTINEL_LIGHTSB","SENT_PIT_B"),
+        Descr_RenameAndRequire("SENTINEL_LIGHTSB",""),
 
         Descr_Fill("GroupID","VYKEEN_HEAD_1","SENT_LIGHT_A1"),Descr_Reset("SENT_LIGHT_A1"),Descr_Add("SENT_LIGHT_A1",{"_Lights_A1"}),
         Descr_Fill("GroupID","VYKEEN_HEAD_2","SENT_LIGHT_B1"),Descr_Reset("SENT_LIGHT_B1"),Descr_Add("SENT_LIGHT_B1",{"_Lights_B1"}),
@@ -1565,7 +1566,8 @@ function Descriptors_BuildChangeTable(exml)
     local INSTRUCTIONS =
     {
         Descr_GetGroupTemplate("VYKEEN_HEAD"),
-        Descr_RenameAndRequire("SENTINEL_LIGHTSC","SENT_PIT_C"),
+        --Descr_RenameAndRequire("SENTINEL_LIGHTSC","SENT_PIT_C"),
+        Descr_RenameAndRequire("SENTINEL_LIGHTSC",""),
 
         Descr_Fill("GroupID","VYKEEN_HEAD_1","SENT_LIGHT_A"),Descr_Reset("SENT_LIGHT_A"),Descr_Add("SENT_LIGHT_A",{"_Lights_A"}),
         Descr_Fill("GroupID","VYKEEN_HEAD_2","SENT_LIGHT_B"),Descr_Reset("SENT_LIGHT_B"),Descr_Add("SENT_LIGHT_B",{"_Lights_B"}),

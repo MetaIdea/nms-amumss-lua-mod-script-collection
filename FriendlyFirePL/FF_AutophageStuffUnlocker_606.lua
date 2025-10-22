@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "AutophageStuffUnlocker"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "558"
+METADATA_NMS_VERSION    = "606"
 METADATA_MOD_DESC       = "This mod allows players to access Autophage content without completing main story line quests and unlocking a Harmonic Camp (other conditions still apply)"
 
 
@@ -19,7 +19,7 @@ FILE_METADATA_CUSTOMISATION = "METADATA\GAMESTATE\PLAYERDATA\CHARACTERCUSTOMISAT
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"] 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_NMS_VERSION..".pak",
+    ["MOD_FILENAME"] 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_NMS_VERSION,
     ["MOD_AUTHOR"]		    = METADATA_MOD_AUTHOR,
     ["LUA_AUTHOR"]		    = METADATA_LUA_AUTHOR,
     ["NMS_VERSION"]		    = METADATA_NMS_VERSION,
@@ -32,13 +32,21 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = FILE_MISSIONS_AUTOPHAGE,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- remove the story related conditions from 
                             -- starting conditions for initial Autophage quest
                             ["SKW"] = {"MissionID","ROBOMISS_0","StartingConditions","GcMissionConditionGroup",},
-                            ["SECTION_ACTIVE"] = {1,2},
+                            ["SECTION_ACTIVE"] = 1,
+                            ["REMOVE"] = "SECTION",
+                        },
+
+                        {
+                            -- remove the story related conditions from 
+                            -- starting conditions for initial Autophage quest
+                            ["SKW"] = {"MissionID","ROBOMISS_0","StartingConditions","GcMissionConditionGroup",},
+                            ["SECTION_ACTIVE"] = 2,
                             ["REMOVE"] = "SECTION",
                         },
                     }
@@ -46,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 
                 {
                     ["MBIN_FILE_SOURCE"] = FILE_METADATA_CUSTOMISATION,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- for all standard Authophage customisation options
