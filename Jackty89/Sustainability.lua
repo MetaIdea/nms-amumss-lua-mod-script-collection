@@ -195,7 +195,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     MBIN_FILE_SOURCE = "GCDEBUGOPTIONS.GLOBAL.MBIN",
-                    EXML_CHANGE_TABLE =
+                    MXML_CHANGE_TABLE =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"LocTableList"},
@@ -208,7 +208,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     MBIN_FILE_SOURCE = Recipe_Table_Path,
-                    EXML_CHANGE_TABLE =
+                    MXML_CHANGE_TABLE =
                     {
                         {
                             SPECIAL_KEY_WORDS = {"RecipeType", "RECIPE_LAND1"},
@@ -258,15 +258,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     MBIN_FILE_SOURCE = English_Path,
-                    EXML_CHANGE_TABLE = {}
+                    MXML_CHANGE_TABLE = {}
                 }
             }
         }
     }
 }
 
-local Changes_To_Recipe_Table = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[2].EXML_CHANGE_TABLE
-local Changes_To_Language = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[3].EXML_CHANGE_TABLE
+local Changes_To_Recipe_Table = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[2].MXML_CHANGE_TABLE
+local Changes_To_Language = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[3].MXML_CHANGE_TABLE
 
 -- RecipeType is the description for a recipe (Seriously HG can you stay consistent for once)
 function Change_Recipe_Type()
@@ -317,7 +317,7 @@ function New_Empty_Language_File(New_Language_File_Name)
     Changes_To_Mbin_Change_Table[#Changes_To_Mbin_Change_Table + 1] =
     {
         MBIN_FILE_SOURCE= New_Language_File_Name,
-        EXML_CHANGE_TABLE =
+        MXML_CHANGE_TABLE =
         {
             {
                 PRECEDING_KEY_WORDS = {'Table'},
@@ -328,7 +328,7 @@ function New_Empty_Language_File(New_Language_File_Name)
     Changes_To_Mbin_Change_Table[#Changes_To_Mbin_Change_Table + 1] =
     {
         MBIN_FILE_SOURCE = New_Language_File_Name,
-        EXML_CHANGE_TABLE =
+        MXML_CHANGE_TABLE =
         {
             {
                 LINE_OFFSET = "3",
@@ -450,7 +450,7 @@ function Add_Custom_Language_String()
         Changes_To_Mbin_Change_Table[#Changes_To_Mbin_Change_Table + 1] =
         {
             MBIN_FILE_SOURCE = New_Language_File_Name,
-            EXML_CHANGE_TABLE =
+            MXML_CHANGE_TABLE =
             {
                 {
                     PRECEDING_KEY_WORDS = {'Table'},

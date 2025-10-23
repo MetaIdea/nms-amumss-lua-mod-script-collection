@@ -5,9 +5,9 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "VR-SHIP-HEADLIGHTS-TOGGLEABLE",
+["MOD_FILENAME"]    = "VR Ship Headlights",
 ["MOD_AUTHOR"]      = "Mjjstral",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MOD_DESCRIPTION"] = "Activate: Hold the right ship control lever and grab the left exit handle, Disable: Grab the left or right exit handle",
 ["MODIFICATIONS"]   =
     {

@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "VR Hand Commands",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MOD_DESCRIPTION"] = "Adds trigger-action hand combos, savegame: left-right-left, teleport to base: right-left-right",
 ["MODIFICATIONS"]   =
     {
@@ -947,6 +947,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="UsePersonalPersistentBuffer" value="false" />
         <Property name="ReseedOnRewardSuccess" value="false" />
         <Property name="CanCollectInMech" value="false" />
+        <Property name="DisableAnimationUntilInteract" value="false" />
+        <Property name="OnlyActiveDuringSeasons" />
       </Property>
     </Property>
 ]]

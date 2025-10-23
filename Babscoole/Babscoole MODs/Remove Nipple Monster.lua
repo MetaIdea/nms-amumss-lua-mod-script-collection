@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Remove Nipple Monster",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MOD_DESCRIPTION"] = "Removes flying nipple creatures",
 ["MODIFICATIONS"]   =
     {

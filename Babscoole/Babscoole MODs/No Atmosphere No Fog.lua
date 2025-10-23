@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "No Atmo No Fog",
 ["MOD_AUTHOR"]      = "degraaaff & Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MOD_DESCRIPTION"] = "Now with add-on to remove fog as well!",
 ["MODIFICATIONS"]   =
   {

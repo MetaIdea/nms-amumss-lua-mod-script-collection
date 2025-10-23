@@ -6,10 +6,10 @@ FUEL_AMOUNT = 800 -- Default is 100
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "JE's Fast Harvesters and AMU",
+["MOD_FILENAME"]    = "JEs Fast Harvesters and AMU",
 ["MOD_DESCRIPTION"] = "Increases speed and storage of AMUs and Oxygen and Gas Harvesters",
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
   {
     {

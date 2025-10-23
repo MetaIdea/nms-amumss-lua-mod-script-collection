@@ -3856,10 +3856,10 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Stratos",
-["MOD_AUTHOR"]              = "Exosolar & Babscoole",
-["NMS_VERSION"]             = "6.00",
-["MODIFICATIONS"]           =
+["MOD_FILENAME"]  = "Stratos",
+["MOD_AUTHOR"]    = "Exosolar & Babscoole",
+["NMS_VERSION"]   = "6.10",
+["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

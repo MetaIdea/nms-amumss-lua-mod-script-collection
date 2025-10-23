@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "BalancedMTCabinetLighting", 
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "6.05.2",
+["NMS_VERSION"]				= "6.06",
 ["MOD_DESCRIPTION"]			= "Makes Multi-Tool cabinets glow more equally on all parts",
 ["MODIFICATIONS"] 			= 
 	{
@@ -102,6 +102,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SKW"]	=	{"Name", "pointLight5"},
 							["REMOVE"] = "SECTION", -- there's a strong light source somewhere in the back that illuminates this cabinet
+						},	
+					},
+				},
+
+				-- adjust brightness value for outlaw stations
+				{
+					["MBIN_FILE_SOURCE"]	= 	"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPONOSS.SCENE.MBIN",
+					["MXML_CHANGE_TABLE"]	= 
+					{
+						{
+							["SKW"]	=	{"Name", "pointLight5", "Name", "INTENSITY"},
+							["VCT"] 	= 
+							{
+								{"Value",	"9000"}, -- original: 10000
+							},
 						},	
 					},
 				},

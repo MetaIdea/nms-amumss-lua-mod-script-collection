@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Nada's Starmap Upgrade",
+["MOD_FILENAME"]            = "Nadas Starmap Upgrade",
 ["MOD_AUTHOR"]              = "Exosolar & Babscoole",
 ["LUA_AUTHOR"]              = "Makto & Updated by Babscoole",
-["NMS_VERSION"]             = "6.00",
+["NMS_VERSION"]             = "6.10",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

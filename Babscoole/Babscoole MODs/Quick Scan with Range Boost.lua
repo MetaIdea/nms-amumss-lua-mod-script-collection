@@ -15,10 +15,10 @@ Scan_Changes =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Quick Scan with Range Boost",
-["MOD_AUTHOR"]              = "Exosolar & Babscoole",
-["NMS_VERSION"]             = "6.00",
-["MODIFICATIONS"]           =
+["MOD_FILENAME"]  = "Quick Scan with Range Boost",
+["MOD_AUTHOR"]    = "Exosolar & Babscoole",
+["NMS_VERSION"]   = "6.10",
+["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

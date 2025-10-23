@@ -41,11 +41,11 @@ TEXT_TO_ADD =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = "Hungry Living Ships",
-  ["MOD_DESCRIPTION"] = "Feed living ships food",
-  ["MOD_AUTHOR"]      = "hilightnotes and Babscoole",
-  ["NMS_VERSION"]     = "6.00",
-  ["MODIFICATIONS"]   =
+["MOD_FILENAME"]    = "Hungry Living Ships",
+["MOD_DESCRIPTION"] = "Feed living ships food",
+["MOD_AUTHOR"]      = "hilightnotes and Babscoole",
+["NMS_VERSION"]     = "6.10",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

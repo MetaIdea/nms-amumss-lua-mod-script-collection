@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "ShutUp Pets",
 ["MOD_AUTHOR"]    = "Revale & Babscoole",
-["NMS_VERSION"]   = "6.00",
+["NMS_VERSION"]   = "6.10",
 ["MODIFICATIONS"] =
     {
         {

@@ -209,7 +209,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"]    = "True Royal LITE",
   ["MOD_AUTHOR"]      = "courtycat and Babscoole",
   ["MOD_DESCRIPTION"] = "Adds New colors to exotic ships",
-  ["NMS_VERSION"]     = "5.75",
+  ["NMS_VERSION"]     = "6.10",
   ["MODIFICATIONS"] =
 	{
 		{

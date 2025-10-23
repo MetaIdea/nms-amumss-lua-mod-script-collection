@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "+Portal On Spacestation V2",
-["MOD_AUTHOR"]              = "Mjjstral and Babscoole",
-["NMS_VERSION"]             = "6.00",
-["MOD_DESCRIPTION"]         = "Adds portal to new, old, abandoned, and pirate space stations",
-["MODIFICATIONS"]           =
+["MOD_FILENAME"]    = "+Portal On Spacestation V2",
+["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
+["NMS_VERSION"]     = "6.10",
+["MOD_DESCRIPTION"] = "Adds portal to new, old, abandoned, and pirate space stations",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

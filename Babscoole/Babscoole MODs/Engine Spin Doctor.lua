@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Engine Spin Doctor",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MOD_DESCRIPTION"] = "Change the spin rate for certain engines used in fighters and sailships",
 ["MODIFICATIONS"]   =
     {

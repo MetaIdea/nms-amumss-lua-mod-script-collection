@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Storm Cutter",
-["MOD_AUTHOR"]              = "Zurls",
-["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "6.00",
-["MODIFICATIONS"]           =
+["MOD_FILENAME"]  = "Storm Cutter",
+["MOD_AUTHOR"]    = "Zurls",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "6.10",
+["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

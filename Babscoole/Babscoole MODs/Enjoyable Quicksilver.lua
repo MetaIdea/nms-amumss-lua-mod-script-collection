@@ -112,7 +112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] = "Allows the player to grind Quicksilver through a wide variety of different ways",
 ["MOD_AUTHOR"]      = "ArtisticMisfit & Babscoole",
 ["LUA_AUTHOR"]      = "Leonard, TheLich, Babscoole, ArtisticMisfit",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
   {
     {

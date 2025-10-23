@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "Lumen",
 ["MOD_AUTHOR"]              = "Exosolar and Babscoole",
-["NMS_VERSION"]             = "6.00",
+["NMS_VERSION"]             = "6.10",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

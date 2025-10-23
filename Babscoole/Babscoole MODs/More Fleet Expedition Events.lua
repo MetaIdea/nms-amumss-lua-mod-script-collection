@@ -5,7 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "More Fleet Expedition Events",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.75",
+["NMS_VERSION"]     = "6.10",
 ["MOD_DESCRIPTION"] = "Increase events per fleet expedition",
 ["MODIFICATIONS"]   =
     {

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "Appearance Modifier Extended",
 ["MOD_AUTHOR"]    = "MortimerKerman",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.00",
+["NMS_VERSION"]   = "6.10",
 ["MODIFICATIONS"] =
     {
         {

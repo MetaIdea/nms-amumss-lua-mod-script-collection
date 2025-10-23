@@ -37,18 +37,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             -- remove the story related conditions from 
                             -- starting conditions for initial Autophage quest
-                            ["SKW"] = {"MissionID","ROBOMISS_0","StartingConditions","GcMissionConditionGroup",},
-                            ["SECTION_ACTIVE"] = 1,
+                            ["SKW"] = {"MissionID","ROBOMISS_0",},
+                            PKW = "StartingConditions",
+                            ["SECTION_ACTIVE"] = {1,2},
                             ["REMOVE"] = "SECTION",
                         },
 
-                        {
-                            -- remove the story related conditions from 
-                            -- starting conditions for initial Autophage quest
-                            ["SKW"] = {"MissionID","ROBOMISS_0","StartingConditions","GcMissionConditionGroup",},
-                            ["SECTION_ACTIVE"] = 2,
-                            ["REMOVE"] = "SECTION",
-                        },
+                        -- {
+                            -- -- remove the story related conditions from 
+                            -- -- starting conditions for initial Autophage quest
+                            -- ["SKW"] = {"MissionID","ROBOMISS_0","StartingConditions","GcMissionConditionGroup",},
+                            -- ["SECTION_ACTIVE"] = 1,
+                            -- ["REMOVE"] = "SECTION",
+                        -- },
+
+                        -- {
+                            -- -- remove the story related conditions from 
+                            -- -- starting conditions for initial Autophage quest
+                            -- ["SKW"] = {"MissionID","ROBOMISS_0","StartingConditions","GcMissionConditionGroup",},
+                            -- ["SECTION_ACTIVE"] = 2,
+                            -- ["REMOVE"] = "SECTION",
+                        -- },
                     }
                 },
 

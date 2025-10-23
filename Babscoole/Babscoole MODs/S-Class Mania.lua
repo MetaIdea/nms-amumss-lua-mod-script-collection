@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "S-Class Mania",
 ["MOD_DESCRIPTION"] = "All Generated Ships, Multi tools, freighters, are S-class with extremely high stats",
 ["MOD_AUTHOR"]      = "pyronoxomega and Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
     {
         {

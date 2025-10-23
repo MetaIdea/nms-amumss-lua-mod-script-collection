@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] = "Industrial FPS Booster",
 ["MOD_AUTHOR"]   = "Exosolar & Babscoole",
-["NMS_VERSION"]  = "6.00",
+["NMS_VERSION"]  = "6.10",
 ["ADD_FILES"]    =
     {
         {

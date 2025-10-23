@@ -2,9 +2,9 @@ MULTIPLIER = 2
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Freighter Crew Adjustment X2",
-["MOD_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "6.00",
+["MOD_FILENAME"]  = "Freighter Crew Adjustment X2",
+["MOD_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "6.10",
 ["MODIFICATIONS"] =
     {
         {

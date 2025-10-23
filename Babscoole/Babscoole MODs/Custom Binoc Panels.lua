@@ -67,7 +67,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "Custom Binoc Panels-"..COLORNAME,
 ["MOD_AUTHOR"]              = "Babscoole & Exosolar",
-["NMS_VERSION"]             = "6.00",
+["NMS_VERSION"]             = "6.10",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -239,7 +239,7 @@ if E_NOTICE then
 					{"Is Hidden",	"true"} -- Original "false"
 				}
     }
-    
+
     LEFTTABLE[#LEFTTABLE +1] =
     {-- Hide "Press E to place Custom Marker" notification. (C) Balzhur
         ["SPECIAL_KEY_WORDS"] = {"Image", "/TEXTURES/UI/HUD/ICONS/SCANNING/DECSLASH.DDS"},

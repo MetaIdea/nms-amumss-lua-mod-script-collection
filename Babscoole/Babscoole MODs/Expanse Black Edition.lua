@@ -395,7 +395,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Expanse Black Edition",
 ["MOD_AUTHOR"]    = "Exosolar & Babscoole",
-["NMS_VERSION"]   = "6.00",
+["NMS_VERSION"]   = "6.10",
 ["MODIFICATIONS"] =
     {
         {

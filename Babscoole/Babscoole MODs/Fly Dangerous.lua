@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Fly Dangerous",
 ["MOD_DESCRIPTION"] = "Flight Overhaul",
 ["MOD_AUTHOR"]      = "PyronoxOmega and Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
   {
     {

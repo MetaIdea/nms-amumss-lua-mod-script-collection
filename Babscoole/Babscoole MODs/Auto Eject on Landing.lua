@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Auto Eject on Landing",
 ["MOD_AUTHOR"]    = "Lyravega and Babscoole",
-["NMS_VERSION"]   = "5.75",
+["NMS_VERSION"]   = "6.10",
 ["MODIFICATIONS"] =
     {
         {

@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"]    = "CSO Darker Space",
   ["MOD_AUTHOR"]      = "NeptuneX3 & Babscoole",
-  ["NMS_VERSION"]     = "5.75",
+  ["NMS_VERSION"]     = "6.10",
   ["MOD_DESCRIPTION"] = "This mod keeps the original space color palette but makes it darker.",
   ["MODIFICATIONS"]   =
   {

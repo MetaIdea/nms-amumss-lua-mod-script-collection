@@ -10,7 +10,6 @@ Quicksilver =
     {"R_PIRATEBOARD_B",100,100,10}, -- Outlaw Bounty Master
     {"R_CV_LOW",       50,50,10},   -- Corvette Board Low
     {"R_CV_MED",       100,100,10}, -- Corvette Board Med
-    {"R_CVBOARD_MED",  100,100,10}, -- Corvette Board Med
     {"R_CV_HIGH",      150,150,10}, -- Corvette Board High
     {"R_CV_MEGA",      200,200,10}, -- Corvette Board Mega
 }
@@ -21,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "QS Missions",
 ["MOD_DESCRIPTION"] = "Adds quicksilver rewards to normal missions at the nexus, space station mission boards, and outlaw bounty masters",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
     {
         {

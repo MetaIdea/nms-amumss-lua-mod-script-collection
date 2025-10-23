@@ -1059,6 +1059,7 @@ return [[
             <Property name="AdditiveBaseAnim" value="" />
             <Property name="AdditiveBaseFrame" value="0.000000" />
             <Property name="Mask" value="" />
+            <Property name="AdditionalMasks" />
             <Property name="OffsetMin" value="0.000000" />
             <Property name="OffsetMax" value="0.000000" />
             <Property name="Delay" value="0.000000" />
@@ -1582,7 +1583,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Meta-Mod",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
     {
         {
@@ -2388,6 +2389,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="UsePersonalPersistentBuffer" value="false" />
         <Property name="ReseedOnRewardSuccess" value="false" />
         <Property name="CanCollectInMech" value="false" />
+        <Property name="DisableAnimationUntilInteract" value="false" />
+        <Property name="OnlyActiveDuringSeasons" />
       </Property>
     </Property>
     <Property name="Components" value="GcTriggerActionComponentData">
@@ -2519,6 +2522,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="UsePersonalPersistentBuffer" value="false" />
         <Property name="ReseedOnRewardSuccess" value="false" />
         <Property name="CanCollectInMech" value="false" />
+        <Property name="DisableAnimationUntilInteract" value="false" />
+        <Property name="OnlyActiveDuringSeasons" />
       </Property>
     </Property>
     <Property name="Components" value="GcTriggerActionComponentData">
@@ -2703,6 +2708,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="UsePersonalPersistentBuffer" value="false" />
         <Property name="ReseedOnRewardSuccess" value="false" />
         <Property name="CanCollectInMech" value="false" />
+        <Property name="DisableAnimationUntilInteract" value="false" />
+        <Property name="OnlyActiveDuringSeasons" />
       </Property>
     </Property>
     <Property name="Components" value="GcTriggerActionComponentData">
@@ -2882,6 +2889,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="UsePersonalPersistentBuffer" value="false" />
         <Property name="ReseedOnRewardSuccess" value="false" />
         <Property name="CanCollectInMech" value="false" />
+        <Property name="DisableAnimationUntilInteract" value="false" />
+        <Property name="OnlyActiveDuringSeasons" />
       </Property>
     </Property>
     <Property name="Components" value="GcTriggerActionComponentData">

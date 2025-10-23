@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] = "sentinels will completely ignore your plundering of the environment",
 ["MOD_AUTHOR"]      = "degraaaff",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
     {
         {

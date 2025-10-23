@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "JE's Asteroid Mining Flyby Begone",
+["MOD_FILENAME"]    = "JEs Asteroid Mining Flyby Begone",
 ["MOD_DESCRIPTION"] = "Adjusts the frequency and distance of various flyby types within the game",
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
   {
     {
@@ -34,5 +34,6 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
   }
 }
+
 
 

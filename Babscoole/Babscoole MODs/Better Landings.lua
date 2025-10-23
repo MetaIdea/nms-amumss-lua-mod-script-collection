@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Better Landings",
 ["MOD_AUTHOR"]      = "degraaaff and Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MOD_DESCRIPTION"] = "This mod improves the way that spaceships land by reducing the height at which they drop down to the ground. They will also descend a bit more flat.",
 ["MODIFICATIONS"]   =
   {

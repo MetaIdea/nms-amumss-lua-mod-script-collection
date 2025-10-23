@@ -73,7 +73,7 @@ ScanDataTable = --Additions to SCANEVENTTABLEPLANET
     {"SE_GL_SETB", "None",          "Random" ,        "UnownedSettlement_Builders", "None",                   "true" ,         "true" ,                  "UI_SETTLEMENT_BUI_LOCATED_OSD", "UI_SETTLEMENT_BUI_LOCATED",     ""                         },
 }
 
-MissionDataTable = --Additions to ENABLINGCONDITIONSTABLE and REWARDTABLE
+MissionDataTable = --Additions to DISABLINGCONDITIONSTABLE and REWARDTABLE
  --  MISSION            MISSION AMOUNT  REWARDTABLE ID   REWARDTABLE EVENT
 {--  SCANREWARDS ID     PROXY LEVEL     PROXY REWARD
     {"R_GLS_SCAN_0",  "0" ,           "R_GL_SHLT", "SE_GL_SHLT"},
@@ -98,7 +98,7 @@ MissionDataTable = --Additions to ENABLINGCONDITIONSTABLE and REWARDTABLE
     {"R_GLS_SCAN_19", "19",           "R_GL_SETB", "SE_GL_SETB"},
 }
 
-DialogDataTable = --Dialog (menu) additions to ENABLINGCONDITIONSTABLE.
+DialogDataTable = --Dialog (menu) additions to DISABLINGCONDITIONSTABLE.
 {
     {--GcAlienPuzzleEntry Id
         {"D_GLS_SCAN_P1"},
@@ -161,7 +161,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster"..FILENAME,
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie & Babscoole",
-  ["NMS_VERSION"]     = "6.00",
+  ["NMS_VERSION"]     = "6.10",
   ["MODIFICATIONS"]   =
     {
         {
@@ -740,7 +740,7 @@ for i=1, #MissionDataTable, 1 do
     }
 end
 
---Add ENABLINGCONDITIONSTABLE entries
+--Add DISABLINGCONDITIONSTABLE entries
 --Add ScanEvent Stat rewards
 for i = 1, #MissionDataTable do
   local Id     = MissionDataTable[i][1]

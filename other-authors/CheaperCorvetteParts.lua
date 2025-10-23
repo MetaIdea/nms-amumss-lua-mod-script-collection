@@ -13,8 +13,10 @@ LIST_SHIP_PARTS = {
 	"B_HAB1_C",
 	"B_LND_A",
 	"B_LND_B",
+	"B_LND_C",
 	"B_WNG_A",
 	"B_WNG_B",
+	"B_WNG_C",
 	"B_WNG_D",
 	"B_WNG_E",
 	"B_WNG_F",
@@ -33,18 +35,25 @@ LIST_SHIP_PARTS = {
 	"B_TRU_B",
 	"B_TRU_C",
 	"B_TRU_D",
+	"B_TRU_E",
+	"B_TRU_F",
+	"B_TRU_G",
+	"B_TRU_H",
 	"B_GEN_0",
 	"B_GEN_1",
 	"B_GEN_2",
 	"B_GEN_3",
 	"B_TUR_A",
 	"B_TUR_C",
+	"B_TUR_D",
+	"B_TUR_E",
 	"B_ALK_A",
 	"B_ALK_B",
 	"B_ALK_C",
 	"B_SHL_A",
 	"B_SHL_B",
 	"B_SHL_C",
+	"B_SHL_D",
 	"B_STR_A_N",
 	"B_STR_A_NE",
 	"B_STR_B_NE",
@@ -72,11 +81,18 @@ LIST_SHIP_PARTS = {
 	"B_STR_M_N",
 	"B_STR_M_NE",
 	"B_STR_N_N",
+	"B_STR_N_NE",
 	"B_STR_O_N",
 	"B_STR_Q_N",
 	"B_STR_P_N",
 	"B_STR_R_N",
 	"B_STR_S_N",
+	"B_STR_T_NETB",
+	"B_STR_U_NETB",
+	"B_STR_V_NETB",
+	"B_STR_W_NETB",
+	"B_STR_X_NETB",
+	"B_STR_Y_NETB",
 	"B_DECO_A",
 	"B_DECO_B",
 	"B_DECO_C",
@@ -110,8 +126,30 @@ LIST_SHIP_PARTS = {
 	"B_CON_14",
 	"B_CON_15",
 	"B_CON2_0",
+	"B_CON2_1",
+	"B_CON2_2",
+	"B_CON2_3",
 	"B_CON_L_2",
+
 }
+
+-- FARMPROD8
+-- COMPUTER
+-- TECH_COMP
+-- FARMPROD5
+-- NANOTUBES
+-- CARBON_SEAL
+-- FARMPROD2
+-- HYDRALIC
+-- MAGNET
+-- HYPERFUEL2
+-- GRENFUEL1
+-- HYPERFUEL1
+-- EX_YELLOW
+-- FUEL2
+-- LAND2
+-- CATALYST2
+-- STELLAR2
 
 function BuildSKWList(list)
 
@@ -133,9 +171,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"] 	    = "CheaperCorvetteParts",
     ["MOD_AUTHOR"]		    = "Aristotale",
-    ["LUA_AUTHOR"]		    = "Also Aristotale",
-    ["NMS_VERSION"]		    = "6.x",
-    ["MOD_DESCRIPTION"]     = "Make Corvette parts cost less",
+    ["LUA_AUTHOR"]		    = "Aristotale",
+    ["NMS_VERSION"]		    = "6.10",
+    ["MOD_DESCRIPTION"]     = "Make Corvette parts cost less to buy",
     
     ["MODIFICATIONS"]   =
     {

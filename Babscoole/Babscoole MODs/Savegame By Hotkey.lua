@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Savegame By Hotkey",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
     {
         {
@@ -221,6 +221,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="UsePersonalPersistentBuffer" value="false" />
         <Property name="ReseedOnRewardSuccess" value="false" />
         <Property name="CanCollectInMech" value="false" />
+        <Property name="DisableAnimationUntilInteract" value="false" />
+        <Property name="OnlyActiveDuringSeasons" />
       </Property>
     </Property>
     <Property name="Components" value="GcTriggerActionComponentData">

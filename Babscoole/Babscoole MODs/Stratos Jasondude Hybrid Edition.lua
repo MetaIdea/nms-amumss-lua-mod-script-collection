@@ -4052,10 +4052,10 @@ BiomeDataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Stratos Jasondude Hybrid Edition",
-["MOD_AUTHOR"]              = "Exosolar and Jasondude and Babscoole",
-["NMS_VERSION"]             = "6.00",
-["MODIFICATIONS"]           =
+["MOD_FILENAME"]  = "Stratos Jasondude Hybrid Edition",
+["MOD_AUTHOR"]    = "Exosolar and Jasondude and Babscoole",
+["NMS_VERSION"]   = "6.10",
+["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

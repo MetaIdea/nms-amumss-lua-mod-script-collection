@@ -1,10 +1,38 @@
 SPECIAL_LIST =
 {
 	{
+		["ShopNumber"] = "110",
+		["Table"] =  
+		{
+			{ ["ID"] = "B_DECO_Q_0",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "B_DECO_R",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "B_DECO_S",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "B_DECO_T",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "B_SHL_E",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "B_STR_AA_N",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "B_WNG_P",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "B_WNG_Q",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "B_WNG_R",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_BANNER20",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_DECAL20",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER20A",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER20B",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER20C",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_TITLE20",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			-- { ["ID"] = "F_BOSS_JELLY",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			-- { ["ID"] = "S20_LOG1",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			-- { ["ID"] = "S20_LOG2",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			-- { ["ID"] = "S20_LOG3",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			-- { ["ID"] = "S20_LOG4",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			-- { ["ID"] = "S20_LOG5",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SHIP_ATLAS",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+		}
+	},
+	{
 		["ShopNumber"] = "106",
 		["Table"] =  
 		{
-			{ ["ID"] = "B_TUR_B",	["IsConsumable"] = "true", ["IsCape"] = "False"},
+			{ ["ID"] = "B_TUR_B",	["IsConsumable"] = "false", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_BANNER19",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_DECAL19",	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_EGG_19",	["IsConsumable"] = "False", ["IsCape"] = "False"},

@@ -3,11 +3,11 @@ MAXMULTI = 4
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Extra Savage Sentinels",
-["MOD_AUTHOR"]              = "Exosolar",
-["LUA_AUTHOR"]              = "Babscoole & Xen0nex",
-["NMS_VERSION"]             = "6.00",
-["MODIFICATIONS"]           =
+["MOD_FILENAME"]  = "Extra Savage Sentinels",
+["MOD_AUTHOR"]    = "Exosolar",
+["LUA_AUTHOR"]    = "Babscoole & Xen0nex",
+["NMS_VERSION"]   = "6.10",
+["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "No Interstellar Teleporters",
 ["MOD_DESCRIPTION"] = "No Interstellar Teleporters",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
   {
     {
@@ -24,6 +24,12 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Components", "GcInteractionComponentData"},
               ["REMOVE"] = "SECTION"
             },
+						-- {
+						  -- ["VALUE_CHANGE_TABLE"] = 
+						  -- {
+							  -- {"InteractDistance", "0"}, 
+						  -- }	
+						-- },
           },
         },
       },

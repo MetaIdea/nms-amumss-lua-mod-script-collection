@@ -1,12 +1,5 @@
 ChanceMultiplier = "1.5"
 
-Author          = "Babscoole & Gumsk"
-ModName         = "Increase Space Encounter Chance"
-ModNameSub      = ChanceMultiplier.."x"
-BaseDescription = "Makes space pulse encounters more likely"
-GameVersion     = "6.00"
---ModVersion      = "a"
-
 --[[ Files Modified:
 GCGAMEPLAYGLOBALS.GLOBAL.MBIN
 METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN
@@ -73,24 +66,29 @@ ENCOUNTER_DATA_TABLE =
         {"ROBOM_BOAT",      "false",     0},
     }
 
-NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"]            = ModName..ModNameSub,
-    ["MOD_DESCRIPTION"]         = BaseDescription,
-    ["MOD_AUTHOR"]              = Author,
-    ["NMS_VERSION"]             = GameVersion,
-    ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
-    ["MODIFICATIONS"]           = {
+NMS_MOD_DEFINITION_CONTAINER =
+{
+["MOD_FILENAME"]            = "Increase Space Encounter Chance"..ChanceMultiplier.."x",
+["MOD_DESCRIPTION"]         = "Makes space pulse encounters more likely",
+["MOD_AUTHOR"]              = "Babscoole & Gumsk",
+["NMS_VERSION"]             = "6.10",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
+    {
         {
-            ["MBIN_CHANGE_TABLE"] = {
+            ["MBIN_CHANGE_TABLE"] =
+            {
             --=============================================================================
             --Modified overall pulse encounter chance
             --=============================================================================
                 {
                     ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
-                    ["MXML_CHANGE_TABLE"] = {
+                    ["MXML_CHANGE_TABLE"] =
+                    {
                         {
                             ["MATH_OPERATION"] = "*",
-                            ["VALUE_CHANGE_TABLE"] = {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
                                 {"PulseEncounterChanceStandard", ChanceMultiplier}, --0.0066
                                 {"PulseEncounterChanceRed",      ChanceMultiplier}, --0.001
                                 {"PulseEncounterChanceGreen",    ChanceMultiplier}, --0.002
@@ -104,7 +102,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
             --=============================================================================
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
-                    ["MXML_CHANGE_TABLE"] = {
+                    ["MXML_CHANGE_TABLE"] =
+                    {
 
                     },
                 },
@@ -124,7 +123,8 @@ for i = 1, #ENCOUNTER_DATA_TABLE do
             ChangesToEncounters[#ChangesToEncounters+1] =
             {
                 ["SPECIAL_KEY_WORDS"] = {"Id", Id},
-                ["VALUE_CHANGE_TABLE"] = {
+                ["VALUE_CHANGE_TABLE"] =
+                {
                     {"StandardEncounter", SE},
                     {"SpawnChance", SC},
                 },

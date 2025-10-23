@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"]  = "TrueColor-Pastels",
     ["MOD_AUTHOR"]    = "courtykat",
     ["LUA_AUTHOR"]    = "Babscoole, and courtykat",
-    ["NMS_VERSION"]   = "6.00",
+    ["NMS_VERSION"]   = "6.10",
     ["MODIFICATIONS"] =
     {
         {

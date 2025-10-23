@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Increase Auto-Land Range",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "Restore default auto-land range assist range from the NMS 5.x 100, back to the original 300",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
     {
         {
@@ -13,12 +13,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] =
                     {
                         "MODELS\COMMON\SPACECRAFT\COMMONPARTS\ABANDONEDPARTS\DUNGEONENTRANCE\ENTITIES\DUNGEONENTRANCE.ENTITY.MBIN",
-                        "MODELS\COMMON\SPACECRAFT\FRIGATES\COMBATFRIGATE\ENTITIES\COMBATDATA.ENTITY.MBIN",
-                        "MODELS\COMMON\SPACECRAFT\FRIGATES\COMMONPARTS\ENTITIES\FRIGATEDATA.ENTITY.MBIN",
-                        "MODELS\COMMON\SPACECRAFT\FRIGATES\DIPLOMATICFRIGATE\ENTITIES\DIPLOMATICDATA.ENTITY.MBIN",
-                        "MODELS\COMMON\SPACECRAFT\FRIGATES\INDUSTRIALFRIGATE\ENTITIES\INDUSTRIALDATA.ENTITY.MBIN",
-                        "MODELS\COMMON\SPACECRAFT\FRIGATES\SCIENCEFRIGATE\ENTITIES\SCIENCEDATA.ENTITY.MBIN",
-                        "MODELS\COMMON\SPACECRAFT\FRIGATES\SUPPORTFRIGATE\ENTITIES\SUPPORTDATA.ENTITY.MBIN",
                         "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARA\ENTITIES\HANGARA.ENTITY.MBIN",
                         "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\PIRATECRUISER\ENTITIES\PIRATEDATA.ENTITY.MBIN",
                         "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\PIRATECRUISERLOD0\ENTITIES\PIRATEDATA.ENTITY.MBIN",
@@ -37,7 +31,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\SPACE\POI\PARTS\DUNGEON_ENTRANCE\ENTITIES\DUNGEONENTRANCE.ENTITY.MBIN",
                         "MODELS\SPACE\SPACESTATION\MODULARPARTS\ENTITIES\STATION_DOCK.ENTITY.MBIN",
                         "MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.MBIN",
-                        "MODELS\COMMON\SPACECRAFT\BIGGS\ENTITIES\BIGGSLANDINGZONEOUTPOST.ENTITY.MBIN",
                         
                         -- Below have higher values in vanilla, so leaving as is.  In vanilla, from top to bottom, 600,700.400,400
                         -- "MODELS\SPACE\ATLASSTATION\SHARED\ENTITIES\ATLASSTATION.ENTITY.MBIN",
@@ -51,6 +44,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PlayerAutoLandRange", "300"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\COMMON\SPACECRAFT\BIGGS\ENTITIES\BIGGSLANDINGZONEOUTPOST.ENTITY.MBIN",
+                        "MODELS\COMMON\SPACECRAFT\FRIGATES\COMBATFRIGATE\ENTITIES\COMBATDATA.ENTITY.MBIN",
+                        "MODELS\COMMON\SPACECRAFT\FRIGATES\COMMONPARTS\ENTITIES\FRIGATEDATA.ENTITY.MBIN",
+                        "MODELS\COMMON\SPACECRAFT\FRIGATES\DIPLOMATICFRIGATE\ENTITIES\DIPLOMATICDATA.ENTITY.MBIN",
+                        "MODELS\COMMON\SPACECRAFT\FRIGATES\INDUSTRIALFRIGATE\ENTITIES\INDUSTRIALDATA.ENTITY.MBIN",
+                        "MODELS\COMMON\SPACECRAFT\FRIGATES\SCIENCEFRIGATE\ENTITIES\SCIENCEDATA.ENTITY.MBIN",
+                        "MODELS\COMMON\SPACECRAFT\FRIGATES\SUPPORTFRIGATE\ENTITIES\SUPPORTDATA.ENTITY.MBIN",
+                    },
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PlayerAutoLandRange", "200"}
                             }
                         },
                     }

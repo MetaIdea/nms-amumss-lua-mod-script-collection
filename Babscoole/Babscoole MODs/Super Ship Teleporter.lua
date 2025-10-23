@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Super Ship Teleporter",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MOD_DESCRIPTION"] = "Increase range of ship inventory teleporter",
 ["MODIFICATIONS"]   =
     {
@@ -14,7 +14,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID", "SHIP_TELEPORT"},
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"ID", "SHIP_TELEPORT"},
+                                {"ID", "TELEPORT_ALIEN"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Bonus", "1005"}

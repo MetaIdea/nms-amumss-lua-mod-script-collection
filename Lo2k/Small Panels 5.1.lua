@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Small Panels 5.0.pak", 
+["MOD_FILENAME"] 			= "Small Panels 5.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k & Basbcoole",
-["NMS_VERSION"]				= "6.01",
+["NMS_VERSION"]				= "6.10",
 ["MOD_DESCRIPTION"]			= "This mod reduces the size of most game panels",
 ["MODIFICATIONS"] 			= 
 	{
@@ -886,7 +886,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID",	"STATS_SMALL"},
+							["SPECIAL_KEY_WORDS"] = {"ID",	"STATS"},
 							["REPLACE_TYPE"]    = "ALL", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{

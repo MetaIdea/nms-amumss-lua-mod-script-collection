@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Convenient Corvette Teleporters 1.5.pak", 
+["MOD_FILENAME"] 			= "Convenient Corvette Teleporters 1.6.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "6.05",
+["NMS_VERSION"]				= "6.10",
 ["MOD_DESCRIPTION"]			= "This mod improves Corvette teleportes placements",
 ["MODIFICATIONS"] 			= 
 	{

@@ -466,6 +466,7 @@ ANIM_TEMPLATE =
             <Property name="AdditiveBaseAnim" value="" />
             <Property name="AdditiveBaseFrame" value="0.000000" />
             <Property name="Mask" value="" />
+            <Property name="AdditionalMasks" />
             <Property name="OffsetMin" value="0.000000" />
             <Property name="OffsetMax" value="0.000000" />
             <Property name="Delay" value="0.000000" />
@@ -711,7 +712,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "5.73",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
     {
         {

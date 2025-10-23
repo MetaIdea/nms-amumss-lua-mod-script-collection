@@ -71,7 +71,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Cockpit And Ship Cloak",
 ["MOD_AUTHOR"]      = "Original mod and toggle idea by Mjjstral, original concept Gmr_Leon, Current author Babscoole",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MOD_DESCRIPTION"] = "Makes the cockpit interior and ship invisible when flying",
 ["MODIFICATIONS"]   =
     {

@@ -4,10 +4,10 @@ TECHSLOT = 60
 --Max Tech Slots: 60 (10x6)
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "MasterNetra's Max Exocraft Slots",
+["MOD_FILENAME"]    = "MasterNetras Max Exocraft Slots",
 ["MOD_DESCRIPTION"] = "Enables and Maxs out both cargo and technology slots for exocraft.",
 ["MOD_AUTHOR"]      = "Masternetra",
-["NMS_VERSION"]     = "6.00",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
     {
         {

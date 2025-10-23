@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "FastFarms20",
 ["MOD_DESCRIPTION"] = "Who wants to farm? Just give me my stuff already",
 ["MOD_AUTHOR"]      = "courtykat & Babscoole",
-["NMS_VERSION"]     = "5.75",
+["NMS_VERSION"]     = "6.10",
 ["MODIFICATIONS"]   =
     {
         {
