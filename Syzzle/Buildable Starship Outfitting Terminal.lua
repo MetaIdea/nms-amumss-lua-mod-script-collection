@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Buildable Starship Outfitting Terminal"
-GameVersion = "6.04"
+GameVersion = "6.11"
 Description = "Allow you to build the Starship Outfitting Terminal in your base or Corvette, it comes in 2 types, the original and an Autophage design."
 
 PORTABLETERMINALUNLOCK  = [[
@@ -106,7 +106,7 @@ BASEBUILDINGOBJECT  = [[
     <Property name="DefaultMaterialId" value="" />
     <Property name="CanChangeColour" value="true" />
     <Property name="CanChangeMaterial" value="true" />
-    <Property name="CanPickUp" value="false" />
+    <Property name="CanPickUp" value="true" />
     <Property name="ShowInBuildMenu" value="true" />
     <Property name="CompositePartObjectIDs" />
     <Property name="FamilyIDs" />
@@ -114,7 +114,7 @@ BASEBUILDINGOBJECT  = [[
     <Property name="IconOverrideProductID" value="" />
     <Property name="RemovesAttachedDecoration" value="true" />
     <Property name="RemovesWhenUnsnapped" value="false" />
-    <Property name="EditsTerrain" value="false" />
+    <Property name="EditsTerrain" value="true" />
     <Property name="BaseTerrainEditShape" value="Cube" />
     <Property name="MinimumDeleteDistance" value="1.000000" />
     <Property name="IsSealed" value="false" />
@@ -274,10 +274,10 @@ BASEBUILDINGOBJECT  = [[
 BASEPARTPRODUCT = [[
   <Property name="Table" value="GcProductData" _id="SET_UTP_SHIPSAL">
     <Property name="ID" value="SET_UTP_SHIPSAL" />
-    <Property name="Name" value="PORTABLE STARSHIP MAINTENANCE MACHINE" />
-    <Property name="NameLower" value="Portable Starship Maintenance Machine" />
-    <Property name="Subtitle" value="Starship Maintenance Unit" />
-    <Property name="Description" value="Machine used for upgrade or disassembling of Starships. Here, you can scrap unwanted vessels for money or enhance the performance of your favorite ships by upgrading its Class." />
+    <Property name="Name" value="UTP_SHIPSAL_NAME" />
+    <Property name="NameLower" value="UTP_SHIPSAL_NAME_L" />
+    <Property name="Subtitle" value="UTP_SHIPSAL_SUB" />
+    <Property name="Description" value="UTP_SHIPSAL_DESC" />
     <Property name="AltDescription" value="" />
     <Property name="Hint" value="" />
     <Property name="BuildableShipTechID" value="" />
@@ -390,10 +390,10 @@ BASEPARTPRODUCT = [[
   </Property>
   <Property name="Table" value="GcProductData" _id="SET_OG_SHIPSAL">
     <Property name="ID" value="SET_OG_SHIPSAL" />
-    <Property name="Name" value="STARSHIP OUTFITTING TERMINAL" />
-    <Property name="NameLower" value="Starship Outfitting Terminal" />
-    <Property name="Subtitle" value="Starship Maintenance Unit" />
-    <Property name="Description" value="Terminal used for upgrade or disassembling of Starships. Here, you can scrap unwanted vessels for money or enhance the performance of your favorite ships by upgrading its Class." />
+    <Property name="Name" value="OG_SHIPSAL_NAME" />
+    <Property name="NameLower" value="OG_SHIPSAL_NAME_L" />
+    <Property name="Subtitle" value="OG_SHIPSAL_SUB" />
+    <Property name="Description" value="OG_SHIPSAL_DESC" />
     <Property name="AltDescription" value="" />
     <Property name="Hint" value="" />
     <Property name="BuildableShipTechID" value="" />

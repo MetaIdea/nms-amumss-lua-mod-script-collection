@@ -20,7 +20,7 @@ StackLimits =
 			{"Vehicle",				1500,		750,		450},			--	9999,		1000,		300		All Exocraft / Minotaur / Nautilon
 			{"Chest",				4000,		2000,		1200},			--	9999,		1000,		750		Storage Containers (The kind you build in your base / freighter)
 			{"BaseCapsule",			6000,		3000,		1800},			--	9999,		2000,		1250	The buildable object used to access and recover resources from bases you have deleted
-			{"MaintenanceObject",	2000,		1000,		600},			--	9999,		250,		150		Affects the Input & Outputs for Refiners, possibly other machines / debris
+			{"MaintenanceObject",	2000,		1000,		600},			--	9999,		250,		150		Affects the Input & Outputs for Refiners, possibly other machines / debris (Seems to have a hardcap of 4095 for refiner slots)
 			{"UIPopup",				1000,		500,		300},			--	9999,		250,		150		Unclear, possibly certain rewards from dialogue / quests?
 		}
 	},
@@ -34,7 +34,7 @@ StackLimits =
 			{"Vehicle",				12,			8,			4},				--	10,			10,			3		All Exocraft / Minotaur / Nautilon
 			{"Chest",				32,			20,			12},			--	20,			20,			10		Storage Containers (The kind you build in your base / freighter)
 			{"BaseCapsule",			160,		100,		60},			--	100,		100,		50		The buildable object used to access and recover resources from bases you have deleted
-			{"MaintenanceObject",	16,			10,			6},				--	10,			10,			5		Affects the Input & Outputs for Refiners, possibly other machines / debris
+			{"MaintenanceObject",	16,			10,			6},				--	10,			10,			5		Affects the Input & Outputs for Refiners, possibly other machines / debris (Seems to have a hardcap of 4095 for refiner slots)
 			{"UIPopup",				1,			1,			1},				--	1,			1,			1		Unclear, possibly certain rewards from dialogue / quests?
 		}
 	},

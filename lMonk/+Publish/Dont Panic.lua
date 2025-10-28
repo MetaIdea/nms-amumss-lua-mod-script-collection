@@ -4,9 +4,9 @@ local mod_desc = [[
 ]]------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.dont panic.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.dont panic',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.62',
+	NMS_VERSION			= '6.10',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

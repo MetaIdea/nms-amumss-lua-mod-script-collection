@@ -1,30 +1,34 @@
 Techfrag = [[
-          <Property name="AlwaysPresentSubstances" value="TECHFRAG" />
+          <Property name="AlwaysPresentSubstances" value="TECHFRAG" _index="1" />
+]]
+
+Techfrag2 = [[
+          <Property name="AlwaysPresentProducts" value="TECHFRAG" _index="1"/>
 ]]
 
 Products = [[
-          <Property name="AlwaysPresentSubstances" value="HYPERFUEL2" />
-          <Property name="AlwaysPresentSubstances" value="BP_SALVAGE" />
-          <Property name="AlwaysPresentSubstances" value="FRIG_TOKEN" />
+          <Property name="AlwaysPresentProducts" value="HYPERFUEL2" />
+          <Property name="AlwaysPresentProducts" value="BP_SALVAGE" />
+          <Property name="AlwaysPresentProducts" value="FRIG_TOKEN" />
 ]]
 
 Fleets= [[
-          <Property name="AlwaysPresentSubstances" value="U_FR_MINE4" />
-          <Property name="AlwaysPresentSubstances" value="U_FR_EXP4" />
-          <Property name="AlwaysPresentSubstances" value="U_FR_TRA4" />
+          <Property name="AlwaysPresentProducts" value="U_FR_MINE4" />
+          <Property name="AlwaysPresentProducts" value="U_FR_EXP4" />
+          <Property name="AlwaysPresentProducts" value="U_FR_TRA4" />
           <Property name="AlwaysPresentSubstances" value="U_FR_COM4" />
-          <Property name="AlwaysPresentSubstances" value="U_FR_FUEL4" />
-          <Property name="AlwaysPresentSubstances" value="U_FR_SPE4" />
-          <Property name="AlwaysPresentSubstances" value="U_FR_HYP4" />
+          <Property name="AlwaysPresentProducts" value="U_FR_FUEL4" />
+          <Property name="AlwaysPresentProducts" value="U_FR_SPE4" />
+          <Property name="AlwaysPresentProducts" value="U_FR_HYP4" />
 ]]
 
 Alien= [[
-          <Property name="AlwaysPresentSubstances" value="AP_SHIPLAS4" />
-          <Property name="AlwaysPresentSubstances" value="AP_SHIPGUN4" />
-          <Property name="AlwaysPresentSubstances" value="AP_PULSE4" />
-          <Property name="AlwaysPresentSubstances" value="AP_HYPER4" />
-          <Property name="AlwaysPresentSubstances" value="AP_LAUNCH4" />
-          <Property name="AlwaysPresentSubstances" value="AP_SHIPSHIELD4" />
+          <Property name="AlwaysPresentProducts" value="AP_SHIPLAS4" />
+          <Property name="AlwaysPresentProducts" value="AP_SHIPGUN4" />
+          <Property name="AlwaysPresentProducts" value="AP_PULSE4" />
+          <Property name="AlwaysPresentProducts" value="AP_HYPER4" />
+          <Property name="AlwaysPresentProducts" value="AP_LAUNCH4" />
+          <Property name="AlwaysPresentProducts" value="AP_SHIPSHIELD4" />
 ]]
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -171,6 +175,23 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REMOVE"] = "SECTION",
             },
             
+			--Nanites Listing
+            {
+              ["PRECEDING_KEY_WORDS"] = {"SpaceStation","AlwaysPresentSubstances"},
+              ["ADD"] = Techfrag,
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Shop","AlwaysPresentSubstances"},
+              ["ADD"] = Techfrag,
+            },
+			            {
+              ["PRECEDING_KEY_WORDS"] = {"SpaceStation","AlwaysPresentProducts"},
+              ["ADD"] = Techfrag2,
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Shop","AlwaysPresentProducts"},
+              ["ADD"] = Techfrag2,
+            },
             --Products Listing
             {
               ["PRECEDING_KEY_WORDS"] = {"SpaceStation","AlwaysPresentProducts"},
@@ -179,16 +200,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["PRECEDING_KEY_WORDS"] = {"Shop","AlwaysPresentProducts"},
               ["ADD"] = Products,
-            },
-            
-            --Nanites Listing
-            {
-              ["PRECEDING_KEY_WORDS"] = {"SpaceStation","AlwaysPresentSubstances"},
-              ["ADD"] = Techfrag,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"Shop","AlwaysPresentSubstances"},
-              ["ADD"] = Techfrag,
             },
 			--Alien Modules listing
 			{

@@ -64,6 +64,10 @@ ENCOUNTER_DATA_TABLE =
         {"S9_PIRATE",       "false",     0},
         {"SENT_SHIP",       "false",     12},
         {"ROBOM_BOAT",      "false",     0},
+        {"WORLDSM_BOAT",    "false",     0},
+        {"PURPM_BOAT",      "false",     0},
+        {"BIGGS_DEBRIS",    "false",     0},
+        {"BIGGS_GENERAL",   "false",     2},
     }
 
 NMS_MOD_DEFINITION_CONTAINER =

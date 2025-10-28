@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MBIN_CHANGE_TABLE"]	= {
 	
 	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
-	["EXML_CHANGE_TABLE"]	= {		
+	["MXML_CHANGE_TABLE"]	= {		
 		{ --Rocket Launcher Damage Tweak
 		["SPECIAL_KEY_WORDS"] = {"ID","SHIPROCKETS","StatsType","Ship_Weapons_Guns_Damage"},
 			["SECTION_UP"] = 1,
@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}},
 
 {["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN",
-	["EXML_CHANGE_TABLE"]	= {		
+	["MXML_CHANGE_TABLE"]	= {		
 		{ --SHIPLASER
 		["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -77,7 +77,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}},
 	
 	{["MBIN_FILE_SOURCE"]	= "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
-	["EXML_CHANGE_TABLE"]	= {
+	["MXML_CHANGE_TABLE"]	= {
 		{ --Nerf Player Ship's Regeneration, Tweaks Spawning, forces avoidance to 0
 		["VALUE_CHANGE_TABLE"] = {
 			{"ShieldRechargeMinHitTime","10"},
@@ -90,7 +90,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}},
 
 	{["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SPACE\AISPACESHIPATTACKDATATABLE.MBIN",
-	["EXML_CHANGE_TABLE"]	= {
+	["MXML_CHANGE_TABLE"]	= {
 		--OUTLAW and later: Force specific NPC Shield REGEN
 		{--STANDARD SHIELD
 		["SPECIAL_KEY_WORDS"] = {"Id","STANDARD"},
@@ -294,7 +294,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}},
 	
 	{["MBIN_FILE_SOURCE"]	= "METADATA\PROJECTILES\PROJECTILETABLE.MBIN",
-	["EXML_CHANGE_TABLE"]	= {	
+	["MXML_CHANGE_TABLE"]	= {	
 		--Buffs NPC damage againsts each other, just like player would have done.
 		-- Photon Cannons
 		{ --SQUADRON GUN
@@ -346,7 +346,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}},
 	
 	{["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
-	["EXML_CHANGE_TABLE"]	= {
+	["MXML_CHANGE_TABLE"]	= {
 		{ --Capital freighters spawns instead of normal ones for motherships, sentinel only.
 		["SPECIAL_KEY_WORDS"] = {"MinRange","2200"}, --sentinel use this minrange, and only this in the file, stupid but works
 		["VALUE_CHANGE_TABLE"] = {

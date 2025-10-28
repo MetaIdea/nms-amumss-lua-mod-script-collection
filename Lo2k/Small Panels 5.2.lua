@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Small Panels 5.1.pak", 
+["MOD_FILENAME"] 			= "Small Panels 5.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k & Basbcoole",
 ["NMS_VERSION"]				= "6.10",
@@ -81,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"]    = "ALL", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Width",	"520"},  
+								{"Width",	"520"},  	-- Original "650"  
 							}
 						},
 						{  -- Action Key reminder buttons
@@ -164,6 +164,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Width",	"520"},		-- Original "650"   
+							}
+						},
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "UI\POPUP_NEWMULTITECH.MBIN",  
+					["MXML_CHANGE_TABLE"] 	= 
+					{
+						{  --main window and main description width  
+							["SPECIAL_KEY_WORDS"] = {"Width","650.000000"},
+							["REPLACE_TYPE"]    = "ALL", 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Width",	"520"},  	-- Original "650"  
 							}
 						},
 					}

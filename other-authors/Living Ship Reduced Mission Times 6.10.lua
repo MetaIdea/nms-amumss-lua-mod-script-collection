@@ -15,10 +15,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= "Living Ship Reduced Mission Times 6.04",
+  ["MOD_FILENAME"] 			= "Living Ship Reduced Mission Times 6.10",
   ["MOD_DESCRIPTION"]		= "Reduces the real time wait on the Living ship missions",
-  ["MOD_AUTHOR"]			= "Zay", --username: wizardFu
-  ["NMS_VERSION"]			= "6.04", -- updated for Voyagers
+  ["MOD_AUTHOR"]			= "Zay",
+  ["NMS_VERSION"]			= "6.10",
   ["MODIFICATIONS"] 		=
 	{
 		{

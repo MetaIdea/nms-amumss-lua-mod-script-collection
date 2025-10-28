@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Abandoned Station Corvette Teleport - New Files"
-GameVersion = "6.05"
+GameVersion = "6.11"
 Description = "Description"
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -377,45 +377,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
           }
         },
-        -- RING COLOR STUFF
-        -- {
-        --   MBIN_FILE_SOURCE 	= 
-        --   {
-        --     {[[MODELS/EFFECTS/SPACECRAFT/FREIGHTERTELEPORTER/RINGS.MATERIAL.MBIN]],[[S/EFFECTS/RINGS.MATERIAL.MBIN]]},
-        --   },
-        -- },
-        -- {
-        --   MBIN_FILE_SOURCE 	= "S/EFFECTS/RINGS.MATERIAL.MBIN",
-        --   MXML_CHANGE_TABLE 	= 
-        --   {
-        --     {
-        --       SPECIAL_KEY_WORDS = {"Name","gDiffuseMap"},
-        --       VALUE_CHANGE_TABLE  =
-        --       {
-        --         {"Map","S/TEXTURES/TELEPORTRINGRED.DSS"},
-        --       }
-        --     },
-        --   }
-        -- },
-        -- {
-        --   MBIN_FILE_SOURCE 	= 
-        --   {
-        --     {[[MODELS\EFFECTS\SPACECRAFT\FREIGHTERTELEPORTER.SCENE.MBIN]],[[S/SCENE/FREIGHTERTELEPORTER.SCENE.MBIN]]},
-        --   },
-        -- },
-        -- {
-        --   MBIN_FILE_SOURCE 	= "S/SCENE/FREIGHTERTELEPORTER.SCENE.MBIN",
-        --   MXML_CHANGE_TABLE 	= 
-        --   {
-        --     {
-        --       SPECIAL_KEY_WORDS = {"Name","Rings","Attributes","TkSceneNodeAttributeData"},
-        --       VALUE_CHANGE_TABLE  =
-        --       {
-        --         {"Value","S/EFFECTS/RINGS.MATERIAL.MBIN"},
-        --       }
-        --     },
-        --   }
-        -- },
       }
     }
   }

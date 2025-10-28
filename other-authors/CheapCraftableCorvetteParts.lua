@@ -15,11 +15,14 @@ local FullCorvettePartsList = {
     "B_HAB1_C",
     "B_LND_A",
     "B_LND_B",
+    "B_LND_C",
     "B_LAN_B",
     "B_WNG_A",
     "B_WNG_A_R",
     "B_WNG_B",
     "B_WNG_B_R",
+    "B_WNG_C",
+    "B_WNG_C_R",
     "B_WNG_D",
     "B_WNG_D_R",
     "B_WNG_E",
@@ -50,13 +53,20 @@ local FullCorvettePartsList = {
     "B_WNG_O_2_R",
     "B_TUR_A",
     "B_TUR_C",
+    "B_TUR_D",
+    "B_TUR_E",
     "B_SHL_A",
     "B_SHL_B",
     "B_SHL_C",
+    "B_SHL_D",
     "B_TRU_A",
     "B_TRU_B",
     "B_TRU_C",
     "B_TRU_D",
+    "B_TRU_E",
+    "B_TRU_F",
+    "B_TRU_G",
+    "B_TRU_H",
     "B_ALK_A",
     "B_ALK_Z_A",
     "B_ALK_B",
@@ -375,6 +385,22 @@ local FullCorvettePartsList = {
     "B_STR_M_Y_NW1",
     "B_STR_M_Y_NW2",
     "B_STR_M_Y_NW3",
+    "B_STR_N_NE",
+    "B_STR_N_NE1",
+    "B_STR_N_NE2",
+    "B_STR_N_NE3",
+    "B_STR_N_Y_NE",
+    "B_STR_N_Y_NE1",
+    "B_STR_N_Y_NE2",
+    "B_STR_N_Y_NE3",
+    "B_STR_N_NW",
+    "B_STR_N_NW1",
+    "B_STR_N_NW2",
+    "B_STR_N_NW3",
+    "B_STR_N_Y_NW",
+    "B_STR_N_Y_NW1",
+    "B_STR_N_Y_NW2",
+    "B_STR_N_Y_NW3",
     "B_STR_N_N",
     "B_STR_N_E",
     "B_STR_N_S",
@@ -423,6 +449,54 @@ local FullCorvettePartsList = {
     "B_STR_S_Y_E",
     "B_STR_S_Y_S",
     "B_STR_S_Y_W",
+    "B_STR_T_NETB",
+    "B_STR_T_NETB1",
+    "B_STR_T_NETB2",
+    "B_STR_T_NETB3",
+    "B_STR_T_NWTB",
+    "B_STR_T_NWTB1",
+    "B_STR_T_NWTB2",
+    "B_STR_T_NWTB3",
+    "B_STR_U_NETB",
+    "B_STR_U_NETB1",
+    "B_STR_U_NETB2",
+    "B_STR_U_NETB3",
+    "B_STR_U_NWTB",
+    "B_STR_U_NWTB1",
+    "B_STR_U_NWTB2",
+    "B_STR_U_NWTB3",
+    "B_STR_V_NETB",
+    "B_STR_V_NETB1",
+    "B_STR_V_NETB2",
+    "B_STR_V_NETB3",
+    "B_STR_V_NWTB",
+    "B_STR_V_NWTB1",
+    "B_STR_V_NWTB2",
+    "B_STR_V_NWTB3",
+    "B_STR_W_NETB",
+    "B_STR_W_NETB1",
+    "B_STR_W_NETB2",
+    "B_STR_W_NETB3",
+    "B_STR_W_NWTB",
+    "B_STR_W_NWTB1",
+    "B_STR_W_NWTB2",
+    "B_STR_W_NWTB3",
+    "B_STR_X_NETB",
+    "B_STR_X_NETB1",
+    "B_STR_X_NETB2",
+    "B_STR_X_NETB3",
+    "B_STR_X_NWTB",
+    "B_STR_X_NWTB1",
+    "B_STR_X_NWTB2",
+    "B_STR_X_NWTB3",
+    "B_STR_Y_NETB",
+    "B_STR_Y_NETB1",
+    "B_STR_Y_NETB2",
+    "B_STR_Y_NETB3",
+    "B_STR_Y_NWTB",
+    "B_STR_Y_NWTB1",
+    "B_STR_Y_NWTB2",
+    "B_STR_Y_NWTB3",
     "B_STAIRS0",
     "B_GEN_0",
     "B_GEN_1",
@@ -448,6 +522,9 @@ local FullCorvettePartsList = {
     "B_CON_14",
     "B_CON_15",
     "B_CON2_0",
+    "B_CON2_1",
+    "B_CON2_2",
+    "B_CON2_3",
     "B_DECO_A",
     "B_DECO_B",
     "B_DECO_C",
@@ -606,6 +683,17 @@ local VisibleCorvettePartsList = {
             {RequirementID = "GRENFUEL1", RequiredAmount = "5", RequiredType = Types.PRODUCT}
         },
 	},
+	{
+		ProductId = "B_LND_C",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "10", RequiredType = Types.PRODUCT},
+            {RequirementID = "NANOTUBES", RequiredAmount = "5", RequiredType = Types.PRODUCT},
+            {RequirementID = "MAGNET", RequiredAmount = "5", RequiredType = Types.PRODUCT},
+        },
+	},
 -- Main engines
 -- Heavy Boosters
     {
@@ -619,6 +707,17 @@ local VisibleCorvettePartsList = {
             {RequirementID = "GRENFUEL1", RequiredAmount = "5", RequiredType = Types.PRODUCT}
         },
     },
+	{
+		ProductId = "B_WNG_C",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "10", RequiredType = Types.PRODUCT},
+            {RequirementID = "MAGNET", RequiredAmount = "6", RequiredType = Types.PRODUCT},
+            {RequirementID = "GRENFUEL1", RequiredAmount = "5", RequiredType = Types.PRODUCT}
+        },
+	},
 	{
 		ProductId = "B_WNG_D",
         IsGrouped = false,
@@ -710,6 +809,50 @@ local VisibleCorvettePartsList = {
 	},
 	{
 		ProductId = "B_TRU_D",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "5", RequiredType = Types.PRODUCT},
+            {RequirementID = "MAGNET", RequiredAmount = "6", RequiredType = Types.PRODUCT},
+            {RequirementID = "GRENFUEL1", RequiredAmount = "5", RequiredType = Types.PRODUCT}
+        },
+	},
+	{
+		ProductId = "B_TRU_E",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "5", RequiredType = Types.PRODUCT},
+            {RequirementID = "MAGNET", RequiredAmount = "6", RequiredType = Types.PRODUCT},
+            {RequirementID = "GRENFUEL1", RequiredAmount = "5", RequiredType = Types.PRODUCT}
+        },
+	},
+	{
+		ProductId = "B_TRU_F",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "5", RequiredType = Types.PRODUCT},
+            {RequirementID = "MAGNET", RequiredAmount = "6", RequiredType = Types.PRODUCT},
+            {RequirementID = "GRENFUEL1", RequiredAmount = "5", RequiredType = Types.PRODUCT}
+        },
+	},
+	{
+		ProductId = "B_TRU_G",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "5", RequiredType = Types.PRODUCT},
+            {RequirementID = "MAGNET", RequiredAmount = "6", RequiredType = Types.PRODUCT},
+            {RequirementID = "GRENFUEL1", RequiredAmount = "5", RequiredType = Types.PRODUCT}
+        },
+	},
+	{
+		ProductId = "B_TRU_H",
         IsGrouped = false,
         GroupedIds = {},
         Requirements =
@@ -866,7 +1009,7 @@ local VisibleCorvettePartsList = {
         GroupedIds = {},
         Requirements =
         {
-            {RequirementID = "EX_YELLOW", RequiredAmount = "200", RequiredType = Types.SUBSTANCE},
+            {RequirementID = "YELLOW2", RequiredAmount = "200", RequiredType = Types.SUBSTANCE},
             {RequirementID = "FUEL2", RequiredAmount = "100", RequiredType = Types.SUBSTANCE},
             {RequirementID = "TECH_COMP", RequiredAmount = "2", RequiredType = Types.PRODUCT},
         },
@@ -888,8 +1031,28 @@ local VisibleCorvettePartsList = {
         GroupedIds = {},
         Requirements =
         {
-            {RequirementID = "EX_YELLOW", RequiredAmount = "200", RequiredType = Types.SUBSTANCE},
+            {RequirementID = "ROCKETSUB", RequiredAmount = "100", RequiredType = Types.SUBSTANCE},
             {RequirementID = "FUEL2", RequiredAmount = "100", RequiredType = Types.SUBSTANCE},
+            {RequirementID = "TECH_COMP", RequiredAmount = "2", RequiredType = Types.PRODUCT},
+        },
+	},
+	{
+		ProductId = "B_TUR_D",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "COLD1", RequiredAmount = "200", RequiredType = Types.SUBSTANCE},
+            {RequirementID = "TECH_COMP", RequiredAmount = "2", RequiredType = Types.PRODUCT},
+        },
+	},
+	{
+		ProductId = "B_TUR_E",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "HOT1", RequiredAmount = "200", RequiredType = Types.SUBSTANCE},
             {RequirementID = "TECH_COMP", RequiredAmount = "2", RequiredType = Types.PRODUCT},
         },
 	},
@@ -948,6 +1111,17 @@ local VisibleCorvettePartsList = {
 	},
 	{
 		ProductId = "B_SHL_C",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "STELLAR2", RequiredAmount = "100", RequiredType = Types.SUBSTANCE},
+            {RequirementID = "CATALYST2", RequiredAmount = "25", RequiredType = Types.SUBSTANCE},
+            {RequirementID = "TECH_COMP", RequiredAmount = "1", RequiredType = Types.PRODUCT},
+        },
+	},
+	{
+		ProductId = "B_SHL_D",
         IsGrouped = false,
         GroupedIds = {},
         Requirements =
@@ -1298,6 +1472,76 @@ local VisibleCorvettePartsList = {
             {RequirementID = "HYDRALIC", RequiredAmount = "1", RequiredType = Types.PRODUCT},
         },
 	},
+	{
+		ProductId = "B_STR_N_NE",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "5", RequiredType = Types.PRODUCT},
+            {RequirementID = "HYDRALIC", RequiredAmount = "1", RequiredType = Types.PRODUCT},
+        },
+	},
+	{
+		ProductId = "B_STR_T_NETB",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "5", RequiredType = Types.PRODUCT},
+            {RequirementID = "HYDRALIC", RequiredAmount = "1", RequiredType = Types.PRODUCT},
+        },
+	},
+	{
+		ProductId = "B_STR_U_NETB",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "5", RequiredType = Types.PRODUCT},
+            {RequirementID = "HYDRALIC", RequiredAmount = "1", RequiredType = Types.PRODUCT},
+        },
+	},
+	{
+		ProductId = "B_STR_V_NETB",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "5", RequiredType = Types.PRODUCT},
+            {RequirementID = "HYDRALIC", RequiredAmount = "1", RequiredType = Types.PRODUCT},
+        },
+	},
+	{
+		ProductId = "B_STR_W_NETB",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "5", RequiredType = Types.PRODUCT},
+            {RequirementID = "HYDRALIC", RequiredAmount = "1", RequiredType = Types.PRODUCT},
+        },
+	},
+	{
+		ProductId = "B_STR_X_NETB",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "5", RequiredType = Types.PRODUCT},
+            {RequirementID = "HYDRALIC", RequiredAmount = "1", RequiredType = Types.PRODUCT},
+        },
+	},
+	{
+		ProductId = "B_STR_Y_NETB",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "5", RequiredType = Types.PRODUCT},
+            {RequirementID = "HYDRALIC", RequiredAmount = "1", RequiredType = Types.PRODUCT},
+        },
+	},
 -- Attachments
 	{
 		ProductId = "B_DECO_C",
@@ -1602,6 +1846,36 @@ local VisibleCorvettePartsList = {
 	},
 	{
 		ProductId = "B_CON_L_2",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "10", RequiredType = Types.PRODUCT},
+            {RequirementID = "HYDRALIC", RequiredAmount = "2", RequiredType = Types.PRODUCT},
+        },
+	},
+	{
+		ProductId = "B_CON2_1",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "10", RequiredType = Types.PRODUCT},
+            {RequirementID = "HYDRALIC", RequiredAmount = "2", RequiredType = Types.PRODUCT},
+        },
+	},
+	{
+		ProductId = "B_CON2_2",
+        IsGrouped = false,
+        GroupedIds = {},
+        Requirements =
+        {
+            {RequirementID = "CASING", RequiredAmount = "10", RequiredType = Types.PRODUCT},
+            {RequirementID = "HYDRALIC", RequiredAmount = "2", RequiredType = Types.PRODUCT},
+        },
+	},
+	{
+		ProductId = "B_CON2_3",
         IsGrouped = false,
         GroupedIds = {},
         Requirements =

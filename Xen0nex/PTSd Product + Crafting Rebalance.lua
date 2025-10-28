@@ -1,5 +1,5 @@
 ModName = "PTSd Product + Crafting Rebalance"
-GameVersion = "6_06"
+GameVersion = "6_10"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --Changes how effective certain substances are at recharging certain techs
@@ -647,6 +647,21 @@ AdjustItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MBI
 	{	--Antimatter Reactor	Antimatter
 		"BUILDANTIMATTER",		"ANTIMATTER",		10,			--2
 	},
+	{	--Aeron Powershield		Pugneum
+		"B_SHL_E",				"ROBOT1",			64,			--25
+	},
+	{	--Aeron Drive			Pugneum
+		"B_WNG_P",				"ROBOT1",			32,			--20
+	},
+	{	--Aeron Drive			Pugneum
+		"B_WNG_P_B",			"ROBOT1",			32,			--20
+	},
+	{	--Aeron Drive			Pugneum
+		"B_WNG_P_R",			"ROBOT1",			32,			--20
+	},
+	{	--Aeron Drive			Pugneum
+		"B_WNG_P_T",			"ROBOT1",			32,			--20
+	},
 }
 --Adds various items as new components for certain objects
 AddItems =
@@ -911,6 +926,24 @@ ReplaceItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MB
 	},
 	{	--Deadeye Cannon (Corvette) 
 		"B_TUR_B",				"SALVAGE_TECH7",	2,		"Product",		"SHIPCHARGE",
+	},
+	{	--Aeron Powershield (Corvette)
+		"B_SHL_E",				"SENTINEL_LOOT",	1,		"Product",		"MIRROR",
+	},
+	{	--Aeron Powershield (Corvette)
+		"B_SHL_E",				"SALVAGE_TECH7",	1,		"Product",		"SHIPCHARGE",
+	},
+	{	--Aeron Drive (Corvette)
+		"B_WNG_P",				"SALVAGE_TECH7",	3,		"Product",		"CASING",
+	},
+	{	--Aeron Drive (Corvette)
+		"B_WNG_P_B",			"SALVAGE_TECH7",	3,		"Product",		"CASING",
+	},
+	{	--Aeron Drive (Corvette)
+		"B_WNG_P_R",			"SALVAGE_TECH7",	3,		"Product",		"CASING",
+	},
+	{	--Aeron Drive (Corvette)
+		"B_WNG_P_T",			"SALVAGE_TECH7",	3,		"Product",		"CASING",
 	},
 }
 

@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Pirate Station Corvette Teleport"
-GameVersion = "6.06"
+GameVersion = "6.11"
 Description = "Add the teleport pads to get to the Corvette Landing Pads in Outlaw Stations."
 
 CVTELEPORT  = [[
@@ -11,7 +11,7 @@ CVTELEPORT  = [[
     <Property name="Transform" value="TkTransformData">
       <Property name="TransX" value="5.3" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="-386.25" />
+      <Property name="TransZ" value="-26.3" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="180.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -39,7 +39,7 @@ CVTELEPORT  = [[
     <Property name="Transform" value="TkTransformData">
       <Property name="TransX" value="5.3" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="-386.25" />
+      <Property name="TransZ" value="-26.3" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="180.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -67,7 +67,7 @@ CVTELEPORT  = [[
     <Property name="Transform" value="TkTransformData">
       <Property name="TransX" value="5.3" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="-266.25" />
+      <Property name="TransZ" value="-146.2" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="180.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -95,7 +95,7 @@ CVTELEPORT  = [[
     <Property name="Transform" value="TkTransformData">
       <Property name="TransX" value="5.3" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="-266.25" />
+      <Property name="TransZ" value="-146.2" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="180.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -123,7 +123,7 @@ CVTELEPORT  = [[
     <Property name="Transform" value="TkTransformData">
       <Property name="TransX" value="5.3" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="-146.2" />
+      <Property name="TransZ" value="-266.25" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="180.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -151,7 +151,7 @@ CVTELEPORT  = [[
     <Property name="Transform" value="TkTransformData">
       <Property name="TransX" value="5.3" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="-146.2" />
+      <Property name="TransZ" value="-266.25" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="180.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -179,7 +179,7 @@ CVTELEPORT  = [[
     <Property name="Transform" value="TkTransformData">
       <Property name="TransX" value="5.3" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="-26.3" />
+      <Property name="TransZ" value="-386.25" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="180.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -207,7 +207,7 @@ CVTELEPORT  = [[
     <Property name="Transform" value="TkTransformData">
       <Property name="TransX" value="5.3" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="-26.3" />
+      <Property name="TransZ" value="-386.25" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="180.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -233,9 +233,9 @@ CVTELEPORT  = [[
     <Property name="NameHash" value="2637218933" />
     <Property name="Type" value="REFERENCE" />
     <Property name="Transform" value="TkTransformData">
-      <Property name="TransX" value="31" />
+      <Property name="TransX" value="32" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="126" />
+      <Property name="TransZ" value="117" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="-90.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -261,9 +261,9 @@ CVTELEPORT  = [[
     <Property name="NameHash" value="66045750" />
     <Property name="Type" value="REFERENCE" />
     <Property name="Transform" value="TkTransformData">
-      <Property name="TransX" value="31" />
+      <Property name="TransX" value="32" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="123" />
+      <Property name="TransZ" value="120" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="-90.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -289,9 +289,9 @@ CVTELEPORT  = [[
     <Property name="NameHash" value="3044639083" />
     <Property name="Type" value="REFERENCE" />
     <Property name="Transform" value="TkTransformData">
-      <Property name="TransX" value="31" />
+      <Property name="TransX" value="32" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="120" />
+      <Property name="TransZ" value="123" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="-90.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -317,9 +317,9 @@ CVTELEPORT  = [[
     <Property name="NameHash" value="3868893376" />
     <Property name="Type" value="REFERENCE" />
     <Property name="Transform" value="TkTransformData">
-      <Property name="TransX" value="31" />
+      <Property name="TransX" value="32" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="117" />
+      <Property name="TransZ" value="126" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="-90.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -345,9 +345,9 @@ CVTELEPORT  = [[
     <Property name="NameHash" value="2640864071" />
     <Property name="Type" value="REFERENCE" />
     <Property name="Transform" value="TkTransformData">
-      <Property name="TransX" value="31" />
+      <Property name="TransX" value="32" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="117" />
+      <Property name="TransZ" value="126" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="-90.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -373,9 +373,9 @@ CVTELEPORT  = [[
     <Property name="NameHash" value="3058585589" />
     <Property name="Type" value="REFERENCE" />
     <Property name="Transform" value="TkTransformData">
-      <Property name="TransX" value="31" />
+      <Property name="TransX" value="32" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="120"/>
+      <Property name="TransZ" value="123"/>
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="-90.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -401,9 +401,9 @@ CVTELEPORT  = [[
     <Property name="NameHash" value="1841069461" />
     <Property name="Type" value="REFERENCE" />
     <Property name="Transform" value="TkTransformData">
-      <Property name="TransX" value="31" />
+      <Property name="TransX" value="32" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="123" />
+      <Property name="TransZ" value="120" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="-90.000000" />
       <Property name="RotZ" value="0.000000" />
@@ -429,9 +429,9 @@ CVTELEPORT  = [[
     <Property name="NameHash" value="1085962569" />
     <Property name="Type" value="REFERENCE" />
     <Property name="Transform" value="TkTransformData">
-      <Property name="TransX" value="31" />
+      <Property name="TransX" value="32" />
       <Property name="TransY" value="0.000000" />
-      <Property name="TransZ" value="126" />
+      <Property name="TransZ" value="117" />
       <Property name="RotX" value="0.000000" />
       <Property name="RotY" value="-90.000000" />
       <Property name="RotZ" value="0.000000" />

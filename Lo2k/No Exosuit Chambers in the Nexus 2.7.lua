@@ -1,17 +1,17 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Exosuit Chambers in Pirate Stations 2.6.pak", 
+["MOD_FILENAME"] 			= "No Exosuit Chambers in the Nexus 2.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "6.02",
-["MOD_DESCRIPTION"]			= "This mod removes exosuit chambers in Pirate Stations",
+["NMS_VERSION"]				= "6.10",
+["MOD_DESCRIPTION"]			= "This mod removes exosuit chambers in the Nexus",
 ["MODIFICATIONS"] 			= 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= {"MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION_PIRATE.SCENE.MBIN"},
+					["MBIN_FILE_SOURCE"] 	= {"MODELS\SPACE\NEXUS\PARTS\BRIDGE\BRIDGEROOM.SCENE.MBIN"},
 					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{

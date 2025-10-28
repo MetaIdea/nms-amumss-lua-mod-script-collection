@@ -1,5 +1,5 @@
 ModName = "PTSd UI Description Adjustments"
-GameVersion = "6_05"
+GameVersion = "6_10"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 --[[
@@ -547,6 +547,24 @@ ExhibitDesc =
 AutoPosUnitDesc =
 [[A container of positioning units and associated wiring, produced in a system with a &lt;TECHNOLOGY&gt;high-tech&lt;&gt; economy.&#xA;&#xA;These APS units can be used to turn virtually any technology into a self-navigating system. Highly valuable in &lt;SPECIAL&gt;power generation&lt;&gt; economies, where they're used to remove conductive organic hands from the manufacturing process.]]
 
+TutorialDesc1 =
+[[I find myself alone on a strange world, unequipped and in danger. I have no memory of how I got here, no sense of a before.&#xA;&#xA;My Exosuit at least seems to know what it is doing, and I am not dead yet...&#xA;&#xA;I should find a &lt;TRADE&gt;cave&lt;&gt; as &lt;FUEL&gt;soon as possible&lt;&gt;, to seek shelter from the &lt;CATALYST&gt;harsh environment&lt;&gt; and find &lt;STELLAR&gt;useful ingredients&lt;&gt;.]]
+
+TutorialTip1 =
+[[The &lt;TECHNOLOGY&gt;Multi-Tool&lt;&gt; is a critical piece of survival equipment.&#xA;Use the &lt;TECHNOLOGY&gt;Scanner&lt;&gt; (&lt;IMG&gt;SCAN&lt;&gt;) to locate nearby resources for &lt;FUEL&gt;Life Support&lt;&gt; and &lt;COMMODITY&gt;Hazard Protection&lt;&gt; systems.&#xA;&#xA;Find a &lt;TRADE&gt;cave&lt;&gt; as &lt;FUEL&gt;soon as possible&lt;&gt;, to seek shelter from the &lt;CATALYST&gt;harsh environment&lt;&gt; and find &lt;STELLAR&gt;useful ingredients&lt;&gt; for crafting &lt;CATALYST&gt;Ion Batteries&lt;&gt; to recharge hazard protection.]]
+
+TutorialTip2 =
+[[Use &lt;EARTH&gt;Ferrite Dust&lt;&gt; to repair the Scanner. Gather metal from mineral deposits.&#xA;Use &lt;IMG&gt;ATTACK&lt;&gt; to fire the Mining Beam at nearby minerals.&#xA;Systems are repaired from the inventory (&lt;IMG&gt;INVENTORY&lt;&gt;)&#xA;&#xA;Seek shelter from the &lt;CATALYST&gt;harsh environment&lt;&gt; in &lt;TRADE&gt;caves&lt;&gt;, where &lt;STELLAR&gt;useful ingredients&lt;&gt; can be found.]]
+
+TutorialTip3 =
+[[The crash site may hold clues as to what has happened. At the very least, it should contain salvageable items.&#xA;The damaged starship appears the best starting point.&#xA;&#xA;However, I should first find a &lt;TRADE&gt;cave&lt;&gt; as &lt;FUEL&gt;soon as possible&lt;&gt;, to seek shelter from the &lt;CATALYST&gt;harsh environment&lt;&gt; and find &lt;STELLAR&gt;useful ingredients&lt;&gt; for crafting &lt;CATALYST&gt;Ion Batteries&lt;&gt; to recharge hazard protection.]]
+
+TutorialMessage1 =
+[[Reach the marked signal, shelter in &lt;TRADE&gt;caves&lt;&gt; as needed: 0 / 1&#xA;Exosuit detected &lt;STELLAR&gt;automated signal broadcast&lt;&gt;]]
+
+TutorialMessage3 =
+[[Reach the marked signal, shelter in &lt;TRADE&gt;caves&lt;&gt; as needed: 0 / 1&#xA;Exosuit detected &lt;STELLAR&gt;automated signal broadcast&lt;&gt;&#xA;Use the &lt;TECHNOLOGY&gt;Scanner&lt;&gt; (&lt;IMG&gt;SCAN&lt;&gt;) to highlight &lt;COMMODITY&gt;key resources&lt;&gt;]]
+
 VehicleLaserDamage =
 [[Exocraft Laser Power]]		--Mining Laser Power
 
@@ -812,7 +830,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_DESCRIPTION"]		= Description,
 	["MOD_AUTHOR"]			= "Xen0nex",
 	["NMS_VERSION"]			= GameVersion,   
-	["EXML_CREATE"] = "FALSE",  
+	--["EXML_CREATE"] = "FALSE",  
     ["MODIFICATIONS"] 		= 
     {
 	    {
@@ -1372,6 +1390,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", AppendText (SimpleFoodNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_CORE_TUTORIAL1_OBJ0_TIP"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", TutorialTip1}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_FIRST_WALK_MSG3"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", TutorialMessage3}
 							}
 						},
 					}
@@ -2711,6 +2743,34 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", AutoPosUnitDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_CORE_TUTORIAL1_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", TutorialDesc1}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_CORE_TUTORIAL1Z_OBJ1_TIP_ALT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", TutorialTip2}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_CORE_TUTORIAL1_OBJ1_TIP"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", TutorialTip3}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_CORE_TUTORIAL1_MSG1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", TutorialMessage1}
 							}
 						},
 					}

@@ -65,6 +65,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["PRECEDING_KEY_WORDS"] = {"PlanetEngine","PlanetEngine","PlanetEngine","PlanetEngine","PlanetEngine"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinSpeed",           "0.01"},                                  -- Original 20
+							}
+						},
+						{
 							["MATH_OPERATION"]      = "*",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{

@@ -1,5 +1,5 @@
 ModName = "PTSd Stronger Environmental Hazards"
-GameVersion = "6_00"
+GameVersion = "6_11"
 Description = "Makes hazards (toxic, cold, hot, radiation) harsher. Also increases chances for special weather events (Tornadoes) and adjusts their properties."
 
 --TODO:
@@ -26,8 +26,8 @@ UnderwaterBreathMultiplier = 0.67							--1		(20 & 180)		How long you can last w
 DeepWaterOxygenMultiplier = 0.2								--0.2			Reduced breath timer when in deep water
 
 --Some settings related to Hazard times
-StartHazardTimeMultiplier =		3							--10			Applies a temporary bonus multiplier to NormalModeHazardTimeMultiplier at the start of a new game (as long as you have no scanner tech installed on any multi-tool)
-EarlyHazardTimeMultiplier =		1.5							--1.6			Applies a temporary bonus multiplier to NormalModeHazardTimeMultiplier from the time you have a scanner installed in a multi-tool, until you first reach your starship.
+StartHazardTimeMultiplier =		3.0							--10			Applies a temporary bonus multiplier to NormalModeHazardTimeMultiplier at the start of a new game (as long as you have no scanner tech installed on any multi-tool)
+EarlyHazardTimeMultiplier =		1.8							--1.6			Applies a temporary bonus multiplier to NormalModeHazardTimeMultiplier from the time you have a scanner installed in a multi-tool, until you first reach your starship.
 
 --Life Support traits	(lower values means easier/slower)
 EnergyDischargeRateLow = 0.08								--0.02			Was 0.08 in the Deprecated "HardMode" version of this value pre-4.0

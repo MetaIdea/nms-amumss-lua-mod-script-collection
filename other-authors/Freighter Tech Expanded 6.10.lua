@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= "Freighter Tech Expanded 6.05", 
+["MOD_FILENAME"] 			= "Freighter Tech Expanded 6.10", 
 ["MOD_AUTHOR"]				= "Zay",
-["NMS_VERSION"]				= "6.05",
+["NMS_VERSION"]				= "6.10",
 ["MOD_DESCRIPTION"]			= "Increases upgradable Freighter Tech slots to 100 at S class (10x10)",
 ["MODIFICATIONS"] 			= 
 	{

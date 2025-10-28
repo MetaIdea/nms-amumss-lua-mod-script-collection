@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Quieter.Overseer.V.1.3.pak",
+["MOD_FILENAME"]  = "_Quieter.Overseer.V.1.6",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.71",
+["NMS_VERSION"]   = "6.10",
 ["MODIFICATIONS"] =
     {
         {
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\BACK_SECTION_ORB.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "REFStationOrbEyeVFX", "Name", "SCENEGRAPH"},

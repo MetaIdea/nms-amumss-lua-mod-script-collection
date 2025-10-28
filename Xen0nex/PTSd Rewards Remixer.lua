@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "6_05"
+GameVersion = "6_10"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -120,8 +120,8 @@ ShipLootChanges =
 			{"TRA_CURIO1",			"TRA_CURIO1",			1,			1,			10.000000},				--"TRA_CURIO1",			1,			3,			40.000000
 			{"WAR_CURIO1",			"WAR_CURIO1",			1,			1,			10.000000},				--"WAR_CURIO1",			1,			3,			40.000000
 			{"EXP_CURIO1",			"EXP_CURIO1",			1,			1,			10.000000},				--"EXP_CURIO1",			1,			3,			40.000000
-			--{<One of 63 Corvette parts>,					1,			1,			33},					--<One of 63 Corvette parts>,	1,	1,			33	 Worth 236,694 units on average
-			--{<One of 26 Corvette parts>,					1,			1,			20},					--<One of 26 Corvette parts>,	1,	1,			20	 Worth 1,052,400 units on average
+			--{<One of 73 Corvette parts>,					1,			1,			33},					--<One of 73 Corvette parts>,	1,	1,			33	 Worth 236,694 units on average
+			--{<One of 35 Corvette parts>,					1,			1,			20},					--<One of 35 Corvette parts>,	1,	1,			20	 Worth 1,052,400 units on average
 		}
 	},
 	{	--Easy Pirates:	per destroyed ship containers	(Added by this mod)
@@ -134,8 +134,8 @@ ShipLootChanges =
 			{"TRA_CURIO1",			"TRA_CURIO1",			1,			1,			40.000000},				--"TRA_CURIO1",			1,			3,			40.000000
 			{"WAR_CURIO1",			"WAR_CURIO1",			1,			1,			40.000000},				--"WAR_CURIO1",			1,			3,			40.000000
 			{"EXP_CURIO1",			"EXP_CURIO1",			1,			1,			40.000000},				--"EXP_CURIO1",			1,			3,			40.000000
-			--{<One of 63 Corvette parts>,					1,			1,			33},					--<One of 63 Corvette parts>,	1,	1,			33	 Worth 236,694 units on average
-			--{<One of 26 Corvette parts>,					1,			1,			10},					--<One of 26 Corvette parts>,	1,	1,			10	 Worth 1,052,400 units on average
+			--{<One of 73 Corvette parts>,					1,			1,			33},					--<One of 73 Corvette parts>,	1,	1,			33	 Worth 236,694 units on average
+			--{<One of 35 Corvette parts>,					1,			1,			10},					--<One of 35 Corvette parts>,	1,	1,			10	 Worth 1,052,400 units on average
 		}
 	},
 	{	--Hard Pirates:	per destroyed ship containers	(Added by this mod)
@@ -145,8 +145,8 @@ ShipLootChanges =
 			{"SCRAP_TECH",			"SCRAP_TECH",			1,			2,			66.000000},				--"SCRAP_TECH",			1,			1,			100.000000
 			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			2,			66.000000},				--"SCRAP_WEAP",			1,			1,			100.000000
 			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100.000000},			--"SHIPCHARGE",			3,			3,			100.000000
-			--{<One of 63 Corvette parts>,					1,			1,			20},					--<One of 63 Corvette parts>,	1,	1,			20	 Worth 236,694 units on average
-			--{<One of 26 Corvette parts>,					1,			1,			30},					--<One of 26 Corvette parts>,	1,	1,			30	 Worth 1,052,400 units on average
+			--{<One of 73 Corvette parts>,					1,			1,			20},					--<One of 73 Corvette parts>,	1,	1,			20	 Worth 236,694 units on average
+			--{<One of 35 Corvette parts>,					1,			1,			30},					--<One of 35 Corvette parts>,	1,	1,			30	 Worth 1,052,400 units on average
 		}
 	},
 	{	--Sentinel Interceptors:	per destroyed ship containers
@@ -195,8 +195,8 @@ ShipLootChanges =
 			{"ILLEGAL_PROD5",		"FRIG_BOOST_SPD",		1,			1,			80.000000},				--"ILLEGAL_PROD5",		3,			6,			100.000000		(348,000 units sale value in PTSd)
 			{"ILLEGAL_PROD6",		"ILLEGAL_PROD6",		1,			3,			40.000000},				--"ILLEGAL_PROD6",		2,			4,			100.000000		(408,000 units sale value in PTSd)
 			{"ILLEGAL_PROD7",		"ILLEGAL_PROD7",		1,			2,			30.000000},				--"ILLEGAL_PROD7",		1,			2,			100.000000		(498,000 units sale value in PTSd)
-			--{<One of 26 Corvette parts>,					1,			1,			7},						--<One of 26 Corvette parts>,	1,	1,			7	 Worth 1,052,400 units on average
-			--{<One of 63 Corvette parts>,					1,			1,			15},					--<One of 63 Corvette parts>,	1,	1,			15	 Worth 236,694 units on average
+			--{<One of 35 Corvette parts>,					1,			1,			7},						--<One of 35 Corvette parts>,	1,	1,			7	 Worth 1,052,400 units on average
+			--{<One of 73 Corvette parts>,					1,			1,			15},					--<One of 73 Corvette parts>,	1,	1,			15	 Worth 236,694 units on average
 		}
 	},
 	{	--Freighter Cargo Pods
@@ -218,8 +218,8 @@ ShipLootChanges =
 			{"TRA_MINERALS3",		"TRA_MINERALS3",		16,			20,			100.000000},			--"TRA_MINERALS3",		8,			10,			100.000000
 			{"TRA_MINERALS2",		"FRIG_BOOST_SPD",		1,			1,			80.000000},				--"TRA_MINERALS2",		15,			25,			100.000000
 			{"TRA_TECH3",			"TRA_TECH3",			16,			20,			100.000000},			--"TRA_TECH3",			8,			10,			100.000000
-			--{<One of 26 Corvette parts>,					1,			1,			7},						--<One of 26 Corvette parts>,	1,	1,			7	 Worth 1,052,400 units on average
-			--{<One of 63 Corvette parts>,					1,			1,			15},					--<One of 63 Corvette parts>,	1,	1,			15	 Worth 236,694 units on average
+			--{<One of 35 Corvette parts>,					1,			1,			7},						--<One of 35 Corvette parts>,	1,	1,			7	 Worth 1,052,400 units on average
+			--{<One of 73 Corvette parts>,					1,			1,			15},					--<One of 73 Corvette parts>,	1,	1,			15	 Worth 236,694 units on average
 		}
 	},
 	{	--Reward for rescuing a Freighter from Pirates, unlike above you have the listed chance to receive ALL listed rewards
@@ -724,8 +724,8 @@ SpaceStationMissionLootChanges =
 			{"FOOD_J_SALT",				"ABAND_LOCATOR",		1,	1,		20},	--3,	6,		2		Food worth 1800		(Emergency Signal Scanner)
 			{"FOOD_ICE_FISH",			"MECH_PROD",			1,	3,		30},	--3,	6,		2		Food worth 36000	(Hardframe Engine)
 			{"FOOD_MM_APPLE",			"FOOD_MM_APPLE",		5,	10,		2},		--2,	5,		2		Food worth 149400
-			--{<One of 26 Corvette parts>,						1,	1,		7},		--1,	1,		7		<One of 26 Corvette parts>	 Worth 1,052,400 units on average
-			--{<One of 63 Corvette parts>,						1,	1,		15},	--1,	1,		15		<One of 63 Corvette parts>	 Worth 236,694 units on average
+			--{<One of 35 Corvette parts>,						1,	1,		7},		--1,	1,		7		<One of 35 Corvette parts>	 Worth 1,052,400 units on average
+			--{<One of 73 Corvette parts>,						1,	1,		15},	--1,	1,		15		<One of 73 Corvette parts>	 Worth 236,694 units on average
 		}
 	},
 	{
@@ -822,8 +822,8 @@ SpaceStationMissionLootChanges =
 			{"SHIP_CORE_B",				"SHIP_CORE_B",			1,	1,		0},		--1,	1,		4		B-Class Reactor
 			{"SHIP_CORE_A",				"SHIP_CORE_A",			1,	1,		0},		--1,	1,		2		A-Class Reactor
 			{"SHIP_CORE_S",				"SHIP_CORE_S",			1,	1,		0},		--1,	1,		1		S-Class Reactor
-			--{<One of 26 Corvette parts>,						1,	1,		7},		--1,	1,		7		<One of 26 Corvette parts>	 Worth 1,052,400 units on average
-			--{<One of 63 Corvette parts>,						1,	1,		15},	--1,	1,		15		<One of 63 Corvette parts>	 Worth 236,694 units on average
+			--{<One of 35 Corvette parts>,						1,	1,		7},		--1,	1,		7		<One of 35 Corvette parts>	 Worth 1,052,400 units on average
+			--{<One of 73 Corvette parts>,						1,	1,		15},	--1,	1,		15		<One of 73 Corvette parts>	 Worth 236,694 units on average
 		}
 	},
 	{
@@ -990,8 +990,8 @@ SpaceStationMissionLootChanges =
 			{"BP_SALVAGE",				"BP_SALVAGE",			8,	12,		5},		--3,	5,		6		Salvaged Data
 			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		1},		--1,	1,		6		Exosuit Expansion Slot
 			{"NAV_DATA",				"NAV_DATA",				9,	12,		2},		--3,	5,		4		Navigation Data
-			--{<One of 26 Corvette parts>,						1,	1,		7},		--1,	1,		7		<One of 26 Corvette parts>	 Worth 1,052,400 units on average
-			--{<One of 63 Corvette parts>,						1,	1,		15},	--1,	1,		15		<One of 63 Corvette parts>	 Worth 236,694 units on average
+			--{<One of 35 Corvette parts>,						1,	1,		7},		--1,	1,		7		<One of 35 Corvette parts>	 Worth 1,052,400 units on average
+			--{<One of 73 Corvette parts>,						1,	1,		15},	--1,	1,		15		<One of 73 Corvette parts>	 Worth 236,694 units on average
 		}
 	},
 	{
@@ -1050,10 +1050,12 @@ SpaceStationMissionLootChanges =
 			{"REPAIRKIT",				"REPAIRKIT",			4,	5,		2},		--3,	3,		6		Repair Kit
 			{"BP_SALVAGE",				"BP_SALVAGE",			10,	14,		5},		--3,	5,		5		Salvaged Data
 			{"NAV_DATA",				"NAV_DATA",				16,	16,		2},		--5,	5,		4		Navigation Data
-			--{<One of 26 Corvette parts>,						1,	1,		7},		--1,	1,		7		<One of 26 Corvette parts> Worth 1,052,400 units on average
-			--{<One of 63 Corvette parts>,						1,	1,		15},	--1,	1,		15		<One of 63 Corvette parts> Worth 236,694 units on average
+			--{<One of 35 Corvette parts>,						1,	1,		7},		--1,	1,		7		<One of 35 Corvette parts> Worth 1,052,400 units on average
+			--{<One of 73 Corvette parts>,						1,	1,		15},	--1,	1,		15		<One of 73 Corvette parts> Worth 236,694 units on average
 		}
 	},
+	--Deprecated in NMS v6.10
+	--[[
 	{
 		{"R_CVBOARD_MED"},		--Presumably additional / alternative reward for Corvette missions / Mission Radar?
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
@@ -1095,6 +1097,7 @@ SpaceStationMissionLootChanges =
 			{"TECH_COMP",				"TECH_COMP",			5,	15,		5},		--5,	15,		5		Wiring Loom
 		}
 	},
+	]]
 }
 
 SpaceStationMissionCurrencyChanges =
@@ -1324,7 +1327,7 @@ PTSdFreiUpgrClassChances =			--Only has an effect if UsePTSdFreiUpgradeClassChan
 TaintedMetalMult =						3						--1		Multiplier to all rewards of Tainted Metal (to balance out the increased price of Suspicious Packets when buying from Scrap Dealers)
 ScrapTaintIgnoreNatResSetting =			"true"					--"false"	Set to "true" to make the Tainted Metal reward from Scrap Dealers for turning in Crew Manifests / Captain's Logs be a set amount that ignores the in-game "Natural Resources" Difficulty Setting (e.g. if set to "false" on the Standard setting it will multiply the reward  amounts by 0.8x)
 DerelictNaniteRewardMult =				3						--1		Multiplier applied to the 400-600 nanites awarded if choosing the nanite reward at the end of a Derelict Freighter
-DerelictGoodCorvChance =				100						--60		Chance to get one of the "good" 26 Corvette parts in addition to 2-3 of the "OK" 63 Corvette parts at the end of a Derelict Freighter
+DerelictGoodCorvChance =				100						--60		Chance to get one of the "good" 35 Corvette parts in addition to 2-3 of the "OK" 73 Corvette parts at the end of a Derelict Freighter
 
 --Replacers for how much Standing is awarded for turning over Derelict Freighter Crew Manifest / Captain's Log to Guild Envoys instead of Scrap Dealers
 CrewManGuildStand =						4						--2
@@ -1332,6 +1335,13 @@ CaptLogGuildStand =						6						--3
 --Adds a Units Reward for turning over Derelict Freighter Crew Manifest / Captain's Log to Guild Envoys instead of Scrap Dealers
 CrewManGuildUnits =						600000					--0
 CaptLogGuildUnits =						900000					--0
+
+--Rewards from destroying reactors on "derelict corvettes" added in the Breach update. Chances are not mutually exculsive (can potentially recieve multiple different rewards at once)
+DerCorvProceduralLootChance =			10						--10	Drops 1 procedural "Salvage" loot item
+DerCorvGoodModuleMin =					2						--1		Minimum amount of "Good" corvette modules (from 35 options) to drop (40% chance)
+DerCorvGoodModuleMax =					4						--2		Maximum amount of "Good" corvette modules (from 35 options) to drop (40% chance)
+DerCorvOKModuleMin =					2						--1		Minimum amount of "OK" corvette modules (from 73 options) to drop (100% chance)
+DerCorvOKModuleMax =					4						--2		Maximum amount of "OK" corvette modules (from 73 options) to drop (100% chance)
 
 --Replacers for the Min and Max Units awarded for the repeatable mission from the Exocraft Technician NPC, in addition to the other random rewards
 ExocraftMinUnits =						100001					--1000 or 0
@@ -1972,8 +1982,8 @@ CrashedFreighterLootChances =
 			{"COMPOUND5",				1},						--1			Superconductor
 			{"COMPOUND6",				1},						--1			Cryo-Pump
 			{"COMPOUND3",				3},						--3			Hot Ice
-			--{<One of 26 Corvette parts>,	7},					--7			<One of 26 Corvette parts>	Worth 1,052,400 units on average
-			--{<One of 63 Corvette parts>,	15},				--15		<One of 63 Corvette parts>	Worth 236,694 units on average
+			--{<One of 35 Corvette parts>,	7},					--7			<One of 35 Corvette parts>	Worth 1,052,400 units on average
+			--{<One of 73 Corvette parts>,	15},				--15		<One of 73 Corvette parts>	Worth 236,694 units on average
 		}
 	},
 	{
@@ -2741,30 +2751,39 @@ PIRATLTEASYRewards =
 							<Property name="ProductList" value="B_STR_P_N" _index="37" />
 							<Property name="ProductList" value="B_STR_R_N" _index="38" />
 							<Property name="ProductList" value="B_STR_S_N" _index="39" />
-							<Property name="ProductList" value="B_DECO_B" _index="40" />
-							<Property name="ProductList" value="B_DECO_C" _index="41" />
-							<Property name="ProductList" value="B_DECO_D" _index="42" />
-							<Property name="ProductList" value="B_DECO_E" _index="43" />
-							<Property name="ProductList" value="B_DECO_F" _index="44" />
-							<Property name="ProductList" value="B_DECO_G" _index="45" />
-							<Property name="ProductList" value="B_DECO_H" _index="46" />
-							<Property name="ProductList" value="B_DECO_J" _index="47" />
-							<Property name="ProductList" value="B_DECO_K" _index="48" />
-							<Property name="ProductList" value="B_DECO_L" _index="49" />
-							<Property name="ProductList" value="B_DECO_N_0" _index="50" />
-							<Property name="ProductList" value="B_DECO_N_1" _index="51" />
-							<Property name="ProductList" value="B_DECO_O" _index="52" />
-							<Property name="ProductList" value="B_DECO_P" _index="53" />
-							<Property name="ProductList" value="B_CON_L_0" _index="54" />
-							<Property name="ProductList" value="B_CON_L_1" _index="55" />
-							<Property name="ProductList" value="B_CON_L_3" _index="56" />
-							<Property name="ProductList" value="B_CON_5" _index="57" />
-							<Property name="ProductList" value="B_CON_6" _index="58" />
-							<Property name="ProductList" value="B_CON_7" _index="59" />
-							<Property name="ProductList" value="B_CON_8" _index="60" />
-							<Property name="ProductList" value="B_CON_9" _index="61" />
-							<Property name="ProductList" value="B_CON2_0" _index="62" />
-							<Property name="ProductList" value="B_CON_L_2" _index="63" />
+							<Property name="ProductList" value="B_STR_T_NETB" _index="40" />
+							<Property name="ProductList" value="B_STR_U_NETB" _index="41" />
+							<Property name="ProductList" value="B_STR_V_NETB" _index="42" />
+							<Property name="ProductList" value="B_STR_W_NETB" _index="43" />
+							<Property name="ProductList" value="B_STR_X_NETB" _index="44" />
+							<Property name="ProductList" value="B_STR_Y_NETB" _index="45" />
+							<Property name="ProductList" value="B_DECO_B" _index="46" />
+							<Property name="ProductList" value="B_DECO_C" _index="47" />
+							<Property name="ProductList" value="B_DECO_D" _index="48" />
+							<Property name="ProductList" value="B_DECO_E" _index="49" />
+							<Property name="ProductList" value="B_DECO_F" _index="50" />
+							<Property name="ProductList" value="B_DECO_G" _index="51" />
+							<Property name="ProductList" value="B_DECO_H" _index="52" />
+							<Property name="ProductList" value="B_DECO_J" _index="53" />
+							<Property name="ProductList" value="B_DECO_K" _index="54" />
+							<Property name="ProductList" value="B_DECO_L" _index="55" />
+							<Property name="ProductList" value="B_DECO_N_0" _index="56" />
+							<Property name="ProductList" value="B_DECO_N_1" _index="57" />
+							<Property name="ProductList" value="B_DECO_O" _index="58" />
+							<Property name="ProductList" value="B_DECO_P" _index="59" />
+							<Property name="ProductList" value="B_CON_L_0" _index="60" />
+							<Property name="ProductList" value="B_CON_L_1" _index="61" />
+							<Property name="ProductList" value="B_CON_L_3" _index="62" />
+							<Property name="ProductList" value="B_CON_5" _index="63" />
+							<Property name="ProductList" value="B_CON_6" _index="64" />
+							<Property name="ProductList" value="B_CON_7" _index="65" />
+							<Property name="ProductList" value="B_CON_8" _index="66" />
+							<Property name="ProductList" value="B_CON_9" _index="67" />
+							<Property name="ProductList" value="B_CON2_0" _index="68" />
+							<Property name="ProductList" value="B_CON2_1" _index="69" />
+							<Property name="ProductList" value="B_CON2_2" _index="70" />
+							<Property name="ProductList" value="B_CON2_3" _index="71" />
+							<Property name="ProductList" value="B_CON_L_2" _index="72" />
 						</Property>
 						<Property name="AmountMin" value="1" />
 						<Property name="AmountMax" value="1" />
@@ -2788,23 +2807,32 @@ PIRATLTEASYRewards =
 							<Property name="ProductList" value="B_HAB1_C" _index="6" />
 							<Property name="ProductList" value="B_WNG_A" _index="7" />
 							<Property name="ProductList" value="B_WNG_B" _index="8" />
-							<Property name="ProductList" value="B_WNG_D" _index="9" />
-							<Property name="ProductList" value="B_WNG_F" _index="10" />
-							<Property name="ProductList" value="B_WNG_L" _index="11" />
-							<Property name="ProductList" value="B_TRU_A" _index="12" />
-							<Property name="ProductList" value="B_TRU_B" _index="13" />
-							<Property name="ProductList" value="B_TRU_C" _index="14" />
-							<Property name="ProductList" value="B_GEN_0" _index="15" />
-							<Property name="ProductList" value="B_GEN_2" _index="16" />
-							<Property name="ProductList" value="B_GEN_3" _index="17" />
-							<Property name="ProductList" value="B_TUR_C" _index="18" />
-							<Property name="ProductList" value="B_DECO_I" _index="19" />
-							<Property name="ProductList" value="B_LND_B" _index="20" />
-							<Property name="ProductList" value="B_ALK_B" _index="21" />
-							<Property name="ProductList" value="B_ALK_C" _index="22" />
-							<Property name="ProductList" value="B_SHL_A" _index="23" />
-							<Property name="ProductList" value="B_SHL_B" _index="24" />
-							<Property name="ProductList" value="B_SHL_C" _index="25" />
+							<Property name="ProductList" value="B_WNG_C" _index="9" />
+							<Property name="ProductList" value="B_WNG_D" _index="10" />
+							<Property name="ProductList" value="B_WNG_F" _index="11" />
+							<Property name="ProductList" value="B_WNG_L" _index="12" />
+							<Property name="ProductList" value="B_TRU_A" _index="13" />
+							<Property name="ProductList" value="B_TRU_B" _index="14" />
+							<Property name="ProductList" value="B_TRU_C" _index="15" />
+							<Property name="ProductList" value="B_TRU_E" _index="16" />
+							<Property name="ProductList" value="B_TRU_F" _index="17" />
+							<Property name="ProductList" value="B_TRU_G" _index="18" />
+							<Property name="ProductList" value="B_TRU_H" _index="19" />
+							<Property name="ProductList" value="B_GEN_0" _index="20" />
+							<Property name="ProductList" value="B_GEN_2" _index="21" />
+							<Property name="ProductList" value="B_GEN_3" _index="22" />
+							<Property name="ProductList" value="B_TUR_C" _index="23" />
+							<Property name="ProductList" value="B_TUR_D" _index="24" />
+							<Property name="ProductList" value="B_TUR_E" _index="25" />
+							<Property name="ProductList" value="B_DECO_I" _index="26" />
+							<Property name="ProductList" value="B_LND_B" _index="27" />
+							<Property name="ProductList" value="B_LND_C" _index="28" />
+							<Property name="ProductList" value="B_ALK_B" _index="29" />
+							<Property name="ProductList" value="B_ALK_C" _index="30" />
+							<Property name="ProductList" value="B_SHL_A" _index="31" />
+							<Property name="ProductList" value="B_SHL_B" _index="32" />
+							<Property name="ProductList" value="B_SHL_C" _index="33" />
+							<Property name="ProductList" value="B_SHL_D" _index="34" />
 						</Property>
 						<Property name="AmountMin" value="1" />
 						<Property name="AmountMax" value="1" />
@@ -2986,30 +3014,39 @@ PIRATLTHARDRewards =
 							<Property name="ProductList" value="B_STR_P_N" _index="37" />
 							<Property name="ProductList" value="B_STR_R_N" _index="38" />
 							<Property name="ProductList" value="B_STR_S_N" _index="39" />
-							<Property name="ProductList" value="B_DECO_B" _index="40" />
-							<Property name="ProductList" value="B_DECO_C" _index="41" />
-							<Property name="ProductList" value="B_DECO_D" _index="42" />
-							<Property name="ProductList" value="B_DECO_E" _index="43" />
-							<Property name="ProductList" value="B_DECO_F" _index="44" />
-							<Property name="ProductList" value="B_DECO_G" _index="45" />
-							<Property name="ProductList" value="B_DECO_H" _index="46" />
-							<Property name="ProductList" value="B_DECO_J" _index="47" />
-							<Property name="ProductList" value="B_DECO_K" _index="48" />
-							<Property name="ProductList" value="B_DECO_L" _index="49" />
-							<Property name="ProductList" value="B_DECO_N_0" _index="50" />
-							<Property name="ProductList" value="B_DECO_N_1" _index="51" />
-							<Property name="ProductList" value="B_DECO_O" _index="52" />
-							<Property name="ProductList" value="B_DECO_P" _index="53" />
-							<Property name="ProductList" value="B_CON_L_0" _index="54" />
-							<Property name="ProductList" value="B_CON_L_1" _index="55" />
-							<Property name="ProductList" value="B_CON_L_3" _index="56" />
-							<Property name="ProductList" value="B_CON_5" _index="57" />
-							<Property name="ProductList" value="B_CON_6" _index="58" />
-							<Property name="ProductList" value="B_CON_7" _index="59" />
-							<Property name="ProductList" value="B_CON_8" _index="60" />
-							<Property name="ProductList" value="B_CON_9" _index="61" />
-							<Property name="ProductList" value="B_CON2_0" _index="62" />
-							<Property name="ProductList" value="B_CON_L_2" _index="63" />
+							<Property name="ProductList" value="B_STR_T_NETB" _index="40" />
+							<Property name="ProductList" value="B_STR_U_NETB" _index="41" />
+							<Property name="ProductList" value="B_STR_V_NETB" _index="42" />
+							<Property name="ProductList" value="B_STR_W_NETB" _index="43" />
+							<Property name="ProductList" value="B_STR_X_NETB" _index="44" />
+							<Property name="ProductList" value="B_STR_Y_NETB" _index="45" />
+							<Property name="ProductList" value="B_DECO_B" _index="46" />
+							<Property name="ProductList" value="B_DECO_C" _index="47" />
+							<Property name="ProductList" value="B_DECO_D" _index="48" />
+							<Property name="ProductList" value="B_DECO_E" _index="49" />
+							<Property name="ProductList" value="B_DECO_F" _index="50" />
+							<Property name="ProductList" value="B_DECO_G" _index="51" />
+							<Property name="ProductList" value="B_DECO_H" _index="52" />
+							<Property name="ProductList" value="B_DECO_J" _index="53" />
+							<Property name="ProductList" value="B_DECO_K" _index="54" />
+							<Property name="ProductList" value="B_DECO_L" _index="55" />
+							<Property name="ProductList" value="B_DECO_N_0" _index="56" />
+							<Property name="ProductList" value="B_DECO_N_1" _index="57" />
+							<Property name="ProductList" value="B_DECO_O" _index="58" />
+							<Property name="ProductList" value="B_DECO_P" _index="59" />
+							<Property name="ProductList" value="B_CON_L_0" _index="60" />
+							<Property name="ProductList" value="B_CON_L_1" _index="61" />
+							<Property name="ProductList" value="B_CON_L_3" _index="62" />
+							<Property name="ProductList" value="B_CON_5" _index="63" />
+							<Property name="ProductList" value="B_CON_6" _index="64" />
+							<Property name="ProductList" value="B_CON_7" _index="65" />
+							<Property name="ProductList" value="B_CON_8" _index="66" />
+							<Property name="ProductList" value="B_CON_9" _index="67" />
+							<Property name="ProductList" value="B_CON2_0" _index="68" />
+							<Property name="ProductList" value="B_CON2_1" _index="69" />
+							<Property name="ProductList" value="B_CON2_2" _index="70" />
+							<Property name="ProductList" value="B_CON2_3" _index="71" />
+							<Property name="ProductList" value="B_CON_L_2" _index="72" />
 						</Property>
 						<Property name="AmountMin" value="1" />
 						<Property name="AmountMax" value="1" />
@@ -3033,23 +3070,32 @@ PIRATLTHARDRewards =
 							<Property name="ProductList" value="B_HAB1_C" _index="6" />
 							<Property name="ProductList" value="B_WNG_A" _index="7" />
 							<Property name="ProductList" value="B_WNG_B" _index="8" />
-							<Property name="ProductList" value="B_WNG_D" _index="9" />
-							<Property name="ProductList" value="B_WNG_F" _index="10" />
-							<Property name="ProductList" value="B_WNG_L" _index="11" />
-							<Property name="ProductList" value="B_TRU_A" _index="12" />
-							<Property name="ProductList" value="B_TRU_B" _index="13" />
-							<Property name="ProductList" value="B_TRU_C" _index="14" />
-							<Property name="ProductList" value="B_GEN_0" _index="15" />
-							<Property name="ProductList" value="B_GEN_2" _index="16" />
-							<Property name="ProductList" value="B_GEN_3" _index="17" />
-							<Property name="ProductList" value="B_TUR_C" _index="18" />
-							<Property name="ProductList" value="B_DECO_I" _index="19" />
-							<Property name="ProductList" value="B_LND_B" _index="20" />
-							<Property name="ProductList" value="B_ALK_B" _index="21" />
-							<Property name="ProductList" value="B_ALK_C" _index="22" />
-							<Property name="ProductList" value="B_SHL_A" _index="23" />
-							<Property name="ProductList" value="B_SHL_B" _index="24" />
-							<Property name="ProductList" value="B_SHL_C" _index="25" />
+							<Property name="ProductList" value="B_WNG_C" _index="9" />
+							<Property name="ProductList" value="B_WNG_D" _index="10" />
+							<Property name="ProductList" value="B_WNG_F" _index="11" />
+							<Property name="ProductList" value="B_WNG_L" _index="12" />
+							<Property name="ProductList" value="B_TRU_A" _index="13" />
+							<Property name="ProductList" value="B_TRU_B" _index="14" />
+							<Property name="ProductList" value="B_TRU_C" _index="15" />
+							<Property name="ProductList" value="B_TRU_E" _index="16" />
+							<Property name="ProductList" value="B_TRU_F" _index="17" />
+							<Property name="ProductList" value="B_TRU_G" _index="18" />
+							<Property name="ProductList" value="B_TRU_H" _index="19" />
+							<Property name="ProductList" value="B_GEN_0" _index="20" />
+							<Property name="ProductList" value="B_GEN_2" _index="21" />
+							<Property name="ProductList" value="B_GEN_3" _index="22" />
+							<Property name="ProductList" value="B_TUR_C" _index="23" />
+							<Property name="ProductList" value="B_TUR_D" _index="24" />
+							<Property name="ProductList" value="B_TUR_E" _index="25" />
+							<Property name="ProductList" value="B_DECO_I" _index="26" />
+							<Property name="ProductList" value="B_LND_B" _index="27" />
+							<Property name="ProductList" value="B_LND_C" _index="28" />
+							<Property name="ProductList" value="B_ALK_B" _index="29" />
+							<Property name="ProductList" value="B_ALK_C" _index="30" />
+							<Property name="ProductList" value="B_SHL_A" _index="31" />
+							<Property name="ProductList" value="B_SHL_B" _index="32" />
+							<Property name="ProductList" value="B_SHL_C" _index="33" />
+							<Property name="ProductList" value="B_SHL_D" _index="34" />
 						</Property>
 						<Property name="AmountMin" value="1" />
 						<Property name="AmountMax" value="1" />
@@ -3167,7 +3213,8 @@ PlaqueChanges =
 	{"TEACHWORD_WAR", "Warriors"}
 }
 
---Makes Knowledge Stones & Encyclopedias teach 2 words instead of 1 (doesn't affect NPCs teaching words)
+--Makes Knowledge Stones & Encyclopedias teach 1 extra word, for a total of 2 (doesn't affect NPCs teaching words)
+	--Changing the "PercentageChance" or "AmountMin" / "AmountMax" values below will affect the chance or amount of extra words added
 function AddOneWord(AlienType)
     return
     [[<Property name="List" value="GcRewardTableItem">
@@ -3189,7 +3236,8 @@ function AddOneWord(AlienType)
           </Property>]]
 end
 
---Makes Ancient Plaques & Ruins & Monoliths teach 4 more words than normal
+--Makes Ancient Plaques & Ruins & Monoliths teach 4 extra words, for a total of 5
+	--Changing the "PercentageChance" or "AmountMin" / "AmountMax" values below will affect the chance or amount of extra words added
 function AddFourWords(AlienType)
     return
     [[<Property name="List" value="GcRewardTableItem">
@@ -4318,6 +4366,32 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"DisableMultiplier",	ScrapTaintIgnoreNatResSetting}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_SPACEBIGGS",		"List", "GcRewardTableItem"},
+				["SECTION_ACTIVE"] = {0,},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	DerCorvProceduralLootChance}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_SPACEBIGGS",		"List", "GcRewardTableItem"},
+				["SECTION_ACTIVE"] = {1,},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	DerCorvGoodModuleMin},
+					{"AmountMax",	DerCorvGoodModuleMax}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_SPACEBIGGS",		"List", "GcRewardTableItem"},
+				["SECTION_ACTIVE"] = {2,},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	DerCorvOKModuleMin},
+					{"AmountMax",	DerCorvOKModuleMax}
 				}
 			},
 			{

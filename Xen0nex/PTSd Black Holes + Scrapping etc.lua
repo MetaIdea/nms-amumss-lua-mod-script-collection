@@ -1,5 +1,5 @@
 ModName = "PTSd Black Holes + Scrapping etc"
-GameVersion = "6_00"
+GameVersion = "6_10"
 Description = "Black Holes send you farther, Adjusts Living Ship Module Evolution costs, Changes Illegal goods price markup, Adjust Death Penalty units cost, Replaces some of the substances you can receive from scrapping ships"
 
 --Controls how much of a bonus Supercharged Tech Slots give
@@ -96,12 +96,30 @@ InitialToolExtraBrokenSlot =
 					<Property name="MaxAmount" value="1" />
 					<Property name="DamageFactor" value="1.000000" />
 					<Property name="FullyInstalled" value="true" />
+					<Property name="AddedAutomatically" value="false" />
 					<Property name="Index" value="GcInventoryIndex">
 						<Property name="X" value="-1" />
 						<Property name="Y" value="-1" />
 					</Property>
 				</Property>]]
 
+--This adds a unique broken slot to the exosuit with a special description for the purpose of letting the player know they should try to find a cave for shelter on the way to their crashed starship
+InitialSuitExtraBrokenSlot =
+[[<Property name="Slots" value="GcInventoryElement">
+					<Property name="Type" value="GcInventoryType">
+						<Property name="InventoryType" value="Technology" />
+					</Property>
+					<Property name="Id" value="NEWSUIT_DMG" />
+					<Property name="Amount" value="1" />
+					<Property name="MaxAmount" value="1" />
+					<Property name="DamageFactor" value="1.000000" />
+					<Property name="FullyInstalled" value="true" />
+					<Property name="AddedAutomatically" value="false" />
+					<Property name="Index" value="GcInventoryIndex">
+						<Property name="X" value="-1" />
+						<Property name="Y" value="-1" />
+					</Property>
+				</Property>]]
 
 --All below changes are WIP changes for NMS v4.4x
 --[[ShipMiningMul =							0.2									--0.2		Unknown effect, possibly a reduction in damage or resource amount when using ship weapons to mine planetary objects?
@@ -222,7 +240,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN"},
 		["MXML_CHANGE_TABLE"] 	= 
 		{
-			--This entry intentionally left blank, to be filled in by the loops at the bottom of this script
+			{
+				["SPECIAL_KEY_WORDS"] = {"State", "GcPlayerStateData",	"Inventory_TechOnly", "GcInventoryContainer",	"Slots", "GcInventoryElement"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = InitialSuitExtraBrokenSlot
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\BACKUPSAVEDATA.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"State", "GcPlayerStateData",	"Inventory", "GcInventoryContainer",	"Slots", "GcInventoryElement"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = InitialSuitExtraBrokenSlot
+			},
 		}
 	},
 	{
@@ -282,7 +315,7 @@ for i = 1, #UnknownRecipes do
 			}
 end
 
-local ChangesToDifficulty = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["MXML_CHANGE_TABLE"]
+local ChangesToDifficulty = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["MXML_CHANGE_TABLE"]
 
 for i = 1, #UnknownRecipes do
 	local ContainerID = UnknownRecipes[i]
