@@ -19,6 +19,7 @@
 [Slower Sentinel Ship Animations](https://www.nexusmods.com/nomanssky/mods/2764)<br />
 [Spookship - Black Stealth](https://www.nexusmods.com/nomanssky/mods/3262)<br />
 [Unified Warps](https://www.nexusmods.com/nomanssky/mods/2252)<br />
+[Useful Waypoints](https://www.nexusmods.com/nomanssky/mods/3891)<br />
 
 **Unpublished mods are works in progress and will become published once they
 are considered feature complete.**
