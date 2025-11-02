@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_AiShipPlusMoreDamage_v572-A.pak",
+["MOD_FILENAME"]  = "MOD_DUD_AiShipPlusMoreDamage_v606-A.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.72",
+["NMS_VERSION"]   = "6.06",
 ["MODIFICATIONS"] =
     {
         {

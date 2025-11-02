@@ -1,25 +1,29 @@
 TEXT_TO_ADD =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="LandingFix" />
-      <Property name="NameHash" value="227391080" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="0" />
-        <Property name="TransY" value="0" />
-        <Property name="TransZ" value="0" />
-        <Property name="RotX" value="0" />
-        <Property name="RotY" value="0" />
-        <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="1" />
-        <Property name="ScaleY" value="1" />
-        <Property name="ScaleZ" value="1" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="0.000000" />
+        <Property name="TransY" value="0.000000" />
+        <Property name="TransZ" value="0.000000" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="0.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="1.000000" />
+        <Property name="ScaleY" value="1.000000" />
+        <Property name="ScaleZ" value="1.000000" />
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\LANDINGFIX.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -28,10 +32,9 @@ TEXT_TO_ADD =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Docking.Fix.V.2.0.pak",
+["MOD_FILENAME"]            = "Docking.Fix.V.2.3.No.Disc.pak",
 ["MOD_AUTHOR"]              = "JJhookah",
-["NMS_VERSION"]             = "5.01.1",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "6.12",
 ["MODIFICATIONS"]           =
     {
         {
@@ -45,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\LANDINGFIX.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MESHLINK"},
@@ -80,13 +83,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = 
+                    ["MBIN_FILE_SOURCE"] =
                     {
                         "MODELS\COMMON\SPACECRAFT\DROPSHIPS\DROPSHIP_PROC.SCENE.MBIN",
                         "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTER_PROC.SCENE.MBIN",
                         "MODELS\COMMON\SPACECRAFT\SHUTTLE\SHUTTLE_PROC.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SLOT_WINGS1"},
@@ -97,7 +100,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERCLASSICGOLD.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "EngineFlare_Distant"},
@@ -107,19 +110,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERSPECIALSWITCH.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "REFBody"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] = TEXT_TO_ADD,
-                        },
-                    },
-                },
-                {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\VRSPEEDER.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "REFLamp_4"},
@@ -130,7 +122,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\SCIENTIFIC_PROC.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SLOT_WINGSR"},
@@ -141,11 +133,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\S-CLASS_PROC.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\S%-CLASS\S%-CLASS_PROC"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            ["EXML_INDEX"] = 0,
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] = TEXT_TO_ADD,
                         },
@@ -153,7 +146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FRIGATES\COMMONPARTS\LANDINGPAD.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LandingPad", "Name", "ATTACHMENT"},
@@ -194,7 +187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LARGEBUILDINGS\COMMON\LANDINGBAY.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Dock"},
@@ -207,7 +200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\PARTS\LANDINGPADINNER.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Dock"},
@@ -220,7 +213,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SummonShip"},
@@ -230,10 +223,42 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "EXIT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LandingPad", "Name", "ATTACHMENT"},
                             ["VCT"] =
                             {
-                                {"TransY", "-0.42215"},
+                                {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD\ENTITIES\LANDINGPAD.ENTITY.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "Dock"},
+                                {"Name", "EXIT"},
+                            },
+                            ["VCT"] =
+                            {
+                                {"TransY", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision"},
+                            ["VCT"] =
+                            {
+                                {"Type", ""},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Disk", "Name", "ATTACHMENT"},
+                            ["VCT"] =
+                            {
+                                {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD\ENTITIES\DISK.ENTITY.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "PadDust", "Name", "ATTACHMENT"},
+                            ["VCT"] =
+                            {
+                                {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD\ENTITIES\PADDUST.ENTITY.MBIN"},
                             }
                         },
                     },

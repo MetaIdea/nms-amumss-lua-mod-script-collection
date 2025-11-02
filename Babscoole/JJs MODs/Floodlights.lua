@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Floodlights.V.1.8.pak",
+["MOD_FILENAME"]  = "Floodlights.V.2.0",
 ["MOD_AUTHOR"]    = "JJHookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.01.1",
+["NMS_VERSION"]   = "6.12",
 ["MODIFICATIONS"] =
     {
         {
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\EXTERIORPROPS\FLOODLIGHTS.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1", "Name", "FOV"},
@@ -29,12 +29,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NameHash",  "422545419"},
                                 {"Type",      "LIGHT"},
-                                {"Transform", "TkTransformData.xml"},
+                                {"Transform", "TkTransformData"},
                                 {"TransX",    "0"},
                                 {"TransY",    "6.432164"},
                                 {"TransZ",    "1.028947"},

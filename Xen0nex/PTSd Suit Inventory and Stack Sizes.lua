@@ -12,7 +12,7 @@ StackLimits =
 {
 	{
 		{"MaxSubstanceStackSizes",	SubstanceStackMult},
-		{						--	Standard	Restrictive	Harsh				Standard	Restrictive	Harsh
+		{						--	Spacious	Restrictive	Harsh				Standard	Restrictive	Harsh
 			{"Default",				1000,		500,		300},			--	9999,		500,		150		Unclear, possibly a fallback to be used for inventories which don’t have use of the defined categories below? But setting this equal to Personal seems to result in things behaving “as expected”
 			{"Personal",			1000,		500,		300},			--	9999,		500,		300		Exosuit
 			{"Ship",				2000,		1000,		600},			--	9999,		1000,		300		Starships
@@ -26,7 +26,7 @@ StackLimits =
 	},
 	{
 		{"MaxProductStackSizes",	ProductStackMult},
-		{						--	Standard	Restrictive	Harsh				Standard	Restrictive	Harsh
+		{						--	Spacious	Restrictive	Harsh				Standard	Restrictive	Harsh
 			{"Default",				8,			5,			3},				--	5,			5,			3		Unclear, possibly a fallback to be used for inventories which don’t have use of the defined categories below? But setting this equal to Personal seems to result in things behaving “as expected”
 			{"Personal",			8,			5,			3},				--	10,			10,			3		Exosuit
 			{"Ship",				16,			10,			6},				--	10,			10,			3		Starships
@@ -39,7 +39,7 @@ StackLimits =
 		}
 	},
 }
---				Standard	Restrictive	Harsh	
+--				Spacious	Restrictive	Harsh		(PTSd uses "Spacious" instead of "Standard" for the name of the easiest setting)
 Difficulties = {"High",		"Normal",	"Low"}
 
 --Exosuit Inventory. Unclear what these do, or whether they have any effect at all

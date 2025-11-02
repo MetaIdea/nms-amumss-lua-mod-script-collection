@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_ExocraftMechanics_v564-A",
+["MOD_FILENAME"]            = "MOD_DUD_ExocraftMechanics_v612-A",
 ["MOD_AUTHOR"]              = "JasonDude7116",
 ["LUA_AUTHOR"]              = "Babscoole and Wbertro",
-["NMS_VERSION"]             = "5.72",
+["NMS_VERSION"]             = "6.12",
 ["MODIFICATIONS"]           =
     {
         {
@@ -93,10 +93,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"BuggyFollowCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OffsetY",         "2.25"},
+                                {"OffsetY",         "0.5"},
+                                {"OffsetYAlt",      "2"},
                                 {"BackMinDistance", "17"},
-                                {"UpMinDistance",   "1"},
-                                {"UpMaxDistance",   "1"},
+                                {"UpMinDistance",   "-0.5"},
+                                {"UpMaxDistance",   "-0.5"},
                                 {"PanFar",          "-3"},
                                 {"VertRotationMin", "-50"},
                                 {"VertRotationMax", "50"},
@@ -108,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"MinSpeed",        "10"},
                                 {"SpeedRange",      "15"},
-                                {"OffsetY",         "3.35"},
+                                {"OffsetY",         "0.8"},
                                 {"OffsetYAlt",      "5"},
                                 {"BackMinDistance", "15"},
                                 {"BackMaxDistance", "17"},
@@ -132,11 +133,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"BikeFollowCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OffsetY",         "0.35"},
-                                {"OffsetYAlt",      "3"},
-                                {"BackMinDistance", "16"},
-                                {"UpMinDistance",   "2"},
-                                {"UpMaxDistance",   "2"},
+                                {"OffsetY",         "-1"},
+                                {"OffsetYAlt",      "2"},
+                                {"BackMinDistance", "19"},
+                                {"BackMaxDistance", "24"},
+                                {"UpMinDistance",   "1"},
+                                {"UpMaxDistance",   "1"},
                                 {"VertRotationMin", "-50"},
                                 {"VertRotationMax", "50"},
                             }
@@ -149,8 +151,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"OffsetYAlt",      "2.5"},
                                 {"BackMinDistance", "18"},
                                 {"BackMaxDistance", "22"},
-                                {"UpMinDistance",   "2"},
-                                {"UpMaxDistance",   "2"},
+                                {"UpMinDistance",   "1.5"},
+                                {"UpMaxDistance",   "1.5"},
                                 {"PanNear",         "-1.5"},
                                 {"VertRotationMin", "-50"},
                                 {"VertRotationMax", "50"},
@@ -160,7 +162,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"TruckFollowCam", "GcCameraFollowSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"BackMinDistance", "22"},
+                                {"BackMinDistance", "24"},
+                                {"BackMaxDistance", "30"},
                                 {"UpMinDistance",   "1"},
                                 {"UpMaxDistance",   "1"},
                                 {"VertRotationMin", "-50"},
@@ -214,6 +217,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"CorvetteWarpSettings", "GcCameraWarpSettings"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"OffsetZFrequency_1", "0.5"},
+                                {"OffsetZFrequency_2", "0.7"},
+                                {"OffsetZBias",        "-4"},
+                                {"OffsetZRange",       "3"},
+                                {"OffsetYFrequency_1", "0.4"},
+                                {"OffsetYFrequency_2", "0.6"},
+                                {"OffsetYRange",       "2"},
+                                {"OffsetXFrequency",   "0.2"},
+                                {"OffsetXRange",       "4.5"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"FreighterWarpSettings", "GcCameraWarpSettings"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -250,6 +268,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WheelSuspensionForce",         "12"},
+                                {"WheelSuspensionDamping",       "0.1"},
                                 {"TopSpeedForward",              "15"},
                                 {"TopSpeedReverse",              "4"},
                                 {"WheelMaxAccelForceForward",    "2.75"},
@@ -265,14 +284,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"VehicleBoostRechargeTime",     "9"},
                                 {"VehicleLinearDampingGround",   "0.25"},
                                 {"VehicleLinearDampingWater",    "0.25"},
+                                {"VehicleGravity",              "15.000000"},
+                                {"VehicleBoostForce",           "300.000000"},
+                                {"VehicleBoostTime",            "1.500000"},
+                                {"VehicleJumpAirRotateXAmount", "0.000000"},
+                                {"VehicleJumpAirRotateZAmount", "0.000000"},
+                                {"VehicleJumpAirRotateTimeMin", "0.000000"},
+                                {"VehicleJumpAirRotateTimeMax", "0.000000"},
+                                {"VehicleJumpAirMaxTorque",     "500.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MED_BUGGY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"WheelSuspensionlength",        "2.5"},
                                 {"WheelSuspensionForce",         "12"},
-                                {"WheelSuspensionDamping",       "0"},
+                                {"WheelSuspensionDamping",       "0.25"},
                                 {"TopSpeedForward",              "14"},
                                 {"TopSpeedReverse",              "4"},
                                 {"WheelMaxAccelForceForward",    "2.75"},
@@ -287,34 +315,51 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"VehicleBoostMaxSpeed",         "24"},
                                 {"VehicleBoostRechargeTime",     "9"},
                                 {"VehicleLinearDampingWater",    "2.25"},
+                                {"VehicleGravity",              "15.000000"},
+                                {"VehicleJumpAirRotateXAmount", "0.000000"},
+                                {"VehicleJumpAirRotateZAmount", "0.000000"},
+                                {"VehicleJumpAirRotateTimeMin", "0.000000"},
+                                {"VehicleJumpAirRotateTimeMax", "0.000000"},
+                                {"VehicleJumpAirMaxTorque",     "500.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "TRUCK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"WheelSuspensionForce",      "12"},
-                                {"WheelSuspensionDamping",    "0"},
-                                {"TopSpeedReverse",           "3"},
-                                {"WheelMaxAccelForceForward", "2.25"},
-                                {"WheelMaxAccelForceReverse", "2.25"},
-                                {"WheelMaxDecelForceBraking", "2.5"},
-                                {"HardStopSpeedThreshold",    "0.025"},
-                                {"WheelFrontFrictionDynamic", "1.8"},
-                                {"WheelFrontFrictionStatic",  "1.9"},
-                                {"WheelSideFrictionDynamic",  "1.8"},
-                                {"WheelSideFrictionStatic",   "1.9"},
-                                {"VehicleBoostMaxSpeed",      "16"},
-                                {"VehicleBoostRechargeTime",  "9"},
-                                {"VehicleLinearDampingWater", "2.25"},
+                                {"WheelSuspensionlength",       "2.5"},
+                                {"WheelSuspensionForce",        "12"},
+                                {"WheelSuspensionDamping",      "0.25"},
+                                {"TopSpeedReverse",             "3"},
+                                {"WheelMaxAccelForceForward",   "2.25"},
+                                {"WheelMaxAccelForceReverse",   "2.25"},
+                                {"WheelMaxDecelForceBraking",   "2.5"},
+                                {"HardStopSpeedThreshold",      "0.025"},
+                                {"WheelFrontFrictionDynamic",   "1.8"},
+                                {"WheelFrontFrictionStatic",    "1.9"},
+                                {"WheelSideFrictionDynamic",    "1.8"},
+                                {"WheelSideFrictionStatic",     "1.9"},
+                                {"VehicleBoostMaxSpeed",        "16"},
+                                {"VehicleBoostRechargeTime",    "9"},
+                                {"VehicleLinearDampingWater",   "2.25"},
+                                {"VehicleGravity",              "16.000000"},
+                                {"VehicleBoostForce",           "300.000000"},
+                                {"VehicleBoostMaxSpeed",        "24.000000"},
+                                {"VehicleBoostTime",            "1.500000"},
+                                {"VehicleJumpAirRotateXAmount", "0.000000"},
+                                {"VehicleJumpAirRotateZAmount", "0.000000"},
+                                {"VehicleJumpAirRotateTimeMin", "0.000000"},
+                                {"VehicleJumpAirRotateTimeMax", "0.000000"},
+                                {"VehicleJumpAirMaxTorque",     "500.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "WHEELEDBIKE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"WheelSuspensionForce",         "9"},
-                                {"WheelSuspensionDamping",       "0"},
+                                {"WheelSuspensionlength",        "2.000000"},
+                                {"WheelSuspensionForce",         "15.000000"},
+                                {"WheelSuspensionDamping",       "0.250000"},
                                 {"TopSpeedForward",              "16"},
                                 {"TopSpeedReverse",              "4"},
                                 {"WheelMaxAccelForceForward",    "2.75"},
@@ -330,28 +375,38 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"VehicleBoostMaxSpeed",         "30"},
                                 {"VehicleBoostRechargeTime",     "9"},
                                 {"VehicleLinearDampingWater",    "2.25"},
+                                {"VehicleGravity",               "15.000000"},
+                                {"VehicleBoostForce",            "300.000000"},
+                                {"VehicleBoostTime",             "1.500000"},
+                                {"VehicleJumpAirRotateXAmount",  "0.000000"},
+                                {"VehicleJumpAirRotateZAmount",  "0.000000"},
+                                {"VehicleJumpAirRotateTimeMin",  "0.000000"},
+                                {"VehicleJumpAirRotateTimeMax",  "0.000000"},
+                                {"VehicleJumpAirMaxTorque",      "500.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SUBMARINE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"UnderwaterEnginePower",      "3"},
-                                {"UnderwaterEnginePowerVR",    "3"},
+                                {"UnderwaterEnginePower",      "2.5"},
+                                {"UnderwaterEnginePowerVR",    "2.5"},
                                 {"UnderwaterEngineMaxSpeed",   "12"},
                                 {"UnderwaterEngineMaxSpeedVR", "12"},
+                                {"UnderwaterEngineFalloff",    "0.300000"},
                                 {"TopSpeedForward",            "15"},
                                 {"TopSpeedReverse",            "5"},
                                 {"VehicleGravity",             "90"},
                                 {"VehicleBoostMaxSpeed",       "20"},
                                 {"VehicleBoostRechargeTime",   "9"},
+                                {"VehicleLinearDampingWater",   "0.150000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MECH"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"HeadlightIntensity", "16"},
+                                {"HeadlightIntensity", "6"},
                             }
                         },
                         {
@@ -474,6 +529,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="Value" value="1.000000" />
                 </Property>
                 <Property name="Attributes" value="TkSceneNodeAttributeData">
+                  <Property name="Name" value="LIGHTLAYERS" />
+                  <Property name="Value" value="3" />
+                </Property>
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
                 </Property>
@@ -569,6 +628,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="Value" value="1.000000" />
                 </Property>
                 <Property name="Attributes" value="TkSceneNodeAttributeData">
+                  <Property name="Name" value="LIGHTLAYERS" />
+                  <Property name="Value" value="3" />
+                </Property>
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="MATERIAL" />
                   <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
                 </Property>
@@ -653,6 +716,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="0.000000" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="LIGHTLAYERS" />
+              <Property name="Value" value="3" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -710,6 +777,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="VOLUMETRIC" />
                   <Property name="Value" value="1.000000" />
+                </Property>
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
+                  <Property name="Name" value="LIGHTLAYERS" />
+                  <Property name="Value" value="3" />
                 </Property>
                 <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="MATERIAL" />
@@ -774,6 +845,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="0.000000" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="LIGHTLAYERS" />
+              <Property name="Value" value="3" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -831,6 +906,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="VOLUMETRIC" />
                   <Property name="Value" value="1.000000" />
+                </Property>
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
+                  <Property name="Name" value="LIGHTLAYERS" />
+                  <Property name="Value" value="3" />
                 </Property>
                 <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="MATERIAL" />
@@ -928,6 +1007,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                               <Property name="Value" value="1.000000" />
                             </Property>
                             <Property name="Attributes" value="TkSceneNodeAttributeData">
+                              <Property name="Name" value="LIGHTLAYERS" />
+                              <Property name="Value" value="3" />
+                            </Property>
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="MATERIAL" />
                               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
                             </Property>
@@ -1023,6 +1106,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                               <Property name="Value" value="1.000000" />
                             </Property>
                             <Property name="Attributes" value="TkSceneNodeAttributeData">
+                              <Property name="Name" value="LIGHTLAYERS" />
+                              <Property name="Value" value="3" />
+                            </Property>
+                            <Property name="Attributes" value="TkSceneNodeAttributeData">
                               <Property name="Name" value="MATERIAL" />
                               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
                             </Property>
@@ -1108,6 +1195,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="0.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -1165,6 +1256,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="LIGHTLAYERS" />
+              <Property name="Value" value="3" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
@@ -1229,6 +1324,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="0.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -1286,6 +1385,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="LIGHTLAYERS" />
+              <Property name="Value" value="3" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
@@ -1363,6 +1466,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="0.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -1420,6 +1527,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="LIGHTLAYERS" />
+              <Property name="Value" value="3" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
@@ -1484,6 +1595,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="0.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -1541,6 +1656,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="LIGHTLAYERS" />
+              <Property name="Value" value="3" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
@@ -1650,6 +1769,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="1.000000" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="LIGHTLAYERS" />
+              <Property name="Value" value="3" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -1717,6 +1840,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="0.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -1774,6 +1901,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="LIGHTLAYERS" />
+              <Property name="Value" value="3" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
@@ -1860,6 +1991,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="0.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -1917,6 +2052,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="LIGHTLAYERS" />
+              <Property name="Value" value="3" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />
@@ -1981,6 +2120,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="0.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -2038,6 +2181,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="1.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
+              <Property name="Name" value="LIGHTLAYERS" />
+              <Property name="Value" value="3" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="MATERIAL" />

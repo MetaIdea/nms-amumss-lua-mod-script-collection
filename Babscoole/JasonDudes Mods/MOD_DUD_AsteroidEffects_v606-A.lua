@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_AsteroidEffects_v572-A",
+["MOD_FILENAME"]            = "MOD_DUD_AsteroidEffects_v606-A",
 ["MOD_AUTHOR"]              = "JasonDude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.72",
+["NMS_VERSION"]             = "6.06",
 ["MODIFICATIONS"]           =
     {
         {
@@ -13,6 +13,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "METADATA/EFFECTS/SPACEEFFECTS.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Id", "SPACESPARKS"},
+                                {"Id", "WRECKLOCALATMOS"},
+                                {"Id", "WRECKATMOS"},
+                                {"Id", "ENTERPULSE"},
+                                {"Id", "EXITPULSE"},
+                                {"Id", "WRECKELEC"},
+                            },
+                            ["REMOVE"] = "SECTION"
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_R_EXP"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -47,7 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-				<Property name="Debris" value="GcDebrisData">
+				<Property name="Debris" value="GcDebrisData" _index="1">
 					<Property name="Filename" value="TkModelResource">
 						<Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
 						<Property name="ResHandle" value="GcResource">
@@ -69,8 +81,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Life",  "0.3"},
-                                {"Scale", "5"}
+                                {"Life",                  "0.3"},
+                                {"Scale",                 "5"},
+                                {"CamShake",              "false"},
+                                {"CamShakeSpaceScale",    "false"},
+                                {"ShakeStrengthModifier", "1.000000"},
                             }
                         },
                         {
@@ -128,7 +143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-				<Property name="Debris" value="GcDebrisData">
+				<Property name="Debris" value="GcDebrisData" _index="1">
 					<Property name="Filename" value="TkModelResource">
 						<Property name="Filename" value="MODELS/SPACE/ASTEROIDS/SMALLASTEROID.SCENE.MBIN" />
 						<Property name="ResHandle" value="GcResource">
@@ -177,12 +192,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REMOVE"] = "LINE",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_L_EXP", "AkEvent", "EXPLOSION_RESOURCE_GATHER"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_L_EXP", "AkEvent", "INVALID_EVENT"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
 			<Property name="Debris">
-				<Property name="Debris" value="GcDebrisData">
+				<Property name="Debris" value="GcDebrisData" _index="0">
 					<Property name="Filename" value="TkModelResource">
 						<Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
 						<Property name="ResHandle" value="GcResource">
@@ -197,7 +212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					<Property name="AnglularSpeed" value="10.000000" />
 					<Property name="OverrideSeed" value="NONE" />
 				</Property>
-				<Property name="Debris" value="GcDebrisData">
+				<Property name="Debris" value="GcDebrisData" _index="1">
 					<Property name="Filename" value="TkModelResource">
 						<Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
 						<Property name="ResHandle" value="GcResource">

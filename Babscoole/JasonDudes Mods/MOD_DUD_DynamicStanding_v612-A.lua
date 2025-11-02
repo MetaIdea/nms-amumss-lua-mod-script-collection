@@ -68,10 +68,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "MOD_DUD_DynamicStanding_v574-A",
+["MOD_FILENAME"]    = "MOD_DUD_DynamicStanding_v612-A",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.74",
+["NMS_VERSION"]     = "6.12",
 ["MODIFICATIONS"]   =
     {
         {
@@ -265,173 +265,183 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIPLOMATIC_0", "ID", "COMPOUND4"},
-                            ["SECTION_UP"] = 2,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIPLOMATIC_0", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("TradeGuild", "50.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIPLOMATIC_1", "List", "GcRewardTableItem"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIPLOMATIC_1", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("TradeGuild", "20.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIPLOMATIC_2", "List", "GcRewardTableItem"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIPLOMATIC_2", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("TradeGuild", "10.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIPLOMATIC_3", "List", "GcRewardTableItem"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIPLOMATIC_3", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("TradeGuild", "10.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_COMBAT_0", "List", "GcRewardTableItem"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_COMBAT_0", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("WarriorGuild", "50.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_COMBAT_1", "Reward", "GcRewardMoney"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_COMBAT_1", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("WarriorGuild", "20.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_COMBAT_2", "List", "GcRewardTableItem"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_COMBAT_2", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("WarriorGuild", "10.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXPLORATION_0", "List", "GcRewardTableItem"},
-                            ["SECTION_ACTIVE"] = 2, 
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXPLORATION_0", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("ExplorerGuild", "50.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXPLORATION_1", "Reward", "GcRewardMoney"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXPLORATION_1", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("ExplorerGuild", "20.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXPLORATION_2", "Reward", "GcRewardMoney"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXPLORATION_2", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("ExplorerGuild", "10.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXPLORATION_3", "Reward", "GcRewardMoney"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXPLORATION_3", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("ExplorerGuild", "10.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINING_0", "Reward", "GcRewardMoney"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINING_0", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_STAND ("50.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINING_1", "Reward", "GcRewardProceduralProduct"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINING_1", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_STAND ("20.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINING_2", "ID", "ALLOY6"},
-                            ["SECTION_UP"] = 2,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINING_2", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_STAND ("10.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINING_3", "ID", "ALLOY6"},
-                            ["SECTION_UP"] = 2,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINING_3", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_STAND ("10.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIP_EASY_0", "ID", "EXP_CURIO2"},
-                            ["SECTION_UP"] = 2,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIP_EASY_0", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("TradeGuild", "50.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIP_EASY_1", "List", "GcRewardTableItem"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIP_EASY_1", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("TradeGuild", "20.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIP_EASY_2", "List", "GcRewardTableItem"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIP_EASY_2", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("TradeGuild", "10.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIP_EASY_3", "List", "GcRewardTableItem"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DIP_EASY_3", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("TradeGuild", "10.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_COM_EASY_0", "List", "GcRewardTableItem"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_COM_EASY_0", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("WarriorGuild", "50.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_COM_EASY_1", "Reward", "GcRewardMoney"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_COM_EASY_1", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("WarriorGuild", "20.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_COM_EASY_2", "List", "GcRewardTableItem"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_COM_EASY_2", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("WarriorGuild", "10.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXP_EASY_0", "List", "GcRewardTableItem"},
-                            ["SECTION_ACTIVE"] = 2, 
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXP_EASY_0", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("ExplorerGuild", "50.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXP_EASY_1", "Reward", "GcRewardMoney"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXP_EASY_1", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("ExplorerGuild", "20.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXP_EASY_2", "Reward", "GcRewardMoney"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXP_EASY_2", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("ExplorerGuild", "10.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXP_EASY_3", "Reward", "GcRewardMoney"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_EXP_EASY_3", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_TRADE ("ExplorerGuild", "10.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINE_EASY_0", "Reward", "GcRewardMoney"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINE_EASY_0", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_STAND ("50.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINE_EASY_1", "Reward", "GcRewardProceduralProduct"},
-                            ["SECTION_UP"] = 1,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINE_EASY_1", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_STAND ("20.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINE_EASY_2", "ID", "ALLOY6"},
-                            ["SECTION_UP"] = 2,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINE_EASY_2", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_STAND ("10.000000")
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINE_EASY_3", "ID", "ALBUMENPEARL"},
-                            ["SECTION_UP"] = 2,
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_MINE_EASY_3", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = ALL_STAND ("10.000000")
                         },
                     }
@@ -440,6 +450,30 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\RECURRINGMISSIONTABLE.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"MissionID", "D_COMMUNITY_01"},
+                                {"MissionID", "U4LORE_01"},
+                                {"MissionID", "U4LORE_02"},
+                                {"MissionID", "U4LORE_03"},
+                                {"MissionID", "U4LORE_04"},
+                                {"MissionID", "U4LORE_05"},
+                                {"MissionID", "U4LORE_06"},
+                                {"MissionID", "U4LORE_07"},
+                                {"MissionID", "U4LORE_08"},
+                                {"MissionID", "U4LORE_09"},
+                                {"MissionID", "U4LORE_10"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Distance",            "9999999999"},
+                                {"EndEventWhenReached", "true"},
+                                {"DistanceTimeout",     "true"},
+                                {"ScanEventGPSHint",    "Accurate"},
+                                {"AlwaysAllowInShip",   "true"},
+                            }
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "R_AF_DAILY_SET", "List", "GcRewardTableItem"},
                             ["ADD_OPTION"] = "ADDafterSECTION",

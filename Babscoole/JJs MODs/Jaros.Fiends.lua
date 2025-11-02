@@ -1,10 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Jaros.Fiends.V.1.6.pak",
+["MOD_FILENAME"]            = "Jaros.Fiends.V.2.1",
 ["MOD_AUTHOR"]              = "JJHookah",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.01.1",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "6.12",
 ["MODIFICATIONS"]           =
     {
         {
@@ -12,52 +11,61 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\LARGE\CRYSTAL_LARGE_UNDERWATER\ENTITIES\CRYSTAL_LARGE_UNDERWATER.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IncreaseFiendWanted",       "True"},
-                                {"IncreaseFiendWantedChance", "0.5"},
+                                {"IncreaseFiendWanted",          "true"},
+                                {"IncreaseFiendWantedChance",    "0.500000"},
+                                {"UseModelNode",                 "false"},
+                                {"ShowInFreighterBranchRoom",    "true"},
+                                {"MarkerActiveWithNodeInactive", "false"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_MOUNTAIN\ENTITIES\SHARDS_MOUNTAIN.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IncreaseFiendWanted",       "True"},
-                                {"IncreaseFiendWantedChance", "0.03"},
+                                {"IncreaseFiendWanted",          "true"},
+                                {"IncreaseFiendWantedChance",    "0.030000"},
+                                {"UseModelNode",                 "false"},
+                                {"ShowInFreighterBranchRoom",    "true"},
+                                {"MarkerActiveWithNodeInactive", "false"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL\ENTITIES\CYSTAL_SMALL.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IncreaseFiendWanted",       "True"},
-                                {"IncreaseFiendWantedChance", "0.3"},
+                                {"IncreaseFiendWanted",          "true"},
+                                {"IncreaseFiendWantedChance",    "0.200000"},
+                                {"UseModelNode",                 "false"},
+                                {"ShowInFreighterBranchRoom",    "true"},
+                                {"MarkerActiveWithNodeInactive", "false"},
                             }
                         },
                     }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\ROCKS\MEDIUM\MEDIUMROCK\ENTITIES\MEDIUMROCKSCAN.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IncreaseFiendWanted",       "True"},
-                                {"IncreaseFiendWantedChance", "0.07"},
+                                {"IncreaseFiendWanted",       "true"},
+                                {"IncreaseFiendWantedChance", "0.070000"},
                             }
                         },
                     }

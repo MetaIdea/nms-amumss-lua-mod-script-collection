@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_BetterFishing_v564-A",
+["MOD_FILENAME"]  = "MOD_DUD_BetterFishing_v606-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.64",
+["NMS_VERSION"]   = "6.06",
 ["MODIFICATIONS"] =
     {
         {

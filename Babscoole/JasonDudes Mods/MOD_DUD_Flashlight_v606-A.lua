@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_Flashlight_v558-A.pak",
+["MOD_FILENAME"]  = "MOD_DUD_Flashlight_v606-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.58",
+["NMS_VERSION"]   = "6.06",
 ["MODIFICATIONS"] =
     {
         {
