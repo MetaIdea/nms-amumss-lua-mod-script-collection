@@ -1236,10 +1236,10 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]  = "MOD_DUD_SpaceColors_v558-A",
+    ["MOD_FILENAME"]  = "MOD_DUD_SpaceColors_v606-A",
     ["MOD_AUTHOR"]    = "Jasondude7116",
     ["LUA_AUTHOR"]    = "Babscoole",
-    ["NMS_VERSION"]   = "5.58",
+    ["NMS_VERSION"]   = "6.06",
     ["MODIFICATIONS"] =
     {
         {

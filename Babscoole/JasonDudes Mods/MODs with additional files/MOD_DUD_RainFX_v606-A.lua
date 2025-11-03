@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_RainFX_v558-A",
+["MOD_FILENAME"]            = "MOD_DUD_RainFX_v606-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.58",
+["NMS_VERSION"]             = "6.06",
 ["MODIFICATIONS"]           =
     {
         {
@@ -22,14 +22,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Radius", "30.000000"},
+                                {"Number Of Particles",   "2500"},
+                                {"Radius",                "30.000000"},
+                                {"Min Particle Lifetime", "0.750000"},
+                                {"Max Particle Lifetime", "1.250000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Major Direction"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Y", "-2.500000"},
+                                {"Y", "-4.000000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Scale Range"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"X", "0.500000"},
+                                {"Y", "0.500000"},
+                                {"Z", "0.500000"},
                             }
                         },
                         {
@@ -37,7 +49,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"X", "-0.200000"},
-                                {"Y", "0.500000"},
+                                {"Y", "0.000000"},
+                                {"Z", "-0.200000"},
                             }
                         },
                         {
@@ -46,19 +59,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"X", "0.200000"},
                                 {"Y", "0.500000"},
+                                {"Z", "0.200000"},
                             }
                         },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\HEAVYAIR\ALPINE\ALPINE3.HEAVYAIR.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Amplitude Min"},
+                            ["SPECIAL_KEY_WORDS"] = {"WindDrift", "TkEmitterWindDrift"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Y", "-0.500000"},
+                                {"Speed", "2.000000"},
                             }
                         },
                     }
@@ -70,15 +78,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number Of Particles", "800"},
-                                {"Radius",              "30.000000"},
+                                {"Number Of Particles",   "2500"},
+                                {"Radius",                "30.000000"},
+                                {"Min Particle Lifetime", "0.750000"},
+                                {"Max Particle Lifetime", "1.250000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Major Direction"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Y", "-2.500000"},
+                                {"Y", "-4.000000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Scale Range"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"X", "0.500000"},
+                                {"Y", "0.500000"},
+                                {"Z", "0.500000"},
                             }
                         },
                         {
@@ -86,7 +105,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"X", "-0.200000"},
-                                {"Y", "-0.500000"},
+                                {"Y", "0.000000"},
+                                {"Z", "-0.200000"},
                             }
                         },
                         {
@@ -95,6 +115,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"X", "0.200000"},
                                 {"Y", "0.500000"},
+                                {"Z", "0.200000"},
                             }
                         },
                         {
@@ -111,6 +132,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"A", "1.000000"},
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"WindDrift", "TkEmitterWindDrift"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Strength", "20.000000"},
+                                {"Speed",    "2.000000"},
+                            }
+                        },
                     }
                 },
                 {
@@ -120,15 +149,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number Of Particles", "1600"},
-                                {"Radius",              "30.000000"},
+                                {"Number Of Particles",   "2500"},
+                                {"Radius",                "30.000000"},
+                                {"Min Particle Lifetime", "0.750000"},
+                                {"Max Particle Lifetime", "1.250000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Major Direction"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Y", "-2.000000"},
+                                {"Y", "-4.000000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Scale Range"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"X", "0.500000"},
+                                {"Y", "0.500000"},
+                                {"Z", "0.500000"},
                             }
                         },
                         {
@@ -136,7 +176,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"X", "-0.200000"},
-                                {"Y", "-0.500000"},
+                                {"Y", "0.000000"},
+                                {"Z", "-0.200000"},
                             }
                         },
                         {
@@ -145,6 +186,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"X", "0.200000"},
                                 {"Y", "0.500000"},
+                                {"Z", "0.200000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"WindDrift", "TkEmitterWindDrift"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed", "2.000000"},
                             }
                         },
                     }
@@ -156,15 +205,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number Of Particles", "1600"},
-                                {"Radius",              "20.000000"},
+                                {"Number Of Particles",   "2500"},
+                                {"Radius",                "30.000000"},
+                                {"RadiusY",               "25.000000"},
+                                {"Min Particle Lifetime", "0.750000"},
+                                {"Max Particle Lifetime", "1.250000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Major Direction"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Y", "-2.000000"},
+                                {"Y", "-4.000000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Scale Range"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"X", "0.500000"},
+                                {"Y", "0.500000"},
+                                {"Z", "0.500000"},
                             }
                         },
                         {
@@ -172,7 +233,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"X", "-0.200000"},
-                                {"Y", "-0.500000"},
+                                {"Y", "0.000000"},
+                                {"Z", "-0.200000"},
                             }
                         },
                         {
@@ -181,6 +243,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"X", "0.200000"},
                                 {"Y", "0.500000"},
+                                {"Z", "0.200000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"WindDrift", "TkEmitterWindDrift"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed", "2.000000"},
                             }
                         },
                     }

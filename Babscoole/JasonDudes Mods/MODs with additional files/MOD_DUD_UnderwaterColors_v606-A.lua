@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_UNDERWATERCOLORS_V572-A",
+["MOD_FILENAME"]  = "MOD_DUD_UnderwaterColors_v606-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.72",
+["NMS_VERSION"]   = "6.06",
 ["MODIFICATIONS"] =
     {
         {
@@ -58,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-		<Property name="Samplers" value="TkMaterialSampler">
+		<Property name="Samplers" value="TkMaterialSampler" _index="1">
 			<Property name="Name" value="gMasksMap" />
 			<Property name="Map" value="TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.MASKS.DDS" />
 			<Property name="IsCube" value="false" />
@@ -74,6 +74,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+                            ["EXML_INDEX"] = "2",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.NORMAL.DDS"},
@@ -141,6 +142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -206,6 +208,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -213,6 +216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -220,6 +224,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -227,6 +232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -234,6 +240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -241,6 +248,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -248,6 +256,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -268,6 +277,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -295,6 +305,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -302,6 +313,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -309,6 +321,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -316,6 +329,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -323,6 +337,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -330,6 +345,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -337,6 +353,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -357,6 +374,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -422,6 +440,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -429,6 +448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -436,6 +456,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -443,6 +464,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -450,6 +472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -457,6 +480,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -464,6 +488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -484,6 +509,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -511,6 +537,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -518,6 +545,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -525,6 +553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -532,6 +561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -539,6 +569,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -546,6 +577,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -553,6 +585,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -573,6 +606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="1" />
@@ -600,6 +634,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -607,6 +642,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -614,6 +650,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -621,6 +658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -628,6 +666,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -635,6 +674,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -642,6 +682,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>

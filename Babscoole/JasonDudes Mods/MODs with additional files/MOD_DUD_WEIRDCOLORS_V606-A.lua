@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_WEIRDCOLORS_V572-A",
+["MOD_FILENAME"]  = "MOD_DUD_WEIRDCOLORS_V606-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.72",
+["NMS_VERSION"]   = "6.06",
 ["MODIFICATIONS"] =
     {
         {
@@ -582,6 +582,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BeamParticles_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/Hovering/Materials/BeamParticles_mat.metamaterial.mXml" />
@@ -591,6 +592,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -601,12 +603,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -677,8 +676,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -708,6 +707,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightBeam_mat3" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/Hovering/Materials/LightBeam_mat2.metamaterial.mXml" />
@@ -717,6 +717,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -787,7 +788,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2106880" />
+				<Property name="X" value="1058304" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -818,6 +819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Scrolling_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/Hovering/Materials/Scrolling_mat.metamaterial.mXml" />
@@ -827,6 +829,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -837,12 +840,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -913,8 +913,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -944,6 +944,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BeamParticles_mat1" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/Hovering/Materials/BeamParticles_mat.metamaterial.mXml" />
@@ -953,6 +954,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -963,12 +965,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -1039,8 +1038,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -1070,6 +1069,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightBeam_mat3" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/Hovering/Materials/LightBeam_mat2.metamaterial.mXml" />
@@ -1079,6 +1079,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -1149,7 +1150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2106880" />
+				<Property name="X" value="1058304" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -1180,6 +1181,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Scrolling_mat2" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/Hovering/Materials/Scrolling_mat.metamaterial.mXml" />
@@ -1189,6 +1191,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -1199,12 +1202,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -1275,8 +1275,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -1306,6 +1306,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="HugeBeam_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/HugeBeam/Materials/HugeBeam_mat.metamaterial.mXml" />
@@ -1315,6 +1316,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -1325,15 +1327,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="5">
+		<Property name="Flags" value="TkMaterialFlags" _index="4">
 			<Property name="MaterialFlag" value="_F31_DISPLACEMENT" />
 		</Property>
 	</Property>
@@ -1464,8 +1463,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2139648" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1091072" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -1495,6 +1494,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour1MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
@@ -1504,6 +1504,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -1578,6 +1579,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="1541" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -1632,6 +1643,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour2MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
@@ -1641,6 +1653,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -1715,6 +1728,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="1541" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -1769,6 +1792,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourDarkCreep" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourCreep.metamaterial.mXml" />
@@ -1778,6 +1802,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -1928,6 +1953,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="34305" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -1982,6 +2017,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour1MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
@@ -1991,6 +2027,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -2065,6 +2102,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="1541" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -2119,6 +2166,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour2MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
@@ -2128,6 +2176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -2202,6 +2251,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="1541" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -2256,6 +2315,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour3MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
@@ -2265,6 +2325,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -2339,6 +2400,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="1541" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -2393,6 +2464,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour1MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
@@ -2402,6 +2474,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -2476,6 +2549,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="1541" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -2530,6 +2613,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour2MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
@@ -2539,6 +2623,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -2613,6 +2698,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="1541" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -2667,6 +2762,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour3MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
@@ -2676,6 +2772,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -2750,6 +2847,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="1541" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -2804,6 +2911,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour3MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
@@ -2813,6 +2921,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -2887,6 +2996,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="1541" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -2941,6 +3060,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourDark" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourSecond.metamaterial.mXml" />
@@ -2950,6 +3070,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -3087,6 +3208,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="1541" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -3141,6 +3272,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourDarkCreep" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourCreep.metamaterial.mXml" />
@@ -3150,6 +3282,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -3300,6 +3433,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="34305" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -3354,6 +3497,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourDarkRibbed" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourSecond.metamaterial.mXml" />
@@ -3363,6 +3507,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -3500,6 +3645,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="1541" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -3554,6 +3709,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourLightCreep" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourCreep.metamaterial.mXml" />
@@ -3563,6 +3719,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -3719,6 +3876,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			</Property>
 			<Property name="ExtendedValues" />
 		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
 	</Property>
 	<Property name="Samplers">
 		<Property name="Samplers" value="TkMaterialSampler" _index="0">
@@ -3767,6 +3934,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourOrbMAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourSecond.metamaterial.mXml" />
@@ -3776,6 +3944,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -3919,6 +4088,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			</Property>
 			<Property name="ExtendedValues" />
 		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
 	</Property>
 	<Property name="Samplers">
 		<Property name="Samplers" value="TkMaterialSampler" _index="0">
@@ -3967,6 +4146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourRibbedCreep" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourCreep.metamaterial.mXml" />
@@ -3976,6 +4156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -4132,6 +4313,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			</Property>
 			<Property name="ExtendedValues" />
 		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
 	</Property>
 	<Property name="Samplers">
 		<Property name="Samplers" value="TkMaterialSampler" _index="0">
@@ -4180,6 +4371,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="PulseFlare_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/FractalCube/Shape1/Materials/PulseFlare_mat.metamaterial.mXml" />
@@ -4189,6 +4381,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -4199,9 +4392,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
 	</Property>
@@ -4272,8 +4462,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2129920" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1081344" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -4303,6 +4493,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightMaterial_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Hexagon/MedGeometric/Materials/LightMaterial_mat.metamaterial.mXml" />
@@ -4312,6 +4503,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -4395,7 +4587,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2139648" />
+				<Property name="X" value="1091072" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -4426,6 +4618,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="SmallVines_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Hexagon/HugeObject/Materials/SmallVines_mat.metamaterial.mXml" />
@@ -4435,6 +4628,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -4443,9 +4637,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="1">
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F11_ALPHACUTOUT" />
 		</Property>
 	</Property>
 	<Property name="FxFlags" />
@@ -4505,8 +4696,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2105344" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1056768" />
+				<Property name="Y" value="21" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -4536,6 +4727,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="SmallVines_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Hexagon/HugeObject/Materials/SmallVines_mat.metamaterial.mXml" />
@@ -4545,6 +4737,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -4553,9 +4746,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="1">
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F11_ALPHACUTOUT" />
 		</Property>
 	</Property>
 	<Property name="FxFlags" />
@@ -4615,8 +4805,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2105344" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1056768" />
+				<Property name="Y" value="21" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -4646,6 +4836,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Vines_mat12" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Hexagon/HugeObject/Materials/Vines_mat12.metamaterial.mXml" />
@@ -4655,6 +4846,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -4798,7 +4990,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2138112" />
+				<Property name="X" value="1089536" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -4829,6 +5021,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightMaterial_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Hexagon/MedGeometric/Materials/LightMaterial_mat.metamaterial.mXml" />
@@ -4838,6 +5031,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -4921,7 +5115,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2139648" />
+				<Property name="X" value="1091072" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -4952,6 +5146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Float_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/MStructures/FloatJoint/Materials/Float_mat.metamaterial.mXml" />
@@ -4961,6 +5156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -5104,6 +5300,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			</Property>
 			<Property name="ExtendedValues" />
 		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
 	</Property>
 	<Property name="Samplers">
 		<Property name="Samplers" value="TkMaterialSampler" _index="0">
@@ -5152,6 +5358,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="MStructure_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/MStructures/MStructure/Materials/MStructure_mat.metamaterial.mXml" />
@@ -5161,6 +5368,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -5235,6 +5443,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="1541" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -5289,6 +5507,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="MStructure_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/MStructures/MStructure/Materials/MStructure_mat.metamaterial.mXml" />
@@ -5298,6 +5517,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -5372,6 +5592,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="1541" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -5426,6 +5656,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="MStructure_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/MStructures/MStructure/Materials/MStructure_mat.metamaterial.mXml" />
@@ -5435,6 +5666,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -5515,6 +5747,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			</Property>
 			<Property name="ExtendedValues" />
 		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
 	</Property>
 	<Property name="Samplers">
 		<Property name="Samplers" value="TkMaterialSampler" _index="0">
@@ -5563,6 +5805,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Shard_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Shards/Shard/Materials/Shard_mat.metamaterial.mXml" />
@@ -5572,6 +5815,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -5706,6 +5950,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="8203" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -5760,6 +6014,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Shard_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Shards/Shard/Materials/Shard_mat.metamaterial.mXml" />
@@ -5769,6 +6024,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -5903,6 +6159,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
 				<Property name="X" value="8203" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -5957,6 +6223,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Shard_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Shards/FloorPieces/Materials/Shard2_mat.metamaterial.mXml" />
@@ -5966,6 +6233,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -6043,6 +6311,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			</Property>
 			<Property name="ExtendedValues" />
 		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
 	</Property>
 	<Property name="Samplers">
 		<Property name="Samplers" value="TkMaterialSampler" _index="0">
@@ -6091,6 +6369,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Shard_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Shards/Shard/Materials/Shard_mat.metamaterial.mXml" />
@@ -6100,6 +6379,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -6240,6 +6520,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			</Property>
 			<Property name="ExtendedValues" />
 		</Property>
+		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+			<Property name="Name" value="gLightLayers" />
+			<Property name="Values">
+				<Property name="X" value="3" />
+				<Property name="Y" value="0" />
+				<Property name="Z" value="0" />
+				<Property name="W" value="0" />
+			</Property>
+			<Property name="ExtendedValues" />
+		</Property>
 	</Property>
 	<Property name="Samplers">
 		<Property name="Samplers" value="TkMaterialSampler" _index="0">
@@ -6288,6 +6578,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -6296,6 +6587,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -6323,6 +6615,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -6330,6 +6623,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -6337,6 +6631,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -6344,6 +6639,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -6351,6 +6647,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -6358,6 +6655,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -6365,6 +6663,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -6376,6 +6675,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -6384,6 +6684,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -6411,6 +6712,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -6418,6 +6720,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -6425,6 +6728,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -6432,6 +6736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -6439,6 +6744,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -6446,6 +6752,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -6453,6 +6760,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -6464,6 +6772,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -6472,6 +6781,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -6499,6 +6809,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -6506,6 +6817,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -6513,6 +6825,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -6520,6 +6833,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -6527,6 +6841,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -6534,6 +6849,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -6541,6 +6857,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -6552,6 +6869,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -6560,6 +6878,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -6587,6 +6906,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -6594,6 +6914,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -6601,6 +6922,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -6608,6 +6930,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -6615,6 +6938,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -6622,6 +6946,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -6629,6 +6954,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -6640,6 +6966,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -6648,6 +6975,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -6675,6 +7003,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -6682,6 +7011,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -6689,6 +7019,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -6696,6 +7027,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -6703,6 +7035,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -6710,6 +7043,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -6717,6 +7051,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -6728,6 +7063,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -6736,6 +7072,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -6763,6 +7100,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -6770,6 +7108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -6777,6 +7116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -6784,6 +7124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -6791,6 +7132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -6798,6 +7140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -6805,6 +7148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -6816,6 +7160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -6824,6 +7169,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -6851,6 +7197,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -6858,6 +7205,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -6865,6 +7213,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -6872,6 +7221,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -6879,6 +7229,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -6886,6 +7237,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -6893,6 +7245,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -6904,6 +7257,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -6912,6 +7266,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -6939,6 +7294,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -6946,6 +7302,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -6953,6 +7310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -6960,6 +7318,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -6967,6 +7326,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -6974,6 +7334,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -6981,6 +7342,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -6992,6 +7354,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -7000,6 +7363,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -7027,6 +7391,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -7034,6 +7399,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -7041,6 +7407,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -7048,6 +7415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -7055,6 +7423,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -7062,6 +7431,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -7069,6 +7439,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -7080,6 +7451,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -7088,6 +7460,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -7115,6 +7488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -7122,6 +7496,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -7129,6 +7504,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -7136,6 +7512,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -7143,6 +7520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -7150,6 +7528,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -7157,6 +7536,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -7168,6 +7548,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -7176,6 +7557,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -7203,6 +7585,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -7210,6 +7593,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -7217,6 +7601,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -7224,6 +7609,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -7231,6 +7617,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -7238,6 +7625,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -7245,6 +7633,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -7256,6 +7645,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -7264,6 +7654,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -7291,6 +7682,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -7298,6 +7690,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -7305,6 +7698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -7312,6 +7706,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -7319,6 +7714,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -7326,6 +7722,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -7333,6 +7730,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -7344,6 +7742,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -7352,6 +7751,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -7379,6 +7779,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -7386,6 +7787,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -7393,6 +7795,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -7400,6 +7803,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -7407,6 +7811,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -7414,6 +7819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -7421,6 +7827,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>
@@ -7432,6 +7839,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkProceduralTextureList">
 	<Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
 	<Property name="Layers">
@@ -7440,6 +7848,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures">
 				<Property name="Textures" value="TkProceduralTexture" _index="0">
 					<Property name="Name" value="" />
@@ -7467,6 +7876,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="2">
@@ -7474,6 +7884,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="3">
@@ -7481,6 +7892,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="4">
@@ -7488,6 +7900,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="5">
@@ -7495,6 +7908,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="6">
@@ -7502,6 +7916,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 		<Property name="Layers" value="TkProceduralTextureLayer" _index="7">
@@ -7509,6 +7924,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Probability" value="1.000000" />
 			<Property name="Group" value="" />
 			<Property name="SelectToMatchBase" value="false" />
+			<Property name="LinkedLayer" value="" />
 			<Property name="Textures" />
 		</Property>
 	</Property>

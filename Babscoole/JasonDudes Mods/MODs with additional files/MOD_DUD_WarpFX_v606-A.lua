@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_WarpFX_v572-B",
+["MOD_FILENAME"]            = "MOD_DUD_WarpFX_v606-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.72",
+["NMS_VERSION"]             = "6.06",
 ["ADD_FILES"] =
     {
         {
@@ -13,6 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkSceneNodeData">
 	<Property name="Name" value="MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNEL" />
 	<Property name="NameHash" value="0" />
@@ -257,6 +258,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkSceneNodeData">
 	<Property name="Name" value="MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNELBLACK" />
 	<Property name="NameHash" value="0" />
@@ -501,6 +503,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkSceneNodeData">
 	<Property name="Name" value="MODELS\EFFECTS\WARP\WARPLARGEPORTAL" />
 	<Property name="NameHash" value="3057705456" />
@@ -1605,6 +1608,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkSceneNodeData">
 	<Property name="Name" value="MODELS\EFFECTS\WARP\WARPPORTAL" />
 	<Property name="NameHash" value="1342974742" />
@@ -2813,6 +2817,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkSceneNodeData">
 	<Property name="Name" value="MODELS\EFFECTS\WARP\WARPTUNNEL" />
 	<Property name="NameHash" value="350411362" />
@@ -2917,6 +2922,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							<Property name="Value" value="0.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+							<Property name="Name" value="LIGHTLAYERS" />
+							<Property name="Value" value="3" />
+						</Property>
+						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
 							<Property name="Name" value="MATERIAL" />
 							<Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
 						</Property>
@@ -3898,6 +3907,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkSceneNodeData">
 	<Property name="Name" value="MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE" />
 	<Property name="NameHash" value="3984342247" />
@@ -4002,6 +4012,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							<Property name="Value" value="0.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+							<Property name="Name" value="LIGHTLAYERS" />
+							<Property name="Value" value="3" />
+						</Property>
+						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
 							<Property name="Name" value="MATERIAL" />
 							<Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
 						</Property>
@@ -4775,6 +4789,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
@@ -4784,6 +4799,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -4794,12 +4810,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -4870,8 +4883,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -4901,6 +4914,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
@@ -4910,6 +4924,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -4920,12 +4935,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -4996,8 +5008,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -5027,6 +5039,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstarsMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstarsMat.metamaterial.mXml" />
@@ -5036,6 +5049,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -5046,12 +5060,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -5122,8 +5133,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -5153,6 +5164,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="ScrollingWavesAltBMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/ScrollingWavesAltBMat.metamaterial.mXml" />
@@ -5162,20 +5174,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="true" />
 	<Property name="Link" value="" />
-	<Property name="Shader" value="SHADERS/SHADERMILLUBER.SHADER.BIN" />
+	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
 		<Property name="Flags" value="TkMaterialFlags" _index="0">
 			<Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="1">
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
-			<Property name="MaterialFlag" value="_F50_DISABLE_POSTPROCESS" />
 		</Property>
 	</Property>
 	<Property name="FxFlags" />
@@ -5235,8 +5242,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2105344" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="3153920" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -5257,7 +5264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Anisotropy" value="0" />
 		</Property>
 	</Property>
-	<Property name="ShaderMillDataHash" value="1763399710625007925" />
+	<Property name="ShaderMillDataHash" value="5520301382852046649" />
 </Data>
 ]]
         },
@@ -5266,6 +5273,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="TunnelMat1" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/Lines.metamaterial.mXml" />
@@ -5275,6 +5283,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -5285,12 +5294,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -5361,8 +5367,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -5392,6 +5398,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightArmsBlackMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/LightArmsBlackMat.metamaterial.mXml" />
@@ -5401,8 +5408,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="true" />
 	<Property name="Link" value="" />
-	<Property name="Shader" value="SHADERS/SHADERMILLUBER.SHADER.BIN" />
+	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
 		<Property name="Flags" value="TkMaterialFlags" _index="0">
 			<Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
@@ -5411,13 +5419,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
-			<Property name="MaterialFlag" value="_F50_DISABLE_POSTPROCESS" />
 		</Property>
 	</Property>
 	<Property name="FxFlags" />
@@ -5477,8 +5479,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2106880" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="3155456" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -5499,7 +5501,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Anisotropy" value="0" />
 		</Property>
 	</Property>
-	<Property name="ShaderMillDataHash" value="2093056179701190064" />
+	<Property name="ShaderMillDataHash" value="-7688331637547711169" />
 </Data>
 ]]
         },
@@ -5508,6 +5510,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
@@ -5517,6 +5520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -5527,12 +5531,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -5603,8 +5604,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -5634,6 +5635,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
@@ -5643,6 +5645,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -5653,12 +5656,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -5729,8 +5729,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -5760,6 +5760,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstarsMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstarsMat.metamaterial.mXml" />
@@ -5769,6 +5770,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -5779,12 +5781,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -5855,8 +5854,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -5886,6 +5885,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="TunnelMat1" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/Lines.metamaterial.mXml" />
@@ -5895,6 +5895,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -5905,12 +5906,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -5981,8 +5979,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -6012,6 +6010,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="EngGLowCapMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnel/Materials/EngGLowCapMat.metamaterial.mXml" />
@@ -6021,6 +6020,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -6085,7 +6085,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2105344" />
+				<Property name="X" value="1056768" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
@@ -6103,6 +6103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightArmsRedMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpLargePortal/Materials/LightArmsRedMat.metamaterial.mXml" />
@@ -6112,8 +6113,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="true" />
 	<Property name="Link" value="" />
-	<Property name="Shader" value="SHADERS/SHADERMILLUBER.SHADER.BIN" />
+	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
 		<Property name="Flags" value="TkMaterialFlags" _index="0">
 			<Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
@@ -6122,13 +6124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
-			<Property name="MaterialFlag" value="_F50_DISABLE_POSTPROCESS" />
 		</Property>
 	</Property>
 	<Property name="FxFlags" />
@@ -6188,8 +6184,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2106880" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="3155456" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -6210,7 +6206,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Anisotropy" value="0" />
 		</Property>
 	</Property>
-	<Property name="ShaderMillDataHash" value="-6806235467279033695" />
+	<Property name="ShaderMillDataHash" value="-3245524875300452010" />
 </Data>
 ]]
         },
@@ -6219,6 +6215,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
@@ -6228,6 +6225,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -6238,12 +6236,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -6314,8 +6309,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -6345,6 +6340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
@@ -6354,6 +6350,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -6364,12 +6361,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -6440,8 +6434,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -6471,6 +6465,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstarsMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstarsMat.metamaterial.mXml" />
@@ -6480,6 +6475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -6490,12 +6486,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -6566,8 +6559,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -6597,6 +6590,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="TunnelMat1" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/Lines.metamaterial.mXml" />
@@ -6606,6 +6600,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -6616,12 +6611,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -6692,8 +6684,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -6723,6 +6715,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightArmsMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnel/Materials/LightArmsMat.metamaterial.mXml" />
@@ -6732,8 +6725,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="true" />
 	<Property name="Link" value="" />
-	<Property name="Shader" value="SHADERS/SHADERMILLUBER.SHADER.BIN" />
+	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
 		<Property name="Flags" value="TkMaterialFlags" _index="0">
 			<Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
@@ -6742,13 +6736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
-			<Property name="MaterialFlag" value="_F50_DISABLE_POSTPROCESS" />
 		</Property>
 	</Property>
 	<Property name="FxFlags" />
@@ -6808,8 +6796,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2106880" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="3155456" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -6830,7 +6818,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Anisotropy" value="0" />
 		</Property>
 	</Property>
-	<Property name="ShaderMillDataHash" value="443338131036923603" />
+	<Property name="ShaderMillDataHash" value="-1577412276178897926" />
 </Data>
 ]]
         },
@@ -6839,6 +6827,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
@@ -6848,6 +6837,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -6858,12 +6848,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -6934,8 +6921,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -6965,6 +6952,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
@@ -6974,6 +6962,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -6984,12 +6973,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -7060,8 +7046,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -7091,6 +7077,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstarsMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstarsMat.metamaterial.mXml" />
@@ -7100,6 +7087,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -7110,12 +7098,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -7186,8 +7171,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -7217,6 +7202,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="TunnelMat1" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/Lines.metamaterial.mXml" />
@@ -7226,6 +7212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -7236,12 +7223,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="MaterialFlag" value="_F07_UNLIT" />
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="2">
-			<Property name="MaterialFlag" value="_F09_TRANSPARENT" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F13_UV_EFFECT" />
 		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
+		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
 		</Property>
 	</Property>
@@ -7312,8 +7296,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
-				<Property name="Y" value="0" />
+				<Property name="X" value="1082880" />
+				<Property name="Y" value="15" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />
 			</Property>
@@ -7343,6 +7327,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
 	<Property name="Name" value="WarpBGmat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnel/Materials/WarpBGmat.metamaterial.mXml" />
@@ -7352,6 +7337,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="DisableZTest" value="false" />
 	<Property name="CreateFur" value="false" />
 	<Property name="EnableLodFade" value="true" />
+	<Property name="UseShaderMill" value="false" />
 	<Property name="Link" value="" />
 	<Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" />
 	<Property name="Flags">
@@ -7366,9 +7352,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 		</Property>
 		<Property name="Flags" value="TkMaterialFlags" _index="3">
 			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags" _index="4">
-			<Property name="MaterialFlag" value="_F50_DISABLE_POSTPROCESS" />
 		</Property>
 	</Property>
 	<Property name="FxFlags" />
@@ -7438,7 +7421,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
 			<Property name="Name" value="gDynamicFlags" />
 			<Property name="Values">
-				<Property name="X" value="2131456" />
+				<Property name="X" value="3180032" />
 				<Property name="Y" value="0" />
 				<Property name="Z" value="0" />
 				<Property name="W" value="0" />

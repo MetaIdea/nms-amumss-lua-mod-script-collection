@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_SpaceshipFlight_v564-A",
+["MOD_FILENAME"]            = "MOD_DUD_SpaceshipFlight_v612-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.64",
+["NMS_VERSION"]             = "6.12",
 ["MODIFICATIONS"]           =
     {
         {
@@ -380,6 +380,95 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"RollAutoTime",       "0.5"},
                                 {"BalanceTimeMin",     "0.65"},
                                 {"BalanceTimeMax",     "1.75"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ControlCorvette", "SpaceEngine"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ThrustForce",        "30.000000"},
+                                {"Falloff",            "0.500000"},
+                                {"BoostThrustForce",   "52.500000"},
+                                {"BoostMaxSpeed",      "1000.000000"},
+                                {"BoostFalloff",       "0.400000"},
+                                {"BoostingTurnDamp",   "0.300000"},
+                                {"DirectionBrakeMin",  "0.300000"},
+                                {"DirectionBrake",     "0.650000"},
+                                {"ReverseBrake",       "0.225000"},
+                                {"OverspeedBrake",     "0.500000"},
+                                {"LowSpeedTurnDamper", "0.000000"},
+                                {"TurnBrakeMin",       "0.500000"},
+                                {"TurnBrakeMax",       "1.250000"},
+                                {"TurnStrength",       "1.000000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ControlCorvette", "PlanetEngine"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ThrustForce",        "26.250000"},
+                                {"MaxSpeed",           "125.000000"},
+                                {"MinSpeed",           "0.010000"},
+                                {"Falloff",            "0.400000"},
+                                {"MinSpeedForce",      "30.000000"},
+                                {"BoostThrustForce",   "26.250000"},
+                                {"BoostMaxSpeed",      "175.000000"},
+                                {"BoostFalloff",       "0.300000"},
+                                {"BoostingTurnDamp",   "0.300000"},
+                                {"DirectionBrakeMin",  "0.300000"},
+                                {"DirectionBrake",     "0.650000"},
+                                {"ReverseBrake",       "0.225000"},
+                                {"LowSpeedTurnDamper", "0.500000"},
+                                {"TurnBrakeMin",       "0.500000"},
+                                {"TurnBrakeMax",       "1.250000"},
+                                {"TurnStrength",       "1.250000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ControlCorvette", "CombatEngine"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ThrustForce",        "30.000000"},
+                                {"MaxSpeed",           "160.000000"},
+                                {"MinSpeed",           "10.000000"},
+                                {"Falloff",            "0.500000"},
+                                {"MinSpeedForce",      "5.000000"},
+                                {"BoostThrustForce",   "52.500000"},
+                                {"BoostMaxSpeed",      "1000.000000"},
+                                {"BoostFalloff",       "0.400000"},
+                                {"BoostingTurnDamp",   "0.300000"},
+                                {"DirectionBrakeMin",  "0.300000"},
+                                {"DirectionBrake",     "0.650000"},
+                                {"ReverseBrake",       "0.225000"},
+                                {"OverspeedBrake",     "0.500000"},
+                                {"LowSpeedTurnDamper", "0.500000"},
+                                {"TurnBrakeMin",       "0.500000"},
+                                {"TurnBrakeMax",       "1.250000"},
+                                {"TurnStrength",       "1.250000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ControlCorvette", "AtmosCombatEngine"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ThrustForce",        "26.250000"},
+                                {"MaxSpeed",           "105.000000"},
+                                {"Falloff",            "0.400000"},
+                                {"BoostThrustForce",   "26.250000"},
+                                {"BoostMaxSpeed",      "155.000000"},
+                                {"BoostFalloff",       "0.300000"},
+                                {"BoostingTurnDamp",   "0.300000"},
+                                {"DirectionBrakeMin",  "0.300000"},
+                                {"DirectionBrake",     "0.650000"},
+                                {"ReverseBrake",       "0.225000"},
+                                {"LowSpeedTurnDamper", "0.500000"},
+                                {"TurnBrakeMin",       "0.500000"},
+                                {"TurnBrakeMax",       "1.250000"},
+                                {"TurnStrength",       "1.250000"},
+                                {"RollAmount",         "1.250000"},
+                                {"RollAutoTime",       "0.500000"},
+                                {"BalanceTimeMin",     "0.650000"},
+                                {"BalanceTimeMax",     "1.750000"},
                             }
                         },
                         {

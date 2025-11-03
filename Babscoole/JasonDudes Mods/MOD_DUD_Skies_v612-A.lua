@@ -279,10 +279,10 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_Skies_v575-B",
+["MOD_FILENAME"]            = "MOD_DUD_Skies_v612-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.75",
+["NMS_VERSION"]             = "6.12",
 ["MODIFICATIONS"]           =
     {
         {
@@ -393,7 +393,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HeightFogFadeOutStrength", "0.5"},
                                 {"HeightFogMax",             "0.98"},
                                 {"FogHeight",                "32"},
-                                {"DepthOfField",             "0.25"},
+                                {"DepthOfField",             "0"},
                                 {"DepthOfFieldDistance",     "10"},
                                 {"DepthOfFieldFade",         "1000"},
                             }
@@ -555,7 +555,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HeightFogFadeOutStrength", "0.5"},
                                 {"HeightFogMax",             "0.98"},
                                 {"FogHeight",                "16"},
-                                {"DepthOfField",             "0.25"},
+                                {"DepthOfField",             "0"},
                                 {"DepthOfFieldDistance",     "10"},
                                 {"DepthOfFieldFade",         "1000"},
                             }
@@ -699,7 +699,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HeightFogFadeOutStrength", "0.5"},
                                 {"HeightFogMax",             "0.98"},
                                 {"FogHeight",                "16"},
-                                {"DepthOfField",             "0.25"},
+                                {"DepthOfField",             "0"},
                                 {"DepthOfFieldDistance",     "10"},
                                 {"DepthOfFieldFade",         "1000"},
                             }
@@ -795,7 +795,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HeightFogFadeOutStrength", "0.5"},
                                 {"HeightFogMax",             "0.98"},
                                 {"FogHeight",                "16"},
-                                {"DepthOfField",             "0.25"},
+                                {"DepthOfField",             "0"},
                                 {"DepthOfFieldDistance",     "10"},
                                 {"DepthOfFieldFade",         "1000"},
                             }
@@ -996,7 +996,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FogHeight",                "64"},
                                 {"CloudRatio",               "0.6"},
                                 {"FullscreenEffect",         "0.3"},
-                                {"DepthOfField",             "0.25"},
+                                {"DepthOfField",             "0"},
                                 {"DepthOfFieldDistance",     "10"},
                                 {"DepthOfFieldFade",         "1000"},
                                 {"RainWetness",              "2"},
@@ -2151,7 +2151,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale ",          "0.533333"},
+                                {"MinScale ",         "0.533333"},
                                 {"MaxScale",          "1"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -2168,7 +2168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = 2,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale ",          "0.333333"},
+                                {"MinScale ",         "0.333333"},
                                 {"MaxScale",          "0.8"},
                                 {"ShearWindStrength", "0.75"}
                             }
@@ -2222,7 +2222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale ",          "0.533333"},
+                                {"MinScale ",         "0.533333"},
                                 {"MaxScale",          "0.8"},
                                 {"ShearWindStrength", "0.2"}
                             }
@@ -2238,7 +2238,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale ",          "0.666666"},
+                                {"MinScale ",         "0.666666"},
                                 {"MaxScale",          "0.933333"},
                                 {"ShearWindStrength", "0.2"}
                             }
@@ -2619,7 +2619,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        "MODELS\PLANETS\BIOMES\FLORAL\LARGEPLANT\FLORALTREE01\BARK1.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE01\BARK1.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE02\BARK1.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE03\BARK1.MATERIAL.MBIN",
@@ -2899,7 +2898,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE62\IVYMAT.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE63\IVYMAT.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE64\IVYMAT.MATERIAL.MBIN",
-
                     },
                     ["MXML_CHANGE_TABLE"] =
                     {
@@ -2916,6 +2914,50 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"X", "0.13"},
+                                {"Y", "1.9"},
+                                {"Z", "0.9"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\PLANETS\BIOMES\ROCKY\TREE46\BARK1.MATERIAL",
+                        "MODELS\PLANETS\BIOMES\ROCKY\TREE46\LEAF.MATERIAL.MBIN",
+                    },
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"X", "0.125"},
+                                {"Y", "1.5"},
+                                {"Z", "0.8"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\FLORAL\LARGEPLANT\FLORALTREE01\BARK1.MATERIAL.MBIN",
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"X", "0.25"},
+                                {"Y", "0.4"},
+                                {"W", "0.5"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"X", "0.125"},
                                 {"Y", "1.5"},
                                 {"Z", "0.8"},
                             }
@@ -2944,21 +2986,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Metamaterial",       "Models/Planets/Biomes/HQLush/HQTrees/Parts/HQTree01/Materials/HQFrond1Wind.metamaterial.mXml"},
-                                {"ShaderMillDataHash", "-6381862299309944278"},
+                                {"ShaderMillDataHash", "4260184245035633327"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F11_ALPHACUTOUT"},
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F03_NORMALMAP"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaterialFlag", "_F15_WIND"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F09_TRANSPARENT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MaterialFlag", "_F11_ALPHACUTOUT"},
                             }
                         },
                         {
@@ -2980,26 +3015,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-		<Property name="Uniforms_Float" value="TkMaterialUniform_Float">
-			<Property name="Name" value="gTreeWindParams0Vec4" />
-			<Property name="Values">
-				<Property name="X" value="0.250000" />
-				<Property name="Y" value="0.400000" />
-				<Property name="Z" value="0.000000" />
-				<Property name="W" value="0.500000" />
-			</Property>
-			<Property name="ExtendedValues" />
-		</Property>
-		<Property name="Uniforms_Float" value="TkMaterialUniform_Float">
-			<Property name="Name" value="gTreeWindParams1Vec4" />
-			<Property name="Values">
-				<Property name="X" value="0.125000" />
-				<Property name="Y" value="1.500000" />
-				<Property name="Z" value="0.800000" />
-				<Property name="W" value="0.000000" />
-			</Property>
-			<Property name="ExtendedValues" />
-		</Property>
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="5">
+      <Property name="Name" value="gTreeWindParams0Vec4" />
+      <Property name="Values">
+        <Property name="X" value="0.250000" />
+        <Property name="Y" value="0.400000" />
+        <Property name="Z" value="0.000000" />
+        <Property name="W" value="0.500000" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="6">
+      <Property name="Name" value="gTreeWindParams1Vec4" />
+      <Property name="Values">
+        <Property name="X" value="0.130000" />
+        <Property name="Y" value="1.900000" />
+        <Property name="Z" value="0.900000" />
+        <Property name="W" value="0.000000" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
 ]]
                         },
                         {
@@ -3007,6 +3042,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"X", "1541"},
+                                {"Y", "21"},
                             }
                         },
                     }
@@ -3014,6 +3050,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE03\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE20\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE21\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE22\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE23\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE24\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE25\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE26\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE27\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE28\IVYMAT.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE29\IVYMAT1.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE30\IVYMAT1.MATERIAL.MBIN",
                     },
@@ -3024,6 +3070,32 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Name", "IvyMat"},
                             }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F01_DIFFUSEMAP"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
+[[
+    <Property name="Flags" value="TkMaterialFlags" _index="1">
+      <Property name="MaterialFlag" value="_F03_NORMALMAP" />
+    </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F15_WIND"},
+                            ["EXML_INDEX"] = "2",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F21_VERTEXCUSTOM"},
+                            ["EXML_INDEX"] = "3",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F25_MASKS_MAP"},
+                            ["EXML_INDEX"] = "4",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F36_DOUBLESIDED"},
+                            ["EXML_INDEX"] = "5",
                         },
                     }
                 },
@@ -3055,36 +3127,44 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property name="Flags" value="TkMaterialFlags">
+    <Property name="Flags" value="TkMaterialFlags" _index="2">
       <Property name="MaterialFlag" value="_F15_WIND" />
     </Property>
 ]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F21_VERTEXCUSTOM"},
+                            ["EXML_INDEX"] = "3",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F25_MASKS_MAP"},
+                            ["EXML_INDEX"] = "4",
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Uniforms_Float"},
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-		<Property name="Uniforms_Float" value="TkMaterialUniform_Float">
-			<Property name="Name" value="gTreeWindParams0Vec4" />
-			<Property name="Values">
-				<Property name="X" value="0.250000" />
-				<Property name="Y" value="0.400000" />
-				<Property name="Z" value="0.000000" />
-				<Property name="W" value="0.500000" />
-			</Property>
-			<Property name="ExtendedValues" />
-		</Property>
-		<Property name="Uniforms_Float" value="TkMaterialUniform_Float">
-			<Property name="Name" value="gTreeWindParams1Vec4" />
-			<Property name="Values">
-				<Property name="X" value="0.125000" />
-				<Property name="Y" value="1.500000" />
-				<Property name="Z" value="0.800000" />
-				<Property name="W" value="0.000000" />
-			</Property>
-			<Property name="ExtendedValues" />
-		</Property>
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="5">
+      <Property name="Name" value="gTreeWindParams0Vec4" />
+      <Property name="Values">
+        <Property name="X" value="0.250000" />
+        <Property name="Y" value="0.400000" />
+        <Property name="Z" value="0.000000" />
+        <Property name="W" value="0.500000" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="6">
+      <Property name="Name" value="gTreeWindParams1Vec4" />
+      <Property name="Values">
+        <Property name="X" value="0.130000" />
+        <Property name="Y" value="1.900000" />
+        <Property name="Z" value="0.900000" />
+        <Property name="W" value="0.000000" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
 ]]
                         },
                     }
@@ -3126,36 +3206,44 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property name="Flags" value="TkMaterialFlags">
+    <Property name="Flags" value="TkMaterialFlags" _index="2">
       <Property name="MaterialFlag" value="_F15_WIND" />
     </Property>
 ]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F21_VERTEXCUSTOM"},
+                            ["EXML_INDEX"] = "3",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F25_MASKS_MAP"},
+                            ["EXML_INDEX"] = "4",
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Uniforms_Float"},
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-		<Property name="Uniforms_Float" value="TkMaterialUniform_Float">
-			<Property name="Name" value="gTreeWindParams0Vec4" />
-			<Property name="Values">
-				<Property name="X" value="0.250000" />
-				<Property name="Y" value="0.400000" />
-				<Property name="Z" value="0.000000" />
-				<Property name="W" value="0.500000" />
-			</Property>
-			<Property name="ExtendedValues" />
-		</Property>
-		<Property name="Uniforms_Float" value="TkMaterialUniform_Float">
-			<Property name="Name" value="gTreeWindParams1Vec4" />
-			<Property name="Values">
-				<Property name="X" value="0.125000" />
-				<Property name="Y" value="1.500000" />
-				<Property name="Z" value="0.800000" />
-				<Property name="W" value="0.000000" />
-			</Property>
-			<Property name="ExtendedValues" />
-		</Property>
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="5">
+      <Property name="Name" value="gTreeWindParams0Vec4" />
+      <Property name="Values">
+        <Property name="X" value="0.250000" />
+        <Property name="Y" value="0.400000" />
+        <Property name="Z" value="0.000000" />
+        <Property name="W" value="0.500000" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="6">
+      <Property name="Name" value="gTreeWindParams1Vec4" />
+      <Property name="Values">
+        <Property name="X" value="0.130000" />
+        <Property name="Y" value="1.900000" />
+        <Property name="Z" value="0.900000" />
+        <Property name="W" value="0.000000" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
 ]]
                         },
                     }
@@ -3193,10 +3281,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F42_DETAIL_NORMAL"},
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParams2Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -3208,31 +3292,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-		<Property name="Uniforms_Float" value="TkMaterialUniform_Float">
-			<Property name="Name" value="gTreeWindParams0Vec4" />
-			<Property name="Values">
-				<Property name="X" value="0.250000" />
-				<Property name="Y" value="0.400000" />
-				<Property name="Z" value="0.000000" />
-				<Property name="W" value="0.500000" />
-			</Property>
-			<Property name="ExtendedValues" />
-		</Property>
-		<Property name="Uniforms_Float" value="TkMaterialUniform_Float">
-			<Property name="Name" value="gTreeWindParams1Vec4" />
-			<Property name="Values">
-				<Property name="X" value="0.125000" />
-				<Property name="Y" value="1.500000" />
-				<Property name="Z" value="0.800000" />
-				<Property name="W" value="0.000000" />
-			</Property>
-			<Property name="ExtendedValues" />
-		</Property>
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="5">
+      <Property name="Name" value="gTreeWindParams0Vec4" />
+      <Property name="Values">
+        <Property name="X" value="0.250000" />
+        <Property name="Y" value="0.400000" />
+        <Property name="Z" value="0.000000" />
+        <Property name="W" value="0.500000" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="6">
+      <Property name="Name" value="gTreeWindParams1Vec4" />
+      <Property name="Values">
+        <Property name="X" value="0.130000" />
+        <Property name="Y" value="1.900000" />
+        <Property name="Z" value="0.900000" />
+        <Property name="W" value="0.000000" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormal2Map"},
-                            ["REMOVE"] = "SECTION"
                         },
                     }
                 },
@@ -3258,26 +3338,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-		<Property name="Uniforms_Float" value="TkMaterialUniform_Float">
-			<Property name="Name" value="gTreeWindParams0Vec4" />
-			<Property name="Values">
-				<Property name="X" value="0.250000" />
-				<Property name="Y" value="0.400000" />
-				<Property name="Z" value="0.000000" />
-				<Property name="W" value="0.500000" />
-			</Property>
-			<Property name="ExtendedValues" />
-		</Property>
-		<Property name="Uniforms_Float" value="TkMaterialUniform_Float">
-			<Property name="Name" value="gTreeWindParams1Vec4" />
-			<Property name="Values">
-				<Property name="X" value="0.125000" />
-				<Property name="Y" value="1.500000" />
-				<Property name="Z" value="0.800000" />
-				<Property name="W" value="0.000000" />
-			</Property>
-			<Property name="ExtendedValues" />
-		</Property>
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="5">
+      <Property name="Name" value="gTreeWindParams0Vec4" />
+      <Property name="Values">
+        <Property name="X" value="0.250000" />
+        <Property name="Y" value="0.400000" />
+        <Property name="Z" value="0.000000" />
+        <Property name="W" value="0.500000" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="6">
+      <Property name="Name" value="gTreeWindParams1Vec4" />
+      <Property name="Values">
+        <Property name="X" value="0.130000" />
+        <Property name="Y" value="1.900000" />
+        <Property name="Z" value="0.900000" />
+        <Property name="W" value="0.000000" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
 ]]
                         },
                     }
@@ -3293,7 +3373,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Metamaterial", "Models/Planets/Biomes/HQLush/HQTrees/Parts/HQTree01/Materials/FruitMatwind.metamaterial.mXml"},
+                                {"Metamaterial", "Models/Planets/Biomes/HQLush/HQTrees/Parts/HQTree01/Materials/FruitMatWind.metamaterial.mXml"},
                             }
                         },
                         {
@@ -3301,15 +3381,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-		<Property name="Flags" value="TkMaterialFlags">
-			<Property name="MaterialFlag" value="_F15_WIND" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags">
-			<Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
-		</Property>
-		<Property name="Flags" value="TkMaterialFlags">
-			<Property name="MaterialFlag" value="_F25_MASKS_MAP" />
-		</Property>
+    <Property name="Flags" value="TkMaterialFlags" _index="2">
+      <Property name="MaterialFlag" value="_F15_WIND" />
+    </Property>
+    <Property name="Flags" value="TkMaterialFlags" _index="3">
+      <Property name="MaterialFlag" value="_F21_VERTEXCUSTOM" />
+    </Property>
+    <Property name="Flags" value="TkMaterialFlags" _index="4">
+      <Property name="MaterialFlag" value="_F25_MASKS_MAP" />
+    </Property>
 ]]
                         },
                         {
@@ -3317,26 +3397,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-		<Property name="Uniforms_Float" value="TkMaterialUniform_Float">
-			<Property name="Name" value="gTreeWindParams0Vec4" />
-			<Property name="Values">
-				<Property name="X" value="0.250000" />
-				<Property name="Y" value="0.400000" />
-				<Property name="Z" value="0.000000" />
-				<Property name="W" value="0.500000" />
-			</Property>
-			<Property name="ExtendedValues" />
-		</Property>
-		<Property name="Uniforms_Float" value="TkMaterialUniform_Float">
-			<Property name="Name" value="gTreeWindParams1Vec4" />
-			<Property name="Values">
-				<Property name="X" value="0.125000" />
-				<Property name="Y" value="1.500000" />
-				<Property name="Z" value="0.800000" />
-				<Property name="W" value="0.000000" />
-			</Property>
-			<Property name="ExtendedValues" />
-		</Property>
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="5">
+      <Property name="Name" value="gTreeWindParams0Vec4" />
+      <Property name="Values">
+        <Property name="X" value="0.250000" />
+        <Property name="Y" value="0.400000" />
+        <Property name="Z" value="0.000000" />
+        <Property name="W" value="0.500000" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="6">
+      <Property name="Name" value="gTreeWindParams1Vec4" />
+      <Property name="Values">
+        <Property name="X" value="0.130000" />
+        <Property name="Y" value="1.900000" />
+        <Property name="Z" value="0.900000" />
+        <Property name="W" value="0.000000" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
 ]]
                         },
                         {
@@ -3344,16 +3424,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
-		<Property name="Uniforms_UInt" value="TkMaterialUniform_UInt">
-			<Property name="Name" value="gDynamicFlags" />
-			<Property name="Values">
-				<Property name="X" value="1541" />
-				<Property name="Y" value="0" />
-				<Property name="Z" value="0" />
-				<Property name="W" value="0" />
-			</Property>
-			<Property name="ExtendedValues" />
-		</Property>
+    <Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
+      <Property name="Name" value="gDynamicFlags" />
+      <Property name="Values">
+        <Property name="X" value="1541" />
+        <Property name="Y" value="0" />
+        <Property name="Z" value="0" />
+        <Property name="W" value="0" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+    <Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="1">
+      <Property name="Name" value="gLightLayers" />
+      <Property name="Values">
+        <Property name="X" value="3" />
+        <Property name="Y" value="0" />
+        <Property name="Z" value="0" />
+        <Property name="W" value="0" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
 ]]
                         },
                         {
@@ -3361,19 +3451,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-		<Property name="Samplers" value="TkMaterialSampler">
-			<Property name="Name" value="gMasksMap" />
-			<Property name="Map" value="TEXTURES/PLANETS/BIOMES/COMMON/LEAVES/FRONDS/LEAFFRUIT.BASE.MASKS.DDS" />
-			<Property name="IsCube" value="false" />
-			<Property name="UseCompression" value="true" />
-			<Property name="UseMipMaps" value="true" />
-			<Property name="IsSRGB" value="false" />
-			<Property name="MaterialAlternativeId" value="" />
-			<Property name="TextureAddressMode" value="Wrap" />
-			<Property name="TextureFilterMode" value="Trilinear" />
-			<Property name="Anisotropy" value="0" />
-		</Property>
+    <Property name="Samplers" value="TkMaterialSampler" _index="1">
+      <Property name="Name" value="gMasksMap" />
+      <Property name="Map" value="TEXTURES/PLANETS/BIOMES/COMMON/LEAVES/FRONDS/LEAFFRUIT.BASE.MASKS.DDS" />
+      <Property name="IsCube" value="false" />
+      <Property name="UseCompression" value="true" />
+      <Property name="UseMipMaps" value="true" />
+      <Property name="IsSRGB" value="false" />
+      <Property name="MaterialAlternativeId" value="" />
+      <Property name="TextureAddressMode" value="Wrap" />
+      <Property name="TextureFilterMode" value="Trilinear" />
+      <Property name="Anisotropy" value="0" />
+    </Property>
 ]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+                            ["EXML_INDEX"] = "2",
                         },
                     }
                 },
@@ -3405,7 +3499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = 
+                    ["MBIN_FILE_SOURCE"] =
                     {
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE04\BARK1.MATERIAL.MBIN",
                         "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE05\BARK1.MATERIAL.MBIN",
@@ -3469,7 +3563,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LEAF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Metamaterial", "Models/Planets/Biomes/HQLush/HQTrees/Parts/HQTree01/Materials/LEAFWind.metamaterial.mXml"},
+                                {"Metamaterial", "Models/Planets/Biomes/HQLush/HQTrees/Parts/HQTree01/Materials/LEAFwind.metamaterial.mXml"},
                             }
                         },
                     }
@@ -3522,7 +3616,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-    <Property name="Flags" value="TkMaterialFlags">
+    <Property name="Flags" value="TkMaterialFlags" _index="6">
       <Property name="MaterialFlag" value="_F42_DETAIL_NORMAL" />
     </Property>
 ]]
@@ -3532,18 +3626,81 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-		<Property name="Samplers" value="TkMaterialSampler">
-			<Property name="Name" value="gNormal2Map" />
-			<Property name="Map" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARKGROUNDDECAL.BASE.1.NORMAL.DDS" />
-			<Property name="IsCube" value="false" />
-			<Property name="UseCompression" value="true" />
-			<Property name="UseMipMaps" value="true" />
-			<Property name="IsSRGB" value="false" />
-			<Property name="MaterialAlternativeId" value="" />
-			<Property name="TextureAddressMode" value="Wrap" />
-			<Property name="TextureFilterMode" value="Trilinear" />
-			<Property name="Anisotropy" value="0" />
-		</Property>
+    <Property name="Samplers" value="TkMaterialSampler" _index="5">
+      <Property name="Name" value="gNormal2Map" />
+      <Property name="Map" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARKGROUNDDECAL.BASE.1.NORMAL.DDS" />
+      <Property name="IsCube" value="false" />
+      <Property name="UseCompression" value="true" />
+      <Property name="UseMipMaps" value="true" />
+      <Property name="IsSRGB" value="false" />
+      <Property name="MaterialAlternativeId" value="" />
+      <Property name="TextureAddressMode" value="Wrap" />
+      <Property name="TextureFilterMode" value="Trilinear" />
+      <Property name="Anisotropy" value="0" />
+    </Property>
+]]
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE01\CAP.MATERIAL.MBIN",
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Flags"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["ADD"] =
+[[
+    <Property name="Flags" value="TkMaterialFlags" _index="6">
+      <Property name="MaterialFlag" value="_F42_DETAIL_NORMAL" />
+    </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/CAPS.BASE.1.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/CAPS.BASE.1.MASKS.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasks2Map"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARKGROUNDDECAL.BASE.1.MASKS.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/CAPS.BASE.1.NORMAL.DDS"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["ADD"] =
+[[
+    <Property name="Samplers" value="TkMaterialSampler" _index="5">
+      <Property name="Name" value="gNormal2Map" />
+      <Property name="Map" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARKGROUNDDECAL.BASE.1.NORMAL.DDS" />
+      <Property name="IsCube" value="false" />
+      <Property name="UseCompression" value="true" />
+      <Property name="UseMipMaps" value="true" />
+      <Property name="IsSRGB" value="false" />
+      <Property name="MaterialAlternativeId" value="" />
+      <Property name="TextureAddressMode" value="Wrap" />
+      <Property name="TextureFilterMode" value="Trilinear" />
+      <Property name="Anisotropy" value="0" />
+    </Property>
 ]]
                         },
                     }
@@ -3557,7 +3714,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-    <Property name="Flags" value="TkMaterialFlags">
+    <Property name="Flags" value="TkMaterialFlags" _index="6">
       <Property name="MaterialFlag" value="_F42_DETAIL_NORMAL" />
     </Property>
 ]]
@@ -3595,7 +3752,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-    <Property value="TkMaterialSampler">
+    <Property name="Samplers" value="TkMaterialSampler" _index="5">
       <Property name="Name" value="gNormal2Map" />
       <Property name="Map" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARKGROUNDDECAL.BASE.1.NORMAL.DDS" />
       <Property name="IsCube" value="false" />
@@ -3728,14 +3885,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F11_ALPHACUTOUT"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Metamaterial", "Models/Planets/Biomes/Floral/SmallPlant/FloralPlantSmall/Materials/PetalsWIND.metamaterial.mXml"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F03_NORMALMAP"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property name="Flags" value="TkMaterialFlags">
+    <Property name="Flags" value="TkMaterialFlags" _index="2">
       <Property name="MaterialFlag" value="_F15_WIND" />
     </Property>
 ]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F21_VERTEXCUSTOM"},
+                            ["EXML_INDEX"] = "3",
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -3749,6 +3916,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name",         "gWaveTwoFallOffAndSpeedVec4"},
                             },
                             ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
+                            ["EXML_INDEX"] = "5",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
+                            ["EXML_INDEX"] = "6",
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
@@ -4113,7 +4288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HeightFogFadeOutStrength", "0.5"},
                                 {"HeightFogMax",             "0.98"},
                                 {"FogHeight",                "128"},
-                                {"DepthOfField",             "0.25"},
+                                {"DepthOfField",             "0"},
                                 {"DepthOfFieldDistance",     "10"},
                                 {"DepthOfFieldFade",         "1000"},
                             }
@@ -4175,7 +4350,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HeightFogFadeOutStrength", "0.5"},
                                 {"HeightFogMax",             "0.98"},
                                 {"FogHeight",                "128"},
-                                {"DepthOfField",             "0.25"},
+                                {"DepthOfField",             "0"},
                                 {"DepthOfFieldDistance",     "10"},
                                 {"DepthOfFieldFade",         "1000"},
                             }
@@ -4230,7 +4405,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HeightFogFadeOutStrength", "0.500000"},
                                 {"HeightFogMax",             "0.980000"},
                                 {"FogHeight",                "128.000000"},
-                                {"DepthOfField",             "0.250000"},
+                                {"DepthOfField",             "0.000000"},
                                 {"DepthOfFieldDistance",     "10.000000"},
                                 {"DepthOfFieldFade",         "1000.000000"},
                             }
@@ -4241,7 +4416,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"SunStrength",          "0.4"},
                                 {"SunSize",              "0.002"},
-                                {"SpaceFogPlanetMax",    "0.8"},
+                                {"SpaceFogPlanetMax",    "0.7"},
                                 {"NebulaCloudStrength1", "0.55"},
                             }
                         },
@@ -4250,7 +4425,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SunStrength",              "0.8"},
-                                {"SpaceFogPlanetMax",        "0.8"},
+                                {"SpaceFogPlanetMax",        "0.7"},
                                 {"NebulaSeed",               "200"},
                                 {"NebulaDistortionStrength", "0.2"},
                             }
@@ -4286,7 +4461,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes" />
   <Property name="Children">
-    <Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="DUDFogClearCold01HeavyAir" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="HEAVYAIR" />
@@ -4303,14 +4478,14 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="DATA" />
           <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/DUDFOGCLEARCOLD01.HEAVYAIR.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData" _index="1">
       <Property name="Name" value="DUDFogClearCold02HeavyAir" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="HEAVYAIR" />
@@ -4327,7 +4502,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="DATA" />
           <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/DUDFOGCLEARCOLD02.HEAVYAIR.MBIN" />
         </Property>
@@ -4509,6 +4684,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="cTkMaterialData">
   <Property name="Name" value="FogSwampMat" />
   <Property name="Metamaterial" value="Models/Effects/Fog/SwampFog/Materials/FogSwampMat.metamaterial.mXml" />
@@ -4518,34 +4694,23 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="DisableZTest" value="false" />
   <Property name="CreateFur" value="false" />
   <Property name="EnableLodFade" value="true" />
+  <Property name="UseShaderMill" value="false" />
   <Property name="Link" value="" />
   <Property name="Shader" value="SHADERS/PARTICLE.SHADER.BIN" />
   <Property name="Flags" />
   <Property name="FxFlags">
-    <Property name="FxFlags" value="TkMaterialFxFlags">
-      <Property name="MaterialFxFlag" value="_X01_DIFFUSEMAP" />
-    </Property>
-    <Property name="FxFlags" value="TkMaterialFxFlags">
+    <Property name="FxFlags" value="TkMaterialFxFlags" _index="0">
       <Property name="MaterialFxFlag" value="_X07_UNLIT" />
     </Property>
-    <Property name="FxFlags" value="TkMaterialFxFlags">
-      <Property name="MaterialFxFlag" value="_X09_TRANSPARENT" />
-    </Property>
-    <Property name="FxFlags" value="TkMaterialFxFlags">
+    <Property name="FxFlags" value="TkMaterialFxFlags" _index="1">
       <Property name="MaterialFxFlag" value="_X13_UVANIMATION" />
     </Property>
-    <Property name="FxFlags" value="TkMaterialFxFlags">
+    <Property name="FxFlags" value="TkMaterialFxFlags" _index="2">
       <Property name="MaterialFxFlag" value="_X14_UVSCROLL" />
-    </Property>
-    <Property name="FxFlags" value="TkMaterialFxFlags">
-      <Property name="MaterialFxFlag" value="_X22_TRANSPARENT_SCALAR" />
-    </Property>
-    <Property name="FxFlags" value="TkMaterialFxFlags">
-      <Property name="MaterialFxFlag" value="_X23_TRANSLUCENT" />
     </Property>
   </Property>
   <Property name="Uniforms_Float">
-    <Property name="Uniforms_Float" value="TkMaterialUniform_Float">
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="0">
       <Property name="Name" value="gMaterialColourVec4" />
       <Property name="Values">
         <Property name="X" value="1.000000" />
@@ -4555,7 +4720,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="ExtendedValues" />
     </Property>
-    <Property name="Uniforms_Float" value="TkMaterialUniform_Float">
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="1">
       <Property name="Name" value="gMaterialParamsVec4" />
       <Property name="Values">
         <Property name="X" value="0.900000" />
@@ -4565,7 +4730,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="ExtendedValues" />
     </Property>
-    <Property name="Uniforms_Float" value="TkMaterialUniform_Float">
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="2">
       <Property name="Name" value="gMaterialParams2Vec4" />
       <Property name="Values">
         <Property name="X" value="0.000000" />
@@ -4575,7 +4740,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="ExtendedValues" />
     </Property>
-    <Property name="Uniforms_Float" value="TkMaterialUniform_Float">
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="3">
       <Property name="Name" value="gMaterialSFXVec4" />
       <Property name="Values">
         <Property name="X" value="0.000000" />
@@ -4585,7 +4750,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="ExtendedValues" />
     </Property>
-    <Property name="Uniforms_Float" value="TkMaterialUniform_Float"
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="4">
       <Property name="Name" value="gMaterialSFXColVec4" />
       <Property name="Values">
         <Property name="X" value="0.000000" />
@@ -4595,7 +4760,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="ExtendedValues" />
     </Property>
-    <Property name="Uniforms_Float" value="TkMaterialUniform_Float">
+    <Property name="Uniforms_Float" value="TkMaterialUniform_Float" _index="5">
       <Property name="Name" value="gUVScrollStepVec4" />
       <Property name="Values">
         <Property name="X" value="1.000000" />
@@ -4607,11 +4772,11 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="Uniforms_UInt">
-    <Property name="Uniforms_UInt" value="TkMaterialUniform_UInt">
+    <Property name="Uniforms_UInt" value="TkMaterialUniform_UInt" _index="0">
       <Property name="Name" value="gDynamicFlags" />
       <Property name="Values">
         <Property name="X" value="49152" />
-        <Property name="Y" value="0" />
+        <Property name="Y" value="15" />
         <Property name="Z" value="0" />
         <Property name="W" value="0" />
       </Property>
@@ -4619,7 +4784,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="Samplers">
-    <Property name="Samplers" value="TkMaterialSampler">
+    <Property name="Samplers" value="TkMaterialSampler" _index="0">
       <Property name="Name" value="gDiffuseMap" />
       <Property name="Map" value="TEXTURES/EFFECTS/FOG/SWAMPFOGANIM.DDS" />
       <Property name="IsCube" value="false" />
@@ -5118,7 +5283,7 @@ for i = 1, #DataTable do
         ["PRECEDING_KEY_WORDS"] = {"Settings"},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
-    
+
     BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcWeatherColourSettingList"},

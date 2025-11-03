@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "MOD_DUD_TractorBeam_v564-A",
+["MOD_FILENAME"]    = "MOD_DUD_TractorBeam_v606-A",
 ["MOD_AUTHOR"]      = "jasondude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.64",
+["NMS_VERSION"]     = "6.06",
 ["MOD_DESCRIPTION"] = "",
 ["MODIFICATIONS"]   =
     {
@@ -34,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"HasOwnGravity",       "True"},
+                                {"HasOwnGravity",       "true"},
                                 {"ApproachSpeed",       "120"},
                                 {"PlayerAutoLandRange", "100"},
                                 {"LandingSpeed",        "5"},
@@ -51,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"HasOwnGravity",       "True"},
+                                {"HasOwnGravity",       "true"},
                                 {"ApproachSpeed",       "120"},
                                 {"ApproachAngle",       "40"},
                                 {"PlayerAutoLandRange", "300"},
@@ -69,7 +69,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"HasOwnGravity",       "True"},
+                                {"HasOwnGravity",       "true"},
                                 {"ApproachSpeed",       "120"},
                                 {"ApproachAngle",       "40"},
                                 {"PlayerAutoLandRange", "300"},

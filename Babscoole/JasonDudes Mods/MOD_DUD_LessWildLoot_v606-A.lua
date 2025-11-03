@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_LessWildLoot_v558-A",
+["MOD_FILENAME"]            = "MOD_DUD_LessWildLoot_v606-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.58",
+["NMS_VERSION"]             = "6.06",
 ["MODIFICATIONS"]           =
     {
         {
@@ -29,8 +29,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CollideWithPlayerVehicle", "True"},
-                                {"DestroyedByPlayerVehicle", "False"},
+                                {"CollideWithPlayerVehicle", "true"},
+                                {"DestroyedByPlayerVehicle", "false"},
                             }
                         },
                         {
@@ -83,8 +83,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Placement",                "DEBRIS"},
                                 {"OverlapStyle",             "None"},
-                                {"CollideWithPlayerVehicle", "False"},
-                                {"DestroyedByPlayerVehicle", "True"},
+                                {"CollideWithPlayerVehicle", "false"},
+                                {"DestroyedByPlayerVehicle", "true"},
                             }
                         },
                         {
@@ -126,7 +126,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Placement",                "CRATES"},
                                 {"MaxAngle",                 "45"},
-                                {"DestroyedByPlayerVehicle", "True"},
+                                {"DestroyedByPlayerVehicle", "true"},
                             }
                         },
                         {

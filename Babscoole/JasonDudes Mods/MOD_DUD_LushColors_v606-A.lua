@@ -146,10 +146,10 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_LushColors_v575-A",
+["MOD_FILENAME"]  = "MOD_DUD_LushColors_v606-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.75",
+["NMS_VERSION"]   = "6.06",
 ["MODIFICATIONS"] =
     {
         {
@@ -183,14 +183,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "COLOUR"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Probability", "0.500000"}
+                                {"Probability", "1.000000"}
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "COLOUR", "Textures", "TkProceduralTexture"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Probability", "0.500000"}
+                                {"Probability", "1.000000"}
                             }
                         },
                         {
@@ -198,7 +198,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette", "Grass"}
+                                {"Palette", "Plant"}
                             }
                         },
                         {
@@ -251,7 +251,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Textures", "TkProceduralTexture"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Probability", "0.500000"}
+                                {"Probability", "1.000000"}
                             }
                         },
                         {
@@ -259,7 +259,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette", "GrassAlt"}
+                                {"Palette", "Grass"}
                             }
                         },
                         {
@@ -318,14 +318,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Probability", "0.500000"}
+                                {"Probability", "1.000000"}
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Textures", "TkProceduralTexture"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Probability", "0.500000"}
+                                {"Probability", "1.000000"}
                             }
                         },
                         {
@@ -333,7 +333,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette", "GrassAlt"}
+                                {"Palette", "Plant"}
                             }
                         },
                         {
@@ -385,7 +385,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "STRIPES", "Textures", "TkProceduralTexture"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Probability", "0.500000"}
+                                {"Probability", "1.000000"}
                             }
                         },
                         {
@@ -393,7 +393,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette", "GrassAlt"}
+                                {"Palette", "Plant"}
                             }
                         },
                         {
@@ -445,7 +445,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS", "Textures", "TkProceduralTexture"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Probability", "0.500000"}
+                                {"Probability", "1.000000"}
                             }
                         },
                         {
@@ -453,7 +453,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette", "GrassAlt"}
+                                {"Palette", "Plant"}
                             }
                         },
                         {
@@ -501,71 +501,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 ]]
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "BASE"},
-                            ["PRECEDING_KEY_WORDS"] = {"Textures"},
-                            ["ADD_OPTION"] = "ADDendSECTION",
-                            ["ADD"] =
-[[
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="3" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Wood" />
-            <Property name="ColourAlt" value="Alternative3" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARRENBARK.BASE.3.DDS" />
-        </Property>
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="2" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Wood" />
-            <Property name="ColourAlt" value="Alternative3" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARRENBARK.BASE.2.DDS" />
-        </Property>
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="1" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Wood" />
-            <Property name="ColourAlt" value="Alternative3" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARRENBARK.BASE.1.DDS" />
-        </Property>
-]]
-                        },
                     }
                 },
                 {
@@ -610,7 +545,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette", "GrassAlt"}
+                                {"Palette", "Plant"}
                             }
                         },
                         {
@@ -663,7 +598,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette", "GrassAlt"}
+                                {"Palette", "Plant"}
                             }
                         },
                         {
@@ -716,7 +651,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette", "GrassAlt"}
+                                {"Palette", "Plant"}
                             }
                         },
                         {
@@ -769,7 +704,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette", "GrassAlt"}
+                                {"Palette", "Plant"}
                             }
                         },
                         {
@@ -822,187 +757,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette", "GrassAlt"}
+                                {"Palette", "Plant"}
                             }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "BASE"},
-                            ["PRECEDING_KEY_WORDS"] = {"Textures"},
-                            ["ADD_OPTION"] = "ADDendSECTION",
-                            ["ADD"] =
-[[
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="9" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Wood" />
-            <Property name="ColourAlt" value="Alternative3" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.9.DDS" />
-        </Property>
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="8" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Wood" />
-            <Property name="ColourAlt" value="Alternative3" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.8.DDS" />
-        </Property>
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="7" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Wood" />
-            <Property name="ColourAlt" value="Alternative3" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.7.DDS" />
-        </Property>
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="6" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Wood" />
-            <Property name="ColourAlt" value="Alternative3" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.6.DDS" />
-        </Property>
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="5" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Wood" />
-            <Property name="ColourAlt" value="Alternative3" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.5.DDS" />
-        </Property>
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="4" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Wood" />
-            <Property name="ColourAlt" value="Alternative3" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.4.DDS" />
-        </Property>
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="3" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Wood" />
-            <Property name="ColourAlt" value="Alternative3" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.3.DDS" />
-        </Property>
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="2" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Wood" />
-            <Property name="ColourAlt" value="Alternative3" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.2.DDS" />
-        </Property>
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="1" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Wood" />
-            <Property name="ColourAlt" value="Alternative3" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.1.DDS" />
-        </Property>
-]]
                         },
                     }
                 },
@@ -1015,7 +771,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette",   "Grass"},
+                                {"Palette",   "GrassAlt"},
                                 {"ColourAlt", "Primary"}
                             }
                         },
@@ -1024,7 +780,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette",   "Grass"},
+                                {"Palette",   "GrassAlt"},
                                 {"ColourAlt", "Primary"}
                             }
                         },
@@ -1033,7 +789,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette",   "Grass"},
+                                {"Palette",   "GrassAlt"},
                                 {"ColourAlt", "Primary"}
                             }
                         },
@@ -1050,7 +806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ColourAlt" value="Primary" />
             <Property name="Index" value="-1" />
           </Property>
-          <Property name="Probability" value="1.000000" />
+          <Property name="Probability" value="0.500000" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
           <Property name="Multiply" value="false" />
           <Property name="OverrideAverageColour" value="false" />
@@ -1069,7 +825,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ColourAlt" value="Primary" />
             <Property name="Index" value="-1" />
           </Property>
-          <Property name="Probability" value="1.000000" />
+          <Property name="Probability" value="0.500000" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
           <Property name="Multiply" value="false" />
           <Property name="OverrideAverageColour" value="false" />
@@ -1088,64 +844,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ColourAlt" value="Primary" />
             <Property name="Index" value="-1" />
           </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANTA.OVERLAY.EDGETOCENTER.DDS" />
-        </Property>
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="SPOTS" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Leaf" />
-            <Property name="ColourAlt" value="Primary" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANTA.OVERLAY.SPOTS.DDS" />
-        </Property>
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="CENTERTOEDGE" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Leaf" />
-            <Property name="ColourAlt" value="Primary" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
-          <Property name="TextureGameplayUse" value="IgnoreName" />
-          <Property name="Multiply" value="false" />
-          <Property name="OverrideAverageColour" value="false" />
-          <Property name="AverageColour">
-            <Property name="R" value="0.000000" />
-            <Property name="G" value="0.000000" />
-            <Property name="B" value="0.000000" />
-            <Property name="A" value="0.000000" />
-          </Property>
-          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANTA.OVERLAY.CENTERTOEDGE.DDS" />
-        </Property>
-        <Property name="Textures" value="TkProceduralTexture">
-          <Property name="Name" value="EDGETOCENTER" />
-          <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Leaf" />
-            <Property name="ColourAlt" value="Primary" />
-            <Property name="Index" value="-1" />
-          </Property>
-          <Property name="Probability" value="1.000000" />
+          <Property name="Probability" value="0.500000" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
           <Property name="Multiply" value="false" />
           <Property name="OverrideAverageColour" value="false" />
@@ -1165,30 +864,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Palette", "GrassAlt"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\CORAL\MEDIUMPROP\CORALDISC.TEXTURE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "GRADIENT", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette",   "Wood"},
-                                {"ColourAlt", "Alternative1"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Stone"},
+                                {"Palette", "Grass"}
                             }
                         },
                     }

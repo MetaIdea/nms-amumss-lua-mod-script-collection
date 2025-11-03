@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_TERRAFIRMA3_V572-A",
+["MOD_FILENAME"]            = "MOD_DUD_TERRAFIRMA3_V606-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.72",
+["NMS_VERSION"]             = "6.06",
 ["MODIFICATIONS"]           =
     {
         {
