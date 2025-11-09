@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "__MOD_NO_FADE.pak",
+["MOD_FILENAME"]    = "__MOD_NO_FADE",
 ["MOD_DESCRIPTION"] = "Tweak that removes the fading effect from terrain and objects",
 ["MOD_AUTHOR"]      = "WoodyMontana",
 ["LUA_AUTHOR"]      = "Babscoole",
@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =

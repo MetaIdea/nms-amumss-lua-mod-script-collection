@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "Pirates Always Engage Pirates Attack More",
 ["MOD_AUTHOR"]				= "DeathWrench",
-["NMS_VERSION"]				= "6.10",
+["NMS_VERSION"]				= "6.16",
 ["MODIFICATIONS"] 			= 
 	{
 		{

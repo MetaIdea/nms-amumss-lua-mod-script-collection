@@ -68,10 +68,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "MOD_DUD_DynamicStanding_v612-A",
+["MOD_FILENAME"]    = "MOD_DUD_DynamicStanding_v616-A",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.12",
+["NMS_VERSION"]     = "6.16",
 ["MODIFICATIONS"]   =
     {
         {
@@ -163,7 +163,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "KILLED_CIV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"AmountMax", "-3"},
+                                {"AmountMin", "-2"},
+                                {"AmountMax", "-5"},
                             }
                         },
                         {
@@ -451,35 +452,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"MissionID", "D_COMMUNITY_01"},
-                                {"MissionID", "U4LORE_01"},
-                                {"MissionID", "U4LORE_02"},
-                                {"MissionID", "U4LORE_03"},
-                                {"MissionID", "U4LORE_04"},
-                                {"MissionID", "U4LORE_05"},
-                                {"MissionID", "U4LORE_06"},
-                                {"MissionID", "U4LORE_07"},
-                                {"MissionID", "U4LORE_08"},
-                                {"MissionID", "U4LORE_09"},
-                                {"MissionID", "U4LORE_10"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Distance",            "9999999999"},
-                                {"EndEventWhenReached", "true"},
-                                {"DistanceTimeout",     "true"},
-                                {"ScanEventGPSHint",    "Accurate"},
-                                {"AlwaysAllowInShip",   "true"},
-                            }
-                        },
-                        {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "R_AF_DAILY_SET", "List", "GcRewardTableItem"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-          <Property name="List" value="GcRewardTableItem">
+          <Property name="List" value="GcRewardTableItem" _index="1">
             <Property name="PercentageChance" value="25.000000" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding">
@@ -488,12 +465,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="AlienRace" value="Explorers" />
                 </Property>
                 <Property name="AmountMin" value="-1" />
-                <Property name="AmountMax" value="-1" />
+                <Property name="AmountMax" value="-2" />
                 <Property name="UseExpeditionEventSystemRace" value="false" />
               </Property>
             </Property>
           </Property>
-          <Property name="List" value="GcRewardTableItem">
+          <Property name="List" value="GcRewardTableItem" _index="2">
             <Property name="PercentageChance" value="25.000000" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding">
@@ -502,12 +479,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="AlienRace" value="Traders" />
                 </Property>
                 <Property name="AmountMin" value="-1" />
-                <Property name="AmountMax" value="-1" />
+                <Property name="AmountMax" value="-2" />
                 <Property name="UseExpeditionEventSystemRace" value="false" />
               </Property>
             </Property>
           </Property>
-          <Property name="List" value="GcRewardTableItem">
+          <Property name="List" value="GcRewardTableItem" _index="3">
             <Property name="PercentageChance" value="25.000000" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding">
@@ -516,13 +493,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="AlienRace" value="Warriors" />
                 </Property>
                 <Property name="AmountMin" value="-1" />
-                <Property name="AmountMax" value="-1" />
+                <Property name="AmountMax" value="-2" />
                 <Property name="UseExpeditionEventSystemRace" value="false" />
               </Property>
             </Property>
           </Property>
-          <Property name="List" value="GcRewardTableItem">
-            <Property name="PercentageChance" value="10.000000" />
+          <Property name="List" value="GcRewardTableItem" _index="4">
+            <Property name="PercentageChance" value="25.000000" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardFactionStanding">
               <Property name="GcRewardFactionStanding">
@@ -535,8 +512,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="List" value="GcRewardTableItem">
-            <Property name="PercentageChance" value="10.000000" />
+          <Property name="List" value="GcRewardTableItem" _index="5">
+            <Property name="PercentageChance" value="25.000000" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardFactionStanding">
               <Property name="GcRewardFactionStanding">
@@ -549,8 +526,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="List" value="GcRewardTableItem">
-            <Property name="PercentageChance" value="10.000000" />
+          <Property name="List" value="GcRewardTableItem" _index="6">
+            <Property name="PercentageChance" value="25.000000" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardFactionStanding">
               <Property name="GcRewardFactionStanding">

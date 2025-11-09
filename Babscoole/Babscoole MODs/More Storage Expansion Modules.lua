@@ -194,7 +194,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "More Storage Expansion Modules",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Increases the chance and amount of multitool, ship, and freighter storage modules rewards",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.16",
 ["MODIFICATIONS"]   =
     {
         {

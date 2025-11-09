@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Sentinel Police Player Ship",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.16",
 ["MOD_DESCRIPTION"] = "Cockpitable sentinel police ship you can get via quick action emote menu action",
 ["MODIFICATIONS"]   =
     {
@@ -184,9 +184,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="GcRewardSpecificShip">
                 <Property name="ShipResource" value="GcResourceElement">
                   <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERPOLICE.SCENE.MBIN" />
-                  <Property name="ResHandle" value="GcResource">
-                    <Property name="ResourceID" value="0" />
-                  </Property>
                   <Property name="Seed" value="1" />
                   <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
                     <Property name="Samplers" />
@@ -751,7 +748,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkLocalisationTable">
   <Property name="Table">
-    <Property value="TkLocalisationEntry">
+    <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="Police" />
       <Property name="English" value="Police" />
       <Property name="French" value="Police" />
@@ -771,7 +768,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Japanese" value="Police" />
       <Property name="USEnglish" value="Police" />
     </Property>
-    <Property value="TkLocalisationEntry">
+    <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="POLICE" />
       <Property name="English" value="POLICE" />
       <Property name="French" value="POLICE" />

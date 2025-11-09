@@ -15,10 +15,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= "Living Ship Reduced Mission Times 6.10",
+  ["MOD_FILENAME"] 			= "Living Ship Reduced Mission Times",
   ["MOD_DESCRIPTION"]		= "Reduces the real time wait on the Living ship missions",
   ["MOD_AUTHOR"]			= "Zay",
-  ["NMS_VERSION"]			= "6.10",
+  ["NMS_VERSION"]			= "6.16",
   ["MODIFICATIONS"] 		=
 	{
 		{
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{
 					["MBIN_FILE_SOURCE"]  = {"METADATA\SIMULATION\MISSIONS\TABLES\SPACEPOIMISSIONTABLE.MBIN"},
 					["MXML_CHANGE_TABLE"] = change_table
-				},
+				}
 			}
 		}
 	}

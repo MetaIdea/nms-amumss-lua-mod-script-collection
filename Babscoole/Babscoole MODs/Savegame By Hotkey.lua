@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Savegame By Hotkey",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.16",
 ["MODIFICATIONS"]   =
     {
         {
@@ -403,7 +403,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkLocalisationTable">
   <Property name="Table">
-    <Property value="TkLocalisationEntry">
+    <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="Save" />
       <Property name="English" value="Save" />
       <Property name="French" value="Save" />
@@ -423,7 +423,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Japanese" value="Save" />
       <Property name="USEnglish" value="Save" />
     </Property>
-    <Property value="TkLocalisationEntry">
+    <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="SAVEGAME" />
       <Property name="English" value="SAVEGAME" />
       <Property name="French" value="SAVEGAME" />

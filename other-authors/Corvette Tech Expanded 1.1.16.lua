@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= "Corvette Tech Expanded 6.10", 
+["MOD_FILENAME"] 			= "Corvette Tech Expanded", 
 ["MOD_AUTHOR"]				= "Zay",
-["NMS_VERSION"]				= "6.10",
-["MOD_DESCRIPTION"]			= "Increases Corvette tech slot upgrade capacity by 2 more rows (10x8)",
+["NMS_VERSION"]				= "6.16",
+["MOD_DESCRIPTION"]			= "Increases Corvette tech slot upgrade capacity by 2 more rows for all classes.",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -18,28 +18,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]	= {"Corvette", "GcShipInventoryMaxUpgradeCapacity"},						
 							["PRECEDING_KEY_WORDS"]	= {"MaxTechInventoryCapacity"},
 							["VALUE_CHANGE_TABLE"]	=
-							{							
-								{"S",	80},	--60
+							{	
+								{"C",	50},	--30
+								{"B",	60},	--40
+								{"A",	70},	--50
+								{"S",	80}		--60
 						
-							},
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Corvette", "GcInventoryLayoutGenerationDataEntry"},
-							["VALUE_CHANGE_TABLE"]	=
-							{
-								{"MaxTechSlots",	80},	--30
-							},
-						},
-						
+							}
+						},						
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Corvette", "GcInventoryLayoutGenerationDataEntry"},
 							["PRECEDING_KEY_WORDS"]	= {"TechBounds"},						
 							["VALUE_CHANGE_TABLE"]	=
-							{							
-								{"MaxHeightLarge",	8}		--6
-							},
-						},
+							{			
+								{"MaxWidthSmall",		10},	--7
+								{"MaxHeightSmall",		8},		--3
+								{"MaxHeightStandard",	8},		--3								
+								{"MaxHeightLarge",		8}		--6
+							}
+						}
 					}
 				}
 			}

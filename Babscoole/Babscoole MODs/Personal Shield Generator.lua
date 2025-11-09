@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Personal Shield Generator",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.16",
 ["MOD_DESCRIPTION"] = "Protective shield against hazards, bullets ...",
 ["MODIFICATIONS"]   =
     {
@@ -417,7 +417,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkLocalisationTable">
   <Property name="Table">
-    <Property value="TkLocalisationEntry">
+    <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="Shield" />
       <Property name="English" value="Shield" />
       <Property name="French" value="Shield" />
@@ -437,7 +437,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Japanese" value="Shield" />
       <Property name="USEnglish" value="Shield" />
     </Property>
-    <Property value="TkLocalisationEntry">
+    <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="TOGGLE_SHIELD" />
       <Property name="English" value="TOGGLE_SHIELD" />
       <Property name="French" value="TOGGLE_SHIELD" />

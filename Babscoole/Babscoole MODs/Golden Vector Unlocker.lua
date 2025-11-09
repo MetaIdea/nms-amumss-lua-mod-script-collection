@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Golden Vector Unlocker",
 ["MOD_AUTHOR"]      = "Babscoole & Mjstral",
 ["MOD_DESCRIPTION"] = "Unlock a reward via speical emote menu quick action",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.16",
 ["MODIFICATIONS"]   =
     {
         {
@@ -198,7 +198,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkLocalisationTable">
   <Property name="Table">
-    <Property value="TkLocalisationEntry">
+    <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="]] .. REWARD_TITLE .. [[" />
       <Property name="English" value="]] .. REWARD_TITLE .. [[" />
       <Property name="French" value="]] .. REWARD_TITLE .. [[" />
@@ -218,7 +218,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Japanese" value="]] .. REWARD_TITLE .. [[" />
       <Property name="USEnglish" value="]] .. REWARD_TITLE .. [[" />
     </Property>
-    <Property value="TkLocalisationEntry">
+    <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="EMOTE_]] .. REWARD_ABBR .. [[" />
       <Property name="English" value="EMOTE_]] .. REWARD_ABBR .. [[" />
       <Property name="French" value="EMOTE_]] .. REWARD_ABBR .. [[" />

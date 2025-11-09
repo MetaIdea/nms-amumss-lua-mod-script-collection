@@ -1,3 +1,436 @@
+-- Loaded_M <D:\MODZ_stuff\NoMansSky\Tools\AMUMSS\ModScript\ModHelperScripts\LIB\_lua_2_mxml.lua>
+-------------------------------------------------------------------------------
+---	MXML 2 LUA ... by lMonk ... version: 1.0.03
+---	A tool for converting between mxml file format and lua table.
+--- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
+-------------------------------------------------------------------------------
+---	MXML builder - Build mxml from lua table
+--- Tools for color -and vector class, ordered string list
+-------------------------------------------------------------------------------
+
+--	=> Generate an MXML-tagged text from a lua table representation of mxml file
+--	@param class: a lua2mxml formatted table
+function ToMxml(class)
+	--	replace a boolean with its text equivalent (ignore otherwise)
+	--	@param b: any value
+	local function bool(b)
+		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
+	end
+	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite'}
+	local function mxml_r(tlua)
+		local out = {}
+		function out:add(t)
+			for _,v in ipairs(t) do self[#self+1] = v end
+		end
+		for attr, cls in pairs(tlua) do
+			if attr ~= 'meta' then
+				out:add({'<Property '})
+				if type(cls) == 'table' and cls.meta then
+				-- add new section and recurs for nested sections
+					for _,at in ipairs(at_ord) do
+						if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
+					end
+					-- for k, v in pairs(cls.meta) do
+						-- if k:sub(-1) ~= '_' then out:add({k, '="', bool(v), '"', ' '}) end
+					-- end
+					table.remove(out) -- trim last space
+					out:add({'>', mxml_r(cls), '</Property>'})
+				else
+				-- add section properties
+					local att, val = nil, nil
+					if tonumber(attr) then
+						if type(cls) == 'table' then
+							att, val = next(cls)
+						else
+							att = tlua.meta.name
+							val = cls
+						end
+					else
+						att = attr
+						val = cls
+					end
+					if att == 'name' then
+						out:add({att, '="', bool(val), '"/>'})
+					else
+						out:add({'name="', att, '" value="', bool(val), '"/>'})
+					end
+				end
+			end
+		end
+		return table.concat(out)
+	end
+	-------------------------------------------------------------------------
+	-- check the table level structure and meta placement
+	-- add parent table for the recursion and handle multiple tables
+	if type(class) ~= 'table' then return nil end
+	local klen=0; for _ in pairs(class) do klen=klen+1 end
+
+	if klen == 1 and class[1].meta then
+		return mxml_r(class)
+	elseif class.meta and klen > 1 then
+		return mxml_r( {class} )
+	-- concatenate unrelated (instead of nested) mxml sections
+	elseif type(class[1]) == 'table' and klen > 1 then
+		local T = {}
+		for _, tb in pairs(class) do
+			T[#T+1] = mxml_r((tb.meta and klen > 1) and {tb} or tb)
+		end
+		return table.concat(T)
+	end
+	return nil
+end
+
+--	=> Adds the header and class template for a standard mxml file
+--	@param data: A lua2mxml formatted table
+--	@param template: [optional] A class template string. Overwrites the internal template!
+function ToMxmlFile(tlua, ext_tmpl)
+	local wrapper = '<?xml version="1.0" encoding="utf-8"?><Data template="%s">%s</Data>'
+	if type(tlua) == 'string' then
+		return wrapper:format(ext_tmpl, tlua)
+	end
+	-- replace existing or add template layer if needed
+	if ext_tmpl then
+		if tlua.meta.template then
+			tlua.meta.template = ext_tmpl
+		else
+			tlua = {
+				meta = {template=ext_tmpl},
+				tlua
+			}
+		end
+	end
+	-- strip mock template
+	local txt_data = ToMxml(tlua):sub(#tlua.meta.template + 23, -12)
+	return wrapper:format(tlua.meta.template, txt_data)
+end
+
+--	=> Translates a 0xFF hex section from a longer string to 0-1.0 percentage
+--	@param hex: hex string (case insensitive [A-z0-9])
+--	@param i: the hex pair's index
+function Hex2Percent(hex, i)
+	return math.floor(tonumber(hex:sub(i * 2 - 1, i * 2), 16) / 255 * 1000) / 1000
+end
+
+--	=> Builds a Colour class
+--	@param T: ARGB color in percentage values or hex format.
+--	  Either {1.0, 0.5, 0.4, 0.3} or {<a=1.0> <,r=0.5> <,g=0.4> <,b=0.3>} or 'FFA0B1C2'
+--	@param color_name: class name
+function ColorData(C, color_name)
+	local argb = {}
+	if type(C) == 'string' then
+		for i=#C > 6 and 1 or 2, #C/2 do
+			argb[i] = Hex2Percent(C, i)
+		end
+	elseif C == 0 then
+		argb = {1, -1, -1, -1} -- 'real' black
+	else
+		argb = C or {}
+	end
+	return {
+		meta= {name=color_name},
+		{A	= (argb[1] or argb.a) or 1},
+		{R	= (argb[2] or argb.r) or 1},
+		{G	= (argb[3] or argb.g) or 1},
+		{B	= (argb[4] or argb.b) or 1}
+	}
+end
+
+--	=> Builds an amumss VCT table from a hex color string
+--	@param h: hex color string in ARGB or RGB format (default is white)
+--	(not really the place for this one, but it's convenient)
+function Hex2VCT(h)
+	local argb = {{'A', 1}, {'R', -1}, {'G', -1}, {'B', -1}}
+	if h == 0 then return argb end -- 'real' black
+	for i=#h > 6 and 1 or 2, #h/2 do
+		argb[i][2] = Hex2Percent(h, i)
+	end
+	return argb
+end
+
+--	=> Builds a Vector 2, 3 or 4f class, depending on number of values
+--	@param T: xy<z<t>> vector
+--	  Either {1.0, 0.5 <,0.4, <,2>>} or {x=1.0, y=0.5 <,z=0.4 <,t=2>>}
+--	@param vector_name: class name
+function VectorData(T, vector_name)
+	if not T then return nil end
+	return {
+		-- if a name is present then use 2-property tags
+		meta= {name=vector_name},
+		{X	= T[1] or T.x},
+		{Y	= T[2] or T.y},
+		{Z	= (T[3] or T.z) or nil},
+		{W	= (T[4] or T.w) or nil}
+	}
+end
+
+--	=> Builds a 'name' type array of strings
+--	@param t: an ordered (non-keyed) table of strings
+--	@param s_arr_name: class name
+function StringArray(t, s_arr_name)
+	if not t then return nil end
+	local T = { meta = {name=s_arr_name} }
+	for _,s in ipairs(t) do
+		T[#T+1] = { [s_arr_name] = s }
+	end
+	return T
+end
+
+--	=> Determine if received is a single or multi-item
+--	then process items through the received function
+--	@param items: table of item properties or a non-keyed table of items (keys are ignored)
+--	@param acton: the function to process the items in the table
+function ProcessOnenAll(items, acton)
+	-- first key = 1 means multiple entries
+	if next(items) == 1 then
+		local T = {}
+		for _,e in ipairs(items) do
+			T[#T+1] = acton(e)
+		end
+		return T
+	end
+	return acton(items)
+end
+
+-- END: <D:\MODZ_stuff\NoMansSky\Tools\AMUMSS\ModScript\ModHelperScripts\LIB\_lua_2_mxml.lua>
+-- Loaded_M <D:\MODZ_stuff\NoMansSky\Tools\AMUMSS\ModScript\ModHelperScripts\LIB\_mxml_2_lua.lua>
+-------------------------------------------------------------------------------
+---	MXML 2 LUA ... by lMonk
+---	A tool for converting between mxml file format and lua table.
+--- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
+-------------------------------------------------------------------------------
+---	Convert mxml to lua ... version: 1.0.03
+---	Parse mxml file -or sections and convert to lua during run-time
+---	 or pretty-print the mxml as a ready-to-load lua file.
+-------------------------------------------------------------------------------
+
+--	=> Strip the XML header and data template if found
+--	The template is re-added as a faux property
+--	@param mxml: mxml-formatted string
+local function unWrap(mxml)
+	if mxml:sub(1, 5) == '<?xml' then
+		return ('<Property template="%s">%s</Property>'):format(
+			mxml:match('<Data template="([%w_]+)">'),
+			mxml:sub(mxml:find('<Property'), -8)
+		)
+	else
+		return mxml
+	end
+end
+
+--	=> Parse attributes from xml tag and return them in a table
+--	* Keys with [_] suffix are ignored by ToMxml
+--	@param prop: string containing xml tag attributes
+local function parseTag(prop)
+	if #prop < 1 then return nil end
+	local attr = {-- the attribute container for each tag
+		opn_ = prop:sub(-1) ~= '/',
+		ord_ = {} -- keep order for writing attributes to file
+	}
+	for at1, val in prop:gmatch('(.-)="(.-)"') do
+		local att = at1:gsub('^%s+', '')
+		attr[att] = val
+		attr.ord_[#attr.ord_+1] = att
+	end
+	local ln = select(2, prop:gsub('=', ''))
+	attr.lst_ = ln == 1
+	local prx = attr.name and attr.name:sub(0,2) or nil
+	attr.cls_ = prx == 'Gc' or prx == 'Tk' or ln > 1
+	return attr
+end
+
+--	=> Returns a table representation of MXML sections
+--	When parsing a full file, the header is stripped and a mock template is added
+--	* Does not handle commented lines!
+--	@param mxml: requires complete MXML sections in the nomral format
+--	@param use_id: use _id as section key where possible [Default: false]
+function ToLua(mxml, use_id)
+	local function eval(val)
+		if val == 'true' then
+			return true
+		elseif val == 'false' then
+			return false
+		elseif tonumber(val) and #val < 18 and not val:match('^0x') then
+			return tonumber(val)
+		else
+			return val
+		end
+	end
+	local tlua, st_node = {}, {}
+	local parent= tlua
+	local node	= nil
+	for prop in unWrap(mxml):gmatch('<[/]?Property[ ]?(.-[/]?)>') do
+		local tag = parseTag(prop)
+		if tag then
+			if tag.opn_ then -- open tag; add new section
+				st_node[#st_node+1] = parent
+				node = {meta = tag}
+				local key = nil
+				if tag._id and use_id then
+					key = tag._id
+				elseif parent.meta and (parent.meta.template or parent.meta.cls_) then
+					key = tag.name
+				else
+					key = #parent + 1
+				end
+				parent[key] = node
+				parent = node
+			else -- closed tag; add property to section
+				local att, val = nil, nil
+				if tag.lst_ then
+					att = #node+1
+					val = {name = eval(tag.name)} -- list stub
+				elseif parent.meta.lst_ and not parent.meta.template and not parent.meta.cls_ then
+					att = #node+1
+					if parent.meta.name == tag.name then
+						val = eval(tag.value)
+					else
+						val = {[tag.name] = eval(tag.value)}
+					end
+				else
+					att = tag.name
+					val = eval(tag.value)
+				end
+				node[att] = val
+			end
+		else
+			-- go back to parent node
+			parent = table.remove(st_node)
+			node = parent
+		end
+	end
+	return tlua[1] -- discard the wrapping table
+end
+
+--	=> Converts MXML to a pretty-printed, ready-to-work, lua script.
+--	When parsing a full file, the header is stripped and a mock template is added
+--	* Does not handle commented lines!
+--	@param vars: a table containing the following required properties
+--	{
+--	  mxml	 = A full file or complete MXML sections in the nomral format
+--	  indent = code indentation..			Default: [\t] (tab)
+--	  com	 = ['] or ["]..					Default: [']
+--	  sq_k	 = enclose keys in bracers..	Default: false
+--	  use_id = use _id as key...			Default: false
+--	  intern = include internal meta data	Default: false
+--	}
+--	* or just the mxml string (instead of a table)
+function PrintMxmlAsLua(vars)
+	local function eval(val)
+		if val == 'true' or val == 'false' then
+			return val
+		elseif tonumber(val) and #val < 18 and not val:match('^0x') then
+			return val
+		else
+			return '[['..val..']]'
+		end
+	end
+	local tlua	= {}
+	function tlua:add(t)
+		if type(t) == 'table' then
+			for _,v in ipairs(t) do self[#self+1] = v end
+		else
+			self[#self+1] = t
+		end
+	end
+	function tlua:rem(t)
+		for i=(t and #t or 1), 1, -1 do table.remove(self, t and t[i] or nil) end
+	end
+	local ind		= vars.indent or '\t'
+	local com		= vars.com or [[']]
+	local ko		= vars.sq_k and '['..com or ''
+	local kc		= vars.sq_k and com..']' or ''
+	local lvl		= 0
+	local parent	= nil
+	local st_node	= {}
+	for prop in unWrap(vars.mxml or vars):gmatch('<[/]?Property[ ]?(.-[/]?)>') do
+		local tag = parseTag(prop)
+		if tag then
+			if tag.opn_ then -- open tag; add new section
+				st_node[#st_node+1] = parent
+				tlua:add(ind:rep(lvl))
+				if tag._id and vars.use_id then
+					tlua:add({ko, tag._id, kc, ' = '})
+				elseif parent and (parent.template or parent.cls_) then
+					tlua:add({ko, tag.name, kc, ' = '})
+				end
+				lvl = lvl + 1
+				tlua:add({'{\n', ind:rep(lvl), 'meta = {'})
+				for _,att in ipairs(tag.ord_) do
+					tlua:add({att, '=', com, tag[att], com, ', '})
+				end
+				if vars.intern then -- include internal meta data
+					for at, vl in pairs(tag) do
+						if at:sub(-1) == '_' then tlua:add({at, '=', com, tostring(vl), com, ', '}) end
+					end
+				end
+				tlua:rem() -- trim last comma
+				tlua:add('},\n')
+				parent = tag -- keep parent atributes
+			else
+				-- add section properties
+				tlua:add(ind:rep(lvl))
+				if tag.lst_ then
+					tlua:add({'{', ko, 'name', kc, ' = ', eval(tag.name), '}'})
+				elseif parent.lst_ and not parent.template and not parent.cls_ then
+					if parent.name == tag.name then
+						tlua:add(eval(tag.value))
+					else
+						tlua:add({'{', ko, tag.name, kc, ' = ', eval(tag.value), '}'})
+					end
+				else
+					tlua:add({ko, tag.name, kc, ' = ', eval(tag.value)})
+				end
+				tlua:add(',\n')
+			end
+		else
+			-- closing the section
+			lvl = lvl - 1
+			parent = table.remove(st_node)
+			tlua[#tlua] = tlua[#tlua]:gsub(',\n', '\n') -- trim the comma from last
+			tlua:add({ind:rep(lvl), '},\n'})
+		end
+	end
+	-- start & end trims
+	if tlua[6] == ' = ' then
+		tlua:rem({3,4,5,6})
+	end
+	table.insert(tlua, 1, 'return ')
+	tlua[#tlua] = '}'
+	return table.concat(tlua)
+end
+
+--	=> A direct access-index for a SCENE file.
+--	Returns a table with Name property as keys linking to their to TkSceneNodeData sections.
+function SceneNames(node, keys)
+	keys = keys or {}
+	if node.meta[2] == 'TkSceneNodeData' then
+		keys[node.Name] = node
+	end
+	for _, scn in ipairs(node.Children or {}) do
+		SceneNames(scn, keys)
+	end
+	return keys
+end
+
+--	=> A Union All function for an ordered array of tables. Last in the array wins
+--	Returns a by-value copy. A repeating keys's values are overwritten.
+--	@param arr: A table of tables.
+function UnionTables(arr)
+	local merged = {}
+	for _, tbl in ipairs(arr) do
+		for k, val in pairs(tbl) do
+			if type(val) == 'table' then
+				merged[k] = merged[k] or {}
+				merged[k] = UnionTables({merged[k], val})
+			else
+				merged[k] = val
+			end
+		end
+	end
+	return merged
+end
+
+-- END: <D:\MODZ_stuff\NoMansSky\Tools\AMUMSS\ModScript\ModHelperScripts\LIB\_mxml_2_lua.lua>
 ---------------------------------------------------------------------------------------
 local mod_desc = [[
   Utilizes the SCENE files' descriptive name and path to match 'tags'
@@ -48,78 +481,79 @@ local spawn_data = {
         cp	= 'CollideWithPlayer',
         cv	= 'CollideWithPlayerVehicle',
         dv	= 'DestroyedByPlayerVehicle',
-		ds	= 'DestroyedByPlayerShip'
+		ds	= 'DestroyedByPlayerShip',
+		fd	= 'IsFloatingIsland',		-- fix that helps to stabilize big props
 	}
 }
 
 local solar_modifiers = {
 	biomes = {
-		{
+		{--	lush
 			biotg = 'LUSH',
 			flora = {-- applied to all LUSH sources
 				TREE		= {ns=1.15,	xs=2.4,		cr=0.9,	ld=1.25},
 				BUBBLELUSH	= {ns=1.15,	xs=1.65,	fs=2.6}
 			}
 		},
-		{
+		{--	lushbigprops
 			biotg = 'LUSHBIGPROPS',
 			flora = {
 				TREE		= {ns=1.05,	xs=2.2,		cr=0.86},
 				CROSS		= {an=-5}
 			}
 		},
-		{
+		{--	lushbubble
 			biotg = 'LUSHBUBBLE',
 			flora = {
 				TREE		= {xs=2.25,	cr=0.86},
 				FERN		= {ns=1.4,	xs=2.6}
 			}
 		},
-		{
+		{--	lushobjectsfull
 			biotg = 'LUSHOBJECTSFULL',
 			flora = {
 				FERN		= {ns=1.3,	xs=1.9},
 				FLOWER		= {ns=1.4,	xs=1.8}
 			}
 		},
-		{
+		{--	lushhqtentacle
 			biotg = 'LUSHHQTENTACLE',
 			flora = {
 				TENTACLE	= {ns=1.2,	xs=1.78,	cr=0.94}
 			}
 		},
-		{
+		{--	lushroomb
 			biotg = 'LUSHROOMB',
 			flora = {
 				SHROOMSINGL	= {ns=1.8,	xs=2.85,	ov=true}
 			}
 		},
-		{
+		{--	frozen
 			biotg = 'FROZEN',
 			flora = {-- applied to all FROZEN sources
 				TREE 		= {ns=1.15,	xs=2.45,	cr=0.8,	ld=1.22},
 				LIVINGSHIP	= {rr=-1,	ld=1.02}
 			}
 		},
-		{
+		{--	radiobig
 			biotg = 'RADIOBIG',
 			flora = {
 				ROCK		= {ns=1.1,	xs=1.3,		cr=0.95}
 			}
 		},
-		{
+		{--	radiospikepotato
 			biotg = 'RADIOSPIKEPOTATO',
 			flora = {
 				WEIRD		= {xs=1.4,	cr=1.2} -- potato
 			}
 		},
-		{
+		{--	irradiate
 			biotg = 'IRRADIATE',
 			flora = {
-				HUGE		= {ns=0.75,	xs=3.6,		cr=0.8,		ld=2.2}
+				HUGETREE	= {ns=0.75,	xs=3.6,		cr=0.8,		ld=2.2}
 			}
 		},
-		{
+		{--	scorched
 			biotg = 'SCORCHED',
 			flora = {
 				HUGESPIRE	= {ns=0.9,	xs=1.02,	cr=0.9,		ov=true}
@@ -128,43 +562,42 @@ local solar_modifiers = {
 				MEDIUMSPIRE	= {dv=true}
 			}
 		},
-		{
+		{--	toxic
 			biotg = 'TOXIC',
 			flora = {
 				HUGETOXIC	= {ns=0.7,	xs=0.97,	cr=0.88,	ov=true}
 			}
 		},
-		{
+		{--	toxicobjectsfull
 			biotg = 'TOXICOBJECTSFULL',
 			flora = {
 				LARGEBLOB	= {ns=0.4,	xs=0.8},
 				FUNGALTREE	= {ns=1.15,	xs=1.75,	cr=0.86}
 			}
 		},
-		{
+		{--	rocky
 			biotg = 'ROCKY',
 			flora = {-- less -and smaller rocks on rocky biomes
 				FACEBLEND	= {ns=0.8,	xs=0.84,	cr=0.76,	ov=true},
 				TOXICGRASS	= {xs=1.9,				cr=1.05},
 			}
 		},
-		{
+		{--	swamp
 			biotg = 'SWAMP',
 			flora = {
-				GROVELARGEF	= {ns=1.05,	xs=1.55,	cr=1.02,	ul=true,	ov=true},
-				GROVELARGE	= {ns=0.8,	xs=-0.7, 	cr=0.82,	ul=true},
+				GROVELARGEF	= {ns=1.05,	xs=1.55,	cr=1.02,	ov=true},
+				GROVELARGE	= {ns=0.8,	xs=-0.7, 	cr=0.82},
 				HQTREE		= {ns=1.15,	xs=2.5,		cr=0.9},
 				FERN		= {ns=1.5,	xs=2.1},
 				FLOWER		= {ns=1.4,	xs=1.8, 	sw=0.94}
+			},
+			flags = {
+				GROVELARGEF	= {fd=true},
+				GROVELARGE	= {fd=true}
 			}
+
 		},
-		{
-			biotg = 'HUGERING',
-			flora = {
-				ROCKRING	= {cr=0.85,	ov=true}
-			}
-		},
-		{
+		{--	alien
 			biotg = 'ALIEN',
 			flora = {
 				LARGE		= {ns=0.95,	xs=1.02,	cr=0.92},
@@ -172,13 +605,13 @@ local solar_modifiers = {
 				SMALL		= {ns=0.95,	xs=1.05},
 			}
 		},
-		{
+		{--	island
 			biotg = 'ISLAND',
 			flora = {
 				ISLAND		= {cr=0.84}
 			}
 		},
-		{
+		{--	weird
 			biotg = 'WEIRD',
 			flora = {
 				WEIRD		= {ld=2.6,	rr=6,		ul=true},
@@ -190,23 +623,36 @@ local solar_modifiers = {
 				MSTRUCTURE	= {pr=7},
 			}
 		},
-		{
-			biotg = 'STORMCRYSTAL',
-			flags = {
-				STORMCRYST	= {cv=true,	dv=false}
-			}
-		},
-		{
-			biotg = 'PLANT',
+		{--	plant
+			biotg = 'OBJECTS/PLANT',
 			flora = {
-				INTERACTIVE	= {ns=0.48,	xs=0.01,	cr=1.1},
+				INTERACTIVE	= {ns=0.48,	xs=0.01,	cr=1.1}
 			}
 		},
-		{
+		{--	underwater
 			biotg = 'UNDERWATER',
 			flora = {
 				CRYSTAL		= {xs=0.95,	cr=0.5,	df=0.8, 	ov=true},
 				GASBAG		= {xs=0.85,	cr=0.5,	df=0.9}
+			}
+		},
+		{--	hugeprops
+			biotg = 'HUGEPROPS',
+			flora = {
+				ROCKRING	= {cr=0.85},
+				HUGEPROPS	= {ov=true},
+			},
+			flags = {
+				HUGEPROPS	= {fd=true}
+			}
+		},
+		{--	bigprops
+			biotg = 'BIGPROPS',
+			flora = {
+				HUGEPROPS	= {ov=true},
+			},
+			flags = {
+				HUGEPROPS	= {fd=true}
 			}
 		}
 	},
@@ -241,13 +687,14 @@ local solar_modifiers = {
 		LAVA		= {ig=true},
 		FRAGMENT	= {ig=true},
 		GRAVEL		= {ig=true},
-		HUGEPROPS	= {ig=true},
 		FARM		= {ig=true}
 	},
-	global_flags = {}
+	global_flags = {
+		TREE		= {fd=true}
+	}
 }
 
----	MXML 2 LUA ... by lMonk ... version: 1.0.01
+---	MXML 2 LUA ... by lMonk ... version: 1.0.04
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -323,18 +770,46 @@ local function ToMxml(class)
 	return nil
 end
 
---	=> Strip the XML header and data template if found
---	The template is re-added as a faux property
---	@param mxml: mxml-formatted string
-local function unWrap(mxml)
-	if mxml:sub(1, 5) == '<?xml' then
-		return ('<Property template="%s">%s</Property>'):format(
-			mxml:match('<Data template="([%w_]+)">'),
-			mxml:sub(mxml:find('<Property'), -8)
-		)
-	else
-		return mxml
+--	=> A Union All function for an ordered array of tables. Last in the array wins
+--	Returns a by-value copy. A repeating keys's values are overwritten.
+--	@param arr: A table of tables.
+local function UnionTables(arr)
+	local merged = {}
+	for _, tbl in ipairs(arr) do
+		for k, val in pairs(tbl) do
+			if type(val) == 'table' then
+				merged[k] = merged[k] or {}
+				merged[k] = UnionTables({merged[k], val})
+			else
+				merged[k] = val
+			end
+		end
 	end
+	return merged
+end
+
+--	=> Adds the header and class template for a standard mxml file
+--	@param data: A lua2mxml formatted table
+--	@param template: [optional] A class template string. Overwrites the internal template!
+local function ToMxmlFile(tlua, ext_tmpl)
+	local wrapper = '<?xml version="1.0" encoding="utf-8"?><Data template="%s">%s</Data>'
+	if type(tlua) == 'string' then
+		return wrapper:format(ext_tmpl, tlua)
+	end
+	-- replace existing or add template layer if needed
+	if ext_tmpl then
+		if tlua.meta.template then
+			tlua.meta.template = ext_tmpl
+		else
+			tlua = {
+				meta = {template=ext_tmpl},
+				tlua
+			}
+		end
+	end
+	-- strip mock template
+	local txt_data = ToMxml(tlua):sub(#tlua.meta.template + 23, -12)
+	return wrapper:format(tlua.meta.template, txt_data)
 end
 
 --	=> Parse attributes from xml tag and return them in a table
@@ -356,6 +831,20 @@ local function parseTag(prop)
 	local prx = attr.name and attr.name:sub(0,2) or nil
 	attr.cls_ = prx == 'Gc' or prx == 'Tk' or ln > 1
 	return attr
+end
+
+--	=> Strip the XML header and data template if found
+--	The template is re-added as a faux property
+--	@param mxml: mxml-formatted string
+local function unWrap(mxml)
+	if mxml:sub(1, 5) == '<?xml' then
+		return ('<Property template="%s">%s</Property>'):format(
+			mxml:match('<Data template="([%w_]+)">'),
+			mxml:sub(mxml:find('<Property'), -8)
+		)
+	else
+		return mxml
+	end
 end
 
 --	=> Returns a table representation of MXML sections
@@ -419,48 +908,6 @@ local function ToLua(mxml, use_id)
 		end
 	end
 	return tlua[1] -- discard the wrapping table
-end
-
---	=> Adds the header and class template for a standard mxml file
---	@param data: A lua2mxml formatted table
---	@param template: [optional] A class template string. Overwrites the internal template!
-local function ToMxmlFile(tlua, ext_tmpl)
-	local wrapper = '<?xml version="1.0" encoding="utf-8"?><Data template="%s">%s</Data>'
-	if type(tlua) == 'string' then
-		return wrapper:format(ext_tmpl, tlua)
-	end
-	-- replace existing or add template layer if needed
-	if ext_tmpl then
-		if tlua.meta.template then
-			tlua.meta.template = ext_tmpl
-		else
-			tlua = {
-				meta = {template=ext_tmpl},
-				tlua
-			}
-		end
-	end
-	-- strip mock template
-	local txt_data = ToMxml(tlua):sub(#tlua.meta.template + 23, -12)
-	return wrapper:format(tlua.meta.template, txt_data)
-end
-
---	=> A Union All function for an ordered array of tables. Last in the array wins
---	Returns a copy by-value. A repeating keys's values are overwritten.
---	@param arr: A table of tables.
-local function UnionTables(arr)
-	local merged = {}
-	for _, tbl in ipairs(arr) do
-		for k, val in pairs(tbl) do
-			if type(val) == 'table' then
-				merged[k] = merged[k] or {}
-				merged[k] = UnionTables({merged[k], val})
-			else
-				merged[k] = val
-			end
-		end
-	end
-	return merged
 end
 ---------------------------------------------------------------------------------
 
@@ -769,9 +1216,9 @@ function ProcessRawMxml(the_index) -- called by AMUMSS
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.large flora.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.large flora',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.06',
+	NMS_VERSION			= '6.16',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE,UNDEFINED_VARIABLE',
 	MODIFICATIONS 		= {{

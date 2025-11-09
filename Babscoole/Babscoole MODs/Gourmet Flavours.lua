@@ -810,7 +810,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Gourmet Flavours",
 ["MOD_AUTHOR"]      = "CorpInc15 & Babscoole",
 ["LUA_AUTHOR"]      = "CorpInc15 (based on fluxxdog's script) & Babscoole",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.16",
 ["MOD_DESCRIPTION"] = "Replaces the 10 vanilla rewards for eating food with 54 fully custom ones.",
 ["MODIFICATIONS"]   =
     {

@@ -745,9 +745,6 @@ QUICK_ACTION_MENU =
           <Property name="MarkerLabel" value="Lush Planet" />
           <Property name="MarkerIcon" value="TkTextureResource">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANET.DDS" />
-            <Property name="ResHandle" value="GcResource">
-              <Property name="ResourceID" value="0" />
-            </Property>
           </Property>
           <Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes">
             <Property name="ScannerIconHighlightType" value="Diamond" />
@@ -766,9 +763,6 @@ QUICK_ACTION_MENU =
           <Property name="MissionMessageOnInteract" value="" />
           <Property name="ResourceOverride" value="GcResourceElement">
             <Property name="Filename" value="" />
-            <Property name="ResHandle" value="GcResource">
-              <Property name="ResourceID" value="0" />
-            </Property>
             <Property name="Seed" value="NONE" />
             <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
               <Property name="Samplers" />
@@ -1123,9 +1117,6 @@ return [[
       </Property>
       <Property name="Icon" value="TkTextureResource">
         <Property name="Filename" value="]] .. ICON .. [[" />
-        <Property name="ResHandle" value="GcResource">
-          <Property name="ResourceID" value="0" />
-        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="false" />
@@ -1140,9 +1131,6 @@ return [[
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource">
         <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource">
-          <Property name="ResourceID" value="0" />
-        </Property>
       </Property>
       <Property name="IconResource" value="GcResource">
         <Property name="ResourceID" value="0" />
@@ -1156,7 +1144,7 @@ end
 
 function GetLanguage(TITLE)
 return [[
-    <Property value="TkLocalisationEntry">
+    <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="]] .. TITLE .. [[" />
       <Property name="English" value="]] .. TITLE .. [[" />
       <Property name="French" value="]] .. TITLE .. [[" />
@@ -1219,9 +1207,6 @@ return [[
               <Property name="GcRewardSpecificShip">
                 <Property name="ShipResource" value="GcResourceElement">
                   <Property name="Filename" value="]] .. TYPE .. [[" />
-                  <Property name="ResHandle" value="GcResource">
-                    <Property name="ResourceID" value="0" />
-                  </Property>
                   <Property name="Seed" value="]] .. SEED .. [[" />
                   <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
                     <Property name="Samplers" />
@@ -1583,7 +1568,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Meta-Mod",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.16",
 ["MODIFICATIONS"]   =
     {
         {

@@ -44,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Backpack Toggle - Keep Armor",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.16",
 ["MODIFICATIONS"]   =
     {
         {
@@ -219,7 +219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkLocalisationTable">
   <Property name="Table">
-    <Property value="TkLocalisationEntry">
+    <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="Toggle Backpack" />
       <Property name="English" value="Toggle Backpack" />
       <Property name="French" value="Toggle Backpack" />
@@ -239,7 +239,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Japanese" value="Toggle Backpack" />
       <Property name="USEnglish" value="Toggle Backpack" />
     </Property>
-    <Property value="TkLocalisationEntry">
+    <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="BACKPACK_TOGGLE" />
       <Property name="English" value="BACKPACK_TOGGLE" />
       <Property name="French" value="BACKPACK_TOGGLE" />

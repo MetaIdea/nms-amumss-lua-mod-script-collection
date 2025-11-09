@@ -58,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "QS Missions and Daily Reward Multiplier "..Multiplier.."x",
 ["MOD_DESCRIPTION"] = "Adds quicksilver rewards to normal missions at the nexus, space station mission boards, and outlaw bounty masters & multiples the quicksilver reward from daily and weekly nexus missions",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.16",
 ["MODIFICATIONS"]   =
     {
         {
@@ -69,7 +69,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "RS_QUICKSILV_S", "Reward", "GcRewardMoney.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RS_QUICKSILV_S", "Reward", "GcRewardMoney"},
                             ["SECTION_UP"] = 1,
                             ["SEC_SAVE_TO"] = "ADD_CurrencyReward",
                         },
