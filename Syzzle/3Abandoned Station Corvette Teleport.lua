@@ -1,7 +1,7 @@
 Author = "Syzzle"
 ModName = "Abandoned Station Corvette Teleport"
 ModCombinedName = "Better Abandoned Station"
-GameVersion = "6.11"
+GameVersion = "6.16"
 Description = "Add the teleport pads to get to the Corvette Landing Pads."
 
 CVTELEPORT  = [[

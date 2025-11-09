@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Unlockable Expedition Exclusive Techs"
-GameVersion = "6.04"
+GameVersion = "6.16"
 Description = "Add the Expedition exclusive Ship Techs, Exosuit Techs, Freighter Tech and unavailable Multitool Tech to the Anomaly list to be unlocked."
 
 -- SHIP BLUEPRINTS
@@ -110,6 +110,13 @@ ORBITALUPLINK = [[
     <Property name="Children" />
   </Property>
 ]]
+-- DEBRIS RANGEFINDER BLUEPRINT
+DEBRISRANGEFINDER = [[
+  <Property name="Children" value="GcUnlockableItemTreeNode">
+    <Property name="Unlockable" value="BIGGS_POI_LOC" />
+    <Property name="Children" />
+  </Property>
+]]
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -195,6 +202,12 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"Children"},
               ["CREATE_HOS"]  = "TRUE",
               ["ADD"]	=	ORBITALUPLINK,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Unlockable","COMPUTER"},
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["CREATE_HOS"]  = "TRUE",
+              ["ADD"]	=	DEBRISRANGEFINDER,
             },
           }
         },
@@ -307,6 +320,13 @@ NMS_MOD_DEFINITION_CONTAINER =
           {
             {
               ["SPECIAL_KEY_WORDS"]  = {"ID","S19_TP",},
+              ["VALUE_CHANGE_TABLE"]  =
+              {
+                {"RecipeCost",2},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"]  = {"ID","BIGGS_POI_LOC",},
               ["VALUE_CHANGE_TABLE"]  =
               {
                 {"RecipeCost",2},

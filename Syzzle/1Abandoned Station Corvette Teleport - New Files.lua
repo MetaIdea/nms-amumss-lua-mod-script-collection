@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Abandoned Station Corvette Teleport - New Files"
-GameVersion = "6.11"
+GameVersion = "6.16"
 Description = "Description"
 
 NMS_MOD_DEFINITION_CONTAINER = 

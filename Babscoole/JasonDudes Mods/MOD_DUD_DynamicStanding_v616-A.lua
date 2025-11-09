@@ -32,6 +32,46 @@ function  ALL_TRADE (Guild, PC)
 ]]
 end
 
+function  FACTIONREWARD (Guild, PC)
+    return
+[[
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="]]..PC..[[" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardFactionStanding">
+              <Property name="GcRewardFactionStanding">
+                <Property name="Faction" value="GcMissionFaction">
+                  <Property name="MissionFaction" value="]]..Guild..[[" />
+                </Property>
+                <Property name="AmountMin" value="-1" />
+                <Property name="AmountMax" value="-1" />
+                <Property name="SetToMinBeforeAdd" value="false" />
+              </Property>
+            </Property>
+          </Property>
+]]
+end
+
+function  STANDINGREWARD (PC)
+    return
+[[
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="]]..PC..[[" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardStanding">
+              <Property name="GcRewardStanding">
+                <Property name="Race" value="GcAlienRace">
+                  <Property name="AlienRace" value="None" />
+                </Property>
+                <Property name="AmountMin" value="-1" />
+                <Property name="AmountMax" value="-1" />
+                <Property name="UseExpeditionEventSystemRace" value="false" />
+              </Property>
+            </Property>
+          </Property>
+]]
+end
+
 function  ALL_STAND (PC)
     return
 [[
@@ -105,6 +145,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_BATTLE", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["ADD"] = FACTIONREWARD ("Pirates", "100.000000")
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_FIGHT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -113,12 +159,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_FIGHT", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["ADD"] = FACTIONREWARD ("Pirates", "50.000000")
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_BOUNTY1", "List", "GcRewardTableItem"},
                             ["SECTION_ACTIVE"] = 1, 
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMax", "1"},
                             }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_BOUNTY1", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["ADD"] = FACTIONREWARD ("Pirates", "50.000000")
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_BOUNTY2", "List", "GcRewardTableItem"},
@@ -130,6 +188,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_BOUNTY2", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["ADD"] = FACTIONREWARD ("Pirates", "50.000000")
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_BOUNTY3", "List", "GcRewardTableItem"},
                             ["SECTION_ACTIVE"] = 1, 
                             ["VALUE_CHANGE_TABLE"] =
@@ -137,6 +201,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AmountMin", "2"},
                                 {"AmountMax", "3"},
                             }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_BOUNTY3", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["ADD"] = FACTIONREWARD ("Pirates", "100.000000")
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DEFEND_RAID", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["ADD"] = FACTIONREWARD ("Pirates", "50.000000")
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_POLICE_FIGHT", "List", "GcRewardTableItemList"},
+                            ["PRECEDING_KEY_WORDS"] = {"List"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["ADD"] = STANDINGREWARD ("50.000000")
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "MB_STAND_PIRATE", "List", "GcRewardTableItem"},
@@ -540,6 +622,20 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
+							<Property name="List" value="GcRewardTableItem" _index="7">
+								<Property name="PercentageChance" value="50.000000" />
+								<Property name="LabelID" value="" />
+								<Property name="Reward" value="GcRewardStanding">
+									<Property name="GcRewardStanding">
+										<Property name="Race" value="GcAlienRace">
+											<Property name="AlienRace" value="None" />
+										</Property>
+										<Property name="AmountMin" value="1" />
+										<Property name="AmountMax" value="2" />
+										<Property name="UseExpeditionEventSystemRace" value="false" />
+									</Property>
+								</Property>
+							</Property>
 ]]
                         },
                     },
