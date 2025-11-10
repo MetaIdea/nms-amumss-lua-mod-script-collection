@@ -14,8 +14,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Normal","GcDifficultyInventoryStackSizeOptionData.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes",},
+                            ["SPECIAL_KEY_WORDS"] = {"Normal","GcDifficultyInventoryStackSizeOptionData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Default", "9999"},
@@ -33,16 +33,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Normal","GcDifficultyInventoryStackSizeOptionData.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes",},
+                            ["SPECIAL_KEY_WORDS"] = {"Normal","GcDifficultyInventoryStackSizeOptionData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Freighter", "20"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Low","GcDifficultyInventoryStackSizeOptionData.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes",},
+                            ["SPECIAL_KEY_WORDS"] = {"Low","GcDifficultyInventoryStackSizeOptionData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Default", "9999"},
@@ -60,8 +60,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Low","GcDifficultyInventoryStackSizeOptionData.xml",},
-                            ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes",},
+                            ["SPECIAL_KEY_WORDS"] = {"Low","GcDifficultyInventoryStackSizeOptionData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Default", "5"},
