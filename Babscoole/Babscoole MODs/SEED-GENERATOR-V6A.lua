@@ -194,6 +194,7 @@ GENERIC_ANIMATION_FILE = "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"
 
 ANIM_TEMPLATE_ALL = ""
 QUICK_ACTION_BUTTON_ALL = ""
+LANGUAGE_TEMPLATE_ALL = ""
 ACTION_TRIGGER_COMPONENT = ""
 CUSTOM_GENERICREWARD_ALL = ""
 
@@ -427,7 +428,7 @@ function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
 
 QUICK_ACTION_BUTTON_TEMPLATE =
 [[
-    <Property value="GcPlayerEmote">
+    <Property name="Emotes" value="GcPlayerEmote">
       <Property name="Title" value="]] .. BUTTON_TITLE .. [[" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="false" />
@@ -466,15 +467,12 @@ QUICK_ACTION_BUTTON_TEMPLATE =
       </Property>
       <Property name="Icon" value="TkTextureResource">
         <Property name="Filename" value="]] .. ICON .. [[" />
-        <Property name="ResHandle" value="GcResource">
-          <Property name="ResourceID" value="0" />
-        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="false" />
       <Property name="LoopAnimUntilMove" value="" />
       <Property name="CloseMenuOnSelect" value="false" />
-      <Property name="MoveToCancel" value="True" />
+      <Property name="MoveToCancel" value="true" />
       <Property name="GekAnimationName" value="" />
       <Property name="GekLoopAnimUntilMove" value="" />
       <Property name="AvailableUnderwater" value="false" />
@@ -483,19 +481,37 @@ QUICK_ACTION_BUTTON_TEMPLATE =
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource">
         <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="IconResource" value="GcResource">
-        <Property name="ResourceID" value="0" />
-      </Property>
-      <Property name="IconPetCommandResource" value="GcResource">
-        <Property name="ResourceID" value="0" />
       </Property>
     </Property>
 ]]
 return QUICK_ACTION_BUTTON_TEMPLATE
+end
+
+function CreateLanguageEntry (TITLE)
+LANGUAGE_TEMPLATE =
+[[
+    <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="]] .. TITLE .. [[" />
+      <Property name="English" value="]] .. TITLE .. [[" />
+      <Property name="French" value="]] .. TITLE .. [[" />
+      <Property name="Italian" value="]] .. TITLE .. [[" />
+      <Property name="German" value="]] .. TITLE .. [[" />
+      <Property name="Spanish" value="]] .. TITLE .. [[" />
+      <Property name="Russian" value="]] .. TITLE .. [[" />
+      <Property name="Polish" value="]] .. TITLE .. [[" />
+      <Property name="Dutch" value="]] .. TITLE .. [[" />
+      <Property name="Portuguese" value="]] .. TITLE .. [[" />
+      <Property name="LatinAmericanSpanish" value="]] .. TITLE .. [[" />
+      <Property name="BrazilianPortuguese" value="]] .. TITLE .. [[" />
+      <Property name="SimplifiedChinese" value="]] .. TITLE .. [[" />
+      <Property name="TraditionalChinese" value="]] .. TITLE .. [[" />
+      <Property name="TencentChinese" value="]] .. TITLE .. [[" />
+      <Property name="Korean" value="]] .. TITLE .. [[" />
+      <Property name="Japanese" value="]] .. TITLE .. [[" />
+      <Property name="USEnglish" value="]] .. TITLE .. [[" />
+    </Property>
+]]
+return LANGUAGE_TEMPLATE
 end
 
 function CreateSeedRewardLists()
@@ -520,6 +536,7 @@ function CreateSeedRewardLists()
         SUB_REWARD_ENTRY_ALL = table.concat(SREA)
     local ID = string.upper(SST)
     QUICK_ACTION_BUTTON_ALL = QUICK_ACTION_BUTTON_ALL .. CreateQuickActionMenuEntry("RANDOM " .. ID, ID)
+    LANGUAGE_TEMPLATE_ALL = LANGUAGE_TEMPLATE_ALL .. CreateLanguageEntry("RANDOM " .. ID)
     ANIM_TEMPLATE_ALL = ANIM_TEMPLATE_ALL .. CreateAnimEntry(ID)
     ACTION_TRIGGER_COMPONENT = ACTION_TRIGGER_COMPONENT .. CreateActionTriggerComponent(CreateActionTriggerRewardEntry(ID, ID))
     CUSTOM_GENERICREWARD_ALL = CUSTOM_GENERICREWARD_ALL .. CreateRewardMainEntry(ID, SUB_REWARD_ENTRY_ALL)
@@ -535,7 +552,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6A",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.16",
 ["MODIFICATIONS"]   =
     {
         {
@@ -645,6 +662,18 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
   <Property name="Has30HzFrames" value="false" />
+</Data>
+]]
+        },
+        {
+            ["FILE_DESTINATION"] = "LocTable.MXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+<Data template="TkLocalisationTable">
+  <Property name="Table">
+]] .. (LANGUAGE_TEMPLATE_ALL) .. [[
+  </Property>
 </Data>
 ]]
         },

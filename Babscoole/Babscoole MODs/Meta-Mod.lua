@@ -1078,7 +1078,7 @@ end
 
 function GetQuickAction(TITLE, ANIM, ICON)
 return [[
-    <Property value="GcPlayerEmote">
+    <Property name="Emotes" value="GcPlayerEmote">
       <Property name="Title" value="]] .. TITLE .. [[" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="false" />
@@ -1131,12 +1131,6 @@ return [[
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource">
         <Property name="Filename" value="" />
-      </Property>
-      <Property name="IconResource" value="GcResource">
-        <Property name="ResourceID" value="0" />
-      </Property>
-      <Property name="IconPetCommandResource" value="GcResource">
-        <Property name="ResourceID" value="0" />
       </Property>
     </Property>
 ]]
