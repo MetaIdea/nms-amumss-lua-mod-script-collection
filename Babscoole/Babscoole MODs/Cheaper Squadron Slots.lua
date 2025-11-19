@@ -1,10 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Cheaper Squadron Slots.pak",
-["MOD_AUTHOR"]      = "MiJwA2012",
-["LUA_AUTHOR"]      = "Babscoole",
+["MOD_FILENAME"]    = "Cheaper Squadron Slots",
+["MOD_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "Cuts squadron slots costs in half",
-["NMS_VERSION"]     = "4.70",
+["NMS_VERSION"]     = "6.17",
 ["MODIFICATIONS"]   =
     {
         {
@@ -12,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\COSTTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =

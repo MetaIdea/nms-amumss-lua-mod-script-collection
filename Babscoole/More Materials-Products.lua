@@ -1,61 +1,40 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+Multiplier = "10" -- Multiplier applied to number of buyable items available
+
+NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] = "MoreProducts.pak",
-["MOD_AUTHOR"] = "Flugelwulff",
-["LUA_AUTHOR"] = "Babscoole/Flugelwulff",
-["NMS_VERSION"]	= "6.02",
-["MODIFICATIONS"] = 
+	["MOD_FILENAME"] = "MoreProducts",
+	["MOD_BATCHNAME"] = "MoreMaterials",
+	["MOD_AUTHOR"] = "Flugelwulff",
+	["LUA_AUTHOR"] = "Babscoole/Flugelwulff",
+	["NMS_VERSION"] = "6.17",
+	["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
+			["MBIN_CHANGE_TABLE"] 	=
+			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\DEFAULTREALITY.MBIN",
-					["MXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "MinAmountOfProductAvailable",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["PRECEDING_KEY_WORDS"] =
 							{
-								{ "Poor", 	 "100" },
-								{ "Average", "400" },
-								{ "Wealthy", "800" },
-								{ "Pirate",  "400" },
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "MaxAmountOfProductAvailable",
-							["VALUE_CHANGE_TABLE"] 	= 
+								{"MinAmountOfProductAvailable"},
+								{"MaxAmountOfProductAvailable"},
+							},
+							["REPLACE_TYPE"] = "ALL",
+							["MATH_OPERATION"] = "*",
+							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{ "Poor", 	 "400" },
-								{ "Average", "800" },
-								{ "Wealthy", "1800" },
-								{ "Pirate",  "800" },
+								{ "Poor", 	 Multiplier},
+								{ "Average", Multiplier},
+								{ "Wealthy", Multiplier},
+								{ "Pirate",  Multiplier},
 							}
-						},	
-						{
-							["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable", "MinAmountOfProductAvailable"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "Poor", 	 "100" },
-								{ "Average", "400" },
-								{ "Wealthy", "800" },
-								{ "Pirate",  "400" },
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable", "MaxAmountOfProductAvailable"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "Poor", 	 "400" },
-								{ "Average", "800" },
-								{ "Wealthy", "1800" },
-								{ "Pirate",  "800" },
-							}
-						},					
-					} 
+						}
+					}
 				}
 			}
 		}
-	}	
+	}
 }

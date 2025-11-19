@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Geo-Tectonic- Vanilla Reborn",
+["MOD_FILENAME"]    = "TerraLysis",
 ["MOD_AUTHOR"]      = "BornTBFast",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "6.16",

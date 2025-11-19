@@ -3,16 +3,19 @@ local mod_desc = [[
   procedurally-placed keys - Only 3 keys will appear in any instance
   4 Alternate placements for the treasure chest
 ]]--------------------------------------------------------------------
----	MXML 2 LUA (VERSION: 0.88.03) ... by lMonk
----	A tool for converting between mxml and lua.
---- The full version can be found at: https://github.com/roie-r/mxml_2_lua
+---	MXML 2 LUA ... by lMonk ... version: 1.0.04
+---	A tool for converting between mxml file format and lua table.
+--- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
+--	=> Generate an MXML-tagged text from a lua table representation of mxml file
+--	@param class: a lua2mxml formatted table
 local function ToMxml(class)
 	--	replace a boolean with its text equivalent (ignore otherwise)
 	--	@param b: any value
 	local function bool(b)
 		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
 	end
+	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite'}
 	local function mxml_r(tlua)
 		local out = {}
 		function out:add(t)
@@ -20,15 +23,20 @@ local function ToMxml(class)
 		end
 		for attr, cls in pairs(tlua) do
 			if attr ~= 'meta' then
-				out[#out+1] = '<Property '
+				out:add({'<Property '})
 				if type(cls) == 'table' and cls.meta then
-				-- add and recurs for an inner table
-					for k, v in pairs(cls.meta) do
-						if k:sub(-1) ~= '_' then out:add({k, '="', bool(v), '"', ' '}) end
+				-- add new section and recurs for nested sections
+					for _,at in ipairs(at_ord) do
+					-- Just for readability. The compiler doesn't need the ordering
+						if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
 					end
+					-- for k, v in pairs(cls.meta) do
+						-- if k:sub(-1) ~= '_' then out:add({k, '="', bool(v), '"', ' '}) end
+					-- end
 					table.remove(out) -- trim last space
 					out:add({'>', mxml_r(cls), '</Property>'})
 				else
+				-- add section properties
 					local att, val = nil, nil
 					if tonumber(attr) then
 						if type(cls) == 'table' then
@@ -41,7 +49,7 @@ local function ToMxml(class)
 						att = attr
 						val = cls
 					end
-					if att == 'name' or att == 'value' then
+					if att == 'name' then
 						out:add({att, '="', bool(val), '"/>'})
 					else
 						out:add({'name="', att, '" value="', bool(val), '"/>'})
@@ -72,7 +80,10 @@ local function ToMxml(class)
 	return nil
 end
 
-
+--	=> Determine if received is a single or multi-item
+--	then process items through the received function
+--	@param items: table of item properties or a non-keyed table of items (keys are ignored)
+--	@param acton: the function to process the items in the table
 local function ProcessOnenAll(items, acton)
 	-- first key = 1 means multiple entries
 	if next(items) == 1 then
@@ -85,6 +96,17 @@ local function ProcessOnenAll(items, acton)
 	return acton(items)
 end
 
+--	=> Build a single -or list of TkSceneNodeData classes
+--	@param props: a keyed table for scene class properties.
+--	{
+--	  name	= scene node name (NameHash is calculated automatically)
+--	  ntype	= scene node type
+--	  form	= [optional] Transform data. a list of 9 ordered values or keyed values,
+--			  but NOT a combination of the two!
+--	  pxlud = [optional] PlatformExclusion
+--	  attr	= [optional] Attributes table of {name, value} pairs
+--	  child	= [optional] Children table for ScNode tables
+--	}
 local function ScNode(nodes)
 	--	returns a jenkins hash from a string (by lyravega)
 	local function jenkinsHash(input)
@@ -120,29 +142,31 @@ local function ScNode(nodes)
 			RotX	= (props.form.rx or props.form[4]) or nil,
 			RotY	= (props.form.ry or props.form[5]) or nil,
 			RotZ	= (props.form.rz or props.form[6]) or nil,
-			ScaleX	= (props.form.sx or props.form[7]) or 1,
-			ScaleY	= (props.form.sy or props.form[8]) or 1,
-			ScaleZ	= (props.form.sz or props.form[9]) or 1
+			ScaleX	= (props.form.sl or props.form.sx or props.form[7]) or 1,
+			ScaleY	= (props.form.sl or props.form.sy or props.form[8] or props.form[7]) or 1,
+			ScaleZ	= (props.form.sl or props.form.sz or props.form[9] or props.form[7]) or 1
 		}
 		--	if present, add attributes list
 		if props.attr then
-			-- add accompanying attribute to scenegraph
+			-- add accompanying attributes
 			if props.attr.SCENEGRAPH then
-				props.attr.EMBEDGEOMETRY = 'TRUE'
+				props.attr.EMBEDGEOMETRY = true
+			elseif props.attr.TYPE then
+				props.attr.NAVIGATION = false
 			end
 			T.Attr = { meta = {name='Attributes'} }
 			for nm, val in pairs(props.attr) do
 				T.Attr[#T.Attr+1] = {
 					meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
 					Name	= nm,
-					Value	= val
+					Value	= type(val) == 'boolean' and (val and 'TRUE' or 'FALSE') or val
 				}
 			end
 		end
 		if props.child then
 		--	add children list if found
 			local k,_ = next(props.child)
-			cnd = ScNode(props.child)
+			local cnd = ScNode(props.child)
 			T.Child	= k == 1 and cnd or {cnd}
 			T.Child.meta = {name='Children'}
 		end
@@ -151,10 +175,18 @@ local function ScNode(nodes)
 	return ProcessOnenAll(nodes, sceneNode)
 end
 
-local function FileWrapping(tlua, ext_tmpl)
+--	=> Wrapper function. Accepts lua scene nodes and Returns an mxml string.
+local function AddSceneNodes(nodes)
+	return ToMxml(ScNode(nodes))
+end
+
+--	=> Adds the header and class template for a standard mxml file
+--	@param data: A lua2mxml formatted table
+--	@param template: [optional] A class template string. Overwrites the internal template!
+local function ToMxmlFile(tlua, ext_tmpl)
 	local wrapper = '<?xml version="1.0" encoding="utf-8"?><Data template="%s">%s</Data>'
 	if type(tlua) == 'string' then
-		return string.format(wrapper, ext_tmpl, tlua)
+		return wrapper:format(ext_tmpl, tlua)
 	end
 	-- replace existing or add template layer if needed
 	if ext_tmpl then
@@ -169,7 +201,7 @@ local function FileWrapping(tlua, ext_tmpl)
 	end
 	-- strip mock template
 	local txt_data = ToMxml(tlua):sub(#tlua.meta.template + 23, -12)
-	return string.format(wrapper, tlua.meta.template, txt_data)
+	return wrapper:format(tlua.meta.template, txt_data)
 end
 ---------------------------------------------------------------------------------
 
@@ -177,12 +209,12 @@ local key_nodes = {
 	tid	 = '_CRATES_KEY_',
 	name = '_Cratekey_',
 	form = {
-		{-26.1,		-7.45,		-3.5,		21.0,		31.0,		1.0},		-- below side walk
-		{47.79934,	-10.29004,	8.20181,	30.20214,	28.048,		-16.6737},	-- bottom of slant
-		{35.64062,	-3.38012,	21.2812,	-2.890653,	23.66665,	6.40387},	-- in tower
-		{4.6,		-7.85,		30.0,		-18,		-160,		4.0},		-- mid center & tower
-		{-1.9188,	-19.8312,	-51.76936,	9.22353,	184.20784,	-1.3652},	-- stairs bottom
-		{-0.9938,	-6.0703,	-38.33277,	-4.67097,	9.22354,	-1.3652},	-- stairs top
+		{-26.1,	-7.45,	-3.5,	21.0,	31.0,	1.0},	-- below side walk
+		{47.8,	-10.3,	8.2,	30.2,	28,		-16.7},	-- bottom of slant
+		{37,	-3.3,	18.8,	-2,		5,		6},		-- in tower
+		{4.6,	-7.85,	30.0,	-18,	-160,	4.0},	-- mid center & tower
+		{-0.3,	-19.15,	-45,	0,		270,	5},		-- stairs bottom
+		{-1,	-6.4,	-38.3,	-4.7,	9.2,	-1.3},	-- stairs top
 	}
 }
 
@@ -190,84 +222,80 @@ local lock_nodes = {
 	tid	 = '_CRATES_LOCK_',
 	name = '_Cratelock_',
 	form = {
-		{-0.91945,	-8.16323,	0.4867,		1.69392,	2.41958,	4.91478},				-- original center
-		{-0.91945,	-12.19,		-31.1867,	1.7,		-175,		-1.2},					-- behind stairs
-		{33.4,		0.55,		23.2,		2.0,		-35,		3.5,	0.8, 0.8, 0.8},	-- on tower
-		{-25.6,		-5.84,		-17.1,		8.0,		-177,		5.0},					-- end of side walk
+		{-0.9,	-8.16,	0.5,	1.7,	2.4,	4.9},		-- original center
+		{-0.92,	-12,	-31,	4,		-175,	-1.2},		-- behind stairs
+		{33.4,	0.55,	23.2,	2.0,	-35,	3.5, 0.8},	-- on tower
+		{-25.6,	-5.84,	-17.1,	8.0,	-177,	5.0},		-- end of side walk
 	}
 }
 
-local function AddChar(n, i, u)
+local function addChar(n, i, u)
 	local s = n..string.char(64 + i)
 	return u and s:upper() or s
 end
 
-local function AddCrateAndKey()
-	local T = {}
-	for i, f in ipairs(key_nodes.form) do
-		T[#T+1] = {
-			name	= AddChar(key_nodes.name, i),
-			ntype	= 'REFERENCE',
-			form	= f,
-			attr	= {
-				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/CRATEKEY.SCENE.MBIN'
-			}
+-- build scene nodes for crates and keys
+local mx_scn = {}
+for i, f in ipairs(key_nodes.form) do
+	mx_scn[#mx_scn+1] = {
+		name	= addChar(key_nodes.name, i),
+		ntype	= 'REFERENCE',
+		form	= f,
+		attr	= {
+			SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/CRATEKEY.SCENE.MBIN'
 		}
-	end
-	for i, f in ipairs(lock_nodes.form) do
-		T[#T+1] = {
-			name	= AddChar(lock_nodes.name, i),
-			ntype	= 'REFERENCE',
-			form	= f,
-			attr	= {
-				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/CRATELOCK.SCENE.MBIN'
-			}
+	}
+end
+for i, f in ipairs(lock_nodes.form) do
+	mx_scn[#mx_scn+1] = {
+		name	= addChar(lock_nodes.name, i),
+		ntype	= 'REFERENCE',
+		form	= f,
+		attr	= {
+			SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/CRATELOCK.SCENE.MBIN'
 		}
-	end
-	return ToMxml(ScNode(T))
+	}
 end
 
-local function GenerateDescriptor()
-	local function Rsrc3Group(name, ix, cmb)
-		return {
-			meta = {name='Descriptors', value='TkResourceDescriptorData'},
-			Id		= AddChar(name, cmb[1], true),
-			Name	= AddChar(name, cmb[1]),
-			Children= {
-				meta = {name='Children'},
-				{
-					meta = {name='Children', value='TkModelDescriptorList'},
-					TkModelDescriptorList = {
-						meta = {name='TkModelDescriptorList'},
-						List = {
-							meta = {name='List'},
-							{
-								meta = {name='List', value='TkResourceDescriptorList'},
-								TypeId	= AddChar(name..'ID2_', ix, true),
-								Descriptors = {
-									meta = {name='Descriptors'},
-									{
-										meta = {name='Descriptors', value='TkResourceDescriptorData'},
-										Id		= AddChar(name, cmb[2], true),
-										Name	= AddChar(name, cmb[2]),
-										Children= {
-											meta = {name='Children'},
-											{
-												meta = {name='Children', value='TkModelDescriptorList'},
-												TkModelDescriptorList = {
-													meta = {name='TkModelDescriptorList'},
-													List = {
-														meta = {name='List'},
-														{
-															meta = {name='List', value='TkResourceDescriptorList'},
-															TypeId	= AddChar(name..'ID3_', ix, true),
-															Descriptors = {
-																meta = {name='Descriptors'},
-																{
-																	meta = {name='Descriptors', value='TkResourceDescriptorData'},
-																	Id		= AddChar(name, cmb[3], true),
-																	Name	= AddChar(name, cmb[3])
-																}
+local function rsrc3Group(name, ix, cmb)
+	return {
+		meta	= {name='Descriptors', value='TkResourceDescriptorData'},
+		Id		= addChar(name, cmb[1], true),
+		Name	= addChar(name, cmb[1]),
+		Children= {
+			meta = {name='Children'},
+			{
+				meta = {name='Children', value='TkModelDescriptorList'},
+				TkModelDescriptorList = {
+					meta = {name='TkModelDescriptorList'},
+					List = {
+						meta = {name='List'},
+						{
+							meta	= {name='List', value='TkResourceDescriptorList'},
+							TypeId	= addChar(name..'ID2_', ix, true),
+							Descriptors = {
+								meta = {name='Descriptors'},
+								{
+									meta	= {name='Descriptors', value='TkResourceDescriptorData'},
+									Id		= addChar(name, cmb[2], true),
+									Name	= addChar(name, cmb[2]),
+									Children= {
+										meta = {name='Children'},
+										{
+											meta = {name='Children', value='TkModelDescriptorList'},
+											TkModelDescriptorList = {
+												meta = {name='TkModelDescriptorList'},
+												List = {
+													meta = {name='List'},
+													{
+														meta	= {name='List', value='TkResourceDescriptorList'},
+														TypeId	= addChar(name..'ID3_', ix, true),
+														Descriptors = {
+															meta = {name='Descriptors'},
+															{
+																meta	= {name='Descriptors', value='TkResourceDescriptorData'},
+																Id		= addChar(name, cmb[3], true),
+																Name	= addChar(name, cmb[3])
 															}
 														}
 													}
@@ -282,58 +310,58 @@ local function GenerateDescriptor()
 				}
 			}
 		}
-	end
-	local T = {
-		-- file wrapper template
-		meta = {template='cTkModelDescriptorList'},
-		List = {
-			meta = {name='List'},
-			Keys = {
-			-- keys descriptor
-				meta = {name='List', value='TkResourceDescriptorList'},
-				TypeId		= key_nodes.tid,
-				Descriptors	= {
-					meta = {name='Descriptors'}
-				}
-			},
-			Locks = {
-			-- locks descriptor
-				meta = {name='List', value='TkResourceDescriptorList'},
-				TypeId		= lock_nodes.tid,
-				Descriptors	= {
-					meta = {name='Descriptors'}
-				}
+	}
+end
+-- build descriptor for proc-gen scene nodes
+local mx_dsc = {
+	-- file wrapper template
+	meta = {template='cTkModelDescriptorList'},
+	List = {
+		meta = {name='List'},
+		Keys = {
+		-- keys descriptor
+			meta		= {name='List', value='TkResourceDescriptorList'},
+			TypeId		= key_nodes.tid,
+			Descriptors	= {
+				meta = {name='Descriptors'}
+			}
+		},
+		Locks = {
+		-- locks descriptor
+			meta		= {name='List', value='TkResourceDescriptorList'},
+			TypeId		= lock_nodes.tid,
+			Descriptors	= {
+				meta = {name='Descriptors'}
 			}
 		}
 	}
-	local combinations = {}
-	--	generate combinations of 3 from all key_nodes
-	for i = 1, #key_nodes.form - 2 do
-		for j = i + 1, #key_nodes.form - 1 do
-			for k = j + 1, #key_nodes.form do
-				combinations[#combinations+1] = {i, j, k}
-			end
+}
+local key_groups = {}
+--	generate combinations of 3 from all key_nodes
+for i = 1, #key_nodes.form - 2 do
+	for j = i + 1, #key_nodes.form - 1 do
+		for k = j + 1, #key_nodes.form do
+			key_groups[#key_groups+1] = {i, j, k}
 		end
 	end
-	-- Add keys
-	for i, cmb in ipairs(combinations) do
-		table.insert(T.List.Keys.Descriptors, Rsrc3Group(key_nodes.name, i, cmb))
-	end
-	-- Add lock crates
-	for i=1, #lock_nodes.form do
-		table.insert(T.List.Locks.Descriptors, {
-			meta = {name='Descriptors', value='TkResourceDescriptorData'},
-			Id		= AddChar(lock_nodes.name, i, true),
-			Name	= AddChar(lock_nodes.name, i)
-		})
-	end
-	return T
+end
+-- Add keys
+for i, cmb in ipairs(key_groups) do
+	table.insert(mx_dsc.List.Keys.Descriptors, rsrc3Group(key_nodes.name, i, cmb))
+end
+-- Add lock crates
+for i=1, #lock_nodes.form do
+	table.insert(mx_dsc.List.Locks.Descriptors, {
+		meta	= {name='Descriptors', value='TkResourceDescriptorData'},
+		Id		= addChar(lock_nodes.name, i, true),
+		Name	= addChar(lock_nodes.name, i)
+	})
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Treasure Ruin Procedural Crates.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.Treasure Ruin Procedural Crates',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.58',
+	NMS_VERSION			= '6.16',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{
@@ -348,7 +376,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'Layout_1'},
 				PRECEDING_KEY_WORDS = 'Children',
-				ADD 				= AddCrateAndKey()
+				ADD 				= AddSceneNodes(mx_scn)
 			}
 		}
 	}
@@ -356,7 +384,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	ADD_FILES	= {
 		{
 			FILE_DESTINATION = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/UNDERGROUNDRUINS.DESCRIPTOR.MXML',
-			FILE_CONTENT	 = FileWrapping(GenerateDescriptor())
+			FILE_CONTENT	 = ToMxmlFile(mx_dsc)
 		}
 	}
 }

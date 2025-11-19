@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "VR CleanHUD",
 ["MOD_AUTHOR"]      = "hilightnotes, enifleR, & Babscoole",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.16",
 ["MOD_DESCRIPTION"] = "Hide some UI in VR",
 ["MODIFICATIONS"]   =
   {
@@ -12,14 +12,14 @@ NMS_MOD_DEFINITION_CONTAINER =
         {
           ["MBIN_FILE_SOURCE"] =
           {
-            "UI/HUD/HUDHAZARD.MBIN",
-            "UI/HUD/HUDHEALTH.MBIN",
-            "UI/HUD/HUDINDICATORSVR.MBIN",
-            "UI/HUD/HUDLINES.MBIN",
-            "UI/HUD/HUDVRWARNING.MBIN",
-            "UI/HUD/HUDWEAPONS.MBIN",
+            "UI\HUD\HUDHAZARD.MBIN",
+            "UI\HUD\HUDHEALTH.MBIN",
+            "UI\HUD\HUDINDICATORSVR.MBIN",
+            "UI\HUD\HUDLINES.MBIN",
+            "UI\HUD\HUDVRWARNING.MBIN",
+            "UI\HUD\HUDWEAPONS.MBIN",
             "UI\HUD\HUDPLANETINFO.MBIN",
-            "UI/HUD/HUDNOTIFICATIONPANEL.MBIN",
+            "UI\HUD\HUDNOTIFICATIONPANEL.MBIN",
           },
           ["MXML_CHANGE_TABLE"] =
           {
@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["SPECIAL_KEY_WORDS"] = {"InWorldCompass","GcInWorldUIScreenData"},
+              ["SPECIAL_KEY_WORDS"] = {"InWorldCompass", "GcInWorldUIScreenData"},
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"ScreenScale", "0.000000"},

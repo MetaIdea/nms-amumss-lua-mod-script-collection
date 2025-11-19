@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-MOD_FILENAME    = "No Bloom Effect 4.7.pak", 
+MOD_FILENAME    = "No Bloom Effect 4.8.pak", 
 MOD_AUTHOR      = "Lo2k",
 LUA_AUTHOR      = "Babscole",
-NMS_VERSION     = "6.13",
+NMS_VERSION     = "6.17",
 MOD_DESCRIPTION = "Disables bloom effect",
 MODIFICATIONS   = 
 	{

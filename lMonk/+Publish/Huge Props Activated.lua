@@ -103,7 +103,7 @@ local mbin_ct = {
 	},
 	{
 		MBIN_FILE_SOURCE	= entity.plant_huge,
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Components', 'GcDestructableComponentData'},
 				VALUE_CHANGE_TABLE 	= {
@@ -141,7 +141,7 @@ local mbin_ct = {
 	},
 	{
 		MBIN_FILE_SOURCE	= entity.rock_huge,
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Components', 'GcDestructableComponentData'},
 				VALUE_CHANGE_TABLE 	= {
@@ -177,14 +177,14 @@ for _,src in ipairs(source_mbins) do
 	end
 	mbin_ct[#mbin_ct+1] = {
 		MBIN_FILE_SOURCE	= src.mbin,
-		EXML_CHANGE_TABLE	= ect
+		MXML_CHANGE_TABLE	= ect
 	}
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Huge Props Activated.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.Huge Props Activated',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.52',
+	NMS_VERSION			= '6.16',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= mbin_ct
