@@ -1,8 +1,10 @@
----------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 local mod_desc = [[
-  Fix floating teleporter collision so you can actually stand on it
-]]-------------------------------------------------------------------
----	MXML 2 LUA ... by lMonk ... version: 1.0.03
+  Fix floating teleporter collision so you can actually stand on it.
+  Adds a bottom beneath the floating teleporter to block the missing texture.
+  Adds a base under the land teleporter to fill the missing base when placed on a slope.
+]]---------------------------------------------------------------------------------------
+---	MXML 2 LUA ... by lMonk ... version: 1.0.04
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -26,6 +28,7 @@ local function ToMxml(class)
 				if type(cls) == 'table' and cls.meta then
 				-- add new section and recurs for nested sections
 					for _,at in ipairs(at_ord) do
+					-- Just for readability. The compiler doesn't need the ordering
 						if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
 					end
 					-- for k, v in pairs(cls.meta) do
@@ -177,16 +180,16 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.Floating Teleporter Collision',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.06',
+	NMS_VERSION			= '6.17.2',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
-	{--	|corvete teleporter water collision|
+	{--	|corvette teleporter water collision|
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/BIGGS/TELEWATER.SCENE.MBIN',
 		MXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'Name', 'MODELS\COMMON\SPACECRAFT\BIGGS\TELEWATER|collision1'},
+				SPECIAL_KEY_WORDS	= {'Name', [[MODELS\COMMON\SPACECRAFT\BIGGS\TELEWATER|collision1]]},
 				REMOVE				= 'Section'
 			},
 			{
@@ -194,24 +197,52 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= {
 					{'TransZ',		-0.8},
 					{'ScaleX', 		0.45},
-					{'ScaleY', 		0.45},
+					{'ScaleY', 		0.85},
 					{'ScaleZ', 		0.45}
 				}
 			},
 			{
 				PRECEDING_KEY_WORDS	= 'Children',
 				ADD 				= ToMxml(ScNode({
-					name	= '1ColFloat',
-					ntype	= 'COLLISION',
-					form	= {ty=0.1},
-					attr	= {
-						TYPE	= 'Box',
-						HEIGHT	= 0.5,
-						WIDTH	= 3.0,
-						DEPTH	= 3.0
+					{
+						name	= '1ColFloat',
+						ntype	= 'COLLISION',
+						form	= {ty=0.1},
+						attr	= {
+							TYPE	= 'Box',
+							HEIGHT	= 0.5,
+							WIDTH	= 3.0,
+							DEPTH	= 3.0
+						}
+					},
+					{
+						name	= '1RefBottomFix',
+						ntype	= 'REFERENCE',
+						form	= {sx=1.36, sy=0.05, sz=1.36},
+						attr	= {
+							SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/CYLINDERSNAPSHAPE.SCENE.MBIN'
+						}
 					}
 				}))
 			}
 		}
-	}
+	},
+	{--	|corvette teleporter base|
+		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/BIGGS/TELEPORTER.SCENE.MBIN',
+		MXML_CHANGE_TABLE	= {
+			{
+				PRECEDING_KEY_WORDS	= 'Children',
+				ADD 				= ToMxml(ScNode({
+					{
+						name	= '1RefBottomFix',
+						ntype	= 'REFERENCE',
+						form	= {ty=-4, sx=1.44, sy=2, sz=1.44},
+						attr	= {
+							SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/CYLINDERSNAPSHAPE.SCENE.MBIN'
+						}
+					}
+				}))
+			}
+		}
+	},
 }}}}

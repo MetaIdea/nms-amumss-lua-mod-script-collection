@@ -1,3 +1,6 @@
+SLOW_SPEED_ALPHA = 0.8
+FAST_SPEED_ALPHA = 0.6
+
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]    = "MicroPulseSpeedLines.pak",
     ["MOD_AUTHOR"]      = "gh0stwizard",
@@ -18,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "RemoveCylinderRadius", 10000.0 },
                                 { "Length",               28.0 },
                                 { "Width",                56.0 },
-                                { "Alpha",                0.5 }, -- (0.4)
+                                { "Alpha",                SLOW_SPEED_ALPHA }, -- (0.4)
                                 { "FadeTime",             2.0 },
                                 { "Lifetime",             2.0 },
                                 { "Speed",                20000.0 },
@@ -36,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "RemoveCylinderRadius", 7000.0 },
                                 { "Length",               18.0 },
                                 { "Width",                36.0 },
-                                { "Alpha",                0.5 }, -- (0.4)
+                                { "Alpha",                SLOW_SPEED_ALPHA }, -- (0.4)
                                 { "FadeTime",             5.0 },
                                 { "Lifetime",             5.0 },
                                 { "Speed",                10000.0 },
@@ -54,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "RemoveCylinderRadius", 3500.0 },
                                 { "Length",               9.0 },
                                 { "Width",                18.0 },
-                                { "Alpha",                0.5 }, -- (0.4)
+                                { "Alpha",                SLOW_SPEED_ALPHA }, -- (0.4)
                                 { "FadeTime",             2.0 },
                                 { "Lifetime",             2.0 },
                                 { "Speed",                10000.0 },
@@ -82,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Radius",               800.0 },
                                 { "Length",               1.0 },
                                 { "Width",                1.0 },
-                                { "Alpha",                0.4 }, -- (0.4)
+                                { "Alpha",                FAST_SPEED_ALPHA }, -- (0.4)
                                 { "RemoveCylinderRadius", 400.0 },
                                 { "FadeTime",             1.0 },
                                 { "Lifetime",             1.0 },
@@ -103,7 +106,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Radius",               2000.0 },
                                 { "Length",               1.0 },
                                 { "Width",                4.0 },
-                                { "Alpha",                0.4 }, -- (0.4)
+                                { "Alpha",                FAST_SPEED_ALPHA }, -- (0.4)
                                 { "RemoveCylinderRadius", 1000.0 },
                                 { "FadeTime",             2.0 },
                                 { "Lifetime",             2.0 },
@@ -123,7 +126,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Radius",               5000.0 },
                                 { "Length",               1.0 },
                                 { "Width",                10.0 },
-                                { "Alpha",                0.4 }, -- (0.4)
+                                { "Alpha",                FAST_SPEED_ALPHA }, -- (0.4)
                                 { "RemoveCylinderRadius", 3000.0 },
                                 { "FadeTime",             5.0 },
                                 { "Lifetime",             5.0 },
