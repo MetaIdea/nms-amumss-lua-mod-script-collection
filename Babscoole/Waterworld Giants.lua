@@ -15,14 +15,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["PRECEDING_KEY_WORDS"] = {"ValidGiantPlanetBiome"},
-              ["ADD_OPTION"] = "ADDendSECTION",
-              ["ADD"] =
-[[
-		<Property name="ValidGiantPlanetBiome" value="GcBiomeType">
-			<Property name="Biome" value="Waterworld" />
-		</Property>
-]]
+              ["SPECIAL_KEY_WORDS"] = {"ValidGiantPlanetBiome", "GcBiomeType", "Biome", "Blue"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Biome", "Waterworld"},
+              }
             },
           }
         },
