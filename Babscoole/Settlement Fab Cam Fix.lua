@@ -1,0 +1,61 @@
+NMS_MOD_DEFINITION_CONTAINER =
+{
+["MOD_FILENAME"]    = "Settlement Fab Cam Fix",
+["MOD_DESCRIPTION"] = "Fixes the incorrect Settlement Starship Fabricator camera offset, making it align with the Space Station Starship Fabricator camera.",
+["MOD_AUTHOR"]      = "Grouch",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.17",
+["MODIFICATIONS"]   =
+  {
+    {
+      ["MBIN_CHANGE_TABLE"] =
+      {
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SETTLEMENT\LANDINGZONESHIPBUILDER_TERMINAL.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD"] =
+[[
+		<Property name="Children" value="TkSceneNodeData" _index="0">
+			<Property name="Name" value="CAMERAFOCUS" />
+			<Property name="NameHash" value="4006631957" />
+			<Property name="Type" value="JOINT" />
+			<Property name="Transform" value="TkTransformData">
+				<Property name="TransX" value="0.000000" />
+				<Property name="TransY" value="0.000000" />
+				<Property name="TransZ" value="0.000000" />
+				<Property name="RotX" value="0.000000" />
+				<Property name="RotY" value="0.000000" />
+				<Property name="RotZ" value="0.000000" />
+				<Property name="ScaleX" value="1.000000" />
+				<Property name="ScaleY" value="1.000000" />
+				<Property name="ScaleZ" value="1.000000" />
+			</Property>
+			<Property name="PlatformExclusion" value="0" />
+			<Property name="Attributes">
+				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+					<Property name="Name" value="JOINTINDEX" />
+					<Property name="Value" value="3" />
+				</Property>
+			</Property>
+			<Property name="Children" />
+		</Property>
+]]
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "Terminal"},
+              ["EXML_INDEX"] = "1", 
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "ShipCustomiserTerminal"},
+              ["EXML_INDEX"] = "2", 
+            },
+          }
+        },
+      }
+    }
+  }
+}
