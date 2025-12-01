@@ -1,13 +1,12 @@
 Author = "Syzzle"
 ModName = "sProtect"
-BaseDescription = "Makes so your tech won't be breaking until your shield is down."
-GameVersion = "6.02"
---ModVersion = "v1.4"
+GameVersion = "6.17"
+Description = "Makes so your tech won't be breaking until your shield is down."
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"]	= ModName,
-  ["MOD_DESCRIPTION"]	= BaseDescription,
+  ["MOD_DESCRIPTION"]	= Description,
   ["MOD_AUTHOR"]		= Author,
   ["NMS_VERSION"]		= GameVersion,
   ["MODIFICATIONS"]	= {

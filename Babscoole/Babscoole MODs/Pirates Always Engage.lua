@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "Pirates Always Engage",
 ["MOD_AUTHOR"]				= "DeathWrench",
-["NMS_VERSION"]				= "6.16",
+["NMS_VERSION"]				= "6.18",
 ["MODIFICATIONS"] 			= 
 	{
 		{

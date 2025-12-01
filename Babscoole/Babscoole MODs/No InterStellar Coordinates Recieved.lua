@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"]	= "No InterStellar Coordinates Received.pak",
+    ["MOD_FILENAME"]	= "No InterStellar Coordinates Received",
     ["MOD_DESCRIPTION"]	= "Removes Interstellar Coordinates prompt",
     ["MOD_AUTHOR"]		= "DeathWrench",
     ["LUA_AUTHOR"]		= "DeathWrench",
-    ["NMS_VERSION"]		= "6.10",
+    ["NMS_VERSION"]		= "6.18",
     ["MODIFICATIONS"]    = {{
     ["MBIN_CHANGE_TABLE"] = {{
         ["MBIN_FILE_SOURCE"] =

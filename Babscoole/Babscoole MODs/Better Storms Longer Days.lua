@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Better Storms Longer Days.pak",
+["MOD_FILENAME"]  = "Better Storms Longer Days",
 ["MOD_AUTHOR"]    = "degraaaff",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.10",
+["NMS_VERSION"]   = "6.17",
 ["MODIFICATIONS"] =
     {
         {

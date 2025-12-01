@@ -1,7 +1,6 @@
 Author = "Syzzle"
 ModName = "Space Rescue Always Capital Freighter"
-GameVersion = "6.02"
---ModVersion = "Version"
+GameVersion = "6.17"
 Description = "Makes the Space Rescue encounter always be a Capital Freighter."
 
 NMS_MOD_DEFINITION_CONTAINER = 

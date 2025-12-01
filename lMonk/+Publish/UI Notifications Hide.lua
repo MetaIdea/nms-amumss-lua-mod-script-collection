@@ -4,9 +4,9 @@ local mod_desc = [[
 ]]-------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Hide notifications.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.Hide notifications',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.01',
+	NMS_VERSION			= '6.17.2',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE 	= {

@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Unlimited Base Building",
 ["MOD_AUTHOR"]    = "Mjjstral & Babscoole",
-["NMS_VERSION"]   = "6.16",
+["NMS_VERSION"]   = "6.18",
 ["MODIFICATIONS"] =
     {
         {

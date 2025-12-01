@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "6_10"
+GameVersion = "6_18"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -2760,30 +2760,29 @@ PIRATLTEASYRewards =
 							<Property name="ProductList" value="B_DECO_B" _index="46" />
 							<Property name="ProductList" value="B_DECO_C" _index="47" />
 							<Property name="ProductList" value="B_DECO_D" _index="48" />
-							<Property name="ProductList" value="B_DECO_E" _index="49" />
-							<Property name="ProductList" value="B_DECO_F" _index="50" />
-							<Property name="ProductList" value="B_DECO_G" _index="51" />
-							<Property name="ProductList" value="B_DECO_H" _index="52" />
-							<Property name="ProductList" value="B_DECO_J" _index="53" />
-							<Property name="ProductList" value="B_DECO_K" _index="54" />
-							<Property name="ProductList" value="B_DECO_L" _index="55" />
-							<Property name="ProductList" value="B_DECO_N_0" _index="56" />
-							<Property name="ProductList" value="B_DECO_N_1" _index="57" />
-							<Property name="ProductList" value="B_DECO_O" _index="58" />
-							<Property name="ProductList" value="B_DECO_P" _index="59" />
-							<Property name="ProductList" value="B_CON_L_0" _index="60" />
-							<Property name="ProductList" value="B_CON_L_1" _index="61" />
-							<Property name="ProductList" value="B_CON_L_3" _index="62" />
-							<Property name="ProductList" value="B_CON_5" _index="63" />
-							<Property name="ProductList" value="B_CON_6" _index="64" />
-							<Property name="ProductList" value="B_CON_7" _index="65" />
-							<Property name="ProductList" value="B_CON_8" _index="66" />
-							<Property name="ProductList" value="B_CON_9" _index="67" />
-							<Property name="ProductList" value="B_CON2_0" _index="68" />
-							<Property name="ProductList" value="B_CON2_1" _index="69" />
-							<Property name="ProductList" value="B_CON2_2" _index="70" />
-							<Property name="ProductList" value="B_CON2_3" _index="71" />
-							<Property name="ProductList" value="B_CON_L_2" _index="72" />
+							<Property name="ProductList" value="B_DECO_F" _index="49" />
+							<Property name="ProductList" value="B_DECO_G" _index="50" />
+							<Property name="ProductList" value="B_DECO_H" _index="51" />
+							<Property name="ProductList" value="B_DECO_J" _index="52" />
+							<Property name="ProductList" value="B_DECO_K" _index="53" />
+							<Property name="ProductList" value="B_DECO_L" _index="54" />
+							<Property name="ProductList" value="B_DECO_N_0" _index="55" />
+							<Property name="ProductList" value="B_DECO_N_1" _index="56" />
+							<Property name="ProductList" value="B_DECO_O" _index="57" />
+							<Property name="ProductList" value="B_DECO_P" _index="58" />
+							<Property name="ProductList" value="B_CON_L_0" _index="59" />
+							<Property name="ProductList" value="B_CON_L_1" _index="60" />
+							<Property name="ProductList" value="B_CON_L_3" _index="61" />
+							<Property name="ProductList" value="B_CON_5" _index="62" />
+							<Property name="ProductList" value="B_CON_6" _index="63" />
+							<Property name="ProductList" value="B_CON_7" _index="64" />
+							<Property name="ProductList" value="B_CON_8" _index="65" />
+							<Property name="ProductList" value="B_CON_9" _index="66" />
+							<Property name="ProductList" value="B_CON2_0" _index="67" />
+							<Property name="ProductList" value="B_CON2_1" _index="68" />
+							<Property name="ProductList" value="B_CON2_2" _index="69" />
+							<Property name="ProductList" value="B_CON2_3" _index="70" />
+							<Property name="ProductList" value="B_CON_L_2" _index="71" />
 						</Property>
 						<Property name="AmountMin" value="1" />
 						<Property name="AmountMax" value="1" />
@@ -3023,30 +3022,29 @@ PIRATLTHARDRewards =
 							<Property name="ProductList" value="B_DECO_B" _index="46" />
 							<Property name="ProductList" value="B_DECO_C" _index="47" />
 							<Property name="ProductList" value="B_DECO_D" _index="48" />
-							<Property name="ProductList" value="B_DECO_E" _index="49" />
-							<Property name="ProductList" value="B_DECO_F" _index="50" />
-							<Property name="ProductList" value="B_DECO_G" _index="51" />
-							<Property name="ProductList" value="B_DECO_H" _index="52" />
-							<Property name="ProductList" value="B_DECO_J" _index="53" />
-							<Property name="ProductList" value="B_DECO_K" _index="54" />
-							<Property name="ProductList" value="B_DECO_L" _index="55" />
-							<Property name="ProductList" value="B_DECO_N_0" _index="56" />
-							<Property name="ProductList" value="B_DECO_N_1" _index="57" />
-							<Property name="ProductList" value="B_DECO_O" _index="58" />
-							<Property name="ProductList" value="B_DECO_P" _index="59" />
-							<Property name="ProductList" value="B_CON_L_0" _index="60" />
-							<Property name="ProductList" value="B_CON_L_1" _index="61" />
-							<Property name="ProductList" value="B_CON_L_3" _index="62" />
-							<Property name="ProductList" value="B_CON_5" _index="63" />
-							<Property name="ProductList" value="B_CON_6" _index="64" />
-							<Property name="ProductList" value="B_CON_7" _index="65" />
-							<Property name="ProductList" value="B_CON_8" _index="66" />
-							<Property name="ProductList" value="B_CON_9" _index="67" />
-							<Property name="ProductList" value="B_CON2_0" _index="68" />
-							<Property name="ProductList" value="B_CON2_1" _index="69" />
-							<Property name="ProductList" value="B_CON2_2" _index="70" />
-							<Property name="ProductList" value="B_CON2_3" _index="71" />
-							<Property name="ProductList" value="B_CON_L_2" _index="72" />
+							<Property name="ProductList" value="B_DECO_F" _index="49" />
+							<Property name="ProductList" value="B_DECO_G" _index="50" />
+							<Property name="ProductList" value="B_DECO_H" _index="51" />
+							<Property name="ProductList" value="B_DECO_J" _index="52" />
+							<Property name="ProductList" value="B_DECO_K" _index="53" />
+							<Property name="ProductList" value="B_DECO_L" _index="54" />
+							<Property name="ProductList" value="B_DECO_N_0" _index="55" />
+							<Property name="ProductList" value="B_DECO_N_1" _index="56" />
+							<Property name="ProductList" value="B_DECO_O" _index="57" />
+							<Property name="ProductList" value="B_DECO_P" _index="58" />
+							<Property name="ProductList" value="B_CON_L_0" _index="59" />
+							<Property name="ProductList" value="B_CON_L_1" _index="60" />
+							<Property name="ProductList" value="B_CON_L_3" _index="61" />
+							<Property name="ProductList" value="B_CON_5" _index="62" />
+							<Property name="ProductList" value="B_CON_6" _index="63" />
+							<Property name="ProductList" value="B_CON_7" _index="64" />
+							<Property name="ProductList" value="B_CON_8" _index="65" />
+							<Property name="ProductList" value="B_CON_9" _index="66" />
+							<Property name="ProductList" value="B_CON2_0" _index="67" />
+							<Property name="ProductList" value="B_CON2_1" _index="68" />
+							<Property name="ProductList" value="B_CON2_2" _index="69" />
+							<Property name="ProductList" value="B_CON2_3" _index="70" />
+							<Property name="ProductList" value="B_CON_L_2" _index="71" />
 						</Property>
 						<Property name="AmountMin" value="1" />
 						<Property name="AmountMax" value="1" />

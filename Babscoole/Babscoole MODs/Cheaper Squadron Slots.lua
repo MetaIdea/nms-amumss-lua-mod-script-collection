@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Cheaper Squadron Slots",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "Cuts squadron slots costs in half",
-["NMS_VERSION"]     = "6.17",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
     {
         {

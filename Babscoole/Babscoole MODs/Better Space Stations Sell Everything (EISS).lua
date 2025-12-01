@@ -76,7 +76,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Better Space Stations Sell Everything (EISS)",
 ["MOD_AUTHOR"]      = "MasterNetra & musty123 & Babscoole",
 ["LUA_AUTHOR"]      = "Babscoole & MasterNetra",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "This mod adds the most of the items in game to the space station vendors.(All Products Version)",
 ["MODIFICATIONS"]   =
     {

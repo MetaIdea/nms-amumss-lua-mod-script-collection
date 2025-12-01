@@ -1,7 +1,6 @@
 Author = "Syzzle"
 ModName = "Better Rifles"
-GameVersion = "6.02"
---ModVersion = "v1.1"
+GameVersion = "6.17"
 Description = "Change Rifle base stats to the same as Alien Multi-Tool."
 
 -- Thanks for Babscoole on Modding Discord for teaching me how to use SPECIAL_KEY_WORDS and the existence of MapFileTrees

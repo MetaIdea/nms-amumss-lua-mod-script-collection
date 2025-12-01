@@ -943,9 +943,7 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       </Property>
       <Property name="PlacementScene" value="TkModelResource">
         <Property name="Filename" value="]].. PATH .. P_NAME ..[[_PLACEMENT.SCENE.MBIN" />
-        <Property name="ResHandle" value="GcResource">
-          <Property name="ResourceID" value="0" />
-        </Property>
+        <Property name="Seed" value="0" />
       </Property>
       <Property name="SinglePartID" value="" />
       <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes">
@@ -959,6 +957,8 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="BuildableOnPlanetBase" value="true" />
       <Property name="BuildableOnSpaceBase" value="true" />
       <Property name="BuildableOnFreighter" value="true" />
+      <Property name="BuildableInShipStructural" value="false" />
+      <Property name="BuildableInShipDecorative" value="false" />
       <Property name="BuildableOnPlanet" value="true" />
       <Property name="BuildableOnPlanetWithProduct" value="true" />
       <Property name="BuildableUnderwater" value="true" />
@@ -966,9 +966,13 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="PlanetLimit" value="0" />
       <Property name="RegionLimit" value="0" />
       <Property name="PlanetBaseLimit" value="0" />
+      <Property name="CorvetteBaseLimit" value="0" />
+      <Property name="DoesNotCountTowardsComplexity" value="false" />
       <Property name="FreighterBaseLimit" value="0" />
       <Property name="CheckPlaceholderCollision" value="true" />
       <Property name="CheckPlayerCollision" value="true" />
+      <Property name="CanStack" value="true" />
+      <Property name="SnapRotateBlocked" value="false" />
       <Property name="CanRotate3D" value="false" />
       <Property name="CanScale" value="false" />
       <Property name="Groups">
@@ -990,6 +994,7 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
 ]] .. COMP_ENTRY .. [[
       <Property name="FamilyIDs" />
       <Property name="BuildEffectAccelerator" value="1.000000" />
+      <Property name="IconOverrideProductID" value="" />
       <Property name="RemovesAttachedDecoration" value="true" />
       <Property name="RemovesWhenUnsnapped" value="false" />
       <Property name="EditsTerrain" value="false" />
@@ -997,6 +1002,7 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="MinimumDeleteDistance" value="1.000000" />
       <Property name="IsSealed" value="false" />
       <Property name="CloseMenuAfterBuild" value="false" />
+      <Property name="Tag" value="" />
       <Property name="LinkGridData" value="GcBaseLinkGridData">
         <Property name="Connection" value="GcBaseLinkGridConnectionData">
           <Property name="Network" value="GcLinkNetworkTypes">
@@ -1021,10 +1027,15 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="RegionSpawnLOD" value="1" />
       <Property name="NPCInteractionScene" value="TkModelResource">
         <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource">
-          <Property name="ResourceID" value="0" />
-        </Property>
+        <Property name="Seed" value="0" />
       </Property>
+      <Property name="IsModularCustomisation" value="false" />
+      <Property name="ModularCustomisationBaseID" value="" />
+      <Property name="HasDescriptor" value="false" />
+      <Property name="DescriptorID" value="" />
+      <Property name="UseProductIDOverride" value="false" />
+      <Property name="OverrideProductID" value="" />
+      <Property name="FossilDisplayID" value="" />
     </Property>
 ]]
 return BASEBUILDINGOBJECTSTABLE_ADDING
@@ -1042,16 +1053,10 @@ BASEBUILDINGPARTSTABLE_ADDING =
           </Property>
           <Property name="Model" value="TkModelResource">
             <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/CUBESOLID.SCENE.MBIN" />
-            <Property name="ResHandle" value="GcResource">
-              <Property name="ResourceID" value="0" />
-            </Property>
             <Property name="Seed" value="0" />
           </Property>
           <Property name="Inactive" value="TkModelResource">
             <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/CUBESOLID_LOD.SCENE.MBIN" />
-            <Property name="ResHandle" value="GcResource">
-              <Property name="ResourceID" value="0" />
-            </Property>
             <Property name="Seed" value="0" />
           </Property>
         </Property>
@@ -1074,24 +1079,15 @@ PRODUCT_ADDING =
       <Property name="GroupID" value="" />
       <Property name="DebrisFile" value="TkModelResource">
         <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
-        <Property name="ResHandle" value="GcResource">
-          <Property name="ResourceID" value="0" />
-        </Property>
         <Property name="Seed" value="0" />
       </Property>
       <Property name="BaseValue" value="1" />
       <Property name="Level" value="0" />
       <Property name="Icon" value="TkTextureResource">
         <Property name="Filename" value="]].. ICON ..[[" />
-        <Property name="ResHandle" value="GcResource">
-          <Property name="ResourceID" value="0" />
-        </Property>
       </Property>
       <Property name="HeroIcon" value="TkTextureResource">
         <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource">
-          <Property name="ResourceID" value="0" />
-        </Property>
       </Property>
       <Property name="Colour">
         <Property name="R" value="0.172549" />
@@ -1571,7 +1567,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]     = "zzz-Ultra Base Building Remover",
 ["MOD_AUTHOR"]       = "Mjjstral and Babscoole",
 ["MOD_CONTRIBUTORS"] = "Ignacio and GhostRick",
-["NMS_VERSION"]      = "6.16",
+["NMS_VERSION"]      = "6.18",
 ["ADD_FILES"]        = ADD_FILES_TABLE,
 ["MODIFICATIONS"]    =
     {

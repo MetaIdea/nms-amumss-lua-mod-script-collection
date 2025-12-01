@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "No Kill Creature Missions",
 ["MOD_DESCRIPTION"] = "Eliminates all Creature and Predator Kill missions from space station agents.",
 ["MOD_AUTHOR"]      = "Bookworm and Babscoole",
-["NMS_VERSION"]     = "6.16",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
   {
     {
