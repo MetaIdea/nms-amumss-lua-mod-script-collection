@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] = "_Fine_LOD_Classic.pak",
 ["MOD_AUTHOR"] = "Prof Horatio Hafnaugels",
 ["LUA_AUTHOR"] = "Babscoole",
-["NMS_VERSION"] = "5.21",
+["NMS_VERSION"] = "5.58",
 ["MODIFICATIONS"] =
     {
         {
@@ -11,13 +11,14 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\UI\BOOTLOGOPC.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value", "TEXTURES/UI/LOADING/MIDDLEWAREPAIR.DDS"},
+                            ["PRECEDING_KEY_WORDS"] = {"Textures"},
+                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", ""} -- Original "TEXTURES/UI/LOADING/MIDDLEWAREPAIR.DDS"
+                                {"Textures", ""} -- Original "TEXTURES/UI/LOADING/MIDDLEWAREPAIR.DDS"
                             }
                         },
                         {
@@ -35,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -85,7 +86,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "GCGRAPHICSGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
