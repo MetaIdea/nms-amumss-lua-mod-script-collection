@@ -1,4 +1,4 @@
-# No Man's Sky Mod Collection - Updated for 6.12
+# No Man's Sky Mod Collection - Updated for 6.18
 
 ### These are the current published and unpublished mods created for No Man's Sky.
 
@@ -11,7 +11,6 @@
 [Better Subtle Ship Trails](https://www.nexusmods.com/nomanssky/mods/2954)<br />
 [Biomes Darker Space and Nebulae](https://www.nexusmods.com/nomanssky/mods/2602)<br />
 [Biomes Fire Flies And Particles Reduced](https://www.nexusmods.com/nomanssky/mods/2127)<br />
-[Biomes Sun Clouds Fog and LOD Tweaks](https://www.nexusmods.com/nomanssky/mods/2125)<br />
 [Freighter Salvage Terminals](https://www.nexusmods.com/nomanssky/mods/2601)<br />
 [Native Sentinel Ships](https://www.nexusmods.com/nomanssky/mods/2841)<br />
 [NativeShipSpawns](https://www.nexusmods.com/nomanssky/mods/2841)<br />
