@@ -7,7 +7,7 @@ Author			= "Gumsk"
 ModName			= "gShip Photon Colors"
 ModNameSub		= Color
 BaseDescription	= "Changes color of photon cannon to "..Color
-GameVersion = "5.2.9.0"
+GameVersion = "6.1.8.0"
 ModVersion = "a"
 
 --[[Files Modified
@@ -19,7 +19,7 @@ MODELS\EFFECTS\PROJECTILES\SHIPGUN\SHIPGUN\EMITTERS\SMOKE_EMITTER.PARTICLE.MBIN
 --]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
 	MOD_DESCRIPTION	= BaseDescription,
 	MOD_AUTHOR		= Author,
 	NMS_VERSION		= GameVersion,
@@ -35,14 +35,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			MBIN_CHANGE_TABLE = {
 				{
 					MBIN_FILE_SOURCE = {"GCSPACESHIPGLOBALS.GLOBAL.MBIN"},
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
 							VALUE_CHANGE_TABLE = {
 								{"MuzzleLightIntensity", 15},			--9
 							},
 						},
 						{
-							SPECIAL_KEY_WORDS = {"MuzzleLightColour","Colour.xml"},
+							PRECEDING_KEY_WORDS = {"MuzzleLightColour"},
 							VALUE_CHANGE_TABLE = {
 								{"R", RedAmount},			--0.169
 								{"G", GreenAmount},			--0.668
@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				},
 				{
 					MBIN_FILE_SOURCE = {"MODELS\EFFECTS\WEAPONS\SHIPS\SHIPBULLET_BLUE.MATERIAL.MBIN"},
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
 							PRECEDING_KEY_WORDS = {"Samplers"},
 							VALUE_CHANGE_TABLE = {
@@ -67,7 +67,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						"MODELS\EFFECTS\PROJECTILES\SHIPGUN\SHIPGUN\EMITTERS\GLOW_EMITTER.PARTICLE.MBIN",
 						"MODELS\EFFECTS\PROJECTILES\SHIPGUN\SHIPGUN\EMITTERS\SPARKS_EMITTER.PARTICLE.MBIN"
 					},
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
@@ -80,9 +80,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				},
 				{
 					MBIN_FILE_SOURCE = {"MODELS\EFFECTS\PROJECTILES\SHIPGUN\SHIPGUN\EMITTERS\SMOKE_EMITTER.PARTICLE.MBIN"},
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
-							SPECIAL_KEY_WORDS = {"ColourStart","Colour.xml"},
+							PRECEDING_KEY_WORDS = {"ColourStart"},
 							VALUE_CHANGE_TABLE = {
 								{"R", RedAmount},			--2.59
 								{"G", GreenAmount},			--4.103
@@ -90,7 +90,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							SPECIAL_KEY_WORDS = {"ColourMiddle","Colour.xml"},
+							PRECEDING_KEY_WORDS = {"ColourMiddle"},
 							VALUE_CHANGE_TABLE = {
 								{"R", 1},					--0.854
 								{"G", 1},					--0.918

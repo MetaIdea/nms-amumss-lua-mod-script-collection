@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Jaros.Fiends.V.2.1",
+["MOD_FILENAME"]            = "Jaros.Fiends.V.2.2",
 ["MOD_AUTHOR"]              = "JJHookah",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "6.12",
+["NMS_VERSION"]             = "6.18",
 ["MODIFICATIONS"]           =
     {
         {
@@ -16,11 +16,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IncreaseFiendWanted",          "true"},
-                                {"IncreaseFiendWantedChance",    "0.500000"},
-                                {"UseModelNode",                 "false"},
-                                {"ShowInFreighterBranchRoom",    "true"},
-                                {"MarkerActiveWithNodeInactive", "false"},
+                                {"IncreaseFiendWanted",       "true"},
+                                {"IncreaseFiendWantedChance", "0.500000"},
                             }
                         },
                     }
@@ -32,11 +29,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IncreaseFiendWanted",          "true"},
-                                {"IncreaseFiendWantedChance",    "0.030000"},
-                                {"UseModelNode",                 "false"},
-                                {"ShowInFreighterBranchRoom",    "true"},
-                                {"MarkerActiveWithNodeInactive", "false"},
+                                {"IncreaseFiendWanted",       "true"},
+                                {"IncreaseFiendWantedChance", "0.030000"},
                             }
                         },
                     }
@@ -48,11 +42,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IncreaseFiendWanted",          "true"},
-                                {"IncreaseFiendWantedChance",    "0.200000"},
-                                {"UseModelNode",                 "false"},
-                                {"ShowInFreighterBranchRoom",    "true"},
-                                {"MarkerActiveWithNodeInactive", "false"},
+                                {"IncreaseFiendWanted",       "true"},
+                                {"IncreaseFiendWantedChance", "0.200000"},
                             }
                         },
                     }
