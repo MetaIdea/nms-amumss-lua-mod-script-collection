@@ -1,9 +1,9 @@
----------------------------------------------------------------
+----------------------------------------------------------------------
 local mod_desc = [[
-  edit/replace/update/improve product icons
+  Edit/replace/update/improve product icons
 
-  * ADD_FILES will skipped SILENTLY if new files are not found!
-]]-------------------------------------------------------------
+  * DDS files import is skipped SILENTLY if file paths are not found!
+]]--------------------------------------------------------------------
 
 local prod_icons = {
 	CARBON_SEAL		= 'PRODUCTS/PRODUCT.MSEAL.DDS',
@@ -25,12 +25,15 @@ local prod_icons = {
 	FOOD_M_MOLE		= 'COOKINGPRODUCTS/PRODUCT.MEAT.MOLE.DDS',
 	FOOD_M_REX		= 'COOKINGPRODUCTS/PRODUCT.MEAT.SCALE.DDS',
 	FOOD_M_STRIDER	= 'COOKINGPRODUCTS/PRODUCT.MEAT.SAUSAGE1.DDS',
+	FOOD_V_BLOB		= 'COOKINGPRODUCTS/PRODUCT.HONEY.ALT.DDS',
 	FOOD_V_BUG		= 'COOKINGPRODUCTS/PRODUCT.R.BUG.DDS',
 	FOOD_V_GEK		= 'COOKINGPRODUCTS/PRODUCT.MILK.PROTO.DDS',
 	FOOD_V_FLYER	= 'COOKINGPRODUCTS/PRODUCT.MILK.CRAW.DDS',
 	FOOD_V_MILK		= 'COOKINGPRODUCTS/PRODUCT.MILK.WILD.DDS',
+	FOOD_V_PCAT		= 'COOKINGPRODUCTS/PRODUCT.HONEY.WHITE.DDS',
 	FOOD_R_BONEMILK	= 'COOKINGPRODUCTS/PRODUCT.MILK.BONE.DDS',
 	FOOD_R_EYEBALLS	= 'COOKINGPRODUCTS/PRODUCT.R.EYEBALLS.DDS',
+	FOOD_R_HONEY	= 'COOKINGPRODUCTS/PRODUCT.HONEY.BLUE.DDS',
 	FOOD_R_HORROR	= 'COOKINGPRODUCTS/PRODUCT.R.HORROR.DDS',
 	FOOD_V_BONE		= 'COOKINGPRODUCTS/PRODUCT.BONE.PIECE.DDS',
 	FOOD_V_CAT		= 'COOKINGPRODUCTS/PRODUCT.MEAT.KIDNEY.DDS',
@@ -39,71 +42,80 @@ local prod_icons = {
 	FOOD_V_ROBOT	= 'COOKINGPRODUCTS/PRODUCT.ROBOT.WIRE.DDS',
 	FOOD_V_STRIDER	= 'COOKINGPRODUCTS/PRODUCT.EGG.TALL.DDS',
 	FOOD_W_CASE		= 'COOKINGPRODUCTS/PRODUCT.MEAT.DDS',
+	FOOD_MEAT_STEW	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_ORGAN_STEW	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_BONE	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_DRILL	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_BEET	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_DIG	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_BALL	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_BUG	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_EVIL	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_O_CH	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_M_CH	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_O_CR	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_M_CR	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_O_HOT	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_M_HOT	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_O_VEG	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_STEW_M_VEG	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
+	FOOD_R_EYESTEW	= 'COOKINGPRODUCTS/PRODUCT.REFINED.EVILSTEW.DDS',
 	GEODE_CAVE		= 'U4PRODUCTS/PRODUCT.GEODECAVE.DDS',
-	SHIPCHARGE		= 'U4PRODUCTS/PRODUCT.SHIPCHARGE.DDS'
+	SHIPCHARGE		= 'U4PRODUCTS/PRODUCT.SHIPCHARGE.DDS',
+	SIGNALCHARGE	= 'U4PRODUCTS/PRODUCT.POWERSURGE.DDS',
 }
 
+local source = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures_mod_source/'
+local tex_path = 'TEXTURES/UI/FRONTEND/ICONS/'
+
+local mx_ct = {}
+for id, icon in pairs(prod_icons) do
+	mx_ct[#mx_ct+1] = {
+		SPECIAL_KEY_WORDS	= {'ID', id},
+		PRECEDING_KEY_WORDS = 'Icon',
+		VALUE_CHANGE_TABLE 	= {
+			{'Filename', tex_path..icon}
+		}
+	}
+end
+
+local add_files = nil
+if lfs.attributes(source..tex_path) then
+	add_files = {
+		{
+			EXTERNAL_FILE_SOURCE = source..tex_path..'cookingproducts/*.dds',
+			FILE_DESTINATION	 = tex_path..'COOKINGPRODUCTS/*.DDS'
+		},
+		{
+			EXTERNAL_FILE_SOURCE = source..tex_path..'products/*.dds',
+			FILE_DESTINATION	 = tex_path..'PRODUCTS/*.DDS'
+		},
+		{
+			EXTERNAL_FILE_SOURCE = source..tex_path..'shipicons/*.dds',
+			FILE_DESTINATION	 = tex_path..'SHIPICONS/*.DDS'
+		},
+		{
+			EXTERNAL_FILE_SOURCE = source..tex_path..'u4products/*.dds',
+			FILE_DESTINATION	 = tex_path..'U4PRODUCTS/*.DDS'
+		},
+		{
+			EXTERNAL_FILE_SOURCE = source..tex_path..'update3/*.dds',
+			FILE_DESTINATION	 = tex_path..'UPDATE3/*.DDS'
+		}
+	}
+end
+
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Product Icons.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.Product Icons',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.29',
+	NMS_VERSION			= '6.18',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN',
-		EXML_CHANGE_TABLE	= (
-			function()
-				local T = {}
-				for id, icon in pairs(prod_icons) do
-					T[#T+1] = {
-						SPECIAL_KEY_WORDS	= {'ID', id},
-						PRECEDING_KEY_WORDS = 'Icon',
-						VALUE_CHANGE_TABLE 	= {
-							{'Filename', 'TEXTURES/UI/FRONTEND/ICONS/'..icon}
-						}
-					}
-				end
-				T[#T+1] = {
-					SPECIAL_KEY_WORDS	= {
-						{'ID', 'FOOD_M_HORROR'},
-						{'ID', 'FOOD_R_HORROR'},
-						{'ID', 'FOOD_M_GRUB'},
-						{'ID', 'FOOD_V_BUG'},
-						{'ID', 'FOOD_STEW_EVIL'}
-					},
-					PRECEDING_KEY_WORDS = 'Colour',
-					INTEGER_TO_FLOAT	= 'Force',
-					VALUE_CHANGE_TABLE 	= {
-						{'R',	0.73333335},
-						{'G',	0.21960784},
-						{'B',	0.1882353}
-					}
-				}
-				return T
-			end
-		)()
+		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.EXML',
+		MXML_CHANGE_TABLE	= mx_ct
 	}
 }}},
-	ADD_FILES	= (
-		function()
-			local T = {}
-			local tex_path = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/'
-			for _,folder in ipairs({
-				'Products',
-				'CookingProducts',
-				'ShipIcons',
-				'u4Products',
-				'Update3'
-			}) do
-				if lfs.attributes(tex_path..folder) then
-					T[#T+1] = {
-						EXTERNAL_FILE_SOURCE = tex_path..folder..'/*.DDS',
-						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/'..folder..'/*.DDS',
-					}
-				end
-			end
-			return #T > 0 and T or nil
-		end
-	)()
+	ADD_FILES	= add_files
 }

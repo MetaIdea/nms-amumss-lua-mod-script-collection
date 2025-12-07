@@ -1,8 +1,8 @@
 ----------------------------------------------------------------------
 local mod_desc = [[
-  edit/replace/update/improve technology icons
+  Edit/replace/update/improve technology icons
 
-  * ADD_FILES will skipped SILENTLY if new files are not found!
+  * DDS files import is skipped SILENTLY if file paths are not found!
 ]]--------------------------------------------------------------------
 
 local tech_icons = {
@@ -19,15 +19,16 @@ local tech_icons = {
 	UT_LAUNCHCHARGE	= 'TECHNOLOGY/RENDER.LANDING.GREEN.DDS',
 	UT_SHIPLAS		= 'TECHNOLOGY/RENDER.PHASEBEAM.BLUE.DDS',
 	UT_SHIPSHOT		= 'TECHNOLOGY/RENDER.SHIPSHOT.GREEN.DDS',
-	UT_SHIPBLOB		= 'TECHNOLOGY/RENDER.IONBLAST.PINK.DDS',
+	UT_SHIPBLOB		= 'TECHNOLOGY/RENDER.IONBLAST.YELLOW.DDS',
 	UT_SHIPGUN		= 'TECHNOLOGY/RENDER.SHIPGUN.GRAY.DDS',
 	UT_SHIPMINI		= 'TECHNOLOGY/RENDER.PHOTONACCEL.BLUE1.DDS',
 	T_SHIPSHLD		= 'TECHNOLOGY/RENDER.SHIELDMOD.DDS',
 	UT_SHIPSHIELD	= 'TECHNOLOGY/RENDER.SHIELD.RED2.DDS',
 	SHIP_LIFESUP	= 'TECHNOLOGY/RENDER.LIFESUP.DDS',
 	SHIP_TELEPORT	= 'TECHNOLOGY/RENDER.FREIGHTERSCANNER.DDS',
+	WATER_LANDER	= 'TECHNOLOGY/RENDER.LANDING.WATER.DDS',
 ---	vehicle
-	EXO_RECHARGE	= 'TECHNOLOGY/VEHICLE/RENDER.ENGINE.ICARUS.DDS',
+	EXO_RECHARGE	= 'TECHNOLOGY/VEHICLE/RENDER.ENGINE.SOLAR.DDS',
 	MECH_BOOST		= 'TECHNOLOGY/VEHICLE/RENDER.MECH.BOOST.DDS',
 	MECH_FUEL		= 'TECHNOLOGY/VEHICLE/RENDER.MECH.FUEL.DDS',
 	MECH_MINER		= 'TECHNOLOGY/VEHICLE/RENDER.MECH.MINER.DDS',
@@ -66,6 +67,7 @@ local tech_icons = {
 	UT_MIDAIR		= 'TECHNOLOGY/RENDER.JETPACK.MOD.DDS',
 	UT_WATERJET		= 'TECHNOLOGY/RENDER.JETPACK.MOD.DDS',
 	UT_WATER		= 'TECHNOLOGY/RENDER.PROTECT.WATER.DDS',
+	PRESSURE_SUIT	= 'TECHNOLOGY/RENDER.PROTECT.WATER.DDS',
 	UT_PROTECT		= 'TECHNOLOGY/RENDER.PROTECT.BLUE.DDS',
 	T_SHIELD		= 'TECHNOLOGY/RENDER.SHIELD.SUIT.DDS',
 ---	freighter
@@ -80,48 +82,49 @@ local tech_icons = {
 	F_HACCESS3		= 'TECHNOLOGY/RENDER.FREIGHTER.BLUE.DDS'
 }
 
+local source = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures_mod_source/'
+local tex_path = 'TEXTURES/UI/FRONTEND/ICONS/'
+
+local mx_ct = {}
+for id, icon in pairs(tech_icons) do
+	mx_ct[#mx_ct+1] = {
+		SPECIAL_KEY_WORDS	= {'ID', id},
+		PRECEDING_KEY_WORDS = 'Icon',
+		VALUE_CHANGE_TABLE 	= {
+			{'Filename', tex_path..icon}
+		}
+	}
+end
+
+local add_files = nil
+if lfs.attributes(source..tex_path) then
+	add_files = {
+		{
+			EXTERNAL_FILE_SOURCE = source..tex_path..'technology/*.dds',
+			FILE_DESTINATION	 = tex_path..'TECHNOLOGY/*.DDS'
+		},
+		{
+			EXTERNAL_FILE_SOURCE = source..tex_path..'technology/bio/*.dds',
+			FILE_DESTINATION	 = tex_path..'TECHNOLOGY/BIO/*.DDS'
+		},
+		{
+			EXTERNAL_FILE_SOURCE = source..tex_path..'technology/vehicle/*.dds',
+			FILE_DESTINATION	 = tex_path..'TECHNOLOGY/VEHICLE/*.DDS'
+		}
+	}
+end
+
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Technology Icons.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.Technology Icons',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.29',
+	NMS_VERSION			= '6.18',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN',
-		EXML_CHANGE_TABLE	= (
-			function()
-				T = {}
-				for id, icon in pairs(tech_icons) do
-					T[#T+1] = {
-						SPECIAL_KEY_WORDS	= {'ID', id},
-						VALUE_CHANGE_TABLE 	= {
-							{'Filename', 'TEXTURES/UI/FRONTEND/ICONS/'..icon}
-						}
-					}
-				end
-				return T
-			end
-		)()
+		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.EXML',
+		MXML_CHANGE_TABLE	= mx_ct
 	}
 }}},
-	ADD_FILES	= (
-		function()
-			local T = {}
-			local tex_path = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Technology/'
-			for _,folder in ipairs({
-				'',
-				'Bio/',
-				'Vehicle/',
-			}) do
-				if lfs.attributes(tex_path..folder) then
-					T[#T+1] = {
-						EXTERNAL_FILE_SOURCE = tex_path..folder..'/*.DDS',
-						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/'..folder..'*.DDS',
-					}
-				end
-			end
-			return #T > 0 and T or nil
-		end
-	)()
+	ADD_FILES	= add_files
 }
