@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "No Grass",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.57",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "Removes grass spawning on lush planets, and Jungle sub-biome",
 ["MODIFICATIONS"]   =
     {

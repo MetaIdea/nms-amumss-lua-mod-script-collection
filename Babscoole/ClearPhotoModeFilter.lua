@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "ClearPhotoModeFilter.pak",
 ["MOD_AUTHOR"]      = "Pervicacius",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.45",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
     {
         {
@@ -14,11 +14,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"SpaceStation", "GcScreenFilterData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"SpaceStation", "GcScreenFilterData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LocText",               "UI_BB_HOVER_CLEAR"},
-                                {"SelectableInPhotoMode", "True"}
+                                {"SelectableInPhotoMode", "true"}
                             }
                         },
                     }
