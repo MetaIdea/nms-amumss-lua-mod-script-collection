@@ -1,5 +1,5 @@
 Small = [[
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_Up" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -17,7 +17,7 @@ Small = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndUp_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -36,7 +36,7 @@ Small = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndUp_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -57,7 +57,7 @@ Small = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_Down" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -75,7 +75,7 @@ Small = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndUp_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -94,7 +94,7 @@ Small = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndUp_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -115,7 +115,7 @@ Small = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSSelf_N" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -133,7 +133,7 @@ Small = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -152,7 +152,7 @@ Small = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -173,7 +173,7 @@ Small = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSSelf_E" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -191,7 +191,7 @@ Small = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -210,7 +210,7 @@ Small = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -231,7 +231,7 @@ Small = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSSelf_S" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -249,7 +249,7 @@ Small = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -268,7 +268,7 @@ Small = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -289,7 +289,7 @@ Small = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSSelf_W" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -307,7 +307,7 @@ Small = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -326,7 +326,7 @@ Small = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndSmall_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -350,7 +350,7 @@ Small = [[
 ]]
 
 Medium = [[
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="RefSmallSnapPoint" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
@@ -367,18 +367,18 @@ Medium = [[
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULESMALL_SNAPPOINT.SCENE.MBIN" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="EMBEDGEOMETRY" />
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="RefTechCenterSnapScene" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
@@ -395,18 +395,18 @@ Medium = [[
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\TECH_SNAPPOINT.SCENE.MBIN" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="EMBEDGEOMETRY" />
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_N" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -424,7 +424,7 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -443,7 +443,7 @@ Medium = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -464,7 +464,7 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_E" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -482,7 +482,7 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -501,7 +501,7 @@ Medium = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -522,7 +522,7 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_S" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -540,7 +540,7 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -559,7 +559,7 @@ Medium = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -580,7 +580,7 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_W" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -598,7 +598,7 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -617,7 +617,7 @@ Medium = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -638,7 +638,7 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloora_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -656,7 +656,7 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -677,7 +677,7 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorb_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -695,7 +695,7 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -716,7 +716,7 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloora" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -734,7 +734,7 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -755,7 +755,7 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloorb" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -773,7 +773,7 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -794,7 +794,7 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloor1_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -812,7 +812,7 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor1_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -833,7 +833,7 @@ Medium = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloor2_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -851,7 +851,7 @@ Medium = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor2_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -875,7 +875,7 @@ Medium = [[
 ]]
 
 Large = [[
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="RefTechCenterSnapScene" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
@@ -892,18 +892,18 @@ Large = [[
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\TECH_SNAPPOINT.SCENE.MBIN" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="EMBEDGEOMETRY" />
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_Vehicles" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -921,7 +921,7 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="Workstation_In" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -940,7 +940,7 @@ Large = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NullSnap_Vehicles" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -961,7 +961,7 @@ Large = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_Large_N" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -979,7 +979,7 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -998,7 +998,7 @@ Large = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1019,7 +1019,7 @@ Large = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_Large_E" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1037,7 +1037,7 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1056,7 +1056,7 @@ Large = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1077,7 +1077,7 @@ Large = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_Large_S" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1095,7 +1095,7 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1114,7 +1114,7 @@ Large = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1135,7 +1135,7 @@ Large = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndSelf_Large_W" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1153,7 +1153,7 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1172,7 +1172,7 @@ Large = [[
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndLarge_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1193,7 +1193,7 @@ Large = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloora" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1211,7 +1211,7 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1232,7 +1232,7 @@ Large = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloorb" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1250,7 +1250,7 @@ Large = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1274,7 +1274,7 @@ Large = [[
 ]]
 
 Huge = [[
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="RefSnapPointFloor" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
@@ -1291,18 +1291,18 @@ Huge = [[
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\MAINROOMFLOOR_SNAPPOINT.SCENE.MBIN" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="EMBEDGEOMETRY" />
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloora" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1320,7 +1320,7 @@ Huge = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1341,7 +1341,7 @@ Huge = [[
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloorb" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1359,7 +1359,7 @@ Huge = [[
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1387,7 +1387,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Snappy Industry",
 ["MOD_AUTHOR"]      = "Ethreon, Babscoole, EMPTY.d, KuroPeach",
 ["LUA_AUTHOR"]      = "Babscoole, EMPTY.d, KuroPeach",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "Add more snapping points to certain building modules in game",
 ["MODIFICATIONS"]   =
     {
@@ -1459,7 +1459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloor3_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1477,7 +1477,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor3_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1498,7 +1498,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloor4_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1516,7 +1516,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor4_In_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1658,7 +1658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1676,7 +1676,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1695,7 +1695,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1716,7 +1716,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1734,7 +1734,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1753,7 +1753,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1774,7 +1774,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1792,7 +1792,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1811,7 +1811,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1832,7 +1832,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_4" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1850,7 +1850,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1869,7 +1869,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1890,7 +1890,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloora" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1908,7 +1908,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1927,7 +1927,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1946,7 +1946,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="CubeFrameRoof_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -1967,7 +1967,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -1985,7 +1985,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2004,7 +2004,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2025,7 +2025,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2043,7 +2043,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2062,7 +2062,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2083,7 +2083,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2101,7 +2101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2120,7 +2120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2141,7 +2141,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_4" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2159,7 +2159,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2178,7 +2178,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2199,7 +2199,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloorb" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2217,7 +2217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2236,7 +2236,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2257,7 +2257,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="RefSnapPointCubeRoomFoundation" />
       <Property name="NameHash" value="3303144020" />
       <Property name="Type" value="REFERENCE" />
@@ -2274,11 +2274,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_FOUNDATION_SNAPPOINT.SCENE.MBIN" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="EMBEDGEOMETRY" />
           <Property name="Value" value="TRUE" />
         </Property>
@@ -2299,7 +2299,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorSQrt1_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2317,7 +2317,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor1_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2336,7 +2336,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor1_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2357,7 +2357,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorSQrt2_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2375,7 +2375,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor2_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2394,7 +2394,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor2_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2415,7 +2415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorSQrt3_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2433,7 +2433,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor3_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2452,7 +2452,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor3_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2473,7 +2473,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorSQrt4_" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2491,7 +2491,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor4_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2510,7 +2510,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloor4_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2578,7 +2578,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2596,7 +2596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2615,7 +2615,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2636,7 +2636,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2654,7 +2654,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2673,7 +2673,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2694,7 +2694,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2712,7 +2712,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2731,7 +2731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2752,7 +2752,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_4" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2770,7 +2770,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2789,7 +2789,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2810,7 +2810,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_5" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2828,7 +2828,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2847,7 +2847,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2868,7 +2868,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_6" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2886,7 +2886,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2905,7 +2905,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2926,7 +2926,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_7" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -2944,7 +2944,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2963,7 +2963,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -2984,7 +2984,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrta_8" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -3002,7 +3002,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3021,7 +3021,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3042,7 +3042,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloora" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -3060,7 +3060,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3079,7 +3079,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloora_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3100,7 +3100,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -3118,7 +3118,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3137,7 +3137,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3158,7 +3158,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -3176,7 +3176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3195,7 +3195,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3216,7 +3216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -3234,7 +3234,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3253,7 +3253,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3274,7 +3274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_4" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -3292,7 +3292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3311,7 +3311,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3332,7 +3332,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_5" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -3350,7 +3350,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3369,7 +3369,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3390,7 +3390,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_6" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -3408,7 +3408,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3427,7 +3427,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3448,7 +3448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_7" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -3466,7 +3466,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3485,7 +3485,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3506,7 +3506,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndFloorQrtb_8" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -3524,7 +3524,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3543,7 +3543,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3564,7 +3564,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SnapPoint_IndLargeFloorb" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="LOCATOR" />
@@ -3582,7 +3582,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_Out_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
@@ -3601,7 +3601,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="IndustrialLargeFloorb_Out_1" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />

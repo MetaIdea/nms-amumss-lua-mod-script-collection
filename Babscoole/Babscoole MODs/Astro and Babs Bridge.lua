@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Astro and Babs Bridge",
 ["MOD_AUTHOR"]      = "AstronautInOrbit and Babscoole",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "Changes the design of freighter bridges.",
 ["MODIFICATIONS"]   =
     {
@@ -19,6 +19,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "MODELS\BIOROOM_FRAME.SCENE.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\BIOROOM_FRAME"},
+                                {"NameHash", "4111618012"},
+                            }
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
@@ -41,6 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["ADD_OPTION"] = "ADDafterLINE",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
     <Property name="Children" value="TkSceneNodeData">
@@ -142,6 +150,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PARTS\BIOROOM_WALL"},
+                                {"NameHash", "2246118624"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "Glass1", "Name", "LODLEVEL"},
@@ -173,6 +188,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_BLUESTRIP"},
+                                {"NameHash", "2485421413"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_Y", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -191,6 +213,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE"},
+                                {"NameHash", "156530961"},
+                            }
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_Y", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -211,6 +240,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO"},
+                                {"NameHash", "2688479689"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_Y", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -229,6 +265,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS"},
+                                {"NameHash", "1149921101"},
+                            }
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_Y", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -249,6 +292,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_SHIPMATCH"},
+                                {"NameHash", "2648180919"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_Y", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -267,6 +317,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER.SCENE.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER"},
+                                {"NameHash", "2090040441"},
+                            }
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_Y", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -299,8 +356,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER"},
+                                {"NameHash", "1585900538"},
+                            }
+                        },
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["ADD_OPTION"] = "ADDafterLINE",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
     <Property name="Children" value="TkSceneNodeData">
@@ -358,8 +423,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PARTS\FLOORTILING"},
+                                {"NameHash", "2614692214"},
+                            }
+                        },
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["ADD_OPTION"] = "ADDafterLINE",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
     <Property name="Children" value="TkSceneNodeData">
@@ -461,6 +534,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS"},
+                                {"NameHash", "3218859086"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Wall", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -490,6 +570,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK"},
+                                {"NameHash", "1719041476"},
+                            }
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Wall", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -521,6 +608,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS"},
+                                {"NameHash", "2097096030"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Wall", "Name", "MATERIAL"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -551,6 +645,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PROPS\BIOROOM_CEILING_3"},
+                                {"NameHash", "1142175351"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Type", "COLLISION"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -570,6 +671,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PROPS\CURVEDRAILING"},
+                                {"NameHash", "1783230394"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "REFmonitor1"},
                             ["REMOVE"] = "SECTION"
                         },
@@ -585,6 +693,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PROPS\FLATPANEL2.SCENE.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PROPS\FLATPANEL2"},
+                                {"NameHash", "1948078164"},
+                            }
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
@@ -611,6 +726,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PROPS\FLATPANEL3"},
+                                {"NameHash", "2255025387"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "FlatPanel",     "Name", "MATERIAL"},
@@ -636,6 +758,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PROPS\GALAXYTERMINAL"},
+                                {"NameHash", "1689712524"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "Logo14"},
@@ -649,6 +778,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "FleetTerminal"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
     <Property name="Children" value="TkSceneNodeData">
@@ -685,6 +815,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Base"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["ADD_OPTION"] = "ADDafterLINE",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData">
@@ -737,6 +868,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR"},
+                                {"NameHash", "2359702508"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "AudioMonitor", "Name", "ATTACHMENT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -756,17 +894,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PROPS\PILOT_STATION"},
+                                {"NameHash", "1363614411"},
+                            }
+                        },
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOES"] = "TRUE",
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="HelmDesk" />
-      <Property name="NameHash" value="1840047114" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -1311,6 +1457,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PROPS\PILOTTERMINAL"},
+                                {"NameHash", "1674936100"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "pCube671",            "Name", "MATERIAL"},
@@ -1378,12 +1531,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\ASTROSBRIDGE\PROPS\STAIRS_RAILINGS"},
+                                {"NameHash", "1190507274"},
+                            }
+                        },
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOES"] = "TRUE",
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
     <Property name="Children" value="TkSceneNodeData">
@@ -1709,6 +1870,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "MODELS\BRIDGEDOORS\ANIMATEDDOOR"},
+                                {"NameHash", "806347267"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "polySurface6", "Name", "MATERIAL"},
@@ -1818,6 +1986,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["ADD_OPTION"] = "ADDafterLINE",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
     <Property name="Children" value="TkSceneNodeData">
@@ -2356,6 +2525,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Interior_"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData">
@@ -2474,7 +2644,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPCNAV_STAND_" />
-          <Property name="NameHash" value="654097330" />
+          <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="-2.981092" />
@@ -2493,7 +2663,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="ObjectSpawner" />
-          <Property name="NameHash" value="2569483507" />
+          <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
@@ -2516,7 +2686,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Children">
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE1" />
-              <Property name="NameHash" value="1611483558" />
+              <Property name="NameHash" value="0" />
               <Property name="Type" value="LOCATOR" />
               <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="0" />
@@ -2535,7 +2705,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE2" />
-              <Property name="NameHash" value="1923083979" />
+              <Property name="NameHash" value="0" />
               <Property name="Type" value="LOCATOR" />
               <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="-4" />
@@ -2554,7 +2724,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE3" />
-              <Property name="NameHash" value="4243587945" />
+              <Property name="NameHash" value="0" />
               <Property name="Type" value="LOCATOR" />
               <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="4" />
@@ -2573,7 +2743,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE4" />
-              <Property name="NameHash" value="843345421" />
+              <Property name="NameHash" value="0" />
               <Property name="Type" value="LOCATOR" />
               <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="-13" />
@@ -2592,7 +2762,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE5" />
-              <Property name="NameHash" value="3172107179" />
+              <Property name="NameHash" value="0" />
               <Property name="Type" value="LOCATOR" />
               <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="13" />
@@ -2622,11 +2792,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Hide"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="RefDrone" />
-              <Property name="NameHash" value="1298127706" />
+              <Property name="NameHash" value="0" />
               <Property name="Type" value="REFERENCE" />
               <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="0" />
@@ -2657,11 +2828,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "ColourData"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightL" />
-      <Property name="NameHash" value="4219409884" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="LIGHT" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
@@ -2713,7 +2885,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightR" />
-      <Property name="NameHash" value="4219409884" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="LIGHT" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
@@ -2777,7 +2949,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightFront" />
-      <Property name="NameHash" value="4219409884" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="LIGHT" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -2841,7 +3013,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightBack" />
-      <Property name="NameHash" value="4219409884" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="LIGHT" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -2940,6 +3112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RefTeleporter3"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
     <Property name="Children" value="TkSceneNodeData">
@@ -4484,7 +4657,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="RefTerminal" />
-      <Property name="NameHash" value="737739852" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -4596,7 +4769,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackWall" />
-      <Property name="NameHash" value="2443808107" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -4680,7 +4853,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="savepoint" />
-      <Property name="NameHash" value="2443808107" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-12" />
@@ -4708,7 +4881,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="cockpita" />
-      <Property name="NameHash" value="2443808107" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -4891,6 +5064,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["ADD_OPTION"] = "ADDafterLINE",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
     <Property name="Children" value="TkSceneNodeData">
@@ -5429,6 +5603,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Interior_"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData">
@@ -5547,7 +5722,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPCNAV_STAND_" />
-          <Property name="NameHash" value="654097330" />
+          <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="-2.981092" />
@@ -5567,7 +5742,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="ObjectSpawner" />
           <Property name="NameHash" value="2569483507" />
-          <Property name="Type" value="LOCATOR" />
+          <Property name="Type" value="0" />
           <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
@@ -5589,7 +5764,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Children">
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE1" />
-              <Property name="NameHash" value="1611483558" />
+              <Property name="NameHash" value="0" />
               <Property name="Type" value="LOCATOR" />
               <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="0" />
@@ -5608,7 +5783,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE2" />
-              <Property name="NameHash" value="1923083979" />
+              <Property name="NameHash" value="0" />
               <Property name="Type" value="LOCATOR" />
               <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="-4" />
@@ -5627,7 +5802,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE3" />
-              <Property name="NameHash" value="4243587945" />
+              <Property name="NameHash" value="0" />
               <Property name="Type" value="LOCATOR" />
               <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="4" />
@@ -5646,7 +5821,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE4" />
-              <Property name="NameHash" value="843345421" />
+              <Property name="NameHash" value="0" />
               <Property name="Type" value="LOCATOR" />
               <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="-13" />
@@ -5665,7 +5840,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE5" />
-              <Property name="NameHash" value="3172107179" />
+              <Property name="NameHash" value="0" />
               <Property name="Type" value="LOCATOR" />
               <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="13" />
@@ -5695,11 +5870,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Hide"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="RefDrone" />
-              <Property name="NameHash" value="1298127706" />
+              <Property name="NameHash" value="0" />
               <Property name="Type" value="REFERENCE" />
               <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="0" />
@@ -5730,11 +5906,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "ColourData"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightL" />
-      <Property name="NameHash" value="4219409884" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="LIGHT" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
@@ -5798,7 +5975,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightR" />
-      <Property name="NameHash" value="4219409884" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="LIGHT" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
@@ -5862,7 +6039,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightFront" />
-      <Property name="NameHash" value="4219409884" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="LIGHT" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -5926,7 +6103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightBack" />
-      <Property name="NameHash" value="4219409884" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="LIGHT" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -6015,6 +6192,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RefTeleporter3"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
     <Property name="Children" value="TkSceneNodeData">
@@ -7559,7 +7737,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="RefTerminal" />
-      <Property name="NameHash" value="737739852" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -7671,7 +7849,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackWall" />
-      <Property name="NameHash" value="2443808107" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -7755,7 +7933,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="savepoint" />
-      <Property name="NameHash" value="2443808107" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-12" />
@@ -7783,7 +7961,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="cockpita" />
-      <Property name="NameHash" value="2443808107" />
+      <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -7860,6 +8038,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Base"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["ADD_OPTION"] = "ADDafterLINE",
+                            ["AUTO_GNH"] = "TRUE",
                             ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData">
@@ -8001,8 +8180,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="cTkSceneNodeData">
-  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE" />
-  <Property name="NameHash" value="3449727632" />
+  <Property name="Name" value="MODELS\ASTROSBRIDGE\PROPS\BRIDGE_BACKWALL" />
+  <Property name="NameHash" value="]]..GNH("MODELS\ASTROSBRIDGE\PROPS\BRIDGE_BACKWALL")..[[" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData">
     <Property name="TransX" value="0" />
@@ -8029,7 +8208,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BRIDGEDOORBGL" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BRIDGEDOORBGL")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2" />
@@ -8057,7 +8236,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BRIDGEDOORBGR" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BRIDGEDOORBGR")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2" />
@@ -8085,7 +8264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BRIDGEDOORBGC" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BRIDGEDOORBGC")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -8113,7 +8292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BRIDGEDOOR" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BRIDGEDOOR")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -8141,7 +8320,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Back_CounterLeft" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("Back_CounterLeft")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-9.2" />
@@ -8169,7 +8348,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Back_CounterRight" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("Back_CounterRight")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="9.2" />
@@ -8197,7 +8376,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="screenL1" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("screenL1")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-12.2" />
@@ -8225,7 +8404,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="screenR1" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("screenR1")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="12.2" />
@@ -8253,7 +8432,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="screenL2" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("screenL2")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-9.5" />
@@ -8281,7 +8460,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="screenR2" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("screenR2")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="9.5" />
@@ -8309,7 +8488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="screenL3" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("screenL3")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-7" />
@@ -8337,7 +8516,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="screenR3" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("screenR3")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="7" />
@@ -8365,7 +8544,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackwallLeftMonitor1" />
-      <Property name="NameHash" value="576956202" />
+      <Property name="NameHash" value="]]..GNH("BackwallLeftMonitor1")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-12.9" />
@@ -8393,7 +8572,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackwallRightMonitor1" />
-      <Property name="NameHash" value="576956202" />
+      <Property name="NameHash" value="]]..GNH("BackwallRightMonitor1")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="12.9" />
@@ -8421,7 +8600,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackwallLeftMonitor2" />
-      <Property name="NameHash" value="576956202" />
+      <Property name="NameHash" value="]]..GNH("BackwallLeftMonitor2")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10.1" />
@@ -8449,7 +8628,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackwallRightMonitor2" />
-      <Property name="NameHash" value="576956202" />
+      <Property name="NameHash" value="]]..GNH("BackwallRightMonitor2")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10.1" />
@@ -8477,7 +8656,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackwallLeftMonitor3" />
-      <Property name="NameHash" value="576956202" />
+      <Property name="NameHash" value="]]..GNH("BackwallLeftMonitor3")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-7.7" />
@@ -8505,7 +8684,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackwallRightMonitor3" />
-      <Property name="NameHash" value="576956202" />
+      <Property name="NameHash" value="]]..GNH("BackwallRightMonitor3")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="7.7" />
@@ -8533,7 +8712,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall1Left" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackBottomWall1Left")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-13.3" />
@@ -8561,7 +8740,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall1Right" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackBottomWall1Right")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="13.3" />
@@ -8589,7 +8768,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall2Left" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackBottomWall2Left")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10.3" />
@@ -8617,7 +8796,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall2Right" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackBottomWall2Right")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10.3" />
@@ -8645,7 +8824,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall3Left" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackBottomWall3Left")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-7.3" />
@@ -8673,7 +8852,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall3Right" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackBottomWall3Right")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="7.3" />
@@ -8701,7 +8880,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall4Left" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackBottomWall4Left")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-4.6" />
@@ -8729,7 +8908,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall4Right" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackBottomWall4Right")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="4.6" />
@@ -8757,7 +8936,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SideBottomWallRightRight" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("SideBottomWallRightRight")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-14" />
@@ -8785,7 +8964,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="sideBottomWall4RightLeft" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("sideBottomWall4RightLeft")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-14" />
@@ -8813,7 +8992,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SideBottomWallLeftRight" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("SideBottomWallLeftRight")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="14" />
@@ -8841,7 +9020,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="sideBottomWall4LeftLeft" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("sideBottomWall4LeftLeft")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="14" />
@@ -8869,7 +9048,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWallLeft" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackTopWallLeft")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-11.2" />
@@ -8897,7 +9076,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow1Left" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackTopWindow1Left")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-12.9" />
@@ -8925,7 +9104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow1Right" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackTopWindow1Right")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="12.9" />
@@ -8953,7 +9132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow2Left" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackTopWindow2Left")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10.2" />
@@ -8981,7 +9160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow2Right" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackTopWindow2Right")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10.2" />
@@ -9009,7 +9188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow3Left" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackTopWindow3Left")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-7.5" />
@@ -9037,7 +9216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow3Right" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackTopWindow3Right")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="7.5" />
@@ -9065,7 +9244,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow4Left" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackTopWindow4Left")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-4.7" />
@@ -9093,7 +9272,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow4Right" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("BackTopWindow4Right")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="4.7" />
@@ -9121,7 +9300,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="fanbackground" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("fanbackground")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -9149,7 +9328,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Fan" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("Fan")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -9177,7 +9356,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bluelight" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("Bluelight")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2" />
@@ -9199,13 +9378,13 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="EMBEDGEOMETRY" />
           <Property name="Value" value="TRUE" />
-        </Property>        
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bluelight" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("Bluelight")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2" />
@@ -9242,8 +9421,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="cTkSceneNodeData">
-  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE" />
-  <Property name="NameHash" value="3449727632" />
+  <Property name="Name" value="MODELS\ASTROSBRIDGE\PROPS\CAPTAIN_CHAIR" />
+  <Property name="NameHash" value="]]..GNH("MODELS\ASTROSBRIDGE\PROPS\CAPTAIN_CHAIR")..[[" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData">
     <Property name="TransX" value="0" />
@@ -9270,7 +9449,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="captain_platform" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("captain_platform")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -9298,7 +9477,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="captainchair1" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("captainchair1")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -9326,7 +9505,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="chaircontrolsL" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("chaircontrolsL")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-0.47" />
@@ -9354,7 +9533,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="chaircontrolsR" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("chaircontrolsR")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.47" />
@@ -9382,7 +9561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="chaircontrolsBack" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("chaircontrolsBack")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -9410,7 +9589,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CaptainOrangeMonitorL" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("CaptainOrangeMonitorL")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-0.48" />
@@ -9438,7 +9617,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CaptainOrangeMonitorR" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("CaptainOrangeMonitorR")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.48" />
@@ -9466,7 +9645,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="DatapadL" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("DatapadL")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-0.48" />
@@ -9494,7 +9673,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="DatapadR" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("DatapadR")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.5" />
@@ -9522,7 +9701,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="DatapadRscreen" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("DatapadRscreen")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.53" />
@@ -9550,7 +9729,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CaptainTechL" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("CaptainTechL")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-0.48" />
@@ -9578,7 +9757,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CaptainTechR" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("CaptainTechR")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.48" />
@@ -9606,7 +9785,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CommandMonitorDeskL" />
-      <Property name="NameHash" value="253667532" />
+      <Property name="NameHash" value="]]..GNH("CommandMonitorDeskL")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.1" />
@@ -9634,7 +9813,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CommandMonitorDeskR" />
-      <Property name="NameHash" value="253667532" />
+      <Property name="NameHash" value="]]..GNH("CommandMonitorDeskR")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.1" />
@@ -9662,7 +9841,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CommandMonitorL" />
-      <Property name="NameHash" value="576956202" />
+      <Property name="NameHash" value="]]..GNH("CommandMonitorL")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.1" />
@@ -9690,7 +9869,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CommandMonitorR" />
-      <Property name="NameHash" value="576956202" />
+      <Property name="NameHash" value="]]..GNH("CommandMonitorR")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.1" />
@@ -9727,8 +9906,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="cTkSceneNodeData">
-  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE" />
-  <Property name="NameHash" value="3449727632" />
+  <Property name="Name" value="MODELS\ASTROSBRIDGE\PROPS\CAPTAINBACKWALL" />
+  <Property name="NameHash" value="]]..GNH("MODELS\ASTROSBRIDGE\PROPS\CAPTAINBACKWALL")..[[" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData">
     <Property name="TransX" value="0" />
@@ -9755,7 +9934,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Curved_Bridge_FrontL" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("Curved_Bridge_FrontL")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.8" />
@@ -9783,7 +9962,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Curved_Bridge_FrontR" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("Curved_Bridge_FrontR")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.8" />
@@ -9820,8 +9999,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="cTkSceneNodeData">
-  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
-  <Property name="NameHash" value="4262346560" />
+  <Property name="Name" value="MODELS\ASTROSBRIDGE\PROPS\CIRCULARRAILING" />
+  <Property name="NameHash" value="]]..GNH("MODELS\ASTROSBRIDGE\PROPS\CIRCULARRAILING")..[[" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData">
     <Property name="TransX" value="0" />
@@ -9848,7 +10027,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Circular railing 1" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("Circular railing 1")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
@@ -9876,7 +10055,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Circular railing 4" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("Circular railing 4")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-3" />
@@ -9904,7 +10083,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Circular railing 5" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="]]..GNH("Circular railing 5")..[[" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="3" />

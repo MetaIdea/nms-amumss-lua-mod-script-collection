@@ -1,22 +1,22 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-    MOD_FILENAME    = "ImmersiveSpaceTravel(x3_Slower)",
+    MOD_FILENAME    = "ImmersiveSpaceTravel(x4.0_Slower)",
     MOD_AUTHOR      = "Carbonster",
     MODIFICATIONS   = {
         {
             MBIN_CHANGE_TABLE = {
                 {
-                    -- Change mini-warp speed
+                    -- Mini Warp speed (x4.0 slower, safe > 5000)
                     MBIN_FILE_SOURCE  = "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
                     MXML_CHANGE_TABLE = {
                         {
                             VALUE_CHANGE_TABLE = {
-                                {"MiniWarpSpeed", "10000"},  -- default 30000
+                                {"MiniWarpSpeed", "7500"},  -- default 30000
                             }
                         },
                     }
                 },
                 {
-                    -- Change fuel consumption
+                    -- Fuel consumption scaled to x4.0
                     MBIN_FILE_SOURCE  = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
                     MXML_CHANGE_TABLE = {
                         {
@@ -24,18 +24,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             SECTION_UP         = 1,
                             REPLACE_TYPE       = "ONCE",
                             VALUE_CHANGE_TABLE = {
-                                {"Bonus", "0.3333"}  -- default 1.000000
+                                {"Bonus", "0.25"}  -- default 1.0
                             }
                         },
                     }
                 },
                 {
-                    -- Increase the interval for checking space encounter triggers
+                    -- Space encounter check interval
                     MBIN_FILE_SOURCE  = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
                     MXML_CHANGE_TABLE = {
                         {
                             VALUE_CHANGE_TABLE = {
-                                {"PulseEncounterCheckTimer", "3.0"},  -- default 1.000000
+                                {"PulseEncounterCheckTimer", "3.0"},  -- default 1.0
                             }
                         },
                     }

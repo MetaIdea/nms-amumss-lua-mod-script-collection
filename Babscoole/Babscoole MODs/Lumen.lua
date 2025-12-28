@@ -1,7 +1,7 @@
 function GetBlock(Name,NameHash,TransX,TransY,TransZ,RotX,RotY,RotZ,ScaleX,ScaleY,ScaleZ,FOV,FALLOFF,INTENSITY,COL_R,COL_G,COL_B,VOLUMETRIC)
     local b =
 [[
-    <Property value="TkSceneNodeData">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="]].. Name ..[[" />
       <Property name="NameHash" value="]].. NameHash ..[[" />
       <Property name="Type" value="LIGHT" />
@@ -18,39 +18,39 @@ function GetBlock(Name,NameHash,TransX,TransY,TransZ,RotX,RotY,RotZ,ScaleX,Scale
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="]].. FOV ..[[" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="]].. FALLOFF ..[[" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="2.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="]].. INTENSITY ..[[" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="]].. COL_R ..[[" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="]].. COL_G ..[[" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="]].. COL_B ..[[" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="]].. VOLUMETRIC ..[[" />
         </Property>
@@ -58,7 +58,7 @@ function GetBlock(Name,NameHash,TransX,TransY,TransZ,RotX,RotY,RotZ,ScaleX,Scale
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "Lumen",
 ["MOD_AUTHOR"]              = "Exosolar and Babscoole",
-["NMS_VERSION"]             = "6.10",
+["NMS_VERSION"]             = "6.18",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

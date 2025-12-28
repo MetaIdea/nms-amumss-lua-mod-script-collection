@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] = "Fixes the incorrect Settlement Starship Fabricator camera offset, making it align with the Space Station Starship Fabricator camera.",
 ["MOD_AUTHOR"]      = "Grouch",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.17",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
   {
     {
@@ -16,10 +16,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           {
             {
               ["PRECEDING_KEY_WORDS"] = {"Children"},
-              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD_OPTION"] = "ADDendSECTION",
               ["ADD"] =
 [[
-		<Property name="Children" value="TkSceneNodeData" _index="0">
+		<Property name="Children" value="TkSceneNodeData" _index="2">
 			<Property name="Name" value="CAMERAFOCUS" />
 			<Property name="NameHash" value="4006631957" />
 			<Property name="Type" value="JOINT" />
@@ -45,13 +45,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 		</Property>
 ]]
             },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\LANDINGPAD_BUILDER.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-              ["SPECIAL_KEY_WORDS"] = {"Name", "Terminal"},
-              ["EXML_INDEX"] = "1", 
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Name", "ShipCustomiserTerminal"},
-              ["EXML_INDEX"] = "2", 
+              ["SPECIAL_KEY_WORDS"] = {"Name", "HOLOGRAMMATRIX"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransY", "-1.380079"}
+              }
             },
           }
         },

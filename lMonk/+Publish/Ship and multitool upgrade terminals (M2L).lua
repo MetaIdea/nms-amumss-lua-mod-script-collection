@@ -4,7 +4,7 @@ local mod_desc = [[
   The multitool upgrade and salvage menus from the weapons specialist terminal.
   The ship salavage and upgrade menu from the old monitor station.
 ]]------------------------------------------------------------------------------
----	MXML 2 LUA ... by lMonk ... version: 1.0.01
+---	MXML 2 LUA ... by lMonk ... version: 1.0.06
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ local function ToMxml(class)
 	local function bool(b)
 		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
 	end
-	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite'}
+	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite', '_remove'}
 	local function mxml_r(tlua)
 		local out = {}
 		function out:add(t)
@@ -28,6 +28,7 @@ local function ToMxml(class)
 				if type(cls) == 'table' and cls.meta then
 				-- add new section and recurs for nested sections
 					for _,at in ipairs(at_ord) do
+					-- Just for readability. The compiler doesn't need the ordering
 						if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
 					end
 					-- for k, v in pairs(cls.meta) do
@@ -69,7 +70,7 @@ local function ToMxml(class)
 		return mxml_r(class)
 	elseif class.meta and klen > 1 then
 		return mxml_r( {class} )
-	-- concatenate unrelated (instead of nested) mxml sections
+	-- concatenate consecutive (instead of nested) sections
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
@@ -166,29 +167,31 @@ local function ScNode(nodes)
 			RotX	= (props.form.rx or props.form[4]) or nil,
 			RotY	= (props.form.ry or props.form[5]) or nil,
 			RotZ	= (props.form.rz or props.form[6]) or nil,
-			ScaleX	= (props.form.sx or props.form[7]) or 1,
-			ScaleY	= (props.form.sy or props.form[8]) or 1,
-			ScaleZ	= (props.form.sz or props.form[9]) or 1
+			ScaleX	= (props.form.s_ or props.form.sx or props.form[7]) or 1,
+			ScaleY	= (props.form.s_ or props.form.sy or props.form[8] or props.form[7]) or 1,
+			ScaleZ	= (props.form.s_ or props.form.sz or props.form[9] or props.form[7]) or 1
 		}
 		--	if present, add attributes list
 		if props.attr then
-			-- add accompanying attribute to scenegraph
+			-- add accompanying attributes
 			if props.attr.SCENEGRAPH then
-				props.attr.EMBEDGEOMETRY = 'TRUE'
+				props.attr.EMBEDGEOMETRY = true
+			elseif props.attr.TYPE then
+				props.attr.NAVIGATION = false
 			end
 			T.Attr = { meta = {name='Attributes'} }
 			for nm, val in pairs(props.attr) do
 				T.Attr[#T.Attr+1] = {
 					meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
 					Name	= nm,
-					Value	= val
+					Value	= type(val) == 'boolean' and (val and 'TRUE' or 'FALSE') or val
 				}
 			end
 		end
 		if props.child then
 		--	add children list if found
 			local k,_ = next(props.child)
-			cnd = ScNode(props.child)
+			local cnd = ScNode(props.child)
 			T.Child	= k == 1 and cnd or {cnd}
 			T.Child.meta = {name='Children'}
 		end
@@ -234,9 +237,9 @@ end
 local buildparts = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/'
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.ship and multitool upgrade terminals.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.ship and multitool upgrade terminals',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.73',
+	NMS_VERSION			= '6.18',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{

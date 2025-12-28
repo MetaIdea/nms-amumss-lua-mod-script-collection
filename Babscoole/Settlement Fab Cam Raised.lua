@@ -16,10 +16,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           {
             {
               ["PRECEDING_KEY_WORDS"] = {"Children"},
-              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD_OPTION"] = "ADDendSECTION",
               ["ADD"] =
 [[
-		<Property name="Children" value="TkSceneNodeData" _index="0">
+		<Property name="Children" value="TkSceneNodeData" _index="2">
 			<Property name="Name" value="CAMERAFOCUS" />
 			<Property name="NameHash" value="4006631957" />
 			<Property name="Type" value="JOINT" />
@@ -45,14 +45,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 		</Property>
 ]]
             },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Name", "Terminal"},
-              ["EXML_INDEX"] = "1", 
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Name", "ShipCustomiserTerminal"},
-              ["EXML_INDEX"] = "2", 
-            },
           }
         },
         {
@@ -66,6 +58,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"Distance", "27.000000"},
                 {"X",        "-1.000000"},
                 {"Z",        "2.000000"},
+                {"Pitch",    "28.000000"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\LANDINGPAD_BUILDER.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "HOLOGRAMMATRIX"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransY", "-1.380079"}
               }
             },
           }
