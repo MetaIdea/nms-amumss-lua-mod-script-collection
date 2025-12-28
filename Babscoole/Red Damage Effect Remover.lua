@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Red Damage Effect Remover.pak",
+["MOD_FILENAME"]    = "Red Damage Effect Remover",
 ["MOD_AUTHOR"]      = "Rray21",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "5.58",
