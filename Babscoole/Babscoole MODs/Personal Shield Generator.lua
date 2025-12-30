@@ -2,38 +2,38 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Personal Shield Generator",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.16",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "Protective shield against hazards, bullets ...",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
-                            ["SEC_SAVE_TO"] = "ADD_ANIM",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_ANIM",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Anim",     "TOGGLE_SHIELD"},
-                                {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
-                            ["PRECEDING_KEY_WORDS"] = {"Anims"},
-                            ["SEC_ADD_NAMED"] = "ADD_ANIM",
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] =
+              ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
+              ["SEC_SAVE_TO"] = "ADD_ANIM",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_ANIM",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Anim",     "TOGGLE_SHIELD"},
+                {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
+              ["PRECEDING_KEY_WORDS"] = {"Anims"},
+              ["SEC_ADD_NAMED"] = "ADD_ANIM",
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Components"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD"] =
 [[
     <Property name="Components" value="GcTriggerActionComponentData">
       <Property name="GcTriggerActionComponentData">
@@ -124,17 +124,17 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-                        }
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER|collisionCapsule"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+            }
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER|collisionCapsule"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="REFShieldData" />
@@ -165,109 +165,109 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
-                            ["SEC_SAVE_TO"] = "ADD_EMOTE",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_EMOTE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Title",               "Shield"},
-                                {"ChatText",            ""},
-                                {"ChatUsesPrefix",      "false"},
-                                {"EmoteID",             "TOGGLE_SHIELD"},
-                                {"AnimationName",       "TOGGLE_SHIELD"},
-                                {"Filename",            "TEXTURES/UI/FRONTEND/ICONS/STATS/STATS.SUIT.PROTECTION.DDS"},
-                                {"MoveToCancel",        "true"},
-                                {"RidingAnimationName", ""},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_EMOTE",
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD\ENTITIES\BUBBLESHIELD.ENTITY.MBIN", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_A.ENTITY.MBIN",},
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD\ENTITIES\BUBBLESHIELD.ENTITY.MBIN", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                      "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_A.ENTITY.MBIN",
-                      "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN"
-                    },
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TriggerVolume",           "false"},
-                                {"VolumeTriggerType",       "GenericInterior"},
-                                {"IgnoreModelOwner",        "true"},
-                                {"NoPlayerCollide",         "true"},
-                                {"CameraInvisible",         "true"},
-                                {"InvisibleForInteraction", "true"},
-                                {"Health",                  "3000"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TriggerVolume", "true"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD.SCENE.MBIN", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD.SCENE.MBIN",},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                              {"Name", "ATTACHMENT"},
-                              {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD|collisionSphere"},
-                              {"Name", "BubbleShield1", "Name", "ATTACHMENT"},
-                              {"Name", "BubbleShield2", "Name", "ATTACHMENT"},
-                              {"Name", "Root"},
-                              {"Name", "Leg1_pCube14"},
-                              {"Name", "Leg1_pCube14_2"},
-                              {"Name", "Leg1_pCube14_3"},
-                              {"Name", "Shield"},
-                            },
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "BubbleShield"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
+              ["SEC_SAVE_TO"] = "ADD_EMOTE",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_EMOTE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Title",               "Shield"},
+                {"ChatText",            ""},
+                {"ChatUsesPrefix",      "false"},
+                {"EmoteID",             "TOGGLE_SHIELD"},
+                {"AnimationName",       "TOGGLE_SHIELD"},
+                {"Filename",            "TEXTURES/UI/FRONTEND/ICONS/STATS/STATS.SUIT.PROTECTION.DDS"},
+                {"MoveToCancel",        "true"},
+                {"RidingAnimationName", ""},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Emotes"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_EMOTE",
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD\ENTITIES\BUBBLESHIELD.ENTITY.MBIN", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_A.ENTITY.MBIN",},
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD\ENTITIES\BUBBLESHIELD.ENTITY.MBIN", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_A.ENTITY.MBIN",
+            "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN"
+          },
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TriggerVolume",           "false"},
+                {"VolumeTriggerType",       "GenericInterior"},
+                {"IgnoreModelOwner",        "true"},
+                {"NoPlayerCollide",         "true"},
+                {"CameraInvisible",         "true"},
+                {"InvisibleForInteraction", "true"},
+                {"Health",                  "3000"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TriggerVolume", "true"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD.SCENE.MBIN", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD.SCENE.MBIN",},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "ATTACHMENT"},
+                {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD|collisionSphere"},
+                {"Name", "BubbleShield1", "Name", "ATTACHMENT"},
+                {"Name", "BubbleShield2", "Name", "ATTACHMENT"},
+                {"Name", "Root"},
+                {"Name", "Leg1_pCube14"},
+                {"Name", "Leg1_pCube14_2"},
+                {"Name", "Leg1_pCube14_3"},
+                {"Name", "Shield"},
+              },
+              ["REMOVE"] = "SECTION"
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "BubbleShield"},
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["ADD_OPTION"]  = "ADDafterLINE",
+              ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="Data" />
@@ -331,25 +331,25 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name",     "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD"},
-                                {"NameHash", "2755176659"},
-                            }
-                        },
-                    }
-                },
-            }
-        }
-    },
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Name",     "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD"},
+                {"NameHash", "2755176659"},
+              }
+            },
+          }
+        },
+      }
+    }
+  },
 ["ADD_FILES"] =
+  {
     {
-        {
-            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
-            ["FILE_CONTENT"] =
+      ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -409,10 +409,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Has30HzFrames" value="false" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "LocTable.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "LocTable.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkLocalisationTable">
@@ -460,6 +460,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-    }
+    },
+  }
 }

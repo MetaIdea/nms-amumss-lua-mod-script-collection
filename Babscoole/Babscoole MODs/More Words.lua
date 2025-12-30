@@ -718,85 +718,85 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["NMS_VERSION"]         = "6.18",
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE",
 ["MODIFICATIONS"]       =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = RewardTable,
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = RewardTable,
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "WORD"},
-                            ["SEC_SAVE_TO"] = "ADD_NewReward",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "WORD", "List", "GcRewardTableItem"},
-                            ["SEC_SAVE_TO"] = "ADD_AddWord",
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = AlienPuzzle,
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Rewards", "GIVE_HYPERDRIVE"},
-                            ["SEC_SAVE_TO"] = "ADD_AddReward",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_AddReward",
-                            ["REMOVE"] = "HBOS",
-                        },
-                    },
-
-                    EXT_FUNC =
-                    {
-                      "ProcessAlienPuzzleTable",
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Reward", "WORD_STONE_R"},
-                            },
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\WORDSTATION\ENTITIES\WORDSTATION.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Reward", "WORD_STATION_R"},
-                            },
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\ATLASSTATION\MODULARPARTS\INTERIOR\PATHORB\PATHORB\ENTITIES\ORBSTONE_1.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Reward", "TEACHWORD_ATLAS"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Reward", "WORD_ATLAS_ORB"},
-                            },
-                        },
-                    },
-                },
-            }
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WORD"},
+              ["SEC_SAVE_TO"] = "ADD_NewReward",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WORD", "List", "GcRewardTableItem"},
+              ["SEC_SAVE_TO"] = "ADD_AddWord",
+            },
+          },
         },
-    }
+        {
+          ["MBIN_FILE_SOURCE"] = AlienPuzzle,
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Rewards", "GIVE_HYPERDRIVE"},
+              ["SEC_SAVE_TO"] = "ADD_AddReward",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_AddReward",
+              ["REMOVE"] = "HBOS",
+            },
+          },
+
+          EXT_FUNC =
+          {
+            "ProcessAlienPuzzleTable",
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Reward", "WORD_STONE_R"},
+              },
+            },
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\WORDSTATION\ENTITIES\WORDSTATION.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Reward", "WORD_STATION_R"},
+              },
+            },
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\ATLASSTATION\MODULARPARTS\INTERIOR\PATHORB\PATHORB\ENTITIES\ORBSTONE_1.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Reward", "TEACHWORD_ATLAS"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Reward", "WORD_ATLAS_ORB"},
+              },
+            },
+          },
+        },
+      }
+    },
+  }
 }
 
 local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
@@ -861,9 +861,9 @@ for i = 1, #WordChanges do
       ["SEC_EDIT"] = "ADD_AddWord",
       ["VALUE_CHANGE_TABLE"] =
       {
-         {"AlienRace",             Race},
-         {"UseCategory",           UseCategory},
-         {"wordcategorytableEnum", Category},
+        {"AlienRace",             Race},
+        {"UseCategory",           UseCategory},
+        {"wordcategorytableEnum", Category},
       }
     }
 
@@ -899,8 +899,8 @@ for i = 1, #NewWordChanges do
       SEC_KEEP = true,
       ["VALUE_CHANGE_TABLE"] =
       {
-         {"Id",        NewWordID},
-         {"AlienRace", Race},
+        {"Id",        NewWordID},
+        {"AlienRace", Race},
       }
     }
 
@@ -916,9 +916,9 @@ for i = 1, #NewWordChanges do
       ["SEC_EDIT"] = "ADD_AddWord",
       ["VALUE_CHANGE_TABLE"] =
       {
-         {"AlienRace",             Race},
-         {"UseCategory",           UseCategory},
-         {"wordcategorytableEnum", Category},
+        {"AlienRace",             Race},
+        {"UseCategory",           UseCategory},
+        {"wordcategorytableEnum", Category},
       }
     }
 

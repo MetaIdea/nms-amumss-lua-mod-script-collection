@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "VR CleanHUD",
 ["MOD_AUTHOR"]      = "hilightnotes, enifleR, & Babscoole",
-["NMS_VERSION"]     = "6.16",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "Hide some UI in VR",
 ["MODIFICATIONS"]   =
   {

@@ -2,34 +2,34 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Deadzone III",
 ["MOD_AUTHOR"]    = "Exosolar & Babscoole",
-["NMS_VERSION"]   = "6.10",
+["NMS_VERSION"]   = "6.18",
 ["MODIFICATIONS"] =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIOME.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIOME.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ExternalObjectLists"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"AllowLimiting", "false"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Features"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Crater", "2.000000"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"FilterOptions"},
-                            ["ADD_OPTION"] = "ADDendSECTION",  
-                            ["ADD"] =
+              ["PRECEDING_KEY_WORDS"] = {"ExternalObjectLists"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"AllowLimiting", "false"},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Features"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Crater", "2.000000"},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"FilterOptions"},
+              ["ADD_OPTION"] = "ADDendSECTION",
+              ["ADD"] =
 [[
     <Property name="FilterOptions" value="GcScreenFilterOption">
       <Property name="Filter" value="GcScreenFilters">
@@ -68,18 +68,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Weight" value="0.020000" />
     </Property>
 ]],
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADOBJECTSDEAD.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Objects", "GcEnvironmentSpawnData"},
-                            ["PRECEDING_KEY_WORDS"] = {"DistantObjects"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADOBJECTSDEAD.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Objects", "GcEnvironmentSpawnData"},
+              ["PRECEDING_KEY_WORDS"] = {"DistantObjects"},
+              ["CREATE_HOS"] = "TRUE",
+              ["ADD"] =
 [[
       <Property name="DistantObjects" value="GcObjectSpawnData">
         <Property name="DebugName" value="" />
@@ -252,12 +252,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Objects", "GcEnvironmentSpawnData"},
-                            ["PRECEDING_KEY_WORDS"] = {"Objects"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] =
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Objects", "GcEnvironmentSpawnData"},
+              ["PRECEDING_KEY_WORDS"] = {"Objects"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD"] =
 [[
       <Property name="Objects" value="GcObjectSpawnData">
         <Property name="DebugName" value="" />
@@ -398,12 +398,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
 ]],
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Objects", "GcEnvironmentSpawnData"},
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] =
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Objects", "GcEnvironmentSpawnData"},
+              ["PRECEDING_KEY_WORDS"] = {"DetailObjects"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD"] =
 [[
       <Property name="DetailObjects" value="GcObjectSpawnData">
         <Property name="DebugName" value="" />
@@ -531,10 +531,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
 ]],
-                        },
-                    }
-                },
-            }
+            },
+          }
         },
-    }
+      }
+    },
+  }
 }

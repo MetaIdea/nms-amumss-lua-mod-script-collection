@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Creature Dots",
-["MOD_AUTHOR"]				= "DeathWrench",
-["LUA_AUTHOR"]				= "Babscoole+DeathWrench+Gumsk",
-["NMS_VERSION"]				= "6.10",
-["ADD_FILES"] = -- COMMENT LINES FOR ICONS THAT YOU WANT TO KEEP VISIBLE..... THIS PART OF THE SCRIPT REQUIRES THE .DDS FILE TO BE IN YOUR MODSCRIPTS FOLDER TO WORK. 
+["MOD_FILENAME"] = "No Creature Dots",
+["MOD_AUTHOR"]   = "DeathWrench",
+["LUA_AUTHOR"]   = "Babscoole+DeathWrench+Gumsk",
+["NMS_VERSION"]  = "6.18",
+["ADD_FILES"]    = -- COMMENT LINES FOR ICONS THAT YOU WANT TO KEEP VISIBLE..... THIS PART OF THE SCRIPT REQUIRES THE .DDS FILE TO BE IN YOUR MODSCRIPTS FOLDER TO WORK. 
 {
 	{["FILE_DESTINATION"] = "TEXTURES/UI/HUD/EYE.CREATURE.DDS",["EXTERNAL_FILE_SOURCE"]="NoCreatureDots.DDS",}, 				-- Predator Icons
 	{["FILE_DESTINATION"] = "TEXTURES/UI/HUD/ARROW.DANGER.DDS",["EXTERNAL_FILE_SOURCE"]="NoCreatureDots.DDS",}, 				-- This is the arrow for the predator icon
@@ -19,11 +19,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"] = -- THIS PART OF THE SCRIPT EDITS MBINS, COMMENT LINES FOR THINGS YOU WANT TO KEEP
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\HUD\SCANNERICONS.MBIN",
-					["MXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\UI\HUD\SCANNERICONS.MBIN",
+					["MXML_CHANGE_TABLE"] = 
 					{
 						{["PRECEDING_KEY_WORDS"]="CreatureFiend",["VALUE_CHANGE_TABLE"]={{"Filename",""},}}, 			-- Original "Filename","TEXTURES/UI/HUD/EYE.FIEND.DDS"
 						{["PRECEDING_KEY_WORDS"]="CreatureDiscovered",["VALUE_CHANGE_TABLE"]={{"Filename",""},}}, 		-- Original "Filename","TEXTURES/UI/HUD/CREATURE.GREEN.DDS"
@@ -38,4 +38,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						-- {["PRECEDING_KEY_WORDS"]="Pet",["VALUE_CHANGE_TABLE"]={{"Filename",""},}}, 						-- Original "Filename","TEXTURES/UI/HUD/ICONS/PLAYER/PET.DDS"
 						-- {["PRECEDING_KEY_WORDS"]="PetSad",["VALUE_CHANGE_TABLE"]={{"Filename",""},}}, 					-- Original "Filename","TEXTURES/UI/HUD/ICONS/PLAYER/PETSAD.DDS"
 						-- {["PRECEDING_KEY_WORDS"]="PetActivity",["VALUE_CHANGE_TABLE"]={{"Filename",""},}}, 				-- Original "Filename","TEXTURES/UI/HUD/ICONS/PLAYER/PETACTIVE.DDS"
-}}}}}}
+          }
+        }
+      }
+    }
+  }
+}

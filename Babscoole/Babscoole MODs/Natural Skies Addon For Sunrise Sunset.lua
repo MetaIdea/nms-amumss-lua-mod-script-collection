@@ -1,37 +1,37 @@
 DataTable =
 {
+  {
+    ["PALETTE"] = "Dusk",
+    ["COLOURS"] =
     {
-        ["PALETTE"] = "Dusk",
-        ["COLOURS"] =
-        {
-            {"1","0.652", "0.583", "0.49", "1", "0.395", "0.473", "0.561", "1", "1", "0.7", "0.42", "1", "0.85", "0.49", "0.36", "1", "0.995", "0.191", "0.038", "1", "0.35", "0.322", "0.24", "1", "0.987", "0.767", "0.681", "1", "2", "1", "1", "0.922", "0.73", "0.48", "1", "1", "0.8", "0.53", "1", "0.13", "0.284", "0.39", "1"},
-        }
-    },
+      {"1","0.652", "0.583", "0.49", "1", "0.395", "0.473", "0.561", "1", "1", "0.7", "0.42", "1", "0.85", "0.49", "0.36", "1", "0.995", "0.191", "0.038", "1", "0.35", "0.322", "0.24", "1", "0.987", "0.767", "0.681", "1", "2", "1", "1", "0.922", "0.73", "0.48", "1", "1", "0.8", "0.53", "1", "0.13", "0.284", "0.39", "1"},
+    }
+  },
 }
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Natural Skies Addon For Sunrise Sunset",
 ["MOD_AUTHOR"]    = "degraaaff & Babscoole",
-["NMS_VERSION"]   = "6.10",
+["NMS_VERSION"]   = "6.18",
 ["MODIFICATIONS"] =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\DUSKSKYCOLOURS.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\DUSKSKYCOLOURS.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Settings", "GcPlanetWeatherColourData"},
-                            ["REMOVE"] = "SECTION",
-                        },
-                    }
-                },
-            }
-        }
+              ["SPECIAL_KEY_WORDS"] = {"Settings", "GcPlanetWeatherColourData"},
+              ["REMOVE"] = "SECTION",
+            },
+          }
+        },
+      }
     }
+  }
 }
 
 
@@ -118,78 +118,78 @@ function GetColours(SW,R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,
 end
 
 function CreateColoursProperty(PaletteColours)
-    local PropertiesString = {}
+  local PropertiesString = {}
 
-    for j = 1, #PaletteColours do
-        local SW  = PaletteColours[j][1]
-        local R1  = PaletteColours[j][2]
-        local G1  = PaletteColours[j][3]
-        local B1  = PaletteColours[j][4]
-        local A1  = PaletteColours[j][5]
-        local R2  = PaletteColours[j][6]
-        local G2  = PaletteColours[j][7]
-        local B2  = PaletteColours[j][8]
-        local A2  = PaletteColours[j][9]
-        local R3  = PaletteColours[j][10]
-        local G3  = PaletteColours[j][11]
-        local B3  = PaletteColours[j][12]
-        local A3  = PaletteColours[j][13]
-        local R4  = PaletteColours[j][14]
-        local G4  = PaletteColours[j][15]
-        local B4  = PaletteColours[j][16]
-        local A4  = PaletteColours[j][17]
-        local R5  = PaletteColours[j][18]
-        local G5  = PaletteColours[j][19]
-        local B5  = PaletteColours[j][20]
-        local A5  = PaletteColours[j][21]
-        local R6  = PaletteColours[j][22]
-        local G6  = PaletteColours[j][23]
-        local B6  = PaletteColours[j][24]
-        local A6  = PaletteColours[j][25]
-        local R7  = PaletteColours[j][26]
-        local G7  = PaletteColours[j][27]
-        local B7  = PaletteColours[j][28]
-        local A7  = PaletteColours[j][29]
-        local X8  = PaletteColours[j][30]
-        local Y8  = PaletteColours[j][31]
-        local Z8  = PaletteColours[j][32]
-        local R9  = PaletteColours[j][33]
-        local G9  = PaletteColours[j][34]
-        local B9  = PaletteColours[j][35]
-        local A9  = PaletteColours[j][36]
-        local R10 = PaletteColours[j][37]
-        local G10 = PaletteColours[j][38]
-        local B10 = PaletteColours[j][39]
-        local A10 = PaletteColours[j][40]
-        local R11 = PaletteColours[j][41]
-        local G11 = PaletteColours[j][42]
-        local B11 = PaletteColours[j][43]
-        local A11 = PaletteColours[j][44]
-        table.insert(PropertiesString,GetColours(SW, R1, G1, B1, A1, R2, G2, B2, A2, R3, G3, B3, A3, R4, G4, B4, A4, R5, G5, B5, A5, R6, G6, B6, A6, R7, G7, B7, A7, X8, Y8, Z8, R9, G9, B9, A9, R10, G10, B10, A10, R11, G11, B11, A11))
-    end
+  for j = 1, #PaletteColours do
+    local SW  = PaletteColours[j][1]
+    local R1  = PaletteColours[j][2]
+    local G1  = PaletteColours[j][3]
+    local B1  = PaletteColours[j][4]
+    local A1  = PaletteColours[j][5]
+    local R2  = PaletteColours[j][6]
+    local G2  = PaletteColours[j][7]
+    local B2  = PaletteColours[j][8]
+    local A2  = PaletteColours[j][9]
+    local R3  = PaletteColours[j][10]
+    local G3  = PaletteColours[j][11]
+    local B3  = PaletteColours[j][12]
+    local A3  = PaletteColours[j][13]
+    local R4  = PaletteColours[j][14]
+    local G4  = PaletteColours[j][15]
+    local B4  = PaletteColours[j][16]
+    local A4  = PaletteColours[j][17]
+    local R5  = PaletteColours[j][18]
+    local G5  = PaletteColours[j][19]
+    local B5  = PaletteColours[j][20]
+    local A5  = PaletteColours[j][21]
+    local R6  = PaletteColours[j][22]
+    local G6  = PaletteColours[j][23]
+    local B6  = PaletteColours[j][24]
+    local A6  = PaletteColours[j][25]
+    local R7  = PaletteColours[j][26]
+    local G7  = PaletteColours[j][27]
+    local B7  = PaletteColours[j][28]
+    local A7  = PaletteColours[j][29]
+    local X8  = PaletteColours[j][30]
+    local Y8  = PaletteColours[j][31]
+    local Z8  = PaletteColours[j][32]
+    local R9  = PaletteColours[j][33]
+    local G9  = PaletteColours[j][34]
+    local B9  = PaletteColours[j][35]
+    local A9  = PaletteColours[j][36]
+    local R10 = PaletteColours[j][37]
+    local G10 = PaletteColours[j][38]
+    local B10 = PaletteColours[j][39]
+    local A10 = PaletteColours[j][40]
+    local R11 = PaletteColours[j][41]
+    local G11 = PaletteColours[j][42]
+    local B11 = PaletteColours[j][43]
+    local A11 = PaletteColours[j][44]
+    table.insert(PropertiesString,GetColours(SW,R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,R6,G6,B6,A6,R7,G7,B7,A7,X8,Y8,Z8,R9,G9,B9,A9,R10,G10,B10,A10,R11,G11,B11,A11))
+  end
 return table.concat(PropertiesString)
 end
 
 local BaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
 for i = 1, #DataTable do
-    local Palette = DataTable[i]["PALETTE"]
-    local FileSource = [[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\]]..string.upper(Palette).."SKYCOLOURS.MBIN"
-    local PaletteColours = DataTable[i]["COLOURS"]
+  local Palette = DataTable[i]["PALETTE"]
+  local FileSource = [[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\]]..string.upper(Palette).."SKYCOLOURS.MBIN"
+  local PaletteColours = DataTable[i]["COLOURS"]
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
+  BaseColourPalettesTable[#BaseColourPalettesTable +1] =
+  {
+    ["MBIN_FILE_SOURCE"] = FileSource,
+    ["MXML_CHANGE_TABLE"] =
     {
-        ["MBIN_FILE_SOURCE"] = FileSource,
-        ["MXML_CHANGE_TABLE"] =
-        {
-            {
-                ["SPECIAL_KEY_WORDS"] = {"GenericSettings", "GcWeatherColourSettingList"},
-                ["PRECEDING_KEY_WORDS"] = {"Settings"},
-                ["ADD"] = CreateColoursProperty(PaletteColours)
-            },
-            {
-                ["PRECEDING_KEY_WORDS"] = {"Settings"},
-                ["EXML_FLAGS"]  = "OVERWRITE",
-            },
-        }
+      {
+        ["SPECIAL_KEY_WORDS"] = {"GenericSettings", "GcWeatherColourSettingList"},
+        ["PRECEDING_KEY_WORDS"] = {"Settings"},
+        ["ADD"] = CreateColoursProperty(PaletteColours)
+      },
+      {
+        ["PRECEDING_KEY_WORDS"] = {"Settings"},
+        ["EXML_FLAGS"]  = "OVERWRITE",
+      },
     }
+  }
 end

@@ -1,146 +1,147 @@
 QUICK_ACTION_LIST =
 {
-    "SAVE",
-    "GALACTICMAP",
-    "PLANETSCANNER",
-    "TOGGLE_BACKPACK",
-    "REVEAL_PORTAL",
-    "HEALTH_SUIT",
-    "R_SENTINELS_OFF",
-    "R_FIX_REP",
-    "HARVEST",
-    "PLANET_FINDER",
-    "TOGGLE_SHIELD",
-    "TOGGLE_INVIS",
-    "REVEAL_RUNES",
-    "R_CHART_ROBOT",
-    "R_SCANSENTCRASH",
-    "CRASHED_SHIP",
-    "WORD",
-    "FREIGHTER_TRANS",
-    "SCARE_CREATURES",
-    "STOP_STORM",
-    "STORM",
-    "POWER_STATE",
-    "R_ENABLENEXUS",
-    "UPLOAD_BASE",
-    "DEACT_FIENDS",
-    "FREE_EXPLORE",
-    "R_CLEAR_WANTED",
-    "MIXER_WANTED",
-    "BLACK_HOLE_WARP",
-    "RELIC_GATE_WARP",
-    "R_MEGAWARP",
-    "TELEPORT_BASE",
-    "CENTREJOURNEY0",
-    "CENTREJOURNEY1",
-    "CENTREJOURNEY2",
-    "CENTREJOURNEY3",
-    "CENTREJOURNEY4",
-    --"R_NEXUS_TECH",
-    --"R_FREI_CUSTOM",
-    "TREE_BASICS",
-    "TREE_TECHBASICS",
-    "TREE_BASE",
-    "TREE_SPEC_BASE",
-    "TREE_SUIT",
-    "TREE_SHIP",
-    "TREE_WEAP",
-    "TREE_EXO",
-    "TREE_CRAFT",
-    "TREE_FRIGATE",
+  "SAVE",
+  "GALACTICMAP",
+  "PLANETSCANNER",
+  "TOGGLE_BACKPACK",
+  "REVEAL_PORTAL",
+  "HEALTH_SUIT",
+  "R_SENTINELS_OFF",
+  "R_FIX_REP",
+  "HARVEST",
+  "PLANET_FINDER",
+  "TOGGLE_SHIELD",
+  "TOGGLE_INVIS",
+  "REVEAL_RUNES",
+  "R_CHART_ROBOT",
+  "R_SCANSENTCRASH",
+  "CRASHED_SHIP",
+  "WORD",
+  "FREIGHTER_TRANS",
+  "SCARE_CREATURES",
+  "STOP_STORM",
+  "STORM",
+  "POWER_STATE",
+  "R_ENABLENEXUS",
+  "UPLOAD_BASE",
+  "DEACT_FIENDS",
+  "FREE_EXPLORE",
+  "R_CLEAR_WANTED",
+  "MIXER_WANTED",
+  "BLACK_HOLE_WARP",
+  "RELIC_GATE_WARP",
+  "R_MEGAWARP",
+  "TELEPORT_BASE",
+  "CENTREJOURNEY0",
+  "CENTREJOURNEY1",
+  "CENTREJOURNEY2",
+  "CENTREJOURNEY3",
+  "CENTREJOURNEY4",
+  --"R_NEXUS_TECH",
+  --"R_FREI_CUSTOM",
+  "TREE_BASICS",
+  "TREE_TECHBASICS",
+  "TREE_BASE",
+  "TREE_SPEC_BASE",
+  "TREE_SUIT",
+  "TREE_SHIP",
+  "TREE_WEAP",
+  "TREE_EXO",
+  "TREE_CRAFT",
+  "TREE_FRIGATE",
 }
 
 USER_SEED_LIST =
 {
-    {"POLICESHIP", "0x1"},
-    {"FIGHTER",    "0x8E8E2193DD4A9EDA"}, --ALPHA VECTOR
-    {"FIGHTER",    "0xC4C9C1AABCA59FE6"}, --HORIZON OMEGA
-    {"FIGHTER",    "0xA547AB958C97E439"}, --RASAMAMA S36
-    {"MULTITOOL",  "0x55907B79D95B675B"}, --STARTER WEAPON
+  {"POLICESHIP", "0x1"},
+  {"FIGHTER",    "0x8E8E2193DD4A9EDA"}, --ALPHA VECTOR
+  {"FIGHTER",    "0xC4C9C1AABCA59FE6"}, --HORIZON OMEGA
+  {"FIGHTER",    "0xA547AB958C97E439"}, --RASAMAMA S36
+  {"MULTITOOL",  "0x55907B79D95B675B"}, --STARTER WEAPON
 
-    -- {"FIGHTER", "0x2ed0b7e8773e6959"},
-    -- {"FIGHTER", "0x0469079B58527FAC", true},
-    -- {"FIGHTER", "0xc82dbd4a5f1f4191"},
-    -- {"FIGHTER", "0x646abde861bb4790"},
-    -- {"FIGHTER", "0x8B368967CED50C9C"},
+  -- {"FIGHTER", "0x2ed0b7e8773e6959"},
+  -- {"FIGHTER", "0x0469079B58527FAC", true},
+  -- {"FIGHTER", "0xc82dbd4a5f1f4191"},
+  -- {"FIGHTER", "0x646abde861bb4790"},
+  -- {"FIGHTER", "0x8B368967CED50C9C"},
 
-    -- {"DROPSHIP", "0x100A66565DECB1C5"},
-    -- {"DROPSHIP", "0xCA26E52B0D24DC37"},
-    -- {"DROPSHIP", "0xC25A946003305CF0", true},
-    -- {"DROPSHIP", "0xA4687FDB844DA5DC"},
-    -- {"DROPSHIP", "0x71876903D4317C8D"},
-    -- {"DROPSHIP", "0x2EB67DD98452B24D", true},
-    -- {"DROPSHIP", "0xE71E296D1CAD582E"},
+  -- {"DROPSHIP", "0x100A66565DECB1C5"},
+  -- {"DROPSHIP", "0xCA26E52B0D24DC37"},
+  -- {"DROPSHIP", "0xC25A946003305CF0", true},
+  -- {"DROPSHIP", "0xA4687FDB844DA5DC"},
+  -- {"DROPSHIP", "0x71876903D4317C8D"},
+  -- {"DROPSHIP", "0x2EB67DD98452B24D", true},
+  -- {"DROPSHIP", "0xE71E296D1CAD582E"},
 
-    -- {"DROPSHIP", "0x2179DE9A6801F57C"},
-    -- {"DROPSHIP", "0x46031B34A85DB726"},
-    -- {"DROPSHIP", "0x1D30478CA881BE29"},
-    -- {"DROPSHIP", "0x2C1CEC12E7120CA9"},
-    -- {"DROPSHIP", "0x5E61694BFAA3C741"},
-    -- {"DROPSHIP", "0x2D4777FBBF2AA61D"},
-    -- {"DROPSHIP", "0x24B6531B41368A80"},
-    -- {"DROPSHIP", "0xF4042806234A385D"},
+  -- {"DROPSHIP", "0x2179DE9A6801F57C"},
+  -- {"DROPSHIP", "0x46031B34A85DB726"},
+  -- {"DROPSHIP", "0x1D30478CA881BE29"},
+  -- {"DROPSHIP", "0x2C1CEC12E7120CA9"},
+  -- {"DROPSHIP", "0x5E61694BFAA3C741"},
+  -- {"DROPSHIP", "0x2D4777FBBF2AA61D"},
+  -- {"DROPSHIP", "0x24B6531B41368A80"},
+  -- {"DROPSHIP", "0xF4042806234A385D"},
 
-    -- {"DROPSHIP", "0x2D4777FBBF2AA61D"},
-    -- {"DROPSHIP", "0x521F5EA090A8D435"},
-    -- {"DROPSHIP", "0xE6A73D8B66BB11F5"},
-    -- {"DROPSHIP", "0x24B6531B41368A80"},
-    -- {"DROPSHIP", "0x96959C617F3F741C"},
-    -- {"DROPSHIP", "0xBBF7FE10647AD6BD"},
+  -- {"DROPSHIP", "0x2D4777FBBF2AA61D"},
+  -- {"DROPSHIP", "0x521F5EA090A8D435"},
+  -- {"DROPSHIP", "0xE6A73D8B66BB11F5"},
+  -- {"DROPSHIP", "0x24B6531B41368A80"},
+  -- {"DROPSHIP", "0x96959C617F3F741C"},
+  -- {"DROPSHIP", "0xBBF7FE10647AD6BD"},
 
-    -- {"DROPSHIP", "0x014E18C048F92588"},
-    -- {"DROPSHIP", "0x39ABFE3E3E4BBD39"},
-    -- {"DROPSHIP", "0xD6818C49606930E9"},
-    -- {"DROPSHIP", "0x3AF32591A1C3DD0E"},
-    -- {"DROPSHIP", "0x5AC70EC519EBE79D"},
-    -- {"DROPSHIP", "0x5B510F514629D3C9"},
-    -- {"DROPSHIP", "0x003242B4681A0027"},
+  -- {"DROPSHIP", "0x014E18C048F92588"},
+  -- {"DROPSHIP", "0x39ABFE3E3E4BBD39"},
+  -- {"DROPSHIP", "0xD6818C49606930E9"},
+  -- {"DROPSHIP", "0x3AF32591A1C3DD0E"},
+  -- {"DROPSHIP", "0x5AC70EC519EBE79D"},
+  -- {"DROPSHIP", "0x5B510F514629D3C9"},
+  -- {"DROPSHIP", "0x003242B4681A0027"},
 
-    -- {"SCIENTIFIC", "0x74C41D521491C48B"},
-    -- {"SCIENTIFIC", "0xE088DFDC904C8A54"},
+  -- {"SCIENTIFIC", "0x74C41D521491C48B"},
+  -- {"SCIENTIFIC", "0xE088DFDC904C8A54"},
 
-    -- {"EXOTIC", "0x66c2ba46dcfbf4c3"},
-    -- {"EXOTIC", "0xc688372a1012811b"},
+  -- {"EXOTIC", "0x66c2ba46dcfbf4c3"},
+  -- {"EXOTIC", "0xc688372a1012811b"},
 }
 
 function HexToDec(number)
-    if type(number) == "number" then return number
-    elseif string.find(tostring(number),"0x") then return math.abs(tonumber(number))
-    else return math.abs(tonumber(number,16))
-    end
+  if type(number) == "number" then return number
+  elseif string.find(tostring(number),"0x") then return math.abs(tonumber(number))
+  else return math.abs(tonumber(number,16))
+  end
 end
 
 PacksList =
 {
-    "Backpack",
-    "_Cape_Frigate",
-    "_Cape_Sandworm",
-    "_Cape_Jelly",
-    "_Cape_Freighter",
-    "_Cape_Infinity",
-    "_Cape_Pirate",
-    "_Cape_Atlas",
-    "_Cape_Proto",
-    "_Cape_Seed",
-    "_Cape_Ruin",
-    "_Chest_Vanilla",
-    "_Chest_Astro",
-    "_Chest_Gek",
-    "_Chest_Fourth",
-    "_Chest_Vykeen",
-    "_Chest_Apod",
-    "_Chest_Diving",
-    "_Chest_Ruin",
-    "_Chest_Builders1",
-    "_Chest_Builders2",
-    "_Chest_Builders3",
-    "_Chest_Builders4",
-    "_Chest_Classic",
+  "Backpack",
+  "_Cape_Frigate",
+  "_Cape_Sandworm",
+  "_Cape_Jelly",
+  "_Cape_Freighter",
+  "_Cape_Infinity",
+  "_Cape_Pirate",
+  "_Cape_Atlas",
+  "_Cape_Proto",
+  "_Cape_Seed",
+  "_Cape_Ruin",
+  "_Chest_Vanilla",
+  "_Chest_Astro",
+  "_Chest_Gek",
+  "_Chest_Fourth",
+  "_Chest_Vykeen",
+  "_Chest_Apod",
+  "_Chest_Diving",
+  "_Chest_Ruin",
+  "_Chest_Builders1",
+  "_Chest_Builders2",
+  "_Chest_Builders3",
+  "_Chest_Builders4",
+  "_Chest_Classic",
 }
 
 function GetPack(Pack)
-return [[
+  return
+[[
                   <Property name="Action" value="GcNodeActivationAction">
                     <Property name="GcNodeActivationAction">
                       <Property name="NodeActiveState" value="Toggle" />
@@ -161,7 +162,7 @@ end
 PACKS_ADDING_ALL = {}
 
 for i=1,#PacksList,1 do
-    table.insert(PACKS_ADDING_ALL,GetPack(PacksList[i]))
+  table.insert(PACKS_ADDING_ALL,GetPack(PacksList[i]))
 end
 
 GENERIC_BUTTON_ICON = "TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS"
@@ -169,7 +170,7 @@ GENERIC_BUTTON_ICON = "TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS"
 QUICK_ACTION_MENU =
 {
     ["SAVE"] = {["TITLE"]="Save",["ICON"]="TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS",["ANIM"]="SAVEGAME",
-        ["ACTION_TRIGGER"] =
+      ["ACTION_TRIGGER"] =
 [[
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcAnimFrameEvent">
@@ -192,9 +193,9 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
 ]],
-    },
+  },
     ["GALACTICMAP"] = {["TITLE"]="Galactic Map",["ICON"]="TEXTURES/UI/FRONTEND/GALACTICMAP/GALACTICMAP.DDS",["ANIM"]="GALACTICMAP",
-        ["ACTION_TRIGGER"] =
+      ["ACTION_TRIGGER"] =
 [[
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcAnimFrameEvent">
@@ -217,9 +218,9 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
 ]],
-    },
+  },
     ["PLANETSCANNER"] = {["TITLE"]="Planetary Scanner",["ICON"]="TEXTURES\UI\HUD\ICONS\SCANNING\SCAN.PLANET.DDS",["ANIM"]="PLANETSCANNER",
-        ["ACTION_TRIGGER"] =
+      ["ACTION_TRIGGER"] =
 [[
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcAnimFrameEvent">
@@ -242,9 +243,9 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
 ]],
-    },
+  },
     ["TOGGLE_BACKPACK"] = {["TITLE"]="Toggle Backpack",["ICON"]="TEXTURES/UI/FRONTEND/COMPONENTS/CHARCUSTOMISE/BACKPACK.DDS",["ANIM"]="TOGGLE_BACKPACK",
-        ["ACTION_TRIGGER"] =
+      ["ACTION_TRIGGER"] =
 [[
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcStateTimeEvent">
@@ -282,9 +283,9 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
 ]]
-    },
+  },
     ["TOGGLE_INVIS"] = {["TITLE"]="Toggle Invisibility",["ICON"]="TEXTURES/UI/HUD/ICONS/MISSIONS/HIDE_N_SEEK.DDS",["ANIM"]="TOGGLE_INVIS",
-        ["ACTION_TRIGGER"] =
+      ["ACTION_TRIGGER"] =
 [[
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcAnimFrameEvent">
@@ -333,9 +334,9 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
 ]]
-    },
+  },
     ["TOGGLE_SHIELD"] = {["TITLE"]="Shield",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/STATS/STATS.SUIT.PROTECTION.DDS",["ANIM"]="TOGGLE_SHIELD",
-        ["ACTION_TRIGGER"] =
+      ["ACTION_TRIGGER"] =
 [[
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcStateTimeEvent">
@@ -409,9 +410,9 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
 ]],
-    },
+  },
     ["SCARE_CREATURES"] = {["TITLE"]="Scare Creatures",["ICON"]="TEXTURES/UI/HUD/EYE.CREATURE.DDS",["ANIM"]="SCARE_CREATURES",
-        ["ACTION_TRIGGER"] =
+      ["ACTION_TRIGGER"] =
 [[
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcAnimFrameEvent">
@@ -443,9 +444,9 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
 ]]
-    },
+  },
     ["POWER_STATE"] = {["TITLE"]="Emit Electricity (WIP)",["ICON"]="TEXTURES/UI/HUD/ICONS/PICKUPS/PICKUP.STORMCRYSTALS.DDS",["ANIM"]="POWER_STATE",
-        ["ACTION_TRIGGER"] =
+      ["ACTION_TRIGGER"] =
 [[
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcAnimFrameEvent">
@@ -477,9 +478,9 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
 ]]
-    },
+  },
     ["HARVEST"] = {["TITLE"]="Harvest All",["ICON"]="TEXTURES/UI/HUD/ICONS/PICKUPS/PICKUP.PLANTGREEN.DDS",["ANIM"]="HARVEST",
-        ["ACTION_TRIGGER"] =
+      ["ACTION_TRIGGER"] =
 [[
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcAnimFrameEvent">
@@ -502,13 +503,13 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
 ]],
-    },
+  },
     ["REVEAL_PORTAL"] = {["TITLE"]="Find Portal",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.PORTAL.DDS",["ANIM"]="REVEAL_PORTAL",["TYPE"]="REWARD"},
     ["R_SENTINELS_OFF"] = {["TITLE"]="Disable Sentinels",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/RANK/MEDAL.SENTINELSSILVER.DDS",["ANIM"]="R_SENTINELS_OFF",["TYPE"]="REWARD"},
     ["R_FIX_REP"] = {["TITLE"]="Reset Reputation",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REPTOKEN.DDS",["ANIM"]="R_FIX_REP",["TYPE"]="REWARD"},
     ["WORD"] = {["TITLE"]="Learn Word",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/RANK/MEDAL.WORDSGOLD.DDS",["ANIM"]="WORD",["TYPE"]="REWARD"},
     ["PLANET_FINDER"] = {["TITLE"]="Find Lush Planet",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANET.DDS",["ANIM"]="PLANET_FINDER",["TYPE"]="REWARD",
-        ["REWARDTABLE"] =
+      ["REWARDTABLE"] =
 [[
     <Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="PLANET_FINDER" />
@@ -538,7 +539,7 @@ QUICK_ACTION_MENU =
       </Property>
     </Property>
 ]],
-        ["SCANEVENTTABLE"] =
+      ["SCANEVENTTABLE"] =
 [[
         <Property name="ScanEvents" value="GcScanEventData">
           <Property name="Name" value="PLANET_FINDER" />
@@ -771,11 +772,11 @@ QUICK_ACTION_MENU =
           </Property>
         </Property>
 ]]
-    },
+  },
     ["R_CHART_ROBOT"] = {["TITLE"]="Locate Sentinel Multi-Tool",["ICON"]="TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.ROBOTHEAD.DDS",["ANIM"]="R_CHART_ROBOT",["TYPE"]="REWARD"},
     ["R_SCANSENTCRASH"] = {["TITLE"]="Find Crashed Sentinel Ship",["ICON"]="TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.SENTINELCRASH.DDS",["ANIM"]="R_SCANSENTCRASH",["TYPE"]="REWARD"},
     ["CRASHED_SHIP"] = {["TITLE"]="Find Crashed Ship",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.CRASH.DDS",["ANIM"]="CRASHED_SHIP",["TYPE"]="REWARD",
-        ["REWARDTABLE"] =
+      ["REWARDTABLE"] =
 [[
     <Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="CRASHED_SHIP" />
@@ -805,9 +806,9 @@ QUICK_ACTION_MENU =
       </Property>
     </Property>
 ]]
-    },
+  },
     ["STOP_STORM"] = {["TITLE"]="Stop Storm",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANETDATA.WEATHER.DDS",["ANIM"]="STOP_STORM",["TYPE"]="REWARD",
-        ["REWARDTABLE"] =
+      ["REWARDTABLE"] =
 [[
     <Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="STOP_STORM" />
@@ -830,10 +831,10 @@ QUICK_ACTION_MENU =
       </Property>
     </Property>
 ]]
-    },
+  },
     ["STORM"] = {["TITLE"]="Trigger Storm",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANETDATA.WEATHER.DDS",["ANIM"]="STORM",["TYPE"]="REWARD"},
     ["UPLOAD_BASE"] = {["TITLE"]="Upload Base",["ICON"]="TEXTURES/UI/HUD/ICONS/SCANNING/BUILDING.UPLOADBASE.DDS",["ANIM"]="UPLOAD_BASE",["TYPE"]="REWARD",
-        ["REWARDTABLE"] =
+      ["REWARDTABLE"] =
 [[
     <Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="UPLOAD_BASE" />
@@ -854,9 +855,9 @@ QUICK_ACTION_MENU =
       </Property>
     </Property>
 ]],
-    },
+  },
     ["DEACT_FIENDS"] = {["TITLE"]="Deactivate Fiends",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.FIEND.OFF.DDS",["ANIM"]="DEACT_FIENDS",["TYPE"]="REWARD",
-        ["REWARDTABLE"] =
+      ["REWARDTABLE"] =
 [[
     <Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="DEACT_FIENDS" />
@@ -877,9 +878,9 @@ QUICK_ACTION_MENU =
       </Property>
     </Property>
 ]],
-    },
+  },
     ["HEALTH_SUIT"] = {["TITLE"]="Full Health+Suit+Stamina",["ICON"]="TEXTURES/UI/HUD/ICONS/SCANNING/PICKUP.HEALTH.DDS",["ANIM"]="HEALTH_SUIT",["TYPE"]="REWARD",
-        ["REWARDTABLE"] =
+      ["REWARDTABLE"] =
 [[
     <Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="HEALTH_SUIT" />
@@ -927,9 +928,9 @@ QUICK_ACTION_MENU =
       </Property>
     </Property>
 ]],
-    },
+  },
     ["BLACK_HOLE_WARP"] = {["TITLE"]="Black Hole Warp",["ICON"]="TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.BLACKHOLE.DDS",["ANIM"]="BLACK_HOLE_WARP",
-        ["ACTION_TRIGGER"] =
+      ["ACTION_TRIGGER"] =
 [[
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcAnimFrameEvent">
@@ -948,9 +949,9 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
 ]]
-    },
+  },
     ["RELIC_GATE_WARP"] = {["TITLE"]="Relic Gate Warp",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.WARPFIX.DDS",["ANIM"]="RELIC_GATE_WARP",
-        ["ACTION_TRIGGER"] =
+      ["ACTION_TRIGGER"] =
 [[
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcAnimFrameEvent">
@@ -969,11 +970,11 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
 ]]
-    },
+  },
     ["R_MEGAWARP"] = {["TITLE"]="MegaWarp",["ICON"]="TEXTURES\UI\FRONTEND\ICONS\TECHNOLOGY\TECHNOLOGY.FREIGHTER.MEGAWARP.DDS",["ANIM"]="R_MEGAWARP",["TYPE"]="REWARD"},
     ["TELEPORT_BASE"] = {["TITLE"]="Warp To Base",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.WARP.DDS",["ANIM"]="TELEPORT_BASE",["TYPE"]="REWARD"},
     ["CENTREJOURNEY0"] = {["TITLE"]="Switch to Next Galaxy",["ICON"]="TEXTURES/SPACE/ATLASSTATION/ENDING_1/GALAXYTEXTUREVARIANTS.WHITEGALAXY.DDS",["ANIM"]="CENTREJOURNEY0",["TYPE"]="REWARD",
-        ["REWARDTABLE"] =
+      ["REWARDTABLE"] =
 [[
     <Property name="SpecialRewardTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="CENTREJOURNEY0" />
@@ -996,7 +997,7 @@ QUICK_ACTION_MENU =
       </Property>
     </Property>
 ]],
-    },
+  },
     ["CENTREJOURNEY1"] = {["TITLE"]="Switch to Vicious Galaxy",["ICON"]="TEXTURES/SPACE/ATLASSTATION/ENDING_1/GALAXYTEXTUREVARIANTS.REDGALAXY.DDS",["ANIM"]="CENTREJOURNEY1",["TYPE"]="REWARD"},
     ["CENTREJOURNEY2"] = {["TITLE"]="Switch to Lush Galaxy",["ICON"]="TEXTURES/SPACE/ATLASSTATION/ENDING_1/GALAXYTEXTUREVARIANTS.GREENGALAXY.DDS",["ANIM"]="CENTREJOURNEY2",["TYPE"]="REWARD"},
     ["CENTREJOURNEY3"] = {["TITLE"]="Switch to Abandoned Galaxy",["ICON"]="TEXTURES/SPACE/ATLASSTATION/ENDING_1/GALAXYTEXTURE.DDS",["ANIM"]="CENTREJOURNEY3",["TYPE"]="REWARD"},
@@ -1024,21 +1025,22 @@ QUICK_ACTION_MENU =
 
 SEED_TYPE_PATH =
 {
-    ["FIGHTER"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
-    ["DROPSHIP"]="MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
-    ["SCIENTIFIC"]="MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN",
-    ["SHUTTLE"]="MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN",
-    ["ROYAL"]="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN",
-    ["ALIEN"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN",
-    ["SAIL"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
-    ["ROBOT"]="MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELSHIP_PROC.SCENE.MBIN",
-    ["MULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN",
-    ["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
-    ["POLICESHIP"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERPOLICE.SCENE.MBIN",
+  ["FIGHTER"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
+  ["DROPSHIP"]="MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
+  ["SCIENTIFIC"]="MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN",
+  ["SHUTTLE"]="MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN",
+  ["ROYAL"]="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN",
+  ["ALIEN"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN",
+  ["SAIL"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
+  ["ROBOT"]="MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELSHIP_PROC.SCENE.MBIN",
+  ["MULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN",
+  ["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
+  ["POLICESHIP"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERPOLICE.SCENE.MBIN",
 }
 
 function GetTriggerAnim(ANIM)
-return [[
+  return
+[[
           <Property name="Anims" value="TkAnimationData">
             <Property name="Anim" value="]] .. ANIM .. [[" />
             <Property name="Filename" value="MODELS/TESTS/EFFECTTEST.ANIM.MBIN" />
@@ -1077,7 +1079,8 @@ return [[
 end
 
 function GetQuickAction(TITLE, ANIM, ICON)
-return [[
+  return
+[[
     <Property name="Emotes" value="GcPlayerEmote">
       <Property name="Title" value="]] .. TITLE .. [[" />
       <Property name="ChatText" value="" />
@@ -1137,7 +1140,8 @@ return [[
 end
 
 function GetLanguage(TITLE)
-return [[
+  return
+[[
     <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="]] .. TITLE .. [[" />
       <Property name="English" value="]] .. TITLE .. [[" />
@@ -1162,7 +1166,8 @@ return [[
 end
 
 function GetComponents(TRIGGER_ACTION)
-return [[
+  return
+[[
     <Property name="Components" value="GcTriggerActionComponentData">
       <Property name="GcTriggerActionComponentData">
         <Property name="HideModel" value="false" />
@@ -1185,7 +1190,8 @@ return [[
 end
 
 function GetShipRewardEntry(REWARDID, TYPE, SEED)
-return [[
+  return
+[[
     <Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="]] .. REWARDID .. [[" />
       <Property name="List" value="GcRewardTableItemList">
@@ -1350,7 +1356,8 @@ return [[
 end
 
 function GetMultitoolRewardEntry(REWARDID, TYPE, SEED)
-return [[
+  return
+[[
     <Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="]] .. REWARDID .. [[" />
       <Property name="List" value="GcRewardTableItemList">
@@ -1404,7 +1411,7 @@ return [[
 end
 
 function GetRewardAction(ANIM, REWARDID)
-return
+  return
 [[
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcAnimFrameEvent">
@@ -1433,36 +1440,36 @@ EMOTE_GENERIC_ICON_ANGRY = "TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/NEGATIVE
 EMOTE_GENERIC_ICON_GREET = "TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/WAVE.DDS"
 NEW_EMOTE_TABLE =
 {
-    { ["TITLE"]="Fake Death",            ["ANIM"]="0H_DEATH",       ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/WIKI/COMBATHEADER.DDS" },
-    { ["TITLE"]="PANIC!",                ["ANIM"]="0H_FALL_PANIC",  ["ICON"]=EMOTE_GENERIC_ICON },
-    { ["TITLE"]="Happy 1",               ["ANIM"]="0H_HAPPY_01",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 2",               ["ANIM"]="0H_HAPPY_02",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 3",               ["ANIM"]="0H_HAPPY_03",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 4",               ["ANIM"]="0H_HAPPY_04",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 5",               ["ANIM"]="0H_HAPPY_05",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 6",               ["ANIM"]="0H_HAPPY_06",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 7",               ["ANIM"]="0H_HAPPY_07",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Happy 8",               ["ANIM"]="0H_HAPPY_08",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY },
-    { ["TITLE"]="Angry 1",               ["ANIM"]="0H_ANGRY_01",    ["ICON"]=EMOTE_GENERIC_ICON_ANGRY },
-    { ["TITLE"]="Angry 2",               ["ANIM"]="0H_ANGRY_02",    ["ICON"]=EMOTE_GENERIC_ICON_ANGRY },
-    { ["TITLE"]="Angry 3",               ["ANIM"]="0H_ANGRY_03",    ["ICON"]=EMOTE_GENERIC_ICON_ANGRY },
-    { ["TITLE"]="Angry 4",               ["ANIM"]="0H_ANGRY_04",    ["ICON"]=EMOTE_GENERIC_ICON_ANGRY },
-    { ["TITLE"]="Greet 1",               ["ANIM"]="0H_GREET_01",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Greet 2",               ["ANIM"]="0H_GREET_02",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Greet 3",               ["ANIM"]="0H_GREET_03",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Greet 4",               ["ANIM"]="0H_GREET_04",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Greet 5",               ["ANIM"]="0H_GREET_05",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Greet 6",               ["ANIM"]="0H_GREET_06",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Greet 7",               ["ANIM"]="0H_GREET_07",    ["ICON"]=EMOTE_GENERIC_ICON_GREET },
-    { ["TITLE"]="Slide",                 ["ANIM"]="0H_SLIDE_F",     ["ICON"]=EMOTE_GENERIC_ICON },
-    { ["TITLE"]="Land Float",            ["ANIM"]="0H_SWIM_IDLE",   ["ICON"]=EMOTE_GENERIC_ICON },
-    { ["TITLE"]="Land Swim",             ["ANIM"]="0H_SWIM_F",      ["ICON"]=EMOTE_GENERIC_ICON },
-    { ["TITLE"]="Interact With Console", ["ANIM"]="0H_INT_CNSL_IN", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/POINT.DDS" },
-    { ["TITLE"]="Gather",                ["ANIM"]="0H_INT_GATH_IN", ["ICON"]=EMOTE_GENERIC_ICON },
+  {["TITLE"]="Fake Death",            ["ANIM"]="0H_DEATH",       ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/WIKI/COMBATHEADER.DDS" },
+  {["TITLE"]="PANIC!",                ["ANIM"]="0H_FALL_PANIC",  ["ICON"]=EMOTE_GENERIC_ICON},
+  {["TITLE"]="Happy 1",               ["ANIM"]="0H_HAPPY_01",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY},
+  {["TITLE"]="Happy 2",               ["ANIM"]="0H_HAPPY_02",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY},
+  {["TITLE"]="Happy 3",               ["ANIM"]="0H_HAPPY_03",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY},
+  {["TITLE"]="Happy 4",               ["ANIM"]="0H_HAPPY_04",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY},
+  {["TITLE"]="Happy 5",               ["ANIM"]="0H_HAPPY_05",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY},
+  {["TITLE"]="Happy 6",               ["ANIM"]="0H_HAPPY_06",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY},
+  {["TITLE"]="Happy 7",               ["ANIM"]="0H_HAPPY_07",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY},
+  {["TITLE"]="Happy 8",               ["ANIM"]="0H_HAPPY_08",    ["ICON"]=EMOTE_GENERIC_ICON_HAPPY},
+  {["TITLE"]="Angry 1",               ["ANIM"]="0H_ANGRY_01",    ["ICON"]=EMOTE_GENERIC_ICON_ANGRY},
+  {["TITLE"]="Angry 2",               ["ANIM"]="0H_ANGRY_02",    ["ICON"]=EMOTE_GENERIC_ICON_ANGRY},
+  {["TITLE"]="Angry 3",               ["ANIM"]="0H_ANGRY_03",    ["ICON"]=EMOTE_GENERIC_ICON_ANGRY},
+  {["TITLE"]="Angry 4",               ["ANIM"]="0H_ANGRY_04",    ["ICON"]=EMOTE_GENERIC_ICON_ANGRY},
+  {["TITLE"]="Greet 1",               ["ANIM"]="0H_GREET_01",    ["ICON"]=EMOTE_GENERIC_ICON_GREET},
+  {["TITLE"]="Greet 2",               ["ANIM"]="0H_GREET_02",    ["ICON"]=EMOTE_GENERIC_ICON_GREET},
+  {["TITLE"]="Greet 3",               ["ANIM"]="0H_GREET_03",    ["ICON"]=EMOTE_GENERIC_ICON_GREET},
+  {["TITLE"]="Greet 4",               ["ANIM"]="0H_GREET_04",    ["ICON"]=EMOTE_GENERIC_ICON_GREET},
+  {["TITLE"]="Greet 5",               ["ANIM"]="0H_GREET_05",    ["ICON"]=EMOTE_GENERIC_ICON_GREET},
+  {["TITLE"]="Greet 6",               ["ANIM"]="0H_GREET_06",    ["ICON"]=EMOTE_GENERIC_ICON_GREET},
+  {["TITLE"]="Greet 7",               ["ANIM"]="0H_GREET_07",    ["ICON"]=EMOTE_GENERIC_ICON_GREET},
+  {["TITLE"]="Slide",                 ["ANIM"]="0H_SLIDE_F",     ["ICON"]=EMOTE_GENERIC_ICON},
+  {["TITLE"]="Land Float",            ["ANIM"]="0H_SWIM_IDLE",   ["ICON"]=EMOTE_GENERIC_ICON},
+  {["TITLE"]="Land Swim",             ["ANIM"]="0H_SWIM_F",      ["ICON"]=EMOTE_GENERIC_ICON},
+  {["TITLE"]="Interact With Console", ["ANIM"]="0H_INT_CNSL_IN", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/POINT.DDS"},
+  {["TITLE"]="Gather",                ["ANIM"]="0H_INT_GATH_IN", ["ICON"]=EMOTE_GENERIC_ICON},
 }
 for i=1,#NEW_EMOTE_TABLE,1 do
-    NEW_EMOTES_ALL = NEW_EMOTES_ALL .. GetQuickAction(NEW_EMOTE_TABLE[i]["TITLE"], NEW_EMOTE_TABLE[i]["ANIM"], NEW_EMOTE_TABLE[i]["ICON"])
-    LANGUAGE = LANGUAGE .. GetLanguage(NEW_EMOTE_TABLE[i]["TITLE"])
+  NEW_EMOTES_ALL = NEW_EMOTES_ALL .. GetQuickAction(NEW_EMOTE_TABLE[i]["TITLE"], NEW_EMOTE_TABLE[i]["ANIM"], NEW_EMOTE_TABLE[i]["ICON"])
+  LANGUAGE = LANGUAGE .. GetLanguage(NEW_EMOTE_TABLE[i]["TITLE"])
 end
 
 ANIMS                  = ""
@@ -1477,83 +1484,83 @@ ACTIONCOMPONENTS_COUNT = 0
 ACTIONCOMPONENTS_LIMIT = 28 --actually 32
 
 for i=1,#QUICK_ACTION_LIST,1 do
-    print(QUICK_ACTION_LIST[i])
-    if ACTIONCOMPONENTS_COUNT >= ACTIONCOMPONENTS_LIMIT then
-        print("new GcTriggerActionComponentData")
-        ACTIONCOMPONENTS_LIMIT = ACTIONCOMPONENTS_LIMIT - 1
-        ACTIONCOMPONENTS_COUNT = 0
-        table.insert(ACTIONCOMPONENTS_TABLE, ACTIONCOMPONENTS)
-        ACTIONCOMPONENTS = ""
+  print(QUICK_ACTION_LIST[i])
+  if ACTIONCOMPONENTS_COUNT >= ACTIONCOMPONENTS_LIMIT then
+    print("new GcTriggerActionComponentData")
+    ACTIONCOMPONENTS_LIMIT = ACTIONCOMPONENTS_LIMIT - 1
+    ACTIONCOMPONENTS_COUNT = 0
+    table.insert(ACTIONCOMPONENTS_TABLE, ACTIONCOMPONENTS)
+    ACTIONCOMPONENTS = ""
+  end
+  if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]] then
+    if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["COMPONENT"] then
+      COMPONENTS = COMPONENTS .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["COMPONENT"]
     end
-    if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]] then
-        if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["COMPONENT"] then
-            COMPONENTS = COMPONENTS .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["COMPONENT"]
-        end
-        if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TYPE"] == "REWARD" and not QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ACTION_TRIGGER"] then
-            ACTIONCOMPONENTS = ACTIONCOMPONENTS .. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])
-        else
-            ACTIONCOMPONENTS = ACTIONCOMPONENTS .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ACTION_TRIGGER"]
-        end
-        EMOTEMENU = EMOTEMENU .. GetQuickAction(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ICON"])
-        LANGUAGE = LANGUAGE .. GetLanguage(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"])
-        ANIMS     = ANIMS     .. GetTriggerAnim(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"])
-        if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARDTABLE"] then
-            REWARDTABLE = REWARDTABLE .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARDTABLE"]
-        end
-        if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["SCANEVENTTABLE"] then
-            SCANEVENTTABLE = SCANEVENTTABLE .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["SCANEVENTTABLE"]
-        end
-    else --pure reward
-        ACTIONCOMPONENTS = ACTIONCOMPONENTS .. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])
-        EMOTEMENU        = EMOTEMENU        .. GetQuickAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i], GENERIC_BUTTON_ICON)
-        LANGUAGE         = LANGUAGE         .. GetLanguage(QUICK_ACTION_LIST[i])
-        ANIMS            = ANIMS            .. GetTriggerAnim(QUICK_ACTION_LIST[i])
+    if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TYPE"] == "REWARD" and not QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ACTION_TRIGGER"] then
+      ACTIONCOMPONENTS = ACTIONCOMPONENTS .. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])
+    else
+      ACTIONCOMPONENTS = ACTIONCOMPONENTS .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ACTION_TRIGGER"]
     end
-    ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1
+    EMOTEMENU = EMOTEMENU .. GetQuickAction(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ICON"])
+    LANGUAGE = LANGUAGE .. GetLanguage(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"])
+    ANIMS     = ANIMS     .. GetTriggerAnim(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"])
+    if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARDTABLE"] then
+      REWARDTABLE = REWARDTABLE .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARDTABLE"]
+    end
+    if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["SCANEVENTTABLE"] then
+      SCANEVENTTABLE = SCANEVENTTABLE .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["SCANEVENTTABLE"]
+    end
+  else --pure reward
+    ACTIONCOMPONENTS = ACTIONCOMPONENTS .. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])
+    EMOTEMENU        = EMOTEMENU        .. GetQuickAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i], GENERIC_BUTTON_ICON)
+    LANGUAGE         = LANGUAGE         .. GetLanguage(QUICK_ACTION_LIST[i])
+    ANIMS            = ANIMS            .. GetTriggerAnim(QUICK_ACTION_LIST[i])
+  end
+  ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1
 end
 
 SHIPCOUNTER = 1
 MULTITOOLCOUNTER = 1
 
 if #USER_SEED_LIST > 0 then
-    for i=1,#USER_SEED_LIST,1 do
-        print(USER_SEED_LIST[i][1], USER_SEED_LIST[i][2])
-        if ACTIONCOMPONENTS_COUNT >= ACTIONCOMPONENTS_LIMIT then
-            print("new GcTriggerActionComponentData")
-            ACTIONCOMPONENTS_LIMIT = ACTIONCOMPONENTS_LIMIT - 1
-            ACTIONCOMPONENTS_COUNT = 0
-            table.insert(ACTIONCOMPONENTS_TABLE, ACTIONCOMPONENTS)
-            ACTIONCOMPONENTS = ""
-        end
-        local REWARD_ID = ""
-        if USER_SEED_LIST[i][1] == "MULTITOOL" then
-            REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. MULTITOOLCOUNTER
-            MULTITOOLCOUNTER = MULTITOOLCOUNTER + 1
-            REWARDTABLE      = REWARDTABLE .. GetMultitoolRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
-            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN02.DDS")
-            LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
-        elseif USER_SEED_LIST[i][1] == "POLICESHIP" then
-            REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
-            SHIPCOUNTER      = SHIPCOUNTER + 1
-            REWARDTABLE      = REWARDTABLE .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], HexToDec(USER_SEED_LIST[i][2]))
-            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS")
-            LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
-        else
-            REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
-            SHIPCOUNTER      = SHIPCOUNTER + 1
-            REWARDTABLE      = REWARDTABLE .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], HexToDec(USER_SEED_LIST[i][2]))
-            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.TWITCH.SHIP11.DDS")
-            LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
-        end
-        ACTIONCOMPONENTS       = ACTIONCOMPONENTS .. GetRewardAction(REWARD_ID, REWARD_ID)
-        ANIMS                  = ANIMS            .. GetTriggerAnim(REWARD_ID)
-        ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1
+  for i=1,#USER_SEED_LIST,1 do
+    print(USER_SEED_LIST[i][1], USER_SEED_LIST[i][2])
+    if ACTIONCOMPONENTS_COUNT >= ACTIONCOMPONENTS_LIMIT then
+      print("new GcTriggerActionComponentData")
+      ACTIONCOMPONENTS_LIMIT = ACTIONCOMPONENTS_LIMIT - 1
+      ACTIONCOMPONENTS_COUNT = 0
+      table.insert(ACTIONCOMPONENTS_TABLE, ACTIONCOMPONENTS)
+      ACTIONCOMPONENTS = ""
     end
+    local REWARD_ID = ""
+    if USER_SEED_LIST[i][1] == "MULTITOOL" then
+      REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. MULTITOOLCOUNTER
+      MULTITOOLCOUNTER = MULTITOOLCOUNTER + 1
+      REWARDTABLE      = REWARDTABLE .. GetMultitoolRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
+      EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN02.DDS")
+      LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
+    elseif USER_SEED_LIST[i][1] == "POLICESHIP" then
+      REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
+      SHIPCOUNTER      = SHIPCOUNTER + 1
+      REWARDTABLE      = REWARDTABLE .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], HexToDec(USER_SEED_LIST[i][2]))
+      EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS")
+      LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
+    else
+      REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
+      SHIPCOUNTER      = SHIPCOUNTER + 1
+      REWARDTABLE      = REWARDTABLE .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], HexToDec(USER_SEED_LIST[i][2]))
+      EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.TWITCH.SHIP11.DDS")
+      LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
+    end
+    ACTIONCOMPONENTS       = ACTIONCOMPONENTS .. GetRewardAction(REWARD_ID, REWARD_ID)
+    ANIMS                  = ANIMS            .. GetTriggerAnim(REWARD_ID)
+    ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1
+  end
 end
 table.insert(ACTIONCOMPONENTS_TABLE, ACTIONCOMPONENTS)
 
 for i=1,#ACTIONCOMPONENTS_TABLE,1 do
-    COMPONENTS_ALL = COMPONENTS_ALL .. GetComponents(ACTIONCOMPONENTS_TABLE[i])
+  COMPONENTS_ALL = COMPONENTS_ALL .. GetComponents(ACTIONCOMPONENTS_TABLE[i])
 end
 COMPONENTS_ALL = COMPONENTS_ALL .. COMPONENTS
 
@@ -1562,117 +1569,117 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Meta-Mod",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "6.16",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
-                            ["PRECEDING_KEY_WORDS"] = {"Anims"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] = ANIMS
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] = COMPONENTS_ALL
-                        }
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] = NEW_EMOTES_ALL
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] = EMOTEMENU
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Title", "Toggle Backpack"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RidingAnimationName", ""},
-                            }
-                        }
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] = REWARDTABLE
-                        }
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCANNING\SCANEVENTTABLETUTORIAL.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Events"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] = SCANEVENTTABLE
-                        }
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN", "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransY", "1.400000"},
-                                {"TransZ", "-1.500000"},
-                                {"ScaleX", "1.400000"},
-                                {"ScaleY", "1.400000"},
-                                {"ScaleZ", "1.400000"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip", "Name", "ATTACHMENT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", ""},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
-                            ["REMOVE"] = "SECTION",
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER|collisionCapsule"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+              ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
+              ["PRECEDING_KEY_WORDS"] = {"Anims"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD"] = ANIMS
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Components"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD"] = COMPONENTS_ALL
+            }
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Emotes"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD"] = NEW_EMOTES_ALL
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Emotes"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD"] = EMOTEMENU
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Title", "Toggle Backpack"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"RidingAnimationName", ""},
+              }
+            }
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD"] = REWARDTABLE
+            }
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCANNING\SCANEVENTTABLETUTORIAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Events"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD"] = SCANEVENTTABLE
+            }
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN", "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransY", "1.400000"},
+                {"TransZ", "-1.500000"},
+                {"ScaleX", "1.400000"},
+                {"ScaleY", "1.400000"},
+                {"ScaleZ", "1.400000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip", "Name", "ATTACHMENT"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", ""},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
+              ["REMOVE"] = "SECTION",
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER|collisionCapsule"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="REFGalMapData" />
@@ -1799,68 +1806,68 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD\ENTITIES\BUBBLESHIELD.ENTITY.MBIN", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_A.ENTITY.MBIN",},
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD\ENTITIES\BUBBLESHIELD.ENTITY.MBIN", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                      "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_A.ENTITY.MBIN",
-                      "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN"
-                    },
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TriggerVolume",           "false"},
-                                {"VolumeTriggerType",       "GenericInterior"},
-                                {"IgnoreModelOwner",        "true"},
-                                {"NoPlayerCollide",         "true"},
-                                {"CameraInvisible",         "true"},
-                                {"InvisibleForInteraction", "true"},
-                                {"Health",                  "3000"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD.SCENE.MBIN", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD.SCENE.MBIN",},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                              {"Name", "ATTACHMENT"},
-                              {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD|collisionSphere"},
-                              {"Name", "BubbleShield1", "Name", "ATTACHMENT"},
-                              {"Name", "BubbleShield2", "Name", "ATTACHMENT"},
-                              {"Name", "Root"},
-                              {"Name", "Leg1_pCube14"},
-                              {"Name", "Leg1_pCube14_2"},
-                              {"Name", "Leg1_pCube14_3"},
-                              {"Name", "Shield"},
-                            },
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "BubbleShield"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD\ENTITIES\BUBBLESHIELD.ENTITY.MBIN", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_A.ENTITY.MBIN",},
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD\ENTITIES\BUBBLESHIELD.ENTITY.MBIN", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_A.ENTITY.MBIN",
+            "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN"
+          },
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TriggerVolume",           "false"},
+                {"VolumeTriggerType",       "GenericInterior"},
+                {"IgnoreModelOwner",        "true"},
+                {"NoPlayerCollide",         "true"},
+                {"CameraInvisible",         "true"},
+                {"InvisibleForInteraction", "true"},
+                {"Health",                  "3000"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD.SCENE.MBIN", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD.SCENE.MBIN",},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "ATTACHMENT"},
+                {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD|collisionSphere"},
+                {"Name", "BubbleShield1", "Name", "ATTACHMENT"},
+                {"Name", "BubbleShield2", "Name", "ATTACHMENT"},
+                {"Name", "Root"},
+                {"Name", "Leg1_pCube14"},
+                {"Name", "Leg1_pCube14_2"},
+                {"Name", "Leg1_pCube14_3"},
+                {"Name", "Shield"},
+              },
+              ["REMOVE"] = "SECTION"
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "BubbleShield"},
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["ADD_OPTION"]  = "ADDafterLINE",
+              ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="Data" />
@@ -1924,25 +1931,25 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name",     "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD"},
-                                {"NameHash", "2755176659"},
-                            }
-                        },
-                    }
-                },
-            }
-        }
-    },
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Name",     "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD"},
+                {"NameHash", "2755176659"},
+              }
+            },
+          }
+        },
+      }
+    }
+  },
 ["ADD_FILES"] =
+  {
     {
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.MXML",
-            ["FILE_CONTENT"] =
+      ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1965,10 +1972,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2293,10 +2300,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\GALACTICMAP\ENTITIES\GALACTICMAP.ENTITY.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\GALACTICMAP\ENTITIES\GALACTICMAP.ENTITY.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2426,10 +2433,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SAVE\ENTITIES\SAVE.ENTITY.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SAVE\ENTITIES\SAVE.ENTITY.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2612,10 +2619,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\HARVEST\ENTITIES\HARVEST.ENTITY.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\HARVEST\ENTITIES\HARVEST.ENTITY.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2793,10 +2800,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\PLANETSCANNER\ENTITIES\PLANETSCANNER.ENTITY.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\PLANETSCANNER\ENTITIES\PLANETSCANNER.ENTITY.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2972,10 +2979,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3035,10 +3042,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Has30HzFrames" value="false" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "LocTable.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "LocTable.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkLocalisationTable">
@@ -3047,18 +3054,18 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-    }
+    },
+  }
 }
 
 if REWARDTABLE == "" then table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 3)
 end
 if SCANEVENTTABLE == "" then
-    if #NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"] > 3 then
-        table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 4)
-    else
-        table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 3)
-    end
+  if #NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"] > 3 then
+    table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 4)
+  else
+    table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 3)
+  end
 end
 
 --"TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\EMOTE_MENU.DDS", "TEXTURES\UI\FRONTEND\COMPONENTS\STAR.DDS"

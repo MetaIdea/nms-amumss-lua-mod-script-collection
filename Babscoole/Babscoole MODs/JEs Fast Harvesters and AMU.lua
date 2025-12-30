@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "JEs Fast Harvesters and AMU",
 ["MOD_DESCRIPTION"] = "Increases speed and storage of AMUs and Oxygen and Gas Harvesters",
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
   {
     {
@@ -36,9 +36,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="HintEnd" value="" />
       <Property name="Icon" value="TkTextureResource">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/MAINTTECH.FUEL1.DDS" />
-        <Property name="ResHandle" value="GcResource">
-          <Property name="ResourceID" value="0" />
-        </Property>
       </Property>
       <Property name="Colour">
         <Property name="R" value="0.03529412" />
@@ -129,9 +126,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="HintEnd" value="" />
       <Property name="Icon" value="TkTextureResource">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/MAINTTECH.FUEL4.DDS" />
-        <Property name="ResHandle" value="GcResource">
-          <Property name="ResourceID" value="0" />
-        </Property>
       </Property>
       <Property name="Colour">
         <Property name="R" value="0.03529412" />

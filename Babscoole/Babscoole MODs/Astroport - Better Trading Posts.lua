@@ -4,153 +4,153 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]    = "AstronautinOrbit and Babscoole",
 ["NMS_VERSION"]   = "6.18",
 ["MODIFICATIONS"] =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOSTSCIENTIFIC.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOSTSCIENTIFIC.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "REFTradingPost_Common", "Name", "SCENEGRAPH"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMONKORVAX.SCENE.MBIN"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOSTTRADER.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Interior_"},
-                            ["SEC_SAVE_TO"] = "SaveInt",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "REFTradingPost_Common"},
-                            ["SEC_SAVE_TO"] = "SaveCommon",
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["CREATE_HOES"] = "TRUE",
-                        },
-                        {
-                            ["SEC_EDIT"] = "SaveCommon",
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "REFTradingPost_Common", "Name", "SCENEGRAPH"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMONGEK.SCENE.MBIN"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["SEC_ADD_NAMED"] = "SaveCommon",
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["SEC_ADD_NAMED"] = "SaveInt",
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOSTWARRIOR.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Interior_"},
-                            ["SEC_SAVE_TO"] = "SaveInt",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "REFTradingPost_Common"},
-                            ["SEC_SAVE_TO"] = "SaveCommon",
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["CREATE_HOES"] = "TRUE",
-                        },
-                        {
-                            ["SEC_EDIT"] = "SaveCommon",
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "REFTradingPost_Common", "Name", "SCENEGRAPH"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMONVYKEEN.SCENE.MBIN"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["SEC_ADD_NAMED"] = "SaveCommon",
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["SEC_ADD_NAMED"] = "SaveInt",
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\SCIENTIFIC_BUILDING.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Interior_"},
-                            ["SEC_SAVE_TO"] = "SaveInt",
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["CREATE_HOES"] = "TRUE",
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["SEC_ADD_NAMED"] = "SaveInt",
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD.SCENE.MBIN", "MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN",},
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD.SCENE.MBIN", "MODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN",
-                        "MODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN",
-                    },
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name",     "MODELS\ASTROSTATION\LANDINGPAD1"},
-                                {"NameHash", "3028871014"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision1"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransY", "-0.301410"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision1", "Attributes", "TkSceneNodeAttributeData"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision1"},
-                            ["PRECEDING_KEY_WORDS"] = {"Attributes"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] =
+              ["SPECIAL_KEY_WORDS"] = {"Name", "REFTradingPost_Common", "Name", "SCENEGRAPH"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMONKORVAX.SCENE.MBIN"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOSTTRADER.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "Interior_"},
+              ["SEC_SAVE_TO"] = "SaveInt",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "REFTradingPost_Common"},
+              ["SEC_SAVE_TO"] = "SaveCommon",
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["CREATE_HOES"] = "TRUE",
+            },
+            {
+              ["SEC_EDIT"] = "SaveCommon",
+              ["SPECIAL_KEY_WORDS"] = {"Name", "REFTradingPost_Common", "Name", "SCENEGRAPH"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMONGEK.SCENE.MBIN"},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["CREATE_HOS"] = "TRUE",
+              ["SEC_ADD_NAMED"] = "SaveCommon",
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["CREATE_HOS"] = "TRUE",
+              ["SEC_ADD_NAMED"] = "SaveInt",
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOSTWARRIOR.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "Interior_"},
+              ["SEC_SAVE_TO"] = "SaveInt",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "REFTradingPost_Common"},
+              ["SEC_SAVE_TO"] = "SaveCommon",
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["CREATE_HOES"] = "TRUE",
+            },
+            {
+              ["SEC_EDIT"] = "SaveCommon",
+              ["SPECIAL_KEY_WORDS"] = {"Name", "REFTradingPost_Common", "Name", "SCENEGRAPH"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMONVYKEEN.SCENE.MBIN"},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["CREATE_HOS"] = "TRUE",
+              ["SEC_ADD_NAMED"] = "SaveCommon",
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["CREATE_HOS"] = "TRUE",
+              ["SEC_ADD_NAMED"] = "SaveInt",
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\SCIENTIFIC_BUILDING.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "Interior_"},
+              ["SEC_SAVE_TO"] = "SaveInt",
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["CREATE_HOES"] = "TRUE",
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["CREATE_HOS"] = "TRUE",
+              ["SEC_ADD_NAMED"] = "SaveInt",
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD.SCENE.MBIN", "MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN",},
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD.SCENE.MBIN", "MODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            "MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN",
+            "MODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN",
+          },
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Name",     "MODELS\ASTROSTATION\LANDINGPAD1"},
+                {"NameHash", "3028871014"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision1"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransY", "-0.301410"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision1", "Attributes", "TkSceneNodeAttributeData"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["REMOVE"] = "SECTION"
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision1"},
+              ["PRECEDING_KEY_WORDS"] = {"Attributes"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD"] =
 [[
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
 							<Property name="Name" value="NAVIGATION" />
@@ -173,49 +173,49 @@ NMS_MOD_DEFINITION_CONTAINER =
 							<Property name="Value" value="12.000000" />
 						</Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "SummonShip"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransX", "-5.500000"},
-                                {"TransY", "2.200000"},
-                                {"TransZ", "-5.000000"},
-                                {"RotY",   "-90.000000"},
-                                {"ScaleY", "3.000000"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Dock"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransY", "0.576257"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "EXIT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransY", "-0.422150"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransY", "0.297177"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision", "Attributes", "TkSceneNodeAttributeData"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision"},
-                            ["PRECEDING_KEY_WORDS"] = {"Attributes"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] =
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "SummonShip"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransX", "-5.500000"},
+                {"TransY", "2.200000"},
+                {"TransZ", "-5.000000"},
+                {"RotY",   "-90.000000"},
+                {"ScaleY", "3.000000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "Dock"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransY", "0.576257"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "EXIT"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransY", "-0.422150"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransY", "0.297177"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision", "Attributes", "TkSceneNodeAttributeData"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["REMOVE"] = "SECTION"
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision"},
+              ["PRECEDING_KEY_WORDS"] = {"Attributes"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD"] =
 [[
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
 							<Property name="Name" value="NAVIGATION" />
@@ -234,141 +234,141 @@ NMS_MOD_DEFINITION_CONTAINER =
 							<Property name="Value" value="0.249945" />
 						</Property>
 ]]
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name",     "MODELS\ASTROSTATION\LANDINGPAD2"},
-                                {"NameHash", "2731164649"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "SummonShip"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransZ", "5.000000"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN", "MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name",     "MODELS\ASTROSTATION\LANDINGPAD_BOTTOM"},
-                                {"NameHash", "3471243879"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\WALL.SCENE.MBIN", "MODELS\ASTROSTATION\RAILING.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\RAILING.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name",     "MODELS\ASTROSTATION\RAILING"},
-                                {"NameHash", "1080808632"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UNDERWATERBASE\MAINROOM.SCENE.MBIN", "MODELS\ASTROSTATION\GEK\GEKFRAME.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\GEK\GEKFRAME.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name",     "MODELS\ASTROSTATION\GEK\GEKFRAME"},
-                                {"NameHash", "672067245"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "Sockets"},
-                                {"Name", "WireSupport"},
-                                {"Name", "SnapPoint_Planter8"},
-                                {"Name", "SnapPoint_Planter7"},
-                                {"Name", "SnapPoint_Planter6"},
-                                {"Name", "SnapPoint_Planter5"},
-                                {"Name", "SnapPoint_Planter4"},
-                                {"Name", "SnapPoint_Planter3"},
-                                {"Name", "SnapPoint_Planter2"},
-                                {"Name", "SnapPoint_Planter1"},
-                                {"Name", "RefPowerIndicator"},
-                                {"Name", "RefPowerIndicator4"},
-                                {"Name", "RefPowerIndicator3"},
-                                {"Name", "RefPowerIndicator2"},
-                                {"Name", "RefPowerIndicator1"},
-                                {"Name", "SnapGroup_ConnectN"},
-                                {"Name", "SnapGroup_DoorConnectN"},
-                                {"Name", "SnapGroup_PanelN"},
-                                {"Name", "SnapGroup_DoorConnectE"},
-                                {"Name", "SnapGroup_DoorConnectS"},
-                                {"Name", "SnapGroup_DoorConnectW"},
-                                {"Name", "SnapGroup_PanelNE"},
-                                {"Name", "SnapGroup_PanelSE"},
-                                {"Name", "SnapGroup_PanelSW"},
-                                {"Name", "SnapGroup_PanelNW"},
-                                {"Name", "SnapGroup_MoonPool_"},
-                            },
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "SnapGroup_ConnectS"},
-                                {"Name", "SnapGroup_ConnectW"},
-                                {"Name", "SnapGroup_ConnectE"},
-                            },
-                            ["SECTION_ACTIVE"] = {"1",},
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "SnapGroup_PanelE"},
-                                {"Name", "SnapGroup_PanelS"},
-                                {"Name", "SnapGroup_PanelW"},
-                            },
-                            ["SECTION_ACTIVE"] = {"2",},
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "SnapGroup_RoomRoof"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["AUTO_GNH"] = "TRUE",
-                            ["ADD"] =
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Name",     "MODELS\ASTROSTATION\LANDINGPAD2"},
+                {"NameHash", "2731164649"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "SummonShip"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransZ", "5.000000"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN", "MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Name",     "MODELS\ASTROSTATION\LANDINGPAD_BOTTOM"},
+                {"NameHash", "3471243879"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\WALL.SCENE.MBIN", "MODELS\ASTROSTATION\RAILING.SCENE.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\RAILING.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Name",     "MODELS\ASTROSTATION\RAILING"},
+                {"NameHash", "1080808632"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UNDERWATERBASE\MAINROOM.SCENE.MBIN", "MODELS\ASTROSTATION\GEK\GEKFRAME.SCENE.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\GEK\GEKFRAME.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Name",     "MODELS\ASTROSTATION\GEK\GEKFRAME"},
+                {"NameHash", "672067245"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "Sockets"},
+                {"Name", "WireSupport"},
+                {"Name", "SnapPoint_Planter8"},
+                {"Name", "SnapPoint_Planter7"},
+                {"Name", "SnapPoint_Planter6"},
+                {"Name", "SnapPoint_Planter5"},
+                {"Name", "SnapPoint_Planter4"},
+                {"Name", "SnapPoint_Planter3"},
+                {"Name", "SnapPoint_Planter2"},
+                {"Name", "SnapPoint_Planter1"},
+                {"Name", "RefPowerIndicator"},
+                {"Name", "RefPowerIndicator4"},
+                {"Name", "RefPowerIndicator3"},
+                {"Name", "RefPowerIndicator2"},
+                {"Name", "RefPowerIndicator1"},
+                {"Name", "SnapGroup_ConnectN"},
+                {"Name", "SnapGroup_DoorConnectN"},
+                {"Name", "SnapGroup_PanelN"},
+                {"Name", "SnapGroup_DoorConnectE"},
+                {"Name", "SnapGroup_DoorConnectS"},
+                {"Name", "SnapGroup_DoorConnectW"},
+                {"Name", "SnapGroup_PanelNE"},
+                {"Name", "SnapGroup_PanelSE"},
+                {"Name", "SnapGroup_PanelSW"},
+                {"Name", "SnapGroup_PanelNW"},
+                {"Name", "SnapGroup_MoonPool_"},
+              },
+              ["REMOVE"] = "SECTION"
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "SnapGroup_ConnectS"},
+                {"Name", "SnapGroup_ConnectW"},
+                {"Name", "SnapGroup_ConnectE"},
+              },
+              ["SECTION_ACTIVE"] = {"1",},
+              ["REMOVE"] = "SECTION"
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "SnapGroup_PanelE"},
+                {"Name", "SnapGroup_PanelS"},
+                {"Name", "SnapGroup_PanelW"},
+              },
+              ["SECTION_ACTIVE"] = {"2",},
+              ["REMOVE"] = "SECTION"
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "SnapGroup_RoomRoof"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["AUTO_GNH"] = "TRUE",
+              ["ADD"] =
 [[
 		<Property name="Children" value="TkSceneNodeData" _index="32">
       <Property name="Name" value="SnapGroup_ConnectN" />
@@ -707,158 +707,158 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "SnapGroup_RoomFloor"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransY", "0.000000"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL.SCENE.MBIN", "MODELS\ASTROSTATION\KORVAX\BRIDGE_GLASSWALL.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\KORVAX\BRIDGE_GLASSWALL.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name",     "MODELS\ASTROSTATION\KORVAX\BRIDGE_GLASSWALL"},
-                                {"NameHash", "95783057"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "SUB1WallLOD0", "Name", "MATERIAL"},
-                                {"Name", "SUB1WallLOD1", "Name", "MATERIAL"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL\PANEL_DOORCONNECT_TILINGTEXTURE_MAT.MATERIAL.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Glass2", "Name", "MATERIAL"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL\GLASSREFRACTIONMAT1.MATERIAL.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "Glass1", "Name", "LODLEVEL"},
-                                {"Name", "Glass2", "Name", "LODLEVEL"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "0"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "WATERPROXYMESH"},
-                            },
-                            ["REMOVE"] = "SECTION"
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\MAINROOMCUBE_FRAME.SCENE.MBIN", "MODELS\ASTROSTATION\VYKEEN\MAINROOMCUBE_FRAME_VYKEEN.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\VYKEEN\MAINROOMCUBE_FRAME_VYKEEN.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name",     "MODELS\ASTROSTATION\VYKEEN\MAINROOMCUBE_FRAME_VYKEEN"},
-                                {"NameHash", "2233434247"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "RefPowerIndicator1", "Name", "SCENEGRAPH"},
-                                {"Name", "RefPowerIndicator2", "Name", "SCENEGRAPH"},
-                                {"Name", "RefPowerIndicator3", "Name", "SCENEGRAPH"},
-                                {"Name", "RefPowerIndicator4", "Name", "SCENEGRAPH"},
-                                {"Name", "RefPowerIndicator",  "Name", "SCENEGRAPH"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\POWERINDICATOR.SCENE.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "RefSnapScene5", "Name", "SCENEGRAPH"},
-                                {"Name", "RefSnapScene6", "Name", "SCENEGRAPH"},
-                                {"Name", "RefSnapScene7", "Name", "SCENEGRAPH"},
-                                {"Name", "RefSnapScene8", "Name", "SCENEGRAPH"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\POWERLINE_CONNECTOR.SCENE.MBIN"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\LIGHTS\CEILINGLIGHT_RING.SCENE.MBIN", "MODELS\ASTROSTATION\KORVAX\FLOOR_RING.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\KORVAX\FLOOR_RING.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name",     "MODELS\ASTROSTATION\KORVAX\FLOOR_RING"},
-                                {"NameHash", "313769167"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "CeilingLight_Ring", "Name", "MATERIAL"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\SHIPSHOP\FLOORDARK_MAT.MATERIAL.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\LIGHTS\CEILINGLIGHT_RING|Collision"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransY", "0.000000"},
-                            }
-                        },
-                    }
-                },
-            }
-        }
-    },
-["ADD_FILES"] =
-    {
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "SnapGroup_RoomFloor"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransY", "0.000000"},
+              }
+            },
+          }
+        },
         {
-            ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LAYOUTS\LAYOUT_SCIENTIFIC.SCENE.MXML",
-            ["FILE_CONTENT"] =
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL.SCENE.MBIN", "MODELS\ASTROSTATION\KORVAX\BRIDGE_GLASSWALL.SCENE.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\KORVAX\BRIDGE_GLASSWALL.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Name",     "MODELS\ASTROSTATION\KORVAX\BRIDGE_GLASSWALL"},
+                {"NameHash", "95783057"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "SUB1WallLOD0", "Name", "MATERIAL"},
+                {"Name", "SUB1WallLOD1", "Name", "MATERIAL"},
+              },
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL\PANEL_DOORCONNECT_TILINGTEXTURE_MAT.MATERIAL.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "Glass2", "Name", "MATERIAL"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL\GLASSREFRACTIONMAT1.MATERIAL.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "Glass1", "Name", "LODLEVEL"},
+                {"Name", "Glass2", "Name", "LODLEVEL"},
+              },
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "0"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "WATERPROXYMESH"},
+              },
+              ["REMOVE"] = "SECTION"
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\MAINROOMCUBE_FRAME.SCENE.MBIN", "MODELS\ASTROSTATION\VYKEEN\MAINROOMCUBE_FRAME_VYKEEN.SCENE.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\VYKEEN\MAINROOMCUBE_FRAME_VYKEEN.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Name",     "MODELS\ASTROSTATION\VYKEEN\MAINROOMCUBE_FRAME_VYKEEN"},
+                {"NameHash", "2233434247"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "RefPowerIndicator1", "Name", "SCENEGRAPH"},
+                {"Name", "RefPowerIndicator2", "Name", "SCENEGRAPH"},
+                {"Name", "RefPowerIndicator3", "Name", "SCENEGRAPH"},
+                {"Name", "RefPowerIndicator4", "Name", "SCENEGRAPH"},
+                {"Name", "RefPowerIndicator",  "Name", "SCENEGRAPH"},
+              },
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\POWERINDICATOR.SCENE.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "RefSnapScene5", "Name", "SCENEGRAPH"},
+                {"Name", "RefSnapScene6", "Name", "SCENEGRAPH"},
+                {"Name", "RefSnapScene7", "Name", "SCENEGRAPH"},
+                {"Name", "RefSnapScene8", "Name", "SCENEGRAPH"},
+              },
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\POWERLINE_CONNECTOR.SCENE.MBIN"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\LIGHTS\CEILINGLIGHT_RING.SCENE.MBIN", "MODELS\ASTROSTATION\KORVAX\FLOOR_RING.SCENE.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSTATION\KORVAX\FLOOR_RING.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Name",     "MODELS\ASTROSTATION\KORVAX\FLOOR_RING"},
+                {"NameHash", "313769167"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "CeilingLight_Ring", "Name", "MATERIAL"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\SHIPSHOP\FLOORDARK_MAT.MATERIAL.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\LIGHTS\CEILINGLIGHT_RING|Collision"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransY", "0.000000"},
+              }
+            },
+          }
+        },
+      }
+    }
+  },
+["ADD_FILES"] =
+  {
+    {
+      ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LAYOUTS\LAYOUT_SCIENTIFIC.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1230,10 +1230,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LAYOUTS\LAYOUT_TRADER.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LAYOUTS\LAYOUT_TRADER.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1605,10 +1605,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LAYOUTS\LAYOUT_WARRIOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LAYOUTS\LAYOUT_WARRIOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1980,10 +1980,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMONGEK.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMONGEK.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3524,10 +3524,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMONKORVAX.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMONKORVAX.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5208,10 +5208,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMONVYKEEN.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMONVYKEEN.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -7088,10 +7088,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\ANIMATEDDOORMODULE.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\ANIMATEDDOORMODULE.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -7153,10 +7153,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -7218,10 +7218,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\LANDINGPAD1_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\LANDINGPAD1_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -7451,10 +7451,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\LANDINGPAD2_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\LANDINGPAD2_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -7544,10 +7544,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK1LANDINGPAD_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK1LANDINGPAD_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -7777,10 +7777,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK3LANDINGPAD_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK3LANDINGPAD_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -8066,10 +8066,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEKINTERIOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEKINTERIOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -8807,10 +8807,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEKLANDINGTUBEMODULE.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEKLANDINGTUBEMODULE.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -9040,10 +9040,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_CHAIR_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_CHAIR_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -9161,10 +9161,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_HEALTH_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_HEALTH_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -9282,10 +9282,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_MONITORSTATION_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_MONITORSTATION_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -9347,10 +9347,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_PLATFORM.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_PLATFORM.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11320,10 +11320,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_SAVEPOINT_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_SAVEPOINT_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11385,10 +11385,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_SHIELD_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_SHIELD_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11506,10 +11506,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_WINDOWMODULE.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GEK_WINDOWMODULE.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11627,10 +11627,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11692,10 +11692,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\PANELGLASSGEK_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\GEK\PANELGLASSGEK_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11757,10 +11757,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\CORRIDORCONNECTORKORVAX_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\CORRIDORCONNECTORKORVAX_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11838,10 +11838,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\CORRIDORKORVAX_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\CORRIDORKORVAX_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11931,10 +11931,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAXFRAME.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAXFRAME.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -12773,10 +12773,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAXINTERIOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAXINTERIOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14018,10 +14018,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14083,10 +14083,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAX_HEALTH_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAX_HEALTH_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14204,10 +14204,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAX_MONITORSTATION_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAX_MONITORSTATION_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14269,10 +14269,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAX_SAVEPOINT_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAX_SAVEPOINT_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14334,10 +14334,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAX_SHIELD_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\KORVAX_SHIELD_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14455,10 +14455,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\PANELGLASSKORVAX.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\PANELGLASSKORVAX.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14520,10 +14520,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\PANELGLASSUPPERKORVAX_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\PANELGLASSUPPERKORVAX_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14585,10 +14585,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\SUPPORTKORVAX_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\KORVAX\SUPPORTKORVAX_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14650,10 +14650,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14715,10 +14715,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14780,10 +14780,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14845,10 +14845,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\PANELGLASSVYKEEN_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\PANELGLASSVYKEEN_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14910,10 +14910,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -14975,10 +14975,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEENFRAME.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEENFRAME.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -15488,10 +15488,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEENINTERIOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEENINTERIOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -16509,10 +16509,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEENLANDINGPAD_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEENLANDINGPAD_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -16798,10 +16798,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_CHAIR_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_CHAIR_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -16919,10 +16919,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_DOORMODULE.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_DOORMODULE.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -17180,10 +17180,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_HEALTH_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_HEALTH_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -17301,10 +17301,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_MONITORSTATION_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_MONITORSTATION_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -17366,10 +17366,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_PLATFORM.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_PLATFORM.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -19471,10 +19471,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_SAVEPOINT_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_SAVEPOINT_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -19536,10 +19536,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_SHIELD_LOCATOR.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_SHIELD_LOCATOR.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -19657,10 +19657,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_WINDOWMODULE.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\ASTROSTATION\VYKEEN\VYKEEN_WINDOWMODULE.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -19778,6 +19778,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
     },
+  },
 }

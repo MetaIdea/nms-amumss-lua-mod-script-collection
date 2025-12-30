@@ -7,49 +7,49 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "MasterNetras Max Exocraft Slots",
 ["MOD_DESCRIPTION"] = "Enables and Maxs out both cargo and technology slots for exocraft.",
 ["MOD_AUTHOR"]      = "Masternetra",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "VehicleSmall",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinSlots",     CARGOSLOT},
-                                {"MaxSlots",     CARGOSLOT},
-                                {"MinTechSlots", TECHSLOT},
-                                {"MaxTechSlots", TECHSLOT},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "VehicleMedium",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinSlots",     CARGOSLOT},
-                                {"MaxSlots",     CARGOSLOT},
-                                {"MinTechSlots", TECHSLOT},
-                                {"MaxTechSlots", TECHSLOT},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "VehicleLarge",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinSlots",     CARGOSLOT},
-                                {"MaxSlots",     CARGOSLOT},
-                                {"MinTechSlots", TECHSLOT},
-                                {"MaxTechSlots", TECHSLOT},
-                            }
-                        },
-                    }
-                }
-            }
+              ["PRECEDING_KEY_WORDS"] = "VehicleSmall",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"MinSlots",     CARGOSLOT},
+                {"MaxSlots",     CARGOSLOT},
+                {"MinTechSlots", TECHSLOT},
+                {"MaxTechSlots", TECHSLOT},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = "VehicleMedium",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"MinSlots",     CARGOSLOT},
+                {"MaxSlots",     CARGOSLOT},
+                {"MinTechSlots", TECHSLOT},
+                {"MaxTechSlots", TECHSLOT},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = "VehicleLarge",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"MinSlots",     CARGOSLOT},
+                {"MaxSlots",     CARGOSLOT},
+                {"MinTechSlots", TECHSLOT},
+                {"MaxTechSlots", TECHSLOT},
+              }
+            },
+          }
         }
+      }
     }
+  }
 }

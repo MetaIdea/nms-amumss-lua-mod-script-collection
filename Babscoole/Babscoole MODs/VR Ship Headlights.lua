@@ -7,21 +7,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "VR Ship Headlights",
 ["MOD_AUTHOR"]      = "Mjjstral",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "Activate: Hold the right ship control lever and grab the left exit handle, Disable: Grab the left or right exit handle",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "_PlayerCharacter_Mesh"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+              ["SPECIAL_KEY_WORDS"] = {"Name", "_PlayerCharacter_Mesh"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="HEADLIGHTS" />
@@ -88,16 +88,16 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Children" />
     </Property>
 ]]
-                        }
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["ADD"] =
+            }
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Components"},
+              ["ADD"] =
 [[
     <Property name="Components" value="GcTriggerActionComponentData">
       <Property name="GcTriggerActionComponentData">
@@ -325,10 +325,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-                        }
-                    }
-                }
             }
+          }
         }
+      }
     }
+  }
 }

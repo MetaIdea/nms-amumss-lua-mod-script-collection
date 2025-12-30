@@ -14,89 +14,89 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "JEs Better Battery Charge",
 ["MOD_DESCRIPTION"] = "Adjusts ion battery, starship battery and life gel so they give full recharge on all difficulties.",
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "POWERCELL"}, -- Ion Battery
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ChargeValue", ChargeAmount}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHIPCHARGE"}, -- Starshield Battery
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ChargeValue", ChargeAmount}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "PRODFUEL2"}, -- Life Gel
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ChargeValue", ChargeAmount}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "LAUNCHFUEL"}, -- Starship Launch Fuel
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ChargeValue", LFChargeAmount}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "HYPERFUEL1"}, -- Warp Core
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ChargeValue", WCChargeAmount}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "HYPERFUEL2"}, -- Warp Hypercore
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ChargeValue", WHCChargeAmount}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "GRENFUEL1"}, -- Grenade Fuel
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ChargeValue", GFChargeAmount}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SUBFUEL"}, -- Nautilon Fuel
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ChargeValue", SFChargeAmount}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SPOOK_JUICE"}, -- Expedition 16 SpookJuice
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ChargeValue", SJChargeAmount}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "DRONE_SHARD"}, -- Radiant Crystal
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ChargeValue", DSChargeAmount}
-                            }
-                        }
-                    }
-                }
+              ["SPECIAL_KEY_WORDS"] = {"Id", "POWERCELL"}, -- Ion Battery
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ChargeValue", ChargeAmount}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "SHIPCHARGE"}, -- Starshield Battery
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ChargeValue", ChargeAmount}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "PRODFUEL2"}, -- Life Gel
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ChargeValue", ChargeAmount}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "LAUNCHFUEL"}, -- Starship Launch Fuel
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ChargeValue", LFChargeAmount}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "HYPERFUEL1"}, -- Warp Core
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ChargeValue", WCChargeAmount}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "HYPERFUEL2"}, -- Warp Hypercore
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ChargeValue", WHCChargeAmount}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "GRENFUEL1"}, -- Grenade Fuel
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ChargeValue", GFChargeAmount}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "SUBFUEL"}, -- Nautilon Fuel
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ChargeValue", SFChargeAmount}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "SPOOK_JUICE"}, -- Expedition 16 SpookJuice
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ChargeValue", SJChargeAmount}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "DRONE_SHARD"}, -- Radiant Crystal
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ChargeValue", DSChargeAmount}
+              }
             }
+          }
         }
+      }
     }
+  }
 }

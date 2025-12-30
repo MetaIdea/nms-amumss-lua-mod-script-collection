@@ -43,19 +43,19 @@ local A = colorTable[COLORCHOICE].A
 
 COLORNAME = ""
   if COLORCHOICE == 1 then
-      COLORNAME = "BLACK"
+    COLORNAME = "BLACK"
   elseif COLORCHOICE == 2 then
-      COLORNAME = "BLUE"
+    COLORNAME = "BLUE"
   elseif COLORCHOICE == 3 then
-      COLORNAME = "GREEN"
+    COLORNAME = "GREEN"
   elseif COLORCHOICE == 4 then
-      COLORNAME = "RED"
+    COLORNAME = "RED"
   elseif COLORCHOICE == 5 then
-      COLORNAME = "PINK"
+    COLORNAME = "PINK"
   elseif COLORCHOICE == 6 then
-      COLORNAME = "YELLOW"
+    COLORNAME = "YELLOW"
   elseif COLORCHOICE == 7 then
-      COLORNAME = "ORANGE"
+    COLORNAME = "ORANGE"
   end
 
 E_NOTICE = false

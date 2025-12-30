@@ -1,28 +1,31 @@
+WARPS = "99999"
+HOURS = "99999"
+
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "No Freighter Battles",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.10",
+["NMS_VERSION"]   = "6.18",
 ["MODIFICATIONS"] =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"WarpsBetweenBattles", "99999"},
-                                {"HoursBetweenBattles", "99999"}
-                            }
-                        }
-                    }
-                }
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"WarpsBetweenBattles", WARPS},
+                {"HoursBetweenBattles", HOURS},
+              }
             }
-        }
+          }
+        },
+      }
     }
+  }
 }

@@ -109,42 +109,42 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "More Upgradeable Slots",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds more upgradeable inventory, technology, and cargo slots to exocrafts, multitools, ships, and freighters",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinSlots",     120},
-                                {"MaxSlots",     120},
-                                {"MinTechSlots", 60},
-                                {"MaxTechSlots", 60}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry"},
-                            ["PRECEDING_KEY_WORDS"] = {"Bounds"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MaxWidthSmall",     10},
-                                {"MaxHeightSmall",    12},
-                                {"MaxWidthStandard",  10},
-                                {"MaxHeightStandard", 12}
-                            }
-                        },
-                    }
-                },
-            }
+              ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"MinSlots",     120},
+                {"MaxSlots",     120},
+                {"MinTechSlots", 60},
+                {"MaxTechSlots", 60}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Suit", "GcInventoryLayoutGenerationDataEntry"},
+              ["PRECEDING_KEY_WORDS"] = {"Bounds"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"MaxWidthSmall",     10},
+                {"MaxHeightSmall",    12},
+                {"MaxWidthStandard",  10},
+                {"MaxHeightStandard", 12}
+              }
+            },
+          }
         },
-    }
+      }
+    },
+  }
 }
 
 local InventoryTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]

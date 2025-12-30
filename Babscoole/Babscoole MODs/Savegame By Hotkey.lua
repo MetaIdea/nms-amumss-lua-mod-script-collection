@@ -3,37 +3,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Savegame By Hotkey",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
-["NMS_VERSION"]     = "6.16",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
-                            ["SEC_SAVE_TO"] = "ADD_ANIM",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_ANIM",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Anim",     "SAVEGAME"},
-                                {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
-                            ["PRECEDING_KEY_WORDS"] = {"Anims"},
-                            ["SEC_ADD_NAMED"] = "ADD_ANIM",
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] =
+              ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
+              ["SEC_SAVE_TO"] = "ADD_ANIM",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_ANIM",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Anim",     "SAVEGAME"},
+                {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
+              ["PRECEDING_KEY_WORDS"] = {"Anims"},
+              ["SEC_ADD_NAMED"] = "ADD_ANIM",
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Components"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["ADD"] =
 [[
     <Property name="Components" value="GcTriggerActionComponentData">
       <Property name="GcTriggerActionComponentData">
@@ -73,46 +73,46 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-                        }
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
-                            ["SEC_SAVE_TO"] = "ADD_EMOTE",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_EMOTE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Title",               "Save"},
-                                {"ChatText",            ""},
-                                {"ChatUsesPrefix",      "false"},
-                                {"EmoteID",             "SAVEGAME"},
-                                {"AnimationName",       "SAVEGAME"},
-                                {"Filename",            "TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS"},
-                                {"MoveToCancel",        "true"},
-                                {"RidingAnimationName", "SAVEGAME"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_EMOTE",
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER|collisionCapsule"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+            }
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
+              ["SEC_SAVE_TO"] = "ADD_EMOTE",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_EMOTE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Title",               "Save"},
+                {"ChatText",            ""},
+                {"ChatUsesPrefix",      "false"},
+                {"EmoteID",             "SAVEGAME"},
+                {"AnimationName",       "SAVEGAME"},
+                {"Filename",            "TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS"},
+                {"MoveToCancel",        "true"},
+                {"RidingAnimationName", "SAVEGAME"},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Emotes"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_EMOTE",
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER|collisionCapsule"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="REFSaveData" />
@@ -139,17 +139,17 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                    }
-                },
-            }
-        }
-    },
+            },
+          }
+        },
+      }
+    }
+  },
 ["ADD_FILES"] =
+  {
     {
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SAVE\ENTITIES\SAVE.ENTITY.MXML",
-            ["FILE_CONTENT"] =
+      ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SAVE\ENTITIES\SAVE.ENTITY.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 

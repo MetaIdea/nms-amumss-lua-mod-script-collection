@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]	  = "Ultimate_Production",
 ["MOD_DESCRIPTION"]	= "Freighter Production Enhancement",
 ["MOD_AUTHOR"]		  = "PyronoxOmega and Babscoole",
-["NMS_VERSION"]		  = "6.10",
+["NMS_VERSION"]		  = "6.18",
 ["MODIFICATIONS"]   = 
 	{
 		{

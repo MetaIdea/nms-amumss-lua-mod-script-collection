@@ -94,43 +94,43 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] = "Makes the npcs gifting dialogue stay open when gifting items to increase faction rep and also adds a gifting option for 5x",
 ["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\COSTTABLE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\COSTTABLE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_REP_TOKEN"},
-                            ["SEC_SAVE_TO"] = "ADD_COST",
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_BATTLE"},
-                            ["SEC_SAVE_TO"] = "ADD_REWARD",
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "ALL_REQUEST_STD_LOW"},
-                            ["SEC_SAVE_TO"] = "ADD_PUZZLE",
-                        },
-                    }
-                },
-            }
+              ["SPECIAL_KEY_WORDS"] = {"Id", "C_REP_TOKEN"},
+              ["SEC_SAVE_TO"] = "ADD_COST",
+            },
+          }
         },
-    }
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATE_BATTLE"},
+              ["SEC_SAVE_TO"] = "ADD_REWARD",
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "ALL_REQUEST_STD_LOW"},
+              ["SEC_SAVE_TO"] = "ADD_PUZZLE",
+            },
+          }
+        },
+      }
+    },
+  }
 }
 
 local CostTable        = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
@@ -154,8 +154,8 @@ for i = 1, #CostChanges do
       ["SPECIAL_KEY_WORDS"] = {"Cost" ,"GcCostProduct"},
       ["VALUE_CHANGE_TABLE"] =
       {
-         {"Id",     CostID},
-         {"Amount", Amount},
+       {"Id",     CostID},
+       {"Amount", Amount},
       }
     }
 
@@ -164,8 +164,8 @@ for i = 1, #CostChanges do
       ["SEC_EDIT"] = "ADD_COST",
       ["VALUE_CHANGE_TABLE"] =
       {
-         {"Id",                       NewID},
-         {"RemoveOptionIfCantAfford", Remove},
+       {"Id",                       NewID},
+       {"RemoveOptionIfCantAfford", Remove},
       }
     }
 
@@ -193,10 +193,10 @@ for i = 1, #RewardChanges do
       ["SEC_EDIT"] = "ADD_REWARD",
       ["VALUE_CHANGE_TABLE"] =
       {
-         {"Id",        NewID},
-         {"AlienRace", Race},
-         {"AmountMin", Amount},
-         {"AmountMax", Amount},
+        {"Id",        NewID},
+        {"AlienRace", Race},
+        {"AmountMin", Amount},
+        {"AmountMax", Amount},
       }
     }
 
@@ -235,8 +235,8 @@ for i = 1, #OptionChanges do
       ["SEC_EDIT"] = "ADD_PUZZLE",
       ["VALUE_CHANGE_TABLE"] =
       {
-         {"Cost",     NewCost},
-         {"KeepOpen", KeepOpen},
+        {"Cost",     NewCost},
+        {"KeepOpen", KeepOpen},
       }
     }
 
@@ -247,7 +247,7 @@ for i = 1, #OptionChanges do
       ["REPLACE_TYPE"] = "ONCEINSIDE",
       ["VALUE_CHANGE_TABLE"] =
       {
-         {"Rewards", Reward},
+        {"Rewards", Reward},
       }
     }
 

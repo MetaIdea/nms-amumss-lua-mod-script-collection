@@ -1,33 +1,33 @@
 PacksList =
 {
-    "Backpack",
-    "_Cape_Frigate",
-    "_Cape_Sandworm",
-    "_Cape_Jelly",
-    "_Cape_Freighter",
-    "_Cape_Infinity",
-    "_Cape_Pirate",
-    "_Cape_Atlas",
-    "_Cape_Proto",
-    "_Cape_Seed",
-    "_Cape_Ruin",
-    "_Chest_Vanilla",
-    "_Chest_Astro",
-    "_Chest_Gek",
-    "_Chest_Fourth",
-    "_Chest_Vykeen",
-    "_Chest_Apod",
-    "_Chest_Diving",
-    "_Chest_Ruin",
-    "_Chest_Builders1",
-    "_Chest_Builders2",
-    "_Chest_Builders3",
-    "_Chest_Builders4",
-    "_Chest_Classic",
+  "Backpack",
+  "_Cape_Frigate",
+  "_Cape_Sandworm",
+  "_Cape_Jelly",
+  "_Cape_Freighter",
+  "_Cape_Infinity",
+  "_Cape_Pirate",
+  "_Cape_Atlas",
+  "_Cape_Proto",
+  "_Cape_Seed",
+  "_Cape_Ruin",
+  "_Chest_Vanilla",
+  "_Chest_Astro",
+  "_Chest_Gek",
+  "_Chest_Fourth",
+  "_Chest_Vykeen",
+  "_Chest_Apod",
+  "_Chest_Diving",
+  "_Chest_Ruin",
+  "_Chest_Builders1",
+  "_Chest_Builders2",
+  "_Chest_Builders3",
+  "_Chest_Builders4",
+  "_Chest_Classic",
 }
 
 function GetPack(Pack)
-    return
+  return
 [[
                   <Property name="Action" value="GcNodeActivationAction">
                     <Property name="GcNodeActivationAction">
@@ -49,7 +49,7 @@ end
 PACKS_ADDING_ALL = {}
 
 for i=1,#PacksList,1 do
-    table.insert(PACKS_ADDING_ALL,GetPack(PacksList[i]))
+  table.insert(PACKS_ADDING_ALL,GetPack(PacksList[i]))
 end
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -57,36 +57,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Backpack Toggle",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
-["NMS_VERSION"]     = "6.16",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
+              ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
+              ["SEC_SAVE_TO"] = "ADD_ANIM",
+            },
+            {
+                ["SEC_EDIT"] = "ADD_ANIM",
+                ["VALUE_CHANGE_TABLE"] =
                 {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
-                            ["SEC_SAVE_TO"] = "ADD_ANIM",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_ANIM",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Anim",     "BACKPACK_TOGGLE"},
-                                {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
-                            ["PRECEDING_KEY_WORDS"] = {"Anims"},
-                            ["SEC_ADD_NAMED"] = "ADD_ANIM",
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["ADD"] =
+                  {"Anim",     "BACKPACK_TOGGLE"},
+                  {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
+                }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
+              ["PRECEDING_KEY_WORDS"] = {"Anims"},
+              ["SEC_ADD_NAMED"] = "ADD_ANIM",
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Components"},
+              ["ADD"] =
 [[
     <Property name="Components" value="GcTriggerActionComponentData">
       <Property name="GcTriggerActionComponentData">
@@ -125,46 +125,46 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-                        }
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
-                            ["SEC_SAVE_TO"] = "ADD_EMOTE",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_EMOTE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Title",               "Toggle Backpack"},
-                                {"ChatText",            ""},
-                                {"ChatUsesPrefix",      "false"},
-                                {"EmoteID",             "BACKPACK_TOGGLE"},
-                                {"AnimationName",       "BACKPACK_TOGGLE"},
-                                {"Filename",            "TEXTURES/UI/FRONTEND/COMPONENTS/CHARCUSTOMISE/BACKPACK.DDS"},
-                                {"MoveToCancel",        "true"},
-                                {"RidingAnimationName", "BACKPACK_TOGGLE"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_EMOTE",
-                        },
-                    }
-                },
             }
-        }
-    },
-["ADD_FILES"] =
-    {
+          }
+        },
         {
-            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
-            ["FILE_CONTENT"] =
+          ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
+              ["SEC_SAVE_TO"] = "ADD_EMOTE",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_EMOTE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Title",               "Toggle Backpack"},
+                {"ChatText",            ""},
+                {"ChatUsesPrefix",      "false"},
+                {"EmoteID",             "BACKPACK_TOGGLE"},
+                {"AnimationName",       "BACKPACK_TOGGLE"},
+                {"Filename",            "TEXTURES/UI/FRONTEND/COMPONENTS/CHARCUSTOMISE/BACKPACK.DDS"},
+                {"MoveToCancel",        "true"},
+                {"RidingAnimationName", "BACKPACK_TOGGLE"},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Emotes"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_EMOTE",
+            },
+          }
+        },
+      }
+    }
+  },
+["ADD_FILES"] =
+  {
+    {
+      ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -224,12 +224,13 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Has30HzFrames" value="false" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "LocTable.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "LocTable.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="TkLocalisationTable">
   <Property name="Table">
     <Property name="Table" value="TkLocalisationEntry">
@@ -275,6 +276,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-    }
+    },
+  }
 }

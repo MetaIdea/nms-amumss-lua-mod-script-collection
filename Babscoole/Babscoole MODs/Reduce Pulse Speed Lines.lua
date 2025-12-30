@@ -59,132 +59,132 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Reduce Pulse Speed Lines",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Reduce Speed Lines",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES.SPEEDLINE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES.SPEEDLINE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Number Of Particles", PJ1_Particles},
-                                {"Radius", PJ1_Radius},
-                                {"Length", PJ1_Length},
-                                {"Width", PJ1_Width},
-                                {"Alpha", PJ1_Alpha},
-                                {"RemoveCylinderRadius", PJ1_RemoveCylinderRadius},
-                            },
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES2.SPEEDLINE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Number Of Particles", PJ2_Particles},
-                                {"Radius", PJ2_Radius},
-                                {"Length", PJ2_Length},
-                                {"Width", PJ2_Width},
-                                {"Alpha", PJ2_Alpha},
-                                {"RemoveCylinderRadius", PJ2_RemoveCylinderRadius},
-                            },
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES3.SPEEDLINE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Number Of Particles", PJ3_Particles},
-                                {"Radius", PJ3_Radius},
-                                {"Length", PJ3_Length},
-                                {"Width", PJ3_Width},
-                                {"Alpha", PJ3_Alpha},
-                                {"RemoveCylinderRadius", PJ3_RemoveCylinderRadius},
-                            },
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES4.SPEEDLINE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Number Of Particles", PJ4_Particles},
-                                {"Radius", PJ4_Radius},
-                                {"Length", PJ4_Length},
-                                {"Width", PJ4_Width},
-                                {"Alpha", PJ4_Alpha},
-                                {"RemoveCylinderRadius", PJ4_RemoveCylinderRadius},
-                            },
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\SPACE.SPEEDLINE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Number Of Particles", C1_Particles},
-                                {"Radius", C1_Radius},
-                                {"Length", C1_Length},
-                                {"Width", C1_Width},
-                                {"Alpha", C1_Alpha},
-                                {"RemoveCylinderRadius", C1_RemoveCylinderRadius},
-                            },
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\SPACE2.SPEEDLINE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Number Of Particles", C2_Particles},
-                                {"Radius", C2_Radius},
-                                {"Length", C2_Length},
-                                {"Width", C2_Width},
-                                {"Alpha", C2_Alpha},
-                                {"RemoveCylinderRadius", C2_RemoveCylinderRadius},
-                            },
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\SPACEBIG.SPEEDLINE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Number Of Particles", CB_Particles},
-                                {"Radius", CB_Radius},
-                                {"Length", CB_Length},
-                                {"Width", CB_Width},
-                                {"Alpha", CB_Alpha},
-                                {"RemoveCylinderRadius", CB_RemoveCylinderRadius},
-                            },
-                        },
-                    }
-                },
-            }
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Number Of Particles", PJ1_Particles},
+                {"Radius", PJ1_Radius},
+                {"Length", PJ1_Length},
+                {"Width", PJ1_Width},
+                {"Alpha", PJ1_Alpha},
+                {"RemoveCylinderRadius", PJ1_RemoveCylinderRadius},
+              },
+            },
+          }
         },
-    }
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES2.SPEEDLINE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Number Of Particles", PJ2_Particles},
+                {"Radius", PJ2_Radius},
+                {"Length", PJ2_Length},
+                {"Width", PJ2_Width},
+                {"Alpha", PJ2_Alpha},
+                {"RemoveCylinderRadius", PJ2_RemoveCylinderRadius},
+              },
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES3.SPEEDLINE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Number Of Particles", PJ3_Particles},
+                {"Radius", PJ3_Radius},
+                {"Length", PJ3_Length},
+                {"Width", PJ3_Width},
+                {"Alpha", PJ3_Alpha},
+                {"RemoveCylinderRadius", PJ3_RemoveCylinderRadius},
+              },
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES4.SPEEDLINE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Number Of Particles", PJ4_Particles},
+                {"Radius", PJ4_Radius},
+                {"Length", PJ4_Length},
+                {"Width", PJ4_Width},
+                {"Alpha", PJ4_Alpha},
+                {"RemoveCylinderRadius", PJ4_RemoveCylinderRadius},
+              },
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\SPACE.SPEEDLINE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Number Of Particles", C1_Particles},
+                {"Radius", C1_Radius},
+                {"Length", C1_Length},
+                {"Width", C1_Width},
+                {"Alpha", C1_Alpha},
+                {"RemoveCylinderRadius", C1_RemoveCylinderRadius},
+              },
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\SPACE2.SPEEDLINE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Number Of Particles", C2_Particles},
+                {"Radius", C2_Radius},
+                {"Length", C2_Length},
+                {"Width", C2_Width},
+                {"Alpha", C2_Alpha},
+                {"RemoveCylinderRadius", C2_RemoveCylinderRadius},
+              },
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPEEDLINES\SPACEBIG.SPEEDLINE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Number Of Particles", CB_Particles},
+                {"Radius", CB_Radius},
+                {"Length", CB_Length},
+                {"Width", CB_Width},
+                {"Alpha", CB_Alpha},
+                {"RemoveCylinderRadius", CB_RemoveCylinderRadius},
+              },
+            },
+          }
+        },
+      }
+    },
+  }
 }

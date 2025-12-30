@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "SuperCharged AUTO MINER",
 ["MOD_AUTHOR"]      = "PyronoxOmega and Babscoole",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "SuperCharged Harvester with 9999  output in 30 secs",
 ["MODIFICATIONS"]   =
   {

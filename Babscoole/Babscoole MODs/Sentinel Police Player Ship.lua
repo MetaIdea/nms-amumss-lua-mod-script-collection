@@ -2,72 +2,72 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Sentinel Police Player Ship",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.16",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "Cockpitable sentinel police ship you can get via quick action emote menu action",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN", "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN", "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransY", "1.400000"},
-                                {"TransZ", "-1.500000"},
-                                {"ScaleX", "1.400000"},
-                                {"ScaleY", "1.400000"},
-                                {"ScaleZ", "1.400000"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip", "Name", "ATTACHMENT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", ""},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
-                            ["REMOVE"] = "SECTION",
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
-                            ["SEC_SAVE_TO"] = "ADD_ANIM",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_ANIM",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Anim",     "POLICE"},
-                                {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
-                            ["PRECEDING_KEY_WORDS"] = {"Anims"},
-                            ["SEC_ADD_NAMED"] = "ADD_ANIM",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Components", "GcPlayerEffectsComponentData"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+              ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransY", "1.400000"},
+                {"TransZ", "-1.500000"},
+                {"ScaleX", "1.400000"},
+                {"ScaleY", "1.400000"},
+                {"ScaleZ", "1.400000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip", "Name", "ATTACHMENT"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", ""},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
+              ["REMOVE"] = "SECTION",
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
+              ["SEC_SAVE_TO"] = "ADD_ANIM",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_ANIM",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Anim",     "POLICE"},
+                {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
+              ["PRECEDING_KEY_WORDS"] = {"Anims"},
+              ["SEC_ADD_NAMED"] = "ADD_ANIM",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Components", "GcPlayerEffectsComponentData"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
     <Property name="Components" value="GcTriggerActionComponentData">
       <Property name="GcTriggerActionComponentData">
@@ -129,45 +129,45 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-                        }
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
-                            ["SEC_SAVE_TO"] = "ADD_EMOTE",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_EMOTE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Title",               "Police"},
-                                {"ChatText",            ""},
-                                {"ChatUsesPrefix",      "false"},
-                                {"EmoteID",             "POLICE"},
-                                {"AnimationName",       "POLICE"},
-                                {"Filename",            "TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS"},
-                                {"MoveToCancel",        "true"},
-                                {"RidingAnimationName", "POLICE"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_EMOTE",
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
-                            ["ADD"] =
+            }
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
+              ["SEC_SAVE_TO"] = "ADD_EMOTE",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_EMOTE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Title",               "Police"},
+                {"ChatText",            ""},
+                {"ChatUsesPrefix",      "false"},
+                {"EmoteID",             "POLICE"},
+                {"AnimationName",       "POLICE"},
+                {"Filename",            "TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS"},
+                {"MoveToCancel",        "true"},
+                {"RidingAnimationName", "POLICE"},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Emotes"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_EMOTE",
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
+              ["ADD"] =
 [[
     <Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="POLICE" />
@@ -316,17 +316,17 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-                        }
-                    }
-                },
             }
-        }
-    },
+          }
+        },
+      }
+    }
+  },
 ["ADD_FILES"] =
+  {
     {
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.MXML",
-            ["FILE_CONTENT"] =
+      ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -349,10 +349,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -677,10 +677,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -740,10 +740,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Has30HzFrames" value="false" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "LocTable.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "LocTable.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkLocalisationTable">
@@ -791,6 +791,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-    }
+    },
+  }
 }

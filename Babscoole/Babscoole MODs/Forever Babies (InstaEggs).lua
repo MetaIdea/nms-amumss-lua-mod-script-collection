@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]	  = "Forever Babies (InstaEggs)",
 ["MOD_DESCRIPTION"]	= "Companions will stay as cute lil babies forever.",
 ["MOD_AUTHOR"]		  = "courtykat and Babscoole",
-["NMS_VERSION"]		  = "6.10",
+["NMS_VERSION"]		  = "6.18",
 ["MODIFICATIONS"]  	=
   {
 		{

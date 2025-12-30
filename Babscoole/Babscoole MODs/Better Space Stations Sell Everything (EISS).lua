@@ -19,14 +19,14 @@ BiggsBasicShop = {"B_COK_A","B_COK_B","B_COK_D","B_HAB_A","B_HAB_B","B_HAB_C","B
 --EDITABLE SECTION ENDS HERE
 
 function GetAPPROD(ID_NAME)
-return
+  return
 [[
 				<Property name="AlwaysPresentProducts" value="]] .. ID_NAME .. [[" />
 ]]
 end
 
 function GetAPSUB(ID_NAME)
-return
+  return
 [[
 				<Property name="AlwaysPresentSubstances" value="]] .. ID_NAME .. [[" />
 ]]
@@ -44,31 +44,31 @@ DEFAULTREALITY_ADDING_BiggsBasicShop = {}
 
 
 for i=1,#Products,1 do
-    table.insert(DEFAULTREALITY_ADDING_Products,GetAPPROD(Products[i]))
+  table.insert(DEFAULTREALITY_ADDING_Products,GetAPPROD(Products[i]))
 end
 for i=1,#ShipParts,1 do
-    table.insert(DEFAULTREALITY_ADDING_ShipParts,GetAPPROD(ShipParts[i]))
+  table.insert(DEFAULTREALITY_ADDING_ShipParts,GetAPPROD(ShipParts[i]))
 end
 for i=1,#Foods,1 do
-    table.insert(DEFAULTREALITY_ADDING_Foods,GetAPPROD(Foods[i]))
+  table.insert(DEFAULTREALITY_ADDING_Foods,GetAPPROD(Foods[i]))
 end
 for i=1,#Substances,1 do
-    table.insert(DEFAULTREALITY_ADDING_Substances,GetAPSUB(Substances[i]))
+  table.insert(DEFAULTREALITY_ADDING_Substances,GetAPSUB(Substances[i]))
 end
 for i=1,#WeapTechSpecialist,1 do
-    table.insert(DEFAULTREALITY_ADDING_WeapTechSpecialist,GetAPPROD(WeapTechSpecialist[i]))
+  table.insert(DEFAULTREALITY_ADDING_WeapTechSpecialist,GetAPPROD(WeapTechSpecialist[i]))
 end
 for i=1,#SuitTechSpecialist,1 do
-    table.insert(DEFAULTREALITY_ADDING_SuitTechSpecialist,GetAPPROD(SuitTechSpecialist [i]))
+  table.insert(DEFAULTREALITY_ADDING_SuitTechSpecialist,GetAPPROD(SuitTechSpecialist [i]))
 end
 for i=1,#ShipTechSpecialist,1 do
-    table.insert(DEFAULTREALITY_ADDING_ShipTechSpecialist,GetAPPROD(ShipTechSpecialist[i]))
+  table.insert(DEFAULTREALITY_ADDING_ShipTechSpecialist,GetAPPROD(ShipTechSpecialist[i]))
 end
 for i=1,#VehicleTechSpecialist,1 do
-    table.insert(DEFAULTREALITY_ADDING_VehicleTechSpecialist,GetAPPROD(VehicleTechSpecialist[i]))
+  table.insert(DEFAULTREALITY_ADDING_VehicleTechSpecialist,GetAPPROD(VehicleTechSpecialist[i]))
 end
 for i=1,#BiggsBasicShop,1 do
-    table.insert(DEFAULTREALITY_ADDING_BiggsBasicShop,GetAPPROD(BiggsBasicShop[i]))
+  table.insert(DEFAULTREALITY_ADDING_BiggsBasicShop,GetAPPROD(BiggsBasicShop[i]))
 end
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -79,142 +79,142 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "This mod adds the most of the items in game to the space station vendors.(All Products Version)",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"AlwaysPresentProducts", "CASING"},
-                            ["SEC_SAVE_TO"] = "GetProd",
-                        },
-                        {--Remove all optional products & substances found in shops.
-                            ["PRECEDING_KEY_WORDS"] =
-                            {
-                                {"TradeSettings", "SpaceStation",          "OptionalProducts"},
-                                {"TradeSettings", "SpaceStation",          "OptionalSubstances"},
-                                {"TradeSettings", "Shop",                  "OptionalProducts"},
-                                {"TradeSettings", "Shop",                  "OptionalSubstances"},
-                                {"TradeSettings", "TechShop",              "OptionalProducts"},
-                                {"TradeSettings", "ShipTechSpecialist",    "OptionalProducts"},
-                                {"TradeSettings", "SuitTechSpecialist",    "OptionalProducts"},
-                                {"TradeSettings", "WeapTechSpecialist",    "OptionalProducts"},
-                                {"TradeSettings", "VehicleTechSpecialist", "OptionalProducts"},
-                                {"TradeSettings", "SpaceStation",          "AlwaysPresentProducts"},
-                                {"TradeSettings", "SpaceStation",          "AlwaysPresentSubstances"},
-                                {"TradeSettings", "Shop",                  "AlwaysPresentProducts"},
-                                {"TradeSettings", "TechShop",              "AlwaysPresentProducts"},
-                                {"TradeSettings", "ShipTechSpecialist",    "AlwaysPresentProducts"},
-                                {"TradeSettings", "SuitTechSpecialist",    "AlwaysPresentProducts"},
-                                {"TradeSettings", "WeapTechSpecialist",    "AlwaysPresentProducts"},
-                                -- {"TradeSettings", "BiggsBarterShop",       "AlwaysPresentProducts"},
-                                -- {"TradeSettings", "BiggsBarterShop",       "AlwaysConsideredBarterProducts"},
-                            },
-                            ["CREATE_HOES"] = "TRUE",
-                        },
-                        {--Clear never sellable\offered item table(s).
-                            ["PRECEDING_KEY_WORDS"] =
-                            {
-                                {"NeverSellableItems"},
-                                {"NeverOfferedForSale"},
-                            },
-                            ["CREATE_HOES"] = "TRUE",
-                        },
-                        {--Add items & substances to shops.
-                            ["PRECEDING_KEY_WORDS"] =
-                            {
-                                {"TradeSettings", "SpaceStation", "AlwaysPresentProducts"},
-                                {"TradeSettings", "Shop",         "AlwaysPresentProducts"},
-                                {"TradeSettings", "TechShop",     "AlwaysPresentProducts"},
-                            },
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] = table.concat(DEFAULTREALITY_ADDING_Products)..table.concat(DEFAULTREALITY_ADDING_Foods)
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] =
-                            {
-                                {"TradeSettings", "SpaceStation", "AlwaysPresentSubstances"},
-                                {"TradeSettings", "Shop",         "AlwaysPresentSubstances"},
-                                {"TradeSettings", "TechShop",     "AlwaysPresentSubstances"},
-                            },
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] = table.concat(DEFAULTREALITY_ADDING_Substances)
-                        },
-                        {-- Ship Tech Specialist --
-                            ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "ShipTechSpecialist", "AlwaysPresentProducts"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] = table.concat(DEFAULTREALITY_ADDING_ShipTechSpecialist)..table.concat(DEFAULTREALITY_ADDING_ShipParts)
-                        },
-                        {-- Suit Tech Specialist --
-                            ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "SuitTechSpecialist", "AlwaysPresentProducts"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] = table.concat(DEFAULTREALITY_ADDING_SuitTechSpecialist)
-                        },
-                        {-- Weapon Tech Specialist --
-                            ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "WeapTechSpecialist", "AlwaysPresentProducts"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] = table.concat(DEFAULTREALITY_ADDING_WeapTechSpecialist)
-                        },
-                        {-- Vehicle Tech Specialist --
-                            ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "VehicleTechSpecialist", "AlwaysPresentProducts"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] = table.concat(DEFAULTREALITY_ADDING_VehicleTechSpecialist)
-                        },
-                        {-- Biggs Basic Shop --
-                            ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "BiggsBasicShop", "AlwaysPresentProducts"},
-                            ["ADD_OPTION"] = "ADDendSECTION",
-                            ["ADD"] = table.concat(DEFAULTREALITY_ADDING_BiggsBasicShop)
-                        },
-                        {--Amount of Products available
-                            ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Poor",    MinProductQuantity},
-                                {"Average", MinProductQuantity},
-                                {"Wealthy", MinProductQuantity},
-                                {"Pirate",  MinProductQuantity},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Poor",    MaxProductQuantity},
-                                {"Average", MaxProductQuantity},
-                                {"Wealthy", MaxProductQuantity},
-                                {"Pirate",  MaxProductQuantity},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Poor",    MinSubstanceQuantity},
-                                {"Average", MinSubstanceQuantity},
-                                {"Wealthy", MinSubstanceQuantity},
-                                {"Pirate",  MinSubstanceQuantity},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Poor",    MaxSubstanceQuantity},
-                                {"Average", MaxSubstanceQuantity},
-                                {"Wealthy", MaxSubstanceQuantity},
-                                {"Pirate",  MaxSubstanceQuantity},
-                            }
-                        },
-                    },
-                },
+              ["SPECIAL_KEY_WORDS"] = {"AlwaysPresentProducts", "CASING"},
+              ["SEC_SAVE_TO"] = "GetProd",
             },
+            {--Remove all optional products & substances found in shops.
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"TradeSettings", "SpaceStation",          "OptionalProducts"},
+                {"TradeSettings", "SpaceStation",          "OptionalSubstances"},
+                {"TradeSettings", "Shop",                  "OptionalProducts"},
+                {"TradeSettings", "Shop",                  "OptionalSubstances"},
+                {"TradeSettings", "TechShop",              "OptionalProducts"},
+                {"TradeSettings", "ShipTechSpecialist",    "OptionalProducts"},
+                {"TradeSettings", "SuitTechSpecialist",    "OptionalProducts"},
+                {"TradeSettings", "WeapTechSpecialist",    "OptionalProducts"},
+                {"TradeSettings", "VehicleTechSpecialist", "OptionalProducts"},
+                {"TradeSettings", "SpaceStation",          "AlwaysPresentProducts"},
+                {"TradeSettings", "SpaceStation",          "AlwaysPresentSubstances"},
+                {"TradeSettings", "Shop",                  "AlwaysPresentProducts"},
+                {"TradeSettings", "TechShop",              "AlwaysPresentProducts"},
+                {"TradeSettings", "ShipTechSpecialist",    "AlwaysPresentProducts"},
+                {"TradeSettings", "SuitTechSpecialist",    "AlwaysPresentProducts"},
+                {"TradeSettings", "WeapTechSpecialist",    "AlwaysPresentProducts"},
+                -- {"TradeSettings", "BiggsBarterShop",       "AlwaysPresentProducts"},
+                -- {"TradeSettings", "BiggsBarterShop",       "AlwaysConsideredBarterProducts"},
+              },
+              ["CREATE_HOES"] = "TRUE",
+            },
+            {--Clear never sellable\offered item table(s).
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"NeverSellableItems"},
+                {"NeverOfferedForSale"},
+              },
+              ["CREATE_HOES"] = "TRUE",
+            },
+            {--Add items & substances to shops.
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"TradeSettings", "SpaceStation", "AlwaysPresentProducts"},
+                {"TradeSettings", "Shop",         "AlwaysPresentProducts"},
+                {"TradeSettings", "TechShop",     "AlwaysPresentProducts"},
+              },
+              ["CREATE_HOS"] = "TRUE",
+              ["ADD"] = table.concat(DEFAULTREALITY_ADDING_Products)..table.concat(DEFAULTREALITY_ADDING_Foods)
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"TradeSettings", "SpaceStation", "AlwaysPresentSubstances"},
+                {"TradeSettings", "Shop",         "AlwaysPresentSubstances"},
+                {"TradeSettings", "TechShop",     "AlwaysPresentSubstances"},
+              },
+              ["CREATE_HOS"] = "TRUE",
+              ["ADD"] = table.concat(DEFAULTREALITY_ADDING_Substances)
+            },
+            {-- Ship Tech Specialist --
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "ShipTechSpecialist", "AlwaysPresentProducts"},
+              ["CREATE_HOS"] = "TRUE",
+              ["ADD"] = table.concat(DEFAULTREALITY_ADDING_ShipTechSpecialist)..table.concat(DEFAULTREALITY_ADDING_ShipParts)
+            },
+            {-- Suit Tech Specialist --
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "SuitTechSpecialist", "AlwaysPresentProducts"},
+              ["CREATE_HOS"] = "TRUE",
+              ["ADD"] = table.concat(DEFAULTREALITY_ADDING_SuitTechSpecialist)
+            },
+            {-- Weapon Tech Specialist --
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "WeapTechSpecialist", "AlwaysPresentProducts"},
+              ["CREATE_HOS"] = "TRUE",
+              ["ADD"] = table.concat(DEFAULTREALITY_ADDING_WeapTechSpecialist)
+            },
+            {-- Vehicle Tech Specialist --
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "VehicleTechSpecialist", "AlwaysPresentProducts"},
+              ["CREATE_HOS"] = "TRUE",
+              ["ADD"] = table.concat(DEFAULTREALITY_ADDING_VehicleTechSpecialist)
+            },
+            {-- Biggs Basic Shop --
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "BiggsBasicShop", "AlwaysPresentProducts"},
+              ["ADD_OPTION"] = "ADDendSECTION",
+              ["ADD"] = table.concat(DEFAULTREALITY_ADDING_BiggsBasicShop)
+            },
+            {--Amount of Products available
+              ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                  {"Poor",    MinProductQuantity},
+                  {"Average", MinProductQuantity},
+                  {"Wealthy", MinProductQuantity},
+                  {"Pirate",  MinProductQuantity},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                  {"Poor",    MaxProductQuantity},
+                  {"Average", MaxProductQuantity},
+                  {"Wealthy", MaxProductQuantity},
+                  {"Pirate",  MaxProductQuantity},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Poor",    MinSubstanceQuantity},
+                {"Average", MinSubstanceQuantity},
+                {"Wealthy", MinSubstanceQuantity},
+                {"Pirate",  MinSubstanceQuantity},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Poor",    MaxSubstanceQuantity},
+                {"Average", MaxSubstanceQuantity},
+                {"Wealthy", MaxSubstanceQuantity},
+                {"Pirate",  MaxSubstanceQuantity},
+              }
+            },
+          },
         },
+      },
     },
+  },
 }

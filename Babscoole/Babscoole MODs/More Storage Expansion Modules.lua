@@ -194,25 +194,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "More Storage Expansion Modules",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Increases the chance and amount of multitool, ship, and freighter storage modules rewards",
-["NMS_VERSION"]     = "6.16",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "WEAP_TOKEN", "List", "GcRewardTableItem"},
-                            ["SEC_SAVE_TO"] = "ADD_NewLoot",
-                        },-- RewardTable
-                    }
-                },
-            }
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WEAP_TOKEN", "List", "GcRewardTableItem"},
+              ["SEC_SAVE_TO"] = "ADD_NewLoot",
+            },-- RewardTable
+          }
         },
-    }
+      }
+    },
+  }
 }
 
 local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]

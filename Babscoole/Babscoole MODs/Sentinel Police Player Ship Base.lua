@@ -2,55 +2,55 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Sentinel Police Player Ship Base",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.16",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "This is just in case you already own the ship and don't need the menu interaction to get the ship anymore",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN", "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN", "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\POLICE.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransY", "1.400000"},
-                                {"TransZ", "-1.500000"},
-                                {"ScaleX", "1.400000"},
-                                {"ScaleY", "1.400000"},
-                                {"ScaleZ", "1.400000"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip", "Name", "ATTACHMENT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", ""},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
-                            ["REMOVE"] = "SECTION",
-                        },
-                    }
-                },
-            }
-        }
-    },
+              ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransY", "1.400000"},
+                {"TransZ", "-1.500000"},
+                {"ScaleX", "1.400000"},
+                {"ScaleY", "1.400000"},
+                {"ScaleZ", "1.400000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "PoliceShip", "Name", "ATTACHMENT"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", ""},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
+              ["REMOVE"] = "SECTION",
+            },
+          }
+        },
+      }
+    }
+  },
 ["ADD_FILES"] =
+  {
     {
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.MXML",
-            ["FILE_CONTENT"] =
+      ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.DESCRIPTOR.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -73,10 +73,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERPOLICE.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -401,6 +401,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-    }
+    },
+  }
 }

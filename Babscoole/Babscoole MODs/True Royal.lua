@@ -354,11 +354,11 @@ NEW_COLOR3 =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = "True Royal",
-  ["MOD_AUTHOR"]      = "courtycat and Babscoole",
-  ["MOD_DESCRIPTION"] = "Adds New colors to exotic ships",
-  ["NMS_VERSION"]     = "6.10",
-  ["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "True Royal",
+["MOD_AUTHOR"]      = "courtycat and Babscoole",
+["MOD_DESCRIPTION"] = "Adds New colors to exotic ships",
+["NMS_VERSION"]     = "6.18",
+["MODIFICATIONS"]   =
 	{
 		{
 			["MBIN_CHANGE_TABLE"] =

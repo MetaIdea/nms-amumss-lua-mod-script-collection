@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "No Atmo No Dust",
 ["MOD_AUTHOR"]      = "degraaaff & Babscoole",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "Removes flying dust (and optionally, fog) from no-atmosphere planets.",
 ["MODIFICATIONS"] =
   {

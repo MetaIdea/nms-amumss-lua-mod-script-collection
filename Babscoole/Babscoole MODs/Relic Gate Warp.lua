@@ -1,127 +1,127 @@
-REWARD_ICON     = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.WARPFIX.DDS"
-REWARD_TITLE    = "RELIC_GATE_WARP"
-REWARD_ABBR     = "RGW"
+REWARD_ICON  = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.WARPFIX.DDS"
+REWARD_TITLE = "RELIC_GATE_WARP"
+REWARD_ABBR  = "RGW"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Relic Gate Warp",
-["NMS_VERSION"]     = "6.16",
+["NMS_VERSION"]     = "6.18",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "WTFAI",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\POI\GATE_POI\ENTITIES\GATEPOI.ENTITY.MBIN",
+          ["MBIN_FS_DISCARD"] = "TRUE",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\POI\GATE_POI\ENTITIES\GATEPOI.ENTITY.MBIN",
-                    ["MBIN_FS_DISCARD"] = "TRUE",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Action", "GcWarpAction"},
-                            ["SEC_SAVE_TO"] = "ADD_REWARDACTION",
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\SPIDER_QUADRUPED\ENTITIES\SPIDERQUAD.ENTITY.MBIN",
-                    ["MBIN_FS_DISCARD"] = "TRUE",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData"},
-                            ["SEC_KEEP"] = "TRUE",
-                            ["SEC_SAVE_TO"] = "ADD_TRIGGER",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_TRIGGER",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"StateID",    "BOOT"},
-                                {"Anim",       REWARD_TITLE},
-                                {"FrameStart", "0"},
-                            }
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_TRIGGER",
-                            ["PRECEDING_KEY_WORDS"] = {"GcCameraShakeAction"},
-                            ["SECTION_UP"] = 1,
-                            ["SEC_KEEP"] = "TRUE",
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_TRIGGER",
-                            ["PRECEDING_KEY_WORDS"] = {"Action"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_REWARDACTION"
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
-                            ["SEC_SAVE_TO"] = "ADD_ANIM",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_ANIM",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Anim",     REWARD_TITLE},
-                                {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
-                            ["PRECEDING_KEY_WORDS"] = {"Anims"},
-                            ["SEC_ADD_NAMED"] = "ADD_ANIM",
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["SEC_ADD_NAMED"] = "ADD_TRIGGER",
-                        }
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
-                            ["SEC_SAVE_TO"] = "ADD_EMOTE",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_EMOTE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Title",               REWARD_TITLE},
-                                {"ChatText",            ""},
-                                {"ChatUsesPrefix",      "false"},
-                                {"EmoteID",             "EMOTE_" .. REWARD_ABBR},
-                                {"AnimationName",       REWARD_TITLE},
-                                {"Filename",            REWARD_ICON},
-                                {"MoveToCancel",        "true"},
-                                {"RidingAnimationName", REWARD_TITLE},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_EMOTE",
-                        },
-                    }
-                },
-            }
-        }
-    },
-["ADD_FILES"] =
-    {
+              ["SPECIAL_KEY_WORDS"] = {"Action", "GcWarpAction"},
+              ["SEC_SAVE_TO"] = "ADD_REWARDACTION",
+            },
+          }
+        },
         {
-            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
-            ["FILE_CONTENT"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\SPIDER_QUADRUPED\ENTITIES\SPIDERQUAD.ENTITY.MBIN",
+          ["MBIN_FS_DISCARD"] = "TRUE",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData"},
+              ["SEC_KEEP"] = "TRUE",
+              ["SEC_SAVE_TO"] = "ADD_TRIGGER",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_TRIGGER",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"StateID",    "BOOT"},
+                {"Anim",       REWARD_TITLE},
+                {"FrameStart", "0"},
+              }
+            },
+            {
+              ["SEC_EDIT"] = "ADD_TRIGGER",
+              ["PRECEDING_KEY_WORDS"] = {"GcCameraShakeAction"},
+              ["SECTION_UP"] = 1,
+              ["SEC_KEEP"] = "TRUE",
+              ["REMOVE"] = "SECTION"
+            },
+            {
+              ["SEC_EDIT"] = "ADD_TRIGGER",
+              ["PRECEDING_KEY_WORDS"] = {"Action"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_REWARDACTION"
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
+              ["SEC_SAVE_TO"] = "ADD_ANIM",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_ANIM",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Anim",     REWARD_TITLE},
+                {"Filename", "MODELS/TESTS/EFFECTTEST.ANIM.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
+              ["PRECEDING_KEY_WORDS"] = {"Anims"},
+              ["SEC_ADD_NAMED"] = "ADD_ANIM",
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Components"},
+              ["SEC_ADD_NAMED"] = "ADD_TRIGGER",
+            }
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},
+              ["SEC_SAVE_TO"] = "ADD_EMOTE",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_EMOTE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Title",               REWARD_TITLE},
+                {"ChatText",            ""},
+                {"ChatUsesPrefix",      "false"},
+                {"EmoteID",             "EMOTE_" .. REWARD_ABBR},
+                {"AnimationName",       REWARD_TITLE},
+                {"Filename",            REWARD_ICON},
+                {"MoveToCancel",        "true"},
+                {"RidingAnimationName", REWARD_TITLE},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"Emotes"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_EMOTE",
+            },
+          }
+        },
+      }
+    }
+  },
+["ADD_FILES"] =
+  {
+    {
+      ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -181,10 +181,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Has30HzFrames" value="false" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "LocTable.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "LocTable.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkLocalisationTable">
@@ -232,6 +232,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-        },
-    }
+    },
+  }
 }

@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Flappys Return",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "Flapping wings on Exotics",
 ["MODIFICATIONS"]   =
   {

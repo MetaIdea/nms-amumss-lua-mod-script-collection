@@ -26,14 +26,15 @@ while COLORCHOICE do
   end
 end
 
-local colorTable = {
-  {R = 0.000, G = 0.000, B = 0.000, A = 0.4},
-  {R = 0.000, G = 0.384, B = 0.906, A = 0.4},
-  {R = 0.055, G = 0.792, B = 0.004, A = 0.4},
-  {R = 0.875, G = 0.188, B = 0.188, A = 0.4},
-  {R = 1.000, G = 0.078, B = 0.576, A = 0.4},
-  {R = 1.000, G = 0.984, B = 0.000, A = 0.4},
-  {R = 0.910, G = 0.431, B = 0.000, A = 0.4},
+local colorTable =
+{
+  {R = 0.000000, G = 0.000000, B = 0.000000, A = 0.400000},
+  {R = 0.000000, G = 0.384000, B = 0.906000, A = 0.400000},
+  {R = 0.055000, G = 0.792000, B = 0.004000, A = 0.400000},
+  {R = 0.875000, G = 0.188000, B = 0.188000, A = 0.400000},
+  {R = 1.000000, G = 0.078000, B = 0.576000, A = 0.400000},
+  {R = 1.000000, G = 0.984000, B = 0.000000, A = 0.400000},
+  {R = 0.910000, G = 0.431000, B = 0.000000, A = 0.400000},
 }
 
 local R = colorTable[COLORCHOICE].R
@@ -43,19 +44,19 @@ local A = colorTable[COLORCHOICE].A
 
 COLORNAME = ""
   if COLORCHOICE == 1 then
-      COLORNAME = "BLACK"
+    COLORNAME = "BLACK"
   elseif COLORCHOICE == 2 then
-      COLORNAME = "BLUE"
+    COLORNAME = "BLUE"
   elseif COLORCHOICE == 3 then
-      COLORNAME = "GREEN"
+    COLORNAME = "GREEN"
   elseif COLORCHOICE == 4 then
-      COLORNAME = "RED"
+    COLORNAME = "RED"
   elseif COLORCHOICE == 5 then
-      COLORNAME = "PINK"
+    COLORNAME = "PINK"
   elseif COLORCHOICE == 6 then
-      COLORNAME = "YELLOW"
+    COLORNAME = "YELLOW"
   elseif COLORCHOICE == 7 then
-      COLORNAME = "ORANGE"
+    COLORNAME = "ORANGE"
   end
 
 E_NOTICE = false
@@ -67,187 +68,186 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "Custom Binoc Panels-"..COLORNAME,
 ["MOD_AUTHOR"]              = "Babscoole & Exosolar",
-["NMS_VERSION"]             = "6.10",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["NMS_VERSION"]             = "6.18",
 ["MODIFICATIONS"]           =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "UI\HUD\BINOCULARS\HUDBINOCSLEFTPANEL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "UI\HUD\BINOCULARS\HUDBINOCSLEFTPANEL.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Children", "GcNGuiGraphicData"},
-                            ["SECTION_ACTIVE"] = 14,
-                            ["SEC_SAVE_TO"] = "ADD_PANEL",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_PANEL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Position X",       "22"},
-                                {"Position Y",       "21.3"},
-                                {"Width",            "433"},
-                                {"Height",           "520"},
-                                {"Width Percentage", "false"},
-                                {"AnchorPercent",    "true"},
-                            }
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_PANEL",
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Corner Radius", "8"},
-                                {"Stroke Size",   "1"},
-                            }
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_PANEL",
-                            ["PRECEDING_KEY_WORDS"] = {"Stroke Colour"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"A", "0"},
-                            }
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_PANEL",
-                            ["PRECEDING_KEY_WORDS"] = {"Colour"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"R", R},
-                                {"G", G},
-                                {"B", B},
-                                {"A", A},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"ID", "BINOCS_LEFT"},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_PANEL",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"ID", "HAZARD_VIEW"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Position X", "154"},
-                            }
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_PANEL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Position Y", "29.4"},
-                                {"Height",     "220"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"ID", "SURVEY_LEFT"},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_PANEL",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_PANEL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Position Y", "28"},
-                                {"Height",     "320"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"ID", "MISSURVEY_LEFT"},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_PANEL",
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "UI\HUD\BINOCULARS\HUDBINOCSRIGHTPANEL.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Children", "GcNGuiGraphicData"},
-                            ["SECTION_ACTIVE"] = 6,
-                            ["SEC_SAVE_TO"] = "ADD_PANEL",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_PANEL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Is Hidden",         "false"},
-                                {"Position X",        "0"},
-                                {"Position Y",        "0"},
-                                {"Width",             "396"},
-                                {"Height",            "226"},
-                                {"Width Percentage",  "false"},
-                                {"Height Percentage", "false"},
-                            }
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_PANEL",
-                            ["PRECEDING_KEY_WORDS"] = {"Stroke Colour"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"A", "0"},
-                            }
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_PANEL",
-                            ["PRECEDING_KEY_WORDS"] = {"Colour"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"R", R},
-                                {"G", G},
-                                {"B", B},
-                                {"A", A},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"ID", "MINERAL_VIEW"},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_PANEL",
-                        },
-                    }
-                },
-            }
+              ["SPECIAL_KEY_WORDS"] = {"Children", "GcNGuiGraphicData"},
+              ["SECTION_ACTIVE"] = 14,
+              ["SEC_SAVE_TO"] = "ADD_PANEL",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_PANEL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Position X",       "22.000000"},
+                {"Position Y",       "21.300000"},
+                {"Width",            "433.000000"},
+                {"Height",           "520.000000"},
+                {"Width Percentage", "false"},
+                {"AnchorPercent",    "true"},
+              }
+            },
+            {
+              ["SEC_EDIT"] = "ADD_PANEL",
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Corner Radius", "8.000000"},
+                {"Stroke Size",   "1.000000"},
+              }
+            },
+            {
+              ["SEC_EDIT"] = "ADD_PANEL",
+              ["PRECEDING_KEY_WORDS"] = {"Stroke Colour"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"A", "0.000000"},
+              }
+            },
+            {
+              ["SEC_EDIT"] = "ADD_PANEL",
+              ["PRECEDING_KEY_WORDS"] = {"Colour"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"R", R},
+                {"G", G},
+                {"B", B},
+                {"A", A},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "BINOCS_LEFT"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_PANEL",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "HAZARD_VIEW"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Position X", "154.000000"},
+              }
+            },
+            {
+              ["SEC_EDIT"] = "ADD_PANEL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Position Y", "29.400000"},
+                {"Height",     "220.000000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "SURVEY_LEFT"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_PANEL",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_PANEL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Position Y", "28.000000"},
+                {"Height",     "320.000000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "MISSURVEY_LEFT"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_PANEL",
+            },
+          }
         },
-    }
+        {
+          ["MBIN_FILE_SOURCE"] = "UI\HUD\BINOCULARS\HUDBINOCSRIGHTPANEL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Children", "GcNGuiGraphicData"},
+              ["SECTION_ACTIVE"] = 6,
+              ["SEC_SAVE_TO"] = "ADD_PANEL",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_PANEL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Is Hidden",         "false"},
+                {"Position X",        "0.000000"},
+                {"Position Y",        "0.000000"},
+                {"Width",             "396.000000"},
+                {"Height",            "226.000000"},
+                {"Width Percentage",  "false"},
+                {"Height Percentage", "false"},
+              }
+            },
+            {
+              ["SEC_EDIT"] = "ADD_PANEL",
+              ["PRECEDING_KEY_WORDS"] = {"Stroke Colour"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"A", "0.000000"},
+              }
+            },
+            {
+              ["SEC_EDIT"] = "ADD_PANEL",
+              ["PRECEDING_KEY_WORDS"] = {"Colour"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"R", R},
+                {"G", G},
+                {"B", B},
+                {"A", A},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "MINERAL_VIEW"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_PANEL",
+            },
+          }
+        },
+      }
+    },
+  }
 }
 
 local LEFTTABLE = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 if E_NOTICE then
 
-    LEFTTABLE[#LEFTTABLE +1] =
-    {-- Hide "Press E to place Custom Marker" notification. (C) Balzhur
-        ["SPECIAL_KEY_WORDS"] = {"Text",  "CUSTOM_HINT"},
-				["VALUE_CHANGE_TABLE"] =
-        {
-					{"Is Hidden",	"true"} -- Original "false"
-				}
+  LEFTTABLE[#LEFTTABLE +1] =
+  {-- Hide "Press E to place Custom Marker" notification. (C) Balzhur
+    ["SPECIAL_KEY_WORDS"] = {"Text",  "CUSTOM_HINT"},
+    ["VALUE_CHANGE_TABLE"] =
+    {
+      {"Is Hidden", "true"} -- Original "false"
     }
+  }
 
-    LEFTTABLE[#LEFTTABLE +1] =
-    {-- Hide "Press E to place Custom Marker" notification. (C) Balzhur
-        ["SPECIAL_KEY_WORDS"] = {"Image", "/TEXTURES/UI/HUD/ICONS/SCANNING/DECSLASH.DDS"},
-				["SECTION_UP_SPECIAL"] = 1,
-				["PRECEDING_KEY_WORDS"] = {"Children"},
-				["VALUE_CHANGE_TABLE"] =
-        {
-					{"Is Hidden",	"true"} -- Original "false"
-				}
+  LEFTTABLE[#LEFTTABLE +1] =
+  {-- Hide "Press E to place Custom Marker" notification. (C) Balzhur
+    ["SPECIAL_KEY_WORDS"] = {"Image", "/TEXTURES/UI/HUD/ICONS/SCANNING/DECSLASH.DDS"},
+    ["SECTION_UP_SPECIAL"] = 1,
+    ["PRECEDING_KEY_WORDS"] = {"Children"},
+    ["VALUE_CHANGE_TABLE"] =
+    {
+      {"Is Hidden", "true"} -- Original "false"
     }
+  }
 end

@@ -3,7 +3,7 @@ modName		= "Perfect Upgrade Modules"
 batchName	= ""
 modAuthor	= "DarkScythe & Babscoole"
 modDesc		= "Overrides all upgrade modules to have the best possible vanilla stats, with optional custom power scaling"
-gameVer		= "6.16"
+gameVer		= "6.18"
 
 --[[
 Enter a number here to set the approximate Power Scaling of upgrade module stats

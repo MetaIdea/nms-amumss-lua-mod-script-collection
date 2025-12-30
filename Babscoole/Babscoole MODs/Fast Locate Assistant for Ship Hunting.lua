@@ -2,7 +2,7 @@ modName		= "Fast Locate Assistant for Ship Hunting"
 batchName	= ""
 modAuthor	= "DarkScythe & Babscoole"
 modDesc		= "Speeds up ship hunting by filtering to specific types and increases spawn rates WITHOUT affecting default seeds so you get the same ships as vanilla players in every system. Helpful for players who want to share coordinates of interesting finds with others."
-gameVer		= "6.16"
+gameVer		= "6.18"
 -- Credits --
 -- Thanks to Lenni and Apex Fatality for the idea of isolating ship models.
 -- Thanks to Gumsk for the idea of speeding up NPC spawns.

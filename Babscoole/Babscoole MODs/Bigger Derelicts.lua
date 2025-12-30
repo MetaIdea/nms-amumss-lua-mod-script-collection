@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Bigger Derelicts",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "Spawns larger derelict freighter with more and bigger rooms.",
 ["MODIFICATIONS"]   =
 	{

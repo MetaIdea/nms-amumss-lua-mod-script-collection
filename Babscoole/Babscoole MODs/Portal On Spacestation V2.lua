@@ -2,170 +2,170 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "+Portal On Spacestation V2",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
-["NMS_VERSION"]     = "6.10",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "Adds portal to new, old, abandoned, and pirate space stations",
 ["MODIFICATIONS"]   =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
-            {
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL.SCENE.MBIN", "CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIOR_ABAND.SCENE.MBIN",
-                    ["MBIN_FS_DISCARD"] = "TRUE",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Dock3C"},
-                            ["SEC_SAVE_TO"] = "ADD_NODE",
-                        },
-                        {
-                            ["SEC_EDIT"] = "ADD_NODE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name",     "SpacestationPortal"},
-                                {"NameHash", "3101089239"},
-                                {"ScaleX",   "0.50"},
-                                {"ScaleY",   "0.50"},
-                                {"ScaleZ",   "0.50"},
-                                {"Value",    "CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SEC_EDIT"] = "ADD_NODE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransX",   "-32"},
-                                {"TransY",   "0"},
-                                {"TransZ",   "160"},
-                                {"RotY",     "90"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MainHallModule"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_NODE",
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\BACK_SECTION.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SEC_EDIT"] = "ADD_NODE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransX",   "-44"},
-                                {"TransY",   "-.09"},
-                                {"TransZ",   "-37"},
-                                {"RotY",     "59"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "_SpaceStation_"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["SEC_ADD_NAMED"] = "ADD_NODE",
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION_ABANDONED.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SEC_EDIT"] = "ADD_NODE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransX",   "-31"},
-                                {"TransY",   "0"},
-                                {"TransZ",   "130"},
-                                {"RotY",     "90"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Wall_Section"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["SEC_ADD_NAMED"] = "ADD_NODE",
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION_PIRATE.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SEC_EDIT"] = "ADD_NODE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"TransX",   "-7"},
-                                {"TransY",   "0"},
-                                {"TransZ",   "185"},
-                                {"RotY",     "90"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Wall_Section"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["SEC_ADD_NAMED"] = "ADD_NODE",
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "PortalStructure"},
-                            ["VCT"] =
-                            {
-                                {"ScaleY", "0.3"},
-                                {"ScaleZ", "0.75"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "Base"},
-                                {"Name", "PillarsB"},
-                                {"Name", "PillarsA"},
-                                -- {"Name", "REFPortalMistVFX"},
-                                -- {"Name", "REFPortalCloudsVFX"},
-                                {"Name", "_Clump1"},
-                                {"Name", "_Clump2"},
-                                {"Name", "_Clump3"},
-                                {"Name", "_Clump4"},
-                                {"Name", "_Clump5"},
-                                {"Name", "_Clump6"},
-                            },
-                            ["REMOVE"] = "SECTION",
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\BUTTON.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Components", "GcMaintenanceComponentData"},
-                            ["REMOVE"] = "SECTION",
-                        }
-                    }
-                },
-            }
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL.SCENE.MBIN", "CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN", "REMOVE"},
+          },
         },
-    }
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIOR_ABAND.SCENE.MBIN",
+          ["MBIN_FS_DISCARD"] = "TRUE",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "Dock3C"},
+              ["SEC_SAVE_TO"] = "ADD_NODE",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_NODE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Name",     "SpacestationPortal"},
+                {"NameHash", "3101089239"},
+                {"ScaleX",   "0.500000"},
+                {"ScaleY",   "0.500000"},
+                {"ScaleZ",   "0.500000"},
+                {"Value",    "CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SEC_EDIT"] = "ADD_NODE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransX", "-32.000000"},
+                {"TransY", "0.000000"},
+                {"TransZ", "160.000000"},
+                {"RotY",   "90.000000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MainHallModule"},
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_NODE",
+            },
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\BACK_SECTION.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SEC_EDIT"] = "ADD_NODE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransX", "-44.000000"},
+                {"TransY", "-.090000"},
+                {"TransZ", "-37.000000"},
+                {"RotY",   "59.000000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "_SpaceStation_"},
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_NODE",
+            },
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION_ABANDONED.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SEC_EDIT"] = "ADD_NODE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransX", "-31.000000"},
+                {"TransY", "0.000000"},
+                {"TransZ", "130.000000"},
+                {"RotY",   "90.000000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "Wall_Section"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["SEC_ADD_NAMED"] = "ADD_NODE",
+            },
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION_PIRATE.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SEC_EDIT"] = "ADD_NODE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransX", "-7.000000"},
+                {"TransY", "0.000000"},
+                {"TransZ", "185.000000"},
+                {"RotY",   "90.000000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "Wall_Section"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["SEC_ADD_NAMED"] = "ADD_NODE",
+            },
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "PortalStructure"},
+              ["VCT"] =
+              {
+                {"ScaleY", "0.300000"},
+                {"ScaleZ", "0.750000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "Base"},
+                {"Name", "PillarsB"},
+                {"Name", "PillarsA"},
+                -- {"Name", "REFPortalMistVFX"},
+                -- {"Name", "REFPortalCloudsVFX"},
+                {"Name", "_Clump1"},
+                {"Name", "_Clump2"},
+                {"Name", "_Clump3"},
+                {"Name", "_Clump4"},
+                {"Name", "_Clump5"},
+                {"Name", "_Clump6"},
+              },
+              ["REMOVE"] = "SECTION",
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\BUTTON.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Components", "GcMaintenanceComponentData"},
+              ["REMOVE"] = "SECTION",
+            }
+          }
+        },
+      }
+    },
+  }
 }

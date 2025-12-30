@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Goop BeGone Derelict",
 ["MOD_DESCRIPTION"] = "Remove trypophobia triggers from Dereleict freighters.",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.16",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
   {
     {
