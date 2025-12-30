@@ -1568,6 +1568,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]       = "Mjjstral and Babscoole",
 ["MOD_CONTRIBUTORS"] = "Ignacio and GhostRick",
 ["NMS_VERSION"]      = "6.18",
+["MOD_DESCRIPTION"]  = "To remove UBB added objects that you can't delete through the build menu",
 ["ADD_FILES"]        = ADD_FILES_TABLE,
 ["MODIFICATIONS"]    =
   {

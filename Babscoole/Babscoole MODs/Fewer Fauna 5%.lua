@@ -2,10 +2,11 @@ MULTIPLIER = 0.005
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Fewer Fauna 5%",
-["MOD_AUTHOR"]    = "courtykat and Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Fewer Fauna 5%",
+["MOD_AUTHOR"]      = "courtykat and Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Reduces creatures' spawn frequency",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

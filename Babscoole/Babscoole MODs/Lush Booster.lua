@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Lush Booster",
-["MOD_AUTHOR"]    = "Exosolar & Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Lush Booster",
+["MOD_AUTHOR"]      = "Exosolar & Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Transform half of all planets into the type of your choice",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

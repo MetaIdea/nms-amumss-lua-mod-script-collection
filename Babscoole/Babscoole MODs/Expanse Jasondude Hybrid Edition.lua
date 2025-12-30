@@ -3158,10 +3158,11 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Expanse Jasondude Hybrid Edition",
-["MOD_AUTHOR"]    = "Exosolar & Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Expanse Jasondude Hybrid Edition",
+["MOD_AUTHOR"]      = "Exosolar & Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Combines both Exosolar's Expanse and Jasondude's custom space palettes",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

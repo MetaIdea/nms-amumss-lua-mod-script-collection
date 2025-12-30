@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "TrueColor-PastelBW",
-["MOD_AUTHOR"]    = "courtykat",
-["LUA_AUTHOR"]    = "Babscoole, and courtykat",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "TrueColor-PastelBW",
+["MOD_AUTHOR"]      = "courtykat",
+["LUA_AUTHOR"]      = "Babscoole, and courtykat",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Improves the color palettes of all standard starships, living ships, freighters, and customizable paints",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

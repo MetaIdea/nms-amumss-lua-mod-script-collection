@@ -86,10 +86,11 @@ HANGLAMP3        = GetBlock("pointLight17", "1008033010", "0.000000",  "0.500000
 --Add WALLIGHT01, FIREFLYTUBE, STANDLIGHT_SMALL, BARSIGN
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Lumen",
-["MOD_AUTHOR"]              = "Exosolar and Babscoole",
-["NMS_VERSION"]             = "6.18",
-["MODIFICATIONS"]           =
+["MOD_FILENAME"]    = "Lumen",
+["MOD_AUTHOR"]      = "Exosolar and Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Makes many of the buildable light sources produce far more light and directional",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

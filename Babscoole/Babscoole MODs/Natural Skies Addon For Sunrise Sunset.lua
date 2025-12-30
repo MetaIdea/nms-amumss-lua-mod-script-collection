@@ -11,10 +11,11 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Natural Skies Addon For Sunrise Sunset",
-["MOD_AUTHOR"]    = "degraaaff & Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Natural Skies Addon For Sunrise Sunset",
+["MOD_AUTHOR"]      = "degraaaff & Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "More natural sunrise\sunsets",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

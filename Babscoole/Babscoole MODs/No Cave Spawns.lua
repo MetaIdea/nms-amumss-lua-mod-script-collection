@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "No Cave Spawns",
-["MOD_AUTHOR"]    = "courtykat and Babscoole",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "No Cave Spawns",
+["MOD_AUTHOR"]      = "courtykat and Babscoole",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Underground creatures will cease to exist",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

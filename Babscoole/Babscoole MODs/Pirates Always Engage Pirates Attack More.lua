@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]  = "Pirates Always Engage Pirates Attack More",
-["MOD_AUTHOR"]    = "DeathWrench",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] = 
+["MOD_FILENAME"]    = "Pirates Always Engage Pirates Attack More",
+["MOD_AUTHOR"]      = "DeathWrench",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "This fixes a problem with having negative cargo value and never being attacked by pirates",
+["MODIFICATIONS"]   = 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] = 

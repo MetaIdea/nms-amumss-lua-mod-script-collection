@@ -40,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ALL",
               ["VALUE_CHANGE_TABLE"] =
               {
-                  {"MatchGroundColour",  "true"},
+                {"MatchGroundColour", "true"},
               }
             }
           }

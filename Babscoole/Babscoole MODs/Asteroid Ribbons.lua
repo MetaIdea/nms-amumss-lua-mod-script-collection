@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Asteroid Ribbons",
-["MOD_AUTHOR"]    = "Exosolar & Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Asteroid Ribbons",
+["MOD_AUTHOR"]      = "Exosolar & Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Forms asteroids into sheets as well as making them visible at far greater ranges",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

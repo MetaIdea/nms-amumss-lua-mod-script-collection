@@ -4052,10 +4052,11 @@ BiomeDataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Stratos Jasondude Hybrid Edition",
-["MOD_AUTHOR"]    = "Exosolar and Jasondude and Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Stratos Jasondude Hybrid Edition",
+["MOD_AUTHOR"]      = "Exosolar and Jasondude and Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Adds to the limited stock sky color palettes, includes Jasondudes' palettes",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

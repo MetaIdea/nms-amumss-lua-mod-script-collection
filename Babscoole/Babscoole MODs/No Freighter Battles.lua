@@ -3,11 +3,12 @@ HOURS = "99999"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "No Freighter Battles",
-["MOD_AUTHOR"]    = "Exosolar",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "No Freighter Battles",
+["MOD_AUTHOR"]      = "Exosolar",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "No Freighter Battles brings peace to the entire galaxy forever",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Storm Hammer",
-["MOD_AUTHOR"]    = "ArmaTec & Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Storm Hammer",
+["MOD_AUTHOR"]      = "ArmaTec & Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "This mod makes the Base Grenade launcher projectile a linear projectile (Removes Arc)",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

@@ -2,10 +2,11 @@ MULTIPLIER = 3
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "More Cave Spawns x3",
-["MOD_AUTHOR"]    = "courtykat and Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "More Cave Spawns x3",
+["MOD_AUTHOR"]      = "courtykat and Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Raises the frequency of those impossible-to-find underground creatures.",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

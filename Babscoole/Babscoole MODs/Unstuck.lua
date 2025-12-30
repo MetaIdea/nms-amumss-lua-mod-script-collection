@@ -34,16 +34,16 @@ NMS_MOD_DEFINITION_CONTAINER =
           }
         },
         {
-          ["MIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\SPIDER_QUADRUPED\ENTITIES\SPIDERQUAD.ENTITY.MBIN",
-          ["MIN_FS_DISCARD"] = "TRUE",
-          ["MML_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\SPIDER_QUADRUPED\ENTITIES\SPIDERQUAD.ENTITY.MBIN",
+          ["MBIN_FS_DISCARD"] = "TRUE",
+          ["MXML_CHANGE_TABLE"] =
           {
             {
               ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData"},
               ["SEC_KEEP"] = "TRUE",
               ["SEC_SAVE_TO"] = "ADD_TRIGGER",
             },
-            { 
+            {
               ["SEC_EDIT"] = "ADD_TRIGGER",
               ["VALUE_CHANGE_TABLE"] =
               {
@@ -68,8 +68,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           }
         },
         {
-          ["MIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-          ["MML_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
           {
             {
               ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_TURN_L"},
@@ -95,8 +95,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           }
         },
         {
-          ["MIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-          ["MML_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
+          ["MXML_CHANGE_TABLE"] =
           {
             {
               ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_WAVE"},

@@ -4,11 +4,12 @@ SPAWNRATE = "45"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Common Freighter Battles",
-["MOD_AUTHOR"]    = "Exosolar",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Common Freighter Battles",
+["MOD_AUTHOR"]      = "Exosolar",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Common Freighter Battles makes them occur roughly twice as often",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

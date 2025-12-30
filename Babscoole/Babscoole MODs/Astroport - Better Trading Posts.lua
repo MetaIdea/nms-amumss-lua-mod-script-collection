@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Astroport - Better Trading Posts",
-["MOD_AUTHOR"]    = "AstronautinOrbit and Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Astroport - Better Trading Posts",
+["MOD_AUTHOR"]      = "AstronautinOrbit and Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Planetary trading posts rework",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

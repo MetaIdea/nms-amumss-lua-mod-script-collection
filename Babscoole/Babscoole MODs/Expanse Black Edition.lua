@@ -393,10 +393,11 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Expanse Black Edition",
-["MOD_AUTHOR"]    = "Exosolar & Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Expanse Black Edition",
+["MOD_AUTHOR"]      = "Exosolar & Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Large overhaul to Diversity of Space Colors.  384 Color patterns with only distant stars and a random-colored Sun. No nebulae, no clouds.",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

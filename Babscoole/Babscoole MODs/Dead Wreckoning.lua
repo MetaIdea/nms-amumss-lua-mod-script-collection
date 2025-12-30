@@ -36,10 +36,11 @@ PB_TABLE =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Dead Wreckoning",
-["MOD_AUTHOR"]    = "Exosolar & Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Dead Wreckoning",
+["MOD_AUTHOR"]      = "Exosolar & Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Adds alien structures, ruins and wrecks to Dead planets.",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

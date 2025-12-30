@@ -159,8 +159,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "(Add-on) True Color Royals - Pastel",
 ["MOD_AUTHOR"]      = "courtycat and Babscoole",
-["MOD_DESCRIPTION"] = "Adds New colors to exotic ships",
 ["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Adds New colors to exotic ships",
 ["MODIFICATIONS"]   =
 	{
 		{

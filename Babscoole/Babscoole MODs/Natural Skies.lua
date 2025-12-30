@@ -16,10 +16,11 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Natural Skies",
-["MOD_AUTHOR"]    = "degraaaff & Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Natural Skies",
+["MOD_AUTHOR"]      = "degraaaff & Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Gives the 6 legacy sky colors a more natural look and feel and fixes overly white fogs during rain and storms with some sky colors",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

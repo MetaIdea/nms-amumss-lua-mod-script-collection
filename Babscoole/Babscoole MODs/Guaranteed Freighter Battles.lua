@@ -4,11 +4,12 @@ SPAWNRATE = "100"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Guaranteed Freighter Battles",
-["MOD_AUTHOR"]    = "Exosolar",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Guaranteed Freighter Battles",
+["MOD_AUTHOR"]      = "Exosolar",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Guaranteed Freighter Battles cause space battles after every single warp",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Cave Overhaul",
-["MOD_AUTHOR"]    = "JuatSpaceThings and Babscoole",
+["MOD_AUTHOR"]    = "JustSpaceThings and Babscoole",
 ["NMS_VERSION"]   = "5.75",
 ["MODIFICATIONS"] =
     {

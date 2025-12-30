@@ -86,6 +86,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Natural Blue Skies",
 ["MOD_AUTHOR"]      = "courtykat and Babscoole",
 ["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "ALMOST all planets have subtle blue skies and clean color filters",
 ["MODIFICATIONS"]   =
   {
     {

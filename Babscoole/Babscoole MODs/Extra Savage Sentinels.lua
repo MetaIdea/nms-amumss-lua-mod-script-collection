@@ -3,11 +3,12 @@ MAXMULTI = 4
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Extra Savage Sentinels",
-["MOD_AUTHOR"]    = "Exosolar",
-["LUA_AUTHOR"]    = "Babscoole & Xen0nex",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Extra Savage Sentinels",
+["MOD_AUTHOR"]      = "Exosolar",
+["LUA_AUTHOR"]      = "Babscoole & Xen0nex",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Makes Sentinels much more capable of making you dead",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

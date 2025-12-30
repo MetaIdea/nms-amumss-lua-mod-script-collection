@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Always Show Distance",
-["MOD_AUTHOR"]    = "degraaaff",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Always Show Distance",
+["MOD_AUTHOR"]      = "degraaaff",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Always show distance to markers on the planet that you're on, never show as time.",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

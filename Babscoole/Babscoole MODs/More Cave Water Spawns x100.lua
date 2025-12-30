@@ -2,10 +2,11 @@ MULTIPLIER = 100
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "More Cave Water Spawns x100",
-["MOD_AUTHOR"]    = "courtykat and Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "More Cave Water Spawns x100",
+["MOD_AUTHOR"]      = "courtykat and Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Raises the frequency of those impossible-to-find underground & water creatures",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

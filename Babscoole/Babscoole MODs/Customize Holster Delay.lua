@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]  = "Customize Holster Delay",
-["MOD_AUTHOR"]    = "Ninefinger & Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] = 
+["MOD_FILENAME"]    = "Customize Holster Delay",
+["MOD_AUTHOR"]      = "Ninefinger & Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Adjust the delay when your character lowers/holsters their weapon after not using it",
+["MODIFICATIONS"]   = 
   {
     {
       ["MBIN_CHANGE_TABLE"] = 

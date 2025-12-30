@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Better Storms Normal Days",
-["MOD_AUTHOR"]    = "degraaaff",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Better Storms Normal Days",
+["MOD_AUTHOR"]      = "degraaaff",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Makes storm transitions (effects and cloud coverage) more gradual, also makes storms last longer.  Normal day length",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

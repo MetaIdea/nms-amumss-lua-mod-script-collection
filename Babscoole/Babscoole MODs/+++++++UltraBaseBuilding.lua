@@ -1540,6 +1540,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]       = "Mjjstral and Babscoole",
 ["MOD_CONTRIBUTORS"] = "Ignacio and GhostRick",
 ["NMS_VERSION"]      = "6.18",
+["MOD_DESCRIPTION"]  = "This mod adds hundreds of new buildable items to the base building menu, as decorations",
 ["ADD_FILES"]        = ADD_FILES_TABLE,
 ["MODIFICATIONS"]    =
   {

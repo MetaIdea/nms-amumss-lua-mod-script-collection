@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Solar Ship No Sails",
-["MOD_AUTHOR"]    = "Mjstral and JJHookah and Babscoole",
-["NMS_VERSION"]   = "6.18",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Solar Ship No Sails",
+["MOD_AUTHOR"]      = "Mjstral and JJHookah and Babscoole",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Sail will not deploy. Booms and landing gear extend/retract",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

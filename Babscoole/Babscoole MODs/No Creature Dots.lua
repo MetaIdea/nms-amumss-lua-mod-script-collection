@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] = "No Creature Dots",
-["MOD_AUTHOR"]   = "DeathWrench",
-["LUA_AUTHOR"]   = "Babscoole+DeathWrench+Gumsk",
-["NMS_VERSION"]  = "6.18",
-["ADD_FILES"]    = -- COMMENT LINES FOR ICONS THAT YOU WANT TO KEEP VISIBLE..... THIS PART OF THE SCRIPT REQUIRES THE .DDS FILE TO BE IN YOUR MODSCRIPTS FOLDER TO WORK. 
+["MOD_FILENAME"]    = "No Creature Dots",
+["MOD_AUTHOR"]      = "DeathWrench",
+["LUA_AUTHOR"]      = "Babscoole+DeathWrench+Gumsk",
+["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Does the opposite of Bigger Creature Dots. This makes the dots invisible!",
+["ADD_FILES"]       = -- COMMENT LINES FOR ICONS THAT YOU WANT TO KEEP VISIBLE..... THIS PART OF THE SCRIPT REQUIRES THE .DDS FILE TO BE IN YOUR MODSCRIPTS FOLDER TO WORK. 
 {
 	{["FILE_DESTINATION"] = "TEXTURES/UI/HUD/EYE.CREATURE.DDS",["EXTERNAL_FILE_SOURCE"]="NoCreatureDots.DDS",}, 				-- Predator Icons
 	{["FILE_DESTINATION"] = "TEXTURES/UI/HUD/ARROW.DANGER.DDS",["EXTERNAL_FILE_SOURCE"]="NoCreatureDots.DDS",}, 				-- This is the arrow for the predator icon

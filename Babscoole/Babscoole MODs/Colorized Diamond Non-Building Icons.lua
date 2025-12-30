@@ -2,8 +2,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Colorized Diamond Non-Building Icons",
 ["MOD_AUTHOR"]      = "Babscoole and Lyravega",
-["MOD_DESCRIPTION"] = "adds colourized binocs/scanner icons for non-buildings (diamonds), with colours matching the scanner/binocs icons",
 ["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "Adds colourized binocs/scanner icons for non-buildings (diamonds), with colours matching the scanner/binocs icons",
 ["MODIFICATIONS"]   =
   {
     {

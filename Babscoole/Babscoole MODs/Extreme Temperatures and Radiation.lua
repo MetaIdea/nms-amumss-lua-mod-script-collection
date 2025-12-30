@@ -69,7 +69,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OverrideTemperature", "False"},
+                                {"OverrideTemperature", "false"},
                             }
                         },
                         {
