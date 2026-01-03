@@ -2,12 +2,12 @@ Author = "N8Crafter Gumsk"
 ModName = "gShip"
 ModNameSub = "Add Missing Ship Trails"
 BaseDescription = "Adds ship trails to all engines"
-GameVersion = "6.1.6.0"
+GameVersion = "6.1.8.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-MOD_FILENAME  = ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_FILENAME  = ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
 MOD_DESCRIPTION = BaseDescription,
 MOD_AUTHOR    = Author,
 LUA_AUTHOR    = "Babscoole",

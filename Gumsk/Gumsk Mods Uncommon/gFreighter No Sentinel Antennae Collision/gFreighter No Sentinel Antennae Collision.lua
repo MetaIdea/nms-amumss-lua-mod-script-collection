@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gFreighter No Sentinel Antennae Collision"
 ModNameSub = ""
 BaseDescription = ""
-GameVersion = "5.2.2.0"
+GameVersion = "6.1.8.0"
 ModVersion = "a"
 
 --[[ Files Modified:
@@ -10,7 +10,7 @@ MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\VERTICALFIN.SCENE.MBIN
 ]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
 	MOD_DESCRIPTION	= BaseDescription,
 	MOD_AUTHOR		= Author,
 	NMS_VERSION		= GameVersion,
@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					MBIN_FILE_SOURCE = {
 						"MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\VERTICALFIN.SCENE.MBIN",
 					},
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {
 								"Type","COLLISION"

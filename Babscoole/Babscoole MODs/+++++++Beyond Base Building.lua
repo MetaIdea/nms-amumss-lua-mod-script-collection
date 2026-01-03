@@ -578,11 +578,8 @@ https://www.nexusmods.com/nomanssky/mods/1096
   },
 }
 
-
-
 --Create a shortcut to the MXML_CHANGE_TABLE table that is inside NMS_MOD_DEFINITION_CONTAINER
 local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
-
 
 -- Disable terrain edit for the designated parts
 if DISABLE_TERRAINEDIT_FOR_ALL then

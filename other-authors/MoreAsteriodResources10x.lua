@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "MoreAsteriodResources10x.pak", 
+["MOD_FILENAME"] 			= "MoreAsteriodResources10x", 
 ["MOD_AUTHOR"]				= "Weasel",
 ["LUA_AUTHOR"]				= "Weasel",
-["NMS_VERSION"]				= "5.29.0.1",
-["MOD_DESCRIPTION"]			= "Modifies asteroids to provide more resources. ",
+["NMS_VERSION"]				= "5.52.0.1",
+["MOD_DESCRIPTION"]			= "Modifies asteroids to provide more resources.",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["VALUE_CHANGE_TABLE"] 	= 

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gNoClip"
 ModNameSub = "Terrain Objects Normal"
 BaseDescription = "Enables NoClip mode for terrain objects"
-GameVersion = "5.2.9.0"
+GameVersion = "6.1.8.0"
 ModVersion = "a"
 FileSource1 = {
 "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIGPROPSOBJECTSFULL.MBIN",
@@ -269,7 +269,7 @@ FileSource1 = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
 	MOD_DESCRIPTION	= BaseDescription,
 	MOD_AUTHOR		= Author,
 	NMS_VERSION		= GameVersion,
@@ -278,19 +278,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			MBIN_CHANGE_TABLE = {
 				{
 					MBIN_FILE_SOURCE = FileSource1,
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
-							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
-								--{"MinScale",0.01},
-								--{"MaxScale",0.01},
-								--{"AutoCollision","False"},
-								{"CollideWithPlayer","False"},
-								{"CollideWithPlayerVehicle","False"},
-								--{"DestroyedByPlayerVehicle","True"},
-								--{"DestroyedByPlayerShip","True"},
-								--{"DestroyedByTerrainEdit","True"},
-								--{"InvisibleToCamera","True"},
+								--{"MinScale",0.010000},
+								--{"MaxScale",0.010000},
+								--{"AutoCollision","false"},
+								{"CollideWithPlayer","false"},
+								{"CollideWithPlayerVehicle","false"},
+								--{"DestroyedByPlayerVehicle","true"},
+								--{"DestroyedByPlayerShip","true"},
+								--{"DestroyedByTerrainEdit","true"},
+								--{"InvisibleToCamera","true"},
 							},
 						},
 					},

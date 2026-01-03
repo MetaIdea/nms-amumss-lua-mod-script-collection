@@ -5,7 +5,7 @@ Author = "Gumsk"
 ModName = "gCharacter Jetpack Trails EZ"
 ModNameSub = "Red Orange Yellow Gold"
 BaseDescription = "Adds new jetpack trails."
-GameVersion = "5.2.5.0"
+GameVersion = "6.1.8.0"
 ModVersion = "a"
 
 TrailInfo = {
@@ -289,7 +289,7 @@ end
 
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/PURCHASEABLESPECIALS.MBIN",
-	EXML_CHANGE_TABLE = {
+	MXML_CHANGE_TABLE = {
 		{
 			SPECIAL_KEY_WORDS = {"ID","STATUE_ASTRO_G"}, 
 			SEC_SAVE_TO = "SecPurchaseable"
@@ -298,7 +298,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 }
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "METADATA/GAMESTATE/PLAYERDATA/THRUSTERCUSTOMISATIONDATA.MBIN",
-	EXML_CHANGE_TABLE = {
+	MXML_CHANGE_TABLE = {
 		{
 			SPECIAL_KEY_WORDS = {"Name","FUSION"}, 
 			SEC_SAVE_TO = "SecCustomisation"
@@ -307,7 +307,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 }
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
-	EXML_CHANGE_TABLE = {
+	MXML_CHANGE_TABLE = {
 		{
 			SPECIAL_KEY_WORDS = {"ID","JETS_FUSION"}, 
 			SEC_SAVE_TO = "SecProduct"
@@ -316,7 +316,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 }
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "METADATA/EFFECTS/PLAYEREFFECTS.MBIN",
-	EXML_CHANGE_TABLE = {
+	MXML_CHANGE_TABLE = {
 		{
 			SPECIAL_KEY_WORDS = {"Id","FUSIONJETPACK"}, 
 			SEC_SAVE_TO = "SecPlayerEffect"
@@ -325,7 +325,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 }
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "LANGUAGE/NMS_LOC8_ENGLISH.MBIN",
-	EXML_CHANGE_TABLE = {
+	MXML_CHANGE_TABLE = {
 		{
 			SPECIAL_KEY_WORDS = {"Id","UI_TIP_JETTRAIL_FUSION"}, 
 			SEC_SAVE_TO = "SecLangTip"
@@ -346,7 +346,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 }
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "LANGUAGE/NMS_GUMSK_ENGLISH.MBIN",
-	EXML_CHANGE_TABLE = {
+	MXML_CHANGE_TABLE = {
 		{
 			SPECIAL_KEY_WORDS = {"Id","IGNORE"}, 
 			REPLACE_TYPE = "ALL",
@@ -356,7 +356,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 }
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "GCDEBUGOPTIONS.GLOBAL.MBIN",
-	EXML_CHANGE_TABLE = {
+	MXML_CHANGE_TABLE = {
 		{
 			SPECIAL_KEY_WORDS = {"Value","NMS_Loc8"}, 
 			ADD_OPTION = "ADDafterSECTION",
@@ -554,7 +554,7 @@ for i = 1,#TrailInfo do
 	then
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJP.SCENE.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Name","JetpackDarkS","Name","MATERIAL"},
 					VALUE_CHANGE_TABLE = {
@@ -571,7 +571,7 @@ for i = 1,#TrailInfo do
 		}
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/ENGINEJETDARKMAT.MATERIAL.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					VALUE_CHANGE_TABLE = {
 						{"Map","G/JP/DDS/"..TrailInfo[i]["ID"].."/GJPJ.DDS"}
@@ -581,7 +581,7 @@ for i = 1,#TrailInfo do
 		}		
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/ENGINEJETDARKCOREMAT.MATERIAL.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					VALUE_CHANGE_TABLE = {
 						{"Map","G/JP/DDS/"..TrailInfo[i]["ID"].."/GJPJC.DDS"}
@@ -591,7 +591,7 @@ for i = 1,#TrailInfo do
 		}
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.SCENE.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Name","MATERIAL"}, 
 					VALUE_CHANGE_TABLE = {
@@ -602,7 +602,7 @@ for i = 1,#TrailInfo do
 		}
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.MATERIAL.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					VALUE_CHANGE_TABLE = {
 						{"Map","G/JP/DDS/"..TrailInfo[i]["ID"].."/GJPG.DDS"}
@@ -618,7 +618,7 @@ for i = 1,#TrailInfo do
 	then
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPFX.SCENE.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Name","RIpple","Name","DATA"},
 					VALUE_CHANGE_TABLE = {
@@ -659,7 +659,7 @@ for i = 1,#TrailInfo do
 				"G/JP/MODELS/"..TrailInfo[i]["ID"].."/TRIANGLES.PARTICLE.MBIN",
 				"G/JP/MODELS/"..TrailInfo[i]["ID"].."/GLOW.PARTICLE.MBIN"
 			},
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					REPLACE_TYPE = "ALL", 
 					VALUE_CHANGE_TABLE = {
@@ -672,7 +672,7 @@ for i = 1,#TrailInfo do
 		}		
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.SCENE.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Name","MATERIAL"}, 
 					VALUE_CHANGE_TABLE = {
@@ -683,7 +683,7 @@ for i = 1,#TrailInfo do
 		}
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.MATERIAL.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Name","gDiffuseMap"}, 
 					VALUE_CHANGE_TABLE = {
@@ -699,7 +699,7 @@ for i = 1,#TrailInfo do
 	then
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPFX.SCENE.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Name","RIpple","Name","DATA"},
 					VALUE_CHANGE_TABLE = {
@@ -747,7 +747,7 @@ for i = 1,#TrailInfo do
 				"G/JP/MODELS/"..TrailInfo[i]["ID"].."/GLOW.PARTICLE.MBIN",
 				"G/JP/MODELS/"..TrailInfo[i]["ID"].."/EMBERS.PARTICLE.MBIN"
 			},
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					REPLACE_TYPE = "ALL", 
 					VALUE_CHANGE_TABLE = {
@@ -765,7 +765,7 @@ for i = 1,#TrailInfo do
 	then
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPFX.SCENE.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Name","RIpple","Name","DATA"},
 					VALUE_CHANGE_TABLE = {
@@ -806,7 +806,7 @@ for i = 1,#TrailInfo do
 				"G/JP/MODELS/"..TrailInfo[i]["ID"].."/TRIANGLES.PARTICLE.MBIN",
 				"G/JP/MODELS/"..TrailInfo[i]["ID"].."/GLOW.PARTICLE.MBIN"
 			},
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					REPLACE_TYPE = "ALL", 
 					VALUE_CHANGE_TABLE = {
@@ -819,7 +819,7 @@ for i = 1,#TrailInfo do
 		}		
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.SCENE.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Name","MATERIAL"}, 
 					VALUE_CHANGE_TABLE = {
@@ -830,7 +830,7 @@ for i = 1,#TrailInfo do
 		}
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.MATERIAL.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Name","gDiffuseMap"}, 
 					VALUE_CHANGE_TABLE = {
@@ -846,7 +846,7 @@ for i = 1,#TrailInfo do
 	then
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPFX.SCENE.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Name","RIpple","Name","DATA"},
 					VALUE_CHANGE_TABLE = {
@@ -894,7 +894,7 @@ for i = 1,#TrailInfo do
 				"G/JP/MODELS/"..TrailInfo[i]["ID"].."/GLOW.PARTICLE.MBIN",
 				"G/JP/MODELS/"..TrailInfo[i]["ID"].."/EMBERS.PARTICLE.MBIN"
 			},
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					REPLACE_TYPE = "ALL", 
 					VALUE_CHANGE_TABLE = {
@@ -912,7 +912,7 @@ for i = 1,#TrailInfo do
 	then
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPFX.SCENE.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Name","RIpple","Name","DATA"},
 					VALUE_CHANGE_TABLE = {
@@ -953,7 +953,7 @@ for i = 1,#TrailInfo do
 				"G/JP/MODELS/"..TrailInfo[i]["ID"].."/TRIANGLES.PARTICLE.MBIN",
 				"G/JP/MODELS/"..TrailInfo[i]["ID"].."/GLOW.PARTICLE.MBIN"
 			},
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					REPLACE_TYPE = "ALL", 
 					VALUE_CHANGE_TABLE = {
@@ -966,7 +966,7 @@ for i = 1,#TrailInfo do
 		}		
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.SCENE.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Name","MATERIAL"}, 
 					VALUE_CHANGE_TABLE = {
@@ -977,7 +977,7 @@ for i = 1,#TrailInfo do
 		}
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.MATERIAL.MBIN",
-			EXML_CHANGE_TABLE = {
+			MXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Name","gDiffuseMap"}, 
 					VALUE_CHANGE_TABLE = {
@@ -991,7 +991,7 @@ for i = 1,#TrailInfo do
 	end
 	MbinChangeTables[#MbinChangeTables + 1] = {
 		MBIN_FILE_SOURCE = "METADATA/GAMESTATE/PLAYERDATA/THRUSTERCUSTOMISATIONDATA.MBIN",
-		EXML_CHANGE_TABLE = {
+		MXML_CHANGE_TABLE = {
 			{
 				SEC_EDIT = "SecCustomisation",
 				VALUE_CHANGE_TABLE = {
@@ -1075,7 +1075,7 @@ for i = 1,#TrailInfo do
 	}
 	MbinChangeTables[#MbinChangeTables + 1] = {
 		MBIN_FILE_SOURCE = "METADATA/EFFECTS/PLAYEREFFECTS.MBIN",
-		EXML_CHANGE_TABLE = {
+		MXML_CHANGE_TABLE = {
 			{
 				SEC_EDIT = "SecPlayerEffect",
 				VALUE_CHANGE_TABLE = {
@@ -1101,7 +1101,7 @@ for i = 1,#TrailInfo do
 	}
 	MbinChangeTables[#MbinChangeTables + 1] = {
 		MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/PURCHASEABLESPECIALS.MBIN",
-		EXML_CHANGE_TABLE = {
+		MXML_CHANGE_TABLE = {
 			{
 				SEC_EDIT = "SecPurchaseable",
 				VALUE_CHANGE_TABLE = {
@@ -1117,7 +1117,7 @@ for i = 1,#TrailInfo do
 	}	
 	MbinChangeTables[#MbinChangeTables + 1] = {
 		MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
-		EXML_CHANGE_TABLE = {
+		MXML_CHANGE_TABLE = {
 			{
 				SEC_EDIT = "SecProduct",
 				VALUE_CHANGE_TABLE = {
@@ -1151,7 +1151,7 @@ for i = 1,#TrailInfo do
 	}	
 	MbinChangeTables[#MbinChangeTables + 1] = {
 		MBIN_FILE_SOURCE = "LANGUAGE/NMS_GUMSK_ENGLISH.MBIN",
-		EXML_CHANGE_TABLE = {
+		MXML_CHANGE_TABLE = {
 			{
 				SEC_EDIT = "SecLangTip",
 				VALUE_CHANGE_TABLE = {
@@ -1201,7 +1201,7 @@ for i = 1,#TrailInfo do
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME = ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_FILENAME = ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
 	MOD_DESCRIPTION = BaseDescription,
 	MOD_AUTHOR = Author,
 	LUA_AUTHOR = "Gumsk",

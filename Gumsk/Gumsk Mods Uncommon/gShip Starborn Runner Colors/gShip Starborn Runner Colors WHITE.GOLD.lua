@@ -3,11 +3,11 @@ SecondaryColor = "GOLD"
 
 ModName = "gShip Starborn Runner Colors"
 ModNameSub = PrimaryColor.."."..SecondaryColor
-GameVersion = "5.2.8.0"
+GameVersion = "6.1.8.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
 	MOD_DESCRIPTION	= "Recolors the Racer",
 	MOD_AUTHOR		= "Gumsk",
 	LUA_AUTHOR		= "Gumsk",
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			MBIN_CHANGE_TABLE = {
 				{
 					MBIN_FILE_SOURCE = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WRACER\RACERPAINTMAT.MATERIAL.MBIN",
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
 							VALUE_CHANGE_TABLE = {
 								{"Shader","SHADERS/UBERSHADER.SHADER.BIN"},

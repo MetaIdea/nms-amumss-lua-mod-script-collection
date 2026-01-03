@@ -2,12 +2,12 @@ Author = "Gumsk"
 ModName = "gVehicle Lights"
 ModNameSub = "Brighter"
 BaseDescription = "Increases vehicle headlight intensity"
-GameVersion = "5.2.2.0"
+GameVersion = "6.1.8.0"
 ModVersion = "a"
 FileSource = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
 	MOD_DESCRIPTION	= BaseDescription,
 	MOD_AUTHOR		= Author,
 	NMS_VERSION		= GameVersion,
@@ -16,10 +16,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			MBIN_CHANGE_TABLE = {
 				{
 					MBIN_FILE_SOURCE = FileSource,
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
 							VALUE_CHANGE_TABLE = {
-								{"HeadlightIntensity","9"},
+								{"HeadlightIntensity","9.000000"},
 							},
 						},
 					},

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gHot"
 ModNameSub = ""
 BaseDescription = "Hotspot balancing"
-GameVersion = "5.7.5.0"
+GameVersion = "6.1.8.0"
 ModVersion = "a"
 
 --Files Changed
@@ -10,14 +10,14 @@ ModVersion = "a"
 
 --Variables
 --General
--- PoleSpacing = 900          --?? Original value "900"
--- HotspotsPerPoleMin = 1.9     --?? Original value "1.9"
--- HotspotsPerPoleMax = 3.8     --?? Original value "3.8"
--- SpacingSameCatMin = 10       --?? Original value "10"
--- SpacingDiffCatMaxOverlap = 150   --?? Original value "150"
+-- PoleSpacing = 900              --?? Original value "900"
+-- HotspotsPerPoleMin = 1.9       --?? Original value "1.9"
+-- HotspotsPerPoleMax = 3.8       --?? Original value "3.8"
+-- SpacingSameCatMin = 10         --?? Original value "10"
+-- SpacingDiffCatMaxOverlap = 150 --?? Original value "150"
 OutX = 1.0              --Output Multiplier relative to vanilla
 
-Original_Hotspot_Array = {      -- This is for reference. Don't change it!
+Original_Hotspot_Array = { -- This is for reference. Don't change it!
         {"Power", "Mineral1", "Mineral2", "Mineral3", "Gas1", "Gas2"}, --Type
         {1,       1,          1,          1,          1,      1},      --Probability
         {200,     190,        190,        190,        190,    190},    --MinRange??

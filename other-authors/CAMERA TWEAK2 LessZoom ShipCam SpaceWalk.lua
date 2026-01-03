@@ -7,12 +7,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterUnarmedCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 6},
 		{"BackMaxDistance", "6"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -30,12 +32,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterRunCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
-		{"BackMinDistance", 8},
-		{"BackMaxDistance", "8"},
+		{"BackMinDistance", 7},
+		{"BackMaxDistance", "7"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -53,12 +57,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterCombatCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 7},
 		{"BackMaxDistance", "7"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -74,12 +80,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterUndergroundCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 6},
 		{"BackMaxDistance", "6"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -97,12 +105,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterMiningCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 7},
 		{"BackMaxDistance", "7"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -120,12 +130,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterIndoorCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 5},
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -143,12 +155,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterNexusCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 5},
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -166,12 +180,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterAirborneCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 6},
 		{"BackMaxDistance", "6"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -189,12 +205,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterMeleeBoostCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
-		{"BackMinDistance", 8},
-		{"BackMaxDistance", "8"},
+		{"BackMinDistance", 7},
+		{"BackMaxDistance", "7"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -212,12 +230,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterRocketBootsCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 7},
 		{"BackMaxDistance", "7"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -235,12 +255,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterRocketBootsChargeCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 5},
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -258,12 +280,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterFallingCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
-		{"BackMinDistance", 8},
-		{"BackMaxDistance", "8"},
+		{"BackMinDistance", 7},
+		{"BackMaxDistance", "7"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -281,12 +305,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterAirborneCombatCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 7},
 		{"BackMaxDistance", "7"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -304,12 +330,14 @@ cam_ect[#cam_ect+1] = {
 ["PRECEDING_KEY_WORDS"] = "CharacterSpaceCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 32},
 		{"BackMaxDistance", "32"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -327,12 +355,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterSteepSlopeCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
-		{"BackMinDistance", 6},
-		{"BackMaxDistance", "6"},
+		{"BackMinDistance", 8},
+		{"BackMaxDistance", "8"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -350,12 +380,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterUnderwaterCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 6},
 		{"BackMaxDistance", "6"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -373,12 +405,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterUnderwaterCombatCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 7},
 		{"BackMaxDistance", "7"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -396,12 +430,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterUnderwaterJetpackCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
-		{"BackMinDistance", 8},
-		{"BackMaxDistance", "8"},
+		{"BackMinDistance", 7},
+		{"BackMaxDistance", "7"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -419,12 +455,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterAbandCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 5},
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -442,12 +480,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterAbandCombatCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 6},
 		{"BackMaxDistance", "6"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -465,10 +505,12 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterGrabbedCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"BackMinDistance", 8},
-		{"BackMaxDistance", "8"},
+		{"BackMinDistance", 7},
+		{"BackMaxDistance", "7"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -497,12 +539,14 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CharacterCorvetteCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetX", "0.60"},
+		{"OffsetX", "0.65"},
 		{"Offsety", "-0.65"},
 		{"BackMinDistance", 5},
 		{"BackMaxDistance", "5"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"VertRotationSpeed", "20"},
 		{"SpringSpeed", "0.01"},
 		{"CenterStartTime", "120"},
@@ -526,6 +570,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "14"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},
 		
@@ -542,6 +588,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "14"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},
 				
@@ -558,6 +606,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance", "14"},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},
 		
@@ -592,9 +642,11 @@ cam_ect[#cam_ect+1] = {
 	["PRECEDING_KEY_WORDS"] = "CorvetteFollowCam",
 	["VALUE_CHANGE_TABLE"] = {
 
-		{"OffsetY",2.0},
+		{"OffsetY",4.4},
+		{"OffsetZFlat",4.4},
 		{"BackMinDistance",44},
 		{"BackMaxDistance",44},	
+		{"UseMinSpeedYOffset","false"},	
 		
 	}
 }
@@ -606,6 +658,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},
 		
@@ -620,6 +674,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},
 				
@@ -636,6 +692,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},
 		
@@ -650,6 +708,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},
 				
@@ -664,6 +724,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},
 		
@@ -680,6 +742,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance",44},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},
 		
@@ -694,6 +758,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},
 		
@@ -709,6 +775,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},
 		
@@ -723,6 +791,8 @@ cam_ect[#cam_ect+1] = {
 		{"BackMaxDistance",22},
 		{"PanNear", "0"},
 		{"PanFar", "0"},
+
+
 		{"CenterStartTime", "120"},
 		{"LockToObjectOnIdle", "False"},
 		
@@ -741,7 +811,6 @@ cam_ect[#cam_ect+1] = {
 		{'VehicleExitFlashTime', 0},
 		{'VehicleExitFlashStrength', 0},	
 		{'BuildingModeMaxDistance', 99999},
-		{"UseSpeedBasedSpring", "False"},
 
 	}
 }
@@ -749,7 +818,7 @@ cam_ect[#cam_ect+1] = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'CAMERA TWEAK2 LessZoom ShipCam SpaceWalk.pak',
 	MOD_AUTHOR			= 'TEAM',
-	NMS_VERSION			= '6.0',
+	NMS_VERSION			= '6.10',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

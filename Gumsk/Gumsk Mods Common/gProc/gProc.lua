@@ -69,7 +69,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       MBIN_CHANGE_TABLE = {
         {
           MBIN_FILE_SOURCE = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN",
-          EXML_CHANGE_TABLE = {
+          MXML_CHANGE_TABLE = {
             {
               SPECIAL_KEY_WORDS = {"ID","UP_CANNX","StatsType","Weapon_Projectile_Damage"},
               SECTION_UP = 1,
@@ -98,7 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   }
 }
 
-local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 local temp_name = ""
 local temp_name2 = ""
 

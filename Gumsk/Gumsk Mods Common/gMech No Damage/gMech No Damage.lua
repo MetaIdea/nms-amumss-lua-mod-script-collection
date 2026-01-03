@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gMech No Damage"
 ModNameSub = ""
 BaseDescription = "Disables mech tech damage"
-GameVersion = "5.2.9.0"
+GameVersion = "6.1.8.0"
 ModVersion = "a"
 
 --[[ Files Modified:
@@ -10,7 +10,7 @@ GCGAMEPLAYGLOBALS.GLOBAL.MBIN
 ]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
 	MOD_DESCRIPTION	= BaseDescription,
 	MOD_AUTHOR		= Author,
 	NMS_VERSION		= GameVersion,
@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 				{
 					MBIN_FILE_SOURCE	= "METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN",
-					EXML_CHANGE_TABLE	= {
+					MXML_CHANGE_TABLE	= {
 						{
 							PRECEDING_KEY_WORDS = {"DamageReceivedAIMechTechDamageHits"},
 							VALUE_CHANGE_TABLE = {

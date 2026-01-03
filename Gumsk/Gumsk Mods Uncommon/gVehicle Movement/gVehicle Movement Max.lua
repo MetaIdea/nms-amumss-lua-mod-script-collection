@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gVehicle Movement"
 ModNameSub = "Max"
 BaseDescription = "Exocraft modifications"
-GameVersion = "5.2.2.0"
+GameVersion = "6.1.8.0"
 ModVersion = "a"
 FileSource1 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
@@ -56,7 +56,7 @@ SubVehicleBoostTime					= 999		--2.5
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
 	MOD_DESCRIPTION	= BaseDescription,
 	MOD_AUTHOR		= Author,
 	NMS_VERSION		= GameVersion,
@@ -65,7 +65,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			MBIN_CHANGE_TABLE = {
 				{
 					MBIN_FILE_SOURCE = FileSource1,
-					EXML_CHANGE_TABLE = {
+					MXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Name","BIKE"},
 							VALUE_CHANGE_TABLE = {
