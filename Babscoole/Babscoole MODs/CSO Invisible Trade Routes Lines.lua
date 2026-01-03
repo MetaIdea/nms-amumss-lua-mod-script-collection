@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ALL",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"A", 0},           -- Vanilla 0.02 // Mod default 0
+                {"A", 0.000000},           -- Vanilla 0.02 // Mod default 0
               },
             },
           },

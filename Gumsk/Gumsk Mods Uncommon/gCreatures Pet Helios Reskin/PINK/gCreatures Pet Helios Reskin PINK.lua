@@ -69,7 +69,10 @@ LightText = [[
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="1.000000" />
         </Property>
-
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
+          <Property name="Name" value="LIGHTLAYERS" />
+          <Property name="Value" value="3" />
+        </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />

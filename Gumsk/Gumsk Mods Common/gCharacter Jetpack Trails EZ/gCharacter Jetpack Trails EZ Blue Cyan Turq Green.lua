@@ -19,22 +19,22 @@ TrailInfo = {
 	-- {TYPE="STANDARD",ID="BLACKRED",COLOR="RED",NAME_U="BLACK-RED",NAME_L="Black-Red",LIGHTAMOUNT="3",COST="0",DESC="deep red with a black core"},
 	-- {TYPE="STANDARD",ID="BLACKWHITE",COLOR="WHITE",NAME_U="BLACK-WHITE",NAME_L="Black-White",LIGHTAMOUNT="3",COST="0",DESC="white with a black core"},
 	-- {TYPE="STANDARD",ID="BLACKYELLOW",COLOR="YELLOW",NAME_U="BLACK-YELLOW",NAME_L="Black-Yellow",LIGHTAMOUNT="3",COST="0",DESC="yellow with a black core"},
-	{TYPE="STANDARD",ID="BLUE",COLOR="BLUE",NAME_U="BLUE",NAME_L="Blue",LIGHTAMOUNT="3",COST="0",DESC="blue"},	
-	{TYPE="STANDARD",ID="BLUERED",COLOR="BLUE",NAME_U="BLUE-RED",NAME_L="Blue-Red",LIGHTAMOUNT="3",COST="0",DESC="red with a blue core"},	
-	-- {TYPE="STANDARD",ID="CANDYCORN",COLOR="ORANGE",NAME_U="CANDY CORN",NAME_L="Candy Corn",LIGHTAMOUNT="3",COST="0",DESC="reminiscent of candy corn for Halloween"},	
+	{TYPE="STANDARD",ID="BLUE",COLOR="BLUE",NAME_U="BLUE",NAME_L="Blue",LIGHTAMOUNT="3",COST="0",DESC="blue"},
+	{TYPE="STANDARD",ID="BLUERED",COLOR="BLUE",NAME_U="BLUE-RED",NAME_L="Blue-Red",LIGHTAMOUNT="3",COST="0",DESC="red with a blue core"},
+	-- {TYPE="STANDARD",ID="CANDYCORN",COLOR="ORANGE",NAME_U="CANDY CORN",NAME_L="Candy Corn",LIGHTAMOUNT="3",COST="0",DESC="reminiscent of candy corn for Halloween"},
 	{TYPE="STANDARD",ID="CYAN",COLOR="CYAN",NAME_U="CYAN",NAME_L="Cyan",LIGHTAMOUNT="3",COST="0",DESC="cyan"},
-	-- {TYPE="STANDARD",ID="GOLD",COLOR="GOLD",NAME_U="GOLD",NAME_L="Gold",LIGHTAMOUNT="3",COST="0",DESC="gold"},	
-	{TYPE="STANDARD",ID="GREEN",COLOR="GREEN",NAME_U="GREEN",NAME_L="Green",LIGHTAMOUNT="3",COST="0",DESC="green"},	
+	-- {TYPE="STANDARD",ID="GOLD",COLOR="GOLD",NAME_U="GOLD",NAME_L="Gold",LIGHTAMOUNT="3",COST="0",DESC="gold"},
+	{TYPE="STANDARD",ID="GREEN",COLOR="GREEN",NAME_U="GREEN",NAME_L="Green",LIGHTAMOUNT="3",COST="0",DESC="green"},
 	-- {TYPE="STANDARD",ID="ORANGE",COLOR="ORANGE",NAME_U="ORANGE",NAME_L="Orange",LIGHTAMOUNT="3",COST="0",DESC="orange"},
-	-- {TYPE="STANDARD",ID="PINK",COLOR="PINK",NAME_U="PINK",NAME_L="Pink",LIGHTAMOUNT="3",COST="0",DESC="pink"},	
-	{TYPE="STANDARD",ID="PINKGREEN",COLOR="PINK",NAME_U="PINK-GREEN",NAME_L="Pink-Green",LIGHTAMOUNT="3",COST="0",DESC="green with a pink core"},	
+	-- {TYPE="STANDARD",ID="PINK",COLOR="PINK",NAME_U="PINK",NAME_L="Pink",LIGHTAMOUNT="3",COST="0",DESC="pink"},
+	{TYPE="STANDARD",ID="PINKGREEN",COLOR="PINK",NAME_U="PINK-GREEN",NAME_L="Pink-Green",LIGHTAMOUNT="3",COST="0",DESC="green with a pink core"},
 	-- {TYPE="STANDARD",ID="PURPLE",COLOR="PURPLE",NAME_U="PURPLE",NAME_L="Purple",LIGHTAMOUNT="3",COST="0",DESC="purple"},
-	-- {TYPE="STANDARD",ID="RED",COLOR="RED",NAME_U="RED",NAME_L="Red",LIGHTAMOUNT="3",COST="0",DESC="red"},	
-	-- {TYPE="STANDARD",ID="WHITE",COLOR="WHITE",NAME_U="WHITE",NAME_L="White",LIGHTAMOUNT="3",COST="0",DESC="white"},	
-	{TYPE="STANDARD",ID="WHITEBLUE",COLOR="BLUE",NAME_U="WHITE-BLUE",NAME_L="White-Blue",LIGHTAMOUNT="3",COST="0",DESC="blue with a white core"},	
-	{TYPE="STANDARD",ID="WHITECYAN",COLOR="CYAN",NAME_U="WHITE-CYAN",NAME_L="White-Cyan",LIGHTAMOUNT="3",COST="0",DESC="cyan with a white core"},	
-	-- {TYPE="STANDARD",ID="WHITEGOLD",COLOR="GOLD",NAME_U="WHITE-GOLD",NAME_L="White-Gold",LIGHTAMOUNT="3",COST="0",DESC="gold with a white core"},	
-	{TYPE="STANDARD",ID="WHITEGREEN",COLOR="GREEN",NAME_U="WHITE-GREEN",NAME_L="White-Green",LIGHTAMOUNT="3",COST="0",DESC="green with a white core"},	
+	-- {TYPE="STANDARD",ID="RED",COLOR="RED",NAME_U="RED",NAME_L="Red",LIGHTAMOUNT="3",COST="0",DESC="red"},
+	-- {TYPE="STANDARD",ID="WHITE",COLOR="WHITE",NAME_U="WHITE",NAME_L="White",LIGHTAMOUNT="3",COST="0",DESC="white"},
+	{TYPE="STANDARD",ID="WHITEBLUE",COLOR="BLUE",NAME_U="WHITE-BLUE",NAME_L="White-Blue",LIGHTAMOUNT="3",COST="0",DESC="blue with a white core"},
+	{TYPE="STANDARD",ID="WHITECYAN",COLOR="CYAN",NAME_U="WHITE-CYAN",NAME_L="White-Cyan",LIGHTAMOUNT="3",COST="0",DESC="cyan with a white core"},
+	-- {TYPE="STANDARD",ID="WHITEGOLD",COLOR="GOLD",NAME_U="WHITE-GOLD",NAME_L="White-Gold",LIGHTAMOUNT="3",COST="0",DESC="gold with a white core"},
+	{TYPE="STANDARD",ID="WHITEGREEN",COLOR="GREEN",NAME_U="WHITE-GREEN",NAME_L="White-Green",LIGHTAMOUNT="3",COST="0",DESC="green with a white core"},
 	-- {TYPE="STANDARD",ID="WHITEORANGE",COLOR="ORANGE",NAME_U="WHITE-ORANGE",NAME_L="White-Orange",LIGHTAMOUNT="3",COST="0",DESC="orange with a white core"},
 	-- {TYPE="STANDARD",ID="WHITEPINK",COLOR="PINK",NAME_U="WHITE-PINK",NAME_L="White-Pink",LIGHTAMOUNT="3",COST="0",DESC="pink with a white core"},
 	-- {TYPE="STANDARD",ID="WHITEPURPLE",COLOR="PURPLE",NAME_U="WHITE-PURPLE",NAME_L="White-Purple",LIGHTAMOUNT="3",COST="0",DESC="purple with a white core"},
@@ -121,7 +121,7 @@ local JetMesh = ""
 local TrailMesh = ""
 
 MbinChangeTables[#MbinChangeTables + 1] = {
-			MBIN_FILE_SOURCE = {{"LANGUAGE/NMS_LOC8_ENGLISH.MBIN","LANGUAGE/NMS_GUMSK_ENGLISH.MBIN"}},
+			MBIN_FILE_SOURCE = {{"LANGUAGE/NMS_LOC8_ENGLISH.MBIN","LocTable.MXML"}},
 		}
 
 for i = 1,(#TrailInfo) do
@@ -135,7 +135,7 @@ for i = 1,(#TrailInfo) do
 		}
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = {{"MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/SJETPACKGREEN/ENGINEJETDARKMAT.MATERIAL.MBIN","G/JP/MODELS/"..TrailInfo[i]["ID"].."/ENGINEJETDARKMAT.MATERIAL.MBIN"}},
-		}		
+		}
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = {{"MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/SJETPACKGREEN/ENGINEJETDARKCOREMAT.MATERIAL.MBIN","G/JP/MODELS/"..TrailInfo[i]["ID"].."/ENGINEJETDARKCOREMAT.MATERIAL.MBIN"}},
 		}
@@ -284,14 +284,14 @@ for i = 1,(#TrailInfo) do
 			MBIN_FILE_SOURCE = {{"MODELS/EFFECTS/TRAILS/PLAYER/JETPACKCORRUPTEDTRAIL.MATERIAL.MBIN","G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.MATERIAL.MBIN"}},
 		}
 	end
-			
+
 end
 
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/PURCHASEABLESPECIALS.MBIN",
 	MXML_CHANGE_TABLE = {
 		{
-			SPECIAL_KEY_WORDS = {"ID","STATUE_ASTRO_G"}, 
+			SPECIAL_KEY_WORDS = {"ID","STATUE_ASTRO_G"},
 			SEC_SAVE_TO = "SecPurchaseable"
 		}
 	}
@@ -300,7 +300,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "METADATA/GAMESTATE/PLAYERDATA/THRUSTERCUSTOMISATIONDATA.MBIN",
 	MXML_CHANGE_TABLE = {
 		{
-			SPECIAL_KEY_WORDS = {"Name","FUSION"}, 
+			SPECIAL_KEY_WORDS = {"Name","FUSION"},
 			SEC_SAVE_TO = "SecCustomisation"
 		}
 	}
@@ -309,7 +309,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
 	MXML_CHANGE_TABLE = {
 		{
-			SPECIAL_KEY_WORDS = {"ID","JETS_FUSION"}, 
+			SPECIAL_KEY_WORDS = {"ID","JETS_FUSION"},
 			SEC_SAVE_TO = "SecProduct"
 		}
 	}
@@ -318,7 +318,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "METADATA/EFFECTS/PLAYEREFFECTS.MBIN",
 	MXML_CHANGE_TABLE = {
 		{
-			SPECIAL_KEY_WORDS = {"Id","FUSIONJETPACK"}, 
+			SPECIAL_KEY_WORDS = {"Id","FUSIONJETPACK"},
 			SEC_SAVE_TO = "SecPlayerEffect"
 		}
 	}
@@ -327,43 +327,31 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "LANGUAGE/NMS_LOC8_ENGLISH.MBIN",
 	MXML_CHANGE_TABLE = {
 		{
-			SPECIAL_KEY_WORDS = {"Id","UI_TIP_JETTRAIL_FUSION"}, 
+			SPECIAL_KEY_WORDS = {"Id","UI_TIP_JETTRAIL_FUSION"},
 			SEC_SAVE_TO = "SecLangTip"
 		},
 		{
-			SPECIAL_KEY_WORDS = {"Id","UI_JETTRAIL_FUSION_NAME"}, 
+			SPECIAL_KEY_WORDS = {"Id","UI_JETTRAIL_FUSION_NAME"},
 			SEC_SAVE_TO = "SecLangName"
 		},
 		{
-			SPECIAL_KEY_WORDS = {"Id","UI_JETTRAIL_FUSION_NAME_L"}, 
+			SPECIAL_KEY_WORDS = {"Id","UI_JETTRAIL_FUSION_NAME_L"},
 			SEC_SAVE_TO = "SecLangNameL"
 		},
 		{
-			SPECIAL_KEY_WORDS = {"Id","UI_JETTRAIL_FUSION_DESC"}, 
+			SPECIAL_KEY_WORDS = {"Id","UI_JETTRAIL_FUSION_DESC"},
 			SEC_SAVE_TO = "SecLangDesc"
 		}
 	}
 }
 MbinChangeTables[#MbinChangeTables + 1] = {
-	MBIN_FILE_SOURCE = "LANGUAGE/NMS_GUMSK_ENGLISH.MBIN",
+	MBIN_FILE_SOURCE = "LocTable.MXML",
 	MXML_CHANGE_TABLE = {
 		{
-			SPECIAL_KEY_WORDS = {"Id","IGNORE"}, 
+			SPECIAL_KEY_WORDS = {"Id","IGNORE"},
 			REPLACE_TYPE = "ALL",
 			REMOVE = "SECTION"
 		},
-	}
-}
-MbinChangeTables[#MbinChangeTables + 1] = {
-	MBIN_FILE_SOURCE = "GCDEBUGOPTIONS.GLOBAL.MBIN",
-	MXML_CHANGE_TABLE = {
-		{
-			SPECIAL_KEY_WORDS = {"Value","NMS_Loc8"}, 
-			ADD_OPTION = "ADDafterSECTION",
-			ADD = [[    <Property value="NMSString0x20.xml">
-      <Property name="Value" value="NMS_GUMSK" />
-    </Property>]]
-		}
 	}
 }
 
@@ -378,7 +366,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/SJETPACKGREEN/ENGINEJETDARKMAT.MATERIAL.MBIN",
 	MBIN_FS_DISCARD = "TRUE"
-}		
+}
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/SJETPACKGREEN/ENGINEJETDARKCOREMAT.MATERIAL.MBIN",
 	MBIN_FS_DISCARD = "TRUE"
@@ -402,7 +390,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/ELECJETPACK/ELEC.PARTICLE.MBIN",
 	MBIN_FS_DISCARD = "TRUE"
-}		
+}
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/ELECJETPACK/GLOW.PARTICLE.MBIN",
 	MBIN_FS_DISCARD = "TRUE"
@@ -434,7 +422,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/PLASMAJETPACK/ELEC.PARTICLE.MBIN",
 	MBIN_FS_DISCARD = "TRUE"
-}		
+}
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/PLASMAJETPACK/GLOW.PARTICLE.MBIN",
 	MBIN_FS_DISCARD = "TRUE"
@@ -462,7 +450,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/FIREJETPACK/ELEC.PARTICLE.MBIN",
 	MBIN_FS_DISCARD = "TRUE"
-}		
+}
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/FIREJETPACK/GLOW.PARTICLE.MBIN",
 	MBIN_FS_DISCARD = "TRUE"
@@ -494,7 +482,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/FUSIONJETPACK/ELEC.PARTICLE.MBIN",
 	MBIN_FS_DISCARD = "TRUE"
-}		
+}
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/FUSIONJETPACK/GLOW.PARTICLE.MBIN",
 	MBIN_FS_DISCARD = "TRUE"
@@ -522,7 +510,7 @@ MbinChangeTables[#MbinChangeTables + 1] = {
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/CORRUPTEDJETPACK/ELEC.PARTICLE.MBIN",
 	MBIN_FS_DISCARD = "TRUE"
-}		
+}
 MbinChangeTables[#MbinChangeTables + 1] = {
 	MBIN_FILE_SOURCE = "MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/CORRUPTEDJETPACK/GLOW.PARTICLE.MBIN",
 	MBIN_FS_DISCARD = "TRUE"
@@ -578,7 +566,7 @@ for i = 1,#TrailInfo do
 					}
 				}
 			}
-		}		
+		}
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/ENGINEJETDARKCOREMAT.MATERIAL.MBIN",
 			MXML_CHANGE_TABLE = {
@@ -593,7 +581,7 @@ for i = 1,#TrailInfo do
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.SCENE.MBIN",
 			MXML_CHANGE_TABLE = {
 				{
-					SPECIAL_KEY_WORDS = {"Name","MATERIAL"}, 
+					SPECIAL_KEY_WORDS = {"Name","MATERIAL"},
 					VALUE_CHANGE_TABLE = {
 						{"Value","G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.MATERIAL.MBIN"}
 					}
@@ -661,7 +649,7 @@ for i = 1,#TrailInfo do
 			},
 			MXML_CHANGE_TABLE = {
 				{
-					REPLACE_TYPE = "ALL", 
+					REPLACE_TYPE = "ALL",
 					VALUE_CHANGE_TABLE = {
 						{"R",ColorsRgb[TrailInfo[i]["COLOR"]]["R"]},
 						{"G",ColorsRgb[TrailInfo[i]["COLOR"]]["G"]},
@@ -669,12 +657,12 @@ for i = 1,#TrailInfo do
 					}
 				}
 			}
-		}		
+		}
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.SCENE.MBIN",
 			MXML_CHANGE_TABLE = {
 				{
-					SPECIAL_KEY_WORDS = {"Name","MATERIAL"}, 
+					SPECIAL_KEY_WORDS = {"Name","MATERIAL"},
 					VALUE_CHANGE_TABLE = {
 						{"Value","G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.MATERIAL.MBIN"}
 					}
@@ -685,7 +673,7 @@ for i = 1,#TrailInfo do
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.MATERIAL.MBIN",
 			MXML_CHANGE_TABLE = {
 				{
-					SPECIAL_KEY_WORDS = {"Name","gDiffuseMap"}, 
+					SPECIAL_KEY_WORDS = {"Name","gDiffuseMap"},
 					VALUE_CHANGE_TABLE = {
 						{"Map","G/JP/DDS/"..TrailInfo[i]["ID"].."/GJPELEC.DDS"}
 					}
@@ -749,7 +737,7 @@ for i = 1,#TrailInfo do
 			},
 			MXML_CHANGE_TABLE = {
 				{
-					REPLACE_TYPE = "ALL", 
+					REPLACE_TYPE = "ALL",
 					VALUE_CHANGE_TABLE = {
 						{"R",ColorsRgb[TrailInfo[i]["COLOR"]]["R"]},
 						{"G",ColorsRgb[TrailInfo[i]["COLOR"]]["G"]},
@@ -808,7 +796,7 @@ for i = 1,#TrailInfo do
 			},
 			MXML_CHANGE_TABLE = {
 				{
-					REPLACE_TYPE = "ALL", 
+					REPLACE_TYPE = "ALL",
 					VALUE_CHANGE_TABLE = {
 						{"R",ColorsRgb[TrailInfo[i]["COLOR"]]["R"]},
 						{"G",ColorsRgb[TrailInfo[i]["COLOR"]]["G"]},
@@ -816,12 +804,12 @@ for i = 1,#TrailInfo do
 					}
 				}
 			}
-		}		
+		}
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.SCENE.MBIN",
 			MXML_CHANGE_TABLE = {
 				{
-					SPECIAL_KEY_WORDS = {"Name","MATERIAL"}, 
+					SPECIAL_KEY_WORDS = {"Name","MATERIAL"},
 					VALUE_CHANGE_TABLE = {
 						{"Value","G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.MATERIAL.MBIN"}
 					}
@@ -832,7 +820,7 @@ for i = 1,#TrailInfo do
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.MATERIAL.MBIN",
 			MXML_CHANGE_TABLE = {
 				{
-					SPECIAL_KEY_WORDS = {"Name","gDiffuseMap"}, 
+					SPECIAL_KEY_WORDS = {"Name","gDiffuseMap"},
 					VALUE_CHANGE_TABLE = {
 						{"Map","G/JP/DDS/"..TrailInfo[i]["ID"].."/GJPFIRE.DDS"}
 					}
@@ -896,7 +884,7 @@ for i = 1,#TrailInfo do
 			},
 			MXML_CHANGE_TABLE = {
 				{
-					REPLACE_TYPE = "ALL", 
+					REPLACE_TYPE = "ALL",
 					VALUE_CHANGE_TABLE = {
 						{"R",ColorsRgb[TrailInfo[i]["COLOR"]]["R"]},
 						{"G",ColorsRgb[TrailInfo[i]["COLOR"]]["G"]},
@@ -904,7 +892,7 @@ for i = 1,#TrailInfo do
 					}
 				}
 			}
-		}		
+		}
 		JetMesh = ""
 		TrailMesh = ""
 	end
@@ -955,7 +943,7 @@ for i = 1,#TrailInfo do
 			},
 			MXML_CHANGE_TABLE = {
 				{
-					REPLACE_TYPE = "ALL", 
+					REPLACE_TYPE = "ALL",
 					VALUE_CHANGE_TABLE = {
 						{"R",ColorsRgb[TrailInfo[i]["COLOR"]]["R"]},
 						{"G",ColorsRgb[TrailInfo[i]["COLOR"]]["G"]},
@@ -963,12 +951,12 @@ for i = 1,#TrailInfo do
 					}
 				}
 			}
-		}		
+		}
 		MbinChangeTables[#MbinChangeTables + 1] = {
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.SCENE.MBIN",
 			MXML_CHANGE_TABLE = {
 				{
-					SPECIAL_KEY_WORDS = {"Name","MATERIAL"}, 
+					SPECIAL_KEY_WORDS = {"Name","MATERIAL"},
 					VALUE_CHANGE_TABLE = {
 						{"Value","G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.MATERIAL.MBIN"}
 					}
@@ -979,7 +967,7 @@ for i = 1,#TrailInfo do
 			MBIN_FILE_SOURCE = "G/JP/MODELS/"..TrailInfo[i]["ID"].."/GJPT.MATERIAL.MBIN",
 			MXML_CHANGE_TABLE = {
 				{
-					SPECIAL_KEY_WORDS = {"Name","gDiffuseMap"}, 
+					SPECIAL_KEY_WORDS = {"Name","gDiffuseMap"},
 					VALUE_CHANGE_TABLE = {
 						{"Map","G/JP/DDS/"..TrailInfo[i]["ID"].."/GJPCORR.DDS"}
 					}
@@ -1012,14 +1000,14 @@ for i = 1,#TrailInfo do
 			},
 			{
 				SEC_EDIT = "SecCustomisation",
-				SPECIAL_KEY_WORDS = {"LocatorPrefix","JETFX_L","JetMesh","TkModelResource.xml"},
+				SPECIAL_KEY_WORDS = {"LocatorPrefix","JETFX_L","JetMesh","TkModelResource"},
 				VALUE_CHANGE_TABLE = {
 					{"FileName", JetMesh}
 				}
 			},
 			{
 				SEC_EDIT = "SecCustomisation",
-				SPECIAL_KEY_WORDS = {"LocatorPrefix","JETFX_L","Trail","TkModelResource.xml"},
+				SPECIAL_KEY_WORDS = {"LocatorPrefix","JETFX_L","Trail","TkModelResource"},
 				VALUE_CHANGE_TABLE = {
 					{"FileName",TrailMesh}
 				}
@@ -1033,14 +1021,14 @@ for i = 1,#TrailInfo do
 			},
 			{
 				SEC_EDIT = "SecCustomisation",
-				SPECIAL_KEY_WORDS = {"LocatorPrefix","JETFX_M","JetMesh","TkModelResource.xml"},
+				SPECIAL_KEY_WORDS = {"LocatorPrefix","JETFX_M","JetMesh","TkModelResource"},
 				VALUE_CHANGE_TABLE = {
 					{"FileName",JetMesh}
 				}
 			},
 			{
 				SEC_EDIT = "SecCustomisation",
-				SPECIAL_KEY_WORDS = {"LocatorPrefix","JETFX_M","Trail","TkModelResource.xml"},
+				SPECIAL_KEY_WORDS = {"LocatorPrefix","JETFX_M","Trail","TkModelResource"},
 				VALUE_CHANGE_TABLE = {
 					{"FileName",TrailMesh}
 				}
@@ -1054,14 +1042,14 @@ for i = 1,#TrailInfo do
 			},
 			{
 				SEC_EDIT = "SecCustomisation",
-				SPECIAL_KEY_WORDS = {"LocatorPrefix","JETFX_R","JetMesh","TkModelResource.xml"},
+				SPECIAL_KEY_WORDS = {"LocatorPrefix","JETFX_R","JetMesh","TkModelResource"},
 				VALUE_CHANGE_TABLE = {
 					{"FileName",JetMesh}
 				}
 			},
 			{
 				SEC_EDIT = "SecCustomisation",
-				SPECIAL_KEY_WORDS = {"LocatorPrefix","JETFX_R","Trail","TkModelResource.xml"},
+				SPECIAL_KEY_WORDS = {"LocatorPrefix","JETFX_R","Trail","TkModelResource"},
 				VALUE_CHANGE_TABLE = {
 					{"FileName",TrailMesh}
 				}
@@ -1114,7 +1102,7 @@ for i = 1,#TrailInfo do
 				SEC_ADD_NAMED = "SecPurchaseable"
 			}
 		}
-	}	
+	}
 	MbinChangeTables[#MbinChangeTables + 1] = {
 		MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
 		MXML_CHANGE_TABLE = {
@@ -1130,14 +1118,14 @@ for i = 1,#TrailInfo do
 			},
 			{
 				SEC_EDIT = "SecProduct",
-				SPECIAL_KEY_WORDS = {"Icon","TkTextureResource.xml"},
+				SPECIAL_KEY_WORDS = {"Icon","TkTextureResource"},
 				VALUE_CHANGE_TABLE = {
 					{"FileName","G/JP/DDS/SPECIAL.JETS.DDS"}
 				}
 			},
 			{
 				SEC_EDIT = "SecProduct",
-				SPECIAL_KEY_WORDS = {"HeroIcon","TkTextureResource.xml"},
+				SPECIAL_KEY_WORDS = {"HeroIcon","TkTextureResource"},
 				VALUE_CHANGE_TABLE = {
 					{"FileName","G/JP/DDS/HERO.JETS.DDS"}
 				}
@@ -1148,9 +1136,9 @@ for i = 1,#TrailInfo do
 				SEC_ADD_NAMED = "SecProduct"
 			}
 		}
-	}	
+	}
 	MbinChangeTables[#MbinChangeTables + 1] = {
-		MBIN_FILE_SOURCE = "LANGUAGE/NMS_GUMSK_ENGLISH.MBIN",
+		MBIN_FILE_SOURCE = "LocTable.MXML",
 		MXML_CHANGE_TABLE = {
 			{
 				SEC_EDIT = "SecLangTip",
@@ -1206,7 +1194,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_AUTHOR = Author,
 	LUA_AUTHOR = "Gumsk",
 	NMS_VERSION = GameVersion,
-	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
 	MODIFICATIONS = {{
 		MBIN_CHANGE_TABLE = MbinChangeTables
 	}}

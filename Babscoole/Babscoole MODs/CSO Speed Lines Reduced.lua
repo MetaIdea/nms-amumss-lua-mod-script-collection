@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"Length",3000},            -- Vanilla 10000, mod default 2000 // particles length
                 --{"Remove Cylinder Radius",2000},    -- Vanilla 2000, mod default 2000 // determines the radius of the clear view in front of the ship
                 {"Width",150},              -- Vanilla 500, mod default 150 // particles width
-                {"Alpha",0.15},             -- Vanilla 0.5, mod default 0.15 // particles transparency
+                {"Alpha",0.150000},             -- Vanilla 0.5, mod default 0.15 // particles transparency
               },
             },
           },

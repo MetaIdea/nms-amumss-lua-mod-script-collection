@@ -5,12 +5,12 @@
 -- Modifiers below must be >= 0 and < 1, if not the script will ignore the values and won't modify them.
 -- 0.75 = 75% color intensity // 0.5 = 50% // 0.25 = 25% // Etc...
 
-SPACE_SKY_COLOR_INTENSITY         = 0.4   -- Vanilla = 1 // Mod default = 0.4 // Multiplies the color intensity of the sky in space by this amount
-PLANET_NIGHT_SKY_COLOR_INTENSITY  = 0.4   -- Vanilla = 1 // Mod default = 0.4 // Multiplies the color intensity of the sky on planets at night by this amount
-SPACE_CLOUDS_COLOR_INTENSITY      = 0.5   -- Vanilla = 1 // Mod default = 0.6 // Multiplies the color intensity of "space clouds" (around nebulas) by this amount
-STAR_LIGHT_COLOR_INTENSITY        = 1     -- Vanilla = 1 // Mod default = 1 // Multiplies the color intensity of the light of the star by this amount
-NEBULA_COLOR_INTENSITY            = 0.6   -- Vanilla = 1 // Mod default = 0.6 // Multiplies the color intensity of nebulas by this amount
-SPACE_FOG_COLOR_INTENSITY         = 1     -- Vanilla = 1 // Mod default = 1 // Multiplies the color intensity of space fog by this amount
+SPACE_SKY_COLOR_INTENSITY         = 0.400000   -- Vanilla = 1 // Mod default = 0.4 // Multiplies the color intensity of the sky in space by this amount
+PLANET_NIGHT_SKY_COLOR_INTENSITY  = 0.400000   -- Vanilla = 1 // Mod default = 0.4 // Multiplies the color intensity of the sky on planets at night by this amount
+SPACE_CLOUDS_COLOR_INTENSITY      = 0.500000   -- Vanilla = 1 // Mod default = 0.6 // Multiplies the color intensity of "space clouds" (around nebulas) by this amount
+STAR_LIGHT_COLOR_INTENSITY        = 1.000000     -- Vanilla = 1 // Mod default = 1 // Multiplies the color intensity of the light of the star by this amount
+NEBULA_COLOR_INTENSITY            = 0.600000   -- Vanilla = 1 // Mod default = 0.6 // Multiplies the color intensity of nebulas by this amount
+SPACE_FOG_COLOR_INTENSITY         = 1.000000     -- Vanilla = 1 // Mod default = 1 // Multiplies the color intensity of space fog by this amount
 
 ---------------------------------------------
 ---------------------------------------------
@@ -64,7 +64,6 @@ for i = 1, #COLOR_MODIFICATIONS_TABLE do
         ["PRECEDING_KEY_WORDS"] = {COLOR_MODIFICATIONS_TABLE[i][2][j]},
         ["MATH_OPERATION"] = "*",
         ["REPLACE_TYPE"] = "ALL",
-        ["INTEGER_TO_FLOAT"] = "FORCE",
         ["VALUE_CHANGE_TABLE"] =
         {
           {"R",COLOR_MODIFICATIONS_TABLE[i][1]},

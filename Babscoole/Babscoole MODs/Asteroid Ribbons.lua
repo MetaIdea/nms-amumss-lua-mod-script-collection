@@ -128,7 +128,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
             {
               ["PRECEDING_KEY_WORDS"] = {"Rare Asteroid Noise Range Some Rares"},
-              ["INTEGER_TO_FLOAT"]    = "FORCE",
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"X", "0.498500"},
