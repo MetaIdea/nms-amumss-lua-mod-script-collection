@@ -11,14 +11,14 @@ NMS_MOD_DEFINITION_CONTAINER =
       {
         --Hasrvest all freighter farm in 1 go--
         {
-          ["MBIN_FILE_SOURCE"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/PLANTROOM/PARTS/FLOOR0/ENTITIES/INTERACTION.ENTITY.MBIN",
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\PLANTROOM\PARTS\FLOOR0\ENTITIES\INTERACTION.ENTITY.MBIN",
           ["MXML_CHANGE_TABLE"] =
           {
             {
               ["PRECEDING_KEY_WORDS"] = {"GcHarvestPlantAction"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Radius", "10000000"},
+                {"Radius", "50"},
               }
             }
           }

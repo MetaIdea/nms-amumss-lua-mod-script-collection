@@ -11,11 +11,11 @@ PRODUCT_BLUESTAR = "TECHFRAG" -- Nanite Cluster/ Default = GAS2 = Radon
 -- EDITABLE VALUES ABOVE THIS LINE. DON'T TOUCH BELOW UNLESS YOU KNOW WHAT YOU'RE DOING, IN WHICH CASE YOU KNOW MORE THAN ME ;)
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_speedystellarextractor.pak",
+["MOD_FILENAME"]    = "_speedystellarextractor",
 ["MOD_DESCRIPTION"] = "Improve max storage and cycle time of stellar extractor, and changes extractor products",
 ["MOD_AUTHOR"]      = "Roflnomish",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.50",
+["NMS_VERSION"]     = "6.18",
 ["MODIFICATIONS"]   =
     {
         {
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0\ENTITIES\EXTRACTORTERMINAL.ENTITY.MBIN"},
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "STELLAR2"},
