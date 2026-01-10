@@ -50,12 +50,12 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"LargeObjectCoverage", "AlwaysPlace"},
-                {"MaxAngle",            "46"},
-                {"MinScale ",           "1.66"},
-                {"MaxScale",            "1.67"},
-                {"MinScaleY",           "0.7"},
-                {"MaxScaleY",           "0.75"},
-                {"SlopeScaling",        "1.1"},
+                {"MaxAngle",            "46.000000"},
+                {"MinScale ",           "1.660000"},
+                {"MaxScale",            "1.670000"},
+                {"MinScaleY",           "0.700000"},
+                {"MaxScaleY",           "0.750000"},
+                {"SlopeScaling",        "1.100000"},
               }
             },
             {
@@ -64,10 +64,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -76,10 +76,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SECTION_UP_SPECIAL"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxRegionRadius",   "6"},
                 {"MaxImposterRadius", "6"},
               }
@@ -91,11 +91,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "8"},
-                {"IGNORE", "15"},
-                {"IGNORE", "25"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "8.000000"},
+                {"IGNORE", "15.000000"},
+                {"IGNORE", "25.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -104,15 +104,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeDensity",          "0.4"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeDensity",          "0.400000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "8"},
                 {"MaxImposterRadius",     "8"},
-                {"FadeOutStartDistance",  "80"},
-                {"FadeOutOffsetDistance", "15"},
-                {"FadeOutEndDistance",    "120"},
+                {"FadeOutStartDistance",  "80.000000"},
+                {"FadeOutOffsetDistance", "15.000000"},
+                {"FadeOutEndDistance",    "120.000000"},
               }
             },
             {
@@ -122,11 +122,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "10"},
-                {"IGNORE", "20"},
-                {"IGNORE", "35"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "10.000000"},
+                {"IGNORE", "20.000000"},
+                {"IGNORE", "35.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -228,13 +228,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"LargeObjectCoverage", "AlwaysPlace"},
-                {"MaxAngle",            "46"},
+                {"MaxAngle",            "46.000000"},
                 {"MatchGroundColour",   "true"},
-                {"MinScale ",           "1.66"},
-                {"MaxScale",            "1.67"},
-                {"MinScaleY",           "0.7"},
-                {"MaxScaleY",           "0.75"},
-                {"SlopeScaling",        "1.1"},
+                {"MinScale ",           "1.660000"},
+                {"MaxScale",            "1.670000"},
+                {"MinScaleY",           "0.700000"},
+                {"MaxScaleY",           "0.750000"},
+                {"SlopeScaling",        "1.100000"},
               }
             },
             {
@@ -243,10 +243,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -256,10 +256,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxRegionRadius",   "6"},
                 {"MaxImposterRadius", "6"},
               }
@@ -271,11 +271,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "8"},
-                {"IGNORE", "15"},
-                {"IGNORE", "25"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "8.000000"},
+                {"IGNORE", "15.000000"},
+                {"IGNORE", "25.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -284,15 +284,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeDensity",          "0.4"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeDensity",          "0.400000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "8"},
                 {"MaxImposterRadius",     "8"},
-                {"FadeOutStartDistance",  "80"},
-                {"FadeOutOffsetDistance", "15"},
-                {"FadeOutEndDistance",    "120"},
+                {"FadeOutStartDistance",  "80.000000"},
+                {"FadeOutOffsetDistance", "15.000000"},
+                {"FadeOutEndDistance",    "120.000000"},
               }
             },
             {
@@ -302,11 +302,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "10"},
-                {"IGNORE", "20"},
-                {"IGNORE", "35"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "10.000000"},
+                {"IGNORE", "20.000000"},
+                {"IGNORE", "35.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
           }
@@ -354,13 +354,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"LargeObjectCoverage", "AlwaysPlace"},
-                {"MaxAngle",            "46"},
-                {"MinScale ",           "1.66"},
-                {"MaxScale",            "1.67"},
-                {"MinScaleY",           "0.7"},
-                {"MaxScaleY",           "0.75"},
-                {"SlopeScaling",        "1.1"},
-                {"PatchEdgeScaling",    "0.5"},
+                {"MaxAngle",            "46.000000"},
+                {"MinScale ",           "1.660000"},
+                {"MaxScale",            "1.670000"},
+                {"MinScaleY",           "0.700000"},
+                {"MaxScaleY",           "0.750000"},
+                {"SlopeScaling",        "1.100000"},
+                {"PatchEdgeScaling",    "0.500000"},
               }
             },
             {
@@ -369,10 +369,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -383,11 +383,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "0"},
-                {"IGNORE", "0"},
-                {"IGNORE", "0"},
-                {"IGNORE", "0"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "0.000000"},
               }
             },
             {
@@ -396,14 +396,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",             "0.21"},
-                {"FlatDensity",          "0.36"},
-                {"SlopeDensity",         "0.4"},
-                {"SlopeMultiplier",      "1.1"},
+                {"Coverage",             "0.210000"},
+                {"FlatDensity",          "0.360000"},
+                {"SlopeDensity",         "0.400000"},
+                {"SlopeMultiplier",      "1.100000"},
                 {"MaxRegionRadius",      "6"},
                 {"MaxImposterRadius",    "6"},
-                {"FadeOutStartDistance", "35"},
-                {"FadeOutEndDistance",   "45"},
+                {"FadeOutStartDistance", "35.000000"},
+                {"FadeOutEndDistance",   "45.000000"},
               }
             },
             {
@@ -413,11 +413,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "8"},
-                {"IGNORE", "15"},
-                {"IGNORE", "25"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "8.000000"},
+                {"IGNORE", "15.000000"},
+                {"IGNORE", "25.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -426,15 +426,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeDensity",          "0.4"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeDensity",          "0.400000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "8"},
                 {"MaxImposterRadius",     "8"},
-                {"FadeOutStartDistance",  "80"},
-                {"FadeOutOffsetDistance", "15"},
-                {"FadeOutEndDistance",    "120"},
+                {"FadeOutStartDistance",  "80.000000"},
+                {"FadeOutOffsetDistance", "15.000000"},
+                {"FadeOutEndDistance",    "120.000000"},
               }
             },
             {
@@ -444,11 +444,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "10"},
-                {"IGNORE", "20"},
-                {"IGNORE", "35"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "10.000000"},
+                {"IGNORE", "20.000000"},
+                {"IGNORE", "35.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
           }
@@ -486,12 +486,12 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"LargeObjectCoverage", "AlwaysPlace"},
-                {"MaxAngle",            "46"},
-                {"MinScale ",           "2.01"},
-                {"MaxScale",            "2.02"},
-                {"MinScaleY",           "0.81"},
-                {"MaxScaleY",           "0.82"},
-                {"SlopeScaling",        "1.1"},
+                {"MaxAngle",            "46.000000"},
+                {"MinScale ",           "2.010000"},
+                {"MaxScale",            "2.020000"},
+                {"MinScaleY",           "0.810000"},
+                {"MaxScaleY",           "0.820000"},
+                {"SlopeScaling",        "1.100000"},
               }
             },
             {
@@ -500,10 +500,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -513,10 +513,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxRegionRadius",   "6"},
                 {"MaxImposterRadius", "6"},
               }
@@ -528,11 +528,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "4"},
-                {"IGNORE", "8"},
-                {"IGNORE", "15"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "4.000000"},
+                {"IGNORE", "8.000000"},
+                {"IGNORE", "15.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -541,15 +541,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeDensity",          "0.4"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeDensity",          "0.400000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "8"},
                 {"MaxImposterRadius",     "8"},
-                {"FadeOutStartDistance",  "80"},
-                {"FadeOutOffsetDistance", "15"},
-                {"FadeOutEndDistance",    "120"},
+                {"FadeOutStartDistance",  "80.000000"},
+                {"FadeOutOffsetDistance", "15.000000"},
+                {"FadeOutEndDistance",    "120.000000"},
               }
             },
             {
@@ -559,11 +559,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "10"},
-                {"IGNORE", "20"},
-                {"IGNORE", "35"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "10.000000"},
+                {"IGNORE", "20.000000"},
+                {"IGNORE", "35.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
           }
@@ -601,12 +601,12 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"LargeObjectCoverage", "AlwaysPlace"},
-                {"MaxAngle",            "46"},
-                {"MinScale ",           "1.66"},
-                {"MaxScale",            "1.67"},
-                {"MinScaleY",           "0.7"},
-                {"MaxScaleY",           "0.75"},
-                {"SlopeScaling",        "1.1"},
+                {"MaxAngle",            "46.000000"},
+                {"MinScale ",           "1.660000"},
+                {"MaxScale",            "1.670000"},
+                {"MinScaleY",           "0.700000"},
+                {"MaxScaleY",           "0.750000"},
+                {"SlopeScaling",        "1.100000"},
               }
             },
             {
@@ -615,10 +615,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -628,10 +628,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxRegionRadius",   "6"},
                 {"MaxImposterRadius", "6"},
               }
@@ -643,11 +643,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "8"},
-                {"IGNORE", "15"},
-                {"IGNORE", "25"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "8.000000"},
+                {"IGNORE", "15.000000"},
+                {"IGNORE", "25.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -656,15 +656,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeDensity",          "0.4"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeDensity",          "0.400000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "8"},
                 {"MaxImposterRadius",     "8"},
-                {"FadeOutStartDistance",  "80"},
-                {"FadeOutOffsetDistance", "15"},
-                {"FadeOutEndDistance",    "120"},
+                {"FadeOutStartDistance",  "80.000000"},
+                {"FadeOutOffsetDistance", "15.000000"},
+                {"FadeOutEndDistance",    "120.000000"},
               }
             },
             {
@@ -674,11 +674,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "10"},
-                {"IGNORE", "20"},
-                {"IGNORE", "35"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "10.000000"},
+                {"IGNORE", "20.000000"},
+                {"IGNORE", "35.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
           }
@@ -716,13 +716,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"LargeObjectCoverage", "AlwaysPlace"},
-                {"MaxAngle",            "46"},
-                {"MinScale ",           "2.01"},
-                {"MaxScale",            "2.02"},
-                {"MinScaleY",           "0.81"},
-                {"MaxScaleY",           "0.82"},
-                {"SlopeScaling",        "1.1"},
-                {"PatchEdgeScaling",    "0.5"},
+                {"MaxAngle",            "46.000000"},
+                {"MinScale ",           "2.010000"},
+                {"MaxScale",            "2.020000"},
+                {"MinScaleY",           "0.810000"},
+                {"MaxScaleY",           "0.820000"},
+                {"SlopeScaling",        "1.100000"},
+                {"PatchEdgeScaling",    "0.500000"},
               }
             },
             {
@@ -731,10 +731,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -744,10 +744,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxRegionRadius",   "6"},
                 {"MaxImposterRadius", "6"},
               }
@@ -759,11 +759,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "8"},
-                {"IGNORE", "15"},
-                {"IGNORE", "25"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "8.000000"},
+                {"IGNORE", "15.000000"},
+                {"IGNORE", "25.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -772,15 +772,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeDensity",          "0.4"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeDensity",          "0.400000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "8"},
                 {"MaxImposterRadius",     "8"},
-                {"FadeOutStartDistance",  "80"},
-                {"FadeOutOffsetDistance", "15"},
-                {"FadeOutEndDistance",    "120"},
+                {"FadeOutStartDistance",  "80.000000"},
+                {"FadeOutOffsetDistance", "15.000000"},
+                {"FadeOutEndDistance",    "120.000000"},
               }
             },
             {
@@ -790,11 +790,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "10"},
-                {"IGNORE", "20"},
-                {"IGNORE", "35"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "10.000000"},
+                {"IGNORE", "20.000000"},
+                {"IGNORE", "35.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
           }
@@ -840,12 +840,12 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"LargeObjectCoverage", "AlwaysPlace"},
-                {"MaxAngle",            "46"},
-                {"MinScale ",           "1.66"},
-                {"MaxScale",            "1.67"},
-                {"MinScaleY",           "0.7"},
-                {"MaxScaleY",           "0.75"},
-                {"SlopeScaling",        "1.1"},
+                {"MaxAngle",            "46.000000"},
+                {"MinScale ",           "1.660000"},
+                {"MaxScale",            "1.670000"},
+                {"MinScaleY",           "0.700000"},
+                {"MaxScaleY",           "0.750000"},
+                {"SlopeScaling",        "1.100000"},
               }
             },
             {
@@ -854,10 +854,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -867,10 +867,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxRegionRadius",   "6"},
                 {"MaxImposterRadius", "6"},
               }
@@ -882,11 +882,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "8"},
-                {"IGNORE", "15"},
-                {"IGNORE", "25"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "8.000000"},
+                {"IGNORE", "15.000000"},
+                {"IGNORE", "25.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -895,15 +895,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeDensity",          "0.4"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeDensity",          "0.400000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "8"},
                 {"MaxImposterRadius",     "8"},
-                {"FadeOutStartDistance",  "80"},
-                {"FadeOutOffsetDistance", "15"},
-                {"FadeOutEndDistance",    "120"},
+                {"FadeOutStartDistance",  "80.000000"},
+                {"FadeOutOffsetDistance", "15.000000"},
+                {"FadeOutEndDistance",    "120.000000"},
               }
             },
             {
@@ -913,11 +913,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "10"},
-                {"IGNORE", "20"},
-                {"IGNORE", "35"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "10.000000"},
+                {"IGNORE", "20.000000"},
+                {"IGNORE", "35.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
           }
@@ -957,14 +957,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Placement",           "GRASS"},
                 {"LargeObjectCoverage", "AlwaysPlace"},
-                {"MaxAngle",            "46"},
+                {"MaxAngle",            "46.000000"},
                 {"MatchGroundColour",   "true"},
-                {"MinScale ",           "1.66"},
-                {"MaxScale",            "1.67"},
-                {"MinScaleY",           "0.7"},
-                {"MaxScaleY",           "0.75"},
-                {"SlopeScaling",        "1.1"},
-                {"PatchEdgeScaling",    "0.5"},
+                {"MinScale ",           "1.660000"},
+                {"MaxScale",            "1.670000"},
+                {"MinScaleY",           "0.700000"},
+                {"MaxScaleY",           "0.750000"},
+                {"SlopeScaling",        "1.100000"},
+                {"PatchEdgeScaling",    "0.500000"},
                 {"CreaturesCanEat",     "false"},
               }
             },
@@ -974,10 +974,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -987,15 +987,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeDensity",          "0.4"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeDensity",          "0.400000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "6"},
                 {"MaxImposterRadius",     "6"},
-                {"FadeOutStartDistance",  "35"},
-                {"FadeOutEndDistance",    "45"},
-                {"FadeOutOffsetDistance", "5"},
+                {"FadeOutStartDistance",  "35.000000"},
+                {"FadeOutEndDistance",    "45.000000"},
+                {"FadeOutOffsetDistance", "5.000000"},
               }
             },
             {
@@ -1005,11 +1005,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "8"},
-                {"IGNORE", "15"},
-                {"IGNORE", "25"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "8.000000"},
+                {"IGNORE", "15.000000"},
+                {"IGNORE", "25.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -1021,22 +1021,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
           <Property name="QualityVariants" value="GcObjectSpawnDataVariant" _id="ULTRA">
             <Property name="ID" value="ULTRA" />
-            <Property name="Coverage" value="0.21" />
-            <Property name="FlatDensity" value="0.36" />
-            <Property name="SlopeDensity" value="0.4" />
-            <Property name="SlopeMultiplier" value="1.1" />
+            <Property name="Coverage" value="0.210000" />
+            <Property name="FlatDensity" value="0.360000" />
+            <Property name="SlopeDensity" value="0.400000" />
+            <Property name="SlopeMultiplier" value="1.100000" />
             <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="10" />
-              <Property value="20" />
-              <Property value="35" />
-              <Property value="180" />
+              <Property value="0.000000" />
+              <Property value="10.000000" />
+              <Property value="20.000000" />
+              <Property value="35.000000" />
+              <Property value="180.000000" />
             </Property>
             <Property name="MaxRegionRadius" value="8" />
             <Property name="MaxImposterRadius" value="8" />
-            <Property name="FadeOutStartDistance" value="80" />
-            <Property name="FadeOutEndDistance" value="120" />
-            <Property name="FadeOutOffsetDistance" value="15" />
+            <Property name="FadeOutStartDistance" value="80.000000" />
+            <Property name="FadeOutEndDistance" value="120.000000" />
+            <Property name="FadeOutOffsetDistance" value="15.000000" />
           </Property>
 ]]
             },
@@ -1060,13 +1060,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MaxAngle",         "46"},
-                {"MinScale ",        "1.51"},
-                {"MaxScale",         "1.52"},
-                {"MinScaleY",        "0.751"},
-                {"MaxScaleY",        "0.752"},
-                {"SlopeScaling",     "1.1"},
-                {"PatchEdgeScaling", "0.85"},
+                {"MaxAngle",         "46.000000"},
+                {"MinScale ",        "1.510000"},
+                {"MaxScale",         "1.520000"},
+                {"MinScaleY",        "0.751000"},
+                {"MaxScaleY",        "0.752000"},
+                {"SlopeScaling",     "1.100000"},
+                {"PatchEdgeScaling", "0.850000"},
               }
             },
             {
@@ -1075,10 +1075,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.185"},
-                {"FlatDensity",       "0.32"},
-                {"SlopeDensity",      "0.36"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.185000"},
+                {"FlatDensity",       "0.320000"},
+                {"SlopeDensity",      "0.360000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -1088,10 +1088,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.185"},
-                {"FlatDensity",       "0.32"},
-                {"SlopeDensity",      "0.36"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.185000"},
+                {"FlatDensity",       "0.320000"},
+                {"SlopeDensity",      "0.360000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxRegionRadius",   "8"},
                 {"MaxImposterRadius", "8"},
               }
@@ -1103,11 +1103,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "8"},
-                {"IGNORE", "15"},
-                {"IGNORE", "25"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "8.000000"},
+                {"IGNORE", "15.000000"},
+                {"IGNORE", "25.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -1119,22 +1119,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
           <Property name="QualityVariants" value="GcObjectSpawnDataVariant" _id="ULTRA">
             <Property name="ID" value="ULTRA" />
-            <Property name="Coverage" value="0.185" />
-            <Property name="FlatDensity" value="0.32" />
-            <Property name="SlopeDensity" value="0.36" />
-            <Property name="SlopeMultiplier" value="1.1" />
+            <Property name="Coverage" value="0.185000" />
+            <Property name="FlatDensity" value="0.320000" />
+            <Property name="SlopeDensity" value="0.360000" />
+            <Property name="SlopeMultiplier" value="1.100000" />
             <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="8" />
-              <Property value="15" />
-              <Property value="25" />
-              <Property value="180" />
+              <Property value="0.000000" />
+              <Property value="8.000000" />
+              <Property value="15.000000" />
+              <Property value="25.000000" />
+              <Property value="180.000000" />
             </Property>
             <Property name="MaxRegionRadius" value="8" />
             <Property name="MaxImposterRadius" value="8" />
-            <Property name="FadeOutStartDistance" value="80" />
-            <Property name="FadeOutEndDistance" value="120" />
-            <Property name="FadeOutOffsetDistance" value="15" />
+            <Property name="FadeOutStartDistance" value="80.000000" />
+            <Property name="FadeOutEndDistance" value="120.000000" />
+            <Property name="FadeOutOffsetDistance" value="15.000000" />
           </Property>
 ]]
             },
@@ -1180,12 +1180,12 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MaxAngle",     "46"},
-                {"MinScale " ,   "1.66"},
-                {"MaxScale",     "1.67"},
-                {"MinScaleY",    "0.7"},
-                {"MaxScaleY",    "0.75"},
-                {"SlopeScaling", "1.1"},
+                {"MaxAngle",     "46.000000"},
+                {"MinScale " ,   "1.660000"},
+                {"MaxScale",     "1.670000"},
+                {"MinScaleY",    "0.700000"},
+                {"MaxScaleY",    "0.750000"},
+                {"SlopeScaling", "1.100000"},
               }
             },
             {
@@ -1194,10 +1194,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -1207,10 +1207,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxRegionRadius",   "6"},
                 {"MaxImposterRadius", "6"},
               }
@@ -1222,11 +1222,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "8"},
-                {"IGNORE", "15"},
-                {"IGNORE", "25"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "8.000000"},
+                {"IGNORE", "15.000000"},
+                {"IGNORE", "25.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -1238,22 +1238,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
           <Property name="QualityVariants" value="GcObjectSpawnDataVariant" _id="ULTRA">
             <Property name="ID" value="ULTRA" />
-            <Property name="Coverage" value="0.21" />
-            <Property name="FlatDensity" value="0.36" />
-            <Property name="SlopeDensity" value="0.4" />
-            <Property name="SlopeMultiplier" value="1.1" />
+            <Property name="Coverage" value="0.210000" />
+            <Property name="FlatDensity" value="0.360000" />
+            <Property name="SlopeDensity" value="0.400000" />
+            <Property name="SlopeMultiplier" value="1.100000" />
             <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="10" />
-              <Property value="20" />
-              <Property value="35" />
-              <Property value="180" />
+              <Property value="0.000000" />
+              <Property value="10.000000" />
+              <Property value="20.000000" />
+              <Property value="35.000000" />
+              <Property value="180.000000" />
             </Property>
             <Property name="MaxRegionRadius" value="8" />
             <Property name="MaxImposterRadius" value="8" />
-            <Property name="FadeOutStartDistance" value="80" />
-            <Property name="FadeOutEndDistance" value="120" />
-            <Property name="FadeOutOffsetDistance" value="15" />
+            <Property name="FadeOutStartDistance" value="80.000000" />
+            <Property name="FadeOutEndDistance" value="120.000000" />
+            <Property name="FadeOutOffsetDistance" value="15.000000" />
           </Property>
 ]]
             },
@@ -1297,15 +1297,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"PlacementPriority",   "Low"},
                 {"LargeObjectCoverage", "AlwaysPlace"},
                 {"OverlapStyle",        "All"},
-                {"MaxAngle",            "46"},
-                {"MatchGroundColour",   "True"},
-                {"MinScale ",           "1.66"},
-                {"MaxScale",            "1.67"},
-                {"MinScaleY",           "0.7"},
-                {"MaxScaleY",           "0.75"},
-                {"SlopeScaling",        "1.1"},
-                {"PatchEdgeScaling",    "0.5"},
-                {"ShearWindStrength",   "0.75"},
+                {"MaxAngle",            "46.000000"},
+                {"MatchGroundColour",   "true"},
+                {"MinScale ",           "1.660000"},
+                {"MaxScale",            "1.670000"},
+                {"MinScaleY",           "0.700000"},
+                {"MaxScaleY",           "0.750000"},
+                {"SlopeScaling",        "1.100000"},
+                {"PatchEdgeScaling",    "0.500000"},
+                {"ShearWindStrength",   "0.750000"},
               }
             },
             {
@@ -1314,10 +1314,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -1328,11 +1328,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "0"},
-                {"IGNORE", "0"},
-                {"IGNORE", "0"},
-                {"IGNORE", "0"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "0.000000"},
               }
             },
             {
@@ -1341,15 +1341,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeDensity",          "0.4"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeDensity",          "0.400000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "6"},
                 {"MaxImposterRadius",     "6"},
-                {"FadeOutStartDistance",  "35"},
-                {"FadeOutOffsetDistance", "5"},
-                {"FadeOutEndDistance",    "45"},
+                {"FadeOutStartDistance",  "35.000000"},
+                {"FadeOutOffsetDistance", "5.000000"},
+                {"FadeOutEndDistance",    "45.000000"},
               }
             },
             {
@@ -1359,11 +1359,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "8"},
-                {"IGNORE", "15"},
-                {"IGNORE", "25"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "8.000000"},
+                {"IGNORE", "15.000000"},
+                {"IGNORE", "25.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -1372,14 +1372,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "8"},
                 {"MaxImposterRadius",     "8"},
-                {"FadeOutStartDistance",  "80"},
-                {"FadeOutOffsetDistance", "15"},
-                {"FadeOutEndDistance",    "120"},
+                {"FadeOutStartDistance",  "80.000000"},
+                {"FadeOutOffsetDistance", "15.000000"},
+                {"FadeOutEndDistance",    "120.000000"},
               }
             },
             {
@@ -1389,11 +1389,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "10"},
-                {"IGNORE", "20"},
-                {"IGNORE", "35"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "10.000000"},
+                {"IGNORE", "20.000000"},
+                {"IGNORE", "35.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
           }
@@ -1436,15 +1436,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"PlacementPriority",   "Low"},
                 {"LargeObjectCoverage", "AlwaysPlace"},
                 {"OverlapStyle",        "All"},
-                {"MaxAngle",            "46"},
+                {"MaxAngle",            "46.000000"},
                 {"MatchGroundColour",   "true"},
-                {"MinScale ",           "1.66"},
-                {"MaxScale",            "1.67"},
-                {"MinScaleY",           "0.7"},
-                {"MaxScaleY",           "0.75"},
-                {"SlopeScaling",        "1.1"},
-                {"PatchEdgeScaling",    "0.5"},
-                {"ShearWindStrength",   "0.75"},
+                {"MinScale ",           "1.660000"},
+                {"MaxScale",            "1.670000"},
+                {"MinScaleY",           "0.700000"},
+                {"MaxScaleY",           "0.750000"},
+                {"SlopeScaling",        "1.100000"},
+                {"PatchEdgeScaling",    "0.500000"},
+                {"ShearWindStrength",   "0.750000"},
               }
             },
             {
@@ -1453,10 +1453,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -1467,11 +1467,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "0"},
-                {"IGNORE", "0"},
-                {"IGNORE", "0"},
-                {"IGNORE", "0"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "0.000000"},
               }
             },
             {
@@ -1480,15 +1480,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeDensity",          "0.4"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeDensity",          "0.400000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "6"},
                 {"MaxImposterRadius",     "6"},
-                {"FadeOutStartDistance",  "35"},
-                {"FadeOutOffsetDistance", "5"},
-                {"FadeOutEndDistance",    "45"},
+                {"FadeOutStartDistance",  "35.000000"},
+                {"FadeOutOffsetDistance", "5.000000"},
+                {"FadeOutEndDistance",    "45.000000"},
               }
             },
             {
@@ -1498,11 +1498,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "8"},
-                {"IGNORE", "15"},
-                {"IGNORE", "25"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "8.000000"},
+                {"IGNORE", "15.000000"},
+                {"IGNORE", "25.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -1511,14 +1511,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "8"},
                 {"MaxImposterRadius",     "8"},
-                {"FadeOutStartDistance",  "80"},
-                {"FadeOutOffsetDistance", "15"},
-                {"FadeOutEndDistance",    "120"},
+                {"FadeOutStartDistance",  "80.000000"},
+                {"FadeOutOffsetDistance", "15.000000"},
+                {"FadeOutEndDistance",    "120.000000"},
               }
             },
             {
@@ -1528,11 +1528,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "10"},
-                {"IGNORE", "20"},
-                {"IGNORE", "35"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "10.000000"},
+                {"IGNORE", "20.000000"},
+                {"IGNORE", "35.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
           }
@@ -1570,13 +1570,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"LargeObjectCoverage", "AlwaysPlace"},
-                {"MaxAngle",            "46"},
-                {"MinScale ",           "1.66"},
-                {"MaxScale",            "1.67"},
-                {"MinScaleY",           "0.7"},
-                {"MaxScaleY",           "0.75"},
-                {"SlopeScaling",        "1.1"},
-                {"PatchEdgeScaling",    "0.5"},
+                {"MaxAngle",            "46.000000"},
+                {"MinScale ",           "1.660000"},
+                {"MaxScale",            "1.670000"},
+                {"MinScaleY",           "0.700000"},
+                {"MaxScaleY",           "0.750000"},
+                {"SlopeScaling",        "1.100000"},
+                {"PatchEdgeScaling",    "0.500000"},
               }
             },
             {
@@ -1585,10 +1585,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -1598,10 +1598,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxRegionRadius",   "6"},
                 {"MaxImposterRadius", "6"},
               }
@@ -1626,15 +1626,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeDensity",          "0.4"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeDensity",          "0.400000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "8"},
                 {"MaxImposterRadius",     "8"},
-                {"FadeOutStartDistance",  "80"},
-                {"FadeOutOffsetDistance", "15"},
-                {"FadeOutEndDistance",    "120"},
+                {"FadeOutStartDistance",  "80.000000"},
+                {"FadeOutOffsetDistance", "15.000000"},
+                {"FadeOutEndDistance",    "120.000000"},
               }
             },
             {
@@ -1644,11 +1644,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "10"},
-                {"IGNORE", "20"},
-                {"IGNORE", "35"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "10.000000"},
+                {"IGNORE", "20.000000"},
+                {"IGNORE", "35.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
           }
@@ -1686,14 +1686,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"LargeObjectCoverage", "AlwaysPlace"},
-                {"MaxAngle",            "46"},
-                {"MinScale ",           "1.66"},
-                {"MaxScale",            "1.67"},
-                {"MinScaleY",           "0.7"},
-                {"MaxScaleY",           "0.75"},
-                {"SlopeScaling",        "1.1"},
-                {"PatchEdgeScaling",    "0.5"},
-                {"ShearWindStrength",   "0.75"},
+                {"MaxAngle",            "46.000000"},
+                {"MinScale ",           "1.660000"},
+                {"MaxScale",            "1.670000"},
+                {"MinScaleY",           "0.700000"},
+                {"MaxScaleY",           "0.750000"},
+                {"SlopeScaling",        "1.100000"},
+                {"PatchEdgeScaling",    "0.500000"},
+                {"ShearWindStrength",   "0.750000"},
               }
             },
             {
@@ -1702,10 +1702,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxImposterRadius", "8"},
               }
             },
@@ -1715,10 +1715,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",          "0.21"},
-                {"FlatDensity",       "0.36"},
-                {"SlopeDensity",      "0.4"},
-                {"SlopeMultiplier",   "1.1"},
+                {"Coverage",          "0.210000"},
+                {"FlatDensity",       "0.360000"},
+                {"SlopeDensity",      "0.400000"},
+                {"SlopeMultiplier",   "1.100000"},
                 {"MaxRegionRadius",   "6"},
                 {"MaxImposterRadius", "6"},
               }
@@ -1730,11 +1730,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "8"},
-                {"IGNORE", "15"},
-                {"IGNORE", "25"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "8.000000"},
+                {"IGNORE", "15.000000"},
+                {"IGNORE", "25.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
             {
@@ -1743,15 +1743,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "QualityVariants", "QualityVariants"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Coverage",              "0.21"},
-                {"FlatDensity",           "0.36"},
-                {"SlopeDensity",          "0.4"},
-                {"SlopeMultiplier",       "1.1"},
+                {"Coverage",              "0.210000"},
+                {"FlatDensity",           "0.360000"},
+                {"SlopeDensity",          "0.400000"},
+                {"SlopeMultiplier",       "1.100000"},
                 {"MaxRegionRadius",       "8"},
                 {"MaxImposterRadius",     "8"},
-                {"FadeOutStartDistance",  "80"},
-                {"FadeOutOffsetDistance", "15"},
-                {"FadeOutEndDistance",    "120"},
+                {"FadeOutStartDistance",  "80.000000"},
+                {"FadeOutOffsetDistance", "15.000000"},
+                {"FadeOutEndDistance",    "120.000000"},
               }
             },
             {
@@ -1761,11 +1761,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ONCEINSIDE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"IGNORE", "0"},
-                {"IGNORE", "10"},
-                {"IGNORE", "20"},
-                {"IGNORE", "35"},
-                {"IGNORE", "180"},
+                {"IGNORE", "0.000000"},
+                {"IGNORE", "10.000000"},
+                {"IGNORE", "20.000000"},
+                {"IGNORE", "35.000000"},
+                {"IGNORE", "180.000000"},
               }
             },
           }

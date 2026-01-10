@@ -1,15 +1,15 @@
 --Probability variables by star type/color
 YELLOW = 0.30 --original 0.25
-GREEN  = 0.2 --original 0.15
-BLUE   = 0.2 --original 0.15
-RED    = 0.6  --original 0.5
+GREEN  = 0.2  --original 0.15
+BLUE   = 0.2  --original 0.15
+RED    = 0.55 --original 0.5
 PURPLE = 0    --original 0
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Pirate System Chance Modifier",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.58",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "Change probability of system being Outlaw\Pirate",
 ["MODIFICATIONS"]   =
   {

@@ -1,27 +1,27 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Hoofin It (No Teleporters)",
-["MOD_DESCRIPTION"] = "Disables all teleports.  Get there the long way.",
-["MOD_AUTHOR"]      = "Babscoole",
+["MOD_FILENAME"]    = "Longer and Shorter Days-1hr",
+["MOD_AUTHOR"]      = "Florian B. & Babscoole",
 ["NMS_VERSION"]     = "6.18",
+["MOD_DESCRIPTION"] = "30 minutes - is it too short or too long? You can now make days longer or shorter.",
 ["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =
       {
         {
-          ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+          ["MBIN_FILE_SOURCE"] = "GCSKYGLOBALS.GLOBALS.MBIN",
           ["MXML_CHANGE_TABLE"] =
           {
             {
               ["VALUE_CHANGE_TABLE"] =
               {
-	              {"EnableTeleporters", "false"}
+                {"DayLength", "3600"},
               }
             },
           }
         },
       }
-    }
+    },
   }
 }

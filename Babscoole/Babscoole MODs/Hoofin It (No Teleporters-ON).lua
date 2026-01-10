@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "No Interstellar Teleporters",
+["MOD_FILENAME"]    = "Hoofin It (No Teleporters-ON)",
 ["MOD_DESCRIPTION"] = "No Interstellar Teleporters",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "6.18",

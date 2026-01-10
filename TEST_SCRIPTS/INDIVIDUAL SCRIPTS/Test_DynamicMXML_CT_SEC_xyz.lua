@@ -113,11 +113,11 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 			MBIN_CHANGE_TABLE = {
 				{ --#1
 					MBIN_FILE_SOURCE	= procTechTable,
-					EXML_CHANGE_TABLE	= {
+					MXML_CHANGE_TABLE	= {
 						-- This table will be filled in automatically via a loop
 					}
 				},
-        
+
 				{ --#2
 					MBIN_FILE_SOURCE	= prodTable,
 					MBIN_FS_DISCARD		= "TRUE",
@@ -127,7 +127,7 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 						-- Thus, there is no need to merge anything here
 					}
 				},
-        
+
 				{ --#3
 					MBIN_FILE_SOURCE	= techTable,
 					EXML_CHANGE_TABLE	= {
@@ -150,7 +150,7 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 						},
 					}
 				},
-        
+
 			}
 		},
 	} --18 global replacements --20 on first pass
@@ -161,7 +161,7 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 
 -- We'll be referring to these often now to insert entries into them
 -- Cache them into variables to make referencing easier and faster
-local upgradeTable	= NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[1].EXML_CHANGE_TABLE
+local upgradeTable	= NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[1].MXML_CHANGE_TABLE
 print("*** Script information ***")
 printf("  type(upgradeTable) = %s",type(upgradeTable))
 local moduleTable	= NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[2].EXML_CHANGE_TABLE
@@ -190,7 +190,7 @@ for i = 1, #processClasses do
     -- else
       -- MyTable = i -- pass an integer
     -- end
-    
+
 		upgradeTable[#upgradeTable + 1] = {
 			-- For each eligible upgrade class, instruct AMUMSS to find
 			-- all eligible upgrade modules of that class
@@ -202,11 +202,11 @@ for i = 1, #processClasses do
 			-- and set up the next couple EXML_CHANGE_TABLE blocks
 			-- A loop cannot be used to achieve this, nor can functions outside
 			-- of this loop access the loop counter, so use VCT's 4th argument
-			-- to pass it in 
+			-- to pass it in
 			VCT = {
         -- Reminder: VCT arguments can be
-          -- 1st STRING: the "Property name=" OR "Property value=" we want to change the 'currentvalue' of  
-          -- 2nd STRING: a "newvalue" that will replace the original one in the EXML file OR a "anyFunctionName()" 
+          -- 1st STRING: the "Property name=" OR "Property value=" we want to change the 'currentvalue' of
+          -- 2nd STRING: a "newvalue" that will replace the original one in the EXML file OR a "anyFunctionName()"
           -- OPTIONAL 3rd STRING: see "NamedValue"
           -- OPTIONAL 4th STRING: arguments to the 2nd STRING "anyFunctionName()"
 				{"ID", "saveTechID()", "", MyTable}, -- passing a table
@@ -244,13 +244,13 @@ been called yet, so we can define them here after the first loop instead
      -- 3) nil or the retrieved "NamedValue", if it exist / was used as the 3rd parameter
      -- 4) nil, a STRING, a NUMBER, a BOOLEAN or a TableOfArguments
      --    as an 'ExtraArgToFunc' argument to 'anyFunctionName()'
-     
+
 function saveTechID(propName, savedValue, unusedVal, classIndex)
 	-- printf("        >>>>   propName = [%s]",tostring(propName))
 	-- printf("        >>>> savedValue = [%s]",tostring(savedValue))
 	-- printf("        >>>>  unusedVal = [%s]",tostring(unusedVal))
 	-- printf("        >>>> classIndex = [%s]",tostring(classIndex))
-  
+
   -- For each result, add/initialize a new subtable in the processUpgrades table
 	processUpgrades[#processUpgrades + 1] = {uTech, uModule, uTemplate, uSuffix}
 
@@ -330,7 +330,7 @@ end
 function addTechTableEntry(indexPos)
 	-- Cache the current module's subtable because of frequent referencing
 	local currentModule = processUpgrades[indexPos]
-	
+
 	-- For each module, we must perform all of the following tasks
 
 	templateTable[#templateTable + 1] = {

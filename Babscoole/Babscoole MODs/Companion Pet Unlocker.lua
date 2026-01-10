@@ -215,13 +215,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ALL",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"X",                        "0"},
-                {"Y",                        "0"},
-                {"Z",                        "0"},
-                {"UprightStrength",          "1"},
-                {"ScaleForNeutralLegSpread", "1.25"},
-                {"ScaleForMinLegSpread",     "0.5"},
-                {"ScaleForMaxLegSpread",     "4.75"},
+                {"X",                        "0.000000"},
+                {"Y",                        "0.000000"},
+                {"Z",                        "0.000000"},
+                {"UprightStrength",          "1.000000"},
+                {"ScaleForNeutralLegSpread", "1.250000"},
+                {"ScaleForMinLegSpread",     "0.500000"},
+                {"ScaleForMaxLegSpread",     "4.750000"},
               }
             },
             {
@@ -229,8 +229,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"Offset"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Y", "0.25"},
-                {"Z", "-0.125"},
+                {"Y", "0.250000"},
+                {"Z", "-0.125000"},
               }
             },
           }
@@ -244,9 +244,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"LegSpread",                "true"},
-                {"ScaleForNeutralLegSpread", "1.25"},
-                {"ScaleForMinLegSpread",     "0.5"},
-                {"ScaleForMaxLegSpread",     "4.75"},
+                {"ScaleForNeutralLegSpread", "1.250000"},
+                {"ScaleForMinLegSpread",     "0.500000"},
+                {"ScaleForMaxLegSpread",     "4.750000"},
                 {"IdleRidingAnim",           "RIDE_ANT_IDLE"},
                 {"DefaultRidingAnim",        "RIDE_ANT_WALK"},
               }
@@ -276,7 +276,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MinRideSize",      "0.1"},   --Smallest Viable
+                {"MinRideSize",      "0.100000"},   --Smallest Viable
                 {"AllowSleeping",    "true"},  --Original "false"
                 {"AggressiveSharks", "false"}, --Original "false"
                 {"PiedPiper",        "false"}, --Original "false"
@@ -418,9 +418,9 @@ local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBI
       {"PetEggFirstEggDelay",    CREATURE_INCUBATE_TIME}, --Original "86400"
       {"PetTrustChangeInterval", CREATURE_INCUBATE_TIME}, --Original "86400"
       {"CanAlwaysLayEgg",        "true"},                 --Original "false"
-      {"PetTrustOnAdoption",     "1"},                    --Original "0.6"
-      {"PetTrustOnHatch",        "1"},                    --Original "0.7"
-      {"PetMinTrust",            "1"},                    --Original "0.2"
+      {"PetTrustOnAdoption",     "1.000000"},             --Original "0.6"
+      {"PetTrustOnHatch",        "1.000000"},             --Original "0.7"
+      {"PetMinTrust",            "1.000000"},             --Original "0.2"
       {"PetEggModificationTime", "1"},                    --Original "5"
     }
   }
