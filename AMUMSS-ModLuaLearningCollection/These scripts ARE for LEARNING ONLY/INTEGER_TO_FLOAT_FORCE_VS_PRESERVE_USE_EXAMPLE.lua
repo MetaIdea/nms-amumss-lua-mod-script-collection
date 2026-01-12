@@ -2,7 +2,7 @@ GROWTH_TIME_MULTIPLIER = 0.137 --will cause the values to become FLOATs (ex.: 36
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "SpeedIncreaseGrowthAndHarvest.pak",
+["MOD_FILENAME"] 			= "SpeedIncreaseGrowthAndHarvest",
 ["MOD_AUTHOR"]				= "idea by bvstarmaiden, script by Mjjstral",
 ["NMS_VERSION"]				= "1.77",
 ["MODIFICATIONS"] 			= 

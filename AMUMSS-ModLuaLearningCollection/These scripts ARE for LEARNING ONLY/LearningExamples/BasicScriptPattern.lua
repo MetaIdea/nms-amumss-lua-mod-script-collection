@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]  = "GENERIC.pak",
+  ["MOD_FILENAME"]  = "GENERIC",
   ["MOD_AUTHOR"]    = "AMUMSS",
   ["LUA_AUTHOR"]    = "AMUMSS",
   ["NMS_VERSION"]   = "",

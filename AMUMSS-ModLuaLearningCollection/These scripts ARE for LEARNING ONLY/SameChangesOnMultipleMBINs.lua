@@ -6,7 +6,7 @@ BIOME_PROBABILITY_MULTIPLIER = 2
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]            = "CreatureSizeAndSpawnRateIncrease.pak",
+["MOD_FILENAME"]            = "CreatureSizeAndSpawnRateIncrease",
 ["MOD_AUTHOR"]              = "Pamehabai6 converted and adapted by Mjjstral",
 ["NMS_VERSION"]             = "1.77",
 ["MODIFICATIONS"]           =

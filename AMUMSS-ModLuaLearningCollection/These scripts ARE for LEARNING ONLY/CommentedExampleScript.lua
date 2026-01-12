@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "AlwaysDay.pak",
+["MOD_FILENAME"]            = "AlwaysDay",
 ["MOD_AUTHOR"]              = "Mjjstral",
 ["NMS_VERSION"]             = "1.77",           --version on first mod release
 ["MOD_DESCRIPTION"]         = "",         --optional, not used

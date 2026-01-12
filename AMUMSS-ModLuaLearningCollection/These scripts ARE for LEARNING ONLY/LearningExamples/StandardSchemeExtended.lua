@@ -2,7 +2,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = "_ZZZsome.pak",     --the name of the pak created (if not combined) - REQUIRED - "_ZZZ" to make it load ~last
+  ["MOD_FILENAME"]    = "_ZZZsome",     --the name of the pak created (if not combined) - REQUIRED - "_ZZZ" to make it load ~last
   ["MOD_AUTHOR"]      = "ItIsMe",           --optional, for reference only
   ["MOD_DESCRIPTION"] = "anything goes",    --optional, for reference only
   ["NMS_VERSION"]     = "1.77",             --optional, for reference only

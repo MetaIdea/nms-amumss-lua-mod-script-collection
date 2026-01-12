@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "NEW_PathFilename.pak",
+["MOD_FILENAME"]  = "NEW_PathFilename",
 ["MOD_AUTHOR"]    = "Wbertro",
 ["NMS_VERSION"]   = "2.0+",
 ["MODIFICATIONS"] =

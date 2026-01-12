@@ -82,7 +82,7 @@ GroupTable =  --Table defining the new groups and the subgroups which will be wi
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "grouptest.pak",
+["MOD_FILENAME"]  = "grouptest",
 ["MOD_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.52",
 ["MODIFICATIONS"] =

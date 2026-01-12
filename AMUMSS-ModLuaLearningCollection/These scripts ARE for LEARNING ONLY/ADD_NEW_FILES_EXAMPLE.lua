@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = ".pak",
+["MOD_FILENAME"]            = "SomeName",
 ["MOD_DESCRIPTION"]         = "",
 ["MOD_AUTHOR"]              = "",
 ["NMS_VERSION"]             = "1.77",

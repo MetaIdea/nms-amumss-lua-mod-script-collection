@@ -2,7 +2,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]          = "MyScript.pak",     --the name of the pak created (if not combined) - REQUIRED
+  ["MOD_FILENAME"]          = "MyScript",     --the name of the pak created (if not combined) - REQUIRED
   ["MOD_DESCRIPTION"]       = "",         --optional, for reference
   ["MOD_AUTHOR"]                = "",         --optional, for reference
   ["NMS_VERSION"]               = "2.0",     --optional, for reference

@@ -113,7 +113,7 @@ end
 -----------------------------------------------------------------------------------------
 NMS_MOD_DEFINITION_CONTAINER = {
 	{ -- no need to create a 'Multi-Container' script
-    MOD_FILENAME		= 'Test_GET_EXML_STRINGS.pak',
+    MOD_FILENAME		= 'Test_GET_EXML_STRINGS',
     MOD_AUTHOR			= 'lMonk, Wbertro',
     NMS_VERSION			= '4.64',
     MOD_DESCRIPTION		= mod_desc,

@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Always-SClass-MaxStats.pak",
+["MOD_FILENAME"]            = "Always-SClass-MaxStats",
 ["MOD_AUTHOR"]              = "dvkkha converted by Mjjstral",
 ["NMS_VERSION"]             = "1.77",
 ["MODIFICATIONS"]           =

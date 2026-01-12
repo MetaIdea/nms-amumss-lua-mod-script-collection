@@ -13,7 +13,7 @@ CraftyAdd1 =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]    = "Craftable_Stuff.pak",
+    ["MOD_FILENAME"]    = "Craftable_Stuff",
     ["MOD_AUTHOR"]      = "Copper Boltwire",
     ["NMS_VERSION"]     = "3.21",
     ["MODIFICATIONS"]   =

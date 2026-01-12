@@ -7,7 +7,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]    = "GFloor Heated EXAMPLE.pak",
+    ["MOD_FILENAME"]    = "GFloor Heated EXAMPLE",
     ["MOD_DESCRIPTION"] = "Basic floor pieces have hazard protection",
     ["MOD_AUTHOR"]      = "Gumsk+Kibbles",
     ["NMS_VERSION"]     = "303",

@@ -32,7 +32,7 @@ TEXT_TO_ADD = string.rep(TEXT_TO_ADD, WORDS_TO_LEARN - 1) --creates a text made 
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]          = "LearnMoreWords.pak",
+  ["MOD_FILENAME"]          = "LearnMoreWords",
   ["MOD_AUTHOR"]                = "ChoseSauvage converted by Mjjstral",
   ["MOD_DESCRIPTION"]       =
   [[

@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = ".pak",
+["MOD_FILENAME"]            = "",
 ["MOD_AUTHOR"]              = " converted and modified by Mjjstral",
 ["NMS_VERSION"]             = "1.77",
 ["MODIFICATIONS"]           =

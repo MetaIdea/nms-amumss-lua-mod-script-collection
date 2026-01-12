@@ -933,7 +933,7 @@ DelRecipe3 = {"RECIPE_3INPUT_ASTEROID3","RECIPE_3INPUT_LAND3","RECIPE_3INPUT_LAN
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]          = "NoMansScience.pak",
+  ["MOD_FILENAME"]          = "NoMansScience",
   ["MOD_AUTHOR"]                = "PetrikM",
   ["MOD_DESCRIPTION"]   =
     [[

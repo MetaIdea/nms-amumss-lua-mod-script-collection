@@ -2,7 +2,7 @@ DelCreature = {"SPIDER","FLOATSPIDER","ROCKCREATURE","SCUTTLER","CRAB"}  --The c
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Anti-Arachnophobia.pak",
+["MOD_FILENAME"]  = "Anti-Arachnophobia",
 ["MOD_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.48",
 ["MODIFICATIONS"] =

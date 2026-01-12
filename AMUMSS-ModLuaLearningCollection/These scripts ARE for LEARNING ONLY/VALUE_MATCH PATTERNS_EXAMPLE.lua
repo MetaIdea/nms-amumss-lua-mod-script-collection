@@ -5,7 +5,7 @@ BaseDescription = "EXTRACT from: Ground textures fix + water level fix + spawn d
 GameVersion = "3.67"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"]    = ModName.." for NMS "..GameVersion..".pak",
+    ["MOD_FILENAME"]    = ModName.." for NMS "..GameVersion.."",
     ["MOD_DESCRIPTION"] = BaseDescription,
     ["MOD_AUTHOR"]      = Author,
     ["LUA_AUTHOR"] 	    = LUAAuthor,

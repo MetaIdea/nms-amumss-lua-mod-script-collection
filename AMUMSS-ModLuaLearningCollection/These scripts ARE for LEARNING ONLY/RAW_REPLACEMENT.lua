@@ -3,7 +3,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "DONOTUSE_RAW_TEST.pak",
+["MOD_FILENAME"]            = "DONOTUSE_RAW_TEST",
 ["MOD_DESCRIPTION"]     = "",
 ["MOD_AUTHOR"]              = "",
 ["NMS_VERSION"]             = "1.77",

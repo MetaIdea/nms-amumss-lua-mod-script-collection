@@ -926,7 +926,7 @@ DelRecipe3 = {"R_NAME_3INPUT_ASTEROID1","R_NAME_3INPUT_ASTEROID3","R_NAME_3INPUT
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]          = "NoMansScience.pak",
+  ["MOD_FILENAME"]          = "NoMansScience",
   ["MOD_AUTHOR"]                = "PetrikM",
   ["MOD_DESCRIPTION"]   =
     [[

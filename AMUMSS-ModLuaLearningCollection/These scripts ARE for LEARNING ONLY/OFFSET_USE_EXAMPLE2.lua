@@ -2,7 +2,7 @@ LOD_DISTANCE_MULTIPLIER = 2
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "LodDistanceScale.pak",
+["MOD_FILENAME"]            = "LodDistanceScale",
 ["MOD_AUTHOR"]              = "Mjjstral",
 ["NMS_VERSION"]             = "1.77",
 ["MODIFICATIONS"]           =

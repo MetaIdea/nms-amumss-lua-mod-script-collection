@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "NoPirateSpawns.pak",
+["MOD_FILENAME"]            = "NoPirateSpawns",
 ["MOD_AUTHOR"]              = "Mjjstral",
 ["NMS_VERSION"]             = "1.77",
 ["MODIFICATIONS"]           =
