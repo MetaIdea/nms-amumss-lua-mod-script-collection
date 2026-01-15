@@ -27,9 +27,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"Full",                       "0.200000"},  --original 0.05
                 {"Weird",                      "0.200000"},  --original 0
                 {"HalfWeird",                  "0.200000"},  --original 0
-                {"Waterworld",                 "0.200000"},  --original 0
+                -- {"Waterworld",                 "0.200000"},  --original 0
                 {"GasGiant",                   "0.200000"},  --original 0
-                {"EnabledWhenPlanetHasNoNPCs", "true"}, --original false
+                -- {"EnabledWhenPlanetHasNoNPCs", "true"}, --original false
                 {"NumOverridesToGenerate",     "1"},    --original 0
               }
             },

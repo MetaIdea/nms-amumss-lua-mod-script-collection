@@ -662,6 +662,13 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Name",     "MODELS\CUSTOM\PROPS\GALTERMINAL"},
+                {"NameHash", "4011656333"},
+              }
+            },
+            {
               ["SPECIAL_KEY_WORDS"] =
               {
                 {"Name", "Logo14"},
@@ -678,9 +685,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["AUTO_GNH"] = "TRUE",
               ["ADD"] =
 [[
-    <Property name="Children" value="TkSceneNodeData">
-      <Property name="Name" value="Galaxy globe" />
-      <Property name="NameHash" value="1686203763" />
+    <Property name="Children" value="TkSceneNodeData" _index="16">
+      <Property name="Name" value="GALAXYGLOBE" />
+      <Property name="NameHash" value="2910429869" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.000000" />
@@ -695,11 +702,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\TOY_CORE.SCENE.MBIN" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="EMBEDGEOMETRY" />
           <Property name="Value" value="TRUE" />
         </Property>
@@ -715,13 +722,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["AUTO_GNH"] = "TRUE",
               ["ADD"] =
 [[
-        <Property name="Children" value="TkSceneNodeData">
-          <Property name="Name" value="BridgeScanner" />
+        <Property name="Children" value="TkSceneNodeData" _index="0">
+          <Property name="Name" value="BRIDGESCANNER" />
           <Property name="NameHash" value="1123079334" />
           <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0.000000" />
-            <Property name="TransY" value="1.000000" />
+            <Property name="TransY" value="2.000000" />
             <Property name="TransZ" value="0.000000" />
             <Property name="RotX" value="0.000000" />
             <Property name="RotY" value="0.000000" />
@@ -732,9 +739,9 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property name="Attributes" value="TkSceneNodeAttributeData">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="ATTACHMENT" />
-              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SCANROOM\PARTS\FLOOR0\ENTITIES\SCANROOMINTERACTION.ENTITY.MBIN" />
+              <Property name="Value" value="MODELS\CUSTOM\PROPS\GALTERMINAL\ENTITIES\GALTERMINAL.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -751,6 +758,22 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Value", "ODELS\EFFECTS\SPACECRAFT\BRIDGEFLOORMIST.SCENE.MBIN"},
               }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SCANROOM\PARTS\FLOOR0\ENTITIES\SCANROOMINTERACTION.ENTITY.MBIN", "MODELS\CUSTOM\PROPS\GALTERMINAL\ENTITIES\GALTERMINAL.ENTITY.MBIN","REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\CUSTOM\PROPS\GALTERMINAL\ENTITIES\GALTERMINAL.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Components", "GcMaintenanceComponentData"},
+              ["REMOVE"] = "SECTION"
             },
           }
         },
