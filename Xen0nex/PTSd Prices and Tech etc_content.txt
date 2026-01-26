@@ -2,218 +2,218 @@ This mod contains:
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\!PTSd Procedural Upgrade Adjustment.lua
-   MOD FILENAME: PTSd Procedural Upgrade Adjustment 5_12.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Adjusts Exocraft & Multi-tool Upgrade Module strength to account for using 5x upgrades instead of 3x. Differentiates the Sentinel & Autophage Exosuit upgrades>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\~PTSd Scan Rewards + Shops etc.lua
+        MOD FILENAME: PTSd Scan Rewards + Shops etc 6_03.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Adjusts scan & discovery rewards and items available in shops. Also changes % chance to spawn jellyfish / anglerfish underwater.>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 5_12
+         NMS VERSION: 6_03
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\!PTSd Scan Rewards + Shops etc.lua
-   MOD FILENAME: PTSd Scan Rewards + Shops etc 5_64.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Adjusts scan & discovery rewards and items available in shops. Also changes % chance to spawn jellyfish / anglerfish underwater.>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\~PTSd Procedural Upgrade Adjustment.lua
+        MOD FILENAME: PTSd Procedural Upgrade Adjustment 5_12.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Adjusts Exocraft & Multi-tool Upgrade Module strength to account for using 5x upgrades instead of 3x. Differentiates the Sentinel & Autophage Exosuit upgrades>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 5_64
+         NMS VERSION: 5_12
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\GRealityX.lua
-   MOD FILENAME: GRealityX 5_62a.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Gumsk
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Increases suit upgrade prices, changes initial suit & ship slots>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\~PTSd Exocraft scanner Changes.lua
+        MOD FILENAME: PTSd Exocraft scanner Changes6_10.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Removes Drop Pod from the options for Exocraft Scanner targets. Moves Monolith Scanning from Signal Booster Tau to Advanced Signal Booster to replace it. Splits Nautilon & Minotaur Scanners into 2 separate techs>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 5_62
+         NMS VERSION: 6_10
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\Market StabilityX.lua
-   MOD FILENAME: Market StabilityX 5_57a.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Exosolar
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Removes market crashing by narrowing the range in which prices can fluctuate, reduces the effect of player selling.>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\~PTSd Corvette module stats.lua
+        MOD FILENAME: PTSd Corvette module stats6_10.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Adjusts the bonuses and their strengths granted by Corvette modules, eliminates random variation of stat bonuses from Corvette modules>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 5_57
+         NMS VERSION: 6_10
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\New Milestones 2.2X.lua
-   MOD FILENAME: New Milestones 2.2X.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Lo2k
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<This mods changes milestones pacing>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\___MOD_BATCHNAME_PTSD5.lua
+        MOD FILENAME: PTSd Prices and Tech etc.pak
+       MOD BATCHNAME: PTSd Prices and Tech etc.pak
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 4.41
+         NMS VERSION: 470
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\PTSd Corvette module stats.lua
-   MOD FILENAME: PTSd Corvette module stats6_00.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Adjusts the bonuses and their strengths granted by Corvette modules, eliminates random variation of stat bonuses from Corvette modules>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\Reduced Launch Cost 41% 2.2X.lua
+        MOD FILENAME: Reduced Launch Cost 41% 2.4X.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Lo2k
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<This mods makes each launch costing 41% instead of 50% at base, to make the -20% Launch Cost Tech useful for all ship types.>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 6_00
+         NMS VERSION: 4.41
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\PTSd Exocraft scanner Changes.lua
-   MOD FILENAME: PTSd Exocraft scanner Changes5_58.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Removes Drop Pod from the options for Exocraft Scanner targets. Moves Monolith Scanning from Signal Booster Tau to Advanced Signal Booster to replace it. Splits Nautilon & Minotaur Scanners into 2 separate techs>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\PTSd Weaker Fleet Upgrades.lua
+        MOD FILENAME: PTSd Weaker Fleet Upgrades4_41.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Weakens Fleet Upgrade modules from giving 1~15% boost to 1~5% boosts>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 5_58
+         NMS VERSION: 4_41
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\PTSd More Expensive Costs etc.lua
-   MOD FILENAME: PTSd More Expensive Costs etc6_00.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Changes costs for Starship or Multi-Tool inventory slots, Broadcast Receivers, Pilot Slots, etc.>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\PTSd Starship Speed Rebalance.lua
+        MOD FILENAME: PTSd Starship Speed Rebalance6_00.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Makes all ships start out slower but end up faster with enough upgrades, tweaks balance of boosting speed for different ship types>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 6_00
+         NMS VERSION: 6_00
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\PTSd Product + Crafting Rebalance.lua
-   MOD FILENAME: PTSd Product + Crafting Rebalance6_00.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables.>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\PTSd Starship Power Settings.lua
+        MOD FILENAME: PTSd Power Settings443.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Rebalances the bonus/malus multipliers for the different starship Power settings>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 6_00
+         NMS VERSION: 443
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\PTSd Rebalanced Hazard Tech.lua
-   MOD FILENAME: PTSd Rebalanced Hazard Tech5_64.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Nerfs the procedural Hazard techs & Buffs the Hazard techs / upgrades which grant a % resistance to hazards to hopefully make them worth considering. Note that the different sources of +% hazard protection (multiple X Class upgrades all count as the same source) appear to stack multiplicatively with each other, and that X Class Hazard Upgrades receive significant adjacency bonuses. E.G. two fully surrounded X Class upgrades with +25% each will typically double your protection time against all hazards.>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\PTSd Rebalanced Hazard Tech.lua
+        MOD FILENAME: PTSd Rebalanced Hazard Tech5_64.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Nerfs the procedural Hazard techs & Buffs the Hazard techs / upgrades which grant a % resistance to hazards to hopefully make them worth considering. Note that the different sources of +% hazard protection (multiple X Class upgrades all count as the same source) appear to stack multiplicatively with each other, and that X Class Hazard Upgrades receive significant adjacency bonuses. E.G. two fully surrounded X Class upgrades with +25% each will typically double your protection time against all hazards.>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 5_64
+         NMS VERSION: 5_64
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\PTSd Starship Power Settings.lua
-   MOD FILENAME: PTSd Power Settings443.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Rebalances the bonus/malus multipliers for the different starship Power settings>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\PTSd Product + Crafting Rebalance.lua
+        MOD FILENAME: PTSd Product + Crafting Rebalance6_18.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables.>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 443
+         NMS VERSION: 6_18
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\PTSd Starship Speed Rebalance.lua
-   MOD FILENAME: PTSd Starship Speed Rebalance6_00.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Makes all ships start out slower but end up faster with enough upgrades, tweaks balance of boosting speed for different ship types>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\PTSd More Expensive Costs etc.lua
+        MOD FILENAME: PTSd More Expensive Costs etc6_03.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Changes costs for Starship or Multi-Tool inventory slots, Broadcast Receivers, Pilot Slots, etc.>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 6_00
+         NMS VERSION: 6_03
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\PTSd Starship Tech Changes.lua
-   MOD FILENAME: PTSd Starship Tech Changes6_00.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex and lMonk
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<  Changes to various aspects of starship speeds and charging.
+         SCRIPT NAME: PTSd Prices and Tech etc\New Milestones 2.2X.lua
+        MOD FILENAME: New Milestones 2.2X.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Lo2k
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<This mods changes milestones pacing>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+         NMS VERSION: 4.41
+
+=====================
+Original information:
+         SCRIPT NAME: PTSd Prices and Tech etc\Market StabilityX.lua
+        MOD FILENAME: Market StabilityX 5_57a.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Exosolar
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Removes market crashing by narrowing the range in which prices can fluctuate, reduces the effect of player selling.>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+         NMS VERSION: 5_57
+
+=====================
+Original information:
+         SCRIPT NAME: PTSd Prices and Tech etc\GRealityX.lua
+        MOD FILENAME: GRealityX 5_62a.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Gumsk
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Increases suit upgrade prices, changes initial suit & ship slots>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+         NMS VERSION: 5_62
+
+=====================
+Original information:
+         SCRIPT NAME: PTSd Prices and Tech etc\-PTSd Starship Tech Changes.lua
+        MOD FILENAME: PTSd Starship Tech Changes6_04.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex and lMonk
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<  Changes to various aspects of starship speeds and charging.
   Includes improvements to Living Ships and related quest timers from "Living Ship Upgrades" by lMonk
 >>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 6_00
+         NMS VERSION: 6_04
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\PTSd Tech + Upgrade + Unlock costs.lua
-   MOD FILENAME: PTSd Tech + Upgrade + Unlock costs6_00.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Greatly increases the cost for unlocking various technologies, blueprints, recipes, upgrades, mainly aiming for those found in the Anomaly>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\--PTSd Tech + Upgrade + Unlock costs.lua
+        MOD FILENAME: PTSd Tech + Upgrade + Unlock costs6_18.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Greatly increases the cost for unlocking various technologies, blueprints, recipes, upgrades, mainly aiming for those found in the Anomaly>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 6_00
+         NMS VERSION: 6_18
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\PTSd Weaker Fleet Upgrades.lua
-   MOD FILENAME: PTSd Weaker Fleet Upgrades4_41.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Weakens Fleet Upgrade modules from giving 1~15% boost to 1~5% boosts>>>
+         SCRIPT NAME: PTSd Prices and Tech etc\+PTSd Weapons Rebalance.lua
+        MOD FILENAME: PTSd Weapons Rebalance5_64.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Changes various properties of some player or NPC weapons to be more balanced>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 4_41
-
-=====================
-Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\PTSd Weapons Rebalance.lua
-   MOD FILENAME: PTSd Weapons Rebalance5_64.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Changes various properties of some player or NPC weapons to be more balanced>>>
-MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 5_64
-
-=====================
-Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\Reduced Launch Cost 41% 2.2X.lua
-   MOD FILENAME: Reduced Launch Cost 41% 2.4X.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Lo2k
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<This mods makes each launch costing 41% instead of 50% at base, to make the -20% Launch Cost Tech useful for all ship types.>>>
-MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 4.41
-
-=====================
-Original information:
-    SCRIPT NAME: PTSd Prices and Tech etc\___MOD_BATCHNAME_PTSD5.lua
-   MOD FILENAME: PTSd Prices and Tech etc.pak
-   MOD BATCHNAME: PTSd Prices and Tech etc.pak
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<>>>
-MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 470
+         NMS VERSION: 5_64

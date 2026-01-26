@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "5_64"
+GameVersion = "6_18"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -124,10 +124,10 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_142",	3,					90},				--Makes Faecium					x3		in	90 time
+		{"REFINERECIPE_142",	2,					180},				--Makes Faecium					x3		in	90 time
 		{
 			{"PLANT_POOP",		1},										--Requires Faecium				x1
-			{"OXYGEN",			2}										--Requires Oxygen				x1
+			{"OXYGEN",			1}										--Requires Oxygen				x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
@@ -492,7 +492,7 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_396",	2,					90},				--Makes Faecium					x1		in	90 time
+		{"REFINERECIPE_396",	4,					180},				--Makes Faecium					x1		in	90 time
 		{
 			{"GAS4",			1},										--Requires Methane				x1
 			{"CREATURE1",		1}										--Requires Mordite				x1
@@ -748,6 +748,67 @@ RecipeChanges =
 			{"LAND1",			2},										--Requires Ferrite Dust 		x1
 			{"OXYGEN",			1},										--Requires Oxygen 				x1
 			{"GREEN2",			2}										--Requires Emeril 				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_66",		2,					180},				--Makes Mordite					x2		in	180 time
+		{
+			{"PLANT_POOP",		3}										--Requires Faecium		 		x3
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_87",		1,					135},				--Makes Mordite					x1		in	20 time
+		{
+			{"LAUNCHSUB",		2},										--Requires Di-hydrogen	 		x1
+			{"FUEL2",			2}										--Requires Condensed Carbon		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_103",	3,					270},				--Makes Mordite					x1		in	90 time
+		{
+			{"FUEL1",			2},										--Requires Carbon	 			x1
+			{"ROBOT1",			2}										--Requires Pugneum		 		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_104",	3,					135},				--Makes Mordite					x2		in	90 time
+		{
+			{"FUEL2",			2},										--Requires Condensed Carbon		x1
+			{"ROBOT1",			2}										--Requires Pugneum		 		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_107",	3,					180},				--Makes Faecium					x3		in	90 time
+		{
+			{"FUEL1",			2},										--Requires Carbon	 			x2
+			{"CREATURE1",		1}										--Requires Mordite		 		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_108",	3,					90},				--Makes Faecium					x4		in	90 time
+		{
+			{"FUEL2",			2},										--Requires Condensed Carbon		x1
+			{"CREATURE1",		1}										--Requires Mordite		 		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_13",		3,					180},				--Makes Faecium					x1		in	60 time
+		{
+			{"CREATURE1",		2}										--Requires Mordite		 		x3
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_86",		1,					90},				--Makes Faecium					x1		in	20 time
+		{
+			{"LAUNCHSUB",		1},										--Requires Di-hydrogen	 		x1
+			{"FUEL1",			2}										--Requires Carbon				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_226",	2,					120},				--Makes Faecium					x1		in	60 time
+		{
+			{"GAS1",			3},										--Requires Sulphurine			x1
+			{"GAS3",			3}										--Requires Nitrogen		 		x1
 		}
 	},
 --Fixes the ratio for Cadmium > Chromatic Metal refining that oddly got changed in NMS v4.4 

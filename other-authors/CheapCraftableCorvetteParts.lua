@@ -3,6 +3,20 @@ local Types =
     PRODUCT = "Product",
     SUBSTANCE = "Substance"
 }
+
+local CorvetteSeasonalRewardsPartsList = {
+    "B_TUR_B",
+    "B_WNG_P",
+    "B_WNG_Q",
+    "B_WNG_R",
+    "B_SHL_E",
+    "B_STR_AA_N",
+    "B_DECO_Q_0",
+    "B_DECO_R",
+    "B_DECO_S",
+    "B_DECO_T",
+}
+
 local FullCorvettePartsList = {
     "B_COK_A",
     "B_COK_B",
@@ -497,7 +511,6 @@ local FullCorvettePartsList = {
     "B_STR_Y_NWTB1",
     "B_STR_Y_NWTB2",
     "B_STR_Y_NWTB3",
-    "B_STAIRS0",
     "B_GEN_0",
     "B_GEN_1",
     "B_GEN_2",
@@ -1886,6 +1899,49 @@ local VisibleCorvettePartsList = {
 	},
 }
 
+local CorvetteExpeditionPartsList = {
+    {
+        ProductId = "B_TUR_B",
+        IsGrouped = false,
+    },
+    {
+        ProductId = "B_WNG_P",
+        IsGrouped = false,
+    },
+    {
+        ProductId = "B_WNG_Q",
+        IsGrouped = false,
+    },
+    {
+        ProductId = "B_WNG_R",
+        IsGrouped = false,
+    },
+    {
+        ProductId = "B_SHL_E",
+        IsGrouped = false,
+    },
+    {
+        ProductId = "B_STR_AA_N",
+        IsGrouped = false,
+    },
+    {
+        ProductId = "B_DECO_Q_0",
+        IsGrouped = false,
+    },
+    {
+        ProductId = "B_DECO_R",
+        IsGrouped = false,
+    },
+    {
+        ProductId = "B_DECO_S",
+        IsGrouped = false,
+    },
+    {
+        ProductId = "B_DECO_T",
+        IsGrouped = false,
+    },
+}
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
     ["MOD_FILENAME"] 	    = "CheapCraftableCorvetteParts",
@@ -1925,6 +1981,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN",
                     ["MXML_CHANGE_TABLE"] = {}
                 },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/DEFAULTREALITY.MBIN",
+                    ["MXML_CHANGE_TABLE"] = {}
+                },
             }
         }
     }
@@ -1935,6 +1995,7 @@ local ProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHAN
 local ConsumablesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["MXML_CHANGE_TABLE"]
 local RewardsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["MXML_CHANGE_TABLE"]
 local BaseBuildingObjectsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["MXML_CHANGE_TABLE"]
+local BiggsStoreTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["MXML_CHANGE_TABLE"]
 
 function BuildDifficultyConfigSKWList(list)
     local SKWTable = {}
@@ -1995,14 +2056,25 @@ function CreateCraftableProducts()
 
     ProductTable[#ProductTable + 1] =
     {
-        SPECIAL_KEY_WORDS = {"Id", "B_TUR_B"},
+        SPECIAL_KEY_WORDS = BuildBaseObjectsSKWList(CorvetteSeasonalRewardsPartsList),
         VALUE_CHANGE_TABLE =
         {
             {"BaseValue","@/20.000000",},
             {"BuyMarkupMod","20.000000"},
         }
     }
-
+    for i = 1, #CorvetteSeasonalRewardsPartsList do
+        ProductTable[#ProductTable + 1] =
+        {
+            SPECIAL_KEY_WORDS = {"ID", CorvetteSeasonalRewardsPartsList[i],"TradeCategory","GcTradeCategory", },
+            PRECEDING_KEY_WORDS = {"TradeCategory"},
+            VALUE_CHANGE_TABLE =
+            {
+                {"TradeCategory","None",}
+            }
+        }
+        
+    end
     for i = 1, #VisibleCorvettePartsList do
         local ProductId = VisibleCorvettePartsList[i].ProductId
         local Requirements = VisibleCorvettePartsList[i].Requirements
@@ -2066,21 +2138,21 @@ function MakeCorvettePartsPickable()
     }
     BaseBuildingObjectsTable[#BaseBuildingObjectsTable+1] =
     {
-        -- also include the deadeye cannon
-        ["SKW"] = {"Id", "B_TUR_B"},
+        -- also include the seasonal rewards
+        ["SKW"] = BuildBaseObjectsSKWList(CorvetteSeasonalRewardsPartsList),
         ["VCT"] = {
             {"CanPickUp", true},
         },
     }
 end
-function CreateConsumables()
-    for i = 1, #VisibleCorvettePartsList do
+function CreateConsumables(PartsList)
+    for i = 1, #PartsList do
         ConsumablesTable[#ConsumablesTable+1] = 
         {
             ["SEC_EDIT"] = "CorvettePartsConsume",
             ["VALUE_CHANGE_TABLE"] = {
-                {"ID", VisibleCorvettePartsList[i].ProductId},
-                {"RewardID", "R_" .. VisibleCorvettePartsList[i].ProductId},
+                {"ID", PartsList[i].ProductId},
+                {"RewardID", "R_" .. PartsList[i].ProductId},
                 {"ButtonLocID", "Learn Blueprint"},
                 {"ButtonSubLocID", "Learn Blueprint"},
             }
@@ -2094,11 +2166,11 @@ function CreateConsumables()
     end
 end
 
-function CreateRewards()
-    for i = 1, #VisibleCorvettePartsList do
+function CreateRewards(PartsList)
+    for i = 1, #PartsList do
     local Reward = [[
-        <Property name="GenericTable" value="GcGenericRewardTableEntry" _id="R_]] .. VisibleCorvettePartsList[i].ProductId .. [[">
-            <Property name="Id" value="R_]] .. VisibleCorvettePartsList[i].ProductId .. [[" />
+        <Property name="GenericTable" value="GcGenericRewardTableEntry" _id="R_]] .. PartsList[i].ProductId .. [[">
+            <Property name="Id" value="R_]] .. PartsList[i].ProductId .. [[" />
             <Property name="List" value="GcRewardTableItemList">
                 <Property name="RewardChoice" value="GiveAll" />
                 <Property name="OverrideZeroSeed" value="false" />
@@ -2110,7 +2182,7 @@ function CreateRewards()
                         <Property name="LabelID" value="" />
                         <Property name="Reward" value="GcRewardSpecificProductRecipe">
                             <Property name="GcRewardSpecificProductRecipe">
-                                <Property name="ID" value="]] .. VisibleCorvettePartsList[i].ProductId .. [[" />
+                                <Property name="ID" value="]] .. PartsList[i].ProductId .. [[" />
                                 <Property name="Silent" value="false" />
                                 <Property name="HideInSeasonRewards" value="true" />
                                 <Property name="SeasonRewardFormat" value="" />
@@ -2118,8 +2190,8 @@ function CreateRewards()
                         </Property>
                     </Property>
                 ]]
-        if VisibleCorvettePartsList[i].IsGrouped == true then
-            local GroupedIds = VisibleCorvettePartsList[i].GroupedIds
+        if PartsList[i].IsGrouped == true then
+            local GroupedIds = PartsList[i].GroupedIds
             for j = 1, #GroupedIds do
                 Reward = Reward .. [[
                     <Property name="List" value="GcRewardTableItem">
@@ -2151,8 +2223,36 @@ function CreateRewards()
     }
     end
 end
+
+function CreateNewBiggsList(PartsList, indexStart)
+    local PresentProductsList = ""
+    for i = 1, #PartsList do
+        PresentProductsList = PresentProductsList .. [[
+            <Property name="AlwaysPresentProducts" value="]] .. PartsList[i].ProductId .. [[" _index="]] .. indexStart .. [[" />
+        ]]
+        indexStart = indexStart + 1
+    end
+    return PresentProductsList
+end
+
+function UpdateBiggsBasicProducts(PresentProductsList)
+    BiggsStoreTable[#BiggsStoreTable + 1] =
+    {
+        SPECIAL_KEY_WORDS = {"BiggsBasicShop","GcTradeData",},
+        PRECEDING_KEY_WORDS = {"AlwaysPresentProducts"},
+        ADD = PresentProductsList,
+    }
+end
+
 RemoveCorvetteKnownProducts()
 MakeCorvettePartsPickable()
 CreateCraftableProducts()
-CreateConsumables()
-CreateRewards()
+
+CreateRewards(VisibleCorvettePartsList)
+CreateConsumables(VisibleCorvettePartsList)
+CreateRewards(CorvetteExpeditionPartsList)
+CreateConsumables(CorvetteExpeditionPartsList)
+
+local BuyableParts = ""
+BuyableParts = BuyableParts .. CreateNewBiggsList(VisibleCorvettePartsList, 0) .. CreateNewBiggsList(CorvetteExpeditionPartsList, 200)
+UpdateBiggsBasicProducts(BuyableParts)

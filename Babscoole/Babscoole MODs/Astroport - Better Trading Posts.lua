@@ -153,26 +153,26 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD_OPTION"] = "ADDafterLINE",
               ["ADD"] =
 [[
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
-							<Property name="Name" value="NAVIGATION" />
-							<Property name="Value" value="FALSE" />
-						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-							<Property name="Name" value="TYPE" />
-							<Property name="Value" value="Box" />
-						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-							<Property name="Name" value="WIDTH" />
-							<Property name="Value" value="12.000000" />
-						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
-							<Property name="Name" value="HEIGHT" />
-							<Property name="Value" value="0.602820" />
-						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
-							<Property name="Name" value="DEPTH" />
-							<Property name="Value" value="12.000000" />
-						</Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+              <Property name="Name" value="NAVIGATION" />
+              <Property name="Value" value="FALSE" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+              <Property name="Name" value="TYPE" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+              <Property name="Name" value="WIDTH" />
+              <Property name="Value" value="12.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="Value" value="0.602820" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+              <Property name="Name" value="DEPTH" />
+              <Property name="Value" value="12.000000" />
+            </Property>
 ]]
             },
             {
@@ -218,22 +218,22 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD_OPTION"] = "ADDafterLINE",
               ["ADD"] =
 [[
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
-							<Property name="Name" value="NAVIGATION" />
-							<Property name="Value" value="FALSE" />
-						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-							<Property name="Name" value="TYPE" />
-							<Property name="Value" value="Cylinder" />
-						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-							<Property name="Name" value="RADIUS" />
-							<Property name="Value" value="6.060060" />
-						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
-							<Property name="Name" value="HEIGHT" />
-							<Property name="Value" value="0.249945" />
-						</Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+              <Property name="Name" value="NAVIGATION" />
+              <Property name="Value" value="FALSE" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+              <Property name="Name" value="TYPE" />
+              <Property name="Value" value="Cylinder" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+              <Property name="Name" value="RADIUS" />
+              <Property name="Value" value="6.060060" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="Value" value="0.249945" />
+            </Property>
 ]]
             },
           }
@@ -371,16 +371,16 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["AUTO_GNH"] = "TRUE",
               ["ADD"] =
 [[
-		<Property name="Children" value="TkSceneNodeData" _index="32">
+    <Property name="Children" value="TkSceneNodeData" _index="32">
       <Property name="Name" value="SnapGroup_ConnectN" />
       <Property name="NameHash" value="3631338615" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.000000" />
-				<Property name="TransY" value="0.500000" />
-				<Property name="TransZ" value="-5.750000" />
+        <Property name="TransY" value="0.500000" />
+        <Property name="TransZ" value="-5.750000" />
         <Property name="RotX" value="0.000000" />
-				<Property name="RotY" value="-90.000000" />
+        <Property name="RotY" value="-90.000000" />
         <Property name="RotZ" value="0.000000" />
         <Property name="ScaleX" value="0.500000" />
         <Property name="ScaleY" value="0.700000" />
@@ -388,15 +388,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_CORRIDORCONNECT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
-			</Property>
+      </Property>
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="33">
@@ -420,11 +420,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_DOORCONNECT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
-			</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
+      </Property>
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="34">
@@ -432,11 +432,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="NameHash" value="1405405991" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="5.750000" />
-				<Property name="TransY" value="0.500000" />
+        <Property name="TransX" value="5.750000" />
+        <Property name="TransY" value="0.500000" />
         <Property name="TransZ" value="0.000000" />
         <Property name="RotX" value="0.000000" />
-				<Property name="RotY" value="180.000000" />
+        <Property name="RotY" value="180.000000" />
         <Property name="RotZ" value="0.000000" />
         <Property name="ScaleX" value="0.500000" />
         <Property name="ScaleY" value="0.700000" />
@@ -444,15 +444,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_CORRIDORCONNECT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
       </Property>
-			</Property>
+      </Property>
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="35">
@@ -460,8 +460,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="NameHash" value="562751152" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="-5.750000" />
-				<Property name="TransY" value="0.500000" />
+        <Property name="TransX" value="-5.750000" />
+        <Property name="TransY" value="0.500000" />
         <Property name="TransZ" value="0.000000" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="0.000000" />
@@ -472,15 +472,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_CORRIDORCONNECT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
       </Property>
-			</Property>
+      </Property>
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="36">
@@ -504,11 +504,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\PANELGLASSGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
       </Property>
-			</Property>
+      </Property>
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="37">
@@ -528,13 +528,13 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\PANELGLASSGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -560,10 +560,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\PANELGLASSGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -588,10 +588,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\PANELGLASSGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -616,10 +616,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK_WINDOWMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -644,10 +644,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK_WINDOWMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -672,10 +672,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK_WINDOWMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -700,10 +700,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK_WINDOWMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -934,9 +934,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAXINTERIOR.SCENE.MBIN" />
             </Property>
-				    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-				    	<Property name="Name" value="EMBEDGEOMETRY" />
-				    	<Property name="Value" value="TRUE" />
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -1309,9 +1309,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEKINTERIOR.SCENE.MBIN" />
             </Property>
-				    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-				    	<Property name="Name" value="EMBEDGEOMETRY" />
-				    	<Property name="Value" value="TRUE" />
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -1684,9 +1684,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEENINTERIOR.SCENE.MBIN" />
             </Property>
-				    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-				    	<Property name="Name" value="EMBEDGEOMETRY" />
-				    	<Property name="Value" value="TRUE" />
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -2015,7 +2015,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="Children">
-		<Property name="Children" value="TkSceneNodeData" _index="0">
+    <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="GekFrame" />
       <Property name="NameHash" value="403487981" />
       <Property name="Type" value="REFERENCE" />
@@ -2036,14 +2036,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEKFRAME.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="1">
+    <Property name="Children" value="TkSceneNodeData" _index="1">
       <Property name="Name" value="Data" />
       <Property name="NameHash" value="2810148397" />
       <Property name="Type" value="LOCATOR" />
@@ -2067,7 +2067,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="2">
+    <Property name="Children" value="TkSceneNodeData" _index="2">
       <Property name="Name" value="Interior_" />
       <Property name="NameHash" value="309913048" />
       <Property name="Type" value="LOCATOR" />
@@ -2086,7 +2086,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="3">
+    <Property name="Children" value="TkSceneNodeData" _index="3">
       <Property name="Name" value="Layout_" />
       <Property name="NameHash" value="591504117" />
       <Property name="Type" value="LOCATOR" />
@@ -2105,7 +2105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="4">
+    <Property name="Children" value="TkSceneNodeData" _index="4">
       <Property name="Name" value="TriggerVolume" />
       <Property name="NameHash" value="3846031098" />
       <Property name="Type" value="LOCATOR" />
@@ -2129,7 +2129,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="5">
+    <Property name="Children" value="TkSceneNodeData" _index="5">
       <Property name="Name" value="NAV_NODE11" />
       <Property name="NameHash" value="1551864077" />
       <Property name="Type" value="LOCATOR" />
@@ -2148,7 +2148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="6">
+    <Property name="Children" value="TkSceneNodeData" _index="6">
       <Property name="Name" value="NAV_NODE10" />
       <Property name="NameHash" value="964119293" />
       <Property name="Type" value="LOCATOR" />
@@ -2167,7 +2167,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="7">
+    <Property name="Children" value="TkSceneNodeData" _index="7">
       <Property name="Name" value="NAV_NODE9" />
       <Property name="NameHash" value="432856537" />
       <Property name="Type" value="LOCATOR" />
@@ -2186,7 +2186,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="8">
+    <Property name="Children" value="TkSceneNodeData" _index="8">
       <Property name="Name" value="NAV_NODE8" />
       <Property name="NameHash" value="666466738" />
       <Property name="Type" value="LOCATOR" />
@@ -2205,7 +2205,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="9">
+    <Property name="Children" value="TkSceneNodeData" _index="9">
       <Property name="Name" value="NAV_NODE7" />
       <Property name="NameHash" value="3723355672" />
       <Property name="Type" value="LOCATOR" />
@@ -2224,12 +2224,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="10">
+    <Property name="Children" value="TkSceneNodeData" _index="10">
       <Property name="Name" value="NAV_NODE6" />
       <Property name="NameHash" value="2896233343" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="31.3105659" />
+        <Property name="TransX" value="31.3105659" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="0.067042" />
         <Property name="RotX" value="0.000000" />
@@ -2243,7 +2243,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="11">
+    <Property name="Children" value="TkSceneNodeData" _index="11">
       <Property name="Name" value="NAV_NODE5" />
       <Property name="NameHash" value="2231972944" />
       <Property name="Type" value="LOCATOR" />
@@ -2262,7 +2262,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="12">
+    <Property name="Children" value="TkSceneNodeData" _index="12">
       <Property name="Name" value="NAV_NODE4" />
       <Property name="NameHash" value="3545714923" />
       <Property name="Type" value="LOCATOR" />
@@ -2281,7 +2281,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="13">
+    <Property name="Children" value="TkSceneNodeData" _index="13">
       <Property name="Name" value="NAV_NODE3" />
       <Property name="NameHash" value="2845638007" />
       <Property name="Type" value="LOCATOR" />
@@ -2300,7 +2300,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="14">
+    <Property name="Children" value="TkSceneNodeData" _index="14">
       <Property name="Name" value="NAV_NODE2" />
       <Property name="NameHash" value="2009143744" />
       <Property name="Type" value="LOCATOR" />
@@ -2319,7 +2319,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="15">
+    <Property name="Children" value="TkSceneNodeData" _index="15">
       <Property name="Name" value="NAV_NODE1" />
       <Property name="NameHash" value="730038586" />
       <Property name="Type" value="LOCATOR" />
@@ -2338,12 +2338,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="16">
+    <Property name="Children" value="TkSceneNodeData" _index="16">
       <Property name="Name" value="NAV_NODE12" />
       <Property name="NameHash" value="3401543051" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="28.3173752" />
+        <Property name="TransX" value="28.3173752" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="-3.062418" />
         <Property name="RotX" value="0.000000" />
@@ -2357,12 +2357,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="17">
+    <Property name="Children" value="TkSceneNodeData" _index="17">
       <Property name="Name" value="NAV_NODE13" />
       <Property name="NameHash" value="2147637266" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="28.3173752" />
+        <Property name="TransX" value="28.3173752" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="-7.277036" />
         <Property name="RotX" value="0.000000" />
@@ -2376,12 +2376,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="18">
+    <Property name="Children" value="TkSceneNodeData" _index="18">
       <Property name="Name" value="NAV_NODE14" />
       <Property name="NameHash" value="1856779622" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="28.3173752" />
+        <Property name="TransX" value="28.3173752" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="2.706280" />
         <Property name="RotX" value="0.000000" />
@@ -2395,12 +2395,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="19">
+    <Property name="Children" value="TkSceneNodeData" _index="19">
       <Property name="Name" value="NAV_NODE15" />
       <Property name="NameHash" value="3993154573" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="28.3173752" />
+        <Property name="TransX" value="28.3173752" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="7.192095" />
         <Property name="RotX" value="0.000000" />
@@ -2414,7 +2414,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="20">
+    <Property name="Children" value="TkSceneNodeData" _index="20">
       <Property name="Name" value="NAV_NODE16" />
       <Property name="NameHash" value="3703837072" />
       <Property name="Type" value="LOCATOR" />
@@ -2433,7 +2433,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="21">
+    <Property name="Children" value="TkSceneNodeData" _index="21">
       <Property name="Name" value="NAV_NODE17" />
       <Property name="NameHash" value="307330218" />
       <Property name="Type" value="LOCATOR" />
@@ -2452,7 +2452,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="22">
+    <Property name="Children" value="TkSceneNodeData" _index="22">
       <Property name="Name" value="NAV_NODE18" />
       <Property name="NameHash" value="59760423" />
       <Property name="Type" value="LOCATOR" />
@@ -2471,7 +2471,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="23">
+    <Property name="Children" value="TkSceneNodeData" _index="23">
       <Property name="Name" value="NAV_NODE19" />
       <Property name="NameHash" value="665724771" />
       <Property name="Type" value="LOCATOR" />
@@ -2490,7 +2490,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="24">
+    <Property name="Children" value="TkSceneNodeData" _index="24">
       <Property name="Name" value="NAV_NODE20" />
       <Property name="NameHash" value="3427595866" />
       <Property name="Type" value="LOCATOR" />
@@ -2509,7 +2509,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="25">
+    <Property name="Children" value="TkSceneNodeData" _index="25">
       <Property name="Name" value="NAV_NODE21" />
       <Property name="NameHash" value="3197295334" />
       <Property name="Type" value="LOCATOR" />
@@ -2528,7 +2528,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="26">
+    <Property name="Children" value="TkSceneNodeData" _index="26">
       <Property name="Name" value="NAV_NODE22" />
       <Property name="NameHash" value="4020550929" />
       <Property name="Type" value="LOCATOR" />
@@ -2547,7 +2547,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="27">
+    <Property name="Children" value="TkSceneNodeData" _index="27">
       <Property name="Name" value="NAV_NODE23" />
       <Property name="NameHash" value="826425431" />
       <Property name="Type" value="LOCATOR" />
@@ -2566,13 +2566,13 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="28">
+    <Property name="Children" value="TkSceneNodeData" _index="28">
       <Property name="Name" value="NAV_NODE24" />
       <Property name="NameHash" value="1669932260" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-5.599998" />
-				<Property name="TransY" value="13.0126562" />
+        <Property name="TransY" value="13.0126562" />
         <Property name="TransZ" value="0.067042" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="0.000000" />
@@ -2585,7 +2585,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="29">
+    <Property name="Children" value="TkSceneNodeData" _index="29">
       <Property name="Name" value="NAV_NODE25" />
       <Property name="NameHash" value="1436748056" />
       <Property name="Type" value="LOCATOR" />
@@ -2604,7 +2604,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="30">
+    <Property name="Children" value="TkSceneNodeData" _index="30">
       <Property name="Name" value="NAV_NODE26" />
       <Property name="NameHash" value="2280058271" />
       <Property name="Type" value="LOCATOR" />
@@ -2623,7 +2623,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="31">
+    <Property name="Children" value="TkSceneNodeData" _index="31">
       <Property name="Name" value="NAV_NODE27" />
       <Property name="NameHash" value="2077742465" />
       <Property name="Type" value="LOCATOR" />
@@ -2642,7 +2642,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="32">
+    <Property name="Children" value="TkSceneNodeData" _index="32">
       <Property name="Name" value="NAV_NODE28" />
       <Property name="NameHash" value="2881566035" />
       <Property name="Type" value="LOCATOR" />
@@ -2661,7 +2661,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="33">
+    <Property name="Children" value="TkSceneNodeData" _index="33">
       <Property name="Name" value="NAV_NODE29" />
       <Property name="NameHash" value="2642876639" />
       <Property name="Type" value="LOCATOR" />
@@ -2680,7 +2680,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="34">
+    <Property name="Children" value="TkSceneNodeData" _index="34">
       <Property name="Name" value="NAV_NODE30" />
       <Property name="NameHash" value="384404754" />
       <Property name="Type" value="LOCATOR" />
@@ -2699,7 +2699,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="35">
+    <Property name="Children" value="TkSceneNodeData" _index="35">
       <Property name="Name" value="NAV_NODE31" />
       <Property name="NameHash" value="1121903856" />
       <Property name="Type" value="LOCATOR" />
@@ -2718,7 +2718,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="36">
+    <Property name="Children" value="TkSceneNodeData" _index="36">
       <Property name="Name" value="NAV_NODE32" />
       <Property name="NameHash" value="1351712853" />
       <Property name="Type" value="LOCATOR" />
@@ -2737,7 +2737,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="37">
+    <Property name="Children" value="TkSceneNodeData" _index="37">
       <Property name="Name" value="NAV_NODE33" />
       <Property name="NameHash" value="1845738297" />
       <Property name="Type" value="LOCATOR" />
@@ -2756,7 +2756,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="38">
+    <Property name="Children" value="TkSceneNodeData" _index="38">
       <Property name="Name" value="NAV_NODE34" />
       <Property name="NameHash" value="2074990221" />
       <Property name="Type" value="LOCATOR" />
@@ -2775,7 +2775,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="39">
+    <Property name="Children" value="TkSceneNodeData" _index="39">
       <Property name="Name" value="NAV_NODE35" />
       <Property name="NameHash" value="2341369422" />
       <Property name="Type" value="LOCATOR" />
@@ -2794,9 +2794,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="40">
-			<Property name="Name" value="RefTradingPost_SupportN" />
-			<Property name="NameHash" value="1950080726" />
+    <Property name="Children" value="TkSceneNodeData" _index="40">
+      <Property name="Name" value="RefTradingPost_SupportN" />
+      <Property name="NameHash" value="1950080726" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="33.000000" />
@@ -2815,14 +2815,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="41">
+    <Property name="Children" value="TkSceneNodeData" _index="41">
       <Property name="Name" value="RefTradingPost_SupportS" />
       <Property name="NameHash" value="377758572" />
       <Property name="Type" value="REFERENCE" />
@@ -2843,10 +2843,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -2871,10 +2871,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -2899,10 +2899,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -2927,10 +2927,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -2955,10 +2955,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -2983,10 +2983,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3011,10 +3011,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3039,10 +3039,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3067,10 +3067,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3095,10 +3095,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3123,10 +3123,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3151,10 +3151,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3179,10 +3179,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3207,10 +3207,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3235,10 +3235,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3263,10 +3263,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\GEK\GEKLANDINGTUBEMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3291,10 +3291,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\GEK\GEKLANDINGTUBEMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3319,10 +3319,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3347,10 +3347,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3375,10 +3375,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK1LANDINGPAD_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3403,10 +3403,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK1LANDINGPAD_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3431,10 +3431,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK3LANDINGPAD_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3459,14 +3459,42 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK3LANDINGPAD_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="64">
+      <Property name="Name" value="BIGGSPLATFORM_HOVERPAD_DOCK1" />
+      <Property name="NameHash" value="979371473" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="-35.000000" />
+        <Property name="TransY" value="16.000000" />
+        <Property name="TransZ" value="-115.000000" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="180.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="1.000000" />
+        <Property name="ScaleY" value="1.000000" />
+        <Property name="ScaleZ" value="1.000000" />
+      </Property>
+      <Property name="PlatformExclusion" value="0" />
+      <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\BIGGS\BIGGSLANDINGZONE.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property name="Children" value="TkSceneNodeData" _index="65">
       <Property name="Name" value="RefLadder3" />
       <Property name="NameHash" value="312023998" />
       <Property name="Type" value="REFERENCE" />
@@ -3487,14 +3515,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\LADDER.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="65">
+    <Property name="Children" value="TkSceneNodeData" _index="66">
       <Property name="Name" value="RefLadder" />
       <Property name="NameHash" value="4249009587" />
       <Property name="Type" value="REFERENCE" />
@@ -3515,10 +3543,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\LADDER.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3559,7 +3587,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="Children">
-		<Property name="Children" value="TkSceneNodeData" _index="0">
+    <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="KORVAXFRAME" />
       <Property name="NameHash" value="2721678894" />
       <Property name="Type" value="REFERENCE" />
@@ -3580,10 +3608,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAXFRAME.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -3608,14 +3636,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_FLOOR_3.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="2">
+    <Property name="Children" value="TkSceneNodeData" _index="2">
       <Property name="Name" value="Data" />
       <Property name="NameHash" value="2810148397" />
       <Property name="Type" value="LOCATOR" />
@@ -3632,14 +3660,14 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="3">
+    <Property name="Children" value="TkSceneNodeData" _index="3">
       <Property name="Name" value="Interior_" />
       <Property name="NameHash" value="309913048" />
       <Property name="Type" value="LOCATOR" />
@@ -3658,7 +3686,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="4">
+    <Property name="Children" value="TkSceneNodeData" _index="4">
       <Property name="Name" value="Layout_" />
       <Property name="NameHash" value="591504117" />
       <Property name="Type" value="LOCATOR" />
@@ -3677,7 +3705,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="5">
+    <Property name="Children" value="TkSceneNodeData" _index="5">
       <Property name="Name" value="TriggerVolume" />
       <Property name="NameHash" value="3846031098" />
       <Property name="Type" value="LOCATOR" />
@@ -3694,14 +3722,14 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRIGGERVOLUME.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="6">
+    <Property name="Children" value="TkSceneNodeData" _index="6">
       <Property name="Name" value="NAV_NODE11" />
       <Property name="NameHash" value="1551864077" />
       <Property name="Type" value="LOCATOR" />
@@ -3720,7 +3748,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="7">
+    <Property name="Children" value="TkSceneNodeData" _index="7">
       <Property name="Name" value="NAV_NODE10" />
       <Property name="NameHash" value="964119293" />
       <Property name="Type" value="LOCATOR" />
@@ -3739,7 +3767,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="8">
+    <Property name="Children" value="TkSceneNodeData" _index="8">
       <Property name="Name" value="NAV_NODE9" />
       <Property name="NameHash" value="432856537" />
       <Property name="Type" value="LOCATOR" />
@@ -3758,7 +3786,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="9">
+    <Property name="Children" value="TkSceneNodeData" _index="9">
       <Property name="Name" value="NAV_NODE8" />
       <Property name="NameHash" value="666466738" />
       <Property name="Type" value="LOCATOR" />
@@ -3777,7 +3805,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="10">
+    <Property name="Children" value="TkSceneNodeData" _index="10">
       <Property name="Name" value="NAV_NODE7" />
       <Property name="NameHash" value="3723355672" />
       <Property name="Type" value="LOCATOR" />
@@ -3796,12 +3824,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="11">
+    <Property name="Children" value="TkSceneNodeData" _index="11">
       <Property name="Name" value="NAV_NODE6" />
       <Property name="NameHash" value="2896233343" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="31.3105659" />
+        <Property name="TransX" value="31.3105659" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="0.067042" />
         <Property name="RotX" value="0.000000" />
@@ -3815,7 +3843,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="12">
+    <Property name="Children" value="TkSceneNodeData" _index="12">
       <Property name="Name" value="NAV_NODE5" />
       <Property name="NameHash" value="2231972944" />
       <Property name="Type" value="LOCATOR" />
@@ -3834,7 +3862,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="13">
+    <Property name="Children" value="TkSceneNodeData" _index="13">
       <Property name="Name" value="NAV_NODE4" />
       <Property name="NameHash" value="3545714923" />
       <Property name="Type" value="LOCATOR" />
@@ -3853,7 +3881,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="14">
+    <Property name="Children" value="TkSceneNodeData" _index="14">
       <Property name="Name" value="NAV_NODE3" />
       <Property name="NameHash" value="2845638007" />
       <Property name="Type" value="LOCATOR" />
@@ -3872,7 +3900,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="15">
+    <Property name="Children" value="TkSceneNodeData" _index="15">
       <Property name="Name" value="NAV_NODE2" />
       <Property name="NameHash" value="2009143744" />
       <Property name="Type" value="LOCATOR" />
@@ -3891,13 +3919,13 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="16">
+    <Property name="Children" value="TkSceneNodeData" _index="16">
       <Property name="Name" value="NAV_NODE1" />
       <Property name="NameHash" value="730038586" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="8.866189" />
-				<Property name="TransY" value="14.7564316" />
+        <Property name="TransX" value="8.866189" />
+        <Property name="TransY" value="14.7564316" />
         <Property name="TransZ" value="0.067042" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="0.000000" />
@@ -3910,12 +3938,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="17">
+    <Property name="Children" value="TkSceneNodeData" _index="17">
       <Property name="Name" value="NAV_NODE12" />
       <Property name="NameHash" value="3401543051" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="28.3173752" />
+        <Property name="TransX" value="28.3173752" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="-3.062418" />
         <Property name="RotX" value="0.000000" />
@@ -3929,12 +3957,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="18">
+    <Property name="Children" value="TkSceneNodeData" _index="18">
       <Property name="Name" value="NAV_NODE13" />
       <Property name="NameHash" value="2147637266" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="28.3173752" />
+        <Property name="TransX" value="28.3173752" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="-7.277036" />
         <Property name="RotX" value="0.000000" />
@@ -3948,12 +3976,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="19">
+    <Property name="Children" value="TkSceneNodeData" _index="19">
       <Property name="Name" value="NAV_NODE14" />
       <Property name="NameHash" value="1856779622" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="28.3173752" />
+        <Property name="TransX" value="28.3173752" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="2.706280" />
         <Property name="RotX" value="0.000000" />
@@ -3967,12 +3995,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="20">
+    <Property name="Children" value="TkSceneNodeData" _index="20">
       <Property name="Name" value="NAV_NODE15" />
       <Property name="NameHash" value="3993154573" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="28.3173752" />
+        <Property name="TransX" value="28.3173752" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="7.192095" />
         <Property name="RotX" value="0.000000" />
@@ -3986,7 +4014,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="21">
+    <Property name="Children" value="TkSceneNodeData" _index="21">
       <Property name="Name" value="NAV_NODE16" />
       <Property name="NameHash" value="3703837072" />
       <Property name="Type" value="LOCATOR" />
@@ -4005,7 +4033,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="22">
+    <Property name="Children" value="TkSceneNodeData" _index="22">
       <Property name="Name" value="NAV_NODE17" />
       <Property name="NameHash" value="307330218" />
       <Property name="Type" value="LOCATOR" />
@@ -4024,7 +4052,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="23">
+    <Property name="Children" value="TkSceneNodeData" _index="23">
       <Property name="Name" value="NAV_NODE18" />
       <Property name="NameHash" value="59760423" />
       <Property name="Type" value="LOCATOR" />
@@ -4043,7 +4071,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="24">
+    <Property name="Children" value="TkSceneNodeData" _index="24">
       <Property name="Name" value="NAV_NODE19" />
       <Property name="NameHash" value="665724771" />
       <Property name="Type" value="LOCATOR" />
@@ -4062,7 +4090,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="25">
+    <Property name="Children" value="TkSceneNodeData" _index="25">
       <Property name="Name" value="NAV_NODE20" />
       <Property name="NameHash" value="3427595866" />
       <Property name="Type" value="LOCATOR" />
@@ -4081,7 +4109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="26">
+    <Property name="Children" value="TkSceneNodeData" _index="26">
       <Property name="Name" value="NAV_NODE21" />
       <Property name="NameHash" value="3197295334" />
       <Property name="Type" value="LOCATOR" />
@@ -4100,7 +4128,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="27">
+    <Property name="Children" value="TkSceneNodeData" _index="27">
       <Property name="Name" value="NAV_NODE22" />
       <Property name="NameHash" value="4020550929" />
       <Property name="Type" value="LOCATOR" />
@@ -4119,7 +4147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="28">
+    <Property name="Children" value="TkSceneNodeData" _index="28">
       <Property name="Name" value="NAV_NODE23" />
       <Property name="NameHash" value="826425431" />
       <Property name="Type" value="LOCATOR" />
@@ -4138,13 +4166,13 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="29">
+    <Property name="Children" value="TkSceneNodeData" _index="29">
       <Property name="Name" value="NAV_NODE24" />
       <Property name="NameHash" value="1669932260" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-5.599998" />
-				<Property name="TransY" value="13.0126562" />
+        <Property name="TransY" value="13.0126562" />
         <Property name="TransZ" value="0.067042" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="0.000000" />
@@ -4157,7 +4185,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="30">
+    <Property name="Children" value="TkSceneNodeData" _index="30">
       <Property name="Name" value="NAV_NODE25" />
       <Property name="NameHash" value="1436748056" />
       <Property name="Type" value="LOCATOR" />
@@ -4176,7 +4204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="31">
+    <Property name="Children" value="TkSceneNodeData" _index="31">
       <Property name="Name" value="NAV_NODE26" />
       <Property name="NameHash" value="2280058271" />
       <Property name="Type" value="LOCATOR" />
@@ -4195,7 +4223,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="32">
+    <Property name="Children" value="TkSceneNodeData" _index="32">
       <Property name="Name" value="NAV_NODE27" />
       <Property name="NameHash" value="2077742465" />
       <Property name="Type" value="LOCATOR" />
@@ -4214,7 +4242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="33">
+    <Property name="Children" value="TkSceneNodeData" _index="33">
       <Property name="Name" value="NAV_NODE28" />
       <Property name="NameHash" value="2881566035" />
       <Property name="Type" value="LOCATOR" />
@@ -4233,7 +4261,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="34">
+    <Property name="Children" value="TkSceneNodeData" _index="34">
       <Property name="Name" value="NAV_NODE29" />
       <Property name="NameHash" value="2642876639" />
       <Property name="Type" value="LOCATOR" />
@@ -4252,7 +4280,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="35">
+    <Property name="Children" value="TkSceneNodeData" _index="35">
       <Property name="Name" value="NAV_NODE30" />
       <Property name="NameHash" value="384404754" />
       <Property name="Type" value="LOCATOR" />
@@ -4271,7 +4299,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="36">
+    <Property name="Children" value="TkSceneNodeData" _index="36">
       <Property name="Name" value="NAV_NODE31" />
       <Property name="NameHash" value="1121903856" />
       <Property name="Type" value="LOCATOR" />
@@ -4290,7 +4318,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="37">
+    <Property name="Children" value="TkSceneNodeData" _index="37">
       <Property name="Name" value="NAV_NODE32" />
       <Property name="NameHash" value="1351712853" />
       <Property name="Type" value="LOCATOR" />
@@ -4309,7 +4337,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="38">
+    <Property name="Children" value="TkSceneNodeData" _index="38">
       <Property name="Name" value="NAV_NODE33" />
       <Property name="NameHash" value="1845738297" />
       <Property name="Type" value="LOCATOR" />
@@ -4328,7 +4356,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="39">
+    <Property name="Children" value="TkSceneNodeData" _index="39">
       <Property name="Name" value="NAV_NODE34" />
       <Property name="NameHash" value="2074990221" />
       <Property name="Type" value="LOCATOR" />
@@ -4347,12 +4375,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="40">
+    <Property name="Children" value="TkSceneNodeData" _index="40">
       <Property name="Name" value="NAV_NODE35" />
       <Property name="NameHash" value="2341369422" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="32.012539" />
+        <Property name="TransX" value="32.012539" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="-0.015651" />
         <Property name="RotX" value="0.000000" />
@@ -4366,9 +4394,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="41">
+    <Property name="Children" value="TkSceneNodeData" _index="41">
       <Property name="Name" value="RefTradingPost_SupportN" />
-			<Property name="NameHash" value="1950080726" />
+      <Property name="NameHash" value="1950080726" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="33.000000" />
@@ -4387,10 +4415,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\SUPPORTKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4415,10 +4443,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\SUPPORTKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4443,10 +4471,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\SUPPORTKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4471,10 +4499,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\SUPPORTKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4499,10 +4527,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\SUPPORTKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4527,10 +4555,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\SUPPORTKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4555,10 +4583,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\SUPPORTKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4583,10 +4611,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\SUPPORTKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4611,10 +4639,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4639,10 +4667,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4667,10 +4695,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4695,10 +4723,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4723,10 +4751,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\CORRIDORKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4751,10 +4779,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\CORRIDORKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4779,10 +4807,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\CORRIDORKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4807,10 +4835,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\CORRIDORKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4835,10 +4863,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\CORRIDORKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4863,10 +4891,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\CORRIDORKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4891,10 +4919,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\CORRIDORKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4919,10 +4947,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\CORRIDORKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4947,10 +4975,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -4975,10 +5003,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5003,10 +5031,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5031,10 +5059,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5059,10 +5087,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5087,10 +5115,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5115,10 +5143,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5143,14 +5171,42 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="69">
+      <Property name="Name" value="BIGGSPLATFORM_HOVERPAD_DOCK1" />
+      <Property name="NameHash" value="979371473" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="-100.000000" />
+        <Property name="TransY" value="16.000000" />
+        <Property name="TransZ" value="-100.000000" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="180.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="1.000000" />
+        <Property name="ScaleY" value="1.000000" />
+        <Property name="ScaleZ" value="1.000000" />
+      </Property>
+      <Property name="PlatformExclusion" value="0" />
+      <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\BIGGS\BIGGSLANDINGZONE.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property name="Children" value="TkSceneNodeData" _index="70">
       <Property name="Name" value="RefLadder3" />
       <Property name="NameHash" value="312023998" />
       <Property name="Type" value="REFERENCE" />
@@ -5171,14 +5227,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\LADDER.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="70">
+    <Property name="Children" value="TkSceneNodeData" _index="71">
       <Property name="Name" value="RefLadder" />
       <Property name="NameHash" value="4249009587" />
       <Property name="Type" value="REFERENCE" />
@@ -5199,10 +5255,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\LADDER.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -5243,7 +5299,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
   <Property name="Children">
-		<Property name="Children" value="TkSceneNodeData" _index="0">
+    <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="VykeenFrame" />
       <Property name="NameHash" value="3344930221" />
       <Property name="Type" value="REFERENCE" />
@@ -5264,14 +5320,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEENFRAME.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="1">
+    <Property name="Children" value="TkSceneNodeData" _index="1">
       <Property name="Name" value="Data" />
       <Property name="NameHash" value="2810148397" />
       <Property name="Type" value="LOCATOR" />
@@ -5288,14 +5344,14 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="2">
+    <Property name="Children" value="TkSceneNodeData" _index="2">
       <Property name="Name" value="Interior_" />
       <Property name="NameHash" value="309913048" />
       <Property name="Type" value="LOCATOR" />
@@ -5314,7 +5370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="3">
+    <Property name="Children" value="TkSceneNodeData" _index="3">
       <Property name="Name" value="Layout_" />
       <Property name="NameHash" value="591504117" />
       <Property name="Type" value="LOCATOR" />
@@ -5333,7 +5389,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="4">
+    <Property name="Children" value="TkSceneNodeData" _index="4">
       <Property name="Name" value="TriggerVolume" />
       <Property name="NameHash" value="3846031098" />
       <Property name="Type" value="LOCATOR" />
@@ -5350,14 +5406,14 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRIGGERVOLUME.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="5">
+    <Property name="Children" value="TkSceneNodeData" _index="5">
       <Property name="Name" value="NAV_NODE11" />
       <Property name="NameHash" value="1551864077" />
       <Property name="Type" value="LOCATOR" />
@@ -5376,7 +5432,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="6">
+    <Property name="Children" value="TkSceneNodeData" _index="6">
       <Property name="Name" value="NAV_NODE10" />
       <Property name="NameHash" value="964119293" />
       <Property name="Type" value="LOCATOR" />
@@ -5395,7 +5451,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="7">
+    <Property name="Children" value="TkSceneNodeData" _index="7">
       <Property name="Name" value="NAV_NODE9" />
       <Property name="NameHash" value="432856537" />
       <Property name="Type" value="LOCATOR" />
@@ -5414,7 +5470,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="8">
+    <Property name="Children" value="TkSceneNodeData" _index="8">
       <Property name="Name" value="NAV_NODE8" />
       <Property name="NameHash" value="666466738" />
       <Property name="Type" value="LOCATOR" />
@@ -5433,7 +5489,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="9">
+    <Property name="Children" value="TkSceneNodeData" _index="9">
       <Property name="Name" value="NAV_NODE7" />
       <Property name="NameHash" value="3723355672" />
       <Property name="Type" value="LOCATOR" />
@@ -5452,12 +5508,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="10">
+    <Property name="Children" value="TkSceneNodeData" _index="10">
       <Property name="Name" value="NAV_NODE6" />
       <Property name="NameHash" value="2896233343" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="31.3105659" />
+        <Property name="TransX" value="31.3105659" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="0.067042" />
         <Property name="RotX" value="0.000000" />
@@ -5471,7 +5527,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="11">
+    <Property name="Children" value="TkSceneNodeData" _index="11">
       <Property name="Name" value="NAV_NODE5" />
       <Property name="NameHash" value="2231972944" />
       <Property name="Type" value="LOCATOR" />
@@ -5490,7 +5546,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="12">
+    <Property name="Children" value="TkSceneNodeData" _index="12">
       <Property name="Name" value="NAV_NODE4" />
       <Property name="NameHash" value="3545714923" />
       <Property name="Type" value="LOCATOR" />
@@ -5509,14 +5565,14 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="13">
+    <Property name="Children" value="TkSceneNodeData" _index="13">
       <Property name="Name" value="NAV_NODE3" />
       <Property name="NameHash" value="2845638007" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="30.160534" />
         <Property name="TransY" value="16.903710" />
-				<Property name="TransZ" value="0.067042" />
+        <Property name="TransZ" value="0.067042" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="0.000000" />
         <Property name="RotZ" value="0.000000" />
@@ -5528,7 +5584,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="14">
+    <Property name="Children" value="TkSceneNodeData" _index="14">
       <Property name="Name" value="NAV_NODE2" />
       <Property name="NameHash" value="2009143744" />
       <Property name="Type" value="LOCATOR" />
@@ -5547,7 +5603,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="15">
+    <Property name="Children" value="TkSceneNodeData" _index="15">
       <Property name="Name" value="NAV_NODE1" />
       <Property name="NameHash" value="730038586" />
       <Property name="Type" value="LOCATOR" />
@@ -5566,12 +5622,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="16">
+    <Property name="Children" value="TkSceneNodeData" _index="16">
       <Property name="Name" value="NAV_NODE12" />
       <Property name="NameHash" value="3401543051" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="28.3173752" />
+        <Property name="TransX" value="28.3173752" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="-3.062418" />
         <Property name="RotX" value="0.000000" />
@@ -5585,12 +5641,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="17">
+    <Property name="Children" value="TkSceneNodeData" _index="17">
       <Property name="Name" value="NAV_NODE13" />
       <Property name="NameHash" value="2147637266" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="28.3173752" />
+        <Property name="TransX" value="28.3173752" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="-7.277036" />
         <Property name="RotX" value="0.000000" />
@@ -5604,12 +5660,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="18">
+    <Property name="Children" value="TkSceneNodeData" _index="18">
       <Property name="Name" value="NAV_NODE14" />
       <Property name="NameHash" value="1856779622" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="28.3173752" />
+        <Property name="TransX" value="28.3173752" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="2.706280" />
         <Property name="RotX" value="0.000000" />
@@ -5623,12 +5679,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="19">
+    <Property name="Children" value="TkSceneNodeData" _index="19">
       <Property name="Name" value="NAV_NODE15" />
       <Property name="NameHash" value="3993154573" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="28.3173752" />
+        <Property name="TransX" value="28.3173752" />
         <Property name="TransY" value="16.903710" />
         <Property name="TransZ" value="7.192095" />
         <Property name="RotX" value="0.000000" />
@@ -5642,7 +5698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="20">
+    <Property name="Children" value="TkSceneNodeData" _index="20">
       <Property name="Name" value="NAV_NODE16" />
       <Property name="NameHash" value="3703837072" />
       <Property name="Type" value="LOCATOR" />
@@ -5661,7 +5717,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="21">
+    <Property name="Children" value="TkSceneNodeData" _index="21">
       <Property name="Name" value="NAV_NODE17" />
       <Property name="NameHash" value="307330218" />
       <Property name="Type" value="LOCATOR" />
@@ -5680,7 +5736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="22">
+    <Property name="Children" value="TkSceneNodeData" _index="22">
       <Property name="Name" value="NAV_NODE18" />
       <Property name="NameHash" value="59760423" />
       <Property name="Type" value="LOCATOR" />
@@ -5699,7 +5755,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="23">
+    <Property name="Children" value="TkSceneNodeData" _index="23">
       <Property name="Name" value="NAV_NODE19" />
       <Property name="NameHash" value="665724771" />
       <Property name="Type" value="LOCATOR" />
@@ -5718,7 +5774,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="24">
+    <Property name="Children" value="TkSceneNodeData" _index="24">
       <Property name="Name" value="NAV_NODE20" />
       <Property name="NameHash" value="3427595866" />
       <Property name="Type" value="LOCATOR" />
@@ -5737,7 +5793,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="25">
+    <Property name="Children" value="TkSceneNodeData" _index="25">
       <Property name="Name" value="NAV_NODE21" />
       <Property name="NameHash" value="3197295334" />
       <Property name="Type" value="LOCATOR" />
@@ -5756,7 +5812,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="26">
+    <Property name="Children" value="TkSceneNodeData" _index="26">
       <Property name="Name" value="NAV_NODE22" />
       <Property name="NameHash" value="4020550929" />
       <Property name="Type" value="LOCATOR" />
@@ -5775,7 +5831,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="27">
+    <Property name="Children" value="TkSceneNodeData" _index="27">
       <Property name="Name" value="NAV_NODE23" />
       <Property name="NameHash" value="826425431" />
       <Property name="Type" value="LOCATOR" />
@@ -5794,13 +5850,13 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="28">
+    <Property name="Children" value="TkSceneNodeData" _index="28">
       <Property name="Name" value="NAV_NODE24" />
       <Property name="NameHash" value="1669932260" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-5.599998" />
-				<Property name="TransY" value="13.0126562" />
+        <Property name="TransY" value="13.0126562" />
         <Property name="TransZ" value="0.067042" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="0.000000" />
@@ -5813,7 +5869,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="29">
+    <Property name="Children" value="TkSceneNodeData" _index="29">
       <Property name="Name" value="NAV_NODE25" />
       <Property name="NameHash" value="1436748056" />
       <Property name="Type" value="LOCATOR" />
@@ -5832,7 +5888,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="30">
+    <Property name="Children" value="TkSceneNodeData" _index="30">
       <Property name="Name" value="NAV_NODE26" />
       <Property name="NameHash" value="2280058271" />
       <Property name="Type" value="LOCATOR" />
@@ -5851,7 +5907,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="31">
+    <Property name="Children" value="TkSceneNodeData" _index="31">
       <Property name="Name" value="NAV_NODE27" />
       <Property name="NameHash" value="2077742465" />
       <Property name="Type" value="LOCATOR" />
@@ -5870,7 +5926,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="32">
+    <Property name="Children" value="TkSceneNodeData" _index="32">
       <Property name="Name" value="NAV_NODE28" />
       <Property name="NameHash" value="2881566035" />
       <Property name="Type" value="LOCATOR" />
@@ -5889,7 +5945,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="33">
+    <Property name="Children" value="TkSceneNodeData" _index="33">
       <Property name="Name" value="NAV_NODE29" />
       <Property name="NameHash" value="2642876639" />
       <Property name="Type" value="LOCATOR" />
@@ -5908,7 +5964,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="34">
+    <Property name="Children" value="TkSceneNodeData" _index="34">
       <Property name="Name" value="NAV_NODE30" />
       <Property name="NameHash" value="384404754" />
       <Property name="Type" value="LOCATOR" />
@@ -5927,7 +5983,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="35">
+    <Property name="Children" value="TkSceneNodeData" _index="35">
       <Property name="Name" value="NAV_NODE31" />
       <Property name="NameHash" value="1121903856" />
       <Property name="Type" value="LOCATOR" />
@@ -5946,7 +6002,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="36">
+    <Property name="Children" value="TkSceneNodeData" _index="36">
       <Property name="Name" value="NAV_NODE32" />
       <Property name="NameHash" value="1351712853" />
       <Property name="Type" value="LOCATOR" />
@@ -5965,7 +6021,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="37">
+    <Property name="Children" value="TkSceneNodeData" _index="37">
       <Property name="Name" value="NAV_NODE33" />
       <Property name="NameHash" value="1845738297" />
       <Property name="Type" value="LOCATOR" />
@@ -5984,7 +6040,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="38">
+    <Property name="Children" value="TkSceneNodeData" _index="38">
       <Property name="Name" value="NAV_NODE34" />
       <Property name="NameHash" value="2074990221" />
       <Property name="Type" value="LOCATOR" />
@@ -6003,7 +6059,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="39">
+    <Property name="Children" value="TkSceneNodeData" _index="39">
       <Property name="Name" value="NAV_NODE35" />
       <Property name="NameHash" value="2341369422" />
       <Property name="Type" value="LOCATOR" />
@@ -6022,7 +6078,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="40">
+    <Property name="Children" value="TkSceneNodeData" _index="40">
       <Property name="Name" value="RefTradingPost_SupportSLeft" />
       <Property name="NameHash" value="3248446587" />
       <Property name="Type" value="REFERENCE" />
@@ -6043,14 +6099,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="41">
+    <Property name="Children" value="TkSceneNodeData" _index="41">
       <Property name="Name" value="RefTradingPost_SupportSRight" />
       <Property name="NameHash" value="2340831448" />
       <Property name="Type" value="REFERENCE" />
@@ -6071,10 +6127,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6099,10 +6155,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6127,10 +6183,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6155,10 +6211,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6183,10 +6239,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6211,10 +6267,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6239,10 +6295,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6267,10 +6323,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6295,10 +6351,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6323,10 +6379,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6351,10 +6407,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6379,10 +6435,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_DOORMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6407,10 +6463,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_DOORMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6435,10 +6491,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_DOORMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6463,10 +6519,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_DOORMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6491,10 +6547,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6519,10 +6575,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6547,10 +6603,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6575,10 +6631,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6603,10 +6659,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6631,10 +6687,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6659,10 +6715,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6687,10 +6743,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6715,10 +6771,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEENLANDINGPAD_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6743,10 +6799,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEENLANDINGPAD_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6771,10 +6827,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEENLANDINGPAD_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6799,10 +6855,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEENLANDINGPAD_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6827,10 +6883,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6855,10 +6911,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6883,10 +6939,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6911,10 +6967,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6939,10 +6995,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6967,10 +7023,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -6995,10 +7051,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7023,14 +7079,42 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="76">
+      <Property name="Name" value="BIGGSPLATFORM_HOVERPAD_DOCK1" />
+      <Property name="NameHash" value="979371473" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="-95.000000" />
+        <Property name="TransY" value="16.400000" />
+        <Property name="TransZ" value="-95.000000" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="180.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="1.000000" />
+        <Property name="ScaleY" value="1.000000" />
+        <Property name="ScaleZ" value="1.000000" />
+      </Property>
+      <Property name="PlatformExclusion" value="0" />
+      <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\BIGGS\BIGGSLANDINGZONE.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property name="Children" value="TkSceneNodeData" _index="77">
       <Property name="Name" value="RefLadder3" />
       <Property name="NameHash" value="312023998" />
       <Property name="Type" value="REFERENCE" />
@@ -7051,14 +7135,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\LADDER.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="77">
+    <Property name="Children" value="TkSceneNodeData" _index="78">
       <Property name="Name" value="RefLadder" />
       <Property name="NameHash" value="4249009587" />
       <Property name="Type" value="REFERENCE" />
@@ -7079,10 +7163,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\LADDER.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7144,10 +7228,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\ANIMATEDDOOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7209,10 +7293,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\WARRIORPARTS\ANIMATEDDOOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7274,10 +7358,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7302,10 +7386,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7330,10 +7414,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7358,10 +7442,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7386,10 +7470,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7414,10 +7498,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7442,10 +7526,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7507,10 +7591,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7535,10 +7619,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7600,10 +7684,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7628,10 +7712,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7656,10 +7740,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7684,10 +7768,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7712,10 +7796,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7740,10 +7824,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7768,10 +7852,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7833,10 +7917,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7861,10 +7945,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7889,10 +7973,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7917,10 +8001,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7945,10 +8029,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -7973,10 +8057,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8001,10 +8085,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8029,10 +8113,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8057,10 +8141,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8122,10 +8206,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TERMINAL\TERMINAL_TADINGPOST.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8150,10 +8234,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK_MONITORSTATION_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8178,10 +8262,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK_MONITORSTATION_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8206,10 +8290,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK_MONITORSTATION_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8234,10 +8318,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK_MONITORSTATION_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8262,10 +8346,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK_HEALTH_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8290,10 +8374,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK_SHIELD_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8318,14 +8402,42 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK_SAVEPOINT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="8">
+      <Property name="Name" value="RefBiggsTeleporter" />
+      <Property name="NameHash" value="2991593292" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="10.250000" />
+        <Property name="TransY" value="0.000000" />
+        <Property name="TransZ" value="-2.750000" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="-70.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="1.000000" />
+        <Property name="ScaleY" value="1.000000" />
+        <Property name="ScaleZ" value="1.000000" />
+      </Property>
+      <Property name="PlatformExclusion" value="0" />
+      <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\BIGGS\BIGGSTELEPORTER.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property name="Children" value="TkSceneNodeData" _index="9">
       <Property name="Name" value="SHIPSALVAGE" />
       <Property name="NameHash" value="2411574526" />
       <Property name="Type" value="REFERENCE" />
@@ -8346,14 +8458,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIPSALVAGETERMINAL.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="9">
+    <Property name="Children" value="TkSceneNodeData" _index="10">
       <Property name="Name" value="CUSTOMIZER" />
       <Property name="NameHash" value="3025946560" />
       <Property name="Type" value="REFERENCE" />
@@ -8374,14 +8486,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\CUSTOMISESTATION.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="10">
+    <Property name="Children" value="TkSceneNodeData" _index="11">
       <Property name="Name" value="ENGINE" />
       <Property name="NameHash" value="3787129635" />
       <Property name="Type" value="REFERENCE" />
@@ -8402,14 +8514,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\SPACE\POI\PARTS\ENGINEREACTOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="11">
+    <Property name="Children" value="TkSceneNodeData" _index="12">
       <Property name="Name" value="ANIMATEDDOORNORTH" />
       <Property name="NameHash" value="1908951268" />
       <Property name="Type" value="REFERENCE" />
@@ -8430,14 +8542,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="12">
+    <Property name="Children" value="TkSceneNodeData" _index="13">
       <Property name="Name" value="ANIMATEDDOOREAST" />
       <Property name="NameHash" value="3143715036" />
       <Property name="Type" value="REFERENCE" />
@@ -8458,14 +8570,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="13">
+    <Property name="Children" value="TkSceneNodeData" _index="14">
       <Property name="Name" value="ANIMATEDDOORSOUTH" />
       <Property name="NameHash" value="53488837" />
       <Property name="Type" value="REFERENCE" />
@@ -8486,14 +8598,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="14">
+    <Property name="Children" value="TkSceneNodeData" _index="15">
       <Property name="Name" value="ANIMATEDDOORWEST" />
       <Property name="NameHash" value="1732690248" />
       <Property name="Type" value="REFERENCE" />
@@ -8514,14 +8626,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="15">
+    <Property name="Children" value="TkSceneNodeData" _index="16">
       <Property name="Name" value="CHAIR1" />
       <Property name="NameHash" value="1292270299" />
       <Property name="Type" value="REFERENCE" />
@@ -8542,14 +8654,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEK_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="16">
+    <Property name="Children" value="TkSceneNodeData" _index="17">
       <Property name="Name" value="pointLightL" />
       <Property name="NameHash" value="2599933111" />
       <Property name="Type" value="LIGHT" />
@@ -8566,54 +8678,54 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="2.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="50000.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="17">
+    <Property name="Children" value="TkSceneNodeData" _index="18">
       <Property name="Name" value="pointLightR" />
       <Property name="NameHash" value="605873915" />
       <Property name="Type" value="LIGHT" />
@@ -8630,54 +8742,54 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="2.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="50000.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="18">
+    <Property name="Children" value="TkSceneNodeData" _index="19">
       <Property name="Name" value="pointLightFront" />
       <Property name="NameHash" value="821068762" />
       <Property name="Type" value="LIGHT" />
@@ -8694,54 +8806,54 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="2.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="50000.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="19">
+    <Property name="Children" value="TkSceneNodeData" _index="20">
       <Property name="Name" value="pointLightBack" />
       <Property name="NameHash" value="2348932709" />
       <Property name="Type" value="LIGHT" />
@@ -8758,47 +8870,47 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="2.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="50000.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -8863,10 +8975,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8891,10 +9003,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_TSHAPE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8919,10 +9031,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8947,10 +9059,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_XSHAPE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -8975,10 +9087,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -9003,10 +9115,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_TSHAPE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -9031,10 +9143,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -9096,10 +9208,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\CHAIRS\WAITINGROOMCHAIR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -9124,10 +9236,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\SMALLHEXTABLE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -9152,10 +9264,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\CHAIRS\WAITINGROOMCHAIR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -9217,10 +9329,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\HEALTHSTATION.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -9245,10 +9357,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -9273,10 +9385,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -9338,10 +9450,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -9387,9 +9499,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="NameHash" value="3575991963" />
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="18.1076126" />
+        <Property name="TransX" value="18.1076126" />
         <Property name="TransY" value="9.051993" />
-				<Property name="TransZ" value="12.6288452" />
+        <Property name="TransZ" value="12.6288452" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="0.000000" />
         <Property name="RotZ" value="0.000000" />
@@ -9399,93 +9511,93 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="BATCHSTARTPHYSI" />
           <Property name="Value" value="6336" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="VERTRSTARTPHYSI" />
           <Property name="Value" value="3434" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="VERTRENDPHYSICS" />
           <Property name="Value" value="3501" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="BATCHSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="BATCHCOUNT" />
           <Property name="Value" value="180" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="VERTRSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="VERTRENDGRAPHIC" />
           <Property name="Value" value="67" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="FIRSTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="LASTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LODLEVEL" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="BOUNDHULLST" />
           <Property name="Value" value="1788" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
           <Property name="Name" value="BOUNDHULLED" />
           <Property name="Value" value="1804" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
           <Property name="Name" value="AABBMINX" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
           <Property name="Name" value="AABBMINY" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
           <Property name="Name" value="AABBMINZ" />
           <Property name="Value" value="-0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
           <Property name="Name" value="AABBMAXX" />
           <Property name="Value" value="0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
           <Property name="Name" value="AABBMAXY" />
           <Property name="Value" value="0.346602" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
           <Property name="Name" value="AABBMAXZ" />
           <Property name="Value" value="0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
           <Property name="Name" value="HASH" />
           <Property name="Value" value="3575991963" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\PHONG37.MATERIAL.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
           <Property name="Name" value="MESHLINK" />
           <Property name="Value" value="LightShape" />
         </Property>
       </Property>
       <Property name="Children">
-				<Property name="Children" value="TkSceneNodeData" _index="0">
+        <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
           <Property name="NameHash" value="4219409884" />
           <Property name="Type" value="LIGHT" />
@@ -9502,47 +9614,47 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="360.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="9000.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="0.211700" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="Value" value="-1" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -9551,14 +9663,14 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="1">
+    <Property name="Children" value="TkSceneNodeData" _index="1">
       <Property name="Name" value="Light1" />
       <Property name="NameHash" value="3820849344" />
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="23.6489525" />
-				<Property name="TransY" value="16.6624565" />
-				<Property name="TransZ" value="12.7217979" />
+        <Property name="TransX" value="23.6489525" />
+        <Property name="TransY" value="16.6624565" />
+        <Property name="TransZ" value="12.7217979" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="0.000000" />
         <Property name="RotZ" value="0.000000" />
@@ -9568,93 +9680,93 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="BATCHSTARTPHYSI" />
           <Property name="Value" value="6516" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="VERTRSTARTPHYSI" />
           <Property name="Value" value="3502" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="VERTRENDPHYSICS" />
           <Property name="Value" value="3569" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="BATCHSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="BATCHCOUNT" />
           <Property name="Value" value="180" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="VERTRSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="VERTRENDGRAPHIC" />
           <Property name="Value" value="67" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="FIRSTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="LASTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LODLEVEL" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="BOUNDHULLST" />
           <Property name="Value" value="1804" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
           <Property name="Name" value="BOUNDHULLED" />
           <Property name="Value" value="1820" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
           <Property name="Name" value="AABBMINX" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
           <Property name="Name" value="AABBMINY" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
           <Property name="Name" value="AABBMINZ" />
           <Property name="Value" value="-0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
           <Property name="Name" value="AABBMAXX" />
           <Property name="Value" value="0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
           <Property name="Name" value="AABBMAXY" />
           <Property name="Value" value="0.346602" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
           <Property name="Name" value="AABBMAXZ" />
           <Property name="Value" value="0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
           <Property name="Name" value="HASH" />
-					<Property name="Value" value="3820849344" />
+          <Property name="Value" value="3820849344" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\PHONG37.MATERIAL.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
           <Property name="Name" value="MESHLINK" />
           <Property name="Value" value="Light1Shape" />
         </Property>
       </Property>
       <Property name="Children">
-				<Property name="Children" value="TkSceneNodeData" _index="0">
+        <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
           <Property name="NameHash" value="4219409884" />
           <Property name="Type" value="LIGHT" />
@@ -9671,47 +9783,47 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="360.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="9000.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="0.211700" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="Value" value="-1" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -9720,14 +9832,14 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="2">
+    <Property name="Children" value="TkSceneNodeData" _index="2">
       <Property name="Name" value="Light2" />
       <Property name="NameHash" value="689640314" />
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="23.6489525" />
-				<Property name="TransY" value="16.6624565" />
-				<Property name="TransZ" value="-12.7292566" />
+        <Property name="TransX" value="23.6489525" />
+        <Property name="TransY" value="16.6624565" />
+        <Property name="TransZ" value="-12.7292566" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="0.000000" />
         <Property name="RotZ" value="0.000000" />
@@ -9737,262 +9849,93 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="BATCHSTARTPHYSI" />
           <Property name="Value" value="6696" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="VERTRSTARTPHYSI" />
           <Property name="Value" value="3570" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="VERTRENDPHYSICS" />
           <Property name="Value" value="3637" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="BATCHSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="BATCHCOUNT" />
           <Property name="Value" value="180" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="VERTRSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="VERTRENDGRAPHIC" />
           <Property name="Value" value="67" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="FIRSTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="LASTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LODLEVEL" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="BOUNDHULLST" />
           <Property name="Value" value="1820" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
           <Property name="Name" value="BOUNDHULLED" />
           <Property name="Value" value="1836" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
           <Property name="Name" value="AABBMINX" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
           <Property name="Name" value="AABBMINY" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
           <Property name="Name" value="AABBMINZ" />
           <Property name="Value" value="-0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
           <Property name="Name" value="AABBMAXX" />
           <Property name="Value" value="0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
           <Property name="Name" value="AABBMAXY" />
           <Property name="Value" value="0.346602" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
           <Property name="Name" value="AABBMAXZ" />
           <Property name="Value" value="0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
           <Property name="Name" value="HASH" />
-					<Property name="Value" value="689640314" />
+          <Property name="Value" value="689640314" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\PHONG37.MATERIAL.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
           <Property name="Name" value="MESHLINK" />
           <Property name="Value" value="Light2Shape" />
         </Property>
       </Property>
       <Property name="Children">
-				<Property name="Children" value="TkSceneNodeData" _index="0">
-          <Property name="Name" value="pointLight1" />
-          <Property name="NameHash" value="4219409884" />
-          <Property name="Type" value="LIGHT" />
-          <Property name="Transform" value="TkTransformData">
-            <Property name="TransX" value="0.232708" />
-						<Property name="TransY" value="13.744730" />
-            <Property name="TransZ" value="0.022668" />
-            <Property name="RotX" value="0.000000" />
-            <Property name="RotY" value="0.000000" />
-            <Property name="RotZ" value="0.000000" />
-            <Property name="ScaleX" value="20.444330" />
-            <Property name="ScaleY" value="46.562088" />
-            <Property name="ScaleZ" value="3.907145" />
-          </Property>
-          <Property name="PlatformExclusion" value="0" />
-          <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
-              <Property name="Name" value="FOV" />
-              <Property name="Value" value="360.000000" />
-            </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-              <Property name="Name" value="FALLOFF" />
-              <Property name="Value" value="quadratic" />
-            </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-              <Property name="Name" value="FALLOFF_RATE" />
-              <Property name="Value" value="2.000000" />
-            </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
-              <Property name="Name" value="INTENSITY" />
-              <Property name="Value" value="9000.000000" />
-            </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
-              <Property name="Name" value="COL_R" />
-              <Property name="Value" value="0.000000" />
-            </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
-              <Property name="Name" value="COL_G" />
-              <Property name="Value" value="1.000000" />
-            </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
-              <Property name="Name" value="COL_B" />
-              <Property name="Value" value="0.211700" />
-            </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
-              <Property name="Name" value="COOKIE_IDX" />
-              <Property name="Value" value="-1" />
-            </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
-              <Property name="Name" value="VOLUMETRIC" />
-              <Property name="Value" value="0.000000" />
-            </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
-              <Property name="Name" value="LIGHTLAYERS" />
-              <Property name="Value" value="3" />
-            </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-              <Property name="Name" value="MATERIAL" />
-              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-            </Property>
-          </Property>
-          <Property name="Children" />
-        </Property>
-      </Property>
-    </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="3">
-      <Property name="Name" value="Light3" />
-      <Property name="NameHash" value="444495425" />
-      <Property name="Type" value="MESH" />
-      <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="18.1076126" />
-        <Property name="TransY" value="9.051993" />
-				<Property name="TransZ" value="-12.6311092" />
-        <Property name="RotX" value="0.000000" />
-        <Property name="RotY" value="0.000000" />
-        <Property name="RotZ" value="0.000000" />
-        <Property name="ScaleX" value="0.048913" />
-        <Property name="ScaleY" value="0.021477" />
-        <Property name="ScaleZ" value="0.255941" />
-      </Property>
-      <Property name="PlatformExclusion" value="0" />
-      <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
-          <Property name="Name" value="BATCHSTARTPHYSI" />
-          <Property name="Value" value="6876" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-          <Property name="Name" value="VERTRSTARTPHYSI" />
-          <Property name="Value" value="3638" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-          <Property name="Name" value="VERTRENDPHYSICS" />
-          <Property name="Value" value="3705" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
-          <Property name="Name" value="BATCHSTARTGRAPH" />
-          <Property name="Value" value="0" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
-          <Property name="Name" value="BATCHCOUNT" />
-          <Property name="Value" value="180" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
-          <Property name="Name" value="VERTRSTARTGRAPH" />
-          <Property name="Value" value="0" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
-          <Property name="Name" value="VERTRENDGRAPHIC" />
-          <Property name="Value" value="67" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
-          <Property name="Name" value="FIRSTSKINMAT" />
-          <Property name="Value" value="0" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
-          <Property name="Name" value="LASTSKINMAT" />
-          <Property name="Value" value="0" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
-          <Property name="Name" value="LODLEVEL" />
-          <Property name="Value" value="0" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="BOUNDHULLST" />
-          <Property name="Value" value="1836" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
-          <Property name="Name" value="BOUNDHULLED" />
-          <Property name="Value" value="1852" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
-          <Property name="Name" value="AABBMINX" />
-          <Property name="Value" value="-0.346563" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
-          <Property name="Name" value="AABBMINY" />
-          <Property name="Value" value="-0.346563" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
-          <Property name="Name" value="AABBMINZ" />
-          <Property name="Value" value="-0.346577" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
-          <Property name="Name" value="AABBMAXX" />
-          <Property name="Value" value="0.346563" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
-          <Property name="Name" value="AABBMAXY" />
-          <Property name="Value" value="0.346602" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
-          <Property name="Name" value="AABBMAXZ" />
-          <Property name="Value" value="0.346577" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
-          <Property name="Name" value="HASH" />
-					<Property name="Value" value="444495425" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\PHONG37.MATERIAL.MBIN" />
-        </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
-          <Property name="Name" value="MESHLINK" />
-          <Property name="Value" value="Light3Shape" />
-        </Property>
-      </Property>
-      <Property name="Children">
-				<Property name="Children" value="TkSceneNodeData" _index="0">
+        <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
           <Property name="NameHash" value="4219409884" />
           <Property name="Type" value="LIGHT" />
@@ -10009,47 +9952,216 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="360.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="9000.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="0.211700" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="Value" value="-1" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+              <Property name="Name" value="MATERIAL" />
+              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+    <Property name="Children" value="TkSceneNodeData" _index="3">
+      <Property name="Name" value="Light3" />
+      <Property name="NameHash" value="444495425" />
+      <Property name="Type" value="MESH" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="18.1076126" />
+        <Property name="TransY" value="9.051993" />
+        <Property name="TransZ" value="-12.6311092" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="0.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="0.048913" />
+        <Property name="ScaleY" value="0.021477" />
+        <Property name="ScaleZ" value="0.255941" />
+      </Property>
+      <Property name="PlatformExclusion" value="0" />
+      <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+          <Property name="Name" value="BATCHSTARTPHYSI" />
+          <Property name="Value" value="6876" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="VERTRSTARTPHYSI" />
+          <Property name="Value" value="3638" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+          <Property name="Name" value="VERTRENDPHYSICS" />
+          <Property name="Value" value="3705" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+          <Property name="Name" value="BATCHSTARTGRAPH" />
+          <Property name="Value" value="0" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+          <Property name="Name" value="BATCHCOUNT" />
+          <Property name="Value" value="180" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+          <Property name="Name" value="VERTRSTARTGRAPH" />
+          <Property name="Value" value="0" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+          <Property name="Name" value="VERTRENDGRAPHIC" />
+          <Property name="Value" value="67" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+          <Property name="Name" value="FIRSTSKINMAT" />
+          <Property name="Value" value="0" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+          <Property name="Name" value="LASTSKINMAT" />
+          <Property name="Value" value="0" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+          <Property name="Name" value="LODLEVEL" />
+          <Property name="Value" value="0" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+          <Property name="Name" value="BOUNDHULLST" />
+          <Property name="Value" value="1836" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
+          <Property name="Name" value="BOUNDHULLED" />
+          <Property name="Value" value="1852" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
+          <Property name="Name" value="AABBMINX" />
+          <Property name="Value" value="-0.346563" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
+          <Property name="Name" value="AABBMINY" />
+          <Property name="Value" value="-0.346563" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
+          <Property name="Name" value="AABBMINZ" />
+          <Property name="Value" value="-0.346577" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
+          <Property name="Name" value="AABBMAXX" />
+          <Property name="Value" value="0.346563" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
+          <Property name="Name" value="AABBMAXY" />
+          <Property name="Value" value="0.346602" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
+          <Property name="Name" value="AABBMAXZ" />
+          <Property name="Value" value="0.346577" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
+          <Property name="Name" value="HASH" />
+          <Property name="Value" value="444495425" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
+          <Property name="Name" value="MATERIAL" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\PHONG37.MATERIAL.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
+          <Property name="Name" value="MESHLINK" />
+          <Property name="Value" value="Light3Shape" />
+        </Property>
+      </Property>
+      <Property name="Children">
+        <Property name="Children" value="TkSceneNodeData" _index="0">
+          <Property name="Name" value="pointLight1" />
+          <Property name="NameHash" value="4219409884" />
+          <Property name="Type" value="LIGHT" />
+          <Property name="Transform" value="TkTransformData">
+            <Property name="TransX" value="0.232708" />
+            <Property name="TransY" value="13.744730" />
+            <Property name="TransZ" value="0.022668" />
+            <Property name="RotX" value="0.000000" />
+            <Property name="RotY" value="0.000000" />
+            <Property name="RotZ" value="0.000000" />
+            <Property name="ScaleX" value="20.444330" />
+            <Property name="ScaleY" value="46.562088" />
+            <Property name="ScaleZ" value="3.907145" />
+          </Property>
+          <Property name="PlatformExclusion" value="0" />
+          <Property name="Attributes">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+              <Property name="Name" value="FOV" />
+              <Property name="Value" value="360.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+              <Property name="Name" value="FALLOFF" />
+              <Property name="Value" value="quadratic" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+              <Property name="Name" value="FALLOFF_RATE" />
+              <Property name="Value" value="2.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+              <Property name="Name" value="INTENSITY" />
+              <Property name="Value" value="9000.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+              <Property name="Name" value="COL_R" />
+              <Property name="Value" value="0.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+              <Property name="Name" value="COL_G" />
+              <Property name="Value" value="1.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+              <Property name="Name" value="COL_B" />
+              <Property name="Value" value="0.211700" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+              <Property name="Name" value="COOKIE_IDX" />
+              <Property name="Value" value="-1" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+              <Property name="Name" value="VOLUMETRIC" />
+              <Property name="Value" value="0.000000" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+              <Property name="Name" value="LIGHTLAYERS" />
+              <Property name="Value" value="3" />
+            </Property>
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -10075,20 +10187,20 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
-					<Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|Collision2" />
-					<Property name="NameHash" value="4029056343" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|Collision2" />
+          <Property name="NameHash" value="4029056343" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData">
-						<Property name="TransX" value="21.8507175" />
+            <Property name="TransX" value="21.8507175" />
             <Property name="TransY" value="0.956589" />
-						<Property name="TransZ" value="12.9872942" />
+            <Property name="TransZ" value="12.9872942" />
             <Property name="RotX" value="0.000000" />
             <Property name="RotY" value="180.000000" />
             <Property name="RotZ" value="0.000000" />
@@ -10098,57 +10210,57 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="NAVIGATION" />
               <Property name="Value" value="FALSE" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Mesh" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="BATCHSTART" />
               <Property name="Value" value="2592" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="BATCHCOUNT" />
               <Property name="Value" value="276" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="VERTRSTART" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
               <Property name="Name" value="VERTREND" />
               <Property name="Value" value="127" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
               <Property name="Name" value="FIRSTSKINMAT" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
               <Property name="Name" value="LASTSKINMAT" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
               <Property name="Name" value="BOUNDHULLST" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
               <Property name="Name" value="BOUNDHULLED" />
               <Property name="Value" value="128" />
             </Property>
           </Property>
           <Property name="Children" />
         </Property>
-				<Property name="Children" value="TkSceneNodeData" _index="1">
-					<Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|collision1" />
-					<Property name="NameHash" value="32352485" />
+        <Property name="Children" value="TkSceneNodeData" _index="1">
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|collision1" />
+          <Property name="NameHash" value="32352485" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData">
-						<Property name="TransX" value="21.8507175" />
+            <Property name="TransX" value="21.8507175" />
             <Property name="TransY" value="0.956589" />
-						<Property name="TransZ" value="-12.9872913" />
+            <Property name="TransZ" value="-12.9872913" />
             <Property name="RotX" value="0.000000" />
             <Property name="RotY" value="0.000000" />
             <Property name="RotZ" value="0.000000" />
@@ -10158,55 +10270,55 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="NAVIGATION" />
               <Property name="Value" value="FALSE" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Mesh" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="BATCHSTART" />
               <Property name="Value" value="2316" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="BATCHCOUNT" />
               <Property name="Value" value="276" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="VERTRSTART" />
               <Property name="Value" value="128" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
               <Property name="Name" value="VERTREND" />
               <Property name="Value" value="255" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
               <Property name="Name" value="FIRSTSKINMAT" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
               <Property name="Name" value="LASTSKINMAT" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
               <Property name="Name" value="BOUNDHULLST" />
               <Property name="Value" value="128" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
               <Property name="Name" value="BOUNDHULLED" />
               <Property name="Value" value="256" />
             </Property>
           </Property>
           <Property name="Children" />
         </Property>
-				<Property name="Children" value="TkSceneNodeData" _index="2">
-					<Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|collision" />
-					<Property name="NameHash" value="3579039919" />
+        <Property name="Children" value="TkSceneNodeData" _index="2">
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|collision" />
+          <Property name="NameHash" value="3579039919" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData">
-						<Property name="TransX" value="13.3508015" />
+            <Property name="TransX" value="13.3508015" />
             <Property name="TransY" value="0.963270" />
             <Property name="TransZ" value="0.000000" />
             <Property name="RotX" value="0.000000" />
@@ -10218,43 +10330,43 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="NAVIGATION" />
               <Property name="Value" value="FALSE" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Mesh" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="BATCHSTART" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="BATCHCOUNT" />
               <Property name="Value" value="2316" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="VERTRSTART" />
               <Property name="Value" value="256" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
               <Property name="Name" value="VERTREND" />
               <Property name="Value" value="1615" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
               <Property name="Name" value="FIRSTSKINMAT" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
               <Property name="Name" value="LASTSKINMAT" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
               <Property name="Name" value="BOUNDHULLST" />
               <Property name="Value" value="256" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
               <Property name="Name" value="BOUNDHULLED" />
               <Property name="Value" value="1616" />
             </Property>
@@ -10263,7 +10375,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="5">
+    <Property name="Children" value="TkSceneNodeData" _index="5">
       <Property name="Name" value="Interior_" />
       <Property name="NameHash" value="309913048" />
       <Property name="Type" value="LOCATOR" />
@@ -10282,7 +10394,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="6">
+    <Property name="Children" value="TkSceneNodeData" _index="6">
       <Property name="Name" value="Layout_" />
       <Property name="NameHash" value="591504117" />
       <Property name="Type" value="LOCATOR" />
@@ -10301,7 +10413,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="7">
+    <Property name="Children" value="TkSceneNodeData" _index="7">
       <Property name="Name" value="TriggerVolume" />
       <Property name="NameHash" value="3846031098" />
       <Property name="Type" value="LOCATOR" />
@@ -10318,15 +10430,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRIGGERVOLUME.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
-				<Property name="Children" value="TkSceneNodeData" _index="0">
-					<Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|CollisionBox" />
-					<Property name="NameHash" value="152462705" />
+        <Property name="Children" value="TkSceneNodeData" _index="0">
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|CollisionBox" />
+          <Property name="NameHash" value="152462705" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0.000000" />
@@ -10341,23 +10453,23 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="NAVIGATION" />
               <Property name="Value" value="FALSE" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Box" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="WIDTH" />
               <Property name="Value" value="17.848999" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="HEIGHT" />
               <Property name="Value" value="5.661149" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="DEPTH" />
               <Property name="Value" value="28.000000" />
             </Property>
@@ -10366,7 +10478,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="8">
+    <Property name="Children" value="TkSceneNodeData" _index="8">
       <Property name="Name" value="RefTradingPost_SupportN" />
       <Property name="NameHash" value="1950080726" />
       <Property name="Type" value="REFERENCE" />
@@ -10387,10 +10499,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10415,10 +10527,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10443,10 +10555,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10471,10 +10583,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10499,10 +10611,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10527,10 +10639,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10555,10 +10667,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10583,10 +10695,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10611,10 +10723,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10639,10 +10751,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10667,10 +10779,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10695,10 +10807,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LOCATORS\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10723,10 +10835,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10751,10 +10863,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10779,10 +10891,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10807,10 +10919,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GLASSTUNNELGEK_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10835,10 +10947,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEKLANDINGTUBEMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10863,10 +10975,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\GEK\GEKLANDINGTUBEMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10891,10 +11003,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10919,10 +11031,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10947,10 +11059,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -10975,10 +11087,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11003,10 +11115,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11031,10 +11143,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11059,10 +11171,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11087,10 +11199,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11115,10 +11227,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11143,10 +11255,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11171,10 +11283,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11199,10 +11311,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11211,9 +11323,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="NameHash" value="406464256" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="22.3750534" />
+        <Property name="TransX" value="22.3750534" />
         <Property name="TransY" value="9.000000" />
-				<Property name="TransZ" value="12.7689209" />
+        <Property name="TransZ" value="12.7689209" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="-90.000000" />
         <Property name="RotZ" value="0.000000" />
@@ -11227,21 +11339,21 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\LADDER2.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="39">
+    <Property name="Children" value="TkSceneNodeData" _index="39">
       <Property name="Name" value="RefLadder3" />
       <Property name="NameHash" value="312023998" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="17.0618668" />
+        <Property name="TransX" value="17.0618668" />
         <Property name="TransY" value="0.000000" />
-				<Property name="TransZ" value="12.6386585" />
+        <Property name="TransZ" value="12.6386585" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="-90.000000" />
         <Property name="RotZ" value="0.000000" />
@@ -11255,21 +11367,21 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\LADDER.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="40">
+    <Property name="Children" value="TkSceneNodeData" _index="40">
       <Property name="Name" value="RefLadder2" />
       <Property name="NameHash" value="2216525509" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="22.3750534" />
+        <Property name="TransX" value="22.3750534" />
         <Property name="TransY" value="9.000000" />
-				<Property name="TransZ" value="-12.7596169" />
+        <Property name="TransZ" value="-12.7596169" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="-90.000000" />
         <Property name="RotZ" value="0.000000" />
@@ -11283,21 +11395,21 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\LADDER2.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="41">
+    <Property name="Children" value="TkSceneNodeData" _index="41">
       <Property name="Name" value="RefLadder" />
       <Property name="NameHash" value="4249009587" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="17.0618668" />
+        <Property name="TransX" value="17.0618668" />
         <Property name="TransY" value="0.000000" />
-				<Property name="TransZ" value="-12.6037226" />
+        <Property name="TransZ" value="-12.6037226" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="-90.000000" />
         <Property name="RotZ" value="0.000000" />
@@ -11311,10 +11423,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\LADDER.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11376,10 +11488,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SAVEPOINT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11441,10 +11553,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\SHIELDSTATION.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11469,10 +11581,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11497,10 +11609,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11562,10 +11674,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_GLASS_MAIN.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11590,10 +11702,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_GLASS_MAIN.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11618,10 +11730,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_GLASS_MAIN.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11683,10 +11795,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UNDERWATERBASE\CORRIDOR_STRAIGHT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11748,10 +11860,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_GLASS_MAIN.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11894,10 +12006,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_STRAIGHT_GLASS.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -11922,10 +12034,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_STRAIGHT_GLASS.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12005,9 +12117,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\BRIDGE_GLASSWALL.SCENE.MBIN" />
             </Property>
-				    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-				    	<Property name="Name" value="EMBEDGEOMETRY" />
-				    	<Property name="Value" value="TRUE" />
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -12053,9 +12165,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\BRIDGE_GLASSWALL.SCENE.MBIN" />
             </Property>
-				    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-				    	<Property name="Name" value="EMBEDGEOMETRY" />
-				    	<Property name="Value" value="TRUE" />
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -12101,9 +12213,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\BRIDGE_GLASSWALL.SCENE.MBIN" />
             </Property>
-				    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-				    	<Property name="Name" value="EMBEDGEOMETRY" />
-				    	<Property name="Value" value="TRUE" />
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -12149,9 +12261,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\BRIDGE_GLASSWALL.SCENE.MBIN" />
             </Property>
-				    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-				    	<Property name="Name" value="EMBEDGEOMETRY" />
-				    	<Property name="Value" value="TRUE" />
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -12260,10 +12372,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSKORVAX.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12288,10 +12400,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSKORVAX.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12316,10 +12428,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSKORVAX.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12344,10 +12456,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSKORVAX.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12372,10 +12484,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSKORVAX.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12400,10 +12512,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSKORVAX.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12428,10 +12540,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSKORVAX.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12456,10 +12568,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSKORVAX.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12484,10 +12596,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSUPPERKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12512,10 +12624,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSUPPERKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12540,10 +12652,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSUPPERKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12568,10 +12680,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSUPPERKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12596,10 +12708,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSUPPERKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12624,10 +12736,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSUPPERKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12652,10 +12764,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSUPPERKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12680,10 +12792,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\PANELGLASSUPPERKORVAX_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12708,10 +12820,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\KORVAX\FLOOR_RING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12736,10 +12848,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSTATION\KORVAX\FLOOR_RING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12764,10 +12876,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOM_FLOOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12829,10 +12941,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TERMINAL\TERMINAL_TADINGPOST.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12857,10 +12969,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_MONITORSTATION_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12885,10 +12997,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_MONITORSTATION_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12913,10 +13025,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_MONITORSTATION_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12941,10 +13053,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_MONITORSTATION_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12969,10 +13081,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_HEALTH_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -12997,10 +13109,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_SHIELD_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -13025,14 +13137,42 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_SAVEPOINT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="8">
+      <Property name="Name" value="RefBiggsTeleporter" />
+      <Property name="NameHash" value="2991593292" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="-7.000000" />
+        <Property name="TransY" value="0.000000" />
+        <Property name="TransZ" value="-11.500000" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="40.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="1.000000" />
+        <Property name="ScaleY" value="1.000000" />
+        <Property name="ScaleZ" value="1.000000" />
+      </Property>
+      <Property name="PlatformExclusion" value="0" />
+      <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\BIGGS\BIGGSTELEPORTER.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property name="Children" value="TkSceneNodeData" _index="9">
       <Property name="Name" value="SHIPSALVAGE" />
       <Property name="NameHash" value="2411574526" />
       <Property name="Type" value="REFERENCE" />
@@ -13053,14 +13193,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIPSALVAGETERMINAL.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="9">
+    <Property name="Children" value="TkSceneNodeData" _index="10">
       <Property name="Name" value="CUSTOMIZER" />
       <Property name="NameHash" value="3025946560" />
       <Property name="Type" value="REFERENCE" />
@@ -13081,14 +13221,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\CUSTOMISESTATION.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="10">
+    <Property name="Children" value="TkSceneNodeData" _index="11">
       <Property name="Name" value="ENGINE" />
       <Property name="NameHash" value="3787129635" />
       <Property name="Type" value="REFERENCE" />
@@ -13109,14 +13249,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\SPACE\POI\PARTS\ENGINEREACTOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="11">
+    <Property name="Children" value="TkSceneNodeData" _index="12">
       <Property name="Name" value="ANIMATEDDOORNORTH" />
       <Property name="NameHash" value="1908951268" />
       <Property name="Type" value="REFERENCE" />
@@ -13137,14 +13277,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="12">
+    <Property name="Children" value="TkSceneNodeData" _index="13">
       <Property name="Name" value="ANIMATEDDOORNorthEAST" />
       <Property name="NameHash" value="1347869345" />
       <Property name="Type" value="REFERENCE" />
@@ -13165,14 +13305,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="13">
+    <Property name="Children" value="TkSceneNodeData" _index="14">
       <Property name="Name" value="ANIMATEDDOOREAST" />
       <Property name="NameHash" value="3143715036" />
       <Property name="Type" value="REFERENCE" />
@@ -13193,14 +13333,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="14">
+    <Property name="Children" value="TkSceneNodeData" _index="15">
       <Property name="Name" value="ANIMATEDDOORSouthEAST" />
       <Property name="NameHash" value="2993671243" />
       <Property name="Type" value="REFERENCE" />
@@ -13221,14 +13361,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="15">
+    <Property name="Children" value="TkSceneNodeData" _index="16">
       <Property name="Name" value="ANIMATEDDOORSOUTH" />
       <Property name="NameHash" value="53488837" />
       <Property name="Type" value="REFERENCE" />
@@ -13249,14 +13389,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="16">
+    <Property name="Children" value="TkSceneNodeData" _index="17">
       <Property name="Name" value="ANIMATEDDOORSouthWEST" />
       <Property name="NameHash" value="94578487" />
       <Property name="Type" value="REFERENCE" />
@@ -13277,14 +13417,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="17">
+    <Property name="Children" value="TkSceneNodeData" _index="18">
       <Property name="Name" value="ANIMATEDDOORWEST" />
       <Property name="NameHash" value="1732690248" />
       <Property name="Type" value="REFERENCE" />
@@ -13305,14 +13445,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="18">
+    <Property name="Children" value="TkSceneNodeData" _index="19">
       <Property name="Name" value="ANIMATEDDOORNorthWEST" />
       <Property name="NameHash" value="893507306" />
       <Property name="Type" value="REFERENCE" />
@@ -13333,14 +13473,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="19">
+    <Property name="Children" value="TkSceneNodeData" _index="20">
       <Property name="Name" value="CHAIR1" />
       <Property name="NameHash" value="1292270299" />
       <Property name="Type" value="REFERENCE" />
@@ -13361,14 +13501,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="20">
+    <Property name="Children" value="TkSceneNodeData" _index="21">
       <Property name="Name" value="CHAIR2" />
       <Property name="NameHash" value="1533056911" />
       <Property name="Type" value="REFERENCE" />
@@ -13389,14 +13529,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="21">
+    <Property name="Children" value="TkSceneNodeData" _index="22">
       <Property name="Name" value="CHAIR3" />
       <Property name="NameHash" value="2983380082" />
       <Property name="Type" value="REFERENCE" />
@@ -13417,14 +13557,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="22">
+    <Property name="Children" value="TkSceneNodeData" _index="23">
       <Property name="Name" value="CHAIR4" />
       <Property name="NameHash" value="3482320876" />
       <Property name="Type" value="REFERENCE" />
@@ -13445,14 +13585,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="23">
+    <Property name="Children" value="TkSceneNodeData" _index="24">
       <Property name="Name" value="CHAIR5" />
       <Property name="NameHash" value="2523794857" />
       <Property name="Type" value="REFERENCE" />
@@ -13473,38 +13613,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
-      </Property>
-      <Property name="Children" />
-    </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="24">
-      <Property name="Name" value="CHAIR6" />
-      <Property name="NameHash" value="2753800468" />
-      <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData">
-        <Property name="TransX" value="0.000000" />
-        <Property name="TransY" value="0.000000" />
-        <Property name="TransZ" value="0.000000" />
-        <Property name="RotX" value="0.000000" />
-        <Property name="RotY" value="-153.000000" />
-        <Property name="RotZ" value="0.000000" />
-        <Property name="ScaleX" value="1.000000" />
-        <Property name="ScaleY" value="1.000000" />
-        <Property name="ScaleZ" value="1.000000" />
-      </Property>
-      <Property name="PlatformExclusion" value="0" />
-      <Property name="Attributes">
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
-          <Property name="Name" value="SCENEGRAPH" />
-          <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -13529,10 +13641,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -13557,10 +13669,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -13585,10 +13697,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -13613,10 +13725,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -13641,10 +13753,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -13669,10 +13781,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -13697,10 +13809,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -13725,10 +13837,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -13753,10 +13865,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -13777,47 +13889,47 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="2.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="50000.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -13841,47 +13953,47 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="2.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="50000.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -13905,47 +14017,47 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="2.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="50000.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -13969,47 +14081,47 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="2.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="50000.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -14074,10 +14186,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\CHAIRS\WAITINGROOMCHAIR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14139,10 +14251,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\HEALTHSTATION.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14167,10 +14279,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14195,10 +14307,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14260,10 +14372,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14325,10 +14437,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SAVEPOINT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14390,10 +14502,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\SHIELDSTATION.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14418,10 +14530,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14446,10 +14558,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14511,10 +14623,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_GLASS_MAIN.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14576,10 +14688,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_GLASS_MAIN.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14641,10 +14753,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_SUPPORT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14706,10 +14818,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_SUPPORT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14771,10 +14883,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_SUPPORT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14836,10 +14948,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_STRAIGHT_GLASS.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14901,10 +15013,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_GLASS_MAIN.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -14966,10 +15078,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_SUPPORT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15031,10 +15143,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_CORRIDORCONNECT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15059,10 +15171,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_CORRIDORCONNECT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15087,10 +15199,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_CORRIDORCONNECT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15115,10 +15227,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_CORRIDORCONNECT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15143,10 +15255,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_WINDOWMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15171,10 +15283,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_WINDOWMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15199,10 +15311,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_WINDOWMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15227,10 +15339,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_WINDOWMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15255,10 +15367,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANELCORNER_DEFAULT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15283,10 +15395,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANELCORNER_DEFAULT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15311,10 +15423,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANELCORNER_DEFAULT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15339,10 +15451,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANELCORNER_DEFAULT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15367,10 +15479,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\MAINROOMCUBE_FRAME_VYKEEN.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15395,10 +15507,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\MAINROMM_ROOF.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15423,10 +15535,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\MAINROOM_FLOOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15451,10 +15563,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOM_CIELINGCAP.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15479,10 +15591,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\LADDERHATCH.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15544,10 +15656,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TERMINAL\TERMINAL_TADINGPOST.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15572,10 +15684,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_MONITORSTATION_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15600,10 +15712,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_MONITORSTATION_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15628,10 +15740,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_MONITORSTATION_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15656,10 +15768,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_MONITORSTATION_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15684,10 +15796,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_HEALTH_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15712,10 +15824,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_SHIELD_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -15740,14 +15852,42 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_SAVEPOINT_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="8">
+      <Property name="Name" value="RefBiggsTeleporter" />
+      <Property name="NameHash" value="2991593292" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="-11.000000" />
+        <Property name="TransY" value="0.000000" />
+        <Property name="TransZ" value="-7.200000" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="90.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="1.000000" />
+        <Property name="ScaleY" value="1.000000" />
+        <Property name="ScaleZ" value="1.000000" />
+      </Property>
+      <Property name="PlatformExclusion" value="0" />
+      <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\BIGGS\BIGGSTELEPORTER.SCENE.MBIN" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property name="Children" value="TkSceneNodeData" _index="9">
       <Property name="Name" value="SHIPSALVAGE" />
       <Property name="NameHash" value="2411574526" />
       <Property name="Type" value="REFERENCE" />
@@ -15768,14 +15908,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIPSALVAGETERMINAL.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="9">
+    <Property name="Children" value="TkSceneNodeData" _index="10">
       <Property name="Name" value="CUSTOMIZER" />
       <Property name="NameHash" value="3025946560" />
       <Property name="Type" value="REFERENCE" />
@@ -15796,14 +15936,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\CUSTOMISESTATION.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="10">
+    <Property name="Children" value="TkSceneNodeData" _index="11">
       <Property name="Name" value="ENGINE" />
       <Property name="NameHash" value="3787129635" />
       <Property name="Type" value="REFERENCE" />
@@ -15824,14 +15964,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\SPACE\POI\PARTS\ENGINEREACTOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="11">
+    <Property name="Children" value="TkSceneNodeData" _index="12">
       <Property name="Name" value="ANIMATEDDOORNORTH" />
       <Property name="NameHash" value="1908951268" />
       <Property name="Type" value="REFERENCE" />
@@ -15852,14 +15992,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="12">
+    <Property name="Children" value="TkSceneNodeData" _index="13">
       <Property name="Name" value="ANIMATEDDOOREAST" />
       <Property name="NameHash" value="3143715036" />
       <Property name="Type" value="REFERENCE" />
@@ -15880,14 +16020,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="13">
+    <Property name="Children" value="TkSceneNodeData" _index="14">
       <Property name="Name" value="ANIMATEDDOORSOUTH" />
       <Property name="NameHash" value="53488837" />
       <Property name="Type" value="REFERENCE" />
@@ -15908,14 +16048,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="14">
+    <Property name="Children" value="TkSceneNodeData" _index="15">
       <Property name="Name" value="ANIMATEDDOORWEST" />
       <Property name="NameHash" value="1732690248" />
       <Property name="Type" value="REFERENCE" />
@@ -15936,14 +16076,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\ANIMATEDDOORSQMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="15">
+    <Property name="Children" value="TkSceneNodeData" _index="16">
       <Property name="Name" value="CHAIR1" />
       <Property name="NameHash" value="1292270299" />
       <Property name="Type" value="REFERENCE" />
@@ -15964,14 +16104,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="16">
+    <Property name="Children" value="TkSceneNodeData" _index="17">
       <Property name="Name" value="CHAIR2" />
       <Property name="NameHash" value="1533056911" />
       <Property name="Type" value="REFERENCE" />
@@ -15992,14 +16132,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="17">
+    <Property name="Children" value="TkSceneNodeData" _index="18">
       <Property name="Name" value="CHAIR3" />
       <Property name="NameHash" value="2983380082" />
       <Property name="Type" value="REFERENCE" />
@@ -16020,14 +16160,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="18">
+    <Property name="Children" value="TkSceneNodeData" _index="19">
       <Property name="Name" value="CHAIR4" />
       <Property name="NameHash" value="3482320876" />
       <Property name="Type" value="REFERENCE" />
@@ -16048,14 +16188,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="19">
+    <Property name="Children" value="TkSceneNodeData" _index="20">
       <Property name="Name" value="CHAIR5" />
       <Property name="NameHash" value="2523794857" />
       <Property name="Type" value="REFERENCE" />
@@ -16076,14 +16216,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="20">
+    <Property name="Children" value="TkSceneNodeData" _index="21">
       <Property name="Name" value="CHAIR6" />
       <Property name="NameHash" value="2753800468" />
       <Property name="Type" value="REFERENCE" />
@@ -16104,14 +16244,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="21">
+    <Property name="Children" value="TkSceneNodeData" _index="22">
       <Property name="Name" value="CHAIR7" />
       <Property name="NameHash" value="3248940050" />
       <Property name="Type" value="REFERENCE" />
@@ -16132,14 +16272,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="22">
+    <Property name="Children" value="TkSceneNodeData" _index="23">
       <Property name="Name" value="CHAIR8" />
       <Property name="NameHash" value="3486875767" />
       <Property name="Type" value="REFERENCE" />
@@ -16160,14 +16300,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_CHAIR_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="23">
+    <Property name="Children" value="TkSceneNodeData" _index="24">
       <Property name="Name" value="pointLightL" />
       <Property name="NameHash" value="2599933111" />
       <Property name="Type" value="LIGHT" />
@@ -16184,54 +16324,54 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="2.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="50000.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="24">
+    <Property name="Children" value="TkSceneNodeData" _index="25">
       <Property name="Name" value="pointLightR" />
       <Property name="NameHash" value="605873915" />
       <Property name="Type" value="LIGHT" />
@@ -16248,54 +16388,54 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="2.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="50000.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="25">
+    <Property name="Children" value="TkSceneNodeData" _index="26">
       <Property name="Name" value="pointLightFront" />
       <Property name="NameHash" value="821068762" />
       <Property name="Type" value="LIGHT" />
@@ -16312,54 +16452,54 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="2.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="50000.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="26">
+    <Property name="Children" value="TkSceneNodeData" _index="27">
       <Property name="Name" value="pointLightBack" />
       <Property name="NameHash" value="2348932709" />
       <Property name="Type" value="LIGHT" />
@@ -16376,54 +16516,54 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="FALLOFF_RATE" />
           <Property name="Value" value="2.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="50000.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="0.000000" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="27">
+    <Property name="Children" value="TkSceneNodeData" _index="28">
       <Property name="Name" value="shipstatuesilver" />
       <Property name="NameHash" value="3707321638" />
       <Property name="Type" value="REFERENCE" />
@@ -16444,14 +16584,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\STATUE_SHIP_S.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="28">
+    <Property name="Children" value="TkSceneNodeData" _index="29">
       <Property name="Name" value="shipstatuegold" />
       <Property name="NameHash" value="25662179" />
       <Property name="Type" value="REFERENCE" />
@@ -16472,14 +16612,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\STATUE_SHIP_G.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="29">
+    <Property name="Children" value="TkSceneNodeData" _index="30">
       <Property name="Name" value="shipstatuebronze" />
       <Property name="NameHash" value="139444940" />
       <Property name="Type" value="REFERENCE" />
@@ -16500,10 +16640,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\STATUE_SHIP_B.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -16565,10 +16705,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -16593,10 +16733,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -16621,10 +16761,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -16649,10 +16789,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -16677,10 +16817,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -16705,10 +16845,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -16733,10 +16873,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -16761,10 +16901,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -16789,10 +16929,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\RAILING.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -16854,10 +16994,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\CHAIRS\WAITINGROOMCHAIR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -16882,10 +17022,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\SMALLHEXTABLE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -16910,10 +17050,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\CHAIRS\WAITINGROOMCHAIR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -16975,10 +17115,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_STRAIGHT_GLASS.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -17003,10 +17143,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_LSHAPE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -17031,10 +17171,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_STRAIGHT_GLASS.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -17059,10 +17199,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_TSHAPE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -17087,10 +17227,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_STRAIGHT_GLASS.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -17115,10 +17255,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_STRAIGHT_GLASS.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -17143,10 +17283,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_LSHAPE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -17171,10 +17311,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CORRIDOR_STRAIGHT_GLASS.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -17236,10 +17376,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\HEALTHSTATION.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -17264,10 +17404,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -17292,10 +17432,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -17357,10 +17497,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -17406,9 +17546,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="NameHash" value="3575991963" />
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="18.1076126" />
+        <Property name="TransX" value="18.1076126" />
         <Property name="TransY" value="9.051993" />
-				<Property name="TransZ" value="12.6288452" />
+        <Property name="TransZ" value="12.6288452" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="0.000000" />
         <Property name="RotZ" value="0.000000" />
@@ -17418,93 +17558,93 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="BATCHSTARTPHYSI" />
           <Property name="Value" value="6336" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="VERTRSTARTPHYSI" />
           <Property name="Value" value="3434" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="VERTRENDPHYSICS" />
           <Property name="Value" value="3501" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="BATCHSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="BATCHCOUNT" />
           <Property name="Value" value="180" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="VERTRSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="VERTRENDGRAPHIC" />
           <Property name="Value" value="67" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="FIRSTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="LASTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LODLEVEL" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="BOUNDHULLST" />
           <Property name="Value" value="1788" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
           <Property name="Name" value="BOUNDHULLED" />
           <Property name="Value" value="1804" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
           <Property name="Name" value="AABBMINX" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
           <Property name="Name" value="AABBMINY" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
           <Property name="Name" value="AABBMINZ" />
           <Property name="Value" value="-0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
           <Property name="Name" value="AABBMAXX" />
           <Property name="Value" value="0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
           <Property name="Name" value="AABBMAXY" />
           <Property name="Value" value="0.346602" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
           <Property name="Name" value="AABBMAXZ" />
           <Property name="Value" value="0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
           <Property name="Name" value="HASH" />
-					<Property name="Value" value="3575991963" />
+          <Property name="Value" value="3575991963" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\PHONG37.MATERIAL.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
           <Property name="Name" value="MESHLINK" />
           <Property name="Value" value="LightShape" />
         </Property>
       </Property>
       <Property name="Children">
-				<Property name="Children" value="TkSceneNodeData" _index="0">
+        <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
           <Property name="NameHash" value="4219409884" />
           <Property name="Type" value="LIGHT" />
@@ -17521,47 +17661,47 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="360.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="9000.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="0.211700" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
               <Property name="Name" value="COOKIE_IDX" />
-							<Property name="Value" value="-1" />
+              <Property name="Value" value="-1" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -17570,14 +17710,14 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="1">
+    <Property name="Children" value="TkSceneNodeData" _index="1">
       <Property name="Name" value="Light1" />
       <Property name="NameHash" value="3820849344" />
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="23.6489525" />
-				<Property name="TransY" value="16.6624565" />
-				<Property name="TransZ" value="12.7217979" />
+        <Property name="TransX" value="23.6489525" />
+        <Property name="TransY" value="16.6624565" />
+        <Property name="TransZ" value="12.7217979" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="0.000000" />
         <Property name="RotZ" value="0.000000" />
@@ -17587,93 +17727,93 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="BATCHSTARTPHYSI" />
           <Property name="Value" value="6516" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="VERTRSTARTPHYSI" />
           <Property name="Value" value="3502" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="VERTRENDPHYSICS" />
           <Property name="Value" value="3569" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="BATCHSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="BATCHCOUNT" />
           <Property name="Value" value="180" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="VERTRSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="VERTRENDGRAPHIC" />
           <Property name="Value" value="67" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="FIRSTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="LASTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LODLEVEL" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="BOUNDHULLST" />
           <Property name="Value" value="1804" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
           <Property name="Name" value="BOUNDHULLED" />
           <Property name="Value" value="1820" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
           <Property name="Name" value="AABBMINX" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
           <Property name="Name" value="AABBMINY" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
           <Property name="Name" value="AABBMINZ" />
           <Property name="Value" value="-0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
           <Property name="Name" value="AABBMAXX" />
           <Property name="Value" value="0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
           <Property name="Name" value="AABBMAXY" />
           <Property name="Value" value="0.346602" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
           <Property name="Name" value="AABBMAXZ" />
           <Property name="Value" value="0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
           <Property name="Name" value="HASH" />
-					<Property name="Value" value="3820849344" />
+          <Property name="Value" value="3820849344" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\PHONG37.MATERIAL.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
           <Property name="Name" value="MESHLINK" />
           <Property name="Value" value="Light1Shape" />
         </Property>
       </Property>
       <Property name="Children">
-				<Property name="Children" value="TkSceneNodeData" _index="0">
+        <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
           <Property name="NameHash" value="4219409884" />
           <Property name="Type" value="LIGHT" />
@@ -17690,47 +17830,47 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="360.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="9000.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="0.211700" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
               <Property name="Name" value="COOKIE_IDX" />
-							<Property name="Value" value="-1" />
+              <Property name="Value" value="-1" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -17739,14 +17879,14 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="2">
+    <Property name="Children" value="TkSceneNodeData" _index="2">
       <Property name="Name" value="Light2" />
       <Property name="NameHash" value="689640314" />
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="23.6489525" />
-				<Property name="TransY" value="16.6624565" />
-				<Property name="TransZ" value="-12.7292566" />
+        <Property name="TransX" value="23.6489525" />
+        <Property name="TransY" value="16.6624565" />
+        <Property name="TransZ" value="-12.7292566" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="0.000000" />
         <Property name="RotZ" value="0.000000" />
@@ -17756,93 +17896,93 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="BATCHSTARTPHYSI" />
           <Property name="Value" value="6696" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="VERTRSTARTPHYSI" />
           <Property name="Value" value="3570" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="VERTRENDPHYSICS" />
           <Property name="Value" value="3637" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="BATCHSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="BATCHCOUNT" />
           <Property name="Value" value="180" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="VERTRSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="VERTRENDGRAPHIC" />
           <Property name="Value" value="67" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="FIRSTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="LASTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LODLEVEL" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="BOUNDHULLST" />
           <Property name="Value" value="1820" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
           <Property name="Name" value="BOUNDHULLED" />
           <Property name="Value" value="1836" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
           <Property name="Name" value="AABBMINX" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
           <Property name="Name" value="AABBMINY" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
           <Property name="Name" value="AABBMINZ" />
           <Property name="Value" value="-0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
           <Property name="Name" value="AABBMAXX" />
           <Property name="Value" value="0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
           <Property name="Name" value="AABBMAXY" />
           <Property name="Value" value="0.346602" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
           <Property name="Name" value="AABBMAXZ" />
           <Property name="Value" value="0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
           <Property name="Name" value="HASH" />
-					<Property name="Value" value="689640314" />
+          <Property name="Value" value="689640314" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\PHONG37.MATERIAL.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
           <Property name="Name" value="MESHLINK" />
           <Property name="Value" value="Light2Shape" />
         </Property>
       </Property>
       <Property name="Children">
-				<Property name="Children" value="TkSceneNodeData" _index="0">
+        <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
           <Property name="NameHash" value="4219409884" />
           <Property name="Type" value="LIGHT" />
@@ -17859,47 +17999,47 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="360.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="9000.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="0.211700" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
               <Property name="Name" value="COOKIE_IDX" />
-							<Property name="Value" value="-1" />
+              <Property name="Value" value="-1" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -17908,14 +18048,14 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="3">
+    <Property name="Children" value="TkSceneNodeData" _index="3">
       <Property name="Name" value="Light3" />
       <Property name="NameHash" value="444495425" />
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="18.1076126" />
+        <Property name="TransX" value="18.1076126" />
         <Property name="TransY" value="9.051993" />
-				<Property name="TransZ" value="-12.6311092" />
+        <Property name="TransZ" value="-12.6311092" />
         <Property name="RotX" value="0.000000" />
         <Property name="RotY" value="0.000000" />
         <Property name="RotZ" value="0.000000" />
@@ -17925,93 +18065,93 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="BATCHSTARTPHYSI" />
           <Property name="Value" value="6876" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="VERTRSTARTPHYSI" />
           <Property name="Value" value="3638" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="VERTRENDPHYSICS" />
           <Property name="Value" value="3705" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="BATCHSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="BATCHCOUNT" />
           <Property name="Value" value="180" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="VERTRSTARTGRAPH" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="VERTRENDGRAPHIC" />
           <Property name="Value" value="67" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="FIRSTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="LASTSKINMAT" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LODLEVEL" />
           <Property name="Value" value="0" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="BOUNDHULLST" />
           <Property name="Value" value="1836" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="11">
           <Property name="Name" value="BOUNDHULLED" />
           <Property name="Value" value="1852" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="12">
           <Property name="Name" value="AABBMINX" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="13">
           <Property name="Name" value="AABBMINY" />
           <Property name="Value" value="-0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="14">
           <Property name="Name" value="AABBMINZ" />
           <Property name="Value" value="-0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="15">
           <Property name="Name" value="AABBMAXX" />
           <Property name="Value" value="0.346563" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="16">
           <Property name="Name" value="AABBMAXY" />
           <Property name="Value" value="0.346602" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="17">
           <Property name="Name" value="AABBMAXZ" />
           <Property name="Value" value="0.346577" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="18">
           <Property name="Name" value="HASH" />
-					<Property name="Value" value="444495425" />
+          <Property name="Value" value="444495425" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="19">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\PHONG37.MATERIAL.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="20">
           <Property name="Name" value="MESHLINK" />
           <Property name="Value" value="Light3Shape" />
         </Property>
       </Property>
       <Property name="Children">
-				<Property name="Children" value="TkSceneNodeData" _index="0">
+        <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
           <Property name="NameHash" value="4219409884" />
           <Property name="Type" value="LIGHT" />
@@ -18028,47 +18168,47 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="FOV" />
               <Property name="Value" value="360.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="FALLOFF" />
               <Property name="Value" value="quadratic" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="Value" value="2.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="INTENSITY" />
               <Property name="Value" value="9000.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="COL_R" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
               <Property name="Name" value="COL_G" />
               <Property name="Value" value="1.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
               <Property name="Name" value="COL_B" />
               <Property name="Value" value="0.211700" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
               <Property name="Name" value="COOKIE_IDX" />
-							<Property name="Value" value="-1" />
+              <Property name="Value" value="-1" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="Value" value="0.000000" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
               <Property name="Name" value="MATERIAL" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
@@ -18077,7 +18217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-		<Property name="Children" value="TkSceneNodeData" _index="4">
+    <Property name="Children" value="TkSceneNodeData" _index="4">
       <Property name="Name" value="Data" />
       <Property name="NameHash" value="2810148397" />
       <Property name="Type" value="LOCATOR" />
@@ -18094,20 +18234,20 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
-					<Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|Collision2" />
-					<Property name="NameHash" value="4029056343" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|Collision2" />
+          <Property name="NameHash" value="4029056343" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData">
-						<Property name="TransX" value="21.8507175" />
+            <Property name="TransX" value="21.8507175" />
             <Property name="TransY" value="0.956589" />
-						<Property name="TransZ" value="12.9872942" />
+            <Property name="TransZ" value="12.9872942" />
             <Property name="RotX" value="0.000000" />
             <Property name="RotY" value="180.000000" />
             <Property name="RotZ" value="0.000000" />
@@ -18117,43 +18257,43 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="NAVIGATION" />
               <Property name="Value" value="FALSE" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Mesh" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="BATCHSTART" />
               <Property name="Value" value="2592" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="BATCHCOUNT" />
               <Property name="Value" value="276" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="VERTRSTART" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
               <Property name="Name" value="VERTREND" />
               <Property name="Value" value="127" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
               <Property name="Name" value="FIRSTSKINMAT" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
               <Property name="Name" value="LASTSKINMAT" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
               <Property name="Name" value="BOUNDHULLST" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
               <Property name="Name" value="BOUNDHULLED" />
               <Property name="Value" value="128" />
             </Property>
@@ -18161,13 +18301,13 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="1">
-					<Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|collision1" />
-					<Property name="NameHash" value="32352485" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|collision1" />
+          <Property name="NameHash" value="32352485" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData">
-						<Property name="TransX" value="21.8507175" />
+            <Property name="TransX" value="21.8507175" />
             <Property name="TransY" value="0.956589" />
-						<Property name="TransZ" value="-12.9872913" />
+            <Property name="TransZ" value="-12.9872913" />
             <Property name="RotX" value="0.000000" />
             <Property name="RotY" value="0.000000" />
             <Property name="RotZ" value="0.000000" />
@@ -18177,43 +18317,43 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="NAVIGATION" />
               <Property name="Value" value="FALSE" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Mesh" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="BATCHSTART" />
               <Property name="Value" value="2316" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="BATCHCOUNT" />
               <Property name="Value" value="276" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="VERTRSTART" />
               <Property name="Value" value="128" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
               <Property name="Name" value="VERTREND" />
               <Property name="Value" value="255" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
               <Property name="Name" value="FIRSTSKINMAT" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
               <Property name="Name" value="LASTSKINMAT" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
               <Property name="Name" value="BOUNDHULLST" />
               <Property name="Value" value="128" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
               <Property name="Name" value="BOUNDHULLED" />
               <Property name="Value" value="256" />
             </Property>
@@ -18221,11 +18361,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="2">
-					<Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|collision" />
-					<Property name="NameHash" value="3579039919" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|collision" />
+          <Property name="NameHash" value="3579039919" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData">
-						<Property name="TransX" value="13.3508015" />
+            <Property name="TransX" value="13.3508015" />
             <Property name="TransY" value="0.963270" />
             <Property name="TransZ" value="0.000000" />
             <Property name="RotX" value="0.000000" />
@@ -18237,43 +18377,43 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
               <Property name="Name" value="NAVIGATION" />
               <Property name="Value" value="FALSE" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Mesh" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="BATCHSTART" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="BATCHCOUNT" />
               <Property name="Value" value="2316" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="VERTRSTART" />
               <Property name="Value" value="256" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
               <Property name="Name" value="VERTREND" />
               <Property name="Value" value="1615" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
               <Property name="Name" value="FIRSTSKINMAT" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
               <Property name="Name" value="LASTSKINMAT" />
               <Property name="Value" value="0" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
               <Property name="Name" value="BOUNDHULLST" />
               <Property name="Value" value="256" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
               <Property name="Name" value="BOUNDHULLED" />
               <Property name="Value" value="1616" />
             </Property>
@@ -18337,15 +18477,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRIGGERVOLUME.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
-				<Property name="Children" value="TkSceneNodeData" _index="0">
-					<Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|CollisionBox" />
-					<Property name="NameHash" value="152462705" />
+        <Property name="Children" value="TkSceneNodeData" _index="0">
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|CollisionBox" />
+          <Property name="NameHash" value="152462705" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0.000000" />
@@ -18360,23 +18500,23 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
             <Property name="Name" value="NAVIGATION" />
             <Property name="Value" value="FALSE" />
           </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
               <Property name="Name" value="TYPE" />
               <Property name="Value" value="Box" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="WIDTH" />
               <Property name="Value" value="17.848999" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="HEIGHT" />
               <Property name="Value" value="5.661149" />
             </Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
+            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="DEPTH" />
               <Property name="Value" value="28.000000" />
             </Property>
@@ -18482,10 +18622,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18510,10 +18650,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18538,10 +18678,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18566,10 +18706,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18594,10 +18734,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18622,10 +18762,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18650,10 +18790,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18678,10 +18818,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18706,10 +18846,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18734,10 +18874,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18762,10 +18902,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18790,10 +18930,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\SUPPORTCENTER_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18818,10 +18958,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_DOORMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18846,10 +18986,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_DOORMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18874,10 +19014,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_DOORMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18902,10 +19042,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\VYKEEN_DOORMODULE.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18930,10 +19070,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18958,10 +19098,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -18986,10 +19126,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19014,10 +19154,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19042,10 +19182,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19070,10 +19210,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19098,10 +19238,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19126,10 +19266,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\VYKEEN\CORRIDORVYKEEN_LOCATOR.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19154,10 +19294,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19182,10 +19322,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19210,10 +19350,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19238,10 +19378,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD_BOTTOM.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19266,10 +19406,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19294,10 +19434,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19322,10 +19462,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19350,10 +19490,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19378,10 +19518,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19406,10 +19546,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19434,10 +19574,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD1.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19462,10 +19602,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSTATION\LANDINGPAD2.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19527,10 +19667,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SAVEPOINT.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19592,10 +19732,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\SHIELDSTATION.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19620,10 +19760,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19648,10 +19788,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19713,10 +19853,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_GLASS.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19741,10 +19881,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_GLASS.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>
@@ -19769,10 +19909,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\PANEL_GLASS.SCENE.MBIN" />
         </Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-					<Property name="Name" value="EMBEDGEOMETRY" />
-					<Property name="Value" value="TRUE" />
-				</Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
+        </Property>
       </Property>
       <Property name="Children" />
     </Property>

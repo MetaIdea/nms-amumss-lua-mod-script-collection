@@ -1336,6 +1336,11 @@ CaptLogGuildStand =						6						--3
 CrewManGuildUnits =						600000					--0
 CaptLogGuildUnits =						900000					--0
 
+--Removes Storage Augmentations from the pool of items you can get when salvaging certain starships
+NoStorageAugFromLowClassShips =			true					--false		Set to true to remove Storage AUgmentations from the starships of the types & Classes below
+NoStorageAugShipsAndClasses =									--Only has an effect if NoStorageAugFromLowClassShips is set to true
+{"SHUTTLE_C", "DROPSHIP_C", "FIGHTER_C", "SCIENCE_C", "SHUTTLE_B", "DROPSHIP_B", "FIGHTER_B", "SCIENCE_B", }
+
 --Rewards from destroying reactors on "derelict corvettes" added in the Breach update. Chances are not mutually exculsive (can potentially recieve multiple different rewards at once)
 DerCorvProceduralLootChance =			10						--10	Drops 1 procedural "Salvage" loot item
 DerCorvGoodModuleMin =					2						--1		Minimum amount of "Good" corvette modules (from 35 options) to drop (40% chance)
@@ -6444,6 +6449,19 @@ if ReplaceVanillaFishNanites then
 				ChangesToRewardTable[#ChangesToRewardTable+1] =
 				{
 					["SPECIAL_KEY_WORDS"] = {"Id", FishQuality,		"Reward", "GcRewardFishRelease"},
+					["REMOVE"] = "SECTION",
+				}
+	end
+end
+
+if NoStorageAugFromLowClassShips then
+	for i = 1, #NoStorageAugShipsAndClasses do
+		local ShipSalvageId = NoStorageAugShipsAndClasses[i]
+		
+				ChangesToRewardTable[#ChangesToRewardTable+1] =
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id", ShipSalvageId,		"ID", "SHIP_INV_TOKEN"},
+					["SECTION_UP"] = 2,
 					["REMOVE"] = "SECTION",
 				}
 	end

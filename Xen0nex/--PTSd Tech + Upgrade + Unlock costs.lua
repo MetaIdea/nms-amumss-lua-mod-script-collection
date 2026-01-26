@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Unlock costs"
-GameVersion = "6_10"
+GameVersion = "6_18"
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
 UpgradeCMult	=		1.2							--Vanilla cost is	60		This multiplies the vanilla "BaseValue", affecting both purchase and selling prices.	E.G. "1.2" means you sell them for 1.2x the vanilla price, and shops charge 1.2x more
@@ -428,6 +428,9 @@ AddItems =
 	{	--Hull Fracture			
 		"SHIPSLOT_DMG1",		"TECH_COMP",		6,		"Product",		--Wiring Loom
 	},
+	{	--Hull Fracture			
+		"SHIPSLOT_DMG1",		"WATERWORLD1",		160,	"Substance",	--Lithium
+	},
 	{	--Rusted Circuits			
 		"SHIPSLOT_DMG2",		"RED2",				320,	"Substance",	--Cadmium
 	},
@@ -622,7 +625,7 @@ ReplaceItems =
 		"MECH_ARMY_HEAD",		"SALVAGE_TECH7",	5,		"Product",		"TECH_COMP",
 	},
 	{	--Aqua-Jets
-		"WATER_LANDER",			"PURPLE2",			80,		"Substance",	"ANTIMATTER",
+		"WATER_LANDER",			"BLUE2",			80,		"Substance",	"ANTIMATTER",
 	},
 	{	--Aqua-Jets
 		"WATER_LANDER",			"VENTGEM",			16,		"Product",		"VENTGEM",
@@ -728,7 +731,7 @@ ReplaceItems =
 		"SHIPSLOT_DMG7",		"SALVAGE_TECH7",	1,		"Product",		"COLD1",			--Was 80 Dioxite in Vanilla
 	},
 	{	--Hydraulics Damage
-		"SHIPSLOT_DMG7",		"COLD1",			80,		"Substance",	"OXYGEN",			--Was 100 Oxygen in Vanilla
+		"SHIPSLOT_DMG7",		"GASGIANT1",		160,	"Substance",	"OXYGEN",			--Was 100 Oxygen in Vanilla
 	},
 	{	--Burnt-Out Compressor
 		"SHIPSLOT_DMG10",		"TECH_COMP",		8,		"Product",		"TECH_COMP",		--Was 4 Wiring Loom in Vanilla

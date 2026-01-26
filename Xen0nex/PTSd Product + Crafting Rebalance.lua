@@ -1,5 +1,5 @@
 ModName = "PTSd Product + Crafting Rebalance"
-GameVersion = "6_10"
+GameVersion = "6_18"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --Changes how effective certain substances are at recharging certain techs
@@ -757,13 +757,13 @@ ReplaceItems =
 		"ATLAS_SEED_6",			"BLUE2",			100,	"Substance",	"YELLOW2",
 	},
 	{	--State Phasure
-		"ATLAS_SEED_7",			"LAND3",			100,	"Substance",	"RED2",
+		"ATLAS_SEED_7",			"DRONE_SHARD",		1,		"Product",		"RED2",
 	},
 	{	--Novae Reclaiment
-		"ATLAS_SEED_8",			"YELLOW2",			100,	"Substance",	"GREEN2",
+		"ATLAS_SEED_8",			"CREATURE1",		50,		"Substance",	"GREEN2",
 	},
 	{	--Modified Quanta
-		"ATLAS_SEED_9",			"CREATURE1",		50,		"Substance",	"BLUE2",
+		"ATLAS_SEED_9",			"STORM_CRYSTAL",	1,		"Product",		"BLUE2",
 	},
 	{	--Fibreglass Grip
 		"STAFF_PART_A",			"FARMPROD8",		4,		"Product",		"FARMPROD3",
