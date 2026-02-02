@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "10xMultipliedCaveWaterSpawn",
 ["MOD_AUTHOR"]				= "DracoSys",
-["NMS_VERSION"]				= "4.64",
+["NMS_VERSION"]				= "5.57",
 ["MOD_DESCRIPTION"]			= "Multiplies cave and water creature spawns to waste less time searching for the rares.",
 ["MODIFICATIONS"] =
     {

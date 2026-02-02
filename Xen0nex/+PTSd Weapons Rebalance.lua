@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "5_64"
+GameVersion = "6_18"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 RevertMiningLaserOverheatChanges = false				--false		If set to true, reverts the cooldown timer after overheating for Mining/Hijacked/Runic Laser etc. back to vanilla values, and will match up with the UI overheat overlay again.
@@ -1012,7 +1012,7 @@ WeaponSecondaryTechChanges =
 				"Weapon_Stun_Damage_Multiplier",	1*0.5,	"FORCE"			--5
 			},
 			{
-				"Vehicle_LaserDamage",		1,	"FORCE"					--50		additional damage per tick for the Minotaur Laser
+				"Vehicle_LaserDamage",		MinotaurLaserDMG,	"FORCE"		--50		additional damage per tick for the Minotaur Laser
 			},
 			{
 				"Weapon_FireDOT_Duration",	1,	"FORCE"					--3.5 seconds

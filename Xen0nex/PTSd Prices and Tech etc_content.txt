@@ -209,11 +209,11 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\+PTSd Weapons Rebalance.lua
-        MOD FILENAME: PTSd Weapons Rebalance5_64.pak
+        MOD FILENAME: PTSd Weapons Rebalance6_18.pak
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
      MOD MAINTENANCE: nil
      MOD DESCRIPTION: <<<Changes various properties of some player or NPC weapons to be more balanced>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-         NMS VERSION: 5_64
+         NMS VERSION: 6_18

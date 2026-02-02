@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "TerraLysis",
+["MOD_FILENAME"]    = "TerraLysis- Reborn",
 ["MOD_AUTHOR"]      = "BornTBFast",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.16",
+["NMS_VERSION"]     = "6.18",
 ["MOD_DESCRIPTION"] = "Terrain changes",
 ["MODIFICATIONS"]   =
   {

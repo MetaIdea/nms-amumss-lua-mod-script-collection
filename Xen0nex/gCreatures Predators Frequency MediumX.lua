@@ -2,15 +2,22 @@ Author = "Gumsk"				--Edited by Xen0nex
 ModName = "gCreatures Predators"
 ModNameSub = "Frequency MediumX"
 BaseDescription = "More dense predators; edited to tone down the effect to keep species sync with vanilla players"
-GameVersion = "5_58"
+GameVersion = "6_18"
 ModVersion = "a"
 
 FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPLAYERPREDATORMED.MBIN"
 FileSource2 = "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPLAYERPREDATORLARGE.MBIN"
 --FileSource3 = "METADATA\SIMULATION\ECOSYSTEM\UNDERWATER\UNDERWATERTABLECOMMON.MBIN"
 FileSource4 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONARCHETYPES.MBIN"
---FileSource5 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"				--Removed the section of the mod that references this file, in order to maintain sync between which species I see on a planet and what all vanilla players also see
+FileSource5 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"
 
+
+MorePredatorSpecies =				false				--false					Set to true to make predator species more common/plentiful to appear in the species list for all planets
+	--NOTE: Setting this to true and changing the weight for Predator species will make the the species list for all planets no longer be synced with vanilla players.
+	--IE, Your creature discoveries & renamings will no longer all appear for vanilla players, and you will no longer see the all same creature species & renamings that vanilla players see
+		--Alternatively, you can increase the "PercentagePlayerPredators" value in "gCreatures Predators Danger DangerousX.lua" to increase how many existing Predator species will also attack players instead of only attacking other creatures, which will not affect species/Discovery data "sync" with vanilla players
+
+PredatorWeight =					3					--1						Only has an effect if MorePredatorSpecies is set to true above. Changes the frequency that Predator species appear in the species list for planets
 
 AddPredatorText = [[        <Property name="Tables" value="GcCreatureGenerationDomainEntry">
           <Property name="DensityModifier" value="GcCreatureGenerationDensity">
@@ -112,5 +119,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	
 }},
 
-
 }}}}
+
+local ChangesToTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+
+if MorePredatorSpecies then
+	ChangesToTable[#ChangesToTable+1] =
+		{
+			["MBIN_FILE_SOURCE"] 	= FileSource5,
+			["MXML_CHANGE_TABLE"] 	= 
+			{
+				{
+					["SPECIAL_KEY_WORDS"] = {"Archetype","DANGEROUS"},
+					--["SECTION_UP"] = 1,
+					["VALUE_CHANGE_TABLE"] = {
+						{"Weight ", PredatorWeight},
+					},
+				},
+			}
+		}
+end

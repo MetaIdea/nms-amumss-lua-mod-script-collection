@@ -1,5 +1,5 @@
 ModName = "PTSd Other Difficulty Settings"
-GameVersion = "6_04"
+GameVersion = "6_17"
 Description = "Affects most of the Difficulty Setting menu options, except for Stack Sizes"
 
 DisablePlanetaryPirateRaids				=false							--false		Set true to disable any planetary pirate raids
@@ -288,6 +288,7 @@ LowNeverSoldItems = [[<Property name="NeverSoldItems">
 			<Property name="NeverSoldItems" value="RADIO1" _index="11" />
 			<Property name="NeverSoldItems" value="POWERCELL" _index="12" />
 			<Property name="NeverSoldItems" value="PRODFUEL2" _index="13" />
+			<Property name="NeverSoldItems" value="YELLOW2" _index="14" />
         </Property>]]
 
 --These define how many slots your suit & starting equipment get when choosing the "Maximum" setting for "Starting Slots" on new games

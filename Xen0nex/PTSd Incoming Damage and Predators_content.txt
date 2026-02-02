@@ -2,60 +2,60 @@ This mod contains:
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Incoming Damage and Predators\gCreatures Predators Danger DangerousX.lua
-   MOD FILENAME: gCreatures Predators Danger DangerousX 5_62a.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Gumsk
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<More aggressive and dangerous predators>>>
+         SCRIPT NAME: PTSd Incoming Damage and Predators\___MOD_BATCHNAME_PTSD2.lua
+        MOD FILENAME: PTSd Incoming Damage and Predators.pak
+       MOD BATCHNAME: PTSd Incoming Damage and Predators.pak
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 5_62
+         NMS VERSION: 470
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Incoming Damage and Predators\gCreatures Predators Frequency MediumX.lua
-   MOD FILENAME: gCreatures Predators Frequency MediumX 5_58a.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Gumsk
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<More dense predators; edited to tone down the effect to keep species sync with vanilla players>>>
+         SCRIPT NAME: PTSd Incoming Damage and Predators\PTSd Creature Loot Changes.lua
+        MOD FILENAME: PTSd Creature Loot Changes5_64.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Lowers amount of meat dropped by creatures, and improves loot of Rock Creatures, adjusts location and time of day to find certain creatures>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 5_58
+         NMS VERSION: 5_64
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Incoming Damage and Predators\gDamageX.lua
-   MOD FILENAME: gDamageX 5_61a.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Gumsk
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Damage & Tech Damage adjustments>>>
+         SCRIPT NAME: PTSd Incoming Damage and Predators\gDamageX.lua
+        MOD FILENAME: gDamageX 5_61a.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Gumsk
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Damage & Tech Damage adjustments>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 5_61
+         NMS VERSION: 5_61
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Incoming Damage and Predators\PTSd Creature Loot Changes.lua
-   MOD FILENAME: PTSd Creature Loot Changes5_64.pak
-   MOD BATCHNAME: nil
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<Lowers amount of meat dropped by creatures, and improves loot of Rock Creatures, adjusts location and time of day to find certain creatures>>>
+         SCRIPT NAME: PTSd Incoming Damage and Predators\gCreatures Predators Frequency MediumX.lua
+        MOD FILENAME: gCreatures Predators Frequency MediumX 6_18a.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Gumsk
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<More dense predators; edited to tone down the effect to keep species sync with vanilla players>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 5_64
+         NMS VERSION: 6_18
 
 =====================
 Original information:
-    SCRIPT NAME: PTSd Incoming Damage and Predators\___MOD_BATCHNAME_PTSD2.lua
-   MOD FILENAME: PTSd Incoming Damage and Predators.pak
-   MOD BATCHNAME: PTSd Incoming Damage and Predators.pak
-     MOD AUTHOR: Xen0nex
-     LUA AUTHOR: nil
-MOD MAINTENANCE: nil
-MOD DESCRIPTION: <<<>>>
+         SCRIPT NAME: PTSd Incoming Damage and Predators\gCreatures Predators Danger DangerousX.lua
+        MOD FILENAME: gCreatures Predators Danger DangerousX 5_62a.pak
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Gumsk
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<More aggressive and dangerous predators>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-    NMS VERSION: 470
+         NMS VERSION: 5_62
