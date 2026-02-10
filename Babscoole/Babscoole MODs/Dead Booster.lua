@@ -24,14 +24,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = "LifeChance",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Dead", "1000000"},
+                {"Dead", "50"},
               }
             },
             {
               ["PRECEDING_KEY_WORDS"] = "AbandonedLifeChance",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Dead", "1000000"},
+                {"Dead", "50"},
               }
             },
             {
