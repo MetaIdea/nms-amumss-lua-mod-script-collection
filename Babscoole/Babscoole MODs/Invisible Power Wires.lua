@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Invisible Power Wires",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
 ["MOD_DESCRIPTION"] = "Makes powered wires invisible",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MODIFICATIONS"]   =
   {
     {
@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Map",                ""},
                 {"Shader",             "SHADERS/HADERMILLUBER.SHADER.BIN"},
-                {"Class",              "Transparent"},
+                {"MaterialClass",      "Transparent"},
                 {"ShaderMillDataHash", "0"},
               }
             },
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Class", "Transparent"},
+                {"MaterialClass", "Transparent"},
                 -- {"Shader", ""},
               }
             },

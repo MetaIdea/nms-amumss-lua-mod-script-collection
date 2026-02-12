@@ -60,6 +60,7 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="FreighterBaseLimit" value="0" />
       <Property name="CorvetteBaseLimit" value="0" />
       <Property name="DoesNotCountTowardsComplexity" value="false" />
+      <Property name="FreighterBaseLimit" value="0" />
       <Property name="CheckPlaceholderCollision" value="false" />
       <Property name="CheckPlayerCollision" value="true" />
       <Property name="CanStack" value="true" />
@@ -229,6 +230,13 @@ PRODUCT_ADDING =
         <Property name="TradeCategory" value="None" />
       </Property>
       <Property name="WikiCategory" value="Construction" />
+      <Property name="FossilCategory" value="GcFossilCategory">
+        <Property name="FossilCategory" value="None" />
+      </Property>
+      <Property name="CorvettePartCategory" value="GcCorvettePartCategory">
+        <Property name="CorvettePartCategory" value="None" />
+      </Property>
+      <Property name="CorvetteRewardFrequency" value="0.000000" />
       <Property name="IsCraftable" value="true" />
       <Property name="DeploysInto" value="" />
       <Property name="EconomyInfluenceMultiplier" value="0.000000" />
@@ -361,7 +369,7 @@ PLACEMENTDATA_ENTITY =
 <Data template="cTkAttachmentData">
   <Property name="AdditionalData" />
   <Property name="Components">
-    <Property name="Components" value="TkStaticPhysicsComponentData">
+    <Property name="Components" value="TkStaticPhysicsComponentData" _index="0">
       <Property name="TkStaticPhysicsComponentData">
         <Property name="Data" value="TkPhysicsData">
           <Property name="Mass" value="0.000000" />
@@ -372,14 +380,16 @@ PLACEMENTDATA_ENTITY =
           <Property name="Gravity" value="20.000000" />
         </Property>
         <Property name="NavMeshInclusion" value="TkNavMeshInclusionParams">
+          <Property name="NavMeshInclusionHint" value="Auto" />
           <Property name="InclusionType" value="TkNavMeshInclusionType">
             <Property name="NavMeshInclusionType" value="Auto" />
           </Property>
-          <Property name="InclusionMinSize" value="0.000000" />
           <Property name="AreaType" value="TkNavMeshAreaType">
             <Property name="NavMeshAreaType" value="Auto" />
           </Property>
         </Property>
+        <Property name="AddToWorldOnPrepare" value="true" />
+        <Property name="AddToWorldImmediately" value="true" />
         <Property name="TriggerVolumeType" value="TkVolumeTriggerType">
           <Property name="VolumeTriggerType" value="Open" />
         </Property>
@@ -391,10 +401,10 @@ PLACEMENTDATA_ENTITY =
         <Property name="CameraInvisible" value="false" />
       </Property>
     </Property>
-    <Property name="Components" value="GcBasePlacementComponentData">
+    <Property name="Components" value="GcBasePlacementComponentData" _index="1">
       <Property name="GcBasePlacementComponentData">
         <Property name="Rules">
-          <Property name="Rules" value="GcBasePlacementRule">
+          <Property name="Rules" value="GcBasePlacementRule" _index="0">
             <Property name="Conditions" />
             <Property name="PositionLocator" value="" />
             <Property name="PartID" value="_]].. ID_NAME ..[[" />
@@ -583,7 +593,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Build Custom Freighter Console",
 ["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.18",
+["NMS_VERSION"]   = "6.20",
 ["ADD_FILES"]     = ADD_FILES_TABLE,
 ["MODIFICATIONS"] =
   {

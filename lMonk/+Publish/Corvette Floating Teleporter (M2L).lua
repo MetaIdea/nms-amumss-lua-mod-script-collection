@@ -4,7 +4,7 @@ local mod_desc = [[
   Adds a bottom beneath the floating teleporter to block the missing texture.
   Adds a base under the land teleporter to fill the missing base when placed on a slope.
 ]]---------------------------------------------------------------------------------------
----	MXML 2 LUA ... by lMonk ... version: 1.0.04
+---	MXML 2 LUA ... by lMonk ... version: 1.0.06
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ local function ToMxml(class)
 	local function bool(b)
 		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
 	end
-	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite'}
+	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite', '_remove'}
 	local function mxml_r(tlua)
 		local out = {}
 		function out:add(t)
@@ -70,7 +70,7 @@ local function ToMxml(class)
 		return mxml_r(class)
 	elseif class.meta and klen > 1 then
 		return mxml_r( {class} )
-	-- concatenate unrelated (instead of nested) mxml sections
+	-- concatenate consecutive (instead of nested) sections
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
@@ -86,8 +86,8 @@ end
 --	@param items: table of item properties or a non-keyed table of items (keys are ignored)
 --	@param acton: the function to process the items in the table
 local function ProcessOnenAll(items, acton)
-	-- first key = 1 means multiple entries
-	if next(items) == 1 then
+	-- key==1 exists means multiple entries
+	if items[1] then
 		local T = {}
 		for _,e in ipairs(items) do
 			T[#T+1] = acton(e)
@@ -97,8 +97,19 @@ local function ProcessOnenAll(items, acton)
 	return acton(items)
 end
 
+--	=> Build a TkSceneNodeAttributeData section
+--	@param name: scene attribute name
+--	@param value: scene attribute value
+local function ScAttribute(name, value)
+	return {
+		meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
+		Name	= name,
+		Value	= type(value) == 'boolean' and (value and 'TRUE' or 'FALSE') or value
+	}
+end
+
 --	=> Build a single -or list of TkSceneNodeData classes
---	@param props: a keyed table for scene class properties.
+--	@param props: a keyed table for scene class properties
 --	{
 --	  name	= scene node name (NameHash is calculated automatically)
 --	  ntype	= scene node type
@@ -143,9 +154,9 @@ local function ScNode(nodes)
 			RotX	= (props.form.rx or props.form[4]) or nil,
 			RotY	= (props.form.ry or props.form[5]) or nil,
 			RotZ	= (props.form.rz or props.form[6]) or nil,
-			ScaleX	= (props.form.sl or props.form.sx or props.form[7]) or 1,
-			ScaleY	= (props.form.sl or props.form.sy or props.form[8] or props.form[7]) or 1,
-			ScaleZ	= (props.form.sl or props.form.sz or props.form[9] or props.form[7]) or 1
+			ScaleX	= (props.form.s_ or props.form.sx or props.form[7]) or 1,
+			ScaleY	= (props.form.s_ or props.form.sy or props.form[8] or props.form[7]) or 1,
+			ScaleZ	= (props.form.s_ or props.form.sz or props.form[9] or props.form[7]) or 1
 		}
 		--	if present, add attributes list
 		if props.attr then
@@ -157,11 +168,7 @@ local function ScNode(nodes)
 			end
 			T.Attr = { meta = {name='Attributes'} }
 			for nm, val in pairs(props.attr) do
-				T.Attr[#T.Attr+1] = {
-					meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
-					Name	= nm,
-					Value	= type(val) == 'boolean' and (val and 'TRUE' or 'FALSE') or val
-				}
+				T.Attr[#T.Attr+1] = ScAttribute(nm, val)
 			end
 		end
 		if props.child then
@@ -180,7 +187,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.Floating Teleporter Collision',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.17.2',
+	NMS_VERSION			= '6.21',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{

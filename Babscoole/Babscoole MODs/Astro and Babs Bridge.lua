@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Astro and Babs Bridge",
 ["MOD_AUTHOR"]      = "AstronautInOrbit and Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "Changes the design of freighter bridges.",
 ["MODIFICATIONS"]   =
   {
@@ -819,7 +819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData" _index="0">
-          <Property name="Name" value="BridgeScanner" />
+          <Property name="Name" value="BRIDGESCANNER" />
           <Property name="NameHash" value="1123079334" />
           <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData">
@@ -2873,15 +2873,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
-          <Property name="Value" value="linear" />
+          <Property name="Value" value="1.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-          <Property name="Name" value="FALLOFF_RATE" />
-          <Property name="Value" value="2.000000" />
+          <Property name="Name" value="INTENSITY" />
+          <Property name="Value" value="16.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
-          <Property name="Name" value="INTENSITY" />
-          <Property name="Value" value="40000.000000" />
+          <Property name="Name" value="RADIUS" />
+          <Property name="Value" value="7.745967" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
@@ -2937,15 +2937,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
-          <Property name="Value" value="linear" />
+          <Property name="Value" value="1.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-          <Property name="Name" value="FALLOFF_RATE" />
-          <Property name="Value" value="2.000000" />
+          <Property name="Name" value="INTENSITY" />
+          <Property name="Value" value="16.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
-          <Property name="Name" value="INTENSITY" />
-          <Property name="Value" value="40000.000000" />
+          <Property name="Name" value="RADIUS" />
+          <Property name="Value" value="7.745967" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
@@ -3001,15 +3001,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
-          <Property name="Value" value="linear" />
+          <Property name="Value" value="1.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-          <Property name="Name" value="FALLOFF_RATE" />
-          <Property name="Value" value="2.000000" />
+          <Property name="Name" value="INTENSITY" />
+          <Property name="Value" value="16.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
-          <Property name="Name" value="INTENSITY" />
-          <Property name="Value" value="40000.000000" />
+          <Property name="Name" value="RADIUS" />
+          <Property name="Value" value="7.745967" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
@@ -3065,15 +3065,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
-          <Property name="Value" value="linear" />
+          <Property name="Value" value="1.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-          <Property name="Name" value="FALLOFF_RATE" />
-          <Property name="Value" value="2.000000" />
+          <Property name="Name" value="INTENSITY" />
+          <Property name="Value" value="16.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
-          <Property name="Name" value="INTENSITY" />
-          <Property name="Value" value="40000.000000" />
+          <Property name="Name" value="RADIUS" />
+          <Property name="Value" value="7.745967" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
@@ -5967,15 +5967,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
-          <Property name="Value" value="linear" />
+          <Property name="Value" value="1.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-          <Property name="Name" value="FALLOFF_RATE" />
-          <Property name="Value" value="2.000000" />
+          <Property name="Name" value="INTENSITY" />
+          <Property name="Value" value="16.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
-          <Property name="Name" value="INTENSITY" />
-          <Property name="Value" value="40000.000000" />
+          <Property name="Name" value="RADIUS" />
+          <Property name="Value" value="7.745967" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
@@ -6031,15 +6031,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
-          <Property name="Value" value="linear" />
+          <Property name="Value" value="1.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-          <Property name="Name" value="FALLOFF_RATE" />
-          <Property name="Value" value="2.000000" />
+          <Property name="Name" value="INTENSITY" />
+          <Property name="Value" value="16.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
-          <Property name="Name" value="INTENSITY" />
-          <Property name="Value" value="40000.000000" />
+          <Property name="Name" value="RADIUS" />
+          <Property name="Value" value="7.745967" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
@@ -6095,15 +6095,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
-          <Property name="Value" value="linear" />
+          <Property name="Value" value="1.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-          <Property name="Name" value="FALLOFF_RATE" />
-          <Property name="Value" value="2.000000" />
+          <Property name="Name" value="INTENSITY" />
+          <Property name="Value" value="16.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
-          <Property name="Name" value="INTENSITY" />
-          <Property name="Value" value="40000.000000" />
+          <Property name="Name" value="RADIUS" />
+          <Property name="Value" value="7.745967" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
@@ -6159,15 +6159,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
-          <Property name="Value" value="linear" />
+          <Property name="Value" value="1.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-          <Property name="Name" value="FALLOFF_RATE" />
-          <Property name="Value" value="2.000000" />
+          <Property name="Name" value="INTENSITY" />
+          <Property name="Value" value="16.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
-          <Property name="Name" value="INTENSITY" />
-          <Property name="Value" value="40000.000000" />
+          <Property name="Name" value="RADIUS" />
+          <Property name="Value" value="7.745967" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
@@ -8079,7 +8079,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData" _index="0">
-          <Property name="Name" value="BridgeScanner" />
+          <Property name="Name" value="BRIDGESCANNER" />
           <Property name="NameHash" value="1123079334" />
           <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData">

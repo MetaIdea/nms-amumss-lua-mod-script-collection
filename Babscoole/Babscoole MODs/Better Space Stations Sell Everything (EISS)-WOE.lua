@@ -206,10 +206,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"Wealthy", MaxSubstanceQuantity},
                 {"Pirate",  MaxSubstanceQuantity},
               }
-            },
-          },
-        },
-      },
-    },
-  },
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,4 +1,4 @@
-function GetBlock(Name,NameHash,TransX,TransY,TransZ,RotX,RotY,RotZ,ScaleX,ScaleY,ScaleZ,FOV,FALLOFF,INTENSITY,COL_R,COL_G,COL_B,VOLUMETRIC)
+function GetBlock(Name,NameHash,TransX,TransY,TransZ,RotX,RotY,RotZ,ScaleX,ScaleY,ScaleZ,FOV,FALLOFF,INTENSITY,RADIUS,COL_R,COL_G,COL_B,VOLUMETRIC)
   local b =
 [[
     <Property name="Children" value="TkSceneNodeData">
@@ -18,47 +18,47 @@ function GetBlock(Name,NameHash,TransX,TransY,TransZ,RotX,RotY,RotZ,ScaleX,Scale
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="]].. FOV ..[[" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="]].. FALLOFF ..[[" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
-          <Property name="Name" value="FALLOFF_RATE" />
-          <Property name="Value" value="2.000000" />
-        </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="]].. INTENSITY ..[[" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+          <Property name="Name" value="]].. RADIUS ..[[" />
+          <Property name="Value" value="3.162278" />
+        </Property>
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="]].. COL_R ..[[" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="]].. COL_G ..[[" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="]].. COL_B ..[[" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
           <Property name="Name" value="COOKIE_IDX" />
           <Property name="Value" value="-1" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
           <Property name="Name" value="VOLUMETRIC" />
           <Property name="Value" value="]].. VOLUMETRIC ..[[" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -69,26 +69,26 @@ function GetBlock(Name,NameHash,TransX,TransY,TransZ,RotX,RotY,RotZ,ScaleX,Scale
   return b
 end
 
---                           Name           NameHash      TransX       TransY      TransZ       RotX          RotY          RotZ           ScaleX      ScaleY      ScaleZ      FOV           FALLOFF      INTENSITY       COL_R       COL_G        COL_B       VOLUMETRIC
-LABLAMP          = GetBlock("pointLight1",  "4219409884", "0.000000",  "1.250000", "0.000000",  "0.000000",   "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "360.000000", "linear",    "3600.000000",  "0.500000", "0.850000",  "1.000000", "0.000000")
-LIGHTTABLE       = GetBlock("pointLight1",  "4219409884", "0.000000",  "0.850000", "0.000000",  "270.000000", "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "linear",    "4500.000000",  "0.500000", "0.8500000", "1.000000", "0.000000")
-STANDINGLIGHT1   = GetBlock("pointLight1",  "4219409884", "-0.320000", "2.650000", "-0.280000", "0.000000",   "-14.000000", "0.000000",    "1.000000", "1.000000", "1.000000", "75.000000",  "linear",    "36000.000000", "1.000000", "1.000000",  "1.000000", "0.010000")
-STANDINGLIGHT2   = GetBlock("pointLight1",  "4219409884", "-0.320000", "2.580000", "-0.167000", "0.000000",   "-17.000000", "0.000000",    "1.000000", "1.000000", "1.000000", "110.000000", "linear",    "30000.000000", "1.000000", "1.000000",  "1.000000", "0.010000")
-WALLLIGHT_BLUE   = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "quadratic", "27500.000000", "0.000000", "0.530000",  "1.000000", "0.120000")
-WALLLIGHT_GREEN  = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "quadratic", "22500.000000", "0.000000", "1.000000",  "0.270000", "0.120000")
-WALLLIGHT_PINK   = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "quadratic", "22500.000000", "1.000000", "0.000000",  "0.730000", "0.120000")
-WALLLIGHT_RED    = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "quadratic", "22500.000000", "1.000000", "0.220000",  "0.200000", "0.120000")
-WALLLIGHT_WHITE  = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "quadratic", "20000.000000", "1.000000", "1.000000",  "1.000000", "0.200000")
-WALLLIGHT_YELLOW = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "quadratic", "22500.000000", "1.000000", "0.900000",  "0.100000", "0.120000")
-HANGLAMP0        = GetBlock("Lite1",        "1008033010", "0.000000",  "2.850000", "0.000000",  "-90.000000", "0.000000",   "-180.000000", "0.750000", "0.750000", "0.750000", "360.000000", "linear",    "12500.000000", "1.000000", "0.80000",   "0.50000",  "0.000000")
-HANGLAMP3        = GetBlock("pointLight17", "1008033010", "0.000000",  "0.500000",  "0.000000", "90.000000",  "0.000000",   "-180.000000", "0.750000", "0.750000", "0.750000", "172.000000", "linear",    "20000.000000", "1.000000", "0.98000",   "0.95000",  "0.000000")
+--                           Name           NameHash      TransX       TransY      TransZ       RotX          RotY          RotZ           ScaleX      ScaleY      ScaleZ      FOV           FALLOFF      INTENSITY    RADIUS       COL_R       COL_G        COL_B       VOLUMETRIC
+LABLAMP          = GetBlock("pointLight1",  "4219409884", "0.000000",  "1.250000", "0.000000",  "0.000000",   "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "360.000000", "1.000000",  "0.129600",  "4.472136",  "0.500000", "0.850000",  "1.000000", "0.000000")
+LIGHTTABLE       = GetBlock("pointLight1",  "4219409884", "0.000000",  "0.850000", "0.000000",  "270.000000", "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "1.000000",  "0.202500",  "3.741657",  "0.500000", "0.8500000", "1.000000", "0.000000")
+STANDINGLIGHT1   = GetBlock("pointLight1",  "4219409884", "-0.320000", "2.650000", "-0.280000", "0.000000",   "-14.000000", "0.000000",    "1.000000", "1.000000", "1.000000", "75.000000",  "1.000000",  "12.960000", "3.162278",  "1.000000", "1.000000",  "1.000000", "0.010000")
+STANDINGLIGHT2   = GetBlock("pointLight1",  "4219409884", "-0.320000", "2.580000", "-0.167000", "0.000000",   "-17.000000", "0.000000",    "1.000000", "1.000000", "1.000000", "110.000000", "1.000000",  "9.000000",  "3.162278",  "1.000000", "1.000000",  "1.000000", "0.010000")
+WALLLIGHT_BLUE   = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "2.000000",  "7.562500",  "5.807365",  "0.000000", "0.530000",  "1.000000", "0.120000")
+WALLLIGHT_GREEN  = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "2.000000",  "5.062500",  "5.029326",  "0.000000", "1.000000",  "0.270000", "0.120000")
+WALLLIGHT_PINK   = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "2.000000",  "5.062500",  "5.029326",  "1.000000", "0.000000",  "0.730000", "0.120000")
+WALLLIGHT_RED    = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "2.000000",  "5.062500",  "5.477226",  "1.000000", "0.220000",  "0.200000", "0.120000")
+WALLLIGHT_WHITE  = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "2.000000",  "4.000000",  "5.477226",  "1.000000", "1.000000",  "1.000000", "0.200000")
+WALLLIGHT_YELLOW = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "2.000000",  "5.062500",  "5.029326",  "1.000000", "0.900000",  "0.100000", "0.120000")
+HANGLAMP0        = GetBlock("Lite1",        "1008033010", "0.000000",  "2.850000", "0.000000",  "-90.000000", "0.000000",   "-180.000000", "0.750000", "0.750000", "0.750000", "360.000000", "1.000000",  "1.562500",  "4.898979",  "1.000000", "0.80000",   "0.50000",  "0.000000")
+HANGLAMP3        = GetBlock("pointLight17", "1008033010", "0.000000",  "0.500000",  "0.000000", "90.000000",  "0.000000",   "-180.000000", "0.750000", "0.750000", "0.750000", "172.000000", "1.000000",  "4.000000",  "4.898979",  "1.000000", "0.98000",   "0.95000",  "0.000000")
 
 --Add WALLIGHT01, FIREFLYTUBE, STANDLIGHT_SMALL, BARSIGN
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Lumen",
 ["MOD_AUTHOR"]      = "Exosolar and Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "Makes many of the buildable light sources produce far more light and directional",
 ["MODIFICATIONS"]   =
   {
@@ -119,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -201,7 +201,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -249,7 +249,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -300,7 +300,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -349,7 +349,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -388,7 +388,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight2", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -430,7 +430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -492,7 +492,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -554,7 +554,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -616,7 +616,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -678,7 +678,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -726,7 +726,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -797,7 +797,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -838,7 +838,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -879,7 +879,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight17", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -925,7 +925,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "FALLOFF"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "linear"},
+                {"Value", "1.000000"},
               }
             },
             {

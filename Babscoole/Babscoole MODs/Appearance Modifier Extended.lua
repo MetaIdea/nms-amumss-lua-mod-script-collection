@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Appearance Modifier Extended",
 ["MOD_AUTHOR"]      = "MortimerKerman & Babscoole",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "Adds the ability to remove your armour or your jetpack in the appearance modifier.",
 ["MODIFICATIONS"]   =
   {
@@ -81,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						<Property name="Descriptors" value="_BACKPACK_CAPE" />
 					</Property>
 					<Property name="SuffixInclusionList" />
-					<Property name="LinkedSpecialID" value="" />
+					<Property name="LinkedProductOrSpecialID" value="" />
 					<Property name="Tip" value="backpack" />
 					<Property name="HiddenInCustomiser" value="false" />
 				</Property>

@@ -9,7 +9,7 @@ local mod_desc = [[
 
   * DDS files import is skipped SILENTLY if file paths are not found!
 ]]------------------------------------------------------------------------------
----	MXML 2 LUA ... by lMonk ... version: 1.0.01
+---	MXML 2 LUA ... by lMonk ... version: 1.0.06
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -21,7 +21,7 @@ local function ToMxml(class)
 	local function bool(b)
 		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
 	end
-	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite'}
+	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite', '_remove'}
 	local function mxml_r(tlua)
 		local out = {}
 		function out:add(t)
@@ -33,6 +33,7 @@ local function ToMxml(class)
 				if type(cls) == 'table' and cls.meta then
 				-- add new section and recurs for nested sections
 					for _,at in ipairs(at_ord) do
+					-- Just for readability. The compiler doesn't need the ordering
 						if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
 					end
 					-- for k, v in pairs(cls.meta) do
@@ -74,7 +75,7 @@ local function ToMxml(class)
 		return mxml_r(class)
 	elseif class.meta and klen > 1 then
 		return mxml_r( {class} )
-	-- concatenate unrelated (instead of nested) mxml sections
+	-- concatenate consecutive (instead of nested) sections
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
@@ -90,8 +91,8 @@ end
 --	@param items: table of item properties or a non-keyed table of items (keys are ignored)
 --	@param acton: the function to process the items in the table
 local function ProcessOnenAll(items, acton)
-	-- first key = 1 means multiple entries
-	if next(items) == 1 then
+	-- key==1 exists means multiple entries
+	if items[1] then
 		local T = {}
 		for _,e in ipairs(items) do
 			T[#T+1] = acton(e)
@@ -101,8 +102,19 @@ local function ProcessOnenAll(items, acton)
 	return acton(items)
 end
 
+--	=> Build a TkSceneNodeAttributeData section
+--	@param name: scene attribute name
+--	@param value: scene attribute value
+local function ScAttribute(name, value)
+	return {
+		meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
+		Name	= name,
+		Value	= type(value) == 'boolean' and (value and 'TRUE' or 'FALSE') or value
+	}
+end
+
 --	=> Build a single -or list of TkSceneNodeData classes
---	@param props: a keyed table for scene class properties.
+--	@param props: a keyed table for scene class properties
 --	{
 --	  name	= scene node name (NameHash is calculated automatically)
 --	  ntype	= scene node type
@@ -147,25 +159,21 @@ local function ScNode(nodes)
 			RotX	= (props.form.rx or props.form[4]) or nil,
 			RotY	= (props.form.ry or props.form[5]) or nil,
 			RotZ	= (props.form.rz or props.form[6]) or nil,
-			ScaleX	= (props.form.sx or props.form[7]) or 1,
-			ScaleY	= (props.form.sy or props.form[8]) or 1,
-			ScaleZ	= (props.form.sz or props.form[9]) or 1
+			ScaleX	= (props.form.s_ or props.form.sx or props.form[7]) or 1,
+			ScaleY	= (props.form.s_ or props.form.sy or props.form[8] or props.form[7]) or 1,
+			ScaleZ	= (props.form.s_ or props.form.sz or props.form[9] or props.form[7]) or 1
 		}
 		--	if present, add attributes list
 		if props.attr then
 			-- add accompanying attributes
 			if props.attr.SCENEGRAPH then
-				props.attr.EMBEDGEOMETRY = 'TRUE'
+				props.attr.EMBEDGEOMETRY = true
 			elseif props.attr.TYPE then
-				props.attr.NAVIGATION = 'FALSE'
+				props.attr.NAVIGATION = false
 			end
 			T.Attr = { meta = {name='Attributes'} }
 			for nm, val in pairs(props.attr) do
-				T.Attr[#T.Attr+1] = {
-					meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
-					Name	= nm,
-					Value	= val
-				}
+				T.Attr[#T.Attr+1] = ScAttribute(nm, val)
 			end
 		end
 		if props.child then
@@ -181,7 +189,7 @@ local function ScNode(nodes)
 end
 ---------------------------------------------------------------------------------
 
-local mx_ct = { {SKW={}, REMOVE='Section'} }
+local mx_ct = {}
 for node, form in pairs({
 	NPC_01				= {tx=-9.507,	ty=-3.35,	tz=-28.34},
 	NPC_02				= {tx=-56,		ty=-7.34,	tz=62.5,	ry=-150},
@@ -199,28 +207,22 @@ for node, form in pairs({
 	RefLargeCrate10		= {tx=7,		ty=-7.35,	tz=66.8,	rx=180,		sx=4.3,	sz=4.3},-- crossing gap M
 	RefLargeCrate6		= {tx=-52.35,	ty=-7.35,	tz=66.8,	rx=180,		sx=4.3,	sz=4.3},-- crossing gap R
 	RefPallet30			= {tx=7.79,		ty=-5.72,	tz=66.7,	rz=-58.5,	sx=2.6,	sy=2.4,	sz=2.8},
-	MidCeiling201		= {							tz=33.2,								sz=1.25},
-	RefBiggsTeleporter	= {del=true},
-	RefBiggsTeleporter1	= {del=true}
+	MidCeiling201		= {							tz=33.2,								sz=1.25}
 }) do
-	if form.del then
-		mx_ct[1].SKW[#mx_ct[1].SKW+1] = {'Name', node}
-	else
-		mx_ct[#mx_ct+1] = {
-			SPECIAL_KEY_WORDS	= {'Name', node},
-			VALUE_CHANGE_TABLE	= {
-				{'TransX',	form.tx or 'IGNORE'},
-				{'TransY',	form.ty or 'IGNORE'},
-				{'TransZ',	form.tz or 'IGNORE'},
-				{'RotX',	form.rx or 'IGNORE'},
-				{'RotY',	form.ry or 'IGNORE'},
-				{'RotZ',	form.rz or 'IGNORE'},
-				{'ScaleX',	form.sx or 'IGNORE'},
-				{'ScaleY',	form.sy or 'IGNORE'},
-				{'ScaleZ',	form.sz or 'IGNORE'}
-			}
+	mx_ct[#mx_ct+1] = {
+		SPECIAL_KEY_WORDS	= {'Name', node},
+		VALUE_CHANGE_TABLE	= {
+			{'TransX',	form.tx or 'IGNORE'},
+			{'TransY',	form.ty or 'IGNORE'},
+			{'TransZ',	form.tz or 'IGNORE'},
+			{'RotX',	form.rx or 'IGNORE'},
+			{'RotY',	form.ry or 'IGNORE'},
+			{'RotZ',	form.rz or 'IGNORE'},
+			{'ScaleX',	form.sx or 'IGNORE'},
+			{'ScaleY',	form.sy or 'IGNORE'},
+			{'ScaleZ',	form.sz or 'IGNORE'}
 		}
-	end
+	}
 end
 mx_ct[#mx_ct+1] = {
 	PRECEDING_KEY_WORDS = 'Children',
@@ -276,7 +278,7 @@ mx_ct[#mx_ct+1] = {
 		{
 			name	= '1RefCrateTypeb1',
 			ntype	= 'REFERENCE',
-			form	= {tx=5.06, ty=-7.33, tz=67.1, ry=3, sx=0.9, sy=0.9, sz=0.9},
+			form	= {tx=5.06, ty=-7.33, tz=67.1, ry=3, s_=0.9},
 			attr	= {
 				SCENEGRAPH = 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATE.SCENE.MBIN'
 			}
@@ -284,7 +286,7 @@ mx_ct[#mx_ct+1] = {
 		{
 			name	= '1RefCrateTypeb2',
 			ntype	= 'REFERENCE',
-			form	= {tx=5.2, ty=-7.33, tz=68.2, ry=87, sx=0.9, sy=0.9, sz=0.9},
+			form	= {tx=5.2, ty=-7.33, tz=68.2, ry=87, s_=0.9},
 			attr	= {
 				SCENEGRAPH = 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATE.SCENE.MBIN'
 			}
@@ -308,7 +310,7 @@ mx_ct[#mx_ct+1] = {
 		{
 			name	= '1RefCoveredSilos',
 			ntype	= 'REFERENCE',
-			form	= {tx=-54, ty=-7.33, tz=66.8, ry=-90, sx=0.75, sy=0.75, sz=0.75},
+			form	= {tx=-54, ty=-7.33, tz=66.8, ry=-90, s_=0.75},
 			attr	= {
 				SCENEGRAPH = 'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/COVEREDSILOS.SCENE.MBIN'
 			}
@@ -332,7 +334,7 @@ mx_ct[#mx_ct+1] = {
 		{
 			name	= '1RefBuilderHand',
 			ntype	= 'REFERENCE',
-			form	= {tx=-39.85, ty=-7.64, tz=-22.3, rx=-2, ry=-65, rz=180, sx=1.4, sy=1.4, sz=1.4},
+			form	= {tx=-39.85, ty=-7.64, tz=-22.3, rx=-2, ry=-65, rz=180, s_=1.4},
 			attr	= {
 				SCENEGRAPH = 'MODELS/COMMON/ROBOTS/ROBOTHAND.SCENE.MBIN'
 			}
@@ -340,7 +342,7 @@ mx_ct[#mx_ct+1] = {
 		{
 			name	= '1RefBuilderHead',
 			ntype	= 'REFERENCE',
-			form	= {tx=-39.8, ty=-7.64, tz=-21.6, rx=50, ry=160, rz=0, sx=1.1, sy=1.1, sz=1.1},
+			form	= {tx=-39.8, ty=-7.64, tz=-21.6, rx=50, ry=160, rz=0, s_=1.1},
 			attr	= {
 				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BUILDERHEAD.SCENE.MBIN'
 			}
@@ -348,15 +350,15 @@ mx_ct[#mx_ct+1] = {
 		{
 			name	= '1RefGeometPlant01',
 			ntype	= 'REFERENCE',
-			form	= {tx=37, ty=-7.72, tz=68.3, ry=-20, rz=20, sx=0.24, sy=0.24, sz=0.24},
+			form	= {tx=37, ty=-7.6, tz=68.3, rx=45, ry=180, s_=0.12},
 			attr	= {
-				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/MEDGEO_NONE.SCENE.MBIN'
+				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/MEDGEOMETRIC.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefMetalStruct01',
 			ntype	= 'REFERENCE',
-			form	= {tx=11.8, ty=9.5, tz=22.7, sx=0.3, sy=0.3, sz=0.3},
+			form	= {tx=11.8, ty=9.5, tz=22.7, s_=0.3},
 			attr	= {
 				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/SHAPE1FLOAT.SCENE.MBIN'
 			}
@@ -364,9 +366,9 @@ mx_ct[#mx_ct+1] = {
 		{
 			name	= '1RefWirecell01',
 			ntype	= 'REFERENCE',
-			form	= {tx=-67, ty=14, tz=-18.2, sx=0.6, sy=0.6, sz=0.6},
+			form	= {tx=-67, ty=13, tz=-21, rx=45, ry=45, rz=45, s_=0.6},
 			attr	= {
-				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/WIRECUBE.SCENE.MBIN'
+				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/WCUBE_NONE.SCENE.MBIN'
 			}
 		}
 	}) )
@@ -375,7 +377,7 @@ mx_ct[#mx_ct+1] = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= 'MOD.lMonk.Freighter Hangar Changes',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '6.06',
+	NMS_VERSION				= '6.21',
 	MOD_DESCRIPTION			= mod_desc,
 	AMUMSS_SUPPRESS_MSG		= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 			= {{
@@ -412,7 +414,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{
 									name	= 'RefMonitorShipSalvage',
 									ntype	= 'REFERENCE',
-									form	= {ty=-1.1, ry=135, rz=180, sx=0.55, sy=0.55, sz=0.55},
+									form	= {ty=-1.1, ry=135, rz=180, s_=0.55},
 									attr	= {
 										SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ROOFMONITOR/ROOFMONITOR.SCENE.MBIN'
 									}
@@ -420,7 +422,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{
 									name	= 'RefBaseShipSalvage',
 									ntype	= 'REFERENCE',
-									form	= {ty=-1.8, sx=1.3, sy=1.3, sz=1.3},
+									form	= {ty=-1.8, s_=1.3},
 									attr	= {
 										SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/CANISTER0.SCENE.MBIN'
 									}
@@ -448,7 +450,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							{--	corvette beam button
 								name	= 'RefCorvButton',
 								ntype	= 'REFERENCE',
-								form	= {ry=180, sx=0.77, sy=0.77, sz=0.77},
+								form	= {ry=180, s_=0.77},
 								attr	= {
 									SCENEGRAPH = 'MODELS/COMMON/SPACECRAFT/BIGGS/TELECONTROL.SCENE.MBIN'
 								}
@@ -464,6 +466,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						}
 					}
 				}) )
+			}
+		}
+	},
+	{--	|hangar delete corvette teleporter|
+		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/BIGGS/BIGGSTELEPORTER_FREIGHTERS.SCENE.MBIN',
+		MXML_CHANGE_TABLE	= {
+			{
+				PRECEDING_KEY_WORDS = 'Children',
+				REMOVE				= 'Section'
 			}
 		}
 	},
@@ -513,40 +524,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{--	geometric plant
-		MBIN_FILE_SOURCE	= {
-			{
-				'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/MEDGEOMETRIC.SCENE.MBIN',
-				'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/MEDGEO_NONE.SCENE.MBIN',
-				'REMOVE'
-			}
-		}
-	},
-	{--	inactive geometric plant
-		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/MEDGEO_NONE.SCENE.MBIN',
-		MXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS 	= {'Name', 'ATTACHMENT'},
-				REMOVE				= 'Section'
-			}
-		}
-	},
 	{--	wirecell cube
 		MBIN_FILE_SOURCE	= {
 			{
-				'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/WEIRDCUBE.SCENE.MBIN',
-				'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/WIRECUBE.SCENE.MBIN',
+				'MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/WIRECELLFLOATCUBE.SCENE.MBIN',
+				'MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/WCUBE_NONE.SCENE.MBIN',
 				'REMOVE'
 			}
 		}
 	},
-	{--	inactive wirecell cube
-		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/WIRECUBE.SCENE.MBIN',
+	{--	wirecell cube - add spin
+		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/WEIRD/WIRECELLS/WCUBE_NONE.SCENE.MBIN',
 		MXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS 	= {'Name', 'CuboidSmallLOD0', 'Name', 'ATTACHMENT'},
+				SPECIAL_KEY_WORDS 	= {'Name', 'CuboidSmall_LOD0', 'Name', 'ATTACHMENT'},
 				VALUE_CHANGE_TABLE	= {
 					{'value', 'MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/SHAPE1FLOAT/ENTITIES/SHAPE1FLOAT.ENTITY.MBIN'}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS 	= {'Name', 'LODDIST.-'},
+				VALUE_CHANGE_TABLE	= {
+					{'value', '@*3'}
 				}
 			}
 		}

@@ -146,7 +146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           {
             {
               ["SPECIAL_KEY_WORDS"] = {"Components", "GcScannableComponentData"},
-               "SEC_SAVE_TO"] = "SaveScan",
+              ["SEC_SAVE_TO"] = "SaveScan",
             },
           }
         },

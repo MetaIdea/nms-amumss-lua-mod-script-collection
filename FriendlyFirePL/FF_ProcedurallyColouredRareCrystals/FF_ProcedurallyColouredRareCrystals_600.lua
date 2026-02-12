@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ProcedurallyColouredRareCrystals"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "600"
+METADATA_NMS_VERSION    = "620"
 METADATA_MOD_DESC       = "This mod enables procedurally generated colours on textures used for Floating Crystals and Buried Mineral Formations found on planets."
 
 

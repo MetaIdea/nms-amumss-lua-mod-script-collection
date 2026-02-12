@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ExoticStarshipFabricator"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "600"
+METADATA_NMS_VERSION    = "620"
 METADATA_MOD_DESC       = "This mod enables synthesis of exotic starships based on the Guppy / Ball cockpit in starship fabricators. Modifies files in METADATA\GAMESTATE\PLAYERDATA and TEXTURES\COMMON\SPACECRAFT\S-CLASS."
 
 

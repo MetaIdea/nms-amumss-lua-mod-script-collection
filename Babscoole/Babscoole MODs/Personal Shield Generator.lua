@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Personal Shield Generator",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "Protective shield against hazards, bullets ...",
 ["MODIFICATIONS"]   =
   {
@@ -415,7 +415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkLocalisationTable">
+<Data template="cTkLocalisationTable">
   <Property name="Table">
     <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="Shield" />

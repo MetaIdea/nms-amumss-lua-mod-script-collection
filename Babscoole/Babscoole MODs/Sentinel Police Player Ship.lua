@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Sentinel Police Player Ship",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "Cockpitable sentinel police ship you can get via quick action emote menu action",
 ["MODIFICATIONS"]   =
   {
@@ -36,10 +36,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Value", ""},
               }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
-              ["REMOVE"] = "SECTION",
             },
           }
         },
@@ -746,7 +742,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkLocalisationTable">
+<Data template="cTkLocalisationTable">
   <Property name="Table">
     <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="Police" />

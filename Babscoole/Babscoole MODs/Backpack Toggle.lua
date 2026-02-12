@@ -24,6 +24,7 @@ PacksList =
   "_Chest_Builders3",
   "_Chest_Builders4",
   "_Chest_Classic",
+  "_Chest_Vault",
 }
 
 function GetPack(Pack)
@@ -57,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Backpack Toggle",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MODIFICATIONS"]   =
   {
     {
@@ -231,7 +232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkLocalisationTable">
+<Data template="cTkLocalisationTable">
   <Property name="Table">
     <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="Toggle Backpack" />

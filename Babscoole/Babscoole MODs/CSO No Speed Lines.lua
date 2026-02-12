@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "CSO No Speed Lines",
 ["MOD_DESCRIPTION"] = "No more speed lines at cruise/boost/pulse speed in space.",
 ["MOD_AUTHOR"]      = "NeptuneX3 & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MODIFICATIONS"]   =
   {
     {
@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ALL",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Class", ""},
+                {"MaterialClass", ""},
               },
             },
           },

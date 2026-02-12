@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ColourfulSentinelLootBarrels"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "600"
+METADATA_NMS_VERSION    = "620"
 METADATA_MOD_DESC       = "This mod changes the Visor and Compass markers to barrels dropped by Sentinels and adds a purple texture to barrels dropped by corrupted Sentinels"
 
 

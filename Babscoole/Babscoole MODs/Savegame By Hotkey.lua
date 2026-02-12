@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Savegame By Hotkey",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MODIFICATIONS"]   =
   {
     {
@@ -161,6 +161,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="SimpleInteractionType" value="Save" />
         <Property name="InteractDistance" value="0.000000" />
         <Property name="Use2dInteractDistance" value="false" />
+        <Property name="InteractAngle" value="360.000000" />
         <Property name="Id" value="" />
         <Property name="Rarity" value="GcRarity">
           <Property name="Rarity" value="Common" />
@@ -221,6 +222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="UsePersonalPersistentBuffer" value="false" />
         <Property name="ReseedOnRewardSuccess" value="false" />
         <Property name="CanCollectInMech" value="false" />
+        <Property name="AnimateOnInteract" value="true" />
         <Property name="DisableAnimationUntilInteract" value="false" />
         <Property name="OnlyActiveDuringSeasons" />
       </Property>
@@ -401,7 +403,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkLocalisationTable">
+<Data template="cTkLocalisationTable">
   <Property name="Table">
     <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="Save" />

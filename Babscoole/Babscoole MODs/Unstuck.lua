@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Unstuck",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "Teleport to nearest Space Station",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MODIFICATIONS"]   =
   {
     {
@@ -196,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkLocalisationTable">
+<Data template="cTkLocalisationTable">
   <Property name="Table">
     <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="]] .. REWARD_TITLE .. [[" />

@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "AcceptDeclineButtonsRestored"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "600"
+METADATA_NMS_VERSION    = "620"
 METADATA_MOD_DESC       = "This mod aims to restore the design of the Accept / Decline buttons found in compare / trade menus to the versions before Orbital update"
 
 

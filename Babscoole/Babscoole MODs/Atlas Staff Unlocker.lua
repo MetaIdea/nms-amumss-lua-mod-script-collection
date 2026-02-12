@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Atlas Staff Unlocker",
 ["MOD_AUTHOR"]      = "Babscoole & Mjstral",
 ["MOD_DESCRIPTION"] = "Unlock a reward via speical emote menu quick action",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MODIFICATIONS"]   =
   {
     {
@@ -196,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
-<Data template="TkLocalisationTable">
+<Data template="cTkLocalisationTable">
   <Property name="Table">
     <Property name="Table" value="TkLocalisationEntry">
       <Property name="Id" value="]] .. REWARD_TITLE .. [[" />

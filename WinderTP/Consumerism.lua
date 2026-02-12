@@ -1,6 +1,44 @@
 SPECIAL_LIST =
 {
 	{
+		["ShopNumber"] = "116",
+		["Table"] =  
+		{
+			{ ["ID"] = "EXPD_BANNER21",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_DECAL21",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER21A",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER21B",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER21C",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_TITLE21",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_EMOTE16",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TRUCK_BODY02",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TRUCK_BODY03",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TRUCK_CAB02",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TRUCK_CAB03",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TRUCK_PAINT02",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TRUCK_PAINT03",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TRUCK_WHEELS02",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TRUCK_WHEELS03",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TRUCK_WHEELS06",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TRUCK_WHEELS07",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TRUCK_WHEELS08",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN28",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN29",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN30",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_PET25",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP56",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP57",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP58",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP59",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP60",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "VAULT_ARMOUR",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "VAULT_BOOTS",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "VAULT_GLOVES",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "VAULT_LEGS",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "VAULT_TORSO",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+		}
+	},
+	{
 		["ShopNumber"] = "110",
 		["Table"] =  
 		{

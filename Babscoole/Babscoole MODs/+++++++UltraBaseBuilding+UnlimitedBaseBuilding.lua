@@ -661,7 +661,7 @@ BUILDABLE_OBJECT_TABLE =
   { ["ID_NAME"]="INTERACTSTONE_1",["P_NAME"]="INTERACTIONSTONE_1",            ["PATH"]="MODELS/SPACE/ATLASSTATION/MODULARPARTS/INTERIOR/INTERACTIONSTONE/",          ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
   { ["ID_NAME"]="PATHORB",        ["P_NAME"]="PATHORB",                       ["PATH"]="MODELS/SPACE/ATLASSTATION/MODULARPARTS/INTERIOR/PATHORB/",                   ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
   { ["ID_NAME"]="ATLASSTONE",     ["P_NAME"]="ATLASSTONE",                    ["PATH"]="MODELS/SPACE/ATLASSTATION/MODULARPARTS/INTERIOR/ENDING_1_INTERACTION/",      ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
-  { ["ID_NAME"]="THEREMIN",       ["P_NAME"]="THEREMIN",                      ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/",          ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+  -- { ["ID_NAME"]="THEREMIN",       ["P_NAME"]="THEREMIN",                      ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/",          ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
   { ["ID_NAME"]="TELEPORT_NEXUS", ["P_NAME"]="TELEPORTER_NEXUS",              ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/COMMONPARTS/",                  ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
   { ["ID_NAME"]="MAINBATTERY",    ["P_NAME"]="MAINBATTERY",                   ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/COMMONPARTS/SCENES/",                      ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON,    ["CompositePartObjectIDs"]={"TURRETA","TURRETB","OLDTURRET"} },
   { ["ID_NAME"]="TURRETA",        ["P_NAME"]="TURRETA",                       ["PATH"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/TURRET/",                                ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
@@ -976,6 +976,7 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="PlanetLimit" value="0" />
       <Property name="RegionLimit" value="0" />
       <Property name="PlanetBaseLimit" value="0" />
+      <Property name="FreighterBaseLimit" value="0" />
       <Property name="CorvetteBaseLimit" value="0" />
       <Property name="DoesNotCountTowardsComplexity" value="false" />
       <Property name="FreighterBaseLimit" value="0" />
@@ -1103,7 +1104,7 @@ PRODUCT_ADDING =
         <Property name="R" value="0.172549" />
         <Property name="G" value="0.4862745" />
         <Property name="B" value="0.6235294" />
-        <Property name="A" value="1" />
+        <Property name="A" value="1.000000" />
       </Property>
       <Property name="Category" value="GcRealitySubstanceCategory">
         <Property name="SubstanceCategory" value="BuildingPart" />
@@ -1148,6 +1149,13 @@ PRODUCT_ADDING =
         <Property name="TradeCategory" value="None" />
       </Property>
       <Property name="WikiCategory" value="Construction" />
+      <Property name="FossilCategory" value="GcFossilCategory">
+        <Property name="FossilCategory" value="None" />
+      </Property>
+      <Property name="CorvettePartCategory" value="GcCorvettePartCategory">
+        <Property name="CorvettePartCategory" value="None" />
+      </Property>
+      <Property name="CorvetteRewardFrequency" value="0.000000" />
       <Property name="IsCraftable" value="true" />
       <Property name="DeploysInto" value="" />
       <Property name="EconomyInfluenceMultiplier" value="0.000000" />
@@ -1187,49 +1195,49 @@ AUTOPARTDATA_ADDING =
         <Property name="Vertices">
           <Property value="Vertices">
             <Property name="X" value="-2.025391" />
-            <Property name="Y" value="4" />
+            <Property name="Y" value="4.000000" />
             <Property name="Z" value="-2.025391" />
           </Property>
           <Property name="Vertices">
             <Property name="X" value="-2.025391" />
-            <Property name="Y" value="4" />
+            <Property name="Y" value="4.000000" />
             <Property name="Z" value="2.025391" />
           </Property>
           <Property name="Vertices">
             <Property name="X" value="2.025391" />
-            <Property name="Y" value="4" />
+            <Property name="Y" value="4.000000" />
             <Property name="Z" value="-2.025391" />
           </Property>
           <Property name="Vertices">
             <Property name="X" value="2.025391" />
-            <Property name="Y" value="4" />
+            <Property name="Y" value="4.000000" />
             <Property name="Z" value="2.025391" />
           </Property>
           <Property name="Vertices">
             <Property name="X" value="-2.025391" />
-            <Property name="Y" value="0" />
+            <Property name="Y" value="0.000000" />
             <Property name="Z" value="-2.025391" />
           </Property>
           <Property name="Vertices">
             <Property name="X" value="-2.025391" />
-            <Property name="Y" value="0" />
+            <Property name="Y" value="0.000000" />
             <Property name="Z" value="2.025391" />
           </Property>
           <Property name="Vertices">
             <Property name="X" value="2.025391" />
-            <Property name="Y" value="0" />
+            <Property name="Y" value="0.000000" />
             <Property name="Z" value="-2.025391" />
           </Property>
           <Property name="Vertices">
             <Property name="X" value="2.025391" />
-            <Property name="Y" value="0" />
+            <Property name="Y" value="0.000000" />
             <Property name="Z" value="2.025391" />
           </Property>
         </Property>
         <Property name="Centre">
-          <Property name="X" value="0" />
-          <Property name="Y" value="2" />
-          <Property name="Z" value="0" />
+          <Property name="X" value="0.000000" />
+          <Property name="Y" value="2.000000" />
+          <Property name="Z" value="0.000000" />
         </Property>
         <Property name="Radius" value="2.997921" />
       </Property>
@@ -1252,7 +1260,7 @@ BASEBUILDINGCOST_ADDING =
 [[
     <Property name="ObjectCosts" value="GcBaseBuildingEntryCosts">
       <Property name="ID" value="]].. ID_NAME ..[[" />
-      <Property name="Active0AverageFrameTimeCost" value="0.0082" />
+      <Property name="Active0AverageFrameTimeCost" value="0.008200" />
       <Property name="Active1AverageFrameTimeCost" value="0.008175" />
       <Property name="ActiveTotalNodes" value="36" />
       <Property name="ActivePhysicsComponents" value="12" />
@@ -1280,7 +1288,7 @@ PLACEMENTDATA_ENTITY =
 <Data template="cTkAttachmentData">
   <Property name="AdditionalData" />
   <Property name="Components">
-    <Property name="Components" value="TkStaticPhysicsComponentData">
+    <Property name="Components" value="TkStaticPhysicsComponentData" _index="0">
       <Property name="TkStaticPhysicsComponentData">
         <Property name="Data" value="TkPhysicsData">
           <Property name="Mass" value="0.000000" />
@@ -1291,14 +1299,16 @@ PLACEMENTDATA_ENTITY =
           <Property name="Gravity" value="20.000000" />
         </Property>
         <Property name="NavMeshInclusion" value="TkNavMeshInclusionParams">
+          <Property name="NavMeshInclusionHint" value="Auto" />
           <Property name="InclusionType" value="TkNavMeshInclusionType">
             <Property name="NavMeshInclusionType" value="Auto" />
           </Property>
-          <Property name="InclusionMinSize" value="0.000000" />
           <Property name="AreaType" value="TkNavMeshAreaType">
             <Property name="NavMeshAreaType" value="Auto" />
           </Property>
         </Property>
+        <Property name="AddToWorldOnPrepare" value="true" />
+        <Property name="AddToWorldImmediately" value="true" />
         <Property name="TriggerVolumeType" value="TkVolumeTriggerType">
           <Property name="VolumeTriggerType" value="Open" />
         </Property>
@@ -1310,10 +1320,10 @@ PLACEMENTDATA_ENTITY =
         <Property name="CameraInvisible" value="false" />
       </Property>
     </Property>
-    <Property name="Components" value="GcBasePlacementComponentData">
+    <Property name="Components" value="GcBasePlacementComponentData" _index="1">
       <Property name="GcBasePlacementComponentData">
         <Property name="Rules">
-          <Property name="Rules" value="GcBasePlacementRule">
+          <Property name="Rules" value="GcBasePlacementRule" _index="0">
             <Property name="Conditions" />
             <Property name="PositionLocator" value="" />
             <Property name="PartID" value="_]].. ID_NAME ..[[" />
@@ -1549,7 +1559,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]     = "0-Ultra Base Building+Unlimited Base Building",
 ["MOD_AUTHOR"]       = "Mjjstral and Babscoole",
 ["MOD_CONTRIBUTORS"] = "Ignacio and GhostRick",
-["NMS_VERSION"]      = "6.18",
+["NMS_VERSION"]      = "6.20",
 ["MOD_DESCRIPTION"]  = "This mod adds hundreds of new buildable items to the base building menu, as decorations",
 ["ADD_FILES"]        = ADD_FILES_TABLE,
 ["MODIFICATIONS"]    =
@@ -1685,16 +1695,16 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
           }
         },
-        {
-          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\THEREMIN.SCENE.MBIN",
-          ["MXML_CHANGE_TABLE"] =
-          {
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Name", "THERA_VOL_BB"},
-              ["REMOVE"] = "SECTION"
-            },
-          }
-        },
+        -- {
+          -- ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\THEREMIN.SCENE.MBIN",
+          -- ["MXML_CHANGE_TABLE"] =
+          -- {
+            -- {
+              -- ["SPECIAL_KEY_WORDS"] = {"Name", "THERA_VOL_BB"},
+              -- ["REMOVE"] = "SECTION"
+            -- },
+          -- }
+        -- },
       }
     },
   },

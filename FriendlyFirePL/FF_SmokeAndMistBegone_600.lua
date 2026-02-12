@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "SmokeAndMistBegone"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "600"
+METADATA_NMS_VERSION    = "620"
 METADATA_MOD_DESC       = "This mod removes mist, clouds and smoke effects from selected structures/buildings found on planets. Modifies various files in MODELS\PLANETS\BIOMES\COMMON\BUILDINGS directory."
 
 

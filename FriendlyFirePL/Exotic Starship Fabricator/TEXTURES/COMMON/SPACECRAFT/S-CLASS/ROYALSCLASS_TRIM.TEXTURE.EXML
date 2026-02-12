@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (6.01.0.2)-->
-<!--EXML Created by AMUMSS v.5.4.5.0w-->
+<!--File created using MBINCompiler version (6.20.0.1)-->
+<!--EXML Created by AMUMSS v.5.6.2.0w-->
 <Data template="cTkProceduralTextureList">
   <Property name="Layers">
     <Property name="Layers" value="TkProceduralTextureLayer" _index="0">
       <Property name="Textures">
-        <Property name="Textures" value="TkProceduralTexture"> # ADDED
-          <Property name="Name" value="PAINTED" /> # ADDED
-          <Property name="Palette" value="TkPaletteTexture"> # ADDED
-            <Property name="Palette" value="Paint" /> # CHANGED
-            <Property name="ColourAlt" value="Alternative2" /> # CHANGED
-            <Property name="Index" value="-1" /> # ADDED
-          </Property> # ADDED
-          <Property name="Probability" value="0.000000" /> # ADDED
-          <Property name="TextureGameplayUse" value="IgnoreName" /> # ADDED
-          <Property name="Multiply" value="false" /> # ADDED
-          <Property name="OverrideAverageColour" value="false" /> # ADDED
-          <Property name="AverageColour"> # ADDED
-            <Property name="R" value="0.000000" /> # ADDED
-            <Property name="G" value="0.000000" /> # ADDED
-            <Property name="B" value="0.000000" /> # ADDED
-            <Property name="A" value="0.000000" /> # ADDED
-          </Property> # ADDED
-          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/S-CLASS/ROYALSCLASS_TRIM.OVERLAYMETAL.GOLD.DDS" /> # ADDED
-        </Property> # ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="PAINTED" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Paint" /> !# CHANGED
+            <Property name="ColourAlt" value="Alternative2" /> !# CHANGED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/S-CLASS/ROYALSCLASS_TRIM.OVERLAYMETAL.GOLD.DDS" /> !# CHANGED
+        </Property> !# ADDED
       </Property>
     </Property>
     <Property name="Layers" value="TkProceduralTextureLayer" _index="1">
       <Property name="Textures">
-        <Property name="Textures" value="TkProceduralTexture"> # ADDED
-          <Property name="Name" value="EMPTY" /> # ADDED
-          <Property name="Palette" value="TkPaletteTexture"> # ADDED
-            <Property name="Palette" value="Rock" /> # ADDED
-            <Property name="ColourAlt" value="None" /> # ADDED
-            <Property name="Index" value="-1" /> # ADDED
-          </Property> # ADDED
-          <Property name="Probability" value="0.000000" /> # ADDED
-          <Property name="TextureGameplayUse" value="IgnoreName" /> # ADDED
-          <Property name="Multiply" value="false" /> # ADDED
-          <Property name="OverrideAverageColour" value="false" /> # ADDED
-          <Property name="AverageColour"> # ADDED
-            <Property name="R" value="0.000000" /> # ADDED
-            <Property name="G" value="0.000000" /> # ADDED
-            <Property name="B" value="0.000000" /> # ADDED
-            <Property name="A" value="0.000000" /> # ADDED
-          </Property> # ADDED
-          <Property name="TextureName" value="" /> # ADDED
-        </Property> # ADDED
-        <Property name="Textures" value="TkProceduralTexture"> # ADDED
-          <Property name="Name" value="BLACK" /> # ADDED
-          <Property name="Palette" value="TkPaletteTexture"> # ADDED
-            <Property name="Palette" value="Rock" /> # ADDED
-            <Property name="ColourAlt" value="None" /> # ADDED
-            <Property name="Index" value="-1" /> # ADDED
-          </Property> # ADDED
-          <Property name="Probability" value="0.000000" /> # ADDED
-          <Property name="TextureGameplayUse" value="IgnoreName" /> # ADDED
-          <Property name="Multiply" value="false" /> # ADDED
-          <Property name="OverrideAverageColour" value="false" /> # ADDED
-          <Property name="AverageColour"> # ADDED
-            <Property name="R" value="0.000000" /> # ADDED
-            <Property name="G" value="0.000000" /> # ADDED
-            <Property name="B" value="0.000000" /> # ADDED
-            <Property name="A" value="0.000000" /> # ADDED
-          </Property> # ADDED
-          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/S-CLASS/ROYALSCLASS_TRIM.OVERLAY.BLACK.DDS" /> # ADDED
-        </Property> # ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="EMPTY" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Rock" /> !# ADDED
+            <Property name="ColourAlt" value="None" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="" /> !# CHANGED
+        </Property> !# ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="BLACK" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Rock" /> !# ADDED
+            <Property name="ColourAlt" value="None" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/S-CLASS/ROYALSCLASS_TRIM.OVERLAY.BLACK.DDS" /> !# CHANGED
+        </Property> !# ADDED
       </Property>
     </Property>
     <Property name="Layers" value="TkProceduralTextureLayer" _index="2">
       <Property name="Textures">
         <Property name="Textures" value="TkProceduralTexture" _index="0">
           <Property name="Palette" value="TkPaletteTexture">
-            <Property name="Palette" value="Paint" /> # CHANGED
-            <Property name="ColourAlt" value="Primary" /> # CHANGED
+            <Property name="Palette" value="Paint" /> !# CHANGED
+            <Property name="ColourAlt" value="Primary" /> !# CHANGED
           </Property>
         </Property>
       </Property>

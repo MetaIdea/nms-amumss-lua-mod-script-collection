@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "BiggerExpeditionReminder"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "603"
+METADATA_NMS_VERSION    = "620"
 METADATA_MOD_DESC       = "This mod reworks the expedition reminder panel found in boot menu from 1 flimsy line of text into a proper box"
 
 

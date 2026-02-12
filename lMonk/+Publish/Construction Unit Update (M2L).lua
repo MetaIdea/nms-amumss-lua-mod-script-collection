@@ -1080,7 +1080,7 @@ local unlockable_items = {
 	}
 }
 
----	MXML 2 LUA ... by lMonk ... version: 1.0.01
+---	MXML 2 LUA ... by lMonk ... version: 1.0.06
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -1092,7 +1092,7 @@ local function ToMxml(class)
 	local function bool(b)
 		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
 	end
-	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite'}
+	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite', '_remove'}
 	local function mxml_r(tlua)
 		local out = {}
 		function out:add(t)
@@ -1104,6 +1104,7 @@ local function ToMxml(class)
 				if type(cls) == 'table' and cls.meta then
 				-- add new section and recurs for nested sections
 					for _,at in ipairs(at_ord) do
+					-- Just for readability. The compiler doesn't need the ordering
 						if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
 					end
 					-- for k, v in pairs(cls.meta) do
@@ -1145,7 +1146,7 @@ local function ToMxml(class)
 		return mxml_r(class)
 	elseif class.meta and klen > 1 then
 		return mxml_r( {class} )
-	-- concatenate unrelated (instead of nested) mxml sections
+	-- concatenate consecutive (instead of nested) sections
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
@@ -1227,7 +1228,6 @@ local mx_ct = {
 		REMOVE		= 'Section'
 	}
 }
-
 -- process changes/additions to all trees
 for _,node in ipairs(unlockable_items) do
 	mx_ct[#mx_ct+1] = AddTreeToChangeTable(node)
@@ -1236,7 +1236,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.Construction Unit Update',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.06',
+	NMS_VERSION			= '6.21',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{

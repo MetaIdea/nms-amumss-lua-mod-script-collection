@@ -148,7 +148,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["CREATE_HOS"] = "TRUE",
               ["ADD"] = table.concat(DEFAULTREALITY_ADDING_VehicleTechSpecialist)
             },
-            },
             {--Amount of Products available
               ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
               ["REPLACE_TYPE"] = "ALL",
@@ -192,10 +191,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"Wealthy", MaxSubstanceQuantity},
                 {"Pirate",  MaxSubstanceQuantity},
               }
-            },
-          },
-        },
-      },
-    },
-  },
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -74,7 +74,9 @@ local tech_tree = {
 		root	= 'ExocraftTech',
 		title	= 'UI_EXOCRAFT_TECH_TREE',
 		subs	= {
-			'UI_TECH_TREE_SUB'
+			'UI_VEHICLE_TECH_TREE',
+			'UI_EXOSUB_TECH_TREE',
+			'UI_EXOMECH_TECH_TREE'
 		}
 	},
 	{
@@ -130,7 +132,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.Construction Unit ALL',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.06',
+	NMS_VERSION			= '6.21',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

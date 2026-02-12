@@ -5,9 +5,9 @@ local mod_desc = [[
 ]]-----------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Cobalt Crystals.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.Cobalt Crystals',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.72',
+	NMS_VERSION			= '6.21',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

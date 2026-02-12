@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (6.20.0.1)-->
+<!--EXML Created by AMUMSS v.5.6.2.0w-->
+<Data template="cTkProceduralTextureList">
+  <Property name="Layers">
+    <Property name="Layers" value="TkProceduralTextureLayer" _index="1">
+      <Property name="Textures">
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="FF_SEAN" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Paint" /> !# ADDED
+            <Property name="ColourAlt" value="Alternative4" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/TERTIARY.DDS" /> !# CHANGED
+        </Property> !# ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="FF_RUST" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Paint" /> !# ADDED
+            <Property name="ColourAlt" value="Alternative4" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARYWEATHERED.DDS" /> !# CHANGED
+        </Property> !# ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="FF_GOLD" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Paint" /> !# ADDED
+            <Property name="ColourAlt" value="Alternative4" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/TILING/METALTILING.BASE.GOLD.DDS" /> !# CHANGED
+        </Property> !# ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="FF_DIRTY" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Paint" /> !# ADDED
+            <Property name="ColourAlt" value="Alternative4" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARYWEATHERED.DDS" /> !# CHANGED
+        </Property> !# ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="FF_METAL" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Paint" /> !# ADDED
+            <Property name="ColourAlt" value="Alternative4" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/SPECIALTRIMS.DDS" /> !# CHANGED
+        </Property> !# ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="FF_STEEL" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Paint" /> !# ADDED
+            <Property name="ColourAlt" value="Alternative4" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/COMMON/WEAPONS/ATLASMULTITOOL.3.DDS" /> !# CHANGED
+        </Property> !# ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="FF_ROCK" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Paint" /> !# ADDED
+            <Property name="ColourAlt" value="Alternative4" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/MORE/PRIMARY.ROCK.DDS" /> !# CHANGED
+        </Property> !# ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="FF_AETHER" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Paint" /> !# ADDED
+            <Property name="ColourAlt" value="Alternative4" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/MORE/PRIMARY.AETHER.DDS" /> !# CHANGED
+        </Property> !# ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="FF_BLACK" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Paint" /> !# ADDED
+            <Property name="ColourAlt" value="Alternative4" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/MORE/PRIMARY.BLACK.DDS" /> !# CHANGED
+        </Property> !# ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="FF_HEX" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Paint" /> !# ADDED
+            <Property name="ColourAlt" value="Alternative4" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/TERTIARY.DDS" /> !# CHANGED
+        </Property> !# ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="FF_CIRCUIT" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Paint" /> !# ADDED
+            <Property name="ColourAlt" value="Alternative4" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/TERTIARY.DDS" /> !# CHANGED
+        </Property> !# ADDED
+        <Property name="Textures" value="TkProceduralTexture"> !# ADDED
+          <Property name="Name" value="FF_SCALES" /> !# CHANGED
+          <Property name="Palette" value="TkPaletteTexture"> !# ADDED
+            <Property name="Palette" value="Paint" /> !# ADDED
+            <Property name="ColourAlt" value="Alternative4" /> !# ADDED
+            <Property name="Index" value="-1" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="Probability" value="0.000000" /> !# CHANGED
+          <Property name="TextureGameplayUse" value="IgnoreName" /> !# ADDED
+          <Property name="Multiply" value="false" /> !# ADDED
+          <Property name="OverrideAverageColour" value="false" /> !# ADDED
+          <Property name="AverageColour"> !# ADDED
+            <Property name="R" value="0.000000" /> !# ADDED
+            <Property name="G" value="0.000000" /> !# ADDED
+            <Property name="B" value="0.000000" /> !# ADDED
+            <Property name="A" value="0.000000" /> !# ADDED
+          </Property> !# ADDED
+          <Property name="TextureName" value="TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/TERTIARY.DDS" /> !# CHANGED
+        </Property> !# ADDED
+      </Property>
+    </Property>
+  </Property>
+</Data>

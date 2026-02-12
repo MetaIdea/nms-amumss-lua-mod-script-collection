@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "CSO No Pulsating Plasma",
 ["MOD_DESCRIPTION"] = "No more pulsating plasma in space.",
 ["MOD_AUTHOR"]      = "NeptuneX3 & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MODIFICATIONS"]   =
   {
     {
@@ -15,11 +15,9 @@ NMS_MOD_DEFINITION_CONTAINER =
           {
             {
               -- no more pulsating plasma in space
-              ["SPECIAL_KEY_WORDS"] = {"Name", "AnimatedSmokeMat"},
-              ["REPLACE_TYPE"] = "ALL",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Class", ""},
+                {"MaterialClass", ""},
               },
             },
           },
