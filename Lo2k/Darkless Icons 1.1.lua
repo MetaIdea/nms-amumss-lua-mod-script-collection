@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Borderless Icons 1.0.pak", 
+["MOD_FILENAME"] 			= "Borderless Icons 1.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "6.10",
+["NMS_VERSION"]				= "6.21",
 ["MOD_DESCRIPTION"]			= "This mod removes icon black gradient",
 ["MODIFICATIONS"] 			= 
 	{

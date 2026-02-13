@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               -- no more space dust
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MaterialClass", ""},
+                {"MaterialClass", "Unknown"},
               },
             },
           },

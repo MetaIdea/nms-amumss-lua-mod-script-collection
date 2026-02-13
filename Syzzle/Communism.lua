@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Communism"
-GameVersion = "6.10"
+GameVersion = "6.20"
 Description = "Makes every Expedition and Twitch item added by Consumerism FREE OF CHARGE."
 
 ProductIDList =
@@ -726,7 +726,54 @@ ProductIDList =
   {"ID","STATUE_BLOB_G"},
   {"ID","STATUE_ASTRO_B"},
   {"ID","STATUE_ASTRO_S"},
-  {"ID","STATUE_ASTRO_G"}
+  {"ID","STATUE_ASTRO_G"},
+  {"ID","BASE_DUST01"},
+  {"ID","BASE_DUST02"},
+  {"ID","BASE_DUST03"},
+  {"ID","BASE_DUST04"},
+  {"ID","BASE_DUST05"},
+  {"ID","BASE_DUST06"},
+  {"ID","BASE_DUST07"},
+  {"ID","BASE_DUST08"},
+  {"ID","BASE_DUST09"},
+  {"ID","BASE_DUST10"},
+  {"ID","BASE_DUST11"},
+  {"ID","BASE_DUST12"},
+  {"ID","BASE_DUST13"},
+  {"ID","BASE_HOTPLANT07"},
+  {"ID","BASE_HOTPLANT08"},
+  {"ID","EXPD_BANNER21"},
+  {"ID","EXPD_DECAL21"},
+  {"ID","EXPD_POSTER21A"},
+  {"ID","EXPD_POSTER21B"},
+  {"ID","EXPD_POSTER21C"},
+  {"ID","EXPD_TITLE21"},
+  {"ID","SPEC_EMOTE16"},
+  {"ID","TRUCK_BODY02"},
+  {"ID","TRUCK_BODY03"},
+  {"ID","TRUCK_CAB02"},
+  {"ID","TRUCK_CAB03"},
+  {"ID","TRUCK_PAINT02"},
+  {"ID","TRUCK_PAINT03"},
+  {"ID","TRUCK_WHEELS02"},
+  {"ID","TRUCK_WHEELS03"},
+  {"ID","TRUCK_WHEELS06"},
+  {"ID","TRUCK_WHEELS07"},
+  {"ID","TRUCK_WHEELS08"},
+  {"ID","TWITCH_GUN28"},
+  {"ID","TWITCH_GUN29"},
+  {"ID","TWITCH_GUN30"},
+  {"ID","TWITCH_PET25"},
+  {"ID","TWITCH_SHIP56"},
+  {"ID","TWITCH_SHIP57"},
+  {"ID","TWITCH_SHIP58"},
+  {"ID","TWITCH_SHIP59"},
+  {"ID","TWITCH_SHIP60"},
+  {"ID","VAULT_ARMOUR"},
+  {"ID","VAULT_BOOTS"},
+  {"ID","VAULT_GLOVES"},
+  {"ID","VAULT_LEGS"},
+  {"ID","VAULT_TORSO"}
 }
 
 NMS_MOD_DEFINITION_CONTAINER = 

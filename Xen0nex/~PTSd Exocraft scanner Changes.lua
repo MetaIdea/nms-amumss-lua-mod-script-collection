@@ -1,6 +1,6 @@
 ModName = "PTSd Exocraft scanner Changes"
 Description = "Removes Drop Pod from the options for Exocraft Scanner targets. Moves Monolith Scanning from Signal Booster Tau to Advanced Signal Booster to replace it. Splits Nautilon & Minotaur Scanners into 2 separate techs"
-GameVersion = "6_10"
+GameVersion = "6_21"
 
 AddMechScan0 = 
 [[<Property name="Table" value="GcTechnology">
@@ -15,9 +15,6 @@ AddMechScan0 =
 			<Property name="HintEnd" value="" />
 			<Property name="Icon" value="TkTextureResource">
 				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/VEHICLE/RENDER.SCAN.DDS" />
-				<Property name="ResHandle" value="GcResource">
-					<Property name="ResourceID" value="0" />
-				</Property>
 			</Property>
 			<Property name="Colour">
 				<Property name="R" value="0.0352941193" />
@@ -136,9 +133,6 @@ AddSubBinocs0 =
 			<Property name="HintEnd" value="" />
 			<Property name="Icon" value="TkTextureResource">
 				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/VEHICLE/RENDER.SUBSCAN.DDS" />
-				<Property name="ResHandle" value="GcResource">
-					<Property name="ResourceID" value="0" />
-				</Property>
 			</Property>
 			<Property name="Colour">
 				<Property name="R" value="0.0352941193" />
@@ -257,9 +251,6 @@ AddAdvancedThethyBeam =
 			<Property name="HintEnd" value="" />
 			<Property name="Icon" value="TkTextureResource">
 				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/VEHICLE/RENDER.VEHICLE_LASERU1.DDS" />
-				<Property name="ResHandle" value="GcResource">
-					<Property name="ResourceID" value="0" />
-				</Property>
 			</Property>
 			<Property name="Colour">
 				<Property name="R" value="0.129411772" />
@@ -511,7 +502,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "MECH_PILOT"},
+				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOMECH_TECH_TREE",		"Unlockable", "MECH_PILOT"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 				["ADD"] = AddMechScan0Tree
 			},
@@ -521,11 +512,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["ADD"] = AddMechScan0Tree
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "SUB_GUN"},
+				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOSUB_TECH_TREE",		"Unlockable", "SUB_GUN"},
 				["REMOVE"] = "SECTION"
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "SUB_BINOCS"},
+				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOSUB_TECH_TREE",		"Unlockable", "SUB_BINOCS"},
 				--["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -533,18 +524,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "SUB_GUN"},
+				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOSUB_TECH_TREE",		"Unlockable", "SUB_GUN"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 				["ADD"] = AddSubBinocs0Tree
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "SUB_LASER"},
+				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOSUB_TECH_TREE",		"Unlockable", "SUB_LASER"},
 				["PRECEDING_KEY_WORDS"] = {"Children"},
 				["CREATE_HOS"] = "TRUE",
 				["ADD"] = AddSingleHOESChild("SUB_LASER_X")
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "SUB_RECHARGE"},
+				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOSUB_TECH_TREE",		"Unlockable", "SUB_RECHARGE"},
 				["PRECEDING_KEY_WORDS"] = {"Children"},
 				["CREATE_HOS"] = "TRUE",
 				["ADD"] = AddSingleHOESChild("SUB_MINER")

@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               -- no more pulsating plasma in space
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MaterialClass", ""},
+                {"MaterialClass", "Unknown"},
               },
             },
           },

@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Sentinel Police Player Ship Base",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "This is just in case you already own the ship and don't need the menu interaction to get the ship anymore",
 ["MODIFICATIONS"]   =
   {
@@ -36,10 +36,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Value", ""},
               }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Name", "AttackPointLight", "Name", "FALLOFF_RATE"},
-              ["REMOVE"] = "SECTION",
             },
           }
         },

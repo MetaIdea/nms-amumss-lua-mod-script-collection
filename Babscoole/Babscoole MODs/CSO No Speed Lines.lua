@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ALL",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MaterialClass", ""},
+                {"MaterialClass", "Unknown"},
               },
             },
           },

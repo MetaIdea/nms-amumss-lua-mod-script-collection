@@ -2,7 +2,7 @@
 local mod_desc = [[
   - Add embossed texture options to fighter, dropship, sailship and scientific fabrication menu
 
-  * ADD_FILES will skipped SILENTLY if new files are not found!
+  * DDS files import is skipped SILENTLY if file paths are not found!
 ]]-------------------------------------------------------------------------------------------------
 
 -- 	ship fabricator texture additions
@@ -28,6 +28,7 @@ local new_ship_texture = {
 	},
 	{
 		name	= 'TOPOMAP',
+		tip		= 'UI_TIP_SHIP_TOPOMAP',
 		metal	= true,
 		sci		= true,
 		palette	= {
@@ -37,86 +38,103 @@ local new_ship_texture = {
 	},
 	{
 		name	= 'PAINTSWIRL',
+		tip		= 'UI_TIP_SHIP_PAINTSWIRL',
 		metal	= false,
 		sci		= true
 	},
 	{
 		name	= 'MEZO',
+		tip		= 'UI_TIP_SHIP_MEZO',
 		metal	= false,
 		sci		= true
 	},
 	{
 		name	= 'MAYA_SNAKE',
+		tip		= 'UI_TIP_SHIP_MAYA_SNAKE',
 		metal	= true,
 		sci		= true
 	},
 	{
 		name	= 'MAYA_WALL',
+		tip		= 'UI_TIP_SHIP_MAYA_WALL',
 		metal	= true,
 		sci		= true
 	},
 	{
 		name	= 'AZTEC_DRAGON',
+		tip		= 'UI_TIP_SHIP_AZTEC_DRAGON',
 		metal	= false,
 		sci		= true
 	},
 	{
 		name	= 'AZTEC_FACE',
+		tip		= 'UI_TIP_SHIP_AZTEC_FACE',
 		metal	= false,
 		sci		= true
 	},
 	{
 		name	= 'CELTIC',
+		tip		= 'UI_TIP_SHIP_CELTIC',
 		metal	= true,
 		sci		= true
 	},
 	{
 		name	= 'POLYNESIA',
+		tip		= 'UI_TIP_SHIP_POLYNESIA',
 		metal	= false,
 		sci		= true
 	},
 	{
 		name	= 'POLYNESIA_SEA',
+		tip		= 'UI_TIP_SHIP_POLYNESIA_SEA',
 		metal	= true,
 		sci		= true
 	},
 	{
 		name	= 'MAORI_FACE',
+		tip		= 'UI_TIP_SHIP_MAORI_FACE',
 		metal	= false,
 		sci		= true
 	},
 	{
 		name	= 'EASTERN',
+		tip		= 'UI_TIP_SHIP_EASTERN',
 		metal	= false,
 		sci		= true
 	},
 	{
 		name	= 'WOVEN',
+		tip		= 'UI_TIP_SHIP_WOVEN',
 		metal	= true,
 		sci		= true
 	},
 	{
 		name	= 'WOVEN2',
+		tip		= 'UI_TIP_SHIP_WOVEN2',
 		metal	= true,
 		sci		= true
 	},
 	{
 		name	= 'DEMON',
+		tip		= 'UI_TIP_SHIP_DEMON',
 		metal	= false,
 		sci		= true
 	},
 	{
 		name	= 'TARGET',
+		tip		= 'UI_TIP_SHIP_TARGET',
 		metal	= false,
 		sci		= true
 	},
 	{
 		name	= 'SKULLS',
+		tip		= 'UI_TIP_SHIP_SKULLS',
 		metal	= true,
 		sci		= true
 	},
 	{
 		name	= 'THE_HARING',
+		tip		= 'UI_TIP_SHIP_THE_HARING',
 		metal	= true,
 		sci		= true
 	}
@@ -248,7 +266,7 @@ for _,snk in ipairs(new_ship_texture) do
 			},
 			PRECEDING_KEY_WORDS = 'Tips',
 			ADD_OPTION			= 'AddEndSection',
-			ADD					= str_prp:format('Tips', snk.name)
+			ADD					= str_prp:format('Tips', snk.tip)
 		}
 		-- scientific :: add options and tips
 		if snk.sci then
@@ -262,7 +280,7 @@ for _,snk in ipairs(new_ship_texture) do
 				SPECIAL_KEY_WORDS	= {'TextureOptionsID', 'SHIP_SCI'},
 				PRECEDING_KEY_WORDS = 'Tips',
 				ADD_OPTION			= 'AddEndSection',
-				ADD					= str_prp:format('Tips', snk.name)
+				ADD					= str_prp:format('Tips', snk.tip)
 			}
 		end
 	end
@@ -362,9 +380,9 @@ for _,snk in ipairs(new_ship_texture) do
 end
 ---------------------------------------------------------------------------------------------------
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 			= '_MOD.lMonk.Embossed Ships.pak',
+	MOD_FILENAME 			= 'MOD.lMonk.Embossed Ships',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '6.02',
+	NMS_VERSION				= '6.21',
 	MOD_DESCRIPTION			= mod_desc,
 	MODIFICATIONS 			= {
 		{
@@ -420,3 +438,60 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		end
 	)()
 }
+
+--[[>-<LocTable>-<
+=UI_TIP_SHIP_TOPOMAP
+EN =Topography
+
+=UI_TIP_SHIP_PAINTSWIRL
+EN =Swirling Colours
+
+=UI_TIP_SHIP_MEZO
+EN =Mezo Central
+
+=UI_TIP_SHIP_MAYA_SNAKE
+EN =Mayan Stone Serpent
+
+=UI_TIP_SHIP_MAYA_WALL
+EN =Mayan Story
+
+=UI_TIP_SHIP_AZTEC_DRAGON
+EN =Aztec Dragon
+
+=UI_TIP_SHIP_AZTEC_FACE
+EN =Aztec Scream
+
+=UI_TIP_SHIP_CELTIC
+EN =Celt Knot
+
+=UI_TIP_SHIP_POLYNESIA
+EN =Polynesian Interlocks
+
+=UI_TIP_SHIP_POLYNESIA_SEA
+EN =One With The Sea
+
+=UI_TIP_SHIP_MAORI_FACE
+EN =Maori Marked
+
+=UI_TIP_SHIP_EASTERN
+EN =Eastern Wise
+
+=UI_TIP_SHIP_WOVEN
+EN =Woven Craft
+
+=UI_TIP_SHIP_WOVEN2
+EN =Woven Excellence
+
+=UI_TIP_SHIP_DEMON
+EN =Floral Demon
+
+=UI_TIP_SHIP_TARGET
+EN =Vertical Target
+
+=UI_TIP_SHIP_SKULLS
+EN =Crystal Skulls
+
+=UI_TIP_SHIP_THE_HARING
+EN =All Haring
+
+>-<LocTable>-<]]

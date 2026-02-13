@@ -67,7 +67,7 @@ local dropship = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.Dropship Restoration',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '6.06',
+	NMS_VERSION				= '6.21',
 	MOD_DESCRIPTION			= mod_desc,
 	MODIFICATIONS 			= {{
 		MBIN_CHANGE_TABLE		= {
@@ -128,7 +128,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					SPECIAL_KEY_WORDS 	= {'Name', 'pointLight[12]', 'Name', 'INTENSITY'},
 					VALUE_CHANGE_TABLE 	= {
-						{'Value',		26000}
+						{'Value',		10}
 					}
 				}
 			}

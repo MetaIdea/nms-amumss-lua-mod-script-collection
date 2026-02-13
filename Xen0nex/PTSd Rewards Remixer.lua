@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "6_18"
+GameVersion = "6_21"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -1701,6 +1701,12 @@ SalvageScrapSubAmountMult	=	0.33	--Applies multiplier to vanilla amount of 15-30
 ScrapCaseGoodCorvChance	=	3			--20		Chance for 1 of 26 "good" Corvette parts, worth 1,052,400 units on average
 ScrapCaseOKCorvChance	=	7			--33		Chance for 1 of 63 "OK" Corvette parts, worth 237,000 units on average
 ExtraScrapChance		=	0			--0			Chance for an additional procedural Scrap item
+
+--Changes to rewards from processing Industrial Waste on Salvageable Scrap planets 
+IndustrialWasteNaniteMult =	1.5			--1			Applies a multiplier to the amount of nanites earned from processing industrial waste at Waste Processing Plants or incinerators
+IndustrialWasteSDChance =	20			--0			Adds a chance (relative weighted chance, not out of 100%) for each piece of Industrial Waste to yield some Salvaged Data in addition to nanites instead of a different resource when processed manually into an incinerator
+IndustrialWasteSDAmount =	1			--0			Sets the amount of Salvaged Data awarded for the above chance
+
 
 --% Chance to receive Echo Locators from various sources
 SpiderMapChance			=	20			--7			Chance to drop from the large Arachnid Sentinels
@@ -3556,7 +3562,7 @@ ExoticSalvageReward =
             <Property name="Reward" value="GcRewardSalvageShip">
               <Property name="GcRewardSalvageShip">
 				  <Property name="RewardShipParts" value="true" />
-				  <Property name="SpecificCustomisationSlotIDs">
+				  <Property name="SpecificCustomisationSlotIDs" array_size="11">
 					<Property name="Freighter" value="" />
 					<Property name="Dropship" value="DROPSHIP_CORE" />
 					<Property name="Fighter" value="FIGHTER_CORE" />
@@ -3611,7 +3617,7 @@ ShuttleSalvageReward =
             <Property name="Reward" value="GcRewardSalvageShip">
               <Property name="GcRewardSalvageShip">
 				  <Property name="RewardShipParts" value="true" />
-				  <Property name="SpecificCustomisationSlotIDs">
+				  <Property name="SpecificCustomisationSlotIDs" array_size="11">
 					<Property name="Freighter" value="" />
 					<Property name="Dropship" value="DROPSHIP_CORE" />
 					<Property name="Fighter" value="FIGHTER_CORE" />
@@ -4610,6 +4616,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"AmountMin",	SalvageScrapSubAmountMult}, 
 					{"AmountMax",	SalvageScrapSubAmountMult}, 
 				}
+			},
+			{
+				["MATH_OPERATION"] 		= "*",
+				["REPLACE_TYPE"] = "ALL",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Value",	IndustrialWasteNaniteMult}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Reward", "GcRewardRecycleSpecificObject"},
+				["SECTION_UP"] = 1,
+				["REPLACE_TYPE"] = "ALL",
+				["ADD"] = ProductReward ("BP_SALVAGE", IndustrialWasteSDAmount, IndustrialWasteSDAmount, IndustrialWasteSDChance),
+				["ADD_OPTION"] = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","SPIDER_LOOT","ID","CHART_ROBOT"},

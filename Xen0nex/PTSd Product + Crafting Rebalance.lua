@@ -1,5 +1,5 @@
 ModName = "PTSd Product + Crafting Rebalance"
-GameVersion = "6_18"
+GameVersion = "6_21"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --Changes how effective certain substances are at recharging certain techs
@@ -1352,24 +1352,15 @@ AddPurpToken =
 			<Property name="GroupID" value="" />
 			<Property name="DebrisFile" value="TkModelResource">
 				<Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
-				<Property name="ResHandle" value="GcResource">
-					<Property name="ResourceID" value="0" />
-				</Property>
 				<Property name="Seed" value="0" />
 			</Property>
 			<Property name="BaseValue" value="1616" />
 			<Property name="Level" value="0" />
 			<Property name="Icon" value="TkTextureResource">
 				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STARCHART.BUILDER.DDS" />
-				<Property name="ResHandle" value="GcResource">
-					<Property name="ResourceID" value="0" />
-				</Property>
 			</Property>
 			<Property name="HeroIcon" value="TkTextureResource">
 				<Property name="Filename" value="" />
-				<Property name="ResHandle" value="GcResource">
-					<Property name="ResourceID" value="0" />
-				</Property>
 			</Property>
 			<Property name="Colour">
 				<Property name="R" value="0.201960786" />

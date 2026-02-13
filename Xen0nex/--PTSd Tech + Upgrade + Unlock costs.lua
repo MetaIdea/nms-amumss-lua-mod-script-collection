@@ -275,6 +275,15 @@ TechAdjustments =
 	{
 		"VEHICLE_FLAME",	0.334		--Mounted Flamethrower					480 Nanites
 	},
+	{
+		"GRAVITYGUN",	0.31			--Gravitino Coil						520 Nanites
+	},
+	{
+		"VEHICLE_SCOPE",	0.75		--Cyclops Scope							320 Nanites
+	},
+	{
+		"EXO_PLOUGH",	0.667			--Excavation Blade						480 Nanites
+	},
 }
 
 --Weapon Tech Adjustment Multipliers	(stacks multiplicatively with the TechCostMult)
@@ -423,6 +432,9 @@ AddItems =
 	},
 	{	--Mech Liquidator Legs 
 		"MECH_ARMY_LEGS",		"MECH_PROD",		1,		"Product",
+	},
+	{	--Excavation Blade 
+		"EXO_PLOUGH",			"ASTEROID3",		50,		"Substance",
 	},
 	--The following "techs" are actually damaged slots in crashed starships / broken Multi-Tools, repairing them costs half the component cost
 	{	--Hull Fracture			
@@ -701,6 +713,18 @@ ReplaceItems =
 	},
 	{	--Lost Angler's Rig
 		"S15_FISHLASER",		"CLAMPEARL",		8,		"Product",		"ASTEROID1",
+	},
+	{	--Gravitino Coil
+		"GRAVITYGUN",			"RED2",				50,		"Substance",	"STELLAR2",
+	},
+	{	--Gravitino Coil
+		"GRAVITYGUN",			"GRAVBALL",			8,		"Product",		"GRAVBALL",
+	},
+	{	--Cyclops Scope
+		"VEHICLE_SCOPE",		"GREEN2",			60,		"Substance",	"LAND3",
+	},
+	{	--Excavation Blade
+		"EXO_PLOUGH",			"CAVECUBE",			20,		"Product",		"NANOTUBES",
 	},
 	{	--Procedural Starship Pulse Engine Upgrades (Used for repairing / dismantling them)
 		"T_SHIPJUMP",			"STELLAR2",			150,	"Substance",	"RED2",
@@ -1656,9 +1680,6 @@ NewInterceptorRepairTech =
       <Property name="HintEnd" value="" />
       <Property name="Icon" value="TkTextureResource">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/TRADEPROD.EXOTICS5.DDS" />
-        <Property name="ResHandle" value="GcResource">
-          <Property name="ResourceID" value="0" />
-        </Property>
       </Property>
       <Property name="Colour">
         <Property name="R" value="0.03529412" />
@@ -1778,9 +1799,6 @@ NewStartingToolRepairTech =
 			<Property name="HintEnd" value="" />
 			<Property name="Icon" value="TkTextureResource">
 				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/MAINTTECH.FUEL1.DDS" />
-				<Property name="ResHandle" value="GcResource">
-					<Property name="ResourceID" value="0" />
-				</Property>
 			</Property>
 			<Property name="Colour">
 				<Property name="R" value="0.482352942" />
@@ -1878,9 +1896,6 @@ NewStartingSuitRepairTech =
 			<Property name="HintEnd" value="" />
 			<Property name="Icon" value="TkTextureResource">
 				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/SPACEGUNK.3.DDS" />
-				<Property name="ResHandle" value="GcResource">
-					<Property name="ResourceID" value="0" />
-				</Property>
 			</Property>
 			<Property name="Colour">
 				<Property name="R" value="0.482352942" />
@@ -1978,9 +1993,6 @@ NewAbandonedModeDiscordKeyTech =
 			<Property name="HintEnd" value="" />
 			<Property name="Icon" value="TkTextureResource">
 				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STARCHART.ROBOTCAMP.DDS" />
-				<Property name="ResHandle" value="GcResource">
-					<Property name="ResourceID" value="0" />
-				</Property>
 			</Property>
 			<Property name="Colour">
 				<Property name="R" value="0.101960786" />
@@ -2710,7 +2722,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REMOVE"] = "SECTION"
                         },
 						{
-							["SPECIAL_KEY_WORDS"] = {"Title","UI_STORAGE_TREE",		"CostTypeID","SALVAGE"},
+							["SPECIAL_KEY_WORDS"] = {"Title","UI_STORAGE_TREE",		"UseNarrowGaps","false"},
                             ["ADD"] = NewContainerTree
                         },
 						--Removes Refiner Room from Freighter unlock tree and replaces it with the Industrial Room

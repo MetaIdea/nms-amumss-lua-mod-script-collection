@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Buildable Starship Outfitting Terminal - Decorated"
-GameVersion = "6.16"
+GameVersion = "6.20"
 Description = "Allow you to build the Starship Outfitting Terminal in your base or Corvette, it comes in 2 types, the original and a decorated Autophage design."
 
 PORTABLETERMINALUNLOCK  = [[

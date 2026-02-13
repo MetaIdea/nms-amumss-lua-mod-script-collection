@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Pirate Station Corvette Teleport"
-GameVersion = "6.16"
+GameVersion = "6.20"
 Description = "Add the teleport pads to get to the Corvette Landing Pads in Outlaw Stations."
 
 CVTELEPORT  = [[

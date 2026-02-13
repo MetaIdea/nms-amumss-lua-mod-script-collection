@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Map",                ""},
                 {"Shader",             "SHADERS/HADERMILLUBER.SHADER.BIN"},
-                {"MaterialClass",      "Transparent"},
+                {"MaterialClass",      "Unknown"},
                 {"ShaderMillDataHash", "0"},
               }
             },
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MaterialClass", "Transparent"},
+                {"MaterialClass", "Unknown"},
                 -- {"Shader", ""},
               }
             },
