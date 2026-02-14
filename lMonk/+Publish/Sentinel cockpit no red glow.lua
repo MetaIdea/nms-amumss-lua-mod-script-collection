@@ -6,15 +6,15 @@ local mod_desc = [[
 ]]-----------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 			= '_MOD.lMonk.Sentinel cockpit no red glow.pak',
+	MOD_FILENAME 			= 'MOD.lMonk.Sentinel cockpit no red glow',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '5.52',
+	NMS_VERSION				= '6.21',
 	MOD_DESCRIPTION			= mod_desc,
 	MODIFICATIONS 			= {{
 	MBIN_CHANGE_TABLE		= {
 	{
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS = {
 					{'Name', 'lightrim'},			-- high sidewall scroll glow

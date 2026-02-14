@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "StoneGuardianExomech"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "573"
+METADATA_NMS_VERSION    = "620"
 METADATA_MOD_DESC       = "This mod adds Stone Guardian pieces and dedicated technology modules for the Minotaur exocraft."
 
 
@@ -27,7 +27,10 @@ FILE_MODELS_EXOMECH_SCENE =             "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_S
 FILE_MODELS_MECH_DESCRIPTOR =           "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT.DESCRIPTOR.MBIN"
 FILE_MODELS_RUINMECH_ENTITY =           "MODELS\COMMON\ROBOTS\MECH\ENTITIES\RUINMECH.ENTITY.MBIN"
 
--- files used to create new files (not modified)
+--------------------------------------------------
+-- vanilla template files + new files
+--------------------------------------------------
+
 FILE_MODELS_STONEMECH_SCENE =           "MODELS\COMMON\ROBOTS\RUINMECH.SCENE.MBIN"
 
 FILE_VEHICLES_GUN_ENTITY =              "MODELS\COMMON\VEHICLES\BUGGY\ENTITIES\GUN.ENTITY.MBIN"
@@ -435,7 +438,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_STONEMECH_SCENE,
                     ["MBIN_FS_DISCARD"] = "TRUE",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- grab a template for reference node
@@ -468,25 +471,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     -- stone body scene MBIN
                     ["MBIN_FILE_SOURCE"] = MECH_DATA_BODY["Scene"],
-                    ["EXML_CHANGE_TABLE"] =  PartScene_RemoveNodes(MECH_DATA_BODY)
+                    ["MXML_CHANGE_TABLE"] =  PartScene_RemoveNodes(MECH_DATA_BODY)
                 },
 
                 {
                     -- stone legs scene MBIN
                     ["MBIN_FILE_SOURCE"] = MECH_DATA_LEGS["Scene"],
-                    ["EXML_CHANGE_TABLE"] = PartScene_RemoveNodes(MECH_DATA_LEGS)
+                    ["MXML_CHANGE_TABLE"] = PartScene_RemoveNodes(MECH_DATA_LEGS)
                 },
 
                 {
                     -- stone left arm scene MBIN
                     ["MBIN_FILE_SOURCE"] = MECH_DATA_ARML["Scene"],
-                    ["EXML_CHANGE_TABLE"] = PartScene_RemoveNodes(MECH_DATA_ARML)
+                    ["MXML_CHANGE_TABLE"] = PartScene_RemoveNodes(MECH_DATA_ARML)
                 },
 
                 {
                     -- stone right arm scene MBIN
                     ["MBIN_FILE_SOURCE"] = MECH_DATA_ARMR["Scene"],
-                    ["EXML_CHANGE_TABLE"] = PartScene_RemoveNodes(MECH_DATA_ARMR)
+                    ["MXML_CHANGE_TABLE"] = PartScene_RemoveNodes(MECH_DATA_ARMR)
                 },
 
                 --------------------------------------------------
@@ -496,7 +499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- stone body armor MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = MECH_DATA_BODY_ARMOR["Scene"],
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["MXML_CHANGE_TABLE"] = 
                     {
                         -- save armor bits
                         PartScene_SaveNode("SEC_TORSO_ARMOR1","RuinMechTorsoBreak1"),
@@ -529,7 +532,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- right arm armor MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = MECH_DATA_ARMR_ARMOR["Scene"],
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["MXML_CHANGE_TABLE"] = 
                     {
                         PartScene_SaveNode("SEC_ARMR_ARMOR","RuinMechRightArmBreak"),
                         PartScene_Transform("SEC_ARMR_ARMOR",MECH_DATA_ARMR_ARMOR),
@@ -543,7 +546,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- left arm armor MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = MECH_DATA_ARML_ARMOR["Scene"],
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["MXML_CHANGE_TABLE"] = 
                     {
                         PartScene_SaveNode("SEC_ARML_ARMOR","RuinMechLeftArmBreak"),
                         PartScene_Transform("SEC_ARML_ARMOR",MECH_DATA_ARML_ARMOR),
@@ -557,7 +560,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- player exomech scene MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_EXOMECH_SCENE,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         -- add node for stone body mesh
                         MechScene_EditName("SEC_REFERENCE",MECH_DATA_BODY),
@@ -618,7 +621,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- vehicle globals MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_GLOBALS_VEHICLEGLOBALS,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         -- create links between tech IDs and descriptor groups
                         Vehicle_SetStoneDescriptor(MECH_DATA_BODY),Vehicle_SetStoneTechnology(MECH_DATA_BODY),
@@ -633,7 +636,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- technology table MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_METADATA_TECHNOLOGY_TABLE,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         -- create tech module for body mesh
                         Technology_GetTemplate("SEC_TECH_BODY",MECH_DATA_BODY),
@@ -679,7 +682,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- character descriptor groups MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_METADATA_DESCRIPTION_GROUPS,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         -- create a descriptor group for body mesh
                         CharDescr_GetTemplate("SEC_CHAR_BODY","MECH_BODY_SEN"),
@@ -712,7 +715,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- exomech descriptor MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_MECH_DESCRIPTOR,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         -- create a descriptor group for body mesh
                         MechDescr_GetTemplate("SEC_MECH_BODY","_BODY_SENTINEL"),
@@ -741,7 +744,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- new turret entity MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_STONEMECH_GUN_ENTITY,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         -- reset list of tech activators, put stone body tech
                         -- set the logic to inverted (hide node on tech install)
@@ -756,7 +759,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- reward table MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_METADATA_REWARD_TABLE,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- get template for glowing mineral reward
@@ -768,7 +771,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             -- chance percentage change
                             ["SEC_EDIT"] = "SEC_REWARD_CRYSTAL",
-                            ["VCT"] = {{"PercentageChance",50,},},
+                            ["VCT"] = {{"PercentageChance",100,},},
                         },
 
                         --------------------------------------------------
@@ -785,9 +788,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VCT"] =
                             {
                                 {"Id","R_RUINLOOT",},
-                                {"RewardChoice","SelectAlways",},
+                                {"RewardChoice","TryFirst_ThenSelectAlways",},
                                 {"OverrideZeroSeed","true",},
-                                {"PercentageChance",50,},
+                                {"PercentageChance",0,},
                                 {"FailIfAllKnown","true",},
                             },
                         },
@@ -818,6 +821,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SEC_EDIT"] = "SEC_REWARD_MAIN",
                             ["SKW"] = {"UseInventoryChoiceOverride","false",},
                             ["PKW"] = "List",
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["SEC_ADD_NAMED"] = "SEC_REWARD_CRYSTAL",
                         },
 
@@ -834,7 +838,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- ruin mech entity MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_RUINMECH_ENTITY,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- remove the polished stone drop mechanic
@@ -855,7 +859,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- ruin loot scene MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_RUINMECH_LOOT,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- remove thruster bit
@@ -876,7 +880,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- ruin loot entity MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_MODELS_RUINLOOT_ENTITY,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             -- link new reward object, change name

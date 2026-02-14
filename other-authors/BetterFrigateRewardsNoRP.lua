@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 	= "BetterFrigateRewardsNoRP",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "5.50",
+["NMS_VERSION"]		= "6.21",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to units and nanites within frigate missions",
 ["MODIFICATIONS"] 	=
 	{
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\EXPEDITIONREWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MXML_CHANGE_TABLE"] 	=
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Currency", "Units"},

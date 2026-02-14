@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ColourfulMultitoolCabinets"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "603"
+METADATA_NMS_VERSION    = "620"
 METADATA_MOD_DESC       = "this mod applies procedural colours to Multi-tool cabinets found on regulated and outlaw space stations."
 
 

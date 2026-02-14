@@ -2,7 +2,7 @@ Author = "Gumsk,lMonk"
 ModName = "gGUI Clean Multiplayer"
 ModNameSub = "Full"
 BaseDescription = ""
-GameVersion = "6.0.3.0"
+GameVersion = "6.2.1.0"
 ModVersion = "a"
 
 --[[Files Modified
@@ -125,7 +125,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							REMOVE = "SECTION",
 						},
 						{
-							SPECIAL_KEY_WORDS = {"Components","TkPhysicsComponentData"},
+							SPECIAL_KEY_WORDS = {"Components","TkStaticPhysicsComponentData"},
 							REMOVE = "SECTION",
 						},
 						{

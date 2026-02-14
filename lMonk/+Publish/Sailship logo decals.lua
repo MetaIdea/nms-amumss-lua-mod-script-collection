@@ -4,9 +4,9 @@ local mod_desc = [[
 ]]---------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Sailship procedural decals.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.Sailship procedural decals',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.73',
+	NMS_VERSION			= '6.21',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

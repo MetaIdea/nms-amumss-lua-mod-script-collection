@@ -42,8 +42,8 @@ local scene_tweaks = {
 	Gun1Ref7		= {tx=0.78,	ty=1.7,					rx=0,	ry=0,	rz=88				},	-- body_E
 	Gun1Ref8		= {rx=0,	ry=0,		rz=-110,	sx=0.34,	sy=0.34,	sz=0.34		},	-- body_F
 	Gun1Ref9		= {rx=0,	ry=0,		rz=110,		sx=0.34,	sy=0.34,	sz=0.34		},	-- body_F
-	SpinningpartBack1= {					tz=-3.882										},	-- body_A engine
-	SpinningpartSpike= {					tz=-6.376										},	-- body_F spike
+	SpinningpartBack1={						tz=-3.882										},	-- body_A engine
+	SpinningpartSpike={						tz=-6.376										},	-- body_F spike
 }
 local mx_ct = { {SKW={}, REMOVE='Section'} }
 for node, scene in pairs(scene_tweaks) do
@@ -75,9 +75,9 @@ mx_ct[#mx_ct+1] = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.sailship re-alignments.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.sailship re-alignments',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.71',
+	NMS_VERSION			= '6.21',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

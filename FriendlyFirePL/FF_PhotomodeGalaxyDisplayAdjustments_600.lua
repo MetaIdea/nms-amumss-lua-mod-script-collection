@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "PhotomodeGalaxyDisplayAdjustments"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "600"
+METADATA_NMS_VERSION    = "620"
 METADATA_MOD_DESC       = ""
 
 

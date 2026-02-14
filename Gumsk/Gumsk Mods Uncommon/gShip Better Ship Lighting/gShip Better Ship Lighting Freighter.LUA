@@ -1,7 +1,7 @@
 ModName = "gShip Better Ship Lighting"
 ModNameSub = "Freighter"
 BaseDescription = ""
-GameVersion = "6.1.3.0"
+GameVersion = "6.2.1.0"
 ModVersion = "a"
 
 --[[ Files Modified:
@@ -55,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","FALLOFF"
 							},
 							VALUE_CHANGE_TABLE = {
-								{"Value","linear"},
+								{"Value","1.000000"},
 							}
 						},
 						{
@@ -64,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							VALUE_CHANGE_TABLE = {
-								{"Value",35000.000000},
+								{"Value",12.000000},
 							}
 						},
 					}

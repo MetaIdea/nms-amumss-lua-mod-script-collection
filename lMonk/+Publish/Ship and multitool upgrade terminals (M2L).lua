@@ -105,13 +105,24 @@ local function ToMxmlFile(tlua, ext_tmpl)
 	return wrapper:format(tlua.meta.template, txt_data)
 end
 
+--	=> Build a TkSceneNodeAttributeData section
+--	@param name: scene attribute name
+--	@param value: scene attribute value
+local function ScAttribute(name, value)
+	return {
+		meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
+		Name	= name,
+		Value	= type(value) == 'boolean' and (value and 'TRUE' or 'FALSE') or value
+	}
+end
+
 --	=> Determine if received is a single or multi-item
 --	then process items through the received function
 --	@param items: table of item properties or a non-keyed table of items (keys are ignored)
 --	@param acton: the function to process the items in the table
 local function ProcessOnenAll(items, acton)
-	-- first key = 1 means multiple entries
-	if next(items) == 1 then
+	-- key==1 exists means multiple entries
+	if items[1] then
 		local T = {}
 		for _,e in ipairs(items) do
 			T[#T+1] = acton(e)
@@ -122,7 +133,7 @@ local function ProcessOnenAll(items, acton)
 end
 
 --	=> Build a single -or list of TkSceneNodeData classes
---	@param props: a keyed table for scene class properties.
+--	@param props: a keyed table for scene class properties
 --	{
 --	  name	= scene node name (NameHash is calculated automatically)
 --	  ntype	= scene node type
@@ -181,11 +192,7 @@ local function ScNode(nodes)
 			end
 			T.Attr = { meta = {name='Attributes'} }
 			for nm, val in pairs(props.attr) do
-				T.Attr[#T.Attr+1] = {
-					meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
-					Name	= nm,
-					Value	= type(val) == 'boolean' and (val and 'TRUE' or 'FALSE') or val
-				}
+				T.Attr[#T.Attr+1] = ScAttribute(nm, val)
 			end
 		end
 		if props.child then
@@ -239,7 +246,7 @@ local buildparts = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.ship and multitool upgrade terminals',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.18',
+	NMS_VERSION			= '6.21',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{

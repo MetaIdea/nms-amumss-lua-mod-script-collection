@@ -184,7 +184,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.Huge Props Activated',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.16',
+	NMS_VERSION			= '6.21',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= mbin_ct

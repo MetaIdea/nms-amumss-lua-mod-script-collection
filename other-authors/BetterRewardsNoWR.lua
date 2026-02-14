@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 	= "BetterRewardsNoWR",
 ["MOD_BATCHNAME"]	= "BetterRewardsNoWR",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "5.50",
+["NMS_VERSION"]		= "6.21",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to unit, nanite and quicksilver reward values without extra word learning and no resource or product multipliers",
 ["MODIFICATIONS"] 	=
 	{
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MXML_CHANGE_TABLE"] 	=
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Currency", "Units"},

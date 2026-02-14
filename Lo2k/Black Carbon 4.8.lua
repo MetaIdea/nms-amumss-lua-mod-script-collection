@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-MOD_FILENAME 			= "Black Carbon 4.7.pak", 
+MOD_FILENAME 			= "Black Carbon 4.8.pak", 
 MOD_AUTHOR				= "Lo2k",
 LUA_AUTHOR				= "Lowkie (+ Lo2k)",
-NMS_VERSION				= "6.10",
+NMS_VERSION				= "6.21",
 MOD_DESCRIPTION			= "This mod makes carbon black",
 MODIFICATIONS 			= 
 	{
@@ -18,7 +18,7 @@ MODIFICATIONS 			=
 							SPECIAL_KEY_WORDS   = {"Name", "INTENSITY"},
                             VALUE_CHANGE_TABLE 	= 
                             {
-                                {"Value", "5000.0"},  --ORG "10000.000000"  
+                                {"Value", "0.25"},  --ORG "1.000000"  
                             },
 						},
 						{

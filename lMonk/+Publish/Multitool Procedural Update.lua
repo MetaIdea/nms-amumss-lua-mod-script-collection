@@ -3,10 +3,10 @@ local mod_desc = [[
   Adds procedural colors for the sentinel multitool and staff strap
   Adds procedural colors for the multitool glow parts
 
-  * ADD_FILES will skipped SILENTLY if new files are not found!
+  * DDS files import is skipped SILENTLY if file paths are not found!
 ]]------------------------------------------------------------------
 
-local function OneLayerProcTexFile(t)
+local function OneTextureProcTexFile(t)
 	return ([[<Data template="cTkProceduralTextureList">
 		<Property name="Layers">
 			<Property name="Layers" value="TkProceduralTextureLayer">
@@ -43,14 +43,14 @@ local function OneLayerProcTexFile(t)
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Multitool Procedural Update.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.Multitool Procedural Update',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.02',
+	NMS_VERSION			= '6.21',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES			= {
 		{
 			FILE_DESTINATION	= 'TEXTURES/COMMON/WEAPONS/MULTITOOL/STRAP.TEXTURE.MXML',
-			FILE_CONTENT		= OneLayerProcTexFile({
+			FILE_CONTENT		= OneTextureProcTexFile({
 				palette	= 'Paint',
 				color	= 'Alternative2',
 				texture	= 'TEXTURES/COMMON/WEAPONS/MULTITOOL/STRAP.BASE.DDS'
@@ -58,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{
 			FILE_DESTINATION 	= 'TEXTURES/COMMON/WEAPONS/MULTITOOL/MULTITOOLGLOW.TEXTURE.MXML',
-			FILE_CONTENT		= OneLayerProcTexFile({
+			FILE_CONTENT		= OneTextureProcTexFile({
 				palette	= 'Crystal',
 				color	= 'Primary',
 				texture	= 'TEXTURES/COMMON/WEAPONS/MULTITOOL/MULTITOOLGLOW.BASE.DDS'

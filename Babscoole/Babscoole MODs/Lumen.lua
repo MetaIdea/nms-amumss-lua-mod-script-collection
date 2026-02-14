@@ -31,8 +31,8 @@ function GetBlock(Name,NameHash,TransX,TransY,TransZ,RotX,RotY,RotZ,ScaleX,Scale
           <Property name="Value" value="]].. INTENSITY ..[[" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
-          <Property name="Name" value="]].. RADIUS ..[[" />
-          <Property name="Value" value="3.162278" />
+          <Property name="Name" value="RADIUS" />
+          <Property name="Value" value="]].. RADIUS ..[[" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
@@ -78,7 +78,7 @@ WALLLIGHT_BLUE   = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000
 WALLLIGHT_GREEN  = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "2.000000",  "5.062500",  "5.029326",  "0.000000", "1.000000",  "0.270000", "0.120000")
 WALLLIGHT_PINK   = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "2.000000",  "5.062500",  "5.029326",  "1.000000", "0.000000",  "0.730000", "0.120000")
 WALLLIGHT_RED    = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "2.000000",  "5.062500",  "5.477226",  "1.000000", "0.220000",  "0.200000", "0.120000")
-WALLLIGHT_WHITE  = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "2.000000",  "4.000000",  "5.477226",  "1.000000", "1.000000",  "1.000000", "0.200000")
+WALLLIGHT_WHITE  = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "2.000000",  "5.062500",  "5.477226",  "1.000000", "1.000000",  "1.000000", "0.200000")
 WALLLIGHT_YELLOW = GetBlock("pointLight6",  "3087372010", "0.000000",  "0.250000", "0.000000",  "90.000000",  "0.000000",   "0.000000",    "1.000000", "1.000000", "1.000000", "180.000000", "2.000000",  "5.062500",  "5.029326",  "1.000000", "0.900000",  "0.100000", "0.120000")
 HANGLAMP0        = GetBlock("Lite1",        "1008033010", "0.000000",  "2.850000", "0.000000",  "-90.000000", "0.000000",   "-180.000000", "0.750000", "0.750000", "0.750000", "360.000000", "1.000000",  "1.562500",  "4.898979",  "1.000000", "0.80000",   "0.50000",  "0.000000")
 HANGLAMP3        = GetBlock("pointLight17", "1008033010", "0.000000",  "0.500000",  "0.000000", "90.000000",  "0.000000",   "-180.000000", "0.750000", "0.750000", "0.750000", "172.000000", "1.000000",  "4.000000",  "4.898979",  "1.000000", "0.98000",   "0.95000",  "0.000000")
@@ -126,7 +126,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "27500.000000"},
+                {"Value", "7.562500"},
               }
             },
           }
@@ -154,7 +154,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "21000.000000"},
+                {"Value", "4.410000"},
               }
             },
             {
@@ -208,7 +208,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "13000.000000"},
+                {"Value", "1.690000"},
               }
             },
             {
@@ -256,7 +256,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "10000.000000"},
+                {"Value", "1.000000"},
               }
             },
             {
@@ -307,7 +307,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "36000.000000"},
+                {"Value", "12.960000"},
               }
             },
             {
@@ -356,7 +356,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "30000.000000"},
+                {"Value", "9.000000"},
               }
             },
             {
@@ -395,7 +395,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight2", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "35000.000000"},
+                {"Value", "12.250000"},
               }
             },
             {
@@ -437,7 +437,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "30000.000000"},
+                {"Value", "9.000000"},
               }
             },
             {
@@ -499,7 +499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "25000.000000"},
+                {"Value", "6.250000"},
               }
             },
             {
@@ -561,7 +561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "25000.000000"},
+                {"Value", "6.250000"},
               }
             },
             {
@@ -623,7 +623,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "25000.000000"},
+                {"Value", "6.250000"},
               }
             },
             {
@@ -685,7 +685,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "17000.000000"},
+                {"Value", "2.890000"},
               }
             },
             {
@@ -733,7 +733,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight6", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "25000.000000"},
+                {"Value", "6.250000"},
               }
             },
             {
@@ -804,7 +804,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "17500.000000"},
+                {"Value", "3.062500"},
               }
             },
             {
@@ -845,7 +845,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "22500.000000"},
+                {"Value", "5.062500"},
               }
             },
             {
@@ -886,7 +886,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight17", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "4800.000000"},
+                {"Value", "0.230400"},
               }
             },
             {
@@ -932,7 +932,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "20500.000000"},
+                {"Value", "4.202500"},
               }
             },
             {

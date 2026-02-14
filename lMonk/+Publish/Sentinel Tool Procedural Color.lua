@@ -3,7 +3,7 @@ local mod_desc = [[
   Adds procedural colors for the sentinel multitools
 ]]---------------------------------------------------
 
-local function OneLayerProcTexFile(t)
+local function OneTextureProcTexFile(t)
 	return ([[<Data template="cTkProceduralTextureList">
 		<Property name="Layers">
 			<Property name="Layers" value="TkProceduralTextureLayer">
@@ -40,9 +40,9 @@ local function OneLayerProcTexFile(t)
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Sentinel Tool Procedural Color.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.Sentinel Tool Procedural Color',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.02',
+	NMS_VERSION			= '6.21',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -73,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	ADD_FILES	= {
 		{
 			FILE_DESTINATION = 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAIN.TEXTURE.MXML',
-			FILE_CONTENT	 = OneLayerProcTexFile({
+			FILE_CONTENT	 = OneTextureProcTexFile({
 				palette	= 'Custom_Head',
 				color	= 'Primary',
 				texture	= 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAIN.BASE.DDS'

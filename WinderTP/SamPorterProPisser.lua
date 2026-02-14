@@ -14,12 +14,15 @@ OVERRIDE_ANIM = true
 
 --config var going into exmls
 ROOT_PATH = [[CUSTOMMODELS/WINDER/PISS/]]
-EMOTE_ACTION =	{	["NAME"] 		= "Urinate",
-					["ICON"] 		= "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/SPACEGUNK.1.DDS",
-					["CHAT_MSG"] 	= "%NAME% is relieving themselves",
-					["CHAT_NAME"] 	= "False",
-				}
 PISS_ACTION = "PISS"
+EMOTE_ACTION =
+{	["NAME"] 		= "Urinate",
+	["ICON"] 		= "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/SPACEGUNK.1.DDS",
+	["CHAT_MSG"] 	= "%NAME% is relieving themselves",
+	["CHAT_NAME"] 	= "False",
+	["NAME_LANGUAGE"] = PISS_ACTION .. [[_NAME]],
+	["CHAT_LANGUAGE"] = PISS_ACTION .. [[_CHAT]],
+}
 PISS_PARTICLE = {	{	["EMIT_RATE"]			=	"100",
 						["EMIT_LIFE"]			=	"2",
 						["EMIT_MIDLIFE"]		=	"0.7",
@@ -100,7 +103,9 @@ MATERIAL_PATH = {	["EXML"]	= "PISS.MATERIAL",
 PISS_MODEL = 	{	["EXML"]	= "",
 					["MBIN"]	= "",
 				}
-				
+
+LANGUAGE_TYPE = {"English", "French", "Italian", "German", "Spanish", "Russian", "Polish", "Dutch", "Portuguese", "LatinAmericanSpanish", "BrazilianPortuguese", "SimplifiedChinese", "TraditionalChinese", "TencentChinese", "Korean", "Japanese", "USEnglish"}
+
 --making file paths
 				
 TEXTURE_PATH["LOCATION"] = ROOT_PATH .. [[TEXTURE/]]
@@ -803,9 +808,14 @@ return [[
 ]]
 end
 
+function GetLanguageEntry(VALUE, LOCALE)
+return[[
+      <Property name="]] .. LOCALE .. [[" value="]] .. VALUE .. [[" />
+]]
+end
 
 --make files with functions
-ACTIVATE_ACTION = GetQuickAction(EMOTE_ACTION["NAME"], PISS_ACTION, EMOTE_ACTION["ICON"], "False", EMOTE_ACTION["CHAT_MSG"], EMOTE_ACTION["CHAT_NAME"])
+ACTIVATE_ACTION = GetQuickAction(EMOTE_ACTION["NAME_LANGUAGE"], PISS_ACTION, EMOTE_ACTION["ICON"], "False", EMOTE_ACTION["CHAT_LANGUAGE"], EMOTE_ACTION["CHAT_NAME"])
 
 
 -- if OVERRIDE_MAT then use override material in scene, else use new mat and create mat file
@@ -836,6 +846,38 @@ end
 
 -- making scene with material path decided above
 SCENE_FILE = GetSceneFile(PARTICLE_PATH[1]["MXML"],PARTICLE_PATH[2]["MXML"],MAT_OUTPUT)
+
+
+-- BUILDING LANGUAGE TABLES 
+LANGUAGE_FILE_HEADER = [[
+<?xml version="1.0" encoding="utf-8"?>
+<Data template="cTkLocalisationTable">
+  <Property name="Table">]]
+EXPORT_LANGUAGE = {}
+table.insert(EXPORT_LANGUAGE, LANGUAGE_FILE_HEADER)
+table.insert(EXPORT_LANGUAGE, [[
+    <Property name="Table" value="TkLocalisationEntry">
+      <Property name="Id" value="]] .. EMOTE_ACTION["NAME_LANGUAGE"] .. [[" />
+]])
+for _i,j in pairs(LANGUAGE_TYPE) do
+	table.insert(EXPORT_LANGUAGE, GetLanguageEntry(EMOTE_ACTION["NAME"],j))
+end
+table.insert(EXPORT_LANGUAGE, [[
+    </Property>
+]])
+table.insert(EXPORT_LANGUAGE, [[
+    <Property value="TkLocalisationEntry">
+      <Property name="Id" value="]] .. EMOTE_ACTION["CHAT_LANGUAGE"] .. [[" />
+]])
+for _i,j in pairs(LANGUAGE_TYPE) do
+	table.insert(EXPORT_LANGUAGE, GetLanguageEntry(EMOTE_ACTION["CHAT_MSG"],j))
+end
+table.insert(EXPORT_LANGUAGE, [[
+    </Property>
+]])
+		table.insert(EXPORT_LANGUAGE, [[
+</Property>
+</Data>]])
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -949,5 +991,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 --			["FILE_DESTINATION"] = TEXTURE_PATH["LOCATION"],
 --			["EXTERNAL_FILE_SOURCE"] = TEXTURE_PATH["NAME"]
 --		}
+		{
+			["FILE_DESTINATION"] = "LocTable.MXML",
+			["FILE_CONTENT"] 	 = table.concat(EXPORT_LANGUAGE)
+		},
 	}
 }

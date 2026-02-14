@@ -261,7 +261,7 @@ local solar_modifiers = {
 	}
 }
 
----	MXML 2 LUA ... by lMonk ... version: 1.0.04
+---	MXML 2 LUA ... by lMonk ... version: 1.0.06
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -273,7 +273,7 @@ local function ToMxml(class)
 	local function bool(b)
 		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
 	end
-	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite'}
+	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite', '_remove'}
 	local function mxml_r(tlua)
 		local out = {}
 		function out:add(t)
@@ -327,7 +327,7 @@ local function ToMxml(class)
 		return mxml_r(class)
 	elseif class.meta and klen > 1 then
 		return mxml_r( {class} )
-	-- concatenate unrelated (instead of nested) mxml sections
+	-- concatenate consecutive (instead of nested) sections
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
@@ -336,30 +336,6 @@ local function ToMxml(class)
 		return table.concat(T)
 	end
 	return nil
-end
-
---	=> Adds the header and class template for a standard mxml file
---	@param data: A lua2mxml formatted table
---	@param template: [optional] A class template string. Overwrites the internal template!
-local function ToMxmlFile(tlua, ext_tmpl)
-	local wrapper = '<?xml version="1.0" encoding="utf-8"?><Data template="%s">%s</Data>'
-	if type(tlua) == 'string' then
-		return wrapper:format(ext_tmpl, tlua)
-	end
-	-- replace existing or add template layer if needed
-	if ext_tmpl then
-		if tlua.meta.template then
-			tlua.meta.template = ext_tmpl
-		else
-			tlua = {
-				meta = {template=ext_tmpl},
-				tlua
-			}
-		end
-	end
-	-- strip mock template
-	local txt_data = ToMxml(tlua):sub(#tlua.meta.template + 23, -12)
-	return wrapper:format(tlua.meta.template, txt_data)
 end
 
 --	=> Parse attributes from xml tag and return them in a table
@@ -400,8 +376,9 @@ end
 --	=> Returns a table representation of MXML sections
 --	When parsing a full file, the header is stripped and a mock template is added
 --	* Does not handle commented lines!
---	@param mxml: requires complete MXML sections in the nomral format
+--	@param mxml: requires complete MXML sections in the normal format
 --	@param use_id: use _id as section key where possible [Default: false]
+--	* Attention: Enabling use_id will scrable ordered tables!!
 local function ToLua(mxml, use_id)
 	local function eval(val)
 		if val == 'true' then
@@ -460,8 +437,32 @@ local function ToLua(mxml, use_id)
 	return tlua[1] -- discard the wrapping table
 end
 
+--	=> Adds the header and class template for a standard mxml file
+--	@param data: A lua2mxml formatted table
+--	@param template: [optional] A class template string. Overwrites the internal template!
+local function ToMxmlFile(tlua, ext_tmpl)
+	local wrapper = '<?xml version="1.0" encoding="utf-8"?><Data template="%s">%s</Data>'
+	if type(tlua) == 'string' then
+		return wrapper:format(ext_tmpl, tlua)
+	end
+	-- replace existing or add template layer if needed
+	if ext_tmpl then
+		if tlua.meta.template then
+			tlua.meta.template = ext_tmpl
+		else
+			tlua = {
+				meta = {template=ext_tmpl},
+				tlua
+			}
+		end
+	end
+	-- strip mock template
+	local txt_data = ToMxml(tlua):sub(#tlua.meta.template + 23, -12)
+	return wrapper:format(tlua.meta.template, txt_data)
+end
+
 --	=> A Union All function for an ordered array of tables. Last in the array wins
---	Returns a by-value copy. A repeating keys's values are overwritten.
+--	Returns a by-value copy. A repeating key's values are overwritten.
 --	@param arr: A table of tables.
 local function UnionTables(arr)
 	local merged = {}
@@ -786,7 +787,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.large flora',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.16',
+	NMS_VERSION			= '6.21',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE,UNDEFINED_VARIABLE',
 	MODIFICATIONS 		= {{

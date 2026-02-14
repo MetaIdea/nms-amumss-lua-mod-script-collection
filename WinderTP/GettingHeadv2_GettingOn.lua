@@ -15,7 +15,7 @@ DEFAULT_EDITION = "Traveller" -- Anomaly, Traveller
 -- Default value to remove armour piece and allow subsequent torso piece selection
 REMOVE_ARMOUR = true
 
-DEFAULT_TORSO = "TORSO_CLASSIC"
+DEFAULT_TORSO = "TORSO_RUIN"
 -- Choose the torso without armour
 -- Copy and paste the IDs or your game may become unstable!
 -- Unused if not removing armour piece
@@ -27,6 +27,8 @@ TORSO_VYK
 TORSO_FOURTH
 TORSO_BUILDERS
 TORSO_CLASSIC
+TORSO_RUIN
+TORSO_VAULT
 ]]
 
 DEFAULT_CAPE = "CAPE_RUIN"

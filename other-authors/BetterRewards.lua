@@ -111,7 +111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 	= "BetterRewards",
 ["MOD_BATCHNAME"]	= "BetterRewardsCombined",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "5.50",
+["NMS_VERSION"]		= "6.21",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to most reward values",
 ["MODIFICATIONS"] 	=
 	{
@@ -120,7 +120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MXML_CHANGE_TABLE"] 	=
 					{
 
 -----------------------------------------------------------------------------------------------------

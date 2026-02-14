@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ResearchTreesRescaled"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "600"
+METADATA_NMS_VERSION    = "620"
 METADATA_MOD_DESC       = "This mod rescales the elements of research trees by 20% to make them fit on screen better. Modifies UI\SLOTTREENODE.MBIN file."
 
 

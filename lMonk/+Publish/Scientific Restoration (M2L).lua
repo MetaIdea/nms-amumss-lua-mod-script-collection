@@ -7,7 +7,7 @@ local mod_desc = [[
   Decals placement tweaks.
   lod fixes
 ]]-----------------------------------------------------------------------------------
----	MXML 2 LUA ... by lMonk ... version: 1.0.03
+---	MXML 2 LUA ... by lMonk ... version: 1.0.06
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -19,7 +19,7 @@ local function ToMxml(class)
 	local function bool(b)
 		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
 	end
-	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite'}
+	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite', '_remove'}
 	local function mxml_r(tlua)
 		local out = {}
 		function out:add(t)
@@ -31,6 +31,7 @@ local function ToMxml(class)
 				if type(cls) == 'table' and cls.meta then
 				-- add new section and recurs for nested sections
 					for _,at in ipairs(at_ord) do
+					-- Just for readability. The compiler doesn't need the ordering
 						if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
 					end
 					-- for k, v in pairs(cls.meta) do
@@ -72,7 +73,7 @@ local function ToMxml(class)
 		return mxml_r(class)
 	elseif class.meta and klen > 1 then
 		return mxml_r( {class} )
-	-- concatenate unrelated (instead of nested) mxml sections
+	-- concatenate consecutive (instead of nested) sections
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
@@ -83,20 +84,13 @@ local function ToMxml(class)
 	return nil
 end
 
---	=> Translates a 0xFF hex section from a longer string to 0-1.0 percentage
---	@param hex: hex string (case insensitive [A-z0-9])
---	@param i: the hex pair's index
-local function Hex2Percent(hex, i)
-	return math.floor(tonumber(hex:sub(i * 2 - 1, i * 2), 16) / 255 * 1000) / 1000
-end
-
 --	=> Determine if received is a single or multi-item
 --	then process items through the received function
 --	@param items: table of item properties or a non-keyed table of items (keys are ignored)
 --	@param acton: the function to process the items in the table
 local function ProcessOnenAll(items, acton)
-	-- first key = 1 means multiple entries
-	if next(items) == 1 then
+	-- key==1 exists means multiple entries
+	if items[1] then
 		local T = {}
 		for _,e in ipairs(items) do
 			T[#T+1] = acton(e)
@@ -106,8 +100,19 @@ local function ProcessOnenAll(items, acton)
 	return acton(items)
 end
 
+--	=> Build a TkSceneNodeAttributeData section
+--	@param name: scene attribute name
+--	@param value: scene attribute value
+local function ScAttribute(name, value)
+	return {
+		meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
+		Name	= name,
+		Value	= type(value) == 'boolean' and (value and 'TRUE' or 'FALSE') or value
+	}
+end
+
 --	=> Build a single -or list of TkSceneNodeData classes
---	@param props: a keyed table for scene class properties.
+--	@param props: a keyed table for scene class properties
 --	{
 --	  name	= scene node name (NameHash is calculated automatically)
 --	  ntype	= scene node type
@@ -152,25 +157,21 @@ local function ScNode(nodes)
 			RotX	= (props.form.rx or props.form[4]) or nil,
 			RotY	= (props.form.ry or props.form[5]) or nil,
 			RotZ	= (props.form.rz or props.form[6]) or nil,
-			ScaleX	= (props.form.sl or props.form.sx or props.form[7]) or 1,
-			ScaleY	= (props.form.sl or props.form.sy or props.form[8] or props.form[7]) or 1,
-			ScaleZ	= (props.form.sl or props.form.sz or props.form[9] or props.form[7]) or 1
+			ScaleX	= (props.form.s_ or props.form.sx or props.form[7]) or 1,
+			ScaleY	= (props.form.s_ or props.form.sy or props.form[8] or props.form[7]) or 1,
+			ScaleZ	= (props.form.s_ or props.form.sz or props.form[9] or props.form[7]) or 1
 		}
 		--	if present, add attributes list
 		if props.attr then
 			-- add accompanying attributes
 			if props.attr.SCENEGRAPH then
-				props.attr.EMBEDGEOMETRY = 'TRUE'
+				props.attr.EMBEDGEOMETRY = true
 			elseif props.attr.TYPE then
-				props.attr.NAVIGATION = 'FALSE'
+				props.attr.NAVIGATION = false
 			end
 			T.Attr = { meta = {name='Attributes'} }
 			for nm, val in pairs(props.attr) do
-				T.Attr[#T.Attr+1] = {
-					meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
-					Name	= nm,
-					Value	= val
-				}
+				T.Attr[#T.Attr+1] = ScAttribute(nm, val)
 			end
 		end
 		if props.child then
@@ -185,16 +186,25 @@ local function ScNode(nodes)
 	return ProcessOnenAll(nodes, sceneNode)
 end
 
+--	=> Translates a 0xFF hex section from a longer string to 0-1.0 percentage
+--	@param hex: hex string (case insensitive [A-z0-9])
+--	@param i: the hex pair's index
+local function Hex2Percent(hex, i)
+	return math.floor(tonumber(hex:sub(i * 2 - 1, i * 2), 16) / 255 * 1000) / 1000
+end
+
 --	=> Builds light TkSceneNodeData sections.
 --	receives a table, or a table of tables, with the following (optional) parameters
---	  name= 'n9',	fov= 360,	v=	0,
---	  i=	30000,	f= 'q',		fr=	2,
---	  r=	1,		g=	1,		b=	1,
+--	Light node attributes:
+--	  name= 'n9'	fov= 360	v=	0
+--	  i=	30,		f=	2		rd=	5
+--	  r=	1		g=	1		b=	1
 --	  c=	'7E450A' (color as hex - overwrites rgb)
---	  tx=	0,		ty=	0,		tz=	0,
---	  rx=	0,		ry=	0,		rz=	0,
---	  sx=	1,		sy=	1,		sz=	1
 --	  mt=	MATERIALS/LIGHT.MATERIAL.MBIN
+--	Transform node properties:
+--	  tx=	0		ty=	0		tz=	0
+--	  rx=	0		ry=	0		rz=	0
+--	  sx=	1		sy=	1		sz=	1
 local function ScLight(lights)
 	local function lightNode(lgt)
 		if lgt.c then
@@ -209,22 +219,23 @@ local function ScLight(lights)
 			form	= lgt,
 			attr	= {
 				FOV			= lgt.fov or 360,
-				FALLOFF		= (lgt.f and lgt.f:sub(1,1) == 'l') and 'linear' or 'quadratic',
-				FALLOFF_RATE= lgt.fr or 2,
-				INTENSITY	= lgt.i  or 30000,
+				FALLOFF		= lgt.f  or 2,
+				INTENSITY	= lgt.i  or 9,
+				RADIUS		= lgt.rd or 5,
 				COL_R		= lgt.r  or 1,
 				COL_G		= lgt.g  or 1,
 				COL_B		= lgt.b  or 1,
-				VOLUMETRIC	= lgt.v  or nil,
 				COOKIE_IDX	= -1,
+				VOLUMETRIC	= lgt.v  or nil,
+				LIGHTLAYERS	= lgt.l  or 3,
 				MATERIAL	= lgt.mt or 'MATERIALS/LIGHT.MATERIAL.MBIN'
 			}
 		}
 	end
 	-----------------------------------------------------------------
 	if lights then
-		-- first key=1 means a list of light nodes
-		if next(lights) == 1 then
+		-- key==1 exists means multiple entries
+		if lights[1] then
 			local T = {}
 			for _,l in pairs(lights) do
 				T[#T+1] = lightNode(l)
@@ -289,7 +300,7 @@ local science = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= 'MOD.lMonk.Scientific Restoration',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '6.06',
+	NMS_VERSION				= '6.21',
 	AMUMSS_SUPPRESS_MSG		= 'MULTIPLE_STATEMENTS',
 	MOD_DESCRIPTION			= mod_desc,
 	MODIFICATIONS 			= {{
@@ -299,7 +310,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_KEY_WORDS	= 'Children',
-				ADD					= ToMxml(ScLight({name='Light08', i=7000, ty=-0.6, tz=1.5, c='FF98A6F2'}))
+				ADD					= ToMxml(ScLight({name='Light08', i=7, rd=1.6, ty=-0.6, tz=1.5, c='FF98A6F2'}))
 			}
 		}
 	},
