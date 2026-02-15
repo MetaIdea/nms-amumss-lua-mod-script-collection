@@ -2,7 +2,7 @@ Author = "Gumsk"		--Edited by Xenonex
 ModName = "gGame"
 ModNameSub = "Misc Changes X"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "5_55"
+GameVersion = "6_21"
 ModVersion = "b"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
@@ -16,14 +16,14 @@ BonusChildMult = 0.03							--0.03 ;
 
 --Torch Adjustments
 TorchFoV = 110									--Torch arc width, in degrees. 181+=360 degrees. Original value "110" (120)
-TorchStrength = 4.2								--Torch brightness. Original value "4" (3.5)
+TorchStrength = 16.8							--Torch brightness. Original value "16" (3.5)
 TorchCookieIndex = 0							--0
 TorchDimFoV = 65								--65 Derelict Freighter FOV
-TorchDimStrength = 2.2							--1.5 Derelict Freighter Strength
+TorchDimStrength = 2.2							--2.25 (1.5) Derelict Freighter Strength
 InteractionTorchFoV = 120						--120
-InteractionTorchStrength = 1.5					--2
+InteractionTorchStrength = 3					--4 (2)
 UndergroundTorchFoV = 90						--90
-UndergroundTorchStrength = 3.5					--3.5
+UndergroundTorchStrength = 14					--12.25 (3.5)
 --UndergroundTorchFoVFar = 100					--100	Deprecated in NMS v5.5
 --UndergroundTorchStrengthFar = 7.5				--6.5	Deprecated in NMS v5.5
 TorchOffsetX = 0								--Torch source, + right, -left of centerline of character, in u. Original value "0"

@@ -5,7 +5,7 @@ local mod_desc = [[
 
   * DDS files import is skipped SILENTLY if file paths are not found!
 ]]-------------------------------------------------------------------
----	MXML 2 LUA ... by lMonk ... version: 1.0.01
+---	MXML 2 LUA ... by lMonk ... version: 1.0.06
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -17,7 +17,7 @@ local function ToMxml(class)
 	local function bool(b)
 		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
 	end
-	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite'}
+	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite', '_remove'}
 	local function mxml_r(tlua)
 		local out = {}
 		function out:add(t)
@@ -29,6 +29,7 @@ local function ToMxml(class)
 				if type(cls) == 'table' and cls.meta then
 				-- add new section and recurs for nested sections
 					for _,at in ipairs(at_ord) do
+					-- Just for readability. The compiler doesn't need the ordering
 						if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
 					end
 					-- for k, v in pairs(cls.meta) do
@@ -70,7 +71,7 @@ local function ToMxml(class)
 		return mxml_r(class)
 	elseif class.meta and klen > 1 then
 		return mxml_r( {class} )
-	-- concatenate unrelated (instead of nested) mxml sections
+	-- concatenate consecutive (instead of nested) sections
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
@@ -140,38 +141,38 @@ local proc_texture_files = {
 			}
 		}
 	},
-	{--	mech liquidator
-		label	= 'ARMYMECH',
-		source	= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures_mod_source/textures/common/robots/',
-		nmspath	= 'TEXTURES/COMMON/ROBOTS/',
-		layers	= {
-			{
-				name	= 'TERTIARY',
-				palette = 'Paint',
-				color	= 'Alternative2',
-				dds		= 1,
-			},
-			{
-				name	= 'SECONDARY',
-				palette = 'Paint',
-				color	= 'Alternative1',
-				dds		= 1,
-			},
-			{
-				name	= 'PRIMARY',
-				palette = 'Paint',
-				color	= 'Primary',
-				dds		= 1,
-			},
-			{
-				name	= 'BASE',
-				dds		= 1
-			}
-		}
-	},
+	-- {--	mech liquidator
+		-- label	= 'ARMYMECH',
+		-- source	= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures_mod_source/textures/common/robots/',
+		-- nmspath	= 'TEXTURES/COMMON/ROBOTS/',
+		-- layers	= {
+			-- {
+				-- name	= 'TERTIARY',
+				-- palette = 'Paint',
+				-- color	= 'Alternative2',
+				-- dds		= 1,
+			-- },
+			-- {
+				-- name	= 'SECONDARY',
+				-- palette = 'Paint',
+				-- color	= 'Alternative1',
+				-- dds		= 1,
+			-- },
+			-- {
+				-- name	= 'PRIMARY',
+				-- palette = 'Paint',
+				-- color	= 'Primary',
+				-- dds		= 1,
+			-- },
+			-- {
+				-- name	= 'BASE',
+				-- dds		= 1
+			-- }
+		-- }
+	-- },
 	{--	mech liquidator trim
 		label	= 'ARMYTRIM',
-		source	= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures_mod_source/textures/common/robots/',
+		-- source	= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures_mod_source/textures/common/robots/',
 		nmspath	= 'TEXTURES/COMMON/ROBOTS/',
 		layers	= {
 			{
@@ -198,7 +199,7 @@ local function GetProcTextures(path, layer)
 	for _,ptex in ipairs(layer.texture or {{n=''}}) do
 		if type(ptex) == 'string' then ptex = {n=ptex} end
 		T[#T+1] = {
-			meta = {name='Textures', value='TkProceduralTexture'},
+			meta = {name='Textures', value='TkProceduralTexture', _index=#T},
 			Name				= ptex.n,
 			Probability			= ptex.pr or 1,
 			TextureGameplayUse	= ptex.u,
@@ -224,7 +225,7 @@ local function BuildProcTexListMbin(proc_tex_list)
 	local T = { meta = {name='Layers'} }
 	for _,layr in ipairs(proc_tex_list.layers) do
 		T[#T+1] = {
-			meta = {name='value', value='TkProceduralTextureLayer'},
+			meta = {name='value', value='TkProceduralTextureLayer', _index=#T},
 			Name				= layr.name,
 			Probability			= proc_tex_list.ly_prob	or 1,
 			Group				= proc_tex_list.group,
@@ -234,16 +235,16 @@ local function BuildProcTexListMbin(proc_tex_list)
 	end
 	-- complete to the fixed length (8) array
 	for _=1, (8 - #proc_tex_list.layers) do
-		T[#T+1] = {value = 'TkProceduralTextureLayer'}
+		T[#T+1] = {value = 'TkProceduralTextureLayer', _index=#T}
 	end
 	-- new mbin
 	return ToMxmlFile(T, 'cTkProceduralTextureList')
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Mech Customizing.pak',
+	MOD_FILENAME 		= 'MOD.lMonk.Mech Customizing',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.06',
+	NMS_VERSION			= '6.21',
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES			= (
@@ -256,7 +257,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 				if ptf.source and lfs.attributes(ptf.source) then
 					T[#T+1] = {
-						EXTERNAL_FILE_SOURCE = ptf.source..ptf.label..'*.DDS',
+						-- EXTERNAL_FILE_SOURCE = ptf.source..ptf.label..'*.DDS',
+						EXTERNAL_FILE_SOURCE = ptf.source..'*.DDS',
 						FILE_DESTINATION	 = ptf.nmspath..'*.DDS'
 					}
 				end

@@ -234,6 +234,7 @@ function AddInvetoryElements(TYPE)
                     <Property name="MaxAmount" value="]]..MaxAmount..[[" />
                     <Property name="DamageFactor" value="]]..Damage..[[" />
                     <Property name="FullyInstalled" value="true" />
+                    <Property name="AddedAutomatically" value="false" />
                     <Property name="Index" value="GcInventoryIndex">
                       <Property name="X" value="-1" />
                       <Property name="Y" value="-1" />
@@ -331,6 +332,7 @@ local GENERIC_REWARD_ENTRY =
                   <Property name="IsCool" value="false" />
                   <Property name="Name" value="" />
                   <Property name="Version" value="0" />
+                  <Property name="NumSlotsFromTech" value="0" />
                 </Property>
                 <Property name="WeaponLayout" value="GcInventoryLayout">
                   <Property name="Slots" value="24" />
@@ -401,6 +403,7 @@ local GENERIC_REWARD_SUB_ENTRY =
                   <Property name="IsCool" value="false" />
                   <Property name="Name" value="]] .. HEX_SEED .. [[" />
                   <Property name="Version" value="0" />
+                  <Property name="NumSlotsFromTech" value="0" />
                 </Property>
                 <Property name="CostAmount" value="0" />
                 <Property name="CostCurrency" value="GcCurrency">
