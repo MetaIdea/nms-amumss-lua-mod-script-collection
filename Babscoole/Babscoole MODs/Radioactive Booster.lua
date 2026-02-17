@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Radioactive Booster",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "Transform half of all planets into the type of your choice",
 ["MODIFICATIONS"]   =
   {
@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ALL",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Radioactive", "1000001"},
+                {"Radioactive", "50"},
               }
             }
           }

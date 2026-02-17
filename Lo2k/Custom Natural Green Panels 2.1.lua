@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Custom Natural Green Panels 2.0.pak", 
+["MOD_FILENAME"] 			= "Custom Natural Green Panels 2.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "6.10",
+["NMS_VERSION"]				= "6.22",
 ["MOD_DESCRIPTION"]			= "This mod make panel backgrounds natural green",
 ["MODIFICATIONS"] 			= 
 	{

@@ -73,12 +73,16 @@ MISSIONS_QS =
 Rewards =
 {
   {
+      ["REWARD"] = REWARD_ALL (5),
+      ["IDS"] = {"R_CARGO_RAD_S", "R_CARGO_TOX_S", "R_CARGO_EXP_S"}
+  },
+  {
       ["REWARD"] = REWARD_ALL (10),
-      ["IDS"] = {"DRONE_LOOT"}
+      ["IDS"] = {"R_CARGO_RAD_M", "R_CARGO_TOX_M", "R_CARGO_EXP_M"}
   },
   {
       ["REWARD"] = REWARD_ALL (25),
-      ["IDS"] = {"QUAD_LOOT", "CORRUPT_LOOT", "DE_HIVESUB", "PIRATE_BOUNTY1", "DE_SCRAP_PART"}
+      ["IDS"] = {"QUAD_LOOT", "CORRUPT_LOOT", "DE_HIVESUB", "PIRATE_BOUNTY1", "DE_SCRAP_PART", "R_CARGO_RAD_L", "R_CARGO_TOX_L", "R_CARGO_EXP_L"}
   },
   {
       ["REWARD"] = REWARD_ALL (50),

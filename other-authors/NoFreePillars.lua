@@ -30,8 +30,8 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"InteractDistance", "1.500000"},
-                {"InteractAngle", "45.000000"},
+                {"InteractDistance", "1.700000"},
+                {"InteractAngle", "60.000000"},
                 {"InteractMaxHeightDiff", "0.500000"},
               }
             },

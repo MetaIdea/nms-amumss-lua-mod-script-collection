@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Exotic Booster",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "Transform half of all planets into the type of your choice",
 ["MODIFICATIONS"]   =
   {
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"BiomeProbability"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Green", "1000000"},
+                {"Green", "50"},
               }
             },
             {
@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"BiomeProbability"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Blue", "1000000"},
+                {"Blue", "50"},
               }
             },
             {
@@ -34,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"BiomeProbability"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Red", "1000000"},
+                {"Red", "50"},
               }
             },
           }

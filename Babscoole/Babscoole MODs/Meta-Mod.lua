@@ -566,6 +566,7 @@ QUICK_ACTION_MENU =
           <Property name="IsCommunityPortalOverride" value="false" />
           <Property name="ClearForcedInteractionOnCompletion" value="false" />
           <Property name="BuildingPreventionRadius" value="0.000000" />
+          <Property name="BuildingPreventionDisallowBuilding" value="false" />
           <Property name="UseMissionTradingDataOverride" value="false" />
           <Property name="AlwaysShow" value="true" />
           <Property name="NeverShow" value="false" />
@@ -592,6 +593,7 @@ QUICK_ACTION_MENU =
           <Property name="AllowOverriddenBuildings" value="true" />
           <Property name="TargetMustMatchMissionSeed" value="false" />
           <Property name="UseBuildingFromRendezvousStage" value="false" />
+          <Property name="UseUDAAsSearchPoint" value="" />
           <Property name="SolarSystemLocation" value="LocalOrNear" />
           <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup">
             <Property name="UseStarType" value="false" />
@@ -649,15 +651,19 @@ QUICK_ACTION_MENU =
             <Property name="SuitableForWeirdCreatureDiscovery" value="false" />
             <Property name="SuitableForRobotCreatureDiscovery" value="false" />
             <Property name="SuitableForCreatureTaming" value="false" />
+            <Property name="NeedsSpecificCreature" value="" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
+            <Property name="ExcludePlanetsWithEvents" />
             <Property name="SystemNeedsResourceHint" value="" />
             <Property name="SystemNeedsWater" value="false" />
             <Property name="SystemNeedsWeirdPlanet" value="false" />
             <Property name="SystemNeedsInfestedPlanet" value="false" />
+            <Property name="SystemNeedsRelicPlanet" value="false" />
             <Property name="SystemNeedsCorruptSentinelPlanet" value="false" />
             <Property name="SystemNeedsExtremeStormPlanet" value="false" />
             <Property name="SystemNeedsGasGiant" value="false" />
+            <Property name="SystemNeedsNonGasGiant" value="false" />
             <Property name="NeverAllowGasGiantSystem" value="false" />
             <Property name="MinPlanets" value="-1" />
           </Property>
@@ -717,15 +723,19 @@ QUICK_ACTION_MENU =
             <Property name="SuitableForWeirdCreatureDiscovery" value="false" />
             <Property name="SuitableForRobotCreatureDiscovery" value="false" />
             <Property name="SuitableForCreatureTaming" value="false" />
+            <Property name="NeedsSpecificCreature" value="" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
+            <Property name="ExcludePlanetsWithEvents" />
             <Property name="SystemNeedsResourceHint" value="" />
             <Property name="SystemNeedsWater" value="false" />
             <Property name="SystemNeedsWeirdPlanet" value="false" />
             <Property name="SystemNeedsInfestedPlanet" value="false" />
+            <Property name="SystemNeedsRelicPlanet" value="false" />
             <Property name="SystemNeedsCorruptSentinelPlanet" value="false" />
             <Property name="SystemNeedsExtremeStormPlanet" value="false" />
             <Property name="SystemNeedsGasGiant" value="false" />
+            <Property name="SystemNeedsNonGasGiant" value="false" />
             <Property name="NeverAllowGasGiantSystem" value="false" />
             <Property name="MinPlanets" value="-1" />
           </Property>
@@ -1238,6 +1248,7 @@ function GetShipRewardEntry(REWARDID, TYPE, SEED)
                       <Property name="MaxAmount" value="300" />
                       <Property name="DamageFactor" value="0" />
                       <Property name="FullyInstalled" value="true" />
+                      <Property name="AddedAutomatically" value="false" />
                       <Property name="Index" value="GcInventoryIndex">
                         <Property name="X" value="-1" />
                         <Property name="Y" value="-1" />
@@ -1252,6 +1263,7 @@ function GetShipRewardEntry(REWARDID, TYPE, SEED)
                       <Property name="MaxAmount" value="100" />
                       <Property name="DamageFactor" value="0" />
                       <Property name="FullyInstalled" value="true" />
+                      <Property name="AddedAutomatically" value="false" />
                       <Property name="Index" value="GcInventoryIndex">
                         <Property name="X" value="-1" />
                         <Property name="Y" value="-1" />
@@ -1266,6 +1278,7 @@ function GetShipRewardEntry(REWARDID, TYPE, SEED)
                       <Property name="MaxAmount" value="200" />
                       <Property name="DamageFactor" value="0" />
                       <Property name="FullyInstalled" value="true" />
+                      <Property name="AddedAutomatically" value="false" />
                       <Property name="Index" value="GcInventoryIndex">
                         <Property name="X" value="-1" />
                         <Property name="Y" value="-1" />
@@ -1280,6 +1293,7 @@ function GetShipRewardEntry(REWARDID, TYPE, SEED)
                       <Property name="MaxAmount" value="1000" />
                       <Property name="DamageFactor" value="0" />
                       <Property name="FullyInstalled" value="true" />
+                      <Property name="AddedAutomatically" value="false" />
                       <Property name="Index" value="GcInventoryIndex">
                         <Property name="X" value="-1" />
                         <Property name="Y" value="-1" />
@@ -1294,6 +1308,7 @@ function GetShipRewardEntry(REWARDID, TYPE, SEED)
                       <Property name="MaxAmount" value="120" />
                       <Property name="DamageFactor" value="0" />
                       <Property name="FullyInstalled" value="true" />
+                      <Property name="AddedAutomatically" value="false" />
                       <Property name="Index" value="GcInventoryIndex">
                         <Property name="X" value="-1" />
                         <Property name="Y" value="-1" />
@@ -1308,6 +1323,7 @@ function GetShipRewardEntry(REWARDID, TYPE, SEED)
                       <Property name="MaxAmount" value="1000" />
                       <Property name="DamageFactor" value="0" />
                       <Property name="FullyInstalled" value="true" />
+                      <Property name="AddedAutomatically" value="false" />
                       <Property name="Index" value="GcInventoryIndex">
                         <Property name="X" value="-1" />
                         <Property name="Y" value="-1" />
@@ -1328,6 +1344,7 @@ function GetShipRewardEntry(REWARDID, TYPE, SEED)
                   <Property name="IsCool" value="false" />
                   <Property name="Name" value="" />
                   <Property name="Version" value="0" />
+                  <Property name="NumSlotsFromTech" value="0" />
                 </Property>
                 <Property name="CostAmount" value="0" />
                 <Property name="CostCurrency" value="GcCurrency">
@@ -1388,6 +1405,7 @@ function GetMultitoolRewardEntry(REWARDID, TYPE, SEED)
                   <Property name="IsCool" value="false" />
                   <Property name="Name" value="" />
                   <Property name="Version" value="0" />
+                  <Property name="NumSlotsFromTech" value="0" />
                 </Property>
                 <Property name="WeaponLayout" value="GcInventoryLayout">
                   <Property name="Slots" value="24" />
@@ -2864,7 +2882,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TerminalMessage" value="" />
         <Property name="ScanType" value="BINOC_INTERACTABLE" />
         <Property name="ScanData" value="" />
-        <Property name="ScanIcon" value="">
+        <Property name="ScanIcon" value="GcDiscoveryType">
           <Property name="DiscoveryType" value="Unknown" />
         </Property>
         <Property name="ActivateLocatorsFromRarity" value="false" />
