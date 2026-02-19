@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Small Panels 5.2.pak", 
+["MOD_FILENAME"] 			= "Small Panels 5.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k & Basbcoole",
-["NMS_VERSION"]				= "6.10",
+["NMS_VERSION"]				= "6.22",
 ["MOD_DESCRIPTION"]			= "This mod reduces the size of most game panels",
 ["MODIFICATIONS"] 			= 
 	{
@@ -326,13 +326,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PaddingY",	"12"},		-- Original "15"   
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Height",	"1000.000000"},
+						--[[{
+							["SPECIAL_KEY_WORDS"] = {"Height",	"2011.000000"}, //was 1000 before 6.2
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Height",	"850"},		-- Original "1000"   
 							}
-						},
+						}, --]]
 						{
 							["SPECIAL_KEY_WORDS"] = {"Width",	"650.000000"},
 							["REPLACE_TYPE"]    = "ALL", 
@@ -915,14 +915,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PaddingX",	"24"},		-- Original "30"									
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Height",	"160.000000"},
+					--[[	{
+							["SPECIAL_KEY_WORDS"] = {"Height",	"136.000000"},  was 180 before 6.2
 							["REPLACE_TYPE"]    = "ALL", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Height",	"134"},		-- Original "180"									
 							}
-						},
+						},  --]]
 						{
 							["SPECIAL_KEY_WORDS"] = {"Font Height",	"30.000000"},
 							["REPLACE_TYPE"]    = "ALL", 

@@ -80,7 +80,7 @@ print("BASESTORAGE_ON_FREIGHTER = "..tostring(BASESTORAGE_ON_FREIGHTER))
 FREIGHTERROOMS_ON_PLANETBASE = GUIF({false, [[Do you want to place Freighter Tech and Bio rooms on Planet Bases?  Default = N.  Press ENTER for default value.]]},10)
 print("FREIGHTERROOMS_ON_PLANETBASE = "..tostring(FREIGHTERROOMS_ON_PLANETBASE))
 
-BASEPARTS_ON_CORVETTE = GUIF({true, [[Do you want to place Corvette parts on Planet Bases?  Default = Y.  Press ENTER for default value.]]},10)
+BASEPARTS_ON_CORVETTE = GUIF({true, [[Do you want to place Base parts on Corvettes?  Default = Y.  Press ENTER for default value.]]},10)
 print("BASEPARTS_ON_CORVETTE = "..tostring(BASEPARTS_ON_CORVETTE))
 
 InputMultiplier = {Multiplier,
@@ -373,7 +373,7 @@ And, of course, thanks to all of the other modders who make mods too, as we ofte
 —For latest versions and more visit:-
 https://www.nexusmods.com/nomanssky/mods/1096
 ]],
-["NMS_VERSION"]   = "6.18",
+["NMS_VERSION"]   = "6.20",
 ["MODIFICATIONS"] =
   {
     {

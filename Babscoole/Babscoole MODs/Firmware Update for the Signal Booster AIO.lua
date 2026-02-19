@@ -71,31 +71,33 @@ ScanDataTable = --Additions to SCANEVENTTABLEPLANET
   {"SE_GL_DRCS", "None",          "Nearest",        "FindBuildingClass",          "SentinelDistressSignal", "false",         "false",                  "UI_CRASH_REVEAL_OSD",           "UI_CRASH_REVEAL_MSG",           "UI_CRASH_REVEAL_MARKER"   },
   {"SE_GL_SETL", "None",          "Random" ,        "UnownedSettlement",          "None",                   "true" ,         "true" ,                  "UI_SETTLEMENT_LOCATED_OSD",     "UI_SETTLEMENT_LOCATED",         ""                         },
   {"SE_GL_SETB", "None",          "Random" ,        "UnownedSettlement_Builders", "None",                   "true" ,         "true" ,                  "UI_SETTLEMENT_BUI_LOCATED_OSD", "UI_SETTLEMENT_BUI_LOCATED",     ""                         },
+  {"SE_GL_SCRA", "None",          "Nearest" ,       "FindBuildingClass",          "ScrapYard",              "true" ,         "true" ,                  "UI_SIGNAL_SCRAPYARD",           "UI_SIGNAL_SCRAPYARD",           "UI_SCRAPYARD_NAME"        },
 }
 
 MissionDataTable = --Additions to DISABLINGCONDITIONSTABLE and REWARDTABLE
- --  MISSION            MISSION AMOUNT  REWARDTABLE ID   REWARDTABLE EVENT
-{--  SCANREWARDS ID     PROXY LEVEL     PROXY REWARD
-  {"R_GLS_SCAN_0",  "0" ,           "R_GL_SHLT", "SE_GL_SHLT"},
-  {"R_GLS_SCAN_1",  "1" ,           "R_GL_PORT", "SE_GL_PORT"},
-  {"R_GLS_SCAN_2",  "2" ,           "R_GL_DIST", "SE_GL_DIST"},
-  {"R_GLS_SCAN_3",  "3" ,           "R_GL_SHOP", "SE_GL_SHOP"},
-  {"R_GLS_SCAN_4",  "4" ,           "R_GL_FACT", "SE_GL_FACT"},
-  {"R_GLS_SCAN_5",  "5" ,           "R_GL_DPOD", "SE_GL_DPOD"},
-  {"R_GLS_SCAN_6",  "6" ,           "R_GL_LBRY", "SE_GL_LBRY"},
-  {"R_GLS_SCAN_7",  "7" ,           "R_GL_CRFR", "SE_GL_CRFR"},
-  {"R_GLS_SCAN_8",  "8" ,           "R_GL_OBSV", "SE_GL_OBSV"},
-  {"R_GLS_SCAN_9",  "9" ,           "R_GL_OUTP", "SE_GL_OUTP"},
-  {"R_GLS_SCAN_10", "10",           "R_GL_DRHV", "SE_GL_DRHV"},
-  {"R_GLS_SCAN_11", "11",           "R_GL_GRV" , "SE_GL_GRV" },
-  {"R_GLS_SCAN_12", "12",           "R_GL_BASE", "SE_GL_BASE"},
-  {"R_GLS_SCAN_13", "13",           "R_GL_GLCH", "SE_GL_GLCH"},
-  {"R_GLS_SCAN_14", "14",           "R_GL_MONO", "SE_GL_MONO"},
-  {"R_GLS_SCAN_15", "15",           "R_GL_ABAN", "SE_GL_ABAN"},
-  {"R_GLS_SCAN_16", "16",           "R_GL_RBCP", "SE_GL_RBCP"},
-  {"R_GLS_SCAN_17", "17",           "R_GL_DRCS", "SE_GL_DRCS"},
-  {"R_GLS_SCAN_18", "18",           "R_GL_SETL", "SE_GL_SETL"},
-  {"R_GLS_SCAN_19", "19",           "R_GL_SETB", "SE_GL_SETB"},
+ --  MISSION         MISSION AMOUNT  REWARDTABLE ID   REWARDTABLE EVENT
+{--  SCANREWARDS ID  PROXY LEVEL     PROXY REWARD
+  {"R_GLS_SCAN_0",   "0" ,           "R_GL_SHLT",     "SE_GL_SHLT"},
+  {"R_GLS_SCAN_1",   "1" ,           "R_GL_PORT",     "SE_GL_PORT"},
+  {"R_GLS_SCAN_2",   "2" ,           "R_GL_DIST",     "SE_GL_DIST"},
+  {"R_GLS_SCAN_3",   "3" ,           "R_GL_SHOP",     "SE_GL_SHOP"},
+  {"R_GLS_SCAN_4",   "4" ,           "R_GL_FACT",     "SE_GL_FACT"},
+  {"R_GLS_SCAN_5",   "5" ,           "R_GL_DPOD",     "SE_GL_DPOD"},
+  {"R_GLS_SCAN_6",   "6" ,           "R_GL_LBRY",     "SE_GL_LBRY"},
+  {"R_GLS_SCAN_7",   "7" ,           "R_GL_CRFR",     "SE_GL_CRFR"},
+  {"R_GLS_SCAN_8",   "8" ,           "R_GL_OBSV",     "SE_GL_OBSV"},
+  {"R_GLS_SCAN_9",   "9" ,           "R_GL_OUTP",     "SE_GL_OUTP"},
+  {"R_GLS_SCAN_10",  "10",           "R_GL_DRHV",     "SE_GL_DRHV"},
+  {"R_GLS_SCAN_11",  "11",           "R_GL_GRV" ,     "SE_GL_GRV" },
+  {"R_GLS_SCAN_12",  "12",           "R_GL_BASE",     "SE_GL_BASE"},
+  {"R_GLS_SCAN_13",  "13",           "R_GL_GLCH",     "SE_GL_GLCH"},
+  {"R_GLS_SCAN_14",  "14",           "R_GL_MONO",     "SE_GL_MONO"},
+  {"R_GLS_SCAN_15",  "15",           "R_GL_ABAN",     "SE_GL_ABAN"},
+  {"R_GLS_SCAN_16",  "16",           "R_GL_RBCP",     "SE_GL_RBCP"},
+  {"R_GLS_SCAN_17",  "17",           "R_GL_DRCS",     "SE_GL_DRCS"},
+  {"R_GLS_SCAN_18",  "18",           "R_GL_SETL",     "SE_GL_SETL"},
+  {"R_GLS_SCAN_19",  "19",           "R_GL_SETB",     "SE_GL_SETB"},
+  {"R_GLS_SCAN_20",  "20",           "R_GL_SCRA",     "SE_GL_SCRA"},
 }
 
 DialogDataTable = --Dialog (menu) additions to DISABLINGCONDITIONSTABLE.
@@ -152,6 +154,7 @@ DialogDataTable = --Dialog (menu) additions to DISABLINGCONDITIONSTABLE.
     {
       {"UI_SETTLEMENT_LABEL",     "R_GLS_SCAN_18"},
       {"UI_SETTLEMENT_BUI_LABEL", "R_GLS_SCAN_19"},
+      {"UI_SCRAPYARD_NAME",       "R_GLS_SCAN_20"},
     }
   },
 }

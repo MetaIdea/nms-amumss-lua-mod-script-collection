@@ -1,4 +1,4 @@
-MOD_VERSION = "3.2"
+MOD_VERSION = "3.3.6.21"
 EnableLegacyParts = false
 EnableFleetResearch = true
 UseNanitesForProductTree = true

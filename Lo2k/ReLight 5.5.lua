@@ -19,7 +19,7 @@ function InsertNewLight(T_New)
 		sy = 1,
 		sz = 1,
 		fov = 360,
-		f = 'quadratic',
+		f = '2.0',
 		fr = 2.0,
 		i = 30000,
 		r = 1.0,
@@ -95,10 +95,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 5.4.pak", 
+["MOD_FILENAME"] 			= "ReLight 5.5.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "6.10",
+["NMS_VERSION"]				= "6.23",
 ["MOD_DESCRIPTION"]			= "This mod tunes most of the lights",
 ["MODIFICATIONS"] 			= 
 	{
@@ -165,51 +165,51 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{  -- Blue Holo-Tractor field  and Interior Light
 							["SPECIAL_KEY_WORDS"]  = {"Name", "Lightpath01"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight59',tx=0.0, ty=7.0, tz=0.0, i=80000, r=0.95, g=1.0, b=1.0}) -- Main 10m high light
-									..InsertNewLight({name='pointLight60',tx=0.0, ty=2.0, tz=0.0, i=30000, r=1.0, g=0.67, b=0.361}) -- planetary hologram light
-									..InsertNewLight({name='pointLight61',tx=0.0, ty=5.8, tz=-11.22, rx=-90, fov =180, i=32000, r=1.0, g=0.905, b=0.685}) -- Captain yellow top light
-									..InsertNewLight({name='pointLight62',tx=0.0, ty=8.58, tz=14.08, i=40000, r=0.6, g=0.8, b=1.0}) -- blue top entry light
+							["ADD"] = InsertNewLight({name='pointLight59',tx=0.0, ty=7.0, tz=0.0, i=64, r=0.95, g=1.0, b=1.0}) -- Main 10m high light
+									..InsertNewLight({name='pointLight60',tx=0.0, ty=2.0, tz=0.0, i=9, r=1.0, g=0.67, b=0.361}) -- planetary hologram light
+									..InsertNewLight({name='pointLight61',tx=0.0, ty=5.8, tz=-11.22, rx=-90, fov =180, i=10.24, r=1.0, g=0.905, b=0.685}) -- Captain yellow top light
+									..InsertNewLight({name='pointLight62',tx=0.0, ty=8.58, tz=14.08, i=16, r=0.6, g=0.8, b=1.0}) -- blue top entry light
 							
 									-- Tractor beam blue light
-									..InsertNewLight({name='SpaceLight0',tx=0.0, ty=-1.0, tz=-21, i=80000, r=0.3, g=0.7, b=1.0}) -- Middle window behind captain
-									..InsertNewLight({name='SpaceLight1',tx=-13.0, ty=-1.0, tz=-18, i=80000, r=0.3, g=0.7, b=1.0}) -- left windows behind captain
-									..InsertNewLight({name='SpaceLight2',tx=13.0, ty=-1.0, tz=-18, i=80000, r=0.3, g=0.7, b=1.0})  -- right windows behind captain
-									..InsertNewLight({name='SpaceLight3',tx=0.0, ty=7.0, tz=-21, i=60000, r=0.3, g=0.7, b=1.0})  -- Top Middle window
-									..InsertNewLight({name='SpaceLight4',tx=-13.0, ty=7.0, tz=-18, i=60000, r=0.3, g=0.7, b=1.0}) -- Top left windows 
-									..InsertNewLight({name='SpaceLight5',tx=13.0, ty=7.0, tz=-18, i=60000, r=0.3, g=0.7, b=1.0}) -- Top right windows 
+									..InsertNewLight({name='SpaceLight0',tx=0.0, ty=-1.0, tz=-21, i=64, r=0.3, g=0.7, b=1.0}) -- Middle window behind captain
+									..InsertNewLight({name='SpaceLight1',tx=-13.0, ty=-1.0, tz=-18, i=64, r=0.3, g=0.7, b=1.0}) -- left windows behind captain
+									..InsertNewLight({name='SpaceLight2',tx=13.0, ty=-1.0, tz=-18, i=64, r=0.3, g=0.7, b=1.0})  -- right windows behind captain
+									..InsertNewLight({name='SpaceLight3',tx=0.0, ty=7.0, tz=-21, i=36, r=0.3, g=0.7, b=1.0})  -- Top Middle window
+									..InsertNewLight({name='SpaceLight4',tx=-13.0, ty=7.0, tz=-18, i=36, r=0.3, g=0.7, b=1.0}) -- Top left windows 
+									..InsertNewLight({name='SpaceLight5',tx=13.0, ty=7.0, tz=-18, i=36, r=0.3, g=0.7, b=1.0}) -- Top right windows 
 									
 								-- White roof0 neons - left side
-									..InsertNewLight({name='NeonLeft1',tx=-5.0, ty=4.5, tz=-12.4, i=15000})
-									..InsertNewLight({name='NeonLeft2',tx=-12.7, ty=4.5, tz=-5.2, i=15000})
-									..InsertNewLight({name='NeonLeft3',tx=-12.7, ty=4.5, tz=5.2, i=15000})
-									..InsertNewLight({name='NeonLeft4',tx=-5.0, ty=4.5, tz=12.4, i=15000})
+									..InsertNewLight({name='NeonLeft1',tx=-5.0, ty=4.5, tz=-12.4, i=2.25})
+									..InsertNewLight({name='NeonLeft2',tx=-12.7, ty=4.5, tz=-5.2, i=2.25})
+									..InsertNewLight({name='NeonLeft3',tx=-12.7, ty=4.5, tz=5.2, i=2.25})
+									..InsertNewLight({name='NeonLeft4',tx=-5.0, ty=4.5, tz=12.4, i=2.25})
 								-- White roof0 neons - right side
-									..InsertNewLight({name='NeonRight1',tx=5.0, ty=4.5, tz=-12.4, i=15000})
-									..InsertNewLight({name='NeonRight2',tx=12.7, ty=4.5, tz=-5.2, i=15000})
-									..InsertNewLight({name='NeonRight3',tx=12.7, ty=4.5, tz=5.2, i=15000})
-									..InsertNewLight({name='NeonRight4',tx=5.0, ty=4.5, tz=12.4, i=15000})
+									..InsertNewLight({name='NeonRight1',tx=5.0, ty=4.5, tz=-12.4, i=2.25})
+									..InsertNewLight({name='NeonRight2',tx=12.7, ty=4.5, tz=-5.2, i=2.25})
+									..InsertNewLight({name='NeonRight3',tx=12.7, ty=4.5, tz=5.2, i=2.25})
+									..InsertNewLight({name='NeonRight4',tx=5.0, ty=4.5, tz=12.4, i=2.25})
 									
 								-- White Floor Lights - left side
-									..InsertNewLight({name='Floor0Left1',tx=-5.42, ty=1.97, tz=-13.06, i=4000})
-									..InsertNewLight({name='Floor0Left2',tx=-13.06, ty=1.97, tz=-5.42, i=4000})
-									..InsertNewLight({name='Floor0Left3',tx=-13.06, ty=1.97, tz=5.42, i=4000})
-									..InsertNewLight({name='Floor0Left4',tx=-5.42, ty=1.97, tz=13.06, i=4000})
+									..InsertNewLight({name='Floor0Left1',tx=-5.42, ty=1.97, tz=-13.06, i=0.16})
+									..InsertNewLight({name='Floor0Left2',tx=-13.06, ty=1.97, tz=-5.42, i=0.16})
+									..InsertNewLight({name='Floor0Left3',tx=-13.06, ty=1.97, tz=5.42, i=0.16})
+									..InsertNewLight({name='Floor0Left4',tx=-5.42, ty=1.97, tz=13.06, i=0.16})
 								-- White Floor Lights - right side
-									..InsertNewLight({name='Floor0Right1',tx=5.42, ty=1.97, tz=-13.06, i=4000})
-									..InsertNewLight({name='Floor0Right2',tx=13.06, ty=1.97, tz=-5.42, i=4000})
-									..InsertNewLight({name='Floor0Right3',tx=13.06, ty=1.97, tz=5.42, i=4000})
-									..InsertNewLight({name='Floor0Right4',tx=5.42, ty=1.97, tz=13.06, i=4000})
+									..InsertNewLight({name='Floor0Right1',tx=5.42, ty=1.97, tz=-13.06, i=0.16})
+									..InsertNewLight({name='Floor0Right2',tx=13.06, ty=1.97, tz=-5.42, i=0.16})
+									..InsertNewLight({name='Floor0Right3',tx=13.06, ty=1.97, tz=5.42, i=0.16})
+									..InsertNewLight({name='Floor0Right4',tx=5.42, ty=1.97, tz=13.06, i=0.16})
 									
 								-- White Floor Lights - left side
-									..InsertNewLight({name='Floor1Left1',tx=-6.42, ty=5.97, tz=-15.5, i=4000})
-									..InsertNewLight({name='Floor1Left2',tx=-15.5, ty=5.97, tz=-6.42, i=4000})
-									..InsertNewLight({name='Floor1Left3',tx=-15.5, ty=5.97, tz=6.42, i=4000})
-									..InsertNewLight({name='Floor1Left4',tx=-6.42, ty=5.97, tz=15.5, i=4000})
+									..InsertNewLight({name='Floor1Left1',tx=-6.42, ty=5.97, tz=-15.5, i=0.16})
+									..InsertNewLight({name='Floor1Left2',tx=-15.5, ty=5.97, tz=-6.42, i=0.16})
+									..InsertNewLight({name='Floor1Left3',tx=-15.5, ty=5.97, tz=6.42, i=0.16})
+									..InsertNewLight({name='Floor1Left4',tx=-6.42, ty=5.97, tz=15.5, i=0.16})
 								-- White Floor Lights - right side
-									..InsertNewLight({name='Floor1Right1',tx=6.42, ty=5.97, tz=-15.5, i=4000})
-									..InsertNewLight({name='Floor1Right2',tx=15.5, ty=5.97, tz=-6.42, i=4000})
-									..InsertNewLight({name='Floor1Right3',tx=15.5, ty=5.97, tz=6.42, i=4000})
-									..InsertNewLight({name='Floor1Right4',tx=6.42, ty=5.97, tz=15.5, i=4000})
+									..InsertNewLight({name='Floor1Right1',tx=6.42, ty=5.97, tz=-15.5, i=0.16})
+									..InsertNewLight({name='Floor1Right2',tx=15.5, ty=5.97, tz=-6.42, i=0.16})
+									..InsertNewLight({name='Floor1Right3',tx=15.5, ty=5.97, tz=6.42, i=0.16})
+									..InsertNewLight({name='Floor1Right4',tx=6.42, ty=5.97, tz=15.5, i=0.16})
 						},							
 					},
 				},
@@ -240,7 +240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "MPLIGHT", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"3000.0"},  --original : 10000.0
+								{"Value",	"0.09"},  --original : 10000.0
 							},
 						},	
 						{
@@ -295,8 +295,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 									..InsertNewLight({name='pointLight70e',tx=22.66565, ty=2.6848, tz=-10.3617, g=0.851, b=0.745})
 									..InsertNewLight({name='pointLight70f',tx=22.66565, ty=0.0, tz=-4.36167, g=0.851, b=0.745})
 									
-									..InsertNewLight({name='pointLight8b',tx=8.0, ty=12.128, tz=48.882, i=27000, r=0.947, g=0.59, b=0.306})
-									..InsertNewLight({name='pointLight8b',tx=0.0, ty=12.128, tz=48.882, i=27000, r=0.947, g=0.59, b=0.306}),
+									..InsertNewLight({name='pointLight8b',tx=8.0, ty=12.128, tz=48.882, i=7.29, r=0.947, g=0.59, b=0.306})
+									..InsertNewLight({name='pointLight8b',tx=0.0, ty=12.128, tz=48.882, i=7.29, r=0.947, g=0.59, b=0.306}),
 						},	
 						{  
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight7501",}, -- light in the middle of left stairs
@@ -311,7 +311,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "lightorange1", "Name", "INTENSITY"}, 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"40000.0"},  --original : 40000
+								{"Value",	"16.0"},  --original : 40000
 							},
 						},	
 						{
@@ -350,7 +350,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight8", "Name", "INTENSITY"}, 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"27000.0"},  --original : 40000
+								{"Value",	"7.29"},  --original : 40000
 							},
 						},					
 					},
@@ -527,7 +527,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "BLUEG", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"70000.0"},  --original : 50000
+								{"Value",	"49.0"},  --original : 50000
 							},
 						},	
 						{
@@ -555,7 +555,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "BLUE", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"70000.0"},  --original : 50000
+								{"Value",	"49.0"},  --original : 50000
 							},
 						},	
 						{
@@ -589,7 +589,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"20000.0"},  --original : 40000
+								{"Value",	"4.0"},  --original : 40000
 							},
 						},							
 					},
@@ -602,7 +602,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"7000.0"},  --original : 10000
+								{"Value",	"0.49"},  --original : 10000
 							},
 						},						
 					},
@@ -624,7 +624,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight8"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='NewLight', ty=2.2, f='linear', i=6000, r=1.0, g=0.8, b=0.8}),  
+							["ADD"] = InsertNewLight({name='NewLight', ty=2.2, f="1.0", i=0.36, r=1.0, g=0.8, b=0.8}),  
 						},	
 						{ -- remove original light
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight8",},
@@ -737,7 +737,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"30000.0"},  --original : 300000
+								{"Value",	"9.0"},  --original : 300000
 							},
 						},						
 					},
@@ -764,7 +764,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight25", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2000.0"},  --original : 5000.0
+								{"Value",	"0.04"},  --original : 5000.0
 							},
 						},
 						{
@@ -785,7 +785,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight26", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2000.0"},  --original : 5000.0
+								{"Value",	"0.04"},  --original : 5000.0
 							},
 						},	
 						{
@@ -806,7 +806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight27", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2000.0"},  --original : 5000.0
+								{"Value",	"0.04"},  --original : 5000.0
 							},
 						},	
 						{
@@ -827,7 +827,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight28", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2000.0"},  --original : 4000.0
+								{"Value",	"0.04"},  --original : 4000.0
 							},
 						},							
 					},
@@ -854,7 +854,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight25", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2000.0"},  --original : 6000.0
+								{"Value",	"0.04"},  --original : 6000.0
 							},
 						},
 						{
@@ -875,7 +875,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight26", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2000.0"},  --original : 6000.0
+								{"Value",	"0.04"},  --original : 6000.0
 							},
 						},	
 						{
@@ -896,7 +896,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight27", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2000.0"},  --original : 6000.0
+								{"Value",	"0.04"},  --original : 6000.0
 							},
 						},	
 						{
@@ -917,7 +917,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight28", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2000.0"},  --original : 6000.0
+								{"Value",	"0.04"},  --original : 6000.0
 							},
 						},							
 					},
@@ -930,7 +930,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"6000.0"},  --original : 30000.0
+								{"Value",	"0.36"},  --original : 30000.0
 							},
 						},
 						{
@@ -961,7 +961,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "Bed"}, 
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='newLight1', ty=1.0, f = 'linear', i=2500, g=0.98, b=0.98}),  
+							["ADD"] = InsertNewLight({name='newLight1', ty=1.0, f = "1.0", i=0.000625, g=0.98, b=0.98}),  
 						},
 					},
 				},	
@@ -992,14 +992,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "FALLOFF"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"linear"},  --original : quadratic
+								{"Value",	"1.0"},  --original : quadratic
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"21000.0"},  --original : 3000
+								{"Value",	"4.41"},  --original : 3000
 							},
 						},							
 					}
@@ -1028,7 +1028,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "WallFlagLight", "Name", "FALLOFF"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"linear"},  --original : quadratic
+								{"Value",	"1.0"},  --original : quadratic
 							},
 						},								
 					}
@@ -1048,7 +1048,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"1000.0"},  --original : 8000.0
+								{"Value",	"0.01"},  --original : 8000.0
 							},
 						},								
 					}
@@ -1072,7 +1072,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight2", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"1000.0"},  --original : 9000.0
+								{"Value",	"0.01"},  --original : 9000.0
 							},
 						},	
 						{
@@ -1113,7 +1113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"1000.0"},  --original : 9000.0
+								{"Value",	"0.01"},  --original : 9000.0
 							},
 						},	
 						{
@@ -1139,7 +1139,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "Glow"},  --upper blue light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='BackLight', ty=0.7, tz=-0.5, i=2000}),  
+							["ADD"] = InsertNewLight({name='BackLight', ty=0.7, tz=-0.5, i=0.0004}),  
 						},
 						{  
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"},
@@ -1153,7 +1153,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"5000.0"},  --original : 10000.0
+								{"Value",	"0.25"},  --original : 10000.0
 							},
 						},	
 						{
@@ -1186,7 +1186,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "SUB1WeaponTechStation"},  --back orange light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='BackLight', ty=0.7, tz=-0.5, i=2000, r=1.0, g=1.0, b=1.0}),  
+							["ADD"] = InsertNewLight({name='BackLight', ty=0.7, tz=-0.5, i=0.0004, r=1.0, g=1.0, b=1.0}),  
 						},
 						{  
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6"},
@@ -1203,7 +1203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"5000.0"},  --original : 15000.0
+								{"Value",	"0.25"},  --original : 15000.0
 							},
 						},							
 					}
@@ -1230,7 +1230,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight9", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"1000.0"},  --original : 8000.0
+								{"Value",	"0.01"},  --original : 8000.0
 							},
 						},	
 						{
@@ -1251,7 +1251,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight8", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2000.0"},  --original : 8000.0
+								{"Value",	"0.04"},  --original : 8000.0
 							},
 						},						
 					}
@@ -1271,7 +1271,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 8000.0
+								{"Value",	"0.0625"},  --original : 8000.0
 							},
 						},	
 						{
@@ -1285,14 +1285,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4b", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 8000.0
+								{"Value",	"0.0625"},  --original : 8000.0
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4b", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 8000.0
+								{"Value",	"0.0625"},  --original : 8000.0
 							},
 						},	
 						{
@@ -1306,7 +1306,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4v", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 8000.0
+								{"Value",	"0.0625"},  --original : 8000.0
 							},
 						},
 						{  -- TEAL SMALL LIGHT
@@ -1320,7 +1320,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4c", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"5000.0"},  --original : 8000.0
+								{"Value",	"0.25"},  --original : 8000.0
 							},
 						},
 						{
@@ -1341,7 +1341,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4x", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 8000.0
+								{"Value",	"0.0625"},  --original : 8000.0
 							},
 						},	
 						{
@@ -1355,7 +1355,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4xs", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 8000.0
+								{"Value",	"0.0625"},  --original : 8000.0
 							},
 						},	
 						{
@@ -1369,7 +1369,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4xse", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 8000.0
+								{"Value",	"0.0625"},  --original : 8000.0
 							},
 						},	
 						{
@@ -1383,7 +1383,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4xsee", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 8000.0
+								{"Value",	"0.0625"},  --original : 8000.0
 							},
 						},			
 						{
@@ -1397,7 +1397,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4xseee", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 9000.0
+								{"Value",	"0.0625"},  --original : 9000.0
 							},
 						},							
 					},
@@ -1417,7 +1417,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"5000.0"},  --original : 8000.0
+								{"Value",	"0.25"},  --original : 8000.0
 							},
 						},	
 						{
@@ -1444,7 +1444,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 5000.0
+								{"Value",	"0.0625"},  --original : 5000.0
 							},
 						},							
 						{
@@ -1458,7 +1458,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4x", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 5000.0
+								{"Value",	"0.0625"},  --original : 5000.0
 							},
 						},
 						{
@@ -1472,7 +1472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4c", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 5000.0
+								{"Value",	"0.0625"},  --original : 5000.0
 							},
 						},	
 						{
@@ -1486,7 +1486,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4v", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 5000.0
+								{"Value",	"0.0625"},  --original : 5000.0
 							},
 						},
 						{
@@ -1500,7 +1500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4b", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 5000.0
+								{"Value",	"0.0625"},  --original : 5000.0
 							},
 						},							
 					},
@@ -1518,8 +1518,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{  
 							["SPECIAL_KEY_WORDS"]  = {"Name", "PotLOD3"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TopLight', ty=0.4, rx=90, fov=180, i=4000, r=0.3, g=0.7}) -- creates a new LOD independant Top blue light
-									..InsertNewLight({name='TealLight', ty=0.2, rx=-90, fov=180, i=3000, r=0.0, g=1.0; b=0.965}), -- creates a new LOD independant Bottom teal light 
+							["ADD"] = InsertNewLight({name='TopLight', ty=0.4, rx=90, fov=180, i=0.16, r=0.3, g=0.7}) -- creates a new LOD independant Top blue light
+									..InsertNewLight({name='TealLight', ty=0.2, rx=-90, fov=180, i=0.0009, r=0.0, g=1.0; b=0.965}), -- creates a new LOD independant Bottom teal light 
 						},				
 					},
 				},
@@ -1536,7 +1536,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{  --create a new LOD independant light
 							["SPECIAL_KEY_WORDS"]  = {"Name", "PotLOD3"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TopTealLight', ty=0.1,tz=-0.393418, rx=90, fov=180, i=4000, r=0.0, g=1.0; b=0.965}),  
+							["ADD"] = InsertNewLight({name='TopTealLight', ty=0.1,tz=-0.393418, rx=90, fov=180, i=0.16, r=0.0, g=1.0; b=0.965}),  
 						},
 					},
 				},
@@ -1556,8 +1556,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "Pot1LOD3"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TopBlueLight', ty=0.2, rx=90, fov=180, i=400, r=0.0, g=0.6, b=1.0})  -- top blue light
-									..InsertNewLight({name='TealLight', ty=5.0, rx=-90, sx=0.035, sy=0.035, sz=0.035, fov=180, i=2500, r=1.0, g=0.93, b=0.6}),  -- bottom teal Light
+							["ADD"] = InsertNewLight({name='TopBlueLight', ty=0.2, rx=90, fov=180, i=0.0016, r=0.0, g=0.6, b=1.0})  -- top blue light
+									..InsertNewLight({name='TealLight', ty=5.0, rx=-90, sx=0.035, sy=0.035, sz=0.035, fov=180, i=0.000625, r=1.0, g=0.93, b=0.6}),  -- bottom teal Light
 						},				
 
 
@@ -1565,7 +1565,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "Pot2LOD3"},  -- top blue light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TopBlueLight', ty=35.0, rx=90, sx=0.035, sy=0.035, sz=0.035, fov=180, fr=2.0, i=5000, r=0.0, g=0.300, b=0.7}),  
+							["ADD"] = InsertNewLight({name='TopBlueLight', ty=35.0, rx=90, sx=0.035, sy=0.035, sz=0.035, fov=180, fr=2.0, i=0.25, r=0.0, g=0.300, b=0.7}),  
 						},					
 						
 
@@ -1573,8 +1573,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "Pot3LOD3"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TopBlueLight', ty=30.0, rx=90, ry=0, rz=-90, sx=0.035, sy=0.035, sz=0.035, fov=180, i=4000, r=0.0, g=0.6, b=1.0}) -- top blue light 
-									..InsertNewLight({name='YellowLight', ty=5.0, rx=-90, sx=0.035, sy=0.035, sz=0.035, fov=180, i=8000, r=1.0, g=0.93, b=0.6}),  -- Bottom yellow Light
+							["ADD"] = InsertNewLight({name='TopBlueLight', ty=30.0, rx=90, ry=0, rz=-90, sx=0.035, sy=0.035, sz=0.035, fov=180, i=0.16, r=0.0, g=0.6, b=1.0}) -- top blue light 
+									..InsertNewLight({name='YellowLight', ty=5.0, rx=-90, sx=0.035, sy=0.035, sz=0.035, fov=180, i=0.64, r=1.0, g=0.93, b=0.6}),  -- Bottom yellow Light
 						},					
 					},
 				},
@@ -1588,7 +1588,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 	= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2000.0"},  --original : 5000.0
+								{"Value",	"0.04"},  --original : 5000.0
 							},
 						},													
 					},
@@ -1608,14 +1608,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "FALLOFF"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"linear"},  --original : quadratic
+								{"Value",	"1.0"},  --original : quadratic
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"25000.0"},  
+								{"Value",	"6.25"},  
 							},
 						},						
 					},
@@ -1639,7 +1639,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LightsOn3LOD3"},  --create a new LOD independant light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='newLight', ty=2.681, tz =-0.8, fov=120, f = 'linear', i=10000}),  
+							["ADD"] = InsertNewLight({name='newLight', ty=2.681, tz =-0.8, fov=120, f = "1.0", i=1}),  
 						},										
 					},
 				},
@@ -1658,7 +1658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"5000.0"},  --original : 5000.0
+								{"Value",	"0.25"},  --original : 5000.0
 							},
 						},	
 						
@@ -1666,7 +1666,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{  
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='NewLight', ty=0.8, rx=-90, fov=180, i=9000, r=1.0, g=0.75, b=0.0}),  
+							["ADD"] = InsertNewLight({name='NewLight', ty=0.8, rx=-90, fov=180, i=0.81, r=1.0, g=0.75, b=0.0}),  
 						},	
 						{  
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1B",},
@@ -1677,7 +1677,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{  
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B1s"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='NewLight', ty=0.7, rx=-90, fov=180, i=9000, r=0.3823, g=0.9286, b=1.0}),  
+							["ADD"] = InsertNewLight({name='NewLight', ty=0.7, rx=-90, fov=180, i=0.81, r=0.3823, g=0.9286, b=1.0}),  
 						},	
 						{  
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1B1s",},
@@ -1696,7 +1696,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B1s1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"5000.0"},  --original : 4000.0
+								{"Value",	"0.25"},  --original : 4000.0
 							},
 						},							
 					},
@@ -1710,7 +1710,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Type", "COLLISION"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='WhiteLight', ty=0.30, i=3000}), 
+							["ADD"] = InsertNewLight({name='WhiteLight', ty=0.30, i=0.0009}), 
 						},
 					},
 				},  
@@ -1722,9 +1722,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TopLight', ty=0.40, tz=-0.327, i=3000, r=0.0, g=0.6, b=1.0})  --top blue light
-									..InsertNewLight({name='MiddleLight', tz=-0.327, i=3000, r=0.0, g=0.6, b=1.0})  --middle blue light
-									..InsertNewLight({name='BottomLight', ty=-0.40, tz=-0.327, i=3000, r=0.1, g=0.6, b=1.0}),  --bottom blue light
+							["ADD"] = InsertNewLight({name='TopLight', ty=0.40, tz=-0.327, i=0.0009, r=0.0, g=0.6, b=1.0})  --top blue light
+									..InsertNewLight({name='MiddleLight', tz=-0.327, i=0.0009, r=0.0, g=0.6, b=1.0})  --middle blue light
+									..InsertNewLight({name='BottomLight', ty=-0.40, tz=-0.327, i=0.0009, r=0.1, g=0.6, b=1.0}),  --bottom blue light
 						},
 						{  -- Removes original light
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1",},
@@ -1740,7 +1740,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1sd", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"3000.0"},  --original : 10000.0
+								{"Value",	"0.09"},  --original : 10000.0
 							},
 						},								
 					},
@@ -1753,7 +1753,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1s", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"3000.0"},  --original : 10000.0
+								{"Value",	"0.09"},  --original : 10000.0
 							},
 						},								
 					},
@@ -1765,7 +1765,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "RoofTop0LOD3"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight1', i=10000, r=0}),
+							["ADD"] = InsertNewLight({name='pointLight1', i=1, r=0}),
 						},
 					},
 				}, 
@@ -1776,7 +1776,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "BRoofTop1LOD3"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight1', i=10000, r=0}),
+							["ADD"] = InsertNewLight({name='pointLight1', i=1, r=0}),
 						},
 					},
 				}, 
@@ -1787,7 +1787,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "BRoofTop3LOD3"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight1', i=10000, r=0}),
+							["ADD"] = InsertNewLight({name='pointLight1', i=1, r=0}),
 						},
 					},
 				}, 
@@ -1798,7 +1798,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "BRoofTop5LOD3"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight1', i=10000, r=0}),
+							["ADD"] = InsertNewLight({name='pointLight1', i=1, r=0}),
 						},
 					},
 				}, 
@@ -1809,7 +1809,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "BRTop6LOD3"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight1', i=10000, r=0}),
+							["ADD"] = InsertNewLight({name='pointLight1', i=1, r=0}),
 						},
 					},
 				}, 
@@ -1820,7 +1820,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "GlassLOD2"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight1', i=10000}),
+							["ADD"] = InsertNewLight({name='pointLight1', i=1}),
 						},
 					},
 				}, 
@@ -1831,7 +1831,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "Glass_LOD3"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight1', i=10000}),
+							["ADD"] = InsertNewLight({name='pointLight1', i=1}),
 						},
 					},
 				}, 
@@ -1842,7 +1842,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "GlassLOD3"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight1', i=10000}),
+							["ADD"] = InsertNewLight({name='pointLight1', i=1}),
 						},
 					},
 				}, 
@@ -1853,7 +1853,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "polySurface468LOD3"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight1', i=10000}),
+							["ADD"] = InsertNewLight({name='pointLight1', i=1}),
 						},
 					},
 				}, 
@@ -1864,7 +1864,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "pSphere33LOD3"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight1', i=10000}),
+							["ADD"] = InsertNewLight({name='pointLight1', i=1}),
 						},
 					},
 				}, 
@@ -1875,7 +1875,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "Base2LOD3"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight1', i=10000}),
+							["ADD"] = InsertNewLight({name='pointLight1', i=1}),
 						},
 					},
 				}, 				
@@ -1894,7 +1894,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"10000.0"},  --original : 1000.0
+								{"Value",	"1.0"},  --original : 1000.0
 							},
 						},	]]--
 						{
@@ -1936,7 +1936,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"20000.0"},  --original : 1000.0
+								{"Value",	"4.0"},  --original : 1000.0
 							},
 						},							
 					},
@@ -1955,7 +1955,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["LINE_OFFSET"] = "+2",
 							["REPLACE_TYPE"] = "",
 							["ADD"] = [[      <Property name="Children" >
-]]..InsertNewLight({name='pointLight1', ty=0.2, i=20000})..[[ 
+]]..InsertNewLight({name='pointLight1', ty=0.2, i=0.00040})..[[ 
 </Property>]]
 						},
 					},
@@ -1987,7 +1987,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"25000.0"},  --original : 30000
+								{"Value",	"6.25"},  --original : 30000
 							},
 						},	
 						{
@@ -2022,16 +2022,23 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "FALLOFF"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"linear"},  --original : quadratic
+								{"Value",	"1.0"},  --original : quadratic
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"30000.0"},  --original : 5000.0
+								{"Value",	"9.0"},  --original : 5000.0
 							},
-						},							
+						},		
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "RADIUS"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"30.0"},  --original : 3.16
+							},
+						},						
 					},
 				},
 				{
@@ -2058,16 +2065,23 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "FALLOFF"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"linear"},  --original : quadratic
+								{"Value",	"1.0"},  --original : quadratic
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"20000.0"},  --original : 5000.0
+								{"Value",	"4.0"},  --original : 5000.0
 							},
-						},							
+						},		
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "RADIUS"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"30.0"},  --original : 3.16
+							},
+						},						
 					},
 				},
 				{
@@ -2086,13 +2100,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight2", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"15000.0"},  --original : 5000.0
+								{"Value",	"2.25"},  --original : 5000.0
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight2"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='PointLight2B', ty=2.142282, tz=-0.5, i=15000}),	
+							["ADD"] = InsertNewLight({name='PointLight2B', ty=2.142282, tz=-0.5, i=2.25}),	
 						},							
 					},
 				},
@@ -2111,13 +2125,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"40000.0"},  --original : 100000.0 
+								{"Value",	"16.0"},  --original : 100000.0 
 							},
 						},								
 						{
 							["SPECIAL_KEY_WORDS"] = {"Type", "LIGHT"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='Light2', ty=9.3, i=40000, g=0.642, b=0.0}),
+							["ADD"] = InsertNewLight({name='Light2', ty=9.3, i=0.160, g=0.642, b=0.0}),
 						},
 					},
 				},
@@ -2136,13 +2150,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"40000.0"},  --original : 100000.0 
+								{"Value",	"16.0"},  --original : 100000.0 
 							},
 						},								
 						{
 							["SPECIAL_KEY_WORDS"] = {"Type", "LIGHT"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='Light2', ty=7, i=40000, g=0.642, b=0.0}),
+							["ADD"] = InsertNewLight({name='Light2', ty=7, i=0.160, g=0.642, b=0.0}),
 						},
 					},
 				},
@@ -2155,7 +2169,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "ABANDLIGHT4"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='ScreenLight', ty=2.3, i=12000, r=0.5, g=0.8, b=1.0}),
+							["ADD"] = InsertNewLight({name='ScreenLight', ty=2.3, i=1.44, r=0.5, g=0.8, b=1.0}),
 						},
 					},
 				},
@@ -2176,7 +2190,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "ABANDLIGHT2", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"10000.0"},  --original : 7000.0 
+								{"Value",	"1.0"},  --original : 7000.0 
 							},
 						},								
 						{
@@ -2211,7 +2225,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["LINE_OFFSET"] = 0,
 							--["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							--["SECTION_UP"] = 1,
-							["ADD"] = InsertNewLight({name='Light1', ty=2, f='linear', i=10000}),
+							["ADD"] = InsertNewLight({name='Light1', ty=2, f="1.0", i=1}),
 						},
 					},
 				},
@@ -2223,7 +2237,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Children"},
 							["LINE_OFFSET"] = 0,
 							--["SECTION_UP"] = 1,
-							["ADD"] = InsertNewLight({name='Light1', ty=1.8, i=30000, g=0.300, b=0.0}),
+							["ADD"] = InsertNewLight({name='Light1', ty=1.8, i=0.00090, g=0.300, b=0.0}),
 						},
 					},
 				},	
@@ -2234,7 +2248,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Children"},
 							["LINE_OFFSET"] = 0,
-							["ADD"] = InsertNewLight({name='spotLight7', ty=7.0, rx=-90, fov=240, i=35000}),
+							["ADD"] = InsertNewLight({name='spotLight7', ty=7.0, rx=-90, fov=240, i=12.25}),
 						},
 					},
 				},
@@ -2258,7 +2272,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 	= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"Value",	"linear"},  --original : quadratic
+								{"Value",	"1.0"},  --original : quadratic
 							},
 						},	
 						{
@@ -2266,7 +2280,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 	= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"Value",	"1500.0"},  --original : 8000.0
+								{"Value",	"0.0225"},  --original : 8000.0
 							},
 						},	
 					},
@@ -2287,14 +2301,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "FALLOFF"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"Value",	"linear"},  --original : quadratic
+								{"Value",	"1.0"},  --original : quadratic
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"Value",	"1500.0"},  --original : 5000.0
+								{"Value",	"0.0225"},  --original : 5000.0
 							},
 						},	
 					},
@@ -2318,7 +2332,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LightLOD3"}, 
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='RightLight1',tx=0, ty=0, tz=-0.3, i=5000}),
+							["ADD"] = InsertNewLight({name='RightLight1',tx=0, ty=0, tz=-0.3, i=0.25}),
 						},						
 					},
 				},	
@@ -2348,7 +2362,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "WallFlagLight", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"20000.0"},  --original : 15000.0
+								{"Value",	"4.0"},  --original : 15000.0
 							},
 						},
 					},
@@ -2380,7 +2394,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "WallFlagLight", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"40000.0"},  --original : 33972.113281
+								{"Value",	"16.0"},  --original : 33972.113281
 							},
 						},
 					},
@@ -2409,7 +2423,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2000.0"},  --original : 10000
+								{"Value",	"0.04"},  --original : 10000
 							},
 						},
 						{
@@ -2436,21 +2450,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "DeskLOD0", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"3000.0"},  --original : 5000.0
+								{"Value",	"0.09"},  --original : 5000.0
 							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "DeskLOD1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.0"},  --original : 5000.0
+								{"Value",	"0.0625"},  --original : 5000.0
 							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "DeskLOD2", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2000.0"},  --original : 3000.0
+								{"Value",	"0.04"},  --original : 3000.0
 							},
 						},
 					},
@@ -2463,21 +2477,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"50000.0"},  --original : 100000.0
+								{"Value",	"25.0"},  --original : 100000.0
 							},
 						},		
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight7", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"50000.0"},  --original : 100000.0
+								{"Value",	"25.0"},  --original : 100000.0
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight8", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"50000.0"},  --original : 100000.0
+								{"Value",	"25.0"},  --original : 100000.0
 							},
 						},							
 					},
@@ -2490,21 +2504,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"50000.0"},  --original : 100000.0
+								{"Value",	"25.0"},  --original : 100000.0
 							},
 						},		
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight7", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"50000.0"},  --original : 100000.0
+								{"Value",	"25.0"},  --original : 100000.0
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight8", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"50000.0"},  --original : 100000.0
+								{"Value",	"25.0"},  --original : 100000.0
 							},
 						},							
 					},
@@ -2521,7 +2535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight2","Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"10000.0"},  --original : 8500
+								{"Value",	"1.0"},  --original : 8500
 							},
 						},
 						{
@@ -2600,7 +2614,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight317", "Name", "INTENSITY"},  -- TELEPORTER
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"50000.0"},  --original : 70000.0 
+								{"Value",	"25.0"},  --original : 70000.0 
 							},
 						},	
 						{
@@ -2613,20 +2627,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight317"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight317b', tx=-49.132, ty=8.78, tz=139.64, ry=180, fov=160, i=50000, r=0.0, g=0.8}),					
+							["ADD"] = InsertNewLight({name='pointLight317b', tx=-49.132, ty=8.78, tz=139.64, ry=180, fov=160, i=0.250, r=0.0, g=0.8}),					
 						},					
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight5", "Name", "INTENSITY"},  --Main teal light
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"38000.0"},  --original : 60000.0 
+								{"Value",	"14.44"},  --original : 60000.0 
 							},
 						},		
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight5"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight5b', ty=17.428, tz=115.92, f='linear', i=38000, r=0.627, g=0.91})	
-									..InsertNewLight({name='pointLight5c', ty=17.428, tz=195.92, f='linear', i=38000, r=0.627, g=0.91}),	
+							["ADD"] = InsertNewLight({name='pointLight5b', ty=17.428, tz=115.92, f="1.0", i=14.44, r=0.627, g=0.91})	
+									..InsertNewLight({name='pointLight5c', ty=17.428, tz=195.92, f="1.0", i=14.44, r=0.627, g=0.91}),	
 						},							
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftSectionModule", "Name", "pointLight116"},  --wings white lights
@@ -2641,7 +2655,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftSectionModule", "Name", "pointLight116", "Name", "INTENSITY"},  
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"55000.0"},  
+								{"Value",	"30.25"},  
 							},
 						},	
 						{
@@ -2657,28 +2671,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "RightSectionModule", "Name", "pointLight116", "Name", "INTENSITY"},  
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"55000.0"},  
+								{"Value",	"30.25"},  
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftSectionModule", "Name", "pointLight116"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight116b',tx=49, ty=10.7, tz=169.5, ry=180, i=55000}),
+							["ADD"] = InsertNewLight({name='pointLight116b',tx=49, ty=10.7, tz=169.5, ry=180, i=30.25}),
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftSectionModule", "Name", "pointLight311"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight311b',tx=49, ty=10.7, tz=154.5, ry=180, i=55000}),
+							["ADD"] = InsertNewLight({name='pointLight311b',tx=49, ty=10.7, tz=154.5, ry=180, i=30.25}),
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "RightSectionModule", "Name", "pointLight116"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight116b',tx=-49, ty=10.7, tz=169.5, ry=180, i=55000}),
+							["ADD"] = InsertNewLight({name='pointLight116b',tx=-49, ty=10.7, tz=169.5, ry=180, i=30.25}),
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "RightSectionModule", "Name", "pointLight311"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight311b',tx=-49, ty=10.7, tz=154.5, ry=180, i=55000}),
+							["ADD"] = InsertNewLight({name='pointLight311b',tx=-49, ty=10.7, tz=154.5, ry=180, i=30.25}),
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftSectionModule", "Name", "pointLight311"},
@@ -2693,7 +2707,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftSectionModule", "Name", "pointLight311", "Name", "INTENSITY"},  
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"55000.0"},  
+								{"Value",	"30.25"},  
 							},
 						},	
 						{
@@ -2709,7 +2723,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "RightSectionModule", "Name", "pointLight311", "Name", "INTENSITY"},  
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"55000.0"},  
+								{"Value",	"30.25"},  
 							},
 						},	
 						{
@@ -2725,7 +2739,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftSectionModule", "Name", "pointLight310", "Name", "INTENSITY"},  
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"55000.0"},  
+								{"Value",	"30.25"},  
 							},
 						},							
 						{
@@ -2741,24 +2755,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "RightSectionModule", "Name", "pointLight310", "Name", "INTENSITY"},  
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"55000.0"},  
+								{"Value",	"30.25"},  
 							},
 						},								
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftPlatformLight"},  --middle lights
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='LeftLight1',tx=36, ty=10, tz=145, rx=-90, i=28000})
-									..InsertNewLight({name='LeftLight2',tx=39.5, ty=10, tz=145, rx=-90, i=28000})
-									..InsertNewLight({name='LeftLight3',tx=36, ty=10, tz=160, rx=-90, i=28000})
-									..InsertNewLight({name='LeftLight4',tx=39.5, ty=10, tz=160, rx=-90, i=28000}),
+							["ADD"] = InsertNewLight({name='LeftLight1',tx=36, ty=10, tz=145, rx=-90, i=7.84})
+									..InsertNewLight({name='LeftLight2',tx=39.5, ty=10, tz=145, rx=-90, i=7.84})
+									..InsertNewLight({name='LeftLight3',tx=36, ty=10, tz=160, rx=-90, i=7.84})
+									..InsertNewLight({name='LeftLight4',tx=39.5, ty=10, tz=160, rx=-90, i=7.84}),
 						},		
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "RightPlatformLight"},  --middle lights
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='RightLight1',tx=-36, ty=10, tz=145, rx=-90, i=28000})
-									..InsertNewLight({name='RightLight2',tx=-39.5, ty=10, tz=145, rx=-90, i=28000})
-									..InsertNewLight({name='RightLight3',tx=-36, ty=10, tz=160, rx=-90, i=28000})
-									..InsertNewLight({name='RightLight4',tx=-39.5, ty=10, tz=160, rx=-90, i=28000}),
+							["ADD"] = InsertNewLight({name='RightLight1',tx=-36, ty=10, tz=145, rx=-90, i=7.84})
+									..InsertNewLight({name='RightLight2',tx=-39.5, ty=10, tz=145, rx=-90, i=7.84})
+									..InsertNewLight({name='RightLight3',tx=-36, ty=10, tz=160, rx=-90, i=7.84})
+									..InsertNewLight({name='RightLight4',tx=-39.5, ty=10, tz=160, rx=-90, i=7.84}),
 						},							
 					},
 				},
@@ -2785,7 +2799,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "TunnelLOD3"},  --create a new LOD independant light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='newLight', ty=-0.316384, ry =-180, i=60000, r=0.0, g=0.6923}),  
+							["ADD"] = InsertNewLight({name='newLight', ty=-0.316384, ry =-180, i=36, r=0.0, g=0.6923}),  
 						},
 					},
 				},
@@ -2823,13 +2837,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 	= "ALL",  -- all lods
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"83000.0"},  
+								{"Value",	"69.0"},  
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight7"},  --counter teal light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='spotLight7b',tx=0.1, ty=-5.46, tz=2.267, rx=90, sx=20, sy=20, sz=20, fov=180, f='quadratic', i=80000, r=0.6, g=1.0}),  --0.0, 0.828
+							["ADD"] = InsertNewLight({name='spotLight7b',tx=0.1, ty=-5.46, tz=2.267, rx=90, sx=20, sy=20, sz=20, fov=180, f='2.0', i=64, r=0.6, g=1.0}),  --0.0, 0.828
 						},						
 					},
 				},		
@@ -2840,7 +2854,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{  -- Create counter red light
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LandingPadLight"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='ReverseLight',tx=0.1, ty=-5.46, tz=2.267, rx=90, sx=20, sy=20, sz=20, fov=180, f='quadratic', i=90000, g=0.0, b=0.0}),
+							["ADD"] = InsertNewLight({name='ReverseLight',tx=0.1, ty=-5.46, tz=2.267, rx=90, sx=20, sy=20, sz=20, fov=180, f='2.0', i=0.810, g=0.0, b=0.0}),
 						},	
 						{  -- ORIGINAL TOP RED LIGHT
 							["SPECIAL_KEY_WORDS"] = {"Name", "LandingPadLight",},
@@ -2881,7 +2895,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "joint1"}, 
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='newLight',y=0.5, i=15000, g=0.60, b=0.0}),  
+							["ADD"] = InsertNewLight({name='newLight',y=0.5, i=2.25, g=0.60, b=0.0}),  
 						},
 					},
 				},
@@ -2894,7 +2908,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight2", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"4000.0"},  --original : 1.0
+								{"Value",	"0.16"},  --original : 1.0
 							},
 						},
 						{  
@@ -2908,7 +2922,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"8000.0"},  --original : 1.0
+								{"Value",	"0.64"},  --original : 1.0
 							},
 						},
 						{
@@ -2941,8 +2955,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "Light"}, 
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='newtealLight1',tx=0.0, ty=1.0, tz=0.1, ry=180, fov=145, i=5000,r=0.45, g=0.87, b=1.0}) 
-									..InsertNewLight({name='newtealLight2',tx=0.0, ty=1.0, tz=-0.1, fov=145, i=5000, r=0.45, g=0.87, b=1.0}),  
+							["ADD"] = InsertNewLight({name='newtealLight1',tx=0.0, ty=1.0, tz=0.1, ry=180, fov=145, i=0.25,r=0.45, g=0.87, b=1.0}) 
+									..InsertNewLight({name='newtealLight2',tx=0.0, ty=1.0, tz=-0.1, fov=145, i=0.25, r=0.45, g=0.87, b=1.0}),  
 						},
 					},
 				},  
@@ -2974,7 +2988,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "_MedPlant_C"},  --create a new LOD independant light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='newLight', ty=0.516384, i=60000, r=0.0, g=0.6923}),  
+							["ADD"] = InsertNewLight({name='newLight', ty=0.516384, i=36, r=0.0, g=0.6923}),  
 						},
 					},
 				},
@@ -2986,7 +3000,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "_SmallPlant_ALOD0"},  --create a new LOD independant light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='newLight', ty=0.516384, i=20000, r=0.4, g=0.72, b=0.0}),  
+							["ADD"] = InsertNewLight({name='newLight', ty=0.516384, i=0.00040, r=0.4, g=0.72, b=0.0}),  
 						},
 					},
 				},			
@@ -2997,7 +3011,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "_MedPlant_C"},  --create a new LOD independant light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='newLight', ty=1.0, i=40000, r=0.4, g=0.72, b=0.0}),  
+							["ADD"] = InsertNewLight({name='newLight', ty=1.0, i=0.160, r=0.4, g=0.72, b=0.0}),  
 						},
 					},
 				},		]]--		
@@ -3041,7 +3055,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"Value",	"linear"},  --original : quadratic
+								{"Value",	"1.0"},  --original : quadratic
 							},
 						},	
 						{
@@ -3090,7 +3104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"Value",	"linear"},  --original : quadratic
+								{"Value",	"1.0"},  --original : quadratic
 							},
 						},	
 						{
@@ -3135,7 +3149,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"Value",	"linear"},  --original : quadratic
+								{"Value",	"1.0"},  --original : quadratic
 							},
 						},	
 						{
@@ -3180,7 +3194,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"Value",	"linear"},  --original : quadratic
+								{"Value",	"1.0"},  --original : quadratic
 							},
 						},	
 						{
@@ -3215,7 +3229,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"10000.0"},  --original : 30000.0
+								{"Value",	"1.0"},  --original : 30000.0
 							},
 						},						
 					},
@@ -3227,8 +3241,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"}, 
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='frontLight1',tx=0, ty=1.6, tz=-1.0, rx=0, ry=0, rz=0, fov=160, i=22000, r=0.5, g=1.0, b=1.0,})
-									..InsertNewLight({name='backLight1',tx=0, ty=1.6, tz=1.0, rx=0, ry=180, rz=0, fov=160, i=22000, r=0.5, g=1.0, b=1.0,}),
+							["ADD"] = InsertNewLight({name='frontLight1',tx=0, ty=1.6, tz=-1.0, rx=0, ry=0, rz=0, fov=160, i=4.84, r=0.5, g=1.0, b=1.0,})
+									..InsertNewLight({name='backLight1',tx=0, ty=1.6, tz=1.0, rx=0, ry=180, rz=0, fov=160, i=4.84, r=0.5, g=1.0, b=1.0,}),
 						},
 						{  
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1",},
@@ -3248,7 +3262,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"5000.0"},  --original : 10000.0
+								{"Value",	"0.25"},  --original : 10000.0
 							},
 						},						
 					},
@@ -3260,7 +3274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Type", "LIGHT",}, 
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TableLight', ty=-4.60971, rx=90, fov=180, i=20000, r=0.45, g=0.66, b=1.0,}),
+							["ADD"] = InsertNewLight({name='TableLight', ty=-4.60971, rx=90, fov=180, i=0.00040, r=0.45, g=0.66, b=1.0,}),
 						},
 						{  
 							["SPECIAL_KEY_WORDS"] = {"Type", "LIGHT",},
@@ -3334,7 +3348,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LightColumnLOD3"}, 
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='YellowLight',tx=0.008792, ty=2.44667, tz=0.038787, i=40000, r=1.0, g=0.77, b=0.4,}),
+							["ADD"] = InsertNewLight({name='YellowLight',tx=0.008792, ty=2.44667, tz=0.038787, i=0.160, r=1.0, g=0.77, b=0.4,}),
 						},						
 					},
 				},  		
@@ -3350,7 +3364,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						--[[  {
 							["SPECIAL_KEY_WORDS"]  = {"Name", "SmallLightColumnLOD3"}, 
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='YellowLight',tx=0.02866, ty=0.595435, tz=0.025357, i=20000, r=1.0, g=0.7, b=0.4,}),
+							["ADD"] = InsertNewLight({name='YellowLight',tx=0.02866, ty=0.595435, tz=0.025357, i=0.00040, r=1.0, g=0.7, b=0.4,}),
 						},		--]]				
 					},
 				}, 

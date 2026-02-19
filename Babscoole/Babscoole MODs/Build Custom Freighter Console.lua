@@ -57,7 +57,6 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="PlanetLimit" value="0" />
       <Property name="RegionLimit" value="0" />
       <Property name="PlanetBaseLimit" value="0" />
-      <Property name="FreighterBaseLimit" value="0" />
       <Property name="CorvetteBaseLimit" value="0" />
       <Property name="DoesNotCountTowardsComplexity" value="false" />
       <Property name="FreighterBaseLimit" value="0" />
@@ -167,7 +166,9 @@ PRODUCT_ADDING =
       <Property name="NameLower" value="]].. P_NAME ..[[" />
       <Property name="Subtitle" value="" />
       <Property name="Description" value="" />
+      <Property name="AltDescription" value="" />
       <Property name="Hint" value="" />
+      <Property name="BuildableShipTechID" value="" />
       <Property name="GroupID" value="" />
       <Property name="DebrisFile" value="TkModelResource">
         <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
@@ -236,7 +237,6 @@ PRODUCT_ADDING =
       <Property name="CorvettePartCategory" value="GcCorvettePartCategory">
         <Property name="CorvettePartCategory" value="None" />
       </Property>
-      <Property name="CorvetteRewardFrequency" value="0.000000" />
       <Property name="IsCraftable" value="true" />
       <Property name="DeploysInto" value="" />
       <Property name="EconomyInfluenceMultiplier" value="0.000000" />
@@ -378,6 +378,7 @@ PLACEMENTDATA_ENTITY =
           <Property name="AngularDamping" value="0.200000" />
           <Property name="LinearDamping" value="0.100000" />
           <Property name="Gravity" value="20.000000" />
+          <Property name="CanBeTooSteepForTeleporter" value="true" />
         </Property>
         <Property name="NavMeshInclusion" value="TkNavMeshInclusionParams">
           <Property name="NavMeshInclusionHint" value="Auto" />

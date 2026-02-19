@@ -715,11 +715,15 @@ BUILDABLE_OBJECT_TABLE =
   { ["ID_NAME"]="BLDSHIPSUMZONE", ["P_NAME"]="BUILDSHIPSUMMONZONE",           ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/",               ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
   { ["ID_NAME"]="DERELICTTERM",   ["P_NAME"]="ABANFRIGATETERMINALAIRLOCKRED", ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/SPACEBASE/",     ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
   { ["ID_NAME"]="FISHPOND",       ["P_NAME"]="FISHPOND",                      ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SETTLEMENT/",                         ["CORV"]="false", ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
-  { ["ID_NAME"]="INCINERATOR",    ["P_NAME"]="INCINERATOR",                   ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SCRAPYARD/PARTS/",                    ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON,    ["CompositePartObjectIDs"]={"CHEMICALREACTOR","BURNER","SHREDDER","SCALE"} },
+  { ["ID_NAME"]="INCINERATOR",    ["P_NAME"]="INCINERATOR",                   ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SCRAPYARD/PARTS/",                    ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON,    ["CompositePartObjectIDs"]={"CHEMICALREACTOR","BURNER","SHREDDER","SCALE","FUELTANK","HAZPOOL","ROBOARM","SCRAPCOLLECTION"} },
   { ["ID_NAME"]="CHEMICALREACTOR",["P_NAME"]="CHEMICALREACTOR",               ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SCRAPYARD/PARTS/",                    ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
   { ["ID_NAME"]="BURNER",         ["P_NAME"]="BURNER",                        ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SCRAPYARD/PARTS/",                    ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
   { ["ID_NAME"]="SHREDDER",       ["P_NAME"]="SHREDDER",                      ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SCRAPYARD/PARTS/",                    ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
   { ["ID_NAME"]="SCALE",          ["P_NAME"]="SCALE",                         ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SCRAPYARD/PARTS/",                    ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+  { ["ID_NAME"]="FUELTANK",       ["P_NAME"]="FUELTANK",                      ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SCRAPYARD/PARTS/",                    ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+  { ["ID_NAME"]="HAZPOOL",        ["P_NAME"]="HAZPOOL",                       ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SCRAPYARD/PARTS/",                    ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+  { ["ID_NAME"]="ROBOARM",        ["P_NAME"]="ROBOARM",                       ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SCRAPYARD/PARTS/",                    ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+  { ["ID_NAME"]="SCRAPCOLLECTION",["P_NAME"]="SCRAPCOLLECTION",               ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SCRAPYARD/PARTS/",                    ["CORV"]="true",  ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
   { ["ID_NAME"]="SPACESTATION",   ["P_NAME"]="SPACESTATION",                  ["PATH"]="MODELS/SPACE/SPACESTATION/",                                                 ["CORV"]="false", ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON,   ["CompositePartObjectIDs"]={"SPACESTATN_ABAN","ANOMALY","ATLASSTATION","NEXUS","BLACKHOLE"} },
   { ["ID_NAME"]="SPACESTATN_ABAN",["P_NAME"]="SPACESTATION_ABANDONED",        ["PATH"]="MODELS/SPACE/SPACESTATION/",                                                 ["CORV"]="false", ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
   { ["ID_NAME"]="ANOMALY",        ["P_NAME"]="ANOMALY",                       ["PATH"]="MODELS/SPACE/ANOMALY/",                                                      ["CORV"]="false", ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
@@ -982,7 +986,6 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="PlanetLimit" value="0" />
       <Property name="RegionLimit" value="0" />
       <Property name="PlanetBaseLimit" value="0" />
-      <Property name="FreighterBaseLimit" value="0" />
       <Property name="CorvetteBaseLimit" value="0" />
       <Property name="DoesNotCountTowardsComplexity" value="false" />
       <Property name="FreighterBaseLimit" value="0" />
@@ -1092,7 +1095,9 @@ PRODUCT_ADDING =
       <Property name="NameLower" value="]].. P_NAME ..[[" />
       <Property name="Subtitle" value="" />
       <Property name="Description" value="" />
+      <Property name="AltDescription" value="" />
       <Property name="Hint" value="" />
+      <Property name="BuildableShipTechID" value="" />
       <Property name="GroupID" value="" />
       <Property name="DebrisFile" value="TkModelResource">
         <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
@@ -1161,7 +1166,6 @@ PRODUCT_ADDING =
       <Property name="CorvettePartCategory" value="GcCorvettePartCategory">
         <Property name="CorvettePartCategory" value="None" />
       </Property>
-      <Property name="CorvetteRewardFrequency" value="0.000000" />
       <Property name="IsCraftable" value="true" />
       <Property name="DeploysInto" value="" />
       <Property name="EconomyInfluenceMultiplier" value="0.000000" />
@@ -1303,6 +1307,7 @@ PLACEMENTDATA_ENTITY =
           <Property name="AngularDamping" value="0.200000" />
           <Property name="LinearDamping" value="0.100000" />
           <Property name="Gravity" value="20.000000" />
+          <Property name="CanBeTooSteepForTeleporter" value="true" />
         </Property>
         <Property name="NavMeshInclusion" value="TkNavMeshInclusionParams">
           <Property name="NavMeshInclusionHint" value="Auto" />

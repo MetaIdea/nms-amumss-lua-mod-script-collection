@@ -243,11 +243,11 @@ Obs_Array_fr = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"] 			= "Renewed Riddles 3.6.pak",
+["MOD_FILENAME"] 			= "Renewed Riddles 3.7.pak",
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k (with bits of WinderTP)",
 ["MOD_DESCRIPTION"]			= "Changes all riddles with new ones",
-["NMS_VERSION"]				= "6.01",
+["NMS_VERSION"]				= "6.22",
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {{
 ["MBIN_FILE_SOURCE"] = "LANGUAGE\NMS_LOC1_ENGLISH.MBIN",

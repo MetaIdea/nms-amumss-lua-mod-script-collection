@@ -80,7 +80,7 @@ COMPO_PART_TABLE =
 	{["ID"] = "BASE_SWAMP1", ["CompositePart"] = {"BASE_SWAMP2", "BASE_SWAMP3"}},
 	{["ID"] = "BASE_INFEST1", ["CompositePart"] = {"BASE_INFEST2", "BASE_INFEST3"}},
 	{["ID"] = "BASE_ROCK01", ["CompositePart"] = {"BASE_ROCK02", "BASE_ROCK03"}},
-	{["ID"] = "BASE_LAVA1", ["CompositePart"] = {"BASE_LAVA2", "BASE_LAVA3"}},
+	{["ID"] = "BASE_LAVA1", ["CompositePart"] = {"BASE_LAVA2"}},
 	{["ID"] = "BASE_CAVE1", ["CompositePart"] = {"BASE_CAVE2", "BASE_CAVE3", "BASE_CAVE4", "BASE_CAVE5"}},
 	{["ID"] = "BASE_NEXUS1", ["CompositePart"] = {"BASE_NEXUS2", "BASE_NEXUS3"}},
 	{["ID"] = "BASE_FLOWER1", ["CompositePart"] = {"BASE_FLOWER2", "BASE_FLOWER3"}},

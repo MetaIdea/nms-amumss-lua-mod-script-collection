@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-MOD_FILENAME = "Hyperlight Warps 1.2.pak", 
+MOD_FILENAME = "Hyperlight Warps 1.3.pak", 
 MOD_AUTHOR	 = "Lo2k",
 LUA_AUTHOR	 = "Lo2k",
-NMS_VERSION  = "6.10",
+NMS_VERSION  = "6.22",
 MOD_DESCRIPTION = "Hyperlight Warps",
 MODIFICATIONS= 
 	{
@@ -23,7 +23,7 @@ MODIFICATIONS=
 							2, --WarpCylinder1
 							--3, --scrollingwaveALT -- slow red streaks
 							4, --scrollingwave9  --big white swirling energy beams
-							5, --scrollingwaveALT1 -- very slow little red streaks
+							--5, --scrollingwaveALT1 -- very slow little red streaks
 							--6, --scrollingwave -- slow white streaks
 							--7, --stars2
 							--8, --stars1

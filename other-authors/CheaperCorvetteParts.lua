@@ -172,8 +172,8 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"] 	    = "CheaperCorvetteParts",
     ["MOD_AUTHOR"]		    = "Aristotale",
     ["LUA_AUTHOR"]		    = "Aristotale",
-    ["NMS_VERSION"]		    = "6.16",
-    ["MOD_DESCRIPTION"]     = "Make Corvette parts cost less to buywwwwwwwwwwwwwwwwww",
+    ["NMS_VERSION"]		    = "6.10",
+    ["MOD_DESCRIPTION"]     = "Make Corvette parts cost less to buy",
     
     ["MODIFICATIONS"]   =
     {

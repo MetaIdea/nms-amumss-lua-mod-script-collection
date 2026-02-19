@@ -2,7 +2,7 @@ Author			= "JMZawodny"
 ModName			= "zColossus"
 ModNameSub		= "Headlights"
 BaseDescription = "Make the Headlights useful"
-GameVersion		= "v6.22"
+GameVersion		= "v6.23"
 ModVersion		= ""
 
 Angle = -10.0
@@ -11,7 +11,7 @@ Radius = 200.0
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
 	MOD_DESCRIPTION	= BaseDescription,
 	MOD_AUTHOR		= Author,
 	LUA_AUTHOR		= Author,
@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			},
 		}
 	},
-	{ -- Adjust Intensity
+	{ -- Adjust Radius
 		MBIN_FILE_SOURCE = "models\common\vehicles\rover\rover.scene.mbin",
 		MXML_CHANGE_TABLE = 
 		{

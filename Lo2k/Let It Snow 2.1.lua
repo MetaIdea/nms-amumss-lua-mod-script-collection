@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Let It Snow 1.9.pak", 
+["MOD_FILENAME"] 			= "Let It Snow 2.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.71",
+["NMS_VERSION"]				= "6.22",
 ["MOD_DESCRIPTION"]			= "This mod adds real snow crystals",
 ["MODIFICATIONS"] 			= 
 	{
