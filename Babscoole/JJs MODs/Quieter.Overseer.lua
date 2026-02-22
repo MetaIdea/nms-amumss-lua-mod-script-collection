@@ -1,42 +1,42 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Quieter.Overseer.V.1.6",
+["MOD_FILENAME"]  = "_Quieter.Overseer.V.1.7",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.10",
+["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\BACK_SECTION_ORB.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\BACK_SECTION_ORB.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "REFStationOrbEyeVFX", "Name", "SCENEGRAPH"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "ODELS\EFFECTS\STATION\STATIONORBEYE.SCENE.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "OrbData", "Name", "ATTACHMENT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "ODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\BACK_SECTION_ORB\ENTITIES\ORBDATA.ENTITY.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "TopVFX", "Name", "SCENEGRAPH"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "ODELS\EFFECTS\STATION\STATIONORBTOP.SCENE.MBIN"},
-                            }
-                        },
-                    }
-                },
-            }
-        }
-    },
+              ["SPECIAL_KEY_WORDS"] = {"Name", "REFStationOrbEyeVFX", "Name", "SCENEGRAPH"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "ODELS\EFFECTS\STATION\STATIONORBEYE.SCENE.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "OrbData", "Name", "ATTACHMENT"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "ODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\BACK_SECTION_ORB\ENTITIES\ORBDATA.ENTITY.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "TopVFX", "Name", "SCENEGRAPH"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "ODELS\EFFECTS\STATION\STATIONORBTOP.SCENE.MBIN"},
+              }
+            },
+          }
+        },
+      }
+    }
+  },
 }

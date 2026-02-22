@@ -9,20 +9,29 @@ English_Path = "LANGUAGE/NMS_LOC8_ENGLISH.MBIN"
 
 Cost_Type_Factory = "FACTORY"
 Cost_Type_Nanite = "NANITES"
+
 Ship_Tree = "UI_SHIP_TECH_TREE"
 Item_Trees_Ship = "ShipTech"
+
 Suit_Tree = "UI_SUIT_TECH_TREE"
 Item_Trees_Suit = "SuitTech"
+
 Weapon_Tree = "UI_WEAP_TECH_TREE"
 Item_Trees_Weapon = "WeapTech"
+
 Exocraft_Tree = "UI_EXOCRAFT_TECH_TREE"
 Item_Trees_Exocraft = "ExocraftTech"
+
 Freighter_Tree = "UI_FREIGHTER_TREE"
 Item_Trees_Freighter = "FreighterTech"
+
 Factory_Tree = "UI_PRODUCT_TREE"
 Item_Trees_Factory = "CraftProducts"
+
 Tech_Tree_Sub = "UI_TECH_TREE_SUB"
 Tech_Tree_Sub_Factory = "UI_PRODUCT_TREE_FARM"
+Tech_Tree_Sub_Exocrafts = "UI_EXOMECH_TECH_TREE"
+
 Ship_Root_Tech = "SHIPJUMP1"
 Suit_Root_Tech = "ENERGY"
 Weapon_Root_Tech = "LASER"
@@ -296,7 +305,7 @@ General_Upgrade_Mods =
             TREE_ROOT = Exo_Root_Tech,
             COST_TYPE = Cost_Type_Nanite,
             ITEM_TREE = Item_Trees_Exocraft,
-            TECH_SUB = Tech_Tree_Sub
+            TECH_SUB = Tech_Tree_Sub_Exocrafts
         },
         UPGRADE_DATA =
         {
@@ -1756,7 +1765,7 @@ function Create_New_Item_Trees()
 
         Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees +1] =
         {
-            SPECIAL_KEY_WORDS = {"Title", Main_Tree, "Title", Tech_Sub},
+            SPECIAL_KEY_WORDS = {Item_Tree, "GcUnlockableItemTrees", "Title", Main_Tree, "Title", Tech_Sub},
             REPLACE_TYPE = "ADDAFTERSECTION",
             SEC_ADD_NAMED = Main_Tree.."_ROOT_SEC"
         }

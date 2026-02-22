@@ -4,7 +4,7 @@ local Types =
     SUBSTANCE = 'Substance'
 }
 
-local New_Requirements_Array =
+local New_Requirements_Dict =
 {
     {
         PRODUCTID = 'BP_SALVAGE',
@@ -147,7 +147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     MBIN_FILE_SOURCE = Product_Table_Path,
-                    EXML_CHANGE_TABLE =
+                    MXML_CHANGE_TABLE =
                     {
                         {
                             SPECIAL_KEY_WORDS  = {'ID', 'REPAIRKIT'},
@@ -160,16 +160,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     MBIN_FILE_SOURCE = Unlockable_Item_Trees_Path,
-                    EXML_CHANGE_TABLE = {}
+                    MXML_CHANGE_TABLE = {}
                 }
             }
         }
     }
 }
 
-local Changes_To_Product_Table = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[1].EXML_CHANGE_TABLE
-local Changes_To_Unlockable_Item_Trees = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[2].EXML_CHANGE_TABLE
--- local Changes_To_Language = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[4].EXML_CHANGE_TABLE
+local Changes_To_Product_Table = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[1].MXML_CHANGE_TABLE
+local Changes_To_Unlockable_Item_Trees = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[2].MXML_CHANGE_TABLE
+-- local Changes_To_Language = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[4].MXML_CHANGE_TABLE
 
 ----------------------------------------------------------------------------------------------
 -------------------------------     Edit Product Table     -----------------------------------
@@ -214,9 +214,9 @@ function Create_Requirement_Sections(Requirements)
 end
 
 function Change_Product_Requirement_And_Set_Craftable()
-    for i = 1, #New_Requirements_Array do
-        local ProductId = New_Requirements_Array[i].PRODUCTID
-        local Requirements = New_Requirements_Array[i].REQUIREMENTS
+    for i = 1, #New_Requirements_Dict do
+        local ProductId = New_Requirements_Dict[i].PRODUCTID
+        local Requirements = New_Requirements_Dict[i].REQUIREMENTS
         Create_Requirement_Sections(Requirements)
         Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
         {

@@ -1643,6 +1643,10 @@ local Cost_Types =
     NANITES = 'NANITES'
 }
 
+local Tech_Tree_Sub = 'UI_TECH_TREE_SUB'
+-- local Tech_Tree_Sub_Factory = 'UI_PRODUCT_TREE_FARM'
+local Tech_Tree_Sub_Exocrafts = 'UI_EXOMECH_TECH_TREE'
+
 -- You need to add the upgrade mods to the data otherwise you can buy the recipe in the nexus
 local Unlockable_Item_Trees =
 {
@@ -1650,7 +1654,7 @@ local Unlockable_Item_Trees =
     {
         Item_Trees_Property_Name = 'ShipTech',
         Item_Tree_Main_Tree = 'UI_SHIP_TECH_TREE',
-        Item_Tree_Page = 'UI_TECH_TREE_SUB',
+        Item_Tree_Page = Tech_Tree_Sub,
         Root_Tech = 'SHIPJUMP1',
         Cost_Type = Cost_Types.NANITES,
         Upgrade_Data =
@@ -1662,7 +1666,7 @@ local Unlockable_Item_Trees =
     {
         Item_Trees_Property_Name = 'SuitTech',
         Item_Tree_Main_Tree = 'UI_SUIT_TECH_TREE',
-        Item_Tree_Page = 'UI_TECH_TREE_SUB',
+        Item_Tree_Page = Tech_Tree_Sub,
         Root_Tech = 'ENERGY',
         Cost_Type = Cost_Types.NANITES,
         Upgrade_Data =
@@ -1681,7 +1685,7 @@ local Unlockable_Item_Trees =
     {
         Item_Trees_Property_Name = 'WeapTech',
         Item_Tree_Main_Tree = 'UI_WEAP_TECH_TREE',
-        Item_Tree_Page = 'UI_TECH_TREE_SUB',
+        Item_Tree_Page = Tech_Tree_Sub,
         Root_Tech = 'LASER',
         Cost_Type = Cost_Types.NANITES,
         Upgrade_Data =
@@ -1694,7 +1698,7 @@ local Unlockable_Item_Trees =
     {
         Item_Trees_Property_Name = 'ExocraftTech',
         Item_Tree_Main_Tree = 'UI_EXOCRAFT_TECH_TREE',
-        Item_Tree_Page = 'UI_TECH_TREE_SUB',
+        Item_Tree_Page = Tech_Tree_Sub_Exocrafts,
         Root_Tech = 'VEHICLE_ENGINE',
         Cost_Type = Cost_Types.NANITES,
         Upgrade_Data =
@@ -1707,7 +1711,7 @@ local Unlockable_Item_Trees =
     -- {
     --     Item_Trees_Property_Name = 'FreighterTech',
     --     Item_Tree_Main_Tree = 'UI_FREIGHTER_TREE',
-    --     Item_Tree_Page = 'UI_TECH_TREE_SUB',
+    --     Item_Tree_Page = Tech_Tree_Sub,
     --     Root_Tech = 'FRIGATE_FUEL_1',
     --     Cost_Type = Cost_Types.NANITES,
     --     Upgrade_Data = {}
@@ -1716,7 +1720,7 @@ local Unlockable_Item_Trees =
     -- {
     --     Item_Trees_Property_Name = 'CraftProducts',
     --     Item_Tree_Main_Tree = 'UI_PRODUCT_TREE',
-    --     Item_Tree_Page = 'UI_PRODUCT_TREE_FARM',
+    --     Item_Tree_Page = Tech_Tree_Sub_Factory,
     --     Root_Tech = 'PRODFUEL2',
     --     Cost_Type = Cost_Types.FACTORY,
     --     Upgrade_Data = {}

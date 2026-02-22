@@ -1,125 +1,125 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Early.Character.Creator.V.2.3",
+["MOD_FILENAME"]  = "Early.Character.Creator.V.2.4",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.10",
+["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\CUSTOMISESTATION.SCENE.MBIN", "MODELS\CUSTOMISER.SCENE.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\CUSTOMISER.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\CUSTOMISESTATION.SCENE.MBIN", "MODELS\CUSTOMISER.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\CUSTOMISER.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "LODDIST1"},
-                                {"Name", "LODDIST2"},
-                                {"Name", "LODDIST3"},
-                                {"Name", "PlatformJNT"},
-                                {"Name", "PlatformLOD0"},
-                                {"Name", "PlatformLOD1"},
-                                {"Name", "PlatformLOD2"},
-                                {"Name", "PlatformLOD3"},
-                                {"Name", "Shadowbox"},
-                                {"Type", "COLLISION"},
-                                {"Name", "NormalData"},
-                                {"Name", "RotateMesh"},
-                                {"Name", "Blue"},
-                                {"Name", "RefSnapScene"},
-                                -- {"Name", "Shadowbox"},
-                                -- {"Name", "Shadowbox"},
-                            },
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"NameHash", "3916463041"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "NUMLODS"},
-                            ["EXML_INDEX"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "1"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "ATTACHMENT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "MODELS\CHARCUSTOMISER.ENTITY.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "CharCustomiser"},
-                            ["EXML_INDEX"] = 0,
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "INTERACT"},
-                            ["EXML_INDEX"] = 0,
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "WORLDUI"},
-                            ["EXML_INDEX"] = 1,
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CHARCUSTOMISER\CHARCUSTOMISER\ENTITIES\CHARCUSTOMISER.ENTITY.MBIN", "MODELS\CHARCUSTOMISER.ENTITY.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\CHARCUSTOMISER.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ARMSUP"},
-                            ["SECTION_ACTIVE"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Filename", "ODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/ANIMATION/CUSTOMISEEND.ANIM.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLEARMS"},
-                            ["SECTION_ACTIVE"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Filename", "ODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/ANIMATION/CUSTOMISEIDLE.ANIM.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ARMSDOWN"},
-                            ["SECTION_ACTIVE"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Filename", "ODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/ANIMATION/CUSTOMISEACTIVATE.ANIM.MBIN"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\STARTSCENE.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RefBlackBoxScene"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "LODDIST1"},
+                {"Name", "LODDIST2"},
+                {"Name", "LODDIST3"},
+                {"Name", "PlatformJNT"},
+                {"Name", "PlatformLOD0"},
+                {"Name", "PlatformLOD1"},
+                {"Name", "PlatformLOD2"},
+                {"Name", "PlatformLOD3"},
+                {"Name", "Shadowbox"},
+                {"Type", "COLLISION"},
+                {"Name", "NormalData"},
+                {"Name", "RotateMesh"},
+                {"Name", "Blue"},
+                {"Name", "RefSnapScene"},
+                -- {"Name", "Shadowbox"},
+                -- {"Name", "Shadowbox"},
+              },
+              ["REMOVE"] = "SECTION"
+            },
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"NameHash", "3916463041"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "NUMLODS"},
+              ["EXML_INDEX"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "1"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "ATTACHMENT"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "MODELS\CHARCUSTOMISER.ENTITY.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "CharCustomiser"},
+              ["EXML_INDEX"] = 0,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "INTERACT"},
+              ["EXML_INDEX"] = 0,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "WORLDUI"},
+              ["EXML_INDEX"] = 1,
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CHARCUSTOMISER\CHARCUSTOMISER\ENTITIES\CHARCUSTOMISER.ENTITY.MBIN", "MODELS\CHARCUSTOMISER.ENTITY.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\CHARCUSTOMISER.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Anim", "ARMSUP"},
+              ["SECTION_ACTIVE"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Filename", "ODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/ANIMATION/CUSTOMISEEND.ANIM.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLEARMS"},
+              ["SECTION_ACTIVE"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Filename", "ODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/ANIMATION/CUSTOMISEIDLE.ANIM.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Anim", "ARMSDOWN"},
+              ["SECTION_ACTIVE"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Filename", "ODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/ANIMATION/CUSTOMISEACTIVATE.ANIM.MBIN"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\STARTSCENE.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "RefBlackBoxScene"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
 		<Property name="Children" value="TkSceneNodeData" _index="22">
 			<Property name="Name" value="REFcustomiser" />
@@ -200,15 +200,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 				</Property>
 				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
 					<Property name="Name" value="FALLOFF" />
-					<Property name="Value" value="quadratic" />
-				</Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-					<Property name="Name" value="FALLOFF_RATE" />
 					<Property name="Value" value="2.000000" />
 				</Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
 					<Property name="Name" value="INTENSITY" />
-					<Property name="Value" value="10000.000000" />
+					<Property name="Value" value="5.000000" />
+				</Property>
+				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+					<Property name="Name" value="RADIUS" />
+					<Property name="Value" value="5.000000" />
 				</Property>
 				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
 					<Property name="Name" value="COL_R" />
@@ -242,23 +242,23 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Children" />
 		</Property>
 ]]
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\PARTS\ATLASORB\ATLASORB\ENTITIES\ATLASORB.ENTITY.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Components", "TkAudioComponentData"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MaxDistance", "3"},
-                            }
-                        },
-                    }
-                },
-            }
-        }
-    },
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\PARTS\ATLASORB\ATLASORB\ENTITIES\ATLASORB.ENTITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Components", "TkAudioComponentData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"MaxDistance", "3"},
+              }
+            },
+          }
+        },
+      }
+    }
+  },
 }
