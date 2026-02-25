@@ -104,11 +104,11 @@ function CreateProduct()
     ProductTable[#ProductTable + 1] =
     {
         SPECIAL_KEY_WORDS = {"ID", "SENTFREI_PROD"},
-        SEC_SAVE_TO = "SCRAP_SCAN"
+        SEC_SAVE_TO = "SCRAP_SCAN_SEC"
     }
     ProductTable[#ProductTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN",
+        SEC_EDIT = "SCRAP_SCAN_SEC",
         VALUE_CHANGE_TABLE =
         {
             {"ID", "SCRAP_SCAN"},
@@ -123,16 +123,16 @@ function CreateProduct()
     }
     ProductTable[#ProductTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN",
+        SEC_EDIT = "SCRAP_SCAN_SEC",
         PKW = {"Requirements"},
         CREATE_HOS = "TRUE",
         SEC_ADD_NAMED = "PRODUCT_REQUIREMENTS"
     }
     ProductTable[#ProductTable + 1] =
     {
-        SKW = {"ID", "SENTFREI_PROD"},
-        ADD_OPTION = "ADDafterSECTION",
-        SEC_ADD_NAMED = "SCRAP_SCAN"
+        PKW = {"Table"},
+        ADD_OPTION = "ADDendSECTION",
+        SEC_ADD_NAMED = "SCRAP_SCAN_SEC"
     }
 end
 
@@ -162,11 +162,11 @@ function CreateConsumable()
     ConsumableTable[#ConsumableTable + 1] =
     {
         SPECIAL_KEY_WORDS = {"ID","SENTFREI_PROD"},
-        SEC_SAVE_TO = "SCRAP_SCAN_CONSUME"
+        SEC_SAVE_TO = "SCRAP_SCAN_CONSUME_SEC"
     }
     ConsumableTable[#ConsumableTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_CONSUME",
+        SEC_EDIT = "SCRAP_SCAN_CONSUME_SEC",
         VALUE_CHANGE_TABLE =
         {
             {"ID", "SCRAP_SCAN"},
@@ -178,9 +178,9 @@ function CreateConsumable()
     }
     ConsumableTable[#ConsumableTable + 1] =
     {
-        SKW = {"ID", "SENTFREI_PROD"},
-        ADD_OPTION = "ADDafterSECTION",
-        SEC_ADD_NAMED = "SCRAP_SCAN_CONSUME"
+        PKW = {"Table"},
+        ADD_OPTION = "ADDendSECTION",
+        SEC_ADD_NAMED = "SCRAP_SCAN_CONSUME_SEC"
     }
 end
 
@@ -188,11 +188,11 @@ function CreateReward()
     RewardTable[#RewardTable + 1] =
     {
         SPECIAL_KEY_WORDS = {"Id","R_SCANSENTCRASH"},
-        SEC_SAVE_TO = "SCRAP_SCAN_REWARD"
+        SEC_SAVE_TO = "SCRAP_SCAN_REWARD_SEC"
     }
     RewardTable[#RewardTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_REWARD",
+        SEC_EDIT = "SCRAP_SCAN_REWARD_SEC",
         VALUE_CHANGE_TABLE =
         {
             {"ID", "R_SCRAPSCAN"},
@@ -200,27 +200,28 @@ function CreateReward()
     }
     RewardTable[#RewardTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_REWARD",
+        SEC_EDIT = "SCRAP_SCAN_REWARD_SEC",
         SKW = {"Event","SENT_CRASH_CORRUPT",},
         VALUE_CHANGE_TABLE =
         {
             {"Event", "FIND_SCRAP_YARD"},
+            {"DoAerialScan", "false"},
         }
     }
     RewardTable[#RewardTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_REWARD",
+        SEC_EDIT = "SCRAP_SCAN_REWARD_SEC",
         SKW = {"Mission","SENTSHIP_GALMAP",},
         VALUE_CHANGE_TABLE =
         {
-            {"Mission","SCRAPYARD_GALMAP"},
+            {"Mission","SCRAPYD_GALMAP"},
         }
     }
     RewardTable[#RewardTable + 1] =
     {
-        SKW = {"ID", "R_SCANSENTCRASH"},
-        ADD_OPTION = "ADDafterSECTION",
-        SEC_ADD_NAMED = "SCRAP_SCAN_REWARD"
+        PKW = {"SpecialRewardTable"},
+        ADD_OPTION = "ADDendSECTION",
+        SEC_ADD_NAMED = "SCRAP_SCAN_REWARD_SEC"
     }
 end
 
@@ -228,20 +229,24 @@ function CreatePlanetScanEvent()
     PlanetScanEventTable[#PlanetScanEventTable + 1] =
     {
         SPECIAL_KEY_WORDS = {"Name","SENT_CRASH_CORRUPT"},
-        SEC_SAVE_TO = "SCRAP_SCAN_EVENT"
+        SEC_SAVE_TO = "SCRAP_SCAN_EVENT_SEC"
     }
     PlanetScanEventTable[#PlanetScanEventTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_EVENT",
+        SEC_EDIT = "SCRAP_SCAN_EVENT_SEC",
         VALUE_CHANGE_TABLE =
         {
-            {"Name", "SCRAP_SCAN_EVENT"},
+            {"Name", "FIND_SCRAP_YARD"},
             {"BuildingClass","ScrapYard",},
+            {"OSDMessage","UI_SCRAPYARD_REVEAL_OSD",},
+            {"InterstellarOSDMessage","UI_SCRAPYARD_REVEAL_INTERSTELLAROSD",},
+            {"MarkerLabel","UI_SCRAPYARD_REVEAL_MARKER",},
+            {"TooltipMessage","UI_SCRAPYARD_REVEAL_MSG",},
         }
     }
     PlanetScanEventTable[#PlanetScanEventTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_EVENT",
+        SEC_EDIT = "SCRAP_SCAN_EVENT_SEC",
         SKW = {"Filename","TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SENTINELCRASH.DDS"},
         VALUE_CHANGE_TABLE =
         {
@@ -250,9 +255,9 @@ function CreatePlanetScanEvent()
     }
     PlanetScanEventTable[#PlanetScanEventTable + 1] =
     {
-        SKW = {"Name","SENT_CRASH_CORRUPT"},
-        ADD_OPTION = "ADDafterSECTION",
-        SEC_ADD_NAMED = "SCRAP_SCAN_EVENT"
+        PKW = {"Events"},
+        ADD_OPTION = "ADDendSECTION",
+        SEC_ADD_NAMED = "SCRAP_SCAN_EVENT_SEC"
     }
 end
 
@@ -260,21 +265,30 @@ function CreateMission()
     MissionTable[#MissionTable + 1] =
     {
         SPECIAL_KEY_WORDS = {"MissionID","SENTSHIP_GALMAP",},
-        SEC_SAVE_TO = "SCRAP_SCAN_MISSION"
+        SEC_SAVE_TO = "SCRAP_SCAN_MISSION_SEC"
     }
     MissionTable[#MissionTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
+        SEC_EDIT = "SCRAP_SCAN_MISSION_SEC",
         SPECIAL_KEY_WORDS = {"MissionID","SENTSHIP_GALMAP",},
         VALUE_CHANGE_TABLE =
         {
-            {"MissionID","SCRAPYARD_GALMAP"},
+            {"MissionID","SCRAPYD_GALMAP"},
             {"BuildingClass","ScrapYard",},
         }
     }
     MissionTable[#MissionTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
+        SEC_EDIT = "SCRAP_SCAN_MISSION_SEC",
+        SPECIAL_KEY_WORDS = {"Name","SE_SENT_GALMAP",},
+        VALUE_CHANGE_TABLE =
+        {
+            {"Name","SE_SCPYD_GALMAP",},
+        }
+    }
+    MissionTable[#MissionTable + 1] =
+    {
+        SEC_EDIT = "SCRAP_SCAN_MISSION_SEC",
         SKW = {"Format","UI_SENTINEL_GALMAP_TITLE",},
         VALUE_CHANGE_TABLE =
         {
@@ -283,7 +297,7 @@ function CreateMission()
     }
     MissionTable[#MissionTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
+        SEC_EDIT = "SCRAP_SCAN_MISSION_SEC",
         SKW = {"Format","UI_SENTINEL_GALMAP_SUB",},
         VALUE_CHANGE_TABLE =
         {
@@ -292,7 +306,7 @@ function CreateMission()
     }
     MissionTable[#MissionTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
+        SEC_EDIT = "SCRAP_SCAN_MISSION_SEC",
         SKW = {"Format","UI_SENTINEL_GALMAP_DESC",},
         VALUE_CHANGE_TABLE =
         {
@@ -301,61 +315,39 @@ function CreateMission()
     }
     MissionTable[#MissionTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
+        SEC_EDIT = "SCRAP_SCAN_MISSION_SEC",
         SKW = {"ObjectiveTipID","UI_SENTINEL_GALMAP_OBJ_TIP",},
         VALUE_CHANGE_TABLE =
         {
             {"ObjectiveTipID","UI_SCRAPYARD_GALMAP_OBJ_TIP",},
+            {"ObjectiveID","UI_SCRAPYARD_GALMAP_OBJ",},
         }
     }
     MissionTable[#MissionTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
+        SEC_EDIT = "SCRAP_SCAN_MISSION_SEC",
         SKW = {"FormattableObjectiveTip","UI_SENTINEL_GALMAP_OBJ_TIP",},
         VALUE_CHANGE_TABLE =
         {
             {"FormattableObjectiveTip","UI_SCRAPYARD_GALMAP_OBJ_TIP",},
+            {"FormattableObjective","UI_SCRAPYARD_GALMAP_OBJ",},
         }
     }
     MissionTable[#MissionTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
+        SEC_EDIT = "SCRAP_SCAN_MISSION_SEC",
         SKW = {"InterstellarOSDMessage","UI_SENTINEL_DISTRESS_OSD_MAP",},
         VALUE_CHANGE_TABLE =
         {
             {"InterstellarOSDMessage","UI_SCRAPYARD_OSD_MAP",},
-        }
-    }
-    MissionTable[#MissionTable + 1] =
-    {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
-        SKW = {"MarkerLabel","UI_MP_CORRUPT_PLANET_LABEL",},
-        VALUE_CHANGE_TABLE =
-        {
+            {"OSDMessage","UI_SCRAPYARD_REVEAL_OSD",},
+            {"SurveyDiscoveryOSDMessage","UI_SCRAPYARD_MARKER_DISC_OSD",},
             {"MarkerLabel","UI_MP_SCRAPYARD_PLANET_LABEL",},
         }
     }
     MissionTable[#MissionTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
-        SKW = {"OSDMessage","UI_CAMP_REVEAL_OSD",},
-        VALUE_CHANGE_TABLE =
-        {
-            {"OSDMessage","UI_SCRAPYARD_REVEAL_OSD",},
-        }
-    }
-    MissionTable[#MissionTable + 1] =
-    {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
-        SKW = {"SurveyDiscoveryOSDMessage","UI_SENTINEL_DISTRESS_DISC_OSD",},
-        VALUE_CHANGE_TABLE =
-        {
-            {"SurveyDiscoveryOSDMessage","UI_SCRAPYARD_MARKER_DISC_OSD",},
-        }
-    }
-    MissionTable[#MissionTable + 1] =
-    {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
+        SEC_EDIT = "SCRAP_SCAN_MISSION_SEC",
         SKW = {"Stage","GcMissionSequenceGetToScanEvent",},
         VALUE_CHANGE_TABLE =
         {
@@ -370,7 +362,7 @@ function CreateMission()
     }
     MissionTable[#MissionTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
+        SEC_EDIT = "SCRAP_SCAN_MISSION_SEC",
         SKW = {"Filename","TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.SENTINELCRASH.DDS",},
         VALUE_CHANGE_TABLE =
         {
@@ -379,7 +371,7 @@ function CreateMission()
     }
     MissionTable[#MissionTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
+        SEC_EDIT = "SCRAP_SCAN_MISSION_SEC",
         SPECIAL_KEY_WORDS = {"Filename","TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.SENTINELCRASH.ON.DDS",},
         VALUE_CHANGE_TABLE =
         {
@@ -388,7 +380,7 @@ function CreateMission()
     }
     MissionTable[#MissionTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
+        SEC_EDIT = "SCRAP_SCAN_MISSION_SEC",
         SPECIAL_KEY_WORDS = {"Filename","TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.SENTINELCRASH.OFF.DDS",},
         VALUE_CHANGE_TABLE =
         {
@@ -397,7 +389,7 @@ function CreateMission()
     }
     MissionTable[#MissionTable + 1] =
     {
-        SEC_EDIT = "SCRAP_SCAN_MISSION",
+        SEC_EDIT = "SCRAP_SCAN_MISSION_SEC",
         SKW = {"Filename","TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.SENTINELCRASH.DDS",},
         VALUE_CHANGE_TABLE =
         {
@@ -407,9 +399,9 @@ function CreateMission()
 
     MissionTable[#MissionTable + 1] =
     {
-        SKW = {"MissionID","SENTSHIP_GALMAP",},
-        ADD_OPTION = "ADDafterSECTION",
-        SEC_ADD_NAMED = "SCRAP_SCAN_MISSION",
+        PKW = {"Missions"},
+        ADD_OPTION = "ADDendSECTION",
+        SEC_ADD_NAMED = "SCRAP_SCAN_MISSION_SEC",
     }
 end
 

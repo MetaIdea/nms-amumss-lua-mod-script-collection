@@ -1,5 +1,5 @@
 ModName = "PTSd Mission Adjustments"
-GameVersion = "6_04"
+GameVersion = "6_23"
 Description = "Increases the amount of items required to complete certain 'Expanding the Base' quests, some quests no longer give certain blueprints as rewards."
 
 AdjustVoyagersExpTasks = true			--false		Changes the requirements for certain tasks in the Voyagers Expedition to work with alterations made by PTSd
@@ -28,6 +28,9 @@ TradeSurgeDuration =	80				--180 minutes	(3 hours)
 --Changes the UI text to match the new requirements for repairing the Pilot Interface for crashed Sentinel Interceptors
 RadiantShards =			6				--3
 InvertedMirrors =		2				--1
+
+--This will be the price paid in Nanites to learn the Gravitino Gun tech recipe when learning it from the Industrial Waste tutorial instead of the Anomaly
+GravGunRecipeNaniteCost = math.floor(20 * 0.31 * 520)	--N/A		(Set this to the same value used for "GRAVITYGUN" in "--PTSd Tech + Upgrade + Unlock costs.lua" for consistency)
 
 --Quest Rewards to be replaced
 ReplacedRewardsSentinel =
@@ -142,6 +145,31 @@ function AddCorvetteCatCondition (CorvettePartCategory, CorvetteToQuery)
 																</Property>]]
 end
 
+GravGunRecipeTutorialCost=
+[[<Property name="Costs" value="GcCostTableEntry" _id="GRAV_TUT_REC">
+      <Property name="Id" value="GRAV_TUT_REC" />
+      <Property name="DisplayCost" value="true" />
+      <Property name="DontCharge" value="false" />
+      <Property name="HideOptionAndDisplayCostOnly" value="false" />
+      <Property name="DisplayOnlyCostIfCantAfford" value="false" />
+      <Property name="HideCostStringIfCanAfford" value="false" />
+      <Property name="RemoveOptionIfCantAfford" value="false" />
+      <Property name="InvertCanAffordOutcome" value="false" />
+      <Property name="MustAffordInCreative" value="false" />
+      <Property name="CommunityContributionValue" value="0" />
+      <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+      <Property name="CannotAffordOSDMsg" value="" />
+      <Property name="MissionMessageWhenCharged" value="" />
+	  <Property name="Cost" value="GcCostMoney">
+		  <Property name="GcCostMoney">
+			  <Property name="Cost" value="]]..GravGunRecipeNaniteCost..[[" />
+			  <Property name="CostCurrency" value="GcCurrency">
+				  <Property name="Currency" value="Nanites" />
+			  </Property>
+		  </Property>
+	  </Property>
+    </Property>]]
+
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
@@ -176,6 +204,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"Amount", StartingHazDamage},
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Name", "UI_HAUL_TUT_OPT1"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Cost", "GRAV_TUT_REC"},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"MissionID", "HAUL_TUT"},
+				["PRECEDING_KEY_WORDS"] = {"Costs"},
+				["CREATE_HOS"] = "TRUE",
+				["ADD"] = GravGunRecipeTutorialCost
 			},
 		}
 	},

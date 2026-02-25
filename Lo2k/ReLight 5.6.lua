@@ -21,7 +21,7 @@ function InsertNewLight(T_New)
 		fov = 360,
 		f = '2.0',
 		fr = 2.0,
-		i = 30000,
+		i = 9,
 		r = 1.0,
 		g = 1.0,
 		b = 1.0,
@@ -95,7 +95,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 5.5.pak", 
+["MOD_FILENAME"] 			= "ReLight 5.6.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
 ["NMS_VERSION"]				= "6.23",

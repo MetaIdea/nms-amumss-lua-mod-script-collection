@@ -7,18 +7,25 @@ local mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.Corvette Technology Fix',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.12',
+	NMS_VERSION			= '6.23',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.EXML',
+		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN',
 		MXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS 	= {'ID', 'T_CR_FIGHT'},
 				PRECEDING_KEY_WORDS	= 'BaseStat',
 				VALUE_CHANGE_TABLE 	= {
 					{'StatsType',	'Ship_PulseDrive'}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS 	= {'ID', 'T_CR_TRADE'},
+				PRECEDING_KEY_WORDS	= 'BaseStat',
+				VALUE_CHANGE_TABLE 	= {
+					{'StatsType',	'Ship_Armour_Shield'}
 				}
 			}
 		}
