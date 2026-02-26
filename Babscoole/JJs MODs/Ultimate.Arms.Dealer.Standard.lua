@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Ultimate.Arms.Dealer.V.2.1.Standard",
+["MOD_FILENAME"]  = "Ultimate.Arms.Dealer.V.2.2.Standard",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole & Lyravega",
-["NMS_VERSION"]   = "6.10",
+["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
     {
         {
@@ -167,7 +167,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["ADD_FILES"] =
     {
         {
-            ["FILE_DESTINATION"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\PIRATES\SHOPWEAPON.SCENE.EXML",
+            ["FILE_DESTINATION"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\PIRATES\SHOPWEAPON.SCENE.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
@@ -467,9 +467,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					<Property name="Type" value="LIGHT" />
 					<Property name="Transform" value="TkTransformData">
 						<Property name="TransX" value="0.000000" />
-						<Property name="TransY" value="3.000000" />
+						<Property name="TransY" value="3.800000" />
 						<Property name="TransZ" value="0.000000" />
-						<Property name="RotX" value="0.000000" />
+						<Property name="RotX" value="-90.000000" />
 						<Property name="RotY" value="0.000000" />
 						<Property name="RotZ" value="0.000000" />
 						<Property name="ScaleX" value="1.000000" />
@@ -480,19 +480,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 					<Property name="Attributes">
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
 							<Property name="Name" value="FOV" />
-							<Property name="Value" value="360.000000" />
+							<Property name="Value" value="180.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
 							<Property name="Name" value="FALLOFF" />
-							<Property name="Value" value="quadratic" />
-						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-							<Property name="Name" value="FALLOFF_RATE" />
 							<Property name="Value" value="2.000000" />
 						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
 							<Property name="Name" value="INTENSITY" />
-							<Property name="Value" value="20000.000000" />
+							<Property name="Value" value="15.000000" />
+						</Property>
+						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+							<Property name="Name" value="RADIUS" />
+							<Property name="Value" value="5.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
 							<Property name="Name" value="COL_R" />
@@ -548,15 +548,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
 							<Property name="Name" value="FALLOFF" />
-							<Property name="Value" value="quadratic" />
-						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-							<Property name="Name" value="FALLOFF_RATE" />
 							<Property name="Value" value="2.000000" />
 						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
 							<Property name="Name" value="INTENSITY" />
-							<Property name="Value" value="20000.000000" />
+							<Property name="Value" value="15.000000" />
+						</Property>
+						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+							<Property name="Name" value="RADIUS" />
+							<Property name="Value" value="5.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
 							<Property name="Name" value="COL_R" />
@@ -596,7 +596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\3CRATE.SCENE.EXML",
+            ["FILE_DESTINATION"] = "MODELS\3CRATE.SCENE.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>

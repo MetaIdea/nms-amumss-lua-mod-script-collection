@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Jaros.Fiends.V.2.2",
+["MOD_FILENAME"]            = "Jaros.Fiends.V.2.3",
 ["MOD_AUTHOR"]              = "JJHookah",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "6.18",
+["NMS_VERSION"]             = "6.24",
 ["MODIFICATIONS"]           =
     {
         {
