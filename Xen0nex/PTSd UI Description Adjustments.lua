@@ -1,5 +1,5 @@
 ModName = "PTSd UI Description Adjustments"
-GameVersion = "6_17"
+GameVersion = "6_24"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 --[[
@@ -510,6 +510,15 @@ SalvageCockpit =
 
 SalvageSails =
 [[Salvage Sails + Reactor]]
+
+ScrapyardInterface =
+[[Analysing waste on &lt;COMMODITY&gt;valuation scale&lt;&gt;...&lt;NEWLINE&gt;Auto-Collect payout offer: &lt;COMMODITY&gt;&lt;IMG&gt;NANITE&lt;&gt;%CARGO_VALUE%&lt;&gt;&lt;NEWLINE&gt;Sort regular waste manually for &lt;STELLAR&gt;~10% more&lt;&gt; nanites and a &lt;FUEL&gt;20% chance&lt;&gt; each for &lt;TECHNOLOGY&gt;Salvaged Data&lt;&gt;, &lt;SPECIAL&gt;Faction Standing&lt;&gt;, and &lt;STELLAR&gt;Rusted Metal&lt;&gt;.&lt;NEWLINE&gt;&lt;COMMODITY&gt;Special hazardous waste&lt;&gt; yields &lt;TRADE&gt;far more&lt;&gt; rewards when sorted manually.]]
+
+ScrapyardInterfaceSpecial =
+[[Analysing waste on valuation scale...&lt;NEWLINE&gt;&lt;COMMODITY&gt;Special hazardous waste detected!&lt;&gt;&lt;NEWLINE&gt;Sort &lt;COMMODITY&gt;Special waste&lt;&gt; manually for &lt;TRADE&gt;~4x more&lt;&gt; nanites, &lt;COMMODITY&gt;guaranteed&lt;&gt; &lt;TECHNOLOGY&gt;Salvaged Data&lt;&gt; and &lt;SPECIAL&gt;Faction Standing&lt;&gt;, as well as a &lt;STELLAR&gt;moderate&lt;&gt; chance for &lt;STELLAR&gt;bonus resources&lt;&gt;.]]
+
+ScrapyardInterfaceEmpty =
+[[No waste detected on valuation scale&lt;NEWLINE&gt;Bring &lt;STELLAR&gt;industrial waste&lt;&gt; to scale to assess value and claim collection fee, or sort manually for &lt;STELLAR&gt;~10% more&lt;&gt; nanites and a &lt;FUEL&gt;20% chance&lt;&gt; of &lt;TECHNOLOGY&gt;Salvaged Data&lt;&gt;, &lt;SPECIAL&gt;Faction Standing&lt;&gt;, and &lt;STELLAR&gt;bonus resources&lt;&gt;. &lt;COMMODITY&gt;Special waste&lt;&gt; yields &lt;TRADE&gt;~4x more&lt;&gt; nanites and &lt;COMMODITY&gt;guaranteed&lt;&gt; bonus rewards if sorted manually.]]
 
 UI_DIFFICULTY_DIFFICULTY_DESC =
 [[Most difficulty settings can be changed at any time, as often as you wish.&#xA;&#xA;Some settings can only be changed before starting a new game. Select &quot;Custom&quot; when choosing a new game to fully customise these settings.&#xA;&#xA;Note that difficulty cannot be changed while a multiplayer mission is active.&#xA;&#xA;&lt;HIGHLIGHT&gt;Survival&lt;&gt;: The default &lt;SPECIAL&gt;PTSd&lt;&gt; experience&#xA;&#xA;&lt;TECHNOLOGY&gt;Normal&lt;&gt;: &lt;SPECIAL&gt;PTSd&lt;&gt; Lite, with key things such as damage and hazards reduced&#xA;&#xA;&lt;TRADE&gt;Relaxed&lt;&gt;: Closer to the vanilla level of challenge but still with the &lt;SPECIAL&gt;PTSd&lt;&gt; rebalancing of rewards, starships, weapons, etc.&#xA;&#xA;&lt;FUEL&gt;Permadeath&lt;&gt;: Periodic backups recommended in case of unexpected deaths from mod-glitches]]
@@ -2656,6 +2665,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", CorvetteTradeAdvancedParts}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SCRAPYARD_LANG"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", ScrapyardInterface}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SCRAPYARD_LANG_ALT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", ScrapyardInterfaceSpecial}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SCRAPYARD_LANG_EMPTY"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", ScrapyardInterfaceEmpty}
 							}
 						},
 					}

@@ -2,7 +2,7 @@ Author = "Gumsk"	-- Edited by Xen0nex	(temporary fix to BOUNTYLASER3 typo)
 --ModName = "GExos Challenge"
 ModNameSub = "gDamageX"
 BaseDescription = "Damage & Tech Damage adjustments"
-GameVersion = "5_61"
+GameVersion = "6_24"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
@@ -268,15 +268,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	
 	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTGROUND"},			--The following 3 entries should be for colliding with things while in the starship
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 800*Other}}},	--default 10
+		{"Damage", 300*Other}}},	--default 10
 	
 	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTSHIP"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 100*Other}}},	--deafult 10
+		{"Damage", 100*Other}}},	--default 10
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTINSTANCE"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 400*Other}}},	--deafult 30
+		{"Damage", 200*Other}}},	--default 30
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERGUN"},
 	["VALUE_CHANGE_TABLE"] = {	

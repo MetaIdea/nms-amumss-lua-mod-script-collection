@@ -6,10 +6,10 @@ AddMechScan0 =
 [[<Property name="Table" value="GcTechnology">
 			<Property name="ID" value="MECH_SCAN0" />
 			<Property name="Group" value="" />
-			<Property name="Name" value="MINOTAUR ULTRA RADAR ARRAY" />
-			<Property name="NameLower" value="Minotaur Ultra Radar Array" />
+			<Property name="Name" value="UI_MECH_SCAN0_NAME" />
+			<Property name="NameLower" value="UI_MECH_SCAN0_NAME_L" />
 			<Property name="Subtitle" value="UI_MECH_SCAN_SUB" />
-			<Property name="Description" value="Allows for additional building types to be acquired by the Minotaur Basic Radar Array." />
+			<Property name="Description" value="UI_MECH_SCAN0_DESC" />
 			<Property name="Teach" value="false" />
 			<Property name="HintStart" value="" />
 			<Property name="HintEnd" value="" />
@@ -127,7 +127,7 @@ AddSubBinocs0 =
 			<Property name="Name" value="UI_SUB_BINOCS_NAME" />
 			<Property name="NameLower" value="UI_SUB_BINOCS_NAME_L" />
 			<Property name="Subtitle" value="UI_SUB_BINOCS_SUB" />
-			<Property name="Description" value="Allows for additional building types to be acquired by the Basic Sonar." />
+			<Property name="Description" value="UI_SUB_BINOCS0_DESC" />
 			<Property name="Teach" value="false" />
 			<Property name="HintStart" value="" />
 			<Property name="HintEnd" value="" />

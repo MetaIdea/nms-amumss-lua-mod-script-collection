@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "6_21"
+GameVersion = "6_24"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -1702,11 +1702,24 @@ ScrapCaseGoodCorvChance	=	3			--20		Chance for 1 of 26 "good" Corvette parts, wo
 ScrapCaseOKCorvChance	=	7			--33		Chance for 1 of 63 "OK" Corvette parts, worth 237,000 units on average
 ExtraScrapChance		=	0			--0			Chance for an additional procedural Scrap item
 
---Changes to rewards from processing Industrial Waste on Salvageable Scrap planets 
-IndustrialWasteNaniteMult =	1.5			--1			Applies a multiplier to the amount of nanites earned from processing industrial waste at Waste Processing Plants or incinerators
-IndustrialWasteSDChance =	20			--0			Adds a chance (relative weighted chance, not out of 100%) for each piece of Industrial Waste to yield some Salvaged Data in addition to nanites instead of a different resource when processed manually into an incinerator
-IndustrialWasteSDAmount =	1			--0			Sets the amount of Salvaged Data awarded for the above chance
+--Changes to rewards from processing Industrial Waste on Salvageable Scrap planets
+	--In Vanilla, the nanite reward is 15 per regular waste, 15/20/25 for small/medium/large special waste, and 10 per waste (regardless of type/size) for Autocollect
+IndustrialWasteNaniteMult =	8/3			--1			Applies a multiplier to the amount of nanites earned from processing all kinds of industrial waste at Waste Processing Plant Autocollection or furnaces (8/3 is roughly equal to 2.67)
+SpecialWasteNaniteMult =	3			--1			Applies an extra multiplier (stacks multiplicatively with the IndustrialWasteNaniteMult multiplier above) to the amount of nanites earned from processing special hazardous industrial waste such as Toxic, Explosive, or Radioactive waste
+AutoCollectNaniteMult =		1.5*0.9		--1			Applies an extra multiplier (stacks multiplicatively with the IndustrialWasteNaniteMult multiplier above) to the amount of nanites earned from processing any kind of industrial waste by Autocollect
 
+RegularWasteSDChance =		20			--0			Adds a chance for each piece of any kind of Industrial Waste to yield some Salvaged Data in addition to nanites when processed manually into a regular furnace
+RegularWasteSDAmount =		1			--0			Sets the amount of Salvaged Data awarded for the above chance
+SpecialWasteSDChance =		100			--0			Adds a chance for each piece of special Industrial Waste to yield some Salvaged Data in addition to nanites when processed manually into the matching special furnace. 
+SpecialWasteSDAmount =		1			--0			Sets the amount of Salvaged Data awarded for the above chance
+
+RegularWasteStandingChance =20			--0			Adds a chance for each piece of any kind of Industrial Waste to award some faction Standing with the system's dominant race in addition to nanites when processed manually into a regular furnace.
+RegularWasteStandingAmount =1			--0			Sets the amount of faction Standing awarded for the above chance
+SpecialWasteStandingChance =100			--0			Adds a chance for each piece of special Industrial Waste to award some faction Standing with the system's dominant race in addition to nanites when processed manually into the matching special furnace.
+SpecialWasteStandingAmount =1			--0			Sets the amount of faction Standing awarded for the above chance
+
+WasteSubstanceMult =		1			--1			Applies a multiplier to the amount of substances (Rusted Metal, Ammonia, Uranium, etc.) sometimes awarded when manually processing waste in a furnace
+WasteRewardChoiceType =		"GiveAll"	--"GiveFirst_ThenAlsoSelectFromRest"	Affects how the game chooses the possible bonus rewards when manually processing waste in a furnace. Vanilla only allows one possible bonus reward, and often no reward. "Giveall" can still result in no reward if all options have a PercentageChance below 100, but can allow multiple bonus rewards to be awarded at once.
 
 --% Chance to receive Echo Locators from various sources
 SpiderMapChance			=	20			--7			Chance to drop from the large Arachnid Sentinels
@@ -2258,6 +2271,24 @@ function CurrencyReward (Currency, Min, Max, Chance)
 			  </Property>
             </Property>
           </Property>]]
+end
+
+function StandingReward (MissionFaction, Min, Max, Chance)
+    return
+[[<Property name="List" value="GcRewardTableItem">
+						<Property name="PercentageChance" value="]]..Chance..[[" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardFactionStanding">
+							<Property name="GcRewardFactionStanding">
+								<Property name="Faction" value="GcMissionFaction">
+									<Property name="MissionFaction" value="]]..MissionFaction..[[" />
+								</Property>
+								<Property name="AmountMin" value="]]..Min..[[" />
+								<Property name="AmountMax" value="]]..Max..[[" />
+								<Property name="SetToMinBeforeAdd" value="false" />
+							</Property>
+						</Property>
+					</Property>]]
 end
 
 function SubstanceReward (Substance, Min, Max, Chance)
@@ -3809,6 +3840,30 @@ function Add2ItemMultiReward (Chance, Item1Type, Item1ID, Item1Amount, Item2Type
           </Property>]]
 end
 
+function AddItemToMultiRewardList (ItemType, ItemID, ItemAmount)
+	return
+	[[<Property name="Items" value="GcMultiSpecificItemEntry">
+					  <Property name="MultiItemRewardType" value="]]..ItemType..[[" />
+					  <Property name="Id" value="]]..ItemID..[[" />
+					  <Property name="Amount" value="]]..ItemAmount..[[" />
+					  <Property name="ProcTechGroup" value="" />
+					  <Property name="ProcTechQuality" value="0" />
+					  <Property name="IllegalProcTech" value="false" />
+					  <Property name="SentinelProcTech" value="false" />
+					  <Property name="AlsoTeachTechBoxRecipe" value="false" />
+					  <Property name="ProcProdType" value="GcProceduralProductCategory">
+						<Property name="ProceduralProductCategory" value="Loot" />
+					  </Property>
+					  <Property name="ProcProdRarity" value="GcRarity">
+						<Property name="Rarity" value="Common" />
+					  </Property>
+					  <Property name="CommunityTierProductList" />
+					  <Property name="HideInSeasonRewards" value="false" />
+					  <Property name="SeasonRewardListFormat" value="" />
+					  <Property name="CustomRewardLocID" value="" />
+					</Property>]]
+end
+
 function AddUpgrade(UpgradeGroup, NormalChance, RareChance, EpicChance, LegendChance)
     return
 	[[<Property name="List" value="GcRewardTableItem">
@@ -4618,22 +4673,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["MATH_OPERATION"] 		= "*",
-				["REPLACE_TYPE"] = "ALL",
-				["INTEGER_TO_FLOAT"] = "PRESERVE",
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Value",	IndustrialWasteNaniteMult}, 
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Reward", "GcRewardRecycleSpecificObject"},
-				["SECTION_UP"] = 1,
-				["REPLACE_TYPE"] = "ALL",
-				["ADD"] = ProductReward ("BP_SALVAGE", IndustrialWasteSDAmount, IndustrialWasteSDAmount, IndustrialWasteSDChance),
-				["ADD_OPTION"] = "ADDafterSECTION",
-			},
-			{
 				["SPECIAL_KEY_WORDS"] = {"Id","SPIDER_LOOT","ID","CHART_ROBOT"},
 				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
@@ -5382,6 +5421,151 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"RewardChoice",	"SelectFromSuccess"}
 				}
+			},
+			{
+				["MATH_OPERATION"] 		= "*",
+				["REPLACE_TYPE"] = "ALL",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Value",	IndustrialWasteNaniteMult}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ExtraStats", "CARGO_SPECIAL"},
+				["MATH_OPERATION"] 		= "*",
+				["REPLACE_TYPE"] = "ALL",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Value",	SpecialWasteNaniteMult}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_CARGO_DESTROY"},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Value",	AutoCollectNaniteMult}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Reward", "GcRewardRecycleSpecificObject"},
+				["SECTION_UP"] = 1,
+				["REPLACE_TYPE"] = "ALL",
+				["ADD"] = ProductReward ("BP_SALVAGE", RegularWasteSDAmount, RegularWasteSDAmount, RegularWasteSDChance),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_CARGO_TOX_L",		"ID", "BP_SALVAGE"},
+					{"Id", "R_CARGO_TOX_M",		"ID", "BP_SALVAGE"},
+					{"Id", "R_CARGO_TOX_S",		"ID", "BP_SALVAGE"},
+					{"Id", "R_CARGO_RAD_L",		"ID", "BP_SALVAGE"},
+					{"Id", "R_CARGO_RAD_M",		"ID", "BP_SALVAGE"},
+					{"Id", "R_CARGO_RAD_S",		"ID", "BP_SALVAGE"},
+					{"Id", "R_CARGO_EXP_L",		"ID", "BP_SALVAGE"},
+					{"Id", "R_CARGO_EXP_M",		"ID", "BP_SALVAGE"},
+					{"Id", "R_CARGO_EXP_S",		"ID", "BP_SALVAGE"},
+				},
+				["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	SpecialWasteSDChance}, 
+					{"AmountMin",	SpecialWasteSDAmount}, 
+					{"AmountMax",	SpecialWasteSDAmount}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Reward", "GcRewardRecycleSpecificObject"},
+				["SECTION_UP"] = 1,
+				["REPLACE_TYPE"] = "ALL",
+				["ADD"] = StandingReward ("None", RegularWasteStandingAmount, RegularWasteStandingAmount, RegularWasteStandingChance),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_CARGO_TOX_L",		"Reward", "GcRewardFactionStanding"},
+					{"Id", "R_CARGO_TOX_M",		"Reward", "GcRewardFactionStanding"},
+					{"Id", "R_CARGO_TOX_S",		"Reward", "GcRewardFactionStanding"},
+					{"Id", "R_CARGO_RAD_L",		"Reward", "GcRewardFactionStanding"},
+					{"Id", "R_CARGO_RAD_M",		"Reward", "GcRewardFactionStanding"},
+					{"Id", "R_CARGO_RAD_S",		"Reward", "GcRewardFactionStanding"},
+					{"Id", "R_CARGO_EXP_L",		"Reward", "GcRewardFactionStanding"},
+					{"Id", "R_CARGO_EXP_M",		"Reward", "GcRewardFactionStanding"},
+					{"Id", "R_CARGO_EXP_S",		"Reward", "GcRewardFactionStanding"},
+				},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	SpecialWasteStandingChance}, 
+					{"AmountMin",	SpecialWasteStandingAmount}, 
+					{"AmountMax",	SpecialWasteStandingAmount}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Reward", "GcRewardRecycleSpecificObject"},
+				["SECTION_UP"] = 3,
+				["REPLACE_TYPE"] = "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"RewardChoice",	WasteRewardChoiceType},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Reward", "GcRewardRecycleSpecificObject"},
+				["SECTION_UP"] = 3,
+				["REPLACE_TYPE"] = "ALL",
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	WasteSubstanceMult},
+					{"AmountMax",	WasteSubstanceMult},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Reward", "GcRewardRecycleSpecificObject"},
+				["SECTION_UP"] = 1,
+				["REPLACE_TYPE"] = "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	100},
+				}
+			},
+			--Adding extra rewards to Expedition milestone rewards in order to allow you to craft the required Expedition tech with PTSd's harder tech crafting recipes
+				--Remnant Expedition
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S21_S1M1",	"Items", "GcMultiSpecificItemEntry"},
+				["ADD"] = AddItemToMultiRewardList ("Substance", "RED2", "200"),
+				["ADD_OPTION"]  = "ADDbeforeSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S21_S1M3",	"List", "GcRewardTableItem"},
+				["ADD"] = SubstanceReward ("RED2", "200", "200", "100"),
+				["ADD_OPTION"]  = "ADDbeforeSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S21_S1M3",	"List", "GcRewardTableItem"},
+				["ADD"] = SubstanceReward ("ASTEROID1", "100", "100", "100"),
+				["ADD_OPTION"]  = "ADDbeforeSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S21_S2M1",	"List", "GcRewardTableItem"},
+				["ADD"] = SubstanceReward ("ASTEROID3", "200", "200", "100"),
+				["ADD_OPTION"]  = "ADDbeforeSECTION",
+			},
+			--[[{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S21_S2M7",	"List", "GcRewardTableItem"},
+				["ADD"] = SubstanceReward ("GREEN2", "200", "200", "100"),
+				["ADD_OPTION"]  = "ADDbeforeSECTION",
+			},]]
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S21_S3M3",	"List", "GcRewardTableItem"},
+				["ADD"] = ProductReward ("ATLAS_SEED_4", "2", "2", "100"),
+				["ADD_OPTION"]  = "ADDbeforeSECTION",
 			},
 			--[[
 			{

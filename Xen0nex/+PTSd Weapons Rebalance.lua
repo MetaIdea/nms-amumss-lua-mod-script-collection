@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "6_18"
+GameVersion = "6_24"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 RevertMiningLaserOverheatChanges = false				--false		If set to true, reverts the cooldown timer after overheating for Mining/Hijacked/Runic Laser etc. back to vanilla values, and will match up with the UI overheat overlay again.
@@ -23,7 +23,10 @@ GSD = 						1							--1		For all player Starship weapon damage
 --Damage multiplier for Explosions against items designated as OBJECTS
 	-- (If set to 0, can't mine rocks & plants with ship weapons or explosions, other than an insignificant trickle with the Phase Beam)
 	-- As a side effect of setting to 0, Alluring Specimens won't get destroyed when "Anglerfish" Abyssal Horrors spawn
-ExplosionObjectMult = 0									--1
+ExplosionObjectMult = 		0							--1
+
+--Damage multiplier for Melee against items designated as OBJECTS (affects damage dealt when hitting rocks/plants with your multi-tool instead of using the Mining Laser)
+MeleeObjectMult =			0.4							--1
 
 --Damage multiplier for Lasers against items designated as CREATURES / ROBOTS
 LaserCritMult = 2										--4		How much the damage of the mining laser is multiplied on a critical hit (typically on the head / eye)
@@ -2193,6 +2196,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"Multiplier",	ExplosionObjectMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "OBJECT",	"DamageType", "Melee"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Multiplier",	MeleeObjectMult}
 				}
 			},
 			{

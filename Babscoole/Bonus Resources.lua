@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"] = "BonusResourcesfor6.17.pak", 
+	["MOD_FILENAME"] = "BonusResourcesfor6.24.pak", 
 	["MOD_AUTHOR"]= "ripshawe",
 	["LUA_AUTHOR"]= "Babscoole",
-	["NMS_VERSION"]= "6.17.2",
+	["NMS_VERSION"]= "6.24.0",
 	["MOD_DESCRIPTION"]= "Modifies the Optical Drill and Advanced Mining Laser Tech to mine faster and get more resources.",
 	["MODIFICATIONS"] = 
 	{

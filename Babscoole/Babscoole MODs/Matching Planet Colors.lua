@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Matching Planet Colors",
-["MOD_AUTHOR"]    = "JustSpaceThings and Babscoole",
-["NMS_VERSION"]   = "5.75",
+["MOD_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "6.20",
 ["MODIFICATIONS"] =
   {
     {

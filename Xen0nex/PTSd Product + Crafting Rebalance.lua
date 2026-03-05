@@ -279,9 +279,9 @@ ProductSaleChangesModular =		--For items which have their data in NMS_MODULARCUS
 {
 	--Various Starship Reactor Cores		(making base value roughly equivalent to what you'd get in PTSd for selling all upgrade modules you get for scrapping a starship of this class)
 	{"SHIP_CORE_C",		0.5*0.667},			--300	(Bought with Nanites)		(~150 = Average value of scrapping a C-Class ship and selling all upgrade modules)
-	{"SHIP_CORE_B",		0.25*0.667},		--3000	(Bought with Nanites)		(~750 = Average value of scrapping a C-Class ship and selling all upgrade modules)
-	{"SHIP_CORE_A",		0.25*0.667},		--6500	(Bought with Nanites)		(~1625 = Average value of scrapping a C-Class ship and selling all upgrade modules)
-	{"SHIP_CORE_S",		0.25*0.667},		--12000	(Bought with Nanites)		(~3000 = Average value of scrapping a C-Class ship and selling all upgrade modules)
+	{"SHIP_CORE_B",		0.25*0.667},		--3000	(Bought with Nanites)		(~750 = Average value of scrapping a B-Class ship and selling all upgrade modules)
+	{"SHIP_CORE_A",		0.25*0.667},		--6500	(Bought with Nanites)		(~1625 = Average value of scrapping a A-Class ship and selling all upgrade modules)
+	{"SHIP_CORE_S",		0.25*0.667},		--12000	(Bought with Nanites)		(~3000 = Average value of scrapping a S-Class ship and selling all upgrade modules)
 }
 
 --Applies a multiplier to the base value of different categories of fossil bones (each category of fossil bone is equally likely to spawn at an Ancient Bones node)

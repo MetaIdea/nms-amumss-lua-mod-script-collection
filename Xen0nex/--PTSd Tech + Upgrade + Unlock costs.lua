@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Unlock costs"
-GameVersion = "6_18"
+GameVersion = "6_24"
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
 UpgradeCMult	=		1.2							--Vanilla cost is	60		This multiplies the vanilla "BaseValue", affecting both purchase and selling prices.	E.G. "1.2" means you sell them for 1.2x the vanilla price, and shops charge 1.2x more
@@ -834,6 +834,10 @@ QuadParts = [[<Property name="Requirements" value="GcTechnologyRequirement">
 MinotaurFuelRate = 3						--0.5		Changes base fuel usage rate for Minotaur exomech engine (higher value uses fuel faster)
 MinotaurBoreChargeAmount = 700				--800 (200)		The "tank size" of how much "charge"/"fuel" the Minotaur Bore can hold. (Terrain Manipulator is 600)
 MinotaurBoreChargeCostMult = 2				--			Multiplier to apply to the cost of recharging the Minotaur Bore. (Minotaur Bore is normally 0.375x as expensive to recharge as Terrain Manipulator) E.G. a value of 2 means it costs twice as much substance to recharge the same size "tank" as vanilla
+
+--Changes various fuel related values for Gravitino Coil
+GravCoilChargeAmount = 300				--600		The "tank size" of how much "charge"/"fuel" the Gravitino Coil can hold.
+GravCoilChargeCostMult = 2				--			Multiplier to apply to the cost of recharging the Gravitino Coil. E.G. a value of 2 means it costs twice as much substance to recharge the same size "tank" as vanilla
 
 --Changes how much substances it costs to refill the Biofuel Reactor for a set amount of time (the max size of the fuel tank is controlled in "gBase Items BasicX.lua")
 BiofuelRefillCostMult = 2					--1			In vanilla it takes 50 Carbon / 17 Cond. Carbon / 25 Oxygen for 25 hours worth of charge, so a "2" here means it would take 100 Carbon / 34 Cond. Carbon / 50 Oxygen to fill it for 25 hours worth of charge
@@ -2602,11 +2606,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*", 
-							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_MINER"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "GRAVITYGUN"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ChargeMultiplier",	Invert (MinotaurBoreChargeCostMult)},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "GRAVITYGUN"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ChargeAmount",	GravCoilChargeAmount},
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", 
+							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_MINER"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ChargeMultiplier",	Invert (GravCoilChargeCostMult)},
 							}
 						},
 						{

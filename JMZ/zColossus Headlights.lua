@@ -2,12 +2,12 @@ Author			= "JMZawodny"
 ModName			= "zColossus"
 ModNameSub		= "Headlights"
 BaseDescription = "Make the Headlights useful"
-GameVersion		= "v6.23"
+GameVersion		= "v6.24"
 ModVersion		= ""
 
-Angle = -10.0
+Angle     = -10.0
 Intensity = 200.0
-Radius = 200.0
+Radius    = 200.0
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -17,11 +17,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 	LUA_AUTHOR		= Author,
 	NMS_VERSION		= GameVersion,
 	MODIFICATIONS	= {{MBIN_CHANGE_TABLE = {
-	{ -- Adjust Angle
+	{
 		MBIN_FILE_SOURCE = "models\common\vehicles\rover\rover.scene.mbin",
 		MXML_CHANGE_TABLE = 
 		{
-			{ -- Set the values
+			{ -- Adjust Angle
 				SKW = {
 					{"Name" ,"spotLight1_2_3"},
 					{"Name" ,"spotLight3_2_3"},
@@ -33,13 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{"RotX" ,Angle},
 				}
 			},
-		}
-	},
-	{ -- Adjust Intensity
-		MBIN_FILE_SOURCE = "models\common\vehicles\rover\rover.scene.mbin",
-		MXML_CHANGE_TABLE = 
-		{
-			{ -- Set the values
+			{ -- Adjust Intensity
 				SKW = {
 					{"Name" ,"spotLight1_2_3", "Name", "INTENSITY"},
 					{"Name" ,"spotLight3_2_3", "Name", "INTENSITY"},
@@ -51,13 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{"Value" ,Intensity},
 				}
 			},
-		}
-	},
-	{ -- Adjust Radius
-		MBIN_FILE_SOURCE = "models\common\vehicles\rover\rover.scene.mbin",
-		MXML_CHANGE_TABLE = 
-		{
-			{ -- Set the values
+			{ -- Adjust Radius
 				SKW = {
 					{"Name" ,"spotLight1_2_3", "Name", "RADIUS"},
 					{"Name" ,"spotLight3_2_3", "Name", "RADIUS"},
@@ -71,6 +59,5 @@ NMS_MOD_DEFINITION_CONTAINER =
 			},
 		}
 	},
-
 	}},}
 }
