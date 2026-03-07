@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "6_06"
+GameVersion = "6_24"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -202,7 +202,7 @@ SpecificShipStatChanges =
 RoyalClassAddAgile = {"C", "B", "A"}		--In vanilla Royal (Exotic) ships only have SHIP_AGILE defined at S Class (since it can only spawn at S class), this adds the same S class value at lower classes as well, just for completeness
 
 Class = {"C", "B", "A", "S"}
-LivingShipClass = {"S"}
+LivingShipClass = {"C", "B", "A", "S"}
 ShipStats = {"SHIP_DAMAGE", "SHIP_SHIELD", "SHIP_HYPERDRIVE", "SHIP_AGILE"}
 
 --Multipliers to apply on top of the ship stat bonuses
@@ -316,11 +316,11 @@ LivingShipStatChanges =
 		{
 			"Alien"			--Living Ship	Maneuverability: Low (150-250)				Speed: Low
 		},
-		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"SHIP_DAMAGE",				0.8,	0.8,	0.8,	0.8},		--			+		N/A,		N/A,		N/A,		50-75	%
-			{"SHIP_SHIELD",				2.3,	2.3,	2.3,	2.3},		--			+		N/A,		N/A,		N/A,		15-38	%
-			{"SHIP_HYPERDRIVE",			2.7,	2.7,	2.7,	2.7},		--			+		N/A,		N/A,		N/A,		75-95	%
-			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		N/A,		N/A,		N/A,		10-15,	%
+		{--Multipliers for stats at		C,			B,			A,			S	class	(Vanilla bonus at	C,			B,			A,			S	class)
+			{"SHIP_DAMAGE",				0.8/5.25,	0.8/2.625,	0.8/1.5,	0.8},		--			+		N/A[50-75],	N/A[50-75],	N/A[50-75],	50-75	%
+			{"SHIP_SHIELD",				2.3/5.25,	2.3/2.625,	2.3/1.5,	2.3},		--			+		N/A[15-38],	N/A[15-38],	N/A[15-38],	15-38	%
+			{"SHIP_HYPERDRIVE",			2.7/5.25,	2.7/2.625,	2.7/1.5,	2.7},		--			+		N/A[75-95],	N/A[75-95],	N/A[75-95],	75-95	%
+			--{"SHIP_AGILE",				1.0,		1.0,		1.0,		1.0},		--			+		N/A,		N/A,		N/A,		10-15,	%
 		}
 	}
 }
@@ -383,7 +383,7 @@ ShipAgileChanges	=
 		{
 			"Alien",				25,		33.3,	41.6,	50,			--			+		N/A,		N/A,		N/A,		10-15,	%
 		},
-		{"S"}			
+		{"C", "B", "A", "S"}		
 	},
 }
 
@@ -912,6 +912,43 @@ RoyalAgileAdd = [[<Property name="BaseStats" value="GcInventoryGenerationBaseSta
               <Property name="MaxFixedAdd" value="0.000000" />
             </Property>]]
 
+AddDuplicateAlienShipBaseStats =
+[[<Property name="BaseStats" value="GcInventoryGenerationBaseStatDataEntry" _index="0">
+							<Property name="BaseStatID" value="SHIP_DAMAGE" />
+							<Property name="Min" value="50.000000" />
+							<Property name="Max" value="75.000000" />
+							<Property name="MinFixedAdd" value="0.000000" />
+							<Property name="MaxFixedAdd" value="0.000000" />
+						</Property>
+						<Property name="BaseStats" value="GcInventoryGenerationBaseStatDataEntry" _index="1">
+							<Property name="BaseStatID" value="SHIP_SHIELD" />
+							<Property name="Min" value="15.000000" />
+							<Property name="Max" value="38.000000" />
+							<Property name="MinFixedAdd" value="0.000000" />
+							<Property name="MaxFixedAdd" value="0.000000" />
+						</Property>
+						<Property name="BaseStats" value="GcInventoryGenerationBaseStatDataEntry" _index="2">
+							<Property name="BaseStatID" value="SHIP_HYPERDRIVE" />
+							<Property name="Min" value="75.000000" />
+							<Property name="Max" value="95.000000" />
+							<Property name="MinFixedAdd" value="0.000000" />
+							<Property name="MaxFixedAdd" value="0.000000" />
+						</Property>
+						<Property name="BaseStats" value="GcInventoryGenerationBaseStatDataEntry" _index="3">
+							<Property name="BaseStatID" value="ALIEN_SHIP" />
+							<Property name="Min" value="1.000000" />
+							<Property name="Max" value="1.000000" />
+							<Property name="MinFixedAdd" value="0.000000" />
+							<Property name="MaxFixedAdd" value="0.000000" />
+						</Property>
+						<Property name="BaseStats" value="GcInventoryGenerationBaseStatDataEntry" _index="4">
+							<Property name="BaseStatID" value="SHIP_AGILE" />
+							<Property name="Min" value="10.000000" />
+							<Property name="Max" value="15.000000" />
+							<Property name="MinFixedAdd" value="0.000000" />
+							<Property name="MaxFixedAdd" value="0.000000" />
+						</Property>]]
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
@@ -1407,6 +1444,17 @@ for i = 1, #ShipStatChanges do
 		end
 	end
 end
+ChangesToInventoryTable[#ChangesToInventoryTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Alien", "GcInventoryGenerationBaseStatData",		"C", "GcInventoryGenerationBaseStatClassData"},
+					{"Alien", "GcInventoryGenerationBaseStatData",		"B", "GcInventoryGenerationBaseStatClassData"},
+					{"Alien", "GcInventoryGenerationBaseStatData",		"A", "GcInventoryGenerationBaseStatClassData"},
+					},
+				["PRECEDING_KEY_WORDS"] = {"BaseStats"},
+				["CREATE_HOS"] = "TRUE",  
+				["ADD"] = AddDuplicateAlienShipBaseStats,
+			}
 for i = 1, #LivingShipStatChanges do
 	local ShipType = LivingShipStatChanges[i][1][1]
 	local StatIDs = LivingShipStatChanges[i][2]
@@ -1416,7 +1464,7 @@ for i = 1, #LivingShipStatChanges do
 		local Multiplier
 		for k = 1, #LivingShipClass do
 	
-			Multiplier = StatIDs[j][k+4]
+			Multiplier = StatIDs[j][k+1]
 			ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
 				["PRECEDING_FIRST"] = "TRUE",

@@ -22,7 +22,7 @@ ExpShipFighterCargoSlots = 				8						--36	(For Golden Vector/Utopia Speeder)
 ExpShipHaulerCargoSlots = 				19						--36	(For Iron Vulture)
 ExpShipExplorerCargoSlots = 			8						--36	(For Boundary Herald)
 ExpShipExoticCargoSlots = 				7						--36	(For StarbornRunner/Phoenix)
-ExpShipAlienCargoSlots = 				10						--36	(For Wraith)
+ExpShipAlienCargoSlots = 				10						--20	(For Wraith)
 --Changes Tech inventory size for expedition reward starships. based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range)
 ExpShipFighterTechSize = 				"SciSmall"				--"FgtLarge"	(16)	(For Golden Vector/Utopia Speeder)
 ExpShipHaulerTechSize = 				"DrpSmall"				--"DrpLarge"	(9)		(For Iron Vulture)
@@ -3884,7 +3884,7 @@ function AddUpgrade(UpgradeGroup, NormalChance, RareChance, EpicChance, LegendCh
               </Property>]]
 end
 
-function AddTechForShip (TechId, Amount)
+function AddTechForShip (TechId, Amount, MaxAmount)
 	return
 	[[<Property name="Slots" value="GcInventoryElement" _id="]]..TechId..[[">
                     <Property name="Type" value="GcInventoryType">
@@ -3892,7 +3892,7 @@ function AddTechForShip (TechId, Amount)
                     </Property>
                     <Property name="Id" value="]]..TechId..[[" />
                     <Property name="Amount" value="]]..Amount..[[" />
-                    <Property name="MaxAmount" value="]]..Amount..[[" />
+                    <Property name="MaxAmount" value="]]..MaxAmount..[[" />
                     <Property name="DamageFactor" value="0" />
                     <Property name="FullyInstalled" value="true" />
 					<Property name="AddedAutomatically" value="false" />
@@ -5554,14 +5554,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S21_S2M1",	"List", "GcRewardTableItem"},
-				["ADD"] = SubstanceReward ("ASTEROID3", "200", "200", "100"),
+				["ADD"] = ProductReward ("ATLAS_SEED_2", "2", "2", "100"),
 				["ADD_OPTION"]  = "ADDbeforeSECTION",
 			},
-			--[[{
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S21_S2M7",	"List", "GcRewardTableItem"},
-				["ADD"] = SubstanceReward ("GREEN2", "200", "200", "100"),
+				["ADD"] = ProductReward ("ATLAS_SEED_2", "2", "2", "100"),
 				["ADD_OPTION"]  = "ADDbeforeSECTION",
-			},]]
+			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S21_S3M3",	"List", "GcRewardTableItem"},
 				["ADD"] = ProductReward ("ATLAS_SEED_4", "2", "2", "100"),
@@ -6356,12 +6356,16 @@ for i = 1, #ExpShipRewardIds do
 		for j = 1, #ExpShipCoreTechsAlien do
 			local TechId = ExpShipCoreTechsAlien[j]
 			local Amount = 200
+			local MaxAmount = 200
 			if TechId == "WARP_ALIEN" then
 				Amount = 120
+				MaxAmount = 120
 			elseif TechId == "SHIPGUN_ALIEN" or TechId == "SHIPLAS_ALIEN" then
-				Amount = 100
+				Amount = 0
+				MaxAmount = 100
 			else
 				Amount = 200
+				MaxAmount = 200
 			end
 			
 				ChangesToRewardTable[#ChangesToRewardTable+1] =
@@ -6373,17 +6377,30 @@ for i = 1, #ExpShipRewardIds do
 				{
 					["SPECIAL_KEY_WORDS"] = {"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer",	"Slots", "GcInventoryElement"},
 					["ADD_OPTION"]  = "ADDbeforeSECTION",  
-					["ADD"] = AddTechForShip (TechId, Amount),
+					["ADD"] = AddTechForShip (TechId, Amount, MaxAmount),
 				}
 		end
+		ChangesToRewardTable[#ChangesToRewardTable+1] =
+		{
+			["SPECIAL_KEY_WORDS"] = {
+				{"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer",	"Id", "UA_PULSE4"},
+				--{"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer",	"Id", "CHARGER_ALIEN"},
+				{"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer",	"Id", "UA_SLASR2"},
+			},
+			["REMOVE"] = "SECTION",
+		}
+		
 	else
 		for j = 1, #ExpShipCoreTechs do
 			local TechId = ExpShipCoreTechs[j]
 			local Amount = 200
+			local MaxAmount = 200
 			if TechId == "HYPERDRIVE" then
 				Amount = 120
+				MaxAmount = 120
 			else
 				Amount = 200
+				MaxAmount = 200
 			end
 			
 				ChangesToRewardTable[#ChangesToRewardTable+1] =
@@ -6395,7 +6412,7 @@ for i = 1, #ExpShipRewardIds do
 				{
 					["SPECIAL_KEY_WORDS"] = {"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer",	"Slots", "GcInventoryElement"},
 					["ADD_OPTION"]  = "ADDbeforeSECTION",  
-					["ADD"] = AddTechForShip (TechId, Amount),
+					["ADD"] = AddTechForShip (TechId, Amount, MaxAmount),
 				}
 		end
 	end
@@ -6405,7 +6422,10 @@ if RewardShipHyperdriveEmpty then
 
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"ShipInventory", "GcInventoryContainer",		"Id", "HYPERDRIVE"},
+				["SPECIAL_KEY_WORDS"] = {
+					{"ShipInventory", "GcInventoryContainer",		"Id", "HYPERDRIVE"},
+					{"ShipInventory", "GcInventoryContainer",		"Id", "WARP_ALIEN"},
+				},
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_CHANGE_TABLE"] 	=
 				{

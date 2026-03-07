@@ -1,5 +1,5 @@
 ModName = "PTSd Mission Adjustments"
-GameVersion = "6_23"
+GameVersion = "6_24"
 Description = "Increases the amount of items required to complete certain 'Expanding the Base' quests, some quests no longer give certain blueprints as rewards."
 
 AdjustVoyagersExpTasks = true			--false		Changes the requirements for certain tasks in the Voyagers Expedition to work with alterations made by PTSd
@@ -47,7 +47,7 @@ RemoveEarlyRoamerReward = true			--		Set true to remove the recipe for the Roame
 RemoveLargePlanterReward = true			--		Set true to make the Farmer NPC no longer teach you the recipe for the Large Hydroponic Tray when he teaches you the recipe for the regular Hydroponic Tray
 LargeToMediumRefiner = true				--		Set true to make the Scientists NPC teach the Medium Refiner recipe instead of the Large Refiner recipe
 ReduceArmourerRewards = true			--		Set true to make the Armourer NPC teach the Phase Beam, Efficient Thrusters, and Ablative Armour blueprints as well as some weapon/ship tech pool techs & upgrade modules instead of teaching the Cyclotron Ballista, Positron Ejector, and Infra-Knife Accelerator blueprints
-DreamsDeepNeedSonar2 = true				--		Set true to make the 3rd stage of the "Dreams of the Deep" require you to install the "High-Power Sonar" to complete instead of the "Basic Sonar"
+DreamsDeepNeedSonar2 = true				--		Set true to make the 3rd stage of the "Dreams of the Deep" require you to install the "Advanced Sonar" to complete instead of the "Basic Sonar"
 
 --Set which recipes for Storage Containers to remove from the reward the Overseer gives you in the base building mission chain, where he normally gives all 10 recipes
 RemoveContainerMission = {"CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9", }		
@@ -547,7 +547,7 @@ ChangesToWaterMissionTable[#ChangesToWaterMissionTable+1] =
 				["SPECIAL_KEY_WORDS"] = {"Technology",	"SUB_BINOCS"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Technology", "SUB_BINOCS0"},
+					{"Technology", "SUB_BINOCSA"},
 				}
 			}
 end

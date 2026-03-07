@@ -87,7 +87,10 @@ TechAdjustments =
 		"MECH_SCAN",	1				--Minotaur Basic Radar Array			120 Nanites
 	},
 	{
-		"MECH_SCAN0",	1				--Minotaur Ultra Radar Array (added by PTSd)	240 Nanites
+		"MECH_SCANA",	1				--Advanced Radar Array (added by PTSd)	140 Nanites
+	},
+	{
+		"MECH_SCAN0",	1				--Ultra Radar Array (added by PTSd)		160 Nanites
 	},
 	{
 		"MECH_SENT_HEAD",	0.23		--Hardframe Body (Abandoned Mode)		480 Nanites
@@ -168,7 +171,10 @@ TechAdjustments =
 		"SUB_BINOCS",	12				--Basic Sonar 							10 Nanites
 	},
 	{
-		"SUB_BINOCS0",	1				--High-Power Sonar (Added by PTSd)		240 Nanites
+		"SUB_BINOCSA",	1				--Advanced Sonar (Added by PTSd)		140 Nanites
+	},
+	{
+		"SUB_BINOCS0",	1				--High-Power Sonar (Added by PTSd)		160 Nanites
 	},
 	{
 		"SUIT_REFINER",	0.4				--Personal Refiner						360 nanites
@@ -198,7 +204,7 @@ TechAdjustments =
 		"UT_RAD",	0.75				--Radiation Deflector					160 Nanites
 	},
 	{
-		"UT_PROTECT",	0.67			--Shield Lattice						120 Nanites		Cost reduced since it now is given freely in Base Computer Archive mission chain
+		"UT_PROTECT",	2/3				--Shield Lattice						120 Nanites		Cost reduced since it now is given freely in Base Computer Archive mission chain
 	},
 	{
 		"STEALTH",	1.5					--Cloaking Device 						80 Nanites
@@ -222,7 +228,7 @@ TechAdjustments =
 		"UT_SHIPDRIFT",	0.3				--Flight Assist Override				460 Nanites
 	},
 	{
-		"SUIT_ROCKET",	2.3334			--Trade Rocket							90 Nanites
+		"SUIT_ROCKET",	2 + 1/3			--Trade Rocket							90 Nanites
 	},
 	{
 		"F_TELEPORT",	3.2				--Matter Beam							5 Salvaged Frigate Modules			(Not affected by TechCostMult)
@@ -255,7 +261,7 @@ TechAdjustments =
 		"FISHLASER",	50				--Fishing Rig							1 Nanite
 	},
 	{
-		"F_HACCESS4",	1.33			--Resonance Matrix						12 Salvaged Frigate Modules			(Not affected by TechCostMult)
+		"F_HACCESS4",	1 + 1/3			--Resonance Matrix						12 Salvaged Frigate Modules			(Not affected by TechCostMult)
 	},
 	{
 		"SUMMON_SUIT",	0.25			--Exocraft Summoning Unit				640 Nanites
@@ -273,16 +279,16 @@ TechAdjustments =
 		"EXO_REFINER",	0.25			--Mineral Processing Rig				480 Nanites
 	},
 	{
-		"VEHICLE_FLAME",	0.334		--Mounted Flamethrower					480 Nanites
+		"VEHICLE_FLAME",	1/3			--Mounted Flamethrower					480 Nanites
 	},
 	{
 		"GRAVITYGUN",	0.31			--Gravitino Coil						520 Nanites
 	},
 	{
-		"VEHICLE_SCOPE",	0.75		--Cyclops Scope							320 Nanites
+		"VEHICLE_SCOPE",	0.375		--Cyclops Scope							320 Nanites
 	},
 	{
-		"EXO_PLOUGH",	0.667			--Excavation Blade						480 Nanites
+		"EXO_PLOUGH",	0.25			--Excavation Blade						480 Nanites
 	},
 }
 
@@ -434,7 +440,7 @@ AddItems =
 		"MECH_ARMY_LEGS",		"MECH_PROD",		1,		"Product",
 	},
 	{	--Excavation Blade 
-		"EXO_PLOUGH",			"ASTEROID3",		50,		"Substance",
+		"EXO_PLOUGH",			"ATLAS_SEED_2",		1,		"Product",
 	},
 	--The following "techs" are actually damaged slots in crashed starships / broken Multi-Tools, repairing them costs half the component cost
 	{	--Hull Fracture			
@@ -721,7 +727,7 @@ ReplaceItems =
 		"GRAVITYGUN",			"GRAVBALL",			8,		"Product",		"GRAVBALL",
 	},
 	{	--Cyclops Scope
-		"VEHICLE_SCOPE",		"GREEN2",			60,		"Substance",	"LAND3",
+		"VEHICLE_SCOPE",		"ATLAS_SEED_2",		1,		"Product",		"LAND3",
 	},
 	{	--Excavation Blade
 		"EXO_PLOUGH",			"CAVECUBE",			20,		"Product",		"NANOTUBES",

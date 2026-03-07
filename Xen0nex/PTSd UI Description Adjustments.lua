@@ -36,6 +36,18 @@ JAPANESE.MBIN		"Japanese"
 USENGLISH.MBIN		"USEnglish"
 ]]
 
+MechScanName =
+[[MINOTAUR BASIC RADAR ARRAY]]
+
+MechScanNameLower =
+[[Minotaur Basic Radar Array]]
+
+ExoRadarUpgr1Desc =
+[[Allows for additional building types to be acquired by the Exocraft Radar, including &lt;SPECIAL&gt;Alien Structures&lt;&gt;, &lt;STELLAR&gt;Abandoned Structures&lt;&gt;, and &lt;STELLAR&gt;Waste Heaps&lt;&gt;.]]
+
+ExoRadarUpgr2Desc =
+[[Allows for additional building types to be acquired by the Exocraft Radar, including &lt;STELLAR&gt;Trade Outposts&lt;&gt; and &lt;SPECIAL&gt;Ruins&lt;&gt;.]]
+
 AnalysisVisorDesc =
 [[Specialist &lt;TECHNOLOGY&gt;Discovery&lt;&gt; and &lt;TECHNOLOGY&gt;Survey&lt;&gt; unit.&#xA;&#xA;Augments standard &lt;TECHNOLOGY&gt;Scanner&lt;&gt; capabilities by projecting detailed environmental data directly over the user's visor. Allows the identification of &lt;STELLAR&gt;distant points of interest&lt;&gt;.&#xA;&#xA;The Visor will generate &lt;COMMODITY&gt;valuable data&lt;&gt; when used to study &lt;TRADEABLE&gt;flora&lt;&gt;, &lt;FUEL&gt;fauna&lt;&gt; and &lt;TECHNOLOGY&gt;minerals&lt;&gt;.&#xA;&lt;HIGHLIGHT&gt;This data's value&lt;&gt; is further boosted by the &lt;CATALYST&gt;Scanning&lt;&gt; stat bonus for your Multi-Tool's type.&#xA;&#xA;Hold &lt;IMG&gt;AIM&lt;&gt; to operate. Press &lt;IMG&gt;ZOOM&lt;&gt; to zoom.]]
 
@@ -206,7 +218,7 @@ BasicSonarDesc =
 [[A high-detail sonar device, capable of upgrading the scanner technology aboard a Nautilon-class submarine to Analysis Visor levels.&#xA;&#xA;Press &lt;IMG&gt;SCAN&lt;&gt; to activate a sonar pulse, revealing &lt;STELLAR&gt;additional points of interest&lt;&gt; that cannot be located via a Multi-Tool scanner.&#xA;&#xA;Use the Quick Menu to tune the sonar to &lt;TECHNOLOGY&gt;specific sites&lt;&gt;.]]
 
 ExoRadarDesc =
-[[A large and complex field-based subspace radar.&#xA;&#xA;Due to their large power consumption and inherent subatomic instability, they are found only installed on Exocraft.&#xA;&#xA;Press &lt;IMG&gt;SCAN&lt;&gt; to activate a radar sweep, revealing &lt;STELLAR&gt;additional points of interest&lt;&gt; that cannot be located via a Multi-Tool scanner.&#xA;&#xA;Use the Quick Menu to tune the radar to &lt;TECHNOLOGY&gt;specific buildings&lt;&gt;.]]
+[[A large and complex field-based subspace radar.&#xA;&#xA;Due to their large power consumption and inherent subatomic instability, they are found only installed on Exocraft.&#xA;&#xA;Press &lt;IMG&gt;SCAN&lt;&gt; to activate a radar sweep, revealing &lt;STELLAR&gt;additional points of interest&lt;&gt; that cannot be located via a Multi-Tool scanner.&#xA;&#xA;Use the &lt;IMG&gt;QUICK_MENU&lt;&gt; Quick Menu to tune the radar to &lt;TECHNOLOGY&gt;specific buildings&lt;&gt;.]]
 
 AMUDesc =
 [[An &lt;TECHNOLOGY&gt;automated harvester&lt;&gt; for the mining of resources. Once activated, the AMU extracts &lt;STELLAR&gt;250 units&lt;&gt; of minerals in &lt;TECHNOLOGY&gt;10 minutes&lt;&gt; before collecting and &lt;FUEL&gt;refueling&lt;&gt;.&#xA;&#xA;Can be left running while working in your base, or built at your landing site when visiting planets and given a half-tank of fuel to run for just &lt;TECHNOLOGY&gt;5 minutes&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;NOTE&lt;&gt;: It is recommended to remain in the &lt;TECHNOLOGY&gt;same system&lt;&gt; during operation and to &lt;STELLAR&gt;delete and rebuild&lt;&gt; this unit before refueling it to reduce the chances of a &lt;HIGHLIGHT&gt;vanilla glitch&lt;&gt; clearing its contents.]]
@@ -1153,6 +1165,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"English", WeaponScanRecharge}
 							}
 						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "VEHICLESCAN_U1_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", ExoRadarUpgr1Desc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "VEHICLESCAN_U2_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", ExoRadarUpgr2Desc}
+							}
+						},
 					}
 				},
 				{
@@ -1757,6 +1783,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", MinotaurLaserDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_MECH_SCAN_NAME"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", MechScanName}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_MECH_SCAN_NAME_L"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", MechScanNameLower}
 							}
 						},
 					}

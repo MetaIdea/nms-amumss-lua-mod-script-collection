@@ -1,6 +1,124 @@
 ModName = "PTSd Exocraft scanner Changes"
 Description = "Removes Drop Pod from the options for Exocraft Scanner targets. Moves Monolith Scanning from Signal Booster Tau to Advanced Signal Booster to replace it. Splits Nautilon & Minotaur Scanners into 2 separate techs"
-GameVersion = "6_21"
+GameVersion = "6_24"
+
+AddMechScanA = 
+[[<Property name="Table" value="GcTechnology">
+			<Property name="ID" value="MECH_SCANA" />
+			<Property name="Group" value="" />
+			<Property name="Name" value="UI_MECH_SCANA_NAME" />
+			<Property name="NameLower" value="UI_MECH_SCANA_NAME_L" />
+			<Property name="Subtitle" value="UI_MECH_SCAN_SUB" />
+			<Property name="Description" value="UI_MECH_SCANA_DESC" />
+			<Property name="Teach" value="false" />
+			<Property name="HintStart" value="" />
+			<Property name="HintEnd" value="" />
+			<Property name="Icon" value="TkTextureResource">
+				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/VEHICLE/RENDER.SCAN.DDS" />
+			</Property>
+			<Property name="Colour">
+				<Property name="R" value="0.0352941193" />
+				<Property name="G" value="0.360784322" />
+				<Property name="B" value="0.466666669" />
+				<Property name="A" value="1.000000" />
+			</Property>
+			<Property name="Level" value="1" />
+			<Property name="Chargeable" value="false" />
+			<Property name="ChargeAmount" value="100" />
+			<Property name="ChargeType" value="GcRealitySubstanceCategory">
+				<Property name="SubstanceCategory" value="Earth" />
+			</Property>
+			<Property name="ChargeBy" />
+			<Property name="ChargeMultiplier" value="1.000000" />
+			<Property name="BuildFullyCharged" value="false" />
+			<Property name="UsesAmmo" value="false" />
+			<Property name="AmmoId" value="" />
+			<Property name="PrimaryItem" value="false" />
+			<Property name="Upgrade" value="true" />
+			<Property name="Core" value="false" />
+			<Property name="RepairTech" value="false" />
+			<Property name="Procedural" value="false" />
+			<Property name="Category" value="GcTechnologyCategory">
+				<Property name="TechnologyCategory" value="Mech" />
+			</Property>
+			<Property name="Rarity" value="GcTechnologyRarity">
+				<Property name="TechnologyRarity" value="Impossible" />
+			</Property>
+			<Property name="Value" value="10.000000" />
+			<Property name="Requirements">
+				<Property name="Requirements" value="GcTechnologyRequirement">
+					<Property name="ID" value="BLUE2" />
+					<Property name="Type" value="GcInventoryType">
+						<Property name="InventoryType" value="Substance" />
+					</Property>
+					<Property name="Amount" value="160" />
+				</Property>
+				<Property name="Requirements" value="GcTechnologyRequirement">
+					<Property name="ID" value="ASTEROID2" />
+					<Property name="Type" value="GcInventoryType">
+						<Property name="InventoryType" value="Substance" />
+					</Property>
+					<Property name="Amount" value="50" />
+				</Property>
+				<Property name="Requirements" value="GcTechnologyRequirement">
+					<Property name="ID" value="TECH_COMP" />
+					<Property name="Type" value="GcInventoryType">
+						<Property name="InventoryType" value="Product" />
+					</Property>
+					<Property name="Amount" value="1" />
+				</Property>
+			</Property>
+			<Property name="BaseStat" value="GcStatsTypes">
+				<Property name="StatsType" value="Vehicle_Scan" />
+			</Property>
+			<Property name="StatBonuses">
+				<Property name="StatBonuses" value="GcStatsBonus">
+					<Property name="Stat" value="GcStatsTypes">
+						<Property name="StatsType" value="Vehicle_Scan" />
+					</Property>
+					<Property name="Bonus" value="1.000000" />
+					<Property name="Level" value="2" />
+				</Property>
+			</Property>
+			<Property name="RequiredTech" value="" />
+			<Property name="RequiredLevel" value="0" />
+			<Property name="FocusLocator" value="" />
+			<Property name="UpgradeColour">
+				<Property name="R" value="1.000000" />
+				<Property name="G" value="1.000000" />
+				<Property name="B" value="1.000000" />
+				<Property name="A" value="1.000000" />
+			</Property>
+			<Property name="LinkColour">
+				<Property name="R" value="0.0980392173" />
+				<Property name="G" value="0.34117648" />
+				<Property name="B" value="0.443137258" />
+				<Property name="A" value="1.000000" />
+			</Property>
+			<Property name="RewardGroup" value="" />
+			<Property name="BaseValue" value="1" />
+			<Property name="Cost" value="GcItemPriceModifiers">
+				<Property name="SpaceStationMarkup" value="0.000000" />
+				<Property name="LowPriceMod" value="0.000000" />
+				<Property name="HighPriceMod" value="0.000000" />
+				<Property name="BuyBaseMarkup" value="0.000000" />
+				<Property name="BuyMarkupMod" value="0.000000" />
+			</Property>
+			<Property name="RequiredRank" value="1" />
+			<Property name="DispensingRace" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="FragmentCost" value="140" />
+			<Property name="TechShopRarity" value="GcTechnologyRarity">
+				<Property name="TechnologyRarity" value="Impossible" />
+			</Property>
+			<Property name="WikiEnabled" value="true" />
+			<Property name="NeverPinnable" value="false" />
+			<Property name="DamagedDescription" value="" />
+			<Property name="ParentTechId" value="" />
+			<Property name="IsTemplate" value="false" />
+			<Property name="ExclusivePrimaryStat" value="false" />
+		</Property>]]
 
 AddMechScan0 = 
 [[<Property name="Table" value="GcTechnology">
@@ -108,7 +226,125 @@ AddMechScan0 =
 			<Property name="DispensingRace" value="GcAlienRace">
 				<Property name="AlienRace" value="None" />
 			</Property>
-			<Property name="FragmentCost" value="240" />
+			<Property name="FragmentCost" value="160" />
+			<Property name="TechShopRarity" value="GcTechnologyRarity">
+				<Property name="TechnologyRarity" value="Impossible" />
+			</Property>
+			<Property name="WikiEnabled" value="true" />
+			<Property name="NeverPinnable" value="false" />
+			<Property name="DamagedDescription" value="" />
+			<Property name="ParentTechId" value="" />
+			<Property name="IsTemplate" value="false" />
+			<Property name="ExclusivePrimaryStat" value="false" />
+		</Property>]]
+
+AddSubBinocsA = 
+[[<Property name="Table" value="GcTechnology">
+			<Property name="ID" value="SUB_BINOCSA" />
+			<Property name="Group" value="" />
+			<Property name="Name" value="UI_SUB_BINOCSA_NAME" />
+			<Property name="NameLower" value="UI_SUB_BINOCSA_NAME_L" />
+			<Property name="Subtitle" value="UI_SUB_BINOCS_SUB" />
+			<Property name="Description" value="UI_SUB_BINOCSA_DESC" />
+			<Property name="Teach" value="false" />
+			<Property name="HintStart" value="" />
+			<Property name="HintEnd" value="" />
+			<Property name="Icon" value="TkTextureResource">
+				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/VEHICLE/RENDER.SUBSCAN.DDS" />
+			</Property>
+			<Property name="Colour">
+				<Property name="R" value="0.0352941193" />
+				<Property name="G" value="0.360784322" />
+				<Property name="B" value="0.466666669" />
+				<Property name="A" value="1.000000" />
+			</Property>
+			<Property name="Level" value="1" />
+			<Property name="Chargeable" value="false" />
+			<Property name="ChargeAmount" value="100" />
+			<Property name="ChargeType" value="GcRealitySubstanceCategory">
+				<Property name="SubstanceCategory" value="Earth" />
+			</Property>
+			<Property name="ChargeBy" />
+			<Property name="ChargeMultiplier" value="1.000000" />
+			<Property name="BuildFullyCharged" value="true" />
+			<Property name="UsesAmmo" value="false" />
+			<Property name="AmmoId" value="" />
+			<Property name="PrimaryItem" value="false" />
+			<Property name="Upgrade" value="true" />
+			<Property name="Core" value="false" />
+			<Property name="RepairTech" value="false" />
+			<Property name="Procedural" value="false" />
+			<Property name="Category" value="GcTechnologyCategory">
+				<Property name="TechnologyCategory" value="Submarine" />
+			</Property>
+			<Property name="Rarity" value="GcTechnologyRarity">
+				<Property name="TechnologyRarity" value="Impossible" />
+			</Property>
+			<Property name="Value" value="10.000000" />
+			<Property name="Requirements">
+				<Property name="Requirements" value="GcTechnologyRequirement">
+					<Property name="ID" value="MIRROR" />
+					<Property name="Type" value="GcInventoryType">
+						<Property name="InventoryType" value="Product" />
+					</Property>
+					<Property name="Amount" value="1" />
+				</Property>
+				<Property name="Requirements" value="GcTechnologyRequirement">
+					<Property name="ID" value="VENTGEM" />
+					<Property name="Type" value="GcInventoryType">
+						<Property name="InventoryType" value="Product" />
+					</Property>
+					<Property name="Amount" value="3" />
+				</Property>
+				<Property name="Requirements" value="GcTechnologyRequirement">
+					<Property name="ID" value="ATLAS_SEED_4" />
+					<Property name="Type" value="GcInventoryType">
+						<Property name="InventoryType" value="Product" />
+					</Property>
+					<Property name="Amount" value="1" />
+				</Property>
+			</Property>
+			<Property name="BaseStat" value="GcStatsTypes">
+				<Property name="StatsType" value="Vehicle_Scan" />
+			</Property>
+			<Property name="StatBonuses">
+				<Property name="StatBonuses" value="GcStatsBonus">
+					<Property name="Stat" value="GcStatsTypes">
+						<Property name="StatsType" value="Vehicle_Scan" />
+					</Property>
+					<Property name="Bonus" value="1.000000" />
+					<Property name="Level" value="2" />
+				</Property>
+			</Property>
+			<Property name="RequiredTech" value="" />
+			<Property name="RequiredLevel" value="0" />
+			<Property name="FocusLocator" value="" />
+			<Property name="UpgradeColour">
+				<Property name="R" value="1.000000" />
+				<Property name="G" value="1.000000" />
+				<Property name="B" value="1.000000" />
+				<Property name="A" value="1.000000" />
+			</Property>
+			<Property name="LinkColour">
+				<Property name="R" value="0.200000" />
+				<Property name="G" value="0.600000" />
+				<Property name="B" value="1.000000" />
+				<Property name="A" value="1.000000" />
+			</Property>
+			<Property name="RewardGroup" value="" />
+			<Property name="BaseValue" value="1" />
+			<Property name="Cost" value="GcItemPriceModifiers">
+				<Property name="SpaceStationMarkup" value="0.000000" />
+				<Property name="LowPriceMod" value="0.000000" />
+				<Property name="HighPriceMod" value="0.000000" />
+				<Property name="BuyBaseMarkup" value="0.000000" />
+				<Property name="BuyMarkupMod" value="0.000000" />
+			</Property>
+			<Property name="RequiredRank" value="1" />
+			<Property name="DispensingRace" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="FragmentCost" value="140" />
 			<Property name="TechShopRarity" value="GcTechnologyRarity">
 				<Property name="TechnologyRarity" value="Impossible" />
 			</Property>
@@ -226,7 +462,7 @@ AddSubBinocs0 =
 			<Property name="DispensingRace" value="GcAlienRace">
 				<Property name="AlienRace" value="None" />
 			</Property>
-			<Property name="FragmentCost" value="240" />
+			<Property name="FragmentCost" value="160" />
 			<Property name="TechShopRarity" value="GcTechnologyRarity">
 				<Property name="TechnologyRarity" value="Impossible" />
 			</Property>
@@ -364,22 +600,50 @@ AddAdvancedThethyBeam =
 			<Property name="ExclusivePrimaryStat" value="false" />
 		</Property>]]
 
-AddMechScan0Tree =
+AddMechScanA0Tree =
 [[<Property name="Children" value="GcUnlockableItemTreeNode">
-                        <Property name="Unlockable" value="MECH_SCAN0" />
-                        <Property name="Children" />
-                      </Property>]]
-
-AddSubBinocs0Tree =
-[[<Property name="Children" value="GcUnlockableItemTreeNode">
-                    <Property name="Unlockable" value="SUB_BINOCS" />
+                    <Property name="Unlockable" value="MECH_SCANA" />
                     <Property name="Children">
                       <Property name="Children" value="GcUnlockableItemTreeNode">
-                        <Property name="Unlockable" value="SUB_BINOCS0" />
+                        <Property name="Unlockable" value="MECH_SCAN0" />
                         <Property name="Children" />
                       </Property>
                     </Property>
                   </Property>]]
+
+AddSubBinocsA0Tree =
+[[<Property name="Children" value="GcUnlockableItemTreeNode">
+					<Property name="Unlockable" value="SUB_BINOCS" />
+					<Property name="Children">
+						<Property name="Children" value="GcUnlockableItemTreeNode">
+							<Property name="Unlockable" value="SUB_BINOCSA" />
+							<Property name="Children">
+								<Property name="Children" value="GcUnlockableItemTreeNode">
+									<Property name="Unlockable" value="SUB_BINOCS0" />
+									<Property name="Children" />
+								</Property>
+							</Property>
+						</Property>
+					</Property>
+				</Property>]]
+
+AddMechScanFreighter =
+[[<Property name="VehicleScanTable" value="GcVehicleScanTableEntry">
+			<Property name="ScanList">
+				<Property name="ScanList" value="CRASHED_FREIGHTER" _index="0" />
+			</Property>
+			<Property name="Name" value="SUB_RADAR_SCAN_FREIGHTER" />
+			<Property name="RequiredTech" value="MECH_SCANA" />
+			<Property name="RequiredTechSeasonOverrides" />
+			<Property name="Icon" value="TkTextureResource">
+				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/BUILDINGS.CRASHEDFREIGHTER.DDS" />
+			</Property>
+			<Property name="UseRequiredVehicle" value="false" />
+			<Property name="PreferClosest" value="false" />
+			<Property name="RequiredVehicle" value="GcVehicleType">
+				<Property name="VehicleType" value="Buggy" />
+			</Property>
+		</Property>]]
 
 function AddSingleHOESChild (ItemID)
 	return
@@ -408,13 +672,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"ScanList","DROPPOD"},
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SECTION_UP"] = 1,
+				["REPLACE_TYPE"] 		= "ALL",
 				["REMOVE"] = "SECTION"
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"ScanList","MONOLITH"},
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -423,7 +686,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Name","SUB_RADAR_SCAN_CRASH"},
-				--["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"RequiredTech", "SUB_BINOCS0"}
@@ -431,27 +693,40 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Name","SUB_RADAR_SCAN_FREIGHTER"},
-				--["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"RequiredTech", "SUB_BINOCS0"}
+					{"RequiredTech", "SUB_BINOCSA"}
 				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Name","MECH_SCAN_FACT"},
-				--["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"RequiredTech", "MECH_SCANA"}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Name","MECH_SCAN_CRASH"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"RequiredTech", "MECH_SCAN0"}
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"ScanList", "CRASHED_FREIGHTER"},
+				["REMOVE"] = "LINE"
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Name","MECH_SCAN_CRASH"},
-				--["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"RequiredTech", "MECH_SCAN0"}
+					{"Filename", "TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/BUILDINGS.STARSHIPS.DDS"}
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"VehicleScanTable", "GcVehicleScanTableEntry"},
+				["ADD_OPTION"] = "ADDafterSECTION",
+				["ADD"] = AddMechScanFreighter
 			},
 		}
 	},
@@ -459,6 +734,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"},
 		["MXML_CHANGE_TABLE"] 	= 
 		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"Table", "GcTechnology"},
+				["ADD_OPTION"] = "ADDafterSECTION",
+				["ADD"] = AddMechScanA
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Table", "GcTechnology"},
+				["ADD_OPTION"] = "ADDafterSECTION",
+				["ADD"] = AddSubBinocsA
+			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Table", "GcTechnology"},
 				["ADD_OPTION"] = "ADDafterSECTION",
@@ -480,19 +765,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["REMOVE"] = "SECTION"
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"ID","MECH_SCAN"},
+				["SPECIAL_KEY_WORDS"] = {"ID", "SUB_BINOCS"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Name", "MINOTAUR BASIC RADAR ARRAY"},
-					{"NameLower", "Minotaur Basic Radar Array"},
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"ID","SUB_BINOCS"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Name", "BASIC SONAR"},
-					{"NameLower", "Basic Sonar"},
+					{"Name", "UI_SUB_BINOCSB_NAME"},
+					{"NameLower", "UI_SUB_BINOCSB_NAME_L"},
 				}
 			},
 		}
@@ -504,12 +781,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOMECH_TECH_TREE",		"Unlockable", "MECH_PILOT"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-				["ADD"] = AddMechScan0Tree
+				["ADD"] = AddMechScanA0Tree
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"S9ExoTech", "GcUnlockableItemTrees",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "MECH_PILOT"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-				["ADD"] = AddMechScan0Tree
+				["ADD"] = AddMechScanA0Tree
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOSUB_TECH_TREE",		"Unlockable", "SUB_GUN"},
@@ -526,7 +803,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOSUB_TECH_TREE",		"Unlockable", "SUB_GUN"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-				["ADD"] = AddSubBinocs0Tree
+				["ADD"] = AddSubBinocsA0Tree
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees",		"Title", "UI_EXOSUB_TECH_TREE",		"Unlockable", "SUB_LASER"},
@@ -555,7 +832,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"S9ExoTech", "GcUnlockableItemTrees",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "SUB_GUN"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-				["ADD"] = AddSubBinocs0Tree
+				["ADD"] = AddSubBinocsA0Tree
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"S9ExoTech", "GcUnlockableItemTrees",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "SUB_LASER"},
