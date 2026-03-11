@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_ExperienceBehavior_v612-A",
+["MOD_FILENAME"]            = "MOD_DUD_ExperienceBehavior_v624-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "6.12",
+["NMS_VERSION"]             = "6.24",
 ["MODIFICATIONS"]           =
     {
         {
@@ -37,6 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"PetFollowRange",                      "5"},
                                 {"PetTeleportDistOnPlanet",             "100"},
                                 {"PetOrderMaxRange",                    "75"},
+                                {"PetInteractionLightIntensityMax",     "6.000000"},
                                 {"SandWormMaxSteer",                    "0.2"},
                                 {"SandWormMaxHeightAdjust",             "0.6"},
                                 {"SandWormJumpHeight",                  "80"},

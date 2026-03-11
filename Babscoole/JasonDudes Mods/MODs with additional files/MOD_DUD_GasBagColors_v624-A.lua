@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_GasBagColors_v606-A",
+["MOD_FILENAME"]  = "MOD_DUD_GasBagColors_v624-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.06",
+["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
     {
         {
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-				<Property name="Textures" value="TkProceduralTexture">
+				<Property name="Textures" value="TkProceduralTexture" _index="1">
 					<Property name="Name" value="" />
 					<Property name="Palette" value="TkPaletteTexture">
 						<Property name="Palette" value="Stone" />
@@ -71,7 +71,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-				<Property name="Textures" value="TkProceduralTexture">
+				<Property name="Textures" value="TkProceduralTexture" _index="1">
 					<Property name="Name" value="" />
 					<Property name="Palette" value="TkPaletteTexture">
 						<Property name="Palette" value="GrassAlt" />

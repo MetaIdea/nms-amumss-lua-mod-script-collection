@@ -146,10 +146,10 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_LushColors_v606-A",
+["MOD_FILENAME"]  = "MOD_DUD_LushColors_v624-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.06",
+["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
     {
         {
@@ -207,7 +207,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="1">
           <Property name="Name" value="" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -226,7 +226,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARKGROUNDDECAL.COLOUR.DDS" />
         </Property>
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="2">
           <Property name="Name" value="" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -268,7 +268,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="1">
           <Property name="Name" value="1" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -287,7 +287,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARKGROUNDDECAL.BASE.1.DDS" />
         </Property>
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="2">
           <Property name="Name" value="1" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -341,7 +341,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="1">
           <Property name="Name" value="BLOBS" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -360,7 +360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARRENBARK.OVERLAY.BLOBS.DDS" />
         </Property>
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="2">
           <Property name="Name" value="BLOBS" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -398,10 +398,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "STRIPES"},
+                            ["EXML_INDEX"] = "3",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "STRIPES"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="4">
           <Property name="Name" value="STRIPES" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -420,7 +424,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARRENBARK.OVERLAY.STRIPES.DDS" />
         </Property>
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="5">
           <Property name="Name" value="STRIPES" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -458,10 +462,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS"},
+                            ["EXML_INDEX"] = "6",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="7">
           <Property name="Name" value="MOSS" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -480,7 +488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARRENBARK.OVERLAY.MOSS.DDS" />
         </Property>
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="8">
           <Property name="Name" value="MOSS" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -513,7 +521,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="1">
           <Property name="Name" value="" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -553,7 +561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="1">
           <Property name="Name" value="VINES" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -572,7 +580,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.OVERLAY.VINES.DDS" />
         </Property>
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="2">
           <Property name="Name" value="VINES" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -603,10 +611,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LICHEN"},
+                            ["EXML_INDEX"] = "3",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LICHEN"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="4">
           <Property name="Name" value="LICHEN" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -625,7 +637,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.OVERLAY.LICHEN.DDS" />
         </Property>
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="5">
           <Property name="Name" value="LICHEN" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -656,10 +668,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "GRASS"},
+                            ["EXML_INDEX"] = "6",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "GRASS"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="7">
           <Property name="Name" value="GRASS" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -678,7 +694,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.OVERLAY.GRASS.DDS" />
         </Property>
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="8">
           <Property name="Name" value="GRASS" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -709,10 +725,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS"},
+                            ["EXML_INDEX"] = "9",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="10">
           <Property name="Name" value="MOSS" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -731,7 +751,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.OVERLAY.MOSS.DDS" />
         </Property>
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="11">
           <Property name="Name" value="MOSS" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Wood" />
@@ -799,7 +819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="3">
           <Property name="Name" value="SPOTS" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Plant" />
@@ -818,7 +838,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANTA.OVERLAY.SPOTS.DDS" />
         </Property>
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="4">
           <Property name="Name" value="CENTERTOEDGE" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Plant" />
@@ -837,7 +857,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANTA.OVERLAY.CENTERTOEDGE.DDS" />
         </Property>
-        <Property name="Textures" value="TkProceduralTexture">
+        <Property name="Textures" value="TkProceduralTexture" _index="5">
           <Property name="Name" value="EDGETOCENTER" />
           <Property name="Palette" value="TkPaletteTexture">
             <Property name="Palette" value="Plant" />

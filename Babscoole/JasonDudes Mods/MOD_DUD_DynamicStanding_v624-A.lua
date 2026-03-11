@@ -108,10 +108,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "MOD_DUD_DynamicStanding_v616-A",
+["MOD_FILENAME"]    = "MOD_DUD_DynamicStanding_v624-A",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.16",
+["NMS_VERSION"]     = "6.24",
 ["MODIFICATIONS"]   =
     {
         {
@@ -631,7 +631,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 											<Property name="AlienRace" value="None" />
 										</Property>
 										<Property name="AmountMin" value="1" />
-										<Property name="AmountMax" value="2" />
+										<Property name="AmountMax" value="1" />
 										<Property name="UseExpeditionEventSystemRace" value="false" />
 									</Property>
 								</Property>

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_HeliosGlowFX_v606-A",
+["MOD_FILENAME"]  = "MOD_DUD_HeliosGlowFX_v624-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.06",
+["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
     {
         {
@@ -25,31 +25,45 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "0.000000"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "15000.000000"},
+                                {"Value", "15.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "RADIUS"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "4.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "COL_R"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "0.009000"},
+                                {"Value", "0.006000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "COL_G"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "0.656000"},
+                                {"Value", "0.459000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "COL_B"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "1.000000"},
+                                {"Value", "0.700000"},
                             }
                         },
                         {
@@ -84,27 +98,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 				</Property>
 				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
 					<Property name="Name" value="FALLOFF" />
-					<Property name="Value" value="quadratic" />
-				</Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-					<Property name="Name" value="FALLOFF_RATE" />
 					<Property name="Value" value="2.000000" />
 				</Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
 					<Property name="Name" value="INTENSITY" />
-					<Property name="Value" value="20000.000000" />
+					<Property name="Value" value="15.000000" />
+				</Property>
+				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+					<Property name="Name" value="RADIUS" />
+					<Property name="Value" value="3.000000" />
 				</Property>
 				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
 					<Property name="Name" value="COL_R" />
-					<Property name="Value" value="0.009000" />
+					<Property name="Value" value="0.006000" />
 				</Property>
 				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
 					<Property name="Name" value="COL_G" />
-					<Property name="Value" value="0.656000" />
+					<Property name="Value" value="0.459000" />
 				</Property>
 				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
 					<Property name="Name" value="COL_B" />
-					<Property name="Value" value="1.000000" />
+					<Property name="Value" value="0.700000" />
 				</Property>
 				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
 					<Property name="Name" value="COOKIE_IDX" />

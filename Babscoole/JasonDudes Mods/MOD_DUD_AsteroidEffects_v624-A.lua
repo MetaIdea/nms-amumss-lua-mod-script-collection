@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_AsteroidEffects_v606-A",
+["MOD_FILENAME"]            = "MOD_DUD_AsteroidEffects_v624-A",
 ["MOD_AUTHOR"]              = "JasonDude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "6.06",
+["NMS_VERSION"]             = "6.24",
 ["MODIFICATIONS"]           =
     {
         {
@@ -13,18 +13,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "METADATA/EFFECTS/SPACEEFFECTS.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Id", "SPACESPARKS"},
-                                {"Id", "WRECKLOCALATMOS"},
-                                {"Id", "WRECKATMOS"},
-                                {"Id", "ENTERPULSE"},
-                                {"Id", "EXITPULSE"},
-                                {"Id", "WRECKELEC"},
-                            },
-                            ["REMOVE"] = "SECTION"
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] =
+                            -- {
+                                -- {"Id", "SPACESPARKS"},
+                                -- {"Id", "WRECKLOCALATMOS"},
+                                -- {"Id", "WRECKATMOS"},
+                                -- {"Id", "ENTERPULSE"},
+                                -- {"Id", "EXITPULSE"},
+                                -- {"Id", "WRECKELEC"},
+                            -- },
+                            -- ["REMOVE"] = "SECTION"
+                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_R_EXP"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -62,9 +62,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 				<Property name="Debris" value="GcDebrisData" _index="1">
 					<Property name="Filename" value="TkModelResource">
 						<Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
-						<Property name="ResHandle" value="GcResource">
-							<Property name="ResourceID" value="0" />
-						</Property>
 						<Property name="Seed" value="0" />
 					</Property>
 					<Property name="Number" value="3" />
@@ -146,9 +143,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 				<Property name="Debris" value="GcDebrisData" _index="1">
 					<Property name="Filename" value="TkModelResource">
 						<Property name="Filename" value="MODELS/SPACE/ASTEROIDS/SMALLASTEROID.SCENE.MBIN" />
-						<Property name="ResHandle" value="GcResource">
-							<Property name="ResourceID" value="0" />
-						</Property>
 						<Property name="Seed" value="0" />
 					</Property>
 					<Property name="Number" value="3" />
@@ -200,9 +194,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 				<Property name="Debris" value="GcDebrisData" _index="0">
 					<Property name="Filename" value="TkModelResource">
 						<Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
-						<Property name="ResHandle" value="GcResource">
-							<Property name="ResourceID" value="0" />
-						</Property>
 						<Property name="Seed" value="0" />
 					</Property>
 					<Property name="Number" value="1" />
@@ -215,9 +206,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 				<Property name="Debris" value="GcDebrisData" _index="1">
 					<Property name="Filename" value="TkModelResource">
 						<Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
-						<Property name="ResHandle" value="GcResource">
-							<Property name="ResourceID" value="0" />
-						</Property>
 						<Property name="Seed" value="0" />
 					</Property>
 					<Property name="Number" value="1" />

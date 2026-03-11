@@ -1,4 +1,3 @@
-
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"] 			= "30sec void egg.pak",

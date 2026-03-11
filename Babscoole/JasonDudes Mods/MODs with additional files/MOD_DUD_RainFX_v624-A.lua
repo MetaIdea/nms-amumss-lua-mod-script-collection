@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_RainFX_v606-A",
+["MOD_FILENAME"]            = "MOD_DUD_RainFX_v624-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "6.06",
+["NMS_VERSION"]             = "6.24",
 ["MODIFICATIONS"]           =
     {
         {
@@ -22,8 +22,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number Of Particles",   "2500"},
-                                {"Radius",                "30.000000"},
+                                {"Number Of Particles",   "3000"},
+                                {"Radius",                "50.000000"},
                                 {"Min Particle Lifetime", "0.750000"},
                                 {"Max Particle Lifetime", "1.250000"},
                             }
@@ -32,41 +32,60 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Major Direction"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Y", "-4.000000"},
+                                {"Y", "-2.000000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Scale Range"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"X", "0.500000"},
-                                {"Y", "0.500000"},
-                                {"Z", "0.500000"},
+                                {"X", "1.000000"},
+                                {"Y", "1.000000"},
+                                {"Z", "1.000000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Amplitude Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"X", "-0.200000"},
+                                {"X", "-0.100000"},
                                 {"Y", "0.000000"},
-                                {"Z", "-0.200000"},
+                                {"Z", "-0.100000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Amplitude Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"X", "0.200000"},
-                                {"Y", "0.500000"},
-                                {"Z", "0.200000"},
+                                {"X", "0.100000"},
+                                {"Y", "0.000000"},
+                                {"Z", "0.100000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Colour 1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "1.000000"},
+                                {"G", "1.000000"},
+                                {"B", "1.000000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Colour 2"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "1.000000"},
+                                {"G", "1.000000"},
+                                {"B", "1.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"WindDrift", "TkEmitterWindDrift"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Speed", "2.000000"},
+                                {"Strength", "35.000000"},
+                                {"Speed",    "0.000000"},
                             }
                         },
                     }
@@ -78,8 +97,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number Of Particles",   "2500"},
-                                {"Radius",                "30.000000"},
+                                {"Number Of Particles",   "3000"},
+                                {"Radius",                "50.000000"},
                                 {"Min Particle Lifetime", "0.750000"},
                                 {"Max Particle Lifetime", "1.250000"},
                             }
@@ -88,40 +107,43 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Major Direction"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Y", "-4.000000"},
+                                {"Y", "-2.000000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Scale Range"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"X", "0.500000"},
-                                {"Y", "0.500000"},
-                                {"Z", "0.500000"},
+                                {"X", "1.000000"},
+                                {"Y", "1.000000"},
+                                {"Z", "1.000000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Amplitude Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"X", "-0.200000"},
+                                {"X", "-0.100000"},
                                 {"Y", "0.000000"},
-                                {"Z", "-0.200000"},
+                                {"Z", "-0.100000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Amplitude Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"X", "0.200000"},
-                                {"Y", "0.500000"},
-                                {"Z", "0.200000"},
+                                {"X", "0.100000"},
+                                {"Y", "0.000000"},
+                                {"Z", "0.100000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Colour 1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"R", "1.000000"},
+                                {"G", "1.000000"},
+                                {"B", "1.000000"},
                                 {"A", "1.000000"},
                             }
                         },
@@ -129,6 +151,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Colour 2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"R", "1.000000"},
+                                {"G", "1.000000"},
+                                {"B", "1.000000"},
                                 {"A", "1.000000"},
                             }
                         },
@@ -136,8 +161,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"WindDrift", "TkEmitterWindDrift"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Strength", "20.000000"},
-                                {"Speed",    "2.000000"},
+                                {"Strength", "35.000000"},
+                                {"Speed",    "0.000000"},
+                            }
+                        },
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"VelocityAlignment", "true"},
                             }
                         },
                     }
@@ -149,8 +180,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number Of Particles",   "2500"},
-                                {"Radius",                "30.000000"},
+                                {"Number Of Particles",   "3000"},
+                                {"Radius",                "50.000000"},
                                 {"Min Particle Lifetime", "0.750000"},
                                 {"Max Particle Lifetime", "1.250000"},
                             }
@@ -159,41 +190,60 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Major Direction"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Y", "-4.000000"},
+                                {"Y", "-2.000000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Scale Range"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"X", "0.500000"},
-                                {"Y", "0.500000"},
-                                {"Z", "0.500000"},
+                                {"X", "1.000000"},
+                                {"Y", "1.000000"},
+                                {"Z", "1.000000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Amplitude Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"X", "-0.200000"},
+                                {"X", "-0.100000"},
                                 {"Y", "0.000000"},
-                                {"Z", "-0.200000"},
+                                {"Z", "-0.100000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Amplitude Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"X", "0.200000"},
-                                {"Y", "0.500000"},
-                                {"Z", "0.200000"},
+                                {"X", "0.100000"},
+                                {"Y", "0.000000"},
+                                {"Z", "0.100000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Colour 1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "1.000000"},
+                                {"G", "1.000000"},
+                                {"B", "1.000000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Colour 2"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "1.000000"},
+                                {"G", "1.000000"},
+                                {"B", "1.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"WindDrift", "TkEmitterWindDrift"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Speed", "2.000000"},
+                                {"Strength", "35.000000"},
+                                {"Speed",    "0.000000"},
                             }
                         },
                     }
@@ -205,8 +255,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Number Of Particles",   "2500"},
-                                {"Radius",                "30.000000"},
+                                {"Number Of Particles",   "3000"},
+                                {"Radius",                "50.000000"},
                                 {"RadiusY",               "25.000000"},
                                 {"Min Particle Lifetime", "0.750000"},
                                 {"Max Particle Lifetime", "1.250000"},
@@ -216,41 +266,60 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Major Direction"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Y", "-4.000000"},
+                                {"Y", "-2.000000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Scale Range"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"X", "0.500000"},
-                                {"Y", "0.500000"},
-                                {"Z", "0.500000"},
+                                {"X", "1.000000"},
+                                {"Y", "1.000000"},
+                                {"Z", "1.000000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Amplitude Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"X", "-0.200000"},
+                                {"X", "-0.100000"},
                                 {"Y", "0.000000"},
-                                {"Z", "-0.200000"},
+                                {"Z", "-0.100000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Amplitude Max"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"X", "0.200000"},
-                                {"Y", "0.500000"},
-                                {"Z", "0.200000"},
+                                {"X", "0.100000"},
+                                {"Y", "0.000000"},
+                                {"Z", "0.100000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Colour 1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "1.000000"},
+                                {"G", "1.000000"},
+                                {"B", "1.000000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Colour 2"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "1.000000"},
+                                {"G", "1.000000"},
+                                {"B", "1.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"WindDrift", "TkEmitterWindDrift"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Speed", "2.000000"},
+                                {"Strength", "35.000000"},
+                                {"Speed",    "0.000000"},
                             }
                         },
                     }

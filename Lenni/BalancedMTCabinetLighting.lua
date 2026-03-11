@@ -70,13 +70,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MXML_CHANGE_TABLE"]	= 
 					{
 						{
-							["SKW"]	=	{"Name", "pointLight5", "Name", "FALLOFF"},
-							["VCT"] 	= 
-							{
-								{"Value",	"linear"}, -- original: quadratic (which is also how the real world behaves)
-							},
-						},	
-						{
 							["SKW"]	=	{"Name", "pointLight5", "Name", "INTENSITY"},
 							["VCT"] 	= 
 							{

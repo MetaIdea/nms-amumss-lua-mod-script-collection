@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_AiShipPlusMoreDamage_v606-A.pak",
+["MOD_FILENAME"]  = "MOD_DUD_AiShipPlusMoreDamage_v624-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.06",
+["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
     {
         {
@@ -23,10 +23,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TradingPostTraderRequestTime",       "60.000000"},
                                 {"SpaceStationTraderRequestTime",      "30.000000"},
                                 {"DisableTradeRoutes",                 "true"},
-                                {"DockingLandingTime",                 "2.000000"},
-                                {"DockingLandingTimeDirectional",      "2.000000"},
-                                {"DockWaitMinTime",                    "60.000000"},
-                                {"DockWaitMaxTime",                    "120.000000"},
+                                {"DockingLandingTime",                 "1.600000"},
+                                {"DockingLandingTimeDirectional",      "1.000000"},
+                                {"DockWaitMinTime",                    "20.000000"},
+                                {"DockWaitMaxTime",                    "60.000000"},
                                 {"LandingManuevreTime",                "2.000000"},
                                 {"LandingManeuvreAlignTime",           "2.000000"},
                                 {"GroundCircleHeight",                 "90.000000"},
@@ -394,7 +394,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Force",          "125"},
                                 {"TurnMin",        "0.5"},
                                 {"TurnMax",        "1.5"},
-                                {"DirectionBrake", "3"},
+                                {"DirectionBrake", "4"},
+                                {"MaxSpeedBrake",  "1"},
                             },
                         },
                         {
@@ -409,7 +410,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Force",          "150"},
                                 {"TurnMin",        "0.75"},
                                 {"TurnMax",        "1.5"},
-                                {"DirectionBrake", "2"},
+                                {"DirectionBrake", "4"},
+                                {"MaxSpeedBrake",  "1"},
                                 {"Falloff",        "0.6"},
                             },
                         },
@@ -419,10 +421,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "PLANET_EASY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed",   "80"},
-                                {"BoostSpeed", "100"},
-                                {"TurnMin",    "0.5"},
-                                {"TurnMax",    "1.5"},
+                                {"MaxSpeed",       "80"},
+                                {"BoostSpeed",     "100"},
+                                {"TurnMin",        "0.5"},
+                                {"TurnMax",        "1.5"},
+                                {"DirectionBrake", "4"},
+                                {"MaxSpeedBrake",  "1"},
                             },
                         },
                         {
@@ -436,7 +440,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"BoostSpeed",     "120"},
                                 {"TurnMin",        "0.75"},
                                 {"TurnMax",        "1.5"},
-                                {"DirectionBrake", "2"},
+                                {"DirectionBrake", "4"},
+                                {"MaxSpeedBrake",  "1"},
                                 {"Falloff",        "0.6"},
                             },
                         },
@@ -452,8 +457,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MinSpeedForce",  "10"},
                                 {"TurnMin",        "0.5"},
                                 {"TurnMax",        "1.5"},
-                                {"DirectionBrake", "3"},
-                                {"MaxSpeedBrake",  "0"},
+                                {"DirectionBrake", "4"},
+                                {"MaxSpeedBrake",  "1"},
                             }
                         },
                         {
@@ -467,7 +472,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Force",          "75"},
                                 {"TurnMin",        "0.25"},
                                 {"TurnMax",        "1.5"},
-                                {"DirectionBrake", "3"},
+                                {"DirectionBrake", "4"},
+                                {"MaxSpeedBrake",  "1"},
                                 {"Falloff",        "0.6"},
                             }
                         },
@@ -477,11 +483,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_FAST"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed",      "180"},
-                                {"Force",         "100"},
-                                {"TurnMin",       "0.75"},
-                                {"TurnMax",       "1.5"},
-                                {"DirectionBrake","2"},
+                                {"MaxSpeed",       "180"},
+                                {"Force",          "100"},
+                                {"TurnMin",        "0.75"},
+                                {"TurnMax",        "1.5"},
+                                {"DirectionBrake", "4"},
+                                {"MaxSpeedBrake",  "1"},
                             }
                         },
                         {
