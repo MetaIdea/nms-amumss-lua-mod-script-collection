@@ -290,7 +290,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Flora Colors",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "This mod edits the Flora colors. Currently, this means Grass, Tree leaves, and Shrubs of the Lush planet type",
 ["MODIFICATIONS"]   =
   {
@@ -322,10 +322,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   }
 }
 
-function GetColours(R,G,B,A)
+function GetColours(COUNTER,R,G,B,A)
   return
 [[
-    <Property name="Colours">
+    <Property name="Colours" _index="]].. COUNTER ..[[">
       <Property name="R" value="]].. string.format("%0.6f",R) ..[[" />
       <Property name="G" value="]].. string.format("%0.6f",G) ..[[" />
       <Property name="B" value="]].. string.format("%0.6f",B) ..[[" />
@@ -338,11 +338,12 @@ function CreateColoursProperty(PaletteColours)
   local PropertiesString = {}
 
   for j = 1, #PaletteColours do
+      local COUNTER  = j-1
       local R = PaletteColours[j]["R"]
       local G = PaletteColours[j]["G"]
       local B = PaletteColours[j]["B"]
       local A = PaletteColours[j]["A"]
-      table.insert(PropertiesString,GetColours(R,G,B,A))
+      table.insert(PropertiesString,GetColours(COUNTER,R,G,B,A))
   end
   local PropertyColoursString =
     [[      <Property name="Colours">
@@ -371,7 +372,7 @@ for i = 1, #DataTable do
     ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
     ["ADD"] = CreateColoursProperty(PaletteColours)
   }
-  
+
   BaseColourPalettesTable[#BaseColourPalettesTable +1] =
   {
     ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},

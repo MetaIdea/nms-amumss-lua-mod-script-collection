@@ -576,10 +576,10 @@ SwampDataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_SwampColors_v606-A",
+["MOD_FILENAME"]  = "MOD_DUD_SwampColors_v624-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.06",
+["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
     {
         {
@@ -701,10 +701,10 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-function GetColours(R,G,B,A)
+function GetColours(COUNTER,R,G,B,A)
     return
     [[
-        <Property name="Colours">
+        <Property name="Colours" _index="]].. COUNTER ..[[">
           <Property name="R" value="]].. string.format("%0.6f",R) ..[[" />
           <Property name="G" value="]].. string.format("%0.6f",G) ..[[" />
           <Property name="B" value="]].. string.format("%0.6f",B) ..[[" />
@@ -717,11 +717,12 @@ function CreateColoursProperty(PaletteColours)
     local PropertiesString = {}
 
     for j = 1, #PaletteColours do
+        local COUNTER  = j-1
         local R = PaletteColours[j]["R"]
         local G = PaletteColours[j]["G"]
         local B = PaletteColours[j]["B"]
         local A = PaletteColours[j]["A"]
-        table.insert(PropertiesString,GetColours(R, G, B, A))
+        table.insert(PropertiesString,GetColours(COUNTER, R, G, B, A))
     end
     local PropertyColoursString =
     [[      <Property name="Colours">
@@ -750,7 +751,7 @@ for i = 1, #LushDataTable do
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
-    
+
     LushBaseColourPalettesTable[#LushBaseColourPalettesTable +1] =
     {
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},
@@ -777,7 +778,7 @@ for i = 1, #SwampDataTable do
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
-    
+
     SwampBaseColourPalettesTable[#SwampBaseColourPalettesTable +1] =
     {
         ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},

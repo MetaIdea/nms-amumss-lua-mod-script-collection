@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_WEIRDCOLORS_V606-A",
+["MOD_FILENAME"]  = "MOD_DUD_WEIRDCOLORS_v624-A",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.06",
+["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
     {
         {
@@ -586,7 +586,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BeamParticles_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/Hovering/Materials/BeamParticles_mat.metamaterial.mXml" />
-	<Property name="Class" value="Translucent" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Translucent" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -711,7 +713,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightBeam_mat3" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/Hovering/Materials/LightBeam_mat2.metamaterial.mXml" />
-	<Property name="Class" value="GlowTranslucent" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="GlowTranslucent" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -823,7 +827,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Scrolling_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/Hovering/Materials/Scrolling_mat.metamaterial.mXml" />
-	<Property name="Class" value="Translucent" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Translucent" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -948,7 +954,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BeamParticles_mat1" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/Hovering/Materials/BeamParticles_mat.metamaterial.mXml" />
-	<Property name="Class" value="Translucent" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Translucent" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -1073,7 +1081,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightBeam_mat3" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/Hovering/Materials/LightBeam_mat2.metamaterial.mXml" />
-	<Property name="Class" value="GlowTranslucent" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="GlowTranslucent" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -1185,7 +1195,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Scrolling_mat2" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/Hovering/Materials/Scrolling_mat.metamaterial.mXml" />
-	<Property name="Class" value="Translucent" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Translucent" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -1310,7 +1322,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="HugeBeam_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/BeamStone/HugeBeam/Materials/HugeBeam_mat.metamaterial.mXml" />
-	<Property name="Class" value="GlowTranslucent" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="GlowTranslucent" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -1498,7 +1512,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour1MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
-	<Property name="Class" value="Opaque" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Opaque" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -1647,7 +1663,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour2MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
-	<Property name="Class" value="Opaque" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Opaque" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -1796,7 +1814,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourDarkCreep" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourCreep.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -2021,7 +2041,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour1MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
-	<Property name="Class" value="Opaque" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Opaque" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -2170,7 +2192,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour2MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
-	<Property name="Class" value="Opaque" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Opaque" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -2319,7 +2343,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour3MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
-	<Property name="Class" value="Opaque" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Opaque" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -2468,7 +2494,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour1MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
-	<Property name="Class" value="Opaque" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Opaque" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -2617,7 +2645,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour2MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
-	<Property name="Class" value="Opaque" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Opaque" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -2766,7 +2796,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour3MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
-	<Property name="Class" value="Opaque" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Opaque" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -2915,7 +2947,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contour3MAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourPrime.metamaterial.mXml" />
-	<Property name="Class" value="Opaque" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Opaque" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -3064,7 +3098,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourDark" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourSecond.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -3276,7 +3312,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourDarkCreep" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourCreep.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -3501,7 +3539,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourDarkRibbed" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourSecond.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -3713,7 +3753,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourLightCreep" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourCreep.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -3938,7 +3980,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourOrbMAT" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourSecond.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -4150,7 +4194,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="contourRibbedCreep" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Contour/ContourMaster/Materials/MAT_ContourCreep.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -4375,7 +4421,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="PulseFlare_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/FractalCube/Shape1/Materials/PulseFlare_mat.metamaterial.mXml" />
-	<Property name="Class" value="Translucent" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Translucent" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -4497,7 +4545,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightMaterial_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Hexagon/MedGeometric/Materials/LightMaterial_mat.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -4622,7 +4672,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="SmallVines_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Hexagon/HugeObject/Materials/SmallVines_mat.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -4731,7 +4783,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="SmallVines_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Hexagon/HugeObject/Materials/SmallVines_mat.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -4840,7 +4894,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Vines_mat12" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Hexagon/HugeObject/Materials/Vines_mat12.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -5025,7 +5081,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightMaterial_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Hexagon/MedGeometric/Materials/LightMaterial_mat.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -5150,7 +5208,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Float_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/MStructures/FloatJoint/Materials/Float_mat.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -5362,7 +5422,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="MStructure_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/MStructures/MStructure/Materials/MStructure_mat.metamaterial.mXml" />
-	<Property name="Class" value="Opaque" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Opaque" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -5511,7 +5573,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="MStructure_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/MStructures/MStructure/Materials/MStructure_mat.metamaterial.mXml" />
-	<Property name="Class" value="Opaque" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Opaque" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -5660,7 +5724,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="MStructure_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/MStructures/MStructure/Materials/MStructure_mat.metamaterial.mXml" />
-	<Property name="Class" value="Opaque" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Opaque" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -5809,7 +5875,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Shard_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Shards/Shard/Materials/Shard_mat.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -6018,7 +6086,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Shard_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Shards/Shard/Materials/Shard_mat.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -6227,7 +6297,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Shard_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Shards/FloorPieces/Materials/Shard2_mat.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />
@@ -6373,7 +6445,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="Shard_mat" />
 	<Property name="Metamaterial" value="Models/Planets/Biomes/Weird/Shards/Shard/Materials/Shard_mat.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />

@@ -668,6 +668,8 @@ ExoCannonNote = [[&#xA;&#xA;&lt;FUEL&gt;WARNING&lt;&gt;: Ensure targets are &lt;
 
 HardFrameLArmNote = [[&#xA;&#xA;Any bonuses to &lt;STELLAR&gt;Exocraft Laser Power&lt;&gt; will increase the damage the &lt;TECHNOLOGY&gt;Minotaur Laser&lt;&gt; deals to enemies.]]
 
+MechAiPilotTechDescNote = [[&#xA;&#xA;&lt;FUEL&gt;WARNING&lt;&gt;: This &lt;TECHNOLOGY&gt;AI pilot&lt;&gt; is especially vulnerable to the &lt;FUEL&gt;beam attacks&lt;&gt; of &lt;SPECIAL&gt;Sentinel Quads&lt;&gt; and &lt;SPECIAL&gt;Walkers&lt;&gt;. Strongly recommended to either &lt;STELLAR&gt;quickly eliminate&lt;&gt; these threats, or take &lt;HIGHLIGHT&gt;manual control&lt;&gt; of the Minotaur when facing them to avoid &lt;FUEL&gt;heavy damage&lt;&gt; to the Minotaur's &lt;TECHNOLOGY&gt;tech systems&lt;&gt;.]]
+
 RecCircBrokenSlotNote = [[&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: Inspecting this slot with &lt;IMG&gt;REPAIR&lt;&gt; may reveal additional &lt;TECHNOLOGY&gt;Recycled Circuitry&lt;&gt; that may be required to fully repair this slot.]]
 
 SimpleFoodNote = [[&#xA;&#xA;Will restore a small amount of &lt;FUEL&gt;Exosuit health&lt;&gt; if &lt;STELLAR&gt;consumed directly&lt;&gt;.]]
@@ -2031,6 +2033,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_MECH_SENT_HEAD_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (MechAiPilotTechDescNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_MECH_AUTOPILOT_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (MechAiPilotTechDescNote)}
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CREATURE_HOSTILITY_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -2349,6 +2365,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", LuminanceEnigineDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_MECH_ARMY_HEAD_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (MechAiPilotTechDescNote)}
 							}
 						},
 					}

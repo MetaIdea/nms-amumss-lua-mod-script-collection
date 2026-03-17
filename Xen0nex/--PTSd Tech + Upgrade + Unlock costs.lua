@@ -433,11 +433,14 @@ AddItems =
 	{	--Precision Minotaur Laser 
 		"MECH_LASER1",			"ATLAS_SEED_4",		1,		"Product",
 	},
+	{	--Hardframe Legs 
+		"MECH_SENT_LEGS",		"TECH_COMP",		4,		"Product",
+	},
 	{	--Mech Liquidator Left Arm 
-		"MECH_ARMY_L_ARM",		"MECH_PROD",		1,		"Product",
+		"MECH_ARMY_L_ARM",		"QUAD_PROD",		1,		"Product",
 	},
 	{	--Mech Liquidator Legs 
-		"MECH_ARMY_LEGS",		"MECH_PROD",		1,		"Product",
+		"MECH_ARMY_LEGS",		"FARMPROD2",		1,		"Product",
 	},
 	{	--Excavation Blade 
 		"EXO_PLOUGH",			"ATLAS_SEED_2",		1,		"Product",
@@ -615,14 +618,26 @@ ReplaceItems =
 	{	--Polyphonic Core
 		"UT_BUI_SCAN2",			"RED2",				160,	"Substance",	"COMPUTER",
 	},
-	{	--Mech Liquidator Stun Cannon
+	{	--Hardframe Left Arm
+		"MECH_SENT_L_ARM",		"QUAD_PROD",		1,		"Product",		"STELLAR2",
+	},
+	{	--Hardframe Right Arm
+		"MECH_SENT_R_ARM",		"QUAD_PROD",		1,		"Product",		"CAVE2",
+	},
+	{	--Hardframe Body
+		"MECH_SENT_HEAD",		"MECH_PROD",		1,		"Product",		"PRODFUEL2",
+	},
+	{	--Hardframe Body
+		"MECH_SENT_HEAD",		"ANTIMATTER",		4,		"Product",		"ANTIMATTER",
+	},
+	{	--Mech Liquidator Left Arm
 		"MECH_ARMY_L_ARM",		"ILLEGAL_PROD7",	4,		"Product",		"POWERCELL",
 	},
-	{	--Mech Liquidator Stun Cannon
+	{	--Mech Liquidator Left Arm
 		"MECH_ARMY_L_ARM",		"SALVAGE_TECH7",	2,		"Product",		"CASING",
 	},
 	{	--Mech Liquidator Flamethrower
-		"MECH_ARMY_R_ARM",		"MECH_PROD",		1,		"Product",		"FUEL2",
+		"MECH_ARMY_R_ARM",		"QUAD_PROD",		1,		"Product",		"FUEL2",
 	},
 	{	--Mech Liquidator Flamethrower
 		"MECH_ARMY_R_ARM",		"FARMPROD7",		4,		"Product",		"GRENFUEL1",
@@ -631,7 +646,7 @@ ReplaceItems =
 		"MECH_ARMY_R_ARM",		"SALVAGE_TECH7",	2,		"Product",		"TECH_COMP",
 	},
 	{	--Mech Liquidator Legs
-		"MECH_ARMY_LEGS",		"QUAD_PROD",		2,		"Product",		"QUAD_PROD",
+		"MECH_ARMY_LEGS",		"MECH_PROD",		1,		"Product",		"QUAD_PROD",
 	},
 	{	--Mech Liquidator Legs
 		"MECH_ARMY_LEGS",		"SALVAGE_TECH7",	2,		"Product",		"HYDRALIC",
@@ -818,23 +833,6 @@ DiscordantInterfaceCost =	36			--19
 AIPilotComputer = 8						--1 Quantum Computer
 AIPilotAPU = 16							--Autonomous Positioning Unit	(1 Antimatter in vanilla)
 AIPilotLoom = 4							--1 Wiring Loom
-
---Adds Hardframe Engine as a requirement for all Exo-Mech Hardframe upgrades
-MechPart = [[<Property name="Requirements" value="GcTechnologyRequirement">
-          <Property name="ID" value="MECH_PROD" />
-          <Property name="Type" value="GcInventoryType">
-            <Property name="InventoryType" value="Product" />
-          </Property>
-          <Property name="Amount" value="1" />
-        </Property>]]
---Adds 2x Quad Servo as a requirement for Sentinel Hardframe Legs upgrade (Since they already require Hardframe Engine)
-QuadParts = [[<Property name="Requirements" value="GcTechnologyRequirement">
-          <Property name="ID" value="QUAD_PROD" />
-          <Property name="Type" value="GcInventoryType">
-            <Property name="InventoryType" value="Product" />
-          </Property>
-          <Property name="Amount" value="2" />
-        </Property>]]
 
 --Changes various fuel related values for Minotaur exomech
 MinotaurFuelRate = 3						--0.5		Changes base fuel usage rate for Minotaur exomech engine (higher value uses fuel faster)
@@ -2553,18 +2551,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Amount",	AIPilotLoom},
 							}
 						},
-						{	--Removes Pugenum / Life Support gel from these recipes so that they still have a total of 3 ingredients
-							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_L_ARM",		"ID","ROBOT1"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_R_ARM",		"ID","ROBOT1"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_HEAD",		"ID","PRODFUEL2"},
-							["REMOVE"] = "SECTION",
-						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","UT_ENERGY",		"Requirements", "GcTechnologyRequirement"},
 							["ADD"] = AddedItemCost ("CARBON_SEAL", ORHermSeal, "Product"),
@@ -2573,26 +2559,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","UT_ENERGY",		"Requirements", "GcTechnologyRequirement"},
 							["ADD"] = AddedItemCost ("POWERCELL", ORIonBatt, "Product"),
-							["ADD_OPTION"]  = "ADDafterSECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_L_ARM",		"Requirements", "GcTechnologyRequirement"},
-							["ADD"] = MechPart,
-							["ADD_OPTION"]  = "ADDafterSECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_R_ARM",		"Requirements", "GcTechnologyRequirement"},
-							["ADD"] = MechPart,
-							["ADD_OPTION"]  = "ADDafterSECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_LEGS",		"Requirements", "GcTechnologyRequirement"},
-							["ADD"] = QuadParts,
-							["ADD_OPTION"]  = "ADDafterSECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_HEAD",		"Requirements", "GcTechnologyRequirement"},
-							["ADD"] = MechPart,
 							["ADD_OPTION"]  = "ADDafterSECTION",
 						},
 						{

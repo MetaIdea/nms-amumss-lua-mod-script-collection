@@ -6,7 +6,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "VR Ship Headlights",
-["MOD_AUTHOR"]      = "Mjjstral",
+["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "Activate: Hold the right ship control lever and grab the left exit handle, Disable: Grab the left or right exit handle",
 ["MODIFICATIONS"]   =
@@ -50,7 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="INTENSITY" />
-          <Property name="Value" value="14.479761" />
+          <Property name="Value" value="25.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="RADIUS" />

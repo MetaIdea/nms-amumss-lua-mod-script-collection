@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_StandLightBright_v606-A",
+["MOD_FILENAME"]            = "MOD_DUD_StandLightBright_v624-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "6.06",
+["NMS_VERSION"]             = "6.24",
 ["MODIFICATIONS"]           =
     {
         {
@@ -17,21 +17,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "150.000000"},
+                                {"Value", "100.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "linear"},
+                                {"Value", "1.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "30000.000000"},
+                                {"Value", "60.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RADIUS"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "45.000000"},
                             }
                         },
                     },
@@ -44,21 +51,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "150.000000"},
+                                {"Value", "100.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "linear"},
+                                {"Value", "1.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "30000.000000"},
+                                {"Value", "60.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RADIUS"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "45.000000"},
                             }
                         },
                     },
@@ -71,14 +85,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "linear"},
+                                {"Value", "1.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "20000.000000"},
+                                {"Value", "60.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "RADIUS"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "45.000000"},
                             }
                         },
                     }
@@ -105,45 +126,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "linear"},
+                                {"Value", "1.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "26000.000000"},
+                                {"Value", "100.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1", "Name", "RADIUS"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "35.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotX", "40.179750"},
-                                {"RotY", "180"},
-                                {"RotZ", "180"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FOV"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "150.000000"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "FALLOFF"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "linear"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1", "Name", "INTENSITY"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "26000.000000"},
-                            }
+                            ["REMOVE"] = "SECTION"
                         },
                     }
                 },

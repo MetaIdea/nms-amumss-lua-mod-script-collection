@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_TERRAFIRMA3_V606-A",
+["MOD_FILENAME"]            = "MOD_DUD_TERRAFIRMA3_v624-A",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "6.06",
+["NMS_VERSION"]             = "6.24",
 ["MODIFICATIONS"]           =
     {
         {
@@ -70,6 +70,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Settlement_Hub_Builders",     "GcBuildingDefinitionData"},
                                 {"Settlement_FishPond",         "GcBuildingDefinitionData"},
                                 {"Settlement_Builders_RoboArm", "GcBuildingDefinitionData"},
+                                {"CargoDrop",                   "GcBuildingDefinitionData"},
+                                {"ScrapYard",                   "GcBuildingDefinitionData"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {

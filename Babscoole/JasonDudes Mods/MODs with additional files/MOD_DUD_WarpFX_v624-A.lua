@@ -2,10 +2,73 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_WarpFX_v606-A",
-["MOD_AUTHOR"]              = "jasondude7116",
-["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "6.06",
+["MOD_FILENAME"]  = "MOD_DUD_WarpFX_v624-A",
+["MOD_AUTHOR"]    = "jasondude7116",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "6.24",
+["MODIFICATIONS"] =
+  {
+    {
+      ["MBIN_CHANGE_TABLE"] = 
+      {
+        {
+          ["MBIN_FILE_SOURCE"] = "GCCAMERAGLOBALS.GLOBAL.MBIN",
+          ["MXML_CHANGE_TABLE"] = 
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"WarpSettings", "GcCameraWarpSettings"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"OffsetZFrequency_1", "0.500000"},
+                {"OffsetZFrequency_2", "0.700000"},
+                {"OffsetZBias",        "-4.000000"},
+                {"OffsetZRange",       "3.000000"},
+                {"OffsetYFrequency_1", "0.400000"},
+                {"OffsetYFrequency_2", "0.600000"},
+                {"OffsetYRange",       "2.000000"},
+                {"OffsetXFrequency",   "0.200000"},
+                {"OffsetXRange",       "4.500000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"CorvetteWarpSettings", "GcCameraWarpSettings"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"OffsetZFrequency_1", "0.500000"},
+                {"OffsetZFrequency_2", "0.700000"},
+                {"OffsetZBias",        "-4.000000"},
+                {"OffsetZRange",       "3.000000"},
+                {"OffsetYFrequency_1", "0.400000"},
+                {"OffsetYFrequency_2", "0.600000"},
+                {"OffsetYRange",       "2.000000"},
+                {"OffsetXFrequency",   "0.200000"},
+                {"OffsetXRange",       "4.500000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"FreighterWarpSettings", "GcCameraWarpSettings"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"OffsetZBias",  "-30.000000"},
+                {"OffsetZRange", "90.000000"},
+                {"OffsetYRange", "300.000000"},
+                {"OffsetXRange", "400.000000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"PirateFreighterWarpSettings", "GcCameraWarpSettings"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"OffsetZBias",  "-45.000000"},
+                {"OffsetZRange", "90.000000"},
+                {"OffsetXRange", "400.000000"},
+              }
+            },
+          }
+        }
+      }
+    }
+  },
 ["ADD_FILES"] =
     {
         {
@@ -2891,27 +2954,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
 							<Property name="Name" value="FALLOFF" />
-							<Property name="Value" value="linear" />
-						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-							<Property name="Name" value="FALLOFF_RATE" />
 							<Property name="Value" value="1.000000" />
 						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
 							<Property name="Name" value="INTENSITY" />
-							<Property name="Value" value="500000.000000" />
+							<Property name="Value" value="100.000000" />
+						</Property>
+						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+							<Property name="Name" value="RADIUS" />
+							<Property name="Value" value="500.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
 							<Property name="Name" value="COL_R" />
-							<Property name="Value" value="0.150000" />
+							<Property name="Value" value="1.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
 							<Property name="Name" value="COL_G" />
-							<Property name="Value" value="0.150000" />
+							<Property name="Value" value="1.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
 							<Property name="Name" value="COL_B" />
-							<Property name="Value" value="0.150000" />
+							<Property name="Value" value="1.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
 							<Property name="Name" value="COOKIE_IDX" />
@@ -3981,27 +4044,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
 							<Property name="Name" value="FALLOFF" />
-							<Property name="Value" value="linear" />
-						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
-							<Property name="Name" value="FALLOFF_RATE" />
 							<Property name="Value" value="1.000000" />
 						</Property>
-						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
 							<Property name="Name" value="INTENSITY" />
-							<Property name="Value" value="500000.000000" />
+							<Property name="Value" value="100.000000" />
+						</Property>
+						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
+							<Property name="Name" value="RADIUS" />
+							<Property name="Value" value="500.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
 							<Property name="Name" value="COL_R" />
-							<Property name="Value" value="0.031" />
+							<Property name="Value" value="1.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
 							<Property name="Name" value="COL_G" />
-							<Property name="Value" value="0.063" />
+							<Property name="Value" value="1.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
 							<Property name="Name" value="COL_B" />
-							<Property name="Value" value="0.141" />
+							<Property name="Value" value="1.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
 							<Property name="Name" value="COOKIE_IDX" />
@@ -4793,7 +4856,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -4918,7 +4983,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -5043,7 +5110,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstarsMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstarsMat.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -5168,7 +5237,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="ScrollingWavesAltBMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/ScrollingWavesAltBMat.metamaterial.mXml" />
-	<Property name="Class" value="GlowTranslucent" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="GlowTranslucent" />
+	</Property>
 	<Property name="TransparencyLayerID" value="9" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -5277,7 +5348,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="TunnelMat1" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/Lines.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -5402,7 +5475,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightArmsBlackMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/LightArmsBlackMat.metamaterial.mXml" />
-	<Property name="Class" value="GlowTranslucent" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="GlowTranslucent" />
+	</Property>
 	<Property name="TransparencyLayerID" value="13" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -5514,7 +5589,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -5639,7 +5716,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -5764,7 +5843,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstarsMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstarsMat.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -5889,7 +5970,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="TunnelMat1" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/Lines.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -6014,7 +6097,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="EngGLowCapMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnel/Materials/EngGLowCapMat.metamaterial.mXml" />
-	<Property name="Class" value="Glow" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Glow" />
+	</Property>
 	<Property name="TransparencyLayerID" value="0" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -6107,7 +6192,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightArmsRedMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpLargePortal/Materials/LightArmsRedMat.metamaterial.mXml" />
-	<Property name="Class" value="GlowTranslucent" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="GlowTranslucent" />
+	</Property>
 	<Property name="TransparencyLayerID" value="13" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -6219,7 +6306,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -6344,7 +6433,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -6469,7 +6560,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstarsMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstarsMat.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -6594,7 +6687,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="TunnelMat1" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/Lines.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -6719,7 +6814,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="LightArmsMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnel/Materials/LightArmsMat.metamaterial.mXml" />
-	<Property name="Class" value="GlowTranslucent" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="GlowTranslucent" />
+	</Property>
 	<Property name="TransparencyLayerID" value="13" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -6831,7 +6928,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -6956,7 +7055,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstars2Mat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstars2Mat.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -7081,7 +7182,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="BHslowstarsMat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/BHslowstarsMat.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -7206,7 +7309,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="TunnelMat1" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnelBlackHole/Materials/Lines.metamaterial.mXml" />
-	<Property name="Class" value="Additive" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Additive" />
+	</Property>
 	<Property name="TransparencyLayerID" value="5" />
 	<Property name="CastShadow" value="false" />
 	<Property name="DisableZTest" value="false" />
@@ -7331,7 +7436,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkMaterialData">
 	<Property name="Name" value="WarpBGmat" />
 	<Property name="Metamaterial" value="Models/Effects/Warp/WarpTunnel/Materials/WarpBGmat.metamaterial.mXml" />
-	<Property name="Class" value="Opaque" />
+	<Property name="Class" value="TkMaterialClass">
+		<Property name="MaterialClass" value="Opaque" />
+	</Property>
 	<Property name="TransparencyLayerID" value="15" />
 	<Property name="CastShadow" value="true" />
 	<Property name="DisableZTest" value="false" />

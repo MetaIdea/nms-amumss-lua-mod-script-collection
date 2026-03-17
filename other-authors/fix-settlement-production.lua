@@ -3,10 +3,11 @@
 -- Author: DracoSys
 --
 -- Fixes the inverse productivity bug where upgrading a settlement
--- makes production slower. Zeroes the stat-to-timer weights so
--- productivity/happiness/population no longer penalize cycle time.
--- Also halves the base production cycle and doubles output rates
--- to make settlements a worthwhile passive income source.
+-- makes production slower. Reduces the stat-to-timer weights to
+-- near-zero so productivity/happiness/population no longer
+-- meaningfully penalize cycle time. Also halves the base production
+-- cycle, doubles output rates, and boosts the debt repayment
+-- modifier to prevent debt death spirals.
 --
 -- All values are configurable via the variables below.
 --
@@ -30,6 +31,18 @@ PRODUCT_RATE = 10
 -- Base units produced per cycle for raw substances (vanilla: 500)
 SUBSTANCE_RATE = 1000
 
+-- Stat-to-timer weights (vanilla: 100, 30, 30)
+-- Set to 1 instead of 0 to keep debt repayment formula functional.
+-- At 1, the timer penalty is negligible (<0.01%) but the surplus
+-- calculation stays non-zero so debt can be paid off.
+STAT_WEIGHT = 1
+
+-- Debt repayment multiplier (vanilla: 2000000)
+-- Boosted to compensate for reduced stat weights. With weights at 1
+-- the computed surplus is tiny, so the multiplier must be large
+-- enough to clear debt in a reasonable time.
+DEBT_REPAYMENT = 200000000
+
 ---------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -50,18 +63,22 @@ NMS_MOD_DEFINITION_CONTAINER =
           {
             ---------------------------------------------------------
             -- 1. Fix the inverse productivity bug
-            --    Zero out stat-to-timer weights so settlement stats
-            --    no longer increase production cycle duration.
+            --    Reduce stat-to-timer weights to near-zero so
+            --    settlement stats no longer meaningfully increase
+            --    production cycle duration. Using 1 instead of 0
+            --    keeps the debt repayment surplus calculation
+            --    functional (weights=0 makes surplus=0, causing
+            --    a debt death spiral).
             --    Vanilla weights: MaxPopulation=100, Happiness=30,
-            --    Production=30 -- all scale the timer UP, not down.
+            --    Production=30, all scale the timer UP, not down.
             ---------------------------------------------------------
             {
               ["PRECEDING_KEY_WORDS"] = {"StatProductivityContributionModifiers"},
               ["VALUE_CHANGE_TABLE"]  =
               {
-                {"MaxPopulation", "0"},
-                {"Happiness",     "0"},
-                {"Production",    "0"},
+                {"MaxPopulation", STAT_WEIGHT},
+                {"Happiness",     STAT_WEIGHT},
+                {"Production",    STAT_WEIGHT},
               }
             },
 
@@ -90,6 +107,20 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"ProductUnitsPerCycleRateModifier",    PRODUCT_RATE},
                 {"SubstanceUnitsPerCycleRateModifier",  SUBSTANCE_RATE},
+              }
+            },
+
+            ---------------------------------------------------------
+            -- 4. Boost debt repayment modifier
+            --    With stat weights reduced to 1, the surplus feeding
+            --    the debt formula is tiny. Compensate by increasing
+            --    the multiplier 100x so debt clears quickly when
+            --    judgement events introduce it.
+            ---------------------------------------------------------
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DailyDebtPaymentModifier", DEBT_REPAYMENT},
               }
             },
           }

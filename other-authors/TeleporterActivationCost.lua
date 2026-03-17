@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"SubstanceId", "NAV_DATA"},
                 {"Cost", "50"},
-                {"Repeat", "True"},
+                {"Repeat", "False"},
               }
             },
           },
@@ -34,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"SubstanceId", "NAV_DATA"},
                 {"Cost", "50"},
-                {"Repeat", "True"},
+                {"Repeat", "False"},
               }
             },
           },
@@ -50,7 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"SubstanceId", "NAV_DATA"},
                 {"Cost", "50"},
-                {"Repeat", "True"},
+                {"Repeat", "False"},
               }
             },
           },
@@ -66,7 +66,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"SubstanceId", "NAV_DATA"},
                 {"Cost", "50"},
-                {"Repeat", "True"},
+                {"Repeat", "False"},
               }
             },
           },
@@ -82,7 +82,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"SubstanceId", "NAV_DATA"},
                 {"Cost", "50"},
-                {"Repeat", "True"},
+                {"Repeat", "False"},
               }
             },
           },

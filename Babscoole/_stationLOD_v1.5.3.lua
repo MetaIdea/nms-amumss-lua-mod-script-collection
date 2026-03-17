@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]  = "_stationLOD_v1.5.2.pak",
+["MOD_FILENAME"]  = "_stationLOD_v1.5.3.pak",
 ["MOD_AUTHOR"]    = "kuborr",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.20",
+["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] = 
 	{
 		{
@@ -23,21 +23,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "40.000000"} 
+								{"Value", "300.000000"} 
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "50.000000"} 
+								{"Value", "600.000000"} 
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "100.000000"} 
+								{"Value", "1000.000000"} 
 							}
 						},								
 					}
@@ -56,21 +56,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "40.000000"} 
+								{"Value", "100.000000"} 
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "50.000000"} 
+								{"Value", "200.000000"} 
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "100.000000"} 
+								{"Value", "300.000000"} 
 							}
 						},								
 					}
@@ -88,21 +88,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "40.000000"} 
+								{"Value", "100.000000"} 
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "50.000000"} 
+								{"Value", "150.000000"} 
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "100.000000"} 
+								{"Value", "200.000000"} 
 							}
 						},								
 					}
@@ -121,21 +121,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "40.000000"} 
+								{"Value", "200.000000"} 
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "50.000000"} 
+								{"Value", "300.000000"} 
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "100.000000"} 
+								{"Value", "500.000000"} 
 							}
 						},								
 					}
@@ -148,21 +148,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "40.000000"} 
+								{"Value", "100.000000"} 
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "50.000000"} 
+								{"Value", "200.000000"} 
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "100.000000"} 
+								{"Value", "300.000000"} 
 							}
 						},								
 					}
@@ -202,21 +202,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "160.000000"} 
+								{"Value", "300.000000"} 
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "200.000000"} 
+								{"Value", "600.000000"} 
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Value", "260.000000"} 
+								{"Value", "1000.000000"} 
 							}
 						},								
 					}
@@ -227,32 +227,42 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
-							["VALUE_CHANGE_TABLE"] = 
-							{
-								{"Value", "30.000000"} 
-							}
+							["VALUE_CHANGE_TABLE"] = {{"Value", "1.000000"}}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
-							["VALUE_CHANGE_TABLE"] = 
-							{
-								{"Value", "50.000000"} 
-							}
+							["VALUE_CHANGE_TABLE"] = {{"Value", "2.000000"}}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
-							["VALUE_CHANGE_TABLE"] = 
-							{
-								{"Value", "100.000000"} 
-							}
+							["VALUE_CHANGE_TABLE"] = {{"Value", "3.000000"}}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST4"},
-							["VALUE_CHANGE_TABLE"] = 
-							{
-								{"Value", "160.000000"} 
-							}
-						},                        
+							["VALUE_CHANGE_TABLE"] = {{"Value", "9999.000000"}}
+						},
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] = 
+					{
+						"MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\SHOPS\PARTS\WALLGUNS.SCENE.EXML",
+						"MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\SHOPS\PARTS\WALLSUITS.SCENE.EXML",
+					},
+					["MXML_CHANGE_TABLE"] = 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
+							["VALUE_CHANGE_TABLE"] = {{"Value", "100.000000"}}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
+							["VALUE_CHANGE_TABLE"] = {{"Value", "150.000000"}}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
+							["VALUE_CHANGE_TABLE"] = {{"Value", "200.000000"}}
+						},
 					}
 				},
 			}
