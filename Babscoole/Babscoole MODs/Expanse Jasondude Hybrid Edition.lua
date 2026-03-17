@@ -3160,7 +3160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Expanse Jasondude Hybrid Edition",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "Combines both Exosolar's Expanse and Jasondude's custom space palettes",
 ["MODIFICATIONS"]   =
   {
@@ -3173,10 +3173,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 }
 
 
-function GetColours(R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,R6,G6,B6,A6,R7,G7,B7,A7,R8,G8,B8,A8,R9,G9,B9,A9,R10,G10,B10,A10,R11,G11,B11,A11,R12,G12,B12,A12,R13,G13,B13,A13)
+function GetColours(COUNTER,R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,R6,G6,B6,A6,R7,G7,B7,A7,R8,G8,B8,A8,R9,G9,B9,A9,R10,G10,B10,A10,R11,G11,B11,A11,R12,G12,B12,A12,R13,G13,B13,A13)
   return
 [[
-    <Property name="Settings" value="GcSolarSystemSkyColourData">
+    <Property name="Settings" value="GcSolarSystemSkyColourData" _index="]].. COUNTER ..[[">
       <Property name="TopColour">
         <Property name="R" value="]].. string.format("%0.6f",R1) ..[[" />
         <Property name="G" value="]].. string.format("%0.6f",G1) ..[[" />
@@ -3263,6 +3263,7 @@ function CreateColoursProperty(PaletteColours)
   local PropertiesString = {}
 
   for j = 1, #PaletteColours do
+    local COUNTER  = j-1
     local R1  = PaletteColours[j][1]
     local G1  = PaletteColours[j][2]
     local B1  = PaletteColours[j][3]
@@ -3315,7 +3316,7 @@ function CreateColoursProperty(PaletteColours)
     local G13 = PaletteColours[j][50]
     local B13 = PaletteColours[j][51]
     local A13 = PaletteColours[j][52]
-    table.insert(PropertiesString,GetColours(R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,R6,G6,B6,A6,R7,G7,B7,A7,R8,G8,B8,A8,R9,G9,B9,A9,R10,G10,B10,A10,R11,G11,B11,A11,R12,G12,B12,A12,R13,G13,B13,A13))
+    table.insert(PropertiesString,GetColours(COUNTER, R1, G1, B1, A1, R2, G2, B2, A2, R3, G3, B3, A3, R4, G4, B4, A4, R5, G5, B5, A5, R6, G6, B6, A6, R7, G7, B7, A7, R8, G8, B8, A8, R9, G9, B9, A9, R10, G10, B10, A10, R11, G11, B11, A11, R12, G12, B12, A12, R13, G13, B13, A13))
   end
   return table.concat(PropertiesString)
 end

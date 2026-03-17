@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "MOD_DUD_RobotLights_v606-A",
+["MOD_FILENAME"]            = "MOD_DUD_RobotLights_v624-B",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "6.06",
+["NMS_VERSION"]             = "6.24",
 ["MODIFICATIONS"]           =
     {
         {
@@ -34,14 +34,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "linear"}
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "AttackSpotLight", "Name", "FALLOFF_RATE"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"Value", "1.000000"}
                             },
                         },
@@ -50,7 +42,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "20000.000000"}
+                                {"Value", "30.000000"}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "AttackSpotLight", "Name", "RADIUS"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "30.000000"}
                             },
                         },
                         {
@@ -74,19 +74,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "50.000000"}
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "spotLight3", "Name", "FALLOFF_RATE"},
-                                {"Name", "spotLight4", "Name", "FALLOFF_RATE"},
-                                {"Name", "spotLight5", "Name", "FALLOFF_RATE"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "1.000000"}
+                                {"Value", "60.000000"}
                             },
                         },
                         {
@@ -98,7 +86,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "10000.000000"}
+                                {"Value", "0.500000"}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "spotLight3", "Name", "RADIUS"},
+                                {"Name", "spotLight4", "Name", "RADIUS"},
+                                {"Name", "spotLight5", "Name", "RADIUS"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "2.000000"}
                             },
                         },
                         {
@@ -159,18 +159,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "linear"}
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "PatrolSpotLight", "Name", "FALLOFF_RATE"},
-                                {"Name", "AttackSpotLight", "Name", "FALLOFF_RATE"},
-                                {"Name", "InvestSpotLight", "Name", "FALLOFF_RATE"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"Value", "1.000000"}
                             },
                         },
@@ -183,7 +171,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "20000.000000"}
+                                {"Value", "30.000000"}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "PatrolSpotLight", "Name", "RADIUS"},
+                                {"Name", "AttackSpotLight", "Name", "RADIUS"},
+                                {"Name", "InvestSpotLight", "Name", "RADIUS"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "30.000000"}
                             },
                         },
                         {
@@ -207,19 +207,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "50.000000"}
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "spotLight2", "Name", "FALLOFF_RATE"},
-                                {"Name", "spotLight3", "Name", "FALLOFF_RATE"},
-                                {"Name", "spotLight1", "Name", "FALLOFF_RATE"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "1.000000"}
+                                {"Value", "60.000000"}
                             },
                         },
                         {
@@ -231,43 +219,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "10000.000000"}
+                                {"Value", "0.500000"}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "spotLight2", "Name", "RADIUS"},
+                                {"Name", "spotLight3", "Name", "RADIUS"},
+                                {"Name", "spotLight1", "Name", "RADIUS"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "2.000000"}
                             },
                         },
                     }
                 },
-                -- {
-                    -- ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN",
-                    -- ["MXML_CHANGE_TABLE"] =
-                    -- {
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] =
-                            -- {
-                                -- {"Name", "Attack"},
-                                -- {"Name", "Investigate"},
-                            -- },
-                            -- ["REMOVE"] = "SECTION"
-                        -- },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] =
-                            -- {
-                                -- {"Name", "PatrolSpotLight",  "Name", "COL_R"},
-                                -- {"Name", "PatrolSpotLight",  "Name", "COL_B"},
-                                -- {"Name", "PatrolSpotLight",  "Name", "COL_G"},
-                                -- {"Name", "PatrolPointLight", "Name", "COL_R"},
-                                -- {"Name", "PatrolPointLight", "Name", "COL_B"},
-                                -- {"Name", "PatrolPointLight", "Name", "COL_G"},
-                                -- {"Name", "spotLight2",       "Name", "COL_R"},
-                                -- {"Name", "spotLight2",       "Name", "COL_B"},
-                                -- {"Name", "spotLight2",       "Name", "COL_G"},
-                            -- },
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- {"Value", "0.95"}
-                            -- },
-                        -- }, 
-                    -- }
-                -- },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\HOVERPET.SCENE.MBIN",
                     ["MXML_CHANGE_TABLE"] =
@@ -305,18 +273,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "linear"}
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "PatrolSpotLight", "Name", "FALLOFF_RATE"},
-                                {"Name", "AttackSpotLight", "Name", "FALLOFF_RATE"},
-                                {"Name", "InvestSpotLight", "Name", "FALLOFF_RATE"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"Value", "1.000000"}
                             },
                         },
@@ -329,7 +285,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "20000.000000"}
+                                {"Value", "30.000000"}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "PatrolSpotLight", "Name", "RADIUS"},
+                                {"Name", "AttackSpotLight", "Name", "RADIUS"},
+                                {"Name", "InvestSpotLight", "Name", "RADIUS"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "30.000000"}
                             },
                         },
                         {
@@ -353,19 +321,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "50.000000"}
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "spotLight4", "Name", "FALLOFF_RATE"},
-                                {"Name", "spotLight5", "Name", "FALLOFF_RATE"},
-                                {"Name", "spotLight6", "Name", "FALLOFF_RATE"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "1.000000"}
+                                {"Value", "60.000000"}
                             },
                         },
                         {
@@ -377,35 +333,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "10000.000000"}
+                                {"Value", "0.500000"}
                             },
                         },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] =
-                            -- {
-                                -- {"Name", "Attack"},
-                                -- {"Name", "Investigate"},
-                            -- },
-                            -- ["REMOVE"] = "SECTION"
-                        -- },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] =
-                            -- {
-                                -- {"Name", "PatrolSpotLight",  "Name", "COL_R"},
-                                -- {"Name", "PatrolSpotLight",  "Name", "COL_B"},
-                                -- {"Name", "PatrolSpotLight",  "Name", "COL_G"},
-                                -- {"Name", "PatrolPointLight", "Name", "COL_R"},
-                                -- {"Name", "PatrolPointLight", "Name", "COL_B"},
-                                -- {"Name", "PatrolPointLight", "Name", "COL_G"},
-                                -- {"Name", "spotLight4",       "Name", "COL_R"},
-                                -- {"Name", "spotLight4",       "Name", "COL_B"},
-                                -- {"Name", "spotLight4",       "Name", "COL_G"},
-                            -- },
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- {"Value", "0.95"}
-                            -- },
-                        -- },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "spotLight4", "Name", "RADIUS"},
+                                {"Name", "spotLight5", "Name", "RADIUS"},
+                                {"Name", "spotLight6", "Name", "RADIUS"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "2.000000"}
+                            },
+                        },
                     }
                 },
                 {
@@ -431,8 +373,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Name", "PatrolSpotLight", "Name", "FOV"},
-                                {"Name", "AttackSpotLight", "Name", "FOV"},
+                                {"Name", "PatrolSpotLight",  "Name", "FOV"},
+                                {"Name", "AttackSpotLight",  "Name", "FOV"},
                                 {"Name", "InvestSpotLight1", "Name", "FOV"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
@@ -443,21 +385,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Name", "PatrolSpotLight", "Name", "FALLOFF"},
-                                {"Name", "AttackSpotLight", "Name", "FALLOFF"},
+                                {"Name", "PatrolSpotLight",  "Name", "FALLOFF"},
+                                {"Name", "AttackSpotLight",  "Name", "FALLOFF"},
                                 {"Name", "InvestSpotLight1", "Name", "FALLOFF"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "linear"}
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "PatrolSpotLight", "Name", "FALLOFF_RATE"},
-                                {"Name", "AttackSpotLight", "Name", "FALLOFF_RATE"},
-                                {"Name", "InvestSpotLight1", "Name", "FALLOFF_RATE"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -467,13 +397,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Name", "PatrolSpotLight", "Name", "INTENSITY"},
-                                {"Name", "AttackSpotLight", "Name", "INTENSITY"},
+                                {"Name", "PatrolSpotLight",  "Name", "INTENSITY"},
+                                {"Name", "AttackSpotLight",  "Name", "INTENSITY"},
                                 {"Name", "InvestSpotLight1", "Name", "INTENSITY"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "25000.000000"}
+                                {"Value", "30.000000"}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "PatrolSpotLight",  "Name", "RADIUS"},
+                                {"Name", "AttackSpotLight",  "Name", "RADIUS"},
+                                {"Name", "InvestSpotLight1", "Name", "RADIUS"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "30.000000"}
                             },
                         },
                         {
@@ -491,13 +433,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Name", "spotLight1", "Name", "FALLOFF_RATE"},
-                                {"Name", "spotLight3", "Name", "FALLOFF_RATE"},
-                                {"Name", "spotLight2", "Name", "FALLOFF_RATE"},
+                                {"Name", "spotLight1", "Name", "FOV"},
+                                {"Name", "spotLight3", "Name", "FOV"},
+                                {"Name", "spotLight2", "Name", "FOV"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "1.000000"}
+                                {"Value", "60.000000"}
                             },
                         },
                         {
@@ -509,7 +451,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "10000.000000"}
+                                {"Value", "0.500000"}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "spotLight1", "Name", "RADIUS"},
+                                {"Name", "spotLight3", "Name", "RADIUS"},
+                                {"Name", "spotLight2", "Name", "RADIUS"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "2.000000"}
                             },
                         },
                     }
@@ -518,47 +472,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\QUADRUPEDPET.SCENE.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] =
-                            -- {
-                                -- {"Name", "Attack"},
-                                -- {"Name", "Investigate"},
-                            -- },
-                            -- ["REMOVE"] = "SECTION"
-                        -- },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] =
-                            -- {
-                                -- {"Name", "PatrolSpotLight",  "Name", "COL_R"},
-                                -- {"Name", "PatrolSpotLight",  "Name", "COL_B"},
-                                -- {"Name", "PatrolSpotLight",  "Name", "COL_G"},
-                                -- {"Name", "PatrolPointLight", "Name", "COL_R"},
-                                -- {"Name", "PatrolPointLight", "Name", "COL_B"},
-                                -- {"Name", "PatrolPointLight", "Name", "COL_G"},
-                                -- {"Name", "spotLight2",       "Name", "COL_R"},
-                                -- {"Name", "spotLight2",       "Name", "COL_B"},
-                                -- {"Name", "spotLight2",       "Name", "COL_G"},
-                            -- },
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- {"Value", "0.95"}
-                            -- },
-                        -- }, 
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "InvestSpotLight1", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "linear"}
+                                {"Value", "1.000000"}
                             },
                         },
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = 
-                    {
-                        "MODELS\COMMON\ROBOTS\SPIDER_QUADRUPED.SCENE.MBIN",
-                        "MODELS\COMMON\ROBOTS\SPIDER_SMALLQUAD.SCENE.MBIN",
-                    },
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\SPIDER_QUADRUPED.SCENE.MBIN",
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
@@ -579,13 +503,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "InvestSpotLight2", "Name", "FALLOFF"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "linear"}
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "InvestSpotLight2", "Name", "FALLOFF_RATE"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"Value", "1.000000"}
                             },
                         },
@@ -593,7 +510,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "InvestSpotLight2", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "25000.000000"}
+                                {"Value", "30.000000"}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "InvestSpotLight2", "Name", "RADIUS"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "30.000000"}
                             },
                         },
                         {
@@ -604,17 +528,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight4", "Name", "FALLOFF_RATE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight4", "Name", "FOV"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "1.000000"}
+                                {"Value", "60.000000"}
                             },
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight4", "Name", "INTENSITY"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "10000.000000"}
+                                {"Value", "0.500000"}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight4", "Name", "RADIUS"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "2.000000"}
                             },
                         },
                     }
@@ -639,7 +570,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight2", "Name", "FOV"},
-                                {"Name", "AttackSpotLight", "Name", "FOV"},
+                                {"Name", "AttackSpotLight",  "Name", "FOV"},
                                 {"Name", "InvestSpotLight1", "Name", "FOV"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
@@ -651,20 +582,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight2", "Name", "FALLOFF"},
-                                {"Name", "AttackSpotLight", "Name", "FALLOFF"},
+                                {"Name", "AttackSpotLight",  "Name", "FALLOFF"},
                                 {"Name", "InvestSpotLight1", "Name", "FALLOFF"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "linear"}
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "PatrolSpotLight2", "Name", "FALLOFF_RATE"},
-                                {"Name", "AttackSpotLight", "Name", "FALLOFF_RATE"},
-                                {"Name", "InvestSpotLight1", "Name", "FALLOFF_RATE"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -675,12 +594,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "PatrolSpotLight2", "Name", "INTENSITY"},
-                                {"Name", "AttackSpotLight", "Name", "INTENSITY"},
+                                {"Name", "AttackSpotLight",  "Name", "INTENSITY"},
                                 {"Name", "InvestSpotLight1", "Name", "INTENSITY"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "25000.000000"}
+                                {"Value", "40.000000"}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "PatrolSpotLight2", "Name", "RADIUS"},
+                                {"Name", "AttackSpotLight",  "Name", "RADIUS"},
+                                {"Name", "InvestSpotLight1", "Name", "RADIUS"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "40.000000"}
                             },
                         },
                         {
@@ -698,13 +629,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Name", "spotLight1", "Name", "FALLOFF_RATE"},
-                                {"Name", "spotLight3", "Name", "FALLOFF_RATE"},
-                                {"Name", "spotLight2", "Name", "FALLOFF_RATE"},
+                                {"Name", "spotLight1", "Name", "FOV"},
+                                {"Name", "spotLight3", "Name", "FOV"},
+                                {"Name", "spotLight2", "Name", "FOV"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "1.000000"}
+                                {"Value", "60.000000"}
                             },
                         },
                         {
@@ -716,25 +647,31 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "10000.000000"}
+                                {"Value", "1.000000"}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "spotLight1", "Name", "RADIUS"},
+                                {"Name", "spotLight3", "Name", "RADIUS"},
+                                {"Name", "spotLight2", "Name", "RADIUS"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "4.000000"}
                             },
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "spotLight1", "Name", "VOLUMETRIC"},
+                                {"Name", "spotLight3", "Name", "VOLUMETRIC"},
                                 {"Name", "spotLight2", "Name", "VOLUMETRIC"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.500000"}
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight3", "Name", "VOLUMETRIC"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "1.000000"}
                             },
                         },
                     }
