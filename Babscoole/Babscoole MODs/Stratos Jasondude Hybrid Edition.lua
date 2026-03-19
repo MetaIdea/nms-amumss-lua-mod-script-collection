@@ -4265,7 +4265,7 @@ function CreateColoursProperty(PaletteColours)
     local G11 = PaletteColours[j][42]
     local B11 = PaletteColours[j][43]
     local A11 = PaletteColours[j][44]
-    table.insert(PropertiesString,GetColours(COUNTER, SW, R1, G1, B1, A1, R2, G2, B2, A2, R3, G3, B3, A3, R4, G4, B4, A4, R5, G5, B5, A5, R6, G6, B6, A6, R7, G7, B7, A7, X8, Y8, Z8, R9, G9, B9, A9, R10, G10, B10, A10, R11, G11, B11, A11, CD1))
+    table.insert(PropertiesString,GetColours(COUNTER,SW,R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,R6,G6,B6,A6,R7,G7,B7,A7,X8,Y8,Z8,R9,G9,B9,A9,R10,G10,B10,A10,R11,G11,B11,A11,CD1))
   end
   return table.concat(PropertiesString)
 end

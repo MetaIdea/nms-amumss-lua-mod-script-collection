@@ -5,26 +5,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole & Lyravega",
 ["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "GCSIMULATIONGLOBALS.GLOBAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "GCSIMULATIONGLOBALS.GLOBAL.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"File", "MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinDraw", "100"},
-                                {"MaxDraw", "100"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"MultitoolPool"},
-                            ["ADD_OPTION"] = "ADDendSECTION",
-                            ["ADD"] =
+              ["SPECIAL_KEY_WORDS"] = {"File", "MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"MinDraw", "100"},
+                {"MaxDraw", "100"},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"MultitoolPool"},
+              ["ADD_OPTION"] = "ADDendSECTION",
+              ["ADD"] =
 [[
 		<Property name="MultitoolPool" value="GcMultitoolPoolData" _index="5">
 			<Property name="File" value="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN" />
@@ -54,121 +54,121 @@ NMS_MOD_DEFINITION_CONTAINER =
 			</Property>
 		</Property>
 ]]
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {
-                            [[MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/SHOPWEAPON/PHONG15.MATERIAL.MBIN]],
-                            [[MODELS/PHONG15.MATERIAL.MBIN]],
-                            "REMOVE"
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PHONG15.MATERIAL.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialColourVec4"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Y", "0.000000"},
-                                {"Z", "0.000000"},
-                                {"W", "0.000000"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN", "MODELS/CRATE_WEAPON.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\CRATE_WEAPON.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1Crate_Large1_DUP", "Name", "MATERIAL"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "MODELS\PHONG15.MATERIAL.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Hatch"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Type", ""},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Screens"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Type", ""},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight5", "Name", "INTENSITY"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "0000.000000"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\RUG0.SCENE.MBIN", "MODELS\JJ_RUG0.SCENE.MBIN", "REMOVE"},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\JJ_RUG0.SCENE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"NameHash", "2492548323"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "LODDIST1"},
-                                {"Name", "LODDIST2"},
-                                {"Name", "LODDIST3"},
-                                {"Name", "Rug0LOD1"},
-                                {"Name", "Rug0LOD2"},
-                                {"Name", "Rug0LOD3"},
-                                {"Name", "Data"},
-                            },
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "NUMLODS"},
-                            ["EXML_INDEX"] = "1",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "1"},
-                            }
-                        },
-                    }
-                },
-            }
-        }
-    },
-["ADD_FILES"] =
-    {
+            },
+          }
+        },
         {
-            ["FILE_DESTINATION"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\PIRATES\SHOPWEAPON.SCENE.MXML",
-            ["FILE_CONTENT"] =
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {
+              [[MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/SHOPWEAPON/PHONG15.MATERIAL.MBIN]],
+              [[MODELS/PHONG15.MATERIAL.MBIN]],
+              "REMOVE"
+            },
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\PHONG15.MATERIAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialColourVec4"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Y", "0.000000"},
+                {"Z", "0.000000"},
+                {"W", "0.000000"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN", "MODELS/CRATE_WEAPON.SCENE.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\CRATE_WEAPON.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1Crate_Large1_DUP", "Name", "MATERIAL"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "MODELS\PHONG15.MATERIAL.MBIN"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "Hatch"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Type", ""},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "Screens"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Type", ""},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight5", "Name", "INTENSITY"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "0000.000000"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\RUG0.SCENE.MBIN", "MODELS\JJ_RUG0.SCENE.MBIN", "REMOVE"},
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\JJ_RUG0.SCENE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"NameHash", "2492548323"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "LODDIST1"},
+                {"Name", "LODDIST2"},
+                {"Name", "LODDIST3"},
+                {"Name", "Rug0LOD1"},
+                {"Name", "Rug0LOD2"},
+                {"Name", "Rug0LOD3"},
+                {"Name", "Data"},
+              },
+              ["REMOVE"] = "SECTION"
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "NUMLODS"},
+              ["EXML_INDEX"] = "1",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Value", "1"},
+              }
+            },
+          }
+        },
+      }
+    }
+  },
+["ADD_FILES"] =
+  {
+    {
+      ["FILE_DESTINATION"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\PIRATES\SHOPWEAPON.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -594,10 +594,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS\3CRATE.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS\3CRATE.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -703,6 +703,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]]
-        },
-    }
+    },
+  }
 }

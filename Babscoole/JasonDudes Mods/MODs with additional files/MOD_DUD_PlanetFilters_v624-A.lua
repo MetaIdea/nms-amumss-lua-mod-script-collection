@@ -7,64 +7,64 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "METADATA\EFFECTS\SCREENFILTERS.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\EFFECTS\SCREENFILTERS.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Weird4",       "GcScreenFilterData"},
-                                {"SepiaExtreme", "GcScreenFilterData"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FadeDistance", "200"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Weird7", "GcScreenFilterData"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FadeDistance", "600"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"HueShiftA", "GcScreenFilterData"},
-                                {"HueShiftB", "GcScreenFilterData"},
-                                {"HueShiftC", "GcScreenFilterData"},
-                                {"HueShiftD", "GcScreenFilterData"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FadeDistance", "500"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"NMSRetroA", "GcScreenFilterData"},
-                                {"NMSRetroB", "GcScreenFilterData"},
-                                {"NMSRetroC", "GcScreenFilterData"},
-                                {"NMSRetroD", "GcScreenFilterData"},
-                                {"NMSRetroE", "GcScreenFilterData"},
-                                {"NMSRetroF", "GcScreenFilterData"},
-                                {"NMSRetroG", "GcScreenFilterData"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FadeDistance", "300"}
-                            }
-                        },
-                    }
-                },
-            }
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Weird4",       "GcScreenFilterData"},
+                {"SepiaExtreme", "GcScreenFilterData"},
+              },
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"FadeDistance", "200"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Weird7", "GcScreenFilterData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"FadeDistance", "600"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"HueShiftA", "GcScreenFilterData"},
+                {"HueShiftB", "GcScreenFilterData"},
+                {"HueShiftC", "GcScreenFilterData"},
+                {"HueShiftD", "GcScreenFilterData"},
+              },
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"FadeDistance", "500"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"NMSRetroA", "GcScreenFilterData"},
+                {"NMSRetroB", "GcScreenFilterData"},
+                {"NMSRetroC", "GcScreenFilterData"},
+                {"NMSRetroD", "GcScreenFilterData"},
+                {"NMSRetroE", "GcScreenFilterData"},
+                {"NMSRetroF", "GcScreenFilterData"},
+                {"NMSRetroG", "GcScreenFilterData"},
+              },
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"FadeDistance", "300"}
+              }
+            },
+          }
         },
-    }
+      }
+    },
+  }
 }

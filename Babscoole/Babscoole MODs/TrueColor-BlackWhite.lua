@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "TrueColor-BW",
 ["MOD_AUTHOR"]      = "courtykat",
 ["LUA_AUTHOR"]      = "Babscoole, and courtykat",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "Improves the color palettes of all standard starships, living ships, freighters, and customizable paints",
 ["MODIFICATIONS"]   =
   {
@@ -586,10 +586,10 @@ CustomDataTable =
 }
 
 
-function GetColours(R,G,B)
+function GetColours(COUNTER,R,G,B,A)
   return
 [[
-<Property name="Colours">
+    <Property name="Colours" _index="]].. COUNTER ..[[">
       <Property name="R" value="]].. string.format("%0.6f",R) ..[[" />
       <Property name="G" value="]].. string.format("%0.6f",G) ..[[" />
       <Property name="B" value="]].. string.format("%0.6f",B) ..[[" />
@@ -603,10 +603,11 @@ function CreateColoursProperty(PaletteColours)
   local PropertiesString = {}
 
   for j = 1, #PaletteColours do
+    local COUNTER  = j-1
     local R = PaletteColours[j]["R"]
     local G = PaletteColours[j]["G"]
     local B = PaletteColours[j]["B"]
-    table.insert(PropertiesString,GetColours(R,G,B))
+    table.insert(PropertiesString,GetColours(COUNTER,R,G,B,A))
   end
   local PropertyColoursString =
     [[      <Property name="Colours">
@@ -637,7 +638,7 @@ for i = 1, #BaseDataTable do
     ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
     ["ADD"] = CreateColoursProperty(PaletteColours)
   }
-  
+
   BaseColourPalettesTable[#BaseColourPalettesTable +1] =
   {
     ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},
@@ -653,20 +654,20 @@ for i = 1, #CustomDataTable do
   local PaletteNumColours = CustomDataTable[i]["NUMCOLOURS"]
     for j = 1, #CustomColors do
       local PaletteColours = CustomColors[j]["COLOURS"]
-    
+
       BaseColourPalettesTable2[#BaseColourPalettesTable2 +1] =
       {
         ["SPECIAL_KEY_WORDS"] = {"ID", Palette, "NumColours", PaletteNumColours},
         ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
       }
-      
+
       BaseColourPalettesTable2[#BaseColourPalettesTable2 +1] =
       {
         ["SPECIAL_KEY_WORDS"] = {"ID", Palette, "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
       }
-      
+
       BaseColourPalettesTable2[#BaseColourPalettesTable2 +1] =
       {
         ["SPECIAL_KEY_WORDS"] = {"ID", Palette},

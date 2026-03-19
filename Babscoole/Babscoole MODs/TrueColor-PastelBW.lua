@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "TrueColor-PastelBW",
 ["MOD_AUTHOR"]      = "courtykat",
 ["LUA_AUTHOR"]      = "Babscoole, and courtykat",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "Improves the color palettes of all standard starships, living ships, freighters, and customizable paints",
 ["MODIFICATIONS"]   =
   {
@@ -593,10 +593,10 @@ CustomDataTable =
 }
 
 
-function GetColours(R,G,B)
+function GetColours(COUNTER,R,G,B,A)
   return
 [[
-<Property name="Colours">
+    <Property name="Colours" _index="]].. COUNTER ..[[">
       <Property name="R" value="]].. string.format("%0.6f",R) ..[[" />
       <Property name="G" value="]].. string.format("%0.6f",G) ..[[" />
       <Property name="B" value="]].. string.format("%0.6f",B) ..[[" />
@@ -610,10 +610,11 @@ function CreateColoursProperty(PaletteColours)
   local PropertiesString = {}
 
   for j = 1, #PaletteColours do
+    local COUNTER  = j-1
     local R = PaletteColours[j]["R"]
     local G = PaletteColours[j]["G"]
     local B = PaletteColours[j]["B"]
-    table.insert(PropertiesString,GetColours(R,G,B))
+    table.insert(PropertiesString,GetColours(COUNTER,R,G,B,A))
   end
   local PropertyColoursString =
     [[      <Property name="Colours">

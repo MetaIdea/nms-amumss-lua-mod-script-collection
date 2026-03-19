@@ -7,36 +7,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "GCUIGLOBALS.GLOBAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "GCUIGLOBALS.GLOBAL.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"CreatureDistanceAlpha", "0"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\UI\HUD\SCANNERICONS.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"CreatureUndiscovered", "GcScannerIcon"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Filename", "TEXTURES/UI/HUD/DUDCREATURE.RED.DDS"},
-                            }
-                        },
-                    }
-                },
-            }
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"CreatureDistanceAlpha", "0"},
+              }
+            },
+          }
         },
-    }
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\UI\HUD\SCANNERICONS.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"CreatureUndiscovered", "GcScannerIcon"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Filename", "TEXTURES/UI/HUD/DUDCREATURE.RED.DDS"},
+              }
+            },
+          }
+        },
+      }
+    },
+  }
 }

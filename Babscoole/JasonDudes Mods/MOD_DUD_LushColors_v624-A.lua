@@ -1,147 +1,147 @@
 DataTable =
 {
+  {
+    ["PALETTE"] = "Wood",
+    ["NUMCOLOURS"] = "_16",
+    ["COLOURS"] =
     {
-        ["PALETTE"] = "Wood",
-        ["NUMCOLOURS"] = "_16",
-        ["COLOURS"] =
-        {
-            {["R"]="0.545", ["G"]="0.518", ["B"]="0.365", ["A"]="1"},
-            {["R"]="0.545", ["G"]="0.518", ["B"]="0.365", ["A"]="1"},
-            {["R"]="0.322", ["G"]="0.31",  ["B"]="0.31",  ["A"]="1"},
-            {["R"]="0.322", ["G"]="0.31",  ["B"]="0.31",  ["A"]="1"},
-            {["R"]="0.573", ["G"]="0.376", ["B"]="0.282", ["A"]="1"},
-            {["R"]="0.573", ["G"]="0.376", ["B"]="0.282", ["A"]="1"},
-            {["R"]="0.647", ["G"]="0.541", ["B"]="0.392", ["A"]="1"},
-            {["R"]="0.647", ["G"]="0.541", ["B"]="0.392", ["A"]="1"},
-            {["R"]="0.545", ["G"]="0.518", ["B"]="0.365", ["A"]="1"},
-            {["R"]="0.545", ["G"]="0.518", ["B"]="0.365", ["A"]="1"},
-            {["R"]="0.322", ["G"]="0.31",  ["B"]="0.31",  ["A"]="1"},
-            {["R"]="0.322", ["G"]="0.31",  ["B"]="0.31",  ["A"]="1"},
-            {["R"]="0.573", ["G"]="0.376", ["B"]="0.282", ["A"]="1"},
-            {["R"]="0.573", ["G"]="0.376", ["B"]="0.282", ["A"]="1"},
-            {["R"]="0.647", ["G"]="0.541", ["B"]="0.392", ["A"]="1"},
-            {["R"]="0.647", ["G"]="0.541", ["B"]="0.392", ["A"]="1"},
-            {["R"]="0.333", ["G"]="0.361", ["B"]="0.282", ["A"]="1"},
-            {["R"]="0.333", ["G"]="0.361", ["B"]="0.282", ["A"]="1"},
-            {["R"]="0.631", ["G"]="0.573", ["B"]="0.475", ["A"]="1"},
-            {["R"]="0.631", ["G"]="0.573", ["B"]="0.475", ["A"]="1"},
-            {["R"]="0.8",   ["G"]="0.749", ["B"]="0.631", ["A"]="1"},
-            {["R"]="0.8",   ["G"]="0.749", ["B"]="0.631", ["A"]="1"},
-            {["R"]="0.71",  ["G"]="0.416", ["B"]="0.337", ["A"]="1"},
-            {["R"]="0.71",  ["G"]="0.416", ["B"]="0.337", ["A"]="1"},
-            {["R"]="0.333", ["G"]="0.361", ["B"]="0.282", ["A"]="1"},
-            {["R"]="0.333", ["G"]="0.361", ["B"]="0.282", ["A"]="1"},
-            {["R"]="0.631", ["G"]="0.573", ["B"]="0.475", ["A"]="1"},
-            {["R"]="0.631", ["G"]="0.573", ["B"]="0.475", ["A"]="1"},
-            {["R"]="0.8",   ["G"]="0.749", ["B"]="0.631", ["A"]="1"},
-            {["R"]="0.8",   ["G"]="0.749", ["B"]="0.631", ["A"]="1"},
-            {["R"]="0.71",  ["G"]="0.416", ["B"]="0.337", ["A"]="1"},
-            {["R"]="0.71",  ["G"]="0.416", ["B"]="0.337", ["A"]="1"},
-            {["R"]="0.345", ["G"]="0.278", ["B"]="0.224", ["A"]="1"},
-            {["R"]="0.345", ["G"]="0.278", ["B"]="0.224", ["A"]="1"},
-            {["R"]="0.329", ["G"]="0.208", ["B"]="0.216", ["A"]="1"},
-            {["R"]="0.329", ["G"]="0.208", ["B"]="0.216", ["A"]="1"},
-            {["R"]="0.878", ["G"]="0.878", ["B"]="0.878", ["A"]="1"},
-            {["R"]="0.878", ["G"]="0.878", ["B"]="0.878", ["A"]="1"},
-            {["R"]="0.557", ["G"]="0.557", ["B"]="0.557", ["A"]="1"},
-            {["R"]="0.557", ["G"]="0.557", ["B"]="0.557", ["A"]="1"},
-            {["R"]="0.345", ["G"]="0.278", ["B"]="0.224", ["A"]="1"},
-            {["R"]="0.345", ["G"]="0.278", ["B"]="0.224", ["A"]="1"},
-            {["R"]="0.329", ["G"]="0.208", ["B"]="0.216", ["A"]="1"},
-            {["R"]="0.329", ["G"]="0.208", ["B"]="0.216", ["A"]="1"},
-            {["R"]="0.878", ["G"]="0.878", ["B"]="0.878", ["A"]="1"},
-            {["R"]="0.878", ["G"]="0.878", ["B"]="0.878", ["A"]="1"},
-            {["R"]="0.557", ["G"]="0.557", ["B"]="0.557", ["A"]="1"},
-            {["R"]="0.557", ["G"]="0.557", ["B"]="0.557", ["A"]="1"},
-            {["R"]="0.776", ["G"]="0.624", ["B"]="0.655", ["A"]="1"},
-            {["R"]="0.776", ["G"]="0.624", ["B"]="0.655", ["A"]="1"},
-            {["R"]="0.498", ["G"]="0.6",   ["B"]="0.596", ["A"]="1"},
-            {["R"]="0.498", ["G"]="0.6",   ["B"]="0.596", ["A"]="1"},
-            {["R"]="0.537", ["G"]="0.62",  ["B"]="0.537", ["A"]="1"},
-            {["R"]="0.537", ["G"]="0.62",  ["B"]="0.537", ["A"]="1"},
-            {["R"]="0.318", ["G"]="0.243", ["B"]="0.161", ["A"]="1"},
-            {["R"]="0.318", ["G"]="0.243", ["B"]="0.161", ["A"]="1"},
-            {["R"]="0.776", ["G"]="0.624", ["B"]="0.655", ["A"]="1"},
-            {["R"]="0.776", ["G"]="0.624", ["B"]="0.655", ["A"]="1"},
-            {["R"]="0.498", ["G"]="0.6",   ["B"]="0.596", ["A"]="1"},
-            {["R"]="0.498", ["G"]="0.6",   ["B"]="0.596", ["A"]="1"},
-            {["R"]="0.537", ["G"]="0.62",  ["B"]="0.537", ["A"]="1"},
-            {["R"]="0.537", ["G"]="0.62",  ["B"]="0.537", ["A"]="1"},
-            {["R"]="0.318", ["G"]="0.243", ["B"]="0.161", ["A"]="1"},
-            {["R"]="0.318", ["G"]="0.243", ["B"]="0.161", ["A"]="1"},
-        }
-    },
+      {["R"]="0.545", ["G"]="0.518", ["B"]="0.365", ["A"]="1"},
+      {["R"]="0.545", ["G"]="0.518", ["B"]="0.365", ["A"]="1"},
+      {["R"]="0.322", ["G"]="0.31",  ["B"]="0.31",  ["A"]="1"},
+      {["R"]="0.322", ["G"]="0.31",  ["B"]="0.31",  ["A"]="1"},
+      {["R"]="0.573", ["G"]="0.376", ["B"]="0.282", ["A"]="1"},
+      {["R"]="0.573", ["G"]="0.376", ["B"]="0.282", ["A"]="1"},
+      {["R"]="0.647", ["G"]="0.541", ["B"]="0.392", ["A"]="1"},
+      {["R"]="0.647", ["G"]="0.541", ["B"]="0.392", ["A"]="1"},
+      {["R"]="0.545", ["G"]="0.518", ["B"]="0.365", ["A"]="1"},
+      {["R"]="0.545", ["G"]="0.518", ["B"]="0.365", ["A"]="1"},
+      {["R"]="0.322", ["G"]="0.31",  ["B"]="0.31",  ["A"]="1"},
+      {["R"]="0.322", ["G"]="0.31",  ["B"]="0.31",  ["A"]="1"},
+      {["R"]="0.573", ["G"]="0.376", ["B"]="0.282", ["A"]="1"},
+      {["R"]="0.573", ["G"]="0.376", ["B"]="0.282", ["A"]="1"},
+      {["R"]="0.647", ["G"]="0.541", ["B"]="0.392", ["A"]="1"},
+      {["R"]="0.647", ["G"]="0.541", ["B"]="0.392", ["A"]="1"},
+      {["R"]="0.333", ["G"]="0.361", ["B"]="0.282", ["A"]="1"},
+      {["R"]="0.333", ["G"]="0.361", ["B"]="0.282", ["A"]="1"},
+      {["R"]="0.631", ["G"]="0.573", ["B"]="0.475", ["A"]="1"},
+      {["R"]="0.631", ["G"]="0.573", ["B"]="0.475", ["A"]="1"},
+      {["R"]="0.8",   ["G"]="0.749", ["B"]="0.631", ["A"]="1"},
+      {["R"]="0.8",   ["G"]="0.749", ["B"]="0.631", ["A"]="1"},
+      {["R"]="0.71",  ["G"]="0.416", ["B"]="0.337", ["A"]="1"},
+      {["R"]="0.71",  ["G"]="0.416", ["B"]="0.337", ["A"]="1"},
+      {["R"]="0.333", ["G"]="0.361", ["B"]="0.282", ["A"]="1"},
+      {["R"]="0.333", ["G"]="0.361", ["B"]="0.282", ["A"]="1"},
+      {["R"]="0.631", ["G"]="0.573", ["B"]="0.475", ["A"]="1"},
+      {["R"]="0.631", ["G"]="0.573", ["B"]="0.475", ["A"]="1"},
+      {["R"]="0.8",   ["G"]="0.749", ["B"]="0.631", ["A"]="1"},
+      {["R"]="0.8",   ["G"]="0.749", ["B"]="0.631", ["A"]="1"},
+      {["R"]="0.71",  ["G"]="0.416", ["B"]="0.337", ["A"]="1"},
+      {["R"]="0.71",  ["G"]="0.416", ["B"]="0.337", ["A"]="1"},
+      {["R"]="0.345", ["G"]="0.278", ["B"]="0.224", ["A"]="1"},
+      {["R"]="0.345", ["G"]="0.278", ["B"]="0.224", ["A"]="1"},
+      {["R"]="0.329", ["G"]="0.208", ["B"]="0.216", ["A"]="1"},
+      {["R"]="0.329", ["G"]="0.208", ["B"]="0.216", ["A"]="1"},
+      {["R"]="0.878", ["G"]="0.878", ["B"]="0.878", ["A"]="1"},
+      {["R"]="0.878", ["G"]="0.878", ["B"]="0.878", ["A"]="1"},
+      {["R"]="0.557", ["G"]="0.557", ["B"]="0.557", ["A"]="1"},
+      {["R"]="0.557", ["G"]="0.557", ["B"]="0.557", ["A"]="1"},
+      {["R"]="0.345", ["G"]="0.278", ["B"]="0.224", ["A"]="1"},
+      {["R"]="0.345", ["G"]="0.278", ["B"]="0.224", ["A"]="1"},
+      {["R"]="0.329", ["G"]="0.208", ["B"]="0.216", ["A"]="1"},
+      {["R"]="0.329", ["G"]="0.208", ["B"]="0.216", ["A"]="1"},
+      {["R"]="0.878", ["G"]="0.878", ["B"]="0.878", ["A"]="1"},
+      {["R"]="0.878", ["G"]="0.878", ["B"]="0.878", ["A"]="1"},
+      {["R"]="0.557", ["G"]="0.557", ["B"]="0.557", ["A"]="1"},
+      {["R"]="0.557", ["G"]="0.557", ["B"]="0.557", ["A"]="1"},
+      {["R"]="0.776", ["G"]="0.624", ["B"]="0.655", ["A"]="1"},
+      {["R"]="0.776", ["G"]="0.624", ["B"]="0.655", ["A"]="1"},
+      {["R"]="0.498", ["G"]="0.6",   ["B"]="0.596", ["A"]="1"},
+      {["R"]="0.498", ["G"]="0.6",   ["B"]="0.596", ["A"]="1"},
+      {["R"]="0.537", ["G"]="0.62",  ["B"]="0.537", ["A"]="1"},
+      {["R"]="0.537", ["G"]="0.62",  ["B"]="0.537", ["A"]="1"},
+      {["R"]="0.318", ["G"]="0.243", ["B"]="0.161", ["A"]="1"},
+      {["R"]="0.318", ["G"]="0.243", ["B"]="0.161", ["A"]="1"},
+      {["R"]="0.776", ["G"]="0.624", ["B"]="0.655", ["A"]="1"},
+      {["R"]="0.776", ["G"]="0.624", ["B"]="0.655", ["A"]="1"},
+      {["R"]="0.498", ["G"]="0.6",   ["B"]="0.596", ["A"]="1"},
+      {["R"]="0.498", ["G"]="0.6",   ["B"]="0.596", ["A"]="1"},
+      {["R"]="0.537", ["G"]="0.62",  ["B"]="0.537", ["A"]="1"},
+      {["R"]="0.537", ["G"]="0.62",  ["B"]="0.537", ["A"]="1"},
+      {["R"]="0.318", ["G"]="0.243", ["B"]="0.161", ["A"]="1"},
+      {["R"]="0.318", ["G"]="0.243", ["B"]="0.161", ["A"]="1"},
+    }
+  },
+  {
+    ["PALETTE"] = "Stone",
+    ["NUMCOLOURS"] = "_16",
+    ["COLOURS"] =
     {
-        ["PALETTE"] = "Stone",
-        ["NUMCOLOURS"] = "_16",
-        ["COLOURS"] =
-        {
-            {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
-            {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
-            {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
-            {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
-            {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
-            {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
-            {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
-            {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
-            {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
-            {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
-            {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
-            {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
-            {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
-            {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
-            {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
-            {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
-            {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
-            {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
-            {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
-            {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
-            {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
-            {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
-            {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
-            {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
-            {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
-            {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
-            {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
-            {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
-            {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
-            {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
-            {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
-            {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
-            {["R"]="0.466", ["G"]="0.466", ["B"]="0.466", ["A"]="1"},
-            {["R"]="0.466", ["G"]="0.466", ["B"]="0.466", ["A"]="1"},
-            {["R"]="0.588", ["G"]="0.588", ["B"]="0.588", ["A"]="1"},
-            {["R"]="0.588", ["G"]="0.588", ["B"]="0.588", ["A"]="1"},
-            {["R"]="0.509", ["G"]="0.486", ["B"]="0.486", ["A"]="1"},
-            {["R"]="0.509", ["G"]="0.486", ["B"]="0.486", ["A"]="1"},
-            {["R"]="0.356", ["G"]="0.407", ["B"]="0.447", ["A"]="1"},
-            {["R"]="0.356", ["G"]="0.407", ["B"]="0.447", ["A"]="1"},
-            {["R"]="0.466", ["G"]="0.466", ["B"]="0.466", ["A"]="1"},
-            {["R"]="0.466", ["G"]="0.466", ["B"]="0.466", ["A"]="1"},
-            {["R"]="0.588", ["G"]="0.588", ["B"]="0.588", ["A"]="1"},
-            {["R"]="0.588", ["G"]="0.588", ["B"]="0.588", ["A"]="1"},
-            {["R"]="0.509", ["G"]="0.486", ["B"]="0.486", ["A"]="1"},
-            {["R"]="0.509", ["G"]="0.486", ["B"]="0.486", ["A"]="1"},
-            {["R"]="0.356", ["G"]="0.407", ["B"]="0.447", ["A"]="1"},
-            {["R"]="0.356", ["G"]="0.407", ["B"]="0.447", ["A"]="1"},
-            {["R"]="0.576", ["G"]="0.498", ["B"]="0.439", ["A"]="1"},
-            {["R"]="0.576", ["G"]="0.498", ["B"]="0.439", ["A"]="1"},
-            {["R"]="0.647", ["G"]="0.56",  ["B"]="0.49",  ["A"]="1"},
-            {["R"]="0.647", ["G"]="0.56",  ["B"]="0.49",  ["A"]="1"},
-            {["R"]="0.478", ["G"]="0.392", ["B"]="0.352", ["A"]="1"},
-            {["R"]="0.478", ["G"]="0.392", ["B"]="0.352", ["A"]="1"},
-            {["R"]="0.376", ["G"]="0.29",  ["B"]="0.274", ["A"]="1"},
-            {["R"]="0.376", ["G"]="0.29",  ["B"]="0.274", ["A"]="1"},
-            {["R"]="0.576", ["G"]="0.498", ["B"]="0.439", ["A"]="1"},
-            {["R"]="0.576", ["G"]="0.498", ["B"]="0.439", ["A"]="1"},
-            {["R"]="0.647", ["G"]="0.56",  ["B"]="0.49",  ["A"]="1"},
-            {["R"]="0.647", ["G"]="0.56",  ["B"]="0.49",  ["A"]="1"},
-            {["R"]="0.478", ["G"]="0.392", ["B"]="0.352", ["A"]="1"},
-            {["R"]="0.478", ["G"]="0.392", ["B"]="0.352", ["A"]="1"},
-            {["R"]="0.376", ["G"]="0.29",  ["B"]="0.274", ["A"]="1"},
-            {["R"]="0.376", ["G"]="0.29",  ["B"]="0.274", ["A"]="1"},
-        }
-    },
+      {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
+      {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
+      {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
+      {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
+      {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
+      {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
+      {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
+      {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
+      {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
+      {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
+      {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
+      {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
+      {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
+      {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
+      {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
+      {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
+      {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
+      {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
+      {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
+      {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
+      {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
+      {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
+      {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
+      {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
+      {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
+      {["R"]="0.324", ["G"]="0.324", ["B"]="0.324", ["A"]="1"},
+      {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
+      {["R"]="0.427", ["G"]="0.362", ["B"]="0.309", ["A"]="1"},
+      {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
+      {["R"]="0.423", ["G"]="0.406", ["B"]="0.406", ["A"]="1"},
+      {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
+      {["R"]="0.34",  ["G"]="0.388", ["B"]="0.389", ["A"]="1"},
+      {["R"]="0.466", ["G"]="0.466", ["B"]="0.466", ["A"]="1"},
+      {["R"]="0.466", ["G"]="0.466", ["B"]="0.466", ["A"]="1"},
+      {["R"]="0.588", ["G"]="0.588", ["B"]="0.588", ["A"]="1"},
+      {["R"]="0.588", ["G"]="0.588", ["B"]="0.588", ["A"]="1"},
+      {["R"]="0.509", ["G"]="0.486", ["B"]="0.486", ["A"]="1"},
+      {["R"]="0.509", ["G"]="0.486", ["B"]="0.486", ["A"]="1"},
+      {["R"]="0.356", ["G"]="0.407", ["B"]="0.447", ["A"]="1"},
+      {["R"]="0.356", ["G"]="0.407", ["B"]="0.447", ["A"]="1"},
+      {["R"]="0.466", ["G"]="0.466", ["B"]="0.466", ["A"]="1"},
+      {["R"]="0.466", ["G"]="0.466", ["B"]="0.466", ["A"]="1"},
+      {["R"]="0.588", ["G"]="0.588", ["B"]="0.588", ["A"]="1"},
+      {["R"]="0.588", ["G"]="0.588", ["B"]="0.588", ["A"]="1"},
+      {["R"]="0.509", ["G"]="0.486", ["B"]="0.486", ["A"]="1"},
+      {["R"]="0.509", ["G"]="0.486", ["B"]="0.486", ["A"]="1"},
+      {["R"]="0.356", ["G"]="0.407", ["B"]="0.447", ["A"]="1"},
+      {["R"]="0.356", ["G"]="0.407", ["B"]="0.447", ["A"]="1"},
+      {["R"]="0.576", ["G"]="0.498", ["B"]="0.439", ["A"]="1"},
+      {["R"]="0.576", ["G"]="0.498", ["B"]="0.439", ["A"]="1"},
+      {["R"]="0.647", ["G"]="0.56",  ["B"]="0.49",  ["A"]="1"},
+      {["R"]="0.647", ["G"]="0.56",  ["B"]="0.49",  ["A"]="1"},
+      {["R"]="0.478", ["G"]="0.392", ["B"]="0.352", ["A"]="1"},
+      {["R"]="0.478", ["G"]="0.392", ["B"]="0.352", ["A"]="1"},
+      {["R"]="0.376", ["G"]="0.29",  ["B"]="0.274", ["A"]="1"},
+      {["R"]="0.376", ["G"]="0.29",  ["B"]="0.274", ["A"]="1"},
+      {["R"]="0.576", ["G"]="0.498", ["B"]="0.439", ["A"]="1"},
+      {["R"]="0.576", ["G"]="0.498", ["B"]="0.439", ["A"]="1"},
+      {["R"]="0.647", ["G"]="0.56",  ["B"]="0.49",  ["A"]="1"},
+      {["R"]="0.647", ["G"]="0.56",  ["B"]="0.49",  ["A"]="1"},
+      {["R"]="0.478", ["G"]="0.392", ["B"]="0.352", ["A"]="1"},
+      {["R"]="0.478", ["G"]="0.392", ["B"]="0.352", ["A"]="1"},
+      {["R"]="0.376", ["G"]="0.29",  ["B"]="0.274", ["A"]="1"},
+      {["R"]="0.376", ["G"]="0.29",  ["B"]="0.274", ["A"]="1"},
+    }
+  },
 }
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -151,61 +151,61 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHCOLOURPALETTES.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHCOLOURPALETTES.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Stone", "GcPaletteData"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"NumColours", "_16"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Crystal", "GcPaletteData"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"NumColours", "Inactive"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\COMMON\BARK\BARKGROUNDDECAL.TEXTURE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "COLOUR"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Probability", "1.000000"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "COLOUR", "Textures", "TkProceduralTexture"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Probability", "1.000000"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "COLOUR", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Plant"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "COLOUR"},
-                            ["PRECEDING_KEY_WORDS"] = {"Textures"},
-                            ["ADD_OPTION"] = "ADDendSECTION",
-                            ["ADD"] =
+              ["SPECIAL_KEY_WORDS"] = {"Stone", "GcPaletteData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"NumColours", "_16"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Crystal", "GcPaletteData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"NumColours", "Inactive"}
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\COMMON\BARK\BARKGROUNDDECAL.TEXTURE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "COLOUR"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Probability", "1.000000"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "COLOUR", "Textures", "TkProceduralTexture"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Probability", "1.000000"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "COLOUR", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Plant"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "COLOUR"},
+              ["PRECEDING_KEY_WORDS"] = {"Textures"},
+              ["ADD_OPTION"] = "ADDendSECTION",
+              ["ADD"] =
 [[
         <Property name="Textures" value="TkProceduralTexture" _index="1">
           <Property name="Name" value="" />
@@ -246,27 +246,27 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARKGROUNDDECAL.COLOUR.DDS" />
         </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Textures", "TkProceduralTexture"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Probability", "1.000000"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Grass"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "BASE"},
-                            ["PRECEDING_KEY_WORDS"] = {"Textures"},
-                            ["ADD_OPTION"] = "ADDendSECTION",
-                            ["ADD"] =
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Textures", "TkProceduralTexture"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                  {"Probability", "1.000000"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                  {"Palette", "Grass"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "BASE"},
+              ["PRECEDING_KEY_WORDS"] = {"Textures"},
+              ["ADD_OPTION"] = "ADDendSECTION",
+              ["ADD"] =
 [[
         <Property name="Textures" value="TkProceduralTexture" _index="1">
           <Property name="Name" value="1" />
@@ -307,39 +307,39 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARKGROUNDDECAL.BASE.1.DDS" />
         </Property>
 ]]
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\COMMON\BARK\BARRENBARK.TEXTURE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Probability", "1.000000"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Textures", "TkProceduralTexture"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Probability", "1.000000"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Plant"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Textures", "TkProceduralTexture"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\COMMON\BARK\BARRENBARK.TEXTURE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Probability", "1.000000"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Textures", "TkProceduralTexture"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Probability", "1.000000"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Plant"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Textures", "TkProceduralTexture"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
         <Property name="Textures" value="TkProceduralTexture" _index="1">
           <Property name="Name" value="BLOBS" />
@@ -380,30 +380,30 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARRENBARK.OVERLAY.BLOBS.DDS" />
         </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "STRIPES", "Textures", "TkProceduralTexture"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Probability", "1.000000"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "STRIPES", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Plant"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "STRIPES"},
-                            ["EXML_INDEX"] = "3",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "STRIPES"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "STRIPES", "Textures", "TkProceduralTexture"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Probability", "1.000000"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "STRIPES", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Plant"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "STRIPES"},
+              ["EXML_INDEX"] = "3",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "STRIPES"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
         <Property name="Textures" value="TkProceduralTexture" _index="4">
           <Property name="Name" value="STRIPES" />
@@ -444,30 +444,30 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARRENBARK.OVERLAY.STRIPES.DDS" />
         </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS", "Textures", "TkProceduralTexture"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Probability", "1.000000"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Plant"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS"},
-                            ["EXML_INDEX"] = "6",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS", "Textures", "TkProceduralTexture"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Probability", "1.000000"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Plant"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS"},
+              ["EXML_INDEX"] = "6",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
         <Property name="Textures" value="TkProceduralTexture" _index="7">
           <Property name="Name" value="MOSS" />
@@ -508,18 +508,18 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARRENBARK.OVERLAY.MOSS.DDS" />
         </Property>
 ]]
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\COMMON\BARK\CAPS.TEXTURE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "ALIEN"},
-                            ["PRECEDING_KEY_WORDS"] = {"Textures"},
-                            ["ADD_OPTION"] = "ADDendSECTION",
-                            ["ADD"] =
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\COMMON\BARK\CAPS.TEXTURE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "ALIEN"},
+              ["PRECEDING_KEY_WORDS"] = {"Textures"},
+              ["ADD_OPTION"] = "ADDendSECTION",
+              ["ADD"] =
 [[
         <Property name="Textures" value="TkProceduralTexture" _index="1">
           <Property name="Name" value="" />
@@ -541,25 +541,25 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/CAPS.ALIEN.DDS" />
         </Property>
 ]]
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\COMMON\BARK\WOODLANDBARK.TEXTURE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Plant"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "VINES", "Textures", "TkProceduralTexture"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\COMMON\BARK\WOODLANDBARK.TEXTURE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Plant"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "VINES", "Textures", "TkProceduralTexture"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
         <Property name="Textures" value="TkProceduralTexture" _index="1">
           <Property name="Name" value="VINES" />
@@ -600,23 +600,23 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.OVERLAY.VINES.DDS" />
         </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "LICHEN", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Plant"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "LICHEN"},
-                            ["EXML_INDEX"] = "3",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "LICHEN"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "LICHEN", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Plant"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "LICHEN"},
+              ["EXML_INDEX"] = "3",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "LICHEN"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
         <Property name="Textures" value="TkProceduralTexture" _index="4">
           <Property name="Name" value="LICHEN" />
@@ -657,23 +657,23 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.OVERLAY.LICHEN.DDS" />
         </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "GRASS", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Plant"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "GRASS"},
-                            ["EXML_INDEX"] = "6",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "GRASS"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "GRASS", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Plant"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "GRASS"},
+              ["EXML_INDEX"] = "6",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "GRASS"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
         <Property name="Textures" value="TkProceduralTexture" _index="7">
           <Property name="Name" value="GRASS" />
@@ -714,23 +714,23 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.OVERLAY.GRASS.DDS" />
         </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Plant"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS"},
-                            ["EXML_INDEX"] = "9",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Plant"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS"},
+              ["EXML_INDEX"] = "9",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
         <Property name="Textures" value="TkProceduralTexture" _index="10">
           <Property name="Name" value="MOSS" />
@@ -771,53 +771,53 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.OVERLAY.MOSS.DDS" />
         </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Plant"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\COMMON\PLANTS\SMALLPLANTA.TEXTURE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "SPOTS", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette",   "GrassAlt"},
-                                {"ColourAlt", "Primary"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "CENTERTOEDGE", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette",   "GrassAlt"},
-                                {"ColourAlt", "Primary"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "EDGETOCENTER", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette",   "GrassAlt"},
-                                {"ColourAlt", "Primary"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY"},
-                            ["PRECEDING_KEY_WORDS"] = {"Textures"},
-                            ["ADD_OPTION"] = "ADDendSECTION",
-                            ["ADD"] =
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MOSS", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Plant"}
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\COMMON\PLANTS\SMALLPLANTA.TEXTURE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "SPOTS", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette",   "GrassAlt"},
+                {"ColourAlt", "Primary"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "CENTERTOEDGE", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette",   "GrassAlt"},
+                {"ColourAlt", "Primary"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "EDGETOCENTER", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette",   "GrassAlt"},
+                {"ColourAlt", "Primary"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY"},
+              ["PRECEDING_KEY_WORDS"] = {"Textures"},
+              ["ADD_OPTION"] = "ADDendSECTION",
+              ["ADD"] =
 [[
         <Property name="Textures" value="TkProceduralTexture" _index="3">
           <Property name="Name" value="SPOTS" />
@@ -877,78 +877,78 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANTA.OVERLAY.EDGETOCENTER.DDS" />
         </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["SUB_LEVEL"] = 6,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Grass"}
-                            }
-                        },
-                    }
-                },
-            }
-        }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["SUB_LEVEL"] = 6,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Grass"}
+              }
+            },
+          }
+        },
+      }
     }
+  }
 }
 
 function GetColours(COUNTER,R,G,B,A)
-    return
-    [[
-        <Property name="Colours" _index="]].. COUNTER ..[[">
-          <Property name="R" value="]].. string.format("%0.6f",R) ..[[" />
-          <Property name="G" value="]].. string.format("%0.6f",G) ..[[" />
-          <Property name="B" value="]].. string.format("%0.6f",B) ..[[" />
-          <Property name="A" value="]].. string.format("%0.6f",A) ..[[" />
-        </Property>
-    ]]
+  return
+[[
+    <Property name="Colours" _index="]].. COUNTER ..[[">
+      <Property name="R" value="]].. string.format("%0.6f",R) ..[[" />
+      <Property name="G" value="]].. string.format("%0.6f",G) ..[[" />
+      <Property name="B" value="]].. string.format("%0.6f",B) ..[[" />
+      <Property name="A" value="]].. string.format("%0.6f",A) ..[[" />
+    </Property>
+]]
 end
 
 function CreateColoursProperty(PaletteColours)
-    local PropertiesString = {}
+  local PropertiesString = {}
 
-    for j = 1, #PaletteColours do
-        local COUNTER  = j-1
-        local R = PaletteColours[j]["R"]
-        local G = PaletteColours[j]["G"]
-        local B = PaletteColours[j]["B"]
-        local A = PaletteColours[j]["A"]
-        table.insert(PropertiesString,GetColours(COUNTER, R, G, B, A))
-    end
-    local PropertyColoursString =
-    [[      <Property name="Colours">
-    ]]..table.concat(PropertiesString)..[[
+  for j = 1, #PaletteColours do
+    local COUNTER  = j-1
+    local R = PaletteColours[j]["R"]
+    local G = PaletteColours[j]["G"]
+    local B = PaletteColours[j]["B"]
+    local A = PaletteColours[j]["A"]
+    table.insert(PropertiesString,GetColours(COUNTER, R, G, B, A))
+  end
+  local PropertyColoursString =
+  [[      <Property name="Colours">
+  ]]..table.concat(PropertiesString)..[[
   </Property>]]
 
-    -- print(PropertyColoursString)
-    return PropertyColoursString
+  -- print(PropertyColoursString)
+  return PropertyColoursString
 end
 
 local BaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 for i = 1, #DataTable do
-    local Palette = DataTable[i]["PALETTE"]
-    local PaletteColours = DataTable[i]["COLOURS"]
-    local PaletteNumColours = DataTable[i]["NUMCOLOURS"]
+  local Palette = DataTable[i]["PALETTE"]
+  local PaletteColours = DataTable[i]["COLOURS"]
+  local PaletteNumColours = DataTable[i]["NUMCOLOURS"]
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
-    {
-        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
-        ["PRECEDING_KEY_WORDS"] = {"Colours"},
-        ["REMOVE"] = "SECTION"
-    }
+  BaseColourPalettesTable[#BaseColourPalettesTable +1] =
+  {
+    ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
+    ["PRECEDING_KEY_WORDS"] = {"Colours"},
+    ["REMOVE"] = "SECTION"
+  }
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
-    {
-        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
-        ["ADD"] = CreateColoursProperty(PaletteColours)
-    }
+  BaseColourPalettesTable[#BaseColourPalettesTable +1] =
+  {
+    ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData", "NumColours", PaletteNumColours},
+    ["ADD"] = CreateColoursProperty(PaletteColours)
+  }
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1] =
-    {
-        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},
-        ["PRECEDING_KEY_WORDS"] = {"Colours"},
-        ["EXML_FLAGS"]  = "OVERWRITE",
-    }
+  BaseColourPalettesTable[#BaseColourPalettesTable +1] =
+  {
+    ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},
+    ["PRECEDING_KEY_WORDS"] = {"Colours"},
+    ["EXML_FLAGS"] = "OVERWRITE",
+  }
 end

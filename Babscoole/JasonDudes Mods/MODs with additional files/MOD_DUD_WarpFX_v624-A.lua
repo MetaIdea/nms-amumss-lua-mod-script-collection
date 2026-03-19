@@ -70,10 +70,10 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
   },
 ["ADD_FILES"] =
+  {
     {
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/DUDDUMMYWARPTUNNEL.SCENE.MXML",
-            ["FILE_CONTENT"] =
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/DUDDUMMYWARPTUNNEL.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -315,10 +315,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/DUDDUMMYWARPTUNNELBLACK.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/DUDDUMMYWARPTUNNELBLACK.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -560,10 +560,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPLARGEPORTAL.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPLARGEPORTAL.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1665,10 +1665,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPPORTAL.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPPORTAL.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2874,10 +2874,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3964,10 +3964,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE.SCENE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE.SCENE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4846,10 +4846,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPLARGEPORTAL/DUDLPORTSLOWSTARS2MAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPLARGEPORTAL/DUDLPORTSLOWSTARS2MAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4973,10 +4973,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPLARGEPORTAL/DUDLPORTSLOWSTARS3MAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPLARGEPORTAL/DUDLPORTSLOWSTARS3MAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5100,10 +5100,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPLARGEPORTAL/DUDLPORTSLOWSTARSMAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPLARGEPORTAL/DUDLPORTSLOWSTARSMAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5227,10 +5227,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPLARGEPORTAL/DUDSCROLLINGWAVESALTBMAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPLARGEPORTAL/DUDSCROLLINGWAVESALTBMAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5338,10 +5338,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="5520301382852046649" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPLARGEPORTAL/DUDWARPLARGEPORTALMAT1.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPLARGEPORTAL/DUDWARPLARGEPORTALMAT1.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5465,10 +5465,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPPORTAL/DUDLIGHTARMSBLACKMAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPPORTAL/DUDLIGHTARMSBLACKMAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5579,10 +5579,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="-7688331637547711169" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPPORTAL/DUDPORTSLOWSTARS2MAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPPORTAL/DUDPORTSLOWSTARS2MAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5706,10 +5706,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPPORTAL/DUDPORTSLOWSTARS3MAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPPORTAL/DUDPORTSLOWSTARS3MAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5833,10 +5833,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPPORTAL/DUDPORTSLOWSTARSMAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPPORTAL/DUDPORTSLOWSTARSMAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5960,10 +5960,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPPORTAL/DUDWARPPORTALMAT1.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPPORTAL/DUDWARPPORTALMAT1.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -6087,10 +6087,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL/DUDENDGLOWCAPMAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL/DUDENDGLOWCAPMAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -6182,10 +6182,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL/DUDWARPLIGHTARMSREDMAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL/DUDWARPLIGHTARMSREDMAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -6296,10 +6296,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="-3245524875300452010" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL/DUDWARPSLOWSTARS2MAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL/DUDWARPSLOWSTARS2MAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -6423,10 +6423,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL/DUDWARPSLOWSTARS3MAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL/DUDWARPSLOWSTARS3MAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -6550,10 +6550,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL/DUDWARPSLOWSTARSMAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL/DUDWARPSLOWSTARSMAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -6677,10 +6677,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL/DUDWARPTUNNELMAT1.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNEL/DUDWARPTUNNELMAT1.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -6804,10 +6804,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE/DUDBHLIGHTARMSMAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE/DUDBHLIGHTARMSMAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -6918,10 +6918,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="-1577412276178897926" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE/DUDBHSLOWSTARS2MAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE/DUDBHSLOWSTARS2MAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -7045,10 +7045,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE/DUDBHSLOWSTARS3MAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE/DUDBHSLOWSTARS3MAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -7172,10 +7172,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE/DUDBHSLOWSTARSMAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE/DUDBHSLOWSTARSMAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -7299,10 +7299,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE/DUDBHTUNNELMAT1.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE/DUDBHTUNNELMAT1.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -7426,10 +7426,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE/DUDENDBLACKCAPMAT.MATERIAL.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "MODELS/EFFECTS/WARP/WARPTUNNELBLACKHOLE/DUDENDBLACKCAPMAT.MATERIAL.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -7553,6 +7553,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 	<Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]]
-        },
-    },
+      },
+  },
 }

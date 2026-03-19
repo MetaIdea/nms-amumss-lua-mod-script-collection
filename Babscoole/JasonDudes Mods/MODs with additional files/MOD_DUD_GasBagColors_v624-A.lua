@@ -7,94 +7,94 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\COMMON\INTERACTIVE\SPOREVENT.TEXTURE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\COMMON\INTERACTIVE\SPOREVENT.TEXTURE.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "TRUNK"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ColourAlt", "Primary"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "TRUNK", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "PlanetRing"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "TRUNK"},
-                            ["PRECEDING_KEY_WORDS"] = {"Textures"},
-                            ["ADD_OPTION"] = "ADDendSECTION",
-                            ["ADD"] =
+              ["SPECIAL_KEY_WORDS"] = {"Name", "TRUNK"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ColourAlt", "Primary"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "TRUNK", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "PlanetRing"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "TRUNK"},
+              ["PRECEDING_KEY_WORDS"] = {"Textures"},
+              ["ADD_OPTION"] = "ADDendSECTION",
+              ["ADD"] =
 [[
-				<Property name="Textures" value="TkProceduralTexture" _index="1">
-					<Property name="Name" value="" />
-					<Property name="Palette" value="TkPaletteTexture">
-						<Property name="Palette" value="Stone" />
-						<Property name="ColourAlt" value="Primary" />
-						<Property name="Index" value="-1" />
-					</Property>
-					<Property name="Probability" value="1.000000" />
-					<Property name="TextureGameplayUse" value="IgnoreName" />
-					<Property name="Multiply" value="false" />
-					<Property name="OverrideAverageColour" value="false" />
-					<Property name="AverageColour">
-						<Property name="R" value="0.000000" />
-						<Property name="G" value="0.000000" />
-						<Property name="B" value="0.000000" />
-						<Property name="A" value="0.000000" />
-					</Property>
-					<Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/INTERACTIVE/SPOREVENT.TRUNK.DDS" />
-				</Property>
+        <Property name="Textures" value="TkProceduralTexture" _index="1">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture">
+            <Property name="Palette" value="Stone" />
+            <Property name="ColourAlt" value="Primary" />
+            <Property name="Index" value="-1" />
+          </Property>
+          <Property name="Probability" value="1.000000" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="false" />
+          <Property name="OverrideAverageColour" value="false" />
+          <Property name="AverageColour">
+            <Property name="R" value="0.000000" />
+            <Property name="G" value="0.000000" />
+            <Property name="B" value="0.000000" />
+            <Property name="A" value="0.000000" />
+          </Property>
+          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/INTERACTIVE/SPOREVENT.TRUNK.DDS" />
+        </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Palette", "TkPaletteTexture"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Palette", "Grass"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "BASE"},
-                            ["PRECEDING_KEY_WORDS"] = {"Textures"},
-                            ["ADD_OPTION"] = "ADDendSECTION",
-                            ["ADD"] =
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Grass"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "BASE"},
+              ["PRECEDING_KEY_WORDS"] = {"Textures"},
+              ["ADD_OPTION"] = "ADDendSECTION",
+              ["ADD"] =
 [[
-				<Property name="Textures" value="TkProceduralTexture" _index="1">
-					<Property name="Name" value="" />
-					<Property name="Palette" value="TkPaletteTexture">
-						<Property name="Palette" value="GrassAlt" />
-						<Property name="ColourAlt" value="Primary" />
-						<Property name="Index" value="-1" />
-					</Property>
-					<Property name="Probability" value="1.000000" />
-					<Property name="TextureGameplayUse" value="IgnoreName" />
-					<Property name="Multiply" value="false" />
-					<Property name="OverrideAverageColour" value="false" />
-					<Property name="AverageColour">
-						<Property name="R" value="0.000000" />
-						<Property name="G" value="0.000000" />
-						<Property name="B" value="0.000000" />
-						<Property name="A" value="0.000000" />
-					</Property>
-					<Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/INTERACTIVE/SPOREVENT.BASE.DDS" />
-				</Property>
+        <Property name="Textures" value="TkProceduralTexture" _index="1">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture">
+            <Property name="Palette" value="GrassAlt" />
+            <Property name="ColourAlt" value="Primary" />
+            <Property name="Index" value="-1" />
+          </Property>
+          <Property name="Probability" value="1.000000" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="false" />
+          <Property name="OverrideAverageColour" value="false" />
+          <Property name="AverageColour">
+            <Property name="R" value="0.000000" />
+            <Property name="G" value="0.000000" />
+            <Property name="B" value="0.000000" />
+            <Property name="A" value="0.000000" />
+          </Property>
+          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/COMMON/INTERACTIVE/SPOREVENT.BASE.DDS" />
+        </Property>
 ]]
-                        },
-                    }
-                },
-            }
+            },
+          }
         },
-    }
+      }
+    },
+  }
 }

@@ -85,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Natural Blue Skies",
 ["MOD_AUTHOR"]      = "courtykat and Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MOD_DESCRIPTION"] = "ALMOST all planets have subtle blue skies and clean color filters",
 ["MODIFICATIONS"]   =
   {
@@ -305,10 +305,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 }
 
 
-function GetColours(SW,R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,R6,G6,B6,A6,R7,G7,B7,A7,X8,Y8,Z8,R9,G9,B9,A9,R10,G10,B10,A10,R11,G11,B11,A11)
+function GetColours(COUNTER,SW,R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,R6,G6,B6,A6,R7,G7,B7,A7,X8,Y8,Z8,R9,G9,B9,A9,R10,G10,B10,A10,R11,G11,B11,A11,CD1)
   return
 [[
-      <Property name="Settings" value="GcPlanetWeatherColourData">
+      <Property name="Settings" value="GcPlanetWeatherColourData" _index="]].. COUNTER ..[[">
         <Property name="SelectionWeighting" value="]].. string.format("%0.6f",SW) ..[[" />
         <Property name="SkyColour">
           <Property name="R" value="]].. string.format("%0.6f",R1) ..[[" />
@@ -391,6 +391,7 @@ function CreateColoursProperty(PaletteColours)
   local PropertiesString = {}
 
   for j = 1, #PaletteColours do
+    local COUNTER  = j-1
     local SW  = PaletteColours[j][1]
     local R1  = PaletteColours[j][2]
     local G1  = PaletteColours[j][3]
@@ -435,7 +436,7 @@ function CreateColoursProperty(PaletteColours)
     local G11 = PaletteColours[j][42]
     local B11 = PaletteColours[j][43]
     local A11 = PaletteColours[j][44]
-    table.insert(PropertiesString,GetColours(SW,R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,R6,G6,B6,A6,R7,G7,B7,A7,X8,Y8,Z8,R9,G9,B9,A9,R10,G10,B10,A10,R11,G11,B11,A11))
+    table.insert(PropertiesString,GetColours(COUNTER,SW,R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,R6,G6,B6,A6,R7,G7,B7,A7,X8,Y8,Z8,R9,G9,B9,A9,R10,G10,B10,A10,R11,G11,B11,A11,CD1))
   end
 return table.concat(PropertiesString)
 end
@@ -451,7 +452,7 @@ for i = 1, #DataTable do
     ["PRECEDING_KEY_WORDS"] = {"Settings"},
     ["ADD"] = CreateColoursProperty(PaletteColours)
   }
-  
+
   BaseColourPalettesTable[#BaseColourPalettesTable +1] =
   {
     ["SPECIAL_KEY_WORDS"] = {Palette, "GcWeatherColourSettingList"},

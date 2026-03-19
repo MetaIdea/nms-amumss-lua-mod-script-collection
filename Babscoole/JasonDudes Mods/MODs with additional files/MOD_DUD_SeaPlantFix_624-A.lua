@@ -7,109 +7,109 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] = 
+          {
+            "MODELS\PLANETS\BIOMES\UNDERWATER\INTERACTIVE\FISHFIENDROCK\ALPHASTRANDS_MAT.MATERIAL.MBIN",
+            "MODELS\PLANETS\BIOMES\UNDERWATER\LARGEPROP\UNDERWATERBOULDER\ALPHASTRANDS_MAT.MATERIAL.MBIN",
+          },
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDALPHASTRANDSTILE.BASEO.1.DDS"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDALPHASTRANDSTILE.BASEO.1.MASKS.DDS"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDALPHASTRANDSTILE.BASEO.1.NORMAL.DDS"}
+              }
+            },
+              
+          }
+        },
+        {
+            ["MBIN_FILE_SOURCE"] = 
+            {
+              "MODELS\PLANETS\BIOMES\UNDERWATER\LARGEPLANTS\LARGESTRANDS\ALPHASTRANDS_MAT.MATERIAL.MBIN",
+              "MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANTS\FLOATPLANT\ALPHASTRANDS_MAT.MATERIAL.MBIN",
+              "MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANTS\MEDIUMSEAPLANT\ALPHASTRANDS_MAT.MATERIAL.MBIN",
+            },
+            ["MXML_CHANGE_TABLE"] =
+            {
+              {
+                ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+                ["VALUE_CHANGE_TABLE"] =
                 {
-                    ["MBIN_FILE_SOURCE"] = 
-                    {
-                        "MODELS\PLANETS\BIOMES\UNDERWATER\INTERACTIVE\FISHFIENDROCK\ALPHASTRANDS_MAT.MATERIAL.MBIN",
-                        "MODELS\PLANETS\BIOMES\UNDERWATER\LARGEPROP\UNDERWATERBOULDER\ALPHASTRANDS_MAT.MATERIAL.MBIN",
-                    },
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDALPHASTRANDSTILE.BASEO.1.DDS"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDALPHASTRANDSTILE.BASEO.1.MASKS.DDS"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDALPHASTRANDSTILE.BASEO.1.NORMAL.DDS"}
-                            }
-                        },
-                        
-                    }
-                },
+                  {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDALPHASTRANDSTILE.DDS"}
+                }
+              },
+              {
+                ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
+                ["VALUE_CHANGE_TABLE"] =
                 {
-                    ["MBIN_FILE_SOURCE"] = 
-                    {
-                        "MODELS\PLANETS\BIOMES\UNDERWATER\LARGEPLANTS\LARGESTRANDS\ALPHASTRANDS_MAT.MATERIAL.MBIN",
-                        "MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANTS\FLOATPLANT\ALPHASTRANDS_MAT.MATERIAL.MBIN",
-                        "MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANTS\MEDIUMSEAPLANT\ALPHASTRANDS_MAT.MATERIAL.MBIN",
-                    },
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDALPHASTRANDSTILE.DDS"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDALPHASTRANDSTILE.MASKS.DDS"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDALPHASTRANDSTILE.NORMAL.DDS"}
-                            }
-                        },
-                    }
-                },
+                  {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDALPHASTRANDSTILE.MASKS.DDS"}
+                }
+              },
+              {
+                ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+                ["VALUE_CHANGE_TABLE"] =
                 {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANTS\FLOATPLANT\FLOATLEAF_MAT.MATERIAL.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDFLOATLEAF.DDS"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDFLOATLEAF.MASKS.DDS"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDFLOATLEAF.NORMAL.DDS"}
-                            }
-                        },
-                    }
-                },
+                  {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDALPHASTRANDSTILE.NORMAL.DDS"}
+                }
+              },
             }
         },
-   },
-["ADD_FILES"] =
-    {
         {
-            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANT\DUDALPHASTRANDSTILE.TEXTURE.MXML",
-            ["FILE_CONTENT"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANTS\FLOATPLANT\FLOATLEAF_MAT.MATERIAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDFLOATLEAF.DDS"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDFLOATLEAF.MASKS.DDS"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/MEDIUMPLANT/DUDFLOATLEAF.NORMAL.DDS"}
+              }
+            },
+          }
+        },
+      }
+    },
+  },
+["ADD_FILES"] =
+  {
+    {
+      ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANT\DUDALPHASTRANDSTILE.TEXTURE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -375,10 +375,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]],
-        },
-        {
-            ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANT\DUDFLOATLEAF.TEXTURE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANT\DUDFLOATLEAF.TEXTURE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -587,6 +587,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]],
-        },
     },
+  },
 }

@@ -7,56 +7,56 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
+  {
     {
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
-            ["MBIN_CHANGE_TABLE"] =
+          ["MBIN_FILE_SOURCE"] =
+          {
+            "MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\CRYSTALSSHAPE\CRYSTALGLOWMAT.MATERIAL.MBIN",
+            "MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\CRYSTALSSHAPELARGE\CRYSTALGLOWMAT.MATERIAL.MBIN",
+          },
+          ["MXML_CHANGE_TABLE"] =
+          {
             {
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                      "MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\CRYSTALSSHAPE\CRYSTALGLOWMAT.MATERIAL.MBIN",
-                      "MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\CRYSTALSSHAPELARGE\CRYSTALGLOWMAT.MATERIAL.MBIN",
-                    },
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.DDS"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.MASKS.DDS"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.NORMAL.DDS"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\LAMPSHAPE\FLOATGLOWMAT.MATERIAL.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.DDS"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] =
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.DDS"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.MASKS.DDS"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.NORMAL.DDS"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\LAMPSHAPE\FLOATGLOWMAT.MATERIAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.DDS"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
 [[
 		<Property name="Samplers" value="TkMaterialSampler" _index="1">
 			<Property name="Name" value="gMasksMap" />
@@ -71,66 +71,66 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Anisotropy" value="0" />
 		</Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
-                            ["EXML_INDEX"] = "2",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.NORMAL.DDS"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\GASBAGS\MONOLITHMAT.MATERIAL.MBIN",
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.DDS"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuse2Map"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDSMOOTHERGRADIENTMASK.DDS"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.MASKS.DDS"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasks2Map"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDSMOOTHERGRADIENTMASK.MASKS.DDS"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.NORMAL.DDS"},
-                            }
-                        },
-                    }
-                },
-            }
-        }
-    },
-["ADD_FILES"] =
-    {
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+              ["EXML_INDEX"] = "2",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.NORMAL.DDS"},
+              }
+            },
+          }
+        },
         {
-            ["FILE_DESTINATION"] = "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.TEXTURE.MXML",
-            ["FILE_CONTENT"] =
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\GASBAGS\MONOLITHMAT.MATERIAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.DDS"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuse2Map"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDSMOOTHERGRADIENTMASK.DDS"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.MASKS.DDS"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gMasks2Map"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDSMOOTHERGRADIENTMASK.MASKS.DDS"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.NORMAL.DDS"},
+              }
+            },
+          }
+        },
+      }
+    }
+  },
+["ADD_FILES"] =
+  {
+    {
+      ["FILE_DESTINATION"] = "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGASBAGSTEXTURES.TEXTURE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -262,10 +262,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.TEXTURE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDGLOWTEXTURE.TEXTURE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -359,10 +359,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDSMOOTHERGRADIENTMASK.TEXTURE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/DUDSMOOTHERGRADIENTMASK.TEXTURE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -494,10 +494,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/LARGESHAPE.TEXTURE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/LARGESHAPE.TEXTURE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -591,10 +591,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]]
-        },
-        {
-            ["FILE_DESTINATION"] = "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/LEAVESTEXTURE.TEXTURE.MXML",
-            ["FILE_CONTENT"] =
+    },
+    {
+      ["FILE_DESTINATION"] = "TEXTURES/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/LEAVESTEXTURE.TEXTURE.MXML",
+      ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -688,6 +688,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
 </Data>
 ]]
-        },
     },
+  },
 }
