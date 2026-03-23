@@ -78,7 +78,7 @@ Rewards =
   },
   {
       ["REWARD"] = REWARD_ALL (10),
-      ["IDS"] = {"R_CARGO_RAD_M", "R_CARGO_TOX_M", "R_CARGO_EXP_M"}
+      ["IDS"] = {"DRONE_LOOT", "R_CARGO_RAD_M", "R_CARGO_TOX_M", "R_CARGO_EXP_M"}
   },
   {
       ["REWARD"] = REWARD_ALL (25),
@@ -264,7 +264,7 @@ for i = 1, #FosRewards do
             ["SPECIAL_KEY_WORDS"] = {"Id", value, "List", "GcRewardTableItemList"},
             ["PRECEDING_KEY_WORDS"] = {"List"},
             ["ADD_OPTION"] = "ADDendSECTION",
-            ["EXML_FLAGS"]  = "ADDNEWSECTION",
+            ["EXML_FLAGS"] = "ADDNEWSECTION",
             ["SEC_ADD_NAMED"] = "Save"..value,
         }
     end

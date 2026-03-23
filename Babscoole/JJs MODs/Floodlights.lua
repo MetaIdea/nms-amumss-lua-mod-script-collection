@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Floodlights.V.2.1",
+["MOD_FILENAME"]  = "Floodlights.V.2.2",
 ["MOD_AUTHOR"]    = "JJHookah",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "6.24",
@@ -14,10 +14,17 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"RotX", "-15.000000"},
+              }
+            },
+            {
               ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1", "Name", "FOV"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "180.000000"},
+                {"Value", "170.000000"},
               }
             },
             {
@@ -37,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"TransX",    "0"},
                 {"TransY",    "6.432164"},
                 {"TransZ",    "1.028947"},
-                {"RotX",      "43.179752"},
+                {"RotX",      "43.1797523"},
                 {"RotY",      "180"},
                 {"RotZ",      "180"},
                 {"Name",      "spotLight2"},
@@ -47,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight2", "Name", "FOV"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "180.000000"},
+                {"Value", "170.000000"},
               }
             },
             {
