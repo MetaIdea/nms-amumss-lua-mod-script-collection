@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_ExocraftMechanics_v624-C",
+["MOD_FILENAME"]  = "MOD_DUD_ExocraftMechanics_v624-D",
 ["MOD_AUTHOR"]    = "JasonDude7116",
-["LUA_AUTHOR"]    = "Babscoole and Wbertro",
+["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
   {
@@ -321,7 +321,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"VehicleJumpAirRotateTimeMin", "0.000000"},
                 {"VehicleJumpAirRotateTimeMax", "0.000000"},
                 {"VehicleJumpAirMaxTorque",     "500.000000"},
-                {"HeadlightIntensity",          "150.000000"},
+                {"HeadlightIntensity",          "200.000000"},
               }
             },
             {
@@ -351,7 +351,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"VehicleJumpAirRotateTimeMin", "0.000000"},
                 {"VehicleJumpAirRotateTimeMax", "0.000000"},
                 {"VehicleJumpAirMaxTorque",     "500.000000"},
-                {"HeadlightIntensity",          "150.000000"},
+                {"HeadlightIntensity",          "200.000000"},
               }
             },
             {
@@ -361,14 +361,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"WheelSuspensionlength",        "2.0"},
                 {"WheelSuspensionForce",         "20"},
                 {"WheelSuspensionDamping",       "0.25"},
+                {"TopSpeedForward",              "10"},
                 {"TopSpeedReverse",              "3"},
-                {"WheelMaxAccelForceForward",    "2.25"},
-                {"WheelMaxAccelForceReverse",    "2.25"},
+                {"WheelMaxAccelForceForward",    "2"},
+                {"WheelMaxAccelForceReverse",    "2"},
                 {"WheelMaxDecelForceNonBraking", "0.2"},
-                {"WheelMaxDecelForceBraking",    "2.5"},
+                {"WheelMaxDecelForceBraking",    "2"},
                 {"HardStopSpeedThreshold",       "0.025"},
-                {"WheelFrontFrictionDynamic",    "1.8"},
-                {"WheelFrontFrictionStatic",     "1.9"},
+                {"WheelFrontFrictionDynamic",    "2.25"},
+                {"WheelFrontFrictionStatic",     "2.5"},
                 {"WheelSideFrictionDynamic",     "1.8"},
                 {"WheelSideFrictionStatic",      "1.9"},
                 {"VehicleBoostMaxSpeed",         "16"},
@@ -384,7 +385,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"VehicleJumpAirRotateTimeMin",  "0.000000"},
                 {"VehicleJumpAirRotateTimeMax",  "0.000000"},
                 {"VehicleJumpAirMaxTorque",      "500.000000"},
-                {"HeadlightIntensity",           "150.000000"},
+                {"HeadlightIntensity",           "200.000000"},
               }
             },
             {
@@ -417,14 +418,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"VehicleJumpAirRotateTimeMin",  "0.000000"},
                 {"VehicleJumpAirRotateTimeMax",  "0.000000"},
                 {"VehicleJumpAirMaxTorque",      "500.000000"},
-                {"HeadlightIntensity",           "150.000000"},
+                {"HeadlightIntensity",           "200.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Name", "HOVERCRAFT"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"HeadlightIntensity", "150.000000"},
+                {"HeadlightIntensity", "200.000000"},
               }
             },
             {
@@ -442,14 +443,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"VehicleBoostMaxSpeed",       "20"},
                 {"VehicleBoostRechargeTime",   "9"},
                 {"VehicleLinearDampingWater",  "0.150000"},
-                {"HeadlightIntensity",         "150.000000"},
+                {"HeadlightIntensity",         "200.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Name", "MECH"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"HeadlightIntensity", "150"},
+                {"HeadlightIntensity", "200"},
               }
             },
             {
@@ -504,14 +505,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight1", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "150.000000"},
+                {"Value", "200.000000"},
               },
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight1", "Name", "RADIUS"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "150.000000"},
+                {"Value", "200.000000"},
               },
             },
             {
@@ -610,14 +611,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight2", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "150.000000"},
+                {"Value", "200.000000"},
               },
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Name", "Lights_spotLight2", "Name", "RADIUS"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "150.000000"},
+                {"Value", "200.000000"},
               },
             },
             {
@@ -746,11 +747,11 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="INTENSITY" />
-              <Property name="Value" value="150.000000" />
+              <Property name="Value" value="200.000000" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="RADIUS" />
-              <Property name="Value" value="150.000000" />
+              <Property name="Value" value="200.000000" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="COL_R" />
@@ -875,11 +876,11 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="INTENSITY" />
-              <Property name="Value" value="150.000000" />
+              <Property name="Value" value="200.000000" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="RADIUS" />
-              <Property name="Value" value="150.000000" />
+              <Property name="Value" value="200.000000" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="COL_R" />
@@ -996,14 +997,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight2", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "150.000000"},
+                {"Value", "200.000000"},
               },
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight2", "Name", "RADIUS"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "150.000000"},
+                {"Value", "200.000000"},
               },
             },
             {
@@ -1102,14 +1103,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight3", "Name", "INTENSITY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "150.000000"},
+                {"Value", "200.000000"},
               },
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight3", "Name", "RADIUS"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Value", "150.000000"},
+                {"Value", "200.000000"},
               },
             },
             {
@@ -1302,11 +1303,11 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="INTENSITY" />
-              <Property name="Value" value="150.000000" />
+              <Property name="Value" value="200.000000" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="RADIUS" />
-              <Property name="Value" value="150.000000" />
+              <Property name="Value" value="200.000000" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="COL_R" />
@@ -1496,11 +1497,11 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
               <Property name="Name" value="INTENSITY" />
-              <Property name="Value" value="150.000000" />
+              <Property name="Value" value="200.000000" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
               <Property name="Name" value="RADIUS" />
-              <Property name="Value" value="150.000000" />
+              <Property name="Value" value="200.000000" />
             </Property>
             <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
               <Property name="Name" value="COL_R" />
@@ -1623,7 +1624,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Name", "SideMonitor1_R_Ref"},
               },
-              ["EXML_INDEX"] = "22",
+              ["EXML_INDEX"] = "21",
             },
           },
         },
@@ -1742,11 +1743,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="INTENSITY" />
-          <Property name="Value" value="150.000000" />
+          <Property name="Value" value="200.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="RADIUS" />
-          <Property name="Value" value="150.000000" />
+          <Property name="Value" value="200.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
@@ -1871,11 +1872,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="INTENSITY" />
-          <Property name="Value" value="150.000000" />
+          <Property name="Value" value="200.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="RADIUS" />
-          <Property name="Value" value="150.000000" />
+          <Property name="Value" value="200.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
@@ -2022,11 +2023,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="INTENSITY" />
-          <Property name="Value" value="150.000000" />
+          <Property name="Value" value="200.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="RADIUS" />
-          <Property name="Value" value="150.000000" />
+          <Property name="Value" value="200.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />
@@ -2151,11 +2152,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
           <Property name="Name" value="INTENSITY" />
-          <Property name="Value" value="150.000000" />
+          <Property name="Value" value="200.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
           <Property name="Name" value="RADIUS" />
-          <Property name="Value" value="150.000000" />
+          <Property name="Value" value="200.000000" />
         </Property>
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
           <Property name="Name" value="COL_R" />

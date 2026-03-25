@@ -277,7 +277,7 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_Skies_v624-A",
+["MOD_FILENAME"]  = "MOD_DUD_Skies_v624-B",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "6.24",
@@ -3985,6 +3985,16 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MBIN_FILE_SOURCE"] = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN",
           ["MXML_CHANGE_TABLE"] =
           {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"IndoorsLightingThreshold",     "0.010000"},
+                {"IndoorsLightingPlanetMax",     "0.020000"},
+                {"IblUndergroundLightIntensity", "0.020000"},
+                {"IblUndergroundFadeSpeed",      "1.000000"},
+                {"UndergroundFakeSkyFactor",     "0.020000"},
+              }
+            },
             {
               ["PRECEDING_KEY_WORDS"] = {"CloudProperties"},
               ["VALUE_CHANGE_TABLE"] =
