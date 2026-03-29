@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_AiShipPlusMoreDamage_v624-B",
+["MOD_FILENAME"]  = "MOD_DUD_AiShipPlusMoreDamage_v624-C",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "6.24",
@@ -16,6 +16,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["VALUE_CHANGE_TABLE"] =
               {
+                {"PoliceFreighterLaserRange",          "6000.000000"},
+                {"PoliceFreighterLaserShootTime",      "2.000000"},
+                {"PoliceFreighterLaserActiveTime",     "2.000000"},
                 {"MaxDifficultySpaceCombatTurnExtra",  "0.000000"},
                 {"MaxDifficultySpaceCombatSpeedExtra", "0.000000"},
                 {"MinimumCircleTimeBeforeLanding",     "20.000000"},
@@ -388,14 +391,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "SPACE_EASY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MinSpeed",       "50"},
-                {"MaxSpeed",       "180"},
-                {"BoostSpeed",     "1000"},
-                {"Force",          "125"},
-                {"TurnMin",        "0.5"},
-                {"TurnMax",        "1.5"},
-                {"DirectionBrake", "4"},
-                {"MaxSpeedBrake",  "1"},
+                {"MinSpeed",       "50.000000"},
+                {"MaxSpeed",       "180.000000"},
+                {"BoostSpeed",     "1000.000000"},
+                {"Force",          "125.000000"},
+                {"MinSpeedForce",  "15.000000"},
+                {"TurnMin",        "0.500000"},
+                {"TurnMax",        "1.500000"},
+                {"DirectionBrake", "5.000000"},
+                {"MaxSpeedBrake",  "1.000000"},
               },
             },
             {
@@ -404,15 +408,16 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "SPACE_HARD"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MinSpeed",       "50"},
-                {"MaxSpeed",       "200"},
-                {"BoostSpeed",     "1000"},
-                {"Force",          "150"},
-                {"TurnMin",        "0.75"},
-                {"TurnMax",        "1.5"},
-                {"DirectionBrake", "4"},
-                {"MaxSpeedBrake",  "1"},
-                {"Falloff",        "0.6"},
+                {"MinSpeed",       "50.000000"},
+                {"MaxSpeed",       "200.000000"},
+                {"BoostSpeed",     "1000.000000"},
+                {"Force",          "150.000000"},
+                {"MinSpeedForce",  "20.000000"},
+                {"TurnMin",        "0.700000"},
+                {"TurnMax",        "1.500000"},
+                {"DirectionBrake", "6.000000"},
+                {"MaxSpeedBrake",  "1.000000"},
+                {"Falloff",        "0.600000"},
               },
             },
             {
@@ -421,12 +426,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "PLANET_EASY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MaxSpeed",       "80"},
-                {"BoostSpeed",     "100"},
-                {"TurnMin",        "0.5"},
-                {"TurnMax",        "1.5"},
-                {"DirectionBrake", "4"},
-                {"MaxSpeedBrake",  "1"},
+                {"MaxSpeed",       "80.000000"},
+                {"BoostSpeed",     "100.000000"},
+                {"MinSpeedForce",  "15.000000"},
+                {"TurnMin",        "0.500000"},
+                {"TurnMax",        "1.500000"},
+                {"DirectionBrake", "5.000000"},
+                {"MaxSpeedBrake",  "1.000000"},
               },
             },
             {
@@ -435,14 +441,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "PLANET_HARD"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MinSpeed",       "50"},
-                {"MaxSpeed",       "100"},
-                {"BoostSpeed",     "120"},
-                {"TurnMin",        "0.75"},
-                {"TurnMax",        "1.5"},
-                {"DirectionBrake", "4"},
-                {"MaxSpeedBrake",  "1"},
-                {"Falloff",        "0.6"},
+                {"MinSpeed",       "50.000000"},
+                {"MaxSpeed",       "100.000000"},
+                {"BoostSpeed",     "120.000000"},
+                {"MinSpeedForce",  "20.000000"},
+                {"TurnMin",        "0.750000"},
+                {"TurnMax",        "1.500000"},
+                {"DirectionBrake", "6.000000"},
+                {"MaxSpeedBrake",  "1.000000"},
+                {"Falloff",        "0.600000"},
               },
             },
             {
@@ -451,14 +458,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "RAID_BUILDING"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MinSpeed",       "50"},
-                {"MaxSpeed",       "90"},
-                {"BoostSpeed",     "130"},
-                {"MinSpeedForce",  "10"},
-                {"TurnMin",        "0.5"},
-                {"TurnMax",        "1.5"},
-                {"DirectionBrake", "4"},
-                {"MaxSpeedBrake",  "1"},
+                {"MinSpeed",       "50.000000"},
+                {"MaxSpeed",       "90.000000"},
+                {"BoostSpeed",     "130.000000"},
+                {"MinSpeedForce",  "15.000000"},
+                {"TurnMin",        "0.500000"},
+                {"TurnMax",        "1.500000"},
+                {"DirectionBrake", "5.000000"},
+                {"MaxSpeedBrake",  "1.000000"},
               }
             },
             {
@@ -467,14 +474,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_SLOW"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MaxSpeed",       "160"},
-                {"BoostSpeed",     "1500"},
-                {"Force",          "75"},
-                {"TurnMin",        "0.25"},
-                {"TurnMax",        "1.5"},
-                {"DirectionBrake", "4"},
-                {"MaxSpeedBrake",  "1"},
-                {"Falloff",        "0.6"},
+                {"MaxSpeed",       "160.000000"},
+                {"BoostSpeed",     "1500.000000"},
+                {"Force",          "75.000000"},
+                {"MinSpeedForce",  "10.000000"},
+                {"TurnMin",        "0.250000"},
+                {"TurnMax",        "1.500000"},
+                {"DirectionBrake", "5.000000"},
+                {"MaxSpeedBrake",  "1.000000"},
+                {"Falloff",        "0.600000"},
               }
             },
             {
@@ -483,12 +491,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "SQUADRON_FAST"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MaxSpeed",       "180"},
-                {"Force",          "100"},
-                {"TurnMin",        "0.75"},
-                {"TurnMax",        "1.5"},
-                {"DirectionBrake", "4"},
-                {"MaxSpeedBrake",  "1"},
+                {"MaxSpeed",       "180.000000"},
+                {"Force",          "100.000000"},
+                {"MinSpeedForce",  "15.000000"},
+                {"TurnMin",        "0.750000"},
+                {"TurnMax",        "1.500000"},
+                {"DirectionBrake", "6.000000"},
+                {"MaxSpeedBrake",  "1.000000"},
               }
             },
             {
@@ -498,8 +507,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"Health",            "4000"},
-                {"RechargeTime",      "12"},
-                {"RechargeDelayTime", "4"},
+                {"RechargeTime",      "12.000000"},
+                {"RechargeDelayTime", "4.000000"},
               }
             },
             {
@@ -510,8 +519,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Health",              "8000"},
                 {"LevelledExtraHealth", "20000"},
-                {"RechargeTime",        "12"},
-                {"RechargeDelayTime",   "4"},
+                {"RechargeTime",        "12.000000"},
+                {"RechargeDelayTime",   "4.000000"},
               }
             },
             {
@@ -522,8 +531,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Health",              "12000"},
                 {"LevelledExtraHealth", "30000"},
-                {"RechargeTime",        "14"},
-                {"RechargeDelayTime",   "4"},
+                {"RechargeTime",        "14.000000"},
+                {"RechargeDelayTime",   "4.000000"},
               }
             },
             {
@@ -534,8 +543,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Health",              "4000"},
                 {"LevelledExtraHealth", "12000"},
-                {"RechargeTime",        "6"},
-                {"RechargeDelayTime",   "3.5"},
+                {"RechargeTime",        "6.000000"},
+                {"RechargeDelayTime",   "3.500000"},
               }
             },
             {
@@ -546,8 +555,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Health",              "12000"},
                 {"LevelledExtraHealth", "30000"},
-                {"RechargeTime",        "10"},
-                {"RechargeDelayTime",   "3.5"},
+                {"RechargeTime",        "10.000000"},
+                {"RechargeDelayTime",   "3.500000"},
               }
             },
           }
@@ -588,7 +597,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTGUN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"DefaultSpeed",  "3500"},
+                {"DefaultSpeed",  "3500.000000"},
                 {"DefaultDamage", "500"}
               }
             },
@@ -596,7 +605,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "COP_FREIGHTGUN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"DefaultSpeed",  "3500"},
+                {"DefaultSpeed",  "3500.000000"},
                 {"DefaultDamage", "500"}
               }
             },
@@ -604,7 +613,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "PI_FRE_SMAL"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"DefaultDamage", "100"}
+                {"Scale",         "200.000000"},
+                {"Radius",        "50.000000"},
+                {"DefaultSpeed",  "1250.000000"},
+                {"DefaultDamage", "100"},
               }
             },
             {
@@ -618,7 +630,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "COP_FREIGHTER"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"HitWidth",      "50"},
+                {"HitWidth",      "50.000000"},
                 {"DefaultDamage", "500"}
               }
             },
@@ -626,7 +638,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"HitWidth",      "50"},
+                {"HitWidth",      "50.000000"},
                 {"DefaultDamage", "500"}
               }
             },
@@ -640,133 +652,133 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTGUNDMG"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "3"},
+                {"Damage", "3.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTGUNDMG_MED"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "4"},
+                {"Damage", "4.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTBIGGUN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "7"},
+                {"Damage", "7.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "LASERDAMAGE"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "3.5"},
+                {"Damage", "3.500000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "FIENDSPIT_DMG"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "4"},
+                {"Damage", "4.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "PLANTDMG"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "35"},
+                {"Damage", "35.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "SPORE_VENT"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "35"},
+                {"Damage", "35.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "BOUNTYGUN3"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "17"},
+                {"Damage", "17.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "WALKERLASER"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "6"},
+                {"Damage", "6.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "SMALLASTEROID"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "30"}
+                {"Damage", "30.000000"}
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "MEDIUMASTEROID"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "40"}
+                {"Damage", "40.000000"}
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "LARGEASTEROID"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "60"}
+                {"Damage", "60.000000"}
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTERGUN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "30"},
+                {"Damage", "30.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTERLASER"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "30"},
+                {"Damage", "30.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "GASPLANT"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "35"},
+                {"Damage", "35.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "GRABPLANT_DMG"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "35"},
+                {"Damage", "35.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "VENUSFLY_DMG"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "35"},
+                {"Damage", "35.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "SCUTTLERSPITDMG"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "15"},
+                {"Damage", "15.000000"},
               }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "TORNADO"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Damage", "45"}
+                {"Damage", "45.000000"}
               }
             },
           }
@@ -778,17 +790,24 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"TurretRange",                      "2500"},
-                {"TurretLaserShootTime",             "2"},
-                {"TurretLaserMoveSpeed",             "5"},
-                {"TurretLaserAbortDistance",         "1500"},
-                {"TurretShootPauseTime",             "2"},
+                {"TurretLaserShootTime",             "2.000000"},
+                {"TurretLaserLength",                "150.000000"},
+                {"TurretLaserMoveSpeed",             "100.000000"},
+                {"TurretLaserActiveTime",            "6.000000"},
+                {"TurretLaserChargeTime",            "0.000000"},
+                {"TurretLaserAbortDistance",         "500.000000"},
+                {"TurretShootPauseTime",             "2.000000"},
                 {"TurretBurstCount",                 "20"},
-                {"TurretBurstTime",                  "0.2"},
-                {"TurretMaxYawTurnSpeedDegPerSec",   "360"},
-                {"TurretMaxPitchTurnSpeedDegPerSec", "180"},
-                {"TurretAngle",                      "360"},
-                {"TurretDispersionAngle",            "0"},
+                {"TurretBurstTime",                  "0.200000"},
+                {"TurretMaxDownAngle",               "0.000000"},
+                {"TurretMaxYawTurnSpeedDegPerSec",   "180.000000"},
+                {"TurretMaxPitchTurnSpeedDegPerSec", "90.000000"},
+                {"TurretYawSmoothTurnTime",          "0.500000"},
+                {"TurretPitchSmoothTurnTime",        "0.500000"},
+                {"TurretAngle",                      "360.000000"},
+                {"TurretProjectileRange",            "2000.000000"},
+                {"TurretDispersionAngle",            "0.000000"},
+                {"Health",                           "6000"},
               },
             },
           }
@@ -800,18 +819,24 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"TurretRange",                      "2500"},
-                {"TurretLaserShootTime",             "2"},
-                {"TurretLaserMoveSpeed",             "5"},
-                {"TurretLaserChargeTime",            "0.5"},
-                {"TurretLaserAbortDistance",         "1500"},
-                {"TurretShootPauseTime",             "2"},
+                {"TurretLaserShootTime",             "2.000000"},
+                {"TurretLaserLength",                "150.000000"},
+                {"TurretLaserMoveSpeed",             "100.000000"},
+                {"TurretLaserActiveTime",            "6.000000"},
+                {"TurretLaserChargeTime",            "0.000000"},
+                {"TurretLaserAbortDistance",         "500.000000"},
+                {"TurretShootPauseTime",             "2.000000"},
                 {"TurretBurstCount",                 "20"},
-                {"TurretBurstTime",                  "0.2"},
-                {"TurretMaxYawTurnSpeedDegPerSec",   "360"},
-                {"TurretMaxPitchTurnSpeedDegPerSec", "180"},
-                {"TurretAngle",                      "360"},
-                {"TurretDispersionAngle",            "0"},
+                {"TurretBurstTime",                  "0.200000"},
+                {"TurretMaxDownAngle",               "0.000000"},
+                {"TurretMaxYawTurnSpeedDegPerSec",   "180.000000"},
+                {"TurretMaxPitchTurnSpeedDegPerSec", "90.000000"},
+                {"TurretYawSmoothTurnTime",          "0.500000"},
+                {"TurretPitchSmoothTurnTime",        "0.500000"},
+                {"TurretAngle",                      "360.000000"},
+                {"TurretProjectileRange",            "2000.000000"},
+                {"TurretDispersionAngle",            "0.000000"},
+                {"Health",                           "6000"},
               },
             },
           }

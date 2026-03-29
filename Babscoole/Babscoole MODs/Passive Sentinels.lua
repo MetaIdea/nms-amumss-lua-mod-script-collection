@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] = "sentinels will completely ignore your plundering of the environment",
 ["MOD_AUTHOR"]      = "degraaaff",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.20",
 ["MODIFICATIONS"]   =
   {
     {
@@ -18,9 +18,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
 			          {"DisableDronePerception",               "true"},  -- Original false
-			          {"DroneAggressiveInvestigateAttackTime", "9999"},	 -- Original 1
-                {"DroneInvestigateMinWitnessRange",      "0"},     -- Original 22
-                {"DroneCrimeWitnessInvestigateDistance", "0"},     -- Original 30
+			          {"DroneAggressiveInvestigateAttackTime", "9999.000000"},	 -- Original 1.000000
+                {"DroneInvestigateMinWitnessRange",      "0.000000"},     -- Original 22.000000
+                {"DroneCrimeWitnessInvestigateDistance", "5.000000"},     -- Original 30.000000
               }
             },
           }
