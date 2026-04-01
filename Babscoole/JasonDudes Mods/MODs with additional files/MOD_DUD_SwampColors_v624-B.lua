@@ -1,3 +1,5 @@
+--Must get the TEXTURES folder from the orignal mod and place into ModScript\GlobalMEFTI
+
 LushDataTable =
 {
   {
@@ -576,7 +578,7 @@ SwampDataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_SwampColors_v624-A",
+["MOD_FILENAME"]  = "MOD_DUD_SwampColors_v624-B",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "6.24",
@@ -646,6 +648,64 @@ NMS_MOD_DEFINITION_CONTAINER =
           }
         },
         {
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\DEADTREE\DEADTREEMAT.MATERIAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Name",         "MangroveMat"},
+                {"Metamaterial", "Models/Planets/Biomes/Swamp/LargePlant/MangroveLarge/Materials/MangroveMat.metamaterial.mXml"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"X", "0.900000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/SWAMP/LARGEPLANT/DUDMANGROVEBARK.BASE.DDS"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/SWAMP/LARGEPLANT/DUDMANGROVEBARK.BASE.MASKS.DDS"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Map", "TEXTURES/PLANETS/BIOMES/SWAMP/LARGEPLANT/DUDMANGROVEBARK.BASE.NORMAL.DDS"}
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] =
+          {
+            "MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\MANGROVELARGE\LAYEREDTREEMAT.MATERIAL.MBIN",
+            "MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\MANGROVELARGEFULL\LAYEREDTREEMAT.MATERIAL.MBIN",
+          },
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "gDynamicFlags"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"X", "1"},
+              }
+            },
+          }
+        },
+        {
           ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\LUSHROOM\MEDSHROOM.TEXTURE.MBIN",
           ["MXML_CHANGE_TABLE"] =
           {
@@ -696,9 +756,160 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
           }
         },
+        {
+          ["MBIN_FILE_SOURCE"] = "TEXTURES\PLANETS\BIOMES\SWAMP\LARGEPLANT\MANGROVEBARK.TEXTURE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "2"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ColourAlt", "Alternative1"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "2", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Wood"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "1"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ColourAlt", "Alternative1"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "1", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Wood"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "0"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"ColourAlt", "Alternative1"}
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "0", "Palette", "TkPaletteTexture"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Palette", "Wood"}
+              }
+            },
+          }
+        },
       }
     }
-  }
+  },
+["ADD_FILES"] =
+  {
+    {
+      ["FILE_DESTINATION"] = "TEXTURES\PLANETS\BIOMES\SWAMP\LARGEPLANT\DUDMANGROVEBARK.TEXTURE.MXML",
+      ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="cTkProceduralTextureList">
+  <Property name="AlwaysEnableUnnamedTextureLayers" value="false" />
+  <Property name="Layers">
+    <Property name="Layers" value="TkProceduralTextureLayer" _index="0">
+      <Property name="Name" value="BASE" />
+      <Property name="Probability" value="1.000000" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="false" />
+      <Property name="LinkedLayer" value="" />
+      <Property name="Textures">
+        <Property name="Textures" value="TkProceduralTexture" _index="0">
+          <Property name="Name" value="" />
+          <Property name="Palette" value="TkPaletteTexture">
+            <Property name="Palette" value="Wood" />
+            <Property name="ColourAlt" value="Alternative1" />
+            <Property name="Index" value="-1" />
+          </Property>
+          <Property name="Probability" value="1.000000" />
+          <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="false" />
+          <Property name="OverrideAverageColour" value="false" />
+          <Property name="AverageColour">
+            <Property name="R" value="0.000000" />
+            <Property name="G" value="0.000000" />
+            <Property name="B" value="0.000000" />
+            <Property name="A" value="0.000000" />
+          </Property>
+          <Property name="TextureName" value="TEXTURES/PLANETS/BIOMES/SWAMP/LARGEPLANT/DUDMANGROVEBARK.BASE.DDS" />
+        </Property>
+      </Property>
+    </Property>
+    <Property name="Layers" value="TkProceduralTextureLayer" _index="1">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1.000000" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="false" />
+      <Property name="LinkedLayer" value="" />
+      <Property name="Textures" />
+    </Property>
+    <Property name="Layers" value="TkProceduralTextureLayer" _index="2">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1.000000" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="false" />
+      <Property name="LinkedLayer" value="" />
+      <Property name="Textures" />
+    </Property>
+    <Property name="Layers" value="TkProceduralTextureLayer" _index="3">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1.000000" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="false" />
+      <Property name="LinkedLayer" value="" />
+      <Property name="Textures" />
+    </Property>
+    <Property name="Layers" value="TkProceduralTextureLayer" _index="4">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1.000000" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="false" />
+      <Property name="LinkedLayer" value="" />
+      <Property name="Textures" />
+    </Property>
+    <Property name="Layers" value="TkProceduralTextureLayer" _index="5">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1.000000" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="false" />
+      <Property name="LinkedLayer" value="" />
+      <Property name="Textures" />
+    </Property>
+    <Property name="Layers" value="TkProceduralTextureLayer" _index="6">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1.000000" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="false" />
+      <Property name="LinkedLayer" value="" />
+      <Property name="Textures" />
+    </Property>
+    <Property name="Layers" value="TkProceduralTextureLayer" _index="7">
+      <Property name="Name" value="" />
+      <Property name="Probability" value="1.000000" />
+      <Property name="Group" value="" />
+      <Property name="SelectToMatchBase" value="false" />
+      <Property name="LinkedLayer" value="" />
+      <Property name="Textures" />
+    </Property>
+  </Property>
+</Data>
+]]
+    },
+  },
 }
 
 function GetColours(COUNTER,R,G,B,A)
