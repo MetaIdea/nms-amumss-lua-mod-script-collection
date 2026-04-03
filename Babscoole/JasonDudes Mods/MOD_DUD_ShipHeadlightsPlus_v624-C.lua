@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_ShipHeadlightsPlus_v624-A",
+["MOD_FILENAME"]  = "MOD_DUD_ShipHeadlightsPlus_v624-C",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "6.24",
@@ -88,9 +88,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"Name", "spotLight1"},
                 {"Name", "spotLight2"},
                 {"Name", "spotLight3"},
-                {"Name", "pointLight6", "Name", "LIGHTLAYERS"},
-                {"Name", "pointLight6", "Name", "LIGHTLAYERS"},
-                {"Name", "pointLight6", "Name", "LIGHTLAYERS"},
               },
               ["REMOVE"] = "SECTION",
             },
@@ -1985,7 +1982,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] =
               {
                 {"Name", "spotLight1"},
-                {"Name", "pointLight1", "Name", "LIGHTLAYERS"},
               },
               ["REMOVE"] = "SECTION",
             },
