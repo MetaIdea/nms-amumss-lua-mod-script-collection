@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MOD_DUD_CorvetteHeadlights_v624-A",
+["MOD_FILENAME"]  = "MOD_DUD_CorvetteHeadlights_v624-B",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "6.24",
@@ -59,7 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD_OPTION"] = "ADDendSECTION",
               ["ADD"] =
 [[
-		<Property name="Children" value="TkSceneNodeData" _index="16">
+		<Property name="Children" value="TkSceneNodeData" _index="15">
 			<Property name="Name" value="_Headlights" />
 			<Property name="NameHash" value="0" />
 			<Property name="Type" value="REFERENCE" />
@@ -88,6 +88,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Children" />
 		</Property>
 ]]
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "REFLight"},
+              ["REMOVE"] = "SECTION",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "EXT"},
+              ["EXML_INDEX"] = "14",
             },
           }
         },
@@ -141,7 +149,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD_OPTION"] = "ADDendSECTION",
               ["ADD"] =
 [[
-		<Property name="Children" value="TkSceneNodeData" _index="10">
+		<Property name="Children" value="TkSceneNodeData" _index="7">
 			<Property name="Name" value="_Headlights" />
 			<Property name="NameHash" value="0" />
 			<Property name="Type" value="REFERENCE" />
@@ -170,6 +178,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="Children" />
 		</Property>
 ]]
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "REFLight"},
+                {"Name", "REFLight1"},
+                {"Name", "REFLight2"},
+              },
+              ["REMOVE"] = "SECTION",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "EXT1"},
+              ["EXML_INDEX"] = "6",
             },
           }
         },
