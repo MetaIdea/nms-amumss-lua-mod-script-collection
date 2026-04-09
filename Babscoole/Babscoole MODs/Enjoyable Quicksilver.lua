@@ -74,19 +74,19 @@ Rewards =
 {
   {
       ["REWARD"] = REWARD_ALL (5),
-      ["IDS"] = {"R_CARGO_RAD_S", "R_CARGO_TOX_S", "R_CARGO_EXP_S"}
+      ["IDS"] = {"R_CARGO_RAD_S", "R_CARGO_TOX_S", "R_CARGO_EXP_S", "R_PB_TUT_W"}
   },
   {
       ["REWARD"] = REWARD_ALL (10),
-      ["IDS"] = {"DRONE_LOOT", "R_CARGO_RAD_M", "R_CARGO_TOX_M", "R_CARGO_EXP_M"}
+      ["IDS"] = {"DRONE_LOOT", "R_CARGO_RAD_M", "R_CARGO_TOX_M", "R_CARGO_EXP_M", "R_PB_PVE_SYSS_W", "R_PB_PVE_PLAC_W", "R_PB_D_NEXUS_W", "R_PB_PVE_EASY_W"}
   },
   {
       ["REWARD"] = REWARD_ALL (25),
-      ["IDS"] = {"QUAD_LOOT", "CORRUPT_LOOT", "DE_HIVESUB", "PIRATE_BOUNTY1", "DE_SCRAP_PART", "R_CARGO_RAD_L", "R_CARGO_TOX_L", "R_CARGO_EXP_L"}
+      ["IDS"] = {"QUAD_LOOT", "CORRUPT_LOOT", "DE_HIVESUB", "PIRATE_BOUNTY1", "DE_SCRAP_PART", "R_CARGO_RAD_L", "R_CARGO_TOX_L", "R_CARGO_EXP_L", "R_PB_PVE_HARD_W"}
   },
   {
       ["REWARD"] = REWARD_ALL (50),
-      ["IDS"] = {"PIRATE_BOUNTY2", "BEGIN_SALVAGE", "PIRATE_REJECT", "MECH_LOOT", "POLICELOOT", "R_SENTINELS_OFF"}
+      ["IDS"] = {"PIRATE_BOUNTY2", "BEGIN_SALVAGE", "PIRATE_REJECT", "MECH_LOOT", "POLICELOOT", "R_SENTINELS_OFF", "R_PB_PVE_SYSC_W"}
   },
   {
       ["REWARD"] = REWARD_ALL (75),
@@ -116,7 +116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] = "Allows the player to grind Quicksilver through a wide variety of different ways",
 ["MOD_AUTHOR"]      = "ArtisticMisfit & Babscoole",
 ["LUA_AUTHOR"]      = "Leonard, TheLich, Babscoole, ArtisticMisfit",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.30",
 ["MODIFICATIONS"]   =
   {
     {

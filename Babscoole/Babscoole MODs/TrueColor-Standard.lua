@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "TrueColor-Standard",
 ["MOD_AUTHOR"]      = "courtykat and Babscoole",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.30",
 ["MOD_DESCRIPTION"] = "Improves the color palettes of all standard starships, living ships, freighters, and customizable paints",
 ["MODIFICATIONS"]   =
   {
@@ -585,7 +585,7 @@ CustomDataTable =
 }
 
 
-function GetColours(COUNTER,R,G,B,A)
+function GetColours(COUNTER,R,G,B)
   return
 [[
     <Property name="Colours" _index="]].. COUNTER ..[[">
@@ -606,7 +606,7 @@ function CreateColoursProperty(PaletteColours)
     local R = PaletteColours[j]["R"]
     local G = PaletteColours[j]["G"]
     local B = PaletteColours[j]["B"]
-    table.insert(PropertiesString,GetColours(COUNTER,R,G,B,A))
+    table.insert(PropertiesString,GetColours(COUNTER,R,G,B))
   end
   local PropertyColoursString =
     [[      <Property name="Colours">
@@ -671,7 +671,7 @@ for i = 1, #CustomDataTable do
       {
         ["SPECIAL_KEY_WORDS"] = {"ID", Palette},
         ["PRECEDING_KEY_WORDS"] = {"Colours"},
-        ["EXML_FLAGS"]  = "OVERWRITE",
+        ["EXML_FLAGS"] = "OVERWRITE",
       }
     end
 end

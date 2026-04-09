@@ -3,19 +3,18 @@ One = "TEXTURES/PLANETS/BIOMES/COMMON/BUILDINGS/SHARED/BUILDABLEBUILDINGS/DECALS
 Two = "TEXTURES/PLANETS/BIOMES/COMMON/BUILDINGS/SHARED/BUILDABLEBUILDINGS/DECALS/BASEBUILDINGDECALS_NUMBERS.A2_GOLDENYELLOW.DDS" -- NUMBER TWO DIFFUSE
 Three = "TEXTURES/PLANETS/BIOMES/COMMON/BUILDINGS/SHARED/BUILDABLEBUILDINGS/DECALS/BASEBUILDINGDECALS_NUMBERS.A3_GOLDENYELLOW.DDS" -- NUMBER THREE DIFFUSE
 
-Version = "1.2"
-Game_Version = "5.28"
+Version = "1.3"
+Game_Version = "5.50"
 Mod_Author = "hemis FEAR"
 Lua_Author = "hemis FEAR"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "_hF_fDockNumber_GoldenYellow_"..Version..".pak",
 ["MOD_AUTHOR"]		= Mod_Author,
 ["LUA_AUTHOR"]		= Lua_Author,
 ["NMS_VERSION"]		= Game_Version,
 ["MOD_VERSION"] 	= Version,
-["MOD_DESCRIPTION"]	= "fDockNumber: Golden Yellow Freighter Hangar Dock Numbers",
+["MOD_DESCRIPTION"]	= "fDockNumber: GoldenYellow Freighter Hangar Dock Numbers",
 ["MODIFICATIONS"]	= 
 	{
 		{
@@ -26,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","gDiffuseMap",},
+							["SPECIAL_KEY_WORDS"] = {"Name","gDiffuseMap"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Map", Zero } --Original "TEXTURES/PLANETS/BIOMES/COMMON/BUILDINGS/SHARED/BUILDABLEBUILDINGS/DECALS/BASEBUILDINGDECALS_NUMBERS.A0.DDS" 
@@ -39,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","gDiffuseMap",},
+							["SPECIAL_KEY_WORDS"] = {"Name","gDiffuseMap"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Map", One } --Original "TEXTURES/PLANETS/BIOMES/COMMON/BUILDINGS/SHARED/BUILDABLEBUILDINGS/DECALS/BASEBUILDINGDECALS_NUMBERS.A1.DDS" 
@@ -52,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","gDiffuseMap",},
+							["SPECIAL_KEY_WORDS"] = {"Name","gDiffuseMap"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Map", Two } --Original "TEXTURES/PLANETS/BIOMES/COMMON/BUILDINGS/SHARED/BUILDABLEBUILDINGS/DECALS/BASEBUILDINGDECALS_NUMBERS.A2.DDS" 
@@ -65,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","gDiffuseMap",},
+							["SPECIAL_KEY_WORDS"] = {"Name","gDiffuseMap"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Map", Three } --Original "TEXTURES/PLANETS/BIOMES/COMMON/BUILDINGS/SHARED/BUILDABLEBUILDINGS/DECALS/BASEBUILDINGDECALS_NUMBERS.A3.DDS" 

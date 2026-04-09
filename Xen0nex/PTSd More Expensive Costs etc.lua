@@ -1,5 +1,5 @@
 ModName = "PTSd More Expensive Costs etc"
-GameVersion = "6_03"
+GameVersion = "6_30"
 Description = "Changes costs for Starship or Multi-Tool inventory slots, Broadcast Receivers, Pilot Slots, etc."
 
 --Allows salvaging Reactor Cores from Shuttle & Exotic starships (Also requires changes in "PTSd Rewards Remixer.lua")
@@ -81,19 +81,38 @@ ThirdPilot =			10000				--7500
 FourthPilot =			16000				--10000
 
 --Changes the prices for buying additional pet slots in the Companion Registry. Costs repeat the final price in this list after reaching the end of the list
-	--Unlike most changes, this reduces the max cost for pet slots from 20,000 to 16,000, and makes the costs rise more gradually than vanilla
+	--Vanilla prices gradually increase from 500 nanites to 3500 nanites
 PetSlotPrices = [[<Property name="Costs">
-          <Property name="Costs" value="500" />
-          <Property name="Costs" value="500" />
-          <Property name="Costs" value="1000" />
-          <Property name="Costs" value="2000" />
-          <Property name="Costs" value="4000" />
-          <Property name="Costs" value="6000" />
-		  <Property name="Costs" value="8000" />
-          <Property name="Costs" value="10000" />
-		  <Property name="Costs" value="12000" />
-          <Property name="Costs" value="14000" />
-		  <Property name="Costs" value="16000" />
+			<Property name="Costs" value="500" _index="0" />
+			<Property name="Costs" value="500" _index="1" />
+			<Property name="Costs" value="1000" _index="2" />
+			<Property name="Costs" value="1000" _index="3" />
+			<Property name="Costs" value="1500" _index="4" />
+			<Property name="Costs" value="1500" _index="5" />
+			<Property name="Costs" value="2000" _index="6" />
+			<Property name="Costs" value="2000" _index="7" />
+			<Property name="Costs" value="2500" _index="8" />
+			<Property name="Costs" value="2500" _index="9" />
+			<Property name="Costs" value="3000" _index="10" />
+			<Property name="Costs" value="3000" _index="11" />
+			<Property name="Costs" value="3500" _index="12" />
+			<Property name="Costs" value="3500" _index="13" />
+			<Property name="Costs" value="4000" _index="14" />
+			<Property name="Costs" value="4000" _index="15" />
+			<Property name="Costs" value="4500" _index="16" />
+			<Property name="Costs" value="4500" _index="17" />
+			<Property name="Costs" value="5000" _index="18" />
+			<Property name="Costs" value="5000" _index="19" />
+			<Property name="Costs" value="5500" _index="20" />
+			<Property name="Costs" value="5500" _index="21" />
+			<Property name="Costs" value="6000" _index="22" />
+			<Property name="Costs" value="6000" _index="23" />
+			<Property name="Costs" value="6500" _index="24" />
+			<Property name="Costs" value="6500" _index="25" />
+			<Property name="Costs" value="7000" _index="26" />
+			<Property name="Costs" value="7000" _index="27" />
+			<Property name="Costs" value="7500" _index="28" />
+			<Property name="Costs" value="7500" _index="29" />
         </Property>]]
 
 --Changes the prices for expanding Multi-Tool inventory slots. Prices are listed in order of how many slots the tool currently has, starting from 1. If the tool has more slots than entries in this list, it just keeps repeating the final price.

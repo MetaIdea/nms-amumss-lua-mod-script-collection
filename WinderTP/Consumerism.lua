@@ -4,6 +4,11 @@ SPECIAL_LIST =
 		["ShopNumber"] = "116",
 		["Table"] =  
 		{
+			{ ["ID"] = "SPEC_PB_EGG01",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_PB_EGG02",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_PB_EGG03",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_PB_EGG04",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_PB_EGG05",	["IsConsumable"] = "false", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_BANNER21",	["IsConsumable"] = "false", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_DECAL21",	["IsConsumable"] = "false", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_POSTER21A",	["IsConsumable"] = "false", ["IsCape"] = "False"},

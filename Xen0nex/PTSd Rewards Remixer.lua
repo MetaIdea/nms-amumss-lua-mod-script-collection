@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "6_24"
+GameVersion = "6_30"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -1268,6 +1268,10 @@ StationLootCurrencyChanges =
 	},
 }
 
+--Applies a multiplier to the amount of Projectile Ammo awarded from various sources
+SmallAmmoMult =				0.6				--1		Multiplier applied to rewards of 100 or less ammo (usually 25~95)
+LargeAmmoMult =				0.4				--1		Multiplier applied to rewards of more than 100 ammo (usually 250~600) Does not apply to the 4000-6000 ammo reward from R_ABAND_GIFT below
+
 --Changes the amounts & chances of rewards from claiming supplies at the entrance room for Derelict Freighters
 DerelictSuppliesChanges =
 {
@@ -1286,7 +1290,7 @@ DerelictSuppliesChanges =
 		{"R_ABAND_GIFT"},	--The optional supplies you can choose in the dialogue tree when using the computer terminal to unlock the main airlock door
 		{	--Old Item ID		New Item ID			AmountMin	AmountMax	PercentageChance (All possible items are given, at the chance listed for each)
 			--Products
-			{"AMMO",			"AMMO",				1000,		2000,		100},						--"AMMO",			4000,		6000,		100
+			{"AMMO",			"AMMO",				750,		1500,		100},						--"AMMO",			4000,		6000,		100
 			{"PRODFUEL2",		"PRODFUEL2",		1,			2,			100},						--"PRODFUEL2",		3,			3,			100
 			{"POWERCELL",		"POWERCELL",		1,			2,			100},						--"POWERCELL",		3,			3,			100
 		}
@@ -1720,6 +1724,13 @@ SpecialWasteStandingAmount =1			--0			Sets the amount of faction Standing awarde
 
 WasteSubstanceMult =		1			--1			Applies a multiplier to the amount of substances (Rusted Metal, Ammonia, Uranium, etc.) sometimes awarded when manually processing waste in a furnace
 WasteRewardChoiceType =		"GiveAll"	--"GiveFirst_ThenAlsoSelectFromRest"	Affects how the game chooses the possible bonus rewards when manually processing waste in a furnace. Vanilla only allows one possible bonus reward, and often no reward. "Giveall" can still result in no reward if all options have a PercentageChance below 100, but can allow multiple bonus rewards to be awarded at once.
+
+--Changes to rewards from Creature Battles at Xeno Arenas
+EasyXenoArenaRewardMult =	20			--(5-10 nanites)			Applies a multiplier to the amount of nanites awarded from "easy" Xeno Arena Creature Battle wins
+StandXenoArenaRewardMult =	15			--(10-20 or 12-20 nanites)	Applies a multiplier to the amount of nanites awarded from "standard" Xeno Arena Creature Battle wins
+HardXenoArenaRewardMult =	18			--(10-20 or 15-30 nanites)	Applies a multiplier to the amount of nanites awarded from "hard" Xeno Arena Creature Battle wins
+BossXenoArenaRewardMult =	13			--(30-50 nanites)			Applies a multiplier to the amount of nanites awarded from "boss" Xeno Arena Creature Battle wins (presumably vs. System Champions in Space Stations)
+NexusXenoArenaRewardMult =	8			--(175-250 nanites)			Applies a multiplier to the amount of nanites awarded from "Nexus" Xeno Arena Creature Battle wins (presumably vs. Oceanus)
 
 --% Chance to receive Echo Locators from various sources
 SpiderMapChance			=	20			--7			Chance to drop from the large Arachnid Sentinels
@@ -4405,6 +4416,32 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "AMMO"},
+				["MATH_OPERATION"] 		= "*", 
+				["REPLACE_TYPE"] 		= "ALL",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_MATCH"] 	= "100",
+				["VALUE_MATCH_OPTIONS"]     = "<=",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	SmallAmmoMult},
+					{"AmountMax",	SmallAmmoMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "AMMO"},
+				["MATH_OPERATION"] 		= "*", 
+				["REPLACE_TYPE"] 		= "ALL",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_MATCH"] 	= "100",
+				["VALUE_MATCH_OPTIONS"]     = ">",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	LargeAmmoMult},
+					{"AmountMax",	LargeAmmoMult}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"ID","AF_METAL"},
 				["MATH_OPERATION"] 		= "*", 
 				["REPLACE_TYPE"] 		= "ALL",
@@ -5515,6 +5552,70 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_PB_PVE_EASY_W",		"Reward", "GcRewardMoney"},
+					{"Id", "R_PB_PVE_EZ_NI",		"Reward", "GcRewardMoney"},
+				},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	EasyXenoArenaRewardMult}, 
+					{"AmountMax",	EasyXenoArenaRewardMult}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_PB_PVE_STD_W",		"Reward", "GcRewardMoney"},
+					{"Id", "R_PB_TUT_W",		"Reward", "GcRewardMoney"},
+					{"Id", "R_PB_PVE_PLAC_W",		"Reward", "GcRewardMoney"},
+				},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	StandXenoArenaRewardMult}, 
+					{"AmountMax",	StandXenoArenaRewardMult}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_PB_PVE_SYSS_W",		"Reward", "GcRewardMoney"},
+					{"Id", "R_PB_PVE_HARD_W",		"Reward", "GcRewardMoney"},
+				},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	HardXenoArenaRewardMult}, 
+					{"AmountMax",	HardXenoArenaRewardMult}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_PB_PVE_SYSC_W",		"Reward", "GcRewardMoney"},
+				},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	BossXenoArenaRewardMult}, 
+					{"AmountMax",	BossXenoArenaRewardMult}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_PB_D_NEXUS_W",		"Reward", "GcRewardMoney"},
+				},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	NexusXenoArenaRewardMult}, 
+					{"AmountMax",	NexusXenoArenaRewardMult}, 
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Reward", "GcRewardRecycleSpecificObject"},
 				["SECTION_UP"] = 3,
 				["REPLACE_TYPE"] = "ALL",
@@ -5969,7 +6070,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"UsePersonalPersistentBuffer",	"true"},			--"false"		Speculation: based on some otehr entities where this is set "true", maybe this sets the object to be recorded into a longer list of "already looted" objects in the save file, to make it take longer to "respawn"/"refill"?
+					{"UsePersonalPersistentBuffer",	"true"},			--"false"		Speculation: based on some other entities where this is set "true", maybe this sets the object to be recorded into a longer list of "already looted" objects in the save file, to make it take longer to "respawn"/"refill"?
 				}
 			}
 		}
@@ -5986,7 +6087,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"UsePersonalPersistentBuffer",	"true"},			--"false"		Speculation: based on some otehr entities where this is set "true", maybe this sets the object to be recorded into a longer list of "already looted" objects in the save file, to make it take longer to "respawn"/"refill"?
+					{"UsePersonalPersistentBuffer",	"true"},			--"false"		Speculation: based on some other entities where this is set "true", maybe this sets the object to be recorded into a longer list of "already looted" objects in the save file, to make it take longer to "respawn"/"refill"?
 				}
 			}
 		}

@@ -15,14 +15,13 @@ hFArrow2 = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/HFARROW2_ORANGE.DDS" -- CENTER
 
 TilingLight = "TEXTURES/SPACE/COMMON/SPACECRAFT/INDUSTRIAL/SHARED/TILINGLIGHTS.FH_1X.DDS" -- WINDOW TILING LIGHTS
 
-Version = "1.2"
-Game_Version = "5.28"
+Version = "1.3"
+Game_Version = "5.50"
 Mod_Author = "hemis FEAR"
 Lua_Author = "hemis FEAR"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "_hF_fHangarRetexture_BlueCaligo_"..Version..".pak",
 ["MOD_AUTHOR"]		= Mod_Author,
 ["LUA_AUTHOR"]		= Lua_Author,
 ["NMS_VERSION"]		= Game_Version,

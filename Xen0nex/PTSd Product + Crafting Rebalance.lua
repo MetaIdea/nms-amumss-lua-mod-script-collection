@@ -1,5 +1,5 @@
 ModName = "PTSd Product + Crafting Rebalance"
-GameVersion = "6_21"
+GameVersion = "6_24"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --Changes how effective certain substances are at recharging certain techs
@@ -963,6 +963,11 @@ SubstanceExhibitIDs =
 FreeExhibitIDs =
 {"FOS_QUAD_DIS", "FOS_BI_DIS", "FOS_WORM_DIS", "FOS_BIRD_DIS", "FOS_GRUN_DIS", "FOS_SKULL_MNT", "FOS_SKULL_DISP", "FOS_SKULL", "FOS_LIMBS_MNT", "FOS_LIMBS_DISP", "FOS_LIMBS", "FOS_TAIL_MNT", "FOS_TAIL_DISP", "FOS_TAIL", "FOS_BODY_MNT", "FOS_BODY_DISP", "FOS_BODY", }
 
+--Changes to the crafting recipe and amount of ammo crafted for Projectile Ammunition
+FerritePerAmmoCraft				=	50				--50	(must be a multiple of 25)
+ChromMetalPerAmmoCraft			=	50				--0		(must be a multiple of 25)
+AmmoPerCraft					=	1000			--1250	(must be a multiple of 25)
+
 --Number of Creature Pellets created from the crafting recipe	(Requires 60 Carbon)
 PelletsPerCraft					=	3				--5
 
@@ -1559,6 +1564,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = AddPurpToken
                         },
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "AMMO"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"CraftAmountMultiplier", math.floor(AmmoPerCraft/25)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "AMMO",		"ID", "LAND1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", math.floor(FerritePerAmmoCraft/25)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "AMMO",	"Requirements", "GcTechnologyRequirement"},
+							["ADD"] = AddedItemCost ("STELLAR2", math.floor(ChromMetalPerAmmoCraft/25), "Substance"),
+							["ADD_OPTION"]  = "ADDafterSECTION", 
+						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "BAIT_BASIC_NAME"},
 							["VALUE_CHANGE_TABLE"] 	=

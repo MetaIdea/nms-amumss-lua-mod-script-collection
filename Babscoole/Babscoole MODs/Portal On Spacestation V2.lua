@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "+Portal On Spacestation V2",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.30",
 ["MOD_DESCRIPTION"] = "Adds portal to new, old, abandoned, and pirate space stations",
 ["MODIFICATIONS"]   =
   {
@@ -111,10 +111,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SEC_EDIT"] = "ADD_NODE",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"TransX", "-7.000000"},
+                {"TransX", "-12.800000"},
                 {"TransY", "0.000000"},
-                {"TransZ", "185.000000"},
-                {"RotY",   "90.000000"},
+                {"TransZ", "188.70000"},
+                {"RotY",   "0.000000"},
               }
             },
             {
@@ -128,6 +128,14 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MBIN_FILE_SOURCE"] = "CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN",
           ["MXML_CHANGE_TABLE"] =
           {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL"},
+              ["VCT"] =
+              {
+                {"NameHash", "1115113257"},
+                {"Name",     "CUSTOMFOLDER\PORTAL\PORTAL"},
+              }
+            },
             {
               ["SPECIAL_KEY_WORDS"] = {"Name", "PortalStructure"},
               ["VCT"] =
