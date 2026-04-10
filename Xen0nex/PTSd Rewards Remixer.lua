@@ -1726,11 +1726,12 @@ WasteSubstanceMult =		1			--1			Applies a multiplier to the amount of substances
 WasteRewardChoiceType =		"GiveAll"	--"GiveFirst_ThenAlsoSelectFromRest"	Affects how the game chooses the possible bonus rewards when manually processing waste in a furnace. Vanilla only allows one possible bonus reward, and often no reward. "Giveall" can still result in no reward if all options have a PercentageChance below 100, but can allow multiple bonus rewards to be awarded at once.
 
 --Changes to rewards from Creature Battles at Xeno Arenas
-EasyXenoArenaRewardMult =	20			--(5-10 nanites)			Applies a multiplier to the amount of nanites awarded from "easy" Xeno Arena Creature Battle wins
-StandXenoArenaRewardMult =	15			--(10-20 or 12-20 nanites)	Applies a multiplier to the amount of nanites awarded from "standard" Xeno Arena Creature Battle wins
-HardXenoArenaRewardMult =	18			--(10-20 or 15-30 nanites)	Applies a multiplier to the amount of nanites awarded from "hard" Xeno Arena Creature Battle wins
-BossXenoArenaRewardMult =	13			--(30-50 nanites)			Applies a multiplier to the amount of nanites awarded from "boss" Xeno Arena Creature Battle wins (presumably vs. System Champions in Space Stations)
-NexusXenoArenaRewardMult =	8			--(175-250 nanites)			Applies a multiplier to the amount of nanites awarded from "Nexus" Xeno Arena Creature Battle wins (presumably vs. Oceanus)
+	--These set the new average nanite reward for winning various Creature Battles. The range will vary between ~67% and 133% of the value set below
+LowXenoArenaRewardMult =	160			--(5-10 nanites)			Creature Battle wins vs. opponents set to the "easy" AI preset on planets or training on the Anomaly
+MedXenoArenaRewardMult =	220			--(10-20 or 5-10 nanites)	Creature Battle wins vs. opponents set to the "medium" AI preset on planets
+HighXenoArenaRewardMult =	330			--(15-30 or 10-20 nanites)	Creature Battle wins vs. opponents set to the "medium" AI preset on Space/Outlaw Stations (Space Station opponents use the "easy" AI preset in vanilla, changed to "medium" in PTSd)
+ChampXenoArenaRewardMult =	550			--(30-50 nanites)			Creature Battle wins vs. System Champions set to the "hard" AI preset
+NexusXenoArenaRewardMult =	1200		--(175-250 nanites)			Creature Battle wins vs. Oceanus set to the "hard" AI preset on the Anomaly
 
 --% Chance to receive Echo Locators from various sources
 SpiderMapChance			=	20			--7			Chance to drop from the large Arachnid Sentinels
@@ -5553,66 +5554,62 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
-					{"Id", "R_PB_PVE_EASY_W",		"Reward", "GcRewardMoney"},
-					{"Id", "R_PB_PVE_EZ_NI",		"Reward", "GcRewardMoney"},
+					{"Id", "R_PB_PVE_EASY_W",		"Reward", "GcRewardMoney"},		--	5-10	(easy AI)
 				},
-				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	EasyXenoArenaRewardMult}, 
-					{"AmountMax",	EasyXenoArenaRewardMult}, 
+					{"AmountMin",	math.floor(2*LowXenoArenaRewardMult/3)}, 
+					{"AmountMax",	math.floor(4*LowXenoArenaRewardMult/3)}, 
 				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
-					{"Id", "R_PB_PVE_STD_W",		"Reward", "GcRewardMoney"},
-					{"Id", "R_PB_TUT_W",		"Reward", "GcRewardMoney"},
-					{"Id", "R_PB_PVE_PLAC_W",		"Reward", "GcRewardMoney"},
+					{"Id", "R_PB_PVE_STD_W",		"Reward", "GcRewardMoney"},		--	10-20	(medium AI, no AI trainer set to this???)
+					{"Id", "R_PB_TUT_W",			"Reward", "GcRewardMoney"},		--	10-20	(easy AI, tutorial battle)
+					{"Id", "R_PB_PVE_PLAC_W",		"Reward", "GcRewardMoney"},		--	12-20	(medium AI)
+					--{"Id", "R_PB_PVE_HARD_W",		"Reward", "GcRewardMoney"},		--	10-20	(medium AI)		This instance changed to "R_PB_PVE_PLAC_W" in PTSd
+					{"Id", "R_PB_PVE_EZ_NI",		"Reward", "GcRewardMoney"},		--	5-10	(medium AI)
 				},
-				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	StandXenoArenaRewardMult}, 
-					{"AmountMax",	StandXenoArenaRewardMult}, 
+					{"AmountMin",	math.floor(2*MedXenoArenaRewardMult/3)}, 
+					{"AmountMax",	math.floor(4*MedXenoArenaRewardMult/3)},
 				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
-					{"Id", "R_PB_PVE_SYSS_W",		"Reward", "GcRewardMoney"},
-					{"Id", "R_PB_PVE_HARD_W",		"Reward", "GcRewardMoney"},
+					{"Id", "R_PB_PVE_SYSS_W",		"Reward", "GcRewardMoney"},		--	15-30	(easy AI, changed to medium in PTSd, but can use 3 creatures from any planet in system)
+					{"Id", "R_PB_PVE_HARD_W",		"Reward", "GcRewardMoney"},		--	10-20	(medium AI, but can use 3 creatures from any planet in system)
 				},
-				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	HardXenoArenaRewardMult}, 
-					{"AmountMax",	HardXenoArenaRewardMult}, 
+					{"AmountMin",	math.floor(2*HighXenoArenaRewardMult/3)}, 
+					{"AmountMax",	math.floor(4*HighXenoArenaRewardMult/3)},
 				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
-					{"Id", "R_PB_PVE_SYSC_W",		"Reward", "GcRewardMoney"},
+					{"Id", "R_PB_PVE_SYSC_W",		"Reward", "GcRewardMoney"},		--	30-50	(hard AI, but can use 3 creatures from any planet in system)
 				},
-				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	BossXenoArenaRewardMult}, 
-					{"AmountMax",	BossXenoArenaRewardMult}, 
+					{"AmountMin",	math.floor(2*ChampXenoArenaRewardMult/3)}, 
+					{"AmountMax",	math.floor(4*ChampXenoArenaRewardMult/3)},
 				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
-					{"Id", "R_PB_D_NEXUS_W",		"Reward", "GcRewardMoney"},
+					{"Id", "R_PB_D_NEXUS_W",		"Reward", "GcRewardMoney"},		--	175-250	(hard AI, but can use 3 creatures from anywhere)
 				},
-				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	NexusXenoArenaRewardMult}, 
-					{"AmountMax",	NexusXenoArenaRewardMult}, 
+					{"AmountMin",	math.floor(2*NexusXenoArenaRewardMult/3)}, 
+					{"AmountMax",	math.floor(4*NexusXenoArenaRewardMult/3)},
 				}
 			},
 			{

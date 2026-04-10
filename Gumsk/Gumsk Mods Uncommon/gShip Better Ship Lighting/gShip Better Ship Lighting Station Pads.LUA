@@ -118,7 +118,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							VALUE_CHANGE_TABLE = {
-								{"Value",60000.000000},
+								{"Value",36.000000},
 							}
 						},
 						{
@@ -136,7 +136,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							VALUE_CHANGE_TABLE = {
-								{"Value",60000.000000},
+								{"Value",36.000000},
 							}
 						},
 						{
@@ -154,7 +154,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							VALUE_CHANGE_TABLE = {
-								{"Value",60000.000000},
+								{"Value",36.000000},
 							}
 						},
 						{

@@ -395,7 +395,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Expanse Black Edition",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.30",
 ["MOD_DESCRIPTION"] = "Large overhaul to Diversity of Space Colors.  384 Color patterns with only distant stars and a random-colored Sun. No nebulae, no clouds.",
 ["MODIFICATIONS"]   =
   {
@@ -580,7 +580,7 @@ for i = 1, #DataTable do
       },
       {
         ["PRECEDING_KEY_WORDS"] = {"Settings"},
-        ["EXML_FLAGS"]  = "OVERWRITE",
+        ["EXML_FLAGS"] = "OVERWRITE",
       },
     }
   }

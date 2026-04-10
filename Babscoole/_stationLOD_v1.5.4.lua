@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]  = "_stationLOD_v1.5.3.pak",
+["MOD_FILENAME"]  = "_stationLOD_v1.5.4",
 ["MOD_AUTHOR"]    = "kuborr",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.24",
+["NMS_VERSION"]   = "6.30",
 ["MODIFICATIONS"] = 
 	{
 		{

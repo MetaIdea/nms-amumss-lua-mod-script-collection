@@ -971,7 +971,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Expanse",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.30",
 ["MOD_DESCRIPTION"] = "Large overhaul to Diversity of Space Colors.  768 possible color combinations.",
 ["MODIFICATIONS"]   =
   {
@@ -1156,7 +1156,7 @@ for i = 1, #DataTable do
       },
       {
         ["PRECEDING_KEY_WORDS"] = {"Settings"},
-        ["EXML_FLAGS"]  = "OVERWRITE",
+        ["EXML_FLAGS"] = "OVERWRITE",
       },
     }
   }

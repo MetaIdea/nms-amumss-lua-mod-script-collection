@@ -68,7 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Custom Binoc Panels-"..COLORNAME,
 ["MOD_AUTHOR"]      = "Babscoole & Exosolar",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.30",
 ["MOD_DESCRIPTION"] = "Add colored background panels for data in binocs",
 ["MODIFICATIONS"]   =
   {
@@ -217,6 +217,21 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"ID", "MINERAL_VIEW"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_PANEL",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_PANEL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Width",  "396.000000"},
+                {"Height", "320.000000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "PETBATTLE_VIEW"},
               ["SECTION_UP_SPECIAL"] = 1,
               ["PRECEDING_KEY_WORDS"] = {"Children"},
               ["ADD_OPTION"] = "ADDafterLINE",
