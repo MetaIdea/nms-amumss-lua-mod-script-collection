@@ -3,7 +3,7 @@ local mod_desc = [[
   procedurally-placed keys - Only 3 keys will appear in any instance
   4 Alternate placements for the treasure chest
 ]]--------------------------------------------------------------------
----	MXML 2 LUA ... by lMonk ... version: 1.0.06
+---	MXML 2 LUA ... by lMonk ... version: 1.0.08
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -80,17 +80,6 @@ local function ToMxml(class)
 	return nil
 end
 
---	=> Build a TkSceneNodeAttributeData section
---	@param name: scene attribute name
---	@param value: scene attribute value
-local function ScAttribute(name, value)
-	return {
-		meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
-		Name	= name,
-		Value	= type(value) == 'boolean' and (value and 'TRUE' or 'FALSE') or value
-	}
-end
-
 --	=> Determine if received is a single or multi-item
 --	then process items through the received function
 --	@param items: table of item properties or a non-keyed table of items (keys are ignored)
@@ -105,6 +94,17 @@ local function ProcessOnenAll(items, acton)
 		return T
 	end
 	return acton(items)
+end
+
+--	=> Build a TkSceneNodeAttributeData section
+--	@param name: scene attribute name
+--	@param value: scene attribute value
+local function ScAttribute(name, value)
+	return {
+		meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
+		Name	= name,
+		Value	= type(value) == 'boolean' and (value and 'TRUE' or 'FALSE') or value
+	}
 end
 
 --	=> Build a single -or list of TkSceneNodeData classes
@@ -368,7 +368,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.Treasure Ruin Procedural Crates',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.21',
+	NMS_VERSION			= '6.32',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{

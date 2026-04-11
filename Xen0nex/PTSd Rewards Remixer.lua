@@ -1727,11 +1727,12 @@ WasteRewardChoiceType =		"GiveAll"	--"GiveFirst_ThenAlsoSelectFromRest"	Affects 
 
 --Changes to rewards from Creature Battles at Xeno Arenas
 	--These set the new average nanite reward for winning various Creature Battles. The range will vary between ~67% and 133% of the value set below
-LowXenoArenaRewardMult =	160			--(5-10 nanites)			Creature Battle wins vs. opponents set to the "easy" AI preset on planets or training on the Anomaly
-MedXenoArenaRewardMult =	220			--(10-20 or 5-10 nanites)	Creature Battle wins vs. opponents set to the "medium" AI preset on planets
-HighXenoArenaRewardMult =	330			--(15-30 or 10-20 nanites)	Creature Battle wins vs. opponents set to the "medium" AI preset on Space/Outlaw Stations (Space Station opponents use the "easy" AI preset in vanilla, changed to "medium" in PTSd)
-ChampXenoArenaRewardMult =	550			--(30-50 nanites)			Creature Battle wins vs. System Champions set to the "hard" AI preset
-NexusXenoArenaRewardMult =	1200		--(175-250 nanites)			Creature Battle wins vs. Oceanus set to the "hard" AI preset on the Anomaly
+LowXenoArenaReward =		160			--(5-10 nanites)			Creature Battle wins vs. opponents set to the "easy" AI preset on planets or training on the Anomaly
+MedXenoArenaReward =		220			--(10-20 or 5-10 nanites)	Creature Battle wins vs. opponents set to the "medium" AI preset on planets
+HighXenoArenaReward =		330			--(15-30 or 10-20 nanites)	Creature Battle wins vs. opponents set to the "medium" AI preset on Space/Outlaw Stations (Space Station opponents use the "easy" AI preset in vanilla, changed to "medium" in PTSd)
+ChampXenoArenaReward =		550			--(30-50 nanites)			Creature Battle wins vs. System Champions set to the "hard" AI preset
+NexusXenoArenaReward =		1200		--(175-250 nanites)			Creature Battle wins vs. Oceanus set to the "hard" AI preset on the Anomaly
+PvpXenoArenaReward =		220			--(N/A, added by PTSd)		Creature Battle wins vs. other players
 
 --% Chance to receive Echo Locators from various sources
 SpiderMapChance			=	20			--7			Chance to drop from the large Arachnid Sentinels
@@ -5559,8 +5560,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	math.floor(2*LowXenoArenaRewardMult/3)}, 
-					{"AmountMax",	math.floor(4*LowXenoArenaRewardMult/3)}, 
+					{"AmountMin",	math.floor(2*LowXenoArenaReward/3)}, 
+					{"AmountMax",	math.floor(4*LowXenoArenaReward/3)}, 
 				}
 			},
 			{
@@ -5574,8 +5575,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	math.floor(2*MedXenoArenaRewardMult/3)}, 
-					{"AmountMax",	math.floor(4*MedXenoArenaRewardMult/3)},
+					{"AmountMin",	math.floor(2*MedXenoArenaReward/3)}, 
+					{"AmountMax",	math.floor(4*MedXenoArenaReward/3)},
 				}
 			},
 			{
@@ -5586,8 +5587,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	math.floor(2*HighXenoArenaRewardMult/3)}, 
-					{"AmountMax",	math.floor(4*HighXenoArenaRewardMult/3)},
+					{"AmountMin",	math.floor(2*HighXenoArenaReward/3)}, 
+					{"AmountMax",	math.floor(4*HighXenoArenaReward/3)},
 				}
 			},
 			{
@@ -5597,8 +5598,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	math.floor(2*ChampXenoArenaRewardMult/3)}, 
-					{"AmountMax",	math.floor(4*ChampXenoArenaRewardMult/3)},
+					{"AmountMin",	math.floor(2*ChampXenoArenaReward/3)}, 
+					{"AmountMax",	math.floor(4*ChampXenoArenaReward/3)},
 				}
 			},
 			{
@@ -5608,9 +5609,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	math.floor(2*NexusXenoArenaRewardMult/3)}, 
-					{"AmountMax",	math.floor(4*NexusXenoArenaRewardMult/3)},
+					{"AmountMin",	math.floor(2*NexusXenoArenaReward/3)}, 
+					{"AmountMax",	math.floor(4*NexusXenoArenaReward/3)},
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_PB_PVP_STD_W",	"List", "GcRewardTableItem"},
+				["ADD"] = CurrencyReward ("Nanites", math.floor(2*PvpXenoArenaReward/3), math.floor(4*PvpXenoArenaReward/3), "100.000000"),
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Reward", "GcRewardRecycleSpecificObject"},

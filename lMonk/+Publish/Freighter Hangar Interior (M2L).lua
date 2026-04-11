@@ -9,7 +9,7 @@ local mod_desc = [[
 
   * DDS files import is skipped SILENTLY if file paths are not found!
 ]]------------------------------------------------------------------------------
----	MXML 2 LUA ... by lMonk ... version: 1.0.06
+---	MXML 2 LUA ... by lMonk ... version: 1.0.08
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -377,7 +377,7 @@ mx_ct[#mx_ct+1] = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= 'MOD.lMonk.Freighter Hangar Changes',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '6.21',
+	NMS_VERSION				= '6.32',
 	MOD_DESCRIPTION			= mod_desc,
 	AMUMSS_SUPPRESS_MSG		= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 			= {{

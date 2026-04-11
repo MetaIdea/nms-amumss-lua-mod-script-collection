@@ -3,7 +3,7 @@ local mod_desc = [[
   procedurally placed containers in the crashed -and underwater-crashed freigther
   replaces the underwater one with the land model
 ]]--------------------------------------------------------------------------------
----	MXML 2 LUA ... by lMonk ... version: 1.0.06
+---	MXML 2 LUA ... by lMonk ... version: 1.0.08
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -282,7 +282,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.Crashed Freighter Procedural Containers',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.21',
+	NMS_VERSION			= '6.32',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
