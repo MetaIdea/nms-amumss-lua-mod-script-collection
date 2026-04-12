@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Sodium Crystals 1.4.pak", 
+["MOD_FILENAME"] 			= "Better Sodium Crystals 1.5.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "6.22",
+["NMS_VERSION"]				= "6.32",
 ["MOD_DESCRIPTION"]			= "This mod slightly changes yellow sodium crystals",
 ["MODIFICATIONS"] 			= 
 	{

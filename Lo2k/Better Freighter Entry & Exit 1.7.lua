@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Freighter Entry & Exit 1.6.pak", 
+["MOD_FILENAME"] 			= "Better Freighter Entry & Exit 1.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "6.22",
+["NMS_VERSION"]				= "6.32",
 ["MOD_DESCRIPTION"]			= "This mod improves freighters entry & exit",
 ["MODIFICATIONS"] 			= 
 	{

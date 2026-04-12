@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Weather Safe Buildings"
 BaseDescription = "Basic floor pieces have hazard protection"
-GameVersion = "6.0.2.0"
+GameVersion = "6.3.2.0"
 ModVersion = "a"
 
 HeaterAdd = [[		<Property name="Children" value="TkSceneNodeData">
@@ -83,7 +83,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					<Property name="RollingFriction" value="0.200000" />
 					<Property name="AngularDamping" value="0.200000" />
 					<Property name="LinearDamping" value="0.100000" />
+					<Property name="Restitution" value="0.000000" />
 					<Property name="Gravity" value="20.000000" />
+					<Property name="CanBeTooSteepForTeleporter" value="true" />
+				</Property>
+				<Property name="CollisionGroup" value="GcPhysicsCollisionGroups">
+					<Property name="CollisionGroup" value="Normal" />
 				</Property>
 				<Property name="TriggerVolume" value="true" />
 				<Property name="TriggerVolumeType" value="TkVolumeTriggerType">
@@ -106,12 +111,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				<Property name="InvisibleForInteraction" value="false" />
 				<Property name="AllowTeleporter" value="false" />
 				<Property name="BlockTeleporter" value="false" />
-				<Property name="CanBeTooSteepForTeleporter" value="true" />
 				<Property name="DisableGravity" value="false" />
 				<Property name="SpinOnCreate" value="0.000000" />
 				<Property name="ScaleAffectsMass" value="false" />
 				<Property name="AllowedDefaultCollision" value="true" />
 				<Property name="Animated" value="false" />
+				<Property name="DisablePhysicsUntilGravGunned" value="false" />
 				<Property name="UseBasePartOptimisation" value="false" />
 				<Property name="IsTransporter" value="false" />
 				<Property name="UseSimpleCharacterCollision" value="false" />

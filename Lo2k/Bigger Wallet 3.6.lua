@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"]   	  = "Bigger Wallet 3.5.pak",
+    ["MOD_FILENAME"]   	  = "Bigger Wallet 3.6.pak",
     ["MOD_DESCRIPTION"]   = "Increases UI currencies spacing",
     ["MOD_AUTHOR"]        = "Lo2k",
 	["LUA_AUTHOR"]        = "Droseran",
-    ["NMS_VERSION"]       = "6.21",
+    ["NMS_VERSION"]       = "6.32",
     ["MODIFICATIONS"]     = {
         {
             ["MBIN_CHANGE_TABLE"] = {

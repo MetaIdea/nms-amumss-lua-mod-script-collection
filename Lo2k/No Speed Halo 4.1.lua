@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Speed Halo 4.0.pak", 
+["MOD_FILENAME"] 			= "No Speed Halo 4.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "6.23",
+["NMS_VERSION"]				= "6.32",
 ["MOD_DESCRIPTION"]			= "This mods removes ship speed effect",
 ["MODIFICATIONS"] 			= 
 	{
