@@ -10019,7 +10019,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "Starburst Space Colors Extreme",
 ["MOD_AUTHOR"]    = "hemisfear",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.30",
+["NMS_VERSION"]   = "6.32",
 ["MODIFICATIONS"] =
   {
     {
