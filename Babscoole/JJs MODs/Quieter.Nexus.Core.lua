@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Quieter.Nexus.Core.V.1.4",
+["MOD_FILENAME"]  = "Quieter.Nexus.Core.V.1.5",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.24",
+["NMS_VERSION"]   = "6.32",
 ["MODIFICATIONS"] =
   {
     {
