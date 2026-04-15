@@ -1,24 +1,24 @@
 -- Configuration constants
-local NMS_VERSION = "6.01"
+local NMS_VERSION = "6.33"
 local MOD_VERSION = "0"
 
 -- Settlement timer constants (reduced from defaults)
--- Wait between propsed building projects
+-- Wait between proposed building projects
 local BUILDING_UPGRADE_TIME = 300          -- 5 min (was 13 hours)
--- Free/instant upgrade time  
+-- Free/instant upgrade time
 local BUILDING_FREE_UPGRADE_TIME = 1       -- 1 sec (was 10 sec)
 -- Minimum wait time between settlement decisions
 local JUDGEMENT_WAIT_MIN = 900             -- 15 min (was 15 min)
 -- Maximum wait time between settlement decisions
-local JUDGEMENT_WAIT_MAX = 1800             -- 30 min (was 2 hours)
+local JUDGEMENT_WAIT_MAX = 1800            -- 30 min (was 2 hours)
 -- Settlement mini-expedition duration
-local MINI_EXPEDITION_TIME = 600           -- 10 min (was 50 min)
+local MINI_EXPEDITION_TIME = 900           -- 15 min (was 50 min)
 -- Settlement production cycle duration
 local PRODUCTION_CYCLE_TIME = 3600         -- 1 hour (was 20 hours)
 -- Settlement alert/crisis cycle duration
-local ALERT_CYCLE_TIME = 3600               -- 1 hour (was 57 min)
+local ALERT_CYCLE_TIME = 3600              -- 1 hour (was 57 min)
 -- Vile Brood attack cycle duration
-local BUG_ATTACK_CYCLE_TIME = 7200          -- 2 hours (was 2.5 hours)
+local BUG_ATTACK_CYCLE_TIME = 7200         -- 2 hours (was 2.5 hours)
 
 -- Economic and production constants
 -- Daily debt payment amount
@@ -32,7 +32,7 @@ local SCAN_ANOMALIES_TIME = 21600           -- 6 hours (was 24 hours)
 -- Tower scan for crashed ships recharge time
 local SCAN_CRASHED_SHIPS_TIME = 21600       -- 6 hours (was 24 hours)
 -- Product units produced per cycle multiplier
-local PRODUCT_RATE_MODIFIER = 20            -- 20x multiplier (was 5x)
+local PRODUCT_RATE_MODIFIER = 200            -- 200x multiplier (was 5x)
 -- Substance units produced per cycle multiplier
 local SUBSTANCE_RATE_MODIFIER = 2000        -- 2000x multiplier (was 500x)
 -- Production rate during alert states
@@ -49,7 +49,7 @@ local MAX_NPC_POPULATION = 100              -- 100 NPCs (was 30 NPCs)
 local LANDING_ZONE_TIME = 5                 -- 5 sec (was 1 hour)
 -- Settlement bar construction time
 local BAR_TIME = 5                          -- 5 sec (was 1 hour)
--- Settlement tower construction time  
+-- Settlement tower construction time
 local TOWER_TIME = 5                        -- 5 sec (was 1 hour)
 -- Settlement market construction time
 local MARKET_TIME = 5                       -- 5 sec (was 2 hours)
@@ -78,11 +78,37 @@ local BUILDERS_ROBO_ARM_TIME = 5            -- 5 sec (was 1 hour)
 -- Building reveal cutscene duration
 local BUILDING_REVEAL_CUTSCENE = 1.0        -- 1 sec (was 10 sec)
 
+-- Advanced production timing constants
+-- Production slot timer offset (time between production slots activating)
+local PRODUCTION_SLOT_TIMER_OFFSET = 300         -- 5 min (was 8.33 hours)
+-- Production boost conversion rate (efficiency of production boosts)
+local PRODUCTION_BOOST_CONVERSION_RATE = 10.0     -- 10x boost efficiency (was 1x)
+-- Initial debt cycles (number of production cycles settlement starts in debt)
+local INITIAL_DEBT_CYCLES = 0                    -- No initial debt (was 1 cycle)
+
+-- Population growth constants
+-- Bad growth threshold (below this happiness, growth is bad)
+local POPULATION_GROWTH_THRESHOLD_BAD = 0.100000  -- 10% threshold (was 20%)
+-- Good growth threshold (above this happiness, growth is good)
+local POPULATION_GROWTH_THRESHOLD_GOOD = 0.600000 -- 60% threshold (was 80%)
+-- Daily population growth rate when settlement performance is bad
+local POPULATION_GROWTH_PER_DAY_BAD = 1           -- 1 NPC/day (was 0)
+-- Daily population growth rate when settlement performance is neutral
+local POPULATION_GROWTH_PER_DAY_NEUTRAL = 3       -- 3 NPCs/day (was 1)
+-- Daily population growth rate when settlement performance is good
+local POPULATION_GROWTH_PER_DAY_GOOD = 5          -- 5 NPCs/day (was 2)
+-- Starting population scalar (multiplier for initial population)
+local STARTING_POPULATION_SCALAR = 1.0            -- 100% of max (was 50%)
+
+-- Stat contribution modifiers
+-- Production stat contribution modifier (affects production efficiency)
+local STAT_PRODUCTION_CONTRIBUTION = 100          -- 100 points (was 30)
+
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = string.format("Accelerated Settlements %s.%s", NMS_VERSION, MOD_VERSION),
     ["MOD_AUTHOR"] = "NilOutput",
-    ["LUA_AUTHOR"] = "NilOutput", 
-    ["MOD_DESCRIPTION"] = "Drastically reduces settlement building construction times, increases production rates, and accelerates debt payoff for faster settlement progression. Works with all settlements, including Autophage settlements.",
+    ["LUA_AUTHOR"] = "NilOutput",
+    ["MOD_DESCRIPTION"] = "Comprehensive settlement acceleration mod that drastically reduces building construction times, massively increases production rates, accelerates debt payoff, and enhances population growth for ultra-fast settlement progression. Features include: optimized production timing, enhanced boost efficiency, accelerated population growth, and improved production stat contributions for all settlement types. Works with all settlements, including Autophage settlements.",
     ["NMS_VERSION"] = NMS_VERSION,
     ["MODIFICATIONS"] = {
         {
@@ -98,13 +124,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 {"JudgementWaitTimeMax", JUDGEMENT_WAIT_MAX},
                                 {"SettlementMiniExpeditionTime", MINI_EXPEDITION_TIME},
                                 {"ProductionCycleDurationInSeconds", PRODUCTION_CYCLE_TIME},
+                                {"ProductionSlotTimerOffsetInSeconds", PRODUCTION_SLOT_TIMER_OFFSET},
+                                {"ProductionBoostConversionRate", PRODUCTION_BOOST_CONVERSION_RATE},
                                 {"AlertCycleDurationInSeconds", ALERT_CYCLE_TIME},
                                 {"DailyDebtPaymentModifier", DAILY_DEBT_PAYMENT_MODIFIER},
                                 {"ProductUnitsPerCycleRateModifier", PRODUCT_RATE_MODIFIER},
                                 {"SubstanceUnitsPerCycleRateModifier", SUBSTANCE_RATE_MODIFIER},
+                                {"InitialDebtCycles", INITIAL_DEBT_CYCLES},
                                 {"AlertUnitsPerCycleRateModifier", ALERT_RATE_MODIFIER},
                                 {"BugAttackCycleDurationInSeconds", BUG_ATTACK_CYCLE_TIME},
                                 {"BugAttackUnitsPerCycleRateModifier", BUG_ATTACK_RATE_MODIFIER},
+                                {"PopulationGrowthRateThresholdBad", POPULATION_GROWTH_THRESHOLD_BAD},
+                                {"PopulationGrowthRateThresholdGood", POPULATION_GROWTH_THRESHOLD_GOOD},
+                                {"PopulationGrowthRatePerDayBad", POPULATION_GROWTH_PER_DAY_BAD},
+                                {"PopulationGrowthRatePerDayNeutral", POPULATION_GROWTH_PER_DAY_NEUTRAL},
+                                {"PopulationGrowthRatePerDayGood", POPULATION_GROWTH_PER_DAY_GOOD},
+                                {"StartingPopulationScalar", STARTING_POPULATION_SCALAR},
                                 {"BuildingRevealCutsceneLength", BUILDING_REVEAL_CUTSCENE},
                                 {"MaxNPCPopulation", MAX_NPC_POPULATION},
                                 {"TowerRechargeTime", TOWER_RECHARGE_TIME}
@@ -136,6 +171,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 {"Settlement_Factory", FACTORY_TIME},
                                 {"Settlement_FishPond", FISH_POND_TIME},
                                 {"Settlement_Builders_RoboArm", BUILDERS_ROBO_ARM_TIME}
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"StatProductivityContributionModifiers"},
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"Production", STAT_PRODUCTION_CONTRIBUTION}
                             }
                         }
                     }

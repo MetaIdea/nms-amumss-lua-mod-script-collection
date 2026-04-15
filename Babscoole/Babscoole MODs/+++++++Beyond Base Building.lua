@@ -27,7 +27,7 @@ NO_BUILDCOUNT_LIMIT = false                 --Vanilla false // Mod Default false
 -- Specific placements/limits :
 MARINESHELTER_ABOVE_WATER = true            --Vanilla false // Mod default false // true to enable marine shelter placement above water, ALL_PARTS_ABOVE_WATER must be true too
 EXOMATERIALISER_ON_PLANETBASE = false       --Vanilla false // Mod default false // true to enable the Orbital Exocraft Materialiser on planet bases (decorative purpose only), ALL_PARTS_ON_PLANETBASE must be true too
-FREIGHTERROOMS_ON_PLANETBASE = false        --Vanilla false // Mod default false // true to enable freighter tech and bio rooms on planet bases
+FREIGHTERROOMS_ON_PLANETBASE = true         --Vanilla false // Mod default false // true to enable freighter tech and bio rooms on planet bases
 FARM_IN_ANY_BIOME = false                   --Vanilla false // Mod default false // true to enable planting in any biome
 METAL_PARTS_OUTSIDE_BASE = false            --Vanilla false // Mod default false // true to makes some metal parts buildable outside of bases. Won't snap together outside of bases! Use it at your own risks!
 GEOBAYS_ON_FREIGHTER = false                --Vanilla false // Mod default false // true to enable vehicles geobays on freighters, ALL_PARTS_ON_FREIGHTER must be true too. Can be very glitchy, use it at your own risks!
@@ -77,7 +77,7 @@ print("FARM_IN_ANY_BIOME = "..tostring(FARM_IN_ANY_BIOME))
 BASESTORAGE_ON_FREIGHTER = GUIF({false, [[Do you want to place Base Storage Containers on Freighters?  Default = N.  Press ENTER for default value.]]},10)
 print("BASESTORAGE_ON_FREIGHTER = "..tostring(BASESTORAGE_ON_FREIGHTER))
 
-FREIGHTERROOMS_ON_PLANETBASE = GUIF({false, [[Do you want to place Freighter Tech and Bio rooms on Planet Bases?  Default = N.  Press ENTER for default value.]]},10)
+FREIGHTERROOMS_ON_PLANETBASE = GUIF({true, [[Do you want to place Freighter Tech and Bio rooms on Planet Bases?  Default = Y.  Press ENTER for default value.]]},10)
 print("FREIGHTERROOMS_ON_PLANETBASE = "..tostring(FREIGHTERROOMS_ON_PLANETBASE))
 
 BASEPARTS_ON_CORVETTE = GUIF({true, [[Do you want to place Base parts on Corvettes?  Default = Y.  Press ENTER for default value.]]},10)
@@ -373,7 +373,7 @@ And, of course, thanks to all of the other modders who make mods too, as we ofte
 —For latest versions and more visit:-
 https://www.nexusmods.com/nomanssky/mods/1096
 ]],
-["NMS_VERSION"]   = "6.20",
+["NMS_VERSION"]   = "6.30",
 ["MODIFICATIONS"] =
   {
     {
