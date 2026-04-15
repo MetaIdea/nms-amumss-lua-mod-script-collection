@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Communism"
-GameVersion = "6.20"
+GameVersion = "6.32"
 Description = "Makes every Expedition and Twitch item added by Consumerism FREE OF CHARGE."
 
 ProductIDList =
@@ -773,7 +773,12 @@ ProductIDList =
   {"ID","VAULT_BOOTS"},
   {"ID","VAULT_GLOVES"},
   {"ID","VAULT_LEGS"},
-  {"ID","VAULT_TORSO"}
+  {"ID","VAULT_TORSO"},
+  {"ID","SPEC_PB_EGG01"},
+  {"ID","SPEC_PB_EGG02"},
+  {"ID","SPEC_PB_EGG03"},
+  {"ID","SPEC_PB_EGG04"},
+  {"ID","SPEC_PB_EGG05"}
 }
 
 NMS_MOD_DEFINITION_CONTAINER = 
