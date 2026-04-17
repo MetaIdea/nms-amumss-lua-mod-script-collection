@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Quick Scan with Range Boost",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.30",
 ["MOD_DESCRIPTION"] = "Enhances Scan speed and range on planet and in space. Faster scan recharge.",
 ["MODIFICATIONS"]   =
   {

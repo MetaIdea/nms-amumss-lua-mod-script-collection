@@ -1,5 +1,5 @@
 -- Configuration constants
-local NMS_VERSION = "6.01"
+local NMS_VERSION = "6.33"
 local MOD_VERSION = "0"
 
 NMS_MOD_DEFINITION_CONTAINER = {

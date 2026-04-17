@@ -54,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]     = "Companion Pet Unlocker",
 ["MOD_AUTHOR"]       = "Mjjstral & Babscoole",
 ["MOD_CONTRIBUTORS"] = "Silent369 and Corvus",
-["NMS_VERSION"]      = "6.18",
+["NMS_VERSION"]      = "6.30",
 ["MOD_DESCRIPTION"]  = "Enables more creatures to become companion pets",
 ["MODIFICATIONS"]    =
   {

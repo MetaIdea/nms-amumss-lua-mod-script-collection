@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Daplokarus.V.2.4",
+["MOD_FILENAME"]  = "Daplokarus.V.2.5",
 ["MOD_AUTHOR"]    = "JJHookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.32",
+["NMS_VERSION"]   = "6.33",
 ["MODIFICATIONS"] =
     {
         {
@@ -56,15 +56,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
 		<Property name="Table" value="GcCreatureData" _id="DIPLO">
 			<Property name="Id" value="DIPLO" />
-			<Property name="OnlySpawnWhenIdIsForced" value="true" />
+			<Property name="OnlySpawnWhenIdIsForced" value="false" />
 			<Property name="ForceType" value="GcCreatureTypes">
 				<Property name="CreatureType" value="None" />
 			</Property>
 			<Property name="RealType" value="GcCreatureTypes">
 				<Property name="CreatureType" value="None" />
 			</Property>
-			<Property name="EcoSystemCreature" value="true" />
-			<Property name="CanBeFemale" value="true" />
+			<Property name="EcoSystemCreature" value="false" />
+			<Property name="CanBeFemale" value="false" />
 			<Property name="Tags" />
 			<Property name="MoveArea" value="Ground" />
 			<Property name="MinScale" value="0.750000" />
@@ -73,10 +73,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="FurLengthModifierAtMaxScale" value="1.000000" />
 			<Property name="FurChance" value="0.000000" />
 			<Property name="Rarity" value="GcCreatureRarity">
-				<Property name="CreatureRarity" value="Common" />
+				<Property name="CreatureRarity" value="Rare" />
 			</Property>
 			<Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier">
-				<Property name="CreatureRoleFrequencyModifier" value="Normal" />
+				<Property name="CreatureRoleFrequencyModifier" value="Never" />
 			</Property>
 			<Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier">
 				<Property name="CreatureRoleFrequencyModifier" value="Normal" />
@@ -117,13 +117,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 				</Property>
 			</Property>
 			<Property name="PetBattlerTags" value="GcGameTablePetTag">
-				<Property name="PetTag" value="None" />
+				<Property name="PetTag" value="1065353216" />
 			</Property>
 			<Property name="CanBeUsedInPetBattler" value="false" />
-			<Property name="PetBattlerSelectionWeight" value="1.000000" />
+			<Property name="PetBattlerSelectionWeight" value="0.000000" />
 			<Property name="PetBattleFlyerExtraOffset" value="0.000000" />
 			<Property name="PetBattlerForcedAffinity" value="GcPetBattlerAffinity">
-				<Property name="PetBattlerAffinity" value="Normal" />
+				<Property name="PetBattlerAffinity" value="Lush" />
 			</Property>
 			<Property name="PetBattlerShouldSwellOnAttack" value="false" />
 			<Property name="PetBattlerNodesToHide" />
@@ -132,15 +132,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 		</Property>
 		<Property name="Table" value="GcCreatureData" _id="DIPLOALIEN">
 			<Property name="Id" value="DIPLOALIEN" />
-			<Property name="OnlySpawnWhenIdIsForced" value="true" />
+			<Property name="OnlySpawnWhenIdIsForced" value="false" />
 			<Property name="ForceType" value="GcCreatureTypes">
 				<Property name="CreatureType" value="None" />
 			</Property>
 			<Property name="RealType" value="GcCreatureTypes">
 				<Property name="CreatureType" value="None" />
 			</Property>
-			<Property name="EcoSystemCreature" value="true" />
-			<Property name="CanBeFemale" value="true" />
+			<Property name="EcoSystemCreature" value="false" />
+			<Property name="CanBeFemale" value="false" />
 			<Property name="Tags" />
 			<Property name="MoveArea" value="Ground" />
 			<Property name="MinScale" value="0.750000" />
@@ -149,7 +149,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			<Property name="FurLengthModifierAtMaxScale" value="1.000000" />
 			<Property name="FurChance" value="0.000000" />
 			<Property name="Rarity" value="GcCreatureRarity">
-				<Property name="CreatureRarity" value="Common" />
+				<Property name="CreatureRarity" value="Rare" />
 			</Property>
 			<Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier">
 				<Property name="CreatureRoleFrequencyModifier" value="Normal" />
@@ -193,15 +193,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 				</Property>
 			</Property>
 			<Property name="PetBattlerTags" value="GcGameTablePetTag">
-				<Property name="PetTag" value="139266" />
+				<Property name="PetTag" value="1065353216" />
 			</Property>
-			<Property name="CanBeUsedInPetBattler" value="true" />
-			<Property name="PetBattlerSelectionWeight" value="1.000000" />
+			<Property name="CanBeUsedInPetBattler" value="false" />
+			<Property name="PetBattlerSelectionWeight" value="0.000000" />
 			<Property name="PetBattleFlyerExtraOffset" value="0.000000" />
 			<Property name="PetBattlerForcedAffinity" value="GcPetBattlerAffinity">
-				<Property name="PetBattlerAffinity" value="Normal" />
+				<Property name="PetBattlerAffinity" value="Lush" />
 			</Property>
-			<Property name="PetBattlerShouldSwellOnAttack" value="false" />
+			<Property name="PetBattlerShouldSwellOnAttack" value="true" />
 			<Property name="PetBattlerNodesToHide" />
 			<Property name="FlyerOffsetOverrides" />
 			<Property name="MoveSets" />

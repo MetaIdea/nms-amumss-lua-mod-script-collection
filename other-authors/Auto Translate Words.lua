@@ -2,11 +2,14 @@
 local NMS_VERSION = "6.33"
 local MOD_VERSION = "0"
 
+-- Auto translate chance (default is 0.33)
+local AUTO_TRANSLATE_CHANCE = 0.9    -- 90% chance (was 33%)
+
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"] = string.format("Faster Scanning %s.%s", NMS_VERSION, MOD_VERSION),
+    ["MOD_FILENAME"] = string.format("Auto Translate Words %s.%s", NMS_VERSION, MOD_VERSION),
     ["MOD_AUTHOR"] = "NilOutput",
     ["LUA_AUTHOR"] = "NilOutput",
-    ["MOD_DESCRIPTION"] = "Reduces the time it takes to scan objects with the Analysis Visor.",
+    ["MOD_DESCRIPTION"] = "Automatically translates alien words without needing to learn them first.",
     ["NMS_VERSION"] = NMS_VERSION,
     ["MODIFICATIONS"] = {
         {
@@ -16,10 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["MXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"BinocTimeBeforeScan", "0.001"},
-                                {"BinocMinScanTime", "0.0001"},
-                                {"BinocScanTime", "0.001"},
-                                {"BinocCreatureScanTime", "0.001"}
+                                {"AutoTranslateWordChance", AUTO_TRANSLATE_CHANCE}
                             }
                         }
                     }
