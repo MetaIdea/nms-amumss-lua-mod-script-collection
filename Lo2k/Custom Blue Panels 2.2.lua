@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Custom Blue Panels 2.1.pak", 
+["MOD_FILENAME"] 			= "Custom Blue Panels 2.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "6.22",
+["NMS_VERSION"]				= "6.33",
 ["MOD_DESCRIPTION"]			= "This mod make panel backgrounds blue",
 ["MODIFICATIONS"] 			= 
 	{

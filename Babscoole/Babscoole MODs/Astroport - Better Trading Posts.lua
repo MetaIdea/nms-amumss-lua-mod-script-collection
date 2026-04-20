@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Astroport - Better Trading Posts",
 ["MOD_AUTHOR"]      = "AstronautinOrbit and Babscoole",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.30",
 ["MOD_DESCRIPTION"] = "Planetary trading posts rework",
 ["MODIFICATIONS"]   =
   {
@@ -8917,6 +8917,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children" />
     </Property>
+    <Property name="Children" value="TkSceneNodeData" _index="21">
+      <Property name="Name" value="TradingPostGameTable0" />
+      <Property name="NameHash" value="2421276917" />
+      <Property name="Type" value="LOCATOR" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="3.500000" />
+        <Property name="TransY" value="0.000000" />
+        <Property name="TransZ" value="9.500000" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="215.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="1.000000" />
+        <Property name="ScaleY" value="1.000000" />
+        <Property name="ScaleZ" value="1.000000" />
+      </Property>
+      <Property name="PlatformExclusion" value="0" />
+      <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+          <Property name="Name" value="ATTACHMENT" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRADINGPOSTGAMETABLE0.ENTITY.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
   </Property>
 </Data>
 ]]
@@ -13732,62 +13756,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children" />
     </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="29">
-      <Property name="Name" value="CHAIR11" />
-      <Property name="NameHash" value="289507518" />
-      <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData">
-        <Property name="TransX" value="0.000000" />
-        <Property name="TransY" value="0.000000" />
-        <Property name="TransZ" value="0.000000" />
-        <Property name="RotX" value="0.000000" />
-        <Property name="RotY" value="113.000000" />
-        <Property name="RotZ" value="0.000000" />
-        <Property name="ScaleX" value="1.000000" />
-        <Property name="ScaleY" value="1.000000" />
-        <Property name="ScaleZ" value="1.000000" />
-      </Property>
-      <Property name="PlatformExclusion" value="0" />
-      <Property name="Attributes">
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
-          <Property name="Name" value="SCENEGRAPH" />
-          <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
-        </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-          <Property name="Name" value="EMBEDGEOMETRY" />
-          <Property name="Value" value="TRUE" />
-        </Property>
-      </Property>
-      <Property name="Children" />
-    </Property>
-    <Property name="Children" value="TkSceneNodeData" _index="30">
-      <Property name="Name" value="CHAIR12" />
-      <Property name="NameHash" value="2196892701" />
-      <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData">
-        <Property name="TransX" value="0.000000" />
-        <Property name="TransY" value="0.000000" />
-        <Property name="TransZ" value="0.000000" />
-        <Property name="RotX" value="0.000000" />
-        <Property name="RotY" value="108.000000" />
-        <Property name="RotZ" value="0.000000" />
-        <Property name="ScaleX" value="1.000000" />
-        <Property name="ScaleY" value="1.000000" />
-        <Property name="ScaleZ" value="1.000000" />
-      </Property>
-      <Property name="PlatformExclusion" value="0" />
-      <Property name="Attributes">
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
-          <Property name="Name" value="SCENEGRAPH" />
-          <Property name="Value" value="MODELS\ASTROSTATION\KORVAX\KORVAX_CHAIR_LOCATOR.SCENE.MBIN" />
-        </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-          <Property name="Name" value="EMBEDGEOMETRY" />
-          <Property name="Value" value="TRUE" />
-        </Property>
-      </Property>
-      <Property name="Children" />
-    </Property>
     <Property name="Children" value="TkSceneNodeData" _index="31">
       <Property name="Name" value="CHAIR13" />
       <Property name="NameHash" value="1987892019" />
@@ -14124,6 +14092,30 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property name="Children" value="TkSceneNodeData" _index="38">
+      <Property name="Name" value="TradingPostGameTable0" />
+      <Property name="NameHash" value="2421276917" />
+      <Property name="Type" value="LOCATOR" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="11.250000" />
+        <Property name="TransY" value="0.000000" />
+        <Property name="TransZ" value="-3.000000" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="-75.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="1.000000" />
+        <Property name="ScaleY" value="1.000000" />
+        <Property name="ScaleZ" value="1.000000" />
+      </Property>
+      <Property name="PlatformExclusion" value="0" />
+      <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+          <Property name="Name" value="ATTACHMENT" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRADINGPOSTGAMETABLE0.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -16643,6 +16635,30 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
           <Property name="Name" value="EMBEDGEOMETRY" />
           <Property name="Value" value="TRUE" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property name="Children" value="TkSceneNodeData" _index="31">
+      <Property name="Name" value="TradingPostGameTable0" />
+      <Property name="NameHash" value="2421276917" />
+      <Property name="Type" value="LOCATOR" />
+      <Property name="Transform" value="TkTransformData">
+        <Property name="TransX" value="-8.000000" />
+        <Property name="TransY" value="0.000000" />
+        <Property name="TransZ" value="-10.000000" />
+        <Property name="RotX" value="0.000000" />
+        <Property name="RotY" value="50.000000" />
+        <Property name="RotZ" value="0.000000" />
+        <Property name="ScaleX" value="1.000000" />
+        <Property name="ScaleY" value="1.000000" />
+        <Property name="ScaleZ" value="1.000000" />
+      </Property>
+      <Property name="PlatformExclusion" value="0" />
+      <Property name="Attributes">
+        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
+          <Property name="Name" value="ATTACHMENT" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRADINGPOSTGAMETABLE0.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />

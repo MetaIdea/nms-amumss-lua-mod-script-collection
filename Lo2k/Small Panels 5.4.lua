@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Small Panels 5.3.pak", 
+["MOD_FILENAME"] 			= "Small Panels 5.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k & Basbcoole",
-["NMS_VERSION"]				= "6.22",
+["NMS_VERSION"]				= "6.33",
 ["MOD_DESCRIPTION"]			= "This mod reduces the size of most game panels",
 ["MODIFICATIONS"] 			= 
 	{

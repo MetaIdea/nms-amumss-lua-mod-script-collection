@@ -10,7 +10,7 @@ REF_TO_REMOVE = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.nomad turret and engine scaled.pak',
+	MOD_FILENAME 		= 'No Mans Nomad',
 	MOD_AUTHOR			= 'lMonk',
 	NMS_VERSION			= '3.53',
 	MOD_DESCRIPTION		= [[Reduce turret scale for the Nomad exocraft (BIKE)
@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'MODELS\COMMON\VEHICLES\BIKE\BIKEPRES.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				INTEGER_TO_FLOAT	= 'FORCE',
 				SPECIAL_KEY_WORDS	= {'Name', 'Gun'},
@@ -56,7 +56,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}}}
 
 
-local Change_Table_Ref = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local Change_Table_Ref = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i=1,#REF_TO_REMOVE do
   local value = REF_TO_REMOVE[i]
@@ -68,4 +68,3 @@ for i=1,#REF_TO_REMOVE do
             }
   Change_Table_Ref[#Change_Table_Ref + 1] = temp_table
 end
-

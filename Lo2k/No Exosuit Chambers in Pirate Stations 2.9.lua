@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Exosuit Chambers in Pirate Stations 2.8.pak", 
+["MOD_FILENAME"] 			= "No Exosuit Chambers in Pirate Stations 2.9.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "6.22",
+["NMS_VERSION"]				= "6.33",
 ["MOD_DESCRIPTION"]			= "This mod removes exosuit chambers in Pirate Stations",
 ["MODIFICATIONS"] 			= 
 	{
