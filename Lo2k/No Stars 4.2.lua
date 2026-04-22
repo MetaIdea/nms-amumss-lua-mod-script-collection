@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-MOD_FILENAME    = "No Stars 4.1.pak", 
+MOD_FILENAME    = "No Stars 4.2.pak", 
 MOD_AUTHOR      = "Lo2k",
 LUA_AUTHOR      = "Lo2k",
-NMS_VERSION     = "6.33",
+NMS_VERSION     = "6.34",
 MOD_DESCRIPTION = "Completely removes stars in the sky",
 MODIFICATIONS   = 
 	{

@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Anti-Thalassophobia",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.30",
 ["MOD_DESCRIPTION"] = "Removes larger creatures which could be found in water",
 ["MODIFICATIONS"]   =
   {
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   },
 }
 
-local ReplaceCreatureTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
+local ReplaceCreatureTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 for i=1,#ReplaceCreature do
   local value = ReplaceCreature[i]

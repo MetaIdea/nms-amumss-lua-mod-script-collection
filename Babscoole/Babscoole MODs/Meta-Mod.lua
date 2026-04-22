@@ -542,7 +542,7 @@ QUICK_ACTION_MENU =
 ]],
       ["SCANEVENTTABLE"] =
 [[
-        <Property name="ScanEvents" value="GcScanEventData">
+        <Property name="Events" value="GcScanEventData">
           <Property name="Name" value="PLANET_FINDER" />
           <Property name="ForceInteraction" value="" />
           <Property name="UseSeasonDataAsInteraction" value="false" />
@@ -624,6 +624,7 @@ QUICK_ACTION_MENU =
             <Property name="NeverAllowAbandoned" value="false" />
             <Property name="AllowedToBePurpleWithoutAccess" value="true" />
             <Property name="RequireUndiscovered" value="false" />
+            <Property name="AlwaysAvailableInPirateStations" value="false" />
             <Property name="NeedsWaterPlanet" value="false" />
             <Property name="NeedsDeepWaterPlanet" value="false" />
             <Property name="NeedsPrimePlanet" value="false" />
@@ -696,6 +697,7 @@ QUICK_ACTION_MENU =
             <Property name="NeverAllowAbandoned" value="false" />
             <Property name="AllowedToBePurpleWithoutAccess" value="false" />
             <Property name="RequireUndiscovered" value="false" />
+            <Property name="AlwaysAvailableInPirateStations" value="false" />
             <Property name="NeedsWaterPlanet" value="false" />
             <Property name="NeedsDeepWaterPlanet" value="false" />
             <Property name="NeedsPrimePlanet" value="false" />
@@ -781,6 +783,11 @@ QUICK_ACTION_MENU =
             </Property>
             <Property name="AltId" value="" />
           </Property>
+					<Property name="RequireDefaultGameTableConfig" value="" />
+					<Property name="OverrideGameTableConfig" value="" />
+					<Property name="ClearGameTableConfigOverrideOnCompletion" value="false" />
+					<Property name="OverrideGameTableGameConfig" value="" />
+					<Property name="OverrideGameTableGameConfigOnCompletion" value="" />
         </Property>
 ]]
   },
@@ -1092,7 +1099,7 @@ end
 function GetQuickAction(TITLE, ANIM, ICON)
   return
 [[
-    <Property name="Emotes" value="GcPlayerEmote">
+    <Property name="Emotes" value="GcPlayerEmote" _id="]] .. TITLE .. [[">
       <Property name="Title" value="]] .. TITLE .. [[" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="false" />
@@ -1123,9 +1130,11 @@ function GetQuickAction(TITLE, ANIM, ICON)
           <Property name="WaveActive" value="true" />
           <Property name="FixedUpAxis" value="false" />
           <Property name="Transparent" value="false" />
+          <Property name="Additive" value="false" />
           <Property name="ModelFade" value="false" />
           <Property name="FadeInTime" value="0.200000" />
           <Property name="FadeOutTime" value="0.200000" />
+          <Property name="UseBaseColourForAll" value="false" />
         </Property>
         <Property name="DelayTime" value="0.000000" />
       </Property>
@@ -1588,7 +1597,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Meta-Mod",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.30",
 ["MODIFICATIONS"]   =
   {
     {
