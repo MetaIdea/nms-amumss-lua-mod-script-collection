@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "CorvetteParkingSpots"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "620"
+METADATA_NMS_VERSION    = "634"
 METADATA_MOD_DESC       = "This mod adds parking / docking spots for corvettes and matching teleporters to trading outposts and planetary archives."
 
 
@@ -18,8 +18,7 @@ METADATA_MOD_DESC       = "This mod adds parking / docking spots for corvettes a
 --------------------------------------------------
 
 FILE_MODELS_TRADINGPOST_COMMON =        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.SCENE.MBIN"
-FILE_MODELS_ARCHIVE_LAYOUT1 =           "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LARGEBUILDINGS\VYKEEN\PARTS\LAYOUT.SCENE.MBIN"
-FILE_MODELS_ARCHIVE_LAYOUT2 =           "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LARGEBUILDINGS\KORVAX\LAYOUT.SCENE.MBIN"
+FILE_MODELS_ARCHIVE_PLATFORM =          "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LARGEBUILDINGS\COMMON\MODULARPARTS\PLATFORM_B.SCENE.MBIN"
 
 -- template files (not modified)
 FILE_MODELS_DERELICT_ENTRANCE =         "MODELS\SPACE\POI\PARTS\DUNGEON_ENTRANCE.SCENE.MBIN"
@@ -132,25 +131,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 
                         Scene_MoveTeleport(18,16.6,2),
                         Scene_AddTeleport(),
-
-                        -- prepare changes for 2 layouts of archives
-                        Scene_MoveDocking(-150,50,0),
-                        Scene_MoveTeleport(-26,19,15),
-                        Scene_RotateTeleport(0,180,0),
                     },
                 },
 
                 {
                     --------------------------------------------------
-                    -- planetary archive layouts
+                    -- planetary archive common platform
                     --------------------------------------------------
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        FILE_MODELS_ARCHIVE_LAYOUT1,
-                        FILE_MODELS_ARCHIVE_LAYOUT2,
-                    },
+                    ["MBIN_FILE_SOURCE"] = FILE_MODELS_ARCHIVE_PLATFORM,
                     ["MXML_CHANGE_TABLE"] =
                     {
+                        Scene_MoveDocking(-140,30,0),
+                        Scene_MoveTeleport(3,1,8),
+                        Scene_RotateTeleport(0,270,0),
+                        
                         Scene_AddDocking(),
                         Scene_AddTeleport(),
                     },

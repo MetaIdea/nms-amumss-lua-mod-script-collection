@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "NoRustyTechClothes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "620"
+METADATA_NMS_VERSION    = "634"
 METADATA_MOD_DESC       = "This mod removes the rusty tech modules from selected Autophage clothing pieces available for the player"
 
 
@@ -41,6 +41,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {"Name","B2Chesttech",},
                             {"Name","B2tech1",},
                             {"Name","b2Techbelt",},
+
+                            -- optional "no skirt" variant
+                            --{"Name","B2BaseSkirt",},
 
                             {"Name","B3Tech",},
                             {"Name","b3Techbelt",},

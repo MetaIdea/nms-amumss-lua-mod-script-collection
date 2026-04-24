@@ -1,5 +1,5 @@
 -- Configuration constants
-local NMS_VERSION = "6.33"
+local NMS_VERSION = "6.34"
 local MOD_VERSION = "0"
 
 -- Scan timing constants (reduced for faster scanning)
