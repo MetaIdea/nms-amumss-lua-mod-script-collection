@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "CustomCorvetteInteriorModules"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "620"
+METADATA_NMS_VERSION    = "634"
 METADATA_MOD_DESC       = "This mod adds couple new functional interior modules for Corvette habs."
 
 

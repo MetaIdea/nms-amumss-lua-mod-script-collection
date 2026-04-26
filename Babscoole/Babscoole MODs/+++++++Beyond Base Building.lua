@@ -310,31 +310,31 @@ UNLIMITED_BUILPART_ID_TABLE = {"BASE_TERRARIUM", "BASE_AQUARIUM", "BASE_TOYSPHER
 -- Custom build-count limits
 CUSTOM_BUILDCOUNT_LIMITS =
 {
---{"ID",                PlanetLimit,      RegionLimit,      PlanetBaseLimit,      FreighterBaseLimit}
-  {"POWERLINE_HIDER",   0,                0,                1,                    1},        -- Electrical Cloaking Unit
-  {"NPCFRIGTERM",       0,                0,                10,                   10},       -- Fleet Command Room
-  {"NPCBUILDERTERM",    0,                0,                1,                    1},        -- Construction Terminal
-  {"NPCVEHICLETERM",    0,                0,                1,                    1},        -- Exocraft Terminal
-  {"NPCWEAPONTERM",     0,                0,                1,                    1},        -- Weapons Terminal
-  {"NPCSCIENCETERM",    0,                0,                1,                    1},        -- Science Terminal
-  {"NPCFARMTERM",       0,                0,                1,                    1},        -- Agricultural Terminal
-  {"BASECAPSULE",       0,                1,                0,                    0},        -- Base Salvage Capsule
-  {"SUMMON_GARAGE",     0,                9,                0,                    0},        -- Exocraft Summoning Station
-  {"GARAGE_B",          0,                9,                0,                    0},        -- Pilgrim Geobay
-  {"GARAGE_S",          0,                9,                0,                    0},        -- Nomad Geobay
-  {"GARAGE_M",          0,                9,                0,                    0},        -- Roamer Geobay
-  {"GARAGE_L",          0,                9,                0,                    0},        -- Colossus Geobay
-  {"GARAGE_SUB",        0,                9,                0,                    0},        -- Nautilon Geobay
-  {"GARAGE_MECH",       0,                9,                0,                    0},        -- Minotaur Geobay
-  {"BUILDSIGNAL",       0,                6,                0,                    0},        -- Signal Booster
-  {"BUILDBEACON",       0,                6,                0,                    0},        -- Save Beacon
-  {"BUILDSAVE",         0,                6,                0,                    0},        -- Save Point
-  {"MESSAGE",           0,                2,                0,                    0},        -- Communications Station
-  {"MESSAGEMODULE",     0,                1,                0,                    0},        -- Message Module
-  {"BLD_FIREPIT",       0,                6,                0,                    0},        -- Flaming Barrel
-  {"BUILDLANDINGPAD",   0,                0,                12,                   0},        -- Landing Pad
-  {"S_LANDINGZONE",     0,                0,                12,                   0},        -- Alternative Landing Pad
-  --{"DECALPATH",        0,                0,                0,                    0}        -- ?
+-- ID                 PlanetLimit RegionLimit PlanetBaseLimit FreighterBaseLimit CorvetteBaseLimit    Name
+  {"POWERLINE_HIDER", 0,          0,          1,              1,                 1},               -- Electrical Cloaking Unit
+  {"NPCFRIGTERM",     0,          0,          10,             10,                10},              -- Fleet Command Room
+  {"NPCBUILDERTERM",  0,          0,          1,              1,                 1},               -- Construction Terminal
+  {"NPCVEHICLETERM",  0,          0,          1,              1,                 1},               -- Exocraft Terminal
+  {"NPCWEAPONTERM",   0,          0,          1,              1,                 1},               -- Weapons Terminal
+  {"NPCSCIENCETERM",  0,          0,          1,              1,                 1},               -- Science Terminal
+  {"NPCFARMTERM",     0,          0,          1,              1,                 1},               -- Agricultural Terminal
+  {"BASECAPSULE",     0,          1,          0,              0,                 0},               -- Base Salvage Capsule
+  {"SUMMON_GARAGE",   0,          9,          0,              0,                 0},               -- Exocraft Summoning Station
+  {"GARAGE_B",        0,          9,          0,              0,                 0},               -- Pilgrim Geobay
+  {"GARAGE_S",        0,          9,          0,              0,                 0},               -- Nomad Geobay
+  {"GARAGE_M",        0,          9,          0,              0,                 0},               -- Roamer Geobay
+  {"GARAGE_L",        0,          9,          0,              0,                 0},               -- Colossus Geobay
+  {"GARAGE_SUB",      0,          9,          0,              0,                 0},               -- Nautilon Geobay
+  {"GARAGE_MECH",     0,          9,          0,              0,                 0},               -- Minotaur Geobay
+  {"BUILDSIGNAL",     0,          6,          0,              0,                 0},               -- Signal Booster
+  {"BUILDBEACON",     0,          6,          0,              0,                 0},               -- Save Beacon
+  {"BUILDSAVE",       0,          6,          0,              0,                 0},               -- Save Point
+  {"MESSAGE",         0,          2,          0,              0,                 0},               -- Communications Station
+  {"MESSAGEMODULE",   0,          1,          0,              0,                 0},               -- Message Module
+  {"BLD_FIREPIT",     0,          6,          0,              0,                 0},               -- Flaming Barrel
+  {"BUILDLANDINGPAD", 0,          0,          12,             0,                 0},               -- Landing Pad
+  {"S_LANDINGZONE",   0,          0,          12,             0,                 0},               -- Alternative Landing Pad
+  {"HOLO_DISCO_0",    0,          0,          0,              0,                 0},               --Wonder Projector
 }
 
 ------ NOT settings related tables end ------
@@ -569,6 +569,15 @@ https://www.nexusmods.com/nomanssky/mods/1096
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"CanPickUp", "true"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "GAMETABLE"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"BuildableOnSpaceBase", "true"},
+                {"BuildableOnPlanet",    "true"},
+                {"ShowInBuildMenu",      "true"},
               }
             },
           },
@@ -1007,6 +1016,7 @@ if NO_BUILDCOUNT_LIMIT then
         {"RegionLimit",        0},
         {"PlanetBaseLimit",    0},
         {"FreighterBaseLimit", 0},
+        {"CorvetteBaseLimit",  0},
       },
     }
 
@@ -1024,6 +1034,7 @@ else
     {
       {"PlanetBaseLimit",    0},
       {"FreighterBaseLimit", 0},
+      {"CorvetteBaseLimit",  0},
     },
   }
 
@@ -1041,6 +1052,7 @@ else
         {"RegionLimit",        0},
         {"PlanetBaseLimit",    0},
         {"FreighterBaseLimit", 0},
+        {"CorvetteBaseLimit",  0},
       },
     }
   end
@@ -1058,6 +1070,7 @@ for i = 1,#CUSTOM_BUILDCOUNT_LIMITS do
         {"RegionLimit",        tostring(CUSTOM_BUILDCOUNT_LIMITS[i][3])},
         {"PlanetBaseLimit",    tostring(CUSTOM_BUILDCOUNT_LIMITS[i][4])},
         {"FreighterBaseLimit", tostring(CUSTOM_BUILDCOUNT_LIMITS[i][5])},
+        {"CorvetteBaseLimit",  tostring(CUSTOM_BUILDCOUNT_LIMITS[i][6])},
       },
     }
 end
