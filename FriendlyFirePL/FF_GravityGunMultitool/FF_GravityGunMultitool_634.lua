@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "GravityGunMultitool"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "620"
+METADATA_NMS_VERSION    = "634"
 METADATA_MOD_DESC       = "This mod adds the Gravitino Coil (Gravity Gun) as stand-alone Multi-tool model. WARNING: make sure to equip a sacrificial Multi-tool before exchanging !!"
 
 
@@ -17,14 +17,15 @@ METADATA_MOD_DESC       = "This mod adds the Gravitino Coil (Gravity Gun) as sta
 -- files affected by the mod
 --------------------------------------------------
 
-FILE_MODELS_SWITCHMT_SCENE =                        "MODELS\COMMON\WEAPONS\MULTITOOL\SWITCHMULTITOOL.SCENE.MBIN"
-FILE_MODELS_SWITCHMT_DESCRIPTOR =                   "MODELS\COMMON\WEAPONS\MULTITOOL\SWITCHMULTITOOL.DESCRIPTOR.MBIN"
-FILE_MODELS_LARGECRATE_ENTITY =                     "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\LARGE_CRATE\ENTITIES\CRATE.ENTITY.MBIN"
-
 FILE_METADATA_REWARDTABLE =                         "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
 
--- new file
+FILE_MODELS_SWITCHMT_SCENE =                        "MODELS\COMMON\WEAPONS\MULTITOOL\SWITCHMULTITOOL.SCENE.MBIN"
+FILE_MODELS_SWITCHMT_DESCRIPTOR =                   "MODELS\COMMON\WEAPONS\MULTITOOL\SWITCHMULTITOOL.DESCRIPTOR.MBIN"
+FILE_MODELS_SCRAPYARD_SCENE =                       "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SCRAPYARD\SCRAPYARD.SCENE.MBIN"
+
 FILE_MODDED_GRAVITYGUN_MATERIAL =                   "MODELS\COMMON\WEAPONS\MULTITOOL\SWITCHMULTITOOL\GRAVITYGUNMAT.MATERIAL.MBIN"
+FILE_MODDED_LARGECRATE_SCENE =                      "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\LARGE_CRATE_GRAVGUN.SCENE.MBIN"
+FILE_MODDED_LARGECRATE_ENTITY =                     "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\LARGE_CRATE\ENTITIES\CRATE_GRAVGUN.ENTITY.MBIN"
 
 --------------------------------------------------
 -- vanilla template files (not modified)
@@ -32,6 +33,10 @@ FILE_MODDED_GRAVITYGUN_MATERIAL =                   "MODELS\COMMON\WEAPONS\MULTI
 
 FILE_VANILLA_GRAVITYGUN_SCENE =                     "MODELS\COMMON\WEAPONS\MULTITOOL\GRAVITYGUN.SCENE.MBIN"
 FILE_VANILLA_GRAVITYGUN_MATERIAL =                  "MODELS\COMMON\WEAPONS\MULTITOOL\GRAVITYGUN\GRAVITYGUNMAT.MATERIAL.MBIN"
+
+FILE_VANILLA_LARGECRATE_SCENE =                     "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\LARGE_CRATE.SCENE.MBIN"
+FILE_VANILLA_LARGECRATE_ENTITY =                    "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\LARGE_CRATE\ENTITIES\CRATE.ENTITY.MBIN"
+
 FILE_MODELS_BURIEDCACHE_ENTITY =                    "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRATE\UNDERGROUNDCRATE\ENTITIES\UNDERGROUNDCRATE.ENTITY.MBIN"
 
 
@@ -54,8 +59,13 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"]   =
             {
                 {
-                    -- create new material file
-                    ["MBIN_FILE_SOURCE"] = {{   FILE_VANILLA_GRAVITYGUN_MATERIAL,   FILE_MODDED_GRAVITYGUN_MATERIAL },}
+                    -- create new files
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        {   FILE_VANILLA_GRAVITYGUN_MATERIAL,       FILE_MODDED_GRAVITYGUN_MATERIAL     },
+                        {   FILE_VANILLA_LARGECRATE_SCENE,          FILE_MODDED_LARGECRATE_SCENE        },
+                        {   FILE_VANILLA_LARGECRATE_ENTITY,         FILE_MODDED_LARGECRATE_ENTITY       },
+                    }
                 },
 
                 {
@@ -243,13 +253,50 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             -- change other properties
                             ["SKW"] = {"Id","R_SWIT_GUN01",},
-                            ["VCT"] = {{"WeaponStatClass","Robot",},}
+                            ["VCT"] = {{"WeaponStatClass","Robot",},},
                         },
 
                         {
                             -- add couple more slots
                             ["SKW"] = {"Id","R_SWIT_GUN01","WeaponLayout","GcInventoryLayout",},
-                            ["VCT"] = {{"Slots",28,},}
+                            ["VCT"] = {{"Slots",28,},},
+                        },
+                    }
+                },
+
+                {
+                    --------------------------------------------------
+                    -- scrapyard scene MBIN
+                    --------------------------------------------------
+                    ["MBIN_FILE_SOURCE"] = FILE_MODELS_SCRAPYARD_SCENE,
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            -- replace crate with a modded one
+                            ["SKW"] = {"Name","RefLargeCrate31","Name","SCENEGRAPH",},
+                            ["VCT"] = {{"Value",FILE_MODDED_LARGECRATE_SCENE,},},
+                        },
+                    }
+                },
+
+                {
+                    --------------------------------------------------
+                    -- blue crate scene MBIN
+                    --------------------------------------------------
+                    ["MBIN_FILE_SOURCE"] = FILE_MODDED_LARGECRATE_SCENE,
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            -- replace material to change colour to blue
+                            ["SKW"] = {"Name","MATERIAL","Value","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\LARGE_CRATE\CRATE.MATERIAL.MBIN",},
+                            ["VCT"] = {{"Value","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\CRATEM\CRATE1.MATERIAL.MBIN",},},
+                            ["REPLACE_TYPE"] = "ALL",
+                        },
+
+                        {
+                            -- link new entity
+                            ["SKW"] = {"Name","Large_crate","Name","ATTACHMENT",},
+                            ["VCT"] = {{"Value",FILE_MODDED_LARGECRATE_ENTITY,},},
                         },
                     }
                 },
@@ -271,9 +318,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 
                 {
                     --------------------------------------------------
-                    -- large crate entity MBIN
+                    -- blue crate entity MBIN
                     --------------------------------------------------
-                    ["MBIN_FILE_SOURCE"] = FILE_MODELS_LARGECRATE_ENTITY,
+                    ["MBIN_FILE_SOURCE"] = FILE_MODDED_LARGECRATE_ENTITY,
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
