@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Daplokarus.V.2.5",
+["MOD_FILENAME"]  = "Daplokarus.V.2.6",
 ["MOD_AUTHOR"]    = "JJHookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.33",
+["NMS_VERSION"]   = "6.34",
 ["MODIFICATIONS"] =
     {
         {
@@ -54,158 +54,158 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-		<Property name="Table" value="GcCreatureData" _id="DIPLO">
-			<Property name="Id" value="DIPLO" />
-			<Property name="OnlySpawnWhenIdIsForced" value="false" />
-			<Property name="ForceType" value="GcCreatureTypes">
-				<Property name="CreatureType" value="None" />
-			</Property>
-			<Property name="RealType" value="GcCreatureTypes">
-				<Property name="CreatureType" value="None" />
-			</Property>
-			<Property name="EcoSystemCreature" value="false" />
-			<Property name="CanBeFemale" value="false" />
-			<Property name="Tags" />
-			<Property name="MoveArea" value="Ground" />
-			<Property name="MinScale" value="0.750000" />
-			<Property name="MaxScale" value="1.000000" />
-			<Property name="FurLengthModifierAtMinScale" value="1.000000" />
-			<Property name="FurLengthModifierAtMaxScale" value="1.000000" />
-			<Property name="FurChance" value="0.000000" />
-			<Property name="Rarity" value="GcCreatureRarity">
-				<Property name="CreatureRarity" value="Rare" />
-			</Property>
-			<Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier">
-				<Property name="CreatureRoleFrequencyModifier" value="Never" />
-			</Property>
-			<Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier">
-				<Property name="CreatureRoleFrequencyModifier" value="Normal" />
-			</Property>
-			<Property name="KillStatID" value="" />
-			<Property name="KillingBlowMessageID" value="" />
-			<Property name="EggType" value="DEFAULT" />
-			<Property name="Data">
-				<Property name="Data" value="GcCreatureMovementData" _index="0">
-					<Property name="GcCreatureMovementData">
-						<Property name="Anims">
-							<Property name="Anims" value="GcCreatureMoveAnimData" _index="0">
-								<Property name="Anim" value="WALK" />
-								<Property name="AnimLeft" value="LEFT" />
-								<Property name="AnimRight" value="RIGHT" />
-								<Property name="AnimSpeed" value="0.500000" />
-								<Property name="MinSpeedScale" value="0.300000" />
-								<Property name="MaxSpeedScale" value="1.300000" />
-								<Property name="MaxPredatorSpeedScale" value="1.800000" />
-								<Property name="MinPetSpeedScale" value="1.000000" />
-								<Property name="MaxPetSpeedScale" value="1.000000" />
-								<Property name="AnimMoveSpeed" value="0.000000" />
-								<Property name="AnimMoveSpeedCached" value="false" />
-							</Property>
-						</Property>
-						<Property name="MoveRange" value="100.000000" />
-						<Property name="MoveSpeedScale" value="1.000000" />
-						<Property name="TurnRadiusScale" value="1.000000" />
-						<Property name="HeightMin" value="2.000000" />
-						<Property name="HeightMax" value="256.000000" />
-						<Property name="LimitHeightRange" value="false" />
-						<Property name="HeightRangeMin" value="0.000000" />
-						<Property name="HeightRangeMax" value="0.000000" />
-						<Property name="HeightTime" value="5.000000" />
-						<Property name="Herd" value="false" />
-						<Property name="IgnoreRotationInPounce" value="false" />
-					</Property>
-				</Property>
-			</Property>
-			<Property name="PetBattlerTags" value="GcGameTablePetTag">
-				<Property name="PetTag" value="1065353216" />
-			</Property>
-			<Property name="CanBeUsedInPetBattler" value="false" />
-			<Property name="PetBattlerSelectionWeight" value="0.000000" />
-			<Property name="PetBattleFlyerExtraOffset" value="0.000000" />
-			<Property name="PetBattlerForcedAffinity" value="GcPetBattlerAffinity">
-				<Property name="PetBattlerAffinity" value="Lush" />
-			</Property>
-			<Property name="PetBattlerShouldSwellOnAttack" value="false" />
-			<Property name="PetBattlerNodesToHide" />
-			<Property name="FlyerOffsetOverrides" />
-			<Property name="MoveSets" />
-		</Property>
-		<Property name="Table" value="GcCreatureData" _id="DIPLOALIEN">
-			<Property name="Id" value="DIPLOALIEN" />
-			<Property name="OnlySpawnWhenIdIsForced" value="false" />
-			<Property name="ForceType" value="GcCreatureTypes">
-				<Property name="CreatureType" value="None" />
-			</Property>
-			<Property name="RealType" value="GcCreatureTypes">
-				<Property name="CreatureType" value="None" />
-			</Property>
-			<Property name="EcoSystemCreature" value="false" />
-			<Property name="CanBeFemale" value="false" />
-			<Property name="Tags" />
-			<Property name="MoveArea" value="Ground" />
-			<Property name="MinScale" value="0.750000" />
-			<Property name="MaxScale" value="1.000000" />
-			<Property name="FurLengthModifierAtMinScale" value="1.000000" />
-			<Property name="FurLengthModifierAtMaxScale" value="1.000000" />
-			<Property name="FurChance" value="0.000000" />
-			<Property name="Rarity" value="GcCreatureRarity">
-				<Property name="CreatureRarity" value="Rare" />
-			</Property>
-			<Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier">
-				<Property name="CreatureRoleFrequencyModifier" value="Normal" />
-			</Property>
-			<Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier">
-				<Property name="CreatureRoleFrequencyModifier" value="Normal" />
-			</Property>
-			<Property name="KillStatID" value="" />
-			<Property name="KillingBlowMessageID" value="" />
-			<Property name="EggType" value="DEFAULT" />
-			<Property name="Data">
-				<Property name="Data" value="GcCreatureMovementData" _index="0">
-					<Property name="GcCreatureMovementData">
-						<Property name="Anims">
-							<Property name="Anims" value="GcCreatureMoveAnimData" _index="0">
-								<Property name="Anim" value="WALK" />
-								<Property name="AnimLeft" value="LEFT" />
-								<Property name="AnimRight" value="RIGHT" />
-								<Property name="AnimSpeed" value="0.500000" />
-								<Property name="MinSpeedScale" value="0.300000" />
-								<Property name="MaxSpeedScale" value="1.300000" />
-								<Property name="MaxPredatorSpeedScale" value="1.800000" />
-								<Property name="MinPetSpeedScale" value="1.000000" />
-								<Property name="MaxPetSpeedScale" value="1.000000" />
-								<Property name="AnimMoveSpeed" value="0.000000" />
-								<Property name="AnimMoveSpeedCached" value="false" />
-							</Property>
-						</Property>
-						<Property name="MoveRange" value="100.000000" />
-						<Property name="MoveSpeedScale" value="1.000000" />
-						<Property name="TurnRadiusScale" value="1.000000" />
-						<Property name="HeightMin" value="2.000000" />
-						<Property name="HeightMax" value="256.000000" />
-						<Property name="LimitHeightRange" value="false" />
-						<Property name="HeightRangeMin" value="0.000000" />
-						<Property name="HeightRangeMax" value="0.000000" />
-						<Property name="HeightTime" value="5.000000" />
-						<Property name="Herd" value="false" />
-						<Property name="IgnoreRotationInPounce" value="false" />
-					</Property>
-				</Property>
-			</Property>
-			<Property name="PetBattlerTags" value="GcGameTablePetTag">
-				<Property name="PetTag" value="1065353216" />
-			</Property>
-			<Property name="CanBeUsedInPetBattler" value="false" />
-			<Property name="PetBattlerSelectionWeight" value="0.000000" />
-			<Property name="PetBattleFlyerExtraOffset" value="0.000000" />
-			<Property name="PetBattlerForcedAffinity" value="GcPetBattlerAffinity">
-				<Property name="PetBattlerAffinity" value="Lush" />
-			</Property>
-			<Property name="PetBattlerShouldSwellOnAttack" value="true" />
-			<Property name="PetBattlerNodesToHide" />
-			<Property name="FlyerOffsetOverrides" />
-			<Property name="MoveSets" />
-		</Property>
+    <Property name="Table" value="GcCreatureData" _id="DIPLO">
+      <Property name="Id" value="DIPLO" />
+      <Property name="OnlySpawnWhenIdIsForced" value="true" />
+      <Property name="ForceType" value="GcCreatureTypes">
+        <Property name="CreatureType" value="None" />
+      </Property>
+      <Property name="RealType" value="GcCreatureTypes">
+        <Property name="CreatureType" value="None" />
+      </Property>
+      <Property name="EcoSystemCreature" value="true" />
+      <Property name="CanBeFemale" value="true" />
+      <Property name="Tags" />
+      <Property name="MoveArea" value="Ground" />
+      <Property name="MinScale" value="0.750000" />
+      <Property name="MaxScale" value="1.000000" />
+      <Property name="FurLengthModifierAtMinScale" value="1.000000" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.000000" />
+      <Property name="FurChance" value="0.000000" />
+      <Property name="Rarity" value="GcCreatureRarity">
+        <Property name="CreatureRarity" value="Common" />
+      </Property>
+      <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier">
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+      </Property>
+      <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier">
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+      </Property>
+      <Property name="KillStatID" value="" />
+      <Property name="KillingBlowMessageID" value="" />
+      <Property name="EggType" value="DEFAULT" />
+      <Property name="Data">
+        <Property name="Data" value="GcCreatureMovementData" _index="0">
+          <Property name="GcCreatureMovementData">
+            <Property name="Anims">
+              <Property name="Anims" value="GcCreatureMoveAnimData" _index="0">
+                <Property name="Anim" value="WALK" />
+                <Property name="AnimLeft" value="LEFT" />
+                <Property name="AnimRight" value="RIGHT" />
+                <Property name="AnimSpeed" value="0.500000" />
+                <Property name="MinSpeedScale" value="0.300000" />
+                <Property name="MaxSpeedScale" value="1.300000" />
+                <Property name="MaxPredatorSpeedScale" value="1.800000" />
+                <Property name="MinPetSpeedScale" value="1.000000" />
+                <Property name="MaxPetSpeedScale" value="1.000000" />
+                <Property name="AnimMoveSpeed" value="0.000000" />
+                <Property name="AnimMoveSpeedCached" value="false" />
+              </Property>
+            </Property>
+            <Property name="MoveRange" value="100.000000" />
+            <Property name="MoveSpeedScale" value="1.000000" />
+            <Property name="TurnRadiusScale" value="1.000000" />
+            <Property name="HeightMin" value="2.000000" />
+            <Property name="HeightMax" value="256.000000" />
+            <Property name="LimitHeightRange" value="false" />
+            <Property name="HeightRangeMin" value="0.000000" />
+            <Property name="HeightRangeMax" value="0.000000" />
+            <Property name="HeightTime" value="5.000000" />
+            <Property name="Herd" value="false" />
+            <Property name="IgnoreRotationInPounce" value="false" />
+          </Property>
+        </Property>
+      </Property>
+      <Property name="PetBattlerTags" value="GcGameTablePetTag">
+        <Property name="PetTag" value="None" />
+      </Property>
+      <Property name="CanBeUsedInPetBattler" value="false" />
+      <Property name="PetBattlerSelectionWeight" value="1.000000" />
+      <Property name="PetBattleFlyerExtraOffset" value="0.000000" />
+      <Property name="PetBattlerForcedAffinity" value="GcPetBattlerAffinity">
+        <Property name="PetBattlerAffinity" value="Normal" />
+      </Property>
+      <Property name="PetBattlerShouldSwellOnAttack" value="false" />
+      <Property name="PetBattlerNodesToHide" />
+      <Property name="FlyerOffsetOverrides" />
+      <Property name="MoveSets" />
+    </Property>
+    <Property name="Table" value="GcCreatureData" _id="DIPLOALIEN">
+      <Property name="Id" value="DIPLOALIEN" />
+      <Property name="OnlySpawnWhenIdIsForced" value="true" />
+      <Property name="ForceType" value="GcCreatureTypes">
+        <Property name="CreatureType" value="None" />
+      </Property>
+      <Property name="RealType" value="GcCreatureTypes">
+        <Property name="CreatureType" value="None" />
+      </Property>
+      <Property name="EcoSystemCreature" value="true" />
+      <Property name="CanBeFemale" value="true" />
+      <Property name="Tags" />
+      <Property name="MoveArea" value="Ground" />
+      <Property name="MinScale" value="0.750000" />
+      <Property name="MaxScale" value="1.000000" />
+      <Property name="FurLengthModifierAtMinScale" value="1.000000" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.000000" />
+      <Property name="FurChance" value="0.000000" />
+      <Property name="Rarity" value="GcCreatureRarity">
+        <Property name="CreatureRarity" value="Common" />
+      </Property>
+      <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier">
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+      </Property>
+      <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier">
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+      </Property>
+      <Property name="KillStatID" value="" />
+      <Property name="KillingBlowMessageID" value="" />
+      <Property name="EggType" value="DEFAULT" />
+      <Property name="Data">
+        <Property name="Data" value="GcCreatureMovementData" _index="0">
+          <Property name="GcCreatureMovementData">
+            <Property name="Anims">
+              <Property name="Anims" value="GcCreatureMoveAnimData" _index="0">
+                <Property name="Anim" value="WALK" />
+                <Property name="AnimLeft" value="LEFT" />
+                <Property name="AnimRight" value="RIGHT" />
+                <Property name="AnimSpeed" value="0.500000" />
+                <Property name="MinSpeedScale" value="0.300000" />
+                <Property name="MaxSpeedScale" value="1.300000" />
+                <Property name="MaxPredatorSpeedScale" value="1.800000" />
+                <Property name="MinPetSpeedScale" value="1.000000" />
+                <Property name="MaxPetSpeedScale" value="1.000000" />
+                <Property name="AnimMoveSpeed" value="0.000000" />
+                <Property name="AnimMoveSpeedCached" value="false" />
+              </Property>
+            </Property>
+            <Property name="MoveRange" value="100.000000" />
+            <Property name="MoveSpeedScale" value="1.000000" />
+            <Property name="TurnRadiusScale" value="1.000000" />
+            <Property name="HeightMin" value="2.000000" />
+            <Property name="HeightMax" value="256.000000" />
+            <Property name="LimitHeightRange" value="false" />
+            <Property name="HeightRangeMin" value="0.000000" />
+            <Property name="HeightRangeMax" value="0.000000" />
+            <Property name="HeightTime" value="5.000000" />
+            <Property name="Herd" value="false" />
+            <Property name="IgnoreRotationInPounce" value="false" />
+          </Property>
+        </Property>
+      </Property>
+      <Property name="PetBattlerTags" value="GcGameTablePetTag">
+        <Property name="PetTag" value="139266" />
+      </Property>
+      <Property name="CanBeUsedInPetBattler" value="true" />
+      <Property name="PetBattlerSelectionWeight" value="1.000000" />
+      <Property name="PetBattleFlyerExtraOffset" value="0.000000" />
+      <Property name="PetBattlerForcedAffinity" value="GcPetBattlerAffinity">
+        <Property name="PetBattlerAffinity" value="Normal" />
+      </Property>
+      <Property name="PetBattlerShouldSwellOnAttack" value="false" />
+      <Property name="PetBattlerNodesToHide" />
+      <Property name="FlyerOffsetOverrides" />
+      <Property name="MoveSets" />
+    </Property>
 ]]
                         },
                     }
