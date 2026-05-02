@@ -66,8 +66,8 @@ KIBBLES_GROUPS = -- BASEBUILDINGTABLE GROUPS
 KIBBLES_LINKGRID = -- BASEBUILDINGTABLE LinkGridData
 {
     ["DECOR"] = [[
-        <Property name="Connection" value="GcBaseLinkGridConnectionData.xml">
-          <Property name="Network" value="GcLinkNetworkTypes.xml">
+        <Property name="Connection" value="GcBaseLinkGridConnectionData">
+          <Property name="Network" value="GcLinkNetworkTypes">
             <Property name="LinkNetworkType" value="Power" />
           </Property>
           <Property name="NetworkSubGroup" value="0" />
@@ -84,8 +84,8 @@ KIBBLES_LINKGRID = -- BASEBUILDINGTABLE LinkGridData
         <Property name="DependentConnections" />
 ]],
     ["BASIC"] = [[
-        <Property name="Connection" value="GcBaseLinkGridConnectionData.xml">
-          <Property name="Network" value="GcLinkNetworkTypes.xml">
+        <Property name="Connection" value="GcBaseLinkGridConnectionData">
+          <Property name="Network" value="GcLinkNetworkTypes">
             <Property name="LinkNetworkType" value="Power" />
           </Property>
           <Property name="NetworkSubGroup" value="4" />
@@ -102,8 +102,8 @@ KIBBLES_LINKGRID = -- BASEBUILDINGTABLE LinkGridData
         <Property name="DependentConnections" />
 ]],
     ["CUBEROOM"] = [[
-        <Property name="Connection" value="GcBaseLinkGridConnectionData.xml">
-          <Property name="Network" value="GcLinkNetworkTypes.xml">
+        <Property name="Connection" value="GcBaseLinkGridConnectionData">
+          <Property name="Network" value="GcLinkNetworkTypes">
             <Property name="LinkNetworkType" value="Power" />
           </Property>
           <Property name="NetworkSubGroup" value="3" />
@@ -120,8 +120,8 @@ KIBBLES_LINKGRID = -- BASEBUILDINGTABLE LinkGridData
         <Property name="DependentConnections" />
 ]],
     ["SPACECUBE"] = [[
-        <Property name="Connection" value="GcBaseLinkGridConnectionData.xml">
-          <Property name="Network" value="GcLinkNetworkTypes.xml">
+        <Property name="Connection" value="GcBaseLinkGridConnectionData">
+          <Property name="Network" value="GcLinkNetworkTypes">
             <Property name="LinkNetworkType" value="Power" />
           </Property>
           <Property name="NetworkSubGroup" value="4" />
@@ -138,8 +138,8 @@ KIBBLES_LINKGRID = -- BASEBUILDINGTABLE LinkGridData
         <Property name="DependentConnections" />
 ]],
     ["FARMING"] = [[
-        <Property name="Connection" value="GcBaseLinkGridConnectionData.xml">
-          <Property name="Network" value="GcLinkNetworkTypes.xml">
+        <Property name="Connection" value="GcBaseLinkGridConnectionData">
+          <Property name="Network" value="GcLinkNetworkTypes">
             <Property name="LinkNetworkType" value="PlantGrowth" />
           </Property>
           <Property name="NetworkSubGroup" value="0" />
@@ -156,8 +156,8 @@ KIBBLES_LINKGRID = -- BASEBUILDINGTABLE LinkGridData
         <Property name="DependentConnections" />
 ]],
     ["PLANTER"] = [[
-        <Property name="Connection" value="GcBaseLinkGridConnectionData.xml">
-          <Property name="Network" value="GcLinkNetworkTypes.xml">
+        <Property name="Connection" value="GcBaseLinkGridConnectionData">
+          <Property name="Network" value="GcLinkNetworkTypes">
             <Property name="LinkNetworkType" value="Power" />
           </Property>
           <Property name="NetworkSubGroup" value="8" />
@@ -174,8 +174,8 @@ KIBBLES_LINKGRID = -- BASEBUILDINGTABLE LinkGridData
         <Property name="DependentConnections" />
 ]],
     ["BATTERY"] = [[
-        <Property name="Connection" value="GcBaseLinkGridConnectionData.xml">
-          <Property name="Network" value="GcLinkNetworkTypes.xml">
+        <Property name="Connection" value="GcBaseLinkGridConnectionData">
+          <Property name="Network" value="GcLinkNetworkTypes">
             <Property name="LinkNetworkType" value="Power" />
           </Property>
           <Property name="NetworkSubGroup" value="0" />
@@ -202,6 +202,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCPNTTBLE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCPNTTBLE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/CENTRALPOINT/CENTRALPOINTTABLE.SCENE.MBIN",
@@ -245,6 +246,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCPNTCAGE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCPNTCAGE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/CENTRALPOINT/CENTRALPOINTCAGE.SCENE.MBIN",
@@ -288,6 +290,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXNPPCDESK",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXNPPCDESK_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/PARTS/PLANTER_COMMONDESK.SCENE.MBIN",
@@ -331,6 +334,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXNPDRCDSK",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXNPDRCDSK_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/PARTS/DRONE_COMMONDESK.SCENE.MBIN",
@@ -374,6 +378,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXNPCODESK",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXNPCODESK_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/PARTS/COMMONDESK.SCENE.MBIN",
@@ -417,6 +422,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXNPHECONT",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXNPHECONT_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/PARTS/HELMCONTROL.SCENE.MBIN",
@@ -460,6 +466,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCURSDESK",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCURSDESK_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/BRIDGE/CURVEDSIDEDESK.SCENE.MBIN",
@@ -503,6 +510,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXSMALMONI",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXSMALMONI_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/SHOPSMALLMONITORS.SCENE.MBIN",
@@ -546,6 +554,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBRENGINE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBRENGINE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/BRIDGE/BRIDGEENGINE.SCENE.MBIN",
@@ -589,6 +598,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCIRCDESK",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCIRCDESK_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/BRIDGE/CIRCULARDESK.SCENE.MBIN",
@@ -632,6 +642,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCPSITERM",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCPSITERM_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/CENTRALPOINT/PARTS/CP_SIDETERMINAL.SCENE.MBIN",
@@ -675,6 +686,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCPFLOCAP",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCPFLOCAP_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/CENTRALPOINT/PARTS/CP_FLOORCAP.SCENE.MBIN",
@@ -718,6 +730,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCRCHAMBR",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCRCHAMBR_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/CHAMBER.SCENE.MBIN",
@@ -761,6 +774,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXLBFRPLAT",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXLBFRPLAT_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LANDINGBAYS/FRONTPLATFORM.SCENE.MBIN",
@@ -804,6 +818,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXHOVETROL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXHOVETROL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/PROPS/HOVERTROLLEY.SCENE.MBIN",
@@ -847,6 +862,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCRDRAPE1",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCRDRAPE1_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/CONTROLROOMDRAPE1.SCENE.MBIN",
@@ -890,6 +906,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCRDRAPE2",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCRDRAPE2_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/CONTROLROOMDRAPE2.SCENE.MBIN",
@@ -933,6 +950,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXRSSCLOTH",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXRSSCLOTH_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/SHOPCLOTH.SCENE.MBIN",
@@ -976,6 +994,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBOOK1",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBOOK1_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/PROPS/BOOK_1.SCENE.MBIN",
@@ -1019,6 +1038,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCANNISTE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCANNISTE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/PROPS/CANNISTER.SCENE.MBIN",
@@ -1062,6 +1082,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCANNLARG",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCANNLARG_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/PROPS/CANNISTERLARGE.SCENE.MBIN",
@@ -1105,6 +1126,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCIRCUBOX",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCIRCUBOX_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/PROPS/CIRCUITBOX.SCENE.MBIN",
@@ -1148,6 +1170,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCRATE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCRATE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/PROPS/CRATE.SCENE.MBIN",
@@ -1191,6 +1214,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXHDDRIVE1",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXHDDRIVE1_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/PROPS/HARDDRIVE_1.SCENE.MBIN",
@@ -1234,6 +1258,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXLARGCANN",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXLARGCANN_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/PROPS/LARGECANNISTER.SCENE.MBIN",
@@ -1277,6 +1302,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXNPCANNIS",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXNPCANNIS_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/PARTS/CANNISTERS.SCENE.MBIN",
@@ -1320,6 +1346,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXNPFAN",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXNPFAN_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/PARTS/FAN.SCENE.MBIN",
@@ -1363,6 +1390,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCPMTMONI",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCPMTMONI_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/CENTRALPOINT/PARTS/CP_MAINTERMMONITOR.SCENE.MBIN",
@@ -1406,6 +1434,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXDSTATION",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXDSTATION_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LANDINGBAYS/DOCKSTATION.SCENE.MBIN",
@@ -1449,6 +1478,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXMECHCORE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXMECHCORE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/CORE/MECHANICALCORE.SCENE.MBIN",
@@ -1492,6 +1522,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXSTEAVENT",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXSTEAVENT_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/DETAILS/STEAMVENT.SCENE.MBIN",
@@ -1535,6 +1566,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCPFLCABL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCPFLCABL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/CENTRALPOINT/PARTS/CP_FLOORCABLES.SCENE.MBIN",
@@ -1578,6 +1610,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXANHEXPLO",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXANHEXPLO_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/COMPUTER/ANOMALY_HOLOEXPLORER.SCENE.MBIN",
@@ -1621,6 +1654,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXLBFLLITE",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXLBFLLITE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LANDINGBAYS/FLOORLIGHT1.SCENE.MBIN",
@@ -1664,6 +1698,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXRSFLSCRN",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXRSFLSCRN_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/FLOORSCREEN1.SCENE.MBIN",
@@ -1707,6 +1742,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXRSPISPIR",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXRSPISPIR_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/PILLARSPIRAL.SCENE.MBIN",
@@ -1750,6 +1786,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXRSPILDYE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXRSPILDYE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/PILLARDYE.SCENE.MBIN",
@@ -1793,6 +1830,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXSMSDLIGH",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXSMSDLIGH_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LANDINGBAYS/LANDINGLIGHT.SCENE.MBIN",
@@ -1836,6 +1874,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBALCHOOD",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBALCHOOD_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/BALCONYHOOD.SCENE.MBIN",
@@ -1879,6 +1918,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBLFRRBLK",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBLFRRBLK_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/BUILDINGFRONT/BUILDINGFRONTROOFBLOCK.SCENE.MBIN",
@@ -1922,6 +1962,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBLFRAIRV",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBLFRAIRV_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/BUILDINGFRONT/BUILDINGFRONTAIRVENT.SCENE.MBIN",
@@ -1965,6 +2006,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXWADETAIL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXWADETAIL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/MAINHALLWAY/PARTS/WALLDETAIL.SCENE.MBIN",
@@ -2008,6 +2050,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBLFRRAMP",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBLFRRAMP_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/BUILDINGFRONT/BUILDINGFRONTRAMP.SCENE.MBIN",
@@ -2051,6 +2094,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXRFSIDCAP",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXRFSIDCAP_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/MAINHALLWAY/ROOFSIDECAP.SCENE.MBIN",
@@ -2094,6 +2138,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXROBOARM",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXROBOARM_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/MAINHALLWAY/ROBOARM.SCENE.MBIN",
@@ -2137,6 +2182,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXRARMWALL",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXRARMWALL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/MAINHALLWAY/ROBOARMWALL.SCENE.MBIN",
@@ -2180,6 +2226,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCOMPUTER",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCOMPUTER_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/COMPUTER/COMPUTER.SCENE.MBIN",
@@ -2223,6 +2270,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXSHOPCOLU",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXSHOPCOLU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/CENTRALPOINT/SPECIALSHOPCOLUMN.SCENE.MBIN",
@@ -2266,6 +2314,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCRFKDOOR",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCRFKDOOR_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/FAKEDOOR.SCENE.MBIN",
@@ -2309,6 +2358,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXNPDOORWA",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXNPDOORWA_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/PARTS/DOORWAY.SCENE.MBIN",
@@ -2352,6 +2402,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXNPMSUPPO",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXNPMSUPPO_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/PARTS/MIDDLESUPPORT.SCENE.MBIN",
@@ -2395,6 +2446,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXMHSUPPOR",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXMHSUPPOR_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/MAINHALLWAY/PARTS/SUPPORT.SCENE.MBIN",
@@ -2438,6 +2490,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXPILLAR",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXPILLAR_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LANDINGBAYS/PILLAR.SCENE.MBIN",
@@ -2481,6 +2534,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXLIGHCOLU",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXLIGHCOLU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LIGHTING/LIGHTCOLLUMN.SCENE.MBIN",
@@ -2524,6 +2578,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXSLIGCOLU",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXSLIGCOLU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LIGHTING/SMALLLIGHTCOLLUMN.SCENE.MBIN",
@@ -2567,6 +2622,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXLALIPILL",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXLALIPILL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LEFTAREA/LIGHTPILLAR.SCENE.MBIN",
@@ -2610,6 +2666,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXLBPIWALL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXLBPIWALL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LANDINGBAYS/PIPEWALL.SCENE.MBIN",
@@ -2653,6 +2710,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXLARGTERM",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXLARGTERM_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/BRIDGE/LARGETERMINAL.SCENE.MBIN",
@@ -2696,6 +2754,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXNEXBANAL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXNEXBANAL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/TERMINALS/NEXUSBLUEPRINTANALYSER.SCENE.MBIN",
@@ -2739,6 +2798,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXNEXRTERM",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXNEXRTERM_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/TERMINALS/NEXUSRECIPETERMINAL.SCENE.MBIN",
@@ -2782,6 +2842,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXNEXSTERM",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXNEXSTERM_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/TERMINALS/NEXUSSEASONTERMINAL.SCENE.MBIN",
@@ -2825,6 +2886,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXLANDPAD1",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXLANDPAD1_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LANDINGBAYS/LANDINGPAD.SCENE.MBIN",
@@ -2868,6 +2930,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXLANDPAD2",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXLANDPAD2_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LANDINGPAD/LANDINGPAD.SCENE.MBIN",
@@ -2911,6 +2974,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCRPIPES",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCRPIPES_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/CONTROLROOMPIPES.SCENE.MBIN",
@@ -2954,6 +3018,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBACKRING",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBACKRING_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/NEXUSBACKRING.SCENE.MBIN",
@@ -2997,6 +3062,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXLANDSIGN",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXLANDSIGN_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LANDINGBAYS/LANDINGSIGN.SCENE.MBIN",
@@ -3040,6 +3106,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXTELEPORT",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXTELEPORT_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/TELEPORTERS/TELEPORTERA.SCENE.MBIN",
@@ -3083,6 +3150,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLGP1",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLGP1_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP1.SCENE.MBIN",
@@ -3126,6 +3194,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLP1S",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLP1S_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP1SMALL.SCENE.MBIN",
@@ -3169,6 +3238,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLGP2",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLGP2_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP2.SCENE.MBIN",
@@ -3212,6 +3282,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLP2S",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLP2S_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP2SMALL.SCENE.MBIN",
@@ -3255,6 +3326,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLGP3",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLGP3_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP3.SCENE.MBIN",
@@ -3298,6 +3370,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLP3S",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLP3S_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP3SMALL.SCENE.MBIN",
@@ -3341,6 +3414,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBVFEATR1",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBVFEATR1_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/VISTAFEATURE1.SCENE.MBIN",
@@ -3384,6 +3458,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBVFEATR2",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBVFEATR2_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/VISTAFEATURE2.SCENE.MBIN",
@@ -3427,6 +3502,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLGP5",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLGP5_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP5.SCENE.MBIN",
@@ -3470,6 +3546,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLP5S",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLP5S_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP5SMALL.SCENE.MBIN",
@@ -3513,6 +3590,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLGP6",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLGP6_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP6.SCENE.MBIN",
@@ -3556,6 +3634,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLP6S",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLP6S_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP6SMALL.SCENE.MBIN",
@@ -3599,6 +3678,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLGP7",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLGP7_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP7.SCENE.MBIN",
@@ -3642,6 +3722,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLP7S",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLP7S_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP7SMALL.SCENE.MBIN",
@@ -3685,6 +3766,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXRSSBLOCK",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXRSSBLOCK_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/SIDEBLOCK.SCENE.MBIN",
@@ -3728,6 +3810,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXHEAVPILL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXHEAVPILL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/HEAVYPILLAR.SCENE.MBIN",
@@ -3771,6 +3854,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXHEAVPILS",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXHEAVPILS_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/HEAVYPILLARSMALL.SCENE.MBIN",
@@ -3814,6 +3898,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXEXTERLEG",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXEXTERLEG_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/EXTERIORLEG/EXTERIORLEG.SCENE.MBIN",
@@ -3857,6 +3942,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXEXTERLGS",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXEXTERLGS_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/EXTERIORLEG/EXTERIORLEGSMALL.SCENE.MBIN",
@@ -3900,6 +3986,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBVPLATFM",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBVPLATFM_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/VISTAPLATFORM.SCENE.MBIN",
@@ -3943,6 +4030,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXLBLDAREA",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXLBLDAREA_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LANDINGBAYS/LANDINGAREA.SCENE.MBIN",
@@ -3986,6 +4074,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLGP8",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLGP8_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP8.SCENE.MBIN",
@@ -4029,6 +4118,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLP8S",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLP8S_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGEPROP8SMALL.SCENE.MBIN",
@@ -4072,6 +4162,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXVISTLGRI",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXVISTLGRI_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/SECTIONS/VISTALARGERINGS.SCENE.MBIN",
@@ -4115,6 +4206,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXTOWER",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXTOWER_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/TOWER/NEXUSTOWER.SCENE.MBIN",
@@ -4158,6 +4250,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXTOWERS",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXTOWERS_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/TOWER/NEXUSTOWERSMALL.SCENE.MBIN",
@@ -4201,6 +4294,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXTOWERTOP",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXTOWERTOP_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/TOWER/NEXUSTOWERTOP.SCENE.MBIN",
@@ -4244,6 +4338,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXRSARCHS",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXRSARCHS_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/ARCHSMALL.SCENE.MBIN",
@@ -4287,6 +4382,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBRIDROOM",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBRIDROOM_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/BRIDGE/BRIDGEROOM.SCENE.MBIN",
@@ -4330,6 +4426,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBACKWALL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBACKWALL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/BRIDGE/BACKWALL.SCENE.MBIN",
@@ -4373,6 +4470,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBLDFRONT",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBLDFRONT_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/BUILDINGFRONT/BUILDINGFRONT.SCENE.MBIN",
@@ -4416,6 +4514,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXBLFRWALL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXBLFRWALL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/BUILDINGFRONT/BUILDINGFRONTWALL.SCENE.MBIN",
@@ -4459,6 +4558,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCENPOINT",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCENPOINT_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/CENTRALPOINT/CENTRALPOINT.SCENE.MBIN",
@@ -4502,6 +4602,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXMIDDPLAT",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXMIDDPLAT_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/CENTRALPOINT/MIDDLEPLATFORM.SCENE.MBIN",
@@ -4545,6 +4646,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXLEFTAREA",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXLEFTAREA_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/LEFTAREA/LEFTAREA.SCENE.MBIN",
@@ -4588,6 +4690,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXHALLWAY",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXHALLWAY_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/MAINHALLWAY/HALLWAY.SCENE.MBIN",
@@ -4631,6 +4734,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXAIRLOCK",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXAIRLOCK_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/AIRLOCK.SCENE.MBIN",
@@ -4674,6 +4778,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXCONTROOM",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXCONTROOM_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/NADAPOLOROOM/CONTROLROOM.SCENE.MBIN",
@@ -4717,6 +4822,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXSPECSHOP",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXSPECSHOP_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/CENTRALPOINT/SPECIALSHOP.SCENE.MBIN",
@@ -4760,6 +4866,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXSHOPBIG",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXSHOPBIG_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/SHOPBIG.SCENE.MBIN",
@@ -4803,6 +4910,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXSHOPBIGC",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXSHOPBIGC_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/SHOPBIGCHEF.SCENE.MBIN",
@@ -4846,6 +4954,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXSHOPSMAL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXSHOPSMAL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/SHOPSMALL.SCENE.MBIN",
@@ -4889,6 +4998,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXEGGMACHI",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXEGGMACHI_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/RIGHTSECTION/EGGMACHINE.SCENE.MBIN",
@@ -4932,6 +5042,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFLORNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFLORNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_FLOOR.SCENE.MBIN",
@@ -4975,6 +5086,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFLORGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFLORGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_FLOOR_GLOW.SCENE.MBIN",
@@ -5018,6 +5130,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFLCUNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFLCUNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_FLOOR_CURVED.SCENE.MBIN",
@@ -5061,6 +5174,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFLCUGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFLCUGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_FLOOR_CURVED_GLOW.SCENE.MBIN",
@@ -5104,6 +5218,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFTRINEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFTRINEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_FLOOR_TRI.SCENE.MBIN",
@@ -5146,6 +5261,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFTRIGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFTRIGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_FLOOR_TRI_GLOW.SCENE.MBIN",
@@ -5188,6 +5304,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFTRQNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFTRQNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_FLOOR_TRI_QUARTER.SCENE.MBIN",
@@ -5230,6 +5347,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFTRQGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFTRQGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_FLOOR_TRI_QUARTER_GLOW.SCENE.MBIN",
@@ -5272,6 +5390,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFLGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFLGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_GLASS_FLOOR.SCENE.MBIN",
@@ -5315,6 +5434,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFLGLGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFLGLGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_GLASS_FLOOR_GLOW.SCENE.MBIN",
@@ -5358,6 +5478,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFSMLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFSMLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_FLOOR_QUARTER.SCENE.MBIN",
@@ -5401,6 +5522,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFSMLGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFSMLGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_FLOOR_QUARTER_GLOW.SCENE.MBIN",
@@ -5444,6 +5566,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFSCUNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFSCUNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_FLOOR_QUARTER_C.SCENE.MBIN",
@@ -5487,6 +5610,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFSCUGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFSCUGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_FLOOR_QUARTER_C_GLOW.SCENE.MBIN",
@@ -5530,6 +5654,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRAMPNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRAMPNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAMP.SCENE.MBIN",
@@ -5573,6 +5698,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRAMPGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRAMPGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAMP_GLOW.SCENE.MBIN",
@@ -5616,6 +5742,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRTHINEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRTHINEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAMP_THIN.SCENE.MBIN",
@@ -5659,6 +5786,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRTHIGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRTHIGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAMP_THIN_GLOW.SCENE.MBIN",
@@ -5702,6 +5830,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRCCUNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRCCUNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_ROOF_CORNER_C.SCENE.MBIN",
@@ -5745,6 +5874,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRCCUGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRCCUGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_ROOF_CORNER_C_GLOW.SCENE.MBIN",
@@ -5788,6 +5918,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPARCHNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPARCHNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_ARCH.SCENE.MBIN",
@@ -5831,6 +5962,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPARCHGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPARCHGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_ARCH_GLOW.SCENE.MBIN",
@@ -5874,6 +6006,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPAHLFNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPAHLFNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_ARCHHALF.SCENE.MBIN",
@@ -5917,6 +6050,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPAHLFGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPAHLFGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_ARCHHALF_GLOW.SCENE.MBIN",
@@ -5960,6 +6094,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWALLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWALLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL.SCENE.MBIN",
@@ -6003,6 +6138,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWALLGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWALLGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_GLOW.SCENE.MBIN",
@@ -6046,6 +6182,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWACUNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWACUNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_CURVED.SCENE.MBIN",
@@ -6089,6 +6226,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWACUGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWACUGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_CURVED_GLOW.SCENE.MBIN",
@@ -6132,6 +6270,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWHLFNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWHLFNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_HALF.SCENE.MBIN",
@@ -6175,6 +6314,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWHLFGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWHLFGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_HALF_GLOW.SCENE.MBIN",
@@ -6218,6 +6358,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWHCUNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWHCUNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_HALF_C.SCENE.MBIN",
@@ -6261,6 +6402,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWHCUGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWHCUGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_HALF_C_GLOW.SCENE.MBIN",
@@ -6304,6 +6446,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWSMLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWSMLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_SMALL.SCENE.MBIN",
@@ -6347,6 +6490,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWSMLGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWSMLGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_SMALL_GLOW.SCENE.MBIN",
@@ -6390,6 +6534,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWSCUNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWSCUNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_SMALL_C.SCENE.MBIN",
@@ -6433,6 +6578,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWSCUGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWSCUGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_SMALL_C_GLOW.SCENE.MBIN",
@@ -6476,6 +6622,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWSHLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWSHLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_SMALL_HALF.SCENE.MBIN",
@@ -6519,6 +6666,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWSHLGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWSHLGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_SMALL_HALF_GLOW.SCENE.MBIN",
@@ -6562,6 +6710,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWSHCNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWSHCNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_SMALL_HALF_C.SCENE.MBIN",
@@ -6605,6 +6754,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWSHCGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWSHCGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_SMALL_HALF_C_GLOW.SCENE.MBIN",
@@ -6648,6 +6798,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWWINNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWWINNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_WINDOW.SCENE.MBIN",
@@ -6691,6 +6842,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWWINGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWWINGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_WINDOW_GLOW.SCENE.MBIN",
@@ -6734,6 +6886,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWTRINEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWTRINEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_TRI.SCENE.MBIN",
@@ -6777,6 +6930,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWTRIGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWTRIGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_TRI_GLOW.SCENE.MBIN",
@@ -6820,6 +6974,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWDORNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWDORNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_DOOR.SCENE.MBIN",
@@ -6863,6 +7018,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWDORGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWDORGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_DOOR_GLOW.SCENE.MBIN",
@@ -6906,6 +7062,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWDHFNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWDHFNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_DOOR_HALF.SCENE.MBIN",
@@ -6949,6 +7106,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWDHFGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWDHFGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_DOOR_HALF_GLOW.SCENE.MBIN",
@@ -6992,6 +7150,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWDWNNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWDWNNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_DOORWINDOWL.SCENE.MBIN",
@@ -7035,6 +7194,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWDWNGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWDWNGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_WALL_DOORWINDOWL_GLOW.SCENE.MBIN",
@@ -7078,6 +7238,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRAILNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRAILNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAILING.SCENE.MBIN",
@@ -7121,6 +7282,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRAILGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRAILGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAILING_GLOW.SCENE.MBIN",
@@ -7164,6 +7326,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRAILBONEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRAILBONEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAILING_BOUNDARY.SCENE.MBIN",
@@ -7207,6 +7370,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRACUNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRACUNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAILING_CURVED.SCENE.MBIN",
@@ -7250,6 +7414,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRACUGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRACUGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAILING_CURVED_GLOW.SCENE.MBIN",
@@ -7293,6 +7458,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRACUBONEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRACUBONEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAILING_CURVED_BOUNDARY.SCENE.MBIN",
@@ -7336,6 +7502,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRSCUNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRSCUNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAILING_CURVED_SMALL.SCENE.MBIN",
@@ -7379,6 +7546,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRSCUGLNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRSCUGLNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAILING_CURVED_SMALL_GLOW.SCENE.MBIN",
@@ -7422,6 +7590,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRSCUBONEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRSCUBONEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAILING_CURVED_SMALL_BOUNDARY.SCENE.MBIN",
@@ -7465,6 +7634,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KPFTUSTNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KPFTUSTNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/PREFAB/NEXUS/NEXUS_TUBE_STRAIGHT.SCENE.MBIN",
@@ -7508,6 +7678,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KPFTUCONEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KPFTUCONEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/PREFAB/NEXUS/NEXUS_TUBE_CORNER.SCENE.MBIN",
@@ -7551,6 +7722,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KPFTUBTNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KPFTUBTNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/PREFAB/NEXUS/NEXUS_TUBE_T.SCENE.MBIN",
@@ -7594,6 +7766,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KPFTUBXNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KPFTUBXNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/PREFAB/NEXUS/NEXUS_TUBE_X.SCENE.MBIN",
@@ -7637,6 +7810,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KPFDOORNEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KPFDOORNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/PREFAB/NEXUS/NEXUS_TUBE_DOOR.SCENE.MBIN",
@@ -7680,6 +7854,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KPIPENEXU",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KPIPENEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/PIPES/NEXUS/NEXUS_PIPE_REF.SCENE.MBIN",
@@ -7723,6 +7898,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSHIPSALV",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSHIPSALV_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/SHIPSALVAGETERMINAL.SCENE.MBIN",
@@ -7766,6 +7942,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KNXMAIRLOCK",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KNXMAIRLOCK_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/NEXUS/PARTS/DOORS/MAINAIRLOCK.SCENE.MBIN",
@@ -7809,6 +7986,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPASTEBEAC",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPASTEBEAC_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/ASTEROID_BEACONREF.SCENE.MBIN",
@@ -7852,6 +8030,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPATLBEAC1",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPATLBEAC1_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/ATLAS_BEACON.SCENE.MBIN",
@@ -7895,6 +8074,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPCHARGBAR",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPCHARGBAR_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/CHARGEBARREF.SCENE.MBIN",
@@ -7938,6 +8118,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPCRYSTAL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPCRYSTAL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/CRYSTAL.SCENE.MBIN",
@@ -7981,6 +8162,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPCUBEPOI",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPCUBEPOI_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/CUBE_POIREF.SCENE.MBIN",
@@ -8024,6 +8206,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPEYE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPEYE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/EYE.SCENE.MBIN",
@@ -8067,6 +8250,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPGATEPOI",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPGATEPOI_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/GATE_POI.SCENE.MBIN",
@@ -8110,6 +8294,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPGEKHEAD",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPGEKHEAD_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/GEK_HEAD.SCENE.MBIN",
@@ -8153,6 +8338,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPLINEGEO",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPLINEGEO_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/LINEGEO.SCENE.MBIN",
@@ -8196,6 +8382,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPPILLAPOI",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPPILLAPOI_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/PILLARPOIREF.SCENE.MBIN",
@@ -8239,6 +8426,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPSKULL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPSKULL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/SKULL.SCENE.MBIN",
@@ -8282,6 +8470,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPSKCRYST1",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPSKCRYST1_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/SKULLCRYSTAL01REF.SCENE.MBIN",
@@ -8325,6 +8514,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPPRISON",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPPRISON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/SPACE_PRISON.SCENE.MBIN",
@@ -8368,6 +8558,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPCLOCK",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPCLOCK_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/SPACECLOCK.SCENE.MBIN",
@@ -8411,6 +8602,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPEGG",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPEGG_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/SPACEEGG.SCENE.MBIN",
@@ -8454,6 +8646,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPGRABBY",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPGRABBY_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/SPACEGRABBY.SCENE.MBIN",
@@ -8497,6 +8690,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPGYROSCOP",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPGYROSCOP_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/SPACEGYROSCOPE.SCENE.MBIN",
@@ -8540,6 +8734,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPWARRSILO",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPWARRSILO_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/WARRIORSILOS.SCENE.MBIN",
@@ -8583,6 +8778,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPWOBJECT2",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPWOBJECT2_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/WEIRDOBJECT2.SCENE.MBIN",
@@ -8626,6 +8822,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPWOBJECT3",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPWOBJECT3_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/WEIRDOBJECT3REF.SCENE.MBIN",
@@ -8669,6 +8866,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KSPWOBJECT5",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KSPWOBJECT5_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/SPACE/POI/WEIRDOBJECT5REF.SCENE.MBIN",
@@ -8712,6 +8910,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTSPOTRED",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTSPOTRED_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTSPOTR.SCENE.MBIN",
@@ -8755,6 +8954,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTSPOTORAN",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTSPOTORAN_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTSPOTO.SCENE.MBIN",
@@ -8798,6 +8998,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTSPOTYELL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTSPOTYELL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTSPOTY.SCENE.MBIN",
@@ -8841,6 +9042,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTSPOTGREE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTSPOTGREE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTSPOTG.SCENE.MBIN",
@@ -8884,6 +9086,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTSPOTTEAL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTSPOTTEAL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTSPOTT.SCENE.MBIN",
@@ -8927,6 +9130,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTSPOTBLUE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTSPOTBLUE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTSPOTB.SCENE.MBIN",
@@ -8970,6 +9174,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTSPOTPINK",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTSPOTPINK_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTSPOTP.SCENE.MBIN",
@@ -9013,6 +9218,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTSPOTWHIT",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTSPOTWHIT_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTSPOTW.SCENE.MBIN",
@@ -9056,6 +9262,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTAMBIRED",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTAMBIRED_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTAMBR.SCENE.MBIN",
@@ -9099,6 +9306,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTAMBIORAN",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTAMBIORAN_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTAMBO.SCENE.MBIN",
@@ -9142,6 +9350,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTAMBIYELL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTAMBIYELL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTAMBY.SCENE.MBIN",
@@ -9185,6 +9394,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTAMBIGREE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTAMBIGREE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTAMBG.SCENE.MBIN",
@@ -9228,6 +9438,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTAMBITEAL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTAMBITEAL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTAMBT.SCENE.MBIN",
@@ -9271,6 +9482,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTAMBIBLUE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTAMBIBLUE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTAMBB.SCENE.MBIN",
@@ -9314,6 +9526,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTAMBIPINK",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTAMBIPINK_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTAMBP.SCENE.MBIN",
@@ -9357,6 +9570,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTAMBIWHIT",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTAMBIWHIT_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTAMBW.SCENE.MBIN",
@@ -9400,6 +9614,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTWALLRED",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTWALLRED_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTWALLR.SCENE.MBIN",
@@ -9443,6 +9658,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTWALLORAN",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTWALLORAN_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTWALLO.SCENE.MBIN",
@@ -9486,6 +9702,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTWALLYELL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTWALLYELL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTWALLY.SCENE.MBIN",
@@ -9529,6 +9746,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTWALLGREE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTWALLGREE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTWALLG.SCENE.MBIN",
@@ -9572,6 +9790,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTWALLTEAL",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTWALLTEAL_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTWALLT.SCENE.MBIN",
@@ -9615,6 +9834,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTWALLBLUE",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTWALLBLUE_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTWALLB.SCENE.MBIN",
@@ -9658,6 +9878,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTWALLPINK",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTWALLPINK_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTWALLP.SCENE.MBIN",
@@ -9701,6 +9922,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KLTWALLWHIT",
+	["Bypass"] = false,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KLTWALLWHIT_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/LIGHTS/LTWALLW.SCENE.MBIN",
@@ -9744,6 +9966,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFLORTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFLORTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_FLOOR.SCENE.MBIN",
@@ -9787,6 +10010,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFTRITRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFTRITRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_FLOOR_TRI.SCENE.MBIN",
@@ -9830,6 +10054,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFTRQTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFTRQTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_FLOOR_TRI_QUARTER.SCENE.MBIN",
@@ -9873,6 +10098,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFGLPTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFGLPTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_GFLOOR.SCENE.MBIN",
@@ -9916,6 +10142,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFSMLTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFSMLTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_FLOOR_QUARTER.SCENE.MBIN",
@@ -9959,6 +10186,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRAMPTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRAMPTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_RAMP.SCENE.MBIN",
@@ -10007,6 +10235,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRTHITRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRTHITRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_RAMP_THIN.SCENE.MBIN",
@@ -10055,6 +10284,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPROOFTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPROOFTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_ROOF_TOP.SCENE.MBIN",
@@ -10098,6 +10328,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRMIDTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRMIDTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_ROOF_MIDDLE.SCENE.MBIN",
@@ -10146,6 +10377,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRCORTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRCORTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_ROOF_CORNER.SCENE.MBIN",
@@ -10194,6 +10426,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPRCINTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRCINTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_ROOF_CORNERINNER.SCENE.MBIN",
@@ -10242,6 +10475,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPARCHTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPARCHTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_WALL_ARCH.SCENE.MBIN",
@@ -10285,6 +10519,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPAHLFTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPAHLFTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_WALL_ARCHHALF.SCENE.MBIN",
@@ -10328,6 +10563,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWALLTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWALLTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_WALL.SCENE.MBIN",
@@ -10371,6 +10607,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWHLFTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWHLFTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_WALL_HALF.SCENE.MBIN",
@@ -10414,6 +10651,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWSMLTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWSMLTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_WALL_SMALL.SCENE.MBIN",
@@ -10457,6 +10695,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWSHLTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWSHLTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_WALL_SMALL_HALF.SCENE.MBIN",
@@ -10500,6 +10739,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWWINTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWWINTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_WALL_WINDOW.SCENE.MBIN",
@@ -10548,6 +10788,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWTRITRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWTRITRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_WALL_TRI.SCENE.MBIN",
@@ -10591,6 +10832,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWDORTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWDORTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_WALL_DOOR.SCENE.MBIN",
@@ -10634,6 +10876,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWDHFTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWDHFTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_WALL_DOOR_HALF.SCENE.MBIN",
@@ -10677,6 +10920,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPGDORTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPGDORTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_GARAGEDOOR.SCENE.MBIN",
@@ -10720,6 +10964,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWDWNTRON",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWDWNTRON_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/TRON/BASIC_WALL_DOORWINDOWL.SCENE.MBIN",
@@ -10768,6 +11013,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPFLORCHRO",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPFLORCHRO_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/CHROMA/CHROMA_FLOOR.SCENE.MBIN",
@@ -10811,6 +11057,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     {
         ["OBJECT"] = {
             ["ID"] = "KBPWALLCHRO",
+	["Bypass"] = true,
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPWALLCHRO_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
             ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/CHROMA/CHROMA_WALL.SCENE.MBIN",
@@ -10855,6 +11102,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
         ["OBJECT"] = {
             ["ID"] = "KPFTUCAPNEXU",
             ["Style"] = "None",
+	["Bypass"] = true,
             ["Model"] = "CUSTOMMODELS/KIBBLES/PREFAB/NEXUS/NEXUS_TUBE_CAP.SCENE.MBIN",
             ["IsAux"] = "True",
             ["Connection"] = "DECOR",
@@ -10864,6 +11112,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
         ["OBJECT"] = {
             ["ID"] = "KPIPELNEXU",
             ["Style"] = "None",
+	["Bypass"] = true,
             ["Model"] = "CUSTOMMODELS/KIBBLES/PIPES/NEXUS/NEXUS_PIPE_L_REF.SCENE.MBIN",
             ["IsAux"] = "True",
             ["Connection"] = "DECOR",
@@ -10873,6 +11122,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
         ["OBJECT"] = {
             ["ID"] = "KPIPETNEXU",
             ["Style"] = "None",
+	["Bypass"] = true,
             ["Model"] = "CUSTOMMODELS/KIBBLES/PIPES/NEXUS/NEXUS_PIPE_T.SCENE.MBIN",
             ["IsAux"] = "True",
             ["Connection"] = "DECOR",
@@ -10882,6 +11132,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
         ["OBJECT"] = {
             ["ID"] = "KPIPEXNEXU",
             ["Style"] = "None",
+	["Bypass"] = true,
             ["Model"] = "CUSTOMMODELS/KIBBLES/PIPES/NEXUS/NEXUS_PIPE_X.SCENE.MBIN",
             ["IsAux"] = "True",
             ["Connection"] = "DECOR",
@@ -10891,6 +11142,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
         ["OBJECT"] = {
             ["ID"] = "KPIPESTNEXU",
             ["Style"] = "None",
+	["Bypass"] = true,
             ["Model"] = "CUSTOMMODELS/KIBBLES/PIPES/NEXUS/NEXUS_PIPE_STAR.SCENE.MBIN",
             ["IsAux"] = "True",
             ["Connection"] = "DECOR",
@@ -10900,6 +11152,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
         ["OBJECT"] = {
             ["ID"] = "KPIPESHNEXU",
             ["Style"] = "None",
+	["Bypass"] = true,
             ["Model"] = "CUSTOMMODELS/KIBBLES/PIPES/NEXUS/NEXUS_PIPE_STARHALF.SCENE.MBIN",
             ["IsAux"] = "True",
             ["Connection"] = "DECOR",
@@ -10909,6 +11162,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
         ["OBJECT"] = {
             ["ID"] = "KPIPE3CNEXU",
             ["Style"] = "None",
+	["Bypass"] = true,
             ["Model"] = "CUSTOMMODELS/KIBBLES/PIPES/NEXUS/NEXUS_PIPE_3CORNER.SCENE.MBIN",
             ["IsAux"] = "True",
             ["Connection"] = "DECOR",
@@ -10918,6 +11172,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
         ["OBJECT"] = {
             ["ID"] = "KPIPE4CNEXU",
             ["Style"] = "None",
+	["Bypass"] = true,
             ["Model"] = "CUSTOMMODELS/KIBBLES/PIPES/NEXUS/NEXUS_PIPE_4CORNER.SCENE.MBIN",
             ["IsAux"] = "True",
             ["Connection"] = "DECOR",
@@ -10925,6 +11180,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     }
 }
 
+BYPASS_SCENE = [[CUSTOMMODELS/SC_HUBFLAG/DECALS/BYPASS/BYPASSDECAL.SCENE.MBIN]]
 math.randomseed(os.time())
 function GetBaseBuildingCost(ID, POPIN)
 BUILDING_COST =
@@ -10971,7 +11227,7 @@ BUILDING_COST =
       <Property name="InactivePhysicsComponents" value="15" />]],
 }
 return [[
-    <Property value="GcBaseBuildingEntryCosts.xml">
+    <Property value="GcBaseBuildingEntryCosts">
       <Property name="ID" value="]] .. ID .. [[" />
 ]] .. BUILDING_COST[POPIN] .. [[
     </Property>
@@ -10982,17 +11238,17 @@ function GetGroupData(ID, NAME, ICON, CHILDREN)
 SUBGROUP_INJECT = ""
 for _,n in pairs(CHILDREN) do
     SUBGROUP_INJECT = SUBGROUP_INJECT .. [[
-        <Property value="GcBaseBuildingSubGroup.xml">
+        <Property value="GcBaseBuildingSubGroup" _id="]] .. n["ID"] .. [[">
           <Property name="Id" value="]] .. n["ID"] .. [[" />
           <Property name="Name" value="]] .. string.upper(n["Name"]) .. [[" />
         </Property>
 ]]
 end
 return [[
-    <Property value="GcBaseBuildingGroup.xml">
+		<Property name="Groups" value="GcBaseBuildingGroup" _id="]] .. ID .. [[">
       <Property name="ID" value="]] .. ID .. [[" />
       <Property name="Name" value="]] .. string.upper(NAME) .. [[" />
-      <Property name="Icon" value="TkTextureResource.xml">
+      <Property name="Icon" value="TkTextureResource">
         <Property name="Filename" value="]] .. ICON .. [[" />
       </Property>
       <Property name="DefaultColourIdx" value="0" />
@@ -11005,9 +11261,7 @@ end
 
 function GetKnownProducts(ID)
 return [[
-<Property value="NMSString0x10.xml">
-<Property name="Value" value="]] .. ID .. [[" />
-</Property>
+<Property name="KnownProducts" value="]] .. ID .. [[" />
 ]]
 end
 
@@ -11015,7 +11269,9 @@ function GetBaseBuildingObject(ID, PLACEMENT, STYLE, DTYPE, PLACE, ISDECOR, BIOM
 GROUP_INJECT = ""
 POWER_INJECT = ""
 COMPOSIT_INJECT = ""
+SINGLEPART = ""
 POWER_INJECT = KIBBLES_LINKGRID[POWER]
+if PLACEMENT == "" then SINGLEPART = "_" .. ID end
 
 if BUILD_ANYWHERE then
     FREIGHTER = "True"
@@ -11037,7 +11293,7 @@ for _,n in pairs(GROUPS) do
     end
     if TOP_GROUP ~= "" then
     GROUP_INJECT = GROUP_INJECT .. [[
-<Property value="GcBaseBuildingEntryGroup.xml">
+<Property value="GcBaseBuildingEntryGroup">
 <Property name="Group" value="]] .. TOP_GROUP .. [[" />
 <Property name="SubGroupName" value="]] .. n .. [[" />
 <Property name="SubGroup" value="0" />
@@ -11050,34 +11306,31 @@ end
 for _,w in pairs(COMPOSIT) do
 	if COMPOSIT ~= "" then
 	COMPOSIT_INJECT = COMPOSIT_INJECT .. [[
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="]] .. w .. [[" />
-        </Property>
-]]
+<Property name="CompositePartObjectIDs" value="]] .. w .. [[" />]]
 	end
 end
 
 return [[
-    <Property value="GcBaseBuildingEntry.xml">
+    <Property name="Objects" value="GcBaseBuildingEntry" _id="]] .. ID .. [[">
       <Property name="ID" value="]] .. ID .. [[" />
       <Property name="IsTemporary" value="False" />
       <Property name="IsFromModFolder" value="True" />
-      <Property name="Style" value="GcBaseBuildingPartStyle.xml">
+      <Property name="Style" value="GcBaseBuildingPartStyle">
         <Property name="Style" value="]] .. STYLE .. [[" />
       </Property>
-      <Property name="PlacementScene" value="TkModelResource.xml">
+      <Property name="PlacementScene" value="TkModelResource">
         <Property name="Filename" value="]] .. PLACEMENT .. [[" />
-        <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResHandle" value="GcResource">
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
-      <Property name="SinglePartID" value="" />
-      <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes.xml">
+      <Property name="SinglePartID" value="]] .. SINGLEPART .. [[" />
+      <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes">
         <Property name="BaseBuildingDecorationType" value="]] .. DTYPE .. [[" />
       </Property>
       <Property name="IsPlaceable" value="]] .. PLACE .. [[" />
       <Property name="IsDecoration" value="]] .. ISDECOR .. [[" />
-      <Property name="Biome" value="GcBiomeType.xml">
+      <Property name="Biome" value="GcBiomeType">
         <Property name="Biome" value="]] .. BIOME .. [[" />
       </Property>
       <Property name="BuildableOnPlanetBase" value="True" />
@@ -11119,16 +11372,16 @@ return [[
       <Property name="MinimumDeleteDistance" value="1" />
       <Property name="IsSealed" value="]] .. SEAL .. [[" />
       <Property name="CloseMenuAfterBuild" value="False" />
-      <Property name="LinkGridData" value="GcBaseLinkGridData.xml">
+      <Property name="LinkGridData" value="GcBaseLinkGridData">
 ]] .. POWER_INJECT .. [[
       </Property>
       <Property name="GhostsCountOverride" value="2" />
       <Property name="ShowGhosts" value="True" />
       <Property name="SnappingDistanceOverride" value="]] .. SNAP_SHORT .. [[" />
       <Property name="RegionSpawnLOD" value="1" />
-      <Property name="NPCInteractionScene" value="TkModelResource.xml">
+      <Property name="NPCInteractionScene" value="TkModelResource">
         <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResHandle" value="GcResource">
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
@@ -11153,9 +11406,9 @@ end
 INGRED_INJECT = ""
 for _,n in pairs(INGRED) do
     INGRED_INJECT = INGRED_INJECT .. [[
-        <Property value="GcTechnologyRequirement.xml">
+        <Property value="GcTechnologyRequirement">
           <Property name="ID" value="]] .. n["ID"] .. [[" />
-          <Property name="Type" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType">
             <Property name="InventoryType" value="]] .. n["InventoryType"] .. [[" />
           </Property>
           <Property name="Amount" value="]] .. n["Amount"] .. [[" />
@@ -11163,54 +11416,50 @@ for _,n in pairs(INGRED) do
 ]]
 end
 return [[
-    <Property value="GcProductData.xml">
+    <Property value="GcProductData" _id="]] .. ID .. [[">
       <Property name="ID" value="]] .. ID .. [[" />
       <Property name="Name" value="]] .. NAMEUP_INJECT .. [[" />
       <Property name="NameLower" value="]] .. NAMEL .. [[" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. SUBTITLE_INJECT .. [[" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. DESCRIPT .. [[" />
-      </Property>
+      <Property name="Subtitle" value="]] .. SUBTITLE_INJECT .. [[" />
+      <Property name="Description" value="]] .. DESCRIPT .. [[" />
       <Property name="Hint" value="" />
       <Property name="GroupID" value="" />
-      <Property name="DebrisFile" value="TkModelResource.xml">
+      <Property name="DebrisFile" value="TkModelResource">
         <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
-        <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResHandle" value="GcResource">
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
       <Property name="BaseValue" value="1" />
       <Property name="Level" value="0" />
-      <Property name="Icon" value="TkTextureResource.xml">
+      <Property name="Icon" value="TkTextureResource">
         <Property name="Filename" value="]] .. ICON_INJECT .. [[" />
-        <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResHandle" value="GcResource">
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
-      <Property name="HeroIcon" value="TkTextureResource.xml">
+      <Property name="HeroIcon" value="TkTextureResource">
         <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResHandle" value="GcResource">
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
-      <Property name="Colour" value="Colour.xml">
+      <Property name="Colour" value="Colour">
         <Property name="R" value="0.17254902" />
         <Property name="G" value="0.4862745" />
         <Property name="B" value="0.62352943" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="Category" value="GcRealitySubstanceCategory.xml">
+      <Property name="Category" value="GcRealitySubstanceCategory">
         <Property name="SubstanceCategory" value="BuildingPart" />
       </Property>
-      <Property name="Type" value="GcProductCategory.xml">
+      <Property name="Type" value="GcProductCategory">
         <Property name="ProductCategory" value="BuildingPart" />
       </Property>
-      <Property name="Rarity" value="GcRarity.xml">
+      <Property name="Rarity" value="GcRarity">
         <Property name="Rarity" value="Common" />
       </Property>
-      <Property name="Legality" value="GcLegality.xml">
+      <Property name="Legality" value="GcLegality">
         <Property name="Legality" value="Legal" />
       </Property>
       <Property name="Consumable" value="False" />
@@ -11223,7 +11472,7 @@ return [[
 ]] .. INGRED_INJECT .. [[
       </Property>
       <Property name="AltRequirements" />
-      <Property name="Cost" value="GcItemPriceModifiers.xml">
+      <Property name="Cost" value="GcItemPriceModifiers">
         <Property name="SpaceStationMarkup" value="0" />
         <Property name="LowPriceMod" value="0" />
         <Property name="HighPriceMod" value="0" />
@@ -11234,7 +11483,7 @@ return [[
       <Property name="SpecificChargeOnly" value="False" />
       <Property name="NormalisedValueOnWorld" value="0" />
       <Property name="NormalisedValueOffWorld" value="0" />
-      <Property name="TradeCategory" value="GcTradeCategory.xml">
+      <Property name="TradeCategory" value="GcTradeCategory">
         <Property name="TradeCategory" value="None" />
       </Property>
       <Property name="WikiCategory" value="NotEnabled" />
@@ -11244,7 +11493,7 @@ return [[
       <Property name="PinObjective" value="" />
       <Property name="PinObjectiveTip" value="" />
       <Property name="PinObjectiveMessage" value="" />
-      <Property name="PinObjectiveScannableType" value="GcScannerIconTypes.xml">
+      <Property name="PinObjectiveScannableType" value="GcScannerIconTypes">
         <Property name="ScanIconType" value="None" />
       </Property>
       <Property name="PinObjectiveEasyToRefine" value="False" />
@@ -11259,27 +11508,31 @@ return [[
 ]]
 end
 
-function GetBaseBuildingPart(ID, STYLE, MODEL, INACTIVE)
+function GetBaseBuildingPart(ID, STYLE, MODEL, INACTIVE, BYPASS)
 INACTIVE = ""
 if OVERRIDE_INACTIVE then INACTIVE = MODEL
 end
+if BYPASS then
+	MODEL = BYPASS_SCENE
+	INACTIVE = ""
+end
 return [[
-    <Property value="GcBaseBuildingPart.xml">
+    <Property value="GcBaseBuildingPart" _id="_]] .. ID .. [[">
       <Property name="ID" value="_]] .. ID .. [[" />
       <Property name="StyleModels">
-        <Property value="GcBaseBuildingPartStyleModel.xml">
-          <Property name="Style" value="GcBaseBuildingPartStyle.xml">
+        <Property value="GcBaseBuildingPartStyleModel">
+          <Property name="Style" value="GcBaseBuildingPartStyle">
             <Property name="Style" value="]] .. STYLE .. [[" />
           </Property>
-          <Property name="Model" value="TkModelResource.xml">
+          <Property name="Model" value="TkModelResource">
             <Property name="Filename" value="]] .. MODEL .. [[" />
-            <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResHandle" value="GcResource">
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
-          <Property name="Inactive" value="TkModelResource.xml">
+          <Property name="Inactive" value="TkModelResource">
             <Property name="Filename" value="]] .. INACTIVE .. [[" />
-            <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResHandle" value="GcResource">
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
@@ -11293,53 +11546,53 @@ function getAutoPartData(ID, STYLE, POWER_GROUP)
 AUTO_PART_DATA =
 {
     ["DECOR"] = [[
-      <Property name="MagicData" value="TkMagicModelData.xml">
+      <Property name="MagicData" value="TkMagicModelData">
         <Property name="Vertices">
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="-2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="-2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="-2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="-2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="2.025391" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="2" />
-          <Property name="z" value="0" />
+        <Property name="Centre" value="Vector3f">
+          <Property name="X" value="0" />
+          <Property name="Y" value="2" />
+          <Property name="Z" value="0" />
         </Property>
         <Property name="Radius" value="2.997921" />
       </Property>
@@ -11354,33 +11607,33 @@ AUTO_PART_DATA =
       <Property name="InstanceLastProfiledTimestamp" value="1667186766" />
 ]],
     ["BASIC"] = [[
-      <Property name="MagicData" value="TkMagicModelData.xml">
+      <Property name="MagicData" value="TkMagicModelData">
         <Property name="Vertices">
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.666016" />
-            <Property name="y" value="0.221401" />
-            <Property name="z" value="-2.809712" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.666016" />
+            <Property name="Y" value="0.221401" />
+            <Property name="Z" value="-2.809712" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.666016" />
-            <Property name="y" value="3.682135" />
-            <Property name="z" value="2.522452" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.666016" />
+            <Property name="Y" value="3.682135" />
+            <Property name="Z" value="2.522452" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.666016" />
-            <Property name="y" value="3.017002" />
-            <Property name="z" value="2.954143" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.666016" />
+            <Property name="Y" value="3.017002" />
+            <Property name="Z" value="2.954143" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.666016" />
-            <Property name="y" value="-0.443731" />
-            <Property name="z" value="-2.378021" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.666016" />
+            <Property name="Y" value="-0.443731" />
+            <Property name="Z" value="-2.378021" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="1.619202" />
-          <Property name="z" value="0.072216" />
+        <Property name="Centre" value="Vector3f">
+          <Property name="X" value="0" />
+          <Property name="Y" value="1.619202" />
+          <Property name="Z" value="0.072216" />
         </Property>
         <Property name="Radius" value="3.775765" />
       </Property>
@@ -11395,53 +11648,53 @@ AUTO_PART_DATA =
       <Property name="InstanceLastProfiledTimestamp" value="1660880178" />
 ]],
     ["CUBEROOM"] = [[
-      <Property name="MagicData" value="TkMagicModelData.xml">
+      <Property name="MagicData" value="TkMagicModelData">
         <Property name="Vertices">
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="-2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="-2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="-2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="-2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="2.025391" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="2" />
-          <Property name="z" value="0" />
+        <Property name="Centre" value="Vector3f">
+          <Property name="X" value="0" />
+          <Property name="Y" value="2" />
+          <Property name="Z" value="0" />
         </Property>
         <Property name="Radius" value="2.997921" />
       </Property>
@@ -11456,53 +11709,53 @@ AUTO_PART_DATA =
       <Property name="InstanceLastProfiledTimestamp" value="1667186766" />
 ]],
     ["SPACECUBE"] = [[
-      <Property name="MagicData" value="TkMagicModelData.xml">
+      <Property name="MagicData" value="TkMagicModelData">
         <Property name="Vertices">
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-4.136719" />
-            <Property name="y" value="6.254302" />
-            <Property name="z" value="-4.136719" />
+          <Property value="Vector3f">
+            <Property name="X" value="-4.136719" />
+            <Property name="Y" value="6.254302" />
+            <Property name="Z" value="-4.136719" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-4.136719" />
-            <Property name="y" value="6.254302" />
-            <Property name="z" value="4.136719" />
+          <Property value="Vector3f">
+            <Property name="X" value="-4.136719" />
+            <Property name="Y" value="6.254302" />
+            <Property name="Z" value="4.136719" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="4.136719" />
-            <Property name="y" value="6.254302" />
-            <Property name="z" value="-4.136719" />
+          <Property value="Vector3f">
+            <Property name="X" value="4.136719" />
+            <Property name="Y" value="6.254302" />
+            <Property name="Z" value="-4.136719" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="4.136719" />
-            <Property name="y" value="6.254302" />
-            <Property name="z" value="4.136719" />
+          <Property value="Vector3f">
+            <Property name="X" value="4.136719" />
+            <Property name="Y" value="6.254302" />
+            <Property name="Z" value="4.136719" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-4.136719" />
-            <Property name="y" value="-2.254302" />
-            <Property name="z" value="-4.136719" />
+          <Property value="Vector3f">
+            <Property name="X" value="-4.136719" />
+            <Property name="Y" value="-2.254302" />
+            <Property name="Z" value="-4.136719" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-4.136719" />
-            <Property name="y" value="-2.254302" />
-            <Property name="z" value="4.136719" />
+          <Property value="Vector3f">
+            <Property name="X" value="-4.136719" />
+            <Property name="Y" value="-2.254302" />
+            <Property name="Z" value="4.136719" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="4.136719" />
-            <Property name="y" value="-2.254302" />
-            <Property name="z" value="-4.136719" />
+          <Property value="Vector3f">
+            <Property name="X" value="4.136719" />
+            <Property name="Y" value="-2.254302" />
+            <Property name="Z" value="-4.136719" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="4.136719" />
-            <Property name="y" value="-2.254302" />
-            <Property name="z" value="4.136719" />
+          <Property value="Vector3f">
+            <Property name="X" value="4.136719" />
+            <Property name="Y" value="-2.254302" />
+            <Property name="Z" value="4.136719" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="2" />
-          <Property name="z" value="0" />
+        <Property name="Centre" value="Vector3f">
+          <Property name="X" value="0" />
+          <Property name="Y" value="2" />
+          <Property name="Z" value="0" />
         </Property>
         <Property name="Radius" value="6.207068" />
       </Property>
@@ -11517,53 +11770,53 @@ AUTO_PART_DATA =
       <Property name="InstanceLastProfiledTimestamp" value="1667384703" />
 ]],
     ["FARMING"] = [[
-      <Property name="MagicData" value="TkMagicModelData.xml">
+      <Property name="MagicData" value="TkMagicModelData">
         <Property name="Vertices">
-          <Property value="Vector3f.xml">
-            <Property name="x" value="0.361726" />
-            <Property name="y" value="-0.159933" />
-            <Property name="z" value="0.388863" />
+          <Property value="Vector3f">
+            <Property name="X" value="0.361726" />
+            <Property name="Y" value="-0.159933" />
+            <Property name="Z" value="0.388863" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="0.47692" />
-            <Property name="y" value="0.299106" />
-            <Property name="z" value="-0.676767" />
+          <Property value="Vector3f">
+            <Property name="X" value="0.47692" />
+            <Property name="Y" value="0.299106" />
+            <Property name="Z" value="-0.676767" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="0.901437" />
-            <Property name="y" value="1.638365" />
-            <Property name="z" value="0.344799" />
+          <Property value="Vector3f">
+            <Property name="X" value="0.901437" />
+            <Property name="Y" value="1.638365" />
+            <Property name="Z" value="0.344799" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="0.915513" />
-            <Property name="y" value="1.374187" />
-            <Property name="z" value="-0.133735" />
+          <Property value="Vector3f">
+            <Property name="X" value="0.915513" />
+            <Property name="Y" value="1.374187" />
+            <Property name="Z" value="-0.133735" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-0.144993" />
-            <Property name="y" value="-0.605332" />
-            <Property name="z" value="-0.087962" />
+          <Property value="Vector3f">
+            <Property name="X" value="-0.144993" />
+            <Property name="Y" value="-0.605332" />
+            <Property name="Z" value="-0.087962" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-0.47695" />
-            <Property name="y" value="0.278089" />
-            <Property name="z" value="0.540523" />
+          <Property value="Vector3f">
+            <Property name="X" value="-0.47695" />
+            <Property name="Y" value="0.278089" />
+            <Property name="Z" value="0.540523" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-0.761163" />
-            <Property name="y" value="1.009935" />
-            <Property name="z" value="-0.461055" />
+          <Property value="Vector3f">
+            <Property name="X" value="-0.761163" />
+            <Property name="Y" value="1.009935" />
+            <Property name="Z" value="-0.461055" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-0.929169" />
-            <Property name="y" value="1.674832" />
-            <Property name="z" value="0.24025" />
+          <Property value="Vector3f">
+            <Property name="X" value="-0.929169" />
+            <Property name="Y" value="1.674832" />
+            <Property name="Z" value="0.24025" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="-0.006828" />
-          <Property name="y" value="0.53475" />
-          <Property name="z" value="-0.068122" />
+        <Property name="Centre" value="Vector3f">
+          <Property name="X" value="-0.006828" />
+          <Property name="Y" value="0.53475" />
+          <Property name="Z" value="-0.068122" />
         </Property>
         <Property name="Radius" value="1.328481" />
       </Property>
@@ -11578,53 +11831,53 @@ AUTO_PART_DATA =
       <Property name="InstanceLastProfiledTimestamp" value="0" />
 ]],
     ["PLANTER"] = [[
-      <Property name="MagicData" value="TkMagicModelData.xml">
+      <Property name="MagicData" value="TkMagicModelData">
         <Property name="Vertices">
-          <Property value="Vector3f.xml">
-            <Property name="x" value="0.480906" />
-            <Property name="y" value="0.199414" />
-            <Property name="z" value="-1.066707" />
+          <Property value="Vector3f">
+            <Property name="X" value="0.480906" />
+            <Property name="Y" value="0.199414" />
+            <Property name="Z" value="-1.066707" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="0.760019" />
-            <Property name="y" value="2.567245" />
-            <Property name="z" value="0.906695" />
+          <Property value="Vector3f">
+            <Property name="X" value="0.760019" />
+            <Property name="Y" value="2.567245" />
+            <Property name="Z" value="0.906695" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="0.895539" />
-            <Property name="y" value="2.570139" />
-            <Property name="z" value="-0.895583" />
+          <Property value="Vector3f">
+            <Property name="X" value="0.895539" />
+            <Property name="Y" value="2.570139" />
+            <Property name="Z" value="-0.895583" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="1.065948" />
-            <Property name="y" value="0.199269" />
-            <Property name="z" value="0.50545" />
+          <Property value="Vector3f">
+            <Property name="X" value="1.065948" />
+            <Property name="Y" value="0.199269" />
+            <Property name="Z" value="0.50545" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-0.481015" />
-            <Property name="y" value="0.199414" />
-            <Property name="z" value="1.066749" />
+          <Property value="Vector3f">
+            <Property name="X" value="-0.481015" />
+            <Property name="Y" value="0.199414" />
+            <Property name="Z" value="1.066749" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-0.895647" />
-            <Property name="y" value="2.569561" />
-            <Property name="z" value="0.895495" />
+          <Property value="Vector3f">
+            <Property name="X" value="-0.895647" />
+            <Property name="Y" value="2.569561" />
+            <Property name="Z" value="0.895495" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-0.896428" />
-            <Property name="y" value="2.547997" />
-            <Property name="z" value="-0.896364" />
+          <Property value="Vector3f">
+            <Property name="X" value="-0.896428" />
+            <Property name="Y" value="2.547997" />
+            <Property name="Z" value="-0.896364" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-1.066707" />
-            <Property name="y" value="0.199414" />
-            <Property name="z" value="-0.480925" />
+          <Property value="Vector3f">
+            <Property name="X" value="-1.066707" />
+            <Property name="Y" value="0.199414" />
+            <Property name="Z" value="-0.480925" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="-0.00038" />
-          <Property name="y" value="1.384704" />
-          <Property name="z" value="2.1E-05" />
+        <Property name="Centre" value="Vector3f">
+          <Property name="X" value="-0.00038" />
+          <Property name="Y" value="1.384704" />
+          <Property name="Z" value="2.1E-05" />
         </Property>
         <Property name="Radius" value="1.644543" />
       </Property>
@@ -11639,53 +11892,53 @@ AUTO_PART_DATA =
       <Property name="InstanceLastProfiledTimestamp" value="1661404091" />
 ]],
     ["BATTERY"] = [[
-      <Property name="MagicData" value="TkMagicModelData.xml">
+      <Property name="MagicData" value="TkMagicModelData">
         <Property name="Vertices">
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="-2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="-2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="4" />
-            <Property name="z" value="2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="4" />
+            <Property name="Z" value="2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="-2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="-2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="-2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="-2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="-2.025391" />
           </Property>
-          <Property value="Vector3f.xml">
-            <Property name="x" value="2.025391" />
-            <Property name="y" value="0" />
-            <Property name="z" value="2.025391" />
+          <Property value="Vector3f">
+            <Property name="X" value="2.025391" />
+            <Property name="Y" value="0" />
+            <Property name="Z" value="2.025391" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="2" />
-          <Property name="z" value="0" />
+        <Property name="Centre" value="Vector3f">
+          <Property name="X" value="0" />
+          <Property name="Y" value="2" />
+          <Property name="Z" value="0" />
         </Property>
         <Property name="Radius" value="2.997921" />
       </Property>
@@ -11702,9 +11955,9 @@ AUTO_PART_DATA =
 }
 -- print(ID .. [[ is using ]] .. AUTO_PART_DATA[POWER_GROUP])
 return [[
-    <Property value="GcBaseBuildingPartData.xml">
+    <Property value="GcBaseBuildingPartData">
       <Property name="PartID" value="]] .. ID .. [[" />
-      <Property name="Style" value="GcBaseBuildingPartStyle.xml">
+      <Property name="Style" value="GcBaseBuildingPartStyle">
         <Property name="Style" value="]] .. STYLE .. [[" />
       </Property>
 ]] .. AUTO_PART_DATA[POWER_GROUP] .. [[
@@ -11736,20 +11989,19 @@ EXPORT_COST_LIST = {""}
 -- BUILDING TABLE ENTRIES
 for i,j in pairs(KIBBLES_OBJPROD) do
     PLACEMENT_PATH = ""
-    if j["OBJECT"]["PlacementScene"] == "" then
+    if j["OBJECT"]["PlacementScene"] == "" and not j["OBJECT"]["Bypass"]then
         PLACEMENT_PATH = MakePlacementScenePath(j["OBJECT"]["ID"]) .. [[.MBIN]]
-    else PLACEMENT_PATH = j["OBJECT"]["PlacementScene"]
+    elseif j["OBJECT"]["Bypass"] then
+			PLACEMENT_PATH = ""
+			else PLACEMENT_PATH = j["OBJECT"]["PlacementScene"]
     end
-
     if j["OBJECT"]["IsAux"] ~= "True" then
         EXPORT_BASEOBJECTS_LIST[i+1] = GetBaseBuildingObject(j["OBJECT"]["ID"], PLACEMENT_PATH, j["OBJECT"]["Style"],j["OBJECT"]["DecorationType"],j["OBJECT"]["IsPlaceable"],j["OBJECT"]["IsDecoration"],j["OBJECT"]["Biome"],j["OBJECT"]["BuildableOnFreighter"],j["OBJECT"]["BuildableOnPlanet"],j["OBJECT"]["CheckPlaceholderCollision"],j["OBJECT"]["EnableCollision"],j["OBJECT"]["CanScale"],j["OBJECT"]["SubGroupName"],j["OBJECT"]["StorageContainerIndex"],j["OBJECT"]["CanChangeColour"],j["OBJECT"]["CanChangeMaterial"],j["OBJECT"]["ShowInBuildMenu"],j["OBJECT"]["CompositePartObjectIDs"],j["OBJECT"]["RemovesAttachedDecoration"],j["OBJECT"]["EditsTerrain"],j["OBJECT"]["BaseTerrainEditShape"],j["OBJECT"]["IsSealed"],j["OBJECT"]["Connection"], SNAPPING_DISTANCE)
 		EXPORT_PRODUCTS_LIST[i+1] = GetBaseProduct(j["OBJECT"]["ID"],j["PRODUCT"]["Name"],j["PRODUCT"]["NameLower"],j["PRODUCT"]["Subtitle"],j["PRODUCT"]["Description"],j["PRODUCT"]["Icon"],j["PRODUCT"]["Requirements"])
 		EXPORT_COST_LIST[i+1] = GetBaseBuildingCost(j["OBJECT"]["ID"], POP_IN_RATE)
 		EXPORT_KNOWNPRODUCTS_LIST[#EXPORT_KNOWNPRODUCTS_LIST+1] = GetKnownProducts(j["OBJECT"]["ID"])
-
     end
-
-    EXPORT_PARTS_LIST[i+1] = GetBaseBuildingPart(j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Model"], OVERRIDE_INACTIVE)
+    EXPORT_PARTS_LIST[i+1] = GetBaseBuildingPart(j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Model"], OVERRIDE_INACTIVE, j["OBJECT"]["Bypass"])
     EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData("_" .. j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Connection"])
 end
 
@@ -11785,24 +12037,23 @@ end
 BASEBUILD_ENTRIES =
 {
                     {
-                        -- ["PRECEDING_KEY_WORDS"] = {"Objects"},
-                        ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"}, --Changed 04 DEC 2021
-                        ["LINE_OFFSET"]         = "-3",
-                        ["ADD"]                 = EXPORT_BASEOBJECTS
-                    },
+											["PRECEDING_KEY_WORDS"] = {"Objects"},
+											["ADD_OPTION"]  = "ADDendSECTION", 
+											["ADD"] 				= EXPORT_BASEOBJECTS
+										},
                     {
-                        ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"},
-                        ["SECTION_ACTIVE"] = {1},  --Added 04 DEC 2021
-                        ["LINE_OFFSET"]         = "-1",
-                        ["ADD"]                 = EXPORT_GROUPS
+											["SPECIAL_KEY_WORDS"] = {"Groups", "GcBaseBuildingGroup",},
+											["SECTION_UP"] = 1,
+											["ADD_OPTION"]  = "ADDendSECTION", 
+											["ADD"] 				= EXPORT_GROUPS
                     },
                 }
 
--- THE FINAL COUNTDOWN
+-- THE FINAL COUNTDOWNz
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "~~~KibblesNBits.pak",
-["MOD_BATCHNAME"]   = "~~~KibblesNBits_COMPATIBILITY.pak",
+["MOD_FILENAME"]    = "+KibblesNBits_METADATA",
+["MOD_BATCHNAME"]   = "+KibblesNBits_COMPATIBILITY",
 ["MOD_DESCRIPTION"] = "Generates Metadata files and patch other mods with this script",
 ["MOD_AUTHOR"]      = "Kibbles, WinderTP, Babscoole",
 ["NMS_VERSION"]     = "4.52",
@@ -11813,7 +12064,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGCOSTSTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ObjectCosts"},
@@ -11823,11 +12074,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = BASEBUILD_ENTRIES
+                    ["MXML_CHANGE_TABLE"] = BASEBUILD_ENTRIES
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Table"},
@@ -11837,7 +12088,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGPARTSTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID", "_O2_HARVESTER"},
@@ -11848,7 +12099,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGAUTOGENERATEDPARTSDATA.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PartsData"},
@@ -11858,7 +12109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
