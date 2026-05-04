@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "SMG"},
+              ["SPECIAL_KEY_WORDS"] = {"Table", "GcProjectileData", "Id", "SMG"},
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"DefaultSpeed", "960.000000"},
