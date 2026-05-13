@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ExpeditionCatalogueImproved"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "620"
+METADATA_NMS_VERSION    = "636"
 METADATA_MOD_DESC       = "This mod improves the Previous Expeditions page in Catalogue and Guide section by rescaling patches and removing bugged out entries"
 
 

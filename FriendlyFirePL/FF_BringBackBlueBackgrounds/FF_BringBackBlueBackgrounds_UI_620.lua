@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "BringBackBlueBackgrounds_UI"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL, Babscoole"
-METADATA_NMS_VERSION    = "620"
+METADATA_NMS_VERSION    = "636"
 METADATA_MOD_DESC       = "This mod restores some blue backgrounds from the pre-Waypoint releases of the game. Modifies various files in UI directory and repalces a couple of textures."
 
 
