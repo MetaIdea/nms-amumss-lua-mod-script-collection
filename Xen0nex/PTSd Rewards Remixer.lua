@@ -1783,8 +1783,8 @@ ResourceDepotChanges =
 }
 
 --Changes the relative chances of rewards from Ancient Data Structures
-ADSNavDataChance		=	100			--100
-ADSExosuitChartChance	=	5			--10
+ADSNavDataChance		=	100			--100		Relative chance for each Ancient Data Structure to yield a Navigation Data
+ADSExosuitChartChance	=	5			--10		Relative chance for each Ancient Data Structure to yield an Exosuit Upgrade Chart
 
 --Multipliers to apply to rewards from some rare resource nodes
 MutantPlantSulphurine	=	0.75		--250 - 400

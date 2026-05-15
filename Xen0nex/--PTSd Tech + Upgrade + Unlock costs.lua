@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Unlock costs"
-GameVersion = "6_24"
+GameVersion = "6_36"
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
 UpgradeCMult	=		1.2							--Vanilla cost is	60		This multiplies the vanilla "BaseValue", affecting both purchase and selling prices.	E.G. "1.2" means you sell them for 1.2x the vanilla price, and shops charge 1.2x more
@@ -397,6 +397,9 @@ TechRarityChanges =
 	},
 	{
 		"T_BOLT",				"Normal",					--Procedural Boltcaster upgrade	"Rare"
+	},
+	{
+		"GRAVITYGUN",			"Impossible",				--Gravitino Coil	"Common"
 	},
 }
 

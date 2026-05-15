@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Life Sized Planets.pak",
+["MOD_FILENAME"]            = "Life Sized Planets",
 ["MOD_AUTHOR"]              = "",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "6.18",
+["NMS_VERSION"]             = "6.36",
 ["MOD_DESCRIPTION"]         = "Larger planet sizes",
 ["MODIFICATIONS"]           =
   {
@@ -15,9 +15,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           {
             "MODELS\SPACE\PLANETS\PLANET.SCENE.MBIN",
             "MODELS\SPACE\PLANETS\PLANETMESH.SCENE.MBIN",
-            "MODELS\SPACE\PLANETS\PLANETWATER.SCENE.MBIN",
           },
-          ["EXML_CHANGE_TABLE"] =
+          ["MXML_CHANGE_TABLE"] =
           {
             {
               ["REPLACE_TYPE"] = "ALL",

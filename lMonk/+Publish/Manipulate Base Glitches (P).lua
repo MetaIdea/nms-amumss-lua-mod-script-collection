@@ -1,18 +1,18 @@
 --------------------------------------------------------------------------
 local mod_desc = [[
-  Enable 3D rotation and scaling for Glitch items
+  Enable 3D rotation and scaling for flora, portables and glitch items
 ]]------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME		= '_MOD.lMonk.Manipulate Glitches.pak',
+	MOD_FILENAME		= 'MOD.lMonk.Manipulate Glitches',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.29',
+	NMS_VERSION			= '6.36',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN',
-		EXML_CHANGE_TABLE	= {
+		MXML_CHANGE_TABLE	= {
 			{
 				FOREACH_SKW_GROUP 	= {
 					{'SubGroupName', 'PLANETPORTABLE'},
