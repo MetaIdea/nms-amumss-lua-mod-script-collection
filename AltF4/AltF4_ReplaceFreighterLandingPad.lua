@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         "MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGAR.SCENE.MBIN",
                         "MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPIRATE.SCENE.MBIN",
                     },
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MXML_CHANGE_TABLE"] = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {
                                 {"Name","Dock3C"},

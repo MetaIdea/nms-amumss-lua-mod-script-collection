@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Communism"
-GameVersion = "6.32"
+GameVersion = "6.40"
 Description = "Makes every Expedition and Twitch item added by Consumerism FREE OF CHARGE."
 
 ProductIDList =
@@ -778,7 +778,35 @@ ProductIDList =
   {"ID","SPEC_PB_EGG02"},
   {"ID","SPEC_PB_EGG03"},
   {"ID","SPEC_PB_EGG04"},
-  {"ID","SPEC_PB_EGG05"}
+  {"ID","SPEC_PB_EGG05"},
+  {"ID", "EXPD_BANNER22"},
+  {"ID", "EXPD_DECAL22"},
+  {"ID", "EXPD_POSTER22A"},
+  {"ID", "EXPD_POSTER22B"},
+  {"ID", "EXPD_POSTER22C"},
+  {"ID", "EXPD_TITLE22"},
+  {"ID", "S22_ECHO"},
+  {"ID", "S22_FRAG_B"},
+  {"ID", "S22_FRAG_G"},
+  {"ID", "S22_FRAG_R"},
+  {"ID", "S22_SIGNATURE"},
+  {"ID", "SWARM_ARMOUR"},
+  {"ID", "SWARM_BOOTS"},
+  {"ID", "SWARM_FLAG_B1"},
+  {"ID", "SWARM_FLAG_B2"},
+  {"ID", "SWARM_FLAG_B3"},
+  {"ID", "SWARM_FLAG_G1"},
+  {"ID", "SWARM_FLAG_G2"},
+  {"ID", "SWARM_FLAG_G3"},
+  {"ID", "SWARM_FLAG_R1"},
+  {"ID", "SWARM_FLAG_R2"},
+  {"ID", "SWARM_FLAG_R3"},
+  {"ID", "SWARM_GLOVES"},
+  {"ID", "SWARM_GUN"},
+  {"ID", "SWARM_HAT"},
+  {"ID", "SWARM_LEGS"},
+  {"ID", "SWARM_PACK"},
+  {"ID", "SWARM_TORSO"}
 }
 
 NMS_MOD_DEFINITION_CONTAINER = 

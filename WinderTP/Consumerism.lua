@@ -1,6 +1,40 @@
 SPECIAL_LIST =
 {
 	{
+		["ShopNumber"] = "117",
+		["Table"] =  
+		{
+			{ ["ID"] = "EXPD_BANNER22",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_DECAL22",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER22A",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER22B",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER22C",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_TITLE22",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "S22_ECHO",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "S22_FRAG_B",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "S22_FRAG_G",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "S22_FRAG_R",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "S22_SIGNATURE",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_ARMOUR",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_BOOTS",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_FLAG_B1",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_FLAG_B2",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_FLAG_B3",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_FLAG_G1",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_FLAG_G2",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_FLAG_G3",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_FLAG_R1",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_FLAG_R2",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_FLAG_R3",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_GLOVES",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_GUN",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_HAT",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_LEGS",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_PACK",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SWARM_TORSO",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+		}
+	},
+	{
 		["ShopNumber"] = "116",
 		["Table"] =  
 		{

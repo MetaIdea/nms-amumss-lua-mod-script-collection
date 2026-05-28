@@ -373,7 +373,7 @@ And, of course, thanks to all of the other modders who make mods too, as we ofte
 —For latest versions and more visit:-
 https://www.nexusmods.com/nomanssky/mods/1096
 ]],
-["NMS_VERSION"]   = "6.30",
+["NMS_VERSION"]   = "6.40",
 ["MODIFICATIONS"] =
   {
     {

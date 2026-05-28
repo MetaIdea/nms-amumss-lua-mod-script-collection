@@ -326,7 +326,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             ["MBIN_CHANGE_TABLE"] = {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MXML_CHANGE_TABLE"] = {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "SpaceStation", "AlwaysPresentProducts"},
                             ["ADD"] = ADDShipPartID
@@ -357,6 +357,6 @@ if Price then
     local addMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
     addMBINChangeTable[#addMBINChangeTable + 1] = {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_MODULARCUSTOMISATIONPRODUCTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] = ChangeTable,
+                    ["MXML_CHANGE_TABLE"] = ChangeTable,
                 }
 end

@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_SpaceStationLight_White",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "5.51",
+    ["NMS_VERSION"] = "6.01",
     ["MOD_DESCRIPTION"] = "Custom space station light color.",
     ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
     ["MODIFICATIONS"] = {
@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             ["MBIN_CHANGE_TABLE"] = {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
+                    ["MXML_CHANGE_TABLE"] = {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SpaceStationLights", "Colours"},
                             ["REPLACE_TYPE"] = "ALL",
@@ -29,6 +29,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                     }
                 },
+                --[[{
+                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\STATION\BIGGSORANGEVOLUMELIGHT\MIST.PARTICLE.MBIN",
+                    ["MXML_CHANGE_TABLE"] = {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {
+                                {"ColourStart"},
+                                {"ColourMiddle"},
+                                {"ColourEnd"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"R", "1"},
+                                {"G", "1"},
+                                {"B", "1"},
+                                {"A", "0"},
+                            }
+                        },
+                    }
+                },]]
             },
         },
     }

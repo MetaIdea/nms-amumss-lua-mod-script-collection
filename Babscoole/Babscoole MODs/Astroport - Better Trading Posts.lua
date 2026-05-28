@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Astroport - Better Trading Posts",
 ["MOD_AUTHOR"]      = "AstronautinOrbit and Babscoole",
-["NMS_VERSION"]     = "6.30",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Planetary trading posts rework",
 ["MODIFICATIONS"]   =
   {

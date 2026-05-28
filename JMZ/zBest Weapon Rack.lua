@@ -2,7 +2,7 @@ Author			= "JMZawodny"
 ModName			= "zBest"
 ModNameSub		= "Weapon Rack"
 BaseDescription = "Add Upgrade and Scrap capabilities to the Weapon Rack"
-GameVersion		= "v6.2"
+GameVersion		= "v6.42"
 ModVersion		= ""
 
 
