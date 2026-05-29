@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 		= "No Alien Words",
-["MOD_DESCRIPTION"]	= "makes all unlearned words show as english instead alien, does not prevent learning words",         --optional, for reference
+["MOD_DESCRIPTION"]	= "makes all unlearned words show as english instead alien, does not prevent learning words",
 ["MOD_AUTHOR"]			= "Babscoole",
-["NMS_VERSION"]			= "6.18",
+["NMS_VERSION"]			= "6.40",
 ["MODIFICATIONS"] 	=
 	{
 		{

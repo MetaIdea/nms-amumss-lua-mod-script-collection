@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Nadas Starmap Upgrade",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
 ["LUA_AUTHOR"]      = "Makto & Updated by Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Makes various tweaks to the starmap including a re-color of stars",
 ["MODIFICATIONS"]   =
   {

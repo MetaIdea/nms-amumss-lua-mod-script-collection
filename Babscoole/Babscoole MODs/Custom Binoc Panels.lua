@@ -1,4 +1,4 @@
-COLORCHOICE = 6
+COLORCHOICE = 1
 
 InputCOLORCHOICE = {COLORCHOICE,
 [[
@@ -10,7 +10,7 @@ InputCOLORCHOICE = {COLORCHOICE,
     5 - Pink
     6 - Yellow
     7 - Orange
-    Default = 6 | Current = >> ]] .. (COLORCHOICE) .. [[ <<
+    Default = 1 | Current = >> ]] .. (COLORCHOICE) .. [[ <<
 ]]}
 
 while COLORCHOICE do
@@ -68,7 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Custom Binoc Panels-"..COLORNAME,
 ["MOD_AUTHOR"]      = "Babscoole & Exosolar",
-["NMS_VERSION"]     = "6.30",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Add colored background panels for data in binocs",
 ["MODIFICATIONS"]   =
   {

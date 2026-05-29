@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Storm Cutter",
 ["MOD_AUTHOR"]      = "Zurls",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "This mod keeps the storms in No Man's Sky, but makes them half as strong, last half as long, and happen half as frequently.",
 ["MODIFICATIONS"]   =
   {

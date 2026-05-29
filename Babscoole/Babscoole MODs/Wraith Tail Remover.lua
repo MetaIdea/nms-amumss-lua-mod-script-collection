@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Wraith Tail Remover",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Removes Wraith Tail",
 ["MODIFICATIONS"]   =
   {

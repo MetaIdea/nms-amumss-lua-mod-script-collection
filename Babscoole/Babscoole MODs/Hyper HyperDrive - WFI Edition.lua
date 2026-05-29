@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Hyper HyperDrive - WFI Edition",
 ["MOD_AUTHOR"]      = "courtykat and Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Unlimited hyperdrive range — Makes it possible to jump to the center of the galaxy from any distance",
 ["MODIFICATIONS"]   =
   {

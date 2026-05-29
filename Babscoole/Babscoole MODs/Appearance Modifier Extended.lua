@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Appearance Modifier Extended",
 ["MOD_AUTHOR"]      = "MortimerKerman & Babscoole",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Adds the ability to remove your armour or your jetpack in the appearance modifier.",
 ["MODIFICATIONS"]   =
   {

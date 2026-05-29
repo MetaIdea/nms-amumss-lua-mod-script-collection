@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "More Pirate Freighter Battle Time",
 ["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.18",
+["NMS_VERSION"]   = "6.40",
 ["MODIFICATIONS"] =
   {
     {
@@ -17,9 +17,21 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"PirateFreighterWarpChargeTime",          "@*"..TIME_FACTOR},  --Default 35.000000
-                {"PirateFreighterBeginFleeHealthFraction", "@/"..TIME_FACTOR},  --Default 0.250000
-                {"MaxTorpedoesInFlight",                   "@/"..TIME_FACTOR},  --Default 12
+                {"MaxTorpedoesInFlight", "@/"..TIME_FACTOR},  --Default 12
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"PirateFreighter", "GcSpaceBattleSpawnData", "FlagshipBattleConfig", "GcFlagshipBattleConfig"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"FleeHealthFraction", "@/"..TIME_FACTOR},  --Default 0.250000
+                {"WarpChargeTime",     "@*"..TIME_FACTOR},  --Default 35.000000
               }
             },
           }

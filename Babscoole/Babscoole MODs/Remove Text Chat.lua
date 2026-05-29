@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Remove Text Chat",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.30",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Hides the multiplayer (and Laylaps) text chat",
 ["MODIFICATIONS"]   =
   {

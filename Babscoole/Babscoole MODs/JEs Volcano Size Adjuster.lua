@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "JEs Volcano Size Adjuster - "..VERNAME,
 ["MOD_DESCRIPTION"] = "Makes Volcanos very small so they do not block POI's or very big",
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MODIFICATIONS"]   =
   {
     {

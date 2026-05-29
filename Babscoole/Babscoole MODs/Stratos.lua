@@ -3858,7 +3858,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Stratos",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.30",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Adds to the limited stock sky color palettes",
 ["MODIFICATIONS"]   =
   {

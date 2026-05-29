@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "High Density",
 ["MOD_AUTHOR"]      = "courtykat and Babscoole",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "More groups of each species will spawn",
 ["MODIFICATIONS"]   =
   {

@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Larger Herds x6",
 ["MOD_AUTHOR"]      = "courtykat & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Groups are 6x larger",
 ["MODIFICATIONS"]   =
   {

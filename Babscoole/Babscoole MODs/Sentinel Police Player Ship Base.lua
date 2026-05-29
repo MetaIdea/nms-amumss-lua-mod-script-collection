@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Sentinel Police Player Ship Base",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "This is just in case you already own the ship and don't need the menu interaction to get the ship anymore",
 ["MODIFICATIONS"]   =
   {

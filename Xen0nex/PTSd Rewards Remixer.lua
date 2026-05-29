@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "6_30"
+GameVersion = "6_40"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -58,6 +58,8 @@ MemFragInvBulkChance =					20.000000				--0		Relative chance weight to receive F
 MemFragProcChanceMult =					4.000000				--Multiplier to apply to the relative chance weight for the ~25 proc tech options in tech memory fragments (as opposed to the ~44 regular tech options)
 MemFragProcLauncherChanceMult =			0.400000				--Multiplier to apply to the relative chance weight for Launcher proc tech, base of 300 (Most other proc tech have ~100 for their chance weight, with a few hazard/weapon ones having 15~25 instead)
 MemFragOutlierTechChance =				200.000000				--500	Relative chance weight for certain regular techs in the tech memory fragment option pool, which normally have ~5x as much chance as others to be received (Specifically, Neural Stimulator, Advanced Mining Laser, Optical Drill, Launch Auto-Charger)
+MemFragAdvancedTechChance =				200.000000				--100	Relative chance weight for certain regular techs in the tech memory fragment option pool, which are generally useful: Haz-Mat Gauntlet, Rocket Boots, and Personal Refiner
+MemFragBannedTechChance =				0.000000				--100	Relative chance weight for certain regular techs in the tech memory fragment option pool, which should be more difficult to get: Survey Device, Launch Auto-Charger, and Paralysis Mortar
 
 --Replacers for the relative chance weighting for getting certain techs / upgrades when opening Psychonic Eggs (all 6 kinds of procedural upgrades have chance weighting = 50)
 PsychonicWormhole =						250.000000				--500	"Wormhole Brain" Conflict/Economy Scanner equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
@@ -3959,6 +3961,12 @@ TeachPellets =
 MemFragOutlierTechs =
 {"UP_T_JET", "UP_STRONGLASER", "UP_T_MINER", "UP_T_LAUNCHCHAR"}
 
+MemFragAdvancedTechs =
+{"UP_T_JUMP", "UP_SUIT_REFINER", "UP_POWERGLOVE"}
+
+MemFragBannedTechs =
+{"UP_T_LAUNCHCHAR", "UP_T_SURVEY", "UP_STUN_GREN"}
+
 MinableObjects =
 {
 	"DE_PLANT_SMALL", "DE_PLANT_MED", "DE_PLANT_LARGE", "DE_WATERPLANT_S", "DE_WATERPLANT_M", "DE_WATERPLANT_L", "DE_ROCK_SMALL", "DE_ROCK_MED", "DE_ROCK_LARGE", "DE_GEM_R_SMALL", "DE_GEM_R_MED", "DE_GEM_R_LARGE", "DE_GEM_B_SMALL", "DE_GEM_B_MED", "DE_GEM_B_LARGE", "DE_GEM_Y_SMALL", "DE_GEM_Y_MED", "DE_GEM_Y_LARGE", "DE_GEM_S_SMALL", "DE_GEM_S_LARGE", "DE_CAVE_MED", "DE_CAVE_LARGE", "DE_WATER_MED", "DE_WATER_LARGE", "DE_RARE_HOT", "DE_RARE_RADIO", "DE_RARE_COLD", "DE_RARE_GOLD", "DE_RARE_ROLLER", "DE_SCRAP_PART", 
@@ -7388,6 +7396,32 @@ for i = 1, #MemFragOutlierTechs do
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	MemFragOutlierTechChance},
+				}
+			}
+end
+for i = 1, #MemFragAdvancedTechs do
+	local TechID = MemFragAdvancedTechs[i]
+		
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_TECHBOX",	"ID", TechID},
+				["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	MemFragAdvancedTechChance},
+				}
+			}
+end
+for i = 1, #MemFragBannedTechs do
+	local TechID = MemFragBannedTechs[i]
+		
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_TECHBOX",	"ID", TechID},
+				["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	MemFragBannedTechChance},
 				}
 			}
 end

@@ -1,5 +1,5 @@
 ModName = "PTSd Black Holes + Scrapping etc"
-GameVersion = "6_10"
+GameVersion = "6_4"
 Description = "Black Holes send you farther, Adjusts Living Ship Module Evolution costs, Changes Illegal goods price markup, Adjust Death Penalty units cost, Replaces some of the substances you can receive from scrapping ships"
 
 --Controls how much of a bonus Supercharged Tech Slots give
@@ -79,10 +79,6 @@ TorpedoCooldownRandomExtra =			8									--8
 MaxTorpedoesInFlight =					12									--12
 TorpedoInitialWait =					28									--28		Seems to be how long the Pirate Frigates wait at the start of the battle before firing the first Torpedos
 TorpedoLaunchWarning =					12									--12		Seems to be how long much of a warning the UI gives you before each volley of Torpedos
-PirateFreighterFrigateCountForReinforce =			1						--5			Each time the remaining Pirate Frigates falls down to this number, the Dreadnought will summon this many reinforcement Frigates (Reinforcement amount set in "Space Combat+Larger Space BattlesX.lua")
-PirateFreighterWarpChargeTime =						35						--35		Roughly how long the Dreadnought takes to warp away. It appears to actually escape once the counter reaches ~6 or 8 seconds remaining
-PirateFreighterWarpChargeTimeToAddPerBrokenEngine =	0						--2			Bugged. This adds time to the UI countdown each time a Warp Engine is destroyed, but does not actually change how long until the Dreadnought warps away
-PirateFreighterBeginFleeHealthFraction =			0.16					--0.25		Seems to be what percentage of remaining hull health to trigger the Dreadnought to attempt warping (may also attempt warping if all Anti-Freighter Cannons are destroyed)
 FreighterFuelRodHealthFraction =					0.84					--0.75		Appears to deal ([this value] x 10 x [Dreadnought max health]) damage per Fuel Rod destroyed
 
 --This adds a unique broken slot to the starting multi-tool with a special description for the purpose of letting the player know that despite being labeled as a Pistol, the vanilla starting multi-tool has no stat bonuses, even when its Class is upgraded
@@ -184,10 +180,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"MaxTorpedoesInFlight", MaxTorpedoesInFlight},
 					{"TorpedoInitialWait", TorpedoInitialWait},
 					{"TorpedoLaunchWarning", TorpedoLaunchWarning},
-					{"PirateFreighterFrigateCountForReinforce", PirateFreighterFrigateCountForReinforce},
-					{"PirateFreighterWarpChargeTime", PirateFreighterWarpChargeTime},
-					{"PirateFreighterWarpChargeTimeToAddPerBrokenEngine", PirateFreighterWarpChargeTimeToAddPerBrokenEngine},
-					{"PirateFreighterBeginFleeHealthFraction", PirateFreighterBeginFleeHealthFraction},
 					{"FreighterFuelRodHealthFraction", FreighterFuelRodHealthFraction},
 					--[[
 					{"ShipMiningMul", ShipMiningMul},

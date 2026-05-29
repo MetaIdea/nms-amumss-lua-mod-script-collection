@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Return of Maglock",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Returns the mild auto-aim to the Ship's weapons which don't have auto-aim and slightly increases it for those that do",
 ["MODIFICATIONS"]   =
   {

@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Fewer Species 5%",
 ["MOD_AUTHOR"]      = "courtycat and Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Reduces the number of creatures per planet",
 ["MODIFICATIONS"]   =
   {

@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "JEs Fast Harvesters and AMU",
 ["MOD_DESCRIPTION"] = "Increases speed and storage of AMUs and Oxygen and Gas Harvesters",
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MODIFICATIONS"]   =
   {
     {

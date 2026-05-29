@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "No Mans Nomad",
 ["MOD_AUTHOR"]      = "Moach & Babscoole",
-["NMS_VERSION"]     = "6.30",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "For Nomad rescale turret and engine nozzle, re-position the engine bloom glow, and remove wheels",
 ["MODIFICATIONS"]   =
   {

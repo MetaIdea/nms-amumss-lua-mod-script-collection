@@ -8,8 +8,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Unstuck",
 ["MOD_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Teleport to nearest Space Station",
-["NMS_VERSION"]     = "6.20",
 ["MODIFICATIONS"]   =
   {
     {

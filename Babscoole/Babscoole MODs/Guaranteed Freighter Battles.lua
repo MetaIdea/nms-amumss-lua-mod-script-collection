@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Guaranteed Freighter Battles",
 ["MOD_AUTHOR"]      = "Exosolar",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Guaranteed Freighter Battles cause space battles after every single warp",
 ["MODIFICATIONS"]   =
   {

@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Ghost Frigate Unlocker",
 ["MOD_AUTHOR"]      = "Babscoole & Mjstral",
 ["MOD_DESCRIPTION"] = "Unlock a reward via special emote menu quick action",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.40",
 ["MODIFICATIONS"]   =
   {
     {

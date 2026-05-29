@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Grass Fix",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "The Grass Fix mod replaces the patchy grass with fields of velvet on most Lush planets!",
 ["MODIFICATIONS"]   =
   {

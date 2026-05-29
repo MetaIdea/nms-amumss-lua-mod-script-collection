@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Decals BeGone",
 ["MOD_AUTHOR"]      = "courtycat &  Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Remove decals from ships",
 ["MODIFICATIONS"]   =
   {

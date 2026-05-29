@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 	["MOD_FILENAME"]	  = "CSO Asteroid Fields Overhaul", 
 	["MOD_AUTHOR"]		  = "NeptuneX3 & Babscoole",
-	["NMS_VERSION"]		  = "6.18",
+	["NMS_VERSION"]		  = "6.40",
 	["MOD_DESCRIPTION"]	= "Asteroid Repartition Overhaul",
 	["MODIFICATIONS"]	  = 
 	{

@@ -715,7 +715,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]          = "Reikokuu & Babscoole",
 ["LUA_AUTHOR"]          = "Wbertro (speedup)",
 ["MOD_DESCRIPTION"]     = "Increases the amount of words learn from NPCs, Knowledge Stones, Encyclopedias, Monoliths, and Atlas Orbs",
-["NMS_VERSION"]         = "6.18",
+["NMS_VERSION"]         = "6.40",
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE",
 ["MODIFICATIONS"]       =
   {
@@ -896,7 +896,7 @@ for i = 1, #NewWordChanges do
     RewardTable[#RewardTable+1] =
     {
       ["SEC_EDIT"] = "ADD_NewReward",
-      SEC_KEEP = true,
+      ["SEC_KEEP"] = "TRUE",
       ["VALUE_CHANGE_TABLE"] =
       {
         {"Id",        NewWordID},

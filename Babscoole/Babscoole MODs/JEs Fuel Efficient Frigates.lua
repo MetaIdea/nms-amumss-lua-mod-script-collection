@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "JEs Fuel Efficient Frigates",
 ["MOD_DESCRIPTION"] = "Adjusts frigate fuel useage maximums to be the same as minimum for all frigate types",
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MODIFICATIONS"]   =
   {
     {

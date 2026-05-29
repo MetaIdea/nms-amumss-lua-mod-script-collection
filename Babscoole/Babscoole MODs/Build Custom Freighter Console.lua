@@ -594,7 +594,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Build Custom Freighter Console",
 ["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.20",
+["NMS_VERSION"]   = "6.40",
 ["ADD_FILES"]     = ADD_FILES_TABLE,
 ["MODIFICATIONS"] =
   {

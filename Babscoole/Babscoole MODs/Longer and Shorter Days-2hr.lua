@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Longer and Shorter Days-2hr",
 ["MOD_AUTHOR"]      = "Florian B. & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "30 minutes - is it too short or too long? You can now make days longer or shorter.",
 ["MODIFICATIONS"]   =
   {

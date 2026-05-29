@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Better Easier Frigate Repair",
 ["MOD_AUTHOR"]      = "Democrity & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Just land on/off your damaged frigates to automatically repair all broken components",
 ["MODIFICATIONS"]   =
   {

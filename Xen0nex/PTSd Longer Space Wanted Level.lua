@@ -1,5 +1,5 @@
 ModName = "PTSd Longer Space Wanted Level"
-GameVersion = "5_74"
+GameVersion = "6_4"
 Description = "Increases the countdown timer between waves of Wanted Levels in space when you are free to Pulse Jump away."
 
 Path1 = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN"
@@ -14,10 +14,6 @@ PoliceArriveTime = 4									--5		Time it takes for Interceptors to actually arr
 
 --PoliceLaunchTime = 3									--3		Unknown function, perhaps related to attacking space station??
 --PoliceStationWaveTimer = 5								--5		Unknown function, perhaps related to attacking space station??
-
---Multipliers to apply to the following values:
-SpaceBattleSpawnRangeMult = 1							--8000, 9000		Unknown function, 
-SpaceBattlePirateRangeMult = 1							--2-4				Unknown function, 
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -77,28 +73,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Settlement_Double", "true"},			--"true"
 								{"Settlement_Farm", "true"},			--"true"
 								{"Settlement_Factory", "true"},			--"true"
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["PRECEDING_KEY_WORDS"] = {"SpaceBattleSpawnRange"},
-							["VALUE_MATCH"]         = {"8000", "9000"}, 
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"X", SpaceBattleSpawnRangeMult},
-								{"Y", SpaceBattleSpawnRangeMult}
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["PRECEDING_KEY_WORDS"] = {"SpaceBattlePirateRange"},
-							["VALUE_MATCH"]         = {"2", "3", "4"}, 
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"X", SpaceBattlePirateRangeMult},
-								{"Y", SpaceBattlePirateRangeMult}
 							}
 						}
 					}

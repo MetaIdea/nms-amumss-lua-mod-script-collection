@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "TrueColor-Standard",
 ["MOD_AUTHOR"]      = "courtykat and Babscoole",
-["NMS_VERSION"]     = "6.30",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Improves the color palettes of all standard starships, living ships, freighters, and customizable paints",
 ["MODIFICATIONS"]   =
   {

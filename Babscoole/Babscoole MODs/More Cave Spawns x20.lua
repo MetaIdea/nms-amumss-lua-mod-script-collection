@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "More Cave Spawns x20",
 ["MOD_AUTHOR"]      = "courtykat and Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Raises the frequency of those impossible-to-find underground creatures.",
 ["MODIFICATIONS"]   =
   {

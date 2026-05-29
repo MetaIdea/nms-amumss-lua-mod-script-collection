@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "NoMoreWires-byte",
 ["MOD_AUTHOR"]      = "PyronoxOmega and Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Makes short byte-beat wires invisible",
 ["MODIFICATIONS"]   =
   {

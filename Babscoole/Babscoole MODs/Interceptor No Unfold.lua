@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Interceptor No Unfold",
 ["MOD_AUTHOR"]      = "Mjstral & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Prevents the interceptor/sentinel ships from unfolding their wings when taking off",
 ["MODIFICATIONS"]   =
   {

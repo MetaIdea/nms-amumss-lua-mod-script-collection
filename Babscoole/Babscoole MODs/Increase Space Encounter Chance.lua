@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "Increase Space Encounter Chance"..ChanceMultiplier.."x",
 ["MOD_DESCRIPTION"]         = "Makes space pulse encounters more likely",
 ["MOD_AUTHOR"]              = "Babscoole & Gumsk",
-["NMS_VERSION"]             = "6.18",
+["NMS_VERSION"]             = "6.40",
 ["MODIFICATIONS"]           =
   {
     {

@@ -59,7 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "~BetterColorfulRings-"..VERNAME,
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Change palette colors for planetary rings",
 ["MODIFICATIONS"]   =
   {
@@ -102,7 +102,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"PlanetRing", "GcPaletteData"},
-              ["EXML_FLAGS"]  = "OVERWRITE",
+              ["EXML_FLAGS"] = "OVERWRITE",
             },
           }
         }

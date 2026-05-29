@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "JEs Faster Settlement Population Growth",
 ["MOD_DESCRIPTION"] = "Increases population gain from Settlement events",
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MODIFICATIONS"]   =
   {
     {

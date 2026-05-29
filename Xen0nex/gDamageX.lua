@@ -2,7 +2,7 @@ Author = "Gumsk"	-- Edited by Xen0nex	(temporary fix to BOUNTYLASER3 typo)
 --ModName = "GExos Challenge"
 ModNameSub = "gDamageX"
 BaseDescription = "Damage & Tech Damage adjustments"
-GameVersion = "6_24"
+GameVersion = "6_4"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
@@ -83,10 +83,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 10*Robots}}}, --default 6 (used to be 11, default 8) ~Xen0nex
 
+	{["SPECIAL_KEY_WORDS"] = {"Id","SWARMGUNDMG"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 5*Robots}}}, --default 2
+		
+	{["SPECIAL_KEY_WORDS"] = {"Id","SWARMBIGGUN"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 10*Robots}}}, --default 6
+
 	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGRENADEDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 11*Robots}}}, --default 7
-
+	
+	{["SPECIAL_KEY_WORDS"] = {"Id","SWARMGRENADEDMG"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 11*Robots}}}, --default 7
+	
 	{["SPECIAL_KEY_WORDS"] = {"Id","STONEGRENADEDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 9*Robots}}}, --default 3
@@ -239,7 +251,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{["SPECIAL_KEY_WORDS"] = {"Id","SENTINEL_FLAME"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 8*Robots}}}, --default 3
-
+	
+	{["SPECIAL_KEY_WORDS"] = {"Id","SWARM_FLAME"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 8*Robots}}}, --default 3
+	
 	{["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 50*Starships}, --default 16
@@ -287,7 +303,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 67.5*Starships}, --default 20, HardModeMultiplier 1.5
 		{"TechDamageChance", 0.075*StarshipTech}}}, --default 0.075		Added Xen0nex
-
+	
+	{["SPECIAL_KEY_WORDS"] = {"Id","HIVEGUN"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 67.5*Starships}, --default 20
+		{"TechDamageChance", 0.075*StarshipTech}}}, --default 0.075
+		
+	{["SPECIAL_KEY_WORDS"] = {"Id","HIVELASER"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 120*Starships}, --default 80
+		{"TechDamageChance", 0.075*StarshipTech}}}, --default 0.075
+	
+	{["SPECIAL_KEY_WORDS"] = {"Id","HIVELASERSMALL"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 25*Starships}, --default 7.5
+		{"TechDamageChance", 0.075*StarshipTech}}}, --default 0.075
+	
+	{["SPECIAL_KEY_WORDS"] = {"Id","HIVELASER_HIGH"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 75*Starships}, --default 50
+		{"TechDamageChance", 0.075*StarshipTech}}}, --default 0.075
+	
 	{["SPECIAL_KEY_WORDS"] = {"Id","GASPLANT"},		--Hazardous Flora in caves which steadily release spores/gas
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 100*Flora}}}, --default 18

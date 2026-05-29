@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Solar Ship Always Sails",
 ["MOD_AUTHOR"]      = "Mjstral & Babscoole",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Solar sail always unfolded",
 ["MODIFICATIONS"]   =
   {

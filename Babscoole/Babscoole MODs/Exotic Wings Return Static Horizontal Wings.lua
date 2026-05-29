@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Exotic Wings Return Static Horizontal Wings",
 ["MOD_AUTHOR"]      = "Babscoole, Seekker, and Mjjstral",
-["NMS_VERSION"]     = "6.18",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Exotic ship wing configuration, always horizontal.",
 ["MODIFICATIONS"]   =
   {

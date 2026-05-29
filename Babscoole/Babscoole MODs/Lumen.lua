@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Lumen",
 ["MOD_AUTHOR"]      = "Exosolar and Babscoole",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Makes many of the buildable light sources produce far more light and directional",
 ["MODIFICATIONS"]   =
   {

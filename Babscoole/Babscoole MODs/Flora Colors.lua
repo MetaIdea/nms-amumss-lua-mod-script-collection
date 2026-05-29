@@ -290,7 +290,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Flora Colors",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "This mod edits the Flora colors. Currently, this means Grass, Tree leaves, and Shrubs of the Lush planet type",
 ["MODIFICATIONS"]   =
   {
@@ -377,6 +377,6 @@ for i = 1, #DataTable do
   {
     ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},
     ["PRECEDING_KEY_WORDS"] = {"Colours"},
-    ["EXML_FLAGS"]  = "OVERWRITE",
+    ["EXML_FLAGS"] = "OVERWRITE",
   }
 end

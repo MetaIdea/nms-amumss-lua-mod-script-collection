@@ -3,7 +3,7 @@ LuaAuthor = "DeathWrench and Babscoole and Xen0nex"
 --ModName = "gExos Challenge"
 ModNameSub = "Space Combat+Larger Space BattlesX"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "6_04"
+GameVersion = "6_4"
 ModVersion = "a"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships & some freighters (individual ships have additonal multipliers applied)
@@ -410,6 +410,7 @@ LargerBattleChanges =
 			]]
 		}
 	},
+	--[[--Deprecated in NMS v6.4
 	{
 		{
 			"BattleSpawns"				--These are Freighters during Freighter-Pirate battles
@@ -460,35 +461,7 @@ LargerBattleChanges =
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			--[[--DUPLICATE TARGET
-			{--Freighter
-				{
-					"ChildSpawns", "GcAIShipSpawnData", "0",	6
-				},
-				{
-					{"Spread",	2400,		4200},	--2400,		2500
-					{"Count",	6,			12}		--4,		6
-				}
-			},
-			{--SmallFreighter
-				{
-					"ChildSpawns", "GcAIShipSpawnData", "0",	8
-				},
-				{
-					{"Spread",	800,		1800},	--500,		1000
-					{"Count",	1,			5}		--1,		3
-				}
-			},
-			{--TinyFreighter
-				{
-					"ChildSpawns", "GcAIShipSpawnData", "0",	10
-				},
-				{
-					{"Spread",	400,		800},	--400,		400
-					{"Count",	2,			3}		--2,		2
-				}
-			},
-			]]
+
 			{--CapitalFreighter
 				{
 					"BattleSpawns", "GcAIShipSpawnData", "2",	4
@@ -498,26 +471,7 @@ LargerBattleChanges =
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			--[[--DUPLICATE TARGET
-			{--Freighter
-				{
-					"ChildSpawns", "GcAIShipSpawnData", "0",	6
-				},
-				{
-					{"Spread",	1800,		1800},	--3200,		2500
-					{"Count",	3,			5}		--3,		5
-				}
-			},
-			{--Standard (regular starship)
-				{
-					"ChildSpawns", "GcAIShipSpawnData", "0",	8
-				},
-				{
-					{"Spread",	1000,		100},	--1000,		100
-					{"Count",	1,			1}		--1,		1
-				}
-			},
-			]]
+			
 			{--SmallFreighter
 				{
 					"ChildSpawns", "GcAIShipSpawnData", "1",	8
@@ -527,17 +481,7 @@ LargerBattleChanges =
 					{"Count",	1,			4}		--1,		4
 				}
 			},
-			--[[--DUPLICATE TARGET
-			{--TinyFreighter		(this entry is added manually at the bottom of the MBIN_CHANGE_TABLE)
-				{
-					"ChildSpawns", "GcAIShipSpawnData", "0",	10
-				},
-				{
-					{"Spread",	600,		900},	--500,		700
-					{"Count",	0,			4}		--0,		3
-				}
-			},
-			]]
+			
 			{--CapitalFreighter
 				{
 					"BattleSpawns", "GcAIShipSpawnData", "3",	4
@@ -547,46 +491,10 @@ LargerBattleChanges =
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			--[[--DUPLICATE TARGET
-			{--Freighter
-				{
-					"ChildSpawns", "GcAIShipSpawnData", "0",	6
-				},
-				{
-					{"Spread",	1800,		1800},	--1800,		1800
-					{"Count",	3,			5}		--3,		5
-				}
-			},
-			{--Standard (regular starship)
-				{
-					"ChildSpawns", "GcAIShipSpawnData", "0",	8
-				},
-				{
-					{"Spread",	1000,		100},	--1000,		100
-					{"Count",	1,			1}		--1,		1
-				}
-			},
-			{--SmallFreighter
-				{
-					"ChildSpawns", "GcAIShipSpawnData", "1",	8
-				},
-				{
-					{"Spread",	1000,		1500},	--1000,		1500
-					{"Count",	1,			4}		--1,		4
-				}
-			},
-			{--TinyFreighter
-				{
-					"ChildSpawns", "GcAIShipSpawnData", "0",	10
-				},
-				{
-					{"Spread",	500,		700},	--500,		700
-					{"Count",	0,			3}		--0,		3
-				}
-			},
-			]]
 		}
 	},
+	]]
+	--[[--Deprecated in NMS v6.4
 	{
 		{
 			"BattlePirateSpawns"				--These are presumably all related to Pirate Dreadnought battles, as this section was added in the NMS v4.4 update
@@ -642,6 +550,8 @@ LargerBattleChanges =
 			}
 		}
 	},
+	]]
+	--[[--Deprecated in NMS v6.4
 	{
 		{
 			"BattleInitialStandardSpawns"			--These are presumably friendly ships that fight the pirates during freighter-pirates battles
@@ -685,6 +595,8 @@ LargerBattleChanges =
 			}
 		}
 	},
+	]]
+	--[[--Deprecated in NMS v6.4
 	{
 		{
 			"BattleInitialPirateSpawns"			--These DO attack Freighters.	For the following, RewardMessage is NOTIFY_PIRATE_BATTLE_WIN
@@ -728,6 +640,8 @@ LargerBattleChanges =
 			}
 		}
 	},
+	]]
+	--[[--Deprecated in NMS v6.4
 	{
 		{
 			"BattleSecondaryPirateSpawns"			--These DO attack Freighters.	For the following, RewardMessage is NOTIFY_PIRATE_BATTLE_WIN
@@ -771,6 +685,8 @@ LargerBattleChanges =
 			}
 		}
 	},
+	]]
+	--[[--Deprecated in NMS v6.4
 	{
 		{
 			"BattleRecurringPirateSpawns"			--(This section added in the NMS v4.4 update)
@@ -814,6 +730,7 @@ LargerBattleChanges =
 			}
 		}
 	},
+	]]
 	--[[
 	{
 		{
@@ -879,15 +796,792 @@ LargerBattleChanges =
 	]]
 }
 
+--Various types of battles (e.g. with or against freighters), reorganized in NMS v6.4
+SpaceBattleSpawnsChanges =
+{
+	{
+		{
+			"None"				--This seems to be Civilian Freighters / starships? (doesn't attack freighters)
+		},
+		{
+			{--Standard??? (regular starship???)
+				{
+					"AlliedFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Standard??? (regular starship???)
+				{
+					"AlliedInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Hostile flagship/regular starship??? (doesn't attack freighters)
+				{
+					"HostileFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Hostile Standard??? (Hostile regular starship???)
+				{
+					"HostileInitialFlybySpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Hostile Standard??? (Hostile regular starship???)
+				{
+					"HostileInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)
+				{
+					"HostileRecurringSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			
+			{--Hostile Standard reinforcements??? (Hostile regular starship???)
+				{
+					"HostileFrigateReinforcementsSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+		}
+	},
+	{
+		{
+			"PirateShipsEasy"				--This seems to be civilian freighter vs. Pirate starship battles
+		},
+		{
+			{--Freighter
+				{
+					"AlliedFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Freighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	7
+				},
+				{
+					{"Spread",	1500,		2000},	--1500,		2000
+					{"Count",	2,			3}		--2,		3
+				}
+			},
+			{--SmallFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	9
+				},
+				{
+					{"Spread",	500,		1000},	--500,		1000
+					{"Count",	1,			2}		--1,		2
+				}
+			},
+			{--TinyFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	11
+				},
+				{
+					{"Spread",	400,		400},	--400,		400
+					{"Count",	2,			2}		--2,		2
+				}
+			},
+			{--Standard (regular starship)
+				{
+					"AlliedInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	3,			3}		--2,		2
+				}
+			},
+			{--Hostile flagship/regular starship???
+				{
+					"HostileFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+			{--Hostile Standard??? (Hostile regular starship???)	(rewards "PIRATE_BATTLE")
+				{
+					"HostileInitialFlybySpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		120},	--100,		120
+					{"Count",	3,			3}		--2,		2
+				}
+			},
+			{--Hostile Standard??? (Hostile regular starship???)	(uses "PIRATE_EASY" definition)
+				{
+					"HostileInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)	(uses "PIRATE_NOSHIELD" definition)
+				{
+					"HostileRecurringSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			
+			{--Hostile Standard reinforcements??? (Hostile regular starship???)
+				{
+					"HostileFrigateReinforcementsSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+		}
+	},
+	{
+		{
+			"PirateShipsStandard"				--This seems to be civilian freighter vs. Pirate starship battles
+		},
+		{
+			{--CapitalFreighter
+				{
+					"AlliedFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Freighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	7
+				},
+				{
+					{"Spread",	2400,		2500},	--2400,		2500
+					{"Count",	4,			6}		--4,		6
+				}
+			},
+			{--SmallFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	9
+				},
+				{
+					{"Spread",	500,		1000},	--500,		1000
+					{"Count",	2,			3}		--1,		3
+				}
+			},
+			{--TinyFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	11
+				},
+				{
+					{"Spread",	400,		400},	--400,		400
+					{"Count",	2,			3}		--2,		2
+				}
+			},
+			{--Standard (regular starship)
+				{
+					"AlliedInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	3,			3}		--2,		2
+				}
+			},
+			{--Hostile flagship/regular starship???
+				{
+					"HostileFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+			{--Hostile Standard??? (Hostile regular starship???)	(rewards "PIRATE_BATTLE")
+				{
+					"HostileInitialFlybySpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		120},	--100,		120
+					{"Count",	3,			3}		--2,		2
+				}
+			},
+			{--Hostile Standard??? (Hostile regular starship???)
+				{
+					"HostileInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)	(uses "PIRATE_NOSHIELD" definition)
+				{
+					"HostileRecurringSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			
+			{--Hostile Standard reinforcements??? (Hostile regular starship???)
+				{
+					"HostileFrigateReinforcementsSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+		}
+	},
+	{
+		{
+			"PirateShipsHard"				--This seems to be civilian freighter vs. Pirate starship battles
+		},
+		{
+			{--CapitalFreighter
+				{
+					"AlliedFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Freighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	7
+				},
+				{
+					{"Spread",	3200,		2500},	--3200,		2500
+					{"Count",	7,			8}		--7,		8
+				}
+			},
+			--[[
+			{--Standard?
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	9
+				},
+				{
+					{"Spread",	1000,		100},	--1000,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--SmallFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "1",	9
+				},
+				{
+					{"Spread",	1000,		1500},	--1000,		1500
+					{"Count",	1,			4}		--1,		4
+				}
+			},
+			]]
+			{--TinyFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	11
+				},
+				{
+					{"Spread",	500,		700},	--500,		700
+					{"Count",	2,			3}		--0,		3
+				}
+			},
+			{--Standard (regular starship)
+				{
+					"AlliedInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	3,			3}		--2,		2
+				}
+			},
+			{--Hostile flagship/regular starship???
+				{
+					"HostileFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+			{--Hostile Standard??? (Hostile regular starship???)	(rewards "PIRATE_BATTLE")
+				{
+					"HostileInitialFlybySpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		120},	--100,		120
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Hostile Standard??? (Hostile regular starship???)
+				{
+					"HostileInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)	(uses "PIRATE_NOSHIELD" definition)
+				{
+					"HostileRecurringSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			
+			{--Hostile Standard reinforcements??? (Hostile regular starship???)
+				{
+					"HostileFrigateReinforcementsSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+		}
+	},
+	{
+		{
+			"PirateFreighter"				--This seems to be civilian freighter vs. Pirate Freighter battles
+		},
+		{
+			{--CapitalFreighter		(uses "CIV_LEADER" definition)
+				{
+					"AlliedFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Freighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	7
+				},
+				{
+					{"Spread",	1800,		1800},	--1800,		1800
+					{"Count",	4,			6}		--3,		5
+				}
+			},
+			--[[
+			{--Standard?
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	9
+				},
+				{
+					{"Spread",	1000,		100},	--1000,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--SmallFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "1",	9
+				},
+				{
+					{"Spread",	1000,		1500},	--1000,		1500
+					{"Count",	1,			4}		--1,		4
+				}
+			},
+			]]
+			{--TinyFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	11
+				},
+				{
+					{"Spread",	500,		700},	--500,		700
+					{"Count",	2,			3}		--0,		3
+				}
+			},
+			{--Standard (regular starship)
+				{
+					"AlliedInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	3,			3}		--2,		2
+				}
+			},
+			{--CapitalFreighter		(uses "PIRATE_FREIGHT" definition)
+				{
+					"HostileFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Hostile Standard??? (Hostile regular starship???)	(rewards "PIRATE_BATTLE")
+				{
+					"HostileInitialFlybySpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+			{--Hostile Standard??? (Hostile regular starship???)
+				{
+					"HostileInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)	(uses "PIRATE_NOSHIELD" definition)
+				{
+					"HostileRecurringSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			
+			{--Hostile Frigate reinforcements? (Hostile Frigate)
+				{
+					"HostileFrigateReinforcementsSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	5000,		2000},	--5000,		2000
+					{"Count",	1,			1}		--3,		3
+				}
+			},
+		}
+	},
+	{
+		{
+			"SwarmHiveAtlasScripted"				--Presumably unwinnable expedition-related battle vs Hive of Glass? Happens near an Atlas Station?
+		},
+		{
+			{--Standard?
+				{
+					"AlliedFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+			{--Freighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	7
+				},
+				{
+					{"Spread",	1800,		1800},	--1800,		1800
+					{"Count",	4,			6}		--3,		5
+				}
+			},
+			--[[
+			{--Standard?
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	9
+				},
+				{
+					{"Spread",	1000,		100},	--1000,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--SmallFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "1",	9
+				},
+				{
+					{"Spread",	1000,		1500},	--1000,		1500
+					{"Count",	1,			4}		--1,		4
+				}
+			},
+			]]
+			{--TinyFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	11
+				},
+				{
+					{"Spread",	500,		700},	--500,		700
+					{"Count",	2,			3}		--0,		3
+				}
+			},
+			{--Standard (regular starship)
+				{
+					"AlliedInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+			{--CapitalFreighter		(uses "HIVE_ATLAS_INV" definition, is invulnerable) attacks freighters
+				{
+					"HostileFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--SwarmDrone	(rewards "HIVE_BATTLE") attacks freighters
+				{
+					"HostileInitialFlybySpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		120},	--100,		120
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+			{--SwarmDrone	(uses "SWARM_DRONE" definition) attacks freighters
+				{
+					"HostileInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	80,			80},	--80,		80
+					{"Count",	3,			4}		--2,		3
+				}
+			},
+			{--SwarmDrone repeating every 30 seconds???
+				{
+					"HostileRecurringSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	80,			80},	--80,		80
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			
+			{--Hostile Frigate reinforcements? (Hostile Frigate)
+				{
+					"HostileFrigateReinforcementsSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+		}
+	},
+	{
+		{
+			"SwarmHiveAtlas"				--Presumably battle vs Hive of Glass? Happens near an Atlas Station?
+		},
+		{
+			{--Standard?
+				{
+					"AlliedFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+			{--Freighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	7
+				},
+				{
+					{"Spread",	1800,		1800},	--1800,		1800
+					{"Count",	4,			6}		--3,		5
+				}
+			},
+			--[[
+			{--Standard?
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	9
+				},
+				{
+					{"Spread",	1000,		100},	--1000,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--SmallFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "1",	9
+				},
+				{
+					{"Spread",	1000,		1500},	--1000,		1500
+					{"Count",	1,			4}		--1,		4
+				}
+			},
+			]]
+			{--TinyFreighter
+				{
+					"ChildSpawns", "GcAIShipSpawnData", "0",	11
+				},
+				{
+					{"Spread",	500,		700},	--500,		700
+					{"Count",	2,			3}		--0,		3
+				}
+			},
+			{--Standard (regular starship)
+				{
+					"AlliedInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+			{--CapitalFreighter		(uses "HIVE_ATLAS" definition) attacks freighters
+				{
+					"HostileFlagshipSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		100},	--100,		100
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			{--SwarmDrone	(rewards "HIVE_BATTLE") attacks freighters
+				{
+					"HostileInitialFlybySpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	100,		120},	--100,		120
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+			{--SwarmDrone	(uses "SWARM_DRONE" definition) attacks freighters
+				{
+					"HostileInitialSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	80,			80},	--80,		80
+					{"Count",	3,			4}		--2,		3
+				}
+			},
+			{--SwarmDrone repeating every 30 seconds???
+				{
+					"HostileRecurringSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	80,			80},	--80,		80
+					{"Count",	1,			1}		--1,		1
+				}
+			},
+			
+			{--Hostile Frigate reinforcements? (Hostile Frigate)
+				{
+					"HostileFrigateReinforcementsSpawn", "GcAIShipSpawnData", "0",	5
+				},
+				{
+					{"Spread",	0,			0},		--0,		0
+					{"Count",	0,			0}		--0,		0
+				}
+			},
+		}
+	},
+}
+
+--Changes various aspects of Pirate Frigates / Dreadnoughts for Pirate Freighter battles
+PirateFrigateReinforceAt =			1						-- -1		Number of remaining Pirate Frigates in Pirate Freighter battle to trigger Pirate Frigate reinforcements from HostileFrigateReinforcementsSpawn
+FleeHealthFraction =				0.16					--0.25		Seems to be what percentage of remaining hull health to trigger the Dreadnought to attempt warping (may also attempt warping if all Anti-Freighter Cannons are destroyed)
+WarpChargeTime =					35						--35		Roughly how long the Dreadnought takes to warp away. It appears to actually escape once the counter reaches ~6 or 8 seconds remaining
+WarpChargeTimePerBrokenEngine =		0						--2			Bugged. This adds time to the UI countdown each time a Warp Engine is destroyed, but does not actually change how long until the Dreadnought warps away
+
+FrigateChanges =
+{
+	{
+		{
+			"PirateFreighter"
+		},
+		{
+			{
+				{
+					"HostileFlagshipSpawn", "GcAIShipSpawnData"
+				},
+				{--Initial Pirate Frigates in Pirate Freighter battles
+					{"Spread",	1200,		1300},	--1200,		1300
+					{"Count",	8,			8}		--6,		6
+				}
+			},
+		}
+	},
+	{
+		{
+			"SwarmHiveAtlasScripted"
+		},
+		{
+			{
+				{
+					"HostileFlagshipSpawn", "GcAIShipSpawnData"
+				},
+				{--Initial Frigates in invulnerable scripted Hive of Glass attacks on Atlas stations?
+					{"Spread",	3000,		3000},	--3000,		3000
+					{"Count",	30,			40}		--30,		30
+				}
+			},
+		}
+	},
+	{
+		{
+			"SwarmHiveAtlas",
+		},
+		{
+			{
+				{
+					"HostileFlagshipSpawn", "GcAIShipSpawnData"
+				},
+				{--Initial Frigates in Hive of Glass attacks on Atlas stations?
+					{"Spread",	3000,		3000},	--3000,		3000
+					{"Count",	30,			40}		--30,		30
+				}
+			},
+		}
+	},
+}
+
 MiscLargerChanges =
 {
-	{	--Pirate Frigates that reinforce each time the remaining Pirate Frigate count drops to the value set in "PTSd Black Hole Distance + Ship Scrapping Items + Misc.lua"
+	--[[--Deprecated in NMS v6.4
+	{--Pirate Frigates that reinforce each time the remaining Pirate Frigate count drops to the value set in "PTSd Black Hole Distance + Ship Scrapping Items + Misc.lua"
 		{
 			"BattleReinforcingPirateFrigateSpawn", "GcAIShipSpawnData",
 		},
 		{
 			{"Spread",	5000,		2000},	--5000,		2000
 			{"Count",	1,			1}		--3,		3
+		}
+	},
+	]]
+	{--Swarmer ships, possibly ones that spawn to reinforce & defend the Hive of Glass?
+		{
+			"SwarmDroneAttackSpawns", "GcAIShipSpawnData",
+		},
+		{
+			{"Spread",	300,		300},	--200,		200
+			{"Count",	4,			6}		--4,		4
 		}
 	},
 }
@@ -1041,7 +1735,7 @@ function AddPlanetBehaviour (BehaviourID)
       <Property name="AttackTurnMaxMinTime" value="3.000000" />
       <Property name="AttackTurnMaxTimeRange" value="6.000000" />
       <Property name="NumHitsBeforeBail" value="3000" />
-      <Property name="NumHitsBeforeReposition" value="1000" />
+      <Property name="NumHitsBeforeReposition" value="500" />
       <Property name="FleeBrake" value="0.800000" />
       <Property name="FleeBoost" value="3.000000" />
       <Property name="FleeBrakeTime" value="0.500000" />
@@ -1081,11 +1775,11 @@ function AddSpaceBehaviour (BehaviourID)
       <Property name="AttackShootTimeMax" value="3.000000" />
       <Property name="AttackReadyTime" value="0.500000" />
       <Property name="AttackMaxTime" value="10.000000" />
-      <Property name="AttackApproachOffset" value="180.000000" />
+      <Property name="AttackApproachOffset" value="90.000000" />
       <Property name="AttackApproachMinRange" value="300.000000" />
       <Property name="AttackApproachMaxRange" value="800.000000" />
       <Property name="AttackTooCloseRange" value="90.000000" />
-      <Property name="AttackFlybyOffset" value="50.000000" />
+      <Property name="AttackFlybyOffset" value="300.000000" />
       <Property name="AttackBoostTimeToRange" value="1.500000" />
       <Property name="AttackBoostRange" value="2000.000000" />
       <Property name="AttackBoostAngle" value="15.000000" />
@@ -1097,25 +1791,25 @@ function AddSpaceBehaviour (BehaviourID)
       <Property name="NumHitsBeforeBail" value="3000" />
       <Property name="NumHitsBeforeReposition" value="2000" />
       <Property name="FleeBrake" value="1.000000" />
-      <Property name="FleeBoost" value="8.000000" />
-      <Property name="FleeBrakeTime" value="3.000000" />
-      <Property name="FleeRepositionTime" value="3.500000" />
-      <Property name="FleeRepositionAngleMin" value="140.000000" />
-      <Property name="FleeRepositionAngleMax" value="180.000000" />
+      <Property name="FleeBoost" value="1.000000" />
+      <Property name="FleeBrakeTime" value="5.000000" />
+      <Property name="FleeRepositionTime" value="20.000000" />
+      <Property name="FleeRepositionAngleMin" value="45.000000" />
+      <Property name="FleeRepositionAngleMax" value="45.000000" />
       <Property name="FleeUrgentBrake" value="2.000000" />
       <Property name="FleeUrgentBoost" value="2.000000" />
       <Property name="FleeUrgentBrakeTime" value="3.000000" />
-      <Property name="FleeRepositionUrgentTime" value="1.000000" />
-      <Property name="FleeRepositionUrgentAngleMin" value="180.000000" />
+      <Property name="FleeRepositionUrgentTime" value="3.000000" />
+      <Property name="FleeRepositionUrgentAngleMin" value="120.000000" />
       <Property name="FleeRepositionUrgentAngleMax" value="180.000000" />
-      <Property name="FleeRange" value="650.000000" />
-      <Property name="FleeMinTime" value="0.500000" />
+      <Property name="FleeRange" value="900.000000" />
+      <Property name="FleeMinTime" value="0.000000" />
       <Property name="FleeMaxTime" value="10.000000" />
-      <Property name="FleeUrgentRange" value="100.000000" />
+      <Property name="FleeUrgentRange" value="300.000000" />
       <Property name="PlanetFleeHeightExtra" value="200.000000" />
       <Property name="AttackTargetMinRange" value="250.000000" />
       <Property name="AttackTargetMaxRange" value="600.000000" />
-      <Property name="AttackTargetOffsetMin" value="100.000000" />
+      <Property name="AttackTargetOffsetMin" value="300.000000" />
       <Property name="AttackTargetOffsetMax" value="500.000000" />
       <Property name="AttackTargetSwitchTargetTime" value="10.000000" />
     </Property>]]
@@ -1227,6 +1921,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] 	=
 			{
 				{"AttackData", "PIRATE"}			--"PIRATE_EASY"
+			}
+		},
+		{
+			["PRECEDING_FIRST"] = "true",
+			["PRECEDING_KEY_WORDS"] = {"SpaceBattleSpawns"},
+			["SPECIAL_KEY_WORDS"] = {"PirateFreighter", "GcSpaceBattleSpawnData"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"HostileFrigateCountForReinforce", PirateFrigateReinforceAt},
+				{"FleeHealthFraction", FleeHealthFraction},
+				{"WarpChargeTime", WarpChargeTime},
+				{"WarpChargeTimePerBrokenEngine", WarpChargeTimePerBrokenEngine}
 			}
 		},
 	}
@@ -1626,6 +2332,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"LaserDamageLevel", 2},			--default 1
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","SWARM_FRIG"},					--Swarmer Frigates
+	["PRECEDING_FIRST"] = "true",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},	--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
+		{"Engine", "SPACE_EASY"},		--default "SPACE_EASY"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},			--default ""
+		{"Health", math.floor(BossFreighterParts*13125*0.5)},					--default 13125
+		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*124375*0.5)},	--default 124375
+		{"Shield", ""},				--default ""
+		{"LaserDamageLevel", 2},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","CIV_LEADER"},					--Civilian freighter fighting pirate dreadnought?
 	["PRECEDING_FIRST"] = "true",
 	["VALUE_CHANGE_TABLE"] = {
@@ -1639,6 +2360,85 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"LevelledExtraHealth", math.floor(1*0)},	--default 0
 		{"Shield", "CIVLEAD_SHIELD"},				--default "CIVLEAD_SHIELD"
 		{"LaserDamageLevel", 2},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","SWARM_DRONE"},					--Swarmer Drones
+	["PRECEDING_FIRST"] = "true",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SWARMDRONE"},		--default "SWARMDRONE"
+		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SWARMDRONE"},			--default "SWARMDRONE"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},			--default ""
+		{"Health", math.floor(ShipHull*6500*1)},				--default 6500
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*18000*1)},		--default 18000
+		{"Shield", "STANDARD"},				--default "STANDARD"
+		{"LaserDamageLevel", 1},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","SWARM_HIVE"},					--Hive of Glass?
+	["PRECEDING_FIRST"] = "true",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},				--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SPACE_HARD"},			--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},			--default ""
+		{"Health", math.floor(BossFreighterParts*66000*1)},				--default 66000
+		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*605000*1)},		--default 605000
+		{"Shield", "SWARM_HIVE"},			--default "SWARM_HIVE"
+		{"LaserDamageLevel", 2},			--default 1
+		{"DamageMultiplier", "BOSSFREI_HULL"},			--default "FREIGHT_HULL", BOSSFREI_HULL added by PTSd in "PTSd Weapons Rebalance.lua"
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","HIVE_ATLAS"},					--Hive vs. Atlas Station fight?
+	["PRECEDING_FIRST"] = "true",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},				--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SPACE_HARD"},			--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},			--default ""
+		{"Health", math.floor(BossFreighterParts*66000*1)},				--default 66000
+		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*605000*1)},		--default 605000
+		{"Shield", "SWARM_HIVE"},			--default "SWARM_HIVE"
+		{"LaserDamageLevel", 2},			--default 1
+		{"DamageMultiplier", "SWARM_HIVE"},	--default SWARM_HIVE
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","HIVE_ATLAS_INV"},					--scripted Hive vs. Atlas Station fight (invulnerable)?
+	["PRECEDING_FIRST"] = "true",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},				--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SPACE_HARD"},			--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},			--default ""
+		{"Health", math.floor(BossFreighterParts*66000*1)},				--default 66000
+		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*605000*1)},		--default 605000
+		{"Shield", "SWARM_HIVE"},			--default "SWARM_HIVE"
+		{"LaserDamageLevel", 2},			--default 1
+		{"DamageMultiplier", "INVULNERABLE"},	--default INVULNERABLE
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","HIVE_AMBIENT"},					--unclear Hive of Glass encounter (invulnerable)?
+	["PRECEDING_FIRST"] = "true",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},				--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SPACE_HARD"},			--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},			--default ""
+		{"Health", math.floor(BossFreighterParts*66000*1)},				--default 66000
+		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*605000*1)},		--default 605000
+		{"Shield", "SWARM_HIVE"},			--default "SWARM_HIVE"
+		{"LaserDamageLevel", 2},			--default 1
+		{"DamageMultiplier", "INVULNERABLE"},	--default INVULNERABLE
 		}},
 	
 	--Behaviours
@@ -1655,10 +2455,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"AttackShootTimeMin", 1},
 		{"AttackShootTimeMax", 10},
 		{"AttackMaxTime", 40},
-		{"AttackApproachOffset", 800},
+		{"AttackApproachOffset", 100},					--(800)
 		{"AttackApproachMinRange", 40},						
 		{"AttackTooCloseRange", 150},						
-		{"AttackFlybyOffset", -200},
+		{"AttackFlybyOffset", 300},					--(-200)
 		{"AttackBoostAngle", 10},
 		{"NumHitsBeforeBail", 3000},						
 		{"NumHitsBeforeReposition", 2000},					
@@ -1676,10 +2476,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"AttackShootTimeMin", 5},							--1
 		{"AttackShootTimeMax", 20},							--3
 		{"AttackMaxTime", 50},								--10
-		{"AttackApproachOffset", 300},						--180
-		{"AttackApproachMinRange", 40},						--300
+		{"AttackApproachOffset", 150},						--90	(300)
+		{"AttackApproachMinRange", 40},						--90
 		{"AttackTooCloseRange", 120},						--800
-		{"AttackFlybyOffset", 50},							--50
+		{"AttackFlybyOffset", 300},							--300	(50)
 		{"AttackBoostAngle", 10},							--15
 		{"NumHitsBeforeBail", 4500},						--3000
 		{"NumHitsBeforeReposition", 3000},					--2000
@@ -1697,10 +2497,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"AttackShootTimeMin", 10},
 		{"AttackShootTimeMax", 40},
 		{"AttackMaxTime", 60},
-		{"AttackApproachOffset", 400},
+		{"AttackApproachOffset", 200},					--(400)
 		{"AttackApproachMinRange", 40},						
 		{"AttackTooCloseRange", 100},						
-		{"AttackFlybyOffset", 50},
+		{"AttackFlybyOffset", 300},						--(50)
 		{"AttackBoostAngle", 210},
 		{"NumHitsBeforeBail", 6000},						
 		{"NumHitsBeforeReposition", 4000},					
@@ -1724,7 +2524,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"AttackFlybyOffset", -150},
 		{"AttackBoostAngle", 10},
 		{"NumHitsBeforeBail", 3000},
-		{"NumHitsBeforeReposition", 1000},
+		{"NumHitsBeforeReposition", 500},					--(1000)
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PLANET"},
@@ -1745,7 +2545,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"AttackFlybyOffset", 50},							--150
 		{"AttackBoostAngle", 210},							--40
 		{"NumHitsBeforeBail", 4500},						--3000
-		{"NumHitsBeforeReposition", 1500},					--1000
+		{"NumHitsBeforeReposition", 750},					--500		(1000)
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PLANET_HRD"},			--Custom Behaviour
@@ -1766,7 +2566,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"AttackFlybyOffset", 50},
 		{"AttackBoostAngle", 210},
 		{"NumHitsBeforeBail", 6000},
-		{"NumHitsBeforeReposition", 2000},
+		{"NumHitsBeforeReposition", 1000},					--(2000)
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
@@ -1873,6 +2673,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"NumHitsBeforeBail", 900	},						--600
 		{"NumHitsBeforeReposition", 1500},					--1000
 		}},
+	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
+	["SPECIAL_KEY_WORDS"] = {"Id","SWARMDRONE"},
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
+	["VALUE_CHANGE_TABLE"] = {
+		{"GunDispersionAngle", 1.5},						--5.5
+		{"GunFireRate", 0.06},								--0.15
+		{"LaserHealthPoint", 50},							--50
+		{"AttackWeaponRange", 1600},						--700
+		{"AttackShootWaitTime", 0.1},						--1
+		{"AttackShootTimeMin", 5},							--1
+		{"AttackShootTimeMax", 20},							--3
+		{"AttackMaxTime", 50},								--10
+		{"AttackApproachOffset", 150},						--90
+		{"AttackApproachMinRange", 40},						--300
+		{"AttackTooCloseRange", 90},						--90
+		{"AttackFlybyOffset", 300},							--300
+		{"AttackBoostAngle", 10},							--15
+		{"NumHitsBeforeBail", 6000},						--4000
+		{"NumHitsBeforeReposition", 1500},					--1000
+		}},
 	
 	--Engines
 		--Applying the same PowerSettingEngineMul multiplier from "PTSd Power Settings.lua" to BoostSpeed, to compensate how diverting power to engines makes it easier to escape pirates
@@ -1972,6 +2793,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"DirectionBrake", 10},								--10
 		{"Roll", 1.5},										--1.5
 		{"MinHeight", 15},									--15
+		{"Hovering", "false"},								--"false"
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"EngineTable"},
+	["SPECIAL_KEY_WORDS"] = {"Id","SWARMDRONE"},
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
+	["VALUE_CHANGE_TABLE"] = {
+		{"MinSpeed", 10},									--10
+		{"MaxSpeed", 140},									--60
+		{"BoostSpeed", 356*1.3},							--300		NOTE: Often you can still outrun enemy ships even if your ship's "CombatEngine" 's "BoostMaxSpeed" is only ~75% of this value, presumably due to how the enemy ships occassionally stop boosting when pursuing the player
+		{"TurnMin", 0.6},									--0.6
+		{"DirectionBrake", 1.75},								--2
+		{"Roll", 0},										--0
+		{"MinHeight", 15},									--30
 		{"Hovering", "false"},								--"false"
 		}},
 	
@@ -2085,6 +2920,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*55000)},					--Custom	[220000]
 		{"RechargeTime", 72},										--Custom	[96]
 		{"RechargeDelayTime", 12},									--Custom	[12]
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+	["SPECIAL_KEY_WORDS"] = {"Id","SWARM_HIVE"},
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Health", math.floor(1*10000000*1)},								--10000000
+		{"LevelledExtraHealth", math.floor(1*0*1)},					--0
+		{"RechargeTime", 5},										--5
+		{"RechargeDelayTime", 10},									--10
 		}},
 	}},
 --WIP
@@ -2219,14 +3064,15 @@ for i = 1, #LargerBattleChanges do
 		end
 	end
 end
-for i = 1, #LargerPirateBountyChanges do
-	local SceneID = LargerPirateBountyChanges[i][1][1]
-	local Entries = LargerPirateBountyChanges[i][2]
+for i = 1, #SpaceBattleSpawnsChanges do
+	local SceneID = SpaceBattleSpawnsChanges[i][1][1]
+	local Entries = SpaceBattleSpawnsChanges[i][2]
 	
 	for j = 1, #Entries do
-		--local EntryName = Entries[j][1][1]
-		--local EntryValue = Entries[j][1][2]
-		local EntryId = Entries[j][1][3]
+		local EntryName = Entries[j][1][1]
+		local EntryValue = Entries[j][1][2]
+		local EntryIndex = Entries[j][1][3]
+		local EntrySubLevel = Entries[j][1][4]
 		
 		local SpreadCounts = Entries[j][2]
 	
@@ -2238,8 +3084,40 @@ for i = 1, #LargerPirateBountyChanges do
 			ChangesToLargerBattles[#ChangesToLargerBattles+1] =
 			{
 				["PRECEDING_FIRST"] = "true",
-				["PRECEDING_KEY_WORDS"] = {SceneID},
-				["SPECIAL_KEY_WORDS"] = {"Id", EntryId},
+				["PRECEDING_KEY_WORDS"] = {"SpaceBattleSpawns"},
+				["SPECIAL_KEY_WORDS"] = {SceneID, "GcSpaceBattleSpawnData",		EntryName,	EntryValue},
+				["SECTION_ACTIVE"] = {EntryIndex,},
+				["AFTER_KEY_WORDS"] = {SpreadCount},
+				["SUB_LEVEL"] = EntrySubLevel,
+				["REPLACE_TYPE"]         = "ONCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"X", ReplacerX},
+					{"Y", ReplacerY}
+				}
+			}
+		end
+	end
+end
+for i = 1, #FrigateChanges do
+	local SceneID = FrigateChanges[i][1][1]
+	local Entries = FrigateChanges[i][2]
+	
+	for j = 1, #Entries do
+		local EntryName = Entries[j][1][1]
+		local EntryValue = Entries[j][1][2]
+		
+		local SpreadCounts = Entries[j][2]
+	
+		for k = 1, #SpreadCounts do
+		SpreadCount = SpreadCounts[k][1]
+			ReplacerX = SpreadCounts[k][2]
+			ReplacerY = SpreadCounts[k][3]
+	
+			ChangesToLargerBattles[#ChangesToLargerBattles+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {SceneID, "GcSpaceBattleSpawnData",		EntryName,	EntryValue,		"AIShipRole", "Frigate"},
+				["SECTION_UP"] = 2,
 				["AFTER_KEY_WORDS"] = {SpreadCount},
 				["REPLACE_TYPE"]         = "ONCE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -2273,6 +3151,38 @@ for i = 1, #MiscLargerChanges do
 				}
 			}
 		end
+end
+for i = 1, #LargerPirateBountyChanges do
+	local SceneID = LargerPirateBountyChanges[i][1][1]
+	local Entries = LargerPirateBountyChanges[i][2]
+	
+	for j = 1, #Entries do
+		--local EntryName = Entries[j][1][1]
+		--local EntryValue = Entries[j][1][2]
+		local EntryId = Entries[j][1][3]
+		
+		local SpreadCounts = Entries[j][2]
+	
+		for k = 1, #SpreadCounts do
+		SpreadCount = SpreadCounts[k][1]
+			ReplacerX = SpreadCounts[k][2]
+			ReplacerY = SpreadCounts[k][3]
+	
+			ChangesToLargerBattles[#ChangesToLargerBattles+1] =
+			{
+				["PRECEDING_FIRST"] = "true",
+				["PRECEDING_KEY_WORDS"] = {SceneID},
+				["SPECIAL_KEY_WORDS"] = {"Id", EntryId},
+				["AFTER_KEY_WORDS"] = {SpreadCount},
+				["REPLACE_TYPE"]         = "ONCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"X", ReplacerX},
+					{"Y", ReplacerY}
+				}
+			}
+		end
+	end
 end
 
 local ChangesToMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
