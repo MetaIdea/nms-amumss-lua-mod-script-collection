@@ -629,9 +629,11 @@ QUICK_ACTION_BUTTON_TEMPLATE =
           <Property name="WaveActive" value="true" />
           <Property name="FixedUpAxis" value="false" />
           <Property name="Transparent" value="false" />
+          <Property name="Additive" value="false" />
           <Property name="ModelFade" value="false" />
           <Property name="FadeInTime" value="0.200000" />
           <Property name="FadeOutTime" value="0.200000" />
+          <Property name="UseBaseColourForAll" value="false" />
         </Property>
         <Property name="DelayTime" value="0.000000" />
       </Property>
@@ -726,7 +728,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.40",
 ["MODIFICATIONS"]   =
   {
     {

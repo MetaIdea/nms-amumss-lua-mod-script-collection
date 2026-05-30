@@ -984,12 +984,12 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="BuildableUnderwater" value="true" />
       <Property name="BuildableAboveWater" value="true" />
       <Property name="PlanetLimit" value="0" />
-      <Property name="FreighterBaseLimit" value="0" />
       <Property name="RegionLimit" value="0" />
       <Property name="PlanetBaseLimit" value="0" />
+      <Property name="FreighterBaseLimit" value="0" />
       <Property name="CorvetteBaseLimit" value="0" />
       <Property name="DoesNotCountTowardsComplexity" value="false" />
-      <Property name="FreighterBaseLimit" value="0" />
+      <Property name="CheckPlaceholderCollision" value="false" />
       <Property name="CheckPlayerCollision" value="true" />
       <Property name="CanStack" value="true" />
       <Property name="SnapRotateBlocked" value="false" />
@@ -1307,6 +1307,7 @@ PLACEMENTDATA_ENTITY =
           <Property name="RollingFriction" value="0.200000" />
           <Property name="AngularDamping" value="0.200000" />
           <Property name="LinearDamping" value="0.100000" />
+          <Property name="Restitution" value="0.000000" />
           <Property name="Gravity" value="20.000000" />
           <Property name="CanBeTooSteepForTeleporter" value="true" />
         </Property>
@@ -1319,6 +1320,7 @@ PLACEMENTDATA_ENTITY =
             <Property name="NavMeshAreaType" value="Auto" />
           </Property>
         </Property>
+        <Property name="StaticPhysicsTargetNode" value="Attachment" />
         <Property name="AddToWorldOnPrepare" value="true" />
         <Property name="AddToWorldImmediately" value="true" />
         <Property name="TriggerVolumeType" value="TkVolumeTriggerType">
@@ -1571,7 +1573,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]     = "0-Ultra Base Building",
 ["MOD_AUTHOR"]       = "Mjjstral and Babscoole",
 ["MOD_CONTRIBUTORS"] = "Ignacio and GhostRick",
-["NMS_VERSION"]      = "6.30",
+["NMS_VERSION"]      = "6.40",
 ["MOD_DESCRIPTION"]  = "This mod adds hundreds of new buildable items to the base building menu, as decorations",
 ["ADD_FILES"]        = ADD_FILES_TABLE,
 ["MODIFICATIONS"]    =

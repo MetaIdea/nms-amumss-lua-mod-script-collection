@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Toxic Booster",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.20",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Transform half of all planets into the type of your choice",
 ["MODIFICATIONS"]   =
   {

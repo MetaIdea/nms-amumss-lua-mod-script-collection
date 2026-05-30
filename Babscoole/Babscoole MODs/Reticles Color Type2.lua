@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Reticles Color Type2",
 ["MOD_AUTHOR"]      = "saltmaxwellpshk & Babscoole",
-["NMS_VERSION"]     = "6.30",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Changes the reticle color according to the type of weapon, allowing you to visually identify the currently equipped weapon",
 ["MODIFICATIONS"]   =
   {
