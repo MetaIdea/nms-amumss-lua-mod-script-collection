@@ -2,7 +2,7 @@
 {
 ["MOD_FILENAME"] 			= "Exocraft Inventory Improved", 
 ["MOD_AUTHOR"]				= "Zay",
-["NMS_VERSION"]				= "6.2",
+["NMS_VERSION"]				= "6.4",
 ["MOD_DESCRIPTION"]			= "All tech slots 10x4. Inventories Small 10x5, Medium 10x6, Large 10x7",
 ["MODIFICATIONS"] 			= 
 	{

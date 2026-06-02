@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "NewAutophageHead"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "620"
+METADATA_NMS_VERSION    = "640"
 METADATA_MOD_DESC       = "This mod adds a new Autophage head option to use in player customisation. Modifies various files in MODELS\COMMON\PLAYER\PLAYERCHARACTER and METADATA directories."
 
 

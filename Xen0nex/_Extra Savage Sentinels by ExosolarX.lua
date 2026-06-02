@@ -1,5 +1,5 @@
 ModName = "_Extra Savage Sentinels by ExosolarX"
-GameVersion = "5_61"
+GameVersion = "6_42"
 Description = "Increases the difficulty of Sentinels by changing aggression, firerate, range, sight distance, etc."
 
 --Multiplier to apply to the base health of all planetary Sentinels
@@ -832,7 +832,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{	--Also added by Xen0nex
-							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTSMG"},			--Probably weapon of the Corrupted Drones
+							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTSMG"},			--Weapon of the Corrupted Drones
 							--["INTEGER_TO_FLOAT"] = "FORCE",	
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -847,7 +847,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{	--Also added by Xen0nex
-							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTGRENADE"},		--Probably weapon of the Corrupted Drones
+							["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONESMG"},			--Weapon of the Swarmer Drones
+							--["INTEGER_TO_FLOAT"] = "FORCE",	
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ProjectileSpread", 0},							--0
+								{"FireRate", 0.04},									--0.05
+								{"FireTimeMin", 2},									--1.5
+								{"FireTimeMax", 4.5},								--3
+								{"NumShotsMin", 12},								--8
+								{"NumShotsMax", 30},								--20
+								{"Range", 40}										--40	Multiplied by the change to GcDroneWeaponData above
+								
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTGRENADE"},		--Weapon of the Corrupted Drones
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ProjectileSpread", 0},							--0
@@ -862,7 +877,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{	--Also added by Xen0nex
-							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTSHOTGUN"},			--Probably weapon of the Corrupted Drones
+							["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONEGREN"},			--Weapon of the Swarmer Drones
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ProjectileSpread", 0},							--0
+								{"FireRate", 0.5},									--0.5
+								{"FireTimeMin", 5},									--5
+								{"FireTimeMax", 8},									--8
+								{"NumShotsMin", 1},									--1
+								{"NumShotsMax", 3},									--3
+								{"Range", 120},										--120	NOT Multiplied by the change to GcDroneWeaponData above
+								{"ExplosionRadius", 2.2}							--2.2
+								
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTSHOTGUN"},			--Weapon of the Corrupted Drones
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"NumProjectiles", 12},								--10
@@ -877,7 +907,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{	--Also added by Xen0nex
-							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTFLAME"},			--Probably weapon of the Corrupted Drones
+							["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONESHOT"},			--Weapon of the Swarmer Drones
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"NumProjectiles", 12},								--10
+								{"ProjectileSpread", 0.07},							--0.06
+								{"FireRate", 0.18},									--0.2
+								{"FireTimeMin", 5},									--4.5
+								{"FireTimeMax", 8},									--7
+								{"NumShotsMin", 3},									--2
+								{"NumShotsMax", 6},									--4
+								{"Range", 30}										--30	Multiplied by the change to GcDroneWeaponData above
+								
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","CORRUPTFLAME"},			--Weapon of the Corrupted Drones
 							--["INTEGER_TO_FLOAT"] = "FORCE",		
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -892,7 +937,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{	--Also added by Xen0nex
-							["SPECIAL_KEY_WORDS"] = {"Id","RUINMECH_GREN"},				--Probably weapon of the new Golem Mech?
+							["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONEFLAME"},		--Weapon of the Swarmer Drones
+							--["INTEGER_TO_FLOAT"] = "FORCE",		
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ProjectileSpread", 0.07},							--0.05
+								{"FireRate", 0.03},									--0.04
+								{"FireTimeMin", 4.5},								--4.5
+								{"FireTimeMax", 7},									--7
+								{"NumShotsMin", 45},								--30
+								{"NumShotsMax", 60},								--40
+								{"Range", 20}										--20	Multiplied by the change to GcDroneWeaponData above
+								
+							}
+						},
+						{	--Also added by Xen0nex
+							["SPECIAL_KEY_WORDS"] = {"Id","RUINMECH_GREN"},				--Weapon of the new Golem Mech?
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ProjectilesPerShot", 3},							--3
@@ -906,7 +966,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{	--Also added by Xen0nex
-							["SPECIAL_KEY_WORDS"] = {"Id","RUINMECHLASER"},				--Probably weapon of the new Golem Mech?
+							["SPECIAL_KEY_WORDS"] = {"Id","RUINMECHLASER"},				--Weapon of the new Golem Mech?
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ProjectileSpread", 0},							--0
@@ -922,7 +982,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{	--Also added by Xen0nex
-							["SPECIAL_KEY_WORDS"] = {"Id","STONEGRENADE"},				--Probably weapon of the new Golem Floater?
+							["SPECIAL_KEY_WORDS"] = {"Id","STONEGRENADE"},				--Weapon of the new Golem Floater?
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"NumProjectiles", 1},								--1
@@ -1203,6 +1263,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"BaseHealth",	math.floor(SentHealth*4800*0.8),},					--4800
 								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*8800*0.8),},--8800
+								{"RepairTime","9",},											--9
+								{"RepairThreshold","60",},										--60
+							}
+						},
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SWARMDRONE_PLANET.SCENE.MBIN",},
+							--["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth",	math.floor(SentHealth*2800),},					--2800
+								{"HealthIncreasePerLevel",	math.floor(SentLevelHealth*6800),},	--6800
 								{"RepairTime","9",},											--9
 								{"RepairThreshold","60",},										--60
 							}

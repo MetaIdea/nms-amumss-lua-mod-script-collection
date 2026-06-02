@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ExpeditionCatalogueImproved"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "636"
+METADATA_NMS_VERSION    = "640"
 METADATA_MOD_DESC       = "This mod improves the Previous Expeditions page in Catalogue and Guide section by rescaling patches and removing bugged out entries"
 
 
@@ -33,13 +33,13 @@ LIST_DONE_EXPEDS =
     {"ID","PATCH06",},{"ID","PATCH07",},{"ID","PATCH08",},{"ID","PATCH09",},{"ID","PATCH10",},
     {"ID","PATCH11",},{"ID","PATCH12",},{"ID","PATCH13",},{"ID","PATCH14",},{"ID","PATCH15",},
     {"ID","PATCH16",},{"ID","PATCH17",},{"ID","PATCH18",},{"ID","PATCH19",},{"ID","PATCH20",},
-    {"ID","PATCH21",},
+    {"ID","PATCH21",},{"ID","PATCH22",},
 }
 
 -- list of keywords for hardcoded empty entries
 LIST_REMOVED_EXPEDS =
 {
-    {"ID","PATCH22",},{"ID","PATCH23",},{"ID","PATCH24",},{"ID","PATCH25",},
+    {"ID","PATCH23",},{"ID","PATCH24",},{"ID","PATCH25",},
     {"ID","PATCH26",},{"ID","PATCH27",},{"ID","PATCH28",},{"ID","PATCH29",},{"ID","PATCH30",},
     {"ID","PATCH31",},{"ID","PATCH32",},{"ID","PATCH33",},{"ID","PATCH34",},{"ID","PATCH35",},
     {"ID","PATCH36",},{"ID","PATCH37",},{"ID","PATCH38",},{"ID","PATCH39",},{"ID","PATCH40",},

@@ -484,7 +484,7 @@ local Custom_Upgrade_Technology =
         {
             COLD1 = {Type = 'Substance', Amount = 300},
             ASTEROID1 = {Type = 'Substance', Amount = 120},
-            FARMPROD4 = {Type = 'Product', Amount = 1}
+            MEGAPROD1 = {Type = 'Product', Amount = 1}
         }
     },
     UT_HEAT2 =
@@ -547,7 +547,7 @@ local Custom_Upgrade_Technology =
         {
             HOT1 = {Type = 'Substance', Amount = 300},
             ASTEROID1 = {Type = 'Substance', Amount = 120},
-            SALVAGE_TECH5 = {Type = 'Product', Amount = 1}
+            COMPOUND6 = {Type = 'Product', Amount = 1}
         }
     },
     UT_TOXIC2 =
@@ -610,7 +610,7 @@ local Custom_Upgrade_Technology =
         {
             TOXIC1 = {Type = 'Substance', Amount = 300},
             ASTEROID1 = {Type = 'Substance', Amount = 120},
-            OXY_CRAFT = {Type = 'Product', Amount = 1}
+            COMPOUND4 = {Type = 'Product', Amount = 1}
         }
     },
     UT_RAD2 =
@@ -673,7 +673,7 @@ local Custom_Upgrade_Technology =
         {
             RADIO1 = {Type = 'Substance', Amount = 300},
             ASTEROID1 = {Type = 'Substance', Amount = 120},
-            WATER_CRAFT = {Type = 'Product', Amount = 50}
+            MEGAPROD3 = {Type = 'Product', Amount = 1}
         }
     },
     UT_WATER3 =

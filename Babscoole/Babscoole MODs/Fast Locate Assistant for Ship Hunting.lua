@@ -179,7 +179,7 @@ shipInfo = {
 -- We need to find keywords that let us specify which code block to modify.
 -- Still using AISPACESHIPMANAGER for these.
 -- Alter these values if they ever change to something else at some point.
-shipFaction		= "Civilian"	-- We're not interested in Player/Pirate/Police factions
+shipFaction		= "ShipModels"	-- We're not interested in Player/Pirate/Police factions
 fileHandle		= "Filename"	-- In case they change this again in the future
 
 -- Time to figure out what ship types we need to work with.

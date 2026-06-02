@@ -392,4 +392,143 @@ NMS_MOD_DEFINITION_CONTAINER	=
 			}
 		},
 	},
+["ADD_FILES"]				=	{
+    { 
+		FILE_DESTINATION	= "LocTable.txt",
+		FILE_CONTENT		= [[
+=NPC_LANDING_NAME_L
+EN=NPC Landing Pad
+FR=NPC Landing Pad
+IT=NPC Landing Pad
+DE=NPC Landefeld
+ES=NPC Landing Pad
+RU=NPC Landing Pad
+PL=NPC Landing Pad
+NL=NPC Landing Pad
+PT=NPC Landing Pad
+LA=NPC Landing Pad
+BR=NPC Landing Pad
+Z1=NPC Landing Pad
+ZH=NPC Landing Pad
+Z2=NPC Landing Pad
+KO=NPC Landing Pad
+JA=NPC Landing Pad
+US=NPC Landing Pad
+
+=NPC_LANDING_ALT_NAME_L
+EN=Alternative NPC Landing Pad
+FR=Alternative NPC Landing Pad
+IT=Alternative NPC Landing Pad
+DE=Alternatives NPC Landefeld
+ES=Alternative NPC Landing Pad
+RU=Alternative NPC Landing Pad
+PL=Alternative NPC Landing Pad
+NL=Alternative NPC Landing Pad
+PT=Alternative NPC Landing Pad
+LA=Alternative NPC Landing Pad
+BR=Alternative NPC Landing Pad
+Z1=Alternative NPC Landing Pad
+ZH=Alternative NPC Landing Pad
+Z2=Alternative NPC Landing Pad
+KO=Alternative NPC Landing Pad
+JA=Alternative NPC Landing Pad
+US=Alternative NPC Landing Pad
+
+=NPC_LANDING_NAME
+EN=NPC LANDING PAD
+FR=NPC LANDING PAD
+IT=NPC LANDING PAD
+DE=NPC LANDEFELD
+ES=NPC LANDING PAD
+RU=NPC LANDING PAD
+PL=NPC LANDING PAD
+NL=NPC LANDING PAD
+PT=NPC LANDING PAD
+LA=NPC LANDING PAD
+BR=NPC LANDING PAD
+Z1=NPC LANDING PAD
+ZH=NPC LANDING PAD
+Z2=NPC LANDING PAD
+KO=NPC LANDING PAD
+JA=NPC LANDING PAD
+US=NPC LANDING PAD
+
+=NPC_LANDING_ALT_NAME
+EN=ALTERNATIVE NPC LANDING PAD
+FR=ALTERNATIVE NPC LANDING PAD
+IT=ALTERNATIVE NPC LANDING PAD
+DE=ALTERNATIVES NPC LANDEFELD
+ES=ALTERNATIVE NPC LANDING PAD
+RU=ALTERNATIVE NPC LANDING PAD
+PL=ALTERNATIVE NPC LANDING PAD
+NL=ALTERNATIVE NPC LANDING PAD
+PT=ALTERNATIVE NPC LANDING PAD
+LA=ALTERNATIVE NPC LANDING PAD
+BR=ALTERNATIVE NPC LANDING PAD
+Z1=ALTERNATIVE NPC LANDING PAD
+ZH=ALTERNATIVE NPC LANDING PAD
+Z2=ALTERNATIVE NPC LANDING PAD
+KO=ALTERNATIVE NPC LANDING PAD
+JA=ALTERNATIVE NPC LANDING PAD
+US=ALTERNATIVE NPC LANDING PAD
+
+=UI_LANDINGPAD_TREE
+EN=Landing Pads
+FR=Landing Pads
+IT=Landing Pads
+DE=Landefelder
+ES=Landing Pads
+RU=Landing Pads
+PL=Landing Pads
+NL=Landing Pads
+PT=Landing Pads
+LA=Landing Pads
+BR=Landing Pads
+Z1=Landing Pads
+ZH=Landing Pads
+Z2=Landing Pads
+KO=Landing Pads
+JA=Landing Pads
+US=Landing Pads
+
+=NPC_LANDING_DESC
+EN=A stable, reinforced landing pad for starships.
+FR=A stable, reinforced landing pad for starships.
+IT=A stable, reinforced landing pad for starships.
+DE=Ein stabiles, verstärktes Landefeld für Raumschiffe.
+ES=A stable, reinforced landing pad for starships.
+RU=A stable, reinforced landing pad for starships.
+PL=A stable, reinforced landing pad for starships.
+NL=A stable, reinforced landing pad for starships.
+PT=A stable, reinforced landing pad for starships.
+LA=A stable, reinforced landing pad for starships.
+BR=A stable, reinforced landing pad for starships.
+Z1=A stable, reinforced landing pad for starships.
+ZH=A stable, reinforced landing pad for starships.
+Z2=A stable, reinforced landing pad for starships.
+KO=A stable, reinforced landing pad for starships.
+JA=A stable, reinforced landing pad for starships.
+US=A stable, reinforced landing pad for starships.
+
+=BLD_LANDINGPAD_DESCRIPTION
+EN=A stable, reinforced landing pad for starships. No NPCs can land here.
+FR=A stable, reinforced landing pad for starships. No NPCs can land here.
+IT=A stable, reinforced landing pad for starships. No NPCs can land here.
+DE=Ein stabiles, verstärktes Landefeld für Raumschiffe. Hier können keine NPCs landen.
+ES=A stable, reinforced landing pad for starships. No NPCs can land here.
+RU=A stable, reinforced landing pad for starships. No NPCs can land here.
+PL=A stable, reinforced landing pad for starships. No NPCs can land here.
+NL=A stable, reinforced landing pad for starships. No NPCs can land here.
+PT=A stable, reinforced landing pad for starships. No NPCs can land here.
+LA=A stable, reinforced landing pad for starships. No NPCs can land here.
+BR=A stable, reinforced landing pad for starships. No NPCs can land here.
+Z1=A stable, reinforced landing pad for starships. No NPCs can land here.
+ZH=A stable, reinforced landing pad for starships. No NPCs can land here.
+Z2=A stable, reinforced landing pad for starships. No NPCs can land here.
+KO=A stable, reinforced landing pad for starships. No NPCs can land here.
+JA=A stable, reinforced landing pad for starships. No NPCs can land here.
+US=A stable, reinforced landing pad for starships. No NPCs can land here.
+		]],
+		}
+	},
 }

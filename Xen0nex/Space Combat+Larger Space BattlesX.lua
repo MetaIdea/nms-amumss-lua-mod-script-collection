@@ -3,7 +3,7 @@ LuaAuthor = "DeathWrench and Babscoole and Xen0nex"
 --ModName = "gExos Challenge"
 ModNameSub = "Space Combat+Larger Space BattlesX"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "6_4"
+GameVersion = "6_43"
 ModVersion = "a"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships & some freighters (individual ships have additonal multipliers applied)
@@ -2477,8 +2477,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"AttackShootTimeMax", 20},							--3
 		{"AttackMaxTime", 50},								--10
 		{"AttackApproachOffset", 150},						--90	(300)
-		{"AttackApproachMinRange", 40},						--90
-		{"AttackTooCloseRange", 120},						--800
+		{"AttackApproachMinRange", 40},						--300
+		{"AttackTooCloseRange", 120},						--90
 		{"AttackFlybyOffset", 300},							--300	(50)
 		{"AttackBoostAngle", 10},							--15
 		{"NumHitsBeforeBail", 4500},						--3000
@@ -2680,7 +2680,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 1.5},						--5.5
 		{"GunFireRate", 0.06},								--0.15
-		{"LaserHealthPoint", 50},							--50
+		{"LaserHealthPoint", 45},							--50
 		{"AttackWeaponRange", 1600},						--700
 		{"AttackShootWaitTime", 0.1},						--1
 		{"AttackShootTimeMin", 5},							--1

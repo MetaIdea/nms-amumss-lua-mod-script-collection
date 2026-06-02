@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "6_40"
+GameVersion = "6_43"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -15,7 +15,7 @@ TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pelle
 NoNewTechAtCrashsites = true			--false		Set true to ensure all starship crashsite Distress Beacon rewards only give random-Class Upgrade Modules, not teaching a new core tech blueprint
 RevealPurpleSystemsEarly = true			--false	 	Set true to allow using Discordant Interfaces at Korvax Monoliths to reveal all Purple Systems on the Galaxy Map
 
---Changes the Class & inventory size when redeeming the six unique expedition reward starships or two unique Multi-Tools: Golden Vector, Utopia Speeder, Starborn Runner, Iron Vulture, Boundary Herald, and Wraith starships or Atlas Sceptre and Pillar of Titan Multi-Tool
+--Changes the Class & inventory size when redeeming the six unique expedition reward starships or three unique Multi-Tools: Golden Vector, Utopia Speeder, Starborn Runner, Iron Vulture, Boundary Herald, and Wraith starships or Atlas Sceptre, Pillar of Titan, and Direwasp Disintegrator Multi-Tool
 ExpShipClass = 							"C"						--"S"		Sets the Class for redeeming the expedition ships & tools
 --Changes Cargo inventory size for expedition reward starships. The game adds 1 to whatever value is entered here
 ExpShipFighterCargoSlots = 				8						--36	(For Golden Vector/Utopia Speeder)
@@ -160,6 +160,12 @@ ShipLootChanges =
 			{"SHIPBRAIN",			"SHIPBRAIN",			1,			1,			50.000000},				--"SHIPBRAIN",			1,			1,			50.000000
 		}
 	},
+	{	--Swarmers (space):	per destroyed ship containers?
+		{"R_SWARMDRONES"},						--Ships with this reward drop 1x containers?
+		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
+			{"SWARMDUST",			"SWARMDUST",			30,			50,			100.000000},			--"SWARMDUST",			30,			50,			100.000000
+		}
+	},
 	{	--Trade Ships:	per destroyed ship containers
 		{"TRADERLOOT"},							--Ships with this reward drop 1x containers
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
@@ -231,26 +237,17 @@ ShipLootChanges =
 			{"ASTEROID2",			"ROCKETSUB",			300,		500,		100.000000},			--"ASTEROID2",			300,		500,		100.000000
 		}
 	},
-	--[[{	--Pirate Type			Min	&	Max	Nanites		Shield restored (Vanilla 50)
-		{"PIRAT_LOOT_EASY",		80,		90,				75},							--Ships with this reward drop 2x containers (confirm with 3.87)
-		{	--Old Item ID		New Item ID			AmountMin	AmountMax	PercentageChance
-			
+	{	--Reward for defeating the Hive of Glass
+		{"R_HIVE_WIN"},
+		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance
+			{"SHIP_CORE_A",			"FRIG_TOKEN",			1,			2,			5.000000},				--"SHIP_CORE_A",		1,			1,			5.000000
+			{"SHIP_CORE_S",			"FREI_INV_TOKEN",		1,			1,			50.000000},				--"SHIP_CORE_S",		1,			1,			2.000000
+			--<All 7 procedural Freighter Frigate boosting upgrade modules, each with 100 %Chance at Quality 3>
 		}
 	},
-	{	--Pirate Type			Min	&	Max	Nanites		Shield restored (Vanilla 50)
-		{"PIRAT_LOOT_MED",		65,		80,				75},							--Ships with this reward drop 3x containers (confirm with 3.87)
-		{	--Old Item ID		New Item ID			AmountMin	AmountMax	PercentageChance
-			{"ALLOY4",			"ALLOY4",			2,			2,			30.000000}							--"ALLOY4",				1,			1,			30.000000
-		}
-	},
-	{	--Pirate Type			Min	&	Max	Nanites		Shield restored (Vanilla 50)
-		{"PIRAT_LOOT_HARD",		75,		100,			75},							--Ships with this reward drop 4x containers (confirm with 3.87)
-		{	--Old Item ID		New Item ID			AmountMin	AmountMax	PercentageChance
-			{"ALLOY3",			"ALLOY3",			3,			3,			30.000000},						--"ALLOY3",				1,			1,			30.000000
-			{"ALLOY4",			"ALLOY4",			3,			3,			30.000000}						--"ALLOY4",				1,			1,			30.000000
-		}
-	}]]
 }
+
+HiveLootTechQualityOverride = 2					--3		Sets the class of procedural Freighter Upgrade Modules found from destroying Hive of Glass from R_HIVE_WIN. 3 = S Class, 2 = A Class, etc.
 
 ShipCurrencyChanges =
 {
@@ -402,7 +399,7 @@ FreighterLootChanges =
 		}
 	},
 }
-FreighterLootTechQualityOverride = 0					--3		Sets the class of procedural Freighter Upgrade Modules founds from destroying civilian freighters or Pirate Dreadnoughts under "R_PIR_FREI". 3 = S Class, 2 = A Class, etc. -1 = based on System seed
+FreighterLootTechQualityOverride = 0					--3		Sets the class of procedural Freighter Upgrade Modules found from destroying civilian freighters or Pirate Dreadnoughts under "R_PIR_FREI". 3 = S Class, 2 = A Class, etc. -1 = based on System seed
 --Adds 2 items as guaranteed loot from destroying freighters, in addition to the random loot defined above under "R_PIR_FREI"
 GuaranteedFreighterLoot1 =			"FRIG_TOKEN"		--N/A		Salvaged Frigate Module
 GuaranteedFreighterLoot1Amount =	"1"					--N/A
@@ -1673,6 +1670,10 @@ GolemFloatItemAmountMin	=	1
 GolemFloatItemAmountMax	=	1
 GolemFloatItem			=	"STONE_EYE_PROD"		--	("STONE_EYE_PROD" is Vigilant Stone)
 
+--Multipliers to apply to amount of certain rewards for defeating planetary Swarmer drones
+SwarmDroneIchorMult		=	1			--7-23 Corrupted Ichor
+SwarmDroneNaniteMult	=	1			--5-10 Nanites
+
 --% Chance & amounts to drop the "Salvaged Glass" item when opening the loot capsules from dead sentinels
 DroneGlassDropChance	=	1			--66
 DroneGlassMin			=	1			--1
@@ -1712,6 +1713,7 @@ ExtraScrapChance		=	0			--0			Chance for an additional procedural Scrap item
 	--In Vanilla, the nanite reward is 15 per regular waste, 15/20/25 for small/medium/large special waste, and 10 per waste (regardless of type/size) for Autocollect
 IndustrialWasteNaniteMult =	8/3			--1			Applies a multiplier to the amount of nanites earned from processing all kinds of industrial waste at Waste Processing Plant Autocollection or furnaces (8/3 is roughly equal to 2.67)
 SpecialWasteNaniteMult =	3			--1			Applies an extra multiplier (stacks multiplicatively with the IndustrialWasteNaniteMult multiplier above) to the amount of nanites earned from processing special hazardous industrial waste such as Toxic, Explosive, or Radioactive waste
+SwarmerWasteNaniteMult =	3			--1			Applies an extra multiplier (stacks multiplicatively with the IndustrialWasteNaniteMult multiplier above) to the amount of nanites earned from processing the Swarmer debris parts which can sometimes yield Corrupted Ichor
 AutoCollectNaniteMult =		1.5*0.9		--1			Applies an extra multiplier (stacks multiplicatively with the IndustrialWasteNaniteMult multiplier above) to the amount of nanites earned from processing any kind of industrial waste by Autocollect
 
 RegularWasteSDChance =		20			--0			Adds a chance for each piece of any kind of Industrial Waste to yield some Salvaged Data in addition to nanites when processed manually into a regular furnace
@@ -1956,7 +1958,7 @@ CrystalSulphide = 2						--1		Changes the yield of Crystal Sulphide from underwa
 CrystalSulphideOther = 1				--1		Changes the yield of Crystal Sulphide from Glowing Mineral (Suspicious Packet (Goods) is controlled in SusPacketChanges above)
 AlluringSpecHadalCore = 1				--1		Changes the yield of Hadal Core from underwater Alluring Specimens
 
---Adds additional rewards to harvesting Aluuring Specimens
+--Adds additional rewards to harvesting Alluring Specimens
 	--NOTE: Currently rewarding 1 of each item instead of 2 of each item, since a side effect of making ship weapons not mine objects (disable explosions damaging objects) makes the Alluring Specimen no longer get destroyed by the Anglerfish when it spawns. 
 NewAlluringSpecRewards =
 [[<Property name="List" value="GcRewardTableItem">
@@ -3620,6 +3622,7 @@ ExoticSalvageReward =
 					<Property name="Sail" value="DROPSHIP_CORE" />
 					<Property name="Robot" value="FIGHTER_CORE" />
 					<Property name="Corvette" value="" />
+					<Property name="SwarmDrone" value="" />
 				  </Property>
 			  </Property>
             </Property>
@@ -3675,6 +3678,7 @@ ShuttleSalvageReward =
 					<Property name="Sail" value="DROPSHIP_CORE" />
 					<Property name="Robot" value="FIGHTER_CORE" />
 					<Property name="Corvette" value="" />
+					<Property name="SwarmDrone" value="" />
 				  </Property>
 			  </Property>
             </Property>
@@ -3942,7 +3946,7 @@ ExpShipRewardIds =
 }
 
 ExpStaffRewardIds =
-{"RS_S12_PHASE3", "RS_S12_STAFF", "RS_S17_PHASE4", "RS_S17_STAFF", "RS_S18_PHASE3", "RS_S18_STAFF"}
+{"RS_S12_PHASE3", "RS_S12_STAFF", "RS_S17_PHASE4", "RS_S17_STAFF", "RS_S18_PHASE3", "RS_S18_STAFF", "RS_S22_PHASE2", "RS_S22_GUN"}
 
 TeachPellets =
 [[<Property name="List" value="GcRewardTableItem">
@@ -4586,6 +4590,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","SWARM_LOOT",		"ID", "SWARMDUST"},
+				["MATH_OPERATION"] 		= "*",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	SwarmDroneIchorMult}, 
+					{"AmountMax",	SwarmDroneIchorMult} 	
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","SWARM_LOOT",		"Reward", "GcRewardMoney"},
+				["MATH_OPERATION"] 		= "*",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	SwarmDroneNaniteMult}, 
+					{"AmountMax",	SwarmDroneNaniteMult} 	
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DRONE_LOOT",		"List", "GcRewardTableItem"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4770,6 +4792,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER_SAVED",		"List", "GcRewardTableItem"},
 				["ADD"] = ProductReward("FRIG_TOKEN", FreighterRescueFrigModMin, FreighterRescueFrigModMax, FreighterRescueFrigModChance),
 				["ADD_OPTION"]  = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_HIVE_WIN"},
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"RewardChoice",	"GiveFirst_ThenAlsoSelectAlwaysFromRest"},
+					{"FreighterTechQualityOverride",	HiveLootTechQualityOverride}
+				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_FREI"},
@@ -5490,6 +5521,26 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"ExtraStats", "CARGO_SWARM"},
+				["MATH_OPERATION"] 		= "*",
+				["REPLACE_TYPE"] = "ALL",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Value",	SwarmerWasteNaniteMult},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ExtraStats", "CARGO_SWARM"},
+				["REPLACE_TYPE"] = "ONCE",
+				["SECTION_UP"] = 4,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	"100.000000"},
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "R_CARGO_DESTROY"},
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -5679,6 +5730,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["ADD"] = ProductReward ("ATLAS_SEED_4", "2", "2", "100"),
 				["ADD_OPTION"]  = "ADDbeforeSECTION",
 			},
+				--Swarm Expedition
+			
 			--[[
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "ABAND_LOOTBOX_S",	"List", "GcRewardTableItem"},
