@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Passive Sentinels",
-["MOD_DESCRIPTION"] = "sentinels will completely ignore your plundering of the environment",
 ["MOD_AUTHOR"]      = "degraaaff",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "sentinels will completely ignore your plundering of the environment",
 ["MODIFICATIONS"]   =
   {
     {

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"]    = "No Sandworm Shake",
-["MOD_DESCRIPTION"] = "No Sandworm Shaking",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "No Sandworm Shaking",
 ["MODIFICATIONS"]   = 
   {
     {

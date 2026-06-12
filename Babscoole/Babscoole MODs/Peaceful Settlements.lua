@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Peaceful Settlements",
-["MOD_DESCRIPTION"] = "Increases time between settlement attacks",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Increases time between settlement attacks",
 ["MODIFICATIONS"]   =
   {
     {

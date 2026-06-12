@@ -370,7 +370,7 @@ PLACEMENTDATA_ENTITY =
 <Data template="cTkAttachmentData">
   <Property name="AdditionalData" />
   <Property name="Components">
-    <Property name="Components" value="TkStaticPhysicsComponentData" _index="0">
+    <Property name="Components" value="TkStaticPhysicsComponentData">
       <Property name="TkStaticPhysicsComponentData">
         <Property name="Data" value="TkPhysicsData">
           <Property name="Mass" value="0.000000" />
@@ -405,7 +405,7 @@ PLACEMENTDATA_ENTITY =
         <Property name="CameraInvisible" value="false" />
       </Property>
     </Property>
-    <Property name="Components" value="GcBasePlacementComponentData" _index="1">
+    <Property name="Components" value="GcBasePlacementComponentData">
       <Property name="GcBasePlacementComponentData">
         <Property name="Rules">
           <Property name="Rules" value="GcBasePlacementRule" _index="0">

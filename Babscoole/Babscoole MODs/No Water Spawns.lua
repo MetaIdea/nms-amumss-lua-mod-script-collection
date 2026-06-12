@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "No Water Spawns",
 ["MOD_AUTHOR"]      = "courtycat and Babscoole",
 ["NMS_VERSION"]     = "6.40",
-["MOD_DESCRIPTION"] = "Underwater creatures will cease to exist",
+["MOD_DESCRIPTION"] = "Underwater creatures will cease to exist.",
 ["MODIFICATIONS"]   =
   {
     {

@@ -8,8 +8,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Normandy Unlocker",
 ["MOD_AUTHOR"]      = "Babscoole & Mjstral",
-["MOD_DESCRIPTION"] = "Unlock a reward via speical emote menu quick action",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Unlock a reward via speical emote menu quick action",
 ["MODIFICATIONS"]   =
   {
     {
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData"},
+              ["SPECIAL_KEY_WORDS"] = {"Triggers", "GcActionTrigger"},
               ["SEC_KEEP"] = "TRUE",
               ["SEC_SAVE_TO"] = "ADD_TRIGGER",
             },
@@ -47,7 +47,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SEC_EDIT"] = "ADD_TRIGGER",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"StateID",    "BOOT"},
                 {"Anim",       REWARD_TITLE},
                 {"FrameStart", "0"},
               }
@@ -89,9 +88,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SEC_ADD_NAMED"] = "ADD_ANIM",
             },
             {
-              ["PRECEDING_KEY_WORDS"] = {"Components"},
+              ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData"},
+              ["PRECEDING_KEY_WORDS"] = {"Triggers"},
+              ["ADD_OPTION"] = "ADDafterLINE",
               ["SEC_ADD_NAMED"] = "ADD_TRIGGER",
-            }
+            },
           }
         },
         {

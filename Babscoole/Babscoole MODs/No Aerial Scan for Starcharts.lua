@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "No Aerial Scan for Starcharts",
-["MOD_DESCRIPTION"] = "Removes the fly up Aerial Scan animation when using StarCharts A-D",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Removes the fly up Aerial Scan animation when using StarCharts A-D",
 ["MODIFICATIONS"]   =
   {
     {

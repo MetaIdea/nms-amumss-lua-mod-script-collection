@@ -2,8 +2,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Curiosity Finder",
 ["MOD_AUTHOR"]      = "Pyronox Omega and Babscoole",
-["MOD_DESCRIPTION"] = "easily find curiosities on planet surface",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Easily find curiosities on planet surface",
 ["MODIFICATIONS"]   =
   {
     {

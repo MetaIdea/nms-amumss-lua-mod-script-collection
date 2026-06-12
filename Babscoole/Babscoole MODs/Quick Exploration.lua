@@ -70,9 +70,9 @@ Filesource3 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Quick Exploration",
-["MOD_DESCRIPTION"] = "Quick Exploration",
 ["MOD_AUTHOR"]      = "PyronoxOmega and Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Quick Exploration",
 ["MODIFICATIONS"]   =
   {
     {

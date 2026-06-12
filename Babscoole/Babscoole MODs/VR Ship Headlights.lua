@@ -104,7 +104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="HideModel" value="false" />
         <Property name="StartInactive" value="false" />
         <Property name="States">
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="BOOT">
             <Property name="StateID" value="BOOT" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -129,7 +129,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="BASE_STATE">
             <Property name="StateID" value="BASE_STATE" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -194,7 +194,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="HND_CTRL_CPIT_R">
             <Property name="StateID" value="HND_CTRL_CPIT_R" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -239,7 +239,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="DISABLE_LIGHT">
             <Property name="StateID" value="DISABLE_LIGHT" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -278,7 +278,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="ENABLE_LIGHT">
             <Property name="StateID" value="ENABLE_LIGHT" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">

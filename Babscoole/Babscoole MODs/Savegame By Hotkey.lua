@@ -2,13 +2,34 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Savegame By Hotkey",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
-["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
 ["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =
       {
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\JETPACKDATA.ENTITY.MBIN",
+          ["MBIN_FS_DISCARD"] = "TRUE",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Triggers", "GcActionTrigger"},
+              ["SECTION_ACTIVE"] = 1,
+              ["SEC_SAVE_TO"] = "ADD_TRIG",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_TRIG",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Anim",       "SAVEGAME"},
+                {"State",      "SAVE"},
+                {"Broadcast",  "true"},
+              }
+            },
+          }
+        },
         {
           ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
           ["MXML_CHANGE_TABLE"] =
@@ -28,52 +49,15 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] = {"Components", "TkAnimationComponentData"},
               ["PRECEDING_KEY_WORDS"] = {"Anims"},
+              ["ADD_OPTION"] = "ADDafterLINE",
               ["SEC_ADD_NAMED"] = "ADD_ANIM",
             },
             {
-              ["PRECEDING_KEY_WORDS"] = {"Components"},
+              ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData"},
+              ["PRECEDING_KEY_WORDS"] = {"Triggers"},
               ["ADD_OPTION"] = "ADDafterLINE",
-              ["ADD"] =
-[[
-    <Property name="Components" value="GcTriggerActionComponentData">
-      <Property name="GcTriggerActionComponentData">
-        <Property name="HideModel" value="false" />
-        <Property name="StartInactive" value="false" />
-        <Property name="States">
-          <Property name="States" value="GcActionTriggerState">
-            <Property name="StateID" value="BOOT" />
-            <Property name="Triggers">
-              <Property name="Triggers" value="GcActionTrigger">
-                <Property name="Event" value="GcAnimFrameEvent">
-                  <Property name="GcAnimFrameEvent">
-                    <Property name="Anim" value="SAVEGAME" />
-                    <Property name="FrameStart" value="0" />
-                    <Property name="StartFromEnd" value="false" />
-                  </Property>
-                </Property>
-                <Property name="Action">
-                  <Property name="Action" value="GcGoToStateAction">
-                    <Property name="GcGoToStateAction">
-                      <Property name="State" value="SAVE" />
-                      <Property name="Broadcast" value="true" />
-                      <Property name="BroadcastLevel" value="GcBroadcastLevel">
-                        <Property name="BroadcastLevel" value="Scene" />
-                      </Property>
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property name="Persistent" value="false" />
-        <Property name="PersistentState" value="" />
-        <Property name="ResetShotTimeOnStateChange" value="false" />
-        <Property name="LinkStateToBaseGrid" value="false" />
-      </Property>
-    </Property>
-]]
-            }
+              ["SEC_ADD_NAMED"] = "ADD_TRIG",
+            },
           }
         },
         {
@@ -232,7 +216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="HideModel" value="false" />
         <Property name="StartInactive" value="false" />
         <Property name="States">
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="BOOT">
             <Property name="StateID" value="BOOT" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -257,7 +241,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="SAVE">
             <Property name="StateID" value="SAVE" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -292,7 +276,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="WAIT_FOR_SAVE">
             <Property name="StateID" value="WAIT_FOR_SAVE" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">

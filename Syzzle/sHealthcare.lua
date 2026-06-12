@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "sHealthcare"
-GameVersion = "6.17"
+GameVersion = "6.44"
 Description = "Makes the Health Station recover both your HP and your Life Support meter."
 
 OXYGEN  = [[

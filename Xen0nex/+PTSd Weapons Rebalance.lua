@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "6_24"
+GameVersion = "6_43"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 RevertMiningLaserOverheatChanges = false				--false		If set to true, reverts the cooldown timer after overheating for Mining/Hijacked/Runic Laser etc. back to vanilla values, and will match up with the UI overheat overlay again.
@@ -184,13 +184,13 @@ ExoFlameFireRateMult =						0.75				--				Multiplier used to slow down the fire 
 
 --Damage multipliers for starship weapons against shields, hulls, etc.
 ShipWeaponEffectiveness =
-{	--Weapontype	vs. ship Hull	Shield	Torpedo	Freighter Hull 	Boss Freighter Hull(Dreadnoughts & Sentinel Freighters)
-	{"ShipGun",			1,			1,		1,		1,				1},		--1,		1,		1,		1,			1
-	{"ShipLaser",		0.8,		1.2,	0.8,	0.8,			0.9},	--1,		1,		1,		1,			1
-	{"ShipShotgun",		1,			0.33,	1,		0.7,			0.7},	--1,		0.33,	1,		0.4,		0.4
-	{"ShipMinigun",		1.2,		0.4,	1.2,	1.2,			1.1},	--1.5,		1,		1.5,	1,			1
-	{"ShipRockets",		1.2,		0.6,	1.2,	1.2,			1.2},	--1.5,		0.2,	1.5,	1.5,		1.5
-	{"ShipPlasma",		0.6,		1.4,	0.6,	0.6,			0.8},	--0.2,		1.6,	0.2,	1,			1
+{	--Weapontype	vs. ship Hull	Shield	Swarmer	Torpedo	Freighter Hull 	Boss Freighter Hull(Dreadnoughts & Sentinel Freighters)
+	{"ShipGun",			1,			1,		1,		1,		1,				1},		--1,		1,		1,		1,		1,			1
+	{"ShipLaser",		0.8,		1.2,	0.8,	0.8,	0.8,			0.9},	--1,		1,		1,		1,		1,			1
+	{"ShipShotgun",		1,			0.33,	1,		1,		0.7,			0.7},	--1,		0.33,	1,		1,		0.4,		0.4
+	{"ShipMinigun",		1.2,		0.4,	1.2,	1.2,	1.2,			1.1},	--1.5,		1,		1.5,	1.5,	1,			1
+	{"ShipRockets",		1.2,		0.6,	0.8,	1.2,	1.2,			1.2},	--1.5,		0.2,	0.9,	1.5,	1.5,		1.5
+	{"ShipPlasma",		0.6,		1.4,	0.6,	0.6,	0.6,			0.8},	--0.2,		1.6,	0.2,	0.2,	1,			1
 }
 
 --Multipliers to apply to the base damage for various player mining lasers. Note that higher damage means objects get mined faster
@@ -2412,6 +2412,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["ADD"] = DamageMult("ShipMinigun", 1)
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "SWARM_DRONE",		"Multipliers", "GcDamageMultiplier"},
+				--["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplier.xml"},
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD"] = DamageMult("ShipGun", 1)
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "SWARM_DRONE",		"Multipliers", "GcDamageMultiplier"},
+				--["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplier.xml"},
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD"] = DamageMult("ShipLaser", 1)
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "SWARM_DRONE",		"Multipliers", "GcDamageMultiplier"},
+				--["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplier.xml"},
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD"] = DamageMult("ShipShotgun", 1)
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDO",		"Multipliers", "GcDamageMultiplier"},
 				--["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplier.xml"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -2835,9 +2853,10 @@ for i = 1, #ShipWeaponEffectiveness do
 	local DamageType = ShipWeaponEffectiveness[i][1]
 	local HullMult = ShipWeaponEffectiveness[i][2]
 	local ShieldMult = ShipWeaponEffectiveness[i][3]
-	local TorpMult = ShipWeaponEffectiveness[i][4]
-	local FrHullMult = ShipWeaponEffectiveness[i][5]
-	local BossFrHullMult = ShipWeaponEffectiveness[i][6]
+	local SwarmerMult = ShipWeaponEffectiveness[i][4]
+	local TorpMult = ShipWeaponEffectiveness[i][5]
+	local FrHullMult = ShipWeaponEffectiveness[i][6]
+	local BossFrHullMult = ShipWeaponEffectiveness[i][7]
 
 			ChangesToDefaultReality[#ChangesToDefaultReality+1] =
 			{
@@ -2860,6 +2879,18 @@ for i = 1, #ShipWeaponEffectiveness do
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Multiplier", ShieldMult}
+				}
+			}
+			
+			ChangesToDefaultReality[#ChangesToDefaultReality+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "SWARM_DRONE", "DamageType", DamageType},
+				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
+				["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Multiplier", SwarmerMult}
 				}
 			}
 			

@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = "Moar Realistic Weather",
-  ["MOD_AUTHOR"]      = "Florian B. & Babscoole",
-  ["NMS_VERSION"]     = "6.40",
-  ["MOD_DESCRIPTION"] = "Changes the temperature ranges with some biomes.",
-  ["MODIFICATIONS"]   =
+["MOD_FILENAME"]    = "Moar Realistic Weather",
+["MOD_AUTHOR"]      = "Florian B. & Babscoole",
+["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Changes the temperature ranges with some biomes.",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

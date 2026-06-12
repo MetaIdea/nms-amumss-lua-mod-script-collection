@@ -1,7 +1,7 @@
 ModName = "gShip Better Ship Lighting"
 ModNameSub = "Station Pads"
 BaseDescription = ""
-GameVersion = "6.2.1.0"
+GameVersion = "6.4.4.0"
 ModVersion = "a"
 
 --[[ Files Modified:
@@ -118,7 +118,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							VALUE_CHANGE_TABLE = {
-								{"Value",36.000000},
+								{"Value",60000.000000},
 							}
 						},
 						{
@@ -136,7 +136,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							VALUE_CHANGE_TABLE = {
-								{"Value",36.000000},
+								{"Value",60000.000000},
 							}
 						},
 						{
@@ -154,7 +154,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							VALUE_CHANGE_TABLE = {
-								{"Value",36.000000},
+								{"Value",60000.000000},
 							}
 						},
 						{

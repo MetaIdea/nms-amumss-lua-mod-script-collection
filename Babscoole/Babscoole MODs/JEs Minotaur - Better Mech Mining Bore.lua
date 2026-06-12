@@ -4,9 +4,9 @@ MB_Multipler = 5  -- Default is 1
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "JEs Minotaur - Better Mech Mining Bore",
-["MOD_DESCRIPTION"] = "Adjusts the fuel maximum and charge of the Minotaur Bore",
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Adjusts the fuel maximum and charge of the Minotaur Bore",
 ["MODIFICATIONS"]   =
   {
     {

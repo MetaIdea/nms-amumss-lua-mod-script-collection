@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Overclocked Industry"
-GameVersion = "6.17"
+GameVersion = "6.44"
 Description = "Power up Autonomous Mining, Atmosphere Harvester and Oxygen Harvester to harvest a full stack of 9999 in 5 minutes."
 
 FuelTime = "15"	-- How much time until the Fuel is fully used in seconds, 300 equals 5 minutes. When editing make sure it's a positive number.

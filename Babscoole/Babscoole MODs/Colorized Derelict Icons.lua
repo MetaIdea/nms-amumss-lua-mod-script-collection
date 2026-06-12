@@ -2,6 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Colorized Derelict Icons",
 ["MOD_AUTHOR"]      = "Babscoole and Lyravega",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Adds a few colourized icons and alters scanline colours for a few derelict objects",
 ["MODIFICATIONS"]   =
   {

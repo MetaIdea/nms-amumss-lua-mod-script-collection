@@ -2,8 +2,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Increase Auto-Land Range",
 ["MOD_AUTHOR"]      = "Babscoole",
-["MOD_DESCRIPTION"] = "Restore default auto-land range assist range from the NMS 5.x 100, back to the original 300",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Restore default auto-land range assist range from the NMS 5.x 100, back to the original 300",
 ["MODIFICATIONS"]   =
   {
     {

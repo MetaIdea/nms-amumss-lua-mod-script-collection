@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Quick Fish Release"
-GameVersion = "6.17"
+GameVersion = "6.44"
 Description = "Your inventory won't close anymore after releasing a fish, allowing you to release multiple fishes faster."
 
 NMS_MOD_DEFINITION_CONTAINER = 

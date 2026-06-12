@@ -15,9 +15,9 @@ maxItems = 24
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "JEs More Tech Modules for Sale",
-["MOD_DESCRIPTION"] = "Purchase more of an available Upgrade module from vendors Based on System Economy",
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Purchase more of an available Upgrade module from vendors Based on System Economy",
 ["MODIFICATIONS"]   =
   {
     {

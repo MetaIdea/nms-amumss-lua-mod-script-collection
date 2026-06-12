@@ -2,7 +2,7 @@ Author = "Gumsk n8crafter"
 ModName = "gShip"
 ModNameSub = "Add Missing Ship Trails"
 BaseDescription = "Adds ship trails to all engines"
-GameVersion = "6.2.2.0"
+GameVersion = "6.4.4.0"
 ModVersion = "a"
 
 -- Rotation angles don't seem to matter for either positioning or trail angle. Rotation angle does matter for contrail angle.

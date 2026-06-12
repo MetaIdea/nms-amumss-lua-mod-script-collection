@@ -2,8 +2,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Cheaper Multitool and Ship Slot Upgrades",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
-["MOD_DESCRIPTION"] = "Changes the unit prices for each storage slot in multitool and ship upgrade terminals",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Changes the unit prices for each storage slot in multitool and ship upgrade terminals",
 ["MODIFICATIONS"]   =
   {
     {

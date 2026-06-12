@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Ultimate_Production_harvest_All",
-["MOD_DESCRIPTION"] = "Freighter Production Enhancement",
+["MOD_FILENAME"]    = "Ultimate Production Harvest All",
 ["MOD_AUTHOR"]      = "PyronoxOmega and Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Freighter Production Enhancement",
 ["MODIFICATIONS"]   =
   {
     {

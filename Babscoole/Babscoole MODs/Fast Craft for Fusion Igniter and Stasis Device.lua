@@ -493,10 +493,10 @@ Test_CODE2 =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "FastCraft for Fusion Igniter and Stasis Device",
+["MOD_FILENAME"]    = "Fast Craft for Fusion Igniter and Stasis Device",
 ["MOD_AUTHOR"]      = "KuroPeach & Babscoole",
-["MOD_DESCRIPTION"] = "Replaced the recipe of FusionIgniter and StasisDevice.  Changed to one-click recipe from the original raw materials. The original recipe moved to the refiner.",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Replaced the recipe of FusionIgniter and StasisDevice.  Changed to one-click recipe from the original raw materials. The original recipe moved to the refiner.",
 ["MODIFICATIONS"]   =
   {
     {

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Goop Begone Living Ship Slime",
-["MOD_DESCRIPTION"] = "Remove trypophobia triggers from Living Ship",
 ["MOD_AUTHOR"]      = "Gumsk & Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Remove trypophobia triggers from Living Ship",
 ["MODIFICATIONS"]   =
   {
     {

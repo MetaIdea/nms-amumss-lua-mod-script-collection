@@ -2,7 +2,7 @@ Author = "Gumsk,lMonk"
 ModName = "gGUI Clean Multiplayer"
 ModNameSub = "No Comm Balls"
 BaseDescription = ""
-GameVersion = "6.2.1.0"
+GameVersion = "6.4.4.0"
 ModVersion = "a"
 
 --[[Files Modified

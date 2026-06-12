@@ -57,8 +57,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Backpack Toggle",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["MOD_DESCRIPTION"] = "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
 ["MODIFICATIONS"]   =
   {
     {
@@ -86,17 +86,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SEC_ADD_NAMED"] = "ADD_ANIM",
             },
             {
-              ["PRECEDING_KEY_WORDS"] = {"Components"},
+              ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData"},
+              ["PRECEDING_KEY_WORDS"] = {"Triggers"},
+              ["ADD_OPTION"] = "ADDafterLINE",
               ["ADD"] =
 [[
-    <Property name="Components" value="GcTriggerActionComponentData">
-      <Property name="GcTriggerActionComponentData">
-        <Property name="HideModel" value="false" />
-        <Property name="StartInactive" value="false" />
-        <Property name="States">
-          <Property name="States" value="GcActionTriggerState">
-            <Property name="StateID" value="BOOT" />
-            <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcAnimFrameEvent">
                   <Property name="GcAnimFrameEvent">
@@ -116,15 +110,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                 </Property>
               </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property name="Persistent" value="false" />
-        <Property name="PersistentState" value="" />
-        <Property name="ResetShotTimeOnStateChange" value="false" />
-        <Property name="LinkStateToBaseGrid" value="false" />
-      </Property>
-    </Property>
 ]]
             }
           }

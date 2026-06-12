@@ -8,7 +8,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "6.40",
 ["MOD_DESCRIPTION"]         = "Reduces size for largest creature types by ~75%",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
   {
     {
@@ -27,8 +26,8 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MaxCreatureSize", "5"},
-                {"MinRideSize",     "1"},
+                {"MinRideSize",     "1.000000"},
+                {"MaxCreatureSize", "5.000000"},
               }
             },
           }

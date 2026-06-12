@@ -2,8 +2,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Discount Suit Upgrades",
 ["MOD_AUTHOR"]      = "Babscoole",
-["MOD_DESCRIPTION"] = "Cuts suit upgrade costs in half",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Cuts suit upgrade costs in half",
 ["MODIFICATIONS"]   =
   {
     {

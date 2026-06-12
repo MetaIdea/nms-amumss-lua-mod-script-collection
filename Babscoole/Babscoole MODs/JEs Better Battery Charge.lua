@@ -12,9 +12,9 @@ SJChargeAmount  = 300  -- Expedition 16 "Spook Juice"
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "JEs Better Battery Charge",
-["MOD_DESCRIPTION"] = "Adjusts ion battery, starship battery and life gel so they give full recharge on all difficulties.",
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Adjusts ion battery, starship battery and life gel so they give full recharge on all difficulties.",
 ["MODIFICATIONS"]   =
   {
     {

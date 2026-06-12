@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "sProtect"
-GameVersion = "6.17"
+GameVersion = "6.44"
 Description = "Makes so your tech won't be breaking until your shield is down."
 
 NMS_MOD_DEFINITION_CONTAINER = 

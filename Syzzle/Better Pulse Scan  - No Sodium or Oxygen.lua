@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Better Pulse Scan - No Sodium or Oxygen"
-GameVersion = "6.02"
+GameVersion = "6.44"
 --ModVersion = "v1.2"
 Description = "Rare resources and other things now show up when you use Pulse Scan with Multitool or Exocraft."
 

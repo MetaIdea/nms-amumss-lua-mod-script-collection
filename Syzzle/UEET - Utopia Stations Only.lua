@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "UEET - Utopia Stations Only"
-GameVersion = "6.04"
+GameVersion = "6.44"
 Description = "Add only the Utopua Stations to be unlocked at the Anomaly."
 
 -- BASE PARTS BLUEPRINTS

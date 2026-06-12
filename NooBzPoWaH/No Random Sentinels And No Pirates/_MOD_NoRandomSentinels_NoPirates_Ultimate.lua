@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_MOD_NoRandomSentinels_NoPirates_Ultimate",
 ["MOD_AUTHOR"]    = "Mjjstral AKA MetaIdea & NooBzPoWaH",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.74+",
+["NMS_VERSION"]   = "6.+",
 ["MODIFICATIONS"] = 
     {
         {
@@ -12,10 +12,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] = 
                     {
-                        "MODELS\\COMMON\\ROBOTS\\DRONE\\ENTITIES\\DRONE.ENTITY.MBIN",
-                        "MODELS\\COMMON\\ROBOTS\\CORRUPTEDDRONE\\ENTITIES\\CORRUPTEDDRONE.ENTITY.MBIN",
-                        "MODELS\\COMMON\\ROBOTS\\DRONEARMOURED\\ENTITIES\\DRONEARMOURED.ENTITY.MBIN",
-                        "MODELS\\COMMON\\SPACECRAFT\\DRONE\\DRONESHIP\\ENTITIES\\SHIP.ENTITY.MBIN",
+                        "MODELS\COMMON\ROBOTS\DRONE\ENTITIES\DRONE.ENTITY.MBIN",
+                        "MODELS\COMMON\ROBOTS\CORRUPTEDDRONE\ENTITIES\CORRUPTEDDRONE.ENTITY.MBIN",
+                        "MODELS\COMMON\ROBOTS\DRONEARMOURED\ENTITIES\DRONEARMOURED.ENTITY.MBIN",
+                        "MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP\ENTITIES\SHIP.ENTITY.MBIN",
                     },
                     ["MXML_CHANGE_TABLE"] = 
                     {
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 									<Property name="Action" value="GcNodeActivationAction">
 										<Property name="GcNodeActivationAction">
 											<Property name="NodeActiveState" value="Remove" />
-											<Property name="Name" value="MODELS\\COMMON\\ROBOTS\\DRONE" />
+											<Property name="Name" value="MODELS\COMMON\ROBOTS\DRONE" />
 											<Property name="SceneToAdd" value="" />
 											<Property name="IncludePhysics" value="true" />
 											<Property name="IncludeChildPhysics" value="true" />
@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 									<Property name="Action" value="GcNodeActivationAction">
 										<Property name="GcNodeActivationAction">
 											<Property name="NodeActiveState" value="Remove" />
-											<Property name="Name" value="MODELS\\COMMON\\ROBOTS\\CORRUPTEDDRONE" />
+											<Property name="Name" value="MODELS\COMMON\ROBOTS\CORRUPTEDDRONE" />
 											<Property name="SceneToAdd" value="" />
 											<Property name="IncludePhysics" value="true" />
 											<Property name="IncludeChildPhysics" value="true" />
@@ -71,7 +71,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 									<Property name="Action" value="GcNodeActivationAction">
 										<Property name="GcNodeActivationAction">
 											<Property name="NodeActiveState" value="Remove" />
-											<Property name="Name" value="MODELS\\COMMON\\ROBOTS\\DRONEARMOURED" />
+											<Property name="Name" value="MODELS\COMMON\ROBOTS\DRONEARMOURED" />
 											<Property name="SceneToAdd" value="" />
 											<Property name="IncludePhysics" value="true" />
 											<Property name="IncludeChildPhysics" value="true" />
@@ -85,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 									<Property name="Action" value="GcNodeActivationAction">
 										<Property name="GcNodeActivationAction">
 											<Property name="NodeActiveState" value="Remove" />
-											<Property name="Name" value="MODELS\\COMMON\\SPACECRAFT\\DRONE\\DRONESHIP" />
+											<Property name="Name" value="MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP" />
 											<Property name="SceneToAdd" value="" />
 											<Property name="IncludePhysics" value="true" />
 											<Property name="IncludeChildPhysics" value="true" />
@@ -125,7 +125,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SCENE\\EXPERIENCESPAWNTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
                     ["MXML_CHANGE_TABLE"] = 
                     {
                         {
@@ -151,29 +151,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SPACE\\AISPACESHIPMANAGER.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN",
                     ["MXML_CHANGE_TABLE"] = 
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Pirate"},
-                            ["VALUE_MATCH"]         = "MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
-                            ["VALUE_CHANGE_TABLE"]  = {{"Filename", ""}}
+                            ["SPECIAL_KEY_WORDS"]   = {"Pirate", "GcAISpaceshipModelDataArray"},
+                            ["PRECEDING_KEY_WORDS"] = {"Spaceships"},
+                            ["CREATE_HOES"]         = "TRUE",
                         },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Pirate"},
-                            ["VALUE_MATCH"]         = "MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
-                            ["VALUE_CHANGE_TABLE"]  = {{"Filename", ""}}
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Pirate"},
-                            ["VALUE_MATCH"]         = "MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN",
-                            ["VALUE_CHANGE_TABLE"]  = {{"Filename", ""}}
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Pirate"},
-                            ["VALUE_MATCH"]         = "MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN",
-                            ["VALUE_CHANGE_TABLE"]  = {{"Filename", ""}}
-                        }
                     }
                 }
             }

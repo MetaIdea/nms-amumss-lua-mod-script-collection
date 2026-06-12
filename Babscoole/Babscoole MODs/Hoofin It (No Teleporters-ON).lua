@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Hoofin It (No Teleporters-ON)",
-["MOD_DESCRIPTION"] = "No Interstellar Teleporters",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "No Interstellar Teleporters",
 ["MODIFICATIONS"]   =
   {
     {
@@ -24,12 +24,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Components", "GcInteractionComponentData"},
               ["REMOVE"] = "SECTION"
             },
-						-- {
-						  -- ["VALUE_CHANGE_TABLE"] = 
-						  -- {
-							  -- {"InteractDistance", "0"}, 
-						  -- }	
-						-- },
           },
         },
       },

@@ -2,8 +2,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Tariff Suit Upgrades",
 ["MOD_AUTHOR"]      = "Babscoole",
-["MOD_DESCRIPTION"] = "Doubles suit upgrade costs",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Doubles suit upgrade costs",
 ["MODIFICATIONS"]   =
   {
     {

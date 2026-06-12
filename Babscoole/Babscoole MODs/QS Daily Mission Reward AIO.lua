@@ -41,8 +41,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "QS Daily Mission Reward "..Multiplier.."x",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
-["MOD_DESCRIPTION"] = "Multiples the quicksilver reward from daily and weekly nexus missions",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Multiples the quicksilver reward from daily and weekly nexus missions",
 ["MODIFICATIONS"]   =
   {
     {

@@ -5,9 +5,9 @@ TECHSLOT = 60
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "MasterNetras Max Exocraft Slots",
-["MOD_DESCRIPTION"] = "Enables and Maxs out both cargo and technology slots for exocraft.",
-["MOD_AUTHOR"]      = "Masternetra",
+["MOD_AUTHOR"]      = "Masternetra & Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Enables and Maxs out both cargo and technology slots for exocraft.",
 ["MODIFICATIONS"]   =
   {
     {
@@ -18,27 +18,12 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["PRECEDING_KEY_WORDS"] = "VehicleSmall",
-              ["VALUE_CHANGE_TABLE"] =
+              ["PRECEDING_KEY_WORDS"] =
               {
-                {"MinSlots",     CARGOSLOT},
-                {"MaxSlots",     CARGOSLOT},
-                {"MinTechSlots", TECHSLOT},
-                {"MaxTechSlots", TECHSLOT},
-              }
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = "VehicleMedium",
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"MinSlots",     CARGOSLOT},
-                {"MaxSlots",     CARGOSLOT},
-                {"MinTechSlots", TECHSLOT},
-                {"MaxTechSlots", TECHSLOT},
-              }
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = "VehicleLarge",
+                {"VehicleSmall"},
+                {"VehicleMedium"},
+                {"VehicleLarge"},
+              },
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"MinSlots",     CARGOSLOT},

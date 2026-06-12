@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "CSO No Metrics Lines",
-["MOD_DESCRIPTION"] = "No more white lines in front of the ship at pulse speed.",
 ["MOD_AUTHOR"]      = "NeptuneX3 & Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "No more white lines in front of the ship at pulse speed.",
 ["MODIFICATIONS"]   =
   {
     {

@@ -2,8 +2,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "More Suit Terminal Upgrades",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
-["MOD_DESCRIPTION"] = "Lets you buy more than one suit upgrade at space stations, space anomaly, and outlaw space stations",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Lets you buy more than one suit upgrade at space stations, space anomaly, and outlaw space stations",
 ["MODIFICATIONS"]   =
   {
     {

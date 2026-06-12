@@ -5,9 +5,9 @@ S_Bonus = 75  -- Default is 40
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "JEs Better Mining Lasers",
-["MOD_DESCRIPTION"] = "Adjusts mining beam damage so it isn't as impacted by having Enemy Strength set at higher difficulty",
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Adjusts mining beam damage so it isn't as impacted by having Enemy Strength set at higher difficulty",
 ["MODIFICATIONS"]   =
   {
     {

@@ -149,122 +149,135 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"MinSaturation",           "0.650000"},
+                {"MaxSaturation",           "0.650000"},
+                {"MaxFogSaturation",        "0.300000"},
+                {"NoAtmosphereFogStrength", "0.090000"},
+                {"NoAtmosphereFogMax",      "0.950000"},
+              }
+            },
+            {
               ["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetFog"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"FogMax",                   "0.95"},
-                {"HeightFogStrength",        "0.1"},
-                {"HeightFogFadeOutStrength", "0.5"},
-                {"HeightFogMax",             "0.98"},
-                {"DepthOfFieldDistance",     "10"},
+                {"FogStrength",              "0.010000"},
+                {"FogMax",                   "0.500000"},
+                {"HeightFogStrength",        "0.040000"},
+                {"HeightFogFadeOutStrength", "0.100000"},
+                {"HeightFogMax",             "0.850000"},
+                {"DepthOfFieldDistance",     "10.000000"},
               }
             },
             {
               ["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetExtremeFog"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"FogStrength",              "0.1"},
-                {"FogMax",                   "0.95"},
-                {"FogColourStrength",        "10"},
-                {"HeightFogStrength",        "0.1"},
-                {"HeightFogFadeOutStrength", "0.5"},
-                {"HeightFogMax",             "0.98"},
-                {"FogHeight",                "128"},
-                {"DepthOfFieldDistance",     "10"},
+                {"FogStrength",              "0.020000"},
+                {"FogMax",                   "0.500000"},
+                {"FogColourStrength",        "10.000000"},
+                {"HeightFogStrength",        "0.100000"},
+                {"HeightFogFadeOutStrength", "0.100000"},
+                {"HeightFogMax",             "0.850000"},
+                {"FogHeight",                "128.000000"},
+                {"DepthOfFieldDistance",     "10.000000"},
               }
             },
             {
               ["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetStormFog"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"FogStrength",              "0.2"},
-                {"FogColourStrength",        "10"},
-                {"HeightFogStrength",        "0.1"},
-                {"HeightFogFadeOutStrength", "0.5"},
-                {"HeightFogMax",             "0.98"},
-                {"FogHeight",                "128"},
-                {"DepthOfField",             "0.25"},
-                {"DepthOfFieldDistance",     "10"},
-                {"DepthOfFieldFade",         "1000"},
+                {"FogStrength",              "0.20000"},
+                {"FogMax",                   "0.50000"},
+                {"FogColourStrength",        "10.000000"},
+                {"HeightFogStrength",        "0.150000"},
+                {"HeightFogFadeOutStrength", "0.100000"},
+                {"HeightFogMax",             "0.850000"},
+                {"FogHeight",                "128.000000"},
+                {"DepthOfField",             "0.000000"},
+                {"DepthOfFieldDistance",     "10.000000"},
+                {"DepthOfFieldFade",         "1000.000000"},
               }
             },
             {
               ["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetFlightFog"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"FogMax",                   "1"},
-                {"HeightFogStrength",        "0.15"},
-                {"HeightFogFadeOutStrength", "0.25"},
-                {"HeightFogMax",             "0.6"},
-                {"DepthOfFieldDistance",     "700"},
+                {"FogMax",                   "1.000000"},
+                {"HeightFogStrength",        "0.150000"},
+                {"HeightFogFadeOutStrength", "0.250000"},
+                {"HeightFogMax",             "0.600000"},
+                {"DepthOfFieldDistance",     "700.000000"},
               }
             },
             {
               ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetFog"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"FogStrength",              "0.04"},
-                {"FogMax",                   "0.95"},
-                {"FogColourMax",             "1"},
-                {"HeightFogStrength",        "0.1"},
-                {"HeightFogFadeOutStrength", "0.5"},
-                {"HeightFogMax",             "0.98"},
-                {"FogHeight",                "128"},
-                {"DepthOfFieldDistance",     "10"},
+                {"FogStrength",              "0.010000"},
+                {"FogMax",                   "0.500000"},
+                {"FogColourMax",             "1.000000"},
+                {"HeightFogStrength",        "0.100000"},
+                {"HeightFogFadeOutStrength", "0.050000"},
+                {"HeightFogMax",             "0.900000"},
+                {"FogHeight",                "512.000000"},
+                {"DepthOfFieldDistance",     "10.000000"},
               }
             },
             {
               ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetExtremeFog"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"FogStrength",              "0.1"},
-                {"FogMax",                   "0.95"},
-                {"FogColourStrength",        "10"},
-                {"HeightFogStrength",        "0.1"},
-                {"HeightFogFadeOutStrength", "0.5"},
-                {"HeightFogMax",             "0.98"},
-                {"FogHeight",                "128"},
-                {"DepthOfFieldDistance",     "10"},
+                {"FogStrength",              "0.020000"},
+                {"FogMax",                   "0.500000"},
+                {"FogColourStrength",        "10.000000"},
+                {"HeightFogStrength",        "0.100000"},
+                {"HeightFogFadeOutStrength", "0.100000"},
+                {"HeightFogMax",             "0.900000"},
+                {"FogHeight",                "512.000000"},
+                {"DepthOfFieldDistance",     "10.000000"},
               }
             },
             {
               ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetStormFog"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"FogStrength",              "0.2"},
-                {"FogColourStrength",        "10"},
-                {"HeightFogStrength",        "0.1"},
-                {"HeightFogFadeOutStrength", "0.5"},
-                {"HeightFogMax",             "0.98"},
-                {"FogHeight",                "128"},
-                {"DepthOfField",             "0.25"},
-                {"DepthOfFieldDistance",     "10"},
-                {"DepthOfFieldFade",         "1000"},
+                {"FogStrength",              "0.200000"},
+                {"FogMax",                   "0.500000"},
+                {"FogColourStrength",        "10.000000"},
+                {"HeightFogStrength",        "0.150000"},
+                {"HeightFogFadeOutStrength", "0.100000"},
+                {"HeightFogMax",             "0.900000"},
+                {"FogHeight",                "512.000000"},
+                {"DepthOfField",             "0.000000"},
+                {"DepthOfFieldDistance",     "10.000000"},
+                {"DepthOfFieldFade",         "1000.000000"},
               }
             },
             {
               ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetFlightFog"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"FogMax",                   "0.8"},
-                {"HeightFogStrength",        "0.15"},
-                {"HeightFogFadeOutStrength", "0.25"},
-                {"HeightFogMax",             "0.6"},
-                {"FogHeight",                "1024"},
-                {"DepthOfFieldDistance",     "700"},
+                {"FogMax",                   "0.800000"},
+                {"HeightFogStrength",        "0.150000"},
+                {"HeightFogFadeOutStrength", "0.250000"},
+                {"HeightFogMax",             "0.600000"},
+                {"FogHeight",                "1024.000000"},
+                {"DepthOfFieldDistance",     "700.000000"},
               }
             },
             {
               ["PRECEDING_KEY_WORDS"] = {"PlanetGasGiantProperties", "PlanetFog"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"FogStrength",              "0.040000"},
-                {"FogMax",                   "0.950000"},
+                {"FogStrength",              "0.100000"},
+                {"FogMax",                   "0.500000"},
                 {"FogColourMax",             "1.000000"},
                 {"HeightFogStrength",        "0.100000"},
-                {"HeightFogFadeOutStrength", "0.500000"},
-                {"HeightFogMax",             "0.980000"},
-                {"FogHeight",                "128.000000"},
+                {"HeightFogFadeOutStrength", "0.100000"},
+                {"HeightFogMax",             "0.950000"},
+                {"FogHeight",                "1500.000000"},
                 {"DepthOfFieldDistance",     "10.000000"},
               }
             },
@@ -272,13 +285,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"PlanetGasGiantProperties", "PlanetExtremeFog"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"FogStrength",              "0.100000"},
-                {"FogMax",                   "0.950000"},
+                {"FogStrength",              "0.150000"},
+                {"FogMax",                   "0.500000"},
                 {"FogColourStrength",        "10.000000"},
-                {"HeightFogStrength",        "0.100000"},
-                {"HeightFogFadeOutStrength", "0.500000"},
-                {"HeightFogMax",             "0.980000"},
-                {"FogHeight",                "128.000000"},
+                {"HeightFogStrength",        "0.125000"},
+                {"HeightFogFadeOutStrength", "0.100000"},
+                {"HeightFogMax",             "0.950000"},
+                {"FogHeight",                "1500.000000"},
                 {"DepthOfFieldDistance",     "10.000000"},
               }
             },
@@ -287,12 +300,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"FogStrength",              "0.200000"},
+                {"FogMax",                   "0.500000"},
                 {"FogColourStrength",        "10.000000"},
-                {"HeightFogStrength",        "0.100000"},
-                {"HeightFogFadeOutStrength", "0.500000"},
-                {"HeightFogMax",             "0.980000"},
-                {"FogHeight",                "128.000000"},
-                {"DepthOfField",             "0.250000"},
+                {"HeightFogStrength",        "0.150000"},
+                {"HeightFogFadeOutStrength", "0.100000"},
+                {"HeightFogMax",             "0.950000"},
+                {"FogHeight",                "1500.000000"},
+                {"DepthOfField",             "0.000000"},
                 {"DepthOfFieldDistance",     "10.000000"},
                 {"DepthOfFieldFade",         "1000.000000"},
               }

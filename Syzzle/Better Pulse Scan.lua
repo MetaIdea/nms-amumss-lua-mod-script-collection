@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Better Pulse Scan"
-GameVersion = "6.02"
+GameVersion = "6.44"
 --ModVersion = "v1.8"
 Description = "Rare resources and other things now show up when you use Pulse Scan with Multitool or Exocraft."
 

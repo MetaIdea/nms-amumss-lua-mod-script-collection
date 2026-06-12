@@ -40,6 +40,57 @@ NMS_MOD_DEFINITION_CONTAINER =
           }
         },
         {
+          ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\HEALTHSTATION\ENTITIES\HEALTHSTATION.ENTITY.MBIN",
+          ["MBIN_FS_DISCARD"] = "TRUE",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Action", "GcRewardAction"},
+              ["SEC_SAVE_TO"] = "ADD_REWARDACTION",
+            },
+            {
+              ["SEC_EDIT"] =  {"ADD_REWARDACTION"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Reward", "POLICE"},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\ROBOTS\SPIDER_QUADRUPED\ENTITIES\SPIDERQUAD.ENTITY.MBIN",
+          ["MBIN_FS_DISCARD"] = "TRUE",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Triggers", "GcActionTrigger"},
+              ["SEC_KEEP"] = "TRUE",
+              ["SEC_SAVE_TO"] = "ADD_TRIGGER",
+            },
+            {
+              ["SEC_EDIT"] = "ADD_TRIGGER",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Anim",       "POLICE"},
+                {"FrameStart", "0"},
+              }
+            },
+            {
+              ["SEC_EDIT"] = "ADD_TRIGGER",
+              ["PRECEDING_KEY_WORDS"] = {"GcCameraShakeAction"},
+              ["SECTION_UP"] = 1,
+              ["SEC_KEEP"] = "TRUE",
+              ["REMOVE"] = "SECTION"
+            },
+            {
+              ["SEC_EDIT"] = "ADD_TRIGGER",
+              ["PRECEDING_KEY_WORDS"] = {"Action"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_REWARDACTION"
+            },
+          }
+        },
+        {
           ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
           ["MXML_CHANGE_TABLE"] =
           {
@@ -61,70 +112,10 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SEC_ADD_NAMED"] = "ADD_ANIM",
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Components", "GcPlayerEffectsComponentData"},
-              ["ADD_OPTION"] = "ADDafterSECTION",
-              ["ADD"] =
-[[
-    <Property name="Components" value="GcTriggerActionComponentData">
-      <Property name="GcTriggerActionComponentData">
-        <Property name="HideModel" value="false" />
-        <Property name="StartInactive" value="false" />
-        <Property name="States">
-          <Property name="States" value="GcActionTriggerState">
-            <Property name="StateID" value="BOOT" />
-            <Property name="Triggers">
-              <Property name="Triggers" value="GcActionTrigger">
-                <Property name="Event" value="GcAnimFrameEvent">
-                  <Property name="GcAnimFrameEvent">
-                    <Property name="Anim" value="POLICE" />
-                    <Property name="FrameStart" value="0" />
-                    <Property name="StartFromEnd" value="false" />
-                  </Property>
-                </Property>
-                <Property name="Action">
-                  <Property name="Action" value="GcGoToStateAction">
-                    <Property name="GcGoToStateAction">
-                      <Property name="State" value="REWARD" />
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-          <Property name="States" value="GcActionTriggerState">
-            <Property name="StateID" value="REWARD" />
-            <Property name="Triggers">
-              <Property name="Triggers" value="GcActionTrigger">
-                <Property name="Event" value="GcStateTimeEvent">
-                  <Property name="GcStateTimeEvent">
-                    <Property name="Seconds" value="0.000000" />
-                    <Property name="RandomSeconds" value="0.000000" />
-                    <Property name="UseMissionClock" value="false" />
-                  </Property>
-                </Property>
-                <Property name="Action">
-                  <Property name="Action" value="GcRewardAction">
-                    <Property name="GcRewardAction">
-                      <Property name="Reward" value="POLICE" />
-                    </Property>
-                  </Property>
-                  <Property name="Action" value="GcGoToStateAction">
-                    <Property name="GcGoToStateAction">
-                      <Property name="State" value="BOOT" />
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property name="Persistent" value="false" />
-        <Property name="PersistentState" value="" />
-        <Property name="ResetShotTimeOnStateChange" value="false" />
-        <Property name="LinkStateToBaseGrid" value="false" />
-      </Property>
-    </Property>
-]]
+              ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData"},
+              ["PRECEDING_KEY_WORDS"] = {"Triggers"},
+              ["ADD_OPTION"] = "ADDafterLINE",
+              ["SEC_ADD_NAMED"] = "ADD_TRIGGER",
             }
           }
         },
@@ -210,6 +201,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="MaxAmount" value="300" />
                       <Property name="DamageFactor" value="0.000000" />
                       <Property name="FullyInstalled" value="true" />
+                      <Property name="AddedAutomatically" value="false" />
                       <Property name="Index" value="GcInventoryIndex">
                         <Property name="X" value="-1" />
                         <Property name="Y" value="-1" />
@@ -224,6 +216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="MaxAmount" value="100" />
                       <Property name="DamageFactor" value="0.000000" />
                       <Property name="FullyInstalled" value="true" />
+                      <Property name="AddedAutomatically" value="false" />
                       <Property name="Index" value="GcInventoryIndex">
                         <Property name="X" value="-1" />
                         <Property name="Y" value="-1" />
@@ -238,6 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="MaxAmount" value="200" />
                       <Property name="DamageFactor" value="0.000000" />
                       <Property name="FullyInstalled" value="true" />
+                      <Property name="AddedAutomatically" value="false" />
                       <Property name="Index" value="GcInventoryIndex">
                         <Property name="X" value="-1" />
                         <Property name="Y" value="-1" />
@@ -252,6 +246,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="MaxAmount" value="120" />
                       <Property name="DamageFactor" value="0.000000" />
                       <Property name="FullyInstalled" value="true" />
+                      <Property name="AddedAutomatically" value="false" />
                       <Property name="Index" value="GcInventoryIndex">
                         <Property name="X" value="-1" />
                         <Property name="Y" value="-1" />
@@ -286,6 +281,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="IsCool" value="false" />
                   <Property name="Name" value="" />
                   <Property name="Version" value="0" />
+                  <Property name="NumSlotsFromTech" value="0" />
                 </Property>
                 <Property name="CostAmount" value="0" />
                 <Property name="CostCurrency" value="GcCurrency">

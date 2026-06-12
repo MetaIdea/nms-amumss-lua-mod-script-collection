@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "No InterStellar Coordinates Received",
-["MOD_DESCRIPTION"] = "Removes Interstellar Coordinates prompt",
 ["MOD_AUTHOR"]      = "DeathWrench",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Removes Interstellar Coordinates prompt",
 ["MODIFICATIONS"]   =
   {
     {

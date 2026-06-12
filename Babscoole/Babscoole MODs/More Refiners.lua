@@ -7,8 +7,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "More Refiners",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
-["MOD_DESCRIPTION"] = "Removes the refiners building limits",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Removes the refiners building limits",
 ["MODIFICATIONS"]   =
   {
     {

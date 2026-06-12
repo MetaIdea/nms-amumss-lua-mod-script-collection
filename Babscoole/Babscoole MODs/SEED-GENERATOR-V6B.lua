@@ -1,4 +1,4 @@
-DEFAULT_SEED_NUMBER = 1500
+DEFAULT_SEED_NUMBER = 1000
 
 SELECTED_SEED_TYPES =
 {
@@ -505,6 +505,10 @@ ACTION_TRIGGER_ENTRY =
                   <Property name="Action" value="GcGoToStateAction">
                     <Property name="GcGoToStateAction">
                       <Property name="State" value="REWARD" />
+											<Property name="Broadcast" value="false" />
+											<Property name="BroadcastLevel" value="GcBroadcastLevel">
+												<Property name="BroadcastLevel" value="Scene" />
+											</Property>
                     </Property>
                   </Property>
                 </Property>
@@ -727,8 +731,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
 ["MODIFICATIONS"]   =
   {
     {
@@ -786,25 +790,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 <Data template="cTkAnimMetadata">
   <Property name="NodeData">
-    <Property name="NodeData" value="TkAnimNodeData">
-      <Property name="Node" value="AnimatedTrans" />
+    <Property name="NodeData" value="TkAnimNodeData" _index="0">
+      <Property name="Node" value="EffectTest" />
       <Property name="RotIndex" value="0" />
       <Property name="TransIndex" value="0" />
       <Property name="ScaleIndex" value="0" />
     </Property>
   </Property>
   <Property name="AnimFrameData">
-    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData" _index="0">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
-    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData" _index="1">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
     </Property>
-    <Property name="AnimFrameData" value="TkAnimNodeFrameData">
+    <Property name="AnimFrameData" value="TkAnimNodeFrameData" _index="2">
       <Property name="Rotations" />
       <Property name="Translations" />
       <Property name="Scales" />
@@ -812,7 +816,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
   <Property name="StillFrameData" value="TkAnimNodeFrameData">
     <Property name="Rotations">
-      <Property name="Rotations" value="Quaternion">
+      <Property name="Rotations" value="Quaternion" _index="0">
         <Property name="X" value="0" />
         <Property name="Y" value="0" />
         <Property name="Z" value="0" />
@@ -821,14 +825,14 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
     <Property name="Translations">
-      <Property name="Translations">
+      <Property name="Translations" _index="0">
         <Property name="X" value="-0.73121876" />
         <Property name="Y" value="0.08333181" />
         <Property name="Z" value="-0.02858855" />
       </Property>
     </Property>
     <Property name="Scales">
-      <Property name="Scales">
+      <Property name="Scales" _index="0">
         <Property name="X" value="1.000000" />
         <Property name="Y" value="1.000000" />
         <Property name="Z" value="1.000000" />

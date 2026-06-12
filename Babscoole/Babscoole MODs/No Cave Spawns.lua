@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "courtykat and Babscoole",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "6.40",
-["MOD_DESCRIPTION"] = "Underground creatures will cease to exist",
+["MOD_DESCRIPTION"] = "Cave creatures will be removed from your scan list and will not spawn",
 ["MODIFICATIONS"]   =
   {
     {

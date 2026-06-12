@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "CSO No Space Dust",
-["MOD_DESCRIPTION"] = "No more space dust.",
 ["MOD_AUTHOR"]      = "NeptuneX3 & Babscoole",
 ["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "No more space dust.",
 ["MODIFICATIONS"]   =
   {
     {
