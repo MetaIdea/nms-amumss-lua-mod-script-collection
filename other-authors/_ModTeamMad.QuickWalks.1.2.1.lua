@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]	= "_ModTeamMad.QuickWalks.1.0.8.pak",
+["MOD_FILENAME"]	= "_ModTeamMad.QuickWalks.1.2.1.pak",
 ["MOD_AUTHOR"]		= "Mod Team Mad",
-["NMS_VERSION"]		= "5.20",
+["NMS_VERSION"]		= "6.45",
 ["MOD_DESCRIPTION"]	= "Fast walking and sprinting",
 ["MODIFICATIONS"]	=
 	{
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCPLAYERGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MXML_CHANGE_TABLE"] 	=
 					{
 						{
 							["VALUE_CHANGE_TABLE"] 		=

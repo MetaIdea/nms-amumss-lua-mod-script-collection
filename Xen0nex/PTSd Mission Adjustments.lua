@@ -4,9 +4,6 @@ Description = "Increases the amount of items required to complete certain 'Expan
 
 AdjustVoyagersExpTasks = true			--false		Changes the requirements for certain tasks in the Voyagers Expedition to work with alterations made by PTSd
 	
-	--WIP
---AdjustSwarmExpSwamerSpawns = true		--false		Reduces the number of space Swarmers that spawn during the first phase of the Swarm expedition down to 1-2 instead of 4-5
-
 StartingHazDamage =		25				--76		What percentage of your Hazard protection is missing when starting a new game file
 StarNewGameWithIonBatt = false			--			Set true to begin new games with Ion Battery in the inventory, false otherwise
 NewGameIonBattAmmount = 1				--Amount of Ion Batteries to start the game with, if above setting set to true
@@ -395,14 +392,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--Intentionally left blank to be filled in by a function below
 		}
 	},
-	--[[]
-	{
-		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\SWARMMISSIONTABLE.MBIN"},
-		["MXML_CHANGE_TABLE"] 	= 
-		{
-			--Intentionally left blank to be filled in by a function below
-		}
-	}]]
 }}}}
 
 local ChangesToSettlementMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
@@ -629,21 +618,3 @@ ChangesToSeasonalMissionTable[#ChangesToSeasonalMissionTable+1] =
 				["REMOVE"] = "SECTION"
 			}
 end
-
---[[
-local ChangesToSwarmMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][9]["MXML_CHANGE_TABLE"]
-
-if AdjustSwarmExpSwamerSpawns then
-ChangesToSwarmMissionTable[#ChangesToSwarmMissionTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"AttackDefinition",	"SWARM_DRONE"},
-				["SECTION_UP"] = 1,
-				["REPLACE_TYPE"] 		= "ALL",
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"NumSquadsOverrideMin", "1"},
-					{"NumSquadsOverrideMax", "2"},
-				}
-			}
-end
-]]

@@ -103,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="HideModel" value="false" />
         <Property name="StartInactive" value="false" />
         <Property name="States">
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="BOOT">
             <Property name="StateID" value="BOOT" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -188,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="HIDE">
             <Property name="StateID" value="HIDE" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -214,7 +214,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="UNHIDE">
             <Property name="StateID" value="UNHIDE" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -283,7 +283,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="HideModel" value="false" />
         <Property name="StartInactive" value="false" />
         <Property name="States">
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="BOOT">
             <Property name="StateID" value="BOOT" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -328,7 +328,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="HIDE">
             <Property name="StateID" value="HIDE" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -354,7 +354,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="UNHIDE">
             <Property name="StateID" value="UNHIDE" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">

@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "6_43"
+GameVersion = "6_44"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -5731,7 +5731,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["ADD_OPTION"]  = "ADDbeforeSECTION",
 			},
 				--Swarm Expedition
-			
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S22_S1M7",	"List", "GcRewardTableItem"},
+				["ADD"] = ProductReward ("ATLAS_SEED_1", "3", "3", "100"),
+				["ADD_OPTION"]  = "ADDbeforeSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S22_S2M6",	"List", "GcRewardTableItem"},
+				["ADD"] = ProductReward ("ATLAS_SEED_3", "3", "3", "100"),
+				["ADD_OPTION"]  = "ADDbeforeSECTION",
+			},
 			--[[
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "ABAND_LOOTBOX_S",	"List", "GcRewardTableItem"},

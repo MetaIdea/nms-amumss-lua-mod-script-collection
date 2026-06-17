@@ -1,6 +1,6 @@
 -- ============================================================
 --  Grass Draw Distance - by kuborr
---  NMS 6.24
+--  NMS 6.45
 -- ============================================================
 --
 --  What this does:
@@ -587,7 +587,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"]    = "_GrassDrawDistance",
     ["MOD_AUTHOR"]      = "kuborr",
     ["LUA_AUTHOR"]      = "kuborr",
-    ["NMS_VERSION"]     = "6.24",
+    ["NMS_VERSION"]     = "6.45",
     ["MOD_DESCRIPTION"] = "Increases grass draw distance by 2x (grass only, no rocks/flora/props)",
 
     ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE",

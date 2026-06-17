@@ -1,8 +1,8 @@
 	NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]	= "_ModTeamMad.QuickDocks.1.0.11.pak",
+["MOD_FILENAME"]	= "_ModTeamMad.QuickDocks.1.1.3.pak",
 ["MOD_AUTHOR"]		= "Mod Team Mad",
-["NMS_VERSION"]		= "5.20",
+["NMS_VERSION"]		= "6.45",
 ["MOD_DESCRIPTION"]	= "8x faster docking rotation",
 ["MODIFICATIONS"]	=
 	{
