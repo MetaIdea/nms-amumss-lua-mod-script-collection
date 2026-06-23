@@ -51,13 +51,13 @@ QUICK_ACTION_LIST =
   "TREE_FRIGATE",
 }
 
-USER_SEED_LIST =
-{
-  {"POLICESHIP", "0x1"},
-  {"FIGHTER",    "0x8E8E2193DD4A9EDA"}, --ALPHA VECTOR
-  {"FIGHTER",    "0xC4C9C1AABCA59FE6"}, --HORIZON OMEGA
-  {"FIGHTER",    "0xA547AB958C97E439"}, --RASAMAMA S36
-  {"MULTITOOL",  "0x55907B79D95B675B"}, --STARTER WEAPON
+-- USER_SEED_LIST =
+-- {
+  -- {"POLICESHIP", "0x1"},
+  -- {"FIGHTER",    "0x8E8E2193DD4A9EDA"}, --ALPHA VECTOR
+  -- {"FIGHTER",    "0xC4C9C1AABCA59FE6"}, --HORIZON OMEGA
+  -- {"FIGHTER",    "0xA547AB958C97E439"}, --RASAMAMA S36
+  -- {"MULTITOOL",  "0x55907B79D95B675B"}, --STARTER WEAPON
 
   -- {"FIGHTER", "0x2ed0b7e8773e6959"},
   -- {"FIGHTER", "0x0469079B58527FAC", true},
@@ -102,14 +102,14 @@ USER_SEED_LIST =
 
   -- {"EXOTIC", "0x66c2ba46dcfbf4c3"},
   -- {"EXOTIC", "0xc688372a1012811b"},
-}
+-- }
 
-function HexToDec(number)
-  if type(number) == "number" then return number
-  elseif string.find(tostring(number),"0x") then return math.abs(tonumber(number))
-  else return math.abs(tonumber(number,16))
-  end
-end
+-- function HexToDec(number)
+  -- if type(number) == "number" then return number
+  -- elseif string.find(tostring(number),"0x") then return math.abs(tonumber(number))
+  -- else return math.abs(tonumber(number,16))
+  -- end
+-- end
 
 PacksList =
 {
@@ -1041,20 +1041,20 @@ QUICK_ACTION_MENU =
     --[""] = { ["TITLE"]="", ["ICON"]="" , ["ANIM"]="", ["TYPE"]="REWARD" },
 }
 
-SEED_TYPE_PATH =
-{
-  ["FIGHTER"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
-  ["DROPSHIP"]="MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
-  ["SCIENTIFIC"]="MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN",
-  ["SHUTTLE"]="MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN",
-  ["ROYAL"]="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN",
-  ["ALIEN"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN",
-  ["SAIL"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
-  ["ROBOT"]="MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELSHIP_PROC.SCENE.MBIN",
-  ["MULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN",
-  ["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
-  ["POLICESHIP"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERPOLICE.SCENE.MBIN",
-}
+-- SEED_TYPE_PATH =
+-- {
+  -- ["FIGHTER"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
+  -- ["DROPSHIP"]="MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
+  -- ["SCIENTIFIC"]="MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN",
+  -- ["SHUTTLE"]="MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN",
+  -- ["ROYAL"]="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN",
+  -- ["ALIEN"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN",
+  -- ["SAIL"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
+  -- ["ROBOT"]="MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELSHIP_PROC.SCENE.MBIN",
+  -- ["MULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN",
+  -- ["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
+  -- ["POLICESHIP"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERPOLICE.SCENE.MBIN",
+-- }
 
 function GetTriggerAnim(ANIM)
   return
@@ -1185,258 +1185,258 @@ function GetLanguage(TITLE)
 ]]
 end
 
-function GetComponents(TRIGGER_ACTION)
-  return
-[[
-    <Property name="Components" value="GcTriggerActionComponentData">
-      <Property name="GcTriggerActionComponentData">
-        <Property name="HideModel" value="false" />
-        <Property name="StartInactive" value="false" />
-        <Property name="States">
-          <Property name="States" value="GcActionTriggerState">
-            <Property name="StateID" value="BOOT" />
-            <Property name="Triggers">
-]] .. TRIGGER_ACTION .. [[
-            </Property>
-          </Property>
-        </Property>
-        <Property name="Persistent" value="false" />
-        <Property name="PersistentState" value="" />
-        <Property name="ResetShotTimeOnStateChange" value="false" />
-        <Property name="LinkStateToBaseGrid" value="false" />
-      </Property>
-    </Property>
-]]
-end
+-- function GetComponents(TRIGGER_ACTION)
+  -- return
+-- [[
+    -- <Property name="Components" value="GcTriggerActionComponentData">
+      -- <Property name="GcTriggerActionComponentData">
+        -- <Property name="HideModel" value="false" />
+        -- <Property name="StartInactive" value="false" />
+        -- <Property name="States">
+          -- <Property name="States" value="GcActionTriggerState" _id="BOOT">
+            -- <Property name="StateID" value="BOOT" />
+            -- <Property name="Triggers">
+-- ]] .. TRIGGER_ACTION .. [[
+            -- </Property>
+          -- </Property>
+        -- </Property>
+        -- <Property name="Persistent" value="false" />
+        -- <Property name="PersistentState" value="" />
+        -- <Property name="ResetShotTimeOnStateChange" value="false" />
+        -- <Property name="LinkStateToBaseGrid" value="false" />
+      -- </Property>
+    -- </Property>
+-- ]]
+-- end
 
-function GetShipRewardEntry(REWARDID, TYPE, SEED)
-  return
-[[
-    <Property name="GenericTable" value="GcGenericRewardTableEntry">
-      <Property name="Id" value="]] .. REWARDID .. [[" />
-      <Property name="List" value="GcRewardTableItemList">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="false" />
-        <Property name="UseInventoryChoiceOverride" value="false" />
-        <Property name="IncrementStat" value="" />
-        <Property name="List">
-          <Property name="List" value="GcRewardTableItem">
-            <Property name="PercentageChance" value="100.000000" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificShip">
-              <Property name="GcRewardSpecificShip">
-                <Property name="ShipResource" value="GcResourceElement">
-                  <Property name="Filename" value="]] .. TYPE .. [[" />
-                  <Property name="Seed" value="]] .. SEED .. [[" />
-                  <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
-                    <Property name="Samplers" />
-                  </Property>
-                  <Property name="AltId" value="" />
-                </Property>
-                <Property name="Customisation" value="GcCharacterCustomisationData">
-                  <Property name="DescriptorGroups" />
-                  <Property name="PaletteID" value="" />
-                  <Property name="Colours" />
-                  <Property name="TextureOptions" />
-                  <Property name="BoneScales" />
-                  <Property name="Scale" value="1.000000" />
-                </Property>
-                <Property name="ShipLayout" value="GcInventoryLayout">
-                  <Property name="Slots" value="48" />
-                  <Property name="Seed" value="1" />
-                  <Property name="Level" value="1" />
-                </Property>
-                <Property name="ShipInventory" value="GcInventoryContainer">
-                  <Property name="Slots">
-                    <Property name="Slots" value="GcInventoryElement">
-                      <Property name="Type" value="GcInventoryType">
-                        <Property name="InventoryType" value="Technology" />
-                      </Property>
-                      <Property name="Id" value="LAUNCHER" />
-                      <Property name="Amount" value="0" />
-                      <Property name="MaxAmount" value="300" />
-                      <Property name="DamageFactor" value="0" />
-                      <Property name="FullyInstalled" value="true" />
-                      <Property name="AddedAutomatically" value="false" />
-                      <Property name="Index" value="GcInventoryIndex">
-                        <Property name="X" value="-1" />
-                        <Property name="Y" value="-1" />
-                      </Property>
-                    </Property>
-                    <Property name="Slots" value="GcInventoryElement">
-                      <Property name="Type" value="GcInventoryType">
-                        <Property name="InventoryType" value="Technology" />
-                      </Property>
-                      <Property name="Id" value="SHIPJUMP1" />
-                      <Property name="Amount" value="0" />
-                      <Property name="MaxAmount" value="100" />
-                      <Property name="DamageFactor" value="0" />
-                      <Property name="FullyInstalled" value="true" />
-                      <Property name="AddedAutomatically" value="false" />
-                      <Property name="Index" value="GcInventoryIndex">
-                        <Property name="X" value="-1" />
-                        <Property name="Y" value="-1" />
-                      </Property>
-                    </Property>
-                    <Property name="Slots" value="GcInventoryElement">
-                      <Property name="Type" value="GcInventoryType">
-                        <Property name="InventoryType" value="Technology" />
-                      </Property>
-                      <Property name="Id" value="SHIPSHIELD" />
-                      <Property name="Amount" value="200" />
-                      <Property name="MaxAmount" value="200" />
-                      <Property name="DamageFactor" value="0" />
-                      <Property name="FullyInstalled" value="true" />
-                      <Property name="AddedAutomatically" value="false" />
-                      <Property name="Index" value="GcInventoryIndex">
-                        <Property name="X" value="-1" />
-                        <Property name="Y" value="-1" />
-                      </Property>
-                    </Property>
-                    <Property name="Slots" value="GcInventoryElement">
-                      <Property name="Type" value="GcInventoryType">
-                        <Property name="InventoryType" value="Technology" />
-                      </Property>
-                      <Property name="Id" value="SHIPGUN1" />
-                       <Property name="Amount" value="1000" />
-                      <Property name="MaxAmount" value="1000" />
-                      <Property name="DamageFactor" value="0" />
-                      <Property name="FullyInstalled" value="true" />
-                      <Property name="AddedAutomatically" value="false" />
-                      <Property name="Index" value="GcInventoryIndex">
-                        <Property name="X" value="-1" />
-                        <Property name="Y" value="-1" />
-                      </Property>
-                    </Property>
-                    <Property name="Slots" value="GcInventoryElement">
-                      <Property name="Type" value="GcInventoryType">
-                        <Property name="InventoryType" value="Technology" />
-                      </Property>
-                      <Property name="Id" value="HYPERDRIVE" />
-                      <Property name="Amount" value="24" />
-                      <Property name="MaxAmount" value="120" />
-                      <Property name="DamageFactor" value="0" />
-                      <Property name="FullyInstalled" value="true" />
-                      <Property name="AddedAutomatically" value="false" />
-                      <Property name="Index" value="GcInventoryIndex">
-                        <Property name="X" value="-1" />
-                        <Property name="Y" value="-1" />
-                      </Property>
-                    </Property>
-                    <Property name="Slots" value="GcInventoryElement">
-                      <Property name="Type" value="GcInventoryType">
-                        <Property name="InventoryType" value="Technology" />
-                      </Property>
-                      <Property name="Id" value="SHIPLAS1" />
-                      <Property name="Amount" value="1000" />
-                      <Property name="MaxAmount" value="1000" />
-                      <Property name="DamageFactor" value="0" />
-                      <Property name="FullyInstalled" value="true" />
-                      <Property name="AddedAutomatically" value="false" />
-                      <Property name="Index" value="GcInventoryIndex">
-                        <Property name="X" value="-1" />
-                        <Property name="Y" value="-1" />
-                      </Property>
-                    </Property>
-                  </Property>
-                  <Property name="ValidSlotIndices" />
-                  <Property name="Class" value="GcInventoryClass">
-                    <Property name="InventoryClass" value="S" />
-                  </Property>
-                  <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup">
-                    <Property name="InventoryStackSizeGroup" value="Default" />
-                  </Property>
-                  <Property name="BaseStatValues" />
-                  <Property name="SpecialSlots" />
-                  <Property name="Width" value="0" />
-                  <Property name="Height" value="0" />
-                  <Property name="IsCool" value="false" />
-                  <Property name="Name" value="" />
-                  <Property name="Version" value="0" />
-                  <Property name="NumSlotsFromTech" value="0" />
-                </Property>
-                <Property name="CostAmount" value="0" />
-                <Property name="CostCurrency" value="GcCurrency">
-                  <Property name="Currency" value="Units" />
-                </Property>
-                <Property name="ShipType" value="GcSpaceshipClasses">
-                  <Property name="ShipClass" value="Fighter" />
-                </Property>
-                <Property name="UseOverrideSizeType" value="false" />
-                <Property name="OverrideSizeType" value="GcInventoryLayoutSizeType">
-                  <Property name="SizeType" value="FgtLarge" />
-                </Property>
-                <Property name="NameOverride" value="" />
-                <Property name="IsGift" value="true" />
-                <Property name="IsRewardShip" value="true" />
-                <Property name="FormatAsSeasonal" value="false" />
-                <Property name="ModelViewOverride" value="GcModelViews">
-                  <Property name="ModelViews" value="None" />
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-]]
-end
+-- function GetShipRewardEntry(REWARDID, TYPE, SEED)
+  -- return
+-- [[
+    -- <Property name="GenericTable" value="GcGenericRewardTableEntry">
+      -- <Property name="Id" value="]] .. REWARDID .. [[" />
+      -- <Property name="List" value="GcRewardTableItemList">
+        -- <Property name="RewardChoice" value="GiveAll" />
+        -- <Property name="OverrideZeroSeed" value="false" />
+        -- <Property name="UseInventoryChoiceOverride" value="false" />
+        -- <Property name="IncrementStat" value="" />
+        -- <Property name="List">
+          -- <Property name="List" value="GcRewardTableItem">
+            -- <Property name="PercentageChance" value="100.000000" />
+            -- <Property name="LabelID" value="" />
+            -- <Property name="Reward" value="GcRewardSpecificShip">
+              -- <Property name="GcRewardSpecificShip">
+                -- <Property name="ShipResource" value="GcResourceElement">
+                  -- <Property name="Filename" value="]] .. TYPE .. [[" />
+                  -- <Property name="Seed" value="]] .. SEED .. [[" />
+                  -- <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
+                    -- <Property name="Samplers" />
+                  -- </Property>
+                  -- <Property name="AltId" value="" />
+                -- </Property>
+                -- <Property name="Customisation" value="GcCharacterCustomisationData">
+                  -- <Property name="DescriptorGroups" />
+                  -- <Property name="PaletteID" value="" />
+                  -- <Property name="Colours" />
+                  -- <Property name="TextureOptions" />
+                  -- <Property name="BoneScales" />
+                  -- <Property name="Scale" value="1.000000" />
+                -- </Property>
+                -- <Property name="ShipLayout" value="GcInventoryLayout">
+                  -- <Property name="Slots" value="48" />
+                  -- <Property name="Seed" value="1" />
+                  -- <Property name="Level" value="1" />
+                -- </Property>
+                -- <Property name="ShipInventory" value="GcInventoryContainer">
+                  -- <Property name="Slots">
+                    -- <Property name="Slots" value="GcInventoryElement">
+                      -- <Property name="Type" value="GcInventoryType">
+                        -- <Property name="InventoryType" value="Technology" />
+                      -- </Property>
+                      -- <Property name="Id" value="LAUNCHER" />
+                      -- <Property name="Amount" value="0" />
+                      -- <Property name="MaxAmount" value="300" />
+                      -- <Property name="DamageFactor" value="0" />
+                      -- <Property name="FullyInstalled" value="true" />
+                      -- <Property name="AddedAutomatically" value="false" />
+                      -- <Property name="Index" value="GcInventoryIndex">
+                        -- <Property name="X" value="-1" />
+                        -- <Property name="Y" value="-1" />
+                      -- </Property>
+                    -- </Property>
+                    -- <Property name="Slots" value="GcInventoryElement">
+                      -- <Property name="Type" value="GcInventoryType">
+                        -- <Property name="InventoryType" value="Technology" />
+                      -- </Property>
+                      -- <Property name="Id" value="SHIPJUMP1" />
+                      -- <Property name="Amount" value="0" />
+                      -- <Property name="MaxAmount" value="100" />
+                      -- <Property name="DamageFactor" value="0" />
+                      -- <Property name="FullyInstalled" value="true" />
+                      -- <Property name="AddedAutomatically" value="false" />
+                      -- <Property name="Index" value="GcInventoryIndex">
+                        -- <Property name="X" value="-1" />
+                        -- <Property name="Y" value="-1" />
+                      -- </Property>
+                    -- </Property>
+                    -- <Property name="Slots" value="GcInventoryElement">
+                      -- <Property name="Type" value="GcInventoryType">
+                        -- <Property name="InventoryType" value="Technology" />
+                      -- </Property>
+                      -- <Property name="Id" value="SHIPSHIELD" />
+                      -- <Property name="Amount" value="200" />
+                      -- <Property name="MaxAmount" value="200" />
+                      -- <Property name="DamageFactor" value="0" />
+                      -- <Property name="FullyInstalled" value="true" />
+                      -- <Property name="AddedAutomatically" value="false" />
+                      -- <Property name="Index" value="GcInventoryIndex">
+                        -- <Property name="X" value="-1" />
+                        -- <Property name="Y" value="-1" />
+                      -- </Property>
+                    -- </Property>
+                    -- <Property name="Slots" value="GcInventoryElement">
+                      -- <Property name="Type" value="GcInventoryType">
+                        -- <Property name="InventoryType" value="Technology" />
+                      -- </Property>
+                      -- <Property name="Id" value="SHIPGUN1" />
+                       -- <Property name="Amount" value="1000" />
+                      -- <Property name="MaxAmount" value="1000" />
+                      -- <Property name="DamageFactor" value="0" />
+                      -- <Property name="FullyInstalled" value="true" />
+                      -- <Property name="AddedAutomatically" value="false" />
+                      -- <Property name="Index" value="GcInventoryIndex">
+                        -- <Property name="X" value="-1" />
+                        -- <Property name="Y" value="-1" />
+                      -- </Property>
+                    -- </Property>
+                    -- <Property name="Slots" value="GcInventoryElement">
+                      -- <Property name="Type" value="GcInventoryType">
+                        -- <Property name="InventoryType" value="Technology" />
+                      -- </Property>
+                      -- <Property name="Id" value="HYPERDRIVE" />
+                      -- <Property name="Amount" value="24" />
+                      -- <Property name="MaxAmount" value="120" />
+                      -- <Property name="DamageFactor" value="0" />
+                      -- <Property name="FullyInstalled" value="true" />
+                      -- <Property name="AddedAutomatically" value="false" />
+                      -- <Property name="Index" value="GcInventoryIndex">
+                        -- <Property name="X" value="-1" />
+                        -- <Property name="Y" value="-1" />
+                      -- </Property>
+                    -- </Property>
+                    -- <Property name="Slots" value="GcInventoryElement">
+                      -- <Property name="Type" value="GcInventoryType">
+                        -- <Property name="InventoryType" value="Technology" />
+                      -- </Property>
+                      -- <Property name="Id" value="SHIPLAS1" />
+                      -- <Property name="Amount" value="1000" />
+                      -- <Property name="MaxAmount" value="1000" />
+                      -- <Property name="DamageFactor" value="0" />
+                      -- <Property name="FullyInstalled" value="true" />
+                      -- <Property name="AddedAutomatically" value="false" />
+                      -- <Property name="Index" value="GcInventoryIndex">
+                        -- <Property name="X" value="-1" />
+                        -- <Property name="Y" value="-1" />
+                      -- </Property>
+                    -- </Property>
+                  -- </Property>
+                  -- <Property name="ValidSlotIndices" />
+                  -- <Property name="Class" value="GcInventoryClass">
+                    -- <Property name="InventoryClass" value="S" />
+                  -- </Property>
+                  -- <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup">
+                    -- <Property name="InventoryStackSizeGroup" value="Default" />
+                  -- </Property>
+                  -- <Property name="BaseStatValues" />
+                  -- <Property name="SpecialSlots" />
+                  -- <Property name="Width" value="0" />
+                  -- <Property name="Height" value="0" />
+                  -- <Property name="IsCool" value="false" />
+                  -- <Property name="Name" value="" />
+                  -- <Property name="Version" value="0" />
+                  -- <Property name="NumSlotsFromTech" value="0" />
+                -- </Property>
+                -- <Property name="CostAmount" value="0" />
+                -- <Property name="CostCurrency" value="GcCurrency">
+                  -- <Property name="Currency" value="Units" />
+                -- </Property>
+                -- <Property name="ShipType" value="GcSpaceshipClasses">
+                  -- <Property name="ShipClass" value="Fighter" />
+                -- </Property>
+                -- <Property name="UseOverrideSizeType" value="false" />
+                -- <Property name="OverrideSizeType" value="GcInventoryLayoutSizeType">
+                  -- <Property name="SizeType" value="FgtLarge" />
+                -- </Property>
+                -- <Property name="NameOverride" value="" />
+                -- <Property name="IsGift" value="true" />
+                -- <Property name="IsRewardShip" value="true" />
+                -- <Property name="FormatAsSeasonal" value="false" />
+                -- <Property name="ModelViewOverride" value="GcModelViews">
+                  -- <Property name="ModelViews" value="None" />
+                -- </Property>
+              -- </Property>
+            -- </Property>
+          -- </Property>
+        -- </Property>
+      -- </Property>
+    -- </Property>
+-- ]]
+-- end
 
-function GetMultitoolRewardEntry(REWARDID, TYPE, SEED)
-  return
-[[
-    <Property name="GenericTable" value="GcGenericRewardTableEntry">
-      <Property name="Id" value="]] .. REWARDID .. [[" />
-      <Property name="List" value="GcRewardTableItemList">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="false" />
-        <Property name="UseInventoryChoiceOverride" value="false" />
-        <Property name="IncrementStat" value="" />
-        <Property name="List">
-          <Property name="List" value="GcRewardTableItem">
-            <Property name="PercentageChance" value="100.000000" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificWeapon">
-              <Property name="GcRewardSpecificWeapon">
-                <Property name="WeaponInventory" value="GcInventoryContainer">
-                  <Property name="Slots" />
-                  <Property name="ValidSlotIndices" />
-                  <Property name="Class" value="GcInventoryClass">
-                    <Property name="InventoryClass" value="S" />
-                  </Property>
-                  <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup">
-                    <Property name="InventoryStackSizeGroup" value="Default" />
-                  </Property>
-                  <Property name="BaseStatValues" />
-                  <Property name="SpecialSlots" />
-                  <Property name="Width" value="0" />
-                  <Property name="Height" value="0" />
-                  <Property name="IsCool" value="false" />
-                  <Property name="Name" value="" />
-                  <Property name="Version" value="0" />
-                  <Property name="NumSlotsFromTech" value="0" />
-                </Property>
-                <Property name="WeaponLayout" value="GcInventoryLayout">
-                  <Property name="Slots" value="24" />
-                  <Property name="Seed" value="1" />
-                  <Property name="Level" value="1" />
-                </Property>
-                <Property name="WeaponResource" value="GcExactResource">
-                  <Property name="Filename" value="]] .. TYPE .. [[" />
-                  <Property name="GenerationSeed" value="]] .. SEED .. [[" />
-                </Property>
-                <Property name="NameOverride" value="]] .. "" .. [[" />
-                <Property name="IsGift" value="true" />
-                <Property name="IsRewardWeapon" value="true" />
-                <Property name="FormatAsSeasonal" value="false" />
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-]]
-end
+-- function GetMultitoolRewardEntry(REWARDID, TYPE, SEED)
+  -- return
+-- [[
+    -- <Property name="GenericTable" value="GcGenericRewardTableEntry">
+      -- <Property name="Id" value="]] .. REWARDID .. [[" />
+      -- <Property name="List" value="GcRewardTableItemList">
+        -- <Property name="RewardChoice" value="GiveAll" />
+        -- <Property name="OverrideZeroSeed" value="false" />
+        -- <Property name="UseInventoryChoiceOverride" value="false" />
+        -- <Property name="IncrementStat" value="" />
+        -- <Property name="List">
+          -- <Property name="List" value="GcRewardTableItem">
+            -- <Property name="PercentageChance" value="100.000000" />
+            -- <Property name="LabelID" value="" />
+            -- <Property name="Reward" value="GcRewardSpecificWeapon">
+              -- <Property name="GcRewardSpecificWeapon">
+                -- <Property name="WeaponInventory" value="GcInventoryContainer">
+                  -- <Property name="Slots" />
+                  -- <Property name="ValidSlotIndices" />
+                  -- <Property name="Class" value="GcInventoryClass">
+                    -- <Property name="InventoryClass" value="S" />
+                  -- </Property>
+                  -- <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup">
+                    -- <Property name="InventoryStackSizeGroup" value="Default" />
+                  -- </Property>
+                  -- <Property name="BaseStatValues" />
+                  -- <Property name="SpecialSlots" />
+                  -- <Property name="Width" value="0" />
+                  -- <Property name="Height" value="0" />
+                  -- <Property name="IsCool" value="false" />
+                  -- <Property name="Name" value="" />
+                  -- <Property name="Version" value="0" />
+                  -- <Property name="NumSlotsFromTech" value="0" />
+                -- </Property>
+                -- <Property name="WeaponLayout" value="GcInventoryLayout">
+                  -- <Property name="Slots" value="24" />
+                  -- <Property name="Seed" value="1" />
+                  -- <Property name="Level" value="1" />
+                -- </Property>
+                -- <Property name="WeaponResource" value="GcExactResource">
+                  -- <Property name="Filename" value="]] .. TYPE .. [[" />
+                  -- <Property name="GenerationSeed" value="]] .. SEED .. [[" />
+                -- </Property>
+                -- <Property name="NameOverride" value="]] .. "" .. [[" />
+                -- <Property name="IsGift" value="true" />
+                -- <Property name="IsRewardWeapon" value="true" />
+                -- <Property name="FormatAsSeasonal" value="false" />
+              -- </Property>
+            -- </Property>
+          -- </Property>
+        -- </Property>
+      -- </Property>
+    -- </Property>
+-- ]]
+-- end
 
 function GetRewardAction(ANIM, REWARDID)
   return
@@ -1547,48 +1547,48 @@ for i=1,#QUICK_ACTION_LIST,1 do
   ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1
 end
 
-SHIPCOUNTER = 1
-MULTITOOLCOUNTER = 1
+-- SHIPCOUNTER = 1
+-- MULTITOOLCOUNTER = 1
 
-if #USER_SEED_LIST > 0 then
-  for i=1,#USER_SEED_LIST,1 do
-    print(USER_SEED_LIST[i][1], USER_SEED_LIST[i][2])
-    if ACTIONCOMPONENTS_COUNT >= ACTIONCOMPONENTS_LIMIT then
-      print("new GcTriggerActionComponentData")
-      ACTIONCOMPONENTS_LIMIT = ACTIONCOMPONENTS_LIMIT - 1
-      ACTIONCOMPONENTS_COUNT = 0
-      table.insert(ACTIONCOMPONENTS_TABLE, ACTIONCOMPONENTS)
-      ACTIONCOMPONENTS = ""
-    end
-    local REWARD_ID = ""
-    if USER_SEED_LIST[i][1] == "MULTITOOL" then
-      REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. MULTITOOLCOUNTER
-      MULTITOOLCOUNTER = MULTITOOLCOUNTER + 1
-      REWARDTABLE      = REWARDTABLE .. GetMultitoolRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
-      EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN02.DDS")
-      LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
-    elseif USER_SEED_LIST[i][1] == "POLICESHIP" then
-      REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
-      SHIPCOUNTER      = SHIPCOUNTER + 1
-      REWARDTABLE      = REWARDTABLE .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], HexToDec(USER_SEED_LIST[i][2]))
-      EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS")
-      LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
-    else
-      REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
-      SHIPCOUNTER      = SHIPCOUNTER + 1
-      REWARDTABLE      = REWARDTABLE .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], HexToDec(USER_SEED_LIST[i][2]))
-      EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.TWITCH.SHIP11.DDS")
-      LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
-    end
-    ACTIONCOMPONENTS       = ACTIONCOMPONENTS .. GetRewardAction(REWARD_ID, REWARD_ID)
-    ANIMS                  = ANIMS            .. GetTriggerAnim(REWARD_ID)
-    ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1
-  end
-end
+-- if #USER_SEED_LIST > 0 then
+  -- for i=1,#USER_SEED_LIST,1 do
+    -- print(USER_SEED_LIST[i][1], USER_SEED_LIST[i][2])
+    -- if ACTIONCOMPONENTS_COUNT >= ACTIONCOMPONENTS_LIMIT then
+      -- print("new GcTriggerActionComponentData")
+      -- ACTIONCOMPONENTS_LIMIT = ACTIONCOMPONENTS_LIMIT - 1
+      -- ACTIONCOMPONENTS_COUNT = 0
+      -- table.insert(ACTIONCOMPONENTS_TABLE, ACTIONCOMPONENTS)
+      -- ACTIONCOMPONENTS = ""
+    -- end
+    -- local REWARD_ID = ""
+    -- if USER_SEED_LIST[i][1] == "MULTITOOL" then
+      -- REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. MULTITOOLCOUNTER
+      -- MULTITOOLCOUNTER = MULTITOOLCOUNTER + 1
+      -- REWARDTABLE      = REWARDTABLE .. GetMultitoolRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
+      -- EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN02.DDS")
+      -- LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
+    -- elseif USER_SEED_LIST[i][1] == "POLICESHIP" then
+      -- REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
+      -- SHIPCOUNTER      = SHIPCOUNTER + 1
+      -- REWARDTABLE      = REWARDTABLE .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], HexToDec(USER_SEED_LIST[i][2]))
+      -- EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS")
+      -- LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
+    -- else
+      -- REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
+      -- SHIPCOUNTER      = SHIPCOUNTER + 1
+      -- REWARDTABLE      = REWARDTABLE .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], HexToDec(USER_SEED_LIST[i][2]))
+      -- EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.TWITCH.SHIP11.DDS")
+      -- LANGUAGE         = LANGUAGE    .. GetLanguage(REWARD_ID)
+    -- end
+    -- ACTIONCOMPONENTS       = ACTIONCOMPONENTS .. GetRewardAction(REWARD_ID, REWARD_ID)
+    -- ANIMS                  = ANIMS            .. GetTriggerAnim(REWARD_ID)
+    -- ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1
+  -- end
+-- end
 table.insert(ACTIONCOMPONENTS_TABLE, ACTIONCOMPONENTS)
 
 for i=1,#ACTIONCOMPONENTS_TABLE,1 do
-  COMPONENTS_ALL = COMPONENTS_ALL .. GetComponents(ACTIONCOMPONENTS_TABLE[i])
+  COMPONENTS_ALL = COMPONENTS_ALL .. ACTIONCOMPONENTS_TABLE[i]
 end
 COMPONENTS_ALL = COMPONENTS_ALL .. COMPONENTS
 
@@ -1614,7 +1614,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD"] = ANIMS
             },
             {
-              ["PRECEDING_KEY_WORDS"] = {"Components"},
+              ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData", "StateID", "BOOT"},
+              ["PRECEDING_KEY_WORDS"] = {"Triggers"},
               ["ADD_OPTION"] = "ADDafterLINE",
               ["ADD"] = COMPONENTS_ALL
             }
@@ -2410,11 +2411,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="HideModel" value="false" />
         <Property name="StartInactive" value="false" />
         <Property name="States">
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="BOOT">
             <Property name="StateID" value="BOOT" />
             <Property name="Triggers" />
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="GALACTICMAP">
             <Property name="StateID" value="GALACTICMAP" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -2545,7 +2546,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="HideModel" value="false" />
         <Property name="StartInactive" value="false" />
         <Property name="States">
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="BOOT">
             <Property name="StateID" value="BOOT" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -2570,7 +2571,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="SAVE">
             <Property name="StateID" value="SAVE" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -2605,7 +2606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="WAIT_FOR_SAVE">
             <Property name="StateID" value="WAIT_FOR_SAVE" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -2733,7 +2734,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="HideModel" value="false" />
         <Property name="StartInactive" value="false" />
         <Property name="States">
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="BOOT">
             <Property name="StateID" value="BOOT" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -2758,7 +2759,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="HARVEST">
             <Property name="StateID" value="HARVEST" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -2788,7 +2789,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="WAIT_FOR_HARVEST">
             <Property name="StateID" value="WAIT_FOR_HARVEST" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -2916,7 +2917,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="HideModel" value="false" />
         <Property name="StartInactive" value="false" />
         <Property name="States">
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="BOOT">
             <Property name="StateID" value="BOOT" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -2941,7 +2942,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="PLANETSCANNER">
             <Property name="StateID" value="PLANETSCANNER" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
@@ -2969,7 +2970,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-          <Property name="States" value="GcActionTriggerState">
+          <Property name="States" value="GcActionTriggerState" _id="WAIT_FOR_PSCAN">
             <Property name="StateID" value="WAIT_FOR_PSCAN" />
             <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">

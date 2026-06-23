@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SEC_ADD_NAMED"] = "ADD_ANIM",
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData"},
+              ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData", "StateID", "BOOT"},
               ["PRECEDING_KEY_WORDS"] = {"Triggers"},
               ["ADD_OPTION"] = "ADDafterLINE",
               ["ADD"] =

@@ -2222,12 +2222,12 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD_OPTION"] = "ADDafterLINE",
               ["ADD"] =
 [[
-		<Property name="Components" value="GcTriggerActionComponentData" _index="0">
+		<Property name="Components" value="GcTriggerActionComponentData">
 			<Property name="GcTriggerActionComponentData">
 				<Property name="HideModel" value="false" />
 				<Property name="StartInactive" value="false" />
 				<Property name="States">
-					<Property name="States" value="GcActionTriggerState" _index="0">
+					<Property name="States" value="GcActionTriggerState" _id="BOOT">
 						<Property name="StateID" value="BOOT" />
 						<Property name="Triggers">
 							<Property name="Triggers" value="GcActionTrigger" _index="0">
@@ -2257,7 +2257,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							</Property>
 						</Property>
 					</Property>
-					<Property name="States" value="GcActionTriggerState" _index="1">
+					<Property name="States" value="GcActionTriggerState" _id="TAKEOFF">
 						<Property name="StateID" value="TAKEOFF" />
 						<Property name="Triggers">
 							<Property name="Triggers" value="GcActionTrigger" _index="0">
@@ -2287,7 +2287,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							</Property>
 						</Property>
 					</Property>
-					<Property name="States" value="GcActionTriggerState" _index="2">
+					<Property name="States" value="GcActionTriggerState" _id="LANDING">
 						<Property name="StateID" value="LANDING" />
 						<Property name="Triggers">
 							<Property name="Triggers" value="GcActionTrigger" _index="0">
@@ -2440,12 +2440,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 <Data template="cTkAttachmentData">
 	<Property name="AdditionalData" />
 	<Property name="Components">
-		<Property name="Components" value="GcTriggerActionComponentData" _index="0">
+		<Property name="Components" value="GcTriggerActionComponentData">
 			<Property name="GcTriggerActionComponentData">
 				<Property name="HideModel" value="false" />
 				<Property name="StartInactive" value="false" />
 				<Property name="States">
-					<Property name="States" value="GcActionTriggerState" _index="0">
+					<Property name="States" value="GcActionTriggerState" _id="BOOT">
 						<Property name="StateID" value="BOOT" />
 						<Property name="Triggers">
 							<Property name="Triggers" value="GcActionTrigger" _index="0">
@@ -2475,7 +2475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							</Property>
 						</Property>
 					</Property>
-					<Property name="States" value="GcActionTriggerState" _index="1">
+					<Property name="States" value="GcActionTriggerState" _id="TAKEOFF">
 						<Property name="StateID" value="TAKEOFF" />
 						<Property name="Triggers">
 							<Property name="Triggers" value="GcActionTrigger" _index="0">
@@ -2505,7 +2505,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							</Property>
 						</Property>
 					</Property>
-					<Property name="States" value="GcActionTriggerState" _index="2">
+					<Property name="States" value="GcActionTriggerState" _id="LANDING">
 						<Property name="StateID" value="LANDING" />
 						<Property name="Triggers">
 							<Property name="Triggers" value="GcActionTrigger" _index="0">
