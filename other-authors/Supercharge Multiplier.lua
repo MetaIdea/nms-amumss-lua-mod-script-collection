@@ -1,10 +1,10 @@
 -- Configuration constants
-local NMS_VERSION = "6.33"
+local NMS_VERSION = "6.45.1"
 local MOD_VERSION = "0"
 
 -- Careful with this one! It boosts the supercharged slot multiplier significantly.
 -- High values are especially problematic with modules that boost ship maneuverability.
-local BONUS_MULTIPLIER = 3.000000 -- 1.250000
+local BONUS_MULTIPLIER = 3.250000 -- 1.250000
 
 NMS_MOD_DEFINITION_CONTAINER = {
    ["MOD_FILENAME"] = string.format("Supercharge Multiplier %s.%s", NMS_VERSION, MOD_VERSION),

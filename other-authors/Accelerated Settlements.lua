@@ -1,5 +1,5 @@
 -- Configuration constants
-local NMS_VERSION = "6.34"
+local NMS_VERSION = "6.45.1"
 local MOD_VERSION = "0"
 
 -- Settlement timer constants (reduced from defaults)
@@ -46,33 +46,33 @@ local MAX_NPC_POPULATION = 100              -- 100 NPCs (was 30 NPCs)
 
 -- Individual building times (all reduced significantly)
 -- Settlement landing zone construction time
-local LANDING_ZONE_TIME = 5                 -- 5 sec (was 1 hour)
+local LANDING_ZONE_TIME = 4                 -- 4 sec (was 1 hour)
 -- Settlement bar construction time
-local BAR_TIME = 5                          -- 5 sec (was 1 hour)
+local BAR_TIME = 4                          -- 4 sec (was 1 hour)
 -- Settlement tower construction time
-local TOWER_TIME = 5                        -- 5 sec (was 1 hour)
+local TOWER_TIME = 4                        -- 4 sec (was 1 hour)
 -- Settlement market construction time
-local MARKET_TIME = 5                       -- 5 sec (was 2 hours)
+local MARKET_TIME = 4                       -- 4 sec (was 2 hours)
 -- Small settlement building construction time
-local SMALL_TIME = 5                        -- 5 sec (was 20 min)
+local SMALL_TIME = 4                        -- 4 sec (was 20 min)
 -- Small industrial building construction time
-local SMALL_INDUSTRIAL_TIME = 5             -- 5 sec (was 20 min)
+local SMALL_INDUSTRIAL_TIME = 4             -- 4 sec (was 20 min)
 -- Medium settlement building construction time
-local MEDIUM_TIME = 5                       -- 5 sec (was 47 min)
+local MEDIUM_TIME = 4                       -- 4 sec (was 47 min)
 -- Large settlement building construction time
-local LARGE_TIME = 5                        -- 5 sec (was 2 hours)
+local LARGE_TIME = 4                        -- 4 sec (was 2 hours)
 -- Sheriff's office construction time
-local SHERIFF_TIME = 5                      -- 5 sec (was 90 sec)
+local SHERIFF_TIME = 4                      -- 4 sec (was 90 sec)
 -- Double settlement building construction time
-local DOUBLE_TIME = 5                       -- 5 sec (was 1 hour)
+local DOUBLE_TIME = 4                       -- 4 sec (was 1 hour)
 -- Settlement farm construction time
-local FARM_TIME = 5                         -- 5 sec (was 93 min)
+local FARM_TIME = 4                         -- 4 sec (was 93 min)
 -- Settlement factory construction time
-local FACTORY_TIME = 5                      -- 5 sec (was 93 min)
+local FACTORY_TIME = 4                      -- 4 sec (was 93 min)
 -- Fish pond construction time
-local FISH_POND_TIME = 5                    -- 5 sec (was 20 min)
+local FISH_POND_TIME = 4                    -- 4 sec (was 20 min)
 -- Builders robo arm construction time
-local BUILDERS_ROBO_ARM_TIME = 5            -- 5 sec (was 1 hour)
+local BUILDERS_ROBO_ARM_TIME = 4            -- 4 sec (was 1 hour)
 
 -- UI/Visual constants
 -- Building reveal cutscene duration

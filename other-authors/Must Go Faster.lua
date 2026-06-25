@@ -1,5 +1,5 @@
 -- Configuration constants
-local NMS_VERSION = "6.33"
+local NMS_VERSION = "6.45.1"
 local MOD_VERSION = "0"
 local GUIF_WAIT = 0
 local GROUND_WALK_SPEED = 4.4

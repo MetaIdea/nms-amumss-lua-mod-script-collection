@@ -1,5 +1,5 @@
 -- Configuration constants
-local NMS_VERSION = "6.33"
+local NMS_VERSION = "6.45.1"
 local MOD_VERSION = "0"
 
 local REFINER_TIME_FACTOR = 0.001 -- 1/1000 of the original time

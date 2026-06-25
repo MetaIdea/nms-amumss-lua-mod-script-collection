@@ -1,5 +1,5 @@
 -- Configuration constants
-local NMS_VERSION = "6.34"
+local NMS_VERSION = "6.45.1"
 local MOD_VERSION = "0"
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "PhotoModeMoveSpeed", "13" }, -- 11.000000
+                                { "PhotoModeMoveSpeed", "25" }, -- 11.000000
                                 { "BuildingModeMaxDistance", "9999999" } -- 60.000000
                             }
                         },
@@ -26,10 +26,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SPECIAL_KEY_WORDS"] = { "ID", "BEACON" },
                             ["PRECEDING_KEY_WORDS"] = { "CameraAerialViewData" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "Time", "1" }, -- 5.000000
+                                { "Time", "0.500000" }, -- 5.000000
                                 { "AerialViewMode", "FaceOut" }, -- FaceDownThenOut
-                                { "TimeBack", "0.900000" }, -- 4.000000
-                                { "StartTime", "0.400000" }, -- 1.000000
+                                { "TimeBack", "0.500000" }, -- 4.000000
+                                { "StartTime", "0.100000" }, -- 1.000000
                                 { "PauseTime", "0.000000" }, -- 2.500000
                                 { "Distance", "0.100000" } -- 2000.000000
                             }

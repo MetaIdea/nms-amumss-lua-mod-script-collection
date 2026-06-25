@@ -1,87 +1,3 @@
-local ModTreeXML = [[
-    <Property value="GcUnlockableItemTreeNode.xml">
-        <Property name="Unlockable" value="BP_SALVAGE" />
-        <Property name="Children">
-
-            <Property value="GcUnlockableItemTreeNode.xml">
-                <Property name="Unlockable" value="SENTINEL_LOOT" />
-                <Property name="Children">
-                    <Property value="GcUnlockableItemTreeNode.xml">
-                        <Property name="Unlockable" value="FACT_TOKEN" />
-                        <Property name="Children">
-                            <Property value="GcUnlockableItemTreeNode.xml">
-                                <Property name="Unlockable" value="POI_LOCATOR" />
-                                <Property name="Children" />
-                            </Property>
-                        </Property>
-                    </Property>
-                </Property>
-            </Property>
-
-            <Property value="GcUnlockableItemTreeNode.xml">
-                <Property name="Unlockable" value="CHART_ROBOT" />
-                <Property name="Children">
-                    <Property value="GcUnlockableItemTreeNode.xml">
-                        <Property name="Unlockable" value="SENTFREI_PROD" />
-                        <Property name="Children">
-                            <Property value="GcUnlockableItemTreeNode.xml">
-                                <Property name="Unlockable" value="FRIG_TOKEN" />
-                                <Property name="Children" />
-                            </Property>
-                        </Property>
-                    </Property>
-                </Property>
-            </Property>
-
-            <Property value="GcUnlockableItemTreeNode.xml">
-                <Property name="Unlockable" value="SHIP_INV_TOKEN" />
-                <Property name="Children">
-                    <Property value="GcUnlockableItemTreeNode.xml">
-                        <Property name="Unlockable" value="FREI_INV_TOKEN" />
-                        <Property name="Children">
-                            <Property value="GcUnlockableItemTreeNode.xml">
-                                <Property name="Unlockable" value="WEAP_INV_TOKEN" />
-                                <Property name="Children" />
-                            </Property>
-                        </Property>
-                    </Property>
-                </Property>
-            </Property>
-
-            <Property value="GcUnlockableItemTreeNode.xml">
-                <Property name="Unlockable" value="SCRAP_TECH" />
-                <Property name="Children">
-                    <Property value="GcUnlockableItemTreeNode.xml">
-                        <Property name="Unlockable" value="DRONE_SALVAGE" />
-                        <Property name="Children">
-                            <Property value="GcUnlockableItemTreeNode.xml">
-                                <Property name="Unlockable" value="SCRAP_WEAP" />
-                                <Property name="Children" />
-                            </Property>
-                        </Property>
-                    </Property>
-                </Property>
-            </Property>
-
-            <Property value="GcUnlockableItemTreeNode.xml">
-                <Property name="Unlockable" value="CLAMPEARL" />
-                <Property name="Children">
-                    <Property value="GcUnlockableItemTreeNode.xml">
-                        <Property name="Unlockable" value="STORM_CRYSTAL" />
-                        <Property name="Children">
-                            <Property value="GcUnlockableItemTreeNode.xml">
-                                <Property name="Unlockable" value="SUIT_INV_TOKEN" />
-                                <Property name="Children" />
-                            </Property>
-                        </Property>
-                    </Property>
-                </Property>
-            </Property>
-
-        </Property>
-    </Property>
-]]
-
 local InvTypes = { P = "Product", S = "Substance" }
 
 local ModBlueprintsData = {
@@ -97,15 +13,79 @@ local ModBlueprintsData = {
     { ITEM_CODE = "WEAP_INV_TOKEN", COST = 1, CRAFT_COMPS = { { ID = "WALKER_PROD", NUM = "1", CAT = InvTypes.P }, { ID = "EX_RED", NUM = "250", CAT = InvTypes.S }, { ID = "BIO", NUM = "3", CAT = InvTypes.P } } },
     { ITEM_CODE = "SENTFREI_PROD", COST = 1, CRAFT_COMPS = { { ID = "POI_LOCATOR", NUM = "1", CAT = InvTypes.P }, { ID = "CHART_ROBOT", NUM = "1", CAT = InvTypes.P }, { ID = "FACT_TOKEN", NUM = "1", CAT = InvTypes.P } } },
     { ITEM_CODE = "FACT_TOKEN", COST = 1, CRAFT_COMPS = { { ID = "NAV_DATA", NUM = "2", CAT = InvTypes.P }, { ID = "GEODE_ASTEROID", NUM = "1", CAT = InvTypes.P }, { ID = "ROBOT2", NUM = "200", CAT = InvTypes.S } } },
-    { ITEM_CODE = "CLAMPEARL", COST = 1, CRAFT_COMPS = { { ID = "PLANT_SNOW", NUM = "50", CAT = InvTypes.S }, { ID = "DUSTY1", NUM = "100", CAT = InvTypes.S }, { ID = "WATERPLANT", NUM = "100", CAT = InvTypes.S } } },
+    { ITEM_CODE = "WALKER_PROD", COST = 1, CRAFT_COMPS = { { ID = "TECH_COMP", NUM = "1", CAT = InvTypes.P }, { ID = "SPACEGUNK3", NUM = "200", CAT = InvTypes.S }, { ID = "CAVE1", NUM = "200", CAT = InvTypes.S } } },
     { ITEM_CODE = "SUIT_INV_TOKEN", COST = 1, CRAFT_COMPS = { { ID = "OXYGEN", NUM = "500", CAT = InvTypes.S }, { ID = "GAS3", NUM = "250", CAT = InvTypes.S }, { ID = "GRENFUEL1", NUM = "50", CAT = InvTypes.P } } },
     { ITEM_CODE = "STORM_CRYSTAL", COST = 1, CRAFT_COMPS = { { ID = "ASTEROID3", NUM = "150", CAT = InvTypes.S }, { ID = "GAS2", NUM = "300", CAT = InvTypes.S }, { ID = "JELLY", NUM = "50", CAT = InvTypes.P } } },
-    { ITEM_CODE = "DRONE_SALVAGE", COST = 1, CRAFT_COMPS = { { ID = "ROBOT2", NUM = "500", CAT = InvTypes.S }, { ID = "RADIO1", NUM = "500", CAT = InvTypes.S }, { ID = "SPACEGUNK2", NUM = "500", CAT = InvTypes.S } } }
+    { ITEM_CODE = "QUAD_PROD", COST = 1, CRAFT_COMPS = { { ID = "POWERCELL", NUM = "2", CAT = InvTypes.P }, { ID = "GEODE_SPACE", NUM = "2", CAT = InvTypes.P }, { ID = "FARMPROD3", NUM = "20", CAT = InvTypes.P } } },
+    { ITEM_CODE = "SHIPBRAIN_CLEAN", COST = 1, CRAFT_COMPS = { { ID = "ROBOT1", NUM = "500", CAT = InvTypes.S }, { ID = "CREATURE1", NUM = "100", CAT = InvTypes.S }, { ID = "NANOTUBES", NUM = "10", CAT = InvTypes.P } } },
+    { ITEM_CODE = "SPIDER_PROD", COST = 1, CRAFT_COMPS = { { ID = "DRONE_SHARD", NUM = "2", CAT = InvTypes.P }, { ID = "ANTIMATTER", NUM = "4", CAT = InvTypes.P }, { ID = "ALLOY5", NUM = "2", CAT = InvTypes.P } } },
+    { ITEM_CODE = "ALIEN_INV_TOKEN", COST = 1, CRAFT_COMPS = { { ID = "FOOD_P_GLITCH", NUM = "10", CAT = InvTypes.P }, { ID = "PLANT_CAVE", NUM = "100", CAT = InvTypes.S }, { ID = "FIENDCORE", NUM = "1", CAT = InvTypes.P } } },
+    { ITEM_CODE = "ALIEN_TECHBOX", COST = 1, CRAFT_COMPS = { { ID = "FOOD_P_GLITCH", NUM = "10", CAT = InvTypes.P }, { ID = "PLANT_CAVE", NUM = "100", CAT = InvTypes.S }, { ID = "FISHCORE", NUM = "1", CAT = InvTypes.P } } },
+    { ITEM_CODE = "BOSS_JUICE", COST = 1, CRAFT_COMPS = { { ID = "EYEBALL", NUM = "1", CAT = InvTypes.P }, { ID = "FOOD_P_DUSTFARM", NUM = "1", CAT = InvTypes.P }, { ID = "TOXIC1", NUM = "200", CAT = InvTypes.S } } },
+    { ITEM_CODE = "PORTAL_JUICE", COST = 1, CRAFT_COMPS = { { ID = "CARBON_SEAL", NUM = "5", CAT = InvTypes.P }, { ID = "COLD1", NUM = "200", CAT = InvTypes.S }, { ID = "WATER2", NUM = "200", CAT = InvTypes.S } } },
+    { ITEM_CODE = "ARTIFACT_KEY", COST = 1, CRAFT_COMPS = { { ID = "ALLOY1", NUM = "1", CAT = InvTypes.P }, { ID = "TRA_COMMODITY2", NUM = "5", CAT = InvTypes.P }, { ID = "LAND2", NUM = "200", CAT = InvTypes.S } } },
+    { ITEM_CODE = "TRIDENT_KEY", COST = 1, CRAFT_COMPS = { { ID = "ALLOY3", NUM = "1", CAT = InvTypes.P }, { ID = "TRA_COMMODITY2", NUM = "5", CAT = InvTypes.P }, { ID = "PLANT_WATER", NUM = "20", CAT = InvTypes.S } } },
+    { ITEM_CODE = "TECH_COMP", COST = 1, CRAFT_COMPS = { { ID = "ASTEROID2", NUM = "300", CAT = InvTypes.S }, { ID = "CAVE2", NUM = "300", CAT = InvTypes.S }, { ID = "COMPUTER", NUM = "3", CAT = InvTypes.P } } },
+    { ITEM_CODE = "ABAND_LOCATOR", COST = 1, CRAFT_COMPS = { { ID = "ASTEROID1", NUM = "500", CAT = InvTypes.S }, { ID = "COLD1", NUM = "500", CAT = InvTypes.S }, { ID = "HYPERFUEL1", NUM = "5", CAT = InvTypes.P } } },
+    { ITEM_CODE = "BIGGS_POI_LOC", COST = 1, CRAFT_COMPS = { { ID = "SHIPCHARGE", NUM = "1", CAT = InvTypes.P }, { ID = "MICROCHIP", NUM = "4", CAT = InvTypes.P }, { ID = "RADIO1", NUM = "120", CAT = InvTypes.S } } },
+    { ITEM_CODE = "CHART_BUILDER", COST = 1, CRAFT_COMPS = { { ID = "NAV_DATA", NUM = "5", CAT = InvTypes.P }, { ID = "ROBOT2", NUM = "500", CAT = InvTypes.S }, { ID = "FARMPROD9", NUM = "1", CAT = InvTypes.P } } },
+    { ITEM_CODE = "S19_TP", COST = 1, CRAFT_COMPS = { { ID = "DUSTY1", NUM = "150", CAT = InvTypes.S }, { ID = "ALLOY4", NUM = "5", CAT = InvTypes.P }, { ID = "TRA_COMMODITY5", NUM = "5", CAT = InvTypes.P } } },
+    { ITEM_CODE = "REP_TOKEN", COST = 1, CRAFT_COMPS = { { ID = "ILLEGAL_PROD2", NUM = "1", CAT = InvTypes.P }, { ID = "COMPOUND1", NUM = "1", CAT = InvTypes.P }, { ID = "AM_HOUSING", NUM = "3", CAT = InvTypes.P } } },
+    { ITEM_CODE = "MECH_PROD", COST = 1, CRAFT_COMPS = { { ID = "CASING", NUM = "50", CAT = InvTypes.P }, { ID = "ALLOY2", NUM = "10", CAT = InvTypes.P }, { ID = "STELLAR2", NUM = "500", CAT = InvTypes.S } } },
+    { ITEM_CODE = "TECHBOX", COST = 1, CRAFT_COMPS = { { ID = "CREATURE1", NUM = "250", CAT = InvTypes.S }, { ID = "ROBOT1", NUM = "250", CAT = InvTypes.S }, { ID = "BIO", NUM = "5", CAT = InvTypes.P } } }
 }
+
+local TreeGrid = {
+    { "JELLY", "NANOTUBES", "HYDRALIC", "MICROCHIP" },
+    { "COMPUTER", "CARBON_SEAL", "BIO", "CASING" },
+    { "MAGNET", "MIRROR", "POWERCELL", "SHIPCHARGE" },
+    { "LAUNCHFUEL", "SUBFUEL", "GRENFUEL1", "HYPERFUEL1" },
+    { "ACCESS1", "ACCESS2", "HYPERFUEL2", "ACCESS3" },
+    
+    { "BP_SALVAGE", "SENTINEL_LOOT", "FACT_TOKEN", "POI_LOCATOR" },
+    { "CHART_ROBOT", "SENTFREI_PROD", "FRIG_TOKEN", "SHIP_INV_TOKEN" },
+    { "FREI_INV_TOKEN", "WEAP_INV_TOKEN", "SCRAP_TECH", "QUAD_PROD" },
+    { "SCRAP_WEAP", "WALKER_PROD", "STORM_CRYSTAL", "SUIT_INV_TOKEN" },
+    
+    { "SPIDER_PROD", "SHIPBRAIN_CLEAN", "ALIEN_INV_TOKEN", "ALIEN_TECHBOX" },
+    { "BOSS_JUICE", "PORTAL_JUICE", "ARTIFACT_KEY", "TRIDENT_KEY" },
+    { "TECH_COMP", "ABAND_LOCATOR", "BIGGS_POI_LOC", "CHART_BUILDER" },
+    { "TECHBOX", "MECH_PROD", "REP_TOKEN", "S19_TP" }
+}
+
+local function GenerateTreeXML(grid)
+    local xml = ""
+    for _, branch in ipairs(grid) do
+        local branchXML = ""
+        for i = #branch, 1, -1 do
+            local item = branch[i]
+            if i == #branch then
+                branchXML = [[
+                            <Property value="GcUnlockableItemTreeNode.xml">
+                                <Property name="Unlockable" value="]] .. item .. [[" />
+                                <Property name="Children" />
+                            </Property>]]
+            else
+                branchXML = [[
+                            <Property value="GcUnlockableItemTreeNode.xml">
+                                <Property name="Unlockable" value="]] .. item .. [[" />
+                                <Property name="Children">
+]] .. branchXML .. [[
+
+                                </Property>
+                            </Property>]]
+            end
+        end
+        xml = xml .. branchXML .. "\n"
+    end
+    return xml
+end
+
+local ModTreeXML = GenerateTreeXML(TreeGrid)
 
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "EXTENDEDCRAFT",
-    ["MOD_DESCRIPTION"] = "You can craft a lot of rare useful things",
+    ["MOD_DESCRIPTION"] = "Rewritten 13x4 product tree",
     ["LUA_AUTHOR"] = "Exterra Project",
     ["MOD_AUTHOR"] = "Exterra Project",
     ["MODIFICATIONS"] = {
@@ -121,7 +101,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "PRODFUEL2"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD"] = ModTreeXML,
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Unlockable", "PRODFUEL2"},
+                            ["ADD"] = [[
+                        <Property name="Children">
+]] .. ModTreeXML .. [[
+                        </Property>
+]]
                         }
                     }
                 }
@@ -130,7 +118,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     }
 }
 
-local OpsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
+local OpsTableProduct = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["MXML_CHANGE_TABLE"]
 
 local function BuildIngredientXML(id, amount, invType)
     return [[
@@ -152,7 +140,7 @@ local function InjectFormulasToProducts()
         end
         local payloadXML = table.concat(ingredientsList)
 
-        table.insert(OpsTable, {
+        table.insert(OpsTableProduct, {
             ["SPECIAL_KEY_WORDS"]  = {"ID", def.ITEM_CODE, "Name", "IGNORE"},
             ["VALUE_CHANGE_TABLE"] = {
                 {"CraftAmountMultiplier", "1"},
@@ -161,14 +149,14 @@ local function InjectFormulasToProducts()
             }
         })
 
-        table.insert(OpsTable, {
+        table.insert(OpsTableProduct, {
             ["SPECIAL_KEY_WORDS"] = {"ID", def.ITEM_CODE, "Name", "IGNORE"},
             ["PRECEDING_KEY_WORDS"] = {"Requirements"},
             ["CREATE_HOS"] = "TRUE",
             ["REMOVE"] = "SECTION"
         })
 
-        table.insert(OpsTable, {
+        table.insert(OpsTableProduct, {
             ["SPECIAL_KEY_WORDS"] = {"ID", def.ITEM_CODE, "Name", "IGNORE"},
             ["PRECEDING_KEY_WORDS"] = {"RecipeCost"},
             ["ADD"] = [[

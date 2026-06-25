@@ -13,7 +13,7 @@ local function generate_xml_entries(characters, delay)
 end
 
 -- Configuration constants
-local NMS_VERSION = "6.33"
+local NMS_VERSION = "6.45.1"
 local MOD_VERSION = "0"
 
 -- Delay value for character display

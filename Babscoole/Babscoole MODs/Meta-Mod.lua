@@ -249,22 +249,6 @@ QUICK_ACTION_MENU =
       ["ACTION_TRIGGER"] =
 [[
               <Property name="Triggers" value="GcActionTrigger">
-                <Property name="Event" value="GcStateTimeEvent">
-                  <Property name="GcStateTimeEvent">
-                    <Property name="Seconds" value="0.000000" />
-                    <Property name="RandomSeconds" value="0.000000" />
-                    <Property name="UseMissionClock" value="false" />
-                  </Property>
-                </Property>
-                <Property name="Action">
-                  <Property name="Action" value="GcPlayAnimAction">
-                    <Property name="GcPlayAnimAction">
-                      <Property name="Anim" value="TOGGLE_BACKPACK" />
-                    </Property>
-                  </Property>
-                </Property>
-              </Property>
-              <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcAnimFrameEvent">
                   <Property name="GcAnimFrameEvent">
                     <Property name="Anim" value="TOGGLE_BACKPACK" />
