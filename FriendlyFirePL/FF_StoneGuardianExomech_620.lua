@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "StoneGuardianExomech"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "620"
+METADATA_NMS_VERSION    = "645"
 METADATA_MOD_DESC       = "This mod adds Stone Guardian pieces and dedicated technology modules for the Minotaur exocraft."
 
 

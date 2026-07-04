@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "FlamethrowerOnAtlasMT"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "558"
+METADATA_NMS_VERSION    = "645"
 METADATA_MOD_DESC       = "This mod enables either the Atlas / Atlantid Multi-Tools to spawn with Incinerator technology pre-installed"
 
 
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = FILES_MODELS_MULTITOOLS_ATLAS,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SKW"] = {"Tech","ATLAS_LASER",},
@@ -64,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 
                 {
                     ["MBIN_FILE_SOURCE"] = FILE_REALITY_TECHNOLOGYTABLE,
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SKW"] = {"ID","FLAME",},

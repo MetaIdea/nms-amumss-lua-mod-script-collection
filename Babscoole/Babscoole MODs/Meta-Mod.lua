@@ -2757,7 +2757,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Action">
                   <Property name="Action" value="GcHarvestPlantAction">
                     <Property name="GcHarvestPlantAction">
-                      <Property name="Radius" value="2000.000000" />
+                      <Property name="Radius" value="200.000000" />
                     </Property>
                   </Property>
                   <Property name="Action" value="GcGoToStateAction">

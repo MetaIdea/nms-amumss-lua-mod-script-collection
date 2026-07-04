@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "BetterExoskiffCustomisation"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "600"
+METADATA_NMS_VERSION    = "645"
 METADATA_MOD_DESC       = "This mod allows players to further customise the Exo-skiff fishing platform by allowing them to pick colors for center screen and sail."
 
 

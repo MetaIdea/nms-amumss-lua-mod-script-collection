@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Better Caves",
-["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.20",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Superlative Spelunking",
+["MOD_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Changes spawn parameters of certain stuff within caves",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =
@@ -46,6 +47,16 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"Coverage", "0.600000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/STALAGMITES.SCENE.MBIN"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Coverage", "0.300000"},
               }
             },
             {
@@ -125,6 +136,15 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
+              ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/CAVEDRIPVFX.SCENE.MBIN"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Coverage", "0.300000"},
+              }
+            },
+            {
               ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/HANGINGPLANTS.SCENE.MBIN"},
               ["SECTION_UP_SPECIAL"] = 1,
               ["VALUE_CHANGE_TABLE"] =
@@ -161,6 +181,15 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/LARGEFUNGHI.SCENE.MBIN"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Coverage", "0.300000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/LARGEBOULDER.SCENE.MBIN"},
               ["SECTION_UP_SPECIAL"] = 1,
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
               ["VALUE_CHANGE_TABLE"] =
@@ -566,15 +595,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/LARGEROCKFORMATION.SCENE.MBIN"},
-              ["SECTION_UP_SPECIAL"] = 1,
-              ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Coverage", "0.300000"},
-              }
-            },
-            {
               ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/LARGEFUNGHI.SCENE.MBIN"},
               ["SECTION_UP_SPECIAL"] = 1,
               ["VALUE_CHANGE_TABLE"] =
@@ -592,6 +612,24 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
             {
+              ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/LARGEROCKFORMATION.SCENE.MBIN"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Coverage", "0.300000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/LARGEBOULDER.SCENE.MBIN"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Coverage", "0.300000"},
+              }
+            },
+            {
               ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/STALACTITES.SCENE.MBIN"},
               ["SECTION_UP_SPECIAL"] = 1,
               ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
@@ -599,6 +637,16 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"Coverage", "0.500000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/MEDIUMSTALAGTITES.SCENE.MBIN"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Coverage", "0.300000"},
               }
             },
             {
@@ -626,6 +674,33 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"Coverage", "0.400000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/MEDIUMPLANT.SCENE.MBIN"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Coverage", "0.300000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/MEDIUMROCK.SCENE.MBIN"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Coverage", "0.300000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/MEDIUMROCKPOOL.SCENE.MBIN"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Coverage", "0.300000"},
               }
             },
             {
@@ -709,6 +784,24 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"Coverage", "0.400000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/SMALLSHARP02.SCENE.MBIN"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Coverage", "0.300000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/SMALLROCK.SCENE.MBIN"},
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Coverage", "0.300000"},
               }
             },
           }

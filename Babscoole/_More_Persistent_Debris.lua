@@ -1,17 +1,32 @@
-ModVersion = "_Xeno_Arena"
+ModVersion = "_Swarm"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MPD"..ModVersion,
+["MOD_FILENAME"]    = "MPD"..ModVersion,
 ["MOD_AUTHOR"]      = "Knightmare077",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.34",
+["NMS_VERSION"]     = "6.45",
 ["MOD_DESCRIPTION"] = "Spawns more debris and keeps it around longer.",
 ["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =
       {
+        {
+          ["MBIN_FILE_SOURCE"] = "GCCOLLISIONTABLE.GLOBAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"CollisionTable", "GcPhysicsCollisionGroupCollidesWith"},
+              ["SECTION_ACTIVE"] = {38},
+              ["PRECEDING_KEY_WORDS"] = {"CollidesWith"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"CollisionGroup", "Debris"},
+              }
+            },
+          }
+        },
         {
           ["MBIN_FILE_SOURCE"] = "METADATA\EFFECTS\EXPLOSIONTABLE.MBIN",
           ["MXML_CHANGE_TABLE"] =
@@ -715,11 +730,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
             },
             {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "GROUNDEXPLODE"},
+              ["PRECEDING_KEY_WORDS"] = {"Debris"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Number", "2"},
+              }
+            },
+            {
               ["SPECIAL_KEY_WORDS"] = {"Id", "CORPTPILLDESTR"},
               ["PRECEDING_KEY_WORDS"] = {"Debris"},
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"Number", "3"},
+                {"Radius", "3"},
+                {"Speed ", "25.000000"},
               }
             },
             {
@@ -736,7 +761,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Number" value="1" />
           <Property name="Radius" value="2.000000" />
           <Property name="Scale" value="1.000000" />
-          <Property name="Speed" value="15.000000" />
+          <Property name="Speed" value="25.000000" />
           <Property name="AnglularSpeed" value="20.000000" />
           <Property name="OverrideSeed" value="NONE" />
         </Property>
@@ -746,10 +771,30 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Seed" value="0" />
           </Property>
           <Property name="Number" value="3" />
-          <Property name="Radius" value="2.000000" />
+          <Property name="Radius" value="4.000000" />
           <Property name="Scale" value="1.000000" />
-          <Property name="Speed" value="25.000000" />
-          <Property name="AnglularSpeed" value="25.000000" />
+          <Property name="Speed" value="35.000000" />
+          <Property name="AnglularSpeed" value="10.000000" />
+          <Property name="OverrideSeed" value="NONE" />
+        </Property>
+]]
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "CORPTPILLEXPL"},
+              ["PRECEDING_KEY_WORDS"] = {"Debris"},
+              ["CREATE_HOS"] = "TRUE",
+              ["ADD"] =
+[[
+        <Property name="Debris" value="GcDebrisData" _index="0">
+          <Property name="Filename" value="TkModelResource">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SCRAPEXPLOSIONDEBRIS.SCENE.MBIN" />
+            <Property name="Seed" value="0" />
+          </Property>
+          <Property name="Number" value="3" />
+          <Property name="Radius" value="6.000000" />
+          <Property name="Scale" value="1.000000" />
+          <Property name="Speed" value="55.000000" />
+          <Property name="AnglularSpeed" value="10.000000" />
           <Property name="OverrideSeed" value="NONE" />
         </Property>
 ]]
@@ -832,8 +877,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Number" value="3" />
           <Property name="Radius" value="2.000000" />
           <Property name="Scale" value="0.400000" />
-          <Property name="Speed" value="15.000000" />
-          <Property name="AnglularSpeed" value="20.000000" />
+          <Property name="Speed" value="35.000000" />
+          <Property name="AnglularSpeed" value="10.000000" />
           <Property name="OverrideSeed" value="NONE" />
         </Property>
         <Property name="Debris" value="GcDebrisData" _index="1">
@@ -845,7 +890,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Radius" value="6.000000" />
           <Property name="Scale" value="0.400000" />
           <Property name="Speed" value="25.000000" />
-          <Property name="AnglularSpeed" value="20.000000" />
+          <Property name="AnglularSpeed" value="10.000000" />
           <Property name="OverrideSeed" value="NONE" />
         </Property>
         <Property name="Debris" value="GcDebrisData" _index="2">
@@ -854,10 +899,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Seed" value="0" />
           </Property>
           <Property name="Number" value="3" />
-          <Property name="Radius" value="2.000000" />
+          <Property name="Radius" value="3.000000" />
           <Property name="Scale" value="0.500000" />
-          <Property name="Speed" value="15.000000" />
-          <Property name="AnglularSpeed" value="20.000000" />
+          <Property name="Speed" value="25.000000" />
+          <Property name="AnglularSpeed" value="10.000000" />
           <Property name="OverrideSeed" value="NONE" />
         </Property>
         <Property name="Debris" value="GcDebrisData" _index="3">
@@ -866,10 +911,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Seed" value="0" />
           </Property>
           <Property name="Number" value="3" />
-          <Property name="Radius" value="1.000000" />
+          <Property name="Radius" value="3.000000" />
           <Property name="Scale" value="0.500000" />
-          <Property name="Speed" value="7.000000" />
-          <Property name="AnglularSpeed" value="25.000000" />
+          <Property name="Speed" value="20.000000" />
+          <Property name="AnglularSpeed" value="10.000000" />
           <Property name="OverrideSeed" value="NONE" />
         </Property>
 ]]
@@ -888,7 +933,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Number" value="6" />
           <Property name="Radius" value="3.000000" />
           <Property name="Scale" value="0.400000" />
-          <Property name="Speed" value="15.000000" />
+          <Property name="Speed" value="35.000000" />
           <Property name="AnglularSpeed" value="20.000000" />
           <Property name="OverrideSeed" value="NONE" />
         </Property>
@@ -900,7 +945,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Number" value="6" />
           <Property name="Radius" value="3.000000" />
           <Property name="Scale" value="0.300000" />
-          <Property name="Speed" value="15.000000" />
+          <Property name="Speed" value="25.000000" />
           <Property name="AnglularSpeed" value="20.000000" />
           <Property name="OverrideSeed" value="NONE" />
         </Property>
@@ -920,7 +965,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Number" value="6" />
           <Property name="Radius" value="2.000000" />
           <Property name="Scale" value="0.300000" />
-          <Property name="Speed" value="15.000000" />
+          <Property name="Speed" value="25.000000" />
           <Property name="AnglularSpeed" value="20.000000" />
           <Property name="OverrideSeed" value="NONE" />
         </Property>
@@ -932,7 +977,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Number" value="3" />
           <Property name="Radius" value="2.000000" />
           <Property name="Scale" value="0.300000" />
-          <Property name="Speed" value="15.000000" />
+          <Property name="Speed" value="45.000000" />
           <Property name="AnglularSpeed" value="20.000000" />
           <Property name="OverrideSeed" value="NONE" />
         </Property>
@@ -952,8 +997,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Number" value="4" />
           <Property name="Radius" value="2.000000" />
           <Property name="Scale" value="0.400000" />
-          <Property name="Speed" value="15.000000" />
-          <Property name="AnglularSpeed" value="20.000000" />
+          <Property name="Speed" value="35.000000" />
+          <Property name="AnglularSpeed" value="10.000000" />
           <Property name="OverrideSeed" value="NONE" />
         </Property>
         <Property name="Debris" value="GcDebrisData" _index="1">
@@ -964,8 +1009,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Number" value="3" />
           <Property name="Radius" value="2.000000" />
           <Property name="Scale" value="0.400000" />
-          <Property name="Speed" value="15.000000" />
-          <Property name="AnglularSpeed" value="20.000000" />
+          <Property name="Speed" value="25.000000" />
+          <Property name="AnglularSpeed" value="10.000000" />
           <Property name="OverrideSeed" value="NONE" />
         </Property>
 ]]
@@ -1101,7 +1146,13 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] =
               {
+                {"Id", "MINIDRONEEXPL"},
+                {"Id", "PHYSIMPACTTERR"},
+                {"Id", "EXPBARRELDATA"},
                 {"Id", "CARGOEXPLOSION"},
+                {"Id", "CARGOEXPL_FINAL"},
+                {"Id", "TURRETEXPL"},
+                {"Id", "CARGOSHIPEXPL"},
                 {"Id", "SENTHIVEEXPL"},
                 {"Id", "FREIGHTEREXPL"},
                 {"Id", "FREIGHTEXPLSML"},
@@ -1123,6 +1174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] =
               {
+                {"Id", "GROUNDEXPLODE"},
                 {"Id", "SENTCRYSTALEXPL"},
                 {"Id", "SENTCRYSEXPLSML"},
               },
@@ -1135,6 +1187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] =
               {
                 {"Id", "CORPTPILLDESTR"},
+                {"Id", "CORPTPILLEXPL"},
                 {"Id", "CORRUPDRONEEXPL"},
                 {"Id", "CORRUPARMOUREXP"},
                 {"Id", "CORRUPTQUADEXP"},
@@ -1159,12 +1212,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
         <Property name="Debris" value="GcDebrisData" _index="0">
           <Property name="Filename" value="TkModelResource">
-            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/ROCKDEBRIS.SCENE.MBIN" />
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/LARGERESOURCEDEBRIS.SCENE.MBIN" />
             <Property name="Seed" value="0" />
           </Property>
           <Property name="Number" value="12" />
           <Property name="Radius" value="3.000000" />
-          <Property name="Scale" value="1.000000" />
+          <Property name="Scale" value="0.700000" />
           <Property name="Speed" value="6.000000" />
           <Property name="AnglularSpeed" value="3.000000" />
           <Property name="OverrideSeed" value="NONE" />
@@ -1423,7 +1476,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "STORMCRYSTAL"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Number", "6"},
+                {"Number", "5"},
+                {"Scale",  "0.500000"},
               }
             },
             {
@@ -1444,7 +1498,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Number" value="12" />
           <Property name="Radius" value="3.000000" />
-          <Property name="Scale" value="0.900000" />
+          <Property name="Scale" value="0.700000" />
           <Property name="Speed" value="6.000000" />
           <Property name="AnglularSpeed" value="3.000000" />
           <Property name="OverrideSeed" value="NONE" />
@@ -1795,6 +1849,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] =
               {
+                {"Id", "ROVERFOOTSTEP"},
+                {"Id", "DRONEEXPLODE"},
+                {"Id", "RESOURCEEXPLODE"},
                 {"Id", "DRONEDYING"},
                 {"Id", "WALKEREXPLODE"},
                 {"Id", "FIENDHATCH"},
@@ -1809,7 +1866,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"Id", "SENTINELARMOUR"},
                 {"Id", "DRONEWALKEREXPL"},
                 {"Id", "BUGDEATH"},
+                {"Id", "QUEENBUGDEATH"},
                 {"Id", "QUEENARMOURL"},
+                {"Id", "WALKBLD_EXP"},
+                {"Id", "BLOODYORGAN"},
+                {"Id", "PHEROMONESACK"},
+                {"Id", "GROUNDMEAT"},
+                {"Id", "ENZYMEFLUID"},
+                {"Id", "FERMENTEDFRUIT"},
+                {"Id", "SCENTEDHERBS"},
+                {"Id", "SWEETENEDCOMPOS"},
+                {"Id", "SYNTHETICWORMS"},
+                {"Id", "CREATUREPELLETS"},
                 {"Id", "WALKBLD_EXP"},
               },
               ["VALUE_CHANGE_TABLE"] =
@@ -1915,6 +1983,15 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_R_EXP"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Radius",        "60.000000"},
+                {"Speed",         "100.000000"},
+                {"AnglularSpeed", "10.000000"},
+              }
+            },
+            {
               ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_HIT"},
               ["PRECEDING_KEY_WORDS"] = {"Debris"},
               ["CREATE_HOS"] = "TRUE",
@@ -1925,14 +2002,48 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
             <Property name="Seed" value="0" />
           </Property>
-          <Property name="Number" value="2" />
+          <Property name="Number" value="4" />
           <Property name="Radius" value="80.000000" />
           <Property name="Scale" value="0.020000" />
-          <Property name="Speed" value="30.000000" />
-          <Property name="AnglularSpeed" value="70.000000" />
+          <Property name="Speed" value="90.000000" />
+          <Property name="AnglularSpeed" value="10.000000" />
           <Property name="OverrideSeed" value="0" />
         </Property>
 ]]
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
+              ["PRECEDING_KEY_WORDS"] = {"Debris"},
+              ["CREATE_HOES"] = "TRUE",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
+              ["PRECEDING_KEY_WORDS"] = {"Debris"},
+              ["CREATE_HOS"] = "TRUE",
+              ["ADD"] =
+[[
+        <Property name="Debris" value="GcDebrisData" _index="0">
+          <Property name="Filename" value="TkModelResource">
+            <Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
+            <Property name="Seed" value="0" />
+          </Property>
+          <Property name="Number" value="8" />
+          <Property name="Radius" value="70.000000" />
+          <Property name="Scale" value="0.040000" />
+          <Property name="Speed" value="100.000000" />
+          <Property name="AnglularSpeed" value="10.000000" />
+          <Property name="OverrideSeed" value="NONE" />
+        </Property>
+]]
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_S_EXP"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Radius",        "80.000000"},
+                {"Speed",         "110.000000"},
+                {"AnglularSpeed", "10.000000"},
+              }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_L_EXP"},
@@ -1945,10 +2056,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
             <Property name="Seed" value="0" />
           </Property>
-          <Property name="Number" value="3" />
+          <Property name="Number" value="1" />
           <Property name="Radius" value="90.000000" />
           <Property name="Scale" value="0.020000" />
-          <Property name="Speed" value="30.000000" />
+          <Property name="Speed" value="100.000000" />
           <Property name="AnglularSpeed" value="20.000000" />
           <Property name="OverrideSeed" value="0" />
         </Property>
@@ -1957,11 +2068,11 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
             <Property name="Seed" value="0" />
           </Property>
-          <Property name="Number" value="3" />
+          <Property name="Number" value="1" />
           <Property name="Radius" value="50.000000" />
           <Property name="Scale" value="0.020000" />
-          <Property name="Speed" value="60.000000" />
-          <Property name="AnglularSpeed" value="60.000000" />
+          <Property name="Speed" value="80.000000" />
+          <Property name="AnglularSpeed" value="10.000000" />
           <Property name="OverrideSeed" value="0" />
         </Property>
 ]]
@@ -2035,6 +2146,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"Life", "60.000000"},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_S_EXP"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Life", "60.500000"},
               }
             },
             {
