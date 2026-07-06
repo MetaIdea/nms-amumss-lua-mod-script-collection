@@ -3,6 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Darker Indoors and Caves",
 ["MOD_AUTHOR"]      = "fabricator",
 ["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.45",
 ["MOD_DESCRIPTION"] = "It makes interiors and caves darker",
 ["MODIFICATIONS"]   =
   {

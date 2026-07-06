@@ -528,12 +528,11 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] = {"DroneWeapons", "GcDroneWeaponData"},
               ["REPLACE_TYPE"] = "ALL",
-              ["MATH_OPERATION"] = "*",
               ["VALUE_MATCH"] = "120.000000",
               ["VALUE_MATCH_OPTIONS"] = "~=",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Range", 2}
+                {"Range", "@*2"}
               }
             },
           }
@@ -544,12 +543,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           {
             {
               ["PRECEDING_KEY_WORDS"] = {"SentinelSpawns"},
-              ["MATH_OPERATION"] = "*",
               ["REPLACE_TYPE"] = "ALL",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MinAmount", MINMULTI},
-                {"MaxAmount", MAXMULTI},
+                {"MinAmount", "@*"..MINMULTI},
+                {"MaxAmount", "@*"..MAXMULTI},
               }
             },
           }

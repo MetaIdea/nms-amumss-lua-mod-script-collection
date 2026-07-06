@@ -44,11 +44,10 @@ for i=1,#ShrinkCreature do
   ShrinkCreatureTable[#ShrinkCreatureTable +1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"ID", value},
-      ["MATH_OPERATION"] = "/",
       ["VALUE_CHANGE_TABLE"] =
       {
-        {"MinScale", DIVISOR},
-        {"MaxScale", DIVISOR},
+        {"MinScale", "@/"..DIVISOR},
+        {"MaxScale", "@/"..DIVISOR},
       }
     }
 end

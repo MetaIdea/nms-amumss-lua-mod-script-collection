@@ -38,11 +38,10 @@ for k = 1, #PlantRewardIds do
   ChangesToRewardTable[#ChangesToRewardTable + 1] =
   {
     ["SPECIAL_KEY_WORDS"] = {"Id", rewardId, "List", "GcRewardTableItemList"},
-    ["MATH_OPERATION"] = "*",
     ["VALUE_CHANGE_TABLE"] =
     {
-      {"AmountMin", HarvestMultiple},
-      {"AmountMax", HarvestMultiple}
+      {"AmountMin", "@*"..HarvestMultiple},
+      {"AmountMax", "@*"..HarvestMultiple}
     }
   }
 end

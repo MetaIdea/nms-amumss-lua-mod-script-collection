@@ -115,14 +115,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						]]--
 						-- Asteroids resources
 						{
-							["MATH_OPERATION"] = "*",
 							["VALUE_CHANGE_TABLE"] = 
 							{		
-								{"Rare Asteroid Min Resources", Resources_Mult},	-- Vanilla 5 // Mod default: x3 = 15
-								{"Rare Asteroid Max Resources", Resources_Mult},	-- Vanilla 10 // Mod default: x3 = 30
-								{"Common Asteroid Min Resources", Resources_Mult},	-- Vanilla 3 // Mod default: x3 = 9 // Tritium = CommonAsteroidMinResources * 5 (CommonAsteroidResourceFuelMultiplier) = 15 (mod default 45)
-								{"Common Asteroid Max Resources", Resources_Mult},	-- Vanilla 5 // Mod default: x3 = 15 // Tritium = CommonAsteroidMaxResources * 5 (CommonAsteroidResourceFuelMultiplier) = 25 (mod default 75)
-								{"Rare Asteroid Data Product Odds", Anomaly_Detectors_Mult},	-- Vanilla 0.005 // Mod default: x3 = 0.015
+								{"Rare Asteroid Min Resources",     "@*"..Resources_Mult},	-- Vanilla 5 // Mod default: x3 = 15
+								{"Rare Asteroid Max Resources",     "@*"..Resources_Mult},	-- Vanilla 10 // Mod default: x3 = 30
+								{"Common Asteroid Min Resources",   "@*"..Resources_Mult},	-- Vanilla 3 // Mod default: x3 = 9 // Tritium = CommonAsteroidMinResources * 5 (CommonAsteroidResourceFuelMultiplier) = 15 (mod default 45)
+								{"Common Asteroid Max Resources",   "@*"..Resources_Mult},	-- Vanilla 5 // Mod default: x3 = 15 // Tritium = CommonAsteroidMaxResources * 5 (CommonAsteroidResourceFuelMultiplier) = 25 (mod default 75)
+								{"Rare Asteroid Data Product Odds", "@*"..Anomaly_Detectors_Mult},	-- Vanilla 0.005 // Mod default: x3 = 0.015
 							},
 						},
 					},

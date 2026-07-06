@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "JJs.Bridge.V.3.2",
+["MOD_FILENAME"]    = "JJs.Bridge.V.3.3",
 ["MOD_AUTHOR"]      = "JJHookah",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.34",
+["NMS_VERSION"]     = "6.45",
 ["MOD_DESCRIPTION"] = "Changes the design of freighter bridges.",
 ["MODIFICATIONS"]   =
   {
@@ -15,11 +15,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["SPECIAL_KEY_WORDS"] = {"Name", "P_RAD_LRG_CAN"},
-              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["PRECEDING_KEY_WORDS"] = {"Lists"},
+              ["ADD_OPTION"] = "ADDendSECTION",
               ["ADD"] =
 [[
-    <Property name="Lists" value="GcSelectableObjectList" _index="74">
+    <Property name="Lists" value="GcSelectableObjectList" _index="77">
       <Property name="Name" value="GLOBES" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="75">
+    <Property name="Lists" value="GcSelectableObjectList" _index="78">
       <Property name="Name" value="GALLEON" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -95,7 +95,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="76">
+    <Property name="Lists" value="GcSelectableObjectList" _index="79">
       <Property name="Name" value="BOBBLEHEADS" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -121,7 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="77">
+    <Property name="Lists" value="GcSelectableObjectList" _index="80">
       <Property name="Name" value="LOD_DRAPE" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -132,7 +132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="78">
+    <Property name="Lists" value="GcSelectableObjectList" _index="81">
       <Property name="Name" value="LOD_LIGHT" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -143,7 +143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="79">
+    <Property name="Lists" value="GcSelectableObjectList" _index="82">
       <Property name="Name" value="LAMPS" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -178,7 +178,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="80">
+    <Property name="Lists" value="GcSelectableObjectList" _index="83">
       <Property name="Name" value="AMBERLAMP" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -189,7 +189,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="81">
+    <Property name="Lists" value="GcSelectableObjectList" _index="84">
       <Property name="Name" value="BLUELAMP" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -200,7 +200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="82">
+    <Property name="Lists" value="GcSelectableObjectList" _index="85">
       <Property name="Name" value="GREENLAMP" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -211,7 +211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="83">
+    <Property name="Lists" value="GcSelectableObjectList" _index="86">
       <Property name="Name" value="ORANGELAMP" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -222,7 +222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="84">
+    <Property name="Lists" value="GcSelectableObjectList" _index="87">
       <Property name="Name" value="PURPLELAMP" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -233,7 +233,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="85">
+    <Property name="Lists" value="GcSelectableObjectList" _index="88">
       <Property name="Name" value="REDLAMP" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -244,7 +244,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="86">
+    <Property name="Lists" value="GcSelectableObjectList" _index="89">
       <Property name="Name" value="TEALLAMP" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -255,7 +255,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="87">
+    <Property name="Lists" value="GcSelectableObjectList" _index="90">
       <Property name="Name" value="VIOLETLAMP" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -266,7 +266,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="88">
+    <Property name="Lists" value="GcSelectableObjectList" _index="91">
       <Property name="Name" value="WHITELAMP" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -277,7 +277,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="89">
+    <Property name="Lists" value="GcSelectableObjectList" _index="92">
       <Property name="Name" value="BUGS" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -288,7 +288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="90">
+    <Property name="Lists" value="GcSelectableObjectList" _index="93">
       <Property name="Name" value="FLAGS" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -299,7 +299,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="91">
+    <Property name="Lists" value="GcSelectableObjectList" _index="94">
       <Property name="Name" value="COLOURS" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -334,7 +334,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="92">
+    <Property name="Lists" value="GcSelectableObjectList" _index="95">
       <Property name="Name" value="GLOWBULB" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -345,7 +345,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="93">
+    <Property name="Lists" value="GcSelectableObjectList" _index="96">
       <Property name="Name" value="X4LAYOUTS" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />
@@ -392,7 +392,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="94">
+    <Property name="Lists" value="GcSelectableObjectList" _index="97">
       <Property name="Name" value="DISPLAY" />
       <Property name="Race" value="GcAlienRace">
         <Property name="AlienRace" value="None" />

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Trading.Post.Revamp.V.3.4",
+["MOD_FILENAME"]  = "Trading.Post.Revamp.V.3.5",
 ["MOD_AUTHOR"]    = "JJHookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.34",
+["NMS_VERSION"]   = "6.45",
 ["MODIFICATIONS"] =
   {
     {
@@ -634,402 +634,402 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD_OPTION"] = "ADDendSECTION",
               ["ADD"] =
 [[
-    <Property name="Lists" value="GcSelectableObjectList" _index="74">
-      <Property name="Name" value="GLOBES" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLES/GLOBES.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="1">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/GALAXY.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="2">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOCOMBAT.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="3">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLODIPLOMATICPATH.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="4">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLES/GLOBES.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="5">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOINDUSTRIAL.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="6">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLONORMANDYPATH.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="7">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLES/GLOBES.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="8">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOSCIENCE.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="9">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOSUPPORTPATH.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="75">
-      <Property name="Name" value="GALLEON" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLESPIRATE/GLOBESPIRATE.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="1">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/GALAXY.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="2">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOCOMBAT.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="3">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLODIPLOMATICPATH.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="4">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLESPIRATE/GLOBESPIRATE.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="5">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOINDUSTRIAL.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="6">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLONORMANDYPATH.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="7">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLESPIRATE/GLOBESPIRATE.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="8">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOSCIENCE.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="9">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOSUPPORTPATH.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="76">
-      <Property name="Name" value="BOBBLEHEADS" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\APOLLOBOBBLEHEAD.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="1">
-          <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\ARTEMISBOBBLEHEAD.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="2">
-          <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\ATLASBOBBLEHEAD.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="3">
-          <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\NADABOBBLEHEAD.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="4">
-          <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\NULBOBBLEHEAD.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="5">
-          <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\POLOBOBBLEHEAD.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="77">
-      <Property name="Name" value="LOD_DRAPE" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLES/ALLWALLDRAPES.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="78">
-      <Property name="Name" value="LOD_LIGHT" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLES/SMALLLIGHT.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="79">
-      <Property name="Name" value="LAMPS" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\AMBERLAMPS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="1">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\BLUELAMPS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="2">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\GREENLAMPS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="3">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\ORANGELAMPS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="4">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\PURPLELAMPS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="5">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\REDLAMPS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="6">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\TEALLAMPS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="7">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\VIOLETLAMPS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="8">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\WHITELAMPS.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="80">
-      <Property name="Name" value="AMBERLAMP" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\AMBERLAMP.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="81">
-      <Property name="Name" value="BLUELAMP" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\BLUELAMP.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="82">
-      <Property name="Name" value="GREENLAMP" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\GREENLAMP.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="83">
-      <Property name="Name" value="ORANGELAMP" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\ORANGELAMP.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="84">
-      <Property name="Name" value="PURPLELAMP" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\PURPLELAMP.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="85">
-      <Property name="Name" value="REDLAMP" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\REDLAMP.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="86">
-      <Property name="Name" value="TEALLAMP" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\TEALLAMP.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="87">
-      <Property name="Name" value="VIOLETLAMP" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\VIOLETLAMP.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="88">
-      <Property name="Name" value="WHITELAMP" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\WHITELAMP.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="89">
-      <Property name="Name" value="BUGS" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\EFFECTS\NATURE\BEESWARM.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="90">
-      <Property name="Name" value="FLAGS" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\PARTS\FLAG.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="91">
-      <Property name="Name" value="COLOURS" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\BLUEROOM.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="1">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\ORANGEROOM.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="2">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\GREENROOM.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="3">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\REDROOM.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="4">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\YELLOWROOM.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="5">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\PURPLEROOM.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="6">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\GREYROOM.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="7">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\WHITEROOM.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="8">
-          <Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\AQUAROOM.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="92">
-      <Property name="Name" value="GLOWBULB" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\BREAKABLES\MEDIUMGLOWPLANT.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="93">
-      <Property name="Name" value="X4LAYOUTS" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4AMBER.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="1">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4GLOWPLANTS_FLAGS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="2">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4BLUE.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="3">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4GLOWPLANTS_MONITORS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="4">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4GREEN.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="5">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4PILLARS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="6">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4ORANGE.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="7">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4GLOWPLANTS_FLAGS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="8">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4PURPLE.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="9">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4GLOWPLANTS_MONITORS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="10">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4RED.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="11">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4PILLARS.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="12">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4TEAL.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property name="Lists" value="GcSelectableObjectList" _index="94">
-      <Property name="Name" value="DISPLAY" />
-      <Property name="Race" value="GcAlienRace">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property name="Options" value="GcSelectableObjectData" _index="0">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\WALLPROPS\MONITORSB_LOCATOR.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="1">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\WALLPROPS\HOLODISPLAY1_LOCATOR.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="2">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\WALLPROPS\MONITORSB2_LOCATOR.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="3">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\WALLPROPS\HOLODISPLAY2_LOCATOR.SCENE.MBIN" />
-        </Property>
-        <Property name="Options" value="GcSelectableObjectData" _index="4">
-          <Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\WALLPROPS\MONITORSB3_LOCATOR.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="77">
+			<Property name="Name" value="GLOBES" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLES/GLOBES.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="1">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/GALAXY.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="2">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOCOMBAT.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="3">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLODIPLOMATICPATH.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="4">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLES/GLOBES.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="5">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOINDUSTRIAL.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="6">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLONORMANDYPATH.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="7">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLES/GLOBES.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="8">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOSCIENCE.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="9">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOSUPPORTPATH.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="78">
+			<Property name="Name" value="GALLEON" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLESPIRATE/GLOBESPIRATE.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="1">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/GALAXY.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="2">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOCOMBAT.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="3">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLODIPLOMATICPATH.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="4">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLESPIRATE/GLOBESPIRATE.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="5">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOINDUSTRIAL.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="6">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLONORMANDYPATH.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="7">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLESPIRATE/GLOBESPIRATE.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="8">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOSCIENCE.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="9">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/SCENES/HOLOSUPPORTPATH.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="79">
+			<Property name="Name" value="BOBBLEHEADS" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\APOLLOBOBBLEHEAD.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="1">
+					<Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\ARTEMISBOBBLEHEAD.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="2">
+					<Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\ATLASBOBBLEHEAD.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="3">
+					<Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\NADABOBBLEHEAD.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="4">
+					<Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\NULBOBBLEHEAD.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="5">
+					<Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\POLOBOBBLEHEAD.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="80">
+			<Property name="Name" value="LOD_DRAPE" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLES/ALLWALLDRAPES.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="81">
+			<Property name="Name" value="LOD_LIGHT" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS/JJSBRIDGE/BREAKABLES/SMALLLIGHT.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="82">
+			<Property name="Name" value="LAMPS" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\AMBERLAMPS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="1">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\BLUELAMPS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="2">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\GREENLAMPS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="3">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\ORANGELAMPS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="4">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\PURPLELAMPS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="5">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\REDLAMPS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="6">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\TEALLAMPS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="7">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\VIOLETLAMPS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="8">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\LAMP_LAYOUTS\WHITELAMPS.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="83">
+			<Property name="Name" value="AMBERLAMP" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\AMBERLAMP.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="84">
+			<Property name="Name" value="BLUELAMP" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\BLUELAMP.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="85">
+			<Property name="Name" value="GREENLAMP" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\GREENLAMP.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="86">
+			<Property name="Name" value="ORANGELAMP" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\ORANGELAMP.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="87">
+			<Property name="Name" value="PURPLELAMP" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\PURPLELAMP.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="88">
+			<Property name="Name" value="REDLAMP" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\REDLAMP.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="89">
+			<Property name="Name" value="TEALLAMP" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\TEALLAMP.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="90">
+			<Property name="Name" value="VIOLETLAMP" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\VIOLETLAMP.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="91">
+			<Property name="Name" value="WHITELAMP" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\BREAKABLES\LAMPS\WHITELAMP.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="92">
+			<Property name="Name" value="BUGS" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\EFFECTS\NATURE\BEESWARM.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="93">
+			<Property name="Name" value="FLAGS" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DISTRESSSIGNAL\PARTS\FLAG.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="94">
+			<Property name="Name" value="COLOURS" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\BLUEROOM.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="1">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\ORANGEROOM.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="2">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\GREENROOM.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="3">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\REDROOM.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="4">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\YELLOWROOM.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="5">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\PURPLEROOM.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="6">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\GREYROOM.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="7">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\WHITEROOM.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="8">
+					<Property name="Filename" value="MODELS\TRADINGPOST\WARRIOR\UNDERWATERBASE\COLOURS\AQUAROOM.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="95">
+			<Property name="Name" value="GLOWBULB" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\BREAKABLES\MEDIUMGLOWPLANT.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="96">
+			<Property name="Name" value="X4LAYOUTS" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4AMBER.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="1">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4GLOWPLANTS_FLAGS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="2">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4BLUE.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="3">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4GLOWPLANTS_MONITORS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="4">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4GREEN.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="5">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4PILLARS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="6">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4ORANGE.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="7">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4GLOWPLANTS_FLAGS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="8">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4PURPLE.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="9">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4GLOWPLANTS_MONITORS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="10">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4RED.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="11">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4PILLARS.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="12">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\X4\X4TEAL.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Lists" value="GcSelectableObjectList" _index="97">
+			<Property name="Name" value="DISPLAY" />
+			<Property name="Race" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="Options">
+				<Property name="Options" value="GcSelectableObjectData" _index="0">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\WALLPROPS\MONITORSB_LOCATOR.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="1">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\WALLPROPS\HOLODISPLAY1_LOCATOR.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="2">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\WALLPROPS\MONITORSB2_LOCATOR.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="3">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\WALLPROPS\HOLODISPLAY2_LOCATOR.SCENE.MBIN" />
+				</Property>
+				<Property name="Options" value="GcSelectableObjectData" _index="4">
+					<Property name="Filename" value="MODELS\TRADINGPOST\SCIENTIFIC\PROPS\WALLPROPS\MONITORSB3_LOCATOR.SCENE.MBIN" />
+				</Property>
+			</Property>
+		</Property>
 ]]
             },
           }

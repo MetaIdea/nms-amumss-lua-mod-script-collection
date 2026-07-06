@@ -3,6 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "No Asteroid Fields",
 ["MOD_AUTHOR"]      = "fabricator",
 ["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.45",
 ["MOD_DESCRIPTION"] = "It removes large asteroid fields, leaving small asteroids",
 ["MODIFICATIONS"]   =
   {

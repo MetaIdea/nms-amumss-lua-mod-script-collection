@@ -89,13 +89,12 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["MATH_OPERATION"] = "*",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"PulseEncounterChanceStandard", ChanceMultiplier}, --0.0066
-                {"PulseEncounterChanceRed",      ChanceMultiplier}, --0.001
-                {"PulseEncounterChanceGreen",    ChanceMultiplier}, --0.002
-                {"PulseEncounterChanceBlue",     ChanceMultiplier}, --0.003
+                {"PulseEncounterChanceStandard", "@*"..ChanceMultiplier}, --0.0066
+                {"PulseEncounterChanceRed",      "@*"..ChanceMultiplier}, --0.001
+                {"PulseEncounterChanceGreen",    "@*"..ChanceMultiplier}, --0.002
+                {"PulseEncounterChanceBlue",     "@*"..ChanceMultiplier}, --0.003
               },
             },
           },

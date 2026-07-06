@@ -264,19 +264,18 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["MATH_OPERATION"] = "*",
               ["REPLACE_TYPE"] = "ALL",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"CreatureInteractBaseRange",              CREATURE_INTERACT_RANGE},
-                {"PetInteractBaseRange",                   CREATURE_INTERACT_RANGE},
-                {"CreatureInteractionRangeBoostHuge",      CREATURE_INTERACT_BOOST}, --Original "1.5"
-                {"CreatureInteractionRangeBoostLarge",     CREATURE_INTERACT_BOOST}, --Original "1.2"
-                {"CreatureInteractionRangeBoostMedium",    CREATURE_INTERACT_BOOST}, --Original "1.1"
-                {"CreatureInteractionRangeBoostSmall",     CREATURE_INTERACT_BOOST}, --Original "1"
-                {"CreatureInteractionRangeBoostRun",       CREATURE_INTERACT_BOOST}, --Original "2"
-                {"CreatureInteractionRangeBoostSprint",    CREATURE_INTERACT_BOOST}, --Original "3.5"
-                {"CreatureInteractionRangeReducePredator", CREATURE_INTERACT_BOOST}, --Original "0.3"
+                {"CreatureInteractBaseRange",              "@*"..CREATURE_INTERACT_RANGE},
+                {"PetInteractBaseRange",                   "@*"..CREATURE_INTERACT_RANGE},
+                {"CreatureInteractionRangeBoostHuge",      "@*"..CREATURE_INTERACT_BOOST}, --Original "1.5"
+                {"CreatureInteractionRangeBoostLarge",     "@*"..CREATURE_INTERACT_BOOST}, --Original "1.2"
+                {"CreatureInteractionRangeBoostMedium",    "@*"..CREATURE_INTERACT_BOOST}, --Original "1.1"
+                {"CreatureInteractionRangeBoostSmall",     "@*"..CREATURE_INTERACT_BOOST}, --Original "1"
+                {"CreatureInteractionRangeBoostRun",       "@*"..CREATURE_INTERACT_BOOST}, --Original "2"
+                {"CreatureInteractionRangeBoostSprint",    "@*"..CREATURE_INTERACT_BOOST}, --Original "3.5"
+                {"CreatureInteractionRangeReducePredator", "@*"..CREATURE_INTERACT_BOOST}, --Original "0.3"
               }
             },
             {

@@ -1,4 +1,4 @@
-MOD_FILENAME	= "Corvette Complexity Increase"
+MOD_FILENAME	= "Corvette Complexity Increase LI"
 MOD_AUTHOR		= "ShadowHybriX"
 LUA_AUTHOR		= "ShadowHybriX"
 MOD_DESCRIPTION = "Increases Complexity limit of corvette building by x2."
@@ -28,26 +28,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] = 
                             {
-                                {"ComplexityLimitWarningNX","200"},	-- Original 40
-								{"ComplexityLimitWarning","200"},	-- Original 100
+                                {"ComplexityLimitWarningNX","999"},	-- Original 40
+								{"ComplexityLimitWarning","999"},	-- Original 100
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PartFXLimits"},
                             ["VALUE_CHANGE_TABLE"] = 
                             {
-                                {"Cockpit","200"},	-- Original 0
-								{"Hab","200"},	-- Original 0
-                                {"Gear","200"},	-- Original 4
-                                {"Gun","200"},	-- Original 4
-								{"Shield","200"},	-- Original 0
-                                {"Hull","200"},	-- Original 0
-								{"Access","200"},	-- Original 4
-                                {"Wing","200"},	-- Original 4
-								{"Engine","200"},	-- Original 10
-                                {"Reactor","200"},	-- Original 0
-								{"Connector","200"},	-- Original 0
-                                {"Decor","200"},	-- Original 0
+                                {"Cockpit","999"},	-- Original 0
+								{"Hab","999"},	-- Original 0
+                                {"Gear","999"},	-- Original 4
+                                {"Gun","999"},	-- Original 4
+								{"Shield","999"},	-- Original 0
+                                {"Hull","999"},	-- Original 0
+								{"Access","999"},	-- Original 4
+                                {"Wing","999"},	-- Original 4
+								{"Engine","999"},	-- Original 10
+                                {"Reactor","999"},	-- Original 0
+								{"Connector","999"},	-- Original 0
+                                {"Decor","999"},	-- Original 0
                             }
                         },
                     }

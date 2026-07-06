@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Quieter.Overseer.V.1.7",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.24",
+["NMS_VERSION"]   = "6.45",
 ["MODIFICATIONS"] =
   {
     {

@@ -23,13 +23,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"AirGroupsPerKm"},
                 {"CaveGroupsPerKm"},
               },
-              ["MATH_OPERATION"] = "*",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Sparse",    MULTIPLIER},
-                {"Normal",    MULTIPLIER},
-                {"Dense",     MULTIPLIER},
-                {"VeryDense", MULTIPLIER},
+                {"Sparse",    "@*"..MULTIPLIER},
+                {"Normal",    "@*"..MULTIPLIER},
+                {"Dense",     "@*"..MULTIPLIER},
+                {"VeryDense", "@*"..MULTIPLIER},
               }
             },
           }

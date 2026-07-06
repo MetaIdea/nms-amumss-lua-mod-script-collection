@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "StarshipWarpExpander.pak",
+["MOD_FILENAME"]	= "StarshipWarpExpander",
 ["MOD_AUTHOR"]		= "GMF",
 ["NMS_VERSION"]		= "3.0",
 ["MOD_DESCRIPTION"]	= "Increase Starship warp distance",
@@ -11,16 +11,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
-
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","HYPERDRIVE",},
 							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Bonus",	"100000"}		-- Original "100"   
+								{"Bonus",	"10000"}		-- Original "100"   
 							}
 						
 						}

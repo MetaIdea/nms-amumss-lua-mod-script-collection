@@ -85,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="KillingBlowMessageID" value="" />
       <Property name="EggType" value="DEFAULT" />
       <Property name="Data">
-        <Property name="Data" value="GcCreatureMovementData" _index="0">
+        <Property name="Data" value="GcCreatureMovementData">
           <Property name="GcCreatureMovementData">
             <Property name="Anims">
               <Property name="Anims" value="GcCreatureMoveAnimData" _index="0">
@@ -161,7 +161,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="KillingBlowMessageID" value="" />
       <Property name="EggType" value="DEFAULT" />
       <Property name="Data">
-        <Property name="Data" value="GcCreatureMovementData" _index="0">
+        <Property name="Data" value="GcCreatureMovementData">
           <Property name="GcCreatureMovementData">
             <Property name="Anims">
               <Property name="Anims" value="GcCreatureMoveAnimData" _index="0">

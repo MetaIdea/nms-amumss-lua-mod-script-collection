@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Early.Character.Creator.V.2.5",
+["MOD_FILENAME"]  = "Early.Character.Creator.V.2.7",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.32",
+["NMS_VERSION"]   = "6.45",
 ["MODIFICATIONS"] =
   {
     {

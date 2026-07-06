@@ -16,12 +16,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["MATH_OPERATION"] = "/",
               ["REPLACE_TYPE"] = "ALL",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MinScale", DIVISOR},
-                {"MaxScale", DIVISOR},
+                {"MinScale", "@/"..DIVISOR},
+                {"MaxScale", "@/"..DIVISOR},
               },
             },
           },
@@ -31,11 +30,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["MATH_OPERATION"] = "/",
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"MinRideSize",     "1"},
-                {"MaxCreatureSize", DIVISOR},
+                {"MaxCreatureSize", "@/"..DIVISOR},
               },
             },
           }

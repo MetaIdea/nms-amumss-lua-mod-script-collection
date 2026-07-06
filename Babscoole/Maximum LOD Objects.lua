@@ -3,6 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Maximum LOD Objects",
 ["MOD_AUTHOR"]      = "fabricator",
 ["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.45",
 ["MOD_DESCRIPTION"] = "Increases the draw distance of crystals and mountain objects on all planets & increases the density and distance of the objects on dead planets",
 ["MODIFICATIONS"]   =
   {

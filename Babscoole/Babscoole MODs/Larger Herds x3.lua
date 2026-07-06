@@ -82,11 +82,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] = {"RoleDescription", "GcCreatureRoleDescription"},
               ["REPLACE_TYPE"] = "ALL",
-              ["MATH_OPERATION"] = "*",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MinGroupSize", MULTIPLIER},
-                {"MaxGroupSize", MULTIPLIER},
+                {"MinGroupSize", "@*"..MULTIPLIER},
+                {"MaxGroupSize", "@*"..MULTIPLIER},
               }
             },
           }
@@ -101,11 +100,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] = {"RoleDescription", "GcCreatureRoleDescription"},
               ["REPLACE_TYPE"] = "ALL",
-              ["MATH_OPERATION"] = "*",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MinGroupSize", MULTIPLIER},
-                {"MaxGroupSize", MULTIPLIER},
+                {"MinGroupSize", "@*"..MULTIPLIER},
+                {"MaxGroupSize", "@*"..MULTIPLIER},
               }
             },
             {
@@ -139,11 +137,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] = {"RoleDescription", "GcCreatureRoleDescription"},
               ["REPLACE_TYPE"] = "ALL",
-              ["MATH_OPERATION"] = "*",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MinGroupSize", MULTIPLIER},
-                {"MaxGroupSize", MULTIPLIER},
+                {"MinGroupSize", "@*"..MULTIPLIER},
+                {"MaxGroupSize", "@*"..MULTIPLIER},
               }
             },
             {
@@ -162,11 +159,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] = {"RoleDescription", "GcCreatureRoleDescription"},
               ["REPLACE_TYPE"] = "ALL",
-              ["MATH_OPERATION"] = "*",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MinGroupSize", MULTIPLIER},
-                {"MaxGroupSize", MULTIPLIER},
+                {"MinGroupSize", "@*"..MULTIPLIER},
+                {"MaxGroupSize", "@*"..MULTIPLIER},
               }
             },
             {
@@ -185,11 +181,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] = {"RoleDescription", "GcCreatureRoleDescription"},
               ["SECTION_ACTIVE"] = {0},
-              ["MATH_OPERATION"] = "*",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MinGroupSize", MULTIPLIER},
-                {"MaxGroupSize", MULTIPLIER},
+                {"MinGroupSize", "@*"..MULTIPLIER},
+                {"MaxGroupSize", "@*"..MULTIPLIER},
               }
             },
             {

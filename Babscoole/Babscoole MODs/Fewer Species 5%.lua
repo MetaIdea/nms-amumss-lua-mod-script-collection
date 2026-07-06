@@ -69,10 +69,9 @@ NMS_MOD_DEFINITION_CONTAINER =
           {
             {
               ["REPLACE_TYPE"] = "ALL",
-              ["MATH_OPERATION"] = "*",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"ProbabilityOfBeingEnabled", MULTIPLIER},
+                {"ProbabilityOfBeingEnabled", "@*"..MULTIPLIER},
               }
             },
           }
