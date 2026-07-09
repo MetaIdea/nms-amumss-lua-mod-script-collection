@@ -28,13 +28,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SEC_EDIT"] = "ADD_SWARM_MISSIONS",
               ["SPECIAL_KEY_WORDS"] = {"MissionBoardOptions", "GcMissionBoardOptions"},
               ["PRECEDING_KEY_WORDS"] = {"Faction"},
-              ["REPLACE_TYPE"] = "ALL",  
+              ["REPLACE_TYPE"] = "ALL",
               ["CREATE_HOS"] = "TRUE",
               ["ADD"] =
 [[
-					<Property name="Faction" value="GcMissionFaction" _index="0">
-						<Property name="MissionFaction" value="Nexus" />
-					</Property>
+          <Property name="Faction" value="GcMissionFaction" _index="0">
+            <Property name="MissionFaction" value="Nexus" />
+          </Property>
 ]]
             },
             {

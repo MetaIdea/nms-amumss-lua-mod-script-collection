@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Waste Depots On All Scrap Planets",
 ["MOD_AUTHOR"]      = "IgorGaming",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.32",
+["NMS_VERSION"]     = "6.45",
 ["MOD_DESCRIPTION"] = "This mod makes Processing Plants and Waste Heaps spawn on Scrap Planets they couldn't before",
 ["MODIFICATIONS"]   =
   {
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
           }
-        }
+        },
       }
     }
   }
