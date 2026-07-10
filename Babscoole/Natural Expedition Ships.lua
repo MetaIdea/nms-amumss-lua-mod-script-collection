@@ -5,7 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Natural Expedition Ships",
 ["MOD_AUTHOR"]      = "AyyMang",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.36",
+["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Spawns most expedition reward ships as exotics in the wild and gives them procedural variations",
 ["MODIFICATIONS"]   =
   {
@@ -22,102 +22,110 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD_OPTION"] = "ADDendSECTION",
               ["ADD"] =
 [[
-        <Property name="Spaceships" value="GcAISpaceshipModelData" _index="23">
-          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses">
-            <Property name="ShipClass" value="Royal" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles">
-            <Property name="AIShipRole" value="Standard" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>
-        <Property name="Spaceships" value="GcAISpaceshipModelData" _index="24">
-          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/VRSPEEDER.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses">
-            <Property name="ShipClass" value="Royal" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles">
-            <Property name="AIShipRole" value="Standard" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>
-        <Property name="Spaceships" value="GcAISpaceshipModelData" _index="25">
-          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses">
-            <Property name="ShipClass" value="Royal" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles">
-            <Property name="AIShipRole" value="Standard" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>
-        <Property name="Spaceships" value="GcAISpaceshipModelData" _index="26">
-          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses">
-            <Property name="ShipClass" value="Royal" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles">
-            <Property name="AIShipRole" value="Standard" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>
-        <Property name="Spaceships" value="GcAISpaceshipModelData" _index="27">
-          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOFIGHTER.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses">
-            <Property name="ShipClass" value="Royal" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles">
-            <Property name="AIShipRole" value="Standard" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>
-        <Property name="Spaceships" value="GcAISpaceshipModelData" _index="28">
-          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/SPOOKSHIP.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses">
-            <Property name="ShipClass" value="Royal" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles">
-            <Property name="AIShipRole" value="Standard" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>
-        <Property name="Spaceships" value="GcAISpaceshipModelData" _index="29">
-          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/WRACER.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses">
-            <Property name="ShipClass" value="Royal" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles">
-            <Property name="AIShipRole" value="Standard" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>
-        <Property name="Spaceships" value="GcAISpaceshipModelData" _index="30">
-          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERCLASSICGOLD.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses">
-            <Property name="ShipClass" value="Royal" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles">
-            <Property name="AIShipRole" value="Standard" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>
+    <Property name="ShipModels" value="GcAISpaceshipModelData" >
+      <Property name="Id" value="ROYALB" />
+      <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN" />
+      <Property name="Class" value="GcSpaceshipClasses">
+        <Property name="ShipClass" value="Royal" />
+      </Property>
+      <Property name="AIRole" value="GcAISpaceshipRoles">
+        <Property name="AIShipRole" value="Standard" />
+      </Property>
+      <Property name="FrigateClass" value="GcFrigateClass">
+        <Property name="FrigateClass" value="Combat" />
+      </Property>
+    </Property>
+    <Property name="ShipModels" value="GcAISpaceshipModelData" >
+      <Property name="Id" value="ROYALC" />
+      <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/VRSPEEDER.SCENE.MBIN" />
+      <Property name="Class" value="GcSpaceshipClasses">
+        <Property name="ShipClass" value="Royal" />
+      </Property>
+      <Property name="AIRole" value="GcAISpaceshipRoles">
+        <Property name="AIShipRole" value="Standard" />
+      </Property>
+      <Property name="FrigateClass" value="GcFrigateClass">
+        <Property name="FrigateClass" value="Combat" />
+      </Property>
+    </Property>
+    <Property name="ShipModels" value="GcAISpaceshipModelData" >
+      <Property name="Id" value="ROYALD" />
+      <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN" />
+      <Property name="Class" value="GcSpaceshipClasses">
+        <Property name="ShipClass" value="Royal" />
+      </Property>
+      <Property name="AIRole" value="GcAISpaceshipRoles">
+        <Property name="AIShipRole" value="Standard" />
+      </Property>
+      <Property name="FrigateClass" value="GcFrigateClass">
+        <Property name="FrigateClass" value="Combat" />
+      </Property>
+    </Property>
+    <Property name="ShipModels" value="GcAISpaceshipModelData" >
+      <Property name="Id" value="ROYALE" />
+      <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN" />
+      <Property name="Class" value="GcSpaceshipClasses">
+        <Property name="ShipClass" value="Royal" />
+      </Property>
+      <Property name="AIRole" value="GcAISpaceshipRoles">
+        <Property name="AIShipRole" value="Standard" />
+      </Property>
+      <Property name="FrigateClass" value="GcFrigateClass">
+        <Property name="FrigateClass" value="Combat" />
+      </Property>
+    </Property>
+    <Property name="ShipModels" value="GcAISpaceshipModelData" >
+      <Property name="Id" value="ROYALF" />
+      <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOFIGHTER.SCENE.MBIN" />
+      <Property name="Class" value="GcSpaceshipClasses">
+        <Property name="ShipClass" value="Royal" />
+      </Property>
+      <Property name="AIRole" value="GcAISpaceshipRoles">
+        <Property name="AIShipRole" value="Standard" />
+      </Property>
+      <Property name="FrigateClass" value="GcFrigateClass">
+        <Property name="FrigateClass" value="Combat" />
+      </Property>
+    </Property>
+    <Property name="ShipModels" value="GcAISpaceshipModelData" >
+      <Property name="Id" value="ROYALG" />
+      <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/SPOOKSHIP.SCENE.MBIN" />
+      <Property name="Class" value="GcSpaceshipClasses">
+        <Property name="ShipClass" value="Royal" />
+      </Property>
+      <Property name="AIRole" value="GcAISpaceshipRoles">
+        <Property name="AIShipRole" value="Standard" />
+      </Property>
+      <Property name="FrigateClass" value="GcFrigateClass">
+        <Property name="FrigateClass" value="Combat" />
+      </Property>
+    </Property>
+    <Property name="ShipModels" value="GcAISpaceshipModelData" >
+      <Property name="Id" value="ROYALH" />
+      <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/WRACER.SCENE.MBIN" />
+      <Property name="Class" value="GcSpaceshipClasses">
+        <Property name="ShipClass" value="Royal" />
+      </Property>
+      <Property name="AIRole" value="GcAISpaceshipRoles">
+        <Property name="AIShipRole" value="Standard" />
+      </Property>
+      <Property name="FrigateClass" value="GcFrigateClass">
+        <Property name="FrigateClass" value="Combat" />
+      </Property>
+    </Property>
+    <Property name="ShipModels" value="GcAISpaceshipModelData" >
+      <Property name="Id" value="ROYALI" />
+      <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERCLASSICGOLD.SCENE.MBIN" />
+      <Property name="Class" value="GcSpaceshipClasses">
+        <Property name="ShipClass" value="Royal" />
+      </Property>
+      <Property name="AIRole" value="GcAISpaceshipRoles">
+        <Property name="AIShipRole" value="Standard" />
+      </Property>
+      <Property name="FrigateClass" value="GcFrigateClass">
+        <Property name="FrigateClass" value="Combat" />
+      </Property>
+    </Property>
 ]]
             },
           }
@@ -140,7 +148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Chance" value="0.000000" />
           <Property name="Children">
-            <Property name="Children" value="TkModelDescriptorList" _index="0">
+            <Property name="Children" value="TkModelDescriptorList">
               <Property name="TkModelDescriptorList">
                 <Property name="List">
                   <Property name="List" value="TkResourceDescriptorList" _index="0">
@@ -280,7 +288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
             {
-              ["SPECIAL_KEY_WORDS"] = 
+              ["SPECIAL_KEY_WORDS"] =
               {
                 {"Name", "sideLight_blume",  "Name", "AABBMAXZ"},
                 {"Name", "sideLight_blume1", "Name", "AABBMAXZ"},

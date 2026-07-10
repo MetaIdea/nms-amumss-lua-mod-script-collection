@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Better Iron Vulture Cockpit Interior",
 ["MOD_AUTHOR"]      = "AyyMang",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.34",
+["NMS_VERSION"]     = "6.45",
 ["MOD_DESCRIPTION"] = "Switches the Iron Vulture cockpit to use the interior from the Boundary Herald",
 ["MODIFICATIONS"]   =
   {
@@ -22,8 +22,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
           }
-        }
+        },
       }
-    }
+    },
   }
 }

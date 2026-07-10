@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "Disable Upload All",
 ["MOD_AUTHOR"]    = "DY230",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.18",
+["NMS_VERSION"]   = "6.24",
 ["MODIFICATIONS"] =
   {
     {
