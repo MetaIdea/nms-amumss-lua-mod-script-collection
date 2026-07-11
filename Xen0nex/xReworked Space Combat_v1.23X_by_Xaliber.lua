@@ -2,8 +2,8 @@ Author = "Xaliber"
 LuaAuthor = "DeathWrench and Babscoole, updated by Xen0nex"
 ModName = "Reworked Space Combat"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "6.23"
-ModVersion = "1.21X"
+GameVersion = "6.4"
+ModVersion = "1.23X"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships & some freighters (individual ships have additonal multipliers applied)
 	--Note that "SpaceCombatDifficultyMultipliers" values in GCGAMEPLAYGLOBALS.GLOBAL.MBIN control additional (or subtract) Hull & Shields for enemy starships depending on Space Combat difficulty setting
@@ -132,7 +132,7 @@ function AddPlanetBehaviour (BehaviourID)
       <Property name="AttackTurnMaxMinTime" value="3.000000" />
       <Property name="AttackTurnMaxTimeRange" value="6.000000" />
       <Property name="NumHitsBeforeBail" value="3000" />
-      <Property name="NumHitsBeforeReposition" value="1000" />
+      <Property name="NumHitsBeforeReposition" value="500" />
       <Property name="FleeBrake" value="0.800000" />
       <Property name="FleeBoost" value="3.000000" />
       <Property name="FleeBrakeTime" value="0.500000" />
@@ -172,11 +172,11 @@ function AddSpaceBehaviour (BehaviourID)
       <Property name="AttackShootTimeMax" value="3.000000" />
       <Property name="AttackReadyTime" value="0.500000" />
       <Property name="AttackMaxTime" value="10.000000" />
-      <Property name="AttackApproachOffset" value="180.000000" />
+      <Property name="AttackApproachOffset" value="90.000000" />
       <Property name="AttackApproachMinRange" value="300.000000" />
       <Property name="AttackApproachMaxRange" value="800.000000" />
       <Property name="AttackTooCloseRange" value="90.000000" />
-      <Property name="AttackFlybyOffset" value="50.000000" />
+      <Property name="AttackFlybyOffset" value="300.000000" />
       <Property name="AttackBoostTimeToRange" value="1.500000" />
       <Property name="AttackBoostRange" value="2000.000000" />
       <Property name="AttackBoostAngle" value="15.000000" />
@@ -188,25 +188,25 @@ function AddSpaceBehaviour (BehaviourID)
       <Property name="NumHitsBeforeBail" value="3000" />
       <Property name="NumHitsBeforeReposition" value="2000" />
       <Property name="FleeBrake" value="1.000000" />
-      <Property name="FleeBoost" value="8.000000" />
-      <Property name="FleeBrakeTime" value="3.000000" />
-      <Property name="FleeRepositionTime" value="3.500000" />
-      <Property name="FleeRepositionAngleMin" value="140.000000" />
-      <Property name="FleeRepositionAngleMax" value="180.000000" />
+      <Property name="FleeBoost" value="1.000000" />
+      <Property name="FleeBrakeTime" value="5.000000" />
+      <Property name="FleeRepositionTime" value="20.000000" />
+      <Property name="FleeRepositionAngleMin" value="45.000000" />
+      <Property name="FleeRepositionAngleMax" value="45.000000" />
       <Property name="FleeUrgentBrake" value="2.000000" />
       <Property name="FleeUrgentBoost" value="2.000000" />
       <Property name="FleeUrgentBrakeTime" value="3.000000" />
-      <Property name="FleeRepositionUrgentTime" value="1.000000" />
-      <Property name="FleeRepositionUrgentAngleMin" value="180.000000" />
+      <Property name="FleeRepositionUrgentTime" value="3.000000" />
+      <Property name="FleeRepositionUrgentAngleMin" value="120.000000" />
       <Property name="FleeRepositionUrgentAngleMax" value="180.000000" />
-      <Property name="FleeRange" value="650.000000" />
-      <Property name="FleeMinTime" value="0.500000" />
+      <Property name="FleeRange" value="900.000000" />
+      <Property name="FleeMinTime" value="0.000000" />
       <Property name="FleeMaxTime" value="10.000000" />
-      <Property name="FleeUrgentRange" value="100.000000" />
+      <Property name="FleeUrgentRange" value="300.000000" />
       <Property name="PlanetFleeHeightExtra" value="200.000000" />
       <Property name="AttackTargetMinRange" value="250.000000" />
       <Property name="AttackTargetMaxRange" value="600.000000" />
-      <Property name="AttackTargetOffsetMin" value="100.000000" />
+      <Property name="AttackTargetOffsetMin" value="300.000000" />
       <Property name="AttackTargetOffsetMax" value="500.000000" />
       <Property name="AttackTargetSwitchTargetTime" value="10.000000" />
     </Property>]]
@@ -665,8 +665,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""
-		{"Health", math.floor(ShipHull*105000)},					--default 105000
-		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*995000)},	--default 995000
+		{"Health", math.floor(BossFreighterParts*105000)},					--default 105000
+		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*995000)},	--default 995000
 		{"Shield", "PIRATE_FREIGHT"},				--default "PIRATE_FREIGHT"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -680,8 +680,23 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""
-		{"Health", math.floor(ShipHull*13125)},					--default 13125
-		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*124375)},	--default 124375
+		{"Health", math.floor(BossFreighterParts*13125)},					--default 13125
+		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*124375)},	--default 124375
+		{"Shield", ""},				--default ""
+		{"LaserDamageLevel", 2},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","SWARM_FRIG"},					--Swarmer Frigates
+	["PRECEDING_FIRST"] = "true",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},	--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
+		{"Engine", "SPACE_EASY"},		--default "SPACE_EASY"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},			--default ""
+		{"Health", math.floor(BossFreighterParts*13125*0.5)},					--default 13125
+		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*124375*0.5)},	--default 124375
 		{"Shield", ""},				--default ""
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -700,6 +715,85 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"Shield", "CIVLEAD_SHIELD"},				--default "CIVLEAD_SHIELD"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","SWARM_DRONE"},					--Swarmer Drones
+	["PRECEDING_FIRST"] = "true",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SWARMDRONE"},		--default "SWARMDRONE"
+		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SWARMDRONE"},			--default "SWARMDRONE"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},			--default ""
+		{"Health", math.floor(ShipHull*6500*1)},				--default 6500
+		{"LevelledExtraHealth", math.floor(ShipHullPerLevel*18000*1)},		--default 18000
+		{"Shield", "STANDARD"},				--default "STANDARD"
+		{"LaserDamageLevel", 1},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","SWARM_HIVE"},					--Hive of Glass?
+	["PRECEDING_FIRST"] = "true",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},				--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SPACE_HARD"},			--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},			--default ""
+		{"Health", math.floor(BossFreighterParts*66000*1)},				--default 66000
+		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*605000*1)},		--default 605000
+		{"Shield", "SWARM_HIVE"},			--default "SWARM_HIVE"
+		{"LaserDamageLevel", 2},			--default 1
+		{"DamageMultiplier", "BOSSFREI_HULL"},			--default "FREIGHT_HULL", BOSSFREI_HULL added by PTSd in "PTSd Weapons Rebalance.lua"
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","HIVE_ATLAS"},					--Hive vs. Atlas Station fight?
+	["PRECEDING_FIRST"] = "true",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},				--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SPACE_HARD"},			--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},			--default ""
+		{"Health", math.floor(BossFreighterParts*66000*1)},				--default 66000
+		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*605000*1)},		--default 605000
+		{"Shield", "SWARM_HIVE"},			--default "SWARM_HIVE"
+		{"LaserDamageLevel", 2},			--default 1
+		{"DamageMultiplier", "SWARM_HIVE"},	--default SWARM_HIVE
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","HIVE_ATLAS_INV"},					--scripted Hive vs. Atlas Station fight (invulnerable)?
+	["PRECEDING_FIRST"] = "true",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},				--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SPACE_HARD"},			--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},			--default ""
+		{"Health", math.floor(BossFreighterParts*66000*1)},				--default 66000
+		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*605000*1)},		--default 605000
+		{"Shield", "SWARM_HIVE"},			--default "SWARM_HIVE"
+		{"LaserDamageLevel", 2},			--default 1
+		{"DamageMultiplier", "INVULNERABLE"},	--default INVULNERABLE
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","HIVE_AMBIENT"},					--unclear Hive of Glass encounter (invulnerable)?
+	["PRECEDING_FIRST"] = "true",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},				--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SPACE_HARD"},			--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},			--default ""
+		{"Health", math.floor(BossFreighterParts*66000*1)},				--default 66000
+		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*605000*1)},		--default 605000
+		{"Shield", "SWARM_HIVE"},			--default "SWARM_HIVE"
+		{"LaserDamageLevel", 2},			--default 1
+		{"DamageMultiplier", "INVULNERABLE"},	--default INVULNERABLE
+		}},
 	
 	--Behaviours
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
@@ -715,10 +809,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"AttackShootTimeMin", 1},
 		{"AttackShootTimeMax", 10},
 		{"AttackMaxTime", 40},
-		{"AttackApproachOffset", 800},
+		{"AttackApproachOffset", 100},					--(800)
 		{"AttackApproachMinRange", 40},						
 		{"AttackTooCloseRange", 150},						
-		{"AttackFlybyOffset", -200},
+		{"AttackFlybyOffset", 300},					--(-200)
 		{"AttackBoostAngle", 10},
 		{"NumHitsBeforeBail", 3000},						
 		{"NumHitsBeforeReposition", 2000},					
@@ -736,10 +830,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"AttackShootTimeMin", 5},							--1
 		{"AttackShootTimeMax", 20},							--3
 		{"AttackMaxTime", 50},								--10
-		{"AttackApproachOffset", 300},						--180
+		{"AttackApproachOffset", 150},						--90	(300)
 		{"AttackApproachMinRange", 40},						--300
-		{"AttackTooCloseRange", 120},						--800
-		{"AttackFlybyOffset", 50},							--50
+		{"AttackTooCloseRange", 120},						--90
+		{"AttackFlybyOffset", 300},							--300	(50)
 		{"AttackBoostAngle", 10},							--15
 		{"NumHitsBeforeBail", 4500},						--3000
 		{"NumHitsBeforeReposition", 3000},					--2000
@@ -757,10 +851,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"AttackShootTimeMin", 10},
 		{"AttackShootTimeMax", 40},
 		{"AttackMaxTime", 60},
-		{"AttackApproachOffset", 400},
+		{"AttackApproachOffset", 200},					--(400)
 		{"AttackApproachMinRange", 40},						
 		{"AttackTooCloseRange", 100},						
-		{"AttackFlybyOffset", 50},
+		{"AttackFlybyOffset", 300},						--(50)
 		{"AttackBoostAngle", 210},
 		{"NumHitsBeforeBail", 6000},						
 		{"NumHitsBeforeReposition", 4000},					
@@ -784,7 +878,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"AttackFlybyOffset", -150},
 		{"AttackBoostAngle", 10},
 		{"NumHitsBeforeBail", 3000},
-		{"NumHitsBeforeReposition", 1000},
+		{"NumHitsBeforeReposition", 500},					--(1000)
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PLANET"},
@@ -805,7 +899,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"AttackFlybyOffset", 50},							--150
 		{"AttackBoostAngle", 210},							--40
 		{"NumHitsBeforeBail", 4500},						--3000
-		{"NumHitsBeforeReposition", 1500},					--1000
+		{"NumHitsBeforeReposition", 750},					--500		(1000)
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","PLANET_HRD"},			--Custom Behaviour
@@ -826,7 +920,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"AttackFlybyOffset", 50},
 		{"AttackBoostAngle", 210},
 		{"NumHitsBeforeBail", 6000},
-		{"NumHitsBeforeReposition", 2000},
+		{"NumHitsBeforeReposition", 1000},					--(2000)
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
@@ -933,6 +1027,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"NumHitsBeforeBail", 900	},						--600
 		{"NumHitsBeforeReposition", 1500},					--1000
 		}},
+	{["PRECEDING_KEY_WORDS"] = {"BehaviourTable"},
+	["SPECIAL_KEY_WORDS"] = {"Id","SWARMDRONE"},
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
+	["VALUE_CHANGE_TABLE"] = {
+		{"GunDispersionAngle", 1.5},						--5.5
+		{"GunFireRate", 0.06},								--0.15
+		{"LaserHealthPoint", 50},							--50
+		{"AttackWeaponRange", 1600},						--700
+		{"AttackShootWaitTime", 0.1},						--1
+		{"AttackShootTimeMin", 5},							--1
+		{"AttackShootTimeMax", 20},							--3
+		{"AttackMaxTime", 50},								--10
+		{"AttackApproachOffset", 150},						--90
+		{"AttackApproachMinRange", 40},						--300
+		{"AttackTooCloseRange", 90},						--90
+		{"AttackFlybyOffset", 300},							--300
+		{"AttackBoostAngle", 10},							--15
+		{"NumHitsBeforeBail", 6000},						--4000
+		{"NumHitsBeforeReposition", 1500},					--1000
+		}},
 	
 	--Engines
 	{["PRECEDING_KEY_WORDS"] = {"EngineTable"},
@@ -1032,6 +1147,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"Roll", 1.5},										--1.5
 		{"MinHeight", 15},									--15
 		{"Hovering", "False"},								--"False"
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"EngineTable"},
+	["SPECIAL_KEY_WORDS"] = {"Id","SWARMDRONE"},
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
+	["VALUE_CHANGE_TABLE"] = {
+		{"MinSpeed", 10},									--10
+		{"MaxSpeed", 140},									--60
+		{"BoostSpeed", 356*1.3},							--300		NOTE: Often you can still outrun enemy ships even if your ship's "CombatEngine" 's "BoostMaxSpeed" is only ~75% of this value, presumably due to how the enemy ships occassionally stop boosting when pursuing the player
+		{"TurnMin", 0.6},									--0.6
+		{"DirectionBrake", 1.75},								--2
+		{"Roll", 0},										--0
+		{"MinHeight", 15},									--30
+		{"Hovering", "false"},								--"false"
 		}},
 	
 	--Shields
@@ -1144,6 +1273,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"LevelledExtraHealth", math.floor(ShipShieldPerLevel*55000)},					--Custom	[220000]
 		{"RechargeTime", 72},										--Custom	[96]
 		{"RechargeDelayTime", 12},									--Custom	[12]
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
+	["SPECIAL_KEY_WORDS"] = {"Id","SWARM_HIVE"},
+	["PRECEDING_FIRST"] = "true",
+	--["INTEGER_TO_FLOAT"] = "FORCE",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Health", math.floor(1*10000000*1)},								--10000000
+		{"LevelledExtraHealth", math.floor(1*0*1)},					--0
+		{"RechargeTime", 5},										--5
+		{"RechargeDelayTime", 10},									--10
 		}},
 	}}
 }}}}

@@ -8,15 +8,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"]   =
   {
     {
-      ["MBIN_CHANGE_TABLE"]   =
+      ["MBIN_CHANGE_TABLE"] =
       {
         {
-          ["MBIN_FILE_SOURCE"]  = "GCGALAXYGLOBALS.GLOBAL.MBIN",
-          ["MXML_CHANGE_TABLE"]   =
+          ["MBIN_FILE_SOURCE"] = "GCGALAXYGLOBALS.GLOBAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
           {
             {
               ["PRECEDING_KEY_WORDS"] = {"ConflictFilterDefaultColours", "Pirate"},
-              ["VALUE_CHANGE_TABLE"]  =
+              ["VALUE_CHANGE_TABLE"] =
               {
                 {"R", "0.563000"},
                 {"G", "0.246000"},

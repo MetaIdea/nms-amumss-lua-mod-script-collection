@@ -132,7 +132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"PirateSpawns", "GcAIShipSpawnData"},
                             ["PRECEDING_KEY_WORDS"] = {"Count"},
                             ["REPLACE_TYPE"] = "ALL", 
-                            ["VALUE_CHANGE_TABLE"]  = 
+                            ["VALUE_CHANGE_TABLE"] = 
                             {
                                 {"X", "0"}, -- Original "1"
                                 {"Y", "0"}  -- Original "1"
@@ -142,7 +142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SPECIAL_KEY_WORDS"] = {"PirateSpawns", "GcAIShipSpawnData"},
                             -- ["PRECEDING_KEY_WORDS"] = {"Count"},
                             -- ["SECTION_ACTIVE"] = {"1"},
-                            -- ["VALUE_CHANGE_TABLE"]  = 
+                            -- ["VALUE_CHANGE_TABLE"] = 
                             -- {
                                 -- {"X", "0"}, -- Original "1"
                                 -- {"Y", "0"}  -- Original "1"
@@ -151,28 +151,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SPACE\\AISPACESHIPMANAGER.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SPACE\\AISPACESHIPMANAGER.MBIN",
                     ["MXML_CHANGE_TABLE"] = 
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Pirate"},
-                            ["VALUE_MATCH"]         = "MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
-                            ["VALUE_CHANGE_TABLE"]  = {{"Filename", ""}}
+                            ["VALUE_MATCH"] = "MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
+                            ["VALUE_CHANGE_TABLE"] = {{"Filename", ""}}
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Pirate"},
-                            ["VALUE_MATCH"]         = "MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
-                            ["VALUE_CHANGE_TABLE"]  = {{"Filename", ""}}
+                            ["VALUE_MATCH"] = "MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
+                            ["VALUE_CHANGE_TABLE"] = {{"Filename", ""}}
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Pirate"},
-                            ["VALUE_MATCH"]         = "MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN",
-                            ["VALUE_CHANGE_TABLE"]  = {{"Filename", ""}}
+                            ["VALUE_MATCH"] = "MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN",
+                            ["VALUE_CHANGE_TABLE"] = {{"Filename", ""}}
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Pirate"},
-                            ["VALUE_MATCH"]         = "MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN",
-                            ["VALUE_CHANGE_TABLE"]  = {{"Filename", ""}}
+                            ["VALUE_MATCH"] = "MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN",
+                            ["VALUE_CHANGE_TABLE"] = {{"Filename", ""}}
                         }
                     }
                 }

@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "STELLAR2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxCapacity",           EXTRACTOR_STORAGE},
                                 {"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "GAS3"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxCapacity",           EXTRACTOR_STORAGE},
                                 {"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
@@ -45,7 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "GAS1"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxCapacity",           EXTRACTOR_STORAGE},
                                 {"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
@@ -54,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "GAS2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxCapacity",           EXTRACTOR_STORAGE},
                                 {"AmountEmptyTimePeriod", EXTRACTOR_SPEED},

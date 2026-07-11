@@ -57,10 +57,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Increased Stack Size.pak",
+["MOD_FILENAME"]  = "Nutrient Processor and Refining Accelerates",
 ["MOD_AUTHOR"]    = "liuyueowo",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.21",
+["NMS_VERSION"]   = "6.17",
 ["MODIFICATIONS"] =
     {
         {

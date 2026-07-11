@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["VALUE_CHANGE_TABLE"]  =
+              ["VALUE_CHANGE_TABLE"] =
               {
                 {"TimeTakenForExpeditionEvent_Easy", "@/"..DIVISOR}, -- default 900 , time taken between events before buying 4th freighter
                 {"TimeTakenForExpeditionEvent",      "@/"..DIVISOR}, -- default 5400, time taken between events after buying 4th freighter

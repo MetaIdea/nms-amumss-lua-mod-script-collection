@@ -186,7 +186,7 @@ LargerBattleChanges =
 		},
 		{
 			{--Standard (regular starship)
-			--This may control several things: it appears to act as a multiplier to the amount of pirates spawned during space station pirate hunting missions
+			--This may control several things: it appears to act as a multiplier to the amount of pirates spawned during space station pirate hunting missions. However it does NOT affect the amount of pirates spawned during "hostile scan" space pirate encounters
 				{
 					"PirateSpawns", "GcAIShipSpawnData", "0",	4
 				},
@@ -196,12 +196,13 @@ LargerBattleChanges =
 				}
 			},
 			{--Standard (regular starship)
+			--This acts as a multiplier to the amount of pirates spawned during "hostile scan" space pirate encounters
 				{
 					"PirateSpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
 					{"Spread",	80,			80},	--80,		80
-					{"Count",	1,			2}		--1,		1		(2,			6)		[1,		3]
+					{"Count",	1,			1}		--1,		1		(2,			6)		[1,		3]
 				}
 			},
 		}

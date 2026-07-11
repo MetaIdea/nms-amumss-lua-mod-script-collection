@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
             {
               ["PRECEDING_KEY_WORDS"] = "PlanetStormFog",
-              ["VALUE_CHANGE_TABLE"]  =
+              ["VALUE_CHANGE_TABLE"] =
               {
                 {"FogStrength", "0.000000"}, -- Original "1.5"
               }

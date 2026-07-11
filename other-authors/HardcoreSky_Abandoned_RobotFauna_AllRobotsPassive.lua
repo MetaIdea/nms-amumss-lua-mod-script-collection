@@ -1,13 +1,12 @@
--- All robots passive
 local MOD_NAME      = "HardcoreSky_Abandoned_RobotFauna_AllRobotsPassive"
-local GAME_VERSION  = "6.06"
+local GAME_VERSION  = "6.1.0"
 local MOD_FILENAME  = MOD_NAME..".zip"
 
 local ROBOT_GROUND_ONLY = [[
   <Property name="Archetypes" value="GcCreatureGenerationWeightedList">
     <Property name="Ground">
       <Property name="Ground" value="GcCreatureGenerationWeightedListDomainEntry">
-        <Property name="Weight" value="1.000000" />
+        <Property name="Weight " value="1.000000" />
         <Property name="Archetype" value="ROBOT" />
       </Property>
     </Property>
