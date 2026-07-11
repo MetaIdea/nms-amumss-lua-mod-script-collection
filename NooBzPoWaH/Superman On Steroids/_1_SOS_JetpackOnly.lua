@@ -83,6 +83,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"Bonus", Suit_Jetpack_Tank},
               },
             },
+            { --JetpackDrain
+              ["SPECIAL_KEY_WORDS"] = {"ID", "JET1","StatsType","Suit_Jetpack_Drain"},
+              ["SECTION_UP"] = 1,
+              ["VALUE_CHANGE_TABLE"] = {
+                {"Bonus", 1},       --1; Life support drain during jetpack use
+              },
+            },
             { --JetpackRegen
               ["SPECIAL_KEY_WORDS"] = {"ID", "JET1", "StatsType", "Suit_Jetpack_Refill"},
               ["SECTION_UP"] = 1,
