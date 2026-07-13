@@ -1,20 +1,19 @@
 Items_To_Add_To_KnownProducts =
 {
-    "BP_ANALYSER",
     "S9_SUITTREE",
     "S9_WEAPONTREE",
     "S9_EXOCRAFTTREE",
     "S9_SHIPTREE",
-    "S9_BUILDERTREE"
+    "S9_BUILDERTREE",
 }
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] = "UtopiaStationUnlocker.pak",
+["MOD_FILENAME"] = "UtopiaStationUnlocker",
 ["MOD_AUTHOR"] = "Aristotale",
 ["MOD_DESCRIPTION"] = "Unlocks all of the Utopia Research Stations and adds them to the build menu",
 ["LUA_AUTHOR"]    = "Aristotale, substantial borrowing from Jackty89's No Starting Ship Challenge mod",
-["NMS_VERSION"]   = "5.25",
+["NMS_VERSION"]   = "6.x",
     ["MODIFICATIONS"] =
     {
         {
@@ -23,8 +22,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                 
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN",
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {
+                                {"ID","S9_SUITTREE"},
+                                {"ID","S9_WEAPONTREE"},
+                                {"ID","S9_EXOCRAFTTREE"},
+                                {"ID","S9_SHIPTREE"},
+                                {"ID","S9_BUILDERTREE"},
+                            },
+                            ["VALUE_CHANGE_TABLE"]  = 
+                            {
+                                {"BuildableOnPlanet","True"},
+                            }
+                        },
                     }
                 },
             }
