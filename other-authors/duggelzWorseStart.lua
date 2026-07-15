@@ -1,3 +1,32 @@
+-- duggelzWorseStart mod for No Man's Sky
+-- by duggelz
+--
+-- See txt file for general information.
+--
+-- General stuff I discovered by trial and error.  Probability of 
+-- correctness is less than 100%.
+--
+-- The game is hardcoded with a variety of behavior and requirements 
+-- around selecting the starting solar system and planet.  A lot of it,
+-- I haven't been able to do anything about.
+--
+-- Specifically:
+-- 1. The system must be a Yellow star.
+-- 2. The system can't be a pirate system or dissonant system (maybe).
+-- 3. The system can't be an uncharted or abandoned system.
+-- 4. The system must have at least one planet with a "good" biome
+-- 5. The starter planet is chosen from the "good" biome planets.
+-- 6. Storms on the starter planet are turned off (for a while).
+-- 7. Sentinels on the starter planet are turned off (for a while).
+-- 8. The game will add 7ish fauna species to the starter planet,
+--    regardless of the biome.
+--
+-- This mod removes 3, 4, 5, and 6.  I haven't been able to figure
+-- out the others.  Starting in a pirate system would be great.
+
+-- Add various "bad" biomes to the list of valid start biomes, so that
+-- the game can pick a starter system that only has "bad" biomes,
+-- instead of requiring at least one "good" one.
 VALID_START_BIOME_TEXT = [[
     <Property value="GcBiomeType.xml">
       <Property name="Biome" value="Barren" />
@@ -47,9 +76,25 @@ KNOWN_PRODUCTS_TEXT = [[
     <Property value="NMSString0x10.xml">
 	  <Property name="Value" value="GARAGE_SUB" />
     </Property>
+    <Property value="NMSString0x10.xml">
+	  <Property name="Value" value="S9_BUILDERTREE" />
+    </Property>
+    <Property value="NMSString0x10.xml">
+	  <Property name="Value" value="S9_EXOCRAFTTREE" />
+    </Property>
+    <Property value="NMSString0x10.xml">
+	  <Property name="Value" value="S9_WEAPONTREE" />
+    </Property>
+    <Property value="NMSString0x10.xml">
+	  <Property name="Value" value="S9_SUITTREE" />
+    </Property>
+    <Property value="NMSString0x10.xml">
+	  <Property name="Value" value="S9_SHIPTREE" />
+    </Property>
 ]]
 
 MBIN_CHANGE_TABLE = {
+   -- Commented out because it doesn't work well in practice.
    -- {
    --    ["MBIN_FILE_SOURCE"] = "GCBUILDINGGLOBALS.GLOBAL.MBIN",
    --    ["EXML_CHANGE_TABLE"] = {
@@ -83,7 +128,8 @@ MBIN_CHANGE_TABLE = {
          }
       }
    },
-   -- If you're stuck on the starting planet for while, at least you might get some extra elements
+   -- If you're stuck on the starting planet for while, at least you
+   -- might get some extra elements
    {
       ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
       ["EXML_CHANGE_TABLE"] = {
@@ -123,7 +169,8 @@ MBIN_CHANGE_TABLE = {
          },
       }
    },
-   -- Start out knowing Construction Research Station and the exocraft bays
+   -- Start out knowing Construction Research Station, exocraft bays,
+   -- and Utopia Stations.
    {
       ["MBIN_FILE_SOURCE"] = "METADATA/GAMESTATE/DIFFICULTYCONFIG.MBIN",
       ["EXML_CHANGE_TABLE"] = {
@@ -184,7 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
    ["MOD_FILENAME"]    = "duggelzWorseStart.pak",
    ["MOD_AUTHOR"]      = "duggelz",
    ["MOD_DESCRIPTION"] = "Adds a slower and more difficult starter planet experience.",
-   ["NMS_VERSION"]     = "4.63+",
+   ["NMS_VERSION"]     = "5.29+",
    ["MODIFICATIONS"]   = {{["MBIN_CHANGE_TABLE"] = MBIN_CHANGE_TABLE,}},
 }
 

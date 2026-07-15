@@ -42,6 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Green","GcWeatherWeightings",},
                                 {"Blue","GcWeatherWeightings",},
                                 {"Red","GcWeatherWeightings",},
+                                {"Purple","GcWeatherWeightings",},
                             },
                             ["VCT"] = 
                             {

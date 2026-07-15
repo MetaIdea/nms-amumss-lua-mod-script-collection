@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Station Colour Fix",
-["MOD_AUTHOR"]    = "AyyMang",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.16",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Station Colour Fix",
+["MOD_AUTHOR"]      = "AyyMang",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.16",
+["MOD_DESCRIPTION"] = "Restores the procedural colours for abandoned and outlaw stations",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

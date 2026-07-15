@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "PU_AdventureCamera",
-["MOD_AUTHOR"]      = "trevix",
+["MOD_AUTHOR"]      = "Trevix",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.45",
+["NMS_VERSION"]     = "6.30",
 ["MOD_DESCRIPTION"] = "Changes third person camera farther from the player",
 ["MODIFICATIONS"]   =
   {

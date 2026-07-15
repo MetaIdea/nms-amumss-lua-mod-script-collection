@@ -2,6 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Vile Brood Salvageable Scrap Icon Fix",
 ["MOD_AUTHOR"]      = "Grouch",
+["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "6.42",
 ["MOD_DESCRIPTION"] = "Fixes the Vile Brood icon on planet details using the whispering egg icon, as well as the Salvageable Scrap icon using the Buried Technology Module icon.",
 ["MODIFICATIONS"]   =

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Obvious Star Colors",
 ["MOD_AUTHOR"]      = "Grouch",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.24",
+["NMS_VERSION"]     = "6.41",
 ["MOD_DESCRIPTION"] = "Replaces the star colors on the galaxy map with their extremes, making them the exact color that they are supposed to represent. This makes it extremely obvious which star is which color.",
 ["MODIFICATIONS"]   =
   {
@@ -97,6 +97,51 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["PRECEDING_KEY_WORDS"] =
               {
+                {"ConflictFilterProtanopiaColours",   "Low"},
+                {"ConflictFilterDeuteranopiaColours", "Low"},
+                {"ConflictFilterTritanopiaColours",   "Low"},
+              },
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"R", "0.424000"},
+                {"G", "1.000000"},
+                {"B", "0.243000"},
+                {"A", "1.000000"},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"ConflictFilterProtanopiaColours",   "Default"},
+                {"ConflictFilterDeuteranopiaColours", "Default"},
+                {"ConflictFilterTritanopiaColours",   "Default"},
+              },
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"R", "1.000000"},
+                {"G", "0.751000"},
+                {"B", "0.109000"},
+                {"A", "1.000000"},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"ConflictFilterProtanopiaColours",   "High"},
+                {"ConflictFilterDeuteranopiaColours", "High"},
+                {"ConflictFilterTritanopiaColours",   "High"},
+              },
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"R", "1.000000"},
+                {"G", "0.204000"},
+                {"B", "0.204000"},
+                {"A", "1.000000"},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] =
+              {
                 {"ConflictFilterDefaultColours",      "Pirate"},
                 {"ConflictFilterProtanopiaColours",   "Pirate"},
                 {"ConflictFilterDeuteranopiaColours", "Pirate"},
@@ -117,7 +162,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"GalacticWaypointDeuteranopiaColours"},
                 {"GalacticWaypointTritanopiaColours"},
               },
-              ["SECTION_ACTIVE"] = {0}, 
+              ["SECTION_ACTIVE"] = {0},
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"R", "1.000000"},
@@ -133,7 +178,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"GalacticWaypointDeuteranopiaColours"},
                 {"GalacticWaypointTritanopiaColours"},
               },
-              ["SECTION_ACTIVE"] = {1}, 
+              ["SECTION_ACTIVE"] = {1},
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"R", "0.820000"},
@@ -149,7 +194,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"GalacticWaypointDeuteranopiaColours"},
                 {"GalacticWaypointTritanopiaColours"},
               },
-              ["SECTION_ACTIVE"] = {2}, 
+              ["SECTION_ACTIVE"] = {2},
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"R", "0.180000"},
@@ -165,7 +210,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"GalacticWaypointDeuteranopiaColours"},
                 {"GalacticWaypointTritanopiaColours"},
               },
-              ["SECTION_ACTIVE"] = {3}, 
+              ["SECTION_ACTIVE"] = {3},
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"R", "0.648000"},
@@ -181,7 +226,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"GalacticWaypointDeuteranopiaColours"},
                 {"GalacticWaypointTritanopiaColours"},
               },
-              ["SECTION_ACTIVE"] = {4}, 
+              ["SECTION_ACTIVE"] = {4},
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"R", "0.877000"},
@@ -197,7 +242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"GalacticWaypointDeuteranopiaColours"},
                 {"GalacticWaypointTritanopiaColours"},
               },
-              ["SECTION_ACTIVE"] = {5}, 
+              ["SECTION_ACTIVE"] = {5},
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"R", "0.000000"},
@@ -213,7 +258,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"GalacticWaypointDeuteranopiaColours"},
                 {"GalacticWaypointTritanopiaColours"},
               },
-              ["SECTION_ACTIVE"] = {6}, 
+              ["SECTION_ACTIVE"] = {6},
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"R", "0.000000"},
