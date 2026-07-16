@@ -17,12 +17,12 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"GunOffsetX",           "-0.15000"},
-                {"GunOffsetY",           "-0.1000"},
-                {"GunOffsetZ",           "-0.28000"},
-                {"GunOffsetAggressiveX", "-0.15000"},
-                {"GunOffsetAggressiveY", "-0.1000"},
-                {"GunOffsetAggressiveZ", "-0.28000"},
+                {"GunOffsetX",           "-0.150000"},
+                {"GunOffsetY",           "-0.100000"},
+                {"GunOffsetZ",           "-0.280000"},
+                {"GunOffsetAggressiveX", "-0.150000"},
+                {"GunOffsetAggressiveY", "-0.100000"},
+                {"GunOffsetAggressiveZ", "-0.280000"},
               }
             },
           }
@@ -34,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"PushForceUpComponent",         "0.08"},
+                {"PushForceUpComponent",         "0.080000"},
                 {"PushPower",                    "55.000000"},
                 {"PushPowerInScrapyardDistance", "55.000000"},
                 {"PushPowerToxicInScrapyard",    "55.000000"},
@@ -60,8 +60,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 	              {"WeaponBobFactorWalkDeadZone", "1.000000"},
 	              {"WeaponBobFactorWalk",         "0.150000"},
 	              {"WeaponBobFactorRun",          "0.250000"},
-	              {"WeaponBobBlendTime",          "0.1500000"},
-	              {"WeaponGunTime",               "0.0010000"},
+	              {"WeaponBobBlendTime",          "0.150000"},
+	              {"WeaponGunTime",               "0.001000"},
               }
             },
             {

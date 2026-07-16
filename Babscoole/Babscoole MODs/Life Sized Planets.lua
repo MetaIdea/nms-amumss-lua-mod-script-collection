@@ -1,11 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Life Sized Planets",
-["MOD_AUTHOR"]              = "",
-["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "6.36",
-["MOD_DESCRIPTION"]         = "Larger planet sizes",
-["MODIFICATIONS"]           =
+["MOD_FILENAME"]    = "Life Sized Planets",
+["MOD_AUTHOR"]      = "",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.36",
+["MOD_DESCRIPTION"] = "Larger planet sizes",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =

@@ -26,11 +26,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"AcceleratorStickPoint", "1.750000"},
                 {"AcceleratorMinTime",    "0.000000"},
-                {"Accelerate",            "0.0000"},
+                {"Accelerate",            "0.000000"},
                 {"AccelerateAngle",       "5.000000"},
                 {"Turn",                  "2.400000"},
                 {"TurnFast",              "2.400000"},
-                {"StickyFactor",          "0.2500000"},
+                {"StickyFactor",          "0.250000"},
               }
             },
           }

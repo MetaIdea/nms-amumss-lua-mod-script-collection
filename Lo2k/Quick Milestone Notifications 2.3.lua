@@ -1,24 +1,26 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Milestone Notifications 2.2.pak", 
+["MOD_FILENAME"] 			= "Quick Milestone Notifications 2.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
 ["NMS_VERSION"]				= "6.44",
-["MOD_DESCRIPTION"]			= "This mod removes milestones notifications",
+["MOD_DESCRIPTION"]			= "This mod makes notifications shorter",
 ["MODIFICATIONS"] 			= 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
+					["EXML_CREATE"] = "FALSE",
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLE.MBIN", "METADATA\GAMESTATE\STATS\LEVELEDSTATSTABLESURVIVALMODE.MBIN"},
 					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
+							["SKW"] = {"StatMessageType", "Full"},
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"StatMessageType",	"Silent"},
+								{"StatMessageType",	"Quick"},
 							}
 						},
 					},

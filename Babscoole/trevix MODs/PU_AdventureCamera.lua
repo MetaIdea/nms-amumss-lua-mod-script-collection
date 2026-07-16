@@ -23,8 +23,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"BobFactor",                 "0.13"},
                 {"BobFocus",                  "100"},
                 {"BobRollFactor",             "0.200000"},
-                {"BobRollAmount",             "0.01000"},
-                {"BobFwdAmount",              "0.02500000"},
+                {"BobRollAmount",             "0.010000"},
+                {"BobFwdAmount",              "0.025000"},
               }
             },
             {
@@ -33,9 +33,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Name",            "CHARUNARMED"},
                 {"OffsetX",         "0.800000"},
-                {"OffsetY",         "-0.10000"},
-                {"BackMinDistance", "9.00000"},
-                {"BackMaxDistance", "10.40000"},
+                {"OffsetY",         "-0.100000"},
+                {"BackMinDistance", "9.000000"},
+                {"BackMaxDistance", "10.400000"},
               }
             },
             {
@@ -44,9 +44,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Name",            "CHARRUN"},
                 {"OffsetX",         "0.600000"},
-                {"OffsetY",         "-0.35000"},
-                {"BackMinDistance", "9.00000"},
-                {"BackMaxDistance", "11.50000"},
+                {"OffsetY",         "-0.350000"},
+                {"BackMinDistance", "9.000000"},
+                {"BackMaxDistance", "11.500000"},
               }
             },
             {
