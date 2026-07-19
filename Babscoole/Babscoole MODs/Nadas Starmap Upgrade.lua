@@ -2,7 +2,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Nadas Starmap Upgrade",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["LUA_AUTHOR"]      = "Makto & Updated by Babscoole",
 ["NMS_VERSION"]     = "6.40",
 ["MOD_DESCRIPTION"] = "Makes various tweaks to the starmap including a re-color of stars",
 ["MODIFICATIONS"]   =
@@ -52,17 +51,29 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
             {
-              ["PRECEDING_KEY_WORDS"] = {"BaseStarDefaultColours", "Yellow"},
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"BaseStarDefaultColours",      "Yellow"},
+                {"BaseStarProtanopiaColours",   "Yellow"},
+                {"BaseStarDeuteranopiaColours", "Yellow"},
+                {"BaseStarTritanopiaColours",   "Yellow"},
+              },
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"R", "1.000000"},
-                {"G", "0.870000"},
-                {"B", "0.460000"},
-                {"A", "0.200000"}
+                {"G", "1.000000"},
+                {"B", "0.000000"},
+                {"A", "1.000000"},
               }
             },
             {
-              ["PRECEDING_KEY_WORDS"] = {"BaseStarDefaultColours", "Green"},
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"BaseStarDefaultColours",      "Green"},
+                {"BaseStarProtanopiaColours",   "Green"},
+                {"BaseStarDeuteranopiaColours", "Green"},
+                {"BaseStarTritanopiaColours",   "Green"},
+              },
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"R", "0.300000"},
@@ -72,9 +83,19 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
             {
-              ["PRECEDING_KEY_WORDS"] = {"BaseStarDefaultColours", "Blue"},
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"BaseStarDefaultColours",      "Blue"},
+                {"BaseStarProtanopiaColours",   "Blue"},
+                {"BaseStarDeuteranopiaColours", "Blue"},
+                {"BaseStarTritanopiaColours",   "Blue"},
+              },
               ["VALUE_CHANGE_TABLE"] =
               {
+                -- {"R", "0.000000"},
+                -- {"G", "0.000000"},
+                -- {"B", "1.000000"},
+                -- {"A", "1.000000"},
                 {"R", "0.0960000"},
                 {"G", "0.321000"},
                 {"B", "1.000000"},
@@ -82,23 +103,35 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
             {
-              ["PRECEDING_KEY_WORDS"] = {"BaseStarDefaultColours", "Purple"},
-              ["VALUE_CHANGE_TABLE"] =
+              ["PRECEDING_KEY_WORDS"] =
               {
-                {"R", "0.563000"},
-                {"G", "0.246000"},
-                {"B", "1.000000"},
-                {"A", "0.650000"}
-              }
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"BaseStarProtanopiaColours", "Yellow"},
+                {"BaseStarDefaultColours",      "Red"},
+                {"BaseStarProtanopiaColours",   "Red"},
+                {"BaseStarDeuteranopiaColours", "Red"},
+                {"BaseStarTritanopiaColours",   "Red"},
+              },
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"R", "1.000000"},
-                {"G", "0.320000"},
-                {"B", "0.180000"},
-                {"A", "0.700000"}
+                {"G", "0.000000"},
+                {"B", "0.000000"},
+                {"A", "1.000000"},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"BaseStarDefaultColours",      "Purple"},
+                {"BaseStarProtanopiaColours",   "Purple"},
+                {"BaseStarDeuteranopiaColours", "Purple"},
+                {"BaseStarTritanopiaColours",   "Purple"},
+              },
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"R", "1.000000"},
+                {"G", "0.000000"},
+                {"B", "1.000000"},
+                {"A", "1.000000"},
               }
             },
             {

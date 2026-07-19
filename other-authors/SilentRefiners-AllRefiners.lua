@@ -14,7 +14,7 @@ SILENCE_SML_REFINER = true --Portable Refiner
 SILENCE_MED_REFINER = true --Medium Base Refiner
 SILENCE_LRG_REFINER = true --Large Base Refiner
 
-modNameSub = "Custom"
+modNameSub = "AllRefiners"
 
 -- ========== CODE ==========
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -38,7 +38,7 @@ if SILENCE_LRG_REFINER then table.insert(MBINsToEdit,"MODELS\PLANETS\BIOMES\COMM
 
 table.insert(MBIN_CT,{
 	["MBIN_FS"] = MBINsToEdit,
-	["EXML_CT"] = 
+	["EXML_CT"] =
 	{
 		{   --Remove sound section from "REFINE_START" on each user-selected MBIN
 			["SKW"] = {"StateID","REFINE_START"},
