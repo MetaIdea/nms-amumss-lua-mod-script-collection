@@ -1,4 +1,4 @@
-Total_Seeds_Per_Class = 10000
+Total_Seeds_Per_Class = 1000
 
 Input_Total_Seeds_Per_Class = {Total_Seeds_Per_Class,
 [[
@@ -6,27 +6,26 @@ Input_Total_Seeds_Per_Class = {Total_Seeds_Per_Class,
     Default = >> ]] .. Total_Seeds_Per_Class .. [[ <<
 ]]}
 
-Languages =
+local Languages =
 {
-    ["EN"] = "English",
-    ["FR"] = "French",
-    ["IT"] = "Italian",
-    ["DE"] = "German",
-    ["ES"] = "Spanish",
-    ["RU"] = "Russian",
-    ["PL"] = "Polish",
-    ["NL"] = "Dutch",
-    ["PT"] = "Portuguese",
-    ["LA"] = "LatinAmericanSpanish",
-    ["BR"] = "BrazilianPortuguese",
-    ["Z1"] = "SimplifiedChinese",
-    ["ZH"] = "TraditionalChinese",
-    ["Z2"] = "TencentChinese",
-    ["KO"] = "Korean",
-    ["JA"] = "Japanese",
-    ["US"] = "USEnglish"
+    EN = 'English',
+    FR = 'French',
+    IT = 'Italian',
+    DE = 'German',
+    ES = 'Spanish',
+    RU = 'Russian',
+    PL = 'Polish',
+    NL = 'Dutch',
+    PT = 'Portuguese',
+    LA = 'LatinAmericanSpanish',
+    BR = 'BrazilianPortuguese',
+    Z1 = 'SimplifiedChinese',
+    ZH = 'TraditionalChinese',
+    Z2 = 'TencentChinese',
+    KO = 'Korean',
+    JA = 'Japanese',
+    US = 'USEnglish'
 }
-
 local Language_Data =
 {
     [Languages.EN] =
@@ -90,7 +89,7 @@ local Language_Data =
             NAME = 'H.G. Corp. Spacecraft Dynamics',
             DESCRIPTION = 'Spacecraft constucted by H.G. Corp.',
             SUBTITLE = 'H.G. Corp. Spacecraft Dynamics'
-        },
+        }
     }
 }
 
@@ -383,6 +382,7 @@ function Create_Ship_Technology(Technology_Id, Amount, Max_Amount)
             <Property name="MaxAmount" value="]]..Max_Amount..[[" />
             <Property name="DamageFactor" value="0.000000" />
             <Property name="FullyInstalled" value="true" />
+            <Property name="AddedAutomatically" value="false" />
             <Property name="Index" value="GcInventoryIndex">
                 <Property name="X" value="-1" />
                 <Property name="Y" value="-1" />
@@ -456,25 +456,6 @@ function Get_Ship_Technologies(Ship_Type)
 end
 
 function Create_Shop_Entry(Entry_ID)
-    -- Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
-    -- {
-    --     ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "SpaceStation", "AlwaysPresentProducts", "NMSString0x10.xml"},
-    --     ["SEC_SAVE_TO"] = "SHOP_ENTRY"
-    -- }
-    -- Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
-    -- {
-    --     ["SEC_EDIT"] = "SHOP_ENTRY",
-    --     ["VALUE_CHANGE_TABLE"] =
-    --     {
-    --         {"Value", Entry_ID}
-    --     }
-    -- }
-    -- Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
-    -- {
-    --     ["SEC_EDIT"] = "SHOP_MASTER_SEC",
-    --     ["ADD_OPTION"] = "ADDafterSECTION",
-    --     ["SEC_ADD_NAMED"] = "SHOP_ENTRY"
-    -- }
     Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
     {
         SEC_EDIT = 'SHOP_MASTER_SEC',
@@ -482,33 +463,6 @@ function Create_Shop_Entry(Entry_ID)
     }
 end
 
--- PATCH 5.5 and UP this has dissapeared in Rewrod table
---Bases stats needed to assign Alien/robot property to specific ships
--- function Create_Ship_Base_Stats(ship_type)
---     if ship_type == "Alien" then
---         return [[
---             <Property value="GcInventoryBaseStatEntry.xml">
---                 <Property name="BaseStatID" value="ALIEN_SHIP" />
---                 <Property name="Value" value="1" />
---             </Property>
---         ]]
---     end
---     if ship_type == "Robot" then
---         return [[
---             <Property value="GcInventoryBaseStatEntry.xml">
---                 <Property name="BaseStatID" value="ROBOT_SHIP" />
---                 <Property name="Value" value="1" />
---             </Property>
---         ]]
---     end
-
---     return [[]]
--- end
-
--- removed
--- <Property name="BaseStatValues">
---     ]]..ship_base_stats..[[
--- </Property>
 function Create_Ship_Reward_Entry(ship_model, ship_seed, ship_slots, ship_technologies, ship_class, ship_type)
     return [[
         <Property name="List" value="GcRewardTableItem">
@@ -518,9 +472,6 @@ function Create_Ship_Reward_Entry(ship_model, ship_seed, ship_slots, ship_techno
                 <Property name="GcRewardSpecificShip">
                     <Property name="ShipResource" value="GcResourceElement">
                         <Property name="Filename" value="]]..ship_model..[[" />
-                        <Property name="ResHandle" value="GcResource">
-                            <Property name="ResourceID" value="0" />
-                        </Property>
                         <Property name="Seed" value="]]..ship_seed..[[" />
                         <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList">
                             <Property name="Samplers" />
@@ -558,6 +509,7 @@ function Create_Ship_Reward_Entry(ship_model, ship_seed, ship_slots, ship_techno
                         <Property name="IsCool" value="false" />
                         <Property name="Name" value="" />
                         <Property name="Version" value="0" />
+                        <Property name="NumSlotsFromTech" value="0" />
                     </Property>
                     <Property name="CostAmount" value="0" />
                     <Property name="CostCurrency" value="GcCurrency">
@@ -581,6 +533,12 @@ function Create_Ship_Reward_Entry(ship_model, ship_seed, ship_slots, ship_techno
             </Property>
         </Property>
     ]]
+
+                        --     <Property name="Filename" value="]]..ship_model..[[" />
+                        -- <Property name="ResHandle" value="GcResource">
+                        --     <Property name="ResourceID" value="0" />
+                        -- </Property>
+                        -- <Property name="Seed" value="]]..ship_seed..[[" />
 end
 
 function Get_Ship_Data(ship_type, ship_class )

@@ -67,15 +67,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       ["MBIN_CHANGE_TABLE"] =
       {
         {
-          ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN",
+          ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN",
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["SPECIAL_KEY_WORDS"]  = {"PlanetRing", "GcPaletteData"},
+              ["SPECIAL_KEY_WORDS"] = {"PlanetRing", "GcPaletteData"},
               ["REMOVE"] = "SECTION"
             },
             {
-              ["SPECIAL_KEY_WORDS"]  = {COLORNAME, "GcPaletteData"},
+              ["SPECIAL_KEY_WORDS"] = {COLORNAME, "GcPaletteData"},
               ["SEC_SAVE_TO"] = "ADD_PALETTE",
             },
             {

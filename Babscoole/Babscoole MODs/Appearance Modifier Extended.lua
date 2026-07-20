@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       ["MBIN_CHANGE_TABLE"] =
       {
         {
-          ["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\PLAYERDATA\CHARACTERCUSTOMISATIONDESCRIPTORGROUPSDATA.MBIN",
+          ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\PLAYERDATA\CHARACTERCUSTOMISATIONDESCRIPTORGROUPSDATA.MBIN",
           ["MXML_CHANGE_TABLE"] =
           {
             {
@@ -73,24 +73,24 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD_OPTION"] = "ADDafterSECTION",
               ["ADD"] =
 [[
-				<Property name="DescriptorGroups" value="GcCustomisationDescriptorGroup">
-					<Property name="GroupID" value="BACKPACK_CAPE" />
-					<Property name="Title" value="" />
-					<Property name="Image" value="" />
-					<Property name="Descriptors">
-						<Property name="Descriptors" value="_BACKPACK_CAPE" />
-					</Property>
-					<Property name="SuffixInclusionList" />
-					<Property name="LinkedProductOrSpecialID" value="" />
-					<Property name="Tip" value="backpack" />
-					<Property name="HiddenInCustomiser" value="false" />
-				</Property>
+        <Property name="DescriptorGroups" value="GcCustomisationDescriptorGroup">
+          <Property name="GroupID" value="BACKPACK_CAPE" />
+          <Property name="Title" value="" />
+          <Property name="Image" value="" />
+          <Property name="Descriptors">
+            <Property name="Descriptors" value="_BACKPACK_CAPE" />
+          </Property>
+          <Property name="SuffixInclusionList" />
+          <Property name="LinkedProductOrSpecialID" value="" />
+          <Property name="Tip" value="backpack" />
+          <Property name="HiddenInCustomiser" value="false" />
+        </Property>
 ]]
             },
           }
         },
         {
-          ["MBIN_FILE_SOURCE"]  = "METADATA\UI\CHARACTERCUSTOMISATIONUIDATA.MBIN",
+          ["MBIN_FILE_SOURCE"] = "METADATA\UI\CHARACTERCUSTOMISATIONUIDATA.MBIN",
           ["MXML_CHANGE_TABLE"] =
           {
             {
@@ -210,14 +210,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD_OPTION"] = "ADDendSECTION",
               ["ADD"] =
 [[
-								<Property name="BoneScales" value="GcCustomisationBoneScales">
-									<Property name="GroupTitle" value="Gek body" />
-									<Property name="ScaleBoneName" value="GEKBODY" />
-									<Property name="Positions">
-										<Property name="Positions" value="0.000000" />
-										<Property name="Positions" value="0.100000" />
-									</Property>
-								</Property>
+                <Property name="BoneScales" value="GcCustomisationBoneScales">
+                  <Property name="GroupTitle" value="Gek body" />
+                  <Property name="ScaleBoneName" value="GEKBODY" />
+                  <Property name="Positions">
+                    <Property name="Positions" value="0.000000" />
+                    <Property name="Positions" value="0.100000" />
+                  </Property>
+                </Property>
 ]]
             },
             {

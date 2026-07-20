@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       ["MBIN_CHANGE_TABLE"] =
       {
         {
-          ["MBIN_FILE_SOURCE"]  = "GCFREIGHTERBASEGLOBALS.GLOBAL.MBIN",
+          ["MBIN_FILE_SOURCE"] = "GCFREIGHTERBASEGLOBALS.GLOBAL.MBIN",
           ["MXML_CHANGE_TABLE"] =
           {
             {

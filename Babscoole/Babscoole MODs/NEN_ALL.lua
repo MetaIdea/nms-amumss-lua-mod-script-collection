@@ -178,17 +178,17 @@ USEN_LANGUAGE = "USEnglish"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]      = "Normalize Economy Names",
-["MOD_AUTHOR"]        = "thmsn & Babscoole",
-["NMS_VERSION"]       = "6.40",
-["MOD_DESCRIPTION"]   = "Normalize Economy Names",
-["MODIFICATIONS"]     =
+["MOD_FILENAME"]    = "Normalize Economy Names",
+["MOD_AUTHOR"]      = "thmsn & Babscoole",
+["NMS_VERSION"]     = "6.40",
+["MOD_DESCRIPTION"] = "Normalize Economy Names",
+["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =
       {
         {
-          ["MBIN_FILE_SOURCE"]  = "LANGUAGE/NMS_UPDATE3_BRAZILIANPORTUGUESE.MBIN",
+          ["MBIN_FILE_SOURCE"] = "LANGUAGE/NMS_UPDATE3_BRAZILIANPORTUGUESE.MBIN",
           ["MXML_CHANGE_TABLE"] =
           {
 
@@ -1759,7 +1759,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {["SPECIAL_KEY_WORDS"] = { "Id","UI_CONFLICT_LEVEL_HIGH_8"},["VALUE_MATCH_TYPE"]  = "STRING", ["VALUE_CHANGE_TABLE"]    = {{ZH_LANGUAGE,  ZH_HIGH}}},
             {["SPECIAL_KEY_WORDS"] = { "Id","UI_CONFLICT_LEVEL_HIGH_9"},["VALUE_MATCH_TYPE"]  = "STRING", ["VALUE_CHANGE_TABLE"]    = {{ZH_LANGUAGE,  ZH_HIGH}}},
             {["SPECIAL_KEY_WORDS"] = { "Id","UI_CONFLICT_LEVEL_HIGH_10"},["VALUE_MATCH_TYPE"] = "STRING", ["VALUE_CHANGE_TABLE"]    = {{ZH_LANGUAGE,  ZH_HIGH}}},
-            
+
             -- ECONOMY LEVEL
             {["SPECIAL_KEY_WORDS"] = { "Id","UI_ECON_LEVEL_LOW_1"},["VALUE_MATCH_TYPE"]   = "STRING", ["VALUE_CHANGE_TABLE"]        = {{USEN_LANGUAGE,  EN_LOW}}},
             {["SPECIAL_KEY_WORDS"] = { "Id","UI_ECON_LEVEL_LOW_2"},["VALUE_MATCH_TYPE"]   = "STRING", ["VALUE_CHANGE_TABLE"]        = {{USEN_LANGUAGE,  EN_LOW}}},
