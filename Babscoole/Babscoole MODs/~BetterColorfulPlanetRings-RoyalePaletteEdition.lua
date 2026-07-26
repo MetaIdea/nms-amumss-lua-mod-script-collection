@@ -155,6 +155,6 @@ for i = 1, #DataTable do
   BaseColourPalettesTable[#BaseColourPalettesTable +1] =
   {
     ["SPECIAL_KEY_WORDS"] = {"Palette", "GcPaletteData"},
-    ["EXML_FLAGS"]  = "OVERWRITE",
+    ["EXML_FLAGS"] = "OVERWRITE",
   },
 end

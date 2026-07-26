@@ -767,11 +767,11 @@ QUICK_ACTION_MENU =
             </Property>
             <Property name="AltId" value="" />
           </Property>
-					<Property name="RequireDefaultGameTableConfig" value="" />
-					<Property name="OverrideGameTableConfig" value="" />
-					<Property name="ClearGameTableConfigOverrideOnCompletion" value="false" />
-					<Property name="OverrideGameTableGameConfig" value="" />
-					<Property name="OverrideGameTableGameConfigOnCompletion" value="" />
+          <Property name="RequireDefaultGameTableConfig" value="" />
+          <Property name="OverrideGameTableConfig" value="" />
+          <Property name="ClearGameTableConfigOverrideOnCompletion" value="false" />
+          <Property name="OverrideGameTableGameConfig" value="" />
+          <Property name="OverrideGameTableGameConfigOnCompletion" value="" />
         </Property>
 ]]
   },
@@ -1875,7 +1875,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] = {"Name", "BubbleShield"},
               ["PRECEDING_KEY_WORDS"] = {"Children"},
-              ["ADD_OPTION"]  = "ADDafterLINE",
+              ["ADD_OPTION"] = "ADDafterLINE",
               ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData">

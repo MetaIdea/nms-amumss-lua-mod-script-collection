@@ -650,7 +650,7 @@ for i = 1, #BaseDataTable do
   {
     ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData"},
     ["PRECEDING_KEY_WORDS"] = {"Colours"},
-    ["EXML_FLAGS"]  = "OVERWRITE",
+    ["EXML_FLAGS"] = "OVERWRITE",
   }
 end
 

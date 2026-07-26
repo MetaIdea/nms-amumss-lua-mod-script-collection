@@ -97,7 +97,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"RockDark", "GcPaletteData"},
-              ["ADD_OPTION"]  = "ADDafterSECTION",
+              ["ADD_OPTION"] = "ADDafterSECTION",
               ["SEC_ADD_NAMED"] = "ADD_PALETTE",
             },
             {

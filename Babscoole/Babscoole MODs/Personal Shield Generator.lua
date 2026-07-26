@@ -250,7 +250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] = {"Name", "BubbleShield"},
               ["PRECEDING_KEY_WORDS"] = {"Children"},
-              ["ADD_OPTION"]  = "ADDafterLINE",
+              ["ADD_OPTION"] = "ADDafterLINE",
               ["ADD"] =
 [[
         <Property name="Children" value="TkSceneNodeData">
