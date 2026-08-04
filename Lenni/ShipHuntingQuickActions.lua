@@ -100,6 +100,11 @@ for i = 1, #QUICK_ACTION_MENU, 1 do
         },
         {
             ["SEC_EDIT"] = "ADD_TRIGGER" .. i,
+            ["SKW"] = {"States", "GcActionTriggerState"},
+			["EXML_ID"] = "BOOT"
+        },
+        {
+            ["SEC_EDIT"] = "ADD_TRIGGER" .. i,
             ["PKW"] = "GcCameraShakeAction",
             ["SECTION_UP"] = 1,
             ["SEC_KEEP"] = "TRUE",
