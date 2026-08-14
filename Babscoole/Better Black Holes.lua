@@ -44,8 +44,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Components", "GcCameraShakeComponentData"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"FalloffDistanceMin", "2000.000000"},
-                {"FalloffDistanceMax", "20000.000000"},
+                {"FalloffDistanceMin", "8000.000000"},
+                {"FalloffDistanceMax", "80000.000000"},
               }
             },
             {
