@@ -14,8 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MXML_CHANGE_TABLE"] 	=
 					{
 						{
-						  ["SKW"] = {"PreInstalledTech","GcMaintenanceElement"},
-						  ["REPLACE_TYPE"] = "ALL",
+						  ["SKW"] = {"Components", "GcMaintenanceComponentData"},
 						  ["REMOVE"] = "SECTION",
 						}
 					}

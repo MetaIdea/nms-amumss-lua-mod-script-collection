@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "AntiBloom",
 ["MOD_AUTHOR"]      = "AndiPro66",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.50",
+["NMS_VERSION"]     = "6.45",
 ["MOD_DESCRIPTION"] = "No more annoying Bloom Effects",
 ["MODIFICATIONS"]   =
   {
