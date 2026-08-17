@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "CrewLocker Appearance Modifier",
 ["MOD_AUTHOR"]      = "Rabzoue",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.30",
+["NMS_VERSION"]     = "6.45",
 ["MOD_DESCRIPTION"] = "A simple change to the Desolation added CrewLocker, it will let you use the Appareance Modifier on it",
 ["MODIFICATIONS"]   =
   {
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="UseIntermediateUI" value="false" />
         <Property name="Renderer" value="TkModelRendererData">
           <Property name="Camera" value="TkModelRendererCameraData">
-            <Property name="Distance" value="2.8" />
+            <Property name="Distance" value="2.800000" />
             <Property name="Offset">
               <Property name="X" value="0.500000" />
               <Property name="Y" value="1.300000" />
