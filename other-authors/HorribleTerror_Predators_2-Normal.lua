@@ -1,124 +1,47 @@
---[[
-  HORRIBLE TERROR - Depredadores :: NORMAL
-  ==================================================================
-  Mod de dificultad. Aumenta la agresividad y la presencia de los
-  depredadores que cazan al jugador.
-
-  >>> CONFIGURACION 2 de 4: NORMAL <<<
-
-  ------------------------------------------------------------------
-  LAS CUATRO CONFIGURACIONES
-  ------------------------------------------------------------------
-  Instala UNA sola. Las cuatro escriben los mismos archivos, asi que
-  tener dos activas a la vez hace que una pise a la otra en silencio.
-
-  Parametro                Vanilla  1Facil  2Normal 3Dificil 4Hardcore
-  --------------------------------------------------------------------
-  Densidad terrestre          x1      x2       x5      x20      x20
-  Peso arquetipo DANGEROUS     1       3       10     1000     1000
-    -> % planetas hostiles    9%     23%      50%      99%      99%
-  Manada min/max             1/1     1/2      2/3      3/5      5/7
-  Percepcion (m)              40      45       50       60       80
-  Huye al % de vida           40      30       15        0        0
-  % depredadores hostiles    0.5     0.6     0.75      1.0      1.0
-  Tope criaturas a la vez     40      45       50       60       70
-  Distancia de aburrimiento   80      80       80       80      150
-
-  ------------------------------------------------------------------
-  QUE SIGNIFICA CADA PARAMETRO
-  ------------------------------------------------------------------
-  Densidad terrestre     GroundGroupsPerKm. Densidad TOTAL de fauna, sin
-                         distinguir rol. Sube herbivoros y depredadores
-                         por igual.
-
-  Peso DANGEROUS         Probabilidad de que un planeta reciba el
-                         arquetipo con PLAYERPREDATOR. El % sale de
-                         peso/(10+peso): los otros diez arquetipos suman
-                         10 y no se tocan.
-
-  Manada min/max         MinGroupSize/MaxGroupSize en las tablas
-                         PLAYERPREDATOR. En vanilla es 1/1: los que te
-                         cazan salen SOLOS. Es lo que mas cambia la
-                         sensacion de amenaza.
-
-  Percepcion             PredatorPerceptionDistance. Metros a los que el
-                         depredador te detecta.
-
-  Huye al % de vida      PredatorRunAwayHealthPercent. Vanilla 40: se
-                         retira malherido. A 0 pelea hasta morir.
-
-  % hostiles             PercentagePlayerPredators. Que fraccion de los
-                         depredadores va a por TI en vez de cazar otras
-                         criaturas. Rinde mas que la densidad y no cuesta
-                         rendimiento: no anade bichos, cambia lo que
-                         hacen los que ya hay.
-
-  Tope criaturas         MaxEcosystemCreaturesNormal. Limite duro de
-                         criaturas cargadas a la vez. UNICO parametro con
-                         coste de rendimiento real.
-
-  Aburrimiento           PlayerPredatorBoredomDistance. Metros que hay
-                         que alejarse para que pierda interes. Solo lo
-                         toca Hardcore; los otros lo dejan en el 80 de
-                         vanilla en vez de reescribirlo con el mismo
-                         valor, que ensuciaria el EXML delta.
-
-  ------------------------------------------------------------------
-  ARCHIVOS QUE TOCA - 4 rutas, ninguna compartida con otros mods
-  ------------------------------------------------------------------
-    METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN
-    METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPLAYERPREDATORMED.MBIN
-    METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPLAYERPREDATORLARGE.MBIN
-    GLOBALS\GCCREATUREGLOBALS.MBIN
-
-  ------------------------------------------------------------------
-  TRAMPAS VERIFICADAS - no tocar sin leer esto
-  ------------------------------------------------------------------
-  * "Weight " lleva un ESPACIO AL FINAL. Typo de Hello Games en los datos
-    del juego, igual que "BiomeSpecific ".
-
-  * MaxEcosystemCreaturesNormal es ENTERO en el MXML (value="40", sin
-    decimales) mientras que los demas son floats. Escribir "60", no
-    "60.000000", o MBINCompiler puede rechazar la compilacion.
-
-  * NO usar WHERE_IN_SECTION para localizar el peso de DANGEROUS. WIS
-    filtra secciones enteras en vez de localizar una sub-seccion: una
-    version anterior puso a 1000 los 22 pesos de Generic. La via correcta
-    es SPECIAL_KEY_WORDS con dos pares encadenados.
-
-  * Sparse/Normal/Dense/VeryDense se repiten en cinco secciones del
-    archivo. Sin PRECEDING_KEY_WORDS el cambio de densidad las toca todas.
-
-  ------------------------------------------------------------------
-  VERIFICACION ESPERADA
-  ------------------------------------------------------------------
-  REPORT: 13 CHANGE(s) en total.
-    5 en CREATUREGENERATIONDATA (4 de densidad + 1 de peso)
-    2 en cada tabla PLAYERPREDATOR (x2 archivos = 4)
-    4 en GCCREATUREGLOBALS
---]]
-
-DENSITY_MULT     = 5
-DANGEROUS_WEIGHT = "10.000000"
-PACK_MIN         = "2"
-PACK_MAX         = "3"
+DENSITY_MULT     = 3
+DANGEROUS_WEIGHT = "4.000000"
+PACK_MIN         = "1"
+PACK_MAX         = "2"
 PERCEPTION       = "50.000000"
-RUNAWAY_HP       = "15.000000"
-PCT_HOSTILE      = "0.750000"
-MAX_CREATURE     = "50"   -- ENTERO, sin decimales
+RUNAWAY_HP       = "25.000000"
+PCT_HOSTILE      = "0.600000"
+MAX_CREATURE     = "50"
+
+FIEND_ATTACKERS  = "3"
+FIEND_ENGAGED    = "8"
+FIEND_SPAWN      = "8"
+FIEND_AGGRO      = "60.000000"
+FIEND_PERCEPTION = "65.000000"
+HATCH_MIN        = "0.200000"
+HATCH_MAX        = "2.000000"
+AVOID_WEIGHT     = "8.000000"
+WORM_RADIUS      = "50.000000"
+POUNCE_DELAY     = "1.800000"
+
+NOTICE_PAUSE     = "0.800000"
+APPROACH_TIME    = "2.000000"
+CHARGE_DIST      = "12.000000"
+ENERGY_CHASING   = "-0.050000"
+STEER_RATE       = "0.200000"
+TURN_RADIUS      = "4.000000"
+COHERE_WEIGHT    = "0.400000"
+ALIGN_WEIGHT     = "1.500000"
+PUSH_SMALL       = "9.000000"
+PUSH_MEDIUM      = "9.000000"
+PUSH_LARGE       = "4.500000"
+MELEE_SLOWDOWN   = "3.000000"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "HorribleTerror_Predators_2-Normal",
-["MOD_AUTHOR"]      = "ArnulfoDev",
+["MOD_AUTHOR"]      = "AldrichDDD",
 ["NMS_VERSION"]     = "6.45",
-["MOD_DESCRIPTION"] = "[NORMAL] Depredadores mas agresivos: 50% de planetas hostiles, manadas de 2-3, deteccion a 50 m.",
+["MOD_DESCRIPTION"] = "[NORMAL] Conducta: 27% de planetas hostiles, manadas de 1-2, deteccion a 50 m. Los Horrores Biologicos te ven a 65 m, eclosionan mas juntos, se acercan mas derechos y en grupo, y saltan cada 1.8 s.",
 ["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =
       {
-        -- ---------- Densidad y reparto de arquetipos ----------
         {
           ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN",
           ["MXML_CHANGE_TABLE"] =
@@ -146,7 +69,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
           }
         },
-        -- ---------- Tamano de manada ----------
         {
           ["MBIN_FILE_SOURCE"] =
           {
@@ -165,7 +87,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
           }
         },
-        -- ---------- Sentidos y tenacidad ----------
         {
           ["MBIN_FILE_SOURCE"] = "GLOBALS\GCCREATUREGLOBALS.MBIN",
           ["MXML_CHANGE_TABLE"] =
@@ -179,6 +100,96 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"PercentagePlayerPredators",    PCT_HOSTILE},
                 {"MaxEcosystemCreaturesNormal",  MAX_CREATURE},
               }
+            },
+            {
+              ["COMMENT"]            = "Presion de los Horrores Biologicos",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"FiendMaxAttackers", FIEND_ATTACKERS},
+                {"FiendMaxEngaged",   FIEND_ENGAGED},
+                {"MaxFiendsToSpawn",  FIEND_SPAWN},
+                {"FiendAggroTime",    FIEND_AGGRO},
+              }
+            },
+            {
+              ["COMMENT"]            = "Percepcion de Fiend a "..FIEND_PERCEPTION,
+              ["VALUE_CHANGE_TABLE"] = { {"FiendPerceptionDistance", FIEND_PERCEPTION} }
+            },
+            {
+              ["COMMENT"]            = "Eclosion mas junta",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"FiendMinSpawnTime", HATCH_MIN},
+                {"FiendMaxSpawnTime", HATCH_MAX},
+              }
+            },
+            {
+              ["COMMENT"]            = "Separacion entre criaturas y gusano por cercania",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"AvoidCreaturesWeight",            AVOID_WEIGHT},
+                {"GroundWormSpawnerActivateRadius", WORM_RADIUS},
+              }
+            },
+            {
+              ["COMMENT"]            = "Menos acecho",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"PredatorNoticePauseTime",  NOTICE_PAUSE},
+                {"PredatorApproachTime",     APPROACH_TIME},
+                {"PredatorChargeDist",       CHARGE_DIST},
+                {"PredatorEnergyUseChasing", ENERGY_CHASING},
+              }
+            },
+            {
+              ["COMMENT"]            = "Rumbo directo: mas refresco de steering y giro mas cerrado",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"SteeringUpdateRate", STEER_RATE},
+                {"MaxTurnRadius",      TURN_RADIUS},
+              }
+            },
+            {
+              ["COMMENT"]            = "Horda: la manada se mantiene mas junta",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"FollowLeaderCohereWeight", COHERE_WEIGHT},
+                {"FollowLeaderAlignWeight",  ALIGN_WEIGHT},
+              }
+            },
+            {
+              ["COMMENT"]             = "Horda: menos empujon mutuo (struct por tamano)",
+              ["PRECEDING_KEY_WORDS"] = {"SpherePusherWeight"},
+              ["VALUE_CHANGE_TABLE"]  =
+              {
+                {"Small",  PUSH_SMALL},
+                {"Medium", PUSH_MEDIUM},
+                {"Large",  PUSH_LARGE},
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREBEHAVIOURTREES.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["COMMENT"]            = "MELEE: frenan menos al acercarse",
+              ["SPECIAL_KEY_WORDS"]  = {"Id", "MELEE"},
+              ["REPLACE_TYPE"]       = "ONCE",
+              ["VALUE_CHANGE_TABLE"] = { {"DynamicMoveSlowdownDistMul", MELEE_SLOWDOWN} }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["COMMENT"]            = "FIEND: cadencia del salto -> "..POUNCE_DELAY,
+              ["SPECIAL_KEY_WORDS"]  = {"Id", "FIEND"},
+              ["REPLACE_TYPE"]       = "ONCE",
+              ["VALUE_CHANGE_TABLE"] = { {"DelayBetweenPounceAttacks", POUNCE_DELAY} }
             },
           }
         },
