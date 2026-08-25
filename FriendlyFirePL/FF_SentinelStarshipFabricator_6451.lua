@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "SentinelStarshipFabricator"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "645"
+METADATA_NMS_VERSION    = "6451"
 METADATA_MOD_DESC       = "This mod allows players to synthesize Interceptor-type starships in the fabricator machines using a very simplified assembly process. Modifies files in METADATA\GAMESTATE\PLAYERDATA and UI directories."
 
 
@@ -17,12 +17,17 @@ METADATA_MOD_DESC       = "This mod allows players to synthesize Interceptor-typ
 -- files affected by this mod
 --------------------------------------------------
 
+-- modified files
 FILE_METADATA_CUSTOM_MODULES =              "METADATA\GAMESTATE\PLAYERDATA\MODULARCUSTOMISATIONDATATABLE.MBIN"
 FILE_METADATA_CUSTOM_DESCRIPTORS =          "METADATA\GAMESTATE\PLAYERDATA\CHARACTERCUSTOMISATIONDESCRIPTORGROUPSDATA.MBIN"
 FILE_METADATA_CUSTOM_TEXTURES =             "METADATA\GAMESTATE\PLAYERDATA\CHARACTERCUSTOMISATIONTEXTUREOPTIONDATA.MBIN"
+FILE_METADATA_CUSTOM_COLOURS =              "METADATA\GAMESTATE\PLAYERDATA\CUSTOMISATIONCOLOURPALETTES.MBIN"
 
 FILE_UI_SHIP_BUILDER =                      "UI\SHIP_BUILDER_PAGE.MBIN"
 FILE_UI_SHIP_SLOT =                         "UI\SLOTS\SLOT_SHIPITEM.MBIN"
+
+-- vanilla template files (not modified)
+FILE_METADATA_BASECOLOURS =                 "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN"
 
 --------------------------------------------------
 -- slot positions on the fabricator screen
@@ -361,7 +366,6 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["NMS_VERSION"]		    = METADATA_NMS_VERSION,
     ["MOD_DESCRIPTION"]     = METADATA_MOD_DESC,
     ["AMUMSS_SUPPRESS_MSG"] = "NUMBERtoSTRING",
-    ["EXML_CREATE"] = "FALSE",
 
     ["MODIFICATIONS"] =
     {
@@ -373,6 +377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- modular customisation data
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_METADATA_CUSTOM_MODULES,
+                    ["EXML_CREATE"] = "FALSE",
                     ["MXML_CHANGE_TABLE"] =
                     {
                         {
@@ -429,6 +434,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- get template for colour pickers structure
                             ["SKW"] = {"Shuttle","GcModularCustomisationConfig","ColourDataPriorityList","GcModularCustomisationColourData",},
                             ["SEC_SAVE_TO"] = "SEC_COLOUR_BLACK",
+                        },
+
+                        {
+                            -- get template for colour pickers structure
+                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig","ColourDataPriorityList","GcModularCustomisationColourData",},
+                            ["SEC_SAVE_TO"] = "SEC_COLOUR_GALAXY",
                         },
 
                         {
@@ -580,6 +591,41 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --------------------------------------------------
 
                         {
+                            -- galaxy variant - assign data, including custom colour palette
+                            ["SEC_EDIT"] = "SEC_COLOUR_GALAXY",
+                            ["VCT"] =
+                            {
+                                {"RequiredTextureGroup","SHIP_SENTINEL",},
+                                {"RequiredTextureOption","GALAXY",},
+                                {"PaletteID","SHIP_GALAXY",},
+                            },
+                        },
+
+                        {
+                            -- galaxy variant - remove secondary and tertiary colour pickers
+                            ["SEC_EDIT"] = "SEC_COLOUR_GALAXY",
+                            ["SKW"] = {{"Title","CUSTOMISE_SECONDARY",},{"Title","CUSTOMISE_TERTIARY",},},
+                            ["REMOVE"] = "SECTION",
+                        },
+
+                        {
+                            -- galaxy variant- change default secondary colour
+                            ["SEC_EDIT"] = "SEC_COLOUR_GALAXY",
+                            ["SKW"] = {"Title","CUSTOMISE_PRIMARY",},
+                            ["VCT"] = {{"DefaultColourIndex",10,},},
+                        },
+
+                        {
+                            -- galaxy variant - add to the list
+                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig",},
+                            ["PKW"] = "ColourDataPriorityList",
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["SEC_ADD_NAMED"] = "SEC_COLOUR_GALAXY",
+                        },
+
+                        --------------------------------------------------
+
+                        {
                             -- get template for texture group from fighters
                             ["SKW"] = {"Fighter","GcModularCustomisationConfig","TextureData","GcModularCustomisationTextureGroup",},
                             ["SEC_SAVE_TO"] = "SEC_TEXTURES",
@@ -622,7 +668,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             -- get template for texture group
-                            ["SKW"] = {"MultiTextureOptionsID","SHIP_SAIL",},
+                            ["SKW"] = {"MultiTextureOptionsID","SHIP_FIGHT",},
                             ["SEC_SAVE_TO"] = "SEC_MULTI_TEXTURE",
                         },
 
@@ -675,7 +721,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 
                         {
-                            -- rework option 4 - fixed black
+                            -- rework option 4 - black
                             ["SEC_EDIT"] = "SEC_MULTI_TEXTURE",
                             ["SKW"] = {"Options","GcCustomisationMultiTextureOptionList",},
                             ["SECTION_ACTIVE"] = 3,
@@ -689,6 +735,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 
                         {
+                            -- rework option 5 - galaxy
+                            ["SEC_EDIT"] = "SEC_MULTI_TEXTURE",
+                            ["SKW"] = {"Options","GcCustomisationMultiTextureOptionList",},
+                            ["SECTION_ACTIVE"] = 4,
+                            ["VALUE_MATCH_TYPE"] = "STRING",
+                            ["VCT"] =
+                            {
+                                {"TextureOptionsID","GALAXY",},
+                                {"Layer","OVERLAY",},
+                                {"Option","2",},
+                            },
+                        },
+
+                        {
+                            -- rework option 5 - galaxy
+                            ["SEC_EDIT"] = "SEC_MULTI_TEXTURE",
+                            ["SKW"] = {"Option","SEVENTEEN",},
+                            ["REMOVE"] = "SECTION",
+                        },
+
+                        {
                             -- change tooltips
                             ["SEC_EDIT"] = "SEC_MULTI_TEXTURE",
                             ["REPLACE_TYPE"] = "onceINSIDE",
@@ -699,6 +766,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Tips","ITEMGEN_SALVAGE_ADJ_10",},
                                 {"Tips","ROBOT_NAME",},
                                 {"Tips","UI_PAINT_BLACK_DARK",},
+                                {"Tips","UP_BOLT_SCLASS_ADJ_4",},
                             },
                         },
 
@@ -713,6 +781,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ProductsToUnlock","",},
                                 {"ProductsToUnlock","",},
                                 {"ProductsToUnlock","",},
+                                {"ProductsToUnlock","",},
                             },
                         },
 
@@ -720,6 +789,96 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- add new texture group to file
                             ["PKW"] = "MultiTextureOptions",
                             ["SEC_ADD_NAMED"] = "SEC_MULTI_TEXTURE",
+                        },
+                    }
+                },
+
+                {
+                    --------------------------------------------------
+                    -- base colour palettes MBIN
+                    --------------------------------------------------
+                    ["MBIN_FILE_SOURCE"] = FILE_METADATA_BASECOLOURS,
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            -- get custom colour list
+                            ["SKW"] = {"SpaceSolar","GcPaletteData",},
+                            ["PKW"] = "Colours",
+                            ["SEC_SAVE_TO"] = "SEC_COLOUR_LIST",
+                        },
+                    }
+                },
+
+                {
+                    --------------------------------------------------
+                    -- customisation colour palettes MBIN
+                    --------------------------------------------------
+                    ["MBIN_FILE_SOURCE"] = FILE_METADATA_CUSTOM_COLOURS,
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            -- get template for colour palette
+                            ["SKW"] = {"ID","SHIP",},
+                            ["SEC_SAVE_TO"] = "SEC_COLOUR_PALETTE",
+                        },
+
+                        {
+                            -- edit template: change ID
+                            ["SEC_EDIT"] = "SEC_COLOUR_PALETTE",
+                            ["VCT"] = {{"ID","SHIP_GALAXY",},},
+                        },
+
+                        {
+                            -- edit template: remove existing colour list
+                            ["SEC_EDIT"] = "SEC_COLOUR_PALETTE",
+                            ["PKW"] = "Colours",
+                            ["REMOVE"] = "SECTION",
+                        },
+
+                        {
+                            -- edit template: add custom colour list
+                            ["SEC_EDIT"] = "SEC_COLOUR_PALETTE",
+                            ["SKW"] = {"NumColours","All",},
+                            ["SEC_ADD_NAMED"] = "SEC_COLOUR_LIST",
+                        },
+
+                        {
+                            -- edit template: use galaxy names for colours
+                            ["SEC_EDIT"] = "SEC_COLOUR_PALETTE",
+                            ["REPLACE_TYPE"] = "onceINSIDE",
+                            ["PKW"] = "TipText",
+                            ["VCT"] =
+                            {
+                                {"TipText","Aldukesci",},
+                                {"TipText","Fladiselm",},
+                                {"TipText","Nudquathsenfe",},
+                                {"TipText","Iaereznika",},
+                                {"TipText","Rewmanawa",},
+
+                                {"TipText","Thnistner",},
+                                {"TipText","Loychazinq",},
+                                {"TipText","Bloytisagra",},
+                                {"TipText","Ebedeagurst",},
+                                {"TipText","Ooibekuar",},
+
+                                {"TipText","Yeonatlak",},
+                                {"TipText","Ploehrliou",},
+                                {"TipText","Wiensanshe",},
+                                {"TipText","Nokokipsechl",},
+                                {"TipText","Jelmandan",},
+
+                                {"TipText","Yudukagath",},
+                                {"TipText","Ulexovitab",},
+                                {"TipText","Dimonimba",},
+                                {"TipText","Cugnatachh",},
+                                {"TipText","Nuybeliaure",},
+                            },
+                        },
+
+                        {
+                            -- add new colour palette to the list
+                            ["PKW"] = "Palettes",
+                            ["SEC_ADD_NAMED"] = "SEC_COLOUR_PALETTE",
                         },
                     }
                 },
@@ -1710,7 +1869,7 @@ function Descriptors_BuildChangeTable(exml)
 
         Descr_Fill("GroupID","SCIEN_L_WINGT_A","SENT_WH_NONE"),Descr_Reset("SENT_WH_NONE"),Descr_Add("SENT_WH_NONE",{""}),
         Descr_Fill("GroupID","SCIEN_L_WINGT_C","SENT_WH_NULL"),Descr_Reset("SENT_WH_NULL"),Descr_Add("SENT_WH_NULL",{"_Wings_H","_Wings1_NULL"}),
-        Descr_Fill("GroupID","SCIEN_L_WINGT_F","SENT_WH_CLSD"),Descr_Reset("SENT_WH_CLSD"),Descr_Add("SENT_WH_CLSD",{"_Wings_H","_Wings1_C","_exWingsb_NULL4"}),
+        Descr_Fill("GroupID","SCIEN_L_WINGT_F","SENT_WH_CLSD"),Descr_Reset("SENT_WH_CLSD"),Descr_Add("SENT_WH_CLSD",{"_Wings_H","_Wings1_C"}),
 
         Descr_Fill("GroupID","SCIEN_L_WINGT_G","SENT_WH_HONN"),Descr_Reset("SENT_WH_HONN"),Descr_Add("SENT_WH_HONN",{"_Wings_H","_Wings1_O","_SWings_NULL","_HorTopW_NULL"}),
         Descr_Fill("GroupID","SCIEN_L_WINGT_I","SENT_WH_HOAN"),Descr_Reset("SENT_WH_HOAN"),Descr_Add("SENT_WH_HOAN",{"_Wings_H","_Wings1_O","_SWings_A2","_HorTopW_NULL"}),

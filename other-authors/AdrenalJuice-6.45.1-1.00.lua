@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "AdrenalJuice-6.04.0-1.00.pak",
+["MOD_FILENAME"] 			= "AdrenalJuice-6.45.1-1.00.pak",
 ["MOD_AUTHOR"]				= "Tinz",
-["NMS_VERSION"]				= "6.04.0",
+["NMS_VERSION"]				= "6.45.1",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "",
@@ -61,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCPLAYERGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "JetpackTankTimes",
@@ -102,7 +102,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{						
 						{
 						["PRECEDING_KEY_WORDS"] = "",

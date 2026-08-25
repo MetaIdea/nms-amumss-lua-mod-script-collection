@@ -31,15 +31,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"Id", "ROGUE_WORMS"},
               ["REMOVE"] = "SECTION"
             },
-            -- {
-              -- ["REPLACE_TYPE"] = "RAW",
-              -- ["VALUE_CHANGE_TABLE"] =
-              -- {
-                -- {
-                  -- [[<Property name="GroundWorms" value="GcSentinelSpawnSequenceGroupList">]], [[<Property name="Reward" value="GcSentinelSpawnSequenceGroupList">]]
-                -- },
-              -- }
-            -- },
           }
         },
       }
