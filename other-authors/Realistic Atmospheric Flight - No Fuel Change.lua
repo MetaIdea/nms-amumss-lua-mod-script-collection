@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"] = "Realistic Atmospheric Flight.pak",
-    ["MOD_DESCRIPTION"] = "Improved atmospheric flight, smoother landings, reduced takeoff fuel cost and smoother station docking rotation",
+    ["MOD_FILENAME"] = "Realistic Atmospheric Flight - No Fuel Change.pak",
+    ["MOD_DESCRIPTION"] = "Improved atmospheric flight and smoother landings without changing takeoff fuel cost",
     ["MOD_AUTHOR"] = "DrBrown5",
     ["NMS_VERSION"] = "6.45.1",
 
@@ -40,33 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HoverLandReachedDistance",            "4.000000"},
                                 {"LandingPushNoseUpFactor",             "-0.050000"},
                                 {"CorvetteLandingRotateNoseLiftAmount", "-0.050000"},
-
                                 {"DockingRotateSpeed",                  "0.550000"}
-                            }
-                        }
-                    }
-                },
-
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                        "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
-
-                    ["MXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                "StatsType",
-                                "Ship_Launcher_TakeOffCost"
-                            },
-
-                            ["SECTION_UP"] = 1,
-
-                            ["REPLACE_TYPE"] = "ALL",
-
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Bonus", "20.000000"}
                             }
                         }
                     }
