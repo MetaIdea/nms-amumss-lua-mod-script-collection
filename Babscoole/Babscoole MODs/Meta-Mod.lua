@@ -138,6 +138,7 @@ PacksList =
   "_Chest_Builders4",
   "_Chest_Classic",
   "_Chest_Vault",
+  "_Chest_Swarm",
 }
 
 function GetPack(Pack)

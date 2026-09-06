@@ -46,11 +46,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
 							<Property name="Name" value="INTENSITY" />
-							<Property name="Value" value="5000.000000" />
+							<Property name="Value" value="1000.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
 							<Property name="Name" value="RADIUS" />
-							<Property name="Value" value="15000.000000" />
+							<Property name="Value" value="500.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
 							<Property name="Name" value="COL_R" />
@@ -131,11 +131,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
 							<Property name="Name" value="INTENSITY" />
-							<Property name="Value" value="5000.000000" />
+							<Property name="Value" value="1000.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">
 							<Property name="Name" value="RADIUS" />
-							<Property name="Value" value="15000.000000" />
+							<Property name="Value" value="500.000000" />
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
 							<Property name="Name" value="COL_R" />
