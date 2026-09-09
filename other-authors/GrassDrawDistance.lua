@@ -24,9 +24,8 @@
 -- ============================================================
 
 
--- ── Tweak these if you want a different multiplier or caps but I would not recommend that ───
+-- ── Tweak these if you want a different multiplier or cap but I would not recommend that ───
 local MULTIPLIER    = 2      
-local MAX_CAP_LOW   = 999     
 local MAX_CAP_HIGH  = 9999    
 local VALUE_CEILING = 4999    
 -- ─────────────────────────────────────────────────────────────
@@ -34,17 +33,24 @@ local VALUE_CEILING = 4999
 
 -- called for FadeOutStartDistance and FadeOutEndDistance
 -- multiplies the current value then clamps it so we don't write nonsense into the files
+--
+-- FIX: this used to have a second, lower cap (999) that any doubled value
+-- between 1000-9999 got snapped down to. Since most vanilla Start/End values
+-- are in the hundreds-to-low-thousands range, doubling them landed right in
+-- that dead zone, so nearly every value collapsed to the same flat 999 -
+-- wiping out the Start/End gap (zero-width fade, hard pop) and, worse,
+-- shrinking many grass models' draw distance to LESS than it was before the
+-- mod, while larger background models (which skip the multiplier entirely
+-- via VALUE_CEILING) kept drawing far out. That's what caused nearby grass
+-- to disappear while distant grass kept showing. Now there's a single
+-- ceiling that only kicks in for genuinely oversized results.
 function GrassDistMulCap(_, currentValue)
     local val = tonumber(currentValue)
     if not val then return currentValue end  -- shouldn't happen but just in case
 
     local result = val * MULTIPLIER
 
-    -- tiered cap - some vanilla values are already in the hundreds so after
-    -- multiplying they'd blow past 999 but not necessarily 9999
-    if     result > MAX_CAP_HIGH then return tostring(MAX_CAP_HIGH)
-    elseif result > MAX_CAP_LOW  then return tostring(MAX_CAP_LOW)
-    end
+    if result > MAX_CAP_HIGH then return tostring(MAX_CAP_HIGH) end
 
     return tostring(result)
 end
