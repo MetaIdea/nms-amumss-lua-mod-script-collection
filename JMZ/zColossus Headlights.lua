@@ -2,7 +2,7 @@ Author			= "JMZawodny"
 ModName			= "zColossus"
 ModNameSub		= "Headlights"
 BaseDescription = "Make the Headlights useful"
-GameVersion		= "v6.24"
+GameVersion		= "v7.0"
 ModVersion		= ""
 
 Angle     = -10.0

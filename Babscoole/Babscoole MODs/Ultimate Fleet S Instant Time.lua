@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Ultimate Fleet S Instant Time",
 ["MOD_AUTHOR"]      = "PyronoxOmega and Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Mostly S-class with high Stats based on RNG",
 ["MODIFICATIONS"]   =
   {

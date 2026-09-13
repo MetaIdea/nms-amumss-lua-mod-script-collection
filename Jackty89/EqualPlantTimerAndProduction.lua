@@ -72,6 +72,27 @@ local ProductIds =
 local Time = 3600
 local HarvestAmount = 50;
 
+
+local InputTime =
+{
+    Time,
+    [[
+        How long should it take for the plants to grow (in seconds)?
+        Default = 3600 | Current = >> ]] .. (Time) .. [[ <<
+    ]]
+}
+Time = GUIF(InputTime, 10)
+
+local InputHarvestAmount =
+{
+    HarvestAmount,
+    [[
+        How much should plants yield?
+        Default = 50 | Current = >> ]] .. (HarvestAmount) .. [[ <<
+    ]]
+}
+HarvestAmount = GUIF(InputHarvestAmount, 10)
+
 local Language_Data =
 {
     [Languages.EN] =
@@ -84,29 +105,6 @@ local Language_Data =
         }
     }
 }
-
-
-local InputTime =
-{
-    Time,
-    [[
-        How long should it take for the plants to grow (in seconds)?
-        Default = 3600 | Current = >> ]] .. (Time) .. [[ <<
-    ]]
-}
-
-Time = GUIF(InputTime, 10)
-
-local InputHarvestAmount =
-{
-    HarvestAmount,
-    [[
-        How much should plants yield?
-        Default = 50 | Current = >> ]] .. (HarvestAmount) .. [[ <<
-    ]]
-}
-
-HarvestAmount = GUIF(InputHarvestAmount, 10)
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -323,7 +321,7 @@ function Plant_Edits()
                     REPLACE_TYPE = "ALL",
                     VALUE_CHANGE_TABLE =
                     {
-                        {"Time", Time},
+                        {"Time", (Time > 1 and Time // 2-1 or Time)},
                     }
                 },
                 {
@@ -331,7 +329,7 @@ function Plant_Edits()
                     REPLACE_TYPE = "ALL",
                     VALUE_CHANGE_TABLE =
                     {
-                        {"Time", Time},
+                        {"Time", (Time > 1 and Time // 2 or Time)},
                     }
                 },
                 {
@@ -339,7 +337,7 @@ function Plant_Edits()
                     REPLACE_TYPE = "ALL",
                     VALUE_CHANGE_TABLE=
                     {
-                        {"Time", Time},
+                        {"Time", (Time > 1 and Time - 1 or Time)},
                     }
                 },
                 {

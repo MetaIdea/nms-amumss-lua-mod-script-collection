@@ -180,7 +180,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Normalize Economy Names",
 ["MOD_AUTHOR"]      = "thmsn & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Normalize Economy Names",
 ["MODIFICATIONS"]   =
   {

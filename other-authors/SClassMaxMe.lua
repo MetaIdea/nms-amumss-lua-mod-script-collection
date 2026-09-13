@@ -17,6 +17,11 @@
 --------------------------------------------------------------------------------
 
 -------------------------------- SETTINGS --------------------------------------
+-- Ambient system freighter warps in as a Capital freighter.
+-- (Switch kept so the spawn edit can be isolated when testing; the S-class /
+-- max-slots part below is unaffected by it.)
+local CapitalFreighterSpawn = true
+
 -- Class roll: weights out of 100. Vanilla spreads these across C/B/A/S.
 local ClassProbability = { C = "0", B = "0", A = "0", S = "100" }
 
@@ -47,70 +52,70 @@ for _, name in ipairs(SizeEntries) do
   table.insert(SizeEntryKeys, { name })
 end
 
+-- File changes; the capital-freighter spawn edit is added only when enabled.
+local Changes = {}
+if CapitalFreighterSpawn then
+  table.insert(Changes, {
+    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
+    ["MXML_CHANGE_TABLE"] = {
+      {
+        ["COMMENT"]             = "Ambient system freighter warps in and is a Capital freighter",
+        ["PRECEDING_KEY_WORDS"] = "AmbientSpawns",
+        ["VALUE_CHANGE_TABLE"]  = {
+          {"WarpIn",     "True"},              -- vanilla: False
+          {"AIShipRole", "CapitalFreighter"},  -- vanilla: Freighter
+        },
+      },
+    },
+  })
+end
+table.insert(Changes, {
+  ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
+  ["MXML_CHANGE_TABLE"] = {
+    {
+      ["COMMENT"]             = "Class roll is always S",
+      ["PRECEDING_KEY_WORDS"] = "ClassProbabilities",
+      ["REPLACE_TYPE"]        = "ALL",
+      ["VALUE_CHANGE_TABLE"]  = {
+        {"C", ClassProbability.C},
+        {"B", ClassProbability.B},
+        {"A", ClassProbability.A},
+        {"S", ClassProbability.S},
+      },
+    },
+    {
+      ["COMMENT"]             = "Raise the per-class inventory cap",
+      ["PRECEDING_KEY_WORDS"] = "MaxInventoryCapacity",
+      ["REPLACE_TYPE"]        = "ALL",
+      ["VALUE_CHANGE_TABLE"]  = {
+        {"C", MaxInventoryCapacity},
+        {"B", MaxInventoryCapacity},
+        {"A", MaxInventoryCapacity},
+        {"S", MaxInventoryCapacity},
+      },
+    },
+    {
+      ["COMMENT"]             = "Max cargo/tech slots for every ship & freighter size",
+      ["PRECEDING_KEY_WORDS"] = SizeEntryKeys,
+      ["VALUE_CHANGE_TABLE"]  = {
+        {"MinSlots",     CargoSlots},
+        {"MaxSlots",     CargoSlots},
+        {"MinTechSlots", TechSlots},
+        {"MaxTechSlots", TechSlots},
+      },
+    },
+  },
+})
+
 NMS_MOD_DEFINITION_CONTAINER = {
   ["MOD_FILENAME"]    = "SClassMaxMe",
   ["MOD_AUTHOR"]      = "Unclejuju",
   ["LUA_AUTHOR"]      = "potatiustotalis / dudemiustotalis / Unclejuju (modernized by Julian)",
-  ["NMS_VERSION"]     = "6.45",
-  ["MOD_DESCRIPTION"] = "S Class Capital Freighter with max slots will spawn in the system and all Ships and Regular Freighters are also S Class with max slots",
+  ["NMS_VERSION"]     = "7.0",
+  ["MOD_DESCRIPTION"] = "All ships and freighters S class with max slots; optional S Class Capital Freighter spawn",
   ["MODIFICATIONS"]   = {
     {
-      ["MBIN_CHANGE_TABLE"] = {
-
-        ---------------------------------------------------------------- Capital freighter spawn
-        {
-          ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
-          ["MXML_CHANGE_TABLE"] = {
-            {
-              ["COMMENT"]             = "Ambient system freighter warps in and is a Capital freighter",
-              ["PRECEDING_KEY_WORDS"] = "AmbientSpawns",
-              ["VALUE_CHANGE_TABLE"]  = {
-                {"WarpIn",     "True"},              -- vanilla: False
-                {"AIShipRole", "CapitalFreighter"},  -- vanilla: Freighter
-              },
-            },
-          },
-        },
-
-        ---------------------------------------------------------------- Everything S-class, max slots
-        {
-          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
-          ["MXML_CHANGE_TABLE"] = {
-            {
-              ["COMMENT"]             = "Class roll is always S",
-              ["PRECEDING_KEY_WORDS"] = "ClassProbabilities",
-              ["REPLACE_TYPE"]        = "ALL",
-              ["VALUE_CHANGE_TABLE"]  = {
-                {"C", ClassProbability.C},
-                {"B", ClassProbability.B},
-                {"A", ClassProbability.A},
-                {"S", ClassProbability.S},
-              },
-            },
-            {
-              ["COMMENT"]             = "Raise the per-class inventory cap",
-              ["PRECEDING_KEY_WORDS"] = "MaxInventoryCapacity",
-              ["REPLACE_TYPE"]        = "ALL",
-              ["VALUE_CHANGE_TABLE"]  = {
-                {"C", MaxInventoryCapacity},
-                {"B", MaxInventoryCapacity},
-                {"A", MaxInventoryCapacity},
-                {"S", MaxInventoryCapacity},
-              },
-            },
-            {
-              ["COMMENT"]             = "Max cargo/tech slots for every ship & freighter size",
-              ["PRECEDING_KEY_WORDS"] = SizeEntryKeys,
-              ["VALUE_CHANGE_TABLE"]  = {
-                {"MinSlots",     CargoSlots},
-                {"MaxSlots",     CargoSlots},
-                {"MinTechSlots", TechSlots},
-                {"MaxTechSlots", TechSlots},
-              },
-            },
-          },
-        },
-      },
+      ["MBIN_CHANGE_TABLE"] = Changes,
     },
   },
 }

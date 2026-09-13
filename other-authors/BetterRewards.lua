@@ -102,7 +102,7 @@ ATLAS_WORD_FULL =
 					</Property>
 ]]
 
-MISC_WORD_LEARN = string.rep(MISC_WORD, WORDS_TO_LEARN)
+MISC_WORD_LEARN = string.rep(MISC_WORD, WORDS_TO_LEARN - 1)
 
 ATLAS_WORD_LEARN = string.rep(ATLAS_WORD_FULL, ATLAS_WORDS_TO_LEARN - 1)
 
@@ -111,7 +111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 	= "BetterRewards",
 ["MOD_BATCHNAME"]	= "BetterRewardsCombined",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "6.21",
+["NMS_VERSION"]		= "7.0",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to most reward values",
 ["MODIFICATIONS"] 	=
 	{

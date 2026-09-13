@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "JEs Better Mining Lasers",
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Adjusts mining beam damage so it isn't as impacted by having Enemy Strength set at higher difficulty",
 ["MODIFICATIONS"]   =
   {

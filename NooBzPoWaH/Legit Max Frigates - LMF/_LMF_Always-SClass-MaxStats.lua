@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] = "This mod makes Frigates spawn with best initial stats and always as S class",
 ["MOD_AUTHOR"]      = "ll62518475TheSecond & NooBzPoWaH",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.7+",
+["NMS_VERSION"]     = "6.+",
 ["MODIFICATIONS"]   =
     {
         {

@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "BioRoom And Cultivation Chamber Harvest Range " .. Range .. "u",
 ["MOD_AUTHOR"]      = "KuroPeach & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Modified the harvesting range of BioRoom and Cultivation Chamber to 500u",
 ["MODIFICATIONS"]   =
   {

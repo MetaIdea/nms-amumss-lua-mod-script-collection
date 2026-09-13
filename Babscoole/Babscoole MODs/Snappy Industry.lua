@@ -35,6 +35,7 @@ Small =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -54,6 +55,7 @@ Small =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -93,6 +95,7 @@ Small =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -112,6 +115,7 @@ Small =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -151,6 +155,7 @@ Small =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -170,6 +175,7 @@ Small =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -209,6 +215,7 @@ Small =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -228,6 +235,7 @@ Small =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -267,6 +275,7 @@ Small =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -286,6 +295,7 @@ Small =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -325,6 +335,7 @@ Small =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -344,6 +355,7 @@ Small =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -378,6 +390,7 @@ Medium =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData">
@@ -406,6 +419,7 @@ Medium =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData">
@@ -443,6 +457,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -462,6 +477,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -501,6 +517,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -520,6 +537,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -559,6 +577,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -578,6 +597,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -617,6 +637,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -636,6 +657,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -675,6 +697,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -714,6 +737,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -753,6 +777,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -792,6 +817,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -831,6 +857,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -870,6 +897,7 @@ Medium =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -904,6 +932,7 @@ Large =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData">
@@ -941,6 +970,7 @@ Large =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -960,6 +990,7 @@ Large =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -999,6 +1030,7 @@ Large =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -1018,6 +1050,7 @@ Large =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1057,6 +1090,7 @@ Large =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -1076,6 +1110,7 @@ Large =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1115,6 +1150,7 @@ Large =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -1134,6 +1170,7 @@ Large =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1173,6 +1210,7 @@ Large =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -1192,6 +1230,7 @@ Large =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1231,6 +1270,7 @@ Large =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1270,6 +1310,7 @@ Large =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1304,6 +1345,7 @@ Huge =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData">
@@ -1341,6 +1383,7 @@ Huge =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1380,6 +1423,7 @@ Huge =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1391,7 +1435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Snappy Industry",
 ["MOD_AUTHOR"]      = "Ethreon, Babscoole, EMPTY.d, KuroPeach",
 ["LUA_AUTHOR"]      = "Babscoole, EMPTY.d, KuroPeach",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Add more snapping points to certain building modules in game",
 ["MODIFICATIONS"]   =
   {
@@ -1498,6 +1542,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1537,6 +1582,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1697,6 +1743,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -1716,6 +1763,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1755,6 +1803,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -1774,6 +1823,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1813,6 +1863,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -1832,6 +1883,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1871,6 +1923,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -1890,6 +1943,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1929,6 +1983,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -1948,6 +2003,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -1967,6 +2023,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2006,6 +2063,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2025,6 +2083,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2064,6 +2123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2083,6 +2143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2122,6 +2183,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2141,6 +2203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2180,6 +2243,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2199,6 +2263,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2238,6 +2303,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2257,6 +2323,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2287,6 +2354,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
  ]]
@@ -2338,6 +2406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2357,6 +2426,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2396,6 +2466,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2415,6 +2486,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2454,6 +2526,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2473,6 +2546,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2512,6 +2586,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2531,6 +2606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2617,6 +2693,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2636,6 +2713,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2675,6 +2753,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2694,6 +2773,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2733,6 +2813,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2752,6 +2833,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2791,6 +2873,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2810,6 +2893,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2849,6 +2933,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2868,6 +2953,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2907,6 +2993,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2926,6 +3013,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2965,6 +3053,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -2984,6 +3073,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -3023,6 +3113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -3042,6 +3133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -3081,6 +3173,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -3100,6 +3193,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -3139,6 +3233,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -3158,6 +3253,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -3197,6 +3293,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -3216,6 +3313,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -3255,6 +3353,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -3274,6 +3373,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -3313,6 +3413,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -3332,6 +3433,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -3371,6 +3473,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -3390,6 +3493,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -3429,6 +3533,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -3448,6 +3553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -3487,6 +3593,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -3506,6 +3613,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -3545,6 +3653,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -3564,6 +3673,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -3603,6 +3713,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData">
@@ -3622,6 +3733,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>

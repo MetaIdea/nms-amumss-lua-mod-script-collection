@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "CSO Speed Lines Reduced",
 ["MOD_AUTHOR"]      = "NeptuneX3 & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Speed lines numbers/length/width/transparency reduced by ~70%",
 ["MODIFICATIONS"]   =
   {

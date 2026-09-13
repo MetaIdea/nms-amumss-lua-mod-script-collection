@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "MasterNetras Max Exocraft Slots",
 ["MOD_AUTHOR"]      = "Masternetra & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Enables and Maxs out both cargo and technology slots for exocraft.",
 ["MODIFICATIONS"]   =
   {

@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Sleepless Nights",
 ["MOD_AUTHOR"]      = "Degraaaff, KuroPeach, Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "This mods changes night lighting like dusk",
 ["MODIFICATIONS"]   =
   {

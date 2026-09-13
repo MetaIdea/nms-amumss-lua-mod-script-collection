@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Tiny Creatures-All",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Reduces size for all creature types by ~50%",
 ["MODIFICATIONS"]   =
   {

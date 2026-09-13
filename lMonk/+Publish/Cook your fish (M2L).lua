@@ -2,7 +2,7 @@
 local mod_desc = [[
   Add a bottle standing on the cooker's left shelf that opens the fish storage menu
 ]]----------------------------------------------------------------------------------
----	MXML 2 LUA ... by lMonk ... version: 1.0.06
+---	MXML 2 LUA ... by lMonk ... version: 1.0.08
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -14,7 +14,7 @@ local function ToMxml(class)
 	local function bool(b)
 		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
 	end
-	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite', '_remove'}
+	-- local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite', '_remove'}
 	local function mxml_r(tlua)
 		local out = {}
 		function out:add(t)
@@ -25,13 +25,13 @@ local function ToMxml(class)
 				out:add({'<Property '})
 				if type(cls) == 'table' and cls.meta then
 				-- add new section and recurs for nested sections
-					for _,at in ipairs(at_ord) do
-					-- Just for readability. The compiler doesn't need the ordering
-						if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
-					end
-					-- for k, v in pairs(cls.meta) do
-						-- if k:sub(-1) ~= '_' then out:add({k, '="', bool(v), '"', ' '}) end
+					-- for _,at in ipairs(at_ord) do
+					-- -- Just for readability. The compiler doesn't need the ordering
+						-- if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
 					-- end
+					for k, v in pairs(cls.meta) do
+						if k:sub(-1) ~= '_' then out:add({k, '="', bool(v), '"', ' '}) end
+					end
 					table.remove(out) -- trim last space
 					out:add({'>', mxml_r(cls), '</Property>'})
 				else
@@ -185,7 +185,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.cook your fish',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.21',
+	NMS_VERSION			= '7.01',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{

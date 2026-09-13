@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Less Moving Bubbles",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.45",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Reduce moving bubbles on bubblelush planets",
 ["MODIFICATIONS"]   =
   {

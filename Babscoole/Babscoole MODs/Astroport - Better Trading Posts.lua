@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Astroport - Better Trading Posts",
 ["MOD_AUTHOR"]      = "AstronautinOrbit and Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Planetary trading posts rework",
 ["MODIFICATIONS"]   =
   {
@@ -397,6 +397,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="33">
@@ -425,6 +426,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="34">
@@ -453,6 +455,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
       </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="35">
@@ -481,6 +484,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
       </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="36">
@@ -509,6 +513,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
       </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="37">
@@ -537,6 +542,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="38">
@@ -565,6 +571,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="39">
@@ -593,6 +600,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="40">
@@ -621,6 +629,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="41">
@@ -649,6 +658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="42">
@@ -677,6 +687,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="43">
@@ -705,6 +716,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
 ]]
@@ -885,10 +897,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LAYOUTS\LAYOUT_SCIENTIFIC.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
-      <Property name="Name" value="NUMLODS" />
-      <Property name="Value" value="1" />
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="Interior_" />
@@ -912,6 +925,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\NPCPLACEMENTOUTPOST.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="insideitems" />
@@ -939,6 +953,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="TRUE" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -958,6 +973,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -977,6 +993,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -996,6 +1013,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -1015,6 +1033,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -1034,6 +1053,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -1053,6 +1073,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -1072,6 +1093,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -1091,6 +1113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -1110,6 +1133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -1129,6 +1153,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -1148,6 +1173,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="12">
@@ -1167,6 +1193,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="13">
@@ -1186,6 +1213,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="14">
@@ -1205,6 +1233,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="15">
@@ -1224,6 +1253,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1260,10 +1290,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LAYOUTS\LAYOUT_TRADER.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="Interior_" />
@@ -1287,6 +1322,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\NPCPLACEMENTOUTPOST.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="insideitems" />
@@ -1314,6 +1350,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="TRUE" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -1333,6 +1370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -1352,6 +1390,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -1371,6 +1410,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -1390,6 +1430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -1409,6 +1450,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -1428,6 +1470,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -1447,6 +1490,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -1466,6 +1510,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -1485,6 +1530,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -1504,6 +1550,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -1523,6 +1570,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="12">
@@ -1542,6 +1590,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="13">
@@ -1561,6 +1610,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="14">
@@ -1580,6 +1630,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="15">
@@ -1599,6 +1650,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -1635,10 +1687,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LAYOUTS\LAYOUT_WARRIOR.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="Interior_" />
@@ -1662,6 +1719,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\NPCPLACEMENTOUTPOST.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="insideitems" />
@@ -1689,6 +1747,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="TRUE" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -1708,6 +1767,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -1727,6 +1787,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -1746,6 +1807,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -1765,6 +1827,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -1784,6 +1847,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -1803,6 +1867,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -1822,6 +1887,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -1841,6 +1907,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -1860,6 +1927,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -1879,6 +1947,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -1898,6 +1967,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="12">
@@ -1917,6 +1987,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="13">
@@ -1936,6 +2007,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="14">
@@ -1955,6 +2027,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="15">
@@ -1974,6 +2047,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -2010,10 +2084,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="GekFrame" />
@@ -2041,6 +2120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -2065,6 +2145,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -2084,6 +2165,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -2103,6 +2185,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -2127,6 +2210,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRIGGERVOLUME.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -2146,6 +2230,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -2165,6 +2250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -2184,6 +2270,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -2203,6 +2290,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -2222,6 +2310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -2241,6 +2330,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -2260,6 +2350,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="12">
@@ -2279,6 +2370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="13">
@@ -2298,6 +2390,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="14">
@@ -2317,6 +2410,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="15">
@@ -2336,6 +2430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="16">
@@ -2355,6 +2450,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="17">
@@ -2374,6 +2470,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="18">
@@ -2393,6 +2490,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="19">
@@ -2412,6 +2510,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="20">
@@ -2431,6 +2530,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="21">
@@ -2450,6 +2550,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="22">
@@ -2469,6 +2570,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="23">
@@ -2488,6 +2590,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="24">
@@ -2507,6 +2610,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="25">
@@ -2526,6 +2630,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="26">
@@ -2545,6 +2650,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="27">
@@ -2564,6 +2670,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="28">
@@ -2583,6 +2690,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="29">
@@ -2602,6 +2710,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="30">
@@ -2621,6 +2730,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="31">
@@ -2640,6 +2750,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="32">
@@ -2659,6 +2770,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="33">
@@ -2678,6 +2790,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="34">
@@ -2697,6 +2810,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="35">
@@ -2716,6 +2830,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="36">
@@ -2735,6 +2850,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="37">
@@ -2754,6 +2870,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="38">
@@ -2773,6 +2890,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="39">
@@ -2792,6 +2910,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="40">
@@ -2820,6 +2939,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="41">
@@ -2848,6 +2968,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="42">
@@ -2876,6 +2997,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="43">
@@ -2904,6 +3026,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="44">
@@ -2932,6 +3055,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="45">
@@ -2960,6 +3084,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="46">
@@ -2988,6 +3113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="47">
@@ -3016,6 +3142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="48">
@@ -3044,6 +3171,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="49">
@@ -3072,6 +3200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="50">
@@ -3100,6 +3229,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="51">
@@ -3128,6 +3258,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="52">
@@ -3156,6 +3287,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="53">
@@ -3184,6 +3316,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="54">
@@ -3212,6 +3345,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="55">
@@ -3240,6 +3374,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="56">
@@ -3268,6 +3403,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="57">
@@ -3296,6 +3432,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="58">
@@ -3324,6 +3461,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="59">
@@ -3352,6 +3490,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="60">
@@ -3380,6 +3519,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="61">
@@ -3408,6 +3548,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="62">
@@ -3436,6 +3577,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="63">
@@ -3464,6 +3606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="64">
@@ -3492,6 +3635,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="65">
@@ -3520,6 +3664,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="66">
@@ -3548,6 +3693,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -3582,10 +3728,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="KORVAXFRAME" />
@@ -3613,6 +3764,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -3641,6 +3793,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -3665,6 +3818,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -3684,6 +3838,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -3703,6 +3858,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -3727,6 +3883,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRIGGERVOLUME.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -3746,6 +3903,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -3765,6 +3923,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -3784,6 +3943,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -3803,6 +3963,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -3822,6 +3983,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -3841,6 +4003,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="12">
@@ -3860,6 +4023,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="13">
@@ -3879,6 +4043,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="14">
@@ -3898,6 +4063,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="15">
@@ -3917,6 +4083,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="16">
@@ -3936,6 +4103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="17">
@@ -3955,6 +4123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="18">
@@ -3974,6 +4143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="19">
@@ -3993,6 +4163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="20">
@@ -4012,6 +4183,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="21">
@@ -4031,6 +4203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="22">
@@ -4050,6 +4223,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="23">
@@ -4069,6 +4243,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="24">
@@ -4088,6 +4263,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="25">
@@ -4107,6 +4283,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="26">
@@ -4126,6 +4303,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="27">
@@ -4145,6 +4323,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="28">
@@ -4164,6 +4343,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="29">
@@ -4183,6 +4363,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="30">
@@ -4202,6 +4383,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="31">
@@ -4221,6 +4403,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="32">
@@ -4240,6 +4423,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="33">
@@ -4259,6 +4443,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="34">
@@ -4278,6 +4463,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="35">
@@ -4297,6 +4483,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="36">
@@ -4316,6 +4503,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="37">
@@ -4335,6 +4523,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="38">
@@ -4354,6 +4543,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="39">
@@ -4373,6 +4563,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="40">
@@ -4392,6 +4583,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="41">
@@ -4420,6 +4612,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="42">
@@ -4448,6 +4641,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="43">
@@ -4476,6 +4670,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="44">
@@ -4504,6 +4699,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="45">
@@ -4532,6 +4728,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="46">
@@ -4560,6 +4757,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="47">
@@ -4588,6 +4786,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="48">
@@ -4616,6 +4815,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="49">
@@ -4644,6 +4844,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="50">
@@ -4672,6 +4873,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="51">
@@ -4700,6 +4902,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="52">
@@ -4728,6 +4931,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="53">
@@ -4756,6 +4960,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="54">
@@ -4784,6 +4989,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="55">
@@ -4812,6 +5018,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="56">
@@ -4840,6 +5047,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="57">
@@ -4868,6 +5076,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="58">
@@ -4896,6 +5105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="59">
@@ -4924,6 +5134,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="60">
@@ -4952,6 +5163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="61">
@@ -4980,6 +5192,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="62">
@@ -5008,6 +5221,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="63">
@@ -5036,6 +5250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="64">
@@ -5064,6 +5279,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="64">
@@ -5092,6 +5308,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="66">
@@ -5120,6 +5337,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="67">
@@ -5148,6 +5366,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="68">
@@ -5176,6 +5395,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="69">
@@ -5204,6 +5424,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="70">
@@ -5232,6 +5453,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="71">
@@ -5260,6 +5482,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -5294,10 +5517,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="VykeenFrame" />
@@ -5325,6 +5553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -5349,6 +5578,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -5368,6 +5598,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -5387,6 +5618,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -5411,6 +5643,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRIGGERVOLUME.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -5430,6 +5663,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -5449,6 +5683,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -5468,6 +5703,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -5487,6 +5723,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -5506,6 +5743,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -5525,6 +5763,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -5544,6 +5783,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="12">
@@ -5563,6 +5803,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="13">
@@ -5582,6 +5823,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="14">
@@ -5601,6 +5843,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="15">
@@ -5620,6 +5863,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="16">
@@ -5639,6 +5883,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="17">
@@ -5658,6 +5903,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="18">
@@ -5677,6 +5923,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="19">
@@ -5696,6 +5943,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="20">
@@ -5715,6 +5963,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="21">
@@ -5734,6 +5983,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="22">
@@ -5753,6 +6003,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="23">
@@ -5772,6 +6023,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="24">
@@ -5791,6 +6043,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="25">
@@ -5810,6 +6063,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="26">
@@ -5829,6 +6083,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="27">
@@ -5848,6 +6103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="28">
@@ -5867,6 +6123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="29">
@@ -5886,6 +6143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="30">
@@ -5905,6 +6163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="31">
@@ -5924,6 +6183,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="32">
@@ -5943,6 +6203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="33">
@@ -5962,6 +6223,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="34">
@@ -5981,6 +6243,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="35">
@@ -6000,6 +6263,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="36">
@@ -6019,6 +6283,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="37">
@@ -6038,6 +6303,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="38">
@@ -6057,6 +6323,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="39">
@@ -6076,6 +6343,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="40">
@@ -6104,6 +6372,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="41">
@@ -6132,6 +6401,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="42">
@@ -6160,6 +6430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="43">
@@ -6188,6 +6459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="44">
@@ -6216,6 +6488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="45">
@@ -6244,6 +6517,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="46">
@@ -6272,6 +6546,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="47">
@@ -6300,6 +6575,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="48">
@@ -6328,6 +6604,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="49">
@@ -6356,6 +6633,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="50">
@@ -6384,6 +6662,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="51">
@@ -6412,6 +6691,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="52">
@@ -6440,6 +6720,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="53">
@@ -6468,6 +6749,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="54">
@@ -6496,6 +6778,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="55">
@@ -6524,6 +6807,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="56">
@@ -6552,6 +6836,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="57">
@@ -6580,6 +6865,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="58">
@@ -6608,6 +6894,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="59">
@@ -6636,6 +6923,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="60">
@@ -6664,6 +6952,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="61">
@@ -6692,6 +6981,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="62">
@@ -6720,6 +7010,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="63">
@@ -6748,6 +7039,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="64">
@@ -6776,6 +7068,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="65">
@@ -6804,6 +7097,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="66">
@@ -6832,6 +7126,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="67">
@@ -6860,6 +7155,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="68">
@@ -6888,6 +7184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="69">
@@ -6916,6 +7213,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="70">
@@ -6944,6 +7242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="71">
@@ -6972,6 +7271,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="72">
@@ -7000,6 +7300,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="73">
@@ -7028,6 +7329,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="74">
@@ -7056,6 +7358,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="75">
@@ -7084,6 +7387,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="76">
@@ -7112,6 +7416,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="77">
@@ -7140,6 +7445,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="78">
@@ -7168,6 +7474,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -7202,10 +7509,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="ANIMATEDDOORROUND" />
@@ -7233,6 +7545,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -7267,10 +7580,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="ANIMATEDDOORSQ" />
@@ -7298,6 +7616,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -7332,10 +7651,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="LANDINGPAD1" />
@@ -7363,6 +7687,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -7391,6 +7716,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -7419,6 +7745,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -7447,6 +7774,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -7475,6 +7803,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -7503,6 +7832,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -7531,6 +7861,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -7565,10 +7896,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="LANDINGPAD2" />
@@ -7596,6 +7932,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -7624,6 +7961,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -7658,10 +7996,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="LANDINGPAD1" />
@@ -7689,6 +8032,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -7717,6 +8061,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -7745,6 +8090,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -7773,6 +8119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -7801,6 +8148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -7829,6 +8177,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -7857,6 +8206,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -7891,10 +8241,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="LandingPad3Left" />
@@ -7922,6 +8277,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -7950,6 +8306,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -7978,6 +8335,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -8006,6 +8364,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -8034,6 +8393,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -8062,6 +8422,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -8090,6 +8451,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -8118,6 +8480,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -8146,6 +8509,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -8180,10 +8544,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="TERMINAL" />
@@ -8211,6 +8580,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -8239,6 +8609,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -8267,6 +8638,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -8295,6 +8667,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -8323,6 +8696,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -8351,6 +8725,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -8379,6 +8754,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -8407,6 +8783,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -8435,6 +8812,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -8463,6 +8841,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -8491,6 +8870,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -8519,6 +8899,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="12">
@@ -8547,6 +8928,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="13">
@@ -8575,6 +8957,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="14">
@@ -8603,6 +8986,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="15">
@@ -8631,6 +9015,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="16">
@@ -8659,6 +9044,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="17">
@@ -8718,11 +9104,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="18">
@@ -8782,11 +9165,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="19">
@@ -8846,11 +9226,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="20">
@@ -8910,11 +9287,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="21">
@@ -8939,6 +9313,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRADINGPOSTGAMETABLE0.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -8973,10 +9348,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="CorridorNE1" />
@@ -9004,6 +9384,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -9032,6 +9413,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -9060,6 +9442,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -9088,6 +9471,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -9116,6 +9500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -9144,6 +9529,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -9172,6 +9558,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -9206,10 +9593,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="Chair1" />
@@ -9237,6 +9629,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -9265,6 +9658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -9293,6 +9687,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -9327,10 +9722,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="HEALTH" />
@@ -9358,6 +9758,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -9386,6 +9787,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -9414,6 +9816,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -9448,10 +9851,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="MONITORSTATION" />
@@ -9479,6 +9887,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -9513,10 +9922,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="Light" />
@@ -9620,6 +10034,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="LightShape" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
@@ -9678,11 +10093,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-              <Property name="Name" value="MATERIAL" />
-              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-            </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -9789,6 +10201,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="Light1Shape" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
@@ -9847,11 +10260,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-              <Property name="Name" value="MATERIAL" />
-              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-            </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -9958,6 +10368,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="Light2Shape" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
@@ -10016,11 +10427,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-              <Property name="Name" value="MATERIAL" />
-              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-            </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -10127,6 +10535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="Light3Shape" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
@@ -10185,11 +10594,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-              <Property name="Name" value="MATERIAL" />
-              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-            </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -10216,6 +10622,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|Collision2" />
@@ -10275,6 +10682,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="128" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -10335,6 +10743,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="256" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -10395,6 +10804,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="1616" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -10416,6 +10826,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -10435,6 +10846,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -10459,6 +10871,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRIGGERVOLUME.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|CollisionBox" />
@@ -10498,6 +10911,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="28.000000" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -10528,6 +10942,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -10556,6 +10971,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -10584,6 +11000,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -10612,6 +11029,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="12">
@@ -10640,6 +11058,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="13">
@@ -10668,6 +11087,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="14">
@@ -10696,6 +11116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="15">
@@ -10724,6 +11145,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="16">
@@ -10752,6 +11174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="17">
@@ -10780,6 +11203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="18">
@@ -10808,6 +11232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="19">
@@ -10836,6 +11261,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="20">
@@ -10864,6 +11290,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="21">
@@ -10892,6 +11319,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="22">
@@ -10920,6 +11348,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="23">
@@ -10948,6 +11377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="24">
@@ -10976,6 +11406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="25">
@@ -11004,6 +11435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="26">
@@ -11032,6 +11464,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="27">
@@ -11060,6 +11493,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="28">
@@ -11088,6 +11522,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="29">
@@ -11116,6 +11551,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="30">
@@ -11144,6 +11580,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="31">
@@ -11172,6 +11609,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="32">
@@ -11200,6 +11638,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="33">
@@ -11228,6 +11667,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="34">
@@ -11256,6 +11696,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="35">
@@ -11284,6 +11725,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="36">
@@ -11312,6 +11754,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="37">
@@ -11340,6 +11783,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="38">
@@ -11368,6 +11812,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="39">
@@ -11396,6 +11841,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="40">
@@ -11424,6 +11870,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="41">
@@ -11452,6 +11899,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -11486,10 +11934,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="SAVEPOINT" />
@@ -11517,6 +11970,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -11551,10 +12005,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="SHIELD" />
@@ -11582,6 +12041,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -11610,6 +12070,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -11638,6 +12099,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -11672,10 +12134,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="GLASS1" />
@@ -11703,6 +12170,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -11731,6 +12199,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -11759,6 +12228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -11793,10 +12263,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="GLASSTUNNELGEK" />
@@ -11824,6 +12299,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -11858,10 +12334,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">>
       <Property name="Name" value="PANELGLASSGEK" />
@@ -11889,6 +12370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -11923,10 +12405,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="ObjectSpawner" />
@@ -11950,6 +12437,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\ENTITIES\OBJECTSPAWNER.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="1">
           <Property name="Name" value="CORRIDORCONNECTKORVAX" />
@@ -11968,6 +12456,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -12004,10 +12493,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="CORRIDOR" />
@@ -12035,6 +12529,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -12063,6 +12558,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -12097,10 +12593,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="SnapGroup_WallN" />
@@ -12119,6 +12620,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="RefBiomeRoom_Wall3" />
@@ -12146,6 +12648,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="TRUE" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -12167,6 +12670,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="RefBiomeRoom_WallS" />
@@ -12194,6 +12698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="TRUE" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -12215,6 +12720,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="RefBiomeRoom_Wall2" />
@@ -12242,6 +12748,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="TRUE" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -12263,6 +12770,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="RefBiomeRoom_WallW" />
@@ -12290,6 +12798,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="TRUE" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -12316,6 +12825,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM\ENTITIES\AUDIO_BIODOME.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -12340,6 +12850,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM\ENTITIES\INTERACTION.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM" />
@@ -12371,6 +12882,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="0.654391" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -12401,6 +12913,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -12429,6 +12942,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -12457,6 +12971,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -12485,6 +13000,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -12513,6 +13029,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -12541,6 +13058,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="12">
@@ -12569,6 +13087,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="13">
@@ -12597,6 +13116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="14">
@@ -12625,6 +13145,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="15">
@@ -12653,6 +13174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="16">
@@ -12681,6 +13203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="17">
@@ -12709,6 +13232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="18">
@@ -12737,6 +13261,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="19">
@@ -12765,6 +13290,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="20">
@@ -12793,6 +13319,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="21">
@@ -12821,6 +13348,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="22">
@@ -12849,6 +13377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="23">
@@ -12877,6 +13406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="24">
@@ -12905,6 +13435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -12939,10 +13470,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="TERMINAL" />
@@ -12970,6 +13506,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -12998,6 +13535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -13026,6 +13564,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -13054,6 +13593,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -13082,6 +13622,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -13110,6 +13651,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -13138,6 +13680,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -13166,6 +13709,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -13194,6 +13738,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -13222,6 +13767,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -13250,6 +13796,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -13278,6 +13825,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="12">
@@ -13306,6 +13854,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="13">
@@ -13334,6 +13883,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="14">
@@ -13362,6 +13912,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="15">
@@ -13390,6 +13941,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="16">
@@ -13418,6 +13970,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="17">
@@ -13446,6 +13999,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="18">
@@ -13474,6 +14028,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="19">
@@ -13502,6 +14057,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="20">
@@ -13530,6 +14086,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="21">
@@ -13558,6 +14115,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="22">
@@ -13586,6 +14144,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="23">
@@ -13614,6 +14173,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="24">
@@ -13642,6 +14202,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="25">
@@ -13670,6 +14231,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="26">
@@ -13698,6 +14260,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="27">
@@ -13726,6 +14289,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="28">
@@ -13754,6 +14318,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="31">
@@ -13782,6 +14347,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="32">
@@ -13810,6 +14376,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="33">
@@ -13838,6 +14405,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="34">
@@ -13897,11 +14465,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="35">
@@ -13961,11 +14526,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="36">
@@ -14025,11 +14587,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="37">
@@ -14089,11 +14648,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="38">
@@ -14118,6 +14674,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRADINGPOSTGAMETABLE0.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -14152,10 +14709,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="Chair1" />
@@ -14183,6 +14745,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -14217,10 +14780,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="HEALTH" />
@@ -14248,6 +14816,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -14276,6 +14845,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -14304,6 +14874,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -14338,10 +14909,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="MONITORSTATION" />
@@ -14369,6 +14945,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -14403,10 +14980,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="SAVEPOINT" />
@@ -14434,6 +15016,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -14468,10 +15051,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="SHIELD" />
@@ -14499,6 +15087,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -14527,6 +15116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -14555,6 +15145,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -14589,10 +15180,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="PANELGLASSKORVAX" />
@@ -14620,6 +15216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -14654,10 +15251,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="PANELGLASSUPPERKORVAX" />
@@ -14685,6 +15287,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -14719,10 +15322,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="SUPPORT" />
@@ -14750,6 +15358,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -14784,10 +15393,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="SUPPORTCENTER" />
@@ -14815,6 +15429,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -14849,10 +15464,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="SUPPORT" />
@@ -14880,6 +15500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -14914,10 +15535,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="CORRIDOR" />
@@ -14945,6 +15571,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -14979,10 +15606,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="PANELGLASS" />
@@ -15010,6 +15642,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -15044,10 +15677,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="SUPPORT" />
@@ -15075,6 +15713,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -15109,10 +15748,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UNDERWATERBASE\MAINROOMCUBE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="SnapGroup_ConnectN" />
@@ -15140,6 +15784,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -15168,6 +15813,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -15196,6 +15842,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -15224,6 +15871,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -15252,6 +15900,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -15280,6 +15929,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -15308,6 +15958,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -15336,6 +15987,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -15364,6 +16016,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -15392,6 +16045,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -15420,6 +16074,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -15448,6 +16103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="12">
@@ -15476,6 +16132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="13">
@@ -15504,6 +16161,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="14">
@@ -15532,6 +16190,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="15">
@@ -15560,6 +16219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="16">
@@ -15588,6 +16248,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -15622,10 +16283,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="TERMINAL" />
@@ -15653,6 +16319,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -15681,6 +16348,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -15709,6 +16377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -15737,6 +16406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -15765,6 +16435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -15793,6 +16464,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -15821,6 +16493,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -15849,6 +16522,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -15877,6 +16551,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -15905,6 +16580,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -15933,6 +16609,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -15961,6 +16638,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="12">
@@ -15989,6 +16667,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="13">
@@ -16017,6 +16696,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="14">
@@ -16045,6 +16725,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="15">
@@ -16073,6 +16754,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="16">
@@ -16101,6 +16783,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="17">
@@ -16129,6 +16812,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="18">
@@ -16157,6 +16841,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="19">
@@ -16185,6 +16870,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="20">
@@ -16213,6 +16899,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="21">
@@ -16241,6 +16928,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="22">
@@ -16269,6 +16957,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="23">
@@ -16297,6 +16986,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="24">
@@ -16356,11 +17046,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="25">
@@ -16420,11 +17107,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="26">
@@ -16484,11 +17168,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="27">
@@ -16548,11 +17229,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="28">
@@ -16581,6 +17259,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="29">
@@ -16609,6 +17288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="30">
@@ -16637,6 +17317,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="31">
@@ -16661,6 +17342,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRADINGPOSTGAMETABLE0.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -16695,10 +17377,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="LandingPadSL" />
@@ -16726,6 +17413,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -16754,6 +17442,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -16782,6 +17471,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -16810,6 +17500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -16838,6 +17529,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -16866,6 +17558,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -16894,6 +17587,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -16922,6 +17616,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -16950,6 +17645,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -16984,10 +17680,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="Chair1" />
@@ -17015,6 +17716,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -17043,6 +17745,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -17071,6 +17774,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -17105,10 +17809,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="DOORCORRIDORL1" />
@@ -17136,6 +17845,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -17164,6 +17874,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -17192,6 +17903,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -17220,6 +17932,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -17248,6 +17961,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -17276,6 +17990,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -17304,6 +18019,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -17332,6 +18048,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -17366,10 +18083,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="HEALTH" />
@@ -17397,6 +18119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -17425,6 +18148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -17453,6 +18177,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -17487,10 +18212,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="MONITORSTATION" />
@@ -17518,6 +18248,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -17552,10 +18283,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="Light" />
@@ -17659,6 +18395,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="LightShape" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
@@ -17717,11 +18454,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-              <Property name="Name" value="MATERIAL" />
-              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-            </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -17828,6 +18562,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="Light1Shape" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
@@ -17886,11 +18621,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-              <Property name="Name" value="MATERIAL" />
-              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-            </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -17997,6 +18729,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="Light2Shape" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
@@ -18055,11 +18788,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-              <Property name="Name" value="MATERIAL" />
-              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-            </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -18166,6 +18896,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="Light3Shape" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="pointLight1" />
@@ -18224,11 +18955,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-              <Property name="Name" value="MATERIAL" />
-              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-            </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -18255,6 +18983,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|Collision2" />
@@ -18314,6 +19043,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="128" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -18374,6 +19104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="256" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -18434,6 +19165,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="1616" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -18455,6 +19187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -18474,6 +19207,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -18498,6 +19232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON\ENTITIES\TRIGGERVOLUME.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON|CollisionBox" />
@@ -18537,6 +19272,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="28.000000" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -18558,6 +19294,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -18577,6 +19314,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -18596,6 +19334,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -18615,6 +19354,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="12">
@@ -18643,6 +19383,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="13">
@@ -18671,6 +19412,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="14">
@@ -18699,6 +19441,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="15">
@@ -18727,6 +19470,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="16">
@@ -18755,6 +19499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="17">
@@ -18783,6 +19528,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="18">
@@ -18811,6 +19557,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="19">
@@ -18839,6 +19586,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="20">
@@ -18867,6 +19615,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="21">
@@ -18895,6 +19644,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="22">
@@ -18923,6 +19673,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="23">
@@ -18951,6 +19702,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="24">
@@ -18979,6 +19731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="25">
@@ -19007,6 +19760,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="26">
@@ -19035,6 +19789,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="27">
@@ -19063,6 +19818,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="28">
@@ -19091,6 +19847,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="29">
@@ -19119,6 +19876,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="30">
@@ -19147,6 +19905,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="31">
@@ -19175,6 +19934,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="32">
@@ -19203,6 +19963,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="33">
@@ -19231,6 +19992,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="34">
@@ -19259,6 +20021,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="35">
@@ -19287,6 +20050,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="36">
@@ -19315,6 +20079,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="37">
@@ -19343,6 +20108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="38">
@@ -19371,6 +20137,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="39">
@@ -19399,6 +20166,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="40">
@@ -19427,6 +20195,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="41">
@@ -19455,6 +20224,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="42">
@@ -19483,6 +20253,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="43">
@@ -19511,6 +20282,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="44">
@@ -19539,6 +20311,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="45">
@@ -19567,6 +20340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="46">
@@ -19595,6 +20369,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="47">
@@ -19623,6 +20398,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -19657,10 +20433,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="SAVEPOINT" />
@@ -19688,6 +20469,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -19722,10 +20504,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="SHIELD" />
@@ -19753,6 +20540,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -19781,6 +20569,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -19809,6 +20598,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>
@@ -19843,10 +20633,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="GLASS1" />
@@ -19874,6 +20669,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -19902,6 +20698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -19930,6 +20727,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>

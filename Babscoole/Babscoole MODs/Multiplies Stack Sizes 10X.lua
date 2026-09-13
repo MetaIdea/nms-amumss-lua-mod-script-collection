@@ -10,7 +10,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]    = "Multiplies Stack Sizes " ..Multiplier.. "X",
 ["MOD_AUTHOR"]      = "KuroPeach & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Multiplies Stack Sizes",
 ["MODIFICATIONS"]   =
   {

@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Moar Realistic Weather",
 ["MOD_AUTHOR"]      = "Florian B. & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Changes the temperature ranges with some biomes.",
 ["MODIFICATIONS"]   =
   {

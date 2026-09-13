@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Abandoned Starship Fabricator"
-GameVersion = "6.20"
+GameVersion = "7.01"
 Description = "Add the Starship Fabricator to the Abandoned Space Stations in the Abandoned Mode."
 
 NMS_MOD_DEFINITION_CONTAINER = 

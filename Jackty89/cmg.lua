@@ -625,7 +625,7 @@ local Custom_Upgrade_Technology =
         Focus_Locator = '',
         Stat_Bonuses =
         {
-            {Stats_Type = 'Suit_Protection_ToxDrain', Bonus = 1.5, Level = 2},
+            {Stats_Type = 'Suit_Protection_RadDrain', Bonus = 1.5, Level = 2},
         },
         Requirements =
         {

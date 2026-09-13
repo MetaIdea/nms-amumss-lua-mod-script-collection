@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] = "This mod basically allows you to fly",
 ["MOD_AUTHOR"]      = "JimminyBillyBob888 AKA TheNexGDD and NooBzPoWaH",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.7+",
+["NMS_VERSION"]     = "6.+",
 ["MODIFICATIONS"]   =
   {
     {

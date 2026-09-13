@@ -1,5 +1,5 @@
 ModName = "PTSd Product + Crafting Rebalance"
-GameVersion = "6_24"
+GameVersion = "7_01"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --Changes how effective certain substances are at recharging certain techs
@@ -107,6 +107,19 @@ ProductSaleChanges =
 	{"UI_QUEEN_PROD_NAME",	1.5},					--122,000		Vile Cortex
 	{"UI_DEEPSEA_PROD_NAME",	1.2},				--266,000		Sea Glass
 	{"UI_STONE_EYE_PROD_NAME",	1.571},				--102,000		Vigilant Stone
+	
+	{"UI_HULK_COMMON_NAME",		1.5},				--32,000		Industrial Salvage
+	{"UI_HULK_REACTOR_NAME",	1.5},				--21,000		Fuel Rod
+	{"UI_HULK_AUX_NAME",		1.5},				--56,000		Auxiliary Core
+	{"UI_HULK_BLACKBOX_NAME",	1.0},				--185,000		Data Packet
+	{"UI_HULK_CANISTER_NAME",	1.5},				--49,000		Compressed Plasma
+	{"UI_HULK_CORE_NAME",		1.5},				--220,000		Reactor Core
+	{"UI_HULK_DATACORE_NAME",	1.0},				--52,000		CPU Harness
+	{"UI_HULK_LOCKBOX_NAME",	1.5},				--93,000		Stasis Locker
+	{"UI_HULK_SMUGGLE_NAME",	4.5},				--32,000		Suspicious Cargo
+	{"UI_SLIME_BLOB_NAME",		1.0},				--190,000		Viral Heart
+	{"UI_SLIME_SAMPLE_NAME",	1.0},				--201,000		Pathogen Sac
+	{"UI_ASTEROID_CRYSTAL_NAME",6.0},				--13,000		Condensed Stellar Ice
 	
 	{"UI_ILLEGAL_PROD1_NAME",	3.0},				--2,000			Illegal Trade item
 	{"UI_ILLEGAL_PROD2_NAME",	3.0},				--9,000			Illegal Trade item
@@ -298,6 +311,8 @@ FossilCategorySaleChanges =
 BasicCorvettePartSaleChanges =		1				--1			Multiplier to apply to the base value (used for both buying & selling this item)
 BasicCorvettePartBaseMarkup =		0.000000		--0			(0.352942)	Added as a % of the base value to the purchase price when buying them
 
+CorvetteTractorSalePrice =			1250000			--350000	Base value for Corvette Tractor Beam module (used for both buying & selling this item)
+
 --These various "geode" style items are given base values equal to 2x the expected value of opening & selling their contents on average
 	--Certain geodes given further multipliers due to either the difficulty of obtaining them or having particularly low-value contents
 GeodeSaleChanges =
@@ -324,6 +339,28 @@ ProceduralProductSaleChanges =
 	{"ITEMGEN_SALVAGE_UNCOMMON",	0.4,		4},			--400,000 ~ 850,000,		Dropweight 2		(29%)
 	{"ITEMGEN_SALVAGE_RARE",		1.55,		1},			--1,100,000 ~ 2,400,000,	Dropweight 1		(14%)
 }
+
+--Applies a multipler to the amount of nanites you can sell certain Deep Space items collected in a Corvette at a Deep Space Outpost
+DeepSpaceNaniteChanges =
+{
+	{"HULK_COMMON",			1.2},				--30		Industrial Salvage
+	{"HULK_REACTOR",		1.0},				--52		Fuel Rod
+	{"HULK_AUX",			1.0},				--140		Auxiliary Core
+	{"HULK_BLACKBOX",		1.5},				--462		Data Packet
+	{"HULK_CANISTER",		1.0},				--122		Compressed Plasma
+	{"HULK_CORE",			1.0},				--550		Reactor Core
+	{"HULK_DATACORE",		1.5},				--130		CPU Harness
+	{"HULK_LOCKBOX",		1.0},				--232		Stasis Locker
+	{"HULK_SMUGGLE",		1.5},				--350		Suspicious Cargo
+	{"SLIME_BLOB",			1.5},				--475		Viral Heart
+	{"SLIME_STAR",			1.5},				--480		Pathogen Sac
+	{"ASTEROID_CRYST",		1.0},				--60		Condensed Stellar Ice
+}
+
+--Changes which description certain of the above Deep Space "cargo-able" items have, so that the notes on which sell better for nanites above match up properly
+FuelRodDescCat =		"UI_HULK_UNCOMMON_DESC"			--"UI_HULK_RARE_DESC"
+CPUHarnessDescCat =		"UI_HULK_RARE_DESC"				--"UI_HULK_UNCOMMON_DESC"
+StasisLockerDescCat =	"UI_HULK_UNCOMMON_DESC"			--"UI_HULK_RARE_DESC"
 
 --Boosts sale value for Derelict Freighter reward items in case you are unable to trade them to a Guild Representative for some reason, such as the vanilla bug causing the quest for turning them in to disappear
 DerelictFreighterRedeemables =
@@ -704,6 +741,9 @@ AddItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MBIN
 	},
 	{	--Alloy Skylight Roof
 		"F_ROOF_M_WIN",			"FARMPROD3",		1,		"Product",
+	},
+	{	--Salvaged Skylight Roof
+		"B_ROOF_M_WIN",			"FARMPROD3",		1,		"Product",
 	},
 	{	--Refiner Unit (Corvette) 
 		"B_WALL_TECH0",			"GREEN2",			100,	"Substance",
@@ -1597,6 +1637,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"CookingValue", FlourCookingValue}
 							}
 						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "HULK_REACTOR"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Description", FuelRodDescCat}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "HULK_DATACORE"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Description", CPUHarnessDescCat}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "HULK_LOCKBOX"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Description", StasisLockerDescCat}
+							}
+						},
 					}
 				},
 				{
@@ -2000,6 +2061,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ID", CargoRack2ndProduct}
 							}
 						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"BaseValue", CorvetteTractorSalePrice}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"BaseValue", math.floor(CorvetteTractorSalePrice/2)}
+							}
+						},
 					}
 				}
 			}
@@ -2119,6 +2194,21 @@ for i = 1, #ProductSaleChanges do
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"BaseValue", ValueMult}
+				}
+			}
+end
+for i = 1, #DeepSpaceNaniteChanges do
+	local ID = DeepSpaceNaniteChanges[i][1]
+	local RecipeMult = DeepSpaceNaniteChanges[i][2]
+
+			ChangesToProduct[#ChangesToProduct+1] =
+			{
+				["MATH_OPERATION"] 		= "*",
+				["SPECIAL_KEY_WORDS"] = {"ID", ID},
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"RecipeCost", RecipeMult}
 				}
 			}
 end

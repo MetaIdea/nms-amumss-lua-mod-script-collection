@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Photomode Bigger Glyphs",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Doubles the size of the photomode glyphs",
 ["MODIFICATIONS"]   =
   {

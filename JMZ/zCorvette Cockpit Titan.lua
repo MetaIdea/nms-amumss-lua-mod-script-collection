@@ -2,7 +2,7 @@ Author			= "JMZawodny"
 ModName			= "zCorvette"
 ModNameSub		= "Cockpit Titan"
 BaseDescription = "Adds real headlights"
-GameVersion		= "v6.45"
+GameVersion		= "v7.0"
 ModVersion		= ""
 
 

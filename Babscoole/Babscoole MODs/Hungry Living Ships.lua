@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Hungry Living Ships",
 ["MOD_AUTHOR"]      = "hilightnotes and Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Feed living ships food",
 ["MODIFICATIONS"]   =
   {

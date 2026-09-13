@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_MOD_NoPirates.pak", 
+["MOD_FILENAME"] 			= "_MOD_NoPirates", 
 ["MOD_AUTHOR"]				= "Mjjstral AKA MetaIdea & NooBzPoWaH",
 ["LUA_AUTHOR"]				= "NooBzPoWaH",
-["NMS_VERSION"]				= "5.+",
+["NMS_VERSION"]				= "6.+",
 ["MOD_DESCRIPTION"]			= "This mods removes pirate spawns in space.",
 ["MODIFICATIONS"] 			= 
 	{
@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "",

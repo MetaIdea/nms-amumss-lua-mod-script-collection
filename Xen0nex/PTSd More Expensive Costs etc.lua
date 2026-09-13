@@ -1,5 +1,5 @@
 ModName = "PTSd More Expensive Costs etc"
-GameVersion = "6_30"
+GameVersion = "7_01"
 Description = "Changes costs for Starship or Multi-Tool inventory slots, Broadcast Receivers, Pilot Slots, etc."
 
 --Allows salvaging Reactor Cores from Shuttle & Exotic starships (Also requires changes in "PTSd Rewards Remixer.lua")
@@ -44,6 +44,9 @@ CorvetteTeleportAmount =	1					--0
 
 --Adds a cost to claim a Pirate Dreadnought (cost is paid each time you begin the freighter exchange menu, not when you complete it like with other freighters)
 DreadnoughtFlatCost =	350000000			--0
+
+--Changes units cost for purchasing a Space Station (may require a matching change to RequiredSpaceStationCredits in "PTSd Black Holes + Scrapping etc.lua")
+SpaceStationBuyCost =	640320160			--1000000000
 
 --WIP
 --Adds a cost to opening the sentinel weapon cabinets at Abandoned Camps
@@ -539,6 +542,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"MinimumValue", HighUnitCost},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","C_BUYSTATION"},
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Cost", SpaceStationBuyCost},
 				}
 			},
 			{

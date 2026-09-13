@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Exotic Wings Return Inverted Y Wings",
 ["MOD_AUTHOR"]      = "Babscoole, Seekker, Mjjstral",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Exotic ship wing configuration, moves when you launch or land.",
 ["MODIFICATIONS"]   =
   {

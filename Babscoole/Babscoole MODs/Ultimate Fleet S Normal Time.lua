@@ -2,9 +2,9 @@ TimeExpEZ = "900" --time for easy expedition 900
 TimeExpEV = "5400" --time for expedition event 5400
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Ultimate_Fleet_S_Normal_Time",
+["MOD_FILENAME"]    = "Ultimate Fleet S Normal Time",
 ["MOD_AUTHOR"]      = "PyronoxOmega and Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Mostly S-class with high Stats based on RNG",
 ["MODIFICATIONS"]   =
   {

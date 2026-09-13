@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Unlimited Base Building",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Removes some build restrictions",
 ["MODIFICATIONS"]   =
   {
@@ -17,22 +17,26 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REPLACE_TYPE"] = "ALL",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"BuildableOnPlanetBase",        "true"},
-                {"BuildableOnSpaceBase",         "true"},
-                {"BuildableOnFreighter",         "true"},
-                {"BuildableOnPlanet",            "true"},
-                {"BuildableOnPlanetWithProduct", "true"},
-                {"BuildableUnderwater",          "true"},
-                {"BuildableAboveWater",          "true"},
-                {"PlanetLimit",                  "0"},
-                {"RegionLimit",                  "0"},
-                {"PlanetBaseLimit",              "0"},
-                {"FreighterBaseLimit",           "0"},
-                {"CheckPlaceholderCollision",    "false"},
-                {"CanRotate3D",                  "true"},
-                {"CanScale",                     "true"},
-                --{"BaseBuildingDecorationType",   "Normal"},
-                --{"IsDecoration",                 "false"},
+                {"IsPlaceableFloatingInSpace",         "true"},
+                {"BuildableOnSpaceStationBase",        "true"},
+                {"BuildableOnSpaceStationBackSection", "true"},
+                {"BuildableOnSpaceStationExterior",    "true"},
+                {"BuildableOnPlanetBase",              "true"},
+                {"BuildableOnSpaceBase",               "true"},
+                {"BuildableOnFreighter",               "true"},
+                {"BuildableOnPlanet",                  "true"},
+                {"BuildableOnPlanetWithProduct",       "true"},
+                {"BuildableUnderwater",                "true"},
+                {"BuildableAboveWater",                "true"},
+                {"PlanetLimit",                        "0"},
+                {"RegionLimit",                        "0"},
+                {"PlanetBaseLimit",                    "0"},
+                {"FreighterBaseLimit",                 "0"},
+                {"CheckPlaceholderCollision",          "false"},
+                {"CanRotate3D",                        "true"},
+                {"CanScale",                           "true"},
+                --{"BaseBuildingDecorationType",         "Normal"},
+                --{"IsDecoration",                       "false"},
               }
             }
           }

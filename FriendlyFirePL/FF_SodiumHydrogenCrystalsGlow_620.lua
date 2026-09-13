@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "SodiumHydrogenCrystalsGlow"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL, Babscoole, Lenni"
-METADATA_NMS_VERSION    = "620"
+METADATA_NMS_VERSION    = "700"
 METADATA_MOD_DESC       = "This mod adds glow effect to large Sodium and Di-hydrogen crystals found on planets, similar to the glow found on large Condensed Carbon crystals."
 
 

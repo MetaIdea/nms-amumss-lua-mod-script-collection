@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 	= "BetterFrigateRewardsNoRP",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "6.21",
+["NMS_VERSION"]		= "7.0",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to units and nanites within frigate missions",
 ["MODIFICATIONS"] 	=
 	{

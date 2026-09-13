@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Tech Plant Collision Fix",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Fixes collision in Deuterium Rich Plants",
 ["MODIFICATIONS"]   =
   {

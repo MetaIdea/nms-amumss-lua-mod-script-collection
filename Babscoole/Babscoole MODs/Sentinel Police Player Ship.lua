@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Sentinel Police Player Ship",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Cockpitable sentinel police ship you can get via quick action emote menu action",
 ["MODIFICATIONS"]   =
   {
@@ -370,10 +370,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.GEOMETRY.MBIN" />
     </Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData">
+      <Property name="Name" value="JOINTHASH" />
+      <Property name="Value" value="5512004423178871566" />
+    </Property>
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="EngineFlare_Distant" />
@@ -392,6 +397,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData">
@@ -411,6 +417,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="_Ship_Police" />
@@ -438,6 +445,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="TRUE" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children">
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="Data" />
@@ -461,6 +469,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_A/COCKPITA/ENTITIES/COCKPIT_A.ENTITY.MBIN" />
                 </Property>
               </Property>
+              <Property name="InstanceTransforms" />
               <Property name="Children">
                 <Property name="Children" value="TkSceneNodeData">
                   <Property name="Name" value="INTERACTOrigin" />
@@ -479,6 +488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
+                  <Property name="InstanceTransforms" />
                   <Property name="Children" />
                 </Property>
                 <Property name="Children" value="TkSceneNodeData">
@@ -498,6 +508,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
+                  <Property name="InstanceTransforms" />
                   <Property name="Children" />
                 </Property>
                 <Property name="Children" value="TkSceneNodeData">
@@ -517,6 +528,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
+                  <Property name="InstanceTransforms" />
                   <Property name="Children" />
                 </Property>
                 <Property name="Children" value="TkSceneNodeData">
@@ -536,6 +548,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
+                  <Property name="InstanceTransforms" />
                   <Property name="Children" />
                 </Property>
                 <Property name="Children" value="TkSceneNodeData">
@@ -555,6 +568,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
+                  <Property name="InstanceTransforms" />
                   <Property name="Children" />
                 </Property>
                 <Property name="Children" value="TkSceneNodeData">
@@ -595,6 +609,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Value" value="1.000000" />
                     </Property>
                   </Property>
+                  <Property name="InstanceTransforms" />
                   <Property name="Children" />
                 </Property>
                 <Property name="Children" value="TkSceneNodeData">
@@ -614,6 +629,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                   <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes" />
+                  <Property name="InstanceTransforms" />
                   <Property name="Children">
                     <Property name="Children" value="TkSceneNodeData">
                       <Property name="Name" value="CockpitPos" />
@@ -632,6 +648,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       </Property>
                       <Property name="PlatformExclusion" value="0" />
                       <Property name="Attributes" />
+                      <Property name="InstanceTransforms" />
                       <Property name="Children" />
                     </Property>
                     <Property name="Children" value="TkSceneNodeData">
@@ -656,6 +673,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                           <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/ENTITIES/FIGHTERBASE.ENTITY.MBIN" />
                         </Property>
                       </Property>
+                      <Property name="InstanceTransforms" />
                       <Property name="Children" />
                     </Property>
                   </Property>

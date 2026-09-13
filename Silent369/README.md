@@ -1,4 +1,4 @@
-# No Man's Sky Mod Collection - Updated for 6.45.1
+# No Man's Sky Mod Collection - Updated for 7.01
 
 ### These are the current published mods created for No Man's Sky.
 
@@ -35,4 +35,3 @@
 [Unified Warps](https://www.nexusmods.com/nomanssky/mods/2252)
 
 [Useful Waypoints](https://www.nexusmods.com/nomanssky/mods/3891)
-

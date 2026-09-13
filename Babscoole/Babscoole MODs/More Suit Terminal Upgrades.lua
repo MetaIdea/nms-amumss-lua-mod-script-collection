@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "More Suit Terminal Upgrades",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Lets you buy more than one suit upgrade at space stations, space anomaly, and outlaw space stations",
 ["MODIFICATIONS"]   =
   {
@@ -27,6 +27,19 @@ NMS_MOD_DEFINITION_CONTAINER =
             {-- removes backpack hologram close animation after buying an upgrade
               ["SPECIAL_KEY_WORDS"] = {"StateID", "INTERACTOPTION"},
               ["REMOVE"] = "SECTION",
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["PRECEDING_KEY_WORDS"] = {"LoopInteractionPuzzles"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"SuitTerminal", "true"},
+              }
             },
           }
         },

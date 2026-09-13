@@ -85,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Natural Blue Skies",
 ["MOD_AUTHOR"]      = "courtykat and Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "ALMOST all planets have subtle blue skies and clean color filters",
 ["MODIFICATIONS"]   =
   {
@@ -117,7 +117,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"LocText",               "PHOTO_FILTER_3"},
-                {"Filename",              "TEXTURES/LUT/FILTERS/DEFAULT.DDS"},
+                {"FilenameSdr",           "TEXTURES/LUT/FILTERS/DEFAULT.DDS"},
+                {"FilenameHdr",           "TEXTURES/LUT/FILTERS/DEFAULT.DDS"},
                 {"SelectableInPhotoMode", "true"},
               }
             },
@@ -139,7 +140,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               },
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Filename", "TEXTURES/LUT/FILTERS/DEFAULT.DDS"}
+                {"FilenameSdr", "TEXTURES/LUT/FILTERS/DEFAULT.DDS"},
+                {"FilenameHdr", "TEXTURES/LUT/FILTERS/DEFAULT.DDS"},
               }
             },
           }

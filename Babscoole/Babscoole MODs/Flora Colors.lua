@@ -290,7 +290,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Flora Colors",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "This mod edits the Flora colors. Currently, this means Grass, Tree leaves, and Shrubs of the Lush planet type",
 ["MODIFICATIONS"]   =
   {
@@ -316,7 +316,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
           }
-        }
+        },
       }
     }
   }

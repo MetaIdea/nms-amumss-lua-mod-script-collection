@@ -115,7 +115,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Enjoyable Quicksilver",
 ["MOD_AUTHOR"]      = "ArtisticMisfit & Babscoole",
 ["LUA_AUTHOR"]      = "Leonard, TheLich, Babscoole, ArtisticMisfit",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Allows the player to grind Quicksilver through a wide variety of different ways",
 ["MODIFICATIONS"]   =
   {

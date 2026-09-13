@@ -1,15 +1,18 @@
-ModeName = "UninstallCoreWeapons"
-Author = "Jackty89"
+local ModeName = "UninstallCoreWeapons"
+local Author = "Jackty89"
 
-GCTechnologyTablePath = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
-ExtraChanges = false
-InputExtraChanges = {ExtraChanges,
+local GCTechnologyTablePath = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
+local ExtraChanges = false
+local InputExtraChanges = {ExtraChanges,
 [[
     Do you also wish to make the change to  the hyperdrive and pulse drive (also for sentinel ship)?
     Default = N | Current = >> ]] .. (ExtraChanges and "Y" or "N") .. [[ <<
 ]]}
 
-ExtraChanges = GUIF(InputExtraChanges, 10)
+local ExtraChanges = GUIF(InputExtraChanges, 10)
+
+local BaseTechIdList = {"SHIPGUN1", "SHIPGUN_ROBO", "LASER", "SENT_LASER", "ATLAS_LASER", "SHIPGUN_ALIEN"}
+local ExtraTechIdList = {"SHIPJUMP1", "LAUNCHER", "HYPERDRIVE", "HYPERDRIVE_ROBO", "SHIPJUMP_ROBO", "LAUNCHER_ROBO"}
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -25,43 +28,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     MBIN_FILE_SOURCE = GCTechnologyTablePath,
                     MXML_CHANGE_TABLE =
                     {
-                        {
-                            --this is in base game now leaving it in case HG changes it
-                            SPECIAL_KEY_WORDS = {"ID","SHIPGUN1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Core", "False"}
-                            }
-                        },
-                        {
-                            --this is in base game now leaving it in case HG changes it
-                            SPECIAL_KEY_WORDS = {"ID","SHIPGUN_ROBO"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Core", "False"}
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"ID","LASER"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Core", "False"}
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"ID","SENT_LASER"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Core", "False"}
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"ID","ATLAS_LASER"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Core", "False"}
-                            }
-                        }
                     }
                 }
             }
@@ -70,53 +36,39 @@ NMS_MOD_DEFINITION_CONTAINER =
 }
 
 local ChangesToTechnologyTable = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE[1].MXML_CHANGE_TABLE
-if ExtraChanges then
-    ChangesToTechnologyTable[#ChangesToTechnologyTable +1] =
-    {
-        SPECIAL_KEY_WORDS = {"ID","SHIPJUMP1"},
-        VALUE_CHANGE_TABLE =
+
+function ChangeExtraTech()
+    for i = 1, #ExtraTechIdList do
+        local techId = ExtraTechIdList[i]
+        ChangesToTechnologyTable[#ChangesToTechnologyTable +1] =
         {
-            {"Core", "False"}
+            SPECIAL_KEY_WORDS = {"ID", techId},
+            VALUE_CHANGE_TABLE =
+            {
+                -- {"PrimaryItem", "False"},
+                {"Core", "False"}
+            }
         }
-    }
-    ChangesToTechnologyTable[#ChangesToTechnologyTable +1] =
-    {
-        SPECIAL_KEY_WORDS = {"ID","LAUNCHER"},
-        VALUE_CHANGE_TABLE =
-        {
-            {"Core", "False"}
-        }
-    }
-    ChangesToTechnologyTable[#ChangesToTechnologyTable +1] =
-    {
-        SPECIAL_KEY_WORDS = {"ID","HYPERDRIVE"},
-        VALUE_CHANGE_TABLE =
-        {
-            {"Core", "False"}
-        }
-    }
-    ChangesToTechnologyTable[#ChangesToTechnologyTable +1] =
-    {
-        SPECIAL_KEY_WORDS = {"ID","HYPERDRIVE_ROBO"},
-        VALUE_CHANGE_TABLE =
-        {
-            {"Core", "False"}
-        }
-    }
-    ChangesToTechnologyTable[#ChangesToTechnologyTable +1] =
-    {
-        SPECIAL_KEY_WORDS = {"ID","SHIPJUMP_ROBO"},
-        VALUE_CHANGE_TABLE =
-        {
-            {"Core", "False"}
-        }
-    }
-    ChangesToTechnologyTable[#ChangesToTechnologyTable +1] =
-    {
-        SPECIAL_KEY_WORDS = {"ID","LAUNCHER_ROBO"},
-        VALUE_CHANGE_TABLE =
-        {
-            {"Core", "False"}
-        }
-    }
+    end
 end
+
+function SetTechnologyCoreAndPrimaryToFalse()
+    for i = 1, #BaseTechIdList do        
+        local techId = BaseTechIdList[i]
+        ChangesToTechnologyTable[#ChangesToTechnologyTable +1] =
+        {
+            SPECIAL_KEY_WORDS = {"ID", techId},
+            VALUE_CHANGE_TABLE =
+            {
+                -- {"PrimaryItem", "False"},
+                {"Core", "False"}
+            }
+        }
+    end
+
+    if ExtraChanges then
+        ChangeExtraTech()
+    end
+end
+
+SetTechnologyCoreAndPrimaryToFalse()

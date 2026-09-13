@@ -13,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Natural Skies Addon For Sunrise Sunset",
 ["MOD_AUTHOR"]      = "degraaaff & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "More natural sunrise\sunsets",
 ["MODIFICATIONS"]   =
   {

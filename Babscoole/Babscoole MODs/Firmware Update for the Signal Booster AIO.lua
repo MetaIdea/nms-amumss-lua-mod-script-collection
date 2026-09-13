@@ -163,7 +163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster"..FILENAME,
 ["MOD_AUTHOR"]      = "Lowkie & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
 ["MODIFICATIONS"]   =
   {

@@ -41,6 +41,7 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
         <Property name="BaseBuildingDecorationType" value="Normal" />
       </Property>
       <Property name="IsPlaceable" value="true" />
+      <Property name="IsPlaceableFloatingInSpace" value="true" />
       <Property name="IsDecoration" value="false" />
       <Property name="Biome" value="GcBiomeType">
         <Property name="Biome" value="All" />
@@ -54,6 +55,9 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="BuildableOnPlanetWithProduct" value="true" />
       <Property name="BuildableUnderwater" value="true" />
       <Property name="BuildableAboveWater" value="true" />
+      <Property name="BuildableOnSpaceStationBase" value="true" />
+      <Property name="BuildableOnSpaceStationBackSection" value="true" />
+      <Property name="BuildableOnSpaceStationExterior" value="true" />
       <Property name="PlanetLimit" value="0" />
       <Property name="RegionLimit" value="0" />
       <Property name="PlanetBaseLimit" value="0" />
@@ -75,6 +79,7 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       </Property>
       <Property name="StorageContainerIndex" value="-1" />
       <Property name="ColourPaletteGroupId" value="" />
+      <Property name="StationColourPaletteGroupId" value="LEGACY" />
       <Property name="DefaultColourPaletteId" value="" />
       <Property name="MaterialGroupId" value="" />
       <Property name="DefaultMaterialId" value="" />
@@ -92,6 +97,9 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="BaseTerrainEditShape" value="Cube" />
       <Property name="MinimumDeleteDistance" value="1.000000" />
       <Property name="IsSealed" value="false" />
+      <Property name="HasGravity" value="false" />
+      <Property name="GravityStrength" value="0.500000" />
+      <Property name="GravityFalloff" value="2.000000" />
       <Property name="CloseMenuAfterBuild" value="false" />
       <Property name="Tag" value="" />
       <Property name="LinkGridData" value="GcBaseLinkGridData">
@@ -124,9 +132,10 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="ModularCustomisationBaseID" value="" />
       <Property name="HasDescriptor" value="false" />
       <Property name="DescriptorID" value="" />
-      <Property name="UseProductIDOverride" value="false" />
-      <Property name="OverrideProductID" value="" />
       <Property name="FossilDisplayID" value="" />
+      <Property name="UseProductIDOverride" value="false" />
+      <Property name="UseProductIDOverrideInSpace" value="false" />
+      <Property name="OverrideProductID" value="" />
     </Property>
 ]]
 return BASEBUILDINGOBJECTSTABLE_ADDING
@@ -383,13 +392,13 @@ PLACEMENTDATA_ENTITY =
           <Property name="CanBeTooSteepForTeleporter" value="true" />
         </Property>
         <Property name="NavMeshInclusion" value="TkNavMeshInclusionParams">
-          <Property name="NavMeshInclusionHint" value="Auto" />
           <Property name="InclusionType" value="TkNavMeshInclusionType">
             <Property name="NavMeshInclusionType" value="Auto" />
           </Property>
           <Property name="AreaType" value="TkNavMeshAreaType">
             <Property name="NavMeshAreaType" value="Auto" />
           </Property>
+          <Property name="ApplyMinSizeRequirements" value="true" />
         </Property>
         <Property name="StaticPhysicsTargetNode" value="Attachment" />
         <Property name="AddToWorldOnPrepare" value="true" />
@@ -456,11 +465,16 @@ PLACEMENT_SCENE =
       <Property name="Name" value="GEOMETRY" />
       <Property name="Value" value="]].. PATH .. P_NAME ..[[.GEOMETRY.MBIN" />
     </Property>
+		<Property name="Attributes" value="TkSceneNodeAttributeData">
+			<Property name="Name" value="JOINTHASH" />
+			<Property name="Value" value="5512004423178871566" />
+		</Property>
     <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PlacementData" />
@@ -484,6 +498,7 @@ PLACEMENT_SCENE =
           <Property name="Value" value="]].. PATH .. P_NAME ..[[_PLACEMENTDATA.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="]].. PATH .. P_NAME ..[[_PLACEMENT" />
@@ -523,6 +538,7 @@ PLACEMENT_SCENE =
               <Property name="Value" value="0.484206" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -597,7 +613,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Build Custom Freighter Console",
 ["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.40",
+["NMS_VERSION"]   = "7.00-Cosmos",
 ["ADD_FILES"]     = ADD_FILES_TABLE,
 ["MODIFICATIONS"] =
   {
@@ -725,6 +741,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="TRUE" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
 ]]
@@ -758,6 +775,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="MODELS\CUSTOM\PROPS\GALTERMINAL\ENTITIES\GALTERMINAL.ENTITY.MBIN" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
 ]]

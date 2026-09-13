@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Better Pulse Scan - Curious Deposit Only"
-GameVersion = "6.44"
+GameVersion = "7.01"
 --ModVersion = "v1.5"
 Description = "Curious Deposity now show up when you use Pulse Scan with Multitool or Exocraft."
 

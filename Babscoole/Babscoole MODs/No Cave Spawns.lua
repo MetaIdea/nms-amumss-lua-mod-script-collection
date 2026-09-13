@@ -3,8 +3,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "No Cave Spawns",
 ["MOD_AUTHOR"]      = "courtykat and Babscoole",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.40",
-["MOD_DESCRIPTION"] = "Cave creatures will be removed from your scan list and will not spawn",
+["NMS_VERSION"]     = "7.00-Cosmos",
+["MOD_DESCRIPTION"] = "Underground creatures will cease to exist",
 ["MODIFICATIONS"]   =
   {
     {

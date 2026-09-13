@@ -1,5 +1,5 @@
 ModName = "PTSd Mission Adjustments"
-GameVersion = "6_43"
+GameVersion = "7_01"
 Description = "Increases the amount of items required to complete certain 'Expanding the Base' quests, some quests no longer give certain blueprints as rewards."
 
 AdjustVoyagersExpTasks = true			--false		Changes the requirements for certain tasks in the Voyagers Expedition to work with alterations made by PTSd
@@ -19,8 +19,18 @@ KorvaxCubeReq =			1				--1 Cube		(setting to values other than 1 makes that miss
 VyKeenDaggerReq =		10				--2 Daggers		This type of item is rarer to find than some others
 GravitinoBallReq =		24				--1 Gravitino Ball		This type of item is easier to find than some others
 
---Multiplier to the amount of words needed to be learned for each step of the Base Computer Archives mission.
+--Multiplier to apply to the amount of words needed to be learned for each step of the Base Computer Archives mission.
 BaseCompArchWordsMult =	5				-- Vanilla is 3 words for stage 1, increasing by 3 each stage up to 30 words needed for stage 10
+
+--Multiplier to apply to the amount of substances/products needed to turn in to complete various Deep Space Outpost missions
+DSOContMetalMult =		3				--70-120 Contaminated Metal		HULK1
+DSOIndustSalvageMult =	1.5				--5-8 or 2-4 Industrial Salvage	HULK_COMMON
+DSORareItem1Mult =		1				--1 Reactor Core or Auxiliary Core or CPU Harness or Compressed Plasma	HULK_CORE
+DSORareItem2Mult =		1				--1 Suspicious Cargo or Data Packet or Stasis Locker or Fuel Rod (PTSd removes Fuel Rod as an option)	HULK_SMUGGLE
+DSOCometDustMult =		3				--70-120 Comet Dust		ASTBELT1
+DSOCondStellarIceMult =	1				--4-8 Condensed Stellar Ice		ASTEROID_CRYST
+DSOGelFibresMult =		8				--70-120 Gelatinous Fibres		SLIMEPOST1
+DSORareItem3Mult =		1				--1 Viral Heart or Pathogen Sac	SLIME_BLOB
 
 --Changes the amount of time that a Trade Surge last for, in minutes
 TradeSurgeDuration =	80				--180 minutes	(3 hours)
@@ -390,6 +400,105 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["MXML_CHANGE_TABLE"] 	= 
 		{
 			--Intentionally left blank to be filled in by a function below
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\SPACEOUTPOSTMISSIONTABLE.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"Product", "HULK_REACTOR"},
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Substance", "HULK1"},
+				["SECTION_UP"] = 2,
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", DSOContMetalMult},
+					{"AmountMax", DSOContMetalMult},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Substance", "ASTBELT1"},
+				["SECTION_UP"] = 2,
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", DSOCometDustMult},
+					{"AmountMax", DSOCometDustMult},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Substance", "SLIMEPOST1"},
+				["SECTION_UP"] = 2,
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", DSOGelFibresMult},
+					{"AmountMax", DSOGelFibresMult},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Product", "HULK_COMMON"},
+				["SECTION_UP"] = 2,
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", DSOIndustSalvageMult},
+					{"AmountMax", DSOIndustSalvageMult},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Product", "HULK_CORE"},
+				["SECTION_UP"] = 2,
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", DSORareItem1Mult},
+					{"AmountMax", DSORareItem1Mult},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Product", "HULK_SMUGGLE"},
+				["SECTION_UP"] = 2,
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", DSORareItem2Mult},
+					{"AmountMax", DSORareItem2Mult},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Product", "ASTEROID_CRYST"},
+				["SECTION_UP"] = 2,
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", DSOCondStellarIceMult},
+					{"AmountMax", DSOCondStellarIceMult},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Product", "SLIME_BLOB"},
+				["SECTION_UP"] = 2,
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", DSORareItem3Mult},
+					{"AmountMax", DSORareItem3Mult},
+				}
+			},
 		}
 	},
 }}}}

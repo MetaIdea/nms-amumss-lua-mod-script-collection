@@ -21,6 +21,7 @@ ALL_PARTS_ABOVE_WATER = true                --Vanilla false // Mod default true 
 ALL_PARTS_UNDER_WATER = true                --Vanilla false // Mod default true // true to enable all building parts under water
 ALL_PARTS_ON_FREIGHTER = true               --Vanilla false // Mod default true // true to enable all building parts on freighters
 ALL_PARTS_ON_PLANETBASE = true              --Vanilla false // Mod default true // true to enable all building parts on planet bases (like freighter ones).
+ALL_PARTS_ON_SPACESTATIONBASE = true        --Vanilla false // Mod default true // true to enable all building parts on space station bases (like freighter ones).
 BASEPARTS_ON_CORVETTE = true                --Vanilla false // Mod default true //  true to enable base parts on corvettes.
 NO_BUILDCOUNT_LIMIT = false                 --Vanilla false // Mod Default false // true to remove build-count limits on almost all parts. If false, all parts NOT related to resources farming will be unlimited
 
@@ -373,7 +374,7 @@ And, of course, thanks to all of the other modders who make mods too, as we ofte
 —For latest versions and more visit:-
 https://www.nexusmods.com/nomanssky/mods/1096
 ]],
-["NMS_VERSION"]   = "6.40",
+["NMS_VERSION"]   = "7.00-Cosmos",
 ["MODIFICATIONS"] =
   {
     {
@@ -389,11 +390,12 @@ https://www.nexusmods.com/nomanssky/mods/1096
               ["VALUE_MATCH"] = "false",
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"CanRotate3D",       "true"},
-                {"CanScale",          "true"},
-                {"CanChangeColour",   "true"},
-                {"CanChangeMaterial", "true"},
-                {"IsPlaceable",       "true"},
+                {"CanRotate3D",                "true"},
+                {"CanScale",                   "true"},
+                {"CanChangeColour",            "true"},
+                {"CanChangeMaterial",          "true"},
+                {"IsPlaceable",                "true"},
+                {"IsPlaceableFloatingInSpace", "true"},
               },
             },
             {
@@ -910,6 +912,42 @@ if ALL_PARTS_ON_PLANETBASE then
 end
 ---- All parts on planet bases rules end ----
 ---------------------------------------------
+
+
+-- ------ All parts on space station bases rules ------
+-- ----------------------------------------------------
+if ALL_PARTS_ON_SPACESTATIONBASE then
+
+  -- -- Makes all parts buildable on space station bases
+  Change_Table_Array[#Change_Table_Array + 1] =
+  {
+    ["REPLACE_TYPE"] = "ALL",
+    ["VALUE_MATCH"] = "false",
+    ["VALUE_CHANGE_TABLE"] =
+    {
+      {"BuildableOnSpaceStationBase",        "true"},
+      {"BuildableOnSpaceStationBackSection", "true"},
+      {"BuildableOnSpaceStationExterior",    "true"},
+    },
+  }
+
+  -- -- Reverts "BuildableOnSpaceStation..." to "false" for the exceptions list
+  for i = 1,#NOT_PLANETBASE_BUILDPART_ID_TABLE do
+
+    Change_Table_Array[#Change_Table_Array + 1] =
+    {
+      ["SPECIAL_KEY_WORDS"] = {"ID", NOT_PLANETBASE_BUILDPART_ID_TABLE[i]},
+      ["VALUE_CHANGE_TABLE"] =
+      {
+      {"BuildableOnSpaceStationBase",        "false"},
+      {"BuildableOnSpaceStationBackSection", "false"},
+      {"BuildableOnSpaceStationExterior",    "false"},
+      },
+    }
+  end
+end
+-- ---- All parts on space station bases rules end ----
+-- ----------------------------------------------------
 
 
 -------------- CanScale rules ---------------

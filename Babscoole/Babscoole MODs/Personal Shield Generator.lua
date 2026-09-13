@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Personal Shield Generator",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Protective shield against hazards, bullets ...",
 ["MODIFICATIONS"]   =
   {
@@ -146,6 +146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="TRUE" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
 ]]
@@ -279,6 +280,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\CUSTOM\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children">
             <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD|collisionSphere" />
@@ -310,6 +312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="Value" value="6.503314" />
                 </Property>
               </Property>
+              <Property name="InstanceTransforms" />
               <Property name="Children" />
             </Property>
           </Property>

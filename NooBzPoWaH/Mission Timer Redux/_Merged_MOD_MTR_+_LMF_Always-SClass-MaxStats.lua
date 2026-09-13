@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] 	= "Reduced Mission Timer for Base Computer, Living Ship, Scientist, Settlement and Fleet plus Frigates spawn with best initial stats and always as S class",
 ["MOD_AUTHOR"] 			= "NooBzPoWaH & ll62518475TheSecond",
 ["LUA_AUTHOR"] 			= "Babscoole",
-["NMS_VERSION"] 		= "5.71+",
+["NMS_VERSION"] 		= "6.+",
 ["MODIFICATIONS"] 		=
     {
         {

@@ -5,7 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "More Creature Harvest",
 ["MOD_AUTHOR"]      = "chickazee4 & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Fauna produce more products and the harvesting cooldown time is greatly reduced.",
 ["MODIFICATIONS"]   =
   {

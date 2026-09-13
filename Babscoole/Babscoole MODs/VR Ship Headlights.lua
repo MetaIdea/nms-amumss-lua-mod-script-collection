@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "VR Ship Headlights",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Activate: Hold the right ship control lever and grab the left exit handle, Disable: Grab the left or right exit handle",
 ["MODIFICATIONS"]   =
   {
@@ -80,11 +80,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
 ]]
@@ -96,17 +93,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["PRECEDING_KEY_WORDS"] = {"Components"},
+              ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData"},
+              ["PRECEDING_KEY_WORDS"] = {"Triggers"},
+              ["ADD_OPTION"] = "ADDafterLINE",
               ["ADD"] =
 [[
-    <Property name="Components" value="GcTriggerActionComponentData">
-      <Property name="GcTriggerActionComponentData">
-        <Property name="HideModel" value="false" />
-        <Property name="StartInactive" value="false" />
-        <Property name="States">
-          <Property name="States" value="GcActionTriggerState" _id="BOOT">
-            <Property name="StateID" value="BOOT" />
-            <Property name="Triggers">
               <Property name="Triggers" value="GcActionTrigger">
                 <Property name="Event" value="GcStateTimeEvent">
                   <Property name="GcStateTimeEvent">
@@ -127,8 +118,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                 </Property>
               </Property>
-            </Property>
-          </Property>
+]]
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Components", "GcTriggerActionComponentData", "StateID", "REFINE_NOFUEL"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] =
+[[
           <Property name="States" value="GcActionTriggerState" _id="BASE_STATE">
             <Property name="StateID" value="BASE_STATE" />
             <Property name="Triggers">
@@ -317,13 +313,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
             </Property>
           </Property>
-        </Property>
-        <Property name="Persistent" value="false" />
-        <Property name="PersistentState" value="" />
-        <Property name="ResetShotTimeOnStateChange" value="false" />
-        <Property name="LinkStateToBaseGrid" value="false" />
-      </Property>
-    </Property>
 ]]
             }
           }

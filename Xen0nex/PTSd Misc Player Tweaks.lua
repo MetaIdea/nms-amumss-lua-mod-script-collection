@@ -1,11 +1,9 @@
 ModName = "PTSd Misc Player Tweaks"
-GameVersion = "5_00"
+GameVersion = "7_01"
 Description = "Changes a few things about player abilities or boss encounters."
 
-Path1 = "GCPLAYERGLOBALS.GLOBAL.MBIN"
-
 ExperienceDefeatBugQueenRewardChance =	1							--0.25		Chance of receiving the set reward for defeating the Vile Queen bossfight
-GravityLaserRange =						50							--100		Distance in u that the Gravitino Coil can magnetize objects from
+GravityLaserRange =						67							--100		Distance in u that the Gravitino Coil can magnetize objects from
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -20,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"]	= 
 			{
 				{
-					["MBIN_FILE_SOURCE"] 	= {Path1},
+					["MBIN_FILE_SOURCE"] 	= "GCPLAYERGLOBALS.GLOBAL.MBIN",
 					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{

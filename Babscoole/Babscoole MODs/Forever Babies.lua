@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]	  = "Forever Babies",
 ["MOD_AUTHOR"]		  = "courtykat and Babscoole",
-["NMS_VERSION"]		  = "6.40",
+["NMS_VERSION"]		  = "7.00-Cosmos",
 ["MOD_DESCRIPTION"]	= "Companions will stay as cute lil babies forever.",
 ["MODIFICATIONS"]	  =
   {

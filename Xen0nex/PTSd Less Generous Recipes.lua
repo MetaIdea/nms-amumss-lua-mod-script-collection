@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "6_18"
+GameVersion = "7_01"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -516,6 +516,24 @@ RecipeChanges =
 		{"REFINERECIPE_378",	2,					90},				--Makes Nitrogen				x1		in	90 time
 		{
 			{"GAS4",			1}										--Requires Methane				x3
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_400",	1,					45},				--Makes Silver					x1		in	90 time
+		{
+			{"ASTBELT1",		2}										--Requires Comet Dust			x5
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_401",	1,					45},				--Makes Mag. Ferrite			x1		in	90 time
+		{
+			{"HULK1",			2}										--Requires Contaminated Metal	x5
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_402",	1,					45},				--Makes Faecium					x1		in	90 time
+		{
+			{"SLIMEPOST1",		2}										--Requires Gelatinous Fibres	x5
 		}
 	},
 --Some Nutrient Processor Recipes with ingredients that are very easy to obtain passively or in huge quantities have had their costs increased, to indirectly nerf cooking profits & incentivize harvesting wild ingredients

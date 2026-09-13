@@ -1,5 +1,5 @@
 ModName = "PTSd UI Description Adjustments"
-GameVersion = "6_24"
+GameVersion = "7_01"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 --[[
@@ -336,6 +336,9 @@ LeapDark3rdMonolith =
 
 LeapDarkAfter3rdMonolithTip =
 [[The ancient monuments have supplied a series of glyphs. Perhaps they hold the key to opening a portal...&#xA;&#xA;Also, after inspecting so many Monoliths, I now have the ability to access &lt;SPECIAL&gt;secret terminals&lt;&gt; at Monoliths in &lt;TECHNOLOGY&gt;Korvax systems&lt;&gt;.]]
+
+IonisedCobaltDesc =
+[[A highly energised form of &lt;TECHNOLOGY&gt;Cobalt&lt;&gt;, this processed metal is in widespread use as a key component in the creation of &lt;TECHNOLOGY&gt;advanced technologies and structures&lt;&gt;.]]
 
 BasaltDesc =
 [[Local mineral extract, typically found in large deposits or extracted from common minerals after inspection with an &lt;TECHNOLOGY&gt;Analysis Visor&lt;&gt;.&#xA;&#xA;Typically found on planets with a &lt;FUEL&gt;volcanic environment&lt;&gt;.&#xA;&#xA;Can be processed into &lt;STELLAR&gt;Silicate Powder&lt;&gt; in a refiner.]]
@@ -782,6 +785,20 @@ SpaceGunkRefineItemDescs =
 	{
 		{8},		--"LANGUAGE\NMS_UPDATE3_ENGLISH.MBIN",
 		{"UI_MAINTAIN_SUB1_DESC", "UI_MAINTAIN_SUB4_DESC", "UI_MAINTAIN_SUB5_DESC", "UI_MAINTAIN_SUB3_DESC", }
+	},
+}
+
+DeepSpaceLowNaniteItem = [[&#xA;&#xA;Can also be sold for some &lt;STELLAR&gt;nanites&lt;&gt; to a quartermaster of a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, instead of selling for units to other vendors.]]
+
+DeepSpaceMedNaniteItem = [[&#xA;&#xA;Fetches a &lt;STELLAR&gt;somewhat&lt;&gt; higher price in &lt;STELLAR&gt;nanites&lt;&gt; when sold to a quartermaster of a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, compared to selling for units to other vendors.]]
+
+DeepSpaceHighNaniteItem = [[&#xA;&#xA;Fetches a &lt;HIGHLIGHT&gt;significantly&lt;&gt; higher price in &lt;STELLAR&gt;nanites&lt;&gt; when sold to a quartermaster of a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, compared to selling for units to other vendors.]]
+
+DeepSpaceHighNaniteItemDescs =
+{
+	{
+		{7},		--"LANGUAGE\NMS_LOC9_ENGLISH.MBIN",
+		{"UI_HULK_RARE_DESC", "UI_SLIME_BLOB_DESC", "UI_SLIME_SAMPLE_DESC", }
 	},
 }
 
@@ -1451,6 +1468,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", StormCrystalDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_CAVE2_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", IonisedCobaltDesc}
 							}
 						},
 					}
@@ -2751,6 +2775,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"English", ScrapyardInterfaceEmpty}
 							}
 						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_ASTEROID_CRYSTAL_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (DeepSpaceLowNaniteItem)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_HULK_COMMON_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (DeepSpaceLowNaniteItem)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_HULK_UNCOMMON_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (DeepSpaceMedNaniteItem)}
+							}
+						},
 					}
 				},
 				{
@@ -3023,6 +3068,25 @@ for i = 1, #SpaceGunkRefineItemDescs do
 		for j = 1, #Descs do
 			DescId = Descs[j]
 			Text = [[{:}]]..SpaceGunkRefineItem..[[]]
+		
+			NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][ChangeTableNum]["MXML_CHANGE_TABLE"][#NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][ChangeTableNum]["MXML_CHANGE_TABLE"]+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", DescId},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"English", Text}
+				}
+			}
+		end
+end
+
+for i = 1, #DeepSpaceHighNaniteItemDescs do
+	local ChangeTableNum = DeepSpaceHighNaniteItemDescs[i][1][1]
+	local Descs = DeepSpaceHighNaniteItemDescs[i][2]
+			
+		for j = 1, #Descs do
+			DescId = Descs[j]
+			Text = [[{:}]]..DeepSpaceHighNaniteItem..[[]]
 		
 			NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][ChangeTableNum]["MXML_CHANGE_TABLE"][#NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][ChangeTableNum]["MXML_CHANGE_TABLE"]+1] =
 			{

@@ -20,8 +20,16 @@ local Items_To_Add_To_KnownProducts =
     "BP_ANALYSER",
     "ANTIMATTER",
     "AM_HOUSING",
-    "BASE_SWAMP3"
+    "BASE_SWAMP3",
+    "BLD_BUI_TENT"
 }
+
+local Base_building_Objects =
+{
+    "BASE_SWAMP3",
+    "BLD_BUI_TENT"
+}
+
 
 local Items_To_Add_To_KnownTech =
 {
@@ -336,6 +344,20 @@ function Pick_Up_Geobays()
     end
 end
 
+function Edits_To_BaseBuilding_Objects()
+    for _index, item in ipairs(Base_building_Objects) do
+        Changes_To_Base_Building_Objects[#Changes_To_Base_Building_Objects + 1] =
+        {
+            SPECIAL_KEY_WORDS = {"ID", item},
+            VALUE_CHANGE_TABLE =
+            {
+                {"BuildableOnPlanet", "True"},
+                {'CanPickUp', 'True'},
+                {'BuildableOnPlanetWithProduct', 'True'}
+            }
+        }
+    end
+end
 
 function Base_Parts_Delux()
     Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
@@ -363,4 +385,5 @@ Edit_Starter_ShipSlots_And_Inventory_Items()
 Edit_Starting_Weapons()
 Edit_Starter_Ship_Location()
 Pick_Up_Geobays()
+Edits_To_BaseBuilding_Objects()
 Base_Parts_Delux()

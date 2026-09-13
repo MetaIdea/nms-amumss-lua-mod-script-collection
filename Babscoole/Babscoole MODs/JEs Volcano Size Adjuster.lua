@@ -1,11 +1,11 @@
-SIZECHOICE = 1
+SIZECHOICE = 2
 
 InputSIZECHOICE = {SIZECHOICE,
 [[
     Choose a volcano size:
     1 - Tiny
     2 - Huge
-    Default = 1 | Current = >> ]] .. (SIZECHOICE) .. [[ <<
+    Default = 2 | Current = >> ]] .. (SIZECHOICE) .. [[ <<
 ]]}
 
 while SIZECHOICE do
@@ -41,7 +41,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "JEs Volcano Size Adjuster - "..VERNAME,
 ["MOD_AUTHOR"]      = "Jaggid Edje and Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Makes Volcanos very small so they do not block POI's or very big",
 ["MODIFICATIONS"]   =
   {

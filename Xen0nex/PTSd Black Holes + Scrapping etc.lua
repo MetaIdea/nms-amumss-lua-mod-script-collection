@@ -1,5 +1,5 @@
 ModName = "PTSd Black Holes + Scrapping etc"
-GameVersion = "6_4"
+GameVersion = "7_01"
 Description = "Black Holes send you farther, Adjusts Living Ship Module Evolution costs, Changes Illegal goods price markup, Adjust Death Penalty units cost, Replaces some of the substances you can receive from scrapping ships"
 
 --Controls how much of a bonus Supercharged Tech Slots give
@@ -34,6 +34,8 @@ DeathMoneyPenalty =						50000								--5000		Money lost on death in Normal mode
 --DeathMoneyPenaltyHardMode =			50000								--5000		Money lost on death in Survival mode (Deprecated as of 4.08)
 
 DeepWaterResourceMulMax =				8									--4			Controls the "increased richness" of deep sea mineral deposits, IE How much more subtances than normal you receive per use of the Terrain Manipulator / Dredging Laser on deep sea resource deposits
+
+RequiredSpaceStationCredits =			640320160					--1000000000	Units needed to purchase a Space Station (may also need matching change to SpaceStationBuyCost in "PTSd More Expensive Costs etc.lua")
 
 SmugglerSellingMarkup = 				1.0									--1.66		Multiplier (markup) of ADDITIONAL value for "illegal" goods in non-Outlaw systems. E.G. 1.66 means the total value will be 1 + 1.66 = 2.66x BaseValue in non-Outlaw Systems
 IllegalTechProductTradingMod = 			0.2									--0.2		Multiplier (price drop) that the value of "illegal" upgrade modules receive in non-Outlaw systems
@@ -181,6 +183,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"TorpedoInitialWait", TorpedoInitialWait},
 					{"TorpedoLaunchWarning", TorpedoLaunchWarning},
 					{"FreighterFuelRodHealthFraction", FreighterFuelRodHealthFraction},
+					{"RequiredSpaceStationCredits", RequiredSpaceStationCredits},
 					--[[
 					{"ShipMiningMul", ShipMiningMul},
 					{"SpaceBattleMaxTorpedosTargetingLeaderShip", SpaceBattleMaxTorpedosTargetingLeaderShip},

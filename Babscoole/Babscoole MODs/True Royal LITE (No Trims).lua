@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "True Royal LITE (No Trims)",
 ["MOD_AUTHOR"]      = "courtycat and Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Adds New colors to exotic ships",
 ["MODIFICATIONS"]   =
 	{

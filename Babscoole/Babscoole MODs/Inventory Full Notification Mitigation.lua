@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]	  = "Inventory Full Notification Mitigation",
 ["MOD_AUTHOR"]		  = "DeathWrench",
-["NMS_VERSION"]		  = "6.40",
+["NMS_VERSION"]		  = "7.00-Cosmos",
 ["MOD_DESCRIPTION"]	= "Inventory Full Inventory Full Inventory Full Inventory Full, this disables that.",
 ["MODIFICATIONS"]	  = 
 	{

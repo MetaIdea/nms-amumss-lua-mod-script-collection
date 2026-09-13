@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "sHealthcare - Powerless Health and Shield Stations"
-GameVersion = "6.44"
+GameVersion = "7.01"
 Description = "Makes the Health and Shield Stations use no power."
 
 NMS_MOD_DEFINITION_CONTAINER = 

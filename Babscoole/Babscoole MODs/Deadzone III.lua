@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Deadzone III",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "This mod gives the dead worlds a bit of additional attention and variation, and some very rare combos become possible!",
 ["MODIFICATIONS"]   =
   {
@@ -138,11 +138,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="FadeOutEndDistance" value="9999" />
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
+            <Property value="0.000000" />
+            <Property value="0.000000" />
+            <Property value="0.000000" />
+            <Property value="0.000000" />
+            <Property value="0.000000" />
           </Property>
         </Property>
         <Property name="QualityVariants">

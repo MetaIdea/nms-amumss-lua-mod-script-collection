@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] 		= "Reduce Mission Timer, Base Computer, Fleet, Living Ship, Scientist and Settlement",
 ["MOD_AUTHOR"]				= "NooBzPoWaH",
 ["LUA_AUTHOR"] 				= "Babscoole",
-["NMS_VERSION"]				= "5.71+",
+["NMS_VERSION"]				= "6.+",
 ["MODIFICATIONS"] 			= 
 	{
 		{

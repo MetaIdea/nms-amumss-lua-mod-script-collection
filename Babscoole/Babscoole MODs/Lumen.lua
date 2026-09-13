@@ -58,11 +58,8 @@ function GetBlock(Name,NameHash,TransX,TransY,TransZ,RotX,RotY,RotZ,ScaleX,Scale
           <Property name="Name" value="LIGHTLAYERS" />
           <Property name="Value" value="3" />
         </Property>
-        <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-          <Property name="Name" value="MATERIAL" />
-          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-        </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
 ]]
@@ -88,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Lumen",
 ["MOD_AUTHOR"]      = "Exosolar and Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Makes many of the buildable light sources produce far more light and directional",
 ["MODIFICATIONS"]   =
   {

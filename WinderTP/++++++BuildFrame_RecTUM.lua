@@ -34,13 +34,13 @@ SUBGROUP_MOVE_TABLE =
 	{ ["SubGroup"] = "S_WALLS", ["Name"] = "UI_BUILD_GRID_WALLS", ["From"] = "BASIC_S", ["To"] = "BASIC_B" },
 	{ ["SubGroup"] = "F_WALLS", ["Name"] = "UI_BUILD_GRID_WALLS", ["From"] = "BASIC_F", ["To"] = "BASIC_B" },
 	-- { ["SubGroup"] = "B_WALLS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_B", ["To"] = "ROOMS" },
-	{ ["SubGroup"] = "T_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_T", ["To"] = "BASIC_B" }, 
+	{ ["SubGroup"] = "T_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_T", ["To"] = "BASIC_B" },
 	{ ["SubGroup"] = "S_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_S", ["To"] = "BASIC_B" },
 	{ ["SubGroup"] = "F_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_F", ["To"] = "BASIC_B" },
 	-- { ["SubGroup"] = "B_ROOFS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_B", ["To"] = "ROOMS" },
 	{ ["SubGroup"] = "BASICWOOD", ["Name"] = "UI_BUILD_GRID_WOOD", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
 	{ ["SubGroup"] = "BASICCONCRETE", ["Name"] = "UI_BUILD_GRID_CONCRETE", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
-	{ ["SubGroup"] = "BASICMETAL", ["Name"] = "UI_BUILD_GRID_METAL", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },	
+	{ ["SubGroup"] = "BASICMETAL", ["Name"] = "UI_BUILD_GRID_METAL", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
 }
 
 COMPO_PART_TABLE =
@@ -139,7 +139,7 @@ return
 			{ "Group",			FROM },
 			{ "SubGroupName",	SUBGROUP },
 		},
-		["VALUE_CHANGE_TABLE"] 	= 
+		["VALUE_CHANGE_TABLE"] 	=
 		{
 			{"Group",			TO},
 		}
@@ -152,8 +152,8 @@ return
 	{
 		["SPECIAL_KEY_WORDS"] = {"SubGroupName", SUBGROUP},
 		["REPLACE_TYPE"] 	= "ALL",
-		["EXML_FLAGS"]  = "OVERWRITE", 
-		["VALUE_CHANGE_TABLE"] 	= 
+		["EXML_FLAGS"]  = "OVERWRITE",
+		["VALUE_CHANGE_TABLE"] 	=
 		{
 			{"Group",			TO},
 		}
@@ -166,7 +166,7 @@ return
 	{
 		["SPECIAL_KEY_WORDS"] = {"SubGroupName", SUBGROUP},
 		["REPLACE_TYPE"] 	= "ALL",
-		["EXML_FLAGS"]  = "OVERWRITE", 
+		["EXML_FLAGS"]  = "OVERWRITE",
 	}
 end]]
 
@@ -175,8 +175,8 @@ return
 	{
 		["PRECEDING_KEY_WORDS"] = 	{"GcBaseBuildingEntry", "GcBaseBuildingEntryGroup"},
 		["REPLACE_TYPE"] 	= 		"ALL",
-		["VALUE_MATCH"] = 			FROM, 
-		["VALUE_CHANGE_TABLE"] 	= 
+		["VALUE_MATCH"] = 			FROM,
+		["VALUE_CHANGE_TABLE"] 	=
 		{
 			{"Group",			TO },
 		}
@@ -214,7 +214,7 @@ end
 	-- {
 		-- ["SPECIAL_KEY_WORDS"] = {"SubGroups", "GcBaseBuildingSubGroup", "Id", SUBGROUP},
 		-- ["PRECEDING_KEY_WORDS"] = {""},
-		-- -- ["PRECEDING_FIRST"] = "TRUE", 
+		-- -- ["PRECEDING_FIRST"] = "TRUE",
 		-- -- ["LINE_OFFSET"] 		= "+0",
 		-- ["REMOVE"] = "SECTION"
 	-- }
@@ -229,7 +229,7 @@ function GetCompositePartChangeTable(ID, COMPO)
 return
 	{
 		["SKW"] = {"ID", ID},
-		["PKW"] = {"CompositePartObjectIDs"}, 
+		["PKW"] = {"CompositePartObjectIDs"},
 		["CREATE_HOS"] = "TRUE",
 		["ADD_OPTION"] = "ADDendSECTION",
 		["ADD"] = table.concat(CompositeList)
@@ -269,8 +269,8 @@ table.insert(CHANGE_LEOPARDON,
 							{"Groups", "GcBaseBuildingGroup"}
 						},
 	["SECTION_UP_SPECIAL"] = 1,
-	["EXML_FLAGS"]  = "OVERWRITE", 
-	-- ["REPLACE_TYPE"] = "RAW", 
+	["EXML_FLAGS"]  = "OVERWRITE",
+	-- ["REPLACE_TYPE"] = "RAW",
 	-- ["VCT"] = {{[[<Property name="Groups">]], [[<Property name="Groups" _overwrite="true">]]}},
 })
 
@@ -349,7 +349,7 @@ MAKE_EXPAND_DONG_OBVIOUS =
 		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
 		["PKW"] = {"AccessibleOverrides"},
 		["REPLACE_TYPE"] = "ALL",
-		["CREATE_HOES"] = "TRUE", 
+		["CREATE_HOES"] = "TRUE",
 		-- ["REMOVE"] = "SECTION",
 	},
 	{
@@ -421,25 +421,25 @@ MAKE_EXPAND_DONG_OBVIOUS =
 	},
 }
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "~~~BuildFrame_RecTUM",
 ["MOD_BATCHNAME"]		= "++++DO_NOT_COMBINE_IN_AMUMSS",
 ["MOD_AUTHOR"]				= "WinderTP, Babscoole",
 ["MOD_DESCRIPTION"]			= "Recategorisation Trimming Utility for Build Menu",
 ["NMS_VERSION"]				= "",
-["AMUMSS_SUPPRESS_MSG"] 	= "SUPPRESS_FLOOR_DIV, UNUSED_VARIABLE",
-["MODIFICATIONS"] 			= 
+["AMUMSS_SUPPRESS_MSG"] 	= "SUPPRESS_FLOOR_DIV, UNUSED_VARIABLE, MULTIPLE_STATEMENTS, UNDEFINED_VARIABLE",
+["MODIFICATIONS"] 			=
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
+			["MBIN_CHANGE_TABLE"] 	=
+			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.EXML",
 					-- ["MBIN_FILE_SOURCE"] 	= {{"METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN", "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.EXML"}},
 					["MXML_CHANGE_TABLE"] 	= CHANGE_LEOPARDON,
 					-- ["EXT_FUNC"] = {"YEET_UNUSED_PARAMS"},
-				}, 
+				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "UI\BASEPARTSMENU.MBIN",
 					["MXML_CHANGE_TABLE"] 	= BUILDMENU_UI_SLOTS
@@ -449,6 +449,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MXML_CHANGE_TABLE"] 	= MAKE_EXPAND_DONG_OBVIOUS
 				},
 			}
-		}, 
-	}	
+		},
+	}
 }

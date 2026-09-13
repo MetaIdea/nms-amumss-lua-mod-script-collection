@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Pirate Station Corvette Teleport - New Files"
-GameVersion = "6.20"
+GameVersion = "7.01"
 Description = "Description"
 
 NMS_MOD_DEFINITION_CONTAINER = 

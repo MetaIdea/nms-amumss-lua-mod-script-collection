@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Multiplies Plant Harvest" .. "-" .. HarvestMultiple .. "X",
 ["MOD_AUTHOR"]      = "KuroPeach & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Increase the yield of crops when harvested",
 ["MODIFICATIONS"]   =
   {

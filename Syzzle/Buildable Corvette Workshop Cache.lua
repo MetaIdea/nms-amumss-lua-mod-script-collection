@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Buildable Corvette Workshop Cache"
-GameVersion = "6.20"
+GameVersion = "7.01"
 Description = "Allow you to build the Corvette Workshop Cache in your base or Corvette."
 
 CORVETTEBOXUNLOCK  = [[

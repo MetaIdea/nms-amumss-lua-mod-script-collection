@@ -15,7 +15,7 @@ Quicksilver =
 }
 -----------------------------------------------------------------
 -- QS Daily Mission Reward Settings --
-Multiplier = 1
+Multiplier = 3
 
 InputMultiplier = {Multiplier,
 [[
@@ -23,7 +23,7 @@ InputMultiplier = {Multiplier,
     1 - 2x
     2 - 5x
     3 - 10x
-    Default = 1 | Current = >> ]] .. (Multiplier) .. [[ <<
+    Default = 3 | Current = >> ]] .. (Multiplier) .. [[ <<
 ]]}
 
 while Multiplier do
@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "QS Missions and Daily Reward Multiplier "..Multiplier.."x",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Adds quicksilver rewards to normal missions at the nexus, space station mission boards, and outlaw bounty masters & multiples the quicksilver reward from daily and weekly nexus missions",
 ["MODIFICATIONS"]   =
   {

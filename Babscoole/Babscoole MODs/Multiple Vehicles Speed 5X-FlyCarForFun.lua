@@ -5,7 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Multiple Vehicles Speed " .. Multiplier .. "X-LessFuel" .. "-FlyCarForFun",
 ["MOD_AUTHOR"]      = "KuroPeach & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Multiple Vehicles Speed, LessFuel",
 ["MODIFICATIONS"]   =
   {

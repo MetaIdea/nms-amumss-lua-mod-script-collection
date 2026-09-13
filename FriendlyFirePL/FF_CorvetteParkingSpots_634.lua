@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "CorvetteParkingSpots"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "634"
+METADATA_NMS_VERSION    = "700"
 METADATA_MOD_DESC       = "This mod adds parking / docking spots for corvettes and matching teleporters to trading outposts and planetary archives."
 
 

@@ -8,7 +8,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Starborn Phoenix Unlocker",
 ["MOD_AUTHOR"]      = "Babscoole & Mjstral",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Unlock a reward via special emote menu quick action",
 ["MODIFICATIONS"]   =
   {

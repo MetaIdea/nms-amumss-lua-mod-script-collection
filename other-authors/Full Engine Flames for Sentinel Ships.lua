@@ -19,7 +19,7 @@ local SceneFlameBodies = {
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "Full Engine Flames for Sentinel Ships",
     ["MOD_AUTHOR"] = "beihaixingchen",
-    ["NMS_VERSION"] = "6.45",
+    ["NMS_VERSION"] = "7.00",
     ["MOD_DESCRIPTION"] = "This mod makes all engine flames visible for sentinel ships.",
     ["MODIFICATIONS"] = {
         {

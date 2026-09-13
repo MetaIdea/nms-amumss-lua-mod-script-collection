@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 	= "BetterRewardsNoWR",
 ["MOD_BATCHNAME"]	= "BetterRewardsNoWR",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "6.21",
+["NMS_VERSION"]		= "7.0",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to unit, nanite and quicksilver reward values without extra word learning and no resource or product multipliers",
 ["MODIFICATIONS"] 	=
 	{

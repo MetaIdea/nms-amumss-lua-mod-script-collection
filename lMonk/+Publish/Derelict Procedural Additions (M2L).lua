@@ -4,7 +4,7 @@ local mod_desc = [[
   items to the derelict freighter encounter mission.
   Adds a slow tumble to floating items to make the scene more dynamic
 ]]-------------------------------------------------------------------------
----	MXML 2 LUA ... by lMonk ... version: 1.0.06
+---	MXML 2 LUA ... by lMonk ... version: 1.0.08
 ---	A tool for converting between mxml file format and lua table.
 --- The complete tool can be found at: https://github.com/roie-r/mxml_2_lua
 --------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ local function ToMxml(class)
 	local function bool(b)
 		return type(b) == 'boolean' and (b == true and 'true' or 'false') or b
 	end
-	local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite', '_remove'}
+	-- local at_ord = {'template', 'name', 'value', 'linked', '_id', '_index', '_overwrite', '_remove'}
 	local function mxml_r(tlua)
 		local out = {}
 		function out:add(t)
@@ -27,13 +27,13 @@ local function ToMxml(class)
 				out:add({'<Property '})
 				if type(cls) == 'table' and cls.meta then
 				-- add new section and recurs for nested sections
-					for _,at in ipairs(at_ord) do
-					-- Just for readability. The compiler doesn't need the ordering
-						if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
-					end
-					-- for k, v in pairs(cls.meta) do
-						-- if k:sub(-1) ~= '_' then out:add({k, '="', bool(v), '"', ' '}) end
+					-- for _,at in ipairs(at_ord) do
+					-- -- Just for readability. The compiler doesn't need the ordering
+						-- if cls.meta[at] then out:add({at, '="', bool(cls.meta[at]), '"', ' '}) end
 					-- end
+					for k, v in pairs(cls.meta) do
+						if k:sub(-1) ~= '_' then out:add({k, '="', bool(v), '"', ' '}) end
+					end
 					table.remove(out) -- trim last space
 					out:add({'>', mxml_r(cls), '</Property>'})
 				else
@@ -81,6 +81,43 @@ local function ToMxml(class)
 	return nil
 end
 
+--	=> Adds the header and class template for a standard mxml file
+--	@param data: A lua2mxml formatted table
+--	@param template: [optional] A class template string. Overwrites the internal template!
+local function ToMxmlFile(tlua, ext_tmpl)
+	local wrapper = '<?xml version="1.0" encoding="utf-8"?><Data template="%s">%s</Data>'
+	if type(tlua) == 'string' then
+		return wrapper:format(ext_tmpl, tlua)
+	end
+	-- replace existing or add template layer as needed
+	if ext_tmpl then
+		if tlua.meta.template then
+			tlua.meta.template = ext_tmpl
+		else
+			tlua = {
+				meta = {template=ext_tmpl},
+				tlua
+			}
+		end
+	end
+	-- replace mock template
+	return wrapper:format(
+		tlua.meta.template,
+		ToMxml(tlua):sub(#tlua.meta.template + 23, -12)
+	)
+end
+
+--	=> Build a TkSceneNodeAttributeData section
+--	@param name: scene attribute name
+--	@param value: scene attribute value
+local function ScAttribute(name, value)
+	return {
+		meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
+		Name	= name,
+		Value	= type(value) == 'boolean' and (value and 'TRUE' or 'FALSE') or value
+	}
+end
+
 --	=> Determine if received is a single or multi-item
 --	then process items through the received function
 --	@param items: table of item properties or a non-keyed table of items (keys are ignored)
@@ -95,17 +132,6 @@ local function ProcessOnenAll(items, acton)
 		return T
 	end
 	return acton(items)
-end
-
---	=> Build a TkSceneNodeAttributeData section
---	@param name: scene attribute name
---	@param value: scene attribute value
-local function ScAttribute(name, value)
-	return {
-		meta	= {name='Attributes', value='TkSceneNodeAttributeData'},
-		Name	= name,
-		Value	= type(value) == 'boolean' and (value and 'TRUE' or 'FALSE') or value
-	}
 end
 
 --	=> Build a single -or list of TkSceneNodeData classes
@@ -181,30 +207,6 @@ local function ScNode(nodes)
 		return T
 	end
 	return ProcessOnenAll(nodes, sceneNode)
-end
-
---	=> Adds the header and class template for a standard mxml file
---	@param data: A lua2mxml formatted table
---	@param template: [optional] A class template string. Overwrites the internal template!
-local function ToMxmlFile(tlua, ext_tmpl)
-	local wrapper = '<?xml version="1.0" encoding="utf-8"?><Data template="%s">%s</Data>'
-	if type(tlua) == 'string' then
-		return wrapper:format(ext_tmpl, tlua)
-	end
-	-- replace existing or add template layer if needed
-	if ext_tmpl then
-		if tlua.meta.template then
-			tlua.meta.template = ext_tmpl
-		else
-			tlua = {
-				meta = {template=ext_tmpl},
-				tlua
-			}
-		end
-	end
-	-- strip mock template
-	local txt_data = ToMxml(tlua):sub(#tlua.meta.template + 23, -12)
-	return wrapper:format(tlua.meta.template, txt_data)
 end
 ---------------------------------------------------------------------------------
 
@@ -361,7 +363,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.Derelict Procedural Additions',
 	LUA_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.21',
+	NMS_VERSION			= '7.01',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{

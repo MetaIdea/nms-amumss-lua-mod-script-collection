@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Asteroid Ribbons",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.00-Cosmos",
 ["MOD_DESCRIPTION"] = "Forms asteroids into sheets as well as making them visible at far greater ranges",
 ["MODIFICATIONS"]   =
   {
@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"Planet Invalid Asteroid Zone",             "40000.000000"},
-                {"Sparse Asteroid Spread",                   "-25.000000"},
+                -- {"Sparse Asteroid Spread",                   "-25.000000"},
                 {"Asteroid Noise Octaves",                   "1"},
                 {"Asteroid Space Station Avoid Radius",      "10000.000000"},
                 {"Asteroid Anomaly Avoid Radius",            "10000.000000"},
@@ -51,9 +51,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"Common Asteroid Data"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Spacing",    "387.000000"},
-                {"Fade Range",  "1000.000000"},
-                {"Noise Scale", "100000.000000"},
+                {"ClusterSpacingSpacing", "387.000000"},
+                {"Fade Range",            "1000.000000"},
+                {"Noise Scale",           "100000.000000"},
               }
             },
             {
@@ -89,9 +89,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"Large Asteroid Data"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Spacing",    "3500.000000"},
-                {"Fade Range",  "3500.000000"},
-                {"Noise Scale", "100000.000000"},
+                {"ClusterSpacing", "3500.000000"},
+                {"Fade Range",     "3500.000000"},
+                {"Noise Scale",    "100000.000000"},
               }
             },
             {
@@ -106,9 +106,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"Rare Asteroid Data"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Spacing",     "510.000000"},
-                {"Fade Range",  "1000.000000"},
-                {"Noise Scale", "100000.000000"},
+                {"ClusterSpacing", "510.000000"},
+                {"Fade Range",     "1000.000000"},
+                {"Noise Scale",    "100000.000000"},
               }
             },
             {
