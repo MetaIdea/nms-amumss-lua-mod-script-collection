@@ -1,7 +1,7 @@
 Author = "Xen0nex"
 ModName = "PTSd Scan Rewards + Shops etc"
 Description = "Adjusts scan & discovery rewards and items available in shops. Also changes % chance to spawn jellyfish / anglerfish underwater."
-GameVersion = "6_03"
+GameVersion = "7_01"
 
 TradeBasicCorvetteParts = true						--false			Set to true to allow trading even Basic Corvette parts (purchased from the Corvette workshop) for Advanced Corvette parts, instead of only being able to trade in Advanced parts found as loot
 
@@ -589,14 +589,14 @@ RaceRankingPrefixes =
 }
 
 BasicCorvetteParts =
-{"B_COK_D", "B_HAB_B", "B_LND_A", "B_WNG_H", "B_GEN_1", "B_TUR_A", "B_ALK_A", "B_TRU_D", "B_WNG_I", "B_STR_A_N", "B_STR_C_NE", "B_DECO_A", "B_DECO_M"}
+{"B_COK_D", "B_HAB_B", "B_LND_A", "B_WNG_H", "B_GEN_1", "B_TUR_A", "B_ALK_A", "B_TRU_D", "B_WNG_I", "B_STR_A_N", "B_STR_C_NE", "B_DECO_A", "B_DECO_M", "B_MAG_1X1"}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName.." "..GameVersion..".pak",
 ["MOD_DESCRIPTION"]	= Description,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
-["EXML_CREATE"] = "FALSE",
+--["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {
 {

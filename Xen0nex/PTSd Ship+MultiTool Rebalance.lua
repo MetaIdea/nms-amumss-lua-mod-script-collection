@@ -955,7 +955,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_DESCRIPTION"]		= Description,         
   ["MOD_AUTHOR"]			= "Xen0nex",         --Based on UniqueSpaceShips by Jackty89
   ["NMS_VERSION"]			= GameVersion,    
-  ["EXML_CREATE"] = "FALSE",  
+  --["EXML_CREATE"] = "FALSE",  
   ["MODIFICATIONS"] 		= 
     {
 	    {

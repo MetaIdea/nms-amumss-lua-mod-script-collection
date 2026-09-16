@@ -3,7 +3,7 @@ LuaAuthor = "DeathWrench and Babscoole and Xen0nex"
 --ModName = "gExos Challenge"
 ModNameSub = "Space Combat+Larger Space BattlesX"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "6_43"
+GameVersion = "7_01"
 ModVersion = "a"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships & some freighters (individual ships have additonal multipliers applied)
@@ -334,8 +334,8 @@ LargerBattleChanges =
 					"AmbientSpawns", "GcAIShipSpawnData", "0",	4
 				},
 				{
-					{"Spread",	3000,		4500},
-					{"Count",	2,			6}		--2,		5
+					{"Spread",	3000,		4500},	--3000,		3000	(3000,		4500)
+					{"Count",	2,			5}		--2,		5		(2,			6)
 				}
 			},
 			{--Frigate
@@ -372,8 +372,8 @@ LargerBattleChanges =
 					"AmbientSpawns", "GcAIShipSpawnData", "1",	4
 				},
 				{
-					{"Spread",	3000,		4500},	--3000,		3000
-					{"Count",	2,			6}		--2,		5
+					{"Spread",	3000,		3000},	--3000,		3000	(3000,		4500)
+					{"Count",	2,			5}		--2,		5		(2,			6)
 				}
 			},
 			--[[--DUPLICATE TARGET
@@ -812,7 +812,7 @@ SpaceBattleSpawnsChanges =
 				},
 				{
 					{"Spread",	1800,		1800},	--1800,		1800
-					{"Count",	4,			6}		--3,		5
+					{"Count",	3,			5}		--3,		5		(4,			6)
 				}
 			},
 			--[[
@@ -921,7 +921,7 @@ SpaceBattleSpawnsChanges =
 				},
 				{
 					{"Spread",	1800,		1800},	--1800,		1800
-					{"Count",	4,			6}		--3,		5
+					{"Count",	3,			5}		--3,		5		(2,			6)
 				}
 			},
 			--[[
@@ -1030,7 +1030,7 @@ SpaceBattleSpawnsChanges =
 				},
 				{
 					{"Spread",	1800,		1800},	--1800,		1800
-					{"Count",	4,			6}		--3,		5
+					{"Count",	3,			5}		--3,		5		(4,			6)
 				}
 			},
 			--[[
@@ -1505,7 +1505,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_AUTHOR"]		= Author,
 ["LUA_AUTHOR"]		= LuaAuthor,
 ["NMS_VERSION"]		= GameVersion,
-["EXML_CREATE"] = "FALSE",
+--["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {
 {	

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Instant Freighter Fleet Spawns",
 ["MOD_AUTHOR"]      = "Grouch",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.42",
+["NMS_VERSION"]     = "7.01",
 ["MOD_DESCRIPTION"] = "System freighter fleets now spawn near-instantly around the player, speeding up checking freighters/documentation",
 ["MODIFICATIONS"]   =
   {
@@ -20,6 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"High"},
                 {"Normal"},
+                {"Low"},
               },
               ["VALUE_CHANGE_TABLE"] =
               {

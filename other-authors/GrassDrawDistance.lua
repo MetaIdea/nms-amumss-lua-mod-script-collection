@@ -593,7 +593,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"]    = "_GrassDrawDistance",
     ["MOD_AUTHOR"]      = "kuborr",
     ["LUA_AUTHOR"]      = "kuborr",
-    ["NMS_VERSION"]     = "7.00",
+    ["NMS_VERSION"]     = "7.02",
     ["MOD_DESCRIPTION"] = "Increases grass draw distance by 2x (grass only, no rocks/flora/props)",
 
     ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE",

@@ -30,11 +30,11 @@ Filepaths =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]		= ModName..GameVersion..".pak",
+	["MOD_FILENAME"]		= ModName..".pak",
 	["MOD_DESCRIPTION"]		= Description,
 	["MOD_AUTHOR"]			= "Xen0nex",
 	["NMS_VERSION"]			= GameVersion,
-	["EXML_CREATE"] = "FALSE",  
+	--["EXML_CREATE"] = "FALSE",  
 	["MODIFICATIONS"]		= 
 	{
 		{

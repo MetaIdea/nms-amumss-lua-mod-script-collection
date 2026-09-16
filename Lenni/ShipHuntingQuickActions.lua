@@ -1,6 +1,18 @@
 -- Actions will appear in reverse order in game
 QUICK_ACTION_MENU = {
     {
+        ["ID"] = "R_REVEAL_ABAND",
+        ["EMOTE_ID"] = "REVEAL_ABAND",
+        ["TITLE"] = "Locate Derelict Freighter",
+        ["ICON"] = "TEXTURES/UI/HUD/ICONS/SPACEPOI/SPACEPOI.ABANDONEDFREIGHTER.DDS"
+    },
+    {
+        ["ID"] = "R_REVEAL_WHALE",
+        ["EMOTE_ID"] = "REVEAL_WHALE",
+        ["TITLE"] = "Locate Organic Frigate",
+        ["ICON"] = "TEXTURES/UI/HUD/ICONS/SPACEPOI/SPACEPOI.BIOFRIGATE.DDS"
+    },
+    {
         ["ID"] = "CRASHEDSHIP",
         ["EMOTE_ID"] = "CRASHEDSHIP",
         ["TITLE"] = "Locate Crashed Ship",
@@ -61,7 +73,7 @@ QUICK_ACTION_MENU = {
         ["EMOTE_ID"] = "SHOW_HIVEONLY",
         ["TITLE"] = "Locate Sentinel Pillar",
         ["ICON"] = "TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS"
-    }
+    },
 }
 
 ANIMS = {}

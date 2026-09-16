@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Unlock costs"
-GameVersion = "7_01"
+GameVersion = "7_02"
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
 UpgradeCMult	=		1.2							--Vanilla cost is	60		This multiplies the vanilla "BaseValue", affecting both purchase and selling prices.	E.G. "1.2" means you sell them for 1.2x the vanilla price, and shops charge 1.2x more
@@ -45,8 +45,9 @@ MachineMult	=						3			--Multiplier applied to default cost of 10 Salvaged Data	
 MedRefinerMult	=					1.5			--Multiplier applied to default cost of 10 Salvaged Data
 AntimatterReactorMult	=			2			--Multiplier applied to default cost of 20 Salvaged Data
 FabricatorsMult	=					10			--Multiplier applied to default cost of 1 Salvaged Data (These are the Barrel/Crate Fabricators that spawn items)
-WonderProjectorMult	=				0.5			--Multiplier applied to default cost of 12 Salvaged Data
+AppearanceWonderMult	=			0.5			--Multiplier applied to default cost of 10 or 12 Salvaged Data
 AutoFishTrapMult	=				6			--Multiplier applied to default cost of 1 Salvaged Data
+DeepSpaceBaseMult	=				0.2			--Multiplier applied to default cost of 5 Salvaged Data
 
 StorageContainers012Mult	=		1			--Multiplier applied to default cost of 5 Salvaged Data for Containers 0, 1, & 2	(These are the only ones given freely by the base building mission in PTSd), and 1 Salvaged Data for Cargo Racks 0, 1, & 2
 StorageContainers345Mult	=		2			--Multiplier applied to default cost of 5 Salvaged Data for Containers 3, 4, & 5, and 1 Salvaged Data for Cargo Racks 3, 4, & 5
@@ -1170,9 +1171,10 @@ RecipeChangesBase	=			--For items which have their data in NMS_MODULARCUSTOMISAT
 	},
 	{
 		{
-			WonderProjectorMult
+			AppearanceWonderMult
 		},
 		{
+			"DRESSING_TABLE",				--10	Appearance Modifier
 			"HOLO_DISCO_0"					--12	Wonder Projector
 		}
 	},
@@ -1182,6 +1184,14 @@ RecipeChangesBase	=			--For items which have their data in NMS_MODULARCUSTOMISAT
 		},
 		{
 			"BUILDSEAHARVEST"				--1	Automated Trap
+		}
+	},
+	{
+		{
+			DeepSpaceBaseMult
+		},
+		{
+			"SB_BEACON"						--5	Deep-Space Base Computer
 		}
 	},
 	{
@@ -2516,7 +2526,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_DESCRIPTION"]		= "Greatly increases the cost for unlocking various technologies, blueprints, recipes, upgrades, mainly aiming for those found in the Anomaly",         
   ["MOD_AUTHOR"]			= "Xen0nex",         
   ["NMS_VERSION"]			= GameVersion,     
-  ["EXML_CREATE"] = "FALSE",
+  --["EXML_CREATE"] = "FALSE",
   ["MODIFICATIONS"] 		= 
     {
 	    {
@@ -2910,6 +2920,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] = AddTradeRoom
                         },
 						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "MESSAGE"},
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							["CREATE_HOS"] = "TRUE",
+                            ["ADD"] = AddSingleHOESChild("SB_BEACON")
+                        },
+						{
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "BUILDTERMINAL"},		--Removes vanilla Trade Terminal tree
                             ["REMOVE"] = "SECTION"
                         },
@@ -2917,6 +2933,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "DRESSING_TABLE"},
 							["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = AddTradeRoom
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "MESSAGE"},
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							["CREATE_HOS"] = "TRUE",
+                            ["ADD"] = AddSingleHOESChild("SB_BEACON")
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Unlockable", "PLANTERMEGA"},

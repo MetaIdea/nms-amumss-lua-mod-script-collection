@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "JJs.Better.Ships.V.5.3",
+["MOD_FILENAME"]  = "JJs.Better.Ships.V.5.4",
 ["MOD_AUTHOR"]    = "JJHookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.45",
+["NMS_VERSION"]   = "7.00",
 ["MODIFICATIONS"] =
   {
     {
@@ -364,6 +364,32 @@ NMS_MOD_DEFINITION_CONTAINER =
 				<Property name="FrigateClass" value="Combat" />
 			</Property>
 		</Property>
+		<Property name="ShipModels" value="GcAISpaceshipModelData" _id="RASAMA">
+			<Property name="Id" value="RASAMA" />
+			<Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/RASAMAMAGOLD.SCENE.MBIN" />
+			<Property name="Class" value="GcSpaceshipClasses">
+				<Property name="ShipClass" value="Sail" />
+			</Property>
+			<Property name="AIRole" value="GcAISpaceshipRoles">
+				<Property name="AIShipRole" value="Standard" />
+			</Property>
+			<Property name="FrigateClass" value="GcFrigateClass">
+				<Property name="FrigateClass" value="Combat" />
+			</Property>
+		</Property>
+		<Property name="ShipModels" value="GcAISpaceshipModelData" _id="VINTAGE">
+			<Property name="Id" value="VINTAGE" />
+			<Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/VINTAGEINTERCEPTOR.SCENE.MBIN" />
+			<Property name="Class" value="GcSpaceshipClasses">
+				<Property name="ShipClass" value="Sail" />
+			</Property>
+			<Property name="AIRole" value="GcAISpaceshipRoles">
+				<Property name="AIShipRole" value="Standard" />
+			</Property>
+			<Property name="FrigateClass" value="GcFrigateClass">
+				<Property name="FrigateClass" value="Combat" />
+			</Property>
+		</Property>
 ]]
             },
             {
@@ -382,6 +408,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 				<Property name="Spaceships" value="WRACERSE" _index="31" />
 				<Property name="Spaceships" value="SPOOK" _index="32" />
 				<Property name="Spaceships" value="ALIEN3" _index="33" />
+				<Property name="Spaceships" value="RASAMA" _index="34" />
+				<Property name="Spaceships" value="VINTAGE" _index="35" />
 ]]
             },
           }

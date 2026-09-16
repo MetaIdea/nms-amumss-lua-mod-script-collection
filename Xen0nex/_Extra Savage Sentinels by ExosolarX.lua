@@ -268,7 +268,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]				= "Babscoole",		--Edited by Xen0nex
 ["MOD_DESCRIPTION"]			= Description,
 ["NMS_VERSION"]				= "5.57",
-["EXML_CREATE"] = "FALSE",
+--["EXML_CREATE"] = "FALSE",
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE",
 ["MODIFICATIONS"] 			= 
 	{

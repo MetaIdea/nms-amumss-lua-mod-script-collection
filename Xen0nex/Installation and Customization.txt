@@ -1,0 +1,24 @@
+Installation=============================================================================================
+
+1.	Browse to No Man's Sky\GAMEDATA\MODS.
+2.	Place all the individual PTSd module folders  directly into the MODS folder.
+3.	If editing / merging the "PTSd Prices and Tech etc" module using the .lua files to generate a .MBIN mod with AMUMSS, make sure to either include the LocTable.txt file in the ModScript folder, or put the previous LocTable.MXML file into the new mod folder generated 
+4.	Start the game and wait for the splash screen to disappear.
+5.	If done correctly the game will display a warning just before displaying the selection of saved games.
+6.	More instructions / troubleshooting can be found at:	https://docs.google.com/document/d/18k5VfvzLXbpBrAGGO7LK30c2Ta_lWQ5F5YgEpuwKZ6M/edit?tab=t.0#heading=h.ehb5mhant5n2
+
+Merging or Customizing===================================================================================
+
+1.	Install latest version of AMUMSS from here:	https://github.com/HolterPhylo/AMUMSS/releases
+2.	Follow instructions for using AMUMSS to merge .lua files here:	https://www.nexusmods.com/nomanssky/mods/2626
+3.	Or, make edits to the .lua files and re-pak with AMUMSS using the instructions at the above link.
+4.	A special search or grep tool can make searching for particular things to change within all of PTSd's .lua files easier, such as grepWin from here: https://tools.stefankueng.com/grepWin.html .  E.G. To search all the .lua files for "Biodome" to see & modify how PTSd changes the crafting cost, recipe unlock cost, power usage, etc. of Biodomes.
+
+Viewing PTSd's text edits in other Languages==============================================================
+
+PTSd edits the names & descriptions of many vanilla items/technologies/difficulty settings to display info that is accurate for PTSd or give additional context / tips. If playing on a computer not set to English, by default these edits to vanilla items are not shown, since they are all in English. 
+If you want to see the accurate info and added context / tips (in English), you can force them to display even when using other language settings by following the instructions at the top of the "PTSd UI Description Adjustments.lua" file in the "PTSd Miscellaneous" module folder.
+
+
+
+Full PTSd mod details, usage guide, and recommended mods here:	https://www.nexusmods.com/nomanssky/mods/2225

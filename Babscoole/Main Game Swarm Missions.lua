@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Main Game Swarm Missions",
 ["MOD_AUTHOR"]      = "OwenBoogie",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.4",
+["NMS_VERSION"]     = "7.01",
 ["MOD_DESCRIPTION"] = "Allows you to access swarm missions outside of the expidition",
 ["MODIFICATIONS"]   =
   {

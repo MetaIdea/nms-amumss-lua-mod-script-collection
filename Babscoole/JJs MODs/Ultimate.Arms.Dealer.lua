@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Ultimate.Arms.Dealer.V.2.4",
+["MOD_FILENAME"]  = "Ultimate.Arms.Dealer.V.2.5",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole & Lyravega",
-["NMS_VERSION"]   = "6.45",
+["NMS_VERSION"]   = "7.00",
 ["MODIFICATIONS"] =
   {
     {
@@ -48,6 +48,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="File" value="MODELS/COMMON/WEAPONS/MULTITOOL/ATLASMULTITOOL.SCENE.MBIN" />
       <Property name="MinDraw" value="10" />
       <Property name="MaxDraw" value="10" />
+      <Property name="PoolProbability" value="1.000000" />
+      <Property name="PoolType" value="GcMultitoolPoolType">
+        <Property name="MultiToolPoolType" value="Standard" />
+      </Property>
+    </Property>
+    <Property name="MultitoolPool" value="GcMultitoolPoolData" _index="8">
+      <Property name="File" value="MODELS/COMMON/WEAPONS/MULTITOOL/RETROMULTITOOL.SCENE.MBIN" />
+      <Property name="MinDraw" value="1" />
+      <Property name="MaxDraw" value="2" />
       <Property name="PoolProbability" value="1.000000" />
       <Property name="PoolType" value="GcMultitoolPoolType">
         <Property name="MultiToolPoolType" value="Standard" />
@@ -201,6 +210,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="WeaponShop" />
@@ -224,6 +234,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\NPCPLACEMENTSHOP.ENTITY.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children">
         <Property name="Children" value="TkSceneNodeData" _index="0">
           <Property name="Name" value="Tent" />
@@ -247,6 +258,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\PIRATES\SMALLSHACK.SCENE.MBIN" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -271,6 +283,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="MODELS\JJ_RUG0.SCENE.MBIN" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -299,6 +312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="3">
@@ -318,6 +332,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="4">
@@ -342,6 +357,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="5">
@@ -366,6 +382,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="6">
@@ -390,6 +407,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="7">
@@ -414,6 +432,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="8">
@@ -438,6 +457,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="9">
@@ -462,6 +482,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
             </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="10">
@@ -521,11 +542,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-              <Property name="Name" value="MATERIAL" />
-              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-            </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
         <Property name="Children" value="TkSceneNodeData" _index="11">
@@ -585,11 +603,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="LIGHTLAYERS" />
               <Property name="Value" value="3" />
             </Property>
-            <Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-              <Property name="Name" value="MATERIAL" />
-              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-            </Property>
           </Property>
+          <Property name="InstanceTransforms" />
           <Property name="Children" />
         </Property>
       </Property>
@@ -630,6 +645,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="1" />
     </Property>
   </Property>
+  <Property name="InstanceTransforms" />
   <Property name="Children">
     <Property name="Children" value="TkSceneNodeData" _index="0">
       <Property name="Name" value="Weapon_1" />
@@ -653,6 +669,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\CRATE_WEAPON.SCENE.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="1">
@@ -677,6 +694,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\CRATE_WEAPON.SCENE.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
     <Property name="Children" value="TkSceneNodeData" _index="2">
@@ -701,6 +719,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\CRATE_WEAPON.SCENE.MBIN" />
         </Property>
       </Property>
+      <Property name="InstanceTransforms" />
       <Property name="Children" />
     </Property>
   </Property>

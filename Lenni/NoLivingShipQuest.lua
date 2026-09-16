@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]	= "NoLivingShipQuest.pak",
 ["MOD_AUTHOR"]		= "Lenni",
-["NMS_VERSION"]		= "5.10",
+["NMS_VERSION"]		= "7.02",
 ["MOD_DESCRIPTION"]	= "Removes the long Living Ship introduction quest",
 ["MODIFICATIONS"]	=
 	{
@@ -15,34 +15,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]		= {"Id", "ALIEN_SHIP1"},
-							["VALUE_CHANGE_TABLE"] 		=
-							{
-								{ "Dialog", "ALIEN_HAIL_LOOP" },
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"]		= {"Id", "ALIEN_SHIP2"},
-							["VALUE_CHANGE_TABLE"] 		=
-							{
-								{ "Dialog", "ALIEN_HAIL_LOOP" },
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"]		= {"Id", "ALIEN_SHIP3"},
-							["VALUE_CHANGE_TABLE"] 		=
-							{
-								{ "Dialog", "ALIEN_HAIL_LOOP" },
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"]		= {"Id", "ALIEN_SHIP4"},
-							["VALUE_CHANGE_TABLE"] 		=
-							{
-								{ "Dialog", "ALIEN_HAIL_LOOP" },
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"]		= {"Id", "ALIEN_SHIP5"},
 							["VALUE_CHANGE_TABLE"] 		=
 							{
 								{ "Dialog", "ALIEN_HAIL_LOOP" },

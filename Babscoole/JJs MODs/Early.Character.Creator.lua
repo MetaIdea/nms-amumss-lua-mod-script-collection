@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Early.Character.Creator.V.2.7",
+["MOD_FILENAME"]  = "Early.Character.Creator.V.2.8",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.45",
+["NMS_VERSION"]   = "7.00",
 ["MODIFICATIONS"] =
   {
     {
@@ -233,10 +233,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
 					<Property name="Name" value="LIGHTLAYERS" />
 					<Property name="Value" value="3" />
-				</Property>
-				<Property name="Attributes" value="TkSceneNodeAttributeData" _index="10">
-					<Property name="Name" value="MATERIAL" />
-					<Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
 				</Property>
 			</Property>
 			<Property name="Children" />

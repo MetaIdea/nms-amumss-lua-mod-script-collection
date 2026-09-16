@@ -5,7 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "Reduced Launch Cost 41% 2.4X.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",				--Edited by Xen0nex
 ["NMS_VERSION"]				= "4.41",
-["EXML_CREATE"] = "FALSE",
+--["EXML_CREATE"] = "FALSE",
 ["MOD_DESCRIPTION"]			= "This mods makes each launch costing 41% instead of 50% at base, to make the -20% Launch Cost Tech useful for all ship types.",
 ["MODIFICATIONS"] 			= 
 	{

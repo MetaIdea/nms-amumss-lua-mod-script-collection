@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Floodlights.V.2.4",
+["MOD_FILENAME"]  = "Floodlights.V.2.5",
 ["MOD_AUTHOR"]    = "JJHookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "6.32",
+["NMS_VERSION"]   = "7.00",
 ["MODIFICATIONS"] =
   {
     {

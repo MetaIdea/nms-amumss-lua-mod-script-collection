@@ -32,6 +32,7 @@ PB_TABLE =
   {"LargeBuilding",          "0",  "0"},
   {"SentinelDistressSignal", "1",  "0"},
   {"AbandonedRobotCamp",     "1",  "0"},
+  {"Crashed_Swarm",          "1",  "0"},
 }
 
 NMS_MOD_DEFINITION_CONTAINER =

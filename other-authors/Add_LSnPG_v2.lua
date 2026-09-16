@@ -3,7 +3,7 @@ Mod id				3443
 Mod category		Buildings
 Mod name			Add Legacy Structures and Planetary Glitches
 Mod language		English
-Current version		6.45.1
+Current version		7.02
 Author				DY230
 Nexus URL			https://www.nexusmods.com/nomanssky/mods/3443
 ]]
@@ -11,7 +11,7 @@ Nexus URL			https://www.nexusmods.com/nomanssky/mods/3443
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME    = "___230_Add_LSnPG_v2",
 	MOD_AUTHOR      = "DY230",
-	NMS_VERSION     = "6.45.1",
+	NMS_VERSION     = "7.02",
 	MOD_DESCRIPTION = "One key unlock legacy structures and planetary glitches blueprints.",
 	MODIFICATIONS = {
 		{
@@ -29,6 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	<Property name="Rewards">
 		<Property name="Rewards" value="RW_OKLNG" />
 	</Property>
+	<Property name="MarkInteractionComplete" value="false" />
 </Property>
 ]],
 						},
