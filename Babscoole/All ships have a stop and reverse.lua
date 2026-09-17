@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "All ships have a stop and reverse",
 ["MOD_AUTHOR"]      = "Phantom7z1",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.40",
+["NMS_VERSION"]     = "7.03",
 ["MOD_DESCRIPTION"] = "All ships have a stop and reverse",
 ["MODIFICATIONS"]   =
   {
@@ -21,6 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"ControlLight",      "PlanetEngine"},
                 {"ControlHeavy",      "PlanetEngine"},
                 {"ControlHeavyHover", "PlanetEngine"},
+                {"ControlCorvette"    "PlanetEngine"},
                 {"ControlHover",      "PlanetEngine"},
               },
               ["VALUE_CHANGE_TABLE"] =

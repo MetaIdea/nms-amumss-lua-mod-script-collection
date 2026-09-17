@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "7_01"
+GameVersion = "7_03"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -2338,7 +2338,7 @@ function SubstanceReward (Substance, Min, Max, Chance)
 					<Property name="ID" value="]]..Substance..[[" />
 					<Property name="AmountMin" value="]]..Min..[[" />
 					<Property name="AmountMax" value="]]..Max..[[" />
-					<Property name="DisableMultiplier" value="false" />
+					<Property name="DisableMultiplier" value="true" />
 					<Property name="RewardAsBlobs" value="false" />
 					<Property name="UseFuelMultiplier" value="false" />
 					<Property name="Silent" value="false" />
@@ -5900,6 +5900,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			--Adding extra rewards to Expedition milestone rewards in order to allow you to craft the required Expedition tech with PTSd's harder tech crafting recipes
+				--NOTE: There seems to be a limit of 6 separate rewards allowed for each milestone (although one of those rewards can be a GcRewardMultiSpecificItems reward)
 				--Remnant Expedition
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S21_S1M1",	"Items", "GcMultiSpecificItemEntry"},
@@ -5944,109 +5945,142 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 				--Cosmos Expedition
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M2",	"List", "GcRewardTableItem"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M2"},
+				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = SubstanceReward ("RED2", "125", "125", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M2",	"List", "GcRewardTableItem"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M2"},
+				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = SubstanceReward ("GREEN2", "50", "50", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M4",	"List", "GcRewardTableItem"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M4"},
+				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = ProductReward ("ATLAS_SEED_1", "3", "3", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M4",	"List", "GcRewardTableItem"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M4"},
+				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = ProductReward ("ATLAS_SEED_3", "3", "3", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M4",	"List", "GcRewardTableItem"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M4"},
+				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = ProductReward ("ATLAS_SEED_5", "3", "3", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M7",	"List", "GcRewardTableItem"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M7"},
+				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = SubstanceReward ("GREEN2", "75", "75", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M1",	"List", "GcRewardTableItem"},
-				["ADD"] = SubstanceReward ("GREEN2", "75", "75", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M1",	"List", "GcRewardTableItem"},
-				["ADD"] = ProductReward ("ATLAS_SEED_4", "3", "3", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M1",	"List", "GcRewardTableItem"},
-				["ADD"] = SubstanceReward ("PURPLE2", "160", "160", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M1",	"List", "GcRewardTableItem"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M1"},
+				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = SpecificTechReward ("SUB_BINOCSA", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M1",	"List", "GcRewardTableItem"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M1"},
+				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = SpecificTechReward ("SUB_BINOCS0", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M7",	"List", "GcRewardTableItem"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M1"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Substance", "GREEN2", "75"),
+				["ADD_OPTION"]  = "ADDendSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M1"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Substance", "PURPLE2", "160"),
+				["ADD_OPTION"]  = "ADDendSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M1"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Product", "ATLAS_SEED_4", "3"),
+				["ADD_OPTION"]  = "ADDendSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M7"},
+				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = SubstanceReward ("GREEN2", "75", "75", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S3M9",	"List", "GcRewardTableItem"},
-				["ADD"] = ProductReward ("QUAD_PROD", "2", "2", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S3M9"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Product", "QUAD_PROD", "2"),
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S4M2",	"List", "GcRewardTableItem"},
-				["ADD"] = SubstanceReward ("GASGIANT1", "160", "160", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S4M2"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Substance", "GASGIANT1", "160"),
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S4M3",	"List", "GcRewardTableItem"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S4M2"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Product", "ATLAS_SEED_2", "1"),
+				["ADD_OPTION"]  = "ADDendSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S4M3"},
+				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = ProductReward ("ATLAS_SEED_4", "3", "3", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S4M9",	"List", "GcRewardTableItem"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S4M4"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Substance", "RED2", "100"),
+				["ADD_OPTION"]  = "ADDendSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S4M9"},
+				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = SubstanceReward ("BLUE2", "80", "80", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M2",	"List", "GcRewardTableItem"},
-				["ADD"] = ProductReward ("ATLAS_SEED_6", "3", "3", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M2"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Product", "ATLAS_SEED_6", "3"),
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M2",	"List", "GcRewardTableItem"},
-				["ADD"] = ProductReward ("DRONE_SALVAGE", "4", "4", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M2"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Product", "DRONE_SALVAGE", "4"),
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M2",	"List", "GcRewardTableItem"},
-				["ADD"] = SubstanceReward ("ROBOT2", "50", "50", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M2"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Substance", "ROBOT2", "50"),
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M6",	"List", "GcRewardTableItem"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M6"},
+				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = SubstanceReward ("RED2", "50", "50", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M6",	"List", "GcRewardTableItem"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M6"},
+				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = ProductReward ("GRAVBALL", "8", "8", "100"),
-				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			--[[
 			{

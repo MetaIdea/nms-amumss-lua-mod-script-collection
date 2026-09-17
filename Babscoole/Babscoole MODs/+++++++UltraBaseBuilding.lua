@@ -1674,6 +1674,21 @@ NMS_MOD_DEFINITION_CONTAINER =
           }
         },
         {
+          ["MBIN_FILE_SOURCE"] = "GCDEBUGOPTIONS.GLOBAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                --{"DisableLimits",                "true"},
+                {"DisableBaseBuildingLimits",    "true"},
+                {"DisableBasePowerRequirements", "true"},
+                {"BaseDownloadTimeout",          "120"}, --ORIGINAL 40
+              }
+            }
+          }
+        },
+        {
           ["MBIN_FILE_SOURCE"] =
           {
             "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\FENCE.SCENE.MBIN",

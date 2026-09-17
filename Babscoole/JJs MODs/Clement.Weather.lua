@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Clement.Weather.V.1.3",
+["MOD_FILENAME"]  = "Clement.Weather.V.1.4",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "7.00",
+["NMS_VERSION"]   = "7.02",
 ["MODIFICATIONS"] =
   {
     {

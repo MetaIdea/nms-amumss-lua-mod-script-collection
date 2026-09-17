@@ -31,7 +31,7 @@ function InsertNewLight(T_New)
 		T[k] = v
 	end
 	return [[
-	<Property value="TkSceneNodeData">
+	<Property name="Children" value="TkSceneNodeData">
 	  <Property name="Name" value="]] .. T.name .. [[" />
 	  <Property name="NameHash" value="0" />
 	  <Property name="Type" value="LIGHT" />
@@ -46,48 +46,50 @@ function InsertNewLight(T_New)
 	    <Property name="ScaleY" value="]] .. T.sy .. [[" />
 	    <Property name="ScaleZ" value="]] .. T.sz .. [[" />
 	  </Property>
+	  <Property name="PlatformExclusion" value="0" />
 	  <Property name="Attributes">
-	    <Property value="TkSceneNodeAttributeData">
+	    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="0">
 	      <Property name="Name" value="FOV" />
 	      <Property name="Value" value="]] .. T.fov .. [[.0" />
 	    </Property>
-	    <Property value="TkSceneNodeAttributeData">
+	    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="1">
 	      <Property name="Name" value="FALLOFF" />
 	      <Property name="Value" value="]] .. T.f .. [[" />
 	    </Property>
-		<Property value="TkSceneNodeAttributeData">
-          <Property name="Name" value="FALLOFF_RATE" />
-          <Property name="Value" value="]] .. T.fr .. [[" />
-        </Property>
-	    <Property value="TkSceneNodeAttributeData">
-	      <Property name="Name" value="INTENSITY" />
+		<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
+          <Property name="Name" value="INTENSITY" />
 	      <Property name="Value" value="]] .. T.i .. [[.0" />
+        </Property>
+	    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="3">      
+		  <Property name="Name" value="RADIUS" />
+		  <Property name="Value" value="8.5" />
 	    </Property>
-	    <Property value="TkSceneNodeAttributeData">
+	    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="4">
 	      <Property name="Name" value="COL_R" />
 	      <Property name="Value" value="]] .. T.r .. [[000" />
 	    </Property>
-	    <Property value="TkSceneNodeAttributeData">
+	    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="5">
 	      <Property name="Name" value="COL_G" />
 	      <Property name="Value" value="]] .. T.g .. [[000" />
 	    </Property>
-	    <Property value="TkSceneNodeAttributeData">
+	    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="6">
 	      <Property name="Name" value="COL_B" />
 	      <Property name="Value" value="]] .. T.b .. [[000" />
 	    </Property>
-	    <Property value="TkSceneNodeAttributeData">
+	    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="7">
 	      <Property name="Name" value="COOKIE_IDX" />
 	      <Property name="Value" value="-1" />
 	    </Property>
-	    <Property value="TkSceneNodeAttributeData">
+	    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="8">
 	      <Property name="Name" value="VOLUMETRIC" />
 	      <Property name="Value" value="]] .. T.v .. [[" />
 	    </Property>
-	    <Property value="TkSceneNodeAttributeData">
-	      <Property name="Name" value="MATERIAL" />
-	      <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
+	    <Property name="Attributes" value="TkSceneNodeAttributeData" _index="9">
+	      <Property name="Name" value="LIGHTLAYERS" />
+		  <Property name="Value" value="3" />
 	    </Property>
 	  </Property>
+	  <Property name="InstanceTransforms" />
 	  <Property name="Children" />
         </Property>]]
 end
@@ -95,10 +97,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 5.8.pak", 
+["MOD_FILENAME"] 			= "ReLight 6.0.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "7.0",
+["NMS_VERSION"]				= "7.03",
 ["MOD_DESCRIPTION"]			= "This mod tunes most of the lights",
 ["MODIFICATIONS"] 			= 
 	{

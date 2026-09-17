@@ -927,7 +927,6 @@ if ALL_PARTS_ON_SPACESTATIONBASE then
     {
       {"BuildableOnSpaceStationBase",        "true"},
       {"BuildableOnSpaceStationBackSection", "true"},
-      {"BuildableOnSpaceStationExterior",    "true"},
     },
   }
 
@@ -941,7 +940,7 @@ if ALL_PARTS_ON_SPACESTATIONBASE then
       {
       {"BuildableOnSpaceStationBase",        "false"},
       {"BuildableOnSpaceStationBackSection", "false"},
-      {"BuildableOnSpaceStationExterior",    "false"},
+      -- {"BuildableOnSpaceStationExterior",    "false"},
       },
     }
   end
@@ -1147,7 +1146,7 @@ if FARM_IN_ANY_BIOME then
     ["PRECEDING_KEY_WORDS"] = {"DependentConnections"},
     ["VALUE_CHANGE_TABLE"] =
     {
-      {"ConnectionDistance", 100}
+      {"ConnectionDistance", 100.000000}
     }
   }
   end

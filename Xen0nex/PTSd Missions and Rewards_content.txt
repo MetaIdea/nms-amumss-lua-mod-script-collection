@@ -27,14 +27,14 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Missions and Rewards\PTSd Rewards Remixer.lua
-        MOD FILENAME: PTSd Rewards Remixer7_01.pak
+        MOD FILENAME: PTSd Rewards Remixer7_03.pak
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
      MOD MAINTENANCE: nil
      MOD DESCRIPTION: <<<Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts.>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-         NMS VERSION: 7_01
+         NMS VERSION: 7_03
 
 =====================
 Original information:

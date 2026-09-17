@@ -1632,32 +1632,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
-              ["REPLACE_TYPE"] = "ALL",
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"IsPlaceableFloatingInSpace",         "true"},
-                {"BuildableOnSpaceStationBase",        "true"},
-                {"BuildableOnSpaceStationBackSection", "true"},
-                {"BuildableOnSpaceStationExterior",    "true"},
-                {"BuildableOnPlanetBase",              "true"},
-                {"BuildableOnSpaceBase",               "true"},
-                {"BuildableOnFreighter",               "true"},
-                {"BuildableOnPlanet",                  "true"},
-                {"BuildableOnPlanetWithProduct",       "true"},
-                {"BuildableUnderwater",                "true"},
-                {"BuildableAboveWater",                "true"},
-                {"PlanetLimit",                        "0"},
-                {"RegionLimit",                        "0"},
-                {"PlanetBaseLimit",                    "0"},
-                {"FreighterBaseLimit",                 "0"},
-                {"CheckPlaceholderCollision",          "false"},
-                {"CanRotate3D",                        "true"},
-                {"CanScale",                           "true"},
-                --{"BaseBuildingDecorationType",         "Normal"},
-                --{"IsDecoration",                       "false"},
-              }
-            },
-            {
               ["PRECEDING_KEY_WORDS"] = {"Objects"},
               ["ADD"] = table.concat(BASEBUILDINGOBJECTSTABLE_ADDING_ALL)
             },
