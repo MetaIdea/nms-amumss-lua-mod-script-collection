@@ -49,7 +49,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.ship procedural lights',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.21',
+	NMS_VERSION			= '7.02',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES			= (
 		function()
