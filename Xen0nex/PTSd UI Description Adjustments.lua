@@ -1,5 +1,5 @@
 ModName = "PTSd UI Description Adjustments"
-GameVersion = "7_01"
+GameVersion = "7_03"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 --[[
@@ -637,7 +637,7 @@ SettleExpedNote = [[ &lt;HIGHLIGHT&gt;NOTE&lt;&gt;: Expeditions have a &lt;FUEL&
 
 NaniteRefineItem = [[&#xA;&#xA;Can be processed into &lt;STELLAR&gt;nanites&lt;&gt; in a refiner]]
 
-SalDataRefineItem = [[, or refined together with &lt;STELLAR&gt;Microprocessors&lt;&gt; to create a matching amount of &lt;TECHNOLOGY&gt;Salvaged Data&lt;&gt;.]]
+SalDataRefineItem = [[, or refined together with &lt;TRADE&gt;Microprocessors&lt;&gt; to create a matching amount of &lt;TECHNOLOGY&gt;Salvaged Data&lt;&gt;.]]
 
 SpaceGunkRefineItem = [[&#xA;&#xA;Processing in a refiner could eventually result in something &lt;STELLAR&gt;more useful&lt;&gt;...]]
 
@@ -649,11 +649,15 @@ SpeedBoostExplain = [[&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: Actual strength of &lt
 
 SpeedBoostLivingLauncher = [[ Also improves &lt;STELLAR&gt;speed&lt;&gt;.]]
 
+DoubleTridentKeyMessage = [[I pull back and the roar of the oceans subsides. As the light of the ruin fades, I find a &lt;HIGHLIGHT&gt;pair&lt;&gt; of ancient keys, perfect despite their age.]]
+
 RedeemExpeditionShipNote = [[&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: You can &lt;FUEL&gt;delete&lt;&gt; all pre-installed &lt;STELLAR&gt;tech and upgrade modules&lt;&gt; in this ship if you wish to use it without affecting game balance or progression.]]
 
 RedeemExpeditionLivingShipNote = [[&#xA;&lt;FUEL&gt;NOTE ALSO&lt;&gt;: You can avoid visiting &lt;FUEL&gt;red&lt;&gt;/&lt;TRADE&gt;green&lt;&gt;/&lt;TECHNOLOGY&gt;blue&lt;&gt; stars with this ship until you have obtained the relevant &lt;TECHNOLOGY&gt;hyperdrive tech&lt;&gt; or standard &lt;STELLAR&gt;Living Ship&lt;&gt; if you wish to avoid sequence-breaking the progression.]]
 
 RedeemExpeditionToolNote = [[&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: You can &lt;STELLAR&gt;Exchange&lt;&gt; any non-Pistol, non-Rifle Multi-Tool for this tool and then &lt;FUEL&gt;delete&lt;&gt; most pre-installed &lt;STELLAR&gt;tech and upgrade modules&lt;&gt; in this tool if you wish to use it without affecting game balance or progression.]]
+
+RedeemExpeditionCommonToolNote = [[&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: You can &lt;STELLAR&gt;Exchange&lt;&gt; any Pistol or Rifle Multi-Tool for this tool and then &lt;FUEL&gt;delete&lt;&gt; most pre-installed &lt;STELLAR&gt;tech and upgrade modules&lt;&gt; in this tool if you wish to use it without affecting game balance or progression.]]
 
 LoadedNutrientIngestorDetail = [[ - &lt;RED&gt;IGNORE THE&lt;&gt; # &lt;RED&gt;VALUE&lt;&gt;]]
 
@@ -675,7 +679,21 @@ MechAiPilotTechDescNote = [[&#xA;&#xA;&lt;FUEL&gt;WARNING&lt;&gt;: This &lt;TECH
 
 RecCircBrokenSlotNote = [[&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: Inspecting this slot with &lt;IMG&gt;REPAIR&lt;&gt; may reveal additional &lt;TECHNOLOGY&gt;Recycled Circuitry&lt;&gt; that may be required to fully repair this slot.]]
 
+AloeFleshNote = [[&#xA;&#xA;Can be cooked together with &lt;FUEL&gt;Condensed Carbon&lt;&gt; into &lt;TRADE&gt;Steamed Vegetables&lt;&gt; in a Nutrient Processor.]]
+
+RefreshingDrinkNote = [[&#xA;&#xA;Can be cooked together with &lt;STELLAR&gt;Refined Flour&lt;&gt; into a plant-based &lt;TRADE&gt;Cream&lt;&gt; in a Nutrient Processor.]]
+
 SimpleFoodNote = [[&#xA;&#xA;Will restore a small amount of &lt;FUEL&gt;Exosuit health&lt;&gt; if &lt;STELLAR&gt;consumed directly&lt;&gt;.]]
+
+CondStellarIceNote = [[&#xA;&#xA;Can be refined together with &lt;STELLAR&gt;Silver&lt;&gt; into &lt;TECHNOLOGY&gt;Tritium&lt;&gt; in a refiner.]]
+
+CometDustNote = [[&#xA;&#xA;Can be refined together with &lt;STELLAR&gt;Contaiminated Metal&lt;&gt; and &lt;STELLAR&gt;Gelatinous Fibres&lt;&gt; into &lt;TECHNOLOGY&gt;Di-hydrogen&lt;&gt; in a refiner]]
+
+ContMetalNote = [[&#xA;&#xA;Can be refined together with &lt;STELLAR&gt;Comet Dust&lt;&gt; and &lt;STELLAR&gt;Gelatinous Fibres&lt;&gt; into &lt;TECHNOLOGY&gt;Di-hydrogen&lt;&gt; in a refiner]]
+
+GelFibresNote = [[&#xA;&#xA;Can be refined together with &lt;STELLAR&gt;Comet Dust&lt;&gt; and &lt;STELLAR&gt;Contaiminated Metal&lt;&gt; into &lt;TECHNOLOGY&gt;Di-hydrogen&lt;&gt; in a refiner]]
+
+CrystalSulphideNote = [[&#xA;&#xA;Can be refined into &lt;CATALYST&gt;Sodium Nitrate&lt;&gt; in a refiner.]]
 
 AresTradeItem3 = "Sea Glass"
 
@@ -775,6 +793,10 @@ SalDataRefineItemDescs =
 		{"UI_SPIDER_PROD_DESC", "UI_DRONE_SALVAGE_DESC", "UI_DRONE_SHARD_DESC", "UI_SHIP_BRAIN_DESC", }
 	},
 	{
+		{7},		--"LANGUAGE\NMS_LOC9_ENGLISH.MBIN",
+		{"UI_HULK_RARE_DESC", "UI_SLIME_BLOB_DESC", "UI_SLIME_SAMPLE_DESC", }
+	},
+	{
 		{8},		--"LANGUAGE\NMS_UPDATE3_ENGLISH.MBIN",
 		{"UI_NAV_DATA_DESC", "UI_NAV_DROPPOD_DESC", "UI_MAINTAIN_SUB2_DESC", }
 	},
@@ -788,11 +810,11 @@ SpaceGunkRefineItemDescs =
 	},
 }
 
-DeepSpaceLowNaniteItem = [[&#xA;&#xA;Can also be sold for some &lt;STELLAR&gt;nanites&lt;&gt; to a quartermaster of a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, instead of selling for units to other vendors.]]
+DeepSpaceLowNaniteItem = [[&#xA;&#xA;Can also be sold for a &lt;STELLAR&gt;modest amount&lt;&gt; of &lt;STELLAR&gt;nanites&lt;&gt; to a quartermaster of a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, instead of selling for a substantial amount of units to other vendors.]]
 
-DeepSpaceMedNaniteItem = [[&#xA;&#xA;Fetches a &lt;STELLAR&gt;somewhat&lt;&gt; higher price in &lt;STELLAR&gt;nanites&lt;&gt; when sold to a quartermaster of a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, compared to selling for units to other vendors.]]
+DeepSpaceMedNaniteItem = [[&#xA;&#xA;Can instead be sold for a &lt;TRADE&gt;roughly equivalent value&lt;&gt; in &lt;STELLAR&gt;nanites&lt;&gt; to a quartermaster of a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, compared to selling for units to other vendors.]]
 
-DeepSpaceHighNaniteItem = [[&#xA;&#xA;Fetches a &lt;HIGHLIGHT&gt;significantly&lt;&gt; higher price in &lt;STELLAR&gt;nanites&lt;&gt; when sold to a quartermaster of a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, compared to selling for units to other vendors.]]
+DeepSpaceHighNaniteItem = [[&#xA;&#xA;Fetches a &lt;HIGHLIGHT&gt;significantly higher&lt;&gt; price in &lt;STELLAR&gt;nanites&lt;&gt; when sold to a quartermaster of a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, compared to selling for some units to other vendors.]]
 
 DeepSpaceHighNaniteItemDescs =
 {
@@ -1475,6 +1497,34 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", IonisedCobaltDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "FOOD_PLANT_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (AloeFleshNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "FOOD_DRINK_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (RefreshingDrinkNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_VENTGEM_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (CrystalSulphideNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "NPC_WATERPLAQUE_RES"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", DoubleTridentKeyMessage}
 							}
 						},
 					}
@@ -2794,6 +2844,62 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", AppendText (DeepSpaceMedNaniteItem)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_EXPD_SWARM_GUN_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (RedeemExpeditionCommonToolNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_EXPD_GUN_23_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (RedeemExpeditionCommonToolNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_EXPD_SHIP_23A_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (RedeemExpeditionShipNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_EXPD_SHIP_23B_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (RedeemExpeditionShipNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_ASTEROID_CRYSTAL_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (CondStellarIceNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_ASTBELT1_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (CometDustNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_HULK1_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (ContMetalNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SLIMEPOST1_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (GelFibresNote)}
 							}
 						},
 					}

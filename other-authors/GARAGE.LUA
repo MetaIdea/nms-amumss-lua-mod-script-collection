@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_PM_Garage.pak",
 ["MOD_AUTHOR"]    = "Phantom",
 ["LUA_AUTHOR"]    = "Phantom",
-["NMS_VERSION"]   = "1.0.",
+["NMS_VERSION"]   = "7.3",
 ["MODIFICATIONS"] =
     {
         {

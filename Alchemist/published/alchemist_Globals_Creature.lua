@@ -1,8 +1,8 @@
 Author = "alchemist"
-ModName = "Globals_CreatureGlobals"
+-- ModName = "Globals_Creature"
 BaseDescription = "Tweaks to pet timers and behavior."
-GameVersion = "4-03"
-ModVersion = "3"
+GameVersion = "7.03"
+-- ModVersion = "3"
 
 -- sanity to seconds conversion
 local function minutes(m)
@@ -18,7 +18,7 @@ local function days(d)
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= Author.."_"..ModName.."_"..GameVersion.."_"..ModVersion..".pak",
+["MOD_FILENAME"]	= Author.."_CompanionBehaviourAdjustments", -- .."_"..GameVersion.."_"..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 {["MBIN_CHANGE_TABLE"] = {
 
 {["MBIN_FILE_SOURCE"] = "GCCREATUREGLOBALS.MBIN",
-["EXML_CHANGE_TABLE"] = {
+["MXML_CHANGE_TABLE"] = {
 	{["VALUE_CHANGE_TABLE"] = {
 
 		-- incubations and growth (in seconds)

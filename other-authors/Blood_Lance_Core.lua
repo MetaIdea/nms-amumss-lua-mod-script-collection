@@ -446,16 +446,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = [[                    <Property name="AlwaysPresentProducts" value="ISI_TESSERACT" />]],
                         },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SmugglerStation","MinAmountOfProductAvailable"},
-                            ["REPLACE_TYPE"] = "ALLINSIDESECTION",
-                            ["VALUE_CHANGE_TABLE"] = {{"IGNORE","1"}},
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SmugglerStation","MaxAmountOfProductAvailable"},
-                            ["REPLACE_TYPE"] = "ALLINSIDESECTION",
-                            ["VALUE_CHANGE_TABLE"] = {{"IGNORE","1"}},
-                        },
                     },
                 },
             },

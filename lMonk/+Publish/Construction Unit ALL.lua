@@ -14,6 +14,8 @@ local base_tree = {
 			'UI_BASETECH_TREE',
 			'UI_EXOCRAFT_TREE',
 			'UI_WATER_TREE',
+			{'UI_STA_DECOR_TREE', {1,2,3}},
+			'UI_STA_FREIROOM_TREE',
 			'UI_DECALS_TREE',
 			'UI_POSTERS_TREE',
 			{'UI_DECORATION_TREE', {1,2,3,4,5,6,7}},
@@ -132,7 +134,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'MOD.lMonk.Construction Unit ALL',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '6.21',
+	NMS_VERSION			= '7.02',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

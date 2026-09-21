@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "7_01"
+GameVersion = "7_03"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -1069,141 +1069,36 @@ NewSalvagedDataRecipes =
 	{
 		"DATA_GLASS",	"PTSd: Glassy Data Extraction",		"DEEPSEA_PROD",	"Product",		"1",		"15",	"5"
 	},
+	{
+		"DATA_BBOX",	"PTSd: Packaged Data Extraction",	"HULK_BLACKBOX","Product",		"1",		"42",	"14"
+	},
+	{
+		"DATA_DCORE",	"PTSd: CPU Data Extraction",		"HULK_DATACORE","Product",		"1",		"12",	"4"
+	},
+	{
+		"DATA_SMUGL",	"PTSd: Suspicious Data Extraction",	"HULK_SMUGGLE","Product",		"1",		"30",	"10"
+	},
+	{
+		"DATA_SBLOB",	"PTSd: Viral Data Extraction",		"SLIME_BLOB",	"Product",		"1",		"42",	"14"
+	},
+	{
+		"DATA_SSTAR",	"PTSd: Pathogenic Data Extraction",	"SLIME_STAR",	"Product",		"1",		"42",	"14"
+	},
 }
 
+--Some new refiner recipes added by PTSd
 SilicateBasaltRatio = 2								--Sets how much Silicate Powder is created for every 1 Basalt refined with the new PTSd recipe
-SacVenomTritiumYield = 100							--Sets how much Tritium is created for every 1 Sac Venom & 2 Gravitino Balls refined together
-AlbumenPearlDiHydrogenYield = 50					--Sets how much Di-hydrogen is created for every 2 Albumen Pearls & 1 Gravitino Balls refined together
+SacVenomTritiumYield = 100							--Sets how much Tritium is created for every 1 Sac Venom & 2 Gravitino Balls refined together with the new PTSd recipe
+AlbumenPearlDiHydrogenYield = 50					--Sets how much Di-hydrogen is created for every 2 Albumen Pearls & 1 Gravitino Balls refined together with the new PTSd recipe
 
---Adds recipes for creating Tritium or Di-Hydrogen by refining Gravitino Balls with either Sac Venom or Albumen Pearls 
-NewSacVenomRecipe = 
-[[<Property name="Table" value="GcRefinerRecipe">
-      <Property name="Id" value="TRITIUM_SACVENOM" />
-      <Property name="RecipeType" value="RECIPE_TECHFRAG_PLANT_CAVE" />
-      <Property name="RecipeName" value="PTSd: Tritium Sublimation" />
-      <Property name="TimeToMake" value="1200" />
-      <Property name="Cooking" value="false" />
-      <Property name="Result" value="GcRefinerRecipeElement">
-        <Property name="Id" value="ROCKETSUB" />
-        <Property name="Type" value="GcInventoryType">
-          <Property name="InventoryType" value="Substance" />
-        </Property>
-        <Property name="Amount" value="]]..SacVenomTritiumYield..[[" />
-      </Property>
-      <Property name="Ingredients">
-        <Property name="Ingredients" value="GcRefinerRecipeElement">
-          <Property name="Id" value="GRAVBALL" />
-          <Property name="Type" value="GcInventoryType">
-            <Property name="InventoryType" value="Product" />
-          </Property>
-          <Property name="Amount" value="2" />
-        </Property>
-		<Property name="Ingredients" value="GcRefinerRecipeElement">
-          <Property name="Id" value="SACVENOM" />
-          <Property name="Type" value="GcInventoryType">
-            <Property name="InventoryType" value="Product" />
-          </Property>
-          <Property name="Amount" value="1" />
-        </Property>
-      </Property>
-    </Property>]]
+StellarIceTritiumYield = 100						--Sets how much Tritium is created for every 1 Condensed Stellar Ice & X Silver refined together with the new PTSd recipe
+StellarIceSilverIngr = 50							--Sets how much Silver is required to refine with Stellar Condensed Ice to make Tritium with the new PTSd recipe
 
-NewAlbumenPearlRecipe = 
-[[<Property name="Table" value="GcRefinerRecipe">
-      <Property name="Id" value="DIH_ALBUMENPEARL" />
-      <Property name="RecipeType" value="RECIPE_LAUNCHSUB" />
-      <Property name="RecipeName" value="PTSd: Di-Hydrogen Extraction" />
-      <Property name="TimeToMake" value="600" />
-      <Property name="Cooking" value="false" />
-      <Property name="Result" value="GcRefinerRecipeElement">
-        <Property name="Id" value="LAUNCHSUB" />
-        <Property name="Type" value="GcInventoryType">
-          <Property name="InventoryType" value="Substance" />
-        </Property>
-        <Property name="Amount" value="]]..AlbumenPearlDiHydrogenYield..[[" />
-      </Property>
-      <Property name="Ingredients">
-        <Property name="Ingredients" value="GcRefinerRecipeElement">
-          <Property name="Id" value="GRAVBALL" />
-          <Property name="Type" value="GcInventoryType">
-            <Property name="InventoryType" value="Product" />
-          </Property>
-          <Property name="Amount" value="1" />
-        </Property>
-		<Property name="Ingredients" value="GcRefinerRecipeElement">
-          <Property name="Id" value="ALBUMENPEARL" />
-          <Property name="Type" value="GcInventoryType">
-            <Property name="InventoryType" value="Product" />
-          </Property>
-          <Property name="Amount" value="2" />
-        </Property>
-      </Property>
-    </Property>]]
+DeepSpaceSubsDiHydrogenYield = 1					--Sets how much Di-hydrogen is created for every 1 Comet Dust, 1 Contaiminated Metal, & 3 Gelatinous Fibres refined together with the new PTSd recipe
 
 --Adds new recipes for using Aloe Flesh and Refreshing Drink since they otherwise have very few uses
-	--First recipe takes 1 Aloe Flesh and 1 Condensed Carbon to make 2 Steamed Vegetables
-	--Second Recipe takes 1 Refreshing Drink and 1 Refined Flour to make 1 Cream
-NewAloeAndDrinkRecipes =
-[[<Property name="Table" value="GcRefinerRecipe">
-      <Property name="Id" value="VEG_ALOE" />
-      <Property name="RecipeType" value="UI_COOK_VEG" />
-      <Property name="RecipeName" value="PTSd: Aloe Steaming" />
-      <Property name="TimeToMake" value="5" />
-      <Property name="Cooking" value="true" />
-      <Property name="Result" value="GcRefinerRecipeElement">
-        <Property name="Id" value="FOOD_R_VEG" />
-        <Property name="Type" value="GcInventoryType">
-          <Property name="InventoryType" value="Product" />
-        </Property>
-        <Property name="Amount" value="2" />
-      </Property>
-      <Property name="Ingredients">
-        <Property name="Ingredients" value="GcRefinerRecipeElement">
-          <Property name="Id" value="FUEL2" />
-          <Property name="Type" value="GcInventoryType">
-            <Property name="InventoryType" value="Substance" />
-          </Property>
-          <Property name="Amount" value="1" />
-        </Property>
-		<Property name="Ingredients" value="GcRefinerRecipeElement">
-          <Property name="Id" value="FOOD_P_DUSTWILD" />
-          <Property name="Type" value="GcInventoryType">
-            <Property name="InventoryType" value="Product" />
-          </Property>
-          <Property name="Amount" value="1" />
-        </Property>
-      </Property>
-    </Property>
-	<Property name="Table" value="GcRefinerRecipe">
-      <Property name="Id" value="CREAM_DRINK" />
-      <Property name="RecipeType" value="UI_COOK_DRINK" />
-      <Property name="RecipeName" value="PTSd: Plant-Based Cream" />
-      <Property name="TimeToMake" value="5" />
-      <Property name="Cooking" value="true" />
-      <Property name="Result" value="GcRefinerRecipeElement">
-        <Property name="Id" value="FOOD_R_CREAM" />
-        <Property name="Type" value="GcInventoryType">
-          <Property name="InventoryType" value="Product" />
-        </Property>
-        <Property name="Amount" value="1" />
-      </Property>
-      <Property name="Ingredients">
-        <Property name="Ingredients" value="GcRefinerRecipeElement">
-          <Property name="Id" value="FOOD_J_DUST" />
-          <Property name="Type" value="GcInventoryType">
-            <Property name="InventoryType" value="Product" />
-          </Property>
-          <Property name="Amount" value="1" />
-        </Property>
-        <Property name="Ingredients" value="GcRefinerRecipeElement">
-          <Property name="Id" value="FOOD_R_FLOUR" />
-          <Property name="Type" value="GcInventoryType">
-            <Property name="InventoryType" value="Product" />
-          </Property>
-          <Property name="Amount" value="1" />
-        </Property>
-      </Property>
-    </Property>]]
+AloeVegetables = 2									--Sets how many Steamed Vegetables are created from cooking 1 Aloe Flesh and 1 Condensed Carbon with the new PTSd recipe
+RefDrinkCream = 2									--Sets how many Cream are created from cooking 1 Refreshing Drink and 1 Refined Flour with the new PTSd recipe
 
 --For adding Hypnotic Eye as an ingredient in the final Worm Food recipe
 AddEyeball =
@@ -1309,6 +1204,81 @@ function Add2IngrRefinerRecipe (RecipeID, Type, Name, Time, ResultID, ResultType
     </Property>]]
 end
 
+function Add3IngrRefinerRecipe (RecipeID, Type, Name, Time, ResultID, ResultType, ResultAmount, Ingred1ID, Ingred1Type, Ingred1Amount, Ingred2ID, Ingred2Type, Ingred2Amount, Ingred3ID, Ingred3Type, Ingred3Amount)
+	return
+[[<Property name="Table" value="GcRefinerRecipe">
+      <Property name="Id" value="]]..RecipeID..[[" />
+      <Property name="RecipeType" value="]]..Type..[[" />
+      <Property name="RecipeName" value="]]..Name..[[" />
+      <Property name="TimeToMake" value="]]..Time..[[" />
+      <Property name="Cooking" value="false" />
+      <Property name="Result" value="GcRefinerRecipeElement">
+        <Property name="Id" value="]]..ResultID..[[" />
+        <Property name="Type" value="GcInventoryType">
+          <Property name="InventoryType" value="]]..ResultType..[[" />
+        </Property>
+        <Property name="Amount" value="]]..ResultAmount..[[" />
+      </Property>
+      <Property name="Ingredients">
+        <Property name="Ingredients" value="GcRefinerRecipeElement">
+          <Property name="Id" value="]]..Ingred1ID..[[" />
+          <Property name="Type" value="GcInventoryType">
+            <Property name="InventoryType" value="]]..Ingred1Type..[[" />
+          </Property>
+          <Property name="Amount" value="]]..Ingred1Amount..[[" />
+        </Property>
+		<Property name="Ingredients" value="GcRefinerRecipeElement">
+          <Property name="Id" value="]]..Ingred2ID..[[" />
+          <Property name="Type" value="GcInventoryType">
+            <Property name="InventoryType" value="]]..Ingred2Type..[[" />
+          </Property>
+          <Property name="Amount" value="]]..Ingred2Amount..[[" />
+        </Property>
+		<Property name="Ingredients" value="GcRefinerRecipeElement">
+          <Property name="Id" value="]]..Ingred3ID..[[" />
+          <Property name="Type" value="GcInventoryType">
+            <Property name="InventoryType" value="]]..Ingred3Type..[[" />
+          </Property>
+          <Property name="Amount" value="]]..Ingred3Amount..[[" />
+        </Property>
+      </Property>
+    </Property>]]
+end
+
+function Add2IngrCookingRecipe (RecipeID, Type, Name, Time, ResultID, ResultType, ResultAmount, Ingred1ID, Ingred1Type, Ingred1Amount, Ingred2ID, Ingred2Type, Ingred2Amount)
+	return
+[[<Property name="Table" value="GcRefinerRecipe">
+      <Property name="Id" value="]]..RecipeID..[[" />
+      <Property name="RecipeType" value="]]..Type..[[" />
+      <Property name="RecipeName" value="]]..Name..[[" />
+      <Property name="TimeToMake" value="]]..Time..[[" />
+      <Property name="Cooking" value="true" />
+      <Property name="Result" value="GcRefinerRecipeElement">
+        <Property name="Id" value="]]..ResultID..[[" />
+        <Property name="Type" value="GcInventoryType">
+          <Property name="InventoryType" value="]]..ResultType..[[" />
+        </Property>
+        <Property name="Amount" value="]]..ResultAmount..[[" />
+      </Property>
+      <Property name="Ingredients">
+        <Property name="Ingredients" value="GcRefinerRecipeElement">
+          <Property name="Id" value="]]..Ingred1ID..[[" />
+          <Property name="Type" value="GcInventoryType">
+            <Property name="InventoryType" value="]]..Ingred1Type..[[" />
+          </Property>
+          <Property name="Amount" value="]]..Ingred1Amount..[[" />
+        </Property>
+		<Property name="Ingredients" value="GcRefinerRecipeElement">
+          <Property name="Id" value="]]..Ingred2ID..[[" />
+          <Property name="Type" value="GcInventoryType">
+            <Property name="InventoryType" value="]]..Ingred2Type..[[" />
+          </Property>
+          <Property name="Amount" value="]]..Ingred2Amount..[[" />
+        </Property>
+      </Property>
+    </Property>]]
+end
+
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
@@ -1321,17 +1291,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN"},
 		["MXML_CHANGE_TABLE"] 	= 
 		{
-			{
-				["PRECEDING_KEY_WORDS"] = {"Table"},
-				["ADD"] = NewSacVenomRecipe
-			},
-			{
-				["PRECEDING_KEY_WORDS"] = {"Table"},
-				["ADD"] = NewAlbumenPearlRecipe
-			},
 			{--Adds Recipe for refining Basalt into Silicate Powder
 				["PRECEDING_KEY_WORDS"] = {"Table"},
 				["ADD"] = Add1IngrRefinerRecipe ("SILICATE_BASALT", "Requested Operation: Powderise", "PTSd: Basalt Pulverisation", "20", "SAND1", "Substance", SilicateBasaltRatio, "LAVA1", "Substance", "1")
+			},
+			{--Adds Recipe for creating Tritium by refining Gravitino Balls with Sac Venom
+				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = Add2IngrRefinerRecipe ("TRITIUM_SACVENOM", "RECIPE_TECHFRAG_PLANT_CAVE", "PTSd: Tritium Sublimation", "1200", "ROCKETSUB", "Substance", SacVenomTritiumYield, "GRAVBALL", "Product", "2", "SACVENOM", "Product", "1")
+			},
+			{--Adds Recipe for creating Di-Hydrogen by refining Gravitino Balls with Albumen Pearls 
+				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = Add2IngrRefinerRecipe ("DIH_ALBUMENPEARL", "RECIPE_LAUNCHSUB", "PTSd: Di-Hydrogen Extraction", "600", "LAUNCHSUB", "Substance", AlbumenPearlDiHydrogenYield, "GRAVBALL", "Product", "1", "ALBUMENPEARL", "Product", "2")
+			},
+			{--Adds Recipe for creating Tritium by refining Condensed Stellar Ice with Silver
+				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = Add2IngrRefinerRecipe ("TRITIUM_STELICE", "RECIPE_TECHFRAG_PLANT_CAVE", "PTSd: Tritium Purification", "1200", "ROCKETSUB", "Substance", StellarIceTritiumYield, "ASTEROID_CRYST", "Product", "1", "ASTEROID1", "Substance", StellarIceSilverIngr)
+			},
+			{--Adds Recipe for creating Di-Hydrogen by refining Comet Dust, Contaiminated Metal, & Gelatinous Fibres
+				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = Add3IngrRefinerRecipe ("DIH_DEEPSPACE", "RECIPE_LAUNCHSUB", "PTSd: Di-Hydrogen Purification", "12", "LAUNCHSUB", "Substance", DeepSpaceSubsDiHydrogenYield, "ASTBELT1", "Substance", "1", "HULK1", "Substance", "1", "SLIMEPOST1", "Substance", "3")
 			},
 			{--Adds Recipe for refining Sea Glass into Salvaged Glass
 				["PRECEDING_KEY_WORDS"] = {"Table"},
@@ -1349,9 +1327,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["PRECEDING_KEY_WORDS"] = {"Table"},
 				["ADD"] = Add1IngrRefinerRecipe ("VOID_SILVER", "Requested Operation: Silverize", "PTSd: Vortex Silvering", "120", "ASTEROID1", "Substance", "12", "CAVECUBE", "Product", "1")
 			},
-			{
+			{--Adds Recipe for creating Steamed Vegetables from Aloe Flesh and Condensed Carbon
 				["PRECEDING_KEY_WORDS"] = {"Table"},
-				["ADD"] = NewAloeAndDrinkRecipes
+				["ADD"] = Add2IngrCookingRecipe ("VEG_ALOE", "UI_COOK_VEG", "PTSd: Aloe Steaming", "5", "FOOD_R_VEG", "Product", AloeVegetables, "FUEL2", "Substance", "1", "FOOD_P_DUSTWILD", "Product", "1")
+			},
+			{--Adds Recipe for creating Cream from Refrshing Drink and Refined Flour
+				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = Add2IngrCookingRecipe ("CREAM_DRINK", "UI_COOK_DRINK", "PTSd: Plant-Based Cream", "5", "FOOD_R_CREAM", "Product", RefDrinkCream, "FOOD_J_DUST", "Product", "1", "FOOD_R_FLOUR", "Product", "1")
 			},
 			--[[	--WIP
 			{

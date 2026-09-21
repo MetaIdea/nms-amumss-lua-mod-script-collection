@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= 'Jank7.Exterior_Ramp_Controls_v1.4',
-	MOD_BATCHNAME 		= 'Jank7_Ultimate_Landing_Bays_A',
+	MOD_FILENAME 		= 'Jank7.Exterior_Ramp_Switch_B_v1.4',
+	MOD_BATCHNAME 		= 'Jank7_Ultimate_Landing_Bays_B',
 	MOD_AUTHOR			= 'Jank7',
 	NMS_VERSION			= '7.03',
 	MOD_DESCRIPTION		= 'Adds exterior ramp control switches to corvette landing bays A, B, and C',
@@ -19,12 +19,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			<Property name="NameHash" value="3701234567" />
 			<Property name="Type" value="LOCATOR" />
 			<Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="2.516000" />
-				<Property name="TransY" value="1.180000" />
-				<Property name="TransZ" value="3.680000" />
+				<Property name="TransX" value="2.455000" />
+				<Property name="TransY" value="0.280000" />
+				<Property name="TransZ" value="1.530000" />
 				<Property name="RotX" value="0.000000" />
 				<Property name="RotY" value="-90.000000" />
-				<Property name="RotZ" value="-10.000000" />
+				<Property name="RotZ" value="-62.000000" />
 				<Property name="ScaleX" value="1.000000" />
 				<Property name="ScaleY" value="1.000000" />
 				<Property name="ScaleZ" value="1.000000" />
@@ -64,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
 							<Property name="Name" value="RADIUS" />
-							<Property name="Value" value="0.226539" />
+							<Property name="Value" value="1.226539" />
 						</Property>
 					</Property>
 					<Property name="Children" />
@@ -115,9 +115,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			<Property name="NameHash" value="3701234568" />
 			<Property name="Type" value="LOCATOR" />
 			<Property name="Transform" value="TkTransformData">
-				<Property name="TransX" value="2.066000" />
-				<Property name="TransY" value="0.850000" />
-				<Property name="TransZ" value="1.820000" />
+				<Property name="TransX" value="2.106000" />
+				<Property name="TransY" value="0.255000" />
+				<Property name="TransZ" value="0.630000" />
 				<Property name="RotX" value="0.000000" />
 				<Property name="RotY" value="-90.000000" />
 				<Property name="RotZ" value="-62.000000" />
@@ -160,7 +160,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
 							<Property name="Name" value="RADIUS" />
-							<Property name="Value" value="0.226539" />
+							<Property name="Value" value="1.226539" />
 						</Property>
 					</Property>
 					<Property name="Children" />
@@ -256,7 +256,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						</Property>
 						<Property name="Attributes" value="TkSceneNodeAttributeData" _index="2">
 							<Property name="Name" value="RADIUS" />
-							<Property name="Value" value="0.226539" />
+							<Property name="Value" value="1.226539" />
 						</Property>
 					</Property>
 					<Property name="Children" />

@@ -17,7 +17,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"MaxCount", "0"},
                 {"RequiredSpaceStationFactionStanding", "-999"},
                 {"RequiredSpaceStationGuildStanding",   "-999"},
                 {"RequiredSpaceStationOutpostMissions", "0"},

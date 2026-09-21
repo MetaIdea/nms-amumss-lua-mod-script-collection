@@ -1,6 +1,9 @@
 ModName = "PTSd Product + Crafting Rebalance"
-GameVersion = "7_01"
+GameVersion = "7_03"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
+
+--Adds a note to the description of the Corvette Phase Beam Array weapon module, to explain the vanilla bug as of NMS v7.03 that causes Phase Beam DPS to increase by +100% for every weapon module installed on the corvette
+AddPhaseBeamArrayBugNote =	true			--false
 
 --Changes how effective certain substances are at recharging certain techs
 	--NOTE: Changing these will also affect recharging the Coolant Network / Thermal Layer techs, unless that is accounted for in "PTSd Rebalanced Hazard Tech.lua"
@@ -119,7 +122,7 @@ ProductSaleChanges =
 	{"UI_HULK_SMUGGLE_NAME",	4.5},				--32,000		Suspicious Cargo
 	{"UI_SLIME_BLOB_NAME",		1.0},				--190,000		Viral Heart
 	{"UI_SLIME_SAMPLE_NAME",	1.0},				--201,000		Pathogen Sac
-	{"UI_ASTEROID_CRYSTAL_NAME",6.0},				--13,000		Condensed Stellar Ice
+	{"UI_ASTEROID_CRYSTAL_NAME",7.0},				--13,000		Condensed Stellar Ice
 	
 	{"UI_ILLEGAL_PROD1_NAME",	3.0},				--2,000			Illegal Trade item
 	{"UI_ILLEGAL_PROD2_NAME",	3.0},				--9,000			Illegal Trade item
@@ -338,19 +341,28 @@ ProceduralProductSaleChanges =
 	{"ITEMGEN_SALVAGE_COMMON",		0.4,		8},			--100,000 ~ 300,000,		Dropweight 4		(57%)
 	{"ITEMGEN_SALVAGE_UNCOMMON",	0.4,		4},			--400,000 ~ 850,000,		Dropweight 2		(29%)
 	{"ITEMGEN_SALVAGE_RARE",		1.55,		1},			--1,100,000 ~ 2,400,000,	Dropweight 1		(14%)
+	
+}
+--Buffs the average profit from Sea Chests at undersea Ancient Ruins to be closer to treasure chests from land Ancient Ruins, which give an additional Common Tool Artifact in PTSd
+ProceduralSeaTreasureSaleChanges =
+{
+	--Sea Ruins Treasure 			Value Mult	Dropweight
+	{"Common",						2,			2},			--100,000 ~ 200,000,		Dropweight 10		(62.5%)
+	{"Uncommon",					1,			4},			--400,000 ~ 700,000,		Dropweight 6		(37.5%)
+	{"Rare",						1,			3},			--800,000 ~ 1,20,000,		Dropweight 1		(6.3%)
 }
 
 --Applies a multipler to the amount of nanites you can sell certain Deep Space items collected in a Corvette at a Deep Space Outpost
 DeepSpaceNaniteChanges =
 {
-	{"HULK_COMMON",			1.2},				--30		Industrial Salvage
-	{"HULK_REACTOR",		1.0},				--52		Fuel Rod
-	{"HULK_AUX",			1.0},				--140		Auxiliary Core
+	{"HULK_COMMON",			1.0},				--30		Industrial Salvage
+	{"HULK_REACTOR",		0.6},				--52		Fuel Rod
+	{"HULK_AUX",			0.6},				--140		Auxiliary Core
 	{"HULK_BLACKBOX",		1.5},				--462		Data Packet
-	{"HULK_CANISTER",		1.0},				--122		Compressed Plasma
-	{"HULK_CORE",			1.0},				--550		Reactor Core
+	{"HULK_CANISTER",		0.6},				--122		Compressed Plasma
+	{"HULK_CORE",			0.6},				--550		Reactor Core
 	{"HULK_DATACORE",		1.5},				--130		CPU Harness
-	{"HULK_LOCKBOX",		1.0},				--232		Stasis Locker
+	{"HULK_LOCKBOX",		0.6},				--232		Stasis Locker
 	{"HULK_SMUGGLE",		1.5},				--350		Suspicious Cargo
 	{"SLIME_BLOB",			1.5},				--475		Viral Heart
 	{"SLIME_STAR",			1.5},				--480		Pathogen Sac
@@ -2476,9 +2488,36 @@ for i = 1, #ProceduralProductSaleChanges do
 			}
 			ChangesToProceduralProductSales[#ChangesToProceduralProductSales+1] = 
 			{
-				["MATH_OPERATION"] 		= "*",
 				["SPECIAL_KEY_WORDS"] = {"Word", NameID},
 				["SECTION_UP"] = 1,
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"BaseValueMin", ValueMult},
+					{"BaseValueMax", ValueMult}
+				}
+			}
+end
+
+for i = 1, #ProceduralSeaTreasureSaleChanges do
+	local Rarity = ProceduralSeaTreasureSaleChanges[i][1]
+	local ValueMult = ProceduralSeaTreasureSaleChanges[i][2]
+	local DropWeight = ProceduralSeaTreasureSaleChanges[i][3]
+	
+			ChangesToProceduralProductSales[#ChangesToProceduralProductSales+1] = 
+			{
+				["SPECIAL_KEY_WORDS"] = {"SeaLoot", "GcProceduralProductData",		Rarity, "GcProductProceduralOnlyData"},
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"DropWeight", DropWeight}
+				}
+			}
+			ChangesToProceduralProductSales[#ChangesToProceduralProductSales+1] = 
+			{
+				["SPECIAL_KEY_WORDS"] = {"SeaLoot", "GcProceduralProductData",		Rarity, "GcProductProceduralOnlyData"},
+				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2696,6 +2735,18 @@ for i = 1, #BasicCorvetteParts do
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"BuyBaseMarkup", BasicCorvettePartBaseMarkup}
+				}
+			}
+end
+
+if AddPhaseBeamArrayBugNote then
+			ChangesToBaseProduct[#ChangesToBaseProduct+1] = 
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "B_TUR_C"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Description", "BLD_PHASBA_DESC"},
+					{"AltDescription", "BLD_PHASBA_DESC_ALT"}
 				}
 			}
 end

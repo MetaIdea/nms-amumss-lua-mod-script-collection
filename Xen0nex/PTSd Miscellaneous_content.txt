@@ -27,14 +27,14 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Miscellaneous\PTSd UI Description Adjustments.lua
-        MOD FILENAME: PTSd UI Description Adjustments7_01.pak
+        MOD FILENAME: PTSd UI Description Adjustments7_03.pak
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
      MOD MAINTENANCE: nil
      MOD DESCRIPTION: <<<Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-         NMS VERSION: 7_01
+         NMS VERSION: 7_03
 
 =====================
 Original information:

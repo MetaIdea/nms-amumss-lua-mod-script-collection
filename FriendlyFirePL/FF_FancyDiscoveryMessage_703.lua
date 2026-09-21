@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "FancyDiscoveryMessage"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "700"
+METADATA_NMS_VERSION    = "703"
 METADATA_MOD_DESC       = ""
 
 
@@ -23,6 +23,7 @@ VALUE_POSX = 51
 LINE1_POSY = 38
 LINE2_POSY = 40
 LINE3_POSY = 42
+LINE4_POSY = 44
 
 VCT_MOVE =
 {
@@ -218,6 +219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {"ID","ENTRY2",},
                             {"ID","ENTRY3",},
                             {"ID","ENTRY4",},
+                            {"ID","ENTRY5",},
                         },
                         ["VCT"] = VCT_MOVE,
                     },
@@ -321,7 +323,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
 
                     --------------------------------------------------
-                    -- ENTRY4: position around 50% in horizontal, 45% in vertical
+                    -- ENTRY4: position around 50% in horizontal, 42% in vertical
                     
                     {
                         ["SKW"] = {"ID","TITLE",},
@@ -346,11 +348,36 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
 
                     --------------------------------------------------
+                    -- ENTRY5: position around 50% in horizontal, 44% in vertical
+
+                    {
+                        ["SKW"] = {"ID","TITLE",},
+                        ["SECTION_ACTIVE"] = 4,
+                        ["VCT"] =
+                        {
+                            {"Position X",TITLE_POSX,},
+                            {"Position Y",LINE4_POSY,},
+                            {"AnchorPercent","true",},
+                        },
+                    },
+
+                    {
+                        ["SKW"] = {"ID","VALUE",},
+                        ["SECTION_ACTIVE"] = 4,
+                        ["VCT"] =
+                        {
+                            {"Position X",VALUE_POSX,},
+                            {"Position Y",LINE4_POSY,},
+                            {"AnchorPercent","true",},
+                        },
+                    },
+
+                    --------------------------------------------------
 
                     {
                         -- apply formatting for ENTRY titles
                         ["SKW"] = {"ID","TITLE",},
-                        ["SECTION_ACTIVE"] = {1,2,3,},
+                        ["SECTION_ACTIVE"] = {1,2,3,4,},
                         ["SECTION_UP_SPECIAL"] = 1,
                         ["VCT"] = VCT_TEXT_FONT0,
                     },
@@ -358,7 +385,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         -- align ENTRY titles to right
                         ["SKW"] = {"ID","TITLE",},
-                        ["SECTION_ACTIVE"] = {1,2,3,},
+                        ["SECTION_ACTIVE"] = {1,2,3,4,},
                         ["SECTION_UP_SPECIAL"] = 1,
                         ["VCT"] = VCT_TEXT_RIGHT,
                     },
@@ -366,7 +393,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         -- apply shadow colour
                         ["SKW"] = {"ID","TITLE",},
-                        ["SECTION_ACTIVE"] = {1,2,3,},
+                        ["SECTION_ACTIVE"] = {1,2,3,4,},
                         ["SECTION_UP_SPECIAL"] = 1,
                         ["VCT"] = VCT_TEXT_SHADOW,
                     },
@@ -374,7 +401,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         -- apply outline colour
                         ["SKW"] = {"ID","TITLE",},
-                        ["SECTION_ACTIVE"] = {1,2,3,},
+                        ["SECTION_ACTIVE"] = {1,2,3,4,},
                         ["SECTION_UP_SPECIAL"] = 1,
                         ["VCT"] = VCT_TEXT_OUTLINE_R,
                     },
@@ -382,7 +409,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         -- apply outline colour
                         ["SKW"] = {"ID","TITLE",},
-                        ["SECTION_ACTIVE"] = {1,2,3,},
+                        ["SECTION_ACTIVE"] = {1,2,3,4,},
                         ["SECTION_UP_SPECIAL"] = 1,
                         ["VCT"] = VCT_TEXT_OUTLINE_G,
                     },
@@ -390,7 +417,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         -- apply outline colour
                         ["SKW"] = {"ID","TITLE",},
-                        ["SECTION_ACTIVE"] = {1,2,3,},
+                        ["SECTION_ACTIVE"] = {1,2,3,4,},
                         ["SECTION_UP_SPECIAL"] = 1,
                         ["VCT"] = VCT_TEXT_OUTLINE_B,
                     },
@@ -400,7 +427,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         -- apply formatting for ENTRY values
                         ["SKW"] = {"ID","VALUE",},
-                        ["SECTION_ACTIVE"] = {1,2,3,},
+                        ["SECTION_ACTIVE"] = {1,2,3,4,},
                         ["SECTION_UP_SPECIAL"] = 1,
                         ["VCT"] = VCT_TEXT_FONT0,
                     },
@@ -408,7 +435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         -- align ENTRY values to left
                         ["SKW"] = {"ID","VALUE",},
-                        ["SECTION_ACTIVE"] = {1,2,3,},
+                        ["SECTION_ACTIVE"] = {1,2,3,4,},
                         ["SECTION_UP_SPECIAL"] = 1,
                         ["VCT"] = VCT_TEXT_LEFT,
                     },
@@ -416,7 +443,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         -- apply shadow colour
                         ["SKW"] = {"ID","VALUE",},
-                        ["SECTION_ACTIVE"] = {0,1,2,3,},
+                        ["SECTION_ACTIVE"] = {0,1,2,3,4,},
                         ["SECTION_UP_SPECIAL"] = 1,
                         ["VCT"] = VCT_TEXT_SHADOW,
                     },
@@ -424,7 +451,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         -- apply outline colour
                         ["SKW"] = {"ID","VALUE",},
-                        ["SECTION_ACTIVE"] = {0,1,2,3,},
+                        ["SECTION_ACTIVE"] = {0,1,2,3,4,},
                         ["SECTION_UP_SPECIAL"] = 1,
                         ["VCT"] = VCT_TEXT_OUTLINE_R,
                     },
@@ -432,7 +459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         -- apply outline colour
                         ["SKW"] = {"ID","VALUE",},
-                        ["SECTION_ACTIVE"] = {0,1,2,3,},
+                        ["SECTION_ACTIVE"] = {0,1,2,3,4,},
                         ["SECTION_UP_SPECIAL"] = 1,
                         ["VCT"] = VCT_TEXT_OUTLINE_G,
                     },
@@ -440,7 +467,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         -- apply outline colour
                         ["SKW"] = {"ID","VALUE",},
-                        ["SECTION_ACTIVE"] = {0,1,2,3,},
+                        ["SECTION_ACTIVE"] = {0,1,2,3,4,},
                         ["SECTION_UP_SPECIAL"] = 1,
                         ["VCT"] = VCT_TEXT_OUTLINE_B,
                     },

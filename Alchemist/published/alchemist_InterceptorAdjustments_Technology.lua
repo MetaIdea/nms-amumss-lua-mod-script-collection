@@ -1,8 +1,8 @@
 Author = "alchemist"
 ModName = "InterceptorAdjustments"
 BaseDescription = [[Balance adjustments for technology added by the Interceptor update.]]
-GameVersion = "6.03"
-ModVersion = "1"
+GameVersion = "7.03"
+-- ModVersion = "1"
 
 local Config = {
   ModifyProductCharge = {
@@ -39,7 +39,7 @@ local Config = {
 
 NMS_MOD_DEFINITION_CONTAINER = {
 
-MOD_FILENAME				= Author.."_"..ModName.."_"..GameVersion.."_"..ModVersion..".pak",
+MOD_FILENAME				= Author.."_"..ModName, -- .."_"..GameVersion.."_"..ModVersion..".pak",
 MOD_DESCRIPTION			= BaseDescription,
 MOD_AUTHOR					= Author,
 NMS_VERSION					= GameVersion,

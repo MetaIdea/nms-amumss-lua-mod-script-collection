@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Freighter Room Teleporter Fix 2.0.pak", 
+["MOD_FILENAME"] 			= "Freighter Room Teleporter Fix 2.0", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
 ["NMS_VERSION"]				= "7.0",

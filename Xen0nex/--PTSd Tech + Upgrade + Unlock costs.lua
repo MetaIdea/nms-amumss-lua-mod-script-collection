@@ -185,10 +185,13 @@ TechAdjustments =
 		"SUIT_REFINER2",	0.4			--Personal Refiner Mk 2					580 nanites
 	},
 	{
-		"UT_WATERJET",	0.3				--Efficient Water Jets					350 nanites
+		"UT_WATER",	1					--Aeration Membrane						120 nanites
 	},
 	{
-		"UT_WATERENERGY",	0.5			--Oxygen Rerouter						240 Nanites
+		"UT_WATERJET",	0.23			--Efficient Water Jets					350 nanites
+	},
+	{
+		"UT_WATERENERGY",	0.4			--Oxygen Rerouter						240 Nanites
 	},
 	{
 		"UT_SURVEY",	0.5				--Survey Device							320 Nanites

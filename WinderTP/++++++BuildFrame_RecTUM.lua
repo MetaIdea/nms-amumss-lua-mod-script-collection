@@ -20,12 +20,12 @@ SUBGROUP_MOVE_TABLE =
 	-- { ["SubGroup"] = "DECOFOSSILS", ["Name"] = "UI_BUILD_GRID_FOSSILS", ["From"] = "DECORATION", ["To"] = "EXOTICS" },
 	-- { ["SubGroup"] = "FREIGHTERROOMS", ["Name"] = "UI_BUILD_GRID_FREIGHTER_ROOMS", ["From"] = "FREIGHTER", ["To"] = "ROOMS" },
 	-- { ["SubGroup"] = "FREIGHTERTECH", ["Name"] = "UI_BUILD_GRID_FREIGHTER_TECH", ["From"] = "FREIGHTER", ["To"] = "PLANET_TECH" },
-	{ ["SubGroup"] = "FRE_TECH_OTHER", ["Name"] = "UI_BUILD_GRID_FREIGHTPORTABLE", ["From"] = "FREIGHTER_TECH", ["To"] = "FREIGHTER" },
-	{ ["SubGroup"] = "FRE_PLANTS", ["Name"] = "UI_BUILD_GRID_FREIGHTER_PLANTS", ["From"] = "FREIGHTER_BIO", ["To"] = "FREIGHTER" },
-	{ ["SubGroup"] = "FREIGHTERLEGACY", ["Name"] = "UI_BUILD_GRID_FREIGHT_LEGACY_S", ["From"] = "FREIGHT_LEGACY", ["To"] = "FREIGHTER" },
-	{ ["SubGroup"] = "FRE_IND_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_INDROOM", ["From"] = "FREIGHTER_IND", ["To"] = "FREIGHTER" },
-	{ ["SubGroup"] = "FRE_BIO_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_BIOROOM", ["From"] = "FREIGHTER_BIO", ["To"] = "FREIGHTER" },
-	{ ["SubGroup"] = "FRE_TECH_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_TECHROO", ["From"] = "FREIGHTER_TECH", ["To"] = "FREIGHTER" },
+	{ ["SubGroup"] = "FRE_TECH_OTHER", ["Name"] = "UI_BUILD_GRID_FREIGHTPORTABLE", ["From"] = "FREIGHTER_TECH", ["To"] = "SPACE" },
+	{ ["SubGroup"] = "FRE_PLANTS", ["Name"] = "UI_BUILD_GRID_FREIGHTER_PLANTS", ["From"] = "FREIGHTER_BIO", ["To"] = "SPACE" },
+	{ ["SubGroup"] = "FREIGHTERLEGACY", ["Name"] = "UI_BUILD_GRID_FREIGHT_LEGACY_S", ["From"] = "FREIGHT_LEGACY", ["To"] = "SPACE" },
+	{ ["SubGroup"] = "FRE_IND_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_INDROOM", ["From"] = "FREIGHTER_IND", ["To"] = "SPACE" },
+	{ ["SubGroup"] = "FRE_BIO_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_BIOROOM", ["From"] = "FREIGHTER_BIO", ["To"] = "SPACE" },
+	{ ["SubGroup"] = "FRE_TECH_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_TECHROO", ["From"] = "FREIGHTER_TECH", ["To"] = "SPACE" },
 	{ ["SubGroup"] = "T_FLOORS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_T", ["To"] = "BASIC_B" },
 	{ ["SubGroup"] = "S_FLOORS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_S", ["To"] = "BASIC_B" },
 	{ ["SubGroup"] = "F_FLOORS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_F", ["To"] = "BASIC_B" },
@@ -41,6 +41,7 @@ SUBGROUP_MOVE_TABLE =
 	{ ["SubGroup"] = "BASICWOOD", ["Name"] = "UI_BUILD_GRID_WOOD", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
 	{ ["SubGroup"] = "BASICCONCRETE", ["Name"] = "UI_BUILD_GRID_CONCRETE", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
 	{ ["SubGroup"] = "BASICMETAL", ["Name"] = "UI_BUILD_GRID_METAL", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
+	{ ["SubGroup"] = "STATION_EXT_DEC", ["Name"] = "UI_BUILD_GRID_STA_DEC", ["From"] = "STATION_EXT", ["To"] = "SPACE" },
 }
 
 COMPO_PART_TABLE =

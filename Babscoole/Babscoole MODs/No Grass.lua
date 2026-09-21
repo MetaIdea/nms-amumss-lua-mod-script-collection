@@ -10,6 +10,24 @@ NMS_MOD_DEFINITION_CONTAINER =
       ["MBIN_CHANGE_TABLE"] =
       {
         {
+          ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FLORAL\FLORALOBJECTSGRASS.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
+              },
+              ["SECTION_UP_SPECIAL"] = 1,
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Coverage", "0.000000"},
+              }
+            },
+          }
+        },
+        {
           ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGELUSH\HUGELUSHOBJECTSFULL.MBIN",
           ["MXML_CHANGE_TABLE"] =
           {
@@ -92,7 +110,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
                 {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
               },
-              ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
+              -- ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
               ["SECTION_UP_SPECIAL"] = 1,
               ["REPLACE_TYPE"] = "ALL",
               ["VALUE_CHANGE_TABLE"] =
@@ -141,7 +159,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
           }
-        },
+        },        
         {
           ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSFULL.MBIN",
           ["MXML_CHANGE_TABLE"] =
@@ -162,7 +180,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
           }
-        },
+        },        
         {
           ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSLOW.MBIN",
           ["MXML_CHANGE_TABLE"] =
@@ -325,7 +343,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
           }
-        },
+        },        
       }
     },
   }

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-MOD_FILENAME 			= "No Buried Technologies near Damaged Machineries 6.6.pak", 
+MOD_FILENAME 			= "No Buried Technologies near Damaged Machineries 6.7.pak", 
 MOD_AUTHOR				= "Lo2k",
 LUA_AUTHOR				= "Babscoole",
-NMS_VERSION				= "6.22",
+NMS_VERSION				= "7.03",
 MOD_DESCRIPTION			= "This mod removes buried Technologies near EACH AND EVERY damaged machinery",
 MODIFICATIONS 			= 
 	{

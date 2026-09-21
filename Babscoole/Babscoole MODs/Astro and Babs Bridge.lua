@@ -2027,6 +2027,18 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["REMOVE"] = "SECTION"
             },
             {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "GravityVolume"},
+                {"Name", "GravityCube12"},
+              },
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransZ", "-11.688696"},
+                {"ScaleZ", "1.800000"},
+              }
+            },
+            {
               ["PRECEDING_KEY_WORDS"] = {"Children"},
               ["ADD_OPTION"] = "ADDafterLINE",
               ["AUTO_GNH"] = "TRUE",
@@ -5206,6 +5218,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"Name", "connection2"},
               },
               ["REMOVE"] = "SECTION"
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] =
+              {
+                {"Name", "GravityVolume"},
+                {"Name", "GravityCube12"},
+              },
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TransZ", "-11.688696"},
+                {"ScaleZ", "1.800000"},
+              }
             },
             {
               ["PRECEDING_KEY_WORDS"] = {"Children"},

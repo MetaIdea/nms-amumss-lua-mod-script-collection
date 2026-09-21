@@ -28,7 +28,7 @@ GripBonusPercent - percentage of original grip strength
 MechTopSpeedPercent - percentage of original Minotaur engine top speed
 MechBoostSpeedPercent - percentage of original Minotaur boost speed
 ]],
-["NMS_VERSION"]   = "6.40",
+["NMS_VERSION"]   = "7.02",
 ["MODIFICATIONS"] =
   {
     {
@@ -138,6 +138,15 @@ MechBoostSpeedPercent - percentage of original Minotaur boost speed
               }
             },
             {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "SUB_RECHARGE"},
+              ["PRECEDING_KEY_WORDS"] = {"Vehicle_EngineFuelUse"},
+              ["SECTION_UP"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Bonus",   "0"},
+              }
+            },
+            {
               ["SPECIAL_KEY_WORDS"] = {"ID", "MECH_ENGINE"},
               ["PRECEDING_KEY_WORDS"] = {"Vehicle_EngineFuelUse"},
               ["SECTION_UP"] = 1,
@@ -171,6 +180,15 @@ MechBoostSpeedPercent - percentage of original Minotaur boost speed
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"Bonus",   "@*"..(SkidGripPercent / 100)},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "MECH_FUEL"},
+              ["PRECEDING_KEY_WORDS"] = {"Vehicle_EngineFuelUse"},
+              ["SECTION_UP"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Bonus",   "0"},
               }
             },
             {

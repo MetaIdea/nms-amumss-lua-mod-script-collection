@@ -35,11 +35,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
           }
         },
-      }
-    },
-    {
-      ["MBIN_CHANGE_TABLE"] =
-      {
         {
           ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\DUSKSKYCOLOURS.MBIN",
           ["MXML_CHANGE_TABLE"] =

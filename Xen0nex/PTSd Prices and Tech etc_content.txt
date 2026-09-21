@@ -123,14 +123,14 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\PTSd Product + Crafting Rebalance.lua
-        MOD FILENAME: PTSd Product + Crafting Rebalance7_01.pak
+        MOD FILENAME: PTSd Product + Crafting Rebalance7_03.pak
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
      MOD MAINTENANCE: nil
      MOD DESCRIPTION: <<<Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables.>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-         NMS VERSION: 7_01
+         NMS VERSION: 7_03
 
 =====================
 Original information:

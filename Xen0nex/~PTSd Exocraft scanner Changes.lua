@@ -685,17 +685,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Name","SUB_RADAR_SCAN_CRASH"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"RequiredTech", "SUB_BINOCS0"}
-				}
-			},
-			{
 				["SPECIAL_KEY_WORDS"] = {"Name","SUB_RADAR_SCAN_FREIGHTER"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"RequiredTech", "SUB_BINOCSA"}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Name","SUB_RADAR_SCAN_CRASH"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"RequiredTech", "SUB_BINOCS0"}
 				}
 			},
 			{
@@ -860,10 +860,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"CategoryID", "UI_PORTAL_CAT_TECH_VEH",	"Items", "MECH_SCAN"},
 				["ADD_OPTION"] = "ADDafterLINE",
+				["ADD"] = AddCatalogueEntry ("MECH_SCANA")
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"CategoryID", "UI_PORTAL_CAT_TECH_VEH",	"Items", "MECH_SCANA"},
+				["ADD_OPTION"] = "ADDafterLINE",
 				["ADD"] = AddCatalogueEntry ("MECH_SCAN0")
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"CategoryID", "UI_PORTAL_CAT_TECH_VEH",	"Items", "SUB_BINOCS"},
+				["ADD_OPTION"] = "ADDafterLINE",
+				["ADD"] = AddCatalogueEntry ("SUB_BINOCSA")
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"CategoryID", "UI_PORTAL_CAT_TECH_VEH",	"Items", "SUB_BINOCSA"},
 				["ADD_OPTION"] = "ADDafterLINE",
 				["ADD"] = AddCatalogueEntry ("SUB_BINOCS0")
 			},

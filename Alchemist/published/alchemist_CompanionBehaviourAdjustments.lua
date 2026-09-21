@@ -2,8 +2,8 @@ Author = "alchemist"
 ModName = "CompanionBehaviourAdjustments"
 --ModNexus = "https://www.nexusmods.com/nomanssky/mods/1871"
 BaseDescription = "Tweaks to pet behavior."
-GameVersion = "6.03"
-ModVersion = "1"
+GameVersion = "7.03"
+-- ModVersion = "1"
 
 -- BEGIN CONFIG
 
@@ -259,7 +259,7 @@ BEHAVIOR_TABLE = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= Author.."_"..ModName.."_"..GameVersion.."_"..ModVersion..".pak",
+["MOD_FILENAME"]	= Author.."_"..ModName, -- .."_"..GameVersion.."_"..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
@@ -267,7 +267,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 {["MBIN_CHANGE_TABLE"] = {
 
 {
-["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREPETBEHAVIOURTABLE.MBIN",
+["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/ECOSYSTEM/CREATUREPETBEHAVIOURTABLE.MBIN",
 ["MXML_CHANGE_TABLE"] = {
 
   -- Globals

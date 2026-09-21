@@ -119,4 +119,3 @@ Original information:
      MOD DESCRIPTION: <<<Makes storms permanent on extreme planets; edited to just make them more frequent and longer>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
          NMS VERSION: 500
-

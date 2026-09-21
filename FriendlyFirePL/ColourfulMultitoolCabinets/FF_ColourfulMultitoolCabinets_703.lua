@@ -4,8 +4,8 @@
 METADATA_MOD_NAME       = "ColourfulMultitoolCabinets"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "634"
-METADATA_MOD_DESC       = "this mod applies procedural colours to Multi-tool cabinets found on regulated and outlaw space stations."
+METADATA_NMS_VERSION    = "703"
+METADATA_MOD_DESC       = "This mod applies procedural colours to Multi-tool cabinets found on regulated and outlaw space stations, as well as deep space outposts."
 
 
 
@@ -24,6 +24,11 @@ FILE_MATERIAL_NORMAL_WEAPONHOLO =       "MODELS\SPACE\SPACESTATION\MODULARPARTST
 -- pirate station shop scene
 FILE_MODELS_PIRATE_WEAPONSHOP =         "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\PIRATES\SHOPWEAPON.SCENE.MBIN"
 
+-- deep space outpost rooms scenes
+FILE_MODELS_OUTPOST_LAYOUT1 =           "MODELS\SPACE\POI\OUTPOST\PARTS\LAYOUTS\LAYOUTSHOP_1.SCENE.MBIN"
+FILE_MODELS_OUTPOST_LAYOUT2 =           "MODELS\SPACE\POI\OUTPOST\PARTS\LAYOUTS\LAYOUTSHOP_2.SCENE.MBIN"
+FILE_MODELS_OUTPOST_LAYOUT3 =           "MODELS\SPACE\POI\OUTPOST\PARTS\LAYOUTS\LAYOUT_ARMOURY.SCENE.MBIN"
+
 --------------------------------------------------
 -- template files
 --------------------------------------------------
@@ -36,6 +41,8 @@ FILE_MODELS_PIRATE_WEAPONBOX =          "MODELS\WEAPONBOX\PIRATE\CRATE_WEAPON.SC
 
 FILE_MATERIAL_WEAPONBOX =               "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRATE\CRATE_WEAPON\COMMONTILED_MAT3.MATERIAL.MBIN"
 FILE_MATERIAL_WEAPONHOLO =              "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRATE\CRATE_WEAPON\GUNZ.MATERIAL.MBIN"
+
+FILE_MODELS_WEAPONBOX_SPACESTATION =    "MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\SHOPS\WEAPONSHOP_GUNBOX.SCENE.MBIN"
 
 --------------------------------------------------
 -- new files
@@ -245,6 +252,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SKW"] = {"Name","gDiffuseMap",},
                             ["VCT"] = {{"Map","TEXTURES\WEAPONBOX\PIRATE\WEAPONUP.DDS",},},
+                        },
+                    },
+                },
+
+                {
+                    --------------------------------------------------
+                    -- deep space outpost layouts
+                    --------------------------------------------------
+                    ["MBIN_FILE_SOURCE"] = 
+                    {
+                        FILE_MODELS_OUTPOST_LAYOUT1,
+                        FILE_MODELS_OUTPOST_LAYOUT2,
+                        FILE_MODELS_OUTPOST_LAYOUT3,
+                    },
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            -- link to space station coloured weapon box
+                            ["SKW"] = {"Value",FILE_MODELS_WEAPONBOX,},
+                            ["VCT"] = {{"Value",FILE_MODELS_WEAPONBOX_SPACESTATION,},},
                         },
                     },
                 },

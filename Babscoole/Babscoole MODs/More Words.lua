@@ -741,6 +741,15 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["MXML_CHANGE_TABLE"] =
           {
             {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "%?FIRST_WORD_TERM"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["REPLACE_TYPE"] = "ONCEINSIDE",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Rewards", "WORD_STATION_R"},
+              },
+            },
+            {
               ["SPECIAL_KEY_WORDS"] = {"Rewards", "GIVE_HYPERDRIVE"},
               ["SEC_SAVE_TO"] = "ADD_AddReward",
             },

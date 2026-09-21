@@ -14,6 +14,14 @@
 --
 --  Covered: venus flytrap (2 actions), tentacle plant (3 variants), spore vent.
 --
+--  2026-09-16 "the underground ones that spit toxic gas": RARERESOURCE/GROUND/HAZARDSTEAM's
+--  _HAZARD_GAS entity has the usual GcPainAction (GASPLANT, already zeroed below) PLUS a
+--  GcHazardAction (ToxicGas, strength 202, radius 15) that drains hazard protection on its
+--  own. Both switched off. A sweep of all 2146 planet prop entities found nothing else
+--  plant-shaped: the remaining hurters are volcano/steam vents (VENT_HEAT) and a crashed
+--  freighter radiation leak, which are left alone. Sea urchin (PLANTDMG) added too, and the
+--  damage table now zeroes every plant id, not just the two contact ones.
+--
 --  THE SPIKY CONTACT PLANTS (HAZARDPLANT*, 2026-09-13 "spiky ones too"): their hurt
 --  is not a GcPainAction in the entity - it resolves through the damage table id
 --  PLANTDMG (GASPLANT for the gas ones). So those entries are defanged in
@@ -24,8 +32,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     MOD_FILENAME    = "Somnati_HarmlessPlants",
     MOD_AUTHOR      = "Somnati",
-    NMS_VERSION     = "7.01",
-    MOD_DESCRIPTION = "Trap plants, tentacle plants and spore vents still attack, but can no longer hit the player.",
+    MOD_VERSION     = "1.1",
+    NMS_VERSION     = "7.02",
+    MOD_DESCRIPTION = "Trap plants, tentacle plants, spore vents, gas vents and contact plants still attack, but can no longer hurt the player.",
     MODIFICATIONS   =
     {
         {
@@ -38,6 +47,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/TENTACLEPLANT/ENTITIES/TENTACLEPLANTFLAT.ENTITY.MBIN",
                         "MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/TENTACLEPLANT/ENTITIES/TENTACLEPLANTSIDE.ENTITY.MBIN",
                         "MODELS/PLANETS/BIOMES/COMMON/INTERACTIVE/SPOREVENT/ENTITIES/SPOREVENT.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/HAZARDSTEAM/ENTITIES/_HAZARD_GAS.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/UNDERWATER/SEAURCHIN/ENTITIES/_URCHIN_1.ENTITY.MBIN",
                     },
                     MXML_CT =
                     {
@@ -54,6 +65,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
+                    MBIN_FS = {"MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/HAZARDSTEAM/ENTITIES/_HAZARD_GAS.ENTITY.MBIN"},
+                    MXML_CT =
+                    {
+                        {
+                            -- the gas vent's second weapon: a ToxicGas hazard field
+                            SKW = {{"Action", "GcHazardAction"}},
+                            REPLACE_TYPE = "ALLINSECTION",
+                            VCT = {
+                                {"Strength", 0},   --Original "202"
+                                {"Radius",   0},   --Original "15"
+                            }
+                        },
+                    }
+                },
+                {
                     MBIN_FS = {"METADATA/REALITY/TABLES/DAMAGETABLE.MBIN"},
                     MXML_CT =
                     {
@@ -61,6 +87,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             SKW = {
                                 {"Id", "PLANTDMG"},
                                 {"Id", "GASPLANT"},
+                                {"Id", "SPORE_VENT"},     --Original dmg 20 push 5
+                                {"Id", "VENUSFLY_DMG"},   --Original dmg 20 push 5
+                                {"Id", "TOXICGASDMG"},    --Original dmg 28 (the toxic gas cloud)
+                                {"Id", "GRABPLANT_DMG"},  --Original dmg 10 (the underwater grabby plant)
                             },
                             REPLACE_TYPE = "ALLINSECTION",
                             VCT = {

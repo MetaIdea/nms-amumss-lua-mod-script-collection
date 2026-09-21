@@ -15,7 +15,7 @@ TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pelle
 NoNewTechAtCrashsites = true			--false		Set true to ensure all starship crashsite Distress Beacon rewards only give random-Class Upgrade Modules, not teaching a new core tech blueprint
 RevealPurpleSystemsEarly = true			--false	 	Set true to allow using Discordant Interfaces at Korvax Monoliths to reveal all Purple Systems on the Galaxy Map
 
---Changes the Class & inventory size when redeeming the six unique expedition reward starships or three unique Multi-Tools: Golden Vector, Utopia Speeder, Starborn Runner, Iron Vulture, Boundary Herald, and Wraith starships or Atlas Sceptre, Pillar of Titan, and Direwasp Disintegrator Multi-Tool
+--Changes the Class & inventory size when redeeming the unique expedition reward starships or unique Multi-Tools: Golden Vector, Utopia Speeder, Starborn Runner, Iron Vulture, Boundary Herald, and Wraith starships or Atlas Sceptre, Pillar of Titan, Basilisk Crown, Direwasp Disintegrator, and Starbound v0.27 Multi-Tool
 ExpShipClass = 							"C"						--"S"		Sets the Class for redeeming the expedition ships & tools
 --Changes Cargo inventory size for expedition reward starships. The game adds 1 to whatever value is entered here
 ExpShipFighterCargoSlots = 				8						--36	(For Golden Vector/Utopia Speeder/Rasamama S36)
@@ -1355,8 +1355,13 @@ DerCorvOKModuleMax =					4						--2		Maximum amount of "OK" corvette modules (fr
 
 --Applies multipliers to new bonus rewards added by PTSd for mining or processing (at Deep Space Outposts) certain Deep Space items
 DSSlimeTractorNaniteMult =				1						--1-4 nanites (0 in vanilla)	Nanites for depositing most "slimy" items from infested Deep Space Outposts into your Corvette's Tractor Beam
-DSSlimeMinedNaniteMult =				1						--6-12 nanites (0 in vanilla)	Nanites for mining most "slimy" items from infested Deep Space Outposts with your Multi-Tool's Mining Laser
+DSSlimeMinedNaniteMult =				1						--6-12 nanites (0 in vanilla)	Nanites for fully mining most "slimy" items from infested Deep Space Outposts with your Multi-Tool's Mining Laser
 DSUnusualSampleNaniteMult =				1						--18-36 nanites (0 in vanilla)	Nanites for processing Unusual Samples at a Deep Space Outpost
+DSSlimeMinedGelFibreMult =				0.5						--15-24 Gelatinous Fibres 		From fully mining most "slimy" items from infested Deep Space Outposts with your Multi-tool's mining laser
+DSStellarGeodeMineTritiumMult =			1						--12-24 Tritium (0 in vanilla)	Tritium from fully mining the collectible Stellar Geode item (from inside new Deep Space Asteroids)
+DSAsteroidBreakTritiumMult =			1						--5-10 Tritium (0 in vanilla)	Tritium from cracking open the new Deep Space Asteroids
+
+DSAsteroidBreakTritiumChance =			40						--0								Chance to award the above Tritium for cracking open the new Deep Space Asteroids
 
 --Replacers for the Min and Max Units awarded for the repeatable mission from the Exocraft Technician NPC, in addition to the other random rewards
 ExocraftMinUnits =						100001					--1000 or 0
@@ -1736,15 +1741,15 @@ SpecialWasteStandingAmount =1			--0			Sets the amount of faction Standing awarde
 WasteSubstanceMult =		1			--1			Applies a multiplier to the amount of substances (Rusted Metal, Ammonia, Uranium, etc.) sometimes awarded when manually processing waste in a furnace
 WasteRewardChoiceType =		"GiveAll"	--"GiveFirst_ThenAlsoSelectFromRest"	Affects how the game chooses the possible bonus rewards when manually processing waste in a furnace. Vanilla only allows one possible bonus reward, and often no reward. "Giveall" can still result in no reward if all options have a PercentageChance below 100, but can allow multiple bonus rewards to be awarded at once.
 
---Changes to rewards from processing items at Deep Space Outposts
+--Changes to rewards for the (currently unimplemented as of NMS v7.03.1) "space package delivery" missions
 	--In Vanilla, the nanite reward is 15
-DeepSpaceNaniteMult =		8/3			--1			Applies a multiplier to the amount of nanites earned from processing most deep space items (15 nanites)
+SpaceMailNaniteMult =		8/3			--1			Applies a multiplier to the amount of nanites earned from "space package delivery" missions
 
-DeepSpaceSDChance =			20			--0			Adds a chance for each piece of deep space items to yield some Salvaged Data in addition to nanites
-DeepSpaceSDAmount =			1			--0			Sets the amount of Salvaged Data awarded for the above chance
+SpaceMailSDChance =			20			--0			Adds a chance for each piece of "space package delivery" missions to yield some Salvaged Data in addition to nanites
+SpaceMailSDAmount =			1			--0			Sets the amount of Salvaged Data awarded for the above chance
 
-DeepSpaceSubstanceMult =	1			--1			Applies a multiplier to the amount of substances (Rusted Metal, Ammonia, Uranium, etc.) sometimes awarded when processing deep space items
-DeepSpaceRewardChoiceType =	"GiveAll"	--"GiveFirst_ThenAlsoSelectFromRest"	Affects how the game chooses the possible bonus rewards when manually processing deep space items. Vanilla only allows one possible bonus reward, and often no reward. "Giveall" can still result in no reward if all options have a PercentageChance below 100, but can allow multiple bonus rewards to be awarded at once.
+SpaceMailSubstanceMult =	1			--1			Applies a multiplier to the amount of substances (Rusted Metal, Ammonia, Uranium, etc.) sometimes awarded when delivering "space package delivery" missions
+SpaceMailRewardChoiceType =	"GiveAll"	--"GiveFirst_ThenAlsoSelectFromRest"	Affects how the game chooses the possible bonus rewards when manually delivering "space package delivery" missions. Vanilla only allows one possible bonus reward, and often no reward. "Giveall" can still result in no reward if all options have a PercentageChance below 100, but can allow multiple bonus rewards to be awarded at once.
 
 --Changes to rewards from Creature Battles at Xeno Arenas
 	--These set the new average nanite reward for winning various Creature Battles. The range will vary between ~67% and 133% of the value set below
@@ -2181,6 +2186,9 @@ ExtraChestArtifact = [[<Property name="List" value="GcRewardTableItem">
             </Property>
           </Property>]]
 
+--Sets the number of Trident Keys you receive at undersea Ancient Ruins, for unlocking the 3 Sealed Sea Chests buried nearby
+TridentKeyAmount =						2						--1
+
 --Sets the amounts of Salvaged Data found in Buried Technology Modules
 BuriedTechSalvageMin =					2						--2
 BuriedTechSalvageMax =					4						--4
@@ -2339,6 +2347,29 @@ function SubstanceReward (Substance, Min, Max, Chance)
 					<Property name="AmountMin" value="]]..Min..[[" />
 					<Property name="AmountMax" value="]]..Max..[[" />
 					<Property name="DisableMultiplier" value="true" />
+					<Property name="RewardAsBlobs" value="false" />
+					<Property name="UseFuelMultiplier" value="false" />
+					<Property name="Silent" value="false" />
+					<Property name="UseMissionBoardDifficultyScale" value="false" />
+				</Property>
+			</Property>
+		</Property>]]
+end
+
+function MinedSubstanceReward (Substance, Min, Max, Chance)
+    return
+[[<Property name="List" value="GcRewardTableItem">
+			<Property name="PercentageChance" value="]]..Chance..[[" />
+			<Property name="LabelID" value="" />
+			<Property name="Reward" value="GcRewardSpecificSubstance">
+				<Property name="GcRewardSpecificSubstance">
+					<Property name="Default" value="GcDefaultMissionSubstanceEnum">
+						<Property name="DefaultSubstanceType" value="None" />
+					</Property>
+					<Property name="ID" value="]]..Substance..[[" />
+					<Property name="AmountMin" value="]]..Min..[[" />
+					<Property name="AmountMax" value="]]..Max..[[" />
+					<Property name="DisableMultiplier" value="false" />
 					<Property name="RewardAsBlobs" value="false" />
 					<Property name="UseFuelMultiplier" value="false" />
 					<Property name="Silent" value="false" />
@@ -3991,8 +4022,19 @@ Exp23Phase4ShipRewardIds =
 	{"MODELS/COMMON/SPACECRAFT/FIGHTERS/VINTAGEINTERCEPTOR.SCENE.MBIN", 8000000,		"Robot"},
 }
 
-ExpStaffRewardIds =
-{"RS_S12_PHASE3", "RS_S12_STAFF", "RS_S17_PHASE4", "RS_S17_STAFF", "RS_S18_PHASE3", "RS_S18_STAFF", "RS_S22_PHASE2", "RS_S22_GUN"}
+ExpToolRewardIds =
+{	--RewardId				Pistol, Rifle, Pristine, Alien, Royal, Robot, Atlas, AtlasYellow, AtlasBlue, or Staff
+	{"RS_S12_PHASE3",		"Staff"},		-- Atlas Sceptre
+	{"RS_S12_STAFF",		"Staff"},		-- Atlas Sceptre
+	{"RS_S17_PHASE4",		"Staff"},		-- Pillar of Titan
+	{"RS_S17_STAFF",		"Staff"},		-- Pillar of Titan
+	{"RS_S18_PHASE3",		"Staff"},		-- Basilisk Crown
+	{"RS_S18_STAFF",		"Staff"},		-- Basilisk Crown
+	{"RS_S22_PHASE2",		"Rifle"},		-- Direwasp Disintegrator
+	{"RS_S22_GUN",			"Rifle"},		-- Direwasp Disintegrator
+	{"RS_S23_PHASE3",		"Pistol"},		-- Starbound v0.27
+	{"RS_S23_GUN",			"Pistol"},		-- Starbound v0.27
+}
 
 TeachPellets =
 [[<Property name="List" value="GcRewardTableItem">
@@ -4210,7 +4252,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
-["EXML_CREATE"] = "FALSE",
+--["EXML_CREATE"] = "FALSE",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 	{
@@ -4571,6 +4613,26 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["ADD_OPTION"] = "ADDafterSECTION",
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_ASTCRYST_BRK",		"List", "GcRewardTableItem"},
+				["ADD"] = MinedSubstanceReward ("ROCKETSUB", math.floor(DSStellarGeodeMineTritiumMult*12), math.floor(DSStellarGeodeMineTritiumMult*24), "100.000000"),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_ASTCRYST",		"List", "GcRewardTableItem"},
+				["ADD"] = MinedSubstanceReward ("ROCKETSUB", math.floor(DSAsteroidBreakTritiumMult*5), math.floor(DSAsteroidBreakTritiumMult*10), DSAsteroidBreakTritiumChance),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SLIME_ORG",		"ID", "SLIMEPOST1"},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	DSSlimeMinedGelFibreMult},
+					{"AmountMax",	DSSlimeMinedGelFibreMult}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","TRADERLOOT",	"Group","SHIPJUMP_NAME_L"},
 				["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
@@ -4604,7 +4666,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_STONE_EYE",		"List", "GcRewardTableItem"},
-				["ADD"] = SubstanceReward (NewVigilantEyeItem, NewVigilantEyeItemAmount, NewVigilantEyeItemAmount, "100.000000"),
+				["ADD"] = MinedSubstanceReward (NewVigilantEyeItem, NewVigilantEyeItemAmount, NewVigilantEyeItemAmount, "100.000000"),
 				["ADD_OPTION"] = "ADDafterSECTION",
 			},
 			{
@@ -5177,6 +5239,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"AmountMax",	SmallUnitsMax} 	
 				}
 			},
+			--the following changes make Artifact Vaults at Colossal Archives always give a Rare artifact in exchange for whatever you deposit
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_LIB_VAULT_C",	"Rarity","Common"},
 				["REPLACE_TYPE"] 		= "ALL",
@@ -5204,6 +5267,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SECTION_UP"] = 3,
 				["REMOVE"] = "SECTION"
 			},
+			--Adds one word to the common "learn 1 word" reward
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","WORD",		"List", "GcRewardTableItem"},
 				["ADD_OPTION"]  = "ADDafterSECTION",
@@ -5246,6 +5310,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_FISHCORE",		"List", "GcRewardTableItem"},
 				["ADD"] = NewAlluringSpecRewards,
 				["ADD_OPTION"]  = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_WATERRUIN", "ID", "TRIDENT_KEY"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	TridentKeyAmount},
+					{"AmountMax",	TridentKeyAmount}
+				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","BP_SALVAGE", "ID", "BP_SALVAGE"},
@@ -5736,7 +5808,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Value",	DeepSpaceNaniteMult}, 
+					{"Value",	SpaceMailNaniteMult}, 
 				}
 			},
 			{
@@ -5747,7 +5819,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"Id", "R_POSTMAN_BIO",		"List", "GcRewardTableItem"},
 				},
 				["REPLACE_TYPE"] = "ALL",
-				["ADD"] = ProductReward ("BP_SALVAGE", DeepSpaceSDAmount, DeepSpaceSDAmount, DeepSpaceSDChance),
+				["ADD"] = ProductReward ("BP_SALVAGE", SpaceMailSDAmount, SpaceMailSDAmount, SpaceMailSDChance),
 				["ADD_OPTION"] = "ADDafterSECTION",
 			},
 			{
@@ -5762,8 +5834,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	DeepSpaceSubstanceMult},
-					{"AmountMax",	DeepSpaceSubstanceMult},
+					{"AmountMin",	SpaceMailSubstanceMult},
+					{"AmountMax",	SpaceMailSubstanceMult},
 				}
 			},
 			{
@@ -5776,7 +5848,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["REPLACE_TYPE"] = "ALL",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"RewardChoice",	DeepSpaceRewardChoiceType},
+					{"RewardChoice",	SpaceMailRewardChoiceType},
 				}
 			},
 			{
@@ -5947,31 +6019,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M2"},
 				["PRECEDING_KEY_WORDS"] = {"List", "List"},
-				["ADD"] = SubstanceReward ("RED2", "125", "125", "100"),
+				["ADD"] = SubstanceReward ("RED2", "75", "75", "100"),
 				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M2"},
 				["PRECEDING_KEY_WORDS"] = {"List", "List"},
 				["ADD"] = SubstanceReward ("GREEN2", "50", "50", "100"),
-				["ADD_OPTION"]  = "ADDendSECTION",
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M4"},
-				["PRECEDING_KEY_WORDS"] = {"List", "List"},
-				["ADD"] = ProductReward ("ATLAS_SEED_1", "3", "3", "100"),
-				["ADD_OPTION"]  = "ADDendSECTION",
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M4"},
-				["PRECEDING_KEY_WORDS"] = {"List", "List"},
-				["ADD"] = ProductReward ("ATLAS_SEED_3", "3", "3", "100"),
-				["ADD_OPTION"]  = "ADDendSECTION",
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M4"},
-				["PRECEDING_KEY_WORDS"] = {"List", "List"},
-				["ADD"] = ProductReward ("ATLAS_SEED_5", "3", "3", "100"),
 				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
@@ -6007,7 +6061,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M1"},
 				["PRECEDING_KEY_WORDS"] = {"Items"},
-				["ADD"] = AddItemToMultiRewardList ("Product", "ATLAS_SEED_4", "3"),
+				["ADD"] = AddItemToMultiRewardList ("Product", "ATLAS_SEED_4", "1"),
 				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
@@ -6037,13 +6091,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S4M3"},
 				["PRECEDING_KEY_WORDS"] = {"List", "List"},
-				["ADD"] = ProductReward ("ATLAS_SEED_4", "3", "3", "100"),
-				["ADD_OPTION"]  = "ADDendSECTION",
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S4M4"},
-				["PRECEDING_KEY_WORDS"] = {"Items"},
-				["ADD"] = AddItemToMultiRewardList ("Substance", "RED2", "100"),
+				["ADD"] = ProductReward ("ATLAS_SEED_4", "4", "4", "100"),
 				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
@@ -6055,7 +6103,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M2"},
 				["PRECEDING_KEY_WORDS"] = {"Items"},
-				["ADD"] = AddItemToMultiRewardList ("Product", "ATLAS_SEED_6", "3"),
+				["ADD"] = AddItemToMultiRewardList ("Product", "ATLAS_SEED_6", "1"),
 				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
@@ -6069,6 +6117,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["PRECEDING_KEY_WORDS"] = {"Items"},
 				["ADD"] = AddItemToMultiRewardList ("Substance", "ROBOT2", "50"),
 				["ADD_OPTION"]  = "ADDendSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M2",		"Id", "ROBOT2"},
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Amount",	"250"}
+				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M6"},
@@ -7059,6 +7114,29 @@ for i = 1, #Exp23Phase4ShipRewardIds do
 	end
 end
 
+for i = 1, #ExpToolRewardIds do
+	local ToolRewardId = ExpToolRewardIds[i][1]
+	local ToolType = ExpToolRewardIds[i][2]
+	local ToolSlots = "10"
+	if ToolType == "Pistol" then
+		 ToolSlots = "7"
+	 elseif ToolType == "Royal" or ToolType == "Alien" or ToolType == "Pristine" or ToolType == "Robot" then
+		 ToolSlots = "10"
+	elseif ToolType == "Rifle" or ToolType == "Staff" or ToolType == "Atlas" or ToolType == "AtlasYellow" or ToolType == "AtlasBlue" then
+		 ToolSlots = "14"
+	end
+
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", ToolRewardId},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ToolSlots},
+					{"InventoryClass",	ExpShipClass},
+				}
+			}
+end
+
 if RewardShipHyperdriveEmpty then
 
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
@@ -7072,20 +7150,6 @@ if RewardShipHyperdriveEmpty then
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Amount",	"0"}		--"120"
-				}
-			}
-end
-
-for i = 1, #ExpStaffRewardIds do
-	local StaffRewardId = ExpStaffRewardIds[i]
-
-			ChangesToRewardTable[#ChangesToRewardTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id", StaffRewardId},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipFighterCargoSlots},
-					{"InventoryClass",	ExpShipClass},
 				}
 			}
 end
