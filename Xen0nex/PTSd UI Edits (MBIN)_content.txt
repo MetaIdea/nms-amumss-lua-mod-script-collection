@@ -1,0 +1,25 @@
+This mod contains:
+
+=====================
+Original information:
+         SCRIPT NAME: PTSd UI Edits (MBIN)\___MOD_BATCHNAME_PTSD9.lua
+        MOD FILENAME: PTSd UI Edits (MBIN)
+       MOD BATCHNAME: PTSd UI Edits (MBIN)
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+         NMS VERSION: 703
+
+=====================
+Original information:
+         SCRIPT NAME: PTSd UI Edits (MBIN)\PTSd UI Edits (MBIN).lua
+        MOD FILENAME: PTSd UI Edits (MBIN)7_03
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Resizes certain UI elements to fit longer/additional PTSd descriptions. This will always create an .MBIN format mod due to the types of files it edits.>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+         NMS VERSION: 7_03

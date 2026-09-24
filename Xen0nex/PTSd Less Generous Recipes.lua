@@ -533,7 +533,27 @@ RecipeChanges =
 	{							--Amount per batch	--Time per batch
 		{"REFINERECIPE_402",	1,					45},				--Makes Faecium					x1		in	90 time
 		{
-			{"SLIMEPOST1",		2}										--Requires Gelatinous Fibres	x5
+			{"SLIMEPOST1",		3}										--Requires Gelatinous Fibres	x5
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_65",		3,					180},				--Makes Oxygen					x1		in	60 time
+		{
+			{"PLANT_WATER",		2}										--Requires Kelp					x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_146",	5,					300},				--Makes Oxygen					x2		in	90 time
+		{
+			{"PLANT_WATER",		2},										--Requires Kelp					x1
+			{"FUEL1",			1}										--Requires Carbon				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_152",	5,					150},				--Makes Oxygen					x2		in	90 time
+		{
+			{"PLANT_WATER",		2},										--Requires Kelp					x1
+			{"FUEL2",			1}										--Requires Condensed Carbon		x1
 		}
 	},
 --Some Nutrient Processor Recipes with ingredients that are very easy to obtain passively or in huge quantities have had their costs increased, to indirectly nerf cooking profits & incentivize harvesting wild ingredients
@@ -675,7 +695,7 @@ RecipeChanges =
 	},
 --Reduces the nanite yield of refining Tainted Metal proportionally to balance out the increased reward of Tainted metal
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_324",	2,					90},				--Makes Nanites					x2		in	90 time
+		{"REFINERECIPE_324",	2,					60},				--Makes Nanites					x2		in	90 time
 		{
 			{"AF_METAL",		3}										--Requires Tainted Metal		x1
 		}
@@ -1027,62 +1047,62 @@ NewNaniteRecipes =
 --Adds new refiner recipes for refining items together with Microprocessors into Salvaged Data (The amount of Salvaged Data outputted is always equal to the amount of Microprocessors inputted)
 NewSalvagedDataRecipes =
 {
-	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
-		"DATA_MOULD",	"PTSd: Mouldering Data Extraction",	"SPACEGUNK2",	"Substance",	"250",		"3",	"1"
+	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Salvaged Data & Microprocessors	
+		"DATA_MOULD",	"PTSd: Mouldering Data Extraction",	"SPACEGUNK2",	"Substance",	"250",		"1"
 	},
 	{
-		"DATA_TAINT",	"PTSd: Tainted Data Extraction",	"AF_METAL",		"Substance",	"75",		"3",	"1"
+		"DATA_TAINT",	"PTSd: Tainted Data Extraction",	"AF_METAL",		"Substance",	"75",		"1"
 	},
 	{
-		"DATA_FIEND",	"PTSd: Fiendish Data Extraction",	"FIENDCORE",	"Product",		"1",		"3",	"1"
+		"DATA_FIEND",	"PTSd: Fiendish Data Extraction",	"FIENDCORE",	"Product",		"1",		"1"
 	},
 	{
-		"DATA_FISH",	"PTSd: Abyssal Data Extraction",	"FISHCORE",		"Product",		"2",		"9",	"3"
+		"DATA_FISH",	"PTSd: Abyssal Data Extraction",	"FISHCORE",		"Product",		"2",		"3"
 	},
 	{
-		"DATA_VILE",	"PTSd: Vile Data Extraction",		"WORMPROD",		"Product",		"1",		"3",	"1"
+		"DATA_VILE",	"PTSd: Vile Data Extraction",		"WORMPROD",		"Product",		"1",		"1"
 	},
 	{
-		"DATA_FLESH",	"PTSd: Fleshy Data Extraction",		"WORMCORE",		"Product",		"1",		"3",	"1"
+		"DATA_FLESH",	"PTSd: Fleshy Data Extraction",		"WORMCORE",		"Product",		"1",		"1"
 	},
 	{
-		"DATA_SHARD",	"PTSd: Radiant Data Extraction",	"DRONE_SHARD",	"Product",		"3",		"3",	"1"
+		"DATA_SHARD",	"PTSd: Radiant Data Extraction",	"DRONE_SHARD",	"Product",		"3",		"1"
 	},
 	{
-		"DATA_MIRROR",	"PTSd: Inverted Data Extraction",	"DRONE_SALVAGE","Product",		"1",		"3",	"1"
+		"DATA_MIRROR",	"PTSd: Inverted Data Extraction",	"DRONE_SALVAGE","Product",		"1",		"1"
 	},
 	{
-		"DATA_HYALINE",	"PTSd: Sentient Data Extraction",	"SHIPBRAIN",	"Product",		"1",		"6",	"2"
+		"DATA_HYALINE",	"PTSd: Sentient Data Extraction",	"SHIPBRAIN",	"Product",		"1",		"2"
 	},
 	{
-		"DATA_QUAD",	"PTSd: Small Data Extraction",		"QUAD_PROD",	"Product",		"1",		"6",	"2"
+		"DATA_QUAD",	"PTSd: Small Data Extraction",		"QUAD_PROD",	"Product",		"1",		"2"
 	},
 	{
-		"DATA_MECH",	"PTSd: Medium Data Extraction",		"MECH_PROD",	"Product",		"1",		"12",	"4"
+		"DATA_MECH",	"PTSd: Medium Data Extraction",		"MECH_PROD",	"Product",		"1",		"4"
 	},
 	{
-		"DATA_SPIDER",	"PTSd: Corrupt Data Extraction",	"SPIDER_PROD",	"Product",		"1",		"12",	"4"
+		"DATA_SPIDER",	"PTSd: Corrupt Data Extraction",	"SPIDER_PROD",	"Product",		"1",		"4"
 	},
 	{
-		"DATA_WALKER",	"PTSd: Large Data Extraction",		"WALKER_PROD",	"Product",		"1",		"24",	"8"
+		"DATA_WALKER",	"PTSd: Large Data Extraction",		"WALKER_PROD",	"Product",		"1",		"8"
 	},
 	{
-		"DATA_GLASS",	"PTSd: Glassy Data Extraction",		"DEEPSEA_PROD",	"Product",		"1",		"15",	"5"
+		"DATA_GLASS",	"PTSd: Glassy Data Extraction",		"DEEPSEA_PROD",	"Product",		"1",		"5"
 	},
 	{
-		"DATA_BBOX",	"PTSd: Packaged Data Extraction",	"HULK_BLACKBOX","Product",		"1",		"42",	"14"
+		"DATA_BBOX",	"PTSd: Packaged Data Extraction",	"HULK_BLACKBOX","Product",		"1",		"14"
 	},
 	{
-		"DATA_DCORE",	"PTSd: CPU Data Extraction",		"HULK_DATACORE","Product",		"1",		"12",	"4"
+		"DATA_DCORE",	"PTSd: CPU Data Extraction",		"HULK_DATACORE","Product",		"1",		"4"
 	},
 	{
-		"DATA_SMUGL",	"PTSd: Suspicious Data Extraction",	"HULK_SMUGGLE","Product",		"1",		"30",	"10"
+		"DATA_SMUGL",	"PTSd: Suspicious Data Extraction",	"HULK_SMUGGLE","Product",		"1",		"10"
 	},
 	{
-		"DATA_SBLOB",	"PTSd: Viral Data Extraction",		"SLIME_BLOB",	"Product",		"1",		"42",	"14"
+		"DATA_SBLOB",	"PTSd: Viral Data Extraction",		"SLIME_BLOB",	"Product",		"1",		"14"
 	},
 	{
-		"DATA_SSTAR",	"PTSd: Pathogenic Data Extraction",	"SLIME_STAR",	"Product",		"1",		"42",	"14"
+		"DATA_SSTAR",	"PTSd: Pathogenic Data Extraction",	"SLIME_STAR",	"Product",		"1",		"14"
 	},
 }
 
@@ -1094,7 +1114,11 @@ AlbumenPearlDiHydrogenYield = 50					--Sets how much Di-hydrogen is created for 
 StellarIceTritiumYield = 100						--Sets how much Tritium is created for every 1 Condensed Stellar Ice & X Silver refined together with the new PTSd recipe
 StellarIceSilverIngr = 50							--Sets how much Silver is required to refine with Stellar Condensed Ice to make Tritium with the new PTSd recipe
 
-DeepSpaceSubsDiHydrogenYield = 1					--Sets how much Di-hydrogen is created for every 1 Comet Dust, 1 Contaiminated Metal, & 3 Gelatinous Fibres refined together with the new PTSd recipe
+GelFibresNaniteYield = 1							--Sets how many Nanites are created for every X Gelatinous Fibre & Y Faecium refined together with the new PTSd recipe
+GelFibresNaniteGelFibresIngr = 3					--Sets how many Gelatinous Fibres are required to refine with Faecium to make Nanites with the new PTSd recipe
+GelFibresFaeciumIngr = 1							--Sets how much Faecium is required to refine with Gelatinous Fibres to make Nanites with the new PTSd recipe
+
+DeepSpaceSubsDiHydrogenYield = 1					--Sets how much Di-hydrogen is created for every 1 Comet Dust, 1 Contaiminated Metal, & 2 Gelatinous Fibres refined together with the new PTSd recipe
 
 --Adds new recipes for using Aloe Flesh and Refreshing Drink since they otherwise have very few uses
 AloeVegetables = 2									--Sets how many Steamed Vegetables are created from cooking 1 Aloe Flesh and 1 Condensed Carbon with the new PTSd recipe
@@ -1307,9 +1331,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["PRECEDING_KEY_WORDS"] = {"Table"},
 				["ADD"] = Add2IngrRefinerRecipe ("TRITIUM_STELICE", "RECIPE_TECHFRAG_PLANT_CAVE", "PTSd: Tritium Purification", "1200", "ROCKETSUB", "Substance", StellarIceTritiumYield, "ASTEROID_CRYST", "Product", "1", "ASTEROID1", "Substance", StellarIceSilverIngr)
 			},
+			{--Adds Recipe for creating Nanites by refining Gelatinous Fibres with Faecium
+				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = Add2IngrRefinerRecipe ("NANITE_GELFIB", "RECIPE_BURIEDTECH", "PTSd: Nanite Decontamination", math.floor(GelFibresNaniteYield*30), "TECHFRAG", "Substance", GelFibresNaniteYield, "SLIMEPOST1", "Substance", GelFibresNaniteGelFibresIngr, "PLANT_POOP", "Substance", GelFibresFaeciumIngr)
+			},
 			{--Adds Recipe for creating Di-Hydrogen by refining Comet Dust, Contaiminated Metal, & Gelatinous Fibres
 				["PRECEDING_KEY_WORDS"] = {"Table"},
-				["ADD"] = Add3IngrRefinerRecipe ("DIH_DEEPSPACE", "RECIPE_LAUNCHSUB", "PTSd: Di-Hydrogen Purification", "12", "LAUNCHSUB", "Substance", DeepSpaceSubsDiHydrogenYield, "ASTBELT1", "Substance", "1", "HULK1", "Substance", "1", "SLIMEPOST1", "Substance", "3")
+				["ADD"] = Add3IngrRefinerRecipe ("DIH_DEEPSPACE", "RECIPE_LAUNCHSUB", "PTSd: Di-Hydrogen Purification", "12", "LAUNCHSUB", "Substance", DeepSpaceSubsDiHydrogenYield, "ASTBELT1", "Substance", "1", "HULK1", "Substance", "1", "SLIMEPOST1", "Substance", "2")
 			},
 			{--Adds Recipe for refining Sea Glass into Salvaged Glass
 				["PRECEDING_KEY_WORDS"] = {"Table"},
@@ -1579,9 +1607,8 @@ for i = 1, #NewSalvagedDataRecipes do
 	local ItemID = NewSalvagedDataRecipes[i][3]
 	local ItemType = NewSalvagedDataRecipes[i][4]
 	local ItemAmount = NewSalvagedDataRecipes[i][5]
-	local Time = NewSalvagedDataRecipes[i][6]
-	local MicroData = NewSalvagedDataRecipes[i][7]
-	
+	local MicroData = NewSalvagedDataRecipes[i][6]
+	local Time = math.floor(MicroData*3)
 		
 			ChangesToRecipes[#ChangesToRecipes+1] =
 			{

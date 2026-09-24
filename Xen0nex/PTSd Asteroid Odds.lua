@@ -15,7 +15,7 @@ RareMaxResources =	13			--10	Maximum base amount of Platinum from destroying a R
 --Sets the amounts and chances of different rewards for shooting Common Asteroids
 CommonMinResources =	5			--3		Minimum base amount of substances from destroying a Common asteroid
 CommonMaxResources =	8			--5		Maximum base amount of substances from destroying a Common asteroid
-FuelMultiplier =		6			--10	Presumably multiplier to Tritium found when destroying a special fuel/Tritium asteroid?
+FuelMultiplier =		6			--10	Presumably multiplier to Tritium found when destroying a specially labeled "Tritium-rich" asteroid
 CommonFuelMultiplier =	3			--5		Multiplier to Tritium found when destroying a Common asteroid
 CommonSecondaryOdds =	0.2			--0.2	Appears to be the chance to get either Gold (Secondary) or Gold Nuggets (Product) INSTEAD of Silver (Primary)
 CommonProductOdds =		0.1			--0.2	Appears to be the chance to get a Gold Nugget (Product) INSTEAD of Gold (Secondary)

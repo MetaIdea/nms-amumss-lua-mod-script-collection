@@ -11,13 +11,14 @@ Merging or Customizing==========================================================
 
 1.	Install latest version of AMUMSS from here:	https://github.com/HolterPhylo/AMUMSS/releases
 2.	Follow instructions for using AMUMSS to merge .lua files here:	https://www.nexusmods.com/nomanssky/mods/2626
-3.	Or, make edits to the .lua files and re-pak with AMUMSS using the instructions at the above link.
-4.	A special search or grep tool can make searching for particular things to change within all of PTSd's .lua files easier, such as grepWin from here: https://tools.stefankueng.com/grepWin.html .  E.G. To search all the .lua files for "Biodome" to see & modify how PTSd changes the crafting cost, recipe unlock cost, power usage, etc. of Biodomes.
+3.	Or, make edits to the .lua files and recompile with AMUMSS using the instructions at the above link.
+4.	If using the .EXML version of PTSd, AMUMSS is not needed to make edits, and generally it should not require merging with other mods or updating for most vanilla game updates.
+5.	A special search or grep tool can make searching for particular things to change within all of PTSd's .lua files easier, such as grepWin from here: https://tools.stefankueng.com/grepWin.html .  E.G. To search all the .lua files for "Biodome" to see & modify how PTSd changes the crafting cost, recipe unlock cost, power usage, etc. of Biodomes.
 
 Viewing PTSd's text edits in other Languages==============================================================
 
 PTSd edits the names & descriptions of many vanilla items/technologies/difficulty settings to display info that is accurate for PTSd or give additional context / tips. If playing on a computer not set to English, by default these edits to vanilla items are not shown, since they are all in English. 
-If you want to see the accurate info and added context / tips (in English), you can force them to display even when using other language settings by following the instructions at the top of the "PTSd UI Description Adjustments.lua" file in the "PTSd Miscellaneous" module folder.
+If you want to see the accurate info and added context / tips (in English), you can force them to display even when using other language settings by following the instructions at the top of the "PTSd Text Description Adjustments.lua" file in the "PTSd Text Edits" module folder.
 
 
 

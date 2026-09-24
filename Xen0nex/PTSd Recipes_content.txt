@@ -3,8 +3,8 @@ This mod contains:
 =====================
 Original information:
          SCRIPT NAME: PTSd Recipes\___MOD_BATCHNAME_PTSD6.lua
-        MOD FILENAME: PTSd Recipes.pak
-       MOD BATCHNAME: PTSd Recipes.pak
+        MOD FILENAME: PTSd Recipes
+       MOD BATCHNAME: PTSd Recipes
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
      MOD MAINTENANCE: nil

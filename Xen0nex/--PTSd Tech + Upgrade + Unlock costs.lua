@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Unlock costs"
-GameVersion = "7_02"
+GameVersion = "7_03"
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
 UpgradeCMult	=		1.2							--Vanilla cost is	60		This multiplies the vanilla "BaseValue", affecting both purchase and selling prices.	E.G. "1.2" means you sell them for 1.2x the vanilla price, and shops charge 1.2x more
@@ -821,6 +821,10 @@ ORIonBatt = 3							--0 Ion Batteries
 --MatterHeart = 16						--Heart of the Sun		(5 Antimatter in vanilla)
 MatterBulk = 1							--Cargo Bulkhead		(3 Magnet in vanilla)
 MatterAug = 1							--Storage Augmentation	(10 Wiring Loom in vanilla)
+
+--New recipe for "repairing" broken cargo containers at Crashed Freighters
+CrashContSubstance = "STELLAR2"			--N/A	(Chromatic Metal)
+CrashContSubAmount = 20					--N/A	(The actual amount required to repair will be half this amount)
 
 --New recipe for installing Pilot Interface in Sentinel Interceptor
 	--Note that the cost to repair/install for all of the following will actually be half of these values, but always at least 1
@@ -1916,6 +1920,103 @@ NewInterceptorTechRepairSlot =
           <Property name="CompletionRequirement" value="FullyRepaired" />
         </Property>]]
 
+NewCrashedContainerRepairTech = 
+[[<Property name="Table" value="GcTechnology" _id="MAINT_TECHCC">
+			<Property name="ID" value="MAINT_TECHCC" />
+			<Property name="Group" value="" />
+			<Property name="Name" value="HEAVY DUTY LOCK" />
+			<Property name="NameLower" value="Heavy Duty Lock" />
+			<Property name="Subtitle" value="UI_MAINTAIN_TECH_SUB" />
+			<Property name="Description" value="UI_MAINTAIN_TECH3_DESC" />
+			<Property name="Teach" value="false" />
+			<Property name="HintStart" value="" />
+			<Property name="HintEnd" value="" />
+			<Property name="Icon" value="TkTextureResource">
+				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/MAINTTECH.TECH3.DDS" />
+			</Property>
+			<Property name="Colour">
+				<Property name="R" value="0.0352941193" />
+				<Property name="G" value="0.360784322" />
+				<Property name="B" value="0.466666669" />
+				<Property name="A" value="1.000000" />
+			</Property>
+			<Property name="Level" value="1" />
+			<Property name="Chargeable" value="false" />
+			<Property name="ChargeAmount" value="100" />
+			<Property name="ChargeType" value="GcRealitySubstanceCategory">
+				<Property name="SubstanceCategory" value="Earth" />
+			</Property>
+			<Property name="ChargeBy" />
+			<Property name="ChargeMultiplier" value="1.000000" />
+			<Property name="BuildFullyCharged" value="true" />
+			<Property name="UsesAmmo" value="false" />
+			<Property name="AmmoId" value="" />
+			<Property name="PrimaryItem" value="false" />
+			<Property name="Upgrade" value="false" />
+			<Property name="Core" value="true" />
+			<Property name="RepairTech" value="false" />
+			<Property name="Procedural" value="false" />
+			<Property name="BrokenSlotTech" value="false" />
+			<Property name="Category" value="GcTechnologyCategory">
+				<Property name="TechnologyCategory" value="Maintenance" />
+			</Property>
+			<Property name="Rarity" value="GcTechnologyRarity">
+				<Property name="TechnologyRarity" value="Impossible" />
+			</Property>
+			<Property name="Value" value="10.000000" />
+			<Property name="Requirements">
+				<Property name="Requirements" value="GcTechnologyRequirement" _id="]]..CrashContSubstance..[[">
+					<Property name="ID" value="]]..CrashContSubstance..[[" />
+					<Property name="Type" value="GcInventoryType">
+						<Property name="InventoryType" value="Substance" />
+					</Property>
+					<Property name="Amount" value="]]..CrashContSubAmount..[[" />
+				</Property>
+			</Property>
+			<Property name="BaseStat" value="GcStatsTypes">
+				<Property name="StatsType" value="Unspecified" />
+			</Property>
+			<Property name="StatBonuses" />
+			<Property name="RequiredTech" value="" />
+			<Property name="RequiredLevel" value="0" />
+			<Property name="FocusLocator" value="" />
+			<Property name="UpgradeColour">
+				<Property name="R" value="1.000000" />
+				<Property name="G" value="1.000000" />
+				<Property name="B" value="1.000000" />
+				<Property name="A" value="1.000000" />
+			</Property>
+			<Property name="LinkColour">
+				<Property name="R" value="1.000000" />
+				<Property name="G" value="1.000000" />
+				<Property name="B" value="1.000000" />
+				<Property name="A" value="1.000000" />
+			</Property>
+			<Property name="RewardGroup" value="" />
+			<Property name="BaseValue" value="1" />
+			<Property name="Cost" value="GcItemPriceModifiers">
+				<Property name="SpaceStationMarkup" value="0.000000" />
+				<Property name="LowPriceMod" value="0.000000" />
+				<Property name="HighPriceMod" value="0.000000" />
+				<Property name="BuyBaseMarkup" value="0.000000" />
+				<Property name="BuyMarkupMod" value="0.000000" />
+			</Property>
+			<Property name="RequiredRank" value="1" />
+			<Property name="DispensingRace" value="GcAlienRace">
+				<Property name="AlienRace" value="None" />
+			</Property>
+			<Property name="FragmentCost" value="2" />
+			<Property name="TechShopRarity" value="GcTechnologyRarity">
+				<Property name="TechnologyRarity" value="Impossible" />
+			</Property>
+			<Property name="WikiEnabled" value="false" />
+			<Property name="NeverPinnable" value="false" />
+			<Property name="DamagedDescription" value="" />
+			<Property name="ParentTechId" value="" />
+			<Property name="IsTemplate" value="false" />
+			<Property name="ExclusivePrimaryStat" value="false" />
+		</Property>]]
+
 NewStartingToolRepairTech =
 [[<Property name="Table" value="GcTechnology">
 			<Property name="ID" value="NEWTOOL_DMG" />
@@ -2525,7 +2626,7 @@ NutrientProcAfterPellets =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
+  ["MOD_FILENAME"] 			= ModName..GameVersion,
   ["MOD_DESCRIPTION"]		= "Greatly increases the cost for unlocking various technologies, blueprints, recipes, upgrades, mainly aiming for those found in the Anomaly",         
   ["MOD_AUTHOR"]			= "Xen0nex",         
   ["NMS_VERSION"]			= GameVersion,     
@@ -2755,6 +2856,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"Bonus",	ScannerTechRecharge},
 							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Table", "GcTechnology"},
+							["ADD_OPTION"]  = "ADDafterSECTION",
+							["ADD"] = NewCrashedContainerRepairTech
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Table", "GcTechnology"},

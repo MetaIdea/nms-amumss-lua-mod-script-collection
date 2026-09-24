@@ -1,0 +1,25 @@
+This mod contains:
+
+=====================
+Original information:
+         SCRIPT NAME: PTSd Text Edits\___MOD_BATCHNAME_PTSD8.lua
+        MOD FILENAME: PTSd Text Edits
+       MOD BATCHNAME: PTSd Text Edits
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+         NMS VERSION: 703
+
+=====================
+Original information:
+         SCRIPT NAME: PTSd Text Edits\PTSd Text Description Adjustments.lua
+        MOD FILENAME: PTSd Text Description Adjustments7_03
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Changes the Text display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+         NMS VERSION: 7_03

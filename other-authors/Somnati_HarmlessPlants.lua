@@ -20,7 +20,7 @@
 --  own. Both switched off. A sweep of all 2146 planet prop entities found nothing else
 --  plant-shaped: the remaining hurters are volcano/steam vents (VENT_HEAT) and a crashed
 --  freighter radiation leak, which are left alone. Sea urchin (PLANTDMG) added too, and the
---  damage table now zeroes every plant id, not just the two contact ones.
+--  damage table zeroes the five PLANT ids (TOXICGASDMG is the toxic-planet hazard - left alone).
 --
 --  THE SPIKY CONTACT PLANTS (HAZARDPLANT*, 2026-09-13 "spiky ones too"): their hurt
 --  is not a GcPainAction in the entity - it resolves through the damage table id
@@ -28,11 +28,11 @@
 --  METADATA/REALITY/TABLES/DAMAGETABLE: damage 0, no push, no camera turn, no
 --  shake, no tech breakage. Touching them now does nothing.
 --======================================================================================--
+-- MOD VERSION 1.2.1 (2026-09-22)  - AMUMSS 5.6.2 has no version field, so it lives here
 NMS_MOD_DEFINITION_CONTAINER =
 {
     MOD_FILENAME    = "Somnati_HarmlessPlants",
     MOD_AUTHOR      = "Somnati",
-    MOD_VERSION     = "1.1",
     NMS_VERSION     = "7.02",
     MOD_DESCRIPTION = "Trap plants, tentacle plants, spore vents, gas vents and contact plants still attack, but can no longer hurt the player.",
     MODIFICATIONS   =
@@ -77,6 +77,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Radius",   0},   --Original "15"
                             }
                         },
+                        {
+                            -- 1.2 (2026-09-22): with Strength 0 the field still FIRES - you get the
+                            -- toxic-hazard popup with no drain behind it. Retarget the hazard type to
+                            -- None (the game's own radio-tower effect uses it) so it fires into
+                            -- nothing. VALUE_MATCH keeps this off the outer "Hazard" struct line.
+                            SKW = {{"Action", "GcHazardAction"}},
+                            VALUE_MATCH = "ToxicGas",
+                            VALUE_MATCH_OPTIONS = "=",
+                            VCT = {
+                                {"Hazard", "None"},   --Original "ToxicGas"
+                            }
+                        },
                     }
                 },
                 {
@@ -89,7 +101,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Id", "GASPLANT"},
                                 {"Id", "SPORE_VENT"},     --Original dmg 20 push 5
                                 {"Id", "VENUSFLY_DMG"},   --Original dmg 20 push 5
-                                {"Id", "TOXICGASDMG"},    --Original dmg 28 (the toxic gas cloud)
+                                -- TOXICGASDMG deliberately NOT here (1.2.1): it is the toxic-PLANET hazard
+                                -- damage (heat/cold/radiation family, HAZARDS.TOXIC icon), not a plant.
                                 {"Id", "GRABPLANT_DMG"},  --Original dmg 10 (the underwater grabby plant)
                             },
                             REPLACE_TYPE = "ALLINSECTION",

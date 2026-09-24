@@ -9,7 +9,7 @@ SpawnChance = 4								--12		Relative weighting to spawn this encounter while Pu
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]		= ModName..GameVersion..".pak",
+	["MOD_FILENAME"]		= ModName..GameVersion,
 	["MOD_DESCRIPTION"]		= Description,
 	["MOD_AUTHOR"]			= "Xen0nex",
 	["NMS_VERSION"]			= GameVersion,

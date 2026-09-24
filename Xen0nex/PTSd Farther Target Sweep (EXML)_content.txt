@@ -1,0 +1,25 @@
+This mod contains:
+
+=====================
+Original information:
+         SCRIPT NAME: PTSd Farther Target Sweep (EXML)\___MOD_BATCHNAME_PTSD10.lua
+        MOD FILENAME: PTSd Farther Target Sweep (EXML)
+       MOD BATCHNAME: PTSd Farther Target Sweep (EXML)
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+         NMS VERSION: 703
+
+=====================
+Original information:
+         SCRIPT NAME: PTSd Farther Target Sweep (EXML)\-PTSd Farther Target Sweep.lua
+        MOD FILENAME: PTSd Farther Target Sweep
+       MOD BATCHNAME: nil
+          MOD AUTHOR: Xen0nex
+          LUA AUTHOR: nil
+     MOD MAINTENANCE: nil
+     MOD DESCRIPTION: <<<Makes the distance between the 'Approximate Location' and final mission target using Target Sweep farther away.>>>
+MOD MOD_CONTRIBUTORS: <<<nil>>>
+         NMS VERSION: 7_03

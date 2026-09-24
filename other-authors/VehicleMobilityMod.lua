@@ -7,8 +7,10 @@ SubBoostSpeedPercent = 250
 BoostTanksPercent = 3000
 ForwardGripPercent = 75
 SkidGripPercent = 500
-MechTopSpeedPercent = 500
+MechTopSpeedPercent = 450
 MechBoostSpeedPercent = 500
+MechTurnSpeedPercent = 300
+MechJetLiftPercent = 600
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -144,6 +146,7 @@ MechBoostSpeedPercent - percentage of original Minotaur boost speed
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"Bonus",   "0"},
+                {"Level",   "3"},
               }
             },
             {
@@ -162,6 +165,7 @@ MechBoostSpeedPercent - percentage of original Minotaur boost speed
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"Bonus",   "@*"..(MechTopSpeedPercent / 100)},
+                {"Level",   "3"},
               }
             },
             {
@@ -207,6 +211,49 @@ MechBoostSpeedPercent - percentage of original Minotaur boost speed
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"Bonus",   "@*"..(BoostTanksPercent / 100)},
+              }
+            },
+          },
+        },
+      },
+    },
+    {
+      ["MBIN_CHANGE_TABLE"] =
+      {
+        {
+          ["MBIN_FILE_SOURCE"] = "GLOBALS\GCVEHICLEGLOBALS.GLOBAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"MechPlayerGroundTurnSpeed",   "@/"..(MechTurnSpeedPercent / 100)},
+                {"MechJetpackTurnSpeed",   "@/"..(MechTurnSpeedPercent / 100)},
+                {"MechJetpackMaxSpeed",   "@*"..(MechBoostSpeedPercent / 100)},
+                {"MechJetpackMaxUpSpeed",   "@*"..(MechJetLiftPercent / 100)},
+                {"MechLandBrake",   "@*"..(MechTopSpeedPercent / 100)},
+                {"MechJetpackDrainRate",   "0"},
+                {"MechWalkToRunTimeIdle",   "0"},
+                {"VehicleBoostFuelRate",   "0"},
+                {"VehicleFuelRate",   "@*"..(FuelConsumptionPercent / 100)},
+                {"VehicleFuelRateTruckMultiplier",   "0"},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"MechMovementStickSpeedLimit"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"X",   "@*"..(MechTopSpeedPercent / 100)},
+                {"Y",   "@*"..(MechTopSpeedPercent / 100)},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MECH"},
+              ["PRECEDING_KEY_WORDS"] = {"GcVehicleData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TopSpeedForward",   "@*"..(MechTopSpeedPercent / 100)},
+                {"WheelMaxAccelForceForward",   "@*"..(MechTopSpeedPercent / 100)},
               }
             },
           },

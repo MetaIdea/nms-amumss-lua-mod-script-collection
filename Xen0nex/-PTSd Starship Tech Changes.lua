@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------
 ModName = 'PTSd Starship Tech Changes'
 ModAuthor = 'Xen0nex and lMonk'		--Edited by Xen0nex
-Version = '6_04'
+Version = '7_03'
 local desc = [[
   Changes to various aspects of starship speeds and charging.
   Includes improvements to Living Ships and related quest timers from "Living Ship Upgrades" by lMonk
@@ -16,7 +16,7 @@ LivingShipQuestTimers = 28800							--79200 seconds = 22 hours in vanilla
 LivingShipTeleportDist = 765.000000						--300.000000			For the Grasping Tendrils Living Ship tech. Stacks additively with Teleport Receiver if both are installed
 --Multipliers to apply to the base attributes of all ships
 EngSpdMult = 0.667										--	Multiplier to apply to the base speed for all starship Pulse Engines (or Living Ship equivalent)
-EngManMult = 1											--	Multiplier to apply to the base Maneuverability for all starship Pulse Engines (or lIving Ship equivalent)
+EngManMult = 1											--	Multiplier to apply to the base Maneuverability for all starship Pulse Engines (or Living Ship equivalent)
 --BaseShieldStrength = 0.65								--0.65 	(NOTE: Changing this value seems to cause issues, negative shield values displayed in UI, etc.)	The base Ship_Armour_Shield_Strength for all starship default Shields (0.65 by default, results in 165 core shields without any bonuses)
 
 --Multipliers for specific ship tech / upgrade modules
@@ -98,9 +98,9 @@ LivingNanitePrice = 8000								--10000
 --Sets the Consciousness Bridge item used at the start of the Living Ship Starbirth mission to require Emeril instead of Pugneum
 ConBridgeSubstance = "GREEN2"							--"ROBOT1"
 
---Multipliers to apply to the "Approximate Location" distance for missions in the "Starbith" mission line.
-DistanceMultLong = 4									--Multiplier to apply to distances greater than 650
-DistanceMultShort = 10									--Multiplier to apply to distances 650 or lower
+--Multipliers to apply to the "Approximate Location" distance for missions in the "Starbith" mission line. (Now handled by "-PTSd Farther Target Sweep.lua")
+--DistanceMultLong = 4									--Multiplier to apply to distances greater than 650
+--DistanceMultShort = 10									--Multiplier to apply to distances 650 or lower
 
 --Changes for procedural Hyperdrive upgrade modules
 HyperEffBonusMin = 0.5									--1		Minimum efficiency bonus for A, S, X Class Hyperdrive upgrade modules for all starships & freighters (also affects any relevant Corvette modules). Vanilla value of 1 = 100% more efficient (double)
@@ -969,6 +969,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'Time',		LivingShipQuestTimers}
 				}
 			},
+			--[[
 			{
 				REPLACE_TYPE = 'ALL',
 				MATH_OPERATION 		= '*',
@@ -989,6 +990,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'SurveyDistance', DistanceMultShort}
 				}
 			},
+			]]
 		}
 	},
 	{

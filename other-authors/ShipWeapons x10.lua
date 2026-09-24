@@ -1,4 +1,4 @@
-DamageMultiplier = 5
+DamageMultiplier = 10
 SpeedMultiplier = 3
 LifeMultiplier = 2
 CoolingMultiplier = 5
@@ -143,7 +143,96 @@ Cooling multiplier increases weapon time to heat up and decreases time to cool d
               }
             },
             {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPGUN1"},
+              ["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_Range"},
+              ["SECTION_UP"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Bonus",         "@*"..LifeMultiplier},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPGUN_ROBO"},
+              ["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_HeatTime"},
+              ["SECTION_UP"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Bonus",         "@*"..CoolingMultiplier},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPGUN_ROBO"},
+              ["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_Damage"},
+              ["SECTION_UP"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Bonus",         "@*"..DamageMultiplier},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPGUN_ROBO"},
+              ["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_CoolTime"},
+              ["SECTION_UP"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Bonus",         "@/"..CoolingMultiplier},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPGUN_ROBO"},
+              ["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_Range"},
+              ["SECTION_UP"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Bonus",         "@*"..LifeMultiplier},
+              }
+            },{
+              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPGUN_ALIEN"},
+              ["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_HeatTime"},
+              ["SECTION_UP"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Bonus",         "@*"..CoolingMultiplier},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPGUN_ALIEN"},
+              ["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_Damage"},
+              ["SECTION_UP"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Bonus",         "@*"..DamageMultiplier},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPGUN_ALIEN"},
+              ["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_CoolTime"},
+              ["SECTION_UP"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Bonus",         "@/"..CoolingMultiplier},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPGUN_ALIEN"},
+              ["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_Range"},
+              ["SECTION_UP"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Bonus",         "@*"..LifeMultiplier},
+              }
+            },
+            {
               ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPLAS1"},
+              ["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Lasers_HeatTime"},
+              ["SECTION_UP"] = 1,
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Bonus",         "@*"..CoolingMultiplier},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPLAS_ALIEN"},
               ["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Lasers_HeatTime"},
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =

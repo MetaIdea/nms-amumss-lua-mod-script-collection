@@ -1,5 +1,5 @@
 ModName = "PTSd More Expensive Costs etc"
-GameVersion = "7_01"
+GameVersion = "7_03"
 Description = "Changes costs for Starship or Multi-Tool inventory slots, Broadcast Receivers, Pilot Slots, etc."
 
 --Allows salvaging Reactor Cores from Shuttle & Exotic starships (Also requires changes in "PTSd Rewards Remixer.lua")
@@ -28,7 +28,11 @@ LowTradeExpCost =		100000				--50000
 MedTradeExpCost =		150000				--75000
 HighTradeExpCost =		300000				--150000
 
---Adds a cost to opening the containers at crashed freighters
+--Changes the type of "repair" interaction done for opening cargo containers at crashed freighters
+CrashedContTechRepair =	true				--false		Changes the type of repair for these containers from "remove junk substances" to "supply specific materials to repair a broken tech"
+NewCrashedContMaintTech =	"MAINT_TECHCC"	--N/A		Only applies if CrashedContTechRepair is set to true. MAINT_TECHCC requires 10 Chromatic Metal and is added by PTSd in "--PTSd Tech + Upgrade + Unlock costs.lua"
+
+--Adds an additional cost to opening the containers at crashed freighters, if CrashedContTechRepair above is set to false
 CrashedContSubstance =	"STELLAR2"			--""			Chromatic Metal
 CrashedContAmount =		10					--0
 
@@ -507,7 +511,7 @@ AddCorvTeleportCost =
 		</Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]		= ModName..GameVersion..".pak",
+["MOD_FILENAME"]		= ModName..GameVersion,
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
@@ -709,11 +713,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				["SPECIAL_KEY_WORDS"] = {"ActivationCost","GcInteractionActivationCost"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "SPACEGUNK4"},
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
-					{"SubstanceId", CrashedContSubstance},
-					{"Cost", CrashedContAmount},
+					{"MinRandAmount", "10.000000"},
+					{"MaxRandAmount", "20.000000"},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "SPACEGUNK5"},
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"MinRandAmount", "10.000000"},
+					{"MaxRandAmount", "25.000000"},
 				}
 			},
 			{
@@ -735,7 +747,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"SubstanceId", ScannerRoomSubstance},
 					{"Cost", ScannerRoomAmount},
-					--{"Repeat", "true"},		--"false"
 				}
 			},
 		}
@@ -863,6 +874,55 @@ if AtlantidToolsAbandonedMode then
 				["SPECIAL_KEY_WORDS"] = {"Id","C_MONO_NUB_ON",		"Costs", "GcCostMissionComplete"},
 				["ADD"] = AbandonedModeCompleteCost,
 				["ADD_OPTION"] = "ADDafterSECTION",
+			}
+end
+
+local ChangesToCrashedFreighterContainer = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["MXML_CHANGE_TABLE"]
+
+if CrashedContTechRepair then
+			ChangesToCrashedFreighterContainer[#ChangesToCrashedFreighterContainer+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "SPACEGUNK5"},
+				["REMOVE"] = "SECTION"
+			}
+			
+			ChangesToCrashedFreighterContainer[#ChangesToCrashedFreighterContainer+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "SPACEGUNK4"},
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"MaintenanceGroup", "Custom"},
+					{"InventoryType", "Technology"},
+					{"MinRandAmount", "0.000000"},
+					{"MaxRandAmount", "0.000000"},
+					{"CompletionRequirement", "FullyRepaired"},
+					{"Id", NewCrashedContMaintTech},
+				}
+			}
+			
+			ChangesToCrashedFreighterContainer[#ChangesToCrashedFreighterContainer+1] =
+			{
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"VisibleMaintenanceSlots", "1"},		--2
+					{"AllowDismantle", "false"},
+					{"AllowDiscard", "false"},
+					{"AllowTransfer", "false"},
+					{"TransferButtonOverride", "QUICK_TRANSFER"},
+					{"TransferDescriptionOverride", "QUICK_TRANSFER_DESC"},
+					{"DiscardButtonOverride", "DISCARD"},
+					{"DiscardDescriptionOverride", "DISCARD_DESC"},
+				}
+			}
+else
+			ChangesToCrashedFreighterContainer[#ChangesToCrashedFreighterContainer+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ActivationCost","GcInteractionActivationCost"},
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"SubstanceId", CrashedContSubstance},
+					{"Cost", CrashedContAmount},
+				}
 			}
 end
 

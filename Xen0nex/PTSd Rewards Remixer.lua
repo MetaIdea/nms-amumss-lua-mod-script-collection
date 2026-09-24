@@ -2033,17 +2033,17 @@ CrashedFreighterLootChances =
 			{"WEAP_INV_TOKEN",			10},					--8			Multi-Tool Expansion Slot
 			{"FREI_INV_TOKEN",			15},					--5			Freighter Bulkhead
 			--{"",						8},						--8			Chooses 1x random ILLEGAL_PROD trade good
-			{"HYPERFUEL2",				7},						--10		Warp Hypercore
-			{"BP_SALVAGE",				5},						--25		1-3 Salvaged Data
+			{"HYPERFUEL2",				5},						--10		Warp Hypercore
+			{"BP_SALVAGE",				2},						--25		1-3 Salvaged Data
 			--{"",						20},					--20		Chooses 5x random TRA_XXX5 trade goods worth 50,000 each
-			{"FARMPROD6",				3},						--15		Unstable Gel
-			{"FARMPROD5",				5},						--9			Poly Fibre
-			{"FARMPROD1",				5},						--5			Acid
-			{"FARMPROD4",				5},						--5			Heat Capacitor
-			{"FARMPROD7",				1},						--1			Liquid Explosive
-			{"COMPOUND4",				1},						--1			Fusion Accelerant
-			{"COMPOUND5",				1},						--1			Superconductor
-			{"COMPOUND6",				1},						--1			Cryo-Pump
+			{"FARMPROD6",				0},						--15		Unstable Gel
+			{"FARMPROD5",				2},						--9			Poly Fibre
+			{"FARMPROD1",				2},						--5			Acid
+			{"FARMPROD4",				2},						--5			Heat Capacitor
+			{"FARMPROD7",				3},						--1			Liquid Explosive
+			{"COMPOUND4",				4},						--1			Fusion Accelerant
+			{"COMPOUND5",				4},						--1			Superconductor
+			{"COMPOUND6",				4},						--1			Cryo-Pump
 			{"COMPOUND3",				3},						--3			Hot Ice
 			--{<One of 36 Corvette parts>,	7},					--7			<One of 36 Corvette parts>	Worth 1,052,400 units on average
 			--{<One of 73 Corvette parts>,	15},				--15		<One of 73 Corvette parts>	Worth 236,694 units on average
@@ -2069,14 +2069,14 @@ CrashedFreighterLootChances =
 			{"SHIP_INV_TOKEN",			3},						--5			Storage Augmentation
 			{"ABAND_LOCATOR",			7},						--5			Emergency Signal Scanner
 			--{"",						8},						--8			Chooses 1x random ILLEGAL_PROD trade good
-			{"HYPERFUEL2",				10},					--10		Warp Hypercore
-			{"BP_SALVAGE",				3},						--25		1-3 Salvaged Data
+			{"HYPERFUEL2",				6},						--10		Warp Hypercore
+			{"BP_SALVAGE",				2},						--25		1-3 Salvaged Data
 			--{"",						25},					--20		Chooses 5x random TRA_XXX5 trade goods worth 50,000 each
-			{"FARMPROD6",				1},						--15		Unstable Gel
-			{"FARMPROD5",				5},						--9			Poly Fibre
-			{"FARMPROD1",				5},						--5			Acid
-			{"FARMPROD4",				5},						--5			Heat Capacitor
-			{"FARMPROD7",				5},						--1			Liquid Explosive
+			{"FARMPROD6",				0},						--15		Unstable Gel
+			{"FARMPROD5",				2},						--9			Poly Fibre
+			{"FARMPROD1",				2},						--5			Acid
+			{"FARMPROD4",				2},						--5			Heat Capacitor
+			{"FARMPROD7",				3},						--1			Liquid Explosive
 		}
 	},
 	{
@@ -2147,8 +2147,7 @@ CrashedFreighterCurrencyChances =
 	{
 		{"CRASHCONT_M"},
 		{	--Old Currency	New Currency	Reward Mult	Old %Chance 	New %Chance (relative weight, roughly but not necessarily out of 100)
-			{"Units",		"Units",		1,			5,				5},			--150000-	250000,			5%			
-			--{"Units",		"Units",		4,			25,				5}			--25000	-	75000,			25%			(By default, This will get boosted by SmallUnitsMin)
+			{"Units",		"Units",		1.3,		5,				5},			--150000-	250000,			5%			
 		}
 	},
 	{
@@ -4248,7 +4247,7 @@ AddNewAbandLootbox =
 		</Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]		= ModName..GameVersion..".pak",
+["MOD_FILENAME"]		= ModName..GameVersion,
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,

@@ -2,10 +2,10 @@ local MULT   = 5
 local REVERT = 1 / MULT
 
 local MOD_NAME     = "HardcoreSky_TechCost"
-local GAME_VERSION = "6.06"
+local GAME_VERSION = "7.02"
 local MOD_FILENAME = string.format("%s_x%d.zip", MOD_NAME, MULT)
 
-local EARLY_IDS = { "JET1", "PROTECT", "ENERGY", "SCAN1", "TERRAINEDITOR" }
+local EXEMPT_IDS = { "ATLASSUIT", "ENERGY", "JET1", "LIFESUP_ROBO", "MAINT_ARTIFACT", "MAINT_S13", "MAINT_SEALOCK1", "MAINT_SEALOCK2", "PROTECT", "SCAN1", "TERRAINEDITOR" }
 
 local CHANGES = {
   {
@@ -16,7 +16,7 @@ local CHANGES = {
     VALUE_CHANGE_TABLE  = { { "Amount", MULT } }
   },
 }
-for _, id in ipairs(EARLY_IDS) do
+for _, id in ipairs(EXEMPT_IDS) do
   table.insert(CHANGES, {
     SPECIAL_KEY_WORDS   = { "ID", id },
     SECTION_UP          = 1,
@@ -34,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
   LUA_AUTHOR      = "Azunain",
   NMS_VERSION     = GAME_VERSION,
   MOD_DESCRIPTION = string.format(
-    "Increases technology install material costs by x%d; excludes core early-game tech from scaling",
+    "Multiplies technology install material costs by x%d; exempts core early-game and finite quest/puzzle techs to avoid soft-locks",
     MULT
   ),
   MODIFICATIONS   = {{

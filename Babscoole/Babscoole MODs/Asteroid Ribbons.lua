@@ -51,9 +51,9 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"Common Asteroid Data"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"ClusterSpacingSpacing", "387.000000"},
-                {"Fade Range",            "1000.000000"},
-                {"Noise Scale",           "100000.000000"},
+                {"ClusterSpacing", "1935.000000"},
+                {"Fade Range",     "1000.000000"},
+                {"Noise Scale",    "100000.000000"},
               }
             },
             {
@@ -106,7 +106,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["PRECEDING_KEY_WORDS"] = {"Rare Asteroid Data"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"ClusterSpacing", "510.000000"},
+                {"ClusterSpacing", "2550.000000"},
                 {"Fade Range",     "1000.000000"},
                 {"Noise Scale",    "100000.000000"},
               }

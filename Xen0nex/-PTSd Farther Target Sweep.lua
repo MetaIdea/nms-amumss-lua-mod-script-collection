@@ -1,5 +1,5 @@
 ModName = "PTSd Farther Target Sweep"
-GameVersion = "6_18"
+GameVersion = "7_03"
 Description = "Makes the distance between the 'Approximate Location' and final mission target using Target Sweep farther away."
 
 --Multipliers to use for the "approximate Location" distances, depending on the mission group / file
@@ -15,7 +15,7 @@ Filepaths =
 	{"METADATA\SIMULATION\MISSIONS\TABLES\PIRATEMISSIONTABLE.MBIN",				"Short"},		--600,	650								Under a Rebel Star mission?
 	{"METADATA\SIMULATION\MISSIONS\TABLES\WATERMISSIONTABLE.MBIN",					"Short"},		--500,	350								Dreams of the Deep mission?
 	{"METADATA\SIMULATION\MISSIONS\TABLES\NPCMISSIONTABLE.MBIN",					"Both"},		--1200,	500,	350,	400				Space Station missions	(the 1200 distance missions are just for landing on the appropriate planet, no actual target is 1200u to walk to.)
-	--{"METADATA\SIMULATION\MISSIONS\TABLES\SPACEPOIMISSIONTABLE.MBIN",			"Both"},		--1600,	300			Handled in PTSd Starship And Living Ship Tech + Speed Changes.lua						Living Ship missions	( moved to "Ship Speed Changes etcX.lua")
+	{"METADATA\SIMULATION\MISSIONS\TABLES\SPACEPOIMISSIONTABLE.MBIN",			"Both"},		--1600,	300			Handled in PTSd Starship And Living Ship Tech + Speed Changes.lua						Living Ship missions	( moved to "Ship Speed Changes etcX.lua")
 	{"METADATA\SIMULATION\MISSIONS\TABLES\SEASONALMISSIONTABLE.MBIN",				"Both"},		--???	320 as of NMS 5.01.1			This rotates out for missions unique to the current expedition (non-rendezvous missions)
 	{"METADATA\SIMULATION\MISSIONS\TABLES\MISSIONTABLE.MBIN",						"Short"},		--500									Main story / tutorial missions?
 	{"METADATA\SIMULATION\MISSIONS\TABLES\MULTIPLAYERMISSIONTABLE.MBIN",			"Short"},		--600,	400,	300						Nexus missions?
@@ -30,11 +30,11 @@ Filepaths =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]		= ModName..".pak",
+	["MOD_FILENAME"]		= ModName,
 	["MOD_DESCRIPTION"]		= Description,
 	["MOD_AUTHOR"]			= "Xen0nex",
 	["NMS_VERSION"]			= GameVersion,
-	--["EXML_CREATE"] = "FALSE",  
+	["EXML_CREATE"] = "TRUE",  
 	["MODIFICATIONS"]		= 
 	{
 		{

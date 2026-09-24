@@ -1,11 +1,11 @@
 FuelConsumptionPercent = 1
 LaunchFuelConsumptionPercent = 0
 LaunchFuelRegenPercent = 500
-BoostSpeedPercent = 150
-PulseTopSpeedPercent = 150
-ShieldStrengthPercent = 1000
-ShipBoostManeuverabilityPercent = 125
-ShipManeuverabilityPercent = 125
+BoostSpeedBonusPercent = 60
+PulseTopSpeedBonusPercent = 75
+ShieldStrengthBonusPercent = 1000
+ShipBoostManeuverabilityBonusPercent = 60
+ShipManeuverabilityBonusPercent = 60
 WarpEffectivenessPercent = 1000
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -18,14 +18,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 FuelConsumptionPercent - percentage of original pulse drive fuel consumpion
 LaunchFuelConsumptionPercent - percentage of original launch fuel consumpion
 LaunchFuelRegenPercent - percentage of fuel regeneration by landing gear
-BoostSpeedPercent - percentage of original ship boost speed
-PulseTopSpeedPercent - percentage of original pulse engine top speed
-ShieldStrengthPercent - percentage of original ship shields capacity
-ShipBoostManeuverabilityPercent - percentage of original ship boost maneuverability
-ShipManeuverabilityPercent - percentage of original ship maneuverability
+BoostSpeedBonusPercent - percentage of bonus ship boost speed
+PulseTopSpeedBonusPercent - percentage of bonus pulse engine top speed
+ShieldStrengthBonusPercent - percentage of bonus ship shields capacity
+ShipBoostManeuverabilityBonusPercent - percentage of bonus ship boost maneuverability
+ShipManeuverabilityBonusPercent - percentage of bonus ship maneuverability
 WarpEffectivenessPercent - percentage of original warp effectiveness, roughly how many jumps can be done per one cell
 ]],
-["NMS_VERSION"]   = "6.40",
+["NMS_VERSION"]   = "7.2.1",
 ["MODIFICATIONS"] =
   {
     {
@@ -113,7 +113,7 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Bonus",   (ShieldStrengthPercent / 100)},
+                {"Bonus",   (1 + (ShieldStrengthBonusPercent / 100))},
               }
             },
             {
@@ -122,16 +122,7 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Bonus",   "@*"..(ShieldStrengthPercent / 100)},
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPSHIELD_ROBO"}, -- SENTINEL SHIELD
-              ["PRECEDING_KEY_WORDS"] = {"Ship_Armour_Shield_Strength"},
-              ["SECTION_UP"] = 1,
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Bonus",   "@*"..(ShieldStrengthPercent / 100)},
+                {"Bonus",   "@*"..(1 + (ShieldStrengthBonusPercent / 100))},
               }
             },
             {
@@ -140,7 +131,7 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Bonus",   (PulseTopSpeedPercent / 100)},
+                {"Bonus",   (1 + (PulseTopSpeedBonusPercent / 100))},
               }
             },
             {
@@ -151,38 +142,11 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
           <Property name="Stat" value="GcStatsTypes">
               <Property name="StatsType" value="Ship_Boost" />
           </Property>
-          <Property name="Bonus" value="]]..(BoostSpeedPercent / 100)..[[" />
+          <Property name="Bonus" value="]]..(1 + (BoostSpeedBonusPercent / 100))..[[" />
           <Property name="Level" value="1" />
         </Property>
               ]],
               ["ADD_OPTION"]  = "ADDendSECTION",
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID", "PHOTONIX_CORE"}, -- PHOTONIX CORE
-              ["PRECEDING_KEY_WORDS"] = {"Ship_Boost"},
-              ["SECTION_UP"] = 1,
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Bonus",   "@*"..(BoostSpeedPercent / 100)},
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID", "PHOTONIX_CORE"},
-              ["PRECEDING_KEY_WORDS"] = {"Ship_BoostManeuverability"},
-              ["SECTION_UP"] = 1,
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Bonus",   "@*"..(ShipBoostManeuverabilityPercent / 100)},
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID", "PHOTONIX_CORE"},
-              ["PRECEDING_KEY_WORDS"] = {"Ship_Maneuverability"},
-              ["SECTION_UP"] = 1,
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Bonus",   "@*"..(ShipManeuverabilityPercent / 100)},
-              }
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPJUMP_SPEC"}, -- WAVEFORM DRIVE
@@ -195,20 +159,11 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPJUMP_SPEC"},
-              ["PRECEDING_KEY_WORDS"] = {"Ship_Boost"},
-              ["SECTION_UP"] = 1,
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Bonus",   "@*"..(BoostSpeedPercent / 100)},
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPJUMP_SPEC"},
               ["PRECEDING_KEY_WORDS"] = {"Ship_BoostManeuverability"},
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Bonus",   "@*"..(ShipBoostManeuverabilityPercent / 100)},
+                {"Bonus",   "@*"..(1 + (ShipBoostManeuverabilityBonusPercent / 100))},
               }
             },
             {
@@ -217,16 +172,7 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Bonus",   "@*"..(ShipManeuverabilityPercent / 100)},
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPJUMP_SPEC"},
-              ["PRECEDING_KEY_WORDS"] = {"Ship_PulseDrive_MiniJumpSpeed"},
-              ["SECTION_UP"] = 1,
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Bonus",   (PulseTopSpeedPercent / 100)},
+                {"Bonus",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
               }
             },
             {
@@ -244,16 +190,7 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Bonus",   "@*"..(BoostSpeedPercent / 100)},
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPJUMP_ALIEN"},
-              ["PRECEDING_KEY_WORDS"] = {"Ship_PulseDrive_MiniJumpSpeed"},
-              ["SECTION_UP"] = 1,
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Bonus",   "@*"..(PulseTopSpeedPercent / 100)},
+                {"Bonus",   "@*"..(1 + (BoostSpeedBonusPercent / 100))},
               }
             },
             {
@@ -262,7 +199,7 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Bonus",   "@*"..(ShipManeuverabilityPercent / 100)},
+                {"Bonus",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
               }
             },
             {
@@ -276,29 +213,11 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPJUMP_ROBO"},
-              ["PRECEDING_KEY_WORDS"] = {"Ship_Boost"},
-              ["SECTION_UP"] = 1,
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Bonus",   "@*"..(BoostSpeedPercent / 100)},
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPJUMP_ROBO"},
-              ["PRECEDING_KEY_WORDS"] = {"Ship_PulseDrive_MiniJumpSpeed"},
-              ["SECTION_UP"] = 1,
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Bonus",   "@*"..(PulseTopSpeedPercent / 100)},
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPJUMP_ROBO"},
               ["PRECEDING_KEY_WORDS"] = {"Ship_Maneuverability"},
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Bonus",   "@*"..(ShipManeuverabilityPercent / 100)},
+                {"Bonus",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
               }
             },
             {
@@ -307,7 +226,7 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Bonus",   "@*"..(ShipBoostManeuverabilityPercent / 100)},
+                {"Bonus",   "@*"..(1 + (ShipBoostManeuverabilityBonusPercent / 100))},
               }
             },
             {
@@ -321,29 +240,11 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
             },
             {
               ["SPECIAL_KEY_WORDS"] = {"ID", "SOLAR_SAIL"},
-              ["PRECEDING_KEY_WORDS"] = {"Ship_Boost"},
-              ["SECTION_UP"] = 1,
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Bonus",   "@*"..(BoostSpeedPercent / 100)},
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID", "SOLAR_SAIL"},
               ["PRECEDING_KEY_WORDS"] = {"Ship_Launcher_AutoCharge"},
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"Bonus",   "@*"..(LaunchFuelRegenPercent / 100)},
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID", "SOLAR_SAIL"},
-              ["PRECEDING_KEY_WORDS"] = {"Ship_BoostManeuverability"},
-              ["SECTION_UP"] = 1,
-              ["VALUE_CHANGE_TABLE"] =
-              {
-                {"Bonus",   "@*"..(ShipBoostManeuverabilityPercent / 100)},
               }
             },
             {
@@ -388,7 +289,7 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
               ["SECTION_UP"] = 1,
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Bonus",   "@*"..(ShipManeuverabilityPercent / 100)},
+                {"Bonus",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
               }
             },
             {
@@ -399,7 +300,7 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
           <Property name="Stat" value="GcStatsTypes">
               <Property name="StatsType" value="Ship_BoostManeuverability" />
           </Property>
-          <Property name="Bonus" value="]]..(ShipBoostManeuverabilityPercent / 100)..[[" />
+          <Property name="Bonus" value="]]..(1 + (ShipBoostManeuverabilityBonusPercent / 100))..[[" />
           <Property name="Level" value="1" />
         </Property>
               ]],

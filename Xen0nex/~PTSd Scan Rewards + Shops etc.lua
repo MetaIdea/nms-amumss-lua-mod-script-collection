@@ -592,7 +592,7 @@ BasicCorvetteParts =
 {"B_COK_D", "B_HAB_B", "B_LND_A", "B_WNG_H", "B_GEN_1", "B_TUR_A", "B_ALK_A", "B_TRU_D", "B_WNG_I", "B_STR_A_N", "B_STR_C_NE", "B_DECO_A", "B_DECO_M", "B_MAG_1X1"}
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..GameVersion..".pak",
+["MOD_FILENAME"]	= ModName.." "..GameVersion,
 ["MOD_DESCRIPTION"]	= Description,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,

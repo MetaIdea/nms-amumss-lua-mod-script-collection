@@ -3,8 +3,8 @@ This mod contains:
 =====================
 Original information:
          SCRIPT NAME: PTSd Vehicles and Tools etc\___MOD_BATCHNAME7.lua
-        MOD FILENAME: PTSd Vehicles and Tools etc.pak
-       MOD BATCHNAME: PTSd Vehicles and Tools etc.pak
+        MOD FILENAME: PTSd Vehicles and Tools etc
+       MOD BATCHNAME: PTSd Vehicles and Tools etc
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
      MOD MAINTENANCE: nil
@@ -15,7 +15,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Vehicles and Tools etc\PTSd Suit Inventory and Stack Sizes.lua
-        MOD FILENAME: PTSd Suit Inventory and Stack Sizes5_55.pak
+        MOD FILENAME: PTSd Suit Inventory and Stack Sizes5_55
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -27,7 +27,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Vehicles and Tools etc\PTSd Ship+MultiTool Rebalance.lua
-        MOD FILENAME: PTSd Ship+MultiTool Rebalance6_24.pak
+        MOD FILENAME: PTSd Ship+MultiTool Rebalance6_24
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -39,7 +39,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Vehicles and Tools etc\PTSd Scanner and Mining Bonus.lua
-        MOD FILENAME: PTSd Scanner and Mining Bonus5_55.pak
+        MOD FILENAME: PTSd Scanner and Mining Bonus5_55
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -51,7 +51,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Vehicles and Tools etc\PTSd Other Difficulty Settings.lua
-        MOD FILENAME: PTSd Other Difficulty Settings6_17.pak
+        MOD FILENAME: PTSd Other Difficulty Settings6_17
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -63,7 +63,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Vehicles and Tools etc\PTSd Black Holes + Scrapping etc.lua
-        MOD FILENAME: PTSd Black Holes + Scrapping etc7_01.pak
+        MOD FILENAME: PTSd Black Holes + Scrapping etc7_01
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -75,7 +75,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Vehicles and Tools etc\GMechX.lua
-        MOD FILENAME: GMechX 5_55a.pak
+        MOD FILENAME: GMechX 5_55a
        MOD BATCHNAME: nil
           MOD AUTHOR: Gumsk,Devilin Pixy,Jasondude
           LUA AUTHOR: nil
@@ -87,19 +87,19 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Vehicles and Tools etc\gGame Misc Changes X.lua
-        MOD FILENAME: gGame Misc Changes X 6_21b.pak
+        MOD FILENAME: gGame Misc Changes X 7_03b.pak
        MOD BATCHNAME: nil
           MOD AUTHOR: Gumsk
           LUA AUTHOR: nil
      MOD MAINTENANCE: nil
      MOD DESCRIPTION: <<<Various modifications to gameplay globals>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-         NMS VERSION: 6_21
+         NMS VERSION: 7_03
 
 =====================
 Original information:
          SCRIPT NAME: PTSd Vehicles and Tools etc\-UniqueExocraftsX.lua
-        MOD FILENAME: UniqueExoCraftsX5_62.pak
+        MOD FILENAME: UniqueExoCraftsX5_62
        MOD BATCHNAME: nil
           MOD AUTHOR: Jackty89
           LUA AUTHOR: nil

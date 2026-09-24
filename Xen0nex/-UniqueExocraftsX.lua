@@ -57,7 +57,7 @@ ColossusVehicleJumpForce = 				"400"		--400		added by Xen0nex
 ColossusVehicleJumpAirControlForce =	"50"		--50		added by Xen0nex
 ColossusVehicleGravity = 				"20"		--20		added by Xen0nex
 
---SUBMARINE/NATILON
+--SUBMARINE/NAUTILON
 NautilonVehicleBoostForce = "1440" --900
 NautilonVehicleBoostMaxSpeed = "40"--25
 NautilonVehicleBoostExtraMaxSpeedAir = "16"--10
@@ -95,7 +95,7 @@ VehicleBoostFuelRateSurvival = "2"		--4
 -- HOVBERCraft is an unreleased vehcile this is NOT the Nomad
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
+["MOD_FILENAME"] 			= ModName..GameVersion,
 ["MOD_DESCRIPTION"]			= Description,
 ["MOD_AUTHOR"]				= "Jackty89",			--Edited by Xen0nex
 ["NMS_VERSION"]				= GameVersion,

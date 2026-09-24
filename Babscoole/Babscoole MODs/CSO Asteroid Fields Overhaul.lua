@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Scale", 0.560000},			--Vanilla 0.28 // x2 // scales the size of asteroids
-								{"Spacing",3870},			--Vanilla 645 // x6 // distance between asteroids in fields, also affect the drawing distance of asteroids
+								{"ClusterSpacing",19350},			--Vanilla 645 // x6 // distance between asteroids in fields, also affect the drawing distance of asteroids
 								{"Fade Range",54000},		--Vanilla 9000 // x6 // asteroids start to fade in/out at this range (?)
 								{"Noise Scale",300000},		--Vanilla 50000 // x6 // The bigger it is, the greater the distance between fields is, but the closer asteroids are inside fields
 							},
@@ -56,7 +56,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Scale", 0.300000},				--Vanilla 0.15 // x2 
-								{"Spacing",600},			--Vanilla 200 // x3
+								{"ClusterSpacing",600},			--Vanilla 200 // x3
 								{"Fade Range",9000},			--Vanilla 3000 // x3
 								{"Noise Scale",360000},	--Vanilla 120000 //x3
 							},
@@ -77,7 +77,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Scale", 4.000000},				--Vanilla 2 // x2 
-								{"Spacing",27000},			--Vanilla 9000 // x3
+								{"ClusterSpacing",27000},			--Vanilla 9000 // x3
 								{"Fade Range",27000},		--Vanilla 9000 // x3
 								{"Noise Scale",360000},		--Vanilla 120000 // x3
 							},
@@ -98,7 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Scale", 3.200000},				--Vanilla 1.6 // x2 
-								{"Spacing",2550},			--Vanilla 850 // x3
+								{"ClusterSpacing",12750},			--Vanilla 850 // x3
 								{"Fade Range",27000},		--Vanilla 9000 // x3
 								{"Noise Scale",150000},		--Vanilla 50000 // x3
 							},

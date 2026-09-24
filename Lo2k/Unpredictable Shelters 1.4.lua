@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Unpredictable Shelters 1.3.pak", 
+["MOD_FILENAME"] 			= "Unpredictable Shelters 1.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.52",
+["NMS_VERSION"]				= "7.04",
 ["MOD_DESCRIPTION"]			= "This makes shelters more diverse",
 ["MODIFICATIONS"] 			= 
 	{
@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SHACK\SHACK_SCIENTIFIC.LSYSTEM.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","nShack", "Restriction", "AtLeast"},
@@ -46,7 +46,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SHACK\SHACK_TRADER.LSYSTEM.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","nShack", "Restriction", "AtLeast"},
@@ -73,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},			
 				{
 					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SHACK\SHACK_WARRIOR.LSYSTEM.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","nShack", "Restriction", "AtLeast"},

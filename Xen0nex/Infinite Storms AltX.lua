@@ -6,7 +6,7 @@ GameVersion = "500"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModNameSub.." "..GameVersion..ModVersion..".pak",
+["MOD_FILENAME"]	= ModNameSub.." "..GameVersion..ModVersion,
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,

@@ -502,7 +502,7 @@ NewControlHover =
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= ModName..GameVersion..".pak",
+	MOD_FILENAME 		= ModName..GameVersion,
 	MOD_AUTHOR			= ModAuthor,
 	NMS_VERSION			= GameVersion,
 	--["EXML_CREATE"] = "FALSE",

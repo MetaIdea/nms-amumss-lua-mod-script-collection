@@ -263,7 +263,7 @@ FourFiveDronesThreeSpidersFiveSixMinis =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
+["MOD_FILENAME"] 			= ModName..GameVersion,
 ["MOD_AUTHOR"]				= "Exosolar",
 ["LUA_AUTHOR"]				= "Babscoole",		--Edited by Xen0nex
 ["MOD_DESCRIPTION"]			= Description,

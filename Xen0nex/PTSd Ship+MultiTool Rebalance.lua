@@ -951,7 +951,7 @@ AddDuplicateAlienShipBaseStats =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
+  ["MOD_FILENAME"] 			= ModName..GameVersion,
   ["MOD_DESCRIPTION"]		= Description,         
   ["MOD_AUTHOR"]			= "Xen0nex",         --Based on UniqueSpaceShips by Jackty89
   ["NMS_VERSION"]			= GameVersion,    

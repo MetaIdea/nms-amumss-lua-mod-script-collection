@@ -1,13 +1,12 @@
 LifeSupportBonusPercent = 500
-LifeSupportRegenBonusPercent = 100
+LifeSupportRegenBonusPercent = 200
 HazardProtectionBonusPercent = 500
 HazardProtectionBlockDamagePercent = 100
+PlayerShieldRechargeDelayPercent = 10
+PlayerShieldRechargeRatePercent = 500
+PlayerShieldMaxPercent = 800
 
 
-
-
-
-HazardProtectionBlockDamage = 1 - (HazardProtectionBlockDamagePercent / 100)
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -16,12 +15,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] =
 [[ A mod to tune life support and hazard protection suit upgrades (Oxygen Recycler and Shield Lattice):
 
-LifeSupportBonusPercent increases amount of life support battery
-LifeSupportRegenBonusPercent increases suit solar panels efficiency
-HazardProtectionBonusPercent increases amount of hazard protection battery
-HazardProtectionBlockDamagePercent sets hazard damage percent blocked
+LifeSupportBonusPercent - increases amount of life support battery
+LifeSupportRegenBonusPercent - increases suit solar panels efficiency
+HazardProtectionBonusPercent - increases amount of hazard protection battery
+HazardProtectionBlockDamagePercent - sets hazard damage percent blocked
+PlayerShieldRechargeDelayPercent - sets delay before player's shield starts recharging
+PlayerShieldRechargeRatePercent - increases playes's shield recharge rate
+PlayerShieldMaxPercent - increases playes's shield max amount
 ]],
-["NMS_VERSION"]   = "6.40",
+["NMS_VERSION"]   = "7.2",
 ["MODIFICATIONS"] =
   {
     {
@@ -67,28 +69,28 @@ HazardProtectionBlockDamagePercent sets hazard damage percent blocked
           <Property name="Stat" value="GcStatsTypes">
             <Property name="StatsType" value="Suit_DamageReduce_Radiation" />
           </Property>
-          <Property name="Bonus" value="]]..HazardProtectionBlockDamage..[[" />
+          <Property name="Bonus" value="]]..(1 - (HazardProtectionBlockDamagePercent / 100))..[[" />
           <Property name="Level" value="1" />
         </Property>
         <Property name="StatBonuses" value="GcStatsBonus" _index="2">
           <Property name="Stat" value="GcStatsTypes">
             <Property name="StatsType" value="Suit_DamageReduce_Toxic" />
           </Property>
-          <Property name="Bonus" value="]]..HazardProtectionBlockDamage..[[" />
+          <Property name="Bonus" value="]]..(1 - (HazardProtectionBlockDamagePercent / 100))..[[" />
           <Property name="Level" value="4" />
         </Property>
         <Property name="StatBonuses" value="GcStatsBonus" _index="3">
           <Property name="Stat" value="GcStatsTypes">
             <Property name="StatsType" value="Suit_DamageReduce_Cold" />
           </Property>
-          <Property name="Bonus" value="]]..HazardProtectionBlockDamage..[[" />
+          <Property name="Bonus" value="]]..(1 - (HazardProtectionBlockDamagePercent / 100))..[[" />
           <Property name="Level" value="1" />
         </Property>
         <Property name="StatBonuses" value="GcStatsBonus" _index="4">
           <Property name="Stat" value="GcStatsTypes">
             <Property name="StatsType" value="Suit_DamageReduce_Heat" />
           </Property>
-          <Property name="Bonus" value="]]..HazardProtectionBlockDamage..[[" />
+          <Property name="Bonus" value="]]..(1 - (HazardProtectionBlockDamagePercent / 100))..[[" />
           <Property name="Level" value="1" />
         </Property>
         <Property name="StatBonuses" value="GcStatsBonus" _index="5">
@@ -129,6 +131,35 @@ HazardProtectionBlockDamagePercent sets hazard damage percent blocked
               ]],
               ["ADD_OPTION"]  = "ADDendSECTION",
             }, 
+          },
+        },
+      },
+    },
+    {
+      ["MBIN_CHANGE_TABLE"] =
+      {
+        {
+          ["MBIN_FILE_SOURCE"] = "GLOBALS\GCPLAYERGLOBALS.GLOBAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"EnergyDischargeRateLow",   "0"},
+                {"EnergyDischargeRateMedium",   "0"},
+                {"EnergyDischargeRateHigh",   "0"},
+                {"EnergyDischargeRateFloatingInSpace",   "0"},
+                {"EnergyDischargeRateDeepWater",   "0"},
+                {"SolarRegenFactor",   "@*"..(LifeSupportRegenBonusPercent / 100)},
+                {"NormalModeHazardDamageRateMultiplier",   "@*"..(1 - (HazardProtectionBlockDamagePercent / 100))},
+                {"HardModeHazardDamageRateMultiplier",   "@*"..(1 - (HazardProtectionBlockDamagePercent / 100))},
+                {"ShieldRechargeMinTimeSinceDamage",   "@*"..(PlayerShieldRechargeDelayPercent / 100)},
+                {"ShieldRechargeRate",   "@*"..(PlayerShieldRechargeRatePercent / 100)},
+                {"ShieldRestoreDelay",   "@*"..(PlayerShieldRechargeDelayPercent / 100)},
+                {"ShieldRestoreSpeed",   "@*"..(PlayerShieldRechargeRatePercent / 100)},
+                {"ShieldMaximum",   "@*"..(PlayerShieldMaxPercent / 100)},
+              }
+            },
           },
         },
       },

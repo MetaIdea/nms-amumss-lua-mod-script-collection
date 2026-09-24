@@ -3,8 +3,8 @@ This mod contains:
 =====================
 Original information:
          SCRIPT NAME: PTSd Incoming Damage and Predators\___MOD_BATCHNAME_PTSD2.lua
-        MOD FILENAME: PTSd Incoming Damage and Predators.pak
-       MOD BATCHNAME: PTSd Incoming Damage and Predators.pak
+        MOD FILENAME: PTSd Incoming Damage and Predators
+       MOD BATCHNAME: PTSd Incoming Damage and Predators
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
      MOD MAINTENANCE: nil
@@ -15,7 +15,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Incoming Damage and Predators\PTSd Creature Loot Changes.lua
-        MOD FILENAME: PTSd Creature Loot Changes5_64.pak
+        MOD FILENAME: PTSd Creature Loot Changes5_64
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -27,7 +27,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Incoming Damage and Predators\gDamageX.lua
-        MOD FILENAME: gDamageX 6_4a.pak
+        MOD FILENAME: gDamageX 6_4a
        MOD BATCHNAME: nil
           MOD AUTHOR: Gumsk
           LUA AUTHOR: nil
@@ -39,7 +39,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Incoming Damage and Predators\gCreatures Predators Frequency MediumX.lua
-        MOD FILENAME: gCreatures Predators Frequency MediumX 6_18a.pak
+        MOD FILENAME: gCreatures Predators Frequency MediumX 6_18a
        MOD BATCHNAME: nil
           MOD AUTHOR: Gumsk
           LUA AUTHOR: nil
@@ -51,7 +51,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Incoming Damage and Predators\gCreatures Predators Danger DangerousX.lua
-        MOD FILENAME: gCreatures Predators Danger DangerousX 5_62a.pak
+        MOD FILENAME: gCreatures Predators Danger DangerousX 5_62a
        MOD BATCHNAME: nil
           MOD AUTHOR: Gumsk
           LUA AUTHOR: nil

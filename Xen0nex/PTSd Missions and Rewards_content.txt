@@ -3,8 +3,8 @@ This mod contains:
 =====================
 Original information:
          SCRIPT NAME: PTSd Missions and Rewards\___MOD_BATCHNAME_PTSD4.lua
-        MOD FILENAME: PTSd Missions and Rewards.pak
-       MOD BATCHNAME: PTSd Missions and Rewards.pak
+        MOD FILENAME: PTSd Missions and Rewards
+       MOD BATCHNAME: PTSd Missions and Rewards
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
      MOD MAINTENANCE: nil
@@ -27,7 +27,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Missions and Rewards\PTSd Rewards Remixer.lua
-        MOD FILENAME: PTSd Rewards Remixer7_03.pak
+        MOD FILENAME: PTSd Rewards Remixer7_03
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -39,7 +39,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Missions and Rewards\PTSd Mission Adjustments.lua
-        MOD FILENAME: PTSd Mission Adjustments7_01.pak
+        MOD FILENAME: PTSd Mission Adjustments7_01
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil

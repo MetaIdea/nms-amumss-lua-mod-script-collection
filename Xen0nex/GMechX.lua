@@ -48,7 +48,7 @@ FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 ]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..GameVersion..ModVersion..".pak",
+["MOD_FILENAME"]	= ModName.." "..GameVersion..ModVersion,
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,

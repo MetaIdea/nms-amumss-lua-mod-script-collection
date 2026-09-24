@@ -2,7 +2,7 @@ Author = "Gumsk"		--Edited by Xenonex
 ModName = "gGame"
 ModNameSub = "Misc Changes X"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "6_21"
+GameVersion = "7_03"
 ModVersion = "b"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
@@ -15,25 +15,25 @@ BonusChildMult = 0.03							--0.03 ;
 
 
 --Torch Adjustments
-TorchFoV = 110									--Torch arc width, in degrees. 181+=360 degrees. Original value "110" (120)
-TorchStrength = 16.8							--Torch brightness. Original value "16" (3.5)
-TorchCookieIndex = 0							--0
-TorchDimFoV = 65								--65 Derelict Freighter FOV
-TorchDimStrength = 2.2							--2.25 (1.5) Derelict Freighter Strength
-InteractionTorchFoV = 120						--120
-InteractionTorchStrength = 3					--4 (2)
-UndergroundTorchFoV = 90						--90
-UndergroundTorchStrength = 14					--12.25 (3.5)
+--TorchFoV = 110									--Torch arc width, in degrees. 181+=360 degrees. Original value "110" (120)
+--TorchStrength = 16.8							--Torch brightness. Original value "16" (3.5)
+--TorchCookieIndex = 0							-- -1
+--TorchDimFoV = 65								--65 Derelict Freighter FOV
+--TorchDimStrength = 2.2							--2.25 (1.5) Derelict Freighter Strength
+--InteractionTorchFoV = 120						--120
+--InteractionTorchStrength = 3					--4 (2)
+--UndergroundTorchFoV = 90						--90
+--UndergroundTorchStrength = 14					--12.25 (3.5)
 --UndergroundTorchFoVFar = 100					--100	Deprecated in NMS v5.5
 --UndergroundTorchStrengthFar = 7.5				--6.5	Deprecated in NMS v5.5
-TorchOffsetX = 0								--Torch source, + right, -left of centerline of character, in u. Original value "0"
-TorchOffsetY = -0.35							--Torch source, + above, -below top of character head, in u. Original value "-0.5"
-TorchOffsetZ = -1.0								--Torch source, + behind, - in front of centerline of character, in u. Original value "-1.2" (-0.75)
-TorchRotation = 0.0								--???
-TorchColourRed = 0.95							--Torch color red saturation percent. Original value "0.95"
-TorchColourGreen = 0.993						--Torch color green saturation percent. Original value "0.993"
-TorchColourBlue = 0.944							--Torch color blue saturation percent. Original value "0.944"
-TorchColourA = 1								--???? Original value "1"
+TorchOffsetX = 0								-- -0.5		Torch source, + right, -left of centerline of character, in u.
+TorchOffsetY = -0.35							-- -0.5		Torch source, + above, -below top of character head, in u.
+TorchOffsetZ = -1.0								-- -1.2		Torch source, + behind, - in front of centerline of character, in u. (-0.75)
+--TorchRotation = 0.0								--???
+--TorchColourRed = 0.95							--Torch color red saturation percent. Original value "0.95"
+--TorchColourGreen = 0.993						--Torch color green saturation percent. Original value "0.993"
+--TorchColourBlue = 0.944							--Torch color blue saturation percent. Original value "0.944"
+--TorchColourA = 1								--???? Original value "1"
 
 --Scanner Adjustments
 --[[
@@ -286,20 +286,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"NonAggressiveLushSurvivalProbabability", NonAggressiveLushSurvivalProbability},
 
 				--Torch
-						{"TorchFoV", TorchFoV},
-						{"TorchStrength", TorchStrength},
-						{"TorchDimFoV", TorchDimFoV},
-						{"TorchDimStrength", TorchDimStrength},
-						{"InteractionTorchFoV", InteractionTorchFoV},
-						{"InteractionTorchStrength", InteractionTorchStrength},
-						{"UndergroundTorchFoV", UndergroundTorchFoV},
-						{"UndergroundTorchStrength", UndergroundTorchStrength},
+						--{"TorchFoV", TorchFoV},
+						--{"TorchStrength", TorchStrength},
+						--{"TorchDimFoV", TorchDimFoV},
+						--{"TorchDimStrength", TorchDimStrength},
+						--{"InteractionTorchFoV", InteractionTorchFoV},
+						--{"InteractionTorchStrength", InteractionTorchStrength},
+						--{"UndergroundTorchFoV", UndergroundTorchFoV},
+						--{"UndergroundTorchStrength", UndergroundTorchStrength},
 						--{"UndergroundTorchFoVFar", UndergroundTorchFoVFar},	Deprecated in NMS v5.5
 						--{"UndergroundTorchStrengthFar", UndergroundTorchStrengthFar},	Deprecated in NMS v5.5
 						{"TorchOffsetX", TorchOffsetX},
 						{"TorchOffsetY", TorchOffsetY},
 						{"TorchOffsetZ", TorchOffsetZ},
-						{"TorchRotation", TorchRotation},
+						--{"TorchRotation", TorchRotation},
 					}
 				},
 				{
@@ -323,9 +323,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"MaxDronesAggressiveSurvival", MaxDronesAggressiveSurvival},
 
 				--Torch
-						{"TorchCookieIndex", TorchCookieIndex},
+						--{"TorchCookieIndex", TorchCookieIndex},
 					}
 				},
+				--[[
 				{
 					["PRECEDING_KEY_WORDS"] = "TorchColour",
 					["INTEGER_TO_FLOAT"] = "FORCE",
@@ -336,6 +337,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"A", TorchColourA}
 					}
 				},
+				]]
 			}
 		},
 	}

@@ -120,7 +120,7 @@ SuitCargoPrices = [[ <Property name="SuitCargoUpgradePrices">
 	--Initial unlocked slots for starting multi-tool set in "PTSd Ship+MultiTool Rebalance.lua"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModNameSub.." "..GameVersion..ModVersion..".pak",
+["MOD_FILENAME"]	= ModNameSub.." "..GameVersion..ModVersion,
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,

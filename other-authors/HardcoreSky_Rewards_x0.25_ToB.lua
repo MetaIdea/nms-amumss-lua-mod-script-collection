@@ -1,85 +1,141 @@
+local MULT         = 0.25
+local CAP          = "B"
+local GAME_VERSION = "7.02"
+
+local MOD_NAME     = "HardcoreSky_Rewards"
+local TAG_SUFFIX   = "ToB"
+local MULT_STR     = (string.format("%.3f", MULT):gsub("0+$", ""):gsub("%.$", ""))
+local MOD_FILENAME = string.format("%s_x%s_%s.zip", MOD_NAME, MULT_STR, TAG_SUFFIX)
+local INV          = tostring(1 / MULT)
+
+local CAP_ORDER = { C = 1, B = 2, A = 3, S = 4 }
+local CAP_N     = CAP_ORDER[CAP] or 4
+local GLASS_MULT = MULT
+
+local MISSION_FILES = {
+  "METADATA/SIMULATION/MISSIONS/TABLES/MISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/SEASONALMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/SEASONALBESPOKEMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/TUTORIALMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/WIKIMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/SWARMMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/RECURRINGMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/SPACEPOIMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/COMMUNITYMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/MULTIPLAYERMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/NPCBUILDERSMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/COREMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/NPCMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/PLANETPROCMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/ATLASPATHTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/SENTINELSETTLEMENTMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/STATSTORIESMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/FLEETMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/PIRATEMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/SPACEOUTPOSTMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/CORVETTEMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/BASECOMPUTERMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/WATERMISSIONTABLE.MBIN",
+  "METADATA/SIMULATION/MISSIONS/TABLES/STARTEDONUSEMISSIONTABLE.MBIN",
+}
+
+local PROC_CHANGES = {
+  { SPECIAL_KEY_WORDS = {"Quality", "Illegal"},  REPLACE_TYPE = "ALL", VALUE_CHANGE_TABLE = { {"Quality", "Normal"} } },
+  { SPECIAL_KEY_WORDS = {"Quality", "Sentinel"}, REPLACE_TYPE = "ALL", VALUE_CHANGE_TABLE = { {"Quality", "Normal"} } }
+}
+
+local function scale_and_clamp()
+  return {
+    { REPLACE_TYPE = "ALL", INTEGER_TO_FLOAT = "PRESERVE", MATH_OPERATION = "*", VALUE_CHANGE_TABLE = { {"AmountMin", MULT}, {"AmountMax", MULT} } },
+    { REPLACE_TYPE = "ALL", VALUE_MATCH = "0", VALUE_CHANGE_TABLE = { {"AmountMin", "1"} } },
+    { REPLACE_TYPE = "ALL", VALUE_MATCH = "0", VALUE_CHANGE_TABLE = { {"AmountMax", "1"} } }
+  }
+end
+
+local function scale_and_clamp_qs()
+  local c = scale_and_clamp()
+  table.insert(c, {
+    SPECIAL_KEY_WORDS  = {"Currency", "Specials"},
+    SECTION_UP         = 1,
+    REPLACE_TYPE       = "ALL",
+    INTEGER_TO_FLOAT   = "PRESERVE",
+    MATH_OPERATION     = "*",
+    VALUE_CHANGE_TABLE = { {"AmountMin", INV}, {"AmountMax", INV} }
+  })
+  return c
+end
+
+local REWARD_CHANGES = scale_and_clamp_qs()
+
+if CAP_N < 4 then
+  table.insert(REWARD_CHANGES, { REPLACE_TYPE = "ALL", VALUE_MATCH = "S", VALUE_CHANGE_TABLE = { {"InventoryClass", CAP} } })
+end
+if CAP_N < 3 then
+  table.insert(REWARD_CHANGES, { REPLACE_TYPE = "ALL", VALUE_MATCH = "A", VALUE_CHANGE_TABLE = { {"InventoryClass", CAP} } })
+end
+for _, q in ipairs({ "4", "3", "2" }) do
+  if tonumber(q) > CAP_N then
+    table.insert(REWARD_CHANGES, { REPLACE_TYPE = "ALL", VALUE_MATCH = q, VALUE_CHANGE_TABLE = { {"ProcTechQuality", tostring(CAP_N)} } })
+  end
+end
+
+for _, tier in ipairs({ { "Legendary", 4 }, { "Epic", 3 }, { "Rare", 2 } }) do
+  if tier[2] > CAP_N then
+    local field = "WeightedChance" .. tier[1]
+    table.insert(REWARD_CHANGES, { REPLACE_TYPE = "ALL", VALUE_CHANGE_TABLE = { { field, "0" } } })
+  end
+end
+
+local GLASS_CHANGES = {}
+for _, module in ipairs({ "U_SENTGUN", "U_SENTSUIT" }) do
+  table.insert(GLASS_CHANGES, {
+    SPECIAL_KEY_WORDS  = {"ID", module},
+    SECTION_UP         = 1,
+    REPLACE_TYPE       = "ALL",
+    INTEGER_TO_FLOAT   = "PRESERVE",
+    MATH_OPERATION     = "*",
+    VALUE_CHANGE_TABLE = { {"PercentageChance", GLASS_MULT} }
+  })
+end
+
+local CREATURE_CHANGES = {
+  { REPLACE_TYPE = "ALL", INTEGER_TO_FLOAT = "PRESERVE", MATH_OPERATION = "*", VALUE_CHANGE_TABLE = {
+      {"CreatureKillRewardAmountFiend", MULT}, {"CreatureKillRewardAmountSmall", MULT},
+      {"CreatureKillRewardAmountMed", MULT}, {"CreatureKillRewardAmountLarge", MULT},
+      {"CreatureKillRewardAmountHuge", MULT}
+  } },
+  { REPLACE_TYPE = "ALL", VALUE_MATCH = "0", VALUE_CHANGE_TABLE = {
+      {"CreatureKillRewardAmountFiend", "1"}, {"CreatureKillRewardAmountSmall", "1"},
+      {"CreatureKillRewardAmountMed", "1"}, {"CreatureKillRewardAmountLarge", "1"},
+      {"CreatureKillRewardAmountHuge", "1"}
+  } },
+  { PRECEDING_KEY_WORDS = {"HarvestingProducts"}, REPLACE_TYPE = "ALL", INTEGER_TO_FLOAT = "PRESERVE", MATH_OPERATION = "*", VALUE_CHANGE_TABLE = { {"MinBlobs", MULT} } }
+}
+
+local SECONDARY_CHANGES = {
+  { REPLACE_TYPE = "ALL", INTEGER_TO_FLOAT = "PRESERVE", MATH_OPERATION = "*", VALUE_CHANGE_TABLE = { {"AmountMin", MULT}, {"AmountMax", MULT} } },
+  { REPLACE_TYPE = "ALL", VALUE_MATCH = "0", VALUE_CHANGE_TABLE = { {"AmountMin", "1"} } },
+  { REPLACE_TYPE = "ALL", VALUE_MATCH = "0", VALUE_CHANGE_TABLE = { {"AmountMax", "1"} } }
+}
+
+local MBIN_CHANGE_TABLE = {
+  { MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN", MXML_CHANGE_TABLE = PROC_CHANGES },
+  { MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN", MXML_CHANGE_TABLE = REWARD_CHANGES },
+  { MBIN_FILE_SOURCE = "GCCREATUREGLOBALS.MBIN", MXML_CHANGE_TABLE = CREATURE_CHANGES },
+  { MBIN_FILE_SOURCE = "METADATA/REALITY/DEFAULTREALITY.MBIN", MXML_CHANGE_TABLE = SECONDARY_CHANGES }
+}
+
+for _, f in ipairs(MISSION_FILES) do
+  table.insert(MBIN_CHANGE_TABLE, { MBIN_FILE_SOURCE = f, MXML_CHANGE_TABLE = scale_and_clamp_qs() })
+end
+
 NMS_MOD_DEFINITION_CONTAINER = {
-  ["MOD_FILENAME"]    = "HardcoreSky_Rewards_x0.25_ToB.pak",
-  ["MOD_AUTHOR"]      = "Azunain",
-  ["LUA_AUTHOR"]      = "Azunain",
-  ["MOD_DESCRIPTION"] = "Reduce rewards to 25% and downgrade outcomes to B-class",
-  ["NMS_VERSION"]     = "151220",
-
-  ["MODIFICATIONS"] = {{
-    ["MBIN_CHANGE_TABLE"] = {
-
-      -- 1) REWARDTABLE: Dinero/Substancias a 25% + degradar clase/calidad
-      {
-        ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-        ["EXML_CHANGE_TABLE"] = {
-          -- Money (Units/Nanites/Quicksilver)
-          {
-            ["SPECIAL_KEY_WORDS"]  = {"Reward","GcRewardMoney"},
-            ["INTEGER_TO_FLOAT"]   = "PRESERVE",
-            ["MATH_OPERATION"]      = "*",
-            ["VALUE_CHANGE_TABLE"]  = {
-              {"AmountMin", 0.25},
-              {"AmountMax", 0.25},
-            }
-          },
-          -- SpecificSubstance (pilas de materiales)
-          {
-            ["SPECIAL_KEY_WORDS"]  = {"Reward","GcRewardSpecificSubstance"},
-            ["INTEGER_TO_FLOAT"]   = "PRESERVE",
-            ["MATH_OPERATION"]      = "*",
-            ["VALUE_CHANGE_TABLE"]  = {
-              {"AmountMin", 0.25},
-              {"AmountMax", 0.25},
-            }
-          },
-
-          -- Downgrade de clase de inventario (ToB)
-          {
-            -- “No key_word specified, Replace ALL … matching "S" → "B"”
-            ["REPLACE_TYPE"]       = "ALL",
-            ["VALUE_MATCH"]        = "S",
-            ["VALUE_CHANGE_TABLE"] = {{"InventoryClass", "B"}}
-          },
-          {
-            -- “No key_word specified, Replace ALL … matching "A" → "B"”
-            ["REPLACE_TYPE"]       = "ALL",
-            ["VALUE_MATCH"]        = "A",
-            ["VALUE_CHANGE_TABLE"] = {{"InventoryClass", "B"}}
-          },
-
-          -- Bajar calidad proc tech a 2
-          {
-            ["REPLACE_TYPE"]       = "ALL",
-            ["VALUE_MATCH"]        = 4,
-            ["VALUE_CHANGE_TABLE"] = {{"ProcTechQuality", 2}}
-          },
-          {
-            ["REPLACE_TYPE"]       = "ALL",
-            ["VALUE_MATCH"]        = 3,
-            ["VALUE_CHANGE_TABLE"] = {{"ProcTechQuality", 2}}
-          },
-        }
-      },
-
-      -- 2) MISSIONTABLE: Dinero a 25% (no hay SpecificSubstance aquí en tu build)
-      {
-        ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\MISSIONTABLE.MBIN",
-        ["EXML_CHANGE_TABLE"] = {
-          {
-            ["SPECIAL_KEY_WORDS"]  = {"Reward","GcRewardMoney"},
-            ["INTEGER_TO_FLOAT"]   = "PRESERVE",
-            ["MATH_OPERATION"]      = "*",
-            ["VALUE_CHANGE_TABLE"]  = {
-              {"AmountMin", 0.25},
-              {"AmountMax", 0.25},
-            }
-          },
-        }
-      },
-
-      -- Nota: SEASONALMISSIONTABLE no trae GcRewardMoney/SpecificSubstance en 151220,
-      -- por eso lo omito para no spamear warnings.
-      -- Si querés forzar seasonal también, después te paso una variante “global”.
-    }
+  MOD_FILENAME    = MOD_FILENAME,
+  MOD_AUTHOR      = "Azunain",
+  LUA_AUTHOR      = "Azunain",
+  NMS_VERSION     = GAME_VERSION,
+  MOD_DESCRIPTION = "x0.25 B/C only. Rewards reduced 75%; tech capped at B; Illegal and Sentinel become lettered tech; Quicksilver untouched.",
+  MODIFICATIONS   = {{
+    MBIN_CHANGE_TABLE = MBIN_CHANGE_TABLE
   }}
 }

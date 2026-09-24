@@ -12,7 +12,7 @@ PowerSettingWeaponDamper =				0.90								--0.7
 PowerSettingShieldDamper =				0.7									--0.75
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]		= ModName..GameVersion..".pak",
+["MOD_FILENAME"]		= ModName..GameVersion,
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,

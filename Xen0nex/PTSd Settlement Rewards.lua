@@ -7,7 +7,9 @@ Description = "Rebalances settlement produced items by race & wealth, Increases 
 DebtMult =								1/0.1					--Multiplier to apply to the DailyDebtPaymentModifier, increasing this speeds up how quickly debt is lowered. Multiplied by the inverse of the multiplier applied to ProductionCycleDurationInSeconds to keep the debt repayment rate roughly at vanilla speed.
 
 --The following values set the "base" parameters for how quickly and how many items are produced, which are then modified by the multipliers for specific items in the ProducedItemChanges table below
-	--NOTE: Actual production times seem to be multiplied by ~1.3 - 1.8 in practice? Also, the production times get slightly longer as the settlement improves in Productivity / Rank instead of getting shorter as one would assume. Perhaps the game increases production time by ~1.0x - 1.5x based on Settlement Productivity?
+	--NOTE: Actual production times seem to be multiplied by ~1.3 - 1.8 in practice? 
+	--Also, the production times get slightly longer as the settlement improves in Productivity / Rank instead of getting shorter as one would assume. Perhaps the game increases production time by ~1.0x - 1.5x based on Settlement Productivity?
+		--The above bug appears to have been at least partially fixed in NMS v 7.04 (unconfirmed), at least for Settlement Productivity (unclear about Rank/Happiness effects)
 ProductionCycleMult =					0.12*0.6				--Multiplier to apply to the vanilla ProductionCycleDurationInSeconds of 72000 (20 hours), determines how often the settlement outputs its products
 																	--The ProductionCycleMult above is multiplied by 0.667 to offset how the game increases the actual ProductionCycle time by roughly ~1.67 in many cases
 ProductMult = 							0.2						--Multiplier to apply to the vanilla "default" amount of Products made per cycle of 5.

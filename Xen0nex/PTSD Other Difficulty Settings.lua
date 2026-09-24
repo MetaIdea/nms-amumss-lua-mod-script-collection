@@ -557,7 +557,7 @@ Presets =
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]		= ModName..GameVersion..".pak",
+["MOD_FILENAME"]		= ModName..GameVersion,
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,

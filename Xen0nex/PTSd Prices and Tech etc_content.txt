@@ -3,7 +3,7 @@ This mod contains:
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\~PTSd Scan Rewards + Shops etc.lua
-        MOD FILENAME: PTSd Scan Rewards + Shops etc 7_01.pak
+        MOD FILENAME: PTSd Scan Rewards + Shops etc 7_01
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -15,7 +15,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\~PTSd Procedural Upgrade Adjustment.lua
-        MOD FILENAME: PTSd Procedural Upgrade Adjustment 5_12.pak
+        MOD FILENAME: PTSd Procedural Upgrade Adjustment 5_12
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -27,7 +27,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\~PTSd Exocraft scanner Changes.lua
-        MOD FILENAME: PTSd Exocraft scanner Changes6_24.pak
+        MOD FILENAME: PTSd Exocraft scanner Changes6_24
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -39,7 +39,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\~PTSd Corvette module stats.lua
-        MOD FILENAME: PTSd Corvette module stats6_10.pak
+        MOD FILENAME: PTSd Corvette module stats6_10
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -51,8 +51,8 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\___MOD_BATCHNAME_PTSD5.lua
-        MOD FILENAME: PTSd Prices and Tech etc.pak
-       MOD BATCHNAME: PTSd Prices and Tech etc.pak
+        MOD FILENAME: PTSd Prices and Tech etc
+       MOD BATCHNAME: PTSd Prices and Tech etc
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
      MOD MAINTENANCE: nil
@@ -75,7 +75,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\PTSd Weaker Fleet Upgrades.lua
-        MOD FILENAME: PTSd Weaker Fleet Upgrades4_41.pak
+        MOD FILENAME: PTSd Weaker Fleet Upgrades4_41
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -87,7 +87,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\PTSd Starship Speed Rebalance.lua
-        MOD FILENAME: PTSd Starship Speed Rebalance6_00.pak
+        MOD FILENAME: PTSd Starship Speed Rebalance6_00
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -99,7 +99,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\PTSd Starship Power Settings.lua
-        MOD FILENAME: PTSd Power Settings443.pak
+        MOD FILENAME: PTSd Power Settings443
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -111,7 +111,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\PTSd Rebalanced Hazard Tech.lua
-        MOD FILENAME: PTSd Rebalanced Hazard Tech5_64.pak
+        MOD FILENAME: PTSd Rebalanced Hazard Tech5_64
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -123,7 +123,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\PTSd Product + Crafting Rebalance.lua
-        MOD FILENAME: PTSd Product + Crafting Rebalance7_03.pak
+        MOD FILENAME: PTSd Product + Crafting Rebalance7_03
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
@@ -135,14 +135,14 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\PTSd More Expensive Costs etc.lua
-        MOD FILENAME: PTSd More Expensive Costs etc7_01.pak
+        MOD FILENAME: PTSd More Expensive Costs etc7_03
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
      MOD MAINTENANCE: nil
      MOD DESCRIPTION: <<<Changes costs for Starship or Multi-Tool inventory slots, Broadcast Receivers, Pilot Slots, etc.>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-         NMS VERSION: 7_01
+         NMS VERSION: 7_03
 
 =====================
 Original information:
@@ -159,7 +159,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\Market StabilityX.lua
-        MOD FILENAME: Market StabilityX 5_57a.pak
+        MOD FILENAME: Market StabilityX 5_57a
        MOD BATCHNAME: nil
           MOD AUTHOR: Exosolar
           LUA AUTHOR: nil
@@ -171,7 +171,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\GRealityX.lua
-        MOD FILENAME: GRealityX 5_62a.pak
+        MOD FILENAME: GRealityX 5_62a
        MOD BATCHNAME: nil
           MOD AUTHOR: Gumsk
           LUA AUTHOR: nil
@@ -183,7 +183,7 @@ MOD MOD_CONTRIBUTORS: <<<nil>>>
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\-PTSd Starship Tech Changes.lua
-        MOD FILENAME: PTSd Starship Tech Changes6_04.pak
+        MOD FILENAME: PTSd Starship Tech Changes7_03.pak
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex and lMonk
           LUA AUTHOR: nil
@@ -192,24 +192,24 @@ Original information:
   Includes improvements to Living Ships and related quest timers from "Living Ship Upgrades" by lMonk
 >>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-         NMS VERSION: 6_04
+         NMS VERSION: 7_03
 
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\--PTSd Tech + Upgrade + Unlock costs.lua
-        MOD FILENAME: PTSd Tech + Upgrade + Unlock costs7_02.pak
+        MOD FILENAME: PTSd Tech + Upgrade + Unlock costs7_03
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
      MOD MAINTENANCE: nil
      MOD DESCRIPTION: <<<Greatly increases the cost for unlocking various technologies, blueprints, recipes, upgrades, mainly aiming for those found in the Anomaly>>>
 MOD MOD_CONTRIBUTORS: <<<nil>>>
-         NMS VERSION: 7_02
+         NMS VERSION: 7_03
 
 =====================
 Original information:
          SCRIPT NAME: PTSd Prices and Tech etc\+PTSd Weapons Rebalance.lua
-        MOD FILENAME: PTSd Weapons Rebalance6_43.pak
+        MOD FILENAME: PTSd Weapons Rebalance6_43
        MOD BATCHNAME: nil
           MOD AUTHOR: Xen0nex
           LUA AUTHOR: nil
