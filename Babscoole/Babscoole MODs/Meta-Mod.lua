@@ -580,6 +580,7 @@ QUICK_ACTION_MENU =
           <Property name="UseBuildingFromRendezvousStage" value="false" />
           <Property name="UseUDAAsSearchPoint" value="" />
           <Property name="SolarSystemLocation" value="LocalOrNear" />
+          <Property name="SpecificPartyIndexToSearchFrom" value="-1" />
           <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup">
             <Property name="UseStarType" value="false" />
             <Property name="UseWealth" value="false" />
@@ -641,6 +642,7 @@ QUICK_ACTION_MENU =
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
             <Property name="ExcludePlanetsWithEvents" />
+            <Property name="PreferPlanetWhereStatIsZero" />
             <Property name="SystemNeedsResourceHint" value="" />
             <Property name="SystemNeedsWater" value="false" />
             <Property name="SystemNeedsWeirdPlanet" value="false" />
@@ -714,6 +716,7 @@ QUICK_ACTION_MENU =
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
             <Property name="ExcludePlanetsWithEvents" />
+            <Property name="PreferPlanetWhereStatIsZero" />
             <Property name="SystemNeedsResourceHint" value="" />
             <Property name="SystemNeedsWater" value="false" />
             <Property name="SystemNeedsWeirdPlanet" value="false" />
@@ -773,6 +776,21 @@ QUICK_ACTION_MENU =
           <Property name="ClearGameTableConfigOverrideOnCompletion" value="false" />
           <Property name="OverrideGameTableGameConfig" value="" />
           <Property name="OverrideGameTableGameConfigOnCompletion" value="" />
+          <Property name="RequiresSpacePoiType" value="false" />
+          <Property name="RequiredSpacePoiType" value="GcSpacePoiType">
+            <Property name="SpacePoiType" value="AsteroidBelt" />
+          </Property>
+          <Property name="AllowedSpacePoiTypes" />
+          <Property name="RequiresSpacePoiDiscoveryLevel" value="false" />
+          <Property name="RequiredSpacePoiDiscoveryLevel" value="GcSpacePoiDiscoveryLevel">
+            <Property name="SpacePoiDiscoveryLevel" value="Hidden" />
+          </Property>
+          <Property name="IgnoreCompletedSpacePoi" value="true" />
+          <Property name="SpecificSpacePoiId" value="" />
+          <Property name="SpacePoiLocation" value="Nearest" />
+          <Property name="SpacePoiSetToUndiscovered" value="true" />
+          <Property name="OverrideSpacePoiEncounter" value="" />
+          <Property name="SuppressSpacePoiActivity" value="false" />
         </Property>
 ]]
   },

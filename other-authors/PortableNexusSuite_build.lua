@@ -22,32 +22,32 @@ local BB_BUILD_PNEXUS = [[
 			</Property>
 			<Property name="BuildableOnPlanetBase" value="true" />
 			<Property name="BuildableOnSpaceBase" value="true" />
-			<Property name="BuildableOnFreighter" value="false" />
+			<Property name="BuildableOnFreighter" value="true" />
 			<Property name="BuildableInShipStructural" value="false" />
-			<Property name="BuildableInShipDecorative" value="false" />
+			<Property name="BuildableInShipDecorative" value="true" />
 			<Property name="BuildableOnPlanet" value="true" />
 			<Property name="BuildableOnPlanetWithProduct" value="false" />
 			<Property name="BuildableUnderwater" value="true" />
 			<Property name="BuildableAboveWater" value="true" />
-			<Property name="BuildableOnSpaceStationBase" value="false" />
-			<Property name="BuildableOnSpaceStationBackSection" value="false" />
-			<Property name="BuildableOnSpaceStationExterior" value="false" />
+			<Property name="BuildableOnSpaceStationBase" value="true" />
+			<Property name="BuildableOnSpaceStationBackSection" value="true" />
+			<Property name="BuildableOnSpaceStationExterior" value="true" />
 			<Property name="PlanetLimit" value="0" />
-			<Property name="RegionLimit" value="1" />
+			<Property name="RegionLimit" value="0" />
 			<Property name="PlanetBaseLimit" value="0" />
 			<Property name="FreighterBaseLimit" value="0" />
 			<Property name="CorvetteBaseLimit" value="0" />
 			<Property name="DoesNotCountTowardsComplexity" value="false" />
 			<Property name="CheckPlaceholderCollision" value="false" />
 			<Property name="CheckPlayerCollision" value="true" />
-			<Property name="CanStack" value="true" />
+			<Property name="CanStack" value="false" />
 			<Property name="SnapRotateBlocked" value="false" />
 			<Property name="CanRotate3D" value="false" />
 			<Property name="CanScale" value="false" />
 			<Property name="Groups">
 				<Property name="Groups" value="GcBaseBuildingEntryGroup" _index="0">
-					<Property name="Group" value="PLANET_TECH" />
-					<Property name="SubGroupName" value="PLANETPORTABLE" />
+					<Property name="Group" value="HCS_TOOLS" />
+					<Property name="SubGroupName" value="HCS_TOOLS" />
 					<Property name="SubGroup" value="0" />
 				</Property>
 			</Property>
@@ -94,9 +94,9 @@ local BB_BUILD_PNEXUS = [[
 				<Property name="DependsOnHotspots" value="None" />
 				<Property name="DependentConnections" />
 			</Property>
-			<Property name="GhostsCountOverride" value="0" />
+			<Property name="GhostsCountOverride" value="1" />
 			<Property name="ShowGhosts" value="true" />
-			<Property name="SnappingDistanceOverride" value="0.000000" />
+			<Property name="SnappingDistanceOverride" value="0.100000" />
 			<Property name="RegionSpawnLOD" value="1" />
 			<Property name="NPCInteractionScene" value="TkModelResource">
 				<Property name="Filename" value="" />
@@ -123,7 +123,7 @@ local PROD_BUILD_PNEXUS = [[
 			<Property name="AltDescription" value="" />
 			<Property name="Hint" value="" />
 			<Property name="BuildableShipTechID" value="" />
-			<Property name="GroupID" value="" />
+			<Property name="GroupID" value="BUILD_PNEXUS" />
 			<Property name="DebrisFile" value="TkModelResource">
 				<Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
 				<Property name="Seed" value="0" />
@@ -362,32 +362,32 @@ local BB_BUILD_PMISSION = [[
 			</Property>
 			<Property name="BuildableOnPlanetBase" value="true" />
 			<Property name="BuildableOnSpaceBase" value="true" />
-			<Property name="BuildableOnFreighter" value="false" />
+			<Property name="BuildableOnFreighter" value="true" />
 			<Property name="BuildableInShipStructural" value="false" />
-			<Property name="BuildableInShipDecorative" value="false" />
+			<Property name="BuildableInShipDecorative" value="true" />
 			<Property name="BuildableOnPlanet" value="true" />
 			<Property name="BuildableOnPlanetWithProduct" value="false" />
 			<Property name="BuildableUnderwater" value="true" />
 			<Property name="BuildableAboveWater" value="true" />
-			<Property name="BuildableOnSpaceStationBase" value="false" />
-			<Property name="BuildableOnSpaceStationBackSection" value="false" />
-			<Property name="BuildableOnSpaceStationExterior" value="false" />
+			<Property name="BuildableOnSpaceStationBase" value="true" />
+			<Property name="BuildableOnSpaceStationBackSection" value="true" />
+			<Property name="BuildableOnSpaceStationExterior" value="true" />
 			<Property name="PlanetLimit" value="0" />
-			<Property name="RegionLimit" value="1" />
+			<Property name="RegionLimit" value="0" />
 			<Property name="PlanetBaseLimit" value="0" />
 			<Property name="FreighterBaseLimit" value="0" />
 			<Property name="CorvetteBaseLimit" value="0" />
 			<Property name="DoesNotCountTowardsComplexity" value="false" />
 			<Property name="CheckPlaceholderCollision" value="false" />
 			<Property name="CheckPlayerCollision" value="true" />
-			<Property name="CanStack" value="true" />
+			<Property name="CanStack" value="false" />
 			<Property name="SnapRotateBlocked" value="false" />
 			<Property name="CanRotate3D" value="false" />
 			<Property name="CanScale" value="false" />
 			<Property name="Groups">
 				<Property name="Groups" value="GcBaseBuildingEntryGroup" _index="0">
-					<Property name="Group" value="PLANET_TECH" />
-					<Property name="SubGroupName" value="PLANETPORTABLE" />
+					<Property name="Group" value="HCS_TOOLS" />
+					<Property name="SubGroupName" value="HCS_TOOLS" />
 					<Property name="SubGroup" value="0" />
 				</Property>
 			</Property>
@@ -434,9 +434,9 @@ local BB_BUILD_PMISSION = [[
 				<Property name="DependsOnHotspots" value="None" />
 				<Property name="DependentConnections" />
 			</Property>
-			<Property name="GhostsCountOverride" value="0" />
+			<Property name="GhostsCountOverride" value="1" />
 			<Property name="ShowGhosts" value="true" />
-			<Property name="SnappingDistanceOverride" value="0.000000" />
+			<Property name="SnappingDistanceOverride" value="0.100000" />
 			<Property name="RegionSpawnLOD" value="1" />
 			<Property name="NPCInteractionScene" value="TkModelResource">
 				<Property name="Filename" value="" />
@@ -463,7 +463,7 @@ local PROD_BUILD_PMISSION = [[
 			<Property name="AltDescription" value="" />
 			<Property name="Hint" value="" />
 			<Property name="BuildableShipTechID" value="" />
-			<Property name="GroupID" value="" />
+			<Property name="GroupID" value="BUILD_PMISSION" />
 			<Property name="DebrisFile" value="TkModelResource">
 				<Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
 				<Property name="Seed" value="0" />
@@ -702,32 +702,32 @@ local BB_BUILD_PFISHING = [[
 			</Property>
 			<Property name="BuildableOnPlanetBase" value="true" />
 			<Property name="BuildableOnSpaceBase" value="true" />
-			<Property name="BuildableOnFreighter" value="false" />
+			<Property name="BuildableOnFreighter" value="true" />
 			<Property name="BuildableInShipStructural" value="false" />
-			<Property name="BuildableInShipDecorative" value="false" />
+			<Property name="BuildableInShipDecorative" value="true" />
 			<Property name="BuildableOnPlanet" value="true" />
 			<Property name="BuildableOnPlanetWithProduct" value="false" />
 			<Property name="BuildableUnderwater" value="true" />
 			<Property name="BuildableAboveWater" value="true" />
-			<Property name="BuildableOnSpaceStationBase" value="false" />
-			<Property name="BuildableOnSpaceStationBackSection" value="false" />
-			<Property name="BuildableOnSpaceStationExterior" value="false" />
+			<Property name="BuildableOnSpaceStationBase" value="true" />
+			<Property name="BuildableOnSpaceStationBackSection" value="true" />
+			<Property name="BuildableOnSpaceStationExterior" value="true" />
 			<Property name="PlanetLimit" value="0" />
-			<Property name="RegionLimit" value="1" />
+			<Property name="RegionLimit" value="0" />
 			<Property name="PlanetBaseLimit" value="0" />
 			<Property name="FreighterBaseLimit" value="0" />
 			<Property name="CorvetteBaseLimit" value="0" />
 			<Property name="DoesNotCountTowardsComplexity" value="false" />
 			<Property name="CheckPlaceholderCollision" value="false" />
 			<Property name="CheckPlayerCollision" value="true" />
-			<Property name="CanStack" value="true" />
+			<Property name="CanStack" value="false" />
 			<Property name="SnapRotateBlocked" value="false" />
 			<Property name="CanRotate3D" value="false" />
 			<Property name="CanScale" value="false" />
 			<Property name="Groups">
 				<Property name="Groups" value="GcBaseBuildingEntryGroup" _index="0">
-					<Property name="Group" value="PLANET_TECH" />
-					<Property name="SubGroupName" value="PLANETPORTABLE" />
+					<Property name="Group" value="HCS_TOOLS" />
+					<Property name="SubGroupName" value="HCS_TOOLS" />
 					<Property name="SubGroup" value="0" />
 				</Property>
 			</Property>
@@ -774,9 +774,9 @@ local BB_BUILD_PFISHING = [[
 				<Property name="DependsOnHotspots" value="None" />
 				<Property name="DependentConnections" />
 			</Property>
-			<Property name="GhostsCountOverride" value="0" />
+			<Property name="GhostsCountOverride" value="1" />
 			<Property name="ShowGhosts" value="true" />
-			<Property name="SnappingDistanceOverride" value="0.000000" />
+			<Property name="SnappingDistanceOverride" value="0.100000" />
 			<Property name="RegionSpawnLOD" value="1" />
 			<Property name="NPCInteractionScene" value="TkModelResource">
 				<Property name="Filename" value="" />
@@ -803,7 +803,7 @@ local PROD_BUILD_PFISHING = [[
 			<Property name="AltDescription" value="" />
 			<Property name="Hint" value="" />
 			<Property name="BuildableShipTechID" value="" />
-			<Property name="GroupID" value="" />
+			<Property name="GroupID" value="BUILD_PFISHING" />
 			<Property name="DebrisFile" value="TkModelResource">
 				<Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
 				<Property name="Seed" value="0" />
@@ -1042,32 +1042,32 @@ local BB_BUILD_CASINO = [[
 			</Property>
 			<Property name="BuildableOnPlanetBase" value="true" />
 			<Property name="BuildableOnSpaceBase" value="true" />
-			<Property name="BuildableOnFreighter" value="false" />
+			<Property name="BuildableOnFreighter" value="true" />
 			<Property name="BuildableInShipStructural" value="false" />
-			<Property name="BuildableInShipDecorative" value="false" />
+			<Property name="BuildableInShipDecorative" value="true" />
 			<Property name="BuildableOnPlanet" value="true" />
 			<Property name="BuildableOnPlanetWithProduct" value="false" />
 			<Property name="BuildableUnderwater" value="true" />
 			<Property name="BuildableAboveWater" value="true" />
-			<Property name="BuildableOnSpaceStationBase" value="false" />
-			<Property name="BuildableOnSpaceStationBackSection" value="false" />
-			<Property name="BuildableOnSpaceStationExterior" value="false" />
+			<Property name="BuildableOnSpaceStationBase" value="true" />
+			<Property name="BuildableOnSpaceStationBackSection" value="true" />
+			<Property name="BuildableOnSpaceStationExterior" value="true" />
 			<Property name="PlanetLimit" value="0" />
-			<Property name="RegionLimit" value="1" />
+			<Property name="RegionLimit" value="0" />
 			<Property name="PlanetBaseLimit" value="0" />
 			<Property name="FreighterBaseLimit" value="0" />
 			<Property name="CorvetteBaseLimit" value="0" />
 			<Property name="DoesNotCountTowardsComplexity" value="false" />
 			<Property name="CheckPlaceholderCollision" value="false" />
 			<Property name="CheckPlayerCollision" value="true" />
-			<Property name="CanStack" value="true" />
+			<Property name="CanStack" value="false" />
 			<Property name="SnapRotateBlocked" value="false" />
 			<Property name="CanRotate3D" value="false" />
 			<Property name="CanScale" value="false" />
 			<Property name="Groups">
 				<Property name="Groups" value="GcBaseBuildingEntryGroup" _index="0">
-					<Property name="Group" value="PLANET_TECH" />
-					<Property name="SubGroupName" value="PLANETPORTABLE" />
+					<Property name="Group" value="HCS_TOOLS" />
+					<Property name="SubGroupName" value="HCS_TOOLS" />
 					<Property name="SubGroup" value="0" />
 				</Property>
 			</Property>
@@ -1114,9 +1114,9 @@ local BB_BUILD_CASINO = [[
 				<Property name="DependsOnHotspots" value="None" />
 				<Property name="DependentConnections" />
 			</Property>
-			<Property name="GhostsCountOverride" value="0" />
+			<Property name="GhostsCountOverride" value="1" />
 			<Property name="ShowGhosts" value="true" />
-			<Property name="SnappingDistanceOverride" value="0.000000" />
+			<Property name="SnappingDistanceOverride" value="0.100000" />
 			<Property name="RegionSpawnLOD" value="1" />
 			<Property name="NPCInteractionScene" value="TkModelResource">
 				<Property name="Filename" value="" />
@@ -1143,7 +1143,7 @@ local PROD_BUILD_CASINO = [[
 			<Property name="AltDescription" value="" />
 			<Property name="Hint" value="" />
 			<Property name="BuildableShipTechID" value="" />
-			<Property name="GroupID" value="" />
+			<Property name="GroupID" value="BUILD_CASINO" />
 			<Property name="DebrisFile" value="TkModelResource">
 				<Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
 				<Property name="Seed" value="0" />
@@ -1382,32 +1382,32 @@ local BB_BUILD_PSCAN = [[
 			</Property>
 			<Property name="BuildableOnPlanetBase" value="true" />
 			<Property name="BuildableOnSpaceBase" value="true" />
-			<Property name="BuildableOnFreighter" value="false" />
+			<Property name="BuildableOnFreighter" value="true" />
 			<Property name="BuildableInShipStructural" value="false" />
-			<Property name="BuildableInShipDecorative" value="false" />
+			<Property name="BuildableInShipDecorative" value="true" />
 			<Property name="BuildableOnPlanet" value="true" />
 			<Property name="BuildableOnPlanetWithProduct" value="false" />
 			<Property name="BuildableUnderwater" value="true" />
 			<Property name="BuildableAboveWater" value="true" />
-			<Property name="BuildableOnSpaceStationBase" value="false" />
-			<Property name="BuildableOnSpaceStationBackSection" value="false" />
-			<Property name="BuildableOnSpaceStationExterior" value="false" />
+			<Property name="BuildableOnSpaceStationBase" value="true" />
+			<Property name="BuildableOnSpaceStationBackSection" value="true" />
+			<Property name="BuildableOnSpaceStationExterior" value="true" />
 			<Property name="PlanetLimit" value="0" />
-			<Property name="RegionLimit" value="1" />
+			<Property name="RegionLimit" value="0" />
 			<Property name="PlanetBaseLimit" value="0" />
 			<Property name="FreighterBaseLimit" value="0" />
 			<Property name="CorvetteBaseLimit" value="0" />
 			<Property name="DoesNotCountTowardsComplexity" value="false" />
 			<Property name="CheckPlaceholderCollision" value="false" />
 			<Property name="CheckPlayerCollision" value="true" />
-			<Property name="CanStack" value="true" />
+			<Property name="CanStack" value="false" />
 			<Property name="SnapRotateBlocked" value="false" />
 			<Property name="CanRotate3D" value="false" />
 			<Property name="CanScale" value="false" />
 			<Property name="Groups">
 				<Property name="Groups" value="GcBaseBuildingEntryGroup" _index="0">
-					<Property name="Group" value="PLANET_TECH" />
-					<Property name="SubGroupName" value="PLANETPORTABLE" />
+					<Property name="Group" value="HCS_TOOLS" />
+					<Property name="SubGroupName" value="HCS_TOOLS" />
 					<Property name="SubGroup" value="0" />
 				</Property>
 			</Property>
@@ -1454,9 +1454,9 @@ local BB_BUILD_PSCAN = [[
 				<Property name="DependsOnHotspots" value="None" />
 				<Property name="DependentConnections" />
 			</Property>
-			<Property name="GhostsCountOverride" value="0" />
+			<Property name="GhostsCountOverride" value="1" />
 			<Property name="ShowGhosts" value="true" />
-			<Property name="SnappingDistanceOverride" value="0.000000" />
+			<Property name="SnappingDistanceOverride" value="0.100000" />
 			<Property name="RegionSpawnLOD" value="1" />
 			<Property name="NPCInteractionScene" value="TkModelResource">
 				<Property name="Filename" value="" />
@@ -1483,7 +1483,7 @@ local PROD_BUILD_PSCAN = [[
 			<Property name="AltDescription" value="" />
 			<Property name="Hint" value="" />
 			<Property name="BuildableShipTechID" value="" />
-			<Property name="GroupID" value="" />
+			<Property name="GroupID" value="BUILD_PSCAN" />
 			<Property name="DebrisFile" value="TkModelResource">
 				<Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
 				<Property name="Seed" value="0" />
@@ -1618,7 +1618,7 @@ local PART_BUILD_PSCAN = [[
 						<Property name="Style" value="None" />
 					</Property>
 					<Property name="Model" value="TkModelResource">
-						<Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/SIGNALSCANNER.SCENE.MBIN" />
+						<Property name="Filename" value="CUSTOMMODELS/PSCAN/PROBE.SCENE.MBIN" />
 						<Property name="Seed" value="0" />
 					</Property>
 					<Property name="Inactive" value="TkModelResource">
@@ -1730,8 +1730,8 @@ local BB_BUILD_REFINERY = [[
 			<Property name="BuildableUnderwater" value="true" />
 			<Property name="BuildableAboveWater" value="true" />
 			<Property name="BuildableOnSpaceStationBase" value="true" />
-			<Property name="BuildableOnSpaceStationBackSection" value="false" />
-			<Property name="BuildableOnSpaceStationExterior" value="false" />
+			<Property name="BuildableOnSpaceStationBackSection" value="true" />
+			<Property name="BuildableOnSpaceStationExterior" value="true" />
 			<Property name="PlanetLimit" value="0" />
 			<Property name="RegionLimit" value="0" />
 			<Property name="PlanetBaseLimit" value="0" />
@@ -1746,13 +1746,8 @@ local BB_BUILD_REFINERY = [[
 			<Property name="CanScale" value="false" />
 			<Property name="Groups">
 				<Property name="Groups" value="GcBaseBuildingEntryGroup" _index="0">
-					<Property name="Group" value="PLANET_TECH" />
-					<Property name="SubGroupName" value="PLANETPORTABLE" />
-					<Property name="SubGroup" value="0" />
-				</Property>
-				<Property name="Groups" value="GcBaseBuildingEntryGroup" _index="1">
-					<Property name="Group" value="FREIGHTER_TECH" />
-					<Property name="SubGroupName" value="FRE_TECH_OTHER" />
+					<Property name="Group" value="HCS_TOOLS" />
+					<Property name="SubGroupName" value="HCS_TOOLS" />
 					<Property name="SubGroup" value="0" />
 				</Property>
 			</Property>
@@ -2061,6 +2056,23 @@ local APDDATA_BUILD_REFINERY = [[
 			<Property name="LastProfiledTimestamp" value="1788753610" />
 			<Property name="InstanceLastProfiledTimestamp" value="1786938825" />
 		</Property>
+]]
+
+local GRP_HCS_TOOLS = [[
+			<Property name="Groups" value="GcBaseBuildingGroup" _id="HCS_TOOLS">
+				<Property name="ID" value="HCS_TOOLS" />
+				<Property name="Name" value="UI_BUILD_TAB_HCS" />
+			<Property name="Icon" value="TkTextureResource">
+				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/TABS/BUILDTAB_TECH.DDS" />
+			</Property>
+				<Property name="DefaultColourIdx" value="0" />
+			<Property name="SubGroups">
+				<Property name="SubGroups" value="GcBaseBuildingSubGroup" _id="HCS_TOOLS">
+					<Property name="Id" value="HCS_TOOLS" />
+					<Property name="Name" value="UI_BUILD_SUB_HCS" />
+				</Property>
+			</Property>
+			</Property>
 ]]
 
 local REW_R_PFISH_GO = [[
@@ -11318,7 +11330,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
   MOD_AUTHOR      = "Azunain",
   LUA_AUTHOR      = "Azunain",
   NMS_VERSION     = "7.02",
-  MOD_DESCRIPTION = "Portable Nexus Suite",
+  MOD_DESCRIPTION = "Portable Nexus Suite (6 new buildable devices)",
   MODIFICATIONS   = {
     {
       MBIN_CHANGE_TABLE = {
@@ -11330,6 +11342,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             { SPECIAL_KEY_WORDS = { "ID", "BUILDSIGNAL" }, ADD_OPTION = "ADDafterSECTION", ADD = BB_BUILD_CASINO },
             { SPECIAL_KEY_WORDS = { "ID", "BUILDSIGNAL" }, ADD_OPTION = "ADDafterSECTION", ADD = BB_BUILD_PSCAN },
             { SPECIAL_KEY_WORDS = { "ID", "BUILD_REFINER1" }, ADD_OPTION = "ADDafterSECTION", ADD = BB_BUILD_REFINERY },
+            { SPECIAL_KEY_WORDS = { "Groups", "GcBaseBuildingGroup" }, ADD_OPTION = "ADDafterSECTION", ADD = GRP_HCS_TOOLS },
           } },
         { MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/NMS_BASEPARTPRODUCTS.MBIN",
           MXML_CHANGE_TABLE = {

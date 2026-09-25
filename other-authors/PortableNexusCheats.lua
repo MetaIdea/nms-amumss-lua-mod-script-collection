@@ -26,32 +26,32 @@ local BB_BUILD_CHEAT = [[
 			</Property>
 			<Property name="BuildableOnPlanetBase" value="true" />
 			<Property name="BuildableOnSpaceBase" value="true" />
-			<Property name="BuildableOnFreighter" value="false" />
+			<Property name="BuildableOnFreighter" value="true" />
 			<Property name="BuildableInShipStructural" value="false" />
-			<Property name="BuildableInShipDecorative" value="false" />
+			<Property name="BuildableInShipDecorative" value="true" />
 			<Property name="BuildableOnPlanet" value="true" />
 			<Property name="BuildableOnPlanetWithProduct" value="false" />
 			<Property name="BuildableUnderwater" value="true" />
 			<Property name="BuildableAboveWater" value="true" />
-			<Property name="BuildableOnSpaceStationBase" value="false" />
-			<Property name="BuildableOnSpaceStationBackSection" value="false" />
-			<Property name="BuildableOnSpaceStationExterior" value="false" />
+			<Property name="BuildableOnSpaceStationBase" value="true" />
+			<Property name="BuildableOnSpaceStationBackSection" value="true" />
+			<Property name="BuildableOnSpaceStationExterior" value="true" />
 			<Property name="PlanetLimit" value="0" />
-			<Property name="RegionLimit" value="1" />
+			<Property name="RegionLimit" value="0" />
 			<Property name="PlanetBaseLimit" value="0" />
 			<Property name="FreighterBaseLimit" value="0" />
 			<Property name="CorvetteBaseLimit" value="0" />
 			<Property name="DoesNotCountTowardsComplexity" value="false" />
 			<Property name="CheckPlaceholderCollision" value="false" />
 			<Property name="CheckPlayerCollision" value="true" />
-			<Property name="CanStack" value="true" />
+			<Property name="CanStack" value="false" />
 			<Property name="SnapRotateBlocked" value="false" />
 			<Property name="CanRotate3D" value="false" />
 			<Property name="CanScale" value="false" />
 			<Property name="Groups">
 				<Property name="Groups" value="GcBaseBuildingEntryGroup" _index="0">
-					<Property name="Group" value="PLANET_TECH" />
-					<Property name="SubGroupName" value="PLANETPORTABLE" />
+					<Property name="Group" value="HCS_TOOLS" />
+					<Property name="SubGroupName" value="HCS_TOOLS" />
 					<Property name="SubGroup" value="0" />
 				</Property>
 			</Property>
@@ -98,9 +98,9 @@ local BB_BUILD_CHEAT = [[
 				<Property name="DependsOnHotspots" value="None" />
 				<Property name="DependentConnections" />
 			</Property>
-			<Property name="GhostsCountOverride" value="0" />
+			<Property name="GhostsCountOverride" value="1" />
 			<Property name="ShowGhosts" value="true" />
-			<Property name="SnappingDistanceOverride" value="0.000000" />
+			<Property name="SnappingDistanceOverride" value="0.100000" />
 			<Property name="RegionSpawnLOD" value="1" />
 			<Property name="NPCInteractionScene" value="TkModelResource">
 				<Property name="Filename" value="" />
@@ -127,7 +127,7 @@ local PROD_BUILD_CHEAT = [[
 			<Property name="AltDescription" value="" />
 			<Property name="Hint" value="" />
 			<Property name="BuildableShipTechID" value="" />
-			<Property name="GroupID" value="" />
+			<Property name="GroupID" value="BUILD_CHEAT" />
 			<Property name="DebrisFile" value="TkModelResource">
 				<Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
 				<Property name="Seed" value="0" />
