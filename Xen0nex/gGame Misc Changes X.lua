@@ -2,7 +2,7 @@ Author = "Gumsk"		--Edited by Xenonex
 ModName = "gGame"
 ModNameSub = "Misc Changes X"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "7_03"
+GameVersion = "7_04"
 ModVersion = "b"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
@@ -26,9 +26,9 @@ BonusChildMult = 0.03							--0.03 ;
 --UndergroundTorchStrength = 14					--12.25 (3.5)
 --UndergroundTorchFoVFar = 100					--100	Deprecated in NMS v5.5
 --UndergroundTorchStrengthFar = 7.5				--6.5	Deprecated in NMS v5.5
-TorchOffsetX = 0								-- -0.5		Torch source, + right, -left of centerline of character, in u.
-TorchOffsetY = -0.35							-- -0.5		Torch source, + above, -below top of character head, in u.
-TorchOffsetZ = -1.0								-- -1.2		Torch source, + behind, - in front of centerline of character, in u. (-0.75)
+--TorchOffsetX = 0								-- -0.5		Torch source, + right, -left of centerline of character, in u.
+--TorchOffsetY = -0.35							-- -0.5		Torch source, + above, -below top of character head, in u.
+--TorchOffsetZ = -1.0								-- -1.2		Torch source, + behind, - in front of centerline of character, in u. (-0.75)
 --TorchRotation = 0.0								--???
 --TorchColourRed = 0.95							--Torch color red saturation percent. Original value "0.95"
 --TorchColourGreen = 0.993						--Torch color green saturation percent. Original value "0.993"
@@ -296,9 +296,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						--{"UndergroundTorchStrength", UndergroundTorchStrength},
 						--{"UndergroundTorchFoVFar", UndergroundTorchFoVFar},	Deprecated in NMS v5.5
 						--{"UndergroundTorchStrengthFar", UndergroundTorchStrengthFar},	Deprecated in NMS v5.5
-						{"TorchOffsetX", TorchOffsetX},
-						{"TorchOffsetY", TorchOffsetY},
-						{"TorchOffsetZ", TorchOffsetZ},
+						--{"TorchOffsetX", TorchOffsetX},
+						--{"TorchOffsetY", TorchOffsetY},
+						--{"TorchOffsetZ", TorchOffsetZ},
 						--{"TorchRotation", TorchRotation},
 					}
 				},

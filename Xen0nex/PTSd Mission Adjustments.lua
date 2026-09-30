@@ -23,14 +23,15 @@ GravitinoBallReq =		24				--1 Gravitino Ball		This type of item is easier to fin
 BaseCompArchWordsMult =	5				-- Vanilla is 3 words for stage 1, increasing by 3 each stage up to 30 words needed for stage 10
 
 --Multiplier to apply to the amount of substances/products needed to turn in to complete various Deep Space Outpost missions
-DSOContMetalMult =		3				--70-120 Contaminated Metal		HULK1
-DSOIndustSalvageMult =	1.5				--5-8 or 2-4 Industrial Salvage	HULK_COMMON
-DSORareItem1Mult =		1				--1 Reactor Core or Auxiliary Core or CPU Harness or Compressed Plasma	HULK_CORE
-DSORareItem2Mult =		1				--1 Suspicious Cargo or Data Packet or Stasis Locker or Fuel Rod (PTSd removes Fuel Rod as an option)	HULK_SMUGGLE
-DSOCometDustMult =		3				--70-120 Comet Dust		ASTBELT1
-DSOCondStellarIceMult =	1				--4-8 Condensed Stellar Ice		ASTEROID_CRYST
-DSOGelFibresMult =		8				--70-120 Gelatinous Fibres		SLIMEPOST1
-DSORareItem3Mult =		1				--1 Viral Heart or Pathogen Sac	SLIME_BLOB
+DSOContMetalMult =			4			--70-120 Contaminated Metal from a Hulk		HULK1
+DSOIndustSalvageHulkMult =	1.2			--5-8 Industrial Salvage from a Hulk	HULK_COMMON
+DSOIndustSalvageWreckMult =	3			--2-4 Industrial Salvage from a Wreck/Waste Site	HULK_COMMON
+DSORareItem1Mult =			1			--1 Reactor Core or Auxiliary Core or CPU Harness or Compressed Plasma	HULK_CORE
+DSORareItem2Mult =			1			--1 Suspicious Cargo or Data Packet or Stasis Locker or Fuel Rod (PTSd removes Fuel Rod as an option)	HULK_SMUGGLE
+DSOCometDustMult =			4			--70-120 Comet Dust		ASTBELT1
+DSOCondStellarIceMult =		1.5			--4-8 Condensed Stellar Ice		ASTEROID_CRYST
+DSOGelFibresMult =			4			--70-120 Gelatinous Fibres		SLIMEPOST1
+DSORareItem3Mult =			1			--1 Viral Heart or Pathogen Sac	SLIME_BLOB
 
 --Changes the amount of time that a Trade Surge last for, in minutes
 TradeSurgeDuration =	80				--180 minutes	(3 hours)
@@ -181,7 +182,7 @@ GravGunRecipeTutorialCost=
     </Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]		= ModName..GameVersion,
+["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
@@ -444,15 +445,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Product", "HULK_COMMON"},
+				["SPECIAL_KEY_WORDS"] = {"MissionID", "SO_COLLECT_H2",		"Product", "HULK_COMMON"},
 				["SECTION_UP"] = 2,
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
-				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin", DSOIndustSalvageMult},
-					{"AmountMax", DSOIndustSalvageMult},
+					{"AmountMin", DSOIndustSalvageHulkMult},
+					{"AmountMax", DSOIndustSalvageHulkMult},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"MissionID", "SO_COLLECT_JUNK",		"Product", "HULK_COMMON"},
+				["SECTION_UP"] = 2,
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", DSOIndustSalvageWreckMult},
+					{"AmountMax", DSOIndustSalvageWreckMult},
 				}
 			},
 			{

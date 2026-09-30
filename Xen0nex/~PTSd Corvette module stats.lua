@@ -1,6 +1,6 @@
 ModName = "PTSd Corvette module stats"
 ModAuthor = 'Xen0nex'
-GameVersion = "6_10"
+GameVersion = "7_04"
 Description = 'Adjusts the bonuses and their strengths granted by Corvette modules, eliminates random variation of stat bonuses from Corvette modules'
 
 --Set to true to make any module which adds cargo slots (Habs & Walkways) slightly reduce Boosting Speed & Maneuverability (since the vanilla system for making larger Corvettes slower doesn't appear to be working)
@@ -46,6 +46,12 @@ CorvetteModuleBonuses =
 			{"Ship_Boost", 									0.8},			--N/A (1)		(Added by PTSd)
 			{"Ship_BoostManeuverability", 					0.84},			--N/A (1)		(Added by PTSd)
 			{"Ship_Maneuverability", 						0.994},			--N/A (1)		(Added by PTSd)
+		},
+	},
+	{
+		{"CV_TRACT1"},		--Tractor Beam
+		{
+			{"Ship_Cargo_Slots", 							1},				--N/A (0)		(Added by PTSd)
 		},
 	},
 	{
@@ -474,7 +480,7 @@ function AddNewShieldTech (ID, NumStats)
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= ModName..GameVersion,
+	MOD_FILENAME 		= ModName..GameVersion..".pak",
 	MOD_AUTHOR			= ModAuthor,
 	NMS_VERSION			= GameVersion,
 	--["EXML_CREATE"] = "FALSE",
@@ -674,6 +680,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"NumStatsMin", 4},
 					{"NumStatsMax", 4},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "CV_TRACT1",		"StatLevels", "GcProceduralTechnologyStatLevel"},
+				["ADD_OPTION"] = "ADDafterSECTION",
+				["ADD"] = AddBonusStat ("Ship_Cargo_Slots", "1.000000")
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "CV_TRACT1"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"NumStatsMin", 2},
+					{"NumStatsMax", 2},
 				}
 			},
 			{

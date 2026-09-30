@@ -1,12 +1,8 @@
--- Escala el coste en Salvaged Data (RecipeCost) de los blueprints de construccion.
--- Solo afecta a lo que se desbloquea con Salvaged Data: las piezas cuyo desbloqueo usa otra
--- moneda (nanites / Salvaged Frigate Modules / units) se revierten a su valor vanilla.
 local MULT = 5
 
 local MOD_NAME     = "HardcoreSky_SalvagedDataCostIncrease"
 local GAME_VERSION = "7.02"
 
--- >>> EXEMPT (generado por extras/gen_salvaged.py) >>>
 local EXEMPT = {
   { 23, "1" },
   { 27, "1" },
@@ -118,7 +114,6 @@ local EXEMPT = {
   { 169, "20" },
   { 170, "20" },
 }
--- <<< EXEMPT (generado por extras/gen_salvaged.py) <<<
 
 local CHANGES = {
   {

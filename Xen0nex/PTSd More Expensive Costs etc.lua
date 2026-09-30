@@ -65,7 +65,7 @@ UpgToolCtoB =			4000				--10000
 UpgToolBtoA =			8000				--25000
 UpgToolAtoS =			16000				--50000
 
---Makes Emergency Broadcast Receivers for finding Derelict Freighters start out a little more expensive and continue increasing in price up until the twelfth daily purchase, instead of stopping at the fourth.
+--Makes Emergency Signal Scanners for finding Derelict Freighters start out a little more expensive and continue increasing in price up until the twelfth daily purchase, instead of stopping at the fourth.
 --Receiver prices reset each day
 FirstReceiverCost = 	6000000				--5000000
 SecondReceiverCost = 	12000000			--10000000
@@ -511,7 +511,7 @@ AddCorvTeleportCost =
 		</Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]		= ModName..GameVersion,
+["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,

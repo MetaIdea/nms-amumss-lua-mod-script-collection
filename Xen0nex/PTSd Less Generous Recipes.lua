@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "7_03"
+GameVersion = "7_04"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -1090,19 +1090,19 @@ NewSalvagedDataRecipes =
 		"DATA_GLASS",	"PTSd: Glassy Data Extraction",		"DEEPSEA_PROD",	"Product",		"1",		"5"
 	},
 	{
-		"DATA_BBOX",	"PTSd: Packaged Data Extraction",	"HULK_BLACKBOX","Product",		"1",		"14"
+		"DATA_BBOX",	"PTSd: Packaged Data Extraction",	"HULK_BLACKBOX","Product",		"1",		"10"
 	},
 	{
-		"DATA_DCORE",	"PTSd: CPU Data Extraction",		"HULK_DATACORE","Product",		"1",		"4"
+		"DATA_DCORE",	"PTSd: CPU Data Extraction",		"HULK_DATACORE","Product",		"1",		"3"
 	},
 	{
-		"DATA_SMUGL",	"PTSd: Suspicious Data Extraction",	"HULK_SMUGGLE","Product",		"1",		"10"
+		"DATA_SMUGL",	"PTSd: Suspicious Data Extraction",	"HULK_SMUGGLE","Product",		"1",		"8"
 	},
 	{
-		"DATA_SBLOB",	"PTSd: Viral Data Extraction",		"SLIME_BLOB",	"Product",		"1",		"14"
+		"DATA_SBLOB",	"PTSd: Viral Data Extraction",		"SLIME_BLOB",	"Product",		"1",		"4"
 	},
 	{
-		"DATA_SSTAR",	"PTSd: Pathogenic Data Extraction",	"SLIME_STAR",	"Product",		"1",		"14"
+		"DATA_SSTAR",	"PTSd: Pathogenic Data Extraction",	"SLIME_STAR",	"Product",		"1",		"6"
 	},
 }
 
@@ -1111,14 +1111,19 @@ SilicateBasaltRatio = 2								--Sets how much Silicate Powder is created for ev
 SacVenomTritiumYield = 100							--Sets how much Tritium is created for every 1 Sac Venom & 2 Gravitino Balls refined together with the new PTSd recipe
 AlbumenPearlDiHydrogenYield = 50					--Sets how much Di-hydrogen is created for every 2 Albumen Pearls & 1 Gravitino Balls refined together with the new PTSd recipe
 
-StellarIceTritiumYield = 100						--Sets how much Tritium is created for every 1 Condensed Stellar Ice & X Silver refined together with the new PTSd recipe
-StellarIceSilverIngr = 50							--Sets how much Silver is required to refine with Stellar Condensed Ice to make Tritium with the new PTSd recipe
+StellarIceTritiumYield = 50							--Sets how much Tritium is created for every 1 Condensed Stellar Ice & X Silver refined together with the new PTSd recipe
+StellarIceSilverIngr = 30							--Sets how much Silver is required to refine with Stellar Condensed Ice to make Tritium with the new PTSd recipe
 
 GelFibresNaniteYield = 1							--Sets how many Nanites are created for every X Gelatinous Fibre & Y Faecium refined together with the new PTSd recipe
 GelFibresNaniteGelFibresIngr = 3					--Sets how many Gelatinous Fibres are required to refine with Faecium to make Nanites with the new PTSd recipe
 GelFibresFaeciumIngr = 1							--Sets how much Faecium is required to refine with Gelatinous Fibres to make Nanites with the new PTSd recipe
 
-DeepSpaceSubsDiHydrogenYield = 1					--Sets how much Di-hydrogen is created for every 1 Comet Dust, 1 Contaiminated Metal, & 2 Gelatinous Fibres refined together with the new PTSd recipe
+DeepSpaceSubsDiHydrogenYield = 1					--Sets how much Di-hydrogen is created for every 1 Comet Dust, 1 Contaminated Metal, & 2 Gelatinous Fibres refined together with the new PTSd recipe
+
+NavDataRecipeYield = 2								--Sets how many Navigation Data are created for every X Salvaged Data, Y Autonomous Positioning Units, & Z Platinum refined together with the new PTSd recipe
+NavDataRecipeSalDataIngr = 1						--Sets how many Salvaged Data are required to refine with Autonomous Positioning Units & Platinum to make Navigation Data with the new PTSd recipe
+NavDataRecipeAPUIngr = 2							--Sets how many Autonomous Positioning Units are required to refine with Salvaged Data & Platinum to make Navigation Data with the new PTSd recipe
+NavDataRecipePlatinumIngr = 50						--Sets how much Platinum is required to refine with Autonomous Positioning Units & Salvaged Data to make Navigation Data with the new PTSd recipe
 
 --Adds new recipes for using Aloe Flesh and Refreshing Drink since they otherwise have very few uses
 AloeVegetables = 2									--Sets how many Steamed Vegetables are created from cooking 1 Aloe Flesh and 1 Condensed Carbon with the new PTSd recipe
@@ -1317,27 +1322,31 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			{--Adds Recipe for refining Basalt into Silicate Powder
 				["PRECEDING_KEY_WORDS"] = {"Table"},
-				["ADD"] = Add1IngrRefinerRecipe ("SILICATE_BASALT", "Requested Operation: Powderise", "PTSd: Basalt Pulverisation", "20", "SAND1", "Substance", SilicateBasaltRatio, "LAVA1", "Substance", "1")
+				["ADD"] = Add1IngrRefinerRecipe ("SILICATE_BASALT", "Requested Operation: Powderise", "PTSd: Basalt Pulverisation", math.floor(SilicateBasaltRatio*10), "SAND1", "Substance", SilicateBasaltRatio, "LAVA1", "Substance", "1")
 			},
 			{--Adds Recipe for creating Tritium by refining Gravitino Balls with Sac Venom
 				["PRECEDING_KEY_WORDS"] = {"Table"},
-				["ADD"] = Add2IngrRefinerRecipe ("TRITIUM_SACVENOM", "RECIPE_TECHFRAG_PLANT_CAVE", "PTSd: Tritium Sublimation", "1200", "ROCKETSUB", "Substance", SacVenomTritiumYield, "GRAVBALL", "Product", "2", "SACVENOM", "Product", "1")
+				["ADD"] = Add2IngrRefinerRecipe ("TRITIUM_SACVENOM", "RECIPE_TECHFRAG_PLANT_CAVE", "PTSd: Tritium Sublimation", math.floor(SacVenomTritiumYield*12), "ROCKETSUB", "Substance", SacVenomTritiumYield, "GRAVBALL", "Product", "2", "SACVENOM", "Product", "1")
 			},
 			{--Adds Recipe for creating Di-Hydrogen by refining Gravitino Balls with Albumen Pearls 
 				["PRECEDING_KEY_WORDS"] = {"Table"},
-				["ADD"] = Add2IngrRefinerRecipe ("DIH_ALBUMENPEARL", "RECIPE_LAUNCHSUB", "PTSd: Di-Hydrogen Extraction", "600", "LAUNCHSUB", "Substance", AlbumenPearlDiHydrogenYield, "GRAVBALL", "Product", "1", "ALBUMENPEARL", "Product", "2")
+				["ADD"] = Add2IngrRefinerRecipe ("DIH_ALBUMENPEARL", "RECIPE_LAUNCHSUB", "PTSd: Di-Hydrogen Extraction", math.floor(AlbumenPearlDiHydrogenYield*12), "LAUNCHSUB", "Substance", AlbumenPearlDiHydrogenYield, "GRAVBALL", "Product", "1", "ALBUMENPEARL", "Product", "2")
 			},
 			{--Adds Recipe for creating Tritium by refining Condensed Stellar Ice with Silver
 				["PRECEDING_KEY_WORDS"] = {"Table"},
-				["ADD"] = Add2IngrRefinerRecipe ("TRITIUM_STELICE", "RECIPE_TECHFRAG_PLANT_CAVE", "PTSd: Tritium Purification", "1200", "ROCKETSUB", "Substance", StellarIceTritiumYield, "ASTEROID_CRYST", "Product", "1", "ASTEROID1", "Substance", StellarIceSilverIngr)
+				["ADD"] = Add2IngrRefinerRecipe ("TRITIUM_STELICE", "RECIPE_TECHFRAG_PLANT_CAVE", "PTSd: Tritium Purification", math.floor(StellarIceTritiumYield*12), "ROCKETSUB", "Substance", StellarIceTritiumYield, "ASTEROID_CRYST", "Product", "1", "ASTEROID1", "Substance", StellarIceSilverIngr)
 			},
 			{--Adds Recipe for creating Nanites by refining Gelatinous Fibres with Faecium
 				["PRECEDING_KEY_WORDS"] = {"Table"},
 				["ADD"] = Add2IngrRefinerRecipe ("NANITE_GELFIB", "RECIPE_BURIEDTECH", "PTSd: Nanite Decontamination", math.floor(GelFibresNaniteYield*30), "TECHFRAG", "Substance", GelFibresNaniteYield, "SLIMEPOST1", "Substance", GelFibresNaniteGelFibresIngr, "PLANT_POOP", "Substance", GelFibresFaeciumIngr)
 			},
-			{--Adds Recipe for creating Di-Hydrogen by refining Comet Dust, Contaiminated Metal, & Gelatinous Fibres
+			{--Adds Recipe for creating Di-Hydrogen by refining Comet Dust, Contaminated Metal, & Gelatinous Fibres
 				["PRECEDING_KEY_WORDS"] = {"Table"},
-				["ADD"] = Add3IngrRefinerRecipe ("DIH_DEEPSPACE", "RECIPE_LAUNCHSUB", "PTSd: Di-Hydrogen Purification", "12", "LAUNCHSUB", "Substance", DeepSpaceSubsDiHydrogenYield, "ASTBELT1", "Substance", "1", "HULK1", "Substance", "1", "SLIMEPOST1", "Substance", "2")
+				["ADD"] = Add3IngrRefinerRecipe ("DIH_DEEPSPACE", "RECIPE_LAUNCHSUB", "PTSd: Di-Hydrogen Purification", math.floor(DeepSpaceSubsDiHydrogenYield*12), "LAUNCHSUB", "Substance", DeepSpaceSubsDiHydrogenYield, "ASTBELT1", "Substance", "1", "HULK1", "Substance", "1", "SLIMEPOST1", "Substance", "2")
+			},
+			{--Adds Recipe for creating Navigation Data by refining Salvaged Data, Autonomous Positioning Units, & Platinum
+				["PRECEDING_KEY_WORDS"] = {"Table"},
+				["ADD"] = Add3IngrRefinerRecipe ("NAVDATA_X", "RECIPE_NAVDATA", "PTSd: Data Navigation", math.floor(NavDataRecipeYield*12), "NAV_DATA", "Product", NavDataRecipeYield, "BP_SALVAGE", "Product", NavDataRecipeSalDataIngr, "TRA_TECH4", "Product", NavDataRecipeAPUIngr, "ASTEROID3", "Product", NavDataRecipePlatinumIngr)
 			},
 			{--Adds Recipe for refining Sea Glass into Salvaged Glass
 				["PRECEDING_KEY_WORDS"] = {"Table"},

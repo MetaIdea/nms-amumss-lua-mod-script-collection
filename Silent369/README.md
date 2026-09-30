@@ -1,4 +1,4 @@
-# No Man's Sky Mod Collection - Updated for 7.01
+# No Man's Sky Mod Collection - Updated for 7.04
 
 ### These are the current published mods created for No Man's Sky.
 

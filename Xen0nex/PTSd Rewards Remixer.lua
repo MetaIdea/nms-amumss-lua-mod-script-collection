@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "7_03"
+GameVersion = "7_04"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -14,8 +14,9 @@ NonMinableSubstanceMult =				1						--Multiplier for certain substance rewards f
 TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pellet Recipe during the tutorial when teaching the Hermetic Seal recipe instead of later on, false otherwise
 NoNewTechAtCrashsites = true			--false		Set true to ensure all starship crashsite Distress Beacon rewards only give random-Class Upgrade Modules, not teaching a new core tech blueprint
 RevealPurpleSystemsEarly = true			--false	 	Set true to allow using Discordant Interfaces at Korvax Monoliths to reveal all Purple Systems on the Galaxy Map
+NoLootableCorvTractorBeam = true		--false		Set true to remove corvette Tractor Beams from all loot sources which normally yield corvette modules (e.g. Salvageable Scrap, etc.) since PTSd makes them craftable instead
 
---Changes the Class & inventory size when redeeming the unique expedition reward starships or unique Multi-Tools: Golden Vector, Utopia Speeder, Starborn Runner, Iron Vulture, Boundary Herald, and Wraith starships or Atlas Sceptre, Pillar of Titan, Basilisk Crown, Direwasp Disintegrator, and Starbound v0.27 Multi-Tool
+--Changes the Class & inventory size when redeeming the unique expedition reward starships or unique Multi-Tools: Golden Vector, Utopia Speeder, Starborn Runner, Iron Vulture, Boundary Herald, Wraith, Rasamama S36, and Vintage Sentinel Interceptor starships or Atlas Sceptre, Pillar of Titan, Basilisk Crown, Direwasp Disintegrator, and Starbound v0.27 Multi-Tool
 ExpShipClass = 							"C"						--"S"		Sets the Class for redeeming the expedition ships & tools
 --Changes Cargo inventory size for expedition reward starships. The game adds 1 to whatever value is entered here
 ExpShipFighterCargoSlots = 				8						--36	(For Golden Vector/Utopia Speeder/Rasamama S36)
@@ -23,14 +24,14 @@ ExpShipHaulerCargoSlots = 				19						--36	(For Iron Vulture)
 ExpShipExplorerCargoSlots = 			8						--36	(For Boundary Herald)
 ExpShipExoticCargoSlots = 				7						--36	(For StarbornRunner/Phoenix)
 ExpShipAlienCargoSlots = 				10						--20	(For Wraith)
-ExpShipRobotCargoSlots = 				7						--20	(For Vintage Sentinel Interceptor)
+ExpShipRobotCargoSlots = 				8						--20	(For Vintage Sentinel Interceptor)
 --Changes Tech inventory size for expedition reward starships. based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range)
 ExpShipFighterTechSize = 				"SciSmall"				--"FgtLarge"	(16)	(For Golden Vector/Utopia Speeder)
 ExpShipHaulerTechSize = 				"DrpSmall"				--"DrpLarge"	(9)		(For Iron Vulture)
 ExpShipExplorerTechSize = 				"ShtMedium"				--"SciLarge"	(17)	(For Boundary Herald)
 ExpShipExoticTechSize = 				"DrpLarge"				--"RoyLarge"	(19-2=17)	(For StarbornRunner/Phoenix)	For some reason the game appears to deduct -2 tech slots for this ship?
 ExpShipAlienTechSize = 					"ShtMedium"				--"SciLarge"	(17)	(For Wraith)
-ExpShipRobotTechSize = 					"FreighterMedium"		--"RobotLarge"	(25)	(For Vintage Sentinel Interceptor)
+ExpShipRobotTechSize = 					"SciSmall"				--"RobotLarge"	(16)	(For Vintage Sentinel Interceptor)
 --Sets the Hyperdrive of all expedition/Twitch reward starships to be empty like when buying a regular starship, instead of coming fully fueled.
 RewardShipHyperdriveEmpty =				true					--false
 
@@ -77,8 +78,11 @@ FactoryMax = 							500						--120 Nanites
 --Multipliers to how many Factory Override Tokens you get awarded
 FactoryOverrideTokenMult	=			10						--This should match the "Recipe Cost mutipliers" in "--PTSd Tech + Upgrade + Unlock costs.lua", to balance it out
 
---Replaces the amount of nanites you receive directly in addition to Navigation Data from activating the little "waypoints" / "save beacons" found outside many buildings. Nanites for recording/discovering the waypoint location are handled in "!PTSd Scan Rewards + Shops etc.lua"
-WaypointNanites		=					30						--10
+--Changes the rewards from activating the little "waypoints" / "save beacons" found outside many buildings.
+WaypointNanites		=					30						--10	Replaces the amount of nanites you receive directly in addition to Navigation Data from activation. Nanites for recording/discovering the waypoint location are handled in "~PTSd Scan Rewards + Shops etc.lua"
+WaypointBonusNavDataChance	=			50						--N/A	Sets the chance of receiving of "bonus" Navigation Data, in addition to the guaranteed 1 Navigation Data
+WaypointBonusNavDataAmountMin	=		1						--N/A	Sets the minimum amount of "bonus" Navigation Data
+WaypointBonusNavDataAmountMax	=		1						--N/A	Sets the maximum amount of "bonus" Navigation Data
 
 --Multiplier for rewards of small amounts of Units from various sources (Not frigate expeditions)
 	--Note these multipliers will generally not be applied to any unit rewards set further below in this file, unless otherwise noted.
@@ -688,7 +692,7 @@ SpaceStationMissionLootChanges =
 			--{"LAUNCHFUEL",				"LAUNCHFUEL",			4,	4,		2},		--4,	4,		1		Launch Fuel
 			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	1,		50},	--1,	1,		50		Salvaged Frigate Module
 			--{"POLICE_TOKEN",			"POLICE_TOKEN",			1,	1,		2},		--1,	1,		2		Defence Chit
-			{"BP_SALVAGE",				"BP_SALVAGE",			3,	8,		50},	--3,	8,		50		Salvaged Data
+			{"BP_SALVAGE",				"BP_SALVAGE",			4,	8,		50},	--3,	8,		50		Salvaged Data
 			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		2,	3,		50},	--2,	3,		100		Frigate Fuel (200 tonnes)
 			{"NAV_DATA_DROP",			"SUIT_INV_TOKEN",		1,	1,		20},	--1,	1,		20		Exosuit Upgrade Chart		(Exosuit Expansion Slot)
 			{"CHART_HIVE",				"CHART_HIVE",			1,	1,		20},	--1,	1,		40		Sentinel Pillar Chart
@@ -748,7 +752,7 @@ SpaceStationMissionLootChanges =
 			{"FACT_TOKEN",				"FACT_TOKEN",			math.floor(1*FactoryOverrideTokenMult),	math.floor(1*FactoryOverrideTokenMult),		5},		--1,	1,		5		Factory Override Unit
 			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	1,		5},		--1,	1,		5		Salvaged Frigate Module
 			{"POLICE_TOKEN",			"POLICE_TOKEN",			2,	2,		2},		--1,	1,		2		Defence Chit
-			{"BP_SALVAGE",				"BP_SALVAGE",			4,	6,		10},	--3,	5,		10		Salvaged Data
+			{"BP_SALVAGE",				"BP_SALVAGE",			6,	8,		10},	--3,	5,		10		Salvaged Data
 			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		1,	3,		1},		--1,	3,		5		Frigate Fuel (200 tonnes)
 			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		3},		--1,	1,		3		Exosuit Upgrade Chart
 			{"FRIG_BOOST_TRA",			"FRIG_BOOST_TRA",		1,	2,		2},		--1,	1,		2		Mind Control Device
@@ -1350,18 +1354,119 @@ NoStorageAugShipsAndClasses =									--Only has an effect if NoStorageAugFromLo
 DerCorvProceduralLootChance =			10						--10	Drops 1 procedural "Salvage" loot item
 DerCorvGoodModuleMin =					2						--1		Minimum amount of "Good" corvette modules (from 35 options) to drop (40% chance)
 DerCorvGoodModuleMax =					4						--2		Maximum amount of "Good" corvette modules (from 35 options) to drop (40% chance)
-DerCorvOKModuleMin =					2						--1		Minimum amount of "OK" corvette modules (from 73 options) to drop (100% chance)
-DerCorvOKModuleMax =					4						--2		Maximum amount of "OK" corvette modules (from 73 options) to drop (100% chance)
+DerCorvOKModuleMin =					2						--1		Minimum amount of "OK" corvette modules (from 78 options) to drop (100% chance)
+DerCorvOKModuleMax =					4						--2		Maximum amount of "OK" corvette modules (from 78 options) to drop (100% chance)
 
---Applies multipliers to new bonus rewards added by PTSd for mining or processing (at Deep Space Outposts) certain Deep Space items
-DSSlimeTractorNaniteMult =				1						--1-4 nanites (0 in vanilla)	Nanites for depositing most "slimy" items from infested Deep Space Outposts into your Corvette's Tractor Beam
-DSSlimeMinedNaniteMult =				1						--6-12 nanites (0 in vanilla)	Nanites for fully mining most "slimy" items from infested Deep Space Outposts with your Multi-Tool's Mining Laser
-DSUnusualSampleNaniteMult =				1						--18-36 nanites (0 in vanilla)	Nanites for processing Unusual Samples at a Deep Space Outpost
-DSSlimeMinedGelFibreMult =				0.5						--15-24 Gelatinous Fibres 		From fully mining most "slimy" items from infested Deep Space Outposts with your Multi-tool's mining laser
-DSStellarGeodeMineTritiumMult =			1						--12-24 Tritium (0 in vanilla)	Tritium from fully mining the collectible Stellar Geode item (from inside new Deep Space Asteroids)
-DSAsteroidBreakTritiumMult =			1						--5-10 Tritium (0 in vanilla)	Tritium from cracking open the new Deep Space Asteroids
+--Applies multipliers to either vanilla or PTSd-added rewards for mining / tractoring / processing (at Deep Space Outposts) various Deep Space salvage items
+	--Because many of these rewards are swapped from their vanilla rewards by the DeepSpaceSalvageItemChanges table below, the --comments for these rewards don;t necessary show the actual vanilla vlaue, just the "default" value PTSd will apply multipliers to
+CommonTractorContMetalMult =			0.75					--23-45 Contaminated Metal		For tractoring "Common" objects from Hulks/Minor Wreckage into your Corvette's Tractor Beam	(This spawns an Industrial Salvage)
+CommonMineContMetalMult =				0.75*0.94				--23-45 Contaminated Metal		For mining "Common" objects from Hulks/Minor Wreckage with your Mining Laser	(This spawns an Industrial Salvage)
 
-DSAsteroidBreakTritiumChance =			40						--0								Chance to award the above Tritium for cracking open the new Deep Space Asteroids
+IndSalMineContMetalMult =				1						--23-45 Contaminated Metal		For mining Industrial Salvage from Hulks/Minor Wreckage with your Mining Laser (This spawns nothing)
+
+AsteroidBreakTritiumMult =				1						--7-14 Tritium (0 in vanilla)	From cracking open the new Deep Space Asteroids (This spawns 1-3 Stellar Geodes)
+AsteroidBreakTritiumChance =			60						--0								Chance to award the above Tritium for cracking open the new Deep Space Asteroids, in addition to normal rewards
+AsteroidBreakCometDustMult =			1.5						--8-24 Comet Dust 				From cracking open the new Deep Space Asteroids (This spawns 1-3 Stellar Geodes)
+StellarGeodeMineTritiumMult =			0.67					--17-34 Tritium (0 in vanilla)	From fully mining the collectible Stellar Geode item (This spawns nothing)
+StellarGeodeMineCometDustMult =			0.7						--50-80 Comet Dust 				From fully mining the collectible Stellar Geode item (This spawns nothing)
+StellarGeodeDeliverTritiumMult =		0.5						--17-34 Tritium (0 in vanilla)	From processing the collectible Stellar Geode item at a Deep Space Outpost (This spawns Condensed Stellar Ice)
+StellarCondIceAmountMax = 				3						--3								Sets the max amount of Stellar Condensed Ice spawned when breaking open an Asteroid (the minimum amount spawned is 1)
+
+NestTractorNaniteMult =					0.5						--1-4 nanites (0 in vanilla)	For tractoring Nest Plating from infested Deep Space Outposts into your Corvette's Tractor Beam	(This spawns an Unusual Sample in vanilla)
+NestTractorGelFibreMult =				0.5						--5-15 Gelatinous Fibres		For tractoring Nest Plating from infested Deep Space Outposts into your Corvette's Tractor Beam	(This spawns an Unusual Sample in vanilla)
+NestMineNaniteMult =					0.5						--1-4 nanites (0 in vanilla)	For tractoring Nest Plating from infested Deep Space Outposts into your Corvette's Tractor Beam	(This spawns an Unusual Sample in vanilla)
+NestMineGelFibreMult =					0.5*0.94				--5-15 Gelatinous Fibres		For tractoring Nest Plating from infested Deep Space Outposts into your Corvette's Tractor Beam	(This spawns an Unusual Sample in vanilla)
+NestUSChance = 							0						--100							Sets the chance that Nest Plating spawns an Unusual Sample when mined or tractored
+NestUSAmount = 							0						--1								Sets the amount of Unusual Samples spawned when Nest Plating is mined or tractored
+
+	--These ~60 small Pulsating Cysts inside the hollow chamber of Infested Outposts use the same rewards for nanites / Gelatinous Fibres when mined / tractored as Nest Plating above
+PerlUSChance = 							25						--100							Sets the chance that the ~60 small Pulsating Cysts inside the hollow chamber of Infested Outposts spawn an Unusual Sample when mined or tractored
+PerlUSAmount = 							1						--1								Sets the amount of Unusual Samples spawned when the small Pulsating Cysts inside the hollow chamber of Infested Outposts are mined or tractored
+
+RawTractorNaniteMult =					1						--1-4 nanites (0 in vanilla)	For tractoring most "raw" objects from infested Deep Space Outposts into your Corvette's Tractor Beam	(This spawns an Unusual Sample)
+RawTractorGelFibreMult =				1						--5-15 Gelatinous Fibres		For tractoring most "raw" objects from infested Deep Space Outposts into your Corvette's Tractor Beam	(This spawns an Unusual Sample)
+RawMineNaniteMult =						1						--1-4 nanites (0 in vanilla)	For mining most "raw" objects from infested Deep Space Outposts with your Mining Laser	(This spawns an Unusual Sample)
+RawMineGelFibreMult =					1*0.94					--5-15 Gelatinous Fibres		For mining most "raw" objects from infested Deep Space Outposts with your Mining Laser	(This spawns an Unusual Sample)
+
+USDeliverNaniteMult =					1						--30-50 nanites (0 in vanilla)	For processing Unusual Samples at a Deep Space Outpost (This spawns nothing)
+USDeliverGelFibreMult =					0.6						--35-45 Gelatinous Fibres		For processing Unusual Samples at a Deep Space Outpost (This spawns nothing)
+USMineNaniteMult =						0.67					--8-16 nanites (0 in vanilla)	For mining Unusual Samples from infested Deep Space Outposts with your Mining Laser (This spawns nothing)
+USMineGelFibreMult =					1.33					--15-24 Gelatinous Fibres 		For mining Unusual Samples from infested Deep Space Outposts with your Mining Laser (This spawns nothing)
+
+RareSlimeMineNaniteMult =				4						--8-16 nanites (0 in vanilla)	For mining Viral Hearts / Pathogen Sacs from infested Deep Space Outposts with your Mining Laser (This spawns nothing)
+RareSlimeMineGelFibreMult =				4						--15-24 Gelatinous Fibres 		For mining Viral Hearts / Pathogen Sacs from infested Deep Space Outposts with your Mining Laser (This spawns nothing)
+
+--Changes rewards from various deep space salvage objects for mining or tractoring with a corvette Tractor Beam to new ones made by PTSd in order to apply the values above (doesn't affect processing at a Deep Space Outpost processor)
+DeepSpaceSalvageItemChanges =
+{
+	{--	Mining reward			Tractor Beam reward			(In addition to spawning any objects, if applicable)
+		{"DE_HULK1",			"DE_HULKTRAC"},																	--"DE_HULK1",	"DE_HULK1"
+		{--"Common" objects from Hulks/Minor Wreckage, spawns an Industrial Salvage when mined/tractored
+			"MODELS/SPACE/POI/HULK/ENTITIES/HULK_GRAB_0.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/ENTITIES/HULK_GRAB_1.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/ENTITIES/HULK_GRAB_2.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/ENTITIES/HULK_GRAB_3.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/ENTITIES/HULK_GRAB_4.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/ENTITIES/HULK_GRAB_5.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/ENTITIES/HULK_GRAB_PANEL_0.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/PARTS/ANTENAROUND02/ENTITIES/ANTENAROUND02.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/PARTS/EXPLOSIVE/DESTRUCTIBLEDOOR/GRIDDEBRIS/GRILLDEBRIS2/ENTITIES/GRILLDEBRIS2.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/PARTS/EXPLOSIVE/DESTRUCTIBLEDOOR/GRIDDEBRIS/GRILLDEBRIS3/ENTITIES/GRILLDEBRIS3.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/PARTS/EXPLOSIVE/DESTRUCTIBLEDOOR/GRIDDEBRIS/GRILLDEBRIS4/ENTITIES/GRILLDEBRIS4.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/PARTS/EXPLOSIVE/DESTRUCTIBLEDOOR/GRIDDEBRIS/GRILLDEBRIS5/ENTITIES/GRILLDEBRIS5.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/PARTS/EXPLOSIVE/DESTRUCTIBLEDOOR/GRIDDEBRIS/GRILLDEBRIS6/ENTITIES/GRILLDEBRIS6.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/PARTS/EXPLOSIVE/DESTRUCTIBLEDOOR/GRIDDEBRIS/GRILLDEBRIS7/ENTITIES/GRILLDEBRIS7.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/PARTS/EXPLOSIVE/DESTRUCTIBLEDOOR/GRIDDEBRIS/GRILLDEBRIS8/ENTITIES/GRILLDEBRIS8.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULK/PARTS/EXPLOSIVE/DESTRUCTIBLEDOOR/GRIDDEBRIS/GRILLDEBRIS9/ENTITIES/GRILLDEBRIS9.ENTITY.MBIN",
+		}
+	},
+	{--	Mining reward			Tractor Beam reward			(In addition to spawning any objects, if applicable)
+		{"DE_INDSAL",			""},																			--"DE_HULK1",	""
+		{--Industrial Salvage, spawns item of the same name when processed at a Deep Space Outpost, spawns no object if mined/tractored
+			"MODELS/SPACE/POI/HULK/PARTS/GRABBABLES/ENTITIES/JUNK.ENTITY.MBIN",
+		}
+	},
+	{--	Mining reward			Tractor Beam reward			(In addition to spawning any objects, if applicable)
+		{"DE_NESTMINE",			"DE_NESTTRAC"},																	--"DE_SLIME_ORG",	"DE_SLIMEPOST1"
+		{--Both kinds of Nest Plating, in vanilla spawns Unusual Sample when mined/tractored, in PTSd doesn't spawn objects
+			"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/NESTCOVER/ENTITIES/NESTCOVER.ENTITY.MBIN",
+			"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/SHELLCOVER/ENTITIES/SHELLCOVER.ENTITY.MBIN",
+		}
+	},
+	{--	Mining reward			Tractor Beam reward			(In addition to spawning any objects, if applicable)
+		{"DE_NESTMINE",			"DE_NESTTRAC"},																	--"DE_SLIME_ORG",	"DE_SLIMEPOST1"
+		{--The ~60 small Pulsating Cysts which line the walls inside the hollow central chamber of large Infested Outposts, in vanilla spawns Unusual Sample when mined/tractored, in PTSd only spawns them ~25% of the time
+			"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/PERLDRIL/ENTITIES/PERLDRIL.ENTITY.MBIN",
+		}
+	},
+	{--	Mining reward			Tractor Beam reward			(In addition to spawning any objects, if applicable)
+		{"DE_SLIMEMINE",		"DE_SLIMEPOST1"},															--"DE_SLIME_ORG",	"DE_SLIMEPOST1"
+		{--All other "raw" objects at Infested Outposts, spawn Unusual Samples when mined/tractored
+			"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/ARMOUREDSLIME/ENTITIES/ARMOUREDSLIME.ENTITY.MBIN",
+			"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/FLESHEGG/ENTITIES/FLESHEGG.ENTITY.MBIN",
+			"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/FLESHEGGBIG/ENTITIES/FLESHEGGBIG.ENTITY.MBIN",
+			"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/FLESHEGGMED/ENTITIES/FLESHEGGMED.ENTITY.MBIN",
+			"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/FLESHEGGSMALL/ENTITIES/FLESHEGGSMALL.ENTITY.MBIN",
+			"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/SPRINGEGG/ENTITIES/SPRINGEGG.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULKINFESTED/BALLOONCOVER/ENTITIES/BALLOONCOVER.ENTITY.MBIN",
+			"MODELS/SPACE/POI/HULKINFESTED/LANDINGPADLID/ENTITIES/LANDINGPADLID.ENTITY.MBIN",
+		}
+	},
+	{--	Mining reward			Tractor Beam reward			(In addition to spawning any objects, if applicable)
+		{"DE_SLIME_ORG",		""},																		--"DE_SLIMEPOST1",	""
+		{--Unusual Samples, gives a bunch of Gelatinous Fibres (DE_SLIME_BIG) when processed at a Deep Space Outpost, spawns no object if mined/tractored
+			"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/MINIEGG/ENTITIES/MINIEGG.ENTITY.MBIN",
+			"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/TRICELL/ENTITIES/TRICELL.ENTITY.MBIN",
+		}
+	},
+	{--	Mining reward			Tractor Beam reward			(In addition to spawning any objects, if applicable)
+		{"DE_SLIME_HI",			""},																		--"DE_SLIME_ORG",	""
+		{--Pathogen Sac & Viral Heart, spawn items of the same name when processed at a Deep Space Outpost, spawns no object if mined/tractored
+			"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/STARSLIME/ENTITIES/STARSLIME.ENTITY.MBIN",
+			"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/STARSLIMEMINI/ENTITIES/STARSLIMEMINI.ENTITY.MBIN",
+		}
+	},
+}
 
 --Replacers for the Min and Max Units awarded for the repeatable mission from the Exocraft Technician NPC, in addition to the other random rewards
 ExocraftMinUnits =						100001					--1000 or 0
@@ -1703,9 +1808,13 @@ PillarGlassDropChance	=	33			--66		This is the reward for destroying each one of
 PillarGlassMin			=	1			--1
 PillarGlassMax			=	1			--1
 
---% Chance to receive upgrade modules when opening Salvaged Glass
+--PercentageChance weight to receive upgrade modules when opening Salvaged Glass
 SentGunChance			=	10			--20
 SentSuitChance			=	10			--20
+
+--Changes te amount of nanites you might receive when opening Salvaged Glass (default PercentageChance weight of 20)
+SalGlassNaniteMin		=	42			--10
+SalGlassNaniteMax		=	64			--15
 
 --% Chance to receive various items from the core of a Salvageable Scrap node (can receive all items simultaneously if lucky)
 SalvageSentMapChance	=	5			--10		Chance for Sentinel Boundary Map
@@ -2022,7 +2131,6 @@ NewAlluringSpecRewards =
             </Property>
           </Property>]]
 
-
 --Loot from Crashed Freighters in regular & Abandoned Mode, small boxes in Abandoned Stations, and Harmonic Scrap wheelbarrows at Abandoned Camps
 CrashedFreighterLootChances =
 {
@@ -2036,7 +2144,7 @@ CrashedFreighterLootChances =
 			{"HYPERFUEL2",				5},						--10		Warp Hypercore
 			{"BP_SALVAGE",				2},						--25		1-3 Salvaged Data
 			--{"",						20},					--20		Chooses 5x random TRA_XXX5 trade goods worth 50,000 each
-			{"FARMPROD6",				0},						--15		Unstable Gel
+			{"ABAND_LOCATOR",			1},						--0 (15)	Emergency Signal Scanner (Unstable Gel in PTSd)
 			{"FARMPROD5",				2},						--9			Poly Fibre
 			{"FARMPROD1",				2},						--5			Acid
 			{"FARMPROD4",				2},						--5			Heat Capacitor
@@ -2140,6 +2248,10 @@ CrashedFreighterLootChances =
 	}
 }
 
+--Sets the minimum & maximum amount of Salvaged Data found in crashed freighter cargo containers (CRASHCONT_M & ABAND_LOOTBOX_S above)
+CrashContSalDataMin = 4					--1 Salvaged Data
+CrashContSalDataMax = 8					--3 Salvaged Data
+
 --try reverting, then remove one of the units sections to just have one?
 --Multiplies the currency rewards from Crashed Freighteres and Harmonic Scrap wheelbarrows at Abandoned Camps
 CrashedFreighterCurrencyChances =
@@ -2147,7 +2259,7 @@ CrashedFreighterCurrencyChances =
 	{
 		{"CRASHCONT_M"},
 		{	--Old Currency	New Currency	Reward Mult	Old %Chance 	New %Chance (relative weight, roughly but not necessarily out of 100)
-			{"Units",		"Units",		1.3,		5,				5},			--150000-	250000,			5%			
+			{"Units",		"Units",		1.2,		5,				5},			--150000-	250000,			5%			
 		}
 	},
 	{
@@ -2165,7 +2277,7 @@ CrashedFreighterCurrencyChances =
 	}
 }
 
---Large Artifact Chests awlays give a guaranteed Common Rarity "Lost Artifact" (Tool) in addition to a random artifact	 (The Tool Artifact should usually be exchangeable at a Colossal Archive for a better rarity)
+--Large Artifact Chests always give a guaranteed Common Rarity "Lost Artifact" (Tool) in addition to a random artifact	 (The Tool Artifact should usually be exchangeable at a Colossal Archive for a better rarity)
 ExtraChestArtifact = [[<Property name="List" value="GcRewardTableItem">
             <Property name="PercentageChance" value="100.000000" />
 			<Property name="LabelID" value="" />
@@ -2187,6 +2299,10 @@ ExtraChestArtifact = [[<Property name="List" value="GcRewardTableItem">
 
 --Sets the number of Trident Keys you receive at undersea Ancient Ruins, for unlocking the 3 Sealed Sea Chests buried nearby
 TridentKeyAmount =						2						--1
+
+--Sets the min & max amount of Gold found in Sealed Sea Chests at underwater Ancient Ruins, in addition to the procedural treasure loot
+SeaChestGoldMin =						80						--0
+SeaChestGoldMax =						2						--0
 
 --Sets the amounts of Salvaged Data found in Buried Technology Modules
 BuriedTechSalvageMin =					2						--2
@@ -2332,7 +2448,7 @@ function StandingReward (MissionFaction, Min, Max, Chance)
 					</Property>]]
 end
 
-function SubstanceReward (Substance, Min, Max, Chance)
+function AbsoluteSubstanceReward (Substance, Min, Max, Chance)
     return
 [[<Property name="List" value="GcRewardTableItem">
 			<Property name="PercentageChance" value="]]..Chance..[[" />
@@ -2355,7 +2471,7 @@ function SubstanceReward (Substance, Min, Max, Chance)
 		</Property>]]
 end
 
-function MinedSubstanceReward (Substance, Min, Max, Chance)
+function StandardSubstancesReward (Substance, Min, Max, Chance)
     return
 [[<Property name="List" value="GcRewardTableItem">
 			<Property name="PercentageChance" value="]]..Chance..[[" />
@@ -2440,7 +2556,7 @@ function ProceduralProductReward (Category, OverrideRarity, Rarity, Chance)
 					</Property>]]
 end
 
-function AddWholeNewItemReward (RewardId, RewardChoice, Chance, ItemType, ItemID, AmountMin, AmountMax)
+function AddWholeNewProductReward (RewardId, RewardChoice, Chance, ItemType, ItemID, AmountMin, AmountMax)
 	return
 [[<Property name="GenericTable" value="GcGenericRewardTableEntry">
       <Property name="Id" value="]]..RewardId..[[" />
@@ -2456,7 +2572,7 @@ function AddWholeNewItemReward (RewardId, RewardChoice, Chance, ItemType, ItemID
             <Property name="Reward" value="GcRewardSpecific]]..ItemType..[[">
               <Property name="GcRewardSpecific]]..ItemType..[[">
 				  <Property name="Default" value="GcDefaultMission]]..ItemType..[[Enum">
-					<Property name="DefaultProductType" value="None" />
+					<Property name="Default]]..ItemType..[[Type" value="None" />
 				  </Property>
 				  <Property name="ID" value="]]..ItemID..[[" />
 				  <Property name="AmountMin" value="]]..AmountMin..[[" />
@@ -2473,6 +2589,74 @@ function AddWholeNewItemReward (RewardId, RewardChoice, Chance, ItemType, ItemID
         </Property>
       </Property>
     </Property>]]
+end
+
+function AddWholeNewSubstanceReward (RewardId, RewardChoice, Chance, ItemType, ItemID, AmountMin, AmountMax)
+	return
+[[<Property name="GenericTable" value="GcGenericRewardTableEntry">
+      <Property name="Id" value="]]..RewardId..[[" />
+      <Property name="List" value="GcRewardTableItemList">
+        <Property name="RewardChoice" value="]]..RewardChoice..[[" />
+        <Property name="OverrideZeroSeed" value="false" />
+        <Property name="UseInventoryChoiceOverride" value="false" />
+        <Property name="IncrementStat" value="" />
+        <Property name="List">
+          <Property name="List" value="GcRewardTableItem">
+            <Property name="PercentageChance" value="]]..Chance..[[" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecific]]..ItemType..[[">
+              <Property name="GcRewardSpecific]]..ItemType..[[">
+				  <Property name="Default" value="GcDefaultMission]]..ItemType..[[Enum">
+					<Property name="Default]]..ItemType..[[Type" value="None" />
+				  </Property>
+				  <Property name="ID" value="]]..ItemID..[[" />
+				  <Property name="AmountMin" value="]]..AmountMin..[[" />
+				  <Property name="AmountMax" value="]]..AmountMax..[[" />
+				  <Property name="DisableMultiplier" value="false" />
+				  <Property name="RewardAsBlobs" value="false" />
+				  <Property name="UseFuelMultiplier" value="false" />
+				  <Property name="Silent" value="false" />
+				  <Property name="UseMissionBoardDifficultyScale" value="false" />
+			  </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>]]
+end
+
+function AddNewDestructionSubstanceReward (RewardId, RewardChoice, Chance, ItemType, ItemID, AmountMin, AmountMax)
+	return
+[[<Property name="DestructionTable" value="GcGenericRewardTableEntry">
+			<Property name="Id" value="]]..RewardId..[[" />
+			<Property name="List" value="GcRewardTableItemList">
+				<Property name="RewardChoice" value="]]..RewardChoice..[[" />
+				<Property name="OverrideZeroSeed" value="false" />
+				<Property name="UseInventoryChoiceOverride" value="false" />
+				<Property name="IncrementStat" value="" />
+				<Property name="List">
+					<Property name="List" value="GcRewardTableItem" _index="0">
+						<Property name="PercentageChance" value="]]..Chance..[[" />
+						<Property name="LabelID" value="" />
+						<Property name="Reward" value="GcRewardSpecific]]..ItemType..[[">
+							<Property name="GcRewardSpecific]]..ItemType..[[">
+								<Property name="Default" value="GcDefaultMission]]..ItemType..[[Enum">
+									<Property name="Default]]..ItemType..[[Type" value="None" />
+								</Property>
+								<Property name="ID" value="]]..ItemID..[[" />
+								<Property name="AmountMin" value="]]..AmountMin..[[" />
+								<Property name="AmountMax" value="]]..AmountMax..[[" />
+								<Property name="DisableMultiplier" value="false" />
+								<Property name="RewardAsBlobs" value="false" />
+								<Property name="UseFuelMultiplier" value="false" />
+								<Property name="Silent" value="false" />
+								<Property name="UseMissionBoardDifficultyScale" value="false" />
+							</Property>
+						</Property>
+					</Property>
+				</Property>
+			</Property>
+		</Property>]]
 end
 
 function AddWholeNewCurrencyReward (RewardId, RewardChoice, Chance, Currency, AmountMin, AmountMax)
@@ -2900,11 +3084,17 @@ PIRATLTEASYRewards =
 							<Property name="ProductList" value="B_CON_7" _index="64" />
 							<Property name="ProductList" value="B_CON_8" _index="65" />
 							<Property name="ProductList" value="B_CON_9" _index="66" />
-							<Property name="ProductList" value="B_CON2_0" _index="67" />
-							<Property name="ProductList" value="B_CON2_1" _index="68" />
-							<Property name="ProductList" value="B_CON2_2" _index="69" />
-							<Property name="ProductList" value="B_CON2_3" _index="70" />
-							<Property name="ProductList" value="B_CON_L_2" _index="71" />
+							<Property name="ProductList" value="B_CON_10" _index="67" />
+							<Property name="ProductList" value="B_CON_11" _index="68" />
+							<Property name="ProductList" value="B_CON_12" _index="69" />
+							<Property name="ProductList" value="B_CON_13" _index="70" />
+							<Property name="ProductList" value="B_CON_14" _index="71" />
+							<Property name="ProductList" value="B_CON_15" _index="72" />
+							<Property name="ProductList" value="B_CON2_0" _index="73" />
+							<Property name="ProductList" value="B_CON2_1" _index="74" />
+							<Property name="ProductList" value="B_CON2_2" _index="75" />
+							<Property name="ProductList" value="B_CON2_3" _index="76" />
+							<Property name="ProductList" value="B_CON_L_2" _index="77" />
 						</Property>
 						<Property name="AmountMin" value="1" />
 						<Property name="AmountMax" value="1" />
@@ -2954,7 +3144,6 @@ PIRATLTEASYRewards =
 							<Property name="ProductList" value="B_SHL_B" _index="32" />
 							<Property name="ProductList" value="B_SHL_C" _index="33" />
 							<Property name="ProductList" value="B_SHL_D" _index="34" />
-							<Property name="ProductList" value="B_MAG_1X1" _index="35" />
 						</Property>
 						<Property name="AmountMin" value="1" />
 						<Property name="AmountMax" value="1" />
@@ -3163,11 +3352,17 @@ PIRATLTHARDRewards =
 							<Property name="ProductList" value="B_CON_7" _index="64" />
 							<Property name="ProductList" value="B_CON_8" _index="65" />
 							<Property name="ProductList" value="B_CON_9" _index="66" />
-							<Property name="ProductList" value="B_CON2_0" _index="67" />
-							<Property name="ProductList" value="B_CON2_1" _index="68" />
-							<Property name="ProductList" value="B_CON2_2" _index="69" />
-							<Property name="ProductList" value="B_CON2_3" _index="70" />
-							<Property name="ProductList" value="B_CON_L_2" _index="71" />
+							<Property name="ProductList" value="B_CON_10" _index="67" />
+							<Property name="ProductList" value="B_CON_11" _index="68" />
+							<Property name="ProductList" value="B_CON_12" _index="69" />
+							<Property name="ProductList" value="B_CON_13" _index="70" />
+							<Property name="ProductList" value="B_CON_14" _index="71" />
+							<Property name="ProductList" value="B_CON_15" _index="72" />
+							<Property name="ProductList" value="B_CON2_0" _index="73" />
+							<Property name="ProductList" value="B_CON2_1" _index="74" />
+							<Property name="ProductList" value="B_CON2_2" _index="75" />
+							<Property name="ProductList" value="B_CON2_3" _index="76" />
+							<Property name="ProductList" value="B_CON_L_2" _index="77" />
 						</Property>
 						<Property name="AmountMin" value="1" />
 						<Property name="AmountMax" value="1" />
@@ -3217,7 +3412,6 @@ PIRATLTHARDRewards =
 							<Property name="ProductList" value="B_SHL_B" _index="32" />
 							<Property name="ProductList" value="B_SHL_C" _index="33" />
 							<Property name="ProductList" value="B_SHL_D" _index="34" />
-							<Property name="ProductList" value="B_MAG_1X1" _index="35" />
 						</Property>
 						<Property name="AmountMin" value="1" />
 						<Property name="AmountMax" value="1" />
@@ -3987,6 +4181,9 @@ function AddTechForShip (TechId, Amount, MaxAmount)
                   </Property>]]
 end
 
+AddCorvTractorBeamProductIds =
+[[<Property name="ProductIds" value="B_MAG_1X1" />]]
+
 ExpShipCoreTechs =
 {"SHIPSHIELD", "HYPERDRIVE", "LAUNCHER", "SHIPJUMP1", }
 
@@ -4061,6 +4258,7 @@ MemFragBannedTechs =
 MinableObjects =
 {
 	"DE_PLANT_SMALL", "DE_PLANT_MED", "DE_PLANT_LARGE", "DE_WATERPLANT_S", "DE_WATERPLANT_M", "DE_WATERPLANT_L", "DE_ROCK_SMALL", "DE_ROCK_MED", "DE_ROCK_LARGE", "DE_GEM_R_SMALL", "DE_GEM_R_MED", "DE_GEM_R_LARGE", "DE_GEM_B_SMALL", "DE_GEM_B_MED", "DE_GEM_B_LARGE", "DE_GEM_Y_SMALL", "DE_GEM_Y_MED", "DE_GEM_Y_LARGE", "DE_GEM_S_SMALL", "DE_GEM_S_LARGE", "DE_CAVE_MED", "DE_CAVE_LARGE", "DE_WATER_MED", "DE_WATER_LARGE", "DE_RARE_HOT", "DE_RARE_RADIO", "DE_RARE_COLD", "DE_RARE_GOLD", "DE_RARE_ROLLER", "DE_SCRAP_PART", 
+	"DE_HULK1", "DE_INDSAL", "DE_ASTCRYST_BRK", "DE_ASTCRYST", "DE_NESTMINE", "DE_SLIMEMINE", "DE_SLIME_ORG", "DE_SLIME_HI",
 	"DE_TENTACLE", "DE_SPOREVENT", "DE_FLYTRAP", "DE_GAS_PLANT", 
 }
 
@@ -4246,8 +4444,24 @@ AddNewAbandLootbox =
 			</Property>
 		</Property>]]
 
+function NewSalvageEvent (NewEventId, NewEventChance, NewEventAmount)
+    return
+    [[<Property name="Table" value="GcSalvageEventData" _id="]]..NewEventId..[[">
+			<Property name="Id" value="]]..NewEventId..[[" />
+			<Property name="Model" value="TkModelResource">
+				<Property name="Filename" value="MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/SLIMEPROC.SCENE.MBIN" />
+				<Property name="Seed" value="0" />
+			</Property>
+			<Property name="Chance" value="]]..NewEventChance..[[" />
+			<Property name="Effect" value="SLIMEDEBRIS" />
+			<Property name="MinObjsToSpawn" value="]]..NewEventAmount..[[" />
+			<Property name="MaxObjsToSpawn" value="]]..NewEventAmount..[[" />
+			<Property name="SpawnSpread" value="1.000000" />
+		</Property>]]
+end
+
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]		= ModName..GameVersion,
+["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
@@ -4335,6 +4549,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"AmountMin",	WaypointNanites},
 					{"AmountMax",	WaypointNanites}
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_WAYPOINT",		"List", "GcRewardTableItem"},
+				["ADD"] = ProductReward ("NAV_DATA", WaypointBonusNavDataAmountMin, WaypointBonusNavDataAmountMax, WaypointBonusNavDataChance),
+				["ADD_OPTION"] = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID","FACT_TOKEN"},
@@ -4597,28 +4816,83 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
+				["ADD"] = AddWholeNewSubstanceReward ("DE_HULKTRAC", "GiveAll", "100", "Substance", "HULK1", math.floor(CommonTractorContMetalMult*23), math.floor(CommonTractorContMetalMult*45)),
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_HULK1",		"ID", "HULK1"},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	CommonMineContMetalMult},
+					{"AmountMax",	CommonMineContMetalMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"DestructionTable", "GcGenericRewardTableEntry"},
+				["ADD"] = AddNewDestructionSubstanceReward ("DE_INDSAL", "GiveAll", "100", "Substance", "HULK1", math.floor(IndSalMineContMetalMult*23), math.floor(IndSalMineContMetalMult*45)),
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_SLIMEPOST1",		"List", "GcRewardTableItem"},
-				["ADD"] = CurrencyReward ("Nanites", math.floor(DSSlimeTractorNaniteMult*1), math.floor(DSSlimeTractorNaniteMult*4), 100),
+				["ADD"] = CurrencyReward ("Nanites", math.floor(RawTractorNaniteMult*1), math.floor(RawTractorNaniteMult*4), 100),
 				["ADD_OPTION"] = "ADDafterSECTION",
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","DE_SLIME_ORG",		"List", "GcRewardTableItem"},
-				["ADD"] = CurrencyReward ("Nanites", math.floor(DSSlimeMinedNaniteMult*6), math.floor(DSSlimeMinedNaniteMult*12), 100),
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SLIMEPOST1",		"ID", "SLIMEPOST1"},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	RawTractorGelFibreMult},
+					{"AmountMax",	RawTractorGelFibreMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"DestructionTable", "GcGenericRewardTableEntry"},
+				["ADD"] = AddNewDestructionSubstanceReward ("DE_SLIMEMINE", "GiveAll", "100", "Substance", "SLIMEPOST1", math.floor(RawMineGelFibreMult*5), math.floor(RawMineGelFibreMult*15)),
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SLIMEMINE",		"List", "GcRewardTableItem"},
+				["ADD"] = CurrencyReward ("Nanites", math.floor(RawMineNaniteMult*1), math.floor(RawMineNaniteMult*4), 100),
 				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
+				["ADD"] = AddWholeNewSubstanceReward ("DE_NESTTRAC", "GiveAll", "100", "Substance", "SLIMEPOST1", math.floor(NestTractorGelFibreMult*5), math.floor(NestTractorGelFibreMult*15)),
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_NESTTRAC",		"List", "GcRewardTableItem"},
+				["ADD"] = CurrencyReward ("Nanites", math.floor(NestTractorNaniteMult*1), math.floor(NestTractorNaniteMult*4), 100),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"DestructionTable", "GcGenericRewardTableEntry"},
+				["ADD"] = AddNewDestructionSubstanceReward ("DE_NESTMINE", "GiveAll", "100", "Substance", "SLIMEPOST1", math.floor(NestMineGelFibreMult*5), math.floor(NestMineGelFibreMult*15)),
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_NESTMINE",		"List", "GcRewardTableItem"},
+				["ADD"] = CurrencyReward ("Nanites", math.floor(NestMineNaniteMult*1), math.floor(NestMineNaniteMult*4), 100),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SLIME_BIG",		"ID", "SLIMEPOST1"},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	USDeliverGelFibreMult},
+					{"AmountMax",	USDeliverGelFibreMult}
+				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_SLIME_BIG",		"List", "GcRewardTableItem"},
-				["ADD"] = CurrencyReward ("Nanites", math.floor(DSUnusualSampleNaniteMult*18), math.floor(DSUnusualSampleNaniteMult*36), 100),
-				["ADD_OPTION"] = "ADDafterSECTION",
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","DE_ASTCRYST_BRK",		"List", "GcRewardTableItem"},
-				["ADD"] = MinedSubstanceReward ("ROCKETSUB", math.floor(DSStellarGeodeMineTritiumMult*12), math.floor(DSStellarGeodeMineTritiumMult*24), "100.000000"),
-				["ADD_OPTION"] = "ADDafterSECTION",
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","DE_ASTCRYST",		"List", "GcRewardTableItem"},
-				["ADD"] = MinedSubstanceReward ("ROCKETSUB", math.floor(DSAsteroidBreakTritiumMult*5), math.floor(DSAsteroidBreakTritiumMult*10), DSAsteroidBreakTritiumChance),
+				["ADD"] = CurrencyReward ("Nanites", math.floor(USDeliverNaniteMult*30), math.floor(USDeliverNaniteMult*50), 100),
 				["ADD_OPTION"] = "ADDafterSECTION",
 			},
 			{
@@ -4627,9 +4901,59 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	DSSlimeMinedGelFibreMult},
-					{"AmountMax",	DSSlimeMinedGelFibreMult}
+					{"AmountMin",	USMineGelFibreMult},
+					{"AmountMax",	USMineGelFibreMult}
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SLIME_ORG",		"List", "GcRewardTableItem"},
+				["ADD"] = CurrencyReward ("Nanites", math.floor(USMineNaniteMult*8), math.floor(USMineNaniteMult*16), 100),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"DestructionTable", "GcGenericRewardTableEntry"},
+				["ADD"] = AddNewDestructionSubstanceReward ("DE_SLIME_HI", "GiveAll", "100", "Substance", "SLIMEPOST1", math.floor(RareSlimeMineGelFibreMult*15), math.floor(RareSlimeMineGelFibreMult*24)),
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SLIME_HI",		"List", "GcRewardTableItem"},
+				["ADD"] = CurrencyReward ("Nanites", math.floor(RareSlimeMineNaniteMult*8), math.floor(RareSlimeMineNaniteMult*16), 100),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_ASTCRYST_BRK",		"List", "GcRewardTableItem"},
+				["ADD"] = StandardSubstancesReward ("ROCKETSUB", math.floor(StellarGeodeMineTritiumMult*17), math.floor(StellarGeodeMineTritiumMult*34), "100.000000"),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_ASTCRYST_BRK",		"ID", "ASTBELT1"},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	StellarGeodeMineCometDustMult},
+					{"AmountMax",	StellarGeodeMineCometDustMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_ASTCRYST",		"List", "GcRewardTableItem"},
+				["ADD"] = StandardSubstancesReward ("ROCKETSUB", math.floor(AsteroidBreakTritiumMult*7), math.floor(AsteroidBreakTritiumMult*14), AsteroidBreakTritiumChance),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_ASTCRYST",		"ID", "ASTBELT1"},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	AsteroidBreakCometDustMult},
+					{"AmountMax",	AsteroidBreakCometDustMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_ASTCRYST_P",		"List", "GcRewardTableItem"},
+				["ADD"] = StandardSubstancesReward ("ROCKETSUB", math.floor(StellarGeodeDeliverTritiumMult*17), math.floor(StellarGeodeDeliverTritiumMult*34), "100.000000"),
+				["ADD_OPTION"] = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","TRADERLOOT",	"Group","SHIPJUMP_NAME_L"},
@@ -4665,7 +4989,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_STONE_EYE",		"List", "GcRewardTableItem"},
-				["ADD"] = MinedSubstanceReward (NewVigilantEyeItem, NewVigilantEyeItemAmount, NewVigilantEyeItemAmount, "100.000000"),
+				["ADD"] = StandardSubstancesReward (NewVigilantEyeItem, NewVigilantEyeItemAmount, NewVigilantEyeItemAmount, "100.000000"),
 				["ADD_OPTION"] = "ADDafterSECTION",
 			},
 			{
@@ -4675,22 +4999,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
-				["ADD"] = AddWholeNewItemReward ("GOLEM_MECH", "GiveAll", GolemMechItemChance, "Product", GolemMechItem, GolemMechItemAmountMin, GolemMechItemAmountMax),
+				["ADD"] = AddWholeNewProductReward ("GOLEM_MECH", "GiveAll", GolemMechItemChance, "Product", GolemMechItem, GolemMechItemAmountMin, GolemMechItemAmountMax),
 				["ADD_OPTION"]  = "ADDafterSECTION", 
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
-				["ADD"] = AddWholeNewItemReward ("GOLEM_FLOAT", "GiveAll", GolemFloatItemChance, "Product", GolemFloatItem, GolemFloatItemAmountMin, GolemFloatItemAmountMax),
+				["ADD"] = AddWholeNewProductReward ("GOLEM_FLOAT", "GiveAll", GolemFloatItemChance, "Product", GolemFloatItem, GolemFloatItemAmountMin, GolemFloatItemAmountMax),
 				["ADD_OPTION"]  = "ADDafterSECTION", 
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","GOLEM_MECH",		"List", "GcRewardTableItem"},
-				["ADD"] = SubstanceReward ("RUINSUB", 32, 84, "100.000000"),
+				["ADD"] = StandardSubstancesReward ("RUINSUB", 32, 84, "100.000000"),
 				["ADD_OPTION"] = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","GOLEM_FLOAT",		"List", "GcRewardTableItem"},
-				["ADD"] = SubstanceReward ("RUINSUB", 16, 32, "100.000000"),
+				["ADD"] = StandardSubstancesReward ("RUINSUB", 16, 32, "100.000000"),
 				["ADD_OPTION"] = "ADDafterSECTION",
 			},
 			{
@@ -4893,6 +5217,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	SentSuitChance}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SENT_LOOT",	"Reward","GcRewardMoney"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	SalGlassNaniteMin},
+					{"AmountMax",	SalGlassNaniteMax}
 				}
 			},
 			{
@@ -5311,12 +5643,35 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["ADD_OPTION"]  = "ADDafterSECTION",
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "CRASHCONT_M",		"ID", "FARMPROD6"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ID",	"ABAND_LOCATOR"}	--"FARMPROD6"
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "CRASHCONT_M",		"ID", "BP_SALVAGE"},
+					{"Id", "ABAND_LOOTBOX_S",	"ID", "BP_SALVAGE"},
+				},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	CrashContSalDataMin},
+					{"AmountMax",	CrashContSalDataMax}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_WATERRUIN", "ID", "TRIDENT_KEY"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	TridentKeyAmount},
 					{"AmountMax",	TridentKeyAmount}
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_SEACHEST",		"List", "GcRewardTableItem"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = StandardSubstancesReward ("ASTEROID2", SeaChestGoldMin, SeaChestGoldMax, 100)
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","BP_SALVAGE", "ID", "BP_SALVAGE"},
@@ -5980,12 +6335,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S21_S1M3",	"List", "GcRewardTableItem"},
-				["ADD"] = SubstanceReward ("RED2", "200", "200", "100"),
+				["ADD"] = AbsoluteSubstanceReward ("RED2", "200", "200", "100"),
 				["ADD_OPTION"]  = "ADDbeforeSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S21_S1M3",	"List", "GcRewardTableItem"},
-				["ADD"] = SubstanceReward ("ASTEROID1", "100", "100", "100"),
+				["ADD"] = AbsoluteSubstanceReward ("ASTEROID1", "100", "100", "100"),
 				["ADD_OPTION"]  = "ADDbeforeSECTION",
 			},
 			{
@@ -6018,19 +6373,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M2"},
 				["PRECEDING_KEY_WORDS"] = {"List", "List"},
-				["ADD"] = SubstanceReward ("RED2", "75", "75", "100"),
+				["ADD"] = AbsoluteSubstanceReward ("RED2", "75", "75", "100"),
 				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M2"},
 				["PRECEDING_KEY_WORDS"] = {"List", "List"},
-				["ADD"] = SubstanceReward ("GREEN2", "50", "50", "100"),
+				["ADD"] = AbsoluteSubstanceReward ("GREEN2", "50", "50", "100"),
 				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S1M7"},
 				["PRECEDING_KEY_WORDS"] = {"List", "List"},
-				["ADD"] = SubstanceReward ("GREEN2", "75", "75", "100"),
+				["ADD"] = AbsoluteSubstanceReward ("GREEN2", "75", "75", "100"),
 				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
@@ -6066,7 +6421,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S2M7"},
 				["PRECEDING_KEY_WORDS"] = {"List", "List"},
-				["ADD"] = SubstanceReward ("GREEN2", "75", "75", "100"),
+				["ADD"] = AbsoluteSubstanceReward ("GREEN2", "75", "75", "100"),
+				["ADD_OPTION"]  = "ADDendSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S3M6"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Product", "CHART_HIVE", "1"),
+				["ADD_OPTION"]  = "ADDendSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S3M7"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Product", "CHART_HIVE", "1"),
 				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
@@ -6096,7 +6463,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S4M9"},
 				["PRECEDING_KEY_WORDS"] = {"List", "List"},
-				["ADD"] = SubstanceReward ("BLUE2", "80", "80", "100"),
+				["ADD"] = AbsoluteSubstanceReward ("BLUE2", "80", "80", "100"),
 				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
@@ -6125,9 +6492,32 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M4"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Product", "ATLAS_SEED_2", "1"),
+				["ADD_OPTION"]  = "ADDendSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M4"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Product", "SALVAGE_TECH7", "5"),
+				["ADD_OPTION"]  = "ADDendSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M4"},
+				["PRECEDING_KEY_WORDS"] = {"Items"},
+				["ADD"] = AddItemToMultiRewardList ("Product", "GRAVBALL", "8"),
+				["ADD_OPTION"]  = "ADDendSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M5",		"ProductIds", "B_WALL_TECH1"},
+				["ADD"] = AddCorvTractorBeamProductIds,
+				["ADD_OPTION"]  = "ADDendSECTION",
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_S5M6"},
 				["PRECEDING_KEY_WORDS"] = {"List", "List"},
-				["ADD"] = SubstanceReward ("RED2", "50", "50", "100"),
+				["ADD"] = AbsoluteSubstanceReward ("RED2", "50", "50", "100"),
 				["ADD_OPTION"]  = "ADDendSECTION",
 			},
 			{
@@ -6648,6 +7038,72 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 		}
 	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\SALVAGEEVENTTABLE.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"Table",	"GcSalvageEventData"},
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = NewSalvageEvent ("NEST", NestUSChance, NestUSAmount)
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Table",	"GcSalvageEventData"},
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = NewSalvageEvent ("PERLDRIL", PerlUSChance, PerlUSAmount)
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id",	"ICETEROID"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"MaxObjsToSpawn", StellarCondIceAmountMax},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id",	"ASTEROID"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"MaxObjsToSpawn", StellarCondIceAmountMax},
+				}
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/NESTCOVER/ENTITIES/NESTCOVER.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"SalvageEvent", "NEST"}
+				}
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/SHELLCOVER/ENTITIES/SHELLCOVER.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"SalvageEvent", "NEST"}
+				}
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/COMMON/PHYSICSPROPS/SLIME/PERLDRIL/ENTITIES/PERLDRIL.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"SalvageEvent", "PERLDRIL"}
+				}
+			},
+		}
+	},
 	
 }}}}
 
@@ -7080,6 +7536,7 @@ for i = 1, #Exp23Phase4ShipRewardIds do
 				ChangesToRewardTable[#ChangesToRewardTable+1] =
 				{
 					["SPECIAL_KEY_WORDS"] = {"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer",	"Slots", "GcInventoryElement"},
+					["SECTION_ACTIVE"] = {"LAST",},
 					["ADD_OPTION"]  = "ADDbeforeSECTION",  
 					["ADD"] = AddTechForShip (TechId, Amount, MaxAmount),
 				}
@@ -7112,6 +7569,13 @@ for i = 1, #Exp23Phase4ShipRewardIds do
 		end
 	end
 end
+
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id", "RS_S23_PHASE4",	"ShipInventory", "GcInventoryContainer",	"Id", "UP_PULSE4"},
+					["SECTION_ACTIVE"] = {"LAST",},
+					["REMOVE"] = "SECTION",
+				}
 
 for i = 1, #ExpToolRewardIds do
 	local ToolRewardId = ExpToolRewardIds[i][1]
@@ -7729,7 +8193,7 @@ for i = 1, #NewBossFreighterPartsLoot do
 		ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"GenericTable", "GcGenericRewardTableEntry"},
-				["ADD"] = AddWholeNewItemReward (RewardId, "GiveAll", Chance, ItemType, ItemId, AmountMin, AmountMax),
+				["ADD"] = AddWholeNewProductReward (RewardId, "GiveAll", Chance, ItemType, ItemId, AmountMin, AmountMax),
 				["ADD_OPTION"]  = "ADDafterSECTION", 
 			}
 		elseif ItemType == "Units" or ItemType == "Nanites" then
@@ -8058,6 +8522,15 @@ for i = 1, #RemoveTechFromPool do
 		end
 end
 
+if NoLootableCorvTractorBeam then
+		ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ProductList", "B_MAG_1X1"},
+				["REPLACE_TYPE"] = "ALL",
+				["REMOVE"] = "LINE",
+			}
+end
+
 local ChangesToRecurringMissions = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][9]["MXML_CHANGE_TABLE"]
 
 for i = 1, #AresTradeChanges do
@@ -8085,4 +8558,36 @@ for i = 1, #AresTradeChanges do
 					{"Amount", ItemAmount}
 				}
 			}
+end
+
+local ChangesToMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+
+for i = 1, #DeepSpaceSalvageItemChanges do
+	local MineReward = DeepSpaceSalvageItemChanges[i][1][1]
+	local TractorReward = DeepSpaceSalvageItemChanges[i][1][2]
+	local FilePaths = DeepSpaceSalvageItemChanges[i][2]
+	
+		for j = 1, #FilePaths do
+		local FilePath = FilePaths[j]
+			ChangesToMBINChangeTable[#ChangesToMBINChangeTable+1] =
+			{
+				["MBIN_FILE_SOURCE"] 	= {FilePath},
+				["MXML_CHANGE_TABLE"] 	= 
+				{
+					{
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"GivesReward", 	MineReward},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"TractorBeam", "GcRecyclableReward"},
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"RewardID", 	TractorReward},
+						}
+					}
+				}
+			}
+		end
 end

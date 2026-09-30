@@ -8,13 +8,15 @@ UNITS_MULTI				= 5		-- Default value is 1 | Multiplys the amount of units you ge
 LOW_UNITS_MULTI			= 10	-- Default value is 1 | Terminals and other unit sources that have really low unit rewards (90 - 2000 units)
 								-- are multiplied by this number on top of the regular unit multiplier (so by default = 5 * 10 = 50x multiplier)
 								
-NANITES_MULTI			= 5		-- Default value is 1 | Multiplys the amount of nanites you get
+NANITES_MULTI			= 5 	-- Default value is 1 | Multiplys the amount of nanites you get
+RECYCLE_NANITES_MULTI   = 5     -- Default value is 1 | Multiplys the amount of nanites you get from waste recycling
 
 NADA_MILESTONE_REWARD	= 150	-- Default value is 50 | Sets the reward value (in nanites) for each milestone tier at Nada and other anomalies (in the Space Anomaly)
 
-QS_MULTI				= 5		-- Default value is 1 | Multiplys the amount of quicksilver you get
+QS_MULTI				= 10	-- Default value is 1 | Multiplys the amount of quicksilver you get
 
 RESOURCES_MULTI			= 2		-- Default value is 1 | Multiplys the amount of resources gathered, as well as containers, depots, guild rewards and ships that have resources
+TERRAIN_RESOURCE_MULTI  = 5     -- Default value is 1 | Multiplys the amount of resources you get when mining with the terrain manipulator
 
 WORDS_TO_LEARN			= 3		-- Default value is 1 | Sets the amount of words you learn from non npc sources
 ATLAS_WORDS_TO_LEARN	= 5		-- Default value is 1 | Sets the amount of words you learn from the Atlas Interface
@@ -33,7 +35,7 @@ BOUNTY_UNITS_MULTI		= 5		-- Default value is 1 | Multiplys the amount of units y
 BOUNTY_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Bounty Board Missions (Pirate or outlaw run Space Stations)
 
 -- When learning words, you can choose to have a PERCENTAGE(%) chance at learning an Atlas word along with them (default value is 20%)
--- If you wish to learn Atlas words change the value to a number ranging from 1-100 in the following line (line 41): <Property name="PercentageChance" value="20.000000" />
+-- If you wish to learn Atlas words change the value to a number ranging from 1-100 in the following line (line 43): <Property name="PercentageChance" value="20.000000" />
 -- Edit the value in the double bracket -> [[ ]] <- section below!! ----> <Property name="PercentageChance" value="20.000000" /> <---- edit this "20.000000", the " " must stay!!
 
 ATLAS_WORD = [[
@@ -111,7 +113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 	= "BetterRewards",
 ["MOD_BATCHNAME"]	= "BetterRewardsCombined",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "7.0",
+["NMS_VERSION"]		= "7.05",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to most reward values",
 ["MODIFICATIONS"] 	=
 	{
@@ -169,6 +171,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 
+                        {
+                            ["SPECIAL_KEY_WORDS"]	= {"RewardMessage", "IGNORE"},
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	RECYCLE_NANITES_MULTI}
+							}
+                        },
 
 -----------------------------------------------------------------------------------------------------
 --------------------------------------- CURRENCY: QUICKSILVER ---------------------------------------
@@ -1032,7 +1043,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 								["ADD"] 			= ATLAS_WORD_LEARN
 						}
 					}
-				}
+				},
+                
+                {
+                    ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+                    ["MXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"ResourceMinAmount",	    TERRAIN_RESOURCE_MULTI},
+								{"ResourceMaxAmount",	    TERRAIN_RESOURCE_MULTI},
+                                {"ResourceCommonMinAmount", TERRAIN_RESOURCE_MULTI},
+                                {"ResourceCommonMaxAmount", TERRAIN_RESOURCE_MULTI}
+							} 
+                        } 
+                    }
+
+                }
 			}
 		}
 	}

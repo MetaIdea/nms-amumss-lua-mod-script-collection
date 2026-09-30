@@ -242,13 +242,6 @@ local CAT_BUILD_PNEXUS = [[
 <Property name="Items" value="BUILD_PNEXUS" />
 ]]
 
-local NODE_BUILD_PNEXUS = [[
-<Property name="Children" value="GcUnlockableItemTreeNode">
-	<Property name="Unlockable" value="BUILD_PNEXUS" />
-	<Property name="Children" />
-</Property>
-]]
-
 local PART_BUILD_PNEXUS = [[
 		<Property name="Parts" value="GcBaseBuildingPart" _id="_BUILD_PNEXUS">
 			<Property name="ID" value="_BUILD_PNEXUS" />
@@ -580,13 +573,6 @@ local PURCH_BUILD_PMISSION = [[
 
 local CAT_BUILD_PMISSION = [[
 <Property name="Items" value="BUILD_PMISSION" />
-]]
-
-local NODE_BUILD_PMISSION = [[
-<Property name="Children" value="GcUnlockableItemTreeNode">
-	<Property name="Unlockable" value="BUILD_PMISSION" />
-	<Property name="Children" />
-</Property>
 ]]
 
 local PART_BUILD_PMISSION = [[
@@ -922,13 +908,6 @@ local CAT_BUILD_PFISHING = [[
 <Property name="Items" value="BUILD_PFISHING" />
 ]]
 
-local NODE_BUILD_PFISHING = [[
-<Property name="Children" value="GcUnlockableItemTreeNode">
-	<Property name="Unlockable" value="BUILD_PFISHING" />
-	<Property name="Children" />
-</Property>
-]]
-
 local PART_BUILD_PFISHING = [[
 		<Property name="Parts" value="GcBaseBuildingPart" _id="_BUILD_PFISHING">
 			<Property name="ID" value="_BUILD_PFISHING" />
@@ -1260,13 +1239,6 @@ local PURCH_BUILD_CASINO = [[
 
 local CAT_BUILD_CASINO = [[
 <Property name="Items" value="BUILD_CASINO" />
-]]
-
-local NODE_BUILD_CASINO = [[
-<Property name="Children" value="GcUnlockableItemTreeNode">
-	<Property name="Unlockable" value="BUILD_CASINO" />
-	<Property name="Children" />
-</Property>
 ]]
 
 local PART_BUILD_CASINO = [[
@@ -1602,13 +1574,6 @@ local CAT_BUILD_PSCAN = [[
 <Property name="Items" value="BUILD_PSCAN" />
 ]]
 
-local NODE_BUILD_PSCAN = [[
-<Property name="Children" value="GcUnlockableItemTreeNode">
-	<Property name="Unlockable" value="BUILD_PSCAN" />
-	<Property name="Children" />
-</Property>
-]]
-
 local PART_BUILD_PSCAN = [[
 		<Property name="Parts" value="GcBaseBuildingPart" _id="_BUILD_PSCAN">
 			<Property name="ID" value="_BUILD_PSCAN" />
@@ -1891,7 +1856,7 @@ local PROD_BUILD_REFINERY = [[
 				<Property name="BuyBaseMarkup" value="0.000000" />
 				<Property name="BuyMarkupMod" value="0.000000" />
 			</Property>
-			<Property name="RecipeCost" value="10" />
+			<Property name="RecipeCost" value="1" />
 			<Property name="SpecificChargeOnly" value="false" />
 			<Property name="NormalisedValueOnWorld" value="0.000000" />
 			<Property name="NormalisedValueOffWorld" value="0.000000" />
@@ -1940,13 +1905,6 @@ local PURCH_BUILD_REFINERY = [[
 
 local CAT_BUILD_REFINERY = [[
 <Property name="Items" value="BUILD_REFINERY" />
-]]
-
-local NODE_BUILD_REFINERY = [[
-<Property name="Children" value="GcUnlockableItemTreeNode">
-	<Property name="Unlockable" value="BUILD_REFINERY" />
-	<Property name="Children" />
-</Property>
 ]]
 
 local PART_BUILD_REFINERY = [[
@@ -2073,6 +2031,39 @@ local GRP_HCS_TOOLS = [[
 				</Property>
 			</Property>
 			</Property>
+]]
+
+local PAGE_HCS_EXPANSION_TOOLS_TREE = [[
+<Property name="Trees" value="GcUnlockableItemTree">
+	<Property name="Title" value="HCS_EXPANSION_TOOLS_TREE" />
+	<Property name="CostTypeID" value="SALVAGE" />
+	<Property name="UseNarrowGaps" value="false" />
+	<Property name="Root" value="GcUnlockableItemTreeNode">
+		<Property name="Unlockable" value="BUILD_PNEXUS" />
+				<Property name="Children">
+<Property name="Children" value="GcUnlockableItemTreeNode">
+				<Property name="Unlockable" value="BUILD_PMISSION" />
+				<Property name="Children" />
+			</Property>
+<Property name="Children" value="GcUnlockableItemTreeNode">
+				<Property name="Unlockable" value="BUILD_PFISHING" />
+				<Property name="Children" />
+			</Property>
+<Property name="Children" value="GcUnlockableItemTreeNode">
+				<Property name="Unlockable" value="BUILD_CASINO" />
+				<Property name="Children" />
+			</Property>
+<Property name="Children" value="GcUnlockableItemTreeNode">
+				<Property name="Unlockable" value="BUILD_PSCAN" />
+				<Property name="Children" />
+			</Property>
+<Property name="Children" value="GcUnlockableItemTreeNode">
+				<Property name="Unlockable" value="BUILD_REFINERY" />
+				<Property name="Children" />
+			</Property>
+		</Property>
+	</Property>
+</Property>
 ]]
 
 local REW_R_PFISH_GO = [[
@@ -11371,15 +11362,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
             { SPECIAL_KEY_WORDS = { "Items", "BUILDSIGNAL" }, ADD_OPTION = "ADDafterLINE", ADD = CAT_BUILD_PSCAN },
             { SPECIAL_KEY_WORDS = { "Items", "BUILD_REFINER1" }, ADD_OPTION = "ADDafterLINE", ADD = CAT_BUILD_REFINERY },
           } },
-        { MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN",
-          MXML_CHANGE_TABLE = {
-            { SPECIAL_KEY_WORDS = { "Unlockable", "BUILDSIGNAL" }, ADD_OPTION = "ADDafterSECTION", ADD = NODE_BUILD_PNEXUS },
-            { SPECIAL_KEY_WORDS = { "Unlockable", "BUILDSIGNAL" }, ADD_OPTION = "ADDafterSECTION", ADD = NODE_BUILD_PMISSION },
-            { SPECIAL_KEY_WORDS = { "Unlockable", "BUILDSIGNAL" }, ADD_OPTION = "ADDafterSECTION", ADD = NODE_BUILD_PFISHING },
-            { SPECIAL_KEY_WORDS = { "Unlockable", "BUILDSIGNAL" }, ADD_OPTION = "ADDafterSECTION", ADD = NODE_BUILD_CASINO },
-            { SPECIAL_KEY_WORDS = { "Unlockable", "BUILDSIGNAL" }, ADD_OPTION = "ADDafterSECTION", ADD = NODE_BUILD_PSCAN },
-            { SPECIAL_KEY_WORDS = { "Unlockable", "BUILD_REFINER1" }, ADD_OPTION = "ADDafterSECTION", ADD = NODE_BUILD_REFINERY },
-          } },
         { MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/BASEBUILDINGPARTSTABLE.MBIN",
           MXML_CHANGE_TABLE = {
             { SPECIAL_KEY_WORDS = { "ID", "_BUILDSIGNAL" }, ADD_OPTION = "ADDafterSECTION", ADD = PART_BUILD_PNEXUS },
@@ -11397,6 +11379,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
             { SPECIAL_KEY_WORDS = { "PartID", "_BUILDSIGNAL" }, ADD_OPTION = "ADDafterSECTION", ADD = APDDATA_BUILD_CASINO },
             { SPECIAL_KEY_WORDS = { "PartID", "_BUILDSIGNAL" }, ADD_OPTION = "ADDafterSECTION", ADD = APDDATA_BUILD_PSCAN },
             { SPECIAL_KEY_WORDS = { "PartID", "_BUILD_REFINER1" }, ADD_OPTION = "ADDafterSECTION", ADD = APDDATA_BUILD_REFINERY },
+          } },
+        { MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN",
+          MXML_CHANGE_TABLE = {
+            { SPECIAL_KEY_WORDS = { "Title", "UI_STORAGE_TREE" }, ADD_OPTION = "ADDafterSECTION", ADD = PAGE_HCS_EXPANSION_TOOLS_TREE },
           } },
         { MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
           MXML_CHANGE_TABLE = {

@@ -1,17 +1,27 @@
--- Scales the cost of every inventory slot upgrade.
---   Unidades: DEFAULTREALITY (curvas del exotraje) + COSTTABLE (listas de nave,
---   multiherramienta, mascota y escuadron).
---   Tokens: sube la cantidad de token por slot (exotraje, nave, multiherramienta,
---   freighter y clase "Alien").
---
--- AVISO: los arrays de este mod (Costs/SuitUpgradePrices) los corrompe AMUMSS
--- (cambia las primeras entradas y marca el resto con _remove). El artefacto
--- soportado es el EXML; este .lua se incluye solo como referencia.
 local MULT = 2
 
 local MOD_NAME     = "HardcoreSky_SlotCosts"
 local GAME_VERSION = "7.02"
 local SUFFIX       = "x2"
+
+local CAP = 2000000000
+local BASE_MAX = {
+  C_INV_SAL_CASH = 75000000,
+  C_INV_SAL_CASHR = 75000000,
+  C_INV_WEAP_C = 600000000,
+  C_INV_WEAP_CR = 600000000,
+  C_PET_SLOT = 3500,
+  C_PILOT_SLOT = 10000,
+  C_PILOT_UPGRADE = 18000,
+}
+
+local function safe_factor(id)
+  local m = BASE_MAX[id]
+  if m and m * MULT > CAP then
+    return math.floor(CAP / m)
+  end
+  return MULT
+end
 
 local function MoneyList(id)
   return {
@@ -20,7 +30,7 @@ local function MoneyList(id)
     REPLACE_TYPE        = "ALL",
     INTEGER_TO_FLOAT    = "PRESERVE",
     MATH_OPERATION      = "*",
-    VALUE_CHANGE_TABLE  = { { "Costs", MULT } }
+    VALUE_CHANGE_TABLE  = { { "Costs", safe_factor(id) } }
   }
 end
 

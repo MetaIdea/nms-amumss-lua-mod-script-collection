@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "6_24"
+GameVersion = "7_04"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -14,9 +14,9 @@ ExoSkiffSlots =		30								--60	Slots for fish/bait storage in Exo-Skiff. May on
 ExoSkiffSlotsWidth = 6								--10	How many columns of slots are available for the Exo-Skiff
 ExoSkiffSlotsHeight =5								--6		How many rows of slots are available for the Exo-Skiff
 
-CorvetteGearVFXCap = 6								--4		Limits how many installed Landing Gears will display visual animations / particle effects etc. As PTSd increases the amount of Landing Gear, etc. which gives bonuses from 3 to 5, this is intended to avoid having gear installed with no animations.
-CorvetteWingsVFXCap = 6								--4		As above, but for Corvette Wing modules with animations (e.g. spinning rotors, etc.)
-CorvetteGunVFXCap = 10								--10	As above, but for Corvette Weapon modules
+CorvetteGearVFXCap = 8								--4		Limits how many installed Landing Gears will display visual animations / particle effects etc. As PTSd increases the amount of Landing Gear, etc. which gives bonuses from 3 to 5, this is intended to avoid having gear installed with no animations.
+CorvetteWingsVFXCap = 8								--4		As above, but for Corvette Wing modules with animations (e.g. spinning rotors, etc.)
+CorvetteGunVFXCap = 12								--10	As above, but for Corvette Weapon modules
 
 --As of NMS v4.08, the definition for what ship attributes the "SHIP_AGILE" stat affects appears to mistakenly list Ship_BoostManeuverability twice, instead of Ship_Maneuverability and Ship_BoostManeuverability together.
 FixAgilityStat = true			--false			If true, this will try to ensure there is an entry for both Ship_BoostManeuverability and Ship_Maneuverability under the SHIP_AGILE definition
@@ -951,7 +951,7 @@ AddDuplicateAlienShipBaseStats =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= ModName..GameVersion,
+  ["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
   ["MOD_DESCRIPTION"]		= Description,         
   ["MOD_AUTHOR"]			= "Xen0nex",         --Based on UniqueSpaceShips by Jackty89
   ["NMS_VERSION"]			= GameVersion,    

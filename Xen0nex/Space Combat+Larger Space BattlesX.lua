@@ -3,7 +3,7 @@ LuaAuthor = "DeathWrench and Babscoole and Xen0nex"
 --ModName = "gExos Challenge"
 ModNameSub = "Space Combat+Larger Space BattlesX"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "7_01"
+GameVersion = "7_04"
 ModVersion = "a"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships & some freighters (individual ships have additonal multipliers applied)
@@ -16,6 +16,8 @@ ShipShieldPerLevel =	2.5*1.15						--Additional AI Shield health added per level
 BossFreighterParts =	2.1*1.15						--Starting AI health for enemy freighter parts (and the Dreadnought hull itself) & Pirate Frigates in "boss" freighter battles (Sentinel or Pirate Dreadnought) during Sentinel 5 star / Pirate Dreadnought encounters
 BossFreighterPartsPerLevel =2.1*1.15					--Additional AI health added per level for enemy freighter parts (and the Dreadnought hull itself) & Pirate Frigates in "boss" freighter battles
 CargoPods =				1								--Both Starting & Additional health for all types of Cargo Pods, both atteched or standalone near freighters
+
+GlobalFireRateMult =	1								--1		Controls the firerate of all NPC starship weapons adjusted by this .lua, both enemy & ally. Use a higher value here for faster firerate, or a lower value here for slower firerate
 
 --Adds additional Squadrons to appear at each Wanted Level, for all multiplayer group sizes
 AddedSquadrons =
@@ -185,8 +187,8 @@ LargerBattleChanges =
 			"PirateSpawns"					--These do NOT attack Freighters.	For the following, RewardMessage is NOTIFY_PIRATE_WIN
 		},
 		{
-			{--Standard (regular starship)
-			--This may control several things: it appears to act as a multiplier to the amount of pirates spawned during space station pirate hunting missions. However it does NOT affect the amount of pirates spawned during "hostile scan" space pirate encounters
+			{--Standard (pirate starship)
+			--Acts as a multiplier to the number of pirate starships (2-3/3/2 in Conflict level 1/2/3 systems) which "warp in" in front of you at the start of a "hostile scan" pirate encounter
 				{
 					"PirateSpawns", "GcAIShipSpawnData", "0",	4
 				},
@@ -195,8 +197,9 @@ LargerBattleChanges =
 					{"Count",	1,			1}		--1,		1		(1,			6)		[1,		3]
 				}
 			},
-			{--Standard (regular starship)
-			--This acts as a multiplier to the amount of pirates spawned during "hostile scan" space pirate encounters
+			{--Standard (pirate starship)
+			--Acts as a multiplier to the number of pirate starships (0/1/2 in Conflict level 1/2/3 systems) which spawn behind you at the start of a "hostile scan" pirate encounter
+				--NOTE: Sometimes, inconsistently, some or all of these pirate starships don't spawn behind you and instead get added to the number which "warp in" in front of you.
 				{
 					"PirateSpawns", "GcAIShipSpawnData", "1",	4
 				},
@@ -242,7 +245,7 @@ LargerBattleChanges =
 	},
 	{
 		{
-			"PirateBattleSpawns"			--These DO attack Freighters.	RewardMessage is NOTIFY_PIRATE_BATTLE_WIN
+			"PirateBattleSpawns"			-- Unclear which scenario this controls, if any. These DO attack Freighters.	RewardMessage is NOTIFY_PIRATE_BATTLE_WIN
 		},
 		{
 			{--Standard (regular starship)
@@ -251,7 +254,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		120},	--100,		120
-					{"Count",	3,			6}		--2,		2		(10,			24)
+					{"Count",	3,			4}		--2,		2		(10,			24)
 				}
 			}
 		}
@@ -418,10 +421,10 @@ SpaceBattleSpawnsChanges =
 {
 	{
 		{
-			"None"				--This seems to be Civilian Freighters / starships? (doesn't attack freighters)
+			"None"				-- Unclear which scenario this controls, if any. This seems to be Civilian Freighters / starships? (doesn't attack freighters)
 		},
 		{
-			{--Standard??? (regular starship???)
+			{--? Standard??? (regular starship???)
 				{
 					"AlliedFlagshipSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -430,7 +433,7 @@ SpaceBattleSpawnsChanges =
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			{--Standard??? (regular starship???)
+			{--? Standard??? (regular starship???)
 				{
 					"AlliedInitialSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -439,7 +442,7 @@ SpaceBattleSpawnsChanges =
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			{--Hostile flagship/regular starship??? (doesn't attack freighters)
+			{--? Hostile flagship/regular starship??? (doesn't attack freighters)
 				{
 					"HostileFlagshipSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -448,7 +451,7 @@ SpaceBattleSpawnsChanges =
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			{--Hostile Standard??? (Hostile regular starship???)
+			{--? Hostile Standard??? (Hostile regular starship???)
 				{
 					"HostileInitialFlybySpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -457,7 +460,7 @@ SpaceBattleSpawnsChanges =
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			{--Hostile Standard??? (Hostile regular starship???)
+			{--? Hostile Standard??? (Hostile regular starship???)
 				{
 					"HostileInitialSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -466,7 +469,7 @@ SpaceBattleSpawnsChanges =
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			{--Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)
+			{--? Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)
 				{
 					"HostileRecurringSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -476,7 +479,7 @@ SpaceBattleSpawnsChanges =
 				}
 			},
 			
-			{--Hostile Standard reinforcements??? (Hostile regular starship???)
+			{--? Hostile Standard reinforcements??? (Hostile regular starship???)
 				{
 					"HostileFrigateReinforcementsSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -489,7 +492,7 @@ SpaceBattleSpawnsChanges =
 	},
 	{
 		{
-			"PirateShipsEasy"				--This seems to be civilian freighter vs. Pirate starship battles
+			"PirateShipsEasy"				-- This controls pirate starship vs. civilian freighter battles in most Conflict level 1 systems		(though sometimes the system uses one of the other 2 options instead)
 		},
 		{
 			{--Freighter
@@ -534,10 +537,10 @@ SpaceBattleSpawnsChanges =
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
-					{"Count",	3,			3}		--2,		2
+					{"Count",	2,			3}		--2,		2
 				}
 			},
-			{--Hostile flagship/regular starship???
+			{--? Hostile flagship/regular starship???
 				{
 					"HostileFlagshipSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -546,25 +549,25 @@ SpaceBattleSpawnsChanges =
 					{"Count",	0,			0}		--0,		0
 				}
 			},
-			{--Hostile Standard??? (Hostile regular starship???)	(rewards "PIRATE_BATTLE")
+			{--Acts as a multiplier to the number of pirate starships (1) which spawn behind you at the start of the freighter rescue	(rewards "PIRATE_BATTLE")
 				{
 					"HostileInitialFlybySpawn", "GcAIShipSpawnData", "0",	5
 				},
 				{
 					{"Spread",	100,		120},	--100,		120
-					{"Count",	3,			3}		--2,		2
+					{"Count",	1,			2}		--2,		2
 				}
 			},
-			{--Hostile Standard??? (Hostile regular starship???)	(uses "PIRATE_EASY" definition)
+			{--Acts as a multiplier to the number of pirate starships (2) which spawn attacking civilian freighters at the start of the freighter rescue	(uses "PIRATE_EASY" definition)
 				{
 					"HostileInitialSpawn", "GcAIShipSpawnData", "0",	5
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
-					{"Count",	1,			1}		--1,		1
+					{"Count",	2,			2}		--1,		1
 				}
 			},
-			{--Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)	(uses "PIRATE_NOSHIELD" definition)
+			{--? Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)	(uses "PIRATE_NOSHIELD" definition)
 				{
 					"HostileRecurringSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -573,8 +576,7 @@ SpaceBattleSpawnsChanges =
 					{"Count",	1,			1}		--1,		1
 				}
 			},
-			
-			{--Hostile Standard reinforcements??? (Hostile regular starship???)
+			{--? Hostile Standard reinforcements??? (Hostile regular starship???)
 				{
 					"HostileFrigateReinforcementsSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -587,7 +589,7 @@ SpaceBattleSpawnsChanges =
 	},
 	{
 		{
-			"PirateShipsStandard"				--This seems to be civilian freighter vs. Pirate starship battles
+			"PirateShipsStandard"			-- This controls pirate starship vs. civilian freighter battles in most Conflict level 2 systems		(though sometimes the system uses one of the other 2 options instead)
 		},
 		{
 			{--CapitalFreighter
@@ -632,10 +634,10 @@ SpaceBattleSpawnsChanges =
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
-					{"Count",	3,			3}		--2,		2
+					{"Count",	3,			4}		--2,		2
 				}
 			},
-			{--Hostile flagship/regular starship???
+			{--? Hostile flagship/regular starship???
 				{
 					"HostileFlagshipSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -644,25 +646,25 @@ SpaceBattleSpawnsChanges =
 					{"Count",	0,			0}		--0,		0
 				}
 			},
-			{--Hostile Standard??? (Hostile regular starship???)	(rewards "PIRATE_BATTLE")
+			{--Acts as a multiplier to the number of pirate starships (1) which spawn behind you at the start of the freighter rescue	(rewards "PIRATE_BATTLE")
 				{
 					"HostileInitialFlybySpawn", "GcAIShipSpawnData", "0",	5
 				},
 				{
 					{"Spread",	100,		120},	--100,		120
-					{"Count",	3,			3}		--2,		2
+					{"Count",	2,			3}		--2,		2
 				}
 			},
-			{--Hostile Standard??? (Hostile regular starship???)
+			{--Acts as a multiplier to the number of pirate starships (2) which spawn attacking civilian freighters at the start of the freighter rescue
 				{
 					"HostileInitialSpawn", "GcAIShipSpawnData", "0",	5
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
-					{"Count",	1,			1}		--1,		1
+					{"Count",	2,			3}		--1,		1
 				}
 			},
-			{--Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)	(uses "PIRATE_NOSHIELD" definition)
+			{--? Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)	(uses "PIRATE_NOSHIELD" definition)
 				{
 					"HostileRecurringSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -672,7 +674,7 @@ SpaceBattleSpawnsChanges =
 				}
 			},
 			
-			{--Hostile Standard reinforcements??? (Hostile regular starship???)
+			{--? Hostile Standard reinforcements??? (Hostile regular starship???)
 				{
 					"HostileFrigateReinforcementsSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -685,7 +687,7 @@ SpaceBattleSpawnsChanges =
 	},
 	{
 		{
-			"PirateShipsHard"				--This seems to be civilian freighter vs. Pirate starship battles
+			"PirateShipsHard"				-- This controls pirate starship vs. civilian freighter battles in most Conflict level 3 systems		(though sometimes the system uses one of the other 2 options instead)
 		},
 		{
 			{--CapitalFreighter
@@ -741,10 +743,10 @@ SpaceBattleSpawnsChanges =
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
-					{"Count",	3,			3}		--2,		2
+					{"Count",	4,			5}		--2,		2
 				}
 			},
-			{--Hostile flagship/regular starship???
+			{--? Hostile flagship/regular starship???
 				{
 					"HostileFlagshipSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -753,25 +755,25 @@ SpaceBattleSpawnsChanges =
 					{"Count",	0,			0}		--0,		0
 				}
 			},
-			{--Hostile Standard??? (Hostile regular starship???)	(rewards "PIRATE_BATTLE")
+			{--Acts as a multiplier to the number of pirate starships (1) which spawn behind you at the start of the freighter rescue	(rewards "PIRATE_BATTLE")
 				{
 					"HostileInitialFlybySpawn", "GcAIShipSpawnData", "0",	5
 				},
 				{
 					{"Spread",	100,		120},	--100,		120
-					{"Count",	1,			1}		--1,		1
+					{"Count",	3,			4}		--1,		1
 				}
 			},
-			{--Hostile Standard??? (Hostile regular starship???)
+			{--Acts as a multiplier to the number of pirate starships (4) which spawn attacking civilian freighters at the start of the freighter rescue
 				{
 					"HostileInitialSpawn", "GcAIShipSpawnData", "0",	5
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
-					{"Count",	1,			1}		--1,		1
+					{"Count",	2,			2}		--1,		1
 				}
 			},
-			{--Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)	(uses "PIRATE_NOSHIELD" definition)
+			{--? Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)	(uses "PIRATE_NOSHIELD" definition)
 				{
 					"HostileRecurringSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -781,7 +783,7 @@ SpaceBattleSpawnsChanges =
 				}
 			},
 			
-			{--Hostile Standard reinforcements??? (Hostile regular starship???)
+			{--? Hostile Standard reinforcements??? (Hostile regular starship???)
 				{
 					"HostileFrigateReinforcementsSpawn", "GcAIShipSpawnData", "0",	5
 				},
@@ -850,7 +852,7 @@ SpaceBattleSpawnsChanges =
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
-					{"Count",	3,			3}		--2,		2
+					{"Count",	2,			3}		--2,		2
 				}
 			},
 			{--CapitalFreighter		(uses "PIRATE_FREIGHT" definition)
@@ -877,7 +879,7 @@ SpaceBattleSpawnsChanges =
 				},
 				{
 					{"Spread",	100,		100},	--100,		100
-					{"Count",	1,			1}		--1,		1
+					{"Count",	2,			2}		--1,		1
 				}
 			},
 			{--Hostile Standard repeating every 30 seconds??? (Hostile regular starship???)	(uses "PIRATE_NOSHIELD" definition)
@@ -1500,7 +1502,7 @@ function AddShield (ShieldID)
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModNameSub.." "..GameVersion..ModVersion,
+["MOD_FILENAME"]	= ModNameSub.." "..GameVersion..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["LUA_AUTHOR"]		= LuaAuthor,
@@ -2065,7 +2067,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 3},						
-		{"GunFireRate", 0.08},							
+		{"GunFireRate", 0.08/GlobalFireRateMult},							
 		{"LaserHealthPoint", 40},							--LaserHealthPoint determines at what % of remaining health the enemy starship will start using their lasers instead of only their "photon cannon"
 		{"AttackWeaponRange", 1200},
 		{"AttackShootWaitTime", 0.1},
@@ -2086,7 +2088,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 1.5},						--5.5
-		{"GunFireRate", 0.06},								--0.15
+		{"GunFireRate", 0.06/GlobalFireRateMult},			--0.15
 		{"LaserHealthPoint", 50},							--50
 		{"AttackWeaponRange", 1600},						--700
 		{"AttackShootWaitTime", 0.1},						--1
@@ -2107,7 +2109,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 1},
-		{"GunFireRate", 0.04},								
+		{"GunFireRate", 0.04/GlobalFireRateMult},								
 		{"LaserHealthPoint", 70},
 		{"AttackWeaponRange", 2000},
 		{"AttackShootWaitTime", 0.1},
@@ -2128,7 +2130,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 2.7},
-		{"GunFireRate", 0.08},
+		{"GunFireRate", 0.08/GlobalFireRateMult},
 		{"LaserHealthPoint", 40},
 		{"AttackWeaponRange", 800},
 		{"AttackShootWaitTime", 0.1},						--N/A			(0)
@@ -2149,7 +2151,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 1.35},						--5
-		{"GunFireRate", 0.06},								--0.15
+		{"GunFireRate", 0.06/GlobalFireRateMult},			--0.15
 		{"LaserHealthPoint", 50},							--50
 		{"AttackWeaponRange", 1100},						--500
 		{"AttackShootWaitTime", 0.1},						--0.1			(0)
@@ -2170,7 +2172,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 0.9},
-		{"GunFireRate", 0.04},
+		{"GunFireRate", 0.04/GlobalFireRateMult},
 		{"LaserHealthPoint", 70},
 		{"AttackWeaponRange", 1400},
 		{"AttackShootWaitTime", 0.1},						--N/A			(0)
@@ -2191,7 +2193,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 2},							--3				(0.9)
-		{"GunFireRate", 0.09},								--0.15			(0.06)
+		{"GunFireRate", 0.09/GlobalFireRateMult},			--0.15			(0.06)
 		{"LaserHealthPoint", 30},							--0
 		{"AttackWeaponRange", 500},							--500
 		{"AttackShootWaitTime", 0.1},						--0.1			(0)
@@ -2212,7 +2214,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 6},
-		{"GunFireRate", 1.8},
+		{"GunFireRate", 1.8/GlobalFireRateMult},
 		{"LaserHealthPoint", 80},
 		{"AttackWeaponRange", 600},
 		{"AttackShootWaitTime", 0.1},						--N/A			(0)
@@ -2233,7 +2235,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 5},							--6
-		{"GunFireRate", 0.3},								--0.3
+		{"GunFireRate", 0.3/GlobalFireRateMult},			--0.3
 		{"LaserHealthPoint", 10},							--0
 		{"AttackWeaponRange", 700},							--700
 		{"AttackShootWaitTime", 3},							--4
@@ -2254,7 +2256,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 3},							--4
-		{"GunFireRate", 0.2},								--0.2
+		{"GunFireRate", 0.2/GlobalFireRateMult},			--0.2
 		{"LaserHealthPoint", 15},							--15
 		{"AttackWeaponRange", 850},							--850
 		{"AttackShootWaitTime", 2},							--2
@@ -2275,7 +2277,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 1.5},						--2
-		{"GunFireRate", 0.1},								--0.1
+		{"GunFireRate", 0.1/GlobalFireRateMult},			--0.1
 		{"LaserHealthPoint", 20},							--0
 		{"AttackWeaponRange", 1000},						--1000
 		{"AttackShootWaitTime", 1},							--2
@@ -2296,7 +2298,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 1.5},						--5.5
-		{"GunFireRate", 0.06},								--0.15
+		{"GunFireRate", 0.06/GlobalFireRateMult},			--0.15
 		{"LaserHealthPoint", 45},							--50
 		{"AttackWeaponRange", 1600},						--700
 		{"AttackShootWaitTime", 0.1},						--1

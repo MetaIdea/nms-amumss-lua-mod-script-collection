@@ -2,12 +2,12 @@ JetpackRefillPercent = 3000
 JetpackTankPercent = 8000
 StaminaStrengthPercent = 5000
 StaminaRecoveryPercent = 500
-PlayerMovementSpeedPercent = 180
-PlayerMovementForcePercent = 140
-PlayerJetpackSpeedPercent = 1400
-PlayerJetpackForcePercent = 550
+PlayerMovementSpeedPercent = 150
+PlayerMovementForcePercent = 120
+PlayerJetpackSpeedPercent = 1500
+PlayerJetpackForcePercent = 450
 PlayerJetpackUpSpeedPercent = 200
-PlayerJetpackUpForcePercent = 250
+PlayerJetpackUpForcePercent = 150
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -149,11 +149,11 @@ PlayerJetpackForcePercent - percentage of player jetpack force bonus
                 {"UnderwaterJetpackForce",   "@*"..(PlayerMovementForcePercent / 100)},
                 {"UnderwaterMaxJetpackEscapeSpeed",   "@*"..(PlayerJetpackSpeedPercent / 100)},
                 {"UnderwaterJetpackEscapeForce",   "@*"..(PlayerJetpackUpForcePercent / 100)},
-                {"UnderwaterBrake",   "@*"..(PlayerMovementForcePercent / 100)},
+                {"UnderwaterBrake",   "@*"..(PlayerJetpackForcePercent / 100)},
                 {"SpacewalkTetheredMaxSpeed",   "@*"..(PlayerJetpackSpeedPercent / 100)},
                 {"SpacewalkMaxSpeed",   "@*"..(PlayerJetpackSpeedPercent / 100)},
-                {"SpacewalkJetpackForce",   "@*"..(PlayerJetpackForcePercent / 50)},
-                {"SpacewalkJetpackUpForce",   "@*"..(PlayerJetpackForcePercent / 25)},
+                {"SpacewalkJetpackForce",   "@*"..(PlayerJetpackForcePercent / 100)},
+                {"SpacewalkJetpackUpForce",   "@*"..(PlayerJetpackUpForcePercent / 100)},
                 {"RocketBootsImpulse", "@*"..(PlayerJetpackForcePercent / 100)},
                 {"RocketBootsMaxSpeed", "@*"..(PlayerJetpackSpeedPercent / 100)},
                 {"RocketBootsBoostForce", "@*"..(PlayerJetpackForcePercent / 100)},
@@ -182,7 +182,7 @@ PlayerJetpackForcePercent - percentage of player jetpack force bonus
                 {"SpaceJetpackForce", "@*"..(PlayerJetpackForcePercent / 100)},
                 {"SpaceJetpackUpForce", "@*"..(PlayerJetpackUpForcePercent / 100)},
                 {"SpaceJetpackIgnitionForce", "@*"..(PlayerJetpackUpForcePercent / 100)},
-                {"SpaceJetpackMaxSpeed", "@*"..(PlayerMovementSpeedPercent / 100)},
+                {"SpaceJetpackMaxSpeed", "@*"..(PlayerJetpackSpeedPercent / 100)},
                 {"SpaceJetpackDrainRate", "-99"},
                 {"AbandonedFreighterStaminaRecoveryMod", "@*"..(StaminaRecoveryPercent / 100)},
                 {"AbandonedFreighterStaminaRate", "0"},
@@ -190,7 +190,8 @@ PlayerJetpackForcePercent - percentage of player jetpack force bonus
                 {"StaminaRate", "0"},
                 {"HardLandMin", "999"},
                 {"HardLandMax", "9999"},
-                {"MaxFallSpeed", "@*"..(PlayerJetpackUpSpeedPercent / 100)},
+                {"UseEnergy", false},
+                {"MaxFallSpeed", "@*"..(PlayerJetpackSpeedPercent / 100)},
                 {"EnablePointDownToSmoothMove",   true},
                 {"HandSwimEnabled",   true},
               },

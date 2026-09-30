@@ -1,6 +1,3 @@
--- Scales the nanite cost of Anomaly blueprint research.
---   1) NMS_REALITY_GCTECHNOLOGYTABLE  -> FragmentCost (nanite price of each blueprint)
---   2) GCGAMEPLAYGLOBALS.GLOBAL       -> NexusRecipeCostNaniteMultiplier (Nexus Synthesis Lab)
 local MULT = 25
 
 local MOD_NAME     = "HardcoreSky_AnomalyCostIncrease"

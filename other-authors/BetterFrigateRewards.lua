@@ -11,8 +11,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 	= "BetterFrigateRewards",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "7.0",
-["MOD_DESCRIPTION"]	= "Simple multipliers to frigate reward values",
+["NMS_VERSION"]		= "7.05",
+["MOD_DESCRIPTION"]	= "Simple multipliers to frigate mission reward values",
 ["MODIFICATIONS"] 	=
 	{
 		{

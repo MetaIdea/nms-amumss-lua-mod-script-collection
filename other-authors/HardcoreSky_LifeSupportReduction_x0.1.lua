@@ -1,9 +1,3 @@
--- Scales the suit's Life Support duration (the NoOxygen hazard row of HAZARDTABLE):
--- grace period before drain, wait before recharge, recharge duration and the ProtectionTime
--- curve endpoints (X/Y). Damage values/thresholds are untouched.
---
--- Companion of the "Reduced Hazard Protection Duration" mod, which scales the five environment
--- hazards (ExtremeHeat, ExtremeCold, ToxicGas, Radiation, Spook) and leaves this one alone.
 local MULT = 0.1
 
 local MOD_NAME     = "HardcoreSky_LifeSupportReduction"

@@ -1,7 +1,3 @@
--- Escala el coste de materiales (Requirements -> Amount) de todas las piezas de base.
---   1) global xMULT
---   2) piezas estructurales (T_/S_/M_/F_) xMULT_STRUCT  [solo si difiere]
---   3) ids criticos de early-game de vuelta a vanilla
 local MULT        = 10
 local MULT_STRUCT = 10
 
@@ -9,7 +5,6 @@ local MOD_NAME     = "HardcoreSky_BaseBuildCost"
 local GAME_VERSION = "7.02"
 local SUFFIX       = "x10"
 
--- >>> STRUCT_IDS (generado por extras/gen_structs.py) >>>
 local STRUCT_IDS = {
   "CORRIDOR", "CORRIDORC", "CORRIDORL", "CORRIDORL_SPACE", "CORRIDORL_WATER", "CORRIDORT",
   "CORRIDORT_SPACE", "CORRIDORT_WATER", "CORRIDORV_WATER", "CORRIDORX", "CORRIDORX_SPACE", "CORRIDORX_WATER",
@@ -80,7 +75,6 @@ local STRUCT_IDS = {
   "T_WALL_Q", "T_WALL_Q1", "T_WALL_Q_H", "T_WALL_Q_H1", "T_WALL_WIN1", "T_WALL_WIN2",
   "T_WALL_WIN3", "T_WALL_WINDOW",
 }
--- <<< STRUCT_IDS (generado por extras/gen_structs.py) <<<
 
 local EARLY_EXEMPT_IDS = {
   "BASE_FLAG", "BUILDSAVE", "BUILDTERMINAL", "TELEPORTER", "BUILDLANDINGPAD",

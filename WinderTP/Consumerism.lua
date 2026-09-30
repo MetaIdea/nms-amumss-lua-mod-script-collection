@@ -1,6 +1,53 @@
 SPECIAL_LIST =
 {
 	{
+		["ShopNumber"] = "118",
+		["Table"] =  
+		{
+			{ ["ID"] = "ACCESS4",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			-- { ["ID"] = "ASTEROID_CRYST",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "BANNER_MAINFAM",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "BANNER_NMSA",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			-- { ["ID"] = "BANNER_OOGC",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			-- { ["ID"] = "BANNER_RSS",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "BOBBLE_ASTRO",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			-- { ["ID"] = "DECAL_OOGC",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			-- { ["ID"] = "DECAL_RSS",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_BANNER23",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_DECAL23",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_EGG_23",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_GUN23",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER23A",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER23B",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER23C",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER23D",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER23E",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER23F",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER23G",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER23H",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER23I",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_SHIP23A",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_SHIP23b",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_TITLE23",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "S23_BEACON",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "S23_ODD_EGG",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "S23_PRISMS_EGG",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "S23_PROD",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SLIME_BLOB",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "SLIME_STAR",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN31",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN32",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN33",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_PET26",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_PET27",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP61",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP62",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP63",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP64",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP65",	["IsConsumable"] = "false", ["IsCape"] = "False"},
+		}
+	},
+	{
 		["ShopNumber"] = "117",
 		["Table"] =  
 		{

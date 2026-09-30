@@ -1,5 +1,5 @@
 FRIGATE_UNITS_MULTI		= 5		-- Default value is 1 | Multiplys the amount of units you get from Frigate (Freighter) missions with your fleet
-FRIGATE_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Frigate (Freighter) missions with your fleet4
+FRIGATE_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Frigate (Freighter) missions with your fleet
 
 ------------------------------------------------------------------------------
 -------------------- DO NOT EDIT ANYTHING PAST THIS POINT --------------------
@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 	= "BetterFrigateRewardsNoRP",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "7.0",
+["NMS_VERSION"]		= "7.05",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to units and nanites within frigate missions",
 ["MODIFICATIONS"] 	=
 	{

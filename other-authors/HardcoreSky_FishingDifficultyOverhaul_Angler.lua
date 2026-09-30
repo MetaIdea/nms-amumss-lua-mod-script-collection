@@ -108,7 +108,7 @@ if #reward_changes > 0 then
   table.insert(mbin_changes, { MBIN_FILE_SOURCE = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN", MXML_CHANGE_TABLE = reward_changes })
 end
 
-local MOD_FILENAME = MOD_NAME .. ".zip"
+local MOD_FILENAME = MOD_NAME .. "_Angler.zip"
 local MOD_DESCRIPTION = "Fishing: relaxed pace, tension-only cue, no junk catches."
 
 NMS_MOD_DEFINITION_CONTAINER = {

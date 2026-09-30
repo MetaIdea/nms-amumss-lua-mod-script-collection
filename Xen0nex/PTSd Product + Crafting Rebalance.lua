@@ -1,5 +1,5 @@
 ModName = "PTSd Product + Crafting Rebalance"
-GameVersion = "7_03"
+GameVersion = "7_05"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --Adds a note to the description of the Corvette Phase Beam Array weapon module, to explain the vanilla bug as of NMS v7.03 that causes Phase Beam DPS to increase by +100% for every weapon module installed on the corvette
@@ -33,6 +33,7 @@ SubstanceSaleChanges =
 	{"GASGIANT1",	240},							--82			Crystallised Helium
 	{"WATERWORLD1",	280},							--72			Lithium
 	{"GAS4",		70},							--35			Methane
+	{"AF_METAL",	127},							--380			Tainted Metal	(reduced by ~0.33x to account for PTSd spawning 3x as much of it)
 }
 --Silver		186
 --Gold			353
@@ -112,16 +113,16 @@ ProductSaleChanges =
 	{"UI_STONE_EYE_PROD_NAME",	1.571},				--102,000		Vigilant Stone
 	
 	{"UI_HULK_COMMON_NAME",		1.5},				--32,000		Industrial Salvage
-	{"UI_HULK_REACTOR_NAME",	1.5},				--21,000		Fuel Rod
-	{"UI_HULK_AUX_NAME",		1.5},				--56,000		Auxiliary Core
-	{"UI_HULK_BLACKBOX_NAME",	1.0},				--185,000		Data Packet
+	{"UI_HULK_REACTOR_NAME",	2.67},				--21,000		Fuel Rod
+	{"UI_HULK_AUX_NAME",		2.67},				--56,000		Auxiliary Core
+	{"UI_HULK_BLACKBOX_NAME",	2},					--185,000		Data Packet
 	{"UI_HULK_CANISTER_NAME",	1.5},				--49,000		Compressed Plasma
-	{"UI_HULK_CORE_NAME",		1.5},				--220,000		Reactor Core
-	{"UI_HULK_DATACORE_NAME",	1.0},				--52,000		CPU Harness
+	{"UI_HULK_CORE_NAME",		2.67},				--220,000		Reactor Core
+	{"UI_HULK_DATACORE_NAME",	2},					--52,000		CPU Harness
 	{"UI_HULK_LOCKBOX_NAME",	1.5},				--93,000		Stasis Locker
-	{"UI_HULK_SMUGGLE_NAME",	4.5},				--32,000		Suspicious Cargo
-	{"UI_SLIME_BLOB_NAME",		1.0},				--190,000		Viral Heart
-	{"UI_SLIME_SAMPLE_NAME",	1.0},				--201,000		Pathogen Sac
+	{"UI_HULK_SMUGGLE_NAME",	9},					--32,000		Suspicious Cargo
+	{"UI_SLIME_BLOB_NAME",		0.75},				--190,000		Viral Heart
+	{"UI_SLIME_SAMPLE_NAME",	1.125},				--201,000		Pathogen Sac
 	{"UI_ASTEROID_CRYSTAL_NAME",7.0},				--13,000		Condensed Stellar Ice
 	
 	{"UI_ILLEGAL_PROD1_NAME",	3.0},				--2,000			Illegal Trade item
@@ -314,7 +315,13 @@ FossilCategorySaleChanges =
 BasicCorvettePartSaleChanges =		1				--1			Multiplier to apply to the base value (used for both buying & selling this item)
 BasicCorvettePartBaseMarkup =		0.000000		--0			(0.352942)	Added as a % of the base value to the purchase price when buying them
 
-CorvetteTractorSalePrice =			1250000			--350000	Base value for Corvette Tractor Beam module (used for both buying & selling this item)
+CorvTractorSalePrice =				2500000			--350000	Base value for Corvette Tractor Beam module (used for both buying & selling this item)
+CorvNewIngredient1 =				"ATLAS_SEED_2"	--N/A	(Englobed Shade)	Adds an ingredient required to install a Corvette Tractor Beam
+CorvNewIngredient1Amount =			1				--N/A	How many of CorvNewIngredient1 are required to install it
+CorvNewIngredient2 =				"SALVAGE_TECH7"	--N/A	(Recycled Circuitry)	Adds an ingredient required to install a Corvette Tractor Beam
+CorvNewIngredient2Amount =			5				--N/A	How many of CorvNewIngredient2 are required to install it
+CorvNewIngredient3 =				"GRAVBALL"		--N/A	(Gravitino Ball)	Adds an ingredient required to install a Corvette Tractor Beam
+CorvNewIngredient3Amount =			8				--N/A	How many of CorvNewIngredient3 are required to install it
 
 --These various "geode" style items are given base values equal to 2x the expected value of opening & selling their contents on average
 	--Certain geodes given further multipliers due to either the difficulty of obtaining them or having particularly low-value contents
@@ -347,32 +354,41 @@ ProceduralProductSaleChanges =
 ProceduralSeaTreasureSaleChanges =
 {
 	--Sea Ruins Treasure 			Value Mult	Dropweight
-	{"Common",						2,			2},			--100,000 ~ 200,000,		Dropweight 10		(62.5%)
-	{"Uncommon",					1,			4},			--400,000 ~ 700,000,		Dropweight 6		(37.5%)
-	{"Rare",						1,			3},			--800,000 ~ 1,20,000,		Dropweight 1		(6.3%)
+	{"Common",						1.5,		3},			--100,000 ~ 200,000,		Dropweight 10		(62.5%)
+	{"Uncommon",					1,			5},			--400,000 ~ 700,000,		Dropweight 6		(37.5%)
+	{"Rare",						1,			2},			--800,000 ~ 1,20,000,		Dropweight 1		(6.3%)
 }
 
 --Applies a multipler to the amount of nanites you can sell certain Deep Space items collected in a Corvette at a Deep Space Outpost
 DeepSpaceNaniteChanges =
 {
-	{"HULK_COMMON",			1.0},				--30		Industrial Salvage
-	{"HULK_REACTOR",		0.6},				--52		Fuel Rod
-	{"HULK_AUX",			0.6},				--140		Auxiliary Core
-	{"HULK_BLACKBOX",		1.5},				--462		Data Packet
-	{"HULK_CANISTER",		0.6},				--122		Compressed Plasma
-	{"HULK_CORE",			0.6},				--550		Reactor Core
-	{"HULK_DATACORE",		1.5},				--130		CPU Harness
-	{"HULK_LOCKBOX",		0.6},				--232		Stasis Locker
-	{"HULK_SMUGGLE",		1.5},				--350		Suspicious Cargo
-	{"SLIME_BLOB",			1.5},				--475		Viral Heart
-	{"SLIME_STAR",			1.5},				--480		Pathogen Sac
-	{"ASTEROID_CRYST",		1.0},				--60		Condensed Stellar Ice
+	{"HULK_COMMON",			1.2},				--30		Industrial Salvage
+	{"HULK_REACTOR",		0.4},				--52		Fuel Rod
+	{"HULK_AUX",			0.4},				--140		Auxiliary Core
+	{"HULK_BLACKBOX",		1.125},				--462		Data Packet
+	{"HULK_CANISTER",		0.45},				--122		Compressed Plasma
+	{"HULK_CORE",			0.4},				--550		Reactor Core
+	{"HULK_DATACORE",		1.125},				--130		CPU Harness
+	{"HULK_LOCKBOX",		0.45},				--232		Stasis Locker
+	{"HULK_SMUGGLE",		1.125},				--350		Suspicious Cargo
+	{"SLIME_BLOB",			0.45},				--475		Viral Heart
+	{"SLIME_STAR",			0.675},				--480		Pathogen Sac
+	{"ASTEROID_CRYST",		0.5},				--60		Condensed Stellar Ice
 }
 
 --Changes which description certain of the above Deep Space "cargo-able" items have, so that the notes on which sell better for nanites above match up properly
-FuelRodDescCat =		"UI_HULK_UNCOMMON_DESC"			--"UI_HULK_RARE_DESC"
-CPUHarnessDescCat =		"UI_HULK_RARE_DESC"				--"UI_HULK_UNCOMMON_DESC"
-StasisLockerDescCat =	"UI_HULK_UNCOMMON_DESC"			--"UI_HULK_RARE_DESC"
+HulkSalvageDescChanges =
+{
+	{"HULK_COMMON",			"UI_HULK_IS_DESC"},				--"UI_HULK_COMMON_DESC"			Industrial Salvage
+	{"HULK_REACTOR",		"UI_HULK_COMMON_DESC"},			--"UI_HULK_RARE_DESC"			Fuel Rod
+	{"HULK_AUX",			"UI_HULK_COMMON_DESC"},			--"UI_HULK_UNCOMMON_DESC"		Auxiliary Core
+	{"HULK_BLACKBOX",		"UI_HULK_RARE_DESC"},			--"UI_HULK_RARE_DESC"			Data Packet
+	{"HULK_CANISTER",		"UI_HULK_UNCOMMON_DESC"},		--"UI_HULK_UNCOMMON_DESC"		Compressed Plasma
+	{"HULK_CORE",			"UI_HULK_COMMON_DESC"},			--"UI_HULK_UNCOMMON_DESC"		Reactor Core
+	{"HULK_DATACORE",		"UI_HULK_RARE_DESC"},			--"UI_HULK_UNCOMMON_DESC"		CPU Harness
+	{"HULK_LOCKBOX",		"UI_HULK_UNCOMMON_DESC"	},		--"UI_HULK_RARE_DESC"			Stasis Locker
+	{"HULK_SMUGGLE",		"UI_HULK_RARE_DESC"},			--"UI_HULK_RARE_DESC"			Suspicious Cargo
+}
 
 --Boosts sale value for Derelict Freighter reward items in case you are unable to trade them to a Guild Representative for some reason, such as the vanilla bug causing the quest for turning them in to disappear
 DerelictFreighterRedeemables =
@@ -386,6 +402,10 @@ DerelictFreighterRedeemables =
 UsableDerelictRedeemables = true					--false		Set to true to be able to use Crew Manifests / Captain's Logs to restart the mission required for handing them in to Guild Reps / Scrap Dealers (does not consume the item to use it)
 
 AddHoneyNote = true									--false		Set to true to add a note to the descriptions for Sticky 'Honey', Synthetic Honey, and Syrupy Nectar that they add significant value to foods cooked with them
+
+AloeFleshDesc =	"FOOD_ALOE_DESC"					--"FOOD_PLANT_DESC"		Changes the description for Aloe Flesh to PTSd's custom version to note its new recipe
+RefDrinkDesc =	"FOOD_REFDRINK"						--"FOOD_DRINK_DESC"		Changes the description for Refreshing Drink to PTSd's custom version to note its new recipe
+
 
 --These multipliers are applied to the value of all cooked foods of a certain type.
 	--Note, these multipliers are applied multiplicatively on top of any multipliers in the ProductSaleChanges section above
@@ -567,16 +587,20 @@ TradeMult = 					0.4					--These Trade items have a default StackMultiplier of 5
 IllTradeMult = 					0.2					--These Illegal Trade items also have a default StackMultiplier of 5, but as of NMS v3.88 are only sold in batches of 2~8 or so at Outlaw stations
 --Multipliers to apply to the item's Product Stack multiplier (vanilla total stack size, not multiplier, is listed in the -- comments below), and to their BuyBaseMarkup (how much extra you always have to pay above base value)
 ProductStackChanges =
-{--	Product Name				StackMultMult		BuyBaseMarkupMult
-	{"NEWPROD12_NAME",			2,					1},				--5		Sac Venom
-	{"NEWPROD13_NAME",			2,					1},				--5		Gravitino Ball
-	{"NEWPROD14_NAME",			4,					1},				--5		Albumen Pearl
-	{"NEWPROD11_NAME",			3,					1},				--5		Vortex Cube
-	{"UI_CLAMPEARL_NAME",		1,					1},				--15	Living Pearl
-	{"UI_VENTGEM_NAME",			4,					1},				--5		Crystal Sulphide
-	{"UI_EYEBALL_NAME",			1,					1},				--5		Hypnotic Eye
-	{"UI_DRONE_SHARD_NAME",		3,					1},				--5		Radiant Shard
-
+{--	Product Name					StackMultMult	BuyBaseMarkupMult
+	{"NEWPROD12_NAME",				2,				1},				--5		Sac Venom
+	{"NEWPROD13_NAME",				2,				1},				--5		Gravitino Ball
+	{"NEWPROD14_NAME",				4,				1},				--5		Albumen Pearl
+	{"NEWPROD11_NAME",				3,				1},				--5		Vortex Cube
+	{"UI_CLAMPEARL_NAME",			1,				1},				--15	Living Pearl
+	{"UI_VENTGEM_NAME",				4,				1},				--5		Crystal Sulphide
+	{"UI_EYEBALL_NAME",				1,				1},				--5		Hypnotic Eye
+	{"UI_DRONE_SHARD_NAME",			3,				1},				--5		Radiant Shard
+	
+	{"FUELGEL3_NAME",				0.25,			1},				--20	Life Support Gel	(BuyBaseMarkupMult set by CheapConsumableSpaceStationMarkup below)
+	{"POWERCELL_NAME",				0.4,			1},				--20	Ion Battery			(BuyBaseMarkupMult set by CheapConsumableSpaceStationMarkup below)
+	{"LAUNCHFUEL_NAME",				0.25,			1},				--4		Starship Launch Fuel	(BuyBaseMarkupMult set by LaunchFuelBuyBaseMarkup below)
+	
 	{"UI_TRADE_ITEM_ALLOY_1_NAME",	TradeMult,		0.5},			--25,	0.1	Trade item
 	{"UI_TRADE_ITEM_ALLOY_2_NAME",	TradeMult,		0.5},			--25,	0.1	Trade item
 	{"UI_TRADE_ITEM_ALLOY_3_NAME",	TradeMult,		0.5},			--25,	0.1	Trade item
@@ -612,14 +636,14 @@ ProductStackChanges =
 	{"UI_TRADE_ITEM_TECH_3_NAME",	TradeMult,		0.5},			--25,	0.1	Trade item
 	{"UI_TRADE_ITEM_TECH_4_NAME",	TradeMult,		0.5},			--25,	0.1	Trade item
 	{"UI_TRADE_ITEM_TECH_5_NAME",	TradeMult,		0.5},			--25,	0.1	Trade item
-	{"UI_ILLEGAL_PROD1_NAME",	IllTradeMult,		0.5},			--25,	0.1	Illegal Trade item
-	{"UI_ILLEGAL_PROD2_NAME",	IllTradeMult,		0.5},			--25,	0.1	Illegal Trade item
-	{"UI_ILLEGAL_PROD3_NAME",	IllTradeMult,		0.5},			--25,	0.1	Illegal Trade item
-	{"UI_ILLEGAL_PROD4_NAME",	IllTradeMult,		0.5},			--25,	0.1	Illegal Trade item
-	{"UI_ILLEGAL_PROD5_NAME",	IllTradeMult,		0.5},			--25,	0.1	Illegal Trade item
-	{"UI_ILLEGAL_PROD6_NAME",	IllTradeMult,		0.5},			--25,	0.1	Illegal Trade item
-	{"UI_ILLEGAL_PROD7_NAME",	IllTradeMult,		0.5},			--25,	0.1	Illegal Trade item
-	{"UI_ILLEGAL_PROD8_NAME",	IllTradeMult,		0.5},			--25,	0.1	Illegal Trade item
+	{"UI_ILLEGAL_PROD1_NAME",		IllTradeMult,	0.5},			--25,	0.1	Illegal Trade item
+	{"UI_ILLEGAL_PROD2_NAME",		IllTradeMult,	0.5},			--25,	0.1	Illegal Trade item
+	{"UI_ILLEGAL_PROD3_NAME",		IllTradeMult,	0.5},			--25,	0.1	Illegal Trade item
+	{"UI_ILLEGAL_PROD4_NAME",		IllTradeMult,	0.5},			--25,	0.1	Illegal Trade item
+	{"UI_ILLEGAL_PROD5_NAME",		IllTradeMult,	0.5},			--25,	0.1	Illegal Trade item
+	{"UI_ILLEGAL_PROD6_NAME",		IllTradeMult,	0.5},			--25,	0.1	Illegal Trade item
+	{"UI_ILLEGAL_PROD7_NAME",		IllTradeMult,	0.5},			--25,	0.1	Illegal Trade item
+	{"UI_ILLEGAL_PROD8_NAME",		IllTradeMult,	0.5},			--25,	0.1	Illegal Trade item
 }
 
 --Multipliers to apply to the item's Product Stack multiplier (vanilla total stack size, not multiplier, is listed in the -- comments below)
@@ -1112,43 +1136,40 @@ SubstanceBuyBaseMarkup = 			14				--0.25			Most Substances
 ExpensiveSubBuyBaseMarkup =			29				--3.5 or 4.5	(as of 4.08, now Oxygen, Di-Hydrogen, Sodium, Sodium Nitrate = 3.5, & Uranium = 4.5 instead)
 	--SubstanceBuyMarkupMod = 			0				--0			(as of 4.08, now Oxygen, Di-Hydrogen, Sodium, Sodium Nitrate, & Uranium = 1 instead)
 
---Consumables
---Consumables are Life Support Gel, Ion Battery, Starship Launch Fuel, Di-Hydrogen Jelly, Warp Fuel, Antimatter, etc.
+
+--Consumables are Life Support Gel, Ion Battery, Starship Launch Fuel, Di-Hydrogen Jelly, Warp Fuel, Antimatter, Unstable Plasma, etc.
+	--Cheap Consumables
 CheapConsumableSpaceStationMarkup = 1				--0
 CheapConsumableBuyBaseMarkup = 		149				--0.2
-	--CheapConsumableBuyMarkupMod = 	0				--0
-LifSupGelBuyBaseMarkupMult =		2				-- Extra multiplier applied to the BuyBaseMarkup for Life Support Gel, on top of other multipliers
 
+LifSupGelBuyBaseMarkupMult =		2				-- Extra multiplier applied to the BuyBaseMarkup for Life Support Gel, on top of other multipliers
+ProjAmmoBuyBaseMarkup =				39				--0.2
+
+	--Regular Consumables
 ConsumableSpaceStationMarkup = 		1				--0 	except ANTIMATTER is 0.5
 ConsumableBuyBaseMarkup = 			4				--0.2	except LAUNCHFUEL & SUBFUEL is 98, ANTIMATTER is 5, and AM_HOUSING is 2
-	--ConsumableBuyMarkupMod = 			0				--0 	except ANTIMATTER and all 3 types of FRIGATE_FUEL is 1.5
+
 StarshieldBuyBaseMarkupMult =		0.444			-- Extra multiplier applied to the BuyBaseMarkup for Starshield Battery, on top of other multipliers
-
-LaunchAndSubFuelBuyBaseMarkup	=	199				--98
+UnstablePlasmaBuyBaseMarkupMult =	2				-- Extra multiplier applied to the BuyBaseMarkup for Unstable Plasma, on top of other multipliers
+LaunchFuelBuyBaseMarkup	=			199				--98
+HydrothermalFuelCellBuyBaseMarkup =	10				--98
 AntimatterBuyBaseMarkup	=			9				--5
-	--AntimatterAndFrigateFuelBuyMarkupMod =1.5			--1.5
 
-NavDataSpaceStationMarkup =			0.2				--0.5		Navigation Data
-NavDataBuyBaseMarkup =				9				--0.2
-DropPodDataSpaceStationMarkup =		1				--0.5		Exosuit Upgrade Charts
-DropPodDataBuyBaseMarkup =			5				--0.2
-
---Components
 --Components are generally the items used to craft/repair technology such as Metal Plating, Microprocessor, Hermetic Seal, Hydraulic Wiring, etc.
+	--Cheap Components
 CheapComponentSpaceStationMarkup = 	1				--0 	
 CheapComponentBuyBaseMarkup = 		11.5			--0.2
-	--CheapComponentBuyMarkupMod = 		0				--0
+
+MetalPlatingBuyBaseMarkupMult =		1.2				-- Extra multiplier applied to the BuyBaseMarkup for Metal Plating, on top of other multipliers
 NanoTubeBuyBaseMarkupMult =			1.5				-- Extra multiplier applied to the BuyBaseMarkup for Carbon Nanotubes, on top of other multipliers
 
+	--Regular Components
 ComponentSpaceStationMarkup = 		1				--0
 ComponentBuyBaseMarkup = 			9				--1.2
-	--ComponentBuyMarkupMod = 			0				--0
 
 MicrochipBuyBaseMarkup =			11.5			--8.5
-
 LoomSpaceStationMarkup = 			1				--0
 LoomBuyBaseMarkup = 				0.2				--0.2
-	--LoomBuyMarkupMod = 				2				--2
 
 --Price for these reduced to compete against buying & salvaging a small starship to get a Reactor Core, rather than competing against upgrading an existing starship's Class
 CClassReactorBaseMarkup =			0.5				--0			(BaseValue 100 in PTSd)
@@ -1157,6 +1178,10 @@ AClassReactorBaseMarkup =			21.15*0.305		--0			(BaseValue 1084 in PTSd)
 SClassReactorBaseMarkup =			27*0.186		--0			(BaseValue 2000 in PTSd)
 
 --Miscellaneous other items
+NavDataSpaceStationMarkup =			0.2				--0.5		Navigation Data
+NavDataBuyBaseMarkup =				24				--0.2
+DropPodDataSpaceStationMarkup =		1				--0.5		Exosuit Upgrade Charts
+DropPodDataBuyBaseMarkup =			5				--0.2
 LarvalCoreSpaceStationMarkup =		0				--0			(BaseValue 65000)
 LarvalCoreBaseMarkup =				1.4				--0.2
 HadalCoreSpaceStationMarkup =		0				--0			(BaseValue 97500)
@@ -1168,10 +1193,10 @@ CargoBulkheadBaseMarkup =			3				--0.2		(BaseValeu 105000)
 BoundaryMapBaseMarkup =				15				--0			(BaseValeu 3200)
 ArtifactChartBaseMarkup =			19				--0			(BaseValeu 3200)
 AnomalyDetectorBaseMarkup =			19				--0.2		(BaseValeu 3200)
---This items normally from scrapping starships, and added to shops in PTSd to be used for repairing Sentinel tech
+--These items below normally from scrapping starships, and added to shops in PTSd to be used for repairing Sentinel tech
 SalvagedTechSpaceStationMarkup =	0.05			--0
 SalvagedTechBaseMarkup =			0.1				--0.1
-	--The increased BaseMarkup for these items balanced out with increased amounts of Tainted Metal rewarded in Rewards Remixer.lua
+--The increased BaseMarkup for these items below balanced out with increased amounts of Tainted Metal rewarded in Rewards Remixer.lua
 SusGoodsSpaceStationMarkup =		300				--300		(BaseValue 150)		Suspicious Packet (Goods)
 SusGoodsBaseMarkup =				2.6				--0.2
 SusTechSpaceStationMarkup =			715				--300		(BaseValue 200)		Suspicious Packet (Tech)
@@ -1267,10 +1292,10 @@ ProductCostChanges =
 	{"FUELGEL3_NAME",				CheapConsumableSpaceStationMarkup,	CheapConsumableBuyBaseMarkup*LifSupGelBuyBaseMarkupMult},		--Life Support Gel			BaseValue = 200
 	{"POWERCELL_NAME",				CheapConsumableSpaceStationMarkup,	CheapConsumableBuyBaseMarkup},		--Ion Battery				BaseValue = 200
 	{"FUEL_JELLY_NAME",				CheapConsumableSpaceStationMarkup,	CheapConsumableBuyBaseMarkup},		--Di-Hydrogen Jelly			BaseValue = 200
-	{"AMMO_PROD_NAME",				CheapConsumableSpaceStationMarkup,	CheapConsumableBuyBaseMarkup},		--Projectile Ammo			BaseValue = 1
+	{"AMMO_PROD_NAME",				CheapConsumableSpaceStationMarkup,	ProjAmmoBuyBaseMarkup},				--Projectile Ammo			BaseValue = 1
 	--Consumables, all are BaseMarkup = 0.2 unless otherwise noted
 	{"UI_SHIPCHARGE_NAME",			ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup*StarshieldBuyBaseMarkupMult},--Starshield Battery		BaseValue = 500
-	{"GRENFUEL1_NAME",				ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup},				--Unstable Plasma			BaseValue = 5750
+	{"GRENFUEL1_NAME",				ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup*UnstablePlasmaBuyBaseMarkupMult},				--Unstable Plasma			BaseValue = 5750
 	{"HYPERFUEL1_NAME",				ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup},				--Warp Cell					BaseValue = 46750
 	{"HYPERFUEL2_NAME",				ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup},				--Warp Hypercore			BaseValue = 46750
 	{"AM_HOUSING_NAME",				ConsumableSpaceStationMarkup,	ConsumableBuyBaseMarkup},				--Antimatter Housing, 		BaseValue = 6500	BaseMarkup = 2
@@ -1281,10 +1306,10 @@ ProductCostChanges =
 	{"UI_NAV_DATA_NAME",			NavDataSpaceStationMarkup,		NavDataBuyBaseMarkup},					--Navigation Data			BaseValue = 1000	BaseMarkup = 0.2, SpaceStationMarkup = 0.5
 	{"UI_NAV_DROPPOD_NAME",			DropPodDataSpaceStationMarkup,	DropPodDataBuyBaseMarkup},				--Drop Pod Coordinates		BaseValue = 85000	BaseMarkup = 0.2, SpaceStationMarkup = 0.5
 	
-	{"LAUNCHFUEL_NAME",				ConsumableSpaceStationMarkup,	LaunchAndSubFuelBuyBaseMarkup},			--BaseMarkup = 98,			BaseValue = 450
-	{"UI_SUBFUEL_NAME",				ConsumableSpaceStationMarkup,	LaunchAndSubFuelBuyBaseMarkup},			--BaseMarkup = 98,			BaseValue = 7200
+	{"LAUNCHFUEL_NAME",				ConsumableSpaceStationMarkup,	LaunchFuelBuyBaseMarkup},				--BaseMarkup = 98,			BaseValue = 450
+	{"UI_SUBFUEL_NAME",				ConsumableSpaceStationMarkup,	HydrothermalFuelCellBuyBaseMarkup},		--BaseMarkup = 98,			BaseValue = 7200
 	--Cheap Components, all are BaseMarkup = 0.2
-	{"CASING_NAME",					CheapComponentSpaceStationMarkup,	CheapComponentBuyBaseMarkup},		--BaseValue = 800	Metal Plating
+	{"CASING_NAME",					CheapComponentSpaceStationMarkup,	CheapComponentBuyBaseMarkup*MetalPlatingBuyBaseMarkupMult},		--BaseValue = 800	Metal Plating
 	{"NANOTUBES_NAME",				CheapComponentSpaceStationMarkup,	CheapComponentBuyBaseMarkup*NanoTubeBuyBaseMarkupMult},		--BaseValue = 500
 	{"CARBON_SEAL_NAME",			CheapComponentSpaceStationMarkup,	CheapComponentBuyBaseMarkup},		--BaseValue = 800
 	
@@ -1650,24 +1675,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "HULK_REACTOR"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FOOD_P_DUSTWILD"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Description", FuelRodDescCat}
+								{"Description", AloeFleshDesc}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "HULK_DATACORE"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "FOOD_J_DUST"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Description", CPUHarnessDescCat}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "HULK_LOCKBOX"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Description", StasisLockerDescCat}
+								{"Description", RefDrinkDesc}
 							}
 						},
 					}
@@ -2077,15 +2095,49 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X1"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"BaseValue", CorvetteTractorSalePrice}
+								{"BaseValue", CorvTractorSalePrice},
+								{"IsCraftable", "true"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X2"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"BaseValue", math.floor(CorvetteTractorSalePrice/2)}
+								{"BaseValue", math.floor(CorvTractorSalePrice/2)},
+								{"IsCraftable", "true"}
 							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X1"},
+							["PRECEDING_KEY_WORDS"] = {"Requirements"},
+							["CREATE_HOS"] = "TRUE",
+                            ["ADD"] = AddedItemCost (CorvNewIngredient1, CorvNewIngredient1Amount, "Product")
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X1",		"Requirements", "GcTechnologyRequirement"},
+							["ADD"] = AddedItemCost (CorvNewIngredient3, CorvNewIngredient3Amount, "Product"),
+							["ADD_OPTION"] = "ADDafterSECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X1",		"Requirements", "GcTechnologyRequirement"},
+							["ADD"] = AddedItemCost (CorvNewIngredient2, CorvNewIngredient2Amount, "Product"),
+							["ADD_OPTION"] = "ADDafterSECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X2"},
+							["PRECEDING_KEY_WORDS"] = {"Requirements"},
+							["CREATE_HOS"] = "TRUE",
+                            ["ADD"] = AddedItemCost (CorvNewIngredient1, CorvNewIngredient1Amount, "Product")
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X2",		"Requirements", "GcTechnologyRequirement"},
+							["ADD"] = AddedItemCost (CorvNewIngredient3, math.floor(CorvNewIngredient3Amount/2), "Product"),
+							["ADD_OPTION"] = "ADDafterSECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X2",		"Requirements", "GcTechnologyRequirement"},
+							["ADD"] = AddedItemCost (CorvNewIngredient2, math.floor(CorvNewIngredient2Amount/2), "Product"),
+							["ADD_OPTION"] = "ADDafterSECTION",
 						},
 					}
 				}
@@ -2221,6 +2273,19 @@ for i = 1, #DeepSpaceNaniteChanges do
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"RecipeCost", RecipeMult}
+				}
+			}
+end
+for i = 1, #HulkSalvageDescChanges do
+	local ID = HulkSalvageDescChanges[i][1]
+	local DescId = HulkSalvageDescChanges[i][2]
+
+			ChangesToProduct[#ChangesToProduct+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", ID},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Description", DescId}
 				}
 			}
 end

@@ -7,10 +7,11 @@ LOW_UNITS_MULTI			= 10	-- Default value is 1 | Terminals and other unit sources 
 								-- are multiplied by this number on top of the regular unit multiplier (so by default = 5 * 10 = 50x multiplier)
 								
 NANITES_MULTI			= 5		-- Default value is 1 | Multiplys the amount of nanites you get
+RECYCLE_NANITES_MULTI   = 5     -- Default value is 1 | Multiplys the amount of nanites you get from waste recycling
 
 NADA_MILESTONE_REWARD	= 150	-- Default value is 50 | Sets the reward value (in nanites) for each milestone tier at Nada and other anomalies (in the Space Anomaly)
 
-QS_MULTI				= 5		-- Default value is 1 | Multiplys the amount of quicksilver you get
+QS_MULTI				= 10	-- Default value is 1 | Multiplys the amount of quicksilver you get
 
 MISSION_UNITS_MULTI		= 5		-- Default value is 1 | Multiplys the amount of units you get from Mission Board (Space Station) Missions
 MISSION_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Mission Board (Space Station) Missions
@@ -30,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 	= "BetterRewardsNoWR",
 ["MOD_BATCHNAME"]	= "BetterRewardsNoWR",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "7.0",
+["NMS_VERSION"]		= "7.05",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to unit, nanite and quicksilver reward values without extra word learning and no resource or product multipliers",
 ["MODIFICATIONS"] 	=
 	{
@@ -78,6 +79,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AmountMax",	NANITES_MULTI}
 							}
 						},
+
+                        {
+                            ["SPECIAL_KEY_WORDS"]	= {"RewardMessage", "IGNORE"},
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value",	RECYCLE_NANITES_MULTI}
+							}
+                        },
 
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Currency", "Specials"},

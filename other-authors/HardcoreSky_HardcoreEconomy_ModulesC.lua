@@ -1,5 +1,3 @@
--- GENERADO por nmsmods (ver memory/notes/economy-overhaul.md); no editar a mano.
--- Listas de modulos extraidas del dump 7.02 (defaultreality GcTradeData).
 
 local MODULES = {
   { "AlwaysPresentProducts", "SHIP_CORE_C", "C" },
@@ -202,7 +200,6 @@ local PIRATES = {
   { "AlwaysPresentProducts", "U_SHIPSHIELDX" },
 }
 
--- precios de slots del traje: valor vanilla -> valor x6
 local SLOT_PRICES = {
   { "1000", "6000" },
   { "5000", "30000" },
@@ -246,7 +243,6 @@ local KEEP = { C = KEEP_C, B = KEEP_B, A = KEEP_A, S = false }
 
 local function rule(t) return t end
 
--- ===== reglas de economia (aplican a los 3 zips MAIN) =====
 local eco_class = {}
 if ECONOMY then
   local classes = { "Mining", "HighTech", "Trading", "Manufacturing", "Fusion", "Scientific", "PowerGeneration" }
@@ -283,8 +279,6 @@ end
 
 local eco_products = {}
 if ECONOMY then
-  -- AMUMSS: MATH_OPERATION sobre campos array corrompe la salida -> sin reglas por ID.
-  -- BaseValue es escalar por producto, asi que una regla global es segura.
   eco_products[1] = {
     REPLACE_TYPE       = "ALL",
     INTEGER_TO_FLOAT   = "PRESERVE",
@@ -295,7 +289,6 @@ end
 
 local eco_reality = {}
 if ECONOMY then
-  -- precios por sistema rico
   for _, f in ipairs({ "Poor", "Average", "Wealthy", "Pirate" }) do
     eco_reality[#eco_reality + 1] = {
       PRECEDING_KEY_WORDS = { "TradeProductsPriceImprovements" },
@@ -303,12 +296,10 @@ if ECONOMY then
       VALUE_CHANGE_TABLE  = { { f, "-0.3" } },
     }
   end
-  -- trueque peor
   eco_reality[#eco_reality + 1] = {
     REPLACE_TYPE       = "ALL",
     VALUE_CHANGE_TABLE = { { "BarterPriceMultiplier", "3" } },
   }
-  -- menos variedad y menos stock
   eco_reality[#eco_reality + 1] = {
     REPLACE_TYPE      = "ALL",
     INTEGER_TO_FLOAT  = "PRESERVE",
@@ -325,7 +316,6 @@ if ECONOMY then
       VALUE_CHANGE_TABLE  = { { "Poor", "0.5" }, { "Average", "0.5" }, { "Wealthy", "0.5" }, { "Pirate", "0.5" } },
     }
   end
-  -- escanear deja de ser una mina
   for _, t in ipairs({ "Unknown", "SolarSystem", "Planet", "Animal", "Flora", "Mineral", "Sector",
                        "Building", "Interactable", "Sentinel", "Starship", "Artifact", "Mystery",
                        "Treasure", "Control", "HarvestPlant", "FriendlyDrone", "SpacePoi", "SpaceStation" }) do
@@ -337,10 +327,6 @@ if ECONOMY then
       VALUE_CHANGE_TABLE = { { "Common", "0.15" }, { "Uncommon", "0.15" }, { "Rare", "0.15" }, { "Mission", "0.15" } },
     }
   end
-  -- NOTA: los precios de slots (SuitUpgradePrices / SuitTechOnlyUpgradePrices /
-  -- SuitCargoUpgradePrices) NO se tocan: son arrays con valores duplicados y AMUMSS
-  -- corrompe la salida (MATH sobre array = lineas marcadas _remove; VALUE_MATCH
-  -- encadena x36 y duplica _index). Pendiente con el motor MXML propio.
 end
 
 local eco_difficulty = {}
@@ -357,7 +343,6 @@ if ECONOMY then
   end
 end
 
--- ===== filtro de clases (zips ModulesC / ModulesCB / ModulesCBA) =====
 local class_rules = {}
 if ECONOMY then
   for _, m in ipairs(MODULES) do
@@ -371,7 +356,6 @@ if ECONOMY then
   end
 end
 
--- ===== modulos ilegales (zip NoPirateModules) =====
 local pirate_rules = {}
 if NO_PIRATE then
   for _, p in ipairs(PIRATES) do
@@ -410,7 +394,6 @@ else
   MBIN_CHANGE_TABLE[#MBIN_CHANGE_TABLE + 1] = reality
 end
 
--- reglas de clase: van al fichero DEFAULTREALITY
 if #class_rules > 0 then
   local target
   for _, e in ipairs(MBIN_CHANGE_TABLE) do
@@ -419,7 +402,6 @@ if #class_rules > 0 then
   for _, r in ipairs(class_rules) do target.EXML_CHANGE_TABLE[#target.EXML_CHANGE_TABLE + 1] = r end
 end
 
--- reglas pirata: DEFAULTREALITY
 if #pirate_rules > 0 then
   local target
   for _, e in ipairs(MBIN_CHANGE_TABLE) do

@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "6_43"
+GameVersion = "7_04"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 RevertMiningLaserOverheatChanges = false				--false		If set to true, reverts the cooldown timer after overheating for Mining/Hijacked/Runic Laser etc. back to vanilla values, and will match up with the UI overheat overlay again.
@@ -76,7 +76,7 @@ ExocraftCannonChargeMultiplier =			2/1.44				--1				How effective substances are
 NautilonCannonCharge =						400/1.44			--200			(Amount of charge for the recharge bar of the Nautilon Cannon)
 NautilonCannonChargeMultiplier =			2/1.44				--1				How effective substances are at recharging the charge bar
 MinotaurCannonCharge =						400/(1.44*1.25)		--400			(Amount of charge for the recharge bar of the Minotaur Cannon)
-MinotaurCannonChargeMultiplier =			1/(1.44*1.25)		--1				How effective substances are at recharging the charge bar
+MinotaurCannonChargeMultiplier =			1.67/(1.44*1.25)	--1				How effective substances are at recharging the charge bar
 
 --Misc Weapon adjustments
 MechStunWeaponRadius =						4					--5				AOE Radius of minotaur stun weapon shots

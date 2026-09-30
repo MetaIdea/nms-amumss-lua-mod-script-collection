@@ -1,9 +1,3 @@
--- HardcoreSky - Gel-Fed Life Support  (v1.1.0)
---   La vida soporte dura mucho, pero solo el Life Support Gel la recarga (1 gel = barra llena).
---   El oxigeno y la dioxita dejan de cargar (ChargeValue = 0).
---   Receta del gel por variante (sustituye la lista entera):
---     * x30min (facil, materiales de inicio en GRANDES cantidades): 5 JELLY + 2 LAUNCHFUEL + 250 CATALYST1
---     * x20min / x15min: ingrediente duro unico (como en v1.0)
 local PROT       = 900
 local GEL_CHARGE = 150
 local ING1_ID, ING1_TYPE, ING1_AMOUNT = "JELLY", "Product", 5

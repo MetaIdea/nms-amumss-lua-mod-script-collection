@@ -1,20 +1,43 @@
 ModName = "PTSd Text Description Adjustments"
-GameVersion = "7_03"
+GameVersion = "7_05"
 Description = "Changes the Text display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 --[[
-NOTE: When using a computer set to a language other than English, PTSd's edits to the names & descriptions for vanilla items/technologies/difficulty settings will not be displayed by default. 
-These edits make the descriptions display accurate info for the changes that PTSd makes, as well as giving more context and tips for using PTSd, especially for the Difficulty Setting descriptions.
+NOTE: When using a computer set to a language other than English, PTSd's edits to the names & descriptions for vanilla 
+items/technologies/difficulty settings will not be displayed by default. These edits make the descriptions display accurate 
+info for the changes that PTSd makes, as well as giving more context and tips for using PTSd, especially for the Difficulty 
+Setting descriptions.
 
-If you want to see the accurate info and added context / tips (in English), you can force them to display even when using other language settings by following these instructions
-(This example is for Japanese, for other languages see the list below):
+If you want to see the accurate info and added context / tips (in English), you can force them to display even when using 
+other language settings by following one of these 2 instructions (These examples are for Japanese, for other languages 
+see the list after the instructions):
+
+==========OPTION A: Quick & Easy==========
+This will quickly make all vanilla text edited by PTSd appear (in English) on your current Language setting, but for every
+vanilla description that PTSd edits, it will convert the entire description into English, even if PTSd only adds a few 
+words at the end/beginning.
+
+1.	Open LocTable.MXML inside the "PTSd Text Edits" folder with any text editor.
+2.	Do a Find & Replace (ctrl-h on Windows) Replace All from 		"English"	 to 	"Japanese"		 (do include the quotation marks "")
+Then just save the file, and PTSd's edits to vanilla text should display when using that language setting. You should be 
+able to keep using the same edited "PTSd Text Edits" folder even after most NMS updates, though you can repeat the process with a 
+newer version of PTSd's LocTable.MXML if a future PTSd update adds more text changes you want to include.
+
+
+==========OPTION B: Slower & More Thorough==========
+This will also make all vanilla text edited by PTSd appear (in English) on your current Language setting, but for any
+vanilla descriptions that PTSd only adds some words to the end/beginning, the rest of the description will remain in
+you current Language setting.
 
 0.	Download AMUMSS if you do not already have it (instructions on downloading & using AMUMSS here: https://www.nexusmods.com/nomanssky/mods/2626 )
 1.	Open the "PTSd Text Description Adjustments.lua" file in the PTSd Miscellaneous module with any text editor (such as Notepad or Notepad++)
 2.	Do a Find & Replace (ctrl-h on Windows) Replace All from 		ENGLISH.MBIN	 to 	JAPANESE.MBIN
 3.	Also do a Replace All from 		"English"	 to 	"Japanese"		 (do include the quotation marks "")
 4.	Recompile the "PTSd Text Edits" module as a Combined Mod with AMUMSS by placing it in AMUMSS' ModScript folder and running BUILDMOD.bat
-Then just use the resulting edited "PTSd Text Edits" module in place of the original one, and PTSd's edits to vanilla text should display when using that language setting. You should be able to re-use the same recompiled "PTSd Text Edits" module even after most NMS updates, though you can repeat the process with a newer version of "PTSd Text Description Adjustments.lua" if PTSd adds more text edits you want to include.
+Then just use the resulting edited "PTSd Text Edits" module in place of the original one, and PTSd's edits to vanilla text 
+should display when using that language setting. You should be able to re-use the same recompiled "PTSd Text Edits" module 
+even after most NMS updates, though you can repeat the process with a newer version of "PTSd Text Description Adjustments.lua" 
+if a future PTSd update adds more text changes you want to include.
 
 List of terms to use in steps 2. & 3. instead of JAPANESE.MBIN / "Japanese" for other languages:
 ENGLISH.MBIN		"English"
@@ -81,8 +104,11 @@ VesperSailDesc =
 PulseEngineDesc =
 [[Spaceflight propulsion, boosts and on-demand Pulse Jumps through local system.&#xA; &#xA;User is advised that &lt;EXOTIC&gt;Tritium&lt;&gt; or &lt;TECHNOLOGY&gt;Pyrite&lt;&gt; is required to charge Pulse Engine. Tritium is abundant in &lt;COMMODITY&gt;near-space asteroid fields&lt;&gt;. Locate Tritium with the starship scanner (&lt;IMG&gt;SCAN&lt;&gt;).&#xA;&#xA;Hold &lt;IMG&gt;PULSEJUMP&lt;&gt; to engage Pulse Jump.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to initiate in-flight speed boost.&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: With enough bonuses to &lt;TECHNOLOGY&gt;Boost Speed&lt;&gt;, any type of starship can eventually become fast enough to outrun even the fastest enemies in space.]]
 
-LuminanceEnigineDesc =
+LuminanceEngineDesc =
 [[Aligns the ship's electromagnetic emissions with &lt;FUEL&gt;A T L A S&lt;&gt; waves, providing &lt;STELLAR&gt;highly maneuverable&lt;&gt; propulsion capability as well as Pulse Jump speed and efficiency &lt;STELLAR&gt;slightly above&lt;&gt; standard starships.&#xA; &#xA;The sub-light drive hungers for &lt;EXOTIC&gt;tritium&lt;&gt; or &lt;SPECIAL&gt;radiant shards&lt;&gt;.&#xA;&#xA;Hold &lt;IMG&gt;PULSEJUMP&lt;&gt; to engage Pulse Jump.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to initiate in-flight speed boost.]]
+
+LandingPadDesc =
+[[A stable, reinforced landing pad for starships with integrated launch-assist coils. Takeoffs from a landing pad such as this one &lt;TRADE&gt;consume no Launch Fuel&lt;&gt;.]]
 
 LauncherDesc =
 [[Vital launch and landing gear system, can also &lt;HIGHLIGHT&gt;summon&lt;&gt; your starship at &lt;STELLAR&gt;double&lt;&gt; normal launch cost.&#xA;&#xA;User is advised that &lt;TECHNOLOGY&gt;specialised fuel&lt;&gt; or &lt;CATALYST&gt;Uranium&lt;&gt; is required to recharge thruster. Launch procedures require sufficient fuel levels before activation.&#xA;&lt;FUEL&gt;NOTE&lt;&gt;: &lt;HIGHLIGHT&gt;Supercharging&lt;&gt; the core &lt;TECHNOLOGY&gt;Launch Thruster&lt;&gt; tech &lt;FUEL&gt;increases&lt;&gt; launch cost due to negative high-voltage interactions.&#xA;&#xA;&lt;SPECIAL&gt;Interceptors&lt;&gt; only spend &lt;STELLAR&gt;80%&lt;&gt; of usual Launch costs,&#xA;&lt;HIGHLIGHT&gt;Solar Ships&lt;&gt; only spend &lt;STELLAR&gt;75%&lt;&gt; of usual Launch costs,&#xA;&lt;TRADE&gt;Shuttles&lt;&gt; only spend &lt;STELLAR&gt;66%&lt;&gt; of usual Launch costs,&#xA;&lt;TECHNOLOGY&gt;Explorers&lt;&gt; only spend &lt;STELLAR&gt;50%&lt;&gt; of usual Launch costs&#xA;&lt;STELLAR&gt;Corvettes&lt;&gt; spend &lt;STELLAR&gt;140%&lt;&gt; of usual Launch costs by default.&#xA;&#xA;Hold &lt;IMG&gt;THRUST&lt;&gt; to take off from planet.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to initiate in-flight speed boost.]]
@@ -149,7 +175,7 @@ DeflectShieldDesc =
 [[Energy shield that protects spacecraft from laser fire, in-flight projectiles and accidental space debris interaction.&#xA;&#xA;User is advised that &lt;CATALYST&gt;catalytic elements&lt;&gt; or &lt;HIGHLIGHT&gt;Starshield Batteries&lt;&gt; are required to recharge device.&#xA;&#xA;Operates automatically once constructed within user's starship inventory.]]
 
 PulsingHeartDesc =
-[[A fibrous metallic superstructure binds this warm and vital organ with the core of the ship. Without it, the ship would be nothing, a lifeless husk.&#xA;Has superior &lt;STELLAR&gt;Pulse Jump speed&lt;&gt; performance compared to standard starship engines, at least &lt;TECHNOLOGY&gt;non-amplified&lt;&gt; ones.&#xA;&#xA;Hold &lt;IMG&gt;PULSEJUMP&lt;&gt; to ask the heart to initiate a Pulse Jump.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to request a speed boost.]]
+[[A fibrous metallic superstructure binds this warm and vital organ with the core of the ship. Without it, the ship would be nothing, a lifeless husk.&#xA;Has slightly faster &lt;STELLAR&gt;Pulse Jump speed&lt;&gt; performance compared to standard starship engines, at least &lt;TECHNOLOGY&gt;non-amplified&lt;&gt; ones.&#xA;&#xA;Hold &lt;IMG&gt;PULSEJUMP&lt;&gt; to ask the heart to initiate a Pulse Jump.&#xA;Hold &lt;IMG&gt;BOOST&lt;&gt; to request a speed boost.]]
 
 RocketLauncherDesc =
 [[A &lt;TECHNOLOGY&gt;long range&lt;&gt; starship weapon, capable of delivering a highly explosive torpedo across massive distances with a very high &lt;STELLAR&gt;critical hit&lt;&gt; damage multiplier and easy to aim.&#xA;&#xA;Note: explosive damage is &lt;STELLAR&gt;highly effective&lt;&gt; against &lt;STELLAR&gt;unshielded&lt;&gt; targets, but &lt;TITLE&gt;ineffective&lt;&gt; against &lt;TITLE&gt;shielded&lt;&gt; targets. Ideal as a low-investment &lt;FUEL&gt;finisher weapon&lt;&gt; on weakened opponets. &#xA;&#xA;Use &lt;IMG&gt;CYCLEWEAPON&lt;&gt; to change weapon mode. Press &lt;IMG&gt;SHIPFIRE&lt;&gt; to fire.]]
@@ -572,7 +598,10 @@ ExhibitDesc =
 [[%CRE_DESC%&#xA;&#xA;This &lt;STELLAR&gt;curated fossil exhibit&lt;&gt; can be traded, but &lt;FUEL&gt;selling it is frowned upon&lt;&gt; among archaeologists, as it &lt;HIGHLIGHT&gt;belongs in a museum&lt;&gt;, or re-deployed within a &lt;TECHNOLOGY&gt;base&lt;&gt;.]]
 
 AutoPosUnitDesc =
-[[A container of positioning units and associated wiring, produced in a system with a &lt;TECHNOLOGY&gt;high-tech&lt;&gt; economy.&#xA;&#xA;These APS units can be used to turn virtually any technology into a self-navigating system. Highly valuable in &lt;SPECIAL&gt;power generation&lt;&gt; economies, where they're used to remove conductive organic hands from the manufacturing process.]]
+[[A container of positioning units and associated wiring, produced in a system with a &lt;TECHNOLOGY&gt;high-tech&lt;&gt; economy.&#xA;&#xA;These APS units can be used to turn virtually any technology into a self-navigating system. Highly valuable in &lt;SPECIAL&gt;power generation&lt;&gt; economies, where they're used to remove conductive organic hands from the manufacturing process.&#xA;&#xA;Can also be refined together with &lt;STELLAR&gt;Salvaged Data&lt;&gt; and &lt;STELLAR&gt;Platinum&lt;&gt; to create &lt;TECHNOLOGY&gt;Navigation Data&lt;&gt;.]]
+
+SalvagedDataNote =
+[[, or refined together with &lt;STELLAR&gt;Platinum&lt;&gt; and &lt;STELLAR&gt;Autonomous Positioning Units&lt;&gt; purchased in &lt;TECHNOLOGY&gt;high-tech&lt;&gt; economy systems to create &lt;TECHNOLOGY&gt;Navigation Data&lt;&gt;.]]
 
 TutorialDesc1 =
 [[I find myself alone on a strange world, unequipped and in danger. I have no memory of how I got here, no sense of a before.&#xA;&#xA;My Exosuit at least seems to know what it is doing, and I am not dead yet...&#xA;&#xA;I should find a &lt;TRADE&gt;cave&lt;&gt; as &lt;FUEL&gt;soon as possible&lt;&gt;, to seek shelter from the &lt;CATALYST&gt;harsh environment&lt;&gt; and find &lt;STELLAR&gt;useful ingredients&lt;&gt;.]]
@@ -679,10 +708,6 @@ MechAiPilotTechDescNote = [[&#xA;&#xA;&lt;FUEL&gt;WARNING&lt;&gt;: This &lt;TECH
 
 RecCircBrokenSlotNote = [[&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: Inspecting this slot with &lt;IMG&gt;REPAIR&lt;&gt; may reveal additional &lt;TECHNOLOGY&gt;Recycled Circuitry&lt;&gt; that may be required to fully repair this slot.]]
 
-AloeFleshNote = [[&#xA;&#xA;Can be cooked together with &lt;FUEL&gt;Condensed Carbon&lt;&gt; into &lt;TRADE&gt;Steamed Vegetables&lt;&gt; in a Nutrient Processor.]]
-
-RefreshingDrinkNote = [[&#xA;&#xA;Can be cooked together with &lt;STELLAR&gt;Refined Flour&lt;&gt; into a plant-based &lt;TRADE&gt;Cream&lt;&gt; in a Nutrient Processor.]]
-
 SimpleFoodNote = [[&#xA;&#xA;Will restore a small amount of &lt;FUEL&gt;Exosuit health&lt;&gt; if &lt;STELLAR&gt;consumed directly&lt;&gt;.]]
 
 CondStellarIceNote = [[&#xA;&#xA;Can be refined together with &lt;STELLAR&gt;Silver&lt;&gt; into &lt;TECHNOLOGY&gt;Tritium&lt;&gt; in a refiner.]]
@@ -695,11 +720,15 @@ GelFibresNote = [[&#xA;&#xA;Can be refined together with &lt;FUEL&gt;Faecium&lt;
 
 CrystalSulphideNote = [[&#xA;&#xA;Can be refined into &lt;CATALYST&gt;Sodium Nitrate&lt;&gt; in a refiner.]]
 
-DeepSpaceAsteroidsNote = [[ Especially lucrative in terms of &lt;STELLAR&gt;units&lt;&gt; or &lt;TECHNOLOGY&gt;Tritium&lt;&gt;.]]
+DeepSpaceAsteroidsNote = [[ Especially lucrative in terms of &lt;STELLAR&gt;units&lt;&gt; and &lt;TECHNOLOGY&gt;Tritium&lt;&gt;. &lt;TRADE&gt;Mining&lt;&gt; &lt;TECHNOLOGY&gt;Stellar Geodes&lt;&gt; directly will yield additional &lt;TECHNOLOGY&gt;substances&lt;&gt;, at the cost of losing the salvage to sell at a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;.]]
 
-DeepSpaceHulkNote = [[ Analysis indicates the presence of a &lt;TRADE&gt;variety&lt;&gt; of valuable salvage, including both items worth many &lt;STELLAR&gt;units&lt;&gt; and some worth many &lt;HIGHLIGHT&gt;nanites&lt;&gt;.]]
+DeepSpaceHulkDesc = [[&lt;TECHNOLOGY&gt;&lt;IMG&gt;SLASH&lt;&gt;Starmap Analysis Report&lt;IMG&gt;SLASH&lt;&gt;&lt;&gt;&#xA;&#xA;&lt;STELLAR&gt;Signal Type&lt;&gt;: Large spaceship wreck.&#xA;&#xA;&lt;STELLAR&gt;Route recommendation&lt;&gt;: Profitable salvage and clean-up opportunities detected. Analysis indicates the presence of a &lt;STELLAR&gt;variety&lt;&gt; of &lt;TRADE&gt;valuable&lt;&gt; salvage, including both items worth &lt;HIGHLIGHT&gt;many&lt;&gt; &lt;STELLAR&gt;units&lt;&gt; and some worth &lt;HIGHLIGHT&gt;many&lt;&gt; &lt;HIGHLIGHT&gt;nanites&lt;&gt;. &lt;TRADE&gt;Mining&lt;&gt; &lt;TECHNOLOGY&gt;Industrial Salvage&lt;&gt; directly will yield additional &lt;SPECIAL&gt;substances&lt;&gt;, at the cost of losing the salvage to sell at a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;Caution&lt;&gt;: Hull instability detected. High probability of meltdown. Core extraction requires advanced extravehicular activity.]]
 
-DeepSpaceInfestedDesc = [[&lt;TECHNOLOGY&gt;&lt;IMG&gt;SLASH&lt;&gt;Starmap Analysis Report&lt;IMG&gt;SLASH&lt;&gt;&lt;&gt;&#xA;&#xA;&lt;STELLAR&gt;Signal Type&lt;&gt;: Former deep-space outpost. No activity detected.&#xA;&#xA;&lt;STELLAR&gt;Route recommendation&lt;&gt;: Salvage and clean-up opportunity. Especially lucrative in terms of &lt;HIGHLIGHT&gt;nanites&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;Caution&lt;&gt;: High probability of biological hazards.]]
+DeepSpaceWasteSiteNote = [[ Analysis indicates most items are likely of &lt;TRADE&gt;moderate&lt;&gt; value in &lt;STELLAR&gt;units&lt;&gt; or &lt;HIGHLIGHT&gt;nanites&lt;&gt;. &lt;TRADE&gt;Mining&lt;&gt; &lt;TECHNOLOGY&gt;Industrial Salvage&lt;&gt; directly will yield additional &lt;SPECIAL&gt;substances&lt;&gt;, at the cost of losing the salvage to sell at a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;.]]
+
+DeepSpaceInfestedDesc = [[&lt;TECHNOLOGY&gt;&lt;IMG&gt;SLASH&lt;&gt;Starmap Analysis Report&lt;IMG&gt;SLASH&lt;&gt;&lt;&gt;&#xA;&#xA;&lt;STELLAR&gt;Signal Type&lt;&gt;: Former deep-space outpost. No activity detected.&#xA;&#xA;&lt;STELLAR&gt;Route recommendation&lt;&gt;: Salvage and clean-up opportunity. Especially lucrative in terms of &lt;HIGHLIGHT&gt;nanites&lt;&gt;. &lt;TRADE&gt;Mining&lt;&gt; &lt;TECHNOLOGY&gt;Unusual Samples&lt;&gt; directly will yield additional &lt;TRADE&gt;substances&lt;&gt;, at the cost of losing the salvage to sell at a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;Caution&lt;&gt;: High probability of biological hazards.]]
+
+CorvTractorBeamDescAlt = [[A cargo utility module for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, allowing for the collection and storage of salvage and debris. User is advised to employ a &lt;TECHNOLOGY&gt;Gravitino Coil&lt;&gt; in tandem with this module when moving large objects.]]
 
 AresTradeItem3 = "Sea Glass"
 
@@ -816,17 +845,27 @@ SpaceGunkRefineItemDescs =
 	},
 }
 
-DeepSpaceLowNaniteItem = [[&#xA;&#xA;Can also be sold for a &lt;STELLAR&gt;modest amount&lt;&gt; of &lt;STELLAR&gt;nanites&lt;&gt; to a quartermaster of a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, instead of selling for a substantial amount of units to other vendors.]]
+DeepSpaceLowNaniteItemDesc = [[Full of heavy metals and precious synthetics, this is a valuable piece of industrial salvage.&#xA;&#xA;Harvested from the decaying remains of a collapsing &lt;TECHNOLOGY&gt;space hulk&lt;&gt;. This has been processed at a &lt;STELLAR&gt;deep-space outpost&lt;&gt;, and can be sold on the open market.&#xA;Sells for &lt;HIGHLIGHT&gt;significantly more&lt;&gt; &lt;STELLAR&gt;units&lt;&gt; to other vendors, compared to selling for &lt;HIGHLIGHT&gt;nanites&lt;&gt; to a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;.]]
 
-DeepSpaceMedNaniteItem = [[&#xA;&#xA;Can instead be sold for a &lt;TRADE&gt;roughly equivalent value&lt;&gt; in &lt;STELLAR&gt;nanites&lt;&gt; to a quartermaster of a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, compared to selling for units to other vendors.]]
+DeepSpaceMedNaniteItemDesc = [[Full of heavy metals and precious synthetics, this is a valuable piece of industrial salvage.&#xA;&#xA;Harvested from the decaying remains of a collapsing &lt;TECHNOLOGY&gt;space hulk&lt;&gt;. This has been processed at a &lt;STELLAR&gt;deep-space outpost&lt;&gt;, and can be sold on the open market.&#xA;Sells for a &lt;TRADE&gt;roughly equivalent&lt;&gt; amount of &lt;HIGHLIGHT&gt;nanites&lt;&gt; to a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt; or &lt;STELLAR&gt;units&lt;&gt; to other vendors.]]
 
-DeepSpaceHighNaniteItem = [[&#xA;&#xA;Fetches a &lt;HIGHLIGHT&gt;significantly higher&lt;&gt; price in &lt;STELLAR&gt;nanites&lt;&gt; when sold to a quartermaster of a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, compared to selling for some units to other vendors.]]
+DeepSpaceHighNaniteItemDesc = [[Still sealed, this is an extremely valuable piece of industrial salvage.&#xA;&#xA;Harvested from the decaying remains of a collapsing &lt;TECHNOLOGY&gt;space hulk&lt;&gt;. This has been processed at a &lt;STELLAR&gt;deep-space outpost&lt;&gt;, and can be sold on the open market.&#xA;Sells for &lt;HIGHLIGHT&gt;significantly more&lt;&gt; &lt;HIGHLIGHT&gt;nanites&lt;&gt; to a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, compared to selling for &lt;STELLAR&gt;units&lt;&gt; at other vendors.]]
 
-DeepSpaceHighNaniteItemDescs =
+DeepSpaceLowNaniteItemNote = [[&#xA;Sells for &lt;HIGHLIGHT&gt;significantly more&lt;&gt; &lt;STELLAR&gt;units&lt;&gt; to other vendors, compared to selling for &lt;HIGHLIGHT&gt;nanites&lt;&gt; to a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;.]]
+
+DeepSpaceHighNaniteItemNote = [[&#xA;Sells for &lt;HIGHLIGHT&gt;significantly more&lt;&gt; &lt;HIGHLIGHT&gt;nanites&lt;&gt; to a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;, compared to selling for &lt;STELLAR&gt;units&lt;&gt; at other vendors.]]
+
+DeepSpaceSalvageItemNotes =
 {
 	{
 		{7},		--"LANGUAGE\NMS_LOC9_ENGLISH.MBIN",
-		{"UI_HULK_RARE_DESC", "UI_SLIME_BLOB_DESC", "UI_SLIME_SAMPLE_DESC", }
+		{"UI_ASTEROID_CRYSTAL_DESC", },
+		{DeepSpaceLowNaniteItemNote}
+	},
+	{
+		{7},		--"LANGUAGE\NMS_LOC9_ENGLISH.MBIN",
+		{"UI_SLIME_BLOB_DESC", "UI_SLIME_SAMPLE_DESC", },
+		{DeepSpaceHighNaniteItemNote}
 	},
 }
 
@@ -901,7 +940,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_DESCRIPTION"]		= Description,
 	["MOD_AUTHOR"]			= "Xen0nex",
 	["NMS_VERSION"]			= GameVersion,   
-	----["EXML_CREATE"] = "FALSE",  
+	--["EXML_CREATE"] = "FALSE",  
     ["MODIFICATIONS"] 		= 
     {
 	    {
@@ -1226,6 +1265,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"English", ExoRadarUpgr2Desc}
 							}
 						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_LANDINGPAD_DESCRIPTION"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", LandingPadDesc}
+							}
+						},
 					}
 				},
 				{
@@ -1503,20 +1549,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", IonisedCobaltDesc}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "FOOD_PLANT_DESC"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"English", AppendText (AloeFleshNote)}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "FOOD_DRINK_DESC"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"English", AppendText (RefreshingDrinkNote)}
 							}
 						},
 						{
@@ -2444,7 +2476,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SHIPJUMP_ROBO_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"English", LuminanceEnigineDesc}
+								{"English", LuminanceEngineDesc}
 							}
 						},
 						{
@@ -2832,24 +2864,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_ASTEROID_CRYSTAL_DESC"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"English", AppendText (DeepSpaceLowNaniteItem)}
-							}
-						},
-						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "UI_HULK_COMMON_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"English", AppendText (DeepSpaceLowNaniteItem)}
+								{"English", DeepSpaceLowNaniteItemDesc}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "UI_HULK_UNCOMMON_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"English", AppendText (DeepSpaceMedNaniteItem)}
+								{"English", DeepSpaceMedNaniteItemDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_HULK_RARE_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", DeepSpaceHighNaniteItemDesc}
 							}
 						},
 						{
@@ -2933,14 +2965,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SPACEPOI_DESC_HULK"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"English", AppendText (DeepSpaceHulkNote)}
+								{"English", DeepSpaceHulkDesc}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SPACEPOI_DESC_WASTESITE"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"English", AppendText (DeepSpaceHulkNote)}
+								{"English", AppendText (DeepSpaceWasteSiteNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_BIG_MAG_1X1_DESC_ALT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CorvTractorBeamDescAlt}
 							}
 						},
 					}
@@ -3161,13 +3200,14 @@ for i = 1, #SpaceGunkRefineItemDescs do
 		end
 end
 
-for i = 1, #DeepSpaceHighNaniteItemDescs do
-	local ChangeTableNum = DeepSpaceHighNaniteItemDescs[i][1][1]
-	local Descs = DeepSpaceHighNaniteItemDescs[i][2]
+for i = 1, #DeepSpaceSalvageItemNotes do
+	local ChangeTableNum = DeepSpaceSalvageItemNotes[i][1][1]
+	local Descs = DeepSpaceSalvageItemNotes[i][2]
+	local Value = DeepSpaceSalvageItemNotes[i][3][1]
 			
 		for j = 1, #Descs do
 			DescId = Descs[j]
-			Text = [[{:}]]..DeepSpaceHighNaniteItem..[[]]
+			Text = [[{:}]]..Value..[[]]
 		
 			NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][ChangeTableNum]["MXML_CHANGE_TABLE"][#NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][ChangeTableNum]["MXML_CHANGE_TABLE"]+1] =
 			{
@@ -3228,6 +3268,15 @@ for i = 1, #DurationHazModuleIDs do
 				}
 			}
 end
+
+						ChangesToLoc4[#ChangesToLoc4+1] =
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BP_SALVAGE_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (SalvagedDataNote)}
+							}
+						}
 
 local ChangesToLoc8 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["MXML_CHANGE_TABLE"]
 

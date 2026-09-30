@@ -1,12 +1,13 @@
 FuelConsumptionPercent = 2
 FuelRegenPercent = 400
-TopSpeedPercent = 250
-BoostSpeedPercent = 300
+TopSpeedPercent = 500
+BoostSpeedPercent = 150
+VehicleMassPercent = 150
 SubTopSpeedPercent = 200
 SubBoostSpeedPercent = 250
 BoostTanksPercent = 3000
-ForwardGripPercent = 75
-SkidGripPercent = 500
+ForwardGripPercent = 125
+SkidGripPercent = 350
 MechTopSpeedPercent = 450
 MechBoostSpeedPercent = 500
 MechTurnSpeedPercent = 300
@@ -30,7 +31,7 @@ GripBonusPercent - percentage of original grip strength
 MechTopSpeedPercent - percentage of original Minotaur engine top speed
 MechBoostSpeedPercent - percentage of original Minotaur boost speed
 ]],
-["NMS_VERSION"]   = "7.02",
+["NMS_VERSION"]   = "7.04",
 ["MODIFICATIONS"] =
   {
     {
@@ -234,7 +235,8 @@ MechBoostSpeedPercent - percentage of original Minotaur boost speed
                 {"MechLandBrake",   "@*"..(MechTopSpeedPercent / 100)},
                 {"MechJetpackDrainRate",   "0"},
                 {"MechWalkToRunTimeIdle",   "0"},
-                {"VehicleBoostFuelRate",   "0"},
+                {"VehicleBoostFuelRate",   "-99"},
+                {"VehicleBoostFuelRateSurvival",   "-99"},
                 {"VehicleFuelRate",   "@*"..(FuelConsumptionPercent / 100)},
                 {"VehicleFuelRateTruckMultiplier",   "0"},
               }
@@ -248,12 +250,176 @@ MechBoostSpeedPercent - percentage of original Minotaur boost speed
               }
             },
             {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "BIKE"},
+              ["PRECEDING_KEY_WORDS"] = {"GcVehicleData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TopSpeedForward",   "@*"..(TopSpeedPercent / 100)},
+                {"TopSpeedReverse",   "@*"..(TopSpeedPercent / 100)},
+                {"WheelMaxAccelForceForward",   "@*"..(4 * TopSpeedPercent / 100)},
+                {"WheelMaxAccelForceReverse",   "@*"..(4 * TopSpeedPercent / 100)},
+                {"WheelMaxDecelForceNonBraking",   "@/"..(TopSpeedPercent / 100)},
+                --{"WheelMaxDecelForceBraking",   "@/"..(TopSpeedPercent / 100)},
+                {"WheelSpinniness",   "@/"..(TopSpeedPercent / 100)},
+                {"WheelDragginess",   "@*"..(TopSpeedPercent / 100)},
+                {"WheelFrontFrictionOmega",   "@*"..(ForwardGripPercent / 100)},
+                {"WheelFrontFrictionDynamicThreshold",   "@*"..(ForwardGripPercent / 100)},
+                {"WheelFrontFrictionStaticThreshold",   "@*"..(ForwardGripPercent / 100)},
+                {"WheelSideFrictionOmega",   "@*"..(SkidGripPercent / 100)},
+                {"WheelSideFrictionDynamicThreshold",   "@*"..(SkidGripPercent / 100)},
+                {"WheelSideFrictionStaticThreshold",   "@*"..(SkidGripPercent / 100)},
+                {"VehicleJumpForce",   "@*"..(BoostSpeedPercent / 100)},
+                {"VehicleGravity",   "@*"..(VehicleMassPercent / 100)},
+                {"VehicleBoostMaxSpeed",   "@*"..(BoostSpeedPercent / 100)},
+                {"VehicleBoostRechargeTime",   "0.000001"},
+                {"VehicleJumpAirRotateXAmount",   "1.0"}, --orig 10
+                {"VehicleJumpAirRotateZAmount",   "1.0"}, --orig 40
+                {"VehicleJumpAirMaxTorque",   "50000.0"}, --orig 1000
+                {"TurningWheelForce",   "-12.0"},
+                {"TurningWheelFrictionOmega",   "0.8"},
+                {"TurningWheelFrictionNonBraking",   "12"},
+                {"TurningWheelFrictionBraking",   "12.0"},
+                {"VehicleAngularDampingGround",   "@*"..(SkidGripPercent / 100)},
+                {"VehicleLinearDampingAerial",   "@/"..(TopSpeedPercent / 100)},
+                {"VehicleAngularDampingAerial",   "@/"..(TopSpeedPercent / 100)},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "MED_BUGGY"},
+              ["PRECEDING_KEY_WORDS"] = {"GcVehicleData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TopSpeedForward",   "@*"..(TopSpeedPercent / 100)},
+                {"TopSpeedReverse",   "@*"..(TopSpeedPercent / 100)},
+                {"WheelMaxAccelForceForward",   "@*"..(4 * TopSpeedPercent / 100)},
+                {"WheelMaxAccelForceReverse",   "@*"..(4 * TopSpeedPercent / 100)},
+                {"WheelMaxDecelForceNonBraking",   "@/"..(TopSpeedPercent / 100)},
+                --{"WheelMaxDecelForceBraking",   "@/"..(TopSpeedPercent / 100)},
+                {"WheelSpinniness",   "@/"..(TopSpeedPercent / 100)},
+                {"WheelDragginess",   "@*"..(TopSpeedPercent / 100)},
+                {"WheelFrontFrictionOmega",   "@*"..(ForwardGripPercent / 100)},
+                {"WheelSideFrictionOmega",   "@*"..(SkidGripPercent / 100)},
+                {"TurningWheelForce",   "-3.0"}, --orig -1
+                {"TurningWheelFrictionOmega",   "0.8"},
+                {"TurningWheelFrictionNonBraking",   "6.0"}, --orig 3
+                {"TurningWheelFrictionBraking",   "10.0"}, --orig 5
+                {"VehicleJumpForce",   "@*"..(BoostSpeedPercent / 100)},
+                {"VehicleGravity",   "@*"..(VehicleMassPercent / 100)},
+                {"VehicleBoostForce",   "@*"..(BoostSpeedPercent / 100)},
+                {"VehicleBoostMaxSpeed",   "@*"..(BoostSpeedPercent / 100)},
+                {"VehicleBoostRechargeTime",   "0.000001"},
+                {"VehicleJumpAirRotateXAmount",   "1.0"}, --orig 40
+                {"VehicleJumpAirRotateZAmount",   "1.0"}, --orig 40
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "TRUCK"},
+              ["PRECEDING_KEY_WORDS"] = {"GcVehicleData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TopSpeedForward",   "@*"..(TopSpeedPercent / 100)},
+                {"TopSpeedReverse",   "@*"..(TopSpeedPercent / 100)},
+                {"WheelMaxAccelForceForward",   "@*"..(4 * TopSpeedPercent / 100)},
+                {"WheelMaxAccelForceReverse",   "@*"..(4 * TopSpeedPercent / 100)},
+                {"WheelMaxDecelForceNonBraking",   "@/"..(TopSpeedPercent / 100)},
+                --{"WheelMaxDecelForceBraking",   "@/"..(TopSpeedPercent / 100)},
+                {"WheelSpinniness",   "@/"..(TopSpeedPercent / 100)},
+                {"WheelDragginess",   "@*"..(TopSpeedPercent / 100)},
+                {"WheelFrontFrictionOmega",   "@*"..(ForwardGripPercent / 100)},
+                {"WheelFrontFrictionDynamic",   "@*"..(ForwardGripPercent / 100)},
+                {"VehicleJumpForce",   "@*"..(BoostSpeedPercent / 100)},
+                {"VehicleGravity",   "@*"..(VehicleMassPercent / 100)},
+                {"VehicleBoostForce",   "@*"..(BoostSpeedPercent / 100)},
+                {"VehicleBoostMaxSpeed",   "@*"..(BoostSpeedPercent / 100)},
+                {"VehicleBoostRechargeTime",   "0.000001"},
+                {"VehicleJumpAirRotateXAmount",   "1.0"}, --orig 40
+                {"VehicleJumpAirRotateZAmount",   "1.0"}, --orig 40
+                {"TurningWheelForce",   "-3.0"}, --orig -3
+                {"TurningWheelFrictionOmega",   "0.8"},
+                {"TurningWheelFrictionNonBraking",   "2.5"}, --orig 0.75
+                {"TurningWheelFrictionBraking",   "3.0"}, --orig 1
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "WHEELEDBIKE"},
+              ["PRECEDING_KEY_WORDS"] = {"GcVehicleData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TopSpeedForward",   "@*"..(TopSpeedPercent / 100)},
+                {"TopSpeedReverse",   "@*"..(TopSpeedPercent / 100)},
+                {"WheelMaxAccelForceForward",   "@*"..(4 * TopSpeedPercent / 100)},
+                {"WheelMaxAccelForceReverse",   "@*"..(4 * TopSpeedPercent / 100)},
+                {"WheelMaxDecelForceNonBraking",   "@/"..(TopSpeedPercent / 100)},
+                --{"WheelMaxDecelForceBraking",   "@/"..(TopSpeedPercent / 100)},
+                {"WheelSpinniness",   "@/"..(TopSpeedPercent / 100)},
+                {"WheelDragginess",   "@*"..(TopSpeedPercent / 100)},
+                {"WheelFrontFrictionOmega",   "@*"..(ForwardGripPercent / 100)},
+                {"WheelSideFrictionOmega",   "@*"..(SkidGripPercent / 100)},
+                {"WheelSideFrictionDynamicThreshold",   "@*"..(SkidGripPercent / 100)},
+                {"WheelSideFrictionStaticThreshold",   "@*"..(SkidGripPercent / 100)},
+                {"VehicleGravity",   "@*"..(VehicleMassPercent / 100)},
+                {"VehicleJumpForce",   "@*"..(BoostSpeedPercent / 100)},
+                {"VehicleBoostMaxSpeed",   "@*"..(BoostSpeedPercent / 100)},
+                {"VehicleBoostRechargeTime",   "0.000001"},
+                {"VehicleJumpAirRotateXAmount",   "1.0"}, --orig 10
+                {"VehicleJumpAirRotateZAmount",   "1.0"}, --orig 40
+                {"TurningWheelForce",   "-6.0"}, --orig -3
+                {"TurningWheelFrictionOmega",   "0.8"},
+                {"TurningWheelFrictionNonBraking",   "16"}, --orig 8
+                {"TurningWheelFrictionBraking",   "10.0"}, --orig 2
+                {"VehicleLinearDampingGround",   "@/"..(ForwardGripPercent / 100)},
+                {"VehicleAngularDampingGround",   "@/"..(SkidGripPercent / 100)},
+                {"VehicleLinearDampingAerial",   "@*"..(TopSpeedPercent / 100)},
+                {"VehicleAngularDampingAerial",   "@*"..(TopSpeedPercent / 100)},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "WHEELEDBIKE"},
+              ["PRECEDING_KEY_WORDS"] = {"WheelSideAngularFactor"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Z",   "@/"..(SkidGripPercent / 100)},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "HOVERCRAFT"},
+              ["PRECEDING_KEY_WORDS"] = {"GcVehicleData"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"TopSpeedForward",   "@*"..(TopSpeedPercent / 100)},
+                {"TopSpeedReverse",   "@*"..(TopSpeedPercent / 100)},
+                {"WheelMaxAccelForceForward",   "@*"..(4 * TopSpeedPercent / 100)},
+                {"WheelMaxAccelForceReverse",   "@*"..(4 * TopSpeedPercent / 100)},
+                {"WheelMaxDecelForceNonBraking",   "@/"..(TopSpeedPercent / 100)},
+                --{"WheelMaxDecelForceBraking",   "@/"..(TopSpeedPercent / 100)},
+                {"WheelSpinniness",   "@/"..(TopSpeedPercent / 100)},
+                {"WheelDragginess",   "@*"..(TopSpeedPercent / 100)},
+                {"WheelFrontFrictionOmega",   "@*"..(ForwardGripPercent / 100)},
+                {"WheelSideFrictionOmega",   "@*"..(SkidGripPercent / 100)},
+                {"WheelSideFrictionDynamicThreshold",   "@*"..(SkidGripPercent / 100)},
+                {"WheelSideFrictionStaticThreshold",   "@*"..(SkidGripPercent / 100)},
+                {"VehicleJumpForce",   "@*"..(BoostSpeedPercent / 100)},
+                {"VehicleGravity",   "@*"..(VehicleMassPercent / 100)},
+                {"VehicleBoostMaxSpeed",   "@*"..(BoostSpeedPercent / 100)},
+                {"VehicleBoostRechargeTime",   "0.000001"},
+                {"VehicleJumpAirRotateXAmount",   "1.0"}, --orig 10
+                {"VehicleJumpAirRotateZAmount",   "1.0"}, --orig 40
+                {"TurningWheelForce",   "-12.0"},
+                {"TurningWheelFrictionOmega",   "0.8"},
+                {"TurningWheelFrictionNonBraking",   "12"},
+                {"TurningWheelFrictionBraking",   "12.0"},
+                {"VehicleAngularDampingGround",   "@*"..(SkidGripPercent / 100)},
+                {"VehicleLinearDampingAerial",   "@/"..(TopSpeedPercent / 100)},
+                {"VehicleAngularDampingAerial",   "@/"..(TopSpeedPercent / 100)},
+              }
+            },
+            {
               ["SPECIAL_KEY_WORDS"] = {"Name", "MECH"},
               ["PRECEDING_KEY_WORDS"] = {"GcVehicleData"},
               ["VALUE_CHANGE_TABLE"] =
               {
                 {"TopSpeedForward",   "@*"..(MechTopSpeedPercent / 100)},
-                {"WheelMaxAccelForceForward",   "@*"..(MechTopSpeedPercent / 100)},
+                {"WheelMaxAccelForceForward",   "@*"..(4 * MechTopSpeedPercent / 100)},
               }
             },
           },

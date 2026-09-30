@@ -2,17 +2,17 @@ Author			= "JMZawodny"
 ModName			= "zFlatbed"
 ModNameSub		= "Friction"
 BaseDescription = "Make the cargo more stable"
-GameVersion		= "v6.23"
+GameVersion		= "v7.04"
 ModVersion		= ""
 
 -- Values
 Friction = 0.999
-Rolling = 0.999
-Angular = 0.999
-Linear = 0.999
+Rolling  = 0.999
+Angular  = 0.999
+Linear   = 0.999
 -- Factors
-Health = 8
-Impact = 4
+Health   = 8
+Impact   = 4
 Velocity = 4
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -84,29 +84,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{"OnTruckMinRelativeVelocityModifier" ,"@/"..Velocity},
 				}
 			},
-		}
-	},
 --[[
-	{ -- Adjust Static
-		MBIN_FILE_SOURCE = {
-			"Models\Planets\Biomes\Common\Buildings\Props\Abandoned\Shared\junk.entity.MBIN",
-		},
-		MXML_CHANGE_TABLE = 
-		{
 			{ -- Set the values
 				SKW = {
-					{"Components" ,"TkStaticPhysicsComponentData", "Data", "TkPhysicsData"},
+					{"Components" ,"TkPhysicsComponentData"},
 				},
 				VCT = {
-					{"Friction" ,Friction},
-					{"RollingFriction" ,Rolling},
-					{"AngularDamping" ,Angular},
-					{"LinearDamping" ,Linear},
+					{"BlocksInteract" ,"false"},
 				}
 			},
+--]]
 		}
 	},
---]]
 	{ -- Adjust Durability
 		MBIN_FILE_SOURCE = {
 			"Models\Planets\Common\PhysicsProps\explosive_large_crate\entities\ExplosiveLargeCrate.entity.MBIN",
@@ -131,6 +120,5 @@ NMS_MOD_DEFINITION_CONTAINER =
 			},
 		}
 	},
-
 	}},}
 }

@@ -1,7 +1,7 @@
 Author = "Xen0nex"
 ModName = "PTSd Scan Rewards + Shops etc"
 Description = "Adjusts scan & discovery rewards and items available in shops. Also changes % chance to spawn jellyfish / anglerfish underwater."
-GameVersion = "7_01"
+GameVersion = "7_04"
 
 TradeBasicCorvetteParts = true						--false			Set to true to allow trading even Basic Corvette parts (purchased from the Corvette workshop) for Advanced Corvette parts, instead of only being able to trade in Advanced parts found as loot
 
@@ -58,29 +58,33 @@ AnglerfishSpawnChance = 0.450000					--0.500000		Chance to spawn Anglerfish when
 --Removes items from the OptionalProducts stock of shops
 ShopStockRemoved =
 {
-	{
-		{"NAV_DATA_DROP"},							--Item to be removed
-		{"Shop",}									--Shops to remove it from
+	{	--Item ID		ProductType
+		{"NAV_DATA_DROP","OptionalProducts"},	--Item to be removed (Exosuit Upgrade Chart)
+		{"Shop",}								--Shops to remove it from
 	},
 	{
-		{"NAV_DATA"},								--Navigation Data
-		{"Shop"}									--"Regular" Galactic Trade Terminals, such as embedded in the wall in Minor Settlements? TechShop is the NPC trader behind the counter in Minor Settlements
+		{"NAV_DATA",	"OptionalProducts"},	--Navigation Data
+		{"Shop"}								--"Regular" Galactic Trade Terminals, such as embedded in the wall in Minor Settlements? TechShop is the NPC trader behind the counter in Minor Settlements
 	},
 	{
-		{"ALLOY1"},
+		{"ALLOY1",		"OptionalProducts"},
 		{"Shop",	"SpaceStation"}
 	},
 	{
-		{"ALLOY2"},
+		{"ALLOY2",		"OptionalProducts"},
 		{"Shop",	"SpaceStation"}
 	},
 	{
-		{"ALLOY4"},
+		{"ALLOY4",		"OptionalProducts"},
 		{"Shop",	"SpaceStation"}
 	},
 	{
-		{"ALLOY5"},
+		{"ALLOY5",		"OptionalProducts"},
 		{"Shop",	"SpaceStation"}
+	},
+	{
+		{"B_MAG_1X1",	"AlwaysPresentProducts"},--Corvette Tractor Beam
+		{"BiggsBasicShop",	"BiggsBarterShop"}
 	}
 }
 
@@ -592,7 +596,7 @@ BasicCorvetteParts =
 {"B_COK_D", "B_HAB_B", "B_LND_A", "B_WNG_H", "B_GEN_1", "B_TUR_A", "B_ALK_A", "B_TRU_D", "B_WNG_I", "B_STR_A_N", "B_STR_C_NE", "B_DECO_A", "B_DECO_M", "B_MAG_1X1"}
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..GameVersion,
+["MOD_FILENAME"]	= ModName.." "..GameVersion..".pak",
 ["MOD_DESCRIPTION"]	= Description,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
@@ -691,13 +695,14 @@ for i = 1, #DiscoveryChanges do
 end
 for i = 1, #ShopStockRemoved do
 	local ItemID = ShopStockRemoved[i][1][1]
+	local ProductType = ShopStockRemoved[i][1][2]
 	local ShopIDs = ShopStockRemoved[i][2]
 
 	for j = 1, #ShopIDs do
 		ShopID = ShopIDs[j]
 			ChangesToDefaultReality[#ChangesToDefaultReality+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {ShopID, "GcTradeData",		"OptionalProducts", ItemID},
+				["SPECIAL_KEY_WORDS"] = {ShopID, "GcTradeData",		ProductType, ItemID},
 				["REPLACE_TYPE"] 		= "ALL",
 				["REMOVE"] = "LINE",
 			}

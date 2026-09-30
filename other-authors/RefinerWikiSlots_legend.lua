@@ -28889,7 +28889,6 @@ local function tag_wrap(tag, s)
   return "<"..tag..">"..tostring(s).."<>"
 end
 
--- forceCommodity=true for Cooking so all inputs render yellow like Substances
 local function wiki_line(rec, forceCommodity)
   local function resultName(n) return "<TECHNOLOGY>"..xml_escape(n).."<>" end
   local function ingName(n, t)
@@ -28978,7 +28977,6 @@ local TITLES = {
     Korean="요리", Japanese="料理"
   },
 
-  -- Page titles (use these instead of "Slot 1/2/3")
   PAGE_COOK_I1 = {
     English="Cooking — 1 Ingredient", USEnglish="Cooking — 1 Ingredient",
     French="Cuisine — 1 ingrédient", Italian="Cucina — 1 ingrediente", German="Kochen — 1 Zutat",
@@ -29042,7 +29040,6 @@ local TITLES = {
   }
 }
 
--- Use explicit page titles (not "Slot 1/2/3")
 local TOPICS_COOK = {
   {scope="cook",   slot="slot1", topic_id="UI_HC_COOK_T1", short_id="UI_HC_COOK_T1_S", page="UI_HC_COOK_P1", title=TITLES.PAGE_COOK_I1, shortTitle=TITLES.PAGE_COOK_I1},
   {scope="cook",   slot="slot2", topic_id="UI_HC_COOK_T2", short_id="UI_HC_COOK_T2_S", page="UI_HC_COOK_P2", title=TITLES.PAGE_COOK_I2, shortTitle=TITLES.PAGE_COOK_I2},
@@ -29091,7 +29088,7 @@ for _,tp in ipairs(TOPICS_COOK) do
     local arr = (METADATA[tp.scope] and METADATA[tp.scope][tp.slot] and METADATA[tp.scope][tp.slot][metaKey])
              or (METADATA[tp.scope] and METADATA[tp.scope][tp.slot] and METADATA[tp.scope][tp.slot]["english"])
              or {}
-    body_texts[field] = build_body_text(arr, true) -- Cooking: force yellow inputs
+    body_texts[field] = build_body_text(arr, true)
   end
   table.insert(LOC_ENTRIES, make_loc_entry(tp.page.."_BODY", body_texts))
 end
@@ -29106,7 +29103,7 @@ for _,tp in ipairs(TOPICS_NC) do
     local arr = (METADATA[tp.scope] and METADATA[tp.scope][tp.slot] and METADATA[tp.scope][tp.slot][metaKey])
              or (METADATA[tp.scope] and METADATA[tp.scope][tp.slot] and METADATA[tp.scope][tp.slot]["english"])
              or {}
-    body_texts[field] = build_body_text(arr, true) -- Refiner: force yellow inputs too
+    body_texts[field] = build_body_text(arr, true)
   end
   table.insert(LOC_ENTRIES, make_loc_entry(tp.page.."_BODY", body_texts))
 end
@@ -29198,7 +29195,7 @@ local ADD_FILES = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-  MOD_FILENAME    = "RefinerWikiSlots.pak",
+  MOD_FILENAME    = "RefinerWikiSlots_legend",
   MOD_AUTHOR      = "Azunain",
   LUA_AUTHOR      = "Azunain",
   NMS_VERSION     = "7.02",

@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Communism"
-GameVersion = "6.40"
+GameVersion = "7.04"
 Description = "Makes every Expedition and Twitch item added by Consumerism FREE OF CHARGE."
 
 ProductIDList =
@@ -806,7 +806,47 @@ ProductIDList =
   {"ID", "SWARM_HAT"},
   {"ID", "SWARM_LEGS"},
   {"ID", "SWARM_PACK"},
-  {"ID", "SWARM_TORSO"}
+  {"ID", "SWARM_TORSO"},
+  {"ID", "ACCESS4"},
+  {"ID", "BANNER_MAINFAM"},
+  {"ID", "BANNER_NMSA"},
+  {"ID", "BOBBLE_ASTRO"},
+  {"ID", "EXPD_BANNER23"},
+  {"ID", "EXPD_DECAL23"},
+  {"ID", "EXPD_EGG_23"},
+  {"ID", "EXPD_GUN23"},
+  {"ID", "EXPD_POSTER23A"},
+  {"ID", "EXPD_POSTER23B"},
+  {"ID", "EXPD_POSTER23C"},
+  {"ID", "EXPD_POSTER23D"},
+  {"ID", "EXPD_POSTER23E"},
+  {"ID", "EXPD_POSTER23F"},
+  {"ID", "EXPD_POSTER23G"},
+  {"ID", "EXPD_POSTER23H"},
+  {"ID", "EXPD_POSTER23I"},
+  {"ID", "EXPD_SHIP23A"},
+  {"ID", "EXPD_SHIP23b"},
+  {"ID", "EXPD_TITLE23"},
+  {"ID", "S23_BEACON"},
+  {"ID", "S23_ODD_EGG"},
+  {"ID", "S23_PRISMS_EGG"},
+  {"ID", "S23_PROD"},
+  {"ID", "SLIME_BLOB"},
+  {"ID", "SLIME_STAR"},
+  {"ID", "TWITCH_GUN31"},
+  {"ID", "TWITCH_GUN32"},
+  {"ID", "TWITCH_GUN33"},
+  {"ID", "TWITCH_PET26"},
+  {"ID", "TWITCH_PET27"},
+  {"ID", "TWITCH_SHIP61"},
+  {"ID", "TWITCH_SHIP62"},
+  {"ID", "TWITCH_SHIP63"},
+  {"ID", "TWITCH_SHIP64"},
+  {"ID", "TWITCH_SHIP65"},
+  {"ID", "DECAL_OOGC"},
+  {"ID", "BANNER_OOGC"},
+  {"ID", "DECAL_RSS"},
+  {"ID", "BANNER_RSS"}
 }
 
 NMS_MOD_DEFINITION_CONTAINER = 
