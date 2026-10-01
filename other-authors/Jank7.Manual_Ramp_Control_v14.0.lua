@@ -392,9 +392,9 @@ mbinChanges[#mbinChanges + 1] = {
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME		= 'Jank7.Manual_Ramp_Control_v14.0',
-	MOD_BATCHNAME 		= 'Jank7_Ultimate_Landing_Bays_v3.0',
+	MOD_BATCHNAME 		= 'Jank7_Ultimate_Landing_Bays_v7.08',
 	MOD_AUTHOR			= 'Jank7',
-	NMS_VERSION			= '7.03',
+	NMS_VERSION			= '7.05',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS		= {{ MBIN_CHANGE_TABLE = mbinChanges }},

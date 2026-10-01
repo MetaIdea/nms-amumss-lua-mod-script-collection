@@ -5,7 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "More Salvage Data-"..MULTIPLIER.."X",
 ["MOD_AUTHOR"]      = "VelocityFTW",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.45",
+["NMS_VERSION"]     = "7.01",
 ["MOD_DESCRIPTION"] = "Multiplies salvaged data by 10x or 30x",
 ["MODIFICATIONS"]   =
   {

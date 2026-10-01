@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Dissonance Resonators always drop Echo Locators",
 ["MOD_AUTHOR"]      = "VelocityFTW",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.36",
+["NMS_VERSION"]     = "7.01",
 ["MOD_DESCRIPTION"] = "A focused gameplay mod that makes Dissonance Resonators always drop Echo Locators while preserving their normal rewards. While adding a 10x multiplier to Echo Locators",
 ["MODIFICATIONS"]   =
   {

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "PU_AllTechRemovable",
 ["MOD_AUTHOR"]      = "Trevix",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.30",
+["NMS_VERSION"]     = "7.04",
 ["MOD_DESCRIPTION"] = "AllTechRemovable",
 ["MODIFICATIONS"]   =
   {
@@ -746,7 +746,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_BOBBLE_APOLLO"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -754,7 +753,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_BOBBLE_ART"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -762,7 +760,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_BOBBLE_ATLAS"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -770,7 +767,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_BOBBLE_NADA"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -778,7 +774,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_BOBBLE_NULL"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -786,7 +781,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_BOBBLE_POLO"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -794,7 +788,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_BOBBLE_OCTO"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -802,7 +795,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIP_RAINBOW"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -810,7 +802,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIP_DARK"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -818,7 +809,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIP_RED"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -826,7 +816,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIP_GREEN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -834,7 +823,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIP_GOLD"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -842,7 +830,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIP_PIRATE"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -850,7 +837,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIP_ROGUE"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -858,7 +844,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIP_PLASMA"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -866,7 +851,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIP_ATLAS"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -1314,7 +1298,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_GRIP1"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -1322,7 +1305,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_GRIP2"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -1330,7 +1312,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_GRIP3"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -1370,7 +1351,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "EXO_RECHARGE"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -1402,7 +1382,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_SCAN1"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -1410,7 +1389,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_SCAN2"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -1442,7 +1420,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_LASER1"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -1506,7 +1483,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "SUB_RECHARGE"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -1554,7 +1530,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "MECH_LASER1"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -1594,7 +1569,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "MECH_SENT_L_ARM"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -1610,7 +1584,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "MECH_SENT_LEGS"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -1642,7 +1615,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "MECH_ARMY_LEGS"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2362,7 +2334,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIPJUMP"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2370,7 +2341,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_LAUNCHER"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2378,7 +2348,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_HDRIVE"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2386,7 +2355,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIPSHLD"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2394,7 +2362,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIPGUN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2402,7 +2369,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIPLAS"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2410,7 +2376,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIPSHOT"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2418,7 +2383,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIPMINI"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2426,7 +2390,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIPBLOB"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2434,7 +2397,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIPROC"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2442,7 +2404,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SCAN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2450,7 +2411,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_LASER"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2458,7 +2418,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_BOLT"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2466,7 +2425,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_GRENADE"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2474,7 +2432,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_T_GREN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2482,7 +2439,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_RAIL"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2490,7 +2446,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHOTGUN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2498,7 +2453,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SMG"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2506,7 +2460,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_CANNON"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2514,7 +2467,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_ENERGY"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2522,7 +2474,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_JET"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2530,7 +2481,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SHIELD"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2538,7 +2488,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_HAZ"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2546,7 +2495,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_UNW"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2554,7 +2502,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_RAD"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2562,7 +2509,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_TOX"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2570,7 +2516,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_COLDPROT"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2578,7 +2523,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_HOTPROT"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2586,7 +2530,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_EXGUN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2594,7 +2537,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_EXLAS"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2602,7 +2544,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_BOOST"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2610,7 +2551,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_EXENG"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2618,7 +2558,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SUB"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2626,7 +2565,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SUBGUN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2634,7 +2572,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "A_SHIPJUMP"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2642,7 +2579,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "A_LAUNCH"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2650,7 +2586,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "A_HDRIVE"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2658,7 +2593,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "A_SHIPSHLD"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2666,7 +2600,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "A_SHIPGUN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2674,7 +2607,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "A_SHIPLAS"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2682,7 +2614,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_MCGUN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2690,7 +2621,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_MFIRE"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2698,7 +2628,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_MCLAS"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2706,7 +2635,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_MCENG"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2714,7 +2642,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_FR_HYP"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2722,7 +2649,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_FR_SPEED"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2730,7 +2656,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_FR_FUEL"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2738,7 +2663,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_FR_TRADE"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2746,7 +2670,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_FR_COM"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2754,7 +2677,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_FR_EXP"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2762,7 +2684,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_FR_MINE"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2770,7 +2691,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SENTSUIT"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2778,7 +2698,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_SENTGUN"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2786,7 +2705,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_ROBOSUIT"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2794,7 +2712,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_CR_FIGHT"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2802,7 +2719,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_CR_SCI"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2810,7 +2726,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_CR_TRADE"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },
@@ -2818,7 +2733,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SPECIAL_KEY_WORDS"] = {"ID", "T_CR_INV"},
               ["VALUE_CHANGE_TABLE"] =
               {
-                {"Teach", "false"},
                 {"Core",  "false"},
               }
             },

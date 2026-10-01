@@ -248,7 +248,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
               ["SPECIAL_KEY_WORDS"] =
               {
-                {"Name", "sideLight_blume", "Name",  "AABBMINZ"},
+                {"Name", "sideLight_blume",  "Name",  "AABBMINZ"},
                 {"Name", "sideLight_blume1", "Name", "AABBMINZ"},
                 {"Name", "sideLight_blume2", "Name", "AABBMINZ"},
                 {"Name", "sideLight_blume3", "Name", "AABBMINZ"},
