@@ -120,14 +120,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"G", "0.272000"},
               }
             },
-            {
-              ["SPECIAL_KEY_WORDS"] =
-              {
-                {"Id", "BOLTGUN", "Effect", "GUNHIT_PLAYER"},
-                {"Id", "BOLTGUN", "Effect", "SHIELDIMPACT"},
-              },
-              ["REMOVE"] = "SECTION"
-            },
+            -- {
+              -- ["SPECIAL_KEY_WORDS"] =
+              -- {
+                -- {"Id", "BOLTGUN", "Effect", "GUNHIT_PLAYER"},
+                -- {"Id", "BOLTGUN", "Effect", "SHIELDIMPACT"},
+              -- },
+              -- ["REMOVE"] = "SECTION"
+            -- },
             {
               ["SPECIAL_KEY_WORDS"] =
               {
@@ -202,14 +202,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"A", "0.000000"},
               }
             },
-            {
-              ["SPECIAL_KEY_WORDS"] =
-              {
-                {"Id", "SHOTGUN", "Effect", "GUNHIT"},
-                {"Id", "SHOTGUN", "Effect", "SHIELDIMPACT"},
-              },
-              ["REMOVE"] = "SECTION"
-            },
+            -- {
+              -- ["SPECIAL_KEY_WORDS"] =
+              -- {
+                -- {"Id", "SHOTGUN", "Effect", "GUNHIT"},
+                -- {"Id", "SHOTGUN", "Effect", "SHIELDIMPACT"},
+              -- },
+              -- ["REMOVE"] = "SECTION"
+            -- },
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", "SMG"},
               ["VALUE_CHANGE_TABLE"] =
@@ -233,14 +233,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"G", "0.272000"},
               }
             },
-            {
-              ["SPECIAL_KEY_WORDS"] =
-              {
-                {"Id", "SMG", "Effect", "SMGHIT"},
-                {"Id", "SMG", "Effect", "SHIELDIMPACT"},
-              },
-              ["REMOVE"] = "SECTION"
-            },
+            -- {
+              -- ["SPECIAL_KEY_WORDS"] =
+              -- {
+                -- {"Id", "SMG", "Effect", "SMGHIT"},
+                -- {"Id", "SMG", "Effect", "SHIELDIMPACT"},
+              -- },
+              -- ["REMOVE"] = "SECTION"
+            -- },
             {
               ["SPECIAL_KEY_WORDS"] =
               {

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Clear Information-System",
 ["MOD_AUTHOR"]      = "Phantom",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.70",
+["NMS_VERSION"]     = "7.03",
 ["MOD_DESCRIPTION"] = "We need more clear information",
 ["MODIFICATIONS"]   =
   {

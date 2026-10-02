@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "First person combat camera",
 ["MOD_AUTHOR"]      = "Phantom7z1",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "6.45",
+["NMS_VERSION"]     = "7.02",
 ["MOD_DESCRIPTION"] = "When playing in third-person mode, selecting the multi-tool's combat mode automatically switches to first-person view",
 ["MODIFICATIONS"]   =
   {
@@ -21,14 +21,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"MinSpeed",                 "4.000000"},
                 {"SpeedRange",               "20.000000"},
                 {"OffsetX",                  "0.000000"}, 
-                {"OffsetY",                  "-0.72000"},  
+                {"OffsetY",                  "-0.720000"},  
                 {"OffsetYAlt",               "0.000000"},
                 {"BackMinDistance",          "0.900000"},
                 {"BackMaxDistance",          "0.900000"},
                 {"BackSlopeAdjust",          "0.000000"},
                 {"BackSlopeRotationAdjust",  "0.000000"},
                 {"UpSlopeAdjust",            "0.000000"},
-                {"SpringSpeed",              "0.02000"},
+                {"SpringSpeed",              "0.020000"},
               }
             },
           }
