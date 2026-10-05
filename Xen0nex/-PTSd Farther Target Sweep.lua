@@ -1,25 +1,29 @@
 ModName = "PTSd Farther Target Sweep"
-GameVersion = "7_03"
+GameVersion = "7_05"
 Description = "Makes the distance between the 'Approximate Location' and final mission target using Target Sweep farther away."
 
 --Multipliers to use for the "approximate Location" distances, depending on the mission group / file
-DistanceMultLong =						4									--Multiplier to apply to distances greater than 650
-DistanceMultShort =						10									--Multiplier to apply to distances 650 or lower
+DistanceMultLong =				4					--Multiplier to apply to distances greater than 650
+DistanceMultShort =				10					--Multiplier to apply to distances 650 or lower
+
+DistanceReplaceTutFreight =		300					--600	Replaces the base distance used by the first "Target Sweep" mission in the Tutorial
+DistanceReplaceTutAntimatter =	200					--350	Replaces the base distance used by the second "Target Sweep" mission in the Tutorial
+DistanceReplaceTutMonolith =	250					--380	Replaces the base distance used by the second "Target Sweep" mission in the Tutorial
 --Note that the range at which your Target Sweep Scanner will change from "too far to estimate" to giving an actual distance is controlled in ShipScrappingAndBlackHolesX.lua
 
 Filepaths =
 {	--Missiontype														Distances in file	Vanilla Distances used for missions of this type
 	--{"METADATA\GAMESTATE\DEFAULTSEASONALDATA.MBIN",							"Long"},		--1200,	1800							Rendezvous points for Expeditions?	However, it seems you may actually need to manually adjust 5 "SurveyDistance" entries in SEASON_DATA_CACHE.JSON within the "cache" folder of your save file location
 	{"METADATA\SIMULATION\MISSIONS\TABLES\BASECOMPUTERMISSIONTABLE.MBIN",			"Short"},		--450
-	{"METADATA\SIMULATION\MISSIONS\TABLES\SENTINELSETTLEMENTMISSIONTABLE.MBIN",	"Short"},		--200,	400								A Trace of Metal?
-	{"METADATA\SIMULATION\MISSIONS\TABLES\PIRATEMISSIONTABLE.MBIN",				"Short"},		--600,	650								Under a Rebel Star mission?
+	{"METADATA\SIMULATION\MISSIONS\TABLES\SENTINELSETTLEMENTMISSIONTABLE.MBIN",		"Short"},		--200,	400								A Trace of Metal?
+	{"METADATA\SIMULATION\MISSIONS\TABLES\PIRATEMISSIONTABLE.MBIN",					"Short"},		--600,	650								Under a Rebel Star mission?
 	{"METADATA\SIMULATION\MISSIONS\TABLES\WATERMISSIONTABLE.MBIN",					"Short"},		--500,	350								Dreams of the Deep mission?
 	{"METADATA\SIMULATION\MISSIONS\TABLES\NPCMISSIONTABLE.MBIN",					"Both"},		--1200,	500,	350,	400				Space Station missions	(the 1200 distance missions are just for landing on the appropriate planet, no actual target is 1200u to walk to.)
-	{"METADATA\SIMULATION\MISSIONS\TABLES\SPACEPOIMISSIONTABLE.MBIN",			"Both"},		--1600,	300			Handled in PTSd Starship And Living Ship Tech + Speed Changes.lua						Living Ship missions	( moved to "Ship Speed Changes etcX.lua")
+	{"METADATA\SIMULATION\MISSIONS\TABLES\SPACEPOIMISSIONTABLE.MBIN",				"Both"},		--1600,	300								Living Ship missions
 	{"METADATA\SIMULATION\MISSIONS\TABLES\SEASONALMISSIONTABLE.MBIN",				"Both"},		--???	320 as of NMS 5.01.1			This rotates out for missions unique to the current expedition (non-rendezvous missions)
 	{"METADATA\SIMULATION\MISSIONS\TABLES\MISSIONTABLE.MBIN",						"Short"},		--500									Main story / tutorial missions?
 	{"METADATA\SIMULATION\MISSIONS\TABLES\MULTIPLAYERMISSIONTABLE.MBIN",			"Short"},		--600,	400,	300						Nexus missions?
-	{"METADATA\SIMULATION\MISSIONS\TABLES\COREMISSIONTABLE.MBIN",					"Short"},		--400,	200,	450,	350,	600,	500,	650,	300			Expanding the Base missions, possbily others?
+	{"METADATA\SIMULATION\MISSIONS\TABLES\COREMISSIONTABLE.MBIN",					"Short"},		--400,	200,	450,	350,	600,	500,	650,	300			Expanding the Base missions, possibly others?
 	{"METADATA\SIMULATION\MISSIONS\TABLES\TUTORIALMISSIONTABLE.MBIN",				"Short"},		--300,	600,	350,	500,	380,	
 	{"METADATA\SIMULATION\MISSIONS\TABLES\STARTEDONUSEMISSIONTABLE.MBIN",			"Short"},		--200
 	{"METADATA\SIMULATION\MISSIONS\TABLES\NPCBUILDERSMISSIONTABLE.MBIN",			"Short"},		--300,	300,	180,	150				Presumably missions from the new Autophages
@@ -40,7 +44,33 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{
 			["MBIN_CHANGE_TABLE"]	= 
 			{
-				--This entry intentionally left blank, to be filled in by the MissionChanges at the bottom of this script
+				{
+					["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\TUTORIALMISSIONTABLE.MBIN"},
+					["MXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "SE_TUT2_FREIGHT"},		--Tutorial mission for finding the Hyperdrive
+                            ["VALUE_CHANGE_TABLE"]     = 
+                            {
+                                {"SurveyDistance",    DistanceReplaceTutFreight}
+                            }
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "SE_TUT3_ANTIMATTER"},		--Tutorial mission for finding Antimatter
+                            ["VALUE_CHANGE_TABLE"]     = 
+                            {
+                                {"SurveyDistance",    DistanceReplaceTutAntimatter}
+                            }
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "SE_TUT5_MONOLITH"},		--Tutorial mission for finding a Fuel Source (Monolith)
+                            ["VALUE_CHANGE_TABLE"]     = 
+                            {
+                                {"SurveyDistance",    DistanceReplaceTutMonolith}
+                            }
+                        },
+					}
+				},
 			}
 		}
 	}

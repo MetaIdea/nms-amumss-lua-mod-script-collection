@@ -1,9 +1,11 @@
 ---------------------------------------------------------------------------------------
 local mod_desc = [[
-  Manual Ramp Control v14.0
+  Manual Ramp Control v14.7
 
   Removes the corvette landing bays' auto-open. Each bay is opened and closed by
-  its own switches (interior and exterior), and they stay in sync.
+  its own switches (interior and exterior), and they stay in sync. The doors send
+  vanilla's DoorOpen / DoorClosed messages, so the vanilla bay warning light and
+  switch lever work again.
 
   v13.0  Switch states share the door's names so all switches in a bay stay in sync
   v13.1  Door entities patched in place instead of copied
@@ -11,6 +13,16 @@ local mod_desc = [[
   v14.0  Vent steam soft stop (Jank-tested 2026-09-24: works). The door sends JANK7_RAMPOPEN / JANK7_RAMPCLOSE
          as graph messages when its ramp animation starts; the vent entity is a graph
          that spawns steam on open and stops it (no instant cut) on close.
+  v14.6  Based on shipped v14.0 (v14.1-v14.5 were the tabled in-flight
+         half-open spikes). Only change: EXML_CREATE FALSE, so the switch and door
+         entities ship as whole MBINs instead of EXML patches. Jank-tested 2026-10-02:
+         fixes the stuck door state on the first load after a MODS folder change.
+  v14.7  UNTESTED. The door graph sends vanilla's DoorOpen / DoorClosed instead of
+         JANK7_RAMPOPEN / JANK7_RAMPCLOSE, and the vent graph listens for those. The
+         vanilla warning light and switch lever (QDRCONTROLS) already listen for them,
+         so Ramp Warning Light is no longer needed. The state names are unchanged.
+         Jank-tested 2026-10-02: light, bay levers and vents work. The switch's press
+         glow shows an empty space (vanilla QDRCONTROLS data bug, see notes).
 ]]-------------------------------------------------------------------------------------
 
 --=====================================================================================
@@ -61,7 +73,7 @@ local VENT_EFFECT		= 'AIRLOCKVENT'
 local NEW_ANCHOR_NAME	= 'ShipAccesswayVentAnchor'
 
 --=====================================================================================
--- State IDs (16-byte field, kept to 15 characters). Also used as the graph messages.
+-- State IDs (16-byte field, kept to 15 characters), shared by the switches and doors
 --=====================================================================================
 
 local STATE = {
@@ -71,6 +83,14 @@ local STATE = {
 for _, id in pairs(STATE) do
 	assert(#id <= 15, 'state ID ' .. id .. ' is ' .. #id .. ' characters; the field holds 16 bytes')
 end
+
+-- Vanilla graph messages for "ramp opening / closing". The vanilla bay warning light
+-- (AIRLOCKLIGHT) and switch lever (QDRCONTROLS) listen for them; nothing in vanilla
+-- sends them anymore, so the doors do.
+local MSG = {
+	OPEN	= 'DoorOpen',
+	CLOSE	= 'DoorClosed',
+}
 
 --=====================================================================================
 -- Shared state-machine pieces
@@ -235,12 +255,12 @@ local DOOR_STATE_MACHINE = stateMachine({
 	triggerState(STATE.RAMP_CLOSE, { playAnim('RAMPUP') }),
 }, 'BOOT')
 
--- Ramp animation starts -> graph message to the bay (vents, and the light if installed)
+-- Ramp animation starts -> graph message to the bay (vents, warning light, switch levers)
 local DOOR_SIGNAL = sketchGraph({
 	onAnimFrame(0, {2}, 'RAMPDOWN'),
 	onAnimFrame(1, {3}, 'RAMPUP'),
-	broadcast(2, STATE.RAMP_OPEN),
-	broadcast(3, STATE.RAMP_CLOSE),
+	broadcast(2, MSG.OPEN),
+	broadcast(3, MSG.CLOSE),
 })
 
 --=====================================================================================
@@ -260,8 +280,8 @@ local function ventGraph()
 	end
 	local nodes = {
 		onBroadcast(0, {1, 2}),
-		ifValueIs(1, spawnIds, STATE.RAMP_OPEN),
-		ifValueIs(2, stopIds,  STATE.RAMP_CLOSE),
+		ifValueIs(1, spawnIds, MSG.OPEN),
+		ifValueIs(2, stopIds,  MSG.CLOSE),
 	}
 	for _, n in ipairs(spawns) do nodes[#nodes + 1] = n end
 	for _, n in ipairs(stops)  do nodes[#nodes + 1] = n end
@@ -391,8 +411,9 @@ mbinChanges[#mbinChanges + 1] = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME		= 'Jank7.Manual_Ramp_Control_v14.0',
-	MOD_BATCHNAME 		= 'Jank7_Ultimate_Landing_Bays_v7.08',
+	MOD_FILENAME		= 'Jank7.Manual_Ramp_Control_v14.7',
+	MOD_BATCHNAME 		= 'Jank7_Ultimate_Landing_Bays_v7.09',
+	EXML_CREATE			= 'FALSE',
 	MOD_AUTHOR			= 'Jank7',
 	NMS_VERSION			= '7.05',
 	MOD_DESCRIPTION		= mod_desc,

@@ -1,8 +1,8 @@
 Author = "Gumsk"			--Edited by Xen0nex
 ModName = "gBase"
 ModNameSub = "Items BasicX"
-BaseDescription = "Removes restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
-GameVersion = "6_04"
+BaseDescription = "Removes many restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
+GameVersion = "7_05"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 FileSource2 = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN"		--Added by Xen0nex
@@ -62,10 +62,17 @@ OtherFreighter = "false"		--"false"		Override for setting if regular Galactic Tr
 
 --Controls whether any "decorative" freighter rooms / doors / walkways / storage rooms / etc. are buildable on planets or not
 FreighterRoomsPlanetside = "true"	--"false"	Override for setting if various Freighter rooms/doors/walkways/storage rooms/etc. without special functions can be built on planets or not.
-PossibleFreighterRooms = {"FRE_ROOM_IND", "FRE_ROOM_IND1", "FRE_ROOM_LADDER", "FRE_ROOM_STORE0", "FRE_ROOM_STORE1", "FRE_ROOM_STORE2", "FRE_ROOM_STORE3", "FRE_ROOM_STORE4", "FRE_ROOM_STORE5", "FRE_ROOM_STORE6", "FRE_ROOM_STORE7", "FRE_ROOM_STORE8", "FRE_ROOM_STORE9", "FRE_CORR_A", "FRE_CORR_A_GLAS", "FRE_CORR_A_L", "FRE_CORR_A_STR", "FRE_CORR_A_T", "FRE_CORR_GLA_L", "FRE_CORR_GLA_ST", "FRE_CORR_GLA_T", "FRE_CORR_G_STA", "FRE_EXT_PLATFOR", "FRE_EXT_WALKWAY", "FRE_EXT_W_STA", "FRE_FACE_DOOR_A", "FRE_FACE_WALL", "FRE_FACE_WINDOW", "FRE_ROOM_LADDER", "FRE_CORR_STA", }
+PossibleFreighterRooms = {"FRE_ROOM_IND", "FRE_ROOM_IND1", "FRE_ROOM_LADDER", "FRE_ROOM_STORE0", "FRE_ROOM_STORE1", "FRE_ROOM_STORE2", "FRE_ROOM_STORE3", "FRE_ROOM_STORE4", "FRE_ROOM_STORE5", "FRE_ROOM_STORE6", "FRE_ROOM_STORE7", "FRE_ROOM_STORE8", "FRE_ROOM_STORE9", "FRE_CORR_A", "FRE_CORR_A_GLAS", "FRE_CORR_A_L", "FRE_CORR_A_STR", "FRE_CORR_A_T", "FRE_CORR_GLA_L", "FRE_CORR_GLA_ST", "FRE_CORR_GLA_T", "FRE_CORR_G_STA", "FRE_EXT_PLATFOR", "FRE_EXT_WALKWAY", "FRE_EXT_W_STA", "FRE_FACE_DOOR_A", "FRE_FACE_WALL", "FRE_FACE_WINDOW", "FRE_ROOM_LADDER", "FRE_CORR_STA", "FRE_CORR_STA_B", "FRE_CORR_B", "FRE_ROOM_B", }
 
 --Controls whether the Corvette storage rooms (Cargo Racks) are buildable on Corvettes or not
 CorvStorageBuildable = "true"	--"true"		Override for setting if all Corvette storage containers (Cargo Racks) can be built on Corvettes or not
+
+--Controls whether the exocraft geobays & summoning station are buildable off-planet, e.g. on Space Bases
+GeobayBuildableEverywhere = "false"	--"false"
+
+--Controls whether various fuel-powered or automatic harvesters can be built off-planet, e.g. on Space Bases, like Mineral Extractors, Oxygen Harvesters, Automated Traps, etc. 
+	--(Even if built off-planet, they would just be decorative and won't harvest / catch anything)
+HarvestersBuildableEverywhere = "false"	--"false"
 
 --Changes to base values for extractor rates & storage in RegionHotspotsTable, to allow higher effective storage / extraction rates without disabling base uploading
 	-- <Storage or Rate values above> / AmountCost * SubstanceYeild => in-game storage amount or rate
@@ -96,7 +103,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion,
+["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
@@ -208,6 +215,93 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"BuildableInShipDecorative", CorvStorageBuildable},
 		}},
 	
+	{["SPECIAL_KEY_WORDS"] = {
+                     {"ID", "GARAGE_B"}, {"ID", "GARAGE_FLOAT"}, {"ID", "GARAGE_L"}, {"ID", "GARAGE_M"}, {"ID", "GARAGE_MECH"}, {"ID", "GARAGE_S"}, {"ID", "GARAGE_SUB"}, {"ID", "SUMMON_GARAGE"}, 
+                   },
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnFreighter",GeobayBuildableEverywhere},
+		{"BuildableOnSpaceBase",GeobayBuildableEverywhere},
+		}},
+	
+	{["SPECIAL_KEY_WORDS"] = {
+                     {"ID", "O2_HARVESTER"}, {"ID", "BUILDHARVESTER"}, {"ID", "BUILDGASHARVEST"}, {"ID", "U_EXTRACTOR_S"}, {"ID", "U_GASEXTRACTOR"}, {"ID", "U_SILO_S"}, {"ID", "U_PIPELINE"}, {"ID", "U_GENERATOR_S"}, {"ID", "BUILDSEAHARVEST"},
+                   },
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnFreighter",HarvestersBuildableEverywhere},
+		{"BuildableOnSpaceBase",HarvestersBuildableEverywhere},
+		}},
+	
+	{["SPECIAL_KEY_WORDS"] = {"ID", "U_MINIPORTAL_CV"},					--Makes the Corvette version of the Short Range Teleporter not buildable off of Corvettes
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnPlanetBase","false"},
+		{"BuildableOnFreighter","false"},
+		{"BuildableOnSpaceBase","false"},
+		}},
+	
+	{["SPECIAL_KEY_WORDS"] = {"ID", "U_SOLAR_S"},						--Makes Solar Panels not buildable on freighters
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnFreighter","false"},
+		}},
+	
+	{["SPECIAL_KEY_WORDS"] = {"BuildableOnSpaceStationExterior", "true"},	--Re-adds most restrictions for all Exterior Station Decoration parts
+	["REPLACE_TYPE"] = "ALL",
+	["VALUE_CHANGE_TABLE"] = {
+		{"IsDecoration","false"},
+		{"IsPlaceable","false"},
+		{"BuildableOnPlanetBase","false"},
+		{"BuildableOnFreighter","false"},
+		{"BuildableOnSpaceBase","false"},
+		{"BuildableUnderwater","false"},
+		{"BuildableAboveWater","true"},
+		{"PlanetBaseLimit",0},
+		{"RegionLimit",0},
+		{"PlanetLimit",0},
+		{"FreighterBaseLimit",0},
+		{"CheckPlaceholderCollision","false"},
+		{"CheckPlayerCollision","false"},
+		{"CanRotate3D","true"},
+		{"CanScale","true"},
+		{"CanChangeColour","true"},
+		{"CanChangeMaterial","false"},
+		{"DependsOnEnvironment","None"},
+		{"RemovesAttachedDecoration","false"},
+		{"RemovesWhenUnsnapped","false"},
+		}},
+	
+	{["SPECIAL_KEY_WORDS"] = {"ID", "SB_BEACON"},	--Re-adds most restrictions for Deep-Space Base Computer 
+	["REPLACE_TYPE"] = "ALL",
+	["VALUE_CHANGE_TABLE"] = {
+		{"IsDecoration","false"},
+		{"IsPlaceable","false"},
+		{"BuildableOnPlanetBase","false"},
+		{"BuildableOnFreighter","false"},
+		{"BuildableOnSpaceBase","true"},
+		{"BuildableUnderwater","false"},
+		{"BuildableAboveWater","true"},
+		{"PlanetBaseLimit",0},
+		{"RegionLimit",0},
+		{"PlanetLimit",0},
+		{"FreighterBaseLimit",0},
+		{"CheckPlaceholderCollision","false"},
+		{"CheckPlayerCollision","true"},
+		{"CanRotate3D","true"},
+		{"CanScale","false"},
+		{"CanChangeColour","true"},
+		{"CanChangeMaterial","true"},
+		{"DependsOnEnvironment","None"},
+		{"RemovesAttachedDecoration","true"},
+		{"RemovesWhenUnsnapped","false"},
+		}},
+		
+	{["SPECIAL_KEY_WORDS"] = {"ID", "BASE_FLAG"},	--Stops building the Base Computer in space
+	["REPLACE_TYPE"] = "ALL",
+	["VALUE_CHANGE_TABLE"] = {
+
+		{"BuildableOnPlanetBase","true"},
+		{"BuildableOnFreighter","false"},
+		{"BuildableOnSpaceBase","false"},
+		}},
+	
 	{["SPECIAL_KEY_WORDS"] = {"ID","MESSAGEMODULE"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"RegionLimit",MessageModRegion},
@@ -253,7 +347,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["VALUE_CHANGE_TABLE"] = {
 		{"DependentRate",BioRate},
 		{"Storage",BioStorage},
-		{"BuildableOnSpacebase", "false"},
 		{"BuildableOnFreighter", "false"},
 		{"BuildableOnPlanet", "false"},
 		{"BuildableOnPlanetWithProduct", "false"},
@@ -316,104 +409,95 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","CARBONPLANTER"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", StandPlanterFreighter},
 		{"BuildableOnFreighter", StandPlanterFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","PLANTER"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"Rate", PlanterPowerDraw},
-		{"BuildableOnSpaceBase", CropsFreighter},
 		{"BuildableOnFreighter", CropsFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","PLANTERMEGA"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"Rate", LargePlanterPowerDraw},
-		{"BuildableOnSpaceBase", CropsFreighter},
 		{"BuildableOnFreighter", CropsFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","BIOROOM"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"PlanetBaseLimit", BiodomeBaseLimit},
 		{"Rate", BiodomePowerDraw},
-		{"BuildableOnSpaceBase", CropsFreighter},
 		{"BuildableOnFreighter", CropsFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","COOKER"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", RefinersFreighter},
 		{"BuildableOnFreighter", RefinersFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","BUILD_REFINER2"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", RefinersFreighter},
 		{"BuildableOnFreighter", RefinersFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","BUILD_REFINER3"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", RefinersFreighter},
 		{"BuildableOnFreighter", RefinersFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","BUILDTERMINAL"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", OtherFreighter},
 		{"BuildableOnFreighter", OtherFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","DRESSING_TABLE"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", OtherFreighter},
 		{"BuildableOnFreighter", OtherFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER0"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", OtherFreighter},
 		{"BuildableOnFreighter", OtherFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER1"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", OtherFreighter},
 		{"BuildableOnFreighter", OtherFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER2"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", OtherFreighter},
 		{"BuildableOnFreighter", OtherFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER3"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", OtherFreighter},
 		{"BuildableOnFreighter", OtherFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER4"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", OtherFreighter},
 		{"BuildableOnFreighter", OtherFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER5"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", OtherFreighter},
 		{"BuildableOnFreighter", OtherFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER6"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", OtherFreighter},
 		{"BuildableOnFreighter", OtherFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER7"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", OtherFreighter},
 		{"BuildableOnFreighter", OtherFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER8"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", OtherFreighter},
 		{"BuildableOnFreighter", OtherFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","CONTAINER9"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"BuildableOnSpaceBase", OtherFreighter},
 		{"BuildableOnFreighter", OtherFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_EXTR"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetBase", "false"},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_PLANT1"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnPlanet", "false"},
+		{"BuildableOnPlanetBase", "false"},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_PLANT0"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"BuildableOnPlanet", "false"},
 		{"BuildableOnPlanetBase", "false"},
@@ -451,7 +535,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"BuildableOnPlanet", "false"},
 		{"BuildableOnPlanetWithProduct", "false"},
 		{"BuildableOnFreighter", "false"},
-		{"BuildableOnSpaceBase", "false"},
 		{"ShowInBuildMenu", TeleportersBuildable},					--True
 		}},	
 	{["SPECIAL_KEY_WORDS"] = {"ID","TELEPORTER_F"},
@@ -460,7 +543,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"BuildableOnPlanetWithProduct", "false"},
 		{"BuildableOnFreighter", "false"},
 		{"BuildableOnPlanetBase", "false"},
-		{"BuildableOnSpaceBase", "false"},
 		{"ShowInBuildMenu", TeleportersBuildable},					--True
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_TELEPO"},

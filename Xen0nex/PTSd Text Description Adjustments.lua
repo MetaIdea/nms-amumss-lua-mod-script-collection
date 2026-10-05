@@ -722,9 +722,9 @@ CrystalSulphideNote = [[&#xA;&#xA;Can be refined into &lt;CATALYST&gt;Sodium Nit
 
 DeepSpaceAsteroidsNote = [[ Especially lucrative in terms of &lt;STELLAR&gt;units&lt;&gt; and &lt;TECHNOLOGY&gt;Tritium&lt;&gt;. &lt;TRADE&gt;Mining&lt;&gt; &lt;TECHNOLOGY&gt;Stellar Geodes&lt;&gt; directly will yield additional &lt;TECHNOLOGY&gt;substances&lt;&gt;, at the cost of losing the salvage to sell at a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;.]]
 
-DeepSpaceHulkDesc = [[&lt;TECHNOLOGY&gt;&lt;IMG&gt;SLASH&lt;&gt;Starmap Analysis Report&lt;IMG&gt;SLASH&lt;&gt;&lt;&gt;&#xA;&#xA;&lt;STELLAR&gt;Signal Type&lt;&gt;: Large spaceship wreck.&#xA;&#xA;&lt;STELLAR&gt;Route recommendation&lt;&gt;: Profitable salvage and clean-up opportunities detected. Analysis indicates the presence of a &lt;STELLAR&gt;variety&lt;&gt; of &lt;TRADE&gt;valuable&lt;&gt; salvage, including both items worth &lt;HIGHLIGHT&gt;many&lt;&gt; &lt;STELLAR&gt;units&lt;&gt; and some worth &lt;HIGHLIGHT&gt;many&lt;&gt; &lt;HIGHLIGHT&gt;nanites&lt;&gt;. &lt;TRADE&gt;Mining&lt;&gt; &lt;TECHNOLOGY&gt;Industrial Salvage&lt;&gt; directly will yield additional &lt;SPECIAL&gt;substances&lt;&gt;, at the cost of losing the salvage to sell at a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;Caution&lt;&gt;: Hull instability detected. High probability of meltdown. Core extraction requires advanced extravehicular activity.]]
+DeepSpaceHulkDesc = [[&lt;TECHNOLOGY&gt;&lt;IMG&gt;SLASH&lt;&gt;Starmap Analysis Report&lt;IMG&gt;SLASH&lt;&gt;&lt;&gt;&#xA;&#xA;&lt;STELLAR&gt;Signal Type&lt;&gt;: Large spaceship wreck.&#xA;&#xA;&lt;STELLAR&gt;Route recommendation&lt;&gt;: Profitable salvage and clean-up opportunities detected. Analysis indicates the presence of both items worth &lt;HIGHLIGHT&gt;many&lt;&gt; &lt;STELLAR&gt;units&lt;&gt; and some worth &lt;HIGHLIGHT&gt;many&lt;&gt; &lt;HIGHLIGHT&gt;nanites&lt;&gt;, as well as &lt;TECHNOLOGY&gt;Salvaged Data&lt;&gt;. &lt;TRADE&gt;Mining&lt;&gt; &lt;TECHNOLOGY&gt;Industrial Salvage&lt;&gt; directly will yield additional &lt;SPECIAL&gt;substances&lt;&gt;, at the cost of losing the salvage to sell at a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;Caution&lt;&gt;: Hull instability detected. High probability of meltdown. Core extraction requires advanced extravehicular activity.]]
 
-DeepSpaceWasteSiteNote = [[ Analysis indicates most items are likely of &lt;TRADE&gt;moderate&lt;&gt; value in &lt;STELLAR&gt;units&lt;&gt; or &lt;HIGHLIGHT&gt;nanites&lt;&gt;. &lt;TRADE&gt;Mining&lt;&gt; &lt;TECHNOLOGY&gt;Industrial Salvage&lt;&gt; directly will yield additional &lt;SPECIAL&gt;substances&lt;&gt;, at the cost of losing the salvage to sell at a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;.]]
+DeepSpaceWasteSiteNote = [[ Analysis indicates most items are likely of &lt;TRADE&gt;moderate&lt;&gt; value in &lt;STELLAR&gt;units&lt;&gt; or &lt;HIGHLIGHT&gt;nanites&lt;&gt;, and some &lt;TECHNOLOGY&gt;Salvaged Data&lt;&gt;. &lt;TRADE&gt;Mining&lt;&gt; &lt;TECHNOLOGY&gt;Industrial Salvage&lt;&gt; directly will yield additional &lt;SPECIAL&gt;substances&lt;&gt;, at the cost of losing the salvage to sell at a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;.]]
 
 DeepSpaceInfestedDesc = [[&lt;TECHNOLOGY&gt;&lt;IMG&gt;SLASH&lt;&gt;Starmap Analysis Report&lt;IMG&gt;SLASH&lt;&gt;&lt;&gt;&#xA;&#xA;&lt;STELLAR&gt;Signal Type&lt;&gt;: Former deep-space outpost. No activity detected.&#xA;&#xA;&lt;STELLAR&gt;Route recommendation&lt;&gt;: Salvage and clean-up opportunity. Especially lucrative in terms of &lt;HIGHLIGHT&gt;nanites&lt;&gt;. &lt;TRADE&gt;Mining&lt;&gt; &lt;TECHNOLOGY&gt;Unusual Samples&lt;&gt; directly will yield additional &lt;TRADE&gt;substances&lt;&gt;, at the cost of losing the salvage to sell at a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;Caution&lt;&gt;: High probability of biological hazards.]]
 
@@ -2484,6 +2484,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", AppendText (MechAiPilotTechDescNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "FOOD_HORROR_MEAT_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (SimpleFoodNote)}
 							}
 						},
 					}

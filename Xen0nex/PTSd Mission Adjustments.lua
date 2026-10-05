@@ -1,5 +1,5 @@
 ModName = "PTSd Mission Adjustments"
-GameVersion = "7_01"
+GameVersion = "7_05"
 Description = "Increases the amount of items required to complete certain 'Expanding the Base' quests, some quests no longer give certain blueprints as rewards."
 
 AdjustVoyagersExpTasks = true			--false		Changes the requirements for certain tasks in the Voyagers Expedition to work with alterations made by PTSd
@@ -33,8 +33,17 @@ DSOCondStellarIceMult =		1.5			--4-8 Condensed Stellar Ice		ASTEROID_CRYST
 DSOGelFibresMult =			4			--70-120 Gelatinous Fibres		SLIMEPOST1
 DSORareItem3Mult =			1			--1 Viral Heart or Pathogen Sac	SLIME_BLOB
 
+--Changes the duration of the Hulk Meltdown Timer
+HulkMeltdownTimer =			165			--180 seconds	(3 minutes)		Base duration of Meltdown Timer
+HulkMeltdownTimerRand =		30			--60 seconds	(1 minute)		A random amount of seconds between 0 and this value are added to the Meltdown Timer each time
+
 --Changes the amount of time that a Trade Surge last for, in minutes
 TradeSurgeDuration =	80				--180 minutes	(3 hours)
+
+--Changes the UI text to match the new requirements for crafting Launch Fuel during the Tutorial
+PTSdLaunchFuelDiHAmount =	60			--40		Di-Hydrogen
+PTSdLaunchFuelFeAmount =	100			--50		Ferrite Dust
+PTSdLaunchFuelPlateAmount =	2			--1			Metal Plating
 
 --Changes the UI text to match the new requirements for repairing the Pilot Interface for crashed Sentinel Interceptors
 RadiantShards =			6				--3
@@ -228,6 +237,55 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["PRECEDING_KEY_WORDS"] = {"Costs"},
 				["CREATE_HOS"] = "TRUE",
 				["ADD"] = GravGunRecipeTutorialCost
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Substance", "LAUNCHSUB"},
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_MATCH"] = "40",  
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Amount", PTSdLaunchFuelDiHAmount},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Substance", "LAUNCHSUB"},
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_MATCH"] = "40",  
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", PTSdLaunchFuelDiHAmount},
+					{"AmountMax", PTSdLaunchFuelDiHAmount},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+                     {"Message", "UI_CORE_LAUNCHFUEL_MSG2"},
+                   },
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", PTSdLaunchFuelFeAmount},
+					{"AmountMax", PTSdLaunchFuelFeAmount},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+                     {"Message", "UI_CORE_LAUNCHFUEL_MSG2A"},
+                   },
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", PTSdLaunchFuelPlateAmount},
+					{"AmountMax", PTSdLaunchFuelPlateAmount},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+                     {"DebugText", "build the launch fuel",		"Product", "CASING"},
+					 {"DebugText", "wrapper for getting metal casing",		"Product", "CASING"},
+                   },
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Amount", PTSdLaunchFuelPlateAmount},
+				}
 			},
 		}
 	},
@@ -508,6 +566,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"AmountMin", DSORareItem3Mult},
 					{"AmountMax", DSORareItem3Mult},
+				}
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS\SPACE\POI\HULK\HULK\ENTITIES\DATA.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Duration", HulkMeltdownTimer},
+					{"DurationRandomAddition", HulkMeltdownTimerRand},
 				}
 			},
 		}

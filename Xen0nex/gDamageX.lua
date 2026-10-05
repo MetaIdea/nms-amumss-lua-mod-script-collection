@@ -2,10 +2,8 @@ Author = "Gumsk"	-- Edited by Xen0nex	(temporary fix to BOUNTYLASER3 typo)
 --ModName = "GExos Challenge"
 ModNameSub = "gDamageX"
 BaseDescription = "Damage & Tech Damage adjustments"
-GameVersion = "6_4"
+GameVersion = "7_05"
 ModVersion = "a"
-
-FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
 
 --Global damage multipliers to quickly adjust all damage values within a particular category, on top of any individual adjustments below
 Starships =					1				--Damage from all kinds of enemy starships / freighters
@@ -17,18 +15,143 @@ Other =						1				--Damage from most other damage sources such as environmental 
 --Multiplier to the chance that various damage sources will damage installed tech
 StarshipTech =				0.5				--Tech Damage chance from enemy starships / freighters
 
+--Changes to Hulk Meltdown Explosion damage
+HulkMeltdownRadius =		400				--250
+HulkMeltdownDamageId =		"HULKEXPLODEX"	--"BARRELEXPLODE"	("HULKEXPLODEX" added by PTSd)
+HulkMeltdownDamage =		450				--50
+HulkMeltdownTechDmgChance =	5				--1.000000
+
+HulkExplosion =
+[[<Property name="DamageTable" value="GcPlayerDamageData" _id="HULKEXPLODEX">
+			<Property name="Id" value="HULKEXPLODEX" />
+			<Property name="DeathMessage" value="DEATH_BARRELEXPLODE" />
+			<Property name="DeathStat" value="DEATH_FALL" />
+			<Property name="HitIcon" value="TkTextureResource">
+				<Property name="Filename" value="" />
+			</Property>
+			<Property name="HitChatMessage" value="UI_DAMAGE_BARRELEXPLODE" />
+			<Property name="HitMessage" value="" />
+			<Property name="HitMessageAudio" value="GcAudioWwiseEvents">
+				<Property name="AkEvent" value="INVALID_EVENT" />
+			</Property>
+			<Property name="CriticalHitMessage" value="NOTIFY_CRITIAL_HIT_COMBAT" />
+			<Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents">
+				<Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
+			</Property>
+			<Property name="Damage" value="]]..HulkMeltdownDamage*Other..[[" />
+			<Property name="HazardDrain" value="0" />
+			<Property name="PushForce" value="0.000000" />
+			<Property name="CameraTurn" value="0.000000" />
+			<Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
+			<Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
+			<Property name="ShowTrackIcon" value="false" />
+			<Property name="ForceDamageInInteraction" value="false" />
+			<Property name="AllowDeathInInteraction" value="false" />
+			<Property name="PlayerDamageMultiplier" value="1.000000" />
+			<Property name="DoFullDamageToSelf" value="true" />
+			<Property name="PlayerDamageType" value="Normal" />
+			<Property name="DamageTechWithStat">
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="0">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Suit_Armour_Shield" />
+					</Property>
+					<Property name="IncludeStatChildren" value="true" />
+				</Property>
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="1">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Suit_Armour_Health" />
+					</Property>
+					<Property name="IncludeStatChildren" value="true" />
+				</Property>
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="2">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Suit_Energy" />
+					</Property>
+					<Property name="IncludeStatChildren" value="true" />
+				</Property>
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="3">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Weapon_Rail" />
+					</Property>
+					<Property name="IncludeStatChildren" value="true" />
+				</Property>
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="4">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Weapon_Laser" />
+					</Property>
+					<Property name="IncludeStatChildren" value="true" />
+				</Property>
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="5">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Weapon_Projectile" />
+					</Property>
+					<Property name="IncludeStatChildren" value="true" />
+				</Property>
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="6">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Weapon_Shotgun" />
+					</Property>
+					<Property name="IncludeStatChildren" value="true" />
+				</Property>
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="7">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Weapon_Burst" />
+					</Property>
+					<Property name="IncludeStatChildren" value="true" />
+				</Property>
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="8">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Weapon_Cannon" />
+					</Property>
+					<Property name="IncludeStatChildren" value="true" />
+				</Property>
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="9">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Weapon_Grenade" />
+					</Property>
+					<Property name="IncludeStatChildren" value="true" />
+				</Property>
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="10">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Weapon_Stealth" />
+					</Property>
+					<Property name="IncludeStatChildren" value="false" />
+				</Property>
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="11">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Weapon_FrontShield" />
+					</Property>
+					<Property name="IncludeStatChildren" value="false" />
+				</Property>
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="12">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Weapon_Scope" />
+					</Property>
+					<Property name="IncludeStatChildren" value="false" />
+				</Property>
+				<Property name="DamageTechWithStat" value="GcBreakTechByStatData" _index="13">
+					<Property name="DamageTechWithStat" value="GcStatsTypes">
+						<Property name="StatsType" value="Weapon_Scan" />
+					</Property>
+					<Property name="IncludeStatChildren" value="true" />
+				</Property>
+			</Property>
+			<Property name="TechDamageChance" value="]]..HulkMeltdownTechDmgChance..[[" />
+		</Property>]]
+
 --For below items, values are set to what they would have been in Survival Mode. Hardmodemultiplier pre-4.0 is 1 unless otherwise specified.
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModNameSub.." "..GameVersion..ModVersion,
+["MOD_FILENAME"]	= ModNameSub.." "..GameVersion..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
 --["EXML_CREATE"] = "FALSE",
 --["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]	= {{
-["MBIN_CHANGE_TABLE"] = {{
-["MBIN_FILE_SOURCE"] = FileSource,
+["MBIN_CHANGE_TABLE"] = {
+{
+["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN",
 ["MXML_CHANGE_TABLE"] = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","BASICDAMAGE"},
@@ -415,5 +538,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{["SPECIAL_KEY_WORDS"] = {"Id","PIRATERAID"},		--RAID_BUILDING when Pirate Raids are attacking a building before the player takes off in their ship, or PLANET_FLYBY
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 4*Other}}}, --default 4		(8)
-
-}}}}}}
+	
+	{
+		["SPECIAL_KEY_WORDS"] = {"DamageTable", "GcPlayerDamageData"},
+		["ADD_OPTION"]  = "ADDafterSECTION",  
+		["ADD"] = HulkExplosion,
+	},
+}},
+{
+	["MBIN_FILE_SOURCE"] 	= {"METADATA\EFFECTS\AREADAMAGETABLE.MBIN"},
+	["MXML_CHANGE_TABLE"] 	= 
+	{
+		{
+			["SPECIAL_KEY_WORDS"] = {"Id", "HULKMELTDOWN"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Radius", 		HulkMeltdownRadius},
+				{"PlayerDamageId", HulkMeltdownDamageId},
+			}
+		},
+	}
+},
+}}}}

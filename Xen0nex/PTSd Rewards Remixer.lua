@@ -1361,8 +1361,11 @@ DerCorvOKModuleMax =					4						--2		Maximum amount of "OK" corvette modules (fr
 	--Because many of these rewards are swapped from their vanilla rewards by the DeepSpaceSalvageItemChanges table below, the --comments for these rewards don;t necessary show the actual vanilla vlaue, just the "default" value PTSd will apply multipliers to
 CommonTractorContMetalMult =			0.75					--23-45 Contaminated Metal		For tractoring "Common" objects from Hulks/Minor Wreckage into your Corvette's Tractor Beam	(This spawns an Industrial Salvage)
 CommonMineContMetalMult =				0.75*0.94				--23-45 Contaminated Metal		For mining "Common" objects from Hulks/Minor Wreckage with your Mining Laser	(This spawns an Industrial Salvage)
-
 IndSalMineContMetalMult =				1						--23-45 Contaminated Metal		For mining Industrial Salvage from Hulks/Minor Wreckage with your Mining Laser (This spawns nothing)
+
+IndSalSalDataChance =					25						--0		Chance to yield 1 Salvaged Data (in addition to any other rewards) when processing Industrial Salvaged at a Deep Space Outpost
+UncommonHulkSalDataChance =				50						--0		Chance to yield 1 Salvaged Data (in addition to any other rewards) when processing Stasis Locker, Compressed Plasma, Auxiliary Core, CPU Harness, or Fuel Rods at a Deep Space Outpost
+RareHulkSalDataChance =					100						--0		Chance to yield 1 Salvaged Data (in addition to any other rewards) when processing Data Packet, Reactor Core, or Suspicious Cargo at a Deep Space Outpost
 
 AsteroidBreakTritiumMult =				1						--7-14 Tritium (0 in vanilla)	From cracking open the new Deep Space Asteroids (This spawns 1-3 Stellar Geodes)
 AsteroidBreakTritiumChance =			60						--0								Chance to award the above Tritium for cracking open the new Deep Space Asteroids, in addition to normal rewards
@@ -1862,12 +1865,21 @@ SpaceMailRewardChoiceType =	"GiveAll"	--"GiveFirst_ThenAlsoSelectFromRest"	Affec
 
 --Changes to rewards from Creature Battles at Xeno Arenas
 	--These set the new average nanite reward for winning various Creature Battles. The range will vary between ~67% and 133% of the value set below
-LowXenoArenaReward =		160			--(5-10 nanites)			Creature Battle wins vs. opponents set to the "easy" AI preset on planets or training on the Anomaly
-MedXenoArenaReward =		220			--(10-20 or 5-10 nanites)	Creature Battle wins vs. opponents set to the "medium" AI preset on planets
-HighXenoArenaReward =		330			--(15-30 or 10-20 nanites)	Creature Battle wins vs. opponents set to the "medium" AI preset on Space/Outlaw Stations (Space Station opponents use the "easy" AI preset in vanilla, changed to "medium" in PTSd)
-ChampXenoArenaReward =		550			--(30-50 nanites)			Creature Battle wins vs. System Champions set to the "hard" AI preset
-NexusXenoArenaReward =		1200		--(175-250 nanites)			Creature Battle wins vs. Oceanus set to the "hard" AI preset on the Anomaly
-PvpXenoArenaReward =		220			--(N/A, added by PTSd)		Creature Battle wins vs. other players
+LowXenoArenaReward =		160			--(5-10 nanites)			Wins at training or tutorial with Oceanus at the Nexus
+MedXenoArenaReward =		220			--(10-20 or 5-10 nanites)	Wins vs. planetary opponents	(Trading Outposts, Colossal Archives, or Settlements)
+HighXenoArenaReward =		330			--(15-30 or 10-20 nanites)	Wins vs. regular opponents on Space Stations or Outlaw Stations
+ChampXenoArenaReward =		550			--(30-50 nanites)			Wins vs. System Champions
+NexusXenoArenaReward =		1200		--(175-250 nanites)			Wins vs. Oceanus' daily battle at the Nexus
+PvpXenoArenaReward =		220			--(N/A, added by PTSd)		Wins vs. other players
+
+	--These set the chance & amount to award a Retroviral Pellet for winning various Creature Battles
+LowRVPelletChance =			25			--3							% Chance wins vs. planetary opponents, including Settlement Creature Battles which have a chance of 0 in vanilla
+MedRVPelletChance =			50			--8 or 3					% Chance for wins vs. regular opponents on Space Stations or Outlaw Stations
+HighRVPelletChance =		100			--60 or 75					% Chance for wins vs. System Champions or Oceanus' daily battle at the Nexus
+ChampRVPelletMin =			1			--1							Minimum amount of Pellets awarded for wins vs. System Champions
+ChampRVPelletMax =			2			--1							Maximum amount of Pellets awarded for wins vs. System Champions
+OceanusRVPelletMin =		2			--1							Minimum amount of Pellets awarded for wins vs. Oceanus' daily battle at the Nexus
+OceanusRVPelletMax =		3			--1							Maximum amount of Pellets awarded for wins vs. Oceanus' daily battle at the Nexus
 
 --% Chance to receive Echo Locators from various sources
 SpiderMapChance			=	20			--7			Chance to drop from the large Arachnid Sentinels
@@ -4836,6 +4848,36 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["ADD_OPTION"]  = "ADDafterSECTION", 
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "DE_H_COMMON",		"List", "GcRewardTableItem"},
+				},
+				["REPLACE_TYPE"] = "ALL",
+				["ADD"] = ProductReward ("BP_SALVAGE", "1", "1", IndSalSalDataChance),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "DE_H_CANISTER",		"List", "GcRewardTableItem"},
+					{"Id", "DE_H_LOCKBOX",		"List", "GcRewardTableItem"},
+					{"Id", "DE_H_REACTOR",		"List", "GcRewardTableItem"},
+					{"Id", "DE_H_DATACORE",		"List", "GcRewardTableItem"},
+					{"Id", "DE_H_AUX",		"List", "GcRewardTableItem"},
+				},
+				["REPLACE_TYPE"] = "ALL",
+				["ADD"] = ProductReward ("BP_SALVAGE", "1", "1", UncommonHulkSalDataChance),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "DE_H_SMUGGLE",		"List", "GcRewardTableItem"},
+					{"Id", "DE_H_CORE",		"List", "GcRewardTableItem"},
+					{"Id", "DE_H_BLACKBOX",		"List", "GcRewardTableItem"},
+				},
+				["REPLACE_TYPE"] = "ALL",
+				["ADD"] = ProductReward ("BP_SALVAGE", "1", "1", RareHulkSalDataChance),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_SLIMEPOST1",		"List", "GcRewardTableItem"},
 				["ADD"] = CurrencyReward ("Nanites", math.floor(RawTractorNaniteMult*1), math.floor(RawTractorNaniteMult*4), 100),
 				["ADD_OPTION"] = "ADDafterSECTION",
@@ -6207,7 +6249,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
-					{"Id", "R_PB_PVE_EASY_W",		"Reward", "GcRewardMoney"},		--	5-10	(easy AI)
+					{"Id", "R_PB_PVE_EASY_W",		"Reward", "GcRewardMoney"},		--	5-10	Training with Oceanus?
+					{"Id", "R_PB_TUT_W",			"Reward", "GcRewardMoney"},		--	10-20	Tutorial with Oceanus
 				},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -6218,11 +6261,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
-					{"Id", "R_PB_PVE_STD_W",		"Reward", "GcRewardMoney"},		--	10-20	(medium AI, no AI trainer set to this???)
-					{"Id", "R_PB_TUT_W",			"Reward", "GcRewardMoney"},		--	10-20	(easy AI, tutorial battle)
-					{"Id", "R_PB_PVE_PLAC_W",		"Reward", "GcRewardMoney"},		--	12-20	(medium AI)
-					--{"Id", "R_PB_PVE_HARD_W",		"Reward", "GcRewardMoney"},		--	10-20	(medium AI)		This instance changed to "R_PB_PVE_PLAC_W" in PTSd
-					{"Id", "R_PB_PVE_EZ_NI",		"Reward", "GcRewardMoney"},		--	5-10	(medium AI)
+					{"Id", "R_PB_PVE_STD_W",		"Reward", "GcRewardMoney"},		--	10-20	(seems unused, no AI trainer set to this???)
+					{"Id", "R_PB_PVE_PLAC_W",		"Reward", "GcRewardMoney"},		--	12-20	(medium AI)		At Trade Outposts? (In PTSd also for Colossal Archive battles)
+					{"Id", "R_PB_PVE_EZ_NI",		"Reward", "GcRewardMoney"},		--	5-10	(medium AI)		At Settlement?
 				},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -6233,8 +6274,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
-					{"Id", "R_PB_PVE_SYSS_W",		"Reward", "GcRewardMoney"},		--	15-30	(easy AI, changed to medium in PTSd, but can use 3 creatures from any planet in system)
-					{"Id", "R_PB_PVE_HARD_W",		"Reward", "GcRewardMoney"},		--	10-20	(medium AI, but can use 3 creatures from any planet in system)
+					{"Id", "R_PB_PVE_SYSS_W",		"Reward", "GcRewardMoney"},		--	15-30	Space Station battles?
+					{"Id", "R_PB_PVE_HARD_W",		"Reward", "GcRewardMoney"},		--	10-20	Outlaw Station battles	(in vanilla also for Colossal Archive battles)
 				},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -6245,7 +6286,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
-					{"Id", "R_PB_PVE_SYSC_W",		"Reward", "GcRewardMoney"},		--	30-50	(hard AI, but can use 3 creatures from any planet in system)
+					{"Id", "R_PB_PVE_SYSC_W",		"Reward", "GcRewardMoney"},		--	30-50	System Champions
 				},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -6256,7 +6297,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
-					{"Id", "R_PB_D_NEXUS_W",		"Reward", "GcRewardMoney"},		--	175-250	(hard AI, but can use 3 creatures from anywhere)
+					{"Id", "R_PB_D_NEXUS_W",		"Reward", "GcRewardMoney"},		--	175-250	Oceanus Daily battle
 				},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -6269,6 +6310,56 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"] = {"Id", "R_PB_PVP_STD_W",	"List", "GcRewardTableItem"},
 				["ADD"] = CurrencyReward ("Nanites", math.floor(2*PvpXenoArenaReward/3), math.floor(4*PvpXenoArenaReward/3), "100.000000"),
 				["ADD_OPTION"]  = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_PB_PVE_EZ_NI",	"List", "GcRewardTableItem"},
+				["ADD"] = ProductReward ("TREAT_FREELEVEL", "1", "1", "3"),
+				["ADD_OPTION"]  = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_PB_PVE_STD_W",		"ID", "TREAT_FREELEVEL"},
+					{"Id", "R_PB_PVE_PLAC_W",		"ID", "TREAT_FREELEVEL"},
+					{"Id", "R_PB_PVE_EZ_NI",		"ID", "TREAT_FREELEVEL"},
+				},
+				["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	LowRVPelletChance},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_PB_PVE_SYSS_W",		"ID", "TREAT_FREELEVEL"},
+					{"Id", "R_PB_PVE_HARD_W",		"ID", "TREAT_FREELEVEL"},
+				},
+				["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	MedRVPelletChance},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_PB_PVE_SYSC_W",		"ID", "TREAT_FREELEVEL"},
+					{"Id", "R_PB_D_NEXUS_W",		"ID", "TREAT_FREELEVEL"},
+				},
+				["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	HighRVPelletChance},
+					{"AmountMin",	ChampRVPelletMin},
+					{"AmountMax",	ChampRVPelletMax},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_PB_D_NEXUS_W",	"ID", "TREAT_FREELEVEL"},
+				["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	OceanusRVPelletMin},
+					{"AmountMax",	OceanusRVPelletMax},
+				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {

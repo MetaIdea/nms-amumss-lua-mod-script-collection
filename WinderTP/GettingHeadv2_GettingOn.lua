@@ -15,7 +15,7 @@ DEFAULT_EDITION = "Traveller" -- Anomaly, Traveller
 -- Default value to remove armour piece and allow subsequent torso piece selection
 REMOVE_ARMOUR = true
 
-DEFAULT_TORSO = "TORSO_RUIN"
+DEFAULT_TORSO = "TORSO_SWARM"
 -- Choose the torso without armour
 -- Copy and paste the IDs or your game may become unstable!
 -- Unused if not removing armour piece
@@ -29,6 +29,7 @@ TORSO_BUILDERS
 TORSO_CLASSIC
 TORSO_RUIN
 TORSO_VAULT
+TORSO_SWARM
 ]]
 
 DEFAULT_CAPE = "CAPE_RUIN"
@@ -49,7 +50,7 @@ CAPE_SEED
 CAPE_RUIN
 ]]
 
-DEFAULT_BACKPACK = "BACKPACK_CLASSI"
+DEFAULT_BACKPACK = "BACKPACK_SWARM"
 -- Choose the backpack
 -- Copy and paste the IDs or your game may become unstable!
 -- Leave this field empty if you want the default backpack
@@ -63,6 +64,7 @@ BACKPACK_CAPE
 BACKPACK_APOD
 BACKPACK_DIVING
 BACKPACK_CLASSI
+BACKPACK_SWARM
 ]]
 
 -- Default value to set all presets to the Gek body type
@@ -239,7 +241,7 @@ RACES =	{ 	["ASTRO"] = 	{ 	["Name"] = "ASTRO",
 							}
 		}
 RACES_ARMOUR ={ "ARMOUR_VANILLA", "ARMOUR_ASTRO", "ARMOUR_GEK", "ARMOUR_VYK", "ARMOUR_FOURTH", "ARMOUR_BUI1", "ARMOUR_BUI2", "ARMOUR_BUI3", "ARMOUR_BUI4", "ARMOUR_APOD", "ARMOUR_DIVING", "ARMOUR_CLASSIC"}
-RACES_TORSO ={ "TORSO_ASTRO", "TORSO_VANILLA", "TORSO_GEK", "TORSO_VYK", "TORSO_FOURTH", "TORSO_BUILDERS", "TORSO_CLASSIC"}
+RACES_TORSO ={ "TORSO_ASTRO", "TORSO_VANILLA", "TORSO_GEK", "TORSO_VYK", "TORSO_FOURTH", "TORSO_BUILDERS", "TORSO_CLASSIC", "TORSO_VAULT", "TORSO_SWARM"}
 
 -- heads to apply per race to exclude
 HEADS = 
@@ -277,6 +279,7 @@ HEADS =
 										"HEAD_FISHBOWL5",
 										"HEAD_FISHBOWL6",
 										"HEAD_CLASSIC",
+										"HEAD_SWARM",
 									  },
 					  },
 		["BUI"] 	= {	["EXCLUDE"] = "BUI",

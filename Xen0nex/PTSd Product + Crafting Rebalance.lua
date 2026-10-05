@@ -92,6 +92,7 @@ ProductSaleChanges =
 	{"UI_CLAMPEARL_NAME",	9.0},					--5,050			Living Pearl		(Refines to 100 Gold = 35,300u vanilla)
 	{"UI_VENTGEM_NAME",	2.5},						--7,800			Crystal Sulphide
 	{"UI_HEX_CORE_NAME",	1010.0625},				--16			Hex Core
+	{"UI_PET_FREELEVEL_NAME",	50},				--900			Retroviral Pellet
 	
 	{"NEWPROD3_NAME",	10.0},						--13,063		KORVAXCUBE
 	{"NEWPROD2_NAME",	10.0},						--11,688		VYKEENDAGGER
@@ -702,6 +703,12 @@ AdjustItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MBI
 	{	--Biological Room		Oxygen
 		"FRE_ROOM_BIO",			"OXYGEN",			60,			--30
 	},
+	{	--Biological Room (Station/Space Base version)
+		"STA_ROOM_BIO",			"ASTEROID1",		60,			--40
+	},
+	{	--Biological Room (Station/Space Base version)
+		"STA_ROOM_BIO",			"OXYGEN",			60,			--30
+	},
 	{	--Automated Trap 		Metal Plating
 		"BUILDSEAHARVEST",		"CASING",			6,			--3
 	},
@@ -774,6 +781,9 @@ AddItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MBIN
 	},
 	{	--Biological Room		Condensed Carbon
 		"FRE_ROOM_BIO",			"FUEL2",			30,		"Substance",
+	},
+	{	--Biological Room (Station/Space Base version)
+		"STA_ROOM_BIO",			"FUEL2",			30,		"Substance",
 	},
 	{	--Alloy Skylight Roof
 		"F_ROOF_M_WIN",			"FARMPROD3",		1,		"Product",
@@ -959,13 +969,97 @@ ReplaceItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MB
 		"GARAGE_FREIGHT",		"BLUE2",			50,		"Substance",	"CAVE2",
 	},
 	{	--Scanner Room 
-		"FRE_ROOM_SCAN",		"GASGIANT1",		160,	"Substance",	"ASTEROID2",
+		"FRE_ROOM_SCAN",		"GREEN2",			160,	"Substance",	"ASTEROID2",		--30 Gold
+	},
+	{	--Scanner Room 
+		"FRE_ROOM_SCAN",		"ASTEROID1",		60,		"Substance",	"ASTEROID1",		--60 Silver
+	},
+	{	--Scanner Room 
+		"FRE_ROOM_SCAN",		"MEGAPROD2",		1,		"Product",		"POWERCELL",		--1 Ion Battery
 	},
 	{	--Refiner Room 
 		"FRE_ROOM_REFINE",		"MICROCHIP",		8,		"Product",		"JELLY",
 	},
 	{	--Refiner Room 
 		"FRE_ROOM_REFINE",		"GREEN2",			100,	"Substance",	"ASTEROID2",
+	},
+	{	--Refiner Room  (Station/Space Base version)
+		"STA_ROOM_REFINE",		"MICROCHIP",		8,		"Product",		"JELLY",
+	},
+	{	--Refiner Room  (Station/Space Base version)
+		"STA_ROOM_REFINE",		"GREEN2",			100,	"Substance",	"ASTEROID2",
+	},
+	{	--Nutrition Room 
+		"FRE_ROOM_COOK",		"ASTEROID1",		60,		"Substance",	"ASTEROID1",		--60 Silver
+	},
+	{	--Nutrition Room 
+		"FRE_ROOM_COOK",		"LAND2",			20,		"Substance",	"ASTEROID1",		--40 Pure Ferrite
+	},
+	{	--Nutrition Room 
+		"FRE_ROOM_COOK",		"COOKER",			1,		"Product",		"OXYGEN",			--15 Oxygen
+	},
+	{	--Nutrition Room  (Station/Space Base version)
+		"STA_ROOM_COOK",		"ASTEROID1",		60,		"Substance",	"ASTEROID1",		--60 Silver
+	},
+	{	--Nutrition Room  (Station/Space Base version)
+		"STA_ROOM_COOK",		"LAND2",			20,		"Substance",	"ASTEROID1",		--40 Pure Ferrite
+	},
+	{	--Nutrition Room  (Station/Space Base version)
+		"STA_ROOM_COOK",		"COOKER",			1,		"Product",		"OXYGEN",			--15 Oxygen
+	},
+	{	--Cultivation Chamber 
+		"FRE_ROOM_PLANT1",		"ASTEROID1",		80,		"Substance",	"ASTEROID1",		--50 Silver
+	},
+	{	--Cultivation Chamber 
+		"FRE_ROOM_PLANT1",		"CASING",			6,		"Product",		"OXYGEN",			--25 Oxygen
+	},
+	{	--Cultivation Chamber 
+		"FRE_ROOM_PLANT1",		"PLANT_POOP",		120,	"Substance",	"PLANT_POOP",		--10 Faecium
+	},
+	{	--Cultivation Chamber  (Station/Space Base version)
+		"STA_ROOM_PLANT1",		"ASTEROID1",		80,		"Substance",	"ASTEROID1",		--50 Silver
+	},
+	{	--Cultivation Chamber  (Station/Space Base version)
+		"STA_ROOM_PLANT1",		"CASING",			6,		"Product",		"OXYGEN",			--25 Oxygen
+	},
+	{	--Cultivation Chamber  (Station/Space Base version)
+		"STA_ROOM_PLANT1",		"PLANT_POOP",		120,	"Substance",	"PLANT_POOP",		--10 Faecium
+	},
+	{	--Double Cultivation Chamber 
+		"FRE_ROOM_PLANT0",		"ASTEROID1",		240,	"Substance",	"ASTEROID1",		--60 Silver
+	},
+	{	--Double Cultivation Chamber 
+		"FRE_ROOM_PLANT0",		"CASING",			18,		"Product",		"OXYGEN",			--35 Oxygen
+	},
+	{	--Double Cultivation Chamber 
+		"FRE_ROOM_PLANT0",		"PLANT_POOP",		360,	"Substance",	"PLANT_POOP",		--25 Faecium
+	},
+	{	--Double Cultivation Chamber  (Station/Space Base version)
+		"STA_ROOM_PLANT0",		"ASTEROID1",		240,	"Substance",	"ASTEROID1",		--60 Silver
+	},
+	{	--Double Cultivation Chamber  (Station/Space Base version)
+		"STA_ROOM_PLANT0",		"CASING",			18,		"Product",		"OXYGEN",			--35 Oxygen
+	},
+	{	--Double Cultivation Chamber  (Station/Space Base version)
+		"STA_ROOM_PLANT0",		"PLANT_POOP",		360,	"Substance",	"PLANT_POOP",		--25 Faecium
+	},
+	{	--Stellar Extractor Room 
+		"FRE_ROOM_EXTR",		"ASTEROID3",		120,	"Substance",	"ASTEROID1",		--60 Silver
+	},
+	{	--Stellar Extractor Room 
+		"FRE_ROOM_EXTR",		"HYPERFUEL2",		2,		"Product",		"ASTEROID2",		--45 Gold
+	},
+	{	--Stellar Extractor Room 
+		"FRE_ROOM_EXTR",		"GRAVBALL",			8,		"Product",		"LAND3",			--40 Magnetised Ferrite
+	},
+	{	--Stellar Extractor Room  (Station/Space Base version)
+		"STA_ROOM_EXTR",		"ASTEROID3",		120,	"Substance",	"ASTEROID1",		--60 Silver
+	},
+	{	--Stellar Extractor Room  (Station/Space Base version)
+		"STA_ROOM_EXTR",		"HYPERFUEL2",		2,		"Product",		"ASTEROID2",		--45 Gold
+	},
+	{	--Stellar Extractor Room  (Station/Space Base version)
+		"STA_ROOM_EXTR",		"GRAVBALL",			8,		"Product",		"LAND3",			--40 Magnetised Ferrite
 	},
 	{	--Large Refiner 
 		"BUILD_REFINER3",		"GREEN2",			100,	"Substance",	"CATALYST2",
@@ -1088,27 +1182,6 @@ CraFabAntiNeeded				=	3				--1		Antimatter
 BarFabIonNeeded					=	16				--10	Ionised Cobalt
 BarFabAntiNeeded				=	12				--1		Antimatter
 --BarFabDarkNeeded				=	1				--0		Dark Matter	(From Atlas Path)
-
---New recipe for installing Nutrition Room in freighter
-CookRoomProcessors = 1								--how many Nutrient Processors required		(replaces 15 Oxygen in vanilla)
-CookRoomSilver = 60									--60 Silver
-CookRoomPureFerrite = 20							--40 Pure Ferrite
---New recipe for installing Cultivation Chamber in freighter
-CultivationChamberSilver = 80						--50 Silver
-CultivationChamberPlates = 6						--how many Metal Plates required	(replaces 25 Oxygen in vanilla)
-CultivationChamberFaecium = 120						--10 Faecium
---New recipe for installing Double Cultivation Chamber in freighter
-DoubleCultivationChamberSilver = 240				--60 Silver
-DoubleCultivationChamberPlates = 18					--how many Metal Plates required	(replaces 35 Oxygen in vanilla)
-DoubleCultivationChamberFaecium = 360				--25 Faecium
---New recipe for installing Stellar Extractor in freighter
-StellarExtractorSilver = 120						--60 Silver
-StellarExtractorGold = 90							--45 Gold
-StellarExtractorGravBall = 12						--how many Gravitino Balls required	(replaces 40 Mag. Ferrite in vanilla)
---New recipe for installing Scanner Room in freighter
-ScannerRoomSilver = 60								--60 Silver
---ScannerRoomEmeril = 30								--how much Emeril is required		(replaces 30 Gold in vanilla)
-ScannerRoomQuantProc = 1							--how many Quantum Processors required	(replaces 1 Ion Battery in vanilla)
 
 --This part adjusts the buying price only (not the selling price) for certain substances/consumables/components.
 
@@ -1927,151 +2000,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD_OPTION"]  = "ADDafterSECTION", 
 						},
 						]]
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_COOK",		"ID", "OXYGEN"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", CookRoomProcessors},
-								{"ID", "COOKER"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_COOK",		"ID", "COOKER"},
-							["VALUE_MATCH"] 	= "Substance",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"InventoryType", "Product"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_COOK",		"ID", "ASTEROID1"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", CookRoomSilver}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_COOK",		"ID", "LAND2"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", CookRoomPureFerrite}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT1",		"ID", "ASTEROID1"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", CultivationChamberSilver}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT1",		"ID", "OXYGEN"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", CultivationChamberPlates},
-								{"ID", "CASING"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT1",		"ID", "CASING"},
-							["VALUE_MATCH"] 	= "Substance",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"InventoryType", "Product"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT1",		"ID", "PLANT_POOP"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", CultivationChamberFaecium}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT0",		"ID", "ASTEROID1"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", DoubleCultivationChamberSilver}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT0",		"ID", "OXYGEN"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", DoubleCultivationChamberPlates},
-								{"ID", "CASING"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT0",		"ID", "CASING"},
-							["VALUE_MATCH"] 	= "Substance",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"InventoryType", "Product"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_PLANT0",		"ID", "PLANT_POOP"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", DoubleCultivationChamberFaecium}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_EXTR",		"ID", "ASTEROID1"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", StellarExtractorSilver}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_EXTR",		"ID", "ASTEROID2"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", StellarExtractorGold}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_EXTR",		"ID", "LAND3"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", StellarExtractorGravBall},
-								{"ID", "GRAVBALL"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_EXTR",		"ID", "GRAVBALL"},
-							["VALUE_MATCH"] 	= "Substance",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"InventoryType", "Product"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_SCAN",		"ID", "ASTEROID1"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", ScannerRoomSilver}
-							}
-						},
-						--[[
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_SCAN",		"ID", "ASTEROID2"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", ScannerRoomEmeril},
-								{"ID", "GREEN2"}
-							}
-						},
-						]]
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_SCAN",		"ID", "POWERCELL"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Amount", ScannerRoomQuantProc},
-								{"ID", "MEGAPROD2"}
-							}
-						},
 						{
 							["SPECIAL_KEY_WORDS"] = {
 								 {"ID", "B_WALL_CARG0",	"ID", "CASING"}, {"ID", "B_WALL_CARG1",	"ID", "CASING"}, {"ID", "B_WALL_CARG2",	"ID", "CASING"}, {"ID", "B_WALL_CARG3",	"ID", "CASING"}, {"ID", "B_WALL_CARG4",	"ID", "CASING"}, {"ID", "B_WALL_CARG5",	"ID", "CASING"}, {"ID", "B_WALL_CARG6",	"ID", "CASING"}, {"ID", "B_WALL_CARG7",	"ID", "CASING"}, {"ID", "B_WALL_CARG8",	"ID", "CASING"}, {"ID", "B_WALL_CARG9",	"ID", "CASING"}, 
