@@ -79,21 +79,14 @@ PlayerJetpackForcePercent - percentage of player jetpack force bonus
           <Property name="Stat" value="GcStatsTypes">
               <Property name="StatsType" value="Suit_Jetpack_Drain" />
           </Property>
-          <Property name="Bonus" value="0" />
+          <Property name="Bonus" value="-99" />
           <Property name="Level" value="1" />
         </Property>
-              ]],
-              ["ADD_OPTION"]  = "ADDendSECTION",
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"ID", "UT_JET"},
-              ["PRECEDING_KEY_WORDS"] = {"GcStatsBonus"},
-              ["ADD"] = [[
         <Property name="StatBonuses" value="GcStatsBonus" _index="5">
           <Property name="Stat" value="GcStatsTypes">
               <Property name="StatsType" value="Suit_Jetpack_MidairRefill" />
           </Property>
-          <Property name="Bonus" value="1" />
+          <Property name="Bonus" value="99" />
           <Property name="Level" value="4" />
         </Property>
               ]],
@@ -192,8 +185,8 @@ PlayerJetpackForcePercent - percentage of player jetpack force bonus
                 {"HardLandMax", "9999"},
                 {"UseEnergy", false},
                 {"MaxFallSpeed", "@*"..(PlayerJetpackSpeedPercent / 100)},
-                {"EnablePointDownToSmoothMove",   true},
-                {"HandSwimEnabled",   true},
+                {"EnablePointDownToSmoothMove",   false},
+                {"HandSwimEnabled",   false},
               },
             },
             {

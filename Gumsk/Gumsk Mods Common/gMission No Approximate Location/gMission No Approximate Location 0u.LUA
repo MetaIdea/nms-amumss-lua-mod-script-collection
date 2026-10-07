@@ -1,6 +1,6 @@
 Author			= "Gumsk"
 ModName		 = "gMission No Approximate Location"
-ModNameSub		= "1000"
+ModNameSub		= "0"
 BaseDescription = "Changes the approximate location scanning distance for missions"
 GameVersion = "7.0.5.0"
 ModVersion = "a"

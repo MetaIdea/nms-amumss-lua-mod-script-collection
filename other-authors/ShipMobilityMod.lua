@@ -5,7 +5,7 @@ BoostSpeedBonusPercent = 60
 PulseTopSpeedBonusPercent = 75
 ShieldStrengthBonusPercent = 1000
 ShipBoostManeuverabilityBonusPercent = 60
-ShipManeuverabilityBonusPercent = 60
+ShipManeuverabilityBonusPercent = 75
 WarpEffectivenessPercent = 1000
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -13,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Spaceship mobility upgrade",
 ["MOD_AUTHOR"]      = "jw11-modder",
 ["MOD_DESCRIPTION"] =
-[[ A mod to tune spaceship mobility and survivabili, including top speed, fuel consumption, boost speed and shields capacity:
+[[ A mod to tune spaceship mobility and survivability, including top speed, fuel consumption, boost speed and shields capacity:
 
 FuelConsumptionPercent - percentage of original pulse drive fuel consumpion
 LaunchFuelConsumptionPercent - percentage of original launch fuel consumpion
@@ -25,7 +25,7 @@ ShipBoostManeuverabilityBonusPercent - percentage of bonus ship boost maneuverab
 ShipManeuverabilityBonusPercent - percentage of bonus ship maneuverability
 WarpEffectivenessPercent - percentage of original warp effectiveness, roughly how many jumps can be done per one cell
 ]],
-["NMS_VERSION"]   = "7.2.1",
+["NMS_VERSION"]   = "7.05",
 ["MODIFICATIONS"] =
   {
     {
@@ -305,6 +305,204 @@ WarpEffectivenessPercent - percentage of original warp effectiveness, roughly ho
         </Property>
               ]],
               ["ADD_OPTION"]  = "ADDendSECTION",
+            },
+          },
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "GLOBALS\GCSPACESHIPGLOBALS.GLOBAL.MBIN",
+          ["MXML_CHANGE_TABLE"] =
+          {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Control", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"SpaceEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Control", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"PlanetEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Control", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"CombatEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Control", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"AtmosCombatEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ControlLight", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"SpaceEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ControlLight", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"PlanetEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ControlLight", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"CombatEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ControlLight", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"AtmosCombatEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ControlHeavy", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"SpaceEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ControlHeavy", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"PlanetEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ControlHeavy", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"CombatEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ControlHeavy", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"AtmosCombatEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ControlCorvette", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"SpaceEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ControlCorvette", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"PlanetEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ControlCorvette", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"CombatEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"ControlCorvette", "GcPlayerSpaceshipControlData"}, -- DEFAULT CONTROL
+              ["PRECEDING_KEY_WORDS"] = {"AtmosCombatEngine"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"DirectionBrakeMin",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"DirectionBrake",   "@/"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnBrakeMax",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"TurnStrength",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+                {"RollAmount",   "@*"..(1 + (ShipManeuverabilityBonusPercent / 100))},
+              }
             },
           },
         },
