@@ -1,5 +1,5 @@
 ModName = "PTSd Black Holes + Scrapping etc"
-GameVersion = "7_01"
+GameVersion = "7_06"
 Description = "Black Holes send you farther, Adjusts Living Ship Module Evolution costs, Changes Illegal goods price markup, Adjust Death Penalty units cost, Replaces some of the substances you can receive from scrapping ships"
 
 --Controls how much of a bonus Supercharged Tech Slots give
@@ -9,7 +9,7 @@ SpecialTechSlotBonus =					1.2									--1.25
 StormBonusJetpackMod =					0.25								--0.25	Controls how much slower your Jetpack tanks deplete during Hot Storms	(lower is better)
 StormBonusSprintMod =					0.05								--0.25	Controls how much slower your Stamina bar depletes during Toxic Storms	(lower is better)
 StormBonusMiningHeatMod =				9									--3		Controls how much better your Mining Beam stays cool during Cold Storms	(higher is better)
-StormBonusMiningAmountMod =				1.75								--2.55	Controls how much of a bonus to mining resource yield you get during Radiation Storms	(higher is better)
+StormBonusMiningAmountMod =				1.6									--2.55	Controls how much of a bonus to mining resource yield you get during Radiation Storms	(higher is better)
 
 --Trade Rocket fuel use?	(Uses Tritium as fuel by default, has ChargeAmount of 50 by default) (charging amount altered in "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance.lua", Tritium ChargeValue altered in "PTSd Starship And Living Ship Tech + Speed Changes.lua")
 RocketFuelUse =							10									--10
@@ -140,7 +140,7 @@ TurretAITargetingFocusPlayerFactor =	2									--2
 ]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]		= ModName..GameVersion,
+["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,

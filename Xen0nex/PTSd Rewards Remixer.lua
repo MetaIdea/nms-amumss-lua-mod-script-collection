@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "7_04"
+GameVersion = "7_06"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -90,8 +90,8 @@ SmallUnitsMin =							4						--Applies to all Min rewards under 50000 units
 SmallUnitsMax =							5						--Applies to all Max rewards under 100000 units
 VerySmallUnitsMin =						3						--Applies to all Min rewards under 10000 units		(Stacks multiplicatively with the above bonus, i.e. 3 x 4 = 12x) 
 VerySmallUnitsMax =						5						--Applies to all Max rewards under 35000 units		(Stacks multiplicatively with the above bonus) 
-ExtremelySmallUnitsMin =				5						--Applies to all Min rewards under 500 units		(Stacks multiplicatively with the above bonuses) i.e. 5 x 3 x 4 = 60x
-ExtremelySmallUnitsMax =				5						--Applies to all Max rewards under 1000 units		(Stacks multiplicatively with the above bonuses) 
+ExtremelySmallUnitsMin =				5						--Applies to all Min rewards 500 units or under		(Stacks multiplicatively with the above bonuses) i.e. 5 x 3 x 4 = 60x
+ExtremelySmallUnitsMax =				5						--Applies to all Max rewards 1000 units or under	(Stacks multiplicatively with the above bonuses) 
 
 --Multipliers for Bounties for the random space encounter with pirates having a bounty on them.
 	--TODO:	Check if the vanilla bug of often getting no bounty still persists in 3.87
@@ -1181,13 +1181,16 @@ OutlawMissStandReward =				9							--2		Reward for certain Outlaw station missio
 --Alters the daily "items for nanites" trades offered by Iteration Ares at the Anomaly
 AresTradeChanges =
 {--Item amount	Trade Item Id			Min /	Max nanites per INDIVIDUAL item traded (final reward will be multiplied by item amount traded)
-	{"6",		"STORM_CRYSTAL",		"76",	"114"},		--"1",		"STORM_CRYSTAL",		"5",	"10"		(123,600 units)
+	{"6",		"STORM_CRYSTAL",		"51",	"76"},		--"1",		"STORM_CRYSTAL",		"5",	"10"		(82,400 units)
 	{"8",		"CLAMPEARL",			"27",	"41"},		--"1",		"CLAMPEARL",			"5",	"15"		(45,450 units)
 	{"3",		"DEEPSEA_PROD",			"192",	"288"},		--"1",		"GEODE_ASTEROID",		"3",	"3"			(319,200 units)
 	{"5",		"GEODE_RARE",			"29",	"44"},		--"1",		"GRAVBALL",				"5",	"10"		(48,960 units)
 	{"10",		"CAVECUBE",				"14",	"20"},		--"1",		"CAVECUBE",				"5",	"10"		(23,200 units)
 	{"4",		"PIRATE_PROD",			"51",	"77"},		--"1",		"BP_SALVAGE",			"5",	"10"		(85,000 units)
 } 
+
+--Applies a multiplier to the amount of nanites that Cronus awards when judging foods
+CronusFoodNanitesMult =				2						--Awards 0, 10, 25, 50, 75, or 110 nanites depending on the CookingValue of the food and some random chance
 
 --Replaces certain gifts from Guild Envoys in Space Stations (may be obsolete in NMS v4.6+)
 GuildGiftChanges =
@@ -1216,6 +1219,7 @@ GuildGiftChanges =
 }
 
 --Changes rewards from various interactable objects in Space Stations added in NMS v4.6
+	--NOTE: As of NMS v7.0, this seems depcrecated as there do not appear to be any more interactable objects on space stations which yield rewards (except for Abandoned Stations)
 StationLootChanges =
 {
 	{	--Data Silos, Insecure Repositories, or Vulnerable Servers
@@ -1272,6 +1276,12 @@ StationLootCurrencyChanges =
 		}
 	},
 }
+
+--Adjusts & adds new rewards to the reward pools for the "Practise language skills" option with NPCs, depending on which type of word you choose
+TradeWordGiftAmount =		10				--1		Amount of Trade goods sometimes given when using a trade-related word 
+KorvaxThreatGiftAmount =	10				--1	(10-20 for Faecium)		Amount of "junk" items sometimes given by Korvax when using a threatening word	
+HelpWordNavDataChance =		167				--0		Relative chance weighting (out of around ~500 + this weight) to receive 1-2 Nav Data when using a "help" word
+LoreWordNavDataChance =		333				--0		Relative chance weighting (out of around ~1,000 + this weight) to receive 1-2 Nav Data when using a "lore" related word (2-3 with Autophage)
 
 --Applies a multiplier to the amount of Projectile Ammo awarded from various sources
 SmallAmmoMult =				0.6				--1		Multiplier applied to rewards of 100 or less ammo (usually 25~95)
@@ -1470,6 +1480,12 @@ DeepSpaceSalvageItemChanges =
 		}
 	},
 }
+
+--Replacers for the chance to get C/B/A/S Class upgrade modules from the first 10 Base Computer Archives missions if you've already purchased the recipe/blueprint it was going to reward you with
+BaseComputerClassCChance =				0						--65 or 0
+BaseComputerClassBChance =				67						--25 or 100
+BaseComputerClassAChance =				33						--10 or 0
+BaseComputerClassSChance =				0						--0
 
 --Replacers for the Min and Max Units awarded for the repeatable mission from the Exocraft Technician NPC, in addition to the other random rewards
 ExocraftMinUnits =						100001					--1000 or 0
@@ -1864,22 +1880,39 @@ SpaceMailSubstanceMult =	1			--1			Applies a multiplier to the amount of substan
 SpaceMailRewardChoiceType =	"GiveAll"	--"GiveFirst_ThenAlsoSelectFromRest"	Affects how the game chooses the possible bonus rewards when manually delivering "space package delivery" missions. Vanilla only allows one possible bonus reward, and often no reward. "Giveall" can still result in no reward if all options have a PercentageChance below 100, but can allow multiple bonus rewards to be awarded at once.
 
 --Changes to rewards from Creature Battles at Xeno Arenas
-	--These set the new average nanite reward for winning various Creature Battles. The range will vary between ~67% and 133% of the value set below
-LowXenoArenaReward =		160			--(5-10 nanites)			Wins at training or tutorial with Oceanus at the Nexus
-MedXenoArenaReward =		220			--(10-20 or 5-10 nanites)	Wins vs. planetary opponents	(Trading Outposts, Colossal Archives, or Settlements)
-HighXenoArenaReward =		330			--(15-30 or 10-20 nanites)	Wins vs. regular opponents on Space Stations or Outlaw Stations
-ChampXenoArenaReward =		550			--(30-50 nanites)			Wins vs. System Champions
-NexusXenoArenaReward =		1200		--(175-250 nanites)			Wins vs. Oceanus' daily battle at the Nexus
-PvpXenoArenaReward =		220			--(N/A, added by PTSd)		Wins vs. other players
+	--These set the new average currency reward for winning various Creature Battles. The range will vary between ~67% and 133% of the value set below
+TrainXenoArenaNanites =		50			--(5-10 nanites)			Wins at training or tutorial with Oceanus at the Nexus
+TrainXenoArenaUnits =		100000		--(0 units)					Wins at training or tutorial with Oceanus at the Nexus	(added by PTSd)
+
+PlanetXenoArenaNanites =	100			--(10-20 or 5-10 nanites)	Wins vs. planetary opponents	(Trading Outposts, Colossal Archives, or Settlements)
+PlanetXenoArenaUnits =		300000		--(0 units)					Wins vs. planetary opponents	(Trading Outposts, Colossal Archives, or Settlements)	(added by PTSd)
+
+StationXenoArenaNanites =	200			--(15-30 or 10-20 nanites)	Wins vs. regular opponents on Space Stations or Outlaw Stations
+StationXenoArenaUnits =		200000		--(0 units)					Wins vs. regular opponents on Space Stations or Outlaw Stations	(added by PTSd)
+
+ChampXenoArenaNanites =		800			--(30-50 nanites)			Wins vs. System Champions
+ChampXenoArenaUnits =		400000		--(0 units)					Wins vs. System Champions	(added by PTSd)
+
+DailyXenoArenaNanites =		1400		--(175-250 nanites)			Wins vs. Oceanus' daily battle at the Nexus
+DailyXenoArenaUnits =		600000		--(0 units)					Wins vs. Oceanus' daily battle at the Nexus	(added by PTSd)
+
+PvpXenoArenaNanites =		150			--(0 nanites)				Wins vs. other players	(added by PTSd)
+PvpXenoArenaUnits =			150000		--(0 units)					Wins vs. other players	(added by PTSd)
 
 	--These set the chance & amount to award a Retroviral Pellet for winning various Creature Battles
-LowRVPelletChance =			25			--3							% Chance wins vs. planetary opponents, including Settlement Creature Battles which have a chance of 0 in vanilla
-MedRVPelletChance =			50			--8 or 3					% Chance for wins vs. regular opponents on Space Stations or Outlaw Stations
+PlanetRVPelletChance =		100			--3							% Chance wins vs. planetary opponents, including Settlement Creature Battles which have a chance of 0 in vanilla
+PlanetRVPelletMin =			1			--1							Minimum amount of Pellets awarded for wins vs. planetary opponents
+PlanetRVPelletMax =			1			--1							Maximum amount of Pellets awarded for wins vs. planetary opponents
+
+StationRVPelletChance =		100			--8 or 3					% Chance for wins vs. regular opponents on Space Stations or Outlaw Stations
+StationRVPelletMin =		1			--1							Minimum amount of Pellets awarded for wins vs. regular opponents on Space Stations or Outlaw Stations
+StationRVPelletMax =		1			--1							Maximum amount of Pellets awarded for wins vs. regular opponents on Space Stations or Outlaw Stations
+
 HighRVPelletChance =		100			--60 or 75					% Chance for wins vs. System Champions or Oceanus' daily battle at the Nexus
-ChampRVPelletMin =			1			--1							Minimum amount of Pellets awarded for wins vs. System Champions
-ChampRVPelletMax =			2			--1							Maximum amount of Pellets awarded for wins vs. System Champions
-OceanusRVPelletMin =		2			--1							Minimum amount of Pellets awarded for wins vs. Oceanus' daily battle at the Nexus
-OceanusRVPelletMax =		3			--1							Maximum amount of Pellets awarded for wins vs. Oceanus' daily battle at the Nexus
+ChampRVPelletMin =			3			--1							Minimum amount of Pellets awarded for wins vs. System Champions
+ChampRVPelletMax =			3			--1							Maximum amount of Pellets awarded for wins vs. System Champions
+OceanusRVPelletMin =		4			--1							Minimum amount of Pellets awarded for wins vs. Oceanus' daily battle at the Nexus
+OceanusRVPelletMax =		4			--1							Maximum amount of Pellets awarded for wins vs. Oceanus' daily battle at the Nexus
 
 --% Chance to receive Echo Locators from various sources
 SpiderMapChance			=	20			--7			Chance to drop from the large Arachnid Sentinels
@@ -1935,6 +1968,7 @@ ADSExosuitChartChance	=	5			--10		Relative chance for each Ancient Data Structur
 
 --Multipliers to apply to rewards from some rare resource nodes
 MutantPlantSulphurine	=	0.75		--250 - 400
+MutantPlantRadon		=	0.75		--150 - 300
 CuriousDepositMould		=	0.6			--300 - 500
 OrganicRockChlorine		=	2.2			--25 - 60	
 OrganicRockMordite		=	0.27		--250 - 500			Unlike the other rare resource nodes here, this is unaffected by your Multi-Tool's Mining yield bonus
@@ -2092,6 +2126,24 @@ SecondarySubstanceMults =
 	{"DE_CAVE_GAS3",		"GAS3",			0.25},			--Nitrogen, 		0.25
 	{"DE_CAVE_GAS3",		"LAND2",		0.25},			--Pure Ferrite, 	0.25
 }
+
+--Changes the multiplier to substance yields from mining plants on specific rare subtypes of planets (generally planets with "sparse" / "scarce" / etc. flora which don't spawn large plants / trees)
+	--This multiplies the yield of all Primary & Secondary substances (i.e. Carbon and possibly Condensed Carbon / Oxygen) by the listed value (vanilla has absurdly large multipliers)
+FuelMultiplierChanges =
+{	--Planet subtype																	FuelMultiplier
+	{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENCORALBIOME.MBIN",				1.12},			--10
+	{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENROCKYBIOME.MBIN",				1.12},			--10
+	{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENROCKYWEIRDBIOME.MBIN",		1.12},			--10
+	{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYBIOME.MBIN",				1.12},			--10
+	{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYWEIRDBIOME.MBIN",		1.12},			--10
+	{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WATERWORLD\WATERWORLDCORALBIOME.MBIN",		1.12},			--10
+	{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WATERWORLD\WATERWORLDFROZENBIOME.MBIN",	1.12},			--10
+	{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WATERWORLD\WATERWORLDROCKYBIOME.MBIN",		1.12},			--10
+	{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLARBIOME.MBIN",			1.12},			--5
+	{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYBIOME.MBIN",					1.24},			--5
+	{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDBIOME.MBIN",			1.24},			--5
+	--{"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLESBIOME.MBIN",				1.18},			--1
+} 
 
 --Changes the minimum depth that Sea Glass nodes can spawn underwater
 SeaGlassMinDepth = -800					-- -220		(Must use a minus sign (-) to indicate depth below sea level)
@@ -4730,8 +4782,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_CHEF_JUDGE"},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountBad",	CronusFoodNanitesMult},
+					{"AmountAverage",	CronusFoodNanitesMult},
+					{"AmountGood",	CronusFoodNanitesMult},
+					{"AmountBest",	CronusFoodNanitesMult},
+					{"AmountBestUpper",	CronusFoodNanitesMult}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_END_NAN"},
-				["MATH_OPERATION"] 		= "*", 
+				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4746,6 +4811,76 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"PercentageChance",	DerelictGoodCorvChance},
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_TRAGIFT_WTRAD"},
+					{"Id", "R_EXPGIFT_WTRAD"},
+					{"Id", "R_WARGIFT_WTRAD"},
+					{"Id", "R_BUIGIFT_SCRAP",		"ID", "SALVAGE_TECH1"},
+				},
+				["REPLACE_TYPE"] = "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	TradeWordGiftAmount},
+					{"AmountMax",	TradeWordGiftAmount},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_BUIGIFT_SCRAP",		"ID", "SALVAGE_TECHMT1"},
+					{"Id", "R_BUIGIFT_SCRAP",		"ID", "SALVAGE_TECH2"},
+				},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	math.floor((TradeWordGiftAmount/2)+0.5)},
+					{"AmountMax",	math.floor((TradeWordGiftAmount/2)+0.5)},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_TRAGIFT_WTRAD",		"ID", "ANTIMATTER"},
+					{"Id", "R_EXPGIFT_WTRAD",		"ID", "ANTIMATTER"},
+					{"Id", "R_WARGIFT_WTRAD",		"ID", "ANTIMATTER"},
+				},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	"1"},
+					{"AmountMax",	"1"},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_EXPGIFT_WTHRT"},
+				["REPLACE_TYPE"] = "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	KorvaxThreatGiftAmount},
+					{"AmountMax",	KorvaxThreatGiftAmount},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_TRAGIFT_WHELP",		"List", "GcRewardTableItem"},
+					{"Id", "R_EXPGIFT_WHELP",		"List", "GcRewardTableItem"},
+					{"Id", "R_WARGIFT_WHELP",		"List", "GcRewardTableItem"},
+					{"Id", "R_BUIGIFT_WHELP",		"List", "GcRewardTableItem"},
+				},
+				["ADD"] = ProductReward ("NAV_DATA", "1", "2", HelpWordNavDataChance),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_TRAGIFT_WLORE",		"List", "GcRewardTableItem"},
+					{"Id", "R_EXPGIFT_WLORE",		"List", "GcRewardTableItem"},
+					{"Id", "R_WARGIFT_WLORE",		"List", "GcRewardTableItem"},
+				},
+				["ADD"] = ProductReward ("NAV_DATA", "1", "2", LoreWordNavDataChance),
+				["ADD_OPTION"] = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_BUIGIFT_WLORE",		"List", "GcRewardTableItem"},
+				["ADD"] = ProductReward ("NAV_DATA", "2", "3", math.floor((LoreWordNavDataChance*0.3)+0.5)),
+				["ADD_OPTION"] = "ADDafterSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID", "AMMO"},
@@ -5270,6 +5405,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","EARLY_TECH_SUIT"},
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"WeightedChanceNormal",	BaseComputerClassCChance},
+					{"WeightedChanceRare",	BaseComputerClassBChance},
+					{"WeightedChanceEpic",	BaseComputerClassAChance},
+					{"WeightedChanceLegendary",	BaseComputerClassSChance},
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_DEFEND_RAID",		"List", "GcRewardTableItem"},
 				["ADD"] = CurrencyReward("Nanites", PirateRaidDefenseNanitesMin, PirateRaidDefenseNanitesMax, PirateRaidDefenseNanitesChance),
 				["ADD_OPTION"]  = "ADDafterSECTION",
@@ -5373,6 +5519,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"AmountMin",	MutantPlantSulphurine},
 					{"AmountMax",	MutantPlantSulphurine}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_RADIO"},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	MutantPlantRadon},
+					{"AmountMax",	MutantPlantRadon}
 				}
 			},
 			{
@@ -5545,7 +5701,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["REPLACE_TYPE"] 		= "ALL",
 				["MATH_OPERATION"] 		= "*",
 				["VALUE_MATCH"] 		= "500",
-				["VALUE_MATCH_OPTIONS"]	= "<",
+				["VALUE_MATCH_OPTIONS"]	= "<=",
 				["SECTION_UP"]			= 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -5581,7 +5737,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["REPLACE_TYPE"] 		= "ALL",
 				["MATH_OPERATION"] 		= "*",
 				["VALUE_MATCH"] 		= "1000",
-				["VALUE_MATCH_OPTIONS"]	= "<",
+				["VALUE_MATCH_OPTIONS"]	= "<=",
 				["SECTION_UP"]			= 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -6255,9 +6411,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	math.floor(2*LowXenoArenaReward/3)}, 
-					{"AmountMax",	math.floor(4*LowXenoArenaReward/3)}, 
+					{"AmountMin",	math.floor(2*TrainXenoArenaNanites/3)}, 
+					{"AmountMax",	math.floor(4*TrainXenoArenaNanites/3)}, 
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_PB_PVE_EASY_W",		"List", "GcRewardTableItem"},		--	0	Training with Oceanus?
+					{"Id", "R_PB_TUT_W",			"List", "GcRewardTableItem"},		--	0	Tutorial with Oceanus
+				},
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = CurrencyReward ("Units", math.floor(2*TrainXenoArenaUnits/3), math.floor(4*TrainXenoArenaUnits/3), "100.000000"),
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
@@ -6268,9 +6432,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	math.floor(2*MedXenoArenaReward/3)}, 
-					{"AmountMax",	math.floor(4*MedXenoArenaReward/3)},
+					{"AmountMin",	math.floor(2*PlanetXenoArenaNanites/3)}, 
+					{"AmountMax",	math.floor(4*PlanetXenoArenaNanites/3)},
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_PB_PVE_STD_W",		"List", "GcRewardTableItem"},		--	0	(seems unused, no AI trainer set to this???)
+					{"Id", "R_PB_PVE_PLAC_W",		"List", "GcRewardTableItem"},		--	0	(medium AI)		At Trade Outposts? (In PTSd also for Colossal Archive battles)
+					{"Id", "R_PB_PVE_EZ_NI",		"List", "GcRewardTableItem"},		--	0	(medium AI)		At Settlement?
+				},
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = CurrencyReward ("Units", math.floor(2*PlanetXenoArenaUnits/3), math.floor(4*PlanetXenoArenaUnits/3), "100.000000"),
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
@@ -6280,9 +6453,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	math.floor(2*HighXenoArenaReward/3)}, 
-					{"AmountMax",	math.floor(4*HighXenoArenaReward/3)},
+					{"AmountMin",	math.floor(2*StationXenoArenaNanites/3)}, 
+					{"AmountMax",	math.floor(4*StationXenoArenaNanites/3)},
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_PB_PVE_SYSS_W",		"List", "GcRewardTableItem"},		--	0	Space Station battles?
+					{"Id", "R_PB_PVE_HARD_W",		"List", "GcRewardTableItem"},		--	0	Outlaw Station battles	(in vanilla also for Colossal Archive battles)
+				},
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = CurrencyReward ("Units", math.floor(2*StationXenoArenaUnits/3), math.floor(4*StationXenoArenaUnits/3), "100.000000"),
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
@@ -6291,9 +6472,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	math.floor(2*ChampXenoArenaReward/3)}, 
-					{"AmountMax",	math.floor(4*ChampXenoArenaReward/3)},
+					{"AmountMin",	math.floor(2*ChampXenoArenaNanites/3)}, 
+					{"AmountMax",	math.floor(4*ChampXenoArenaNanites/3)},
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_PB_PVE_SYSC_W",		"List", "GcRewardTableItem"},		--	0	System Champions
+				},
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = CurrencyReward ("Units", math.floor(2*ChampXenoArenaUnits/3), math.floor(4*ChampXenoArenaUnits/3), "100.000000"),
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {
@@ -6302,14 +6490,26 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"AmountMin",	math.floor(2*NexusXenoArenaReward/3)}, 
-					{"AmountMax",	math.floor(4*NexusXenoArenaReward/3)},
+					{"AmountMin",	math.floor(2*DailyXenoArenaNanites/3)}, 
+					{"AmountMax",	math.floor(4*DailyXenoArenaNanites/3)},
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "R_PB_PVP_STD_W",	"List", "GcRewardTableItem"},
-				["ADD"] = CurrencyReward ("Nanites", math.floor(2*PvpXenoArenaReward/3), math.floor(4*PvpXenoArenaReward/3), "100.000000"),
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id", "R_PB_D_NEXUS_W",		"List", "GcRewardTableItem"},		--	0	Oceanus Daily battle
+				},
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = CurrencyReward ("Units", math.floor(2*DailyXenoArenaUnits/3), math.floor(4*DailyXenoArenaUnits/3), "100.000000"),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_PB_PVP_STD_W",	"List", "GcRewardTableItem"},		-- 0	PvP battles
+				["ADD"] = CurrencyReward ("Nanites", math.floor(2*PvpXenoArenaNanites/3), math.floor(4*PvpXenoArenaNanites/3), "100.000000"),
 				["ADD_OPTION"]  = "ADDafterSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_PB_PVP_STD_W",	"List", "GcRewardTableItem"},		-- 0	PvP battles
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = CurrencyReward ("Units", math.floor(2*PvpXenoArenaUnits/3), math.floor(4*PvpXenoArenaUnits/3), "100.000000"),
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "R_PB_PVE_EZ_NI",	"List", "GcRewardTableItem"},
@@ -6325,7 +6525,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"PercentageChance",	LowRVPelletChance},
+					{"PercentageChance",	PlanetRVPelletChance},
+					{"AmountMin",	PlanetRVPelletMin},
+					{"AmountMax",	PlanetRVPelletMax},
 				}
 			},
 			{
@@ -6336,7 +6538,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"PercentageChance",	MedRVPelletChance},
+					{"PercentageChance",	StationRVPelletChance},
+					{"AmountMin",	StationRVPelletMin},
+					{"AmountMax",	StationRVPelletMax},
 				}
 			},
 			{
@@ -8681,4 +8885,25 @@ for i = 1, #DeepSpaceSalvageItemChanges do
 				}
 			}
 		end
+end
+
+local ChangesToFuelMultipliers = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+
+for i = 1, #FuelMultiplierChanges do
+	local FilePath = FuelMultiplierChanges[i][1]
+	local FuelMultiplier = FuelMultiplierChanges[i][2]
+			
+			ChangesToFuelMultipliers[#ChangesToFuelMultipliers+1] =
+			{
+				["MBIN_FILE_SOURCE"] 	= {FilePath},
+				["MXML_CHANGE_TABLE"] 	= 
+				{
+					{
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"FuelMultiplier", FuelMultiplier}
+						}
+					}
+				}
+			}
 end

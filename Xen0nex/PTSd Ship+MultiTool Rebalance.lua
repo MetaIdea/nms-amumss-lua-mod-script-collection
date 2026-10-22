@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "7_04"
+GameVersion = "7_06"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -23,22 +23,22 @@ FixAgilityStat = true			--false			If true, this will try to ensure there is an e
 RemoveAgilitySpeed = true		--false			If true, this will make the SHIP_AGILE stat no longer affect Boosting Speed, but only Maneuverability (& Boosting Maneuverability). Either way, this setting can't really affect the final maxed-out Boosting Speed, which is soft-capped based on the intial speed of the ship
 
 --Replacers for Ship class Spawn rate % based on System Wealth
-PoorC		=	64				-- Default "60" 
+PoorC		=	65.75			-- Default "60" 
 PoorB		=	25				-- Default "30" 
-PoorA		=	10				-- Default "10" 
-PoorS		=	1				-- Default "0" 
-AverageC	=	48.5			-- Default "49" 
-AverageB	=	35				-- Default "35" 
-AverageA	=	15				-- Default "15" 
-AverageS	=	1.5				-- Default "1" 
-WealthyC	=	27.75			-- Default "30" 
-WealthyB	=	45				-- Default "40" 
-WealthyA	=	25				-- Default "28" 
-WealthyS	=	2.25			-- Default "2" 
+PoorA		=	8				-- Default "10" 
+PoorS		=	1.25			-- Default "0" 
+AverageC	=	54.33			-- Default "49" 
+AverageB	=	33				-- Default "35" 
+AverageA	=	11				-- Default "15" 
+AverageS	=	1.67			-- Default "1" 
+WealthyC	=	39.28			-- Default "30" 
+WealthyB	=	44				-- Default "40" 
+WealthyA	=	14.5			-- Default "28" 
+WealthyS	=	2.22			-- Default "2" 
 PirateC		=	5				-- Default "5" 		(Seems to work out to 85% in practice, may just lump in whatever % is left after B, A, & S)
-PirateB		=	5.8				-- Default "5" 
-PirateA		=	5.8				-- Default "5" 
-PirateS		=	3.4				-- Default "5" 
+PirateB		=	8				-- Default "5" 
+PirateA		=	4				-- Default "5" 
+PirateS		=	3				-- Default "5" 
 
 --Replacers for Shuttle Class C base bonuses for all stats, since its vanilla bonuses are 0 at that Class
 	--Note these base bonus values will then be affected by the multipliers in the sections below

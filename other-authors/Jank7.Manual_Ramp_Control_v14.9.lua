@@ -1,11 +1,15 @@
 ---------------------------------------------------------------------------------------
-local mod_desc = [[
-  Manual Ramp Control v14.7
+-- Package: false = A (each bay has its own switches), true = B (every switch opens /
+-- closes all bays together)
+local ALL_BAYS = false
 
-  Removes the corvette landing bays' auto-open. Each bay is opened and closed by
-  its own switches (interior and exterior), and they stay in sync. The doors send
-  vanilla's DoorOpen / DoorClosed messages, so the vanilla bay warning light and
-  switch lever work again.
+local mod_desc = [[
+  Manual Ramp Control v14.9
+
+  Removes the corvette landing bays' auto-open. Package A: each bay is opened and closed
+  by its own switches (interior and exterior), and they stay in sync. Package B: every
+  ramp switch opens / closes all bays together. The doors send vanilla's DoorOpen /
+  DoorClosed messages, so the vanilla bay warning light and switch lever work again.
 
   v13.0  Switch states share the door's names so all switches in a bay stay in sync
   v13.1  Door entities patched in place instead of copied
@@ -23,6 +27,15 @@ local mod_desc = [[
          so Ramp Warning Light is no longer needed. The state names are unchanged.
          Jank-tested 2026-10-02: light, bay levers and vents work. The switch's press
          glow shows an empty space (vanilla QDRCONTROLS data bug, see notes).
+         Released as Ultimate Landing Bays v7.09.
+  v14.8  ALL_BAYS setting (top of file) for packages A / B. B: the switches
+         relay at BroadcastLevel Scene (whole ship) instead of LocalModel (own bay).
+         Package A works (Jank-tested), but after a game restart the ramps often load
+         open while the door is in BOOT, so the first press plays the open anim from
+         closed (jump to closed, then open).
+  v14.9  UNTESTED. Door BOOT plays JANK7_SHUT, a new anim entry = the last 2 frames of
+         the bay's vanilla close anim (closed pose), so every door starts closed and
+         matches the switch. New anim name: no DoorClosed message, no sound.
 ]]-------------------------------------------------------------------------------------
 
 --=====================================================================================
@@ -55,11 +68,19 @@ end
 local PARTS = 'MODELS/COMMON/SPACECRAFT/BIGGS/MODULES/PARTS/'
 
 -- door is also the scene node name (matching is case-insensitive)
+-- closeAnim / closeFrames: the door's vanilla RAMPUP file and its FrameCount;
+-- anims = number of vanilla entries in the door's Anims list
 local BAYS = {
-	{ dir = 'AIRLOCK_NESW_A', door = 'RAMPDATA' },	-- 4 vents
-	{ dir = 'AIRLOCK_NESW_B', door = 'RAMPDATA' },	-- 2 vents
-	{ dir = 'AIRLOCK_NESW_C', door = 'LIFTDATA' },	-- 4 vents
+	{ dir = 'AIRLOCK_NESW_A', door = 'RAMPDATA', anims = 5, closeFrames = 61,	-- 4 vents
+	  closeAnim = PARTS .. 'ANIMS/AIRLOCK_NESW_A/AIRLOCK_NESW_A_CLOSE.ANIM.MBIN' },
+	{ dir = 'AIRLOCK_NESW_B', door = 'RAMPDATA', anims = 5, closeFrames = 121,	-- 2 vents
+	  closeAnim = PARTS .. 'AIRLOCK_NESW_B/ANIMATIONS/AIRLOCK_NESW_B_CLOSE.ANIM.MBIN' },
+	{ dir = 'AIRLOCK_NESW_C', door = 'LIFTDATA', anims = 4, closeFrames = 140,	-- 4 vents
+	  closeAnim = PARTS .. 'ANIMS/AIRLOCK_NESW_C/HABHATCH_CLOSE.ANIM.MBIN' },
 }
+
+-- Door anim that holds the closed pose (played by the door's BOOT)
+local SHUT_ANIM = 'JANK7_SHUT'
 
 local function scenePath(bay)			return PARTS .. bay.dir .. '.SCENE.MBIN' end
 local function entityPath(bay, name)	return PARTS .. bay.dir .. '/ENTITIES/' .. name .. '.ENTITY.MBIN' end
@@ -249,11 +270,56 @@ local function playAnim(anim)
 ]], anim)
 end
 
+-- BOOT snaps the ramp to the closed pose: a ramp that loads open would otherwise sit
+-- open while the door and switches are in BOOT (= closed)
 local DOOR_STATE_MACHINE = stateMachine({
-	BOOT_STATE,
+	triggerState('BOOT', { playAnim(SHUT_ANIM) }),
 	triggerState(STATE.RAMP_OPEN,  { playAnim('RAMPDOWN') }),
 	triggerState(STATE.RAMP_CLOSE, { playAnim('RAMPUP') }),
 }, 'BOOT')
+
+-- New entry for the door's Anims list: the last 2 frames of the vanilla close anim
+-- (frames count from 0, end frame included; 2 frames in case 1 counts as zero length).
+-- Fields copied from the vanilla RAMPUP entry.
+local function shutAnimEntry(bay)
+	return string.format([[
+<Property name="Anims" value="TkAnimationData" _index="%d">
+	<Property name="Anim" value="%s" />
+	<Property name="Filename" value="%s" />
+	<Property name="AnimType" value="OneShot" />
+	<Property name="AnimGroupOverride" value="false" />
+	<Property name="Priority" value="0" />
+	<Property name="FrameStart" value="%d" />
+	<Property name="FrameEnd" value="%d" />
+	<Property name="FrameEndGame" value="0" />
+	<Property name="StartNode" value="" />
+	<Property name="ExtraStartNodes" />
+	<Property name="AdditiveBaseAnim" value="" />
+	<Property name="AdditiveBaseFrame" value="0.000000" />
+	<Property name="Mask" value="" />
+	<Property name="AdditionalMasks" />
+	<Property name="OffsetMin" value="0.000000" />
+	<Property name="OffsetMax" value="0.000000" />
+	<Property name="Delay" value="0.000000" />
+	<Property name="Speed" value="1.000000" />
+	<Property name="ActionStartFrame" value="0.000000" />
+	<Property name="ActionFrame" value="-1.000000" />
+	<Property name="Actions" />
+	<Property name="CreatureSize" value="AllSizes" />
+	<Property name="Notifies" />
+	<Property name="LimbPlants" />
+	<Property name="Additive" value="false" />
+	<Property name="Mirrored" value="false" />
+	<Property name="Active" value="false" />
+	<Property name="Has30HzFrames" value="false" />
+	<Property name="GameData" value="TkAnimationGameData">
+		<Property name="RootMotion" value="None" />
+		<Property name="BlockPlayerMovement" value="false" />
+		<Property name="BlockPlayerWeapon" value="Unblocked" />
+	</Property>
+</Property>
+]], bay.anims, SHUT_ANIM, bay.closeAnim, bay.closeFrames - 2, bay.closeFrames - 1)
+end
 
 -- Ramp animation starts -> graph message to the bay (vents, warning light, switch levers)
 local DOOR_SIGNAL = sketchGraph({
@@ -322,7 +388,10 @@ local function timedTrigger(index, seconds, actions)
 ]], index, seconds, block(actions, 2))
 end
 
--- Sends the state to everything in the bay (door, other switches) and stays in it
+-- Relay reach: A = own bay, B = whole ship
+local RELAY_LEVEL = ALL_BAYS and 'Scene' or 'LocalModel'
+
+-- Sends the state to the doors and other switches (RELAY_LEVEL) and stays in it
 local function relayState(id, target)
 	return string.format([[
 <Property name="States" value="GcActionTriggerState" _id="%s">
@@ -331,7 +400,7 @@ local function relayState(id, target)
 %s	</Property>
 </Property>
 ]], id, id, block({
-		timedTrigger(0, '0.000000', { goToState(target, true, 'LocalModel') }),
+		timedTrigger(0, '0.000000', { goToState(target, true, RELAY_LEVEL) }),
 	}, 2))
 end
 
@@ -379,7 +448,7 @@ for _, bay in ipairs(BAYS) do
 			},
 		}
 	}
-	-- |door entity: add the ramp state machine and the signal graph|
+	-- |door entity: add the ramp state machine, the signal graph and the JANK7_SHUT anim|
 	mbinChanges[#mbinChanges + 1] = {
 		MBIN_FILE_SOURCE	= nmsPath(entityPath(bay, bay.door)),
 		MXML_CHANGE_TABLE	= {
@@ -387,6 +456,13 @@ for _, bay in ipairs(BAYS) do
 				SPECIAL_KEY_WORDS	= {'Components', 'TkPhysicsComponentData'},
 				ADD_OPTION			= 'ADDafterSECTION',
 				ADD					= DOOR_STATE_MACHINE .. DOOR_SIGNAL,
+			},
+			{
+				-- after the Anims entry for RAMPUP (the Anim + Filename pair skips the
+				-- audio trigger that also names RAMPUP)
+				SPECIAL_KEY_WORDS	= {'Anim', 'RAMPUP', 'Filename', bay.closeAnim},
+				ADD_OPTION			= 'ADDafterSECTION',
+				ADD					= shutAnimEntry(bay),
 			},
 		}
 	}
@@ -411,8 +487,8 @@ mbinChanges[#mbinChanges + 1] = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME		= 'Jank7.Manual_Ramp_Control_v14.7',
-	MOD_BATCHNAME 		= 'Jank7_Ultimate_Landing_Bays_v7.09',
+	MOD_FILENAME		= 'Jank7.Manual_Ramp_Control_v14.9',
+	MOD_BATCHNAME 		= 'Jank7_Ultimate_Landing_Bays_' .. (ALL_BAYS and 'B' or 'A') .. '_v7.11.1',
 	EXML_CREATE			= 'FALSE',
 	MOD_AUTHOR			= 'Jank7',
 	NMS_VERSION			= '7.05',

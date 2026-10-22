@@ -1,5 +1,5 @@
 ModName = "PTSd Stronger Environmental Hazards"
-GameVersion = "6_11"
+GameVersion = "7_06"
 Description = "Makes hazards (toxic, cold, hot, radiation) harsher. Also increases chances for special weather events (Tornadoes) and adjusts their properties."
 
 --TODO:
@@ -22,7 +22,6 @@ HardModeHazardDamageRateMultiplier = 0.1					--0.3
 HardModeHazardDamageWoundRateMultiplier = 0.3				--0.5
 HardModeHazardRechargeUnderground = 3.5						--3.5			Lower value recharges faster when underground / indoors
 
-UnderwaterBreathMultiplier = 0.67							--1		(20 & 180)		How long you can last without taking a breath underwater, is affected by "Survival Difficulty" in "PTSd Other Difficulty Settings.lua"
 DeepWaterOxygenMultiplier = 0.2								--0.2			Reduced breath timer when in deep water
 
 --Some settings related to Hazard times
@@ -57,9 +56,32 @@ WeirdExtremeWeatherChance= 1								--1]]
 
 -- TODO: ViciousStormProbability and ViciousWeatherProbability in GCGAMEPLAYGLOBALS.GLOBAL.EXML set to 0.5 by default, what do they do?
 
+--Changes the minimum level of hazard required to trigger hazard drain, and the maximum cap on how strong a hazard can be. I.E. Hazard levels below the trigger don't cause drain, and hazard levels above the maximum cap don't drain any faster than at the cap.
+	--Also sets the base hazard exposure survival duration at the trigger level & maximum cap, before factoring in adjustments such as the HazardTimeMultipliers above or changes to "Survival Difficulty" in "PTSd Other Difficulty Settings.lua". 
+	--Delay is how long after being exposed to the hazard it takes before your hazard meter begins actually draining
+	--Hazard exposure survival time decreases linearly between the MinLevel & MaxLevel
+HazardWindowAndBaseDurationChanges =
+{
+	{	--Hazard Type		MinLevel	MaxLevel	Delay	MinLevelTime	MaxLevelTime
+		"ExtremeHeat",		38.02,		100.0,		2.0,	648,			40				--49.0,		100.0,		2.0,	540,	40
+	},
+	{
+		"ExtremeCold",		-38.02,		-100.0,		2.0,	648,			40				-- -49.0,	-100.0,		2.0,	540,	40
+	},
+	{
+		"ToxicGas",			38.02,		100.0,		2.0,	648,			40				--49.0,		100.0,		2.0,	540,	40
+	},
+	{
+		"Radiation",		38.02,		100.85,		2.0,	648,			32				--49.0,		100.0,		2.0,	540,	40
+	},
+	--This is the "being underwater" hazard, i.e. how long you can hold your breath
+	{
+		"NoOxygen",			0.5,		1.0,		10.0,	90,				90				--0.5,		1.0,		20.0,	180,	180
+	},
+}
+
 --Changes the intensity of environmental hazards in different Biomes and situations
-	--Anything below ~49.05/48 (or above ~-49.05/-48 for Cold temps) doesn't seem to cause any hazard drain
-	--The hazard intensity scales linearly with the values set below but seems to be "capped" at 100 (or -100 for Cold temps): it continues to increase the number displayed on the UI, but doesn't drain hazard protection any faster
+	--The exposure survivla duration for a given hazard intensity scales linearly between MinLevel & MaxLevel
 		--With the way the scaling works, hazard values of 95.5/86.9/69/52.4 should have 2x/4x/8x/12x the survival time of a hazard value of 100+
 PlanetWeatherHazardOverrrides =
 {
@@ -71,7 +93,7 @@ PlanetWeatherHazardOverrrides =
 				{--Circumstance		Normal		Extreme
 					{"Ambient",		59.08,		93.22},			--50,		92
 					{"Water",		54.08,		89.56},			--10,		25
-					{"Cave",		-49.05,		-54.08},		--5,		30
+					{"Cave",		-44.05,		-54.08},		--5,		30
 					{"Storm",		92,			300},			--92,		300
 					{"Night",		-59.08,		-93.22},		--49.05,	88
 					{"DeepWater",	89.56,		115},			--50,		92
@@ -107,12 +129,12 @@ PlanetWeatherHazardOverrrides =
 			{	--Hazard type		Override?
 				{"Temperature",		"true"},
 				{--Circumstance		Normal		Extreme
-					{"Ambient",		59.08,		93.22},			--50,		92
-					{"Water",		30,			79.77},			--10,		25
+					{"Ambient",		64.11,		94.45},			--50,		92
+					{"Water",		30,			85.89},			--10,		25
 					{"Cave",		5,			30},			--5,		30
 					{"Storm",		92,			300},			--92,		300
-					{"Night",		49.05,		90.78},			--49.05,	88
-					{"DeepWater",	89.56,		135},			--72,		135
+					{"Night",		44.05,		89.56},			--49.05,	88
+					{"DeepWater",	89.56,		97.89},			--72,		135
 				}
 			},
 		}
@@ -123,12 +145,12 @@ PlanetWeatherHazardOverrrides =
 			{	--Hazard type		Override?
 				{"Temperature",		"true"},
 				{--Circumstance		Normal		Extreme
-					{"Ambient",		59.08,		93.22},			--50,		92
-					{"Water",		30,			79.77},			--10,		25
-					{"Cave",		5,			30},			--5,		30
+					{"Ambient",		64.11,		94.45},			--50,		92
+					{"Water",		30,			85.89},			--10,		25
+					{"Cave",		15,			35},			--5,		30
 					{"Storm",		92,			300},			--92,		300
-					{"Night",		49.05,		90.78},			--49.05,	88
-					{"DeepWater",	89.56,		135},			--50,		92
+					{"Night",		44.05,		89.56},			--49.05,	88
+					{"DeepWater",	89.56,		97.89},			--50,		92
 				}
 			},
 		}
@@ -139,12 +161,12 @@ PlanetWeatherHazardOverrrides =
 			{	--Hazard type		Override?
 				{"Temperature",		"true"},
 				{--Circumstance		Normal		Extreme
-					{"Ambient",		59.08,		93.22},			--50,		92
-					{"Water",		30,			79.77},			--10,		25
+					{"Ambient",		64.11,		94.45},			--50,		92
+					{"Water",		30,			85.89},			--10,		25
 					{"Cave",		5,			30},			--5,		30
 					{"Storm",		92,			300},			--92,		300
-					{"Night",		49.05,		90.78},			--49.05,	88
-					{"DeepWater",	89.56,		135},			--50,		92
+					{"Night",		44.05,		89.56},			--49.05,	88
+					{"DeepWater",	89.56,		97.89},			--50,		92
 				}
 			},
 		}
@@ -155,7 +177,7 @@ PlanetWeatherHazardOverrrides =
 			{	--Hazard type		Override?
 				{"Temperature",		"true"},
 				{--Circumstance		Normal		Extreme
-					{"Ambient",		10,			54.08},			--10,		50
+					{"Ambient",		10,			64.11},			--10,		50
 					{"Water",		-5,			10},			-- -5,		10
 					{"Cave",		0,			10},			--0,		10
 					{"Storm",		92,			120},			--92,		120
@@ -171,12 +193,12 @@ PlanetWeatherHazardOverrrides =
 			{	--Hazard type		Override?
 				{"Temperature",		"true"},
 				{--Circumstance		Normal		Extreme
-					{"Ambient",		-49.05,		-90.78},		-- -50,		-92
-					{"Water",		-64.13,		-94.45},		-- -60,		-93
+					{"Ambient",		-44.05,		-89.56},		-- -50,		-92
+					{"Water",		-64.11,		-94.45},		-- -60,		-93
 					{"Cave",		-20,		-20},			-- -20,		-20
 					{"Storm",		-92,		-120},			-- -92,		-120
-					{"Night",		-59.08,		-93.22},		-- -52,		-92
-					{"DeepWater",	-95.43,		-158},			-- -95,		-158
+					{"Night",		-64.11,		-94.45},		-- -52,		-92
+					{"DeepWater",	-96.41,		-158},			-- -95,		-158
 				}
 			},
 		}
@@ -188,11 +210,11 @@ PlanetWeatherHazardOverrrides =
 				{"Radiation",		"true"},
 				{--Circumstance		Normal		Extreme
 					{"Ambient",		54.08,		92},			--50,		92
-					{"Water",		49.05,		89.56},			--80,		93
+					{"Water",		44.05,		89.56},			--80,		93
 					{"Cave",		0,			10},			--0,		10
-					{"Storm",		92,			300},			--92,		300
+					{"Storm",		94.45,		300},			--92,		300
 					{"Night",		54.08,		92},			--50,		92
-					{"DeepWater",	92.49,		101},			--93,		101
+					{"DeepWater",	92.5,		99.16},			--93,		101
 				}
 			},
 		}
@@ -204,9 +226,9 @@ PlanetWeatherHazardOverrrides =
 				{"Toxicity",		"true"},
 				{--Circumstance		Normal		Extreme
 					{"Ambient",		54.08,		92},			--50,		92
-					{"Water",		69.13,		95.67},			--60,		93
+					{"Water",		64.11,		94.45},			--60,		93
 					{"Cave",		0,			10},			--0,		10
-					{"Storm",		92,			100},			--92,		100
+					{"Storm",		89.56,		99.16},			--92,		100
 					{"Night",		54.08,		92},			--50,		92
 					{"DeepWater",	96.41,		101},			--60,		101
 				}
@@ -635,7 +657,7 @@ GravityStormFilter =
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]		= ModName..GameVersion,
+["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
@@ -685,24 +707,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\ENVIRONMENT\HAZARDTABLE.MBIN"},
 		["MXML_CHANGE_TABLE"] 	= 
 		{
-			{
-				["MATH_OPERATION"] 		= "*",
-				["SPECIAL_KEY_WORDS"] = {"NoOxygen", "GcPlayerHazardData"},
-				["VALUE_CHANGE_TABLE"] 	=
-					{
-						{"ProtectionInitialTime", UnderwaterBreathMultiplier}
-					}
-			},
-			{
-				["MATH_OPERATION"] 		= "*",
-				["SPECIAL_KEY_WORDS"] = {"NoOxygen", "GcPlayerHazardData"},
-				["PRECEDING_KEY_WORDS"] = {"ProtectionTime"},
-				["VALUE_CHANGE_TABLE"] 	=
-					{
-						{"X", UnderwaterBreathMultiplier},
-						{"Y", UnderwaterBreathMultiplier}
-					}
-			}
+			--Blank
 		}
 	},
 	{
@@ -835,6 +840,39 @@ for i = 1, #SpecialWeatherHazards do
 					}
 			}
 	end
+end
+
+local ChangesToHazardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["MXML_CHANGE_TABLE"]
+
+for i = 1, #HazardWindowAndBaseDurationChanges do
+	local HazardID = HazardWindowAndBaseDurationChanges[i][1]
+	local MinLevel = HazardWindowAndBaseDurationChanges[i][2]
+	local MaxLevel = HazardWindowAndBaseDurationChanges[i][3]
+	local Delay = HazardWindowAndBaseDurationChanges[i][4]
+	local MinLevelTime = HazardWindowAndBaseDurationChanges[i][5]
+	local MaxLevelTime = HazardWindowAndBaseDurationChanges[i][6]
+	
+			ChangesToHazardTable[#ChangesToHazardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {HazardID, "GcPlayerHazardData"},
+				["VALUE_CHANGE_TABLE"] 	=
+					{
+						{"ProtectionInitialTime", Delay},
+						{"TriggerValue", MinLevel},
+						{"CapValue", MaxLevel},
+					}
+			}
+			
+			ChangesToHazardTable[#ChangesToHazardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {HazardID, "GcPlayerHazardData"},
+				["PRECEDING_KEY_WORDS"] = {"ProtectionTime"},
+				["VALUE_CHANGE_TABLE"] 	=
+					{
+						{"X", MinLevelTime},
+						{"Y", MaxLevelTime}
+					}
+			}
 end
 
 local ChangesToTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]

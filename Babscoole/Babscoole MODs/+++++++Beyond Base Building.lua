@@ -225,12 +225,12 @@ end
 NOT_ABOVE_WATER_BUILDPART_ID_TABLE = {"GARAGE_SUB"}
 
 -- Exceptions if ALL_PARTS_ON_FREIGHTER is true
-NOT_FREIGHTER_BUILDPART_ID_TABLE = {"BASE_FLAG", "BASECAPSULE", "MESSAGE", "BUILDLANDINGPAD", "S_LANDINGZONE", "BUILDSIGNAL", "BUILDBEACON", "U_EXTRACTOR_S", "U_GASEXTRACTOR", "U_SILO_S", "U_GENERATOR_S", "U_PIPELINE", "CREATURE_FEED", "CREATURE_FARM", "BUILDHARVESTER", "BUILDGASHARVEST", "TELEPORTER", "O2_HARVESTER"}
+NOT_FREIGHTER_BUILDPART_ID_TABLE = {"BASE_FLAG", "SB_BEACON", "BASECAPSULE", "MESSAGE", "BUILDLANDINGPAD", "S_LANDINGZONE", "BUILDSIGNAL", "BUILDBEACON", "U_EXTRACTOR_S", "U_GASEXTRACTOR", "U_SILO_S", "U_GENERATOR_S", "U_PIPELINE", "CREATURE_FEED", "CREATURE_FARM", "BUILDHARVESTER", "BUILDGASHARVEST", "TELEPORTER", "O2_HARVESTER"}
 -- Notes : BASECAPSULE (Base Salvage Capsule) originally buildable but bugged on freighters.
 -- Vehicles parts are excluded in the dedicated part at the bottom of the script (Geobays, Race Initiator...)
 
 -- Exceptions if ALL_PARTS_ON_PLANETBASE is true
-NOT_PLANETBASE_BUILDPART_ID_TABLE = {"TELEPORTER_F"}
+NOT_PLANETBASE_BUILDPART_ID_TABLE = {"TELEPORTER_F", "SB_BEACON"}
 
 -- Keywords to match prefab parts if CAN_SCALE_PREFAB_PARTS is false
 PREFAB_KEYWORDS_TABLE = {"ROOMS", "FREIGHTER"}
@@ -278,7 +278,7 @@ MISC_ON_FREIGHTER_ID_TABLE = {"POWERLINE_HIDER", "NOISEBOX", "SPAWNER_BALL", "BY
 FARM_IN_ANY_BIOME_ID_TABLE = {"RADIOPLANT", "TOXICPLANT", "SNOWPLANT", "SACVENOMPLANT", "SCORCHEDPLANT", "POOPPLANT", "GRAVPLANT", "CREATUREPLANT", "BARRENPLANT", "LUSHPLANT", "PEARLPLANT", "NIPPLANT"}
 
 -- Exceptions to {"CanScale", "true"}
-NOT_SCALEABLE_BUILDPART_ID_TABLE = {"BASE_FLAG"}
+NOT_SCALEABLE_BUILDPART_ID_TABLE = {"BASE_FLAG", "SB_BEACON"}
 -- Notes : vehicles and prefab parts are excluded in the dedicated part at the bottom of the script.
 
 -- Exceptions to {"CanScale", "false"}
@@ -582,6 +582,14 @@ https://www.nexusmods.com/nomanssky/mods/1096
                 {"ShowInBuildMenu",      "true"},
               }
             },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "SB_BEACON"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"BuildableOnSpaceStationBase",        "false"},
+                {"BuildableOnSpaceStationBackSection", "false"},
+              }
+            },
           },
         },
       },
@@ -695,6 +703,15 @@ if ALL_PARTS_UNDER_WATER then
     ["VALUE_CHANGE_TABLE"] =
     {
       {"BuildableUnderwater", "true"},
+    },
+  }
+  
+  Change_Table_Array[#Change_Table_Array + 1] =
+  {
+    ["SPECIAL_KEY_WORDS"] = {"ID", "SB_BEACON"},
+    ["VALUE_CHANGE_TABLE"] =
+    {
+      {"BuildableUnderwater", "false"},
     },
   }
 end
@@ -1299,6 +1316,15 @@ if BASEPARTS_ON_CORVETTE then
   Change_Table_Array[#Change_Table_Array + 1] =
   {
     ["SPECIAL_KEY_WORDS"] = {"ID", "U_MINIPORTAL"},
+    ["VALUE_CHANGE_TABLE"] =
+    {
+      {"BuildableInShipDecorative", "false"},
+    },
+  }
+  
+  Change_Table_Array[#Change_Table_Array + 1] =
+  {
+    ["SPECIAL_KEY_WORDS"] = {"ID", "SB_BEACON"},
     ["VALUE_CHANGE_TABLE"] =
     {
       {"BuildableInShipDecorative", "false"},

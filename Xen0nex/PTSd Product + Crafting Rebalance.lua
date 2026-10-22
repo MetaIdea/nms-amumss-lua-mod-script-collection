@@ -1,5 +1,5 @@
 ModName = "PTSd Product + Crafting Rebalance"
-GameVersion = "7_05"
+GameVersion = "7_06"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --Adds a note to the description of the Corvette Phase Beam Array weapon module, to explain the vanilla bug as of NMS v7.03 that causes Phase Beam DPS to increase by +100% for every weapon module installed on the corvette
@@ -80,7 +80,7 @@ ProductSaleChanges =
 	{"UI_ALLOY_SIMPLE_5_NAME",	1.0},				--25,000		Magno-Gold				
 	{"UI_ALLOY_SIMPLE_6_NAME",	1.0},				--25,000		Grantine				
 	
-	{"UI_STORMCRYSTAL_NAME",	0.6},				--206,000		Storm Crystal	(0.8x 126,000 in 3.99)
+	{"UI_STORMCRYSTAL_NAME",	0.4},				--206,000		Storm Crystal	(0.8x 126,000 in 3.99)
 	{"UI_SHIPCHARGE_NAME",	18.0},					--500			Starshield Battery
 	{"HYPERFUEL2_NAME",	3.0},						--46,750		Warp Hypercore	(Same value as Warp Cell)
 	
@@ -317,12 +317,12 @@ BasicCorvettePartSaleChanges =		1				--1			Multiplier to apply to the base value
 BasicCorvettePartBaseMarkup =		0.000000		--0			(0.352942)	Added as a % of the base value to the purchase price when buying them
 
 CorvTractorSalePrice =				2500000			--350000	Base value for Corvette Tractor Beam module (used for both buying & selling this item)
-CorvNewIngredient1 =				"ATLAS_SEED_2"	--N/A	(Englobed Shade)	Adds an ingredient required to install a Corvette Tractor Beam
-CorvNewIngredient1Amount =			1				--N/A	How many of CorvNewIngredient1 are required to install it
-CorvNewIngredient2 =				"SALVAGE_TECH7"	--N/A	(Recycled Circuitry)	Adds an ingredient required to install a Corvette Tractor Beam
-CorvNewIngredient2Amount =			5				--N/A	How many of CorvNewIngredient2 are required to install it
-CorvNewIngredient3 =				"GRAVBALL"		--N/A	(Gravitino Ball)	Adds an ingredient required to install a Corvette Tractor Beam
-CorvNewIngredient3Amount =			8				--N/A	How many of CorvNewIngredient3 are required to install it
+CorveTractorIngr1 =					"ATLAS_SEED_2"	--N/A	(Englobed Shade)	Adds an ingredient required to install a Corvette Tractor Beam
+CorveTractorIngr1Amount =			1				--N/A	How many of CorveTractorIngr1 are required to install it
+CorveTractorIngr2 =					"SALVAGE_TECH7"	--N/A	(Recycled Circuitry)	Adds an ingredient required to install a Corvette Tractor Beam
+CorveTractorIngr2Amount =			5				--N/A	How many of CorveTractorIngr2 are required to install it
+CorveTractorIngr3 =					"GRAVBALL"		--N/A	(Gravitino Ball)	Adds an ingredient required to install a Corvette Tractor Beam
+CorveTractorIngr3Amount =			8				--N/A	How many of CorveTractorIngr3 are required to install it
 
 --These various "geode" style items are given base values equal to 2x the expected value of opening & selling their contents on average
 	--Certain geodes given further multipliers due to either the difficulty of obtaining them or having particularly low-value contents
@@ -504,6 +504,20 @@ CookedFoodGroupSaleChanges =
 
 FlourCookingValue =	0.180000		--1.800000		This is presumably a vanilla typo, as it's the only food to have a CookingValue greater than 1
 
+--Applies a multiplier to the CookingValue of certain easy-to-cook stews using common ingredients (IE, these are stews which don't require any milk/eggs or valuable ingredients like fossils or Hypnotic Eyes, etc.)
+StewCookingValueMult =	0.67		--These have a CookingValue of either 0.65, 0.8, or 1.0
+
+CommonStews =
+{	--Have CookingValue = 0.65
+	"FOOD_ORGAN_STEW", "FOOD_STEW_BONE", "FOOD_STEW_DRILL", "FOOD_STEW_BEET", "FOOD_STEW_DIG", "FOOD_STEW_BALL", "FOOD_STEW_BUG", 
+	
+	--Have CookingValue = 0.8
+	"FOOD_MEAT_STEW", "FOOD_VEG_STEW",
+	
+	--Have CookingValue = 1.0
+	"FOOD_STEW_M_HOT", "FOOD_STEW_M_VEG", "FOOD_STEW_O_HOT", "FOOD_STEW_O_VEG", "FOOD_STEW_V_HOT", "FOOD_STEW_V_VEG",
+}
+
 UseAltFoodBonusStats = true			--false			Set true to replace the Nutrient Ingestor bonuses that foods give, using the table below
 AltFoodBonusStats =
 {--Previous Bonus Stat					Replacement Bonus Stat
@@ -658,6 +672,15 @@ GeodeStackChanges =
 	{"GEODE_SPACE",				0.6},				--25	Tritium Hypercluster
 }
 
+--Multipliers to apply to the item's Product Stack multiplier (vanilla total stack size, not multiplier, is listed in the -- comments below)
+SubstanceStackChanges =
+{					--			StackMultMult		BuyBaseMarkupMult
+	{"AF_METAL",				3,					1},				--1,	0.25		Tainted Metal		(increasing stack size to balance out increasing the amount rewarded)
+	{"ASTBELT1",				0.1,				1},				--10,	0.25		Comet Dust
+	{"HULK1",					0.1,				1},				--10,	0.25		Contaminated Metal  
+	{"SLIMEPOST1",				0.1,				1},				--10,	0.25		Gelatinous Fibres
+}
+
 --Adjusts the amount of components required for certain objects
 AdjustItems =
 {		--Blueprint ID			Item ID			# of Items
@@ -796,28 +819,28 @@ AddItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MBIN
 	},
 	--Delete the below 10 entries to remove the extra stellar metal / atlas seed requirements for Corvette Cargo Racks
 	{	--Cargo Rack 0 (Corvette) 
-		"B_WALL_CARG0",			"RED2",				100,	"Substance",	--Cadmium
+		"B_WALL_CARG0",			"ASTEROID2",		100,	"Substance",	--Gold
 	},
 	{	--Cargo Rack 1 (Corvette) 
-		"B_WALL_CARG1",			"GREEN2",			100,	"Substance",	--Emeril
+		"B_WALL_CARG1",			"RED2",				100,	"Substance",	--Cadmium
 	},
 	{	--Cargo Rack 2 (Corvette) 
-		"B_WALL_CARG2",			"BLUE2",			100,	"Substance",	--Indium
+		"B_WALL_CARG2",			"ATLAS_SEED_2",		100,	"Product",		--Englobed Shade
 	},
 	{	--Cargo Rack 3 (Corvette) 
-		"B_WALL_CARG3",			"PURPLE2",			100,	"Substance",	--Quartzite
+		"B_WALL_CARG3",			"GREEN2",			100,	"Substance",	--Emeril
 	},
 	{	--Cargo Rack 4 (Corvette) 
-		"B_WALL_CARG4",			"WATERWORLD1",		100,	"Substance",	--Lithium
+		"B_WALL_CARG4",			"ATLAS_SEED_4",		100,	"Product",		--Dark Matter
 	},
 	{	--Cargo Rack 5 (Corvette) 
-		"B_WALL_CARG5",			"ATLAS_SEED_7",		1,		"Product",		--State Phasure
+		"B_WALL_CARG5",			"BLUE2",			100,	"Substance",	--Indium
 	},
 	{	--Cargo Rack 6 (Corvette) 
-		"B_WALL_CARG6",			"ATLAS_SEED_7",		1,		"Product",		--State Phasure
+		"B_WALL_CARG6",			"PURPLE2",			100,	"Substance",	--Quartzite
 	},
 	{	--Cargo Rack 7 (Corvette) 
-		"B_WALL_CARG7",			"ATLAS_SEED_8",		1,		"Product",		--Novae Reclaimant
+		"B_WALL_CARG7",			"ATLAS_SEED_7",		1,		"Product",		--State Phasure
 	},
 	{	--Cargo Rack 8 (Corvette) 
 		"B_WALL_CARG8",			"ATLAS_SEED_8",		1,		"Product",		--Novae Reclaimant
@@ -1080,13 +1103,13 @@ ReplaceItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MB
 		"B_WALL_KITC0",			"COOKER",			1,		"Product",		"CARBON_SEAL",
 	},
 	{	--Living Wall (Corvette) 
-		"B_WALL_PLAN0",			"ASTEROID1",		60,		"Substance",	"ASTEROID1",
+		"B_WALL_PLAN0",			"ASTEROID2",		100,	"Substance",	"ASTEROID1",
 	},
 	{	--Living Wall (Corvette) 
-		"B_WALL_PLAN0",			"CASING",			5,		"Product",		"SAND1",
+		"B_WALL_PLAN0",			"CASING",			6,		"Product",		"SAND1",
 	},
 	{	--Living Wall (Corvette) 
-		"B_WALL_PLAN0",			"PLANT_POOP",		90,		"Substance",	"FUEL1",
+		"B_WALL_PLAN0",			"PLANT_POOP",		120,	"Substance",	"FUEL1",
 	},
 	{	--Refiner Unit (Corvette) 
 		"B_WALL_TECH0",			"ASTEROID3",		30,		"Substance",	"ASTEROID3",
@@ -1119,7 +1142,7 @@ ReplaceItemsBase =		--For items which have their data in NMS_BASEPARTPRODUCTS.MB
 
 --Changes the amount of certain products required to construct all Corvette Cargo Racks
 CargoRackPlating				=	5				--3		Metal Plating
-CargoRackChip					=	3				--1		Microprocessor
+CargoRackChip					=	2				--1		Microprocessor
 CargoRack2ndProduct				=	"SALVAGE_TECH7"	--"MICROCHIP"		Changes the Microprocessor ingredient to a different product (Recycled Circuitry)
 
 --Changes the substance and amount needed for crafting the "assembling" exhibit stations
@@ -1279,11 +1302,6 @@ SusWeapBaseMarkup =					2.46			--0.2
 RepairKitSpaceStationMarkup =		377				--154		(BaseValue 450)		Repair Kit
 RepairKitBaseMarkup =				0.92			--0.2
 ScrapDealerDecorativeBaseMarkup =	2				--0 for all price modifiers		Decorative items sold by scrap dealer
-
-SubstanceStackChanges =
-{					--			StackMultMult		BuyBaseMarkupMult
-	{"UI_AF_METAL_NAME",		3,					1},				--1,	0.25		Tainted Metal		(increasing stack size to balance out increasing the amount rewarded)
-}
 
 SuspiciousBuyMarkupMod = 0
 ProductBuyMarkupModChanges = 
@@ -2039,32 +2057,32 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X1"},
 							["PRECEDING_KEY_WORDS"] = {"Requirements"},
 							["CREATE_HOS"] = "TRUE",
-                            ["ADD"] = AddedItemCost (CorvNewIngredient1, CorvNewIngredient1Amount, "Product")
+                            ["ADD"] = AddedItemCost (CorveTractorIngr1, CorveTractorIngr1Amount, "Product")
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X1",		"Requirements", "GcTechnologyRequirement"},
-							["ADD"] = AddedItemCost (CorvNewIngredient3, CorvNewIngredient3Amount, "Product"),
+							["ADD"] = AddedItemCost (CorveTractorIngr3, CorveTractorIngr3Amount, "Product"),
 							["ADD_OPTION"] = "ADDafterSECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X1",		"Requirements", "GcTechnologyRequirement"},
-							["ADD"] = AddedItemCost (CorvNewIngredient2, CorvNewIngredient2Amount, "Product"),
+							["ADD"] = AddedItemCost (CorveTractorIngr2, CorveTractorIngr2Amount, "Product"),
 							["ADD_OPTION"] = "ADDafterSECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X2"},
 							["PRECEDING_KEY_WORDS"] = {"Requirements"},
 							["CREATE_HOS"] = "TRUE",
-                            ["ADD"] = AddedItemCost (CorvNewIngredient1, CorvNewIngredient1Amount, "Product")
+                            ["ADD"] = AddedItemCost (CorveTractorIngr1, CorveTractorIngr1Amount, "Product")
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X2",		"Requirements", "GcTechnologyRequirement"},
-							["ADD"] = AddedItemCost (CorvNewIngredient3, math.floor(CorvNewIngredient3Amount/2), "Product"),
+							["ADD"] = AddedItemCost (CorveTractorIngr3, math.floor(CorveTractorIngr3Amount/2), "Product"),
 							["ADD_OPTION"] = "ADDafterSECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "B_MAG_1X2",		"Requirements", "GcTechnologyRequirement"},
-							["ADD"] = AddedItemCost (CorvNewIngredient2, math.floor(CorvNewIngredient2Amount/2), "Product"),
+							["ADD"] = AddedItemCost (CorveTractorIngr2, math.floor(CorveTractorIngr2Amount/2), "Product"),
 							["ADD_OPTION"] = "ADDafterSECTION",
 						},
 					}
@@ -2095,13 +2113,13 @@ for i = 1, #SubstanceCostChanges do
 			}
 end
 for i = 1, #SubstanceStackChanges do
-	local NameID = SubstanceStackChanges[i][1]
+	local SubstanceID = SubstanceStackChanges[i][1]
 	local StackMult = SubstanceStackChanges[i][2]
 	local BuyMarkMult = SubstanceStackChanges[i][3]
 
 	ChangesToSubstance[#ChangesToSubstance+1] =
 					{
-						["SPECIAL_KEY_WORDS"] = {"Name",	NameID}, 
+						["SPECIAL_KEY_WORDS"] = {"ID",	SubstanceID}, 
 						["MATH_OPERATION"]         = "*",  
 						["REPLACE_TYPE"]         = "ALL",  
 						["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -2281,6 +2299,30 @@ for i = 1, #CookedFoodGroupSaleChanges do
 			}
 end
 ]]
+
+for i = 1, #CommonStews do
+	local StewID = CommonStews[i]
+
+			ChangesToProduct[#ChangesToProduct+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", StewID},
+				["MATH_OPERATION"] 		= "*",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"CookingValue", StewCookingValueMult}
+				}
+			}
+			
+			ChangesToProduct[#ChangesToProduct+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", StewID},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Description", "COMMON_STEW_DESC"},	--FOOD_REFINED_DESC_FINAL
+				}
+			}
+end
+
 for i = 1, #AltFoodBonusStats do
 	local OldBonusType = AltFoodBonusStats[i][1]
 	local NewBonusType = "Unspecified"

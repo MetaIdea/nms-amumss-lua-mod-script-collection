@@ -1,8 +1,8 @@
 ModName = "PTSd Other Difficulty Settings"
-GameVersion = "6_17"
+GameVersion = "7_06"
 Description = "Affects most of the Difficulty Setting menu options, except for Stack Sizes"
 
-DisablePlanetaryPirateRaids				=false							--false		Set true to disable any planetary pirate raids
+DisablePlanetaryPirateRaids	=			false							--false		Set true to disable any planetary pirate raids
 
 LowerExpeditionMinimums =				true							--false		Allows various difficulty settings to be adjusted lower in Expedition Mode
 AllowExpeditionFreeCraft =				true							--false		Allows Crafting difficulty to be set all the way to "Free" in Expeditions (for the purpose of working around PTSd recipes which may not be possible otherwise during Expeditions)
@@ -169,12 +169,22 @@ TechDamageChanceShieldLevelMax =	0.75								--0.75			This appears to set the up
 TechDamageChanceToSelectPrimary =	0.1									--0.1			(Maybe the chance that a primary tech is chosen instead of a secondary tech or upgrade whenever tech breaks?)
 
 --Alters some base values for Multi-Tool mining and Scan Pulses, mainly to be equal to their survival mode level for pre-4.0 NMS
+	--The base recharge time for multi-tools & exocraft scan pulses (and exocraft targeted location searches) are multiplied by the Weapon_Scan_Recharge_Time Bonus for the Multi-tool Scanner, which is set in "--PTSd Tech + Upgrade + Unlock costs.lua" to be 100 in PYSd
 NormalModeHeatBonus =			1										--2		This applies a multiplier to the base time until the mining laser overheats (8 seconds by default). EG the vanilla value of 2 doubles this to 16 seconds
 HeatAlertTime =					0.6										--0.7	(was 0.6 for survival mode)
 OverheatDecay =					3.8										--8		(was 3.8 for survival mode)		Contrary to the name, this controls how quickly the mining laser cools from normal use, not the length of the overheat cooldown. Smaller values cool more slowly
-ScannerRange =					150										--200	(was 150 for survival mode)		Radius of Multitool scanner pulse
-ScannerRecharge =				90										--30	(was 90 for survival mode)		Cooldown in seconds for Multitool scanner pulse
-ShipScanRecharge =				16										--10		Cooldown in seconds for starship scanner pulse
+ScannerRange =					150										--200	(was 150 for survival mode)		Detection radius of Multitool scanner pulse
+ScannerRecharge =				0.90									--30	(was 90 for survival mode)		Cooldown in seconds for Multitool scanner pulse (this value is multiplied by 100 in PTSd)
+
+VehicleScanPulseRange =			600										--600	Detection radius for all exocraft radar/sonar scanner pulse (unaffected by multi-tool Scanning stat / upgrades)
+VehicleScanPulseRecharge =		0.45									--15	Cooldown in seconds for all exocraft radar/sonar scanner pulse (Inherits recharge speed bonuses from multi-tool Scanning stat & upgrades) (this value is multiplied by 100 in PTSd)
+VehiclePOIScanRecharge =		0.60									--20	Cooldown in seconds for all exocraft radar/sonar targeted POI locator (Inherits recharge speed bonuses from multi-tool Scanning stat & upgrades) (this value is multiplied by 100 in PTSd)
+
+ShipScanPulseRecharge =			16										--10	Cooldown in seconds for starship scanner pulse (Not affected by multi-tool stats)
+
+--Changes how Buried Technology Modules can be revealed. Can revert to vanilla behaviour by deleting the MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/UNDERGROUNDPROP/ENTITIES/UNDERGROUNDPROP.ENTITY.MBIN (or ~.EXML) file in the "PTSd Vehicles and Tools etc" module fodler
+BuriedTechScannable =			true									--false		Set to true to make Buried Technology Modules require a Scan Pulse from either your multi-tool or an exocraft to be visible. Set to false to use thevanilla method where you can see them with your Analysis Visor
+BuriedTechScanDuration =		60										--30		If BuriedTechScannable is set to true, this controls how many seconds revealed Buried Technology Modules remain highlighted after a scan pulse
 
 --Multipliers for the "Fishing Timing" settings, which appear to multiply the base FishCatchAfterBiteTime window in GCFISHINGGLOBALS.GLOBAL.MBIN
 AutoCatch =						3										--2
@@ -557,7 +567,7 @@ Presets =
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]		= ModName..GameVersion,
+["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
@@ -588,7 +598,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["MXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				["SPECIAL_KEY_WORDS"] = {"ID","TOOL"},
+				["SPECIAL_KEY_WORDS"] = {
+					{"ID", "TOOL"},
+					{"ID", "TOOL_HARD"},
+				},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PulseRange", ScannerRange},
@@ -596,10 +609,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"ID","SHIP"},
+				["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_LOCAL"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"ChargeTime", ShipScanRecharge},
+					{"PulseRange", VehicleScanPulseRange},
+					{"ChargeTime", VehicleScanPulseRecharge},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeTime", VehiclePOIScanRecharge},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "SHIP"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeTime", ShipScanPulseRecharge},
 				}
 			},
 		}
@@ -927,7 +955,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			--Left intentionally blank
 		}
-	}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/UNDERGROUNDPROP/ENTITIES/UNDERGROUNDPROP.ENTITY.MBIN"},
+		["MXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["VALUE_CHANGE_TABLE"] 	=
+					{
+						{"ScanTime", BuriedTechScanDuration},
+					}
+			},
+		}
+	},
 }}}}
 
 
@@ -1092,6 +1132,18 @@ if AllowExpeditionFreeCraft then
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"CraftingIsFree",	"true"}
+				}
+			}
+end
+
+local ChangesToBuriedTechModules = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["MXML_CHANGE_TABLE"]
+
+if BuriedTechScannable then
+			ChangesToBuriedTechModules[#ChangesToBuriedTechModules+1] = 
+			{
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"ScannableType", "Scanner"}
 				}
 			}
 end

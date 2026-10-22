@@ -1,5 +1,5 @@
 ModName = "PTSd Farther Target Sweep"
-GameVersion = "7_05"
+GameVersion = "7_06"
 Description = "Makes the distance between the 'Approximate Location' and final mission target using Target Sweep farther away."
 
 --Multipliers to use for the "approximate Location" distances, depending on the mission group / file
@@ -9,6 +9,7 @@ DistanceMultShort =				10					--Multiplier to apply to distances 650 or lower
 DistanceReplaceTutFreight =		300					--600	Replaces the base distance used by the first "Target Sweep" mission in the Tutorial
 DistanceReplaceTutAntimatter =	200					--350	Replaces the base distance used by the second "Target Sweep" mission in the Tutorial
 DistanceReplaceTutMonolith =	250					--380	Replaces the base distance used by the second "Target Sweep" mission in the Tutorial
+DistanceReplaceTutCrashsite =	300					--450	Replaces the base distance used by the fourth "Target Sweep" mission in the Tutorial
 --Note that the range at which your Target Sweep Scanner will change from "too far to estimate" to giving an actual distance is controlled in ShipScrappingAndBlackHolesX.lua
 
 Filepaths =
@@ -49,14 +50,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "SE_TUT2_FREIGHT"},		--Tutorial mission for finding the Hyperdrive
+							["SPECIAL_KEY_WORDS"] = {"Name", "SE_TUT2_FREIGHT"},		--Tutorial mission for finding the Hyperdrive	(Crashed Freighter)
                             ["VALUE_CHANGE_TABLE"]     = 
                             {
                                 {"SurveyDistance",    DistanceReplaceTutFreight}
                             }
                         },
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "SE_TUT3_ANTIMATTER"},		--Tutorial mission for finding Antimatter
+							["SPECIAL_KEY_WORDS"] = {"Name", "SE_TUT3_ANTIMATTER"},		--Tutorial mission for finding Antimatter	(Abandoned Building)
                             ["VALUE_CHANGE_TABLE"]     = 
                             {
                                 {"SurveyDistance",    DistanceReplaceTutAntimatter}
@@ -67,6 +68,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]     = 
                             {
                                 {"SurveyDistance",    DistanceReplaceTutMonolith}
+                            }
+                        },
+					}
+				},
+			}
+		},
+		{
+			["MBIN_CHANGE_TABLE"]	= 
+			{
+				{
+					["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\COREMISSIONTABLE.MBIN"},
+					["MXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "SE_ACT1_STEP2_PRIMARY"},	--Tutorial mission for finding the Stranger's Coordinates (Crashed Starship)
+                            ["VALUE_CHANGE_TABLE"]     = 
+                            {
+                                {"SurveyDistance",    DistanceReplaceTutCrashsite}
                             }
                         },
 					}

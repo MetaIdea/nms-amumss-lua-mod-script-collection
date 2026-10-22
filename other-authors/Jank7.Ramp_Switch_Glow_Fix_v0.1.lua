@@ -9,7 +9,7 @@ local mod_desc = [[
   to 1 (the teleporter button's matching step has 1 and works).
   EXML patch, so it merges with other mods that patch QDRCONTROLS.
 
-  v0.1  UNTESTED.
+  v0.1  Jank-tested 2026-10-02 in Ultimate Landing Bays v7.09.2: all good.
 ]]-------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {

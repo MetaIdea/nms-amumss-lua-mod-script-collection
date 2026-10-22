@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Unlock costs"
-GameVersion = "7_03"
+GameVersion = "7_06"
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
 UpgradeCMult	=		1.2							--Vanilla cost is	60		This multiplies the vanilla "BaseValue", affecting both purchase and selling prices.	E.G. "1.2" means you sell them for 1.2x the vanilla price, and shops charge 1.2x more
@@ -738,7 +738,7 @@ ReplaceItems =
 		"VEHICLE_FLAME",		"GAS4",				200,	"Substance",	"GAS4",
 	},
 	{	--Lost Angler's Rig
-		"S15_FISHLASER",		"WATER1",			120,	"Substance",	"WATER1",
+		"S15_FISHLASER",		"SALVAGE_TECH7",	1,		"Product",		"WATER1",
 	},
 	{	--Lost Angler's Rig
 		"S15_FISHLASER",		"CLAMPEARL",		8,		"Product",		"ASTEROID1",
@@ -864,7 +864,12 @@ BiofuelRefillCostMult = 2					--1			In vanilla it takes 50 Carbon / 17 Cond. Car
 RocketChargeAmount = 50						--50	The "tank size" of how much "charge"/"fuel" it can hold
 RocketChargeCost = 16						--Multiplier to apply to the cost of recharging the Trade Rocket. E.G. a value of 2 means it costs twice as much to recharge the same size "tank" as vanilla if using the vanilla ChargeValue for Tritium
 
-ScannerTechRecharge = 0.999					--1		Set less than 1 so that supercharging the core Scanner multi-tool tech makes it faster instead of slower
+--Changes to the Multi-tool scanner and some related tech
+ScannerTechRecharge = 100					--1		The base ChargeTime of multi-tools set by TOOL/TOOL_HARD in SCANDATATABLE.MBIN by "PTSd Other Difficulty Settings.lua" is multiplied by this value. Also applies to all scan pulses / radar searches by all kinds of exocraft set by VEHICLE_LOCAL/VEHICLE in SCANDATATABLE.MBIN. Note that values of 1.0 or greater will cause the Scanner core tech to increase recharge time when supercharged
+WaveformRechargeBonus = 0.75				--0.8	How much the Waveform Recycler reduces scanner recharge time
+WaveformRadiusBonus = 1.25					--1.1	How much the Waveform Recycler increases scan pulse radius
+ScanHarmonRadiusBonus = 1.2					--1.1	How much the Scan Harmoniser & Resonance Amplifier increases scan pulse radius
+PolyCoreRadiusBonus = 1.2					--1.1	How much the Polyphonic Core increases scan pulse radius
 
 --Nothing below this should need to be changed. All values can be edited in the sections above this line
 
@@ -2626,7 +2631,7 @@ NutrientProcAfterPellets =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= ModName..GameVersion,
+  ["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
   ["MOD_DESCRIPTION"]		= "Greatly increases the cost for unlocking various technologies, blueprints, recipes, upgrades, mainly aiming for those found in the Anomaly",         
   ["MOD_AUTHOR"]			= "Xen0nex",         
   ["NMS_VERSION"]			= GameVersion,     
@@ -2855,6 +2860,41 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",	ScannerTechRecharge},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "UT_SCAN",		"StatsType", "Weapon_Scan_Recharge_Time"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",	WaveformRechargeBonus},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "UT_SCAN",		"StatsType", "Weapon_Scan_Radius"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",	WaveformRadiusBonus},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {
+								{"ID", "UT_BUI_SCAN",		"StatsType", "Weapon_Scan_Radius"},
+								{"ID", "UT_S10_SCAN",		"StatsType", "Weapon_Scan_Radius"},
+							},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",	ScanHarmonRadiusBonus},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "UT_BUI_SCAN2",		"StatsType", "Weapon_Scan_Radius"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",	PolyCoreRadiusBonus},
 							}
 						},
 						{

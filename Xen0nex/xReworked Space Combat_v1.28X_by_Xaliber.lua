@@ -3,7 +3,7 @@ LuaAuthor = "DeathWrench and Babscoole, updated by Xen0nex"
 ModName = "Reworked Space Combat"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked & Estel1's changes to NPC damage"
 GameVersion = "7.04"
-ModVersion = "1.27X"
+ModVersion = "1.28X"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships & some freighters (individual ships have additonal multipliers applied)
 	--Note that "SpaceCombatDifficultyMultipliers" values in GCGAMEPLAYGLOBALS.GLOBAL.MBIN control additional (or subtract) Hull & Shields for enemy starships depending on Space Combat difficulty setting

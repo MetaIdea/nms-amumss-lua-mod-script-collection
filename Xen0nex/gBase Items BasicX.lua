@@ -2,7 +2,7 @@ Author = "Gumsk"			--Edited by Xen0nex
 ModName = "gBase"
 ModNameSub = "Items BasicX"
 BaseDescription = "Removes many restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
-GameVersion = "7_05"
+GameVersion = "7_06"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 FileSource2 = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN"		--Added by Xen0nex
@@ -59,6 +59,8 @@ StandPlanterFreighter = "false"	--"true"		Override for setting if Standing Plant
 CropsFreighter = "false"		--"false"		Override for setting if Hydroponic Trays, Large Hydroponic Trays, and Biodomes can be built on freighters or not
 RefinersFreighter = "false"		--"false"		Override for setting if Nutrient Processors, Medium/Large Refiners can be built on freighters or not
 OtherFreighter = "false"		--"false"		Override for setting if regular Galactic Trade Terminals, Appearance Modifiers, Storage Containers can be built on freighters or not
+
+StandPlanterCorvette = "false"	--"true"		Override for setting if Standing Planters can be built on corvettes or not
 
 --Controls whether any "decorative" freighter rooms / doors / walkways / storage rooms / etc. are buildable on planets or not
 FreighterRoomsPlanetside = "true"	--"false"	Override for setting if various Freighter rooms/doors/walkways/storage rooms/etc. without special functions can be built on planets or not.
@@ -410,6 +412,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	{["SPECIAL_KEY_WORDS"] = {"ID","CARBONPLANTER"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"BuildableOnFreighter", StandPlanterFreighter},
+		{"BuildableInShipDecorative", StandPlanterCorvette},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","PLANTER"},
 	["VALUE_CHANGE_TABLE"] = {

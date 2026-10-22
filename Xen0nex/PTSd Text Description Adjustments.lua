@@ -1,5 +1,5 @@
 ModName = "PTSd Text Description Adjustments"
-GameVersion = "7_05"
+GameVersion = "7_06"
 Description = "Changes the Text display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 --[[
@@ -76,6 +76,12 @@ AnalysisVisorDesc =
 
 AnalysisVisorDescVR =
 [[Specialist &lt;TECHNOLOGY&gt;Discovery&lt;&gt; and &lt;TECHNOLOGY&gt;Survey&lt;&gt; unit.&#xA;Augments standard &lt;TECHNOLOGY&gt;Scanner&lt;&gt; capabilities by projecting detailed environmental data directly over the user's visor. Allows the identification of &lt;STELLAR&gt;distant points of interest&lt;&gt;.&#xA;&#xA;The Visor will generate &lt;COMMODITY&gt;valuable data&lt;&gt; when used to study &lt;TRADEABLE&gt;flora&lt;&gt;, &lt;FUEL&gt;fauna&lt;&gt; and &lt;TECHNOLOGY&gt;minerals&lt;&gt;.&#xA;&lt;HIGHLIGHT&gt;This data's value&lt;&gt; is further boosted by the &lt;CATALYST&gt;Scanning&lt;&gt; stat bonus for your Multi-Tool's type.&#xA;&#xA;Hold &lt;IMG&gt;AIM&lt;&gt; to operate.]]
+
+ScannerDesc =
+[[A &lt;TECHNOLOGY&gt;Personal Surface Radar&lt;&gt; augmentation for the Multi-Tool. &#xA;&#xA;The Scanner releases a high-energy &lt;STELLAR&gt;pulse&lt;&gt; that reveals any &lt;COMMODITY&gt;critical survival resources&lt;&gt; or &lt;TECHNOLOGY&gt;Buried Technology Modules&lt;&gt; in the immediate area. The &lt;TECHNOLOGY&gt;Exocraft&lt;&gt; radar scan &lt;STELLAR&gt;pulse&lt;&gt; can reveal even more types of nearby &lt;HIGHLIGHT&gt;valuable resources&lt;&gt; at an even &lt;STELLAR&gt;farther range&lt;&gt;. Data is transmitted via the Exosuit directly into the user's visual nervous system.&#xA;The scan &lt;STELLAR&gt;pulse&lt;&gt; &lt;STELLAR&gt;recharge speed&lt;&gt; of both the &lt;STELLAR&gt;Multi-Tool&lt;&gt; and all &lt;TECHNOLOGY&gt;Exocraft&lt;&gt; scan &lt;STELLAR&gt;pulses&lt;&gt; are &lt;HIGHLIGHT&gt;greatly improved&lt;&gt; by your multi-tool's &lt;CATALYST&gt;Scanning&lt;&gt; stat. However, &lt;HIGHLIGHT&gt;supercharging&lt;&gt; this core &lt;TECHNOLOGY&gt;Scanner&lt;&gt; tech gives poor benefits compared to &lt;HIGHLIGHT&gt;supercharging&lt;&gt; other &lt;TECHNOLOGY&gt;tech&lt;&gt; or &lt;HIGHLIGHT&gt;upgrades&lt;&gt; for the &lt;TECHNOLOGY&gt;Scanner&lt;&gt; instead.&#xA; &#xA;Press &lt;IMG&gt;SCAN&lt;&gt; to activate a local scan.]]
+
+WaveformRecyclerDesc =
+[[A powerful lateral processor inserted into the Multi-Tool &lt;TECHNOLOGY&gt;Scanning System&lt;&gt; increases pulse range and allows the device to recharge at a significantly improved rate.&#xA;&#xA;Increases &lt;STELLAR&gt;potential scan frequency&lt;&gt; for both the &lt;STELLAR&gt;Multi-Tool&lt;&gt; and all &lt;STELLAR&gt;Exocraft&lt;&gt; &lt;TECHNOLOGY&gt;Scanning Systems&lt;&gt;, and increases &lt;STELLAR&gt;scan radius&lt;&gt; for the &lt;STELLAR&gt;Multi-Tool&lt;&gt; &lt;TECHNOLOGY&gt;Scanning System&lt;&gt;.]]
 
 MiningBeamDesc =
 [[Multi-Tool &lt;TECHNOLOGY&gt;Mining Beam&lt;&gt; powered by &lt;FUEL&gt;Carbon-based Elements&lt;&gt; or &lt;RED&gt;Phosphorus&lt;&gt;. Fire the beam with &lt;IMG&gt;ATTACK&lt;&gt;.&#xA;&#xA;Installs focusing optics within the Multi-Tool, allowing it to emit a &lt;STELLAR&gt;high-energy beam&lt;&gt;. The beam is calibrated to excite molecules within common &lt;STELLAR&gt;organic or geological objects&lt;&gt;, allowing it to operate as a highly effective mining device.&#xA;&#xA;The &lt;HIGHLIGHT&gt;substance yield&lt;&gt; is further boosted by the &lt;TECHNOLOGY&gt;Mining&lt;&gt; stat bonus for your Multi-Tool's type.&#xA;&#xA;&lt;FUEL&gt;WARNING&lt;&gt;: Destruction of flora, fauna or minerals may attract Sentinel attention.]]
@@ -241,10 +247,13 @@ Sonar =
 [[Sonar]]
 
 BasicSonarDesc =
-[[A high-detail sonar device, capable of upgrading the scanner technology aboard a Nautilon-class submarine to Analysis Visor levels.&#xA;&#xA;Press &lt;IMG&gt;SCAN&lt;&gt; to activate a sonar pulse, revealing &lt;STELLAR&gt;additional points of interest&lt;&gt; that cannot be located via a Multi-Tool scanner.&#xA;&#xA;Use the Quick Menu to tune the sonar to &lt;TECHNOLOGY&gt;specific sites&lt;&gt;.]]
+[[A high-detail sonar device, capable of upgrading the scanner technology aboard a Nautilon-class submarine to Analysis Visor levels. &lt;STELLAR&gt;Recharge speed&lt;&gt; is &lt;HIGHLIGHT&gt;greatly improved&lt;&gt; by your multi-tool's &lt;CATALYST&gt;Scanning&lt;&gt; stat.&#xA;&#xA;Press &lt;IMG&gt;SCAN&lt;&gt; to activate a sonar pulse, revealing &lt;STELLAR&gt;additional points of interest&lt;&gt; at a &lt;STELLAR&gt;greater range&lt;&gt; that cannot be detected via a Multi-Tool scanner.&#xA;&#xA;Use the Quick Menu to tune the sonar to &lt;TECHNOLOGY&gt;specific distant sites&lt;&gt;.]]
 
 ExoRadarDesc =
-[[A large and complex field-based subspace radar.&#xA;&#xA;Due to their large power consumption and inherent subatomic instability, they are found only installed on Exocraft.&#xA;&#xA;Press &lt;IMG&gt;SCAN&lt;&gt; to activate a radar sweep, revealing &lt;STELLAR&gt;additional points of interest&lt;&gt; that cannot be located via a Multi-Tool scanner.&#xA;&#xA;Use the &lt;IMG&gt;QUICK_MENU&lt;&gt; Quick Menu to tune the radar to &lt;TECHNOLOGY&gt;specific buildings&lt;&gt;.]]
+[[A large and complex field-based subspace radar.&#xA;&#xA;Due to their large power consumption and inherent subatomic instability, they are found only installed on Exocraft. &lt;STELLAR&gt;Recharge speed&lt;&gt; is &lt;HIGHLIGHT&gt;greatly improved&lt;&gt; by your multi-tool's &lt;CATALYST&gt;Scanning&lt;&gt; stat.&#xA;&#xA;Press &lt;IMG&gt;SCAN&lt;&gt; to activate a radar sweep, revealing &lt;STELLAR&gt;additional points of interest&lt;&gt; at a &lt;STELLAR&gt;greater range&lt;&gt; that cannot be detected via a Multi-Tool scanner.&#xA;&#xA;Use the &lt;IMG&gt;QUICK_MENU&lt;&gt; Quick Menu to tune the radar to &lt;TECHNOLOGY&gt;specific distant buildings&lt;&gt;.]]
+
+MinotaurRadarDesc =
+[[A high-detail radar device, capable of upgrading the scanner technology aboard the Minotaur to Analysis Visor levels. &lt;STELLAR&gt;Recharge speed&lt;&gt; is &lt;HIGHLIGHT&gt;greatly improved&lt;&gt; by your multi-tool's &lt;CATALYST&gt;Scanning&lt;&gt; stat.&#xA;&#xA;Press &lt;IMG&gt;SCAN&lt;&gt; to activate a radar sweep, revealing &lt;STELLAR&gt;additional points of interest&lt;&gt; at a &lt;STELLAR&gt;greater range&lt;&gt; that cannot be detected via a Multi-Tool scanner.&#xA;&#xA;Use the Quick Menu to tune the radar to &lt;TECHNOLOGY&gt;specific distant buildings&lt;&gt;.]]
 
 AMUDesc =
 [[An &lt;TECHNOLOGY&gt;automated harvester&lt;&gt; for the mining of resources. Once activated, the AMU extracts &lt;STELLAR&gt;250 units&lt;&gt; of minerals in &lt;TECHNOLOGY&gt;10 minutes&lt;&gt; before collecting and &lt;FUEL&gt;refueling&lt;&gt;.&#xA;&#xA;Can be left running while working in your base, or built at your landing site when visiting planets and given a half-tank of fuel to run for just &lt;TECHNOLOGY&gt;5 minutes&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;NOTE&lt;&gt;: It is recommended to remain in the &lt;TECHNOLOGY&gt;same system&lt;&gt; during operation and to &lt;STELLAR&gt;delete and rebuild&lt;&gt; this unit before refueling it to reduce the chances of a &lt;HIGHLIGHT&gt;vanilla glitch&lt;&gt; clearing its contents.]]
@@ -304,10 +313,13 @@ BuyNewSlotMP =
 [[Select any empty space in Cargo or Technology with &lt;IMG&gt;FE_SELECT&lt;&gt; to install new slot (%NUM% available)&#xA;&#xA;&lt;FUEL&gt;NOTE:&lt;&gt;For the &lt;TRADE&gt;default&lt;&gt; &lt;SPECIAL&gt;PTSd&lt;&gt; experience, only increase &lt;METAL&gt;Exosuit&lt;&gt; slots to &lt;STELLAR&gt;40&lt;&gt; &lt;TECHNOLOGY&gt;Technology&lt;&gt; and &lt;STELLAR&gt;40&lt;&gt; &lt;COMMODITY&gt;Cargo&lt;&gt;]]
 
 FreeFreighterOffer =
-[[The Captain looks at me happily, almost relieved. Perhaps the burden of command had become too much for them?&#xA;Their ship and its crew is could be at my disposal, as well as command of the freighter's &lt;STELLAR&gt;Support Frigates&lt;&gt;...&#xA;But perhaps I might regret accepting such an &lt;TRADE&gt;overly generous&lt;&gt; offer.&#xA;&#xA;&lt;FUEL&gt;NOTE:&lt;&gt; For the &lt;STELLAR&gt;default&lt;&gt; &lt;SPECIAL&gt;PTSd&lt;&gt; experience, it's recommended to decline this free rescued freighter and instead &lt;STELLAR&gt;purchase&lt;&gt; your first one &lt;STELLAR&gt;yourself&lt;&gt;]]
+[[The Captain looks at me happily, almost relieved. Perhaps the burden of command had become too much for them?&#xA;Their ship and its crew is could be at my disposal, as well as command of the freighter's &lt;STELLAR&gt;Support Frigates&lt;&gt;...&#xA;But perhaps I might regret accepting such an &lt;TRADE&gt;overly generous&lt;&gt; offer.&#xA;&#xA;&lt;FUEL&gt;NOTE:&lt;&gt; For the &lt;STELLAR&gt;default&lt;&gt; &lt;SPECIAL&gt;PTSd&lt;&gt; experience, it's recommended to &lt;FUEL&gt;not accept&lt;&gt; this &lt;TRADE&gt;free&lt;&gt; rescued freighter and instead &lt;STELLAR&gt;purchase&lt;&gt; your first one]]
+
+FreeFreighterOfferNote =
+[[..&#xA;But perhaps I might regret accepting such an &lt;TRADE&gt;overly generous&lt;&gt; offer.&#xA;&#xA;&lt;FUEL&gt;NOTE:&lt;&gt; For the &lt;STELLAR&gt;default&lt;&gt; &lt;SPECIAL&gt;PTSd&lt;&gt; experience, it's recommended to &lt;FUEL&gt;not accept&lt;&gt; any &lt;TRADE&gt;free&lt;&gt; rescued freighter and instead &lt;STELLAR&gt;purchase&lt;&gt; your first one]]
 
 FreeFreighterSelect =
-[[&lt;SPECIAL&gt;Give in&lt;&gt; to temptation and inspect &lt;TRADE&gt;free&lt;&gt; freighter]]
+[[&lt;SPECIAL&gt;Give in&lt;&gt; and inspect &lt;TRADE&gt;free&lt;&gt; freighter]]
 
 DreadnoughtCaptain =
 [[The pirate commander begs for mercy. I can demand a share of the plunder, or earn the loyalty of this vessel's crew with a show of enough units.&#xA;&#xA;&lt;FUEL&gt;WARNING:&lt;&gt; The full price must be paid &lt;HIGHLIGHT&gt;each time&lt;&gt; you select the inspect option to the right, &lt;HIGHLIGHT&gt;before&lt;&gt; confirming to exchange freighers.&#xA;&#xA;Before proceeding with this purchase, first use your Analysis Visor to view the details of this Dreadnought, and potentially summon your Freighter to uninstall any technology]]
@@ -466,7 +478,7 @@ SeaGlassDesc =
 [[An etheral shard, this translucent plane is both mineral and alive, both of the water and of another realm.&#xA;&#xA;By &lt;FUEL&gt;refining&lt;&gt; it, either alone or with certain other types of &lt;STELLAR&gt;glass&lt;&gt; or &lt;SPECIAL&gt;glassy shards&lt;&gt;, it can take on forms it once held in other potential realities. Alternatively, refine together with &lt;STELLAR&gt;Microprocessors&lt;&gt; to create much &lt;TECHNOLOGY&gt;Salvaged Data&lt;&gt;.]]
 
 SurvivalDiffDesc =
-[[The Exosuit's &lt;CATALYST&gt;Hazard Protection&lt;&gt; protects explorers from environmental factors such as &lt;TECHNOLOGY&gt;extreme cold&lt;&gt; and &lt;TRADEABLE&gt;toxicity&lt;&gt;. Its &lt;FUEL&gt;Life Support&lt;&gt; unit provides breathable air and vital movement systems. Riding in the cockpit of any &lt;TECHNOLOGY&gt;Exocraft&lt;&gt; will provide air and &lt;STELLAR&gt;significant&lt;&gt; environmental protection, &lt;HIGHLIGHT&gt;tripling&lt;&gt; hazard survival times.&#xA;This setting scales how quickly these systems are drained in challenging environments.&#xA;&#xA;&lt;TRADE&gt;Relaxed&lt;&gt;: 33% Hazard and 50% Life Support drain rate&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% Hazard and Life Support drain rate&#xA;&lt;FUEL&gt;Challenging&lt;&gt;: 150% Hazard and 150% Life Support drain rate&#xA;&#xA;&lt;TECHNOLOGY&gt;Cold&lt;&gt; planets have slightly milder days but slightly harsher nights and seas&#xA;&lt;FUEL&gt;Hot&lt;&gt; planets have slightly harsher days but slightly milder nights and mild seas&#xA;&lt;TRADEABLE&gt;Toxic&lt;&gt; planets have harsher seas&#xA;&lt;CATALYST&gt;Radioactive&lt;&gt; planets have slightly milder seas&#xA;&lt;SPECIAL&gt;Gas Giants&lt;&gt; contain &lt;HIGHLIGHT&gt;all hazards&lt;&gt;, but mostly &lt;FUEL&gt;heat&lt;&gt; and &lt;TECHNOLOGY&gt;cold&lt;&gt;]]
+[[The Exosuit's &lt;CATALYST&gt;Hazard Protection&lt;&gt; protects explorers from environmental factors such as &lt;TECHNOLOGY&gt;extreme cold&lt;&gt; and &lt;TRADEABLE&gt;toxicity&lt;&gt;. Its &lt;FUEL&gt;Life Support&lt;&gt; unit provides breathable air and vital movement systems. Riding in any &lt;TECHNOLOGY&gt;Exocraft&lt;&gt; will provide &lt;FUEL&gt;air&lt;&gt; and &lt;STELLAR&gt;some&lt;&gt; environmental protection, &lt;HIGHLIGHT&gt;tripling&lt;&gt; hazard survival times. This setting scales how quickly these systems are drained in challenging environments.&#xA;&#xA;&lt;TRADE&gt;Relaxed&lt;&gt;: 33% Hazard and 50% Life Support drain rate&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% Hazard and Life Support drain rate&#xA;&lt;FUEL&gt;Challenging&lt;&gt;: 150% Hazard and 150% Life Support drain rate&#xA;&#xA;&lt;SPECIAL&gt;Airless&lt;&gt; planets have greatly increased Life Support drain&#xA;&lt;TRADEABLE&gt;Lush&lt;&gt; planets only have hazards during storms on land&#xA;&lt;TECHNOLOGY&gt;Cold&lt;&gt; planets have milder days but harsher nights and seas&#xA;&lt;FUEL&gt;Hot&lt;&gt; planets have harsher days but milder nights and &lt;STELLAR&gt;very&lt;&gt; mild seas&#xA;&lt;TRADEABLE&gt;Toxic&lt;&gt; planets have harsher seas but milder storms&#xA;&lt;CATALYST&gt;Radioactive&lt;&gt; planets have milder seas but harsher storms&#xA;&lt;SPECIAL&gt;Gas Giants&lt;&gt; contain &lt;HIGHLIGHT&gt;all hazards&lt;&gt;, but mostly &lt;FUEL&gt;heat&lt;&gt; and &lt;TECHNOLOGY&gt;cold&lt;&gt;]]
 
 SprintingDesc =
 [[&lt;STELLAR&gt;Standard&lt;&gt; sprinting places additional drain on the Exosuit's &lt;FUEL&gt;Life Support&lt;&gt; systems.&#xA;&#xA;&lt;STELLAR&gt;Relaxed&lt;&gt; sprinting removes this life support cost and increases the Sprint Stamina bar by 250%, but still requires occasional short breaks to recharge.&#xA;&#xA;&lt;STELLAR&gt;Infinite&lt;&gt; sprinting removes all restrictions and allows player to sprint forever.]]
@@ -478,7 +490,7 @@ FuelUsageDesc =
 [[Technologies such as the &lt;TECHNOLOGY&gt;Mining Laser&lt;&gt; or the starship's &lt;TECHNOLOGY&gt;Launch Thrusters&lt;&gt; require regular recharging to remain functional.&#xA;This setting scales the cost of recharging these technologies.&#xA;&#xA;&lt;TRADE&gt;Discounted&lt;&gt;: 38% Launch cost (&lt;STELLAR&gt;6 launches&lt;&gt; by default), 67% other fuel costs, refueling is 150% more efficient, Mining Laser and Terrain Manipulator consume &lt;HIGHLIGHT&gt;no fuel&lt;&gt;&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% for all launch and fuel costs (&lt;STELLAR&gt;2 launches&lt;&gt; by default) and 100% refueling efficiency&#xA;&lt;FUEL&gt;Expensive&lt;&gt;: 150% Launch cost (&lt;STELLAR&gt;1 launch&lt;&gt; by default), 133% other fuel costs, refueling is 75% as efficient&#xA;&#xA;&lt;TECHNOLOGY&gt;Summoning&lt;&gt; a landed starship costs &lt;HIGHLIGHT&gt;2x&lt;&gt; the usual launch cost.&#xA;&#xA;&lt;SPECIAL&gt;Sentinel Interceptors&lt;&gt; only spend &lt;STELLAR&gt;80%&lt;&gt; of usual Launch costs&#xA;&lt;HIGHLIGHT&gt;Solar Ships&lt;&gt; only spend &lt;STELLAR&gt;75%&lt;&gt; of usual Launch costs&#xA;&lt;TRADE&gt;Shuttles&lt;&gt; only spend &lt;STELLAR&gt;66%&lt;&gt; of usual Launch costs&#xA;&lt;TECHNOLOGY&gt;Explorers&lt;&gt; only spend &lt;STELLAR&gt;50%&lt;&gt; of usual Launch costs&#xA;&lt;STELLAR&gt;Corvettes&lt;&gt; spend &lt;STELLAR&gt;140%&lt;&gt; of usual Launch costs by default]]
 
 ScanRechargeDesc =
-[[The &lt;STELLAR&gt;Exosuit&lt;&gt; &lt;TECHNOLOGY&gt;scanner&lt;&gt; assists with locating nearby survival resources such as &lt;FUEL&gt;oxygen&lt;&gt; and &lt;CATALYST&gt;sodium&lt;&gt; with pulses.&#xA;The &lt;TECHNOLOGY&gt;Exocraft&lt;&gt; radar &lt;TECHNOLOGY&gt;scanner&lt;&gt; can reveal even more types of nearby &lt;HIGHLIGHT&gt;valuable resources&lt;&gt; with pulses, or can locate distant &lt;STELLAR&gt;sites of interest&lt;&gt; from the &lt;TECHNOLOGY&gt;Quick Menu&lt;&gt;.&#xA;The &lt;SPECIAL&gt;Starship&lt;&gt; &lt;TECHNOLOGY&gt;scanner&lt;&gt; can reveal &lt;STELLAR&gt;additional information&lt;&gt; about planets from space without landing on them, or when used while flying within a planet's atmosphere may detect &lt;TECHNOLOGY&gt;nearby buildings&lt;&gt;.&#xA;&#xA;After a scan pulse, the scanner must be &lt;STELLAR&gt;recharged&lt;&gt; before it can be used again. This setting adjusts how quickly the scanner &lt;STELLAR&gt;recharges&lt;&gt; after each scan pulse.&#xA;&#xA;&lt;HIGHLIGHT&gt;Very Fast&lt;&gt;: 500% Recharge rate&#xA;&lt;TRADE&gt;Fast&lt;&gt;: 200% Recharge rate&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% Recharge rate&#xA;&lt;FUEL&gt;Challenging&lt;&gt;: 67% Recharge rate]]
+[[The &lt;STELLAR&gt;Multi-Tool&lt;&gt; &lt;TECHNOLOGY&gt;scanner&lt;&gt; assists with locating nearby resources such as &lt;FUEL&gt;oxygen&lt;&gt;, &lt;CATALYST&gt;sodium&lt;&gt;, and &lt;TECHNOLOGY&gt;Buried Technology&lt;&gt; with &lt;STELLAR&gt;pulses&lt;&gt;.&#xA;The &lt;TECHNOLOGY&gt;Exocraft&lt;&gt; radar scan &lt;STELLAR&gt;pulse&lt;&gt; can reveal even more types of nearby &lt;HIGHLIGHT&gt;valuable resources&lt;&gt; at &lt;STELLAR&gt;longer ranges&lt;&gt;, or can locate distant &lt;STELLAR&gt;sites of interest&lt;&gt; from the &lt;TECHNOLOGY&gt;Quick Menu&lt;&gt;.&#xA;The recharge speed of both the &lt;STELLAR&gt;Multi-Tool&lt;&gt; and &lt;TECHNOLOGY&gt;Exocraft&lt;&gt; &lt;TECHNOLOGY&gt;scanners&lt;&gt; are &lt;HIGHLIGHT&gt;greatly improved&lt;&gt; by your multi-tool's &lt;CATALYST&gt;Scanning&lt;&gt; stat.&#xA;The &lt;SPECIAL&gt;Starship&lt;&gt; &lt;TECHNOLOGY&gt;scanner&lt;&gt; can reveal &lt;STELLAR&gt;additional information&lt;&gt; about planets from space without landing on them, or when used while flying within a planet's atmosphere may detect &lt;TECHNOLOGY&gt;nearby buildings&lt;&gt;.&#xA;&#xA;After use, the scanner must be &lt;STELLAR&gt;recharged&lt;&gt; before it can be used again. This setting adjusts how quickly the scanner &lt;STELLAR&gt;recharges&lt;&gt; after each use.&#xA;&#xA;&lt;HIGHLIGHT&gt;Very Fast&lt;&gt;: 500% Recharge rate&#xA;&lt;TRADE&gt;Fast&lt;&gt;: 200% Recharge rate&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% Recharge rate&#xA;&lt;FUEL&gt;Challenging&lt;&gt;: 67% Recharge rate]]
 
 PurchasesDesc =
 [[Items can be purchased on the &lt;VAL_ON&gt;Galactic Trade Network&lt;&gt; with &lt;COMMODITY&gt;Units&lt;&gt; (&lt;IMG&gt;UNITS&lt;&gt;). Technologies are usually purchased with &lt;TECHNOLOGY&gt;Nanites&lt;&gt; (&lt;IMG&gt;NANITE&lt;&gt;).&#xA;&#xA;This setting scales the prices of Unit and Nanite purchases across the galaxy. The &lt;STELLAR&gt;Free&lt;&gt; setting also bypasses many costs required for mission progress and other similar dialogue interactions.&#xA;&#xA;&lt;TRADE&gt;Discounted&lt;&gt;: ~50% Units and Nanites costs&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% Units and Nanites costs&#xA;&lt;FUEL&gt;Expensive&lt;&gt;: ~200% Units and Nanites costs&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: In &lt;SPECIAL&gt;PTSd&lt;&gt; you can install up to &lt;HIGHLIGHT&gt;5&lt;&gt; of the same type of &lt;HIGHLIGHT&gt;upgrade module&lt;&gt; in the same &lt;TECHNOLOGY&gt;technology inventory&lt;&gt; instead of only 3. This also allows more opportunities for greater &lt;TECHNOLOGY&gt;adjacency bonuses&lt;&gt; between slots with matching &lt;TECHNOLOGY&gt;tech&lt;&gt; or &lt;HIGHLIGHT&gt;upgrades&lt;&gt;.]]
@@ -520,6 +532,24 @@ FishTimingDesc =
 [[This setting increases or decreases the length of time in which to react to a &lt;STELLAR&gt;fish biting on your line&lt;&gt;.&#xA;&#xA;&lt;HIGHLIGHT&gt;Auto-Catch&lt;&gt;: Will automatically snare any fish that bites without requiring any additional button presses or timing.&#xA;&lt;TRADE&gt;Relaxed&lt;&gt;: 3 second window.&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 1 second window.&#xA;&lt;FUEL&gt;Challenging&lt;&gt;: 0.67 second window.]]
 
 TutorialEnableDesc = [[The story prologue introduces basic mechanics, controls, and game features. Enabling the tutorial is &lt;STELLAR&gt;highly recommended&lt;&gt; for new players.&#xA;&#xA;In &lt;SPECIAL&gt;PTSd&lt;&gt;, the tutorial may still be of interest to returning players as it is made &lt;FUEL&gt;particularly challenging&lt;&gt; with changes such as spawning you &lt;STELLAR&gt;quite far away&lt;&gt; from your crashed starship, etc.&#xA;&#xA;When starting the tutorial, it is &lt;HIGHLIGHT&gt;strongly recommended&lt;&gt; to immediately seek shelter in &lt;TRADE&gt;natural caves&lt;&gt;, or potentially any &lt;TECHNOLOGY&gt;artificial buildings&lt;&gt; that might be found nearby.&#xA;Aside from offering protection from &lt;FUEL&gt;hazardous environments&lt;&gt;, caves also often have special &lt;STELLAR&gt;minerals&lt;&gt; containing substances which can be crafted into &lt;CATALYST&gt;Ion Batteries&lt;&gt;, which are &lt;TRADE&gt;far more effective&lt;&gt; at recharging hazard protection than &lt;CATALYST&gt;Sodium&lt;&gt; alone. Additional &lt;FUEL&gt;Oxygen&lt;&gt; can also be harvested from &lt;TRADE&gt;hazardous flora&lt;&gt; both in caves or on the surface.&#xA;&#xA;This setting can only be changed when starting a new game.]]
+
+TutorialDesc1 =
+[[I find myself alone on a strange world, unequipped and in danger. I have no memory of how I got here, no sense of a before.&#xA;&#xA;My Exosuit at least seems to know what it is doing, and I am not dead yet...&#xA;&#xA;I should find a &lt;TRADE&gt;cave&lt;&gt; as &lt;FUEL&gt;soon as possible&lt;&gt;, to seek shelter from the &lt;CATALYST&gt;harsh environment&lt;&gt; and find &lt;STELLAR&gt;useful ingredients&lt;&gt;, and find &lt;TRADE&gt;edible plants&lt;&gt; (&lt;IMG&gt;FLORA&lt;&gt;) on the surface to consume to directly recharge vital exosuit systems.]]
+
+TutorialTip1 =
+[[The &lt;TECHNOLOGY&gt;Multi-Tool&lt;&gt; is a critical piece of survival equipment.&#xA;Use the &lt;TECHNOLOGY&gt;Scanner&lt;&gt; (&lt;IMG&gt;SCAN&lt;&gt;) to locate nearby resources for &lt;FUEL&gt;Life Support&lt;&gt; and &lt;COMMODITY&gt;Hazard Protection&lt;&gt; systems, including &lt;TRADE&gt;edible plants&lt;&gt; (&lt;IMG&gt;FLORA&lt;&gt;).&#xA;&#xA;Find a &lt;TRADE&gt;cave&lt;&gt; as &lt;FUEL&gt;soon as possible&lt;&gt;, to seek shelter from the &lt;CATALYST&gt;harsh environment&lt;&gt; and find &lt;STELLAR&gt;useful ingredients&lt;&gt; for crafting &lt;CATALYST&gt;Ion Batteries&lt;&gt; to recharge hazard protection.]]
+
+TutorialTip2 =
+[[Use &lt;EARTH&gt;Ferrite Dust&lt;&gt; to repair the Scanner. Gather metal from mineral deposits.&#xA;Use &lt;IMG&gt;ATTACK&lt;&gt; to fire the Mining Beam at nearby minerals.&#xA;Systems are repaired from the inventory (&lt;IMG&gt;INVENTORY&lt;&gt;)&#xA;&#xA;Seek shelter from the &lt;CATALYST&gt;harsh environment&lt;&gt; in &lt;TRADE&gt;caves&lt;&gt;, where &lt;STELLAR&gt;useful ingredients&lt;&gt; can be found, and consume &lt;TRADE&gt;edible plants&lt;&gt; (&lt;IMG&gt;FLORA&lt;&gt;) on the surface to directly recharge vital exosuit systems.]]
+
+TutorialTip3 =
+[[The crash site may hold clues as to what has happened. At the very least, it should contain salvageable items.&#xA;The damaged starship appears the best starting point.&#xA;&#xA;However, I should first find a &lt;TRADE&gt;cave&lt;&gt; as &lt;FUEL&gt;soon as possible&lt;&gt;, to seek shelter from the &lt;CATALYST&gt;harsh environment&lt;&gt; and find &lt;STELLAR&gt;useful ingredients&lt;&gt; for crafting &lt;CATALYST&gt;Ion Batteries&lt;&gt; to recharge hazard protection. &lt;TRADE&gt;Edible plants&lt;&gt; (&lt;IMG&gt;FLORA&lt;&gt;) on the surface can be consumed to directly recharge vital exosuit systems]]
+
+TutorialMessage1 =
+[[Reach the marked signal, shelter in &lt;TRADE&gt;caves&lt;&gt; as needed: 0 / 1&#xA;Exosuit detected &lt;STELLAR&gt;automated signal broadcast&lt;&gt;]]
+
+TutorialMessage3 =
+[[Reach the marked signal, shelter in &lt;TRADE&gt;caves&lt;&gt; as needed: 0 / 1&#xA;Exosuit detected &lt;STELLAR&gt;automated signal broadcast&lt;&gt;&#xA;Use the &lt;TECHNOLOGY&gt;Scanner&lt;&gt; (&lt;IMG&gt;SCAN&lt;&gt;) to highlight &lt;COMMODITY&gt;key resources&lt;&gt;]]
 
 AbandonedModeNote = [[&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: In &lt;SPECIAL&gt;PTSd&lt;&gt;'s &lt;FUEL&gt;Abandoned Mode&lt;&gt; you can still learn the &lt;TRADE&gt;Creature Pellets&lt;&gt; recipe from Buried Caches or at the Anomaly or Base unlock trees, a new tech to access &lt;SPECIAL&gt;Discordant Interfaces&lt;&gt; from boxes in Abandoned Stations, and a small chance to learn &lt;FUEL&gt;Atlas Seed&lt;&gt; recipes from those same boxes.]]
  
@@ -603,24 +633,6 @@ AutoPosUnitDesc =
 SalvagedDataNote =
 [[, or refined together with &lt;STELLAR&gt;Platinum&lt;&gt; and &lt;STELLAR&gt;Autonomous Positioning Units&lt;&gt; purchased in &lt;TECHNOLOGY&gt;high-tech&lt;&gt; economy systems to create &lt;TECHNOLOGY&gt;Navigation Data&lt;&gt;.]]
 
-TutorialDesc1 =
-[[I find myself alone on a strange world, unequipped and in danger. I have no memory of how I got here, no sense of a before.&#xA;&#xA;My Exosuit at least seems to know what it is doing, and I am not dead yet...&#xA;&#xA;I should find a &lt;TRADE&gt;cave&lt;&gt; as &lt;FUEL&gt;soon as possible&lt;&gt;, to seek shelter from the &lt;CATALYST&gt;harsh environment&lt;&gt; and find &lt;STELLAR&gt;useful ingredients&lt;&gt;.]]
-
-TutorialTip1 =
-[[The &lt;TECHNOLOGY&gt;Multi-Tool&lt;&gt; is a critical piece of survival equipment.&#xA;Use the &lt;TECHNOLOGY&gt;Scanner&lt;&gt; (&lt;IMG&gt;SCAN&lt;&gt;) to locate nearby resources for &lt;FUEL&gt;Life Support&lt;&gt; and &lt;COMMODITY&gt;Hazard Protection&lt;&gt; systems.&#xA;&#xA;Find a &lt;TRADE&gt;cave&lt;&gt; as &lt;FUEL&gt;soon as possible&lt;&gt;, to seek shelter from the &lt;CATALYST&gt;harsh environment&lt;&gt; and find &lt;STELLAR&gt;useful ingredients&lt;&gt; for crafting &lt;CATALYST&gt;Ion Batteries&lt;&gt; to recharge hazard protection.]]
-
-TutorialTip2 =
-[[Use &lt;EARTH&gt;Ferrite Dust&lt;&gt; to repair the Scanner. Gather metal from mineral deposits.&#xA;Use &lt;IMG&gt;ATTACK&lt;&gt; to fire the Mining Beam at nearby minerals.&#xA;Systems are repaired from the inventory (&lt;IMG&gt;INVENTORY&lt;&gt;)&#xA;&#xA;Seek shelter from the &lt;CATALYST&gt;harsh environment&lt;&gt; in &lt;TRADE&gt;caves&lt;&gt;, where &lt;STELLAR&gt;useful ingredients&lt;&gt; can be found.]]
-
-TutorialTip3 =
-[[The crash site may hold clues as to what has happened. At the very least, it should contain salvageable items.&#xA;The damaged starship appears the best starting point.&#xA;&#xA;However, I should first find a &lt;TRADE&gt;cave&lt;&gt; as &lt;FUEL&gt;soon as possible&lt;&gt;, to seek shelter from the &lt;CATALYST&gt;harsh environment&lt;&gt; and find &lt;STELLAR&gt;useful ingredients&lt;&gt; for crafting &lt;CATALYST&gt;Ion Batteries&lt;&gt; to recharge hazard protection.]]
-
-TutorialMessage1 =
-[[Reach the marked signal, shelter in &lt;TRADE&gt;caves&lt;&gt; as needed: 0 / 1&#xA;Exosuit detected &lt;STELLAR&gt;automated signal broadcast&lt;&gt;]]
-
-TutorialMessage3 =
-[[Reach the marked signal, shelter in &lt;TRADE&gt;caves&lt;&gt; as needed: 0 / 1&#xA;Exosuit detected &lt;STELLAR&gt;automated signal broadcast&lt;&gt;&#xA;Use the &lt;TECHNOLOGY&gt;Scanner&lt;&gt; (&lt;IMG&gt;SCAN&lt;&gt;) to highlight &lt;COMMODITY&gt;key resources&lt;&gt;]]
-
 VehicleLaserDamage =
 [[Exocraft Laser Power]]		--Mining Laser Power
 
@@ -684,9 +696,11 @@ RedeemExpeditionShipNote = [[&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: You can &l
 
 RedeemExpeditionLivingShipNote = [[&#xA;&lt;FUEL&gt;NOTE ALSO&lt;&gt;: You can avoid visiting &lt;FUEL&gt;red&lt;&gt;/&lt;TRADE&gt;green&lt;&gt;/&lt;TECHNOLOGY&gt;blue&lt;&gt; stars with this ship until you have obtained the relevant &lt;TECHNOLOGY&gt;hyperdrive tech&lt;&gt; or standard &lt;STELLAR&gt;Living Ship&lt;&gt; if you wish to avoid sequence-breaking the progression.]]
 
-RedeemExpeditionToolNote = [[&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: You can &lt;STELLAR&gt;Exchange&lt;&gt; any non-Pistol, non-Rifle Multi-Tool for this tool and then &lt;FUEL&gt;delete&lt;&gt; most pre-installed &lt;STELLAR&gt;tech and upgrade modules&lt;&gt; in this tool if you wish to use it without affecting game balance or progression.]]
+RedeemExpeditionToolNote = [[&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: You can &lt;STELLAR&gt;Exchange&lt;&gt; any &lt;STELLAR&gt;non-&lt;&gt;Pistol, &lt;STELLAR&gt;non-&lt;&gt;Rifle Multi-Tool for this tool and then &lt;FUEL&gt;delete&lt;&gt; most pre-installed &lt;STELLAR&gt;tech and upgrade modules&lt;&gt; in this tool if you wish to use it without affecting game balance or progression.]]
 
-RedeemExpeditionCommonToolNote = [[&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: You can &lt;STELLAR&gt;Exchange&lt;&gt; any Pistol or Rifle Multi-Tool for this tool and then &lt;FUEL&gt;delete&lt;&gt; most pre-installed &lt;STELLAR&gt;tech and upgrade modules&lt;&gt; in this tool if you wish to use it without affecting game balance or progression.]]
+RedeemExpeditionPistolToolNote = [[&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: You can &lt;STELLAR&gt;Exchange&lt;&gt; any &lt;STELLAR&gt;Pistol&lt;&gt; Multi-Tool for this tool and then &lt;FUEL&gt;delete&lt;&gt; most pre-installed &lt;STELLAR&gt;tech and upgrade modules&lt;&gt; in this tool if you wish to use it without affecting game balance or progression.]]
+
+RedeemExpeditionRifleToolNote = [[&#xA;&#xA;&lt;HIGHLIGHT&gt;NOTE&lt;&gt;: You can &lt;STELLAR&gt;Exchange&lt;&gt; any &lt;STELLAR&gt;Rifle&lt;&gt; Multi-Tool for this tool and then &lt;FUEL&gt;delete&lt;&gt; most pre-installed &lt;STELLAR&gt;tech and upgrade modules&lt;&gt; in this tool if you wish to use it without affecting game balance or progression.]]
 
 LoadedNutrientIngestorDetail = [[ - &lt;RED&gt;IGNORE THE&lt;&gt; # &lt;RED&gt;VALUE&lt;&gt;]]
 
@@ -729,6 +743,10 @@ DeepSpaceWasteSiteNote = [[ Analysis indicates most items are likely of &lt;TRAD
 DeepSpaceInfestedDesc = [[&lt;TECHNOLOGY&gt;&lt;IMG&gt;SLASH&lt;&gt;Starmap Analysis Report&lt;IMG&gt;SLASH&lt;&gt;&lt;&gt;&#xA;&#xA;&lt;STELLAR&gt;Signal Type&lt;&gt;: Former deep-space outpost. No activity detected.&#xA;&#xA;&lt;STELLAR&gt;Route recommendation&lt;&gt;: Salvage and clean-up opportunity. Especially lucrative in terms of &lt;HIGHLIGHT&gt;nanites&lt;&gt;. &lt;TRADE&gt;Mining&lt;&gt; &lt;TECHNOLOGY&gt;Unusual Samples&lt;&gt; directly will yield additional &lt;TRADE&gt;substances&lt;&gt;, at the cost of losing the salvage to sell at a &lt;SPECIAL&gt;Deep Space Outpost&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;Caution&lt;&gt;: High probability of biological hazards.]]
 
 CorvTractorBeamDescAlt = [[A cargo utility module for a &lt;STELLAR&gt;Corvette&lt;&gt;-class starship, allowing for the collection and storage of salvage and debris. User is advised to employ a &lt;TECHNOLOGY&gt;Gravitino Coil&lt;&gt; in tandem with this module when moving large objects.]]
+
+ChallengerInvitationDesc = [[A battle invitation from a local &lt;STELLAR&gt;Arena League&lt;&gt; &lt;TECHNOLOGY&gt;Challenger&lt;&gt;. The location of their &lt;TECHNOLOGY&gt;Holo-Arena&lt;&gt; has been marked.&#xA;&#xA;&lt;TRADE&gt;Planetary opponents&lt;&gt; such as &lt;TECHNOLOGY&gt;Challengers&lt;&gt; award more &lt;STELLAR&gt;units&lt;&gt; but less &lt;STELLAR&gt;XP&lt;&gt; and &lt;STELLAR&gt;nanites&lt;&gt; compared to usual &lt;STELLAR&gt;station&lt;&gt; opponents, however defeating &lt;TECHNOLOGY&gt;Challengers&lt;&gt; can lead to powerful &lt;HIGHLIGHT&gt;Champion&lt;&gt; opponents. &#xA;&#xA;Select the invitation and use &lt;VAL_ON&gt;Plot Route&lt;&gt; (&lt;IMG&gt;FE_ALT1&lt;&gt;) to pin the Holo-Arena in your Exosuit display.&#xA;New &lt;TECHNOLOGY&gt;Challenger's Invitations&lt;&gt; can be received by defeating most &lt;TECHNOLOGY&gt;Challengers&lt;&gt;, &lt;HIGHLIGHT&gt;System Champions&lt;&gt;, or &lt;STELLAR&gt;training&lt;&gt; with &lt;TECHNOLOGY&gt;Oceanus&lt;&gt;.]]
+
+ChampionInvitationDesc = [[A battle invitation from this system's &lt;STELLAR&gt;Arena League&lt;&gt; &lt;HIGHLIGHT&gt;Champion&lt;&gt;. The location of their &lt;TECHNOLOGY&gt;Holo-Arena&lt;&gt; has been marked.&#xA;&#xA;&lt;HIGHLIGHT&gt;System Champions&lt;&gt; grant more &lt;STELLAR&gt;XP&lt;&gt; and &lt;STELLAR&gt;units&lt;&gt; and &lt;HIGHLIGHT&gt;far&lt;&gt; more &lt;HIGHLIGHT&gt;nanites&lt;&gt; and &lt;SPECIAL&gt;Retroviral Pellets&lt;&gt; compared to either &lt;TRADE&gt;planetary&lt;&gt; or usual &lt;STELLAR&gt;station&lt;&gt; opponents, however their companions are all at &lt;FUEL&gt;level 18&lt;&gt; or above, so defeating them may not be feasible with a &lt;TRADE&gt;low-level&lt;&gt; team.&#xA;&#xA;&lt;STELLAR&gt;If you are confident in your team&lt;&gt;, select the invitation and use &lt;VAL_ON&gt;Plot Route&lt;&gt; (&lt;IMG&gt;FE_ALT1&lt;&gt;) to pin the Holo-Arena in your Exosuit display.&#xA;New &lt;HIGHLIGHT&gt;Champion's Invitations&lt;&gt; can be received by defeating certain &lt;TECHNOLOGY&gt;Challengers&lt;&gt;.]]
 
 AresTradeItem3 = "Sea Glass"
 
@@ -958,6 +976,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "SCAN1_DESCRIPTION"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", ScannerDesc}
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "LASER_DESCRIPTION"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -1004,6 +1029,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", FreeFreighterOffer}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "EXP_FREIGHTER_DESC_1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (FreeFreighterOfferNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "TRA_FREIGHTER_DESC_1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (FreeFreighterOfferNote)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "WAR_FREIGHTER_DESC_1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (FreeFreighterOfferNote)}
 							}
 						},
 						{
@@ -1565,6 +1611,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"English", DoubleTridentKeyMessage}
 							}
 						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UT_SCAN_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", WaveformRecyclerDesc}
+							}
+						},
 					}
 				},
 				{
@@ -1911,6 +1964,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", MechScanNameLower}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_MECH_SCAN_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", MinotaurRadarDesc}
 							}
 						},
 					}
@@ -2895,14 +2955,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id", "UI_EXPD_SWARM_GUN_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"English", AppendText (RedeemExpeditionCommonToolNote)}
+								{"English", AppendText (RedeemExpeditionRifleToolNote)}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "UI_EXPD_GUN_23_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"English", AppendText (RedeemExpeditionCommonToolNote)}
+								{"English", AppendText (RedeemExpeditionPistolToolNote)}
 							}
 						},
 						{
@@ -2987,6 +3047,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", CorvTractorBeamDescAlt}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_CHART_PB_CHALL_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", ChallengerInvitationDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_CHART_PB_CHAMP_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", ChampionInvitationDesc}
 							}
 						},
 					}

@@ -29,22 +29,22 @@ AnglerfishSpawnChance = 0.450000					--0.500000		Chance to spawn Anglerfish when
 	{
 		{"Animal"},
 		{
-			{"Record",		1.5},					--5, 10, 15 depending on rarity
-			{"OnScan",		0.75}					--500, 800, 1500 depending on rarity					Boosted up to ~200k, 320k, 600k with maxed Scanner upgrades
+			{"Record",		1.5},					--5, 10, 15 Nanites depending on rarity
+			{"OnScan",		0.75}					--500, 800, 1500 Units depending on rarity			Boosted up to ~200k, 320k, 600k with maxed Scanner upgrades
 		}
 	},
 	{
 		{"Flora"},	--These rewards increased by 1.334x to compensate for how NMS v5.5 removed all hazardous plants or oxygen/sodium/deuterium plants from being scannable any more
 		{
 			{"Record",		7},						--3, 5, or 8 Nanites, but the game only ever seems to use 3?
-			{"OnScan",		1}						--250													Boosted up to ~100k with maxed Scanner upgrades
+			{"OnScan",		1}						--250 Units											Boosted up to ~100k with maxed Scanner upgrades
 		}
 	},
 	{
 		{"Mineral"},
 		{
 			{"Record",		5},						--3, 5, or 12 Nanites, but the game only ever seems to use 3
-			{"OnScan",		0.75}					--200													Guessing that it is boosted up to ~80k with maxed Scanner upgrades
+			{"OnScan",		0.75}					--200 Units											Guessing that it is boosted up to ~80k with maxed Scanner upgrades
 		}
 	},
 	{
@@ -322,7 +322,7 @@ GuildShopChanges =
 				},
 			},
 			{	--Old Item ID		New Item ID			Amount	PriceMult	Currency		Reputation Level
-				{"SACVENOM",		"U_SCANNER3",		1,		0.7,		"Nanites",		6},				--Storm Crystal				1,		0,		"Units",	6
+				{"SACVENOM",		"U_SCANNER3",		1,		0.7,		"Nanites",		6},				--Sac Venom					1,		0,		"Units",	6
 				{	--Old Item ID		New Item ID		(Other possible items that can appear in this slot)
 					{"EYEBALL",			"U_HYPER3"},														--Hadal Core
 					{"FIENDCORE",		"U_JETBOOST3"},														--Larval Core

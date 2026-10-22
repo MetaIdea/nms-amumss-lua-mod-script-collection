@@ -3,7 +3,7 @@ AuthorLua = "Xen0nex"
 ModName = "Larger Space Combat"
 BaseDescription = "Larger Space Combat - separate from Reworked Space Combat for modularity"
 GameVersion = "7.04"
-ModVersion = "1.27"
+ModVersion = "1.28"
 
 --Adds additional Squadrons to appear at each Wanted Level, for all multiplayer group sizes
 AddedSquadrons =

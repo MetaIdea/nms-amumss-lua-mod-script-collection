@@ -1,26 +1,20 @@
 ---------------------------------------------------------------------------------------
 local mod_desc = [[
-  Cockpit Landing Bay Controls v1.3
+  Cockpit Landing Bay Controls v1.4
   Cockpits A (Titan), B (Ambassador), D (Thunderbird). Add-on for Ultimate Landing Bays.
   Beam-down button, and a ramp button that opens / closes every bay (glow indicator,
-  lever animation). Details: Jank7.Cockpit_Beam_Down_Ramp_Control_README.md
+  lever animation). Details: Jank7.Cockpit_Landing_Bay_Controls_README.md
+  v1.4  UNTESTED. Uses ULB's switch states, so it works in package A and B (in B it
+        follows every bay switch). The switch entity is written in full instead of
+        copied from ULB's bay switch, so both can share one combined build.
 ]]-------------------------------------------------------------------------------------
 
--- Game-style paths (AMUMSS reads backslashes literally)
-local BACKSLASH = string.char(92)
-local function nmsPath(path)	return (path:gsub('/', BACKSLASH)) end
+-- Ramp button entity (ADD_FILES takes the .MXML name; the game loads the .MBIN)
+local GLOBAL_SWITCH = 'MODELS/COMMON/SPACECRAFT/BIGGS/ENTITIES/JANK7_GLOBALRAMPCONTROLS.ENTITY.MXML'
 
--- Ramp button entity: copy of the vanilla bay switch entity
-local VANILLA_SWITCH	= 'MODELS/COMMON/SPACECRAFT/BIGGS/MODULES/PARTS/AIRLOCK_NESW_B/ENTITIES/AIRLOCK_NESW_B_RAMPCONTROLS.ENTITY.MBIN'
-local GLOBAL_SWITCH		= 'MODELS/COMMON/SPACECRAFT/BIGGS/ENTITIES/JANK7_GLOBALRAMPCONTROLS.ENTITY.MBIN'
-
--- Ultimate Landing Bays' door / bay switch states
+-- Ultimate Landing Bays' door / switch states (this switch uses them too)
 local RAMP_OPEN		= 'JANK7_RAMPOPEN'
 local RAMP_CLOSE	= 'JANK7_RAMPCLOSE'
-
--- This switch's own states (max 15 characters)
-local ALL_OPEN		= 'JANK7_ALLOPEN'
-local ALL_CLOSE		= 'JANK7_ALLCLOSE'
 
 -- Shows ('Activate') / hides ('Deactivate') a node of this switch's mesh (this part only)
 local function setNode(state, name)
@@ -74,7 +68,7 @@ local function relayState(id, target, extra)
 ]]
 end
 
--- Press alternates ALL_OPEN / ALL_CLOSE; each sends one state and sets the glow
+-- Press alternates open / close; each state is sent ship-wide and sets the glow
 local SWITCH_STATE_MACHINE = [[
 <Property name="Components" value="GcTriggerActionComponentData">
 	<Property name="GcTriggerActionComponentData">
@@ -85,8 +79,8 @@ local SWITCH_STATE_MACHINE = [[
 				<Property name="StateID" value="BOOT" />
 				<Property name="Triggers" />
 			</Property>
-]] .. relayState(ALL_OPEN,  RAMP_OPEN,  { setNode('Deactivate', 'SwitchGlowOn'), setNode('Activate',   'SwitchGlowFlip') })
-	.. relayState(ALL_CLOSE, RAMP_CLOSE, { setNode('Activate',   'SwitchGlowOn'), setNode('Deactivate', 'SwitchGlowFlip') }) .. [[
+]] .. relayState(RAMP_OPEN,  RAMP_OPEN,  { setNode('Deactivate', 'SwitchGlowOn'), setNode('Activate',   'SwitchGlowFlip') })
+	.. relayState(RAMP_CLOSE, RAMP_CLOSE, { setNode('Activate',   'SwitchGlowOn'), setNode('Deactivate', 'SwitchGlowFlip') }) .. [[
 		</Property>
 		<Property name="Persistent" value="false" />
 		<Property name="PersistentState" value="" />
@@ -193,9 +187,153 @@ local SWITCH_GRAPH = [[
 </Property>
 ]]
 
+-- Ramp button entity: vanilla AIRLOCK_NESW_B_RAMPCONTROLS (NMS 7.05) with the Interact
+-- prompt, ULB's states, the graph above and the state machine
+local SWITCH_ENTITY = [[<?xml version="1.0" encoding="utf-8"?>
+<Data template="cTkAttachmentData">
+	<Property name="AdditionalData" />
+	<Property name="Components">
+		<Property name="Components" value="GcSimpleInteractionComponentData">
+			<Property name="GcSimpleInteractionComponentData">
+				<Property name="SimpleInteractionType" value="Interact" />
+				<Property name="InteractDistance" value="2.500000" />
+				<Property name="Use2dInteractDistance" value="true" />
+				<Property name="InteractAngle" value="360.000000" />
+				<Property name="Id" value="" />
+				<Property name="Rarity" value="GcRarity">
+					<Property name="Rarity" value="Common" />
+				</Property>
+				<Property name="Size" value="GcSizeIndicator">
+					<Property name="SizeIndicator" value="Medium" />
+				</Property>
+				<Property name="TriggerAction" value="]] .. RAMP_OPEN .. [[" />
+				<Property name="TriggerActionOnPrepare" value="" />
+				<Property name="TriggerActionToggle" value="]] .. RAMP_CLOSE .. [[" />
+				<Property name="DeactivateSimilarInteractionsNearbyRadius" value="0.000000" />
+				<Property name="BroadcastTriggerAction" value="false" />
+				<Property name="Delay" value="0.000000" />
+				<Property name="HideContents" value="true" />
+				<Property name="InteractIsCrime" value="false" />
+				<Property name="InteractFiendCrimeType" value="GcFiendCrime">
+					<Property name="FiendCrime" value="None" />
+				</Property>
+				<Property name="InteractFiendCrimeChance" value="1.000000" />
+				<Property name="InteractCrimeLevel" value="0" />
+				<Property name="IncreaseCorruptSentinelWanted" value="0" />
+				<Property name="NotifyEncounter" value="false" />
+				<Property name="ActivationCost" value="GcInteractionActivationCost">
+					<Property name="SubstanceId" value="" />
+					<Property name="AltIds" />
+					<Property name="Cost" value="0" />
+					<Property name="Repeat" value="false" />
+					<Property name="RequiredTech" value="" />
+					<Property name="UseCostID" value="" />
+					<Property name="StartMissionOnCantAfford" value="" />
+					<Property name="OnlyChargeDuringSeasons" />
+				</Property>
+				<Property name="StatToTrack" value="GcStatsEnum">
+					<Property name="StatEnum" value="None" />
+				</Property>
+				<Property name="StartsBuried" value="false" />
+				<Property name="MustBeVisibleToInteract" value="false" />
+				<Property name="NeedsStorm" value="false" />
+				<Property name="Name" value="BIGGS_RAMP_CONTROLS" />
+				<Property name="ForceSubtitle" value="" />
+				<Property name="VRInteractMessage" value="" />
+				<Property name="TerminalHeading" value="" />
+				<Property name="TerminalMessage" value="" />
+				<Property name="ScanType" value="BINOC_INTERACTABLE" />
+				<Property name="ScanData" value="" />
+				<Property name="ScanIcon" value="GcDiscoveryType">
+					<Property name="DiscoveryType" value="Unknown" />
+				</Property>
+				<Property name="ActivateLocatorsFromRarity" value="false" />
+				<Property name="RarityLocators">
+					<Property name="Common" value="" />
+					<Property name="Uncommon" value="" />
+					<Property name="Rare" value="" />
+				</Property>
+				<Property name="BaseBuildingTriggerActions" />
+				<Property name="RewardOverrideTable" />
+				<Property name="PersistencyBufferOverride" />
+				<Property name="UsePersonalPersistentBuffer" value="false" />
+				<Property name="ReseedOnRewardSuccess" value="false" />
+				<Property name="CanCollectInMech" value="false" />
+				<Property name="AnimateOnInteract" value="true" />
+				<Property name="DisableAnimationUntilInteract" value="false" />
+				<Property name="HideInteractLabelUntilRelease" value="true" />
+				<Property name="OnlyActiveDuringSeasons" />
+			</Property>
+		</Property>
+]] .. SWITCH_GRAPH .. [[
+		<Property name="Components" value="TkPhysicsComponentData">
+			<Property name="TkPhysicsComponentData">
+				<Property name="Data" value="TkPhysicsData">
+					<Property name="Mass" value="0.000000" />
+					<Property name="Friction" value="0.500000" />
+					<Property name="RollingFriction" value="0.200000" />
+					<Property name="AngularDamping" value="0.200000" />
+					<Property name="LinearDamping" value="0.100000" />
+					<Property name="Restitution" value="0.000000" />
+					<Property name="Gravity" value="20.000000" />
+					<Property name="CanBeTooSteepForTeleporter" value="true" />
+				</Property>
+				<Property name="CollisionGroup" value="GcPhysicsCollisionGroups">
+					<Property name="CollisionGroup" value="Normal" />
+				</Property>
+				<Property name="TriggerVolume" value="false" />
+				<Property name="TriggerVolumeType" value="TkVolumeTriggerType">
+					<Property name="VolumeTriggerType" value="Open" />
+				</Property>
+				<Property name="SurfaceProperties" value="None" />
+				<Property name="ModelOwnership" value="Model" />
+				<Property name="Climbable" value="false" />
+				<Property name="Walkable" value="false" />
+				<Property name="Floor" value="false" />
+				<Property name="IgnoreModelOwner" value="false" />
+				<Property name="NoVehicleCollide" value="false" />
+				<Property name="NoPlayerCollide" value="false" />
+				<Property name="NoTerrainCollide" value="false" />
+				<Property name="NoFireCollide" value="false" />
+				<Property name="NoFallDamage" value="false" />
+				<Property name="IgnoreAllCollisions" value="true" />
+				<Property name="BlocksInteract" value="false" />
+				<Property name="CameraInvisible" value="true" />
+				<Property name="InvisibleForInteraction" value="false" />
+				<Property name="AllowTeleporter" value="false" />
+				<Property name="BlockTeleporter" value="false" />
+				<Property name="DisableGravity" value="false" />
+				<Property name="SpinOnCreate" value="0.000000" />
+				<Property name="ScaleAffectsMass" value="false" />
+				<Property name="AllowedDefaultCollision" value="true" />
+				<Property name="Animated" value="false" />
+				<Property name="DisablePhysicsUntilGravGunned" value="false" />
+				<Property name="EnableSingleSidedMeshCollision" value="false" />
+				<Property name="UseBasePartOptimisation" value="false" />
+				<Property name="IsTransporter" value="false" />
+				<Property name="UseSimpleCharacterCollision" value="false" />
+				<Property name="RotateSimpleCharacterCollisionCapsule" value="false" />
+				<Property name="SimpleCharacterCollisionRadius" value="0.500000" />
+				<Property name="SimpleCharacterCollisionHeight" value="2.000000" />
+				<Property name="SimpleCharacterCollisionHeightOffset" value="0.000000" />
+				<Property name="SimpleCharacterCollisionFwdOffset" value="0.000000" />
+			</Property>
+		</Property>
+]] .. SWITCH_STATE_MACHINE .. [[
+	</Property>
+	<Property name="LodDistances">
+		<Property name="LodDistances" value="0.000000" _index="0" />
+		<Property name="LodDistances" value="50.000000" _index="1" />
+		<Property name="LodDistances" value="80.000000" _index="2" />
+		<Property name="LodDistances" value="150.000000" _index="3" />
+		<Property name="LodDistances" value="500.000000" _index="4" />
+	</Property>
+</Data>
+]]
+
 -- Only QDRCONTROLS ships as EXML (merges with ULB's glow fix); scenes and the switch stay MBIN
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= 'Jank7.Cockpit_Landing_Bay_Controls_v1.3',
+	MOD_FILENAME 		= 'Jank7.Cockpit_Landing_Bay_Controls_v1.4',
 	MOD_AUTHOR			= 'Jank7',
 	NMS_VERSION			= '7.05',
 	EXML_CREATE			= 'TRUE',
@@ -803,33 +941,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 		}
 	},
-	{--	|ramp button entity: copy of the vanilla bay switch entity|
-		MBIN_FILE_SOURCE	= {
-			{ nmsPath(VANILLA_SWITCH), nmsPath(GLOBAL_SWITCH), 'REMOVE' },
-		},
-	},
-	{--	|ramp button: Interact toggle between its own all-open / all-close states|
-		MBIN_FILE_SOURCE	= nmsPath(GLOBAL_SWITCH),
-		EXML_CREATE			= 'FALSE',
-		MXML_CHANGE_TABLE	= {
-			{ VALUE_CHANGE_TABLE = {
-				{'SimpleInteractionType',	'Interact'},
-				{'TriggerAction',			ALL_OPEN},
-				{'TriggerActionToggle',		ALL_CLOSE},
-				{'BroadcastTriggerAction',	'false'},
-			}},
-			{
-				SPECIAL_KEY_WORDS	= {'Components', 'TkPhysicsComponentData'},
-				ADD_OPTION			= 'ADDafterSECTION',
-				ADD					= SWITCH_STATE_MACHINE,
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Components', 'TkSketchComponentData'},
-				ADD_OPTION			= 'REPLACEwholeSECTION',
-				ADD					= SWITCH_GRAPH,
-			},
-		}
-	},
 	{--	|switch mesh entity: also flip the lever on JANK7_LEVER (additions only)|
 		MBIN_FILE_SOURCE	= VISUAL_ENTITY,
 		MXML_CHANGE_TABLE	= {
@@ -848,4 +959,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 		}
 	},
-}}}}
+	}}},
+	ADD_FILES			= {
+		{ FILE_DESTINATION = GLOBAL_SWITCH, FILE_CONTENT = SWITCH_ENTITY },
+	},
+}

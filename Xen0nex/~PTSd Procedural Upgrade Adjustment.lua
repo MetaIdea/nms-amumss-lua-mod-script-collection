@@ -1,7 +1,7 @@
 Author = "Xen0nex"
 ModName = "PTSd Procedural Upgrade Adjustment"
 Description = "Adjusts Exocraft & Multi-tool Upgrade Module strength to account for using 5x upgrades instead of 3x. Differentiates the Sentinel & Autophage Exosuit upgrades"
-GameVersion = "5_12"
+GameVersion = "7_06"
 
 OpticalDrillBonus =				1.33							--1.5		Bonus resource yields that the Optical Drill tech confers in a multi-tool	(Reduced since it stacks with both supercharged tech slots & PTSd's Multitool mining stat)
 
@@ -16,7 +16,7 @@ ExoUpgradeMaxEnergyRegen =		1+(0.75*0.75)					--1.75 (multiplicative)		Sets the 
 MiningUpgradeMult =				0.3								--Multiplier to apply to the strength of most bonuses from all procedural Multi-Tool mining laser upgrades.
 MiningUpgradeSpeedMult =		0.3								--Multiplier to apply to the strength of procedural Multi-Tool mining laser upgrade Minings Speed (Damage) bonus.
 ScanningUpgradeMult =			0.65							--Multiplier to apply to the strength of most bonuses from all procedural Multi-Tool scanner upgrades.
-ScanningUpgradeRadiusMult =		0.5								--Multiplier to apply to the strength of procedural Multi-Tool scanner upgrade Scan Radius bonus. 
+ScanningUpgradeRadiusMult =		0.5*1.5							--Multiplier to apply to the strength of procedural Multi-Tool scanner upgrade Scan Radius bonus. 
 
 --Exocraft upgrades
 	--Additive bonuses
@@ -475,7 +475,7 @@ function BonusMult (base, mult)
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..GameVersion,
+["MOD_FILENAME"]	= ModName.." "..GameVersion..".pak",
 ["MOD_DESCRIPTION"]	= Description,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,

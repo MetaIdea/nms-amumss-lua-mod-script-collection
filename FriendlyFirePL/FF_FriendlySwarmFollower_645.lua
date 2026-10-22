@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "FriendlySwarmFollower"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "645"
+METADATA_NMS_VERSION    = "706"
 METADATA_MOD_DESC       = "This mod reskins the Laylaps / The Sentry companion drone into a Swarm planetary drone."
 
 

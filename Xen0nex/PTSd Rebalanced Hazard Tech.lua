@@ -1,5 +1,5 @@
 ModName = "PTSd Rebalanced Hazard Tech"
-GameVersion = "5_64"
+GameVersion = "7_06"
 Description = "Nerfs the procedural Hazard techs & Buffs the Hazard techs / upgrades which grant a % resistance to hazards to hopefully make them worth considering. Note that the different sources of +% hazard protection (multiple X Class upgrades all count as the same source) appear to stack multiplicatively with each other, and that X Class Hazard Upgrades receive significant adjacency bonuses. E.G. two fully surrounded X Class upgrades with +25% each will typically double your protection time against all hazards."
 
 HazardRechargeMult =			1.125				--	Multiplier to apply to the cost of Sodium / Sodium Nitrate on recharging Hazard Protection			40 / 16 to fully charge
@@ -26,7 +26,7 @@ HazardTechChanges =
 		"UT_RAD",			1.38					--1.2 		(+20% hazard protection for Radiation)
 	},
 	{--Aeration Membrane
-		"UT_WATER",			1.8						--1.33 		(+33% hazard protection for Underwater / breath time)
+		"UT_WATER",			2.5						--1.33 		(+33% hazard protection for Underwater / breath time)
 	},
 	{--Pressure Membrane
 		"PRESSURE_SUIT",	1.8						--1.8 		(Unclear how or whether this bonus works, may affect the breath time in deep water but does not appear to affect the Life Support drain & Cold hazard drain that happens in very deep water)
@@ -80,13 +80,13 @@ HazardProcTechChanges =
 		}
 	},
 	{
-		{0.82},					--120-180 duration for B Class Underwater Upgrade Modules (95-120 pre-NMS 5.5)
+		{0.82},					--120-180 duration for A Class Underwater Upgrade Modules (95-120 pre-NMS 5.5)
 		{
 			"UP_UNW2",
 		}
 	},
 	{
-		{0.71},					--180-240 duration for B Class Underwater Upgrade Modules (130-180 pre-NMS 5.5)
+		{0.71},					--180-240 duration for S Class Underwater Upgrade Modules (130-180 pre-NMS 5.5)
 		{
 			"UP_UNW3",
 		}
@@ -102,7 +102,7 @@ function Invert (value)
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]		= ModName..GameVersion,
+["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
 ["MOD_AUTHOR"]			= "Xen0nex",
 ["NMS_VERSION"]			= GameVersion,
